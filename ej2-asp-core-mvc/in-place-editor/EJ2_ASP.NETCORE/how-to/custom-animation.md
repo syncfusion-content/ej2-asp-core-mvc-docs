@@ -1,0 +1,24 @@
+---
+layout: post
+title: Welcome to Syncfusion Essential ##Platform_Name##
+description: Learn here all about Custom Animation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+platform: ej2-asp-core-mvc
+control: Custom Animation
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
+# Set custom animation for popup mode
+
+In popup mode, the In-place Editor rendered with the Syncfusion ASP.NET Core `Tooltip` control. You can use tooltip properties and events to customize the popup by configure properties into the [`model`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Model) property inside the [`popupSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PopupSettings) API.
+
+In the following sample, popup animation can be customized by passing animation effect using the `model` property and the dynamic animation effect changes configured from the Syncfusion ASP.NET Core `DropDownList` control `change` event.
+
+{% aspTab template="in-place-editor/custom-animation", sourceFiles="controller.cs" %}
+
+{% endaspTab %}
+
+The output will be as follows.
+
+![custom-animation](../../in-place-editor/images/custom-animation.PNG)

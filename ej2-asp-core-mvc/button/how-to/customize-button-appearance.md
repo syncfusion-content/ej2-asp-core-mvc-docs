@@ -1,0 +1,21 @@
+---
+layout: post
+title: Welcome to Syncfusion Essential ##Platform_Name##
+description: Learn here all about Customize Button Appearance of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+platform: ej2-asp-core-mvc
+control: Customize Button Appearance
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
+# Customize Button Appearance
+
+You can customize the appearance of the Button by using the Cascading Style Sheets (CSS). Define the CSS according to
+your requirement, and assign the class name to the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass)
+property. In the following code snippet the background color, text color, height, width, and sharp corner of the Button
+can be customized through the `e-custom` class for all states (hover, focus, and active).
+
+{% aspTab template="button/howto/custom", sourceFiles="custombutton.cs" %}
+
+{% endaspTab %}
