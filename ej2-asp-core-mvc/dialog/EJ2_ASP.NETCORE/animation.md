@@ -1,0 +1,49 @@
+---
+layout: post
+title: Welcome to Syncfusion Essential ##Platform_Name##
+description: Learn here all about Animation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+platform: ej2-asp-core-mvc
+control: Animation
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
+# Animation
+
+The Dialog can be animated during the open and close actions. Also, user can
+customize animation's [`delay`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Delay),
+[`duration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Duration)
+and [`effect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Effect).
+
+<!-- markdownlint-disable MD033 -->
+<table>
+<tr>
+<td>
+delay</td><td>
+The Dialog animation will start with the mentioned delay</td></tr>
+<tr>
+<td>
+duration</td><td>
+Specifies the animation duration to complete with one animation cycle</td></tr>
+<tr>
+<td>
+effect</td><td>
+Specifies the animation effects of Dialog open and close actions effect.
+<br /><br />
+List of supported animation effects:
+<br />
+'Fade' | 'FadeZoom' | 'FlipLeftDown' | 'FlipLeftUp' | 'FlipRightDown' | 'FlipRightUp' | 'FlipXDown' |
+'FlipXUp' | 'FlipYLeft' | 'FlipYRight' | 'SlideBottom' | 'SlideLeft' | 'SlideRight' | 'SlideTop' |
+'Zoom'| 'None'
+<br /><br />
+If the user sets `Fade` effect, then the Dialog will open with `FadeIn` effect and close with `FadeOut` effect
+</td></tr>
+</table>
+
+In the below sample, `Zoom` effect is enabled. So, The Dialog will open with `ZoomIn`
+and close with `ZoomOut` effects.
+
+{% aspTab template="dialog/animation", sourceFiles="controller.cs" %}
+
+{% endaspTab %}

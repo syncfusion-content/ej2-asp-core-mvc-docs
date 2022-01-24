@@ -1,0 +1,152 @@
+---
+layout: post
+title: Welcome to Syncfusion Essential ##Platform_Name##
+description: Learn here all about Getting Started of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+platform: ej2-asp-core-mvc
+control: Getting Started
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
+# Getting Started
+
+This section briefly explains about how to include a simple [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) in your ASP.NET Core application. You can refer the [ASP.NET Core Getting Started documentation](../getting-started) page for introduction part of the system requirements and common component configurations.
+
+## Initialize the Scheduler component
+
+Scheduler component can be rendered by using the `ejs-schedule` tag helper in ASP.NET Core application. Add the below simple code to your `index.cshtml` page which is available within the `Views/Home` folder, to initialize the Scheduler.
+
+{% aspTab template="schedule/default/data" %}
+
+{% endaspTab %}
+
+> Running the above code will display an empty Scheduler with system date and time on the browser like below.
+
+![empty scheduler](../../schedule/images/scheduler.png)
+
+## Populating appointments
+
+To populate an empty Scheduler with appointments, bind the event data to it by
+assigning the `dataSource` property under `e-schedule-eventsettings` tag Helper.
+
+* Create a new Class in controller page to define the data to be passed to the Scheduler as mentioned below,
+
+```c#
+public class AppointmentData
+{
+    public int Id { get; set; }
+    public string Subject { get; set; }
+    public DateTime StartTime { get; set; }
+    public DateTime EndTime { get; set; }
+}
+```
+
+* Now create an instance of the class and add the list of Scheduler data to it within the Index method in controller page, which will then be passed to the View page and bound to the Scheduler dataSource.
+
+* Call the GetScheduleData method to assign the datasource in Index method as shown below,
+
+```c#
+public ActionResult Index()
+{
+    ViewBag.appointments = GetScheduleData();
+    return View();
+}
+
+public List<AppointmentData> GetScheduleData()
+{
+    List<AppointmentData> appData = new List<AppointmentData>();
+    appData.Add(new AppointmentData
+    {
+        Id = 1,
+        Subject = "Explosion of Betelgeuse Star",
+        StartTime = new DateTime(2018, 2, 11, 9, 30, 0),
+        EndTime = new DateTime(2018, 2, 11, 11, 0, 0)
+    });
+    appData.Add(new AppointmentData
+    {
+        Id = 2,
+        Subject = "Thule Air Crash Report",
+        StartTime = new DateTime(2018, 2, 12, 12, 0, 0),
+        EndTime = new DateTime(2018, 2, 12, 14, 0, 0)
+    });
+    appData.Add(new AppointmentData
+    {
+        Id = 3,
+        Subject = "Blue Moon Eclipse",
+        StartTime = new DateTime(2018, 2, 13, 9, 30, 0),
+        EndTime = new DateTime(2018, 2, 13, 11, 0, 0)
+    });
+    appData.Add(new AppointmentData
+    {
+        Id = 4,
+        Subject = "Meteor Showers in 2018",
+        StartTime = new DateTime(2018, 2, 14, 13, 0, 0),
+        EndTime = new DateTime(2018, 2, 14, 14, 30, 0)
+    });
+    appData.Add(new AppointmentData
+    {
+        Id = 5,
+        Subject = "Milky Way as Melting pot",
+        StartTime = new DateTime(2018, 2, 15, 12, 0, 0),
+        EndTime = new DateTime(2018, 2, 15, 14, 0, 0)
+    });
+    return appData;
+}
+```
+
+* Add the Scheduler code in View page as shown below,
+
+```c#
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 2, 15)">
+    <e-schedule-eventsettings dataSource="@ViewBag.appointments"></e-schedule-eventsettings>
+</ejs-schedule>
+```
+
+{% aspTab template="schedule/getting-started/data", sourceFiles="data.cs" %}
+
+{% endaspTab %}
+
+Output be like the below.
+
+![appointments](../../schedule/images/appointments.png)
+
+## Setting date
+
+Scheduler usually displays the system date as its current date. To change the current date of scheduler with specific date, define the `selectedDate` property.
+
+{% aspTab template="schedule/getting-started/data", sourceFiles="data.cs" %}
+
+{% endaspTab %}
+
+## Specific view
+
+Scheduler displays `week` view by default. To change the current view, define the applicable view name to the `currentView` property. The applicable view names are,
+
+* Day
+* Week
+* WorkWeek
+* Month
+* Year
+* Agenda
+* MonthAgenda
+* TimelineDay
+* TimelineWeek
+* TimelineWorkWeek
+* TimelineMonth
+* TimelineYear
+
+{% aspTab template="schedule/views/specific-views", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
+
+## Individual view customization
+
+Each individual scheduler views can be customized with its own options such as setting different start and end hour on Week and Work Week views, whereas hiding the weekend days on Month view alone.
+This can be achieved by defining views property to accept the array of object type, where each object depicts the individual view customization.
+
+{% aspTab template="schedule/views/individual-views", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
+
+> You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) that shows how to use the toolbar buttons to play with Scheduler functionalities.

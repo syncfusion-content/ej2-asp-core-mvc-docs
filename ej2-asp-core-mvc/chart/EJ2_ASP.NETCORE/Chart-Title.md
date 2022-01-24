@@ -1,5 +1,15 @@
 ---
 layout: post
+title: Welcome to Syncfusion Essential ##Platform_Name##
+description: Learn here all about Chart Title of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+platform: ej2-asp-core-mvc
+control: Chart Title
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+---
+layout: post
 title: Chart Title |Chart  | ASP.NET CORE | Syncfusion
 description: How to customize the chart title.
 platform: aspnet-core

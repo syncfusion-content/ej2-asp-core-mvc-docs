@@ -1,0 +1,28 @@
+---
+layout: post
+title: Welcome to Syncfusion Essential ##Platform_Name##
+description: Learn here all about Custom Indication of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+platform: ej2-asp-core-mvc
+control: Custom Indication
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
+# Add custom indication to unsaved value
+
+You can add custom indication to unsaved input value by using the [`actionSuccess`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_ActionSuccess) event, when data not submitted to the server.
+
+In this sample, the `actionSuccess` event configured and the [`url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Url) property not included. Then submit button clicked, the current editor value saved into input and data sending to server action prevented due to the `url` property not configured.
+
+But `actionSuccess` event will trigger the handler function with `null` argument values. In handler function data property [`primaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PrimaryKey) value checked, whether it empty or not. If it is empty custom class, added in the `e-value-wrapper` element to customize its styles.
+
+> To send input value to local, set the `url` property as empty.
+
+{% aspTab template="in-place-editor/custom-indication", sourceFiles="controller.cs" %}
+
+{% endaspTab %}
+
+The output will be as follows.
+
+![custom-indication](../../in-place-editor/images/custom-indication.PNG)
