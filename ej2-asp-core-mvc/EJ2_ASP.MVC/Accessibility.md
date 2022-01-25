@@ -1,15 +1,5 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Accessibility of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
-platform: ej2-asp-core-mvc
-control: Accessibility
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
----
-layout: post
 title: Accessibility | ASP.NET MVC | Syncfusion
 description: Accessibility 
 platform: ej2-asp-core-mvc

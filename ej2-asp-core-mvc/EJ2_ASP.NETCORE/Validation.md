@@ -1,15 +1,5 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Validation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
-platform: ej2-asp-core-mvc
-control: Validation
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
----
-layout: post
 title: Validation  | ASP.NET MVC | Syncfusion
 description: Validation  
 platform: ej2-asp-core-mvc
