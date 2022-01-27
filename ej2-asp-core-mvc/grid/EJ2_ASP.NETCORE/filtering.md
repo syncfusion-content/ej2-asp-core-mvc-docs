@@ -20,6 +20,7 @@ N/A |N/A | `equal` operator will always be used for date filter. |Date
 N/A |N/A |`equal` operator will always be used for Boolean filter. |Boolean
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filter-bar" %}
 {% include_relative code-snippet/filtering/filter-bar/filter-bar.cs %}
@@ -27,7 +28,11 @@ N/A |N/A |`equal` operator will always be used for Boolean filter. |Boolean
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/filter-bar/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filter-bar" %}
 {% include_relative code-snippet/filtering/filter-bar/filter-bar.cs %}
 {% endhighlight %}
@@ -49,6 +54,7 @@ The [`filterBarTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 In the following sample dropdown is used  as custom component in EmployeeID column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filterbartemplate" %}
 {% include_relative code-snippet/filtering/filterbartemplate/filterbartemplate.cs %}
@@ -56,7 +62,11 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/filterbartemplate/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filterbartemplate" %}
 {% include_relative code-snippet/filtering/filterbartemplate/filterbartemplate.cs %}
 {% endhighlight %}
@@ -74,6 +84,7 @@ You can change the default filter operator by extending **filterOperators** prop
 we have changed the default operator for string typed columns as **contains** from **startsWith**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filter" %}
 {% include_relative code-snippet/filtering/filteroptr/filter.cs %}
@@ -81,7 +92,11 @@ we have changed the default operator for string typed columns as **contains** fr
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/filteroptr/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filter" %}
 {% include_relative code-snippet/filtering/filteroptr/filter.cs %}
 {% endhighlight %}
@@ -99,6 +114,7 @@ You can enable filter menu by setting the [`type`](https://help.syncfusion.com/c
 You can filter the records with different operators.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filtermenu" %}
 {% include_relative code-snippet/filtering/filtermenu/filtermenu.cs %}
@@ -106,7 +122,11 @@ You can filter the records with different operators.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/filtermenu/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filtermenu" %}
 {% include_relative code-snippet/filtering/filtermenu/filtermenu.cs %}
 {% endhighlight %}
@@ -130,6 +150,7 @@ You can use both **Menu** and **CheckBox** filter in a same Grid. To do so, set 
 In the following sample menu filter is enabled by default and checkbox filter is enabled for the CustomerID column using the [`filter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Filter) property of **e-grid-column** tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="diffcolumnfilter" %}
 {% include_relative code-snippet/filtering/diffcolumnfilter/diffcolumnfilter.cs %}
@@ -137,7 +158,11 @@ In the following sample menu filter is enabled by default and checkbox filter is
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/diffcolumnfilter/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="diffcolumnfilter" %}
 {% include_relative code-snippet/filtering/diffcolumnfilter/diffcolumnfilter.cs %}
 {% endhighlight %}
@@ -155,6 +180,7 @@ You can enable Excel like filter by defining.
 [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) as **Excel**.The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="excelfilter" %}
 {% include_relative code-snippet/filtering/excelfilter/excelfilter.cs %}
@@ -162,7 +188,11 @@ You can enable Excel like filter by defining.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/excelfilter/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="excelfilter" %}
 {% include_relative code-snippet/filtering/excelfilter/excelfilter.cs %}
 {% endhighlight %}

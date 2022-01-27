@@ -24,6 +24,7 @@ documentation: ug
 To specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) and [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) of the scroller in the pixel, set the pixel value to a number.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="width-height" %}
 {% include_relative code-snippet/scrolling/width-height/width-height.cs %}
@@ -31,7 +32,11 @@ To specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/width-height/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="width-height" %}
 {% include_relative code-snippet/scrolling/width-height/width-height.cs %}
 {% endhighlight %}
@@ -49,6 +54,7 @@ Specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) to **100%** requires the grid parent element to have explicit height.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="responsive-parent" %}
 {% include_relative code-snippet/scrolling/responsive-parent/responsive-parent.cs %}
@@ -56,7 +62,11 @@ Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/responsive-parent/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="responsive-parent" %}
 {% include_relative code-snippet/scrolling/responsive-parent/responsive-parent.cs %}
 {% endhighlight %}
@@ -73,6 +83,7 @@ Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 You can scroll the grid content to the selected row position by using the [`RowSelected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowSelected) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="scroll-selected-row" %}
 {% include_relative code-snippet/scrolling/scroll-selected-row/scroll-selected-row.cs %}
@@ -80,7 +91,11 @@ You can scroll the grid content to the selected row position by using the [`RowS
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/scroll-selected-row/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="scroll-selected-row" %}
 {% include_relative code-snippet/scrolling/scroll-selected-row/scroll-selected-row.cs %}
 {% endhighlight %}
@@ -99,6 +114,7 @@ You can hide the scrollbar of Grid content by using the [`hideScroll`](https://e
 In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusion.com/javascript/documentation/api/grid/#hidescroll) method inside the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="hide-scroll" %}
 {% include_relative code-snippet/scrolling/hide-scroll/hide-scroll.cs %}
@@ -106,7 +122,11 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/hide-scroll/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="hide-scroll" %}
 {% include_relative code-snippet/scrolling/hide-scroll/hide-scroll.cs %}
 {% endhighlight %}

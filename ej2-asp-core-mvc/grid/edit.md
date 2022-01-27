@@ -15,6 +15,7 @@ documentation: ug
 `DateTimePicker` | params: { value: new Date() }
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="celleditparams" %}
 {% include_relative code-snippet/edit/celleditparams/celleditparams.cs %}
@@ -22,7 +23,11 @@ documentation: ug
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/celleditparams/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="celleditparams" %}
 {% include_relative code-snippet/edit/celleditparams/celleditparams.cs %}
 {% endhighlight %}
@@ -49,6 +54,7 @@ The cell edit template is used to add a custom component for a particular column
 * `destroy` - It is used to destroy the component.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="celledittemplate" %}
 {% include_relative code-snippet/edit/celledittemplate/celledittemplate.cs %}
@@ -56,7 +62,11 @@ The cell edit template is used to add a custom component for a particular column
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/celledittemplate/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="celledittemplate" %}
 {% include_relative code-snippet/edit/celledittemplate/celledittemplate.cs %}
 {% endhighlight %}
@@ -83,6 +93,7 @@ You can change the cell values and save edited data to the data source.
 To enable Normal edit, set the [`EditSettings.Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) as `Normal`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="inline" %}
 {% include_relative code-snippet/edit/inline/inline.cs %}
@@ -90,7 +101,11 @@ To enable Normal edit, set the [`EditSettings.Mode`](https://help.syncfusion.com
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/inline/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="inline" %}
 {% include_relative code-snippet/edit/inline/inline.cs %}
 {% endhighlight %}
@@ -111,6 +126,7 @@ You can prevent the CRUD operations of the Grid by using condition in the `actio
 In the below demo, we prevent the CRUD operation based on the `Role` column value. If the Role Column is `Employee`, we are unable to edit/delete that row.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="canceleditinline" %}
 {% include_relative code-snippet/edit/cancel-edit-inline/canceleditinline.cs %}
@@ -118,7 +134,11 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/cancel-edit-inline/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="canceleditinline" %}
 {% include_relative code-snippet/edit/cancel-edit-inline/canceleditinline.cs %}
 {% endhighlight %}
@@ -137,6 +157,7 @@ You can change the cell values and save edited data to the data source.
 To enable Dialog edit, set the [`EditSettings.Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) as `Dialog`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="dialog" %}
 {% include_relative code-snippet/edit/dialog/dialog.cs %}
@@ -144,7 +165,11 @@ To enable Dialog edit, set the [`EditSettings.Mode`](https://help.syncfusion.com
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/dialog/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="dialog" %}
 {% include_relative code-snippet/edit/dialog/dialog.cs %}
 {% endhighlight %}
@@ -163,6 +188,7 @@ You can bulk save (added, changed and deleted data in the single request) to dat
 To enable Batch edit, set the [`EditSettings.Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) as `Batch`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="batch" %}
 {% include_relative code-snippet/edit/batch/batch.cs %}
@@ -170,7 +196,11 @@ To enable Batch edit, set the [`EditSettings.Mode`](https://help.syncfusion.com/
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/batch/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="batch" %}
 {% include_relative code-snippet/edit/batch/batch.cs %}
 {% endhighlight %}
@@ -189,6 +219,7 @@ You can prevent the CRUD operations of the Batch edit Grid by using condition in
 In the below demo, we prevent the CRUD operation based on the `Role` column value. If the Role Column is `Employee`, we are unable to edit/delete that row.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="canceleditbatch" %}
 {% include_relative code-snippet/edit/cancel-edit-batch/canceleditbatch.cs %}
@@ -196,7 +227,11 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/cancel-edit-batch/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="canceleditbatch" %}
 {% include_relative code-snippet/edit/cancel-edit-batch/canceleditbatch.cs %}
 {% endhighlight %}
@@ -217,6 +252,7 @@ In some cases, you need to add the new field editors in the dialog which are not
 In the below code example, demonstrate the usage of binding a partial view in the dialog template.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/dialogtemplate/*.cs %}
@@ -224,7 +260,11 @@ In the below code example, demonstrate the usage of binding a partial view in th
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/dialogtemplate/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/dialogtemplate/*.cs %}
 {% endhighlight %}
@@ -292,6 +332,7 @@ If you have used additional fields that are not present in the column model, the
 By default, a new row will be added at the top of the grid. You can change it by setting `editSettings.newRowPosition` as `Bottom`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="rowposition" %}
 {% include_relative code-snippet/edit/rowposition/rowposition.cs %}
@@ -299,7 +340,11 @@ By default, a new row will be added at the top of the grid. You can change it by
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/rowposition/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="rowposition" %}
 {% include_relative code-snippet/edit/rowposition/rowposition.cs %}
 {% endhighlight %}
@@ -327,6 +372,7 @@ The available built-in command buttons are:
 | Cancel | Cancel the edited state. |
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="commandcolumn" %}
 {% include_relative code-snippet/edit/commandcolumn/commandcolumn.cs %}
@@ -334,7 +380,11 @@ The available built-in command buttons are:
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/commandcolumn/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="commandcolumn" %}
 {% include_relative code-snippet/edit/commandcolumn/commandcolumn.cs %}
 {% endhighlight %}
@@ -352,6 +402,7 @@ The available built-in command buttons are:
 the action for the custom buttons can be defined in the `ButtonOption.Click` event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="customcommand" %}
 {% include_relative code-snippet/edit/customcommand/customcommand.cs %}
@@ -359,7 +410,11 @@ the action for the custom buttons can be defined in the `ButtonOption.Click` eve
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/customcommand/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="customcommand" %}
 {% include_relative code-snippet/edit/customcommand/customcommand.cs %}
 {% endhighlight %}
@@ -378,6 +433,7 @@ the action for the custom buttons can be defined in the `ButtonOption.Click` eve
 The delete confirm dialog can be shown when deleting a record by defining the [`ShowDeleteConfirmDialog`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_ShowDeleteConfirmDialog) as `true`
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="deleteconfirm" %}
 {% include_relative code-snippet/edit/deleteconfirm/deleteconfirm.cs %}
@@ -385,7 +441,11 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/deleteconfirm/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="deleteconfirm" %}
 {% include_relative code-snippet/edit/deleteconfirm/deleteconfirm.cs %}
 {% endhighlight %}
@@ -404,6 +464,7 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 By default, grid will show the confirm dialog when saving or cancelling or performing any actions like filtering, sorting, etc.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="batchconfirm" %}
 {% include_relative code-snippet/edit/batchconfirm/batchconfirm.cs %}
@@ -411,7 +472,11 @@ By default, grid will show the confirm dialog when saving or cancelling or perfo
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/batchconfirm/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="batchconfirm" %}
 {% include_relative code-snippet/edit/batchconfirm/batchconfirm.cs %}
 {% endhighlight %}
@@ -433,6 +498,7 @@ Grid uses `Form Validator` component for column validation.
 You can set validation rules by defining the [`Columns.ValidationRules`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ValidationRules).
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="columnvalid" %}
 {% include_relative code-snippet/edit/columnvalid/columnvalid.cs %}
@@ -440,7 +506,11 @@ You can set validation rules by defining the [`Columns.ValidationRules`](https:/
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/columnvalid/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="columnvalid" %}
 {% include_relative code-snippet/edit/columnvalid/columnvalid.cs %}
 {% endhighlight %}
@@ -471,6 +541,7 @@ You can map The CRUD operation in grid can be mapped to server-side Controller a
 The following code example describes the above behavior.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="urladaptor" %}
 {% include_relative code-snippet/edit/urladaptor/urladaptor.cs %}
@@ -478,7 +549,11 @@ The following code example describes the above behavior.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/urladaptor/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="urladaptor" %}
 {% include_relative code-snippet/edit/urladaptor/urladaptor.cs %}
 {% endhighlight %}
@@ -495,6 +570,7 @@ Also, when using the `UrlAdaptor`, you need to return the data as JSON from the 
 The following code example describes the above behavior.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="data" %}
 {% include_relative code-snippet/edit/urladaptor/data.cs %}
@@ -502,7 +578,11 @@ The following code example describes the above behavior.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/urladaptor/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="data" %}
 {% include_relative code-snippet/edit/urladaptor/data.cs %}
 {% endhighlight %}
@@ -520,6 +600,7 @@ Using the `InsertUrl` property, you can specify the controller action mapping UR
 
 The following code example describes the above behavior.
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="insert" %}
 {% include_relative code-snippet/edit/urladaptor/insert.cs %}
@@ -527,7 +608,11 @@ The following code example describes the above behavior.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/urladaptor/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="insert" %}
 {% include_relative code-snippet/edit/urladaptor/insert.cs %}
 {% endhighlight %}
@@ -549,6 +634,7 @@ Using the `UpdateUrl` property, the controller action mapping URL can be specifi
 
 The following code example describes the previous behavior.
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="update" %}
 {% include_relative code-snippet/edit/urladaptor/update.cs %}
@@ -556,7 +642,11 @@ The following code example describes the previous behavior.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/urladaptor/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="update" %}
 {% include_relative code-snippet/edit/urladaptor/update.cs %}
 {% endhighlight %}
@@ -579,6 +669,7 @@ Using the `RemoveUrl` property, the controller action mapping URL can be specifi
 The following code example describes the previous behavior.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="delete" %}
 {% include_relative code-snippet/edit/urladaptor/delete.cs %}
@@ -586,7 +677,11 @@ The following code example describes the previous behavior.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/urladaptor/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="delete" %}
 {% include_relative code-snippet/edit/urladaptor/delete.cs %}
 {% endhighlight %}
@@ -611,6 +706,7 @@ The action parameter of `CrudUrl` is used to get the corresponding CRUD action.
 The following code example describes the above behavior.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="crudurl" %}
 {% include_relative code-snippet/edit/crudurl/crudurl.cs %}
@@ -618,7 +714,11 @@ The following code example describes the above behavior.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/crudurl/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="crudurl" %}
 {% include_relative code-snippet/edit/crudurl/crudurl.cs %}
 {% endhighlight %}
@@ -644,6 +744,7 @@ You can specify the controller action mapping URL to perform batch operation on 
 The following code example describes the above behavior.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="batchurl" %}
 {% include_relative code-snippet/edit/batchurl/batchurl.cs %}
@@ -651,7 +752,11 @@ The following code example describes the above behavior.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/batchurl/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="batchurl" %}
 {% include_relative code-snippet/edit/batchurl/batchurl.cs %}
 {% endhighlight %}
@@ -678,6 +783,7 @@ The grid provides an option to set the default value for the columns when adding
 To set a default value for the particular column by defining the [`Columns.DefaultValue`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_DefaultValue).
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="defaultcolumnvalue" %}
 {% include_relative code-snippet/edit/defaultcolumnvalue/defaultcolumnvalue.cs %}
@@ -685,7 +791,11 @@ To set a default value for the particular column by defining the [`Columns.Defau
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/defaultcolumnvalue/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="defaultcolumnvalue" %}
 {% include_relative code-snippet/edit/defaultcolumnvalue/defaultcolumnvalue.cs %}
 {% endhighlight %}
@@ -704,6 +814,7 @@ You can define your own custom validation rules for the specific columns by usin
 In the below demo, custom validation applied for `CustomerID` column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="customvalidation" %}
 {% include_relative code-snippet/edit/customvalidation/customvalidation.cs %}
@@ -711,7 +822,11 @@ In the below demo, custom validation applied for `CustomerID` column.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/customvalidation/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="customvalidation" %}
 {% include_relative code-snippet/edit/customvalidation/customvalidation.cs %}
 {% endhighlight %}
@@ -730,6 +845,7 @@ You can disable editing for particular columns by using the [`Columns.AllowEditi
 In the following demo, editing is disabled for the `CustomerID` column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="disableeditforcolumn" %}
 {% include_relative code-snippet/edit/disableeditforcolumn/disableeditforcolumn.cs %}
@@ -737,7 +853,11 @@ In the following demo, editing is disabled for the `CustomerID` column.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/disableeditforcolumn/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="disableeditforcolumn" %}
 {% include_relative code-snippet/edit/disableeditforcolumn/disableeditforcolumn.cs %}
 {% endhighlight %}

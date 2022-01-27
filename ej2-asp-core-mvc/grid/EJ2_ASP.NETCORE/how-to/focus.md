@@ -14,6 +14,7 @@ documentation: ug
 You can focus the double clicked column edit form an through an [`recordDoubleClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Grids.Grid~recordDoubleClick.html) event. With the help of this event you can focus the double clicked column in inline edit mode.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="focus" %}
 {% include_relative code-snippet/how-to/focus/focus.cs %}
@@ -21,7 +22,11 @@ You can focus the double clicked column edit form an through an [`recordDoubleCl
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/focus/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="focus" %}
 {% include_relative code-snippet/how-to/focus/focus.cs %}
 {% endhighlight %}

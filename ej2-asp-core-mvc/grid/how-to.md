@@ -28,6 +28,7 @@ To render the DropDownList component, use the [`DataBound`](https://help.syncfus
 * You can select the grid row index based on the selected data in the DropDownList. The output will appear as follows.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="custom-toolbar" %}
 {% include_relative code-snippet/how-to/custom-toolbar/custom-toolbar.cs %}
@@ -35,7 +36,11 @@ To render the DropDownList component, use the [`DataBound`](https://help.syncfus
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/custom-toolbar/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="custom-toolbar" %}
 {% include_relative code-snippet/how-to/custom-toolbar/custom-toolbar.cs %}
 {% endhighlight %}
@@ -74,6 +79,7 @@ Refresh the grid after the data source change by using the `refresh` method.
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="refresh-datasource" %}
 {% include_relative code-snippet/how-to/refresh-datasource/refresh-datasource.cs %}
@@ -81,7 +87,11 @@ Refresh the grid after the data source change by using the `refresh` method.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/refresh-datasource/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="refresh-datasource" %}
 {% include_relative code-snippet/how-to/refresh-datasource/refresh-datasource.cs %}
 {% endhighlight %}
@@ -138,6 +148,7 @@ Add/Remove the custom CSS class to the Grid in the click event handler of Button
 In the below demo, the button click will enable/disable the Grid and its actions.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="disablegrid" %}
 {% include_relative code-snippet/how-to/disablegrid/disablegrid.cs %}
@@ -145,7 +156,11 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/disablegrid/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="disablegrid" %}
 {% include_relative code-snippet/how-to/disablegrid/disablegrid.cs %}
 {% endhighlight %}
@@ -164,6 +179,7 @@ By default, the expanded child grids will be printed from the current page alone
 In the following example, we have printed expanded child grids form other pages.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="hierarchyprint" %}
 {% include_relative code-snippet/how-to/hierarchyprint/hierarchyprint.cs %}
@@ -171,7 +187,11 @@ In the following example, we have printed expanded child grids form other pages.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/hierarchyprint/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="hierarchyprint" %}
 {% include_relative code-snippet/how-to/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
@@ -212,6 +232,7 @@ grid.refreshHeader();
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="column-header-text" %}
 {% include_relative code-snippet/how-to/column-header-text/column-header-text.cs %}
@@ -219,7 +240,11 @@ grid.refreshHeader();
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/column-header-text/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="column-header-text" %}
 {% include_relative code-snippet/how-to/column-header-text/column-header-text.cs %}
 {% endhighlight %}
@@ -268,6 +293,7 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="custom-column-style" %}
 {% include_relative code-snippet/how-to/custom-column-style/custom-column-style.cs %}
@@ -275,7 +301,11 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/custom-column-style/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="custom-column-style" %}
 {% include_relative code-snippet/how-to/custom-column-style/custom-column-style.cs %}
 {% endhighlight %}
@@ -304,6 +334,7 @@ function tooltip (args) {
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="custom-tooltip" %}
 {% include_relative code-snippet/how-to/custom-tooltip/custom-tooltip.cs %}
@@ -311,7 +342,11 @@ function tooltip (args) {
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/custom-tooltip/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="custom-tooltip" %}
 {% include_relative code-snippet/how-to/custom-tooltip/custom-tooltip.cs %}
 {% endhighlight %}
@@ -358,6 +393,7 @@ Using the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="grouping-events" %}
 {% include_relative code-snippet/how-to/render-other-comp/grouping-events.cs %}
@@ -365,7 +401,11 @@ Using the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/render-other-comp/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="grouping-events" %}
 {% include_relative code-snippet/how-to/render-other-comp/grouping-events.cs %}
 {% endhighlight %}
@@ -419,6 +459,7 @@ function setHeaderHeight(args) {
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="orientation" %}
 {% include_relative code-snippet/how-to/orientation/orientation.cs %}
@@ -426,7 +467,11 @@ function setHeaderHeight(args) {
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/orientation/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="orientation" %}
 {% include_relative code-snippet/how-to/orientation/orientation.cs %}
 {% endhighlight %}
@@ -451,6 +496,7 @@ You can customize the column menu icon by overriding the default grid class `.e-
 In the below sample, grid is rendered with a customized column menu icon.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="column-icon" %}
 {% include_relative code-snippet/how-to/custom-column-menu-icon/column-icon.cs %}
@@ -458,7 +504,11 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/custom-column-menu-icon/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="column-icon" %}
 {% include_relative code-snippet/how-to/custom-column-menu-icon/column-icon.cs %}
 {% endhighlight %}
@@ -535,6 +585,7 @@ Now assign the custom adaptor to the grid as follows.
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="anti-forgery-token" %}
 {% include_relative code-snippet/how-to/anti-forgery-token/anti-forgery-token.cs %}
@@ -542,7 +593,11 @@ Now assign the custom adaptor to the grid as follows.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/anti-forgery-token/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="anti-forgery-token" %}
 {% include_relative code-snippet/how-to/anti-forgery-token/anti-forgery-token.cs %}
 {% endhighlight %}
@@ -563,6 +618,7 @@ You can edit the template column value by defining the `Field` for that particul
 In the below demo, the `ShipCountry` column is rendered with the template.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="edit-temp" %}
 {% include_relative code-snippet/how-to/edit-temp/edit-temp.cs %}
@@ -570,7 +626,11 @@ In the below demo, the `ShipCountry` column is rendered with the template.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/edit-temp/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="edit-temp" %}
 {% include_relative code-snippet/how-to/edit-temp/edit-temp.cs %}
 {% endhighlight %}
@@ -589,6 +649,7 @@ You can customize the appearance of the edit dialog in the [`ActionComplete`](ht
 In the below example, we have changed the dialog's header text for editing and adding records.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/customizedialog/*.cs %}
@@ -596,7 +657,11 @@ In the below example, we have changed the dialog's header text for editing and a
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/customizedialog/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/customizedialog/*.cs %}
 {% endhighlight %}
@@ -619,6 +684,7 @@ In the `actionComplete` event, based on `requestType` as `save`. We can reset th
 In the below example, we have rendered the grid columns `CustomerID` as hidden column and `ShipCountry` as visible column. In the edit mode, we have changed the `CustomerID` column to visible state and `ShipCountry` column to hidden state.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/show-hide-edit-dialog/*.cs %}
@@ -626,7 +692,11 @@ In the below example, we have rendered the grid columns `CustomerID` as hidden c
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/show-hide-edit-dialog/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/show-hide-edit-dialog/*.cs %}
 {% endhighlight %}
@@ -645,6 +715,7 @@ You can achieve the Cascading DropDownList with grid Editing by using the Cell E
 In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and `ShipState` column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="cascading" %}
 {% include_relative code-snippet/how-to/cascading/cascading.cs %}
@@ -652,7 +723,11 @@ In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/cascading/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="cascading" %}
 {% include_relative code-snippet/how-to/cascading/cascading.cs %}
 {% endhighlight %}
@@ -684,6 +759,7 @@ You can also enable filtering for the DropDownList by passing the `allowFilterin
 In the below demo, DropDownList is rendered with custom Datasource for the `ShipCountry` column and enabled filtering to search DropDownList items.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="edit-dropdownlist" %}
 {% include_relative code-snippet/how-to/dropdown-edit/edit-dropdownlist.cs %}
@@ -691,7 +767,11 @@ In the below demo, DropDownList is rendered with custom Datasource for the `Ship
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/dropdown-edit/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="edit-dropdownlist" %}
 {% include_relative code-snippet/how-to/dropdown-edit/edit-dropdownlist.cs %}
 {% endhighlight %}
@@ -710,6 +790,7 @@ You can access the component instance from the component element using the `ej2_
 In the below demo, you can access the Editor component instance while adding or editing actions on the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_ActionComplete_System_String_) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="access-editor" %}
 {% include_relative code-snippet/how-to/access-editor/access-editor.cs %}
@@ -717,7 +798,11 @@ In the below demo, you can access the Editor component instance while adding or 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/access-editor/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="access-editor" %}
 {% include_relative code-snippet/how-to/access-editor/access-editor.cs %}
 {% endhighlight %}
@@ -738,6 +823,7 @@ The following example demonstrate the wizard like editing in the grid with the o
 The following example demonstrate the wizard like editing in grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/wizardediting/*.cs %}
@@ -745,7 +831,11 @@ The following example demonstrate the wizard like editing in grid.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/wizardediting/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/wizardediting/*.cs %}
 {% endhighlight %}
@@ -764,6 +854,7 @@ You can use [`tab`](../../../tab/index.html) component inside dialog edit UI usi
 The following example demonstrate the usage of tab control inside the dialog template.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/tabediting/*.cs %}
@@ -771,7 +862,11 @@ The following example demonstrate the usage of tab control inside the dialog tem
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/tabediting/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/tabediting/*.cs %}
 {% endhighlight %}
@@ -790,6 +885,7 @@ You can disable the editing for a particular row by using the `ActionBegin` even
 In the below demo, the rows which are having the value for `ShipCountry` column as "Denmark" is prevented from editing.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="disable-edit" %}
 {% include_relative code-snippet/how-to/disable-edit/disable-edit.cs %}
@@ -797,7 +893,11 @@ In the below demo, the rows which are having the value for `ShipCountry` column 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/disable-edit/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="disable-edit" %}
 {% include_relative code-snippet/how-to/disable-edit/disable-edit.cs %}
 {% endhighlight %}
@@ -812,6 +912,7 @@ In the below demo, the rows which are having the value for `ShipCountry` column 
 For batch mode of editing, you can use `CellEdit` event of Grid. In the below demo, the cells which are having the value as "Denmark" is prevented from editing.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="disable-edit-batch" %}
 {% include_relative code-snippet/how-to/disable-edit-batch/disable-edit-batch.cs %}
@@ -819,7 +920,11 @@ For batch mode of editing, you can use `CellEdit` event of Grid. In the below de
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/disable-edit-batch/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="disable-edit-batch" %}
 {% include_relative code-snippet/how-to/disable-edit-batch/disable-edit-batch.cs %}
 {% endhighlight %}
@@ -840,6 +945,7 @@ In addition, You can also perform grid actions with custom keyboard shortcuts. T
 The following example demonstrates on `Adding` a new row when `Enter` key is pressed in the grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/keyboard-actions/*.cs %}
@@ -847,7 +953,11 @@ The following example demonstrates on `Adding` a new row when `Enter` key is pre
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/keyboard-actions/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/keyboard-actions/*.cs %}
 {% endhighlight %}
@@ -866,6 +976,7 @@ You can make a cell editable on a single click with `batch` mode of editing in G
 Bind the click event for the Grid and in the click event handler call the [`editCell`](https://ej2.syncfusion.com/documentation/api/grid/edit/#editcell/) method, based on the clicked target element.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="editable-single-click" %}
 {% include_relative code-snippet/how-to/editable-single-click/editable-single-click.cs %}
@@ -873,7 +984,11 @@ Bind the click event for the Grid and in the click event handler call the [`edit
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/editable-single-click/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="editable-single-click" %}
 {% include_relative code-snippet/how-to/editable-single-click/editable-single-click.cs %}
 {% endhighlight %}
@@ -899,6 +1014,7 @@ The available options are:
 In the following sample, we have customized string filter operators.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="customize-filter-menu" %}
 {% include_relative code-snippet/how-to/customize-filter-menu/customize-filter-menu.cs %}
@@ -906,7 +1022,11 @@ In the following sample, we have customized string filter operators.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/customize-filter-menu/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="customize-filter-menu" %}
 {% include_relative code-snippet/how-to/customize-filter-menu/customize-filter-menu.cs %}
 {% endhighlight %}
@@ -946,6 +1066,7 @@ To perform multi-column sorting, you need to push the columns to be sorted into 
 In the below demo, click on the corresponding button to perform single-column or multi-column sorting.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="dynamicsort" %}
 {% include_relative code-snippet/how-to/dynamicsort/dynamicsort.cs %}
@@ -953,7 +1074,11 @@ In the below demo, click on the corresponding button to perform single-column or
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/dynamicsort/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="dynamicsort" %}
 {% include_relative code-snippet/how-to/dynamicsort/dynamicsort.cs %}
 {% endhighlight %}
@@ -996,6 +1121,7 @@ To clear sorting for all the sorted columns, use the [`clearSorting`](https://ej
 In the below demo, click on the corresponding button to clear sort for particular or entire sorted columns in Grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="dynamicclearsort" %}
 {% include_relative code-snippet/how-to/dynamicclearsort/dynamicclearsort.cs %}
@@ -1003,7 +1129,11 @@ In the below demo, click on the corresponding button to clear sort for particula
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/dynamicclearsort/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="dynamicclearsort" %}
 {% include_relative code-snippet/how-to/dynamicclearsort/dynamicclearsort.cs %}
 {% endhighlight %}
@@ -1024,6 +1154,7 @@ By default, foreign key column uses dropdown component for editing. You can rend
 In the following example, The `Employee Name` is a foreign key column and while editing, AutoComplete component is rendered instead of DropDownList.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="edit-template-foreign" %}
 {% include_relative code-snippet/how-to/edit-template-foreign/edit-template-foreign.cs %}
@@ -1031,7 +1162,11 @@ In the following example, The `Employee Name` is a foreign key column and while 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/edit-template-foreign/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="edit-template-foreign" %}
 {% include_relative code-snippet/how-to/edit-template-foreign/edit-template-foreign.cs %}
 {% endhighlight %}
@@ -1050,6 +1185,7 @@ You can create your own filtering UI by using [`Column.Filter`](https://helpsync
 In the following example, The `Employee Name` is a foreign key column. DropDownList is rendered using Filter UI.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filter-ui-foreign" %}
 {% include_relative code-snippet/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
@@ -1057,7 +1193,11 @@ In the following example, The `Employee Name` is a foreign key column. DropDownL
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/filter-ui-foreign/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filter-ui-foreign" %}
 {% include_relative code-snippet/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
 {% endhighlight %}
@@ -1076,6 +1216,7 @@ You can use the filter bar template in foreign key column by defining the [`colu
 In the following example, The `Employee Name` is a foreign key column. This column header shows the custom filter bar template and you can select filter value by using the `DropDown` options.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filterbar-temp-foreign" %}
 {% include_relative code-snippet/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
@@ -1083,7 +1224,11 @@ In the following example, The `Employee Name` is a foreign key column. This colu
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/filterbar-temp-foreign/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filterbar-temp-foreign" %}
 {% include_relative code-snippet/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}
@@ -1102,6 +1247,7 @@ Default aggregations are not supported in a foreign key column. You can achieve 
 In the following example, The `Employee Name` is a foreign key column and the aggregation for the foreign column was calculated in customAggregateFn.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="aggregate-foreign" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/aggregate-foreign.cs %}
@@ -1109,7 +1255,11 @@ In the following example, The `Employee Name` is a foreign key column and the ag
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="aggregate-foreign" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}
@@ -1130,6 +1280,7 @@ You can export the filtered data by defining the resulted data in `exportPropert
 In the below Pdf exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in `exportProperties.dataSource` and pass it to `pdfExport` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="export-filtered-data" %}
 {% include_relative code-snippet/how-to/export-filtered-data/export-filtered-data.cs %}
@@ -1137,7 +1288,11 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/export-filtered-data/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="export-filtered-data" %}
 {% include_relative code-snippet/how-to/export-filtered-data/export-filtered-data.cs %}
 {% endhighlight %}
@@ -1156,6 +1311,7 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 To customize default values of pager dropdown, you need to define `pageSizes` as array of strings.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="pagerdropdown" %}
 {% include_relative code-snippet/how-to/pagerdropdown/pagerdropdown.cs %}
@@ -1163,7 +1319,11 @@ To customize default values of pager dropdown, you need to define `pageSizes` as
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/pagerdropdown/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="pagerdropdown" %}
 {% include_relative code-snippet/how-to/pagerdropdown/pagerdropdown.cs %}
 {% endhighlight %}
@@ -1219,6 +1379,7 @@ Add the CSS class to the Grid in the `rowDataBound` event handler of Grid.
 In the below demo, the expand/collapse icon in the row with `EmployeeID` as `1` is hidden as it does not have record in child Grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="hidearrow" %}
 {% include_relative code-snippet/how-to/hidearrow/hidearrow.cs %}
@@ -1226,7 +1387,11 @@ In the below demo, the expand/collapse icon in the row with `EmployeeID` as `1` 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/hidearrow/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="hidearrow" %}
 {% include_relative code-snippet/how-to/hidearrow/hidearrow.cs %}
 {% endhighlight %}
@@ -1313,6 +1478,7 @@ Scripts->cldr->main->paste copied cldr files
 You need to include cldr-data into your application and refer file location in `index.cshtml` file.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="localization-scripts" %}
 {% include_relative code-snippet/how-to/localization-scripts/localization-scripts.cs %}
@@ -1320,7 +1486,11 @@ You need to include cldr-data into your application and refer file location in `
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/localization-scripts/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="localization-scripts" %}
 {% include_relative code-snippet/how-to/localization-scripts/localization-scripts.cs %}
 {% endhighlight %}
@@ -1337,6 +1507,7 @@ You need to include cldr-data into your application and refer file location in `
 To render grid from controller, We need to create instance for Grid model class. Also we need to define the values for the Grid properties by using this instance. Once the values are defined, we need to return the Grid instance in `view` to render the Grid in view page.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="controller" %}
 {% include_relative code-snippet/how-to/render-grid-from-server/controller.cs %}
@@ -1344,7 +1515,11 @@ To render grid from controller, We need to create instance for Grid model class.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/render-grid-from-server/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="controller" %}
 {% include_relative code-snippet/how-to/render-grid-from-server/controller.cs %}
 {% endhighlight %}

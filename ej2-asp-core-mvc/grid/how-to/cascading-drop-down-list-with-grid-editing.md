@@ -16,6 +16,7 @@ You can achieve the Cascading DropDownList with grid Editing by using the Cell E
 In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and `ShipState` column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="cascading" %}
 {% include_relative code-snippet/how-to/cascading/cascading.cs %}
@@ -23,7 +24,11 @@ In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/cascading/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="cascading" %}
 {% include_relative code-snippet/how-to/cascading/cascading.cs %}
 {% endhighlight %}

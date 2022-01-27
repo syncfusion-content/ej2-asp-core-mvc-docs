@@ -24,6 +24,7 @@ documentation: ug
 To specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_Width_System_Double_) and [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_Height_System_Double_) of the scroller in the pixel, set the pixel value to a number.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="width-height" %}
 {% include_relative code-snippet/scrolling/width-height/width-height.cs %}
@@ -31,7 +32,11 @@ To specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/width-height/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="width-height" %}
 {% include_relative code-snippet/scrolling/width-height/width-height.cs %}
 {% endhighlight %}
@@ -49,6 +54,7 @@ Specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_Height_System_Double_) to `100%` requires the grid parent element to have explicit height.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="responsive-parent" %}
 {% include_relative code-snippet/scrolling/responsive-parent/responsive-parent.cs %}
@@ -56,7 +62,11 @@ Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/responsive-parent/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="responsive-parent" %}
 {% include_relative code-snippet/scrolling/responsive-parent/responsive-parent.cs %}
 {% endhighlight %}
@@ -73,6 +83,7 @@ Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 You can scroll the grid content to the selected row position by using the `RowSelected` event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="scroll-selected-row" %}
 {% include_relative code-snippet/scrolling/scroll-selected-row/scroll-selected-row.cs %}
@@ -80,7 +91,11 @@ You can scroll the grid content to the selected row position by using the `RowSe
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/scroll-selected-row/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="scroll-selected-row" %}
 {% include_relative code-snippet/scrolling/scroll-selected-row/scroll-selected-row.cs %}
 {% endhighlight %}
@@ -100,6 +115,7 @@ In this demo, the [`FrozenColumns`](https://help.syncfusion.com/cr/aspnetcore-js
 is set as '3'. Hence, the left two columns and top three rows are frozen.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="freeze-row-column" %}
 {% include_relative code-snippet/scrolling/freeze-row-column/freeze-row-column.cs %}
@@ -107,7 +123,11 @@ is set as '3'. Hence, the left two columns and top three rows are frozen.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/freeze-row-column/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="freeze-row-column" %}
 {% include_relative code-snippet/scrolling/freeze-row-column/freeze-row-column.cs %}
 {% endhighlight %}
@@ -127,6 +147,7 @@ In this demo, the columns with field name `OrderID` and `EmployeeID` is frozen u
 the `IsFrozen` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="freeze-column" %}
 {% include_relative code-snippet/scrolling/freeze-column/freeze-column.cs %}
@@ -134,7 +155,11 @@ the `IsFrozen` property.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/freeze-column/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="freeze-column" %}
 {% include_relative code-snippet/scrolling/freeze-column/freeze-column.cs %}
 {% endhighlight %}

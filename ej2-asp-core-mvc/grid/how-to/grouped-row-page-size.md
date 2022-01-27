@@ -16,6 +16,7 @@ By default, we have displayed the no of records based on the `pageSize`. If you 
 In the below sample, we have overridden the default `generateQuery` to display the grouped rows instead of grid rows based on the `pageSize`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="group-page-size" %}
 {% include_relative code-snippet/how-to/group-page-size/group-page-size.cs %}
@@ -23,7 +24,11 @@ In the below sample, we have overridden the default `generateQuery` to display t
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/group-page-size/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="group-page-size" %}
 {% include_relative code-snippet/how-to/group-page-size/group-page-size.cs %}
 {% endhighlight %}

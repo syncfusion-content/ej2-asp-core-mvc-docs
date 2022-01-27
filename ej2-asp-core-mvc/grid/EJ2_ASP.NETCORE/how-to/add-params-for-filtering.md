@@ -15,6 +15,7 @@ You can customize the default settings of the components which are used in Menu 
 In the below sample, OrderID and Freight Columns are numeric columns, while open the filter dialog then you can see that NumericTextBox with spin button is displayed to change/set the filter value. Now using the params option we hide the spin button in NumericTextBox for OrderID Column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="excelfilter" %}
 {% include_relative code-snippet/how-to/add-params-for-filtering/excelfilter.cs %}
@@ -22,7 +23,11 @@ In the below sample, OrderID and Freight Columns are numeric columns, while open
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/add-params-for-filtering/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="excelfilter" %}
 {% include_relative code-snippet/how-to/add-params-for-filtering/excelfilter.cs %}
 {% endhighlight %}

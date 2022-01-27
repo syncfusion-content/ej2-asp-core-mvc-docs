@@ -16,6 +16,7 @@ By default, we have displayed the no of records based on the [`PageSize`](https:
 In the below sample, we have overridden the default **generateQuery** to display the grouped rows instead of grid rows based on the [`PageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize).
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="group-page-size" %}
 {% include_relative code-snippet/how-to/group-page-size/group-page-size.cs %}
@@ -23,7 +24,11 @@ In the below sample, we have overridden the default **generateQuery** to display
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/group-page-size/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="group-page-size" %}
 {% include_relative code-snippet/how-to/group-page-size/group-page-size.cs %}
 {% endhighlight %}

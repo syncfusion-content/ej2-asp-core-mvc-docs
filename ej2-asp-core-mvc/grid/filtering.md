@@ -20,6 +20,7 @@ N/A |N/A | `equal` operator will always be used for date filter. |Date
 N/A |N/A |`equal` operator will always be used for Boolean filter. |Boolean
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filter-bar" %}
 {% include_relative code-snippet/filtering/filter-bar/filter-bar.cs %}
@@ -27,7 +28,11 @@ N/A |N/A |`equal` operator will always be used for Boolean filter. |Boolean
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/filter-bar/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filter-bar" %}
 {% include_relative code-snippet/filtering/filter-bar/filter-bar.cs %}
 {% endhighlight %}
@@ -48,6 +53,7 @@ The `FilterBarTemplate` is used to add custom components to a particular column,
 In the following sample, the dropdown is used as a custom component in the EmployeeID column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filterbartemplate" %}
 {% include_relative code-snippet/filter/filterbartemplate/filterbartemplate.cs %}
@@ -55,7 +61,11 @@ In the following sample, the dropdown is used as a custom component in the Emplo
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filter/filterbartemplate/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filterbartemplate" %}
 {% include_relative code-snippet/filter/filterbartemplate/filterbartemplate.cs %}
 {% endhighlight %}
@@ -77,6 +87,7 @@ The [`filterBarTemplate`] is used to add a custom component for a particular col
 In the following sample dropdown is used  as custom component in EmployeeID column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filterbartemplate" %}
 {% include_relative code-snippet/filtering/filterbartemplate/filterbartemplate.cs %}
@@ -84,7 +95,11 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/filterbartemplate/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filterbartemplate" %}
 {% include_relative code-snippet/filtering/filterbartemplate/filterbartemplate.cs %}
 {% endhighlight %}
@@ -102,6 +117,7 @@ You can change the default filter operator by extending `filterModule.filterOper
 we have changed the default operator for string typed columns as `contains` from `startsWith`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filter" %}
 {% include_relative code-snippet/filtering/filteroptr/filter.cs %}
@@ -109,7 +125,11 @@ we have changed the default operator for string typed columns as `contains` from
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/filteroptr/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filter" %}
 {% include_relative code-snippet/filtering/filteroptr/filter.cs %}
 {% endhighlight %}
@@ -127,6 +147,7 @@ You can enable filter menu by setting the [`FilterSettings.Type`](https://help.s
 You can filter the records with different operators.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filtermenu" %}
 {% include_relative code-snippet/filtering/filtermenu/filtermenu.cs %}
@@ -134,7 +155,11 @@ You can filter the records with different operators.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/filtermenu/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filtermenu" %}
 {% include_relative code-snippet/filtering/filtermenu/filtermenu.cs %}
 {% endhighlight %}
@@ -160,6 +185,7 @@ To implement custom filter ui, define the following functions:
 * `read`: Read the filter value from custom component.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="customfiltermenu" %}
 {% include_relative code-snippet/filter/customfiltermenu/customfiltermenu.cs %}
@@ -167,7 +193,11 @@ To implement custom filter ui, define the following functions:
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filter/customfiltermenu/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="customfiltermenu" %}
 {% include_relative code-snippet/filter/customfiltermenu/customfiltermenu.cs %}
 {% endhighlight %}
@@ -188,6 +218,7 @@ In the following sample menu filter is enabled by default and checkbox filter is
 `Column.Filter.Type`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="diffcolumnfilter" %}
 {% include_relative code-snippet/filtering/diffcolumnfilter/diffcolumnfilter.cs %}
@@ -195,7 +226,11 @@ In the following sample menu filter is enabled by default and checkbox filter is
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/diffcolumnfilter/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="diffcolumnfilter" %}
 {% include_relative code-snippet/filtering/diffcolumnfilter/diffcolumnfilter.cs %}
 {% endhighlight %}
@@ -213,6 +248,7 @@ You can enable Excel like filter by defining.
 [`FilterSettings.Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings?lang=typescript#type-string) as `Excel`.The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="excelfilter" %}
 {% include_relative code-snippet/filtering/excelfilter/excelfilter.cs %}
@@ -220,7 +256,11 @@ You can enable Excel like filter by defining.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/filtering/excelfilter/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="excelfilter" %}
 {% include_relative code-snippet/filtering/excelfilter/excelfilter.cs %}
 {% endhighlight %}

@@ -16,6 +16,7 @@ By default, the number of decimal places will be restricted to two in the Numeri
 In the below demo, while editing the row we have restricted to type the decimal point value in the NumericTextBox of **Freight** column
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="prevent-decimal-point" %}
 {% include_relative code-snippet/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
@@ -23,7 +24,11 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/prevent-decimal-point/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="prevent-decimal-point" %}
 {% include_relative code-snippet/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
 {% endhighlight %}

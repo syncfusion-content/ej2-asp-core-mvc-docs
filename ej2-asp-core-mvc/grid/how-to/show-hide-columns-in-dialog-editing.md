@@ -20,6 +20,7 @@ In the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 In the below example, we have rendered the grid columns **CustomerID** as hidden column and **ShipCountry** as visible column. In the edit mode, we have changed the **CustomerID** column to visible state and **ShipCountry** column to hidden state.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/show-hide-edit-dialog/*.cs %}
@@ -27,7 +28,11 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/show-hide-edit-dialog/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/show-hide-edit-dialog/*.cs %}
 {% endhighlight %}

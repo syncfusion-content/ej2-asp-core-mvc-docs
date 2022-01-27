@@ -18,6 +18,7 @@ You can make a row editable on a single click with **Normal** mode of editing in
 Bind the **mouseup** event for Grid and in the event handler call the **startEdit** and **endEdit**, based on the clicked target element.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="single-click-normal-edit" %}
 {% include_relative code-snippet/how-to/single-click-inline-edit/single-click-normal-edit.cs %}
@@ -25,7 +26,11 @@ Bind the **mouseup** event for Grid and in the event handler call the **startEdi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/single-click-inline-edit/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="single-click-normal-edit" %}
 {% include_relative code-snippet/how-to/single-click-inline-edit/single-click-normal-edit.cs %}
 {% endhighlight %}
@@ -42,6 +47,7 @@ Bind the **mouseup** event for Grid and in the event handler call the **startEdi
 You can open the default dropdown edit popup with single click edit by focusing the dropdown element and calling the EJ2 dropdown list's **showPopup** method in the Grid's **actionComplete** event. In this demo we have used a global flag variable in the **mouseup** event to ensure if the dropdown column is the clicked edit target.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="open-dropdown-popup" %}
 {% include_relative code-snippet/how-to/open-dropdown-popup/open-dropdown-popup.cs %}
@@ -49,7 +55,11 @@ You can open the default dropdown edit popup with single click edit by focusing 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/open-dropdown-popup/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="open-dropdown-popup" %}
 {% include_relative code-snippet/how-to/open-dropdown-popup/open-dropdown-popup.cs %}
 {% endhighlight %}
@@ -68,6 +78,7 @@ You can make a cell editable on a single click with **Batch** mode of editing in
 Bind the **mouseup** event for Grid and in the event handler call the **editCell** method, based on the clicked target element.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="single-click-batch-edit" %}
 {% include_relative code-snippet/how-to/single-click-batch-edit/single-click-batch-edit.cs %}
@@ -75,7 +86,11 @@ Bind the **mouseup** event for Grid and in the event handler call the **editCell
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/single-click-batch-edit/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="single-click-batch-edit" %}
 {% include_relative code-snippet/how-to/single-click-batch-edit/single-click-batch-edit.cs %}
 {% endhighlight %}

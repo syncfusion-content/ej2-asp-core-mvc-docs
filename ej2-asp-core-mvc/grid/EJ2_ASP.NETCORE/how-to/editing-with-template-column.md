@@ -16,6 +16,7 @@ You can edit the template column value by defining the **Field** for that partic
 In the below demo, the **ShipCountry** column is rendered with the template.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="edit-temp" %}
 {% include_relative code-snippet/how-to/edit-temp/edit-temp.cs %}
@@ -23,7 +24,11 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/edit-temp/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="edit-temp" %}
 {% include_relative code-snippet/how-to/edit-temp/edit-temp.cs %}
 {% endhighlight %}

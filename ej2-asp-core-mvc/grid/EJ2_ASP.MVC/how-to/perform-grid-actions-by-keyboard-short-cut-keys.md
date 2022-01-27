@@ -18,6 +18,7 @@ In addition, You can also perform grid actions with custom keyboard shortcuts. T
 The following example demonstrates on **Adding** a new row when **Enter** key is pressed in the grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/keyboard-actions/*.cs %}
@@ -25,7 +26,11 @@ The following example demonstrates on **Adding** a new row when **Enter** key is
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/keyboard-actions/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/keyboard-actions/*.cs %}
 {% endhighlight %}

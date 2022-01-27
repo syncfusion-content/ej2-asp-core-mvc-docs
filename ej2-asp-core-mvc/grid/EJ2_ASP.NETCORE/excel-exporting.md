@@ -17,6 +17,7 @@ The excel export allows exporting Grid data to Excel document. You need to use t
 To use excel export, You need to define the **ExcelExport** in inbuild toolbar and define the [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event for exporting the Grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="excel-export" %}
 {% include_relative code-snippet/excel-export/excel-export/excel-export.cs %}
@@ -24,7 +25,11 @@ To use excel export, You need to define the **ExcelExport** in inbuild toolbar a
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/excel-export/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="excel-export" %}
 {% include_relative code-snippet/excel-export/excel-export/excel-export.cs %}
 {% endhighlight %}
@@ -45,6 +50,7 @@ The excel export provides an option to export multiple grid data in the same exc
 The excel export provides support to export multiple grids in same sheet. To export in same sheet, define **multipleExport.type** as **AppendToSheet** in **exportProperties**. It have an option to provide blank rows between grids. These blank rows count can be defined by using the **multipleExport.blankRows**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="same-sheet" %}
 {% include_relative code-snippet/excel-export/same-sheet/same-sheet.cs %}
@@ -52,7 +58,11 @@ The excel export provides support to export multiple grids in same sheet. To exp
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/same-sheet/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="same-sheet" %}
 {% include_relative code-snippet/excel-export/same-sheet/same-sheet.cs %}
 {% endhighlight %}
@@ -71,6 +81,7 @@ The excel export provides support to export multiple grids in same sheet. To exp
 Excel exporting provides support to export multiple grids in new sheet. To export in new sheet, define  **multipleExport.type** as **NewSheet** in **exportProperties**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="new-sheet" %}
 {% include_relative code-snippet/excel-export/new-sheet/new-sheet.cs %}
@@ -78,7 +89,11 @@ Excel exporting provides support to export multiple grids in new sheet. To expor
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/new-sheet/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="new-sheet" %}
 {% include_relative code-snippet/excel-export/new-sheet/new-sheet.cs %}
 {% endhighlight %}
@@ -99,6 +114,7 @@ The excel export provides an option to customize mapping of the grid to excel do
 The excel export provides an option to export the current page into excel. To export current page, define **exportType** to **currentpage**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="export-current" %}
 {% include_relative code-snippet/excel-export/export-current/export-current.cs %}
@@ -106,7 +122,11 @@ The excel export provides an option to export the current page into excel. To ex
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/export-current/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="export-current" %}
 {% include_relative code-snippet/excel-export/export-current/export-current.cs %}
 {% endhighlight %}
@@ -123,6 +143,7 @@ The excel export provides an option to export the current page into excel. To ex
 The excel export provides an option to export hidden columns of grid by defining **includeHiddenColumn** as **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="export-hidden" %}
 {% include_relative code-snippet/excel-export/export-hidden/export-hidden.cs %}
@@ -130,7 +151,11 @@ The excel export provides an option to export hidden columns of grid by defining
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/export-hidden/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="export-hidden" %}
 {% include_relative code-snippet/excel-export/export-hidden/export-hidden.cs %}
 {% endhighlight %}
@@ -153,6 +178,7 @@ In the [`excelExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 In the below example, we have **CustomerID** as a hidden column in the grid. While exporting, we have changed **CustomerID** to visible column and **ShipCity** as hidden column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="show-hide" %}
 {% include_relative code-snippet/excel-export/show-hide/show-hide.cs %}
@@ -160,7 +186,11 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/show-hide/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="show-hide" %}
 {% include_relative code-snippet/excel-export/show-hide/show-hide.cs %}
 {% endhighlight %}
@@ -178,6 +208,7 @@ The excel export provides an option to export with filter option in excel by def
 It requires the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) to be true.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="enable-filter" %}
 {% include_relative code-snippet/excel-export/enable-filter/enable-filter.cs %}
@@ -185,7 +216,11 @@ It requires the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/enable-filter/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="enable-filter" %}
 {% include_relative code-snippet/excel-export/enable-filter/enable-filter.cs %}
 {% endhighlight %}
@@ -202,6 +237,7 @@ Grid cells in the exported Excel can be customized or formatted using [`excelQue
 In the below sample, we have set the background color for **Freight** column in the exported excel by **args.cell** and **backColor** property.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="cell-formats" %}
 {% include_relative code-snippet/excel-export/cell-format/cell-formats.cs %}
@@ -209,7 +245,11 @@ In the below sample, we have set the background color for **Freight** column in 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/cell-format/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="cell-formats" %}
 {% include_relative code-snippet/excel-export/cell-format/cell-formats.cs %}
 {% endhighlight %}
@@ -228,6 +268,7 @@ The excel export provides an option to include theme for exported excel document
 To apply theme in exported Excel, define the **theme** in **exportProperties** .
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="theme" %}
 {% include_relative code-snippet/excel-export/theme/theme.cs %}
@@ -235,7 +276,11 @@ To apply theme in exported Excel, define the **theme** in **exportProperties** .
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/theme/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="theme" %}
 {% include_relative code-snippet/excel-export/theme/theme.cs %}
 {% endhighlight %}
@@ -254,6 +299,7 @@ To apply theme in exported Excel, define the **theme** in **exportProperties** .
 The excel export provides an option to include header and footer content for exported excel document.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="header-footer" %}
 {% include_relative code-snippet/excel-export/header-footer/header-footer.cs %}
@@ -261,7 +307,11 @@ The excel export provides an option to include header and footer content for exp
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/header-footer/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="header-footer" %}
 {% include_relative code-snippet/excel-export/header-footer/header-footer.cs %}
 {% endhighlight %}
@@ -278,6 +328,7 @@ The excel export provides an option to include header and footer content for exp
 You can assign the file name for the exported document by defining **fileName** property in **ExcelExportProperties**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="export-filename" %}
 {% include_relative code-snippet/excel-export/export-filename/export-filename.cs %}
@@ -285,7 +336,11 @@ You can assign the file name for the exported document by defining **fileName** 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/export-filename/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="export-filename" %}
 {% include_relative code-snippet/excel-export/export-filename/export-filename.cs %}
 {% endhighlight %}
@@ -302,6 +357,7 @@ You can assign the file name for the exported document by defining **fileName** 
 The excel export provides an option to define datasource dynamically before exporting. To export data dynamically, define the **dataSource** in **exportProperties**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="custom-data" %}
 {% include_relative code-snippet/excel-export/custom-data/custom-data.cs %}
@@ -309,7 +365,11 @@ The excel export provides an option to define datasource dynamically before expo
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/custom-data/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="custom-data" %}
 {% include_relative code-snippet/excel-export/custom-data/custom-data.cs %}
 {% endhighlight %}
@@ -327,6 +387,7 @@ The excel export provides outline option for grouped records which hides the det
 In grid, we have provided the outline option for the exported document when the data's are grouped.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="excel-group" %}
 {% include_relative code-snippet/excel-export/excel-group/excel-group.cs %}
@@ -334,7 +395,11 @@ In grid, we have provided the outline option for the exported document when the 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/excel-group/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="excel-group" %}
 {% include_relative code-snippet/excel-export/excel-group/excel-group.cs %}
 {% endhighlight %}
@@ -357,6 +422,7 @@ The grid have an option to export the hierarchy grid to excel document. By defau
 | None     | Exports all child grids in collapse state. |
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="hierarchy" %}
 {% include_relative code-snippet/excel-export/hierarchy/hierarchy.cs %}
@@ -364,7 +430,11 @@ The grid have an option to export the hierarchy grid to excel document. By defau
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/hierarchy/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="hierarchy" %}
 {% include_relative code-snippet/excel-export/hierarchy/hierarchy.cs %}
 {% endhighlight %}
@@ -401,6 +471,7 @@ To Export the Grid in server side, You need to call the
  [`serverExcelExport`](https://ej2.syncfusion.com/documentation/api/grid/#serverexcelexport) method for passing the Grid properties to server exporting action.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="server-exportCore" %}
 {% include_relative code-snippet/excel-export/server-export/server-exportCore.cs %}
@@ -408,7 +479,11 @@ To Export the Grid in server side, You need to call the
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/server-export/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="server-exportCore" %}
 {% include_relative code-snippet/excel-export/server-export/server-exportCore.cs %}
 {% endhighlight %}
@@ -429,6 +504,7 @@ You can export the Grid to CSV format by using the [`serverCsvExport`](https://e
 In the below demo, we have invoked the above method inside the [`toolbarClick`](https://ej2.syncfusion.com/documentation/api/grid/#toolbarclick) event. In server side, we have deserialized the Grid properties and passed to the `CsvExport` method which will export the properties to CSV format.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="server-exportCore" %}
 {% include_relative code-snippet/excel-export/server-csv-export/server-exportCore.cs %}
@@ -436,7 +512,11 @@ In the below demo, we have invoked the above method inside the [`toolbarClick`](
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/excel-export/server-csv-export/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="server-exportCore" %}
 {% include_relative code-snippet/excel-export/server-csv-export/server-exportCore.cs %}
 {% endhighlight %}

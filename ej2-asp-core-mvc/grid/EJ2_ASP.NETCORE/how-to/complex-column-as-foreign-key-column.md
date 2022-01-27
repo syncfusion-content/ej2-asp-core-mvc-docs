@@ -16,6 +16,7 @@ The following example shows how to set the complex column as foreign key column.
 In the following example, **Employee.EmployeeID** is a complex column and also declared as a foreign column which shows **FirstName** column from foreign data.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="foreignkey" %}
 {% include_relative code-snippet/columns/foreignkey/foreignkey.cs %}
@@ -23,7 +24,11 @@ In the following example, **Employee.EmployeeID** is a complex column and also d
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/foreignkey/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="foreignkey" %}
 {% include_relative code-snippet/columns/foreignkey/foreignkey.cs %}
 {% endhighlight %}

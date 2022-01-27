@@ -42,6 +42,7 @@ with an array of aggregate types.
 Footer aggregate value is calculated for all the rows, and it is displayed in the footer cells. Use the [`FooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_FooterTemplate) property to render the aggregate value in footer cells.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="footer-agg" %}
 {% include_relative code-snippet/aggregate/footer-agg/footer-agg.cs %}
@@ -49,7 +50,11 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/aggregate/footer-agg/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="footer-agg" %}
 {% include_relative code-snippet/aggregate/footer-agg/footer-agg.cs %}
 {% endhighlight %}
@@ -68,6 +73,7 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 You can format the aggregate value result by using the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_Format) property of [`GridAggregate Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="format-agg" %}
 {% include_relative code-snippet/aggregate/format-agg/format-agg.cs %}
@@ -75,7 +81,11 @@ You can format the aggregate value result by using the [`Format`](https://help.s
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/aggregate/format-agg/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="format-agg" %}
 {% include_relative code-snippet/aggregate/format-agg/format-agg.cs %}
 {% endhighlight %}
@@ -94,6 +104,7 @@ If [`GroupFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
  is provided, aggregate values are displayed in the group caption cells.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="group-caption" %}
 {% include_relative code-snippet/aggregate/group-caption/group-caption.cs %}
@@ -101,7 +112,11 @@ If [`GroupFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/aggregate/group-caption/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="group-caption" %}
 {% include_relative code-snippet/aggregate/group-caption/group-caption.cs %}
 {% endhighlight %}
@@ -125,6 +140,7 @@ object.
 * **Group aggregation**: This will be called with the current group details and [`AggregateColumn`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html) object.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="custom-agg" %}
 {% include_relative code-snippet/aggregate/custom-agg/custom-agg.cs %}
@@ -132,7 +148,11 @@ object.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/aggregate/custom-agg/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="custom-agg" %}
 {% include_relative code-snippet/aggregate/custom-agg/custom-agg.cs %}
 {% endhighlight %}
@@ -153,6 +173,7 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 > Adding a new record to the grouped grid will not refresh the aggregate values.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="reactive-agg-batch-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-batch-edit/reactive-agg-batch-edit.cs %}
@@ -160,7 +181,11 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/aggregate/reactive-agg-batch-edit/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="reactive-agg-batch-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-batch-edit/reactive-agg-batch-edit.cs %}
 {% endhighlight %}
@@ -179,6 +204,7 @@ By default, reactive aggregate update is not supported by inline and dialog edit
 In the following code, the input event for the Freight column editor has been registered and the aggregate value has been refreshed manually.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="reactive-agg-inline-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-inline-edit/reactive-agg-inline-edit.cs %}
@@ -186,7 +212,11 @@ In the following code, the input event for the Freight column editor has been re
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/aggregate/reactive-agg-inline-edit/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="reactive-agg-inline-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-inline-edit/reactive-agg-inline-edit.cs %}
 {% endhighlight %}

@@ -16,6 +16,7 @@ You can collapse all the grouped rows at initial rendering by using [`dataBound`
 In the below demo, all the grouped rows are collapsed at initial rendering.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="collapseall" %}
 {% include_relative code-snippet/how-to/collapse-grouped-rows/collapseall.cs %}
@@ -23,7 +24,11 @@ In the below demo, all the grouped rows are collapsed at initial rendering.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/collapse-grouped-rows/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="collapseall" %}
 {% include_relative code-snippet/how-to/collapse-grouped-rows/collapseall.cs %}
 {% endhighlight %}

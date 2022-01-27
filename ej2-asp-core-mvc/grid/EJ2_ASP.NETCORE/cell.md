@@ -16,6 +16,7 @@ documentation: ug
 The HTML tags can be displayed in the Grid header and content by enabling the [`disableHtmlEncode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_DisableHtmlEncode) property of **e-grid-column** tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="html" %}
 {% include_relative code-snippet/cell/html/html.cs %}
@@ -23,7 +24,11 @@ The HTML tags can be displayed in the Grid header and content by enabling the [`
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/cell/html/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="html" %}
 {% include_relative code-snippet/cell/html/html.cs %}
 {% endhighlight %}
@@ -42,6 +47,7 @@ The appearance of cells can be customized by using the [`queryCellInfo`](https:/
 The [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event triggers for every cell.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="customize" %}
 {% include_relative code-snippet/cell/customize/customize.cs %}
@@ -49,7 +55,11 @@ The [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/cell/customize/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="customize" %}
 {% include_relative code-snippet/cell/customize/customize.cs %}
 {% endhighlight %}
@@ -78,6 +88,7 @@ Note: When a column width is not specified, then auto wrap of columns will be ad
 In the following example, the [`wrapMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridTextWrapSettings.html#Syncfusion_EJ2_Grids_GridTextWrapSettings_WrapMode) is set to **Content**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="autowrap" %}
 {% include_relative code-snippet/cell/autowrap/autowrap.cs %}
@@ -85,7 +96,11 @@ In the following example, the [`wrapMode`](https://help.syncfusion.com/cr/aspnet
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/cell/autowrap/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="autowrap" %}
 {% include_relative code-snippet/cell/autowrap/autowrap.cs %}
 {% endhighlight %}
@@ -110,6 +125,7 @@ You can customize the grid cells by adding a CSS class to the [`customAttribute`
 In the below example, we have customized the cells of **OrderID** and **ShipCity** columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="customStyle" %}
 {% include_relative code-snippet/cell/customAttribute/customStyle.cs %}
@@ -117,7 +133,11 @@ In the below example, we have customized the cells of **OrderID** and **ShipCity
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/cell/customAttribute/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="customStyle" %}
 {% include_relative code-snippet/cell/customAttribute/customStyle.cs %}
 {% endhighlight %}
@@ -145,6 +165,7 @@ The available modes of grid lines are:
 | Default | Displays grid lines based on the theme.|
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="gridlines" %}
 {% include_relative code-snippet/cell/gridlines/gridlines.cs %}
@@ -152,7 +173,11 @@ The available modes of grid lines are:
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/cell/gridlines/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="gridlines" %}
 {% include_relative code-snippet/cell/gridlines/gridlines.cs %}
 {% endhighlight %}
@@ -177,6 +202,7 @@ There are three types of **ClipMode**. They are:
 * **EllipsisWithTooltip**: Displays ellipsis when the cell content overflows its area, also it will display the tooltip while hover on ellipsis is applied.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="clipmode" %}
 {% include_relative code-snippet/cell/clipmode/clipmode.cs %}
@@ -184,7 +210,11 @@ There are three types of **ClipMode**. They are:
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/cell/clipmode/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="clipmode" %}
 {% include_relative code-snippet/cell/clipmode/clipmode.cs %}
 {% endhighlight %}

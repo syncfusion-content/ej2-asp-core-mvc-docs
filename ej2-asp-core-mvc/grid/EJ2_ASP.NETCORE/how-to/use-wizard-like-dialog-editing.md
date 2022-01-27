@@ -16,6 +16,7 @@ Wizard helps you create intuitive step-by-step forms to fill. You can achieve th
 The following example demonstrate the wizard like editing in the grid with the obtrusive Validation.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/wizardediting/*.cs %}
@@ -23,7 +24,11 @@ The following example demonstrate the wizard like editing in the grid with the o
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/wizardediting/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/wizardediting/*.cs %}
 {% endhighlight %}

@@ -17,6 +17,7 @@ Paging options can be configured through the [`e-page-settings`](https://help.sy
 In the below sample, `pageSize` is calculated based on the grid height by using the [`load`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="page" %}
 {% include_relative code-snippet/paging/page/page.cs %}
@@ -24,7 +25,11 @@ In the below sample, `pageSize` is calculated based on the grid height by using 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/paging/page/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="page" %}
 {% include_relative code-snippet/paging/page/page.cs %}
 {% endhighlight %}
@@ -45,6 +50,7 @@ The custom elements can be defined by using the [`template`](https://help.syncfu
 Inside this template, you can access the **CurrentPage**, **PageSize**, **TotalPage** and **TotalRecordCount** values.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="page-temp" %}
 {% include_relative code-snippet/paging/page-temp/page-temp.cs %}
@@ -52,7 +58,11 @@ Inside this template, you can access the **CurrentPage**, **PageSize**, **TotalP
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/paging/page-temp/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="page-temp" %}
 {% include_relative code-snippet/paging/page-temp/page-temp.cs %}
 {% endhighlight %}
@@ -69,6 +79,7 @@ Inside this template, you can access the **CurrentPage**, **PageSize**, **TotalP
 The pager Dropdown allows you to change the number of records in the Grid dynamically. It can be enabled by defining the [`pageSizes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSizes) property of **e-page-settings** as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="pagerdropdown" %}
 {% include_relative code-snippet/paging/pagerdropdown/pagerdropdown.cs %}
@@ -76,7 +87,11 @@ The pager Dropdown allows you to change the number of records in the Grid dynami
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/paging/pagerdropdown/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="pagerdropdown" %}
 {% include_relative code-snippet/paging/pagerdropdown/pagerdropdown.cs %}
 {% endhighlight %}
@@ -93,6 +108,7 @@ The pager Dropdown allows you to change the number of records in the Grid dynami
 By default, Pager will be rendered at the bottom of the Grid. You can also render the Pager at the top of the Grid by using the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="pagerattop" %}
 {% include_relative code-snippet/paging/pagerattop/pagerattop.cs %}
@@ -100,7 +116,11 @@ By default, Pager will be rendered at the bottom of the Grid. You can also rende
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/paging/pagerattop/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="pagerattop" %}
 {% include_relative code-snippet/paging/pagerattop/pagerattop.cs %}
 {% endhighlight %}

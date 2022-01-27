@@ -98,13 +98,18 @@ Add `ScriptManager` to the bottom of the `_Layout.cshtml` page. The ScriptManage
 To initialize the Grid component add the below code to your `Index.cshtml` view page which is present under `Views/Home` folder.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="grid" %}
 {% endhighlight %}
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/getting-start-core/grid/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="grid" %}
 {% endhighlight %}
 {% highlight razor tabtitle="razor" %}
@@ -120,6 +125,7 @@ To initialize the Grid component add the below code to your `Index.cshtml` view
 To bind data for the Grid component, you can assign a IEnumerable object to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. The list data source can also be provided as an instance of the `DataManager`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/databinding/orderDetails.cs %}
@@ -127,7 +133,11 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/getting-start-core/databinding/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/databinding/orderDetails.cs %}
 {% endhighlight %}
@@ -156,6 +166,7 @@ Using this, we can format number and date values to standard or custom formats.
 Here, we have defined it for the conversion of numeric values to currency.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/gridcolumns/orderDetails.cs %}
@@ -163,7 +174,11 @@ Here, we have defined it for the conversion of numeric values to currency.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/getting-start-core/gridcolumns/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/gridcolumns/orderDetails.cs %}
 {% endhighlight %}
@@ -180,6 +195,7 @@ Here, we have defined it for the conversion of numeric values to currency.
 The paging feature enables users to view the grid record in a paged view. It can be enabled by setting the  [`allowPaging`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowPaging) property to true. Pager can be customized using [`e-grid-pagesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PageSettings) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/page/orderDetails.cs %}
@@ -187,7 +203,11 @@ The paging feature enables users to view the grid record in a paged view. It can
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/getting-start-core/page/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/page/orderDetails.cs %}
 {% endhighlight %}
@@ -204,6 +224,7 @@ The paging feature enables users to view the grid record in a paged view. It can
 The sorting feature enables you to order the records. It can be enabled by setting the  [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) property as true. Sorting feature can be customized using [`e-grid-sortsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SortSettings) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/sorting/orderDetails.cs %}
@@ -211,7 +232,11 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/getting-start-core/sorting/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/sorting/orderDetails.cs %}
 {% endhighlight %}
@@ -228,6 +253,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 The filtering feature enables you to view reduced amount of records based on filter criteria. It can be enabled by setting the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) property as true. Filtering feature can be customized using [`e-grid-filtersettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/filtering/orderDetails.cs %}
@@ -235,7 +261,11 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/getting-start-core/filtering/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/filtering/orderDetails.cs %}
 {% endhighlight %}
@@ -254,6 +284,7 @@ The grouping feature enables users to view the grid record in a grouped view. It
  Grouping feature can be customized using the [`e-grid-groupsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/grouping/orderDetails.cs %}
@@ -261,7 +292,11 @@ The grouping feature enables users to view the grid record in a grouped view. It
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/getting-start-core/grouping/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-core/grouping/orderDetails.cs %}
 {% endhighlight %}

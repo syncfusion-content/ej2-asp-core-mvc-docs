@@ -46,6 +46,7 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="custom-column-style" %}
 {% include_relative code-snippet/how-to/custom-column-style/custom-column-style.cs %}
@@ -53,7 +54,11 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/custom-column-style/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="custom-column-style" %}
 {% include_relative code-snippet/how-to/custom-column-style/custom-column-style.cs %}
 {% endhighlight %}

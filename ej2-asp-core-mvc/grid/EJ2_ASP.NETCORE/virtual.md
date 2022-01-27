@@ -22,6 +22,7 @@ The number of records displayed in the Grid is determined implicitly by height o
 the [`pageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize) property of [`e-grid-pagesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PageSettings) tag helper. The loaded data will be cached and reused when it is needed for next time.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="row-virtualization" %}
 {% include_relative code-snippet/virtual-grid/row-virtualization/row-virtualization.cs %}
@@ -29,7 +30,11 @@ the [`pageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/virtual-grid/row-virtualization/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="row-virtualization" %}
 {% include_relative code-snippet/virtual-grid/row-virtualization/row-virtualization.cs %}
 {% endhighlight %}
@@ -50,6 +55,7 @@ To setup the column virtualization, set the
 [`enableColumnVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableColumnVirtualization) properties as **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="Column-virtualization" %}
 {% include_relative code-snippet/virtual-grid/column-virtualization/Column-virtualization.cs %}
@@ -57,7 +63,11 @@ To setup the column virtualization, set the
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/virtual-grid/column-virtualization/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="Column-virtualization" %}
 {% include_relative code-snippet/virtual-grid/column-virtualization/Column-virtualization.cs %}
 {% endhighlight %}

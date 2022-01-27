@@ -36,6 +36,7 @@ The following table shows built-in toolbar items and its actions.
 | WordExport | Exports the grid to Word.|
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="toolbar" %}
 {% include_relative code-snippet/toolbar/toolbar/toolbar.cs %}
@@ -43,7 +44,11 @@ The following table shows built-in toolbar items and its actions.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/toolbar/toolbar/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="toolbar" %}
 {% include_relative code-snippet/toolbar/toolbar/toolbar.cs %}
 {% endhighlight %}
@@ -66,6 +71,7 @@ Actions for this customized toolbar items are defined in the [`ToolbarClick`](ht
 By default, Custom toolbar items are in position `Left`. You can change the position by using the `align` property. In the below sample, we have applied position `Right` for the `Collapse All` toolbar item.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="custom-toolbar-item" %}
 {% include_relative code-snippet/toolbar/custom-toolbar-item/custom-toolbar-item.cs %}
@@ -73,7 +79,11 @@ By default, Custom toolbar items are in position `Left`. You can change the posi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/toolbar/custom-toolbar-item/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="custom-toolbar-item" %}
 {% include_relative code-snippet/toolbar/custom-toolbar-item/custom-toolbar-item.cs %}
 {% endhighlight %}
@@ -95,6 +105,7 @@ Grid have an option to use both built-in and custom toolbar items at same time.
 In the below example, `Add`, `Edit`, `Delete`, `Update`, `Cancel` are built-in toolbar items and `Click` is custom toolbar item.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="builtin-custom-items" %}
 {% include_relative code-snippet/toolbar/builtin-custom-items/builtin-custom-items.cs %}
@@ -102,7 +113,11 @@ In the below example, `Add`, `Edit`, `Delete`, `Update`, `Cancel` are built-in t
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/toolbar/builtin-custom-items/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="builtin-custom-items" %}
 {% include_relative code-snippet/toolbar/builtin-custom-items/builtin-custom-items.cs %}
 {% endhighlight %}
@@ -119,6 +134,7 @@ In the below example, `Add`, `Edit`, `Delete`, `Update`, `Cancel` are built-in t
 You can enable/disable toolbar items by using the `enableItems` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="enable-disable" %}
 {% include_relative code-snippet/toolbar/enable-disable/enable-disable.cs %}
@@ -126,7 +142,11 @@ You can enable/disable toolbar items by using the `enableItems` method.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/toolbar/enable-disable/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="enable-disable" %}
 {% include_relative code-snippet/toolbar/enable-disable/enable-disable.cs %}
 {% endhighlight %}

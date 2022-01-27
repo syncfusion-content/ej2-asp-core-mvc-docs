@@ -51,6 +51,7 @@ function setHeaderHeight(args) {
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="orientation" %}
 {% include_relative code-snippet/how-to/orientation/orientation.cs %}
@@ -58,7 +59,11 @@ function setHeaderHeight(args) {
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/orientation/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="orientation" %}
 {% include_relative code-snippet/how-to/orientation/orientation.cs %}
 {% endhighlight %}

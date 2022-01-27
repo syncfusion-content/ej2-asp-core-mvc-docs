@@ -29,6 +29,7 @@ You can also enable filtering for the DropDownList by passing the **allowFilteri
 In the below demo, DropDownList is rendered with custom Datasource for the **ShipCountry** column and enabled filtering to search DropDownList items.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="edit-dropdownlist" %}
 {% include_relative code-snippet/how-to/dropdown-edit/edit-dropdownlist.cs %}
@@ -36,7 +37,11 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/dropdown-edit/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="edit-dropdownlist" %}
 {% include_relative code-snippet/how-to/dropdown-edit/edit-dropdownlist.cs %}
 {% endhighlight %}

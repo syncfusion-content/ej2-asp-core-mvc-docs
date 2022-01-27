@@ -111,6 +111,7 @@ To load translation object in an application, use `load` function of the `L10n` 
 The following example demonstrates the Grid in `Deutsch` culture.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="localization" %}
 {% include_relative code-snippet/globalization/localization/localization.cs %}
@@ -118,7 +119,11 @@ The following example demonstrates the Grid in `Deutsch` culture.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/globalization/localization/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="localization" %}
 {% include_relative code-snippet/globalization/localization/localization.cs %}
 {% endhighlight %}
@@ -135,6 +140,7 @@ The following example demonstrates the Grid in `Deutsch` culture.
 The [`Internationalization`](../../common/intl.html) library is used to globalize number, date, and time values in grid component using format strings in the `Format`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="internationalization" %}
 {% include_relative code-snippet/globalization/internationalization/internationalization.cs %}
@@ -142,7 +148,11 @@ The [`Internationalization`](../../common/intl.html) library is used to globaliz
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/globalization/internationalization/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="internationalization" %}
 {% include_relative code-snippet/globalization/internationalization/internationalization.cs %}
 {% endhighlight %}
@@ -162,6 +172,7 @@ The [`Internationalization`](../../common/intl.html) library is used to globaliz
 RTL provides an option to switch the text direction and layout of the Grid component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Grid, set the [`EnableRtl`] to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="righttoleft" %}
 {% include_relative code-snippet/globalization/righttoleft/righttoleft.cs %}
@@ -169,7 +180,11 @@ RTL provides an option to switch the text direction and layout of the Grid compo
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/globalization/righttoleft/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="righttoleft" %}
 {% include_relative code-snippet/globalization/righttoleft/righttoleft.cs %}
 {% endhighlight %}

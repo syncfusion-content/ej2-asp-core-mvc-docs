@@ -16,6 +16,7 @@ You can use [`tab`](../../../tab/index.html) component inside dialog edit UI usi
 The following example demonstrate the usage of tab control inside the dialog template.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/tabediting/*.cs %}
@@ -23,7 +24,11 @@ The following example demonstrate the usage of tab control inside the dialog tem
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/tabediting/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/tabediting/*.cs %}
 {% endhighlight %}

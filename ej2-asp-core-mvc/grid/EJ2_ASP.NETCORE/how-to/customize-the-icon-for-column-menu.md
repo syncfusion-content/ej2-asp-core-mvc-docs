@@ -24,6 +24,7 @@ You can customize the column menu icon by overriding the default grid class **.e
 In the below sample, grid is rendered with a customized column menu icon.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="column-icon" %}
 {% include_relative code-snippet/how-to/custom-column-menu-icon/column-icon.cs %}
@@ -31,7 +32,11 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/custom-column-menu-icon/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="column-icon" %}
 {% include_relative code-snippet/how-to/custom-column-menu-icon/column-icon.cs %}
 {% endhighlight %}
