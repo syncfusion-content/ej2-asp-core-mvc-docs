@@ -1,0 +1,19 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).DataBound("bound").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
+
+}).AllowPaging().AllowGrouping().GroupSettings(group => group.Columns(new string[] { "ShipCountry" })).Render()
+
+<script>
+    var initial = true;
+    function bound() {
+        if (initial === true) {
+            this.groupModule.collapseAll();
+            initial = false;
+        }
+    }
+</script>

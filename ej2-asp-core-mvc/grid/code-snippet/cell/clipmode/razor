@@ -1,0 +1,8 @@
+ @Html.EJS().Grid("ClipMode").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+   {
+       col.Field("NumberofPatentFamilies").HeaderText("NumberofPatentFamilies").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+       col.Field("Inventor").HeaderText("Inventor").ClipMode(Syncfusion.EJ2.Grids.ClipMode.Clip).Width("150").Add();
+       col.Field("NumberofINPADOCpatents").ClipMode(Syncfusion.EJ2.Grids.ClipMode.Ellipsis).HeaderText("NumberofINPADOCpatents").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+       col.Field("Mainfieldsofinvention").ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).HeaderText("Mainfieldsofinvention").Width("150").Add();
+       col.Field("Active").HeaderText("Active").Width("150").Add();
+   }).AllowPaging().Render()

@@ -1,0 +1,33 @@
+@Html.EJS().Grid("Print").DataSource((IEnumerable<object>)ViewBag.DataSource).ToolbarClick("toolbarClick").PrintComplete("printComplete").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Visible(false).Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+
+}).AllowPaging().Toolbar(new List<string>() { "Print" }).Render()
+
+<script>
+    function toolbarClick(args) {
+        for (var i = 0; i < this.columns.length; i++) {
+            if (this.columns[i].field == "CustomerID") {
+                this.columns[i].visible = true;
+            }
+            else if (this.columns[i].field == "ShipCity") {
+                this.columns[i].visible = false;
+            }
+        }
+    }
+
+    function printComplete(args) {
+        for (var i = 0; i < this.columns.length; i++) {
+            if (this.columns[i].field == "CustomerID") {
+                this.columns[i].visible = false;
+            }
+            else if (this.columns[i].field == "ShipCity") {
+                this.columns[i].visible = true;
+            }
+        }
+    }
+</script>

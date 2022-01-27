@@ -1,0 +1,38 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowFiltering="true">
+    <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="EmployeeID" width="150" foreignKeyValue="LastName" dataSource="ViewBag.ForeignData"
+            filter="@(new { ui = new { create = "create", read = "read", write = "write"} })"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+
+    var dropInstance;
+    var fEmployeeData = @Json.Serialize(ViewBag.ForeignData);
+
+    function create (args) {
+        var flValInput = document.createElement('input');
+        flValInput.classList.add('flm-input');
+        args.target.appendChild(flValInput);
+        dropInstance = new ej.dropdowns.DropDownList({
+            dataSource: new ej.data.DataManager(fEmployeeData),
+            fields: { text: 'LastName', value: 'EmployeeID' },
+            placeholder: 'Select a value',
+            popupHeight: '200px'
+        });
+        dropInstance.appendTo(flValInput);
+    }
+
+    function write (args){
+        dropInstance.text = args.filteredValue || '';
+    }
+
+    function read (args) {
+        args.fltrObj.filterByColumn(args.column.field, args.operator, dropInstance.text);
+    }
+</script>

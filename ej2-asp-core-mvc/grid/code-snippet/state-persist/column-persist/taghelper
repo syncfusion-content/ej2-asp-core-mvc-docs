@@ -1,0 +1,45 @@
+<ejs-button id="restore" content="Restore" isPrimary="true"></ejs-button>
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" enablePersistence="true" allowPaging="true" allowFiltering="true" height="270"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Customer ID"  width="150"  headerTemplate="#customertemplate"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City"  width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name"  width="150" template="#template"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+document.getElementById('restore').onclick = function () {
+    var savedProperties = JSON.parse(document.getElementById('Grid').ej2_instances[0].getPersistData());
+    var gridColumnsState = Object.assign([], document.getElementById('Grid').ej2_instances[0].getColumns());
+    savedProperties.columns.forEach(function (col) {
+        var headerText = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['headerText'];
+        var colTemplate = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['template'];
+        var headerTemplate = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['headerTemplate'];
+        col.headerText = 'Text Changed';
+        col.template = colTemplate;
+        col.headerTemplate = headerTemplate;
+    });
+        console.log(savedProperties);
+        document.getElementById('Grid').ej2_instances[0].setProperties(savedProperties);
+}
+</script>
+
+<script id="template" type="text/x-template">
+    <a rel='nofollow' href="https://en.wikipedia.org/wiki/${ShipName}"><span class="e-icons e-Reply"></span></a>
+</script>
+  
+<script id="customertemplate" type="text/x-template">
+    <span class="e-icons e-header" ></span>
+    Customer ID
+</script>
+  
+<style>
+    .e-Reply:before {
+        content: '\e815';
+    }
+  
+    .e-header:before {
+        content: '\ea9a';
+    }
+</style>

@@ -1,0 +1,47 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPdfExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"PdfExport"})" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" width="140"></e-grid-column>
+        <e-grid-column field="EmployeeID"  textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate"  width="140"></e-grid-column>
+        <e-grid-column field="Freight"  isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity"  width="140"></e-grid-column>
+        <e-grid-column field="Verified"  textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="ShipName" width="140" ></e-grid-column>
+        <e-grid-column field="ShipCountry"  isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="ShippedDate" width="140"></e-grid-column>
+        <e-grid-column field="ShipAddress" textAlign="Right" width="120"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function toolbarClick(args) {
+       let pdfDocument = new ej.pdfexport.PdfDocument();
+       let page = pdfDocument.pages.add();
+       var grid = document.getElementById('Grid').ej2_instances[0];
+       var pdfGrid = new ej.pdfexport.PdfGrid();
+       pdfGrid.style.allowHorizontalOverflow = false;
+       let format = new ej.pdfexport.PdfLayoutFormat();
+       var collength = grid.columns.length;
+       pdfGrid.columns.add(collength);
+
+       pdfGrid.headers.add(1);
+
+       var pdfGridHeader = pdfGrid.headers.getHeader(0);
+       for (let j = 0; j < collength; j++) {
+           pdfGridHeader.cells.getCell(j).value = grid.columns[j].headerText;
+       }
+       let pdfGridRow1 = [];
+       for (let k = 0; k < grid.dataSource.length; k++) {
+           pdfGridRow1[k] = pdfGrid.rows.addRow();
+       }
+       for (let k = 0; k < grid.dataSource.length; k++) {
+           for (let r = 0; r < grid.columnModel.length; r++) {
+               pdfGridRow1[k].cells.getCell(r).value = grid.dataSource[k][grid.columnModel[r].field].toString();
+           }
+       }
+       pdfGrid.draw(page, new ej.pdfexport.PointF(0, 0), format);
+       pdfDocument.save('output.pdf');
+       pdfDocument.destroy();
+    }
+</script>

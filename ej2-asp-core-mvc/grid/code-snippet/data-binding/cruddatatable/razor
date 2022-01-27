@@ -1,0 +1,10 @@
+@Html.EJS().Grid("RemoteData").DataSource(ds => ds.Url("/Home/UrlDatasource").Adaptor("UrlAdaptor").InsertUrl("/Home/Insert").RemoveUrl("/Home/Delete").UpdateUrl("Home/Update")).Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("130").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
+
+}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+

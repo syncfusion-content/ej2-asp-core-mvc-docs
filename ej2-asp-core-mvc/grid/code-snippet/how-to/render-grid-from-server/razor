@@ -1,0 +1,3 @@
+@model Syncfusion.EJ2.Grids.Grid
+
+@Html.EJS().Grid("Grid", Model).Render()

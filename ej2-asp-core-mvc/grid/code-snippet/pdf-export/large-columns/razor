@@ -1,0 +1,48 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport().ToolbarClick("toolbarClick").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Visible(false).Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+    col.Field("ShipCity").HeaderText("ShipCity").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("EmployeeID").HeaderText("EmployeeID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCity").HeaderText("ShipCity").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipAddress").HeaderText("ShipAddress").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShippedDate").HeaderText("ShippedDate").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipName").HeaderText("ShipName").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+
+}).AllowPaging().Toolbar(new List<string>() { "PdfExport" }).Render()
+
+<script>
+
+    function toolbarClick(args) {
+        let pdfDocument = new ej.pdfexport.PdfDocument();
+        let page = pdfDocument.pages.add();
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        var pdfGrid = new ej.pdfexport.PdfGrid();
+        pdfGrid.style.allowHorizontalOverflow = false;
+        let format = new ej.pdfexport.PdfLayoutFormat();
+        var collength = grid.columns.length;
+        pdfGrid.columns.add(collength);
+
+        pdfGrid.headers.add(1);
+
+        var pdfGridHeader = pdfGrid.headers.getHeader(0);
+        for (let j = 0; j < collength; j++) {
+            pdfGridHeader.cells.getCell(j).value = grid.columns[j].headerText;
+        }
+        let pdfGridRow1 = [];
+        for (let k = 0; k < grid.dataSource.length; k++) {
+            pdfGridRow1[k] = pdfGrid.rows.addRow();
+        }
+        for (let k = 0; k < grid.dataSource.length; k++) {
+            for (let r = 0; r < grid.columnModel.length; r++) {
+                pdfGridRow1[k].cells.getCell(r).value = grid.dataSource[k][grid.columnModel[r].field].toString();
+            }
+        }
+        pdfGrid.draw(page, new ej.pdfexport.PointF(0, 0), format);
+        pdfDocument.save('output.pdf');
+        pdfDocument.destroy();
+    }
+
+</script>

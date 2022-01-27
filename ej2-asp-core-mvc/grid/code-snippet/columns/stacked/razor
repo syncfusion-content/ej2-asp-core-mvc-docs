@@ -1,0 +1,8 @@
+@Html.EJS().Grid("StackedColumnResize").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowResizing(true).Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.HeaderText("Order Details").Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "OrderDate", Width = "120", HeaderText = "Order Date",TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right,Format="yMd" },
+        new Syncfusion.EJ2.Grids.GridColumn { Field = "Freight", Width = "100", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right, HeaderText = "Freight($)", Format="C2" } }).Add();
+  col.HeaderText("Shipped Details").Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipCity", Width = "100", HeaderText = "Ship City", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right, AllowResizing = false },
+        new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipCountry", Width = "120",  HeaderText = "Ship Country" } }).Add();
+}).AllowPaging().Render()

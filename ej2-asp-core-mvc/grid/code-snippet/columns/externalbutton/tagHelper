@@ -1,0 +1,20 @@
+<ejs-button id="show" content="OPEN COLUMN CHOOSER"></ejs-button>
+        <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" showColumnChooser="true" allowPaging="true">
+            <e-grid-columns>
+                <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+                <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+                <e-grid-column field="OrderDate" headerText=" Order Date" textAlign="Right" format="yMd" width="130"></e-grid-column>
+                <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+                <e-grid-column field="ShippedDate" headerText="Shipped Date" textAlign="Right" format="yMd" width="140"></e-grid-column>                
+                <e-grid-column field="ShipCountry"  headerText="Ship Country" width="150"></e-grid-column>
+                <e-grid-column field="ShipCity"   headerText="Ship City" width="150"></e-grid-column> 
+            </e-grid-columns>
+        </ejs-grid>
+    </div>
+    
+<script>
+    document.getElementById('show').addEventListener("click", function(){
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        grid.columnChooserModule.openColumnChooser(200, 50); // give X and Y axis
+    });
+</script>

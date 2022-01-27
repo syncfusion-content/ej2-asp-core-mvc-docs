@@ -1,0 +1,9 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowSelection="true" >
+    <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>               
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

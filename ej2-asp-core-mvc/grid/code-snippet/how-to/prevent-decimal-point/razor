@@ -1,0 +1,14 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").EditType("numericedit").Edit(new { @params = new Syncfusion.EJ2.Inputs.NumericTextBox() {
+
+        ValidateDecimalOnType = true,
+        Decimals = 0,
+        Format = "N"
+    }}).Width("90").Format("C2").Add();
+
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).AllowPaging().Render()

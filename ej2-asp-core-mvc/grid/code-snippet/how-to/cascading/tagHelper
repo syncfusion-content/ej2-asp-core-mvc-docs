@@ -1,0 +1,79 @@
+
+<ejs-grid id="Grid" dataSource=@ViewBag.data toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" editType='dropdownedit' edit="@(new {create="countryCreate", read="countryRead", destroy="countryDestroy", write="countryWrite"  })"></e-grid-column>
+        <e-grid-column field="ShipState" headerText="Ship State" width="150" editType='dropdownedit' edit="@(new {create="stateCreate", read="stateRead", destroy="stateDestroy", write="stateWrite"  })"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var countryElem;
+    var countryObj;
+
+    var stateElem;
+    var stateObj;
+
+    var country = [
+        { countryName: 'United States', countryId: '1' },
+        { countryName: 'Australia', countryId: '2' }
+    ];
+    var state = [
+        { stateName: 'New York', countryId: '1', stateId: '101' },
+        { stateName: 'Virginia', countryId: '1', stateId: '102' },
+        { stateName: 'Washington', countryId: '1', stateId: '103' },
+        { stateName: 'Queensland', countryId: '2', stateId: '104' },
+        { stateName: 'Tasmania', countryId: '2', stateId: '105' },
+        { stateName: 'Victoria', countryId: '2', stateId: '106' }
+    ];
+
+    function countryCreate() {
+        countryElem = document.createElement('input');
+        return countryElem;
+    }
+    function countryRead() {
+        return countryObj.text;
+    }
+    function countryDestroy() {
+        countryObj.destroy();
+    }
+    function countryWrite() {
+        countryObj = new ej.dropdowns.DropDownList({
+                        dataSource: country,
+                        fields: { value: 'countryId', text: 'countryName' },
+                        change: function(){
+                            stateObj.enabled = true;
+                            var tempQuery = new ej.data.Query().where('countryId', 'equal', countryObj.value);
+                            stateObj.query = tempQuery;
+                            stateObj.text = null;
+                            stateObj.dataBind();
+                        },
+                        placeholder: 'Select a country',
+                        floatLabelType: 'Never'
+                    });
+                    countryObj.appendTo(countryElem);
+    }
+
+    function stateCreate() {
+        stateElem = document.createElement('input');
+        return stateElem;
+    }
+    function stateRead() {
+        return stateObj.text;
+    }
+    function stateDestroy() {
+        stateObj.destroy();
+    }
+    function stateWrite() {
+        stateObj = new ej.dropdowns.DropDownList({
+                    dataSource: state,
+                    fields: { value: 'stateId', text: 'stateName' },
+                    enabled: false,
+                    placeholder: 'Select a state',
+                    floatLabelType: 'Never'
+                    });
+                    stateObj.appendTo(stateElem);
+    }
+</script>

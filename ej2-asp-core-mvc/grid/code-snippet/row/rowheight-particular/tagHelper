@@ -1,0 +1,16 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" rowDataBound="rowDataBound" > 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>       
+        <e-grid-column field="Freight" headerText="Freight"  width="120" format='C2'></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function rowDataBound(args) {
+        if (args.data.OrderID === 10249) {
+            args.rowHeight = 90;
+        }
+    }
+</script>

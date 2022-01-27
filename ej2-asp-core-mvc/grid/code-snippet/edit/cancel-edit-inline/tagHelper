@@ -1,0 +1,36 @@
+<button onclick="btnClick(event)">Grid is Addable</button>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="273" toolbar="@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" })" actionBegin="actionBegin">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" validationRules="@(new { required=true})" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="Role" headerText="Role" validationRules="@(new { required=true})" type="string" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var isAddable = true;
+    function actionBegin(args) {
+        if (args.requestType == 'beginEdit') {
+            if (args.rowData['Role'].toLowerCase() == 'employee') {
+                args.cancel = true;
+            }
+        }
+        if (args.requestType == 'delete') {
+            if (args.data[0]['Role'].toLowerCase() == 'employee') {
+                args.cancel = true;
+            }
+        }
+        if (args.requestType == 'add') {
+            if (!isAddable) {
+                args.cancel = true;
+            }
+        }
+    }
+
+    function btnClick(args) {
+        args.target.innerText == 'Grid is Addable' ? (args.target.innerText = 'Grid is Not Addable') : (args.target.innerText = 'Grid is Addable');
+        isAddable = !isAddable;
+    }
+</script>

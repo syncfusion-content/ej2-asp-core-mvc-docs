@@ -1,0 +1,45 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPdfExport="true" toolbarClick="toolbarClick" pdfQueryCellInfo="pdfQueryCellInfo" queryCellInfo="queryCellInfo" toolbar="@(new List<string>() {"PdfExport"})" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function toolbarClick(args) {
+        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_pdfexport') {
+            gridObj.pdfExport();
+        }
+    }
+
+    function pdfQueryCellInfo(args) {
+        if (args.column.field == 'Freight') {
+            if (args.value < 30) {
+                args.style = { backgroundColor: '#99ffcc' };
+            }
+            else if (args.value < 60) {
+                args.style = { backgroundColor: '#ffffb3' };
+            }
+            else {
+                args.style = { backgroundColor: '#ff704d' };
+            }
+        }
+    }
+
+    function queryCellInfo(args) {
+        if (args.column.field == 'Freight') {
+            if (args.data['Freight'] < 30) {
+                args.cell.bgColor = '#99ffcc';
+            }
+            else if (args.data['Freight'] < 60) {
+                args.cell.bgColor = '#ffffb3';
+            }
+            else {
+                args.cell.bgColor = '#ff704d';
+            }
+        }
+    }
+</script>

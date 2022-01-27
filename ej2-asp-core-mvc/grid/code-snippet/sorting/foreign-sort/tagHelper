@@ -1,0 +1,24 @@
+<ejs-grid id="Grid" load="load" allowSorting="true">
+    <e-data-manager url="/OData/Items" adaptor="ODataV4Adaptor" crossdomain="true"></e-data-manager>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="First Name" foreignKeyField="EmployeeID" foreignKeyValue="FirstName" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+        var data = new ej.data.DataManager({
+            url: '/OData/Brands',
+            adaptor: new ej.data.ODataV4Adaptor,
+            crossDomain: true
+        });
+        function load(args) {
+            for (var i = 0; i < this.getColumns().length; i++) {
+                if (this.getColumns()[i].foreignKeyField) {
+                    this.getColumns()[i].dataSource = data;
+                }
+            }
+        }
+</script>

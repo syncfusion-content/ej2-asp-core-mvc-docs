@@ -1,0 +1,32 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport().AllowExcelExport().ToolbarClick("toolbarClick").PdfExportComplete("pdfExportComplete").ExcelExportComplete("excelExportComplete").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+   col.Field("ShipCity").HeaderText("ShipCity").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+
+}).AllowPaging().Toolbar(new List<string>() { "PdfExport", "ExcelExport" }).Render()
+
+<script>
+    var queryClone;
+    function toolbarClick(args) {
+        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_pdfexport') {
+            queryClone = gridObj.query;
+            gridObj.query = new ej.data.Query().addParams("recordcount", "12");
+            gridObj.pdfExport();
+        }
+        else if (args.item.id === 'Grid_excelexport') {
+            queryClone = gridObj.query;
+            gridObj.query = new ej.data.Query().addParams("recordcount", "12");
+            gridObj.excelExport();
+        }
+    }
+    function pdfExportComplete(args) {
+        this.query = queryClone;
+    }
+    function excelExportComplete(args) {
+        this.query = queryClone;
+    }
+</script>

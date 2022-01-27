@@ -1,0 +1,33 @@
+@{
+    List<object> toolbarItems = new List<object>();
+    toolbarItems.Add("Add");
+    toolbarItems.Add("Edit");
+    toolbarItems.Add("Delete");
+    toolbarItems.Add("Update");
+    toolbarItems.Add("Cancel");
+    toolbarItems.Add(new { text = "Click", tooltipText = "Click", id = "Click", prefixIcon = "e-expand" });
+}
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ToolbarClick("toolbarClick").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").EditType("numericedit").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
+
+}).AllowPaging().PageSettings(page => page.PageCount(2)).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(toolbarItems).Render()
+
+<script>
+    function toolbarClick(args) {
+        if (args.item.id === 'Click') {
+            alert("Custom toolbar click...");
+        }
+    }
+</script>
+
+<style>
+    .e-expand::before {
+        content: '\e5b8';
+    }
+</style>

@@ -1,0 +1,17 @@
+@Html.EJS().Grid("FlatGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).Width("auto").Height("359").Columns(col =>
+{
+   col.HeaderText("Discontinued").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Template("#template").Width("150").Add();
+   col.Field("ProductID").HeaderText("Product ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ProductName").HeaderText("Name").Width("125").Add();
+   col.Field("SupplierID").HeaderText("Supplier ID").Width("170").Add();
+   col.Field("UnitsInStock").HeaderText("Units In Stock").Width("135").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+
+}).Render()
+
+<script id="template" type="text/x-template">
+    <div class="template_checkbox">
+        ${if(Discontinued)}
+        <input type="checkbox" checked> ${else}
+        <input type="checkbox"> ${/if}
+    </div>
+</script>

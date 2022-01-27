@@ -1,0 +1,3 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+           
+</ejs-grid>

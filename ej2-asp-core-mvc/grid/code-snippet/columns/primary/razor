@@ -1,0 +1,9 @@
+@Html.EJS().Grid("Auto").DataSource((IEnumerable<object>)ViewBag.dataSource).DataBound("dataBound").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Render()
+
+<script>
+    function dataBound() {
+        var grid = document.getElementById('Auto').ej2_instances[0];
+        var column = grid.columns[0];
+        column.isPrimaryKey = 'true';
+    }
+</script>

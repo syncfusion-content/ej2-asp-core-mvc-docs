@@ -1,0 +1,12 @@
+@Html.EJS().Grid("WebApi").DataSource(dataManger =>
+{
+    dataManger.Url("Default.aspx/DataSource").CrossDomain(true).Adaptor("WebMethodAdaptor");
+}).Columns(col =>
+{
+    col.Field("ProductID").HeaderText("Product ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ProductName").HeaderText("Product Name").Width("150").Add();
+    col.Field("UnitPrice").HeaderText("Supplier ID").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("UnitsInStock").HeaderText("QuantityPerUnit").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Discontinued").HeaderText("Discontinued").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Type("boolean").DisplayAsCheckBox(true).Add();
+
+}).Render()

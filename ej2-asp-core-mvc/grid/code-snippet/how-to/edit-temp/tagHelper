@@ -1,0 +1,14 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID"  headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>                
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="120"></e-grid-column>                
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="120"></e-grid-column>                               
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" template='#template' editType='dropdownedit'></e-grid-column>                
+    </e-grid-columns>
+</ejs-grid>
+
+<script id="template" type="text/x-template">
+    <a href="#">${ShipCountry}</a>     
+</script>

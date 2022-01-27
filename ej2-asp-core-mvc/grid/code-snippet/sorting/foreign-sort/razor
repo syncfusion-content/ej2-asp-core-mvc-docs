@@ -1,0 +1,8 @@
+@Html.EJS().Grid("ItemGrid").DataSource(dataManger => { dataManger.Url("/OData/Items").Adaptor("ODataV4Adaptor"); }).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign("Right").Add();
+    col.Field("EmployeeID").ForeignKeyField("EmployeeID").ForeignKeyValue("FirstName").DataSource(dm => { dm.Url("/OData/Brands").Adaptor("ODataV4Adaptor"); }).HeaderText("First Name").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign("Right").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Add();
+    
+}).AllowPaging().AllowSorting(true).AllowMultiSorting(true).Render()

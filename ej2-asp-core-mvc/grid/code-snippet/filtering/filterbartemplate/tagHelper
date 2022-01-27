@@ -1,0 +1,37 @@
+    @{
+        Object filterTemplate = new Object();
+        filterTemplate = (new { read = "read", write = "write" });
+    }
+
+    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true" allowFiltering="true">
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="EmployeeID" headerText="Employee ID" filterBarTemplate="filterTemplate" width="150"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" format="C2" width="120"></e-grid-column>
+            <e-grid-column field="ShipCity" headerText="Ship City" width="170"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+
+    <script type="text/javascript">
+        function write(args) {
+            var data = [{ text: "clear", value: "clear" }, { text: "1", value: 1 }, { text: "2", value: 2 }, { text: "3", value: 3 }, { text: "4", value: 4 },
+            { text: "5", value: 5 }, { text: "6", value: 6 }, { text: "7", value: 7 }, { text: "8", value: 8 }, { text: "9", value: 9 }
+            ]
+            var listObj = new ej.dropdowns.DropDownList({
+                dataSource: data,
+                placeholder: 'Select EmployeeID',
+                change: function () { read(args) }
+            });
+            listObj.appendTo(args.element);
+        }
+        function read(args) {
+            var grid = document.getElementById("Grid").ej2_instances[0]
+            if (args.element.value == "clear") {
+                grid.clearFiltering(args.column.field);
+                args.element.value = ""
+            } else {
+                grid.filterByColumn(args.column.field, "equal", parseInt(args.element.value))
+            }
+        }
+    </script>

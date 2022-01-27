@@ -1,0 +1,17 @@
+@Html.EJS().Button("clear").Content("Clear Search").Render()
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("160").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
+    col.Field("Freight").HeaderText("Freight").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+
+}).AllowPaging().SearchSettings(search => { search.Fields(new string[] { "CustomerID" }).Key("Ha").Operator("contains").IgnoreCase(true); }).PageSettings(page => page.PageCount(2)).Toolbar(new List<string>() { "Search" }).Render()
+
+<script>
+    document.getElementById('clear').addEventListener('click', () => {
+        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        gridObj.searchSettings.key = '';
+    });
+</script>

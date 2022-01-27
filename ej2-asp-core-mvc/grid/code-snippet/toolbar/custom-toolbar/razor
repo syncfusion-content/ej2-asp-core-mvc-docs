@@ -1,0 +1,30 @@
+ @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).ToolbarClick("toolbarClick").Columns(col =>
+   {
+
+       col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+       col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+       col.Field("Freight").HeaderText("Freight").Width("120").EditType("numericedit").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+       col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+       col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
+
+   }).AllowPaging().PageSettings(page => page.PageCount(2)).ToolbarTemplate("#template").Render()
+
+   <script>
+    function clickHandler (args) {
+        var target: Element = args.originalEvent.target.closest('.e-toolbar-item');
+        if (target.id === 'collapse') {
+            grid.groupModule.collapseAll();
+        }
+    };
+
+   </scrip>
+
+<div id='toolbar-template'>
+    <div>
+        <div id='collapse' title='Collapse'>
+            <button class='e-btn e-flat'>
+                <span class= 'e-btn-icon e-icons e-collapse'></span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowFiltering="true" allowExcelExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"ExcelExport"})" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" visible="false" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function toolbarClick(args) {
+        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_excelexport') {
+            var excelExportProperties = {
+                enableFilter: true
+            };
+            gridObj.excelExport(excelExportProperties);
+        }
+    }
+</script>

@@ -1,0 +1,23 @@
+@{ 
+    var valueAccessor = "valueAccessorFn";
+}
+
+@Html.EJS().Grid("ValueAccessor").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").ValueAccessor(valueAccessor).Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("130").Format("yMd").Add();
+    col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Format("C2").Add();
+
+}).AllowPaging().Render()
+
+<script>
+    function valueAccessorFn(field, data, column){
+        var value = data[field]
+        if (data['ShipCountry'] !== undefined) {
+            value = value + ' - ' + data['ShipCountry'];
+        }
+        return value;
+    }
+</script>

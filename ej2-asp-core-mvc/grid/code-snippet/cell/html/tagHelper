@@ -1,0 +1,8 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="135" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="<span> Order ID </span>"  disableHtmlEncode="true" textAlign="Right" width="140"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="<span> Customer ID </span>" disableHtmlEncode="false" width="120"></e-grid-column>                
+        <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

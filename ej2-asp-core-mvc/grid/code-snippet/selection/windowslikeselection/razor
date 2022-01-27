@@ -1,0 +1,9 @@
+@Html.EJS().Grid("SelectionAPI").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowSelection().Columns(col =>
+{
+    col.Type("checkbox").Width("50").Add();
+    col.Field("Inventor").HeaderText("Inventor Name").Width("180").Add();
+    col.Field("NumberofPatentFamilies").HeaderText("No of Patent Families").Width("195").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Country").HeaderText("Country").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Active").HeaderText("Active").Width("130").Add();
+
+}).AllowPaging().SelectionSettings(select => select.CheckboxMode(Syncfusion.EJ2.Grids.CheckboxSelectionType.ResetOnRowClick).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()

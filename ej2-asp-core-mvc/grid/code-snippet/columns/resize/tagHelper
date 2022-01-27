@@ -1,0 +1,12 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowResizing="true"  height="315">   
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="150" ></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="150"></e-grid-column>        
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipAddress" headerText="Ship Address" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry"  headerText="Ship Country" width="150"></e-grid-column>
+        <e-grid-column field="ShipPostalCode" headerText="Ship Postal Code width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

@@ -1,0 +1,28 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })" actionComplate="access">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID"  headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>                
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="120"></e-grid-column>                
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType='numericedit' width="120" ></e-grid-column>                               
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" editType='dropdownedit'></e-grid-column>                
+    </e-grid-columns>
+</ejs-grid>
+
+
+<script>
+
+function access(args){
+    if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+        var tr = args.row;
+        var numericTextBox = tr.querySelector('.e-numerictextbox'); // numeric TextBox component element
+        if (numericTextBox) {
+            console.log('NumericTextBox instance: ', numericTextBox.ej2_instances[0]); // numeric TextBox instance
+        }
+        var dropDownList = tr.querySelector('.e-dropdownlist'); // dropDownList component element
+        if (dropDownList) {
+            console.log('DropDownList instance: ', dropDownList.ej2_instances[0]); // dropDownList instance
+        }
+    }
+
+</script>
