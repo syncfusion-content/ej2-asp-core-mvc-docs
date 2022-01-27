@@ -19,19 +19,21 @@ Bind the **mouseup** event for Grid and in the event handler call the **startEdi
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/how-to/single-click-inline-edit/single-click-inline-edit.cs %}
+{% highlight c# tabtitle="single-click-normal-edit" %}
+{% include_relative code-snippet/how-to/single-click-inline-edit/single-click-normal-edit.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/single-click-inline-edit/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/single-click-inline-edit/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/single-click-inline-edit/single-click-inline-edit.cs %}
+{% highlight c# tabtitle="single-click-normal-edit" %}
+{% include_relative code-snippet/how-to/single-click-inline-edit/single-click-normal-edit.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/single-click-inline-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -41,19 +43,21 @@ You can open the default dropdown edit popup with single click edit by focusing 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="open-dropdown-popup" %}
 {% include_relative code-snippet/how-to/open-dropdown-popup/open-dropdown-popup.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/open-dropdown-popup/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/open-dropdown-popup/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/open-dropdown-popup/open-dropdown-popup.cs %}
+{% highlight c# tabtitle="open-dropdown-popup" %}
+{% include_relative code-snippet/how-to/open-dropdown-popup/open-dropdown-popup.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/open-dropdown-popup/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -65,18 +69,20 @@ Bind the **mouseup** event for Grid and in the event handler call the **editCell
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="single-click-batch-edit" %}
 {% include_relative code-snippet/how-to/single-click-batch-edit/single-click-batch-edit.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/single-click-batch-edit/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/single-click-batch-edit/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/single-click-batch-edit/single-click-batch-edit.cs %}
+{% highlight c# tabtitle="single-click-batch-edit" %}
+{% include_relative code-snippet/how-to/single-click-batch-edit/single-click-batch-edit.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/single-click-batch-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

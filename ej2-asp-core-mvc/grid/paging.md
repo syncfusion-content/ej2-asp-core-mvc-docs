@@ -18,19 +18,21 @@ In the below sample, `pageSize` is calculated based on the grid height by using 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="page" %}
 {% include_relative code-snippet/paging/page/page.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/paging/page/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/paging/page/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/paging/page/page.cs %}
+{% highlight c# tabtitle="page" %}
+{% include_relative code-snippet/paging/page/page.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/paging/page/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -44,19 +46,21 @@ Inside this template, you can access the `CurrentPage`, `PageSize`, `TotalPage` 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="page-temp" %}
 {% include_relative code-snippet/paging/page-temp/page-temp.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/paging/page-temp/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/paging/page-temp/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/paging/page-temp/page-temp.cs %}
+{% highlight c# tabtitle="page-temp" %}
+{% include_relative code-snippet/paging/page-temp/page-temp.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/paging/page-temp/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -66,19 +70,21 @@ The pager Dropdown allows you to change the number of records in the Grid dynami
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="pagerdropdown" %}
 {% include_relative code-snippet/paging/pagerdropdown/pagerdropdown.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/paging/pagerdropdown/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/paging/pagerdropdown/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/paging/pagerdropdown/pagerdropdown.cs %}
+{% highlight c# tabtitle="pagerdropdown" %}
+{% include_relative code-snippet/paging/pagerdropdown/pagerdropdown.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/paging/pagerdropdown/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -88,19 +94,21 @@ By default, Pager will be rendered at the bottom of the Grid. You can also rende
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="pagerattop" %}
 {% include_relative code-snippet/paging/pagerattop/pagerattop.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/paging/pagerattop/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/paging/pagerattop/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/paging/pagerattop/pagerattop.cs %}
+{% highlight c# tabtitle="pagerattop" %}
+{% include_relative code-snippet/paging/pagerattop/pagerattop.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/paging/pagerattop/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

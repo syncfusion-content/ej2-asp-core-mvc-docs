@@ -17,18 +17,20 @@ In the below demo, all the grouped rows are collapsed at initial rendering.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/how-to/collapse-grouped-rows/collapse-grouped-rows.cs %}
+{% highlight c# tabtitle="collapseall" %}
+{% include_relative code-snippet/how-to/collapse-grouped-rows/collapseall.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/collapse-grouped-rows/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/collapse-grouped-rows/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/collapse-grouped-rows/collapse-grouped-rows.cs %}
+{% highlight c# tabtitle="collapseall" %}
+{% include_relative code-snippet/how-to/collapse-grouped-rows/collapseall.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/collapse-grouped-rows/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

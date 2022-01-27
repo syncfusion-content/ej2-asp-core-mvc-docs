@@ -16,17 +16,19 @@ In the below sample, OrderID and Freight Columns are numeric columns, while open
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/how-to/add-params-for-filtering/add-params-for-filtering.cs %}
+{% highlight c# tabtitle="excelfilter" %}
+{% include_relative code-snippet/how-to/add-params-for-filtering/excelfilter.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/add-params-for-filtering/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/add-params-for-filtering/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/add-params-for-filtering/add-params-for-filtering.cs %}
+{% highlight c# tabtitle="excelfilter" %}
+{% include_relative code-snippet/how-to/add-params-for-filtering/excelfilter.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/add-params-for-filtering/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

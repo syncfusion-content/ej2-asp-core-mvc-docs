@@ -15,17 +15,19 @@ You can focus the double clicked column edit form an through an [`recordDoubleCl
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="focus" %}
 {% include_relative code-snippet/how-to/focus/focus.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/focus/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/focus/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/focus/focus.cs %}
+{% highlight c# tabtitle="focus" %}
+{% include_relative code-snippet/how-to/focus/focus.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/focus/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

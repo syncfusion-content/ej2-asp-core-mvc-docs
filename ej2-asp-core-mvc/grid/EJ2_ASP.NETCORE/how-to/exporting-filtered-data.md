@@ -17,18 +17,20 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="export-filtered-data" %}
 {% include_relative code-snippet/how-to/export-filtered-data/export-filtered-data.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/export-filtered-data/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/export-filtered-data/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/export-filtered-data/export-filtered-data.cs %}
+{% highlight c# tabtitle="export-filtered-data" %}
+{% include_relative code-snippet/how-to/export-filtered-data/export-filtered-data.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/export-filtered-data/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

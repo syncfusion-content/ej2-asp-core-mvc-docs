@@ -17,18 +17,20 @@ In the following example, `Employee.EmployeeID` is a complex column and also dec
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="foreignkey" %}
 {% include_relative code-snippet/columns/foreignkey/foreignkey.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/columns/foreignkey/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/columns/foreignkey/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/foreignkey/foreignkey.cs %}
+{% highlight c# tabtitle="foreignkey" %}
+{% include_relative code-snippet/columns/foreignkey/foreignkey.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/columns/foreignkey/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

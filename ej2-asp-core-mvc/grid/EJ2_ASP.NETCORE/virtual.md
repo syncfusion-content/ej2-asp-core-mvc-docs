@@ -23,19 +23,21 @@ the [`pageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="row-virtualization" %}
 {% include_relative code-snippet/virtual-grid/row-virtualization/row-virtualization.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/virtual-grid/row-virtualization/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/virtual-grid/row-virtualization/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/virtual-grid/row-virtualization/row-virtualization.cs %}
+{% highlight c# tabtitle="row-virtualization" %}
+{% include_relative code-snippet/virtual-grid/row-virtualization/row-virtualization.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/virtual-grid/row-virtualization/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -49,19 +51,21 @@ To setup the column virtualization, set the
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/virtual-grid/column-virtualization/column-virtualization.cs %}
+{% highlight c# tabtitle="Column-virtualization" %}
+{% include_relative code-snippet/virtual-grid/column-virtualization/Column-virtualization.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/virtual-grid/column-virtualization/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/virtual-grid/column-virtualization/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/virtual-grid/column-virtualization/column-virtualization.cs %}
+{% highlight c# tabtitle="Column-virtualization" %}
+{% include_relative code-snippet/virtual-grid/column-virtualization/Column-virtualization.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/virtual-grid/column-virtualization/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

@@ -21,19 +21,21 @@ N/A |N/A |`equal` operator will always be used for Boolean filter. |Boolean
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="filter-bar" %}
 {% include_relative code-snippet/filtering/filter-bar/filter-bar.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/filtering/filter-bar/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/filtering/filter-bar/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/filtering/filter-bar/filter-bar.cs %}
+{% highlight c# tabtitle="filter-bar" %}
+{% include_relative code-snippet/filtering/filter-bar/filter-bar.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/filtering/filter-bar/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -47,19 +49,21 @@ In the following sample, the dropdown is used as a custom component in the Emplo
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="filterbartemplate" %}
 {% include_relative code-snippet/filter/filterbartemplate/filterbartemplate.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/filter/filterbartemplate/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/filter/filterbartemplate/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/filter/filterbartemplate/filterbartemplate.cs %}
+{% highlight c# tabtitle="filterbartemplate" %}
+{% include_relative code-snippet/filter/filterbartemplate/filterbartemplate.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/filter/filterbartemplate/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -74,19 +78,21 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="filterbartemplate" %}
 {% include_relative code-snippet/filtering/filterbartemplate/filterbartemplate.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/filtering/filterbartemplate/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/filtering/filterbartemplate/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/filtering/filterbartemplate/filterbartemplate.cs %}
+{% highlight c# tabtitle="filterbartemplate" %}
+{% include_relative code-snippet/filtering/filterbartemplate/filterbartemplate.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/filtering/filterbartemplate/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -97,19 +103,21 @@ we have changed the default operator for string typed columns as `contains` from
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/filtering/filteroptr/filteroptr.cs %}
+{% highlight c# tabtitle="filter" %}
+{% include_relative code-snippet/filtering/filteroptr/filter.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/filtering/filteroptr/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/filtering/filteroptr/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/filtering/filteroptr/filteroptr.cs %}
+{% highlight c# tabtitle="filter" %}
+{% include_relative code-snippet/filtering/filteroptr/filter.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/filtering/filteroptr/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -120,19 +128,21 @@ You can filter the records with different operators.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="filtermenu" %}
 {% include_relative code-snippet/filtering/filtermenu/filtermenu.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/filtering/filtermenu/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/filtering/filtermenu/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/filtering/filtermenu/filtermenu.cs %}
+{% highlight c# tabtitle="filtermenu" %}
+{% include_relative code-snippet/filtering/filtermenu/filtermenu.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/filtering/filtermenu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -151,19 +161,21 @@ To implement custom filter ui, define the following functions:
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="customfiltermenu" %}
 {% include_relative code-snippet/filter/customfiltermenu/customfiltermenu.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/filter/customfiltermenu/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/filter/customfiltermenu/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/filter/customfiltermenu/customfiltermenu.cs %}
+{% highlight c# tabtitle="customfiltermenu" %}
+{% include_relative code-snippet/filter/customfiltermenu/customfiltermenu.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/filter/customfiltermenu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -177,19 +189,21 @@ In the following sample menu filter is enabled by default and checkbox filter is
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="diffcolumnfilter" %}
 {% include_relative code-snippet/filtering/diffcolumnfilter/diffcolumnfilter.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/filtering/diffcolumnfilter/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/filtering/diffcolumnfilter/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/filtering/diffcolumnfilter/diffcolumnfilter.cs %}
+{% highlight c# tabtitle="diffcolumnfilter" %}
+{% include_relative code-snippet/filtering/diffcolumnfilter/diffcolumnfilter.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/filtering/diffcolumnfilter/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -200,19 +214,21 @@ You can enable Excel like filter by defining.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="excelfilter" %}
 {% include_relative code-snippet/filtering/excelfilter/excelfilter.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/filtering/excelfilter/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/filtering/excelfilter/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/filtering/excelfilter/excelfilter.cs %}
+{% highlight c# tabtitle="excelfilter" %}
+{% include_relative code-snippet/filtering/excelfilter/excelfilter.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/filtering/excelfilter/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

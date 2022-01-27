@@ -17,18 +17,20 @@ In the following example, The **Employee Name** is a foreign key column. This co
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="filterbar-temp-foreign" %}
 {% include_relative code-snippet/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/filterbar-temp-foreign/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/filterbar-temp-foreign/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
+{% highlight c# tabtitle="filterbar-temp-foreign" %}
+{% include_relative code-snippet/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/filterbar-temp-foreign/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

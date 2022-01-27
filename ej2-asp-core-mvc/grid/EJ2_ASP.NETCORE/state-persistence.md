@@ -20,19 +20,21 @@ The grid does not maintain the query params after page load event when the [`ena
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="state-persist" %}
 {% include_relative code-snippet/state-persist/state-persist/state-persist.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/state-persist/state-persist/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/state-persist/state-persist/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/state-persist/state-persist/state-persist.cs %}
+{% highlight c# tabtitle="state-persist" %}
+{% include_relative code-snippet/state-persist/state-persist/state-persist.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/state-persist/state-persist/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -61,19 +63,21 @@ You can achieve this by destroying the grid after disabling the [`enablePersiste
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="initial-grid" %}
 {% include_relative code-snippet/state-persist/initial-grid/initial-grid.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/state-persist/initial-grid/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/state-persist/initial-grid/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/state-persist/initial-grid/initial-grid.cs %}
+{% highlight c# tabtitle="initial-grid" %}
+{% include_relative code-snippet/state-persist/initial-grid/initial-grid.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/state-persist/initial-grid/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -83,19 +87,21 @@ The Grid columns can be persisted when the [enablePersistence](https://help.sync
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="column-add" %}
 {% include_relative code-snippet/state-persist/column-add/column-add.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/state-persist/column-add/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/state-persist/column-add/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/state-persist/column-add/column-add.cs %}
+{% highlight c# tabtitle="column-add" %}
+{% include_relative code-snippet/state-persist/column-add/column-add.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/state-persist/column-add/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -109,19 +115,21 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="column-prevent" %}
 {% include_relative code-snippet/state-persist/column-prevent/column-prevent.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/state-persist/column-prevent/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/state-persist/column-prevent/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/state-persist/column-prevent/column-prevent.cs %}
+{% highlight c# tabtitle="column-prevent" %}
+{% include_relative code-snippet/state-persist/column-prevent/column-prevent.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/state-persist/column-prevent/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -133,17 +141,19 @@ If you wish to restore all these column properties, then you can achieve it by c
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="column-persist" %}
 {% include_relative code-snippet/state-persist/column-persist/column-persist.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/state-persist/column-persist/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/state-persist/column-persist/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/state-persist/column-persist/column-persist.cs %}
+{% highlight c# tabtitle="column-persist" %}
+{% include_relative code-snippet/state-persist/column-persist/column-persist.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/state-persist/column-persist/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

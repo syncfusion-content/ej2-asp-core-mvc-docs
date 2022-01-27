@@ -19,19 +19,21 @@ When we enable the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcor
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/adaptive/adaptive.cs %}
+{% highlight c# tabtitle="default" %}
+{% include_relative code-snippet/adaptive/default.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/adaptive/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/adaptive/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/adaptive/adaptive.cs %}
+{% highlight c# tabtitle="default" %}
+{% include_relative code-snippet/adaptive/default.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/adaptive/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -41,19 +43,21 @@ The grid will render the row elements in vertical order while setting the [`rowR
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/vertical-rendering/vertical-rendering.cs %}
+{% highlight c# tabtitle="default" %}
+{% include_relative code-snippet/vertical-rendering/default.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/vertical-rendering/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/vertical-rendering/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/vertical-rendering/vertical-rendering.cs %}
+{% highlight c# tabtitle="default" %}
+{% include_relative code-snippet/vertical-rendering/default.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/vertical-rendering/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

@@ -100,7 +100,21 @@ Add **ScriptManager** to the bottom of the **_Layout.cshtml** page. The ScriptMa
 
 To initialize the Grid component add the below code to your **Index.cshtml** view page which is present under **Views/Home** folder.
 
-{% aspTab template="grid/getting-start-mvc/initialize" %}
+{% if page.publishingplatform == "aspnet-core" %}
+{% tabs %}
+{% highlight c# tabtitle="initialize" %}
+{% endhighlight %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/initialize/tagHelper %}
+{% endhighlight %}
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+{% highlight c# tabtitle="initialize" %}
+{% endhighlight %}
+{% highlight razor tabtitle="razor" %}
+{% include_relative code-snippet/getting-start-mvc/initialize/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 
@@ -110,187 +124,21 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/databinding sourceFiles="grid.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/databinding/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/databinding/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/databinding sourceFiles="grid.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/databinding/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/razor %}
+{% highlight razor tabtitle="razor" %}
+{% include_relative code-snippet/getting-start-mvc/databinding/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/databinding sourceFiles="grid.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/databinding sourceFiles="grid.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/databinding sourceFiles="grid.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/databinding sourceFiles="grid.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/databinding sourceFiles="grid.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/databinding sourceFiles="grid.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles="grid.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/databinding sourceFiles=grid.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/databinding sourceFiles=grid.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
+{% endif %}
 
 
 
@@ -312,187 +160,21 @@ Here, you have defined it for the conversion of numeric values to currency.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/columns sourceFiles="columns.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/columns/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/columns/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/columns sourceFiles="columns.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/columns/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/razor %}
+{% highlight razor tabtitle="razor" %}
+{% include_relative code-snippet/getting-start-mvc/columns/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/columns sourceFiles="columns.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/columns sourceFiles="columns.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/columns sourceFiles="columns.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/columns sourceFiles="columns.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/columns sourceFiles="columns.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/columns sourceFiles="columns.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles="columns.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/columns sourceFiles=columns.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/columns sourceFiles=columns.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
+{% endif %}
 
 
 
@@ -502,187 +184,21 @@ The paging feature enables users to view the grid record in a paged view. It can
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/page sourceFiles="page.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/page/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/page/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/page sourceFiles="page.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/page/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/razor %}
+{% highlight razor tabtitle="razor" %}
+{% include_relative code-snippet/getting-start-mvc/page/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/page sourceFiles="page.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/page sourceFiles="page.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/page sourceFiles="page.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/page sourceFiles="page.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/page sourceFiles="page.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/page sourceFiles="page.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles="page.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/page sourceFiles=page.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/page sourceFiles=page.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
+{% endif %}
 
 
 
@@ -692,187 +208,21 @@ The sorting feature enables you to order the records. It can be enabled by setti
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/sorting sourceFiles="sorting.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/sorting/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/sorting/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/sorting sourceFiles="sorting.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/sorting/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/razor %}
+{% highlight razor tabtitle="razor" %}
+{% include_relative code-snippet/getting-start-mvc/sorting/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/sorting sourceFiles="sorting.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/sorting sourceFiles="sorting.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/sorting sourceFiles="sorting.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/sorting sourceFiles="sorting.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/sorting sourceFiles="sorting.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/sorting sourceFiles="sorting.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles="sorting.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/sorting sourceFiles=sorting.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/sorting sourceFiles=sorting.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
+{% endif %}
 
 
 
@@ -882,187 +232,21 @@ The filtering feature enables you to view reduced amount of records based on fil
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/filtering sourceFiles="filtering.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/filtering/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/filtering/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/filtering sourceFiles="filtering.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/filtering/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/razor %}
+{% highlight razor tabtitle="razor" %}
+{% include_relative code-snippet/getting-start-mvc/filtering/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/filtering sourceFiles="filtering.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/filtering sourceFiles="filtering.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/filtering sourceFiles="filtering.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/filtering sourceFiles="filtering.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/filtering sourceFiles="filtering.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/filtering sourceFiles="filtering.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles="filtering.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/filtering sourceFiles=filtering.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/filtering sourceFiles=filtering.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
+{% endif %}
 
 
 
@@ -1074,187 +258,21 @@ The grouping feature enables users to view the grid record in a grouped view. It
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/grouping sourceFiles="grouping.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/grouping/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/grouping/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/grouping sourceFiles="grouping.cs,.cs %}
+{% highlight c# tabtitle="orderDetails" %}
+{% include_relative code-snippet/getting-start-mvc/grouping/orderDetails.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/razor %}
+{% highlight razor tabtitle="razor" %}
+{% include_relative code-snippet/getting-start-mvc/grouping/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/grouping sourceFiles="grouping.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/grouping sourceFiles="grouping.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/grouping sourceFiles="grouping.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/grouping sourceFiles="grouping.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/grouping sourceFiles="grouping.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/grouping sourceFiles="grouping.cs,.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles="grouping.cs,/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% highlight %}
-{% if page.publishingplatform == "aspnet-core" %}
-{% tabs %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/taghelper %}
-{% endhighlight %}
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/grouping sourceFiles=grouping.cs.cs %}
-{% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/getting-start-mvc/grouping sourceFiles=grouping.cs/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endhighlight %}
-{% endtabs %}
+{% endif %}
 
 
 

@@ -17,19 +17,21 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="disable-edit" %}
 {% include_relative code-snippet/how-to/disable-edit/disable-edit.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/disable-edit/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/disable-edit/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/disable-edit/disable-edit.cs %}
+{% highlight c# tabtitle="disable-edit" %}
+{% include_relative code-snippet/how-to/disable-edit/disable-edit.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/disable-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -37,18 +39,20 @@ For batch mode of editing, you can use [`CellEdit`](https://help.syncfusion.com/
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="disable-edit-batch" %}
 {% include_relative code-snippet/how-to/disable-edit-batch/disable-edit-batch.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/disable-edit-batch/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/disable-edit-batch/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/disable-edit-batch/disable-edit-batch.cs %}
+{% highlight c# tabtitle="disable-edit-batch" %}
+{% include_relative code-snippet/how-to/disable-edit-batch/disable-edit-batch.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/disable-edit-batch/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

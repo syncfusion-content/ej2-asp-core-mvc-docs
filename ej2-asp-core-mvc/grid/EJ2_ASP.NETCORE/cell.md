@@ -17,19 +17,21 @@ The HTML tags can be displayed in the Grid header and content by enabling the [`
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="html" %}
 {% include_relative code-snippet/cell/html/html.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/cell/html/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/cell/html/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/cell/html/html.cs %}
+{% highlight c# tabtitle="html" %}
+{% include_relative code-snippet/cell/html/html.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/cell/html/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -41,19 +43,21 @@ The [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="customize" %}
 {% include_relative code-snippet/cell/customize/customize.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/cell/customize/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/cell/customize/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/cell/customize/customize.cs %}
+{% highlight c# tabtitle="customize" %}
+{% include_relative code-snippet/cell/customize/customize.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/cell/customize/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -75,19 +79,21 @@ In the following example, the [`wrapMode`](https://help.syncfusion.com/cr/aspnet
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="autowrap" %}
 {% include_relative code-snippet/cell/autowrap/autowrap.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/cell/autowrap/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/cell/autowrap/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/cell/autowrap/autowrap.cs %}
+{% highlight c# tabtitle="autowrap" %}
+{% include_relative code-snippet/cell/autowrap/autowrap.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/cell/autowrap/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -105,19 +111,21 @@ In the below example, we have customized the cells of **OrderID** and **ShipCity
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/cell/customAttribute/customAttribute.cs %}
+{% highlight c# tabtitle="customStyle" %}
+{% include_relative code-snippet/cell/customAttribute/customStyle.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/cell/customAttribute/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/cell/customAttribute/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/cell/customAttribute/customAttribute.cs %}
+{% highlight c# tabtitle="customStyle" %}
+{% include_relative code-snippet/cell/customAttribute/customStyle.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/cell/customAttribute/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -138,19 +146,21 @@ The available modes of grid lines are:
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="gridlines" %}
 {% include_relative code-snippet/cell/gridlines/gridlines.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/cell/gridlines/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/cell/gridlines/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/cell/gridlines/gridlines.cs %}
+{% highlight c# tabtitle="gridlines" %}
+{% include_relative code-snippet/cell/gridlines/gridlines.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/cell/gridlines/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -168,19 +178,21 @@ There are three types of **ClipMode**. They are:
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="clipmode" %}
 {% include_relative code-snippet/cell/clipmode/clipmode.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/cell/clipmode/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/cell/clipmode/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/cell/clipmode/clipmode.cs %}
+{% highlight c# tabtitle="clipmode" %}
+{% include_relative code-snippet/cell/clipmode/clipmode.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/cell/clipmode/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

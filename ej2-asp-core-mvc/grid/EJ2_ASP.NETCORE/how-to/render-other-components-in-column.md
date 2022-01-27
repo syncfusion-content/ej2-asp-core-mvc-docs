@@ -45,17 +45,19 @@ Using the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/how-to/render-other-comp/render-other-comp.cs %}
+{% highlight c# tabtitle="grouping-events" %}
+{% include_relative code-snippet/how-to/render-other-comp/grouping-events.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/render-other-comp/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/render-other-comp/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/render-other-comp/render-other-comp.cs %}
+{% highlight c# tabtitle="grouping-events" %}
+{% include_relative code-snippet/how-to/render-other-comp/grouping-events.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/render-other-comp/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

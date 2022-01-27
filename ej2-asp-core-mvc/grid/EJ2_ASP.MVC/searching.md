@@ -22,19 +22,21 @@ To search grid records from an external button, invoke the [`search`](https://ej
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/search/external-btn/external-btn.cs %}
+{% highlight c# tabtitle="initial-search" %}
+{% include_relative code-snippet/search/external-btn/initial-search.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/search/external-btn/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/search/external-btn/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/search/external-btn/external-btn.cs %}
+{% highlight c# tabtitle="initial-search" %}
+{% include_relative code-snippet/search/external-btn/initial-search.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/search/external-btn/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -44,19 +46,21 @@ By default, grid searches all visible columns. You can search specific columns b
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="search-a-column" %}
 {% include_relative code-snippet/search/search-a-column/search-a-column.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/search/search-a-column/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/search/search-a-column/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/search/search-a-column/search-a-column.cs %}
+{% highlight c# tabtitle="search-a-column" %}
+{% include_relative code-snippet/search/search-a-column/search-a-column.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/search/search-a-column/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -66,19 +70,21 @@ To clear the searched grid records from the external button, set [`Key`](https:/
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="clear-search" %}
 {% include_relative code-snippet/search/clear-search/clear-search.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/search/clear-search/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/search/clear-search/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/search/clear-search/clear-search.cs %}
+{% highlight c# tabtitle="clear-search" %}
+{% include_relative code-snippet/search/clear-search/clear-search.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/search/clear-search/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -88,19 +94,21 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="search-each-key" %}
 {% include_relative code-snippet/search/search-each-key/search-each-key.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/search/search-each-key/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/search/search-each-key/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/search/search-each-key/search-each-key.cs %}
+{% highlight c# tabtitle="search-each-key" %}
+{% include_relative code-snippet/search/search-each-key/search-each-key.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/search/search-each-key/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

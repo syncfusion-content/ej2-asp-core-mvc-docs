@@ -21,18 +21,20 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/edit/customizedialog/customizedialog.cs %}
+{% highlight c# tabtitle="*" %}
+{% include_relative code-snippet/edit/customizedialog/*.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/edit/customizedialog/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/customizedialog/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/edit/customizedialog/customizedialog.cs %}
+{% highlight c# tabtitle="*" %}
+{% include_relative code-snippet/edit/customizedialog/*.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/customizedialog/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

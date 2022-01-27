@@ -17,17 +17,19 @@ In the below sample, we have overridden the default `generateQuery` to display t
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="group-page-size" %}
 {% include_relative code-snippet/how-to/group-page-size/group-page-size.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/group-page-size/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/group-page-size/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/group-page-size/group-page-size.cs %}
+{% highlight c# tabtitle="group-page-size" %}
+{% include_relative code-snippet/how-to/group-page-size/group-page-size.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/group-page-size/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

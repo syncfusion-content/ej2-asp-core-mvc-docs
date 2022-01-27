@@ -17,18 +17,20 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="filter-ui-foreign" %}
 {% include_relative code-snippet/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/filter-ui-foreign/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/filter-ui-foreign/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
+{% highlight c# tabtitle="filter-ui-foreign" %}
+{% include_relative code-snippet/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/filter-ui-foreign/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

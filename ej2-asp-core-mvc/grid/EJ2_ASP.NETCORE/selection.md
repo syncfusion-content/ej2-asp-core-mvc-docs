@@ -21,19 +21,21 @@ To perform the multi-selection, press and hold CTRL key and click the desired ro
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="selection" %}
 {% include_relative code-snippet/selection/selection/selection.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/selection/selection/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/selection/selection/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/selection/selection/selection.cs %}
+{% highlight c# tabtitle="selection" %}
+{% include_relative code-snippet/selection/selection/selection.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/selection/selection/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -48,19 +50,21 @@ the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="selection-mode" %}
 {% include_relative code-snippet/selection/selection-mode/selection-mode.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/selection/selection-mode/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/selection/selection-mode/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/selection/selection-mode/selection-mode.cs %}
+{% highlight c# tabtitle="selection-mode" %}
+{% include_relative code-snippet/selection/selection-mode/selection-mode.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/selection/selection-mode/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -76,19 +80,21 @@ the [`cellSelectionMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="cell-selection" %}
 {% include_relative code-snippet/selection/cell-selection/cell-selection.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/selection/cell-selection/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/selection/cell-selection/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/selection/cell-selection/cell-selection.cs %}
+{% highlight c# tabtitle="cell-selection" %}
+{% include_relative code-snippet/selection/cell-selection/cell-selection.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/selection/cell-selection/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -103,19 +109,21 @@ You can enable column selection by setting the [`selectionSettings.allowColumnSe
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="column-selection" %}
 {% include_relative code-snippet/selection/column-selection/column-selection.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/selection/column-selection/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/selection/column-selection/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/selection/column-selection/column-selection.cs %}
+{% highlight c# tabtitle="column-selection" %}
+{% include_relative code-snippet/selection/column-selection/column-selection.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/selection/column-selection/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -127,19 +135,21 @@ To render the checkbox in each grid row, you need to use checkbox column with ty
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="checkbox" %}
 {% include_relative code-snippet/selection/checkbox/checkbox.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/selection/checkbox/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/selection/checkbox/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/selection/checkbox/checkbox.cs %}
+{% highlight c# tabtitle="checkbox" %}
+{% include_relative code-snippet/selection/checkbox/checkbox.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/selection/checkbox/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -159,19 +169,21 @@ and hold CTRL key and click the desired rows. To select range of rows, press and
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/selection/windowslikeselection/windowslikeselection.cs %}
+{% highlight c# tabtitle="windows" %}
+{% include_relative code-snippet/selection/windowslikeselection/windows.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/selection/windowslikeselection/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/selection/windowslikeselection/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/selection/windowslikeselection/windowslikeselection.cs %}
+{% highlight c# tabtitle="windows" %}
+{% include_relative code-snippet/selection/windowslikeselection/windows.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/selection/windowslikeselection/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -181,19 +193,21 @@ The Toggle selection allows to perform selection and unselection of the particul
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="toggleselection" %}
 {% include_relative code-snippet/selection/toggleselection/toggleselection.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/selection/toggleselection/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/selection/toggleselection/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/selection/toggleselection/toggleselection.cs %}
+{% highlight c# tabtitle="toggleselection" %}
+{% include_relative code-snippet/selection/toggleselection/toggleselection.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/selection/toggleselection/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -205,19 +219,21 @@ To select a row at initial rendering, set the [`selectedRowIndex`](https://help.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="select-row" %}
 {% include_relative code-snippet/selection/select-row/select-row.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/selection/select-row/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/selection/select-row/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/selection/select-row/select-row.cs %}
+{% highlight c# tabtitle="select-row" %}
+{% include_relative code-snippet/selection/select-row/select-row.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/selection/select-row/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -227,19 +243,21 @@ You can get the selected row indexes by using the **getSelectedRowIndexes** meth
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="selected-row-index" %}
 {% include_relative code-snippet/selection/selected-row-index/selected-row-index.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/selection/selected-row-index/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/selection/selected-row-index/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/selection/selected-row-index/selected-row-index.cs %}
+{% highlight c# tabtitle="selected-row-index" %}
+{% include_relative code-snippet/selection/selected-row-index/selected-row-index.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/selection/selected-row-index/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -261,17 +279,19 @@ You can select multiple rows by clicking on rows one by one. This will not desel
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/selection/simplemultiselect/simplemultiselect.cs %}
+{% highlight c# tabtitle="multiselection" %}
+{% include_relative code-snippet/selection/simplemultiselect/multiselection.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/selection/simplemultiselect/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/selection/simplemultiselect/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/selection/simplemultiselect/simplemultiselect.cs %}
+{% highlight c# tabtitle="multiselection" %}
+{% include_relative code-snippet/selection/simplemultiselect/multiselection.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/selection/simplemultiselect/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

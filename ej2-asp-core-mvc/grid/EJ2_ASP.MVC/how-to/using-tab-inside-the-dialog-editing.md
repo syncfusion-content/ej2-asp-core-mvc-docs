@@ -17,18 +17,20 @@ The following example demonstrate the usage of tab control inside the dialog tem
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/edit/tabediting/tabediting.cs %}
+{% highlight c# tabtitle="*" %}
+{% include_relative code-snippet/edit/tabediting/*.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/edit/tabediting/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/tabediting/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/edit/tabediting/tabediting.cs %}
+{% highlight c# tabtitle="*" %}
+{% include_relative code-snippet/edit/tabediting/*.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/tabediting/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

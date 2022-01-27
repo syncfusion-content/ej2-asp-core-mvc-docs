@@ -18,19 +18,21 @@ To enable sorting in the Grid, set the [`allowSorting`](https://help.syncfusion.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="sorting" %}
 {% include_relative code-snippet/sorting/sorting/sorting.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/sorting/sorting/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/sorting/sorting/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/sorting/sorting/sorting.cs %}
+{% highlight c# tabtitle="sorting" %}
+{% include_relative code-snippet/sorting/sorting/sorting.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/sorting/sorting/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -45,19 +47,21 @@ To sort at initial rendering, set the **field** and
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="initial-sort" %}
 {% include_relative code-snippet/sorting/initial-sort/initial-sort.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/sorting/initial-sort/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/sorting/initial-sort/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/sorting/initial-sort/initial-sort.cs %}
+{% highlight c# tabtitle="initial-sort" %}
+{% include_relative code-snippet/sorting/initial-sort/initial-sort.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/sorting/initial-sort/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -72,19 +76,21 @@ To clear sorting for a particular column, press the "Shift + mouse left click".
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="multi-column-sort" %}
 {% include_relative code-snippet/sorting/multi-column-sort/multi-column-sort.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/sorting/multi-column-sort/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/sorting/multi-column-sort/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/sorting/multi-column-sort/multi-column-sort.cs %}
+{% highlight c# tabtitle="multi-column-sort" %}
+{% include_relative code-snippet/sorting/multi-column-sort/multi-column-sort.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/sorting/multi-column-sort/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -104,19 +110,21 @@ The following code example describes the handling of sorting operation at the se
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="foreign-sort" %}
 {% include_relative code-snippet/sorting/foreign-sort/foreign-sort.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/sorting/foreign-sort/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/sorting/foreign-sort/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/sorting/foreign-sort/foreign-sort.cs %}
+{% highlight c# tabtitle="foreign-sort" %}
+{% include_relative code-snippet/sorting/foreign-sort/foreign-sort.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/sorting/foreign-sort/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -126,19 +134,21 @@ During the sort action, the grid component triggers two events. The [`actionBegi
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="sort-event" %}
 {% include_relative code-snippet/sorting/sort-event/sort-event.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/sorting/sort-event/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/sorting/sort-event/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/sorting/sort-event/sort-event.cs %}
+{% highlight c# tabtitle="sort-event" %}
+{% include_relative code-snippet/sorting/sort-event/sort-event.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/sorting/sort-event/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

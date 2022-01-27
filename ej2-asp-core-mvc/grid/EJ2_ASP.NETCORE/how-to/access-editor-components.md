@@ -17,17 +17,19 @@ In the below demo, you can access the Editor component instance while adding or 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="access-editor" %}
 {% include_relative code-snippet/how-to/access-editor/access-editor.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/how-to/access-editor/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/access-editor/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/access-editor/access-editor.cs %}
+{% highlight c# tabtitle="access-editor" %}
+{% include_relative code-snippet/how-to/access-editor/access-editor.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/access-editor/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

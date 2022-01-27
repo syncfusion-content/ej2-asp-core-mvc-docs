@@ -19,19 +19,21 @@ To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="infinite-scroll-normal" %}
 {% include_relative code-snippet/infinite-scroll-normal/infinite-scroll-normal.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/infinite-scroll-normal/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/infinite-scroll-normal/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/infinite-scroll-normal/infinite-scroll-normal.cs %}
+{% highlight c# tabtitle="infinite-scroll-normal" %}
+{% include_relative code-snippet/infinite-scroll-normal/infinite-scroll-normal.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/infinite-scroll-normal/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -43,19 +45,21 @@ In the below demo, we have changed this property value to load five page records
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="infinite-scroll-initialblocks" %}
 {% include_relative code-snippet/infinite-scroll-initialblocks/infinite-scroll-initialblocks.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/infinite-scroll-initialblocks/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/infinite-scroll-initialblocks/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/infinite-scroll-initialblocks/infinite-scroll-initialblocks.cs %}
+{% highlight c# tabtitle="infinite-scroll-initialblocks" %}
+{% include_relative code-snippet/infinite-scroll-initialblocks/infinite-scroll-initialblocks.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/infinite-scroll-initialblocks/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -67,19 +71,21 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="infinite-scroll-cache" %}
 {% include_relative code-snippet/infinite-scroll-cache/infinite-scroll-cache.cs %}
 {% endhighlight %}
-{% highlight %}
-{% include_relative code-snippet/infinite-scroll-cache/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/infinite-scroll-cache/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/infinite-scroll-cache/infinite-scroll-cache.cs %}
+{% highlight c# tabtitle="infinite-scroll-cache" %}
+{% include_relative code-snippet/infinite-scroll-cache/infinite-scroll-cache.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/infinite-scroll-cache/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
