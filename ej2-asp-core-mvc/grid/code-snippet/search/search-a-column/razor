@@ -1,8 +1,0 @@
-@Html.EJS().Grid("Search").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("160").Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
-    col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
-
-}).AllowPaging().SearchSettings(search => { search.Fields(new string[] { "CustomerID", "ShipCity", "ShipName" }); }).PageSettings(page => page.PageCount(2)).Toolbar(new List<string>() { "Search" }).Render()

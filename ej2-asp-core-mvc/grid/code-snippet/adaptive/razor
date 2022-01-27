@@ -1,7 +1,0 @@
-@Html.EJS().Grid("adaptivebrowser").DataSource((IEnumerable<object>)ViewBag.DataSource).EnableAdaptiveUI(true).AllowPaging(true).AllowFiltering(true).AllowSorting(true).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("180").IsPrimaryKey(true).ValidationRules(new { required = true, number = true }).Add();
-    col.Field("Freight").HeaderText("Freight").Width("180").Format("C2").EditType("numericedit").ValidationRules(new { required = true }).Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("180").ValidationRules(new { required = true, minLength = 3 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("180").Add();
-}).FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel); }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Dialog); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Render()

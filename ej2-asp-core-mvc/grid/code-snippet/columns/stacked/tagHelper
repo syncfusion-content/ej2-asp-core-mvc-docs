@@ -1,9 +1,0 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowResizing="true"  height="315">   
-    <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
-        <e-grid-column headerText="Order Details" columns="@( new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "OrderDate", Width = "120", HeaderText = "Order Date", Format="yMd", TextAlign= Syncfusion.EJ2.Grids.TextAlign.Right  },                                                                                                           new Syncfusion.EJ2.Grids.GridColumn { Field = "Freight", Width = "100", HeaderText = "Freight($)", Format="C2",  TextAlign= Syncfusion.EJ2.Grids.TextAlign.Right } } )">
-        </e-grid-column>
-        <e-grid-column headerText="Shipped Details" columns="@( new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipCity", Width = "100", HeaderText = "Ship City", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right, Format="yMd" },                                                                                                               new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipCountry", Width = "120", HeaderText = "Ship Country" } } )">
-        </e-grid-column>
-    </e-grid-columns>
-</ejs-grid>

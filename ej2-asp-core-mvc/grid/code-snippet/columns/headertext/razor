@@ -1,9 +1,0 @@
-@Html.EJS().Grid("HeaderText").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
-{
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("FirstName").HeaderText("First Name").Width("140").Add();
-    col.Field("BirthDate").HeaderText("Birth Date").Format("yMd").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("City").Width("120").Add();
-    col.Field("Country").HeaderText("Country").Width("140").Add();
-
-}).AllowPaging().Render()

@@ -1,8 +1,0 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).EnableImmutableMode(true).AllowPaging(true).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ProductName").HeaderText("Product Name").Width("160").Add();
-    col.Field("ProductID").HeaderText("Product ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
-    col.Field("CustomerName").HeaderText("Customer Name").Width("160").Add();
-}).Render()

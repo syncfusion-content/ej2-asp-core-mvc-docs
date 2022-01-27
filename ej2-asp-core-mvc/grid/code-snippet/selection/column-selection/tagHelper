@@ -1,9 +1,0 @@
- <ejs-grid id="Grid" dataSource="@ViewBag.datasource" allowSelection="true" allowPaging="true">
-        <e-grid-selectionsettings allowColumnSelection="true" type="Multiple"></e-grid-selectionsettings>
-        <e-grid-columns>
-            <e-grid-column field="Inventor" headerText="Inventor Name" width="140"></e-grid-column>
-            <e-grid-column field="NumberofPatentFamilies" headerText="No of Patent Families" width="185" textAlign="Right"></e-grid-column>
-            <e-grid-column field="Country" headerText="Country" width="120"></e-grid-column>
-            <e-grid-column field="Active" headerText="Active" width="130"></e-grid-column>
-        </e-grid-columns>
-    </ejs-grid>

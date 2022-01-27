@@ -1,9 +1,0 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true" enableImmutableMode="true">
-    <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120" textAlign="Right"></e-grid-column>
-        <e-grid-column field="ProductName" headerText="Product Name" width="160"></e-grid-column>
-        <e-grid-column field="ProductID" headerText="Product ID" width="120" textAlign="Right"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
-        <e-grid-column field="CustomerName" headerText="Customer Name" width="160"></e-grid-column>
-    </e-grid-columns>
-</ejs-grid>

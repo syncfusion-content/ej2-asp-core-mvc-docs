@@ -1,8 +1,0 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="315" >     
-    <e-grid-columns>
-        <e-grid-column field="EmployeeID" headerText="Employee ID" width="100"  textAlign="Right"></e-grid-column>
-        <e-grid-column field="Name.0.FirstName" headerText="Last Name" width="120"></e-grid-column>               
-        <e-grid-column field="Name.LastName" headerText="Last Name" width="100"></e-grid-column>
-        <e-grid-column field="Title" headerText="Title" width="100"></e-grid-column>
-    </e-grid-columns>
-</ejs-grid>

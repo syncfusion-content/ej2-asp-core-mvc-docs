@@ -1,9 +1,0 @@
-@Html.EJS().Grid("Complex").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
-{
-    col.Field("EmployeeID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Name.FirstName").HeaderText("FirstName").Width("140").Add();
-    col.Field("Name.LastName").HeaderText("LastName").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("City").Width("120").Add();
-    col.Field("Country").Width("140").Add();
-    
-}).AllowPaging().Render()

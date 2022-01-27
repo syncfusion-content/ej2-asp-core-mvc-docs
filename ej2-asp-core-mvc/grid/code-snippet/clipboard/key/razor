@@ -1,9 +1,0 @@
-@(Html.EJS().Grid("Clipboard").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
-    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-    col.Field("Freight").HeaderText("Freight").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-
-}).AllowPaging().PageSettings(new Syncfusion.EJ2.Grids.GridPageSettings() { PageCount = 5 }).Render())

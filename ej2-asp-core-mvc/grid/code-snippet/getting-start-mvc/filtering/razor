@@ -1,9 +1,0 @@
-
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
-{
-   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
-
-}).AllowPaging(true).AllowSorting(true).AllowFiltering(true).PageSettings(page => page.PageSize(5)).Render()

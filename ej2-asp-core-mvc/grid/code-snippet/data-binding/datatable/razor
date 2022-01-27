@@ -1,8 +1,0 @@
-@Html.EJS().Grid("DataTable").DataSource((System.Data.DataTable)ViewBag.dataSource).Columns(col =>
-{
-   col.Field("OrderID").HeaderText("Order ID").Width("120").Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-   col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").Add();
-
-}).AllowPaging().Render()
