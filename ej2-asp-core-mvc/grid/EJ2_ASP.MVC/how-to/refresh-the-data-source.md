@@ -37,16 +37,17 @@ Refresh the grid after the data source change by using the `refresh` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="refresh-datasource" %}
 {% include_relative code-snippet/how-to/refresh-datasource/refresh-datasource.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="refresh-datasource" %}
 {% include_relative code-snippet/how-to/refresh-datasource/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/refresh-datasource/refresh-datasource.cs %}
+{% highlight c# tabtitle="refresh-datasource" %}
+{% include_relative code-snippet/how-to/refresh-datasource/refresh-datasource.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="refresh-datasource" %}
 {% include_relative code-snippet/how-to/refresh-datasource/razor %}
 {% endhighlight %}
 {% endtabs %}

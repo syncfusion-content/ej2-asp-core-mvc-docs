@@ -25,16 +25,17 @@ To specify the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="width-height" %}
 {% include_relative code-snippet/scrolling/width-height/width-height.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="width-height" %}
 {% include_relative code-snippet/scrolling/width-height/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/scrolling/width-height/width-height.cs %}
+{% highlight c# tabtitle="width-height" %}
+{% include_relative code-snippet/scrolling/width-height/width-height.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="width-height" %}
 {% include_relative code-snippet/scrolling/width-height/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -48,16 +49,17 @@ Setting the [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="responsive-parent" %}
 {% include_relative code-snippet/scrolling/responsive-parent/responsive-parent.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="responsive-parent" %}
 {% include_relative code-snippet/scrolling/responsive-parent/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/scrolling/responsive-parent/responsive-parent.cs %}
+{% highlight c# tabtitle="responsive-parent" %}
+{% include_relative code-snippet/scrolling/responsive-parent/responsive-parent.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="responsive-parent" %}
 {% include_relative code-snippet/scrolling/responsive-parent/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -70,16 +72,17 @@ You can scroll the grid content to the selected row position by using the [`rowS
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="scroll-selected-row" %}
 {% include_relative code-snippet/scrolling/scroll-selected-row/scroll-selected-row.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="scroll-selected-row" %}
 {% include_relative code-snippet/scrolling/scroll-selected-row/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/scrolling/scroll-selected-row/scroll-selected-row.cs %}
+{% highlight c# tabtitle="scroll-selected-row" %}
+{% include_relative code-snippet/scrolling/scroll-selected-row/scroll-selected-row.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="scroll-selected-row" %}
 {% include_relative code-snippet/scrolling/scroll-selected-row/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -94,16 +97,17 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="hide-scroll" %}
 {% include_relative code-snippet/scrolling/hide-scroll/hide-scroll.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="hide-scroll" %}
 {% include_relative code-snippet/scrolling/hide-scroll/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/scrolling/hide-scroll/hide-scroll.cs %}
+{% highlight c# tabtitle="hide-scroll" %}
+{% include_relative code-snippet/scrolling/hide-scroll/hide-scroll.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="hide-scroll" %}
 {% include_relative code-snippet/scrolling/hide-scroll/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -118,16 +122,17 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="sticky-header" %}
 {% include_relative code-snippet/scrolling/sticky-header/sticky-header.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="sticky-header" %}
 {% include_relative code-snippet/scrolling/sticky-header/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/scrolling/sticky-header/sticky-header.cs %}
+{% highlight c# tabtitle="sticky-header" %}
+{% include_relative code-snippet/scrolling/sticky-header/sticky-header.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="sticky-header" %}
 {% include_relative code-snippet/scrolling/sticky-header/razor %}
 {% endhighlight %}
 {% endtabs %}

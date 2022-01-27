@@ -17,16 +17,17 @@ In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="cascading" %}
 {% include_relative code-snippet/how-to/cascading/cascading.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="cascading" %}
 {% include_relative code-snippet/how-to/cascading/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/cascading/cascading.cs %}
+{% highlight c# tabtitle="cascading" %}
+{% include_relative code-snippet/how-to/cascading/cascading.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="cascading" %}
 {% include_relative code-snippet/how-to/cascading/razor %}
 {% endhighlight %}
 {% endtabs %}

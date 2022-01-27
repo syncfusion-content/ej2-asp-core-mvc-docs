@@ -17,16 +17,17 @@ In the following example, The **Employee Name** is a foreign key column and the 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="aggregate-foreign" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="aggregate-foreign" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/aggregate-foreign/aggregate-foreign.cs %}
+{% highlight c# tabtitle="aggregate-foreign" %}
+{% include_relative code-snippet/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="aggregate-foreign" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/razor %}
 {% endhighlight %}
 {% endtabs %}

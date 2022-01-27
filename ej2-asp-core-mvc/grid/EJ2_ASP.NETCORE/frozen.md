@@ -18,16 +18,17 @@ is set as '3'. Hence, the left two columns and top three rows are frozen.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="freeze-row-column" %}
 {% include_relative code-snippet/scrolling/freeze-row-column/freeze-row-column.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="freeze-row-column" %}
 {% include_relative code-snippet/scrolling/freeze-row-column/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/scrolling/freeze-row-column/freeze-row-column.cs %}
+{% highlight c# tabtitle="freeze-row-column" %}
+{% include_relative code-snippet/scrolling/freeze-row-column/freeze-row-column.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="freeze-row-column" %}
 {% include_relative code-snippet/scrolling/freeze-row-column/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -55,16 +56,17 @@ the [`isFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="freeze-column" %}
 {% include_relative code-snippet/scrolling/freeze-column/freeze-column.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="freeze-column" %}
 {% include_relative code-snippet/scrolling/freeze-column/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/scrolling/freeze-column/freeze-column.cs %}
+{% highlight c# tabtitle="freeze-column" %}
+{% include_relative code-snippet/scrolling/freeze-column/freeze-column.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="freeze-column" %}
 {% include_relative code-snippet/scrolling/freeze-column/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -86,16 +88,17 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/scrolling/column-level-frozen/column-level-frozen.cs %}
+{% highlight c# tabtitle="column-level-frozen" %}
+{% include_relative code-snippet/scrolling/column-level-frozen/freeze-row-column.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="column-level-frozen" %}
 {% include_relative code-snippet/scrolling/column-level-frozen/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/scrolling/column-level-frozen/column-level-frozen.cs %}
+{% highlight c# tabtitle="column-level-frozen" %}
+{% include_relative code-snippet/scrolling/column-level-frozen/freeze-row-column.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="column-level-frozen" %}
 {% include_relative code-snippet/scrolling/column-level-frozen/razor %}
 {% endhighlight %}
 {% endtabs %}

@@ -21,16 +21,17 @@ In the below demo, we have rendered the default spinner component when exporting
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/how-to/show-spinner-while-exporting/show-spinner-while-exporting.cs %}
+{% highlight c# tabtitle="show-spinner-while-exporting" %}
+{% include_relative code-snippet/how-to/show-spinner-while-exporting/show-spinner.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="show-spinner-while-exporting" %}
 {% include_relative code-snippet/how-to/show-spinner-while-exporting/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/show-spinner-while-exporting/show-spinner-while-exporting.cs %}
+{% highlight c# tabtitle="show-spinner-while-exporting" %}
+{% include_relative code-snippet/how-to/show-spinner-while-exporting/show-spinner.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="show-spinner-while-exporting" %}
 {% include_relative code-snippet/how-to/show-spinner-while-exporting/razor %}
 {% endhighlight %}
 {% endtabs %}

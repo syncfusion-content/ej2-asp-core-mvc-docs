@@ -47,16 +47,17 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="custom-column-style" %}
 {% include_relative code-snippet/how-to/custom-column-style/custom-column-style.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="custom-column-style" %}
 {% include_relative code-snippet/how-to/custom-column-style/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/custom-column-style/custom-column-style.cs %}
+{% highlight c# tabtitle="custom-column-style" %}
+{% include_relative code-snippet/how-to/custom-column-style/custom-column-style.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="custom-column-style" %}
 {% include_relative code-snippet/how-to/custom-column-style/razor %}
 {% endhighlight %}
 {% endtabs %}

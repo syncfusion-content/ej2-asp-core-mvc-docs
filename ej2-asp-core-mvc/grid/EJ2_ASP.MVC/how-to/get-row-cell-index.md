@@ -15,16 +15,17 @@ You can get the specific row and cell index of the grid by using [`RowSelected`]
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/how-to/row-cell-index/row-cell-index.cs %}
+{% highlight c# tabtitle="row-cell-index" %}
+{% include_relative code-snippet/how-to/row-cell-index/rowcellidx.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="row-cell-index" %}
 {% include_relative code-snippet/how-to/row-cell-index/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/row-cell-index/row-cell-index.cs %}
+{% highlight c# tabtitle="row-cell-index" %}
+{% include_relative code-snippet/how-to/row-cell-index/rowcellidx.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="row-cell-index" %}
 {% include_relative code-snippet/how-to/row-cell-index/razor %}
 {% endhighlight %}
 {% endtabs %}

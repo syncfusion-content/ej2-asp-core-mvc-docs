@@ -37,16 +37,17 @@ grid.refreshHeader();
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="column-header-text" %}
 {% include_relative code-snippet/how-to/column-header-text/column-header-text.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="column-header-text" %}
 {% include_relative code-snippet/how-to/column-header-text/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/column-header-text/column-header-text.cs %}
+{% highlight c# tabtitle="column-header-text" %}
+{% include_relative code-snippet/how-to/column-header-text/column-header-text.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="column-header-text" %}
 {% include_relative code-snippet/how-to/column-header-text/razor %}
 {% endhighlight %}
 {% endtabs %}

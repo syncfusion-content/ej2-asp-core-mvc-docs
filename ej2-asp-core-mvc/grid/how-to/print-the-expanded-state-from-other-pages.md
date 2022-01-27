@@ -17,16 +17,17 @@ In the following example, we have printed expanded child grids form other pages.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="hierarchyprint" %}
 {% include_relative code-snippet/how-to/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="hierarchyprint" %}
 {% include_relative code-snippet/how-to/hierarchyprint/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/hierarchyprint/hierarchyprint.cs %}
+{% highlight c# tabtitle="hierarchyprint" %}
+{% include_relative code-snippet/how-to/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="hierarchyprint" %}
 {% include_relative code-snippet/how-to/hierarchyprint/razor %}
 {% endhighlight %}
 {% endtabs %}

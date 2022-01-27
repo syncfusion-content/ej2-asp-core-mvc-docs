@@ -21,16 +21,17 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/edit/show-hide-edit-dialog/show-hide-edit-dialog.cs %}
+{% highlight c# tabtitle="show-hide-edit-dialog" %}
+{% include_relative code-snippet/edit/show-hide-edit-dialog/*.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="show-hide-edit-dialog" %}
 {% include_relative code-snippet/edit/show-hide-edit-dialog/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/edit/show-hide-edit-dialog/show-hide-edit-dialog.cs %}
+{% highlight c# tabtitle="show-hide-edit-dialog" %}
+{% include_relative code-snippet/edit/show-hide-edit-dialog/*.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="show-hide-edit-dialog" %}
 {% include_relative code-snippet/edit/show-hide-edit-dialog/razor %}
 {% endhighlight %}
 {% endtabs %}

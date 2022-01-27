@@ -15,16 +15,17 @@ To print the Grid, use the **print** method from grid instance. The print option
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="print" %}
 {% include_relative code-snippet/print/print/print.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="print" %}
 {% include_relative code-snippet/print/print/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/print/print/print.cs %}
+{% highlight c# tabtitle="print" %}
+{% include_relative code-snippet/print/print/print.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="print" %}
 {% include_relative code-snippet/print/print/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -46,16 +47,17 @@ To print the grid from an external button, invoke the **print** method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="external-btn" %}
 {% include_relative code-snippet/print/external-btn/external-btn.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="external-btn" %}
 {% include_relative code-snippet/print/external-btn/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/print/external-btn/external-btn.cs %}
+{% highlight c# tabtitle="external-btn" %}
+{% include_relative code-snippet/print/external-btn/external-btn.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="external-btn" %}
 {% include_relative code-snippet/print/external-btn/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -68,16 +70,17 @@ By default, the grid prints all the pages. To print the current page alone, set 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="current-page" %}
 {% include_relative code-snippet/print/current-page/current-page.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="current-page" %}
 {% include_relative code-snippet/print/current-page/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/print/current-page/current-page.cs %}
+{% highlight c# tabtitle="current-page" %}
+{% include_relative code-snippet/print/current-page/current-page.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="current-page" %}
 {% include_relative code-snippet/print/current-page/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -96,16 +99,17 @@ By default, the grid will be print the master and expanded child grids alone. yo
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="hierarchyprint" %}
 {% include_relative code-snippet/print/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="hierarchyprint" %}
 {% include_relative code-snippet/print/hierarchyprint/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/print/hierarchyprint/hierarchyprint.cs %}
+{% highlight c# tabtitle="hierarchyprint" %}
+{% include_relative code-snippet/print/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="hierarchyprint" %}
 {% include_relative code-snippet/print/hierarchyprint/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -134,16 +138,17 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/print/show-hide-columns/show-hide-columns.cs %}
+{% highlight c# tabtitle="show-hide-columns" %}
+{% include_relative code-snippet/print/show-hide-columns/show-hide.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="show-hide-columns" %}
 {% include_relative code-snippet/print/show-hide-columns/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/print/show-hide-columns/show-hide-columns.cs %}
+{% highlight c# tabtitle="show-hide-columns" %}
+{% include_relative code-snippet/print/show-hide-columns/show-hide.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="show-hide-columns" %}
 {% include_relative code-snippet/print/show-hide-columns/razor %}
 {% endhighlight %}
 {% endtabs %}

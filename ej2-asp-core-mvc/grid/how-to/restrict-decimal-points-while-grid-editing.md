@@ -17,16 +17,17 @@ In the below demo, while editing the row we have restricted to type the decimal 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="prevent-decimal-point" %}
 {% include_relative code-snippet/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="prevent-decimal-point" %}
 {% include_relative code-snippet/how-to/prevent-decimal-point/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
+{% highlight c# tabtitle="prevent-decimal-point" %}
+{% include_relative code-snippet/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="prevent-decimal-point" %}
 {% include_relative code-snippet/how-to/prevent-decimal-point/razor %}
 {% endhighlight %}
 {% endtabs %}

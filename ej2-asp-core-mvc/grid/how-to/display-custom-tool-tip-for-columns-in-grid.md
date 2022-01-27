@@ -26,16 +26,17 @@ function beforeRender(args) {
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="custom-tooltip" %}
 {% include_relative code-snippet/how-to/custom-tooltip/custom-tooltip.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="custom-tooltip" %}
 {% include_relative code-snippet/how-to/custom-tooltip/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/custom-tooltip/custom-tooltip.cs %}
+{% highlight c# tabtitle="custom-tooltip" %}
+{% include_relative code-snippet/how-to/custom-tooltip/custom-tooltip.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="custom-tooltip" %}
 {% include_relative code-snippet/how-to/custom-tooltip/razor %}
 {% endhighlight %}
 {% endtabs %}

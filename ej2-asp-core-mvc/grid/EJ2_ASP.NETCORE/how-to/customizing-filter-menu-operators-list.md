@@ -23,16 +23,17 @@ In the following sample, we have customized string filter operators.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="customize-filter-menu" %}
 {% include_relative code-snippet/how-to/customize-filter-menu/customize-filter-menu.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="customize-filter-menu" %}
 {% include_relative code-snippet/how-to/customize-filter-menu/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/how-to/customize-filter-menu/customize-filter-menu.cs %}
+{% highlight c# tabtitle="customize-filter-menu" %}
+{% include_relative code-snippet/how-to/customize-filter-menu/customize-filter-menu.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="customize-filter-menu" %}
 {% include_relative code-snippet/how-to/customize-filter-menu/razor %}
 {% endhighlight %}
 {% endtabs %}

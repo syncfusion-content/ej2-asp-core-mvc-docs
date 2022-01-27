@@ -20,16 +20,17 @@ the template string or HTML element ID.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="row-template" %}
 {% include_relative code-snippet/row/row-template/row-template.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="row-template" %}
 {% include_relative code-snippet/row/row-template/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/row/row-template/row-template.cs %}
+{% highlight c# tabtitle="row-template" %}
+{% include_relative code-snippet/row/row-template/row-template.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="row-template" %}
 {% include_relative code-snippet/row/row-template/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -45,16 +46,17 @@ the template string or HTML element ID.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="detail-temp" %}
 {% include_relative code-snippet/row/detail-temp/detail-temp.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="detail-temp" %}
 {% include_relative code-snippet/row/detail-temp/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/row/detail-temp/detail-temp.cs %}
+{% highlight c# tabtitle="detail-temp" %}
+{% include_relative code-snippet/row/detail-temp/detail-temp.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="detail-temp" %}
 {% include_relative code-snippet/row/detail-temp/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -70,16 +72,17 @@ For example, to render grid inside the detail row, place an HTML div element as 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="custom-component" %}
 {% include_relative code-snippet/row/custom-component/custom-component.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="custom-component" %}
 {% include_relative code-snippet/row/custom-component/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/row/custom-component/custom-component.cs %}
+{% highlight c# tabtitle="custom-component" %}
+{% include_relative code-snippet/row/custom-component/custom-component.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="custom-component" %}
 {% include_relative code-snippet/row/custom-component/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -92,16 +95,17 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="expand-external" %}
 {% include_relative code-snippet/row/expand-external/expand-external.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="expand-external" %}
 {% include_relative code-snippet/row/expand-external/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/row/expand-external/expand-external.cs %}
+{% highlight c# tabtitle="expand-external" %}
+{% include_relative code-snippet/row/expand-external/expand-external.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="expand-external" %}
 {% include_relative code-snippet/row/expand-external/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -119,16 +123,17 @@ the **TargetID**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="drag-drop" %}
 {% include_relative code-snippet/row/drag-drop/drag-drop.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="drag-drop" %}
 {% include_relative code-snippet/row/drag-drop/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/row/drag-drop/drag-drop.cs %}
+{% highlight c# tabtitle="drag-drop" %}
+{% include_relative code-snippet/row/drag-drop/drag-drop.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="drag-drop" %}
 {% include_relative code-snippet/row/drag-drop/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -145,16 +150,17 @@ The grid row drag and drop allows you to drag and drop grid rows on the same gri
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="drag-drop-same-grid" %}
 {% include_relative code-snippet/row/drag-drop-same-grid/drag-drop-same-grid.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="drag-drop-same-grid" %}
 {% include_relative code-snippet/row/drag-drop-same-grid/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/row/drag-drop-same-grid/drag-drop-same-grid.cs %}
+{% highlight c# tabtitle="drag-drop-same-grid" %}
+{% include_relative code-snippet/row/drag-drop-same-grid/drag-drop-same-grid.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="drag-drop-same-grid" %}
 {% include_relative code-snippet/row/drag-drop-same-grid/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -174,16 +180,17 @@ The [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="custom-rows" %}
 {% include_relative code-snippet/row/custom-rows/custom-rows.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="custom-rows" %}
 {% include_relative code-snippet/row/custom-rows/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/row/custom-rows/custom-rows.cs %}
+{% highlight c# tabtitle="custom-rows" %}
+{% include_relative code-snippet/row/custom-rows/custom-rows.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="custom-rows" %}
 {% include_relative code-snippet/row/custom-rows/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -204,16 +211,17 @@ Please refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="style-alt-row" %}
 {% include_relative code-snippet/row/style-alt-row/style-alt-row.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="style-alt-row" %}
 {% include_relative code-snippet/row/style-alt-row/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/row/style-alt-row/style-alt-row.cs %}
+{% highlight c# tabtitle="style-alt-row" %}
+{% include_relative code-snippet/row/style-alt-row/style-alt-row.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="style-alt-row" %}
 {% include_relative code-snippet/row/style-alt-row/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -229,16 +237,17 @@ In the below example, the [`RowHeight`](https://help.syncfusion.com/cr/aspnetcor
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="row-height" %}
 {% include_relative code-snippet/row/row-height/row-height.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="row-height" %}
 {% include_relative code-snippet/row/row-height/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/row/row-height/row-height.cs %}
+{% highlight c# tabtitle="row-height" %}
+{% include_relative code-snippet/row/row-height/row-height.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="row-height" %}
 {% include_relative code-snippet/row/row-height/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -254,16 +263,17 @@ In the below example, the row height for the row with OrderID as '10249' is set 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="rowheight-particular" %}
 {% include_relative code-snippet/row/rowheight-particular/rowheight-particular.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="rowheight-particular" %}
 {% include_relative code-snippet/row/rowheight-particular/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/row/rowheight-particular/rowheight-particular.cs %}
+{% highlight c# tabtitle="rowheight-particular" %}
+{% include_relative code-snippet/row/rowheight-particular/rowheight-particular.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="rowheight-particular" %}
 {% include_relative code-snippet/row/rowheight-particular/razor %}
 {% endhighlight %}
 {% endtabs %}

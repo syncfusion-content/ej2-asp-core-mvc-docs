@@ -36,16 +36,17 @@ The following table shows built-in toolbar items and its actions.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="toolbar" %}
 {% include_relative code-snippet/toolbar/toolbar/toolbar.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="toolbar" %}
 {% include_relative code-snippet/toolbar/toolbar/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/toolbar/toolbar/toolbar.cs %}
+{% highlight c# tabtitle="toolbar" %}
+{% include_relative code-snippet/toolbar/toolbar/toolbar.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="toolbar" %}
 {% include_relative code-snippet/toolbar/toolbar/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -64,16 +65,17 @@ By default, Custom toolbar items are in position **Left**. You can change the po
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="custom-toolbar-item" %}
 {% include_relative code-snippet/toolbar/custom-toolbar-item/custom-toolbar-item.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="custom-toolbar-item" %}
 {% include_relative code-snippet/toolbar/custom-toolbar-item/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/toolbar/custom-toolbar-item/custom-toolbar-item.cs %}
+{% highlight c# tabtitle="custom-toolbar-item" %}
+{% include_relative code-snippet/toolbar/custom-toolbar-item/custom-toolbar-item.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="custom-toolbar-item" %}
 {% include_relative code-snippet/toolbar/custom-toolbar-item/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -91,16 +93,17 @@ In the below example, **Add**, **Edit**, **Delete**, **Update**, **Cancel** are 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="builtin-custom-items" %}
 {% include_relative code-snippet/toolbar/builtin-custom-items/builtin-custom-items.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="builtin-custom-items" %}
 {% include_relative code-snippet/toolbar/builtin-custom-items/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/toolbar/builtin-custom-items/builtin-custom-items.cs %}
+{% highlight c# tabtitle="builtin-custom-items" %}
+{% include_relative code-snippet/toolbar/builtin-custom-items/builtin-custom-items.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="builtin-custom-items" %}
 {% include_relative code-snippet/toolbar/builtin-custom-items/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -113,16 +116,17 @@ You can enable/disable toolbar items by using the **enableItems** method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="enable-disable" %}
 {% include_relative code-snippet/toolbar/enable-disable/enable-disable.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="enable-disable" %}
 {% include_relative code-snippet/toolbar/enable-disable/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/toolbar/enable-disable/enable-disable.cs %}
+{% highlight c# tabtitle="enable-disable" %}
+{% include_relative code-snippet/toolbar/enable-disable/enable-disable.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="enable-disable" %}
 {% include_relative code-snippet/toolbar/enable-disable/razor %}
 {% endhighlight %}
 {% endtabs %}

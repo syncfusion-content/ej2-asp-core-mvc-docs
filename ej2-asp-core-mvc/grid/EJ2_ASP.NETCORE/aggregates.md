@@ -43,16 +43,17 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="footer-agg" %}
 {% include_relative code-snippet/aggregate/footer-agg/footer-agg.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="footer-agg" %}
 {% include_relative code-snippet/aggregate/footer-agg/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/aggregate/footer-agg/footer-agg.cs %}
+{% highlight c# tabtitle="footer-agg" %}
+{% include_relative code-snippet/aggregate/footer-agg/footer-agg.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="footer-agg" %}
 {% include_relative code-snippet/aggregate/footer-agg/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -67,16 +68,17 @@ You can format the aggregate value result by using the [`format`](https://help.s
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="format-agg" %}
 {% include_relative code-snippet/aggregate/format-agg/format-agg.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="format-agg" %}
 {% include_relative code-snippet/aggregate/format-agg/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/aggregate/format-agg/format-agg.cs %}
+{% highlight c# tabtitle="format-agg" %}
+{% include_relative code-snippet/aggregate/format-agg/format-agg.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="format-agg" %}
 {% include_relative code-snippet/aggregate/format-agg/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -91,16 +93,17 @@ If [`groupFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="group-caption" %}
 {% include_relative code-snippet/aggregate/group-caption/group-caption.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="group-caption" %}
 {% include_relative code-snippet/aggregate/group-caption/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/aggregate/group-caption/group-caption.cs %}
+{% highlight c# tabtitle="group-caption" %}
+{% include_relative code-snippet/aggregate/group-caption/group-caption.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="group-caption" %}
 {% include_relative code-snippet/aggregate/group-caption/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -120,16 +123,17 @@ object.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="custom-agg" %}
 {% include_relative code-snippet/aggregate/custom-agg/custom-agg.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="custom-agg" %}
 {% include_relative code-snippet/aggregate/custom-agg/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/aggregate/custom-agg/custom-agg.cs %}
+{% highlight c# tabtitle="custom-agg" %}
+{% include_relative code-snippet/aggregate/custom-agg/custom-agg.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="custom-agg" %}
 {% include_relative code-snippet/aggregate/custom-agg/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -146,16 +150,17 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="reactive-agg-batch-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-batch-edit/reactive-agg-batch-edit.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="reactive-agg-batch-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-batch-edit/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/aggregate/reactive-agg-batch-edit/reactive-agg-batch-edit.cs %}
+{% highlight c# tabtitle="reactive-agg-batch-edit" %}
+{% include_relative code-snippet/aggregate/reactive-agg-batch-edit/reactive-agg-batch-edit.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="reactive-agg-batch-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-batch-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -170,16 +175,17 @@ In the following code, the input event for the Freight column editor has been re
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="reactive-agg-inline-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-inline-edit/reactive-agg-inline-edit.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="reactive-agg-inline-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-inline-edit/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/aggregate/reactive-agg-inline-edit/reactive-agg-inline-edit.cs %}
+{% highlight c# tabtitle="reactive-agg-inline-edit" %}
+{% include_relative code-snippet/aggregate/reactive-agg-inline-edit/reactive-agg-inline-edit.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="reactive-agg-inline-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-inline-edit/razor %}
 {% endhighlight %}
 {% endtabs %}

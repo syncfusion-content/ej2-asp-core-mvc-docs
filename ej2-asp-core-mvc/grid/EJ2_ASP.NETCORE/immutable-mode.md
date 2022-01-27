@@ -19,16 +19,17 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://help
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/immutable-mode/immutable-mode.cs %}
+{% highlight c# tabtitle="immutable-mode" %}
+{% include_relative code-snippet/immutable-mode/immutable.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="immutable-mode" %}
 {% include_relative code-snippet/immutable-mode/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/immutable-mode/immutable-mode.cs %}
+{% highlight c# tabtitle="immutable-mode" %}
+{% include_relative code-snippet/immutable-mode/immutable.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="immutable-mode" %}
 {% include_relative code-snippet/immutable-mode/razor %}
 {% endhighlight %}
 {% endtabs %}

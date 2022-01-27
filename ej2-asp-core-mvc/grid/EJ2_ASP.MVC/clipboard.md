@@ -13,16 +13,17 @@ documentation: ug
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/clipboard/key/key.cs %}
+{% highlight c# tabtitle="key" %}
+{% include_relative code-snippet/clipboard/key/local.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="key" %}
 {% include_relative code-snippet/clipboard/key/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/clipboard/key/key.cs %}
+{% highlight c# tabtitle="key" %}
+{% include_relative code-snippet/clipboard/key/local.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="key" %}
 {% include_relative code-snippet/clipboard/key/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -35,16 +36,17 @@ To copy selected rows or cells data into the clipboard with help of toolbar butt
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/clipboard/clipboard/clipboard.cs %}
+{% highlight c# tabtitle="clipboard" %}
+{% include_relative code-snippet/clipboard/clipboard/local.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="clipboard" %}
 {% include_relative code-snippet/clipboard/clipboard/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/clipboard/clipboard/clipboard.cs %}
+{% highlight c# tabtitle="clipboard" %}
+{% include_relative code-snippet/clipboard/clipboard/local.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="clipboard" %}
 {% include_relative code-snippet/clipboard/clipboard/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -57,16 +59,17 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="autofill" %}
 {% include_relative code-snippet/clipboard/autofill/autofill.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="autofill" %}
 {% include_relative code-snippet/clipboard/autofill/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/clipboard/autofill/autofill.cs %}
+{% highlight c# tabtitle="autofill" %}
+{% include_relative code-snippet/clipboard/autofill/autofill.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="autofill" %}
 {% include_relative code-snippet/clipboard/autofill/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -87,16 +90,17 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="paste" %}
 {% include_relative code-snippet/clipboard/paste/paste.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="paste" %}
 {% include_relative code-snippet/clipboard/paste/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/clipboard/paste/paste.cs %}
+{% highlight c# tabtitle="paste" %}
+{% include_relative code-snippet/clipboard/paste/paste.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="paste" %}
 {% include_relative code-snippet/clipboard/paste/razor %}
 {% endhighlight %}
 {% endtabs %}

@@ -16,16 +16,17 @@ documentation: ug
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/columns/dateformat/dateformat.cs %}
+{% highlight c# tabtitle="dateformat" %}
+{% include_relative code-snippet/columns/dateformat/format.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="dateformat" %}
 {% include_relative code-snippet/columns/dateformat/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/dateformat/dateformat.cs %}
+{% highlight c# tabtitle="dateformat" %}
+{% include_relative code-snippet/columns/dateformat/format.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="dateformat" %}
 {% include_relative code-snippet/columns/dateformat/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -38,16 +39,17 @@ You can hide any particular column in Grid before rendering by defining [`Visibl
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="Visibility" %}
 {% include_relative code-snippet/columns/Visibility/Visibility.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="Visibility" %}
 {% include_relative code-snippet/columns/Visibility/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/Visibility/Visibility.cs %}
+{% highlight c# tabtitle="Visibility" %}
+{% include_relative code-snippet/columns/Visibility/Visibility.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="Visibility" %}
 {% include_relative code-snippet/columns/Visibility/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -60,16 +62,17 @@ The [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofi
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="autofit" %}
 {% include_relative code-snippet/columns/autofit/autofit.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="autofit" %}
 {% include_relative code-snippet/columns/autofit/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/autofit/autofit.cs %}
+{% highlight c# tabtitle="autofit" %}
+{% include_relative code-snippet/columns/autofit/autofit.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="autofit" %}
 {% include_relative code-snippet/columns/autofit/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -84,16 +87,17 @@ Reordering can be done by drag and drop of a particular column header from one i
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="reorder" %}
 {% include_relative code-snippet/columns/reorder/reorder.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="reorder" %}
 {% include_relative code-snippet/columns/reorder/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/reorder/reorder.cs %}
+{% highlight c# tabtitle="reorder" %}
+{% include_relative code-snippet/columns/reorder/reorder.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="reorder" %}
 {% include_relative code-snippet/columns/reorder/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -108,16 +112,17 @@ Grid have option to reorder Columns either by Interaction or by using the **reor
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="reordercols" %}
 {% include_relative code-snippet/columns/reordercols/reordercols.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="reordercols" %}
 {% include_relative code-snippet/columns/reordercols/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/reordercols/reordercols.cs %}
+{% highlight c# tabtitle="reordercols" %}
+{% include_relative code-snippet/columns/reordercols/reordercols.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="reordercols" %}
 {% include_relative code-snippet/columns/reordercols/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -132,16 +137,17 @@ In the below sample, **Ship City** and **Ship Region** column is reordered to la
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/columns/reordercolumns/reordercolumns.cs %}
+{% highlight c# tabtitle="reordercolumns" %}
+{% include_relative code-snippet/columns/reordercolumns/reordercols.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="reordercolumns" %}
 {% include_relative code-snippet/columns/reordercolumns/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/reordercolumns/reordercolumns.cs %}
+{% highlight c# tabtitle="reordercolumns" %}
+{% include_relative code-snippet/columns/reordercolumns/reordercols.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="reordercolumns" %}
 {% include_relative code-snippet/columns/reordercolumns/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -158,16 +164,17 @@ During the reorder action, the grid component triggers the below three events.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="reorderevents" %}
 {% include_relative code-snippet/columns/reorderevents/reorderevents.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="reorderevents" %}
 {% include_relative code-snippet/columns/reorderevents/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/reorderevents/reorderevents.cs %}
+{% highlight c# tabtitle="reorderevents" %}
+{% include_relative code-snippet/columns/reorderevents/reorderevents.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="reorderevents" %}
 {% include_relative code-snippet/columns/reorderevents/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -182,16 +189,17 @@ In the below example, Ship City column is locked and its reordering functionalit
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="lock" %}
 {% include_relative code-snippet/columns/lock/lock.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="lock" %}
 {% include_relative code-snippet/columns/lock/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/lock/lock.cs %}
+{% highlight c# tabtitle="lock" %}
+{% include_relative code-snippet/columns/lock/lock.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="lock" %}
 {% include_relative code-snippet/columns/lock/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -204,16 +212,17 @@ Column width can be resized by clicking and dragging the right edge of the colum
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="resize" %}
 {% include_relative code-snippet/columns/resize/resize.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="resize" %}
 {% include_relative code-snippet/columns/resize/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/resize/resize.cs %}
+{% highlight c# tabtitle="resize" %}
+{% include_relative code-snippet/columns/resize/resize.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="resize" %}
 {% include_relative code-snippet/columns/resize/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -247,16 +256,17 @@ In the following sample, minimum and maximum width are defined for **OrderID**, 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="min" %}
 {% include_relative code-snippet/columns/min/min.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="min" %}
 {% include_relative code-snippet/columns/min/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/min/min.cs %}
+{% highlight c# tabtitle="min" %}
+{% include_relative code-snippet/columns/min/min.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="min" %}
 {% include_relative code-snippet/columns/min/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -271,16 +281,17 @@ In this example, we have disabled resize for Ship City column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="stacked" %}
 {% include_relative code-snippet/columns/stacked/stacked.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="stacked" %}
 {% include_relative code-snippet/columns/stacked/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/stacked/stacked.cs %}
+{% highlight c# tabtitle="stacked" %}
+{% include_relative code-snippet/columns/stacked/stacked.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="stacked" %}
 {% include_relative code-snippet/columns/stacked/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -305,16 +316,17 @@ During the resizing action, the grid component triggers the below three events.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="resizeevents" %}
 {% include_relative code-snippet/columns/resizeevents/resizeevents.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="resizeevents" %}
 {% include_relative code-snippet/columns/resizeevents/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/resizeevents/resizeevents.cs %}
+{% highlight c# tabtitle="resizeevents" %}
+{% include_relative code-snippet/columns/resizeevents/resizeevents.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="resizeevents" %}
 {% include_relative code-snippet/columns/resizeevents/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -327,16 +339,17 @@ The column [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="template" %}
 {% include_relative code-snippet/columns/template/template.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="template" %}
 {% include_relative code-snippet/columns/template/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/template/template.cs %}
+{% highlight c# tabtitle="template" %}
+{% include_relative code-snippet/columns/template/template.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="template" %}
 {% include_relative code-snippet/columns/template/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -353,16 +366,17 @@ In the following code, checkbox is rendered based on **Discontinued** field valu
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
-{% include_relative code-snippet/columns/condition-template/condition-template.cs %}
+{% highlight c# tabtitle="condition-template" %}
+{% include_relative code-snippet/columns/condition-template/template.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="condition-template" %}
 {% include_relative code-snippet/columns/condition-template/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/condition-template/condition-template.cs %}
+{% highlight c# tabtitle="condition-template" %}
+{% include_relative code-snippet/columns/condition-template/template.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="condition-template" %}
 {% include_relative code-snippet/columns/condition-template/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -392,16 +406,17 @@ The column chooser has options to show or hide columns dynamically. It can be en
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="columnchooser" %}
 {% include_relative code-snippet/columns/columnchooser/columnchooser.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="columnchooser" %}
 {% include_relative code-snippet/columns/columnchooser/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/columnchooser/columnchooser.cs %}
+{% highlight c# tabtitle="columnchooser" %}
+{% include_relative code-snippet/columns/columnchooser/columnchooser.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="columnchooser" %}
 {% include_relative code-snippet/columns/columnchooser/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -417,16 +432,17 @@ the **openColumnChooser** method with X and Y axis positions.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="externalbutton" %}
 {% include_relative code-snippet/columns/externalbutton/externalbutton.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="externalbutton" %}
 {% include_relative code-snippet/columns/externalbutton/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/externalbutton/externalbutton.cs %}
+{% highlight c# tabtitle="externalbutton" %}
+{% include_relative code-snippet/columns/externalbutton/externalbutton.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="externalbutton" %}
 {% include_relative code-snippet/columns/externalbutton/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -452,16 +468,17 @@ The default items are displayed in following table.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="columnmenu" %}
 {% include_relative code-snippet/column/columnmenu/columnmenu.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="columnmenu" %}
 {% include_relative code-snippet/column/columnmenu/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/column/columnmenu/columnmenu.cs %}
+{% highlight c# tabtitle="columnmenu" %}
+{% include_relative code-snippet/column/columnmenu/columnmenu.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="columnmenu" %}
 {% include_relative code-snippet/column/columnmenu/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -480,16 +497,17 @@ During the resizing action, the grid component triggers the below two events.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="columnmenuevents" %}
 {% include_relative code-snippet/column/columnmenuevents/columnmenuevents.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="columnmenuevents" %}
 {% include_relative code-snippet/column/columnmenuevents/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/column/columnmenuevents/columnmenuevents.cs %}
+{% highlight c# tabtitle="columnmenuevents" %}
+{% include_relative code-snippet/column/columnmenuevents/columnmenuevents.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="columnmenuevents" %}
 {% include_relative code-snippet/column/columnmenuevents/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -505,16 +523,17 @@ Actions for this customized items can be defined in the [`ColumnMenuClick`](http
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="customcolumnmenu" %}
 {% include_relative code-snippet/columns/customcolumnmenu/customcolumnmenu.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="customcolumnmenu" %}
 {% include_relative code-snippet/columns/customcolumnmenu/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/customcolumnmenu/customcolumnmenu.cs %}
+{% highlight c# tabtitle="customcolumnmenu" %}
+{% include_relative code-snippet/columns/customcolumnmenu/customcolumnmenu.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="customcolumnmenu" %}
 {% include_relative code-snippet/columns/customcolumnmenu/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -529,16 +548,17 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="customizecolumnmenu" %}
 {% include_relative code-snippet/columns/customizecolumnmenu/customizecolumnmenu.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="customizecolumnmenu" %}
 {% include_relative code-snippet/columns/customizecolumnmenu/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/customizecolumnmenu/customizecolumnmenu.cs %}
+{% highlight c# tabtitle="customizecolumnmenu" %}
+{% include_relative code-snippet/columns/customizecolumnmenu/customizecolumnmenu.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="customizecolumnmenu" %}
 {% include_relative code-snippet/columns/customizecolumnmenu/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -553,16 +573,17 @@ In the following demo, employee **Davolio** is doing testing from 9.00 A.M. to 1
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="columnspanning" %}
 {% include_relative code-snippet/columns/columnspanning/columnspanning.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="columnspanning" %}
 {% include_relative code-snippet/columns/columnspanning/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/columnspanning/columnspanning.cs %}
+{% highlight c# tabtitle="columnspanning" %}
+{% include_relative code-snippet/columns/columnspanning/columnspanning.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="columnspanning" %}
 {% include_relative code-snippet/columns/columnspanning/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -578,16 +599,17 @@ The [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="responsivecolumns" %}
 {% include_relative code-snippet/columns/responsivecolumns/responsivecolumns.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="responsivecolumns" %}
 {% include_relative code-snippet/columns/responsivecolumns/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/responsivecolumns/responsivecolumns.cs %}
+{% highlight c# tabtitle="responsivecolumns" %}
+{% include_relative code-snippet/columns/responsivecolumns/responsivecolumns.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="responsivecolumns" %}
 {% include_relative code-snippet/columns/responsivecolumns/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -601,16 +623,17 @@ You can enable or disable grid action for a particular column by setting the [`A
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="controllingactions" %}
 {% include_relative code-snippet/columns/controllingactions/controllingactions.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="controllingactions" %}
 {% include_relative code-snippet/columns/controllingactions/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/controllingactions/controllingactions.cs %}
+{% highlight c# tabtitle="controllingactions" %}
+{% include_relative code-snippet/columns/controllingactions/controllingactions.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="controllingactions" %}
 {% include_relative code-snippet/columns/controllingactions/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -623,16 +646,17 @@ The **valueAccessor** is used to access/manipulate the value of display data. Yo
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="valueaccessor" %}
 {% include_relative code-snippet/columns/valueaccessor/valueaccessor.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="valueaccessor" %}
 {% include_relative code-snippet/columns/valueaccessor/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/valueaccessor/valueaccessor.cs %}
+{% highlight c# tabtitle="valueaccessor" %}
+{% include_relative code-snippet/columns/valueaccessor/valueaccessor.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="valueaccessor" %}
 {% include_relative code-snippet/columns/valueaccessor/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -645,16 +669,17 @@ You can show or hide grid columns dynamically using external buttons by invoking
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="showhide" %}
 {% include_relative code-snippet/columns/showhide/showhide.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="showhide" %}
 {% include_relative code-snippet/columns/showhide/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/showhide/showhide.cs %}
+{% highlight c# tabtitle="showhide" %}
+{% include_relative code-snippet/columns/showhide/showhide.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="showhide" %}
 {% include_relative code-snippet/columns/showhide/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -667,16 +692,17 @@ To render boolean values as checkbox in columns, you need to set [`DisplayAsChec
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight %}
+{% highlight c# tabtitle="booleanascheckbox" %}
 {% include_relative code-snippet/columns/booleanascheckbox/booleanascheckbox.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight cshtml tabtitle="booleanascheckbox" %}
 {% include_relative code-snippet/columns/booleanascheckbox/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight %} {% include_relative code-snippet/columns/booleanascheckbox/booleanascheckbox.cs %}
+{% highlight c# tabtitle="booleanascheckbox" %}
+{% include_relative code-snippet/columns/booleanascheckbox/booleanascheckbox.cs %}
 {% endhighlight %}
-{% highlight %}
+{% highlight razor tabtitle="booleanascheckbox" %}
 {% include_relative code-snippet/columns/booleanascheckbox/razor %}
 {% endhighlight %}
 {% endtabs %}
