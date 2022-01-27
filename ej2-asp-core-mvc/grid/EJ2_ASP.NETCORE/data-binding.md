@@ -22,6 +22,7 @@ It supports the following kinds of data binding method:
 To bind list binding to the grid, you can assign a IEnumerable object to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. The list data source can also be provided as an instance of the `DataManager`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="local" %}
 {% include_relative code-snippet/data-binding/localdata/local.cs %}
@@ -29,7 +30,11 @@ To bind list binding to the grid, you can assign a IEnumerable object to the [`d
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/localdata/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="local" %}
 {% include_relative code-snippet/data-binding/localdata/local.cs %}
 {% endhighlight %}
@@ -48,6 +53,7 @@ To bind list binding to the grid, you can assign a IEnumerable object to the [`d
 To bind remote data to grid component, assign service data as an instance of `DataManager` to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. To interact with remote data source,  provide the endpoint `url`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="remotedata" %}
 {% include_relative code-snippet/data-binding/remotedata/remotedata.cs %}
@@ -55,7 +61,11 @@ To bind remote data to grid component, assign service data as an instance of `Da
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/remotedata/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="remotedata" %}
 {% include_relative code-snippet/data-binding/remotedata/remotedata.cs %}
 {% endhighlight %}
@@ -74,6 +84,7 @@ To bind remote data to grid component, assign service data as an instance of `Da
 [OData](http://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using `OData` service.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="odata" %}
 {% include_relative code-snippet/data-binding/odata/odata.cs %}
@@ -81,7 +92,11 @@ To bind remote data to grid component, assign service data as an instance of `Da
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/odata/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="odata" %}
 {% include_relative code-snippet/data-binding/odata/odata.cs %}
 {% endhighlight %}
@@ -98,6 +113,7 @@ To bind remote data to grid component, assign service data as an instance of `Da
 The ODataV4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [OData documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the `ODataV4Adaptor`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="odataV4" %}
 {% include_relative code-snippet/data-binding/odataV4/odataV4.cs %}
@@ -105,7 +121,11 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/odataV4/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="odataV4" %}
 {% include_relative code-snippet/data-binding/odataV4/odataV4.cs %}
 {% endhighlight %}
@@ -122,13 +142,18 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 `On-Demand` grid actions help you to improve the performance for large data application. To achieve `On-Demand` in the grid, use `UrlAdaptor`. To define `UrlAdaptor` in the grid, specify the data service in `url` and the `AdaptorType` as `UrlAdaptor` like below.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="dataoperations" %}
 {% endhighlight %}
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/dataoperations/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="dataoperations" %}
 {% endhighlight %}
 {% highlight razor tabtitle="razor" %}
@@ -161,6 +186,7 @@ The parameters of DataManager bound to `DataManagerRequest` in the server. You c
 | `PerformSearching` | `Search` the records based on a predicate.  |
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="dataoperation" %}
 {% include_relative code-snippet/data-binding/serversideoperation/dataoperation.cs %}
@@ -168,7 +194,11 @@ The parameters of DataManager bound to `DataManagerRequest` in the server. You c
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/serversideoperation/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="dataoperation" %}
 {% include_relative code-snippet/data-binding/serversideoperation/dataoperation.cs %}
 {% endhighlight %}
@@ -187,6 +217,7 @@ The parameters of DataManager bound to `DataManagerRequest` in the server. You c
 You can use `WebApiAdaptor` to bind grid with Web API created using OData endpoint.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="webapi" %}
 {% include_relative code-snippet/data-binding/webapi/webapi.cs %}
@@ -194,7 +225,11 @@ You can use `WebApiAdaptor` to bind grid with Web API created using OData endpoi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/webapi/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="webapi" %}
 {% include_relative code-snippet/data-binding/webapi/webapi.cs %}
 {% endhighlight %}
@@ -226,6 +261,7 @@ Datasource must be set to `json` property and set `RemoteSaveAdaptor` to the `ad
 You can use the following code example to use `RemoteSaveAdaptor` in Grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="remotesaveadaptor" %}
 {% include_relative code-snippet/data-binding/remotesaveadaptor/remotesaveadaptor.cs %}
@@ -233,7 +269,11 @@ You can use the following code example to use `RemoteSaveAdaptor` in Grid.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/remotesaveadaptor/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="remotesaveadaptor" %}
 {% include_relative code-snippet/data-binding/remotesaveadaptor/remotesaveadaptor.cs %}
 {% endhighlight %}
@@ -250,6 +290,7 @@ You can use the following code example to use `RemoteSaveAdaptor` in Grid.
 You can create your own adaptor by extending the built-in adaptors. The following demonstrates custom adaptor approach and how to add a serial number for the records by overriding the built-in response processing using the `processResponse` method of the `ODataAdaptor`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="customadaptor" %}
 {% include_relative code-snippet/data-binding/customadaptor/customadaptor.cs %}
@@ -257,7 +298,11 @@ You can create your own adaptor by extending the built-in adaptors. The followin
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/customadaptor/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="customadaptor" %}
 {% include_relative code-snippet/data-binding/customadaptor/customadaptor.cs %}
 {% endhighlight %}
@@ -276,6 +321,7 @@ The `WebMethodAdaptor` is used to bind datasource from remote services and code 
 For every operations, an AJAX post will be send to the specified data service.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="webapi" %}
 {% include_relative code-snippet/data-binding/webmethod/webapi.cs %}
@@ -283,7 +329,11 @@ For every operations, an AJAX post will be send to the specified data service.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/webmethod/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="webapi" %}
 {% include_relative code-snippet/data-binding/webmethod/webapi.cs %}
 {% endhighlight %}
@@ -314,6 +364,7 @@ The sample response object should look like below.
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of `e-data-manager` tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="offline" %}
 {% include_relative code-snippet/data-binding/offline/offline.cs %}
@@ -321,7 +372,11 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/offline/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="offline" %}
 {% include_relative code-snippet/data-binding/offline/offline.cs %}
 {% endhighlight %}
@@ -338,6 +393,7 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 To add a custom parameter to the data request, use the `addParams` method of `Query` class. Assign the `Query` object with additional parameters to the grid [`query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Query) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="params" %}
 {% include_relative code-snippet/data-binding/params/params.cs %}
@@ -345,7 +401,11 @@ To add a custom parameter to the data request, use the `addParams` method of `Qu
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/params/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="params" %}
 {% include_relative code-snippet/data-binding/params/params.cs %}
 {% endhighlight %}
@@ -367,6 +427,7 @@ in client-side using the [`actionFailure`](https://help.syncfusion.com/cr/aspnet
 The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event contains the error details returned from the server.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="httperror" %}
 {% include_relative code-snippet/data-binding/httperror/httperror.cs %}
@@ -374,7 +435,11 @@ The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspn
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/httperror/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="httperror" %}
 {% include_relative code-snippet/data-binding/httperror/httperror.cs %}
 {% endhighlight %}
@@ -396,6 +461,7 @@ DataTable represents a table with relational data which has in-built schema to w
 You can bind `DataTable` to the grid by using [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. While binding DataTable like below, grid actions such as `Sorting`, `Filtering`, `Grouping`, `Paging` etc., will handle at client side..
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="datatable" %}
 {% include_relative code-snippet/data-binding/datatable/datatable.cs %}
@@ -403,7 +469,11 @@ You can bind `DataTable` to the grid by using [`dataSource`](https://help.syncfu
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/datatable/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="datatable" %}
 {% include_relative code-snippet/data-binding/datatable/datatable.cs %}
 {% endhighlight %}
@@ -422,6 +492,7 @@ You can bind `DataTable` to the grid by using [`dataSource`](https://help.syncfu
 [`On-Demand grid actions`](#handling-on-demand-grid-actions/) helps you to improve performance for large data application. To perform server side grid actions for DataTable, you need to convert `DataTable` to `IEnumerable` using `Utils.DataTableToJson` method. Thereby in controller action, you need to use `DataOperations` class for performing grid actions and return result as JSON with `result` and `count` pair.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="dataoperation" %}
 {% include_relative code-snippet/data-binding/clientdatatable/dataoperation.cs %}
@@ -429,7 +500,11 @@ You can bind `DataTable` to the grid by using [`dataSource`](https://help.syncfu
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/clientdatatable/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="dataoperation" %}
 {% include_relative code-snippet/data-binding/clientdatatable/dataoperation.cs %}
 {% endhighlight %}
@@ -448,6 +523,7 @@ To perform server side CRUD operations for DataTable, you need to use `InsertUrl
 To pass the data from client side to server side when performing CRUD operations, you need to use `ExpandoObject` as a parameter for inserting and adding actions.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="dataoperation" %}
 {% include_relative code-snippet/data-binding/cruddatatable/dataoperation.cs %}
@@ -455,7 +531,11 @@ To pass the data from client side to server side when performing CRUD operations
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/data-binding/cruddatatable/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="dataoperation" %}
 {% include_relative code-snippet/data-binding/cruddatatable/dataoperation.cs %}
 {% endhighlight %}

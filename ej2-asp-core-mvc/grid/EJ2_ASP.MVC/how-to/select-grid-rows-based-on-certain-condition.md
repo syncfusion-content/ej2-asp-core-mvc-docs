@@ -16,6 +16,7 @@ You can select the specific row in the grid based on a certain condition by usin
 In the below demo, we have selected the grid rows only when **EmployeeID** column value greater than **3**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="databasedselection" %}
 {% include_relative code-snippet/how-to/databasedselection/databasedselection.cs %}
@@ -23,7 +24,11 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/databasedselection/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="databasedselection" %}
 {% include_relative code-snippet/how-to/databasedselection/databasedselection.cs %}
 {% endhighlight %}

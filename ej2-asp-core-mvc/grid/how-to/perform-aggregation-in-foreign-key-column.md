@@ -16,6 +16,7 @@ Default aggregations are not supported in a foreign key column. You can achieve 
 In the following example, The `Employee Name` is a foreign key column and the aggregation for the foreign column was calculated in customAggregateFn.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="aggregate-foreign" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/aggregate-foreign.cs %}
@@ -23,7 +24,11 @@ In the following example, The `Employee Name` is a foreign key column and the ag
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="aggregate-foreign" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}

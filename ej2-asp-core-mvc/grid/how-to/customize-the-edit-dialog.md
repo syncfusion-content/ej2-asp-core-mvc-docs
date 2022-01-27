@@ -16,6 +16,7 @@ You can customize the appearance of the edit dialog in the [`ActionComplete`](ht
 In the below example, we have changed the dialog's header text for editing and adding records.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/custom-dialog/*.cs %}
@@ -23,7 +24,11 @@ In the below example, we have changed the dialog's header text for editing and a
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/custom-dialog/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/custom-dialog/*.cs %}
 {% endhighlight %}

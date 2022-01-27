@@ -16,6 +16,7 @@ You can disable the editing for a particular row by using the [`ActionBegin`](ht
 In the below demo, the rows which are having the value for **ShipCountry** column as Denmark is prevented from editing.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="disable-edit" %}
 {% include_relative code-snippet/how-to/disable-edit/disable-edit.cs %}
@@ -23,7 +24,11 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/disable-edit/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="disable-edit" %}
 {% include_relative code-snippet/how-to/disable-edit/disable-edit.cs %}
 {% endhighlight %}
@@ -38,6 +43,7 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 For batch mode of editing, you can use [`CellEdit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellEdit) event of Grid. In the below demo, the cells which are having the value as Denmark is prevented from editing.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="disable-edit-batch" %}
 {% include_relative code-snippet/how-to/disable-edit-batch/disable-edit-batch.cs %}
@@ -45,7 +51,11 @@ For batch mode of editing, you can use [`CellEdit`](https://help.syncfusion.com/
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/disable-edit-batch/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="disable-edit-batch" %}
 {% include_relative code-snippet/how-to/disable-edit-batch/disable-edit-batch.cs %}
 {% endhighlight %}

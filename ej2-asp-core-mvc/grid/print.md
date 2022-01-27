@@ -14,6 +14,7 @@ documentation: ug
 To print the Grid, use the `print` method from grid instance. The print option can be displayed on the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_Toolbar_System_Object_) by adding the `Print` toolbar item.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="print" %}
 {% include_relative code-snippet/print/print/print.cs %}
@@ -21,7 +22,11 @@ To print the Grid, use the `print` method from grid instance. The print option c
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/print/print/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="print" %}
 {% include_relative code-snippet/print/print/print.cs %}
 {% endhighlight %}
@@ -47,6 +52,7 @@ Some of the print options cannot be configured through JavaScript code. So, you 
 To print the grid from an external button, invoke the `print` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="external-btn" %}
 {% include_relative code-snippet/print/external-btn/external-btn.cs %}
@@ -54,7 +60,11 @@ To print the grid from an external button, invoke the `print` method.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/print/external-btn/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="external-btn" %}
 {% include_relative code-snippet/print/external-btn/external-btn.cs %}
 {% endhighlight %}
@@ -71,6 +81,7 @@ To print the grid from an external button, invoke the `print` method.
 By default, the grid prints all the pages. To print the current page alone, set the [`PrintMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_PrintMode_Syncfusion_EJ2_Grids_PrintMode_) to `CurrentPage`.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="current-page" %}
 {% include_relative code-snippet/print/current-page/current-page.cs %}
@@ -78,7 +89,11 @@ By default, the grid prints all the pages. To print the current page alone, set 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/print/current-page/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="current-page" %}
 {% include_relative code-snippet/print/current-page/current-page.cs %}
 {% endhighlight %}
@@ -101,6 +116,7 @@ By default, the grid will be print the master and expanded child grids alone. yo
 | None     | Prints the master grid alone. |
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="current-page" %}
 {% include_relative code-snippet/print/hierarchyprint/current-page.cs %}
@@ -108,7 +124,11 @@ By default, the grid will be print the master and expanded child grids alone. yo
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/print/hierarchyprint/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="current-page" %}
 {% include_relative code-snippet/print/hierarchyprint/current-page.cs %}
 {% endhighlight %}
@@ -141,6 +161,7 @@ In the printComplete event, We have reversed the state back to the previous stat
 In the below example, we have `CustomerID` as a hidden column in the grid. While printing, we have changed `CustomerID` to visible column and `ShipCity` as hidden column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="show-hide" %}
 {% include_relative code-snippet/print/show-hide-columns/show-hide.cs %}
@@ -148,7 +169,11 @@ In the below example, we have `CustomerID` as a hidden column in the grid. While
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/print/show-hide-columns/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="show-hide" %}
 {% include_relative code-snippet/print/show-hide-columns/show-hide.cs %}
 {% endhighlight %}

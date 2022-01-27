@@ -16,6 +16,7 @@ You can export the filtered data by defining the resulted data in [`dataSource`]
 In the below Pdf exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in [`dataSource`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#datasource) property and pass it to [`PdfExport`](https://ej2.syncfusion.com/documentation/api/grid/#pdfexport) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="export-filtered-data" %}
 {% include_relative code-snippet/how-to/export-filtered-data/export-filtered-data.cs %}
@@ -23,7 +24,11 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/export-filtered-data/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="export-filtered-data" %}
 {% include_relative code-snippet/how-to/export-filtered-data/export-filtered-data.cs %}
 {% endhighlight %}

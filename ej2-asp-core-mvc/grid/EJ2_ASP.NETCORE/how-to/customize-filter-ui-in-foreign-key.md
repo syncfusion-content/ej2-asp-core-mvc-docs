@@ -16,6 +16,7 @@ You can create your own filtering UI by using [`filter`](https://helpsyncfusion.
 In the following example, The **Employee Name** is a foreign key column. DropDownList is rendered using Filter UI.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filter-ui-foreign" %}
 {% include_relative code-snippet/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
@@ -23,7 +24,11 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/filter-ui-foreign/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filter-ui-foreign" %}
 {% include_relative code-snippet/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
 {% endhighlight %}

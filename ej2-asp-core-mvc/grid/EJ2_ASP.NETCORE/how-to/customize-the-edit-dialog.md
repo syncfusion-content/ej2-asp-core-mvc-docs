@@ -20,6 +20,7 @@ Also the locale text for the **Save** and **Cancel** buttons has been changed by
 You can refer the Grid [`Default text`](../global-local/) list for more localization.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/customizedialog/*.cs %}
@@ -27,7 +28,11 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/edit/customizedialog/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/customizedialog/*.cs %}
 {% endhighlight %}

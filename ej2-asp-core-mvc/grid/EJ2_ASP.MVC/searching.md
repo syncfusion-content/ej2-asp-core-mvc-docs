@@ -21,6 +21,7 @@ notequal |Checks for values not equal to the specified value.
 To search grid records from an external button, invoke the [`search`](https://ej2.syncfusion.com/documentation/api/grid/#search) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="initial-search" %}
 {% include_relative code-snippet/search/external-btn/initial-search.cs %}
@@ -28,7 +29,11 @@ To search grid records from an external button, invoke the [`search`](https://ej
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/search/external-btn/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="initial-search" %}
 {% include_relative code-snippet/search/external-btn/initial-search.cs %}
 {% endhighlight %}
@@ -45,6 +50,7 @@ To search grid records from an external button, invoke the [`search`](https://ej
 By default, grid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`Fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Fields) property of [`SearchSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="search-a-column" %}
 {% include_relative code-snippet/search/search-a-column/search-a-column.cs %}
@@ -52,7 +58,11 @@ By default, grid searches all visible columns. You can search specific columns b
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/search/search-a-column/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="search-a-column" %}
 {% include_relative code-snippet/search/search-a-column/search-a-column.cs %}
 {% endhighlight %}
@@ -69,6 +79,7 @@ By default, grid searches all visible columns. You can search specific columns b
 To clear the searched grid records from the external button, set [`Key`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Key) property as **empty** string.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="clear-search" %}
 {% include_relative code-snippet/search/clear-search/clear-search.cs %}
@@ -76,7 +87,11 @@ To clear the searched grid records from the external button, set [`Key`](https:/
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/search/clear-search/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="clear-search" %}
 {% include_relative code-snippet/search/clear-search/clear-search.cs %}
 {% endhighlight %}
@@ -93,6 +108,7 @@ To clear the searched grid records from the external button, set [`Key`](https:/
 You can search the Grid data on each key stroke by binding the `keyup` event for the search input element inside the [`created`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event. Inside the `keyup` handler you can search the Grid by invoking the [`search`](https://ej2.syncfusion.com/javascript/documentation/api/grid/#search) method of the Grid component.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="search-each-key" %}
 {% include_relative code-snippet/search/search-each-key/search-each-key.cs %}
@@ -100,7 +116,11 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/search/search-each-key/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="search-each-key" %}
 {% include_relative code-snippet/search/search-each-key/search-each-key.cs %}
 {% endhighlight %}

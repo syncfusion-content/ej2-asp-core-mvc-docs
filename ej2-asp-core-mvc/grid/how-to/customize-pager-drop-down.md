@@ -14,6 +14,7 @@ documentation: ug
 To customize default values of pager dropdown, you need to define `pageSizes` as array of strings.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="pagerdropdown" %}
 {% include_relative code-snippet/how-to/pagerdropdown/pagerdropdown.cs %}
@@ -21,7 +22,11 @@ To customize default values of pager dropdown, you need to define `pageSizes` as
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/pagerdropdown/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="pagerdropdown" %}
 {% include_relative code-snippet/how-to/pagerdropdown/pagerdropdown.cs %}
 {% endhighlight %}

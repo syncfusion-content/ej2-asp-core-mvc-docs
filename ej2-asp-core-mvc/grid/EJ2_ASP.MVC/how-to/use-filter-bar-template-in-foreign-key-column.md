@@ -16,6 +16,7 @@ You can use the filter bar template in foreign key column by defining the [`Filt
 In the following example, The **Employee Name** is a foreign key column. This column header shows the custom filter bar template and you can select filter value by using the **DropDown** options.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="filterbar-temp-foreign" %}
 {% include_relative code-snippet/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
@@ -23,7 +24,11 @@ In the following example, The **Employee Name** is a foreign key column. This co
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/filterbar-temp-foreign/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="filterbar-temp-foreign" %}
 {% include_relative code-snippet/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}

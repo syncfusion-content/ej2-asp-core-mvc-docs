@@ -17,6 +17,7 @@ In this demo, the [`frozenColumns`](https://help.syncfusion.com/cr/aspnetcore-js
 is set as '3'. Hence, the left two columns and top three rows are frozen.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="freeze-row-column" %}
 {% include_relative code-snippet/scrolling/freeze-row-column/freeze-row-column.cs %}
@@ -24,7 +25,11 @@ is set as '3'. Hence, the left two columns and top three rows are frozen.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/freeze-row-column/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="freeze-row-column" %}
 {% include_relative code-snippet/scrolling/freeze-row-column/freeze-row-column.cs %}
 {% endhighlight %}
@@ -56,6 +61,7 @@ In this demo, the columns with field name **OrderID** and **EmployeeID** is froz
 the [`isFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsFrozen) property of **e-grid-column**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="freeze-column" %}
 {% include_relative code-snippet/scrolling/freeze-column/freeze-column.cs %}
@@ -63,7 +69,11 @@ the [`isFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/freeze-column/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="freeze-column" %}
 {% include_relative code-snippet/scrolling/freeze-column/freeze-column.cs %}
 {% endhighlight %}
@@ -89,6 +99,7 @@ Types of the [`column.freeze`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 In this demo, the **ShipCountry** column is frozen at the left and the **CustomerID** column is frozen at the right side of the content table.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="freeze-row-column" %}
 {% include_relative code-snippet/scrolling/column-level-frozen/freeze-row-column.cs %}
@@ -96,7 +107,11 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/scrolling/column-level-frozen/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="freeze-row-column" %}
 {% include_relative code-snippet/scrolling/column-level-frozen/freeze-row-column.cs %}
 {% endhighlight %}

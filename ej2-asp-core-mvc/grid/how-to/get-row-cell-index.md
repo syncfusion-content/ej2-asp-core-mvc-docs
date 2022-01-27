@@ -14,6 +14,7 @@ documentation: ug
 You can get the specific row and cell index of the grid by using `rowSelected` event of the grid. Here, we can get the row and cell index by using `aria-rowindex`(get row Index from `tr` element) and `aria-colindex`(column index from `td` element) attribute.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="rowcellidx" %}
 {% include_relative code-snippet/how-to/row-cell-index/rowcellidx.cs %}
@@ -21,7 +22,11 @@ You can get the specific row and cell index of the grid by using `rowSelected` e
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/row-cell-index/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="rowcellidx" %}
 {% include_relative code-snippet/how-to/row-cell-index/rowcellidx.cs %}
 {% endhighlight %}

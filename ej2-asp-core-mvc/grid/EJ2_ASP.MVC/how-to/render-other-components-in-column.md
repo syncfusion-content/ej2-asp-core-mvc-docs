@@ -44,6 +44,7 @@ Using the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="grouping-events" %}
 {% include_relative code-snippet/how-to/render-other-comp/grouping-events.cs %}
@@ -51,7 +52,11 @@ Using the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/render-other-comp/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="grouping-events" %}
 {% include_relative code-snippet/how-to/render-other-comp/grouping-events.cs %}
 {% endhighlight %}

@@ -16,6 +16,7 @@ By default the null values are displayed at bottom of the Grid row while perform
 In the below code we have displayed the null date values at bottom of the Grid row while sorting the **OrderDate** column in both ways.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="sort-comparer" %}
 {% include_relative code-snippet/how-to/sort-comparer/sort-comparer.cs %}
@@ -23,7 +24,11 @@ In the below code we have displayed the null date values at bottom of the Grid r
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/sort-comparer/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="sort-comparer" %}
 {% include_relative code-snippet/how-to/sort-comparer/sort-comparer.cs %}
 {% endhighlight %}

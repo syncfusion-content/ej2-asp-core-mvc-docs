@@ -20,6 +20,7 @@ The grid supports two types of selection that can be set by using the [`type`](h
 To perform the multi-selection, press and hold CTRL key and click the desired rows or cells or columns. To select range of rows or cells or columns, press and hold the SHIFT key and click the rows or cells or columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="selection" %}
 {% include_relative code-snippet/selection/selection/selection.cs %}
@@ -27,7 +28,11 @@ To perform the multi-selection, press and hold CTRL key and click the desired ro
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/selection/selection/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="selection" %}
 {% include_relative code-snippet/selection/selection/selection.cs %}
 {% endhighlight %}
@@ -49,6 +54,7 @@ the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.
 * **Both**: Allows you to select rows and cells at the same time.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="selection-mode" %}
 {% include_relative code-snippet/selection/selection-mode/selection-mode.cs %}
@@ -56,7 +62,11 @@ the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/selection/selection-mode/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="selection-mode" %}
 {% include_relative code-snippet/selection/selection-mode/selection-mode.cs %}
 {% endhighlight %}
@@ -79,6 +89,7 @@ the [`cellSelectionMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 * **Box**: Range of cells are selected from the start and end column indexes that includes in between cells of rows within the range.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="cell-selection" %}
 {% include_relative code-snippet/selection/cell-selection/cell-selection.cs %}
@@ -86,7 +97,11 @@ the [`cellSelectionMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/selection/cell-selection/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="cell-selection" %}
 {% include_relative code-snippet/selection/cell-selection/cell-selection.cs %}
 {% endhighlight %}
@@ -108,6 +123,7 @@ Column selection can be done through simple mouse down or arrow keys.
 You can enable column selection by setting the [`selectionSettings.allowColumnSelection`](./api-selectionSettings.html#allowColumnSelection-boolean) property as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="column-selection" %}
 {% include_relative code-snippet/selection/column-selection/column-selection.cs %}
@@ -115,7 +131,11 @@ You can enable column selection by setting the [`selectionSettings.allowColumnSe
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/selection/column-selection/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="column-selection" %}
 {% include_relative code-snippet/selection/column-selection/column-selection.cs %}
 {% endhighlight %}
@@ -134,6 +154,7 @@ Checkbox selection provides an option to select multiple grid records with help 
 To render the checkbox in each grid row, you need to use checkbox column with type as **checkbox** using the  column [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Type) property of **e-grid-column** tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="checkbox" %}
 {% include_relative code-snippet/selection/checkbox/checkbox.cs %}
@@ -141,7 +162,11 @@ To render the checkbox in each grid row, you need to use checkbox column with ty
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/selection/checkbox/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="checkbox" %}
 {% include_relative code-snippet/selection/checkbox/checkbox.cs %}
 {% endhighlight %}
@@ -168,6 +193,7 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 and hold CTRL key and click the desired rows. To select range of rows, press and hold the SHIFT key and click the rows.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="windows" %}
 {% include_relative code-snippet/selection/windowslikeselection/windows.cs %}
@@ -175,7 +201,11 @@ and hold CTRL key and click the desired rows. To select range of rows, press and
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/selection/windowslikeselection/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="windows" %}
 {% include_relative code-snippet/selection/windowslikeselection/windows.cs %}
 {% endhighlight %}
@@ -192,6 +222,7 @@ and hold CTRL key and click the desired rows. To select range of rows, press and
 The Toggle selection allows to perform selection and unselection of the particular row or cell or column. To enable toggle selection, set [`enableToggle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_EnableToggle) property of **e-grid-selectionsettings** as true. If you click on the selected row or cell or column then it will be unselected and vice versa.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="toggleselection" %}
 {% include_relative code-snippet/selection/toggleselection/toggleselection.cs %}
@@ -199,7 +230,11 @@ The Toggle selection allows to perform selection and unselection of the particul
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/selection/toggleselection/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="toggleselection" %}
 {% include_relative code-snippet/selection/toggleselection/toggleselection.cs %}
 {% endhighlight %}
@@ -218,6 +253,7 @@ The Toggle selection allows to perform selection and unselection of the particul
 To select a row at initial rendering, set the [`selectedRowIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SelectedRowIndex) value.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="select-row" %}
 {% include_relative code-snippet/selection/select-row/select-row.cs %}
@@ -225,7 +261,11 @@ To select a row at initial rendering, set the [`selectedRowIndex`](https://help.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/selection/select-row/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="select-row" %}
 {% include_relative code-snippet/selection/select-row/select-row.cs %}
 {% endhighlight %}
@@ -242,6 +282,7 @@ To select a row at initial rendering, set the [`selectedRowIndex`](https://help.
 You can get the selected row indexes by using the **getSelectedRowIndexes** method.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="selected-row-index" %}
 {% include_relative code-snippet/selection/selected-row-index/selected-row-index.cs %}
@@ -249,7 +290,11 @@ You can get the selected row indexes by using the **getSelectedRowIndexes** meth
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/selection/selected-row-index/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="selected-row-index" %}
 {% include_relative code-snippet/selection/selected-row-index/selected-row-index.cs %}
 {% endhighlight %}
@@ -278,6 +323,7 @@ The following screenshot represents a grid touch selection in the device.
 You can select multiple rows by clicking on rows one by one. This will not deselect the previously selected rows. To deselect the previously selected row, you can click on the  selected row. You can enable this behavior by using [`enableSimpleMultiRowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_EnableSimpleMultiRowSelection) property of **e-grid-selectionsettings** tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="multiselection" %}
 {% include_relative code-snippet/selection/simplemultiselect/multiselection.cs %}
@@ -285,7 +331,11 @@ You can select multiple rows by clicking on rows one by one. This will not desel
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/selection/simplemultiselect/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="multiselection" %}
 {% include_relative code-snippet/selection/simplemultiselect/multiselection.cs %}
 {% endhighlight %}

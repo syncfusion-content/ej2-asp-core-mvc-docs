@@ -19,6 +19,7 @@ State persistence stores grid’s model object in the local storage when the [`e
 The grid does not maintain the query params after page load event when the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) is set to true. This is because the grid refreshes its query params for every page load. You can maintain the custom query params by resetting the **addParams** method in [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="state-persist" %}
 {% include_relative code-snippet/state-persist/state-persist/state-persist.cs %}
@@ -26,7 +27,11 @@ The grid does not maintain the query params after page load event when the [`ena
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/state-persist/state-persist/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="state-persist" %}
 {% include_relative code-snippet/state-persist/state-persist/state-persist.cs %}
 {% endhighlight %}
@@ -62,6 +67,7 @@ When the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 You can achieve this by destroying the grid after disabling the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) property and clearing the local storage data, as shown in the sample below.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="initial-grid" %}
 {% include_relative code-snippet/state-persist/initial-grid/initial-grid.cs %}
@@ -69,7 +75,11 @@ You can achieve this by destroying the grid after disabling the [`enablePersiste
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/state-persist/initial-grid/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="initial-grid" %}
 {% include_relative code-snippet/state-persist/initial-grid/initial-grid.cs %}
 {% endhighlight %}
@@ -86,6 +96,7 @@ You can achieve this by destroying the grid after disabling the [`enablePersiste
 The Grid columns can be persisted when the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) property is set to true. If you want to add the new columns with the existing persist state, you can use the Grid inbuilt method such as `column.push` and call the `refreshColumns()` method for UI changes. Please refer to the following sample for more information.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="column-add" %}
 {% include_relative code-snippet/state-persist/column-add/column-add.cs %}
@@ -93,7 +104,11 @@ The Grid columns can be persisted when the [enablePersistence](https://help.sync
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/state-persist/column-add/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="column-add" %}
 {% include_relative code-snippet/state-persist/column-add/column-add.cs %}
 {% endhighlight %}
@@ -114,6 +129,7 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 >**Note:** When the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) property is set to true, the Grid properties such as column template, column formatter, header text, and value accessor will not persist.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="column-prevent" %}
 {% include_relative code-snippet/state-persist/column-prevent/column-prevent.cs %}
@@ -121,7 +137,11 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/state-persist/column-prevent/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="column-prevent" %}
 {% include_relative code-snippet/state-persist/column-prevent/column-prevent.cs %}
 {% endhighlight %}
@@ -140,6 +160,7 @@ By default, the Grid properties such as column template, header text, header tem
 If you wish to restore all these column properties, then you can achieve it by cloning the grid’s columns property using JavaScript Object’s assign method and storing this along with the persist data manually. While restoring the settings, this column object must be assigned to the grid’s columns property to restore the column settings as demonstrated in the following sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="column-persist" %}
 {% include_relative code-snippet/state-persist/column-persist/column-persist.cs %}
@@ -147,7 +168,11 @@ If you wish to restore all these column properties, then you can achieve it by c
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/state-persist/column-persist/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="column-persist" %}
 {% include_relative code-snippet/state-persist/column-persist/column-persist.cs %}
 {% endhighlight %}

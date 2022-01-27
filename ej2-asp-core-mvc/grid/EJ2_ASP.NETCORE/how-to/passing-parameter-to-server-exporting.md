@@ -16,6 +16,7 @@ You can pass the additional parameter in the [`query`](https://help.syncfusion.c
 In the below example, we have passed **recordcount** as **12** using **addParams** method.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="additional-parameter" %}
 {% include_relative code-snippet/how-to/passing-params-exporting/additional-parameter.cs %}
@@ -23,7 +24,11 @@ In the below example, we have passed **recordcount** as **12** using **addParams
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/passing-params-exporting/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="additional-parameter" %}
 {% include_relative code-snippet/how-to/passing-params-exporting/additional-parameter.cs %}
 {% endhighlight %}

@@ -28,6 +28,7 @@ documentation: ug
 `NextPage` | Go to the next page.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="contextmenu" %}
 {% include_relative code-snippet/context-menu/contextmenu/contextmenu.cs %}
@@ -35,7 +36,11 @@ documentation: ug
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/context-menu/contextmenu/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="contextmenu" %}
 {% include_relative code-snippet/context-menu/contextmenu/contextmenu.cs %}
 {% endhighlight %}
@@ -54,6 +59,7 @@ The custom context menu items can be added by defining the [`contextMenuItems`](
 Actions for this customized items can be defined in the [`contextMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="customcontextmenu" %}
 {% include_relative code-snippet/context-menu/customcontextmenu/customcontextmenu.cs %}
@@ -61,7 +67,11 @@ Actions for this customized items can be defined in the [`contextMenuClick`](htt
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/context-menu/customcontextmenu/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="customcontextmenu" %}
 {% include_relative code-snippet/context-menu/customcontextmenu/customcontextmenu.cs %}
 {% endhighlight %}

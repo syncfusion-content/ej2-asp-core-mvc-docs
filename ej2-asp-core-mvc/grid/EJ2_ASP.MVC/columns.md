@@ -15,6 +15,7 @@ documentation: ug
 { type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/1996 12:00:00 AM
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="format" %}
 {% include_relative code-snippet/columns/dateformat/format.cs %}
@@ -22,7 +23,11 @@ documentation: ug
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/dateformat/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="format" %}
 {% include_relative code-snippet/columns/dateformat/format.cs %}
 {% endhighlight %}
@@ -39,6 +44,7 @@ documentation: ug
 You can hide any particular column in Grid before rendering by defining [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Visible) property as false. In the below sample **ShipCity** column is defined as visible false.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="Visibility" %}
 {% include_relative code-snippet/columns/Visibility/Visibility.cs %}
@@ -46,7 +52,11 @@ You can hide any particular column in Grid before rendering by defining [`Visibl
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/Visibility/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="Visibility" %}
 {% include_relative code-snippet/columns/Visibility/Visibility.cs %}
 {% endhighlight %}
@@ -63,6 +73,7 @@ You can hide any particular column in Grid before rendering by defining [`Visibl
 The [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method resizes the column to fit the widest cell's content without wrapping. You can autofit a specific column at initial rendering by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method in [`DataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="autofit" %}
 {% include_relative code-snippet/columns/autofit/autofit.cs %}
@@ -70,7 +81,11 @@ The [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/autofit/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="autofit" %}
 {% include_relative code-snippet/columns/autofit/autofit.cs %}
 {% endhighlight %}
@@ -89,6 +104,7 @@ The [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofi
 Reordering can be done by drag and drop of a particular column header from one index to another index within the grid. To enable reordering, set the [`AllowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowReordering) to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="reorder" %}
 {% include_relative code-snippet/columns/reorder/reorder.cs %}
@@ -96,7 +112,11 @@ Reordering can be done by drag and drop of a particular column header from one i
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/reorder/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="reorder" %}
 {% include_relative code-snippet/columns/reorder/reorder.cs %}
 {% endhighlight %}
@@ -115,6 +135,7 @@ Reordering can be done by drag and drop of a particular column header from one i
 Grid have option to reorder Columns either by Interaction or by using the **reorderColumns** method. In the below sample, **Name** column is reordered to last column position by using the method.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="reordercols" %}
 {% include_relative code-snippet/columns/reordercols/reordercols.cs %}
@@ -122,7 +143,11 @@ Grid have option to reorder Columns either by Interaction or by using the **reor
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/reordercols/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="reordercols" %}
 {% include_relative code-snippet/columns/reordercols/reordercols.cs %}
 {% endhighlight %}
@@ -141,6 +166,7 @@ User can reorder a single column at a time by Interaction. Sometimes we need to 
 In the below sample, **Ship City** and **Ship Region** column is reordered to last column position.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="reordercols" %}
 {% include_relative code-snippet/columns/reordercolumns/reordercols.cs %}
@@ -148,7 +174,11 @@ In the below sample, **Ship City** and **Ship Region** column is reordered to la
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/reordercolumns/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="reordercols" %}
 {% include_relative code-snippet/columns/reordercolumns/reordercols.cs %}
 {% endhighlight %}
@@ -169,6 +199,7 @@ During the reorder action, the grid component triggers the below three events.
 3. The [`ColumnDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDrop) event triggers when a column header element is dropped on the target column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="reorderevents" %}
 {% include_relative code-snippet/columns/reorderevents/reorderevents.cs %}
@@ -176,7 +207,11 @@ During the reorder action, the grid component triggers the below three events.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/reorderevents/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="reorderevents" %}
 {% include_relative code-snippet/columns/reorderevents/reorderevents.cs %}
 {% endhighlight %}
@@ -195,6 +230,7 @@ You can lock columns by using [`LockColumn`](https://help.syncfusion.com/cr/aspn
 In the below example, Ship City column is locked and its reordering functionality is disabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="lock" %}
 {% include_relative code-snippet/columns/lock/lock.cs %}
@@ -202,7 +238,11 @@ In the below example, Ship City column is locked and its reordering functionalit
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/lock/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="lock" %}
 {% include_relative code-snippet/columns/lock/lock.cs %}
 {% endhighlight %}
@@ -219,6 +259,7 @@ In the below example, Ship City column is locked and its reordering functionalit
 Column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To enable column resize, set the [`AllowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowResizing) property to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="resize" %}
 {% include_relative code-snippet/columns/resize/resize.cs %}
@@ -226,7 +267,11 @@ Column width can be resized by clicking and dragging the right edge of the colum
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/resize/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="resize" %}
 {% include_relative code-snippet/columns/resize/resize.cs %}
 {% endhighlight %}
@@ -264,6 +309,7 @@ Column resize can be restricted between minimum and maximum width by defining th
 In the following sample, minimum and maximum width are defined for **OrderID**, **Ship Name**, and **Ship Country** columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="min" %}
 {% include_relative code-snippet/columns/min/min.cs %}
@@ -271,7 +317,11 @@ In the following sample, minimum and maximum width are defined for **OrderID**, 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/min/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="min" %}
 {% include_relative code-snippet/columns/min/min.cs %}
 {% endhighlight %}
@@ -290,6 +340,7 @@ Stacked columns can be resized by clicking and dragging the right edge of the st
 In this example, we have disabled resize for Ship City column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="stacked" %}
 {% include_relative code-snippet/columns/stacked/stacked.cs %}
@@ -297,7 +348,11 @@ In this example, we have disabled resize for Ship City column.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/stacked/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="stacked" %}
 {% include_relative code-snippet/columns/stacked/stacked.cs %}
 {% endhighlight %}
@@ -326,6 +381,7 @@ During the resizing action, the grid component triggers the below three events.
 3. The [`ResizeStop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ResizeStop) event triggers when column resize ends.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="resizeevents" %}
 {% include_relative code-snippet/columns/resizeevents/resizeevents.cs %}
@@ -333,7 +389,11 @@ During the resizing action, the grid component triggers the below three events.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/resizeevents/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="resizeevents" %}
 {% include_relative code-snippet/columns/resizeevents/resizeevents.cs %}
 {% endhighlight %}
@@ -350,6 +410,7 @@ During the resizing action, the grid component triggers the below three events.
 The column [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Template) has options to display custom element instead of a field value in the column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="template" %}
 {% include_relative code-snippet/columns/template/template.cs %}
@@ -357,7 +418,11 @@ The column [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/template/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="template" %}
 {% include_relative code-snippet/columns/template/template.cs %}
 {% endhighlight %}
@@ -378,6 +443,7 @@ You can render the template elements based on condition.
 In the following code, checkbox is rendered based on **Discontinued** field value.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="template" %}
 {% include_relative code-snippet/columns/condition-template/template.cs %}
@@ -385,7 +451,11 @@ In the following code, checkbox is rendered based on **Discontinued** field valu
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/condition-template/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="template" %}
 {% include_relative code-snippet/columns/condition-template/template.cs %}
 {% endhighlight %}
@@ -419,6 +489,7 @@ The column chooser has options to show or hide columns dynamically. It can be en
 [`ShowColumnChooser`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="columnchooser" %}
 {% include_relative code-snippet/columns/columnchooser/columnchooser.cs %}
@@ -426,7 +497,11 @@ The column chooser has options to show or hide columns dynamically. It can be en
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/columnchooser/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="columnchooser" %}
 {% include_relative code-snippet/columns/columnchooser/columnchooser.cs %}
 {% endhighlight %}
@@ -446,6 +521,7 @@ The Column chooser can be displayed on a page through external button by invokin
 the **openColumnChooser** method with X and Y axis positions.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="externalbutton" %}
 {% include_relative code-snippet/columns/externalbutton/externalbutton.cs %}
@@ -453,7 +529,11 @@ the **openColumnChooser** method with X and Y axis positions.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/externalbutton/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="externalbutton" %}
 {% include_relative code-snippet/columns/externalbutton/externalbutton.cs %}
 {% endhighlight %}
@@ -483,6 +563,7 @@ The default items are displayed in following table.
 | `Filter` | Show the filter option as given in `FilterSettings.Type` |
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="columnmenu" %}
 {% include_relative code-snippet/column/columnmenu/columnmenu.cs %}
@@ -490,7 +571,11 @@ The default items are displayed in following table.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/column/columnmenu/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="columnmenu" %}
 {% include_relative code-snippet/column/columnmenu/columnmenu.cs %}
 {% endhighlight %}
@@ -513,6 +598,7 @@ During the resizing action, the grid component triggers the below two events.
 2. The [`ColumnMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuClick) event triggers when the user clicks the column menu of the grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="columnmenuevents" %}
 {% include_relative code-snippet/column/columnmenuevents/columnmenuevents.cs %}
@@ -520,7 +606,11 @@ During the resizing action, the grid component triggers the below two events.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/column/columnmenuevents/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="columnmenuevents" %}
 {% include_relative code-snippet/column/columnmenuevents/columnmenuevents.cs %}
 {% endhighlight %}
@@ -540,6 +630,7 @@ the ColumnMenuItemModel.
 Actions for this customized items can be defined in the [`ColumnMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuClick) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="customcolumnmenu" %}
 {% include_relative code-snippet/columns/customcolumnmenu/customcolumnmenu.cs %}
@@ -547,7 +638,11 @@ Actions for this customized items can be defined in the [`ColumnMenuClick`](http
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/customcolumnmenu/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="customcolumnmenu" %}
 {% include_relative code-snippet/columns/customcolumnmenu/customcolumnmenu.cs %}
 {% endhighlight %}
@@ -566,6 +661,7 @@ Sometimes, you have a scenario that to hide an item from column menu for particu
 The following sample, **Filter** item was hidden in column menu when opens for the **OrderID** column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="customizecolumnmenu" %}
 {% include_relative code-snippet/columns/customizecolumnmenu/customizecolumnmenu.cs %}
@@ -573,7 +669,11 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/customizecolumnmenu/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="customizecolumnmenu" %}
 {% include_relative code-snippet/columns/customizecolumnmenu/customizecolumnmenu.cs %}
 {% endhighlight %}
@@ -592,6 +692,7 @@ The grid has option to span the adjacent cells. You need to define the **colSpan
 In the following demo, employee **Davolio** is doing testing from 9.00 A.M. to 10.00 A.M. so that the cells have been spanned.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="columnspanning" %}
 {% include_relative code-snippet/columns/columnspanning/columnspanning.cs %}
@@ -599,7 +700,11 @@ In the following demo, employee **Davolio** is doing testing from 9.00 A.M. to 1
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/columnspanning/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="columnspanning" %}
 {% include_relative code-snippet/columns/columnspanning/columnspanning.cs %}
 {% endhighlight %}
@@ -619,6 +724,7 @@ The [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 [Media Queries]( http://cssmediaqueries.com/what-are-css-media-queries.html ).In the below sample, for **OrderID** column, [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HideAtMedia) property value is set as **(min-width: 700px)** so that **OrderID** column will gets hidden when the browser screen width is lessthan 700px.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="responsivecolumns" %}
 {% include_relative code-snippet/columns/responsivecolumns/responsivecolumns.cs %}
@@ -626,7 +732,11 @@ The [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/responsivecolumns/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="responsivecolumns" %}
 {% include_relative code-snippet/columns/responsivecolumns/responsivecolumns.cs %}
 {% endhighlight %}
@@ -644,6 +754,7 @@ You can enable or disable grid action for a particular column by setting the [`A
 [`AllowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowGrouping), [`AllowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing),[`AllowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowReordering), and [`AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowSorting) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="controllingactions" %}
 {% include_relative code-snippet/columns/controllingactions/controllingactions.cs %}
@@ -651,7 +762,11 @@ You can enable or disable grid action for a particular column by setting the [`A
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/controllingactions/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="controllingactions" %}
 {% include_relative code-snippet/columns/controllingactions/controllingactions.cs %}
 {% endhighlight %}
@@ -668,6 +783,7 @@ You can enable or disable grid action for a particular column by setting the [`A
 The **valueAccessor** is used to access/manipulate the value of display data. You can achieve custom value formatting by using the valueAccessor.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="valueaccessor" %}
 {% include_relative code-snippet/columns/valueaccessor/valueaccessor.cs %}
@@ -675,7 +791,11 @@ The **valueAccessor** is used to access/manipulate the value of display data. Yo
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/valueaccessor/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="valueaccessor" %}
 {% include_relative code-snippet/columns/valueaccessor/valueaccessor.cs %}
 {% endhighlight %}
@@ -692,6 +812,7 @@ The **valueAccessor** is used to access/manipulate the value of display data. Yo
 You can show or hide grid columns dynamically using external buttons by invoking the **showColumns** or **hideColumns** method.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="showhide" %}
 {% include_relative code-snippet/columns/showhide/showhide.cs %}
@@ -699,7 +820,11 @@ You can show or hide grid columns dynamically using external buttons by invoking
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/showhide/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="showhide" %}
 {% include_relative code-snippet/columns/showhide/showhide.cs %}
 {% endhighlight %}
@@ -716,6 +841,7 @@ You can show or hide grid columns dynamically using external buttons by invoking
 To render boolean values as checkbox in columns, you need to set [`DisplayAsCheckBox`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_DisplayAsCheckBox) property as **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="booleanascheckbox" %}
 {% include_relative code-snippet/columns/booleanascheckbox/booleanascheckbox.cs %}
@@ -723,7 +849,11 @@ To render boolean values as checkbox in columns, you need to set [`DisplayAsChec
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/booleanascheckbox/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="booleanascheckbox" %}
 {% include_relative code-snippet/columns/booleanascheckbox/booleanascheckbox.cs %}
 {% endhighlight %}

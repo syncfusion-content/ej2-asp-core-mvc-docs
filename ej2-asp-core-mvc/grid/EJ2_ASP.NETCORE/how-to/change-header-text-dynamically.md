@@ -36,6 +36,7 @@ grid.refreshHeader();
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="column-header-text" %}
 {% include_relative code-snippet/how-to/column-header-text/column-header-text.cs %}
@@ -43,7 +44,11 @@ grid.refreshHeader();
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/column-header-text/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="column-header-text" %}
 {% include_relative code-snippet/how-to/column-header-text/column-header-text.cs %}
 {% endhighlight %}

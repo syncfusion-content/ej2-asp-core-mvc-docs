@@ -19,6 +19,7 @@ The [`RowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 the template string or HTML element ID.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="row-template" %}
 {% include_relative code-snippet/row/row-template/row-template.cs %}
@@ -26,7 +27,11 @@ the template string or HTML element ID.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/row/row-template/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="row-template" %}
 {% include_relative code-snippet/row/row-template/row-template.cs %}
 {% endhighlight %}
@@ -46,6 +51,7 @@ The detail template provides additional information about a particular row by ex
 the template string or HTML element ID.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="detail-temp" %}
 {% include_relative code-snippet/row/detail-temp/detail-temp.cs %}
@@ -53,7 +59,11 @@ the template string or HTML element ID.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/row/detail-temp/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="detail-temp" %}
 {% include_relative code-snippet/row/detail-temp/detail-temp.cs %}
 {% endhighlight %}
@@ -73,6 +83,7 @@ component in the [`DetailDataBound`](https://help.syncfusion.com/cr/aspnetcore-j
 For example, to render grid inside the detail row, place an HTML div element as the [`DetailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) and render the DIV element as grid component in the [`DetailDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="custom-component" %}
 {% include_relative code-snippet/row/custom-component/custom-component.cs %}
@@ -80,7 +91,11 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/row/custom-component/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="custom-component" %}
 {% include_relative code-snippet/row/custom-component/custom-component.cs %}
 {% endhighlight %}
@@ -97,6 +112,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 By default, detail rows render in collapsed state. You can expand a detail row by invoking the **expand** method using the external button.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="expand-external" %}
 {% include_relative code-snippet/row/expand-external/expand-external.cs %}
@@ -104,7 +120,11 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/row/expand-external/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="expand-external" %}
 {% include_relative code-snippet/row/expand-external/expand-external.cs %}
 {% endhighlight %}
@@ -126,6 +146,7 @@ The target component where the grid rows are to be dropped can be set by using
 the **TargetID**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="drag-drop" %}
 {% include_relative code-snippet/row/drag-drop/drag-drop.cs %}
@@ -133,7 +154,11 @@ the **TargetID**.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/row/drag-drop/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="drag-drop" %}
 {% include_relative code-snippet/row/drag-drop/drag-drop.cs %}
 {% endhighlight %}
@@ -154,6 +179,7 @@ For multiple row selection, the [`Type`](https://help.syncfusion.com/cr/aspnetco
 The grid row drag and drop allows you to drag and drop grid rows on the same grid using drag icon. To enable row drag and drop, set the [`AllowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowRowDragAndDrop) to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="drag-drop-same-grid" %}
 {% include_relative code-snippet/row/drag-drop-same-grid/drag-drop-same-grid.cs %}
@@ -161,7 +187,11 @@ The grid row drag and drop allows you to drag and drop grid rows on the same gri
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/row/drag-drop-same-grid/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="drag-drop-same-grid" %}
 {% include_relative code-snippet/row/drag-drop-same-grid/drag-drop-same-grid.cs %}
 {% endhighlight %}
@@ -185,6 +215,7 @@ You can customize the appearance of a row by using the [`RowDataBound`](https://
 The [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event triggers for every row. In the event handler, you can get the **RowDataBoundEventArgs** that contains details of the row.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="custom-rows" %}
 {% include_relative code-snippet/row/custom-rows/custom-rows.cs %}
@@ -192,7 +223,11 @@ The [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/row/custom-rows/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="custom-rows" %}
 {% include_relative code-snippet/row/custom-rows/custom-rows.cs %}
 {% endhighlight %}
@@ -217,6 +252,7 @@ You can change the grid's alternative rows' background color by overriding the *
 Please refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="style-alt-row" %}
 {% include_relative code-snippet/row/style-alt-row/style-alt-row.cs %}
@@ -224,7 +260,11 @@ Please refer to the following example.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/row/style-alt-row/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="style-alt-row" %}
 {% include_relative code-snippet/row/style-alt-row/style-alt-row.cs %}
 {% endhighlight %}
@@ -244,6 +284,7 @@ is used to change the row height of entire grid rows.
 In the below example, the [`RowHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) is set as 60px.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="row-height" %}
 {% include_relative code-snippet/row/row-height/row-height.cs %}
@@ -251,7 +292,11 @@ In the below example, the [`RowHeight`](https://help.syncfusion.com/cr/aspnetcor
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/row/row-height/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="row-height" %}
 {% include_relative code-snippet/row/row-height/row-height.cs %}
 {% endhighlight %}
@@ -271,6 +316,7 @@ event by setting the [`RowHeight`](https://help.syncfusion.com/cr/aspnetcore-js2
 In the below example, the row height for the row with OrderID as '10249' is set as '90px' using the [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="rowheight-particular" %}
 {% include_relative code-snippet/row/rowheight-particular/rowheight-particular.cs %}
@@ -278,7 +324,11 @@ In the below example, the row height for the row with OrderID as '10249' is set 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/row/rowheight-particular/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="rowheight-particular" %}
 {% include_relative code-snippet/row/rowheight-particular/rowheight-particular.cs %}
 {% endhighlight %}

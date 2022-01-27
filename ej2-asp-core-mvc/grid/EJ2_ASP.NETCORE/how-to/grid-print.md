@@ -14,6 +14,7 @@ documentation: ug
 You can add your title in the header through an [`beforePrint`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Grids.Grid~beforePrint.html) event. With the help of this event you can add your title element as you want.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="titleprint" %}
 {% include_relative code-snippet/how-to/titleprint/titleprint.cs %}
@@ -21,7 +22,11 @@ You can add your title in the header through an [`beforePrint`](https://help.syn
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/titleprint/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="titleprint" %}
 {% include_relative code-snippet/how-to/titleprint/titleprint.cs %}
 {% endhighlight %}

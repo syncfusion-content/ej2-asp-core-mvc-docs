@@ -16,6 +16,7 @@ You can export the selected records data by passing it to `exportProperties.data
 In the below exporting demo, We can get the selected records using `getSelectedRecords` method and pass the selected data to `PdfExport` or `excelExport` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="selected-data" %}
 {% include_relative code-snippet/how-to/export-selected-data/selected-data.cs %}
@@ -23,7 +24,11 @@ In the below exporting demo, We can get the selected records using `getSelectedR
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/export-selected-data/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="selected-data" %}
 {% include_relative code-snippet/how-to/export-selected-data/selected-data.cs %}
 {% endhighlight %}

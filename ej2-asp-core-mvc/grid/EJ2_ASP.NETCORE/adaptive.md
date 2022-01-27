@@ -18,6 +18,7 @@ The Grid user interface (UI) was redesigned to provide an optimal viewing experi
 When we enable the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableAdaptiveUI) property, the grid will render the filter, sort, and edit dialogs in full screen for a better user experience. This behavior is demonstrated in the below demo.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="default" %}
 {% include_relative code-snippet/adaptive/default.cs %}
@@ -25,7 +26,11 @@ When we enable the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcor
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/adaptive/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="default" %}
 {% include_relative code-snippet/adaptive/default.cs %}
 {% endhighlight %}
@@ -42,6 +47,7 @@ When we enable the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcor
 The grid will render the row elements in vertical order while setting the [`rowRenderingMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowRenderingMode) property value as **Vertical**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="default" %}
 {% include_relative code-snippet/vertical-rendering/default.cs %}
@@ -49,7 +55,11 @@ The grid will render the row elements in vertical order while setting the [`rowR
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/vertical-rendering/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="default" %}
 {% include_relative code-snippet/vertical-rendering/default.cs %}
 {% endhighlight %}

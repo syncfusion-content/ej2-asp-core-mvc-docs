@@ -18,6 +18,7 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://help
 >* This feature uses the primary key value for data comparison. So, you need to provide the [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="immutable" %}
 {% include_relative code-snippet/immutable-mode/immutable.cs %}
@@ -25,7 +26,11 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://help
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/immutable-mode/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="immutable" %}
 {% include_relative code-snippet/immutable-mode/immutable.cs %}
 {% endhighlight %}

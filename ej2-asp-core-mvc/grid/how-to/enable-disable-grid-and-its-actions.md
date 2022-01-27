@@ -54,6 +54,7 @@ Add/Remove the custom CSS class to the Grid in the click event handler of Button
 In the below demo, the button click will enable/disable the Grid and its actions.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="disablegrid" %}
 {% include_relative code-snippet/how-to/disablegrid/disablegrid.cs %}
@@ -61,7 +62,11 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/disablegrid/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="disablegrid" %}
 {% include_relative code-snippet/how-to/disablegrid/disablegrid.cs %}
 {% endhighlight %}

@@ -14,6 +14,7 @@ documentation: ug
 The following example shows how to set Complex field for datasource having Array Of Objects.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="complexarray" %}
 {% include_relative code-snippet/columns/complexarray/complexarray.cs %}
@@ -21,7 +22,11 @@ The following example shows how to set Complex field for datasource having Array
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/columns/complexarray/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="complexarray" %}
 {% include_relative code-snippet/columns/complexarray/complexarray.cs %}
 {% endhighlight %}

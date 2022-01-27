@@ -17,6 +17,7 @@ To sort a column, click the column header.
 To enable sorting in the Grid, set the [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) to true. Sorting options can be configured through the [`e-grid-sortsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SortSettings) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="sorting" %}
 {% include_relative code-snippet/sorting/sorting/sorting.cs %}
@@ -24,7 +25,11 @@ To enable sorting in the Grid, set the [`allowSorting`](https://help.syncfusion.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/sorting/sorting/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="sorting" %}
 {% include_relative code-snippet/sorting/sorting/sorting.cs %}
 {% endhighlight %}
@@ -46,6 +51,7 @@ To sort at initial rendering, set the **field** and
 **direction** in [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html#Syncfusion_EJ2_Grids_GridSortSettings_Columns) property of **e-grid-sortsettings** tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="initial-sort" %}
 {% include_relative code-snippet/sorting/initial-sort/initial-sort.cs %}
@@ -53,7 +59,11 @@ To sort at initial rendering, set the **field** and
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/sorting/initial-sort/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="initial-sort" %}
 {% include_relative code-snippet/sorting/initial-sort/initial-sort.cs %}
 {% endhighlight %}
@@ -75,6 +85,7 @@ To clear sorting for a particular column, press the "Shift + mouse left click".
 > Set [`allowMultiSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowMultiSorting) property as **false** to disable multi-column sorting.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="multi-column-sort" %}
 {% include_relative code-snippet/sorting/multi-column-sort/multi-column-sort.cs %}
@@ -82,7 +93,11 @@ To clear sorting for a particular column, press the "Shift + mouse left click".
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/sorting/multi-column-sort/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="multi-column-sort" %}
 {% include_relative code-snippet/sorting/multi-column-sort/multi-column-sort.cs %}
 {% endhighlight %}
@@ -109,6 +124,7 @@ For remote data in Grid, sorting will be performed based on the [`foreignKeyFiel
 The following code example describes the handling of sorting operation at the server side.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="foreign-sort" %}
 {% include_relative code-snippet/sorting/foreign-sort/foreign-sort.cs %}
@@ -116,7 +132,11 @@ The following code example describes the handling of sorting operation at the se
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/sorting/foreign-sort/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="foreign-sort" %}
 {% include_relative code-snippet/sorting/foreign-sort/foreign-sort.cs %}
 {% endhighlight %}
@@ -133,6 +153,7 @@ The following code example describes the handling of sorting operation at the se
 During the sort action, the grid component triggers two events. The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event triggers before the sort action starts, and the [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event triggers after the sort action is completed. Using these events you can perform the needed actions.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="sort-event" %}
 {% include_relative code-snippet/sorting/sort-event/sort-event.cs %}
@@ -140,7 +161,11 @@ During the sort action, the grid component triggers two events. The [`actionBegi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/sorting/sort-event/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="sort-event" %}
 {% include_relative code-snippet/sorting/sort-event/sort-event.cs %}
 {% endhighlight %}

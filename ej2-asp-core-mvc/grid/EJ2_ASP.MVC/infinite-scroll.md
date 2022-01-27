@@ -18,6 +18,7 @@ To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 > * In this feature, Grid will not make a new data request when you visit the same page again.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="infinite-scroll-normal" %}
 {% include_relative code-snippet/infinite-scroll-normal/infinite-scroll-normal.cs %}
@@ -25,7 +26,11 @@ To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/infinite-scroll-normal/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="infinite-scroll-normal" %}
 {% include_relative code-snippet/infinite-scroll-normal/infinite-scroll-normal.cs %}
 {% endhighlight %}
@@ -44,6 +49,7 @@ You can define the initial loading pages count by using `infiniteScrollSettings.
 In the below demo, we have changed this property value to load five page records instead of three.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="infinite-scroll-initialblocks" %}
 {% include_relative code-snippet/infinite-scroll-initialblocks/infinite-scroll-initialblocks.cs %}
@@ -51,7 +57,11 @@ In the below demo, we have changed this property value to load five page records
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/infinite-scroll-initialblocks/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="infinite-scroll-initialblocks" %}
 {% include_relative code-snippet/infinite-scroll-initialblocks/infinite-scroll-initialblocks.cs %}
 {% endhighlight %}
@@ -70,6 +80,7 @@ Cache is used to store the loaded rows object in the Grid instance which can be 
 To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enableCache` property as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="infinite-scroll-cache" %}
 {% include_relative code-snippet/infinite-scroll-cache/infinite-scroll-cache.cs %}
@@ -77,7 +88,11 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/infinite-scroll-cache/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="infinite-scroll-cache" %}
 {% include_relative code-snippet/infinite-scroll-cache/infinite-scroll-cache.cs %}
 {% endhighlight %}

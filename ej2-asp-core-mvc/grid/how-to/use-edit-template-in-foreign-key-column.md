@@ -16,6 +16,7 @@ By default, foreign key column uses dropdown component for editing. You can rend
 In the following example, The **Employee Name** is a foreign key column and while editing, AutoComplete component is rendered instead of DropDownList.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="edit-template-foreign" %}
 {% include_relative code-snippet/how-to/edit-template-foreign/edit-template-foreign.cs %}
@@ -23,7 +24,11 @@ In the following example, The **Employee Name** is a foreign key column and whil
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/edit-template-foreign/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="edit-template-foreign" %}
 {% include_relative code-snippet/how-to/edit-template-foreign/edit-template-foreign.cs %}
 {% endhighlight %}

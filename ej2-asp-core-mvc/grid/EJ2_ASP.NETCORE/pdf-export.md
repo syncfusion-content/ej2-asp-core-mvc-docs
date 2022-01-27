@@ -15,6 +15,7 @@ PDF export allows exporting Grid data to PDF document. You need to use the
  **PdfExport** method for exporting. To enable PDF export in the grid, set the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowPdfExport) as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="pdf-export" %}
 {% include_relative code-snippet/pdf-export/pdf-export/pdf-export.cs %}
@@ -22,7 +23,11 @@ PDF export allows exporting Grid data to PDF document. You need to use the
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/pdf-export/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="pdf-export" %}
 {% include_relative code-snippet/pdf-export/pdf-export/pdf-export.cs %}
 {% endhighlight %}
@@ -39,6 +44,7 @@ PDF export allows exporting Grid data to PDF document. You need to use the
 PDF export provides an option for exporting multiple grids to same file. In this exported document, each grid will be exported to new page of document in same file.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="multiple" %}
 {% include_relative code-snippet/pdf-export/multiple/multiple.cs %}
@@ -46,7 +52,11 @@ PDF export provides an option for exporting multiple grids to same file. In this
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/multiple/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="multiple" %}
 {% include_relative code-snippet/pdf-export/multiple/multiple.cs %}
 {% endhighlight %}
@@ -67,6 +77,7 @@ PDF export provides an option to customize mapping of grid to exported PDF docum
 You can assign the file name for the exported document by defining **fileName** property in **PdfExportProperties**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="export-filename" %}
 {% include_relative code-snippet/pdf-export/export-filename/export-filename.cs %}
@@ -74,7 +85,11 @@ You can assign the file name for the exported document by defining **fileName** 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/export-filename/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="export-filename" %}
 {% include_relative code-snippet/pdf-export/export-filename/export-filename.cs %}
 {% endhighlight %}
@@ -117,6 +132,7 @@ You can change the default font of Grid header, content and caption cells in the
 In the following example, we have used Advent Pro font to export the grid with Hungarian fonts.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="customfont" %}
 {% include_relative code-snippet/pdf-export/customfont/customfont.cs %}
@@ -124,7 +140,11 @@ In the following example, we have used Advent Pro font to export the grid with H
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/customfont/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="customfont" %}
 {% include_relative code-snippet/pdf-export/customfont/customfont.cs %}
 {% endhighlight %}
@@ -251,6 +271,7 @@ var exportProperties = {
 The below code illustrates the pdf export customization.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="header-footer" %}
 {% include_relative code-snippet/pdf-export/header-footer/header-footer.cs %}
@@ -258,7 +279,11 @@ The below code illustrates the pdf export customization.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/header-footer/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="header-footer" %}
 {% include_relative code-snippet/pdf-export/header-footer/header-footer.cs %}
 {% endhighlight %}
@@ -275,6 +300,7 @@ The below code illustrates the pdf export customization.
 Page orientation can be changed Landscape(Default Portrait) for the exported document using the **exportProperties**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="orientation" %}
 {% include_relative code-snippet/pdf-export/orientation/orientation.cs %}
@@ -282,7 +308,11 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/orientation/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="orientation" %}
 {% include_relative code-snippet/pdf-export/orientation/orientation.cs %}
 {% endhighlight %}
@@ -327,6 +357,7 @@ Supported page sizes are:
 * Ledger
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="page-size" %}
 {% include_relative code-snippet/pdf-export/page-size/page-size.cs %}
@@ -334,7 +365,11 @@ Supported page sizes are:
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/page-size/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="page-size" %}
 {% include_relative code-snippet/pdf-export/page-size/page-size.cs %}
 {% endhighlight %}
@@ -351,6 +386,7 @@ Supported page sizes are:
 PDF export provides an option to export the current page into PDF. To export current page, define the **exportType** to **currentpage**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="export-current" %}
 {% include_relative code-snippet/pdf-export/export-current/export-current.cs %}
@@ -358,7 +394,11 @@ PDF export provides an option to export the current page into PDF. To export cur
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/export-current/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="export-current" %}
 {% include_relative code-snippet/pdf-export/export-current/export-current.cs %}
 {% endhighlight %}
@@ -375,6 +415,7 @@ PDF export provides an option to export the current page into PDF. To export cur
 PDF export provides an option to export hidden columns of Grid by defining the **includeHiddenColumn** as **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="export-hidden" %}
 {% include_relative code-snippet/pdf-export/export-hidden/export-hidden.cs %}
@@ -382,7 +423,11 @@ PDF export provides an option to export hidden columns of Grid by defining the *
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/export-hidden/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="export-hidden" %}
 {% include_relative code-snippet/pdf-export/export-hidden/export-hidden.cs %}
 {% endhighlight %}
@@ -405,6 +450,7 @@ In the [`pdfExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 In the below example, we have **CustomerID** as a hidden column in the grid. While exporting, we have changed **CustomerID** to visible column and **ShipCity** as hidden column.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="show-hide" %}
 {% include_relative code-snippet/pdf-export/show-hide/show-hide.cs %}
@@ -412,7 +458,11 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/show-hide/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="show-hide" %}
 {% include_relative code-snippet/pdf-export/show-hide/show-hide.cs %}
 {% endhighlight %}
@@ -429,6 +479,7 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 By default, when the grid has large number of columns, then the PDF export will split more pages for the exceeded columns rendering. To achieve large number of columns exported in a single page, you need to set the **allowHorizontalOverFlow** property as **false** in the [`toolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Grids.Grid~ToolbarClick.html) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="large-columns" %}
 {% include_relative code-snippet/pdf-export/large-columns/large-columns.cs %}
@@ -436,7 +487,11 @@ By default, when the grid has large number of columns, then the PDF export will 
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/large-columns/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="large-columns" %}
 {% include_relative code-snippet/pdf-export/large-columns/large-columns.cs %}
 {% endhighlight %}
@@ -455,6 +510,7 @@ Grid cells in the exported PDF can be customized or formatted using [`pdfQueryCe
 In the below sample, we have set the **background** color for **Freight** column in the exported document by **args.cell** and **backgroundColor** property.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="pdf-export" %}
 {% include_relative code-snippet/pdf-export/cell-format/pdf-export.cs %}
@@ -462,7 +518,11 @@ In the below sample, we have set the **background** color for **Freight** column
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/cell-format/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="pdf-export" %}
 {% include_relative code-snippet/pdf-export/cell-format/pdf-export.cs %}
 {% endhighlight %}
@@ -481,6 +541,7 @@ PDF export provides an option to include theme for exported PDF document.
 To apply theme in exported PDF, define the **theme** in **exportProperties**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="theme" %}
 {% include_relative code-snippet/pdf-export/theme/theme.cs %}
@@ -488,7 +549,11 @@ To apply theme in exported PDF, define the **theme** in **exportProperties**.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/theme/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="theme" %}
 {% include_relative code-snippet/pdf-export/theme/theme.cs %}
 {% endhighlight %}
@@ -507,6 +572,7 @@ To apply theme in exported PDF, define the **theme** in **exportProperties**.
 PDF export provides an option to define datasource dynamically before exporting. To export data dynamically, define the **dataSource** in **exportProperties**.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="custom-data" %}
 {% include_relative code-snippet/pdf-export/custom-data/custom-data.cs %}
@@ -514,7 +580,11 @@ PDF export provides an option to define datasource dynamically before exporting.
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/custom-data/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="custom-data" %}
 {% include_relative code-snippet/pdf-export/custom-data/custom-data.cs %}
 {% endhighlight %}
@@ -537,6 +607,7 @@ The grid have an option to export the hierarchy grid to pdf document. By default
 | None     | Exports the master grid alone. |
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="hierarchy" %}
 {% include_relative code-snippet/pdf-export/hierarchy/hierarchy.cs %}
@@ -544,7 +615,11 @@ The grid have an option to export the hierarchy grid to pdf document. By default
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/hierarchy/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="hierarchy" %}
 {% include_relative code-snippet/pdf-export/hierarchy/hierarchy.cs %}
 {% endhighlight %}
@@ -563,6 +638,7 @@ By default, column header will be placed on the first page of the pdf document b
 In the below sample, we have enabled **repeatHeader** property in [`pdfHeaderQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfHeaderQueryCellInfo) event to show the header on every page.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight  tabtitle="repeat-header" %}
 {% include_relative code-snippet/pdf-export/repeat-header/repeat-header %}
@@ -570,7 +646,11 @@ In the below sample, we have enabled **repeatHeader** property in [`pdfHeaderQue
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/repeat-header/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight  tabtitle="repeat-header" %}
 {% include_relative code-snippet/pdf-export/repeat-header/repeat-header %}
 {% endhighlight %}
@@ -601,6 +681,7 @@ To Export the Grid in server side, You need to call the
  [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/grid/#serverpdfexport) method for passing the Grid properties to server exporting action.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="server-exportCore" %}
 {% include_relative code-snippet/pdf-export/server-export/server-exportCore.cs %}
@@ -608,7 +689,11 @@ To Export the Grid in server side, You need to call the
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/pdf-export/server-export/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="server-exportCore" %}
 {% include_relative code-snippet/pdf-export/server-export/server-exportCore.cs %}
 {% endhighlight %}

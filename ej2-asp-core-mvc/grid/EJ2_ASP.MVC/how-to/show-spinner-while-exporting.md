@@ -20,6 +20,7 @@ In the [`PdfExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 In the below demo, we have rendered the default spinner component when exporting the grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight c# tabtitle="show-spinner" %}
 {% include_relative code-snippet/how-to/show-spinner-while-exporting/show-spinner.cs %}
@@ -27,7 +28,11 @@ In the below demo, we have rendered the default spinner component when exporting
 {% highlight cshtml tabtitle="tagHelpers" %}
 {% include_relative code-snippet/how-to/show-spinner-while-exporting/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
 {% highlight c# tabtitle="show-spinner" %}
 {% include_relative code-snippet/how-to/show-spinner-while-exporting/show-spinner.cs %}
 {% endhighlight %}
