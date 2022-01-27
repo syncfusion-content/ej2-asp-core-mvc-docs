@@ -29,4 +29,5 @@ The following example shows how to set Complex field for datasource having Array
 {% include_relative code-snippet/columns/complexarray/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

@@ -31,5 +31,6 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 {% include_relative code-snippet/how-to/databasedselection/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

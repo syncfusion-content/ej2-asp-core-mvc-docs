@@ -33,6 +33,7 @@ When we enable the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcor
 {% include_relative code-snippet/adaptive/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -56,6 +57,7 @@ The grid will render the row elements in vertical order while setting the [`rowR
 {% include_relative code-snippet/vertical-rendering/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

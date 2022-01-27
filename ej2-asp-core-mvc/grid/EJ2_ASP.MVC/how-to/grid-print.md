@@ -29,4 +29,5 @@ You can add your title in the header through an [`BeforePrint`](https://help.syn
 {% include_relative code-snippet/how-to/titleprint/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

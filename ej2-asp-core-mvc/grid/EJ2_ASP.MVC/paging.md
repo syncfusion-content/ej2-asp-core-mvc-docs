@@ -32,6 +32,7 @@ In the below sample, **pageSize** is calculated based on the grid height by usin
 {% include_relative code-snippet/paging/page/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -59,6 +60,7 @@ Inside this template, you can access the **CurrentPage**, **PageSize**, **TotalP
 {% include_relative code-snippet/paging/page-temp/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -82,6 +84,7 @@ The pager Dropdown allows you to change the number of records in the Grid dynami
 {% include_relative code-snippet/paging/pagerdropdown/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -105,6 +108,7 @@ By default, Pager will be rendered at the bottom of the Grid. You can also rende
 {% include_relative code-snippet/paging/pagerattop/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

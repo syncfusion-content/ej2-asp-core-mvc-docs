@@ -31,5 +31,6 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 {% include_relative code-snippet/how-to/filter-ui-foreign/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

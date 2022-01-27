@@ -39,6 +39,7 @@ To specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% include_relative code-snippet/scrolling/width-height/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -63,6 +64,7 @@ Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% include_relative code-snippet/scrolling/responsive-parent/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -86,6 +88,7 @@ You can scroll the grid content to the selected row position by using the `RowSe
 {% include_relative code-snippet/scrolling/scroll-selected-row/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -112,6 +115,7 @@ is set as '3'. Hence, the left two columns and top three rows are frozen.
 {% include_relative code-snippet/scrolling/freeze-row-column/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -138,6 +142,7 @@ the `IsFrozen` property.
 {% include_relative code-snippet/scrolling/freeze-column/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

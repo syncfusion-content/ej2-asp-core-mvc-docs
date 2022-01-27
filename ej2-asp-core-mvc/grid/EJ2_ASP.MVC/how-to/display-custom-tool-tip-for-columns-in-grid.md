@@ -41,5 +41,6 @@ function beforeRender(args) {
 {% include_relative code-snippet/how-to/custom-tooltip/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

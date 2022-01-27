@@ -31,4 +31,5 @@ In the below demo, you can access the Editor component instance while adding or 
 {% include_relative code-snippet/how-to/access-editor/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

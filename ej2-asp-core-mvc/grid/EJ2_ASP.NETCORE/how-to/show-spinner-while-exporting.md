@@ -35,4 +35,5 @@ In the below demo, we have rendered the default spinner component when exporting
 {% include_relative code-snippet/how-to/show-spinner-while-exporting/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

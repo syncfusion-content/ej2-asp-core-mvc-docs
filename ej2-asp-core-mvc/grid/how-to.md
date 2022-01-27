@@ -43,6 +43,7 @@ To render the DropDownList component, use the [`DataBound`](https://help.syncfus
 {% include_relative code-snippet/how-to/custom-toolbar/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -88,6 +89,7 @@ Refresh the grid after the data source change by using the `refresh` method.
 {% include_relative code-snippet/how-to/refresh-datasource/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -151,6 +153,7 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% include_relative code-snippet/how-to/disablegrid/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -176,6 +179,7 @@ In the following example, we have printed expanded child grids form other pages.
 {% include_relative code-snippet/how-to/hierarchyprint/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -223,6 +227,7 @@ grid.refreshHeader();
 {% include_relative code-snippet/how-to/column-header-text/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -278,6 +283,7 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 {% include_relative code-snippet/how-to/custom-column-style/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -313,6 +319,7 @@ function tooltip (args) {
 {% include_relative code-snippet/how-to/custom-tooltip/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -366,6 +373,7 @@ Using the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% include_relative code-snippet/how-to/render-other-comp/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -426,6 +434,7 @@ function setHeaderHeight(args) {
 {% include_relative code-snippet/how-to/orientation/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -457,6 +466,7 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% include_relative code-snippet/how-to/custom-column-menu-icon/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -540,6 +550,7 @@ Now assign the custom adaptor to the grid as follows.
 {% include_relative code-snippet/how-to/anti-forgery-token/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -567,6 +578,7 @@ In the below demo, the `ShipCountry` column is rendered with the template.
 {% include_relative code-snippet/how-to/edit-temp/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -592,6 +604,7 @@ In the below example, we have changed the dialog's header text for editing and a
 {% include_relative code-snippet/edit/customizedialog/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -621,6 +634,7 @@ In the below example, we have rendered the grid columns `CustomerID` as hidden c
 {% include_relative code-snippet/edit/show-hide-edit-dialog/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -646,6 +660,7 @@ In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and 
 {% include_relative code-snippet/how-to/cascading/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -684,6 +699,7 @@ In the below demo, DropDownList is rendered with custom Datasource for the `Ship
 {% include_relative code-snippet/how-to/dropdown-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -709,6 +725,7 @@ In the below demo, you can access the Editor component instance while adding or 
 {% include_relative code-snippet/how-to/access-editor/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -736,6 +753,7 @@ The following example demonstrate the wizard like editing in grid.
 {% include_relative code-snippet/edit/wizardediting/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -761,6 +779,7 @@ The following example demonstrate the usage of tab control inside the dialog tem
 {% include_relative code-snippet/edit/tabediting/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -786,6 +805,7 @@ In the below demo, the rows which are having the value for `ShipCountry` column 
 {% include_relative code-snippet/how-to/disable-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -807,6 +827,7 @@ For batch mode of editing, you can use `CellEdit` event of Grid. In the below de
 {% include_relative code-snippet/how-to/disable-edit-batch/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -834,6 +855,7 @@ The following example demonstrates on `Adding` a new row when `Enter` key is pre
 {% include_relative code-snippet/edit/keyboard-actions/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -859,6 +881,7 @@ Bind the click event for the Grid and in the click event handler call the [`edit
 {% include_relative code-snippet/how-to/editable-single-click/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -891,6 +914,7 @@ In the following sample, we have customized string filter operators.
 {% include_relative code-snippet/how-to/customize-filter-menu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -937,6 +961,7 @@ In the below demo, click on the corresponding button to perform single-column or
 {% include_relative code-snippet/how-to/dynamicsort/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -986,6 +1011,7 @@ In the below demo, click on the corresponding button to clear sort for particula
 {% include_relative code-snippet/how-to/dynamicclearsort/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -1013,6 +1039,7 @@ In the following example, The `Employee Name` is a foreign key column and while 
 {% include_relative code-snippet/how-to/edit-template-foreign/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -1038,6 +1065,7 @@ In the following example, The `Employee Name` is a foreign key column. DropDownL
 {% include_relative code-snippet/how-to/filter-ui-foreign/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -1063,6 +1091,7 @@ In the following example, The `Employee Name` is a foreign key column. This colu
 {% include_relative code-snippet/how-to/filterbar-temp-foreign/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -1088,6 +1117,7 @@ In the following example, The `Employee Name` is a foreign key column and the ag
 {% include_relative code-snippet/how-to/aggregate-foreign/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -1115,6 +1145,7 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% include_relative code-snippet/how-to/export-filtered-data/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -1140,6 +1171,7 @@ To customize default values of pager dropdown, you need to define `pageSizes` as
 {% include_relative code-snippet/how-to/pagerdropdown/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -1202,6 +1234,7 @@ In the below demo, the expand/collapse icon in the row with `EmployeeID` as `1` 
 {% include_relative code-snippet/how-to/hidearrow/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -1295,6 +1328,7 @@ You need to include cldr-data into your application and refer file location in `
 {% include_relative code-snippet/how-to/localization-scripts/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -1318,4 +1352,5 @@ To render grid from controller, We need to create instance for Grid model class.
 {% include_relative code-snippet/how-to/render-grid-from-server/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

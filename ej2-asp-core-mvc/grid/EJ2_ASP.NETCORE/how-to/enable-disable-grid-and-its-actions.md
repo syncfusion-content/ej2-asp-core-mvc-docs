@@ -69,5 +69,6 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% include_relative code-snippet/how-to/disablegrid/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

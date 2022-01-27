@@ -35,5 +35,6 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 {% include_relative code-snippet/edit/show-hide-edit-dialog/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

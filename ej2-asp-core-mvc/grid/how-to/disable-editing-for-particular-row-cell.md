@@ -31,6 +31,7 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% include_relative code-snippet/how-to/disable-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -52,5 +53,6 @@ For batch mode of editing, you can use [`CellEdit`](https://help.syncfusion.com/
 {% include_relative code-snippet/how-to/disable-edit-batch/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

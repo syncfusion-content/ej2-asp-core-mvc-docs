@@ -30,6 +30,7 @@ documentation: ug
 {% include_relative code-snippet/columns/dateformat/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -53,6 +54,7 @@ You can hide any particular column in Grid before rendering by defining [`Visibl
 {% include_relative code-snippet/columns/Visibility/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -76,6 +78,7 @@ The [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofi
 {% include_relative code-snippet/columns/autofit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -101,6 +104,7 @@ Reordering can be done by drag and drop of a particular column header from one i
 {% include_relative code-snippet/columns/reorder/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -126,6 +130,7 @@ Grid have option to reorder Columns either by Interaction or by using the **reor
 {% include_relative code-snippet/columns/reordercols/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -151,6 +156,7 @@ In the below sample, **Ship City** and **Ship Region** column is reordered to la
 {% include_relative code-snippet/columns/reordercolumns/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -178,6 +184,7 @@ During the reorder action, the grid component triggers the below three events.
 {% include_relative code-snippet/columns/reorderevents/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -203,6 +210,7 @@ In the below example, Ship City column is locked and its reordering functionalit
 {% include_relative code-snippet/columns/lock/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -226,6 +234,7 @@ Column width can be resized by clicking and dragging the right edge of the colum
 {% include_relative code-snippet/columns/resize/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -270,6 +279,7 @@ In the following sample, minimum and maximum width are defined for **OrderID**, 
 {% include_relative code-snippet/columns/min/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -295,6 +305,7 @@ In this example, we have disabled resize for Ship City column.
 {% include_relative code-snippet/columns/stacked/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -330,6 +341,7 @@ During the resizing action, the grid component triggers the below three events.
 {% include_relative code-snippet/columns/resizeevents/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -353,6 +365,7 @@ The column [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 {% include_relative code-snippet/columns/template/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -380,6 +393,7 @@ In the following code, checkbox is rendered based on **Discontinued** field valu
 {% include_relative code-snippet/columns/condition-template/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -420,6 +434,7 @@ The column chooser has options to show or hide columns dynamically. It can be en
 {% include_relative code-snippet/columns/columnchooser/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -446,6 +461,7 @@ the **openColumnChooser** method with X and Y axis positions.
 {% include_relative code-snippet/columns/externalbutton/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -482,6 +498,7 @@ The default items are displayed in following table.
 {% include_relative code-snippet/column/columnmenu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -511,6 +528,7 @@ During the resizing action, the grid component triggers the below two events.
 {% include_relative code-snippet/column/columnmenuevents/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -537,6 +555,7 @@ Actions for this customized items can be defined in the [`ColumnMenuClick`](http
 {% include_relative code-snippet/columns/customcolumnmenu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -562,6 +581,7 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% include_relative code-snippet/columns/customizecolumnmenu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -587,6 +607,7 @@ In the following demo, employee **Davolio** is doing testing from 9.00 A.M. to 1
 {% include_relative code-snippet/columns/columnspanning/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -613,6 +634,7 @@ The [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% include_relative code-snippet/columns/responsivecolumns/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -637,6 +659,7 @@ You can enable or disable grid action for a particular column by setting the [`A
 {% include_relative code-snippet/columns/controllingactions/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -660,6 +683,7 @@ The **valueAccessor** is used to access/manipulate the value of display data. Yo
 {% include_relative code-snippet/columns/valueaccessor/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -683,6 +707,7 @@ You can show or hide grid columns dynamically using external buttons by invoking
 {% include_relative code-snippet/columns/showhide/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -706,6 +731,7 @@ To render boolean values as checkbox in columns, you need to set [`DisplayAsChec
 {% include_relative code-snippet/columns/booleanascheckbox/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

@@ -29,4 +29,5 @@ You can focus the double clicked column edit form an through an [`recordDoubleCl
 {% include_relative code-snippet/how-to/focus/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

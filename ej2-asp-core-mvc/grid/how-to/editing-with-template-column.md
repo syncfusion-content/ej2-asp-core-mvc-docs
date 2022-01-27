@@ -31,5 +31,6 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% include_relative code-snippet/how-to/edit-temp/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

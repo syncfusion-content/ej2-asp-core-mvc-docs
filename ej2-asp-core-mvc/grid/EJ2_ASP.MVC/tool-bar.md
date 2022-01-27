@@ -50,6 +50,7 @@ The following table shows built-in toolbar items and its actions.
 {% include_relative code-snippet/toolbar/toolbar/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -79,6 +80,7 @@ By default, Custom toolbar items are in position **Left**. You can change the po
 {% include_relative code-snippet/toolbar/custom-toolbar-item/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -107,6 +109,7 @@ In the below example, **Add**, **Edit**, **Delete**, **Update**, **Cancel** are 
 {% include_relative code-snippet/toolbar/builtin-custom-items/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -130,5 +133,6 @@ You can enable/disable toolbar items by using the **enableItems** method.
 {% include_relative code-snippet/toolbar/enable-disable/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

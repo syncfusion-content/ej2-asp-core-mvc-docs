@@ -31,6 +31,7 @@ The HTML tags can be displayed in the Grid header and content by enabling the [`
 {% include_relative code-snippet/cell/html/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -56,6 +57,7 @@ The [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% include_relative code-snippet/cell/customize/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -91,6 +93,7 @@ In the following example, the [`wrapMode`](https://help.syncfusion.com/cr/aspnet
 {% include_relative code-snippet/cell/autowrap/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -122,6 +125,7 @@ In the below example, we have customized the cells of **OrderID** and **ShipCity
 {% include_relative code-snippet/cell/customAttribute/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -156,6 +160,7 @@ The available modes of grid lines are:
 {% include_relative code-snippet/cell/gridlines/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -187,6 +192,7 @@ There are three types of **ClipMode**. They are:
 {% include_relative code-snippet/cell/clipmode/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

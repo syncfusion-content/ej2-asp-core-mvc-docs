@@ -31,5 +31,6 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% include_relative code-snippet/how-to/aggregate-foreign/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

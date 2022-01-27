@@ -37,5 +37,6 @@ In the following sample, we have customized string filter operators.
 {% include_relative code-snippet/how-to/customize-filter-menu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

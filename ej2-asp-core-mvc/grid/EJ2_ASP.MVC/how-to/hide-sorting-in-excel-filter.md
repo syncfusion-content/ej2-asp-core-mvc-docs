@@ -37,5 +37,6 @@ You can hide the sorting options on the excel filter dialog by setting display a
 {% include_relative code-snippet/how-to/disable-sorting-excel/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

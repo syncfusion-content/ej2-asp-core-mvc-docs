@@ -36,6 +36,7 @@ To search grid records from an external button, invoke the **search** method.
 {% include_relative code-snippet/search/external-btn/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -59,6 +60,7 @@ By default, grid searches all visible columns. You can search specific columns b
 {% include_relative code-snippet/search/search-a-column/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -82,6 +84,7 @@ To clear the searched grid records from the external button, set [`key`](https:/
 {% include_relative code-snippet/search/clear-search/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -105,4 +108,5 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% include_relative code-snippet/search/search-each-key/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

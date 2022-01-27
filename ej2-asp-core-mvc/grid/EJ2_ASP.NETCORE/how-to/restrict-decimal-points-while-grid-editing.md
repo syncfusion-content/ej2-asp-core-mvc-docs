@@ -31,4 +31,5 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% include_relative code-snippet/how-to/prevent-decimal-point/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

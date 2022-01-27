@@ -39,6 +39,7 @@ To specify the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% include_relative code-snippet/scrolling/width-height/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -63,6 +64,7 @@ Setting the [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% include_relative code-snippet/scrolling/responsive-parent/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -86,6 +88,7 @@ You can scroll the grid content to the selected row position by using the [`rowS
 {% include_relative code-snippet/scrolling/scroll-selected-row/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -111,6 +114,7 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 {% include_relative code-snippet/scrolling/hide-scroll/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -136,5 +140,6 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 {% include_relative code-snippet/scrolling/sticky-header/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

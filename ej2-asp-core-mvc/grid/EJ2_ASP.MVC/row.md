@@ -34,6 +34,7 @@ the template string or HTML element ID.
 {% include_relative code-snippet/row/row-template/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -60,6 +61,7 @@ the template string or HTML element ID.
 {% include_relative code-snippet/row/detail-temp/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -86,6 +88,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% include_relative code-snippet/row/custom-component/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -109,6 +112,7 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 {% include_relative code-snippet/row/expand-external/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -137,6 +141,7 @@ the **TargetID**.
 {% include_relative code-snippet/row/drag-drop/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -164,6 +169,7 @@ The grid row drag and drop allows you to drag and drop grid rows on the same gri
 {% include_relative code-snippet/row/drag-drop-same-grid/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -194,6 +200,7 @@ The [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 {% include_relative code-snippet/row/custom-rows/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -225,6 +232,7 @@ Please refer to the following example.
 {% include_relative code-snippet/row/style-alt-row/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -251,6 +259,7 @@ In the below example, the [`RowHeight`](https://help.syncfusion.com/cr/aspnetcor
 {% include_relative code-snippet/row/row-height/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -277,6 +286,7 @@ In the below example, the row height for the row with OrderID as '10249' is set 
 {% include_relative code-snippet/row/rowheight-particular/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

@@ -34,6 +34,7 @@ The grid does not maintain the query params after page load event when the [`Ena
 {% include_relative code-snippet/state-persist/state-persist/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

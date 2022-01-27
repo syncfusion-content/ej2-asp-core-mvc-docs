@@ -31,4 +31,5 @@ In the below example, we have passed `recordcount` as `12` using `addParams` met
 {% include_relative code-snippet/how-to/passing-params-exporting/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

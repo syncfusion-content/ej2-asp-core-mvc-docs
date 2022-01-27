@@ -30,6 +30,7 @@ documentation: ug
 {% include_relative code-snippet/edit/celleditparams/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -63,6 +64,7 @@ The cell edit template is used to add a custom component for a particular column
 {% include_relative code-snippet/edit/celledittemplate/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -96,6 +98,7 @@ To enable Normal edit, set the [`EditSettings.Mode`](https://help.syncfusion.com
 {% include_relative code-snippet/edit/inline/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -123,6 +126,7 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 {% include_relative code-snippet/edit/cancel-edit-inline/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -148,6 +152,7 @@ To enable Dialog edit, set the [`EditSettings.Mode`](https://help.syncfusion.com
 {% include_relative code-snippet/edit/dialog/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -173,6 +178,7 @@ To enable Batch edit, set the [`EditSettings.Mode`](https://help.syncfusion.com/
 {% include_relative code-snippet/edit/batch/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -198,6 +204,7 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 {% include_relative code-snippet/edit/cancel-edit-batch/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -225,6 +232,7 @@ In the below code example, demonstrate the usage of binding a partial view in th
 {% include_relative code-snippet/edit/dialogtemplate/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -299,6 +307,7 @@ By default, a new row will be added at the top of the grid. You can change it by
 {% include_relative code-snippet/edit/rowposition/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -333,6 +342,7 @@ The available built-in command buttons are:
 {% include_relative code-snippet/edit/commandcolumn/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -357,6 +367,7 @@ the action for the custom buttons can be defined in the `ButtonOption.Click` eve
 {% include_relative code-snippet/edit/customcommand/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -382,6 +393,7 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 {% include_relative code-snippet/edit/deleteconfirm/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -407,6 +419,7 @@ By default, grid will show the confirm dialog when saving or cancelling or perfo
 {% include_relative code-snippet/edit/batchconfirm/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -435,6 +448,7 @@ You can set validation rules by defining the [`Columns.ValidationRules`](https:/
 {% include_relative code-snippet/edit/columnvalid/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -472,6 +486,7 @@ The following code example describes the above behavior.
 {% include_relative code-snippet/edit/urladaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -495,6 +510,7 @@ The following code example describes the above behavior.
 {% include_relative code-snippet/edit/urladaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -519,6 +535,7 @@ The following code example describes the above behavior.
 {% include_relative code-snippet/edit/urladaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -547,6 +564,7 @@ The following code example describes the previous behavior.
 {% include_relative code-snippet/edit/urladaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -576,6 +594,7 @@ The following code example describes the previous behavior.
 {% include_relative code-snippet/edit/urladaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -607,6 +626,7 @@ The following code example describes the above behavior.
 {% include_relative code-snippet/edit/crudurl/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -639,6 +659,7 @@ The following code example describes the above behavior.
 {% include_relative code-snippet/edit/batchurl/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -672,6 +693,7 @@ To set a default value for the particular column by defining the [`Columns.Defau
 {% include_relative code-snippet/edit/defaultcolumnvalue/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -697,6 +719,7 @@ In the below demo, custom validation applied for `CustomerID` column.
 {% include_relative code-snippet/edit/customvalidation/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -722,6 +745,7 @@ In the following demo, editing is disabled for the `CustomerID` column.
 {% include_relative code-snippet/edit/disableeditforcolumn/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

@@ -125,6 +125,7 @@ The following example demonstrates the Grid in **Deutsch** culture.
 {% include_relative code-snippet/globalization/localization/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -148,6 +149,7 @@ The [`Internationalization`](../../common/intl.html) library is used to globaliz
 {% include_relative code-snippet/globalization/internationalization/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -174,6 +176,7 @@ RTL provides an option to switch the text direction and layout of the Grid compo
 {% include_relative code-snippet/globalization/righttoleft/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

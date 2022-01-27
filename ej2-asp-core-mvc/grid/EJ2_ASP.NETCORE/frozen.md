@@ -32,6 +32,7 @@ is set as '3'. Hence, the left two columns and top three rows are frozen.
 {% include_relative code-snippet/scrolling/freeze-row-column/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -70,6 +71,7 @@ the [`isFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 {% include_relative code-snippet/scrolling/freeze-column/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -102,6 +104,7 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 {% include_relative code-snippet/scrolling/column-level-frozen/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

@@ -34,6 +34,7 @@ The grid does not maintain the query params after page load event when the [`Ena
 {% include_relative code-snippet/state-persist/state-persist/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -76,6 +77,7 @@ You can achieve this by destroying the grid after disabling the [`EnablePersiste
 {% include_relative code-snippet/state-persist/initial-grid/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -99,6 +101,7 @@ The Grid columns can be persisted when the [enablePersistence](https://help.sync
 {% include_relative code-snippet/state-persist/column-add/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -126,6 +129,7 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 {% include_relative code-snippet/state-persist/column-prevent/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -151,4 +155,5 @@ If you wish to restore all these column properties, then you can achieve it by c
 {% include_relative code-snippet/state-persist/column-persist/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

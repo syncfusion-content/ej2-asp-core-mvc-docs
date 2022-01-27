@@ -33,6 +33,7 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://help
 {% include_relative code-snippet/immutable-mode/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

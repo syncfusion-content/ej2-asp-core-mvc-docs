@@ -29,4 +29,5 @@ You can get the specific row and cell index of the grid by using [`RowSelected`]
 {% include_relative code-snippet/how-to/row-cell-index/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

@@ -31,5 +31,6 @@ In the below code we have displayed the null date values at bottom of the Grid r
 {% include_relative code-snippet/how-to/sort-comparer/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

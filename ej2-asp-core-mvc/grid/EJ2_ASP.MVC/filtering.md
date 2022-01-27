@@ -35,6 +35,7 @@ N/A |N/A |`equal` operator will always be used for Boolean filter. |Boolean
 {% include_relative code-snippet/filtering/filter-bar/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -64,6 +65,7 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 {% include_relative code-snippet/filtering/filterbartemplate/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -88,6 +90,7 @@ we have changed the default operator for string typed columns as **contains** fr
 {% include_relative code-snippet/filtering/filteroptr/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -112,6 +115,7 @@ You can filter the records with different operators.
 {% include_relative code-snippet/filtering/filtermenu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -141,6 +145,7 @@ In the following sample menu filter is enabled by default and checkbox filter is
 {% include_relative code-snippet/filtering/diffcolumnfilter/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -164,6 +169,7 @@ You can enable Excel like filter by defining [`Type`](https://help.syncfusion.co
 {% include_relative code-snippet/filtering/excelfilter/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

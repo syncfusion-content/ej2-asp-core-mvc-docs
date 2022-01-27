@@ -35,5 +35,6 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% include_relative code-snippet/edit/customizedialog/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

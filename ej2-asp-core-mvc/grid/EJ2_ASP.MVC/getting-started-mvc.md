@@ -102,20 +102,19 @@ To initialize the Grid component add the below code to your **Index.cshtml** vi
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight  tabtitle="initialize" %}
-{% include_relative code-snippet/getting-start-mvc/initialize//getting-start-mvc/initialize %}
+{% highlight c# tabtitle="initialize" %}
 {% endhighlight %}
 {% highlight cshtml tabtitle="initialize" %}
 {% include_relative code-snippet/getting-start-mvc/initialize/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight  tabtitle="initialize" %}
-{% include_relative code-snippet/getting-start-mvc/initialize//getting-start-mvc/initialize %}
+{% highlight c# tabtitle="initialize" %}
 {% endhighlight %}
 {% highlight razor tabtitle="initialize" %}
 {% include_relative code-snippet/getting-start-mvc/initialize/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -139,6 +138,7 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 {% include_relative code-snippet/getting-start-mvc/databinding/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -174,6 +174,7 @@ Here, you have defined it for the conversion of numeric values to currency.
 {% include_relative code-snippet/getting-start-mvc/columns/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -197,6 +198,7 @@ The paging feature enables users to view the grid record in a paged view. It can
 {% include_relative code-snippet/getting-start-mvc/page/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -220,6 +222,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% include_relative code-snippet/getting-start-mvc/sorting/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -243,6 +246,7 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% include_relative code-snippet/getting-start-mvc/filtering/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -268,6 +272,7 @@ The grouping feature enables users to view the grid record in a grouped view. It
 {% include_relative code-snippet/getting-start-mvc/grouping/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

@@ -57,6 +57,7 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 {% include_relative code-snippet/aggregate/footer-agg/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -82,6 +83,7 @@ You can format the aggregate value result by using the [`format`](https://help.s
 {% include_relative code-snippet/aggregate/format-agg/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -107,6 +109,7 @@ If [`groupFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% include_relative code-snippet/aggregate/group-caption/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -137,6 +140,7 @@ object.
 {% include_relative code-snippet/aggregate/custom-agg/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -164,6 +168,7 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 {% include_relative code-snippet/aggregate/reactive-agg-batch-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -189,4 +194,5 @@ In the following code, the input event for the Freight column editor has been re
 {% include_relative code-snippet/aggregate/reactive-agg-inline-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

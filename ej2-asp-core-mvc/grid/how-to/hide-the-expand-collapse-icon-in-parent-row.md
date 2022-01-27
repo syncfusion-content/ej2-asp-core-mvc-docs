@@ -68,5 +68,6 @@ In the below demo, the expand/collapse icon in the row with `EmployeeID` as `1` 
 {% include_relative code-snippet/how-to/hidearrow/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

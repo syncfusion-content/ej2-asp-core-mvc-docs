@@ -30,4 +30,5 @@ In the below sample, OrderID and Freight Columns are numeric columns, while open
 {% include_relative code-snippet/how-to/add-params-for-filtering/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

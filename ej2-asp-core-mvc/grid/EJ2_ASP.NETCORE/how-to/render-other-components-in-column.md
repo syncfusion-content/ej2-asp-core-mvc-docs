@@ -59,4 +59,5 @@ Using the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% include_relative code-snippet/how-to/render-other-comp/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

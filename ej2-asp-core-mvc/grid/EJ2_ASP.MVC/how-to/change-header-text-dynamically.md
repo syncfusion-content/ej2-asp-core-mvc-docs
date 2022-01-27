@@ -51,5 +51,6 @@ grid.refreshHeader();
 {% include_relative code-snippet/how-to/column-header-text/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

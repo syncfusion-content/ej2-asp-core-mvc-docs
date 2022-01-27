@@ -31,5 +31,6 @@ In the below demo, all the grouped rows are collapsed at initial rendering.
 {% include_relative code-snippet/how-to/collapse-grouped-rows/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

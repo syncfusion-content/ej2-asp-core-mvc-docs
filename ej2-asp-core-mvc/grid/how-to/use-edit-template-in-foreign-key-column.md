@@ -31,5 +31,6 @@ In the following example, The **Employee Name** is a foreign key column and whil
 {% include_relative code-snippet/how-to/edit-template-foreign/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

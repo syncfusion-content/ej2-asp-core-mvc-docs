@@ -61,5 +61,6 @@ col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(S
 {% include_relative code-snippet/how-to/custom-column-style/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

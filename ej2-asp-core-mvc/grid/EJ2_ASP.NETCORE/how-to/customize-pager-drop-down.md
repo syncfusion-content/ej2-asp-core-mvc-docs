@@ -29,5 +29,6 @@ To customize default values of pager dropdown, you need to define [`pageSizes`](
 {% include_relative code-snippet/how-to/pagerdropdown/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

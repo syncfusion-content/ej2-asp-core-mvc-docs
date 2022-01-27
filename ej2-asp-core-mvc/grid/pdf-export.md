@@ -30,6 +30,7 @@ PDF export allows exporting Grid data to PDF document. You need to use the
 {% include_relative code-snippet/pdf-export/pdf-export/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -53,6 +54,7 @@ PDF export provides an option for exporting multiple grids to same file. In this
 {% include_relative code-snippet/pdf-export/multiple/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -80,6 +82,7 @@ You can assign the file name for the exported document by defining `fileName` pr
 {% include_relative code-snippet/pdf-export/export-filename/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -129,6 +132,7 @@ In the following example, we have used Advent Pro font to export the grid with H
 {% include_relative code-snippet/pdf-export/customfont/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -262,6 +266,7 @@ The below code illustrates the pdf export customization.
 {% include_relative code-snippet/pdf-export/header-footer/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -285,6 +290,7 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 {% include_relative code-snippet/pdf-export/orientation/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -336,6 +342,7 @@ Supported page sizes are:
 {% include_relative code-snippet/pdf-export/page-size/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -359,6 +366,7 @@ PDF export provides an option to export the current page into PDF. To export cur
 {% include_relative code-snippet/pdf-export/export-current/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -382,6 +390,7 @@ PDF export provides an option to export hidden columns of Grid by defining the `
 {% include_relative code-snippet/pdf-export/export-hidden/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -411,6 +420,7 @@ In the below example, we have `CustomerID` as a hidden column in the grid. While
 {% include_relative code-snippet/pdf-export/show-hide/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -436,6 +446,7 @@ In the below sample, we have set the `background` color for `Freight` column in 
 {% include_relative code-snippet/pdf-export/pdf-export/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -461,6 +472,7 @@ To apply theme in exported PDF, define the `theme` in `exportProperties` .
 {% include_relative code-snippet/pdf-export/theme/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -486,6 +498,7 @@ PDF export provides an option to define datasource dynamically before exporting.
 {% include_relative code-snippet/pdf-export/custom-data/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -515,6 +528,7 @@ The grid have an option to export the hierarchy grid to pdf document. By default
 {% include_relative code-snippet/pdf-export/hierarchy/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -540,5 +554,6 @@ In the below sample, we have enabled `repeatHeader` property in `pdfHeaderQueryC
 {% include_relative code-snippet/pdf-export/repeat-header/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

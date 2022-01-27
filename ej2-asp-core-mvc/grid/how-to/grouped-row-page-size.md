@@ -31,4 +31,5 @@ In the below sample, we have overridden the default `generateQuery` to display t
 {% include_relative code-snippet/how-to/group-page-size/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

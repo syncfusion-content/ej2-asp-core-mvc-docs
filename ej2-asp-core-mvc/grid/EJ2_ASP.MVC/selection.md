@@ -35,6 +35,7 @@ To perform the multi-selection, press and hold CTRL key and click the desired ro
 {% include_relative code-snippet/selection/selection/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -63,6 +64,7 @@ the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.
 {% include_relative code-snippet/selection/selection-mode/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -92,6 +94,7 @@ the [`CellSelectionMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% include_relative code-snippet/selection/cell-selection/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -120,6 +123,7 @@ You can enable column selection by setting the [`selectionSettings.allowColumnSe
 {% include_relative code-snippet/selection/column-selection/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -145,6 +149,7 @@ To render the checkbox in each grid row, you need to use checkbox column with ty
 {% include_relative code-snippet/selection/checkbox/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -178,6 +183,7 @@ and hold CTRL key and click the desired rows. To select range of rows, press and
 {% include_relative code-snippet/selection/windowslikeselection/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -201,6 +207,7 @@ The Toggle selection allows to perform selection and unselection of the particul
 {% include_relative code-snippet/selection/toggleselection/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -226,6 +233,7 @@ To select a row at initial rendering, set the [`SelectedRowIndex`](https://help.
 {% include_relative code-snippet/selection/select-row/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -249,6 +257,7 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](http
 {% include_relative code-snippet/selection/selected-row-index/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -284,4 +293,5 @@ You can select multiple rows by clicking on rows one by one. This will not desel
 {% include_relative code-snippet/selection/simplemultiselect/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

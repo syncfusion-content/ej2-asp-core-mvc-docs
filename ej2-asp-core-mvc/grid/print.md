@@ -29,6 +29,7 @@ To print the Grid, use the `print` method from grid instance. The print option c
 {% include_relative code-snippet/print/print/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -61,6 +62,7 @@ To print the grid from an external button, invoke the `print` method.
 {% include_relative code-snippet/print/external-btn/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -84,6 +86,7 @@ By default, the grid prints all the pages. To print the current page alone, set 
 {% include_relative code-snippet/print/current-page/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -113,6 +116,7 @@ By default, the grid will be print the master and expanded child grids alone. yo
 {% include_relative code-snippet/print/hierarchyprint/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -152,6 +156,7 @@ In the below example, we have `CustomerID` as a hidden column in the grid. While
 {% include_relative code-snippet/print/show-hide-columns/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

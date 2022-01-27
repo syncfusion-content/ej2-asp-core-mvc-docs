@@ -31,5 +31,6 @@ In the following example, `Employee.EmployeeID` is a complex column and also dec
 {% include_relative code-snippet/columns/foreignkey/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

@@ -31,4 +31,5 @@ In the below exporting demo, We can get the selected records using `getSelectedR
 {% include_relative code-snippet/how-to/export-selected-data/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

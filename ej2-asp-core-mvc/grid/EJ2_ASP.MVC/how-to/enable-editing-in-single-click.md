@@ -33,6 +33,7 @@ Bind the **mouseup** event for Grid and in the event handler call the **startEdi
 {% include_relative code-snippet/how-to/single-click-inline-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -56,6 +57,7 @@ You can open the default dropdown edit popup with single click edit by focusing 
 {% include_relative code-snippet/how-to/open-dropdown-popup/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -81,5 +83,6 @@ Bind the **mouseup** event for Grid and in the event handler call the **editCell
 {% include_relative code-snippet/how-to/single-click-batch-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

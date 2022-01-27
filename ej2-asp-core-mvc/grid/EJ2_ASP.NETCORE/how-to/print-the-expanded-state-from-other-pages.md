@@ -31,4 +31,5 @@ In the following example, we have printed expanded child grids from other pages.
 {% include_relative code-snippet/how-to/hierarchyprint/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 

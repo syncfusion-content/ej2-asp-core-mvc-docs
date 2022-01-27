@@ -33,6 +33,7 @@ To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 {% include_relative code-snippet/infinite-scroll-normal/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -58,6 +59,7 @@ In the below demo, we have changed this property value to load five page records
 {% include_relative code-snippet/infinite-scroll-initialblocks/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -83,6 +85,7 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 {% include_relative code-snippet/infinite-scroll-cache/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

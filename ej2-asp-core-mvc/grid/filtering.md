@@ -35,6 +35,7 @@ N/A |N/A |`equal` operator will always be used for Boolean filter. |Boolean
 {% include_relative code-snippet/filtering/filter-bar/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -62,6 +63,7 @@ In the following sample, the dropdown is used as a custom component in the Emplo
 {% include_relative code-snippet/filter/filterbartemplate/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -90,6 +92,7 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 {% include_relative code-snippet/filtering/filterbartemplate/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -114,6 +117,7 @@ we have changed the default operator for string typed columns as `contains` from
 {% include_relative code-snippet/filtering/filteroptr/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -138,6 +142,7 @@ You can filter the records with different operators.
 {% include_relative code-snippet/filtering/filtermenu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -170,6 +175,7 @@ To implement custom filter ui, define the following functions:
 {% include_relative code-snippet/filter/customfiltermenu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -197,6 +203,7 @@ In the following sample menu filter is enabled by default and checkbox filter is
 {% include_relative code-snippet/filtering/diffcolumnfilter/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -221,6 +228,7 @@ You can enable Excel like filter by defining.
 {% include_relative code-snippet/filtering/excelfilter/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

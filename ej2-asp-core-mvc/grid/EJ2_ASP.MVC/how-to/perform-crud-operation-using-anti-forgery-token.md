@@ -87,6 +87,7 @@ Now assign the custom adaptor to the grid as follows.
 {% include_relative code-snippet/how-to/anti-forgery-token/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

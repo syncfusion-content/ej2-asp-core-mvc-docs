@@ -33,5 +33,6 @@ The following example demonstrates on **Adding** a new row when **Enter** key is
 {% include_relative code-snippet/edit/keyboard-actions/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

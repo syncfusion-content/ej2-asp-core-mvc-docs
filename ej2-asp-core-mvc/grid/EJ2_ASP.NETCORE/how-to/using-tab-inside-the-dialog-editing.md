@@ -31,5 +31,6 @@ The following example demonstrate the usage of tab control inside the dialog tem
 {% include_relative code-snippet/edit/tabediting/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

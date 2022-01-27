@@ -31,5 +31,6 @@ The following example demonstrate the wizard like editing in the grid with the o
 {% include_relative code-snippet/edit/wizardediting/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

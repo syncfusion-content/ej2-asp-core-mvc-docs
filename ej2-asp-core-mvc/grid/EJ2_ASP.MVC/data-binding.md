@@ -38,6 +38,7 @@ To bind list binding to the grid, you can assign a JavaScript object array to th
 {% include_relative code-snippet/data-binding/localdata/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -63,6 +64,7 @@ To bind remote data to grid component, assign service data as an instance of Dat
 {% include_relative code-snippet/data-binding/remotedata/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -88,6 +90,7 @@ To bind remote data to grid component, assign service data as an instance of Dat
 {% include_relative code-snippet/data-binding/odata/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -111,6 +114,7 @@ The ODataV4 is an improved version of OData protocols, and the DataManager can a
 {% include_relative code-snippet/data-binding/odataV4/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -120,20 +124,19 @@ The ODataV4 is an improved version of OData protocols, and the DataManager can a
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight  tabtitle="dataoperations" %}
-{% include_relative code-snippet/data-binding/dataoperations//data-binding/dataoperations %}
+{% highlight c# tabtitle="dataoperations" %}
 {% endhighlight %}
 {% highlight cshtml tabtitle="dataoperations" %}
 {% include_relative code-snippet/data-binding/dataoperations/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight  tabtitle="dataoperations" %}
-{% include_relative code-snippet/data-binding/dataoperations//data-binding/dataoperations %}
+{% highlight c# tabtitle="dataoperations" %}
 {% endhighlight %}
 {% highlight razor tabtitle="dataoperations" %}
 {% include_relative code-snippet/data-binding/dataoperations/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -174,6 +177,7 @@ The parameters of DataManager bound to `DataManagerRequest` in the server. You c
 {% include_relative code-snippet/data-binding/serversideoperation/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -199,6 +203,7 @@ You can use **WebApiAdaptor** to bind grid with Web API created using OData endp
 {% include_relative code-snippet/data-binding/webapi/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -237,6 +242,7 @@ You can use the following code example to use **RemoteSaveAdaptor**.
 {% include_relative code-snippet/data-binding/remotesaveadaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -260,6 +266,7 @@ You can create your own adaptor by extending the built-in adaptors. The followin
 {% include_relative code-snippet/data-binding/customadaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -283,6 +290,7 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% include_relative code-snippet/data-binding/offline/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -306,6 +314,7 @@ To add a custom parameter to the data request, use the addParams method of **Que
 {% include_relative code-snippet/data-binding/params/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -334,6 +343,7 @@ The argument passed to the [`ActionFailure`](https://help.syncfusion.com/cr/aspn
 {% include_relative code-snippet/data-binding/httperror/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -362,6 +372,7 @@ You can bind DataTable to the grid by using [`DataSource`](https://help.syncfusi
 {% include_relative code-snippet/data-binding/datatable/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -372,19 +383,20 @@ You can bind DataTable to the grid by using [`DataSource`](https://help.syncfusi
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
 {% highlight c# tabtitle="clientdatatable " %}
-{% include_relative code-snippet/data-binding/clientdatatable /dataoperation.cs %}
+{% include_relative code-snippet/data-binding/clientdatatable/dataoperation.cs %}
 {% endhighlight %}
 {% highlight cshtml tabtitle="clientdatatable " %}
-{% include_relative code-snippet/data-binding/clientdatatable /taghelper %}
+{% include_relative code-snippet/data-binding/clientdatatable/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="clientdatatable " %}
-{% include_relative code-snippet/data-binding/clientdatatable /dataoperation.cs %}
+{% include_relative code-snippet/data-binding/clientdatatable/dataoperation.cs %}
 {% endhighlight %}
 {% highlight razor tabtitle="clientdatatable " %}
-{% include_relative code-snippet/data-binding/clientdatatable /razor %}
+{% include_relative code-snippet/data-binding/clientdatatable/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -397,19 +409,20 @@ To pass the data from client side to server side when performing CRUD operations
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
 {% highlight c# tabtitle="cruddatatable " %}
-{% include_relative code-snippet/data-binding/cruddatatable /dataoperation.cs %}
+{% include_relative code-snippet/data-binding/cruddatatable/dataoperation.cs %}
 {% endhighlight %}
 {% highlight cshtml tabtitle="cruddatatable " %}
-{% include_relative code-snippet/data-binding/cruddatatable /taghelper %}
+{% include_relative code-snippet/data-binding/cruddatatable/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="cruddatatable " %}
-{% include_relative code-snippet/data-binding/cruddatatable /dataoperation.cs %}
+{% include_relative code-snippet/data-binding/cruddatatable/dataoperation.cs %}
 {% endhighlight %}
 {% highlight razor tabtitle="cruddatatable " %}
-{% include_relative code-snippet/data-binding/cruddatatable /razor %}
+{% include_relative code-snippet/data-binding/cruddatatable/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

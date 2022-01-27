@@ -66,5 +66,6 @@ function setHeaderHeight(args) {
 {% include_relative code-snippet/how-to/orientation/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

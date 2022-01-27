@@ -37,6 +37,7 @@ the [`pageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 {% include_relative code-snippet/virtual-grid/row-virtualization/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -64,6 +65,7 @@ To setup the column virtualization, set the
 {% include_relative code-snippet/virtual-grid/column-virtualization/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

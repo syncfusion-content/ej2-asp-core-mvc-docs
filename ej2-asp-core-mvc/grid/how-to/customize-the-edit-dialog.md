@@ -31,5 +31,6 @@ In the below example, we have changed the dialog's header text for editing and a
 {% include_relative code-snippet/edit/custom-dialog/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

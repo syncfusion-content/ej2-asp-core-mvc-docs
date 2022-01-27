@@ -43,6 +43,7 @@ documentation: ug
 {% include_relative code-snippet/context-menu/contextmenu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -68,6 +69,7 @@ Actions for this customized items can be defined in the [`ContextMenuClick`](htt
 {% include_relative code-snippet/context-menu/customcontextmenu/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

@@ -37,5 +37,6 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% include_relative code-snippet/how-to/custom-column-menu-icon/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

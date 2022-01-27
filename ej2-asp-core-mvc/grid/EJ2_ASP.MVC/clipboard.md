@@ -27,6 +27,7 @@ documentation: ug
 {% include_relative code-snippet/clipboard/key/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -50,6 +51,7 @@ To copy selected rows or cells data into the clipboard with help of toolbar butt
 {% include_relative code-snippet/clipboard/clipboard/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -73,6 +75,7 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 {% include_relative code-snippet/clipboard/autofill/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -104,6 +107,7 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 {% include_relative code-snippet/clipboard/paste/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

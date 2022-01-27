@@ -51,5 +51,6 @@ Refresh the grid after the data source change by using the `refresh` method.
 {% include_relative code-snippet/how-to/refresh-datasource/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

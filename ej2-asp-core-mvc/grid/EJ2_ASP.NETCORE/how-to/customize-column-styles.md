@@ -61,5 +61,6 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 {% include_relative code-snippet/how-to/custom-column-style/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

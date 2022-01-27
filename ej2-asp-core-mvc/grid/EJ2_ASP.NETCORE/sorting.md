@@ -32,6 +32,7 @@ To enable sorting in the Grid, set the [`allowSorting`](https://help.syncfusion.
 {% include_relative code-snippet/sorting/sorting/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -60,6 +61,7 @@ To sort at initial rendering, set the **field** and
 {% include_relative code-snippet/sorting/initial-sort/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -88,6 +90,7 @@ To clear sorting for a particular column, press the "Shift + mouse left click".
 {% include_relative code-snippet/sorting/multi-column-sort/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -121,6 +124,7 @@ The following code example describes the handling of sorting operation at the se
 {% include_relative code-snippet/sorting/foreign-sort/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -144,6 +148,7 @@ During the sort action, the grid component triggers two events. The [`actionBegi
 {% include_relative code-snippet/sorting/sort-event/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 

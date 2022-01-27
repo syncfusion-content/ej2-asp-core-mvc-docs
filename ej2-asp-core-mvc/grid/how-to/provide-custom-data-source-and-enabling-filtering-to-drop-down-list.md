@@ -44,5 +44,6 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% include_relative code-snippet/how-to/dropdown-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 

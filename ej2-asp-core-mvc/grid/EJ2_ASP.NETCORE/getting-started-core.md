@@ -99,20 +99,19 @@ To initialize the Grid component add the below code to your `Index.cshtml` view
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight  tabtitle="grid" %}
-{% include_relative code-snippet/getting-start-core/grid//getting-start-core/grid %}
+{% highlight c# tabtitle="grid" %}
 {% endhighlight %}
 {% highlight cshtml tabtitle="grid" %}
 {% include_relative code-snippet/getting-start-core/grid/taghelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight  tabtitle="grid" %}
-{% include_relative code-snippet/getting-start-core/grid//getting-start-core/grid %}
+{% highlight c# tabtitle="grid" %}
 {% endhighlight %}
 {% highlight razor tabtitle="grid" %}
 {% include_relative code-snippet/getting-start-core/grid/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -136,6 +135,7 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 {% include_relative code-snippet/getting-start-core/databinding/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -171,6 +171,7 @@ Here, we have defined it for the conversion of numeric values to currency.
 {% include_relative code-snippet/getting-start-core/gridcolumns/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -194,6 +195,7 @@ The paging feature enables users to view the grid record in a paged view. It can
 {% include_relative code-snippet/getting-start-core/page/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -217,6 +219,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% include_relative code-snippet/getting-start-core/sorting/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -240,6 +243,7 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% include_relative code-snippet/getting-start-core/filtering/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
@@ -265,6 +269,7 @@ The grouping feature enables users to view the grid record in a grouped view. It
 {% include_relative code-snippet/getting-start-core/grouping/razor %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 
 
