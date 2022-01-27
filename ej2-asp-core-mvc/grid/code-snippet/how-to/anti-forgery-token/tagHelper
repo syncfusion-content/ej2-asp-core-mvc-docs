@@ -1,0 +1,78 @@
+@using Syncfusion.EJ2
+@Html.AntiForgeryToken()
+
+<div>
+    <ejs-grid id="Grid" load="load" toolbar="@(new List<string>() { "Add","Delete","Update", "Cancel" })" allowPaging="true">
+        <e-data-manager json="@ViewBag.data" adaptor="RemoteSaveAdaptor" insertUrl="/Home/Insert" updateUrl="/Home/Update" removeUrl="/Home/Delete"></e-data-manager>
+        <e-grid-editSettings allowDeleting="true" allowEditing="true" allowAdding="true" mode="Normal"></e-grid-editSettings>
+        <e-grid-pagesettings pageCount="5"></e-grid-pagesettings>
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true})" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer Name" validationRules="@(new { required=true})" width="150"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" validationRules="@(new { required=true})" textAlign="Right" editType="numericedit" format="C2" width="120"></e-grid-column>
+            <e-grid-column field="ShipCity" headerText="Ship City" width="170"></e-grid-column>            
+        </e-grid-columns>
+    </ejs-grid>
+</div>
+
+<script type="text/javascript">
+    window.customAdaptor = new ej.data.RemoteSaveAdaptor();
+
+    customAdaptor = ej.base.extend(customAdaptor, {
+        insert(dm, data, tableName) {
+            this.updateType = 'add';
+            return {
+                url: dm.dataSource.insertUrl || dm.dataSource.crudUrl || dm.dataSource.url,
+                data: $.param({
+                    //Added the anti-forgery token.
+                    __RequestVerificationToken: document.getElementsByName("__RequestVerificationToken")[0].value,
+                    value: data,
+                    table: tableName,
+                    action: 'insert'
+                }),
+                contentType: 'application/x-www-form-urlencoded; charset=UTF-8'
+            };
+        },
+        update(dm, keyField, value, tableName) {
+            debugger;
+            this.updateType = 'update';
+            this.updateKey = keyField;
+            return {
+                type: 'POST',
+                url: dm.dataSource.updateUrl || dm.dataSource.crudUrl || dm.dataSource.url,
+                data: $.param({
+                    //Added the anti-forgery token.
+                    __RequestVerificationToken: document.getElementsByName("__RequestVerificationToken")[0].value,
+                    value: value,
+                    action: 'update',
+                    keyColumn: keyField,
+                    key: value[keyField],
+                    table: tableName
+                }),
+                contentType: 'application/x-www-form-urlencoded; charset=UTF-8'
+            };
+        },
+        remove(dm, keyField, value, tableName) {
+            ej.data.JsonAdaptor.prototype.remove(dm, keyField, value);
+            return {
+                type: 'POST',
+                url: dm.dataSource.removeUrl || dm.dataSource.crudUrl || dm.dataSource.url,
+                data: $.param({
+                    //Added the anti-forgery token.
+                    __RequestVerificationToken: document.getElementsByName("__RequestVerificationToken")[0].value,
+                    key: value,
+                    keyColumn: keyField,
+                    table: tableName,
+                    action: 'remove'
+
+                }),
+                contentType: 'application/x-www-form-urlencoded; charset=UTF-8'
+            };
+        }
+
+    });
+
+    function load(args) {
+        this.dataSource.adaptor = customAdaptor;
+    }
+</script>

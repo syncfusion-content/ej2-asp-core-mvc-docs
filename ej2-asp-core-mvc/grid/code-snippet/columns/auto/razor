@@ -1,0 +1,1 @@
+@Html.EJS().Grid("Auto").DataSource((IEnumerable<object>)ViewBag.dataSource).Render()

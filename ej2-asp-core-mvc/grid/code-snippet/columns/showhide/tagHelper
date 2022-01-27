@@ -1,0 +1,26 @@
+ <ejs-button id="show" cssClass="e-flat" content="Show Columns"></ejs-button>
+    <ejs-button id="hide" cssClass="e-flat" content="Hide Columns"></ejs-button>
+
+    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="280">
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" width="100" textAlign="Right"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+            <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+            <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+            <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="100"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+
+    <script>
+
+        document.getElementById("show").addEventListener("click", function(){
+            var grid = document.getElementById("Grid").ej2_instances[0];
+            grid.showColumns(['Customer Name', 'Order Date']); //show by HeaderText
+        });
+
+        document.getElementById("hide").addEventListener("click", function() {
+            var grid = document.getElementById("Grid").ej2_instances[0];
+            grid.hideColumns(['Customer Name', 'Order Date']); //hide by HeaderText
+        })
+
+    </script>

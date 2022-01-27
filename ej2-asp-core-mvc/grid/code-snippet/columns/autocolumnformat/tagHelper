@@ -1,0 +1,19 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" dataBound="dataBound">
+           
+</ejs-grid>
+
+<script>
+    function dataBound() {
+        for (var i = 0; i < this.columns.length; i++) {
+            this.columns[0].width = 120;
+            if (this.columns[i].field === "OrderDate") {
+                this.columns[i].type = "date";
+            }
+            if (this.columns[i].type === "date") {
+                this.columns[i].format = { type: "date", format: "dd/MM/yyyy" };
+            }
+            this.columns[3].format = "P2";
+        }
+        this.refreshColumns();
+    }
+</script>

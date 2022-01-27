@@ -1,0 +1,26 @@
+@{
+    List<object> columnMenuitems = new List<object>();
+    columnMenuitems.Add(new { text = "Clear Sorting", id = "gridclearsorting" });
+    List<object> cols = new List<object>();
+    cols.Add(new { field = "CustomerID", direction = "Ascending" });
+}
+
+@Html.EJS().Grid("CustomColumnMenu").DataSource((IEnumerable<object>)ViewBag.dataSource).ShowColumnMenu(true).AllowSorting().Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+
+}).AllowPaging().SortSettings(sort => sort.Columns(cols)).ColumnMenuItems(columnMenuitems).ColumnMenuClick("columnMenuClick").ShowColumnMenu(true).Render()
+
+<script>
+
+    function columnMenuClick(args) {
+        if (args.item.id === 'gridclearsorting') {
+            this.clearSorting();
+        }
+    }
+    
+</script>

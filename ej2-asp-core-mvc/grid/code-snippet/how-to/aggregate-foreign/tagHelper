@@ -1,0 +1,25 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Customer ID" type="string" width="120" foreignKeyValue='FirstName' dataSource="ViewBag.ForeignData"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+    <e-grid-aggregates>
+        <e-grid-aggregate>
+            <e-aggregate-columns>
+                <e-aggregate-column field="EmployeeID" type="Custom" customAggregate="@("customAggregateFn")" footerTemplate="Count of Margaret:${Custom}"></e-aggregate-column>
+            </e-aggregate-columns>
+        </e-grid-aggregate>
+    </e-grid-aggregates>
+</ejs-grid>
+
+<script>
+    function customAggregateFn(data, column) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        return data.result.filter(function (dObj) {
+            return ej.base.getValue('FirstName', ej.grids.getForeignData(grid.getColumnByField(column.columnName), dObj)[0]) === 'Margaret';
+        }).length;
+    };
+</script>

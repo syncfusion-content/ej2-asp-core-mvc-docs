@@ -1,0 +1,22 @@
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+
+}).AllowPaging().BeforePrint("beforePrint").Toolbar(new List<string>() { "Print" }).Render()
+
+<script>
+    function beforePrint(args) {
+    var div = document.createElement("Div")
+        div.innerHTML = "Title here"
+        div.style.textAlign = 'center';
+        div.style.color = 'red';
+        div.style.padding = '10px 0';
+        div.style.fontSize = '25px';
+        args.element.insertBefore(div, args.element.childNodes[0]);
+}
+</script>

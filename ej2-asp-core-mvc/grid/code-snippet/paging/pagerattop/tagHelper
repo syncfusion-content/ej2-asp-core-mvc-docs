@@ -1,0 +1,25 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" dataBound="dataBound" toolbar="@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" })" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var initialLoad = true;
+    function dataBound(args) {
+        if (initialLoad) {
+            initialLoad = false;
+            var pager = document.getElementsByClassName('e-gridpager');
+            var topElement;
+            if (this.toolbar) {
+                topElement = document.getElementsByClassName('e-toolbar');
+            } else {
+                topElement = document.getElementsByClassName('e-gridheader');
+            }
+            topElement[0].before(pager[0]);
+        }
+    };
+</script>

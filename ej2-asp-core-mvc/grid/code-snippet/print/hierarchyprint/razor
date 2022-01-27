@@ -1,0 +1,31 @@
+@{ 
+  var SecondChildGrid = new Syncfusion.EJ2.Grids.Grid() { DataSource = (IEnumerable<object>)ViewBag.CustomerDataSource,
+      QueryString = "CustomerID",
+      Columns = new List<Syncfusion.EJ2.Grids.GridColumn>
+      {
+        new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="Customer ID", Width="90", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right },
+        new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCountry", HeaderText="Ship Country", Width="90" },
+      }
+  };
+
+  var ChildGrid = new Syncfusion.EJ2.Grids.Grid() { DataSource = (IEnumerable<object>)ViewBag.DataSource,
+      QueryString = "EmployeeID",
+      Columns = new List<Syncfusion.EJ2.Grids.GridColumn>
+      {
+        new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
+        new Syncfusion.EJ2.Grids.GridColumn(){ Field="Freight", HeaderText="Freight", Width="120", Format="C2", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right },
+        new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="150" },
+        new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="120" },
+      },
+      ChildGrid = SecondChildGrid
+    };
+}
+
+@Html.EJS().Grid("HierarchyPrint").DataSource((IEnumerable<object>)ViewBag.EmpDataSource).HierarchyPrintMode(Syncfusion.EJ2.Grids.HierarchyGridPrintMode.All).Columns(col =>
+{
+   col.Field("EmployeeID").HeaderText("Employee ID").Width("125").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("FirstName").HeaderText("Name").Width("125").Add();
+   col.Field("Country").HeaderText("Country").Width("180").Add();
+   col.Field("City").HeaderText("City").Width("135").Add();
+
+}).AllowSorting().Toolbar(new List<string>() { "Print"}).ChildGrid(ChildGrid).Render()

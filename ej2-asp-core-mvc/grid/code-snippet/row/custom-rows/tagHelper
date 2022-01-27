@@ -1,0 +1,22 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" enableHover="false" allowSelection="false"  rowDataBound="rowBound"> 
+    <e-grid-pagesettings pageSize="6"></e-grid-pagesettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight"  width="100" format='C2'></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+function rowBound(args) {
+    if (args.data['Freight'] < 10) {
+        args.row.classList.add('below-30');
+    } else if (args.data['Freight'] < 80) {
+        args.row.classList.add('below-80');
+    } else {
+        args.row.classList.add('above-80');
+    }
+}
+</script>

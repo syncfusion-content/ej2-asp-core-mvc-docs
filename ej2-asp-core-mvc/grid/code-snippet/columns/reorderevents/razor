@@ -1,0 +1,22 @@
+@Html.EJS().Grid("Reorder").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowReordering().Columns(col =>
+{
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("125").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("FirstName").HeaderText("Name").Width("125").Add();
+    col.Field("City").HeaderText("City").Width("190").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Country").HeaderText("Country").Width("135").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+
+}).ColumnDragStart("columnDragStart").ColumnDrag("columnDrag").ColumnDrop("columnDrop").Render()
+
+<script>
+
+    function columnDragStart() {
+        alert('columnDragStart event is triggered')
+    }
+    function columnDrag() {
+        alert('columnDrag event is triggered')
+    }
+    function columnDrop() {
+        alert('columnDrop event is triggered')
+    }
+
+</script>

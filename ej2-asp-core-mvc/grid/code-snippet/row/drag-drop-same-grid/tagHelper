@@ -1,0 +1,10 @@
+<div class="col-lg-6">
+    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource"  allowRowDragAndDrop="true" allowSelection="true">
+        <e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer ID" width="135"></e-grid-column>
+            <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="130"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>

@@ -1,0 +1,25 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" detailTemplate="#detailtemplate" detailDataBound="detailDataBound">
+        <e-grid-columns>
+            <e-grid-column field="FirstName" headerText="First Name" width="110"></e-grid-column>
+            <e-grid-column field="LastName" headerText="Last Name" width="110"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+    
+    <script id='detailtemplate' type="text/x-template">
+        <div class='custom-grid'></div>
+    </script>
+    
+    <script>
+        function detailDataBound(e) {
+           var data = @Json.Serialize(ViewBag.ChildDataSource);
+            var detail = new ej.grids.Grid({
+                dataSource: data.filter((item) => item['EmployeeID'] === e.data['EmployeeID']).slice(0, 3),
+                columns: [
+                    { field: 'OrderID', headerText: 'Order ID', width: 110 },
+                    { field: 'CustomerID', headerText: 'Customer Name', width: 140 },
+                    { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
+                ]
+            });
+            detail.appendTo(e.detailElement.querySelector('.custom-grid'));
+        }
+    </script>

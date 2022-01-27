@@ -1,0 +1,38 @@
+@Html.EJS().Button("disable").Content("Disable").Render()
+
+@Html.EJS().Button("enable").Content("Enable").Render()
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).ToolbarClick("toolbarClick").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").EditType("numericedit").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
+
+}).AllowPaging().PageSettings(page => page.PageCount(2)).AllowGrouping().GroupSettings(group => group.Columns(new string[] { "CustomerID" })).Toolbar(new List<string>() { "Expand", "Collapse" }).Render()
+
+<script>
+    document.getElementById("enable").addEventListener('click', () => {
+
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], true);// enable toolbar items.
+    });
+
+    document.getElementById("disable").addEventListener('click', () => {
+
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], false);// disable toolbar items.
+    });
+
+    function toolbarClick(args) {
+
+        if (args.item.id === 'Grid_Collapse') { // grid_Collapse is component id + '_' + toolbar item name.
+            this.groupModule.collapseAll();
+        }
+        if (args.item.id === 'Grid_Expand') {
+            this.groupModule.expandAll();
+        }
+
+    }
+</script>

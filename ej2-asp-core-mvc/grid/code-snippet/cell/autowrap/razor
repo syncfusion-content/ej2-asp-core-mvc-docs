@@ -1,0 +1,10 @@
+@Html.EJS().Grid("AutoWrap").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowTextWrap().Columns(col =>
+{
+
+   col.Field("NumberofPatentFamilies").HeaderText("NumberofPatentFamilies").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("Inventor").HeaderText("Inventor").Width("150").Add();
+   col.Field("NumberofINPADOCpatents").HeaderText("NumberofINPADOCpatents").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("Mainfieldsofinvention").HeaderText("Mainfieldsofinvention").Width("150").Add();
+   col.Field("Active").HeaderText("Active").Width("150").Add();
+
+}).AllowPaging().TextWrapSettings(text => { text.WrapMode(Syncfusion.EJ2.Grids.WrapMode.Content);}).Render()

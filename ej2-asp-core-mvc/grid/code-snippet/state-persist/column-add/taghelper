@@ -1,0 +1,17 @@
+<ejs-button id="add" content="Add Columns" isPrimary="true"></ejs-button>
+<ejs-grid id="Grid" dataSource="@ViewBag.Datasource" enablePersistence="true" allowPaging="true" height="270"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Customer ID"  width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City"  width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name"  width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+document.getElementById('add').onclick = function () {
+    var obj = { field: "Freight", headerText: 'Freight', width: 120 }
+    document.getElementById('Grid').ej2_instances[0].columns.push(obj); //you can add the columns by using the Grid columns method
+    document.getElementById('Grid').ej2_instances[0].refreshColumns();
+}
+</script>

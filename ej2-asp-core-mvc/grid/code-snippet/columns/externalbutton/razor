@@ -1,0 +1,20 @@
+@Html.EJS().Button("opencolumnchooser").Content("Open Column Chooser").IsPrimary(true).Render()
+
+@Html.EJS().Grid("ColumnChooserGrid").DataSource((IEnumerable<object>)ViewBag.DataSource).ShowColumnChooser(true).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").ShowInColumnChooser(false).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShippedDate").HeaderText("Shipped Date").Width("140").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCity").Visible(false).HeaderText("Ship Country").Width("150").Add();
+    col.Field("ShipCountry").Visible(false).HeaderText("Ship Country").Visible(false).Width("150").Add();
+
+}).AllowPaging().Render()
+
+<script>
+    document.getElementById('opencolumnchooser').addEventListener("click", () => {
+        var grid = document.getElementById('ColumnChooserGrid').ej2_instances[0];
+        grid.columnChooserModule.openColumnChooser(200, 50); // give X and Y axis
+    });
+</script>

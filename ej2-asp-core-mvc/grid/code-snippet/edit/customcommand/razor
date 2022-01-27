@@ -1,0 +1,22 @@
+@{
+    List<object> commands = new List<object>();
+    commands.Add(new { type = "userstatus", buttonOption = new { content = "Details", cssClass = "e-flat" } });
+}
+
+@Html.EJS().Grid("CustomCommand").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").EditType("numericedit").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").Add();
+    col.HeaderText("Commands").Width("160").Commands(commands).Add();
+
+}).AllowPaging().CommandClick("commandClick").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Render()
+
+<script>
+    function commandClick(args) {
+            alert(JSON.stringify(args.rowData));  // display row data
+        }
+    }
+</script>

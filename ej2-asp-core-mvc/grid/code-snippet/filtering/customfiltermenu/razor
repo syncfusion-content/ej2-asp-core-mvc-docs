@@ -1,0 +1,33 @@
+  @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering(true).Columns(col =>
+   {
+       col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+       col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+       col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+       col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+       col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+
+   }).AllowPaging().Render()
+
+<script>
+
+var dropInstance;
+function create (args) {
+    var db = new ej2.DataManager(data);
+    var flValInput = createElement('input', { className: 'flm-input' });
+    args.target.appendChild(flValInput);
+    dropInstance = new ej2.DropDownList({
+        dataSource: new ej2.DataManager(data),
+        fields: { text: 'OrderID', value: 'OrderID' },
+        placeholder: 'Select a value',
+        popupHeight: '200px'
+    });
+    dropInstance.appendTo(flValInput);
+}
+function write (args) {
+    dropInstance.value = args.filteredValue;
+}
+function read (args) {
+    args.fltrObj.filterByColumn(args.column.field, args.operator, dropInstance.value);
+}
+
+</script>

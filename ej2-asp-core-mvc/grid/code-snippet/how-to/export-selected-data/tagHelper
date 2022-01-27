@@ -1,0 +1,31 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPdfExport="true" allowExcelExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"PdfExport", "ExcelExport"})"
+          allowPaging="true" allowFiltering="true">
+    <e-grid-pagesettings pageCount="5" pageSize="5"></e-grid-pagesettings>
+    <e-grid-selectionSettings type="Multiple"></e-grid-selectionSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function toolbarClick(args) {
+        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_pdfexport') {
+            var pdfdata = gridObj.getSelectedRecords();
+            var exportProperties = {
+                dataSource: pdfdata
+            };
+            gridObj.pdfExport(exportProperties);
+        }
+        if (args.item.id === 'Grid_excelexport') {
+            var exceldata = gridObj.getSelectedRecords();
+            var exportProperties = {
+                dataSource: exceldata
+            };
+            gridObj.excelExport(exportProperties);
+        }
+    }
+</script>

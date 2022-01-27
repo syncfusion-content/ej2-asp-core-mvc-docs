@@ -1,0 +1,21 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="273" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })" load="load">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100" validationRules="@(new{ required = true })"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+
+    function load(args) {
+        this.columns[1].validationRules = { required: true, minLength: [customFn, 'Need atleast 5 letters'] };
+    }
+    
+    function customFn(args) {
+        return args['value'].length >= 5;
+    };
+
+</script>

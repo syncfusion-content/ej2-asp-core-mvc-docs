@@ -1,0 +1,129 @@
+@{
+    ViewData["Title"] = "DialogTemplate";
+}
+
+@model TestApplication.Models.OrdersDetails
+
+<div class="control-section">
+    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" actionComplete="actionComplete" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" allowPaging="true">
+        <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog" template='#dialogtemplate'></e-grid-editSettings>
+        <e-grid-pagesettings pageCount="5 "></e-grid-pagesettings>
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true})" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer Name" validationRules="@(new { required=true})" width="150"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150"></e-grid-column>
+            <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>
+
+<script id='dialogtemplate' type="text/x-template">
+    <div>
+        <div id="tab0" class='tab'>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <div class="e-float-input e-control-wrapper">
+                        <input id="OrderID" required name="OrderID" type="text" value="${if(isAdd)} '' ${else} ${OrderID} ${/if}" disabled="${if(isAdd)} '' ${else} disabled ${/if}" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text e-label-top" for="OrderID">Order ID</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <div class="e-float-input e-control-wrapper">
+                        <input id="CustomerID" required name="CustomerID" type="text" value="${if(isAdd)} '' ${else} ${CustomerID} ${/if}" />
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text e-label-top" for="CustomerID">Customer ID</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id=tab1 style="display: none" class='tab'>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" name="ShipCountry" id="ShipCountry" value="${if(isAdd)} '' ${else} ${ShipCountry} ${/if}" />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="checkbox" name="Verified" id="Verified" checked="${if(Verified)} checked ${/if}" />
+                </div>
+            </div>
+        </div>
+        <div id='footer'>
+            <button id="prevBtn" class="e-info e-btn" type="button" style="display: none; float: left; margin-left: 11px;">Previous</button>
+
+            <button id="nextBtn" class="e-info e-btn" type="button" style="float: right">Next</button>
+        </div>
+    </div>
+</script>
+
+<script>
+    function actionComplete(args) {
+        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
+            let countryData = ej.data.DataUtil.distinct(this.dataSource, 'ShipCountry', true);
+            new ej.dropdowns.DropDownList({
+                value: args.rowData.ShipCountry, popupHeight: '300px', floatLabelType: 'Always',
+                dataSource: countryData, fields: { text: 'ShipCountry', value: 'ShipCountry' }, placeholder: 'Ship Country'
+            }, args.form.elements.namedItem('ShipCountry'));
+            new ej.buttons.CheckBox({ label: 'Verified', checked: args.rowData.Verified }, args.form.elements.namedItem('Verified'));
+            // Set initail Focus
+            if (args.requestType === 'beginEdit') {
+                (args.form.elements.namedItem('CustomerID')).focus();
+            }
+            initializeWizard();
+        }
+    }
+    function initializeWizard() {
+        var currentTab = 0;
+
+        document.getElementById('nextBtn').onclick = function () {
+            var valid = true;
+            var grid = document.getElementById("Grid").ej2_instances[0];
+            [].slice.call(document.getElementById('tab' + currentTab).querySelectorAll('[name]')).forEach(element => {
+                element.form.ej2_instances[0].validate(element.name);
+                if (element.getAttribute('aria-invalid') === 'true') {
+                    valid = false;
+                }
+            });
+            if (!valid) {
+                return
+            }
+            if (this.innerHTML !== 'SUBMIT') {
+                currentTab++;
+                nextpre(currentTab);
+            } else {
+                grid.endEdit();
+            }
+        }
+
+        document.getElementById('prevBtn').onclick = function () {
+            var valid = true;
+            [].slice.call(document.getElementById('tab' + currentTab).querySelectorAll('[name]')).forEach(element => {
+                element.form.ej2_instances[0].validate(element.name);
+                if (element.getAttribute('aria-invalid') === 'true') {
+                    valid = false;
+                }
+            });
+            if (!valid) {
+                return
+            }
+            currentTab--;
+            nextpre(currentTab);
+        }
+    }
+
+    function nextpre(current) {
+        var tabs = [].slice.call(document.getElementsByClassName('tab'))
+        tabs.forEach(element => element.style.display = 'none');
+        tabs[current].style.display = '';
+        if (current) {
+            document.getElementById('prevBtn').style.display = '';
+            document.getElementById('nextBtn').innerHTML = 'SUBMIT';
+        } else {
+            document.getElementById('prevBtn').style.display = 'none';
+            document.getElementById('nextBtn').innerHTML = 'NEXT';
+        }
+    }
+</script>

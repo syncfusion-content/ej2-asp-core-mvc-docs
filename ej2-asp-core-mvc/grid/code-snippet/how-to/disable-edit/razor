@@ -1,0 +1,18 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPaging().Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width(30).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width(30).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width(30).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width(30).Add();
+
+}).EditSettings(edit => edit.AllowEditing(true)).Toolbar(new List<string>() { "Edit", "Cancel", "Update" }).ActionBegin("actionBegin").Render()
+
+<script>
+    function actionBegin(args) {
+        if (args.requestType === "beginEdit") {
+            if (args.rowData.ShipCountry == "Denmark") {
+                args.cancel = true;
+            }
+        }
+    }
+</script>
