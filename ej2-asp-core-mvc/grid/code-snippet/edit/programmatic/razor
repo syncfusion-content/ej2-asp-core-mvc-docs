@@ -1,0 +1,37 @@
+@Html.EJS().Button("add").Content("Add").IsPrimary(true).Render()
+@Html.EJS().Button("edit").Content("Edit").IsPrimary(true).Render()
+@Html.EJS().Button("delete").Content("Delete").IsPrimary(true).Render()
+@Html.EJS().Button("updaterow").Content("Update Row").IsPrimary(true).Render()
+@Html.EJS().Button("updatecell").Content("Update Cell").IsPrimary(true).Render()
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+{
+
+    col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("170").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Render()
+
+<script>
+    document.getElementById('add').onclick = function () {
+        document.getElementById('Grid').ej2_instances[0].addRecord({ "OrderID": "10001", "CustomerID": "ENTR", "OrderDate": "4/4/1998", "Freight": "250.9" });
+    }
+
+    document.getElementById('edit').onclick = function () {
+        document.getElementById('Grid').ej2_instances[0].startEdit();
+    }
+
+    document.getElementById('delete').onclick = function () {
+        document.getElementById('Grid').ej2_instances[0].deleteRecord();
+    }
+
+    document.getElementById('updaterow').onclick = function () {
+        document.getElementById('Grid').ej2_instances[0].updateRow(0, { OrderID: 10001, CustomerID: "ENTR", OrderDate: '4/4/1998', Freight: '250.9' });
+    }
+
+    document.getElementById('updatecell').onclick = function () {
+        document.getElementById('Grid').ej2_instances[0].setCellValue(document.getElementById('Grid').ej2_instances[0].currentViewData[0].OrderID, 'CustomerID', 'Value Changed');
+    }
+</script>

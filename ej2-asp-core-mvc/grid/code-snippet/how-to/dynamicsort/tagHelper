@@ -1,0 +1,26 @@
+    <ejs-button id="SingleSort" content="Single sort" cssClass="e-small"></ejs-button>
+    <ejs-button id="MultiSort" content="Multi sort" cssClass="e-small"></ejs-button>
+
+    <div id="GridParent">
+        <ejs-grid id="Grid" dataSource="ViewBag.DataSource" height="315" allowPaging="true" allowSorting="true">
+            <e-grid-columns>
+                <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
+                <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="120"></e-grid-column>
+                <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" width="120"></e-grid-column>
+                <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </div>
+
+    <script>
+        document.getElementById('SingleSort').addEventListener('click', () => {
+            var grid = document.getElementById("Grid").ej2_instances[0];
+            grid.sortColumn("OrderID", "Descending")
+        });
+
+        document.getElementById('MultiSort').addEventListener('click', () => {
+            var grid = document.getElementById("Grid").ej2_instances[0];
+            grid.sortModule.sortSettings.columns.push({ field: 'ShipCountry', direction: 'Ascending' }, { field: 'CustomerID', direction: 'Descending' });
+            grid.refresh();
+        });
+    </script>

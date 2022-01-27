@@ -1,0 +1,23 @@
+<ejs-numerictextbox id="numeric" width="200" min="0" showSpinButton="false" placeholder="Enter index to select a row" change="onChange"></ejs-numerictextbox>
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" rowSelected="rowSelected" height="270" width="100%">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+
+    function onChange(args) {
+        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        gridObj.selectRow(parseInt(this.getText(), 10));
+    }
+
+    function rowSelected(args) {
+        var rowHeight = this.getRows()[this.getSelectedRowIndexes()[0]].scrollHeight;
+        this.getContent().children[0].scrollTop = rowHeight * this.getSelectedRowIndexes()[0];
+    }
+
+</script>

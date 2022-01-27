@@ -1,0 +1,25 @@
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+
+}).AllowPaging().DataBound("dataBound").RowDataBound("rowDataBound").SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
+
+<script>
+    var selIndex = [];
+    function rowDataBound(args) {
+        if (args.data['EmployeeID'] > 3) {
+            selIndex.push(parseInt(args.row.getAttribute('aria-rowindex')));
+        }
+    }
+    function dataBound(args) {
+        if (selIndex.length) {
+            this.selectRows(selIndex);
+            selIndex = [];
+        }
+    }
+</script>

@@ -1,0 +1,27 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource"  allowFiltering="true" >
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID"  textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" customAttributes=@(new{@class="customcss"}) width="150" ></e-grid-column>        
+        <e-grid-column field="ShipCity" headerText="Shio City" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<style>
+
+.e-grid .e-rowcell.customcss{
+    background-color: #ecedee;
+    color: 'red';
+    font-family: 'Bell MT';
+    font-size: 20px;
+}
+
+.e-grid .e-headercell.customcss{
+    background-color: #2382c3;
+    color: white;
+    font-family: 'Bell MT';
+    font-size: 20px;
+}
+
+</style>

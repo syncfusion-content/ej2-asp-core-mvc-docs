@@ -1,0 +1,82 @@
+ <input type="text" value="1" class="rowindex" />
+    <ejs-button id="expand" content="Expand"></ejs-button>
+    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" detailTemplate="#detailtemplate">
+        <e-grid-columns>
+            <e-grid-column field="FirstName" headerText="First Name" width="110"></e-grid-column>
+            <e-grid-column field="LastName" headerText="Last Name" width="110"></e-grid-column>
+            <e-grid-column field="Title" headerText="Title" width="150"></e-grid-column>
+            <e-grid-column field="Country" headerText="Country" width="110"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+
+    <script>
+        document.getElementById('expand').addEventListener('click', () => {
+            var grid = document.getElementById("Grid").ej2_instances[0];
+            var inputElem = (document.getElementsByClassName('rowindex')[0]);
+            var rowIndex= parseInt(inputElem.value, 10);
+            grid.detailRowModule.expand(rowIndex);
+        });
+    </script>
+
+<style type="text/css" class="cssStyles">
+    .detailtable td {
+        font-size: 13px;
+        padding: 4px;
+        max-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        box-shadow: inset 0 0 1px #e0e0e0, inset 0 0 14px rgba(0, 0, 0, 0.2);
+    }
+</style> <script type="text/x-template" id="detailtemplate">
+    <table class="detailtable" width="100%">
+        <colgroup>
+            <col width="35%" />
+            <col width="35%" />
+            <col width="30%" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <td rowspan="4" style="text-align: center;">
+                    <img class="photo" src="/scripts/Images/Employees/${EmployeeID}.png" alt="${EmployeeID}" />
+                </td>
+                <td>
+                    <span style="font-weight: 500;">First Name: </span> ${FirstName}
+                </td>
+                <td>
+                    <span style="font-weight: 500;">Postal Code: </span> ${PostalCode}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="font-weight: 500;">Last Name: </span> ${LastName}
+                </td>
+                <td>
+                    <span style="font-weight: 500;">City: </span> ${City}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="font-weight: 500;">Title: </span> ${Title}
+                </td>
+                <td>
+                    <span style="font-weight: 500;">Phone: </span> ${HomePhone}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="font-weight: 500;">Address: </span> ${Address}
+                </td>
+                <td>
+                    <span style="font-weight: 500;">HireDate: </span> ${HireDate.toLocaleDateString()}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</script>

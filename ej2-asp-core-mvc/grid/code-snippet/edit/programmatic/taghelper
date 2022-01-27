@@ -1,0 +1,36 @@
+<ejs-button id="add" content="Add" isPrimary="true"></ejs-button>
+<ejs-button id="edit" content="Edit" isPrimary="true"></ejs-button>
+<ejs-button id="delete" content="Delete" isPrimary="true"></ejs-button>
+<ejs-button id="updaterow" content="Update Row" isPrimary="true"></ejs-button>
+<ejs-button id="updatecell" content="Update Cell" isPrimary="true"></ejs-button>
+<ejs-grid id="Grid" dataSource="@ViewBag.Datasource" height="270"> 
+<e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" isPrimaryKey="true"  width="120"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Customer ID"  width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City"  width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name"  width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    document.getElementById('add').onclick = function () {
+        document.getElementById('Grid').ej2_instances[0].addRecord({ "OrderID": "10001", "EmployeeID": "2", "ShipCity": "America", "ShipName": "Hanari" });
+    }
+
+    document.getElementById('edit').onclick = function () {
+        document.getElementById('Grid').ej2_instances[0].startEdit();
+    }
+
+    document.getElementById('delete').onclick = function () {
+        document.getElementById('Grid').ej2_instances[0].deleteRecord();
+    }
+
+    document.getElementById('updaterow').onclick = function () {
+        document.getElementById('Grid').ej2_instances[0].updateRow(0, { OrderID: 10001, EmployeeID: 5, ShipCity: 'America', ShipName: 'Hanari' });
+    }
+
+    document.getElementById('updatecell').onclick = function () {
+       document.getElementById('Grid').ej2_instances[0].setCellValue(document.getElementById('Grid').ej2_instances[0].currentViewData[0].OrderID, 'ShipCity', 'Value Changed');
+    }
+</script>

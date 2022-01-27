@@ -1,0 +1,10 @@
+<ejs-grid id="Grid" dataSource=((System.Data.DataTable)ViewBag.DataSource) allowPaging="true">
+            
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText=" Order Date" format="yMd" width="130"></e-grid-column>
+   </e-grid-columns>
+
+ </ejs-grid>

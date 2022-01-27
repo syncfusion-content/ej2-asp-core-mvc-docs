@@ -1,0 +1,21 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" columnMenuOpen="columnMenuOpen" allowFiltering="true" allowGrouping="true" showColumnMenu="true" allowSorting="true"  allowPaging="true" >
+     <e-grid-filtersettings type="Menu"></e-grid-filtersettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID"  width="200"  textAlign="Right"  ></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right"  format="C2" editType="numericedit" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name"  width="300"></e-grid-column>
+        <e-grid-column field="ShipCountry"  headerText="Ship Country" visible="false"  width="200" ></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City"  width="200"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function columnMenuOpen(args) {
+        for (let item of args.items) {
+            if (item.text === 'Filter' && args.column.field === 'OrderID') {
+                item.hide = true;
+            } else {
+                item.hide = false;
+            }
+        }      
+    }
+</script>

@@ -1,0 +1,26 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ActionComplete("access").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).EditType("numericedit").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
+
+}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+
+<script>
+
+    function access(args) {
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            var tr = args.row;
+            var numericTextBox = tr.querySelector('.e-numerictextbox'); // numeric TextBox component element
+            if (numericTextBox) {
+                console.log('NumericTextBox instance: ', numericTextBox.ej2_instances[0]); // numeric TextBox instance
+            }
+            var dropDownList = tr.querySelector('.e-dropdownlist'); // dropDownList component element
+            if (dropDownList) {
+                console.log('DropDownList instance: ', dropDownList.ej2_instances[0]); // dropDownList instance
+            }
+        }
+    }
+</script>

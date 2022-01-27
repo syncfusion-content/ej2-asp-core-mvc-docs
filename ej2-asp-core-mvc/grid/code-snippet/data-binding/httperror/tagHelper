@@ -1,0 +1,18 @@
+<ejs-grid id="Grid"  actionFailure="actionFailure" >
+    <e-data-manager url="http://some.com/invalidUrl"></e-data-manager>
+    <e-grid-pagesettings pageSize="7"></e-grid-pagesettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' textAlign="Right" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function actionFailure(args) {
+        var span = document.createElement('span');
+        this.element.parentNode.insertBefore(span, this.element);
+        span.style.color = '#FF0000'
+        span.innerHTML = 'Server exception: 404 Not found';
+    }
+</script>

@@ -1,0 +1,31 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPdfExport="true" allowExcelExport="true" toolbarClick="toolbarClick" pdfExportComplete="pdfExportComplete" excelExportComplete="excelExportComplete" toolbar="@(new List<string>() {"PdfExport", "ExcelExport"})" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" visible="false" width="140"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="140" format="yMd"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var queryClone;
+    function toolbarClick(args) {
+        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_pdfexport') {
+            queryClone = gridObj.query;
+            gridObj.query = new ej.data.Query().addParams("recordcount", "12");
+            gridObj.pdfExport();
+        }
+        else if (args.item.id === 'Grid_excelexport') {
+            queryClone = gridObj.query;
+            gridObj.query = new ej.data.Query().addParams("recordcount", "12");
+            gridObj.excelExport();
+        }
+    }
+    function pdfExportComplete(args) {
+        this.query = queryClone;
+    }
+    function excelExportComplete(args) {
+        this.query = queryClone;
+    }
+</script>

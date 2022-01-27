@@ -1,0 +1,64 @@
+@{
+    ViewData["Title"] = "DialogTemplate";
+}
+
+<div class="control-section">
+    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" actionComplete="actionComplete" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" allowPaging="true">
+        <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog" template='#dialogtemplate'></e-grid-editSettings>
+        <e-grid-pagesettings pageCount="5 "></e-grid-pagesettings>
+        <e-grid-columns>
+           <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true})" textAlign="Right" width="120"></e-grid-column>
+           <e-grid-column field="CustomerID" headerText="Customer Name" validationRules="@(new { required=true})" width="150"></e-grid-column>
+           <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+ </div>
+
+<script id='dialogtemplate' type="text/x-template">
+    <div id="dialogTemp"></div>
+</script>
+
+    
+<script>
+    function actionComplete(args) {
+        if (args.requestType === 'beginEdit') {
+            var ajax = new ej.base.Ajax({
+                url: "/Grid/EditPartial", //render the partial view
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ value: args.rowData })
+            });
+            ajax.send().then(function (data) {
+                appendElement(data, args.form); //Render the edit form with selected record
+                args.form.elements.namedItem('CustomerID').focus();
+            }).catch(function (xhr) {
+                console.log(xhr);
+            });
+        }
+
+        if (args.requestType === 'add') {
+            var ajax = new ej.base.Ajax({
+                url: "/Grid/AddPartial", //render the partial view
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ value: args.rowData })
+            });
+            ajax.send().then(function (data) {
+                appendElement(data, args.form); //Render the edit form with selected record
+                args.form.elements.namedItem('OrderID').focus();
+            }).catch(function (xhr) {
+                console.log(xhr);
+            });
+        }
+    }
+
+    function appendElement(elementString, form) {
+        form.querySelector("#dialogTemp").innerHTML = elementString;
+        var script = document.createElement('script');
+        script.type = "text/javascript";
+        var serverScript = form.querySelector("#dialogTemp").querySelector('script');
+        script.textContent = serverScript.innerHTML;
+        document.head.appendChild(script);
+        serverScript.remove();
+    }
+</script>

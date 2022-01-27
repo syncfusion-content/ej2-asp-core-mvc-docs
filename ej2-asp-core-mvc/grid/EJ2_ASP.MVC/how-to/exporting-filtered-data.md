@@ -1,0 +1,34 @@
+---
+layout: post
+title: Welcome to Syncfusion Essential ##Platform_Name##
+description: Learn here all about Exporting Filtered Data of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+platform: ej2-asp-core-mvc
+control: Exporting Filtered Data
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
+# Exporting Filtered Data Only
+
+You can export the filtered data by defining the resulted data in [`dataSource`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#datasource) property of [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#pdfexportproperties) before export.
+
+In the below Pdf exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in [`dataSource`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#datasource) property and pass it to [`PdfExport`](https://ej2.syncfusion.com/documentation/api/grid/#pdfexport) method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+{% tabs %}
+{% highlight %}
+{% include_relative code-snippet/how-to/export-filtered-data/export-filtered-data.cs %}
+{% endhighlight %}
+{% highlight %}
+{% include_relative code-snippet/how-to/export-filtered-data/taghelper %}
+{% endhighlight %}
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+{% highlight %} {% include_relative code-snippet/how-to/export-filtered-data/export-filtered-data.cs %}
+{% endhighlight %}
+{% highlight %}
+{% include_relative code-snippet/how-to/export-filtered-data/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+

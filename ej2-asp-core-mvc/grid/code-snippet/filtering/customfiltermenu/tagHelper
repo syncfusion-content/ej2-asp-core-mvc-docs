@@ -1,0 +1,37 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowFiltering="true" height="273">
+    <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"> 
+            <e-filter>
+                <ui create="create" write="write" read="read"></ui>
+            </e-filter>
+        </e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+
+var dropInstance;
+function create (args) {
+    var db = new ej2.DataManager(data);
+    var flValInput = createElement('input', { className: 'flm-input' });
+    args.target.appendChild(flValInput);
+    dropInstance = new ej2.DropDownList({
+        dataSource: new ej2.DataManager(data),
+        fields: { text: 'OrderID', value: 'OrderID' },
+        placeholder: 'Select a value',
+        popupHeight: '200px'
+    });
+    dropInstance.appendTo(flValInput);
+}
+function write (args) {
+    dropInstance.value = args.filteredValue;
+}
+function read (args) {
+    args.fltrObj.filterByColumn(args.column.field, args.operator, dropInstance.value);
+}
+
+</script>

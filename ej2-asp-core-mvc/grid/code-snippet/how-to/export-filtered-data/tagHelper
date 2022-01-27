@@ -1,0 +1,33 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPdfExport="true" toolbarClick="toolbarClick" toolbar="@(new List<string>() {"PdfExport"})"
+ allowPaging="true" allowFiltering="true"> 
+<e-grid-pagesettings pageCount="5" pageSize="5"></e-grid-pagesettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function toolbarClick(args) {
+        var gridObj = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_pdfexport') {
+            var pdfdata;
+            var query = gridObj.renderModule.data.generateQuery(); // get grid corresponding query  
+            for (var i = 0; i < query.queries.length; i++) {
+                if (query.queries[i].fn == 'onPage') {
+                    query.queries.splice(i, 1);     // remove page query to get all records
+                    break;
+                }
+            }
+            var data = @Html.Raw(Json.Serialize(ViewBag.DataSource));
+            var fdata = new ej.data.DataManager({ json: data }).executeQuery(query).then((e) => {
+                pdfdata = e.result;   // get all filtered records
+                var exportProperties = {
+                    dataSource: pdfdata,
+                };
+                gridObj.pdfExport(exportProperties);
+            }).catch((e) => true);
+        }
+    }
+</script>

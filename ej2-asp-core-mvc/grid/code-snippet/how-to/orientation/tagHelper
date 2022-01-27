@@ -1,0 +1,29 @@
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" created="setHeaderHeight">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150" customAttributes="@(new { @class="orientationcss" })"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<style>
+
+    .orientationcss .e-headercelldiv {
+        transform: rotate(90deg);
+    }
+
+</style>
+
+<script>
+
+    function setHeaderHeight(args) {
+        var textWidth = document.querySelector(".orientationcss > div").scrollWidth; // obtain the width of the headerText content.
+        var headerCell = document.querySelectorAll(".e-headercell");
+        for (var i = 0; i < headerCell.length; i++) {
+            headerCell.item(i).style.height = textWidth + 'px'; // assign the obtained textWidth as the height of the headerCell.
+        }
+    }
+
+</script>

@@ -1,0 +1,13 @@
+@{
+    var DropDownList = new Syncfusion.EJ2.DropDowns.DropDownList() { DataSource = ViewBag.DropDownData, Query = "new ej.data.Query()", AllowFiltering = true, Fields = new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings() { Value = "Country", Text = "Country" } };
+}
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Edit(new { @params = DropDownList }).Add();
+
+}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()

@@ -1,0 +1,71 @@
+<ejs-grid id="Grid" dataSource=@ViewBag.DataSource height="400" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="ProductID" headerText="Product ID" textAlign="Right" isPrimaryKey="true" width="100"></e-grid-column>
+        <e-grid-column field="ProductName" headerText="Product Name" width="120"></e-grid-column>
+        <e-grid-column field="UnitPrice" headerText="Unit Price" editType="numericedit" edit="@(new {create = "priceCreate", read = "priceRead", destroy = "priceDestroy", write = "priceWrite"})" width="150" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="UnitsInStock" headerText="Units In Stock" editType="numericedit" edit="@(new {create = "stockCreate", read = "stockRead", destroy = "stockDestroy", write = "stockWrite"})" width="150" textAlign="Right"></e-grid-column>
+        <e-grid-column field="TotalCost" headerText="Total Cost" width="150" allowEditing='false' format="C2" textAlign="Right"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var priceElem;
+    var priceObj;
+
+    var stockElem;
+    var stockObj;
+
+    function priceCreate(args) {
+        priceElem = document.createElement('input');
+        return priceElem;
+    }
+
+    function priceWrite(args) {
+
+        priceObj = new ej.inputs.NumericTextBox({
+            value: args.rowData[args.column.field],
+            change: function (args) {
+                var formEle = document.getElementById("Grid").querySelector("form").ej2_instances[0];
+                var totalCostFieldEle = formEle.getInputElement('TotalCost');
+                totalCostFieldEle.value = priceObj.value * stockObj.value;
+            }
+        });
+        priceObj.appendTo(priceElem);
+    }
+
+    function priceDestroy() {
+        priceObj.destroy();
+    }
+
+    function priceRead(args) {
+        return priceObj.value;
+    }
+    
+    function stockCreate(args) {
+        stockElem = document.createElement('input');
+        return stockElem;
+    }
+
+    function stockWrite(args) {
+
+        stockObj = new ej.inputs.NumericTextBox({
+            value: args.rowData[args.column.field],
+            change: function (args) {
+                var formEle = document.getElementById("Grid").querySelector("form").ej2_instances[0];
+                var totalCostFieldEle = formEle.getInputElement('TotalCost');
+                totalCostFieldEle.value = priceObj.value * stockObj.value;
+            }
+        });
+        stockObj.appendTo(stockElem);
+    }
+
+    function stockDestroy() {
+        stockObj.destroy();
+    }
+
+    function stockRead(args) {
+        return stockObj.value;
+    }
+   
+</script>

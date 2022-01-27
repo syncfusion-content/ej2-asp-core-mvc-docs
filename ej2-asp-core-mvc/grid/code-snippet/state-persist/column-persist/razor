@@ -1,0 +1,47 @@
+@Html.EJS().Button("restore").Content("Restore").IsPrimary(true).Render()
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).EnablePersistence(true).Columns(col =>
+{
+
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("170").HeaderTemplate("#customertemplate").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Template("#template").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+
+}).AllowPaging(true).PageSettings(page => page.PageCount(5)).Render()
+
+<script>
+document.getElementById('restore').onclick = function () {
+    var savedProperties = JSON.parse(document.getElementById('Grid').ej2_instances[0].getPersistData());
+    var gridColumnsState = Object.assign([], document.getElementById('Grid').ej2_instances[0].getColumns());
+    savedProperties.columns.forEach(function (col) {
+        var headerText = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['headerText'];
+        var colTemplate = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['template'];
+        var headerTemplate = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['headerTemplate'];
+        col.headerText = 'Text Changed';
+        col.template = colTemplate;
+        col.headerTemplate = headerTemplate;
+    });
+        console.log(savedProperties);
+        document.getElementById('Grid').ej2_instances[0].setProperties(savedProperties);
+}
+</script>
+
+<script id="template" type="text/x-template">
+    <a rel='nofollow' href="https://en.wikipedia.org/wiki/${Freight}"><span class="e-icons e-Reply"></span></a>
+</script>
+  
+<script id="customertemplate" type="text/x-template">
+    <span class="e-icons e-header" ></span>
+    Customer ID
+</script>
+  
+<style>
+    .e-Reply:before {
+        content: '\e815';
+    }
+  
+    .e-header:before {
+        content: '\ea9a';
+    }
+</style>
