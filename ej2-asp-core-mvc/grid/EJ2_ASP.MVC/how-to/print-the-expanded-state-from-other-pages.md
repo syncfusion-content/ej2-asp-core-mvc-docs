@@ -20,14 +20,14 @@ In the following example, we have printed expanded child grids form other pages.
 {% highlight c# tabtitle="hierarchyprint" %}
 {% include_relative code-snippet/how-to/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="hierarchyprint" %}
-{% include_relative code-snippet/how-to/hierarchyprint/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/hierarchyprint/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="hierarchyprint" %}
 {% include_relative code-snippet/how-to/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="hierarchyprint" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/hierarchyprint/razor %}
 {% endhighlight %}
 {% endtabs %}

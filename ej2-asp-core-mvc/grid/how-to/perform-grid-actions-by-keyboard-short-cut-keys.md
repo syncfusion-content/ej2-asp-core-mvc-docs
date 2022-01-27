@@ -19,17 +19,17 @@ The following example demonstrates on **Adding** a new row when **Enter** key is
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="keyboard-actions" %}
+{% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/keyboard-actions/*.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="keyboard-actions" %}
-{% include_relative code-snippet/edit/keyboard-actions/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/keyboard-actions/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="keyboard-actions" %}
+{% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/keyboard-actions/*.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="keyboard-actions" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/keyboard-actions/razor %}
 {% endhighlight %}
 {% endtabs %}

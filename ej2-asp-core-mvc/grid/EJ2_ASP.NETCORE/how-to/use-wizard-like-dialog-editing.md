@@ -17,17 +17,17 @@ The following example demonstrate the wizard like editing in the grid with the o
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="wizardediting" %}
+{% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/wizardediting/*.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="wizardediting" %}
-{% include_relative code-snippet/edit/wizardediting/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/wizardediting/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="wizardediting" %}
+{% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/wizardediting/*.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="wizardediting" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/wizardediting/razor %}
 {% endhighlight %}
 {% endtabs %}

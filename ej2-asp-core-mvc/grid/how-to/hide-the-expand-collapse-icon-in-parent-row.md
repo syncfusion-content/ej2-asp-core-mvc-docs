@@ -57,14 +57,14 @@ In the below demo, the expand/collapse icon in the row with `EmployeeID` as `1` 
 {% highlight c# tabtitle="hidearrow" %}
 {% include_relative code-snippet/how-to/hidearrow/hidearrow.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="hidearrow" %}
-{% include_relative code-snippet/how-to/hidearrow/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/hidearrow/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="hidearrow" %}
 {% include_relative code-snippet/how-to/hidearrow/hidearrow.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="hidearrow" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/hidearrow/razor %}
 {% endhighlight %}
 {% endtabs %}

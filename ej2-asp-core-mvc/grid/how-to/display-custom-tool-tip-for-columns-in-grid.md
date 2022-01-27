@@ -29,14 +29,14 @@ function beforeRender(args) {
 {% highlight c# tabtitle="custom-tooltip" %}
 {% include_relative code-snippet/how-to/custom-tooltip/custom-tooltip.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="custom-tooltip" %}
-{% include_relative code-snippet/how-to/custom-tooltip/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/custom-tooltip/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="custom-tooltip" %}
 {% include_relative code-snippet/how-to/custom-tooltip/custom-tooltip.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="custom-tooltip" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/custom-tooltip/razor %}
 {% endhighlight %}
 {% endtabs %}

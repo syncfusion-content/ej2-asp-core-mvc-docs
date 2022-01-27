@@ -40,14 +40,14 @@ grid.refreshHeader();
 {% highlight c# tabtitle="column-header-text" %}
 {% include_relative code-snippet/how-to/column-header-text/column-header-text.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="column-header-text" %}
-{% include_relative code-snippet/how-to/column-header-text/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/column-header-text/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="column-header-text" %}
 {% include_relative code-snippet/how-to/column-header-text/column-header-text.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="column-header-text" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/column-header-text/razor %}
 {% endhighlight %}
 {% endtabs %}

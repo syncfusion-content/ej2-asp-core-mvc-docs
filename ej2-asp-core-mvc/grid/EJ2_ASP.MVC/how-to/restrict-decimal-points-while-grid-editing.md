@@ -20,14 +20,14 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% highlight c# tabtitle="prevent-decimal-point" %}
 {% include_relative code-snippet/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="prevent-decimal-point" %}
-{% include_relative code-snippet/how-to/prevent-decimal-point/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/prevent-decimal-point/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="prevent-decimal-point" %}
 {% include_relative code-snippet/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="prevent-decimal-point" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/prevent-decimal-point/razor %}
 {% endhighlight %}
 {% endtabs %}

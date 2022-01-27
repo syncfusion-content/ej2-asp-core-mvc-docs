@@ -17,17 +17,17 @@ In the below example, we have passed `recordcount` as `12` using `addParams` met
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="passing-params-exporting" %}
+{% highlight c# tabtitle="additional-parameter" %}
 {% include_relative code-snippet/how-to/passing-params-exporting/additional-parameter.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="passing-params-exporting" %}
-{% include_relative code-snippet/how-to/passing-params-exporting/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/passing-params-exporting/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="passing-params-exporting" %}
+{% highlight c# tabtitle="additional-parameter" %}
 {% include_relative code-snippet/how-to/passing-params-exporting/additional-parameter.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="passing-params-exporting" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/passing-params-exporting/razor %}
 {% endhighlight %}
 {% endtabs %}

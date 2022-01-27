@@ -22,14 +22,14 @@ To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 {% highlight c# tabtitle="infinite-scroll-normal" %}
 {% include_relative code-snippet/infinite-scroll-normal/infinite-scroll-normal.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="infinite-scroll-normal" %}
-{% include_relative code-snippet/infinite-scroll-normal/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/infinite-scroll-normal/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="infinite-scroll-normal" %}
 {% include_relative code-snippet/infinite-scroll-normal/infinite-scroll-normal.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="infinite-scroll-normal" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/infinite-scroll-normal/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -48,14 +48,14 @@ In the below demo, we have changed this property value to load five page records
 {% highlight c# tabtitle="infinite-scroll-initialblocks" %}
 {% include_relative code-snippet/infinite-scroll-initialblocks/infinite-scroll-initialblocks.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="infinite-scroll-initialblocks" %}
-{% include_relative code-snippet/infinite-scroll-initialblocks/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/infinite-scroll-initialblocks/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="infinite-scroll-initialblocks" %}
 {% include_relative code-snippet/infinite-scroll-initialblocks/infinite-scroll-initialblocks.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="infinite-scroll-initialblocks" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/infinite-scroll-initialblocks/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -74,14 +74,14 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 {% highlight c# tabtitle="infinite-scroll-cache" %}
 {% include_relative code-snippet/infinite-scroll-cache/infinite-scroll-cache.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="infinite-scroll-cache" %}
-{% include_relative code-snippet/infinite-scroll-cache/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/infinite-scroll-cache/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="infinite-scroll-cache" %}
 {% include_relative code-snippet/infinite-scroll-cache/infinite-scroll-cache.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="infinite-scroll-cache" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/infinite-scroll-cache/razor %}
 {% endhighlight %}
 {% endtabs %}

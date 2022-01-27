@@ -25,17 +25,17 @@ In the below sample, grid is rendered with a customized column menu icon.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="custom-column-menu-icon" %}
+{% highlight c# tabtitle="column-icon" %}
 {% include_relative code-snippet/how-to/custom-column-menu-icon/column-icon.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="custom-column-menu-icon" %}
-{% include_relative code-snippet/how-to/custom-column-menu-icon/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/custom-column-menu-icon/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="custom-column-menu-icon" %}
+{% highlight c# tabtitle="column-icon" %}
 {% include_relative code-snippet/how-to/custom-column-menu-icon/column-icon.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="custom-column-menu-icon" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/custom-column-menu-icon/razor %}
 {% endhighlight %}
 {% endtabs %}

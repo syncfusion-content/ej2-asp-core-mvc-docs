@@ -32,14 +32,14 @@ documentation: ug
 {% highlight c# tabtitle="contextmenu" %}
 {% include_relative code-snippet/context-menu/contextmenu/contextmenu.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="contextmenu" %}
-{% include_relative code-snippet/context-menu/contextmenu/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/context-menu/contextmenu/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="contextmenu" %}
 {% include_relative code-snippet/context-menu/contextmenu/contextmenu.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="contextmenu" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/context-menu/contextmenu/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -58,14 +58,14 @@ Actions for this customized items can be defined in the [`ContextMenuClick`](htt
 {% highlight c# tabtitle="customcontextmenu" %}
 {% include_relative code-snippet/context-menu/customcontextmenu/customcontextmenu.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="customcontextmenu" %}
-{% include_relative code-snippet/context-menu/customcontextmenu/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/context-menu/customcontextmenu/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="customcontextmenu" %}
 {% include_relative code-snippet/context-menu/customcontextmenu/customcontextmenu.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="customcontextmenu" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/context-menu/customcontextmenu/razor %}
 {% endhighlight %}
 {% endtabs %}

@@ -76,14 +76,14 @@ Now assign the custom adaptor to the grid as follows.
 {% highlight c# tabtitle="anti-forgery-token" %}
 {% include_relative code-snippet/how-to/anti-forgery-token/anti-forgery-token.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="anti-forgery-token" %}
-{% include_relative code-snippet/how-to/anti-forgery-token/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/anti-forgery-token/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="anti-forgery-token" %}
 {% include_relative code-snippet/how-to/anti-forgery-token/anti-forgery-token.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="anti-forgery-token" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/anti-forgery-token/razor %}
 {% endhighlight %}
 {% endtabs %}

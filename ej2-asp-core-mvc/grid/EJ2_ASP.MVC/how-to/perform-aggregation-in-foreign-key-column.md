@@ -20,14 +20,14 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% highlight c# tabtitle="aggregate-foreign" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="aggregate-foreign" %}
-{% include_relative code-snippet/how-to/aggregate-foreign/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/aggregate-foreign/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="aggregate-foreign" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="aggregate-foreign" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/aggregate-foreign/razor %}
 {% endhighlight %}
 {% endtabs %}

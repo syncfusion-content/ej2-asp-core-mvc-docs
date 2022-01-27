@@ -20,14 +20,14 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% highlight c# tabtitle="edit-temp" %}
 {% include_relative code-snippet/how-to/edit-temp/edit-temp.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="edit-temp" %}
-{% include_relative code-snippet/how-to/edit-temp/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/edit-temp/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="edit-temp" %}
 {% include_relative code-snippet/how-to/edit-temp/edit-temp.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="edit-temp" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/edit-temp/razor %}
 {% endhighlight %}
 {% endtabs %}

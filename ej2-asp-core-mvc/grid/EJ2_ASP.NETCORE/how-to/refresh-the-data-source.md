@@ -40,14 +40,14 @@ Refresh the grid after the data source change by using the **refresh** method.
 {% highlight c# tabtitle="refresh-datasource" %}
 {% include_relative code-snippet/how-to/refresh-datasource/refresh-datasource.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="refresh-datasource" %}
-{% include_relative code-snippet/how-to/refresh-datasource/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/refresh-datasource/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="refresh-datasource" %}
 {% include_relative code-snippet/how-to/refresh-datasource/refresh-datasource.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="refresh-datasource" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/refresh-datasource/razor %}
 {% endhighlight %}
 {% endtabs %}

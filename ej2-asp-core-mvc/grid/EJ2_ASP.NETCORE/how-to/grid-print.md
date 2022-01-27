@@ -18,14 +18,14 @@ You can add your title in the header through an [`beforePrint`](https://help.syn
 {% highlight c# tabtitle="titleprint" %}
 {% include_relative code-snippet/how-to/titleprint/titleprint.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="titleprint" %}
-{% include_relative code-snippet/how-to/titleprint/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/titleprint/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="titleprint" %}
 {% include_relative code-snippet/how-to/titleprint/titleprint.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="titleprint" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/titleprint/razor %}
 {% endhighlight %}
 {% endtabs %}

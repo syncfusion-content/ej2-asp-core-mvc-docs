@@ -20,14 +20,14 @@ In the following example, `Employee.EmployeeID` is a complex column and also dec
 {% highlight c# tabtitle="foreignkey" %}
 {% include_relative code-snippet/columns/foreignkey/foreignkey.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="foreignkey" %}
-{% include_relative code-snippet/columns/foreignkey/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/columns/foreignkey/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="foreignkey" %}
 {% include_relative code-snippet/columns/foreignkey/foreignkey.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="foreignkey" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/columns/foreignkey/razor %}
 {% endhighlight %}
 {% endtabs %}

@@ -20,14 +20,14 @@ In the below code we have displayed the null date values at bottom of the Grid r
 {% highlight c# tabtitle="sort-comparer" %}
 {% include_relative code-snippet/how-to/sort-comparer/sort-comparer.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="sort-comparer" %}
-{% include_relative code-snippet/how-to/sort-comparer/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/sort-comparer/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="sort-comparer" %}
 {% include_relative code-snippet/how-to/sort-comparer/sort-comparer.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="sort-comparer" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/sort-comparer/razor %}
 {% endhighlight %}
 {% endtabs %}

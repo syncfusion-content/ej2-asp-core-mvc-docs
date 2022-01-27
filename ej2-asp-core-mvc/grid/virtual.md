@@ -26,14 +26,14 @@ the [`PageSettings.PageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 {% highlight c# tabtitle="row-virtualization" %}
 {% include_relative code-snippet/virtual-grid/row-virtualization/row-virtualization.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="row-virtualization" %}
-{% include_relative code-snippet/virtual-grid/row-virtualization/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/virtual-grid/row-virtualization/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="row-virtualization" %}
 {% include_relative code-snippet/virtual-grid/row-virtualization/row-virtualization.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="row-virtualization" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/virtual-grid/row-virtualization/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -51,17 +51,17 @@ To setup the column virtualization, set the
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="column-virtualization" %}
+{% highlight c# tabtitle="Column-virtualization" %}
 {% include_relative code-snippet/virtual-grid/column-virtualization/Column-virtualization.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="column-virtualization" %}
-{% include_relative code-snippet/virtual-grid/column-virtualization/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/virtual-grid/column-virtualization/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="column-virtualization" %}
+{% highlight c# tabtitle="Column-virtualization" %}
 {% include_relative code-snippet/virtual-grid/column-virtualization/Column-virtualization.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="column-virtualization" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/virtual-grid/column-virtualization/razor %}
 {% endhighlight %}
 {% endtabs %}

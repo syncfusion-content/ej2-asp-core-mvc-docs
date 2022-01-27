@@ -50,14 +50,14 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 {% highlight c# tabtitle="custom-column-style" %}
 {% include_relative code-snippet/how-to/custom-column-style/custom-column-style.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="custom-column-style" %}
-{% include_relative code-snippet/how-to/custom-column-style/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/custom-column-style/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="custom-column-style" %}
 {% include_relative code-snippet/how-to/custom-column-style/custom-column-style.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="custom-column-style" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/custom-column-style/razor %}
 {% endhighlight %}
 {% endtabs %}

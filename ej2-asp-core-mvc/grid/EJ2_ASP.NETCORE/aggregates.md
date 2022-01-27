@@ -46,14 +46,14 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 {% highlight c# tabtitle="footer-agg" %}
 {% include_relative code-snippet/aggregate/footer-agg/footer-agg.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="footer-agg" %}
-{% include_relative code-snippet/aggregate/footer-agg/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/aggregate/footer-agg/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="footer-agg" %}
 {% include_relative code-snippet/aggregate/footer-agg/footer-agg.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="footer-agg" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/aggregate/footer-agg/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -72,14 +72,14 @@ You can format the aggregate value result by using the [`format`](https://help.s
 {% highlight c# tabtitle="format-agg" %}
 {% include_relative code-snippet/aggregate/format-agg/format-agg.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="format-agg" %}
-{% include_relative code-snippet/aggregate/format-agg/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/aggregate/format-agg/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="format-agg" %}
 {% include_relative code-snippet/aggregate/format-agg/format-agg.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="format-agg" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/aggregate/format-agg/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -98,14 +98,14 @@ If [`groupFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% highlight c# tabtitle="group-caption" %}
 {% include_relative code-snippet/aggregate/group-caption/group-caption.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="group-caption" %}
-{% include_relative code-snippet/aggregate/group-caption/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/aggregate/group-caption/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="group-caption" %}
 {% include_relative code-snippet/aggregate/group-caption/group-caption.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="group-caption" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/aggregate/group-caption/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -129,14 +129,14 @@ object.
 {% highlight c# tabtitle="custom-agg" %}
 {% include_relative code-snippet/aggregate/custom-agg/custom-agg.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="custom-agg" %}
-{% include_relative code-snippet/aggregate/custom-agg/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/aggregate/custom-agg/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="custom-agg" %}
 {% include_relative code-snippet/aggregate/custom-agg/custom-agg.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="custom-agg" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/aggregate/custom-agg/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -157,14 +157,14 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 {% highlight c# tabtitle="reactive-agg-batch-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-batch-edit/reactive-agg-batch-edit.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="reactive-agg-batch-edit" %}
-{% include_relative code-snippet/aggregate/reactive-agg-batch-edit/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/aggregate/reactive-agg-batch-edit/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="reactive-agg-batch-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-batch-edit/reactive-agg-batch-edit.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="reactive-agg-batch-edit" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/aggregate/reactive-agg-batch-edit/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -183,14 +183,14 @@ In the following code, the input event for the Freight column editor has been re
 {% highlight c# tabtitle="reactive-agg-inline-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-inline-edit/reactive-agg-inline-edit.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="reactive-agg-inline-edit" %}
-{% include_relative code-snippet/aggregate/reactive-agg-inline-edit/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/aggregate/reactive-agg-inline-edit/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="reactive-agg-inline-edit" %}
 {% include_relative code-snippet/aggregate/reactive-agg-inline-edit/reactive-agg-inline-edit.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="reactive-agg-inline-edit" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/aggregate/reactive-agg-inline-edit/razor %}
 {% endhighlight %}
 {% endtabs %}

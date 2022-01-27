@@ -19,14 +19,14 @@ documentation: ug
 {% highlight c# tabtitle="celleditparams" %}
 {% include_relative code-snippet/edit/celleditparams/celleditparams.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="celleditparams" %}
-{% include_relative code-snippet/edit/celleditparams/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/celleditparams/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="celleditparams" %}
 {% include_relative code-snippet/edit/celleditparams/celleditparams.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="celleditparams" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/celleditparams/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -53,14 +53,14 @@ The cell edit template is used to add a custom component for a particular column
 {% highlight c# tabtitle="celledittemplate" %}
 {% include_relative code-snippet/edit/celledittemplate/celledittemplate.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="celledittemplate" %}
-{% include_relative code-snippet/edit/celledittemplate/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/celledittemplate/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="celledittemplate" %}
 {% include_relative code-snippet/edit/celledittemplate/celledittemplate.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="celledittemplate" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/celledittemplate/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -87,14 +87,14 @@ To enable Normal edit, set the [`EditSettings.Mode`](https://help.syncfusion.com
 {% highlight c# tabtitle="inline" %}
 {% include_relative code-snippet/edit/inline/inline.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="inline" %}
-{% include_relative code-snippet/edit/inline/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/inline/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="inline" %}
 {% include_relative code-snippet/edit/inline/inline.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="inline" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/inline/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -112,17 +112,17 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="cancel-edit-inline" %}
+{% highlight c# tabtitle="canceleditinline" %}
 {% include_relative code-snippet/edit/cancel-edit-inline/canceleditinline.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="cancel-edit-inline" %}
-{% include_relative code-snippet/edit/cancel-edit-inline/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/cancel-edit-inline/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="cancel-edit-inline" %}
+{% highlight c# tabtitle="canceleditinline" %}
 {% include_relative code-snippet/edit/cancel-edit-inline/canceleditinline.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="cancel-edit-inline" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/cancel-edit-inline/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -141,14 +141,14 @@ To enable Dialog edit, set the [`EditSettings.Mode`](https://help.syncfusion.com
 {% highlight c# tabtitle="dialog" %}
 {% include_relative code-snippet/edit/dialog/dialog.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="dialog" %}
-{% include_relative code-snippet/edit/dialog/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/dialog/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="dialog" %}
 {% include_relative code-snippet/edit/dialog/dialog.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="dialog" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/dialog/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -167,14 +167,14 @@ To enable Batch edit, set the [`EditSettings.Mode`](https://help.syncfusion.com/
 {% highlight c# tabtitle="batch" %}
 {% include_relative code-snippet/edit/batch/batch.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="batch" %}
-{% include_relative code-snippet/edit/batch/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/batch/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="batch" %}
 {% include_relative code-snippet/edit/batch/batch.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="batch" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/batch/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -190,17 +190,17 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="cancel-edit-batch" %}
+{% highlight c# tabtitle="canceleditbatch" %}
 {% include_relative code-snippet/edit/cancel-edit-batch/canceleditbatch.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="cancel-edit-batch" %}
-{% include_relative code-snippet/edit/cancel-edit-batch/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/cancel-edit-batch/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="cancel-edit-batch" %}
+{% highlight c# tabtitle="canceleditbatch" %}
 {% include_relative code-snippet/edit/cancel-edit-batch/canceleditbatch.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="cancel-edit-batch" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/cancel-edit-batch/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -218,17 +218,17 @@ In the below code example, demonstrate the usage of binding a partial view in th
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="dialogtemplate" %}
+{% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/dialogtemplate/*.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="dialogtemplate" %}
-{% include_relative code-snippet/edit/dialogtemplate/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/dialogtemplate/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="dialogtemplate" %}
+{% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/dialogtemplate/*.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="dialogtemplate" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/dialogtemplate/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -296,14 +296,14 @@ By default, a new row will be added at the top of the grid. You can change it by
 {% highlight c# tabtitle="rowposition" %}
 {% include_relative code-snippet/edit/rowposition/rowposition.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="rowposition" %}
-{% include_relative code-snippet/edit/rowposition/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/rowposition/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="rowposition" %}
 {% include_relative code-snippet/edit/rowposition/rowposition.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="rowposition" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/rowposition/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -331,14 +331,14 @@ The available built-in command buttons are:
 {% highlight c# tabtitle="commandcolumn" %}
 {% include_relative code-snippet/edit/commandcolumn/commandcolumn.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="commandcolumn" %}
-{% include_relative code-snippet/edit/commandcolumn/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/commandcolumn/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="commandcolumn" %}
 {% include_relative code-snippet/edit/commandcolumn/commandcolumn.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="commandcolumn" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/commandcolumn/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -356,14 +356,14 @@ the action for the custom buttons can be defined in the `ButtonOption.Click` eve
 {% highlight c# tabtitle="customcommand" %}
 {% include_relative code-snippet/edit/customcommand/customcommand.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="customcommand" %}
-{% include_relative code-snippet/edit/customcommand/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/customcommand/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="customcommand" %}
 {% include_relative code-snippet/edit/customcommand/customcommand.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="customcommand" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/customcommand/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -382,14 +382,14 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 {% highlight c# tabtitle="deleteconfirm" %}
 {% include_relative code-snippet/edit/deleteconfirm/deleteconfirm.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="deleteconfirm" %}
-{% include_relative code-snippet/edit/deleteconfirm/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/deleteconfirm/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="deleteconfirm" %}
 {% include_relative code-snippet/edit/deleteconfirm/deleteconfirm.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="deleteconfirm" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/deleteconfirm/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -408,14 +408,14 @@ By default, grid will show the confirm dialog when saving or cancelling or perfo
 {% highlight c# tabtitle="batchconfirm" %}
 {% include_relative code-snippet/edit/batchconfirm/batchconfirm.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="batchconfirm" %}
-{% include_relative code-snippet/edit/batchconfirm/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/batchconfirm/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="batchconfirm" %}
 {% include_relative code-snippet/edit/batchconfirm/batchconfirm.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="batchconfirm" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/batchconfirm/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -437,14 +437,14 @@ You can set validation rules by defining the [`Columns.ValidationRules`](https:/
 {% highlight c# tabtitle="columnvalid" %}
 {% include_relative code-snippet/edit/columnvalid/columnvalid.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="columnvalid" %}
-{% include_relative code-snippet/edit/columnvalid/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/columnvalid/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="columnvalid" %}
 {% include_relative code-snippet/edit/columnvalid/columnvalid.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="columnvalid" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/columnvalid/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -475,14 +475,14 @@ The following code example describes the above behavior.
 {% highlight c# tabtitle="urladaptor" %}
 {% include_relative code-snippet/edit/urladaptor/urladaptor.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="urladaptor" %}
-{% include_relative code-snippet/edit/urladaptor/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/urladaptor/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="urladaptor" %}
 {% include_relative code-snippet/edit/urladaptor/urladaptor.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="urladaptor" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/urladaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -496,17 +496,17 @@ The following code example describes the above behavior.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="urladaptor" %}
+{% highlight c# tabtitle="data" %}
 {% include_relative code-snippet/edit/urladaptor/data.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="urladaptor" %}
-{% include_relative code-snippet/edit/urladaptor/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/urladaptor/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="urladaptor" %}
+{% highlight c# tabtitle="data" %}
 {% include_relative code-snippet/edit/urladaptor/data.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="urladaptor" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/urladaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -521,17 +521,17 @@ Using the `InsertUrl` property, you can specify the controller action mapping UR
 The following code example describes the above behavior.
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="urladaptor" %}
+{% highlight c# tabtitle="insert" %}
 {% include_relative code-snippet/edit/urladaptor/insert.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="urladaptor" %}
-{% include_relative code-snippet/edit/urladaptor/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/urladaptor/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="urladaptor" %}
+{% highlight c# tabtitle="insert" %}
 {% include_relative code-snippet/edit/urladaptor/insert.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="urladaptor" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/urladaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -550,17 +550,17 @@ Using the `UpdateUrl` property, the controller action mapping URL can be specifi
 The following code example describes the previous behavior.
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="urladaptor" %}
+{% highlight c# tabtitle="update" %}
 {% include_relative code-snippet/edit/urladaptor/update.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="urladaptor" %}
-{% include_relative code-snippet/edit/urladaptor/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/urladaptor/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="urladaptor" %}
+{% highlight c# tabtitle="update" %}
 {% include_relative code-snippet/edit/urladaptor/update.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="urladaptor" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/urladaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -580,17 +580,17 @@ The following code example describes the previous behavior.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="urladaptor" %}
+{% highlight c# tabtitle="delete" %}
 {% include_relative code-snippet/edit/urladaptor/delete.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="urladaptor" %}
-{% include_relative code-snippet/edit/urladaptor/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/urladaptor/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="urladaptor" %}
+{% highlight c# tabtitle="delete" %}
 {% include_relative code-snippet/edit/urladaptor/delete.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="urladaptor" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/urladaptor/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -615,14 +615,14 @@ The following code example describes the above behavior.
 {% highlight c# tabtitle="crudurl" %}
 {% include_relative code-snippet/edit/crudurl/crudurl.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="crudurl" %}
-{% include_relative code-snippet/edit/crudurl/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/crudurl/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="crudurl" %}
 {% include_relative code-snippet/edit/crudurl/crudurl.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="crudurl" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/crudurl/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -648,14 +648,14 @@ The following code example describes the above behavior.
 {% highlight c# tabtitle="batchurl" %}
 {% include_relative code-snippet/edit/batchurl/batchurl.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="batchurl" %}
-{% include_relative code-snippet/edit/batchurl/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/batchurl/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="batchurl" %}
 {% include_relative code-snippet/edit/batchurl/batchurl.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="batchurl" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/batchurl/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -682,14 +682,14 @@ To set a default value for the particular column by defining the [`Columns.Defau
 {% highlight c# tabtitle="defaultcolumnvalue" %}
 {% include_relative code-snippet/edit/defaultcolumnvalue/defaultcolumnvalue.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="defaultcolumnvalue" %}
-{% include_relative code-snippet/edit/defaultcolumnvalue/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/defaultcolumnvalue/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="defaultcolumnvalue" %}
 {% include_relative code-snippet/edit/defaultcolumnvalue/defaultcolumnvalue.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="defaultcolumnvalue" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/defaultcolumnvalue/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -708,14 +708,14 @@ In the below demo, custom validation applied for `CustomerID` column.
 {% highlight c# tabtitle="customvalidation" %}
 {% include_relative code-snippet/edit/customvalidation/customvalidation.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="customvalidation" %}
-{% include_relative code-snippet/edit/customvalidation/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/customvalidation/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="customvalidation" %}
 {% include_relative code-snippet/edit/customvalidation/customvalidation.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="customvalidation" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/customvalidation/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -734,14 +734,14 @@ In the following demo, editing is disabled for the `CustomerID` column.
 {% highlight c# tabtitle="disableeditforcolumn" %}
 {% include_relative code-snippet/edit/disableeditforcolumn/disableeditforcolumn.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="disableeditforcolumn" %}
-{% include_relative code-snippet/edit/disableeditforcolumn/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/disableeditforcolumn/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="disableeditforcolumn" %}
 {% include_relative code-snippet/edit/disableeditforcolumn/disableeditforcolumn.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="disableeditforcolumn" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/disableeditforcolumn/razor %}
 {% endhighlight %}
 {% endtabs %}

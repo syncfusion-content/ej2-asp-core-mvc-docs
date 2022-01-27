@@ -18,14 +18,14 @@ The following example shows how to set Complex field for datasource having Array
 {% highlight c# tabtitle="complexarray" %}
 {% include_relative code-snippet/columns/complexarray/complexarray.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="complexarray" %}
-{% include_relative code-snippet/columns/complexarray/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/columns/complexarray/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="complexarray" %}
 {% include_relative code-snippet/columns/complexarray/complexarray.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="complexarray" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/columns/complexarray/razor %}
 {% endhighlight %}
 {% endtabs %}

@@ -23,14 +23,14 @@ The grid does not maintain the query params after page load event when the [`Ena
 {% highlight c# tabtitle="state-persist" %}
 {% include_relative code-snippet/state-persist/state-persist/state-persist.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="state-persist" %}
-{% include_relative code-snippet/state-persist/state-persist/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/state-persist/state-persist/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="state-persist" %}
 {% include_relative code-snippet/state-persist/state-persist/state-persist.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="state-persist" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/state-persist/state-persist/razor %}
 {% endhighlight %}
 {% endtabs %}

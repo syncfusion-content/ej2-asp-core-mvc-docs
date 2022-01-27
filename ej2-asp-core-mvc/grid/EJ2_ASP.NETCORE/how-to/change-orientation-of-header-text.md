@@ -55,14 +55,14 @@ function setHeaderHeight(args) {
 {% highlight c# tabtitle="orientation" %}
 {% include_relative code-snippet/how-to/orientation/orientation.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="orientation" %}
-{% include_relative code-snippet/how-to/orientation/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/how-to/orientation/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="orientation" %}
 {% include_relative code-snippet/how-to/orientation/orientation.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="orientation" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/how-to/orientation/razor %}
 {% endhighlight %}
 {% endtabs %}

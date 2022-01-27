@@ -104,13 +104,13 @@ To initialize the Grid component add the below code to your **Index.cshtml** vi
 {% tabs %}
 {% highlight c# tabtitle="initialize" %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="initialize" %}
-{% include_relative code-snippet/getting-start-mvc/initialize/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/initialize/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% highlight c# tabtitle="initialize" %}
 {% endhighlight %}
-{% highlight razor tabtitle="initialize" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/getting-start-mvc/initialize/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -124,17 +124,17 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="databinding" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/databinding/orderDetails.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="databinding" %}
-{% include_relative code-snippet/getting-start-mvc/databinding/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/databinding/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="databinding" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/databinding/orderDetails.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="databinding" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/getting-start-mvc/databinding/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -160,17 +160,17 @@ Here, you have defined it for the conversion of numeric values to currency.
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="columns" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/columns/orderDetails.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="columns" %}
-{% include_relative code-snippet/getting-start-mvc/columns/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/columns/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="columns" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/columns/orderDetails.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="columns" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/getting-start-mvc/columns/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -184,17 +184,17 @@ The paging feature enables users to view the grid record in a paged view. It can
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="page" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/page/orderDetails.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="page" %}
-{% include_relative code-snippet/getting-start-mvc/page/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/page/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="page" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/page/orderDetails.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="page" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/getting-start-mvc/page/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -208,17 +208,17 @@ The sorting feature enables you to order the records. It can be enabled by setti
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="sorting" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/sorting/orderDetails.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="sorting" %}
-{% include_relative code-snippet/getting-start-mvc/sorting/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/sorting/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="sorting" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/sorting/orderDetails.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="sorting" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/getting-start-mvc/sorting/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -232,17 +232,17 @@ The filtering feature enables you to view reduced amount of records based on fil
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="filtering" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/filtering/orderDetails.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="filtering" %}
-{% include_relative code-snippet/getting-start-mvc/filtering/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/filtering/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="filtering" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/filtering/orderDetails.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="filtering" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/getting-start-mvc/filtering/razor %}
 {% endhighlight %}
 {% endtabs %}
@@ -258,17 +258,17 @@ The grouping feature enables users to view the grid record in a grouped view. It
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="grouping" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/grouping/orderDetails.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="grouping" %}
-{% include_relative code-snippet/getting-start-mvc/grouping/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/getting-start-mvc/grouping/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="grouping" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include_relative code-snippet/getting-start-mvc/grouping/orderDetails.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="grouping" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/getting-start-mvc/grouping/razor %}
 {% endhighlight %}
 {% endtabs %}

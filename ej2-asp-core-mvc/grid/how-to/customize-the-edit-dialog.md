@@ -17,17 +17,17 @@ In the below example, we have changed the dialog's header text for editing and a
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
-{% highlight c# tabtitle="custom-dialog" %}
+{% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/custom-dialog/*.cs %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="custom-dialog" %}
-{% include_relative code-snippet/edit/custom-dialog/taghelper %}
+{% highlight cshtml tabtitle="tagHelpers" %}
+{% include_relative code-snippet/edit/custom-dialog/tagHelper %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-{% highlight c# tabtitle="custom-dialog" %}
+{% highlight c# tabtitle="*" %}
 {% include_relative code-snippet/edit/custom-dialog/*.cs %}
 {% endhighlight %}
-{% highlight razor tabtitle="custom-dialog" %}
+{% highlight razor tabtitle="razor" %}
 {% include_relative code-snippet/edit/custom-dialog/razor %}
 {% endhighlight %}
 {% endtabs %}
