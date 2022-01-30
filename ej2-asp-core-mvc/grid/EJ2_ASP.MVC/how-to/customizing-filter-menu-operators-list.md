@@ -24,22 +24,22 @@ In the following sample, we have customized string filter operators.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customize-filter-menu" %}
-{% include_relative code-snippet/how-to/customize-filter-menu/customize-filter-menu.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/customize-filter-menu/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/customize-filter-menu/tagHelper %}
+{% highlight c# tabtitle="customize-filter-menu" %}
+{% include code-snippet/grid/how-to/customize-filter-menu/customize-filter-menu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customize-filter-menu" %}
-{% include_relative code-snippet/how-to/customize-filter-menu/customize-filter-menu.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/customize-filter-menu/razor %}
+{% include code-snippet/grid/how-to/customize-filter-menu/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="customize-filter-menu" %}
+{% include code-snippet/grid/how-to/customize-filter-menu/customize-filter-menu.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

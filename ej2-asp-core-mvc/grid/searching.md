@@ -23,22 +23,22 @@ To search grid records from an external button, invoke the `search` method.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="initial-search" %}
-{% include_relative code-snippet/search/external-btn/initial-search.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/search/external-btn/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/search/external-btn/tagHelper %}
+{% highlight c# tabtitle="initial-search" %}
+{% include code-snippet/grid/search/external-btn/initial-search.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="initial-search" %}
-{% include_relative code-snippet/search/external-btn/initial-search.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/search/external-btn/razor %}
+{% include code-snippet/grid/search/external-btn/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="initial-search" %}
+{% include code-snippet/grid/search/external-btn/initial-search.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -52,22 +52,22 @@ By default, grid searches all visible columns. You can search specific columns b
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="search-a-column" %}
-{% include_relative code-snippet/search/search-a-column/search-a-column.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/search/search-a-column/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/search/search-a-column/tagHelper %}
+{% highlight c# tabtitle="search-a-column" %}
+{% include code-snippet/grid/search/search-a-column/search-a-column.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="search-a-column" %}
-{% include_relative code-snippet/search/search-a-column/search-a-column.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/search/search-a-column/razor %}
+{% include code-snippet/grid/search/search-a-column/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="search-a-column" %}
+{% include code-snippet/grid/search/search-a-column/search-a-column.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -81,22 +81,22 @@ To clear the searched grid records from the external button, set [`searchSetting
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="clear-search" %}
-{% include_relative code-snippet/search/clear-search/clear-search.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/search/clear-search/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/search/clear-search/tagHelper %}
+{% highlight c# tabtitle="clear-search" %}
+{% include code-snippet/grid/search/clear-search/clear-search.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="clear-search" %}
-{% include_relative code-snippet/search/clear-search/clear-search.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/search/clear-search/razor %}
+{% include code-snippet/grid/search/clear-search/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="clear-search" %}
+{% include code-snippet/grid/search/clear-search/clear-search.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

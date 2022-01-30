@@ -32,22 +32,22 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-dropdownlist" %}
-{% include_relative code-snippet/how-to/dropdown-edit/edit-dropdownlist.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/dropdown-edit/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/dropdown-edit/tagHelper %}
+{% highlight c# tabtitle="edit-dropdownlist" %}
+{% include code-snippet/grid/how-to/dropdown-edit/edit-dropdownlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-dropdownlist" %}
-{% include_relative code-snippet/how-to/dropdown-edit/edit-dropdownlist.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/dropdown-edit/razor %}
+{% include code-snippet/grid/how-to/dropdown-edit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="edit-dropdownlist" %}
+{% include code-snippet/grid/how-to/dropdown-edit/edit-dropdownlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

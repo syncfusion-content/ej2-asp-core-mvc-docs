@@ -24,22 +24,22 @@ the [`pageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="row-virtualization" %}
-{% include_relative code-snippet/virtual-grid/row-virtualization/row-virtualization.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/virtual-grid/row-virtualization/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/virtual-grid/row-virtualization/tagHelper %}
+{% highlight c# tabtitle="row-virtualization" %}
+{% include code-snippet/grid/virtual-grid/row-virtualization/row-virtualization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="row-virtualization" %}
-{% include_relative code-snippet/virtual-grid/row-virtualization/row-virtualization.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/virtual-grid/row-virtualization/razor %}
+{% include code-snippet/grid/virtual-grid/row-virtualization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-virtualization" %}
+{% include code-snippet/grid/virtual-grid/row-virtualization/row-virtualization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -57,22 +57,22 @@ To setup the column virtualization, set the
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Column-virtualization" %}
-{% include_relative code-snippet/virtual-grid/column-virtualization/Column-virtualization.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/virtual-grid/column-virtualization/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/virtual-grid/column-virtualization/tagHelper %}
+{% highlight c# tabtitle="Column-virtualization" %}
+{% include code-snippet/grid/virtual-grid/column-virtualization/Column-virtualization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Column-virtualization" %}
-{% include_relative code-snippet/virtual-grid/column-virtualization/Column-virtualization.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/virtual-grid/column-virtualization/razor %}
+{% include code-snippet/grid/virtual-grid/column-virtualization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Column-virtualization" %}
+{% include code-snippet/grid/virtual-grid/column-virtualization/Column-virtualization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

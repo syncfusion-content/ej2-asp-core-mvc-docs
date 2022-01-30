@@ -18,22 +18,22 @@ In the below sample, we have overridden the default **generateQuery** to display
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="group-page-size" %}
-{% include_relative code-snippet/how-to/group-page-size/group-page-size.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/group-page-size/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/group-page-size/tagHelper %}
+{% highlight c# tabtitle="group-page-size" %}
+{% include code-snippet/grid/how-to/group-page-size/group-page-size.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="group-page-size" %}
-{% include_relative code-snippet/how-to/group-page-size/group-page-size.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/group-page-size/razor %}
+{% include code-snippet/grid/how-to/group-page-size/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="group-page-size" %}
+{% include code-snippet/grid/how-to/group-page-size/group-page-size.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

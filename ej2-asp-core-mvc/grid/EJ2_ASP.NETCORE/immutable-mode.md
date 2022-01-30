@@ -20,22 +20,22 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://help
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="immutable" %}
-{% include_relative code-snippet/immutable-mode/immutable.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/immutable-mode/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/immutable-mode/tagHelper %}
+{% highlight c# tabtitle="immutable" %}
+{% include code-snippet/grid/immutable-mode/immutable.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="immutable" %}
-{% include_relative code-snippet/immutable-mode/immutable.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/immutable-mode/razor %}
+{% include code-snippet/grid/immutable-mode/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="immutable" %}
+{% include code-snippet/grid/immutable-mode/immutable.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

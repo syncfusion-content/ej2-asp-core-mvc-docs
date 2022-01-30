@@ -16,22 +16,22 @@ You can focus the double clicked column edit form an through an [`recordDoubleCl
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="focus" %}
-{% include_relative code-snippet/how-to/focus/focus.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/focus/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/focus/tagHelper %}
+{% highlight c# tabtitle="focus" %}
+{% include code-snippet/grid/how-to/focus/focus.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="focus" %}
-{% include_relative code-snippet/how-to/focus/focus.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/focus/razor %}
+{% include code-snippet/grid/how-to/focus/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="focus" %}
+{% include code-snippet/grid/how-to/focus/focus.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

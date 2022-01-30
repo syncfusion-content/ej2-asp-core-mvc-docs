@@ -56,22 +56,22 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disablegrid" %}
-{% include_relative code-snippet/how-to/disablegrid/disablegrid.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/disablegrid/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/disablegrid/tagHelper %}
+{% highlight c# tabtitle="disablegrid" %}
+{% include code-snippet/grid/how-to/disablegrid/disablegrid.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disablegrid" %}
-{% include_relative code-snippet/how-to/disablegrid/disablegrid.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/disablegrid/razor %}
+{% include code-snippet/grid/how-to/disablegrid/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="disablegrid" %}
+{% include code-snippet/grid/how-to/disablegrid/disablegrid.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

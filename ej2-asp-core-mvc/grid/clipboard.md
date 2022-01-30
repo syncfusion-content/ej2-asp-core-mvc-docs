@@ -14,22 +14,22 @@ documentation: ug
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="local" %}
-{% include_relative code-snippet/clipboard/key/local.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/clipboard/key/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/clipboard/key/tagHelper %}
+{% highlight c# tabtitle="local" %}
+{% include code-snippet/grid/clipboard/key/local.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="local" %}
-{% include_relative code-snippet/clipboard/key/local.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/clipboard/key/razor %}
+{% include code-snippet/grid/clipboard/key/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="local" %}
+{% include code-snippet/grid/clipboard/key/local.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -43,22 +43,22 @@ To copy selected rows or cells data into the clipboard with help of toolbar butt
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="local" %}
-{% include_relative code-snippet/clipboard/clipboard/local.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/clipboard/clipboard/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/clipboard/clipboard/tagHelper %}
+{% highlight c# tabtitle="local" %}
+{% include code-snippet/grid/clipboard/clipboard/local.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="local" %}
-{% include_relative code-snippet/clipboard/clipboard/local.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/clipboard/clipboard/razor %}
+{% include code-snippet/grid/clipboard/clipboard/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="local" %}
+{% include code-snippet/grid/clipboard/clipboard/local.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -72,22 +72,22 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="autofill" %}
-{% include_relative code-snippet/clipboard/autofill/autofill.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/clipboard/autofill/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/clipboard/autofill/tagHelper %}
+{% highlight c# tabtitle="autofill" %}
+{% include code-snippet/grid/clipboard/autofill/autofill.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="autofill" %}
-{% include_relative code-snippet/clipboard/autofill/autofill.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/clipboard/autofill/razor %}
+{% include code-snippet/grid/clipboard/autofill/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="autofill" %}
+{% include code-snippet/grid/clipboard/autofill/autofill.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -109,22 +109,22 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="paste" %}
-{% include_relative code-snippet/clipboard/paste/paste.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/clipboard/paste/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/clipboard/paste/tagHelper %}
+{% highlight c# tabtitle="paste" %}
+{% include code-snippet/grid/clipboard/paste/paste.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="paste" %}
-{% include_relative code-snippet/clipboard/paste/paste.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/clipboard/paste/razor %}
+{% include code-snippet/grid/clipboard/paste/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="paste" %}
+{% include code-snippet/grid/clipboard/paste/paste.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

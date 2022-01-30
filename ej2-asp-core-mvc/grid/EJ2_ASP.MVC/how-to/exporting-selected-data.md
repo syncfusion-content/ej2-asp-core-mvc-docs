@@ -18,22 +18,22 @@ In the below exporting demo, We can get the selected records using **getSelected
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="selected-data" %}
-{% include_relative code-snippet/how-to/export-selected-data/selected-data.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/export-selected-data/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/export-selected-data/tagHelper %}
+{% highlight c# tabtitle="selected-data" %}
+{% include code-snippet/grid/how-to/export-selected-data/selected-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="selected-data" %}
-{% include_relative code-snippet/how-to/export-selected-data/selected-data.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/export-selected-data/razor %}
+{% include code-snippet/grid/how-to/export-selected-data/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="selected-data" %}
+{% include code-snippet/grid/how-to/export-selected-data/selected-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

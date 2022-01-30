@@ -20,22 +20,22 @@ When we enable the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcor
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="default" %}
-{% include_relative code-snippet/adaptive/default.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/adaptive/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/adaptive/tagHelper %}
+{% highlight c# tabtitle="default" %}
+{% include code-snippet/grid/adaptive/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="default" %}
-{% include_relative code-snippet/adaptive/default.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/adaptive/razor %}
+{% include code-snippet/grid/adaptive/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="default" %}
+{% include code-snippet/grid/adaptive/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -49,22 +49,22 @@ The grid will render the row elements in vertical order while setting the [`rowR
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="default" %}
-{% include_relative code-snippet/vertical-rendering/default.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/vertical-rendering/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/vertical-rendering/tagHelper %}
+{% highlight c# tabtitle="default" %}
+{% include code-snippet/grid/vertical-rendering/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="default" %}
-{% include_relative code-snippet/vertical-rendering/default.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/vertical-rendering/razor %}
+{% include code-snippet/grid/vertical-rendering/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="default" %}
+{% include code-snippet/grid/vertical-rendering/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

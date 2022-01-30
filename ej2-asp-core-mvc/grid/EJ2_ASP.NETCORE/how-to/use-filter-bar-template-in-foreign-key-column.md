@@ -18,22 +18,22 @@ In the following example, The **Employee Name** is a foreign key column. This co
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="filterbar-temp-foreign" %}
-{% include_relative code-snippet/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/filterbar-temp-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/filterbar-temp-foreign/tagHelper %}
+{% highlight c# tabtitle="filterbar-temp-foreign" %}
+{% include code-snippet/grid/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="filterbar-temp-foreign" %}
-{% include_relative code-snippet/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/filterbar-temp-foreign/razor %}
+{% include code-snippet/grid/how-to/filterbar-temp-foreign/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="filterbar-temp-foreign" %}
+{% include code-snippet/grid/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

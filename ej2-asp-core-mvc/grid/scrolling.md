@@ -26,22 +26,22 @@ To specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="width-height" %}
-{% include_relative code-snippet/scrolling/width-height/width-height.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/scrolling/width-height/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/scrolling/width-height/tagHelper %}
+{% highlight c# tabtitle="width-height" %}
+{% include code-snippet/grid/scrolling/width-height/width-height.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="width-height" %}
-{% include_relative code-snippet/scrolling/width-height/width-height.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/scrolling/width-height/razor %}
+{% include code-snippet/grid/scrolling/width-height/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="width-height" %}
+{% include code-snippet/grid/scrolling/width-height/width-height.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -56,22 +56,22 @@ Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="responsive-parent" %}
-{% include_relative code-snippet/scrolling/responsive-parent/responsive-parent.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/scrolling/responsive-parent/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/scrolling/responsive-parent/tagHelper %}
+{% highlight c# tabtitle="responsive-parent" %}
+{% include code-snippet/grid/scrolling/responsive-parent/responsive-parent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="responsive-parent" %}
-{% include_relative code-snippet/scrolling/responsive-parent/responsive-parent.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/scrolling/responsive-parent/razor %}
+{% include code-snippet/grid/scrolling/responsive-parent/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="responsive-parent" %}
+{% include code-snippet/grid/scrolling/responsive-parent/responsive-parent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -85,22 +85,22 @@ You can scroll the grid content to the selected row position by using the `RowSe
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="scroll-selected-row" %}
-{% include_relative code-snippet/scrolling/scroll-selected-row/scroll-selected-row.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/scrolling/scroll-selected-row/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/scrolling/scroll-selected-row/tagHelper %}
+{% highlight c# tabtitle="scroll-selected-row" %}
+{% include code-snippet/grid/scrolling/scroll-selected-row/scroll-selected-row.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="scroll-selected-row" %}
-{% include_relative code-snippet/scrolling/scroll-selected-row/scroll-selected-row.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/scrolling/scroll-selected-row/razor %}
+{% include code-snippet/grid/scrolling/scroll-selected-row/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="scroll-selected-row" %}
+{% include code-snippet/grid/scrolling/scroll-selected-row/scroll-selected-row.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -117,22 +117,22 @@ is set as '3'. Hence, the left two columns and top three rows are frozen.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="freeze-row-column" %}
-{% include_relative code-snippet/scrolling/freeze-row-column/freeze-row-column.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/scrolling/freeze-row-column/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/scrolling/freeze-row-column/tagHelper %}
+{% highlight c# tabtitle="freeze-row-column" %}
+{% include code-snippet/grid/scrolling/freeze-row-column/freeze-row-column.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="freeze-row-column" %}
-{% include_relative code-snippet/scrolling/freeze-row-column/freeze-row-column.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/scrolling/freeze-row-column/razor %}
+{% include code-snippet/grid/scrolling/freeze-row-column/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="freeze-row-column" %}
+{% include code-snippet/grid/scrolling/freeze-row-column/freeze-row-column.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -149,22 +149,22 @@ the `IsFrozen` property.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="freeze-column" %}
-{% include_relative code-snippet/scrolling/freeze-column/freeze-column.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/scrolling/freeze-column/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/scrolling/freeze-column/tagHelper %}
+{% highlight c# tabtitle="freeze-column" %}
+{% include code-snippet/grid/scrolling/freeze-column/freeze-column.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="freeze-column" %}
-{% include_relative code-snippet/scrolling/freeze-column/freeze-column.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/scrolling/freeze-column/razor %}
+{% include code-snippet/grid/scrolling/freeze-column/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="freeze-column" %}
+{% include code-snippet/grid/scrolling/freeze-column/freeze-column.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

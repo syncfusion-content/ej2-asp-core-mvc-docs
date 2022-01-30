@@ -30,22 +30,22 @@ documentation: ug
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="contextmenu" %}
-{% include_relative code-snippet/context-menu/contextmenu/contextmenu.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/context-menu/contextmenu/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/context-menu/contextmenu/tagHelper %}
+{% highlight c# tabtitle="contextmenu" %}
+{% include code-snippet/grid/context-menu/contextmenu/contextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="contextmenu" %}
-{% include_relative code-snippet/context-menu/contextmenu/contextmenu.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/context-menu/contextmenu/razor %}
+{% include code-snippet/grid/context-menu/contextmenu/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="contextmenu" %}
+{% include code-snippet/grid/context-menu/contextmenu/contextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -61,22 +61,22 @@ Actions for this customized items can be defined in the [`contextMenuClick`](htt
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customcontextmenu" %}
-{% include_relative code-snippet/context-menu/customcontextmenu/customcontextmenu.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/context-menu/customcontextmenu/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/context-menu/customcontextmenu/tagHelper %}
+{% highlight c# tabtitle="customcontextmenu" %}
+{% include code-snippet/grid/context-menu/customcontextmenu/customcontextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customcontextmenu" %}
-{% include_relative code-snippet/context-menu/customcontextmenu/customcontextmenu.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/context-menu/customcontextmenu/razor %}
+{% include code-snippet/grid/context-menu/customcontextmenu/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="customcontextmenu" %}
+{% include code-snippet/grid/context-menu/customcontextmenu/customcontextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
