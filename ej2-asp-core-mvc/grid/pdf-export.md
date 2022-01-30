@@ -17,22 +17,22 @@ PDF export allows exporting Grid data to PDF document. You need to use the
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pdf-export" %}
-{% include_relative code-snippet/pdf-export/pdf-export/pdf-export.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/pdf-export/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/pdf-export/tagHelper %}
+{% highlight c# tabtitle="pdf-export" %}
+{% include code-snippet/grid/pdf-export/pdf-export/pdf-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pdf-export" %}
-{% include_relative code-snippet/pdf-export/pdf-export/pdf-export.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/pdf-export/razor %}
+{% include code-snippet/grid/pdf-export/pdf-export/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdf-export" %}
+{% include code-snippet/grid/pdf-export/pdf-export/pdf-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -46,22 +46,22 @@ PDF export provides an option for exporting multiple grids to same file. In this
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="multiple" %}
-{% include_relative code-snippet/pdf-export/multiple/multiple.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/multiple/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/multiple/tagHelper %}
+{% highlight c# tabtitle="multiple" %}
+{% include code-snippet/grid/pdf-export/multiple/multiple.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="multiple" %}
-{% include_relative code-snippet/pdf-export/multiple/multiple.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/multiple/razor %}
+{% include code-snippet/grid/pdf-export/multiple/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="multiple" %}
+{% include code-snippet/grid/pdf-export/multiple/multiple.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -79,22 +79,22 @@ You can assign the file name for the exported document by defining `fileName` pr
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="export-filename" %}
-{% include_relative code-snippet/pdf-export/export-filename/export-filename.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/export-filename/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/export-filename/tagHelper %}
+{% highlight c# tabtitle="export-filename" %}
+{% include code-snippet/grid/pdf-export/export-filename/export-filename.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="export-filename" %}
-{% include_relative code-snippet/pdf-export/export-filename/export-filename.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/export-filename/razor %}
+{% include code-snippet/grid/pdf-export/export-filename/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="export-filename" %}
+{% include code-snippet/grid/pdf-export/export-filename/export-filename.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -134,22 +134,22 @@ In the following example, we have used Advent Pro font to export the grid with H
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customfont" %}
-{% include_relative code-snippet/pdf-export/customfont/customfont.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/customfont/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/customfont/tagHelper %}
+{% highlight c# tabtitle="customfont" %}
+{% include code-snippet/grid/pdf-export/customfont/customfont.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customfont" %}
-{% include_relative code-snippet/pdf-export/customfont/customfont.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/customfont/razor %}
+{% include code-snippet/grid/pdf-export/customfont/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="customfont" %}
+{% include code-snippet/grid/pdf-export/customfont/customfont.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -273,22 +273,22 @@ The below code illustrates the pdf export customization.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="header-footer" %}
-{% include_relative code-snippet/pdf-export/header-footer/header-footer.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/header-footer/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/header-footer/tagHelper %}
+{% highlight c# tabtitle="header-footer" %}
+{% include code-snippet/grid/pdf-export/header-footer/header-footer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="header-footer" %}
-{% include_relative code-snippet/pdf-export/header-footer/header-footer.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/header-footer/razor %}
+{% include code-snippet/grid/pdf-export/header-footer/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="header-footer" %}
+{% include code-snippet/grid/pdf-export/header-footer/header-footer.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -302,22 +302,22 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orientation" %}
-{% include_relative code-snippet/pdf-export/orientation/orientation.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/orientation/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/orientation/tagHelper %}
+{% highlight c# tabtitle="orientation" %}
+{% include code-snippet/grid/pdf-export/orientation/orientation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orientation" %}
-{% include_relative code-snippet/pdf-export/orientation/orientation.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/orientation/razor %}
+{% include code-snippet/grid/pdf-export/orientation/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="orientation" %}
+{% include code-snippet/grid/pdf-export/orientation/orientation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -359,22 +359,22 @@ Supported page sizes are:
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="page-size" %}
-{% include_relative code-snippet/pdf-export/page-size/page-size.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/page-size/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/page-size/tagHelper %}
+{% highlight c# tabtitle="page-size" %}
+{% include code-snippet/grid/pdf-export/page-size/page-size.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="page-size" %}
-{% include_relative code-snippet/pdf-export/page-size/page-size.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/page-size/razor %}
+{% include code-snippet/grid/pdf-export/page-size/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="page-size" %}
+{% include code-snippet/grid/pdf-export/page-size/page-size.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -388,22 +388,22 @@ PDF export provides an option to export the current page into PDF. To export cur
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="export-current" %}
-{% include_relative code-snippet/pdf-export/export-current/export-current.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/export-current/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/export-current/tagHelper %}
+{% highlight c# tabtitle="export-current" %}
+{% include code-snippet/grid/pdf-export/export-current/export-current.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="export-current" %}
-{% include_relative code-snippet/pdf-export/export-current/export-current.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/export-current/razor %}
+{% include code-snippet/grid/pdf-export/export-current/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="export-current" %}
+{% include code-snippet/grid/pdf-export/export-current/export-current.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -417,22 +417,22 @@ PDF export provides an option to export hidden columns of Grid by defining the `
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="export-hidden" %}
-{% include_relative code-snippet/pdf-export/export-hidden/export-hidden.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/export-hidden/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/export-hidden/tagHelper %}
+{% highlight c# tabtitle="export-hidden" %}
+{% include code-snippet/grid/pdf-export/export-hidden/export-hidden.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="export-hidden" %}
-{% include_relative code-snippet/pdf-export/export-hidden/export-hidden.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/export-hidden/razor %}
+{% include code-snippet/grid/pdf-export/export-hidden/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="export-hidden" %}
+{% include code-snippet/grid/pdf-export/export-hidden/export-hidden.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -452,22 +452,22 @@ In the below example, we have `CustomerID` as a hidden column in the grid. While
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="show-hide" %}
-{% include_relative code-snippet/pdf-export/show-hide/show-hide.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/show-hide/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/show-hide/tagHelper %}
+{% highlight c# tabtitle="show-hide" %}
+{% include code-snippet/grid/pdf-export/show-hide/show-hide.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="show-hide" %}
-{% include_relative code-snippet/pdf-export/show-hide/show-hide.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/show-hide/razor %}
+{% include code-snippet/grid/pdf-export/show-hide/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="show-hide" %}
+{% include code-snippet/grid/pdf-export/show-hide/show-hide.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -483,22 +483,22 @@ In the below sample, we have set the `background` color for `Freight` column in 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pdf-export" %}
-{% include_relative code-snippet/pdf-export/pdf-export/pdf-export.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/pdf-export/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/pdf-export/tagHelper %}
+{% highlight c# tabtitle="pdf-export" %}
+{% include code-snippet/grid/pdf-export/pdf-export/pdf-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pdf-export" %}
-{% include_relative code-snippet/pdf-export/pdf-export/pdf-export.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/pdf-export/razor %}
+{% include code-snippet/grid/pdf-export/pdf-export/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdf-export" %}
+{% include code-snippet/grid/pdf-export/pdf-export/pdf-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -514,22 +514,22 @@ To apply theme in exported PDF, define the `theme` in `exportProperties` .
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="theme" %}
-{% include_relative code-snippet/pdf-export/theme/theme.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/theme/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/theme/tagHelper %}
+{% highlight c# tabtitle="theme" %}
+{% include code-snippet/grid/pdf-export/theme/theme.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="theme" %}
-{% include_relative code-snippet/pdf-export/theme/theme.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/theme/razor %}
+{% include code-snippet/grid/pdf-export/theme/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="theme" %}
+{% include code-snippet/grid/pdf-export/theme/theme.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -545,22 +545,22 @@ PDF export provides an option to define datasource dynamically before exporting.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-data" %}
-{% include_relative code-snippet/pdf-export/custom-data/custom-data.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/custom-data/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/custom-data/tagHelper %}
+{% highlight c# tabtitle="custom-data" %}
+{% include code-snippet/grid/pdf-export/custom-data/custom-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-data" %}
-{% include_relative code-snippet/pdf-export/custom-data/custom-data.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/custom-data/razor %}
+{% include code-snippet/grid/pdf-export/custom-data/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="custom-data" %}
+{% include code-snippet/grid/pdf-export/custom-data/custom-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -580,22 +580,22 @@ The grid have an option to export the hierarchy grid to pdf document. By default
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hierarchy" %}
-{% include_relative code-snippet/pdf-export/hierarchy/hierarchy.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/hierarchy/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/hierarchy/tagHelper %}
+{% highlight c# tabtitle="hierarchy" %}
+{% include code-snippet/grid/pdf-export/hierarchy/hierarchy.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hierarchy" %}
-{% include_relative code-snippet/pdf-export/hierarchy/hierarchy.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/hierarchy/razor %}
+{% include code-snippet/grid/pdf-export/hierarchy/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="hierarchy" %}
+{% include code-snippet/grid/pdf-export/hierarchy/hierarchy.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -611,22 +611,22 @@ In the below sample, we have enabled `repeatHeader` property in `pdfHeaderQueryC
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight  tabtitle="repeat-header" %}
-{% include_relative code-snippet/pdf-export/repeat-header/repeat-header %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/pdf-export/repeat-header/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/pdf-export/repeat-header/tagHelper %}
+{% highlight  tabtitle="repeat-header" %}
+{% include code-snippet/grid/pdf-export/repeat-header/repeat-header %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight  tabtitle="repeat-header" %}
-{% include_relative code-snippet/pdf-export/repeat-header/repeat-header %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/pdf-export/repeat-header/razor %}
+{% include code-snippet/grid/pdf-export/repeat-header/razor %}
+{% endhighlight %}
+{% highlight  tabtitle="repeat-header" %}
+{% include code-snippet/grid/pdf-export/repeat-header/repeat-header %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

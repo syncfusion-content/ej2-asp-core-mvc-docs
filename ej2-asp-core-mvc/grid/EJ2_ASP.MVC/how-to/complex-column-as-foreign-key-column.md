@@ -18,22 +18,22 @@ In the following example, **Employee.EmployeeID** is a complex column and also d
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="foreignkey" %}
-{% include_relative code-snippet/columns/foreignkey/foreignkey.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/columns/foreignkey/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/columns/foreignkey/tagHelper %}
+{% highlight c# tabtitle="foreignkey" %}
+{% include code-snippet/grid/columns/foreignkey/foreignkey.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="foreignkey" %}
-{% include_relative code-snippet/columns/foreignkey/foreignkey.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/columns/foreignkey/razor %}
+{% include code-snippet/grid/columns/foreignkey/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="foreignkey" %}
+{% include code-snippet/grid/columns/foreignkey/foreignkey.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

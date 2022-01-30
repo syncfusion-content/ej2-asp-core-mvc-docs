@@ -113,22 +113,22 @@ The following example demonstrates the Grid in `Deutsch` culture.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="localization" %}
-{% include_relative code-snippet/globalization/localization/localization.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/globalization/localization/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/globalization/localization/tagHelper %}
+{% highlight c# tabtitle="localization" %}
+{% include code-snippet/grid/globalization/localization/localization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="localization" %}
-{% include_relative code-snippet/globalization/localization/localization.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/globalization/localization/razor %}
+{% include code-snippet/grid/globalization/localization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="localization" %}
+{% include code-snippet/grid/globalization/localization/localization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -142,22 +142,22 @@ The [`Internationalization`](../../common/intl.html) library is used to globaliz
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="internationalization" %}
-{% include_relative code-snippet/globalization/internationalization/internationalization.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/globalization/internationalization/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/globalization/internationalization/tagHelper %}
+{% highlight c# tabtitle="internationalization" %}
+{% include code-snippet/grid/globalization/internationalization/internationalization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="internationalization" %}
-{% include_relative code-snippet/globalization/internationalization/internationalization.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/globalization/internationalization/razor %}
+{% include code-snippet/grid/globalization/internationalization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="internationalization" %}
+{% include code-snippet/grid/globalization/internationalization/internationalization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -174,22 +174,22 @@ RTL provides an option to switch the text direction and layout of the Grid compo
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="righttoleft" %}
-{% include_relative code-snippet/globalization/righttoleft/righttoleft.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/globalization/righttoleft/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/globalization/righttoleft/tagHelper %}
+{% highlight c# tabtitle="righttoleft" %}
+{% include code-snippet/grid/globalization/righttoleft/righttoleft.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="righttoleft" %}
-{% include_relative code-snippet/globalization/righttoleft/righttoleft.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/globalization/righttoleft/razor %}
+{% include code-snippet/grid/globalization/righttoleft/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="righttoleft" %}
+{% include code-snippet/grid/globalization/righttoleft/righttoleft.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

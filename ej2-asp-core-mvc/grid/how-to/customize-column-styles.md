@@ -48,22 +48,22 @@ col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(S
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-column-style" %}
-{% include_relative code-snippet/how-to/custom-column-style/custom-column-style.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/custom-column-style/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/custom-column-style/tagHelper %}
+{% highlight c# tabtitle="custom-column-style" %}
+{% include code-snippet/grid/how-to/custom-column-style/custom-column-style.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-column-style" %}
-{% include_relative code-snippet/how-to/custom-column-style/custom-column-style.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/custom-column-style/razor %}
+{% include code-snippet/grid/how-to/custom-column-style/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="custom-column-style" %}
+{% include code-snippet/grid/how-to/custom-column-style/custom-column-style.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

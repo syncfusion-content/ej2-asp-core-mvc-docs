@@ -18,22 +18,22 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit" %}
-{% include_relative code-snippet/how-to/disable-edit/disable-edit.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/disable-edit/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/disable-edit/tagHelper %}
+{% highlight c# tabtitle="disable-edit" %}
+{% include code-snippet/grid/how-to/disable-edit/disable-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit" %}
-{% include_relative code-snippet/how-to/disable-edit/disable-edit.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/disable-edit/razor %}
+{% include code-snippet/grid/how-to/disable-edit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="disable-edit" %}
+{% include code-snippet/grid/how-to/disable-edit/disable-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -45,22 +45,22 @@ For batch mode of editing, you can use [`CellEdit`](https://help.syncfusion.com/
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit-batch" %}
-{% include_relative code-snippet/how-to/disable-edit-batch/disable-edit-batch.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/disable-edit-batch/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/disable-edit-batch/tagHelper %}
+{% highlight c# tabtitle="disable-edit-batch" %}
+{% include code-snippet/grid/how-to/disable-edit-batch/disable-edit-batch.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit-batch" %}
-{% include_relative code-snippet/how-to/disable-edit-batch/disable-edit-batch.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/disable-edit-batch/razor %}
+{% include code-snippet/grid/how-to/disable-edit-batch/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="disable-edit-batch" %}
+{% include code-snippet/grid/how-to/disable-edit-batch/disable-edit-batch.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

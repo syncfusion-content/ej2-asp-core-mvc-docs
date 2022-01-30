@@ -74,22 +74,22 @@ Now assign the custom adaptor to the grid as follows.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="anti-forgery-token" %}
-{% include_relative code-snippet/how-to/anti-forgery-token/anti-forgery-token.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/anti-forgery-token/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/anti-forgery-token/tagHelper %}
+{% highlight c# tabtitle="anti-forgery-token" %}
+{% include code-snippet/grid/how-to/anti-forgery-token/anti-forgery-token.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="anti-forgery-token" %}
-{% include_relative code-snippet/how-to/anti-forgery-token/anti-forgery-token.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/anti-forgery-token/razor %}
+{% include code-snippet/grid/how-to/anti-forgery-token/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="anti-forgery-token" %}
+{% include code-snippet/grid/how-to/anti-forgery-token/anti-forgery-token.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

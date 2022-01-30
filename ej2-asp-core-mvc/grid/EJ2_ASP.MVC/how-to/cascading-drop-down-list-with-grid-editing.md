@@ -18,22 +18,22 @@ In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="cascading" %}
-{% include_relative code-snippet/how-to/cascading/cascading.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/cascading/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/cascading/tagHelper %}
+{% highlight c# tabtitle="cascading" %}
+{% include code-snippet/grid/how-to/cascading/cascading.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="cascading" %}
-{% include_relative code-snippet/how-to/cascading/cascading.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/cascading/razor %}
+{% include code-snippet/grid/how-to/cascading/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="cascading" %}
+{% include code-snippet/grid/how-to/cascading/cascading.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

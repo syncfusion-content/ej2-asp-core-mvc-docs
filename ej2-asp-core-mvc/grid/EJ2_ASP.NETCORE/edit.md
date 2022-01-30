@@ -17,22 +17,22 @@ documentation: ug
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="celleditparams" %}
-{% include_relative code-snippet/edit/celleditparams/celleditparams.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/celleditparams/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/celleditparams/tagHelper %}
+{% highlight c# tabtitle="celleditparams" %}
+{% include code-snippet/grid/edit/celleditparams/celleditparams.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="celleditparams" %}
-{% include_relative code-snippet/edit/celleditparams/celleditparams.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/celleditparams/razor %}
+{% include code-snippet/grid/edit/celleditparams/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="celleditparams" %}
+{% include code-snippet/grid/edit/celleditparams/celleditparams.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -56,22 +56,22 @@ The cell edit template is used to add a custom component for a particular column
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="celledittemplate" %}
-{% include_relative code-snippet/edit/celledittemplate/celledittemplate.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/celledittemplate/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/celledittemplate/tagHelper %}
+{% highlight c# tabtitle="celledittemplate" %}
+{% include code-snippet/grid/edit/celledittemplate/celledittemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="celledittemplate" %}
-{% include_relative code-snippet/edit/celledittemplate/celledittemplate.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/celledittemplate/razor %}
+{% include code-snippet/grid/edit/celledittemplate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="celledittemplate" %}
+{% include code-snippet/grid/edit/celledittemplate/celledittemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -95,22 +95,22 @@ To enable Normal edit, set [`mode`](https://help.syncfusion.com/cr/aspnetcore-js
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="inline" %}
-{% include_relative code-snippet/edit/inline/inline.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/inline/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/inline/tagHelper %}
+{% highlight c# tabtitle="inline" %}
+{% include code-snippet/grid/edit/inline/inline.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="inline" %}
-{% include_relative code-snippet/edit/inline/inline.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/inline/razor %}
+{% include code-snippet/grid/edit/inline/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="inline" %}
+{% include code-snippet/grid/edit/inline/inline.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -128,22 +128,22 @@ In the below demo, we have update the `TotalCost` column value based on the `Uni
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="autoupdate" %}
-{% include_relative code-snippet/edit/autoupdate/autoupdate.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/autoupdate/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/autoupdate/tagHelper %}
+{% highlight c# tabtitle="autoupdate" %}
+{% include code-snippet/grid/edit/autoupdate/autoupdate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="autoupdate" %}
-{% include_relative code-snippet/edit/autoupdate/autoupdate.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/autoupdate/razor %}
+{% include code-snippet/grid/edit/autoupdate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="autoupdate" %}
+{% include code-snippet/grid/edit/autoupdate/autoupdate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -159,22 +159,22 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="canceleditinline" %}
-{% include_relative code-snippet/edit/cancel-edit-inline/canceleditinline.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/cancel-edit-inline/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/cancel-edit-inline/tagHelper %}
+{% highlight c# tabtitle="canceleditinline" %}
+{% include code-snippet/grid/edit/cancel-edit-inline/canceleditinline.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="canceleditinline" %}
-{% include_relative code-snippet/edit/cancel-edit-inline/canceleditinline.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/cancel-edit-inline/razor %}
+{% include code-snippet/grid/edit/cancel-edit-inline/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="canceleditinline" %}
+{% include code-snippet/grid/edit/cancel-edit-inline/canceleditinline.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -200,22 +200,22 @@ Grid methods can be used to perform CRUD operations programmatically. The `addRe
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="programmatic" %}
-{% include_relative code-snippet/edit/programmatic/programmatic.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/programmatic/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/programmatic/tagHelper %}
+{% highlight c# tabtitle="programmatic" %}
+{% include code-snippet/grid/edit/programmatic/programmatic.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="programmatic" %}
-{% include_relative code-snippet/edit/programmatic/programmatic.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/programmatic/razor %}
+{% include code-snippet/grid/edit/programmatic/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="programmatic" %}
+{% include code-snippet/grid/edit/programmatic/programmatic.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -231,22 +231,22 @@ To enable Dialog edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcor
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="dialog" %}
-{% include_relative code-snippet/edit/dialog/dialog.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/dialog/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/dialog/tagHelper %}
+{% highlight c# tabtitle="dialog" %}
+{% include code-snippet/grid/edit/dialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="dialog" %}
-{% include_relative code-snippet/edit/dialog/dialog.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/dialog/razor %}
+{% include code-snippet/grid/edit/dialog/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="dialog" %}
+{% include code-snippet/grid/edit/dialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -262,22 +262,22 @@ To enable Batch edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="batch" %}
-{% include_relative code-snippet/edit/batch/batch.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/batch/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/batch/tagHelper %}
+{% highlight c# tabtitle="batch" %}
+{% include code-snippet/grid/edit/batch/batch.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="batch" %}
-{% include_relative code-snippet/edit/batch/batch.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/batch/razor %}
+{% include code-snippet/grid/edit/batch/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="batch" %}
+{% include code-snippet/grid/edit/batch/batch.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -293,22 +293,22 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="canceleditbatch" %}
-{% include_relative code-snippet/edit/cancel-edit-batch/canceleditbatch.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/cancel-edit-batch/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/cancel-edit-batch/tagHelper %}
+{% highlight c# tabtitle="canceleditbatch" %}
+{% include code-snippet/grid/edit/cancel-edit-batch/canceleditbatch.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="canceleditbatch" %}
-{% include_relative code-snippet/edit/cancel-edit-batch/canceleditbatch.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/cancel-edit-batch/razor %}
+{% include code-snippet/grid/edit/cancel-edit-batch/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="canceleditbatch" %}
+{% include code-snippet/grid/edit/cancel-edit-batch/canceleditbatch.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -326,22 +326,22 @@ In the below code example, demonstrate the usage of binding a partial view in th
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="*" %}
-{% include_relative code-snippet/edit/dialogtemplate/*.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/dialogtemplate/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/dialogtemplate/tagHelper %}
+{% highlight c# tabtitle="*" %}
+{% include code-snippet/grid/edit/dialogtemplate/*.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="*" %}
-{% include_relative code-snippet/edit/dialogtemplate/*.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/dialogtemplate/razor %}
+{% include code-snippet/grid/edit/dialogtemplate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="*" %}
+{% include code-snippet/grid/edit/dialogtemplate/*.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -406,22 +406,22 @@ By default, a new row will be added at the top of the grid. You can change it by
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="rowposition" %}
-{% include_relative code-snippet/edit/rowposition/rowposition.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/rowposition/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/rowposition/tagHelper %}
+{% highlight c# tabtitle="rowposition" %}
+{% include code-snippet/grid/edit/rowposition/rowposition.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="rowposition" %}
-{% include_relative code-snippet/edit/rowposition/rowposition.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/rowposition/razor %}
+{% include code-snippet/grid/edit/rowposition/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="rowposition" %}
+{% include code-snippet/grid/edit/rowposition/rowposition.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -438,22 +438,22 @@ To set a default value for the particular column by defining the [`defaultValue`
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="defaultcolumnvalue" %}
-{% include_relative code-snippet/edit/defaultcolumnvalue/defaultcolumnvalue.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/defaultcolumnvalue/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/defaultcolumnvalue/tagHelper %}
+{% highlight c# tabtitle="defaultcolumnvalue" %}
+{% include code-snippet/grid/edit/defaultcolumnvalue/defaultcolumnvalue.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="defaultcolumnvalue" %}
-{% include_relative code-snippet/edit/defaultcolumnvalue/defaultcolumnvalue.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/defaultcolumnvalue/razor %}
+{% include code-snippet/grid/edit/defaultcolumnvalue/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="defaultcolumnvalue" %}
+{% include code-snippet/grid/edit/defaultcolumnvalue/defaultcolumnvalue.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -476,22 +476,22 @@ The available built-in command buttons are:
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="commandcolumn" %}
-{% include_relative code-snippet/edit/commandcolumn/commandcolumn.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/commandcolumn/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/commandcolumn/tagHelper %}
+{% highlight c# tabtitle="commandcolumn" %}
+{% include code-snippet/grid/edit/commandcolumn/commandcolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="commandcolumn" %}
-{% include_relative code-snippet/edit/commandcolumn/commandcolumn.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/commandcolumn/razor %}
+{% include code-snippet/grid/edit/commandcolumn/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="commandcolumn" %}
+{% include code-snippet/grid/edit/commandcolumn/commandcolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -506,22 +506,22 @@ the action for the custom buttons can be defined using **commandClick** event.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customcommand" %}
-{% include_relative code-snippet/edit/customcommand/customcommand.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/customcommand/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/customcommand/tagHelper %}
+{% highlight c# tabtitle="customcommand" %}
+{% include code-snippet/grid/edit/customcommand/customcommand.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customcommand" %}
-{% include_relative code-snippet/edit/customcommand/customcommand.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/customcommand/razor %}
+{% include code-snippet/grid/edit/customcommand/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="customcommand" %}
+{% include code-snippet/grid/edit/customcommand/customcommand.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -537,22 +537,22 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="deleteconfirm" %}
-{% include_relative code-snippet/edit/deleteconfirm/deleteconfirm.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/deleteconfirm/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/deleteconfirm/tagHelper %}
+{% highlight c# tabtitle="deleteconfirm" %}
+{% include code-snippet/grid/edit/deleteconfirm/deleteconfirm.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="deleteconfirm" %}
-{% include_relative code-snippet/edit/deleteconfirm/deleteconfirm.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/deleteconfirm/razor %}
+{% include code-snippet/grid/edit/deleteconfirm/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="deleteconfirm" %}
+{% include code-snippet/grid/edit/deleteconfirm/deleteconfirm.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -568,22 +568,22 @@ By default, grid will show the confirm dialog when saving or cancelling or perfo
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="batchconfirm" %}
-{% include_relative code-snippet/edit/batchconfirm/batchconfirm.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/batchconfirm/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/batchconfirm/tagHelper %}
+{% highlight c# tabtitle="batchconfirm" %}
+{% include code-snippet/grid/edit/batchconfirm/batchconfirm.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="batchconfirm" %}
-{% include_relative code-snippet/edit/batchconfirm/batchconfirm.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/batchconfirm/razor %}
+{% include code-snippet/grid/edit/batchconfirm/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="batchconfirm" %}
+{% include code-snippet/grid/edit/batchconfirm/batchconfirm.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -602,22 +602,22 @@ You can set validation rules in [`validationRules`](https://help.syncfusion.com/
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="columnvalid" %}
-{% include_relative code-snippet/edit/columnvalid/columnvalid.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/columnvalid/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/columnvalid/tagHelper %}
+{% highlight c# tabtitle="columnvalid" %}
+{% include code-snippet/grid/edit/columnvalid/columnvalid.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="columnvalid" %}
-{% include_relative code-snippet/edit/columnvalid/columnvalid.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/columnvalid/razor %}
+{% include code-snippet/grid/edit/columnvalid/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="columnvalid" %}
+{% include code-snippet/grid/edit/columnvalid/columnvalid.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -633,22 +633,22 @@ In the below demo, custom validation applied for **CustomerID** column.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customvalidation" %}
-{% include_relative code-snippet/edit/customvalidation/customvalidation.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/customvalidation/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/customvalidation/tagHelper %}
+{% highlight c# tabtitle="customvalidation" %}
+{% include code-snippet/grid/edit/customvalidation/customvalidation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customvalidation" %}
-{% include_relative code-snippet/edit/customvalidation/customvalidation.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/customvalidation/razor %}
+{% include code-snippet/grid/edit/customvalidation/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="customvalidation" %}
+{% include code-snippet/grid/edit/customvalidation/customvalidation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -676,22 +676,22 @@ The following code example describes the above behavior.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="urladaptor" %}
-{% include_relative code-snippet/edit/urladaptor/urladaptor.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/urladaptor/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/urladaptor/tagHelper %}
+{% highlight c# tabtitle="urladaptor" %}
+{% include code-snippet/grid/edit/urladaptor/urladaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="urladaptor" %}
-{% include_relative code-snippet/edit/urladaptor/urladaptor.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/urladaptor/razor %}
+{% include code-snippet/grid/edit/urladaptor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="urladaptor" %}
+{% include code-snippet/grid/edit/urladaptor/urladaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -705,22 +705,22 @@ The following code example describes the above behavior.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="data" %}
-{% include_relative code-snippet/edit/urladaptor/data.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/urladaptor/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/urladaptor/tagHelper %}
+{% highlight c# tabtitle="data" %}
+{% include code-snippet/grid/edit/urladaptor/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="data" %}
-{% include_relative code-snippet/edit/urladaptor/data.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/urladaptor/razor %}
+{% include code-snippet/grid/edit/urladaptor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="data" %}
+{% include code-snippet/grid/edit/urladaptor/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -736,22 +736,22 @@ The following code example describes the above behavior.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="insert" %}
-{% include_relative code-snippet/edit/urladaptor/insert.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/urladaptor/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/urladaptor/tagHelper %}
+{% highlight c# tabtitle="insert" %}
+{% include code-snippet/grid/edit/urladaptor/insert.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="insert" %}
-{% include_relative code-snippet/edit/urladaptor/insert.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/urladaptor/razor %}
+{% include code-snippet/grid/edit/urladaptor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="insert" %}
+{% include code-snippet/grid/edit/urladaptor/insert.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -773,22 +773,22 @@ The following code example describes the previous behavior.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="update" %}
-{% include_relative code-snippet/edit/urladaptor/update.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/urladaptor/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/urladaptor/tagHelper %}
+{% highlight c# tabtitle="update" %}
+{% include code-snippet/grid/edit/urladaptor/update.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="update" %}
-{% include_relative code-snippet/edit/urladaptor/update.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/urladaptor/razor %}
+{% include code-snippet/grid/edit/urladaptor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="update" %}
+{% include code-snippet/grid/edit/urladaptor/update.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -810,22 +810,22 @@ The following code example describes the previous behavior.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="delete" %}
-{% include_relative code-snippet/edit/urladaptor/delete.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/urladaptor/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/urladaptor/tagHelper %}
+{% highlight c# tabtitle="delete" %}
+{% include code-snippet/grid/edit/urladaptor/delete.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="delete" %}
-{% include_relative code-snippet/edit/urladaptor/delete.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/urladaptor/razor %}
+{% include code-snippet/grid/edit/urladaptor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="delete" %}
+{% include code-snippet/grid/edit/urladaptor/delete.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -849,22 +849,22 @@ The following code example describes the above behavior.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="crudurl" %}
-{% include_relative code-snippet/edit/crudurl/crudurl.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/crudurl/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/crudurl/tagHelper %}
+{% highlight c# tabtitle="crudurl" %}
+{% include code-snippet/grid/edit/crudurl/crudurl.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="crudurl" %}
-{% include_relative code-snippet/edit/crudurl/crudurl.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/crudurl/razor %}
+{% include code-snippet/grid/edit/crudurl/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="crudurl" %}
+{% include code-snippet/grid/edit/crudurl/crudurl.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -888,22 +888,22 @@ The following code example describes the above behavior.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="batchurl" %}
-{% include_relative code-snippet/edit/batchurl/batchurl.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/batchurl/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/batchurl/tagHelper %}
+{% highlight c# tabtitle="batchurl" %}
+{% include code-snippet/grid/edit/batchurl/batchurl.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="batchurl" %}
-{% include_relative code-snippet/edit/batchurl/batchurl.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/batchurl/razor %}
+{% include code-snippet/grid/edit/batchurl/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="batchurl" %}
+{% include code-snippet/grid/edit/batchurl/batchurl.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -930,22 +930,22 @@ In the following demo, editing is disabled for the **CustomerID** column.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disableeditforcolumn" %}
-{% include_relative code-snippet/edit/disableeditforcolumn/disableeditforcolumn.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/disableeditforcolumn/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/disableeditforcolumn/tagHelper %}
+{% highlight c# tabtitle="disableeditforcolumn" %}
+{% include code-snippet/grid/edit/disableeditforcolumn/disableeditforcolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disableeditforcolumn" %}
-{% include_relative code-snippet/edit/disableeditforcolumn/disableeditforcolumn.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/disableeditforcolumn/razor %}
+{% include code-snippet/grid/edit/disableeditforcolumn/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="disableeditforcolumn" %}
+{% include code-snippet/grid/edit/disableeditforcolumn/disableeditforcolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

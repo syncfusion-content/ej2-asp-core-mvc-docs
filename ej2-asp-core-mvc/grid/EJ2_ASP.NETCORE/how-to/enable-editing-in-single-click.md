@@ -20,22 +20,22 @@ Bind the **mouseup** event for Grid and in the event handler call the **startEdi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="single-click-normal-edit" %}
-{% include_relative code-snippet/how-to/single-click-inline-edit/single-click-normal-edit.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/single-click-inline-edit/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/single-click-inline-edit/tagHelper %}
+{% highlight c# tabtitle="single-click-normal-edit" %}
+{% include code-snippet/grid/how-to/single-click-inline-edit/single-click-normal-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="single-click-normal-edit" %}
-{% include_relative code-snippet/how-to/single-click-inline-edit/single-click-normal-edit.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/single-click-inline-edit/razor %}
+{% include code-snippet/grid/how-to/single-click-inline-edit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="single-click-normal-edit" %}
+{% include code-snippet/grid/how-to/single-click-inline-edit/single-click-normal-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -49,22 +49,22 @@ You can open the default dropdown edit popup with single click edit by focusing 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="open-dropdown-popup" %}
-{% include_relative code-snippet/how-to/open-dropdown-popup/open-dropdown-popup.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/open-dropdown-popup/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/open-dropdown-popup/tagHelper %}
+{% highlight c# tabtitle="open-dropdown-popup" %}
+{% include code-snippet/grid/how-to/open-dropdown-popup/open-dropdown-popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="open-dropdown-popup" %}
-{% include_relative code-snippet/how-to/open-dropdown-popup/open-dropdown-popup.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/open-dropdown-popup/razor %}
+{% include code-snippet/grid/how-to/open-dropdown-popup/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="open-dropdown-popup" %}
+{% include code-snippet/grid/how-to/open-dropdown-popup/open-dropdown-popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -80,22 +80,22 @@ Bind the **mouseup** event for Grid and in the event handler call the **editCell
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="single-click-batch-edit" %}
-{% include_relative code-snippet/how-to/single-click-batch-edit/single-click-batch-edit.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/single-click-batch-edit/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/single-click-batch-edit/tagHelper %}
+{% highlight c# tabtitle="single-click-batch-edit" %}
+{% include code-snippet/grid/how-to/single-click-batch-edit/single-click-batch-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="single-click-batch-edit" %}
-{% include_relative code-snippet/how-to/single-click-batch-edit/single-click-batch-edit.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/single-click-batch-edit/razor %}
+{% include code-snippet/grid/how-to/single-click-batch-edit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="single-click-batch-edit" %}
+{% include code-snippet/grid/how-to/single-click-batch-edit/single-click-batch-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

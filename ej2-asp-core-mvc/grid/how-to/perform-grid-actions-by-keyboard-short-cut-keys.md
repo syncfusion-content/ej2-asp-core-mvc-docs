@@ -20,22 +20,22 @@ The following example demonstrates on **Adding** a new row when **Enter** key is
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="*" %}
-{% include_relative code-snippet/edit/keyboard-actions/*.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/edit/keyboard-actions/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/edit/keyboard-actions/tagHelper %}
+{% highlight c# tabtitle="*" %}
+{% include code-snippet/grid/edit/keyboard-actions/*.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="*" %}
-{% include_relative code-snippet/edit/keyboard-actions/*.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/edit/keyboard-actions/razor %}
+{% include code-snippet/grid/edit/keyboard-actions/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="*" %}
+{% include code-snippet/grid/edit/keyboard-actions/*.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -19,22 +19,22 @@ In the below sample, `pageSize` is calculated based on the grid height by using 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="page" %}
-{% include_relative code-snippet/paging/page/page.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/paging/page/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/paging/page/tagHelper %}
+{% highlight c# tabtitle="page" %}
+{% include code-snippet/grid/paging/page/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="page" %}
-{% include_relative code-snippet/paging/page/page.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/paging/page/razor %}
+{% include code-snippet/grid/paging/page/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="page" %}
+{% include code-snippet/grid/paging/page/page.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -52,22 +52,22 @@ Inside this template, you can access the **CurrentPage**, **PageSize**, **TotalP
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="page-temp" %}
-{% include_relative code-snippet/paging/page-temp/page-temp.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/paging/page-temp/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/paging/page-temp/tagHelper %}
+{% highlight c# tabtitle="page-temp" %}
+{% include code-snippet/grid/paging/page-temp/page-temp.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="page-temp" %}
-{% include_relative code-snippet/paging/page-temp/page-temp.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/paging/page-temp/razor %}
+{% include code-snippet/grid/paging/page-temp/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="page-temp" %}
+{% include code-snippet/grid/paging/page-temp/page-temp.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -81,22 +81,22 @@ The pager Dropdown allows you to change the number of records in the Grid dynami
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pagerdropdown" %}
-{% include_relative code-snippet/paging/pagerdropdown/pagerdropdown.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/paging/pagerdropdown/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/paging/pagerdropdown/tagHelper %}
+{% highlight c# tabtitle="pagerdropdown" %}
+{% include code-snippet/grid/paging/pagerdropdown/pagerdropdown.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pagerdropdown" %}
-{% include_relative code-snippet/paging/pagerdropdown/pagerdropdown.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/paging/pagerdropdown/razor %}
+{% include code-snippet/grid/paging/pagerdropdown/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="pagerdropdown" %}
+{% include code-snippet/grid/paging/pagerdropdown/pagerdropdown.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -110,22 +110,22 @@ By default, Pager will be rendered at the bottom of the Grid. You can also rende
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pagerattop" %}
-{% include_relative code-snippet/paging/pagerattop/pagerattop.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/paging/pagerattop/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/paging/pagerattop/tagHelper %}
+{% highlight c# tabtitle="pagerattop" %}
+{% include code-snippet/grid/paging/pagerattop/pagerattop.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pagerattop" %}
-{% include_relative code-snippet/paging/pagerattop/pagerattop.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/paging/pagerattop/razor %}
+{% include code-snippet/grid/paging/pagerattop/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="pagerattop" %}
+{% include code-snippet/grid/paging/pagerattop/pagerattop.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

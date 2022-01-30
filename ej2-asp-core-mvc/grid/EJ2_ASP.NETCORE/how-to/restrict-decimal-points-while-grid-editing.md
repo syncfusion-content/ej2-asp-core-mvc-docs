@@ -18,22 +18,22 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="prevent-decimal-point" %}
-{% include_relative code-snippet/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
+{% highlight cshtml tabtitle="tagHelper" %}
+{% include code-snippet/grid/how-to/prevent-decimal-point/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="tagHelpers" %}
-{% include_relative code-snippet/how-to/prevent-decimal-point/tagHelper %}
+{% highlight c# tabtitle="prevent-decimal-point" %}
+{% include code-snippet/grid/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="prevent-decimal-point" %}
-{% include_relative code-snippet/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
-{% endhighlight %}
 {% highlight razor tabtitle="razor" %}
-{% include_relative code-snippet/how-to/prevent-decimal-point/razor %}
+{% include code-snippet/grid/how-to/prevent-decimal-point/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="prevent-decimal-point" %}
+{% include code-snippet/grid/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
