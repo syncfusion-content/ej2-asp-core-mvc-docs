@@ -113,7 +113,7 @@ The following example demonstrates the Grid in `Deutsch` culture.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="localization" %}
 {% include code-snippet/grid/globalization/localization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="localization" %}
@@ -124,7 +124,7 @@ The following example demonstrates the Grid in `Deutsch` culture.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="localization" %}
 {% include code-snippet/grid/globalization/localization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="localization" %}
@@ -142,7 +142,7 @@ The [`Internationalization`](../../common/intl.html) library is used to globaliz
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="internationalization" %}
 {% include code-snippet/grid/globalization/internationalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="internationalization" %}
@@ -153,7 +153,7 @@ The [`Internationalization`](../../common/intl.html) library is used to globaliz
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="internationalization" %}
 {% include code-snippet/grid/globalization/internationalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="internationalization" %}
@@ -174,7 +174,7 @@ RTL provides an option to switch the text direction and layout of the Grid compo
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="righttoleft" %}
 {% include code-snippet/grid/globalization/righttoleft/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="righttoleft" %}
@@ -185,7 +185,7 @@ RTL provides an option to switch the text direction and layout of the Grid compo
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="righttoleft" %}
 {% include code-snippet/grid/globalization/righttoleft/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="righttoleft" %}

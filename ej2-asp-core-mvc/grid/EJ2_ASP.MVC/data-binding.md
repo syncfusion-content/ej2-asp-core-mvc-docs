@@ -25,7 +25,7 @@ To bind list binding to the grid, you can assign a JavaScript object array to th
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="local" %}
 {% include code-snippet/grid/data-binding/localdata/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="local" %}
@@ -36,7 +36,7 @@ To bind list binding to the grid, you can assign a JavaScript object array to th
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="local" %}
 {% include code-snippet/grid/data-binding/localdata/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="local" %}
@@ -56,7 +56,7 @@ To bind remote data to grid component, assign service data as an instance of Dat
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="remotedata" %}
 {% include code-snippet/grid/data-binding/remotedata/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="remotedata" %}
@@ -67,7 +67,7 @@ To bind remote data to grid component, assign service data as an instance of Dat
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="remotedata" %}
 {% include code-snippet/grid/data-binding/remotedata/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="remotedata" %}
@@ -87,7 +87,7 @@ To bind remote data to grid component, assign service data as an instance of Dat
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="odata" %}
 {% include code-snippet/grid/data-binding/odata/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="odata" %}
@@ -98,7 +98,7 @@ To bind remote data to grid component, assign service data as an instance of Dat
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="odata" %}
 {% include code-snippet/grid/data-binding/odata/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="odata" %}
@@ -116,7 +116,7 @@ The ODataV4 is an improved version of OData protocols, and the DataManager can a
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="odataV4" %}
 {% include code-snippet/grid/data-binding/odataV4/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="odataV4" %}
@@ -127,7 +127,7 @@ The ODataV4 is an improved version of OData protocols, and the DataManager can a
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="odataV4" %}
 {% include code-snippet/grid/data-binding/odataV4/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="odataV4" %}
@@ -145,22 +145,20 @@ The ODataV4 is an improved version of OData protocols, and the DataManager can a
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight cshtml tabtitle="dataoperations" %}
 {% include code-snippet/grid/data-binding/dataoperations/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="dataoperations" %}
-{% endhighlight %}
-{% endtabs %}
+{% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight razor tabtitle="dataoperations" %}
 {% include code-snippet/grid/data-binding/dataoperations/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="dataoperations" %}
-{% endhighlight %}
-{% endtabs %}
+{% endhighlight %}{% endtabs %}
 {% endif %}
 
 
@@ -189,9 +187,6 @@ The parameters of DataManager bound to `DataManagerRequest` in the server. You c
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
-{% include code-snippet/grid/data-binding/serversideoperation/tagHelper %}
-{% endhighlight %}
 {% highlight c# tabtitle="mvcdataoperation" %}
 {% include code-snippet/grid/data-binding/serversideoperation/mvcdataoperation.cs %}
 {% endhighlight %}
@@ -200,9 +195,6 @@ The parameters of DataManager bound to `DataManagerRequest` in the server. You c
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
-{% include code-snippet/grid/data-binding/serversideoperation/razor %}
-{% endhighlight %}
 {% highlight c# tabtitle="mvcdataoperation" %}
 {% include code-snippet/grid/data-binding/serversideoperation/mvcdataoperation.cs %}
 {% endhighlight %}
@@ -220,7 +212,7 @@ You can use **WebApiAdaptor** to bind grid with Web API created using OData endp
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="webapi" %}
 {% include code-snippet/grid/data-binding/webapi/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="webapi" %}
@@ -231,7 +223,7 @@ You can use **WebApiAdaptor** to bind grid with Web API created using OData endp
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="webapi" %}
 {% include code-snippet/grid/data-binding/webapi/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="webapi" %}
@@ -264,7 +256,7 @@ You can use the following code example to use **RemoteSaveAdaptor**.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="remotesaveadaptor" %}
 {% include code-snippet/grid/data-binding/remotesaveadaptor/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="remotesaveadaptor" %}
@@ -275,7 +267,7 @@ You can use the following code example to use **RemoteSaveAdaptor**.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="remotesaveadaptor" %}
 {% include code-snippet/grid/data-binding/remotesaveadaptor/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="remotesaveadaptor" %}
@@ -293,22 +285,28 @@ You can create your own adaptor by extending the built-in adaptors. The followin
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight cshtml tabtitle="customsadaptor" %}
 {% include code-snippet/grid/data-binding/customadaptor/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="customadaptor" %}
-{% include code-snippet/grid/data-binding/customadaptor/customadaptor.cs %}
+{% highlight c# tabtitle="customsadaptor" %}
+{% include code-snippet/grid/data-binding/customadaptor/customsadaptor.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="customsadaptor" %}
+{% include code-snippet/grid/data-binding/customadaptor/customsadaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight razor tabtitle="customsadaptor" %}
 {% include code-snippet/grid/data-binding/customadaptor/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customadaptor" %}
-{% include code-snippet/grid/data-binding/customadaptor/customadaptor.cs %}
+{% highlight c# tabtitle="customsadaptor" %}
+{% include code-snippet/grid/data-binding/customadaptor/customsadaptor.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="customsadaptor" %}
+{% include code-snippet/grid/data-binding/customadaptor/customsadaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -322,7 +320,7 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="offline" %}
 {% include code-snippet/grid/data-binding/offline/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="offline" %}
@@ -333,7 +331,7 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="offline" %}
 {% include code-snippet/grid/data-binding/offline/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="offline" %}
@@ -351,7 +349,7 @@ To add a custom parameter to the data request, use the addParams method of **Que
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="params" %}
 {% include code-snippet/grid/data-binding/params/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="params" %}
@@ -362,7 +360,7 @@ To add a custom parameter to the data request, use the addParams method of **Que
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="params" %}
 {% include code-snippet/grid/data-binding/params/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="params" %}
@@ -385,7 +383,7 @@ The argument passed to the [`ActionFailure`](https://help.syncfusion.com/cr/aspn
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="httperror" %}
 {% include code-snippet/grid/data-binding/httperror/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="httperror" %}
@@ -396,7 +394,7 @@ The argument passed to the [`ActionFailure`](https://help.syncfusion.com/cr/aspn
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="httperror" %}
 {% include code-snippet/grid/data-binding/httperror/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="httperror" %}
@@ -419,7 +417,7 @@ You can bind DataTable to the grid by using [`DataSource`](https://help.syncfusi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="datatable" %}
 {% include code-snippet/grid/data-binding/datatable/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="datatable" %}
@@ -430,7 +428,7 @@ You can bind DataTable to the grid by using [`DataSource`](https://help.syncfusi
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="datatable" %}
 {% include code-snippet/grid/data-binding/datatable/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="datatable" %}
@@ -448,7 +446,7 @@ You can bind DataTable to the grid by using [`DataSource`](https://help.syncfusi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="dataoperation" %}
 {% include code-snippet/grid/data-binding/clientdatatable/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="dataoperation" %}
@@ -459,7 +457,7 @@ You can bind DataTable to the grid by using [`DataSource`](https://help.syncfusi
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="dataoperation" %}
 {% include code-snippet/grid/data-binding/clientdatatable/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="dataoperation" %}
@@ -479,7 +477,7 @@ To pass the data from client side to server side when performing CRUD operations
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="dataoperation" %}
 {% include code-snippet/grid/data-binding/cruddatatable/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="dataoperation" %}
@@ -490,7 +488,7 @@ To pass the data from client side to server side when performing CRUD operations
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="dataoperation" %}
 {% include code-snippet/grid/data-binding/cruddatatable/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="dataoperation" %}

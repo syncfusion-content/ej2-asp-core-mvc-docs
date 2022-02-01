@@ -16,7 +16,7 @@ You can add your title in the header through an [`beforePrint`](https://help.syn
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="titleprint" %}
 {% include code-snippet/grid/how-to/titleprint/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="titleprint" %}
@@ -27,7 +27,7 @@ You can add your title in the header through an [`beforePrint`](https://help.syn
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="titleprint" %}
 {% include code-snippet/grid/how-to/titleprint/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="titleprint" %}

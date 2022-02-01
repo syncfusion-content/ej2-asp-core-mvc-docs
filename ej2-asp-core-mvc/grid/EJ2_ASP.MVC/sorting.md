@@ -19,7 +19,7 @@ To enable sorting in the Grid, set the [`AllowSorting`](https://help.syncfusion.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="sorting" %}
 {% include code-snippet/grid/sorting/sorting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="sorting" %}
@@ -30,7 +30,7 @@ To enable sorting in the Grid, set the [`AllowSorting`](https://help.syncfusion.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="sorting" %}
 {% include code-snippet/grid/sorting/sorting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="sorting" %}
@@ -53,7 +53,7 @@ To sort at initial rendering, set the **Field** and
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="initial-sort" %}
 {% include code-snippet/grid/sorting/initial-sort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="initial-sort" %}
@@ -64,7 +64,7 @@ To sort at initial rendering, set the **Field** and
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="initial-sort" %}
 {% include code-snippet/grid/sorting/initial-sort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="initial-sort" %}
@@ -87,7 +87,7 @@ To clear sorting for a particular column, press the "Shift + mouse left click".
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="multi-column-sort" %}
 {% include code-snippet/grid/sorting/multi-column-sort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="multi-column-sort" %}
@@ -98,7 +98,7 @@ To clear sorting for a particular column, press the "Shift + mouse left click".
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="multi-column-sort" %}
 {% include code-snippet/grid/sorting/multi-column-sort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="multi-column-sort" %}
@@ -126,7 +126,7 @@ The following code example describes the handling of sorting operation at the se
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="foreign-sort" %}
 {% include code-snippet/grid/sorting/foreign-sort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="foreign-sort" %}
@@ -137,7 +137,7 @@ The following code example describes the handling of sorting operation at the se
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="foreign-sort" %}
 {% include code-snippet/grid/sorting/foreign-sort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="foreign-sort" %}
@@ -155,7 +155,7 @@ During the sort action, the grid component triggers two events. The [`ActionBegi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="sort-event" %}
 {% include code-snippet/grid/sorting/sort-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="sort-event" %}
@@ -166,7 +166,7 @@ During the sort action, the grid component triggers two events. The [`ActionBegi
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="sort-event" %}
 {% include code-snippet/grid/sorting/sort-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="sort-event" %}

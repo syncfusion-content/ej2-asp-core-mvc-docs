@@ -22,7 +22,7 @@ N/A |N/A |`equal` operator will always be used for Boolean filter. |Boolean
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="filter-bar" %}
 {% include code-snippet/grid/filtering/filter-bar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar" %}
@@ -33,7 +33,7 @@ N/A |N/A |`equal` operator will always be used for Boolean filter. |Boolean
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="filter-bar" %}
 {% include code-snippet/grid/filtering/filter-bar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-bar" %}
@@ -57,7 +57,7 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="filterbartemplate" %}
 {% include code-snippet/grid/filtering/filterbartemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filterbartemplate" %}
@@ -68,7 +68,7 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="filterbartemplate" %}
 {% include code-snippet/grid/filtering/filterbartemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filterbartemplate" %}
@@ -87,7 +87,7 @@ we have changed the default operator for string typed columns as **contains** fr
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="filter" %}
 {% include code-snippet/grid/filtering/filteroptr/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter" %}
@@ -98,7 +98,7 @@ we have changed the default operator for string typed columns as **contains** fr
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="filter" %}
 {% include code-snippet/grid/filtering/filteroptr/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter" %}
@@ -117,7 +117,7 @@ You can filter the records with different operators.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="filtermenu" %}
 {% include code-snippet/grid/filtering/filtermenu/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filtermenu" %}
@@ -128,7 +128,7 @@ You can filter the records with different operators.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="filtermenu" %}
 {% include code-snippet/grid/filtering/filtermenu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filtermenu" %}
@@ -152,7 +152,7 @@ In the following sample menu filter is enabled by default and checkbox filter is
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="diffcolumnfilter" %}
 {% include code-snippet/grid/filtering/diffcolumnfilter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="diffcolumnfilter" %}
@@ -163,7 +163,7 @@ In the following sample menu filter is enabled by default and checkbox filter is
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="diffcolumnfilter" %}
 {% include code-snippet/grid/filtering/diffcolumnfilter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="diffcolumnfilter" %}
@@ -181,7 +181,7 @@ You can enable Excel like filter by defining [`Type`](https://help.syncfusion.co
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="excelfilter" %}
 {% include code-snippet/grid/filtering/excelfilter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="excelfilter" %}
@@ -192,7 +192,7 @@ You can enable Excel like filter by defining [`Type`](https://help.syncfusion.co
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="excelfilter" %}
 {% include code-snippet/grid/filtering/excelfilter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="excelfilter" %}

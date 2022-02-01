@@ -21,7 +21,7 @@ the template string or HTML element ID.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="row-template" %}
 {% include code-snippet/grid/row/row-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="row-template" %}
@@ -32,7 +32,7 @@ the template string or HTML element ID.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="row-template" %}
 {% include code-snippet/grid/row/row-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="row-template" %}
@@ -53,7 +53,7 @@ the template string or HTML element ID.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="detail-temp" %}
 {% include code-snippet/grid/row/detail-temp/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="detail-temp" %}
@@ -64,7 +64,7 @@ the template string or HTML element ID.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="detail-temp" %}
 {% include code-snippet/grid/row/detail-temp/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="detail-temp" %}
@@ -85,7 +85,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="custom-component" %}
 {% include code-snippet/grid/row/custom-component/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-component" %}
@@ -96,7 +96,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="custom-component" %}
 {% include code-snippet/grid/row/custom-component/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-component" %}
@@ -114,7 +114,7 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="expand-external" %}
 {% include code-snippet/grid/row/expand-external/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="expand-external" %}
@@ -125,7 +125,7 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="expand-external" %}
 {% include code-snippet/grid/row/expand-external/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="expand-external" %}
@@ -148,7 +148,7 @@ the **TargetID**.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="drag-drop" %}
 {% include code-snippet/grid/row/drag-drop/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="drag-drop" %}
@@ -159,7 +159,7 @@ the **TargetID**.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="drag-drop" %}
 {% include code-snippet/grid/row/drag-drop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="drag-drop" %}
@@ -181,7 +181,7 @@ The grid row drag and drop allows you to drag and drop grid rows on the same gri
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="drag-drop-same-grid" %}
 {% include code-snippet/grid/row/drag-drop-same-grid/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="drag-drop-same-grid" %}
@@ -192,7 +192,7 @@ The grid row drag and drop allows you to drag and drop grid rows on the same gri
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="drag-drop-same-grid" %}
 {% include code-snippet/grid/row/drag-drop-same-grid/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="drag-drop-same-grid" %}
@@ -217,7 +217,7 @@ The [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="custom-rows" %}
 {% include code-snippet/grid/row/custom-rows/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-rows" %}
@@ -228,7 +228,7 @@ The [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="custom-rows" %}
 {% include code-snippet/grid/row/custom-rows/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-rows" %}
@@ -254,7 +254,7 @@ Please refer to the following example.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="style-alt-row" %}
 {% include code-snippet/grid/row/style-alt-row/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="style-alt-row" %}
@@ -265,7 +265,7 @@ Please refer to the following example.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="style-alt-row" %}
 {% include code-snippet/grid/row/style-alt-row/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="style-alt-row" %}
@@ -286,7 +286,7 @@ In the below example, the [`RowHeight`](https://help.syncfusion.com/cr/aspnetcor
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="row-height" %}
 {% include code-snippet/grid/row/row-height/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="row-height" %}
@@ -297,7 +297,7 @@ In the below example, the [`RowHeight`](https://help.syncfusion.com/cr/aspnetcor
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="row-height" %}
 {% include code-snippet/grid/row/row-height/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="row-height" %}
@@ -318,7 +318,7 @@ In the below example, the row height for the row with OrderID as '10249' is set 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="rowheight-particular" %}
 {% include code-snippet/grid/row/rowheight-particular/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="rowheight-particular" %}
@@ -329,7 +329,7 @@ In the below example, the row height for the row with OrderID as '10249' is set 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="rowheight-particular" %}
 {% include code-snippet/grid/row/rowheight-particular/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="rowheight-particular" %}

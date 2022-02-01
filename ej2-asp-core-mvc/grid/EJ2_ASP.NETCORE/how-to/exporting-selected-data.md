@@ -18,7 +18,7 @@ In the below exporting demo, We can get the selected records using **getSelected
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="selected-data" %}
 {% include code-snippet/grid/how-to/export-selected-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="selected-data" %}
@@ -29,7 +29,7 @@ In the below exporting demo, We can get the selected records using **getSelected
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="selected-data" %}
 {% include code-snippet/grid/how-to/export-selected-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="selected-data" %}

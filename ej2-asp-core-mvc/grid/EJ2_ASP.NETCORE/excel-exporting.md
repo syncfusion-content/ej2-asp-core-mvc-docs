@@ -19,7 +19,7 @@ To use excel export, You need to define the **ExcelExport** in inbuild toolbar a
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="excel-export" %}
 {% include code-snippet/grid/excel-export/excel-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="excel-export" %}
@@ -30,7 +30,7 @@ To use excel export, You need to define the **ExcelExport** in inbuild toolbar a
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="excel-export" %}
 {% include code-snippet/grid/excel-export/excel-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="excel-export" %}
@@ -52,7 +52,7 @@ The excel export provides support to export multiple grids in same sheet. To exp
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="same-sheet" %}
 {% include code-snippet/grid/excel-export/same-sheet/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="same-sheet" %}
@@ -63,7 +63,7 @@ The excel export provides support to export multiple grids in same sheet. To exp
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="same-sheet" %}
 {% include code-snippet/grid/excel-export/same-sheet/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="same-sheet" %}
@@ -83,7 +83,7 @@ Excel exporting provides support to export multiple grids in new sheet. To expor
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="new-sheet" %}
 {% include code-snippet/grid/excel-export/new-sheet/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="new-sheet" %}
@@ -94,7 +94,7 @@ Excel exporting provides support to export multiple grids in new sheet. To expor
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="new-sheet" %}
 {% include code-snippet/grid/excel-export/new-sheet/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="new-sheet" %}
@@ -116,7 +116,7 @@ The excel export provides an option to export the current page into excel. To ex
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="export-current" %}
 {% include code-snippet/grid/excel-export/export-current/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="export-current" %}
@@ -127,7 +127,7 @@ The excel export provides an option to export the current page into excel. To ex
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="export-current" %}
 {% include code-snippet/grid/excel-export/export-current/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="export-current" %}
@@ -145,7 +145,7 @@ The excel export provides an option to export hidden columns of grid by defining
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="export-hidden" %}
 {% include code-snippet/grid/excel-export/export-hidden/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="export-hidden" %}
@@ -156,7 +156,7 @@ The excel export provides an option to export hidden columns of grid by defining
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="export-hidden" %}
 {% include code-snippet/grid/excel-export/export-hidden/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="export-hidden" %}
@@ -180,7 +180,7 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="show-hide" %}
 {% include code-snippet/grid/excel-export/show-hide/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="show-hide" %}
@@ -191,7 +191,7 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="show-hide" %}
 {% include code-snippet/grid/excel-export/show-hide/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="show-hide" %}
@@ -210,7 +210,7 @@ It requires the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="enable-filter" %}
 {% include code-snippet/grid/excel-export/enable-filter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="enable-filter" %}
@@ -221,7 +221,7 @@ It requires the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="enable-filter" %}
 {% include code-snippet/grid/excel-export/enable-filter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="enable-filter" %}
@@ -239,22 +239,28 @@ In the below sample, we have set the background color for **Freight** column in 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight cshtml tabtitle="cell-format" %}
 {% include code-snippet/grid/excel-export/cell-format/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="cell-formats" %}
-{% include code-snippet/grid/excel-export/cell-format/cell-formats.cs %}
+{% highlight c# tabtitle="cell-format" %}
+{% include code-snippet/grid/excel-export/cell-format/cell-format.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="cell-format" %}
+{% include code-snippet/grid/excel-export/cell-format/cell-format.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight razor tabtitle="cell-format" %}
 {% include code-snippet/grid/excel-export/cell-format/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="cell-formats" %}
-{% include code-snippet/grid/excel-export/cell-format/cell-formats.cs %}
+{% highlight c# tabtitle="cell-format" %}
+{% include code-snippet/grid/excel-export/cell-format/cell-format.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="cell-format" %}
+{% include code-snippet/grid/excel-export/cell-format/cell-format.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -270,7 +276,7 @@ To apply theme in exported Excel, define the **theme** in **exportProperties** .
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="theme" %}
 {% include code-snippet/grid/excel-export/theme/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="theme" %}
@@ -281,7 +287,7 @@ To apply theme in exported Excel, define the **theme** in **exportProperties** .
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="theme" %}
 {% include code-snippet/grid/excel-export/theme/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="theme" %}
@@ -301,7 +307,7 @@ The excel export provides an option to include header and footer content for exp
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="header-footer" %}
 {% include code-snippet/grid/excel-export/header-footer/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="header-footer" %}
@@ -312,7 +318,7 @@ The excel export provides an option to include header and footer content for exp
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="header-footer" %}
 {% include code-snippet/grid/excel-export/header-footer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="header-footer" %}
@@ -330,7 +336,7 @@ You can assign the file name for the exported document by defining **fileName** 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="export-filename" %}
 {% include code-snippet/grid/excel-export/export-filename/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="export-filename" %}
@@ -341,7 +347,7 @@ You can assign the file name for the exported document by defining **fileName** 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="export-filename" %}
 {% include code-snippet/grid/excel-export/export-filename/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="export-filename" %}
@@ -359,7 +365,7 @@ The excel export provides an option to define datasource dynamically before expo
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="custom-data" %}
 {% include code-snippet/grid/excel-export/custom-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-data" %}
@@ -370,7 +376,7 @@ The excel export provides an option to define datasource dynamically before expo
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="custom-data" %}
 {% include code-snippet/grid/excel-export/custom-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-data" %}
@@ -389,7 +395,7 @@ In grid, we have provided the outline option for the exported document when the 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="excel-group" %}
 {% include code-snippet/grid/excel-export/excel-group/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="excel-group" %}
@@ -400,7 +406,7 @@ In grid, we have provided the outline option for the exported document when the 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="excel-group" %}
 {% include code-snippet/grid/excel-export/excel-group/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="excel-group" %}
@@ -424,7 +430,7 @@ The grid have an option to export the hierarchy grid to excel document. By defau
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="hierarchy" %}
 {% include code-snippet/grid/excel-export/hierarchy/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="hierarchy" %}
@@ -435,7 +441,7 @@ The grid have an option to export the hierarchy grid to excel document. By defau
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="hierarchy" %}
 {% include code-snippet/grid/excel-export/hierarchy/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="hierarchy" %}
@@ -473,7 +479,7 @@ To Export the Grid in server side, You need to call the
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="server-exportCore" %}
 {% include code-snippet/grid/excel-export/server-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="server-exportCore" %}
@@ -484,7 +490,7 @@ To Export the Grid in server side, You need to call the
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="server-exportCore" %}
 {% include code-snippet/grid/excel-export/server-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="server-exportCore" %}
@@ -506,7 +512,7 @@ In the below demo, we have invoked the above method inside the [`toolbarClick`](
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="server-exportCore" %}
 {% include code-snippet/grid/excel-export/server-csv-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="server-exportCore" %}
@@ -517,7 +523,7 @@ In the below demo, we have invoked the above method inside the [`toolbarClick`](
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="server-exportCore" %}
 {% include code-snippet/grid/excel-export/server-csv-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="server-exportCore" %}

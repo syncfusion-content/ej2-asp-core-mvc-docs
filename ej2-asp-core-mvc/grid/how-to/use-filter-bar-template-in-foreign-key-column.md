@@ -18,7 +18,7 @@ In the following example, The `Employee Name` is a foreign key column. This colu
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="filterbar-temp-foreign" %}
 {% include code-snippet/grid/how-to/filterbar-temp-foreign/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filterbar-temp-foreign" %}
@@ -29,7 +29,7 @@ In the following example, The `Employee Name` is a foreign key column. This colu
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="filterbar-temp-foreign" %}
 {% include code-snippet/grid/how-to/filterbar-temp-foreign/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filterbar-temp-foreign" %}

@@ -18,22 +18,28 @@ The following example demonstrate the wizard like editing in the grid with the o
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight cshtml tabtitle="dialog" %}
 {% include code-snippet/grid/edit/wizardediting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="*" %}
-{% include code-snippet/grid/edit/wizardediting/*.cs %}
+{% highlight c# tabtitle="dialog" %}
+{% include code-snippet/grid/edit/wizardediting/dialog.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="dialog" %}
+{% include code-snippet/grid/edit/wizardediting/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight razor tabtitle="dialog" %}
 {% include code-snippet/grid/edit/wizardediting/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="*" %}
-{% include code-snippet/grid/edit/wizardediting/*.cs %}
+{% highlight c# tabtitle="dialog" %}
+{% include code-snippet/grid/edit/wizardediting/dialog.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="dialog" %}
+{% include code-snippet/grid/edit/wizardediting/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

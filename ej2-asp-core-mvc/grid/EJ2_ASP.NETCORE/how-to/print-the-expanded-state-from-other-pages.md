@@ -18,7 +18,7 @@ In the following example, we have printed expanded child grids from other pages.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="hierarchyprint" %}
 {% include code-snippet/grid/how-to/hierarchyprint/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="hierarchyprint" %}
@@ -29,7 +29,7 @@ In the following example, we have printed expanded child grids from other pages.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="hierarchyprint" %}
 {% include code-snippet/grid/how-to/hierarchyprint/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="hierarchyprint" %}

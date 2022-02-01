@@ -18,7 +18,7 @@ is set as **3**. Hence, the left two columns and top three rows are frozen.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="freeze-row-column" %}
 {% include code-snippet/grid/scrolling/freeze-row-column/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="freeze-row-column" %}
@@ -29,7 +29,7 @@ is set as **3**. Hence, the left two columns and top three rows are frozen.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="freeze-row-column" %}
 {% include code-snippet/grid/scrolling/freeze-row-column/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="freeze-row-column" %}
@@ -62,7 +62,7 @@ the [`IsFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="freeze-column" %}
 {% include code-snippet/grid/scrolling/freeze-column/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="freeze-column" %}
@@ -73,7 +73,7 @@ the [`IsFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="freeze-column" %}
 {% include code-snippet/grid/scrolling/freeze-column/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="freeze-column" %}
@@ -98,7 +98,7 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="freeze-column" %}
 {% include code-snippet/grid/scrolling/column-level-frozen/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="freeze-column" %}
@@ -109,7 +109,7 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="freeze-column" %}
 {% include code-snippet/grid/scrolling/column-level-frozen/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="freeze-column" %}

@@ -16,7 +16,7 @@ The following example shows how to set Complex field for datasource having Array
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="complexarray" %}
 {% include code-snippet/grid/columns/complexarray/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="complexarray" %}
@@ -27,7 +27,7 @@ The following example shows how to set Complex field for datasource having Array
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="complexarray" %}
 {% include code-snippet/grid/columns/complexarray/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="complexarray" %}

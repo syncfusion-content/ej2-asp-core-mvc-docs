@@ -23,7 +23,7 @@ To search grid records from an external button, invoke the **search** method.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="external-btn" %}
 {% include code-snippet/grid/search/external-btn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="external-btn" %}
@@ -34,7 +34,7 @@ To search grid records from an external button, invoke the **search** method.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="external-btn" %}
 {% include code-snippet/grid/search/external-btn/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="external-btn" %}
@@ -52,7 +52,7 @@ By default, grid searches all visible columns. You can search specific columns b
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="search-a-column" %}
 {% include code-snippet/grid/search/search-a-column/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="search-a-column" %}
@@ -63,7 +63,7 @@ By default, grid searches all visible columns. You can search specific columns b
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="search-a-column" %}
 {% include code-snippet/grid/search/search-a-column/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="search-a-column" %}
@@ -81,7 +81,7 @@ To clear the searched grid records from the external button, set [`key`](https:/
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="clear-search" %}
 {% include code-snippet/grid/search/clear-search/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="clear-search" %}
@@ -92,7 +92,7 @@ To clear the searched grid records from the external button, set [`key`](https:/
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="clear-search" %}
 {% include code-snippet/grid/search/clear-search/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="clear-search" %}
@@ -110,7 +110,7 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="search-each-key" %}
 {% include code-snippet/grid/search/search-each-key/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="search-each-key" %}
@@ -121,7 +121,7 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="search-each-key" %}
 {% include code-snippet/grid/search/search-each-key/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="search-each-key" %}

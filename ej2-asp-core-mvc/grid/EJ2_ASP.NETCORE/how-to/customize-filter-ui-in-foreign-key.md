@@ -18,7 +18,7 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="filter-ui-foreign" %}
 {% include code-snippet/grid/how-to/filter-ui-foreign/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-ui-foreign" %}
@@ -29,7 +29,7 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="filter-ui-foreign" %}
 {% include code-snippet/grid/how-to/filter-ui-foreign/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="filter-ui-foreign" %}

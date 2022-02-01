@@ -26,7 +26,7 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="column-icon" %}
 {% include code-snippet/grid/how-to/custom-column-menu-icon/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="column-icon" %}
@@ -37,7 +37,7 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="column-icon" %}
 {% include code-snippet/grid/how-to/custom-column-menu-icon/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="column-icon" %}

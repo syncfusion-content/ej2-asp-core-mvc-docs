@@ -38,7 +38,7 @@ Refresh the grid after the data source change by using the `refresh` method.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="refresh-datasource" %}
 {% include code-snippet/grid/how-to/refresh-datasource/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="refresh-datasource" %}
@@ -49,7 +49,7 @@ Refresh the grid after the data source change by using the `refresh` method.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="refresh-datasource" %}
 {% include code-snippet/grid/how-to/refresh-datasource/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="refresh-datasource" %}

@@ -20,7 +20,7 @@ When we enable the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcor
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="default" %}
 {% include code-snippet/grid/adaptive/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="default" %}
@@ -31,7 +31,7 @@ When we enable the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcor
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="default" %}
 {% include code-snippet/grid/adaptive/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="default" %}
@@ -49,7 +49,7 @@ The grid will render the row elements in vertical order while setting the [`rowR
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="default" %}
 {% include code-snippet/grid/vertical-rendering/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="default" %}
@@ -60,7 +60,7 @@ The grid will render the row elements in vertical order while setting the [`rowR
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="default" %}
 {% include code-snippet/grid/vertical-rendering/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="default" %}

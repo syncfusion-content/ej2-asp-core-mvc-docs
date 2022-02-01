@@ -18,7 +18,7 @@ In the below demo, we have selected the grid rows only when `EmployeeID` column 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="databasedselection" %}
 {% include code-snippet/grid/how-to/databasedselection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="databasedselection" %}
@@ -29,7 +29,7 @@ In the below demo, we have selected the grid rows only when `EmployeeID` column 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="databasedselection" %}
 {% include code-snippet/grid/how-to/databasedselection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="databasedselection" %}

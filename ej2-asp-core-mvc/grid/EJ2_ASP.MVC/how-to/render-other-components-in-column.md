@@ -46,22 +46,28 @@ Using the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight cshtml tabtitle="render-other-comp" %}
 {% include code-snippet/grid/how-to/render-other-comp/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="grouping-events" %}
-{% include code-snippet/grid/how-to/render-other-comp/grouping-events.cs %}
+{% highlight c# tabtitle="render-other-comp" %}
+{% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="render-other-comp" %}
+{% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight razor tabtitle="render-other-comp" %}
 {% include code-snippet/grid/how-to/render-other-comp/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="grouping-events" %}
-{% include code-snippet/grid/how-to/render-other-comp/grouping-events.cs %}
+{% highlight c# tabtitle="render-other-comp" %}
+{% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="render-other-comp" %}
+{% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

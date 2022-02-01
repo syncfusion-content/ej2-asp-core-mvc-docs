@@ -18,22 +18,28 @@ In the below example, we have passed `recordcount` as `12` using `addParams` met
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight cshtml tabtitle="addtional-parameter" %}
 {% include code-snippet/grid/how-to/passing-params-exporting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="additional-parameter" %}
-{% include code-snippet/grid/how-to/passing-params-exporting/additional-parameter.cs %}
+{% highlight c# tabtitle="addtional-parameter" %}
+{% include code-snippet/grid/how-to/passing-params-exporting/addtional-parameter.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="addtional-parameter" %}
+{% include code-snippet/grid/how-to/passing-params-exporting/addtional-parameter.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight razor tabtitle="addtional-parameter" %}
 {% include code-snippet/grid/how-to/passing-params-exporting/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="additional-parameter" %}
-{% include code-snippet/grid/how-to/passing-params-exporting/additional-parameter.cs %}
+{% highlight c# tabtitle="addtional-parameter" %}
+{% include code-snippet/grid/how-to/passing-params-exporting/addtional-parameter.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="addtional-parameter" %}
+{% include code-snippet/grid/how-to/passing-params-exporting/addtional-parameter.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
