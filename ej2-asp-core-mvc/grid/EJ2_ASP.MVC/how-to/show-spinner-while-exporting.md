@@ -22,7 +22,7 @@ In the below demo, we have rendered the default spinner component when exporting
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="show-spinner" %}
 {% include code-snippet/grid/how-to/show-spinner-while-exporting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="show-spinner" %}
@@ -33,7 +33,7 @@ In the below demo, we have rendered the default spinner component when exporting
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="show-spinner" %}
 {% include code-snippet/grid/how-to/show-spinner-while-exporting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="show-spinner" %}

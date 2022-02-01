@@ -27,7 +27,7 @@ function beforeRender(args) {
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="custom-tooltip" %}
 {% include code-snippet/grid/how-to/custom-tooltip/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-tooltip" %}
@@ -38,7 +38,7 @@ function beforeRender(args) {
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="custom-tooltip" %}
 {% include code-snippet/grid/how-to/custom-tooltip/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-tooltip" %}

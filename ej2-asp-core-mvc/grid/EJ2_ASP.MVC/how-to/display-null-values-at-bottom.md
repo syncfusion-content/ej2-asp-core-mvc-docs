@@ -18,7 +18,7 @@ In the below code we have displayed the null date values at bottom of the Grid r
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="sort-comparer" %}
 {% include code-snippet/grid/how-to/sort-comparer/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="sort-comparer" %}
@@ -29,7 +29,7 @@ In the below code we have displayed the null date values at bottom of the Grid r
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="sort-comparer" %}
 {% include code-snippet/grid/how-to/sort-comparer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="sort-comparer" %}

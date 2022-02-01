@@ -16,7 +16,7 @@ You can focus the double clicked column edit form an through an [`RecordDoubleCl
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="focus" %}
 {% include code-snippet/grid/how-to/focus/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="focus" %}
@@ -27,7 +27,7 @@ You can focus the double clicked column edit form an through an [`RecordDoubleCl
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="focus" %}
 {% include code-snippet/grid/how-to/focus/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="focus" %}

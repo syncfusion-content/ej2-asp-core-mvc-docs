@@ -53,7 +53,7 @@ function setHeaderHeight(args) {
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="orientation" %}
 {% include code-snippet/grid/how-to/orientation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="orientation" %}
@@ -64,7 +64,7 @@ function setHeaderHeight(args) {
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="orientation" %}
 {% include code-snippet/grid/how-to/orientation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="orientation" %}

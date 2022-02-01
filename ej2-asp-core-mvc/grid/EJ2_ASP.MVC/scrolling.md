@@ -26,7 +26,7 @@ To specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="width-height" %}
 {% include code-snippet/grid/scrolling/width-height/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="width-height" %}
@@ -37,7 +37,7 @@ To specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="width-height" %}
 {% include code-snippet/grid/scrolling/width-height/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="width-height" %}
@@ -56,7 +56,7 @@ Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="responsive-parent" %}
 {% include code-snippet/grid/scrolling/responsive-parent/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="responsive-parent" %}
@@ -67,7 +67,7 @@ Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="responsive-parent" %}
 {% include code-snippet/grid/scrolling/responsive-parent/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="responsive-parent" %}
@@ -85,7 +85,7 @@ You can scroll the grid content to the selected row position by using the [`RowS
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="scroll-selected-row" %}
 {% include code-snippet/grid/scrolling/scroll-selected-row/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="scroll-selected-row" %}
@@ -96,7 +96,7 @@ You can scroll the grid content to the selected row position by using the [`RowS
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="scroll-selected-row" %}
 {% include code-snippet/grid/scrolling/scroll-selected-row/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="scroll-selected-row" %}
@@ -116,7 +116,7 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="hide-scroll" %}
 {% include code-snippet/grid/scrolling/hide-scroll/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="hide-scroll" %}
@@ -127,7 +127,7 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="hide-scroll" %}
 {% include code-snippet/grid/scrolling/hide-scroll/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="hide-scroll" %}

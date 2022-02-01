@@ -18,7 +18,7 @@ In the below demo, all the grouped rows are collapsed at initial rendering.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="collapseall" %}
 {% include code-snippet/grid/how-to/collapse-grouped-rows/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="collapseall" %}
@@ -29,7 +29,7 @@ In the below demo, all the grouped rows are collapsed at initial rendering.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="collapseall" %}
 {% include code-snippet/grid/how-to/collapse-grouped-rows/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="collapseall" %}

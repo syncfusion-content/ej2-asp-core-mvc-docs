@@ -22,22 +22,28 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight cshtml tabtitle="dialog" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="*" %}
-{% include code-snippet/grid/edit/show-hide-edit-dialog/*.cs %}
+{% highlight c# tabtitle="dialog" %}
+{% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="dialog" %}
+{% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight razor tabtitle="dialog" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="*" %}
-{% include code-snippet/grid/edit/show-hide-edit-dialog/*.cs %}
+{% highlight c# tabtitle="dialog" %}
+{% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="dialog" %}
+{% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -24,7 +24,7 @@ In the following sample, we have customized string filter operators.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="customize-filter-menu" %}
 {% include code-snippet/grid/how-to/customize-filter-menu/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="customize-filter-menu" %}
@@ -35,7 +35,7 @@ In the following sample, we have customized string filter operators.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="customize-filter-menu" %}
 {% include code-snippet/grid/how-to/customize-filter-menu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="customize-filter-menu" %}

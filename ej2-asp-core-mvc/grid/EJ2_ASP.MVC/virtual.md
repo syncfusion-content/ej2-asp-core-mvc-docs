@@ -24,7 +24,7 @@ the [`PageSettings.PageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="row-virtualization" %}
 {% include code-snippet/grid/virtual-grid/row-virtualization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="row-virtualization" %}
@@ -35,7 +35,7 @@ the [`PageSettings.PageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="row-virtualization" %}
 {% include code-snippet/grid/virtual-grid/row-virtualization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="row-virtualization" %}
@@ -57,7 +57,7 @@ To setup the column virtualization, set the
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="Column-virtualization" %}
 {% include code-snippet/grid/virtual-grid/column-virtualization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Column-virtualization" %}
@@ -68,7 +68,7 @@ To setup the column virtualization, set the
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="Column-virtualization" %}
 {% include code-snippet/grid/virtual-grid/column-virtualization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Column-virtualization" %}

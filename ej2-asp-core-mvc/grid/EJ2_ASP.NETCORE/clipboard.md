@@ -14,7 +14,7 @@ documentation: ug
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="local" %}
 {% include code-snippet/grid/clipboard/key/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="local" %}
@@ -25,7 +25,7 @@ documentation: ug
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="local" %}
 {% include code-snippet/grid/clipboard/key/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="local" %}
@@ -43,7 +43,7 @@ To copy selected rows or cells data into the clipboard with help of toolbar butt
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="local" %}
 {% include code-snippet/grid/clipboard/clipboard/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="local" %}
@@ -54,7 +54,7 @@ To copy selected rows or cells data into the clipboard with help of toolbar butt
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="local" %}
 {% include code-snippet/grid/clipboard/clipboard/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="local" %}
@@ -72,7 +72,7 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="autofill" %}
 {% include code-snippet/grid/clipboard/autofill/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="autofill" %}
@@ -83,7 +83,7 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="autofill" %}
 {% include code-snippet/grid/clipboard/autofill/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="autofill" %}
@@ -109,7 +109,7 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="paste" %}
 {% include code-snippet/grid/clipboard/paste/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="paste" %}
@@ -120,7 +120,7 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="paste" %}
 {% include code-snippet/grid/clipboard/paste/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="paste" %}

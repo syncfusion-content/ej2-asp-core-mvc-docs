@@ -18,7 +18,7 @@ In the following example, **Employee.EmployeeID** is a complex column and also d
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="foreignkey" %}
 {% include code-snippet/grid/columns/foreignkey/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="foreignkey" %}
@@ -29,7 +29,7 @@ In the following example, **Employee.EmployeeID** is a complex column and also d
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="foreignkey" %}
 {% include code-snippet/grid/columns/foreignkey/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="foreignkey" %}

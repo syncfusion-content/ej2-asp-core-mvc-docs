@@ -103,22 +103,20 @@ To initialize the Grid component add the below code to your **Index.cshtml** vi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight cshtml tabtitle="initialize" %}
 {% include code-snippet/grid/getting-start-mvc/initialize/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="initialize" %}
-{% endhighlight %}
-{% endtabs %}
+{% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight razor tabtitle="initialize" %}
 {% include code-snippet/grid/getting-start-mvc/initialize/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="initialize" %}
-{% endhighlight %}
-{% endtabs %}
+{% endhighlight %}{% endtabs %}
 {% endif %}
 
 
@@ -130,7 +128,7 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/databinding/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}
@@ -141,7 +139,7 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/databinding/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}
@@ -171,7 +169,7 @@ Here, you have defined it for the conversion of numeric values to currency.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/columns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}
@@ -182,7 +180,7 @@ Here, you have defined it for the conversion of numeric values to currency.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/columns/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}
@@ -200,7 +198,7 @@ The paging feature enables users to view the grid record in a paged view. It can
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/page/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}
@@ -211,7 +209,7 @@ The paging feature enables users to view the grid record in a paged view. It can
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/page/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}
@@ -229,7 +227,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/sorting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}
@@ -240,7 +238,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/sorting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}
@@ -258,7 +256,7 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/filtering/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}
@@ -269,7 +267,7 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/filtering/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}
@@ -289,7 +287,7 @@ The grouping feature enables users to view the grid record in a grouped view. It
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/grouping/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}
@@ -300,7 +298,7 @@ The grouping feature enables users to view the grid record in a grouped view. It
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="orderDetails" %}
 {% include code-snippet/grid/getting-start-mvc/grouping/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="orderDetails" %}

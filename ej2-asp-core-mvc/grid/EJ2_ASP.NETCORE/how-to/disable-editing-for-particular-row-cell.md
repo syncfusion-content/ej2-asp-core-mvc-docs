@@ -18,7 +18,7 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="disable-edit" %}
 {% include code-snippet/grid/how-to/disable-edit/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="disable-edit" %}
@@ -29,7 +29,7 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="disable-edit" %}
 {% include code-snippet/grid/how-to/disable-edit/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="disable-edit" %}
@@ -45,7 +45,7 @@ For batch mode of editing, you can use **CellEdit** event of Grid. In the below 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="disable-edit-batch" %}
 {% include code-snippet/grid/how-to/disable-edit-batch/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="disable-edit-batch" %}
@@ -56,7 +56,7 @@ For batch mode of editing, you can use **CellEdit** event of Grid. In the below 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="disable-edit-batch" %}
 {% include code-snippet/grid/how-to/disable-edit-batch/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="disable-edit-batch" %}

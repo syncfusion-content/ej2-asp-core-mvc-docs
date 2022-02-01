@@ -21,7 +21,7 @@ The grid does not maintain the query params after page load event when the [`Ena
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="state-persist" %}
 {% include code-snippet/grid/state-persist/state-persist/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="state-persist" %}
@@ -32,7 +32,7 @@ The grid does not maintain the query params after page load event when the [`Ena
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="state-persist" %}
 {% include code-snippet/grid/state-persist/state-persist/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="state-persist" %}

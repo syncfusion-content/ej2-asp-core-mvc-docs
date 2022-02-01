@@ -48,7 +48,7 @@ col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(S
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="custom-column-style" %}
 {% include code-snippet/grid/how-to/custom-column-style/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-column-style" %}
@@ -59,7 +59,7 @@ col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(S
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="custom-column-style" %}
 {% include code-snippet/grid/how-to/custom-column-style/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-column-style" %}

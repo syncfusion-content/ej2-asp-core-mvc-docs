@@ -18,7 +18,7 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="edit-temp" %}
 {% include code-snippet/grid/how-to/edit-temp/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="edit-temp" %}
@@ -29,7 +29,7 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="edit-temp" %}
 {% include code-snippet/grid/how-to/edit-temp/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="edit-temp" %}

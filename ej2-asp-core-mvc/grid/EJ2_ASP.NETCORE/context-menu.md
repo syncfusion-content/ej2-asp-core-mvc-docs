@@ -30,7 +30,7 @@ documentation: ug
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="contextmenu" %}
 {% include code-snippet/grid/context-menu/contextmenu/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="contextmenu" %}
@@ -41,7 +41,7 @@ documentation: ug
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="contextmenu" %}
 {% include code-snippet/grid/context-menu/contextmenu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="contextmenu" %}
@@ -61,7 +61,7 @@ Actions for this customized items can be defined in the [`contextMenuClick`](htt
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="tagHelper" %}
+{% highlight c# tabtitle="customcontextmenu" %}
 {% include code-snippet/grid/context-menu/customcontextmenu/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="customcontextmenu" %}
@@ -72,7 +72,7 @@ Actions for this customized items can be defined in the [`contextMenuClick`](htt
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="razor" %}
+{% highlight c# tabtitle="customcontextmenu" %}
 {% include code-snippet/grid/context-menu/customcontextmenu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="customcontextmenu" %}
