@@ -18,10 +18,10 @@ In the following example, `Employee.EmployeeID` is a complex column and also dec
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="foreignkey" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/foreignkey/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreignkey" %}
+{% highlight c# tabtitle="Foreignkey.cs" %}
 {% include code-snippet/grid/columns/foreignkey/foreignkey.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the following example, `Employee.EmployeeID` is a complex column and also dec
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="foreignkey" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/foreignkey/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreignkey" %}
+{% highlight c# tabtitle="Foreignkey.cs" %}
 {% include code-snippet/grid/columns/foreignkey/foreignkey.cs %}
 {% endhighlight %}
 {% endtabs %}

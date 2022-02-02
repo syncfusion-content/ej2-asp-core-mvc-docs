@@ -28,10 +28,10 @@ function beforeRender(args) {
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-tooltip" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/custom-tooltip/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-tooltip" %}
+{% highlight c# tabtitle="Custom-tooltip.cs" %}
 {% include code-snippet/grid/how-to/custom-tooltip/custom-tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -39,10 +39,10 @@ function beforeRender(args) {
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-tooltip" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/custom-tooltip/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-tooltip" %}
+{% highlight c# tabtitle="Custom-tooltip.cs" %}
 {% include code-snippet/grid/how-to/custom-tooltip/custom-tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}

@@ -18,10 +18,10 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="prevent-decimal-point" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/prevent-decimal-point/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="prevent-decimal-point" %}
+{% highlight c# tabtitle="Prevent-decimal-point.cs" %}
 {% include code-snippet/grid/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="prevent-decimal-point" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/prevent-decimal-point/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="prevent-decimal-point" %}
+{% highlight c# tabtitle="Prevent-decimal-point.cs" %}
 {% include code-snippet/grid/how-to/prevent-decimal-point/prevent-decimal-point.cs %}
 {% endhighlight %}
 {% endtabs %}

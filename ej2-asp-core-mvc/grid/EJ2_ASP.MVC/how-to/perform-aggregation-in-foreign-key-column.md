@@ -18,10 +18,10 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="aggregate-foreign" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/aggregate-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="aggregate-foreign" %}
+{% highlight c# tabtitle="Aggregate-foreign.cs" %}
 {% include code-snippet/grid/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="aggregate-foreign" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/aggregate-foreign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="aggregate-foreign" %}
+{% highlight c# tabtitle="Aggregate-foreign.cs" %}
 {% include code-snippet/grid/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}

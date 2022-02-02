@@ -19,10 +19,10 @@ To enable sorting in the Grid, set the [`allowSorting`](https://help.syncfusion.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="sorting" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/sorting/sorting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="sorting" %}
+{% highlight c# tabtitle="Sorting.cs" %}
 {% include code-snippet/grid/sorting/sorting/sorting.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -30,10 +30,10 @@ To enable sorting in the Grid, set the [`allowSorting`](https://help.syncfusion.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="sorting" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/sorting/sorting/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="sorting" %}
+{% highlight c# tabtitle="Sorting.cs" %}
 {% include code-snippet/grid/sorting/sorting/sorting.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -53,10 +53,10 @@ To sort at initial rendering, set the **field** and
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="initial-sort" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/sorting/initial-sort/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="initial-sort" %}
+{% highlight c# tabtitle="Initial-sort.cs" %}
 {% include code-snippet/grid/sorting/initial-sort/initial-sort.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -64,10 +64,10 @@ To sort at initial rendering, set the **field** and
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="initial-sort" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/sorting/initial-sort/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="initial-sort" %}
+{% highlight c# tabtitle="Initial-sort.cs" %}
 {% include code-snippet/grid/sorting/initial-sort/initial-sort.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -87,10 +87,10 @@ To clear sorting for a particular column, press the "Shift + mouse left click".
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="multi-column-sort" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/sorting/multi-column-sort/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="multi-column-sort" %}
+{% highlight c# tabtitle="Multi-column-sort.cs" %}
 {% include code-snippet/grid/sorting/multi-column-sort/multi-column-sort.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -98,10 +98,10 @@ To clear sorting for a particular column, press the "Shift + mouse left click".
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="multi-column-sort" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/sorting/multi-column-sort/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="multi-column-sort" %}
+{% highlight c# tabtitle="Multi-column-sort.cs" %}
 {% include code-snippet/grid/sorting/multi-column-sort/multi-column-sort.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -126,10 +126,10 @@ The following code example describes the handling of sorting operation at the se
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="foreign-sort" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/sorting/foreign-sort/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreign-sort" %}
+{% highlight c# tabtitle="Foreign-sort.cs" %}
 {% include code-snippet/grid/sorting/foreign-sort/foreign-sort.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -137,10 +137,10 @@ The following code example describes the handling of sorting operation at the se
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="foreign-sort" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/sorting/foreign-sort/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="foreign-sort" %}
+{% highlight c# tabtitle="Foreign-sort.cs" %}
 {% include code-snippet/grid/sorting/foreign-sort/foreign-sort.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -155,10 +155,10 @@ During the sort action, the grid component triggers two events. The [`actionBegi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="sort-event" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/sorting/sort-event/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="sort-event" %}
+{% highlight c# tabtitle="Sort-event.cs" %}
 {% include code-snippet/grid/sorting/sort-event/sort-event.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -166,10 +166,10 @@ During the sort action, the grid component triggers two events. The [`actionBegi
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="sort-event" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/sorting/sort-event/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="sort-event" %}
+{% highlight c# tabtitle="Sort-event.cs" %}
 {% include code-snippet/grid/sorting/sort-event/sort-event.cs %}
 {% endhighlight %}
 {% endtabs %}

@@ -18,10 +18,10 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="export-filtered-data" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/export-filtered-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="export-filtered-data" %}
+{% highlight c# tabtitle="Export-filtered-data.cs" %}
 {% include code-snippet/grid/how-to/export-filtered-data/export-filtered-data.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="export-filtered-data" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/export-filtered-data/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="export-filtered-data" %}
+{% highlight c# tabtitle="Export-filtered-data.cs" %}
 {% include code-snippet/grid/how-to/export-filtered-data/export-filtered-data.cs %}
 {% endhighlight %}
 {% endtabs %}

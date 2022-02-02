@@ -16,10 +16,10 @@ You can get the specific row and cell index of the grid by using [`rowSelected`]
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="rowcellidx" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/row-cell-index/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="rowcellidx" %}
+{% highlight c# tabtitle="Rowcellidx.cs" %}
 {% include code-snippet/grid/how-to/row-cell-index/rowcellidx.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -27,10 +27,10 @@ You can get the specific row and cell index of the grid by using [`rowSelected`]
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="rowcellidx" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/row-cell-index/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="rowcellidx" %}
+{% highlight c# tabtitle="Rowcellidx.cs" %}
 {% include code-snippet/grid/how-to/row-cell-index/rowcellidx.cs %}
 {% endhighlight %}
 {% endtabs %}

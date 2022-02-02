@@ -16,10 +16,10 @@ To print the Grid, use the **print** method from grid instance. The print option
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="print" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/print/print/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="print" %}
+{% highlight c# tabtitle="Print.cs" %}
 {% include code-snippet/grid/print/print/print.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -27,10 +27,10 @@ To print the Grid, use the **print** method from grid instance. The print option
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="print" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/print/print/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="print" %}
+{% highlight c# tabtitle="Print.cs" %}
 {% include code-snippet/grid/print/print/print.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -54,10 +54,10 @@ To print the grid from an external button, invoke the **print** method.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="external-btn" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/print/external-btn/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="external-btn" %}
+{% highlight c# tabtitle="External-btn.cs" %}
 {% include code-snippet/grid/print/external-btn/external-btn.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -65,10 +65,10 @@ To print the grid from an external button, invoke the **print** method.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="external-btn" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/print/external-btn/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="external-btn" %}
+{% highlight c# tabtitle="External-btn.cs" %}
 {% include code-snippet/grid/print/external-btn/external-btn.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -83,10 +83,10 @@ By default, the grid prints all the pages. To print the current page alone, set 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="current-page" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/print/current-page/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="current-page" %}
+{% highlight c# tabtitle="Current-page.cs" %}
 {% include code-snippet/grid/print/current-page/current-page.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -94,10 +94,10 @@ By default, the grid prints all the pages. To print the current page alone, set 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="current-page" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/print/current-page/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="current-page" %}
+{% highlight c# tabtitle="Current-page.cs" %}
 {% include code-snippet/grid/print/current-page/current-page.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -118,10 +118,10 @@ By default, the grid will be print the master and expanded child grids alone. yo
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hierarchyprint" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/print/hierarchyprint/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="hierarchyprint" %}
+{% highlight c# tabtitle="Hierarchyprint.cs" %}
 {% include code-snippet/grid/print/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -129,10 +129,10 @@ By default, the grid will be print the master and expanded child grids alone. yo
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hierarchyprint" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/print/hierarchyprint/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="hierarchyprint" %}
+{% highlight c# tabtitle="Hierarchyprint.cs" %}
 {% include code-snippet/grid/print/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -163,10 +163,10 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="show-hide" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/print/show-hide-columns/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="show-hide" %}
+{% highlight c# tabtitle="Show-hide.cs" %}
 {% include code-snippet/grid/print/show-hide-columns/show-hide.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -174,10 +174,10 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="show-hide" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/print/show-hide-columns/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="show-hide" %}
+{% highlight c# tabtitle="Show-hide.cs" %}
 {% include code-snippet/grid/print/show-hide-columns/show-hide.cs %}
 {% endhighlight %}
 {% endtabs %}

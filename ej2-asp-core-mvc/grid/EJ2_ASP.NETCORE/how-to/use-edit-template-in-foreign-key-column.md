@@ -18,10 +18,10 @@ In the following example, The **Employee Name** is a foreign key column and whil
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-template-foreign" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/edit-template-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-template-foreign" %}
+{% highlight c# tabtitle="Edit-template-foreign.cs" %}
 {% include code-snippet/grid/how-to/edit-template-foreign/edit-template-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the following example, The **Employee Name** is a foreign key column and whil
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-template-foreign" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/edit-template-foreign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-template-foreign" %}
+{% highlight c# tabtitle="Edit-template-foreign.cs" %}
 {% include code-snippet/grid/how-to/edit-template-foreign/edit-template-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}

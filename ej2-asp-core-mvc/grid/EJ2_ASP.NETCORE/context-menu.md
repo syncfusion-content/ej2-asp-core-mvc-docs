@@ -30,10 +30,10 @@ documentation: ug
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="contextmenu" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/context-menu/contextmenu/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="contextmenu" %}
+{% highlight c# tabtitle="Contextmenu.cs" %}
 {% include code-snippet/grid/context-menu/contextmenu/contextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -41,10 +41,10 @@ documentation: ug
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="contextmenu" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/context-menu/contextmenu/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="contextmenu" %}
+{% highlight c# tabtitle="Contextmenu.cs" %}
 {% include code-snippet/grid/context-menu/contextmenu/contextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -61,10 +61,10 @@ Actions for this customized items can be defined in the [`contextMenuClick`](htt
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customcontextmenu" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/context-menu/customcontextmenu/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="customcontextmenu" %}
+{% highlight c# tabtitle="Customcontextmenu.cs" %}
 {% include code-snippet/grid/context-menu/customcontextmenu/customcontextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -72,10 +72,10 @@ Actions for this customized items can be defined in the [`contextMenuClick`](htt
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customcontextmenu" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/context-menu/customcontextmenu/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customcontextmenu" %}
+{% highlight c# tabtitle="Customcontextmenu.cs" %}
 {% include code-snippet/grid/context-menu/customcontextmenu/customcontextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}

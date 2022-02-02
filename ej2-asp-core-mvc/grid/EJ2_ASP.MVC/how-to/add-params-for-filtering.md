@@ -17,10 +17,10 @@ In the below sample, OrderID and Freight Columns are numeric columns, while open
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="excelfilter" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/add-params-for-filtering/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="excelfilter" %}
+{% highlight c# tabtitle="Excelfilter.cs" %}
 {% include code-snippet/grid/how-to/add-params-for-filtering/excelfilter.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -28,10 +28,10 @@ In the below sample, OrderID and Freight Columns are numeric columns, while open
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="excelfilter" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/add-params-for-filtering/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="excelfilter" %}
+{% highlight c# tabtitle="Excelfilter.cs" %}
 {% include code-snippet/grid/how-to/add-params-for-filtering/excelfilter.cs %}
 {% endhighlight %}
 {% endtabs %}

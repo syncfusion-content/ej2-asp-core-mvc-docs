@@ -18,10 +18,10 @@ In the below example, we have changed the dialog's header text for editing and a
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pagerdropdown" %}
-{% include code-snippet/grid/how-to/pagerdropdown/tagHelper %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/customizedialog/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="*" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/customizedialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the below example, we have changed the dialog's header text for editing and a
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pagerdropdown" %}
-{% include code-snippet/grid/how-to/pagerdropdown/razor %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/customizedialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="*" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/customizedialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}

@@ -24,10 +24,10 @@ the [`pageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="row-virtualization" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/virtual-grid/row-virtualization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="row-virtualization" %}
+{% highlight c# tabtitle="Row-virtualization.cs" %}
 {% include code-snippet/grid/virtual-grid/row-virtualization/row-virtualization.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -35,10 +35,10 @@ the [`pageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="row-virtualization" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/virtual-grid/row-virtualization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="row-virtualization" %}
+{% highlight c# tabtitle="Row-virtualization.cs" %}
 {% include code-snippet/grid/virtual-grid/row-virtualization/row-virtualization.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -57,10 +57,10 @@ To setup the column virtualization, set the
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Column-virtualization" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/virtual-grid/column-virtualization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Column-virtualization" %}
+{% highlight c# tabtitle="Column-virtualization.cs" %}
 {% include code-snippet/grid/virtual-grid/column-virtualization/Column-virtualization.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -68,10 +68,10 @@ To setup the column virtualization, set the
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Column-virtualization" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/virtual-grid/column-virtualization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Column-virtualization" %}
+{% highlight c# tabtitle="Column-virtualization.cs" %}
 {% include code-snippet/grid/virtual-grid/column-virtualization/Column-virtualization.cs %}
 {% endhighlight %}
 {% endtabs %}

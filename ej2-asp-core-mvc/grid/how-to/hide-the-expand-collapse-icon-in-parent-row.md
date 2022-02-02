@@ -55,10 +55,10 @@ In the below demo, the expand/collapse icon in the row with `EmployeeID` as `1` 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hidearrow" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/hidearrow/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="hidearrow" %}
+{% highlight c# tabtitle="Hidearrow.cs" %}
 {% include code-snippet/grid/how-to/hidearrow/hidearrow.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -66,10 +66,10 @@ In the below demo, the expand/collapse icon in the row with `EmployeeID` as `1` 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hidearrow" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/hidearrow/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="hidearrow" %}
+{% highlight c# tabtitle="Hidearrow.cs" %}
 {% include code-snippet/grid/how-to/hidearrow/hidearrow.cs %}
 {% endhighlight %}
 {% endtabs %}
