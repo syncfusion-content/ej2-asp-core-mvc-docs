@@ -80,8 +80,6 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![Both Wrap Mode](Cell_images/Cell_img1.png)
-
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -147,7 +145,6 @@ namespace samplebrowser.Controllers.Grid
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img1.png)
 
 {% endif %}
 
