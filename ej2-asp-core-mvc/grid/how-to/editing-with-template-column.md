@@ -18,10 +18,10 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-temp" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/edit-temp/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-temp" %}
+{% highlight c# tabtitle="Edit-temp.cs" %}
 {% include code-snippet/grid/how-to/edit-temp/edit-temp.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-temp" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/edit-temp/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-temp" %}
+{% highlight c# tabtitle="Edit-temp.cs" %}
 {% include code-snippet/grid/how-to/edit-temp/edit-temp.cs %}
 {% endhighlight %}
 {% endtabs %}

@@ -18,10 +18,10 @@ In the following example, The `Employee Name` is a foreign key column. This colu
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="filterbar-temp-foreign" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/filterbar-temp-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="filterbar-temp-foreign" %}
+{% highlight c# tabtitle="Filterbar-temp-foreign.cs" %}
 {% include code-snippet/grid/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the following example, The `Employee Name` is a foreign key column. This colu
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="filterbar-temp-foreign" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/filterbar-temp-foreign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="filterbar-temp-foreign" %}
+{% highlight c# tabtitle="Filterbar-temp-foreign.cs" %}
 {% include code-snippet/grid/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}

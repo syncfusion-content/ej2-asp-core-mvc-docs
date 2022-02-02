@@ -18,10 +18,10 @@ In the below exporting demo, We can get the selected records using `getSelectedR
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="selected-data" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/export-selected-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="selected-data" %}
+{% highlight c# tabtitle="Selected-data.cs" %}
 {% include code-snippet/grid/how-to/export-selected-data/selected-data.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the below exporting demo, We can get the selected records using `getSelectedR
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="selected-data" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/export-selected-data/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="selected-data" %}
+{% highlight c# tabtitle="Selected-data.cs" %}
 {% include code-snippet/grid/how-to/export-selected-data/selected-data.cs %}
 {% endhighlight %}
 {% endtabs %}

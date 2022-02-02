@@ -100,16 +100,16 @@ To initialize the Grid component add the below code to your `Index.cshtml` view
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="grid" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/grid/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="grid" %}
+{% highlight cshtml tabtitle="Grid.cs" %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="grid" %}
+{% highlight cshtml tabtitle="Grid.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
@@ -122,10 +122,10 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/databinding/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/databinding/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -133,7 +133,7 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/databinding/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -160,10 +160,10 @@ Here, we have defined it for the conversion of numeric values to currency.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/gridcolumns/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/gridcolumns/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -171,7 +171,7 @@ Here, we have defined it for the conversion of numeric values to currency.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/gridcolumns/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -186,10 +186,10 @@ The paging feature enables users to view the grid record in a paged view. It can
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/page/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/page/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -197,7 +197,7 @@ The paging feature enables users to view the grid record in a paged view. It can
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/page/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -212,10 +212,10 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/sorting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/sorting/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -223,7 +223,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/sorting/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -238,10 +238,10 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/filtering/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/filtering/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -249,7 +249,7 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/filtering/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -266,10 +266,10 @@ The grouping feature enables users to view the grid record in a grouped view. It
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/grouping/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/grouping/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -277,7 +277,7 @@ The grouping feature enables users to view the grid record in a grouped view. It
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orderDetails" %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
 {% include code-snippet/grid/getting-start-core/grouping/orderDetails.cs %}
 {% endhighlight %}
 {% endtabs %}

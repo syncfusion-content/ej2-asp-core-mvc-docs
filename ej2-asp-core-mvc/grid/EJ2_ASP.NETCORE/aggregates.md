@@ -44,10 +44,10 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="footer-agg" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/footer-agg/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="footer-agg" %}
+{% highlight c# tabtitle="Footer-agg.cs" %}
 {% include code-snippet/grid/aggregate/footer-agg/footer-agg.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -55,10 +55,10 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="footer-agg" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/footer-agg/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="footer-agg" %}
+{% highlight c# tabtitle="Footer-agg.cs" %}
 {% include code-snippet/grid/aggregate/footer-agg/footer-agg.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -75,10 +75,10 @@ You can format the aggregate value result by using the [`format`](https://help.s
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="format-agg" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/format-agg/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="format-agg" %}
+{% highlight c# tabtitle="Format-agg.cs" %}
 {% include code-snippet/grid/aggregate/format-agg/format-agg.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -86,10 +86,10 @@ You can format the aggregate value result by using the [`format`](https://help.s
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="format-agg" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/format-agg/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="format-agg" %}
+{% highlight c# tabtitle="Format-agg.cs" %}
 {% include code-snippet/grid/aggregate/format-agg/format-agg.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -106,10 +106,10 @@ If [`groupFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="group-caption" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/group-caption/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="group-caption" %}
+{% highlight c# tabtitle="Group-caption.cs" %}
 {% include code-snippet/grid/aggregate/group-caption/group-caption.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -117,10 +117,10 @@ If [`groupFooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="group-caption" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/group-caption/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="group-caption" %}
+{% highlight c# tabtitle="Group-caption.cs" %}
 {% include code-snippet/grid/aggregate/group-caption/group-caption.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -142,10 +142,10 @@ object.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-agg" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/custom-agg/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-agg" %}
+{% highlight c# tabtitle="Custom-agg.cs" %}
 {% include code-snippet/grid/aggregate/custom-agg/custom-agg.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -153,10 +153,10 @@ object.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-agg" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/custom-agg/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-agg" %}
+{% highlight c# tabtitle="Custom-agg.cs" %}
 {% include code-snippet/grid/aggregate/custom-agg/custom-agg.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -175,10 +175,10 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="reactive-agg-batch-edit" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/reactive-agg-batch-edit/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="reactive-agg-batch-edit" %}
+{% highlight c# tabtitle="Reactive-agg-batch-edit.cs" %}
 {% include code-snippet/grid/aggregate/reactive-agg-batch-edit/reactive-agg-batch-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -186,10 +186,10 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="reactive-agg-batch-edit" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/reactive-agg-batch-edit/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="reactive-agg-batch-edit" %}
+{% highlight c# tabtitle="Reactive-agg-batch-edit.cs" %}
 {% include code-snippet/grid/aggregate/reactive-agg-batch-edit/reactive-agg-batch-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -206,10 +206,10 @@ In the following code, the input event for the Freight column editor has been re
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="reactive-agg-inline-edit" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/reactive-agg-inline-edit/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="reactive-agg-inline-edit" %}
+{% highlight c# tabtitle="Reactive-agg-inline-edit.cs" %}
 {% include code-snippet/grid/aggregate/reactive-agg-inline-edit/reactive-agg-inline-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -217,10 +217,10 @@ In the following code, the input event for the Freight column editor has been re
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="reactive-agg-inline-edit" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/aggregate/reactive-agg-inline-edit/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="reactive-agg-inline-edit" %}
+{% highlight c# tabtitle="Reactive-agg-inline-edit.cs" %}
 {% include code-snippet/grid/aggregate/reactive-agg-inline-edit/reactive-agg-inline-edit.cs %}
 {% endhighlight %}
 {% endtabs %}

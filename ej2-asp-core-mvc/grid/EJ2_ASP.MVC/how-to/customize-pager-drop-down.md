@@ -16,10 +16,10 @@ To customize default values of pager dropdown, you need to define in [`PageSizes
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pagerdropdown" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/pagerdropdown/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="pagerdropdown" %}
+{% highlight c# tabtitle="Pagerdropdown.cs" %}
 {% include code-snippet/grid/how-to/pagerdropdown/pagerdropdown.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -27,10 +27,10 @@ To customize default values of pager dropdown, you need to define in [`PageSizes
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pagerdropdown" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/pagerdropdown/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="pagerdropdown" %}
+{% highlight c# tabtitle="Pagerdropdown.cs" %}
 {% include code-snippet/grid/how-to/pagerdropdown/pagerdropdown.cs %}
 {% endhighlight %}
 {% endtabs %}

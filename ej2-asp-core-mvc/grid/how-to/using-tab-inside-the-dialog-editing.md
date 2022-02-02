@@ -18,13 +18,13 @@ The following example demonstrate the usage of tab control inside the dialog tem
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="dialog" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/tabediting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/tabediting/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/tabediting/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -32,13 +32,13 @@ The following example demonstrate the usage of tab control inside the dialog tem
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="dialog" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/tabediting/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/tabediting/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/tabediting/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}

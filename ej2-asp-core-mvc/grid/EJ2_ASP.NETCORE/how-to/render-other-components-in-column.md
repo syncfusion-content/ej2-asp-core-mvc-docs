@@ -46,13 +46,13 @@ Using the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="render-other-comp" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/render-other-comp/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="render-other-comp" %}
+{% highlight c# tabtitle="Render-other-comp.cs" %}
 {% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="render-other-comp" %}
+{% highlight c# tabtitle="Render-other-comp.cs" %}
 {% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -60,13 +60,13 @@ Using the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="render-other-comp" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/render-other-comp/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="render-other-comp" %}
+{% highlight c# tabtitle="Render-other-comp.cs" %}
 {% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="render-other-comp" %}
+{% highlight c# tabtitle="Render-other-comp.cs" %}
 {% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
 {% endhighlight %}
 {% endtabs %}

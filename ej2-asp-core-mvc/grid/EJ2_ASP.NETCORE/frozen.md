@@ -19,10 +19,10 @@ is set as '3'. Hence, the left two columns and top three rows are frozen.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="freeze-row-column" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/freeze-row-column/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="freeze-row-column" %}
+{% highlight c# tabtitle="Freeze-row-column.cs" %}
 {% include code-snippet/grid/scrolling/freeze-row-column/freeze-row-column.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -30,10 +30,10 @@ is set as '3'. Hence, the left two columns and top three rows are frozen.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="freeze-row-column" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/freeze-row-column/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="freeze-row-column" %}
+{% highlight c# tabtitle="Freeze-row-column.cs" %}
 {% include code-snippet/grid/scrolling/freeze-row-column/freeze-row-column.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -63,10 +63,10 @@ the [`isFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="freeze-column" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/freeze-column/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="freeze-column" %}
+{% highlight c# tabtitle="Freeze-column.cs" %}
 {% include code-snippet/grid/scrolling/freeze-column/freeze-column.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -74,10 +74,10 @@ the [`isFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="freeze-column" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/freeze-column/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="freeze-column" %}
+{% highlight c# tabtitle="Freeze-column.cs" %}
 {% include code-snippet/grid/scrolling/freeze-column/freeze-column.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -101,13 +101,13 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="freeze-column" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/column-level-frozen/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="freeze-column" %}
+{% highlight c# tabtitle="Freeze-column.cs" %}
 {% include code-snippet/grid/scrolling/column-level-frozen/freeze-column.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="freeze-column" %}
+{% highlight c# tabtitle="Freeze-column.cs" %}
 {% include code-snippet/grid/scrolling/column-level-frozen/freeze-column.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -115,13 +115,13 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="freeze-column" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/column-level-frozen/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="freeze-column" %}
+{% highlight c# tabtitle="Freeze-column.cs" %}
 {% include code-snippet/grid/scrolling/column-level-frozen/freeze-column.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="freeze-column" %}
+{% highlight c# tabtitle="Freeze-column.cs" %}
 {% include code-snippet/grid/scrolling/column-level-frozen/freeze-column.cs %}
 {% endhighlight %}
 {% endtabs %}

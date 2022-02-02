@@ -26,10 +26,10 @@ To specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="width-height" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/width-height/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="width-height" %}
+{% highlight c# tabtitle="Width-height.cs" %}
 {% include code-snippet/grid/scrolling/width-height/width-height.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -37,10 +37,10 @@ To specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="width-height" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/width-height/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="width-height" %}
+{% highlight c# tabtitle="Width-height.cs" %}
 {% include code-snippet/grid/scrolling/width-height/width-height.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -56,10 +56,10 @@ Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="responsive-parent" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/responsive-parent/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="responsive-parent" %}
+{% highlight c# tabtitle="Responsive-parent.cs" %}
 {% include code-snippet/grid/scrolling/responsive-parent/responsive-parent.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -67,10 +67,10 @@ Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="responsive-parent" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/responsive-parent/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="responsive-parent" %}
+{% highlight c# tabtitle="Responsive-parent.cs" %}
 {% include code-snippet/grid/scrolling/responsive-parent/responsive-parent.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -85,10 +85,10 @@ You can scroll the grid content to the selected row position by using the [`RowS
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="scroll-selected-row" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/scroll-selected-row/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="scroll-selected-row" %}
+{% highlight c# tabtitle="Scroll-selected-row.cs" %}
 {% include code-snippet/grid/scrolling/scroll-selected-row/scroll-selected-row.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -96,10 +96,10 @@ You can scroll the grid content to the selected row position by using the [`RowS
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="scroll-selected-row" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/scroll-selected-row/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="scroll-selected-row" %}
+{% highlight c# tabtitle="Scroll-selected-row.cs" %}
 {% include code-snippet/grid/scrolling/scroll-selected-row/scroll-selected-row.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -116,10 +116,10 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hide-scroll" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/hide-scroll/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="hide-scroll" %}
+{% highlight c# tabtitle="Hide-scroll.cs" %}
 {% include code-snippet/grid/scrolling/hide-scroll/hide-scroll.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -127,10 +127,10 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hide-scroll" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/scrolling/hide-scroll/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="hide-scroll" %}
+{% highlight c# tabtitle="Hide-scroll.cs" %}
 {% include code-snippet/grid/scrolling/hide-scroll/hide-scroll.cs %}
 {% endhighlight %}
 {% endtabs %}

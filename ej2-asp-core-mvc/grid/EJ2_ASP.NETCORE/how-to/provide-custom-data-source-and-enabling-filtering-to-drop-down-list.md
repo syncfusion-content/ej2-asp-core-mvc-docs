@@ -32,10 +32,10 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-dropdownlist" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/dropdown-edit/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-dropdownlist" %}
+{% highlight c# tabtitle="Edit-dropdownlist.cs" %}
 {% include code-snippet/grid/how-to/dropdown-edit/edit-dropdownlist.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -43,10 +43,10 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-dropdownlist" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/dropdown-edit/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-dropdownlist" %}
+{% highlight c# tabtitle="Edit-dropdownlist.cs" %}
 {% include code-snippet/grid/how-to/dropdown-edit/edit-dropdownlist.cs %}
 {% endhighlight %}
 {% endtabs %}

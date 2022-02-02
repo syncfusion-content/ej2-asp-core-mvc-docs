@@ -18,13 +18,13 @@ In the below example, we have passed **recordcount** as **12** using **addParams
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="addtional-parameter" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/passing-params-exporting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="addtional-parameter" %}
+{% highlight c# tabtitle="Addtional-parameter.cs" %}
 {% include code-snippet/grid/how-to/passing-params-exporting/addtional-parameter.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="addtional-parameter" %}
+{% highlight c# tabtitle="Addtional-parameter.cs" %}
 {% include code-snippet/grid/how-to/passing-params-exporting/addtional-parameter.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -32,13 +32,13 @@ In the below example, we have passed **recordcount** as **12** using **addParams
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="addtional-parameter" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/passing-params-exporting/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="addtional-parameter" %}
+{% highlight c# tabtitle="Addtional-parameter.cs" %}
 {% include code-snippet/grid/how-to/passing-params-exporting/addtional-parameter.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="addtional-parameter" %}
+{% highlight c# tabtitle="Addtional-parameter.cs" %}
 {% include code-snippet/grid/how-to/passing-params-exporting/addtional-parameter.cs %}
 {% endhighlight %}
 {% endtabs %}

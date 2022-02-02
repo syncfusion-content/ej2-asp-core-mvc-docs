@@ -24,10 +24,10 @@ You can hide the sorting options on the excel filter dialog by setting display a
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-sorting-excel" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disable-sorting-excel/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="disable-sorting-excel" %}
+{% highlight c# tabtitle="Disable-sorting-excel.cs" %}
 {% include code-snippet/grid/how-to/disable-sorting-excel/disable-sorting-excel.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -35,10 +35,10 @@ You can hide the sorting options on the excel filter dialog by setting display a
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-sorting-excel" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disable-sorting-excel/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="disable-sorting-excel" %}
+{% highlight c# tabtitle="Disable-sorting-excel.cs" %}
 {% include code-snippet/grid/how-to/disable-sorting-excel/disable-sorting-excel.cs %}
 {% endhighlight %}
 {% endtabs %}

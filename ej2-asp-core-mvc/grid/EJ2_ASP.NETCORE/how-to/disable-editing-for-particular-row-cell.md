@@ -18,10 +18,10 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disable-edit/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="disable-edit" %}
+{% highlight c# tabtitle="Disable-edit.cs" %}
 {% include code-snippet/grid/how-to/disable-edit/disable-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disable-edit/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="disable-edit" %}
+{% highlight c# tabtitle="Disable-edit.cs" %}
 {% include code-snippet/grid/how-to/disable-edit/disable-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -45,10 +45,10 @@ For batch mode of editing, you can use **CellEdit** event of Grid. In the below 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit-batch" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disable-edit-batch/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="disable-edit-batch" %}
+{% highlight c# tabtitle="Disable-edit-batch.cs" %}
 {% include code-snippet/grid/how-to/disable-edit-batch/disable-edit-batch.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -56,10 +56,10 @@ For batch mode of editing, you can use **CellEdit** event of Grid. In the below 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit-batch" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disable-edit-batch/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="disable-edit-batch" %}
+{% highlight c# tabtitle="Disable-edit-batch.cs" %}
 {% include code-snippet/grid/how-to/disable-edit-batch/disable-edit-batch.cs %}
 {% endhighlight %}
 {% endtabs %}

@@ -18,10 +18,10 @@ In the below code we have displayed the null date values at bottom of the Grid r
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="sort-comparer" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/sort-comparer/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="sort-comparer" %}
+{% highlight c# tabtitle="Sort-comparer.cs" %}
 {% include code-snippet/grid/how-to/sort-comparer/sort-comparer.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the below code we have displayed the null date values at bottom of the Grid r
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="sort-comparer" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/sort-comparer/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="sort-comparer" %}
+{% highlight c# tabtitle="Sort-comparer.cs" %}
 {% include code-snippet/grid/how-to/sort-comparer/sort-comparer.cs %}
 {% endhighlight %}
 {% endtabs %}

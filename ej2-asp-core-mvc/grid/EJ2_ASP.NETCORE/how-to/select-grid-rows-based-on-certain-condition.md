@@ -18,10 +18,10 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="databasedselection" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/databasedselection/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="databasedselection" %}
+{% highlight c# tabtitle="Databasedselection.cs" %}
 {% include code-snippet/grid/how-to/databasedselection/databasedselection.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="databasedselection" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/databasedselection/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="databasedselection" %}
+{% highlight c# tabtitle="Databasedselection.cs" %}
 {% include code-snippet/grid/how-to/databasedselection/databasedselection.cs %}
 {% endhighlight %}
 {% endtabs %}

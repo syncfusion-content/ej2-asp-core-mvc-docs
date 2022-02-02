@@ -22,13 +22,13 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="dialog" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -36,13 +36,13 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="dialog" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}

@@ -24,10 +24,10 @@ In the following sample, we have customized string filter operators.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customize-filter-menu" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/customize-filter-menu/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="customize-filter-menu" %}
+{% highlight c# tabtitle="Customize-filter-menu.cs" %}
 {% include code-snippet/grid/how-to/customize-filter-menu/customize-filter-menu.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -35,10 +35,10 @@ In the following sample, we have customized string filter operators.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customize-filter-menu" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/customize-filter-menu/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customize-filter-menu" %}
+{% highlight c# tabtitle="Customize-filter-menu.cs" %}
 {% include code-snippet/grid/how-to/customize-filter-menu/customize-filter-menu.cs %}
 {% endhighlight %}
 {% endtabs %}

@@ -22,13 +22,13 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="dialog" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/customizedialog/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/customizedialog/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/customizedialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -36,13 +36,13 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="dialog" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/customizedialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/customizedialog/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/customizedialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}

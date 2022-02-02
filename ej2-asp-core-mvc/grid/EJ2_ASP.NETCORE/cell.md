@@ -18,10 +18,10 @@ The HTML tags can be displayed in the Grid header and content by enabling the [`
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="html" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/html/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="html" %}
+{% highlight c# tabtitle="Html.cs" %}
 {% include code-snippet/grid/cell/html/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -29,10 +29,10 @@ The HTML tags can be displayed in the Grid header and content by enabling the [`
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="html" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/html/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="html" %}
+{% highlight c# tabtitle="Html.cs" %}
 {% include code-snippet/grid/cell/html/html.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -49,10 +49,10 @@ The [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customize" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/customize/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="customize" %}
+{% highlight c# tabtitle="Customize.cs" %}
 {% include code-snippet/grid/cell/customize/customize.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -60,10 +60,10 @@ The [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customize" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/customize/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customize" %}
+{% highlight c# tabtitle="Customize.cs" %}
 {% include code-snippet/grid/cell/customize/customize.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -90,10 +90,10 @@ In the following example, the [`wrapMode`](https://help.syncfusion.com/cr/aspnet
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="autowrap" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/autowrap/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="autowrap" %}
+{% highlight c# tabtitle="Autowrap.cs" %}
 {% include code-snippet/grid/cell/autowrap/autowrap.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -101,10 +101,10 @@ In the following example, the [`wrapMode`](https://help.syncfusion.com/cr/aspnet
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="autowrap" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/autowrap/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="autowrap" %}
+{% highlight c# tabtitle="Autowrap.cs" %}
 {% include code-snippet/grid/cell/autowrap/autowrap.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -127,10 +127,10 @@ In the below example, we have customized the cells of **OrderID** and **ShipCity
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customStyle" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/customAttribute/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="customStyle" %}
+{% highlight c# tabtitle="CustomStyle.cs" %}
 {% include code-snippet/grid/cell/customAttribute/customStyle.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -138,10 +138,10 @@ In the below example, we have customized the cells of **OrderID** and **ShipCity
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customStyle" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/customAttribute/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customStyle" %}
+{% highlight c# tabtitle="CustomStyle.cs" %}
 {% include code-snippet/grid/cell/customAttribute/customStyle.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -167,10 +167,10 @@ The available modes of grid lines are:
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="gridlines" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/gridlines/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="gridlines" %}
+{% highlight c# tabtitle="Gridlines.cs" %}
 {% include code-snippet/grid/cell/gridlines/gridlines.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -178,10 +178,10 @@ The available modes of grid lines are:
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="gridlines" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/gridlines/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="gridlines" %}
+{% highlight c# tabtitle="Gridlines.cs" %}
 {% include code-snippet/grid/cell/gridlines/gridlines.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -204,10 +204,10 @@ There are three types of **ClipMode**. They are:
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="clipmode" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/clipmode/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="clipmode" %}
+{% highlight c# tabtitle="Clipmode.cs" %}
 {% include code-snippet/grid/cell/clipmode/clipmode.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -215,10 +215,10 @@ There are three types of **ClipMode**. They are:
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="clipmode" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/cell/clipmode/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="clipmode" %}
+{% highlight c# tabtitle="Clipmode.cs" %}
 {% include code-snippet/grid/cell/clipmode/clipmode.cs %}
 {% endhighlight %}
 {% endtabs %}

@@ -30,10 +30,10 @@ To render the DropDownList component, use the [`DataBound`](https://help.syncfus
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-toolbar" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/custom-toolbar/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-toolbar" %}
+{% highlight c# tabtitle="Custom-toolbar.cs" %}
 {% include code-snippet/grid/how-to/custom-toolbar/custom-toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -41,10 +41,10 @@ To render the DropDownList component, use the [`DataBound`](https://help.syncfus
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-toolbar" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/custom-toolbar/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-toolbar" %}
+{% highlight c# tabtitle="Custom-toolbar.cs" %}
 {% include code-snippet/grid/how-to/custom-toolbar/custom-toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -81,10 +81,10 @@ Refresh the grid after the data source change by using the `refresh` method.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="refresh-datasource" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/refresh-datasource/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="refresh-datasource" %}
+{% highlight c# tabtitle="Refresh-datasource.cs" %}
 {% include code-snippet/grid/how-to/refresh-datasource/refresh-datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -92,10 +92,10 @@ Refresh the grid after the data source change by using the `refresh` method.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="refresh-datasource" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/refresh-datasource/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="refresh-datasource" %}
+{% highlight c# tabtitle="Refresh-datasource.cs" %}
 {% include code-snippet/grid/how-to/refresh-datasource/refresh-datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -150,10 +150,10 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disablegrid" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disablegrid/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="disablegrid" %}
+{% highlight c# tabtitle="Disablegrid.cs" %}
 {% include code-snippet/grid/how-to/disablegrid/disablegrid.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -161,10 +161,10 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disablegrid" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disablegrid/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="disablegrid" %}
+{% highlight c# tabtitle="Disablegrid.cs" %}
 {% include code-snippet/grid/how-to/disablegrid/disablegrid.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -181,10 +181,10 @@ In the following example, we have printed expanded child grids form other pages.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hierarchyprint" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/hierarchyprint/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="hierarchyprint" %}
+{% highlight c# tabtitle="Hierarchyprint.cs" %}
 {% include code-snippet/grid/how-to/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -192,10 +192,10 @@ In the following example, we have printed expanded child grids form other pages.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hierarchyprint" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/hierarchyprint/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="hierarchyprint" %}
+{% highlight c# tabtitle="Hierarchyprint.cs" %}
 {% include code-snippet/grid/how-to/hierarchyprint/hierarchyprint.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -234,10 +234,10 @@ grid.refreshHeader();
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="column-header-text" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/column-header-text/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="column-header-text" %}
+{% highlight c# tabtitle="Column-header-text.cs" %}
 {% include code-snippet/grid/how-to/column-header-text/column-header-text.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -245,10 +245,10 @@ grid.refreshHeader();
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="column-header-text" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/column-header-text/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="column-header-text" %}
+{% highlight c# tabtitle="Column-header-text.cs" %}
 {% include code-snippet/grid/how-to/column-header-text/column-header-text.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -295,10 +295,10 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-column-style" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/custom-column-style/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-column-style" %}
+{% highlight c# tabtitle="Custom-column-style.cs" %}
 {% include code-snippet/grid/how-to/custom-column-style/custom-column-style.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -306,10 +306,10 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-column-style" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/custom-column-style/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-column-style" %}
+{% highlight c# tabtitle="Custom-column-style.cs" %}
 {% include code-snippet/grid/how-to/custom-column-style/custom-column-style.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -336,10 +336,10 @@ function tooltip (args) {
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-tooltip" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/custom-tooltip/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-tooltip" %}
+{% highlight c# tabtitle="Custom-tooltip.cs" %}
 {% include code-snippet/grid/how-to/custom-tooltip/custom-tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -347,10 +347,10 @@ function tooltip (args) {
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="custom-tooltip" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/custom-tooltip/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-tooltip" %}
+{% highlight c# tabtitle="Custom-tooltip.cs" %}
 {% include code-snippet/grid/how-to/custom-tooltip/custom-tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -395,13 +395,13 @@ Using the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="render-other-comp" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/render-other-comp/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="render-other-comp" %}
+{% highlight c# tabtitle="Render-other-comp.cs" %}
 {% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="render-other-comp" %}
+{% highlight c# tabtitle="Render-other-comp.cs" %}
 {% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -409,13 +409,13 @@ Using the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="render-other-comp" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/render-other-comp/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="render-other-comp" %}
+{% highlight c# tabtitle="Render-other-comp.cs" %}
 {% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="render-other-comp" %}
+{% highlight c# tabtitle="Render-other-comp.cs" %}
 {% include code-snippet/grid/how-to/render-other-comp/render-other-comp.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -467,10 +467,10 @@ function setHeaderHeight(args) {
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orientation" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/orientation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="orientation" %}
+{% highlight c# tabtitle="Orientation.cs" %}
 {% include code-snippet/grid/how-to/orientation/orientation.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -478,10 +478,10 @@ function setHeaderHeight(args) {
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="orientation" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/orientation/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="orientation" %}
+{% highlight c# tabtitle="Orientation.cs" %}
 {% include code-snippet/grid/how-to/orientation/orientation.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -504,10 +504,10 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="column-icon" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/custom-column-menu-icon/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="column-icon" %}
+{% highlight c# tabtitle="Column-icon.cs" %}
 {% include code-snippet/grid/how-to/custom-column-menu-icon/column-icon.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -515,10 +515,10 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="column-icon" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/custom-column-menu-icon/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="column-icon" %}
+{% highlight c# tabtitle="Column-icon.cs" %}
 {% include code-snippet/grid/how-to/custom-column-menu-icon/column-icon.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -593,10 +593,10 @@ Now assign the custom adaptor to the grid as follows.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="anti-forgery-token" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/anti-forgery-token/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="anti-forgery-token" %}
+{% highlight c# tabtitle="Anti-forgery-token.cs" %}
 {% include code-snippet/grid/how-to/anti-forgery-token/anti-forgery-token.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -604,10 +604,10 @@ Now assign the custom adaptor to the grid as follows.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="anti-forgery-token" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/anti-forgery-token/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="anti-forgery-token" %}
+{% highlight c# tabtitle="Anti-forgery-token.cs" %}
 {% include code-snippet/grid/how-to/anti-forgery-token/anti-forgery-token.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -626,10 +626,10 @@ In the below demo, the `ShipCountry` column is rendered with the template.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-temp" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/edit-temp/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-temp" %}
+{% highlight c# tabtitle="Edit-temp.cs" %}
 {% include code-snippet/grid/how-to/edit-temp/edit-temp.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -637,10 +637,10 @@ In the below demo, the `ShipCountry` column is rendered with the template.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-temp" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/edit-temp/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-temp" %}
+{% highlight c# tabtitle="Edit-temp.cs" %}
 {% include code-snippet/grid/how-to/edit-temp/edit-temp.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -657,13 +657,13 @@ In the below example, we have changed the dialog's header text for editing and a
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="dialog" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/customizedialog/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/customizedialog/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/customizedialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -671,13 +671,13 @@ In the below example, we have changed the dialog's header text for editing and a
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="dialog" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/customizedialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/customizedialog/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/customizedialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -698,13 +698,13 @@ In the below example, we have rendered the grid columns `CustomerID` as hidden c
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="dialog" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -712,13 +712,13 @@ In the below example, we have rendered the grid columns `CustomerID` as hidden c
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="dialog" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/show-hide-edit-dialog/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -735,10 +735,10 @@ In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="cascading" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/cascading/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="cascading" %}
+{% highlight c# tabtitle="Cascading.cs" %}
 {% include code-snippet/grid/how-to/cascading/cascading.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -746,10 +746,10 @@ In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="cascading" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/cascading/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="cascading" %}
+{% highlight c# tabtitle="Cascading.cs" %}
 {% include code-snippet/grid/how-to/cascading/cascading.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -779,10 +779,10 @@ In the below demo, DropDownList is rendered with custom Datasource for the `Ship
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-dropdownlist" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/dropdown-edit/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-dropdownlist" %}
+{% highlight c# tabtitle="Edit-dropdownlist.cs" %}
 {% include code-snippet/grid/how-to/dropdown-edit/edit-dropdownlist.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -790,10 +790,10 @@ In the below demo, DropDownList is rendered with custom Datasource for the `Ship
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-dropdownlist" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/dropdown-edit/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-dropdownlist" %}
+{% highlight c# tabtitle="Edit-dropdownlist.cs" %}
 {% include code-snippet/grid/how-to/dropdown-edit/edit-dropdownlist.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -810,10 +810,10 @@ In the below demo, you can access the Editor component instance while adding or 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="access-editor" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/access-editor/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="access-editor" %}
+{% highlight c# tabtitle="Access-editor.cs" %}
 {% include code-snippet/grid/how-to/access-editor/access-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -821,10 +821,10 @@ In the below demo, you can access the Editor component instance while adding or 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="access-editor" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/access-editor/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="access-editor" %}
+{% highlight c# tabtitle="Access-editor.cs" %}
 {% include code-snippet/grid/how-to/access-editor/access-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -843,13 +843,13 @@ The following example demonstrate the wizard like editing in grid.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="dialog" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/wizardediting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/wizardediting/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/wizardediting/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -857,13 +857,13 @@ The following example demonstrate the wizard like editing in grid.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="dialog" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/wizardediting/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/wizardediting/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/wizardediting/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -880,13 +880,13 @@ The following example demonstrate the usage of tab control inside the dialog tem
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="dialog" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/tabediting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/tabediting/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/tabediting/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -894,13 +894,13 @@ The following example demonstrate the usage of tab control inside the dialog tem
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="dialog" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/tabediting/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/tabediting/dialog.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="dialog" %}
+{% highlight c# tabtitle="Dialog.cs" %}
 {% include code-snippet/grid/edit/tabediting/dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -917,10 +917,10 @@ In the below demo, the rows which are having the value for `ShipCountry` column 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disable-edit/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="disable-edit" %}
+{% highlight c# tabtitle="Disable-edit.cs" %}
 {% include code-snippet/grid/how-to/disable-edit/disable-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -928,10 +928,10 @@ In the below demo, the rows which are having the value for `ShipCountry` column 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disable-edit/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="disable-edit" %}
+{% highlight c# tabtitle="Disable-edit.cs" %}
 {% include code-snippet/grid/how-to/disable-edit/disable-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -944,10 +944,10 @@ For batch mode of editing, you can use `CellEdit` event of Grid. In the below de
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit-batch" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disable-edit-batch/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="disable-edit-batch" %}
+{% highlight c# tabtitle="Disable-edit-batch.cs" %}
 {% include code-snippet/grid/how-to/disable-edit-batch/disable-edit-batch.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -955,10 +955,10 @@ For batch mode of editing, you can use `CellEdit` event of Grid. In the below de
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="disable-edit-batch" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disable-edit-batch/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="disable-edit-batch" %}
+{% highlight c# tabtitle="Disable-edit-batch.cs" %}
 {% include code-snippet/grid/how-to/disable-edit-batch/disable-edit-batch.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -977,13 +977,13 @@ The following example demonstrates on `Adding` a new row when `Enter` key is pre
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="keys" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/keyboard-actions/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="keys" %}
+{% highlight c# tabtitle="Keys.cs" %}
 {% include code-snippet/grid/edit/keyboard-actions/keys.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="keys" %}
+{% highlight c# tabtitle="Keys.cs" %}
 {% include code-snippet/grid/edit/keyboard-actions/keys.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -991,13 +991,13 @@ The following example demonstrates on `Adding` a new row when `Enter` key is pre
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="keys" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/edit/keyboard-actions/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="keys" %}
+{% highlight c# tabtitle="Keys.cs" %}
 {% include code-snippet/grid/edit/keyboard-actions/keys.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="keys" %}
+{% highlight c# tabtitle="Keys.cs" %}
 {% include code-snippet/grid/edit/keyboard-actions/keys.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1014,10 +1014,10 @@ Bind the click event for the Grid and in the click event handler call the [`edit
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="editable-single-click" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/editable-single-click/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="editable-single-click" %}
+{% highlight c# tabtitle="Editable-single-click.cs" %}
 {% include code-snippet/grid/how-to/editable-single-click/editable-single-click.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1025,10 +1025,10 @@ Bind the click event for the Grid and in the click event handler call the [`edit
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="editable-single-click" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/editable-single-click/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="editable-single-click" %}
+{% highlight c# tabtitle="Editable-single-click.cs" %}
 {% include code-snippet/grid/how-to/editable-single-click/editable-single-click.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1052,10 +1052,10 @@ In the following sample, we have customized string filter operators.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customize-filter-menu" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/customize-filter-menu/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="customize-filter-menu" %}
+{% highlight c# tabtitle="Customize-filter-menu.cs" %}
 {% include code-snippet/grid/how-to/customize-filter-menu/customize-filter-menu.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1063,10 +1063,10 @@ In the following sample, we have customized string filter operators.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="customize-filter-menu" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/customize-filter-menu/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customize-filter-menu" %}
+{% highlight c# tabtitle="Customize-filter-menu.cs" %}
 {% include code-snippet/grid/how-to/customize-filter-menu/customize-filter-menu.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1104,10 +1104,10 @@ In the below demo, click on the corresponding button to perform single-column or
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="dynamicsort" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/dynamicsort/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="dynamicsort" %}
+{% highlight c# tabtitle="Dynamicsort.cs" %}
 {% include code-snippet/grid/how-to/dynamicsort/dynamicsort.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1115,10 +1115,10 @@ In the below demo, click on the corresponding button to perform single-column or
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="dynamicsort" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/dynamicsort/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="dynamicsort" %}
+{% highlight c# tabtitle="Dynamicsort.cs" %}
 {% include code-snippet/grid/how-to/dynamicsort/dynamicsort.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1159,10 +1159,10 @@ In the below demo, click on the corresponding button to clear sort for particula
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="dynamicclearsort" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/dynamicclearsort/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="dynamicclearsort" %}
+{% highlight c# tabtitle="Dynamicclearsort.cs" %}
 {% include code-snippet/grid/how-to/dynamicclearsort/dynamicclearsort.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1170,10 +1170,10 @@ In the below demo, click on the corresponding button to clear sort for particula
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="dynamicclearsort" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/dynamicclearsort/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="dynamicclearsort" %}
+{% highlight c# tabtitle="Dynamicclearsort.cs" %}
 {% include code-snippet/grid/how-to/dynamicclearsort/dynamicclearsort.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1192,10 +1192,10 @@ In the following example, The `Employee Name` is a foreign key column and while 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-template-foreign" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/edit-template-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-template-foreign" %}
+{% highlight c# tabtitle="Edit-template-foreign.cs" %}
 {% include code-snippet/grid/how-to/edit-template-foreign/edit-template-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1203,10 +1203,10 @@ In the following example, The `Employee Name` is a foreign key column and while 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="edit-template-foreign" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/edit-template-foreign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="edit-template-foreign" %}
+{% highlight c# tabtitle="Edit-template-foreign.cs" %}
 {% include code-snippet/grid/how-to/edit-template-foreign/edit-template-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1223,10 +1223,10 @@ In the following example, The `Employee Name` is a foreign key column. DropDownL
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="filter-ui-foreign" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/filter-ui-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="filter-ui-foreign" %}
+{% highlight c# tabtitle="Filter-ui-foreign.cs" %}
 {% include code-snippet/grid/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1234,10 +1234,10 @@ In the following example, The `Employee Name` is a foreign key column. DropDownL
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="filter-ui-foreign" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/filter-ui-foreign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="filter-ui-foreign" %}
+{% highlight c# tabtitle="Filter-ui-foreign.cs" %}
 {% include code-snippet/grid/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1254,10 +1254,10 @@ In the following example, The `Employee Name` is a foreign key column. This colu
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="filterbar-temp-foreign" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/filterbar-temp-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="filterbar-temp-foreign" %}
+{% highlight c# tabtitle="Filterbar-temp-foreign.cs" %}
 {% include code-snippet/grid/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1265,10 +1265,10 @@ In the following example, The `Employee Name` is a foreign key column. This colu
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="filterbar-temp-foreign" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/filterbar-temp-foreign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="filterbar-temp-foreign" %}
+{% highlight c# tabtitle="Filterbar-temp-foreign.cs" %}
 {% include code-snippet/grid/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1285,10 +1285,10 @@ In the following example, The `Employee Name` is a foreign key column and the ag
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="aggregate-foreign" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/aggregate-foreign/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="aggregate-foreign" %}
+{% highlight c# tabtitle="Aggregate-foreign.cs" %}
 {% include code-snippet/grid/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1296,10 +1296,10 @@ In the following example, The `Employee Name` is a foreign key column and the ag
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="aggregate-foreign" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/aggregate-foreign/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="aggregate-foreign" %}
+{% highlight c# tabtitle="Aggregate-foreign.cs" %}
 {% include code-snippet/grid/how-to/aggregate-foreign/aggregate-foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1318,10 +1318,10 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="export-filtered-data" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/export-filtered-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="export-filtered-data" %}
+{% highlight c# tabtitle="Export-filtered-data.cs" %}
 {% include code-snippet/grid/how-to/export-filtered-data/export-filtered-data.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1329,10 +1329,10 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="export-filtered-data" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/export-filtered-data/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="export-filtered-data" %}
+{% highlight c# tabtitle="Export-filtered-data.cs" %}
 {% include code-snippet/grid/how-to/export-filtered-data/export-filtered-data.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1349,10 +1349,10 @@ To customize default values of pager dropdown, you need to define `pageSizes` as
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pagerdropdown" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/pagerdropdown/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="pagerdropdown" %}
+{% highlight c# tabtitle="Pagerdropdown.cs" %}
 {% include code-snippet/grid/how-to/pagerdropdown/pagerdropdown.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1360,10 +1360,10 @@ To customize default values of pager dropdown, you need to define `pageSizes` as
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="pagerdropdown" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/pagerdropdown/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="pagerdropdown" %}
+{% highlight c# tabtitle="Pagerdropdown.cs" %}
 {% include code-snippet/grid/how-to/pagerdropdown/pagerdropdown.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1417,10 +1417,10 @@ In the below demo, the expand/collapse icon in the row with `EmployeeID` as `1` 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hidearrow" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/hidearrow/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="hidearrow" %}
+{% highlight c# tabtitle="Hidearrow.cs" %}
 {% include code-snippet/grid/how-to/hidearrow/hidearrow.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1428,10 +1428,10 @@ In the below demo, the expand/collapse icon in the row with `EmployeeID` as `1` 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="hidearrow" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/hidearrow/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="hidearrow" %}
+{% highlight c# tabtitle="Hidearrow.cs" %}
 {% include code-snippet/grid/how-to/hidearrow/hidearrow.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1516,10 +1516,10 @@ You need to include cldr-data into your application and refer file location in `
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="localization-scripts" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/localization-scripts/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="localization-scripts" %}
+{% highlight c# tabtitle="Localization-scripts.cs" %}
 {% include code-snippet/grid/how-to/localization-scripts/localization-scripts.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1527,10 +1527,10 @@ You need to include cldr-data into your application and refer file location in `
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="localization-scripts" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/localization-scripts/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="localization-scripts" %}
+{% highlight c# tabtitle="Localization-scripts.cs" %}
 {% include code-snippet/grid/how-to/localization-scripts/localization-scripts.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1545,10 +1545,10 @@ To render grid from controller, We need to create instance for Grid model class.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="controller" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/render-grid-from-server/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="controller" %}
+{% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/grid/how-to/render-grid-from-server/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -1556,10 +1556,10 @@ To render grid from controller, We need to create instance for Grid model class.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="controller" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/render-grid-from-server/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="controller" %}
+{% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/grid/how-to/render-grid-from-server/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
