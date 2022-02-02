@@ -643,7 +643,7 @@ In the below sample, we have enabled **repeatHeader** property in [`PdfHeaderQue
 {% highlight c# tabtitle="hierarchy" %}
 {% include code-snippet/grid/pdf-export/hierarchy/tagHelper %}
 {% endhighlight %}
-{% highlight  tabtitle="repeat-header" %}
+{% highlight c# tabtitle="repeat-header" %}
 {% include code-snippet/grid/pdf-export/repeat-header/pdf-export.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -654,7 +654,7 @@ In the below sample, we have enabled **repeatHeader** property in [`PdfHeaderQue
 {% highlight c# tabtitle="hierarchy" %}
 {% include code-snippet/grid/pdf-export/hierarchy/razor %}
 {% endhighlight %}
-{% highlight  tabtitle="repeat-header" %}
+{% highlight c# tabtitle="repeat-header" %}
 {% include code-snippet/grid/pdf-export/repeat-header/pdf-export.cs %}
 {% endhighlight %}
 {% endtabs %}
