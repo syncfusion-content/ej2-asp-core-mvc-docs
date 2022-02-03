@@ -29,9 +29,6 @@ be used for rendering DOM element using desired data.
 `compile` method from `ej2-base` can be used to convert our template strings into
 executable functions.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-
 ## Available Template Syntax
 
 | Name | Syntax | Description |

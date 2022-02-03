@@ -22,7 +22,6 @@ documentation: ug
 
 
 
-{% if page.publishingplatform == "aspnet-core" %}
 
 ## Auto wrap 
 
