@@ -1,0 +1,1 @@
+@Html.EJS().Button("normalbtn").EnableRtl(true).Content("Normal").Render()
