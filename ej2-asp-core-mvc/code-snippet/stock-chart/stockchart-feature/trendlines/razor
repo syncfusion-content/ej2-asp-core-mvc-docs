@@ -1,0 +1,17 @@
+
+    <script src="~/financial-data.js"></script>
+
+            @(Html.EJS().StockChart("container").Load("stockload").Title("AAPL Stock Price").IndicatorType(new List<Object>() { }).ExportType(new List<Object>() { }).SeriesType(new List<Object>() { })
+                                                                .Series(sr =>
+                                                                {
+                                                                    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).DataSource("data").Add();
+                                                                })
+                                                                .Render())
+    <script>
+        var data = window.chartData;
+        function stockload(args) {
+            args.stockChart.series[0].trendlines = [{ type: 'MovingAverage', enableTooltip: false }]
+
+        }
+        
+   </script>

@@ -1,0 +1,6 @@
+  <ejs-chart id="container" width="60%">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="yValue" name="India" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Bar"></e-series>
+        </e-series-collection>
+    </ejs-chart>

@@ -1,0 +1,26 @@
+<button id="add">Add</button>
+<button id="remove">Remove</button>
+@Html.EJS().Chart("container").PrimaryXAxis(px => px.Title("Years").
+                       ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Series(series =>
+                       {
+                           series.Type(
+              Syncfusion.EJ2.Charts.ChartSeriesType.Column
+          ).DataSource(ViewBag.dataSource).Name("Product X").XName("x").YName("yValue").Add();
+                       }
+                       ).PrimaryYAxis(py => py.Title("Profit ($)")).Title("Sales History of Product X").Render()
+<script>
+    document.getElementById("add").onclick = function () {
+        var chart = document.getElementById("container").ej2_instances[0];
+        chart.addSeries([{
+            type: 'Column',
+            dataSource: [{ x: 'John', y: 11000 }, { x: 'Jake', y: 16000 }, { x: 'Peter', y: 19000 },
+            { x: 'James', y: 12000 }, { x: 'Mary', y: 10700 }],
+            xName: 'x', width: 2,
+            yName: 'y'
+        }]);
+    };
+    document.getElementById("remove").onclick = function () {
+        var chart = document.getElementById("container").ej2_instances[0];
+        chart.removeSeries(1);
+    }
+</script>

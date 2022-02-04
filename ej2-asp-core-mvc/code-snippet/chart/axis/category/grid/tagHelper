@@ -1,0 +1,13 @@
+  <ejs-chart id="container" title="Sales History of Product X" >
+            <e-chart-primaryxaxis valueType="Category">
+   <e-majorgridlines color="blue" width="2"></e-majorgridlines>
+</e-chart-primaryxaxis>
+            <e-chart-primaryyaxis title="Profit ($)">
+                <e-majorgridlines color="blue" width="2"></e-majorgridlines>
+</e-chart-primaryyaxis>
+            <e-series-collection>
+                <e-series name="Product X" dataSource="ViewBag.dataSource" xName="x" yName="yValue"
+                          type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"
+                         ></e-series>
+            </e-series-collection>
+        </ejs-chart>

@@ -1,0 +1,14 @@
+
+    <script src="~/financial-data.js"></script>
+
+            @Html.EJS().StockChart("container").Title("AAPL Stock Price")
+                                                                .Series(sr =>
+                                                                {
+                                                                    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).DataSource("data").Add();
+                                                                })
+                                                                .TitleStyle(ts => ts.Color("#E27F2D").FontFamily("Arial").FontStyle("italic").FontWeight("regular").Size("20px"))
+                                                                .Render()
+
+    <script>
+        var data = window.chartData;
+    </script>

@@ -1,0 +1,11 @@
+<ejs-chart id="container" title="Olympic Medals">
+        <e-chart-primaryxaxis valueType="Category">
+        </e-chart-primaryxaxis>
+       <e-chart-axes>
+           <e-chart-axis rowIndex="0" name="yAxis"></e-chart-axis>
+       </e-chart-axes>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y1" yAxisName="yAxis" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line"></e-series>
+        </e-series-collection>
+    </ejs-chart>

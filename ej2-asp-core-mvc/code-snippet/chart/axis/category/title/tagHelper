@@ -1,0 +1,14 @@
+@{
+  var title = new {
+            size= "16px", color="red",
+            fontFamily="Segoe UI", fontWeight="bold"
+};
+}
+
+    <ejs-chart id="container" title="Olympic Medals">
+        <e-chart-primaryxaxis valueType="Category" title="Countries" titleStyle="title">
+        </e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource"  xName="x" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+        </e-series-collection>
+    </ejs-chart>

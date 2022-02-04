@@ -1,0 +1,55 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+   .CornerRadius(cr=>cr.BottomLeft(10).BottomRight(10).TopLeft(10).TopRight(10))
+   XName("x").
+   YName("yValue").
+   DataSource(ViewBag.dataSource).
+   Width(2).Add();
+   }).
+   PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Render()
+
+   <script>
+		var count = 0;
+		var loaded = function (args) {
+			args.chart.loaded = null;
+			setInterval(
+				function () {
+					if (count === 0) {
+						args.chart.series[0].dataSource = [
+							{ x: 'Tea', y: 206, text: 'Bangaladesh' },
+							{ x: 'Misc', y: 123, text: 'Bhutn' },
+							{ x: 'Fish', y: 48, text: 'Nepal' },
+							{ x: 'Egg', y: 240, text: 'Thiland' },
+							{ x: 'Fruits', y: 170, text: 'Malaysia' }
+						];
+						args.chart.animate();
+						count++;
+					}
+					else if (count === 1) {
+						args.chart.series[0].dataSource = [
+							{ x: 'Tea', y: 86, text: 'Bangaladesh' },
+							{ x: 'Misc', y: 173, text: 'Bhutn' },
+							{ x: 'Fish', y: 188, text: 'Nepal' },
+							{ x: 'Egg', y: 109, text: 'Thiland' },
+							{ x: 'Fruits', y: 100, text: 'Malaysia' }
+						];
+						args.chart.animate();
+						count++;
+					}
+					else if (count === 2) {
+						args.chart.series[0].dataSource = [
+							{ x: 'Tea', y: 156, text: 'Bangaladesh' },
+							{ x: 'Misc', y: 33, text: 'Bhutn' },
+							{ x: 'Fish', y: 260, text: 'Nepal' },
+							{ x: 'Egg', y: 200, text: 'Thiland' },
+							{ x: 'Fruits', y: 30, text: 'Malaysia' }
+						];
+						args.chart.animate();
+						count = 0;
+					}
+				}, 2000);
+		}
+	</script>
+}
+

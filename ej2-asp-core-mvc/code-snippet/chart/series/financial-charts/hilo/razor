@@ -1,0 +1,15 @@
+<script src="chart/series/hilo/financial-data.js"></script>
+@Html.EJS().Chart("container").Series(series =>
+       {
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Hilo).XName("x").High("high").Low("low").Close("close").Open("Open").DataSource("returnValue").Name("Apple Inc").Add();
+       }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).MajorGridLines(ViewBag.majorGridLines).CrosshairTooltip(ViewBag.crosshairTooltip)
+       ).ChartArea(area => area.Border(ViewBag.ChartBorder)).Crosshair(cr => cr.Enable(true).LineType(Syncfusion.EJ2.Charts.LineType.Vertical).Line(ViewBag.line)).Load("load").LegendSettings(lg => lg.Visible(false)).Tooltip(tt => tt.Enable(true).Shared(true)).Title("AAPL Historical").Load("load").Render()
+
+ <script>
+        var dataSource = window.chartData;
+        var date1 = new Date('2017-01-01');
+        var returnValue = dataSource.filter(filterValue);
+        function filterValue(value) {
+            return value.x >= date1;
+        }
+    </script>

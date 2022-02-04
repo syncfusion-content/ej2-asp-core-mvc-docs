@@ -1,0 +1,5 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+       series.Width(2).XName("xValue").YName("yValue").IntermediateSumIndexes(ViewBag.intermediateSumIndexes).SumIndexes(ViewBag.sumIndexes).Marker(ViewBag.marker).NegativeFillColor("#e56590").Name("USA").ColumnWidth(0.9).Type(Syncfusion.EJ2.Charts.ChartSeriesType.Waterfall).DataSource(ViewBag.dataSource).Add();
+   }
+   ).ChartArea(area => area.Border(ViewBag.ChartBorder)).PrimaryXAxis(py => py.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).MajorGridLines(ViewBag.majorGridLines).PlotOffset(20)).PrimaryYAxis(py => py.Minimum(0).Maximum(5000).Interval(1000).MajorGridLines(ViewBag.majorGridLines).Title("Expenditure")).Title("Company Revenue and Profit").LegendSettings(lg => lg.Visible(true)).Tooltip(tl => tl.Enable(true)).Load("load").TextRender("textRender").AxisLabelRender("axisLabelRender").Render()

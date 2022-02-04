@@ -1,0 +1,13 @@
+
+     <ejs-accumulationchart id="container" title="Mobile Browser Statistics">
+                    <e-accumulationchart-legendsettings visible="false">
+                    </e-accumulationchart-legendsettings>
+                    <e-accumulation-series-collection>
+                        <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser">
+                        </e-accumulation-series>
+                    </e-accumulation-series-collection>
+                    <e-accumulationchart-accumulationannotations>
+                        <e-accumulationchart-accumulationannotation Content="<div style='border: 1px solid black;background-color:red;padding: 5px 5px 5px 5px'>Others</div>" X="iPhone" Y=19 CoordinateUnits='@Syncfusion.EJ2.Charts.Units.Pixel' region='@Syncfusion.EJ2.Charts.Regions.Chart'></e-accumulationchart-accumulationannotation>
+                    </e-accumulationchart-accumulationannotations>
+                </ejs-accumulationchart>
+ 

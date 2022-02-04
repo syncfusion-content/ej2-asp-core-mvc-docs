@@ -1,0 +1,22 @@
+
+<script src="chart/technical-indicators/tma/financial-data.js"></script>
+
+       @Html.EJS().Chart("container-vertical").Series(series =>
+       {
+
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).XName("x").YName("y").Animation(ViewBag.animation)
+.High("high").Low("low").Open("open").Close("close").Volume("volume").BearFillColor("#2ecd71").BullFillColor("#e74c3d").DataSource("dataSource").Name("Apple Inc").Width(2).Add();
+
+       }).Indicators(id =>
+       {
+           id.Fill("#6063ff").Period(3).Type(Syncfusion.EJ2.Charts.TechnicalIndicators.Tma).Field(Syncfusion.EJ2.Charts.FinancialDataFields.Close).SeriesName("Apple Inc").Add();
+       }).ZoomSettings(zn => zn.EnableSelectionZooming(true).Mode(Syncfusion.EJ2.Charts.ZoomMode.X)).Crosshair(cr => cr.LineType(Syncfusion.EJ2.Charts.LineType.Vertical).Enable(true)
+           ).PrimaryXAxis(px => px.ZoomFactor(0.2).ZoomPosition(0.6).CrosshairTooltip(ViewBag.crosshairTooltip).MajorGridLines(ViewBag.majorGridLines)
+.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+             ).PrimaryYAxis(py => py.Title("Price").Minimum(50).Maximum(170).Interval(30)
+.LineStyle(ViewBag.lineStyle).LabelFormat("{value}M")
+             ).Title("AAPL 2012-2017").ChartArea(area => area.Border(ViewBag.ChartBorder)).Tooltip(tl => tl.Enable(true).Shared(true)).LegendSettings(lg => lg.Visible(false)).Load("load").Render()
+
+<script>
+        var dataSource = window.chartData;
+</script>

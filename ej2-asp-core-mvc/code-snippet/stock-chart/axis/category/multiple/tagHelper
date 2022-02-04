@@ -1,0 +1,26 @@
+       
+            <ejs-stockchart id="stockchart" load="chartLoad" title="Multiple Series">
+             <e-chart-axes>
+               <e-chart-axis rowIndex="0" name="yAxis"></e-chart-axis>
+             </e-chart-axes>
+                <e-stockchart-series-collection>
+                    <e-stockchart-series type='Column' xName='x' yName='close' name='Apple' >
+                    </e-stockchart-series>
+                    <e-stockchart-series type='Line' xName='x' yName='close' yAxisName='yAxis' name='Google' ></e-stockchart-series>
+                </e-stockchart-series-collection>
+                <e-stockchart-primaryxaxis valueType="DateTime">
+                    <e-majorgridlines width="0"></e-majorgridlines>
+                </e-stockchart-primaryxaxis>
+            </ejs-stockchart>
+
+    <script src="~/goog.js"></script>
+    <script src="~/googl.js"></script>
+    <script>
+        var data1 = goog;
+        var data2 = googl;
+        function chartLoad(args) {
+            args.stockChart.series[0].dataSource = data1;
+            args.stockChart.series[1].dataSource = data2;
+        }
+
+    </script>

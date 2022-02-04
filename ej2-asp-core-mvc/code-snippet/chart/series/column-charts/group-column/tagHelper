@@ -1,0 +1,66 @@
+<ejs-chart id="container" title="Olympics Medal Tally">
+                <e-chart-tooltipsettings enable="true">
+                </e-chart-tooltipsettings>
+                <e-chart-primaryxaxis valueType="Category" interval=1>
+                    <e-majorgridlines width="0"></e-majorgridlines>
+                </e-chart-primaryxaxis>
+                <e-chart-primaryyaxis>
+                    <e-majorgridlines width="0"></e-majorgridlines>
+                    <e-majorticklines width="0"></e-majorticklines>
+                    <e-linestyle width="0"></e-linestyle>
+                    <e-labelstyle color="transparent"></e-labelstyle>
+                </e-chart-primaryyaxis>
+                <e-chart-chartarea>
+                    <e-chartarea-border width="0"></e-chartarea-border>
+                </e-chart-chartarea>
+                <e-series-collection>
+                    <e-series dataSource="ViewBag.dataSource" xName='Year' yName='USA_Total' name='USA Total' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"
+                    groupName="USA" columnWidth=0.7 columnSpacing=0.1>
+                        <e-series-marker>
+                            <e-series-datalabel visible="true" position="Top">
+                                <e-font color="#ffffff" fontWeight="600"></e-font>
+                            </e-series-datalabel>
+                        </e-series-marker>
+                    </e-series>
+                    <e-series dataSource="ViewBag.dataSource" xName='Year' yName='USA_Gold' name='USA Gold' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"
+                    groupName="USA" columnWidth=0.5 columnSpacing=0.1>
+                        <e-series-marker>
+                            <e-series-datalabel visible="true" position="Top">
+                                <e-font fontWeight="600" color="#ffffff"></e-font>
+                            </e-series-datalabel>
+                        </e-series-marker>
+                    </e-series>
+                    <e-series dataSource="ViewBag.dataSource" xName='Year' yName='UK_Total' name='UK Total' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"
+                    groupName="UK" columnWidth=0.7 columnSpacing=0.1>
+                        <e-series-marker>
+                            <e-series-datalabel visible="true" position="Top">
+                                <e-font color="#ffffff" fontWeight="600"></e-font>
+                            </e-series-datalabel>
+                        </e-series-marker>
+                    </e-series>
+                    <e-series dataSource="ViewBag.dataSource" xName='Year' yName='UK_Gold' name='UK Gold' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"
+                    groupName="UK" columnWidth=0.5 columnSpacing=0.1>
+                        <e-series-marker>
+                            <e-series-datalabel visible="true" position="Top">
+                                <e-font fontWeight="600" color="#ffffff"></e-font>
+                            </e-series-datalabel>
+                        </e-series-marker>
+                    </e-series>
+                    <e-series dataSource="ViewBag.dataSource" xName='Year' yName='China_Total' name='China Total' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"
+                    groupName="China" columnWidth=0.7 columnSpacing=0.1>
+                        <e-series-marker>
+                            <e-series-datalabel visible="true" position="Top">
+                                <e-font color="#ffffff" fontWeight="600"></e-font>
+                            </e-series-datalabel>
+                        </e-series-marker>
+                    </e-series>
+                    <e-series dataSource="ViewBag.dataSource" xName='Year' yName='China_Gold' name='China Gold' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"
+                    groupName="China" columnWidth=0.5 columnSpacing=0.1>
+                        <e-series-marker>
+                            <e-series-datalabel visible="true" position="Top">
+                                <e-font fontWeight="600" color="#ffffff"></e-font>
+                            </e-series-datalabel>
+                        </e-series-marker>
+                    </e-series>
+                </e-series-collection>
+            </ejs-chart>

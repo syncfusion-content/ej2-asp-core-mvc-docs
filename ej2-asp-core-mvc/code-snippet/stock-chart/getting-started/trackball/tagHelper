@@ -1,0 +1,12 @@
+ <ejs-chart id="container" width="60%" load="window.onload">
+        <e-chart-crosshairsettings enable="true" lineType="Vertical">
+        </e-chart-crosshairsettings>
+        <e-chart-tooltipsettings enable="true" shared="true" format="${series.name} : ${point.x} : ${point.y}">
+        </e-chart-tooltipsettings>
+        <e-chart-primaryxaxis valueType="DateTime"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line"></e-series>
+            <e-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line"></e-series>
+            <e-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line"></e-series>
+        </e-series-collection>
+    </ejs-chart>

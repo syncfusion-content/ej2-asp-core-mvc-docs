@@ -1,0 +1,44 @@
+
+<script src="chart/technical-indicators/bollinger/financial-data.js"></script>
+
+ @(Html.EJS().Chart("container-vertical").Series(series =>
+        {
+            series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle)
+            .XName("x")
+            .YName("y")
+            .High("high")
+            .Low("low")
+            .Open("open")
+            .Close("close")
+            .Volume("volume")
+            .BearFillColor("#2ecd71")
+            .BullFillColor("#e74c3d")
+            .DataSource("dataSource")
+            .Name("Apple Inc")
+            .Width(2).Add();
+
+        }).Indicators(id =>
+        {
+            id.Fill("#6063ff")
+            .Period(14)
+            .UpperLine(ViewBag.upperline)
+            .LowerLine(ViewBag.lowerline)
+            .Animation(ViewBag.animation)
+            .Type(Syncfusion.EJ2.Charts.TechnicalIndicators.BollingerBands)
+            .Field(Syncfusion.EJ2.Charts.FinancialDataFields.Close)
+            .SeriesName("Apple Inc").Add();
+        })
+        .ZoomSettings(zn => zn.EnableSelectionZooming(true)
+            .Mode(Syncfusion.EJ2.Charts.ZoomMode.X))
+        .Crosshair(cr => cr.LineType(Syncfusion.EJ2.Charts.LineType.Vertical).Enable(true))
+        .PrimaryXAxis(px => px.ZoomFactor(0.2).CrosshairTooltip(ViewBag.crosshairtooltip).MajorGridLines(ViewBag.gridlines).ZoomPosition(0.6).ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime))
+        .PrimaryYAxis(py => py.Title("Price").Minimum(50).Maximum(170).Interval(30).LineStyle(ViewBag.linestyle).LabelFormat("{value}M"))
+        .Title("AAPL 2012-2017")
+        .Tooltip(tl => tl.Enable(true).Shared(true))
+        .LegendSettings(lg => lg.Visible(false))
+        .ChartArea(area => area.Border(ViewBag.ChartBorder)).Load("load").Render()
+)
+
+<script>
+        var dataSource = window.chartData;
+</script>

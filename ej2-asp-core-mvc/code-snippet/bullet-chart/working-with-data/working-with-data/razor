@@ -1,0 +1,14 @@
+@Html.EJS().BulletChart("container")
+                        .Title("Profit in %")
+                        .ValueField("value")
+                        .TargetField("comparativeMeasureValue")
+                        .CategoryField("category")
+                        .Ranges(rn =>
+                        {
+                            rn.End(5).Add();
+                            rn.End(15).Add();
+                            rn.End(20).Add();
+                        })
+                        .Minimum(0).Maximum(20).Interval(5)
+                        .DataSource(ViewBag.dataSource)
+                        .Render()

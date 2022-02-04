@@ -1,0 +1,11 @@
+ <ejs-chart id="container" width="60%">
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.MultiColoredArea">
+                <e-segments>
+                    <e-segment value="2007" color="blue"></e-segment>
+                    <e-segment value="2009" color="red"></e-segment>
+                    <e-segment color="green"></e-segment>
+                </e-segments>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

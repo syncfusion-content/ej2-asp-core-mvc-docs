@@ -1,0 +1,10 @@
+ <ejs-chart id="container">
+        <e-chart-tooltipsettings enable="true" header="Unemployment" format="<b>${point.x} : ${point.y}</b>">
+        </e-chart-tooltipsettings>
+        <e-chart-legendsettings visible="false"></e-chart-legendsettings>
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Germany" xName="x" width="2" opacity="1" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

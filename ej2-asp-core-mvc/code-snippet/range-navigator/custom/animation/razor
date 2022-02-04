@@ -1,0 +1,11 @@
+ @(Html.EJS().RangeNavigator("container")
+                    .ValueType(Syncfusion.EJ2.Charts.RangeValueType.DateTime)
+                    .LabelFormat("{value}K")
+                    .AnimationDuration("2000")
+                    .Series(sr =>
+                    {
+                    sr.XName("x").YName("y").DataSource(ViewBag.dataSource).Add();
+                    }).Render()
+                    )
+
+                

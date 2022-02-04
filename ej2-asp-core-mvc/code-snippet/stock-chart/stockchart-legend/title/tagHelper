@@ -1,0 +1,21 @@
+<ejs-stockchart id="stockchart" load="chartLoad" indicatorType="new string[0]" trendlineType="new string[0]" title="Unemployment Rates 1975-2010">
+    <e-stockchart-primaryxaxis valueType="DateTime">
+    </e-stockchart-primaryxaxis>
+    <e-stockchart-series-collection>
+        <e-stockchart-series type='Candle' name="China">
+        </e-stockchart-series>
+    </e-stockchart-series-collection>
+    <e-stockchart-tooltipsettings enable="true"></e-stockchart-tooltipsettings>
+    <e-stockchart-legendsettings visible="true" title="Countries" titlePosition="Top" maximumTitleWidth="150">
+        <e-stockchartlegendsettings-titlestyle fontFamily="verdana" fontStyle="Normal" fontWeight="Normal"
+            size="15px" textAlignment="Center" color="blue" textOverflow="None"></e-stockchartlegendsettings-titlestyle>
+    </e-stockchart-legendsettings>
+</ejs-stockchart>
+            
+<script src="~/datasource.js"></script>
+<script>
+    var data = chartData;
+    function stockload(args) {
+        args.stockChart.series[0].dataSource = data;
+    }
+</script>

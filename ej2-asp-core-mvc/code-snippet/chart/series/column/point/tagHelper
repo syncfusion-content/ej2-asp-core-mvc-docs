@@ -1,0 +1,13 @@
+ <ejs-chart id="container" title="Olympic Medals" pointRender="pointRender">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Gold" xName="country" width="2" opacity="1" yName="gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+        </e-series-collection>
+    </ejs-chart>
+<script>
+    var colors = ['#00bdae', '#404041', '#357cd2', '#e56590', '#f8b883',
+        '#70ad47', '#dd8abd', '#7f84e8', '#7bb4eb', '#ea7a57'];
+    pointRender = function (args) {
+        args.fill = colors[args.point.index];
+    };
+</script>

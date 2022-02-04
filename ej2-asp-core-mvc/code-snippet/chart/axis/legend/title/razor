@@ -1,0 +1,11 @@
+
+      @Html.EJS().Charts("container").Series(series =>
+       {
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).Width(2).XName("xValue").YName("yValue").DataSource(ViewBag.dataSource).Name("Germany").Add();
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).Width(2).XName("xValue").YName("yValue1").DataSource(ViewBag.dataSource).Name("England").Add();
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).Width(2).XName("xValue").YName("yValue1").DataSource(ViewBag.dataSource).Name("Russia").Add();
+       }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).LabelFormat("y")
+       ).PrimaryYAxis(py => py.LabelFormat("{value}%").RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.Additional).Interval(20).Minimum(0).Maximum(100)
+       ).LegendSettings(legend => legend.Position(Syncfusion.EJ2.Charts.LegendPosition.Bottom).Title("Inflation - Consumer Price")
+       ).Load("load").Render()
+

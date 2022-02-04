@@ -1,0 +1,17 @@
+<div>
+    <label id="lbl"></label>
+</div>
+        <ejs-accumulationchart id="piecontainer" title="Income Tax" enableSmartLabels="true" pointClick="PointClick">
+            <e-accumulation-series-collection>
+                <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue"
+                                       type="Pie"
+                                       startAngle="0" endAngle="360"
+                                       innerRadius="0%" radius="70%">
+                </e-accumulation-series>
+            </e-accumulation-series-collection>
+        </ejs-accumulationchart>
+<script>
+    var PointClick = function (args) {
+        document.getElementById("lbl").innerText = "X : " + args.point.x + "\nY : " + args.point.y;
+    }
+</script>

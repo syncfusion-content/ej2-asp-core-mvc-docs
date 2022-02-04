@@ -1,0 +1,9 @@
+
+      @Html.EJS().Chart("container").Series(series =>
+       {
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Scatter).XName("xValue").YName("yValue").DataSource(ViewBag.dataSource).Marker(ViewBag.marker).Name("Product A").Add();
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Scatter).XName("xValue").YName("yValue1").DataSource(ViewBag.dataSource).Marker(ViewBag.marker1).Name("Product B").Add();
+
+       }).PrimaryXAxis(px => px.Title("Countries").Minimum(1970).Maximum(2016).MajorGridLines(ViewBag.majorGridLines)
+       ).PrimaryYAxis(py => py.LabelFormat("{value}%").Title("Sale").Interval(25).Maximum(100).Minimum(0).MajorGridLines(ViewBag.majorGridLines)
+       ).Title("Profit Comparision of A and B").ChartArea(area => area.Border(ViewBag.ChartBorder)).Load("load").SelectionMode(Syncfusion.EJ2.Charts.SelectionMode.DragXY).Render()

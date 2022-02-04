@@ -1,0 +1,13 @@
+ <div id="chartContainer">
+  </div>
+<script>
+    $.ajax({
+            url: '@Url.Action("Create")',
+            type: 'POST',
+            dataType: 'html',
+            global: false,
+            success: function (response) {
+                $('#chartContainer').html(response);
+            }
+        });
+</script>

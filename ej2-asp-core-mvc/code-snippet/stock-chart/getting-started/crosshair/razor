@@ -1,0 +1,20 @@
+ @using Syncfusion.EJ2;
+    <script src="~/financial-data.js"></script>
+
+        @Html.EJS().StockChart("container").Load("stockload").Title("AAPL Historical")
+                                    .Series(sr =>
+                                    {
+                                        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).XName("x").YName("high").High("high").Low("low").Open("open").Close("close").Add();
+                                    })
+                                    .Render()
+
+        <script>
+           var data = window.chartData;
+        function stockload(args) {
+            args.stockChart.series[0].dataSource = data;
+            args.stockChart.primaryYAxis = {
+                lineStyle: { width: 0 }
+            };
+            args.stockChart.crosshair = { enable: true }
+        }
+    </script>

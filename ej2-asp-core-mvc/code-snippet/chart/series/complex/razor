@@ -1,0 +1,27 @@
+@Html.EJS().Chart("container").PrimaryXAxis(px => px.Title("data").
+                       ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Series(series =>
+                       {
+                           series.Type(
+              Syncfusion.EJ2.Charts.ChartSeriesType.Column
+          ).Name("Product X").EnableComplexProperty(true).Add();
+                           series.Type(
+              Syncfusion.EJ2.Charts.ChartSeriesType.Column
+          ).Name("Product Y").EnableComplexProperty(true).Add();
+                       }
+                       ).PrimaryYAxis(py => py.Title("Profit ($)")).Load("load").Title("Sales History of Product X").Render()
+
+<script>
+   
+    var load = function (args) {
+        var data = [
+            { group: { x: 'Aaa', y: 10 }, y: 20 },
+            { group: { x: 'Baa', y: 30 }, y: 10 }
+        ];
+        args.chart.series[0].dataSource = data;
+        args.chart.series[1].dataSource = data;
+        args.chart.series[0].xName = "group.x";
+        args.chart.series[0].yName = "group.y";
+        args.chart.series[1].xName = "group.x";
+        args.chart.series[1].yName = "y";
+    }
+</script>

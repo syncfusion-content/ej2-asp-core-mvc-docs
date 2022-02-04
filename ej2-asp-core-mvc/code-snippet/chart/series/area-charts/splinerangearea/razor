@@ -1,0 +1,8 @@
+@Html.EJS().Chart("container").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea).Opacity(0.4).XName("x").High("high").Low("low").DataSource(ViewBag.dataSource).Name("England").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea).Opacity(0.4).XName("x").High("high1").Low("low1").DataSource(ViewBag.dataSource).Name("India").Add();
+}).PrimaryXAxis(px => px.MajorGridLines(mg => mg.Width(0)).EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
+.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+).PrimaryYAxis(py => py.LabelFormat("{value}˚C").Minimum(0).Maximum(40).MajorTickLines(mt => mt.Width(0)).LineStyle(ls => ls.Width(0))
+).Render()

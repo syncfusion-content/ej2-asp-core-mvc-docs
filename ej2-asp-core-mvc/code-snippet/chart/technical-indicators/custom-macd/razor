@@ -1,0 +1,25 @@
+
+<script src="chart/technical-indicators/macd/financial-data.js"></script>
+
+     @Html.EJS().Chart("container-vertical").Rows(rows =>
+       {
+           rows.Height("40%").Add();
+           rows.Height("60%").Add();
+       }).Axes(ax =>
+       {
+           ax.Name("secondary").Title("MACD").OpposedPosition(true).Minimum(-3.5).Maximum(3.5).MajorTickLines(ViewBag.majorTickLines).MajorGridLines(ViewBag.majorGridLines).Interval(3.5).RowIndex(0).LineStyle(ViewBag.lineStyle).Add();
+       }
+           ).Series(series =>
+           {
+               series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).XName("x").YName("y").High("high").Low("low").Open("open").Close("close").Volume("volume").BearFillColor("#2ecd71").BullFillColor("#e74c3d").DataSource("dataSource").Name("Apple Inc").Width(2).Add();
+           }).Indicators(id =>
+           {
+              id.Fill("#6063ff").MacdType(Syncfusion.EJ2.Charts.MacdType.Both).MacdPositiveColor("#2ecd71").MacdNegativeColor("#e74c3d").Fill("#6063ff").YAxisName("secondary").FastPeriod(8).SlowPeriod(5).Period(3).Type(Syncfusion.EJ2.Charts.TechnicalIndicators.Macd).Field(Syncfusion.EJ2.Charts.FinancialDataFields.Close).SeriesName("Apple Inc").Add();
+           }).ZoomSettings(zn => zn.EnableSelectionZooming(true).Mode(Syncfusion.EJ2.Charts.ZoomMode.X)).Crosshair(cr => cr.LineType(Syncfusion.EJ2.Charts.LineType.Vertical).Enable(true)
+           ).PrimaryXAxis(px => px.ZoomFactor(0.2).ZoomPosition(0.6).ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).MajorGridLines(ViewBag.majorGridLines)
+             ).PrimaryYAxis(py => py.RowIndex(1).OpposedPosition(true).LabelFormat("${value}M").Title("Price").Minimum(50).Maximum(170).Interval(30).LineStyle(ViewBag.lineStyle).LabelFormat("{value}M").PlotOffset(25)
+             ).Title("AAPL 2012-2017").ChartArea(area => area.Border(ViewBag.ChartBorder)).Tooltip(tl => tl.Enable(true).Shared(true)).LegendSettings(lg => lg.Visible(false)).Load("load").Render()
+
+<script>
+        var dataSource = window.chartData;
+</script>

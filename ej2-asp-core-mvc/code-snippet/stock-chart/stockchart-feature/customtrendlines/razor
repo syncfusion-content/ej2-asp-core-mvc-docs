@@ -1,0 +1,16 @@
+
+    <script src="~/financial-data.js"></script>
+
+            @(Html.EJS().StockChart("container").Title("AAPL Stock Price").IndicatorType(new List<Object>() { }).ExportType(new List<Object>() { }).SeriesType(new List<Object>() { })
+                                                                .Series(sr =>
+                                                                {
+                                                                    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).DataSource("data").Trendlines(tr => tr.Type(Syncfusion.EJ2.Charts.TrendlineTypes.MovingAverage).EnableTooltip(false).Fill("red").Width(2)).Add();
+         })
+        .Crosshair(cr=>cr.Enable(true).Line(line=>line.Color("green").Width(2)))
+                                                                })
+                                                                .Render())
+                                                                
+    <script>
+        var data = window.chartData;
+    </script>
+}

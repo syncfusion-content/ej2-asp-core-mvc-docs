@@ -1,0 +1,16 @@
+
+            @Html.EJS().StockChart("container").Title("AAPL Stock Price")
+                     .PrimaryXAxis(xaxis =>xaxis.MajorGridLines(mg=>mg.Color("blue").Width(1)
+                    ).MinorGridLines(mg=>mg.Color("red").Width(0)))
+                    .PrimaryYAxis(yaxis =>yaxis.MajorGridLines(mt=>mt.Color("green").Width(1)
+                    ).MinorGridLines(mg=>mg.Color("red").Width(0)))
+                                                                .Series(sr =>
+                                                                {
+                                                                    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).DataSource("data").Add();
+                                                                })
+                                                                .Render()
+
+    <script src="~/financial-data.js"></script>
+    <script>
+        var data = window.chartData;
+    </script>

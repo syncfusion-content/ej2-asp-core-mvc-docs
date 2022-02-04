@@ -1,0 +1,42 @@
+@Html.EJS().Chart("container").Locale("fr-FR").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+    .Width(2)
+    .XName("x").YName("y")
+    .DataSource("series1")
+    .Name("Germany").Add();
+  }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+   .Skeleton("yMMM")
+  ).PrimaryYAxis(py => py.RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.None)
+ ).Title("Inflation - Consumer Price")
+ .ZoomSettings(z => z.EnableMouseWheelZooming(true).
+    EnablePinchZooming(true).EnableSelectionZooming(true).
+    Mode(Syncfusion.EJ2.Charts.ZoomMode.X)
+    ).Render()
+<script>
+    var series1 = [];
+    var point1;
+    var value = 80;
+    var i;
+    for (i = 1; i < 100; i++) {
+        if (Math.random() > 0.5) {
+            value += Math.random();
+        }
+        else {
+            value -= Math.random();
+        }
+        point1 = { x: new Date(1950, i + 2, i), y: value.toFixed(1) };
+        series1.push(point1);
+    }
+    ej.base.L10n.load({
+        "fr-FR": {
+            "chart": {
+                "ZoomIn": "Zoom +",
+                "ZoomOut": "Zoom -",
+                "Pan": "Se déplacer",
+                "Reset": "Réinitialiser"
+            }
+        }
+    });
+    ej.base.setCulture("fr-FR");
+</script>

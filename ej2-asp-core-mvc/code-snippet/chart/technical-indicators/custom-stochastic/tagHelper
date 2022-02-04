@@ -1,0 +1,36 @@
+                <ejs-chart id="BollingerContainer" title="AAPL - 2012-2017" 
+                      load="window.onChartLoad">
+                <e-chart-chartarea border="border"></e-chart-chartarea>
+                <e-chart-primaryxaxis valueType="DateTime"  intervalType="Months" zoomFactor="0.2" zoomPosition="0.6" crosshairTooltip="crosshairTooltip" majorGridLines="line"></e-chart-primaryxaxis>
+                <e-chart-primaryyaxis title="Price" minimum="75" maximum="170" interval="30" plotOffset="25" rowIndex="1" opposedPosition="true" majorTickLines="line" lineStyle="line" labelFormat="{value}%"></e-chart-primaryyaxis>
+                <e-chart-axes>
+                    <e-chart-axis name="secondary"
+                                  opposedPosition=true rowIndex=0
+                                   lineStyle="line" minimum=0 maximum=120 interval=60
+                                  majorTickLines="line" title="Stochastic">
+                    </e-chart-axis>
+                </e-chart-axes>
+                <e-chart-rows>
+                    <e-chart-row height="40%"></e-chart-row>
+                    <e-chart-row height="60%"></e-chart-row>
+                </e-chart-rows>
+                <e-series-collection>
+                    <e-series xName="x" yName="y" low="low" high="high" close="close" volume="volume" open="open" width=2
+                              name="Apple Inc" bearFillColor="#2ecd71" bullFillColor="#e74c3d"
+                              type="@Syncfusion.EJ2.Charts.ChartSeriesType.Candle"></e-series>
+                </e-series-collection>
+                <e-indicators>
+                    <e-indicator type="@Syncfusion.EJ2.Charts.TechnicalIndicators.Stochastic" field="Close" seriesName="Apple Inc" yAxisName="secondary" fill="#6063ff"
+                                 kPeriod=2 dPeriod=3 showZones=true periodLine="periodLine"
+                                 period=3  upperLine="upperLine" lowerLine="lowerLine">
+                    </e-indicator>
+                </e-indicators>
+                <e-chart-zoomsettings enablePinchZooming="true" enableSelectionZooming="true" mode="X"></e-chart-zoomsettings>
+                <e-chart-legendsettings visible="false"></e-chart-legendsettings>
+                <e-chart-tooltipsettings enable="true" shared="true"></e-chart-tooltipsettings>
+                <e-chart-crosshairsettings enable="true" lineType="Vertical"></e-chart-crosshairsettings>
+            </ejs-chart>
+<script src="chart/technical-indicators/stochastic/financial-data.js"></script>
+ window.onChartLoad = function (args) {
+            args.chart.series[0].dataSource = window.chartData;
+        }

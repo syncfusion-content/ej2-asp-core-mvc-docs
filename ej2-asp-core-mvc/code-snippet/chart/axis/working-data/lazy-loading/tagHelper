@@ -1,0 +1,67 @@
+
+ <ejs-chart id="container" load="window.onChartLoad" scrollEnd="scrollEnd">
+            <e-chart-chartarea>
+                <e-chartarea-border width="0"></e-chartarea-border>
+            </e-chart-chartarea>
+            <e-chart-primaryxaxis edgeLabelPlacement="Shift" title="Day" valueType="DateTime" skeleton="yMMM" skeletonType="Date">
+                <e-scrollbarSettings enable="true" pointsLength="1000"></e-scrollbarSettings>
+                <e-majorgridlines width="0"></e-majorgridlines>
+            </e-chart-primaryxaxis>
+            <e-chart-primaryyaxis interval="10" title="Server Load" labelFormat="{value}MB">
+                <e-majorticklines width="0"></e-majorticklines>
+                <e-linestyle width="0"></e-linestyle>
+            </e-chart-primaryyaxis>
+            <e-series-collection>
+                <e-series xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+                    <e-series-animation enable="false"></e-series-animation>
+                </e-series>
+            </e-series-collection>
+            <e-chart-tooltipsettings enable="true" shared="true"></e-chart-tooltipsettings>
+            <e-chart-legendsettings visible="false"></e-chart-legendsettings>
+            <e-chart-legendsettings visible="false"></e-chart-legendsettings>
+        </ejs-chart>
+
+        <script>
+              var intl = new ej.base.Internationalization();
+        var chart;
+            function scrollEnd(args) {
+            if (modeType.value === 'Range') {
+                chart.series[0].dataSource = GetDateTimeData(args.currentRange.minimum, args.currentRange.maximum);
+            } 
+            chart.dataBind();
+
+        }
+        </script>
+
+        window.onChartLoad = function (args) {
+            args.chart.series[0].dataSource = GetDateTimeData(new Date(2009, 0, 1), new Date(2009, 8, 1)),
+            args.chart.primaryXAxis.scrollbarSettings.range = { minimum: new Date(2009, 0, 1), maximum: new Date(2014, 0, 1) }
+
+        }
+           function GetDateTimeData(start, end) {
+            var series1 = [];
+            var date;
+            var value = 30;
+            var option = { skeleton: 'full', type: 'dateTime' };
+
+            var dateParser = intl.getDateParser(option);
+            var dateFormatter = intl.getDateFormat(option);
+            for (var i = 0; start <= end; i++) {
+                date = Date.parse(dateParser(dateFormatter(start)));
+                if (Math.random() > .5) {
+                    value += (Math.random() * 10 - 5);
+                } else {
+                    value -= (Math.random() * 10 - 5);
+                }
+                if (value < 0) {
+                    value = getRandomInt(20, 40);
+                }
+                var point1 = { x: new Date(date), y: Math.round(value) };
+                new Date(start.setDate(start.getDate() + 1));
+                series1.push(point1);
+            }
+            return series1;
+        }
+       function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }

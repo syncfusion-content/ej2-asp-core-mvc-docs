@@ -1,0 +1,10 @@
+<ejs-chart id="container" width="60%">
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea">
+            </e-series>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea">
+            </e-series>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea">
+            </e-series>
+        </e-series-collection>
+</ejs-chart>

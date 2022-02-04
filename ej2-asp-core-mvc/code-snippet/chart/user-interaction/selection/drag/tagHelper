@@ -1,0 +1,6 @@
+<ejs-chart id="container" title="Olympic Medals" selectionMode="DragXY">
+        <e-chart-primaryxaxis></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource"  name="Product A" xName="xValue" opacity="1" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Scatter"></e-series>
+        </e-series-collection>
+</ejs-chart>

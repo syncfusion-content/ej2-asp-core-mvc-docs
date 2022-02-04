@@ -1,0 +1,43 @@
+
+            <ejs-stockchart id="stockchart" load="stockload" title="AAPL Stock Price" exportType="new List<Object>() { }" seriesType="new List<Object>() { }" indicatorType="new List<Object>() { }" trendlineType="new List<Object>() { }">
+                <e-stockchart-series-collection>
+                    <e-stockchart-series type='Line' xName="x" yName="y" name="google"> </e-stockchart-series>
+                </e-stockchart-series-collection>
+                <e-stockchart-primaryxaxis>
+                    <e-majorgridlines color="transparent"></e-majorgridlines>
+                </e-stockchart-primaryxaxis>
+                <e-stockchart-primaryyaxis>
+                    <e-linestyle color="transparent"></e-linestyle>
+                    <e-majorticklines color="transparent" width="0"></e-majorticklines>
+                </e-stockchart-primaryyaxis>
+                <e-stockchart-stockchartperiods>
+                    <e-stockchart-stockchartperiod interval="1" intervalType="Minutes" text="1m"></e-stockchart-stockchartperiod>
+                    <e-stockchart-stockchartperiod interval="30" intervalType="Minutes" text="30m"></e-stockchart-stockchartperiod>
+                    <e-stockchart-stockchartperiod interval="1" intervalType="Hours" text="1H"></e-stockchart-stockchartperiod>
+                    <e-stockchart-stockchartperiod interval="12" intervalType="Hours" text="12H" selected="true"></e-stockchart-stockchartperiod>
+                </e-stockchart-stockchartperiods>
+                <e-stockchart-crosshairsettings enable="true">
+                </e-stockchart-crosshairsettings>
+            </ejs-stockchart>
+
+    <script>
+        var series1 = [];
+        var point1;
+        var value = 80;
+        var i;
+
+        for (i = 1; i < 500; i++) {
+            if (Math.random() > .5) {
+                value += Math.random();
+            } else {
+                value -= Math.random();
+            }
+            point1 = { x: new Date(2000, 1, 1, 0, i), y: value.toFixed(1) };
+            series1.push(point1);
+        }
+
+        var data = series1;
+        function stockload(args) {
+            args.stockChart.series[0].dataSource = data;
+        }
+    </script>

@@ -1,0 +1,6 @@
+ @{
+   var value = new object[] { new DateTime(2005,05,01), new DateTime(2010,1,31) };
+}
+ <ejs-rangenavigator id="rangeNavigator" valueType="DateTime" value="value" labelFormat="MMM-yy" xName="x" yName="y" dataSource="ViewBag.dataSource" intervalType="Months">
+            </ejs-rangenavigator>
+       

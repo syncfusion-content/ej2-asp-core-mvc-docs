@@ -1,0 +1,9 @@
+   <ejs-chart id="container" load="window.onChartLoad ">
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Apple Inc" xName="x" yName="y" fill="#0066FF" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Scatter">
+                <e-series-trendlines>
+                    <e-trendline type="Power" width="3" name="Power" fill="#0066FF"></e-trendline>
+                </e-series-trendlines>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

@@ -1,0 +1,23 @@
+
+    <script src="~/financial-data.js"></script>
+
+    <div class="control-section">
+        <div id="control-container">
+            @(Html.EJS().StockChart("container").Load("stockload")Title("AAPL Stock Price").ExportType(new List<Object>() { }).TrendlineType(new List<Object>() { })
+                                                                .Series(sr =>
+                                                                {
+                                                                    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).Name("Apple Inc").DataSource("data").Add();
+                                                                })
+                                                                .Render())
+
+    <script>
+        var data = window.chartData;
+       function stockload(args) {
+          args.stockChart.series[0].indicators = [
+                {
+                    type: 'BollingerBands', field: 'close', seriesName: 'Apple Inc',
+                    period: 10, upperLine: { color: '#ffb735', width: 1 },
+                    lowerLine: { color: '#f2ec2f', width: 1 }
+                }]
+        }
+    </script>

@@ -1,0 +1,62 @@
+
+    <script src="~/financial-data.js"></script>
+
+            @(Html.EJS().StockChart("container")..SeriesType(new List<Object>() { }).TrendlineType(new List<Object>() { }).IndicatorType(new List<Object>() { })
+              .PrimaryXAxis(xaxis =>xaxis.MajorGridLines(mg=>mg.Width(0)
+        ).ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).CrosshairTooltip(ct=>ct.Enable(true)))
+        .PrimaryYAxis(yaxis =>yaxis.MajorTickLines(mt=>mt.Color("transparent").Width(0)
+        ).LineStyle(ls=>ls.Color("transparent")).CrosshairTooltip(ct=>ct.Enable(false)))
+         .Series(sr =>
+         {
+             sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Spline).DataSource("data").XName("x").YName("high").Close("high").Add();
+         })
+        .Crosshair(cr=>cr.Enable(true))
+        .ChartArea(area => area.Border(br=>br.Width(0)))
+        .StockEvents(se =>
+               {
+                    se.Date(new DateTime(2012, 03, 01)).Text("Q2").Description("2012 Quarter2 starts").Type(Syncfusion.EJ2.Charts.FlagType.Flag).
+                    Background("#6c6d6d").Border(br => br.Color("#6c6d6d")).Add();
+                    se.Date(new DateTime(2012, 03, 20)).Text("Open").Description("Markets opened").
+                    Background("#f48a21").Border(br => br.Color("#f48a21")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2012, 06, 01)).Text("Q3").Description("2013 Quarter3 starts").Type(Syncfusion.EJ2.Charts.FlagType.Flag).
+                    Background("#6c6d6d").Border(br => br.Color("#6c6d6d")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2012, 09, 01)).Text("Q4").Description("2013 Quarter4 starts").Type(Syncfusion.EJ2.Charts.FlagType.Flag).
+                    Background("#6c6d6d").Border(br => br.Color("#6c6d6d")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2012, 07, 30)).Text("G").Description("Google stocks bought").
+                    Background("#f48a21").Border(br => br.Color("#f48a21")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2012, 10, 01)).Text("Y").Description("Yahoo stocks sold").Type(Syncfusion.EJ2.Charts.FlagType.Square).
+                    Background("#841391").Border(br => br.Color("#841391")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2012, 12, 01)).Text("Y2").Description("Year 2013").Type(Syncfusion.EJ2.Charts.FlagType.Pin).
+                    Background("#6322e0").ShowOnSeries(false).Border(br => br.Color("#6322e0")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2013, 03, 01)).Text("Q2").Description("2013 Quarter2 starts").Type(Syncfusion.EJ2.Charts.FlagType.Flag).
+                    Background("#6c6d6d").Border(br => br.Color("#6c6d6d")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2013, 03, 20)).Text("Q2").Description("Surge in Stocks").Type(Syncfusion.EJ2.Charts.FlagType.ArrowUp).
+                    Background("#3ab0f9").Border(br => br.Color("#3ab0f9")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2013, 06, 01)).Text("Q3").Description("2013 Quarter3 starts").Type(Syncfusion.EJ2.Charts.FlagType.Flag).
+                    Background("#6c6d6d").Border(br => br.Color("#6c6d6d")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2013, 09, 01)).Text("Q4").Description("2013 Quarter4 starts").Type(Syncfusion.EJ2.Charts.FlagType.Flag).
+                    Background("#6c6d6d").Border(br => br.Color("#6c6d6d")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2013, 12, 0)).Text("Y3").Description("Year 2014").Type(Syncfusion.EJ2.Charts.FlagType.Pin).ShowOnSeries(false).
+                    Background("#6322e0").Border(br => br.Color("#6322e0")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2014, 03, 01)).Text("Q2").Description("2014 Quarter2 starts").Type(Syncfusion.EJ2.Charts.FlagType.ArrowDown).ShowOnSeries(false).
+                    Background("#3ab0f9").Border(br => br.Color("#3ab0f9")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2014, 06, 01)).Text("Q3").Description("2014 Quarter3 starts").
+                    Background("#f48a21").Border(br => br.Color("#f48a21")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2014, 09, 01)).Text("Q4").Description("2014 Quarter4 starts").Type(Syncfusion.EJ2.Charts.FlagType.Flag).
+                    Background("#6c6d6d").Border(br => br.Color("#6c6d6d")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2014, 12, 0)).Text("Y4").Description("Year 2015").Type(Syncfusion.EJ2.Charts.FlagType.Pin).ShowOnSeries(false).
+                    Background("#6322e0").Border(br => br.Color("#6322e0")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2014, 02, 02)).Text("End").Description("Markets Closed").Type(Syncfusion.EJ2.Charts.FlagType.ArrowDown).
+                    Background("#3ab0f9").Border(br => br.Color("#3ab0f9")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2015, 01, 07)).Text("A").Description("This is event description").
+                    Background("#f48a21").Border(br => br.Color("#f48a21")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2015, 01, 02)).Text("Q1").Description("Add longer text").
+                    Background("#dd3c9f").Border(br => br.Color("#dd3c9f")).TextStyle(ts => ts.Color("white")).Add();
+                    se.Date(new DateTime(2015, 02, 12)).Text("Close").Description("Markets closed").
+                    Background("#f48a21").Border(br => br.Color("#f48a21")).TextStyle(ts => ts.Color("white")).Add();
+                })
+       .Render())
+       
+    <script>
+        var data = window.aapl;
+    </script>

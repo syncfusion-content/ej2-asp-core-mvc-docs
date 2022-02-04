@@ -1,0 +1,12 @@
+
+   <ejs-accumulationchart id="container" enableAnimation="true" enableSmartLabels="true">
+            <e-accumulationchart-tooltipsettings enable="true"></e-accumulationchart-tooltipsettings>
+            <e-accumulationchart-legendsettings visible="true">
+            </e-accumulationchart-legendsettings>
+            <e-accumulation-series-collection>
+                <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue"  innerRadius="20%" radius="r">
+                    <e-accumulationseries-datalabel name="x" visible="true" position="Outside">
+                    </e-accumulationseries-datalabel>
+                </e-accumulation-series>
+            </e-accumulation-series-collection>
+        </ejs-accumulationchart>

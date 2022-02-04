@@ -1,0 +1,24 @@
+@Html.EJS().Chart("container").PrimaryXAxis(px => px.Title("Years").
+                       ValueType(Syncfusion.EJ2.Charts.ValueType.Double).MaximumLabels(1)).Series(series =>
+                       {
+                           series.Type(
+              Syncfusion.EJ2.Charts.ChartSeriesType.Line
+          ).DataSource("series1").Name("Product X").XName("x").YName("y").Add();
+                       }
+                       ).Crosshair(cr => cr.Enable(true)).ZoomSettings(z => z.EnableMouseWheelZooming(true).EnablePinchZooming(true).EnableSelectionZooming(true).Mode(Syncfusion.EJ2.Charts.ZoomMode.X).EnableScrollbar(true)).PrimaryYAxis(py => py.Title("Profit ($)")).Title("Sales History of Product X").Render()
+
+<script>
+    var series1 = [];
+    var point1;
+    var value = 80;
+    var i;
+     for (i = 1; i < 50; i++) {
+        if (Math.random() > .5) {
+            value += Math.random();
+        } else {
+            value -= Math.random();
+        }
+        point1 = { x: i, y: value.toFixed(1) };
+        series1.push(point1);
+    }
+</script>

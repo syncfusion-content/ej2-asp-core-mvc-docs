@@ -1,0 +1,22 @@
+
+    @Html.EJS().Chart("container").PrimaryXAxis(px => px.Title("Years").ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).Name("Product X").Add();
+    }
+    ).Load("chartLoad").Render()
+
+
+<script>
+    var chartLoad = function (args) {
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("GetServerData","ajaxdata")',
+            async: false,
+            success: function (data) {
+                args.chart.series[0].dataSource = data;
+                args.chart.series[0].xName = "x";
+                args.chart.series[0].yName = "y";
+            }
+        });
+    }
+</script>

@@ -1,0 +1,14 @@
+
+ <ejs-accumulationchart id="container" title="Annual Product wise Profit Analysis" >
+                    <e-accumulationchart-tooltipsettings enable="true"></e-accumulationchart-tooltipsettings>
+                    <e-accumulationchart-legendsettings visible="false">
+                    </e-accumulationchart-legendsettings>
+                    <e-accumulation-series-collection>
+                        <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Profit" >
+                            <e-accumulationseries-datalabel name="text" visible="true" position="Outside">
+                             </e-accumulationseries-datalabel>
+                            <e-accumulationseries-emptypointsettings mode="Zero" fill="red"></e-accumulationseries-emptypointsettings>
+                        </e-accumulation-series>
+                    </e-accumulation-series-collection>
+                </ejs-accumulationchart>
+ 

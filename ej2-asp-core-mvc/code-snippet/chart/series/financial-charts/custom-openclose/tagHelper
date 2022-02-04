@@ -1,0 +1,9 @@
+<ejs-chart id="container" width="60%">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" high="high" low="low"
+               open="open" close="close" type="@Syncfusion.EJ2.Charts.ChartSeriesType.HiloOpenClose"
+                bearFillColor="#e56590" bullFillColor="#f8b883">
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

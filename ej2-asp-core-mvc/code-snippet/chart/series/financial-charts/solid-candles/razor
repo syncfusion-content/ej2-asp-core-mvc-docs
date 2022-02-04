@@ -1,0 +1,45 @@
+<script src="chart/series/hilo/financial-data.js"></script>
+@Html.EJS().Chart("container").Rows(rows =>
+   {
+       rows.Height("30%").Add();
+       rows.Height("70%").Add();
+   }).Axes(ax =>
+   {
+       ax.Name("secondary").
+       OpposedPosition(true).
+       Minimum(100).
+       Maximum(180).
+       RowIndex(1).
+       PlotOffset(30).
+       Title("Price").LabelFormat("${value}").
+       Interval(20).MajorTickLines(ViewBag.majorTickLines).LineStyle(ViewBag.lineStyle).Add();
+   }
+           ).Series(series =>
+       {
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+           .XName("x").YName("volume")
+           .Name("Volume")
+           .DataSource("returnValue").Add();
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle)
+           .XName("x").High("high")
+           .Low("low")
+           .Close("close")
+           .Open("open")
+           .BearFillColor("#2ecd71")
+           .BullFillColor("#e74c3d")
+           .DataSource("returnValue")
+           .YAxisName("secondary")
+           .Name("Apple Inc").Add();
+       }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).MajorGridLines(ViewBag.majorGridLines).CrosshairTooltip(ViewBag.crosshairTooltip)
+       ).PrimaryYAxis(py => py.Minimum(500000000).Maximum(130000000).ValueType(Syncfusion.EJ2.Charts.ValueType.Logarithmic).OpposedPosition(true).Title("Volume").LineStyle(ViewBag.lineStyle)
+       ).Crosshair(cr => cr.Enable(true).LineType(Syncfusion.EJ2.Charts.LineType.Vertical)).ChartArea(area => area.Border(ViewBag.ChartBorder)).LegendSettings(lg => lg.Visible(true)).Tooltip(tt => tt.Enable(true).Shared(true)).Title("AAPL Historical").Width("60%").Load("load").Render()
+
+ <script>
+        var dataSource = window.chartData;
+        var date1 = new Date('2017-01-01');
+        var returnValue = dataSource.filter(filterValue);
+        function filterValue(value) {
+            return value.x >= date1;
+        }
+    </script>
+ 

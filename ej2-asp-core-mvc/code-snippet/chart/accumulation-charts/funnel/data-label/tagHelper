@@ -1,0 +1,13 @@
+<ejs-accumulationchart id="container" title="Top Population Countries in the world 2017" load="load">
+            <e-accumulationchart-tooltipsettings enable="true" format="${point.x} : <b>${point.y}</b>"></e-accumulationchart-tooltipsettings>
+            <e-accumulationchart-legendsettings visible="false">
+            </e-accumulationchart-legendsettings>
+            <e-accumulation-series-collection>
+                <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" type="@Syncfusion.EJ2.Charts.AccumulationType.Funnel" neckWidth="15%" neckHeight="18%">
+                    <e-accumulationseries-datalabel visible="true" name="text" position="Outside">
+                        <e-connectorstyle length="6%"></e-connectorstyle>
+                    </e-accumulationseries-datalabel>
+                </e-accumulation-series>
+            </e-accumulation-series-collection>
+        </ejs-accumulationchart>
+ 

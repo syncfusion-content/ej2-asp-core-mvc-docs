@@ -1,0 +1,9 @@
+ <ejs-chart id="container" width="60%" title="Average Sales Comparison">
+        <e-chart-tooltipsettings enable="true" format="${series.name} <br>${point.x} : ${point.y}"></e-chart-tooltipsettings>
+        <e-chart-primaryxaxis title="Year"></e-chart-primaryxaxis>
+        <e-chart-primaryyaxis labelFormat="c" title="Sales Amount in Millions"></e-chart-primaryyaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" name="Product X"></e-series>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" name="Product Y"></e-series>
+        </e-series-collection>
+    </ejs-chart>

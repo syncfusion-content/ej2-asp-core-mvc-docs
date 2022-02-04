@@ -1,0 +1,16 @@
+  <ejs-chart id="lineContainer" title="Weather condition JPN vs DEU">
+        <e-chart-primaryxaxis title="Country" valueType="Category"></e-chart-primaryxaxis>
+        <e-chart-primaryyaxis minimum="0" maximum="90" interval="20" labelFormat="{value}°F" title="Temperature (Fahrenheit)"></e-chart-primaryyaxis>
+        <e-chart-columns>
+            <e-chart-column height="50%"></e-chart-column>
+            <e-chart-column height="50%"></e-chart-column>
+        </e-chart-columns>
+        <e-chart-axes>
+            <e-chart-axis minimum="24" maximum="36" interval="2" opposedPosition="true" rowIndex="1" name="xAxis" labelFormat="{value}°C">
+            </e-chart-axis>
+        </e-chart-axes>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource"  name="Germany" xName="x" width="2" opacity="1" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+            <e-series dataSource="ViewBag.dataSource"  name="Germany" xName="x" width="2" opacity="1" yName="y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line" xAxisName="xAxis"></e-series>
+        </e-series-collection>
+    </ejs-chart>

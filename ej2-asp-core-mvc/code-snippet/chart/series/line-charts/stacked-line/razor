@@ -1,0 +1,13 @@
+ @Html.EJS().Chart("container-vertical").Series(series =>
+ {
+     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine)
+     .Marker(mkr => mkr.Visible(true)).XName("x").YName("y").DataSource(ViewBag.dataSource).Name("John").DashArray("5,1").Add();
+     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine)
+     .Marker(mkr => mkr.Visible(true)).XName("x").YName("y1").DataSource(ViewBag.dataSource).Name("Peter").DashArray("5,1").Add();
+     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine)
+     .Marker(mkr => mkr.Visible(true)).XName("x").YName("y2").DataSource(ViewBag.dataSource).Name("Steve").DashArray("5,1").Add();
+     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine)
+     .Marker(mkr => mkr.Visible(true)).XName("x").YName("y3").DataSource(ViewBag.dataSource).Name("Charle").DashArray("5,1").Add();
+ })
+ .PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+ .Render()

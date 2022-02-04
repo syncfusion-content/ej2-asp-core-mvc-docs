@@ -1,0 +1,21 @@
+
+      <ejs-accumulationchart id="container" title="Mobile Browser Statistics" pointRender="pointRender">
+            <e-accumulationchart-legendsettings visible="false">
+            </e-accumulationchart-legendsettings>
+            <e-accumulation-series-collection>
+                <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser"
+                type="@Syncfusion.EJ2.Charts.AccumulationType.Funnel">
+                </e-accumulation-series>
+            </e-accumulation-series-collection>
+        </ejs-accumulationchart>
+ 
+ <script>
+            var pointRender = function (args) {
+                if ((args.point.x).indexOf('iPhone') > -1) {
+                    args.fill = '#f4bc42';
+                     }
+                       else {
+                     args.fill = '#597cf9';
+                     }
+            };
+</script>

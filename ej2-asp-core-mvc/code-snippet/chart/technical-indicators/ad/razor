@@ -1,0 +1,29 @@
+<ejs-chart id="ADIContainer" title="AAPL - 2012-2017" axisLabelRender="axisLabel" load="window.onChartLoad">
+        <e-chart-primaryxaxis valueType="DateTime" intervalType="Months" zoomFactor=0.2 zoomPosition=0.6></e-chart-primaryxaxis>
+        <e-chart-tooltipsettings enable="true" shared="true"></e-chart-tooltipsettings>
+        <e-chart-legendsettings visible="false"></e-chart-legendsettings>
+        <e-chart-zoomsettings enableSelectionZooming="true" mode="X"></e-chart-zoomsettings>
+        <e-chart-crosshairsettings enable=true lineType="Vertical"></e-chart-crosshairsettings>
+        <e-chart-axes>
+            <e-chart-axis name="secondary"
+                          opposedPosition=true rowIndex=0 interval=6000000000
+                          minimum=-7000000000 maximum=5000000000 title="Accumulation Distribution">
+            </e-chart-axis>
+        </e-chart-axes>
+        <e-series-collection>
+            <e-series xName="x" yName="y" low="low" high="high" close="close" volume="volume" open="open" width=2
+                      name="Apple Inc" bearFillColor="#2ecd71" bullFillColor="#e74c3d"
+                      type="@Syncfusion.EJ2.Charts.ChartSeriesType.Candle"></e-series>
+        </e-series-collection>
+        <e-indicators>
+            <e-indicator type="@Syncfusion.EJ2.Charts.TechnicalIndicators.AccumulationDistribution" field="Close" seriesName="Apple Inc" yAxisName="secondary" fill="#6063ff"
+                         period=3>
+            </e-indicator>
+        </e-indicators>
+    </ejs-chart>
+<script src="chart/technical-indicators/ad/financial-data.js"></script>
+<script>
+  window.onChartLoad = function (args) {
+    args.chart.series[0].dataSource = window.chartData;
+  }
+</script>

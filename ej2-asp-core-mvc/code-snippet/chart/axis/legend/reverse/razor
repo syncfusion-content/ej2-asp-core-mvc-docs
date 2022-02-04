@@ -1,0 +1,19 @@
+@Html.EJS().Chart("container").Series(series =>
+       {
+
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+           .XName("x").YName("yValue").DataSource(ViewBag.dataSource)
+           .Name("Gold").Width(2).Add();
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+            .XName("x").YName("yValue1").DataSource(ViewBag.dataSource)
+           .Name("Silver").Width(2).Add();
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+            .XName("x").YName("yValue2").DataSource(ViewBag.dataSource)
+            .Name("Brozen").Width(2).Add();
+
+       }).PrimaryYAxis(px => px.LabelStyle(ls=>ls.Color("transparent")).LineStyle(ls=>ls.Width(0)).MajorTickLines(mg=>mg.Width(0))
+       .MajorGridLines(mg=>mg.Width(0))
+       ).PrimaryXAxis(px => px.Interval(1)
+       .ValueType(Syncfusion.EJ2.Charts.ValueType.Category).MajorGridLines(mg=>mg.Width(0))
+       ).ChartArea(area => area.Border(br=>br.Color("transparent"))
+       ).LegendSettings(lg => lg.reverse(true)).Title("Olympic Medal Counts - RIO").Load("load").Render()

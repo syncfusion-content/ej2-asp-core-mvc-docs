@@ -1,0 +1,13 @@
+ <ejs-chart id="container">
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" width="2" opacity="1" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Polar"
+                      drawType="@Syncfusion.EJ2.Charts.ChartDrawType.StackingArea">
+            </e-series>
+            <e-series dataSource="ViewBag.dataSource" xName="x" width="2" opacity="1" yName="y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Polar"
+                      drawType="@Syncfusion.EJ2.Charts.ChartDrawType.StackingArea">
+            </e-series>
+            <e-series dataSource="ViewBag.dataSource" xName="x" width="2" opacity="1" yName="y2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Polar"
+                      drawType="@Syncfusion.EJ2.Charts.ChartDrawType.StackingArea">
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

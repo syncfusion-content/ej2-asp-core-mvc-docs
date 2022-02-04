@@ -1,0 +1,6 @@
+<ejs-chart id="container" isTransposed="true" width="60%">
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x"  yName="y"
+             type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline"></e-series>
+        </e-series-collection>
+</ejs-chart>

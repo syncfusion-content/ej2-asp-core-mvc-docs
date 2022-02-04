@@ -1,0 +1,29 @@
+
+     <ejs-chart id="container" load="window.onChartLoad" title="Sales Comparision" pointRender="labelRender">
+            <e-chart-chartarea border="border"></e-chart-chartarea>
+            <e-chart-primaryxaxis title="Manager" valueType="Category" majorGridLines="line"></e-chart-primaryxaxis>
+            <e-chart-primaryyaxis minimum="0" maximum="20000" title="Sales" majorGridLines="line" majorTickLines="line"></e-chart-primaryyaxis>
+            <e-series-collection>
+                <e-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" type="Column"></e-series>
+            </e-series-collection>
+        </ejs-chart>
+    <div class="col-lg-3 property-section">
+        <table id="property" title="Properties" style="width: 100%">
+            <tbody>
+                <tr id="button-control" style="height: 50px">
+                    <td align="center">
+                        <ejs-button id="button" content="Export" iconCss="e-icons e-play-icon" cssClass="e-flat" isPrimary: true,></ejs-button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+ 
+  <script>
+        document.getElementById('button').onclick = () => {
+            var chart = document.getElementById('container').ej2_instances[0];
+            var dropdown = document.getElementById('data').ej2_instances[0];
+            var fileName = ((document.getElementById('fileName'))).value;
+            chart.export(dropdown.value, fileName);
+        };
+</script>

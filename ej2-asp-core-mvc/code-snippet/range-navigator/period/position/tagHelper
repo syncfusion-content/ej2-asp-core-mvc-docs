@@ -1,0 +1,17 @@
+<ejs-rangenavigator id="rangeNavigator" valueType="DateTime" labelFormat="MMM-yy">
+              <e-rangenavigator-rangenavigatorseriescollection>
+                 <e-rangenavigator-rangenavigatorseries xName="x" yName="y" dataSource="ViewBag.dataSource">
+                </e-rangenavigator-rangenavigatorseries>
+             </e-rangenavigator-rangenavigatorseriescollection>
+           <e-rangenavigator-periodselectorsettings position="Top">
+            <e-periods>
+            <e-period interval="1" intervalType="Months" text="1M"></e-period>
+            <e-period interval="2" intervalType="Months" text="2M"></e-period>
+            <e-period interval="6" intervalType="Months" text="6M"></e-period>
+            <e-period text="YTD"></e-period>
+            <e-period interval="1" intervalType="Years" text="1Y"></e-period>
+            <e-period interval="2" intervalType="Years" text="2Y"></e-period>
+            <e-period text="All"></e-period>
+        </e-periods>
+     </e-rangenavigator-periodselectorsettings>
+</ejs-rangenavigator>

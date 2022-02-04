@@ -1,0 +1,99 @@
+ <ejs-stockchart id="stockchartspline" load="chartLoad" seriesType="series" indicatorType="indicator" trendlineType="trendline" title="AAPL Stock Price">
+                <e-stockchart-series-collection>
+                    <e-stockchart-series type='Spline' xName='x' yName="high" name='google' fill="blue" close="high"> </e-stockchart-series>
+                </e-stockchart-series-collection>
+                <e-stockchart-crosshairsettings enable="true"></e-stockchart-crosshairsettings>
+                 <e-stockchart-stockevents>
+                    <e-stockchart-stockevent date="new DateTime(2012,03, 01)" text="Q2" description="2012 Quarter2 starts" type="Flag" background="#6c6d6d">
+                        <e-border color="#6c6d6d"></e-border>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2012, 03, 20)" text="Open" description="Markets opened" background="#f48a21">
+                        <e-border color="#f48a21"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2012, 06, 01)" text="Q3" description="2013 Quarter3 starts" type="Flag" background="#6c6d6d">
+                        <e-border color="#6c6d6d"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2012, 09, 01)" text="Q4" description="2013 Quarter4 starts" type="Flag" background="#6c6d6d">
+                        <e-border color="#6c6d6d"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2012, 07, 30)" text="G" description="Google stocks bought" background="#f48a21">
+                        <e-border color="#f48a21"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2012, 10, 01)" text="Y" description="Yahoo stocks sold" type="Square" background="#841391">
+                        <e-border color="#841391"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2012, 12, 01)" text="Y2" description="Year 2013" type="Pin" background="#6322e0" showOnSeries="false">
+                        <e-border color="#6322e0"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2013, 03, 01)" text="Q2" description="2013 Quarter2 starts" type="Flag" background="#6c6d6d">
+                        <e-border color="#6c6d6d"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2013, 03, 20)" text="Q2" description="Surge in Stocks" type="ArrowUp" background="#3ab0f9">
+                        <e-border color="#3ab0f9"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2013, 06, 01)" text="Q3" description="2013 Quarter3 starts" type="Flag" background="#6c6d6d">
+                        <e-border color="#6c6d6d"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2013, 09, 01)" text="Q4" description="2013 Quarter4 starts" type="Flag" background="#6c6d6d">
+                        <e-border color="#6c6d6d"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2013, 12, 0)" text="Y3" description="Year 2014" type="Pin" background="#6322e0" showOnSeries="false">
+                        <e-border color="#6322e0"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2014, 03, 01)" text="Q2" description="2014 Quarter2 starts" type="ArrowDown" background="#3ab0f9">
+                        <e-border color="#3ab0f9"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2014, 06, 01)" text="Q3" description="2014 Quarter3 starts" background="#f48a21">
+                        <e-border color="#f48a21"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2014, 09, 01)" text="Q4" description="2014 Quarter4 starts" type="Flag" background="#6c6d6d">
+                        <e-border color="#6c6d6d"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2014, 12, 0)" text="Y4" description="Year 2015" type="Pin" background="#6322e0" showOnSeries="false">
+                        <e-border color="#6322e0"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2014, 02, 02)" text="End" description="Markets Closed" type="ArrowDown" background="#3ab0f9">
+                        <e-border color="#3ab0f9"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2015-01-07)" text="A" description="This is event description" background="#f48a21">
+                        <e-border color="#f48a21"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2015-01-07)" text="A" description="This is event description" background="#f48a21">
+                        <e-border color="#f48a21"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2015, 01, 02)" text="Q1" description="Add longer text" background="#dd3c9f" type="Text">
+                        <e-border color="#dd3c9f"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                    <e-stockchart-stockevent date="new DateTime(2015, 02, 12)" text="Close" description="Markets closed" background="#f48a21">
+                        <e-border color="#f48a21"></e-border>
+                        <e-textstyle color="white"></e-textstyle>
+                    </e-stockchart-stockevent>
+                </e-stockchart-stockevents>
+            </ejs-stockchart>
+            
+    <script src="~/financial-data.js"></script>
+    <script>
+       var data = chartData;
+        function chartLoad(args) {
+            args.stockChart.series[0].dataSource = data;
+        }
+    </script>

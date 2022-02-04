@@ -1,0 +1,17 @@
+ @{
+   var value = new object[]{20, 50 };
+    var border = new {
+        width = 2,
+        color = "red"
+    };
+    var thump = new { type = "Rectangle", fill = "pink", border = border };
+}
+ <ejs-rangenavigator id="rangeNavigator" value="value">
+                <e-rangenavigator-tooltip enable="true"></e-rangenavigator-tooltip>
+                <e-rangenavigator-rangenavigatorseriescollection>
+                    <e-rangenavigator-rangenavigatorseries xName="y" yName="y1" dataSource="ViewBag.dataSource" type="Area" width=2>
+                    </e-rangenavigator-rangenavigatorseries>
+                </e-rangenavigator-rangenavigatorseriescollection>
+                <e-rangenavigator-navigatorStyleSettings unselectedRegionColor="skyblue" selectedRegionColor="pink" thumb="thump">
+                </e-rangenavigator-navigatorStyleSettings>
+</ejs-rangenavigator>

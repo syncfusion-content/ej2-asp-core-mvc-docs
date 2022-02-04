@@ -1,0 +1,26 @@
+
+@Html.EJS().Chart("container").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+    XName("Assignee").Marker(ViewBag.marker).
+    YName("Estimate").DataSource("dataManager").
+    Query("query").
+    Name("Story Point").Add();
+
+}).PrimaryXAxis(px => px.Title("Assignee").
+   RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.Additional).
+   MajorGridLines(ViewBag.majorGridLines).
+   ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).
+   ChartArea(area => area.Border(ViewBag.ChartBorder)).
+   PrimaryYAxis(py => py.MajorGridLines(ViewBag.majorGridLines).
+   MajorTickLines(ViewBag.majorTickLines).
+   LineStyle(ViewBag.lineStyle).
+   Title("Sprint Task Analysis").
+   LegendSettings(lg => lg.Visible(false)).Render()
+}
+<script>
+        var dataManager = new ej.data.DataManager({
+            url: 'https://mvc.syncfusion.com/Services/Northwnd.svc/Tasks/'
+        });
+        var query = new ej.data.Query().take(5).where('Estimate', 'lessThan', 3, false);
+</script>

@@ -1,0 +1,13 @@
+<ejs-chart id="container" width="60%">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-chart-axes>
+            <e-chart-axis name="xAxis" valueType="Category">
+                <e-striplines>
+                    <e-stripline visible="true" startFromAxis="true" size="4" zIndex="Behind" opacity="0.5" color="green"></e-stripline>
+                </e-striplines>
+            </e-chart-axis>
+        </e-chart-axes>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" xAxisName="xAxis" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+        </e-series-collection>
+    </ejs-chart>

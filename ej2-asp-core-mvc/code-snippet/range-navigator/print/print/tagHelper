@@ -1,0 +1,16 @@
+<ejs-rangenavigator id="rangeNavigator" valueType="DateTime" labelFormat="MMM-yy">
+     <e-rangenavigator-rangenavigatorseriescollection>
+        <e-rangenavigator-rangenavigatorseries xName="x" yName="y" dataSource="ViewBag.dataSource">
+        </e-rangenavigator-rangenavigatorseries>
+    <e-rangenavigator-rangenavigatorseriescollection>
+</ejs-rangenavigator>
+
+<ejs-button id="print">
+</ejs-button>
+
+<script>
+document.getElementById('print').onclick = function () {
+                var chart = document.getElementById('print-container').ej2_instances[0];
+                chart.print();
+            };
+</script>

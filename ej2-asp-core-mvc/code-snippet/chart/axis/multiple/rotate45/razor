@@ -1,0 +1,30 @@
+    @Html.EJS().Chart("container").ChartArea(area => area.Border(ViewBag.ChartBorder)).Series(series =>
+       {
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+           .Width(2)
+           .XName("xValue")           
+           .YName("yValue")
+           .DataSource(ViewBag.dataSource)
+           .Name("Germany").Add();
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+           .Width(2)
+           .XName("xValue")
+           .YName("yValue1")
+           .DataSource(ViewBag.dataSource)
+           .Name("England").Add();
+       }).PrimaryXAxis( px => 
+            px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+           .MajorGridLines(ViewBag.majorGridLines)
+           .MajorGridLines(ViewBag.majorGridLines)
+           .IntervalType(Syncfusion.EJ2.Charts.IntervalType.Years)
+           .LabelIntersectAction(Syncfusion.EJ2.Charts.LabelIntersectAction.Hides)
+           .LabelFormat("y")
+       ).PrimaryYAxis(py => 
+            py.LabelFormat("{value}%")
+            .RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.None)
+            .MajorTickLines(ViewBag.majorTickLines)
+            .MinorTickLines(ViewBag.minorTickLines)
+            .LineStyle(ViewBag.lineStyle)
+            .Interval(20).Minimum(0).Maximum(100)
+       ).Title("Inflation - Consumer Price").Render()
+

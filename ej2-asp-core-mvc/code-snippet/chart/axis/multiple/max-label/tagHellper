@@ -1,0 +1,30 @@
+     <ejs-chart id="container" title="Sales History of Product X" load="load">
+            <e-chart-primaryxaxis valueType="Double" maximumLabels="1"></e-chart-primaryxaxis>
+            <e-chart-primaryyaxis title="Profit ($)"></e-chart-primaryyaxis>
+				<e-chart-zoomsettings enableMouseWheelZooming="true" enableScrollbar="true" enablePinchZooming="true" enableSelectionZooming="true" mode="X"></e-chart-zoomsettings>
+				<e-chart-crosshairsettings enable=true lineType="Both"></e-chart-crosshairsettings>
+            <e-series-collection>
+                <e-series name="Product X" xName="x" yName="y" 
+              type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line"
+          ></e-series>
+            </e-series-collection>
+        </ejs-chart>
+  
+<script>
+    var series1 = [];
+    var point1;
+    var value = 80;
+    var i;
+    for (i = 1; i < 50; i++) {
+        if (Math.random() > .5) {
+            value += Math.random();
+        } else {
+            value -= Math.random();
+        }
+        point1 = { x: i, y: value.toFixed(1) };
+        series1.push(point1);
+    }
+    function load(args) {
+        args.chart.series[0].dataSource = series1;
+    }
+</script>

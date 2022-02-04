@@ -1,0 +1,13 @@
+  <ejs-chart id="lineContainer">
+
+        <e-chart-primaryxaxis title="Assignee" rangePadding="Additional" valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series name="Story Point" xName="Assignee" width=2 yName="Estimate" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" query="new ej.data.Query().take(5).where('Estimate', 'lessThan', 3, false)">
+                <e-data-manager url='https://mvc.syncfusion.com/Services/Northwnd.svc/Tasks/' crossdomain="true"></e-data-manager>
+                <e-series-marker>
+                    <e-series-datalabel visible="true" position="Top"></e-series-datalabel>
+                </e-series-marker>
+                <e-series-animation enable="false"></e-series-animation>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

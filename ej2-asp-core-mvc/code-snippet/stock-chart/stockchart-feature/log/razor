@@ -1,0 +1,15 @@
+
+    <script src="~/financial-data.js"></script>
+
+            @(Html.EJS().StockChart("container").Title("AAPL Stock Price")
+                  .PrimaryXAxis(xaxis =>xaxis.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime))
+                  .PrimaryYAxis(yaxis =>yaxis.ValueType(Syncfusion.EJ2.Charts.ValueType.Logarithmic))
+                                                                .Series(sr =>
+                                                                {
+                                                                    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).DataSource("data").YName("volume").Add();
+                                                                })
+                                                                .Render())
+
+    <script>
+        var data = window.chartData;    
+    </script>

@@ -1,0 +1,13 @@
+@{
+    var index = new int[]{4};
+    var sumindex = new int[]{8};
+}
+<ejs-chart id="container">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue"
+                      name="Department" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Waterfall"
+                      intermediateSumIndexes="index" sumIndexes="sumindex">
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

@@ -1,0 +1,18 @@
+ <ejs-chart id="container" width="60%">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+                      type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+             <e-series-marker>
+                 <e-series-datalabel visible="true" position="Middle"
+                  template="#template"></e-series-datalabel>
+             </e-series-marker>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>
+<script id="template">
+    <div style="background:#f5f5f5; border: 1px solid black; padding: 3px 3px 3px 3px">
+        <div>${point.x}</div>
+        <div>${point.y}</div>
+    </div>
+</script>

@@ -1,0 +1,11 @@
+<ejs-chart id="container" title="Olympic Medals">
+        <e-chart-annotations>
+            <e-chart-annotation content="<div>Annotation in Pixel</div>"
+                                coordinateUnits="Pixel" x="250" y="100">
+            </e-chart-annotation>
+        </e-chart-annotations>
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Gold" xName="country" width="2" opacity="1" yName="gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+        </e-series-collection>
+    </ejs-chart>

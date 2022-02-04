@@ -1,0 +1,32 @@
+ @(Html.EJS().Chart("container")
+    .Series(sr =>
+    {
+        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Polar)
+            .DrawType(Syncfusion.EJ2.Charts.ChartDrawType.RangeColumn)
+            .Name("Germany")
+            .XName("x")
+            .High("high")
+            .Low("low")
+            .Width(2)
+            .Border(ViewBag.border)
+            .DataSource(ViewBag.dataSource).Add();
+    })
+      .PrimaryXAxis(xaxis =>
+         xaxis.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+             .LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.OnTicks)
+             .Interval(1)
+             .Coefficient(100)
+             .StartAngle(90)
+             .Title("Months")
+      )
+      .PrimaryYAxis(yaxis =>
+          yaxis.LabelFormat("{value}˚C")
+                 .Interval(5)
+                 .Minimum(0)
+                 .Maximum(20)
+      )
+      .Title("Maximum and Minimum Temperature")
+      .Tooltip(tp => tp.Enable(true))
+      .LegendSettings(lg => lg.Visible(false))
+      .Load("load").Render()
+)

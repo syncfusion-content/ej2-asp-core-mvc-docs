@@ -1,0 +1,9 @@
+<ejs-chart id="container" title="Olympic Medals">
+        <e-chart-titlestyle fontFamily="Arial" fontStyle="italic" fontWeight="regular" size="23px"
+                            color="red"></e-chart-titlestyle>
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Gold" xName="country" width="2" opacity="1" yName="gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

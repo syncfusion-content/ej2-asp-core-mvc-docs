@@ -1,0 +1,15 @@
+ @Html.EJS().Chart("container").ChartArea(area => area.Border(br => br.Color("transparent"))).Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).Width(2).XName("xValue")
+        .Marker(mr => mr.Visible(true).Width(10).Height(10)).YName("yValue")
+        .DataSource(ViewBag.dataSource).Name("Germany").Add();
+    }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+
+  ).Title("Inflation - Consumer Price").Tooltip(tt => tt.Enable(true)).Annotations(an =>
+  {
+      an.Region(Syncfusion.EJ2.Charts.Regions.Chart).X("2014").Y("50").CoordinateUnits(Syncfusion.EJ2.Charts.Units.Point).
+Content("#templateWrap").Add();
+  }).Render()
+<script id="templateWrap" type="text/x-template">
+  <div style="border-top:3px dashed grey;border-top-width: 2px; width: 10000px"></div>
+</script>

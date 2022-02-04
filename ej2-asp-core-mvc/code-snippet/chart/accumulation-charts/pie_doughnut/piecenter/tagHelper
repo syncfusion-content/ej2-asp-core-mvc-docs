@@ -1,0 +1,26 @@
+
+
+      @{
+        var piecenter = new
+        {
+            x = "60%",
+            y = "60%"
+        };
+
+    
+
+<ejs-accumulationchart id="container" title="Mobile Browser Statistics" enableAnimation="false" center="piecenter">
+            <e-accumulationchart-tooltipsettings enable="true"></e-accumulationchart-tooltipsettings>
+            <e-accumulationchart-legendsettings visible="false">
+            </e-accumulationchart-legendsettings>
+            <e-accumulation-series-collection>
+                <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser" explodeIndex="0" explode="true" explodeOffset="10%">
+                    <e-accumulationseries-datalabel name="text" visible="true">
+                        <e-font fontWeight="600" color="white"></e-font>
+                    </e-accumulationseries-datalabel>
+                </e-accumulation-series>
+            </e-accumulation-series-collection>
+        </ejs-accumulationchart>
+
+
+ 

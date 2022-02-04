@@ -1,0 +1,14 @@
+ @{
+    var border = new { color = "grey", width = 2 };
+}
+ <ejs-chart id="container" highlightColor="red">
+        <e-chart-tooltipsettings enable="true" format="${series.name} ${point.x} : ${point.y}"
+            fill="#7bb4eb" border="border">
+        </e-chart-tooltipsettings>
+        <e-chart-legendsettings visible="false"></e-chart-legendsettings>
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Germany" xName="x" width="2" opacity="1" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+            </e-series>
+        </e-series-collection>
+</ejs-chart>

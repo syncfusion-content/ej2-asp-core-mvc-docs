@@ -1,0 +1,27 @@
+ <ejs-chart id="container" load="window.load" width="60%">
+        <e-chart-primaryxaxis valueType="DateTime"></e-chart-primaryxaxis>
+        <e-chart-legendsettings visible="false"></e-chart-legendsettings>
+        <e-chart-zoomsettings enableSelectionZooming="true" mode="X"></e-chart-zoomsettings>
+        <e-series-collection>
+            <e-series xName="x" width=2 yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Area"></e-series>
+        </e-series-collection>
+    </ejs-chart>
+<script>
+    var series1 = [];
+    var point1;
+    var value = 40;
+    var i;
+    for (i = 1; i < 500; i++) {
+        if (Math.random() > .5) {
+            value += Math.random();
+        }
+        else {
+            value -= Math.random();
+        }
+        point1 = { x: new Date(1950, i + 2, i), y: value.toFixed(1) };
+        series1.push(point1);
+    }
+    window.load = function (args) {
+        args.chart.series[0].dataSource = series1;
+    }
+</script>

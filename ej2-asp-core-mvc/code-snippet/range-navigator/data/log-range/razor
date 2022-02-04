@@ -1,0 +1,9 @@
+ @(Html.EJS().RangeNavigator("container")
+                    .ValueType(Syncfusion.EJ2.Charts.RangeValueType.Logarithmic)
+                    .Minimum(10)
+                    .Maximum(1000)
+                .Series(sr =>
+                {
+                    sr.XName("y").YName("y1").DataSource(ViewBag.dataSource).Add();
+                }).Render()
+                )

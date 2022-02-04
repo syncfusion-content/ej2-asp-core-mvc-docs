@@ -1,0 +1,28 @@
+  @(Html.EJS().Chart("container")
+    .Series(sr =>
+    {
+        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Polar)
+            .DrawType(Syncfusion.EJ2.Charts.ChartDrawType.Column)
+            .Name("Warmest")
+            .XName("xValue")
+            .YName("yValue")
+            .Width(2)
+            .Marker(ViewBag.marker1)
+            .DataSource(ViewBag.dataSource).Add();
+    })
+      .PrimaryXAxis(xaxis =>
+         xaxis.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+             .LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.OnTicks)
+             .Interval(1)
+             .Coefficient(100)
+             .Title("Months")
+      )
+      .PrimaryYAxis(yaxis =>
+          yaxis.Title("Temperature (Celsius)").LabelFormat("{value}°C")
+                 .Interval(10)
+                 .Minimum(-25)
+                 .Maximum(25)
+                 .EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
+      )
+      .Title("Alaska Weather Statistics - 2016").Tooltip(tp=>tp.Enable(true)).Load("load").Render()
+      )

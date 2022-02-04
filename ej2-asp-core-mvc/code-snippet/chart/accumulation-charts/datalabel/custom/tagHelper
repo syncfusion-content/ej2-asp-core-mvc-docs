@@ -1,0 +1,21 @@
+
+       <ejs-accumulationchart id="container" title="Mobile Browser Statistics" textRender="textRender">
+                    <e-accumulationchart-legendsettings visible="false">
+                    </e-accumulationchart-legendsettings>
+                    <e-accumulation-series-collection>
+                        <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser"
+                                               pointColorMapping="fill">
+                            <e-accumulationseries-datalabel name="text" visible="true" position="Outside">
+                            </e-accumulationseries-datalabel>
+                        </e-accumulation-series>
+                    </e-accumulation-series-collection>
+                </ejs-accumulationchart>
+ 
+ <script>
+            var textRender = function (args) {
+                if ((args.point.x).indexOf("iPhone") > -1) {
+                    args.color = 'red';
+                    args.border.width = 1;
+                }
+            };
+</script>

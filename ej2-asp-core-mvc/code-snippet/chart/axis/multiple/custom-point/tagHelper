@@ -1,0 +1,14 @@
+<ejs-chart id="container" width="50%" axisLabelRender="axisLabelRender">
+        <e-chart-primaryxaxis valueType="Category">
+        </e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="country" yName="gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" name="Product X"></e-series>
+        </e-series-collection>
+    </ejs-chart>
+<script>
+    axisLabelRender=function(args) {
+        if (args.text === 'France') {
+            args.labelStyle.color = 'red';
+        }
+    }
+</script>

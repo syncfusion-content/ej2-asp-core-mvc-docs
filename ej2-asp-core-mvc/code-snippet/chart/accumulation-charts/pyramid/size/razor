@@ -1,0 +1,14 @@
+ 
+@Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("xValue")
+                      .YName("yValue")
+                      .Name("Browser")
+                      .Width("60%")
+                      .Height("80%")
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pyramid).Add();
+            })
+            .EnableSmartLabels(true)
+            .Title("Mobile Browser Statistics")
+            .LegendSettings(ls => ls.Visible(false)).Render()

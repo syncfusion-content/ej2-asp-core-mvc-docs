@@ -1,0 +1,10 @@
+ @(Html.EJS().RangeNavigator("container")
+                    .ValueType(Syncfusion.EJ2.Charts.RangeValueType.DateTime)
+                    .LabelFormat("MMM-yy").
+                    .Tooltip(tl=>tl.Enable(true).Format("yyyy/MM/dd").DisplayMode(Syncfusion.EJ2.Charts.TooltipDisplayMode.Always))
+                
+                .Series(sr =>
+                {
+                    sr.XName("x").YName("y").DataSource(ViewBag.dataSource).Type(Syncfusion.EJ2.Charts.RangeNavigatorType.StepLine).Add();
+                }).Render()
+                )

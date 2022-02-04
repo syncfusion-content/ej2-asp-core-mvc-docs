@@ -1,0 +1,27 @@
+  <ejs-chart id="container" width="60%" pointRender="pointRender" textRender="textRender">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+                      type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+             <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>
+<script>
+    pointRender=function(args) {
+        if (args.point.index === 2) {
+            args.fill = 'red'
+        }
+    },
+    textRender = function (args) {
+            if (args.point.index === 2) {
+                args.text = 'Maximum Temperature';
+                args.color = 'red';
+            }
+            else {
+                args.cancel = true;
+            }
+        }
+</script>

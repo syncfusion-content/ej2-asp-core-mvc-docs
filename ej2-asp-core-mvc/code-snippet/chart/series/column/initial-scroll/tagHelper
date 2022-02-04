@@ -1,0 +1,15 @@
+  <ejs-chart id="container" title="Sales History of Product X" load="load">
+            <e-chart-primaryxaxis valueType="DateTime" zoomFactor="0.3"></e-chart-primaryxaxis>
+            <e-chart-primaryyaxis title="Profit ($)"></e-chart-primaryyaxis>
+				<e-chart-zoomsettings enableMouseWheelZooming="true" enableScrollbar="true" enablePinchZooming="true" enableSelectionZooming="true" mode="X"></e-chart-zoomsettings>
+            <e-series-collection>
+                <e-series name="Product X" xName="xValue" yName="yValue" 
+              type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line" dataSource=" ViewBag.dataSource"
+           size="bubbleSize"></e-series>
+            </e-series-collection>
+        </ejs-chart>
+<script>
+    function load(args) {
+        args.chart.zoomModule.isZoomed = true;
+    }
+</script>
