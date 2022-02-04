@@ -1,0 +1,22 @@
+@{ IDictionary<string, object> submit = new Dictionary<string, object>();
+    submit.Add("type", "submit");
+}
+<form>
+    <div class='e-btn-group'>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label class="e-btn" for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label class="e-btn" for="female">Female</label>
+        <input type="radio" id="transgender" name="gender" value="transgender" />
+        <label class="e-btn" for="transgender">Transgender</label>
+    </div>
+    <ejs-button id="btn" class='e-btn e-primary' htmlAttributes="submit" content="Submit"></ejs-button>
+</form>
+<script>
+    document.getElementById('male').checked = true;
+</script>
+<style>
+    .e-btn-group, button {
+        margin: 20px 5px 20px 20px;
+    }
+</style>

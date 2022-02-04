@@ -1,0 +1,22 @@
+<div class='e-btn-group'>
+    <ejs-button id="left" content="Left" iconCss="e-icons e-left-icon"></ejs-button>
+    <ejs-button id="middle" content="Center" iconCss="e-icons e-middle-icon"></ejs-button>
+    <ejs-button id="right" content="Right" iconCss="e-icons e-right-icon"></ejs-button>
+</div>
+<style>
+    .e-btn-group {
+        margin: 25px 5px 20px 20px;
+    }
+
+    .e-left-icon::before {
+        content: '\e33a';
+    }
+
+    .e-right-icon::before {
+        content: '\e34d';
+    }
+
+    .e-middle-icon::before {
+        content: '\e35e';
+    }
+</style>

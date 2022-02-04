@@ -1,0 +1,5 @@
+<div class='e-btn-group'>
+    @Html.EJS().Button("html").Content("HTML").Render()
+    @Html.EJS().Button("css").Content("CSS").Render()
+    @Html.EJS().Button("javacript").Content("Javascript").Render()
+</div>

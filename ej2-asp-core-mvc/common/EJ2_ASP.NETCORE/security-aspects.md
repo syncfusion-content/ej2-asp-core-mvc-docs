@@ -8,16 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Security Aspects of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
-platform: ej2-asp-core-mvc
-control: Security Aspects
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
 # Security Aspects
 
 This documentation will help to develop a secure ASP.NET Core MVC web application with Syncfusion Components.

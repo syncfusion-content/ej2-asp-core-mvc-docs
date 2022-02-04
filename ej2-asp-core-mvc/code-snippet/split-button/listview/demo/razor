@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2.Lists;
+
+@Html.EJS().ListView("listview").Enable(true).DataSource((IEnumerable<object>)ViewBag.items).Fields(new ListViewFieldSettings { GroupBy = "category" }).SortOrder(SortOrder.Descending).Render()
+@Html.EJS().SplitButton("element").Content("Clipboard").Target("#listview").Render()
+
+<style>
+    .e-split-btn-wrapper{
+        margin: 20px 20px 5px 5px;
+    }
+</style>

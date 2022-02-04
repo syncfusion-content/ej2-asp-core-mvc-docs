@@ -1,0 +1,32 @@
+<form>
+    <ul>
+        <li>
+            <ejs-radiobutton id="radio1" value="credit" label="Credit/Debit Card" name="payment" checked="true"></ejs-radiobutton>
+        </li>
+        <li>
+            <ejs-radiobutton id="radio2" value="netbanking"  label="Net Banking" name="payment"></ejs-radiobutton>
+        </li>
+        <li>
+            <ejs-radiobutton id="radio3" value="cash"  label="Cash on Delivery" name="payment"></ejs-radiobutton>
+        </li>
+        <li>
+            <ejs-radiobutton id="radio4" value="others"  label="Others" name="payment"></ejs-radiobutton>
+        </li>
+        <li>
+            <ejs-button id="primarybtn" content="Submit" isPrimary="true"></ejs-button>
+        </li>
+    </ul>
+</form>
+<style>
+    .e-radio-wrapper {
+        margin-top: 18px;
+    }
+
+    button {
+        margin: 20px 0 0 5px;
+    }
+
+    li {
+        list-style: none;
+    }
+</style>

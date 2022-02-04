@@ -1,0 +1,21 @@
+<ejs-progressbutton id="progress" content="Progress" enableProgress="true" duration="15000" begin="begin" progress="progress"  end="end" cssClass="e-hide-spinner"></ejs-progressbutton>
+
+<script>
+    function begin(args) {
+        this.content = 'Progress ' + args.percent + '%';
+        this.dataBind();
+    }
+
+    function progress(args) {
+        this.content = 'Progress ' + args.percent + '%';
+        this.dataBind();
+        if (args.percent === 40) {
+            args.percent = 90
+        }
+    }
+
+    function end(args) {
+        this.content = 'Progress ' + args.percent + '%';
+        this.dataBind();
+    }
+</script>

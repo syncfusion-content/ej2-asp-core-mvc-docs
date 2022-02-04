@@ -1,0 +1,24 @@
+<h5>Normal behavior</h5>
+<div class='e-btn-group' role='group'>
+    @Html.EJS().Button("html").Render()
+    @Html.EJS().Button("css").Render()
+    @Html.EJS().Button("javacript").Render()
+</div>
+<h5>Checkbox type behavior</h5>
+<div class='e-btn-group' role='group'>
+    <input type="checkbox" id="checkbold" name="font" />
+    <label class="e-btn" for="checkbold">Bold</label>
+    <input type="checkbox" id="checkitalic" name="font" />
+    <label class="e-btn" for="checkitalic">Italic</label>
+    <input type="checkbox" id="checkunderline" name="font" />
+    <label class="e-btn" for="checkunderline">Underline</label>
+</div>
+<h5>Radiobutton type behavior</h5>
+<div class='e-btn-group' role='group'>
+    <input type="radio" id="radioleft" name="align" />
+    <label class="e-btn" for="radioleft">Left</label>
+    <input type="radio" id="radiomiddle" name="align" />
+    <label class="e-btn" for="radiomiddle">Center</label>
+    <input type="radio" id="radioright" name="align" />
+    <label class="e-btn" for="radioright">Right</label>
+</div>

@@ -1,0 +1,8 @@
+<div id='remote-data' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-autocomplete id="customers" query="new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6)" placeholder="Select a customer" popupHeight="200px">
+            <e-autocomplete-fields value="ContactName"></e-autocomplete-fields>
+            <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+        </ejs-autocomplete>
+    </div>
+</div>

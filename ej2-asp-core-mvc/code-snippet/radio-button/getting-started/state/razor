@@ -1,0 +1,2 @@
+@Html.EJS().RadioButton("radio1").Label("Option 1").Name("state").Checked(true).Render()
+@Html.EJS().RadioButton("radio2").Label("Option 2").Name("state").Render()

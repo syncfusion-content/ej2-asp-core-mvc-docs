@@ -1,0 +1,7 @@
+<div id='iconList' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-autocomplete id="country" dataSource="@ViewBag.data" highlight="true" placeholder="Select a social media">
+            <e-autocomplete-fields value="Name"></e-autocomplete-fields>
+        </ejs-autocomplete>
+    </div>
+</div>

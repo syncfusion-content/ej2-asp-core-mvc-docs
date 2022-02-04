@@ -1,0 +1,10 @@
+@Html.EJS().AutoComplete("games").Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Render()
+
+<script>
+    document.onkeyup = function (e) {
+        if (e.altKey && e.keyCode === 84 /* t */) {
+            var dropObj = document.getElementById("games"); //to get dropdown list object
+            dropObj.ej2_instances[0].focusIn(); // call the focusIn method to focus the element.
+        }
+    };
+</script>

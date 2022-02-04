@@ -1,0 +1,9 @@
+<div id='o-data' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        @Html.EJS().ComboBox("customers").Placeholder("Select a customer").PopupHeight("200px").DataSource(dataManger =>
+            dataManger.Url("https://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Orders/").Adaptor("ODataAdaptor").CrossDomain(true)).Fields(new Syncfusion.EJ2.DropDowns.ComboBoxFieldSettings
+            {
+                Value = "CustomerID"
+            }).Query("new ej.data.Query().select(['CustomerID']).take(7)").Render()
+    </div>
+</div>

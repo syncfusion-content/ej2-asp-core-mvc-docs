@@ -1,0 +1,7 @@
+<div id='container' style="margin:0 auto; width:250px;">
+        <ejs-dropdowntree id="tree">
+            <e-dropdowntree-fields child="ViewBag.child" query="new ej.data.Query().from('Employees').select('EmployeeID,FirstName,Title').take(5)" value="EmployeeID" text="FirstName" hasChildren="EmployeeID">
+                <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+            </e-dropdowntree-fields>
+        </ejs-dropdowntree>
+</div>

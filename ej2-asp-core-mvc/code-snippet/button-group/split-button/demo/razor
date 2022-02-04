@@ -1,0 +1,5 @@
+<div class='e-btn-group'>
+    @Html.EJS().Button("Cut").Content("Cut").Render()
+    @Html.EJS().Button("Copy").Content("Copy").Render()
+    @Html.EJS().SplitButton("element").Content("Paste").Items((IEnumerable<object>)ViewBag.items).Render()
+</div>

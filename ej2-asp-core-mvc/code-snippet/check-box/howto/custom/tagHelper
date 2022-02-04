@@ -1,0 +1,67 @@
+<ul>
+    <li>
+        <ejs-checkbox id="primary" checked="true" label="Primary" cssClass="e-primary"></ejs-checkbox>
+    </li>
+    <li>
+        <ejs-checkbox id="success" checked="true" label="Success" cssClass="e-success"></ejs-checkbox>
+    </li>
+    <li>
+        <ejs-checkbox id="info" checked="true" label="Info" cssClass="e-info"></ejs-checkbox>
+    </li>
+    <li>
+        <ejs-checkbox id="warning" checked="true" label="Warning" cssClass="e-warning"></ejs-checkbox>
+    </li>
+    <li>
+        <ejs-checkbox id="danger" checked="true" label="Danger" cssClass="e-danger"></ejs-checkbox>
+    </li>
+</ul>
+<style>
+
+    .e-checkbox-wrapper {
+        margin-top: 18px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .e-checkbox-wrapper.e-primary:hover .e-frame.e-check { /* csslint allow: adjoining-classes */
+        background-color: #e03872;
+    }
+
+    .e-checkbox-wrapper.e-success .e-frame.e-check,
+    .e-checkbox-wrapper.e-success .e-checkbox:focus + .e-frame.e-check { /* csslint allow: adjoining-classes */
+        background-color: #689f38;
+    }
+
+    .e-checkbox-wrapper.e-success:hover .e-frame.e-check { /* csslint allow: adjoining-classes */
+        background-color: #449d44;
+    }
+
+    .e-checkbox-wrapper.e-info .e-frame.e-check,
+    .e-checkbox-wrapper.e-info .e-checkbox:focus + .e-frame.e-check { /* csslint allow: adjoining-classes */
+        background-color: #2196f3;
+    }
+
+    .e-checkbox-wrapper.e-info:hover .e-frame.e-check { /* csslint allow: adjoining-classes */
+        background-color: #0b7dda;
+    }
+
+    .e-checkbox-wrapper.e-warning .e-frame.e-check,
+    .e-checkbox-wrapper.e-warning .e-checkbox:focus + .e-frame.e-check { /* csslint allow: adjoining-classes */
+        background-color: #ef6c00;
+    }
+
+    .e-checkbox-wrapper.e-warning:hover .e-frame.e-check { /* csslint allow: adjoining-classes */
+        background-color: #cc5c00;
+    }
+
+    .e-checkbox-wrapper.e-danger .e-frame.e-check,
+    .e-checkbox-wrapper.e-danger .e-checkbox:focus + .e-frame.e-check { /* csslint allow: adjoining-classes */
+        background-color: #d84315;
+    }
+
+    .e-checkbox-wrapper.e-danger:hover .e-frame.e-check { /* csslint allow: adjoining-classes */
+        background-color: #ba3912;
+    }
+</style>

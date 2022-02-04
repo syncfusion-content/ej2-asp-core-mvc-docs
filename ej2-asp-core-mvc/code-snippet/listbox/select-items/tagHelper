@@ -1,0 +1,8 @@
+<ejs-listbox id="listbox" dataSource="@ViewBag.data" created="create" ></ejs-listbox>
+
+<script>
+    function create() {
+        listboxobj = ej.base.getInstance(document.getElementById('listbox'), ejs.dropdowns.ListBox);
+        listboxobj.selectItems(['Bugatti Chiron'])
+    }
+</script>

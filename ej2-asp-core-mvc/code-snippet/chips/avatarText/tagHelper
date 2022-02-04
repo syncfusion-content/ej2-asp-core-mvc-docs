@@ -1,0 +1,8 @@
+<ejs-chiplist id="chip-avatar">
+    <e-chips>
+      <e-chip text="Andrew" AvatarText="A" enabled="true"></e-chip>
+      <e-chip text="Janet" AvatarText="J" enabled="true"></e-chip>
+      <e-chip text="Laura" AvatarText="L" enabled="true"></e-chip>
+      <e-chip text="Margaret" AvatarText="M" enabled="true"></e-chip>    
+    </e-chips>
+</ejs-chiplist>

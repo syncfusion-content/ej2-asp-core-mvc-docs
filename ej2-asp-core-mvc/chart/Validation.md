@@ -8,17 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-layout: post
-title: Validation  | ASP.NET MVC | Syncfusion
-description: Validation  
-platform: ej2-asp-core-mvc
-control: Common 
-publishingplatform: ##Platform_Name##
-documentation: ug
---- 
-{% if page.publishingplatform == "aspnet-mvc" %}
-
 # Validation
 
 ## jQuery Validation
@@ -76,5 +65,3 @@ The EJMVC DatePicker provides cool way to validate the value by custom rules and
 }
 
 {% endhighlight %}
-
-{% endif %}

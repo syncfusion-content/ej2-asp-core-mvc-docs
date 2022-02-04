@@ -1,0 +1,5 @@
+<div style="margin:0 auto; width:250px;">
+    <ejs-dropdowntree id="treedata" placeholder="Select a Item">
+        <e-dropdowntree-fields dataSource="ViewBag.dataSource" child="ViewBag.child" value="nodeId" text="nodeText"></e-dropdowntree-fields>
+    </ejs-dropdowntree>
+</div>

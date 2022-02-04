@@ -1,0 +1,53 @@
+<div class="padding-top">
+    <ejs-dropdownlist id="country" placeholder="Select a country" popupHeight="@ViewBag.popupHeight" dataSource="@ViewBag.country" change="countrychange">
+        <e-dropdownlist-fields text="CountryName" value="CountryId"></e-dropdownlist-fields>
+    </ejs-dropdownlist>
+
+</div>
+<div class="padding-top">
+    <ejs-dropdownlist id="state" enabled="false" placeholder="Select a state" popupHeight="@ViewBag.popupHeight" dataSource="@ViewBag.state" change="statechange">
+        <e-dropdownlist-fields text="StateName" value="StateId"></e-dropdownlist-fields>
+    </ejs-dropdownlist>
+</div>
+<div class="padding-top">
+    <ejs-dropdownlist id="city" placeholder="Select a city" enabled="false" popupHeight="@ViewBag.popupHeight" dataSource="@ViewBag.cities">
+        <e-dropdownlist-fields text="CityName" value="CityId"></e-dropdownlist-fields>
+    </ejs-dropdownlist>
+</div>
+<script type="text/javascript">
+    function countrychange() {
+        // disable the state DropDownList
+        var countryObj = document.getElementById('country').ej2_instances[0];
+        var state = document.getElementById('state').ej2_instances[0];
+        var city = document.getElementById('city').ej2_instances[0];
+        state.enabled = true;
+        //frame the query based on selected value in country DropDownList.
+        var tempQuery = new ej.data.Query().where('CountryId', 'equal', countryObj.value);
+        // set the framed query based on selected value in country DropDownList.
+        state.query = tempQuery;
+        // set null value to state DropDownList text property
+        state.text = null;
+        //  bind the property changes to state DropDownList
+        state.dataBind();
+        // set null value to city DropDownList text property
+        city.text = null;
+        // disable the city DropDownList
+        city.enabled = false;
+        // bind the property changes to City DropDownList
+        city.dataBind();
+    }
+    function statechange() {
+        var stateObj = document.getElementById('state').ej2_instances[0];
+        var city = document.getElementById('city').ej2_instances[0];
+        city.enabled = true;
+        //Query the data source based on state DropDownList selected value
+        var tempQuery = new ej.data.Query().where('StateId', 'equal', stateObj.value);
+        //set the framed query based on selected value in city DropDownList.
+        city.query = tempQuery;
+        //clear the existing selection
+        city.text = null;
+        //bind the property change to city DropDownList
+        city.dataBind();
+
+    }
+</script>

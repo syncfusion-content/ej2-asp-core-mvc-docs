@@ -1,0 +1,10 @@
+<div class="col-lg-8 control-section" style="float:left;padding:0px">
+    <div class="content-wrapper">
+        @(Html.EJS().Diagram("container")
+.Width("100%")
+.Height("500px")
+.Mode(Syncfusion.EJ2.Diagrams.RenderingMode.SVG)
+.Nodes(ViewBag.nodes)
+.Connectors(ViewBag.connectors).Render())
+    </div>
+</div>

@@ -1,0 +1,10 @@
+@Html.EJS().Button("disabled").Content("Disabled").Disabled(true).Render()
+
+<style>
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+</style>
+

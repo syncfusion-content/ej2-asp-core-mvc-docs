@@ -1,0 +1,17 @@
+<ul>
+    <li>
+        <ejs-checkbox id="cbox1" label="Left Side Label" labelPosition="@Syncfusion.EJ2.Buttons.LabelPosition.Before"></ejs-checkbox>
+    </li>
+    <li>
+        <ejs-checkbox id="cbox2" label="Right Side Label" labelPosition="@Syncfusion.EJ2.Buttons.LabelPosition.After" checked="true"></ejs-checkbox>
+    </li>
+</ul>
+<style>
+    .e-checkbox-wrapper {
+        margin-top: 18px;
+    }
+
+    li {
+        list-style: none;
+    }
+</style>

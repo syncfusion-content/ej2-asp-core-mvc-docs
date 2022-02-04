@@ -1,0 +1,15 @@
+@Html.EJS().ListBox("listbox").DataSource((IEnumerable<object>)ViewBag.data).Created("create").Render()
+<button class="e-btn" id="enableitem">Enable Items</button>
+
+<script>
+    var disableItems = ['Bugatti Veyron Super Sport', 'SSC Ultimate Aero'];
+    function create() {
+        var listboxobj = document.getElementById("listbox").ej2_instances[0];
+        listboxobj.enableItems(disableItems, false);
+    }
+
+    document.getElementById('enableitem').onclick = function () {
+        var listboxobj1 = document.getElementById("listbox").ej2_instances[0];
+        listboxobj.enableItems(disableItems, true);
+    }
+</script>

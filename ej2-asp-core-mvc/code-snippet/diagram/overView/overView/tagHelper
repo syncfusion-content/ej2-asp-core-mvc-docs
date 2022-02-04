@@ -1,0 +1,94 @@
+
+ <div class="col-lg-12 control-section">
+        <div class="content-wrapper">
+            <ejs-diagram id="diagram" width="100%" height="550px" setNodeTemplate="@ViewBag.setNodeTemplate" getNodeDefaults="@ViewBag.getNodeDefaults" getConnectorDefaults="@ViewBag.getConnectorDefaults" created="diagramCreated">
+                <e-diagram-datasourcesettings id="Id" parentId="ReportingPerson" dataManager="new DataManager(){ Data = (List<OverviewData>)ViewBag.Nodes }"></e-diagram-datasourcesettings>
+                <e-diagram-layout type="OrganizationalChart" horizontalSpacing="15" verticalSpacing="50"></e-diagram-layout>
+                <e-diagram-snapsettings constraints="None"></e-diagram-snapsettings>
+                <e-diagram-scrollsettings scrollLimit="Infinity"></e-diagram-scrollsettings>
+            </ejs-diagram>
+        </div>
+    </div>
+    <div class="col-lg-4 property-section" style="padding:0px;right:49px;bottom:38px;border: #eeeeee;border-style: solid;box-shadow: 0px 2px 2px rgba(0,0,0,0.3); background:#f7f7f7;position:absolute">
+    <ejs-overview id="overview" width="100%" height="150px" sourceID="diagram"></ejs-overview>
+</div>
+
+
+<script type="text/javascript">
+
+    function diagramCreated() {
+        var diagram = document.getElementById("diagram").ej2_instances[0];
+       // diagram.tool = ej.diagrams.DiagramTools.ZoomPan;
+        diagram.dataBind();
+    }
+    function getLayoutInfo(node, tree) {
+        if (!tree.hasSubTree) {
+            tree.orientation = 'Vertical';
+            tree.type = 'Right';
+        }
+    }
+    function getNodeDefaults(obj, diagram) {
+        obj.height = 50;
+        obj.fillColor = '#6BA5D7'
+        obj.style = { fillColor: '#6BA5D7', strokeWidth: 2, borderColor: 'white', strokeColor: 'white' };
+        return obj;
+    }
+    function getConnectorDefaults(connector, diagram) {
+        connector.style.strokeColor = '#6BA5D7';
+        connector.style.fill = '#6BA5D7';
+        connector.style.strokeWidth = 2;
+        connector.targetDecorator.style.fill = '#6BA5D7';
+        connector.targetDecorator.style.strokeColor = '#6BA5D7';
+        connector.targetDecorator.shape = 'None';
+        connector.type = 'Orthogonal';
+        connector.style.strokeColor = '#6BA5D7';
+        return connector;
+    }
+
+    function setNodeTemplate(obj, diagram) {
+        var content = new ej.diagrams.StackPanel();
+        content.id = obj.id + '_outerstack';
+        content.orientation = 'Horizontal';
+        content.style.fill = '#6BA5D7';
+        content.style.strokeColor = 'none'
+        content.padding = { left: 5, right: 10, top: 5, bottom: 5 };
+
+        var innerStack = new ej.diagrams.StackPanel();
+        innerStack.style.fill = '#6BA5D7';
+        innerStack.style.strokeColor='none'
+        innerStack.margin = { left: 5, right: 0, top: 0, bottom: 0 };
+        innerStack.id = obj.id + '_innerstack';
+
+        var text = new ej.diagrams.TextElement();
+        var style = text.style;
+        text.content = obj.data.Name;
+        style.color = 'white';
+        style.bold = true;
+        style.strokeColor = 'none';
+        text.horizontalAlignment = 'Left';
+        style.fill = 'none';
+        text.id = obj.id + '_text1';
+
+        var desigText = new ej.diagrams.TextElement();
+        var style = desigText.style;
+        desigText.margin = { left: 0, right: 0, top: 5, bottom: 0 };
+        desigText.content = obj.data.Designation;
+        style.color = 'white';
+        style.strokeColor = 'none';
+        style.fontSize = 12;
+        style.fill = 'none';
+        desigText.horizontalAlignment = 'Left';
+        style.textWrapping = 'Wrap';
+        desigText.id = obj.id + '_desig';
+        innerStack.children = [text, desigText];
+
+        content.children = [innerStack];
+
+        return content;
+    }
+</script>
+
+
+
+
+

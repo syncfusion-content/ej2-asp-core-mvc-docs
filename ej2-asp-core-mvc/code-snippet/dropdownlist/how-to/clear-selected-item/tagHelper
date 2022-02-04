@@ -1,0 +1,14 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="games" dataSource="@ViewBag.data" placeholder="Select a game" popupHeight="220px">
+        </ejs-dropdownlist>
+    </div>
+</div>
+<ejs-button id="button" content="Null the value"></ejs-button>
+
+<script>
+    document.getElementById('button').onclick = () => {
+        var dropObject = document.getElementById("games").ej2_instances[0];
+        dropObject.value = null;
+    };
+</script>

@@ -1,0 +1,13 @@
+<div style='padding-top:75px;'>
+    <ejs-dropdownlist id="country" placeholder="Select a country" allowFiltering="true" filtering="onfiltering" dataSource="@ViewBag.data" popupHeight="270px">
+        <e-dropdownlist-fields value="Name"></e-dropdownlist-fields>
+    </ejs-dropdownlist>
+</div>
+
+<script>
+    function onfiltering(e) {
+        var query = new ej.data.Query();
+        query = (e.text !== '') ? query.where('Name', 'startswith', e.text, true) : query;
+        e.updateData(@Html.Raw(JsonConvert.SerializeObject(ViewBag.data)), query);
+    }
+</script>

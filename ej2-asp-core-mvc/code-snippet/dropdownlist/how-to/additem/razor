@@ -1,0 +1,22 @@
+
+@Html.EJS().Button("first").Content("add item (Hockey) in first").Render()
+@Html.EJS().Button("between").Content("add item (Golf) in Between").Render()
+@Html.EJS().Button("last").Content("add item (Cricket) in last").Render()
+@Html.EJS().DropDownList("games").Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "Game" }).Render()
+
+<script>
+    document.getElementById('first').onclick = () => {
+        var dropObject = document.getElementById("games").ej2_instances[0];
+        dropObject.addItem({ Game: 'Hockey' }, 0);
+    };
+    // add item in between
+    document.getElementById('between').onclick = () => {
+        var dropObject = document.getElementById("games").ej2_instances[0];
+        dropObject.addItem({ Game: "Golf" }, 2);
+    };
+    // add item at last
+    document.getElementById('last').onclick = () => {
+        var dropObject = document.getElementById("games").ej2_instances[0];
+        dropObject.addItem({ Game: "Cricket" });
+    };
+</script>

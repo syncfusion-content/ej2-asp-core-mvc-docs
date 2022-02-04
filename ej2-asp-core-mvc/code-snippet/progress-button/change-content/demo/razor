@@ -1,0 +1,20 @@
+@Html.EJS().ProgressButton("upload").Content("Upload").EnableProgress(true).CssClass("e-hide-spinner").Duration(4000).Begin("begin").End("end").Render()
+
+<script>
+    function begin() {
+        this.content = 'Uploading...';
+        this.cssClass = 'e-hide-spinner e-info';
+        this.dataBind();
+    }
+
+    function end() {
+        this.content = 'Success';
+        this.cssClass = 'e-hide-spinner e-success';
+        this.dataBind();
+        setTimeout(() => {
+            this.content = 'Upload';
+            this.cssClass = 'e-hide-spinner';
+            this.dataBind();
+        }, 500)
+    }
+</script>

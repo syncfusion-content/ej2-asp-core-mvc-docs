@@ -1,0 +1,31 @@
+@Html.EJS().Button("largebtn").Content("Large Button").CssClass("e-big-btn").Render()
+@Html.EJS().Button("smallbtn").IconCss("e-icons e-add-icon").CssClass("e-small-btn").Render()
+
+<style>
+
+.e-big-btn {
+  height: 50px;
+  width: 120px;
+}
+
+/* To Customize small button */
+.e-small-btn {
+  height: 30px;
+  width: 25px;
+}
+
+.e-small-btn.e-icon-btn {
+  padding: 0 6px;
+  line-height: 24px;
+}
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+.e-add-icon::before {
+  content: '\e823';
+}
+
+</style>
+

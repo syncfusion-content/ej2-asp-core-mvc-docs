@@ -1,0 +1,13 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="games" dataSource="@ViewBag.data" placeholder="Select a game" index="2" popupHeight="220px">
+        </ejs-dropdownlist>
+    </div>
+</div>
+
+<script>
+    document.onscroll = () => {
+        var dropObj = document.getElementById("games"); //to get dropdown list object
+        dropObj.ej2_instances[0].hidePopup(); // hide the popup using hidePopup method
+    };
+</script>

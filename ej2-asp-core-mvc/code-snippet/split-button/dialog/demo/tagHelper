@@ -1,0 +1,31 @@
+<div>
+    <ejs-dialog id="dialog" header="Software Update" content="Are you sure want to update?" visible="false" width="250px">
+        <e-dialog-buttons>
+            <e-dialog-dialogbutton buttonModel="ViewBag.button" click="okBtnClick"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="ViewBag.button1" click="cancelBtnClick"></e-dialog-dialogbutton>
+        </e-dialog-buttons>
+    </ejs-dialog>
+    <ejs-splitbutton id="splitbtn" items="ViewBag.items" content='Help' select="onSelect"></ejs-splitbutton>
+</div>
+
+<script>
+    function onSelect(args){
+        if (args.item.text === 'Update...') {
+            document.getElementById('dialog').ej2_instances[0].show();
+        }
+    }
+
+    function okBtnClick () {
+        document.getElementById('dialog').ej2_instances[0].hide();
+    }
+
+    function cancelBtnClick () {
+        document.getElementById('dialog').ej2_instances[0].hide();
+    }
+</script>
+
+<style>
+    .e-split-btn-wrapper{
+        margin: 20px 20px 5px 5px;
+    }
+</style>

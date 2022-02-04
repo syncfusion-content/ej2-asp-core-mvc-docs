@@ -1,0 +1,1 @@
+@Html.EJS().DropDownList("games").DataSource((IEnumerable<object>)ViewBag.data).Render()

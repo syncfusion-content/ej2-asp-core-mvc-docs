@@ -1,0 +1,2 @@
+<ejs-symbolpalette id="symbolpalette" enableAnimation="true" symbolHeight="80" symbolWidth="80" paletteExpanding="@ViewBag.paletteExpanding" palettes="@ViewBag.palettes">
+</ejs-symbolpalette>

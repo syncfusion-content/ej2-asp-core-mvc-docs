@@ -1,0 +1,2 @@
+<ejs-listbox id="listbox" dataSource="@ViewBag.data" sortOrder="@ViewBag.value">
+</ejs-listbox>

@@ -1,0 +1,7 @@
+@Html.EJS().ChipList("chip-avatar").Chips(chip =>
+                        {
+                            chip.Text("Andrew").Enabled(true).Add();
+                            chip.Text("Janet").Enabled(true).Add();
+                            chip.Text("Laura").Enabled(true).Add();
+                            chip.Text("Margaret").Enabled(true).Add();
+                        }).Render()

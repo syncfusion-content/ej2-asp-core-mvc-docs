@@ -1,0 +1,1 @@
+<ejs-progressbutton id="progress" content="Progress" enableProgress="true" cssClass="e-hide-spinner"></ejs-progressbutton>

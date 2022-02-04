@@ -1,0 +1,86 @@
+<div class='btncontainer'>
+    <ejs-button id="button" content="Button" onclick="clickHandler()" onmousedown="mousedownHandler(event)" onmouseup="mouseupHandler()" ontouchend="touchend()" ontouchstart="touchstart(event)">
+    </ejs-button>
+</div>
+<div class='event' style="height:auto;">
+    <table title='Event Trace' style="width:100%">
+    <tbody>
+    <tr>
+        <th>Event Trace</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="eventarea" style="height: 250px;overflow: auto">
+                <span id="eventlog" style="word-break: normal;"></span>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="evtbtn" style="padding:20px 0 0 20px">
+                <ejs-button id="clear" content="Clear" onclick="clearHandler()"></ejs-button>
+            </div>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<style>
+
+hr {
+   margin: 1px 10px 1px 0px;
+   border-top: 1px solid #eee;
+}
+
+.btncontainer {
+  float: left;
+  width: 40%;
+}
+
+.event {
+  float: right;
+  width: 60%;
+  border-left: 1px solid #D7D7D7;
+}
+
+#eventlog b {
+  color: #388e3c;
+}
+
+</style>
+
+<script>
+
+function clearHandler () {
+    document.getElementById('eventlog').innerHTML = '';
+}
+function mousedownHandler (event) {
+    event.preventDefault();
+    timeout = setInterval(clickEventHandler, 200);
+}
+function touchstart (event) {
+    event.preventDefault();
+    timeout = setInterval(clickEventHandler, 200);
+}
+function mouseupHandler () {
+    clearInterval(timeout);
+}
+function touchend () {
+    clearInterval(timeout);
+}
+function clickHandler () {
+    appendSpanElement('Button click event triggered.<hr>');
+}
+
+function clickEventHandler(e){
+    appendSpanElement('Button click event triggered.<hr>');
+}
+
+function appendSpanElement(text){
+    var span = document.createElement('span');
+    span.innerHTML = text;
+    var log = document.getElementById('eventlog');
+    log.insertBefore(span, log.firstChild);
+}
+</script>

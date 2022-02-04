@@ -1,0 +1,30 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="customers" query="new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6)" allowFiltering="true" filtering="filtering" placeholder="Select a customer" popupHeight="200px">
+            <e-dropdownlist-fields text="ContactName" value="CustomerID"></e-dropdownlist-fields>
+            <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+        </ejs-dropdownlist>
+
+    </div>
+</div>
+<script>
+    var queryString;
+    document.addEventListener('DOMContentLoaded', function () {
+        var ddlObj = document.getElementById("customers")
+        ddlObj.ej2_instances[0].fields = {
+            text: "ContactName", value: "CustomerID", itemCreated: function (e) {
+                new ej.dropdowns.highlightSearch(e.item, queryString, true, 'StartsWith');
+            }
+        }
+    }, false);
+    function filtering(e) {
+        var data = document.getElementById('customers').ej2_instances[0];
+        // take text for highlight the character in list items.
+        queryString = e.text;
+        var query = new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6);
+        //frame the query based on search string with filter type.
+        query = (e.text !== '') ? query.where('ContactName', 'startswith', e.text, true) : query;
+        //pass the filter data source, filter query to updateData method.
+        e.updateData(data.dataSource, query);
+    }
+</script>

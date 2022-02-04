@@ -1,0 +1,22 @@
+@Html.EJS().RadioButton("radio1").Label("Credit/Debit Card").Name("payment").Checked(true).Render()
+@Html.EJS().RadioButton("radio2").Label("Net Banking").Name("payment").Render()
+@Html.EJS().RadioButton("radio3").Label("Cash on Delivery").Name("payment").Render()
+@Html.EJS().RadioButton("radio4").Label("Others").Name("payment").Render()
+@Html.EJS().Button("primarybtn").Content("Submit").IsPrimary(true).Render()
+
+<style>
+
+.e-radio-wrapper {
+  margin-top: 18px;
+}
+
+button {
+  margin: 20px 0 0 5px;
+}
+
+li {
+  list-style: none;
+}
+
+</style>
+

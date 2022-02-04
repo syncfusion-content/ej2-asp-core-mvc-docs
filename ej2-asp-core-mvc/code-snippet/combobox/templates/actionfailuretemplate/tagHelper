@@ -1,0 +1,9 @@
+<div class='control-wrapper'>
+    <div style='padding-top:75px;'>
+        <ejs-combobox id="customers" query="new ej.data.Query().from('Employees').select(['FirstName']).take(6)" placeholder="Select a customer" popupHeight="200px"
+                          actionFailureTemplate="@Html.Raw("<span class='action-failure'> Data fetch get fails</span>")">
+            <e-combobox-fields value="FirstName"></e-combobox-fields>
+            <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svcs/" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+        </ejs-combobox>
+    </div>
+</div>

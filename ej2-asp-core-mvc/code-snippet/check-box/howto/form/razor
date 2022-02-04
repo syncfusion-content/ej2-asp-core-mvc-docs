@@ -1,0 +1,23 @@
+@Html.EJS().CheckBox("cbox2").Name("Sport").Value("Cricket").Label("Cricket").Checked(true).Render()
+@Html.EJS().CheckBox("cbox3").Name("Sport").Value("Hockey").Label("Hockey").Checked(true).Render()
+@Html.EJS().CheckBox("cbox4").Name("Sport").Value("Tennis").Label("Tennis").Render()
+@Html.EJS().CheckBox("cbox1").Name("Sport").Value("Basketball").Label("Basketball").Render()
+@Html.EJS().Button("primarybtn").Content("Submit").IsPrimary(true).Render()
+
+
+<style>
+
+.e-checkbox-wrapper {
+  margin-top: 18px;
+}
+
+button {
+  margin: 20px 0 0 5px;
+}
+
+li {
+  list-style: none;
+}
+
+</style>
+

@@ -1,0 +1,2 @@
+<ejs-radiobutton id="radio1" label="Option 1" name="default"></ejs-radiobutton>
+<ejs-radiobutton id="radio2" label="Option 2" name="default" checked="true"></ejs-radiobutton>

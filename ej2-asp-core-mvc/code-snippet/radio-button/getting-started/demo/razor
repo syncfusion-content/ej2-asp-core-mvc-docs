@@ -1,0 +1,2 @@
+@Html.EJS().RadioButton("radio1").Label("Option 1").Name("default").Render()
+@Html.EJS().RadioButton("radio2").Label("Option 2").Name("default").Render()

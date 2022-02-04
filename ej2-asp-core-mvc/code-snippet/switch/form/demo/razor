@@ -1,0 +1,49 @@
+<div id='container'>
+<form>
+    <table class='size'>
+        <tr>
+            <td class='lSize'>USB</td>
+            <td>
+                @Html.EJS().Switch("switch1").Checked(true).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class='lSize'>Wi-Fi</td>
+            <td>
+                @Html.EJS().Switch("switch2").Checked(true).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class='lSize'>Bluetooth</td>
+            <td>
+                @Html.EJS().Switch("switch3").Render()
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.EJS().Button("button").Content("SUBMIT").Render()
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+
+<style>
+
+button {
+  margin: 20px 0 0 5px;
+}
+
+.size tr td {
+  padding: 10px;
+}
+
+.size .lSize {
+  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif";
+  font-size: 13px;
+}
+
+.size .lSize label {
+  user-select: none;
+} 
+</style>

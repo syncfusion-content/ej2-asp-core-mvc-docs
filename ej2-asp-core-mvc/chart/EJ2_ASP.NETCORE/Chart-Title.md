@@ -8,18 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-layout: post
-title: Chart Title |Chart  | ASP.NET CORE | Syncfusion
-description: How to customize the chart title.
-platform: aspnet-core
-control: Chart
-publishingplatform: ##Platform_Name##
-documentation: ug
---- 
-
-{% if page.publishingplatform == "aspnet-core" %}
-
 # Chart Title & Subtitle
 
 ## Title
@@ -115,6 +103,3 @@ You can change the alignment of the sub title to center, far, and near by using 
 {% endhighlight %}
 
 ![](Chart-Title_images/Chart-Title_img4.png) 
-
-
-{% endif %}

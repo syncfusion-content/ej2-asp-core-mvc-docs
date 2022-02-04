@@ -1,0 +1,15 @@
+<ejs-button id="primarybtn" cssClass="e-primary" content="Primary"></ejs-button>
+<ejs-button id="successbtn" cssClass="e-success" content="Success"></ejs-button>
+<ejs-button id="infobtn" cssClass="e-info" content="Info"></ejs-button>
+<ejs-button id="warningbtn" cssClass="e-warning" content="Warning"></ejs-button>
+<ejs-button id="dangerbtn" cssClass="e-danger" content="Danger"></ejs-button>
+<ejs-button id="linkbtn" cssClass="e-link" content="Link"></ejs-button>
+
+<style>
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+</style>
+

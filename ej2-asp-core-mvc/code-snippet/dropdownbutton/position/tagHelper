@@ -1,0 +1,12 @@
+<ejs-dropdownbutton id="ddbtn" items="ViewBag.items" cssClass="e-caret-up" content="Clipboard" open="onOpen"></ejs-dropdownbutton>
+
+<style>
+    button {
+        margin: 10%;
+    }
+</style>
+<script>
+    function onOpen(args){
+        args.element.parentElement.style.top = document.getElementById('ddbtn').ej2_instances[0].element.getBoundingClientRect().top - args.element.parentElement.offsetHeight +'px';
+    }
+</script>

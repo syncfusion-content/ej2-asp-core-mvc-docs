@@ -1,0 +1,8 @@
+@Html.EJS().ChipList("chip-avatar").EnableDelete(true).Chips(chip =>
+                        {
+                            chip.Text("Primary").CssClass("e-primary").Enabled(true).Add();
+                            chip.Text("Success").CssClass("e-success").Enabled(true).Add();
+                            chip.Text("Info").CssClass("e-info").Enabled(true).Add();
+                            chip.Text("Warning").CssClass("e-warning").Enabled(true).Add();
+                            chip.Text("Danger").CssClass("e-danger").Enabled(true).Add();
+                        }).Render()

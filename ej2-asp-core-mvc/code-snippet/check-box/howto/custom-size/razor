@@ -1,0 +1,22 @@
+@Html.EJS().CheckBox("cbox2").Label("Buy Groceries").Checked(true).CssClass("e-custom").Render()
+@Html.EJS().CheckBox("cbox3").Label("Pay Rent").Checked(true).CssClass("e-custom").Render()
+@Html.EJS().CheckBox("cbox4").Label("Make Dinner").CssClass("e-custom").Render()
+@Html.EJS().CheckBox("cbox1").Label("Finish To-do List Article").CssClass("e-custom").Render()
+
+
+<style>
+
+  li {
+    list-style: none;
+  }
+
+  .e-checkbox-wrapper {
+    margin-top: 18px;
+  }
+
+  e-custom .e-frame {
+    border-radius: 100%;
+  }
+
+</style>
+

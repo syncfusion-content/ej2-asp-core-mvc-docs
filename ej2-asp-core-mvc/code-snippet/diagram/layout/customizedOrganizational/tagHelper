@@ -1,0 +1,15 @@
+<div class="col-lg-12 control-section">
+    <div class="content-wrapper">
+        @(Html.EJS().Diagram("diagram").Width("100%").Height("590px").GetNodeDefaults("getNodeDefaults")
+            .GetConnectorDefaults("getConnectorDefaults")
+            .ScrollSettings(s => s.ScrollLimit(Syncfusion.EJ2.Diagrams.ScrollLimit.Diagram))
+            .DataSourceSettings(ss => ss.Id("Id").ParentId("ReportingPerson")
+            .DataSource(new DataManager()
+            {
+                Data = ViewBag.Nodes
+            }))
+                .Layout(l => l.Type(Syncfusion.EJ2.Diagrams.LayoutType.OrganizationalChart).GetLayoutInfo("getLayoutInfo"))
+                .SnapSettings(se => se.Constraints(Syncfusion.EJ2.Diagrams.SnapConstraints.None))
+                .Render())
+    </div>
+</div>

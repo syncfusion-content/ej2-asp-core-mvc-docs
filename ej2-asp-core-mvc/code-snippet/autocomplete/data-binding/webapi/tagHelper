@@ -1,0 +1,7 @@
+<div id='web-data' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-autocomplete id="games">
+            <e-data-manager url="/api/AutoComplete/" adaptor="WebApiAdaptor"></e-data-manager>
+        </ejs-autocomplete>
+    </div>
+</div>

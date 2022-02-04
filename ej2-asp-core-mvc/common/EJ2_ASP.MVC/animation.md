@@ -8,17 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Animation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
-platform: ej2-asp-core-mvc
-control: Animation
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-
 # Animation
 
 The **Animation** library is used to perform animation effects on HTML elements by running sequence of frames.

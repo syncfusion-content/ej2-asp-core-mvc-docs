@@ -1,0 +1,6 @@
+@Html.EJS().AutoComplete("customers").Placeholder("Select a customer").PopupHeight("200px").SuggestionCount(3).DataSource(dataManger =>
+            dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/").Adaptor("ODataV4Adaptor").CrossDomain(true)).Fields(new Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings
+            {
+                Value = "ContactName",
+            }).Query("new ej.data.Query().from('Customers').select(['ContactName'])").Render()
+

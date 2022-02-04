@@ -1,0 +1,23 @@
+<ejs-dropdownbutton id="ddbtn" items="ViewBag.items" content="Clipboard" beforeOpen="beforeOpen" beforeClose="beforeClose"></ejs-dropdownbutton>
+
+<style>
+    .e-caret {
+        transform: rotate(0deg);
+        transition: transform 200ms ease-in-out;
+    }
+
+    .e-caret-up .e-caret {
+        transform: rotate(180deg);
+    }
+</style>
+
+<script>
+  // Removing 'e-caret-up' class.
+  function beforeClose (args) {
+     this.cssClass = '';
+  }
+  // Adding 'e-caret-up' class.
+  function beforeOpen (args) {
+     this.cssClass = 'e-caret-up';
+  }
+</script>

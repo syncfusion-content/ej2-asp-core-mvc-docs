@@ -1,0 +1,15 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>
+        <ejs-combobox id="games" dataSource="@ViewBag.data" placeholder="Select a game" popupHeight="220px">
+        </ejs-combobox>
+    </div>
+</div>
+<script>
+    document.onkeyup = function (e) {
+        var atcObject = document.getElementById("games").ej2_instances[0];
+        if (e.altKey && e.keyCode === 84 /* t */) {
+            // press alt+t to focus the control.
+            atcObject.focusIn();
+        }
+    };
+</script>

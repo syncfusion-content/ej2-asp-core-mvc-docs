@@ -1,0 +1,23 @@
+<ejs-diagram id="container" width="100%" height="700px" getNodeDefaults="@ViewBag.getNodeDefaults" getConnectorDefaults="@ViewBag.getConnectorDefaults">
+            <e-diagram-nodes>
+                <e-diagram-node id='node1' offsetY="100">
+                </e-diagram-node>
+                <e-diagram-node id='node2' offsetY="300">
+                </e-diagram-node>
+            </e-diagram-nodes>
+            <e-diagram-connectors>
+                <e-diagram-connector id="connector1" sourceID="node1" targetID="node2">
+                </e-diagram-connector>
+            </e-diagram-connectors>
+        </ejs-diagram>
+
+        function getNodeDefaults(node, diagram) {
+            var obj = {};
+            obj.height = 50;
+            obj.width = 50;
+            node.offsetX = 300;
+            return obj;
+        }
+        function getConnectorDefaults(connector, diagram) {
+            return connector.type = "Orthogonal"
+        }

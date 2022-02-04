@@ -1,0 +1,5 @@
+<div>
+    <ejs-multiselect id="country" dataSource="@ViewBag.data" placeholder="Countries" mode="Box">
+        <e-multiselect-fields value="Code.Id" text="Country.CountryId"></e-multiselect-fields>
+    </ejs-multiselect>
+</div>

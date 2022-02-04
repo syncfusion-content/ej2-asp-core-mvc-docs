@@ -1,0 +1,15 @@
+@Html.EJS().CheckBox("cbox1").Label("Left Side Label").LabelPosition(Syncfusion.EJ2.Buttons.LabelPosition.Before).Render()
+@Html.EJS().CheckBox("cbox2").Label("Right Side Label").LabelPosition(Syncfusion.EJ2.Buttons.LabelPosition.After).Render()
+
+<style>
+
+.e-checkbox-wrapper {
+  margin-top: 18px;
+}
+
+li {
+  list-style: none;
+}
+
+</style>
+

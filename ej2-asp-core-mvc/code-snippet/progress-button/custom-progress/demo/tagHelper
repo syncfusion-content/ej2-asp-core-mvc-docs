@@ -1,0 +1,14 @@
+<ejs-progressbutton id="vprogress" content="Vertical Progress" enableProgress="true" cssClass="e-hide-spinner e-vertical" duration="4000"></ejs-progressbutton>
+<ejs-progressbutton id="tprogress" content="Progress Top" enableProgress="true" cssClass="e-hide-spinner e-progress-top" duration="4000"></ejs-progressbutton>
+<ejs-progressbutton id="rprogress" content="Reverse Progress" enableProgress="true" cssClass="e-hide-spinner e-reverse-progress" duration="4000"></ejs-progressbutton>
+
+<style>
+    .e-reverse-progress .e-progress {
+        right: 0;
+        left: auto;
+    }
+
+    button {
+        margin: 25px;
+    }
+</style>

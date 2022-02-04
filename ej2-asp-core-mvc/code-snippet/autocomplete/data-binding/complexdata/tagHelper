@@ -1,0 +1,7 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>
+        <ejs-autocomplete id="country" datasource="@ViewBag.data" placeholder="Select a Country" popupheight="220px">
+            <e-autocomplete-fields value="Country.CountryId"></e-autocomplete-fields>
+        </ejs-autocomplete>
+    </div>
+</div>

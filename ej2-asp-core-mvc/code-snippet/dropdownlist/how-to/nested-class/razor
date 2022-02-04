@@ -1,0 +1,7 @@
+<div class="container">
+    @Html.EJS().DropDownList(Html.IdFor(m => m.SelectedAccountNumber).ToString()).DataSource(Model.BeneficiaryList).Width("300").Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings()
+        {
+            Text = "PersonName.FullName",
+            Value = "AccountNumber"
+        }).ItemTemplate("<span>${PersonName.FullName} - ${AccountNumber}</span>").ValueTemplate("<span>${PersonName.FullName} - ${AccountNumber}</span>").Render()
+</div>

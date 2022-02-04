@@ -1,0 +1,11 @@
+@using (Html.BeginForm())
+{
+    @Html.EJS().AutoCompleteFor(model => model.EnquiringAboutSelect).Placeholder("Select a Country").DataSource(Model?.EnquiringAboutSelectListItems).Fields(new Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings { Value = "Text" }).Placeholder("Please Select Enquiring About").Render()
+    <div>
+        @Html.ValidationMessageFor(model => model.EnquiringAboutSelect)
+    </div>
+
+    <div id="submitbutton">
+        @Html.EJS().Button("btn").Content("Post").Render()
+    </div>
+}

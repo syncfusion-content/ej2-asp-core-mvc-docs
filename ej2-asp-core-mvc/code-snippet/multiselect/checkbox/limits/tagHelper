@@ -1,0 +1,6 @@
+<div>
+    <ejs-multiselect id="games" dataSource="@ViewBag.data" placeholder="Favorite Sports" 
+		mode="CheckBox" maximumSelectionLength="3">
+        <e-multiselect-fields value="Id" text="Game"></e-multiselect-fields>
+    </ejs-multiselect>
+</div>

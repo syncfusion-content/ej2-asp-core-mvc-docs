@@ -1,0 +1,8 @@
+<div style="width:50%; margin:auto">
+    <div style="float:left; width:48%">
+        <ejs-listbox id="listbox1" dataSource="@ViewBag.groupA" allowDragAndDrop="true" scope="combined-list" height="290px"></ejs-listbox>
+    </div>
+    <div style="float:right; width:48%">
+        <ejs-listbox id="listbox2" dataSource="@ViewBag.groupB" allowDragAndDrop="true" scope="combined-list" height="290px"></ejs-listbox>
+    </div>
+</div>

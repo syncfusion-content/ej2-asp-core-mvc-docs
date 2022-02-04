@@ -1,0 +1,15 @@
+@Html.EJS().CheckBox("checked").Label("Checked State").Checked(true).Render()
+@Html.EJS().CheckBox("unchecked").Label("Unchecked State").Render()
+@Html.EJS().CheckBox("indeterminate").Label("Intermediate State").Indeterminate(true).Render()
+
+<style>
+
+.e-checkbox-wrapper {
+  margin-top: 18px;
+}
+
+li {
+  list-style: none;
+}
+
+</style>

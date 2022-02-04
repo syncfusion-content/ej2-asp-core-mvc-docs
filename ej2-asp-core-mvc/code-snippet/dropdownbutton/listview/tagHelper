@@ -1,0 +1,21 @@
+<div>
+  <ejs-listview enable="true" id="listview" dataSource="ViewBag.listdata" showCheckBox="true">
+      <e-listview-fieldsettings text="text" groupBy="category"></e-listview-fieldsettings>
+  </ejs-listview>
+  <ejs-dropdownbutton id="ddbtn" target='#listview' iconCss="e-icons e-down" cssClass="e-caret-hide"></ejs-dropdownbutton>
+</div>
+
+<style>
+    .e-down::before {
+        content: '\e969';
+    }
+
+    #listview {
+        display: block;
+        max-width: 600px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+</style>

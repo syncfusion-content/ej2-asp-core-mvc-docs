@@ -1,0 +1,21 @@
+@Html.EJS().ProgressButton("progress").Content("Progress").EnableProgress(true).Duration(15000).Begin("begin").Progress("progress").End("end").CssClass("e-hide-spinner").Render()
+
+<script>
+    function begin(args) {
+        this.content = 'Progress ' + args.percent + '%';
+        this.dataBind();
+    }
+
+    function progress(args) {
+        this.content = 'Progress ' + args.percent + '%';
+        this.dataBind();
+        if (args.percent === 40) {
+            args.percent = 90
+        }
+    }
+
+    function end(args) {
+        this.content = 'Progress ' + args.percent + '%';
+        this.dataBind();
+    }
+</script>

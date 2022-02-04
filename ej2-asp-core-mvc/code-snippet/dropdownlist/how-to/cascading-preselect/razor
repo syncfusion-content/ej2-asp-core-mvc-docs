@@ -1,0 +1,32 @@
+<div class="padding-top">
+    @Html.EJS().DropDownListFor(model => model.CountryId).Placeholder("Select a country").Width("300").PopupHeight("auto").Change("countrychange").DataSource((IEnumerable<Object>)ViewBag.country).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "CountryName", Value = "CountryId" }).Render()
+</div>
+<div class="padding-top">
+    @Html.EJS().DropDownListFor(model => model.StateId).Placeholder("Select a state").Width("300").PopupHeight("auto").Created("stateCreated").DataSource((IEnumerable<object>)ViewBag.state).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "StateName", Value = "StateId" }).Render()
+</div>
+<script type="text/javascript">
+    var totalData;
+    function stateCreated() {
+        // disable the state DropDownList
+        var countryObj = document.getElementById('CountryId').ej2_instances[0];
+        var state = document.getElementById('StateId').ej2_instances[0];
+        totalData = state.dataSource
+        //frame the query based on selected value in country DropDownList.
+        var dataManager = new ej.data.DataManager(totalData);
+        var tempQuery = new ej.data.Query().where('CountryId', 'equal', countryObj.value);
+        // set the framed query based on selected value in country DropDownList.
+        state.dataSource = tempQuery.executeLocal(dataManager);
+    }
+    function countrychange() {
+        // disable the state DropDownList
+        var countryObj = document.getElementById('CountryId').ej2_instances[0];
+        var state = document.getElementById('StateId').ej2_instances[0];
+        state.enabled = true;
+        var dataManager = new ej.data.DataManager(totalData);
+        //frame the query based on selected value in country DropDownList.
+        var tempQuery = new ej.data.Query().where('CountryId', 'equal', countryObj.value);
+        // set the framed query based on selected value in country DropDownList.
+        state.dataSource = tempQuery.executeLocal(dataManager);
+        state.dataBind();
+    }
+</script>

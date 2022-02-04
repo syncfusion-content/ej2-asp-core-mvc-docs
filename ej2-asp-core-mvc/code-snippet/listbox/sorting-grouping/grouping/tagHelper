@@ -1,0 +1,3 @@
+<ejs-listbox id="listbox" dataSource="@ViewBag.data">
+    <e-listbox-fields groupBy="Category" text="Vegetable" value="Id"></e-listbox-fields>
+</ejs-listbox>

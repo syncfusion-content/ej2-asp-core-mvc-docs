@@ -1,0 +1,1 @@
+<ejs-multiselect id="games" dataSource="@ViewBag.data"></ejs-multiselect>

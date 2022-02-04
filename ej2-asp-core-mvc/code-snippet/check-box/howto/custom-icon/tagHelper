@@ -1,0 +1,58 @@
+<ul>
+    <li>
+        <ejs-checkbox id="cbox2" label="Buy Groceries" checked="true" cssClass="e-checkicon"></ejs-checkbox>
+    </li>
+    <li>
+        <ejs-checkbox id="cbox3" label="Pay Rent" checked="true" cssClass="e-checkicon"></ejs-checkbox>
+    </li>
+    <li>
+        <ejs-checkbox id="cbox4" label="Make Dinner" cssClass="e-checkicon"></ejs-checkbox>
+    </li>
+    <li>
+        <ejs-checkbox id="cbox1" label="Finish To-do List Article" cssClass="e-checkicon"></ejs-checkbox>
+    </li>
+</ul>
+
+<style>
+
+li {
+  list-style: none;
+}
+
+.e-checkbox-wrapper {
+  margin-top: 18px;
+}
+
+.e-checkicon.e-checkbox-wrapper .e-frame.e-check::before {
+    content: '\e77d';
+}
+
+.e-checkicon.e-checkbox-wrapper .e-check {
+    font-size: 8px;
+}
+
+.e-checkicon.e-checkbox-wrapper .e-frame.e-check {
+    background-color: white;
+    border-color: grey;
+    color: grey;
+}
+
+.e-checkicon.e-checkbox-wrapper:hover .e-frame.e-check {
+    background-color: white;
+    border-color: grey;
+    color: grey;
+}
+
+.e-checkicon.e-checkbox-wrapper .e-checkbox:focus + .e-frame.e-check {
+    background-color: white;
+    border-color: grey;
+    box-shadow: none;
+    color: grey;
+}
+
+.e-checkicon.e-checkbox-wrapper .e-ripple-element {
+    background: grey;
+}
+
+</style>
+

@@ -1,0 +1,22 @@
+<div class='e-btn-group'>
+    @Html.EJS().Button("left").Content("Left").IconCss("e-icons e-left-icon").Render()
+    @Html.EJS().Button("middle").Content("Center").IconCss("e-icons e-middle-icon").Render()
+    @Html.EJS().Button("right").Content("Right").IconCss("e-icons e-right-icon").Render()
+</div>
+<style>
+.e-btn-group {
+  margin: 25px 5px 20px 20px;
+}
+
+.e-left-icon::before {
+    content: '\e33a';
+}
+
+.e-right-icon::before {
+    content: '\e34d';
+}
+
+.e-middle-icon::before {
+    content: '\e35e';
+}
+</style>

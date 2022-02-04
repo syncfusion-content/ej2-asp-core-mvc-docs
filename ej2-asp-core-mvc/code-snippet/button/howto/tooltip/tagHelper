@@ -1,0 +1,1 @@
+<ejs-button id="primarybtn" title="Primary Button" content="Button" isPrimary="true"></ejs-button>

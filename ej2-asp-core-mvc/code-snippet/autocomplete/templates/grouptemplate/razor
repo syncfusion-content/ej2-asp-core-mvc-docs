@@ -1,0 +1,6 @@
+@Html.EJS().AutoComplete("customers").Placeholder("Select a customer").PopupHeight("200px").DataSource(dataManger =>
+            dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/").Adaptor("ODataV4Adaptor").CrossDomain(true)).GroupTemplate("<strong>${City}</strong>").Fields(new Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings
+            {
+                Value = "FirstName",
+                GroupBy = "City"
+            }).Query("new ej.data.Query().from('Employees').select(['FirstName', 'City', 'EmployeeID']).take(6).where(new ej.data.Predicate('City', 'equal','london').or('City','equal','seattle'))").Render()

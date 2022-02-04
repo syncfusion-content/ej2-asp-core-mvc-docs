@@ -1,0 +1,11 @@
+<ejs-button id="smallbtn" cssClass="e-small" content="SMALL"></ejs-button>
+<ejs-button id="normalbtn" content="NORMAL"></ejs-button>
+
+<style>
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+</style>
+

@@ -1,0 +1,64 @@
+@Html.EJS().Switch("switch1").CssClass("bar-color").Render()
+@Html.EJS().Switch("switch2").CssClass("handle-color").Render()
+@Html.EJS().Switch("switch3").CssClass("custom-iOS").Render()
+
+<style>
+/* Custom color Switch */
+.e-switch-wrapper.bar-color .e-switch-inner.e-switch-active,
+.e-switch-wrapper.bar-color:hover .e-switch-inner.e-switch-active .e-switch-on {
+  background-color: #4d841d;
+  border-color: #4d841d;
+}
+
+.e-switch-wrapper.bar-color .e-switch-inner,
+.e-switch-wrapper.bar-color .e-switch-off {
+  background-color: #e3165b;
+  border-color: #e3165b;
+}
+
+.e-switch-wrapper.bar-color .e-switch-handle {
+  background-color: #fff;
+}
+
+/* handle color Switch */
+.e-switch-wrapper.handle-color .e-switch-handle {
+  background-color: #e3165b;
+}
+
+.e-switch-wrapper.handle-color .e-switch-handle.e-switch-active {
+  background-color: #4d841d
+}
+
+.e-switch-wrapper.handle-color .e-switch-inner.e-switch-active,
+.e-switch-wrapper.handle-color:hover .e-switch-inner.e-switch-active .e-switch-on {
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.e-switch-wrapper.handle-color .e-switch-inner,
+.e-switch-wrapper.handle-color .e-switch-off {
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+/* iOS Switch */
+.e-switch-wrapper.custom-iOS .e-switch-inner.e-switch-active,
+.e-switch-wrapper.custom-iOS:hover .e-switch-inner.e-switch-active .e-switch-on {
+  background-color: #3df865;
+  border-color: #3df665;
+}
+
+.e-switch-wrapper.custom-iOS {
+  width: 42px;
+  height: 24px;
+}
+
+.e-switch-wrapper.custom-iOS .e-switch-handle {
+  width: 20px;
+  height: 20px;
+}
+
+.e-switch-wrapper.custom-iOS .e-switch-handle.e-switch-active {
+  margin-left: -22px;
+} 
+</style>

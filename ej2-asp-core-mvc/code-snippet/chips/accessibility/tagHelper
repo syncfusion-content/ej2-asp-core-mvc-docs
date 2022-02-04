@@ -1,0 +1,26 @@
+<ejs-chiplist id="chip-avatar" enableDelete="true" selection="Single">
+        <e-chips>
+            <e-chip text="Andrew" avatarIconCss='andrew' enabled="true"></e-chip>
+            <e-chip text="Janet" avatarIconCss='janet' enabled="true"></e-chip>
+            <e-chip text="Laura" avatarIconCss='laura' enabled="true"></e-chip>
+            <e-chip text="Margaret" avatarIconCss='margaret' enabled="true"></e-chip>
+        </e-chips>
+  </ejs-chiplist>
+
+<style>
+  #chip-avatar .andrew {
+    background-image: url('./andrew.png')
+  }
+
+  #chip-avatar .margaret {
+    background-image: url('./margaret.png')
+  }
+
+  #chip-avatar .laura {
+    background-image: url('./laura.png')
+  }
+
+  #chip-avatar .janet {
+    background-image: url('./janet.png')
+  }
+</style>   

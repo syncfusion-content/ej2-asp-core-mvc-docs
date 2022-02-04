@@ -1,0 +1,12 @@
+@Html.EJS().DropDownList("customers").Placeholder("Select a customer").PopupHeight("200px").DataSource(dataManger =>
+            dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/").Adaptor("ODataV4Adaptor").CrossDomain(true)).ItemTemplate("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>").ValueTemplate("<span>${FirstName} - ${City}</span>").Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings
+            {
+                Value = "FirstName",
+            }).Query("new ej.data.Query().from('Employees').select(['FirstName', 'City', 'EmployeeID']).take(6)").Render()
+
+<style>
+    .city {
+        right: 15px;
+        position: absolute;
+    }
+</style>

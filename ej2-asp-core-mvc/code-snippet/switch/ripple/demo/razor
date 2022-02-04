@@ -1,0 +1,34 @@
+<div id='container'>
+    <table class='size'>
+        <tr>
+            <td class='lSize'><label for='switch1'>USB Tethering</label></td>
+            <td>
+                @Html.EJS().Switch("switch1").Render()
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<style>
+
+.e-switch-wrapper {
+  margin-top: 18px;
+}
+
+.size tr td {
+  padding: 10px;
+}
+
+.size .lSize {
+  padding-top: 24px;  
+  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif";
+  font-size: 13px;
+}
+
+.size .lSize label{
+  cursor: pointer;
+  user-select: none;
+}
+
+</style>

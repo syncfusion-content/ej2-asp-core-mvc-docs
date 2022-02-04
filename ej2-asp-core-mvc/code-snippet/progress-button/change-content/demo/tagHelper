@@ -1,0 +1,20 @@
+<ejs-progressbutton id="upload" content="Upload" enableProgress="true" cssClass="e-hide-spinner" duration="4000" begin="begin" end="end"></ejs-progressbutton>
+
+<script>
+    function begin() {
+        this.content = 'Uploading...';
+        this.cssClass = 'e-hide-spinner e-info';
+        this.dataBind();
+    }
+
+    function end() {
+        this.content = 'Success';
+        this.cssClass = 'e-hide-spinner e-success';
+        this.dataBind();
+        setTimeout(() => {
+            this.content = 'Upload';
+            this.cssClass = 'e-hide-spinner';
+            this.dataBind();
+        }, 500)
+    }
+</script>

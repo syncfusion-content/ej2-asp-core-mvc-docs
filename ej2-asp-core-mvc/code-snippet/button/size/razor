@@ -1,0 +1,12 @@
+@Html.EJS().Button("smallbtn").Content("SMALL").CssClass("e-small").Render()
+@Html.EJS().Button("normalbtn").Content("NORMAL").Render()
+
+
+<style>
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+</style>
+

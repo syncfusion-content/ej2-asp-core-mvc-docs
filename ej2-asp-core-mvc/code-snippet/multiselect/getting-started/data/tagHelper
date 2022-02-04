@@ -1,0 +1,2 @@
+<ejs-multiselect id="games" dataSource="@ViewBag.data" popupHeight="220px" popupWidth="300px" placeholder="Favorite Sports">  
+</ejs-multiselect>

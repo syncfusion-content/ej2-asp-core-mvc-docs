@@ -1,0 +1,17 @@
+@Html.EJS().DropDownButton("ddbtn").Content("Find & Select").Items((IEnumerable<object>)ViewBag.items).CssClass("e-custom").IconCss("e-icons e-search").IconPosition(Syncfusion.EJ2.SplitButtons.SplitButtonIconPosition.Top).Render()
+
+
+<style>
+    .e-search::before {
+        content: '\e993';
+    }
+    .e-dropdown-btn {
+        margin: 25px 5px 20px 20px;
+    }
+    .e-dropdown-btn.e-custom {
+        width: 85px;
+    }
+    .e-dropdown-btn.e-custom .e-search::before {
+        font-size: 40px;
+    }
+</style>

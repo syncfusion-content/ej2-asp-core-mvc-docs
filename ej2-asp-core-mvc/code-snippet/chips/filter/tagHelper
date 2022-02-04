@@ -1,0 +1,8 @@
+<ejs-chiplist id="chip-avatar" selection="Multiple">
+    <e-chips>
+      <e-chip text="Chai" enabled="true"></e-chip>
+      <e-chip text="Chang" enabled="true"></e-chip>
+      <e-chip text="Aniseed Syrup" enabled="true"></e-chip>
+      <e-chip text="Ikura" enabled="true"></e-chip>
+    </e-chips>
+</ejs-chiplist>

@@ -1,0 +1,20 @@
+
+<ul>
+    <li>
+        <ejs-radiobutton id="radio1" label="Small" name="size" checked="true" cssClass="e-small"></ejs-radiobutton>
+    </li>
+    <li>
+        <ejs-radiobutton id="radio2" label="Default" name="size"></ejs-radiobutton>
+    </li>
+</ul>
+
+<style>
+    .e-radio-wrapper {
+        margin-top: 18px;
+    }
+
+    li {
+        list-style: none;
+    }
+</style>
+

@@ -1,0 +1,7 @@
+<div id='web-data' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-multiselect id="games" placeholder="Select Country" query="new ej.data.Query().select(['CustomerID']).take(7)">
+            <e-data-manager url="/api/MultiSelect/" adaptor="WebApiAdaptor"></e-data-manager>
+        </ejs-multiselect>
+    </div>
+</div>

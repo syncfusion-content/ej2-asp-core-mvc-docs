@@ -1,0 +1,1 @@
+@Html.EJS().AutoComplete("games").Highlight(true).Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings { Value = "Name" }).Render()

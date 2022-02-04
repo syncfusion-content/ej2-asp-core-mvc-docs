@@ -1,0 +1,12 @@
+<ejs-button id="blockbtn" content="BLOCKBUTTON" cssClass="e-block"></ejs-button>
+<ejs-button id="primarybtn" content="BLOCKBUTTON" cssClass="e-block" isPrimary="true"></ejs-button>
+<ejs-button id="successbtn" content="BLOCKBUTTON" cssClass="e-block e-success"></ejs-button>
+
+<style>
+
+button {
+  margin: 25px 0;
+}
+
+</style>
+

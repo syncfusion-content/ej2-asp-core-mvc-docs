@@ -1,0 +1,15 @@
+@Html.EJS().MultiSelect("customers").Placeholder("Select a customer").Filtering("onfiltering").AllowFiltering(true).PopupHeight("200px").DataSource(obj => obj.Url("https://services.odata.org/V4/Northwind/Northwind.svc/").Adaptor(
+        "ODataV4Adaptor").CrossDomain(true)).Fields(new Syncfusion.EJ2.DropDowns.MultiSelectFieldSettings { Text = "ContactName", Value = "CustomerID" }).Query("new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6)").Render()
+
+<script>
+    function onfiltering(e) {
+        var CBObj = document.getElementById("customers").ej2_instances[0];
+        // load overall data when search key empty.
+        if (e.text == '' && e.text.length < 3) {
+            e.updateData(CBObj.dataSource);
+        }
+        let query = new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6);
+        query = (e.text !== '' && e.text.length >= 3) ? query.where('ContactName', 'startswith', e.text, true) : query;
+        e.updateData(CBObj.dataSource, query);
+    }
+</script>

@@ -1,0 +1,3 @@
+<ejs-dropdownlist id="dropdown" ejs-for="SelectedAccountNumber" dataSource="Model.BeneficiaryList" width="300" itemTemplate="@Html.Raw("<span>${PersonName.FullName} - ${AccountNumber}</span>")" valueTemplate="@Html.Raw("<span>${PersonName.FullName} - ${AccountNumber}</span>")">
+    <e-dropdownlist-fields text="PersonName.FullName" value="AccountNumber"></e-dropdownlist-fields>
+</ejs-dropdownlist>

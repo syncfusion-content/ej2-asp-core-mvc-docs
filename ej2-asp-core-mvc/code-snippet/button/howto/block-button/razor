@@ -1,0 +1,12 @@
+@Html.EJS().Button("blockbtn").Content("BLOCKBUTTON").CssClass("e-block").Render()
+@Html.EJS().Button("primarybtn").Content("BLOCKBUTTON").CssClass("e-block").IsPrimary(true).Render()
+@Html.EJS().Button("successbtn").Content("BLOCKBUTTON").CssClass("e-block e-success").Render()
+
+<style>
+
+button {
+  margin: 25px 0;
+}
+
+</style>
+

@@ -1,0 +1,13 @@
+@using Newtonsoft.Json;
+
+@Html.EJS().AutoComplete("project").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings { Text = "Name", Value = "Code" }).ItemTemplate("<span class='item'><span class='name'>${Name}</span>-<span class='code'>${Code}</span></span>").Filtering("filtering").Render()
+<script>
+    function filtering(e) {
+        var predicate = new ej.data.Predicate('Name', 'contains', e.text, true);
+        predicate = predicate.or('Code', 'contains', e.text);
+        var query = new ej.data.Query();
+        query = (e.text !== '' && e.value !== '') ? query.where(predicate) : query;
+        e.updateData(@Html.Raw(JsonConvert.SerializeObject(ViewBag.data)), query);
+    }
+
+</script>

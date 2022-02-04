@@ -1,0 +1,21 @@
+<ejs-button id="custom" cssClass="e-custom" content="CUSTOM"></ejs-button>
+
+<style>
+
+.e-custom {
+    border-radius: 0;
+    height: 30px;
+    width: 80px;
+}
+
+.e-custom, .e-custom:hover, .e-custom:focus, .e-custom:active {
+    background-color: #ff6e40;
+    color: #fff;
+}
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+</style>
+

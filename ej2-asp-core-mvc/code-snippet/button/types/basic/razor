@@ -1,0 +1,17 @@
+@{IDictionary<string, object> submit = new Dictionary<string, object>();
+  submit.Add("type", "submit");
+}
+@{IDictionary<string, object> reset = new Dictionary<string, object>();
+  reset.Add("type", "reset");
+}
+@Html.EJS().Button("submit").Content("Submit").HtmlAttributes(submit).Render()
+@Html.EJS().Button("reset").Content("Reset").HtmlAttributes(reset).Render()
+
+<style>
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+</style>
+

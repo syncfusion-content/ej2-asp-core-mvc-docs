@@ -1,0 +1,19 @@
+<ejs-button id="btn" content="Get Items"></ejs-button>
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="customers" query="new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6)" placeholder="Select a customer" popupHeight="200px">
+            <e-dropdownlist-fields text="ContactName" value="CustomerID"></e-dropdownlist-fields>
+            <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+        </ejs-dropdownlist>
+    </div>
+</div>
+<p id='event'> </p>
+<script>
+    document.getElementById('btn').onclick = () => {
+        var element = document.createElement('p');
+        document.getElementById("event").innerHTML = "";
+        var Obj = document.getElementById("customers").ej2_instances[0];
+        element.innerText = "Total items count: " + Obj.getItems().length;
+        document.getElementById('event').append(element);
+    };
+</script>

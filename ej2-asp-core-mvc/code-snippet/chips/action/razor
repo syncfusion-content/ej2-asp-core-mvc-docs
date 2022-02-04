@@ -1,0 +1,13 @@
+@Html.EJS().ChipList("chip-avatar").Chips(chip =>
+                        {
+                            chip.Text("Send a text").Enabled(true).Add();
+                            chip.Text("Set a remainder").Enabled(true).Add();
+                            chip.Text("Read my emails").Enabled(true).Add();
+                            chip.Text("Set alarm").Enabled(true).Add();
+                        }).Click("chipclick").Render()
+
+<script>
+    function chipclick(e){
+        alert('you have clicked ' + e.text);
+    }   
+</script>                 

@@ -8,16 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Internationalization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
-platform: ej2-asp-core-mvc
-control: Internationalization
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
 # Internationalization
 
 The `Internationalization` library provides support for formatting and parsing date and number objects

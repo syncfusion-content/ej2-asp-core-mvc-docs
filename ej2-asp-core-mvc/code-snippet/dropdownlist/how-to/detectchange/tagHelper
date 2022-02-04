@@ -1,0 +1,26 @@
+<ejs-button id="change" content="Change the value dynamically"></ejs-button>
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="employee" change="onChange" dataSource="@ViewBag.data" placeholder="Select a employee" index="2" popupHeight="220px">
+            <e-dropdownlist-fields value="Name" </e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
+<p id='event'> </p>
+<script>
+    document.getElementById('change').onclick = () => {
+        var dropObject = document.getElementById("employee").ej2_instances[0];
+        dropObject.value = 'Andrew Fuller';
+    };
+    function onChange(args) {
+        let element = document.createElement('p');
+        document.getElementById("event").innerHTML = "";
+        if (args.isInteracted) {
+            element.innerText = 'Changes happened by Interaction';
+        }
+        else {
+            element.innerText = 'Changes happened by programmatic';
+        }
+        document.getElementById('event').append(element);
+    }
+</script>

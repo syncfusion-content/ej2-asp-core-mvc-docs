@@ -8,16 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Compatible With Essential Js1 of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
-platform: ej2-asp-core-mvc
-control: Compatible With Essential Js1
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
 # Compatibility with Syncfusion ASP.NET Core (Essential JS 1)
 
 This documentation explains how to render  Essential JS 1 and Essential JS 2 Syncfusion components in a single page.

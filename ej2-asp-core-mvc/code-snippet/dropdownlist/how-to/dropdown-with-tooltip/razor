@@ -1,0 +1,29 @@
+@Html.EJS().DropDownList("country").Placeholder("Select a country").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "Name", Value = "Code" }).Render()
+
+<script>
+    var tooltip = new ej.popups.Tooltip({
+        // default content of tooltip
+        content: 'Loading...',
+        // set target element to tooltip
+        target: '.e-list-item',
+        // set position of tooltip
+        position: 'top center',
+        // bind beforeRender event
+        beforeRender: onBeforeRender
+    });
+    tooltip.appendTo('body');
+
+    function onBeforeRender(args) {
+        // get the target element
+        var listElement = document.getElementById('country');
+        var result = listElement.ej2_instances[0].dataSource;
+        var i;
+        for (i = 0; i < result.length; i++) {
+            if (result[i].Name === args.target.textContent) {
+                this.content = result[i].Name;
+                this.dataBind();
+                break;
+            }
+        }
+    }
+</script>

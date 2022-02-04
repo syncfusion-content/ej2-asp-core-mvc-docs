@@ -1,0 +1,32 @@
+<form>
+    <ul>
+        <li>
+            <ejs-checkbox id="cbox2" name="Sport" value="Cricket" label="Cricket" checked="true"></ejs-checkbox>
+        </li>
+        <li>
+            <ejs-checkbox id="cbox3" name="Sport" value="Hockey" label="Hockey" checked="true"></ejs-checkbox>
+        </li>
+        <li>
+            <ejs-checkbox id="cbox4" name="Sport" value="Tennis" label="Tennis"></ejs-checkbox>
+        </li>
+        <li>
+            <ejs-checkbox id="cbox1" name="Sport" value="Basketball" label="Basketball"></ejs-checkbox>
+        </li>
+        <li>
+            <ejs-button id="primarybtn" content="Submit" isPrimary="true"></ejs-button>
+        </li>
+    </ul>
+</form>
+<style>
+    .e-checkbox-wrapper {
+        margin-top: 18px;
+    }
+
+    button {
+        margin: 20px 0 0 5px;
+    }
+
+    li {
+        list-style: none;
+    }
+</style>

@@ -1,0 +1,38 @@
+<div class='control-wrapper'>
+    <div style='padding-top:75px;'>
+        <ejs-combobox id="customers" query="new ej.data.Query().from('Employees').select(['FirstName', 'City', 'EmployeeID']).take(6)" placeholder="Find an Employee" popupHeight="200px"
+                          headerTemplate="@Html.Raw("<span class='head'><span class='name'>Name</span><span class='city'>City</span></span>")"
+                          itemTemplate="@Html.Raw("<span class='item' ><span class='name'>${FirstName}</span><span class='city'>${City}</span></span>")">
+            <e-combobox-fields value="FirstName"></e-combobox-fields>
+            <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+        </ejs-combobox>
+    </div>
+</div>
+
+<style>
+    .head, .item {
+        display: table;
+        width: 100%;
+        margin: auto;
+    }
+
+    .head {
+        height: 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .name, .city {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+    }
+
+    .head .name {
+        text-indent: 16px;
+    }
+
+    .head .city {
+        text-indent: 10px;
+    }
+</style>

@@ -1,0 +1,36 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="games" dataSource="@ViewBag.data" placeholder="Select a game" index="2" popupHeight="220px">
+            <e-dropdownlist-fields value="Game"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
+
+<ejs-button id="first" content="Remove 0th item"></ejs-button>
+
+<script>
+    document.getElementById('first').onclick = () => {
+        // create DropDownList object
+        let obj = document.getElementById('games');
+        if (obj.ej2_instances[0].list) {
+            // Remove the selected value if 0th index selected
+            var dropObject = document.getElementById("games");
+            var dropDownListObject = dropObject.ej2_instances[0];
+            if (dropDownListObject.index === 0) {
+                dropDownListObject.value = null;
+                dropDownListObject.dataBind();
+            }
+            // remove first item in list
+            (obj.ej2_instances[0].list.querySelectorAll('li')[0]).remove();
+            if (!obj.ej2_instances[0].list.querySelectorAll('li')[0]) {
+                dropDownListObject.dataSource = [];
+                // enable the nodata template when no data source is empty.
+                obj.ej2_instances[0].list.classList.add('e-nodata');
+            }
+        }
+        else {
+            // remove first item in list
+            dropDownListObject.dataSource.splice(0, 1);
+        }
+    };
+</script>

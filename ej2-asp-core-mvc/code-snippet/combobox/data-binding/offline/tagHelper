@@ -1,0 +1,8 @@
+<div id='remote-data' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-combobox id="customers" placeholder="Select a customer" query="new ej.data.Query().select(['CustomerID']).take(7)">
+            <e-combobox-fields value="CustomerID"></e-combobox-fields>
+            <e-data-manager url="https://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Orders/" adaptor="ODataAdaptor" offline="true" crossDomain="true"></e-data-manager>
+        </ejs-combobox>
+    </div>
+</div>

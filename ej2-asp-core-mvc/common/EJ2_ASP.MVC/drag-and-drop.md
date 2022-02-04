@@ -8,17 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Drag And Drop of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
-platform: ej2-asp-core-mvc
-control: Drag And Drop
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-
 # Drag and Drop
 
 Drag and Drop is supported through two libraries of Essential JS 2. Those are [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable/). Draggable makes DOM to be dragged using mouse or touch gestures and Droppable mark required DOM as droppable zone.

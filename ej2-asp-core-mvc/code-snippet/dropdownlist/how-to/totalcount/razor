@@ -1,0 +1,24 @@
+@Html.EJS().Button("btn").Content("Get Items").Render()
+@Html.EJS().DropDownList("customers").Placeholder("Select a customer").PopupHeight("200px").DataSource(dataManger =>
+            dataManger.Url("http://services.odata.org/V4/Northwind/Northwind.svc/").Adaptor("ODataV4Adaptor").CrossDomain(true)).Fields(new DropDownListFieldSettings
+            {
+                Text = "ContactName",
+                Value = "CustomerID"
+            }).Query((string)ViewBag.query).Render()
+<script>
+ function actionComplete (e) {
+         // get total items count
+         console.log("Total items count: " + e.result.length);
+         var element = document.createElement('p');
+         element.innerText = "Total items count: " + e.result.length;
+         document.getElementById('event').append(element);
+    }
+    document.getElementById('btn').onclick = () => {
+        var Obj = document.getElementById("customers").ej2_instances[0];
+        // get items count using getItems method
+        console.log("Total items count: " + Obj.getItems().length);
+        let element = document.createElement('p');
+        element.innerText = "Total items count: " + Obj.getItems().length;
+        document.getElementById('event').append(element);
+    };
+</script>

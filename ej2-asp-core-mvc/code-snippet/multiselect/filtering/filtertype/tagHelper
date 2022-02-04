@@ -1,0 +1,22 @@
+<div id='remote-data' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-multiselect id="customers" query="new ej.data.Query().from('Customers').select(['ContactName'])" placeholder="Find a customer" allowFiltering="true" filtering="onfiltering" popupHeight="200px">
+            <e-multiselect-fields value="ContactName"></e-multiselect-fields>
+            <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+        </ejs-multiselect>
+    </div>
+</div>
+
+<script>
+    function onfiltering(e) {
+        var CBObj = document.getElementById("customers").ej2_instances[0];
+        // load overall data when search key empty.
+        if (e.text == '')
+            e.updateData(CBObj.dataSource);
+        else {
+            var query = new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6);
+            query = (e.text !== '') ? query.where('ContactName', 'endswith', e.text, true) : query;
+            e.updateData(CBObj.dataSource, query);
+        }
+    }
+</script>

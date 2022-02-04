@@ -1,0 +1,1 @@
+@Html.EJS().ComboBox("games").Autofill(true).Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.ComboBoxFieldSettings { Value = "Name" }).Render()

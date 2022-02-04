@@ -1,0 +1,38 @@
+<div id='container'>
+    <table class='size'>
+        <tr>
+            <td><label for='switch1'>USB Tethering</label></td>
+            <td>
+                <ejs-switch id="switch1"></ejs-switch>
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+    ej.base.enableRipple(true)
+
+    // Function to handle ripple effect for Switch with label.
+    document.querySelector('label').addEventListener('mouseup', rippleHandler);
+    document.querySelector('label').addEventListener('mousedown', rippleHandler);
+
+    function rippleHandler(e) {
+        var rippleSpan = this.parentElement.nextElementSibling.querySelector('.e-ripple-container');
+        if (rippleSpan) {
+            ejs.buttons.rippleMouseHandler(e, rippleSpan);
+        }
+    }
+</script>
+
+<style>
+ 
+    .size td {
+        padding: 10px;
+        font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif";
+        font-size: 13px;
+    }
+
+    .size td label {
+       cursor: pointer;
+       user-select: none;
+    }
+</style>

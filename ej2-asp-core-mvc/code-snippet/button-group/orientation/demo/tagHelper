@@ -1,0 +1,5 @@
+<div class='e-btn-group e-vertical'>
+    <ejs-button id="html" content="HTML"></ejs-button>
+    <ejs-button id="css" content="CSS"></ejs-button>
+    <ejs-button id="javascript" content="Javascript"></ejs-button>
+</div>

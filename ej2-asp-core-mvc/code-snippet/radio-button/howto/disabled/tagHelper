@@ -1,0 +1,22 @@
+<ul>
+    <li>
+        <ejs-radiobutton id="radio1" label="Option 1" name="default" checked="true"></ejs-radiobutton>
+    </li>
+    <li>
+        <ejs-radiobutton id="radio2" label="Option 2" name="default" disabled="true"></ejs-radiobutton>
+    </li>
+    <li>
+        <ejs-radiobutton id="radio3" label="Option 3" name="default"></ejs-radiobutton>
+    </li>
+</ul>
+
+<style>
+    .e-radio-wrapper {
+        margin-top: 18px;
+    }
+
+    li {
+        list-style: none;
+    }
+</style>
+

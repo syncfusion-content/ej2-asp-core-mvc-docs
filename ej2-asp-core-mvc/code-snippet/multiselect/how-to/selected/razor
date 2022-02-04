@@ -1,0 +1,28 @@
+<div id='iconList' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        @Html.EJS().MultiSelect("local").Width("300px").Value(ViewBag.val).Placeholder("Select countries").Mode(Syncfusion.EJ2.DropDowns.VisualMode.CheckBox).DataSource((IEnumerable<Object>)ViewBag.data).ActionBegin("onBegin").DataBound("onBound").Render()
+        <script>
+            var selected = [];
+            function onBegin(e) {
+                this.fields = {
+                    text: 'Name', value: 'Code', itemCreated: function (e) {
+                        var count = 0;
+                        if (count === 0) {
+                            for (let i = 0; i < e.dataSource.length; i++) {
+                                if (e.curData.isSelected == true)
+                                    itemSearch(e.curData.Code); //pass the corresponding value
+                            }
+                        }
+                    }
+                }
+            }
+            function itemSearch(e) {
+                if (selected.indexOf(e) == -1)
+                    selected.push(e);
+            }
+            function onBound(e) {
+                this.value = selected;
+            }
+        </script>
+    </div>
+</div>

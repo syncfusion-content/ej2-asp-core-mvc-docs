@@ -1,0 +1,8 @@
+<ejs-dropdownbutton id="ddbtn" items="ViewBag.items" cssClass="e-round-corner" content="Clipboard"></ejs-dropdownbutton>
+
+
+<style>
+    .e-round-corner {
+        border-radius: 5px;
+    }
+</style>

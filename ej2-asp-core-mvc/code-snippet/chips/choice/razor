@@ -1,0 +1,7 @@
+@Html.EJS().ChipList("chip-avatar").Selection(Selection.Single).Chips(chip =>
+                        {
+                            chip.Text("Small").Enabled(true).Add();
+                            chip.Text("Medium").Enabled(true).Add();
+                            chip.Text("Large").Enabled(true).Add();
+                            chip.Text("Extra Large").Enabled(true).Add();
+                        }).Render()

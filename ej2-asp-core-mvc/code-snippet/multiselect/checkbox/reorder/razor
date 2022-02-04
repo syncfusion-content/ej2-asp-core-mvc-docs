@@ -1,0 +1,1 @@
+@Html.EJS().MultiSelect("default").Placeholder("Select games").DataSource((IEnumerable<object>)ViewBag.data).Mode(Syncfusion.EJ2.DropDowns.VisualMode.CheckBox).EnableSelectionOrder(false).Fields(new Syncfusion.EJ2.DropDowns.MultiSelectFieldSettings { Text = "Game", Value = "Id" }).Render()
