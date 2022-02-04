@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Inputs
+    @Html.EJS().Slider("slider").Type(SliderType.MinRange).Value(ViewBag.value).Render()

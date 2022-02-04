@@ -1,0 +1,35 @@
+@Html.EJS().Menu("menu").Items(ViewBag.menuItems).BeforeItemRender("itemRender").Render()
+
+<script>
+function itemRender(args) {
+        if (args.item.id == 'settingIcon') {
+        args.element.setAttribute('title', 'Settings');
+      }
+    }
+</script>
+
+<style>
+    body {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.em-icons {
+    font-family: 'e-menu';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+}
+.e-file::before {
+    content: '\e886';
+}
+.e-menu-wrapper .e-menu .e-menu-item.e-menu-caret-icon .e-icons.e-caret {
+    display: none;
+  }
+  
+  .e-menu-wrapper .e-menu .e-menu-item.e-menu-caret-icon {
+    padding-right: 5px;
+  }
+</style>

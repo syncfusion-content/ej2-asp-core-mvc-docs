@@ -1,0 +1,28 @@
+@using Syncfusion.EJ2.Navigations
+
+<ejs-accordion id="defaultAccordion" clicked="clicked" expanding="beforeExpand">
+    <e-accordion-accordionitems>
+        <e-accordion-accordionitem expanded='true' header='ASP.NET' content='Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services.'></e-accordion-accordionitem>
+        <e-accordion-accordionitem header='ASP.NET MVC' content='The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller.'></e-accordion-accordionitem>
+        <e-accordion-accordionitem header='JavaScript' content='JavaScript (JS) is an interpreted computer programming language.It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.'></e-accordion-accordionitem>
+    </e-accordion-accordionitems>
+</ejs-accordion>
+
+<script type="text/javascript">
+    var clickEle;
+    function clicked(e) {
+        clickEle = e.originalEvent.target.closest('.e-acrdn-header');
+    }
+    function beforeExpand(e) {
+        var expandCount = this.element.querySelectorAll('.e-selected').length;
+        var ele = this.element.querySelectorAll('.e-selected')[0];
+        var tglIcon = ele;
+        if (ele) {
+            ele = ele.firstChild;
+            tglIcon = ele.querySelector('.e-tgl-collapse-icon');
+        }
+        if (expandCount === 1 && (ele === clickEle || tglIcon === clickEle)) {
+            e.cancel = true;
+        }
+    }
+</script>

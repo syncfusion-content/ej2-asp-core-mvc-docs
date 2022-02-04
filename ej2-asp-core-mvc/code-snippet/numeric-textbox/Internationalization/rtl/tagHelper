@@ -1,0 +1,106 @@
+<div class="content-wrapper">
+    <div class="divelement">
+        <ejs-numerictextbox id="numeric" format="n2" value="10" locale="de" placeholder="Geben Sie den Wert ein" floatLabelType='Always' enableRtl="true"></ejs-numerictextbox>
+    </div>
+    <div class="divelement">
+        <ejs-numerictextbox id="percent" format="p2" value="0.5" min="0" max="1" step="0.01" locale="de" placeholder="Geben Sie den Prozentsatz ein" floatLabelType='Always' enableRtl="true"></ejs-numerictextbox>
+    </div>
+    <div class="divelement">
+        <ejs-numerictextbox id="currency" format="c2" value="100" locale="de" placeholder="Geben Sie die Währung ein" floatLabelType='Always' currency="EUR" enableRtl="true"></ejs-numerictextbox>
+    </div>
+    <div class="wrapper">
+        <ejs-dropdownlist id="cultures" text="de" change="changeLocale" dataSource="ViewBag.cultureData" placeholder="Choose Culture" floatLabelType='Always' enableRtl="true">
+            <e-dropdownlist-fields text="CultureName"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
+<script>
+
+    function loadCultureFiles(name) {
+        var files = ['currencies.json', 'numbers.json'];
+        if (name === 'zh') {
+            files.push('currencyData.json');
+        }
+        var loader = ej.base.loadCldr;
+        var loadCulture = function () {
+            var val, ajax;
+            if (name === 'zh' && prop === files.length - 1) {
+                ajax = new ej.base.Ajax(location.origin + location.pathname + '/../../scripts/cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                ajax = new ej.base.Ajax(location.origin + location.pathname + '/../../scripts/cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+            ajax.onSuccess = function (value) {
+                val = value;
+            };
+            ajax.send();
+            loader(JSON.parse(val));
+
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture();
+        }
+    }
+    loadCultureFiles('de');
+    function changeLocale() {
+        var numeric = document.getElementById("numeric").ej2_instances[0];
+        var percent = document.getElementById("percent").ej2_instances[0];
+        var currency = document.getElementById("currency").ej2_instances[0];
+        var culture = document.getElementById('cultures').value;
+        numeric.locale = culture;
+        percent.locale = culture;
+        currency.locale = culture;
+        if (culture != 'en') {
+            loadCultureFiles(culture);
+        }
+        if (culture === 'zh') {
+            currency.currency = 'CNY';
+            numeric.placeholder = '输入值';
+            currency.placeholder = '输入货币';
+            percent.placeholder = '输入百分比';
+        }
+        else if (culture === 'de') {
+            currency.currency = 'EUR';
+            numeric.placeholder = 'Geben Sie den Wert ein';
+            currency.placeholder = 'Geben Sie die Währung ein';
+            percent.placeholder = 'Geben Sie den Prozentsatz ein';
+        }
+        else {
+            currency.currency = 'USD';
+            numeric.placeholder = 'Enter the value';
+            currency.placeholder = 'Enter the currency';
+            percent.placeholder = 'Enter the percentage';
+        }
+    }
+</script>
+<style>
+    .content-wrapper {
+        width: 40%;
+        margin: 0 auto;
+        min-width: 185px;
+        padding: 50px;
+    }
+
+    .divelement {
+        padding: 10px;
+    }
+
+    .wrapper {
+        width: 50%;
+        padding-top: 60px;
+        margin: 0 auto;
+    }
+</style>
+<script>
+    ej.base.enableRipple(true)
+    ej.base.L10n.load({
+        'en': {
+            'numerictextbox': { incrementTitle: 'Increment value', decrementTitle: 'Decrement value' }
+        },
+        'de': {
+            'numerictextbox': { incrementTitle: 'Wert erhöhen', decrementTitle: 'Dekrementwert' }
+        },
+        'zh': {
+            'numerictextbox': { incrementTitle: '增值', decrementTitle: '遞減值' }
+        }
+    });
+</script>

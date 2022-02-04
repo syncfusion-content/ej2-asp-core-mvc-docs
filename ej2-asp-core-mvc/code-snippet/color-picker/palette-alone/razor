@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Inputs
+<div class='wrap'>
+    <h4>Choose Color</h4>
+    @Html.EJS().ColorPicker("element").Mode(ColorPickerMode.Palette).ModeSwitcher(false).ShowButtons(false).Render()
+</div>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+</style>

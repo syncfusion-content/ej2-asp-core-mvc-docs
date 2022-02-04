@@ -1,0 +1,1 @@
+@Html.EJS().NumericTextBox("numeric").Value(16).Min(10).Max(100).ShowSpinButton(false).Render()

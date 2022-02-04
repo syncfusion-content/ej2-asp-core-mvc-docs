@@ -1,0 +1,24 @@
+<div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
+<ejs-contextmenu id="contextmenu" target="#contextmenutarget" items="@ViewBag.menuItems" beforeItemRender="beforeItemRender"></ejs-contextmenu>
+
+<script>
+
+    function beforeItemRender(args) {
+        if (!args.item.text) {
+            args.element.classList.add('e-separator');
+        }
+    }
+
+</script>
+
+<style>
+    #target {
+        border: 1px dashed;
+        height: 150px;
+        padding: 10px;
+        position: relative;
+        text-align: justify;
+        color: gray;
+        user-select: none;
+    }
+</style>

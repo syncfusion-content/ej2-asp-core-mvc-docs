@@ -1,0 +1,11 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" };
+}
+
+<ejs-uploader id="uploadFiles" asyncSettings="@asyncSettings">
+    <e-uploader-files>
+        <e-uploader-uploadedfiles name="Books" Size=500000 type=".png"></e-uploader-uploadedfiles>
+        <e-uploader-uploadedfiles name="Movies" Size=12000 type=".pdf"></e-uploader-uploadedfiles>
+        <e-uploader-uploadedfiles name="Study materials" size="500000" type=".docx"></e-uploader-uploadedfiles>
+    </e-uploader-files>
+</ejs-uploader>

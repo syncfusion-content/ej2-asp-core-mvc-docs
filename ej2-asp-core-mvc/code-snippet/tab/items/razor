@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Navigations;
+
+@Html.EJS().Tab("ej2Tab").Items(ViewBag.items).Render()
+
+<style>
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+</style>

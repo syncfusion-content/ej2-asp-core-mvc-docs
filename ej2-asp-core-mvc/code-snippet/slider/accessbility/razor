@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Inputs
+
+    @Html.EJS().Slider("minRangeObj").Value(30).Step(10).Type(SliderType.MinRange).ShowButtons(true).Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 20, SmallStep = 10, ShowSmallTicks = true }).Tooltip(new SliderTooltipData { IsVisible = true, Placement = TooltipPlacement.Before, ShowOn = TooltipShowOn.Always }).Render()
+    @Html.EJS().Slider("weekdaysObj").Min(0).Max(6).Step(1).Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 1 }).Tooltip(new SliderTooltipData { IsVisible = true, Placement = TooltipPlacement.Before }).RenderingTicks("renderingTicks").TooltipChange("onTooltipChange").Render()
+
+<script>
+function renderingTicks(args) {
+    // Weekdays Array
+    var daysArr = ['Sunday','Monday','Tuesday','Wednesday','Thrusday','Friday','Saturday'];
+    // Customizing each ticks text into weeksdays
+    args.value = daysArr[parseFloat(args.value)];
+}
+function onTooltipChange(args) {
+    // Customizing tooltip to display the Day (in numeric) of the week
+args.tooltipText = 'Day ' + (Number(args.tooltipText) + 1).toString();
+}
+</script>

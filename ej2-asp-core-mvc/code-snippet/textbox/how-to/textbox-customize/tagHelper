@@ -1,0 +1,74 @@
+<div class="control-section">
+    <div class="wrap">
+        <div class="e-input-group">
+            <input class="e-input" type="text" placeholder="First Name" />
+        </div>
+        <div class="e-float-input">
+            <input type="text" required />
+            <span class="e-float-line"></span>
+            <label class="e-float-text">Last Name</label>
+        </div>
+    </div>
+</div>
+<script>
+    ej.base.enableRipple(true);
+
+    // To get the all input fields and its container.
+
+    var inputElement = document.querySelectorAll('.e-input-group .e-input,.e-float-input.e-input-group input');
+
+    // Add 'e-input-focus' class to the input for achive ripple effect when focus on the input field.
+
+    for (var i = 0; i < inputElement.length; i++) {
+        inputElement[i].addEventListener('focus', function () {
+            this.parentNode.classList.add('e-input-focus');
+        });
+        inputElement[i].addEventListener('blur', function () {
+            this.parentNode.classList.remove('e-input-focus');
+        });
+    }
+</script>
+
+
+<style>
+
+    .wrap {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 20px 10px;
+        width: 260px;
+    }
+
+        .wrap label { /* csslint allow: adjoining-classes */
+            font-weight: bold;
+        }
+
+        .wrap .e-float-input { /* csslint allow: adjoining-classes */
+            margin: 30px 0;
+        }
+
+        .wrap .e-input-group { /* csslint allow: adjoining-classes */
+            margin: 25px 0;
+        }
+
+
+    /* To change the background-color and text-color for textbox */
+    .e-input-group,
+    .e-float-input,
+    .e-float-input.e-input-group { /* csslint allow: adjoining-classes */
+        background: yellow;
+        color: green;
+    }
+
+        /* To change the border-color of the textbox */
+        .e-input-group:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left),
+        .e-input-group:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left) { /* csslint allow: adjoining-classes */
+            border-color: #0800ff;
+        }
+
+        /* To change the border-color of the floating-label textbox */
+        .e-float-input input,
+        .e-float-input:hover:not(.e-input-group):not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled) input:not([disabled]) { /* csslint allow: adjoining-classes */
+            border-color: #0800ff;
+        }
+</style>

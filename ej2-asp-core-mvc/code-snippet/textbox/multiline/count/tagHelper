@@ -1,0 +1,24 @@
+
+
+<div class="multiline">
+    <ejs-textbox multiline="true" maxlength="25" placeholder="Enter your address" floatLabelType="Auto" id="default" input="inputHandler"></ejs-textbox>
+</div>
+<div id="numbercount"></div>
+<script>
+    function inputHandler(args) {
+        let word, addresscountRem, addressCount;
+        word = this.respectiveElement.value;
+        addressCount = word.length;
+        addresscountRem = document.getElementById('numbercount');
+        addresscountRem.textContent = addressCount + "/25";
+    }
+</script>
+<style>
+    .multiline {
+        margin-top: 60px;
+        width: 20%;
+    }
+    #numbercount{
+        margin-left: 190px;
+    }
+</style>

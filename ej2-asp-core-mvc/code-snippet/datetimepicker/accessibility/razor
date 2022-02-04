@@ -1,0 +1,10 @@
+@Html.EJS().DateTimePicker("datetimepicker").Placeholder("Select a date and time").Render()
+
+<script>
+    document.onkeyup = function (e) {
+        if (e.altKey && e.keyCode === 84 /* t */) {
+            // press alt+t to focus the component.
+            document.getElementById("datetimepicker").ej2_instances[0].element.focus();
+        }
+    }
+</script>

@@ -1,0 +1,9 @@
+<ejs-treeview id="treedata" allowMultiSelection="true" selectedNodes="ViewBag.selectedNodes" nodeSelected="nodeSelected">
+    <e-treeview-fields dataSource="ViewBag.dataSource" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded" selected="is_selected"></e-treeview-fields>
+</ejs-treeview>
+
+<script>
+    function nodeSelected(args) {
+        alert("The selected node's id: " + this.selectedNodes); // To alert the selected node's id.
+    }
+</script>

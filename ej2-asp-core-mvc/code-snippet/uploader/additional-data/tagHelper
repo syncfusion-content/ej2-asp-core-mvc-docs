@@ -1,0 +1,16 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" };
+}
+
+<div class="control_wrapper">
+    <div id='preview'></div>
+    <ejs-uploader id="fileupload" uploading="onFileUpload" asyncSettings="@asyncSettings"> </ejs-uploader>
+</div>
+<script>
+
+    function onFileUpload(args) {
+        debugger
+        args.customFormData = [{ 'name': 'Syncfusion INC' }];
+    }
+
+</script>

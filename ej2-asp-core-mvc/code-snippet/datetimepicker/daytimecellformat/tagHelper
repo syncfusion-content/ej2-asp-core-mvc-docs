@@ -1,0 +1,11 @@
+<ejs-datetimepicker id="datetimepicker" placeholder="Select a date and time" renderDayCell="onRenderCell"></ejs-datetimepicker>
+
+<script>
+    function onRenderCell(args) {
+        if (args.date.getDay() == 0 || args.date.getDay() == 6) {
+            //sets isDisabled to true to disable the date.
+            args.isDisabled = true;
+        }
+    }
+
+</script>

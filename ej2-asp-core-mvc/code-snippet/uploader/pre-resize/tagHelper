@@ -1,0 +1,176 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" };
+}
+<div id='dropArea'>
+    <span id='drop' class="droparea"> Drop files here or <a href="" id='browse'><u>Browse</u></a> </span>
+    <ejs-uploader id="UploadFiles" allowedExtensions="image/*" removing="onFileRemove" dropArea="#dropArea" asyncSettings="@asyncSettings" selected="onFileSelect" success="onUploadSuccess" failure="onUploadFailed" progress="onFileUpload"></ejs-uploader>
+</div>
+
+<script>
+    var uploadObj;
+    window.onload = function () {
+        uploadObj = document.getElementById("UploadFiles").ej2_instances[0];
+    }
+    function onFileRemove(args) {
+        args.postRawFile = false;
+    }
+    var dropElement = document.getElementsByClassName('control-fluid')[0];
+    var filesDetails = [];
+    document.getElementById('browse').onclick = function () {
+        document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button').click();
+        return false;
+    };
+    var parentElement; var proxy; var progressbarContainer; var newImage;
+    function onFileSelect(args) {
+        args.cancel = true;
+        proxy = this;
+        if (ej.base.isNullOrUndefined(document.getElementById('dropArea').querySelector('.upload-list-root'))) {
+            parentElement = ej.base.createElement('div', { className: 'upload-list-root' });
+            parentElement.appendChild(ej.base.createElement('ul', { className: 'ul-element' }));
+            document.getElementById('dropArea').appendChild(parentElement);
+        }
+        for (var i = 0; i < args.filesData.length; i++) {
+            formSelectedData(args.filesData[i], this);    // create the LI element for each file Data
+        }
+        this.filesData = this.filesData.concat(args.filesData);
+        var file = args.filesData[0].rawFile;
+        var width;
+        var height;
+        var img = document.createElement("img");
+        var reader = new FileReader();
+        reader.onload = function (e) { img.src = e.target.result; };
+        reader.readAsDataURL(file);
+        var imgs = new Image();
+        img.onload = function () {
+            width = this.width;
+            height = this.height;
+            onNewImg(height, width, img, args.filesData[0]);
+        };
+        imgs.src = img.src;
+    }
+
+    // to create canvas and update our custom dimensions
+    function onNewImg(height, width, img, file) {
+        var canvas = document.createElement("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0);
+        var MAX_WIDTH = 1000;
+        var MAX_HEIGHT = 600;
+        if (width > height) {
+            if (width > MAX_WIDTH) {
+                height *= MAX_WIDTH / width;
+                width = MAX_WIDTH;
+            }
+        }
+        else {
+            if (height > MAX_HEIGHT) {
+                width *= MAX_HEIGHT / height;
+                height = MAX_HEIGHT;
+            }
+        }
+        canvas.width = width;
+        canvas.height = height;
+        var ctx1 = canvas.getContext("2d");
+        ctx1.drawImage(img, 0, 0, width, height);
+        newImage = canvas.toDataURL("image/png");
+        var blobBin = atob(newImage.split(',')[1]);
+        var array = [];
+        for (var i = 0; i < blobBin.length; i++) {
+            array.push(blobBin.charCodeAt(i));
+        }
+        var newBlob = new Blob([new Uint8Array(array)], { type: 'image/png' });
+        var newFile = createFile(newBlob, file);
+        uploadObj.upload(newFile, true);
+    }
+    // To create File object to upload
+    function createFile(image, file) {
+        var newFile = {
+            name: file.name,
+            rawFile: image,
+            size: image.size,
+            type: file.type,
+            validationMessage: '',
+            statusCode: '1',
+            status: 'Ready to Upload'
+        };
+        return newFile;
+    }
+
+    function formSelectedData(selectedFiles, proxy) {
+        var liEle = ej.base.createElement('li', { className: 'file-lists', attrs: { 'data-file-name': selectedFiles.name } });
+        liEle.appendChild(ej.base.createElement('span', { className: 'file-name ', innerHTML: selectedFiles.name }));
+        liEle.appendChild(ej.base.createElement('span', { className: 'file-size ', innerHTML: proxy.bytesToSize(selectedFiles.size) }));
+        if (selectedFiles.status === proxy.localizedTexts('readyToUploadMessage')) {
+            progressbarContainer = ej.base.createElement('span', { className: 'progress-bar-container' });
+            progressbarContainer.appendChild(ej.base.createElement('progress', { className: 'progress', attrs: { value: '0', max: '100' } }));
+            liEle.appendChild(progressbarContainer);
+        }
+        else {
+            liEle.querySelector('.file-name').classList.add('upload-fails');
+        }
+        var closeIconContainer = ej.base.createElement('span', { className: 'e-icons close-icon-container' });
+        ej.base.EventHandler.add(closeIconContainer, 'click', removeFiles, proxy);
+        liEle.appendChild(closeIconContainer);
+        document.querySelector('.ul-element').appendChild(liEle);
+        proxy.fileList.push(liEle);
+    }
+    function onFileUpload(args) {
+        var li = document.getElementById('dropArea').querySelector('[data-file-name="' + args.file.name + '"]');
+        ej.base.EventHandler.remove(li.querySelector('.close-icon-container'), 'click', removeFiles);
+        var progressValue = Math.round((args.e.loaded / args.e.total) * 100);
+        if (!isNaN(progressValue)) {
+            li.getElementsByTagName('progress')[0].value = progressValue;   // Updating the progress bar value
+        }
+    }
+    function onUploadSuccess(args) {
+        var _this = this;
+        var spinnerElement = document.getElementById('dropArea');
+        var li = document.getElementById('dropArea').querySelector('[data-file-name="' + args.file.name + '"]');
+        if (!ej.base.isNullOrUndefined(li.querySelector('.progress-bar-container'))) {
+            ej.base.detach(li.querySelector('.progress-bar-container'));
+        }
+        if (args.operation === 'upload') {
+            li.querySelector('.file-name').classList.add('upload-success');
+            li.querySelector('.close-icon-container').classList.add('delete-icon');
+            (li.querySelector('.close-icon-container')).onclick = function () {
+                generateSpinner(_this.uploadWrapper);
+            };
+            li.querySelector('.close-icon-container').onkeydown = function (e) {
+                if (e.keyCode === 13) {
+                    generateSpinner(e.target.closest('.e-upload'));
+                }
+            };
+        }
+        if (args.operation === 'remove') {
+            this.filesData.splice(this.fileList.indexOf(li), 1);
+            this.fileList.splice(this.fileList.indexOf(li), 1);
+            ej.base.detach(li);
+            ej.popups.hideSpinner(spinnerElement);
+            ej.base.detach(spinnerElement.querySelector('.e-spinner-pane'));
+        }
+        ej.base.EventHandler.add(li.querySelector('.close-icon-container'), 'click', removeFiles, this);
+        console.log("The selected file resized and uploaded successfully");
+    }
+    function generateSpinner(targetElement) {
+        ej.popups.createSpinner({ target: targetElement, width: '25px' });
+        ej.popups.showSpinner(targetElement);
+    }
+    function onUploadFailed(args) {
+        var li = document.getElementById('dropArea').querySelector('[data-file-name="' + args.file.name + '"]');
+        ej.base.EventHandler.add(li.querySelector('.close-icon-container'), 'click', removeFiles, this);
+        li.querySelector('.file-name ').classList.add('upload-fails');
+        if (args.operation === 'upload') {
+            ej.base.detach(li.querySelector('.progress-bar-container'));
+        }
+    }
+    function removeFiles(args) {
+        var removeFile = this.filesData[this.fileList.indexOf(args.currentTarget.parentElement)];
+        var statusCode = removeFile.statusCode;
+        if (statusCode === '2') {
+            this.remove(removeFile, true);
+        } else {
+            var li = args.currentTarget.parentElement;
+            ej.base.detach(li);
+        }
+    }
+</script>

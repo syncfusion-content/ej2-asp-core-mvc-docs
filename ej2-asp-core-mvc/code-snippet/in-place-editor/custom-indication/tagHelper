@@ -1,0 +1,41 @@
+
+<div id='container'>
+    <span class="content-title"> Enter your name: </span>
+    <ejs-inplaceeditor id="element" mode="Inline" model="ViewBag.model" value="ViewBag.value" actionSuccess="actionSuccess">
+    </ejs-inplaceeditor>
+</div>
+
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    tr td:first-child {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .sample-td {
+        padding-top: 10px;
+        min-width: 230px;
+        height: 100px;
+    }
+
+    .e-inplaceeditor .e-editable-value-wrapper .e-editable-value.e-send-error {
+        color: red;
+    }
+</style>
+<script>
+function actionSuccess(e) {
+    var editObj = document.getElementById('element').ej2_instances[0];
+    var pk = e.data['PrimaryKey'];
+    if (ej.base.isNullOrUndefined(pk) || pk === '') {
+        document.querySelector('.e-editable-value').classList.add('e-send-error');
+    }
+}
+</script>

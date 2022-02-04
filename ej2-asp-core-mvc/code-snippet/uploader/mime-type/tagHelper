@@ -1,0 +1,17 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" };
+}
+
+<div class="col-lg-8 control-section">
+    <div class="control_wrapper">
+        <ejs-uploader id="UploadFiles" dropArea=".control-fluid" asyncSettings="@asyncSettings" autoUpload="false" uploading="onBeforeUpload">
+        </ejs-uploader>
+    </div>
+</div>
+
+<script>
+    function onBeforeUpload(args) {
+        // get the file MIME type
+        alert("File MIME type is: " + args.fileData.rawFile.type);
+    }
+</script>

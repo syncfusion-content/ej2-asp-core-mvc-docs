@@ -1,0 +1,54 @@
+<div class='wrap'>
+    <div id="preview"></div>
+    <h4>Select Color</h4>
+    <ejs-colorpicker id="element" mode="Palette" modeSwitcher="false" inline="true" showButtons="false" columns="4" presetColors="@ViewBag.customColors" beforeTileRender="tileRender" change="onChange"></ejs-colorpicker>
+</div>
+
+<style>
+.e-container {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.e-container .e-palette .e-custom-tile {
+  border: 0;
+  color: #fff;
+  height: 36px;
+  font-size: 18px;
+  width: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+.e-container .e-custom-palette.e-palette-group {
+  height: 182px;
+}
+.e-container .e-palette .e-custom-tile.e-selected::before {
+  content: '\e933';
+}
+.e-container .e-palette .e-custom-tile.e-selected {
+  outline: none;
+}
+.wrap {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+}
+#preview {
+  background-color: #ba68c8;
+  height: 50px;
+  width: 100%;
+}
+</style>
+
+<script>
+    // Triggers while selecting colors from palette.
+    function onChange(args) {
+        document.getElementById('preview').style.backgroundColor = args.currentValue.hex;
+    }
+    // Triggers before rendering each palette tile.
+    function tileRender(args) {
+        args.element.classList.add("e-icons");
+        args.element.classList.add("e-custom-tile");
+    }
+</script>

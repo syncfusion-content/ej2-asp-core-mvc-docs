@@ -1,0 +1,9 @@
+<div class="multiline">
+    <ejs-textbox multiline="true" placeholder="Enter your address" value="Mr. Dodsworth Dodsworth, System Analyst, Studio 103" id="default"></ejs-textbox>
+</div>
+<style>
+    .multiline{
+        margin-top: 60px;
+        width: 20%;
+    }
+</style>

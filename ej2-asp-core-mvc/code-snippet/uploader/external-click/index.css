@@ -1,0 +1,17 @@
+    .control_wrapper {
+        max-width: 500px;
+        margin: auto;
+    }
+    #dropArea {
+        border: 1px dashed #c3c3cc;
+        text-align: center;
+        padding: 20px 0 10px;
+    }
+
+    .e-file-select-wrap {
+        display: none;
+    }
+
+    .control_wrapper .e-upload .e-upload-drag-hover {
+        margin: 0;
+    }

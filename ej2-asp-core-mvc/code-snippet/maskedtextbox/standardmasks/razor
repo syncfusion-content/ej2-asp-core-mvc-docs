@@ -1,0 +1,5 @@
+@Html.EJS().MaskedTextBox("mask1").Mask("#####").Placeholder("Mask ##### (ex: 012+-)").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
+@Html.EJS().MaskedTextBox("mask2").Mask("LLLLLL").Placeholder("Mask LLLLLL (ex: Sample)").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
+@Html.EJS().MaskedTextBox("mask3").Mask("&&&&&").Placeholder("Mask &&&&& (ex: A12@#)").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
+@Html.EJS().MaskedTextBox("mask4").Mask(">LLL<LLL").Placeholder("Mask >LLL<LL (ex: SAMple)").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
+@Html.EJS().MaskedTextBox("mask5").Mask("\\A999").Placeholder("Mask \\A999 (ex: A321)").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()

@@ -1,0 +1,25 @@
+<form id="form-element" class="form-vertical">
+    <div class="form-group">
+        <div class="col-sm-6">
+            <ejs-datepicker id="datevalue" value="@ViewBag.value"></ejs-datepicker>
+        </div>
+    </div>
+</form>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var options = {
+            rules: {
+                //must specify the name attribute value in rules section
+                'datevalue': { required: true }
+            },
+            customPlacement: (inputElement, errorElement) => {
+                //to place the error message in custom position
+                //inputElement - target element where the error text will be appended
+                //errorElement - error text which will be displayed.
+                inputElement.parentElement.parentElement.appendChild(errorElement);
+            }
+        };
+        var formObject = new ej.inputs.FormValidator('#form-element', options);
+    });
+
+</script>

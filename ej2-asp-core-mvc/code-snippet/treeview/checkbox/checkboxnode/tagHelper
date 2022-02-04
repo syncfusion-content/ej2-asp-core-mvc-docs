@@ -1,0 +1,8 @@
+<ejs-treeview id="treedata" showCheckBox="true" checkedNodes="ViewBag.checkedNodes" nodeChecked="nodeChecked">
+     <e-treeview-fields dataSource="ViewBag.dataSource" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded"></e-treeview-fields>
+</ejs-treeview>
+<script>
+    function nodeChecked(args) {
+        alert("The checked node's id: " + this.checkedNodes); // To alert the checked node's id.
+    }
+</script>

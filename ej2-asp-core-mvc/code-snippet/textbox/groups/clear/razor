@@ -1,0 +1,8 @@
+<div class="control-section">
+    <div class="control_wrapper accordion-control-section">
+        <h4> TextBox with clear button </h4>
+        @Html.EJS().TextBox("firstname").Placeholder("First Name").ShowClearButton(true).FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Never).Render()
+        <h4> Floating TextBox with clear button </h4>
+        @Html.EJS().TextBox("lastname").Placeholder("Last Name").ShowClearButton(true).FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).Render()
+    </div>
+</div>

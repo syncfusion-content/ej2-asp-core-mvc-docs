@@ -1,0 +1,45 @@
+
+<div id='container'>
+    <table class="table-section">
+        <tr>
+            <td> ShowButtons: </td>
+            <td>
+                <ejs-checkbox id="enableBtn" checked="true" change="onChange" label="Show"></ejs-checkbox>
+            </td>
+        </tr>
+        <tr>
+            <td class="sample-td"> Enter your name: </td>
+            <td class="sample-td">
+                <ejs-inplaceeditor id="element" model="ViewBag.modalData" mode="Inline" value="ViewBag.textValue" saveButton="ViewBag.saveButton" cancelButton="ViewBag.cancelButton">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<style>
+
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    tr td:first-child {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .sample-td {
+        padding-top: 10px;
+        min-width: 230px;
+        height: 100px;
+    }
+</style>
+
+<script>
+    function onChange(e) {
+        var editObj = document.getElementById('element').ej2_instances[0];
+        editObj.showButtons = e.checked;
+        editObj.dataBind();
+    }
+</script>

@@ -1,0 +1,3 @@
+ <ejs-treeview id="treedata" showCheckBox="true">
+                <e-treeview-fields dataSource="ViewBag.dataSource" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded"></e-treeview-fields>
+    </ejs-treeview>

@@ -1,0 +1,12 @@
+<ejs-datepicker id="datepicker" close="onClose" placeholder="Choose a Date"></ejs-datepicker>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+     var datepickerObject = document.getElementById("datepicker").ej2_instances[0];
+       datepickerObject.show();
+    });
+    function onClose (args) {
+        // prevent the popup close
+        args.preventDefault();
+    }
+</script>

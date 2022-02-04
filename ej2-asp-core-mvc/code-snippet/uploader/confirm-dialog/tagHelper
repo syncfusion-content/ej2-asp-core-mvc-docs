@@ -1,0 +1,38 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" };
+}
+<div class="control_wrapper">
+    <ejs-uploader id="UploadFiles" removing="onremove" asyncSettings="@asyncSettings">
+    </ejs-uploader>
+    <ejs-dialog id="dialog" target="body" visible="false" width="250px" content="Confirm to remove the file?">
+        <e-dialog-buttons>
+            <e-dialog-dialogbutton buttonModel="ViewBag.button" click="Close"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="ViewBag.button1" click="onClick"></e-dialog-dialogbutton>
+        </e-dialog-buttons>
+    </ejs-dialog>
+
+</div>
+<script>
+    var removeFile = [], dialog;
+
+    window.onload = function () {
+        dialog = document.getElementById("dialog").ej2_instances[0];
+    }
+
+    function onremove(args) {
+        emoveFile = [];
+        args.cancel = true;
+        removeFile.push(args.filesData);
+        dialog.show();
+    }
+
+    function onClick(args) {
+        var uploadObj = document.getElementById("UploadFiles").ej2_instances[0];
+        dialog.hide();
+        uploadObj.remove(removeFile[0], false, true);
+    }
+
+    function Close() {
+        dialog.hide();
+    }
+</script>

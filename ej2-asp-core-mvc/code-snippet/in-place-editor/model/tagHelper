@@ -1,0 +1,4 @@
+<div style="width:300px;margin:0 auto;">
+    <ejs-inplaceeditor id="element" type="Date" value="ViewBag.dateValue" model="ViewBag.dateModelData">
+    </ejs-inplaceeditor>
+</div>

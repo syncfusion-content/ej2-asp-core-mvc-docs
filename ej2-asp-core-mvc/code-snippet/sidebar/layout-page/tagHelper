@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - layout_page</title>
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <ejs-sidebar id="sidebar-menu" width="290px" mediaQuery="(min-width:650px)">
+        <e-content-template>
+            <div class="sidebar-header header-cover" style="background-color: #1694CA">
+                <div class="image-container">
+                    <div class="sidebar-image">
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <div class="sidebar-brand">
+                        Syncfusion Components
+                    </div>
+                </div>
+                <div style="padding:0 5px 10px 5px">
+                    <div class="searchbox">
+                        <input id="search-by" type="text" placeholder="Search Components">
+                        <span data-search-clear=""><i class="fa fa-search" style="font-size:20px"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="control-section">
+                <div class="control_wrapper accordion-control-section">
+                    <ejs-accordion id="accordion">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="Navigations" content="#navigation" expanded=true></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Layouts" content="#layouts"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Inputs" content="#inputs"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+                <ul id="navigation" style="display:none">
+                    <li><a href="/Home/Index">Sidebar</a></li>
+                    <li><a href="/Home/ContextMenu">ContextMenu</a></li>
+                    <li><a href="/Home/Accordion">Accordion</a></li>
+                </ul>
+                <ul id="layouts" style="display:none">
+                    <li><a href="/Home/Avatar">Avatar</a></li>
+                    <li><a href="/Home/Card">Card</a></li>
+                    <li><a href="/Home/Splitter">Splitter</a></li>
+                </ul>
+                <ul id="inputs" style="display:none">
+                    <li><a href="/Home/InputMask">Input Mask</a></li>
+                    <li><a href="/Home/TextBox">TextBox</a></li>
+                </ul>
+            </div>
+        </e-content-template>
+    </ejs-sidebar>
+    <div id="body_content" class="maincontent">
+        <div style="padding: 1.5vw 3vw;">
+            @RenderBody()
+        </div>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+    <ejs-scripts></ejs-scripts>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

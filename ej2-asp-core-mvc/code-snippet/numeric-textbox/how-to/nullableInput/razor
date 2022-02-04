@@ -1,0 +1,13 @@
+@Html.EJS().NumericTextBox("numeric").Created("onCreate").Blur("onBlur").Render()
+<script>
+    function onCreate(args) {
+        if (this.value == null) {
+            this.value = 0;
+        }
+    }
+    function onBlur(args) {
+        if (args.value == null) {
+            numeric.value = 0;
+        }
+    }
+</script>

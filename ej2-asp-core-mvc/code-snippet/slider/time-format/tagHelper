@@ -1,0 +1,17 @@
+     <ejs-slider id="default" step="3600000" min="1373693400000" max="1373715000000" showButtons="true" tooltipChange="tooltipChangeHandler" renderingTicks="renderingTicksHandler">
+        <e-slider-tooltipdata isVisible="true" placement="Before"> </e-slider-tooltipdata>
+        <e-slider-ticksdata placement="After" largeStep="7200000" renderingTicks="renderingTicksHandler"></e-slider-ticksdata>
+     </ejs-slider>
+
+<script type="text/javascript">
+    function tooltipChangeHandler(args) {
+        var totalMiliSeconds = Number(args.text);
+        var custom = { hour: '2-digit', minute: '2-digit' };
+        args.text = new Date(totalMiliSeconds).toLocaleTimeString("en-us", custom);
+    }
+    function renderingTicksHandler(args) {
+        var totalMiliSeconds = Number(args.value);
+        var custom = { hour: '2-digit', minute: '2-digit' };
+        args.text = new Date(totalMiliSeconds).toLocaleTimeString("en-us", custom);
+    }
+</script>

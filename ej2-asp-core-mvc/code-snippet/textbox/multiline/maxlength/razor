@@ -1,0 +1,21 @@
+<label>Add max length attribute through inline</label>
+<div class="multiline">
+    @Html.EJS().TextBox("length").Multiline(true).Placeholder("Enter your address").FloatLabelType(FloatLabelType.Auto).Render()
+</div>
+<label>Add maxlength attribute through addAttributes method</label>
+<div class="multiline">
+    @Html.EJS().TextBox("attr").Multiline(true).Placeholder("Enter your address").FloatLabelType(FloatLabelType.Auto).Render()
+</div>
+@Html.EJS().Button("primarybtn").Content("Add max length").Render()
+<script>
+    document.getElementById("primarybtn").addEventListener('click', function () {
+        var textareaObj = document.getElementById('attr').ej2_instances[0];
+        textareaObj.addAttributes({ maxlength: 15 });
+    })
+</script>
+<style>
+    .multiline {
+        margin: 30px auto;
+        width: 20%;
+    }
+</style>

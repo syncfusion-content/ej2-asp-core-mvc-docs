@@ -1,0 +1,36 @@
+<div class='wrap'>
+    <div id="preview"></div>
+    <h4>Select color</h4>
+    @Html.EJS().ColorPicker("element").Mode(Syncfusion.EJ2.Inputs.ColorPickerMode.Palette).Created("onCreated").NoColor(true).Value("#ba68c8").ModeSwitcher(false).ShowButtons(false).Change("onChange").Render()
+</div>
+
+<script>
+    var preview;
+    function onCreated() {
+        preview = document.getElementById("preview");
+        // Initially set the default color and value to preview.
+        preview.style.backgroundColor = "#ba68c8";
+        preview.textContent = "#ba68c8";
+    }
+    // Triggers while selecting colors from palette.
+    function onChange(args) {
+        preview.style.backgroundColor = args.currentValue.hex;
+        preview.textContent = args.currentValue.hex ? args.currentValue.hex : 'No color';
+    }
+</script>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+
+    #preview {
+        border: 1px solid;
+        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+</style>

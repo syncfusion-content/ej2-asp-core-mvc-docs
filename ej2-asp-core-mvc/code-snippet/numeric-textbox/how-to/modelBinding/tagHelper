@@ -1,0 +1,26 @@
+<div class="numeric-section">
+    <form method="post">
+        <ejs-numerictextbox id="numeric" name="value" ejs-for="@Model.value"></ejs-numerictextbox>
+            <div id="errorMessage">
+                <span asp-validation-for="value"></span>
+            </div>
+            <div id="submitbutton">
+                <ejs-button id="submitButton" content="Submit"></ejs-button>
+            </div>
+    </form>
+</div>
+<style>
+    .e-float-input.e-numeric.e-input-group {
+        margin-top: 40px;
+    }
+
+    #errorMessage {
+        color: red;
+        text-align: center
+    }
+
+    #submitbutton {
+        margin: 10px auto;
+        text-align: center;
+    }
+</style>

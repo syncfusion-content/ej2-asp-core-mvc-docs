@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.Navigations;
+
+<ejs-toolbar id="defaultToolbar">
+    <e-toolbar-items>
+        <e-toolbar-item text="Cut"></e-toolbar-item>
+        <e-toolbar-item text="Copy"></e-toolbar-item>
+        <e-toolbar-item type="Separator"></e-toolbar-item>
+        <e-toolbar-item text="Paste"></e-toolbar-item>
+        <e-toolbar-item type="Separator"></e-toolbar-item>
+        <e-toolbar-item text="Undo"></e-toolbar-item>
+        <e-toolbar-item text="Redo"></e-toolbar-item>
+    </e-toolbar-items>
+</ejs-toolbar>

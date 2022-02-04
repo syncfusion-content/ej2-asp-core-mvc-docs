@@ -1,0 +1,46 @@
+@using Syncfusion.EJ2.InPlaceEditor;
+
+<div id='container'>
+    <table class="table-section">
+        <tr>
+            <td class="col-lg-6 control-title"> Default Error Message </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("textBox").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.Date).Name("Today").EmptyText("dd/mm/yyyy").Model(ViewBag.dateModel).ValidationRules(ViewBag.validationRules).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> Customized Error Message </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("date").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.Date).Name("TodayCustom").EmptyText("dd/mm/yyyy").Model(ViewBag.dateModel).ValidationRules(ViewBag.ValidationModel).Validating("validating").Render()
+            </td>
+        </tr>
+    </table>
+</div>
+
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    td {
+        padding: 20px 0;
+        min-width: 230px;
+        height: 100px;
+    }
+
+    .control-title {
+        font-weight: 600;
+        padding-right: 20px;
+        text-align: right;
+    }
+</style>
+<script>
+    function validating(e) {
+        e.errorMessage = 'Field should not be empty';
+    }
+</script>

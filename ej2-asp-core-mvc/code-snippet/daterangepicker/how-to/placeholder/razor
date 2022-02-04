@@ -1,0 +1,1 @@
+@Html.EJS().DateRangePicker("daterangepicker").Placeholder("Choose a range").Render()

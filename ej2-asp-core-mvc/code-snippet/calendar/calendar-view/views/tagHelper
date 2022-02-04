@@ -1,0 +1,1 @@
+<ejs-calendar id="calendar" value="@ViewBag.value" start="Year"></ejs-calendar>

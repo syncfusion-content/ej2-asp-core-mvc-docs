@@ -1,0 +1,53 @@
+<form id="form-element">
+    <ejs-maskedtextbox id="mask1" name="mask_value" mask="000-000-0000" placeholder="Mobile Number" floatLabelType="Always"></ejs-maskedtextbox>
+    <ejs-button id="submit_btn" content="Button"></ejs-button>
+</form>
+
+<script>
+    // checks the length of mask value and returns corresponding boolean value
+    var customFn = function (args) {
+        var argsLength = args.element.ej2_instances[0].value.length;
+        if (argsLength != 0) {
+            return argsLength >= 10;
+        }
+        else return true;
+    };
+
+    //if mask value length is 0, 0 is returned else the length is returned
+    var custom = function (args) {
+        var argsLength = args.element.ej2_instances[0].value.length;
+        if (argsLength == 0) {
+            return 0;
+        }
+        else {
+            return argsLength;
+        }
+    };
+
+    // sets required property in the FormValidator rules collection
+    var options = {
+        rules: {
+            'mask_value': { numberValue: [customFn, 'Enter valid mobile number'] },
+        },
+    };
+    // defines FormValidator to validate the MaskedTextBox
+    var formObject = new ej.inputs.FormValidator('#form-element', options);
+
+    //FormValidator rule is added for empty MaskedTextBox
+    formObject.addRules('mask_value', { maxLength: [custom, 'Enter mobile number'] });
+
+    // places error label outside the MaskedTextBox using the customPlacement event of FormValidator
+
+    formObject.customPlacement = function (element, errorElement) {
+        document.querySelector("#mask1").parentNode.appendChild(errorElement);
+    };
+    document.getElementById("submit_btn").addEventListener('click', function () {
+        formObject.validate("mask_value");
+        var ele = document.getElementById('mask1');
+        // checks for incomplete value and alerts the formt submit
+        if (ele.value !== "" && ele.value.indexOf(ele.ej2_instances[0].promptChar) === -1) {
+            alert("Submitted");
+        }
+    });
+
+</script>

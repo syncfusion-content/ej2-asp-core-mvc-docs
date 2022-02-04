@@ -1,0 +1,59 @@
+<div class='wrap'>
+    <h4>Choose color</h4>
+    @Html.EJS().ColorPicker("element").CssClass("e-custom-input").Render()
+</div>
+
+<script>
+    window.onload = function () {
+        var target = document.getElementById("element");
+        ej.base.attributes(target, { "type": "text" });
+        ej.base.addClass([target], "e-input");
+        // Moving the ColorPicker input element before the secondary button.
+        target.nextElementSibling.insertBefore(target, target.nextElementSibling.children[1]);
+    }
+</script>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+
+    /* Input element customization */
+    .e-custom-input.e-colorpicker-wrapper .e-split-btn-wrapper .e-input {
+        height: 16px;
+        margin: 0;
+        opacity: 1;
+        position: initial;
+        width: 75px;
+    }
+
+    /* To hide primary button */
+    .e-custom-input.e-colorpicker-wrapper .e-split-btn-wrapper .e-split-btn {
+        display: none;
+    }
+
+    /* Secondary button customization */
+    .e-custom-input.e-colorpicker-wrapper .e-split-btn-wrapper .e-btn.e-dropdown-btn {
+        background: transparent;
+        border-color: transparent;
+        border-bottom-color: rgba(0, 0, 0, 0.42);
+    }
+
+    .e-custom-input.e-colorpicker-wrapper .e-split-btn-wrapper .e-input:focus+.e-btn.e-dropdown-btn {
+        padding-bottom: 3px;
+        border-bottom-width: 2px;
+        border-bottom-color: #e3165b;
+    }
+
+    /* Rotating the dropdown arrow */
+    .e-custom-input.e-colorpicker-wrapper .e-split-btn-wrapper .e-btn.e-dropdown-btn .e-caret {
+        transform: rotate(0deg);
+        transition: transform 200ms ease-in-out;
+    }
+
+    .e-custom-input.e-colorpicker-wrapper .e-split-btn-wrapper .e-btn.e-dropdown-btn.e-active .e-caret {
+        transform: rotate(180deg);
+    }
+</style>

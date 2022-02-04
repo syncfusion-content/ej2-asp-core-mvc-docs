@@ -1,0 +1,55 @@
+@using Syncfusion.EJ2.InPlaceEditor;
+
+<div id='container'>
+    <table class="table-section">
+        <tr>
+            <td> EditableOn: </td>
+            <td>
+                @Html.EJS().DropDownList("dropDown").Width("auto").DataSource(ViewBag.editableOnData).Value(ViewBag.value).Change("onChange").Placeholder("Select edit type").Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="sample-td"> Enter your name: </td>
+            <td class="sample-td">
+                @Html.EJS().InPlaceEditor("element").Mode(RenderMode.Inline).Value(ViewBag.inplaceValue).Locale("fr-BE").Model(ViewBag.model).Render()
+            </td>
+        </tr>
+    </table>
+</div>
+
+<style>
+    .table-section {
+        margin: 0 auto;
+    }
+
+    tr td:first-child {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .sample-td {
+        padding-top: 10px;
+        min-width: 230px;
+        height: 100px;
+    }
+</style>
+<script>
+    ej.base.L10n.load({
+        'fr-BE': {
+            'inplace-editor': {
+                'save': 'enregistrer',
+                'cancel': 'Annuler',
+                'loadingText': 'Chargement...',
+                'editIcon': 'Cliquez pour éditer',
+                'editAreaClick': 'Cliquez pour éditer',
+                'editAreaDoubleClick': 'Double-cliquez pour éditer'
+            }
+        }
+    });
+    function onChange(e) {
+        var editObj = document.getElementById('element').ej2_instances[0];
+        var editType = e.itemData.value;
+        editObj.editableOn = editType;
+        editObj.dataBind();
+    }
+</script>

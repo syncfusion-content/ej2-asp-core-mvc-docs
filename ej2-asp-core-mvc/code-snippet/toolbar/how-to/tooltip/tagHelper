@@ -1,0 +1,9 @@
+<ejs-toolbar id="defaultToolbar" width="300">
+    <e-toolbar-items>
+        <e-toolbar-item type="Button" text="Cut" tooltipText='Cut'></e-toolbar-item>
+        <e-toolbar-item type="Button" text="Copy" tooltipText='Copy'></e-toolbar-item>
+        <e-toolbar-item type="Button" text="Paste" tooltipText='Paste'></e-toolbar-item>
+        <e-toolbar-item type="Button" text="Undo" tooltipText='Undo'></e-toolbar-item>
+        <e-toolbar-item type="Button" text="Redo" tooltipText='Redo'></e-toolbar-item>
+    </e-toolbar-items>
+</ejs-toolbar>

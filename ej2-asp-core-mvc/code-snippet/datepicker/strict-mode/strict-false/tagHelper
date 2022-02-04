@@ -1,0 +1,1 @@
+<ejs-datepicker id="datepicker" format="dd/MM/yyyy" placeholder="Enter date" value="ViewBag.value" min="ViewBag.minDate" max="ViewBag.maxDate"></ejs-datepicker>

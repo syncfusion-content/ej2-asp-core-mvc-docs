@@ -1,0 +1,121 @@
+@using Syncfusion.EJ2.Navigations;
+
+@{
+    var content0 = "Twitter is an online social networking service that enables users to send and read short 140-character" +
+                   "messages called 'tweets'.Registered users can read and post tweets, but those who are unregistered can only read" +
+                   "them.Users access Twitter through the website interface, SMS or mobile device app Twitter Inc. is based in San" +
+                   "Francisco and has more than 25 offices around the world.Twitter was created in March 2006 by Jack Dorsey," +
+                   "Evan Williams, Biz Stone, and Noah Glass and launched in July 2006. The service rapidly gained worldwide popularity," +
+                   "with more than 100 million users posting 340 million tweets a day in 2012.The service also handled 1.6 billion" +
+                   "search queries per day.";
+    var content1 = "Facebook is an online social networking service headquartered in Menlo Park, California. Its website was" +
+                   "launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo" +
+                   "Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the websites" +
+                   "membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford" +
+                   "University.It gradually added support for students at various other universities and later to high-school students.";
+    var content2 = "WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates" +
+                   "under a subscription business model.It uses the Internet to send text messages, images, video, user location and" +
+                   "audio media messages to other users using standard cellular mobile numbers.As of February 2016, WhatsApp had a user" +
+                   "base of up to one billion,[10] making it the most globally popular messaging application.WhatsApp Inc., based in" +
+                   "Mountain View, California, was acquired by Facebook Inc.on February 19, 2014, for approximately US$19.3 billion.";
+}
+
+<div class="info">
+    Collapsible Tabs
+</div>
+<span style="margin: 10px;">
+    <i>The active tab can be toggled to expand and collapse its content.</i>
+</span>
+
+@(Html.EJS().Tab("ej2Tab")
+    .Items(new List<TabTabItem> {
+        new TabTabItem { Header = ViewBag.headerTextOne, Content = @content0 },
+        new TabTabItem { Header = ViewBag.headerTextTwo, Content = @content1 },
+        new TabTabItem { Header = ViewBag.headerTextThree, Content = @content2 }
+    })
+    .CssClass("e-background")
+    .Created("tabCreated")
+    .Selected("tabSelected")
+    .Render()
+)
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .container {
+        min-width: 350px;
+        margin: 0 10px;
+    }
+
+    .info {
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    #ej2Tab.e-tab .e-content > .e-item.e-active.collapse {
+        display: none;
+    }
+
+    #ej2Tab.e-tab .e-tab-header .e-indicator.collapse {
+        display: none;
+    }
+
+</style>
+
+<script type="text/javascript">
+    var trgIndex;
+    var actLine;
+    var target;
+
+    function tabCreated() {
+        actLine = document.querySelector('#ej2Tab.e-tab .e-indicator');
+        target = document.querySelector('#ej2Tab.e-tab .e-content .e-item.e-active');
+        target.classList.add('collapse');
+        actLine.classList.add('collapse');
+    }
+
+    function tabSelected(e) {
+        var cnttrgs = document.querySelectorAll('#ej2Tab.e-tab > .e-content > .e-item');
+        for (var i = 0; i < cnttrgs.length; i++) {
+            cnttrgs[i].classList.remove('collapse');
+        }
+        if (actLine !== undefined) {
+            actLine.classList.remove('collapse');
+        }
+        trgIndex = e.selectedIndex;
+        // Custom click event binding for each tab item to make collapse/expand
+        e.selectedItem.addEventListener('click', function (e) {
+            updateCollapseClass();
+        });
+    }
+
+    function updateCollapseClass() {
+        // Custom classes are added/removed from tab content and active line element, when the same tab item again clicked
+        var cntEle = document.querySelector('#ej2Tab.e-tab .e-content .e-item.e-active');
+        if (cntEle.classList.contains('collapse')) {
+            cntEle.classList.remove('collapse');
+            actLine.classList.remove('collapse');
+        }
+        else {
+            cntEle.classList.add('collapse');
+            actLine.classList.add('collapse');
+        }
+    }
+</script>

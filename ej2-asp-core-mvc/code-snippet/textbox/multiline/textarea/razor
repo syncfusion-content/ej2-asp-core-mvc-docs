@@ -1,0 +1,9 @@
+<div class="multiline">
+    @Html.EJS().TextBox("default").Multiline(true).Placeholder("Enter your address").Value("Mr. Dodsworth Dodsworth, System Analyst, Studio 103").FloatLabelType(FloatLabelType.Auto).Render()
+</div>
+<style>
+    .multiline{
+        margin: 30px auto;
+        width: 20%;
+    }
+</style>

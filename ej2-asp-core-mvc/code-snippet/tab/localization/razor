@@ -1,0 +1,40 @@
+@using Syncfusion.EJ2.Navigations;
+
+@Html.EJS().Tab("ej2Tab").Items(new List<TabTabItem> {
+    new TabTabItem { Header = ViewBag.headerText0, Content = "HyperText Markup Language, commonly referred to as HTML, is the standard markup language used to create web pages. Along with CSS, and JavaScript, HTML is a cornerstone technology, used by most websites to create visually engaging web pages, user interfaces for web applications, and user interfaces for many mobile applications.[1] Web browsers can read HTML files and render them into visible or audible web pages. HTML describes the structure of a website semantically along with cues for presentation, making it a markup language, rather than a programming language." },
+    new TabTabItem { Header = ViewBag.headerText1, Content = "C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012." },
+    new TabTabItem { Header = ViewBag.headerText2, Content = "Java is a set of computer software and specifications developed by Sun Microsystems, later acquired by Oracle Corporation, that provides a system for developing application software and deploying it in a cross-platform computing environment. Java is used in a wide variety of computing platforms from embedded devices and mobile phones to enterprise servers and supercomputers. While less common, Java applets run in secure, sandboxed environments to provide many features of native applications and can be embedded in HTML pages." }
+}).HeightAdjustMode(HeightStyles.Auto).ShowCloseButton(true).Locale("fr-BE").Render()
+
+<script>
+    window.onload = function () {
+        ej.base.L10n.load({
+            'fr-BE': {
+                'tab': {'closeButtonTitle': "Fermer"}
+            }
+        });
+    }
+</script>
+
+
+<style>
+    #container {
+        visibility: hidden;
+        max-width: 650px;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+</style>

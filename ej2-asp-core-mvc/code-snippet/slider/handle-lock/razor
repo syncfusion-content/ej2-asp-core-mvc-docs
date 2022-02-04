@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Inputs
+    @Html.EJS().Slider("default").Min(0).Max(100).Value(ViewBag.range).Type(SliderType.Range).Enabled(true).Tooltip(new SliderTooltipData { IsVisible = true }).Limits(new SliderLimitData { Enabled = true, StartHandleFixed = true, EndHandleFixed = true, MinStart = 10, MaxEnd = 90 }).Render()

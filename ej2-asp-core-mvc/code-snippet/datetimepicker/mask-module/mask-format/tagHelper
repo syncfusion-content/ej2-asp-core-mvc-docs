@@ -1,0 +1,19 @@
+
+<div class="control-section">
+        <div class="control_wrapper">
+            <div class="pane">
+                <div class="tabs-wrap">
+                    <div class="wrap">
+                        // Specifies the masked DateTimePicker without format property.
+                        <ejs-datetimepicker id="datetimepicker" enableMask="true"></ejs-datetimepicker>
+                    </div>
+                </div>
+                <div class="tabs-wrap">
+                    <div class="wrap">
+                       // Specifies the masked DateTimePicker with format property.
+                       <ejs-datetimepicker id="format" enableMask="true" format="M/d/yyyy"></ejs-datetimepicker>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

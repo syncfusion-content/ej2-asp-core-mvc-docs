@@ -1,0 +1,8 @@
+@Html.EJS().Breadcrumb("separatorTemplate").EnableNavigation(false).Items(item =>
+{
+    item.Text("Home").Url("https://ej2.syncfusion.com/home/aspnetmvc.html#platform").Add();
+    item.Text("Getting").Url("https://ej2.syncfusion.com/aspnetmvc/demos/#/material/grid/overview/").Add();
+    item.Text("Icons").Url("https://ej2.syncfusion.com/aspnetmvc/Breadcrumb/BindToLocation").Add();
+    item.Text("Navigation").Url("https://ej2.syncfusion.com/home/aspnetmvc.html#platform").Add();
+    item.Text("Overflow").Url("https://ej2.syncfusion.com/aspnetmvc/demos/#/material/menu/default").Add();
+}).Render()

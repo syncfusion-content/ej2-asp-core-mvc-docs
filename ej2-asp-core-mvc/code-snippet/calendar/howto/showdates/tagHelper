@@ -1,0 +1,15 @@
+<ejs-calendar id="calendar"></ejs-calendar>
+
+<style>
+
+    .e-calendar .e-content tr.e-month-hide, /* csslint allow: adjoining-classes*/
+    .e-calendar .e-content td.e-other-month > span.e-day { /* csslint allow: adjoining-classes*/
+        display: block;
+    }
+
+    .e-calendar .e-content td.e-month-hide, /* csslint allow: adjoining-classes*/
+    .e-calendar .e-content td.e-other-month { /* csslint allow: adjoining-classes*/
+        pointer-events: auto;
+        touch-action: auto;
+    }
+</style>

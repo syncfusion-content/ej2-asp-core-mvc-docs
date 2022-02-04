@@ -1,0 +1,52 @@
+<div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
+@Html.EJS().ContextMenu("contextmenu").Target("#contextmenutarget").Items((IEnumerable<object>)ViewBag.menuItems).BeforeClose("beforeClose").BeforeItemRender("beforeItemRender").Select("select").Render()
+
+<script>
+
+    function beforeClose(args) {
+        args.cancel = true;
+    }
+
+    function select(args) {
+        var selectedElem = args.element.parentElement.querySelectorAll('.e-selected');
+        for(var i=0; i < selectedElem.length; i++){
+           var ele = selectedElem[i];
+           ele.classList.remove('e-selected');
+        }
+        var checkbox = args.element.childNodes[0] as HTMLElement;
+        var frame = checkbox.querySelector('.e-frame'));
+        if (checkbox && frame.classList.contains('e-check')) {
+            frame.classList.remove('e-check');
+        } else if (checkbox) {
+            frame.classList.add('e-check');
+        }
+    }
+
+    var i = 1;
+    function beforeItemRender(args) {
+        var check = @Html.EJS().CheckBox("checkbox" + i).Label(args.element.text).Checked((args.item.text == 'Option 2') ? true : false).Render()
+        args.element.innerHTML = '';
+        args.element.appendChild(check);
+        i++;
+    }
+
+</script>
+
+<style>
+
+.list {
+  display: none;
+}
+
+#contextmenutarget {
+    border: 1px dashed;
+    height: 250px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    color: gray;
+    line-height: 17;
+    font-size: 14px;
+}
+
+</style>

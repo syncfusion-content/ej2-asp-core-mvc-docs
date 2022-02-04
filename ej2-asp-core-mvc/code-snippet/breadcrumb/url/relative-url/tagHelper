@@ -1,0 +1,9 @@
+<ejs-breadcrumb id="separatorTemplate" enableNavigation="false">
+<e-breadcrumb-items>
+    <e-breadcrumb-item text="Home" url="../"></e-breadcrumb-item>
+    <e-breadcrumb-item text="Getting" url="./breadcrumb/getting-started"></e-breadcrumb-item>
+    <e-breadcrumb-item text="Icons" url="./breadcrumb/icons"></e-breadcrumb-item>
+    <e-breadcrumb-item text="Navigation" url="./breadcrumb/navigation"></e-breadcrumb-item>
+    <e-breadcrumb-item text="Overflow" url="./breadcrumb/overflow"></e-breadcrumb-item>
+</e-breadcrumb-items>
+</ejs-breadcrumb>

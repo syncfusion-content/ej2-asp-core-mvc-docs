@@ -1,0 +1,9 @@
+<ejs-breadcrumb id="url" enableNavigation="false" url="https://ej2.syncfusion.com/aspnetcore/Breadcrumb/BindToLocation" beforeItemRender="beforeItemRender"></ejs-breadcrumb>
+
+<script>
+    function beforeItemRender(args) {
+        if (args.item.text === 'BindToLocation') {
+            args.item.text = 'location';
+        }
+    }
+</script>

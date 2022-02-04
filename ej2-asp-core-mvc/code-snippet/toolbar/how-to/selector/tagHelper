@@ -1,0 +1,22 @@
+@using Syncfusion.EJ2.Navigations;
+
+@{
+    var content = "<div><input type='checkbox' id='check1' checked=''>Accept</input></div>";
+}
+<div>
+    <div>
+        <ejs-toolbar id="defaultToolbar" width="330">
+            <e-toolbar-items>
+                <e-toolbar-item text="Cut"></e-toolbar-item>
+                <e-toolbar-item type="Separator"></e-toolbar-item>
+                <e-toolbar-item text="Paste"></e-toolbar-item>
+                <e-toolbar-item type="Separator"></e-toolbar-item>
+                <e-toolbar-item template=content></e-toolbar-item>
+                <e-toolbar-item text="Undo"></e-toolbar-item>
+                <e-toolbar-item text="Redo"></e-toolbar-item>
+                <e-toolbar-item template="#Template"></e-toolbar-item>
+            </e-toolbar-items>
+        </ejs-toolbar>
+    </div>
+    <button id='Template' class='e-btn'>Template</button>
+</div>

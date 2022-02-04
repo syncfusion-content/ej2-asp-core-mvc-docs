@@ -1,0 +1,10 @@
+@Html.EJS().NumericTextBox("numeric").Format("n2").Value(10).Decimals(2).Change("numericFocus").Created("onCreate").Render()
+<script>
+    function numericFocus() {
+        var numericObj = this.ej2_instances ? this.ej2_instances[0] : this;
+        numericObj.element.value = numericObj.formattedValue(numericObj.decimals, +numericObj.element.value);
+    }
+    function onCreate() {
+        document.getElementById('numeric').addEventListener('focus', numericFocus);
+    }
+</script>

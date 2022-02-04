@@ -1,0 +1,19 @@
+
+<label>Float label type as auto</label>
+<div class="multiline">
+    @Html.EJS().TextBox("multiline-auto").Multiline(true).Placeholder("Enter your address").FloatLabelType(FloatLabelType.Auto).Render()
+</div>
+<label>Float label type as always</label>
+<div class="multiline">
+    @Html.EJS().TextBox("multiline-always").Multiline(true).Placeholder("Enter your address").FloatLabelType(FloatLabelType.Always).Render()
+</div>
+<label>Float label type as never</label>
+<div class="multiline">
+    @Html.EJS().TextBox("multiline-never").Multiline(true).Placeholder("Enter your address").FloatLabelType(FloatLabelType.Never).Render()
+</div>
+<style>
+    .multiline{
+        margin: 30px auto;
+        width: 20%;
+    }
+</style>

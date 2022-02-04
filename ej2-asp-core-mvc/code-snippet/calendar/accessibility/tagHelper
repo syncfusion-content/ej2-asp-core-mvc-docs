@@ -1,0 +1,11 @@
+<ejs-calendar id="calendar"></ejs-calendar>
+
+<script>
+    document.addEventListener('keyup', function (e) {
+    if (e.altKey && e.keyCode === 84) {
+        // press alt+t to focus the control.
+         var calendarObj = document.getElementById("calendar").ej2_instances[0];
+      calendarObj.element.querySelectorAll('.e-content table')[0].focus();
+    }
+})
+</script>

@@ -1,0 +1,1 @@
+@Html.EJS().TimePicker("timepicker").Value(ViewBag.value).Format("HH:mm").Step(60).Render()

@@ -1,0 +1,12 @@
+<div class='wrap'>
+    <h4>Choose color</h4>
+     @Html.EJS().ColorPicker("element").Render()
+</div>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+</style>

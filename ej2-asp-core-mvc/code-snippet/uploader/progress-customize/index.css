@@ -1,0 +1,14 @@
+.custom_progress {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.custom_progress .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-progress-inner-wrap .e-upload-progress-bar.e-upload-progress {
+    background: yellow;
+    height: 4px;
+}
+
+.custom_progress .e-upload .e-upload-files .e-upload-file-list .e-file-container .e-progress-inner-wrap {
+    height: 4px;
+    background-color: lightblue;
+}

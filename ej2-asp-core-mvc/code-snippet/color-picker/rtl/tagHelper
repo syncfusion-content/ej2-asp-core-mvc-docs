@@ -1,0 +1,24 @@
+<div class='wrap'>
+    <h4>Choose Color</h4>
+    <ejs-colorpicker id="element" enableRtl="true" locale="ar-AE"></ejs-colorpicker>
+</div>
+
+<script>
+    ej.base.L10n.load({
+        'ar-AE': {
+            'colorpicker': {
+                'Apply': 'تطبيق',
+                'Cancel': 'إلغاء',
+                'ModeSwitcher': 'مفتاح كهربائي الوضع'
+            }
+        }
+    });
+</script>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+</style>

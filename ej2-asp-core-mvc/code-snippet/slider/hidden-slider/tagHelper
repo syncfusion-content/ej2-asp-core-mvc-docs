@@ -1,0 +1,35 @@
+<!--button to show slider-->
+<ejs-button id="button" content="Show Slider"></ejs-button>
+
+<div id="container">
+    <ejs-slider id="default" step="3600000" min="1373693400000" max="1373715000000" showButtons="true" tooltipChange="tooltipChangeHandler" renderingTicks="renderingTicksHandler">
+        <e-slider-tooltipdata isVisible="true" placement="Before"> </e-slider-tooltipdata>
+        <e-slider-ticksdata placement="After" largeStep="7200000" renderingTicks="renderingTicksHandler"></e-slider-ticksdata>
+    </ejs-slider>
+</div>
+
+<script type="text/javascript">
+    function tooltipChangeHandler(args) {
+        var totalMilliSeconds = Number(args.text);
+        var custom = { hour: '2-digit', minute: '2-digit' };
+        args.text = new Date(totalMilliSeconds).toLocaleTimeString("en-us", custom);
+    }
+    function renderingTicksHandler(args) {
+        var totalMilliSeconds = Number(args.value);
+        var custom = { hour: '2-digit', minute: '2-digit' };
+        args.text = new Date(totalMilliSeconds).toLocaleTimeString("en-us", custom);
+    }
+    document.getElementById('button').onclick = function () {
+	//slider visible from hidden state
+        slider = document.getElementById("container");
+        ticks = document.getElementById("default");
+        slider.style.display = "block";
+        ticks.ej2_instances[0].refresh();
+    };
+</script>
+<style>
+/* render slider in hidden state */
+    #container{
+        display: none;
+    }
+</style>

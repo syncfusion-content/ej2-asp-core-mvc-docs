@@ -1,0 +1,9 @@
+<div class="control-section">
+    <div class="control_wrapper accordion-control-section">
+        <h4> TextBox with clear button </h4>
+        <ejs-textbox id="firstname" placeholder="First Name" showClearButton="true" floatLabelType="Never"></ejs-textbox>
+
+        <h4> Floating TextBox with clear button </h4>
+        <ejs-textbox id="lastname" placeholder="Last Name" showClearButton="true" floatLabelType="Auto"></ejs-textbox>
+    </div>
+</div>

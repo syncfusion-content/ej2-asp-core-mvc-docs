@@ -1,0 +1,3 @@
+<ejs-slider id="default" value="30"></ejs-slider>
+<ejs-slider id="minrange" value="30" type="MinRange" ></ejs-slider>
+<ejs-slider id="range" value="ViewBag.range" type="Range" ></ejs-slider>

@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Inputs
+     @Html.EJS().Slider("default").Min(1371081600000).Max(1371772800000).Step(86400000).TooltipChange("tooltipChangeHandler").RenderingTicks("renderingTicksHandler").ShowButtons(true).Tooltip(new SliderTooltipData { Placement = TooltipPlacement.Before, IsVisible = true }).Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 172800000, }).Render()
+
+<script>
+    function tooltipChangeHandler(args) {
+        var totalMiliSeconds = Number(args.text);
+        // Converting the current milliseconds to the respective date in desired format
+        var custom = { year: "numeric", month: "short", day: "numeric" };
+        args.text = new Date(totalMiliSeconds).toLocaleDateString("en-us", custom);
+    }
+    function renderingTicksHandler(args) {
+        var totalMiliSeconds = Number(args.value);
+        // Converting the current milliseconds to the respective date in desired format
+        var custom = { year: "numeric", month: "short", day: "numeric" };
+        args.text = new Date(totalMiliSeconds).toLocaleDateString("en-us", custom);
+    }
+</script>

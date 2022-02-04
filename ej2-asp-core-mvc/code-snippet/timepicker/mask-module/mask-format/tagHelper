@@ -1,0 +1,19 @@
+
+<div class="control-section">
+        <div class="control_wrapper">
+            <div class="pane">
+                <div class="tabs-wrap">
+                    <div class="wrap">
+                        // Specifies the masked TimePicker without format property.
+                        <ejs-timepicker id="datepicker" enableMask="true"></ejs-timepicker>
+                    </div>
+                </div>
+                <div class="tabs-wrap">
+                    <div class="wrap">
+                       // Specifies the masked TimePicker with format property.
+                       <ejs-timepicker id="format" enableMask="true" format="M/d/yyyy"></ejs-timepicker>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,24 @@
+<div class='wrap'>
+    <h4>Choose Color</h4>
+    <ejs-colorpicker id="element" locale="de-DE"></ejs-colorpicker>
+</div>
+
+<script>
+    ej.base.L10n.load({
+        'de-DE': {
+            'colorpicker': {
+                'Apply': 'Anwenden',
+                'Cancel': 'Abbrechen',
+                'ModeSwitcher': 'Modus wechseln'
+            }
+        }
+    });
+</script>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+</style>

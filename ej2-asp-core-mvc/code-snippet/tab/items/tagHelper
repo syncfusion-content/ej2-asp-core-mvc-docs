@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Navigations;
+
+<ejs-tab id="ej2Tab" items="ViewBag.items"></ejs-tab>
+
+<style>
+    .e-content .e-item {
+        font-size: 12px;
+        padding: 10px;
+        text-align: justify;
+    }
+</style>

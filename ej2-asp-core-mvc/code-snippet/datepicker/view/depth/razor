@@ -1,0 +1,1 @@
+@Html.EJS().DatePicker("element").Depth(Syncfusion.EJ2.Calendars.CalendarView.Year).Start(Syncfusion.EJ2.Calendars.CalendarView.Decade).Placeholder("Choose a Date").Render()

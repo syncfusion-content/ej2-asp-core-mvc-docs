@@ -1,0 +1,4 @@
+<ejs-slider id="default" value="ViewBag.range" min="0" max="100" step="1" type="Range">
+    <e-slider-tooltipdata isVisible="true"></e-slider-tooltipdata>
+    <e-slider-limitsdata enabled="true" minStart="10" minEnd="40" maxStart="60" maxEnd="90"></e-slider-limitsdata>
+</ejs-slider>

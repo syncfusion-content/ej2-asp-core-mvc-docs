@@ -1,0 +1,37 @@
+<div id='treeparent'>
+   @Html.EJS().TreeView("treedata").CssClass("mytree").Fields(field=>
+    field.Id("nodeId").ParentID("pid").Text("nodeText").HasChildren("hasChild").Expanded("expanded")
+    .Child(ViewBag.child).DataSource(ViewBag.dataSource)).Render()
+    <label>Note:</label>
+    <div><b>1. The font-weight "Bold" is applied for all the leaf nodes</b></div>
+    <div><i>2. The font-weight "Italic" is applied for first level nodes</i></div>
+    <div style="color: darkmagenta">3. The color "darkmagenta" is applied for second level nodes</div>
+</div>
+
+ <style>
+    #treeparent {
+        display: block;
+        max-width: 350px;
+        max-height: 350px;
+        margin: auto;
+        overflow: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+    .details {
+        padding-left: 10px;
+    }
+    /*apply custom css to first level*/
+    .mytree .e-level-1 > .e-text-content .e-list-text {
+        font-style: italic;
+    }
+    /*apply custom css to second level*/
+    .mytree .e-level-2 > .e-text-content .e-list-text {
+        color: darkmagenta;
+    }
+    /*apply custom css to all the leaf nodes*/
+    .mytree .e-level-3 > .e-text-content .e-list-text {
+        font-weight: bold;
+    }
+    </style>

@@ -1,0 +1,33 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" };
+}
+
+<div class="control_wrapper">
+    <div id='preview'></div>
+    <ejs-uploader id="UploadFiles" selected="onSelect" allowedExtensions=".jpg, .jpeg,.png" asyncSettings="@asyncSettings"></ejs-uploader>
+</div>
+<script>
+
+    function onSelect(args) {
+        for (var i = 0; i < args.filesData.length; i++) {
+            var liparentDiv = ej.base.createElement('div', { className: 'image-list' });
+            var liImage = ej.base.createElement('img', { className: 'image' });
+            liparentDiv.appendChild(liImage);
+            readURL(liImage, args.filesData[i]);
+            document.getElementById('preview').appendChild(liparentDiv);
+        }
+        args.cancel = true;
+    }
+
+    function readURL(liImage, file) {
+        var imgPreview = liImage;
+        var imageFile = file.rawFile;
+        var reader = new FileReader();
+        reader.addEventListener('load', () => {
+            imgPreview.src = reader.result;
+        }, false);
+        if (imageFile) {
+            reader.readAsDataURL(imageFile);
+        }
+    }
+</script>

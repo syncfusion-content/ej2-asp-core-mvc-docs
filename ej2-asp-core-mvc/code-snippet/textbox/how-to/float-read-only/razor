@@ -1,0 +1,54 @@
+<div class="control-section">
+    <div class="control_wrapper accordion-control-section">
+        <div class="e-float-input">
+            <input class="e-input myField" id="myText" name="readonlyAttr" type="text" readOnly>
+            <span class="e-float-line"></span>
+            <label class="e-float-text">Enter value</label>
+        </div>
+        @Html.EJS().Button("valuebtn").CssClass("e-btn update_value").Content("Set value").Render()
+        @Html.EJS().Button("removebtn").CssClass("e-btn remove_value").Content("Remove value").Render()
+    </div>
+</div>
+<script>
+    ej.base.enableRipple(true);
+
+    document.getElementById('valuebtn').onclick = () => {
+        (document.getElementsByClassName('myField')[0]).value = '10';
+        checkFloatingLabel('myText')
+    }
+    document.getElementById('removebtn').onclick = () => {
+        (document.getElementsByClassName('myField')[0]).value = '';
+        checkFloatingLabel('myText')
+    }
+
+    function checkFloatingLabel(id) {
+        var inputElement = document.getElementById(id);
+        var labelElement = inputElement.parentElement.querySelector('.e-float-text');
+        if (inputElement.value !== '') {
+            labelElement.classList.remove('e-label-bottom');
+            labelElement.classList.add('e-label-top');
+        } else {
+            labelElement.classList.remove('e-label-top');
+            labelElement.classList.add('e-label-bottom');
+        }
+    }
+    var inputField = document.getElementById('myText');
+
+</script>
+
+<style>
+    .wrap {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 20px 10px;
+        width: 260px;
+    }
+
+    .update_value, .remove_value {
+        margin-top: 20px;
+    }
+
+    .remove_value {
+        margin-left: 10px;
+    }
+</style>

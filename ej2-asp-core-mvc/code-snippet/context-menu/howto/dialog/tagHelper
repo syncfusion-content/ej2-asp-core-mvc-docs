@@ -1,0 +1,32 @@
+<div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
+<ejs-contextmenu id="contextmenu" target="#contextmenutarget" items="@ViewBag.menuItems" select="itemSelect"></ejs-contextmenu>
+<ejs-dialog id="dialog" content="This file can be saved as PDF" visible="false" position='@new Syncfusion.EJ2.Popups.DialogPositionData() { X= "100" , Y= "100" }' target="#contextmenutarget" width="200px" height="110px">
+    <e-dialog-buttons>
+        <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons" click="dlgButtonClick"></e-dialog-dialogbutton>
+    </e-dialog-buttons>
+</ejs-dialog>
+
+<script>
+    function dlgButtonClick() {
+        var dialogObj = ej.base.getInstance(document.getElementById('dialog'), ejs.popups.Dialog);
+        dialogObj.hide();
+    }
+
+    function itemSelect() {
+        var dialog = ej.base.getInstance(document.getElementById('dialog'), ejs.popups.Dialog);
+        dialog.show();
+    }
+</script>
+
+<style>
+    #contextmenutarget {
+        border: 1px dashed;
+        height: 250px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        color: gray;
+        line-height: 17;
+        font-size: 14px;
+    }
+</style>

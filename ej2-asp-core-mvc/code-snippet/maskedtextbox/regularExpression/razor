@@ -1,0 +1,17 @@
+<div class="control-section">
+    <div class="control-label">IP Address (ex: 212.212.111.222)</div>
+    @Html.EJS().MaskedTextBox("mask1").Mask("[0-2][0-9][0-9].[0-2][0-9][0-9].[0-2][0-9][0-9].[0-2][0-9][0-9]").Render()
+</div>
+
+<style>
+   
+    .control-label {
+        padding-right: 200px;
+        font-size: 12px;
+    }
+
+    .control-section {
+        min-height: 200px;
+    }
+
+</style>

@@ -1,0 +1,38 @@
+<ejs-button id="showAll" content="Show All items" created="btnCreated"></ejs-button>
+<div class="menu-section">
+    <ejs-menu id="menu" items="ViewBag.data" created ="created" beforeOpen = "beforeOpen"></ejs-menu>
+</div>
+<style>
+    .menu-section {
+        margin-top: 100px;
+        text-align: center;
+    }
+    body {
+        margin-top: 100px;
+        text-align: center;
+    }
+</style>
+<script>
+    var hiddenItems = ['Workshops', 'Music', 'Movies'];
+    function beforeOpen(args) {
+        menuObj = document.getElementById("menu").ej2_instances[0];
+        //Handling sub menu items
+        for (var i = 0; i < args.items.length; i++) {
+            if (hiddenItems.indexOf(args.items[i].text) > -1) {
+                menuObj.hideItems([args.items[i].text], false);
+            }
+        }
+    }
+    function created(args) {
+        menuObj = document.getElementById("menu").ej2_instances[0];
+        menuObj.hideItems(hiddenItems, false);
+    }
+    function btnCreated(args) {
+        buttonObj = document.getElementById("showAll").ej2_instances[0];
+        buttonObj.element.onclick = () => {
+            menuObj.showItems(hiddenItems, false);
+            hiddenItems = [];
+        }
+    }
+
+</script>

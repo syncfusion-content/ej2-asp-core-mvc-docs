@@ -1,0 +1,32 @@
+<ejs-treeview id="treedata" cssClass="custom" nodeTemplate="@Html.Raw("<div><img class=\"eimage\" src=\"https://ej2.syncfusion.com/demos/src/images/employees/${Image}.png\" alt=\"employee\"/><div class=\"ename\"> ${name} </div><div class=\"ejob\"> ${Job} </div></div>")">
+    <e-treeview-fields dataSource="ViewBag.data" id="id" parentId="pid" text="name" hasChildren="HasChild" expanded="Expanded"></e-treeview-fields>
+</ejs-treeview>
+
+<style>
+    .custom.e-treeview .e-fullrow {
+        height: 72px;
+    }
+
+    .custom.e-treeview .e-list-text {
+        line-height: normal;
+    }
+
+    .eimage {
+        float: left;
+        padding: 11px 16px 11px 0;
+        height: 48px;
+        width: 48px;
+        box-sizing: content-box;
+    }
+
+    .ename {
+        font-size: 16px;
+        padding: 14px 0 0;
+    }
+
+    .ejob {
+        font-size: 14px;
+        opacity: .87;
+    }
+</style>
+

@@ -1,0 +1,113 @@
+@using Syncfusion.EJ2.Navigations;
+
+<div id="tab1_content" style="display: none">
+    <ul>
+        <li>Click on the "+" header to add dynamic tab items. </li>
+        <li>It displays input elements to get the new tab information. </li>
+        <li>Add details and click the "Add Tab" button to open the newly added tab.</li>
+    </ul>
+</div>
+<div id="form-container" style="display: none">
+    <div class="e-float-input">
+        <input type="text" id="tab-title" required="" />
+        <span class="e-float-line"></span>
+        <label class="e-float-text">Enter header title</label>
+    </div>
+    <br />
+    <div class="e-float-input">
+        <textarea rows="5" type="text" id="tab-content" required=""></textarea>
+        <span class="e-float-line"></span>
+        <label class="e-float-text">Enter content</label>
+    </div>
+    <br />
+    <div class="btn-section">
+        <button id="btn-add" class="btn btn-default" onclick="btnClicked(this)">Add Tab</button>
+        <br />
+        <br />
+        <span class="info"> * Title is mandatory to add a new Tab</span>
+    </div>
+</div>
+@(Html.EJS().Tab("ej2Tab")
+    .Items(new List<TabTabItem> {
+        new TabTabItem { Header = ViewBag.headerTextOne, Content = "#tab1_content" },
+        new TabTabItem { Header = ViewBag.headerTextTwo, Content = "#form-container" }
+    })
+    .Created("tabCreated")
+    .Selected("tabSelected")
+    .Render()
+)
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .container {
+        min-width: 350px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #form-container {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .btn-section {
+        text-align: center;
+    }
+
+    .add-tab-btn-section td {
+        padding: 10px;
+    }
+
+    .info {
+        font-weight: bold;
+    }
+
+    .e-add-icon::before {
+        content: '\e7d5';
+    }
+</style>
+
+<script type="text/javascript">
+    function tabCreated() {
+        var totalItems = 0;
+        var addBtn = document.querySelectorAll(".e-ileft.e-icon");
+        addBtn[0].setAttribute("title", "Add Tab");
+    }
+
+    function tabSelected(args) {
+        if (args.selectedIndex === document.querySelectorAll('#ej2Tab .e-toolbar-item').length - 1) {
+            document.getElementById('tab-title').value = '';
+            document.getElementById('tab-content').value = '';
+        }
+    }
+
+    function btnClicked(e) {
+        var title = document.getElementById('tab-title').value;
+        var content = document.getElementById('tab-content').value;
+        var tabObj = document.getElementById("ej2Tab").ej2_instances[0];
+        // Required tab item object formed by using textbox inputs
+        var item = { header: { text: title }, content: ej.base.createElement('pre', { innerHTML: content.replace(/\n/g, '<br>\n') }).outerHTML };
+
+        totalItems = document.querySelectorAll('#ej2Tab .e-toolbar-item').length;
+        // Item object and the index argument passed into the addTab method to add a new tab
+        tabObj.addTab([item], totalItems - 1);
+    }
+</script>

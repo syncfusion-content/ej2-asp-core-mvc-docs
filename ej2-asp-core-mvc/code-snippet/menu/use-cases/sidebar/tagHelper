@@ -1,0 +1,211 @@
+<div id='container'>
+    <!-- sidebar element declaration -->
+    <div class="header">
+        <span id="hamburger" class="e-icons menu default"></span>
+        <div class="content">Header content</div>
+    </div>
+    <ejs-sidebar id="default-sidebar" type="Over" width="220px">
+        <e-content-template>
+            <div class="title-header">
+                <div style="display:inline-block">Menu</div>
+                <span id="close" class="e-icons"></span>
+            </div>
+            <div class="content-area">
+                <!--Accordion control declaration-->
+                <ejs-accordion id="accordionMenu" clicked="clicked">
+                    <e-accordion-accordionitems>
+                        <e-accordion-accordionitem header="Appliances" , content="#Appliances_Items"></e-accordion-accordionitem>
+                        <e-accordion-accordionitem header="Accessories" , content="#Accessories_Items"></e-accordion-accordionitem>
+                        <e-accordion-accordionitem header="Fashion" , content="#Fashion_Items"></e-accordion-accordionitem>
+                        <e-accordion-accordionitem header="Home & Living" , content="#Home_Living_Items"></e-accordion-accordionitem>
+                        <e-accordion-accordionitem header="Entertainment" , content="#Entertainment_Items"></e-accordion-accordionitem>
+                    </e-accordion-accordionitems>
+                </ejs-accordion>
+                <div style="display:none">
+                <!--Accordion sub items-->
+                    <ejs-accordion id="Appliances_Items" clicked="clicked">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="Kitchen" , content="#Appliances_Kitchen_Items"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Washing Machine" , content="#Appliances_Washing_Items"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Air Conditioners" , content="#Appliances_Conditioners_Items"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+                <div style="display:none">
+                    <ejs-accordion id="Appliances_Kitchen_Items" clicked="clicked">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="Electric Cookers"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Coffee Makers"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Blenders"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+                <div style="display:none">
+                    <ejs-accordion id="Appliances_Washing_Items" clicked="clicked">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="Fully Automatic"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Semi Automatic"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+                <div style="display:none">
+                    <ejs-accordion id="Appliances_Conditioners_Items" clicked="clicked">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="Inverter ACs"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Split ACs"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Window ACs"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+                <div style="display:none">
+                    <ejs-accordion id="Accessories_Items" clicked="clicked">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="Mobile" , content="#Accessories_Mobile_Items"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Computer" , content="#Accessories_Computer_Items"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+                <div style="display:none">
+                    <ejs-accordion id="Accessories_Mobile_Items" clicked="clicked">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="Headphones"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Memory Cards"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Power Banks"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+                <div style="display:none">
+                    <ejs-accordion id="Accessories_Computer_Items" clicked="clicked">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="Pendrives"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="External Hard Disks"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Monitors"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+                <div style="display:none">
+                    <ejs-accordion id="Fashion_Items" clicked="clicked">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="Men"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Women"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+                <div style="display:none">
+                    <ejs-accordion id="Home_Living_Items" clicked="clicked">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="Furniture"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Decor"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+                <div style="display:none">
+                    <ejs-accordion id="Entertainment_Items" clicked="clicked">
+                        <e-accordion-accordionitems>
+                            <e-accordion-accordionitem header="Televisions"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Home Theatres"></e-accordion-accordionitem>
+                            <e-accordion-accordionitem header="Gaming Laptops"></e-accordion-accordionitem>
+                        </e-accordion-accordionitems>
+                    </ejs-accordion>
+                </div>
+            </div>
+        </e-content-template>
+    </ejs-sidebar>
+    <!-- main content declaration -->
+    <div>
+        <div class="main-content">Main content</div>
+    </div>
+</div>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .header {
+        width: 100%;
+        background-color: #7b8cfb;
+    }
+
+        #default-sidebar,
+        .header .content {
+            background-color: #7b8cfb;
+            color: white;
+            border: none;
+        }
+
+        .header .content {
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+    .main-content {
+        text-align: center;
+        font-size: 20px;
+        padding: 100px 15px;
+    }
+
+    #default-sidebar .close-btn:hover {
+        color: rgba(0, 0, 0, .87);
+        background-color: #fafafa;
+    }
+
+    #hamburger.menu {
+        font-size: 25px;
+        cursor: pointer;
+        float: left;
+        line-height: 50px;
+        position: relative;
+        z-index: 1000;
+        left: 25px;
+        color: white;
+    }
+
+        #hamburger.menu:before {
+            content: '\e99a';
+        }
+
+    #close:before {
+        content: "\e945";
+    }
+
+    .title-header {
+        text-align: center;
+        font-size: 18px;
+        padding: 15px 15px 35px;
+    }
+
+    .e-sidebar .title-header #close {
+        cursor: pointer;
+        line-height: 25px;
+        float: right;
+    }
+
+    .e-accordion .e-acrdn-item .e-acrdn-panel .e-acrdn-content {
+        padding: 0px;
+    }
+
+    .e-accordion .e-acrdn-item .e-acrdn-panel .e-acrdn-panel .e-acrdn-content {
+        padding: 0px;
+    }
+</style>
+
+<script>
+    // Close the Sidebar
+    document.getElementById('close').onclick = function () {
+        var defaultSidebar = document.getElementById("default-sidebar").ej2_instances[0];
+        defaultSidebar.hide();
+    };
+
+    document.getElementById('hamburger').onclick = function () {
+        var defaultSidebar = document.getElementById("default-sidebar").ej2_instances[0];
+        defaultSidebar.show();
+    };
+
+    function clicked(e) {
+        if (!(e.originalEvent.target.closest('.e-acrdn-item').getElementsByClassName('e-tgl-collapse-icon').length)) {
+            var defaultSidebar = document.getElementById("default-sidebar").ej2_instances[0];
+            defaultSidebar.hide();
+        }
+    }
+</script>

@@ -1,0 +1,50 @@
+<div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
+<ejs-contextmenu id="contextmenu" target="#contextmenutarget" items="ViewBag.menuItems" beforeClose="beforeClose" beforeItemRender="beforeItemRender"></ejs-contextmenu>
+
+<script>
+
+    var target = '#contextmenutarget';
+
+    function beforeClose(args) {
+        if (args.event.target.closest('.e-menu-item')) {
+            args.cancel = true;
+            var selectedElem = args.element.querySelectorAll('.e-selected');
+            for (var i = 0; i < selectedElem.length; i++) {
+                var ele = selectedElem[i];
+                ele.classList.remove('e-selected');
+            }
+            var checkbox = ej.base.closest(args.event.target, '.e-checkbox-wrapper');
+            var frame = checkbox.querySelector('.e-frame');
+            if (checkbox && frame.classList.contains('e-check')) {
+                frame.classList.remove('e-check');
+            } else if (checkbox) {
+                frame.classList.add('e-check');
+            }
+        }
+    }
+
+    var i = 1;
+    function beforeItemRender(args) {
+        var check = ejs.buttons.createCheckBox(ej.base.createElement, false, {
+            label: args.item.text,
+            checked: (args.item.text == 'Option 2') ? true : false
+        })
+        args.element.innerHTML = '';
+        args.element.appendChild(check);
+        i++;
+    }
+
+</script>
+
+<style>
+    #contextmenutarget {
+        border: 1px dashed;
+        height: 250px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        color: gray;
+        line-height: 17;
+        font-size: 14px;
+    }
+</style>

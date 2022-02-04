@@ -1,0 +1,51 @@
+@using Syncfusion.EJ2.InPlaceEditor
+
+<div id='container'>
+    <span class="content-title"> Select frameworks: </span>
+    @Html.EJS().InPlaceEditor("element").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.MultiSelect).Value(ViewBag.value).Name("skill").Url(Url.Action("UpdateData", "Home")).PrimaryKey("FrameWork").Adaptor(AdaptorType.WebApiAdaptor).Model(ViewBag.model).ActionSuccess("actionSuccess").ActionFailure("actionFailure").Created("created").Render()
+</div>
+
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+    }
+
+    #element {
+        width: 150px;
+    }
+
+    .content-title {
+        font-weight: 500;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+    }
+</style>
+
+<script>
+    function actionSuccess(e) {
+        e.value = chipCreation(e.value.split(','), true);
+    }
+    function actionFailure(e) {
+        e.value = chipCreation(e.value.split(','), false);
+    }
+    function created() {
+        chipOnCreate();
+        document.getElementById("element").setAttribute("data-underline", "false");
+    }
+    function chipOnCreate() {
+        var editObj = document.getElementById('element').ej2_instances[0];
+        editObj.element.querySelector('.e-editable-value').innerHTML = chipCreation(editObj.value);
+    }
+    function chipCreation(data, isSuccess) {
+        var value = '<div class="e-chip-list">';
+        [].slice.call(data).forEach((val) => {
+            value += '<div class="e-chip"> <span class="e-chip-text' + (!isSuccess ? 'e-highlight' : '') + '"> ' + val + '</span></div>';
+        });
+        value += '</div>';
+        return value;
+    }
+</script>

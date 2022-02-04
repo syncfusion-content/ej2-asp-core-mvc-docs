@@ -1,0 +1,8 @@
+<div id='container'>
+    <div class='wrap'>
+        @Html.EJS().NumericTextBox("numeric").Format("###.##").Value(10).Placeholder("Custom format string #").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).Render()
+    </div>
+    <div class='wrap'>
+        @Html.EJS().NumericTextBox("numeric1").Format("000.00").Value(10).Placeholder("Custom format string 0").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).Render()
+    </div>
+</div>

@@ -1,0 +1,50 @@
+@using Syncfusion.EJ2.Navigations;
+
+<div id="ej2Tab"></div>
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .container {
+        min-width: 350px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+</style>
+
+<script type="text/javascript">
+    ej.base.enableRipple(true);
+    var itemsData = [];
+    var mapping = { header: 'FirstName', content: 'Notes' };
+    const SERVICE_URI = 'https://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Employees';
+    new ej.data.DataManager({ url: SERVICE_URI, adaptor: new ej.data.ODataAdaptor })
+        .executeQuery(new ej.data.Query().range(1, 4)).then((e) => {
+            var result = e.result;
+            for (var i = 0; i < result.length; i++) {
+                itemsData.push({ header: { text: result[i][mapping.header] }, content: result[i][mapping.content] });
+            }
+            //Initialize Tab component
+            var tabObj = new ej.navigations.Tab({
+                items: itemsData
+            });
+            //Render initialized Tab component
+            tabObj.appendTo('#ej2Tab');
+        });
+</script>

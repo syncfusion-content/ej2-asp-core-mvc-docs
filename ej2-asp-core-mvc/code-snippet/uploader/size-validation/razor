@@ -1,0 +1,1 @@
+@Html.EJS().Uploader("UploadFiles").MinFileSize(10000).MaxFileSize(1000000).AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" }).Render()

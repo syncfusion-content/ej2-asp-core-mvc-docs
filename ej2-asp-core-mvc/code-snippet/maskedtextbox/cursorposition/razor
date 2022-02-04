@@ -1,0 +1,25 @@
+@Html.EJS().MaskedTextBox("mask1").Mask("00000-00000").Value("93828-32132").Placeholder("Default cursor position").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
+@Html.EJS().MaskedTextBox("mask2").Mask("00000-00000").Value("83929-4342").Placeholder("Cursor positioned at start").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Focus("onfocus").Render()
+@Html.EJS().MaskedTextBox("mask3").Mask("00000-00000").Value("83929-3213").Placeholder("Cursor positioned at end").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Focus("onfocus1").Render()
+@Html.EJS().MaskedTextBox("mask4").Mask("+1 000-000-0000").Value("234-432-432").Placeholder("Cursor at specified position").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Focus("onfocus2").Render()
+
+
+<script>
+
+    function onfocus(args) {
+        //sets cursor position at start of MaskedTextBox
+        args.selectionEnd = args.selectionStart = 0;
+    }
+
+    function onfocus1(args) {
+        //sets cursor position at end of MaskedTextBox
+        args.selectionStart = args.selectionEnd = args.maskedValue.length;
+    }
+
+    function onfocus2(args) {
+        //sets cursor at specified position
+        args.selectionStart = 3;
+        args.selectionEnd = 3;
+    }
+
+</script>

@@ -1,0 +1,9 @@
+@Html.EJS().DatePicker("datepicker").Placeholder("Choose a Date").Render()
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var datepickerObject = document.getElementById("datepicker").ej2_instances[0];
+        document.getElementsByTagName('button')[0].onclick = function () {
+            datepickerObject.focusIn();
+        }
+    })
+</script>

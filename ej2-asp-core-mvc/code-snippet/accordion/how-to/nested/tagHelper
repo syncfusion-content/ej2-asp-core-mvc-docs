@@ -1,0 +1,46 @@
+@using Syncfusion.EJ2.Navigations;
+
+<div style="display: none">
+    <ejs-accordion id="childNested1">
+        <e-accordion-accordionitems>
+            <e-accordion-accordionitem header="Video-1"></e-accordion-accordionitem>
+            <e-accordion-accordionitem header="Video-2"></e-accordion-accordionitem>
+        </e-accordion-accordionitems>
+    </ejs-accordion>
+</div>
+
+<div style="display: none">
+    <ejs-accordion id="childNested2">
+        <e-accordion-accordionitems>
+            <e-accordion-accordionitem header="Music-1"></e-accordion-accordionitem>
+            <e-accordion-accordionitem header="Music-2"></e-accordion-accordionitem>
+            <e-accordion-accordionitem header="New Playlist" expanded="true" content="#childNested4"></e-accordion-accordionitem>
+        </e-accordion-accordionitems>
+    </ejs-accordion>
+</div>
+
+<div style="display: none">
+    <ejs-accordion id="childNested3">
+        <e-accordion-accordionitems>
+            <e-accordion-accordionitem header="Image-1"></e-accordion-accordionitem>
+            <e-accordion-accordionitem header="Image-2"></e-accordion-accordionitem>
+        </e-accordion-accordionitems>
+    </ejs-accordion>
+</div>
+
+<div style="display: none">
+    <ejs-accordion id="childNested4">
+        <e-accordion-accordionitems>
+            <e-accordion-accordionitem header="New Track-1"></e-accordion-accordionitem>
+            <e-accordion-accordionitem header="New Track-2"></e-accordion-accordionitem>
+        </e-accordion-accordionitems>
+    </ejs-accordion>
+</div>
+
+<ejs-accordion id="ParentNested" width="50%" expandMode="Multiple">
+    <e-accordion-accordionitems>
+        <e-accordion-accordionitem header="Videos" expanded="true" content='#childNested1'></e-accordion-accordionitem>
+        <e-accordion-accordionitem header="Music" expanded="true" content='#childNested2'></e-accordion-accordionitem>
+        <e-accordion-accordionitem header="Images" expanded="true" content='#childNested3'></e-accordion-accordionitem>
+    </e-accordion-accordionitems>
+</ejs-accordion>

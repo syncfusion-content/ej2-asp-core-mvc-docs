@@ -1,0 +1,1 @@
+@Html.EJS().Menu("menu").Items(ViewBag.menuItems).Fields(ViewBag.menuFields).Render()

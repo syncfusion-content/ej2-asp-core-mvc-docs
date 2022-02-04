@@ -1,0 +1,2 @@
+@*To render ColorPicker.*@
+<ejs-colorpicker id="element"></ejs-colorpicker>

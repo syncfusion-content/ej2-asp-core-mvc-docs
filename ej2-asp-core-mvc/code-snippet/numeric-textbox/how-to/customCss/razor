@@ -1,0 +1,33 @@
+@Html.EJS().NumericTextBox("numeric").Value(10).Placeholder("numeric").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).CssClass("e-style").Render()
+<style>
+    .e-numeric.e-style .e-control.e-numerictextbox {
+        color: royalblue;
+        font-size: xx-large;
+        border: 0px;
+    }
+
+    .e-input-group.e-control-wrapper:not(.e-success):not(.e-warning):not(.e-error):not(.e-float-icon-left), .e-float-input.e-control-wrapper:hover:not(.e-success):not(.e-warning):not(.e-error):not(.e-disabled):not(.e-float-icon-left) {
+        border-color: royalblue;
+    }
+
+    .e-control-wrapper.e-numeric.e-float-input.e-style .e-spin-down {
+        color: royalblue;
+    }
+
+    .e-control-wrapper.e-numeric.e-float-input.e-style .e-float-line::before {
+        background: royalblue;
+    }
+
+    .e-control-wrapper.e-numeric.e-float-input.e-style .e-float-line::after {
+        background: royalblue;
+    }
+
+    .e-control-wrapper.e-numeric.e-float-input.e-style .e-spin-up {
+        color: royalblue;
+    }
+
+    .e-control-wrapper.e-numeric.e-float-input.e-style.e-input-group .e-float-text.e-label-top {
+        color: royalblue;
+        font-size: medium;
+    }
+</style>

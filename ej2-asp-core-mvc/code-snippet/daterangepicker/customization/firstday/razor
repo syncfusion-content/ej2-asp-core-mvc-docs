@@ -1,0 +1,1 @@
+@Html.EJS().DateRangePicker("element").FirstDayOfWeek(2).Render()

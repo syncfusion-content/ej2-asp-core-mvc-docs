@@ -1,0 +1,135 @@
+@using Syncfusion.EJ2.Navigations;
+
+@{
+    var content1 = "<button class='e-btn' id='media_btn'></button>";
+    var content2 = "<button class='e-btn' id='zoom_btn'></button>";
+    var content3 = "<button class='e-btn' id='undo_btn'></button>";
+    var content4 = "<button class='e-btn' id='filter_btn'></button>";
+    var content5 = "<button class='e-btn' id='visible_btn'></button>";
+}
+<ejs-toolbar id="defaultToolbar" created="created">
+    <e-toolbar-items>
+        <e-toolbar-item template=content1></e-toolbar-item>
+        <e-toolbar-item type="Separator"></e-toolbar-item>
+        <e-toolbar-item template=content2></e-toolbar-item>
+        <e-toolbar-item type="Separator"></e-toolbar-item>
+        <e-toolbar-item template=content3></e-toolbar-item>
+        <e-toolbar-item type="Separator"></e-toolbar-item>
+        <e-toolbar-item template=content4></e-toolbar-item>
+        <e-toolbar-item type="Separator"></e-toolbar-item>
+        <e-toolbar-item template=content5></e-toolbar-item>
+    </e-toolbar-items>
+</ejs-toolbar>
+
+<script type="text/javascript">
+     function created() {
+         zoomBtn = new ej.buttons.Button({ cssClass: `e-flat`, iconCss: 'e-icons e-zoomin-icon', isToggle: true });
+         zoomBtn.appendTo('#zoom_btn');
+
+         mediaBtn = new ej.buttons.Button({ cssClass: `e-flat`, iconCss: 'e-icons e-play-icon', isToggle: true });
+         mediaBtn.appendTo('#media_btn');
+
+         undoBtn = new ej.buttons.Button({ cssClass: `e-flat`, iconCss: 'e-icons e-undo-icon', isToggle: true });
+         undoBtn.appendTo('#undo_btn');
+
+         filterBtn = new ej.buttons.Button({ cssClass: `e-flat`, iconCss: 'e-icons e-filter-icon', isToggle: true });
+         filterBtn.appendTo('#filter_btn');
+
+         visibleBtn = new ej.buttons.Button({ cssClass: `e-flat`, iconCss: 'e-icons e-hide-icon', isToggle: true, content: 'Hide' });
+         visibleBtn.appendTo('#visible_btn');
+
+         document.getElementById('zoom_btn').onclick = () => {
+             if (document.getElementById('zoom_btn').classList.contains('e-active')) {
+                 zoomBtn.iconCss = 'e-icons e-zoomout-icon';
+             } else {
+                 zoomBtn.iconCss = 'e-icons e-zoomin-icon';
+             }
+         };
+         document.getElementById('media_btn').onclick = () => {
+             if (document.getElementById('media_btn').classList.contains('e-active')) {
+                 mediaBtn.iconCss = 'e-icons e-pause-icon';
+             } else {
+                 mediaBtn.iconCss = 'e-icons e-play-icon';
+             }
+         };
+         document.getElementById('undo_btn').onclick = () => {
+             if (document.getElementById('undo_btn').classList.contains('e-active')) {
+                 undoBtn.iconCss = 'e-icons e-redo-icon';
+             } else {
+                 undoBtn.iconCss = 'e-icons e-undo-icon';
+             }
+         };
+         document.getElementById('filter_btn').onclick = () => {
+             if (document.getElementById('filter_btn').classList.contains('e-active')) {
+                 filterBtn.iconCss = 'e-icons e-filternone-icon';
+             } else {
+                 filterBtn.iconCss = 'e-icons e-filter-icon';
+             }
+         };
+         document.getElementById('visible_btn').onclick = () => {
+             if (document.getElementById('visible_btn').classList.contains('e-active')) {
+                 document.getElementById('content').style.display = 'none';
+                 visibleBtn.content = 'Show';
+                 visibleBtn.iconCss = 'e-icons e-show-icon';
+             } else {
+                 document.getElementById('content').style.display = 'block';
+                 visibleBtn.content = 'Hide';
+                 visibleBtn.iconCss = 'e-icons e-hide-icon';
+             }
+         };
+     }
+</script>
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-hide-icon::before {
+        content: '\e81d';
+    }
+
+    .e-show-icon::before {
+        content: '\e7cb';
+    }
+
+    .e-filter-icon::before {
+        content: '\e818';
+    }
+
+    .e-filternone-icon::before {
+        content: '\e819';
+    }
+
+    .e-undo-icon::before {
+        content: '\e76e';
+    }
+
+    .e-redo-icon::before {
+        content: '\e726';
+    }
+
+    .e-play-icon::before {
+        content: '\e798';
+    }
+
+    .e-pause-icon::before {
+        content: '\e753';
+    }
+
+    .e-zoomin-icon::before {
+        content: '\e7b7';
+    }
+
+    .e-zoomout-icon::before {
+        content: '\e81c';
+    }
+</style>

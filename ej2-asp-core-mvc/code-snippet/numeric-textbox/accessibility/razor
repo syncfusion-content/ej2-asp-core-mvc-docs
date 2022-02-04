@@ -1,0 +1,1 @@
+@Html.EJS().NumericTextBox("numeric").Value(10).Render()

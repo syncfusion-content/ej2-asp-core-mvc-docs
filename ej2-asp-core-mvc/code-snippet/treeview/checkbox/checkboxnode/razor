@@ -1,0 +1,8 @@
+@Html.EJS().TreeView("treedata").ShowCheckBox(true).NodeChecked("nodeChecked").Fields(field=>
+    field.Id("id").ParentID("pid").Text("name").HasChildren("hasChild").Expanded("expanded")
+    .DataSource(ViewBag.dataSource)).CheckedNodes(ViewBag.checkedNodes).Render()
+<script>
+    function nodeChecked(args) {
+        alert("The checked node's id: " + this.checkedNodes); // To alert the checked node's id.
+    }
+</script>

@@ -1,0 +1,11 @@
+@Html.EJS().DateRangePicker("daterangepicker").Placeholder("Select a Range").Render()
+
+<script>
+    document.addEventListener('keyup', function (e) {
+        if (e.altKey && e.keyCode === 84) {
+            // press alt+t to focus the control.
+            var daterangepickerObject = document.getElementById("daterangepicker").ej2_instances[0];
+            daterangepickerObject.element.focus();
+        }
+    })
+</script>

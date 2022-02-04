@@ -1,0 +1,1 @@
+@Html.EJS().DatePicker("element").Format("dd/MM/yyyy").Value(ViewBag.value).Min(ViewBag.minDate).Max(ViewBag.maxDate).Placeholder("Enter date").Render()

@@ -1,0 +1,3 @@
+@Html.EJS().TreeView("treedata").AllowDragAndDrop(true).AllowMultiSelection(true).Fields(field=>
+    field.Selected("is_selected").Id("id").ParentID("pid").Text("name").HasChildren("hasChild").Expanded("expanded")
+    .DataSource(ViewBag.dataSource)).Render()

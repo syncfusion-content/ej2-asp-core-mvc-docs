@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.Navigations;
+
+@(Html.EJS().Toolbar("defaultToolbar")
+    .Width("600px")
+    .Items(new List<ToolbarItem> {
+        new ToolbarItem { Text="Cut", PrefixIcon = "e-cut-icon tb-icons", TooltipText = "Cut" },
+        new ToolbarItem { Text="Copy", PrefixIcon = "e-copy-icon tb-icons", TooltipText = "Copy" },
+        new ToolbarItem { Text="Paste", PrefixIcon = "e-paste-icon tb-icons", TooltipText = "Paste" },
+        new ToolbarItem { Type = ItemType.Separator },
+        new ToolbarItem { Text="Bold", PrefixIcon = "e-bold-icon tb-icons", TooltipText = "Bold" },
+        new ToolbarItem { Text="Underline", PrefixIcon = "e-underline-icon tb-icons", TooltipText = "Underline" },
+        new ToolbarItem { Text="Italic", PrefixIcon = "e-italic-icon tb-icons", TooltipText = "Italic" },
+        new ToolbarItem { Text="Color Picker", PrefixIcon = "e-color-icon tb-icons", TooltipText = "Color-Picker" }
+    })
+    .Render()
+)

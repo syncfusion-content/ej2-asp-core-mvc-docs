@@ -1,0 +1,20 @@
+<label>Float label type as auto</label>
+<div class="multiline">
+    <ejs-textbox multiline="true" floatLabelType="Auto" placeholder="Enter your address" id="multiline-auto"></ejs-textbox>
+</div>
+<label>Float label type as always</label>
+<div class="multiline">
+    <ejs-textbox multiline="true" floatLabelType="Always" placeholder="Enter your address" id="multiline-always"></ejs-textbox>
+</div>
+<label>Float label type as never</label>
+<div class="multiline">
+    <ejs-textbox multiline="true" floatLabelType="Never" placeholder="Enter your address" id="multiline-never"></ejs-textbox>
+</div>
+
+<style>
+    .multiline {
+        margin-top: 10px;
+        width: 20%;
+    }
+
+</style>

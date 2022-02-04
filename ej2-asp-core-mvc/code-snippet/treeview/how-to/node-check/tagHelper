@@ -1,0 +1,18 @@
+<ejs-treeview id="treedata"  showCheckBox="true" nodeClicked="nodeCheck" keyPress="nodeCheck">
+        <e-treeview-fields dataSource="ViewBag.dataSource" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded" selected="is_selected"></e-treeview-fields>
+ </ejs-treeview>
+
+<script>
+    function nodeCheck(args){
+        var checkedNode = [args.node];
+        var treeObj = document.getElementById('treedata').ej2_instances[0];
+        if (args.event.target.classList.contains('e-fullrow') || args.event.key == "Enter") {
+            var getNodeDetails = treeObj.getNode(args.node);
+            if (getNodeDetails.isChecked == 'true') {
+                treeObj.uncheckAll(checkedNode);
+            } else {
+                treeObj.checkAll(checkedNode);
+            }
+        }
+    }
+</script>

@@ -1,0 +1,1 @@
+@Html.EJS().Calendar("element").Value(ViewBag.value).Min(ViewBag.minDate).Max(ViewBag.maxDate).Render()

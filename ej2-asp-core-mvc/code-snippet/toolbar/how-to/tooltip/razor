@@ -1,0 +1,10 @@
+@(Html.EJS().Toolbar("defaultToolbar")
+    .Items(new List<ToolbarItem> {
+        new ToolbarItem { Type = ItemType.Button, TooltipText = "Cut", Text = "Cut" },
+        new ToolbarItem { Type = ItemType.Button, TooltipText = "Copy", Text = "Copy" },
+        new ToolbarItem { Type = ItemType.Button, TooltipText = "Paste", Text = "Paste" },
+        new ToolbarItem { Type = ItemType.Button, TooltipText = "Undo", Text = "Undo" },
+        new ToolbarItem { Type = ItemType.Button, TooltipText = "Redo", Text = "Redo" }
+    })
+    .Render()
+)

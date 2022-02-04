@@ -1,0 +1,15 @@
+@Html.EJS().Breadcrumb("itemTemplate").ItemTemplate("#chipTemplate").CssClass("e-breadcrumb-chips").Items(item =>
+{
+    item.Text("Cart").Add();
+    item.Text("Billing").Add();
+    item.Text("Shipping").Add();
+    item.Text("Payment").Add();
+}).Render()
+
+<script id="chipTemplate" type="text/x-template">
+    <div class="e-lib e-chip-list e-control e-chip-set">
+        <div class="e-chip" tabindex="0" role="option" aria-label="Apple" aria-selected="false">
+            <span class="e-chip-text">${text}</span>
+        </div>
+    </div>
+</script>

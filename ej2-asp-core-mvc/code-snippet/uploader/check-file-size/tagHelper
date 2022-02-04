@@ -1,0 +1,20 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" };
+}
+
+<div class="col-lg-8 control-section">
+    <div class="control_wrapper">
+        <ejs-uploader id="UploadFiles" asyncSettings="@asyncSettings" autoUpload="false" uploading="onBeforeUpload">
+        </ejs-uploader>
+    </div>
+</div>
+
+<script>
+    function onBeforeUpload(args) {
+        var uploadObj = document.getElementById("UploadFiles").ej2_instances[0];
+        // get the file size in bytes
+        var sizeInBytes = args.fileData.size;
+        // get the file size in standard format
+        alert("File size is: " + uploadObj.bytesToSize(sizeInBytes))
+    }
+</script>

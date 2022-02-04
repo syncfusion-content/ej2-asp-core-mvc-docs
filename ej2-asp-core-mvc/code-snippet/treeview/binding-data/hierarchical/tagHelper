@@ -1,0 +1,3 @@
+ <ejs-treeview id="hierarchical">
+                    <e-treeview-fields child="ViewBag.child" dataSource="ViewBag.data" id="code" text="name" selected="selected" expanded="expanded"></e-treeview-fields>
+</ejs-treeview>

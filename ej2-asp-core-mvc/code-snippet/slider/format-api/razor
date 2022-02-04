@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Inputs
+     @Html.EJS().Slider("default").Min(0).Max(1).Value("0.3").Step(0.01).Tooltip(new SliderTooltipData { IsVisible = true, ShowOn = TooltipShowOn.Always, Format = "P0" ,Placement=TooltipPlacement.Before}).Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 0.2, SmallStep = 0.1, ShowSmallTicks = true, Format = "P0" }).Render()

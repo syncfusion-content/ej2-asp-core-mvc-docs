@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.Navigations;
+
+<ejs-toolbar id="defaultToolbar" width="600px">
+    <e-toolbar-items>
+        <e-toolbar-item text="Cut" prefixIcon="e-cut-icon tb-icons" tooltipText="Cut"></e-toolbar-item>
+        <e-toolbar-item text="Copy" prefixIcon="e-copy-icon tb-icons" tooltipText="Copy"></e-toolbar-item>
+        <e-toolbar-item text="Paste" prefixIcon="e-paste-icon tb-icons" tooltipText="Paste"></e-toolbar-item>
+        <e-toolbar-item type="Separator"></e-toolbar-item>
+        <e-toolbar-item text="Bold" prefixIcon="e-bold-icon tb-icons" tooltipText="Bold"></e-toolbar-item>
+        <e-toolbar-item text="Underline" prefixIcon="e-underline-icon tb-icons" tooltipText="Underline"></e-toolbar-item>
+        <e-toolbar-item text="Italic" prefixIcon="e-italic-icon tb-icons" tooltipText="Italic"></e-toolbar-item>
+        <e-toolbar-item text="Color Picker" prefixIcon="e-color-icon tb-icons" tooltipText="Color-Picker"></e-toolbar-item>
+    </e-toolbar-items>
+</ejs-toolbar>

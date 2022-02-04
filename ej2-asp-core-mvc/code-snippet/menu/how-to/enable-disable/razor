@@ -1,0 +1,41 @@
+@Html.EJS().Button("enableAll").Content("Enable all items").Created("btnCreated").Render()
+<div class="menu-section">
+    @Html.EJS().Menu("menu").Items(ViewBag.data).Created("created").BeforeOpen("beforeOpen").Render()
+</div>
+
+<style>
+    .menu-section {
+        margin-top: 100px;
+        text-align: center;
+    }
+    body {
+        margin-top: 100px;
+        text-align: center;
+    }
+</style>
+<script>
+    var disableItems = ['Conferences', 'Music', 'Directory'], menuObj;
+    function beforeOpen(args) {
+        menuObj = ej.base.getComponent(document.getElementById("menu"), "menu");
+        //Handling sub menu items
+        for (var i = 0; i < args.items.length; i++) {
+            if (disableItems.indexOf(args.items[i].text) > -1) {
+                menuObj.enableItems([args.items[i].text], false, false);
+            }
+        }
+    }
+    function created(args) {
+        menuObj = ej.base.getComponent(document.getElementById("menu"), "menu");
+        //Disable items
+        menuObj.enableItems(disableItems, false, false);
+    }
+    function btnCreated(args) {
+        var buttonObj = ej.base.getInstance(document.getElementById("showAll"), ej.buttons.Button);
+        buttonObj.element.onclick = () => {
+            //Enable items
+            menuObj.enableItems(disableItems, true, false);
+            disableItems = [];
+        }
+    }
+   
+</script>

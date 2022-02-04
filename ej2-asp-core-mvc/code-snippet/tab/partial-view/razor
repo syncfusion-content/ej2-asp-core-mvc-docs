@@ -1,0 +1,72 @@
+<div id='GridOrder1'></div>
+<div id='GridOrder2'></div>
+
+@Html.EJS().Tab("MainTab").Created("Created").Selecting("Selecting").Render()
+
+<script>
+   function Created() {
+        var TabObj = document.getElementById("MainTab").ej2_instances[0];
+        var ajax = new ej.base.Ajax('@Url.Action("PartialView1", "Home")', 'GET', true);
+        ajax.send().then();
+        ajax.onSuccess = function (data) {
+            TabObj.addTab([{ header: { 'text': 'Grid1' }, content: "#GridOrder1" }], 0);
+            TabObj.addTab([{ header: { 'text': 'Grid2' }, content: "#GridOrder2" }], 1);
+            $("#GridOrder1").html(data);
+        }
+    }
+    function Selecting(e) {
+        if (e.selectingIndex != 0){
+            var ajax = new ej.base.Ajax('@Url.Action("PartialView2", "Home")', 'GET', true);
+            ajax.send().then();
+            ajax.onSuccess = function (data) {
+                $("#GridOrder2").html(data);
+            }
+        }
+    }
+</script>
+
+
+//Code in the PartialView1
+
+<h2>Grid</h2>
+
+@(Html.EJS().Grid("Grid1").Height(250)
+        .DataSource(dataManger =>
+        {
+            dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").CrossDomain(true).Adaptor("WebApiAdaptor");
+        })
+        .Columns(col =>
+        {
+            col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("CustomerID").HeaderText("Customer ID").Width("160").Add();
+            col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+        }).AllowPaging().PageSettings(page => page.PageCount(3))
+        .Render()
+)
+
+@Html.EJS().ScriptManager()
+
+//Code in the PartialView2
+
+<h2>Grid</h2>
+
+@(Html.EJS().Grid("Grid2")
+        .DataSource(dataManger =>
+        {
+            dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/Products").CrossDomain(true).Adaptor("ODataV4Adaptor");
+        })
+        .Columns(col =>
+        {
+            col.Field("ProductID").HeaderText("Product ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("ProductName").HeaderText("Product Name").Width("150").Add();
+            col.Field("UnitPrice").HeaderText("Supplier ID").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("UnitsInStock").HeaderText("QuantityPerUnit").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("Discontinued").HeaderText("Discontinued").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Type("boolean").DisplayAsCheckBox(true).Add();
+        })
+        .AllowPaging()
+        .Render()
+)
+
+@Html.EJS().ScriptManager()

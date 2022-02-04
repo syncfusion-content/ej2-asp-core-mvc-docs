@@ -1,0 +1,41 @@
+<ejs-button id="enableAll" content="Enable all items" created="btnCreated"></ejs-button>
+<div class="menu-section">
+    <ejs-menu id="menu" items="ViewBag.data" created="created" beforeOpen="beforeOpen"></ejs-menu>
+</div>
+<style>
+    .menu-section {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    body {
+        margin-top: 100px;
+        text-align: center;
+    }
+</style>
+<script>
+    var disableItems = ['Conferences', 'Music', 'Directory'];
+    function beforeOpen(args) {
+        menuObj = ej.base.getInstance(document.getElementById("menu"), ejs.navigations.Menu);
+        // Handling sub menu items
+        for (var i = 0; i < args.items.length; i++) {
+            if (disableItems.indexOf(args.items[i].text) > -1) {
+                menuObj.enableItems([args.items[i].text], false, false);
+            }
+        }
+    }
+    function created() {
+        menuObj = ej.base.getInstance(document.getElementById("menu"), ejs.navigations.Menu);
+        // Disable items
+        menuObj.enableItems(disableItems, false, false);
+    }
+    function btnCreated() {
+        buttonObj = ej.base.getInstance(document.getElementById("enableAll"), ejs.buttons.Button);
+        buttonObj.element.onclick = () => {
+            // Enable items
+            menuObj.enableItems(disableItems, true, false);
+            disableItems = [];
+        }
+    }
+
+</script>

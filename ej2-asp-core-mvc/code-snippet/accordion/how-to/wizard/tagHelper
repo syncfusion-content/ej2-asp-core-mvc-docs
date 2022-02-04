@@ -1,0 +1,273 @@
+@using Syncfusion.EJ2
+
+<div class="accordion-control-section">
+    <div class="accordion-control-section">
+        <div class='template_title'> Online Shopping Payment Module</div>
+        <ejs-accordion id="element" created="created" expanding="expand">
+            <e-content-template>
+                <div>
+                    <div>
+                        Sign In
+                    </div>
+                    <div>
+                        <div id="Sign_In_Form" style="padding:10px">
+                            <form id="formId">
+                                <div class="form-group">
+                                    <div class="e-float-input">
+                                        <input type="text" id="email" name="Email" required="" />
+                                        <span class="e-float-line"></span>
+                                        <label class="e-float-text" for="email">Email</label>
+                                    </div>
+                                    <div class="e-float-input">
+                                        <input class="e-input" id="password" type="password" name="Password" required="" />
+                                        <span class="e-float-line"></span>
+                                        <label class="e-float-text" for="password">Password</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <div style="text-align: center">
+                                <button class='e-btn' id="Continue_Btn">Continue</button>
+                                <div id="err1">* Please fill all fields</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Delivery Address
+                    </div>
+                    <div>
+                        <div id="Address_Fill" style="padding:10px">
+                            <form id="formId_Address">
+                                <div class="form-group">
+                                    <div class="e-float-input">
+                                        <input type="text" id="name" name="Name" required="" />
+                                        <span class="e-float-line"></span>
+                                        <label class="e-float-text" for="name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="e-float-input">
+                                        <input type="text" id="address" name="Address" required="" />
+                                        <span class="e-float-line"></span>
+                                        <label class="e-float-text" for="address">Address</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <ejs-numerictextbox id="mobile" placeholder="Mobile" floatLabelType="Auto" format=0 showSpinButton="false"></ejs-numerictextbox>
+                                </div>
+                            </form>
+                            <div style="text-align: center">
+                                <button class='e-btn' id="Continue_BtnAdr">Continue</button>
+                                <div id="err2">* Please fill all fields</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Card Details
+                    </div>
+                    <div>
+                        <div id="Card_Fill" style="padding:10px">
+                            <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <ejs-numerictextbox id="cardNo" placeholder="Card No" floatLabelType="Auto" format=0 showSpinButton="false"></ejs-numerictextbox>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <div class="e-float-input">
+                                        <input type="text" id="cardHolder" name="cardHolder" required="" />
+                                        <span class="e-float-line"></span>
+                                        <label class="e-float-text" for="cardHolder">CardHolder Name</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+                                <ejs-datepicker id="expiry" width="100%" placeholder="Expiry Date" format="MM/yyyy" readonly="false"></ejs-datepicker>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <ejs-numerictextbox id="CVV" placeholder="CVV" floatLabelType="Auto" format=0 showSpinButton="false"></ejs-numerictextbox>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: center">
+                            <button class='e-btn' id="Back_Btn">Back</button>
+                            <button class='e-btn' id="Save_Btn">Save</button>
+                            <div id="err3">* Please fill all fields</div>
+                        </div>
+                    </div>
+                </div>
+            </e-content-template>
+        </ejs-accordion>
+    </div>
+    <div>
+        <ejs-dialog id="alertDialog" header="Alert" target="#element" showCloseIcon="true" width="250" isModal="true" created="dlgCreated" content="" visible="false"></ejs-dialog>
+    </div>
+</div>
+
+<style>
+    .accordion-control-section {
+        margin: 0 10% 0 10%;
+    }
+
+    @@media screen and (max-width: 768px) {
+        .accordion-control-section {
+            margin: 0;
+        }
+    }
+
+    #err1, #err2, #err3 {
+        display: none;
+        color: red;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+
+    #err1.show,
+    #err2.show,
+    #err3.show {
+        display: block;
+    }
+
+    .e-dialog {
+        max-height: 300px !important;
+    }
+
+    .template_title {
+        text-align: center;
+        padding: 10px 0;
+        margin: 20px 0;
+        text-overflow: ellipsis;
+        font-weight: bold;
+        font-size: 16px;
+    }
+</style>
+
+<script>
+    var success = 'Your payment successfully processed';
+    var email_alert = 'Enter valid email address';
+    var mobile_alert = 'Mobile number length should be 10';
+    var card_alert = 'Card number length should be 16';
+    var cvv_alert = 'CVV number length should be 3';
+    var alertDlg;
+    var acrdnObj;
+    function dlgCreated() {
+        alertDlg = document.getElementById("alertDialog").ej2_instances[0];
+        alertDlg.buttons = [{
+            buttonModel: { content: "Ok", isPrimary: true },
+            click: function () {
+                alertDlg.hide();
+                if (acrdnObj.expandedIndices[0] === 2 && alertDlg.content === success) {
+                    acrdnObj.enableItem(0, true);
+                    acrdnObj.enableItem(1, false);
+                    acrdnObj.enableItem(2, false);
+                    acrdnObj.expandItem(true, 0);
+                }
+            }
+        }];
+        alertDlg.dataBind();
+        alertDlg.hide();
+    }
+    function checkMail(mail) {
+        if (/^\w+([\.-]?\w+)*@@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+            return (true);
+        } else {
+            alertDlg.content = email_alert;
+            alertDlg.show();
+            return (false);
+        }
+    }
+    function checkMobile(mobile) {
+        if (mobile.match(/^\d{10}$/)) {
+            return (true);
+        } else {
+            alertDlg.content = mobile_alert;
+            alertDlg.show();
+            return (false);
+        }
+    }
+    function checkCardNo(cardNo) {
+        if (cardNo.match(/^\d{16}$/)) {
+            return (true);
+        } else {
+            alertDlg.content = card_alert;
+            alertDlg.show();
+            return (false);
+        }
+    }
+    function checkCVV(cvv) {
+        if (cvv.match(/^\d{3}$/)) {
+            return (true);
+        } else {
+            alertDlg.content = cvv_alert;
+            alertDlg.show();
+            return (false);
+        }
+    }
+    function created(e) {
+        acrdnObj = document.getElementById("element").ej2_instances[0];
+        acrdnObj.enableItem(1, false);
+        acrdnObj.enableItem(2, false);
+    }
+    function expand(e) {
+        if (e.name === 'expanding' && (e.index === 0)) {
+            document.getElementById('Continue_Btn').onclick = (e) => {
+                var email = document.getElementById('email');
+                var password = document.getElementById('password');
+                if (email.value !== '' && password.value !== '') {
+                    if (checkMail(email.value)) {
+                        email.value = password.value = '';
+                        acrdnObj.enableItem(1, true);
+                        acrdnObj.enableItem(0, false);
+                        acrdnObj.expandItem(true, 1);
+                    }
+                    document.getElementById('err1').classList.remove('show');
+                } else {
+                    document.getElementById('err1').classList.add('show');
+                }
+            };
+        } else if (e.name === 'expanding' && (e.index === 1)) {
+            document.getElementById('Continue_BtnAdr').onclick = (e) => {
+                var name = document.getElementById('name');
+                var address = document.getElementById('address');
+                var mobile = document.getElementById('mobile');
+                if ((name.value !== '') && (address.value !== '') && (mobile.value !== '')) {
+                    if (checkMobile(mobile.value)) {
+                        acrdnObj.enableItem(2, true);
+                        acrdnObj.enableItem(1, false);
+                        acrdnObj.expandItem(true, 2);
+                    }
+                    document.getElementById('err2').classList.remove('show');
+                } else {
+                    document.getElementById('err2').classList.add('show');
+                }
+            };
+        } else if (e.name === 'expanding' && (e.index === 2)) {
+            document.getElementById('Back_Btn').onclick = (e) => {
+                acrdnObj.enableItem(1, true);
+                acrdnObj.enableItem(2, false);
+                acrdnObj.expandItem(true, 1);
+            };
+            document.getElementById('Save_Btn').onclick = (e) => {
+                var cardHolder = document.getElementById('cardHolder');
+                var expiry = document.getElementById('expiry');
+                var cardNo = document.getElementById('cardNo');
+                var cvv = document.getElementById('CVV');
+                if ((cardNo.value !== '') && (cardHolder.value !== '') && (expiry.value !== '') && (cvv.value !== '')) {
+                    if (checkCardNo(cardNo.value)) {
+                        if (checkCVV(cvv.value)) {
+                            alertDlg.content = success;
+                            alertDlg.show();
+                        }
+                    }
+                    document.getElementById('err3').classList.remove('show');
+                } else {
+                    document.getElementById('err3').classList.add('show');
+                }
+            };
+        }
+    }
+</script>
