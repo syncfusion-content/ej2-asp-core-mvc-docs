@@ -80,8 +80,6 @@ The following code example describes the previous behavior.
 The following output is displayed as a result of the previous code example.
 
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 ## Data Binding
 
 The Grid `datasource` property or `e-datamanager` child tag allows to bind datasource as the instance of one of the following types.
@@ -143,7 +141,3 @@ namespace samplebrowser.Controllers.Grid
 {% endtabs %} 
 
 The following output is displayed as a result of the previous code example.
-
-
-{% endif %}
-
