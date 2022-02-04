@@ -1,0 +1,18 @@
+<ejs-menu id="menu" items="ViewBag.menuItems" beforeItemRender="beforeItemRender"></ejs-menu>
+
+<script>
+function beforeItemRender(args) {
+    if (args.item.url) {
+        // To open url in blank page.
+        args.element.getElementsByTagName('a')[0].setAttribute('target', '_blank');
+    }
+}
+</script>
+
+<style>
+    body {
+        margin-top: 100px;
+        text-align: center;
+    }
+</style>
+

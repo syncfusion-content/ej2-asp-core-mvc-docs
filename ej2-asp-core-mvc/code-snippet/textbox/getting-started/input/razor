@@ -1,0 +1,5 @@
+<div class="control-section">
+    <div class="control_wrapper accordion-control-section">
+        @Html.EJS().TextBox("firstname").Placeholder("First Name").Render()
+    </div>
+</div>

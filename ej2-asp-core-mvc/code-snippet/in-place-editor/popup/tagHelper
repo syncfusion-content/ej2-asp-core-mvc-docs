@@ -1,0 +1,44 @@
+<div id='container'>
+    <table class="table-section">
+        <tr>
+            <td> Position: </td>
+            <td>
+                <ejs-dropdownlist id="dropDown" width="auto" dataSource="ViewBag.positionData" change="onChange" value="ViewBag.text" placeholder="Select a position" popupHeight="150px"></ejs-dropdownlist>
+            </td>
+        </tr>
+        <tr>
+            <td class="edit-heading sample-td"> Enter your name: </td>
+            <td class="sample-td">
+                <ejs-inplaceeditor id="element" model="ViewBag.modelData" mode="Popup" value="ViewBag.textValue">
+                    <e-inplaceeditor-popupsettings title="Enter name" model="ViewBag.model"></e-inplaceeditor-popupsettings>
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    .sample-td {
+        padding-top: 150px;
+    }
+
+    .edit-heading {
+        padding-right: 20px;
+    }
+</style>
+<script>
+    function onChange(e) {
+        var editObj = document.getElementById('element').ej2_instances[0];
+        editObj.popupSettings.model.position = e.value;
+        editObj.dataBind();
+    }
+</script>

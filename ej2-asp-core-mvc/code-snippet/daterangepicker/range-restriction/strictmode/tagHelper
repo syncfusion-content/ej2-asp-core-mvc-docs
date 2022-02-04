@@ -1,0 +1,1 @@
+<ejs-daterangepicker id="daterangepicker"  strictMode="true" placeholder="Enter a Range" min="@ViewBag.minDate" max="@ViewBag.maxDate" startDate="@ViewBag.startDate" endDate="@ViewBag.endDate"></ejs-daterangepicker>

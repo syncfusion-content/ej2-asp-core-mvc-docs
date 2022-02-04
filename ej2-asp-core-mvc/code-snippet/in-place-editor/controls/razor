@@ -1,0 +1,126 @@
+@using Syncfusion.EJ2.InPlaceEditor
+
+<div id='container'>
+    <h3> Built-in Controls </h3>
+    <table class="table-section">
+        <tr>
+            <td class="col-lg-6 control-title"> DatePicker </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("date").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.Date).Value(ViewBag.dateValue).Model(ViewBag.dateModelData).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> DateTimePicker </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("dateTime").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.DateTime).Value(ViewBag.dateTimeValue).Model(ViewBag.dateModelData).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> DropDownList </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("dropDowns").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.DropDownList).Value(ViewBag.dropDownValue).Model(ViewBag.dropModelData).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> MaskedTextBox </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("masked").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.Mask).Value(ViewBag.maskValue).Model(ViewBag.maskModelData).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> NumericTextBox </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("numeric").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.Numeric).Value(10).Model(ViewBag.numericModelData).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> TextBox </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("textbox").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.Text).Value(ViewBag.textValue).Model(ViewBag.textModelData).Render()
+            </td>
+        </tr>
+    </table>
+    <h3> Injectable Controls </h3>
+    <table class="table-section">
+        <tr>
+            <td class="col-lg-6 control-title"> AutoComplete </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("autoComplete").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.AutoComplete).Value(ViewBag.dropDownValue).Model(ViewBag.dropModelData).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> ColorPicker </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("color").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.Color).Value(ViewBag.colorValue).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> ComboBox </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("comboBox").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.ComboBox).Value(ViewBag.dropDownValue).Model(ViewBag.dropModelData).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> DateRangePicker </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("dateRange").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.DateRange).Value(ViewBag.dateRangeValue).Model(ViewBag.dateModelData).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> MultiSelect </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("multiSelect").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.MultiSelect).Value(ViewBag.dropDownValue).Model(ViewBag.dropModelData).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> RTE </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("rte").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.RTE).Value("Enter your content here").Model(ViewBag.rteModelData).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> Slider </td>
+            <td class="col-lg-6">
+                <div id="slider"></div>
+                @Html.EJS().InPlaceEditor("slider").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.Slider).Value(20).Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> TimePicker </td>
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("time").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.Time).Value(ViewBag.dateValue).Model(ViewBag.dateModelData).Render()
+            </td>
+        </tr>
+    </table>
+</div>
+<style>
+
+    body {
+        padding: 20px 0
+    }
+
+    .control-title {
+        font-weight: 600;
+        padding-right: 20px;
+    }
+
+    td {
+        height: 80px;
+    }
+
+    tr td:first-child {
+        text-align: right;
+    }
+
+    tr td:last-child {
+        text-align: left;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    h3 {
+        text-align: center;
+    }
+</style>

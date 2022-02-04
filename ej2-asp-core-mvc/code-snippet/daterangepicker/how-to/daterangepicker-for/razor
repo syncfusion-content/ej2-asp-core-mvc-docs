@@ -1,0 +1,11 @@
+@model EJ2CoreSampleBrowser.Controllers.DateRangePicker
+@using (Html.BeginForm())
+{
+    @Html.EJS().DateRangePickerFor(model => model.value).Render()
+    <div>
+        @Html.ValidationMessageFor(model => model.value)
+    </div>
+    <div id="submitbutton">
+        @Html.EJS().Button("btn").Content("Post").Render()
+    </div>
+}

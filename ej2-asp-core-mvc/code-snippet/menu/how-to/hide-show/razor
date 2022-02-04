@@ -1,0 +1,38 @@
+@Html.EJS().Button("showAll").Content("Show All items").Created("btnCreated").Render()
+<div class="menu-section">
+    @Html.EJS().Menu("menu").Items(ViewBag.data).Created("created").BeforeOpen("beforeOpen").Render()
+</div>
+<style>
+    .menu-section {
+        margin-top: 100px;
+        text-align: center;
+    }
+    body {
+        margin-top: 100px;
+        text-align: center;
+    }
+</style>
+<script>
+    var hiddenItems = ['Workshops', 'Music', 'Movies'], menuObj;
+    function beforeOpen(args) {
+        menuObj = ej.base.getComponent(document.getElementById("menu"), "menu");
+        //Handling sub menu items
+        for (var i = 0; i < args.items.length; i++) {
+            if (hiddenItems.indexOf(args.items[i].text) > -1) {
+                menuObj.hideItems([args.items[i].text], false);
+            }
+        }
+    }
+    function created(args) {
+        menuObj = ej.base.getComponent(document.getElementById("menu"), "menu");
+        menuObj.hideItems(hiddenItems, false);
+    }
+    function btnCreated(args) {
+        var buttonObj = ej.base.getInstance(document.getElementById("showAll"), ej.buttons.Button);
+        buttonObj.element.onclick = () => {
+            menuObj.showItems(hiddenItems, false);
+            hiddenItems = [];
+        }
+    }
+
+</script>

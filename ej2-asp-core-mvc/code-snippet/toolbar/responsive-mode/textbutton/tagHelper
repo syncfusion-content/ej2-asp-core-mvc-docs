@@ -1,0 +1,94 @@
+@using Syncfusion.EJ2.Navigations;
+
+<ejs-toolbar id="defaultToolbar" items="ViewBag.popItems" width="330" overflowMode="Popup"></ejs-toolbar>
+
+<style>
+    /* Toolbar Styles */
+    .e-cut-icon:before {
+        content: "\e604"
+    }
+
+    .e-copy-icon:before {
+        content: "\e70a"
+    }
+
+    .e-paste-icon:before {
+        content: "\e712"
+    }
+
+    .e-color-icon:before {
+        content: "\e703";
+    }
+
+    .e-bold-icon:before {
+        content: "\e339"
+    }
+
+    .e-underline-icon:before {
+        content: "\e706";
+    }
+
+    .e-alignleft-icon:before {
+        content: "\e717"
+    }
+
+    .e-alignright-icon:before {
+        content: "\e715"
+    }
+
+    .e-aligncenter-icon:before {
+        content: "\e704"
+    }
+
+    .e-alignjustify-icon:before {
+        content: "\e71b"
+    }
+
+    .e-upload-icon:before {
+        content: "\e71e"
+    }
+
+    .e-download-icon:before {
+        content: "\e70a"
+    }
+
+    .e-indent-icon:before {
+        content: "\e70b"
+    }
+
+    .e-outdent-icon:before {
+        content: "\e700"
+    }
+
+    .e-clear-icon:before {
+        content: "\e70d"
+    }
+
+    .e-reload-icon:before {
+        content: "\e71c"
+    }
+
+    .e-export-icon:before {
+        content: "\e720";
+    }
+
+    .e-italic-icon:before {
+        content: "\e710"
+    }
+
+    .e-bullets-icon:before {
+        content: "\e711";
+    }
+
+    .e-numbering-icon:before {
+        content: "\e70e";
+    }
+
+    .e-ascending-icon:before {
+        content: "\e70f";
+    }
+
+    .e-descending-icon:before {
+        content: "\e707";
+    }
+</style>

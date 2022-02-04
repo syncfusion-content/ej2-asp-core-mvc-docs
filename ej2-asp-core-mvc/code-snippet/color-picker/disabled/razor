@@ -1,0 +1,12 @@
+<div class='wrap'>
+    <h4>Disabled state</h4>
+    @Html.EJS().ColorPicker("element").Disabled(true).Render()
+</div>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+</style>

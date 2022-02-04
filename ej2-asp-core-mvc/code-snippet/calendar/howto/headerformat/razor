@@ -1,0 +1,1 @@
+@Html.EJS().Calendar("element").DayHeaderFormat(DayHeaderFormat.Short).Render()

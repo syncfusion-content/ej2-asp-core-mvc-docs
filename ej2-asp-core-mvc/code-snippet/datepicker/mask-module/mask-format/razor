@@ -1,0 +1,18 @@
+<div class="control-section">
+        <div class="control_wrapper">
+            <div class="pane">
+                <div class="tabs-wrap">
+                    <div class="wrap">
+                        // Specifies the masked DatePicker without format property.
+                        @Html.EJS().DatePicker("element").EnableMask("true").Render()
+                    </div>
+                </div>
+                <div class="tabs-wrap">
+                    <div class="wrap">
+                       // Specifies the masked DatePicker with format.
+                       @Html.EJS().DatePicker("element").EnableMask("true").Format("M/d/yyyy").Render()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

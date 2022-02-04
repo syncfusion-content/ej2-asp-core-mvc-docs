@@ -1,0 +1,3 @@
+<ejs-treeview id="treedata" allowDragAndDrop="true" allowMultiSelection="true">
+    <e-treeview-fields dataSource="ViewBag.dataSource" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded" selected="is_selected"></e-treeview-fields>
+</ejs-treeview>

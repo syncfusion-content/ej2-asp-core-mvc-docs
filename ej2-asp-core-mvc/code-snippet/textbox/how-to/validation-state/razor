@@ -1,0 +1,59 @@
+<div class="control-section">
+    <div class="control_wrapper accordion-control-section">
+        <div class="e-float-input e-input-group e-success">
+            <input type='text' required />
+            <span class="e-float-line"></span>
+            <label class="e-float-text">Success</label>
+        </div>
+        <div class="e-float-input e-input-group e-warning">
+            <input type='text' required />
+            <span class="e-float-line"></span>
+            <label class="e-float-text">Warning</label>
+        </div>
+    </div>
+</div>
+
+<script>
+    ej.base.enableRipple(true);
+
+    // To get the all input fields and its container.
+
+    var inputElement = document.querySelectorAll('.e-input-group .e-input,.e-float-input.e-input-group input');
+
+    // Add 'e-input-focus' class to the input for achive ripple effect when focus on the input field.
+
+    for (var i = 0; i < inputElement.length; i++) {
+        inputElement[i].addEventListener('focus', function () {
+            var parentElement = this.parentNode;
+            if (parentElement.classList.contains('e-input-in-wrap')) {
+                parentElement.parentNode.classList.add('e-input-focus');
+            } else {
+                this.parentNode.classList.add('e-input-focus');
+            }
+        });
+        inputElement[i].addEventListener('blur', function () {
+            var parentElement = this.parentNode;
+            if (parentElement.classList.contains('e-input-in-wrap')) {
+                parentElement.parentNode.classList.remove('e-input-focus');
+            } else {
+                this.parentNode.classList.remove('e-input-focus');
+            }
+        });
+    }
+</script>
+
+<style>
+    /* For Success state */
+    .e-float-input.e-success label.e-float-text,
+    .e-float-input.e-success input:focus ~ label.e-float-text,
+    .e-float-input.e-success input:valid ~ label.e-float-text {
+        color: #22b24b;
+    }
+
+    /* For Warning state */
+    .e-float-input.e-warning label.e-float-text,
+    .e-float-input.e-warning input:focus ~ label.e-float-text,
+    .e-float-input.e-warning input:valid ~ label.e-float-text {
+        color: #ffca1c;
+    }
+</style>

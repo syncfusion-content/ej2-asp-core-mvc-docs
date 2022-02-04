@@ -1,0 +1,7 @@
+<ejs-slider id="default" value="30" orientation="Vertical"></ejs-slider>
+
+<style>
+    #default {
+        height: 300px;
+    }
+</style>

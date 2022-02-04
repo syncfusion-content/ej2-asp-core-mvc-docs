@@ -1,0 +1,17 @@
+@model EJ2_Core.Controllers.FormData
+
+<ejs-datepicker ejs-for="@Model.date" id="date" change="submit" width="200px"></ejs-datepicker>
+
+
+<script>
+    function submit(args) {
+        var dateStr = args.value.toUTCString(); // Convert to UTC string
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("ChangeData")',
+            contentType: "application/json", // define content type
+            dataType: "json",
+            data: JSON.stringify({ 'date': dateStr}),   // pass data to controller
+        })
+    }
+</script>

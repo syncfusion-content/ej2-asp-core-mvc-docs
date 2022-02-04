@@ -1,0 +1,1 @@
+<ejs-daterangepicker id="dayspan" minDays="5" maxDays="10" placeholder="Select a Range"></ejs-daterangepicker>

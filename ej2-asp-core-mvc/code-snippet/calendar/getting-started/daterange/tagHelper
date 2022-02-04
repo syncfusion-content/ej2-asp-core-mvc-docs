@@ -1,0 +1,1 @@
+<ejs-calendar id="calendar" min="ViewBag.minDate" max="ViewBag.maxDate"></ejs-calendar>

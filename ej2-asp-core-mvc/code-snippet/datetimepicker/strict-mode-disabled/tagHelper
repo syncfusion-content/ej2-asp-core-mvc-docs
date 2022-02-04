@@ -1,0 +1,2 @@
+ <ejs-datetimepicker id="datetimepicker" min="@ViewBag.minDate" max="@ViewBag.maxDate" value="@ViewBag.value"></ejs-datetimepicker>
+ 

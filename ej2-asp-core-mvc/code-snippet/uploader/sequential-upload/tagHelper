@@ -1,0 +1,5 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" };
+}
+
+<ejs-uploader id="uploadFiles" sequentialUpload="true" asyncSettings="@asyncSettings"></ejs-uploader>

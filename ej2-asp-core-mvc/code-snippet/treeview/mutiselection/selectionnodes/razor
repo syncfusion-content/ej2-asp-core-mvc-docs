@@ -1,0 +1,9 @@
+ @Html.EJS().TreeView("treedata").AllowMultiSelection(true).NodeSelected("nodeSelected").Fields(field=>
+    field.Selected("is_selected").Id("id").ParentID("pid").Text("name").HasChildren("hasChild").Expanded("expanded")
+    .DataSource(ViewBag.dataSource)).SelectedNodes(ViewBag.selectedNodes).Render()
+ 
+<script>  
+function nodeselected() {
+        alert("The selected node's id: " + this.selectedNodes);
+    }
+</script>

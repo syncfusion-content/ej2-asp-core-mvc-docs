@@ -1,0 +1,34 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+@using Syncfusion.EJ2.InPlaceEditor;
+
+<div id='container'>
+    <table class="table-section">
+        <tr>
+            
+            <td class="col-lg-6">
+                @Html.EJS().InPlaceEditor("textBox").Mode(RenderMode.Inline).Type(Syncfusion.EJ2.InPlaceEditor.InputType.Numeric).Name("Number").ValidationRules(ViewBag.validationRules).Render()
+            </td>
+        </tr>
+       
+    </table>
+</div>
+
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    td {
+        padding: 20px 0;
+        min-width: 230px;
+        height: 100px;
+    }
+
+</style>

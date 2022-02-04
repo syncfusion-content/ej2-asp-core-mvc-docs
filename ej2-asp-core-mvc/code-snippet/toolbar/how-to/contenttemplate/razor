@@ -1,0 +1,28 @@
+@using Syncfusion.EJ2.Navigations;
+@using Syncfusion.EJ2.DropDowns;
+
+@(Html.EJS().Toolbar("defaultToolbar")
+    .ContentTemplate(
+        @<div>
+            <div>
+                <div>@Html.EJS().Button("btn").Content("Click").IsPrimary(true).Render()</div>
+                <div class='separator'> </div>
+                <div>@Html.EJS().MaskedTextBox("mask1").Mask("345-678-4673").Render() </div>
+                <div class='separator'> </div>
+                <div>@Html.EJS().RadioButton("radio1").Label("Credit/Debit Card").Name("payment").Value("credit/debit").Render() </div>
+                <div class='separator'> </div>
+                <div>
+                    @Html.EJS().DropDownList("games").Placeholder("Select a game").PopupHeight("220px").Index(2).DataSource(
+                            (IEnumerable<object>)ViewBag.data).Fields(new DropDownListFieldSettings { Text = "Game", Value = "Id" }).Render()
+                </div>
+            </div>
+        </div>
+    )
+    .Render()
+)
+
+<style>
+    .separator {
+        width: 10px;
+    }
+</style>

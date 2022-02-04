@@ -1,0 +1,8 @@
+@Html.EJS().Menu("menu").Items(ViewBag.menuItems).Render()
+
+<style>
+    body {
+        margin-top: 100px;
+        text-align: center;
+    }
+</style>

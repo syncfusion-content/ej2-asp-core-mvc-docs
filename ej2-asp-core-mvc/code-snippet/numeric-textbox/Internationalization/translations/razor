@@ -1,0 +1,8 @@
+@Html.EJS().NumericTextBox("numeric").Value(10).Locale("de").Render()
+<script>
+    ej.base.L10n.load({
+        'en': {
+            'numerictextbox': { incrementTitle: 'Wert erhöhen', decrementTitle: 'Dekrementwert' }
+        }
+    });
+</script>

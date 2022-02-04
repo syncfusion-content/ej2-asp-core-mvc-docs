@@ -1,0 +1,10 @@
+@model EJ2CoreSampleBrowser.Controllers.DatePicker
+<form method="post">
+    <ejs-datepicker id="datepickerFor" ejs-for="@Model.value"></ejs-datepicker>
+    <div id="errorMessage">
+        <span asp-validation-for="value"></span>
+    </div>
+    <div id="submitbutton">
+        <ejs-button id="submitButton" content="Submit"></ejs-button>
+    </div>
+</form>

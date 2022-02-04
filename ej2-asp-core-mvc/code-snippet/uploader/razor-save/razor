@@ -1,0 +1,14 @@
+ @{  
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl ="http://localhost:50707/Index?handler=Save", RemoveUrl = "http://localhost:50707/Index?handler=Remove" };  
+}  
+  
+@Html.AntiForgeryToken()  
+  
+<ejs-uploader id="uploadFiles" asyncSettings="@asyncSettings" multiple="false"autoUpload="false" uploading="addTokens"></ejs-uploader>  
+  
+  
+<script>  
+    function addTokens(args) {  
+        args.currentRequest.setRequestHeader('XSRF-TOKEN', document.getElementsByName('__RequestVerificationToken')[0].value);  
+    }  
+</script>  

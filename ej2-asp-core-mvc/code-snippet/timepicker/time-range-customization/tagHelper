@@ -1,0 +1,70 @@
+<div class=" control-section">
+    <div class="timepicker-section">
+        <div id="wrapper">
+            <div class="tabs-wrap">
+                <div class="wrap">
+                    <ejs-timepicker id="start" created="onStartCreate" placeholder="Start Time" change="onEnableEndTime"></ejs-timepicker>
+                </div>
+            </div>
+            <div class="tabs-wrap">
+                <div class="wrap">
+                    <ejs-timepicker id="end" created="onEndCreate" placeholder="End Time" enabled="false"></ejs-timepicker>
+                </div>
+            </div>
+            <div class="tabs-wrap">
+                <div class="wrap">
+                    <ejs-checkbox id="dayRange" label="Business Hours" change="changeTime"></ejs-checkbox>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        isStartTimeChange = true;
+        endInput = document.getElementById('end');
+    });
+    function onEnableEndTime(args) {
+        /*Enables end time if start time is selected*/
+        if (isStartTimeChange) {
+            endTime.enabled = true;
+            endTime.value = null;
+            endInput.value = '';
+            value = new Date(+args.value);
+            value.setMinutes(value.getMinutes() + endTime.step);
+            endTime.min = value;
+        } else {
+            isStartTimeChange = true;
+        }
+    }
+
+    function changeTime() {
+        /*To determine whether we have selected business hours or not*/
+        let element = document.getElementById('dayRange');
+        isStartTimeChange = false;
+        if (element.checked) {
+            /*Business hours*/
+            startTime.value = new Date('9/6/2017 9:00');
+            endTime.enabled = true;
+            endTime.value = new Date('9/6/2017 18:00');
+            startTime.readonly = true;
+            endTime.readonly = true;
+        } else {
+            endTime.value = null;
+            startTime.value = null;
+            endInput.value = '';
+            startTime.readonly = false;
+            endTime.readonly = false;
+            endTime.enabled = false;
+        }
+    }
+
+    function onStartCreate() {
+        startTime = document.getElementById('start').ej2_instances[0];
+    }
+    function onEndCreate() {
+        endTime = document.getElementById('end').ej2_instances[0];
+    }
+
+
+</script>

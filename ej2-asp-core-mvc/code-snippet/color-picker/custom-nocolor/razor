@@ -1,0 +1,114 @@
+<div class='wrap'>
+    <ul id="target" tabindex="0">
+        <li class="e-item e-palette-item">
+            @Html.EJS().ColorPicker("element").Mode(Syncfusion.EJ2.Inputs.ColorPickerMode.Palette).Inline(true).ModeSwitcher(false).ShowButtons(false).Columns(4).BeforeTileRender("tileRender").PresetColors(@ViewBag.customColors).Change("onChange").Render()
+        </li>
+        <li class="e-item" id="no-color" tabindex="-1">
+            <span class="e-menu-icon e-nocolor"></span>
+            No color
+        </li>
+    </ul>
+    <div id="preview"></div>
+    <h4>Select color</h4>
+    @Html.EJS().SplitButton("splitbtn").IconCss("e-cp-icons e-picker-icon").Target("#target").Render()
+</div>
+
+<script>
+    var preview;
+    document.addEventListener("DOMContentLoaded", function () {
+        preview = document.getElementById("preview");
+        // Initially set the default color and value to preview.
+        preview.style.backgroundColor = "#f44336";
+        preview.textContent = "#f44336";
+
+        // Binding click event for no color li.
+        document.getElementById('no-color').onclick = function () {
+            //sets color picker value property to null.
+            ej.base.getInstance(document.getElementById("element"), ejs.inputs.ColorPicker).setProperties({ 'value': "" }, true);
+            document.querySelector('.e-split-btn .e-picker-icon').style.borderBottomColor = "transparent";
+            preview.textContent = "No color"
+            preview.style.backgroundColor = "transparent";
+        }
+    });
+    // Triggers while selecting colors from palette.
+    function onChange(args) {
+        var splitBtnInst = ej.base.getInstance(document.getElementById('splitbtn'), ejs.splitbuttons.SplitButton);
+        document.querySelector(".e-split-btn .e-picker-icon").style.borderBottomColor = args.currentValue.hex;
+        preview.style.backgroundColor = args.currentValue.hex;
+        preview.textContent = args.currentValue.hex;
+        if (splitBtnInst.element.getAttribute("aria-expanded")) {
+          splitBtnInst.toggle();
+          splitBtnInst.element.focus();
+        }
+    }
+    // Triggers before rendering each palette tile.
+    function tileRender(args) {
+        args.element.classList.add("e-custom-tile");
+    }
+</script>
+
+<style>
+    /* Preview area styles */
+    #preview {
+        border: 1px solid;
+        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+    }
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+    @@font-face {
+        font-family: 'paint';
+        src:
+        url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMj0gSRIAAAEoAAAAVmNtYXDnEOdVAAABiAAAADZnbHlmIZD+uwAAAcgAAADMaGVhZBKhhHQAAADQAAAANmhoZWEHjANrAAAArAAAACRobXR4B+j/8wAAAYAAAAAIbG9jYQBmAAAAAAHAAAAABm1heHABDgBKAAABCAAAACBuYW1ln6hzswAAApQAAAINcG9zdEkLMmUAAASkAAAANgABAAADUv9qAFoEAP/z//4D6gABAAAAAAAAAAAAAAAAAAAAAgABAAAAAQAAAZfc6F8PPPUACwPoAAAAANfSn9kAAAAA19Kf2f/z//wD6gPhAAAACAACAAAAAAAAAAEAAAACAD4AAgAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQP0AZAABQAAAnoCvAAAAIwCegK8AAAB4AAxAQIAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA5wDnAANS/2oAWgPhAJYAAAABAAAAAAAABAAAAAPo//MAAAACAAAAAwAAABQAAwABAAAAFAAEACIAAAAEAAQAAQAA5wD//wAA5wD//wAAAAEABAAAAAEAAAAAAAAAZgAAAAL/8//8A+oD4QAKAD0AAAEWBgceATc1JiQHJTMmNjceARcVJx4BBx4BFQ4BIiYnNDY3PgEvAS4BIw4BBwEGHgI3AT4BLwE1LgEnDgEDeiRlCgulCxP+8RT+GyYDQFxOZQwTBQEDDxEBJzonAREOCQkPJQ4cDBcdAf6oG1a3nx8BWQ4RHKADeG1oWwHTLHVwYVmL6Kx1BHEqfwYFqWUHEx4tDAocEx0nJx0RHgoVUDQpDgsBFAH+px2guFUaAVkNOiCgCXnhCAWOAAAAAAAAEgDeAAEAAAAAAAAAAQAAAAEAAAAAAAEABQABAAEAAAAAAAIABwAGAAEAAAAAAAMABQANAAEAAAAAAAQABQASAAEAAAAAAAUACwAXAAEAAAAAAAYABQAiAAEAAAAAAAoALAAnAAEAAAAAAAsAEgBTAAMAAQQJAAAAAgBlAAMAAQQJAAEACgBnAAMAAQQJAAIADgBxAAMAAQQJAAMACgB/AAMAAQQJAAQACgCJAAMAAQQJAAUAFgCTAAMAAQQJAAYACgCpAAMAAQQJAAoAWACzAAMAAQQJAAsAJAELIHBhaW50UmVndWxhcnBhaW50cGFpbnRWZXJzaW9uIDEuMHBhaW50Rm9udCBnZW5lcmF0ZWQgdXNpbmcgU3luY2Z1c2lvbiBNZXRybyBTdHVkaW93d3cuc3luY2Z1c2lvbi5jb20AIABwAGEAaQBuAHQAUgBlAGcAdQBsAGEAcgBwAGEAaQBuAHQAcABhAGkAbgB0AFYAZQByAHMAaQBvAG4AIAAxAC4AMABwAGEAaQBuAHQARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAdQBzAGkAbgBnACAAUwB5AG4AYwBmAHUAcwBpAG8AbgAgAE0AZQB0AHIAbwAgAFMAdAB1AGQAaQBvAHcAdwB3AC4AcwB5AG4AYwBmAHUAcwBpAG8AbgAuAGMAbwBtAAAAAAIAAAAAAAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgECAQMADHBhaW50LWJ1Y2tldAAAAAA=) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .e-cp-icons {
+        font-family: 'paint' !important;
+        speak: none;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    /* ColorPicker customization */
+    .e-dropdown-popup ul#target {
+        padding: 0;
+    }
+    .e-dropdown-popup ul .e-item.e-palette-item {
+        height: auto;
+        padding: 0;
+    }
+    .e-btn-icon.e-picker-icon {
+        border-bottom-color: #f44336;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+    }
+    /* Picker icon */
+    .e-btn-icon.e-picker-icon::before {
+        content: '\e700';
+    }
+    /* No color li styles */
+    .e-dropdown-popup ul .e-item .e-menu-icon.e-nocolor {
+        height: 22px;
+        margin-top: 8px;
+        width: 22px;
+        background: transparent url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjZweCIgdmlld0JveD0iMCAwIDYgNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTAgKDU0OTgzKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5Hcm91cCA5PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9Ikdyb3VwLTkiPgogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlLTExIiBmaWxsPSIjRTBFMEUwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMyIgaGVpZ2h0PSIzIj48L3JlY3Q+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtMTEtQ29weS0yIiBmaWxsPSIjRkZGRkZGIiB4PSIwIiB5PSIzIiB3aWR0aD0iMyIgaGVpZ2h0PSIzIj48L3JlY3Q+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtMTEtQ29weSIgZmlsbD0iI0ZGRkZGRiIgeD0iMyIgeT0iMCIgd2lkdGg9IjMiIGhlaWdodD0iMyI+PC9yZWN0PgogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlLTExLUNvcHktMyIgZmlsbD0iI0UwRTBFMCIgeD0iMyIgeT0iMyIgd2lkdGg9IjMiIGhlaWdodD0iMyI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+');
+    }
+    /* Tile customization */
+    .e-container .e-palette .e-tile.e-custom-tile {
+        height: 24px;
+        width: 24px;
+        margin: 4px;
+    }
+</style>

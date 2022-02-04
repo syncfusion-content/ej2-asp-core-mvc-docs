@@ -1,0 +1,155 @@
+
+<div id='container'>
+    <div class="layoutWrapper">
+        <div class="speaker">
+            <div class="camera"></div>
+        </div>
+        <div class="layout">
+            <div id="container">
+                <div id="header">
+                    <span id="hamburger" class="e-icons menu default"></span>
+                    <div class="content">Header</div>
+                </div>
+                <!-- ListView element -->
+                <ejs-listview id="listview" tabindex="1" style="display: none" dataSource="ViewBag.items" headerTitle="Menu" showHeader="true" select="onSelect"></ejs-listview>
+                <span id='close' style="display: none" class='e-icons' onclick="onCloseClick()"></span>
+            </div>
+        </div>
+        <div class="outerButton"> </div>
+    </div>
+</div>
+<script>
+    document.getElementById('hamburger').onclick = function () {
+        var listObj = ej.base.getInstance(document.getElementById("listview"), ejs.lists.ListView);
+        var animation = new ej.base.Animation({ duration: 500 });
+        animation.animate(listObj.element, {
+            name: 'SlideDown',
+            begin: function () {
+                listObj.element.style.display = 'block';
+                document.getElementById('close').style.display = 'block';
+            }
+        });
+    }
+
+    function onSelect(e) {
+        var listObj = ej.base.getInstance(document.getElementById("listview"), ejs.lists.ListView);
+        if (e.data && !e.data.child) {
+            listObj.element.style.display = 'none';
+            document.getElementById('close').style.display = 'none';
+            listObj.refresh();
+        }
+    }
+
+    function onCloseClick() {
+        var listObj = ej.base.getInstance(document.getElementById("listview"), ejs.lists.ListView);
+        listObj.element.style.display = 'none';
+        document.getElementById('close').style.display = 'none';
+    }
+
+</script>
+<style>
+        .layoutWrapper {
+            line-height: initial;
+            border: 1px solid black;
+            width: 285px;
+            height: 505px;
+            margin: auto;
+            margin-bottom: 15px;
+            border-radius: 28px;
+            position: relative;
+        }
+
+        .layoutWrapper .speaker {
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 33.33333333%;
+            height: 5px;
+            margin: 15px auto 0px auto;
+            position: relative;
+        }
+
+        .layoutWrapper .outerButton {
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: absolute;
+            bottom: calc(0% + 10px);
+            left: calc(50% - 15px);
+        }
+
+        .layoutWrapper .camera {
+            position: absolute;
+            left: calc(-15% - 10px);
+            top: -100%;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+        .layoutWrapper .layout {
+            border: 1px solid black;
+            margin: 20px 13px 0px 13px;
+        }
+
+        .layout #container {
+            height: 405px;
+        }
+
+        #header {
+            width: 100%;
+            background-color: #7b8cfb;
+        }
+
+        .layout .e-listview .e-list-header,
+        .layout .e-listview .e-but-back {
+            background-color: #7b8cfb;
+            color: white;
+        }
+
+        #header .content {
+            background-color: #7b8cfb;
+            color: white;
+            border: none;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        #hamburger.menu {
+            font-size: 25px;
+            cursor: pointer;
+            float: left;
+            line-height: 50px;
+            position: absolute;
+            z-index: 1000;
+            left: 25px;
+            color: white;
+        }
+
+        #hamburger.menu:before {
+            content: '\e99a';
+        }
+
+        #listview {
+            position: absolute;
+            width: 254px;
+            overflow: hidden;
+            top: 43px;
+            left: 14px;
+            z-index: 1000;
+        }
+
+        #close:before {
+            content: "\e945";
+        }
+
+        #close {
+            position: absolute;
+            right: 25px;
+            top: 58px;
+            z-index: 10000;
+            color: white;
+        }
+</style>

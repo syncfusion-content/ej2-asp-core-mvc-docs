@@ -1,0 +1,43 @@
+<div id='container'>
+    <table class="table-section">
+        <tr>
+            <td> ActionOnBlur: </td>
+            <td>
+                <ejs-dropdownlist id="dropDown" width="auto" dataSource="ViewBag.blurActionData" change="onChange" value="ViewBag.text" placeholder="Select blur action"></ejs-dropdownlist>
+            </td>
+        </tr>
+        <tr>
+            <td class="sample-td"> Enter your name: </td>
+            <td class="sample-td">
+                <ejs-inplaceeditor id="element" model="ViewBag.modelData" mode="Inline" value="ViewBag.textValue">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<style>
+   
+    .table-section {
+        margin: 0 auto;
+    }
+
+    tr td:first-child {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .sample-td {
+        padding-top: 10px;
+        width: 230px;
+        height: 100px;
+    }
+</style>
+<script>
+    function onChange(e) {
+        var editObj = document.getElementById('element').ej2_instances[0];
+        let editType = e.itemData.value;
+        editObj.actionOnBlur = editType;
+        editObj.dataBind();
+    }
+</script>

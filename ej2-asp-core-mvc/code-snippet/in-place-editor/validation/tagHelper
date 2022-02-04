@@ -1,0 +1,46 @@
+<div id='container'>
+    <table class="table-section">
+        <tr>
+            <td class="col-lg-6 control-title"> Default Error Message </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="textBox" mode="Inline" type="Date" name="Today" emptyText="dd/mm/yyyy" model="ViewBag.dateModel" validationRules="ViewBag.validationRules">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> Customized Error Message </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="date" mode="Inline" type="Date" name="TodayCustom" emptyText="dd/mm/yyyy" model="ViewBag.dateModel" validationRules="ViewBag.ValidationModel" validating="validating">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    td {
+        padding: 20px 0;
+        min-width: 230px;
+        height: 100px;
+    }
+
+    .control-title {
+        font-weight: 600;
+        padding-right: 20px;
+        text-align: right;
+    }
+</style>
+<script>
+    function validating(e) {
+        e.errorMessage = 'Field should not be empty';
+    }
+</script>

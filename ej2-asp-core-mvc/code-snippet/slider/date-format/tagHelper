@@ -1,0 +1,19 @@
+     <ejs-slider id="default" step="86400000" min="1371081600000" max="1371772800000" showButtons="true" tooltipChange="tooltipChangeHandler" renderingTicks="renderingTicksHandler">
+        <e-slider-tooltipdata isVisible="true" placement="Before"> </e-slider-tooltipdata>
+        <e-slider-ticksdata placement="After" largeStep="172800000" renderingTicks="renderingTicksHandler" change="change"></e-slider-ticksdata>
+    </ejs-slider>
+
+<script>
+    function tooltipChangeHandler(args) {
+        var totalMiliSeconds = Number(args.text);
+        // Converting the current milliseconds to the respective date in desired format
+        let custom = { year: "numeric", month: "short", day: "numeric" };
+        args.text = new Date(totalMiliSeconds).toLocaleDateString("en-us", custom);
+    }
+    function renderingTicksHandler(args) {
+        var totalMiliSeconds = Number(args.value);
+        // Converting the current milliseconds to the respective date in desired format
+        var custom = { year: "numeric", month: "short", day: "numeric" };
+        args.text = new Date(totalMiliSeconds).toLocaleDateString("en-us", custom);
+    }
+</script>

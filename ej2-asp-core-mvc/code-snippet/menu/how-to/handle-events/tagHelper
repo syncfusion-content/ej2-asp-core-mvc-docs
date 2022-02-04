@@ -1,0 +1,56 @@
+<div class="control-section">
+    <div class="menu-section">
+        <ejs-menu id="menu" items="ViewBag.menuItems" beforeOpen="updateEventLog" beforeClose="updateEventLog" onClose="updateEventLog" onOpen="updateEventLog" select="updateEventLog"></ejs-menu>
+    </div>
+    <div class="property-section">
+        <table id="propertyTable" title="Event trace">
+            <tr>
+                <td>Event trace:- </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <ejs-button id="clear" content="Clear" created="onClearBtnCreated"></ejs-button>
+</div>
+<style>
+    html, body, .control-section {
+        height: 95%;
+    }
+
+    .menu-section {
+        margin-top: 100px;
+        text-align: center;
+        float: left;
+    }
+
+    .property-section {
+        overflow: auto;
+        width: 40%;
+        height: 330px;
+        float: right;
+        font-family: monospace;
+    }
+
+        .property-section th {
+            text-align: left;
+        }
+
+    #clear {
+        float: right;
+        clear: both;
+    }
+</style>
+<script>
+    function updateEventLog(args) {
+        var propertyElem = document.getElementById('propertyTable');
+        propertyElem.getElementsByTagName('td')[0].insertAdjacentHTML('beforeend', args.name + ' Event triggered. <br />');
+    }
+    function onClearBtnCreated() {
+        document.getElementById("clear").onclick = function () {
+            var propertyElem = document.getElementById('propertyTable');
+            propertyElem.getElementsByTagName('td')[0].innerHTML = '';
+        };
+    }
+</script>

@@ -1,0 +1,1 @@
+<ejs-timepicker id="timepicker" value="@ViewBag.value" min="@ViewBag.minVal" max="@ViewBag.maxVal"></ejs-timepicker>

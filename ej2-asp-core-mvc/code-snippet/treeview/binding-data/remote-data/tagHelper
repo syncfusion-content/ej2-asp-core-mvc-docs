@@ -1,0 +1,5 @@
+<ejs-treeview id="tree">
+  <e-treeview-fields child="ViewBag.child" query="new ej.data.Query().from('Employees').select('EmployeeID,FirstName,Title').take(5)" id="EmployeeID" text="FirstName" hasChildren="EmployeeID">
+       <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+  </e-treeview-fields>
+</ejs-treeview>

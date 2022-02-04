@@ -1,0 +1,8 @@
+@Html.EJS().DatePicker("datepicker").Focus("onFocus")..Width("300px").Placeholder("Choose a Date").Render()
+
+<script>
+    function onFocus(args) {
+        var datepickerObject = document.getElementById("datepicker").ej2_instances[0];
+        datepickerObject.show()
+    }
+</script>

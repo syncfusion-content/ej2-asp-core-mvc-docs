@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2.Navigations;
+
+<div>
+    <div>
+        @(Html.EJS().Toolbar("defaultToolbar")
+            .Items(new List<ToolbarItem> {
+                new ToolbarItem { Text = "Cut" },
+                new ToolbarItem { Type = ItemType.Separator },
+                new ToolbarItem { Text = "Paste" },
+                new ToolbarItem { Type = ItemType.Separator },
+                new ToolbarItem { Template = "<div><input type='checkbox' id='check1' checked=''>Accept</input></div>" },
+                new ToolbarItem { Text = "Undo" },
+                new ToolbarItem { Text = "Redo" },
+                new ToolbarItem { Template = "#Template" }
+            })
+            .Width("330")
+            .Render()
+        )
+    </div>
+    <button id='Template' class='e-btn'>Template</button>
+</div>

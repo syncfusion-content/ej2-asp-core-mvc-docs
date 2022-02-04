@@ -1,0 +1,11 @@
+<ejs-datepicker id="datepicker" renderdaycell="onRenderCell" cssclass="e-custom-style" placeholder="Choose a Date"></ejs-datepicker>
+
+<script>
+function onRenderCell(args) {
+    if (args.date.getDay() == 0 || args.date.getDay() == 6) {
+        //sets isDisabled to true to disable the date.
+        args.isDisabled = true;
+        //To know about the disabled date customization, you can refer in "styles.css".
+    }
+}
+</script>

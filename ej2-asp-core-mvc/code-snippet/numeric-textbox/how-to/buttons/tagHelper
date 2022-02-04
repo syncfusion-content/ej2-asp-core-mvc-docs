@@ -1,0 +1,15 @@
+<ejs-numerictextbox id="numeric" value="10"></ejs-numerictextbox>
+
+<style>
+    /* csslint ignore:start */
+    .e-numeric .e-input-group-icon.e-spin-up:before {
+        content: "\e823";
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .e-numeric .e-input-group-icon.e-spin-down:before {
+        content: "\e934";
+        color: rgba(0, 0, 0, 0.54);
+    }
+    /* csslint ignore:end */
+</style>

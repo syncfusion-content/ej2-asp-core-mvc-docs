@@ -1,0 +1,12 @@
+@Html.EJS().Uploader("UploadFiles").AutoUpload(false).Uploading("onUploadBegin").DirectoryUpload(true).AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" }).Render()
+
+<script>
+    function onUploadBegin(args) {
+        // check whether the file is uploading from paste.
+        if (args.fileData.fileSource === 'paste') {
+            let newName  = getUniqueID(args.fileData.name.substring(0, args.fileData.name.lastIndexOf('.'))) + '.png';
+            args.customFormData = [{ 'fileName': newName }];
+        }
+    }
+</script>
+

@@ -1,0 +1,1 @@
+<ejs-maskedtextbox id="mask" mask="00:00 >PM" customCharacters="ViewBag.cusObj" placeholder="Time (ex: 10:00 PM, 10:00 AM)" floatLabelType="Always"></ejs-maskedtextbox>

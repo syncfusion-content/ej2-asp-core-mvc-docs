@@ -1,0 +1,140 @@
+
+<div id='container'>
+    <h3> Built-in Controls </h3>
+    <table class="table-section">
+        <tr>
+            <td class="col-lg-6 control-title"> DatePicker </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="date" type="Date" mode="Inline" value="ViewBag.dateValue" model="ViewBag.dateModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> DateTimePicker </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="dateTime" type="DateTime" mode="Inline" value="ViewBag.dateTimeValue" model="ViewBag.dateModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> DropDownList </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="dropDowns" type="DropDownList" mode="Inline" value="ViewBag.dropDownValue" model="ViewBag.dropModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> MaskedTextBox </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="masked" type="Mask" mode="Inline" value="ViewBag.maskValue" model="ViewBag.maskModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> NumericTextBox </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="numeric" type="Numeric" mode="Inline" value=10 model="ViewBag.numericModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> TextBox </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="textbox" type="Text" mode="Inline" value="ViewBag.textValue" model="ViewBag.textModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+    </table>
+    <h3> Injectable Controls </h3>
+    <table class="table-section">
+        <tr>
+            <td class="col-lg-6 control-title"> AutoComplete </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="autoComplete" type="AutoComplete" mode="Inline" value="ViewBag.textValue" model="ViewBag.dropModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> ColorPicker </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="color" type="Color" mode="Inline" value="ViewBag.colorValue">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> ComboBox </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="comboBox" type="ComboBox" mode="Inline" value="ViewBag.dropDownValue" model="ViewBag.dropModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> DateRangePicker </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="dateRange" type="DateRange" mode="Inline" value="ViewBag.dateRangeValue" model="ViewBag.dateModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> MultiSelect </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="multiSelect" type="MultiSelect" mode="Inline" value="ViewBag.dropDownValue" model="ViewBag.dropModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> RichTextEditor </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="rte" type="RTE" mode="Inline" value="ViewBag.rteValue" model="ViewBag.rteModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> Slider </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="slider" type="Slider" mode="Inline" value=20>
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-lg-6 control-title"> TimePicker </td>
+            <td class="col-lg-6">
+                <ejs-inplaceeditor id="time" type="Time" mode="Inline" value="ViewBag.dateValue" model="ViewBag.dateModelData">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<style>
+
+    body {
+        padding: 20px 0
+    }
+
+    .control-title {
+        font-weight: 600;
+        padding-right: 20px;
+    }
+
+    td {
+        height: 80px;
+    }
+
+    tr td:first-child {
+        text-align: right;
+    }
+
+    tr td:last-child {
+        text-align: left;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    h3 {
+        text-align: center;
+    }
+</style>

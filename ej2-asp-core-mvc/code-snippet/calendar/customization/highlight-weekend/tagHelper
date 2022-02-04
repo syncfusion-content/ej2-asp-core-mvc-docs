@@ -1,0 +1,16 @@
+<ejs-calendar id="calendar" renderDayCell="highlightDate" value="@ViewBag.value"></ejs-calendar>
+
+<script>
+    function highlightDate(args) {
+        if (args.date.getDay() === 0 || args.date.getDay() === 6) {
+            // To highlight the week end of every month
+            args.element.classList.add('e-highlightweekend');
+        }
+    }
+</script>
+
+<style>
+    .e-highlightweekend {
+        background-color: #cfe9f3;
+    }
+</style>

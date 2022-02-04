@@ -1,0 +1,22 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" };
+}
+
+<div class="col-lg-8 control-section">
+    <div class="control_wrapper">
+        <!-- Initialize Uploader -->
+        <div id="dropArea">
+            <span id="drop"> Drop image (JPG, PNG) files here or <button class='e-btn e-control' id="browse">Browse</button></span>
+        </div>
+        <ejs-uploader id="UploadFiles" dropArea="#drop" asyncSettings="@asyncSettings">
+        </ejs-uploader>
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        document.getElementById('browse').onclick = () => {
+            document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button').click();
+        };
+    }
+</script>

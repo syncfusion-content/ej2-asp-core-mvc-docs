@@ -1,0 +1,5 @@
+
+<div style="margin:0 auto; width:300px;">
+    <ejs-inplaceeditor id="element" type="DropDownList" model="ViewBag.modalData" mode="Inline">
+    </ejs-inplaceeditor>
+</div>

@@ -1,0 +1,41 @@
+<div class='wrap'>
+    <h4>Chosse color</h4>
+    @Html.EJS().ColorPicker("element").CssClass("e-custom-icon").Change("onChange").Render()
+</div>
+
+<script>
+    var iconPreview;
+    window.onload = function () {
+        iconPreview = document.querySelector('.e-custom-icon .e-selected-color');
+        iconPreview.classList.add("e-icons");
+    }
+    function onChange(args) {
+        iconPreview.style.borderBottomColor = args.currentValue.rgba;
+    }
+</script>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+
+    /* Icon customization */
+    .e-custom-icon.e-colorpicker-wrapper .e-split-btn-wrapper .e-split-btn .e-selected-color {
+        background: none;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        width: 14px;
+        margin: 0px 2px;
+        border-bottom-color: #008000;
+    }
+
+    .e-custom-icon.e-colorpicker-wrapper .e-split-btn-wrapper .e-split-btn .e-selected-color .e-split-preview {
+        display: none;
+    }
+
+    .e-custom-icon.e-colorpicker-wrapper .e-split-btn-wrapper .e-split-btn .e-selected-color::before {
+        content: '\e35c';
+    }
+</style>

@@ -1,0 +1,4 @@
+ @Html.EJS().TreeView("listdata").Fields(field=>
+    field.Id("id").ParentID("pid").Selected("selected").
+    Expanded("expanded").Text("name").HasChildren("hasChild")
+    .DataSource(ViewBag.dataSource)).Render()

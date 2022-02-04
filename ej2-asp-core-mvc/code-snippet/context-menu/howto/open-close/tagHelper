@@ -1,0 +1,19 @@
+<button class='e-btn' id="btnElement">Open ContextMenu</button>
+<ejs-contextmenu id="contextmenu" items="ViewBag.menuItems"></ejs-contextmenu>
+
+<script>
+
+    document.getElementById('btnElement').onclick=function() {
+      var contextMenuObj = ej.base.getInstance(document.getElementById('contextmenu'), ejs.navigations.ContextMenu)
+      contextMenuObj.open(60, 20);
+    }
+
+</script>
+
+<style>
+
+button {
+  margin: 20px 0 0 5px;
+}
+
+</style>

@@ -1,0 +1,18 @@
+<div class="control-section">
+        <div class="control_wrapper">
+            <div class="pane">
+                <div class="tabs-wrap">
+                    <div class="wrap">
+                        // Specifies the masked DateTimePicker with format property.
+                        @Html.EJS().DateTimePicker("element").EnableMask("true").Render()
+                    </div>
+                </div>
+                <div class="tabs-wrap">
+                    <div class="wrap">
+                       // Specifies the masked DateTimePicker without format.
+                       @Html.EJS().DateTimePicker("element").EnableMask("true").MaskPlaceholder(new Syncfusion.EJ2.Calendars.DateTimePickerMaskPlaceholder {Day = "d", Month = "M", Year = "y", Hour="h", Minute="m", Second="s"}).Render()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

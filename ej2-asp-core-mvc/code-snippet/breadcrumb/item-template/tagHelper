@@ -1,0 +1,16 @@
+<ejs-breadcrumb id="itemTemplate" cssClass="e-breadcrumb-chips" itemTemplate="#chipTemplate">
+    <e-breadcrumb-items>
+        <e-breadcrumb-item text="Cart"></e-breadcrumb-item>
+        <e-breadcrumb-item text="Billing"></e-breadcrumb-item>
+        <e-breadcrumb-item text="Shipping"></e-breadcrumb-item>
+        <e-breadcrumb-item text="Payment"></e-breadcrumb-item>
+    </e-breadcrumb-items>
+</ejs-breadcrumb>
+
+<script id="chipTemplate" type="text/x-template">
+    <div class="e-lib e-chip-list e-control e-chip-set">
+        <div class="e-chip" tabindex="0" role="option" aria-label="Apple" aria-selected="false">
+            <span class="e-chip-text">${text}</span>
+        </div>
+    </div>
+</script>

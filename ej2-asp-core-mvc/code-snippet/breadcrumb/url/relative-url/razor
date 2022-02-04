@@ -1,0 +1,8 @@
+@Html.EJS().Breadcrumb("separatorTemplate").EnableNavigation(false).Items(item =>
+{
+    item.Text("Home").Url("../").Add();
+    item.Text("Getting").Url("./breadcrumb/getting-started").Add();
+    item.Text("Icons").Url("./breadcrumb/icons").Add();
+    item.Text("Navigation").Url("./breadcrumb/navigation").Add();
+    item.Text("Overflow").Url("./breadcrumb/overflow").Add();
+}).Render()

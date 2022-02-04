@@ -1,0 +1,11 @@
+<ejs-numerictextbox id="numeric" value="10" decimals="2" format="n2" change="numericFocus" created="onCreate"></ejs-numerictextbox>
+<script>
+    function numericFocus() {
+        var numericObj = this.ej2_instances ? this.ej2_instances[0] : this;
+        numericObj.element.value = numericObj.formattedValue(numericObj.decimals, +numericObj.element.value);
+    }
+
+    function onCreate() {
+        document.getElementById('numeric').addEventListener('focus', numericFocus);
+    }
+</script>

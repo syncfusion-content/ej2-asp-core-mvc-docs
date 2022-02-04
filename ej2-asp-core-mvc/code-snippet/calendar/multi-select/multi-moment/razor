@@ -1,0 +1,59 @@
+@Html.EJS().Calendar("calendar").Change("onChange").IsMultiSelection(true).Render()
+
+<div class='e-btn-group e-vertical'>
+    @Html.EJS().Button("workweek").Content("Work Week").Render()
+    @Html.EJS().Button("week").Content("Week").Render()
+</div>
+<script>
+
+    function onChange(args) {
+        calendar = document.getElementById('calendar').ej2_instances[0];
+        var startOfWeek = moment(calendar.value).startOf('week');
+        var endOfWeek = moment(calendar.value).endOf('week');
+        if (calendar.element.classList.contains('workweek')) {
+            getWeekArray(startOfWeek.day(1), endOfWeek.day(5));
+        }
+        else if (calendar.element.classList.contains("week")) {
+            getWeekArray(startOfWeek, endOfWeek);
+        }
+    }
+    function getWeekArray(startOfWeek, endOfWeek) {
+        var days = [];
+        var day = startOfWeek;
+        while (day <= endOfWeek) {
+            days.push(day.toDate());
+            day = day.clone().add(1, 'd');
+        }
+        calendar.values = days;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendar = document.getElementById('calendar').ej2_instances[0];
+
+        /*selected current week dates when click the button*/
+        document.getElementById('workweek').addEventListener('click', function () {
+            if (calendar.element.classList.contains('week')) {
+                calendar.element.classList.remove('week');
+            }
+            calendar.element.classList.add('workweek');
+        })
+        /*selected current week dates when click the button*/
+        document.getElementById('week').addEventListener('click', function () {
+            if (calendar.element.classList.contains('workweek')) {
+                calendar.element.classList.remove('workweek');
+            }
+            calendar.element.classList.add('week');
+        })
+    });
+</script>
+<style>
+    .btncontainer {
+        display: inline-block;
+        float: right;
+        margin-left: 85px;
+        margin-top: 120px;
+    }
+    .e-btn-group.e-vertical{
+        margin-top: 25px;
+    }
+</style>

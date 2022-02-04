@@ -1,0 +1,35 @@
+@using Syncfusion.EJ2.InPlaceEditor;
+
+<div id='container'>
+    <span class="content-title"> Select date: </span>
+    @Html.EJS().InPlaceEditor("element").Mode(RenderMode.Inline).Template("#date").Value(ViewBag.dateValue).ActionBegin("actionBegin").Render()
+</div>
+<div id="html-template" style="display: none">
+    <input id="date" value="2018-05-23" type="date">
+</div>
+ 
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #element {
+        width: 150px;
+    }
+
+    .content-title {
+        font-weight: 500;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+    }
+</style>
+<script>
+    function actionBegin(e) {
+        var editObj = document.getElementById('element').ej2_instances[0];
+        var value = editObj.element.querySelector('#date').value;
+        editObj.value = value;
+        e.value = value;
+    }
+</script>

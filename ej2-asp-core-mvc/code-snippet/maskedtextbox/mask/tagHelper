@@ -1,0 +1,1 @@
+<ejs-maskedtextbox id="mask1" mask="000-000-0000" placeholder="MaskedTextBox" floatLabelType="Always"></ejs-maskedtextbox>

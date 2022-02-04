@@ -1,0 +1,28 @@
+<ejs-calendar id="calendar" created="onCreate"></ejs-calendar>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.e-footer-container .e-clear').addEventListener('click', function () {
+            calendarObject = document.getElementById('calendar').ej2_instances[0];
+            calendarObject.value = null;
+            calendarObject.dataBind();
+        });
+    });
+    function onCreate() {
+        //creates the custom element for clear button.
+        var clearBtn = document.createElement('button');
+        var footerElement = document.getElementsByClassName('e-footer-container')[0];
+        clearBtn.className = 'e-btn e-clear e-flat';
+        clearBtn.textContent = 'Clear';
+        footerElement.prepend(clearBtn);
+        this.element.appendChild(footerElement);
+    }
+
+</script>
+
+<style>
+    .e-clear { /* csslint allow: adjoining-classes*/
+        margin-right: 81px;
+    }
+</style>

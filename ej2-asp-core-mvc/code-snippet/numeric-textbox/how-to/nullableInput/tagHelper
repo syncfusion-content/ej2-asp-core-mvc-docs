@@ -1,0 +1,18 @@
+<div id='container'>
+    <div class='wrap'>
+        <ejs-numerictextbox id="numeric" value="10" placeholder="NumericTextBox" floatLabelType="Always" created="onCreate" blur="onBlur"></ejs-numerictextbox>
+    </div>
+</div>
+
+<script>
+    function onCreate(args) {
+        if (this.value == null) {
+            this.value = 0;
+        }
+    }
+    function onBlur(args) {
+        if (args.value == null) {
+            numeric.value = 0;
+        }
+    }
+</script>

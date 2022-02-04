@@ -1,0 +1,65 @@
+<div id='container'>
+    <table class="table-section">
+        <tr>
+            <td> EditableOn: </td>
+            <td>
+                <ejs-dropdownlist id="dropDown" width="auto" dataSource="ViewBag.editableOnData" change="onChange" value="ViewBag.value" placeholder="Select edit type"></ejs-dropdownlist>
+            </td>
+        </tr>
+        <tr>
+            <td class="sample-td"> Enter your name: </td>
+            <td class="sample-td">
+                <ejs-inplaceeditor id="element" mode="Inline" model="ViewBag.model" value="ViewBag.inplaceValue" locale="fr-BE">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<style>
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    tr td:first-child {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .sample-td {
+        padding-top: 10px;
+        min-width: 230px;
+        height: 100px;
+    }
+</style>
+<script>
+ window.onload = function () {
+    ej.base.L10n.load({
+        'fr-BE': {
+            'inplace-editor': {
+                'save': 'enregistrer',
+                'cancel': 'Annuler',
+                'loadingText': 'Chargement...',
+                'editIcon': 'Cliquez pour éditer',
+                'editAreaClick': 'Cliquez pour éditer',
+                'editAreaDoubleClick': 'Double-cliquez pour éditer'
+            }
+        }
+    });
+ };
+    function onChange(e) {
+        var editObj = document.getElementById('element').ej2_instances[0];
+        var editType = e.itemData.value;
+        editObj.editableOn = editType;
+        editObj.dataBind();
+    }
+</script>

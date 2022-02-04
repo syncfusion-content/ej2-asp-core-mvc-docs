@@ -1,0 +1,22 @@
+<div class="multiline">
+    <ejs-textbox id="default" multiline="true" placeholder="Enter your address" value="Mr. Dodsworth Dodsworth, System Analyst, Studio 103" floatLabelType="Auto" id="default" created="createHandler" input="inputHandler"></ejs-textbox>
+</div>
+
+<script>
+    function createHandler(args) {
+        var textareaObj = document.getElementById("default")
+        textareaObj.ej2_instances[0].addAttributes({rows: 1});
+        this.respectiveElement.style.height = "auto";
+        this.respectiveElement.style.height = (this.respectiveElement.scrollHeight) + "px";
+    }
+    function inputHandler(args) {
+        this.respectiveElement.style.height = "auto";
+        this.respectiveElement.style.height = (this.respectiveElement.scrollHeight) + "px";
+    }
+</script>
+<style>
+    .multiline {
+        margin-top: 60px;
+        width: 20%;
+    }
+</style>

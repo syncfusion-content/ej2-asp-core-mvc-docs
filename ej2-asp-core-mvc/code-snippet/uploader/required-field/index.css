@@ -1,0 +1,87 @@
+.control_wrapper {
+    max-width: 400px;
+    margin: auto;
+  }
+  .control_wrapper .e-upload .e-upload-drag-hover {
+    margin: 0;
+  }
+  .address-field {
+    resize: none;
+  }
+  #dropArea .dropUpload .upload-image {
+    height: 140px;
+    width: 140px;
+  }
+  #dropArea .dropUpload {        
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 12;
+    overflow: hidden;
+    border: 1px dashed;
+    width: 150px;
+    height: 150px;
+  }
+  .e-upload {
+    visibility: hidden;
+  }
+  #control_wrapper {
+    max-width: 500px;
+    margin: auto;
+    border: 0.5px solid #BEBEBE;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.36);
+    padding: 1% 4% 7%;
+    background: #f9f9f9;
+  }
+  .e-error {
+    padding-top:3px;
+  }
+  .control_wrapper .e-upload .e-upload-drag-hover {
+    margin: 0;
+  }
+  
+  .submit-btn {
+    margin-top: 15px;
+    margin: auto 100px;
+  }
+  .submitBtn .desc {
+    margin: 2% 23% 0 18%;
+  }
+  .submitBtn {
+    text-align: center;
+  }
+  .form-support {
+    width: 100%;            
+  }
+  .success .form-support {
+    display: none;
+  }
+  .success .successmsg {
+    border: 0.5px solid green;
+    padding: 10%;
+    color: green;
+  }
+  #form1 {
+    position: relative;
+    top: 14%;
+  }
+  .form-support td {
+    width: 100%;
+    padding-top:4%;
+  }
+  .e-upload {
+    float: none;
+  }
+  .choose-file{
+    width: 60%;
+  }
+  #browse {
+    float: right;
+    margin-right: -113px;
+    margin-top: -27px;
+  }
+  .form-title {
+    text-align: center;
+  }
+  
+  

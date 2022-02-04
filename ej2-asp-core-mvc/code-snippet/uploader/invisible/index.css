@@ -1,0 +1,37 @@
+ .control_wrapper {
+	max-width: 505px;
+	margin: auto;
+}
+
+#preview {
+	border: 2px dashed #ddd;
+	padding: 15px;
+}
+
+.image-list {
+	width: 134px;
+	height: 117px;
+	margin-right: 4px;
+	border: 1px solid lightgrey;
+	display: inline-block;
+}
+
+.image {
+	width: 134px;
+	height: 117px;
+	margin-right: 4px;
+	display: inline-block;
+}
+
+.e-control ul {
+	border: 1px solid #ddd;
+}
+
+.e-control .e-file-select,
+.e-control .e-file-drop {
+	display: none;
+}
+
+.e-control {
+	margin-top: 10px;
+}

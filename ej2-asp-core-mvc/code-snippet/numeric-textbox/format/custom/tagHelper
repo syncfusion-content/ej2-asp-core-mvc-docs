@@ -1,0 +1,8 @@
+<div id='container'>
+    <div class='wrap'>
+        <ejs-numerictextbox id="numeric" value="10" format="###.##" placeholder="Custom format string #" floatLabelType="Auto"></ejs-numerictextbox>
+    </div>
+    <div class='wrap'>
+        <ejs-numerictextbox id="numeric1" value="10" format="000.00" placeholder="Custom format string 0" floatLabelType="Auto"></ejs-numerictextbox>
+    </div>
+</div>

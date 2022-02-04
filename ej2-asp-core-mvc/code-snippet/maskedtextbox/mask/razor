@@ -1,0 +1,1 @@
+@Html.EJS().MaskedTextBox("mask1").Mask("000-000-0000").Placeholder("MaskedTextBox").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()

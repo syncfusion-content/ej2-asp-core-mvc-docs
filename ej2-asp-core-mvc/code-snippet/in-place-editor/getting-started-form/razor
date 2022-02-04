@@ -1,0 +1,52 @@
+
+@using Syncfusion.EJ2.InPlaceEditor
+
+<div id='container'>
+    <div class="control-group">
+        <div class="e-heading">
+            <h3> Modify Basic Details </h3>
+        </div>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td class='left'>
+                    @Html.EJS().InPlaceEditor("element").Type(Syncfusion.EJ2.InPlaceEditor.InputType.Text).Value(ViewBag.elementValue).Model(ViewBag.elementModel).Mode(RenderMode.Inline).Render()
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td class='left'>
+                    @Html.EJS().InPlaceEditor("dateofbirth").Type(Syncfusion.EJ2.InPlaceEditor.InputType.Date).Value(ViewBag.dateValue).Model(ViewBag.dateModel).Mode(RenderMode.Inline).Render()
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td class='left'>
+                    @Html.EJS().InPlaceEditor("gender").Type(Syncfusion.EJ2.InPlaceEditor.InputType.DropDownList).Value(ViewBag.dropValue).Model(ViewBag.genderModel).Mode(RenderMode.Inline).Render()
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<style>
+    #container .control-group {
+        margin-top: 50px;
+    }
+
+        #container .control-group table {
+            margin: auto;
+        }
+
+            #container .control-group table td {
+                height: 70px;
+                width: 150px;
+            }
+
+    #container .e-heading {
+        text-align: center;
+    }
+
+    #container .control-group table td {
+        text-align: left;
+    }
+</style>

@@ -1,0 +1,37 @@
+@model EJ2CoreSampleBrowser.Controllers.MaskedTextbox.MaskValue
+<div class="col-lg-12 control-section">
+    <div class="content-wrapper">
+        <form method="post">
+            <ejs-maskedtextbox id="mask" name="value" ejs-for="@Model.value"></ejs-maskedtextbox>
+                <div id="errorMessage">
+                    <span asp-validation-for="value"></span>
+                </div>
+                <div id="submitbutton">
+                    <ejs-button id="submitButton" content="Submit"></ejs-button>
+                </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    .content-wrapper {
+        width: 30%;
+        margin: 0 auto;
+        min-width: 185px;
+    }
+
+    .control-label {
+        padding: 10px 0px 5px 0px;
+        font-size: 12px;
+    }
+
+    #errorMessage {
+        color: red;
+        text-align: center
+    }
+
+    #submitbutton {
+        margin: 10px auto;
+        text-align: center;
+    }
+</style>

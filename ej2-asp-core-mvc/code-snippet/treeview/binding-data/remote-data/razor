@@ -1,0 +1,6 @@
+ @Html.EJS().TreeView("listdata").Fields(field=>
+    field.Query("new ej.data.Query().from('Employees').select('EmployeeID,FirstName,Title').take(5)").Id("EmployeeID").ParentID("pid").Selected("selected")
+    .Text("FirstName").HasChildren("EmployeeID")
+    .DataSource(dataSource=> {
+        dataSource.Url("https://services.odata.org/V4/Northwind/Northwind.svc").Adaptor("ODataV4Adaptor").CrossDomain(true);
+    }).Child(ViewBag.child)).Render()

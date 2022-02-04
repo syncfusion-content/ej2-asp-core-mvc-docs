@@ -1,0 +1,4 @@
+     <ejs-slider id="default" value="0.3" min="0" max="1" step="0.01" >
+    <e-slider-tooltipdata showOn="Always" isVisible="true" placement="Before" format="P0"> </e-slider-tooltipdata>
+    <e-slider-ticksdata placement="After" showSmallTicks="true" largeStep="0.2" smallStep="0.1" format="P0"></e-slider-ticksdata>
+</ejs-slider>

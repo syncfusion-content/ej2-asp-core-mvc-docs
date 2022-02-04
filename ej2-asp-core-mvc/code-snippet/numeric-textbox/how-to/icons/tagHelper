@@ -1,0 +1,1 @@
+<ejs-numerictextbox id="numeric" value="16" showSpinButton="false" step="2" min="10" max="100"></ejs-numerictextbox>

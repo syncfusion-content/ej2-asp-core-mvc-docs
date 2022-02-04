@@ -1,0 +1,23 @@
+     <ejs-slider id="minRangeObj" value="30" step="10" showButtons="true" type="MinRange">
+        <e-slider-tooltipdata isVisible="true" placement="Before" showOn="Always"> </e-slider-tooltipdata>
+        <e-slider-ticksdata placement="After" largeStep="20" smallStep="10" showSmallTicks="true"></e-slider-ticksdata>
+    </ejs-slider>
+
+    <ejs-slider id="weekdaysObj" step="1" min="0" max="6">
+        <e-slider-tooltipdata isVisible="true" placement="Before" showOn="Always" change="change"> </e-slider-tooltipdata>
+        <e-slider-ticksdata placement="After" largeStep="1" renderingTicks="renderingTicksHandler"></e-slider-ticksdata>
+    </ejs-slider>
+
+<script>
+    function renderingTicksHandler(args) {
+        // Weekdays Array
+        var daysArr = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday'];
+        // Customizing each ticks text into weeksdays
+        args.value = daysArr[parseFloat(args.value)];
+    }
+
+    function change(args) {
+        // Customizing tooltip to display the Day (in numeric) of the week
+        args.tooltipText = 'Day ' + (Number(args.tooltipText) + 1).toString();
+    }
+</script>

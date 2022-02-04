@@ -1,0 +1,50 @@
+@using Syncfusion.EJ2.Navigations;
+
+<div class="info">
+    Tab content loaded from ViewBag
+</div>
+
+<div id="Content1" style="display: none">
+    @(Html.EJS().Chart("ej2chart")
+        .Width("100%")
+        .Height("100%")
+        .Series(series =>
+        {
+            series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).
+            Marker(mr => mr.Visible(true)).
+            XName("x").
+            YName("yValue").
+            DataSource(ViewBag.dataSource).
+            Name("Gold").
+            Width(2).Add();
+        })
+        .PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category))
+        .Title("Olympic Medal Counts - RIO")
+        .Render()
+    )
+</div>
+
+<div id="Content2" style="display: none">
+    @(Html.EJS().Grid("ej2grid")
+        .DataSource(dataManger =>
+        {
+            dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/Products").CrossDomain(true).Adaptor("ODataV4Adaptor");
+        })
+        .Columns(col =>
+        {
+            col.Field("ProductID").HeaderText("Product ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("ProductName").HeaderText("Product Name").Width("150").Add();
+            col.Field("UnitPrice").HeaderText("Supplier ID").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("UnitsInStock").HeaderText("QuantityPerUnit").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("Discontinued").HeaderText("Discontinued").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Type("boolean").DisplayAsCheckBox(true).Add();
+        })
+        .AllowPaging()
+        .Render()
+    )
+</div>
+
+<div id="Content3" style="display: none">
+    @Html.EJS().Calendar("ej2calendar").Render()
+</div>
+
+@Html.EJS().Tab("ej2Tab").Items(ViewBag.items).Render()

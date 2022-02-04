@@ -1,0 +1,63 @@
+@using Syncfusion.EJ2.Charts;
+@using Syncfusion.EJ2.Navigations;
+
+<div>
+    Content Template
+</div>
+
+<ejs-accordion id="accordion">
+    <e-accordion-accordionitems>
+        <e-accordion-accordionitem>
+            <e-content-template>
+                <div>
+                    <div>
+                        <div> Chart </div>
+                    </div>
+                    <div>
+                        <div>
+                            <ejs-chart id="container" title="Inflation - Consumer Price">
+                                <e-series-collection>
+                                    <e-series dataSource="@ViewBag.dataSource" name="Germany" xName="xValue" width="2" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+                                        <e-series-marker visible="true" height="10" width="10"></e-series-marker>
+                                    </e-series>
+                                    <e-series dataSource="@ViewBag.dataSource" name="England" xName="xValue" width="2" yName="yValue1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+                                        <e-series-marker visible="true" height="10" width="10"></e-series-marker>
+                                    </e-series>
+                                </e-series-collection>
+                            </ejs-chart>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div> Grid </div>
+                    </div>
+                    <div>
+                        <div>
+                            <ejs-grid id="Grid" allowPaging="true">
+                                <e-data-manager url="https://ej2services.syncfusion.com/production/web-services/api/Orders" crossdomain="true" adaptor="WebApiAdaptor"></e-data-manager>
+                                <e-grid-columns>
+                                    <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="160"></e-grid-column>
+                                    <e-grid-column field="CustomerID" headerText="Customer ID" width="170"></e-grid-column>
+                                    <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="170"></e-grid-column>
+                                    <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="170"></e-grid-column>
+                                    <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" textAlign="Center"></e-grid-column>
+                                </e-grid-columns>
+                            </ejs-grid>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div> Calender </div>
+                    </div>
+                    <div>
+                        <div>
+                            <ejs-calendar id="calendar"></ejs-calendar>
+                        </div>
+                    </div>
+                </div>
+            </e-content-template>
+        </e-accordion-accordionitem>
+    </e-accordion-accordionitems>
+</ejs-accordion>

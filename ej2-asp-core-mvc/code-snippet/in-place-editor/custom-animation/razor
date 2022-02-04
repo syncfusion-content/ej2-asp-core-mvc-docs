@@ -1,0 +1,46 @@
+@using Syncfusion.EJ2.InPlaceEditor;
+
+<div id='container'>
+    <table class="table-section">
+        <tr>
+            <td> Open Animation: </td>
+            <td>
+                @Html.EJS().DropDownList("openDropDown").DataSource(ViewBag.openAnimateData).Value(ViewBag.textValue).Change("onChange").Placeholder("Select a animate type").PopupHeight("150px").Render()
+            </td>
+        </tr>
+        <tr>
+            <td class="sample-td"> Enter your name: </td>
+            <td class="sample-td">
+                @Html.EJS().InPlaceEditor("element").Mode(RenderMode.Popup).Value(ViewBag.value).PopupSettings(ViewBag.popupSettings).Model(ViewBag.model).Render()
+            </td>
+        </tr>
+    </table>
+</div>
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    tr td:first-child {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .sample-td {
+        padding-top: 10px;
+        min-width: 230px;
+        height: 100px;
+    }
+</style>
+<script>
+    function onChange(e) {
+        var editObj = document.getElementById('element').ej2_instances[0];
+        editObj.popupSettings.model.animation.open.effect = e.value;
+        editObj.dataBind();
+    }
+</script>

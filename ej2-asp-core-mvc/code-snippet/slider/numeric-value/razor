@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Inputs
+   <div id='kilometer'>
+        @Html.EJS().Slider("kilometer").Min(0).Max(100).Step(1).Value("30").Tooltip(new SliderTooltipData { IsVisible = true, Format = "##.## Km" }).Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 20, SmallStep = 10, ShowSmallTicks = true, Format = "##.## Km" }).Render()
+    </div>
+    <div id='decimal'>
+        @Html.EJS().Slider("decimalobj").Min(0.1).Max(0.2).Value("0.15").Step(0.01).Tooltip(new SliderTooltipData { IsVisible = true, Format = "##.#00" }).Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 0.02, SmallStep = 0.01, ShowSmallTicks = true, Format = "##.#00" }).Render()
+    </div>
+    <div id='slider'>
+        @Html.EJS().Slider("sliderobj").Min(0).Max(100).Value("5").Step(1).Tooltip(new SliderTooltipData { IsVisible = true, Format = "##.## Km" }).Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 20, SmallStep = 10, ShowSmallTicks = true, Format = "##.## Km" }).Render()
+    </div>

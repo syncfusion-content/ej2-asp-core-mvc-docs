@@ -1,0 +1,21 @@
+<ejs-menu id="menu" items="ViewBag.menuItems" beforeOpen="onBeforeOpen"></ejs-menu>
+
+<script>
+    function onBeforeOpen(args) {
+        // Getting parent menu item element offset
+        var relativeOffset = ej.base.closest(args.event.target, '.e-menu-item').getBoundingClientRect();
+        // Getting sub menu wrapper element using closest method
+        var subMenuEle = ej.base.closest(args.element, '.e-menu-wrapper');
+        subMenuEle.style.display = 'block';
+        args.top = (relativeOffset.top - subMenuEle.getBoundingClientRect().height) + pageYOffset;
+        args.left = relativeOffset.left + pageXOffset;
+        subMenuEle.style.display = '';
+    }
+</script>
+
+<style>
+    body {
+        margin-top: 200px;
+        text-align: center;
+    }
+</style>

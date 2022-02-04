@@ -1,0 +1,123 @@
+ <!-- sidebar element declaration -->
+<ejs-sidebar id="default-sidebar" type="Over" width="100%">
+	<e-content-template>
+		  <div class="title1"> Menu </div>
+		 <div class="closebtn">
+            <!-- Button element declaration -->
+			<ejs-button id="close" content="Close Sidebar"  cssClass="e-btn close-btn" iconCss="e-icons close-icon"></ejs-button>
+		</div>
+		<div id="listcontainer">
+             <!-- Listview element declaration -->
+			<ejs-listview id="list" dataSource="ViewBag.dataSource"> </ejs-listview>
+		</div>
+		<div class="sub-title">
+			* ListView component is placed inside the sidebar content area.
+		</div>
+	</e-content-template>
+</ejs-sidebar>
+<!-- end of sidebar element -->
+<!--  Main Content declaration -->
+<div>
+	<div class="title2">Main content</div>
+	<div class="sub-title"> Click the button to open/close the Sidebar.</div>
+	<div style="padding:20px" class="center-align">
+        <!-- Button element declaration -->
+		<ejs-button id="toggle" content="Toggle Sidebar" cssClass="e-info"></ejs-button>
+	</div>
+</div>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        // Create instances for sidebar element
+        var defaultSidebar = document.getElementById("default-sidebar").ej2_instances[0];
+         // Toggle button to open and close the sidebar
+        document.getElementById('toggle').onclick = function () {
+            defaultSidebar.toggle();
+        }
+        // Close the sidebar
+        document.getElementById('close').onclick = function () {
+            defaultSidebar.hide();
+        }
+    });
+</script>
+
+<style>
+    /* Listview element styles */
+    #listcontainer {
+        width: 100%;
+    }
+
+    #list {
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    .e-listview .e-list-item {
+        text-align: center;
+        font-size: 14px;
+        padding: 0;
+    }
+    /* Button element styles */
+    .e-btn.close-btn :hover { /* csslint allow: adjoining-classes*/
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .close-btn, .e-listview .e-list-item, #default-sidebar {
+        background-color: rgb(20, 118, 210);
+        color: #ffffff;
+    }
+
+    .close-icon::before {
+        content: '\e945';
+    }
+
+    .close-btn {
+        box-shadow: none;
+    }
+
+    .close-btn:hover {
+        color: #fafafa;
+    }
+
+    .e-icons.close-icon { /* csslint allow: adjoining-classes*/
+        line-height: 2.2;
+    }
+
+    .closebtn {
+        top: 15px;
+        line-height: 36px;
+        height: 42px;
+        color: black;
+        position: absolute;
+        right: 10px;
+    }
+    /* Sample level styles */
+    .title1 {
+        text-align: center;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .title2 {
+        text-align: center;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .sub-title {
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .center-align {
+        text-align: center;
+        padding: 20px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+</style>

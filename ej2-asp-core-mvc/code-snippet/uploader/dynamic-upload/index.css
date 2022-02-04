@@ -1,0 +1,23 @@
+.control_wrapper {
+    max-width: 500px;
+    margin: auto;
+}
+
+.e-upload {
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.e-upload-actions {
+    display: none;
+}
+
+.e-btn {
+    text-transform: none;
+}
+
+.control_wrapper .e-upload .e-upload-drag-hover {
+    margin: 0;
+}

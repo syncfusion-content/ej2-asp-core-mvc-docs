@@ -1,0 +1,6 @@
+<div id="droparea">
+    Drop files here to upload
+</div>
+<div id="uploadfile">
+    <ejs-uploader id="uploadFiles" dropArea="#droparea" autoUpload="false"></ejs-uploader>
+</div>

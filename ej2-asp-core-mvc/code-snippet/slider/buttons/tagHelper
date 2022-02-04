@@ -1,0 +1,3 @@
+<ejs-slider id="default" showButtons="true" value="30" type="MinRange">
+    <e-slider-ticksdata placement="After" isVisible="true" showOn="Always"></e-slider-ticksdata>
+</ejs-slider>

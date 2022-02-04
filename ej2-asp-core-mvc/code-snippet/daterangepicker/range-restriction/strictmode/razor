@@ -1,0 +1,1 @@
+@Html.EJS().DateRangePicker("element").StrictMode(true).Placeholder("Select a Range").Min(ViewBag.minDate).Max(ViewBag.maxDate).StartDate(ViewBag.startDate).EndDate(ViewBag.endDate).Render()

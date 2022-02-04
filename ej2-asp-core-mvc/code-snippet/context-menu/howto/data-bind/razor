@@ -1,0 +1,29 @@
+<div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
+@Html.EJS().ContextMenu("contextmenu").Target("#contextmenutarget").Items((IEnumerable<object>)ViewBag.menuItems).BeforeItemRender("beforeItemRender").Render()
+
+<script>
+    function beforeItemRender(args) {
+        if (!args.item.text) {
+            args.element.classList.add('e-separator');
+       }
+    }
+
+</script>
+
+<style>
+
+button {
+  margin: 20px 0 0 5px;
+}
+
+#target {
+  border: 1px dashed;
+  height: 150px;
+  padding: 10px;
+  position: relative;
+  text-align: justify;
+  color: gray;
+  user-select: none;
+}
+
+</style>

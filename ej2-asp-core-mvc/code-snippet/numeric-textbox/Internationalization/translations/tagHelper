@@ -1,0 +1,9 @@
+
+<ejs-numerictextbox id="numeric" value="10" locale="de"></ejs-numerictextbox>
+<script>
+    ej.base.L10n.load({
+        'en': {
+            'numerictextbox': { incrementTitle: 'Wert erhöhen', decrementTitle: 'Dekrementwert' }
+        }
+    });
+</script>

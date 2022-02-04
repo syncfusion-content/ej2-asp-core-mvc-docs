@@ -1,0 +1,35 @@
+@using Syncfusion.EJ2.Navigations;
+
+<div class="info">
+    Tab content loaded from ViewBag
+</div>
+
+<div id="Content1" style="display: none">
+    <ejs-chart id="ej2chart" width="100%" height="100%">
+        <e-series-collection>
+            <e-series type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line" xName="x" yName="yValue" dataSource="@ViewBag.datasource" name="Gold" width="2">
+                <e-series-marker visible="true"/>
+            </e-series>
+        </e-series-collection>
+        <e-chart-primaryxaxis interval="1" valueType="@Syncfusion.EJ2.Charts.ValueType.Category" title="Olympic Medal Counts - RIO" />
+    </ejs-chart>
+</div>
+
+<div id="Content2" style="display: none">
+    <ejs-grid id="ej2grid" allowPaging="true">
+        <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/Products" crossdomain="true" adaptor="ODataV4Adaptor"></e-data-manager>
+        <e-grid-columns>
+            <e-grid-column field="ProductID" headerText="Product ID" textAlign="@Syncfusion.EJ2.Grids.TextAlign.Right"></e-grid-column>
+            <e-grid-column field="ProductName" headerText="Product Name" width="150"></e-grid-column>
+            <e-grid-column field="UnitPrice" headerText="Supplier ID" textAlign="@Syncfusion.EJ2.Grids.TextAlign.Right" width="130"></e-grid-column>
+            <e-grid-column field="UnitsInStock" headerText="QuantityPerUnit" textAlign="@Syncfusion.EJ2.Grids.TextAlign.Right" width="120"></e-grid-column>
+            <e-grid-column field="Discontinued" headerText="Discontinued" width="140" textAlign="@Syncfusion.EJ2.Grids.TextAlign.Center" type="boolean" displayAsCheckBox="true"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>
+
+<div id="Content3" style="display: none">
+    <ejs-calendar id="ej2calendar"></ejs-calendar>
+</div>
+
+<ejs-tab id="ej2Tab" items="@ViewBag.items"></ejs-tab>

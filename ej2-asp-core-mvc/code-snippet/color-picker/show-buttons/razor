@@ -1,0 +1,12 @@
+<div class='wrap'>
+    <h4>Choose Color</h4>
+    @Html.EJS().ColorPicker("element").ShowButtons(false).Render()
+</div>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+</style>

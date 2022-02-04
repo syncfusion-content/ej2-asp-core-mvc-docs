@@ -1,0 +1,1 @@
+@Html.EJS().TimePicker("timepicker").Value(ViewBag.value).Min(ViewBag.minVal).Max(ViewBag.maxVal).StrictMode(true).Render()

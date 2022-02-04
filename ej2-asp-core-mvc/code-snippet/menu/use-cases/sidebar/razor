@@ -1,0 +1,178 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Navigations;
+<div id='container'>
+    <!-- sidebar element declaration -->
+    <div class="header">
+        <span id="hamburger" class="e-icons menu default"></span>
+        <div class="content">Header content</div>
+    </div>
+    @Html.EJS().Sidebar("default-sidebar").Type(Syncfusion.EJ2.Navigations.SidebarType.Over).Width("220px").ContentTemplate(
+            @<div>
+                <div class="title-header">
+                    <div style="display:inline-block">Menu</div>
+                    <span id="close" class="e-icons"></span>
+                </div>
+                <div class="content-area">
+                    @Html.EJS().Accordion("accordionMenu").Items(new List<AccordionAccordionItem> {
+                        new AccordionAccordionItem { Header= "Appliances", Content= "#Appliances_Items" },
+                        new AccordionAccordionItem { Header= "Accessories", Content= "#Accessories_Items" },
+                        new AccordionAccordionItem { Header= "Fashion", Content= "#Fashion_Items" },
+                        new AccordionAccordionItem { Header= "Home & Living", Content= "#Home_Living_Items" },
+                        new AccordionAccordionItem { Header= "Entertainment", Content= "#Entertainment_Items" }
+                    }).Clicked("clicked").Render()
+                    <div style="display:none">
+                    <!--Accordion sub items-->
+                        @Html.EJS().Accordion("Appliances_Items").Items(new List<AccordionAccordionItem> {
+                        new AccordionAccordionItem { Header= "Kitchen", Content="#Appliances_Kitchen_Items" },
+                        new AccordionAccordionItem { Header= "Washing Machine", Content="#Appliances_Washing_Items" },
+                        new AccordionAccordionItem { Header= "Air Conditioners", Content="#Appliances_Conditioners_Items" }
+                        }).Clicked("clicked").Render()
+                    </div>
+                    <div style="display:none">
+                        @Html.EJS().Accordion("Appliances_Kitchen_Items").Items(new List<AccordionAccordionItem> {
+                        new AccordionAccordionItem { Header= "Electric Cookers" },
+                        new AccordionAccordionItem { Header= "Coffee Makers" },
+                        new AccordionAccordionItem { Header= "Blenders" }
+                        }).Clicked("clicked").Render()
+                    </div>
+                    <div style="display:none">
+                        @Html.EJS().Accordion("Appliances_Washing_Items").Items(new List<AccordionAccordionItem> {
+                        new AccordionAccordionItem { Header= "Fully Automatic" },
+                        new AccordionAccordionItem { Header= "Semi Automatic" }
+                        }).Clicked("clicked").Render()
+                    </div>
+                    <div style="display:none">
+                        @Html.EJS().Accordion("Appliances_Conditioners_Items").Items(new List<AccordionAccordionItem> {
+                        new AccordionAccordionItem { Header= "Inverter ACs" },
+                        new AccordionAccordionItem { Header= "Split ACs" },
+                        new AccordionAccordionItem { Header= "Window ACs" }
+                        }).Clicked("clicked").Render()
+                    </div>
+                    <div style="display:none">
+                        @Html.EJS().Accordion("Accessories_Items").Items(new List<AccordionAccordionItem> {
+                        new AccordionAccordionItem { Header= "Mobile", Content="#Accessories_Mobile_Items" },
+                        new AccordionAccordionItem { Header= "Computer", Content="#Accessories_Computer_Items" }
+                        }).Clicked("clicked").Render()
+                    </div>
+                    <div style="display:none">
+                        @Html.EJS().Accordion("Accessories_Mobile_Items").Items(new List<AccordionAccordionItem> {
+                        new AccordionAccordionItem { Header= "Headphones" },
+                        new AccordionAccordionItem { Header= "Memory Cards" },
+                        new AccordionAccordionItem { Header= "Power Banks" }
+                        }).Clicked("clicked").Render()
+                    </div>
+                    <div style="display:none">
+                        @Html.EJS().Accordion("Accessories_Computer_Items").Items(new List<AccordionAccordionItem> {
+                        new AccordionAccordionItem { Header= "Pendrives" },
+                        new AccordionAccordionItem { Header= "External Hard Disks" },
+                        new AccordionAccordionItem { Header= "Monitors" }
+                        }).Clicked("clicked").Render()
+                    </div>
+                    <div style="display:none">
+                        @Html.EJS().Accordion("Fashion_Items").Items(new List<AccordionAccordionItem> {
+                        new AccordionAccordionItem { Header= "Men" },
+                        new AccordionAccordionItem { Header= "Women" }
+                        }).Clicked("clicked").Render()
+                    </div>
+                    <div style="display:none">
+                        @Html.EJS().Accordion("Home_Living_Items").Items(new List<AccordionAccordionItem> {
+                        new AccordionAccordionItem { Header= "Furniture" },
+                        new AccordionAccordionItem { Header= "Decor" }
+                        }).Clicked("clicked").Render()
+                    </div>
+                    <div style="display:none">
+                        @Html.EJS().Accordion("Entertainment_Items").Items(new List<AccordionAccordionItem> {
+                        new AccordionAccordionItem { Header= "Televisions" },
+                        new AccordionAccordionItem { Header= "Home Theatres" },
+                        new AccordionAccordionItem { Header= "Gaming Laptops" }
+                        }).Clicked("clicked").Render()
+                    </div>
+                </div>
+            </div>).Render()
+    <!-- main content declaration -->
+    <div>
+        <div class="main-content">Main content</div>
+    </div>
+</div>
+
+<style>
+    body {
+        margin: 0;
+    }
+    .header {
+        width: 100%;
+        background-color: #7b8cfb;
+    }
+    #default-sidebar,
+    .header .content {
+        background-color: #7b8cfb;
+        color: white;
+        border: none;
+    }
+    .header .content {
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+     }
+    .main-content {
+        text-align: center;
+        font-size: 20px;
+        padding: 100px 15px;
+    }
+    #default-sidebar .close-btn:hover {
+        color: rgba(0, 0, 0, .87);
+        background-color: #fafafa;
+    }
+    #hamburger.menu {
+        font-size: 25px;
+        cursor: pointer;
+        float: left;
+        line-height: 50px;
+        position: relative;
+        z-index: 1000;
+        left: 25px;
+        color: white;
+    }
+     #hamburger.menu:before {
+       content: '\e99a';
+     }
+    #close:before {
+        content: "\e945";
+    }
+    .title-header {
+        text-align: center;
+        font-size: 18px;
+        padding: 15px 15px 35px;
+    }
+    .e-sidebar .title-header #close {
+        cursor: pointer;
+        line-height: 25px;
+        float: right;
+    }
+    .e-accordion .e-acrdn-item .e-acrdn-panel .e-acrdn-content {
+        padding: 0px;
+    }
+    .e-accordion .e-acrdn-item .e-acrdn-panel .e-acrdn-panel .e-acrdn-content {
+        padding: 0px;
+    }
+</style>
+
+<script>
+        // Close the Sidebar
+        document.getElementById('close').onclick = function () {
+            var defaultSidebar = ej.base.getComponent(document.getElementById("default-sidebar"), "sidebar");
+            defaultSidebar.hide();
+        };
+
+        document.getElementById('hamburger').onclick = function () {
+            var defaultSidebar = ej.base.getComponent(document.getElementById("default-sidebar"), "sidebar");
+            defaultSidebar.show();
+        };
+
+        function clicked(e) {
+            if (!(e.originalEvent.target.closest('.e-acrdn-item').getElementsByClassName('e-tgl-collapse-icon').length)) {
+                var defaultSidebar = ej.base.getComponent(document.getElementById("default-sidebar"), "sidebar");
+                defaultSidebar.hide();
+            }
+        }
+</script>

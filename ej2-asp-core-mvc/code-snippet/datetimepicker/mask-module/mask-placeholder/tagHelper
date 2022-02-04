@@ -1,0 +1,21 @@
+@{
+    var maskPlaceholderValue = new Syncfusion.EJ2.Calendars.DateTimePickerMaskPlaceholder { Day = "d", Month = "M", Year = "y", Hour="h", Minute="m", Second="s" };
+}
+<div class="control-section">
+        <div class="control_wrapper">
+            <div class="pane">
+                <div class="tabs-wrap">
+                    <div class="wrap">
+                        // Specifies the masked DateTimePicker without mask placeholder.
+                        <ejs-datetimepicker id="datetimepicker" enableMask="true"></ejs-datetimepicker>
+                    </div>
+                </div>
+                <div class="tabs-wrap">
+                    <div class="wrap">
+                       // Specifies the masked DateTimePicker with mask placeholder.
+                       <ejs-datetimepicker id="format" enableMask="true" maskPlaceholder = "@maskPlaceholderValue" ></ejs-datetimepicker>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

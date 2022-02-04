@@ -1,0 +1,20 @@
+@Html.EJS().Button("button").Content("Open ContextMenu").Render()
+@Html.EJS().ContextMenu("contextmenu").Items((IEnumerable<object>)ViewBag.menuItems).Render()
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('button').onclick = function () {
+                ej.base.getComponent(document.getElementById("contextmenu"), "contextmenu").open(60, 20);
+            }
+        });
+
+    </script>
+
+    <style>
+
+        button {
+            margin: 20px 0 0 5px;
+        }
+    </style>
+
+</style>

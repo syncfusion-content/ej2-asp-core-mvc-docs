@@ -1,0 +1,8 @@
+@Html.EJS().MaskedTextBox("mask1").Mask("000-000-0000").Created("onCreate").Render()
+
+<script>
+    function onCreate() {
+        var key = document.getElementById("mask1");
+        key.type = "tel";
+    }
+</script>

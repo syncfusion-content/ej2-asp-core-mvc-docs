@@ -1,0 +1,1 @@
+@Html.EJS().Breadcrumb("url").EnableNavigation(false).Url("https://ej2.syncfusion.com/aspnetmvc/Breadcrumb/DefaultFunctionalities").Render()

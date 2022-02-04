@@ -1,0 +1,1 @@
+@Html.EJS().Uploader("UploadFiles").AutoUpload(false).AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save"}).Render()

@@ -1,0 +1,1 @@
+<ejs-maskedtextbox id="mask1" name="mask_value" mask='00000' type="tel"></ejs-maskedtextbox>

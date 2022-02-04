@@ -1,0 +1,12 @@
+<div class='wrap'>
+    <h4>Choose Color</h4>
+    <ejs-colorpicker id="element" value="035a" modeSwitcher="false"></ejs-colorpicker>
+</div>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+</style>

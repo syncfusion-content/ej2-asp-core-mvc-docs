@@ -1,0 +1,10 @@
+<ejs-datetimepicker id="datetimepicker" placeholder="Select a date and time" ></ejs-datetimepicker>
+
+<script>
+    document.onkeyup = function (e) {
+        if (e.altKey && e.keyCode === 84 /* t */) {
+            // press alt+t to focus the control.
+            document.getElementById("datetimepicker").ej2_instances[0].element.focus();
+        }
+    }
+</script>

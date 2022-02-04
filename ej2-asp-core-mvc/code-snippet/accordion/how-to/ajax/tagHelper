@@ -1,0 +1,44 @@
+<div id="element"></div>
+<div id="acrdnContnet1" style="display:none">
+    <ul style="margin : 0px;padding:0px 16px; list-style-type: none">
+        <li>Testing</li>
+        <li>Development</li>
+    </ul>
+</div>
+<div id="acrdnContnet2" style="display:none">
+    <ul style="margin : 0px;padding:0px 16px; list-style-type: none">
+        <li>Mobile</li>
+        <li>Web</li>
+    </ul>
+</div>
+
+<script>
+    var ajax = new ej.base.Ajax('../accordion/ajax.html', 'GET', true);
+    ajax.send().then();
+    ajax.onSuccess = function (data) {
+    var ctn2 = data;
+//Initialize Accordion component
+    var accordion = new ej.navigations.Accordion({
+    items: [
+      { header: 'Department', content: '#acrdnContnet1' },
+      { header: 'Platform', content: '#acrdnContnet2' },
+      { header: 'Employee Details', content: ctn2 },
+    ]
+    });
+
+//Render initialized Accordion component
+    accordion.appendTo('#element');
+    }
+</script>
+
+<style>
+    .accordion-control-section {
+        margin: 0 10% 0 10%;
+    }
+
+    @@media screen and (max-width: 768px) {
+        .accordion-control-section {
+            margin: 0;
+        }
+    }
+</style>

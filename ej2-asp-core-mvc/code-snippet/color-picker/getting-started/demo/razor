@@ -1,0 +1,2 @@
+// To render ColorPicker.
+@Html.EJS().ColorPicker("element").Render()

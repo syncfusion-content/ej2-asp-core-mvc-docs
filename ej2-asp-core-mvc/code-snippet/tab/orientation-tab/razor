@@ -1,0 +1,62 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Navigations;
+@using Syncfusion.EJ2.DropDowns;
+
+<div class="col-lg-12 control-section">
+    <div id="default" class="e-sample-resize-container">
+        <div class='row' style="float:left">
+            <label> Header Position </label>
+            <div>
+                @Html.EJS().DropDownList("headerPosition").Width("90%").DataSource(ViewBag.orientationData).Value("Top").Change("changeHeaderPosition").Render()
+            </div>
+        </div>
+        <div class='row' style="float:right">
+            <label> Mode </label>
+            <div>
+                @Html.EJS().DropDownList("Mode").Width("100%").DataSource(ViewBag.positionData).Value("Scrollable").Change("changeOverFlowMode").Render()
+            </div>
+        </div>
+        <br />
+        @Html.EJS().Tab("ej2Tab").HeightAdjustMode(HeightStyles.None).Height("150px").Width("700px").Items(ViewBag.adaptiveItems).Created("tabCreated").Render()
+    </div>
+</div>
+
+<style>
+  .e-content .e-item {
+    font-size: 12px;
+    margin: 10px;
+    text-align: justify;
+  }
+  
+  #ej2Tab {
+    margin-top: 80px;
+    margin-left: 80px;
+  }
+  
+  #default {
+    margin-top: 15px;
+  }
+
+  #default .row {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+</style>
+
+<script type="text/javascript">
+    var tabObj;
+    function tabCreated() {
+        tabObj = document.getElementById('ej2Tab').ej2_instances[0];
+    }
+
+    // Change event funtion for DropDownList component
+    function changeHeaderPosition(e) {
+        tabObj.headerPlacement = e.itemData.value;
+        tabObj.dataBind();
+    }
+
+    function changeOverFlowMode(e) {
+        tabObj.overflowMode = e.itemData.value;
+        tabObj.dataBind();
+    }
+</script>

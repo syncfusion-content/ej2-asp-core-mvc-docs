@@ -1,0 +1,24 @@
+<label>Add max length attribute through inline</label>
+<div class="multiline">
+    <ejs-textbox multiline="true" floatLabelType="Auto" placeholder="Enter your address" id="length" maxlength="15"></ejs-textbox>
+</div>
+<label>Add maxlength attribute through addAttributes method</label>
+<div class="multiline">
+    <ejs-textbox multiline="true" floatLabelType="Auto" placeholder="Enter your address" id="attr"></ejs-textbox>
+</div>
+<ejs-button id="primarybtn" content="Add max length"></ejs-button>
+
+<script>
+    document.getElementById("primarybtn").addEventListener('click', function () {
+        var textareaObj = document.getElementById("attr");
+        textareaObj.ej2_instances[0].addAttributes({ maxlength: 15 });
+    })
+
+</script>
+<style>
+    .multiline {
+        margin-top: 10px;
+        width: 20%;
+    }
+
+</style>

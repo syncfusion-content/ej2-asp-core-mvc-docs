@@ -1,0 +1,24 @@
+<div class="control_wrapper">
+    @Html.EJS().Uploader("fileupload").AutoUpload(false).AllowedExtensions("image/*").Selected("onSelect").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" }).Render()
+</div>
+
+<script>
+    function onSelect(args) {
+     var uploadObj = document.getElementById("fileupload").ej2_instances[0];
+         if (event.type === 'change') {
+            var allImages = ['jpg', 'jpeg', 'gif', 'tiff', 'bpg'];
+            var files = args.filesData;
+            var modifiedFiles = [];
+            for (var i = 0; i < files.length; i++) {
+                var file = files[i];
+                if (allImages.indexOf(file.type) === -1) {
+                    file.status = 'File type is not allowed';
+                    file.statusCode = '0';
+                }
+                modifiedFiles.push(file);
+            }
+         args.isModified = true;
+         args.modifiedFilesData = modifiedFiles.concat(uploadObj.filesData);
+          }
+    }
+</script>

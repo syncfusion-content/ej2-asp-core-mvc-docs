@@ -1,0 +1,41 @@
+<ejs-menu id="menu" items="ViewBag.menuItems"  fields="ViewBag.menuFields" created="created"></ejs-menu>
+
+<script>
+        function created(args) {
+            var insertBefore = [
+                {
+                    continent: 'Europe',
+                    countries: [
+                        { country: 'Finland' },
+                        { country: 'Austria' }
+                    ]
+                }
+            ];
+            var insertItem = [
+                {
+                    continent: 'Africa',
+                    countries: [
+                        { country: 'Nigeria' }
+                    ]
+                }
+            ];
+
+            menuObj = document.getElementById("menu").ej2_instances[0];
+
+            // Add items before to 'Oceania'
+            menuObj.insertBefore(insertBefore, "Oceania", false);
+
+            // Add items after to 'Asia'
+            menuObj.insertAfter(insertItem, "Asia", false);
+
+            // Remove items
+            menuObj.removeItems(['South America', 'Mexico'], false);
+        }
+</script>
+
+<style>
+    body {
+        margin-top: 100px;
+        text-align: center;
+    }
+</style>

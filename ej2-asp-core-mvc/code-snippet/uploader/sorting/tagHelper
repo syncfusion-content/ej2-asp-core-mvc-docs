@@ -1,0 +1,38 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" };
+}
+<div class="control_wrapper">
+    <ejs-uploader id="UploadFiles" selected="onSelect" asyncSettings="@asyncSettings">
+    </ejs-uploader>
+</div>
+<script>
+    var initial = true
+    function onSelect(args) {
+        if (initial) { initial = false; return; }
+        args.isModified = true;
+        var uploadObj = document.getElementById("UploadFiles").ej2_instances[0];
+        let oldFiles = uploadObj.getFilesData();
+        let filesData = args.filesData.concat(oldFiles);
+        let modifiedData = sortFileList(filesData);
+        args.modifiedFilesData = modifiedData;
+    }
+
+    function sortFileList(filesData) {
+        let files = filesData;
+        let fileNames = [];
+        for (let i = 0; i < files.length; i++) {
+            fileNames.push(files[i].name);
+        }
+        let sortedFileNames = fileNames.sort();
+        let sortedFilesData = [];
+        let index = 0;
+        for (let name of sortedFileNames) {
+            for (let i = 0; i < files.length; i++) {
+                if (name === files[i].name) {
+                    sortedFilesData.push(files[i]);
+                }
+            }
+        }
+        return sortedFilesData;
+    }
+</script>

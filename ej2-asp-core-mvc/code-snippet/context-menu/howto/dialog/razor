@@ -1,0 +1,28 @@
+<div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
+@Html.EJS().ContextMenu("contextmenu").Target("#contextmenutarget").Items((IEnumerable<object>)ViewBag.menuItems).Select("itemSelect").Render()
+@Html.EJS().Dialog("dialog").Header("Save As").Content("This file can be saved as PDF").Width("250px").Visible(false).Buttons(ViewBag.DialogButtons).Render()
+
+<script>
+    function dlgButtonClick() {
+        ej.base.getComponent(document.getElementById('dialog'), "dialog").hide();
+    }
+
+    function itemSelect() {
+        ej.base.getComponent(document.getElementById('dialog'), "dialog").show();
+    }
+</script>
+
+<style>
+
+#contextmenutarget {
+    border: 1px dashed;
+    height: 250px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    color: gray;
+    line-height: 17;
+    font-size: 14px;
+}
+
+</style>

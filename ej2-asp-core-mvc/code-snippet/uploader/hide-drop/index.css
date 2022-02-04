@@ -1,0 +1,24 @@
+    #droparea {
+    padding: 50px 25px;
+    margin: 30px auto;
+    border: 1px solid #c3c3c3;
+    text-align: center;
+    width: 20%;
+    display: inline-flex;
+    }
+    .e-file-select,
+    .e-file-drop {
+    display: none;
+    }
+    body .e-upload-drag-hover {
+    outline: 2px dashed brown;
+    }
+    #uploadfile {  
+    width: 60%;
+    display: inline-flex;
+    margin-left: 5%;
+    }
+	.e-control .e-file-select,
+	.e-control .e-file-drop {
+	  display: none;
+	}

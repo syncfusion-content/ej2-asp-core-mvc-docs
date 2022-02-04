@@ -1,0 +1,24 @@
+<ejs-maskedtextbox id="mask1" name="mask_value1" mask="00000-00000" value='93828-32132' placeholder="Default cursor position" floatLabelType="Always"></ejs-maskedtextbox>
+<ejs-maskedtextbox id="mask2" name="mask_value2" mask="00000-00000" value='83929-4342' placeholder="Cursor positioned at start" floatLabelType="Always" focus="onfocus.bind(this)"></ejs-maskedtextbox>
+<ejs-maskedtextbox id="mask3" name="mask_value3" mask="00000-00000" value='83929-3213' placeholder="Cursor positioned at end" floatLabelType="Always" focus="onfocus2.bind(this)"></ejs-maskedtextbox>
+<ejs-maskedtextbox id="mask4" name="mask_value4" mask="+1 000-000-0000" value='234-432-432' placeholder="Cursor at specified position" floatLabelType="Always" focus="onfocus3.bind(this)"></ejs-maskedtextbox>
+
+<script>
+
+    function onfocus(args) {
+        //sets cursor position at start of MaskedTextBox
+        args.selectionEnd = args.selectionStart = 0;
+    }
+
+    function onfocus2(args) {
+        //sets cursor position at end of MaskedTextBox
+        args.selectionStart = args.selectionEnd = args.maskedValue.length;
+    }
+
+    function onfocus3(args) {
+        //sets cursor at specified position
+        args.selectionStart = 3;
+        args.selectionEnd = 3;
+    }
+
+</script>

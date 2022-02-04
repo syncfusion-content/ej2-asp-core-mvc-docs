@@ -1,0 +1,5 @@
+<ejs-maskedtextbox id="mask1" mask="#####" placeholder="Mask ##### (ex: 012+-)" floatLabelType="Always"></ejs-maskedtextbox>
+<ejs-maskedtextbox id="mask2" mask="LLLLLL" placeholder="Mask LLLLLL (ex: Sample)" floatLabelType="Always"></ejs-maskedtextbox>
+<ejs-maskedtextbox id="mask3" mask="&&&&&" placeholder="Mask &&&&& (ex: A12#)" floatLabelType="Always"></ejs-maskedtextbox>
+<ejs-maskedtextbox id="mask4"  mask=">LLL<LLL" placeholder="Mask >LLL<LL (ex: SAMple)" floatLabelType="Always"></ejs-maskedtextbox>
+<ejs-maskedtextbox id="mask5" mask="\\A999" placeholder="Mask \\A999 (ex: A321)" floatLabelType="Always"></ejs-maskedtextbox>

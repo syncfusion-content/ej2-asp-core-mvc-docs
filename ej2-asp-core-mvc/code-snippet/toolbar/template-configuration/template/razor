@@ -1,0 +1,15 @@
+<div id='template_toolbar'>
+    <div>
+        <div><button class='e-btn e-tbar-btn'>Cut</button> </div>
+        <div><button class='e-btn e-tbar-btn'>Copy</button> </div>
+        <div><button class='e-btn e-tbar-btn'>Paste</button> </div>
+        <div class='e-separator'> </div>
+        <div><button class='e-btn e-tbar-btn'>Bold</button> </div>
+        <div><button class='e-btn e-tbar-btn'>Italic</button> </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var toolbarObj = new ej.navigations.Toolbar({ });
+    toolbarObj.appendTo('#template_toolbar');
+</script>

@@ -1,0 +1,19 @@
+.control_wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.e-upload .e-upload-actions .e-file-clear-btn,
+.e-upload .e-upload-actions .e-file-upload-btn {
+  -webkit-tap-highlight-color: transparent;
+    background-color: #ddd;
+    border-color: #c3c3c3;
+    color: #000000;
+    box-shadow: none;
+    width: 50%;
+    margin: 0;
+    text-transform: none;
+    padding: 8px 0;
+}
+.e-upload .e-upload-actions {
+  width: 100%;
+}

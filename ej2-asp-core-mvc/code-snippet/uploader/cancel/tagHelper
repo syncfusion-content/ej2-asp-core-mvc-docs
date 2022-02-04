@@ -1,0 +1,4 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove", ChunkSize = 102400 };
+}
+<ejs-uploader id="uploadFiles" asyncSettings="@asyncSettings" autoUpload="false"></ejs-uploader>

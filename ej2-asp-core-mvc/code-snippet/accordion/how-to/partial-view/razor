@@ -1,0 +1,56 @@
+   <div class="control-section">
+        <div class="control_wrapper accordion-control-section">
+
+           @Html.EJS().Accordion("MainAccordion").Created("Created").Expanding("Expanding").Render()
+
+        </div>
+    </div>
+
+<script>
+    var loaded = false;
+    function Created(e) {
+
+        var AccObj = document.getElementById("MainAccordion").ej2_instances[0];
+        var ajax = new ej.base.Ajax('@Url.Action("PartialView1", "Accordion")', 'GET', true);
+        ajax.send().then();
+        ajax.onSuccess = function (data) {
+            AccObj.addItem({ header: 'Grid1' , content: "<br/><div id='GridOrder1'></div>", expanded: true },0);
+            AccObj.addItem({ header: 'Grid2' , content: "<br/><div id='GridOrder2'></div>" },1);
+            $("#GridOrder1").html(data);
+        }
+
+
+    }
+    function Expanding(e) {
+
+        if(e.index != 0 && !loaded){
+            var AccObj = document.getElementById("MainAccordion").ej2_instances[0];
+            var ajax = new ej.base.Ajax('@Url.Action("PartialView2", "Home")', 'GET', true);
+            ajax.send().then();
+            ajax.onSuccess = function (data) {
+                $("#GridOrder2").html(data);
+                loaded = true;
+            }
+        }
+
+    }
+</script>
+
+
+//Code in the PartialView
+
+@Html.EJS().Grid("Grid").Height(250).DataSource(dataManger =>
+{
+   dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").CrossDomain(true).Adaptor("WebApiAdaptor");
+}).Columns(col =>
+    {
+
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("160").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+
+    }).AllowPaging().PageSettings(page=>page.PageCount(3)).Render()
+
+@Html.EJS().ScriptManager()

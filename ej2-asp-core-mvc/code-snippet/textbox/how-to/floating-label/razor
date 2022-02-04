@@ -1,0 +1,82 @@
+<div class="control-section">
+    <div class="control_wrapper accordion-control-section">
+        <div id="input-container-1">
+            <h4> FloatLabelType as Auto </h4>
+        </div>
+        <div id="input-container-2">
+            <h4> FloatLabelType as Always </h4>
+        </div>
+        <div id="input-container-3">
+            <h4> FloatLabelType as Never </h4>
+        </div>
+        <div id="input-container-4">
+            <h4> Float label input with icons </h4>
+        </div>
+    </div>
+</div>
+
+<script>
+    ej.base.enableRipple(true);
+
+    var inputObj;
+
+    var element = document.createElement('input');
+    document.getElementById('input-container-1').appendChild(element);
+    new ej.inputs.Input.createInput({
+        element: element,
+        floatLabelType: "Auto",
+        properties: {
+            placeholder: 'Enter Name'
+        }
+    });
+
+    var element2 = document.createElement('input');
+    document.getElementById('input-container-2').appendChild(element2);
+    new ej.inputs.Input.createInput({
+        element: element2,
+        floatLabelType: "Always",
+        properties: {
+            placeholder: 'Enter Name'
+        }
+    });
+
+    var element3 = document.createElement('input');
+    document.getElementById('input-container-3').appendChild(element3);
+    new ej.inputs.Input.createInput({
+        element: element3,
+        floatLabelType: "Never",
+        properties: {
+            placeholder: 'Enter Name'
+        }
+    });
+
+    var element4 = document.createElement('input');
+    document.getElementById('input-container-4').appendChild(element4);
+    new ej.inputs.Input.createInput({
+        element: element4,
+        floatLabelType: "Auto",
+        buttons: ['e-input-group-icon e-input-down'],
+        properties: {
+            placeholder: 'Enter Name'
+        }
+    });
+
+</script>
+
+<style>
+    .e-input-group-icon:before {
+        font-family: e-icons;
+    }
+
+    .e-input-group-icon.e-input-down:before { /* csslint allow: adjoining-classes */
+        content: "";
+    }
+
+    #input-container-03 .e-input-group { /* csslint allow: adjoining-classes */
+        margin: 30px 0;
+    }
+
+    #input-container-03 .e-float-input { /* csslint allow: adjoining-classes */
+        margin: 30px 0;
+    }
+</style>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @{Html.EJS().Sidebar("sidebar-menu").Width("220px").Target(".main-content").ContentTemplate(@<div class="dock-menu">
+    <!-- normal state element declaration -->
+    <div class="sidebar-header header-cover">
+
+        <div style="padding-top:30px">
+            <div class="sub-title">
+                Layout Page Sidebar
+            </div>
+        </div>
+    </div>
+    <!-- end of normal state element declaration -->
+  </div>).Render();}
+    <div id="maintext" class=".main-content">
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+    @Html.EJS().ScriptManager()
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <style>
+        #sidebar-menu {
+            padding-top: 30px;
+            background-color: #1694CA
+        }
+
+        .sub-title {
+            text-align: center;
+            font-size: 20px;
+            padding: 3vw;
+            color: white;
+        }
+        .container {
+            margin-left: 10px;
+        }
+    </style>
+</body>
+</html>

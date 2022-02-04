@@ -1,0 +1,217 @@
+
+    <div id='container'>
+        <div class="col-lg-12 control-section">
+            <div class="content-wrapper" style="margin-bottom: 25px;overflow-x: hidden">
+                <div class="form-title">
+                    <span>Min</span>
+                </div>
+                <form id="formMinId" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="e-float-input">
+                            <ejs-slider id="min-slider" name="min-slider" value="30" changed="onMinChanged">
+                                <e-slider-ticksdata placement=Before showSmallTicks="true" largeStep="20" smallStep="5"></e-slider-ticksdata>
+                            </ejs-slider>
+                        </div>
+                    </div>
+                </form>
+                <div class="form-title">
+                    <span>Max</span>
+                </div>
+                <form id="formMaxId" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="e-float-input">
+                            <ejs-slider id="max-slider" name="max-slider" value="30" changed="onMaxChanged">
+                                <e-slider-ticksdata placement=Before showSmallTicks="true" largeStep="20" smallStep="5"></e-slider-ticksdata>
+                            </ejs-slider>
+                        </div>
+                    </div>
+                </form>
+                <div class="form-title">
+                    <span>Value</span>
+                </div>
+                <form id="formValId" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="e-float-input">
+                            <ejs-slider id="val-slider" name="val-slider" value="30" changed="onValChanged">
+                                <e-slider-ticksdata placement=Before showSmallTicks="true" largeStep="20" smallStep="5"></e-slider-ticksdata>
+                            </ejs-slider>
+                        </div>
+                    </div>
+                </form>
+                <div class="form-title">
+                    <span>Range</span>
+                </div>
+                <form id="formRangeId" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="e-float-input">
+                            <ejs-slider id="range-slider" name="range-slider" value="30" changed="onRangeChanged">
+                                <e-slider-ticksdata placement=Before showSmallTicks="true" largeStep="20" smallStep="5"></e-slider-ticksdata>
+                            </ejs-slider>
+                        </div>
+                    </div>
+                </form>
+                <div class="form-title">
+                    <span>Custom</span>
+                </div>
+                <form id="formCustomId" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="e-float-input">
+                            <ejs-slider id="custom-slider" type="Range" name="custom-slider" changed="onCustomChanged">
+                                <e-slider-ticksdata placement=Before showSmallTicks="true" largeStep="20" smallStep="5"></e-slider-ticksdata>
+                            </ejs-slider>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    var minOptions = {
+        rules: {
+            'min-slider': {
+                validateHidden: true,
+                min: [40, "You must select value greater than or equal to 40"]
+            }
+        }
+    };
+
+    var formMinId = document.getElementById('formMinId');
+    // Initialize Form validation
+    var formMinObj = new ej.inputs.FormValidator(formMinId, minOptions);
+
+    function onMinChanged(args) {
+        // validate the slider value in the form
+        formMinObj.validate();
+    }
+
+    var maxOptions = {
+        rules: {
+            'max-slider': {
+                validateHidden: true,
+                max: [40, "You must select value less than or equal to 40"]
+            }
+        }
+    };
+
+    var formMaxId = document.getElementById('formMaxId');
+    // Initialize Form validation
+    var formMaxObj = new ej.inputs.FormValidator(formMaxId, maxOptions);
+
+    function onMaxChanged(args) {
+        // validate the slider value in the form
+        formMaxObj.validate();
+    }
+
+    var valOptions = {
+        rules: {
+            'val-slider': {
+                validateHidden: true,
+                regex: [/40/, "You must select value equal to 40"]
+            }
+        }
+    };
+
+    var formValId = document.getElementById('formValId');
+    // Initialize Form validation
+    var formValObj = new ej.inputs.FormValidator(formValId, valOptions);
+
+    function onValChanged(args) {
+        // validate the slider value in the form
+        formValObj.validate();
+    }
+
+    var rangeOptions = {
+        rules: {
+            'range-slider': {
+                validateHidden: true,
+                range: [40, 80, "You must select values between 40 and 80"]
+            }
+        }
+    };
+
+    var formRangeId = document.getElementById('formRangeId');
+    // Initialize Form validation
+    var formRangeObj = new ej.inputs.FormValidator(formRangeId, rangeOptions);
+
+    function onRangeChanged(args) {
+        // validate the slider value in the form
+        formRangeObj.validate();
+    }
+
+    var customOptions = {
+        rules: {
+            'custom-slider': {
+                validateHidden: true,
+                range: [validateRange, "You must select values between 40 and 80"]
+            }
+        }
+    };
+
+    var formCustomId = document.getElementById('formCustomId');
+    // Initialize Form validation
+    var formCustomObj = new ej.inputs.FormValidator(formCustomId, customOptions);
+
+    function onCustomChanged(args) {
+        // validate the slider value in the form
+        formCustomObj.validate();
+    }
+
+    function validateRange(args) {
+        var SliderCustomObj = document.getElementById('custom-slider').ej2_instances[0];
+        return SliderCustomObj.value[0] >= 40 && SliderCustomObj.value[1] <= 80;
+    }
+</script>
+
+<style>
+.highcontrast form {
+    background: #000000
+}
+
+/* csslint ignore:start */
+.highcontrast label.e-custom-label,
+.highcontrast label.e-float-text,
+.highcontrast label.salary,
+.highcontrast input::placeholder,
+.highcontrast .e-float-input label.e-float-text {
+    color: #fff !important;
+    line-height: 2.3;
+}
+/* csslint ignore:end */
+
+.e-error,
+.e-float-text {
+    font-weight: 500;
+}
+
+table,
+td,
+th {
+    padding: 5px;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+form {
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.36);
+    border-radius: 5px;
+    background: #f9f9f9;
+    padding: 23px;
+    padding-bottom: 20px;
+    margin: auto;
+    max-width: 650px;
+}
+
+.form-title {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+</style>

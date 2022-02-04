@@ -1,0 +1,1 @@
+@Html.EJS().Calendar("calendar").Render()

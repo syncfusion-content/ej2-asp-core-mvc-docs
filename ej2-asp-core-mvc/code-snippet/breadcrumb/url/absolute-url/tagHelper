@@ -1,0 +1,9 @@
+<ejs-breadcrumb id="separatorTemplate" enableNavigation="false">
+<e-breadcrumb-items>
+    <e-breadcrumb-item text="Home" url="https://ej2.syncfusion.com/home/aspnetcore.html#platform"></e-breadcrumb-item>
+    <e-breadcrumb-item text="Getting" url="https://ej2.syncfusion.com/home/aspnetcore.html#platform"></e-breadcrumb-item>
+    <e-breadcrumb-item text="Icons" url="https://ej2.syncfusion.com/home/aspnetcore.html#platform"></e-breadcrumb-item>
+    <e-breadcrumb-item text="Navigation" url="https://ej2.syncfusion.com/home/aspnetcore.html#platform"></e-breadcrumb-item>
+    <e-breadcrumb-item text="Overflow" url="https://ej2.syncfusion.com/home/aspnetcore.html#platform"></e-breadcrumb-item>
+</e-breadcrumb-items>
+</ejs-breadcrumb>

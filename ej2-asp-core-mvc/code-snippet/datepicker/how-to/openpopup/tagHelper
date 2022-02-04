@@ -1,0 +1,8 @@
+<ejs-datepicker id="datepicker" focus="onFocus" placeholder="Choose a Date"></ejs-datepicker>
+
+<script>
+    function onFocus (args) {
+        var datepickerObject = document.getElementById("datepicker").ej2_instances[0];
+        datepickerObject.show();
+    }
+</script>

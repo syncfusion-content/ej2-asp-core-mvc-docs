@@ -1,0 +1,47 @@
+<div class=" control-section">
+<!-- sidebar element declaration -->
+    <ejs-sidebar id="default-sidebar" width="280px" closeOnDocumentClick="true" close="onClose">
+        <e-content-template>
+            <div class="title-header">
+                <div style="display:inline-block;font-size:16px"> Dropdownlist </div>
+                <ejs-dropdownlist id="games" dataSource="@ViewBag.data"  cssClass="custom_class">
+                </ejs-dropdownlist>
+            </div>
+            </e-content-template>
+    </ejs-sidebar>
+    <!-- end of sidebar element -->
+    <!--  Main Content declaration -->
+    <div>
+        <div class="title default">Main content</div>
+        <div class="sub-title">
+            Place your primary content here.
+        </div>
+    </div>
+</div>
+<script>
+   // Prevent the sidebar element from closing.
+    function onClose() {
+     if(document.activeElement.classList.contains("custom_class")){
+        args.cancel = true;
+      }
+    }
+</script>
+<style>
+    /* sidebar element styles */
+    #default-sidebar {
+        background-color: rgb(25, 118, 210);
+        color: #ffffff;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .sub-title {
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+    }
+</style>

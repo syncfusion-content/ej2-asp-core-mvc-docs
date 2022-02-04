@@ -1,0 +1,45 @@
+<div id='container'>
+    <table class="table-section">
+        <tr>
+            <td> Mode: </td>
+            <td>
+                <ejs-dropdownlist id="dropdown" dataSource="ViewBag.modeData" change="onChange" value="ViewBag.value" popupHeight="150px"></ejs-dropdownlist>
+            </td>
+        </tr>
+        <tr>
+            <td class="sample-td"> Enter your name: </td>
+            <td class="sample-td">
+                <ejs-inplaceeditor id="element" mode="Inline">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+    </table>
+</div>
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    tr td:first-child {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .sample-td {
+        padding-top: 10px;
+        min-width: 230px;
+        height: 100px;
+    }
+</style>
+<script>
+    function onChange(e) {
+        var editObj = document.getElementById('element').ej2_instances[0];
+        editObj.mode = e.value;
+        editObj.dataBind();
+    }
+</script>

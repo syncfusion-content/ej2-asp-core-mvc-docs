@@ -1,0 +1,37 @@
+<div id='container'>
+    <span class="content-title"> Select frameworks: </span>
+    <ejs-inplaceeditor id="element" mode="Inline" type="MultiSelect" value="ViewBag.value" name="skill" url="/Home/UpdateData" primaryKey="FrameWork" created="created" adaptor="WebApiAdaptor" model="ViewBag.model" actionSuccess="actionSuccess" actionFailure="actionFailure">
+    </ejs-inplaceeditor>
+</div>
+
+<style>
+    #container {
+        margin: 0 auto;
+        width: 600px;
+    }
+</style>
+
+<script>
+    function created() {
+        chipOnCreate();
+        document.getElementById("element").setAttribute("data-underline", "false");
+    }
+    function actionSuccess(e) {
+        e.value = chipCreation(e.value.split(','), true);
+    }
+    function actionFailure(e) {
+        e.value = chipCreation(e.value.split(','), false);
+    }
+    function chipOnCreate() {
+        var editObj = document.getElementById('element').ej2_instances[0];
+        editObj.element.querySelector('.e-editable-value').innerHTML = chipCreation(editObj.value);
+    }
+    function chipCreation(data, isSuccess) {
+        var value = '<div class="e-chip-list">';
+        [].slice.call(data).forEach((val) => {
+            value += '<div class="e-chip"> <span class="e-chip-text' + (!isSuccess ? 'e-highlight' : '') + '"> ' + val + '</span></div>';
+        });
+        value += '</div>';
+        return value;
+    }
+</script>

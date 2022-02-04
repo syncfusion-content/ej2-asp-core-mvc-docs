@@ -1,0 +1,67 @@
+@using Syncfusion.EJ2.Navigations;
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - My ASP.NET Application</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        @Styles.Render("~/Content/css")
+        @Styles.Render("~/Content/styles.css")
+        @Scripts.Render("~/bundles/modernizr")
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+        <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    </head>
+    <body>
+        @{Html.EJS().Sidebar("sidebar-menu").Width("290px").Target(".maincontent").MediaQuery("(min-width:670px)").ContentTemplate(@<div>
+        <!-- Sidebar content -->
+            <div class="sidebar-header header-cover" style="background-color: #1694CA">
+                <div style="text-align:center">
+                    <div class="sidebar-brand">
+                         Essential JS 2 Syncfusion Components
+                    </div>
+                </div>
+                <div style="padding:0  5px 10px 5px">
+                    <div class="searchbox">
+                        <input id="search-by" type="text" placeholder="Search Components">
+                        <span data-search-clear=""><i class="fa fa-search" style="font-size:20px"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="control-section">
+                <div class="control_wrapper accordion-control-section">
+                    @Html.EJS().Accordion("accordion").ExpandMode(ExpandMode.Single).EnablePersistence(true).Items(new List<AccordionAccordionItem>
+                        {
+                        new AccordionAccordionItem { Header = "Navigations",Expanded=true, Content = "#navigation" },
+                        new AccordionAccordionItem { Header = "Layouts", Content = "#layouts" },
+                        new AccordionAccordionItem { Header = "Inputs", Content = "#inputs" },
+                        }).Render()
+                </div>
+                    <ul id="navigation" style="display:none">
+                        <li><a href="/Home/Index">Sidebar</a></li>
+                        <li><a href="/Home/ContextMenu">ContextMenu</a></li>
+                        <li><a href="/Home/Accordion">Accordion</a></li>
+                    </ul>
+                    <ul id="layouts" style="display:none">
+                        <li><a href="/Home/Avatar">Avatar</a></li>
+                        <li><a href="/Home/Card">Card</a></li>
+                        <li><a href="/Home/Splitter">Splitter</a></li>
+                    </ul>
+                    <ul id="inputs" style="display:none">
+                        <li><a href="/Home/InputMask">Input Mask</a></li>
+                        <li><a href="/Home/TextBox">TextBox</a></li>
+                    </ul>
+            </div>
+        <!-- end of normal state element declaration -->
+        </div>).Render();}
+        <div id="body_content" class="maincontent">
+            <div style="padding: 1.5vw 3vw;">
+                @RenderBody()
+            </div>
+        </div>
+        @Html.EJS().ScriptManager()
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

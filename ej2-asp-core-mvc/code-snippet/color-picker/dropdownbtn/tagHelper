@@ -1,0 +1,47 @@
+<div class='wrap'>
+    <ejs-colorpicker id="colorpicker" inline="true" change="onChange"></ejs-colorpicker>
+    <h4>Choose color</h4>
+    <ejs-dropdownbutton id="ddb" target=".e-colorpicker-wrapper" iconCss="e-dropdownbtn-preview" beforeClose="onDdbBeforeClose" open="onDdbOpen"></ejs-dropdownbutton>
+</div>
+
+<script>
+    // Triggers while changing the colors.
+    function onChange(args) {
+        document.getElementById('ddb').children[0].style.backgroundColor = args.currentValue.rgba;
+        closePopup();
+    }
+    // Triggers after the ddb popup open.
+    function onDdbOpen(args) {
+        args.element.parentElement.querySelector('.e-cancel').addEventListener('click', closePopup);
+    }
+    // Triggers before closing the ddb popup.
+    function onDdbBeforeClose(args) {
+        args.element.parentElement.querySelector('.e-cancel').removeEventListener('click', closePopup);
+    }
+    // Function to close the ddb popup.
+    function closePopup() {
+        ej.base.getInstance(document.getElementById('ddb'), ejs.splitbuttons.DropDownButton).toggle();
+    }
+</script>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+    }
+    /* DropDownButton preview customization */
+    #ddb .e-btn-icon.e-dropdownbtn-preview {
+        background-color: #008000;
+        height: 18px;
+        width: 18px;
+        margin-top: 0; 
+    }
+    #ddb {
+        padding: 4px;
+    }
+    h4 {
+        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+        font-size: 14px;
+    }
+</style>

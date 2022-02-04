@@ -1,0 +1,59 @@
+@section ControlsSection{
+    <div class="control-section">
+        <div class="control_wrapper accordion-control-section">
+          <ejs-accordion id="MainAccordion" created="Created" expanding="Expanding">
+             <e-accordion-accordionitems>
+               <e-accordion-accordionitem expanded="true" header="Grid1" content="<br/><div id='GridOrder1'></div>"></e-accordion-accordionitem>
+               <e-accordion-accordionitem header="Grid2" content="<br/><div id='GridOrder2'></div>"></e-accordion-accordionitem>
+            </e-accordion-accordionitems>
+           </ejs-accordion>
+        </div>
+    </div>
+}
+
+<script>
+    var loaded = false;
+    function Created(e) {
+
+        var AccObj = document.getElementById("MainAccordion").ej2_instances[0];
+        var ajax = new ej.base.Ajax('@Url.Action("PartialView3", "Accordion")', 'GET', true);
+        ajax.send().then();
+         ajax.onSuccess = function (data) {
+            $("#GridOrder1").html(data);
+        }
+
+
+    }
+    function Expanding(e) {
+
+        if(e.index != 0 && !loaded){
+            var AccObj = document.getElementById("MainAccordion").ej2_instances[0];
+            var ajax = new ej.base.Ajax('@Url.Action("PartialView4", "Home")', 'GET', true);
+            ajax.send().then();
+            ajax.onSuccess = function (data) {
+                $("#GridOrder2").html(data);
+                loaded = true;
+            }
+        }
+
+    }
+</script>
+
+//Code in the PartialView
+
+<h2>Grid</h2>
+
+
+<ejs-grid id="Grid2" height="250" allowPaging="true">
+    <e-grid-pageSettings pageCount="3"></e-grid-pageSettings>
+    <e-data-manager url="https://ej2services.syncfusion.com/production/web-services/api/Orders" crossdomain="true" adaptor="WebApiAdaptor"></e-data-manager>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="160"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="170"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="170"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="170"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" textAlign="Center"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<ejs-scripts></ejs-scripts>

@@ -1,0 +1,41 @@
+<div id='container'>
+    <table class="table-section">
+        <tr>
+            <td> Disabled: </td>
+            <td>
+                <ejs-checkbox id="enable" change="onChange" label="Disable" checked="false"></ejs-checkbox>
+            </td>
+        </tr>
+        <tr>
+            <td class="sample-td"> Enter your name: </td>
+            <td class="sample-td">
+                <ejs-inplaceeditor id="element" mode="Inline" model="ViewBag.model" value="ViewBag.value">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<style>
+    .table-section {
+        margin: 0 auto;
+    }
+
+    tr td:first-child {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .sample-td {
+        padding-top: 10px;
+        min-width: 230px;
+        height: 100px;
+    }
+</style>
+<script>
+    function onChange(e) {
+        var editObj = document.getElementById('element').ej2_instances[0];
+        editObj.disabled = e.checked;
+        editObj.dataBind();
+    }
+</script>

@@ -1,0 +1,59 @@
+@using Syncfusion.EJ2.Navigations;
+
+@{
+    var content0 = "HyperText Markup Language, commonly referred to as HTML, is the standard markup language used to create web " +
+            "pages. Along with CSS, and JavaScript, HTML is a cornerstone technology, used by most websites to create visually " +
+            "engaging web pages, user interfaces for web applications, and user interfaces for many mobile applications.[1] Web " +
+            "browsers can read HTML files and render them into visible or audible web pages. HTML describes the structure of a " +
+            "website semantically along with cues for presentation, making it a markup language, rather than a programming language.";
+
+    var content1 = "C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development " +
+            "team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.";
+
+    var content2 = "Java is a set of computer software and specifications developed by Sun Microsystems, later acquired by Oracle " +
+            "Corporation, that provides a system for developing application software and deploying it in a cross-platform computing " +
+            "environment. Java is used in a wide variety of computing platforms from embedded devices and mobile phones to " +
+            "enterprise servers and supercomputers. While less common, Java applets run in secure, sandboxed environments to " +
+            "provide many features of native applications and can be embedded in HTML pages.";
+
+}
+
+<ejs-tab id="ej2Tab" heightAdjustMode="Auto" locale="fr-BE" showCloseButton="true" >
+    <e-tab-tabitems>
+        <e-tab-tabitem header="ViewBag.headerText0" content="@content0"></e-tab-tabitem>
+        <e-tab-tabitem header="ViewBag.headerText1" content="@content1"></e-tab-tabitem>
+        <e-tab-tabitem header="ViewBag.headerText2" content="@content2"></e-tab-tabitem>               
+    </e-tab-tabitems>
+</ejs-tab>
+
+<script>
+    window.onload = function () {
+        ej.base.L10n.load({
+            'fr-BE': {
+                'tab': {'closeButtonTitle': "Fermer"}
+            }
+        });
+    }
+</script>
+
+<style>
+    #container {
+        visibility: hidden;
+        max-width: 650px;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+</style>

@@ -1,0 +1,104 @@
+<div class="content-wrapper">
+    <div class="divelement">
+        @Html.EJS().NumericTextBox("numeric").Value(10).Locale("de").Placeholder("Geben Sie den Wert ein").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
+    </div>
+    <div class="divelement">
+        @Html.EJS().NumericTextBox("percentage").Format("p2").Value(0.5).Locale("de").Max(1).Min(0).Step(0.01).Placeholder("Geben Sie den Prozentsatz ein").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
+    </div>
+    <div class="divelement">
+        @Html.EJS().NumericTextBox("currency").Format("c2").Value(100).Locale("de").Currency("EUR").Placeholder("Geben Sie die Währung ein").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).Render()
+    </div>
+    <div class="wrapper">
+        @Html.EJS().DropDownList("cultures").Text("de").Change("changeLocale").Placeholder("Choose Culture").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Always).DataSource(ViewBag.cultureData).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "CultureName" }).Render()
+    </div>
+</div>
+<script>
+    function loadCultureFiles(name) {
+        var files = ['currencies.json', 'numbers.json'];
+        if (name === 'zh') {
+            files.push('currencyData.json');
+        }
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var val, ajax;
+            if (name === 'zh' && prop === files.length - 1) {
+                ajax = new ej.base.Ajax(location.origin + location.pathname + '/../../node_modules/cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                ajax = new ej.base.Ajax(location.origin + location.pathname + '/../../node_modules/cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+            ajax.onSuccess = function (value) {
+                val = value;
+            };
+            ajax.send();
+            loader(JSON.parse(val));
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+    loadCultureFiles('de');
+    function changeLocale() {
+        var numeric = document.getElementById("numeric").ej2_instances[0];
+        var percent = document.getElementById("percentage").ej2_instances[0];
+        var currency = document.getElementById("currency").ej2_instances[0];
+
+        var culture = document.getElementById('cultures').value;
+        numeric.locale = culture;
+        percent.locale = culture;
+        currency.locale = culture;
+
+        if (culture != 'en') {
+            loadCultureFiles(culture);
+        }
+        if (culture === 'zh') {
+            currency.currency = 'CNY';
+            numeric.placeholder = '输入值';
+            currency.placeholder = '输入货币';
+            percent.placeholder = '输入百分比';
+
+        }
+        else if (culture === 'de') {
+            currency.currency = 'EUR';
+            numeric.placeholder = 'Geben Sie den Wert ein';
+            currency.placeholder = 'Geben Sie die Währung ein';
+            percent.placeholder = 'Geben Sie den Prozentsatz ein';
+
+        }
+        else {
+            currency.currency = 'USD';
+            numeric.placeholder = 'Enter the value';
+            currency.placeholder = 'Enter the currency';
+            percent.placeholder = 'Enter the percentage';
+        }
+    }
+</script>
+<style>
+    .content-wrapper {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    .divelement {
+        padding: 10px;
+    }
+
+    .wrapper {
+        width: 50%;
+        padding-top: 50px;
+        margin: 0 auto;
+    }
+</style>
+<script>
+    ej.base.enableRipple(true)
+    ej.base.L10n.load({
+        'en': {
+            'numerictextbox': { incrementTitle: 'Increment value', decrementTitle: 'Decrement value' }
+        },
+        'de': {
+            'numerictextbox': { incrementTitle: 'Wert erhöhen', decrementTitle: 'Dekrementwert' }
+        },
+        'zh': {
+            'numerictextbox': { incrementTitle: '增值', decrementTitle: '遞減值' }
+        },
+    });
+</script>

@@ -1,0 +1,9 @@
+@Html.EJS().Calendar("element").RenderDayCell("disableDate").Value(@ViewBag.value).Render()
+
+<script>
+    function disableDate(args) {
+        if (args.date.getDay() === 0 || args.date.getDay() === 6) {
+            args.isDisabled = true;
+        }
+    }
+</script>

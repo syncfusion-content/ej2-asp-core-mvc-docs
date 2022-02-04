@@ -1,0 +1,10 @@
+<ejs-datepicker id="datepicker" placeholder="Enter date"></ejs-datepicker>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var datepickerObject = document.getElementById("datepicker").ej2_instances[0];
+        document.getElementsByTagName('button')[0].onclick = function () {
+            datepickerObject.focusIn();
+        }
+    })
+</script>

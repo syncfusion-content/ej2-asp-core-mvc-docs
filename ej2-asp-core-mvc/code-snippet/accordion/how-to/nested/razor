@@ -1,0 +1,39 @@
+@using Syncfusion.EJ2.Navigations;
+
+<div style="display: none">
+    @Html.EJS().Accordion("childNested1").Items(new List<AccordionAccordionItem>
+    {
+        new AccordionAccordionItem { Header = "Video-1" },
+        new AccordionAccordionItem { Header = "Video-2" }
+    }).Render()
+</div>
+<div style="display: none">
+    @Html.EJS().Accordion("childNested2").Items(new List<AccordionAccordionItem>
+        {
+        new AccordionAccordionItem { Header = "Music-1" },
+        new AccordionAccordionItem { Header = "Music-2" },
+        new AccordionAccordionItem { Header = "New Playlist", Expanded = true, Content= "#childNested4" }
+        }).Render()
+</div>
+<div style="display: none">
+    @Html.EJS().Accordion("childNested3").Items(new List<AccordionAccordionItem>
+    {
+        new AccordionAccordionItem { Header = "Image-1" },
+        new AccordionAccordionItem { Header = "Image-2" }
+    }).Render()
+</div>
+<div style="display: none">
+    @Html.EJS().Accordion("childNested4").Items(new List<AccordionAccordionItem>
+    {
+        new AccordionAccordionItem { Header = "New Track-1" },
+        new AccordionAccordionItem { Header = "New Track-2" }
+    }).Render()
+</div>
+<div>
+    @Html.EJS().Accordion("ParentNested").Width("50%").ExpandMode(ExpandMode.Multiple).Items(new List<AccordionAccordionItem>
+    {
+        new AccordionAccordionItem { Header = "Videos", Expanded = true, Content = "#childNested1" },
+        new AccordionAccordionItem { Header = "Music", Expanded = true, Content = "#childNested2" },
+        new AccordionAccordionItem { Header = "Images", Expanded = true, Content = "#childNested3" }
+    }).Render()
+</div>

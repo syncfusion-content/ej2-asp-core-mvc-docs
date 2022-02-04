@@ -1,0 +1,4 @@
+<div id="droparea">
+    Drop files here to upload
+</div>
+@Html.EJS().Uploader("UploadFiles").DropArea("#droparea").AutoUpload(false).Render()

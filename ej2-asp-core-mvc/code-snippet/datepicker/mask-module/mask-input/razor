@@ -1,0 +1,1 @@
+@Html.EJS().DatePicker("element").EnableMask("true").Render()

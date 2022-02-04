@@ -1,0 +1,8 @@
+<div id='container'>
+    <div class='wrap'>
+        @Html.EJS().NumericTextBox("strict").Format("n3").Value(10).ValidateDecimalOnType(true).Decimals(3).Placeholder("ValidateDecimalOnType enabled").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).Render()
+    </div>
+    <div class='wrap'>
+        @Html.EJS().NumericTextBox("allow").Format("n3").Value(10).Decimals(3).Placeholder("ValidateDecimalOnType enabled").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Auto).Render()
+    </div>
+</div>

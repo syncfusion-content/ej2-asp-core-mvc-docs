@@ -1,0 +1,18 @@
+<div id='container'>
+    <span class="content-title"> Select date: </span>
+    @Html.EJS().InPlaceEditor("element").Type(Syncfusion.EJ2.InPlaceEditor.InputType.Date).Value(ViewBag.value).Model(ViewBag.model).Render()
+</div>
+
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-title {
+        font-weight: 500;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+    }
+</style>

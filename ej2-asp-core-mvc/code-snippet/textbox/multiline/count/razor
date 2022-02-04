@@ -1,0 +1,23 @@
+<div class="multiline">
+    @Html.EJS().TextBox("default").Multiline(true).Placeholder("Enter your address").Input("inputHandler").Render()
+    <div id="numbercount"></div>
+</div>
+
+<script>
+    function inputHandler(args) {
+        let word, addresscountRem, addressCount;
+        word = this.respectiveElement.value;
+        addressCount = word.length;
+        addresscountRem = document.getElementById('numbercount');
+        addresscountRem.textContent = addressCount + "/25";
+    }
+</script>
+<style>
+    .multiline {
+        margin: 30px auto;
+        width: 20%;
+    }
+    #numbercount{
+        margin-left: 190px;
+    }
+</style>

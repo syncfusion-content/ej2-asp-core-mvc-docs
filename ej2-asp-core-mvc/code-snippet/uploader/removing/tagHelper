@@ -1,0 +1,9 @@
+@{
+    var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Save", RemoveUrl = "https://ej2.syncfusion.com/services/api/uploadbox/Remove" };
+}
+<ejs-uploader id="uploadFiles" asyncSettings="@asyncSettings" removing="onFileRemove"></ejs-uploader>
+<script>
+    function onFileRemove(args) {
+        args.postRawFile = false;
+    }
+</script>

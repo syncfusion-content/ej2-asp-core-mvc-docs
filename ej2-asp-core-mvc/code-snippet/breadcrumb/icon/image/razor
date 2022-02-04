@@ -1,0 +1,30 @@
+@Html.EJS().Breadcrumb("default").Items(item =>
+{
+    item.IconCss("e-image-home").Url("https://ej2.syncfusion.com/home/aspnetmvc.html").Add();
+    item.Text("Components").Url("https://ej2.syncfusion.com/aspnetmvc/Grid/GridOverview").Add();
+    item.Text("Navigations").Url("https://ej2.syncfusion.com/aspnetmvc/Menu/DefaultFunctionalities").Add();
+    item.Text("Breadcrumb").Url("https://ej2.syncfusion.com/aspnetmvc/Breadcrumb/DefaultFunctionalities").Add();
+}).Render()
+
+<style>
+  .e-image-home {
+
+  background-image: url('home.png');
+
+  height: 20px;
+
+  width: 20px;
+
+}
+
+
+.e-svg-home {
+
+  background-image: url('home.svg');
+
+  height: 20px;
+
+  width: 20px;
+
+}
+</style>

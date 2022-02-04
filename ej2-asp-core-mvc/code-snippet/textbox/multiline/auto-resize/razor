@@ -1,0 +1,21 @@
+<div class="multiline">
+    @Html.EJS().TextBox("default").Multiline(true).Placeholder("Enter your address").Value("Mr. Dodsworth Dodsworth, System Analyst, Studio 103, The Business Center").FloatLabelType(FloatLabelType.Auto).Created("createHandler").Input("inputHandler").Render()
+</div>
+<script>
+    function createHandler(args) {
+        var textareaObj = document.getElementById('default').ej2_instances[0];
+        textareaObj.addAttributes({ rows: 1 });
+        this.respectiveElement.style.height = "auto";
+        this.respectiveElement.style.height = (this.respectiveElement.scrollHeight) + "px";
+    }
+    function inputHandler(args) {
+        this.respectiveElement.style.height = "auto";
+        this.respectiveElement.style.height = (this.respectiveElement.scrollHeight) + "px";
+    }
+</script>
+<style>
+    .multiline {
+        margin: 30px auto;
+        width: 20%;
+    }
+</style>

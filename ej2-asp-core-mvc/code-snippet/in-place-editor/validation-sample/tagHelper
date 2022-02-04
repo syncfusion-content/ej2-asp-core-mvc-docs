@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id='container'>
+    <table class="table-section">
+        <tr>
+           
+            <td class="col-lg-6">
+                <ejs-inplaceeditor  mode="Inline" type="Numeric" name="Number" validationRules="ViewBag.validationRules">
+                </ejs-inplaceeditor>
+            </td>
+        </tr>
+       
+    </table>
+</div>
+
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .table-section {
+        margin: 0 auto;
+    }
+
+    td {
+        padding: 20px 0;
+        min-width: 230px;
+        height: 100px;
+    }
+
+</style>
+

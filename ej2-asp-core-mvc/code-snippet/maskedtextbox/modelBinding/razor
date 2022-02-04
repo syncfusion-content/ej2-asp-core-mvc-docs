@@ -1,0 +1,38 @@
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <div class="col-lg-12 control-section">
+        <div id="wrapper">
+            @Html.EJS().MaskedTextBoxFor(model => model.value).Width("200px").Created("onCreate").Render()
+            <div>
+                @Html.ValidationMessageFor(model => model.value)
+            </div>
+            <div id="submitbutton">
+                @Html.EJS().Button("btn").Content("Post").Render()
+            </div>
+        </div>
+    </div>
+}
+<script>
+    function onCreate() {
+        document.getElementById(this.element.id).setAttribute("name", "value");
+    }
+</script>
+<style>
+
+    #wrapper {
+        max-width: 246px;
+        margin: 30px auto;
+        padding-top: 50px;
+    }
+
+    #submitbutton {
+        margin-top: 20px;
+        margin-left: 65px;
+    }
+
+    #control-content #wrapper .field-validation-error {
+        color: red;
+    }
+</style>
+

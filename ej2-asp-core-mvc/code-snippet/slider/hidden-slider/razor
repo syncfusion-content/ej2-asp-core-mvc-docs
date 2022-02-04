@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Inputs
+	@Html.EJS().Button("element").Content("Button").Render()
+	<div id='container' style="margin-top:150px;">
+		@Html.EJS().Slider("default").Min(1373693400000).Max(1373715000000).Step(3600000).RenderingTicks("renderingTicksHandler").TooltipChange("tooltipChangeHandler").Tooltip(new SliderTooltipData { Placement = TooltipPlacement.Before, IsVisible = true }).Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 7200000 }).ShowButtons(true).Render()
+	</div>
+<script type="text/javascript">
+    function tooltipChangeHandler(args) {
+        var totalMilliSeconds = Number(args.text);
+        var custom = { hour: '2-digit', minute: '2-digit' };
+        args.text = new Date(totalMilliSeconds).toLocaleTimeString("en-us", custom);
+    }
+    function renderingTicksHandler(args) {
+        var totalMilliSeconds = Number(args.value);
+        var custom = { hour: '2-digit', minute: '2-digit' };
+        args.text = new Date(totalMilliSeconds).toLocaleTimeString("en-us", custom);
+    }
+    document.getElementById('element').onclick = function () {
+	//slider visible from hidden state
+        slider = document.getElementById("container");
+        ticks = document.getElementById("default");
+        slider.style.display = "block";
+        ticks.ej2_instances[0].refresh();
+    };
+</script>
+<style>
+/* render slider in hidden state */
+    #container{
+        display: none;
+    }
+</style>

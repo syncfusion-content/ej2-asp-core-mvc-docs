@@ -1,0 +1,54 @@
+<form id="form-element">
+    <ejs-numerictextbox id="numeric" name="numericRange" min="10" max="100" change="onChange" placeholder="NumericTextBox" strictMode="false" floatLabelType="Always"></ejs-numerictextbox>
+    <ejs-button type="button" id="submit_btn" content="submit" style="margin-top: 10px"></ejs-button>
+</form>
+
+<script>
+    function onChange(args) {
+        if (numeric.value != null) {
+            formObject.validate("numericRange");
+        }
+    }
+    var customFn = function (args) {
+        if (numeric.value >= 10 && numeric.value <= 100) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    // sets required property in the FormValidator rules collection
+    var options = {
+        rules: {
+            'numericRange': { required: [true, "Number is required"] },
+        },
+    };
+    // defines FormValidator to validate the MaskedTextBox
+    var formObject = new ej.inputs.FormValidator('#form-element', options);
+
+    // places error label outside the MaskedTextBox using the customPlacement event of FormValidator
+
+    formObject.customPlacement = function (element, errorElement) {
+        element.parentNode.parentNode.appendChild(errorElement);
+    };
+
+    formObject.addRules('numericRange', { range: [customFn, "Please enter a number between 10 to 100"] });
+    document.getElementById("submit_btn").addEventListener('click', function () {
+        formObject.validate("numericRange");
+        var ele = document.getElementById('numeric');
+        // checks for incomplete value and alerts the formt submit
+        if (ele.value !== "" && ele.value >= 10 && ele.value <= 100) {
+            alert("Submitted");
+        }
+    });
+</script>
+
+<style>
+    .e-numeric.e-control-wrapper {
+        margin-bottom: 20px;
+    }
+
+    label.e-error {
+        margin-top: -50px;
+    }
+</style>

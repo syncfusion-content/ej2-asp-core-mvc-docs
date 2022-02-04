@@ -1,0 +1,19 @@
+<div id='container'>
+    <span class="content-title"> Select date: </span>
+    <ejs-inplaceeditor id="element" type="Date" model="ViewBag.model" value="ViewBag.value">
+    </ejs-inplaceeditor>
+</div>
+
+<style>
+    #container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-title {
+        font-weight: 500;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+    }
+</style>

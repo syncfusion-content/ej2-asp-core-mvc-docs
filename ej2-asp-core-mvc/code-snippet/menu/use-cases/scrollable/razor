@@ -1,0 +1,22 @@
+@Html.EJS().Menu("menu").Items(ViewBag.menuItems).EnableScrolling(true).CssClass('e-scrollable-menu').BeforeOpen('onBeforeOpen').Render()
+
+<script>
+    function onBeforeOpen(args) {
+        // Restricting sub menu wrapper height
+        if (args.parentItem.text === 'Appliances') {
+            ej.base.closest(args.element, '.e-menu-wrapper').style.height = '230px';
+        }
+    }
+</script>
+
+<style>
+    body {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    /* Restricting the parent menu wrapper size */
+    .e-menu-wrapper.e-scrollable-menu:not(.e-menu-popup) {
+	    width: 492px;
+    }
+</style>

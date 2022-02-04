@@ -1,0 +1,48 @@
+@using Syncfusion.EJ2.Navigations;
+
+<div class="info">
+    Content Template
+</div>
+<br /><br />
+<ejs-tab id="ej2Tab">
+    <e-tab-tabitems>
+        <e-tab-tabitem>
+            <e-content-template>
+                <div>
+                    <div class="e-tab-header">
+                        <div>Grid</div>
+                        <div>Chart</div>
+                        <div>Calendar</div>
+                    </div>
+                    <div class="e-content">
+                        <div>
+                            <ejs-grid id="ej2grid" height="400px" allowPaging="true">
+                                <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/Products" crossdomain="true" adaptor="ODataV4Adaptor"></e-data-manager>
+                                <e-grid-columns>
+                                    <e-grid-column field="ProductID" headerText="Product ID" textAlign="Right" width="120"></e-grid-column>
+                                    <e-grid-column field="ProductName" headerText="Product Name" width="150"></e-grid-column>
+                                    <e-grid-column field="UnitPrice" headerText="Supplier ID" textAlign="Right" width="130"></e-grid-column>
+                                    <e-grid-column field="UnitsInStock" headerText="QuantityPerUnit" format="C2" textAlign="Right" width="120"></e-grid-column>
+                                    <e-grid-column field="Discontinued" headerText="Discontinued" width="140" textAlign="Center" type="boolean" displayAsCheckBox="true"></e-grid-column>
+                                </e-grid-columns>
+                            </ejs-grid>
+                        </div>
+                        <div>
+                            <ejs-chart id="ej2chart" width="100%" height="100%" title="Olympic Medal Counts - RIO">
+                                <e-series-collection>
+                                    <e-series dataSource="@ViewBag.dataSource" name="Gold" xName="x" width="2" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+                                        <e-series-marker visible="true" />
+                                    </e-series>
+                                </e-series-collection>
+                                <e-chart-primaryxaxis interval="1" valueType="@Syncfusion.EJ2.Charts.ValueType.Category" />
+                            </ejs-chart>
+                        </div>
+                        <div>
+                            <ejs-calendar id="ej2calendar"></ejs-calendar>
+                        </div>
+                    </div>
+                </div>
+            </e-content-template>
+        </e-tab-tabitem>
+    </e-tab-tabitems>
+</ejs-tab>

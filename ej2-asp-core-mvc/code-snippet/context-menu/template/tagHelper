@@ -1,0 +1,31 @@
+<div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
+<ejs-contextmenu id="contextmenu" target="#contextmenutarget" items="ViewBag.menuItems" beforeItemRender="beforeItemRender"></ejs-contextmenu>
+
+<script>
+
+    function beforeItemRender(args) {
+        var shortCutSpan = document.createElement('span');
+            var text = args.item.text;
+            var shortCutText = text === 'Save as...  ' ? 'Ctrl + S' : (text === 'View page source  ' ?
+            'Ctrl + U'      : 'Ctrl + Shift + I');
+            shortCutSpan.textContent = shortCutText;
+            args.element.appendChild(shortCutSpan);
+            shortCutSpan.setAttribute('class','shortcut');
+    }
+
+</script>
+
+<style>
+
+#contextmenutarget {
+    border: 1px dashed;
+    height: 250px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    color: gray;
+    line-height: 17;
+    font-size: 14px;
+}
+
+</style>

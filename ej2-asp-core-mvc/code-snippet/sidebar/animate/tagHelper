@@ -1,0 +1,68 @@
+<!-- sidebar element declaration -->
+<ejs-sidebar id="default-sidebar" animate="false" enableRtl="true" type="Push" width="280px">
+    <e-content-template>
+        <div class="title"> Sidebar content</div>
+        <div class="sub-title">
+            Click the button to close the Sidebar
+        </div>
+        <div class="center-align">
+            <!-- button element declaration -->
+            <ejs-button id="close" content="Close Sidebar"></ejs-button>
+        </div>
+    </e-content-template>
+</ejs-sidebar>
+<!-- end of sidebar element -->
+<!-- main content declaration -->
+<div>
+    <div class="title">Main content</div>
+    <div class="sub-title"> Click the button to open/close the Sidebar.</div>
+    <div style="padding:20px" class="center-align">
+        <!-- button element declaration -->
+        <ejs-button id="toggle" content="Toggle Sidebar" cssClass="e-info"></ejs-button>
+    </div>
+</div>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        //create instances for sidebar element
+        var defaultSidebar = document.getElementById("default-sidebar").ej2_instances[0];
+        // Toggle Button to close and open the sidebar
+        document.getElementById('toggle').onclick = function () {
+            defaultSidebar.toggle();
+        }
+        // Close the sidebar
+        document.getElementById('close').onclick = function () {
+            defaultSidebar.hide();
+        }
+    });
+</script>
+
+<style>
+    /* sample level styles */
+    .center-align {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .sub-title {
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+    }
+    /* Button styles */
+    #close, #close:hover, #close:active, #close:focus { /* csslint allow: adjoining-classes*/
+        background: #fafafa;
+        color: black
+    }
+    /* sidebar element styles */
+    #default-sidebar {
+        background-color: rgb(25, 118, 210);
+        color: #ffffff;
+    }
+</style>

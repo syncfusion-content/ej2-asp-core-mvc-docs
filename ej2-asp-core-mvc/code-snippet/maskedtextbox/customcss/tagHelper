@@ -1,0 +1,29 @@
+<ejs-maskedtextbox id="mask1" name="mask_value1" mask="00000" value='42648' placeholder="Enter user ID" cssClass="e-style" floatLabelType="Always" focus="onfocus.bind(this)"></ejs-maskedtextbox>
+<script>
+    function onfocus(args) {
+        args.selectionEnd = args.selectionStart;
+    }
+</script>
+
+<style>
+    .e-mask.e-style .e-control.e-maskedtextbox {
+        color: #00ffff;
+        letter-spacing: 10px;
+        font-size: xx-large;
+        border: 1px;
+        border-color: #ffffff;
+    }
+
+    .e-control-wrapper.e-mask.e-float-input.e-style .e-float-line::before {
+        background: #ffffff;
+    }
+
+    .e-control-wrapper.e-mask.e-float-input.e-style .e-float-line::after {
+        background: #ffffff;
+    }
+
+    .e-control-wrapper.e-mask.e-float-input.e-style .e-float-text.e-label-top {
+        color: #00ffff;
+        font-size: medium;
+    }
+</style>

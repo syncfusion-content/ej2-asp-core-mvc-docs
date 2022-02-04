@@ -1,0 +1,18 @@
+<div class="multiline">
+    <ejs-textbox multiline="true" placeholder="Enter your address" floatLabelType="Auto" id="disable" ></ejs-textbox>
+</div>
+
+
+<style>
+    .multiline {
+        margin-top: 60px;
+        width: 20%;
+    }
+    textarea.e-input,
+    .e-float-input textarea,
+    .e-float-input.e-control-wrapper textarea,
+    .e-input-group textarea,
+    .e-input-group.e-control-wrapper textarea{
+        resize: none;
+    }
+</style>

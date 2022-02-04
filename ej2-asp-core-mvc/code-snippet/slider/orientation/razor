@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Inputs
+    @Html.EJS().Slider("default").Value("30").Orientation(SliderOrientation.Vertical).Render()
+
+<style>
+    #default {
+        height: 300px;
+    }
+</style>

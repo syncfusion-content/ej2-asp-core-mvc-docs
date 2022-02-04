@@ -1,0 +1,18 @@
+<ejs-calendar id="calendar" navigated="onNavigate"></ejs-calendar>
+
+<script>
+    function onNavigate(args) {
+        var date;
+
+        if ((args.event.currentTarget).classList.contains("e-next")) {
+            date = new Date(args.date.setMonth(args.date.getMonth() + 1));
+        }
+        if ((args.event.currentTarget).classList.contains('e-prev')) {
+            date = new Date(args.date.setMonth(args.date.getMonth() - 1));
+        }
+        if (args.view == 'Month') {debugger
+            calendarObject = document.getElementById('calendar').ej2_instances[0];
+            calendarObject.navigateTo('Month', date);
+        }
+    }
+</script>

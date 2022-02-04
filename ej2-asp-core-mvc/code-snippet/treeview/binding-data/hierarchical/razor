@@ -1,0 +1,1 @@
+@Html.EJS().TreeView("listdata").Fields(field=>field.Id("code").Selected("selected").Expanded("expanded").Text("name").Child(ViewBag.Child).DataSource(ViewBag.data)).Render()

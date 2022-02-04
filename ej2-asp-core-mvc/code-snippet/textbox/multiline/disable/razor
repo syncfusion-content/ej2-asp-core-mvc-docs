@@ -1,0 +1,17 @@
+<div class="multiline">
+    @Html.EJS().TextBox("default").Multiline(true).FloatLabelType(FloatLabelType.Auto).Placeholder("Enter your address").Render()
+</div>
+
+<style>
+    .multiline {
+        margin: 30px auto;
+        width: 20%;
+    }
+    textarea.e-input,
+    .e-float-input textarea,
+    .e-float-input.e-control-wrapper textarea,
+    .e-input-group textarea,
+    .e-input-group.e-control-wrapper textarea{
+        resize: none;
+    }
+</style>
