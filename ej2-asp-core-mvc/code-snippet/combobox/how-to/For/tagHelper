@@ -1,0 +1,12 @@
+<form method="post">
+    <div class="control-wrapper">
+        <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>
+            <ejs-combobox id="combobox"  ejs-for="Value" name="Value" dataSource="ViewBag.data" placeholder="Select a country">
+                <e-combobox-fields value="Name"></e-combobox-fields>
+            </ejs-combobox>
+            <div id="submitbutton">
+                <ejs-button id="submitButton" content="Submit"></ejs-button>
+            </div>
+        </div>
+    </div>
+</form>

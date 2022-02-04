@@ -1,0 +1,7 @@
+@Html.EJS().ChipList("chip-avatar").EnableDelete(true).Chips(chip =>
+                        {
+                            chip.Text("Send a text").Enabled(true).Add();
+                            chip.Text("Set a remainder").Enabled(true).Add();
+                            chip.Text("Read my emails").Enabled(true).Add();
+                            chip.Text("Set alarm").Enabled(true).Add();
+                        }).Render()

@@ -1,0 +1,9 @@
+<ejs-chiplist id="chip-avatar" enableDelete="true">
+    <e-chips>
+      <e-chip text="Primary" cssClass="e-primary" enabled="true"></e-chip>
+      <e-chip text="Success" cssClass="e-success" enabled="true"></e-chip>
+      <e-chip text="Info" cssClass="e-info" enabled="true"></e-chip>
+      <e-chip text="Warning" cssClass="e-warning" enabled="true"></e-chip>
+      <e-chip text="Danger" cssClass="e-danger" enabled="true"></e-chip>
+    </e-chips>
+</ejs-chiplist>

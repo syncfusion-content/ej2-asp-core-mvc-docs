@@ -1,0 +1,5 @@
+<div class='e-btn-group'>
+    @Html.EJS().Button("view").Content("View").CssClass("e-info").Render()
+    @Html.EJS().Button("edit").Content("Edit").Render()
+    @Html.EJS().Button("delete").Content("Delete").CssClass("e-danger").Render()
+</div>

@@ -1,0 +1,10 @@
+@Html.EJS().DropDownList("country").Placeholder("Select a COuntry").PopupHeight(
+                   "230px").DataSource((IEnumerable<object>)ViewBag.data).AllowFiltering(true).Filtering("onfiltering").Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "Name" }).Render()
+
+<script>
+    function onfiltering(e) {
+         var query = new ej.data.Query();
+            query = (e.text !== '') ? query.where('Name', 'startswith', e.text, true) : query;
+            e.updateData(@Html.Raw(JsonConvert.SerializeObject(ViewBag.data)), query)
+    }
+</script>

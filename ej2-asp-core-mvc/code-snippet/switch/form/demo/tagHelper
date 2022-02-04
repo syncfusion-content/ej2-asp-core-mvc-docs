@@ -1,0 +1,49 @@
+<div id='container'>
+<form>
+    <table class='size'>
+        <tr>
+            <td class='lSize'>USB</td>
+            <td>
+                <ejs-switch id="switch1" checked="true"></ejs-switch>
+            </td>
+        </tr>
+        <tr>
+            <td class='lSize'>Wi-Fi</td>
+            <td>
+                <ejs-switch id="switch2" checked="true"></ejs-switch>
+            </td>
+        </tr>
+        <tr>
+            <td class='lSize'>Bluetooth</td>
+            <td>
+                <ejs-switch id="switch3" disabled="true"></ejs-switch>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ejs-button id="btnElement" ></ejs-button>
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+
+<style>
+
+button {
+  margin: 20px 0 0 5px;
+}
+
+.size tr td {
+  padding: 10px;
+}
+
+.size .lSize {
+  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif";
+  font-size: 13px;
+}
+
+.size .lSize label {
+  user-select: none;
+} 
+</style>

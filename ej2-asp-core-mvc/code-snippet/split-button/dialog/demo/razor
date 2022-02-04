@@ -1,0 +1,25 @@
+@Html.EJS().Dialog("dialog").Header("Software Update").Content("Are you sure want to update?").Width("250px").Visible(false).Buttons(ViewBag.button).Render()
+@Html.EJS().SplitButton("element").Content("Help").Items((IEnumerable<object>)ViewBag.items).Select("onSelect").Render()
+
+
+<script>
+    function onSelect(args) {
+        if (args.item.text === 'Update...') {
+            ej.base.getComponent(document.getElementById('dialog'), "dialog").show();
+        }
+    }
+
+    function okBtnClick() {
+        ej.base.getComponent(document.getElementById('dialog'), "dialog").hide();
+    }
+
+    function cancelBtnClick() {
+        ej.base.getComponent(document.getElementById('dialog'), "dialog").hide();
+    }
+</script>
+
+<style>
+    .e-split-btn-wrapper{
+        margin: 20px 20px 5px 5px;
+    }
+</style>

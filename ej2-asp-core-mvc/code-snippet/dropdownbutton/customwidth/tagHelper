@@ -1,0 +1,16 @@
+<ejs-dropdownbutton id="ddbtn" items="ViewBag.items" iconCss="e-icons e-search" cssClass="e-custom" iconPosition="Top" content="Find & Select"></ejs-dropdownbutton>
+
+<style>
+    .e-search::before {
+        content: '\e7d1';
+    }
+    .e-dropdown-btn {
+        margin: 25px 5px 20px 20px;
+    }
+    .e-dropdown-btn.e-custom {
+        width: 85px;
+    }
+    .e-dropdown-btn.e-custom .e-search::before {
+        font-size: 40px;
+    }
+</style>

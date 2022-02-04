@@ -1,0 +1,7 @@
+<div id='web-data' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-dropdownlist id="games">
+            <e-data-manager url="/api/Dropdownlist/" adaptor="WebApiAdaptor"></e-data-manager>
+        </ejs-dropdownlist>
+    </div>
+</div>

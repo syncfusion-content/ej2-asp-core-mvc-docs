@@ -1,0 +1,7 @@
+<ejs-progressbutton id="progress" content="Progress Step" enableProgress="true" begin="begin" cssClass="e-hide-spinner"></ejs-progressbutton>
+
+<script>
+    function begin(args) {
+        args.step = 20;
+    }
+</script>

@@ -1,0 +1,16 @@
+<ejs-button id="button" cssClass='e-link' content="Go to Google"></ejs-button>
+
+<style>
+
+    button {
+        margin: 25px 5px 20px 20px;
+    }
+</style>
+
+<script>
+
+    document.getElementById('button').onclick = function() {
+        window.open("https://www.google.com");
+    };
+
+</script>

@@ -1,0 +1,18 @@
+<div id='remote-data' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-multiselect id="customers" locale="fr-BE" query="new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(0)" placeholder="Select a customer" popupHeight="200px">
+            <e-multiselect-fields value="ContactName"></e-multiselect-fields>
+            <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+        </ejs-multiselect>
+    </div>
+</div>
+<script>
+    ej.base.L10n.load({
+        'fr-BE': {
+            'multi-select': {
+                'noRecordsTemplate': "Aucun enregistrement trouvé",
+                'actionFailureTemplate': "Modèle d'échec d'action"
+            }
+        }
+    });
+</script>

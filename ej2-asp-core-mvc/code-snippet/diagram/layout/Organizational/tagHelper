@@ -1,0 +1,4 @@
+<ejs-diagram id="container" width="100%" height="700px" getNodeDefaults="@ViewBag.getNodeDefaults" getConnectorDefaults="@ViewBag.getConnectorDefaults">
+ <e-diagram-datasourcesettings id="Id" parentId="Manager" dataManager="new DataManager() { Data = (List<OrganizationalDetails>)ViewBag.Nodes }"></e-diagram-datasourcesettings>
+        <e-diagram-layout type="OrganizationalChart" getLayoutInfo="@ViewBag.getLayoutInfo"></e-diagram-layout>
+</ejs-diagram>

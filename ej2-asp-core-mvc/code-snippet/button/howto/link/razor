@@ -1,0 +1,18 @@
+@Html.EJS().Button("button").CssClass("e-link").Content("Go to Google").Render()
+
+<style>
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+</style>
+
+
+<script>
+
+document.getElementById('button').onclick = (): void => {
+  window.open("https://www.google.com");
+};
+
+</script>

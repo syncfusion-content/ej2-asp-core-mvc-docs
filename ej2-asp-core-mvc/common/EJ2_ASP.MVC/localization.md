@@ -8,17 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Localization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
-platform: ej2-asp-core-mvc
-control: Localization
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-
 # Localization
 
 Localization library allows you to localize the text content of the Essential JS 2 component.

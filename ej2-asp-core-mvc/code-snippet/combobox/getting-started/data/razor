@@ -1,0 +1,1 @@
+@Html.EJS().ComboBox("games").Placeholder("Select a game").PopupHeight("230px").DataSource((IEnumerable<object>)ViewBag.data).Render()

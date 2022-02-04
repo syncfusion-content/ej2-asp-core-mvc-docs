@@ -1,0 +1,8 @@
+<div class='control-wrapper'>
+    <div style='padding-top:75px;'>
+        <ejs-dropdownlist id="employees" dataSource="@ViewBag.data" placeholder="Select an employee" popupHeight="270px"
+                      noRecordsTemplate="@Html.Raw("<span class='norecord'> NO DATA AVAILABLE</span>")">
+            <e-dropdownlist-fields value="Name"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div>
+    <ejs-listview enable="true" id="listview" dataSource="ViewBag.items" sortOrder="Descending">
+        <e-listview-fieldsettings groupBy="category"></e-listview-fieldsettings>
+    </ejs-listview>
+    <ejs-splitbutton id="splitbtn" target='#listview' content='Clipboard'></ejs-splitbutton>
+</div>
+
+<style>
+    .e-split-btn-wrapper{
+        margin: 20px 20px 5px 5px;
+    }
+</style>

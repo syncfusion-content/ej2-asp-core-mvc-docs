@@ -1,0 +1,10 @@
+<div class='e-btn-group'>
+    <ejs-button id="html" content="HTML"></ejs-button>
+    <ejs-button id="css" content="CSS"></ejs-button>
+    <ejs-button id="javascript" content="JavaScript"></ejs-button>
+</div>
+<script>
+    ej.base.enableRipple(true);
+    var button = document.querySelector('.e-btn-group');
+    ej.base.rippleEffect(button, { selector: 'e-btn' });
+</script>

@@ -1,0 +1,9 @@
+<div class='control-wrapper'>
+    <div style='padding-top:75px;'>
+        <ejs-multiselect id="customers" query="new ej.data.Query().from('Employees').select(['FirstName', 'City', 'EmployeeID']).take(6).where(new ej.data.Predicate('City', 'equal','london').or('City','equal','seattle'))" placeholder="Select a customer" popupHeight="200px"
+                          groupTemplate="@Html.Raw("<strong>${City}</strong>")">
+            <e-multiselect-fields groupBy="City" value="FirstName"></e-multiselect-fields>
+            <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+        </ejs-multiselect>
+    </div>
+</div>

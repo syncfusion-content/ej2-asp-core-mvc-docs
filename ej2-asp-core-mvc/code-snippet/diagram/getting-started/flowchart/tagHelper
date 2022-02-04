@@ -1,0 +1,10 @@
+<ejs-diagram id="container" width="100%" height="700px" getNodeDefaults="@ViewBag.getNodeDefaults" nodes="ViewBag.nodes" connectors="ViewBag.connectors">
+                </ejs-diagram>
+
+function getNodeDefaults(obj, diagram) {
+            obj.width = 100;
+            obj.height = 60;
+            obj.offsetX = 300;
+            obj.style = { fill: '#357BD2', strokeColor: 'white' };
+            return obj;
+        }

@@ -1,0 +1,8 @@
+@Html.EJS().DropDownList("games").Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Render()
+
+<script>
+    window.onscroll = () => {
+        var dropObj = document.getElementById("games"); //to get dropdown list object
+        dropObj.ej2_instances[0].hidePopup(); // hide the popup using hidePopup method
+    }
+</script>

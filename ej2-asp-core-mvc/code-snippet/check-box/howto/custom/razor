@@ -1,0 +1,59 @@
+@Html.EJS().CheckBox("primary").Label("Primary").Checked(true).CssClass("e-primary").Render()
+@Html.EJS().CheckBox("success").Label("Success").Checked(true).CssClass("e-success").Render()
+@Html.EJS().CheckBox("info").Label("Info").Checked(true).CssClass("e-info").Render()
+@Html.EJS().CheckBox("warning").Label("Warning").Checked(true).CssClass("e-warning").Render()
+@Html.EJS().CheckBox("danger").Label("Danger").Checked(true).CssClass("e-danger").Render()
+
+
+<style>
+
+.e-checkbox-wrapper {
+  margin-top: 18px;
+}
+
+li {
+  list-style: none;
+}
+
+.e-checkbox-wrapper.e-primary:hover .e-frame.e-check { /* csslint allow: adjoining-classes */
+  background-color: #e03872;
+}
+
+.e-checkbox-wrapper.e-success .e-frame.e-check,
+.e-checkbox-wrapper.e-success .e-checkbox:focus + .e-frame.e-check { /* csslint allow: adjoining-classes */
+  background-color: #689f38;
+}
+
+.e-checkbox-wrapper.e-success:hover .e-frame.e-check { /* csslint allow: adjoining-classes */
+  background-color: #449d44;
+}
+
+.e-checkbox-wrapper.e-info .e-frame.e-check,
+.e-checkbox-wrapper.e-info .e-checkbox:focus + .e-frame.e-check { /* csslint allow: adjoining-classes */
+  background-color: #2196f3;
+}
+
+.e-checkbox-wrapper.e-info:hover .e-frame.e-check { /* csslint allow: adjoining-classes */
+  background-color: #0b7dda;
+}
+
+.e-checkbox-wrapper.e-warning .e-frame.e-check,
+.e-checkbox-wrapper.e-warning .e-checkbox:focus + .e-frame.e-check { /* csslint allow: adjoining-classes */
+  background-color: #ef6c00;
+}
+
+.e-checkbox-wrapper.e-warning:hover .e-frame.e-check { /* csslint allow: adjoining-classes */
+  background-color: #cc5c00;
+}
+
+.e-checkbox-wrapper.e-danger .e-frame.e-check,
+.e-checkbox-wrapper.e-danger .e-checkbox:focus + .e-frame.e-check { /* csslint allow: adjoining-classes */
+  background-color: #d84315;
+}
+
+.e-checkbox-wrapper.e-danger:hover .e-frame.e-check { /* csslint allow: adjoining-classes */
+  background-color: #ba3912;
+}
+
+</style>
+

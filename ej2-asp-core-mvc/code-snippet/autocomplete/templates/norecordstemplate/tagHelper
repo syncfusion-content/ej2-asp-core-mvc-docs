@@ -1,0 +1,8 @@
+<div class='control-wrapper'>
+    <div style='padding-top:75px;'>
+        <ejs-autocomplete id="employees" dataSource="@ViewBag.data" placeholder="Select an employee" popupHeight="270px"
+                          noRecordsTemplate="@Html.Raw("<span class='norecord'> NO DATA AVAILABLE</span>")">
+            <e-autocomplete-fields value="Name"></e-autocomplete-fields>
+        </ejs-autocomplete>
+    </div>
+</div>

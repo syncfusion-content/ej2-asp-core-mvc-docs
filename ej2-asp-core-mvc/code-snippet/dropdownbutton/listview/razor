@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.Lists;
+<div>
+   @Html.EJS().ListView("listview").Enable(true).DataSource((IEnumerable<object>)ViewBag.listdata).ShowCheckBox(true).Fields(new ListViewFieldSettings { GroupBy = "category", Text = "text" }).Render()
+   @Html.EJS().DropDownButton("ddbtn").CssClass("e-caret-hide").IconCss("e-icons e-down").Target("#listview").Render()
+</div>
+
+<style>
+    .e-down::before {
+        content: '\e969';
+    }
+
+    #listview {
+        display: block;
+        max-width: 600px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+    button {
+        margin: 30% 5px 20px 30%;
+    }
+</style>

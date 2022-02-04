@@ -1,0 +1,10 @@
+@Html.EJS().MultiSelect("games").DataSource((IEnumerable<object>)ViewBag.data).Placeholder("Select a game").PopupHeight("270px").FooterTemplate("<span class='foot'> Total list items: " + 5 + "</span>").Render()
+<style>
+    .foot {
+        text-indent: 1.2em;
+        display: block;
+        font-size: 15px;
+        line-height: 40px;
+        border-top: 1px solid #e0e0e0;
+    }
+</style>

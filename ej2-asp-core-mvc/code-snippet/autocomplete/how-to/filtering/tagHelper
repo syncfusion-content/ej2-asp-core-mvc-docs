@@ -1,0 +1,18 @@
+@using Newtonsoft.Json;
+
+<div id='List' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-autocomplete dataSource="@ViewBag.data" showClearButton="false" id="project" filtering="filtering" itemTemplate="<span class='item'><span class='name'>${Name}</span>-<span class='code'>${Code}</span></span>">
+            <e-autocomplete-fields  Text ="Name" Value ="Code"></e-autocomplete-fields>
+        </ejs-autocomplete>
+    </div>
+</div>
+<script>
+    function filtering(e) {
+        var predicate = new ej.data.Predicate('Name', 'contains', e.text, true);
+        predicate = predicate.or('Code', 'contains', e.text);
+        var query = new ej.data.Query();
+        query = (e.text !== '' && e.value !== '') ? query.where(predicate) : query;
+        e.updateData(@Html.Raw(JsonConvert.SerializeObject(ViewBag.data)), query);
+    }
+</script>

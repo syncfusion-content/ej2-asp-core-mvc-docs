@@ -1,0 +1,12 @@
+<form method="post">
+    <div class="control-wrapper">
+        <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>
+            <ejs-dropdownlist id="dropdown" name="Value" ejs-for="Value" dataSource="ViewBag.data" placeholder="Select a country">
+                <e-dropdownlist-fields value="Name"></e-dropdownlist-fields>
+            </ejs-dropdownlist>
+            <div id="submitbutton">
+                <ejs-button id="submitButton" content="Submit"></ejs-button>
+            </div>
+        </div>
+    </div>
+</form>

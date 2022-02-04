@@ -1,0 +1,10 @@
+@model Mvc_test.Models.Countries
+
+@using (Html.BeginForm())
+{
+    @Html.EJS().MultiSelectFor(model => model.Values).Placeholder("Select a Country").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.MultiSelectFieldSettings { Value = "Name" }).Render()
+
+    <div id="submitbutton">
+        @Html.EJS().Button("btn").Content("Post").Render()
+    </div>
+}

@@ -1,0 +1,16 @@
+@Html.EJS().DropDownButton("ddbtn").Content("Clipboard").Items((IEnumerable<object>)ViewBag.items).BeforeItemRender("itemRender").Render()
+
+<style>
+    button {
+      margin: 25px 5px 20px 20px;
+    }
+</style>
+
+<script>
+function itemRender(args){
+    if (args.item.text === 'Copy') {
+        //To underline a particular text.
+        args.element.innerHTML = '<u>C</u>opy';
+    }
+}
+</script>

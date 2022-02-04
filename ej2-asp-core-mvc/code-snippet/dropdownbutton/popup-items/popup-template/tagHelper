@@ -1,0 +1,90 @@
+<div id="target" style='border: 1px solid black;'>
+   <table>
+      <caption style='height: 40px; background-color: #e0e0e0;'><b>Insert Table</b></caption>
+      <tr class='e-row'>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+      </tr>
+      <tr class='e-row'>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+      </tr>
+      <tr class='e-row'>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+      </tr>
+      <tr class='e-row'>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+      </tr>
+      <tr class='e-row'>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+      </tr>
+      <tr class='e-row'>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+         <td class='e-data'></td>
+      </tr>
+   </table>
+</div>
+
+<ejs-dropdownbutton id="element" content="Table" target="#target" iconCss="e-icons e-table"></ejs-dropdownbutton>
+
+<style>
+
+.shortcut {
+    float: right;
+    margin-top: 9px;
+    padding-left: 30px;
+    height: 100px;
+}
+
+.e-data {
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  padding: 8px;
+}
+
+.e-border {
+  border: black;
+  border-radius: 2px;
+  background-color: #fafafa;
+}
+
+.e-table::before {
+  content: '\e705';
+}
+
+.e-row {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+        
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+</style>

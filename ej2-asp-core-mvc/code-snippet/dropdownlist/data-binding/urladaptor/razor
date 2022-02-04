@@ -1,0 +1,5 @@
+@Html.EJS().DropDownList("games").Placeholder("Select a Country").PopupHeight("200px").DataSource(dataManger =>
+    dataManger.Url("/ComboBox/UrlDatasource").Adaptor("UrlAdaptor").CrossDomain(true)).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings
+    {
+        Value = "ShipCountry"
+    }).Render()

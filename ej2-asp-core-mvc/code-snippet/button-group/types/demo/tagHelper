@@ -1,0 +1,5 @@
+<div class='e-btn-group e-outline'>
+    <ejs-button id="html" content="HTML" cssClass='e-outline'></ejs-button>
+    <ejs-button id="css" content="CSS" cssClass='e-outline'></ejs-button>
+    <ejs-button id="javascript" content="Javascript" cssClass='e-outline'></ejs-button>
+</div>

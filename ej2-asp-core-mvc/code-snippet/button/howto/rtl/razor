@@ -1,0 +1,14 @@
+@Html.EJS().Button("rtl").Content("Settings").IconCss("e-icons e-setting-icon").EnableRtl(true).Render()
+
+<style>
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+.e-setting-icon::before {
+  content: '\e7cf';
+}
+
+</style>
+

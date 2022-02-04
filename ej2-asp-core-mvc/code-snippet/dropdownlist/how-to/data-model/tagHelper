@@ -1,0 +1,13 @@
+<form method="post">
+    <div class="control-wrapper">
+        <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>
+            <ejs-dropdownlist id="EnquiringAboutSelect" ejs-for="EnquiringAboutSelect" name="EnquiringAboutSelect" dataSource="@Model?.EnquiringAboutSelectListItems" floatLabelType="Auto" placeholder="Please Select Enquiring About" popupHeight="230px">
+                <e-dropdownlist-fields text="Text" value="Value"></e-dropdownlist-fields>
+            </ejs-dropdownlist>
+            <span asp-validation-for="EnquiringAboutSelect" class="text-danger"></span>
+            <div id="submitbutton">
+                <ejs-button id="submitButton" content="Submit"></ejs-button>
+            </div>
+        </div>
+    </div>
+</form>

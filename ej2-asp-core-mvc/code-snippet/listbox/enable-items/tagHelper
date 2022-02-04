@@ -1,0 +1,15 @@
+<ejs-listbox id="listbox" dataSource="@ViewBag.data" created="create"></ejs-listbox>
+<button id="enableitem" class="e-btn">Enable Items</button>
+
+<script>
+    var disableItems = ['Bugatti Veyron Super Sport', 'SSC Ultimate Aero'];
+    function create() {
+        listboxobj = ej.base.getInstance(document.getElementById('listbox'), ejs.dropdowns.ListBox);
+        listboxobj.enableItems(disableItems, false);
+    }
+
+    document.getElementById('enableitem').onclick = function(){
+        listboxobj = ej.base.getInstance(document.getElementById('listbox'), ejs.dropdowns.ListBox);
+        listboxobj.enableItems(disableItems, true);
+    }
+</script>

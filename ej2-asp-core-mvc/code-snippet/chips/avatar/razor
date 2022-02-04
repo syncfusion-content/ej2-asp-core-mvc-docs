@@ -1,0 +1,25 @@
+  @Html.EJS().ChipList("chip-avatar").Chips(chip =>
+                        {
+                            chip.Text("Andrew").AvatarIconCss("andrew").Enabled(true).Add();
+                            chip.Text("Janet").AvatarIconCss("janet").Enabled(true).Add();
+                            chip.Text("Laura").AvatarIconCss("laura").Enabled(true).Add();
+                            chip.Text("Margaret").AvatarIconCss("margaret").Enabled(true).Add();
+                        }).Render()
+
+<style>
+  #chip-avatar .andrew {
+    background-image: url('./andrew.png')
+  }
+
+  #chip-avatar .margaret {
+    background-image: url('./margaret.png')
+  }
+
+  #chip-avatar .laura {
+    background-image: url('./laura.png')
+  }
+
+  #chip-avatar .janet {
+    background-image: url('./janet.png')
+  }
+</style>                        

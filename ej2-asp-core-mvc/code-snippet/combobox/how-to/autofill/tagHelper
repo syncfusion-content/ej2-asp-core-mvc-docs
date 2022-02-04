@@ -1,0 +1,7 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>
+        <ejs-combobox id="country" datasource="@ViewBag.data" placeholder="e.g. India" autofill="true" popupheight="220px">
+            <e-combobox-fields value="Name"></e-combobox-fields>
+        </ejs-combobox>
+    </div>
+</div>

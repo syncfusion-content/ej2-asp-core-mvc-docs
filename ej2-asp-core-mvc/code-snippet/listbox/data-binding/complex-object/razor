@@ -1,0 +1,1 @@
+@Html.EJS().ListBox("listbox").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.ListBoxFieldSettings { Text="sports.Name"}).Render()

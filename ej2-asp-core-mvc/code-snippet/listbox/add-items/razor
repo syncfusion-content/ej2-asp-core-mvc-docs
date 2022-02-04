@@ -1,0 +1,11 @@
+@Html.EJS().ListBox("listbox").DataSource((IEnumerable<object>)ViewBag.data).Render()
+<button class="e-btn" id="additem">Add Items</button>
+
+<script>
+    document.getElementById("additem").onclick = function () {
+        var items = ['Bugatti Veyron Super Sport', 'SSC Ultimate Aero'];
+        var listboxobj = document.getElementById("listbox").ej2_instances[0];
+        if (!listboxobj.getDataByValue('Bugatti Veyron Super Sport')) {
+            listboxobj.addItems(items);
+        }
+    }

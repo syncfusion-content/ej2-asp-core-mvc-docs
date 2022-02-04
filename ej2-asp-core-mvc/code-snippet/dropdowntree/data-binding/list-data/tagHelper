@@ -1,0 +1,6 @@
+<div id='container' style="margin:0 auto; width:250px;">
+    <ejs-dropdowntree id="treedata">
+        <e-dropdowntree-fields dataSource="ViewBag.dataSource" value="id" parentValue="pid" hasChildren="hasChild" text="name"></e-dropdowntree-fields>
+    </ejs-dropdowntree>
+</div>
+

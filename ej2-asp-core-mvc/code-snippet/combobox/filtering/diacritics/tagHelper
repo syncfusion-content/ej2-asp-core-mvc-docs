@@ -1,0 +1,6 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-combobox id="list" dataSource="@ViewBag.data" ignoreAccent="true" placeholder="e.g: aero">
+        </ejs-combobox>
+    </div>
+</div>

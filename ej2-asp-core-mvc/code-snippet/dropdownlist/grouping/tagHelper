@@ -1,0 +1,7 @@
+<div id='groupList' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-dropdownlist id="vegetables" placeholder="Select a vegetable" popupHeight="200px" dataSource="@ViewBag.data">
+            <e-dropdownlist-fields groupBy="Category" value="Vegetable"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>

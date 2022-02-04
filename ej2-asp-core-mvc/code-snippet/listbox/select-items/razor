@@ -1,0 +1,8 @@
+@Html.EJS().ListBox("listbox").DataSource((IEnumerable<object>)ViewBag.data).Created("create").Render()
+
+<script>
+    function create() {
+        var listboxobj = document.getElementById("listbox").ej2_instances[0];
+        listboxobj.selectItems(['Bugatti Chiron'])
+    }
+</script>

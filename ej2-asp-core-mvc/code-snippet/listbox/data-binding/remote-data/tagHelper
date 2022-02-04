@@ -1,0 +1,4 @@
+<ejs-listbox id="listbox">
+    <e-listbox-fields text="FirstName" value="EmployeeID"></e-listbox-fields>
+    <e-data-manager url="https://ej2services.syncfusion.com/production/web-services/api/Employees" adaptor="ODataAdaptor" crossDomain="true"></e-data-manager>
+</ejs-listbox>

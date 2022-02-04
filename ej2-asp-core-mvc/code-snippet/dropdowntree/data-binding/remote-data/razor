@@ -1,0 +1,9 @@
+<div id='container' style="margin:0 auto; width:250px;">
+    @Html.EJS().DropDownTree("tree").Fields(field =>
+          field.Query("new ej.data.Query().from('Employees').select('EmployeeID,FirstName,Title').take(5)").Value("EmployeeID").ParentValue("pid").Selected("selected")
+          .Text("FirstName").HasChildren("EmployeeID")
+          .DataSource(dataSource =>
+          {
+              dataSource.Url("https://services.odata.org/V4/Northwind/Northwind.svc").Adaptor("ODataV4Adaptor").CrossDomain(true);
+          }).Child(ViewBag.child)).Render()
+</div>

@@ -1,0 +1,34 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="Countries" dataSource="@ViewBag.data" placeholder="Select a Country" index="2" popupHeight="220px">
+            <e-dropdownlist-fields value="Code" text="Name"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
+<script>
+    var tooltip = new ej.popups.Tooltip({
+        // default content of tooltip
+        content: 'Loading...',
+        // set target element to tooltip
+        target: '.e-list-item',
+        // set position of tooltip
+        position: 'top center',
+        // bind beforeRender event
+        beforeRender: onBeforeRender
+    });
+    tooltip.appendTo('body');
+
+    function onBeforeRender(args) {
+        // get the target element
+        var listElement = document.getElementById('Countries');
+        var result = listElement.ej2_instances[0].dataSource;
+        var i;
+        for (i = 0; i < result.length; i++) {
+            if (result[i].Name === args.target.textContent) {
+                this.content = result[i].Name;
+                this.dataBind();
+                break;
+            }
+        }
+    }
+</script>

@@ -1,0 +1,1 @@
+<ejs-dropdownlist id="games" dataSource="@ViewBag.data"> </ejs-dropdownlist>

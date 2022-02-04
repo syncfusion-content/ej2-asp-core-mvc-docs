@@ -1,0 +1,7 @@
+<div id='groupList' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-multiselect id="vegetables" placeholder="Select vegetables" popupHeight="200px" mode="CheckBox" enableGroupCheckBox="true" showSelectAll="true" allowFiltering="true" filterBarPlaceholder="Search Vegetables" dataSource="@ViewBag.data">
+            <e-multiselect-fields groupBy="Category" value="Vegetable"></e-multiselect-fields>
+        </ejs-multiselect>
+    </div>
+</div>

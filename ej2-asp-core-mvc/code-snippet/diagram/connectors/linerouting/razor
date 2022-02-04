@@ -1,0 +1,3 @@
+  @(Html.EJS().Diagram("container").Width("100%").Height("580px")  
+                .Constraints(DiagramConstraints.Default | DiagramConstraints.LineRouting)
+                

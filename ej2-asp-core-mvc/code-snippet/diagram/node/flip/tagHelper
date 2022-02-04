@@ -1,0 +1,7 @@
+<ejs-diagram id="container" width="100%" height="700px">
+<e-diagram-nodes>
+                <e-diagram-node id="bjb">
+                    <e-node-pivot x="1" y="1"></e-node-pivot>
+                </e-diagram-node>
+            </e-diagram-nodes>
+</ejs-diagram>

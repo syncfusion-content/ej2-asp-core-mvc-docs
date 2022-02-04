@@ -1,0 +1,12 @@
+@Html.EJS().DropDownButton("ddbtn").Content("Clipboard").Items((IEnumerable<object>)ViewBag.items).CssClass("e-round-corner").Render()
+
+<style>
+    .e-round-corner {
+        border-radius: 5px;
+    }
+
+
+    button {
+      margin: 25px 5px 20px 20px;
+    }
+</style>

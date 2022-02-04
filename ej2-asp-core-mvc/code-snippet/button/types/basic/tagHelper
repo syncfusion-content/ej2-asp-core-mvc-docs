@@ -1,0 +1,15 @@
+@{IDictionary<string, object> submit = new Dictionary<string, object>();
+    submit.Add("type", "submit");
+}
+@{IDictionary<string, object> reset = new Dictionary<string, object>();
+    reset.Add("type", "reset");
+}
+<ejs-button id="submit" content="Submit" htmlAttributes="submit"></ejs-button>
+<ejs-button id="reset" content="Reset" htmlAttributes="reset"></ejs-button>
+
+<style>
+  button {
+    margin: 25px 5px 20px 20px;
+  }
+</style>
+

@@ -1,0 +1,5 @@
+<div class='e-btn-group e-outline'>
+    @Html.EJS().Button("html").Content("HTML").CssClass("e-outline").Render()
+    @Html.EJS().Button("css").Content("CSS").CssClass("e-outline").Render()
+    @Html.EJS().Button("javacript").Content("Javascript").CssClass("e-outline").Render()
+</div>

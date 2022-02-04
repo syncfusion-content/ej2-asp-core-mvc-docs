@@ -1,0 +1,1 @@
+@Html.EJS().SplitButton("element").Content("Paste").Items((IEnumerable<object>)ViewBag.items).Render()

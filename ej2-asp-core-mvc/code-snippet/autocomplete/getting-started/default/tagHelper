@@ -1,0 +1,1 @@
+<ejs-autocomplete id="games" dataSource="@ViewBag.data"> </ejs-autocomplete>

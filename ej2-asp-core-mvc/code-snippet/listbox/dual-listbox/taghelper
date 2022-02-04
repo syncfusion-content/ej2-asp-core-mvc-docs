@@ -1,0 +1,10 @@
+<div style="width:50%; margin:auto">
+    <div style="float:left; width:48%">
+        <ejs-listbox id="listbox1" dataSource="@ViewBag.groupA" scope="#listbox2">
+            <e-listbox-toolbarSettings items="@ViewBag.items"></e-listbox-toolbarSettings>
+        </ejs-listbox>
+    </div>
+    <div style="float:right; width:48%">
+        <ejs-listbox id="listbox2" dataSource="@ViewBag.groupB"></ejs-listbox>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class='e-btn-group'>
+    @Html.EJS().Button("html").Content("HTML").Render()
+    @Html.EJS().Button("css").Content("CSS").Disabled(true).Render()
+    @Html.EJS().Button("javasript").Content("Javascript").Render()
+</div>
+<div class='e-btn-group'>
+    @Html.EJS().Button("html_1").Content("HTML").Disabled(true).Render()
+    @Html.EJS().Button("css_1").Content("CSS").Disabled(true).Render()
+    @Html.EJS().Button("javasript_1").Content("Javascript").Disabled(true).Render()
+</div>

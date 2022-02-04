@@ -1,0 +1,16 @@
+@Html.EJS().SplitButton("element").Content("Paste").Items((IEnumerable<object>)ViewBag.items).BeforeItemRender("itemRender").Render()
+
+<script>
+    function itemRender(args){
+        if (args.item.text === 'Copy') {
+            //To underline a particular text.
+            args.element.innerHTML = '<u>C</u>opy';
+        }
+    }
+</script>
+
+<style>
+    .e-split-btn-wrapper{
+        margin: 20px 20px 5px 5px;
+    }
+</style>

@@ -1,0 +1,16 @@
+@Html.EJS().Button("primarybtn").Content("Primary").CssClass("e-primary").Render()
+@Html.EJS().Button("successbtn").Content("Success").CssClass("e-success").Render()
+@Html.EJS().Button("infobtn").Content("Info").CssClass("e-info").Render()
+@Html.EJS().Button("warningbtn").Content("Warning").CssClass("e-warning").Render()
+@Html.EJS().Button("dangerbtn").Content("Danger").CssClass("e-danger").Render()
+@Html.EJS().Button("linkbtn").Content("Link").CssClass("e-link").Render()
+
+
+<style>
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+</style>
+

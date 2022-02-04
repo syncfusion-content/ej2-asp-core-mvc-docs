@@ -1,0 +1,18 @@
+<div class='control-wrapper'>
+    <div style='padding-top:75px;'>
+        <ejs-combobox id="employees" dataSource="@ViewBag.data" placeholder="Select a game" popupHeight="270px"
+                          footerTemplate="@Html.Raw( "<span class='foot'> Total list items: " + 8 + "</span>")">
+            <e-combobox-fields value="Name"></e-combobox-fields>
+        </ejs-combobox>
+    </div>
+</div>
+
+<style>
+    .foot {
+        text-indent: 1.2em;
+        display: block;
+        font-size: 15px;
+        line-height: 40px;
+        border-top: 1px solid #e0e0e0;
+    }
+</style>

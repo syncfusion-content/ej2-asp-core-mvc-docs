@@ -1,0 +1,8 @@
+<ejs-chiplist id="chip-avatar">
+    <e-chips>
+      <e-chip text="Andrew" trailingIconCss="e-dlt-btn" enabled="true"></e-chip>
+      <e-chip text="Janet" trailingIconCss="e-dlt-btn" enabled="true"></e-chip>
+      <e-chip text="Laura" trailingIconCss="e-dlt-btn" enabled="true"></e-chip>
+      <e-chip text="Margaret" trailingIconCss="e-dlt-btn" enabled="true"></e-chip>    
+    </e-chips>
+</ejs-chiplist>

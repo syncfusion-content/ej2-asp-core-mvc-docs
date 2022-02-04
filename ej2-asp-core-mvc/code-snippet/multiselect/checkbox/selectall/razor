@@ -1,0 +1,1 @@
+@Html.EJS().MultiSelect("default").Placeholder("Select games").DataSource((IEnumerable<object>)ViewBag.data).Mode(Syncfusion.EJ2.DropDowns.VisualMode.CheckBox).ShowSelectAll(true).SelectAllText("Select All").UnSelectAllText("UnSelect All").Fields(new Syncfusion.EJ2.DropDowns.MultiSelectFieldSettings { Text = "Game", Value = "Id" }).Render()

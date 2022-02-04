@@ -1,0 +1,10 @@
+<div class='e-btn-group'>
+    @Html.EJS().Button("html").Content("HTML").Render()
+    @Html.EJS().Button("css").Content("CSS").Render()
+    @Html.EJS().Button("javacript").Content("Javascript").Render()
+</div>
+<script>
+ej.base.enableRipple(true);
+var button = document.querySelector('.e-btn-group');
+ej.base.rippleEffect(button, {selector: 'e-btn'});
+</script>

@@ -1,0 +1,12 @@
+<ejs-listbox id="listbox" dataSource="@ViewBag.data"></ejs-listbox>
+<button class="e-btn" id="additem">Add Items</button>
+
+<script>
+    document.getElementById('additem').onclick = function () {
+        var items = ['Bugatti Veyron Super Sport', 'SSC Ultimate Aero'];
+        var listboxobj = ej.base.getInstance(document.getElementById('listbox'), ejs.dropdowns.ListBox)
+        if (!listboxobj.getDataByValue('Bugatti Veyron Super Sport')) {
+            listboxobj.addItems(items);
+        }
+    }
+</script>

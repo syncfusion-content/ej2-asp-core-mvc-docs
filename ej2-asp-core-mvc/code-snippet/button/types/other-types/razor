@@ -1,0 +1,16 @@
+@Html.EJS().Button("flat").Content("Flat").CssClass("e-flat").Render()
+@Html.EJS().Button("outline").Content("Outline").CssClass("e-outline").Render()
+@Html.EJS().Button("round").IconCss("e-icons e-plus-icon").CssClass("e-round").IsPrimary(true).Render()
+
+<style>
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+.e-plus-icon::before {
+  content: '\e823';
+}
+
+</style>
+

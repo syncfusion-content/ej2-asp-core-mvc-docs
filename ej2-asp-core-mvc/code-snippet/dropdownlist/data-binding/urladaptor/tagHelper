@@ -1,0 +1,8 @@
+<div id='url-data' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        <ejs-dropdownlist id="country" placeholder="Select a Country">
+            <e-data-manager adaptor="UrlAdaptor" url="/Dropdownlist/UrlDatasource/" crossDomain="true"></e-data-manager>
+            <e-dropdownlist-fields value="ShipCountry"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>

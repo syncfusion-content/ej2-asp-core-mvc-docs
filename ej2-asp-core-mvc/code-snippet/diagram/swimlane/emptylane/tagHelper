@@ -1,0 +1,7 @@
+<ejs-diagram id="container" width="100%" height="700px">
+    <e-diagram-nodes>
+        <e-diagram-node id='node1' offsetX="100" offsetY="100" width="100" height="100" constraints="Shadow">
+           <e-node-shadow angle="50" opacity="0.9"></e-node-shadow>
+        </e-diagram-node>
+    </e-diagram-nodes>
+</ejs-diagram>

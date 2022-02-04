@@ -1,0 +1,65 @@
+<ejs-listbox id="listbox1" dataSource="@ViewBag.data" itemTemplate='<div class="list-wrapper"><span class="${pic} e-avatar e-avatar-xlarge e-avatar-circle"></span><span class="text">${text}</span><span class="description">${description}</span></div>'></ejs-listbox>
+
+<style>
+    .e-listbox-wrapper {
+        margin: auto;
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+
+    .e-listbox-wrapper:not(.e-list-template) .e-list-item {
+            padding: 0;
+            position: unset;
+            cursor: pointer;
+            height: 76px;
+            line-height: normal;
+    }
+
+    .list-wrapper {
+        height: inherit;
+        position: relative;
+        padding: 14px 12px 14px 78px;
+    }
+
+    .list-wrapper .text,
+    .list-wrapper .description {
+            display: block;
+            margin: 0;
+            padding-bottom: 3px;
+            white-space: normal;
+    }
+
+    .list-wrapper .description {
+            font-size: 12px;
+            font-weight: 500;
+    }
+
+    #container .e-listbox-wrapper .list-wrapper .text {
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .list-wrapper .e-avatar {
+        position: absolute;
+        left: 5px;
+        background-color: transparent;
+        font-size: 22px;
+        top: calc(50% - 33px);
+    }
+
+    .javascript, .typeScript {
+        background-image: url('images/javascript1.svg');
+    }
+
+    .angular {
+        background-image: url('images/angular1.svg');
+    }
+
+    .vue {
+        background-image: url('images/vue.svg');
+    }
+
+    .react {
+        background-image: url('images/react.svg');
+    }
+</style>

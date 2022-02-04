@@ -1,0 +1,1 @@
+<ejs-listbox id="listbox" dataSource="@ViewBag.data" height="250px" ></ejs-listbox>

@@ -1,0 +1,1 @@
+@Html.EJS().Switch("default").OnLabel("ON").OffLabel("OFF").Render()

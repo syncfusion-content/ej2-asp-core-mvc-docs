@@ -1,0 +1,14 @@
+@Html.EJS().ProgressButton("vprogress").Content("Vertical Progress").EnableProgress(true).CssClass("e-hide-spinner e-vertical").Duration(4000).Render()
+@Html.EJS().ProgressButton("tprogress").Content("Progress Top").EnableProgress(true).CssClass("e-hide-spinner e-progress-top").Duration(4000).Render()
+@Html.EJS().ProgressButton("rprogress").Content("Reverse Progress").EnableProgress(true).CssClass("e-hide-spinner e-reverse-progress").Duration(4000).Render()
+
+<style>
+    .e-reverse-progress .e-progress {
+        right: 0;
+        left: auto;
+    }
+
+    button {
+        margin: 25px;
+    }
+</style>

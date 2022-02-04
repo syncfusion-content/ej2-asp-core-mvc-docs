@@ -8,16 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Troubleshoot of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
-platform: ej2-asp-core-mvc
-control: Troubleshoot
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
 # How to troubleshoot compile-time and run-time errors
 
 ## Compile-time error

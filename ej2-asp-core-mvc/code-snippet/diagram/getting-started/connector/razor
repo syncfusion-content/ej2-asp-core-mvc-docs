@@ -1,0 +1,5 @@
+@(Html.EJS().Diagram("container")
+    .Width("100%")
+    .Height("580px")
+    .Nodes(ViewBag.nodes)
+    .Connectors(ViewBag.connectors).Render()

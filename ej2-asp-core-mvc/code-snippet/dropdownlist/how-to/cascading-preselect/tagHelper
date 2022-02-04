@@ -1,0 +1,38 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="CountryId" ejs-for="CountryId" dataSource="ViewBag.country" width="300" placeholder="Select a country" change="countrychange">
+            <e-dropdownlist-fields text="CountryName" value="CountryId"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="StateId" ejs-for="StateId" dataSource="ViewBag.state" width="300" placeholder="Select a state" created="stateCreated">
+            <e-dropdownlist-fields text="StateName" value="StateId"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
+<script type="text/javascript">
+    var totalData;
+    function stateCreated() {
+        // disable the state DropDownList
+        var countryObj = document.getElementById('CountryId').ej2_instances[0];
+        var state = document.getElementById('StateId').ej2_instances[0];
+        totalData = state.dataSource
+        //frame the query based on selected value in country DropDownList.
+        var dataManager = new ej.data.DataManager(totalData);
+        var tempQuery = new ej.data.Query().where('CountryId', 'equal', countryObj.value);
+        // set the framed query based on selected value in country DropDownList.
+        state.dataSource = tempQuery.executeLocal(dataManager);
+    }
+    function countrychange() {
+        // disable the state DropDownList
+        var countryObj = document.getElementById('CountryId').ej2_instances[0];
+        var state = document.getElementById('StateId').ej2_instances[0];
+        state.enabled = true;
+        var dataManager = new ej.data.DataManager(totalData);
+        //frame the query based on selected value in country DropDownList.
+        var tempQuery = new ej.data.Query().where('CountryId', 'equal', countryObj.value);
+        // set the framed query based on selected value in country DropDownList.
+        state.dataSource = tempQuery.executeLocal(dataManager);
+        state.dataBind();
+    }
+</script>

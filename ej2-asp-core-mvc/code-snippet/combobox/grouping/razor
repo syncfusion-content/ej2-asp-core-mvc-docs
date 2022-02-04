@@ -1,0 +1,1 @@
+@Html.EJS().ComboBox("Vegetable").Placeholder("Select a Vegetable").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.ComboBoxFieldSettings { Value = "Vegetable", GroupBy = "Category" }).Render()

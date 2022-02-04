@@ -1,0 +1,1 @@
+@Html.EJS().ComboBox("games").Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).NoRecordsTemplate("<span class='norecord'> NO DATA AVAILABLE</span>").Render()

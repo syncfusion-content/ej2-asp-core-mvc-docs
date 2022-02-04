@@ -1,0 +1,11 @@
+@using (Html.BeginForm())
+{
+    @Html.EJS().MultiSelectFor(model => model.EnquiringAboutSelect).Placeholder("Select a Country").DataSource(Model?.EnquiringAboutSelectListItems).Fields(new Syncfusion.EJ2.DropDowns.MultiSelectFieldSettings { Value = "Text" }).Placeholder("Please Select Enquiring About").Render()
+    <div>
+        @Html.ValidationMessageFor(model => model.EnquiringAboutSelect)
+    </div>
+
+    <div id="submitbutton">
+        @Html.EJS().Button("btn").Content("Post").Render()
+    </div>
+}

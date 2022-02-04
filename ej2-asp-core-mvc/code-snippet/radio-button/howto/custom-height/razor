@@ -1,0 +1,39 @@
+@Html.EJS().RadioButton("radio1").Label("Option 1").Name("default").Checked(true).Render()
+@Html.EJS().RadioButton("radio2").Label("Option 2").Name("default").Render()
+
+<style>
+
+.e-radio-wrapper {
+  margin-top: 18px;
+}
+
+li {
+  list-style: none;
+}
+
+.e-radio + label::before {
+  height: 30px;
+  width: 30px;
+}
+
+.e-radio + label::after {
+  height: 28px;
+  width: 28px;
+}
+
+.e-radio + label .e-ripple-container {
+  height: 40px;
+  left: -6px;
+  top: -5px;
+  width: 42px;
+}
+
+.e-radio + label .e-label {
+  font-size: 15px;
+  height: 32px;
+  line-height: 30px;
+  padding-left: 41px;
+}
+
+</style>
+

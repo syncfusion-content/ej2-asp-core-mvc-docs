@@ -1,0 +1,4 @@
+<ejs-diagram id="container" width="100%" height="700px">
+ <e-diagram-datasourcesettings id="Id" parentId="ReportingPerson" dataManager="new DataManager() { Data = (List<RadialTreeDetails>)ViewBag.Nodes }"></e-diagram-datasourcesettings>
+        <e-diagram-layout type="RadialTree" root="Parent"></e-diagram-layout>
+</ejs-diagram>

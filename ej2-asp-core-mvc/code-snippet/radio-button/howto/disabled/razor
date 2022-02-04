@@ -1,0 +1,20 @@
+@Html.EJS().RadioButton("radio1").Label("Option 1").Name("default").Checked(true).Render()
+@Html.EJS().RadioButton("radio2").Label("Option 2").Name("default").Disabled(true).Render()
+@Html.EJS().RadioButton("radio3").Label("Option 3").Name("default").Render()
+
+<style>
+
+.e-radio-wrapper {
+  margin-top: 18px;
+}
+
+button {
+  margin: 20px 0 0 5px;
+}
+
+li {
+  list-style: none;
+}
+
+</style>
+

@@ -1,0 +1,9 @@
+@Html.EJS().Button("btn").Content("Set Null value to property").Render()
+@Html.EJS().DropDownList("games").Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Render()
+
+<script>
+    document.getElementById('btn').onclick = () => {
+        var dropObj = document.getElementById("games"); //to get dropdown list object
+        dropObj.value = null;
+    };
+</script>

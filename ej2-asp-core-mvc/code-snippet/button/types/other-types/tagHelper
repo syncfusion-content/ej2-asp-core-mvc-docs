@@ -1,0 +1,16 @@
+<ejs-button id="flat" cssClass="e-flat" content="Flat"></ejs-button>
+<ejs-button id="outline" cssClass="e-outline" content="Outline"></ejs-button>
+<ejs-button id="round" cssClass="e-round" iconCss="e-icons e-plus-icon" isPrimary="true"></ejs-button>
+
+<style>
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+.e-plus-icon::before {
+  content: '\e823';
+}
+
+</style>
+

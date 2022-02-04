@@ -1,0 +1,4 @@
+<div id='container' style="margin:0 auto; width:250px;">
+    @Html.EJS().DropDownTree("treedata").Fields(field =>
+                   field.Value("code").Child(ViewBag.child).Text("name").DataSource(ViewBag.data)).Render()
+</div>

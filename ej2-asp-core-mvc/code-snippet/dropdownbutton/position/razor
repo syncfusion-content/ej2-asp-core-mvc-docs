@@ -1,0 +1,13 @@
+@Html.EJS().DropDownButton("ddbtn").Content("Clipboard").Items((IEnumerable<object>)ViewBag.items).CssClass("e-caret-up")
+   .Open("onOpen").Render()
+
+<style>
+    button {
+        margin: 25% 5px 20px 30%;
+    }
+</style>
+<script>
+    function onOpen(args){        
+        args.element.parentElement.style.top = ej.base.getInstance(document.getElementById('ddbtn'), ejs.splitbuttons.DropDownButton).element.getBoundingClientRect().top - args.element.parentElement.offsetHeight +'px';
+    }
+</script>

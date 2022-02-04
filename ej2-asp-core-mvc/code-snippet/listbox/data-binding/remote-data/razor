@@ -1,0 +1,2 @@
+@Html.EJS().ListBox("listbox").DataSource((IEnumerable<object>)ViewBag.data).DataSource(dataManager=> 
+        dataManager.Url("https://ej2services.syncfusion.com/production/web-services/api/Employees").Adaptor("ODataAdaptor").CrossDomain(true)).Fields(new Syncfusion.EJ2.DropDowns.ListBoxFieldSettings { Text="FirstName", Value="EmployeeID" }).Render()

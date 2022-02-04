@@ -1,0 +1,31 @@
+@Html.EJS().CheckBox("customsize").Label("Default").CssClass("e-customsize").Render()
+
+<style>
+
+.e-checkbox-wrapper {
+  margin-top: 30px;
+}
+
+.e-customsize.e-checkbox-wrapper .e-frame {
+  height: 30px;
+  width: 30px;
+  padding: 8px 0;
+}
+
+.e-customsize.e-checkbox-wrapper .e-check {
+    font-size: 20px;
+}
+
+.e-customsize.e-checkbox-wrapper .e-ripple-container {
+    height: 52px;
+    top: -11px;
+    width: 47px;
+}
+
+.e-customsize.e-checkbox-wrapper .e-label {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+</style>
+

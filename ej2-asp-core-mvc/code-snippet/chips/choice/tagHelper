@@ -1,0 +1,8 @@
+<ejs-chiplist id="chip-avatar" selection="Single">
+    <e-chips>
+      <e-chip text="Small" enabled="true"></e-chip>
+      <e-chip text="Medium" enabled="true"></e-chip>
+      <e-chip text="Large" enabled="true"></e-chip>
+      <e-chip text="Extra Large" enabled="true"></e-chip>
+    </e-chips>
+</ejs-chiplist>

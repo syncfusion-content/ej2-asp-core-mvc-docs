@@ -1,0 +1,1 @@
+@Html.EJS().MultiSelect("games").Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<Object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.MultiSelectFieldSettings { Text = "Country.CountryId", Value = "Code.Id" }).Render()

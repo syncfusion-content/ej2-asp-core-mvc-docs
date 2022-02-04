@@ -1,0 +1,2 @@
+<ejs-combobox id="games" dataSource="@ViewBag.data" placeholder="Select a game">
+</ejs-combobox>

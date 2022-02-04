@@ -1,0 +1,8 @@
+<div style="width:50%; margin:auto">
+    <div style="float:left; width:48%">
+        @Html.EJS().ListBox("listbox1").DataSource((IEnumerable<object>)ViewBag.groupA).AllowDragAndDrop(true).Scope("combined-list").Render()
+    </div>
+    <div style="float:right; width:48%">
+        @Html.EJS().ListBox("listbox2").DataSource((IEnumerable<object>)ViewBag.groupB).AllowDragAndDrop(true).Scope("combined-list").Render()
+    </div>
+</div>

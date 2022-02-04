@@ -1,0 +1,15 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-multiselect id="customers" query="new ej.data.Query().from('Employees').select(['FirstName', 'City', 'EmployeeID']).take(6)" placeholder="Select a customer" itemTemplate="@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")" valueTemplate="@Html.Raw("<span>${FirstName} - ${City}</span>")" popupHeight="200px">
+            <e-multiselect-fields text="FirstName" value="EmployeeID"></e-multiselect-fields>
+            <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+        </ejs-multiselect>
+    </div>
+</div>
+
+<style>
+    .city {
+        right: 15px;
+        position: absolute;
+    }
+</style>

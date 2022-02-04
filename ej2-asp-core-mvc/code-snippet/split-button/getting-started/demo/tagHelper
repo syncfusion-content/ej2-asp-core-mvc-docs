@@ -1,0 +1,1 @@
+<ejs-splitbutton id="element" content="Paste" items="@ViewBag.items"></ejs-splitbutton>

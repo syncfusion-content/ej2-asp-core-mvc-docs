@@ -1,0 +1,5 @@
+@Html.EJS().MultiSelect("games").Placeholder("Select a Country").PopupHeight("200px").DataSource(dataManger =>
+    dataManger.Url("/MultiSelect/UrlDatasource").Adaptor("UrlAdaptor").CrossDomain(true)).Fields(new Syncfusion.EJ2.DropDowns.MultiSelectFieldSettings
+    {
+        Value = "ShipCountry"
+    }).Render()

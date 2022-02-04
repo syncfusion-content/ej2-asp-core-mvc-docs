@@ -1,0 +1,8 @@
+@using (Html.BeginForm())
+{
+    @Html.EJS().AutoCompleteFor(model => model.value).Placeholder("Select a Country").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings { Value = "Name" }).Render()
+
+    <div id="submitbutton">
+        @Html.EJS().Button("btn").Content("Post").Render()
+    </div>
+}

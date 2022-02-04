@@ -1,0 +1,89 @@
+<div id="target" style='border: 1px solid grey;'>
+        <table class="e-popup-table">
+            <caption class="e-caption" style='height: 18px; background-color: #e0e0e0;'><b>Insert Table</b></caption>
+            <tr class='e-row'>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+            </tr>
+            <tr class='e-row'>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+            </tr>
+            <tr class='e-row'>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+            </tr>
+            <tr class='e-row'>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+            </tr>
+            <tr class='e-row'>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+            </tr>
+            <tr class='e-row'>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+                <td class='e-data'></td>
+            </tr>
+        </table>
+    </div>
+    @Html.EJS().DropDownButton("element").Content("Table").Target("#target").IconCss("e-icons e-table").Render()
+
+<style>
+
+        .shortcut {
+            float: right;
+            margin-top: 9px;
+            padding-left: 30px;
+            height: 100px;
+        }
+        .e-popup-table {
+            border-collapse: separate;
+        }
+        .e-data {
+            border: 1px solid grey;
+            padding: 8px;
+        }
+
+        .e-table::before {
+            content: '\e705';
+        }
+
+        .e-row {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        .e-caption {
+            caption-side: top;
+            padding: 0 0 0 18px;
+        }
+
+        button {
+            margin: 25px 5px 20px 20px;
+        }
+    </style>

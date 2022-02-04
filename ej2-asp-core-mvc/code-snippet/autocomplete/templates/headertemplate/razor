@@ -1,0 +1,32 @@
+@Html.EJS().AutoComplete("customers").Placeholder("Select a customer").PopupHeight("200px").DataSource(dataManger =>
+            dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/").Adaptor("ODataV4Adaptor").CrossDomain(true)).ItemTemplate("<span class='item' ><span class='name'>${FirstName}</span><span class='city'>${City}</span></span>").HeaderTemplate("<span class='head'><span class='name'>Name</span><span class='city'>City</span></span>").Fields(new Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings
+            {
+                Value = "FirstName",
+            }).Query("new ej.data.Query().from('Employees').select(['FirstName', 'City', 'EmployeeID']).take(6)").Render()
+<style>
+    .head, .item {
+        display: table;
+        width: 100%;
+        margin: auto;
+    }
+
+    .head {
+        height: 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .name, .city {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+    }
+
+    .head .name {
+        text-indent: 16px;
+    }
+
+    .head .city {
+        text-indent: 10px;
+    }
+</style>

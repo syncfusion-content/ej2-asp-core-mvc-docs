@@ -1,0 +1,5 @@
+@Html.EJS().DropDownList("customers").Placeholder("Select a customer").PopupHeight("200px").DataSource(dataManger =>
+            dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svcs/").Adaptor("ODataV4Adaptor").CrossDomain(true)).ActionFailureTemplate("<span class='action-failure'> Data fetch get fails</span>").Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings
+            {
+                Value = "FirstName"
+            }).Query("new ej.data.Query().from('Employees').select(['FirstName']).take(6)").Render()

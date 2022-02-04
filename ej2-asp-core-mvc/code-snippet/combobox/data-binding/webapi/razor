@@ -1,0 +1,6 @@
+<div id='web-data' class='col-lg-6' style='padding-top:15px'>
+    <div class='content'>
+        @Html.EJS().ComboBox("games").DataSource(dataManger =>
+            dataManger.Url("/api/ComboBox/").Adaptor("WebApiAdaptor")).Render()
+    </div>
+</div>

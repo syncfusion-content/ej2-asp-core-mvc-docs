@@ -1,0 +1,31 @@
+<div id='container'>
+    <table class='size'>
+        <tr>
+            <td class='lSize'>Small</td>
+            <td>
+                @Html.EJS().Switch("switch1").cssClass("e-small").Render()
+            </td>
+        </tr>
+        <tr>
+            <td class='lSize'>Default</td>
+            <td>
+                @Html.EJS().Switch("switch2").Render()
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<style>
+
+.size tr td {
+  padding: 10px;
+}
+
+.size .lSize {
+  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif";
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+}
+</style>

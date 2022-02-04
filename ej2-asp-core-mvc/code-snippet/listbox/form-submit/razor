@@ -1,0 +1,4 @@
+<form>
+    @Html.EJS().ListBox("listbox").DataSource((IEnumerable<object>)ViewBag.data).Render()
+    @Html.EJS().Button("button").IsPrimary(true).Content("Submit").Render()
+</form>

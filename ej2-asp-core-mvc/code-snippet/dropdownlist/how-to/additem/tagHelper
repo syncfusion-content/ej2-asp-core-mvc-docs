@@ -1,0 +1,32 @@
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-dropdownlist id="games" dataSource="@ViewBag.data" placeholder="Select a game" index="2" popupHeight="220px">
+            <e-dropdownlist-fields value="Game"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
+<div>
+    <ejs-button id="first" content="add item (Hockey) in first"></ejs-button>
+</div>
+<div>
+    <ejs-button id="between" content="add item (Golf) in between"></ejs-button>
+</div>
+<div>
+    <ejs-button id="last" content="add item (Cricket) in last"></ejs-button>
+</div>
+<script>
+    document.getElementById('first').onclick = () => {
+        var dropObject = document.getElementById("games").ej2_instances[0];
+        dropObject.addItem({Game: 'Hockey' }, 0);
+    };
+    // add item in between
+    document.getElementById('between').onclick = () => {
+        var dropObject = document.getElementById("games").ej2_instances[0];
+        dropObject.addItem({ Game: "Golf" }, 2);
+    };
+    // add item at last
+    document.getElementById('last').onclick = () => {
+        var dropObject = document.getElementById("games").ej2_instances[0];
+        dropObject.addItem({Game: "Cricket"});
+    };
+</script>

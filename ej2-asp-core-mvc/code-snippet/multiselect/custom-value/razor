@@ -1,0 +1,5 @@
+<div id='local-data'>
+    <div class='control-wrapper'>
+        @Html.EJS().MultiSelect("default").Placeholder("Select games").AllowCustomValue(true).DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.MultiSelectFieldSettings { Text = "Game", Value = "Id" }).Render()
+    </div>
+</div>

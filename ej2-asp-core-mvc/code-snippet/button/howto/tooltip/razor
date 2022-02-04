@@ -1,0 +1,9 @@
+@Html.EJS().Button("primarybtn").Title("Primary Button").Content("Button").IsPrimary(true).Render()
+
+<style>
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+</style>

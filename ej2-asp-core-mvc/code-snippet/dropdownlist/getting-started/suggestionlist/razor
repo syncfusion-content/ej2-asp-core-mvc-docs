@@ -1,0 +1,1 @@
+@Html.EJS().DropDownList("games").Placeholder("Select a game").PopupHeight("200px").PopupWidth("300px").DataSource((IEnumerable<object>)ViewBag.data).Render()

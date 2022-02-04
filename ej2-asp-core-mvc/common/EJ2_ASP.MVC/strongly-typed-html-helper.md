@@ -7,17 +7,6 @@ control: Strongly Typed Html Helper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
----
-layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Strongly Typed Html Helper of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
-platform: ej2-asp-core-mvc
-control: Strongly Typed Html Helper
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
 # Strongly-Typed HTML Helper
 
 The Syncfusion editor controls supports the strongly typed HTML helpers represented by lambda expressions that have the model or template passed into the view. The Extension method is used to get a value from the model.

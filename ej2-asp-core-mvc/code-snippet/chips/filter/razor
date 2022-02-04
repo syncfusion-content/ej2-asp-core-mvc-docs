@@ -1,0 +1,7 @@
+@Html.EJS().ChipList("chip-avatar").Selection(Selection.Multiple).Chips(chip =>
+                        {
+                            chip.Text("Chai").Enabled(true).Add();
+                            chip.Text("Chang").Enabled(true).Add();
+                            chip.Text("Aniseed Syrup").Enabled(true).Add();
+                            chip.Text("Ikura").Enabled(true).Add();
+                        }).Render()

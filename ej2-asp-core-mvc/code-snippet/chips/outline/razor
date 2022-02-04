@@ -1,0 +1,17 @@
+<div>
+@Html.EJS().ChipList("chip-avatar").CssClass("e-outline").Chips(chip =>
+                        {
+                            chip.Text("Chai").Enabled(true).Add();
+                            chip.Text("Chung").Enabled(true).Add();
+                            chip.Text("Aniseed Syrup").Enabled(true).Add();
+                            chip.Text("Ikura").Enabled(true).Add();
+                        }).Render()
+
+@Html.EJS().ChipList("chip-avatar").CssClass("e-outline").EnableDelete(true).Chips(chip =>
+                        {
+                            chip.Text("Andrew").Enabled(true).Add();
+                            chip.Text("Janet").Enabled(true).Add();
+                            chip.Text("Laura").Enabled(true).Add();
+                            chip.Text("Margaret").Enabled(true).Add();
+                        }).Render()                        
+</div>                        

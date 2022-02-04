@@ -1,0 +1,7 @@
+<div class='e-btn-group'>
+    <ejs-button id="approve" content="Approve" cssClass='e-success'></ejs-button>
+    <ejs-button id="reject" content="Reject" cssClass='e-warning'></ejs-button>
+    <ejs-button id="view" content="View" cssClass='e-info'></ejs-button>
+    <ejs-button id="edit" content="Edit" cssClass='e-primary'></ejs-button>
+    <ejs-button id="delete" content="Delete" cssClass='e-danger'></ejs-button>
+</div>

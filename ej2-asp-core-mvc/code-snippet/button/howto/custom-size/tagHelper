@@ -1,0 +1,31 @@
+<ejs-button id="largebtn" cssClass="e-big-btn" content="Large Button"></ejs-button>
+<ejs-button id="smallbtn" cssClass="e-small-btn" iconCss="e-icons e-add-icon"></ejs-button>
+
+<style>
+
+.e-big-btn {
+  height: 50px;
+  width: 120px;
+}
+
+/* To Customize small button */
+.e-small-btn {
+  height: 30px;
+  width: 25px;
+}
+
+.e-small-btn.e-icon-btn {
+  padding: 0 6px;
+  line-height: 24px;
+}
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+.e-add-icon::before {
+  content: '\e823';
+}
+
+</style>
+

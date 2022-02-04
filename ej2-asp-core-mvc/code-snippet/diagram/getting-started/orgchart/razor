@@ -1,0 +1,11 @@
+@Html.EJS().Diagram("diagram").Width("100%").Height("590px").GetNodeDefaults("getNodeDefaults").GetConnectorDefaults("getConnectorDefaults").ScrollSettings(s => s.ScrollLimit(Syncfusion.EJ2.Diagrams.ScrollLimit.Infinity)).DataSourceSettings(ss => ss.Id("Id").ParentId("ReportingPerson")
+        .DataManager(new DataManager() { Data = (List<OverviewData>)ViewBag.Nodes })).Layout(l => l.Type(Syncfusion.EJ2.Diagrams.LayoutType.OrganizationalChart).GetLayoutInfo("getLayoutInfo")).SnapSettings(se => se.Constraints(Syncfusion.EJ2.Diagrams.SnapConstraints.None)).Created("diagramCreated").Render()
+
+
+function getNodeDefaults(obj, diagram) {
+            obj.height = 60;
+            obj.width = 100;
+        }
+ function getConnectorDefaults(obj, diagram) {
+            obj.type = 'Orthogonal';
+        }

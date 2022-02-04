@@ -1,0 +1,18 @@
+<div style='padding-top:75px;'>
+    <ejs-dropdownlist id="customers" placeholder="Select a customer" popupHeight="200px" allowFiltering="true" filtering="onfiltering" query="new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6)">
+        <e-dropdownlist-fields value="CustomerID" text="ContactName"></e-dropdownlist-fields>
+        <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+    </ejs-dropdownlist>
+</div>
+<script>
+    function onfiltering(e) {
+        var CBObj = document.getElementById("customers").ej2_instances[0];
+        // load overall data when search key empty.
+        if (e.text == '' && e.text.length < 3) {
+            e.updateData(CBObj.dataSource);
+        }
+            let query = new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6);
+            query = (e.text !== '' && e.text.length >= 3) ? query.where('ContactName', 'startswith', e.text, true) : query;
+            e.updateData(CBObj.dataSource, query);
+    }
+</script>

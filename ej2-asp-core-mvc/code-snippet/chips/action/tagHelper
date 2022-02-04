@@ -1,0 +1,14 @@
+<ejs-chiplist id="chip-avatar" click="chipclick">
+    <e-chips>
+      <e-chip text="Sent a text" enabled="true"></e-chip>
+      <e-chip text="Set a remainder" enabled="true"></e-chip>
+      <e-chip text="Read my emails" enabled="true"></e-chip>
+      <e-chip text="Set alarm" enabled="true"></e-chip>
+    </e-chips>
+</ejs-chiplist>
+
+<script>
+  function chipclick(e){
+      alert('you have clicked ' + e.text);
+  }   
+</script>  

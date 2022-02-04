@@ -1,0 +1,4 @@
+<div>
+    <ejs-multiselect id="games" dataSource="@ViewBag.data" placeholder="Favorite Sports" mode="Box">
+    </ejs-multiselect>
+</div>

@@ -8,18 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-layout: post
-title: Validation  | ASP.NET MVC | Syncfusion
-description: Validation  
-platform: ej2-asp-core-mvc
-control: Common 
-publishingplatform: ##Platform_Name##
-documentation: ug
---- 
-
-{% if page.publishingplatform == "aspnet-mvc" %}
-
 # Chart Title & Subtitle
 
 ## Title
@@ -165,4 +153,3 @@ You can change the SubTitle alignment to *Center*, *Far* and *Near* by using the
 {% endhighlight %}
 
 ![](Chart-Title_images/Chart-Title_img4.png)
-{% endif %}
