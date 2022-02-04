@@ -1,0 +1,5 @@
+ @Html.EJS().Chart("container").Series(series =>
+           {
+               series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).Width(2).XName("x").YName("y").DataSource(ViewBag.dataSource).Name("Germany").Add();
+
+           }).Title("Inflation - Consumer Price").UseGroupingSeparator(true).Render()

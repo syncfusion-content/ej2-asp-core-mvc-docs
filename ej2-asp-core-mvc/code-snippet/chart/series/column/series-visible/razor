@@ -1,0 +1,39 @@
+@Html.EJS().Chart("container").Series(series =>
+                        {
+
+                            series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+                            .XName("x")
+                            .YName("yValue").Fill("orange").DataSource(ViewBag.dataSource).Name("Gold").Width(2).Add();
+                            series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+                            .XName("x").YName("yValue1").Fill("grey").DataSource(ViewBag.dataSource)
+                            .Name("Silver").Width(2).Add();
+                            series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+                            .XName("x")
+                            .YName("yValue2").Fill("red").DataSource(ViewBag.dataSource).Name("Brozen").Width(2).Add();
+                        }).PrimaryXAxis(px => px.Interval(1)
+                        .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+                        ).Tooltip(tt => tt.Enable(true)).LegendSettings(lg => lg.Visible(true)).Title("Olympic Medal Counts - RIO").ChartMouseClick("chartClick").Render()
+<script>
+    var previousTarget = null;
+    var chartClick = function (args) {
+        var flag = false;
+        if (((args.target).indexOf('chart_legend_text') > -1) || ((args.target).indexOf('chart_legend_shape') > -1) ||
+            (args.target).indexOf('chart_legend_shape_marker_') && !(args.target).indexOf('chart_legend_element')) {
+            var ids = ((args.target).indexOf('chart_legend_text') > -1) ?
+                (args.target).split('chart_legend_text_')[1] : args.target.split('chart_legend_shape_marker_')[1] || args.target.split('chart_legend_shape_')[1];
+            var chart1 = document.getElementById("container").ej2_instances[0];
+            for (var i = 0; i < chart1.series.length; i++) {
+                chart1.series[i].visible = false;
+            }
+            if (ids == previousTarget) {
+                for (var j = 0; j < chart1.series.length; j++)
+                    chart1.series[j].visible = true;
+                chart1.series[ids].visible = false;
+                previousTarget = null;
+                flag = true;
+            }
+            if (!flag)
+                previousTarget = ids;
+        }
+    }
+</script>

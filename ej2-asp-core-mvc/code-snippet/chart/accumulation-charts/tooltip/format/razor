@@ -1,0 +1,13 @@
+@Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("xValue")
+                      .YName("yValue")
+                      .Name("Browser")
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                      .ExplodeIndex(0).Add();
+            })
+            .EnableSmartLabels(true)
+            .Title("Mobile Browser Statistics")
+            .Tooltip(tp => tp.Enable(true).Format("format: '${point.x} : <b>${point.y}</b>'"))
+            .LegendSettings(ls => ls.Visible(false)).Render()

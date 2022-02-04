@@ -1,0 +1,12 @@
+      @{
+        var value = new object[]{20, 50 };
+       }
+       <ejs-rangenavigator id="rangeNavigator" value="value">
+                <e-rangenavigator-tooltip enable="true"></e-rangenavigator-tooltip>
+                <e-rangenavigator-rangenavigatorseriescollection>
+                    <e-rangenavigator-rangenavigatorseries xName="y" yName="y1" dataSource="ViewBag.dataSource" type="Area" width=2>
+                    </e-rangenavigator-rangenavigatorseries>
+                </e-rangenavigator-rangenavigatorseriescollection>
+              <e-rangenavigator-navigatorborder color="green" width=4>
+                   </e-rangenavigator-navigatorborder>
+            </ejs-rangenavigator>

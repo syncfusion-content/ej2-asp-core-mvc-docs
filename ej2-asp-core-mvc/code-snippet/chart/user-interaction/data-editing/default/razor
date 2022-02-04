@@ -1,0 +1,20 @@
+@Html.EJS().Chart("container").Series(series =>
+           {
+
+               series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+               .Fill("orange")
+               .Marker(mr => mr.Visible(true).Width(10).Height(10))
+               .XName("xValue").YName("y").DataSource(ViewBag.dataSource).Name("Product A").Width(2).Add();
+
+               series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+               .Fill("darkblue")
+               .Marker(mr => mr.Visible(true).Width(10).Height(10))
+               .XName("xValue").YName("y1").DataSource(ViewBag.dataSource).Name("Product B").Width(2).Add();
+
+           }).PrimaryYAxis(px => px.Minimum(0).Maximum(100).Interval(20).LineStyle(ls => ls.Width(0)).MajorTickLines(mt => mt.Width(0)).LabelFormat("{value}%").Title("Sales")
+            ).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).MajorGridLines(mg => mg.Width(0)).LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.OnTicks).Minimum("-0.5").Maximum("6.5")
+            ).Tooltip(tr => tr.Enable(true)
+            ).ChartArea(area => area.Border(br=>br.Color("transparent"))
+            ).Tooltip(tt => tt.Enable(true)
+            ).LegendSettings(lg => lg.Visible(false)
+            ).Title("Sales Prediction of Products").Load("load").Render()

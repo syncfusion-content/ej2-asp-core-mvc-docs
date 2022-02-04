@@ -1,0 +1,21 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea).  
+   XName("x").
+   YName("y").
+   DataSource(ViewBag.dataSource)
+   .Add();
+
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea).   
+   XName("x").
+   YName("y1").
+   DataSource(ViewBag.dataSource)
+   .Add();
+
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingStepArea).   
+   XName("x").
+   YName("y2").
+   DataSource(ViewBag.dataSource)
+   .Add();
+   })
+  .Render()

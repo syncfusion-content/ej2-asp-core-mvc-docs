@@ -1,0 +1,9 @@
+ @(Html.EJS().RangeNavigator("container")
+                    .ValueType(Syncfusion.EJ2.Charts.RangeValueType.DateTime)
+                    .Minimum(10).
+                    .Maximum(400)
+                .Series(sr =>
+                {
+                    sr.XName("x").YName("y").DataSource(ViewBag.dataSource).Add();
+                }).Render()
+                )

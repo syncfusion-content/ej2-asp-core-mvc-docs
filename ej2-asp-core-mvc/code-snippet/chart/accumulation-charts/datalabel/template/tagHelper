@@ -1,0 +1,13 @@
+ @section ControlsSection{
+      <ejs-accumulationchart id="container" title="Mobile Browser Statistics" enableSmartLabels="true">
+                    <e-accumulationchart-legendsettings visible="false">
+                    </e-accumulationchart-legendsettings>
+                    <e-accumulation-series-collection>
+                        <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser">
+                            <e-accumulationseries-datalabel name="text" visible="true" position="Inside" 
+                                                   template="<div id='templateWrap' style='background-color:#bd18f9;border-radius: 3px; float: right;padding: 2px;line-height: 20px;text-align: center;'>"+ "<img src='sun_annotation.png' />" + "<div style='color:white; font-family:Roboto; font-style: medium; fontp-size:14px;float: right;padding: 2px;line-height: 20px;text-align: center;padding-right:6px'><span>${point.y}</span></div></div>">
+                            </e-accumulationseries-datalabel>
+                        </e-accumulation-series>
+                    </e-accumulation-series-collection>
+                </ejs-accumulationchart>
+ }

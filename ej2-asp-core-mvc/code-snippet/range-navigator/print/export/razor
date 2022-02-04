@@ -1,0 +1,17 @@
+ @(Html.EJS().RangeNavigator("container")
+                    .ValueType(Syncfusion.EJ2.Charts.RangeValueType.DateTime)
+                    .LabelFormat("MMM-yy")
+                .Series(sr =>
+                {
+                    sr.XName("x").YName("y").DataSource(ViewBag.dataSource).Add();
+                }).Render()
+                )
+
+@Html.EJS().Button("export").Content("Primary").IsPrimary(true).Render();
+
+<script>
+document.getElementById('export').onclick = function () {
+                var control = document.getElementById('export').ej2_instances[0];
+                control.export("PNG", "range");
+            };
+</script>

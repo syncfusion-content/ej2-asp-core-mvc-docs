@@ -1,0 +1,8 @@
+  <ejs-chart id="container" width="60%">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" high="high" low="low"
+                      type="@Syncfusion.EJ2.Charts.ChartSeriesType.Hilo">
+            </e-series>
+        </e-series-collection>
+</ejs-chart>

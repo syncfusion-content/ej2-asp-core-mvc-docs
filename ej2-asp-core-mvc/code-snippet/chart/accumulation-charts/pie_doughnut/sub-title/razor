@@ -1,0 +1,10 @@
+   
+                    @Html.EJS().AccumulationChart("container").Title("Oil and other liquid imports in USA").SubTitle("In the year 2014 - 2015").LegendSettings(ls => ls.Visible(false)).Series(series =>
+                        {
+                            series.DataLabel(dl => dl.Visible(true).Name("text"))
+                                  .XName("xValue")
+                                  .YName("yValue")
+                                  .Name("Browser")
+                                  .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                                  .DataSource(ViewBag.dataSource).Add();
+                        }).Render()

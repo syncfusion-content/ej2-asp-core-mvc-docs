@@ -1,0 +1,16 @@
+
+ @Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                  .XName("xValue")
+                  .YName("yValue")
+                  .Name("Profit")
+                  .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                  .DataLabel(ViewBag.datalabel)
+                  .EmptyPointSettings(ViewBag.emptypoint).Add();
+            })
+            .EnableSmartLabels(true)
+            .Title("Annual Product-Wise Profit Analysis")
+            .LegendSettings(ls => ls.Visible(false))
+            .Load("load").Render()
+

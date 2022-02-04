@@ -1,0 +1,40 @@
+   @Html.EJS().Chart("container").
+   PrimaryXAxis(px => px.Title("Years").
+   MajorGridLines(ViewBag.majorGridLines).
+       ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).
+       Skeleton("yMMM").ZoomFactor(0.2). ZoomPosition(0.6)).Series(series =>
+       {
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Area).
+           Border(ViewBag.border).Animation(ViewBag.animation).
+           DataSource("series1").
+           Name("Product X").
+           XName("x").
+           YName("y").Add();
+       }
+       ).ChartArea(area => area.Border(ViewBag.chartBorder)).
+       LegendSettings(legend => legend.Visible(false)).
+       PrimaryYAxis(py => py.Title("Profit ($)").
+       LineStyle(ViewBag.lineStyle).
+       MajorTickLines(ViewBag.majorTickLines).
+       RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.None)).
+       ZoomSettings(z => z.EnableMouseWheelZooming(true).
+       EnablePinchZooming(true).EnableSelectionZooming(true).
+       Mode(Syncfusion.EJ2.Charts.ZoomMode.X).EnablePan(true)).
+       Title("Sales History of Product X").Render()
+
+ <script>
+        var series1 = [];
+        var point1;
+        var value = 80;
+        var i;
+        for (i = 1; i < 500; i++) {
+            if (Math.random() > 0.5) {
+                value += Math.random();
+            }
+            else {
+                value -= Math.random();
+            }
+            point1 = { x: new Date(1950, i + 2, i), y: value.toFixed(1) };
+            series1.push(point1);
+        }
+    </script>

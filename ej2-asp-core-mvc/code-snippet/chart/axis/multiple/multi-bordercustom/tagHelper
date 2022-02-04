@@ -1,0 +1,20 @@
+<ejs-chart id="container" width="50%" loaded="onload">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="country" yName="gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" name="Product X"></e-series>
+        </e-series-collection>
+    </ejs-chart>
+<script>
+    onload = function (args) {
+        if (args.chart) {
+            args.chart.primaryXAxis.multiLevelLabels = [
+                {
+                    categories: [
+                        { start: -0.5, end: 3.5, text: 'Half Yearly 1' },
+                        { start: 3.5, end: 7.5, text: 'Half Yearly 2' },
+                    ],
+                    border: { type: 'Brace', color: 'Blue', width: 2 },
+              }];
+        }
+    }
+</script>

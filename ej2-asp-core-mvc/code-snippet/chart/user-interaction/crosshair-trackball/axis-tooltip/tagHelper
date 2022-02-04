@@ -1,0 +1,32 @@
+ @{
+ var tooltip = new { enable = true };
+}
+    <ejs-chart id="container" width="60%" load="window.onload">
+        <e-chart-primaryyaxis crosshairTooltip="tooltip"></e-chart-primaryyaxis>
+        <e-chart-crosshairsettings enable="true">
+        </e-chart-crosshairsettings>
+        <e-chart-primaryxaxis valueType="DateTime" crosshairTooltip="tooltip"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>
+<script>
+    window.onload = function (args) {
+        var series1 = [];
+        var point1;
+        var value = 40;
+        var i;
+        for (i = 1; i < 500; i++) {
+            if (Math.random() > .5) {
+                value += Math.random();
+            }
+            else {
+                value -= Math.random();
+            }
+            point1 = { x: new Date(1950, i + 2, i), y: value.toFixed(1) };
+            series1.push(point1);
+        }
+        args.chart.series[0].dataSource = series1;
+    }
+</script>

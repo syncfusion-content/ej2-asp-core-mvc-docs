@@ -1,0 +1,33 @@
+@Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("xValue")
+                      .YName("yValue")
+                      .Name("Browser")
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                      .ExplodeIndex(0).Add();
+            })
+            .EnableSmartLabels(true)
+            .ChartMouseClick("chartMouseClick")
+            .Title("Mobile Browser Statistics")
+            .LegendSettings(ls => ls.Visible(false)).Render()
+<div class="col-lg-3 property-section">
+            <table id="property" title="Properties" style="width: 100%">
+                <tr id="button-control" style="height: 50px">
+                    <td align='center'>
+                        <div>
+                           @Html.EJS().Button("togglebtn").IconCss("e-icons e-play-icon").Content("Print").CssClass("e-flat").Render()
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+ <script>
+            var chartMouseClick = function (args) {
+                if (args.target.indexOf('print') > -1) {
+                    chart.print();
+                }
+            };
+</script>

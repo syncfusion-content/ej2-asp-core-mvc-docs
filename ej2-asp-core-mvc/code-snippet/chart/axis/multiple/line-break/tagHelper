@@ -1,0 +1,10 @@
+<ejs-chart id="container" >
+               
+<e-chart-primaryxaxis title="Country" valueType="Category" enableTrim="true">
+    <e-majorgridlines width="0"></e-majorgridlines>
+</e-chart-primaryxaxis>
+<e-series-collection>
+    <e-series dataSource="ViewBag.dataSource" name="Germany" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Bar">
+    </e-series>
+</e-series-collection>
+</ejs-chart>

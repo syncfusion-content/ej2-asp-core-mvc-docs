@@ -1,0 +1,54 @@
+ <ejs-chart id="container" loaded="window.onChartLoaded">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+             <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="Tiger" width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+                        <e-series-marker>
+                            <e-series-datalabel visible="true" position="Top">
+                            </e-series-datalabel>
+                        </e-series-marker>
+                        <e-series-cornerradius bottomLeft="10" bottomRight="10" topLeft="10" topRight="10"></e-series-cornerradius>
+                    </e-series>
+        </e-series-collection>
+    </ejs-chart>
+    <script>
+    window.onChartLoaded = function (args) {
+            var count = 0;
+                args.chart.loaded = null;
+                setInterval(
+                    function () {
+                        if (count === 0) {
+                            args.chart.series[0].dataSource = [
+                                { x: 'Egg', y: 206, text: 'Egg' },
+                                { x: 'Fish', y: 123, text: 'Fish' },
+                                { x: 'Misc', y: 48, text: 'Misc' },
+                                { x: 'Tea', y: 240, text: 'Tea' },
+                                { x: 'Fruits', y: 170, text: 'Fruits' }
+                            ];
+                            args.chart.animate();
+                            count++;
+                        }
+                        else if (count === 1) {
+                            args.chart.series[0].dataSource = [
+                                { x: 'Egg', y: 206, text: 'Egg' },
+                                { x: 'Fish', y: 123, text: 'Fish' },
+                                { x: 'Misc', y: 48, text: 'Misc' },
+                                { x: 'Tea', y: 240, text: 'Tea' },
+                                { x: 'Fruits', y: 170, text: 'Fruits' }
+                            ];
+                            args.chart.animate();
+                            count++;
+                        }
+                        else if (count === 2) {
+                            args.chart.series[0].dataSource = [
+                                { x: 'Egg', y: 206, text: 'Egg' },
+                                { x: 'Fish', y: 123, text: 'Fish' },
+                                { x: 'Misc', y: 48, text: 'Misc' },
+                                { x: 'Tea', y: 240, text: 'Tea' },
+                                { x: 'Fruits', y: 170, text: 'Fruits' }
+                            ];
+                            args.chart.animate();
+                            count = 0;
+                        }
+                    }, 2000);
+        }
+    </script>

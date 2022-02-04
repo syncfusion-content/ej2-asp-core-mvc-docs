@@ -1,0 +1,19 @@
+
+           <ejs-stockchart id="stockchart" load="stockload" title="AAPL Stock Price" seriesType="@(new List<Object>() { })" exportType="@(new List<Object>() { })" indicatorType="@(new List<Object>() { })">
+                <e-stockchart-series-collection>
+                    <e-stockchart-series type='Candle' xName="x">
+                        <e-stockseries-stockcharttrendlines>
+                            <e-trendline type="MovingAverage" enableTooltip="false" fill="red" width="2"></e-trendline>
+                        </e-stockseries-stockcharttrendlines>
+                    </e-stockchart-series>
+                </e-stockchart-series-collection>
+            </ejs-stockchart>
+
+    <script src="~/financial-data.js"></script>
+    
+    <script>
+        var data = chartData;
+            function stockload(args) {
+                args.stockChart.series[0].dataSource = data;
+            }
+    </script>

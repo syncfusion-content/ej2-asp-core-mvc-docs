@@ -1,0 +1,26 @@
+
+
+          @{
+        var piecenter = new
+        {
+            x = "60%",
+            y = "60%"
+        };
+
+       } 
+             @Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataLabel(dl => dl.Visible(true).Name("text").Position(Syncfusion.EJ2.Charts.AccumulationLabelPosition.Inside).Font(ft => ft.FontWeight("600")))
+                      .XName("xValue")
+                      .YName("yValue")
+                      .Name("Browser")
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                      .Radius("70%")
+                      .DataSource(ViewBag.dataSource).Add();
+            })
+            .Center(piecenter)
+            .EnableSmartLabels(true)
+            .EnableAnimation(false)
+            .Title("Mobile Browser Statistics")
+            .LegendSettings(ls => ls.Visible(false))
+            .Tooltip(tp => tp.Enable(true)).Render()

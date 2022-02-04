@@ -1,0 +1,7 @@
+ <ejs-chart id="container" width="60%">
+        <e-chart-primaryxaxis valueType="Category" isIndexed="true"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="India" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+            <e-series dataSource="ViewBag.dataSource1" xName="x" yName="y" name="Aus" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+        </e-series-collection>
+    </ejs-chart>

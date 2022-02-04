@@ -1,0 +1,17 @@
+@Html.EJS().AccumulationChart("piecontainer").Series(series =>
+                                        {
+                                            series.DataSource(ViewBag.dataSource)
+                                                  .XName("xValue")
+                                                  .YName("yValue")
+                                                  .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                                                  .Radius("70%")
+                                                  .StartAngle(0)
+                                                  .EndAngle(360)
+                                                  .InnerRadius("0%")
+                                                  .Add();
+                                        }).EnableSmartLabels(false).PointClick("PointClick").Title("Income Tax").Render()
+<script>
+    var PointClick = function (args) {
+        document.getElementById("lbl").innerText = "X : " + args.point.x + "\nY : " + args.point.y;
+    }
+</script>

@@ -1,0 +1,11 @@
+  @{
+   var value = new object[]{20, 50 };
+}
+ <ejs-rangenavigator id="rangeNavigator" valueType="Double" value="value" >
+                <e-rangenavigator-majorgridlines color="blue" width=4 dashArray="5,5">
+                  </e-rangenavigator-majorgridlines>
+                <e-rangenavigator-rangenavigatorseriescollection>
+                    <e-rangenavigator-rangenavigatorseries xName="y" yName="y1" dataSource="ViewBag.dataSource" type="StepLine" width=2>
+                    </e-rangenavigator-rangenavigatorseries>
+                </e-rangenavigator-rangenavigatorseriescollection>
+</ejs-rangenavigator>

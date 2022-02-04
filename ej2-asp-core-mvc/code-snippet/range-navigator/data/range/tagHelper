@@ -1,0 +1,10 @@
+ 
+ @{
+    var value = new object[] { 20,50 };
+}
+ <ejs-rangenavigator id="rangeNavigator" valueType="Double" minimum=10 maximum=400 interval="10" value="value" >
+                <e-rangenavigator-rangenavigatorseriescollection>
+                    <e-rangenavigator-rangenavigatorseries xName="y" yName="y1" dataSource="ViewBag.dataSource" type="StepLine" width=2>
+                    </e-rangenavigator-rangenavigatorseries>
+                </e-rangenavigator-rangenavigatorseriescollection>
+</ejs-rangenavigator>

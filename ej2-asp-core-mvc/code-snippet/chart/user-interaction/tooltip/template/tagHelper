@@ -1,0 +1,18 @@
+  <ejs-chart id="container">
+        <e-chart-tooltipsettings enable="true" template="#Unemployment">
+        </e-chart-tooltipsettings>
+        <e-chart-legendsettings visible="false"></e-chart-legendsettings>
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Germany" xName="x" width="2" opacity="1" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+            </e-series>
+        </e-series-collection>
+  </ejs-chart>
+  <script id="Unemployment" type="text/x-template">
+    <div id='templateWrap'>
+        <table style="width:100%;  border: 1px solid black;">
+            <tr><th colspan="2" bgcolor="#00FFFF">Unemployment</th></tr>
+            <tr><td bgcolor="#00FFFF">${x}:</td><td bgcolor="#00FFFF">${y}</td></tr>
+        </table>
+    </div>
+</script>

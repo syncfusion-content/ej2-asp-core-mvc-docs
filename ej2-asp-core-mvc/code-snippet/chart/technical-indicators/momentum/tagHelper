@@ -1,0 +1,27 @@
+<ejs-chart id="container" title="AAPL - 2012-2017" load="window.onChartLoad">
+        <e-chart-primaryxaxis valueType="DateTime" intervalType="Months"></e-chart-primaryxaxis>
+        <e-chart-tooltipsettings enable="true" shared="true">
+        </e-chart-tooltipsettings>
+        <e-chart-legendsettings visible="false">
+        </e-chart-legendsettings>
+        <e-chart-axes>
+            <e-chart-axis name="secondary"
+                          opposedPosition=true rowIndex=0 
+                           minimum=30 maximum=110>
+            </e-chart-axis>
+        </e-chart-axes>
+        <e-series-collection>
+            <e-series xName="x" yName="y" low="low" high="high" close="close" volume="volume" open="open" width=2
+                      name="Apple Inc"
+                      type="@Syncfusion.EJ2.Charts.ChartSeriesType.Candle"></e-series>
+        </e-series-collection>
+        <e-indicators>
+            <e-indicator type="@Syncfusion.EJ2.Charts.TechnicalIndicators.Momentum" field="Close" seriesName="Apple Inc" fill="#6063ff" yAxisName="secondary"
+                         period=3>
+            </e-indicator>
+        </e-indicators>
+    </ejs-chart>
+<script src="chart/technical-indicators/momentum/financial-data.js"></script>
+ window.onChartLoad = function (args) {
+            args.chart.series[0].dataSource = window.chartData;
+        }

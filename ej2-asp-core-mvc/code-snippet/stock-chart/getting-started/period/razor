@@ -1,0 +1,40 @@
+
+            @(Html.EJS().StockChart("container").Load("stockload").Title("AAPL Stock Price").ExportType(new List<Object>() { }).SeriesType(new List<Object>() { }).IndicatorType(new List<Object>() { }).TrendlineType(new List<Object>() { })
+                .PrimaryXAxis(xaxis =>xaxis.MajorGridLines(mg=>mg.Color("transparent")
+                ))
+                .PrimaryYAxis(yaxis =>yaxis.MajorTickLines(mt=>mt.Color("transparent").Width(0)
+               ).LineStyle(ls=>ls.Color("transparent")).Crosshair(cr => cr.Enable(true)))
+
+                                                                .Series(sr =>
+                                                                {
+                                                                    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).XName("X").YName("Y").Name("google").DataSource("data").Add();
+                                                                })
+      .Periods(pr =>
+         {
+            pr.IntervalType(Syncfusion.EJ2.Charts.RangeIntervalType.Minutes).Interval(1).Text("1M").Add();
+            pr.IntervalType(Syncfusion.EJ2.Charts.RangeIntervalType.Minutes).Interval(30).Text("30M").Add();
+            pr.IntervalType(Syncfusion.EJ2.Charts.RangeIntervalType.Hours).Interval(1).Text("1H").Add();
+            pr.IntervalType(Syncfusion.EJ2.Charts.RangeIntervalType.Hours).Interval(12).Text("12H").Selected(true).Add();
+           }
+        )
+                                                                .Render())
+
+    <script>
+        var series1 = [];
+        var point1;
+        var value = 80;
+        var i;
+
+        for (i = 1; i < 500; i++) {
+            if (Math.random() > .5) {
+                value += Math.random();
+            } else {
+                value -= Math.random();
+            }
+            point1 = { x: new Date(2000, 1, 1, 0, i), y: value.toFixed(1) };
+            series1.push(point1);
+        }
+
+        var data = series1;
+      
+    </script>

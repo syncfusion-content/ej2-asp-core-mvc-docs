@@ -1,0 +1,14 @@
+@Html.EJS().BulletChart("container")
+                        .Title("Revenue")
+                        .Tooltip(tp => tp.Enable(true))
+                        .ValueField("value")
+                        .TargetField("target")
+                        .Ranges(rn =>
+                        {
+                            rn.End(100).Add();
+                            rn.End(200).Add();
+                            rn.End(300).Add();
+                        })
+                        .Minimum(0).Maximum(300).Interval(50)
+                        .DataSource(ViewBag.dataSource)
+                        .Render()

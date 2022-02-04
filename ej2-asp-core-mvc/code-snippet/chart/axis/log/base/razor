@@ -1,0 +1,7 @@
+
+      @Html.EJS().Charts("container").Series(series =>
+       {
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).Width(2).XName("xValue").YName("yValue").DataSource(ViewBag.dataSource).Name("Germany").Add();           
+       }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).LabelFormat("y")
+       ).PrimaryYAxis(py => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Logarithmic).LabelFormat("{value}%").LogBase(8)
+       ).Render()

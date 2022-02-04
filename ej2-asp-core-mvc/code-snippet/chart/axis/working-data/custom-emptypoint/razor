@@ -1,0 +1,23 @@
+
+    @(Html.EJS().Chart("container").ChartArea(ca => ca.Border(ViewBag.border))
+        .Series(sr =>
+        {
+            sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+                .Name("Profit")
+                .XName("xValue")
+                .YName("yValue")
+                .Marker(ViewBag.marker)
+                .Width(2)
+                .EmptyPointSettings(ViewBag.emptyPointSettings)
+                .DataSource(ViewBag.dataSource).Add();
+        })
+          .PrimaryXAxis(xaxis =>
+             xaxis.Title("Product")
+                .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+                .Interval(1)
+          )
+          .Title("Annual Product-Wise Profit Analysis")
+          .Tooltip(tp => tp.Enable(true))
+          .LegendSettings(lg => lg.Visible(false))
+          .Load("load").Render()
+    )

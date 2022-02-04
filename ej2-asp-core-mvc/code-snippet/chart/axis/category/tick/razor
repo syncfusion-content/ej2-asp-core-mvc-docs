@@ -1,0 +1,10 @@
+@Html.EJS().Chart("container").PrimaryXAxis(px => px.Title("Years").
+                       ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+                       .MajorTickLines(mg => mg.Color("blue").Width(2))).Series(series =>
+                       {
+                           series.Type(
+              Syncfusion.EJ2.Charts.ChartSeriesType.Column
+          ).DataSource(ViewBag.dataSource).Name("Product X").XName("x").YName("yValue").Add();
+                       }
+                       ).PrimaryYAxis(py => py.Title("Profit ($)")
+                       .MajorTickLines(mg => mg.Color("blue").Width(2))).Title("Sales History of Product X").Render()

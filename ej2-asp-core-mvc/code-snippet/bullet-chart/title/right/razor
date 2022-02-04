@@ -1,0 +1,16 @@
+@Html.EJS().BulletChart("container")
+                        .Title("Sales Rate in dollars")
+                        .Subtitle("(in dollars $)")
+                        .LabelFormat("${value}")
+                        .TargetField("target")
+                        .ValueField("value")
+                        .TitlePosition(Syncfusion.EJ2.Charts.TextPosition.Right)
+                        .Ranges(rn =>
+                        {
+                            rn.End(35).Add();
+                            rn.End(50).Add();
+                            rn.End(100).Add();
+                        })
+                        .Minimum(0).Maximum(100).Interval(20)
+                        .DataSource(ViewBag.dataSource)
+                        .Render()

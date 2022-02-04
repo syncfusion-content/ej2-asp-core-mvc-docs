@@ -1,0 +1,17 @@
+
+            @(Html.EJS().Chart("container").Series(series =>
+       {
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("xValue").YName("yValue").DataSource(ViewBag.dataSource).Name("Age 0-14").Add();
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("xValue").YName("yValue1").DataSource(ViewBag.dataSource).Name("Age 15-64").Add();
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("xValue").YName("yValue2").DataSource(ViewBag.dataSource).Name("Age 65 & Above").Add();
+
+       }).PrimaryXAxis(px => px.Title("Countries").Interval(1).
+       LabelIntersectAction(Syncfusion.EJ2.Charts.LabelIntersectAction.Rotate90).
+       EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift).
+       ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).
+       PrimaryYAxis(py => py.LabelFormat("{value}%").
+       Title("Distribution").
+       Interval(20)).
+       Title("Age Distribution by Country").
+       SelectionMode(Syncfusion.EJ2.Charts.SelectionMode.Series).Render()     
+    )

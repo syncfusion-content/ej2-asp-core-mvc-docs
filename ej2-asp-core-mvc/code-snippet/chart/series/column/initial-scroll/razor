@@ -1,0 +1,17 @@
+@Html.EJS().Chart("container").Series(series =>
+                               {
+                                   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).Width(2).XName("xValue")
+                                   .Marker(mr => mr.Visible(true).Width(10).Height(10)).YName("yValue")
+                                   .DataSource(ViewBag.dataSource).Name("Germany").Add();
+                               }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+                               .IntervalType(Syncfusion.EJ2.Charts.IntervalType.Years)
+                               .EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift).LabelFormat("y").ZoomFactor(0.3)
+                             ).PrimaryYAxis(py => py.LabelFormat("{value}%")
+                             .RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.None)
+                             .Interval(20).Minimum(0).Maximum(100)
+                             ).Title("Inflation - Consumer Price").Load("load").ZoomSettings(zm=>zm.EnableMouseWheelZooming(true).EnablePinchZooming(true).EnableSelectionZooming(true).EnableDeferredZooming(true).EnableScrollbar(true)).Render()
+<script>
+    var load = function (args) {
+        args.chart.zoomModule.isZoomed = true;
+    }
+</script>

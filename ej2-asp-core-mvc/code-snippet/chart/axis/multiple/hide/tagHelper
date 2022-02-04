@@ -1,0 +1,7 @@
+<ejs-chart id="container" title="Olympic Medals" width="650">
+        <e-chart-primaryxaxis valueType="Category" labelIntersectAction="Hide">
+        </e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+        </e-series-collection>
+    </ejs-chart>

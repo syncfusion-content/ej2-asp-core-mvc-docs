@@ -1,0 +1,15 @@
+ @(Html.EJS().RangeNavigator("container")
+                    .ValueType(Syncfusion.EJ2.Charts.RangeValueType.DateTime)
+                    .LabelFormat("MMM-yy")
+                .Series(sr =>
+                {
+                    sr.XName("x").YName("y").DataSource(ViewBag.dataSource).Add();
+                }).Render()
+                )
+@Html.EJS().Button("print").Content("Primary").IsPrimary(true).Render();
+<script>
+document.getElementById('print').onclick = function () {
+                var chart = document.getElementById('print-container').ej2_instances[0];
+                chart.print();
+            };
+</script>

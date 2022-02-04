@@ -1,0 +1,26 @@
+<ejs-chart id="dataEditingContainer" title="Sales Prediction of Products" load="load" >
+                <e-chart-tooltipsettings enable="true">
+                </e-chart-tooltipsettings>
+                <e-chart-chartarea>
+                    <e-chartarea-border width="0"></e-chartarea-border>
+                </e-chart-chartarea>
+                <e-chart-primaryxaxis valueType="Category" minimum=-0.5 maximum=6.5 labelPlacement="OnTicks">
+                    <e-majorgridlines width="0"></e-majorgridlines>
+                </e-chart-primaryxaxis>
+                <e-chart-primaryyaxis title="Sales" labelFormat="{value}%" minimum=0 maximum=100 interval=20
+                                      rangePadding="None">
+                    <e-majorticklines width="0"></e-majorticklines>
+                    <e-minorticklines width="0"></e-minorticklines>
+                    <e-linestyle width="0"></e-linestyle>
+                </e-chart-primaryyaxis>
+                <e-series-collection>
+                    <e-series dataSource="ViewBag.dataSource" name="Germany" xName="xValue" width="2" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" fill="orange">
+                        <e-series-marker visible="true" width="10" height="10">
+                        </e-series-marker>
+                    </e-series>
+                    <e-series dataSource="ViewBag.dataSource" xName="xValue" width="2" yName="y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line" fill="darkblue" name="London">
+                        <e-series-marker visible="true" width="10" height="10">
+                        </e-series-marker>
+                    </e-series>
+                </e-series-collection>
+            </ejs-chart>

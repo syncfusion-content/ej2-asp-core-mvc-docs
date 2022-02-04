@@ -1,0 +1,12 @@
+@Html.EJS().BulletChart("container")
+                        .Title("Sales Rate")
+                        .ValueField("value")
+                        .Ranges(rn =>
+                        {
+                            rn.End(35).Add();
+                            rn.End(50).Add();
+                            rn.End(100).Add();
+                        })
+                        .Minimum(0).Maximum(100).Interval(20)
+                        .DataSource(ViewBag.dataSource)
+                        .Render()

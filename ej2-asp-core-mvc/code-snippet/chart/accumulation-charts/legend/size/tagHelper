@@ -1,0 +1,11 @@
+
+      <ejs-accumulationchart id="container" title="Mobile Browser Statistics">
+                    <e-accumulationchart-legendsettings visible="true" height="28%" width="44%" >
+                        <e-legendsettings-border color="pink" width="1"></e-legendsettings-border>
+                    </e-accumulationchart-legendsettings>
+                    <e-accumulation-series-collection>
+                        <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser">
+                        </e-accumulation-series>
+                    </e-accumulation-series-collection>
+       </ejs-accumulationchart>
+ 

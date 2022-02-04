@@ -1,0 +1,24 @@
+
+@Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("xValue")
+                      .YName("yValue")
+                      .Name("Browser")
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                      .ExplodeIndex(0).Add();
+            })
+            .EnableSmartLabels(true)
+            .Title("Mobile Browser Statistics")
+            .Tooltip(tp => tp.Enable(true))
+            .PointRender("pointRender")
+            .LegendSettings(ls => ls.Visible(false)).Render()
+
+<script>
+            var pointRender = function (args) {
+                if (args.point.index === 3) {
+              args.text = args.point.xValue + '' + ':' + args.point.yValue + '' + ' ' +'customtext';
+              args.textStyle.color = '#f48042';
+        }
+            };
+</script>

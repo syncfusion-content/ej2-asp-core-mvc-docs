@@ -1,0 +1,20 @@
+@(Html.EJS().AccumulationChart("container")
+                    .Series(sr =>
+                    {
+                        sr.Type(Syncfusion.EJ2.Charts.AccumulationType.Funnel)
+                               .XName("xValue")
+                               .YName("yValue")
+                               .DataLabel(dl => dl.Visible(true).Name("text").Position(Syncfusion.EJ2.Charts.AccumulationLabelPosition.Inside).Font(ft => ft.FontWeight("600")))
+                               .Width("60%")
+                               .Height("80%")
+                               .NeckWidth("15%")
+                               .GapRatio(0.03)
+                               .NeckHeight("18%")
+                               .Explode(true)
+                               .DataSource(ViewBag.dataSource).Add();
+                    })
+                    .EnableSmartLabels(true)
+                     .Tooltip(tp => tp.Enable(true).Format("${point.x} <br/>Composition: <b>${point.y}%</b>"))
+                     .LegendSettings(leg => leg.Visible(false))
+                     .Load("load").Resized("resize")
+                     .Title("Top population countries in the world 2017").Render()

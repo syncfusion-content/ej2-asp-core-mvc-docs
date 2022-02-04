@@ -1,0 +1,23 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Area).  
+   XName("x").
+   YName("yValue").
+   DataSource(ViewBag.dataSource).
+   Fill("FF00FF").
+   DashArray("10, 5").
+   Name("Gold").
+   .Add();
+
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Area).   
+   XName("x").
+   YName("yValue").
+   DataSource(ViewBag.dataSource1).
+   Fill("FFF0FF").
+   DashArray("20, 5").
+   Name("Silver").
+   .Add();
+   }).
+   PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+   .IsIndexed(true)).
+   Title("Olympic Medal Counts - RIO").Render()

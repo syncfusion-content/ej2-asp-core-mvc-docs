@@ -1,0 +1,7 @@
+ <ejs-chart id="lineContainer" title="Olympic Medal Counts - RIO">
+                <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+                <e-series-collection>
+                    <e-series dataSource="ViewBag.dataSource" xName='x' yName='yValue' 
+                    name='Gold' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+               </e-series-collection>
+</ejs-chart>

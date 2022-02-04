@@ -1,0 +1,22 @@
+ @Html.EJS().Chart("container-vertical").Series(series =>
+       {
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).XName("x").YName("yValue").Marker(ViewBag.marker)
+.DataSource(ViewBag.dataSource ).Name("John").Width(2).Add();
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).XName("x").YName("yValue1").Marker(ViewBag.marker)
+.DataSource(ViewBag.dataSource ).Name("Andrew").Width(2).Add();
+           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).XName("x").YName("yValue2").Marker(ViewBag.marker)
+.DataSource(ViewBag.dataSource).Name("Thomas").Width(2).Add();})\
+.PrimaryXAxis(px => px.EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
+.MajorGridLines(ViewBag.majorGridLines).LineStyle(ViewBag.lineStyle)
+.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+.Skeleton("y"))
+.PrimaryYAxis(py => py.Title("Revenue")
+.MajorTickLines(ViewBag.majorTickLines)
+.LineStyle(ViewBag.lineStyle)
+.Minimum(10)
+.Maximum(80)
+.LabelFormat("{value}M"))
+.ChartArea(area => area.Border(ViewBag.ChartBorder))
+.Tooltip(tl =>tl.Enable(true).Shared(true))
+.Crosshair(cr => cr.Enable(true).LineType(Syncfusion.EJ2.Charts.LineType.Vertical))
+.Title("Average Sales per Person").Render()

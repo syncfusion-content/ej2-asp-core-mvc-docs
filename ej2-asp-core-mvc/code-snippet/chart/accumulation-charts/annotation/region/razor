@@ -1,0 +1,19 @@
+@Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("xValue")
+                      .YName("yValue")
+                      .Name("Browser")
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                      .ExplodeIndex(0).Add();
+            })
+            .EnableSmartLabels(true)
+            .Title("Mobile Browser Statistics")
+            . Annotations(an => {an
+              .X("150")
+              .Y("150")
+              .CoordinateUnits(Syncfusion.EJ2.Charts.Units.Pixel)
+              .Regions(Syncfusion.EJ2.Charts.Regions.Chart)
+              .Content(ViewBag.content).Add();
+             }).
+            .LegendSettings(ls => ls.Visible(false)).Render()

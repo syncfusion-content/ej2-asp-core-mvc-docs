@@ -1,0 +1,19 @@
+<script src="~/datasource.js"></script>
+
+@(Html.EJS().StockChart("container").Load("load").Title("Unemployment Rates 1975-2010")
+        .PrimaryXAxis(xaxis => xaxis.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime))
+            .Series(sr =>
+            {
+                sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).DataSource("data").Name("China").Add();
+            })
+            .Tooltip(tooltip => tooltip.Enable(true))
+        .LegendSettings(legend => legend.Visible(true).Position("Top"))
+        .Render())
+
+<script>
+    var data = window.chartData;
+    var load = function (args) {
+        args.stockChart.indicatorType = [];
+        args.stockChart.trendlineType = [];
+    }
+</script>

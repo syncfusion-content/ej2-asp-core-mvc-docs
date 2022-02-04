@@ -1,0 +1,6 @@
+ <ejs-chart id="container" width="50%">
+        <e-chart-primaryxaxis valueType="Category" edgeLabelPlacement="Shift"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="country" yName="gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" name="Product X"></e-series>
+        </e-series-collection>
+    </ejs-chart>

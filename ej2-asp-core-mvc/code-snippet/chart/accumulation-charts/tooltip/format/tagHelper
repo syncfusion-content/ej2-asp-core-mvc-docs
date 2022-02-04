@@ -1,0 +1,11 @@
+
+      <ejs-accumulationchart id="container" title="Mobile Browser Statistics">
+         <e-accumulationchart-tooltipsettings enable="true" Format="format: '${point.x} : <b>${point.y}</b>'"></e-accumulationchart-tooltipsettings>
+            <e-accumulationchart-legendsettings visible="false">
+            </e-accumulationchart-legendsettings>
+            <e-accumulation-series-collection>
+                <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser">
+                </e-accumulation-series>
+            </e-accumulation-series-collection>
+        </ejs-accumulationchart>
+ 

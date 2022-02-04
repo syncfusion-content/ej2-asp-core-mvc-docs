@@ -1,0 +1,16 @@
+ <ejs-chart id="container" title="AAPL - 2012-2017 load="window.onChartLoad">
+        <e-chart-primaryxaxis valueType="DateTime" intervalType="Months"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series xName="x" yName="y" low="low" high="high" close="close" volume="volume" open="open"
+                      type="@Syncfusion.EJ2.Charts.ChartSeriesType.Candle"></e-series>
+        </e-series-collection>
+        <e-indicators>
+            <e-indicator type="@Syncfusion.EJ2.Charts.TechnicalIndicators.BollingerBands" field="Close" seriesName="Apple Inc" yAxisName="secondary" fill="#6063ff"
+                         period=3>
+            </e-indicator>
+        </e-indicators>
+    </ejs-chart>
+<script src="chart/technical-indicators/bollinger/financial-data.js"></script>
+ window.onChartLoad = function (args) {
+            args.chart.series[0].dataSource = window.chartData;
+        }

@@ -1,0 +1,10 @@
+<ejs-bulletchart id="bulletgraph" height="400" title="Profit in %" minimum="0" maximum="20" interval="5" categoryField="category" valueField="value" targetField="comparativeMeasureValue" dataSource="ViewBag.dataSource">
+        <e-bullet-range-collection>
+            <e-bullet-range end="5"></e-bullet-range>
+            <e-bullet-range end="15"></e-bullet-range>
+            <e-bullet-range end="20"></e-bullet-range>
+        </e-bullet-range-collection>
+        <e-bulletchart-datalabel enable="true">
+            <e-bulletchart-labelstyle color="yellow" size="20"></e-bulletchart-labelstyle>
+        </e-bulletchart-datalabel>
+</ejs-bulletchart>

@@ -1,0 +1,52 @@
+
+        @(Html.EJS().Chart("container").Width("100%").Load("load").Title("Network Load")
+               .ScrollEnd("scrollEnd")
+               .LegendSettings(le => le.Visible(false))
+               .PrimaryXAxis(px => px.ScrollbarSettings(scroll => scroll.Enable(true).PointsLength(1000)).Title("Day").ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift).Skeleton("yMMM").SkeletonType(Syncfusion.EJ2.Charts.SkeletonType.Date))
+               .PrimaryYAxis(py => py.Title("Server Load").LabelFormat("{value}MB")).
+               Series(sr => sr.DataSource("GetDateTimeData(new Date(2009, 0, 1), new Date(2009, 8, 1))")
+               .XName("x").YName("y").Name("Server Load").Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).Animation(an => an.Enable(false)).Add()).
+               Tooltip(tl => tl.Enable(true).Shared(true)).Render()
+        )
+        
+<script>
+ var intl = new ejs.base.Internationalization();
+ var chart;
+  var load = function (args) {
+            chart = args.chart;
+            args.chart.primaryXAxis.scrollbarSettings.range = {
+                minimum: new Date(2009, 0, 1),
+                maximum: new Date(2014, 0, 1)
+            };
+        }
+  function GetDateTimeData(start, end) {
+            var series1 = [];
+            var date;
+            var value = 30;
+            var option = {
+                skeleton: 'full',
+                type: 'dateTime'
+            };
+            var dateParser = intl.getDateParser(option);
+            var dateFormatter = intl.getDateFormat(option);
+            for (var i = 0; start <= end; i++) {
+                date = Date.parse(dateParser(dateFormatter(start)));
+                if (Math.random() > .5) {
+                    value += (Math.random() * 10 - 5);
+                }
+                else {
+                    value -= (Math.random() * 10 - 5);
+                }
+                if (value < 0) {
+                    value = getRandomInt(20, 40);
+                }
+                var point1 = { x: new Date(date), y: Math.round(value) };
+                new Date(start.setDate(start.getDate() + 1));
+                series1.push(point1);
+            }
+            return series1;
+        }
+    function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+</script>

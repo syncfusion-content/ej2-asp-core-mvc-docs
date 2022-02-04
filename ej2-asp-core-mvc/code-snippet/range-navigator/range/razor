@@ -1,0 +1,9 @@
+ @(Html.EJS().RangeNavigator("container")
+                    .ValueType(Syncfusion.EJ2.Charts.RangeValueType.DateTime)
+                    .LabelFormat("MMM-yy")
+                    .Value(ViewBag.range)
+                .Series(sr =>
+                {
+                    sr.XName("x").YName("y").DataSource(ViewBag.dataSource).Add();
+                }).Render()
+                )

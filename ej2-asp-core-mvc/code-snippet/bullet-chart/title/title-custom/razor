@@ -1,0 +1,19 @@
+@Html.EJS().BulletChart("container")
+                        .Title("Sales Rate in dollars")
+                        .Subtitle("(in dollars $)")
+                        .LabelFormat("${value}")
+                        .TargetField("target")
+                        .ValueField("value")
+                        .TitleStyle(ts =>
+                        {
+                            ts.Size("22px").Color("red").FontFamily("cursive").FontWeight("Bold).Add();
+                        })
+                        .Ranges(rn =>
+                        {
+                            rn.End(35).Add();
+                            rn.End(50).Add();
+                            rn.End(100).Add();
+                        })
+                        .Minimum(0).Maximum(100).Interval(20)
+                        .DataSource(ViewBag.dataSource)
+                        .Render()

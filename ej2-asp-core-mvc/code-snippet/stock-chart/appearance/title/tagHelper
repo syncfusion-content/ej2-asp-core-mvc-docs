@@ -1,0 +1,16 @@
+
+
+            <ejs-stockchart id="stockchart" load="stockload" title="AAPL Stock Price">
+                <e-stockchart-series-collection>
+                    <e-stockchart-series type='Candle' xName="x"> </e-stockchart-series>
+                </e-stockchart-series-collection>
+                <e-stockchart-titlestyle fontFamily="Arial" fontStyle="italic" fontWeight="regular" size="20px" color="#E27F2D"></e-stockchart-titlestyle>
+            </ejs-stockchart>
+
+    <script src="~/financial-data.js"></script>
+    <script>
+        var data = chartData;
+        function stockload(args) {
+            args.stockChart.series[0].dataSource = data;
+        }
+    </script>

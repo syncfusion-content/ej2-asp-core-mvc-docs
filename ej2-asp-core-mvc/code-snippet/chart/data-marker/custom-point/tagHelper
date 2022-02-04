@@ -1,0 +1,19 @@
+ <ejs-chart id="container" width="60%" pointRender="pointRender">
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+                      type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+                <e-series-marker visible="true" width="10" height="10">
+                </e-series-marker>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>
+<script>
+    pointRender= function(args){
+        if (args.point.index === 3) {
+            args.fill = 'red',
+            args.width = 20;
+            args.height = 20;
+            args.shape = 'Diamond'
+        }
+    }
+</script>

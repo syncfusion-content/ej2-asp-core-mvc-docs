@@ -1,0 +1,8 @@
+<ejs-chart id="container" title="Inflation - Consumer Price" width="60%">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Germany" xName="month" width="2" opacity="1" yName="sales" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+                <e-series-emptypointsettings fill="#e6e6e6" mode="@Syncfusion.EJ2.Charts.EmptyPointMode.Average"></e-series-emptypointsettings>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

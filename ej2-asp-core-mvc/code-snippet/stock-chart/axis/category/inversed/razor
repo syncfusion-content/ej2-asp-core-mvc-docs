@@ -1,0 +1,12 @@
+
+            @Html.EJS().StockChart("container").Title("AAPL Stock Price")
+                .PrimaryXAxis(xaxis =>xaxis.IsInversed(true))..PrimaryYAxis(yaxis =>yaxis.IsInversed(true))
+                                                                .Series(sr =>
+                                                                {
+                                                                    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).DataSource("data").Add();
+                                                                })
+                                                                .Render()
+    <script src="~/financial-data.js"></script>
+    <script>
+        var data = window.chartData;
+    </script>

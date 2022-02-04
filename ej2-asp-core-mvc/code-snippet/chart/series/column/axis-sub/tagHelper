@@ -1,0 +1,18 @@
+ <ejs-chart id="container" title="Sales History of Product X" load="load">
+            <e-chart-margin left="40"></e-chart-margin>
+            <e-chart-annotations>
+                <e-chart-annotation content="<div id=text><b>Rate</b></div>" coordinateUnits="Pixel" verticalAlignment="Top" x="30" y="236" region="Chart">
+                </e-chart-annotation>
+            </e-chart-annotations>
+            <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+            <e-chart-primaryyaxis title="m3/min"></e-chart-primaryyaxis>
+            <e-series-collection>
+                <e-series name="Product X" xName="xValue" yName="yValue" 
+              type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line"></e-series>
+            </e-series-collection>
+        </ejs-chart>
+<style>
+    #text{
+        transform: rotate(-90deg);
+    }
+</style>

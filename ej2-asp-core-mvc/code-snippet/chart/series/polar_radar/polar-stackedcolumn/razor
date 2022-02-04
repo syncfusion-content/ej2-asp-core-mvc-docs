@@ -1,0 +1,48 @@
+@(Html.EJS().Chart("container")
+    .Series(sr =>
+    {
+        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Polar)
+            .DrawType(Syncfusion.EJ2.Charts.ChartDrawType.StackingColumn)
+            .Name("2013")
+            .XName("x")
+            .YName("y")
+            .Width(2)
+            .DataSource(ViewBag.dataSource).Add();
+        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Polar)
+            .DrawType(Syncfusion.EJ2.Charts.ChartDrawType.StackingColumn)
+            .Name("2014")
+            .XName("x")
+            .YName("y1")
+            .Width(2)
+            .DataSource(ViewBag.dataSource).Add();
+        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Polar)
+            .DrawType(Syncfusion.EJ2.Charts.ChartDrawType.StackingColumn)
+            .Name("2015")
+            .XName("x")
+            .YName("y2")
+            .Width(2)
+            .DataSource(ViewBag.dataSource).Add();
+        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Polar)
+          .DrawType(Syncfusion.EJ2.Charts.ChartDrawType.StackingColumn)
+          .Name("2016")
+          .XName("x")
+          .YName("y3")
+          .Width(2)
+          .DataSource(ViewBag.dataSource).Add();
+    })
+      .PrimaryXAxis(xaxis =>
+         xaxis.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+             .LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.OnTicks)
+             .Interval(1)
+             .Coefficient(100)
+      )
+      .PrimaryYAxis(yaxis =>
+          yaxis.LabelFormat("{value}M")
+                 .Interval(5000)
+                 .Minimum(20000)
+                 .Maximum(0)
+      )
+      .Title("GDP, Current Prices (in Billions)")
+      .Tooltip(tp => tp.Enable(true))
+      .Load("load").Render()
+)

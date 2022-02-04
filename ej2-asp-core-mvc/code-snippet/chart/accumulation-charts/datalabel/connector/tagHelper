@@ -1,0 +1,15 @@
+
+      <ejs-accumulationchart id="container" title="Mobile Browser Statistics" enableSmartLabels="true">
+                    <e-accumulationchart-legendsettings visible="false">
+                    </e-accumulationchart-legendsettings>
+                     <e-accumulation-series-collection>
+                          <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser">
+                            <e-accumulationseries-datalabel name="text" visible="true" position="Outside" >
+                                <e-connectorstyle color="#f4429e" length="50px" width="2" type="Curve" dashArray="5,3">
+                                    </e-connectorstyle>
+                            </e-accumulationseries-datalabel>
+                        </e-accumulation-series>
+                    </e-accumulation-series-collection>
+                   
+                </ejs-accumulationchart>
+ 

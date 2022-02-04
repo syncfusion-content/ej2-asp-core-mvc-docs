@@ -1,0 +1,27 @@
+<button id="add">Add</button>
+<button id="remove">Remove</button>
+        <ejs-chart id="container" title="Sales History of Product X" >
+            <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+            <e-chart-primaryyaxis title="Profit ($)"></e-chart-primaryyaxis>
+            <e-series-collection>
+                <e-series name="Product X" dataSource="ViewBag.dataSource" xName="x" yName="yValue"
+                          type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"
+                         ></e-series>
+            </e-series-collection>
+        </ejs-chart>
+<script>
+    document.getElementById("add").onclick = function () {
+        var chart = document.getElementById("container").ej2_instances[0];
+        chart.addSeries([{
+            type: 'Column',
+            dataSource: [{ x: 'John', y: 11000 }, { x: 'Jake', y: 16000 }, { x: 'Peter', y: 19000 },
+            { x: 'James', y: 12000 }, { x: 'Mary', y: 10700 }],
+            xName: 'x', width: 2,
+            yName: 'y'
+        }]);
+    };
+    document.getElementById("remove").onclick = function () {
+        var chart = document.getElementById("container").ej2_instances[0];
+        chart.removeSeries(1);
+    }
+</script>

@@ -1,0 +1,35 @@
+@Html.EJS().Chart("container").PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).MajorGridLines(mg => mg.Width(0))
+                       .Interval(1)
+                ).PrimaryYAxis(py => py.LabelStyle(ls => ls.Color("transparent")).LineStyle(ls => ls.Width(0)).MajorTickLines(mt => mt.Width(0)).MajorGridLines(mg => mg.Width(0)).MinorGridLines(mg => mg.Width(0))
+                ).ChartArea(area => area.Border(br => br.Width(0))).Series(series =>
+                {
+                    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("x").YName("y")
+                    .Width(2).ColumnWidth(0.7).ColumnSpacing(0.1).Name("USA Total").GroupName("USA")
+                    .Marker(marker => marker.DataLabel(label => label.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top)
+                    .Font(font => font.FontWeight("600").Color("#FFFFFF")))).DataSource(ViewBag.data).Add();
+
+                    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("x").YName("y1")
+                    .Width(2).ColumnWidth(0.5).Opacity(0.4).ColumnSpacing(0.1).Name("USA Gold").GroupName("USA")
+                    .Marker(marker => marker.DataLabel(label => label.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top)
+                    .Font(font => font.FontWeight("600").Color("#FFFFFF")))).DataSource(ViewBag.data).Add();
+
+                    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("x").YName("y2")
+                    .Width(2).ColumnWidth(0.7).ColumnSpacing(0.1).Name("UK Total").GroupName("UK")
+                    .Marker(marker => marker.DataLabel(label => label.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top)
+                    .Font(font => font.FontWeight("600").Color("#FFFFFF")))).DataSource(ViewBag.data).Add();
+
+                    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("x").YName("y3")
+                    .Width(2).ColumnWidth(0.5).ColumnSpacing(0.1).Name("UK Gold").GroupName("UK")
+                    .Marker(marker => marker.DataLabel(label => label.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top)
+                    .Font(font => font.FontWeight("600").Color("#FFFFFF")))).DataSource(ViewBag.data).Add();
+
+                    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("x").YName("y4")
+                    .Width(2).ColumnWidth(0.7).ColumnSpacing(0.1).Name("China Total").GroupName("China")
+                    .Marker(marker => marker.DataLabel(label => label.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top)
+                    .Font(font => font.FontWeight("600").Color("#FFFFFF")))).DataSource(ViewBag.data).Add();
+
+                    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("x").YName("y5")
+                    .Width(2).ColumnWidth(0.5).ColumnSpacing(0.1).Name("China Gold").GroupName("China")
+                    .Marker(marker => marker.DataLabel(label => label.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top)
+                    .Font(font => font.FontWeight("600").Color("#FFFFFF")))).DataSource(ViewBag.data).Add();
+                }).Title("Olympics Medal Tally").Load("load").Tooltip(tooltip => tooltip.Enable(true)).Render()

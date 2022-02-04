@@ -1,0 +1,11 @@
+ @(Html.EJS().RangeNavigator("container")
+                    .ValueType(Syncfusion.EJ2.Charts.RangeValueType.DateTime)
+                    .LabelFormat("{value}K")
+                .NavigatorStyleSettings( style => {
+                    style.unselectedRegionColor("Skyblue").selectedRegionColor("black")
+                })
+                .Series(sr =>
+                {
+                    sr.XName("x").YName("y").DataSource(ViewBag.dataSource).Add();
+                }).Render()
+                )

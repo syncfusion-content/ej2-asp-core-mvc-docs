@@ -1,0 +1,26 @@
+
+    <script src="~/financial-data.js"></script> 
+
+            @(Html.EJS().StockChart("container").Load("stockload").Title("AAPL Stock Price").ExportType(new List<Object>() { })
+                                                                .Series(sr =>
+                                                                {
+                                                                    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).DataSource("data").Add();
+                                                                })
+                                                                .Render())
+
+    <script>
+        var data = window.chartData;
+        function stockload(args) {
+            args.stockChart.crosshair = { enable: true, line: { width: 2, color: 'green' } };
+            args.stockChart.primaryYAxis = {
+                lineStyle: { color: 'transparent' },
+                majorTickLines: { color: 'transparent', width: 0 },
+                crosshairTooltip: { enable: true, fill: 'green' }
+            };
+            args.stockChart.primaryXAxis = {
+                majorGridLines: { color: 'transparent' },
+                crosshairTooltip: { enable: true, fill: 'green' }
+            };
+        }
+      
+    </script>

@@ -1,0 +1,14 @@
+
+ @Html.EJS().Chart("container").Series(series =>
+   {
+       series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("x").YName("y").DataSource(ViewBag.dataSource).Name("Germany").Add();
+       series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).YAxisName("yAxis").XName("x").Marker(ViewBag.marker).YName("y1").DataSource(ViewBag.dataSource).Name("Japan").Add();
+
+   }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+.Interval(1).LabelIntersectAction(Syncfusion.EJ2.Charts.LabelIntersectAction.Rotate90)
+       ).Axes(ax =>
+       {
+           ax.OpposedPosition(true).RowIndex(0).Minimum(24).Maximum(36).Interval(2).Name("yAxis").LabelFormat("{value}°C").Add();
+       }
+       )
+).Title("Weather Condition JPN vs DEU").ChartArea(area => area.Border(ViewBag.ChartBorder)).Tooltip(tt => tt.Enable(true)).LegendSettings(lg=>lg.Visible(false)).Render()

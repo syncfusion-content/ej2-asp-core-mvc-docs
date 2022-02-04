@@ -1,0 +1,18 @@
+
+ <div id="ControlRegion">
+                  @Html.EJS().Chart("container").Series(series =>
+                     {
+                     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+                     Marker(mr=> mr.Visible(false).DataLabel(dl=>dl.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Middle).Template("#template"))).
+                     XName("x").
+                     YName("y").
+                     DataSource(ViewBag.dataSource).
+                     Name("Gold").
+                     Width(2).Add();
+                     }).PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Title("Olympic Medal Counts - RIO").Render()
+<script id="template">
+    <div style="background:#f5f5f5; border: 1px solid black; padding: 3px 3px 3px 3px">
+        <div>${point.x}</div>
+        <div>${point.y}</div>
+    </div>
+</script>

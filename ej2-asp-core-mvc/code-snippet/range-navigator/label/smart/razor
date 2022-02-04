@@ -1,0 +1,10 @@
+ @(Html.EJS().RangeNavigator("container")
+                    .ValueType(Syncfusion.EJ2.Charts.RangeValueType.DateTime)
+                    .LabelFormat("MMM-yy")
+                    .EdgeLabelPlacement(Syncfusion.EJ2.Chart.EdgeLabelPlacement.Shift)
+                    .LabelIntersectAction(Syncfusion.EJ2.Chart.LabelIntersectAction.Hide)
+                .Series(sr =>
+                {
+                    sr.XName("x").YName("y").DataSource(ViewBag.dataSource).Add();
+                }).Render()
+                )

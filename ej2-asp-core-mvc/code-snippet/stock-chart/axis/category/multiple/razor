@@ -1,0 +1,20 @@
+
+<script src="~goog.js"></script>
+<script src="~googl.js"></script>
+
+            @Html.EJS().StockChart("container").Title("Multiple Series")
+              .PrimaryXAxis(xaxis =>xaxis.MajorGridLines(mg=>mg.Width(0)).ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime))
+                                  .Series(sr =>
+                                  {
+                                      sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).DataSource("data1").XName("x").YName("close").Add();
+                                      sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).YAxisName("yAxis").DataSource("data2").XName("x").YName("close").Add();
+                                  }).Axes(ax =>
+       {
+           ax.OpposedPosition(true).RowIndex(0).Name("yAxis").Add();
+       }
+       )
+                                  .Render()
+    <script>
+        var data1 = window.goog;
+        var data2 = window.googl;
+    </script>

@@ -1,0 +1,20 @@
+
+            <ejs-stockchart id="stockchart" load="stockload" title="AAPL Historical">
+                <e-stockchart-series-collection>
+                    <e-stockchart-series type='Candle' xName='x' yName='high' high='high' low='low'> </e-stockchart-series>
+                </e-stockchart-series-collection>
+            </ejs-stockchart>
+
+
+        <script src="~/financial-data.js"></script>
+    <script>
+        var data = chartData;
+        function stockload(args) {
+            args.stockChart.series[0].dataSource = data;
+            args.stockChart.primaryYAxis = {
+                lineStyle: { width: 0 },
+            };
+            args.stockChart.crosshair = { enable: true }
+        }
+    </script>
+

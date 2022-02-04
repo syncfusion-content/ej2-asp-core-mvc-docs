@@ -1,0 +1,10 @@
+@{
+    var value = new object[] { 2,5 };
+}
+
+<ejs-rangenavigator id="rangeNavigator" valueType="Logarithmic" value="value" logBase=4>
+                <e-rangenavigator-rangenavigatorseriescollection>
+                    <e-rangenavigator-rangenavigatorseries xName="y" yName="y1" dataSource="ViewBag.datasource" type="StepLine" width=2>
+                    </e-rangenavigator-rangenavigatorseries>
+                </e-rangenavigator-rangenavigatorseriescollection>
+</ejs-rangenavigator>

@@ -1,0 +1,9 @@
+
+@Html.EJS().Chart("container").Series(series =>
+{
+series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+Marker(mr=> mr.Visible(true).DataLabel(dl=>dl.Visible(true))).
+XName("x").
+YName("y").
+DataSource(ViewBag.dataSource). Name("Gold").Width(2).Add();
+}).PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).Title("Olympic Medal Counts - RIO").Render()

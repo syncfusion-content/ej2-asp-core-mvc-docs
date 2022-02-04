@@ -1,0 +1,10 @@
+ <ejs-chart id="container" title="Olympic Medals">
+        <e-chart-annotations>
+            <e-chart-annotation content="<div>Highest Medal Count</div>" region="Series" coordinateUnits="Point" x="Japan" y="70">
+            </e-chart-annotation>
+        </e-chart-annotations>
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Gold" xName="country" width="2" opacity="1" yName="gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+        </e-series-collection>
+    </ejs-chart>

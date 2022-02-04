@@ -1,0 +1,23 @@
+ @Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("xValue")
+                      .YName("yValue")
+                      .Name("Browser")
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pyramid).Add();
+            })
+            .EnableSmartLabels(true)
+            .PointRender("pointRender")
+            .Title("Mobile Browser Statistics")
+            .LegendSettings(ls => ls.Visible(false)).Render()
+
+<script>
+            var pointRender = function (args) {
+                if ((args.point.xValue as string).indexOf('iPhone') > -1) {
+                    args.fill = '#f4bc42';
+                     }
+                       else {
+                     args.fill = '#597cf9';
+                     }
+            };
+</script>

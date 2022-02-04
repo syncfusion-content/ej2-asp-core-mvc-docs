@@ -1,0 +1,16 @@
+
+    <script src="~/financial-data.js"></script> 
+
+            @(Html.EJS().StockChart("container").Load("stockload").Title("AAPL Stock Price").ExportType(new List<Object>() { })
+                    .PrimaryXAxis(xaxis =>xaxis.MajorTickLines(mg=>mg.Width(0).Color("transparent")).CrosshairTooltip(ct => ct.Enable(true)).LineStyle(ls=>ls.Color("transparent")
+                     ).ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).CrosshairTooltip(ct=>ct.Enable(true)))
+                      .PrimaryYAxis(yaxis =>yaxis.MajorTickLines(mt=>mt.Color("transparent")).CrosshairTooltip(ct=> ct.Enable(true))
+                                                                .Series(sr =>
+                                                                {
+                                                                    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).DataSource("data").Add();
+                                                                })
+                                                                .Render())
+
+    <script>
+        var data = window.chartData;
+    </script>

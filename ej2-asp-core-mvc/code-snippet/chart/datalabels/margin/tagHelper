@@ -1,0 +1,15 @@
+ @{
+    var border = new { width = 2, color = "red" };
+    var margin = new { left = 15, right = 15, bottom = 15, top = 15 };
+ }
+ <ejs-chart id="container" width="60%">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+                      type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+             <e-series-marker>
+                 <e-series-datalabel visible="true" name="text" border="border" margin="margin"></e-series-datalabel>
+             </e-series-marker>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

@@ -1,0 +1,12 @@
+ <ejs-chart id="container">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Private Consumption" xName="x" width=2 yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn"></e-series>
+            <e-series dataSource="ViewBag.dataSource1" name="Government Consumption" xName="x" width=2 yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn"></e-series>
+            <e-series dataSource="ViewBag.dataSource2" name="Investment" xName="x" width=2 yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn"></e-series>
+            <e-series dataSource="ViewBag.dataSource3" name="Net Foreign Trade" xName="x" width=2 yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn"></e-series>
+            <e-series dataSource="ViewBag.dataSource4" name="GDP" xName="x" width=2 yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+                <e-series-marker visible="true" height="10" width="10"></e-series-marker>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

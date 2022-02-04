@@ -1,0 +1,24 @@
+<ejs-chart id="container" width="60%" title="Average Sales Comparison" locale="ar-AR">
+        <e-chart-zoomsettings enableMouseWheelZooming="true" enableSelectionZooming="true" enablePinchZooming="true"
+          enableDeferredZooming="true"></e-chart-zoomsettings>
+        <e-chart-primaryxaxis title="Year"></e-chart-primaryxaxis>
+        <e-chart-primaryyaxis  title="Sales Amount in Millions"></e-chart-primaryyaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" name="Product X"></e-series>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" name="Product Y"></e-series>
+        </e-series-collection>
+    </ejs-chart>
+<script>
+    L10n.load({
+        'ar-AR': {
+            'chart': {
+                ZoomIn: 'تكبير',
+                ZoomOut: 'تصغير',
+                Zoom: 'زوم',
+                Pan: 'مقلاة',
+                Reset: 'إعادة تعيين',
+                ResetZoom: ' زومإعادة تعيين'
+            },
+        }
+    });
+</script>

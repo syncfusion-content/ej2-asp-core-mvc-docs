@@ -1,0 +1,17 @@
+<ejs-chart id="container">
+    <e-chart-primaryxaxis valueType="Category" edgeLabelPlacement="Shift">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis labelFormat="{value}˚C" minimum="0" maximum="40">
+        <e-linestyle width="0"></e-linestyle>
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series name="England" xName="x" high="high" low="low" dataSource="ViewBag.dataSource"
+                    opacity="0.4" type="@Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea">
+        </e-series>
+        <e-series name="India" xName="x" high="high1" low="low1" dataSource="ViewBag.dataSource"
+                    opacity="0.4" type="@Syncfusion.EJ2.Charts.ChartSeriesType.SplineRangeArea">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

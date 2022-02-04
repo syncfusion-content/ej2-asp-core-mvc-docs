@@ -1,0 +1,10 @@
+<ejs-chart id="container" load="window.onload" width="60%">
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x"  yName="y"
+             type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+                <e-series-errorbar visible="true">
+                    <e-errorbarcap length="10" width="10" color="#0000ff"></e-errorbarcap>
+                </e-series-errorbar>
+            </e-series>
+        </e-series-collection>
+</ejs-chart>

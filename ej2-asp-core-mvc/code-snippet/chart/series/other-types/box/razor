@@ -1,0 +1,33 @@
+
+    @(Html.EJS().Chart("container").Series(
+           series =>
+           {
+               series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.BoxAndWhisker).
+               Name("Department").
+               DataSource(ViewBag.dataSource).
+               XName("xValue").
+               YName("yValue").
+               Marker(ViewBag.marker).Add();
+           }).PrimaryXAxis(
+           xAxis =>          
+               xAxis.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+                    .LabelIntersectAction(Syncfusion.EJ2.Charts.LabelIntersectAction.Trim)
+                    .EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
+                    .MajorGridLines(ViewBag.gridlines)
+           ).PrimaryYAxis(
+           yAxis =>        
+               yAxis.Minimum(10).
+               Maximum(60).
+               Interval(10).
+               Title("Age").
+               MajorGridLines(ViewBag.gridlines).
+               MajorTickLines(ViewBag.ticklines)
+           ).Title("Employee Age Group in Various Department").LegendSettings(
+            legend => {
+                legend.Visible(false);
+            }).Tooltip(
+           tooltip =>
+           {
+               tooltip.Enable(true);
+           }).ChartArea(area => area.Border(ViewBag.ChartBorder)).Render()   
+       )

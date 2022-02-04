@@ -1,0 +1,9 @@
+<ejs-chart id="container">
+        <e-chart-primaryxaxis coefficient="40"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Germany" xName="x" width="2" opacity="1" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Radar"
+                      drawType="@Syncfusion.EJ2.Charts.ChartDrawType.Line">
+                <e-series-marker visible="true" height="10" width="10" shape="Pentagon"></e-series-marker>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>

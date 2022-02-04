@@ -1,0 +1,9 @@
+<ejs-chart id="container" title="Inflation - Consumer Price" width="60%">
+        <e-chart-primaryxaxis valueType="DateTime"
+                              labelFormat="y"
+                              intervalType="Years"
+                              edgeLabelPlacement="Shift"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Germany" xName="xValue" width="2" opacity="1" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line"></e-series>
+        </e-series-collection>
+    </ejs-chart>

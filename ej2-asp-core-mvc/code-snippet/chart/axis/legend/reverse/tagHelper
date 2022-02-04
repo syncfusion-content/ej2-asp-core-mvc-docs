@@ -1,0 +1,23 @@
+<ejs-chart id="container" title="Olympic Medal Counts - RIO">
+    <e-chart-primaryxaxis valueType="Category" interval=1>
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis>
+        <e-majorgridlines width="0"></e-majorgridlines>
+        <e-majorticklines width="0"></e-majorticklines>
+        <e-linestyle width="0"></e-linestyle>
+        <e-labelstyle color="transparent"></e-labelstyle>
+    </e-chart-primaryyaxis>
+    <e-chart-chartarea>
+        <e-chartarea-border width="0"></e-chartarea-border>
+    </e-chart-chartarea>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName='x' yName='yValue' name='Gold' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName='x' yName='yValue1' name='Silver' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName='x' yName='yValue2' name='Bronze' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+    </e-series-collection>
+    <e-chart-legendsettings reverse="true"></e-chart-legendsettings>
+</ejs-chart>

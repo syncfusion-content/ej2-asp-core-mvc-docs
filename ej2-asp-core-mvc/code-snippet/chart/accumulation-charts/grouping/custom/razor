@@ -1,0 +1,32 @@
+
+ @Html.EJS().AccumulationChart("container")
+                    .Series(sr =>
+                    {
+                        sr.Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                               .XName("xValue")
+                               .YName("yValue")
+                               .Name("RIO")
+                               .Animation(ViewBag.animation)
+                               .DataSource(ViewBag.dataSource)
+                               .GroupTo("10")
+                               .DataLabel(ViewBag.dataLabel).Add();
+                    })
+                     .EnableSmartLabels(true)
+                     .LegendSettings(leg => leg.Visible(false))
+                     .PointRender("pointRender").TextRender("textRender")
+                     .Title("RIO Olympics Gold").Render()
+
+<script>
+        var pointRender = function(args) {
+           if ((args.point.x as string).indexOf('Others') > -1) {
+            args.fill = '#D3D3D3';
+        }
+        }
+        var textRender = function(args) {
+            if (args.text.indexOf('Others') > -1) {
+            args.text = 'Grouped Slices';
+            args.color = 'red';
+            args.border.width = 1;
+        }
+        }
+</script>

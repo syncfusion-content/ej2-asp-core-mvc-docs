@@ -1,0 +1,6 @@
+@Html.EJS().BulletChart("container")
+                        .ValueField("value")
+                        .TargetField("target")
+                        .Minimum(0).Maximum(300).Interval(50)
+                        .DataSource(ViewBag.dataSource)
+                        .Render()

@@ -1,0 +1,16 @@
+
+ @Html.EJS().AccumulationChart("container")
+    .Series(sr =>
+    {
+    sr.Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+    .XName("xValue")
+    .YName("yValue")
+    .DataLabel(dl => dl.Visible(true).Name("xValue").Position(Syncfusion.EJ2.Charts.AccumulationLabelPosition.Outside))
+    .InnerRadius("20%")
+    .Radius("r")
+    .DataSource(ViewBag.dataSource).Add();
+    })
+    .EnableSmartLabels(true)
+    .EnableAnimation(true)
+    .Tooltip(tp => tp.Enable(true).Format("${point.x} <br />Composition: <b>${point.y}</b>"))
+    .LegendSettings(leg => leg.Visible(true)).Render()

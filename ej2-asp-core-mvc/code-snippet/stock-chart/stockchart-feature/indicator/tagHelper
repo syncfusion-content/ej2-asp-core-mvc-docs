@@ -1,0 +1,21 @@
+
+            <ejs-stockchart id="stockchart" load="stockload" title="AAPL Stock Price" seriesType="@(new List<Object>() { })" exportType="@(new List<Object>() { })" trendlineType="@(new List<Object>() { })">
+                <e-stockchart-series-collection>
+                    <e-stockchart-series type='Candle' xName="x" name="Apple Inc">
+                    </e-stockchart-series>
+                </e-stockchart-series-collection>
+            </ejs-stockchart>
+
+    <script src="~/financial-data.js"></script>
+    <script>
+            var data = chartData;
+            function stockload(args) {
+                args.stockChart.series[0].dataSource = data;
+                args.stockChart.series[0].indicators = [
+                {
+                    type: 'BollingerBands', field: 'close', seriesName: 'Apple Inc',
+                    period: 10, upperLine: { color: '#ffb735', width: 1 },
+                    lowerLine: { color: '#f2ec2f', width: 1 }
+                }]
+            }
+    </script>
