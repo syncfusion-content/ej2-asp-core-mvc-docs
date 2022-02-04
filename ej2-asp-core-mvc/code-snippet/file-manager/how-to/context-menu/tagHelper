@@ -1,0 +1,37 @@
+@{
+    string[] files = new string[] { "Custom", "Open", "|", "Delete", "Download", "Rename", "|", "Details" };
+    string[] folder = new string[] { "Custom", "Open", "|", "Delete", "Download", "Rename", "|", "Details" };
+    string[] layout = new string[] { "Custom", "SortBy", "View", "Refresh", "|", "NewFolder", "Upload", "|", "Details", "|", "SelectAll" };
+}
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Filemanager element declaration -->
+        <ejs-filemanager id="file" menuOpen="menuOpen" menuClick="menuClick">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+            <e-filemanager-contextmenusettings file="files" folder="folder" layout="layout">
+            </e-filemanager-contextmenusettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+// Icon added to custom menu item
+function menuOpen(args) {
+    for (var i = 0; i < args.items.length; i++) {
+        if (args.items[i].id === this.element.id + '_cm_custom') {
+            args.items[i].iconCss = 'e-icons e-fe-tick';
+        }
+    }
+}
+
+// event for custom menu item
+function menuClick(args) {
+    if (args.item.text === 'Custom') {
+        alert('You have clicked custom menu item')
+    }
+}
+</script>

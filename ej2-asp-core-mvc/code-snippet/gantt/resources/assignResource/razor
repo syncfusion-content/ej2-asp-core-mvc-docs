@@ -1,0 +1,5 @@
+        @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId"
+        ).Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks").ResourceInfo(
+            "ResourceId")).LabelSettings(ls => ls.RightLabel("${if(ResourceId)} ${ResourceId} ${/if}")
+            ).ResourceFields(rf => rf.Id("ResourceId").Name("ResourceName")).Resources((IEnumerable<object>)ViewBag.projectResources).Render()
+        

@@ -1,0 +1,64 @@
+@using Syncfusion.EJ2.Schedule
+
+@Html.EJS().CheckBox("company").Change("onChange").Checked(true).Disabled(true).Label("Company").Value("1").Render()
+
+@Html.EJS().CheckBox("birthdays").Change("onChange").Checked(false).Label("Birthday").Value("2").Render()
+
+@Html.EJS().CheckBox("holidays").Change("onChange").Checked(false).Label("Holiday").Value("3").Render()
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Group(group => group.Resources(ViewBag.Resources))
+    .Resources(res => {
+        res.DataSource(ViewBag.Calendars).Field("CalendarId").Title("Calendars").Name("Calendars").TextField("CalendarName").IdField("CalendarId").ColorField("CalendarColor").AllowMultiple(true).Add();
+    })
+    .EventSettings(e => e.DataSource(ViewBag.datasource))
+    .Views(ViewBag.view)
+    .SelectedDate(new DateTime(2018, 3, 1))
+    .Render()
+)
+
+<style>
+    .property-panel-content .e-checkbox-wrapper.company .e-frame {
+        background-color: #ff7f50;
+        border-color: transparent;
+    }
+
+    .property-panel-content .e-checkbox-wrapper.birthday .e-frame {
+        background-color: #AF27CD;
+        border-color: transparent;
+    }
+
+    .property-panel-content .e-checkbox-wrapper.holiday .e-frame {
+        background-color: #808000;
+        border-color: transparent;
+    }
+
+    .e-schedule .e-month-view .e-appointment {
+        border-color: transparent;
+    }
+
+    .highcontrast .property-panel-content .e-checkbox-wrapper .e-frame.e-check,
+    .bootstrap .property-panel-content .e-checkbox-wrapper .e-frame.e-check {
+        color: #fff;
+    }
+</style>
+
+<script type="text/javascript">
+    function onChange(args) {
+        var calendarCollections = [
+            { CalendarName: 'Company', CalendarId: 1, CalendarColor: '#ff7f50' },
+            { CalendarName: 'Birthday', CalendarId: 2, CalendarColor: '#AF27CD' },
+            { CalendarName: 'Holiday', CalendarId: 3, CalendarColor: '#808000' }
+        ];
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var value = parseInt(args.event.target.getAttribute('value'), 10);
+        var resourceData = calendarCollections.filter(function (calendar) { return calendar.CalendarId === value; });
+        if (args.checked) {
+            scheduleObj.addResource(resourceData[0], 'Calendars', value - 1);
+        } else {
+            scheduleObj.removeResource(value, 'Calendars');
+        }
+    }
+</script>

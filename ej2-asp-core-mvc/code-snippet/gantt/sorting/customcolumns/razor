@@ -1,0 +1,19 @@
+@Html.EJS().Button("Sort").Content("Sort Custom Column").CssClass("e-primary").Render()
+   
+   @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).TaskFields(ts => ts.Id("TaskId").Name("TaskName"
+   ).StartDate("StartDate").EndDate("EndDate").Progress("Progress").Child("SubTasks")).AllowSorting(true).Columns(col =>
+                {
+                    col.Field("TaskId").Width(150).Add();
+                    col.Field("TaskName").HeaderText("Job Name").Width(250).Add();
+                    col.Field("StartDate").HeaderText("Star tDate").Width(250).Add();
+                    col.Field("EndDate").HeaderText("End Date").Width(250).Add();
+                    col.Field("Progress").HeaderText("Progress").Width(250).Add();
+                    col.Field("CustomColumn").HeaderText("Custom Column").Width(250).Add();
+                }).Render()
+   
+     <script>
+        document.getElementById('Sort').addEventListener('click', function (args) {
+            var ganttObj = document.getElementById('Gantt').ej2_instances[0];
+            ganttObj.sortModule.sortColumn('CustomColumn', "Ascending", false)
+        });
+    </script>

@@ -1,0 +1,50 @@
+
+<div class="control-section">
+    <div id="content" class="box-form" style="margin: 0 auto; width:750px; padding:25px">
+        <form id="form-element" class="form-vertical">
+            <div class="form-group">
+                @Html.EJS().RichTextEditor("defaultRTE").ShowCharCount(true).MaxLength(100).Placeholder("Type something").Created("created").Change("onChange").Render()
+                <div id="dateError" style="padding-top: 10px"></div>
+            </div>
+            <div style="text-align: center">
+                @Html.EJS().Button("validateSubmit").Disabled("true").Render()
+                <button id="resetbtn" class="samplebtn e-control e-btn" type="reset" data-ripple="true">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    var defaultRTE, formObject, options;
+    function created() {
+        options = {
+            rules: {
+                'rteForm': {
+                    required: true,
+                    minLength: [6, 'Need atleast 6 character length'],
+                    maxLength: [100, 'Maximum 100 character only']
+                }
+            },
+            customPlacement: function (inputElement, error) {
+                document.getElementById('dateError').appendChild(error);
+            }
+        };
+        formObject = new ej.inputs.FormValidator('#form-element', options);
+        defaultRTE = this;
+        this.element.firstChild.setAttribute("required", "");
+        this.element.firstChild.setAttribute('data-required-message', '* This field is required');
+        this.element.firstChild.setAttribute('data-msg-containerid', 'dateError');
+        this.element.firstChild.setAttribute('name', 'rteForm');
+    }
+
+    window.onload = function () {
+        document.getElementById('validateSubmit').onclick = function () {
+            getValue();
+        };
+    }
+    function getValue() {
+        formObject.validate();
+    }
+     function onChange() {
+        var submitButton = document.getElementById("validateSubmit").ej2_instances[0];
+     submitButton.disabled = false;
+</script>

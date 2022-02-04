@@ -1,0 +1,8 @@
+  <ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="450px" resources="ViewBag.projectResources">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                            endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks" resourceInfo="ResourceId">
+                    </e-gantt-taskfields>
+                    <e-gantt-labelSettings rightLabel="${if(ResourceId)}${ResourceId}${/if}"></e-gantt-labelSettings>
+                    <e-gantt-resourcefields id="ResourceId" name="ResourceName" unit="Unit">
+                    </e-gantt-resourcefields>
+  </ejs-gantt>

@@ -1,0 +1,44 @@
+<div>
+    <!-- Declare button element -->
+    <ejs-button id="enable" content="Enable New Folder toolbar item" cssClass="e-success"></ejs-button>
+    <ejs-button id="disable" content="Disabe New Folder toolbar item" cssClass="e-danger"></ejs-button>
+    <!-- end of button element -->
+</div>
+<div class=" control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        <ejs-filemanager id="filemanager" view="Details">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var filemanagerInstance = document.getElementById("filemanager").ej2_instances[0];
+        // Click event for enable button
+        document.getElementById("enable").onclick = function (args) {
+            // Enable new folder toolbar item
+            filemanagerInstance.enableToolbarItems(["newfolder"]);
+        }
+
+        // Click event for enable button
+        document.getElementById("disable").onclick = function (args) {
+            // Disable new folder toolbar item
+            filemanagerInstance.disableToolbarItems(["newfolder"]);
+        }
+    });
+</script>
+<style>
+    #enable {
+        margin: 10px;
+    }
+
+    #disable {
+        margin: 10px;
+    }
+</style>

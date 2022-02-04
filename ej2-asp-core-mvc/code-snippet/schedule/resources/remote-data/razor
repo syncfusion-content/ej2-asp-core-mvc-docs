@@ -1,0 +1,22 @@
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Group(group => group.Resources(ViewBag.Resources))
+    .Resources(res => {
+        res.AllowMultiple(true)
+        .DataSource(d => 
+            d.Url("Home/GetResourceData")
+            .Adaptor("UrlAdaptor")
+            .CrossDomain(true)
+        )
+        .Field("OwnerId")
+        .Title("Owner")
+        .Name("Owners")
+        .TextField("text")
+        .IdField("id")
+        .ColorField("color")
+        .Add();
+    })
+    .SelectedDate(new DateTime(2018, 4, 1))
+    .Render()
+)

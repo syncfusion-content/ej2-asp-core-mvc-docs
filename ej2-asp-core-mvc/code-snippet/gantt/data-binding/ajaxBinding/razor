@@ -1,0 +1,18 @@
+@Html.EJS().Button("dataBind").Content("Bind Data").CssClass("e-primary").Render()
+@Html.EJS().Gantt("Gantt").TaskFields(ts =>
+   ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+   ).Render()
+
+<script>
+        document.getElementById('dataBind').addEventListener('click', function (args) {
+            var ganttObj = document.getElementById('Gantt').ej2_instances[0];
+            var ajax = new Ajax("https://ej2services.syncfusion.com/production/web-services/api/GanttData","GET");
+            ganttObj.showSpinner();
+            ajax.send();
+            ajax.onSuccess = function (data: string) {
+            ganttObj.hideSpinner();
+            ganttObj.dataSource = (JSON.parse(data)).Items;
+            ganttObj.refresh();
+    };
+        });
+    </script>

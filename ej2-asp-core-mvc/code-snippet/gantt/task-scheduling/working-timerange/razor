@@ -1,0 +1,70 @@
+<div class="col-lg-9 control-section">
+    <div class="content-wrapper">
+        @(Html.EJS().Gantt("WorkingTimeRange").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px")
+            .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks"))
+            .TimelineSettings(ts => ts.TopTier(tt => tt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Day)).BottomTier(bt => bt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Hour)))
+            .Render()
+        )
+    </div>
+</div>
+
+<div class="col-lg-3 property-section">
+    <table id="property" title="Properties" style="width: 100%;">
+        <colgroup>
+            <col style="width:55%" />
+            <col style="width:45%" />
+        </colgroup>
+        <tr>
+            <td style="width:55%">
+                <div>Work Start Time</div>
+            </td>
+            <td style="width:45%">
+                <div style="padding-top: 0px">
+                    @(Html.EJS().NumericTextBox("WorkStartTime").Min(0).Max(24).Value(8).Change("UpdateTime").ShowSpinButton(true).Step(0.5)
+                            .Render()
+                        )
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:55%">
+                <div>Work End Time</div>
+            </td>
+            <td style="width:45%">
+                <div style="padding-top: 0px">
+                    @(Html.EJS().NumericTextBox("WorkEndTime").Min(0).Max(24).Value(17).Change("UpdateTime").ShowSpinButton(true).Step(0.5)
+                            .Render()
+                        )
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    var isTimeUpdated = false;
+    function UpdateTime() {
+        var ganttChart = document.getElementById("WorkingTimeRange").ej2_instances[0];
+        var defaultDate = "08/08/2016", startDate = new Date(defaultDate), endDate = new Date(defaultDate);
+        var decPlace = WorkStartTime.value - Math.floor(WorkStartTime.value);
+        startDate.setHours(WorkStartTime.value);
+        startDate.setMinutes(decPlace * 60);
+        decPlace = WorkEndTime.value - Math.floor(WorkEndTime.value);
+        endDate.setHours(WorkEndTime.value);
+        endDate.setMinutes(decPlace * 60);
+
+        /*Validate time value and update the time range*/
+        if (startDate.getTime() < endDate.getTime() && isTimeUpdated == false) {
+            var workingTime = [{ from: WorkStartTime.value, to: WorkEndTime.value }];
+            ganttChart.dayWorkingTime = workingTime;
+            isTimeUpdated = false;
+        }
+        else {
+            isTimeUpdated = true;
+            WorkStartTime.value = ganttChart.dayWorkingTime[0].from;
+            WorkEndTime.value = ganttChart.dayWorkingTime[ganttChart.dayWorkingTime.length - 1].to;
+        }
+        isTimeUpdated = false;
+    }
+</script>
+}

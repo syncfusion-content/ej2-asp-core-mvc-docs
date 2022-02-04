@@ -1,0 +1,5 @@
+
+   @Html.EJS().Gantt("Editing").DataSource((IEnumerable<object>)ViewBag.DataSource).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate(
+      "StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").Child("SubTasks").ResourceInfo(
+         "ResourceId")).ResourceFields(rf => rf.Id("ResourceId").Name("ResourceName")).Resources((IEnumerable<object>
+         )ViewBag.projectResources).Render()

@@ -1,0 +1,4 @@
+    @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+     ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+     ).EditSettings(es=>es.AllowEditing(true).Mode(Syncfusion.EJ2.Gantt.EditMode.Dialog)).Render()
+        

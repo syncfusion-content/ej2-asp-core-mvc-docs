@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="550px" selectedDate="new DateTime(2018, 4, 1)">
+    <e-schedule-group resources="@ViewBag.Resources"></e-schedule-group>
+    <e-schedule-resources>
+        <e-schedule-resource dataSource="@ViewBag.Rooms" field="RoomId" title="Room" name="Rooms" textField="RoomText" idField="Id" colorField="RoomColor" allowMultiple="false"></e-schedule-resource>
+        <e-schedule-resource dataSource="@ViewBag.Owners" field="OwnerId" title="Owner" name="Owners" textField="OwnerText" idField="Id" groupIDField="OwnerGroupId" colorField="OwnerColor" allowMultiple="true"></e-schedule-resource>
+    </e-schedule-resources>
+    <e-schedule-views>
+        <e-schedule-view option="TimelineYear"></e-schedule-view>
+    </e-schedule-views>
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>

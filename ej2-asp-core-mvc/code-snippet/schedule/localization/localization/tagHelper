@@ -1,0 +1,146 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="550px" locale="hu">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<script>
+    var L10n = ej.base.L10n;
+    L10n.load({
+        "hu": {
+            "schedule": {
+                "day": "Nap",
+                "week": "Hét",
+                "workWeek": "Munkahét",
+                "month": "Hónap",
+                "agenda": "Napirend",
+                "weekAgenda": "Hét menetrend",
+                "workWeekAgenda": "Munkahét napirend",
+                "monthAgenda": "Havi menetrend",
+                "today": "Ma",
+                "noEvents": "Nincs esemény",
+                "emptyContainer": "Ezen a napon nincsenek események.",
+                "allDay": "Egész nap",
+                "start": "Rajt",
+                "end": "vég",
+                "more": "több",
+                "close": "Bezárás",
+                "cancel": "Megszünteti",
+                "noTitle": "(Nincs cím)",
+                "delete": "Töröl",
+                "deleteEvent": "Esemény törlése",
+                "deleteMultipleEvent": "Több esemény törlése",
+                "selectedItems": "A kiválasztott elemek",
+                "deleteSeries": "Sorozat törlése",
+                "edit": "szerkesztése",
+                "editSeries": "Szerkesztés",
+                "editEvent": "Esemény szerkesztése",
+                "createEvent": "teremt",
+                "subject": "Tantárgy",
+                "addTitle": "Cím hozzáadása",
+                "moreDetails": "További részletek",
+                "save": "Mentés",
+                "editContent": "Csak ezt az eseményt vagy egész sorozatot szeretné szerkeszteni?",
+                "deleteRecurrenceContent": "Csak ezt az eseményt vagy egész sorozatot szeretné törölni?",
+                "deleteContent": "Biztosan törölni szeretné ezt az eseményt?",
+                "deleteMultipleContent": "Biztosan törli a kiválasztott eseményeket?",
+                "newEvent": "Új esemény",
+                "title": "Cím",
+                "location": "Elhelyezkedés",
+                "description": "Leírás",
+                "timezone": "Időzóna",
+                "startTimezone": "Indítsa el az időzónát",
+                "endTimezone": "Időzóna vége",
+                "repeat": "Ismétlés",
+                "saveButton": "Mentés",
+                "cancelButton": "Megszünteti",
+                "deleteButton": "Töröl",
+                "recurrence": "Ismétlődés",
+                "wrongPattern": "Az ismétlődési minta nem érvényes.",
+                "seriesChangeAlert": "A sorozat egyes példányaiban végrehajtott módosítások törlésre kerülnek, és ezek az események ismét megegyeznek a sorozattal.",
+                "createError": "Az esemény időtartamának rövidebbnek kell lennie, mint a gyakorisága. Rövidítse az időtartamot, vagy változtassa meg az ismétlődési esemény szerkesztőjének ismétlődési mintáját.",
+                "recurrenceDateValidation": "Néhány hónap kevesebb, mint a kiválasztott dátum. Ezekben a hónapokban az esemény a hónap utolsó napjára esik.",
+                "sameDayAlert": "Ugyanezen esemény két eseménye nem fordulhat elő ugyanazon a napon.",
+                "editRecurrence": "Ismétlés szerkesztése",
+                "repeats": "ismétlődés",
+                "alert": "Éber",
+                "startEndError": "A kiválasztott befejezési dátum a kezdő dátum előtt történik.",
+                "invalidDateError": "A megadott dátumérték érvénytelen.",
+                "ok": "Rendben",
+                "occurrence": "Esemény",
+                "series": "Sorozat",
+                "previous": "Előző",
+                "next": "Következő",
+                "timelineDay": "Idővonal napja",
+                "timelineWeek": "Idősor-hét",
+                "timelineWorkWeek": "Idővonal munkahét",
+                "timelineMonth": "Idővonal hónap",
+                "expandAllDaySection": "kiterjed",
+                "collapseAllDaySection": "összeomlás"
+            },
+            "recurrenceeditor": {
+                "none": "Egyik sem",
+                "daily": "Napi",
+                "weekly": "Heti",
+                "monthly": "Havi",
+                "month": "Hónap",
+                "yearly": "Évi",
+                "never": "Soha",
+                "until": "Amíg",
+                "count": "Számol",
+                "first": "Első",
+                "second": "Második",
+                "third": "Harmadik",
+                "fourth": "Negyedik",
+                "last": "Utolsó",
+                "repeat": "Ismétlés",
+                "repeatEvery": "Ismételje meg minden",
+                "on": "Ismétlés",
+                "end": "vég",
+                "onDay": "Nap",
+                "days": "Napok)",
+                "weeks": "Hét (ok)",
+                "months": "Hónap (ok)",
+                "years": "Évek)",
+                "every": "minden",
+                "summaryTimes": "idő (s)",
+                "summaryOn": "tovább",
+                "summaryUntil": "amíg",
+                "summaryRepeat": "ismétlődés",
+                "summaryDay": "napok)",
+                "summaryWeek": "heti (s)",
+                "summaryMonth": "hónap (ok)",
+                "summaryYear": "évek)",
+                "monthWeek": "Hónap",
+                "monthPosition": "Havi pozíció",
+                "monthExpander": "Hónaposító",
+                "yearExpander": "Év bővítő",
+                "repeatInterval": "Ismételje meg az intervallumot"
+            },
+            "calendar": {
+                "today": "Ma"
+            }
+        }
+    });
+    loadCultureFiles('hu');
+    function loadCultureFiles(name) {
+        var files = ['ca-gregorian.json', 'numberingSystems.json', 'numbers.json', 'timeZoneNames.json', 'ca-islamic.json'];
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var val, ajax;
+            if (files[prop] === 'numberingSystems.json') {
+                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+            ajax.onSuccess = function (value) {
+                val = value;
+            };
+            ajax.send();
+            loader(JSON.parse(val));
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+</script>

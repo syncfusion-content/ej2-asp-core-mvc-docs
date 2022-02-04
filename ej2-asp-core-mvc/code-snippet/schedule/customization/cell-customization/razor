@@ -1,0 +1,57 @@
+@using Syncfusion.EJ2.Schedule
+
+@{
+    var template = "${if(type === 'monthCells')}<div class='templatewrap'>${getCellContent(data.date)}</div>${/if}";
+}
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Views(ViewBag.view)
+    .Height("550px")
+    .CellTemplate(@template)
+    .SelectedDate(new DateTime(2017, 12, 15))
+    .Render()
+)
+
+<style>
+    .e-schedule .e-month-view .e-work-cells {
+        position: relative;
+    }
+    .e-schedule .templatewrap {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+    }
+    .e-schedule .templatewrap img {
+        width: 25px;
+        height: 25px;
+    }
+    .e-schedule .caption {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+    }
+</style>
+
+<script type="text/javascript">
+    function getCellContent(date) {
+        if (date.getMonth() === 9 && date.getDate() === 31) {
+            return '<div class="caption">Thanksgiving day</div>';
+        } else if (date.getMonth() === 11 && date.getDate() === 9) {
+            return '<div class="caption">Party time</div>';
+        } else if (date.getMonth() === 11 && date.getDate() === 13) {
+            return '<div class="caption">Party time</div>';
+        } else if (date.getMonth() === 11 && date.getDate() === 22) {
+            return '<div class="caption">Happy birthday</div>';
+        } else if (date.getMonth() === 11 && date.getDate() === 24) {
+            return '<div class="caption">Christmas Eve</div>';
+        } else if (date.getMonth() === 11 && date.getDate() === 25) {
+            return '<div class="caption">Christmas Day</div>';
+        } else if (date.getMonth() === 0 && date.getDate() === 1) {
+            return '<div class="caption">New Year"s Day</div>';
+        } else if (date.getMonth() === 0 && date.getDate() === 14) {
+            return '<div class="caption">Get together</div>';
+        }
+        return '';
+    }
+</script>

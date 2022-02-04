@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-radiobutton id="radio1" label="Rooms" name="default" value="Rooms" checked="true" change="onChange"></ejs-radiobutton>
+<ejs-radiobutton id="radio2" label="Owners" name="default" value="Owners" checked="false" change="onChange"></ejs-radiobutton>
+
+<ejs-schedule id="schedule" height="550" views="@ViewBag.view" selectedDate="new DateTime(2018, 4, 3)">
+    <e-schedule-group resources="@ViewBag.Resources"></e-schedule-group>
+    <e-schedule-resources>
+        <e-schedule-resource dataSource="@ViewBag.Rooms" field="RoomId" title="Room" name="Rooms" textField="RoomText" idField="Id" groupIDField="RoomGroupId" colorField="RoomColor" allowMultiple="false"></e-schedule-resource>
+        <e-schedule-resource dataSource="@ViewBag.Owners" field="OwnerId" title="Owner" name="Owners" textField="OwnerText" idField="Id" groupIDField="OwnerGroupId" colorField="OwnerColor" allowMultiple="true"></e-schedule-resource>
+    </e-schedule-resources>
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource" resourceColorField="Rooms"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onChange(args) {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        scheduleObj.eventSettings.resourceColorField = args.value;
+    }
+</script>

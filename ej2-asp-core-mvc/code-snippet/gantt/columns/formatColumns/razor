@@ -1,0 +1,10 @@
+    @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+     ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+     ).Columns(col =>
+                {
+                    col.Field("TaskId").Width(50).Add();
+                    col.Field("TaskName").Add();
+                    col.Field("StartDate").Format("yMd").Add();
+                    col.Field("Duration").Add();
+                    col.Field("Progress").Format("C").Add();
+                }).Render()

@@ -1,0 +1,21 @@
+@(Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowExcelExport(true).TaskFields(ts => ts.Id(
+    "TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Toolbar(new List<string>() { 
+        "ExcelExport", "CsvExport" }).ToolbarClick("toolbarClick").TreeColumnIndex(1).Render())
+
+<script>
+    function toolbarClick(args) {
+        var ganttObj = document.getElementById("GanttContainer").ej2_instances[0];
+        if (args.item.id === "GanttContainer_excelexport") {
+            var excelExportProperties = {
+                fileName:"Gantt.xlsx"
+            };
+            ganttObj.excelExport(excelExportProperties);
+        }
+        else if (args.item.id === "GanttContainer_csvexport") {
+            var excelExportProperties = {
+                fileName:"Gantt.csv"
+            };
+            ganttObj.csvExport(excelExportProperties);
+        }
+    }
+</script>

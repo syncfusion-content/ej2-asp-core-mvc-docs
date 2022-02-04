@@ -1,0 +1,57 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="100%" selectedDate="new DateTime(2019, 1, 10)" actionBegin="onActionBegin">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<style>
+    .e-schedule .e-schedule-toolbar .e-icon-schedule-print::before {
+        content: '\e813';
+    }
+</style>
+
+<script type="text/javascript">
+    function onActionBegin(args) {
+        if (args.requestType === 'toolbarItemRendering') {
+            var exportItem = {
+                align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-print',
+                text: 'Print', cssClass: 'e-print', click: onPrintIconClick
+            };
+            args.items.push(exportItem);
+        }
+    }
+
+    function onPrintIconClick() {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        let printModel = {
+            agendaDaysCount: 14,
+            cssClass: 'e-print-schedule',
+            currentView: scheduleObj.currentView,
+            dateFormat: 'dd-MMM-yyyy',
+            enableRtl: false,
+            endHour: '18:00',
+            firstDayOfWeek: 1,
+            firstMonthOfYear: 0,
+            group: {},
+            height: 'auto',
+            locale: scheduleObj.locale,
+            maxDate: scheduleObj.selectedDate,
+            minDate: scheduleObj.getCurrentViewDates()[0],
+            readonly: true,
+            resources: [],
+            rowAutoHeight: false,
+            selectedDate: new Date(),
+            showHeaderBar: false,
+            showTimeIndicator: false,
+            showWeekNumber: false,
+            showWeekend: false,
+            startHour: '06:00',
+            timeFormat: 'HH',
+            timeScale: { enable: true },
+            width: 'auto',
+            workDays: [1, 2, 3, 4, 5],
+            workHours: { highlight: true, start: '10:00', end: '20:00' }
+        };
+        scheduleObj.print(printModel);
+    }
+</script>

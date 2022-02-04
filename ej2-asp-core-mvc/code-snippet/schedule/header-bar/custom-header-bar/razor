@@ -1,0 +1,143 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(ViewBag.view)
+    .ActionComplete("onActionComplete")
+    .ActionBegin("onActionBegin")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)
+
+<style>
+    .e-schedule .e-schedule-toolbar .user-icon {
+        background-image: url('https://ej2.syncfusion.com/demos/src/schedule/images/nancy.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        height: 24px;
+        min-width: 24px !important;
+        width: 24px !important;
+    }
+
+    .e-schedule .e-schedule-toolbar .e-toolbar-items span.e-btn-icon.user-icon.e-icons {
+        line-height: 24px !important;
+        min-height: 24px !important;
+    }
+
+    .e-schedule .e-schedule-toolbar .e-toolbar-items .e-schedule-user-icon .e-tbar-btn:hover {
+        background-color: inherit;
+    }
+
+    .e-schedule .e-schedule-toolbar .e-toolbar-items .e-schedule-user-icon .e-tbar-btn-text {
+        display: none;
+    }
+
+    .e-schedule .e-schedule-toolbar .e-toolbar-pop .e-schedule-user-icon .e-tbar-btn-text {
+        padding-left: 8px !important;
+    }
+
+    .e-profile-wrapper {
+        width: 210px;
+        height: 80px;
+        background-color: #fafafa;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+
+    .e-profile-wrapper .profile-container {
+        display: flex;
+        padding: 10px;
+    }
+
+    .e-profile-wrapper .profile-image {
+        background-image: url('https://ej2.syncfusion.com/demos/src/schedule/images/nancy.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: inset 0 0 1px #e0e0e0, inset 0 0 14px rgba(0, 0, 0, 0.2);
+        width: 60px;
+        height: 60px;
+    }
+
+    .e-profile-wrapper .content-wrap {
+        padding-left: 10px;
+    }
+
+    .e-profile-wrapper .name {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-top: 2px;
+    }
+
+    .e-profile-wrapper .destination {
+        font-size: 12px;
+    }
+
+    .e-profile-wrapper .status-icon {
+        height:6px;
+        width:6px;
+        background:green;
+        border-radius:100%;
+        float:left;
+        margin-right:4px;
+        margin-top:4px;
+    }
+
+    .e-profile-wrapper .status {
+        font-size: 11px;
+    }
+</style>
+<script type="text/javascript">
+    var profilePopup;
+    function onActionBegin(args) {
+        if (args.requestType === 'toolbarItemRendering') {
+            var userIconItem = {
+                align: 'Right', prefixIcon: 'user-icon', text: 'Nancy', cssClass: 'e-schedule-user-icon'
+            };
+            args.items.push(userIconItem);
+        }
+    }
+    function onActionComplete(args) {
+        var scheduleElement = document.getElementById('schedule');
+        if (args.requestType === 'toolBarItemRendered') {
+            var userIconEle = scheduleElement.querySelector('.e-schedule-user-icon');
+            userIconEle.onclick = function () {
+                profilePopup.relateTo = userIconEle;
+                profilePopup.dataBind();
+                if (profilePopup.element.classList.contains('e-popup-close')) {
+                    profilePopup.show();
+                } else {
+                    profilePopup.hide();
+                }
+            };
+        }
+        var userContentEle = ej.base.createElement('div', {
+            className: 'e-profile-wrapper'
+        });
+        scheduleElement.parentElement.appendChild(userContentEle);
+
+        var userIconEle = scheduleElement.querySelector('.e-schedule-user-icon');
+        var getDOMString = ej.base.compile('<div class="profile-container"><div class="profile-image">' +
+            '</div><div class="content-wrap"><div class="name">Nancy</div>' +
+            '<div class="destination">Product Manager</div><div class="status">' +
+            '<div class="status-icon"></div>Online</div></div></div>');
+        var output = getDOMString({});
+        profilePopup = new ej.popups.Popup(userContentEle, {
+            content: output[0],
+            relateTo: userIconEle,
+            position: { X: 'left', Y: 'bottom' },
+            collision: { X: 'flip', Y: 'flip' },
+            targetType: 'relative',
+            viewPortElement: scheduleElement,
+            width: 210,
+            height: 80
+        });
+        profilePopup.hide();
+    }
+</script>

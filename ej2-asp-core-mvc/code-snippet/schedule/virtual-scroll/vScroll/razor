@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("650px")
+    .SelectedDate(new DateTime(2018, 4, 1))
+    .CurrentView(View.TimelineMonth)
+    .Views(view => {
+        view.Option(View.TimelineMonth).AllowVirtualScrolling(true).Add();
+    })
+    .Group(group => group.EnableCompactView(false).Resources(ViewBag.Resource))
+    .Resources(res => {
+        res.DataSource(ViewBag.resourcesData).Field("ResourceId").Title("Resource").Name("Resources").TextField("Text").IdField("Id").ColorField("Color").AllowMultiple(true).Add();
+    })
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .Render()
+)

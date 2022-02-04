@@ -1,0 +1,13 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Initialize file manager component with ASP.NET Core service-->
+        <!--Replace the hosted port number in the place of "{port}"-->
+        <ejs-filemanager id="filemanager">
+                    url="http://localhost:{port}/api/SQLProvider/SQLFileOperations",
+                    getImageUrl="http://localhost:{port}/api/SQLProvider/SQLGetImage"
+                    downloadUrl="http://localhost:{port}/api/SQLProvider/SQLDownload"
+                    uploadUrl="http://localhost:{port}/api/SQLProvider/SQLUpload">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+    </div>
+</div>

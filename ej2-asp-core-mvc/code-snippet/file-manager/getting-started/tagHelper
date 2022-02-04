@@ -1,0 +1,13 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Filemanager element declaration -->
+        <ejs-filemanager id="file">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations">
+            </e-filemanager-ajaxsettings>
+            <e-filemanager-contextmenusettings visible="false"></e-filemanager-contextmenusettings>
+            <e-filemanager-navigationpanesettings visible="false"></e-filemanager-navigationpanesettings>
+            <e-filemanager-toolbarsettings visible="false"></e-filemanager-toolbarsettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>

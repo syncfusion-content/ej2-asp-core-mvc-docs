@@ -185,16 +185,16 @@ Html elements can be embedded in the diagram using [`Html`](https://help.syncfus
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/diagram/shapes/HTML_Template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HTML_Node_ With_Template.cshtml" %}
-{% include code-snippet/diagram/shapes/HTML_Template/HTML_Node_ With_Template.cshtml %}
+{% highlight c# tabtitle="HTML_Node_With_Template.cshtml" %}
+{% include code-snippet/diagram/shapes/HTML_Template/HTML_Node_With_Template.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="HTML_Node_ With_Template.cshtml" %}
-{% include code-snippet/diagram/shapes/HTML_Template/HTML_Node_ With_Template.cshtml %}
+{% highlight c# tabtitle="HTML_Node_With_Template.cshtml" %}
+{% include code-snippet/diagram/shapes/HTML_Template/HTML_Node_With_Template.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Height("auto")
+    .Width("auto")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.appointments })
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)

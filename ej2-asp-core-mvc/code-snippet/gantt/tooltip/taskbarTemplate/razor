@@ -1,0 +1,8 @@
+
+            @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+             ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Child("SubTasks").Duration("Duration").Progress(
+                 "Progress")).TooltipSettings(ts => ts.Taskbar("#taskbarTooltip")).Render()
+   
+    <script type="text/x-jsrender" id="taskbarTooltip">
+        <div>TaskID: ${TaskId}</div>
+    </script>

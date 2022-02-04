@@ -1,0 +1,3 @@
+@Html.EJS().RichTextEditor("defaultRTE").ContentTemplate(@<p>
+    In Rich text Editor, the enter key and shift + enter key actions can be customized using the enterKey and shiftEnterKey APIs.
+</p>).ShiftEnterKey(Syncfusion.EJ2.RichTextEditor.ShiftEnterKey.BR).Render()

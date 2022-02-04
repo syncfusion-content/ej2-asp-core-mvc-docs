@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Readonly(true)
+    .SelectedDate(new DateTime(2020, 9, 20))
+    .Created("created")
+    .Render()
+)
+
+<script type="text/javascript">
+    function created(args) {
+        class CustomAdaptor extends ej.data.ODataV4Adaptor {
+            processResponse() {
+                var i = 0;
+                // calling base class processResponse function
+                var original = super.processResponse.apply(this, arguments);
+                // adding employee id
+                original.forEach(function (item) { item['EmpID'] = ++i });
+                return original;
+            }
+        }
+        var dataManager = new ej.data.DataManager({
+            url: 'https://ej2services.syncfusion.com/production/web-services/api/Schedule',
+            adaptor: new CustomAdaptor
+        });
+        var schObj = document.querySelector('.e-schedule').ej2_instances[0];
+        schObj.eventSettings.dataSource = dataManager;
+    }
+</script>

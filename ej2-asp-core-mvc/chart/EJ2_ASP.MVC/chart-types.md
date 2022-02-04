@@ -382,10 +382,10 @@ To render a 100% stacked area series, use series [`Type`](https://help.syncfusio
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/area-charts/100%stackedarea/tagHelper %}
+{% include code-snippet/chart/series/area-charts/100perstackedarea/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedarea100.cs" %}
-{% include code-snippet/chart/series/area-charts/100%stackedarea/stackedarea100.cs %}
+{% include code-snippet/chart/series/area-charts/100perstackedarea/stackedarea100.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -393,10 +393,10 @@ To render a 100% stacked area series, use series [`Type`](https://help.syncfusio
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/area-charts/100%stackedarea/razor %}
+{% include code-snippet/chart/series/area-charts/100perstackedarea/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedarea100.cs" %}
-{% include code-snippet/chart/series/area-charts/100%stackedarea/stackedarea100.cs %}
+{% include code-snippet/chart/series/area-charts/100perstackedarea/stackedarea100.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -618,10 +618,10 @@ To render a 100% stacked column series, use series [`Type`](https://help.syncfus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/column-charts/100%stackedcolumn/tagHelper %}
+{% include code-snippet/chart/series/column-charts/100perstackedcolumn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedcolumn100.cs" %}
-{% include code-snippet/chart/series/column-charts/100%stackedcolumn/stackedcolumn100.cs %}
+{% include code-snippet/chart/series/column-charts/100perstackedcolumn/stackedcolumn100.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -629,10 +629,10 @@ To render a 100% stacked column series, use series [`Type`](https://help.syncfus
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/column-charts/100%stackedcolumn/razor %}
+{% include code-snippet/chart/series/column-charts/100perstackedcolumn/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedcolumn100.cs" %}
-{% include code-snippet/chart/series/column-charts/100%stackedcolumn/stackedcolumn100.cs %}
+{% include code-snippet/chart/series/column-charts/100perstackedcolumn/stackedcolumn100.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -801,10 +801,10 @@ To render a 100% stacked bar series, use series [`Type`](https://help.syncfusion
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/100%stackedbar/tagHelper %}
+{% include code-snippet/chart/series/bar-charts/100perstackedbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedbar100.cs" %}
-{% include code-snippet/chart/series/bar-charts/100%stackedbar/stackedbar100.cs %}
+{% include code-snippet/chart/series/bar-charts/100perstackedbar/stackedbar100.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -812,10 +812,10 @@ To render a 100% stacked bar series, use series [`Type`](https://help.syncfusion
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/bar-charts/100%stackedbar/razor %}
+{% include code-snippet/chart/series/bar-charts/100perstackedbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Stackedbar100.cs" %}
-{% include code-snippet/chart/series/bar-charts/100%stackedbar/stackedbar100.cs %}
+{% include code-snippet/chart/series/bar-charts/100perstackedbar/stackedbar100.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

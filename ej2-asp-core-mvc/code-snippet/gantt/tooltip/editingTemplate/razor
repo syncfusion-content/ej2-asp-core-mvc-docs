@@ -1,0 +1,8 @@
+
+   @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate"
+   ).EndDate("EndDate").Child("SubTasks").Duration("Duration").Progress("Progress")).TooltipSettings(ts => ts.Editing("#editingTooltip")
+   ).EditSettings(es=>es.AllowTaskbarEditing(true)).Render()
+   
+    <script type="text/x-jsrender" id="editingTooltip">
+        <div>Duration : ${duration}</div>
+    </script>

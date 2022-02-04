@@ -1,0 +1,14 @@
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id(
+      "TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+      ).SelectionSettings(ss=>ss.Mode(Syncfusion.EJ2.Grids.SelectionMode.Row).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).RowSelected("rowSelected").Render()
+
+    <script>
+        function rowSelected(args) {
+            var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+            var selectedrowindex = ganttObj.selectionModule.getSelectedRowIndexes();  // get the selected row indexes.
+            alert(selectedrowindex); // to alert the selected row indexes.
+            var selectedrecords = ganttObj.selectionModule.getSelectedRecords();  // get the selected records.
+            console.log(selectedrecords); // to print the selected records in console window.
+        }
+
+</script>

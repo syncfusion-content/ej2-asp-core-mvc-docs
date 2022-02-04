@@ -1,0 +1,17 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@Html.AntiForgeryToken()
+
+<form method="post"> 
+    <div class="form-group">
+        <ejs-richtexteditor name="comment" id="commentRTE" value="@Model.Value">
+        </ejs-richtexteditor>
+    </div>
+
+    <br />
+    <input type="submit" />
+</form>

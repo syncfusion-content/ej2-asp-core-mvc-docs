@@ -1,0 +1,11 @@
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+  ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).GridLines(
+                Syncfusion.EJ2.Gantt.GridLine.Both).QueryCellInfo("queryCellInfo").Render()
+
+    <script>
+        function queryCellInfo(args) {
+            if (args.data['TaskId'] == 4 && args.column.field === 'TaskName') {
+                args.rowSpan = 2;
+            }
+        }
+       </script>

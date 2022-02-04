@@ -1,0 +1,16 @@
+<ejs-gantt id='GanttContainer' dataSource="ViewBag.DataSource" allowExcelExport="true"
+    toolbar="@(new List<string>() { "ExcelExport"})" toolbarClick="toolbarClick" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" child="SubTasks">
+    </e-gantt-taskfields>
+</ejs-gantt>
+<script>
+    function toolbarClick(args) { 
+        if (args.item.id === 'GanttContainer_excelexport') {
+            var excelExportProperties = {
+                dataSource: [ganttObj.dataSource[1]]
+            };
+            var gantt = document.getElementById("GanttContainer").ej2_instances[0];
+            gantt.excelExport(excelExportProperties);
+        }
+    }
+</script>

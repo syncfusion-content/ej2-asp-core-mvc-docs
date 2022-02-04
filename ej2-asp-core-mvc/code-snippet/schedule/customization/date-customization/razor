@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Views(ViewBag.view)
+    .Height("550px")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .SelectedDate(new DateTime(2018, 2, 17))
+    .minDate(new DateTime(2017, 4, 17))
+    .maxDate(new DateTime(2018, 5, 17))
+    .Render()
+)

@@ -1,0 +1,20 @@
+@Html.EJS().Button("clear").Content("Clear Search").CssClass("e-primary").Render()
+
+    @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+     ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress(
+         "Progress").Child("SubTasks")).Toolbar(new List<string>() {
+     "Search" }).SearchSettings(search =>
+                             {
+                                 search.Fields(new string[] { "TaskName" })
+                                     .Operator("contains")
+                                     .Key("Perform")
+                                     .IgnoreCase(true);
+                             }).Render()
+			
+    <script>
+        document.getElementById('clear').addEventListener('click', function (args) {
+            var ganttObj = document.getElementById('Gantt').ej2_instances[0];
+            ganttObj.searchSettings.key = "";
+        });
+
+    </script>

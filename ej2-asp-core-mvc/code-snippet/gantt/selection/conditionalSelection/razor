@@ -1,0 +1,17 @@
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id(
+      "TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+      ).SelectionSettings(ss=>ss.Mode(Syncfusion.EJ2.Grids.SelectionMode.Row).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).DataBound("dataBound").Render()
+
+    <script>
+        function dataBound(args) {
+            var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+            var rowIndexes = [];
+            ganttObj.treeGrid.grid.dataSource.forEach((data, index) => {
+                if (data.TaskId === 3 || data.TaskId === 4) {
+                    rowIndexes.push(index);
+                }
+            });
+            ganttObj.selectionModule.selectRows(rowIndexes);
+        }
+
+</script>

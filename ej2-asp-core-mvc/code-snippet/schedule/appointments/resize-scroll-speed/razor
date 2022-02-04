@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Height("550px")
+    .ResizeStart("onStart")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.appointments })
+    .SelectedDate(new DateTime(2018, 1, 28))
+    .Render()
+)
+
+<script type="text/javascript">
+    function onStart(args) {
+        args.scroll = { enable: true, scrollBy: 5, timeDelay: 200 };
+    }
+</script>

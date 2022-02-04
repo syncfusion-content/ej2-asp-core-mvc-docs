@@ -1,0 +1,14 @@
+    @Html.EJS().Gantt("DragAndDrop").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowRowDragAndDrop(true).Height("450px"
+    ).HighlightWeekends(true).TreeColumnIndex(1).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate(
+        "EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").Child("SubTasks")).RowDragStartHelper(
+            "rowDragStartHelper").ProjectStartDate("03/24/2019").ProjectEndDate("07/06/2019").Render()
+         
+  <script>
+    function rowDragStartHelper(args) {
+        var record = args.data[0] ? args.data[0] : args.data;
+        var taskId = record.ganttProperties.taskId;
+        if (taskId <= 4) {
+            args.cancel = true;
+        }
+    }
+  </script>

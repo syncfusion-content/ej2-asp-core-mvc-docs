@@ -1,0 +1,18 @@
+@{
+    string[] items = new string[] { "NewFolder", "Refresh", "View", "Details" };
+}
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Filemanager element declaration -->
+        <ejs-filemanager id="file">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+            <e-filemanager-toolbarsettings items="items">
+            </e-filemanager-toolbarsettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>

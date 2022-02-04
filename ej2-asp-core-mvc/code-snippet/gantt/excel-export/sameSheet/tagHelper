@@ -1,0 +1,26 @@
+<ejs-gantt id='GanttContainer1' dataSource="ViewBag.FirstData" height="280px" allowExcelExport="true"
+    toolbar="@(new List<string>() { "ExcelExport"})" toolbarClick="toolbarClick" treeColumnIndex="1" projectStartDate="03/31/2019" projectEndDate="04/14/2019">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" child="SubTasks">
+    </e-gantt-taskfields>
+</ejs-gantt>
+
+<ejs-gantt id='GanttContainer2' dataSource="ViewBag.FirstData" height="250px" allowExcelExport="true" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" child="SubTasks">
+    </e-gantt-taskfields>
+</ejs-gantt>
+
+<script>
+    function toolbarClick(args) {
+        if (args.item.id === 'GanttContainer1_excelexport') {
+            var firstGantt = document.getElementById("GanttContainer1").ej2_instances[0];
+            var secondGantt = document.getElementById("GanttContainer2").ej2_instances[0];
+            var appendExcelExportProperties = {
+                multipleExport: { type: 'AppendToSheet', blankRows: 2 }
+            };
+            var firstGanttExport = firstGantt.excelExport(appendExcelExportProperties, true);
+            firstGanttExport.then((fData) => {
+                secondGantt.excelExport(appendExcelExportProperties, false, fData);
+            });
+        } 
+    }
+</script>

@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 2, 15)" views="@ViewBag.view" cssClass="schedule-cell-dimension">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<style>
+    .schedule-cell-dimension.e-schedule .e-vertical-view .e-date-header-wrap table col,
+    .schedule-cell-dimension.e-schedule .e-vertical-view .e-content-wrap table col {
+        width: 200px;
+    }
+
+    .schedule-cell-dimension.e-schedule .e-vertical-view .e-time-cells-wrap table td,
+    .schedule-cell-dimension.e-schedule .e-vertical-view .e-work-cells {
+        height: 100px;
+    }
+
+    .schedule-cell-dimension.e-schedule .e-month-view .e-work-cells,
+    .schedule-cell-dimension.e-schedule .e-month-view .e-date-header-wrap table col {
+        width: 200px;
+    }
+
+    .schedule-cell-dimension.e-schedule .e-month-view .e-work-cells {
+        height: 200px;
+    }
+</style>

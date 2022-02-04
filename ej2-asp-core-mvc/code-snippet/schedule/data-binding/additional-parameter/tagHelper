@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Schedule
+
+@{
+    var dataManager = new DataManager() {
+        Url = "https://ej2services.syncfusion.com/development/web-services/odata/",
+        Adaptor = "ODataV4Adaptor",
+        CrossDomain = true
+    };
+}
+
+<ejs-schedule id="schedule" width="100%" height="550" selectedDate="new DateTime(2017, 6, 11)" readonly="true">
+    <e-schedule-eventsettings dataSource="dataManager" query= "new ej.data.Query().from('Events').addParams('readOnly', 'true')">
+    </e-schedule-eventsettings>
+</ejs-schedule>

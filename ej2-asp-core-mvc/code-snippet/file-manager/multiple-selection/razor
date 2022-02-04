@@ -1,0 +1,13 @@
+<div class="control-section">
+    <div class="sample-container">
+        <!--  Filemanager element declaration -->
+        @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+            Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).AllowMultiSelection(true).View(Syncfusion.EJ2.FileManager.ViewType.Details).Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>

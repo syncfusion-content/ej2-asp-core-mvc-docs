@@ -1,0 +1,30 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .RenderCell("onRender")
+    .Group(group => group.Resources(ViewBag.Resources))
+    .Resources(res =>
+    {
+        res.AllowMultiple(false).DataSource(ViewBag.Rooms).Field("RoomId").Title("Room").Name("Rooms").TextField("RoomText").IdField("Id").ColorField("RoomColor").Add();
+        res.AllowMultiple(true).DataSource(ViewBag.Owners).Field("OwnerId").Title("Owner").Name("Owners").TextField("OwnerText").IdField("Id").GroupIDField("OwnerGroupId").ColorField("OwnerColor").Add();
+    })
+    .Views(view =>
+    {
+        view.Option(View.TimelineWeek).Add();
+        view.Option(View.TimelineMonth).Add();
+        view.Option(View.Agenda).Add();
+    })
+    .EventSettings(e => e.DataSource(ViewBag.datasource))
+    .SelectedDate(new DateTime(2018, 4, 1))
+    .Render()
+)
+
+<script type="text/javascript">
+    function onRender(args) {
+        if (args.elementType == 'resourceGroupCells' && args.element.className.indexOf('e-work-hours') > 0) {
+            args.element.style.background = "#FAFAE3";
+        }
+    }
+</script>

@@ -1,0 +1,20 @@
+<ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" allowSelection="true"  dataBound="dataBound">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                         endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+                    </e-gantt-taskfields>
+                    <e-gantt-selectionSettings mode="Row" type="Multiple"></e-gantt-selectionSettings>
+                </ejs-gantt>
+
+    <script>
+        function dataBound(args) {
+            var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+            var rowIndexes = [];
+            ganttObj.treeGrid.grid.dataSource.forEach((data, index) => {
+                if (data.TaskId === 3 || data.TaskId === 4) {
+                    rowIndexes.push(index);
+                }
+            });
+            ganttObj.selectionModule.selectRows(rowIndexes);
+        }
+
+</script>

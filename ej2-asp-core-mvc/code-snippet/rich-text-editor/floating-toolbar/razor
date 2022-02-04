@@ -1,0 +1,39 @@
+@using Syncfusion.EJ2.RichTextEditor
+<div class="control-wrapper">
+    <div class="control-section">
+        @Html.EJS().RichTextEditor("toolbar-floating").ContentTemplate(@<div>
+            <p>
+                The Rich Text Editor control is WYSIWYG ('what you see is what you get') editor that provides the best user experience to create and update the content.
+                Users can format their content using standard toolbar commands.
+            </p>
+            <p><b> Key features:</b></p>
+            <ul>
+                <li><p> Provides &lt; IFRAME &gt; and &lt; DIV &gt; modes </p></li>
+                <li><p> Capable of handling markdown editing.</p></li>
+                <li><p> Contains a modular library to load the necessary functionality on demand.</p></li>
+                <li><p> Provides a fully customizable toolbar.</p></li>
+                <li><p> Provides HTML view to edit the source directly for developers.</p></li>
+                <li><p> Supports third - party library integration.</p></li>
+                <li><p> Allows preview of modified content before saving it.</p></li>
+                <li><p> Handles images, hyperlinks, video, hyperlinks, uploads, etc.</p></li>
+                <li><p> Contains undo / redo manager.</p></li>
+                <li><p> Creates bulleted and numbered lists.</p></li>
+            </ul>
+        </div>).Created("created").Height("720px").ToolbarSettings(e => { e.Type(ToolbarType.Expand).EnableFloating(false); }).Render()
+    </div>
+    <div class="col-lg-4">
+        <span id="props"> Enable/Disable Floating: </span>
+        @Html.EJS().CheckBox("float").Checked(false).Label("Enable Floating").Change("checkchange").Render()
+    </div>
+</div>
+
+<script type="text/javascript">
+    var defaultRTE;
+    function created() {
+        defaultRTE = this;
+    }
+    function checkchange(args) {
+        defaultRTE.toolbarSettings.enableFloating = args.checked;
+        defaultRTE.dataBind();
+    }
+</script>

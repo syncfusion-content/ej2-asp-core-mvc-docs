@@ -1,0 +1,75 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 2, 15)">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource" enableTooltip="true" tooltipTemplate="#template">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<script id="template" type="text/x-template">
+    <div class="tooltip-wrap">
+        <div class="image ${EventType}"></div>
+        <div class="content-area">
+            <div class="name">${Subject}</></div>
+            ${ if (City !== null && City !== undefined)} <div class="city">${City}</div>${/if}
+            <div class="time">From&nbsp;&nbsp;${StartTime.toLocaleString()}</div>
+            <div class="time">To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;${EndTime.toLocaleString()} </div>
+        </div>
+    </div>
+</script>
+
+<style>
+    .e-schedule-event-tooltip .tooltip-wrap {
+        display: flex;
+    }
+
+        .e-schedule-event-tooltip .tooltip-wrap .content-area {
+            padding-left: 6px;
+            font-size: 12px;
+        }
+
+        .e-schedule-event-tooltip .tooltip-wrap .name {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .e-schedule-event-tooltip .tooltip-wrap .image {
+            background-image: url('https://ej2.syncfusion.com/demos/src/schedule/images/public-event.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+        }
+
+        .e-schedule-event-tooltip .tooltip-wrap .maintenance {
+            background-image: url('https://ej2.syncfusion.com/demos/src/schedule/images/maintenance.png');
+        }
+
+    .fabric .e-schedule-event-tooltip .tooltip-wrap .maintenance, .highcontrast .tooltip-wrap .maintenance {
+        background-image: url('https://ej2.syncfusion.com/demos/src/schedule/images/maintenance1.png');
+    }
+
+    .e-schedule-event-tooltip.tooltip-wrap.public-event {
+        background-image: url('https://ej2.syncfusion.com/demos/src/schedule/images/public-event.png');
+    }
+
+    .fabric .e-schedule-event-tooltip .tooltip-wrap .public-event, .highcontrast .tooltip-wrap .public-event {
+        background-image: url('https://ej2.syncfusion.com/demos/src/schedule/images/public-event1.png');
+    }
+
+    .e-schedule-event-tooltip .tooltip-wrap .family-event {
+        background-image: url('https://ej2.syncfusion.com/demos/src/schedule/images/family-event.png');
+    }
+
+    .fabric .e-schedule-event-tooltip .tooltip-wrap .family-event, .highcontrast .tooltip-wrap .family-event {
+        background-image: url('https://ej2.syncfusion.com/demos/src/schedule/images/family-event1.png');
+    }
+
+    .e-schedule-event-tooltip .tooltip-wrap .commercial-event {
+        background-image: url('https://ej2.syncfusion.com/demos/src/schedule/images/commercial-event.png');
+    }
+
+    .fabric .e-schedule-event-tooltip .tooltip-wrap .commercial-event, .highcontrast .tooltip-wrap .commercial-event {
+        background-image: url('https://ej2.syncfusion.com/demos/src/schedule/images/commercial-event1.png');
+    }
+</style>

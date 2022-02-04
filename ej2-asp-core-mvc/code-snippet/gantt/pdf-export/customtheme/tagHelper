@@ -1,0 +1,40 @@
+<ejs-gantt id='GanttContainer' dataSource="ViewBag.DataSource" toolbar="@(new List<string>() { "PdfExport" })"
+           toolbarClick="toolbarClick" allowPdfExport="true">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" child="SubTasks">
+    </e-gantt-taskfields>
+</ejs-gantt>
+<script>
+    function toolbarClick(args) {
+        var gantt = document.getElementById("GanttContainer").ej2_instances[0];
+        if (args.item.id === 'GanttContainer_pdfexport') {
+            var exportProperties = {
+                fontFamily: 1,
+                columnHeader: {
+                    backgroundColor: new ej.pdfexport.PdfColor(179, 219, 255)
+                },
+                taskbar: {
+                    taskColor: new ej.pdfexport.PdfColor(240, 128, 128),
+                    taskBorderColor: new ej.pdfexport.PdfColor(240, 128, 128),
+                    progressColor: new ej.pdfexport.PdfColor(205, 92, 92),
+                },
+                connectorLineColor: new ej.pdfexport.PdfColor(128, 0, 0),
+                footer: {
+                    backgroundColor: new ej.pdfexport.PdfColor(205, 92, 92)
+                },
+                timeline: {
+                    backgroundColor: new ej.pdfexport.PdfColor(179, 219, 255),
+                    padding: new PdfPaddings(5, 2, 0, 0),
+                },
+                label: {
+                    fontColor: new ej.pdfexport.PdfColor(128, 0, 0),
+                },
+                cell: {
+                    backgroundColor: new ej.pdfexport.PdfColor(240, 248, 255),
+                    fontColor: new ej.pdfexport.PdfColor(0, 0, 0),
+                    borderColor: new ej.pdfexport.PdfColor(179, 219, 255),
+                },
+            };
+            gantt.pdfExport(exportProperties);
+        }
+    }
+</script>

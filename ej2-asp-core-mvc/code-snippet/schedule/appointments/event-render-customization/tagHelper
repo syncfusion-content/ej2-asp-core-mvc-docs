@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" eventRendered="onEventRendered" selectedDate="new DateTime(2018, 1, 28)">
+    <e-schedule-eventsettings dataSource="@ViewBag.appointments">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onEventRendered(args) {
+        var scheduleObj = document.querySelector('.e-schedule').ej2_instances[0];
+        var categoryColor = args.data.CategoryColor;
+        if (!args.element || !categoryColor) {
+            return;
+        }
+        if (scheduleObj.currentView === 'Agenda') {
+            (args.element.firstChild).style.borderLeftColor = categoryColor;
+        } else {
+            args.element.style.backgroundColor = categoryColor;
+        }
+    }
+</script>

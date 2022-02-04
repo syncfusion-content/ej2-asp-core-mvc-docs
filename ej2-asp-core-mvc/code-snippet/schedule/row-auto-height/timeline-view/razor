@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("650px")
+    .RowAutoHeight(true)
+    .SelectedDate(new DateTime(2019, 1, 10))
+    .CurrentView(View.TimelineWeek)
+    .Views(ViewBag.view)
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .Render()
+)

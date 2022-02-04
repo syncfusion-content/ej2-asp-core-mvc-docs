@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(view => {
+        view.Option(View.Day).Add();
+        view.Option(View.Week).Add();
+        view.Option(View.WorkWeek).Add();
+    })
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .ShowWeekNumber(true)
+    .WeekRule(WeekRule.FirstFourDayWeek)
+    .WorkDays(ViewBag.workday)
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)

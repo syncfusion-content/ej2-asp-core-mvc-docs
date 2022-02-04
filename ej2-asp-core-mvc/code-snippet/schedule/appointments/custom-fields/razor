@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule").Height("550px")
+    .EventSettings(es =>
+        es.Fields(f =>
+            f.Subject(sub => sub.Name("TravelSummary"))
+            .Id("TravelId")
+            .IsAllDay(allday => allday.Name("FullDay"))
+            .Location(loc => loc.Name("Source"))
+            .Description(des => des.Name("Comments"))
+            .StartTime(st => st.Name("DepartureTime"))
+            .EndTime(et => et.Name("ArrivalTime"))
+            .StartTimezone(stz => stz.Name("Origin"))
+            .EndTimezone(etz => etz.Name("Destination"))
+        )
+        .DataSource(ViewBag.appointments)
+    )
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)

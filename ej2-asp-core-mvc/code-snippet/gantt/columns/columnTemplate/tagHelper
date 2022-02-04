@@ -1,0 +1,22 @@
+                <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" resources="ViewBag.projectResources">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                           endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks" resourceInfo="ResourceId">
+                    </e-gantt-taskfields>
+                     <e-gantt-resourcefields id="ResourceId" name="ResourceName"> </e-gantt-resourcefields>
+                    <e-gantt-columns>
+                        <e-gantt-column field="TaskId" headerText="Task Id" width="50"></e-gantt-column>
+                        <e-gantt-column field="TaskName" headerText="Task Name" width="250"></e-gantt-column>
+                        <e-gantt-column field="ResourceId" headerText="Resources" template="#columnTemplate"></e-gantt-column>
+                        <e-gantt-column field="StartDate"></e-gantt-column>
+                        <e-gantt-column field="Duration"></e-gantt-column>
+                        <e-gantt-column field="Progress"></e-gantt-column>
+                    </e-gantt-columns>					
+				</ejs-gantt>
+				
+    <script type="text/x-jsrender" id="columnTemplate">
+        ${if(ganttProperties.resourceNames)}
+        <div class="image">
+            <img src="${TaskID}.png" style="height:40px;width:40px" /><div style="display:inline-block;width:100%;position:relative;left:30px;top:-14px">${ganttProperties.resourceNames}</div>
+        </div>
+        ${/if}
+    </script>

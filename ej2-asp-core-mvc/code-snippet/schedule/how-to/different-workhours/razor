@@ -1,0 +1,28 @@
+@using Syncfusion.EJ2.Schedule
+
+<div>
+    @Html.EJS().Button("btn1").Content("Change the work hours").Render()
+</div>
+
+<div>
+    @(Html.EJS().Schedule("schedule")
+        .Width("100%")
+        .Height("550px")
+        .WorkHours(wh =>
+            wh.Highlight(true)
+            .Start("09:00")
+            .End("11:00")
+        )
+        .Views(ViewBag.view)
+        .SelectedDate(new DateTime(2018, 2, 15))
+        .Render()
+    )
+</div>
+
+<script type="text/javascript">
+    document.getElementById('btn1').onclick = function () {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var dates = [new Date(2018, 1, 15), new Date(2018, 1, 17)];
+        scheduleObj.setWorkHours(dates, '11:00', '20:00');
+    };
+</script>

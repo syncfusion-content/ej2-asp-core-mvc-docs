@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" showQuickInfo="false" cellClick="onCellClick" eventClick="onEventClick" selectedDate="new DateTime(2021, 7, 15)">
+    <e-schedule-eventsettings dataSource="@ViewBag.appointments">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onCellClick(args) {
+        var scheduleObj = document.querySelector('.e-schedule').ej2_instances[0];
+        scheduleObj.openEditor(args, 'Add');
+    }
+    function onEventClick(args) {
+        var scheduleObj = document.querySelector('.e-schedule').ej2_instances[0];
+
+        if (!(args.event).RecurrenceRule) {
+            scheduleObj.openEditor(args.event, 'Save');
+        }
+        else {
+            scheduleObj.quickPopup.openRecurrenceAlert();
+        }
+    }
+</script>

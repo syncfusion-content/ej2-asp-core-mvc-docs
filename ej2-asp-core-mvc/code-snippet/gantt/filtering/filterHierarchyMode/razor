@@ -1,0 +1,14 @@
+ @Html.EJS().DropDownList("FilterMode").DataSource((IEnumerable<object>)ViewBag.dropdata).Width("250px").Value("Parent").Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "id", Value = "mode" }).Change("onChange").Render()
+ @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+  ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+  ).AllowFiltering(true).Render()
+		 
+    <script>
+        function onChange(e) {
+            var mode = e.value;
+            var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+            ganttObj.filterSettings.hierarchyMode = mode;
+            ganttObj.clearFiltering();
+        }
+    </script>
+        

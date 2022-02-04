@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2.Schedule
+
+ @Html.EJS().Schedule("schedule").Width("100%").Height("100%").ActionBegin("onActionBegin").EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource }).SelectedDate(new DateTime(2019, 1, 10)).Render()
+
+<style>
+    .e-schedule .e-schedule-toolbar .e-icon-schedule-print::before {
+        content: '\e813';
+    }
+</style>
+
+<script type="text/javascript">
+    function onActionBegin(args) {
+        if (args.requestType === 'toolbarItemRendering') {
+            var exportItem = {
+                align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-print',
+                text: 'Print', cssClass: 'e-print', click: onPrintIconClick
+            };
+            args.items.push(exportItem);
+        }
+    }
+
+    function onPrintIconClick() {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        scheduleObj.print();
+    }
+</script>

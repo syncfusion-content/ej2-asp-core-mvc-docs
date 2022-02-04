@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.Schedule
+@{
+    Object sortComparer = "sortComparer";
+}
+
+<div class="col-lg-9 control-section">
+    <ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2017, 9, 29)">
+        <e-schedule-eventsettings dataSource="@ViewBag.datasource" sortComparer=sortComparer>
+        </e-schedule-eventsettings>
+    </ejs-schedule>
+</div>
+
+<script type="text/javascript">
+    function sortComparer (args) {
+        return args.sort(function (event1, event2) {
+            return event1.RankId.localeCompare(event2.RankId, undefined, { numeric: true });
+        });
+    };
+</script>

@@ -1,0 +1,43 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(ViewBag.view)
+    .PopupOpen("onPopupOpen")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)
+
+<script type="text/javascript">
+        function onPopupOpen(args) {
+        if (args.type === 'Editor') {
+            // Create required custom elements in initial time
+            if (!args.element.querySelector('.custom-field-row')) {
+                var row = ej.base.createElement('div', { className: 'custom-field-row' });
+                var formElement = args.element.querySelector('.e-schedule-form');
+                formElement.firstChild.insertBefore(row, args.element.querySelector('.e-title-location-row'));
+                var container = ej.base.createElement('div', { className: 'custom-field-container' });
+                var inputEle = ej.base.createElement('input', {
+                    className: 'e-field', attrs: { name: 'EventType' }
+                });
+                container.appendChild(inputEle);
+                row.appendChild(container);
+                var drowDownList = new ej.dropdowns.DropDownList({
+                    dataSource: [
+                        { text: 'Public Event', value: 'public-event' },
+                        { text: 'Maintenance', value: 'maintenance' },
+                        { text: 'Commercial Event', value: 'commercial-event' },
+                        { text: 'Family Event', value: 'family-event' }
+                    ],
+                    fields: { text: 'text', value: 'value' },
+                    value: (args.data).EventType,
+                    floatLabelType: 'Always', placeholder: 'Event Type'
+                });
+                drowDownList.appendTo(inputEle);
+                inputEle.setAttribute('name', 'EventType');
+            }
+        }
+    }
+</script>

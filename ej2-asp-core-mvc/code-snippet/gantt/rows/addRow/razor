@@ -1,0 +1,18 @@
+    @Html.EJS().Button("addRecord").Content("Add Record").CssClass("e-primary").Render()
+    @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
+        "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditSettings(es =>
+         es.AllowAdding(true)).Render()
+			
+    <script>
+	    document.getElementById('addRecord').addEventListener('click', function (args) {
+            var record = {
+                TaskId: 10,
+                TaskName: 'Newly Added Record',
+                StartDate: new Date('04/02/2019'),
+                Duration: 3,
+                Progress: 50
+            };
+            var ganttObj = document.getElementById('Gantt').ej2_instances[0];
+            ganttObj.editModule.addRecord(record, 'Below', 2);
+        });
+	</script>

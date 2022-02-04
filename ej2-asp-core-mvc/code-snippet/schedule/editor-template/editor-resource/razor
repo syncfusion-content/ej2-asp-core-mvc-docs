@@ -1,0 +1,99 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Group(group => group.Resources(ViewBag.Resources))
+    .Resources(res =>
+    {
+        res.DataSource(ViewBag.Owners)
+        .Field("OwnerId")
+        .Title("Owners")
+        .Name("Owners")
+        .AllowMultiple(true)
+        .TextField("text")
+        .IdField("id")
+        .ColorField("color")
+        .Add();
+    })
+    .PopupOpen("onPopupOpen")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .EditorTemplate("#EventEditorTemplate")
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)
+
+<style>
+    .custom-event-editor .e-textlabel {
+        padding-right: 15px;
+        text-align: right;
+    }
+
+    .custom-event-editor td {
+        padding: 7px;
+        padding-right: 16px;
+    }
+</style>
+
+<script id="EventEditorTemplate" type="text/x-template">
+    <table class="custom-event-editor" width="100%" cellpadding="5">
+        <tbody>
+            <tr>
+                <td class="e-textlabel">Summary</td>
+                <td colspan="4">
+                    <input id="Subject" class="e-field e-input" type="text" value="" name="Subject" style="width: 100%" />
+                </td>
+            </tr>
+            <tr>
+                <td class="e-textlabel">From</td>
+                <td colspan="4">
+                    <input id="StartTime" class="e-field" type="text" name="StartTime" />
+                </td>
+            </tr>
+            <tr>
+                <td class="e-textlabel">To</td>
+                <td colspan="4">
+                    <input id="EndTime" class="e-field" type="text" name="EndTime" />
+                </td>
+            </tr>
+            <tr>
+                <td class="e-textlabel">Owner</td>
+                <td colspan="4">
+                    <input type="text" id="OwnerId" name="OwnerId" class="e-field" style="width: 100%" />
+                </td>
+            </tr>
+            <tr>
+                <td class="e-textlabel">Reason</td>
+                <td colspan="4">
+                    <textarea id="Description" class="e-field e-input" name="Description" rows="3" cols="50" style="width: 100%; height: 60px !important; resize: vertical">
+                    </textarea>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</script>
+
+<script type="text/javascript">
+    function onPopupOpen (args) {
+        if (args.type === 'Editor') {
+            var ownerData = @Html.Raw(Json.Encode(ViewBag.Owners));
+            var startElement = args.element.querySelector('#StartTime');
+            if (!startElement.classList.contains('e-datetimepicker')) {
+                new ej.calendars.DateTimePicker({ value: new Date(startElement.value) || new Date() }, startElement);
+            }
+            var endElement = args.element.querySelector('#EndTime');
+            if (!endElement.classList.contains('e-datetimepicker')) {
+                new ej.calendars.DateTimePicker({ value: new Date(endElement.value) || new Date() }, endElement);
+            }
+            var processElement = args.element.querySelector('#OwnerId');
+            if (!processElement.classList.contains('e-multiselect')) {
+                var multiSelectObject = new ej.dropdowns.MultiSelect({
+                    placeholder: 'Select a owner',
+                    dataSource: ownerData,
+                    fields: { text: 'text', value: 'id' },
+                });
+                multiSelectObject.appendTo(processElement);
+            }
+        }
+    }
+</script>

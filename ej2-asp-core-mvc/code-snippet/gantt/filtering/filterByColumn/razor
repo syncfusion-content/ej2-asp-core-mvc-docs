@@ -1,0 +1,11 @@
+ @Html.EJS().Button("filter").Content("Filter TaskName column").CssClass("e-primary").Render()
+    @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => 
+    ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+    ).AllowFiltering(true).Render()
+		
+    <script>
+        document.getElementById('filter').addEventListener('click', function (args) {
+            var ganttObj = document.getElementById('Gantt').ej2_instances[0];
+              ganttObj.filterByColumn('TaskName', 'startswith', 'Iden');
+        });
+    </script>

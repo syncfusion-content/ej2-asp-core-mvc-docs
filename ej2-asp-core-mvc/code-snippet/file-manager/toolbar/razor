@@ -1,0 +1,19 @@
+@{
+    string[] items = new string[] { "NewFolder", "Refresh", "View", "Details" };
+}
+<div class="control-section">
+    <div class="sample-container">
+        <!--  Filemanager element declaration -->
+        @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings()
+        {
+            Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).ToolbarSettings(new Syncfusion.EJ2.FileManager.FileManagerToolbarSettings()
+        {
+            Items = items
+        }).Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>

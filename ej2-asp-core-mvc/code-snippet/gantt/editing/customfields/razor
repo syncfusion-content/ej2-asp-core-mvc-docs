@@ -1,0 +1,19 @@
+ @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+  ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks"
+  ).ResourceInfo("ResourceId").Notes("info").Dependency("Dependency")).Toolbar(new List<string>() { "Add"}).EditSettings(es=>
+   es.AllowEditing(true).AllowAdding(true).Mode(Syncfusion.EJ2.Gantt.EditMode.Dialog)).Resources((IEnumerable<object>)ViewBag.projectResources).Columns(col =>
+    {
+        col.Field("TaskId").Width(50).Add();
+        col.Field("TaskName").Add();
+        col.Field("isParent").HeaderText("Custom Column").Add();
+        col.Field("StartDate").Add();
+        col.Field("Duration").Add();
+        col.Field("Progress").Add();
+    }).ResourceFields(rf => rf.Id("ResourceId").Name("ResourceName")).EditDialogFields(edf =>
+    {
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General").Fields(new string[] { "TaskId", "TaskName", "isParent" }).Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).Add();
+    }).AddDialogFields(adf=> {
+        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General Tab").Fields(new string[] { "TaskId", "TaskName", "isParent" }).Add();
+        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency).Add();
+    }).Render()

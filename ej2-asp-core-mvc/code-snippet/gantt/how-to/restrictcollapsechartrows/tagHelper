@@ -1,0 +1,14 @@
+                <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" collapsing="collapsing" progress="Progress" child="SubTasks">
+                    </e-gantt-taskfields>
+                    <e-gantt-editsettings allowAdding="true" allowEditing="true"></e-gantt-editsettings>
+                </ejs-gantt>
+				
+				<script>
+				   function contextMenuOpen(args) {
+                       var gantt = document.getElementById("Gantt").ej2_instances[0];
+                       if (gantt.ganttChartModule.isExpandCollapseFromChart) {
+                           args.cancel = true;
+                           }
+                        }
+               </script>

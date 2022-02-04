@@ -1,0 +1,14 @@
+﻿<div class="control-section">
+    <div class="sample-container">
+        <!--  Initialize file manager component with ASP.NET Core service-->
+        <!--Replace the hosted port number in the place of "{port}"-->
+        @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+            Url = "http://localhost:{port}/api/FileManager/FileOperations",
+            GetImageUrl = "http://localhost:{port}/api/FileManager/GetImage",
+            UploadUrl = "http://localhost:{port}/api/FileManager/Upload",
+            DownloadUrl = "http://localhost:{port}/api/FileManager/Download"
+        }).Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>

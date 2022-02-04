@@ -1,0 +1,45 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 2, 15)" readonly="true">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource" template="@ViewBag.template">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<style>
+    .e-schedule .e-vertical-view .e-content-wrap .e-appointment {
+        border-radius: 8px;
+    }
+
+    .e-schedule .e-vertical-view .e-content-wrap .e-appointment .e-appointment-details {
+        padding: 0;
+        height: 100%;
+    }
+
+    .e-schedule .template-wrap {
+        height: 100%;
+        white-space: normal;
+    }
+
+    .e-schedule .template-wrap .subject {
+        font-weight: 600;
+        font-size: 15px;
+        padding: 4px 4px 4px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .e-schedule .template-wrap .time {
+        height: 50px;
+        font-size: 12px;
+        padding: 4px 6px 4px;
+        overflow: hidden;
+    }
+</style>
+
+<script type="text/javascript">
+    var instance = new ej.base.Internationalization();
+    function getTimeString(value) {
+        return instance.formatDate(value, { skeleton: 'hm' });
+    }
+</script>

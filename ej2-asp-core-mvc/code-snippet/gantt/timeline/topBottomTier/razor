@@ -1,0 +1,5 @@
+        @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
+            "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+            ).TimelineSettings(tl => tl.TopTier(tt => tt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Month).Format("MMM")).BottomTier(bt =>
+             bt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Day))).Render()
+        

@@ -1,0 +1,22 @@
+@using Syncfusion.EJ2.Schedule
+
+@{
+    var validationRules = new Dictionary<string, object>() { { "required", true } };
+    var locationValidationRules = new Dictionary<string, object>() { { "required", true }, { "regex", new string[] { "^[a-zA-Z0-9- ]*$", "Special character(s) not allowed in this field" } } };
+    var descriptionValidationRules = new Dictionary<string, object>() { { "required", true }, { "minLength", 5 }, { "maxLength", 500 } };
+}
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("650px")
+    .EventSettings(e => e.Fields(f => f.Subject(sub => sub.Name("Subject").Validation(validationRules))
+            .Location(loc => loc.Name("Location").Validation(locationValidationRules))
+            .Description(des => des.Name("Description").Validation(descriptionValidationRules))
+            .StartTime(st => st.Name("StartTime").Validation(validationRules))
+            .EndTime(et => et.Name("EndTime").Validation(validationRules))
+        )
+        .DataSource(ViewBag.datasource)
+    )
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)

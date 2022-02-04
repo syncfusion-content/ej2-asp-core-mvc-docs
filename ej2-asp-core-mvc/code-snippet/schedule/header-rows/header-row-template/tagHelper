@@ -1,0 +1,33 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="650px">
+    <e-schedule-header-rows>
+        <e-schedule-header-row option="Month" template="#month-template"></e-schedule-header-row>
+        <e-schedule-header-row option="Week" template="#week-template"></e-schedule-header-row>
+        <e-schedule-header-row option="Date"></e-schedule-header-row>
+    </e-schedule-header-rows>
+    <e-schedule-views>
+        <e-schedule-view option="TimelineDay"></e-schedule-view>
+        <e-schedule-view option="TimelineWeek"></e-schedule-view>
+        <e-schedule-view option="TimelineWorkWeek"></e-schedule-view>
+        <e-schedule-view option="TimelineMonth"></e-schedule-view>
+    </e-schedule-views>
+</ejs-schedule>
+
+<script id="month-template" type="text/x-template">
+    <span class="month">${getMonthDetails(data)}</span>
+</script>
+
+<script id="week-template" type="text/x-template">
+    <span class="week">${getWeekDetails(data)}</span>
+</script>
+
+<script type="text/javascript">
+    var instance = new ej.base.Internationalization();
+    window.getMonthDetails = function (value) {
+        return instance.formatDate(value.date, { skeleton: 'yMMMM' });
+    };
+    window.getWeekDetails = function (value) {
+        return 'Week ' + ej.schedule.getWeekNumber(value.date);
+    };
+</script>

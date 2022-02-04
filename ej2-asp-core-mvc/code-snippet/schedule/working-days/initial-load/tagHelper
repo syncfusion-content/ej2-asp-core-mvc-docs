@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="550px" created="onCreate">
+    <e-schedule-views>
+        <e-schedule-view option="Day"></e-schedule-view>
+        <e-schedule-view option="Week"></e-schedule-view>
+        <e-schedule-view option="WorkWeek"></e-schedule-view>
+    </e-schedule-views>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onCreate() {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var curTime = new Date();
+        var hours = curTime.getHours() < 10 ? '0' +curTime.getHours().toString() : curTime.getHours().toString();
+        var minutes = curTime.getMinutes().toString();
+        var time = hours + ':' + minutes;
+        scheduleObj.scrollTo(time);
+    }
+</script>

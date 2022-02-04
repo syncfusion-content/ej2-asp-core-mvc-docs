@@ -1,0 +1,5 @@
+
+   @Html.EJS().Gantt("Editing").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowSorting(true).TaskFields(ts => ts.Id("TaskId").Name(
+      "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").Child("SubTasks")
+      ).Render()
+   

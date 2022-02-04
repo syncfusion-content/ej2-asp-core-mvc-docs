@@ -1,0 +1,42 @@
+@{
+                    List<object> toolbarItems = new List<object>();
+                    toolbarItems.Add("Add");
+                    toolbarItems.Add("Edit");
+                    toolbarItems.Add("Update");
+                    toolbarItems.Add("Delete");
+                    toolbarItems.Add("Cancel");
+                    toolbarItems.Add("ExpandAll");
+                    toolbarItems.Add("CollapseAll");
+                    toolbarItems.Add(new { text = "Show/Hide Overallocation", tooltipText = "Show/Hide Overallocation", id = "showhidebar" });
+                }
+
+            @(Html.EJS().Gantt("ShowHideOverAlocation").DataSource((IEnumerable<object>
+            )ViewBag.DataSource).Height("450px").ViewType(Syncfusion.EJ2.Gantt.ViewType.ResourceView).HighlightWeekends(true).AllowSelection(true).AllowResizing(true).ShowOverAllocation(true)
+			.ToolbarClick("ToolbarClick").Toolbar(toolbarItems)
+            .TaskFields(ts => ts.Id("TaskId").Name("TaskName").Work("Work").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress")
+            .Dependency("Predecessor").ResourceInfo("Resources").Child("SubTasks"))
+            .TreeColumnIndex(1).ResourceFields(rf => rf.Id("ResourceId").Name("ResourceName").Unit("ResourceUnit").Group("ResourceGroup"))
+            .EditSettings(es => es.AllowAdding(true).AllowEditing(true).AllowDeleting(true).AllowTaskbarEditing(true).ShowDeleteConfirmDialog(true))
+            .Resources((IEnumerable<object>)ViewBag.Resources)
+            .Columns(col =>
+            {
+                col.Field("TaskId").Visible(false).Add();
+                col.Field("TaskName").HeaderText("Name").Width(250).Add();
+                col.Field("Work").HeaderText("Work").Add();
+                col.Field("Progress").Add();
+                col.Field("ResourceGroup").HeaderText("Group").Add();
+                col.Field("StartDate").Width(100).Add();
+                col.Field("Duration").Width(100).Add();
+            })
+            .LabelSettings(ls => ls.RightLabel("Resources").TaskLabel("Progress"))
+            .ProjectStartDate("03/28/2019").ProjectEndDate("05/18/2019")
+            .Render()
+            )
+      <script>
+        function ToolbarClick(args) {
+          if (args.item.id === 'showhidebar') {
+            var ganttObj = document.getElementById("ShowHideOverAlocation").ej2_instances[0];
+            ganttObj.showOverAllocation = ganttObj.showOverAllocation ? false : true;
+          }
+        };
+    </script>

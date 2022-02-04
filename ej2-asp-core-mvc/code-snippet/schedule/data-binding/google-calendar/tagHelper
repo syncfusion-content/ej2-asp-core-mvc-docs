@@ -1,0 +1,40 @@
+@using Syncfusion.EJ2
+
+@{
+    var calendarId = "5105trob9dasha31vuqek6qgp0@group.calendar.google.com";
+    var publicKey = "AIzaSyD76zjMDsL_jkenM5AAnNsORypS1Icuqxg";
+    var dataManager = new DataManager() { Url = "https://www.googleapis.com/calendar/v3/calendars/" + calendarId + "/events?key=" + publicKey, Adaptor = "WebApiAdaptor", CrossDomain = true };
+}
+
+<ejs-schedule id="schedule" width="100%" height="650px" selectedDate="new DateTime(2018, 11, 14)" readonly="true" dataBinding="onDataBinding">
+    <e-schedule-eventsettings dataSource="dataManager">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onDataBinding(e) {
+        var items = e.result.items;
+        var scheduleData = [];
+        if (items.length > 0) {
+            for (var i = 0; i < items.length; i++) {
+                var event = items[i];
+                var when = event.start.dateTime;
+                var start = event.start.dateTime;
+                var end = event.end.dateTime;
+                if (!when) {
+                    when = event.start.date;
+                    start = event.start.date;
+                    end = event.end.date;
+                }
+                scheduleData.push({
+                    Id: event.id,
+                    Subject: event.summary,
+                    StartTime: new Date(start),
+                    EndTime: new Date(end),
+                    IsAllDay: !event.start.dateTime
+                });
+            }
+        }
+        e.result = scheduleData;
+    }
+</script>

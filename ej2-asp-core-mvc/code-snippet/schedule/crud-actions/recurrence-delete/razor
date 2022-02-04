@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Button("btn1")
+    .Content("DELETE")
+    .Render()
+)
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .Views(ViewBag.view)
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)
+
+<script type="text/javascript">
+    document.getElementById('btn1').onclick = function () {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var Data = {
+            Id: 2,
+            Subject: 'Vacation',
+            RecurrenceID: 2,
+            StartTime: new Date(2018, 1, 12, 11, 0),
+            EndTime: new Date(2018, 1, 12, 12, 0),
+            IsAllDay: false,
+            RecurrenceRule: 'FREQ=DAILY;INTERVAL=1;COUNT=3'
+        };
+        scheduleObj.deleteEvent(Data, 'DeleteSeries');
+    };
+</script>

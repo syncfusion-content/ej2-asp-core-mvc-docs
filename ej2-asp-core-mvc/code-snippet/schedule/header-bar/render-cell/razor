@@ -1,0 +1,46 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(ViewBag.view)
+    .RenderCell("onRenderCell")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)
+
+<style>
+    .weather-text {
+        font-size: 11px;
+    }
+</style>
+<script type="text/javascript">
+    function getWeather(value) {
+        switch (value.getDay()) {
+            case 0:
+                return '<div class="weather-text">25°C</div>';
+            case 1:
+                return '<div class="weather-text">18°C</div>';
+            case 2:
+                return '<div class="weather-text">10°C</div>';
+            case 3:
+                return '<div class="weather-text">16°C</div>';
+            case 4:
+                return '<div class="weather-text">8°C</div>';
+            case 5:
+                return '<div class="weather-text">27°C</div>';
+            case 6:
+                return '<div class="weather-text">17°C</div>';
+            default:
+                return null;
+        }
+    }
+    function onRenderCell(args) {
+        if (args.elementType === 'monthCells') {
+            var ele = document.createElement('div');
+            ele.innerHTML = getWeather(args.date);
+            (args.element).appendChild(ele.firstChild);
+        }
+    }
+</script>

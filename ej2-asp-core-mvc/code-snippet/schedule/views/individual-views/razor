@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(ViewBag.view)
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)

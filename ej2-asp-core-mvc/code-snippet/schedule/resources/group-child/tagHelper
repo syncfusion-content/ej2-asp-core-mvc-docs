@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="550px" currentView="WorkWeek">
+    <e-schedule-group byGroupID="false" resources="@ViewBag.Resources"></e-schedule-group>
+    <e-schedule-resources>
+        <e-schedule-resource dataSource="@ViewBag.Projects" field="ProjectId" title=" Choose Project" name="Projects" textField="text" idField="id" colorField="color"></e-schedule-resource>
+        <e-schedule-resource dataSource="@ViewBag.Categories" field="CategoryId" title="Category" name="Categories" textField="text" idField="id" groupIDField="groupId" colorField="color" allowMultiple="true"></e-schedule-resource>
+    </e-schedule-resources>
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>

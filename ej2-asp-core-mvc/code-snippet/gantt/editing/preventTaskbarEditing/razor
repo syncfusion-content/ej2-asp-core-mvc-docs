@@ -1,0 +1,25 @@
+    @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskbarEditing("taskbarEditing").TaskFields(
+        ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+        ).EditSettings(es => es.AllowTaskbarEditing(true)).QueryTaskbarInfo("queryTaskbarInfo").Render()
+        
+    <script>
+        function taskbarEditing(args) {
+           if (args.data.TaskId == 4) // We can't edit Task Id 4
+                args.cancel = true;
+        }
+        function queryTaskbarInfo(args) {
+            if (args.data.TaskId == 6) {
+                args.taskbarElement.className += ' e-preventEdit' // Taskbar editing indicators are disabled
+            }
+        }
+    </script>
+
+    <style>
+        .e-gantt-chart .e-preventEdit .e-right-resize-gripper,
+        .e-gantt-chart .e-preventEdit .e-left-resize-gripper,
+        .e-gantt-chart .e-preventEdit .e-progress-resize-gripper,
+        .e-gantt-chart .e-preventEdit .e-left-connectorpoint-outer-div,
+        .e-gantt-chart .e-preventEdit .e-right-connectorpoint-outer-div {
+                         display: none;
+        }
+    </style>

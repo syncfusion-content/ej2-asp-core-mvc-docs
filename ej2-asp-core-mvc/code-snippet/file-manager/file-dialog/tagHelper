@@ -1,0 +1,77 @@
+@{
+    var defaultanimation = new Syncfusion.EJ2.Popups.DialogAnimationSettings { Effect = Syncfusion.EJ2.Popups.DialogEffect.None };
+}
+
+<div class=" control-section">
+    <div class="sample-container">
+        <div id='container' class="fileupload">
+            <ejs-uploader id="UploadFile"> </ejs-uploader>
+            <ejs-button id="openBtn" content="Browse..."></ejs-button>
+        </div>
+        <div id='target' class="control-section">
+            <ejs-dialog id="dialog" animationSettings="defaultanimation" width="850px" target="#target" visible="false" open="dialogOpen" close="dialogClose" showCloseIcon="true" header="Open">
+                <e-content-template>
+                    <ejs-filemanager id="filemanager" fileOpen="onFileOpen" allowMultiSelection="false">
+                        <e-filemanager-ajaxsettings  url="/Home/FileOperations"
+                                                    downloadUrl="/Home/Download"
+                                                    uploadUrl="/Home/Upload"
+                                                    getImageUrl="/Home/GetImage">
+                        </e-filemanager-ajaxsettings>
+                    </ejs-filemanager>
+                </e-content-template>
+            </ejs-dialog>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById("openBtn").addEventListener('click', function () {
+       var dialogObj = document.getElementById('dialog').ej2_instances[0];
+       dialogObj.show();
+       var filemanagerObj = document.getElementById('filemanager').ej2_instances[0];
+       filemanagerObj.path = "/";
+       filemanagerObj.refresh();
+    });
+    // Uploader will be shown, if Dialog is closed
+    function dialogClose() {
+        document.getElementById("container").style.display = "block";
+    }
+    // Uploader will be hidden, if Dialog is opened
+    function dialogOpen() {
+        document.getElementById("container").style.display = "none";
+    }
+    // File Manager's fileOpen event function
+    function onFileOpen(args) {
+        var file = args.fileDetails;
+        if (file.isFile) {
+            args.cancel = true;
+            var uploadObject = document.getElementById('UploadFile').ej2_instances[0];
+            var dialogObj = document.getElementById('dialog').ej2_instances[0];
+            uploadObject.files = [{ name: file.name, size: file.size, type: file.type }];
+            dialogObj.hide();
+        }
+    }
+
+</script>
+
+<style>
+
+    .fileupload {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    #openBtn {
+        position: absolute;
+        top: 67px;
+        margin-left: 13px;
+    }
+
+    #target {
+        height: 550px;
+    }
+
+    #dialog {
+        top: 20px !important;
+        max-height: 500px !important;
+    }
+</style>

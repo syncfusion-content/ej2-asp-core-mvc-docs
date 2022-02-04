@@ -1,0 +1,18 @@
+<div class="control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+            Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).UploadSettings(new Syncfusion.EJ2.FileManager.FileManagerUploadSettings()
+        {
+            MaxFileSize = 233332,
+            MinFileSize = 250,
+            AutoUpload = true
+        }).Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>

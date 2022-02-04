@@ -1,0 +1,28 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="100%" selectedDate="new DateTime(2019, 1, 10)" actionBegin="onActionBegin">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<style>
+    .e-schedule .e-schedule-toolbar .e-icon-schedule-print::before {
+        content: '\e813';
+    }
+</style>
+
+<script type="text/javascript">
+    function onActionBegin(args) {
+        if (args.requestType === 'toolbarItemRendering') {
+            var exportItem = {
+                align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-print',
+                text: 'Print', cssClass: 'e-print', click: onPrintIconClick
+            };
+            args.items.push(exportItem);
+        }
+    }
+
+    function onPrintIconClick() {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        scheduleObj.print();
+    }
+</script>

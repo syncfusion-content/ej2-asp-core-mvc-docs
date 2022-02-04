@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" currentView="Month" selectedDate="new DateTime(2018, 2, 15)" views="@ViewBag.view" popupOpen="onPopupOpen">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onPopupOpen(args) {
+        if (args.type === 'EventContainer') {
+            var instance = new ej.base.Internationalization();
+            var date = instance.formatDate(args.data.date, { skeleton: 'MMMEd' });
+            args.element.querySelector('.e-header-date').innerText = date;
+            args.element.querySelector('.e-header-day').innerText = 'Event count: ' + args.data.event.length;
+        }
+    }
+</script>

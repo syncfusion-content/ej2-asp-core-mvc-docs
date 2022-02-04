@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 2, 15)" views="@ViewBag.view" renderCell="onRenderCell">
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onRenderCell(args) {
+        if (args.element.classList.contains('e-work-hours') && (args.date.getDay() === 1)) {
+            args.element.style.background = '#1aaa55';
+        } else if (args.element.classList.contains('e-work-hours') && (args.date.getDay() === 2)) {
+            args.element.style.background = '#357cd2';
+        } else if (args.element.classList.contains('e-work-hours') && (args.date.getDay() === 3)) {
+            args.element.style.background = '#e2ff89';
+        } else if (args.element.classList.contains('e-work-hours') && (args.date.getDay() === 4)) {
+            args.element.style.background = '#f57f17';
+        } else if (args.element.classList.contains('e-work-hours') && (args.date.getDay() === 5)) {
+            args.element.style.background = '#00bdae';
+        }
+    }
+</script>

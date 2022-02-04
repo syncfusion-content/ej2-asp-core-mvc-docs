@@ -1,0 +1,24 @@
+                <ejs-button id="zoomIn" content="ZoomIn" cssClass="e-primary"></ejs-button>
+                <ejs-button id="zoomOut" content="ZoomOut" cssClass="e-primary"></ejs-button>
+                <ejs-button id="fitToProject" content="FitToProject" cssClass="e-primary"></ejs-button>
+                <ejs-gantt id='GanttZooming' dataSource="ViewBag.dataSource" height="450px"
+                           projectStartDate="03/24/2019" projectEndDate="04/28/2019">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress"
+                                        dependency="Predecessor" child="SubTasks">
+                    </e-gantt-taskfields>
+                    <e-gantt-labelSettings leftLabel="TaskName"></e-gantt-labelSettings>
+                </ejs-gantt>
+				
+ <script>
+    var ganttObj = document.getElementById('GanttZooming').ej2_instances[0];
+    document.getElementById('zoomIn').addEventListener('click', function () {
+        ganttObj.zoomIn();
+    });
+    document.getElementById('zoomOut').addEventListener('click', function () {
+        ganttObj.zoomOut();
+    });
+    document.getElementById('fitToProject').addEventListener('click', function () {
+        ganttObj.fitToProject();
+    });
+    
+</script>

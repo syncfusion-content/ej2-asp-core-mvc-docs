@@ -83,7 +83,7 @@ There are three types of [`wrapMode`](https://help.syncfusion.com/cr/aspnetcore-
 * **Header**: Auto wrap will be enabled only for the header.
 * **Content**: Auto wrap will be enabled only for the content.
 
-Note: When a column width is not specified, then auto wrap of columns will be adjusted with respect to the grid's width.
+N> When a column width is not specified, then auto wrap of columns will be adjusted with respect to the grid's width.
 
 In the following example, the [`wrapMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridTextWrapSettings.html#Syncfusion_EJ2_Grids_GridTextWrapSettings_WrapMode) is set to **Content**.
 

@@ -1,0 +1,63 @@
+@{
+    List<object> toolbarItems = new List<object>();
+    toolbarItems.Add("Add");
+    toolbarItems.Add("Edit");
+}
+
+
+
+<ejs-contextmenu id="contextmenu" items="ViewBag.menuItems" select="itemSelect"></ejs-contextmenu>
+
+<ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="450px" toolbar=toolbarItems toolbarClick="toolbarClick" >
+    <e-gantt-taskfields id="taskID" name="taskName" startDate="startDate"
+                        endDate="endDate" duration="duration" progress="progress" parentID="parentID">
+    </e-gantt-taskfields>
+    <e-gantt-editsettings allowEditing="true" allowAdding="true" mode="Dialog" allowTaskbarEditing="true">
+    </e-gantt-editsettings>
+
+</ejs-gantt>
+
+<script>
+    
+
+    function toolbarClick(args) {
+        if (args.item.text === "Add") {
+            args.cancel = true;
+            var contextMenuObj = document.getElementById("contextmenu").ej2_instances[0];
+            contextMenuObj.open(60, 78);
+        }
+    }
+    function itemSelect(args) {
+        var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+        if (args.item.text === "Bottom") {
+            ganttObj.editSettings.newRowPosition = "Bottom";
+            ganttObj.openAddDialog();
+        } else if (args.item.text === "Above") {
+            if (ganttObj.selectedRowIndex == -1) {
+                alert("Please select any row");
+            } else {
+                ganttObj.editSettings.newRowPosition = "Above";
+                ganttObj.openAddDialog();
+            }
+        } else if (args.item.text === "Below") {
+            if (ganttObj.selectedRowIndex == -1) {
+                alert("Please select any row");
+            } else {
+                ganttObj.editSettings.newRowPosition = "Below";
+                ganttObj.openAddDialog();
+            }
+            
+        } else if (args.item.text === "Child") {
+            if (ganttObj.selectedRowIndex == -1) {
+                alert("Please select any row");
+            } else {
+                ganttObj.editSettings.newRowPosition = "Child";
+                ganttObj.openAddDialog();
+            }
+        } else if (args.item.text === "Top") {
+            ganttObj.editSettings.newRowPosition = "Top";
+            ganttObj.openAddDialog();
+        }
+    }
+    
+</script>

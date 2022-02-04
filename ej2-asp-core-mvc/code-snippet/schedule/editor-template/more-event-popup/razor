@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(ViewBag.view)
+    .CurrentView(View.Month)
+    .MoreEventsClick("onMoreEventsClick")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)
+
+<script type="text/javascript">
+    function onMoreEventsClick(args) {
+        args.cancel = true;
+    }
+</script>

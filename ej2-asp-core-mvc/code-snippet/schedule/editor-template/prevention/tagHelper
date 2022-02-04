@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 2, 15)" views="@ViewBag.view" popupOpen="onPopupOpen">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onPopupOpen(args) {
+        args.cancel = true;
+    }
+</script>

@@ -1,0 +1,16 @@
+<ejs-gantt id='Gantt' treeColumnIndex="0" height="450px" actionFailure="actionFailure">
+                    <e-data-manager url="http://some.com/invalidUrl"></e-data-manager>
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                          duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentId">
+                    </e-gantt-taskfields>
+                </ejs-gantt>
+
+<script>
+function actionFailure(args) {
+    var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+    let span: HTMLElement = document.createElement('span');
+    ganttObj.element.parentNode.insertBefore(span, ganttObj.element);
+    span.style.color = '#FF0000'
+    span.innerHTML = 'Server exception: 404 Not found';
+}
+</script>

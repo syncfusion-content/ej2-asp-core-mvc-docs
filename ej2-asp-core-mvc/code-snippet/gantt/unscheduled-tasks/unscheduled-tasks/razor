@@ -1,0 +1,4 @@
+        @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").AllowUnscheduledTasks(true).TaskFields(ts =>
+         ts.Id("TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").EndDate("EndDate")).Render()
+
+        

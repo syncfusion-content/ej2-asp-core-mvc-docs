@@ -1,0 +1,6 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" allowDragAndDrop="false" selectedDate="new DateTime(2018, 1, 28)">
+    <e-schedule-eventsettings dataSource="@ViewBag.appointments">
+    </e-schedule-eventsettings>
+</ejs-schedule>

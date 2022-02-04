@@ -1,0 +1,46 @@
+@(Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("280px").AllowSelection(true)
+                    .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress")
+                    .Dependency("Predecessor").Child("SubTasks").ResourceInfo("Resources"))
+    .EditSettings(es => es.AllowEditing(true))
+    .Resources((IEnumerable<object>)ViewBag.Resources)
+    .ResourceFields(rf => rf.Id("ResourceId").Name("ResourceName"))
+    .LabelSettings(ls => ls.RightLabel("Resources"))
+    .Render()
+    )
+@(Html.EJS().TreeView("treedata").AllowDragAndDrop(true).Fields(field =>
+    field.Id("ResourceId").Text("ResourceName").DataSource(ViewBag.Resources))
+    .NodeDragStop("nodeDragStop")
+    .Render()
+    )
+<script>
+    function nodeDragStop(args) {
+        var ganttChart = document.getElementById('Gantt').ej2_instances[0];
+        var chartEle = ej.base.closest(args.target, '.e-chart-row');
+        var gridEle = ej.base.closest(args.target, '.e-row');
+        if (gridEle) {
+            var index = ganttChart.treeGrid.getRows().indexOf(gridEle);
+            ganttChart.selectRow(index);
+        }
+        var record = args.draggedNodeData;
+        var selectedData = ganttChart.flatData[ganttChart.selectedRowIndex];
+        var selectedDataResource = selectedData.taskData.Resources;
+        var resources = [];
+        if (selectedDataResource) {
+            for (var i = 0; i < selectedDataResource.length; i++) {
+                resources.push(selectedDataResource[i].ResourceId);
+            }
+        }
+        resources.push(parseInt(record.id));
+        if (chartEle || gridEle) {
+            var data = {
+                TaskId: selectedData.taskData.TaskId,
+                Resources: resources
+            };
+            ganttChart.updateRecordByID(data);
+            var elements = document.querySelectorAll('.e-drag-item');
+            while (elements.length > 0 && elements[0].parentNode) {
+                elements[0].parentNode.removeChild(elements[0]);
+            }
+        }
+    }
+</script>
