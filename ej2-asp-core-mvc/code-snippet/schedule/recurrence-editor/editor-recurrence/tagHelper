@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 2, 15)" views="@ViewBag.view" popupOpen="onPopupOpen">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onPopupOpen(args) {
+        if (args.type === 'Editor') {
+            var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+            scheduleObj.eventWindow.recurrenceEditor.frequencies = ['none', 'daily', 'weekly'];
+        }
+    }
+</script>

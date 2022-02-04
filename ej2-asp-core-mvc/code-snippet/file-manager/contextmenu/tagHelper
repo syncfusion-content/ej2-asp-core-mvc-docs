@@ -1,0 +1,20 @@
+@{
+    string[] files = new string[] { "Open", "|", "Details" };
+    string[] folder = new string[] { "Open", "|", "Details" };
+    string[] layout = new string[] { "SortBy", "View", "Refresh", "|", "Details" };
+}
+<div class=" control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        <ejs-filemanager id="filemanager">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+            <e-filemanager-contextmenusettings file="files" folder="folder" layout="layout">
+            </e-filemanager-contextmenusettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>

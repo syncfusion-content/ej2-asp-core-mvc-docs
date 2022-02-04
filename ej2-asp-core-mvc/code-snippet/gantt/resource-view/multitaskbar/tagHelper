@@ -1,0 +1,26 @@
+<ejs-gantt id='ResourceMultiTaskbar' dataSource="ViewBag.dataSource" resources="ViewBag.projectResources" 
+                           viewType="ResourceView" allowResizing="true" allowSelection="true" highlightWeekends="true"
+                           treeColumnIndex="1" height="450px" enableMultiTaskbar="true" collapseAllParentTasks="true"
+                           projectStartDate="03/28/2019" projectEndDate="05/18/2019"
+                           toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll" })">
+                    <e-gantt-editsettings allowAdding="true" allowEditing="true" allowDeleting="true"
+                                          allowTaskbarEditing="true" showDeleteConfirmDialog="true"></e-gantt-editsettings>
+                    <e-gantt-columns>
+                        <e-gantt-column field="TaskId"></e-gantt-column>
+                        <e-gantt-column field="TaskName" headerText="Name" width="250"></e-gantt-column>
+                        <e-gantt-column field="Work" headerText="Work"></e-gantt-column>
+                        <e-gantt-column field="Progress"></e-gantt-column>
+                        <e-gantt-column field="ResourceGroup" headerText="Group"></e-gantt-column>
+                        <e-gantt-column field="StartDate"></e-gantt-column>
+                        <e-gantt-column field="Duration"></e-gantt-column>
+                    </e-gantt-columns>
+                    <e-gantt-labelSettings taskLabel="TaskName"></e-gantt-labelSettings>
+                    <e-gantt-splitterSettings columnIndex="2"></e-gantt-splitterSettings>
+
+                    <e-gantt-resourcefields id="ResourceId" name="ResourceName" unit="ResourceUnit" group="ResourceGroup">
+                    </e-gantt-resourcefields>
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                                        endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor"
+                                        child="SubTasks" work="Work" expandState="isExpand" resourceInfo="Resources">
+                    </e-gantt-taskfields>
+                </ejs-gantt>

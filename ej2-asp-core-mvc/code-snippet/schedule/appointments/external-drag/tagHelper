@@ -1,0 +1,83 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="650px" currentView="Month" selectedDate="new DateTime(2018, 1, 28)" actionBegin="onActionBegin" drag="onItemDrag">
+    <e-schedule-views>
+        <e-schedule-view option="Month"></e-schedule-view>
+    </e-schedule-views>
+    <e-schedule-eventsettings dataSource="@ViewBag.appointments">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<ejs-treeview id="tree" allowDragAndDrop="true" nodeDragStop="onTreeDragStop" nodeDragging="onItemDrag">
+    <e-treeview-fields dataSource="ViewBag.treeDataSource" id="Id" text="Subject"></e-treeview-fields>
+</ejs-treeview>
+
+<script type="text/javascript">
+     var isTreeItemDropped = false;
+     var draggedItemId = '';
+
+    function onItemDrag(event) {
+        var scheduleObj = document.querySelector(".e-schedule").ej2_instances[0];
+        if (scheduleObj.isAdaptive) {
+            var classElement = scheduleObj.element.querySelector('.e-device-hover');
+            if (classElement) {
+                classElement.classList.remove('e-device-hover');
+            }
+            if (event.target.classList.contains('e-work-cells')) {
+                ej.base.addClass([event.target], 'e-device-hover');
+            }
+        }
+        if (document.body.style.cursor === 'not-allowed') {
+            document.body.style.cursor = '';
+        }
+        if (event.name == 'nodeDragging') {
+            var dragElementIcon = document.querySelectorAll('.e-drag-item .e-icon-expandable');
+            for (var i = 0; i < dragElementIcon.length; i++) {
+                dragElementIcon[i].style.display = 'none';
+            }
+        }
+    }
+
+    function onActionBegin(event) {
+        if (event.requestType === 'eventCreate' && isTreeItemDropped) {
+            var treeObj = document.querySelector(".e-treeview").ej2_instances[0];
+            var treeViewdata = treeObj.fields.dataSource;
+            var filteredPeople = treeViewdata.filter(function (item) { return item.Id !== parseInt(draggedItemId, 10); });
+            treeObj.fields.dataSource = filteredPeople;
+            var elements = document.querySelectorAll('.e-drag-item.treeview-external-drag');
+            for (var i = 0; i < elements.length; i++) {
+                remove(elements[i]);
+            }
+        }
+    }
+
+    function onTreeDragStop(event) {
+        var treeElement = ej.base.closest(event.target, '.e-treeview');
+        var scheduleObj = document.querySelector(".e-schedule").ej2_instances[0];
+        var classElement = scheduleObj.element.querySelector('.e-device-hover');
+        if (classElement) {
+            classElement.classList.remove('e-device-hover');
+        }
+        if (!treeElement) {
+            event.cancel = true;
+            var scheduleElement = ej.base.closest(event.target, '.e-content-wrap');
+            if (scheduleElement) {
+                var treeviewData = this.fields.dataSource;
+                if (event.target.classList.contains('e-work-cells')) {
+                    var filteredData =
+                        treeviewData.filter(function (item) { return item.Id === parseInt(event.draggedNodeData.id, 10); });                        
+                    var cellData = scheduleObj.getCellDetails(event.target);
+                    var resourceDetails = scheduleObj.getResourcesByIndex(cellData.groupIndex);
+                    var eventData = {
+                        Subject: filteredData[0].Subject,
+                        StartTime: cellData.startTime,
+                        EndTime: cellData.endTime
+                    };
+                    scheduleObj.addEvent(eventData);
+                    isTreeItemDropped = true;
+                    draggedItemId = event.draggedNodeData.id;
+                }
+            }
+        }
+    }
+</script>

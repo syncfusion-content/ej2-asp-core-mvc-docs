@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(view => {
+        view.Option(View.Month).Add();
+    })
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .RowAutoHeight(true)
+    .SelectedDate(new DateTime(2019, 1, 10))
+    .Render()
+)

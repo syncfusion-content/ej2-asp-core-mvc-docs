@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="550px" views="@ViewBag.view" currentView="WorkWeek" selectedDate="new DateTime(2018, 2, 14)">
+    <e-schedule-group allowGroupEdit="true" resources="@ViewBag.Resources"></e-schedule-group>
+    <e-schedule-resources>
+        <e-schedule-resource dataSource="@ViewBag.Conferences" field="ConferenceId" title="Conference" name="Conferences" textField="text" idField="id" colorField="color" allowMultiple="true"></e-schedule-resource>
+    </e-schedule-resources>
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>

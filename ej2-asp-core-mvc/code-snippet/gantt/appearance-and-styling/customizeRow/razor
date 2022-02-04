@@ -1,0 +1,17 @@
+        @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").QueryCellInfo("queryCellInfo").RowDataBound("rowDataBound").TaskFields(ts =>
+         ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Render()
+        
+	  <script>
+        function queryCellInfo(args) {
+            if (args.column.field == "Progress") {
+                if (args.data.Progress < 60)
+                    args.cell.style.backgroundColor = "lightgreen"
+                else
+                    args.cell.style.backgroundColor = "yellow"
+            }
+        }
+        function rowDataBound(args) {
+            if (args.data.TaskId == 4)
+                args.row.style.backgroundColor = "red"
+        }
+      </script>

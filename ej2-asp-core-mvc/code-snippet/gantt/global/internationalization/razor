@@ -1,0 +1,40 @@
+
+  @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+   ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress"
+   ).Child("SubTasks")).Locale("de-DE").Render()
+    
+   <script>
+    ej.base.L10n.load({
+      'de-DE': {
+        'gantt': {
+            "id": "Ich würde",
+            "name": "Name",
+            "startDate": "Anfangsdatum",
+            "duration": "Dauer",
+            "progress": "Fortschritt",
+        }
+      }
+    });
+    
+    loadCultureFiles('de-DE');
+    function loadCultureFiles(name) {
+        var files = ['ca-gregorian.json', 'numbers.json'];
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var val, ajax;
+            if (files[prop] === 'numberingSystems.json') {
+                ajax = new ej.base.Ajax(location.origin + '/../Scripts/cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                ajax = new ej.base.Ajax(location.origin + '/../Scripts/cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+            ajax.onSuccess = function (value) {
+                val = value;
+            };
+            ajax.send();
+            loader(JSON.parse(val));
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+</script>

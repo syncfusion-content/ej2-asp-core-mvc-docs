@@ -1,0 +1,12 @@
+                <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" allowResizing="true">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                            endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+                    </e-gantt-taskfields>
+                    <e-gantt-columns>
+                        <e-gantt-column field="TaskId" width="50"></e-gantt-column>
+                        <e-gantt-column field="TaskName" width="200" minWidth="150" maxWidth="250"></e-gantt-column>
+                        <e-gantt-column field="StartDate"></e-gantt-column>
+                        <e-gantt-column field="Duration" width="100" minWidth="50" maxWidth="200"></e-gantt-column>
+                        <e-gantt-column field="Progress"></e-gantt-column>
+                    </e-gantt-columns>
+                </ejs-gantt>

@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("650px")
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .EventSettings(e => e.Fields(f => f.Subject(sub => sub.Name("Subject").Title("Summary"))
+            .Location(loc => loc.Name("Location").Title("Location"))
+            .Description(des => des.Name("Description").Title("Comments"))
+            .StartTime(st => st.Name("StartTime").Title("From"))
+            .EndTime(et => et.Name("EndTime").Title("To"))
+        )
+        .DataSource(ViewBag.datasource)
+    )
+    .Render()
+)

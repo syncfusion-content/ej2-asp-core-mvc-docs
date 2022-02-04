@@ -1,0 +1,9 @@
+
+    @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").RenderBaseline(true).BaselineColor("red"
+    ).TaskFields(ts => ts.Id("TaskId").BaselineStartDate("BaselineStartDate").BaselineEndDate("BaselineEndDate").Name("TaskName").StartDate(
+          "StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).TooltipSettings(ts =>
+           ts.Baseline("#baselineTemplate")).Render()
+   
+  <script type="text/x-jsrender" id="baselineTemplate">
+        <div>Baseline StartDate : ${this.getFormatedDate(BaselineStartDate)}</div>
+  </script>

@@ -1,0 +1,74 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+
+<div class="control-section">
+    <div class="sample-container">
+        <div id='container' class="fileupload">
+            @Html.EJS().Uploader("UploadFile").Render()
+            @Html.EJS().Button("openBtn").Content("Browse...").Render()
+        </div>
+        <div id='target' class="control-section">
+            @*Dialog*@
+            @Html.EJS().Dialog("dialog").AnimationSettings(new DialogAnimationSettings() { Effect = DialogEffect.None }).Created("onDialogLoad").Close("dialogClose").Open("dialogOpen").Header("Open").Visible(false).ShowCloseIcon(true).Width("850px").Target("#target").ContentTemplate(@<div class='dialogContent'>
+                @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+                {
+                    Url = "/Home/FileOperations",
+                    GetImageUrl = "/Home/GetImage",
+                    UploadUrl = "/Home/Upload",
+                    DownloadUrl = "/Home/Download"
+                }).FileOpen("onFileOpen").Render()
+            </div>).Render()
+        </div>
+    </div>
+</div>
+<script>
+    function onDialogLoad() {
+        document.getElementById("openBtn").addEventListener('click', function () {
+            var dialogObj = document.getElementById('dialog').ej2_instances[0];
+            dialogObj.show();
+            var filemanagerObj = document.getElementById('filemanager').ej2_instances[0];
+            filemanagerObj.path = "/";
+            filemanagerObj.refresh();
+        });
+    }
+
+    function dialogOpen() {
+        document.getElementById('container').style.display = 'none';
+    }
+    function dialogClose() {
+        document.getElementById('container').style.display = 'block';
+    }
+
+    function onFileOpen(args) {
+        var file = args.fileDetails;
+        if (file.isFile) {
+            args.cancel = true;
+            var uploadObject = document.getElementById('UploadFile').ej2_instances[0];
+            var dialogObj = document.getElementById('dialog').ej2_instances[0];
+            uploadObject.files = [{ name: file.name, size: file.size, type: file.type }];
+            dialogObj.hide();
+        }
+    }
+</script>
+<style>
+    .fileupload {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    #openBtn {
+        position: absolute;
+        top: 67px;
+        margin-left: 13px;
+    }
+
+    #target {
+        height: 550px;
+    }
+
+    #dialog {
+        top: 20px !important;
+        max-height: 500px !important;
+        left: 20px !important;
+    }
+</style>

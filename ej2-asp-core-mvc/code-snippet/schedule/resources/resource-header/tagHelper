@@ -1,0 +1,71 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="550px" views="@ViewBag.view" resourceHeaderTemplate="#resourceTemplate" selectedDate="new DateTime(2018, 4, 1)">
+    <e-schedule-group resources="@ViewBag.Resources"></e-schedule-group>
+    <e-schedule-resources>
+        <e-schedule-resource dataSource="@ViewBag.Doctors" field="DoctorId" title="Doctor Name" name="Doctors" textField="text" idField="id" colorField="color"></e-schedule-resource>
+    </e-schedule-resources>
+</ejs-schedule>
+
+<script id="resourceTemplate" type="text/x-template">
+    <div class='template-wrap'>
+        <div class="resource-image"><img src="@Url.Content("https://ej2.syncfusion.com/demos/src/schedule/images/${getDoctorImage(data)}.png")" /></div>
+        <div class="resource-details">
+            <div class="resource-name">${getDoctorName(data)}</div>
+            <div class="resource-designation">${getDoctorLevel(data)}</div>
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript">
+    window.getDoctorName = function (value) {
+        return (value.resourceData) ? value.resourceData[value.resource.textField] : value.resourceName;
+    };
+    window.getDoctorImage = function (value) {
+        var resourceName = window.getDoctorName(value);
+        return resourceName.replace(' ', '-').toLowerCase();
+    };
+    window.getDoctorLevel = function (value) {
+        var resourceName = window.getDoctorName(value);
+        return (resourceName === 'Nancy') ? 'Cardiologist' : (resourceName === 'Alice') ? 'Neurologist' : 'Orthopedic Surgeon';
+    };
+</script>
+
+<style>
+    .e-schedule .e-vertical-view .e-resource-cells {
+        height: 62px;
+    }
+
+    .e-schedule .template-wrap {
+        display: flex;
+        text-align: left;
+    }
+
+    .e-schedule .template-wrap .resource-image img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .e-schedule .template-wrap .resource-details {
+        padding-left: 10px;
+    }
+
+    .e-schedule .template-wrap .resource-details .resource-name {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    .e-schedule.e-device .template-wrap .resource-details .resource-name {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    .e-schedule.e-device .e-resource-tree-popup .e-fullrow {
+        height: 50px;
+    }
+
+    .e-schedule.e-device .template-wrap .resource-details .resource-designation {
+        display: none;
+    }
+</style>

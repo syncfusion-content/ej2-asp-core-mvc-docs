@@ -1,0 +1,33 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="650px" views="@ViewBag.view" selectedDate="new DateTime(2019, 1, 10)" actionBegin="onActionBegin">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<style>
+    .e-schedule .e-schedule-toolbar .e-icon-schedule-excel-export::before {
+        content: '\e242';
+    }
+
+    .e-schedule-toolbar .e-toolbar-item.e-today {
+        display: none !important;
+    }
+</style>
+
+<script type="text/javascript">
+    function onActionBegin(args) {
+        if (args.requestType === 'toolbarItemRendering') {
+            var exportItem = {
+                align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-excel-export',
+                text: 'Excel Export', cssClass: 'e-excel-export', click: onExportClick
+            };
+            args.items.push(exportItem);
+        }
+    }
+
+    function onExportClick() {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var exportValues = { fileName: "SchedulerData" };
+        scheduleObj.exportToExcel(exportValues);
+    }
+</script>

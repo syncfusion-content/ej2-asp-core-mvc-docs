@@ -1,0 +1,22 @@
+  
+	@Html.EJS().Button("zoomIn").Content("ZoomIn").CssClass("e-primary").Render()
+    @Html.EJS().Button("zoomOut").Content("ZoomOut").CssClass("e-primary").Render()
+    @Html.EJS().Button("fitToProject").Content("FitToProject").CssClass("e-primary").Render()
+    @Html.EJS().Gantt("DefaultFunctionalities").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+     ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency(
+         "Predecessor").Child("SubTasks")).LabelSettings(ls => ls.LeftLabel("TaskName")).ProjectStartDate(
+             "03/24/2019").ProjectEndDate("04/28/2019").Render()
+			  
+<script>
+    var ganttObj = document.getElementById('GanttZooming').ej2_instances[0];
+    document.getElementById('zoomIn').addEventListener('click', function () {
+        ganttObj.zoomIn();
+    });
+    document.getElementById('zoomOut').addEventListener('click', function () {
+        ganttObj.zoomOut();
+    });
+    document.getElementById('fitToProject').addEventListener('click', function () {
+        ganttObj.fitToProject();
+    });
+    
+</script>

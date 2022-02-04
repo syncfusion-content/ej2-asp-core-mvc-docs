@@ -1,0 +1,45 @@
+<div>
+    <!-- Declare button element -->
+    @Html.EJS().Button("enable").Content("Enable New Folder toolbar item").CssClass("e-success").Render()
+    @Html.EJS().Button("disable").Content("Disable New Folder toolbar item").CssClass("e-danger").Render()
+    <!-- end of button element -->
+</div>
+<div class="control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+            Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).View(Syncfusion.EJ2.FileManager.ViewType.Details).Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var filemanagerInstance = document.getElementById("filemanager").ej2_instances[0];
+        // Click event for enable button
+        document.getElementById("enable").onclick = function (args) {
+            // Enable new folder toolbar item
+            filemanagerInstance.enableToolbarItems(["newfolder"]);
+        }
+
+        // Click event for enable button
+        document.getElementById("disable").onclick = function (args) {
+            // Disable new folder toolbar item
+            filemanagerInstance.disableToolbarItems(["newfolder"]);
+        }
+    });
+</script>
+<style>
+    /*sample level styles*/
+    #enable {
+        margin: 10px;
+    }
+
+    #disable {
+        margin: 10px;
+    }
+</style>

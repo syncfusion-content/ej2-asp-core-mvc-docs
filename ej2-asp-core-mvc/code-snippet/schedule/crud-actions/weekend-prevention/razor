@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(ViewBag.view)
+    .ActionBegin("onActionBegin")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)
+
+<script type="text/javascript">
+    function onActionBegin(args) {
+        var weekEnds = [0, 6];
+        if ((args.requestType === 'eventCreate' && weekEnds.indexOf((args.data[0].StartTime).getDay()) >= 0)) {
+            args.cancel = true;
+        }
+    }
+</script>

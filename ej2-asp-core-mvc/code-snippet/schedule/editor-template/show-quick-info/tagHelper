@@ -1,0 +1,4 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" quickInfoOnSelectionEnd="true">
+</ejs-schedule>

@@ -1,0 +1,49 @@
+    @{
+        List<object> contextItems = new List<object> { "AutoFitAll", "AutoFit", "TaskInformation", "DeleteTask", "Save", "Cancel",
+    "SortAscending", "SortDescending", "Add", "DeleteDependency", "Convert"};
+
+        contextItems.Add(new { text = "Collapse the Row", target = ".e-content", id = "collapserow" });
+        contextItems.Add(new { text = "Expand the Row", target = ".e-content", id = "expandrow" });
+        contextItems.Add(new { text = "Hide Column", target = ".e-gridheader", id = "hidecols" });
+
+    }
+
+    <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" enableContextMenu="true" contextMenuItems="contextItems"
+    allowSorting="true" allowResizing="true"  contextMenuOpen="contextMenuOpen" contextMenuClick="contextMenuClick" >
+        <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+            endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks" dependency="Predecessor">
+        </e-gantt-taskfields>
+        <e-gantt-editsettings allowAdding="true" allowEditing="true" allowDeleting="true">
+        </e-gantt-editsettings>
+    </ejs-gantt>
+
+     <script>
+        function contextMenuOpen(args) {
+            var record = args.rowData;
+            if (args.type !== 'Header') {
+                if (!record.hasChildRecords) {
+                    args.hideItems.push("Collapse the Row");
+                    args.hideItems.push("Expand the Row");
+                } else {
+                    if(record.expanded){
+                        args.hideItems.push("Expand the Row");                        
+                    } else {
+                        args.hideItems.push("Collapse the Row");
+                    }
+                }
+            }
+        }
+            function contextMenuClick(args) {
+                var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+                var record = args.rowData;
+                if (args.item.id === 'collapserow') {
+                    ganttObj.collapseByID(record.ganttProperties.taskId);
+                }
+                if (args.item.id === 'expandrow') {
+                    ganttObj.expandByID(record.ganttProperties.taskId);
+                }
+                if (args.item.id === 'hidecols') {
+                    ganttObj.hideColumn(args.column.headerText);
+                }
+        }
+    </script>

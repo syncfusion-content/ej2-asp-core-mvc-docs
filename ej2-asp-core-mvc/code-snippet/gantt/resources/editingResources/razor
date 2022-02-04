@@ -1,0 +1,6 @@
+  @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name("TaskName"
+  ).StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks").ResourceInfo("ResourceId")
+  ).LabelSettings(ls => ls.RightLabel("${if(ResourceId)} ${ResourceId} ${/if}")).EditSettings(es=>es.AllowEditing(true).Mode(
+    Syncfusion.EJ2.Gantt.EditMode.Auto)).ResourceNameMapping("ResourceName").ResourceIDMapping("ResourceId").Resources((IEnumerable<object>)
+    ViewBag.projectResources).Render()
+        

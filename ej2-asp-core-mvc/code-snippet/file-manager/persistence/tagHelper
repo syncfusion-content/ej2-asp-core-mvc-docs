@@ -1,0 +1,24 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        <ejs-filemanager id="filemanager" enablePersistence="true" success="onSuccess" failure="onFailure">
+            <e-filemanager-ajaxsettings  url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+    // File Manager's file onSuccess function
+    function onSuccess() {
+        console.log("Ajax request successful");
+    }
+
+    // File Manager's file onError function
+    function onFailure() {
+        console.log("Ajax request has failed");
+    }
+</script>

@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" eventRendered="onEventRendered" selectedDate="new DateTime(2018, 1, 29)">
+    <e-schedule-eventsettings dataSource="@ViewBag.appointments">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<style>
+    .e-past-app {
+        background-color: chocolate !important;
+    }
+</style>
+
+<script type="text/javascript">
+    function onEventRendered(args) {
+        var scheduleObj = document.querySelector('.e-schedule').ej2_instances[0];
+        if (args.data.EndTime < scheduleObj.selectedDate) {
+            args.element.classList.add('e-past-app');
+        }
+    }
+</script>

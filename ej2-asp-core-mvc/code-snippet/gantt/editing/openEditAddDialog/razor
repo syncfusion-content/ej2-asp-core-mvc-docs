@@ -1,0 +1,17 @@
+    @Html.EJS().Button("editDialog").Content("Open Edit Dialog").CssClass("e-primary").Render()
+    @Html.EJS().Button("addDialog").Content("Open Add Dialog").CssClass("e-primary").Render()
+    @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
+        "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditSettings(es =>
+         es.AllowEditing(true).AllowAdding(true)).Render()
+        
+	<script>
+        document.getElementById('editDialog').addEventListener('click', function (args) {
+            var ganttObj = document.getElementById('Gantt').ej2_instances[0];
+            ganttObj.editModule.dialogModule.openEditDialog();
+        });
+
+        document.getElementById('addDialog').addEventListener('click', function (args) {
+            var ganttObj = document.getElementById('Gantt').ej2_instances[0];
+            ganttObj.editModule.dialogModule.openAddDialog();
+        });
+	</script>

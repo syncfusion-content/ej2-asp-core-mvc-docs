@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="550px" currentView="TimelineWeek" rowAutoHeight="true" selectedDate="new DateTime(2018, 2, 11)">
+    <e-schedule-views>
+        <e-schedule-view option="TimelineDay"></e-schedule-view>
+        <e-schedule-view option="TimelineWeek"></e-schedule-view>
+        <e-schedule-view option="TimelineWorkWeek"></e-schedule-view>
+        <e-schedule-view option="TimelineMonth"></e-schedule-view>
+        <e-schedule-view option="Agenda"></e-schedule-view>
+    </e-schedule-views>
+    <e-schedule-group enableCompactView="false" resources="@ViewBag.ResourceNames"></e-schedule-group>
+    <e-schedule-resources>
+        <e-schedule-resource dataSource="@ViewBag.RoomDatas" field="RoomId" title="Room Type" name="MeetingRoom" allowMultiple="true" textField="name" idField="id" colorField="color"></e-schedule-resource>
+    </e-schedule-resources>
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource">
+        <e-eventsettings-fields>
+            <e-field-subject name="Subject" title="Summary"></e-field-subject>
+            <e-field-location name="Location" title="Location"></e-field-location>
+            <e-field-description name="Description" title="Comments"></e-field-description>
+            <e-field-starttime name="StartTime" title="From"></e-field-starttime>
+            <e-field-endtime name="EndTime" title="To"></e-field-endtime>
+        </e-eventsettings-fields>
+    </e-schedule-eventsettings>
+</ejs-schedule>

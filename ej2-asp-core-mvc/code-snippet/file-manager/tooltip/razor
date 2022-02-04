@@ -1,0 +1,94 @@
+<div class="control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+            Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).Created("addTooltip").FileLoad("fileLoad").Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+
+    function addTooltip() {
+        var fileObj = document.getElementById("file").ej2_instances[0];
+        var tooltip = new ej.popups.Tooltip({
+            target: '#' + fileObj.element.id + '_toolbar [title]',
+            beforeRender: onTooltipBeforeRender
+        });
+        tooltip.appendTo('#' + fileObj.element.id + '_toolbar');
+    }
+    function onTooltipBeforeRender(args) {
+        var fileObj = document.getElementById("file").ej2_instances[0].element.id;
+        var buttonId = args.target.childNodes[0].id;
+        var description = '';
+        switch (buttonId) {
+            case fileObj + '_tb_newfolder':
+                description = 'Create a new folder';
+                break;
+            case fileObj + '_tb_upload':
+                description = 'Upload new files';
+                break;
+            case fileObj + '_tb_cut':
+                description = 'Cut files and folders from the current location';
+                break;
+            case fileObj + '_tb_copy':
+                description = 'Copy files and folders from the current location';
+                break;
+            case fileObj + '_tb_paste':
+                description = 'Paste files and folders in the current location';
+                break;
+            case fileObj + '_tb_delete':
+                description = 'Delete selected files and folders';
+                break;
+            case fileObj + '_tb_download':
+                description = 'Download selected files and folders';
+                break;
+            case fileObj + '_tb_rename':
+                description = 'Rename selected file or folder';
+                break;
+            case fileObj + '_tb_sortby':
+                description = 'Change the file sorting order';
+                break;
+            case fileObj + '_tb_refresh':
+                description = 'Refresh the current location';
+                break;
+            case fileObj + '_tb_selection':
+                description = 'Following items are currently selected:';
+                for (var i = 0; i < fileObj.selectedItems.length; i++) {
+                    description = description + '</br>' + fileObj.selectedItems[i];
+                }
+                break;
+            case fileObj + '_tb_view':
+                description = 'Switch the layout view';
+                break;
+            case fileObj + '_tb_details':
+                description = 'Get the details of the seletced items';
+                break;
+            default:
+                description = '';
+                break;
+        }
+        this.content = args.target.getAttribute('title') + '</br>' + description;
+    }
+
+    function fileLoad(args) {
+
+        //Native tooltip customization to display additonal information in new line
+        var target = args.element;
+        if (args.module === 'DetailsView') {
+            var ele = select('[title]', args.element);
+            var title = args.fileDetails.name +
+                '\n' + args.fileDetails.dateModified;
+            ele.setAttribute('title', title);
+        }
+        else if (args.module === 'LargeIconsView') {
+            var title = args.fileDetails.name +
+                '\n' + args.fileDetails.dateModified;
+            target.setAttribute('title', title);
+        }
+    }
+</script>

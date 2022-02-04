@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="550px" selectedDate="new DateTime(2018, 2, 15)">
+    <e-schedule-eventsettings dataSource="@ViewBag.appointments"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    var data = [{ Value: 'America/New_York', Text: '(UTC-05:00) Eastern Time' }, { Value: 'UTC', Text: 'UTC' }, { Value: 'Asia/Kolkata', Text: '(UTC+05:30) India Standard Time' }];
+    var timezoneData = ej.schedule.timezoneData;
+    timezoneData.splice.apply(timezoneData, [0, timezoneData.length].concat(data));
+</script>

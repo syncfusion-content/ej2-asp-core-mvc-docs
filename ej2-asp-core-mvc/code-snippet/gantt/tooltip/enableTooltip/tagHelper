@@ -1,0 +1,15 @@
+     <style>
+        .e-gantt .e-gantt-chart .e-custom-event-marker {
+            width: 1px;
+            border-left: 2px green dotted;
+        }
+     </style>
+		 
+		        <ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="450px" renderBaseline="true" baselineColor="red">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" dependency="Predecessor"
+                          endDate="EndDate" baselineStartDate="BaselineStartDate" baselineEndDate="BaselineEndDate" progress="Progress" duration="Duration" child="SubTasks">
+                    </e-gantt-taskfields>
+                    <e-gantt-eventmarkers>
+                        <e-gantt-eventmarker day="04/10/2019" label="Project approval and kick-off" cssClass="e-custom-event-marker"></e-gantt-eventmarker>
+                    </e-gantt-eventmarkers>
+                </ejs-gantt>

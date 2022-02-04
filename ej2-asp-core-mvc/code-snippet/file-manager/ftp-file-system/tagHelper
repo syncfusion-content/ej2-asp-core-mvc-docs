@@ -1,0 +1,13 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Initialize file manager component with FTP service-->
+        <!--Replace the hosted port number in the place of "{port}"-->
+        <ejs-filemanager id="filemanager">
+                    url="http://localhost:{port}/api/FTPProvider/FTPFileOperations"
+                    downloadUrl="http://localhost:{port}/api/FTPProvider/FTPDownload"
+                    uploadUrl="http://localhost:{port}/api/FTPProvider/FTPUpload"
+                    getImageUrl="http://localhost:{port}/api/FTPProvider/FTPGetImage">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+    </div>
+</div>

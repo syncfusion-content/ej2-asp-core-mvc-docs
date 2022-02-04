@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2
+
+@{
+    var dataManager = new DataManager() {
+        Url = "http://some.com/invalidUrl",
+        Adaptor = "UrlAdaptor",
+        CrossDomain = true 
+    };
+}
+
+<ejs-schedule id="schedule" width="100%" height="550" selectedDate="new DateTime(2017, 6, 11)" actionFailure="onActionFailure">
+    <e-schedule-eventsettings dataSource="dataManager">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onActionFailure(args) {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var span = document.createElement('span');
+        scheduleObj.element.parentNode.insertBefore(span, scheduleObj.element);
+        span.style.color = '#FF0000';
+        span.innerHTML = 'Server exception: 404 Not found';
+    }
+</script>

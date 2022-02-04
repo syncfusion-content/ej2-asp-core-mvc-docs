@@ -1,0 +1,16 @@
+<ejs-richtexteditor id="keyboard" created="created" value="@ViewBag.value" height="300" editorMode="Markdown">
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>
+
+<script type="text/javascript">
+    var rteObj;
+    function created() {
+        rteObj = this;
+    }
+    document.addEventListener('keyup', function (e) {
+        if (e.altKey && e.keyCode === 84) { /* t */
+            // press alt+t to focus the control.
+            rteObj.focusIn();
+        }
+    });
+</script>

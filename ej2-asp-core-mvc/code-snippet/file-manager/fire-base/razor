@@ -1,0 +1,14 @@
+﻿<div class="control-section">
+    <div class="sample-container">
+        <!--  Initialize file manager component with Firebase service-->
+        <!--Replace the hosted port number in the place of "{port}"-->
+        @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+            Url = "http://localhost:{port}/api/FirebaseProvider/FirebaseRealtimeFileOperations",
+            GetImageUrl = "http://localhost:{port}/api/FirebaseProvider/FirebaseRealtimeGetImage",
+            UploadUrl = "http://localhost:{port}/api/FirebaseProvider/FirebaseRealtimeUpload",
+            DownloadUrl = "http://localhost:{port}/api/FirebaseProvider/FirebaseRealtimeDownload"
+        }).Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="control-section">
+    <ejs-richtexteditor id="inline"  toolbarClick="onToolbarClick" created="onCreated">
+        <e-richtexteditor-inlinemode enable="true" onSelection="true">
+        </e-richtexteditor-inlinemode>
+        <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+        <e-richtexteditor-quicktoolbarsettings image="@ViewBag.image"></e-richtexteditor-quicktoolbarsettings>
+        <e-content-template>
+            <p>
+                The Rich Text Editor control is WYSIWYG ('what you see is what you get') editor that provides the best user experience to create and update the content.
+                Users can format their content using standard toolbar commands.
+            </p>
+            <p><b> Key features:</b></p>
+            <ul>
+                <li><p> Provides &lt; IFRAME &gt; and &lt; DIV &gt; modes </p></li>
+                <li><p> Capable of handling markdown editing.</p></li>
+                <li><p> Contains a modular library to load the necessary functionality on demand.</p></li>
+                <li><p> Provides a fully customizable toolbar.</p></li>
+                <li><p> Provides HTML view to edit the source directly for developers.</p></li>
+                <li><p> Supports third - party library integration.</p></li>
+                <li><p> Allows preview of modified content before saving it.</p></li>
+                <li><p> Handles images, hyperlinks, video, hyperlinks, uploads, etc.</p></li>
+                <li><p> Contains undo / redo manager.</p></li>
+                <li><p> Creates bulleted and numbered lists.</p></li>
+            </ul>
+        </e-content-template>
+    </ejs-richtexteditor>
+</div>
+<style>
+    .e-rte-quick-popup .e-rte-quick-toolbar .e-rotate-left::before {
+        content: "\e341";
+    }
+
+    .e-rte-quick-popup .e-rte-quick-toolbar .e-rotate-right::before {
+        content: "\e354";
+    }
+</style>
+<script>
+    function onCreated() {
+        defaultRTE = this;
+    }
+    function onToolbarClick(e) {
+        var nodeObj = new ej.richtexteditor.NodeSelection();
+        var range = nodeObj.getRange(defaultRTE.contentModule.getDocument());
+        var imgEle = nodeObj.getNodeCollection(range)[0];
+        var transform;
+        if (e.item.tooltipText === 'Rotate Right') {
+            transform = (imgEle.style.transform === '') ? 0 :
+                parseInt(imgEle.style.transform.split('(')[1].split(')')[0], 10);
+            imgEle.style.transform = 'rotate(' + (transform + 90) + 'deg)';
+        }
+        else if (e.item.tooltipText === 'Rotate Left') {
+            transform = (imgEle.style.transform === '') ? 0 :
+                Math.abs(parseInt(imgEle.style.transform.split('(')[1].split(')')[0], 10));
+            imgEle.style.transform = 'rotate(-' + (transform + 90) + 'deg)';
+        }
+    }
+</script>

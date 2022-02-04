@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" renderCell="onRenderer" selectedDate="new DateTime(2018, 1, 28)">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onRenderer(args) {
+        if(args.elementType === "dateHeader" || args.elementType === "monthCells") {
+            ej.base.removeClass(args.element.childNodes, "e-navigate");
+        }
+    }
+</script>

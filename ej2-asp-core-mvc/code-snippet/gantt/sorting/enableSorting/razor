@@ -1,0 +1,3 @@
+
+   @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).TaskFields(ts => ts.Id("TaskId").Name("TaskName"
+   ).StartDate("StartDate").EndDate("EndDate").Child("SubTasks")).AllowSorting(true).Render()

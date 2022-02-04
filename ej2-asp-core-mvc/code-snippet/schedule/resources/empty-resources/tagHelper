@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="550px" dataBinding="onDataBinding" selectedDate="new DateTime(2018, 4, 1)">
+    <e-schedule-group resources="@ViewBag.Resources"></e-schedule-group>
+    <e-schedule-resources>
+        <e-schedule-resource dataSource="@ViewBag.Owners" field="OwnerId" title="Owner" name="Owners" textField="OwnerText" idField="Id" groupIDField="OwnerGroupId" colorField="OwnerColor" allowMultiple="true"></e-schedule-resource>
+    </e-schedule-resources>
+    <e-schedule-views>
+        <e-schedule-view option="TimelineWeek"></e-schedule-view>
+        <e-schedule-view option="TimelineMonth"></e-schedule-view>
+        <e-schedule-view option="Agenda"></e-schedule-view>
+    </e-schedule-views>
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onDataBinding(args) {
+    //check the resource count
+        var scheduleObj = document.querySelector('.e-schedule').ej2_instances[0];
+        if ((scheduleObj.resourceCollection[0].dataSource as any).length === 0 && scheduleObj.group.resources.length > 0) {
+        // Render default scheduler to handle above case.
+            scheduleObj.group.resources = [];
+        }
+    }
+</script>

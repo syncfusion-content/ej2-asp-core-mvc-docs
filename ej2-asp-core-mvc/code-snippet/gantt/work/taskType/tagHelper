@@ -1,0 +1,22 @@
+<ejs-gantt id='Resources' dataSource="ViewBag.dataSource"
+           treeColumnIndex="1" height="450px" allowSelection="true" highlightWeekends="true"
+           resources="ViewBag.projectResources" workUnit="Hour" taskType="FixedWork"
+           projectStartDate="03/28/2019" projectEndDate="07/28/2019"
+           toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll" })">
+    <e-gantt-resourcefields id="ResourceId" name="ResourceName" unit="ResourceUnit">
+    </e-gantt-resourcefields>
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                        duration="Duration" progress="Progress" resourceInfo="Resources"
+                        work="Work" child="SubTasks" >
+    </e-gantt-taskfields>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" visible="false"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" width="180"></e-gantt-column>
+        <e-gantt-column field="Resources" headerText="Resources" width="160"></e-gantt-column>
+        <e-gantt-column field="Work" width="110"></e-gantt-column>
+        <e-gantt-column field="Duration" width="100"></e-gantt-column>
+        <e-gantt-column field="taskType" headerText="Task Type" width="110"></e-gantt-column>
+    </e-gantt-columns>
+    <e-gantt-editsettings allowAdding="true" allowEditing="true" allowDeleting="true"
+                          allowTaskbarEditing="true" showDeleteConfirmDialog="true"></e-gantt-editsettings>
+</ejs-gantt>

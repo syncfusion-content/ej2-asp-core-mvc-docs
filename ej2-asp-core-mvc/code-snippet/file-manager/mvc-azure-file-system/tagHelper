@@ -1,0 +1,13 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Initialize file manager component with Azure service-->
+        <!--Replace the hosted port number in the place of "{port}"-->
+        <ejs-filemanager id="filemanager">
+                    getImageUrl="http://localhost:{port}/AzureProvider/AzureGetImage"
+                    url="http://localhost:{port}/AzureProvider/AzureFileOperations"
+                    downloadUrl="http://localhost:{port}/AzureProvider/AzureDownload"
+                    uploadUrl="http://localhost:{port}/AzureProvider/AzureUpload">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+    </div>
+</div>

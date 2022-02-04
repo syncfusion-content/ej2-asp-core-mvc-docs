@@ -1,0 +1,11 @@
+        @Html.EJS().Button("setScrollTop").Content("Change Scroll Position").CssClass("e-primary").Render()
+        @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+         ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+         ).Render()
+        
+	  <script>
+        document.getElementById('setScrollTop').addEventListener('click', function (args) {
+            var ganttObj = document.getElementById('Gantt').ej2_instances[0];
+            ganttObj.ganttChartModule.scrollObject.setScrollTop(300);
+        });
+	  </script>

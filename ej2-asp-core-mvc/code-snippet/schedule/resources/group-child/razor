@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .CurrentView(View.WorkWeek)
+    .Group(group => group.ByGroupID(false).Resources(ViewBag.Resources))
+    .Resources(res =>
+    {
+        res.DataSource(ViewBag.Projects).Field("ProjectId").Title("Choose Project").Name("Projects").TextField("text").IdField("id").ColorField("color").Add();
+        res.DataSource(ViewBag.Categories).Field("CategoryId").Title("Category").Name("Categories").TextField("text").IdField("id").GroupIDField("groupId").ColorField("color").AllowMultiple(true).Add();
+    })
+    .EventSettings(e => e.DataSource(ViewBag.datasource))
+    .Render()
+)

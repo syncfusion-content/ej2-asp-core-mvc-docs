@@ -1,0 +1,6 @@
+  
+	@Html.EJS().Gantt("DefaultFunctionalities").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+     ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency(
+         "Predecessor").Child("SubTasks")).Toolbar(new List<string>() 
+         {"ZoomIn","ZoomOut","ZoomToFit" }).LabelSettings(ls => ls.LeftLabel("TaskName")).ProjectStartDate("03/24/2019").ProjectEndDate(
+             "04/28/2019").Render()

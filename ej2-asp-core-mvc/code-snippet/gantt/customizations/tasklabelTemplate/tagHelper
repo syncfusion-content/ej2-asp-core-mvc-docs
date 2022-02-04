@@ -1,0 +1,5 @@
+                <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+                    </e-gantt-taskfields>
+                    <e-gantt-labelSettings leftLabel="TaskId" rightLabel="Task Name: ${taskData.TaskName}" taskLabel="${Progress}%"></e-gantt-labelSettings>
+                </ejs-gantt>

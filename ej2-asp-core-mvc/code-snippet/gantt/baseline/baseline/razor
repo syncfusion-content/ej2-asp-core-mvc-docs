@@ -1,0 +1,5 @@
+     @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).RenderBaseline(
+        true).Height("450px").TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").BaselineStartDate(
+           "BaselineStartDate").Duration("Duration").BaselineEndDate("BaselineEndDate").Progress("Progress").Child("SubTasks")).ProjectStartDate(
+              "04/01/2019").ProjectEndDate("04/30/2019").Render()
+        

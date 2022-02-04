@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Readonly(true)
+    .EventSettings(e => 
+        e.DataSource(d => d.Url("https://ej2services.syncfusion.com/development/web-services/odata/")
+            .Adaptor("ODataV4Adaptor")
+            .CrossDomain(true)
+        )
+        .Query("new ej.data.Query().from('Events').addParams('readOnly', 'true')")
+    )
+    .SelectedDate(new DateTime(2017, 6, 11))
+    .Render()
+)

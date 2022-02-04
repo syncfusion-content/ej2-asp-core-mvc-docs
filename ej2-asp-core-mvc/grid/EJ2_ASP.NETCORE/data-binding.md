@@ -578,7 +578,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-**Note:** For ASP.NET **Core  3.0 or above**, use the below code
+N> For ASP.NET **Core  3.0 or above**, use the below code
 
 For this we need to install **Microsoft.AspNetCore.Mvc.NewtonsoftJson** package.
 

@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2.Schedule
+
+@{
+    var template = "<div>${getCellHeaderContent(data.date)}</div>";
+}
+
+<ejs-schedule id="schedule" height="550" cellHeaderTemplate="@template">
+    <e-schedule-views>
+        <e-schedule-view option="Month"></e-schedule-view>
+    </e-schedule-views>
+</ejs-schedule>
+
+<script type="text/javascript">
+    var instance = new ej.base.Internationalization();
+    function getCellHeaderContent(date) {
+        return instance.formatDate(date, { skeleton: "Ed" });
+    }
+</script>

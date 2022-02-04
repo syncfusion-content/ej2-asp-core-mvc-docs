@@ -1,0 +1,41 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .SelectedDate(new DateTime(2019, 1, 10))
+    .ActionBegin("onActionBegin")
+    .Render()
+)
+
+<style>
+    .e-schedule .e-schedule-toolbar .e-icon-schedule-excel-export::before {
+        content: '\e242';
+    }
+</style>
+
+<script type="text/javascript">
+    function onActionBegin(args) {
+        if (args.requestType === 'toolbarItemRendering') {
+            var exportItem = {
+                align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-excel-export',
+                text: 'Excel Export', cssClass: 'e-excel-export', click: onExportClick
+            };
+            args.items.push(exportItem);
+        }
+    }
+
+    function onExportClick() {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var customFields = [
+            { name: 'Subject', text: 'Summary' },
+            { name: 'StartTime', text: 'First Date' },
+            { name: 'EndTime', text: 'Last Date' },
+            { name: 'Location', text: 'Place' },
+            { name: 'OwnerId', text: 'Owners' }
+        ];
+        var exportValues = { fieldsInfo: customFields };
+        scheduleObj.exportToExcel(exportValues);
+    }
+</script>

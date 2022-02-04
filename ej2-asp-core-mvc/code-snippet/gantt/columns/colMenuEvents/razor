@@ -1,0 +1,15 @@
+
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
+    "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditSettings(es =>
+        es.AllowEditing(true))
+        .AllowFiltering(true).AllowSorting(true).AllowReordering(true).ShowColumnMenu(true)
+        .ColumnMenuOpen("ColumnMenuOpen").ColumnMenuClick("ColumnMenuClick")
+        .Render()
+<script>
+   function ColumnMenuOpen() {
+        alert("ColumnMenuOpen event is triggered");
+    }
+    function ColumnMenuClick() {
+        alert("ColumnMenuClick event is triggered");
+    }
+</script>

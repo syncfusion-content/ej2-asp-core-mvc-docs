@@ -1,0 +1,59 @@
+@using Syncfusion.EJ2.Navigations;
+<div class="e-tab-section">
+    <div class="col-lg-8 content-wrapper control-section">
+        <div class="e-sample-resize-container">
+            <div id="overview" style="display: none">
+                <div class="content-title">
+                    <div class="cnt-text">Overview</div>
+                </div>
+                The file manager component contains a context menu for performing file operations, large-icons view for displaying the files and folders, and a breadcrumb for navigation. However, these basic functionalities can be extended by using the additional feature modules like toolbar, navigation pane, and details view to simplify the navigation and file operations within the file system.
+            </div>
+            <div id="filemanager" style="display: none">
+                <div class="content-title">
+                    <div class="cnt-text">Filemanager with default functionalities</div>
+                </div>
+                <div>
+                    @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+                    {
+                        Url = "/Home/FileOperations",
+                        GetImageUrl = "/Home/GetImage",
+                        UploadUrl = "/Home/Upload",
+                        DownloadUrl = "/Home/Download"
+                    }).Render()
+                </div>
+            </div>
+            @(Html.EJS().Tab("orientationTab")
+              .Items(new List<TabTabItem> {
+                new TabTabItem { Header = ViewBag.headerText1, Content = "#overview" },
+                new TabTabItem { Header = ViewBag.headerText2, Content = "#filemanager" },
+              }).Height("320").ShowCloseButton(true).Selected("onSelect").Render()
+            )
+        </div>
+    </div>
+</div>
+<script>
+    function onSelect() {
+        var fileObj = document.getElementById("file").ej2_instances[0];
+        fileObj.refreshLayout();
+    }
+</script>
+<style>
+    .e-content .e-item {
+        font-size: 12px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .content-title {
+        height: 50px;
+        display: table;
+        margin: 0 auto;
+    }
+
+    .cnt-text {
+        vertical-align: middle;
+        display: table-cell;
+        font-size: 18px;
+        font-weight: 600;
+    }
+</style>

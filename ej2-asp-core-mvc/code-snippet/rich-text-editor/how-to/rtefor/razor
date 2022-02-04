@@ -1,0 +1,27 @@
+@model EJ2MVCSampleBrowser.Controllers.RichTextEditorModel
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <div class="col-lg-12 control-section">
+        <div style='padding-top:40px;'>
+            <div id="wrapper">
+                @Html.EJS().RichTextEditorFor(model => model.Value).Render()
+                <div id="errorMessage">
+                    @Html.ValidationMessageFor(model => model.Value)
+                </div>
+                <div id="submitbutton">
+                    @Html.EJS().Button("btn").Content("Submit").Render()
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<style>
+    #submitbutton {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #errorMessage {
+        color: red;
+    }
+</style>

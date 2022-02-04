@@ -1,0 +1,12 @@
+
+   @Html.EJS().Button("clearSort").Content("Clear Sorting").CssClass("e-primary").Render()
+   
+   @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate(
+       "StartDate").EndDate("EndDate").Child("SubTasks")).AllowSorting(true).Render()
+   
+    <script>
+        document.getElementById('clearSort').addEventListener('click', function (args) {
+            var ganttObj = document.getElementById('Gantt').ej2_instances[0];
+            ganttObj.clearSorting();
+        });
+    </script>

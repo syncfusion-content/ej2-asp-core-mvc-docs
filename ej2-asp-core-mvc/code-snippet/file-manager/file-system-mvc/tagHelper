@@ -1,0 +1,13 @@
+<div class=" control-section">
+    <div class="sample-container">
+       <!--Initialize file manager component with ASP.NET MVC service-->
+        <!--Replace the hosted port number in the place of "{port}"-->
+        <ejs-filemanager id="filemanager">
+                    getImageUrl="http://localhost:{port}/FileManager/GetImage"
+                    url="http://localhost:{port}/FileManager/FileOperations"
+                    downloadUrl="http://localhost:{port}/FileManager/Download"
+                    uploadUrl="http://localhost:{port}/FileManager/Upload">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+    </div>
+</div>

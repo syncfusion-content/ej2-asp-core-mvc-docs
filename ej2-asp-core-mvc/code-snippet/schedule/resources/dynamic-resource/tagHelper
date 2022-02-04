@@ -1,0 +1,61 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-checkbox id="company" change="onChange" checked="true" disabled="true" label="Company" value="1"></ejs-checkbox>
+               
+<ejs-checkbox id="birthdays" change="onChange" checked="false" label="Birthdays" value="2"></ejs-checkbox>
+          
+<ejs-checkbox id="holidays" change="onChange" checked="false" label="Holidays" value="3"></ejs-checkbox>
+       
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 3, 1)">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+    <e-schedule-resources>
+        <e-schedule-resource field="CalendarId" title="Calendars" name="Calendars" allowMultiple="true" dataSource="@ViewBag.Calendars" textField="CalendarName" idField="CalendarId" colorField="CalendarColor"></e-schedule-resource>
+    </e-schedule-resources>
+    <e-schedule-group resources="@ViewBag.Resources"></e-schedule-group>
+    <e-schedule-views>
+        <e-schedule-view option="Month"></e-schedule-view>
+    </e-schedule-views>
+</ejs-schedule>
+
+<style>
+    .property-panel-content .e-checkbox-wrapper.company .e-frame {
+        background-color: #ff7f50;
+        border-color: transparent;
+    }
+
+    .property-panel-content .e-checkbox-wrapper.birthday .e-frame {
+        background-color: #AF27CD;
+        border-color: transparent;
+    }
+
+    .property-panel-content .e-checkbox-wrapper.holiday .e-frame {
+        background-color: #808000;
+        border-color: transparent;
+    }
+
+    .e-schedule .e-month-view .e-appointment {
+        border-color: transparent;
+    }
+
+    .highcontrast .property-panel-content .e-checkbox-wrapper .e-frame.e-check,
+    .bootstrap .property-panel-content .e-checkbox-wrapper .e-frame.e-check {
+        color: #fff;
+    }
+</style>
+<script type="text/javascript">
+    function onChange(args) {
+        var calendarCollections = [
+            { CalendarName: 'Company', CalendarId: 1, CalendarColor: '#ff7f50' },
+            { CalendarName: 'Birthday', CalendarId: 2, CalendarColor: '#AF27CD' },
+            { CalendarName: 'Holiday', CalendarId: 3, CalendarColor: '#808000' }
+        ];
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var value = parseInt(args.event.target.getAttribute('value'), 10);
+        var resourceData = calendarCollections.filter(function (calendar) { return calendar.CalendarId === value; });
+        if (args.checked) {
+            scheduleObj.addResource(resourceData[0], 'Calendars', value - 1);
+        } else {
+            scheduleObj.removeResource(value, 'Calendars');
+        }
+    }
+</script>

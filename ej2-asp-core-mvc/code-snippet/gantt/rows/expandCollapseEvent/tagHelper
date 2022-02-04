@@ -1,0 +1,17 @@
+<ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" collapsing="collapsing" expanding="expanding">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                         endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+                    </e-gantt-taskfields>
+                    
+</ejs-gantt>
+				
+	<script>
+        function collapsing(args) {
+            if (args.data.TaskId == 1) // we can't collapse Task Id 1
+                args.cancel = true; 
+        }
+        function expanding(args) {
+            if (args.data.TaskId == 5) // we can't expand Task Id 5
+                args.cancel = true;
+        }
+    </script>

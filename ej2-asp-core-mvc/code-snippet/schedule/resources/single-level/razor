@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Group(group => group.Resources(ViewBag.Resources))
+    .Resources(res => {
+        res.AllowMultiple(true).DataSource(ViewBag.Owners).Field("OwnerId").Title("Owner").Name("Owners").TextField("OwnerText").IdField("Id").ColorField("OwnerColor").Add();
+    })
+    .Views(view => {
+        view.Option(View.Week).Add();
+        view.Option(View.Month).Add();
+        view.Option(View.TimelineWeek).Add();
+        view.Option(View.TimelineMonth).Add();
+        view.Option(View.Agenda).Add();
+    })
+    .EventSettings(e => e.DataSource(ViewBag.datasource))
+    .SelectedDate(new DateTime(2018, 4, 1))
+    .Render()
+)

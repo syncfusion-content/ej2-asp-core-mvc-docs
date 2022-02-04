@@ -1,0 +1,6 @@
+<ejs-gantt id='Gantt' treeColumnIndex="0" height="450px">
+                    <e-data-manager url="/Home/UrlDatasource" adaptor="UrlAdaptor" batchUrl="Home/BatchSave"></e-data-manager>
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                          duration="Duration" progress="Progress" dependency="Predecessor" child="SubTasks">
+                    </e-gantt-taskfields>
+                </ejs-gantt>

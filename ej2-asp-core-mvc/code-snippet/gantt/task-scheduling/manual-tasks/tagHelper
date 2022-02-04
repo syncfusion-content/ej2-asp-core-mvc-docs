@@ -1,0 +1,11 @@
+<ejs-gantt id='Resources' dataSource="ViewBag.DataSource"
+           treeColumnIndex="1" height="450px" allowSelection="true" highlightWeekends="true"
+           projectStartDate="02/20/2017" projectEndDate="03/30/2019" taskMode="Manual"
+           toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll" })">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                        duration="Duration" progress="Progress" dependency="Predecessor" endDate="EndDate" 
+                        child="SubTasks">
+    </e-gantt-taskfields>
+    <e-gantt-editsettings allowEditing="true" allowDeleting="true"
+                          allowTaskbarEditing="true" showDeleteConfirmDialog="true"></e-gantt-editsettings>
+</ejs-gantt>

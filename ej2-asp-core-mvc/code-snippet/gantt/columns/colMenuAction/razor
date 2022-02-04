@@ -1,0 +1,17 @@
+
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
+    "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditSettings(es =>
+        es.AllowEditing(true))
+        .AllowFiltering(true).AllowSorting(true).ShowColumnMenu(true).ColumnMenuOpen("columnMenuOpen")
+        .Render()
+<script>
+   function columnMenuOpen(args) {
+        for (let item of args.items) {
+            if (item.text === 'Filter' && args.column.field === 'TaskName') {
+                item.hide = true;
+            } else {
+                item.hide = false;
+            }
+        }
+    }
+</script>

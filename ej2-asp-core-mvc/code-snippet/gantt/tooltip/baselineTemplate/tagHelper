@@ -1,0 +1,10 @@
+                <ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="450px" renderBaseline="true" baselineColor="red">
+                    <e-gantt-taskfields id="TaskId" baselineStartDate="BaselineStartDate" baselineEndDate="BaselineEndDate" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+                    </e-gantt-taskfields>
+                    <e-gantt-tooltipsettings baseline="#baselineTemplate">
+                    </e-gantt-tooltipsettings>
+                </ejs-gantt>
+
+<script type="text/x-jsrender" id="baselineTemplate">
+        <div>Baseline StartDate : ${this.getFormatedDate(BaselineStartDate)}</div>
+</script>

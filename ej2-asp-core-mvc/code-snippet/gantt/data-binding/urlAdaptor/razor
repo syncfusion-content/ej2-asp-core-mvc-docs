@@ -1,0 +1,6 @@
+@Html.EJS().Gantt("Gantt").DataSource(dataManager =>
+{
+  dataManager.Url("/Home/UrlDatasource").Adaptor("UrlAdaptor")
+}).TaskFields(ts =>
+   ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+   ).Render()

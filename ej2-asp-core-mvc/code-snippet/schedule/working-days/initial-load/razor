@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(view => {
+        view.Option(View.Day).Add();
+        view.Option(View.Week).Add();
+        view.Option(View.WorkWeek).Add();
+    })
+    .Created("onCreate")
+    .Render()
+)
+
+<script type="text/javascript">
+    function onCreate() {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var curTime = new Date();
+        var hours = curTime.getHours() < 10 ? '0' +curTime.getHours().toString() : curTime.getHours().toString();
+        var minutes = curTime.getMinutes().toString();
+        var time = hours + ':' + minutes;
+        scheduleObj.scrollTo(time);
+    }
+</script>

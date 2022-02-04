@@ -1,0 +1,41 @@
+    <ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="450px" locale="de-DE">
+        <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+            duration="Duration" progress="Progress" child="SubTasks">
+        </e-gantt-taskfields>
+    </ejs-gantt>
+
+<script>
+    ej.base.L10n.load({
+        'de-DE': {
+            'gantt': {
+                "id": "Ich würde",
+                "name": "Name",
+                "startDate": "Anfangsdatum",
+                "duration": "Dauer",
+                "progress": "Fortschritt",
+            }
+        }
+    });
+
+    loadCultureFiles('de-DE');
+    function loadCultureFiles(name) {
+        var files = ['ca-gregorian.json',numbers.json'];
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var val, ajax;
+            if (files[prop] === 'numberingSystems.json') {
+                ajax = new ej.base.Ajax(location.origin + '/../Scripts/cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                ajax = new ej.base.Ajax(location.origin + '/../Scripts/cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+            ajax.onSuccess = function (value) {
+                val = value;
+            };
+            ajax.send();
+            loader(JSON.parse(val));
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+</script>

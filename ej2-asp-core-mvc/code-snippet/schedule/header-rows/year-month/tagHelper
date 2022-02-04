@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" height="650px">
+    <e-schedule-header-rows>
+        <e-schedule-header-row option="Year"></e-schedule-header-row>
+        <e-schedule-header-row option="Month"></e-schedule-header-row>
+    </e-schedule-header-rows>
+    <e-schedule-views>
+        <e-schedule-view option="TimelineMonth" ></e-schedule-view>
+    </e-schedule-views>
+</ejs-schedule>

@@ -1,0 +1,7 @@
+  @Html.EJS().Gantt("DragAndDrop").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowRowDragAndDrop(true).Height("450px").HighlightWeekends(
+    true).TreeColumnIndex(1).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration(
+      "Duration").Progress("Progress").Dependency("Predecessor").Child("SubTasks")).SelectionSettings(sel =>
+		   {
+			sel.Type(SelectionType.Multiple);
+		}).ProjectStartDate("03/24/2019").ProjectEndDate("07/06/2019").Render()
+        

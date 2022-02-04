@@ -1,0 +1,24 @@
+<ejs-richtexteditor id="defaultRTE" beforeSanitizeHtml="beforeSanitizeHtml">
+    <e-content-template>
+        <div>
+            <div>Prevention of Cross Sit Scripting (XSS) </div>
+            <script>
+                alert('hi')</script>
+        </div>
+    </e-content-template>
+</ejs-richtexteditor>
+
+<script>
+    function beforeSanitizeHtml(args) {
+        args.helper = (value) => {
+            args.cancel = true;
+            var temp = document.createElement('div');
+            temp.innerHTML = value;
+            var scriptTag = temp.querySelector('script');
+            if (scriptTag) {
+                ej.base.detach(scriptTag);
+            }
+            return temp.innerHTML;
+        }
+    }
+</script>

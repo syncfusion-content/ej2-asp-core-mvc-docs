@@ -1,0 +1,3 @@
+
+   @Html.EJS().Gantt("Editing").DataSource((IEnumerable<object>)ViewBag.DataSource).TaskFields(ts => ts.Dependency("Predecessor")).Render()
+   

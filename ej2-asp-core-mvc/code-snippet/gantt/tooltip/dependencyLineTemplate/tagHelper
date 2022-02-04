@@ -1,0 +1,10 @@
+                <ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="450px">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" progress="Progress" dependency="Predecessor" duration="Duration" child="SubTasks">
+                    </e-gantt-taskfields>
+                    <e-gantt-tooltipsettings connectorLine="#dependencyLineTooltip">
+                    </e-gantt-tooltipsettings>
+                </ejs-gantt>
+
+ <script type="text/x-jsrender" id="dependencyLineTooltip">
+        <div>Offset : ${offsetString}</div>
+</script>

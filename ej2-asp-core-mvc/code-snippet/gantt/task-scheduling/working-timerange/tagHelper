@@ -1,0 +1,12 @@
+<ejs-gantt id='WorkingTimeRange' dataSource="ViewBag.dataSource" height="450px" highlightWeekends="true">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                        endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor"
+                        child="SubTasks">
+    </e-gantt-taskfields>
+    <e-gantt-splitterSettings columnIndex="0"></e-gantt-splitterSettings>
+    <e-gantt-timelineSettings>
+        <e-timelinesettings-toptier unit="Day"></e-timelinesettings-toptier>
+        <e-timelinesettings-bottomtier unit="Hour"></e-timelinesettings-bottomtier>
+    </e-gantt-timelineSettings>
+    <e-gantt-labelSettings leftLabel="TaskName"></e-gantt-labelSettings>
+</ejs-gantt>

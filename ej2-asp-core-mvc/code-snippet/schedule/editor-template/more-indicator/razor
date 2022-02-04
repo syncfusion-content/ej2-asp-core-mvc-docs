@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(ViewBag.view)
+    .CurrentView(View.Month)
+    .PopupOpen("onPopupOpen")
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+    .SelectedDate(new DateTime(2018, 2, 15))
+    .Render()
+)
+
+<script type="text/javascript">
+    function onPopupOpen(args) {
+        if (args.type === 'EventContainer') {
+            args.cancel = true;
+        }
+    }
+</script>

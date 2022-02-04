@@ -1,0 +1,23 @@
+@{
+    string[] files = new string[] { "Open", "|", "Details" };
+    string[] folder = new string[] { "Open", "|", "Details" };
+    string[] layout = new string[] { "SortBy", "View", "Refresh", "|", "Details" };
+}
+<div class="control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+           Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).ContextMenuSettings(new Syncfusion.EJ2.FileManager.FileManagerContextMenuSettings()
+        {
+            File = files,
+            Folder = folder,
+            Layout = layout
+        }).Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>

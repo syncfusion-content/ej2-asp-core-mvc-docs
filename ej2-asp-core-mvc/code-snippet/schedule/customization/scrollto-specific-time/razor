@@ -1,0 +1,32 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Schedule
+
+
+    <div class="control-section">
+            <table style="width: 100%">
+                <tbody>
+                    <tr style="height: 50px">
+                        <td>
+                            <div>
+                                Scroll To
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                @Html.EJS().TimePicker("ScrollToHour").Width("120").Change("onChange").Value(new DateTime(2000, 1, 1, 9, 0, 0)).Format("HH:mm").Render()
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="content-wrapper">
+                @Html.EJS().Schedule("schedule").Width("100%").Height("550px").Views(ViewBag.view).EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource }).SelectedDate(new DateTime(2018, 2, 15)).Render()
+            </div>
+    </div>
+
+    <script type="text/javascript">
+        function onChange(args) {
+            var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+            scheduleObj.scrollTo(args.text);
+        }
+    </script>

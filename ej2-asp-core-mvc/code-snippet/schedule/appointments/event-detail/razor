@@ -1,0 +1,61 @@
+@using Syncfusion.EJ2.Schedule
+
+<div class="col-lg-9 control-section">
+    @(Html.EJS().Schedule("schedule")
+        .Width("100%")
+        .Height("550px")
+        .EventClick("onEventClick")
+        .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+        .SelectedDate(new DateTime(2018, 2, 15))
+        .Render()
+    )
+</div>
+
+<div class="col-lg-3 property-section">
+    <table id="property" title="Event Trace">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="eventarea" style="height: 245px;overflow: auto">
+                        <span class="EventLog" id="EventLog" style="word-break: normal;"></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="eventbtn" style="padding-bottom: 10px">
+                        <input id="clear" type="button" class="btn btn-default" value="Clear">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<style>
+    #EventLog b {
+        color: #388e3c;
+    }
+
+    hr {
+        margin: 1px 10px 1px 0px;
+        border-top: 1px solid #eee;
+    }
+</style>
+
+<script type="text/javascript">
+    document.querySelector('.eventbtn').onclick = function () {
+        document.querySelector('.EventLog').innerHTML = '';
+    };
+    function onEventClick(args) {
+        var scheduleObj = document.querySelector('.e-schedule').ej2_instances[0];
+        var event = scheduleObj.getEventDetails(args.element);
+        appendElement(event.Subject + '<hr>');
+    }
+    function appendElement(html) {
+        var span = document.createElement('span');
+        span.innerHTML = html;
+        var log = document.querySelector('.EventLog');
+        log.insertBefore(span, log.firstChild);
+    }
+</script>

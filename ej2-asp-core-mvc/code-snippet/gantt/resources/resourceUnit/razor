@@ -1,0 +1,16 @@
+@(Html.EJS().Gantt("ResourceAllocation").DataSource((IEnumerable<object>
+    )ViewBag.DataSource)
+    .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress")
+    .ResourceInfo("Resources").Child("SubTasks"))
+    .ResourceFields(rf => rf.Id("ResourceId").Name("ResourceName").Unit("ResourceUnit"))
+        .Resources((IEnumerable<object>)ViewBag.projectResources)
+            .Columns(col =>
+            {
+            col.Field("TaskId").Visible(false).Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(180).Add();
+            col.Field("Resources").HeaderText("Resources").Width(160).Add();
+            col.Field("Duration").Width(100).Add();
+            })
+            .LabelSettings(ls => ls.RightLabel("Resources"))
+            .Render()
+            )

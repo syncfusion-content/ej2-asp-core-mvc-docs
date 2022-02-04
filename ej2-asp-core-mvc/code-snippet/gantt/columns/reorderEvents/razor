@@ -1,0 +1,17 @@
+
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
+    "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditSettings(es =>
+        es.AllowEditing(true)).AllowReordering(true)
+        .ColumnDragStart("columnDragStart").ColumnDrag("columnDrag").ColumnDrop("columnDrop")
+        .Render()
+<script>
+    function columnDragStart() {
+        alert('columnDragStart event is triggered')
+    }
+    function columnDrag() {
+        alert('columnDrag event is triggered')
+    }
+    function columnDrop() {
+        alert('columnDrop event is triggered')
+    }
+</script>

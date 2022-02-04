@@ -1,0 +1,32 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .DataBinding("onDataBinding")
+    .Group(group => group.Resources(ViewBag.Resources))
+    .Resources(res =>
+    {
+        res.AllowMultiple(true).DataSource(ViewBag.Owners).Field("OwnerId").Title("Owner").Name("Owners").TextField("OwnerText").IdField("Id").GroupIDField("OwnerGroupId").ColorField("OwnerColor").Add();
+    })
+    .Views(view =>
+    {
+        view.Option(View.TimelineWeek).Add();
+        view.Option(View.TimelineMonth).Add();
+        view.Option(View.Agenda).Add();
+    })
+    .EventSettings(e => e.DataSource(ViewBag.datasource))
+    .SelectedDate(new DateTime(2018, 4, 1))
+    .Render()
+)
+
+<script type="text/javascript">
+  function onDataBinding(args) {
+    //check the resource count
+    var scheduleObj = document.querySelector('.e-schedule').ej2_instances[0];
+    if ((scheduleObj.resourceCollection[0].dataSource as any).length === 0 && scheduleObj.group.resources.length > 0) {
+      // Render default scheduler to handle above case.
+      scheduleObj.group.resources = [];
+    }
+  }
+</script>

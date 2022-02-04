@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(view => {
+        view.Option(View.Day).Add();
+        view.Option(View.Week).Add();
+        view.Option(View.WorkWeek).Add();
+        view.Option(View.TimelineDay).Add();
+        view.Option(View.TimelineWeek).Add();
+        view.Option(View.TimelineWorkWeek).Add();
+    })
+    .ShowTimeIndicator(false)
+    .Render()
+)

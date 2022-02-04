@@ -1,0 +1,73 @@
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
+    "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditDialogFields(edf =>
+    {
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General").Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency).Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Resources).Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).Add();
+    }).AddDialogFields(adf=> {
+        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General Tab").Add();
+        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency).Add();
+        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Resources).Add();
+        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).Add();
+    }).Columns(col =>
+                {
+                    col.Field("TaskId").Width(150).Add();
+                    col.Field("TaskName").HeaderText("Job Name").Width(250).Add();
+                    col.Field("StartDate").Width(250).Add();
+                    col.Field("EndDate").Width(250).Add();
+                    col.Field("Duration").Width(250).Add();
+                    col.Field("Progress").Width(250).Add();
+                    col.Field("CustomField").Width(250).Add();
+                }).Toolbar(new List<string>() 
+  { "Add", "Cancel", "CollapseAll", "Delete", "Edit", "ExpandAll", "NextTimeSpan", "PrevTimeSpan", "Search", "Update" }).EditSettings(es=>
+                    es.AllowAdding(true).AllowEditing(true).Mode(Syncfusion.EJ2.Gantt.EditMode.Dialog)).ActionBegin(
+            "actionBegin").ActionComplete("actionComplete").Render()
+<script>
+    var divElement;
+    var inputs = {
+        booleanedit: ej.buttons.CheckBox,
+        dropdownedit: ej.dropdowns.DropDownList,
+        datepickeredit: ej.calendars.DatePicker,
+        datetimepickeredit: ej.calendars.DateTimePicker,
+        maskededit: ej.inputs.MaskedTextBox,
+        numericedit: ej.inputs.NumericTextBox,
+        stringedit: ej.inputs.TextBox
+    };
+    function actionBegin(args) {
+        var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+        if (args.requestType === "beforeOpenEditDialog" || args.requestType === "beforeOpenAddDialog") {
+            var column = ganttObj.columnByField["CustomField"];
+            divElement = ganttObj.createElement("div", {
+                className: "e-edit-form-column"
+            });
+            var inputElement;
+            inputElement = ganttObj.createElement("input", {
+                attrs: {
+                    type: "text",
+                    id: this.controlId + "" + column.field,
+                    name: column.field,
+                    title: column.field
+                }
+            });
+            divElement.appendChild(inputElement);
+            var input = {
+                enabled: true,
+                floatLabelType: "Auto",
+                placeholder: "CustomField",
+                value: args.rowData.CustomField
+            };
+            var inputObj = new inputs[column.editType](input);
+            inputObj.appendTo(inputElement);
+        }
+    }
+    function actionComplete(args) {
+        var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+        if (args.requestType === "openEditDialog" || args.requestType === "openAddDialog") {
+            var generalTab = document.getElementById(
+                ganttObj.controlId + "GeneralTabContainer"
+            );
+            generalTab.appendChild(divElement);
+        }
+    }
+</script>

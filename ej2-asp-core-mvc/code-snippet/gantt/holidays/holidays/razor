@@ -1,0 +1,13 @@
+ <style>
+        .e-gantt .e-gantt-chart .e-custom-holiday {
+            background-color: #e82869;
+        }
+ </style>
+ 
+ @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => 
+  ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+  ).Holidays(hol=> {
+                      hol.From("04/11/2019").To("04/12/2019").Label("Public holidays").CssClass("e-custom-holiday").Add();
+                      hol.From("04/01/2019").To("04/01/2019").Label("Public holiday").CssClass("e-custom-holiday").Add();
+                  }).Render()
+        

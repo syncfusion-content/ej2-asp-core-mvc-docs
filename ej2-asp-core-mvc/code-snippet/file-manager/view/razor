@@ -1,0 +1,19 @@
+<div class="control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+            Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).View(Syncfusion.EJ2.FileManager.ViewType.Details).Created("onCreated").Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+// File Manager's created event function
+function onCreated() {
+     console.log("File Manager has been created successfully");
+}
+</script>

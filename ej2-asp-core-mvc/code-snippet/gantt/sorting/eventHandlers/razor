@@ -1,0 +1,10 @@
+
+   @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).TaskFields(ts => ts.Id("TaskId").Name("TaskName"
+   ).StartDate("StartDate").EndDate("EndDate").Child("SubTasks")).ActionBegin("actionHandler").ActionComplete("actionHandler"
+   ).AllowSorting(true).Render()
+   
+    <script>
+        function actionHandler(args) {
+           alert(args.requestType + ' ' + args.type); 
+        }
+    </script>

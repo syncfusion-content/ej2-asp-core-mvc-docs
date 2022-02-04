@@ -1,0 +1,14 @@
+@Html.EJS().Gantt("Gantt").DataSource(dataManager =>
+{
+  dataManager.Url("http://some.com/invalidUrl")}).TaskFields(ts =>
+   ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").ParentId("ParentId")
+   ).ActionFailure("actionFailure").Render()
+
+<script>
+function actionFailure(args) {
+    var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+    let span: HTMLElement = document.createElement('span');
+    ganttObj.element.parentNode.insertBefore(span, ganttObj.element);
+    span.style.color = '#FF0000'
+    span.innerHTML = 'Server exception: 404 Not found';
+</script>

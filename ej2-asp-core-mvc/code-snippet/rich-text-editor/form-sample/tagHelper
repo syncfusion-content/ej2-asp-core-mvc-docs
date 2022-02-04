@@ -1,0 +1,53 @@
+<div id="content" class="box-form" style="margin: 0 auto; width:750px; padding:25px">
+
+    <form id="form-element" class="form-vertical">
+        <div class="form-group">
+            <ejs-richtexteditor id="form-support" name="rteForm" required data-required-message="* This field is required" data-msg-containerid="dateError" created="created" showCharCount="true" maxLength="100">
+                <e-content-template>
+                    <p>
+                        The Rich Text Editor control is WYSIWYG ('what you see is what you get') editor that provides the best user experience to create and update the content.
+                        Users can format their content using standard toolbar commands.
+                    </p>
+                    <p><b> Key features:</b></p>
+                    <ul>
+                        <li><p> Provides &lt; IFRAME &gt; and &lt; DIV &gt; modes </p></li>
+                        <li><p> Capable of handling markdown editing.</p></li>
+                        <li><p> Contains a modular library to load the necessary functionality on demand.</p></li>
+                        <li><p> Provides a fully customizable toolbar.</p></li>
+                        <li><p> Provides HTML view to edit the source directly for developers.</p></li>
+                        <li><p> Supports third - party library integration.</p></li>
+                        <li><p> Allows preview of modified content before saving it.</p></li>
+                        <li><p> Handles images, hyperlinks, video, hyperlinks, uploads, etc.</p></li>
+                        <li><p> Contains undo / redo manager.</p></li>
+                        <li><p> Creates bulleted and numbered lists.</p></li>
+                    </ul>
+                </e-content-template>
+            </ejs-richtexteditor>
+            <div id="dateError" style="padding-top: 10px"></div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-3 control-label"></div>
+            <div class="col-sm-6">
+                <div id='error'></div>
+            </div>
+        </div>
+        <div style="text-align: center">
+            <button id="validateSubmit" class="samplebtn e-control e-btn" type="submit" data-ripple="true">Submit</button>
+            <button id="resetbtn" class="samplebtn e-control e-btn" type="reset" data-ripple="true">Reset</button>
+        </div>
+    </form>
+</div>
+<script>
+    var formObject, options;
+    function created() {
+        formObject = new ej.inputs.FormValidator('#form-element', options);
+    };
+    window.onload = function () {
+        document.getElementById('validateSubmit').onclick = function () {
+            getValue();
+        };
+    }
+    function getValue() {
+        formObject.validate();
+    }
+</script>

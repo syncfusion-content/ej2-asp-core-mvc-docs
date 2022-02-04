@@ -1,0 +1,13 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Initialize file manager component with NodeJS service-->
+        <!--Replace the hosted port number in the place of "{port}"-->
+        <ejs-filemanager id="filemanager">
+                    getImageUrl="http://localhost:{port}/GetImage"
+                    url="http://localhost:{port}"
+                    downloadUrl="http://localhost:{port}/Download"
+                    uploadUrl="http://localhost:{port}/Upload">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+    </div>
+</div>

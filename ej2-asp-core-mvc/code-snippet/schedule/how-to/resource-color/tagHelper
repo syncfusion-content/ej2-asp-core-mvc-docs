@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2
+
+@section ControlsSection{
+    <div class="control-section">
+        <div class="control_wrapper schedule-control-section">
+            <ejs-schedule id="schedule" height="550" views="@ViewBag.view" currentView="WorkWeek" selectedDate="new DateTime(2018, 2, 15)" navigating="onNavigating">
+                <e-schedule-group byGroupID="false" resources="@ViewBag.Resources"></e-schedule-group>
+                <e-schedule-resources>
+                    <e-resource dataSource="@ViewBag.Projects" field="ProjectId" title=" Choose Project" name="Projects" textField="text" idField="id" colorField="color"></e-resource>
+                    <e-resource dataSource="@ViewBag.Categories" field="CategoryId" title="Category" name="Categories" textField="text" idField="id" colorField="color" allowMultiple="true"></e-resource>
+                </e-schedule-resources>
+                <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+            </ejs-schedule>
+        </div>
+    </div>
+}

@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 2, 15)">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource">
+        <e-eventsettings-fields>
+            <e-field-subject title="Event Name" name="Subject" default="Add Name"></e-field-subject>
+            <e-field-location title="Event Location" name="Location"></e-field-location>
+            <e-field-description title="Summary" name="Description"></e-field-description>
+            <e-field-starttime title="From" name="StartTime"></e-field-starttime>
+            <e-field-endtime title="To" name="EndTime"></e-field-endtime>
+        </e-eventsettings-fields>
+    </e-schedule-eventsettings>
+</ejs-schedule>

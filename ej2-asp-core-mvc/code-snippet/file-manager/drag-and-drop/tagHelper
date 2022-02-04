@@ -1,0 +1,27 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Filemanager element declaration -->
+        <ejs-filemanager id="file" allowDragAndDrop="true" fileDragStart="onFileDragStart" fileDragStop="onFileDragStop" fileDragging="onFileDragging" fileDropped="onFileDropped">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+    function onFileDragStart() {
+        console.log("Drag start");
+    }
+    function onFileDragStop() {
+        console.log("Drag stop");
+    }
+    function onFileDragging() {
+        console.log("File Dragging");
+    }
+      function onFileDropped() {
+        console.log("File Dropped");
+    }
+</script>

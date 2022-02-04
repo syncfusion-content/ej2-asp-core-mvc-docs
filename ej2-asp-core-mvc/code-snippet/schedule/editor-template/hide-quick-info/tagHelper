@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" height="550" showQuickInfo="false" selectedDate="new DateTime(2018, 2, 15)" views="@ViewBag.view">
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
+</ejs-schedule>

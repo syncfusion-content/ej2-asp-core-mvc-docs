@@ -1,0 +1,66 @@
+@using Syncfusion.EJ2.Schedule
+
+<ejs-schedule id="schedule" width="100%" selectedDate="new DateTime(2021, 8, 1)" height="650px" firstMonthOfYear="6" monthsCount="6" resourceHeaderTemplate="#resourceTemplate" monthHeaderTemplate="#monthHeaderTemplate" currentView="TimelineYear">
+    <e-schedule-views>
+        <e-schedule-view option="Year"></e-schedule-view>
+        <e-schedule-view option="TimelineYear" displayName="Horizontal Timeline Year" isSelected="true"></e-schedule-view>
+        <e-schedule-view option="TimelineYear" displayName="Vertical Timeline Year" orientation="Vertical">
+            <e-schedule-view-group resources="@ViewBag.Resources"></e-schedule-view-group>
+        </e-schedule-view>
+    </e-schedule-views>
+    <e-schedule-resources>
+        <e-schedule-resource dataSource="@ViewBag.Owners" field="OwnerId" title="Owner" name="Owners" textField="OwnerText" idField="Id" colorField="OwnerColor" allowMultiple="true"></e-schedule-resource>
+    </e-schedule-resources>
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<script id="monthHeaderTemplate" type="text/x-template">
+    <div>${getMonthHeaderText(data.date)}</div>
+</script>
+<script id="resourceTemplate" type="text/x-template">
+    <div class='template-wrap'>
+        <div class="resource-details">
+            <div class="resource-name">${getResourceName(data)}</div>
+        </div>
+    </div>
+
+</script>
+<script type="text/javascript">
+    window.getMonthHeaderText = function (date) {
+        var instance = new ej.base.Internationalization();
+        return date.toLocaleString('en-us', { month: 'long' }) + ' ' + date.getFullYear()
+    };
+    window.getResourceName = function (value) {
+        return value.resourceData[value.resource.textField];
+    };
+</script>
+<style>
+    .e-schedule .e-vertical-view .e-resource-cells {
+        height: 62px;
+    }
+
+    .e-schedule .template-wrap {
+        display: flex;
+        text-align: left;
+    }
+
+        .e-schedule .template-wrap .resource-details {
+            padding-left: 10px;
+        }
+
+            .e-schedule .template-wrap .resource-details .resource-name {
+                font-size: 16px;
+                font-weight: 500;
+                margin-top: 5px;
+            }
+
+    .e-schedule.e-device .template-wrap .resource-details .resource-name {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    .e-schedule.e-device .e-resource-tree-popup .e-fullrow {
+        height: 50px;
+    }
+</style>

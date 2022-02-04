@@ -1,0 +1,5 @@
+        @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").AllowSorting(true).SortSettings(ss=>
+        ss.Columns(col=> {col.Field("TaskId").Direction(Syncfusion.EJ2.Gantt.SortDirection.Descending).Add();
+             col.Field("TaskName").Direction(Syncfusion.EJ2.Gantt.SortDirection.Ascending).Add();
+         })).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress")
+        .Child("SubTasks")).Render()

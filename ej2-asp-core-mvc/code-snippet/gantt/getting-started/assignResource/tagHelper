@@ -1,0 +1,5 @@
+<ejs-gantt id='Editing' dataSource="ViewBag.DataSource" resources="ViewBag.projectResources" resourceIDMapping="ResourceId" resourceNameMapping="ResourceName">
+ <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor"
+   child="SubTasks" resourceInfo="ResourceId">
+ </e-gantt-taskfields>
+</ejs-gantt>

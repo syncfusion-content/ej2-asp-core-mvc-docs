@@ -1,0 +1,14 @@
+<ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" actionBegin="actionBegin">
+        <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+            endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" child="SubTasks">
+        </e-gantt-taskfields>
+        <e-gantt-editsettings allowTaskbarEditing="true" ></e-gantt-editsettings>
+</ejs-gantt>
+
+<script>
+    function actionBegin(args) {
+        if (args.requestType == "validateLinkedTask") {
+            args.validateMode.preserveLinkWithEditing = false;
+        }
+    }
+</script>

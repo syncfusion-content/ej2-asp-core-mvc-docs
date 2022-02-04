@@ -1,0 +1,19 @@
+    @{
+        List<object> toolbarItems = new List<object>();
+        toolbarItems.Add("ExpandAll");
+        toolbarItems.Add("CollapseAll");
+        toolbarItems.Add(new { text = "Test", tooltipText = "Test", id = "Test"});
+    }
+
+
+                 @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").ToolbarClick(
+                     "onToolbarClick").Toolbar(toolbarItems).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate"
+                     ).EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Render()
+		
+		<script>
+		  function onToolbarClick(args) {
+              if (args.item.text === 'Test') {
+                  alert("Custom toolbar click...");
+              }
+            } 
+	    </script>

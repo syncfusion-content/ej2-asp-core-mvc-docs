@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("650px")
+    .HeaderRows(headerRow => {
+        headerRow.Option(HeaderRowType.Month).Add();
+        headerRow.Option(HeaderRowType.Date).Add();
+    })
+    .Views(view => {
+        view.Option(View.TimelineMonth).Interval(12).Add();
+    })
+    .Render()
+)

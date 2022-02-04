@@ -1,0 +1,19 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <!-- Declare filemanager element -->
+        <ejs-filemanager id="filemanager" view="Details" created="onCreated">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+// File Manager's created event function
+function onCreated() {
+     console.log("File Manager has been created successfully");
+}
+</script>

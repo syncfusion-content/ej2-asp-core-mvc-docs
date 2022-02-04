@@ -1,0 +1,20 @@
+                <ejs-button id="updateRecord" content="Update Record" cssClass="e-primary"></ejs-button>
+                <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+                    </e-gantt-taskfields>
+                    <e-gantt-editsettings allowEditing="true"></e-gantt-editsettings>
+                </ejs-gantt>
+				
+		<script> 
+	        document.getElementById('updateRecord').addEventListener('click', function (args) {
+            var ganttObj = document.getElementById('Gantt').ej2_instances[0];
+            var data = {
+                TaskId: 3,
+                TaskName: 'Updated by index value',
+                StartDate: new Date('04/02/2019'),
+                Duration: 4,
+                Progress: 50
+            };
+            ganttObj.updateRecordByID(data);
+            });
+		</script>

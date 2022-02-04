@@ -1,0 +1,23 @@
+<ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" toolbar="@(new List<string>() { "Edit", "ZoomToFit" })" actionComplete="actionComplete" taskbarEdited="taskbarEdited">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                        endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" child="SubTasks">
+    </e-gantt-taskfields>
+    <e-gantt-editsettings allowEditing="true" allowTaskbarEditing="true"></e-gantt-editsettings>
+</ejs-gantt>
+
+<script>
+    function actionComplete(args) {
+        if ((args.action === "CellEditing" || args.action === "DialogEditing") && args.requestType === "save") {
+            var obj = document.getElementById("Gantt").ej2_instances[0];
+            obj.dataSource = JSON.parse('@Html.Raw(Json.Serialize(@ViewBag.DataSource))');
+            obj.fitToProject();
+        }
+    }
+    function taskbarEdited(args) {
+        if (args) {
+            var obj = document.getElementById("Gantt").ej2_instances[0];
+            obj.dataSource = JSON.parse('@Html.Raw(Json.Serialize(@ViewBag.DataSource))');
+            obj.fitToProject();
+        }
+    }
+</script>

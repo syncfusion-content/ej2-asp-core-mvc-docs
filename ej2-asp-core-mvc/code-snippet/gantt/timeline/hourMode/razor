@@ -1,0 +1,5 @@
+
+        @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").DateFormat(
+            "M/d/yyyy hh:mm:ss tt").DurationUnit(Syncfusion.EJ2.Gantt.DurationUnit.Minute).TaskFields(ts => ts.Id("TaskId").Name(
+                "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+                ).TimelineSettings(ts=> ts.TimelineViewMode(Syncfusion.EJ2.Gantt.TimelineViewMode.Hour)).Render()

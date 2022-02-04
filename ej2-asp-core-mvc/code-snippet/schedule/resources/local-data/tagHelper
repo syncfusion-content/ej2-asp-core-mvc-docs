@@ -1,0 +1,6 @@
+<ejs-schedule id="schedule" width="100%" height="550px">
+    <e-schedule-group resources="@ViewBag.Resources"></e-schedule-group>
+    <e-schedule-resources>
+        <e-schedule-resource dataSource="@ViewBag.Owners" field="OwnerId" title="Owners" name="Owners" textField="text" idField="id" colorField="color" allowMultiple="true"></e-schedule-resource>
+    </e-schedule-resources>
+</ejs-schedule>

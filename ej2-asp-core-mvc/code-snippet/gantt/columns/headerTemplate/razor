@@ -1,0 +1,44 @@
+        @(Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
+         ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress(
+             "Progress").Child("SubTasks")).Columns(col =>
+                {
+                    col.Field("TaskName").HeaderTemplate("#projectName").Width(150).Add();
+                    col.Field("StartDate").HeaderTemplate("#dateTemplate").Width(150).Add();
+                    col.Field("Duration").HeaderTemplate("#durationTemplate").Width(150).Add();
+                    col.Field("Progress").HeaderTemplate("#progressTemplate").Width(150).Add();
+                }).Render()
+						
+						
+    <script type="text/x-template" id="projectName">
+        <div>
+            <div>
+                <img src="taskname.png" width="20" height="20" class="e-image" />  Task Name
+            </div>
+        </div>
+    </script>
+	
+    <script type="text/x-template" id="dateTemplate">
+        <div>
+            <div>
+                <img src="startdate.png" width="20" height="20" class="e-image" />  Start Date
+            </div>
+        </div>
+    </script>
+	
+    <script type="text/x-template" id="durationTemplate">
+        <div>
+            <div>
+                <img src="duration.png" width="20" height="20" class="e-image" />  Duration
+            </div>
+        </div>
+    </script>
+	
+    <script type="text/x-template" id="progressTemplate">
+        <div>
+            <div>
+                <img src="progress.png" width="20" height="20" class="e-image" />  Progress
+            </div>
+        </div>
+    </script>
+
+        

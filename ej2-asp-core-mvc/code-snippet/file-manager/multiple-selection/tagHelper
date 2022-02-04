@@ -1,0 +1,13 @@
+<div class=" control-section">
+    <div class="sample-container">
+        <!--  Filemanager element declaration -->
+        <ejs-filemanager id="file" allowMultiSelection="true" view="Details">
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+            </e-filemanager-ajaxsettings>
+        </ejs-filemanager>
+        <!-- end of filemanager element -->
+    </div>
+</div>

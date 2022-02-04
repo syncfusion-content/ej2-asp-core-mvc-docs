@@ -1,0 +1,5 @@
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").Toolbar(new List<string>() 
+  { "Add", "Cancel", "CollapseAll", "Delete", "Edit", "ExpandAll", "Search", "Update" }).TaskFields(ts => ts.Id("TaskId").Name(
+                "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks").Segments("Segments")
+                ).EnableContextMenu(true).EditSettings(es=>
+                es.AllowEditing(true).AllowAdding(true).AllowDeleting(true).AllowTaskbarEditing(true)).Render()

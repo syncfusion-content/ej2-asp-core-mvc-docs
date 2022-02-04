@@ -1,0 +1,37 @@
+@using Syncfusion.EJ2.Schedule
+
+<div>
+    @Html.EJS().Button("btn1").Content("Click to open Editor").Render()
+    @Html.EJS().Button("btn2").Content("Click to open Event Editor").Render()
+</div>
+<div>
+    @(Html.EJS().Schedule("schedule")
+        .Width("100%")
+        .Height("550px")
+        .Views(ViewBag.view)
+        .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
+        .SelectedDate(new DateTime(2018, 2, 15))
+        .Render()
+    )
+</div>
+
+<script type="text/javascript">
+    document.getElementById('btn1').onclick = function () {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var cellData = {
+            startTime: new Date(2018, 1, 15, 10, 0),
+            endTime: new Date(2018, 1, 15, 11, 0),
+        };
+        scheduleObj.openEditor(cellData, 'Add');
+    };
+    document.getElementById('btn2').onclick = function () {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var eventData = {
+            Id: 3,
+            Subject: 'Meteor Showers in 2018',
+            StartTime: new Date(2018, 1, 14, 13, 0),
+            EndTime: new Date(2018, 1, 14, 14, 30)
+        };
+        scheduleObj.openEditor(eventData, 'Save');
+    };
+</script>

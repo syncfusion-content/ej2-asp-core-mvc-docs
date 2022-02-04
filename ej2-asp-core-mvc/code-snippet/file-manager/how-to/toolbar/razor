@@ -1,0 +1,39 @@
+@{
+    string[] items = new string[] { "NewFolder", "Upload", "Delete", "Download", "Rename", "SortBy", "Refresh", "Selection", "View", "Details", "Custom" };
+}
+<div class="control-section">
+    <div class="sample-container">
+        <!--  Filemanager element declaration -->
+        @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings()
+        {
+            Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).ToolbarSettings(new Syncfusion.EJ2.FileManager.FileManagerToolbarSettings()
+        {
+            Items = items
+        }).ToolbarClick("toolbarClick").ToolbarCreate("onCreate").Render()
+        <!-- end of filemanager element -->
+    </div>
+</div>
+<script>
+    // event for custom toolbar item
+    function toolbarClick(args) {
+        if (args.item.text === 'Custom') {
+            alert('You have clicked custom toolbar item')
+        }
+    }
+    function onCreate(args) {
+        for (var i = 0; i < args.items.length; i++) {
+            if (args.items[i].id === this.element.id + '_tb_custom') {
+                args.items[i].prefixIcon = 'e-icons e-fe-tick';
+            }
+        }
+    }
+</script>
+<style>
+    .e-fe-tick::before {
+        content: '\e614';
+    }
+</style>
