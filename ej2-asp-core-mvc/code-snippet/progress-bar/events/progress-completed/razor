@@ -1,0 +1,23 @@
+<div id="pause-container">
+    @(Html.EJS().ProgressBar("pause-container").Type(Syncfusion.EJ2.ProgressBar.ProgressType.Circular).Value(100)
+        .Width("160px").Height("160px")
+        .Minimum(0).Maximum(100).Load("progressLoad")
+        .Animation(an => an.Enable(true).Delay(0).Duration(2000)).ProgressCompleted("progressCompleted")
+        .Annotations(an =>
+        {
+            an.Content(""<div  style='font-size:20px; font-weight:bold; color:#ffffff;fill:#ffffff'><span>60%</span></div>"").Add();
+        }).Render())
+</div>
+
+<script>
+var clearTimeout1;
+var clearTimeout2;
+var progressCompleted = function (args) {
+            clearTimeout(clearTimeout2);
+            clearTimeout2 = setTimeout(function () {
+                var pausePlay = document.getElementById("pause-container").ej2_instances[0];
+                pausePlay.annotations[0].content = "<div id="point1" style="font-size:20px;font-weight:bold;color:#ffffff;fill:#ffffff"><span>60%</span></div>";
+                pausePlay.dataBind();
+            }, 2000);
+        }
+</script>

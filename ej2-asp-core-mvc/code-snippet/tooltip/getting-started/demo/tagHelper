@@ -1,0 +1,6 @@
+<ej-tooltip id="Tooltip" content="Tooltip content">
+            <!-- Target element -->
+               <e-content-template>
+                   <span id='target'>Show Tooltip</span>
+               </e-content-template>
+</ej-tooltip>

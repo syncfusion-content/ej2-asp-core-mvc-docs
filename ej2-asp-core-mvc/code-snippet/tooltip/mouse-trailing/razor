@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+    @Html.EJS().Tooltip("Tooltip").MouseTrail(true).Content("Tooltip content").ContentTemplate(@<div>
+        <div id="target" style="margin: 50px;">
+                Show tooltip
+        </div>
+    </div>).Render()
+
+
+<style>
+    #target {
+        background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        margin: 80px auto;
+        padding: 20px;
+        width: 200px;
+    }
+</style>

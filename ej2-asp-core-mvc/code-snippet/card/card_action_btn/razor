@@ -1,0 +1,11 @@
+<!--element which is going to render the Card-->
+<div class="e-card" style="max-width:400px">
+   <div class="e-card-header-title">Eiffel Tower</div>
+   <div class="e-card-content">
+      The Eiffel Tower is acknowledged as the universal symbol of Paris and France.
+   </div>
+   <div class="e-card-actions e-card-vertical">
+      <button class="e-card-btn">LIKE</button>
+      <button class="e-card-btn">SHARE</button>
+   </div>
+</div>

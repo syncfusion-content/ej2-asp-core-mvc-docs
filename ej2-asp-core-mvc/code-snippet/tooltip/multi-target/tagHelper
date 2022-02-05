@@ -1,0 +1,129 @@
+     <div id="container">
+        <form id="details" role="form">
+            <div>
+                <div class="info">User Name:</div>
+                <div class="inputs">
+                    <ejs-tooltip id="tooltip1" position="RightCenter" target="#uname">
+                        <e-content-template>
+                            <input type="text" id="uname" class="e-info e-input" name="firstname" title="Please enter your name" />
+                        </e-content-template>
+                    </ejs-tooltip>
+                </div>
+            </div>
+            <br/>
+            <div>
+                <div class="info">Email Address:</div>
+                <div class="inputs">
+                    <ejs-tooltip id="tooltip2" position="RightCenter" target="#mail">
+                        <e-content-template>
+                            <input type="text" id="mail" class="e-info e-input" name="email" title="Enter a valid email address" />
+                        </e-content-template>
+                    </ejs-tooltip>
+                </div>
+            </div>
+            <br/>
+            <div>
+                <div class="info">Password:</div>
+                <div class="inputs">
+                    <ejs-tooltip id="tooltip3" position="RightCenter" target="#pwd">
+                        <e-content-template>
+                            <input id="pwd" type="password" class="e-info e-input" name="password" title="Be at least 8 characters length" />
+                        </e-content-template>
+                    </ejs-tooltip>
+                </div>
+            </div>
+            <br/>
+            <div>
+                <div class="info">Confirm Password:</div>
+                <div class="inputs">
+                    <ejs-tooltip id="tooltip4" position="RightCenter" target="#cpwd">
+                        <e-content-template>
+                            <input id="cpwd" type="password" class="e-info e-input" name="Cpwd" title="Re-enter your password" />
+                        </e-content-template>
+                    </ejs-tooltip>
+                </div>
+            </div>
+            <br/>
+            <div class="btn">
+                <input id="sample" type="button" class="e-btn" value="Submit" />
+                <input id="clear" type="reset" value="Reset" class="e-btn" />
+            </div>
+        </form>
+    </div>
+
+<script>
+document.getElementById('sample').addEventListener('click', function() {
+    var tooltip1 = document.getElementById('tooltip1').ej2_instances[0];
+    var tooltip3 = document.getElementById('tooltip3').ej2_instances[0];
+    var name = document.getElementById('uname').value;
+    var pwd = document.getElementById('pwd').value;
+    var cpwd = document.getElementById('cpwd').value;
+    if(name.length > 0 & name.length < 4){
+        document.getElementById('uname').title = 'Required Minimum 4 Characters';
+        document.getElementById('uname').style.backgroundColor = 'red';
+        var target = document.getElementById('uname');
+        tooltip1.open(target);
+    } else {
+
+        document.getElementById('uname').style.backgroundColor = 'white';
+    }
+    if(pwd !== '' && pwd.length < 8){
+        document.getElementById('pwd').title = 'Required Minimum 8 Characters';
+        document.getElementById('pwd').style.backgroundColor = 'red';
+        var pwdtarget = document.getElementById('pwd');
+        tooltip3.open(pwdtarget);
+    } else {
+        document.getElementById('pwd').style.backgroundColor = 'white';
+    }
+    if(name.length >= 4 && pwd !== '' && pwd.length >= 8  &&  pwd == cpwd ){
+        alert('Form Submitted');
+    } else {
+        alert('Details are not Valid');
+    }
+})
+document.getElementById('clear').addEventListener('click', function(){
+    var tooltip1 = document.getElementById('tooltip1').ej2_instances[0];
+    var tooltip3 = document.getElementById('tooltip3').ej2_instances[0];
+
+    document.getElementById('uname').style.backgroundColor = 'white';
+    document.getElementById('pwd').style.backgroundColor = 'white';
+    var target = document.getElementById('uname');
+    tooltip1.close(target);
+    document.getElementById('uname').title = 'Please enter your name';
+    var pwdtarget = document.getElementById('pwd');
+    tooltip3.close(pwdtarget);
+});
+
+</script>
+<style>
+#details .info {
+    font-weight: bold;
+    width: 165px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#details .inputs {
+    display: inline-block;
+}
+#details .btn{
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+#details #sample{
+  margin-left:10px;
+}
+#details #clear{
+  margin-left:10px;
+}
+#details {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+</style>

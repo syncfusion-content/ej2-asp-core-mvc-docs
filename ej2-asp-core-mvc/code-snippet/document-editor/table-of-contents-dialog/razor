@@ -1,0 +1,16 @@
+@Html.EJS().Button("dialog").Content("Dialog").Render()
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnableTableOfContentsDialog(true).EnableSelection(true).EnableSfdtExport(true).Render()
+</div>
+
+<script>
+    var documenteditor;    
+    document.addEventListener('DOMContentLoaded', function () {        
+        documenteditor = document.getElementById("container").ej2_instances[0];        
+        var button = document.getElementById('dialog');
+        button.addEventListener('click', function () {
+            // To open TableOfContents Dialog
+            documenteditor.showDialog('TableOfContents');
+        });
+    });
+</script>

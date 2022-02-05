@@ -1,0 +1,11 @@
+@Html.EJS().TreeGrid("TreeGrid").AllowPaging().DataSource((IEnumerable<object>)ViewBag.datasource).PageSettings(page => page.PageSize(10).PageSizes(true)).Columns(col =>
+{
+   col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+   col.Field("StartDate").HeaderText("Start Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width(210).Add();
+   col.Field("EndDate").HeaderText("End Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width(210).Add();
+   col.Field("Duration").HeaderText("Duration").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(110).Add();
+   col.Field("Progress").HeaderText("Progress").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+   col.Field("Priority").HeaderText("Priority").Width(90).Add();
+
+}).ChildMapping("Children").TreeColumnIndex(1).Render()

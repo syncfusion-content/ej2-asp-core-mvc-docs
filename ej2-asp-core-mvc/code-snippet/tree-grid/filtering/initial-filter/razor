@@ -1,0 +1,14 @@
+@{
+    List<object> filterColumns = new List<object>();
+    filterColumns.Add(new { field = "TaskName", matchCase = false, @operator = "startswith", predicate = "and", value = "plan" });
+    filterColumns.Add(new { field = "Duration", matchCase = false, @operator = "equal", predicate = "and", value = 5 });
+}
+
+@Html.EJS().TreeGrid("TreeGrid").Height(275).AllowFiltering().FilterSettings(filter => filter.Columns(filterColumns)).DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
+{
+   col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+   col.Field("StartDate").HeaderText("Start Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width(210).Add();
+   col.Field("Duration").HeaderText("Duration").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(190).Add();
+
+}).ChildMapping("Children").AllowPaging().TreeColumnIndex(1).Render()

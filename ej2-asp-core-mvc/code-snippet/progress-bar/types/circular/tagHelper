@@ -1,0 +1,12 @@
+<ejs-progressbar id="circulardeterminate" type='Circular' height='60' minimum="0" maximum="100"
+            value=100>
+</ejs-progressbar>
+<ejs-progressbar id="circularindeterminate" type='Circular' height='60' minimum="0" maximum="100"
+            value=20 isIndeterminate="true">
+</ejs-progressbar>
+<ejs-progressbar id="circularbuffer" type='Circular' height='60' minimum="0" maximum="100"
+            value=40 secondaryProgress='60'>
+</ejs-progressbar>
+<ejs-progressbar id="circularsegment" type='Circular' height='60' minimum="0" maximum="100"
+            value=100 segmentCount="8">
+</ejs-progressbar>

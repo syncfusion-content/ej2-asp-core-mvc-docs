@@ -1,0 +1,61 @@
+<div id="default" style="padding-bottom:75px;">
+    <div class='row'> <ejs-button id="show_toast" content="Show Toast" cssClass="e-btn"></ejs-button> </div>
+    <div class='row'>
+        <div class="col-md-6">
+            <label> Show Animation </label>
+        </div>
+        <div class="col-md-6">
+            <ejs-dropdownlist id="showAnimation" dataSource="@ViewBag.data" placeholder="Select a animate type" index="0" popupHeight="200px" change="valueChange">
+                <e-dropdownlist-fields text="Value" value="Id"></e-dropdownlist-fields>
+            </ejs-dropdownlist>
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col-md-6">
+            <label> Hide Animation </label>
+        </div>
+        <div class="col-md-6">
+            <ejs-dropdownlist id="hideAnimation" dataSource="@ViewBag.data" index="0" placeholder="Select a animate type" change="valueChange1">
+                <e-dropdownlist-fields text="Value" value="Id"></e-dropdownlist-fields>
+            </ejs-dropdownlist>
+        </div>
+    </div>
+    <ejs-toast id="element" title="Matt sent you a friend request" content="You have a new friend request yet to accept">
+        <e-toast-position X="Right" Y="Bottom"></e-toast-position>
+        <e-toast-animationsettings>
+            <e-toast-animationsettingsshow effect="SlideRightIn" duration="400"></e-toast-animationsettingsshow>
+            <e-toast-animationsettingshide effect="SlideRightOut" duration="400"></e-toast-animationsettingshide>
+        </e-toast-animationsettings>
+    </ejs-toast>
+</div>
+
+<script type="text/javascript">
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show();
+        }, 1000);
+    document.getElementById("show_toast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show();
+    });
+    function valueChange(e) {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.animation.show.effect = e.value;
+    }
+    function valueChange1(e) {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.animation.hide.effect = e.value;
+    }
+</script>
+<style>
+
+    #default {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .row {
+        margin: 15px;
+    }
+</style>

@@ -1,0 +1,3 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.DataSource" childMapping="Children" treeColumnIndex="1">
+    
+</ejs-treegrid>

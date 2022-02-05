@@ -1,0 +1,13 @@
+<div style="height:400px;">
+    <ejs-button id="dialogBtn" content="Open Confirm Dialog"></ejs-button>
+</div>
+
+<script>
+
+    // To Render dialog utility on button click
+    document.getElementById("dialogBtn").onclick = function () {
+
+        // Initialize and render confirm dialog
+        ej.popups.DialogUtility.confirm('This is a Confirmation Dialog!');
+    }
+</script>

@@ -1,0 +1,46 @@
+<div class="col-lg-12 control-section" id="target">
+    <ejs-button id="normalbtn" content="Open"></ejs-button>
+    <ejs-dialog id="dialog" created="onLoad" width="400px" target="#target" Content="Are you sure you want to permanently delete all of these items?"
+                showCloseIcon="true" header="Delete Multiple Items" footerTemplate="<div><button id='Button1' class='e-control e-btn e-primary e-flat' data-ripple='true'><span class='e-btn-icon e-icons e-ok-icon e-icon-left'></span>Yes</button><button id='Button2' class='e-control e-btn e-flat' data-ripple='true'><span class='e-btn-icon e-icons e-close-icon e-icon-left'></span>No</button></div>">
+        <e-dialog-animationsettings effect="Zoom"></e-dialog-animationsettings>
+    </ejs-dialog>
+</div>
+<style>
+    .control-section {
+        padding-left: 10px;
+    }
+
+    .control-section {
+        padding-left: 10px;
+    }
+
+    #target {
+        height: 100%;
+        min-height: 350px;
+    }
+
+    .e-ok-icon::before {
+        content: '\e7ff';
+    }
+
+    .e-close-icon::before {
+        content: '\e825';
+    }
+</style>
+
+<script>
+    var dialogObj;
+    document.getElementById('normalbtn').onclick = function () {
+        dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.show();
+    };
+    function onLoad() {
+        dialogObj = document.getElementById('dialog').ej2_instances[0];
+        document.getElementById('Button1').onclick = function () {
+            dialogObj.hide();
+        };
+        document.getElementById('Button2').onclick = function () {
+            dialogObj.hide();
+        };
+    }
+</script>

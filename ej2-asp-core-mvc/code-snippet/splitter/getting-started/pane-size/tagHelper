@@ -1,0 +1,34 @@
+<ejs-splitter id="splitter" height="250px" width="550px">
+    <e-splitter-panes>
+        <e-splitter-pane size="40%" content="<div class='content'><h3 class='h3'>HTML</h3><div class='code-preview'>&lt;<span>!DOCTYPE html&gt;</span><div>&lt;<span>html&gt;</span></div><div>&lt;<span>body&gt;</span></div>&lt;<span>div</span> id='custom-image'&gt;<div style='margin-left: 5px'>&lt;<span>img</span> src='src/albert.png'&gt;</div><div>&lt;<span>div</span>&gt;</div><div>&lt;<span>/body&gt;</span></div><div>&lt;<span>/html&gt;</span></div></div></div>"></e-splitter-pane>
+        <e-splitter-pane size="20%" content="<div class='content'><h3 class='h3'>CSS</h3><div class='code-preview'><span>img {</span><div id='code-text'>margin:<span>0 auto;</span></div><div id='code-text'>display:<span>flex;</span></div><div id='code-text'>height:<span>70px;</span></div><span>   }</span></div></div>"></e-splitter-pane>
+        <e-splitter-pane size="40%" content="<div class='content'><h3 class='h3'>JavaScript</h3><div class='code-preview'><span>var</span> image = document.getElementById('custom-image');<div>image.addEventListener('click', function() {</div><div style='padding-left: 20px;'>// Code block for click action</div><span> }</span></div></div>"></e-splitter-pane>
+    </e-splitter-panes>
+</ejs-splitter>
+
+<style>
+    #code-text {
+        margin-left: 5px;
+    }
+
+    .code-preview {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .h3 {
+        font-size: 14px;
+        margin: 4px;
+    }
+
+    .content {
+        padding: 12px;
+    }
+
+    .splitter-image {
+        margin: 0 auto;
+        display: flex;
+        height: 115px;
+        margin-top: 10px;
+    }
+</style>

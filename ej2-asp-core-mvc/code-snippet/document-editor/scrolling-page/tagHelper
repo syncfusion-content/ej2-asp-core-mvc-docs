@@ -1,0 +1,68 @@
+<div id="documenteditor" style="width:100%;height:100%">
+<ejs-documenteditor isReadOnly=false id="container"></ejs-documenteditor>      
+</div>
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById('DocumentEditor').ej2_instances[0];
+        documenteditor.resize();
+        onLoadDefault();
+        documenteditor.scrollToPage(2);
+    });
+
+    function onLoadDefault() {
+        var defaultDocument = {
+            "sections": [
+                {
+                    "blocks": [
+                        {
+                            "paragraphFormat": {
+                                "styleName": "Normal"
+                            },
+                            "inlines": [
+                                {
+                                    "text": "First page"
+                                }
+                            ]
+                        }
+                    ],
+                    "headersFooters": {},
+                },
+                {
+                    "blocks": [
+                        {
+                            "paragraphFormat": {
+                                "styleName": "Normal"
+                            },
+                            "inlines": [
+                                {
+                                    "text": "Second page"
+                                }
+                            ]
+                        }
+                    ],
+                    "headersFooters": {},
+                }
+            ],
+            "characterFormat": {},
+            "paragraphFormat": {},
+            "background": {
+                "color": "#FFFFFFFF"
+            },
+            "styles": [
+                {
+                    "type": "Paragraph",
+                    "name": "Normal",
+                    "next": "Normal"
+                },
+                {
+                    "type": "Character",
+                    "name": "Default Paragraph Font"
+                }
+            ]
+        }
+        documenteditor.open(JSON.stringify(defaultDocument));
+        documenteditor.focusIn();
+    }
+
+</script>

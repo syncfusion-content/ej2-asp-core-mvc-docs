@@ -1,0 +1,109 @@
+     <div id='container'>
+        <h4 class="list-header">National Sports</h4>
+        <!-- Tooltip element rendering for AjaxContent loading -->
+        <ejs-tooltip id="Tooltip" content="Loading..." beforeRender="onBeforeRender" target="#countrylist [title]" showTipPointer="true" position="RightCenter">
+            <e-content-template>
+                <!-- ListView element -->
+                <ejs-listview id="countrylist" dataSource="ViewBag.data" enable="true">
+                    <e-listview-fieldsettings text="text" tooltip="id"></e-listview-fieldsettings>
+                </ejs-listview>
+            </e-content-template>
+        </ejs-tooltip>
+    </div>
+
+
+<script>
+        /**
+         * Process tooltip ajax content.
+         */
+  function onBeforeRender(args) {
+            var _this = this;
+            this.content = 'Loading...';
+            this.dataBind();
+            var ajax = new ej.base.Ajax("@Url.Content("~/Scripts/tooltip/tooltipdata.json")", 'GET', true);
+            ajax.send().then(function (result) {
+            result = JSON.parse(result);
+            for (var i = 0; i < result.length; i++) {
+                if (result[i].Id === args.target.getAttribute('data-content')) {
+                    _this.content = "<div class='contentWrap'><span class=" + result[i].Class + "></span><div class='def'>" + result[i].Sports + "</div></div>";
+                }
+            }
+            _this.dataBind();
+        }, function (reason) {
+            _this.content = reason.message;
+            _this.dataBind();
+        });
+    }
+</script>
+<link href="~/css/tooltip/icons.css" rel="stylesheet" />
+<style>
+
+    .e-bigger [class^="sports-icon-"],
+    .e-bigger [class*=" sports-icon-"] {
+        font-size: 18px;
+    }
+
+    [class^="sports-icon-"],
+    [class*=" sports-icon-"] {
+        font-family: 'sportsicons';
+        speak: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        padding-right: 6px;
+        vertical-align: middle;
+    }
+
+    .sports-icon-cricket:before {
+        content: "\e703";
+    }
+
+    .sports-icon-archery:before {
+        content: "\e705";
+    }
+
+    .sports-icon-table-tennis:before {
+        content: "\e702";
+    }
+
+    .sports-icon-baseball:before {
+        content: "\e706";
+    }
+
+    .sports-icon-hockey:before {
+        content: "\e701";
+    }
+
+    .sports-icon-shooting:before {
+        content: "\e700";
+    }
+
+    .def {
+        float: right;
+    }
+
+    #countrylist {
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        max-width: 170px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .list-header {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    @@media (max-width: 481px) {
+        #countrylist {
+            margin: 0;
+        }
+
+        .list-header {
+            text-align: left;
+        }
+    }
+</style>

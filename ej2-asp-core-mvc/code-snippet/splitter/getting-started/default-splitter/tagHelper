@@ -1,0 +1,7 @@
+<ejs-splitter id="splitter" height="250px" width="600px">
+    <e-splitter-panes>
+        <e-splitter-pane content="<div></div>"></e-splitter-pane>
+        <e-splitter-pane content="<div></div>"></e-splitter-pane>
+        <e-splitter-pane content="<div></div>"></e-splitter-pane>
+    </e-splitter-panes>
+</ejs-splitter>

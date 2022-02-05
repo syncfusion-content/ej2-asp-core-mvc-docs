@@ -1,0 +1,4 @@
+@(Html.EJS().ProgressBar("container").Type(Syncfusion.EJ2.ProgressBar.ProgressType.Circular).Value(60)
+    .TrackThickness(80).InnerRadius("190%").CornerRadius(Syncfusion.EJ2.ProgressBar.CornerType.Round)
+    .Minimum(0).Maximum(100).Animation(an => an.Enable(true).Delay(0).Duration(2000))
+    .Annotations(an => { an.Content("<div  style='font-size:20px; font-weight:bold; color:#ffffff;fill:#ffffff'><span>60%</span></div>").Add(); }).Render())

@@ -1,0 +1,15 @@
+@Html.EJS().Button("InsertEndnote").Content("Insert Endnote").Render()
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditor("DocumentEditor").IsReadOnly(false).EnableEditor(true).EnableSelection(true).EnableSfdtExport(true).Render()
+</div>
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById('DocumentEditor').ej2_instances[0];
+        documenteditor.resize();
+    });    
+    document.getElementById('InsertEndnote').addEventListener('click', function () {
+        documenteditor.editor.insertEndnote();
+    });
+
+</script>

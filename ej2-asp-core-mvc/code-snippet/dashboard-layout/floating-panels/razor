@@ -1,0 +1,54 @@
+@model WebApplication.Controllers.HomeController.spacingModel
+
+<div>
+    <!--  Button element declaration -->
+    @Html.EJS().Button("toggle").Content("Enable Floating").CssClass("e-flat e-primary e-outline").IsToggle(true).Render()
+    <!-- end of button element -->
+</div>
+<div class="control-section" style="padding-top: 15px;">
+    <div>
+        <!--  DashboardLayout element declaration -->
+        @Html.EJS().DashboardLayout("dashboard_default").Columns(6).AllowFloating(false).CellSpacing(Model.cellSpacing).Panels(Panel =>
+        {
+            Panel.SizeX(2).SizeY(2).Row(1).Col(0).Content("<div class='content'>0</div>").Add();
+            Panel.SizeX(2).SizeY(2).Row(2).Col(2).Content("<div class='content'>1</div>").Add();
+            Panel.SizeX(2).SizeY(2).Row(3).Col(4).Content("<div class='content'>2</div>").Add();
+        }).Render()
+        <!-- end of dashboardlayout element -->
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Create instances for dashboardlayout
+        var dashboard = document.getElementById('dashboard_default').ej2_instances[0];
+        var resetPanels = dashboard.serialize();
+        resetPanels[0].content = '<div class="content">0</div>';
+        resetPanels[1].content = '<div class="content">1</div>';
+        resetPanels[2].content = '<div class="content">2</div>';
+        // Toggle button to enable and disable floating
+        document.getElementById('toggle').onclick = function (e) {
+            var toggleBtn = document.getElementById('toggle').ej2_instances[0];
+            let panels = [];
+            if (toggleBtn.content == "Disable Floating and Reset") {
+                toggleBtn.content = 'Enable Floating';
+                dashboard.allowFloating = false;
+                dashboard.panels = resetPanels;
+            } else {
+                toggleBtn.content = 'Disable Floating and Reset';
+                dashboard.allowFloating = true;
+            }
+        };
+    });
+</script>
+
+<style>
+    /* DashboardLayout element styles  */
+    #dashboard_default .e-panel .e-panel-container .content {
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        line-height: 90px;
+    }
+</style>

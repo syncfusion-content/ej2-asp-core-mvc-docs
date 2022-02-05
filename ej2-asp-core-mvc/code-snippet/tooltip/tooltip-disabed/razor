@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+ <div id="tooltip">
+    @Html.EJS().Tooltip("box").Content("Tooltip from disabled element").ContentTemplate(@<div>
+        <div id="box" style="display: inline-block;">
+            <input type="button" id="disabledbutton" disabled value="Disabled button" />
+        </div>
+    </div>).Render()
+</div>
+
+
+<style>
+    #tooltip {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    #disabledbutton {
+        pointer-events: none;
+    }
+</style>

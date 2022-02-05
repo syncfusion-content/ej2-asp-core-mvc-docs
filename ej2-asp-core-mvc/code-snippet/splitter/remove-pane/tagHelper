@@ -1,0 +1,29 @@
+<div>
+    <ejs-splitter id="splitter" height="200px" width="600px">
+        <e-splitter-panes>
+            <e-splitter-pane size="200px" content="<div class='content'>Pane 1</div>"></e-splitter-pane>
+            <e-splitter-pane size="200px" content="<div class='content'>Pane 2</div>"></e-splitter-pane>
+            <e-splitter-pane size="200px" content="<div class='content'>Pane 3</div>"></e-splitter-pane>
+        </e-splitter-panes>
+    </ejs-splitter>
+    <button id="removePane" class="e-btn" onclick="onClicked()">Remove pane</button>
+</div>
+
+<style>
+    .content {
+        padding: 9px;
+    }
+
+    #removePane {
+        margin-top: 15px;
+    }
+</style>
+
+<script type="text/javascript">
+    function onClicked() {
+        var splitterObj = document.getElementById('splitter').ej2_instances[0];
+        if (!ej.base.isNullOrUndefined(document.querySelector('#splitter').querySelectorAll('.e-pane-horizontal')[1])) {
+            splitterObj.removePane(1);
+        }
+    }
+</script>

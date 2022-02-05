@@ -1,0 +1,16 @@
+    <style>
+        .e-attr {
+            background: '#d7f0f4';
+        }
+    </style>
+@(Html.EJS().TreeGrid("TreeGrid")
+        .Height(300)
+        .DataSource((IEnumerable<object>)ViewBag.datasource)
+        .Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").Width(110).CustomAttributes(new { @class = "e-attr" }).TextAlign(TextAlign.Right).Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+            col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).CustomAttributes(new { @class = "e-attr" }).Width(110).Add();
+            col.Field("Progress").HeaderText("Progress").TextAlign(TextAlign.Right).Width(90).Add();
+        })
+        .ChildMapping("Children").TreeColumnIndex(1).Render())

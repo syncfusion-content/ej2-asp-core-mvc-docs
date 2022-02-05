@@ -1,0 +1,55 @@
+
+<div class="control-section" style="width:400px;margin:0 auto;">
+    @Html.EJS().Toast("element").Position(p => p.X("Right").Y("Bottom")).Buttons(item=> {
+    item.Click("btnClick").ModelValue(ViewBag.ToastButtons1).Add();
+    item.ModelValue(ViewBag.ToastButtons2).Add();
+}).Width("300").Height("150").ContentTemplate(@<div>
+        <p>
+            <img alt="Laura" class="toast-img" src="https://ej2.syncfusion.com/demos/src/toast/resource/laura.png" />
+            <span class="name">Anjolie Stokes</span>
+        </p>
+        <div class="content">
+            <p>Thanks for update!</p>
+        </div>
+    </div>).Render()
+
+    <div id='templateToast' style="display: none;color:red"> System affected by virus !!! </div>
+    <div class="row">
+        @Html.EJS().Button("show_toast").Content("Show Toast").CssClass("e-btn").Render()
+    </div>
+</div>
+<script type="text/javascript">
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show();
+        }, 1000);
+    document.getElementById("show_toast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show();
+    });
+    function btnClick(e) {
+        var toastEle = ej.base.closest(e.target, '.e-toast');
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.hide(toastEle);
+    }
+</script>
+
+<style>
+    .toast-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .name {
+        padding-left: 20px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .content {
+        padding-left: 60px;
+        font-size: 12px;
+    }
+</style>

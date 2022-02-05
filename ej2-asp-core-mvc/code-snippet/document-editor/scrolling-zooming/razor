@@ -1,0 +1,11 @@
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditor("DocumentEditor").IsReadOnly(false).EnableSelection(true).EnableSfdtExport(true).EnableEditor(true).Render()
+</div>
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById('DocumentEditor').ej2_instances[0];
+        documenteditor.resize();
+        documenteditor.zoomFactor = 3;
+    });
+</script>

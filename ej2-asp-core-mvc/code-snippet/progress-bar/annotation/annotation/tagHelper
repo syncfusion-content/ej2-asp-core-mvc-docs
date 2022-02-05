@@ -1,0 +1,6 @@
+<ejs-progressbar id="container" minimum="0" maximum="100" type='Circular' value=60 
+        innerRadius="190%" trackColor="#FFD939" trackThickness=80 cornerRadius="Round">
+        <e-progressbar-progressbarannotations>
+            <e-progressbar-progressbarannotation content='<div id="point1" style="font-size:20px;font-weight:bold;color:#ffffff;fill:#ffffff"><span>60%</span></div>'></e-progressbar-progressbarannotation>
+        </e-progressbar-progressbarannotations>
+</ejs-progressbar>

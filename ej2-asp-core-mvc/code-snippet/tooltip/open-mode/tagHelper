@@ -1,0 +1,75 @@
+         <ejs-tooltip id="tooltiphover" content=@ViewBag.hover OpensOn="Hover">
+            <e-content-template>
+                <div class="blocks"><span>Hover Me !(Default)</span></div>
+            </e-content-template>
+        </ejs-tooltip>
+        <ejs-tooltip id="tooltipclick" content=@ViewBag.click OpensOn="Click">
+            <e-content-template>
+                <div class="blocks"><span>Click Me !</span></div>
+            </e-content-template>
+        </ejs-tooltip>
+        <ejs-tooltip id="tooltipfocus" content=@ViewBag.focus OpensOn="Focus" target=".e-info">
+            <e-content-template>
+                <div class="blocks"><span><input class="e-info" type="text" placeholder="Focus and blur" /></span></div>
+            </e-content-template>
+        </ejs-tooltip>
+        <ejs-tooltip id="tooltipcustom" content=@ViewBag.custom OpensOn="Custom">
+            <e-content-template>
+                <div class="blocks">
+                    <input id="tooltipopen" value="Click to open tooltip manually" type="button"/>
+                </div>
+            </e-content-template>
+        </ejs-tooltip>
+
+<style>
+    #tooltiphover {
+        width: 200px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    #tooltipclick {
+        width: 200px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    #tooltipfocus {
+        width: 200px;
+        box-sizing: border-box;
+        display: inline-block;
+        line-height: 17px;
+    }
+    #tooltipcustom {
+        width: 200px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    #tooltipfocus .blocks span {
+        line-height: 17px;
+    }
+    #tooltipcustom .blocks #tooltipopen {
+        line-height: 17px;
+    }
+        .blocks {
+        background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        display: inline-block;
+        line-height: 50px;
+        margin: 0 10px 10px 0;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: middle;
+        width: 200px;
+    }
+</style>
+
+<script>
+        document.getElementById('tooltipopen').addEventListener("click", function () {
+            var customTooltip = document.getElementById('tooltipcustom').ej2_instances[0];
+            if (this.getAttribute("data-tooltip-id")) {
+                customTooltip.close();
+            } else {
+                customTooltip.open(this);
+            }
+        });
+</script>

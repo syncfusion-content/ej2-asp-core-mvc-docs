@@ -1,0 +1,9 @@
+@Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnableSelection(true).EnableSfdtExport(true).Render()
+
+<script>
+    var documenteditor;    
+    document.addEventListener('DOMContentLoaded', function () {        
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        documenteditor.enableLocalPaste = true;
+    });
+</script>

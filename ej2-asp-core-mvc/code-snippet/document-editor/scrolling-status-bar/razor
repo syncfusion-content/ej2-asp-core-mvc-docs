@@ -1,0 +1,132 @@
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditor("DocumentEditor").IsReadOnly(false).EnableSelection(true).EnableSfdtExport(true).EnableEditor(true).Render()
+</div>
+<div id='page-fit-type-div'>
+    <label style="margin-top: 6px;margin-right: 2px">Page</label>
+    <div id='editablePageNumber' style='border: 1px solid #F1F1F1;display: inline-flex;height: 17px;padding: 0px 4px;'>
+        <label id="documenteditor_page_no" style="text-transform:capitalize;white-space:pre;overflow:hidden;user-select:none;cursor:text;height:17px;max-width:150px"></label>
+    </div>
+    <label style="margin-left:2px;letter-spacing: 1.05px;">of</label>
+    <label id='documenteditor_pagecount' style="margin-left:6px;letter-spacing: 1.05px;"></label>
+    @Html.EJS().DropDownButton("zoom").Content("100%").Items((IEnumerable
+    <object>)ViewBag.zoomList).Render()
+</div>
+<script>
+    var documenteditor;
+    var pageCount;
+    var editablePageNumber;
+    var editorPageCount;
+    var pageNumberLabel;
+    var startPage = 1;
+    var zoomBtn;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById('DocumentEditor').ej2_instances[0];
+        pageCount = document.getElementById('documenteditor_pagecount');
+        editablePageNumber = document.getElementById('editablePageNumber');
+        pageNumberLabel = document.getElementById('documenteditor_page_no');
+        documenteditor.resize();
+        editablePageNumber.addEventListener('click', updateDocumentEditorPageNumber);
+        editablePageNumber.addEventListener('keydown', onKeyDown);
+        editablePageNumber.addEventListener('blur', onBlur);
+        zoomBtn = document.getElementById('zoom');
+        zoomBtn.className = 'e-de-statusbar-zoom';
+        var zoom = zoomBtn.ej2_instances[0];
+        zoom.select = function (e) {
+            onZoom(e);
+        };
+        updatePageCount();
+        updatePageNumber();
+        editablePageNumber.addEventListener('click', updateDocumentEditorPageNumber);
+        editablePageNumber.addEventListener('keydown', onKeyDown);
+        editablePageNumber.addEventListener('blur', onBlur);
+        documenteditor.viewChange = function (e) {
+            updatePageNumberOnViewChange(e);
+        };
+        documenteditor.contentChange = function () {
+            //Set page count
+            updatePageCount();
+        };
+    });
+
+    function updatePageNumberOnViewChange(args) {
+        if (documenteditor.selection
+            && documenteditor.selection.startPage >= args.startPage && documenteditor.selection.startPage <= args.endPage) {
+            startPage = documenteditor.selection.startPage;
+        } else {
+            startPage = args.startPage;
+        }
+        updatePageNumber();
+    }
+    function onBlur() {
+        if (editablePageNumber.textContent === '' || parseInt(editablePageNumber.textContent, 0) > editorPageCount) {
+            updatePageNumber();
+        }
+        editablePageNumber.contentEditable = 'false';
+    }
+    function onKeyDown(e) {
+        if (e.which === 13) {
+            e.preventDefault();
+            var pageNumber = parseInt(editablePageNumber.textContent, 0);
+            if (pageNumber > editorPageCount) {
+                updatePageNumber();
+            } else {
+                if (documenteditor.selection) {
+                    documenteditor.selection.goToPage(parseInt(editablePageNumber.textContent, 0));
+                } else {
+                    documenteditor.scrollToPage(parseInt(editablePageNumber.textContent, 0));
+                }
+            }
+            editablePageNumber.contentEditable = 'false';
+            if (editablePageNumber.textContent === '') {
+                updatePageNumber();
+            }
+        }
+        if (e.which > 64) {
+            e.preventDefault();
+        }
+    }
+    function onZoom(args) {
+        setZoomValue(args.item.text);
+        updateZoomContent();
+    }
+    function setZoomValue(text) {
+        if (text.match('Fit one page')) {
+            documenteditor.fitPage('FitOnePage');
+        } else if (text.match('Fit page width')) {
+            documenteditor.fitPage('FitPageWidth');
+        } else {
+            documenteditor.zoomFactor = parseInt(text, 0) / 100;
+        }
+    }
+    function updateZoomContent() {
+        zoomBtn.content = Math.round(documenteditor.zoomFactor * 100) + '%';
+    }
+    function updatePageNumber() {
+        pageNumberLabel.textContent = startPage.toString();
+    }
+    function updatePageCount() {
+        editorPageCount = documenteditor.pageCount;
+        pageCount.textContent = editorPageCount.toString();
+    }
+    function updateDocumentEditorPageNumber() {
+        var editablePageNumber = document.getElementById('editablePageNumber');
+        editablePageNumber.contentEditable = 'true';
+        editablePageNumber.focus();
+        window.getSelection().selectAllChildren(editablePageNumber);
+    }
+</script>
+
+<style>
+    #DocumentEditor {
+        width: 100%;
+        height: 100%;
+    }
+
+    .e-de-statusbar-zoom {
+        float: right;
+        text-align: center;
+        padding: 2px;
+        line-height: 19px;
+        margin-top: 1px;
+    }
+</style>

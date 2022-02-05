@@ -1,0 +1,39 @@
+
+@using Syncfusion.EJ2.Popups
+
+<div id="target" class="col-lg-12 control-section">
+    @Html.EJS().Button("normalbtn").Content("Open").Render()
+    @Html.EJS().Dialog("dialog").AnimationSettings(a=>a.Effect(DialogEffect.Zoom)).Header("Delete Multiple Items").Content("Are you sure you want to permanently delete all of these items?").ShowCloseIcon(true).CloseOnEscape(true).Width("500px").Target("#target").Buttons(btn=> {
+        btn.Click("dlgButtonClick").ButtonModel(ViewBag.DefaultButtons1).Add();
+        btn.Click("dlgButtonClick").ButtonModel(ViewBag.DefaultButtons2).Add();
+    }).Render()
+</div>
+
+<script>
+    document.getElementById('normalbtn').onclick = function () {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.show();
+    };
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+</script>
+<style>
+    .control-section {
+        padding-left: 10px;
+    }
+
+    #target {
+        height: 100%;
+        min-height: 350px;
+    }
+
+    .e-ok-icon::before {
+        content: '\e7ff';
+    }
+
+    .e-close-icon::before {
+        content: '\e825';
+    }
+</style>

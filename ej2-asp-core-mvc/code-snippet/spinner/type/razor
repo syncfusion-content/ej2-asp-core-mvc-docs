@@ -1,0 +1,50 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Grid;
+
+<div class="col-lg-12 control-section">
+    <div class="e-sample-resize-container">
+        @Html.EJ().Grid("ej2Grid").DataSource(ViewBag.datasource).Created("gridCreated").AllowPaging(true).Columns(new List<GridColumn> {
+            new GridColumn { Field = "OrderID", HeaderText = "Order ID", Width = "120" },
+            new GridColumn { Field = "CustomerID", HeaderText = "Customer Name", Width = "150" },
+            new GridColumn { Field = "OrderDate", HeaderText = "Order Date", Width = "130", Format="yMd" },
+            new GridColumn { Field = "Freight", HeaderText = "Freight", Width = "120" },
+            new GridColumn { Field = "ShippedDate", HeaderText = "Shipped Date", Width = "140", Format="yMd" },
+            new GridColumn { Field = "ShipCountry", HeaderText = "Ship Country", Width = "150" },
+        }).Render()
+    </div>
+</div>
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        font-family: 'Helvetica Neue','calibiri';
+        font-size: 14px;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .wrap {
+        margin: 0 auto;
+        width: 240px;
+    }
+
+    h5 {
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+
+<script type="text/javascript">
+    function gridCreated() {
+        var grid = document.getElementById("ej2Grid").ej2_instances[0];
+        grid.hideSpinner = () => true;
+        ej.popups.setSpinner({ type: 'Bootstrap' });
+    }
+</script>

@@ -1,0 +1,15 @@
+<ejs-button id="insertFootnote">insert Footnote</ejs-button>
+<div id="documenteditor" style="width:100%;height:100%">
+<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableSfdtExport=true id="DocumentEditor"></ejs-documenteditor>
+</div>
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById('DocumentEditor').ej2_instances[0];
+        documenteditor.resize();
+    });    
+    document.getElementById('insertFootnote').addEventListener('click', function () {
+        documenteditor.editor.insertFootnote();
+    });
+
+</script>

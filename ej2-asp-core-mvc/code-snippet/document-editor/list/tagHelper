@@ -1,0 +1,40 @@
+<div id="toolbar">
+    <ejs-toolbar clicked="toolbarAction">
+        <e-toolbar-items>
+            <e-toolbar-item prefixIcon=" e-de-icon-Bullets " id="Bullets " tooltipText="Bullets "></e-toolbar-item>
+            <e-toolbar-item prefixIcon="e-de-icon-Numbering " id="Numbering " tooltipText="Numbering "></e-toolbar-item>
+            <e-toolbar-item text="Clear " tooltipText="Clear List " id="clearlist "></e-toolbar-item>
+        </e-toolbar-items>
+    </ejs-toolbar>
+</div>
+<div id="documenteditor " style="width:100%;height:100% ">
+    <ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableSfdtExport=true enableEditor=true id="container "></ejs-documenteditor>
+</div>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+
+        documenteditor = document.getElementById("container ").ej2_instances[0];
+        documenteditor.resize();
+        updateContainerSize();
+
+        function toolbarAction(args) {
+            switch (args.item.id) {
+                case 'Bullets':
+                    //To create bullet list
+                    documenteditor.editor.applyBullet('\uf0b7', 'Symbol');
+                    break;
+                case 'Numbering':
+                    //To create numbering list
+                    documenteditor.editor.applyNumbering('%1)', 'UpRoman');
+                    break;
+                case 'clearlist':
+                    //To clear list
+                    documenteditor.editor.clearList();
+                    break;
+            }
+        };
+
+    });
+</script>

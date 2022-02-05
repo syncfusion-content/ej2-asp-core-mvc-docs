@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2.Grids
+
+@Html.EJS().TreeGrid("BatchEditing").DataSource((IEnumerable<object>)ViewBag.datasource).EditSettings(edit =>
+    {
+        edit.AllowAdding(true);
+        edit.AllowDeleting(true);
+        edit.AllowEditing(true);
+        edit.Mode(Syncfusion.EJ2.TreeGrid.EditMode.Batch);
+        edit.NewRowPosition(Syncfusion.EJ2.TreeGrid.RowPosition.Below);
+    }).Toolbar(new List<string>() { "Add", "Delete", "Update", "Cancel" }).Columns(col =>
+    {
+        col.Field("TaskId").HeaderText("Task ID").IsPrimaryKey(true).ValidationRules(new { required = true, number = true }).Width(90).TextAlign(TextAlign.Right).Add();
+        col.Field("TaskName").HeaderText("Task Name").EditType("stringedit").ValidationRules(new { required = true }).Width(220).Add();
+        col.Field("StartDate").HeaderText("Start Date").Format("yMd").TextAlign(TextAlign.Right).Width(130).EditType("datepickeredit").ValidationRules(new { date = true }).Add();
+        col.Field("Duration").HeaderText("Duration").Width(100).TextAlign(TextAlign.Right).EditType("numericedit").ValidationRules(new { number = true, min = 0 }).Edit(new { @params = new { format = "n" } }).Add();
+        col.Field("Progress").HeaderText("Progress").Width(80).TextAlign(TextAlign.Right).EditType("numericedit").ValidationRules(new { number = true, min = 0 }).Edit(new { @params = new { format = "n" } }).Add();
+        col.Field("Priority").HeaderText("Priority").Width(90).EditType("stringedit").ValidationRules(new { required = true }).Add();
+    }).IdMapping("TaskId").ParentIdMapping("ParentId").TreeColumnIndex(1).Height(400).Render()

@@ -1,0 +1,18 @@
+@Html.EJS().TreeGrid("HttpError").DataSource(dataManager => { dataManager.Url("http://some.com/invalidUrl"); }).Columns(col =>
+{
+   col.Field("TaskID").HeaderText("Task ID").Width(90).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("TaskName").HeaderText("Task Name").Width(180).Add();
+   col.Field("StartDate").HeaderText("Start Date").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+   col.Field("Duration").HeaderText("Duration").Width(80).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+
+}).IdMapping("TaskID").ParentIdMapping("ParentItem").ActionFailure("actionFailure").TreeColumnIndex(1).Render()
+
+<script>
+    function actionFailure(args) {
+        var treegrid = document.getElementById("HttpError").ej2_instances[0];
+        var span = document.createElement('span');
+        treegrid.element.parentNode.insertBefore(span, treegrid.element);
+        span.style.color = '#FF0000'
+        span.innerHTML = 'Server exception: 404 Not found';
+    }
+</script>

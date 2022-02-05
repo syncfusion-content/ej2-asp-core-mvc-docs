@@ -1,0 +1,38 @@
+<div id="container">
+    <!--element which is going to render the Card-->
+    <div class="e-card">
+        <div class="e-card-image">
+            <div class="e-card-title">Node.js</div>
+        </div>
+        <div class="e-card-content">
+            Node.js is a wildly popular platform for writing web applications that has revolutionized web development in many ways, enjoying
+            support across the open source community as well as industry.
+        </div>
+    </div>
+</div>
+    
+<div style="Margin: 5px 0;width:300px">
+    <ejs-dropdownlist id="title_position" dataSource="@ViewBag.dataSource" placeholder="Select Position" change="changed"></ejs-dropdownlist>
+</div>
+
+<style>
+    .e-card-image {
+        background: url('./sample.jpg');
+        height: 164px;
+    }
+
+    .e-card {
+        width: 200px;
+        margin: auto;
+    }
+</style>
+
+<script>
+    function changed(e) {
+        let cardEle = document.querySelector('.e-card');
+        let titleEle = cardEle.querySelector('.e-card-image .e-card-title');
+        titleEle.className = ''
+        titleEle.classList.add('e-card-title');
+        titleEle.classList.add('e-card-' + e.value.toLowerCase());
+    }
+</script>

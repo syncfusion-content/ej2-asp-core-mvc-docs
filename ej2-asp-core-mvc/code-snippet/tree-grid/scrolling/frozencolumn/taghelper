@@ -1,0 +1,12 @@
+<ejs-treegrid id="TreeGrid" dataSource="ViewBag.datasource" height="410" width="auto" childMapping="Children" treeColumnIndex="1" frozenRows= "3" allowSelection="false" frozenColumns="2">
+            <e-treegrid-columns>
+                <e-treegrid-column field='TaskId' headerText='Task ID' width='100' textAlign='Right'></e-treegrid-column>
+                <e-treegrid-column field='TaskName' headerText='Task Name' width='230'></e-treegrid-column>
+                <e-treegrid-column field='StartDate' headerText='Start Date' width='150' format="yMd" textAlign='Right'></e-treegrid-column>
+                <e-treegrid-column field='EndDate' headerText='End Date' width='150' format="yMd" textAlign='Right'></e-treegrid-column>
+                <e-treegrid-column field='Duration' headerText='Duration' width='120' textAlign='Right'></e-treegrid-column>
+                <e-treegrid-column field='Progress' headerText='Progress' width='120' textAlign='Right'></e-treegrid-column>
+                <e-treegrid-column field='Priority' headerText='Priority' width='120'></e-treegrid-column>
+                <e-treegrid-column field="Approved" headerText="Approved" textAlign="Left" width="110" type="boolean"></e-treegrid-column>
+            </e-treegrid-columns>
+</ejs-treegrid>

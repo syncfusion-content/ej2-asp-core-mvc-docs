@@ -1,0 +1,41 @@
+@{
+    List<object> toolbarItems = new List<object>();
+    toolbarItems.Add("QuickFilter");
+    toolbarItems.Add("ClearFilter");
+}
+
+@Html.EJS().Button("enable").Content("Enable").Render()
+
+@Html.EJS().Button("disable").Content("Disable").Render()
+
+@(Html.EJS().TreeGrid("ToolbarTemplate").DataSource((IEnumerable<object>)ViewBag.datasource)
+      .Columns(col =>
+       {
+         col.Field("TaskId").HeaderText("Task ID").Width(90).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+         col.Field("TaskName").HeaderText("Task Name").Width(180).Add();
+         col.Field("StartDate").HeaderText("Start Date").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("date").Width(90).Add();
+         col.Field("Duration").HeaderText("Duration").Width(80).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+
+       }).Height(200).Toolbar(toolbarItems).ToolbarClick("onToolbarClick").AllowFiltering()
+         .ChildMapping("Children").TreeColumnIndex(1).Render())
+
+<script>
+    document.getElementById("enable").addEventListener('click', () => {
+        var treegrid = document.getElementById("ToolbarTemplate").ej2_instances[0];
+        treegrid.toolbarModule.enableItems([treegrid.element.id + '_gridcontrol_QuickFilter', treegrid.element.id + '_gridcontrol_ClearFilter'], true);// enable toolbar items.
+    });
+    document.getElementById("disable").addEventListener('click', () => {
+        var treegrid = document.getElementById("ToolbarTemplate").ej2_instances[0];
+        treegrid.toolbarModule.enableItems([treegrid.element.id + '_gridcontrol_QuickFilter', treegrid.element.id + '_gridcontrol_ClearFilter'], false);// disable toolbar items.
+    });
+    function onToolbarClick(args) {
+        if (args.item.text === 'QuickFilter') {
+            var treegrid = document.getElementById("ToolbarTemplate").ej2_instances[0];
+            treegrid.filterByColumn("TaskName", "startswith", "Testing");
+        }
+        if (args.item.text === 'ClearFilter') {
+            var treegrid = document.getElementById("ToolbarTemplate").ej2_instances[0];
+            treegrid.clearFiltering();
+        }
+    }
+</script>

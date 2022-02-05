@@ -1,0 +1,24 @@
+<div>
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+</div>
+<script>
+    var documenteditor;
+    var container;
+function onCreated() {
+    var documenteditorElement = document.getElementById("container");
+    container = documenteditorElement.ej2_instances[0];
+    documenteditor = container.documentEditor;
+    // To insert text in cursor position
+   container.documentEditor.editor.insertText('Document editor');
+   // To select all the content in document
+   container.documentEditor.selection.selectAll();
+   // Insert bookmark to selected content
+   container.documentEditor.editor.insertBookmark('Bookmark1');
+   //Select the bookmark
+   container.documentEditor.selection.selectBookmark('Bookmark1');
+   // To get the selected content as sfdt
+   let selectedContent = container.documentEditor.selection.sfdt;
+   // Insert the sfdt content in cursor position using paste API
+   container.documentEditor.editor.paste(selectedContent);
+}
+</script>

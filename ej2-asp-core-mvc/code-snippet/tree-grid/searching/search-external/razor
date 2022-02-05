@@ -1,0 +1,20 @@
+@Html.TextBox("searchText")
+
+@Html.EJS().Button("Search").Content("Search").CssClass("e-primary").Render()
+
+@Html.EJS().TreeGrid("TreeGrid").Height(270).DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
+{
+   col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+   col.Field("StartDate").HeaderText("Start Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width(210).Add();
+   col.Field("Duration").HeaderText("Duration").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(190).Add();
+
+}).ChildMapping("Children").AllowPaging().TreeColumnIndex(1).Render()
+
+<script>
+    document.getElementById('Search').addEventListener('click', function (args) {
+        var val = document.getElementById('searchText').value;
+        var treegrid = document.getElementById('TreeGrid').ej2_instances[0];
+        treegrid.search(val);
+    });
+</script>

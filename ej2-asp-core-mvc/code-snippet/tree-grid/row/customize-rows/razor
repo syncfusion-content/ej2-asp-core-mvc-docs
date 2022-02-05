@@ -1,0 +1,18 @@
+@Html.EJS().TreeGrid("TreeGrid").RowDataBound("rowDataBound").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
+{
+   col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+   col.Field("StartDate").HeaderText("Start Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width(210).Add();
+   col.Field("Duration").HeaderText("Duration").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(190).Add();
+
+}).ChildMapping("Children").TreeColumnIndex(1).AllowPaging().Render()
+
+<script>
+    function rowDataBound(args) {
+        if (args.data['Duration'] == 5) {
+            args.row.style.background = '#336c12';
+        } else if (args.data['Duration'] > 6) {
+            args.row.style.background = '#7b2b1d';
+        }
+    }
+</script>

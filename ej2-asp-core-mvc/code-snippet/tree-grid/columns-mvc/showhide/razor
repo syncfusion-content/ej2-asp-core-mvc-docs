@@ -1,0 +1,27 @@
+@using Syncfusion.EJ2.Grids
+
+@Html.EJS().Button("button1").Content("SHOW").Render()
+
+@Html.EJS().Button("button2").Content("HIDE").Render()
+
+@(Html.EJS().TreeGrid("ShowHide").DataSource((IEnumerable<object>)ViewBag.datasource)
+            .Columns(col =>
+             {
+               col.Field("TaskId").HeaderText("Task ID").Width(90).TextAlign(TextAlign.Right).Add();
+               col.Field("TaskName").HeaderText("Task Name").Width(180).Add();
+               col.Field("StartDate").HeaderText("Start Date").Format("yMd").TextAlign(TextAlign.Right).Width(120).Add();
+               col.Field("Duration").HeaderText("Duration").Width(80).TextAlign(TextAlign.Right).Add();
+
+             }).Height(270).ChildMapping("Children").TreeColumnIndex(1).Render()
+)
+
+<script>
+    document.getElementById("button1").addEventListener('click', () => {
+        var treegrid = document.getElementById("ShowHide").ej2_instances[0];
+        treegrid.showColumns(['Task ID', 'Duration']); //show by HeaderText
+    });
+    document.getElementById("button2").addEventListener('click', () => {
+        var treegrid = document.getElementById("ShowHide").ej2_instances[0];
+        treegrid.hideColumns(['Task ID', 'Duration']); //hide by HeaderText
+    });
+</script>

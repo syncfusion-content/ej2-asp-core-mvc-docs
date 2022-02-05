@@ -1,0 +1,125 @@
+@{ 
+   var border = new TreeMapBorder{ Color = "white", Width = 0.5 };
+    var borders = new TreeMapBorder{ Color = "black", Width = 0.5 };
+}
+@using Syncfusion.EJ2;
+<div id="container">
+    <ejs-treemap id="container" load="load" height="350px" weightValuePath="Population">
+            <e-treemap-leafitemsettings labelPath="Region" fill='#0077b3' border='border' ></e-treemap-leafitemsettings>
+			<e-treemap-levels>
+			<e-treemap-level groupPath= 'Continent' fill='#004466' border='borders'><e-treemap-level>
+			<e-treemap-level groupPath= 'States' fill='#0099e6' border='borders'><e-treemap-level>
+			</<e-treemap-levels>
+    </ejs-treemap>
+</div>         
+<script>
+    function load(args)
+    { 
+        var data = [{
+ 		"Continent": [{
+ 			"Name": "Africa",
+ 			"Population": 1216130000,
+ 			"States": [{
+ 					"Name": "Eastern Africa",
+ 					"Population": 410637987,
+ 					"Region": [{
+ 						"Name": "Ethiopia",
+ 						"Population": 107534882
+ 					}]
+ 				},
+ 				{
+ 					"Name": "Middle Africa",
+ 					"Population": 158562976,
+ 					"Region": [{
+ 						"Name": "Democratic, Republic of the Congo",
+ 						"Population": 84004989
+ 					}]
+ 				}
+ 			]
+ 		}]
+ 	},
+
+ 	{
+ 		"Continent": [{
+ 			"Name": "Asia",
+ 			"Population": 4436224000,
+ 			"States": [{
+ 					"Name": "Central Asia",
+ 					"Population": 69787760,
+ 					"Region": [{
+ 						"Name": "Uzbekistan",
+ 						"Population": 32364996
+ 					}]
+ 				},
+ 				{
+ 					"Name": "Eastern Asia",
+ 					"Population": 1641908531,
+ 					"Region": [{
+ 						"Name": "China",
+ 						"Population": 1415045928
+ 					}]
+ 				}
+ 			]
+ 		}]
+ 	},
+
+ 	{
+ 		"Continent": [{
+ 			"Name": "North America",
+ 			"Population": 579024000,
+ 			"States": [{
+ 					"Name": "Central America",
+ 					"Population": 174988756,
+ 					"Region": [{
+ 						"Name": "Mexico",
+ 						"Population": 130759074
+ 					}]
+ 				},
+ 				{
+ 					"Name": "Northern America",
+ 					"Population": 358593810,
+ 					"Region": [{
+ 						"Name": "U.S.",
+ 						"Population": 3267667480
+ 					}]
+ 				}
+ 			]
+ 		}]
+ 	},
+ 	{
+ 		"Continent": [{
+ 			"Name": "South America",
+ 			"Population": 422535000,
+ 			"States": [{
+ 				"Name": "Brazil",
+ 				"Population": 204519000
+ 			}]
+ 		}]
+ 	},
+ 	{
+ 		"Continent": [{
+ 			"Name": "Europe",
+ 			"Population": 738849000,
+ 			"States": [{
+ 					"Name": "Eastern Europe",
+ 					"Population": 291953328,
+ 					"Region": [{
+ 						"Name": "Russia",
+ 						"Population": 143964709
+ 					}]
+ 				},
+ 				{
+ 					"Name": "Northern Europe",
+ 					"Population": 103642971,
+ 					"Region": [{
+ 						"Name": "United Kingdom",
+ 						"Population": 66573504
+ 					}]
+ 				}
+ 			]
+ 		}]
+ 	}
+ ];
+        args.treemap.dataSource = data;
+    }
+</script>

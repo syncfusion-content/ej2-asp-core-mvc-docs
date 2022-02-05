@@ -1,0 +1,12 @@
+<div id='container' style="height:400px;">
+    @Html.EJS().Button("targetButton").Content("Open Dialog").Render()
+    @Html.EJS().Dialog("dialog").Header("Dialog").ShowCloseIcon(true).Content("This is a dialog with header").Target("#container").Width("250px").Render()
+</div>
+<script>
+    window.onload = function () {
+        document.getElementById('targetButton').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            dialog.show();
+        }
+    }
+</script>

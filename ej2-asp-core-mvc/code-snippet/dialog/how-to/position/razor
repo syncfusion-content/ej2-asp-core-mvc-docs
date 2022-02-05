@@ -1,0 +1,5 @@
+
+<div id="container" style="height:400px;">
+    @Html.EJS().Dialog("firstDialog").Header("Position-01").Content("The dialog is positioned at {X: 160, Y: 14} co-ordinates.").Position(p => p.X(160).Y(12)).Target("#container").Width("360px").Height("120px").Render()
+    @Html.EJS().Dialog("secondDialog").Header("Position-02").Content("The dialog is positioned at {X: 160, Y: 240} co-ordinates.").Position(p => p.X(160).Y(240)).Target("#container").Width("360px").Height("120px").Render()
+</div>

@@ -1,0 +1,14 @@
+@{
+    List<object> cols = new List<object>();
+    cols.Add(new { field = "category", direction = "Ascending" });
+    cols.Add(new { field = "orderName", direction = "Descending" });
+}
+
+@Html.EJS().TreeGrid("TreeGrid").Height(315).AllowSorting().DataSource((IEnumerable<object>)ViewBag.datasource).SortSettings(sort => sort.Columns(cols)).Columns(col =>
+{
+   col.Field("category").HeaderText("Category").Width(110).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("orderName").HeaderText("Order Name").Width(210).Add();
+   col.Field("orderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width(210).Add();
+   col.Field("units").HeaderText("Units").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(190).Add();
+
+}).ChildMapping("subTasks").AllowPaging().TreeColumnIndex(1).Render()

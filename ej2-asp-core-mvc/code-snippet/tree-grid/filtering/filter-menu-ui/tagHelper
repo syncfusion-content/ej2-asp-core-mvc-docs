@@ -1,0 +1,53 @@
+@{
+    var filteruiTemplate = new
+    {
+        ui = new
+        {
+            create = "create",
+            write = "write",
+            read = "read"
+        }
+    };
+}
+
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="275" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-filtersettings type="Menu"></e-treegrid-filtersettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="80"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="190"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" textAlign="Right" format="yMd" type="date" width="100"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" filter="@(filteruiTemplate)" width="90"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    var dd = document.createElement("input");
+    dd.setAttribute('id', 'Duration');
+    function create(args) {
+        var dataSource = ['All', '1', '3', '4', '5', '6', '8', '9', '11', '12'];
+        dd = new ej.dropdowns.DropDownList({
+            dataSource: dataSource,
+            value: 'All',
+            change: function (e) {
+                var valuenum = +e.value;
+                var id = this.element.id;
+                var value = e.value;
+                var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+                if (value !== 'All') {
+                    treegrid.filterByColumn(id, 'equal', valuenum);
+                } else {
+                    treegrid.removeFilteredColsByField(id);
+                }
+            }
+        });
+        var input = ejs.base.createElement('input', { id: 'Duration' });
+        args.target.prepend(input)
+        dd.appendTo(args.target.querySelector('#Duration'));
+    }
+    function write(args) {
+        dd.value = args.filteredValue;
+    }
+    function read(args) {
+        args.fltrObj.filterByColumn(args.column.field, args.operator, parseInt(dd.value));
+    }
+</script>

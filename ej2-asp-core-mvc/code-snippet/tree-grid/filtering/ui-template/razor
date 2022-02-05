@@ -1,0 +1,43 @@
+@{
+    var filterTemplate = new
+    {
+        create = "create",
+        write = "write"
+    };
+}
+
+@Html.EJS().TreeGrid("TreeGrid").Height(275).AllowFiltering().DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+{
+   col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+   col.Field("StartDate").HeaderText("Start Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width(210).Add();
+   col.Field("Duration").HeaderText("Duration").FilterBarTemplate(filterTemplate).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(190).Add();
+
+}).ChildMapping("Children").AllowPaging().TreeColumnIndex(1).Render()
+
+<script>
+    function create(args) {
+        var dd = document.createElement("input");
+        dd.id = "Duration";
+        return dd;
+    }
+    function write(args) {
+        var dataSource = ['All', '1', '3', '4', '5', '6', '8', '9', '11', '12'];
+        var dd = new ej.dropdowns.DropDownList({
+            dataSource: dataSource,
+            value: 'All',
+            change: function (e) {
+                var valuenum = +e.value;
+                var id = this.element.id;
+                let value = e.value;
+                var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+                if (value !== 'All') {
+                    treegrid.filterByColumn(id, 'equal', valuenum);
+                } else {
+                    treegrid.removeFilteredColsByField(id);
+                }
+            }
+        });
+        dd.appendTo("#Duration");
+    }
+</script>

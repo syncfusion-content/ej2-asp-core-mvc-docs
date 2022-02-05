@@ -1,0 +1,4 @@
+@(Html.EJS().ProgressBar("container").Type(Syncfusion.EJ2.ProgressBar.ProgressType.Linear)
+            .Value(100).ShowProgressValue(true)
+            .Width("90%").Height("60").TrackThickness(24).ProgressThickness(24).Minimum(0).Maximum(100)
+            .Render())

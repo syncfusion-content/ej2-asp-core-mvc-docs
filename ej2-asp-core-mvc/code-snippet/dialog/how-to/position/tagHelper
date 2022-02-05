@@ -1,0 +1,9 @@
+
+<div id='container' style="height:400px;">
+    <ejs-dialog id="dialog" header="Position-01" content="The dialog is positioned at {X: 160, Y: 14} coordinates." target="#container"  height="120px" width="360px">
+        <e-dialog-position X="160" Y="14"> </e-dialog-position>
+    </ejs-dialog>
+    <ejs-dialog id="dialog" header="Position-02" content="The dialog is positioned at {X: 160, Y: 240} coordinates." target="#container" height="120px" width="360px">
+        <e-dialog-position X="160" Y="240"> </e-dialog-position>
+    </ejs-dialog>
+</div>

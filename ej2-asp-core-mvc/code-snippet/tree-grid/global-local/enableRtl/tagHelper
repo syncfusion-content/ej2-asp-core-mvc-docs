@@ -1,0 +1,51 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" height="220" childMapping="Children" locale="ar-AE" enableRtl="true" allowFiltering="true" allowPaging="true" toolbar="@(new List<string>() {"Print"})" treeColumnIndex="1">
+    <e-treegrid-pagesettings pageSize="7"></e-treegrid-pagesettings>
+    <e-treegrid-filtersettings type="Menu"></e-treegrid-filtersettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="180"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="80"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    ej.base.L10n.load({
+        'ar-AE': {
+            'treegrid': {
+                "EmptyRecord": "لا سجلات لعرضها",
+                "Print": "طباعة",
+                "FilterButton": "منقي",
+                "ClearButton": "واضح",
+                "StartsWith": "ابدا ب",
+                "EndsWith": "ينتهي مع",
+                "Contains": "يحتوي على",
+                "Equal": "مساو",
+                "NotEqual": "غير متساوي",
+                "LessThan": "أقل من",
+                "LessThanOrEqual": "اصغر من او يساوي",
+                "GreaterThan": "أكثر من",
+                "GreaterThanOrEqual": "أكبر من أو يساوي",
+                "ChooseDate": "اختر تاريخا",
+                "EnterValue": "أدخل القيمة",
+                "FilterMenu": "منقي"
+            },
+            'pager': {
+                'currentPageInfo': '{0} من {1} صفحة',
+                'totalItemsInfo': '({0} العناصر)',
+                'firstPageTooltip': 'انتقل إلى الصفحة الأولى',
+                'lastPageTooltip': 'انتقل إلى الصفحة الأخيرة',
+                'nextPageTooltip': 'انتقل إلى الصفحة التالية',
+                'previousPageTooltip': 'انتقل إلى الصفحة السابقة',
+                'nextPagerTooltip': 'الذهاب إلى بيجر المقبل',
+                'previousPagerTooltip': 'الذهاب إلى بيجر السابقة'
+            },
+            "dropdowns": {
+                "noRecordsTemplate": "لا توجد سجلات"
+            },
+            "datepicker": {
+                "placeholder": "اختر تاريخا",
+                "today": "اليوم"
+            }
+        }
+    });
+</script>

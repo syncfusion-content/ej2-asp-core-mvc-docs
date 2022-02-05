@@ -1,0 +1,94 @@
+<div class="control-section" style="width:400px;margin:0 auto;">
+    <div id="template_toast">
+        @Html.EJS().Toast("element").TimeOut(120000).ExtendedTimeout(0).Position(p => p.X("Right").Y("Bottom")).Render()
+        @Html.EJS().Button("show_toast").Content("Show Toast").CssClass("e-btn").Render()
+    </div>
+    <br /><br />
+    <div id='result'></div>
+</div>
+<script id="template_toast_ele" type="text/x-template">
+    <div id='template_toast' style="display: none">
+        <div class="horizontal-align">
+            <div class='toast-content'>
+                <div class='toast-title'>
+                    Weekend Alarm
+                </div>
+                <div class='toast-message'>
+                    With traffic, its likely to take 45 minutes to get to jenny's 24th Birthday Bash at Hillside Bar, 454 E.
+                    Olive Way by 10:00PM
+                </div>
+            </div>
+        </div>
+        <img src="https://ej2.syncfusion.com/demos/src/toast/resource/map.jpg" width="100%" height="70%">
+    </div>
+</script>
+
+<script type="text/javascript">
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show({ template: document.getElementById('template_toast_ele').innerHTML });
+        }, 1000);
+    document.getElementById("show_toast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show();
+    });
+</script>
+<style>
+    #snooze,
+    #dismiss {
+        background-color: #fff;
+    }
+
+    body > #element .e-toast {
+        width: 400px !important;
+    }
+
+    .toast-template-section #reminder {
+        text-align: center;
+        margin: 15px;
+    }
+
+    #toast_custom .e-toast-template {
+        display: inline-flex;
+    }
+
+    #template_toast .toast-icons {
+        font-size: 35px;
+        height: auto;
+        margin: auto;
+    }
+
+    #template_toast .toast-icons.e-alarm::before {
+        content: "\e702";
+    }
+
+    #template_toast .horizontal-align {
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #template_toast .horizontal-align,
+    #template_toast #snoozedropDown,
+    #template_toast .snooze,
+    #template_toast .snoozeBtn {
+        margin: 10px 0;
+    }
+
+    #template_toast .horizontal-align .toast-content .toast-title {
+        font-weight: 500;
+    }
+
+    #template_toast .horizontal-align .toast-content .toast-message {
+        opacity: 0.4;
+    }
+
+    #template_toast .horizontal-align .toast-content {
+        display: inline-flex;
+        flex: 1;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+</style>

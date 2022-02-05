@@ -1,0 +1,41 @@
+@using Syncfusion.EJ2.Grids
+
+
+@{
+    List<object> commands = new List<object>();
+    commands.Add(new { type = "taskstatus", buttonOption = new { content = "Details", cssClass = "e-flat e-details" } }); // custom
+}
+
+<script>
+    function load() {
+        this.columns[4].commands[0].buttonOption.click = function (args) {     //click event for custom command button
+            var treegrid = document.getElementById('TreeGrid').ej2_instances[0];  // treegrid instance
+            var rowObj = treegrid.grid.getRowObjectFromUID(ej.base.closest(args.target, '.e-row').getAttribute('data-uid'));
+            alert(JSON.stringify(rowObj.data));  // display row data
+        }
+    }
+</script>
+
+@(Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.datasource)
+       .EditSettings(edit =>
+        {
+          edit.AllowAdding(true);
+          edit.AllowDeleting(true);
+          edit.AllowEditing(true);
+          edit.ShowDeleteConfirmDialog(true);
+          edit.Mode(Syncfusion.EJ2.TreeGrid.EditMode.Row);
+
+        })
+        .Columns(col =>
+         {
+           col.Field("TaskId").HeaderText("Task ID").IsPrimaryKey(true).Width(120)
+              .TextAlign(TextAlign.Right).Add();
+           col.Field("TaskName").HeaderText("Task Name").Add();
+           col.Field("StartDate").HeaderText("Start Date").Width(150).Format("yMd")
+              .EditType("datepickeredit").TextAlign(TextAlign.Right).Add();
+           col.Field("Duration").HeaderText("Duration").Width("110").EditType("numericedit")
+              .Edit(new { @params = new { format = "n" } }).TextAlign(TextAlign.Right).Add();
+           col.HeaderText("Manage Records").Width("160").Commands(commands).Add();
+
+         }).Height(400).ChildMapping("Children").TreeColumnIndex(1).Load("load").Render()
+)

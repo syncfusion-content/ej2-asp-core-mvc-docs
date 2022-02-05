@@ -1,0 +1,12 @@
+@Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnableSelection(true).Render()
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        documenteditor.editor.insertTable(2, 2);
+        //To change the width of a cell
+        documenteditor.selection.cellFormat.preferredWidthType = 'Point';
+        documenteditor.selection.cellFormat.preferredWidth = 100;
+    });
+</script>

@@ -1,0 +1,54 @@
+<div>
+    <!--  Button element declaration -->
+    <ejs-button id="toggle" cssClass="e-flat e-primary e-outline" content="Enable Floating" isToggle="true"></ejs-button>
+     <!-- end of button element -->
+</div>
+<div style="padding-top: 15px;">
+    <!--  DashboardLayout element declaration -->
+    <ejs-dashboardlayout id="dashboard_default" columns="6" allowFloating="false" cellSpacing="@Model.cellSpacing">
+        <e-dashboardlayout-panels>
+            <e-dashboardlayout-panel sizeX="2" sizeY="2" row="1" col="0" content="<div class='content'>0</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel sizeX="2" sizeY="2" row="2" col="2" content="<div class='content'>1</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel sizeX="2" sizeY="2" row="3" col="4" content="<div class='content'>2</div>">
+            </e-dashboardlayout-panel>
+        </e-dashboardlayout-panels>
+    </ejs-dashboardlayout>
+    <!-- end of dashboardlayout element -->
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Create instances for dashboardlayout
+        var dashboard = document.getElementById('dashboard_default').ej2_instances[0];
+        var resetPanels = dashboard.serialize();
+        resetPanels[0].content = '<div class="content">0</div>';
+        resetPanels[1].content = '<div class="content">1</div>';
+        resetPanels[2].content = '<div class="content">2</div>';
+        // Toggle button to enable and disable floating
+        document.getElementById('toggle').onclick = function (e) {
+            var toggleBtn = document.getElementById('toggle').ej2_instances[0];
+            let panels = [];
+            if (toggleBtn.content == "Disable Floating and Reset") {
+                toggleBtn.content = 'Enable Floating';
+                dashboard.allowFloating = false;
+                dashboard.panels = resetPanels;
+            } else {
+                toggleBtn.content = 'Disable Floating and Reset';
+                dashboard.allowFloating = true;
+            }
+        };
+    });
+</script>
+
+<style>
+    /* DashboardLayout element styles  */
+    #dashboard_default .e-panel .e-panel-container .content {
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        line-height: 90px;
+    }
+</style>

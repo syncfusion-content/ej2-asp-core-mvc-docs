@@ -1,0 +1,63 @@
+<div>
+    <!--  Dashboardlayout element declaration -->
+    <ejs-dashboardlayout id="dashboard_default" columns="6" cellSpacing="@Model.cellSpacing">
+        <e-dashboardlayout-panels>
+            <e-dashboardlayout-panel id="Panel0" sizeX="1" sizeY="1" row="0" col="0" header="<div>Panel 0</div>" content="<div class='content'>Panel Content</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel id="Panel1" sizeX="3" sizeY="2" row="0" col="1" header="<div>Panel 1</div>" content="<div class='content'>Panel Content</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel id="Panel2" sizeX="1" sizeY="3" row="0" col="4" header="<div>Panel 2</div>" content="<div class='content'>Panel Content</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel id="Panel3" sizeX="1" sizeY="1" row="1" col="0" header="<div>Panel 3</div>" content="<div class='content'>Panel Content</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel id="Panel4" sizeX="2" sizeY="1" row="2" col="1" header="<div>Panel 4</div>" content="<div class='content'>Panel Content</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel id="Panel5" sizeX="1" sizeY="1" row="2" col="2" header="<div>Panel 5</div>" content="<div class='content'>Panel Content</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel id="Panel6" sizeX="1" sizeY="1" row="2" col="3" header="<div>Panel 6</div>" content="<div class='content'>Panel Content</div>">
+            </e-dashboardlayout-panel>
+        </e-dashboardlayout-panels>
+    </ejs-dashboardlayout>
+</div>
+<!-- end of dashboardlayout element -->
+<style>
+    /* DashboardLayout element styles  */
+    #dashboard_default .e-panel .e-panel-container .content {
+        font-weight: 600;
+        text-align: center;
+        margin-top: 10px;
+        line-height: 100%;
+    }
+
+    .e-dashboard-layout.e-control .e-panel .e-panel-container .e-panel-header {
+        color: rgba(0, 0, 0, 0.61);
+    }
+
+    .e-panel .e-header-text {
+        padding: 12px 0 12px 0;
+    }
+
+    #dashboard .e-panel-container .e-panel-header {
+        border-bottom: 1px solid #888383;
+    }
+
+    .e-dashboard-layout.e-control .e-panel:hover {
+        border: 0px;
+    }
+
+    .e-dashboard-layout.e-control .e-panel .e-panel-header {
+        font-size: 15px;
+        font-weight: 500;
+        height: 37px;
+        padding: 10px;
+        vertical-align: middle;
+        /* text-align: left; */
+        border-bottom: 0.5px solid rgba(0, 0, 0, .125);
+    }
+
+    .e-panel-header {
+        padding: 10px;
+        margin-bottom: 0;
+        background-color: rgba(0, 0, 0, .03);
+    }
+</style>

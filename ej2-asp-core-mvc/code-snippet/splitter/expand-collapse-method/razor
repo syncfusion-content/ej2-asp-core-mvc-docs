@@ -1,0 +1,31 @@
+
+@Html.EJS().Splitter("splitter").Width("600px").Height("200px").PaneSettings(item => {
+   item.Size("200px").Content("<div class='content'>Left pane</div>").Collapsible(true).Add();
+   item.Size("200px").Content("<div class='content'>Middle pane</div>").Collapsible(true).Add();
+   item.Size("200px").Content("<div class='content'>Right pane</div>").Collapsible(true).Add();
+}).Created("onCreated").Render()
+
+@Html.EJS().Button("expand").Content("Expand").Render()
+@Html.EJS().Button("collapse").Content("Collapse").Render()
+<script>
+    var splitterObj;
+    function onCreated() {
+        splitterObj = this;
+    }
+    function expandAction() {
+        splitterObj.expand(0);
+    }
+    function collapseAction() {
+        splitterObj.collapse(0);
+    }
+</script>
+
+<style>
+    .content {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        height: 100%;
+    }
+</style>

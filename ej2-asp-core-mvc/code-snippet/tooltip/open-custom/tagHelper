@@ -1,0 +1,90 @@
+<div id='container'>
+    <div id="showTooltip">
+        <div id="first">
+            <ejs-tooltip id="tooltip01" opensOn="Hover" content="Tooltip from hover">
+                <e-content-template>
+                    <button class="blocks e-btn e-primary e-outline" id="tooltiphover">Hover me!(Default)</button>
+                </e-content-template>
+            </ejs-tooltip>
+            <ejs-tooltip id="tooltip02" opensOn="Click" content="Tooltip from click">
+                <e-content-template>
+                    <button class="blocks e-btn e-primary e-outline" id="tooltipclick">Click me!</button>
+                </e-content-template>
+            </ejs-tooltip>
+        </div>
+        <br /><br />
+        <div id="second">
+            <ejs-tooltip id="tooltip03"  opensOn="Click" isSticky="true" content="Click close icon to close me">
+                <e-content-template>
+                    <button class="blocks e-btn e-primary e-outline" id="Mode">Sticky Mode</button>
+                </e-content-template>
+            </ejs-tooltip>
+            <ejs-tooltip id="tooltip06"  opensOn="Click" openDelay=1000 closeDelay=1000 content="Opens and closes Tooltip with delay of <i>1000 milliseconds</i>">
+                <e-content-template>
+                    <button class="blocks e-btn e-primary e-outline" id="openMode">Tooltip with delay</button>
+                </e-content-template>
+            </ejs-tooltip>
+        </div>
+        <br /><br />
+        <div id="third">
+            <ejs-tooltip id="customTooltip" opensOn="Custom" content="Tooltip from custom mode">
+                <e-content-template>
+                    <button class="blocks e-btn e-primary e-outline" id="tooltipcustom">Double click on me!</button>
+                </e-content-template>
+            </ejs-tooltip>
+
+            <ejs-tooltip id="tooltip05"  opensOn="Hover" content="Tooltip from focus">
+                <e-content-template>
+                    <div id="textbox" class="e-float-input blocks">
+                        <input id="focus" type="text" placeholder="Focus and blur" />
+                    </div>
+                </e-content-template>
+            </ejs-tooltip>
+        </div>
+    </div>
+</div>
+
+<style>
+    #container {
+        width: 100%;
+    }
+
+    #textbox {
+        display: inline-block;
+        top: -3px;
+    }
+
+    .blocks {
+        margin: 0 10px 0 10px;
+        text-transform: none;
+        width: 168px;
+    }
+
+    #showTooltip {
+        display: table;
+        padding-top: 40px;
+        margin: 0 auto;
+    }
+
+    #focus {
+        border: 1px solid #ff4081;
+        text-align: center;
+        height: 31px;
+        width: 168px;
+    }
+
+    ::placeholder {
+        color: #ff4081;
+    }
+</style>
+
+<script>
+    document.getElementById('tooltipcustom').addEventListener("dblclick", function () {
+        if (this.getAttribute("data-tooltip-id")) {
+            document.getElementById('customTooltip').ej2_instances[0].close();
+        } else {
+            document.getElementById('customTooltip').ej2_instances[0].open(this);
+        }
+    });
+
+</script>

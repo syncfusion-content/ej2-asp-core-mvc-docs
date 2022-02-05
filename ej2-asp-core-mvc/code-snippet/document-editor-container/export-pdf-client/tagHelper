@@ -1,0 +1,57 @@
+<div class="control-section">
+    <ejs-button id="element" content="Using Pdf Export" onclick="exportClientSide()"></ejs-button>
+
+    <ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated" height="590px"></ejs-documenteditorcontainer>
+</div>
+<script>
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        documenteditor = container.documentEditor;
+    }
+    //Pdf document exported using pdf export
+    function exportClientSide() {
+        let pdfdocument = new ej.pdfexport.PdfDocument();
+        let count = container.documentEditor.pageCount;
+        container.documentEditor.documentEditorSettings.printDevicePixelRatio = 2;
+        let loadedPage = 0;
+        for (let i = 1; i <= count; i++) {
+            setTimeout(() => {
+                let format = 'image/jpeg';
+                // Getting pages as image
+                let image = container.documentEditor.exportAsImage(i, format);
+                image.onload = function () {
+                    let imageHeight = parseInt(
+                        image.style.height.toString().replace('px', '')
+                    );
+                    let imageWidth = parseInt(
+                        image.style.width.toString().replace('px', '')
+                    );
+                    let section = pdfdocument.sections.add();
+                    let settings = new ej.pdfexport.PdfPageSettings(0);
+                    if (imageWidth > imageHeight) {
+                        settings.orientation = PdfPageOrientation.Landscape;
+                    }
+                    settings.size = new ej.pdfexport.SizeF(imageWidth, imageHeight);
+                    (section).setPageSettings(settings);
+                    let page = section.pages.add();
+                    let graphics = page.graphics;
+                    let imageStr = image.src.replace('data:image/jpeg;base64,', '');
+                    let pdfImage = new ej.pdfexport.PdfBitmap(imageStr);
+                    graphics.drawImage(pdfImage, 0, 0, imageWidth, imageHeight);
+                    loadedPage++;
+                    if (loadedPage == count) {
+                        // Exporting the document as pdf
+                        pdfdocument.save(
+                            (container.documentEditor.documentName === ''
+                                ? 'sample'
+                                : container.documentEditor.documentName) + '.pdf'
+                        );
+                    }
+                };
+            }, 500);
+        }
+    }
+</script>

@@ -1,0 +1,61 @@
+@model WebApplication.Controllers.HomeController.spacingModel
+
+<div>
+    <!--  Button element declaration -->
+    @Html.EJS().Button("save").Content("Save").CssClass("e-primary").Render()
+    @Html.EJS().Button("restore").Content("Restore").CssClass("e-flat e-outline").Render()
+    <!-- end of button element -->
+</div>
+<div class="control-section" style="padding-top: 15px;">
+    <div>
+        <!--  DashboardLayout element declaration -->
+        @Html.EJS().DashboardLayout("dashboard_default").Columns(5).CellSpacing(Model.cellSpacing).Panels(Panel =>
+        {
+            Panel.SizeX(1).SizeY(1).Row(0).Col(0).Content("<div class='content'>0</div>").Add();
+            Panel.SizeX(3).SizeY(2).Row(0).Col(1).Content("<div class='content'>1</div>").Add();
+            Panel.SizeX(1).SizeY(3).Row(0).Col(4).Content("<div class='content'>2</div>").Add();
+            Panel.SizeX(1).SizeY(1).Row(1).Col(0).Content("<div class='content'>3</div>").Add();
+            Panel.SizeX(2).SizeY(1).Row(2).Col(0).Content("<div class='content'>4</div>").Add();
+            Panel.SizeX(1).SizeY(1).Row(2).Col(2).Content("<div class='content'>5</div>").Add();
+            Panel.SizeX(1).SizeY(1).Row(2).Col(3).Content("<div class='content'>6</div>").Add();
+        }).Created("onCreated").Render()
+        <!-- end of dashboardlayout element -->
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Create instances for dashboardlayout element
+        var dashboard = document.getElementById('dashboard_default').ej2_instances[0];
+        // Save the current panels
+        document.getElementById('save').onclick = function (e) {
+          onCreated();
+        };
+        // Restore the initial panels
+        document.getElementById('restore').onclick = function (e) {
+            dashboard.panels = restoreModel;
+        };
+    });
+    function onCreated() {
+            var dashboard = document.getElementById('dashboard_default').ej2_instances[0];
+            restoreModel = dashboard.serialize();
+            restoreModel[0].content = '<div class="content">0</div>';
+            restoreModel[1].content = '<div class="content">1</div>';
+            restoreModel[2].content = '<div class="content">2</div>';
+            restoreModel[3].content = '<div class="content">3</div>';
+            restoreModel[4].content = '<div class="content">4</div>';
+            restoreModel[5].content = '<div class="content">5</div>';
+            restoreModel[6].content = '<div class="content">6</div>';
+    }
+</script>
+
+<style>
+    /* DashboardLayout element styles  */
+    #dashboard_default .e-panel .e-panel-container .content {
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        line-height: 90px;
+    }
+</style>

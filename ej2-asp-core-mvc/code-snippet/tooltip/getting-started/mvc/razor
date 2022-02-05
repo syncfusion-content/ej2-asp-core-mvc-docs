@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+@Html.EJS().Tooltip("Tooltip").Content("Lets go green & Save Earth !!!").ContentTemplate(@<span id='target'>Show Tooltip</span>).Render()

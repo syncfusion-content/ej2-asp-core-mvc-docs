@@ -1,0 +1,28 @@
+<div id='container' style="height:400px;">
+    <ejs-button id="targetButton" content="Open Dialog"></ejs-button>
+    <ejs-dialog id="dialog" header="Outer Dialog" showCloseIcon="true" created="onCreated" target="#container" height="300px" closeOnEscape="false" width="400px">
+        <e-dialog-animationsettings effect="None"></e-dialog-animationsettings>
+        <e-content-template>
+            <button class="e-control e-btn" id="innerButton" role="button">Open InnerDialog</button>
+        </e-content-template>
+    </ejs-dialog>
+    <ejs-dialog id='innerDialog' showCloseIcon="true" header="Inner Dialog" closeOnEscape="false" content="This is a Nested Dialog" target="#dialog" height="150px" width="250px">
+        <e-dialog-animationsettings effect="None"></e-dialog-animationsettings>
+    </ejs-dialog>
+</div>
+<script>
+    window.onload = function () {
+        document.getElementById('targetButton').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            var innerDialog = document.getElementById("innerDialog").ej2_instances[0];
+            dialog.show();
+            innerDialog.show();
+        }
+    }
+    function onCreated() {
+        document.getElementById("innerButton").addEventListener("click", function () {
+            var innerDialog = document.getElementById("innerDialog").ej2_instances[0];
+            innerDialog.show();
+        })
+    }
+</script>

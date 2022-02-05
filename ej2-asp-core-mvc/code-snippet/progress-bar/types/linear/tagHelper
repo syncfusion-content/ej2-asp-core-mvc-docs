@@ -1,0 +1,12 @@
+<ejs-progressbar id="lineardeterminate" type='Linear' height='60' minimum="0" maximum="100"
+        value=100>
+</ejs-progressbar>
+<ejs-progressbar id="linearindeterminate" type='Linear' height='60' minimum="0" maximum="100"
+        value=20 isIndeterminate="true">
+</ejs-progressbar>
+<ejs-progressbar id="linearbuffer" type='Linear' height='60' minimum="0" maximum="100"
+        value=40 secondaryProgress='60'>
+</ejs-progressbar>
+<ejs-progressbar id="linearsegment" type='Linear' height='60' minimum="0" maximum="100"
+        value=100 segmentCount="8">
+</ejs-progressbar>

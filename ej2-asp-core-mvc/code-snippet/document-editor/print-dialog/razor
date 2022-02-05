@@ -1,0 +1,11 @@
+@Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnablePrint(true).EnableSelection(true).EnableSfdtExport(true).EnablePageSetupDialog(true).Render()
+
+<script>
+    var documenteditor;    
+        var documenteditorElement = document.getElementById("container");
+        documenteditorElement.style.height = "100%";
+        documenteditorElement.style.width = "100%";
+        documenteditor = documenteditorElement.ej2_instances[0];
+        documenteditor.resize();
+        documenteditor.showPageSetupDialog();    
+</script>

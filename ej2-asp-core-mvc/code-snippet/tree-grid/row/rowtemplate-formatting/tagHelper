@@ -1,0 +1,46 @@
+<ejs-treegrid id="TreeGrid" rowHeight="83" dataSource="ViewBag.datasource" height="250" childMapping="Children" treeColumnIndex="0" rowTemplate="#rowtemplate">
+            <e-treegrid-columns>
+                <e-treegrid-column field="EmpID" headerText="Employee ID" width="150"></e-treegrid-column>
+                <e-treegrid-column field="Address" headerText="Employee Details" width="350"></e-treegrid-column>
+                <e-treegrid-column field="DOB" headerText="DOB" width="150"></e-treegrid-column>
+            </e-treegrid-columns>
+        </ejs-treegrid>
+
+    <script id="rowtemplate" type="text/x-template">
+        <tr>
+            <td class="border" style='padding-left:18px;'>
+                <div>${EmpID}</div>
+            </td>
+            <td class="border">
+                <div>
+                    <div style="position:relative;display:inline-block;">
+                        <img src="/images/TreeGrid/${FullName}.png" alt="${FullName}" />
+                    </div>
+                    <div style="display:inline-block;">
+                        <div style="padding:5px;">${Address}</div>
+                        <div style="padding:5px;">${Country}</div>
+                        <div style="padding:5px;font-size:12px;">${Contact}</div>
+                    </div>
+                </div>
+            </td>
+            <td class="border" style='padding-left: 20px;'>
+                <div>${DOB.toLocaleDateString()}</div>
+            </td>
+        </tr>
+    </script>
+    <style type="text/css">
+        .border {
+            border-color: #e0e0e0;
+            border: 1px solid #e0e0e0;
+            border-width: 1px 0 0 0;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+            vertical-align: baseline;
+            border-radius: 50px;
+            margin-left: 20px;
+            background-repeat: no-repeat;
+        }
+    </style>

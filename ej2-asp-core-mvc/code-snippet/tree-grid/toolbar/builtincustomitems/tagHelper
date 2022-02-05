@@ -1,0 +1,24 @@
+@{
+    List<object> toolbarItems = new List<object>();
+            toolbarItems.Add("ExpandAll");
+            toolbarItems.Add("CollapseAll");
+            toolbarItems.Add(new { text = "Click", tooltipText = "Click", id = "Click", prefixIcon = "e-time" });
+ }
+
+<ejs-treegrid id="TreeGrid" dataSource="ViewBag.datasource" height="270"  toolbar=toolbarItems toolbarClick="toolbarClick" childMapping="Children" treeColumnIndex="1">
+<e-treegrid-editsettings allowAdding="true" allowEditing="true" allowDeleting="true"></e-treegrid-editsettings>
+        <e-treegrid-columns>
+         <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+         <e-treegrid-column field="TaskName" headerText="Task Name" width="180" textAlign="Left"></e-treegrid-column>
+         <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" type="date" width="90"></e-treegrid-column>
+         <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="80"></e-treegrid-column>
+        </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+        function toolbarClick(args) {
+            if (args.item.text === 'Click') {
+                alert("Custom toolbar click...");
+            }
+        }
+</script>

@@ -1,0 +1,15 @@
+<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true id="container"></ejs-documenteditor>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        documenteditor.editor.insertTable(2, 2);
+        //To apply border
+        var borderSettings = {
+            type: 'AllBorders',
+            lineWidth: 12
+        };
+        documenteditor.editor.applyBorders(borderSettings);
+    });
+</script>

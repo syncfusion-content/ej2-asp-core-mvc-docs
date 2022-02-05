@@ -1,0 +1,48 @@
+<div class="control-section">
+    <ejs-grid id="Grid" dataSource="ViewBag.dataSource" allowPaging="true" created="gridCreated">
+        <e-grid-pagesettings pageCount="5"></e-grid-pagesettings>
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" width="120"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+            <e-grid-column field="OrderDate" headerText=" Order Date" format="yMd" width="130"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" format="C2" width="120"></e-grid-column>
+            <e-grid-column field="ShippedDate" headerText="Shipped Date" format="yMd" width="140"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>
+
+<script type="text/javascript">
+    function gridCreated() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.hideSpinner = () => true;
+        ej.popups.setSpinner({ type: 'Bootstrap' });
+    }
+</script>
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        font-family: 'Helvetica Neue','calibiri';
+        font-size: 14px;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .wrap {
+        margin: 0 auto;
+        width: 240px;
+    }
+
+    h5 {
+        font-weight: bold;
+        text-align: center;
+    }
+</style>

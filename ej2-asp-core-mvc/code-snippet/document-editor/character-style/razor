@@ -1,0 +1,22 @@
+@Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnableSelection(true).Render()
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        var styleJson = {
+            "type": "Character",
+            "name": "New CharacterStyle",
+            "basedOn": "Default Paragraph Font",
+            "characterFormat": {
+                "fontSize": 16.0,
+                "fontFamily": "Calibri Light",
+                "fontColor": "#2F5496",
+                "bold": true,
+                "italic": true,
+                "underline": "Single"
+            }
+        };
+        documentEditor.editor.createStyle(JSON.stringify(styleJson));
+    });
+</script>

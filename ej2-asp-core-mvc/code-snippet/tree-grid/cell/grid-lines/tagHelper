@@ -1,0 +1,8 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource"  gridLines="Both" height="300" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="160"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" textAlign="Right" width="120" format="yMd"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-treegrid-column>
+  </e-treegrid-columns>
+</ejs-treegrid>

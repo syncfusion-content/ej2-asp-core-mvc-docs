@@ -1,0 +1,8 @@
+@Html.EJS().Toast("element").Title("Matt sent you a friend request").Content("You have a new friend request yet to accept").Render()
+<script type="text/javascript">
+    setTimeout(() => {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.target = document.body;
+        toastObj.show();
+    }, 1000);
+</script>

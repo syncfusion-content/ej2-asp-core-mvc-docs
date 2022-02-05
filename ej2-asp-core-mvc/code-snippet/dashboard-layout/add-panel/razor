@@ -1,0 +1,108 @@
+@model WebApplication.Controllers.HomeController.spacingModel
+<div id="api_property">
+    <div style="display:inline-block">
+        <div style="padding:5px;padding-right: 40px;">
+        <!--  NumericTextBox element declaration -->
+            @Html.EJS().NumericTextBox("sizex").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Never).Placeholder("Size X").Min(1).Max(5).Width("150px").Render()
+        </div>
+        <div style="padding:5px;">
+            <!--  NumericTextBox element declaration -->
+            @Html.EJS().NumericTextBox("sizey").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Never).Placeholder("Size Y").Min(1).Max(5).Width("150px").Render()
+        </div>
+    </div>
+    <div style="display:inline-block">
+        <div style="padding:5px;padding-right: 40px;">
+            <!--  NumericTextBox element declaration -->
+            @Html.EJS().NumericTextBox("row").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Never).Placeholder("Row").Min(0).Max(5).Width("150px").Render()
+        </div>
+        <div style="padding:5px;">
+            <!--  NumericTextBox element declaration -->
+            @Html.EJS().NumericTextBox("column").FloatLabelType(Syncfusion.EJ2.Inputs.FloatLabelType.Never).Placeholder("Column").Min(0).Max(4).Width("150px").Render()
+        </div>
+    </div>
+    <div style="padding:5px; width: 240px;">
+        <!--  Dropdownlist element declaration -->
+        @Html.EJS().DropDownList("dropdown").Placeholder("Select a id value").DataSource(ViewBag.data).Width("150px").Index(0).Render()
+    </div>
+    <div style="padding:5px;">
+        <div style="width:100%">
+            <!--  Button element declaration -->
+            @Html.EJS().Button("add").CssClass("e-primary").Content("Add Panel").Render()
+            @Html.EJS().Button("remove").CssClass("e-danger").Content("Remove Panel").Render()
+        </div>
+    </div>
+</div>
+<div class="control-section" style="padding-top: 15px;" id="control_dash">
+    <div>
+        <!--  Dashboardlayout element declaration -->
+         @Html.EJS().DashboardLayout("dashboard_layout").Columns(5).CellSpacing(Model.cellSpacing).Panels(Panel =>
+        {
+            Panel.Id("Panel0").SizeX(1).SizeY(1).Row(0).Col(0).Content("<div class='content'>0</div>").Add();
+            Panel.Id("Panel1").SizeX(3).SizeY(2).Row(0).Col(1).Content("<div class='content'>1</div>").Add();
+            Panel.Id("Panel2").SizeX(1).SizeY(3).Row(0).Col(4).Content("<div class='content'>2</div>").Add();
+            Panel.Id("Panel3").SizeX(1).SizeY(1).Row(1).Col(0).Content("<div class='content'>3</div>").Add();
+            Panel.Id("Panel4").SizeX(2).SizeY(1).Row(2).Col(0).Content("<div class='content'>4</div>").Add();
+            Panel.Id("Panel5").SizeX(1).SizeY(1).Row(2).Col(2).Content("<div class='content'>5</div>").Add();
+            Panel.Id("Panel6").SizeX(1).SizeY(1).Row(2).Col(3).Content("<div class='content'>6</div>").Add();
+        }).Render()
+    </div>
+</div>
+<!-- end of dashboardlayout element -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Create a instances for dashboard layout
+        var dashboardObject = document.getElementById('dashboard_layout').ej2_instances[0];
+        // Remove panel in dashboard layout
+        document.getElementById('remove').onclick = function (e) {
+            var dropdownObject = document.getElementById('dropdown').ej2_instances[0];
+            dashboardObject.removePanel(dropdownObject.value);
+            dropdownObject.dataSource.splice(dropdownObject.dataSource.indexOf(dropdownObject.value), 1);
+            dropdownObject.value = null;
+            dropdownObject.refresh();
+        };
+        var count = 7;
+        // Add panel in dashboard layout
+        document.getElementById('add').onclick = function (e) {
+            var sizeX = document.getElementById('sizex').ej2_instances[0];
+            var sizeY = document.getElementById('sizey').ej2_instances[0];
+            var row = document.getElementById('row').ej2_instances[0];
+            var column = document.getElementById('column').ej2_instances[0];
+            var dropdownObject = document.getElementById('dropdown').ej2_instances[0];
+            var panel = [{
+                id: count.toString() + "Panel", sizeX: parseInt(sizeX.value, 10), sizeY: parseInt(sizeY.value, 10), row: parseInt(row.value, 10), col: parseInt(column.value, 10),
+                content: "<div class='content'>" + count + "</div>"
+            }];
+            dropdownObject.dataSource.push("Panel" + count.toString());
+            dropdownObject.refresh();
+            count = count + 1;
+            dashboardObject.addPanel(panel[0]);
+        };
+    });
+</script>
+
+<style>
+    /* DashboardLayout element styles  */
+    #dashboard_layout .e-panel .e-panel-container .content {
+        vertical-align: middle;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        line-height: 45px;
+    }
+    /* sample level styles */
+    td {
+        padding: 5px;
+    }
+
+    #control_dash {
+        display: block;
+        width:60%;
+        float:left;
+     }
+
+    #api_property {
+        display: inline-block;
+        margin:30px;
+    }
+</style>

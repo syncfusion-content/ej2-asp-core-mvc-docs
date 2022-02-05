@@ -1,0 +1,4 @@
+@Html.EJS().DocumentEditorContainer("container").EnableToolbar(true).DocumentEditorSettings("settings").Render()
+<script>
+    var settings = { fontFamilies: ['Algerian', 'Arial', 'Calibri', 'Cambria'] };
+</script>

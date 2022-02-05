@@ -1,0 +1,41 @@
+<div class="control-section">
+    <ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated" height="590px"></ejs-documenteditorcontainer>
+</div>
+
+<script>
+  var documenteditor;
+  var container;
+  function onCreated() {
+      var documenteditorElement = document.getElementById("container");
+      container = documenteditorElement.ej2_instances[0];
+      documenteditor = container.documentEditor;
+      // creating Custom Options
+      let menuItems = [
+          {
+              text: 'Search In Google',
+              id: 'search_in_google',
+              iconCss: 'e-icons e-de-ctnr-find',
+          },
+      ];
+      // adding Custom Options
+      container.documentEditor.contextMenu.addCustomMenu(menuItems, false);
+      // custom Options Select Event
+      container.documentEditor.customContextMenuSelect = function (args) {
+          // custom Options Functionality
+          let id = container.documentEditor.element.id;
+          switch (args.id) {
+              case id + 'search_in_google':
+                  // To get the selected content as plain text
+                  let searchContent =
+                      container.documentEditor.selection.text;
+                  if (
+                      !container.documentEditor.selection.isEmpty &&
+                      /\S/.test(searchContent)
+                  ) {
+                      window.open('http://google.com/search?q=' + searchContent);
+                  }
+                  break;
+          }
+      };
+  }
+</script>

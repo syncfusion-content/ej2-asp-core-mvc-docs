@@ -1,0 +1,33 @@
+
+<div id="container">
+    @Html.EJS().Button("targetButton").Content("Open Dialog").Render()
+    @Html.EJS().Dialog("dialog").Header("Dialog").Visible(false).Content("This is a Dialog with fullscreen display.").Target("#container").Width("250px").Buttons(btn=>
+{
+    btn.Click("dlgButtonClick").ButtonModel(ViewBag.DialogButtons1).Add();
+    btn.Click("dlgButtonClick").ButtonModel(ViewBag.DialogButtons2).Add();
+}).Render()
+</div>
+<script>
+    document.getElementById('targetButton').onclick = function () {
+        var dialog = document.getElementById("dialog").ej2_instances[0];
+        dialog.show(true);
+    }
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+</script>
+<style>
+
+    #container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        padding: 20px;
+        margin: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        top: 0px;
+    }
+</style>

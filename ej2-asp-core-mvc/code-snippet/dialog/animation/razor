@@ -1,0 +1,21 @@
+<div id='container' style="height:400px;">
+    @Html.EJS().Button("targetButton").Content("Open Dialog").Render()
+    @Html.EJS().Dialog("dialog").Header("Dialog").AnimationSettings(e=>e.Effect(Syncfusion.EJ2.Popups.DialogEffect.Zoom).Duration(400).Delay(0)).Content("Dialog enabled with Zoom effect").Width("250px").Buttons(btn=> {
+    btn.Click("dlgButtonClick").ButtonModel(ViewBag.DialogButtons1).Add();
+    btn.Click("dlgButtonClick").ButtonModel(ViewBag.DialogButtons2).Add();
+    }).Render()
+</div>
+
+<script>
+    window.onload = function () {
+        document.getElementById('targetButton').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            dialog.show();
+        }
+    }
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+</script>
+

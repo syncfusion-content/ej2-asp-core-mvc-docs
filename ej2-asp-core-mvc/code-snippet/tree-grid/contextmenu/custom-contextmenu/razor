@@ -1,0 +1,43 @@
+@{
+    List<object> ContextMenuitems = new List<object>();
+    ContextMenuitems.Add(new { text = "Collapse the Row", target = ".e-content", id = "collapserow" });
+    ContextMenuitems.Add(new { text = "Expand the Row", target = ".e-content", id = "expandrow" });
+}
+
+@(Html.EJS().TreeGrid("TreeGrid")
+      .DataSource((IEnumerable<object>)ViewBag.datasource)
+      .Columns(col =>
+       {
+        col.Field("TaskId").HeaderText("Task ID").Width(90).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("TaskName").HeaderText("Task Name").Width(180).Add();
+        col.Field("StartDate").HeaderText("Start Date").Format("yMd").Type("date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+        col.Field("Duration").HeaderText("Duration").Width(80).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+
+       }).ChildMapping("Children").ContextMenuItems(ContextMenuitems).ContextMenuOpen("ContextMenuOpen").ContextMenuClick("ContextMenuClick")
+         .TreeColumnIndex(1).Render())
+
+<script>
+    function ContextMenuOpen(args) {
+        var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+        var elem = args.event.target;
+        var uid = elem.closest('.e-row').getAttribute('data-uid');
+        if (ej.base.isNullOrUndefined(ej.base.getValue('hasChildRecords', treegrid.grid.getRowObjectFromUID(uid).data))) {
+            args.cancel = true;
+        } else {
+            var flag = ej.base.getValue('expanded', treegrid.grid.getRowObjectFromUID(uid).data);
+            var val = flag ? 'none' : 'block';
+            document.querySelectorAll('li#expandrow')[0].setAttribute('style', 'display: ' + val + ';');
+            val = !flag ? 'none' : 'block';
+            document.querySelectorAll('li#collapserow')[0].setAttribute('style', 'display: ' + val + ';');
+        }
+    }
+    function ContextMenuClick(args) {
+        var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+        treegrid.getColumnByField('TaskID');
+        if (args.item.id === 'collapserow') {
+            treegrid.collapseRow((treegrid.getSelectedRows()[0]), treegrid.getSelectedRecords()[0]);
+        } else {
+            treegrid.expandRow((treegrid.getSelectedRows()[0]), treegrid.getSelectedRecords()[0]);
+        }
+    }
+</script>

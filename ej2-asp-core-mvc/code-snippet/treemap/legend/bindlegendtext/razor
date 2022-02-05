@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2;
+<div id="container">
+    @Html.EJS().TreeMap("container").Load("load").WeightValuePath("count").RangeColorValuePath("count").LegendSettings(legend => legend.Visible(true).Position(Syncfusion.EJ2.TreeMap.LegendPosition.Top)).LeafItemSettings(leaf => leaf.LabelPath("fruit")).Render()
+</div>
+<script>
+    function load(args)
+    { 
+        var data = [
+            { fruit: 'Apple', count: 5000 , color: 'red' },
+            { fruit: 'Mango', count: 3000, color: 'blue' },
+            { fruit: 'Orange', count: 2300,color: 'green'},
+            { fruit: 'Banana', count: 500, color: 'pink' },
+            { fruit: 'Grape', count: 4300, color: 'yellow' },
+            { fruit: 'Papaya', count: 1200 color: 'orange'},
+            { fruit: 'Melon', count: 4500, color: 'violet' }
+        ];
+        args.treemap.dataSource = data;
+        args.treemap.colorValuePath = color;
+        args.treemap.LegendSettings.visible = true;
+        args.treemap.LegendSettings.valuePath = fruit;
+        args.treemap.palette = [];
+        
+    }
+</script>

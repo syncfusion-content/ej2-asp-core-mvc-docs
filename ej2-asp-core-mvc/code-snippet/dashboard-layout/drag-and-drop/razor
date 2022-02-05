@@ -1,0 +1,39 @@
+@model WebApplication.Controllers.HomeController.spacingModel
+
+<div class="control-section">
+    <div>
+        <!--  Dashboardlayout element declaration -->
+        @Html.EJS().DashboardLayout("dashboard_layout").Columns(5).CellSpacing(Model.cellSpacing).Panels(Panel =>
+        {
+            Panel.SizeX(1).SizeY(1).Row(0).Col(0).Content("<div>0</div>").Add();
+            Panel.SizeX(3).SizeY(2).Row(0).Col(1).Content("<div>1</div>").Add();
+            Panel.SizeX(1).SizeY(3).Row(0).Col(4).Content("<div>2</div>").Add();
+            Panel.SizeX(1).SizeY(1).Row(1).Col(0).Content("<div>3</div>").Add();
+            Panel.SizeX(2).SizeY(1).Row(2).Col(0).Content("<div>4</div>").Add();
+            Panel.SizeX(1).SizeY(1).Row(2).Col(2).Content("<div>5</div>").Add();
+            Panel.SizeX(1).SizeY(1).Row(2).Col(3).Content("<div>6</div>").Add();
+    }).Drag("onDrag").DragStart("onDragStart").DragStop("onDragStop").Render()
+    </div>
+</div>
+<!-- end of dashboardlayout element -->
+<script>
+function onDrag(args) {
+    console.log("Dragging");
+}
+function onDragStart(args) {
+    console.log("Drag Start");
+}
+function onDragStop(args) {
+    console.log("Drag Stop");
+}
+</script>
+<style>
+     /* DashboardLayout element styles  */
+    #dashboard_layout .e-panel .e-panel-container {
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        line-height: 90px;
+    }
+</style>

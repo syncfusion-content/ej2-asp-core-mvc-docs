@@ -1,0 +1,21 @@
+<div class="control-section" style="width:400px;margin:0 auto;">
+    @Html.EJS().Toast("element").Title("Matt sent you a friend request").Position(p => p.X("Right").Y("Bottom")).Content("You have a new friend request yet to accept").TimeOut(0).Click("onClick").Render()
+    <div class="row">
+        @Html.EJS().Button("show_toast").Content("Show Toast").CssClass("e-btn").Render()
+    </div>
+</div>
+<script type="text/javascript">
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show();
+        }, 200);
+    document.getElementById("show_toast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show();
+    });
+    function onClick(e) {
+        e.clickToClose = true;
+    }
+</script>

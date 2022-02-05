@@ -1,0 +1,6 @@
+@Html.EJS().ProgressBar("container")
+                        .Type(Syncfusion.EJ2.ProgressBar.ProgressType.Linear).Value(40)
+                        .Height("60")
+                        .Minimum(0).Maximum(100)
+                        .Animation(an => an.Enable(true).Delay(0).Duration(2000))
+                        .Render())

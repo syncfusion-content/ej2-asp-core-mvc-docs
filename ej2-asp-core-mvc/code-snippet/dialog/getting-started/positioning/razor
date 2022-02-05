@@ -1,0 +1,18 @@
+
+<div id='container' style="height:400px;">
+    @Html.EJS().Button("targetButton").Content("Open Dialog").Render()
+    @Html.EJS().Dialog("dialog").Header("Dialog Positions").FooterTemplate("<span id='posvalue' style='float:left; padding-left:10px;font-weight: bold;'>Position: {X: 'left', Y: 'top'}</span>").Target("#container").Width("350px").CloseOnEscape(false).ContentTemplate(@<table style='width: 320px;'>
+        <tr> <td><input type='radio' name='xy' onclick='changePosition(event)' value='left top' checked='true'>left top</td> <td><input type='radio' name='xy' onclick='changePosition(event)' value='center top'>center top</td> <td><input type='radio' name='xy' onclick='changePosition(event)' value='right top'>right top</td> </tr>
+        <tr> <td><input type='radio' name='xy' onclick='changePosition(event)' value='left center'>left center</td> <td><input type='radio' name='xy' onclick='changePosition(event)' value='center center'>center center</td> <td><input type='radio' name='xy' onclick='changePosition(event)' value='right center'>right center</td> </tr>
+        <tr> <td><input type='radio' name='xy' onclick='changePosition(event)' value='left bottom'>left bottom</td> <td><input type='radio' name='xy' onclick='changePosition(event)' value='center bottom'>center bottom</td> <td><input type='radio' name='xy' onclick='changePosition(event)' value='right bottom'>right bottom</td> </tr>
+    </table>).Render()
+</div>
+
+<script>
+    function changePosition(event) {
+        var dialog = document.getElementById("dialog").ej2_instances[0];
+        dialog.position = { X: event.currentTarget.value.split(" ")[0], Y: event.currentTarget.value.split(" ")[1] };
+        document.getElementById("posvalue").innerHTML = 'Position: {X: "' + event.currentTarget.value.split(" ")[0] + '", Y: "' + event.currentTarget.value.split(" ")[1] + '"}';
+    };
+</script>
+

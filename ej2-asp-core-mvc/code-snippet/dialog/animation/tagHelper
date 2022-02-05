@@ -1,0 +1,24 @@
+
+<div id='container' style="height:400px;">
+    <ejs-button id="targetButton" content="Open Modal Dialog"></ejs-button>
+    <ejs-dialog id='dialog' header='Dialog' content='Dialog enabled with Zoom effect' target='#container' width='250px'>
+        <e-dialog-buttons>
+            <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons1" click="dlgButtonClick"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons2" click="dlgButtonClick"></e-dialog-dialogbutton>
+        </e-dialog-buttons>
+        <e-dialog-animationsettings effect="Zoom" duration="400" delay="0"></e-dialog-animationsettings>
+    </ejs-dialog>
+</div>
+
+<script>
+    window.onload = function () {
+        document.getElementById('targetButton').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            dialog.show();
+        }
+    }
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+</script>

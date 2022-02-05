@@ -1,0 +1,33 @@
+@Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnableSelection(true).Render()
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        var styleJson = {
+            "type": "Paragraph",
+            "name": "New ParagraphStyle",
+            "basedOn": "Normal",
+            "characterFormat": {
+                "fontSize": 16.0,
+                "fontFamily": "Calibri Light",
+                "fontColor": "#2F5496",
+                "bold": true,
+                "italic": true,
+                "underline": "Single"
+            },
+            "paragraphFormat": {
+                "leftIndent": 0.0,
+                "rightIndent": 0.0,
+                "firstLineIndent": 0.0,
+                "beforeSpacing": 12.0,
+                "afterSpacing": 0.0,
+                "lineSpacing": 1.0791666507720947,
+                "lineSpacingType": "Multiple",
+                "textAlignment": "Left",
+                "outlineLevel": "Level1"
+            }
+        };
+        documentEditor.editor.createStyle(JSON.stringify(styleJson));
+    });
+</script>

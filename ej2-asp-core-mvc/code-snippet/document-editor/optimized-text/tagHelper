@@ -1,0 +1,6 @@
+<div>
+<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enablePageSetupDialog=true enableSfdtExport=true id="container" documentEditorSettings="settings"></ejs-documenteditor>
+</div>
+<script>
+var settings = { enableOptimizedTextMeasuring: false };
+</script>

@@ -1,0 +1,30 @@
+<ejs-button id="import" content="Open Document" onclick="onClick()"></ejs-button>
+<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated"
+    height="590px"></ejs-documenteditorcontainer>
+
+<script>
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        documenteditor = container.documentEditor;
+    }
+    function onClick() {
+        let http = new XMLHttpRequest();
+        //add your url in which you want to open document inside the ""
+        let content = { fileUrl: "" };
+        let baseurl = "/api/documenteditor/ImportFileURL";
+        http.open("POST", baseurl, true);
+        http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        http.onreadystatechange = () => {
+            if (http.readyState === 4) {
+                if (http.status === 200 || http.status === 304) {
+                    //open the SFDT text in Document Editor
+                    container.documentEditor.open(http.responseText);
+                }
+            }
+        };
+        http.send(JSON.stringify(content));
+    }
+</script>

@@ -1,0 +1,19 @@
+@{
+    object attr = new { @class = "e-attr" };
+}
+
+<style>
+    .e-attr {
+        background: '#d7f0f4';
+    }
+</style>
+
+
+<ejs-treegrid id="TreeGrid" dataSource="ViewBag.datasource" height="300" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" customAttribute="@(attr)" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="160"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" customAttribute="@(attr)" textAlign="Right" width="120" format="yMd"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-treegrid-column>
+  </e-treegrid-columns>
+</ejs-treegrid>

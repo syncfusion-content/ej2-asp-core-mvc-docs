@@ -1,0 +1,16 @@
+<ejs-tooltip id="Tooltip" mouseTrail="true" showTipPointer="false" content="Tooltip content" offsetX="30" offsetY="30">
+    <e-content-template>
+        <div id="target">Show tooltip</div>
+    </e-content-template>
+</ejs-tooltip>
+
+<style>
+    #target {
+        background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        margin: 80px auto;
+        padding: 20px;
+        width: 200px;
+    }
+</style>

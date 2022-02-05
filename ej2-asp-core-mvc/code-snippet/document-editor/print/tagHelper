@@ -1,0 +1,16 @@
+<ejs-button id="print">Print</ejs-button>
+<div id="documenteditor" style="width:100%;height:100%">
+<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enablePrint=true enableSfdtExport=true id="container"></ejs-documenteditor>
+</div>
+
+<script>
+        var documenteditor;
+        document.addEventListener('DOMContentLoaded', function () {
+            var documenteditorElement = document.getElementById("container");
+            documenteditor = documenteditorElement.ej2_instances[0];
+            documenteditor.resize();         
+            document.getElementById('print').addEventListener('click', function () {
+                documenteditor.print();
+            });
+        }); 
+    </script>

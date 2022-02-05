@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2.Grids
+
+@(Html.EJS().TreeGrid("TreeGrid").DataSource(dataManager => { dataManager.Url("/Home/UrlDatasource").InsertUrl("/Home/Insert").UpdateUrl("/Home/Update")
+      .RemoveUrl("/Home/Remove").BatchUrl("/Home/Delete").Adaptor("UrlAdaptor"); })
+  .EditSettings(edit =>
+   {
+    edit.AllowAdding(true);
+    edit.AllowDeleting(true);
+    edit.AllowEditing(true);
+    edit.Mode(Syncfusion.EJ2.TreeGrid.EditMode.Row);
+    edit.NewRowPosition(Syncfusion.EJ2.TreeGrid.RowPosition.Below);
+   })
+  .HasChildMapping("isParent").IdMapping("TaskID").ParentIdMapping("ParentItem")
+  .Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })
+  .Columns(col =>
+   {
+      col.Field("TaskID").HeaderText("Task ID").IsPrimaryKey(true).Width(110).TextAlign(TextAlign.Right)
+      .ValidationRules(new { required = true, number = true }).Add();
+      col.Field("TaskName").HeaderText("Task Name").Width(190).Add();
+      col.Field("Duration").HeaderText("Duration").Width(210).Add();
+      col.Field("Progress").HeaderText("Progress").Width(210).Add();
+
+   }).Height(400).TreeColumnIndex(1).Render()
+)

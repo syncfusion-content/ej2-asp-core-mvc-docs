@@ -1,0 +1,17 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.data" childMapping="Children" height="315" treeColumnIndex="1">
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="180"></e-treegrid-column>
+        <e-treegrid-column headerText="Approved" template="#template" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="80"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script id="template" type="text/x-template">
+    <div class="template_checkbox">
+        ${if(Approved)}
+        <input type="checkbox" checked>
+        ${else}
+        <input type="checkbox"> ${/if}
+    </div>
+</script>

@@ -1,0 +1,38 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.data" childMapping="Children" height="315">
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskName" headerText="Task Name" headerTemplate="#projectName" width="220"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" textAlign="Right" headerTemplate="#dateTemplate"
+                           format="yMd"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" headerTemplate="#durationTemplate"></e-treegrid-column>
+        <e-treegrid-column field="Progress" headerText="Progress" textAlign="Right" headerTemplate="#progressTemplate"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script type="text/x-template" id="projectName">
+    <div>
+        <div>
+            <img src="images/__Task name.png" width="20" height="20" class="e-image" />  Task Name
+        </div>
+    </div>
+</script>
+<script type="text/x-template" id="dateTemplate">
+    <div>
+        <div>
+            <img src="images/__Start name.png" width="20" height="20" class="e-image" />  Start Date
+        </div>
+    </div>
+</script>
+<script type="text/x-template" id="durationTemplate">
+    <div>
+        <div>
+            <img src="images/__Duration.png" width="20" height="20" class="e-image" />  Duration
+        </div>
+    </div>
+</script>
+<script type="text/x-template" id="progressTemplate">
+    <div>
+        <div>
+            <img src="images/__progress.png" width="20" height="20" class="e-image" />  Progress
+        </div>
+    </div>
+</script>

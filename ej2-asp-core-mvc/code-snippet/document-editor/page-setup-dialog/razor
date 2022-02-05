@@ -1,0 +1,15 @@
+@Html.EJS().Button("dialog").Content("Dialog").Render()
+@Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnablePageSetupDialog(true).EnableSelection(true).EnableSfdtExport(true).Render()
+
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        var button = document.getElementById('dialog');
+        button.addEventListener('click', function () {
+            // To open PageSetup Dialog
+            documenteditor.showDialog('PageSetup');
+        });
+    });
+</script>

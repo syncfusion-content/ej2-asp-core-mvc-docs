@@ -1,0 +1,41 @@
+
+    @Html.EJS().Button("print").Content("Print").Render()
+    <div id="documenteditor" style="width:100%;height:100%">
+        @Html.EJS().DocumentEditor("container").EnablePrint(true).Render()
+    </div>
+
+    <script>
+        var documenteditor;
+        document.addEventListener('DOMContentLoaded', function () {
+            var documenteditorElement = document.getElementById("container");            
+            documenteditor = documenteditorElement.ej2_instances[0];
+            documenteditor.resize();
+            var sfdt = {
+                "sections": [
+                    {
+                        "blocks": [
+                            {
+                                "inlines": [
+                                    {
+                                        "characterFormat": {
+                                            "bold": true,
+                                            "italic": true
+                                        },
+                                        "text": "Hello World"
+                                    }
+                                ]
+                            }
+                        ],
+                        "headersFooters": {
+                        }
+                    }
+                ]
+            };
+
+            documenteditor.open(JSON.stringify(sfdt));
+
+            document.getElementById('print').addEventListener('click', function () {
+                documenteditor.print();
+            });
+        }); 
+    </script>

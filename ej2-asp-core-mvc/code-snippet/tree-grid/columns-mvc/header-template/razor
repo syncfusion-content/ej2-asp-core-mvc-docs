@@ -1,0 +1,42 @@
+@using Syncfusion.EJ2.Grids
+
+@(Html.EJS().TreeGrid("HeaderTemplate")
+      .DataSource((IEnumerable<object>)ViewBag.datasource)
+      .Columns(col =>
+       {
+          col.Field("TaskName").HeaderTemplate("#projectName").Width(220).Add();
+          col.Field("StartDate").HeaderTemplate("#dateTemplate").Format("yMd").TextAlign(TextAlign.Right).Add();
+          col.Field("Duration").HeaderTemplate("#durationTemplate").TextAlign(TextAlign.Right).Add();
+          col.Field("Progress").HeaderTemplate("#progressTemplate").TextAlign(TextAlign.Right).Add();
+
+       }).Height(315).ChildMapping("Children").TreeColumnIndex(0).Render()
+)
+
+<script type="text/x-template" id="projectName">
+    <div>
+        <div>
+            <img src="images/__Task name.png" width="20" height="20" class="e-image" />  Task Name
+        </div>
+    </div>
+</script>
+<script type="text/x-template" id="dateTemplate">
+    <div>
+        <div>
+            <img src="images/__Start name.png" width="20" height="20" class="e-image" />  Start Date
+        </div>
+    </div>
+</script>
+<script type="text/x-template" id="durationTemplate">
+    <div>
+        <div>
+            <img src="images/__Duration.png" width="20" height="20" class="e-image" />  Duration
+        </div>
+    </div>
+</script>
+<script type="text/x-template" id="progressTemplate">
+    <div>
+        <div>
+            <img src="images/__progress.png" width="20" height="20" class="e-image" />  Progress
+        </div>
+    </div>
+</script>

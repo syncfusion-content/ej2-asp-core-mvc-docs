@@ -1,0 +1,48 @@
+<div id='element'>
+    <h1>Color Customization <span class="e-badge e-badge-primary e-badge-pill green">New</span></h1>
+    <h1>Color Customization <span class="e-badge e-badge-primary e-badge-pill bue">New</span></h1>
+    <h1>Color Customization <span class="e-badge e-badge-primary e-badge-pill purple">New</span></h1>
+    <h1>Color Customization <span class="e-badge e-badge-primary e-badge-pill gradient">New</span></h1>
+</div>
+<style>
+#element {
+  display: table;
+  width: 560px;
+  margin: auto;
+  height: 200px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  justify-content: center;
+  position: relative;
+  top: 55px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#element .e-badge.green {
+  background: #329378;
+  color: #fff;
+}
+
+#element .e-badge.blue {
+  background: #5f65b8;
+  color: #fff;
+}
+
+#element .e-badge.gradient {
+  background: #4776E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #8E54E9, #4776E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #8E54E9, #4776E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+#element .e-badge.purple {
+  background: #9a428f;
+  color: #fff;
+}
+</style>

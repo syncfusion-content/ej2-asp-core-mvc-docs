@@ -1,0 +1,41 @@
+@Html.EJS().Splitter("splitter").Width("600px").Height("200px").PaneSettings(item => {
+   item.Size("200px").Min("60px").Content("#left-pane-content").Add();
+   item.Size("200px").Min("60px").Content("#middle-pane-content").Add();
+   item.Size("200px").Min("60px").Content("#last-pane-content").Add();
+}).Render()
+
+<!-- pane contents -->
+<div id="left-pane-content" style="display: none;">
+    <div>Left pane<div id='panetext'>size: 25%</div>
+        <div id='panetext'>min: 60px</div>
+    </div>
+</div>
+
+<div id="middle-pane-content" style="display: none;">
+    <span>Middle pane<div id="panetext">size: 50%</div>
+        <div id="panetext">min: 60px</div>
+    </span>
+</div>
+
+<div id="last-pane-content" style="display: none;">
+    <span>Right pane<div id="panetext">size: 25%</div>
+        <div id="panetext">min: 60px</div>
+    </span>
+</div>
+
+<style>
+
+#left-pane-content,
+#middle-pane-content,
+#last-pane-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+
+#panetext {
+  font-size: 11px;
+}
+</style>

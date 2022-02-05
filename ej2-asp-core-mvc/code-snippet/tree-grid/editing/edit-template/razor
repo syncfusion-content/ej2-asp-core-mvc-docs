@@ -1,0 +1,54 @@
+@using Syncfusion.EJ2.Grids
+
+@(Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.datasource)
+      .EditSettings(edit =>
+      {
+          edit.AllowAdding(true);
+          edit.AllowDeleting(true);
+          edit.AllowEditing(true);
+          edit.Mode(Syncfusion.EJ2.TreeGrid.EditMode.Cell);
+      })
+       .Toolbar(new List<string>() { "Add", "Delete", "Update", "Cancel" })
+       .Columns(col =>
+       {
+           col.Field("TaskId").HeaderText("Task ID").IsPrimaryKey(true).Width(120)
+              .TextAlign(TextAlign.Right).Add();
+           col.Field("TaskName").HeaderText("Task Name")
+              .Edit(new
+              {
+                  create = "create",
+                  read = "read",
+                  write = "write",
+                  destroy = "destroy"
+
+              }).Width(230).ValidationRules(new { required = true }).Add();
+           col.Field("StartDate").HeaderText("Start Date").Width(150).Format("yMd")
+              .EditType("datepickeredit").TextAlign(TextAlign.Right).Add();
+           col.Field("Duration").HeaderText("Duration").Width("110").EditType("numericedit")
+              .Edit(new { @params = new { format = "n" } }).TextAlign(TextAlign.Right).Add();
+
+       }).Height(400).ChildMapping("Children").TreeColumnIndex(1).Render())
+
+<script>
+    var autoCompleteObj, elem;
+    function create(args) {
+        elem = document.createElement('input');
+        return elem;
+    }
+    function read(args) {
+        return autoCompleteObj.value;
+    }
+    function destroy(args) {
+        return autoCompleteObj.destroy();
+    }
+    function write(args) {
+        var treeGridObj = document.getElementById("TreeGrid").ej2_instances[0];
+        autoCompleteObj = new ej.dropdowns.AutoComplete({
+            dataSource: treeGridObj.grid.dataSource,
+            fields: { value: 'TaskName' },
+            value: args.rowData[args.column.field]
+        });
+        autoCompleteObj.appendTo(elem);
+
+    }
+</script>

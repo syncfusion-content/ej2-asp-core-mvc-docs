@@ -1,0 +1,26 @@
+    @(Html.EJS().TreeGrid("TreeGrid")
+            .DataSource((IEnumerable<object>)ViewBag.datasource)
+            .EditSettings(edit =>
+            {
+                edit.AllowAdding(true);
+                edit.AllowDeleting(true);
+                edit.AllowEditing(true);
+                edit.Mode(Syncfusion.EJ2.TreeGrid.EditMode.Row);
+            })
+            .Toolbar(new List<string>() { "Add", "Edit", "Update", "Cancel" })
+            .Columns(col =>
+            {
+                col.Field("TaskId").HeaderText("Task ID").IsPrimaryKey(true).Width(120)
+                    .TextAlign(TextAlign.Right).Add();
+                col.Field("TaskName").HeaderText("Task Name").Add();
+                col.Field("StartDate").HeaderText("Start Date").Width(150).Format("yMd")
+                    .EditType("datepickeredit")
+                    .TextAlign(TextAlign.Right).Add();
+                col.Field("Duration").HeaderText("Duration").Width("110").EditType("numericedit")
+                    .Edit(new { @params = new { format = "n" } })
+                    .TextAlign(TextAlign.Right).Add();
+
+            })
+           .Height(400)
+           .ChildMapping("Children")
+           .TreeColumnIndex(1).Render());

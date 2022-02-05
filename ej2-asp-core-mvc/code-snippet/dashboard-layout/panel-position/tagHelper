@@ -1,0 +1,31 @@
+<div>
+    <!--  DashboardLayout element declaration -->
+    <ejs-dashboardlayout id="dashboard_layout" columns="5" cellSpacing="@Model.cellSpacing">
+        <e-dashboardlayout-panels>
+            <e-dashboardlayout-panel row="0" col="0" content="<div class='content'>1</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel row="0" col="1" content="<div class='content'>2</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel row="0" col="2" content="<div class='content'>3</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel row="1" col="0" content="<div class='content'>4</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel row="1" col="1" content="<div class='content'>5</div>">
+            </e-dashboardlayout-panel>
+            <e-dashboardlayout-panel row="1" col="2" content="<div class='content'>6</div>">
+            </e-dashboardlayout-panel>
+        </e-dashboardlayout-panels>
+    </ejs-dashboardlayout>
+    <!-- end of dashboardlayout element -->
+</div>
+
+<style>
+    /* DashboardLayout element styles  */
+    #dashboard_layout .e-panel .e-panel-container .content {
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        line-height: 90px;
+    }
+</style>

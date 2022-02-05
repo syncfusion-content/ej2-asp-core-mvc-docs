@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2;
+<div id="container">
+            @Html.EJS().TreeMap("container").WeightValuePath("count").tooltipSettings(tooltip => tooltip.Visible(true).format('${count} : ${fruit}').LeafItemSettings(leaf => leaf.LabelPath("fruit")).Render()
+</div>
+<script>
+    function load(args)
+    { 
+        var data = [
+            { fruit:'Apple', count:5000 },
+                       { fruit:'Mango', count:3000 },
+                       { fruit:'Orange', count:2300 },
+                       { fruit:'Banana', count:500 },
+                       { fruit:'Grape', count:4300 },
+                       { fruit:'Papaya', count:1200 },
+                       { fruit:'Melon', count:4500 }
+        ];
+        args.treemap.dataSource = data;
+        args.treemap.palette=['#71B081','#5A9A77', '#498770', '#39776C', '#266665','#124F5E']; 
+    }
+</script>

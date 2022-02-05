@@ -1,0 +1,9 @@
+<div tabindex="0" class="e-card" id="basic">
+    <div class="e-card-title">To-Do List</div>
+    <div class="e-card-separator"></div>
+    <div class="e-card-content">
+        <ejs-listview id="listview" dataSource="ViewBag.dataSource" showCheckBox="true">
+            <e-listview-fieldsettings Text="todoList"></e-listview-fieldsettings>
+        </ejs-listview>
+    </div>
+</div>

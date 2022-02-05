@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2.Grids
+
+@(Html.EJS().TreeGrid("TreeGrid")
+        .Height(270)
+        .EditSettings(edit => edit.AllowAdding(true).AllowDeleting(true).AllowEditing(true))
+        .DataSource((IEnumerable<object>)ViewBag.datasource)
+        .Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").IsPrimaryKey(true).Width(110).TextAlign(TextAlign.Right).Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+            col.Field("Priority").HeaderText("Priority").Width(90).Add();
+            col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(110).Add();
+        })
+        .ChildMapping("Children").TreeColumnIndex(1).Render())
+

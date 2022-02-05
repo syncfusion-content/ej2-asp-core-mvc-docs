@@ -1,0 +1,8 @@
+@Html.EJS().TreeGrid("DefaultFunctionalities").DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
+    {
+        col.Field("TaskID").HeaderText("Player Jersey").Width(120).TextAlign(TextAlign.Right).Add();
+        col.Field("FIELD1").HeaderText("Player Name").Width(120).Add();
+        col.Field("FIELD2").HeaderText("Year").Width(100).TextAlign(TextAlign.Right).Add();
+        col.Field("FIELD3").HeaderText("Stint").Width(120).TextAlign(TextAlign.Right).Add();
+        col.Field("FIELD4").HeaderText("TMID").Width(120).TextAlign(TextAlign.Right).Add();
+    }).Height(400).ChildMapping("Children").TreeColumnIndex(1).EnableInfiniteScrolling().Render()

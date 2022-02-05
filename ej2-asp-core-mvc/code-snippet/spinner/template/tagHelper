@@ -1,0 +1,125 @@
+<div class="control-section">
+    <ejs-grid id="Grid1" dataSource="ViewBag.dataSource" allowPaging="true" created="grid1Created">
+        <e-grid-pagesettings pageCount="5"></e-grid-pagesettings>
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" width="120"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+            <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="130"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" format="C2" width="120"></e-grid-column>
+            <e-grid-column field="ShippedDate" headerText="Shipped Date" format="yMd" width="140"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+    <br />
+    <br />
+    <br />
+    <ejs-grid id="Grid2" dataSource="ViewBag.dataSource" allowPaging="true" created="grid2Created">
+        <e-grid-pagesettings pageCount="5"></e-grid-pagesettings>
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" width="120"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+            <e-grid-column field="OrderDate" headerText=" Order Date" format="yMd" width="130"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" format="C2" width="120"></e-grid-column>
+            <e-grid-column field="ShippedDate" headerText="Shipped Date" format="yMd" width="140"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>
+
+<script type="text/javascript">
+    function grid1Created() {
+        var grid1 = document.getElementById("Grid1").ej2_instances[0];
+        grid1.hideSpinner = () => true;
+        ej.popups.setSpinner({ template: '<div style="width:100%;height:100%" class="custom-rolling"><div></div></div>' });
+    }
+
+    function grid2Created() {
+        var grid2 = document.getElementById("Grid2").ej2_instances[0];
+        grid2.hideSpinner = () => true;
+    }
+</script>
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        font-family: 'Helvetica Neue','calibiri';
+        font-size: 14px;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .wrap {
+        margin: 0 auto;
+        width: 240px;
+    }
+
+    h5 {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    @@keyframes custom-rolling {
+        0% {
+            -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+
+    @@-webkit-keyframes custom-rolling {
+        0% {
+            -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+
+    .custom-rolling {
+        position: relative;
+    }
+
+        .custom-rolling div,
+        .custom-rolling div:after {
+            border: 16px solid #51CACC;
+            border-radius: 50%;
+            border-top-color: transparent;
+            height: 160px;
+            position: absolute;
+            width: 160px;
+        }
+
+        .custom-rolling div {
+            -webkit-animation: custom-rolling 1.3s linear infinite;
+            animation: custom-rolling 1.3s linear infinite;
+            top: 100px;
+            left: 100px;
+        }
+
+            .custom-rolling div:after {
+                -ms-transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+
+    .custom-rolling {
+        -webkit-transform: translate(-31px, -31px) scale(0.31) translate(31px, 31px);
+        height: 62px !important;
+        transform: translate(-31px, -31px) scale(0.31) translate(31px, 31px);
+        width: 62px !important;
+    }
+</style>

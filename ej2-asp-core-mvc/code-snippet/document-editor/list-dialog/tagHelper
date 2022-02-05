@@ -1,0 +1,15 @@
+<ejs-button id="dialog">Dialog</ejs-button>
+<div id="documenteditor" >
+<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableListDialog=true enableSfdtExport=true id="container"></ejs-documenteditor>
+</div>
+<script>
+    var documenteditor;    
+    document.addEventListener('DOMContentLoaded', function () {        
+        documenteditor =  document.getElementById("container").ej2_instances[0];        
+        var button = document.getElementById('dialog');
+        button.addEventListener('click', function () {
+            // To open List Dialog
+            documenteditor.showDialog('List');
+        });
+    });
+</script>

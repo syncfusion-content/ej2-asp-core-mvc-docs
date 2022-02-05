@@ -1,0 +1,27 @@
+@Html.EJS().Button("print").Content("Print").Render()
+<div id="documenteditor">
+    @Html.EJS().DocumentEditor("DocumentEditor1").IsReadOnly(false).EnableEditor(true).EnableSelection(true).EnableSfdtExport(true).EnablePrint(true).Render()
+    @Html.EJS().DocumentEditor("DocumentEditor2").IsReadOnly(false).EnableEditor(true).EnableSelection(true).EnableSfdtExport(true).EnablePrint(true).Render()
+</div>
+
+
+<script>
+    var documenteditor1;
+    var documenteditor2;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor1 = document.getElementById('DocumentEditor1').ej2_instances[0];
+        documenteditor2 = document.getElementById('DocumentEditor2').ej2_instances[0];
+        documenteditor1.resize();
+        documenteditor2.resize();
+    });
+    document.getElementById('print').addEventListener('click', function () {
+
+        var sfdtData = documenteditor1.serialize();
+        documenteditor2.open(sfdtData);
+        //Set A5 paper size
+        documenteditor2.selection.sectionFormat.pageWidth = 419.55;
+        documenteditor2.selection.sectionFormat.pageHeight = 595.30;
+        documenteditor2.print();
+    });
+
+</script>

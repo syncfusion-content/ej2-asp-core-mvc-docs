@@ -1,0 +1,17 @@
+@Html.EJS().Button("export").Content("Export").Render()
+<div id="documenteditor">
+    @Html.EJS().DocumentEditor("container").EnableSfdtExport(true).EnableWordExport(true).EnableTextExport(true).Render()
+</div>
+
+<script>
+    var documenteditor;
+    documenteditor = documenteditorElement.ej2_instances[0];
+    documenteditor.resize();
+    documenteditor.open(sfdt);
+
+    document.getElementById('export').addEventListener('click', function () {
+        documenteditor.saveAsBlob('Docx').then(function (exportedDocument) {
+            // The blob can be processed further
+        });
+    });
+</script>

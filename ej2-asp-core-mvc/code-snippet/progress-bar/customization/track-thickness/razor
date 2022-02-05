@@ -1,0 +1,6 @@
+@(Html.EJS().ProgressBar("percentage").Type(Syncfusion.EJ2.ProgressBar.ProgressType.Linear)
+            .Value(100).ShowProgressValue(true).TrackColor("#F8C7D8")
+            .Width("90%").Height("60").CornerRadius(Syncfusion.EJ2.ProgressBar.CornerType.Round)
+            .ProgressColor("#2BB20E").TrackThickness(24).ProgressThickness(24).Minimum(0).Maximum(100)
+            .Animation(an => an.Enable(true).Delay(0).Duration(2000))
+            .Render())

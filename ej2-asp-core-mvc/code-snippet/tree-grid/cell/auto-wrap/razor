@@ -1,0 +1,13 @@
+@(Html.EJS().TreeGrid("TreeGrid")
+        .Height(300)
+        .AllowTextWrap(true)
+        .TextWrapSettings(text => { text.WrapMode(Syncfusion.EJ2.TreeGrid.WrapMode.Content); })
+        .DataSource((IEnumerable<object>)ViewBag.datasource)
+        .Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(TextAlign.Right).Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+            col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(110).Add();
+            col.Field("Progress").HeaderText("Progress").TextAlign(TextAlign.Right).Width(90).Add();
+        })
+        .ChildMapping("Children").TreeColumnIndex(1).Render())

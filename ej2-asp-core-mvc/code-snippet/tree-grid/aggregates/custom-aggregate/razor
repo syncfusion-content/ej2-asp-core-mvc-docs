@@ -1,0 +1,35 @@
+@(Html.EJS().TreeGrid("TreeGrid")
+        .Height(260)
+        .Width("auto")
+        .DataSource((IEnumerable<object>)ViewBag.datasource)
+        .Aggregates(agg =>
+        {
+            agg.Columns(new List<Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn>() {
+                new Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn() {
+                    Type = "Custom", CustomAggregate = "customAggregateFn",
+                    FooterTemplate = "Count of Frozen seafood : ${Custom}" , ColumnName = "category"
+                }
+            }).Add();
+        })
+        .Columns(col =>
+        {
+          col.Field("category").HeaderText("Category").Width(130).Add();
+          col.Field("units").HeaderText("Total Units").Width(195).Add();
+          col.Field("unitPrice").HeaderText("Unit Price($)").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(130).Add();
+          col.Field("price").HeaderText("Price($)").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(125).Add();
+
+        }).ChildMapping("subTasks").TreeColumnIndex(1).Render())
+
+<script>
+    function customAggregateFn(data) {
+        var sampleData = ej.base.getValue('result', data);
+        var countLength; countLength = 0;
+        sampleData.filter(function (item) {
+            var data = ej.base.getValue('category', item);
+            if (data === 'Frozen seafood') {
+                countLength++;
+            }
+        });
+        return countLength;
+    };
+</script>

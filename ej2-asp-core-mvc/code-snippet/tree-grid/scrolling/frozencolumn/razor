@@ -1,0 +1,11 @@
+@Html.EJS().TreeGrid("DefaultFunctionalities").DataSource((IEnumerable<object>)ViewBag.datasource).AllowSelection(false).Columns(col =>
+    {
+        col.Field("TaskId").HeaderText("Task ID").Width(100).TextAlign(TextAlign.Right).Add();
+        col.Field("TaskName").HeaderText("Task Name").Width(230).Add();
+        col.Field("StartDate").HeaderText("Start Date").Width(150).TextAlign(TextAlign.Right).Format("yMd").Add();
+        col.Field("EndDate").HeaderText("End Date").Width(150).TextAlign(TextAlign.Right).Format("yMd").Add();
+        col.Field("Duration").HeaderText("Duration").Width(120).TextAlign(TextAlign.Right).Add();
+        col.Field("Progress").HeaderText("Progress").Width(120).TextAlign(TextAlign.Right).Add();
+        col.Field("Priority").HeaderText("Priority").Width(120).Add();
+        col.Field("Approved").HeaderText("Approved").TextAlign(TextAlign.Left).Type("boolean").Width(110).Add();
+    }).Height(410).ChildMapping("Children").TreeColumnIndex(1).FrozenColumns(2).FrozenRows(3).Render()

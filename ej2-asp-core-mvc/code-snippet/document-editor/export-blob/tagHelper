@@ -1,0 +1,19 @@
+
+
+<ejs-button id="export">Export</ejs-button>
+<div id="documenteditor">
+<ejs-documenteditor enableSfdtExport=true enableWordExport=true exnableTextExport=true id="container"></ejs-documenteditor>    
+</div>
+
+<script>
+    var documenteditor;
+    documenteditor = documenteditorElement.ej2_instances[0];
+    documenteditor.resize();
+    documenteditor.open(sfdt);
+
+    document.getElementById('export').addEventListener('click', function () {
+        documenteditor.saveAsBlob('Docx').then(function (exportedDocument) {
+            // The blob can be processed further
+        });
+    });
+</script>

@@ -1,0 +1,44 @@
+@Html.EJS().Button("replace_all").Content("Replace All").Render()
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnableSelection(true).EnableSearch(true).Render()
+</div>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        var sfdt = {
+            "sections": [
+                {
+                    "blocks": [
+                        {
+                            "inlines": [
+                                {
+                                    "characterFormat": {
+                                        "bold": true,
+                                        "italic": true
+                                    },
+                                    "text": "Adventure Works Cycles, the fictitious company on which the AdventureWorks sample databases are based, is a large, multinational manufacturing company. The company manufactures and sells metal and composite bicycles to North American, European and Asian commercial markets. While its base operation is located in Bothell, Washington with 290 employees, several regional sales teams are located throughout their market base."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        };
+        documenteditor.open(JSON.stringify(sfdt));
+
+        document.getElementById('replace_all').addEventListener('click', function () {
+            var textToFind = document.getElementById('find_text').value;
+            var textToReplace = document.getElementById('replace_text').value;
+            if (textToFind !== '') {
+                // Find all the occurences of given text
+                documenteditor.searchModule.findAll(textToFind);
+                if (documenteditor.searchModule.searchResults.length > 0) {
+                    // Replace all the occurences of given text
+                    documenteditor.searchModule.searchResults.replaceAll(textToReplace);
+                }
+            }
+        });
+    });
+</script>

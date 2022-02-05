@@ -1,0 +1,29 @@
+<ejs-treegrid id="TreeGrid" dataSource="ViewBag.dataSource" dataBound="dataBound" allowPaging="true" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-pagesettings pageSize="7"  pageSizes="true"></e-treegrid-pagesettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="100"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="190"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" textAlign="Right" format="yMd" type="date" width="120"></e-treegrid-column>
+        <e-treegrid-column field="EndDate" headerText="End Date" textAlign="Right" format="yMd" type="date" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="110"></e-treegrid-column>
+        <e-treegrid-column field="Progress" headerText="Progress" textAlign="Right" width="110"></e-treegrid-column>
+        <e-treegrid-column field="Priority" headerText="Priority"  width="110"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    var initialLoad = true;
+    function dataBound(args) {
+        if (initialLoad) {
+            initialLoad = false;
+            var pager = document.getElementsByClassName('e-gridpager');
+            var topElement;
+            if (this.toolbar) {
+                topElement = document.getElementsByClassName('e-toolbar');
+            } else {
+                topElement = document.getElementsByClassName('e-gridheader');
+            }
+            topElement[0].before(pager[0]);
+        }
+    };
+</script>

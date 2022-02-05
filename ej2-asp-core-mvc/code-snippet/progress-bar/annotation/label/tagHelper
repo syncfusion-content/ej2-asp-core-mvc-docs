@@ -1,0 +1,3 @@
+<ejs-progressbar id="container" minimum="0" maximum="100" type='Linear' value=50 
+        showProgressValue="true" trackThickness=24 cornerRadius="Round" progressThickness=24>
+</ejs-progressbar>

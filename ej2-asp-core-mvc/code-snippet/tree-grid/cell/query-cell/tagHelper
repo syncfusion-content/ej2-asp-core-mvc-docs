@@ -1,0 +1,19 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" queryCellInfo="customizeCell" height="300" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="100"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="190"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="110"></e-treegrid-column>
+        <e-treegrid-column field="Progress" headerText="Progress" textAlign="Right" width="110"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function customizeCell(QueryCellInfoEventArgs) {
+        var args = QueryCellInfoEventArgs;
+        if (args.column.field === 'Progress' && args.cell.innerHTML > 90 && args.cell.innerHTML <= 100) {
+            args.cell.setAttribute('style', 'background-color:#336c12;color:white;');
+        } else if (+args.cell.innerHTML > 20 && args.column.field === 'Progress') {
+            args.cell.setAttribute('style', 'background-color:#7b2b1d;color:white;');
+        }
+    }
+</script>

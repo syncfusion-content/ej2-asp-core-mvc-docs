@@ -1,0 +1,49 @@
+@{
+
+    List<object> toolbar = new List<object>();
+    toolbar.Add(new { text = "Copy", tooltipText = "Copy", prefixIcon = "e-copy", id = "copy" });
+    toolbar.Add(new { text = "Copy With Header", tooltipText = "Copy With Header", prefixIcon = "e-copy", id = "copyHeader" });
+}
+
+@Html.EJS().DropDownList("SearchMode").Width("50%").DataSource((IEnumerable<object>)ViewBag.dropdata).Value("Parent").Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "id", Value = "mode" }).Change("onChange").Render()
+
+@(Html.EJS().TreeGrid("TreeGrid")
+            .DataSource((IEnumerable<object>)ViewBag.datasource)
+            .AllowPaging()
+            .Toolbar(toolbar)
+            .ToolbarClick("toolbarClick")
+            .SelectionSettings(sel =>
+            {
+               sel.Type(SelectionType.Multiple);
+            })
+            .PageSettings(p => p.PageSize(10))
+            .AllowSelection()
+            .Columns(col =>
+            {
+               col.Field("TaskId").HeaderText("Task ID").Width(80).TextAlign(TextAlign.Right).Add();
+               col.Field("TaskName").HeaderText("Task Name").Width(200).Add();
+               col.Field("StartDate").HeaderText("Start Date").Format("yMd").TextAlign(TextAlign.Right).Width(100).Add();
+               col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(90).Add();
+               col.Field("Progress").HeaderText("Progress").TextAlign(TextAlign.Right).Width(90).Add();
+            }).ChildMapping("Children").TreeColumnIndex(1).Render())
+
+<script>
+        function toolbarClick(args) {
+            if (this.getSelectedRecords().length > 0) {
+                var withHeader = false;
+                if (args.item.id === 'copyHeader') {
+                    withHeader = true;
+                }
+                this.copy(withHeader);
+            } else {
+                var dialogObj = document.getElementById('alert_dialog').ej2_instances[0];
+                dialogObj.show();
+            }
+        }
+        function onChange(e) {
+            var mode = e.value;
+            var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+            treegrid.copyHierarchyMode = mode;
+
+        }       
+</script>

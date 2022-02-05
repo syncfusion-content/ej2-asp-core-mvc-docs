@@ -1,0 +1,28 @@
+@{ 
+   var colorMaps = new[]{
+               new { from=500, to=2500, color='orange' },
+			   new { from=3000, to=4000, color='green' }
+               new { color='violet' }
+            };
+}
+@using Syncfusion.EJ2;
+<div id="container">
+    <ejs-treemap id="container" load="load" height="350px" weightValuePath="count" colorValuePath="count">
+            <e-treemap-leafitemsettings labelPath="fruit" colorMapping="colorMaps"></e-treemap-leafitemsettings>
+			 <e-treemap-legendsettings visible= "true" position="@Syncfusion.EJ2.TreeMap.LegendPosition.Top" ></e-treemap-legendsettings>
+    </ejs-treemap>
+</div>         
+<script>
+    function load(args)
+    { 
+        var data = [{ fruit:'Apple', count:5000 },
+                       { fruit:'Mango', count:3000 },
+                       { fruit:'Orange', count:2300 },
+                       { fruit:'Banana', count:500 },
+                       { fruit:'Grape', count:4300 },
+                       { fruit:'Papaya', count:1200 },
+                       { fruit:'Melon', count:4500 }
+        ];
+        args.treemap.dataSource = data;
+    }
+</script>

@@ -1,0 +1,16 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" allowResizing="true" dataBound="ondataBound" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="60"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function ondataBound() {
+        var treegridObj = document.getElementById("TreeGrid").ej2_instances[0];
+        treegridObj.autoFitColumns(["TaskName"]);
+    }
+</script>

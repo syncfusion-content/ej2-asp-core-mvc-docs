@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+@Html.EJ().Tooltip("Tooltip").Content("Tooltip content").ContentTemplate(@<span id='target'>Show Tooltip</span>).Render()

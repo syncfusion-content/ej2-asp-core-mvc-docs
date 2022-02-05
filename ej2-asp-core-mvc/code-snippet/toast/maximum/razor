@@ -1,0 +1,37 @@
+<div class="control-section" style="width:400px;margin:0 auto;">
+    @Html.EJS().Toast("element").Title("Sample Toast Title").Position(p => p.X("Center")).Content("Sample Toast content").BeforeOpen("onBeforeOpen").Render()
+    @Html.EJS().Button("showToast").Content("Show Toast").CssClass("e-btn").Render()
+</div>
+<script type="text/javascript">
+    var toasts = [
+        { title: 'Warning !', content: 'There was a problem with your network connection.' },
+        { title: 'Success !', content: 'Your message has been sent successfully.' },
+        { title: 'Error !', content: 'A problem has been occurred while submitting your data.' },
+        { title: 'Information !', content: 'Please read the comments carefully.' }
+    ];
+    var maxCount = 3;
+    var toastFlag = 0;
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show(toasts[toastFlag]);
+            ++toastFlag;
+        }, 1000);
+    function onBeforeOpen(e) {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        if (maxCount === toastObj.element.childElementCount) {
+            e.cancel = true;
+        } else {
+            e.cancel = false;
+        }
+    }
+    document.getElementById("showToast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show(toasts[toastFlag]);
+        ++toastFlag;
+        if (toastFlag === (toasts.length)) {
+            toastFlag = 0;
+        }
+    });
+</script>

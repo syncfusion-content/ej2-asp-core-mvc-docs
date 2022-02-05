@@ -1,0 +1,61 @@
+@using Syncfusion.EJ2.Grids
+
+@(Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.datasource)
+      .AllowFiltering()
+      .AllowPaging()
+      .PageSettings(page => page.PageSize(7))
+      .FilterSettings(filter =>
+       {
+          filter.Type(Syncfusion.EJ2.TreeGrid.FilterType.Menu);
+       })
+       .Columns(col =>
+        {
+          col.Field("TaskId").HeaderText("Task ID").Width(90).TextAlign(TextAlign.Right).Add();
+          col.Field("TaskName").HeaderText("Task Name").Width(180).Add();
+          col.Field("Duration").HeaderText("Duration").Width(80).TextAlign(TextAlign.Right).Add();
+
+        }).Height(220).ChildMapping("Children").Toolbar(new List<string>() { "Print" })
+          .Locale("ar-AE").EnableRtl(true).TreeColumnIndex(1).Render()
+)
+
+<script>
+    ej.base.L10n.load({
+        'ar-AE': {
+            'treegrid': {
+                "EmptyRecord": "لا سجلات لعرضها",
+                "Print": "طباعة",
+                "FilterButton": "منقي",
+                "ClearButton": "واضح",
+                "StartsWith": "ابدا ب",
+                "EndsWith": "ينتهي مع",
+                "Contains": "يحتوي على",
+                "Equal": "مساو",
+                "NotEqual": "غير متساوي",
+                "LessThan": "أقل من",
+                "LessThanOrEqual": "اصغر من او يساوي",
+                "GreaterThan": "أكثر من",
+                "GreaterThanOrEqual": "أكبر من أو يساوي",
+                "ChooseDate": "اختر تاريخا",
+                "EnterValue": "أدخل القيمة",
+                "FilterMenu": "منقي"
+            },
+            'pager': {
+                'currentPageInfo': '{0} من {1} صفحة',
+                'totalItemsInfo': '({0} العناصر)',
+                'firstPageTooltip': 'انتقل إلى الصفحة الأولى',
+                'lastPageTooltip': 'انتقل إلى الصفحة الأخيرة',
+                'nextPageTooltip': 'انتقل إلى الصفحة التالية',
+                'previousPageTooltip': 'انتقل إلى الصفحة السابقة',
+                'nextPagerTooltip': 'الذهاب إلى بيجر المقبل',
+                'previousPagerTooltip': 'الذهاب إلى بيجر السابقة'
+            },
+            "dropdowns": {
+                "noRecordsTemplate": "لا توجد سجلات"
+            },
+            "datepicker": {
+                "placeholder": "اختر تاريخا",
+                "today": "اليوم"
+            }
+        }
+    });
+</script>

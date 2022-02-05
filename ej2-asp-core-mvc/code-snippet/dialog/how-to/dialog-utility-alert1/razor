@@ -1,0 +1,24 @@
+<div style="height:400px;">
+    @Html.EJS().Button("dialogButton").Content("Open Alert Dialog").Render()
+</div>
+
+<script>
+    // To Render dialog utility on button click
+    document.getElementById('dialogButton').onclick = function () {
+
+        // Initialize and render alert dialog with options
+
+ej.popups.DialogUtility.alert({
+        title: 'Alert Dialog',
+        content: "This is an Alert Dialog!",
+        okButton: {  text: 'OK', click: okClick },
+        showCloseIcon: true,
+        closeOnEscape: true,
+        animationSettings: { effect: 'Zoom' }
+    });
+};
+
+    function okClick() {
+        alert('You clicked OK button');
+    }
+</script>

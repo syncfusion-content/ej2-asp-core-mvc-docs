@@ -1,0 +1,11 @@
+
+<div style="height:400px;">
+    @Html.EJS().Button("dialogButton").Content("Open Alert Dialog").Render()
+</div>
+<script>
+    // To Render dialog utility on button click
+    document.getElementById('dialogButton').onclick = function () {
+        // Initialize and render alert dialog
+        ej.popups.DialogUtility.alert('This is an Alert Dialog!');
+    };
+</script>
