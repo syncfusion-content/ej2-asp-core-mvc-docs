@@ -1,0 +1,28 @@
+
+<div id='container' style="height:400px;">
+    @Html.EJS().Button("targetButton").Content("Open Dialog").Render()
+    @Html.EJS().Dialog("dialog").Header("Feedback").ShowCloseIcon(true).Target("#container").Width("400px").Buttons(btn=> {
+    btn.Click("dlgButtonClick").ButtonModel(ViewBag.DialogButtons).Add();
+}).Height("300px").ContentTemplate(@<form>
+    <div class='form-group'>
+        <label for='email'>Email:</label><input type='email' class='form-control' id='email'>
+    </div><div class='form-group'>
+    </div><div class='form-group'>
+        <label for='comment'>Comments:</label><textarea style='resize: none;' class='form-control' rows='5' id='comment'></textarea>
+    </div>
+</form>).Render()
+</div>
+
+
+<script>
+    window.onload = function () {
+        document.getElementById('targetButton').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            dialog.show();
+        }
+    }
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+</script>

@@ -1,0 +1,25 @@
+@Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnableSelection(true).EnableWordExport(true).enableSfdtExport(true).Render()
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        documentEditor.keyDown = function (args) {
+            var keyCode = args.event.which || args.event.keyCode;
+
+            var isCtrlKey = (args.event.ctrlKey || args.event.metaKey) ? true : ((keyCode === 17) ? true : false);
+
+            var isAltKey = args.event.altKey ? args.event.altKey : ((keyCode === 18) ? true : false);
+
+            // 83 is the character code for 'S'
+            if (isCtrlKey && !isAltKey && keyCode === 83) {
+                //To prevent default save operation, set the isHandled property to true
+                args.isHandled = true;
+                documentEditor.save('sample', 'Docx');
+                args.event.preventDefault();
+            } else if (isCtrlKey && isAltKey && keyCode === 83) {
+                documentEditor.save('sample', 'Sfdt');
+            }
+        }
+    });
+</script>

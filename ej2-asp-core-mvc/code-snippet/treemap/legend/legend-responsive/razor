@@ -1,0 +1,22 @@
+@using Syncfusion.EJ2;
+<div id="container">
+            @Html.EJS().TreeMap("container").Load("load")..WeightValuePath("count").LegendSettings(legend => legend.Visible(true).position('Top')).LeafItemSettings(leaf => leaf.LabelPath("fruit")).Render()
+</div>
+<script>
+    function load(args)
+    { 
+        var data = [
+            { fruit:'Apple', count:5000 },
+                       { fruit:'Grape', count:3000 },
+                       { fruit:'Apple', count:2300 },
+                       { fruit:'Banana', count:500 },
+                       { fruit:'Grape', count:4300 },
+                       { fruit:'Papaya', count:1200 }
+        ];
+        args.treemap.dataSource = data;
+        
+        args.treemap.leafItemSettings.colorMapping = color;
+        var size = {  width: 700, height: 500 };
+        args.treemap.legendSettings.size = size;
+    }
+</script>

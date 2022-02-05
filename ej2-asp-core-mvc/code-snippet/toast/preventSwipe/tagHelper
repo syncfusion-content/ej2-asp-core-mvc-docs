@@ -1,0 +1,21 @@
+<div class="control-section" style="width:400px;margin:0 auto;">
+    <ejs-toast id="element" title="Matt sent you a friend request" content="You have a new friend request yet to accept" beforeClose="beforeClose"></ejs-toast>
+    <ejs-button id="button" content="Show Toast" cssClass="e-btn"></ejs-button>
+</div>
+<script type="text/javascript">
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show();
+        }, 1000);
+    document.getElementById("button").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show();
+    });
+    function beforeClose(args: ToastBeforeCloseArgs){
+        if (args.type === "swipe") {
+            args.cancel = true;
+        }
+    }
+</script>

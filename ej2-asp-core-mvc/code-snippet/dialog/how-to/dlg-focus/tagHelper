@@ -1,0 +1,34 @@
+
+<div id='container' style="height:400px;">
+    <ejs-button id="targetButton" content="Open Dialog"></ejs-button>
+    <ejs-dialog id="dialog" header="Sign In" open="onOpen" target="#container" width="300px">
+        <e-content-template>
+            <div class='wrap'>
+                <div class='form-group'><label for='email'>Email:</label>
+                    <input type='email' class='form-control' id='email'>
+                </div>
+                <div class='form-group'>
+                    <label for='comment'>Password:</label>
+                    <input type='password' class='form-control' id='password'>
+                </div>
+            </div>
+        </e-content-template>
+        <e-dialog-buttons>
+            <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons1" click="dlgButtonClick"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons2" click="dlgButtonClick"></e-dialog-dialogbutton>
+        </e-dialog-buttons>
+    </ejs-dialog>
+</div>
+<script>
+    document.getElementById('targetButton').onclick = function () {
+        var dialog = document.getElementById("dialog").ej2_instances[0];
+        dialog.show();
+    }
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+    function onOpen() {
+        args.preventFocus = true;
+    }
+</script>

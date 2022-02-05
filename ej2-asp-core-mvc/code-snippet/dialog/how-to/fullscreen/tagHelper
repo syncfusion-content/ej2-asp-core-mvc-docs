@@ -1,0 +1,35 @@
+<div id='container' >
+    <ejs-button id="targetButton" content="Open Dialog"></ejs-button>
+    <ejs-dialog id="dialog" header="Dialog" content="This is a Dialog with fullscreen display." target="#container" width="250px">
+        <e-dialog-buttons>
+            <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons1" click="dlgButtonClick"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons2" click="dlgButtonClick"></e-dialog-dialogbutton>
+        </e-dialog-buttons>
+    </ejs-dialog>
+</div>
+
+<script>
+    document.getElementById('targetButton').onclick = function () {
+        var dialog = document.getElementById("dialog").ej2_instances[0];
+        dialog.show(true);
+    }
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+</script>
+
+<style>
+
+    #container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        padding: 20px;
+        margin: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        top: 0px;
+    }
+</style>

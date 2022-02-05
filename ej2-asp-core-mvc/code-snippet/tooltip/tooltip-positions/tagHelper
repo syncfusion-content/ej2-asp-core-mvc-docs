@@ -1,0 +1,77 @@
+<ejs-tooltip id="Tooltip" position="TopCenter" content="Tooltip content">
+    <e-content-template>
+        <div id='container'> <div id="content" title="Tooltip content"> <span>Show tooltip</span> <select id="positions" class="form-control" onchange="onChange(this)"> <option value="TopLeft">Top Left</option> <option value="TopCenter" selected="">Top Center</option> <option value="TopRight">Top Right</option> <option value="BottomLeft">Bottom Left</option> <option value="BottomCenter">Bottom Center</option> <option value="BottomRight">Bottom Right</option> <option value="LeftTop">Left Top</option> <option value="LeftCenter">Left Center</option> <option value="LeftBottom">Left Bottom</option> <option value="RightTop">Right Top</option> <option value="RightCenter">Right Center</option> <option value="RightBottom">Right Bottom</option> </select></div> </div>
+    </e-content-template>
+</ejs-tooltip>
+
+<style>
+
+    #target {
+        background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        margin: 70px auto;
+        padding: 20px;
+        width: 200px;
+    }
+
+
+    /* csslint ignore:start */
+
+    .customtip.e-tooltip-wrap {
+        padding: 4px;
+    }
+
+        .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom {
+            height: 20px;
+            width: 12px;
+        }
+
+        .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
+            height: 20px;
+            width: 12px;
+        }
+
+        .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-left {
+            height: 12px;
+            width: 20px;
+        }
+
+        .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-right {
+            height: 12px;
+            width: 20px;
+        }
+
+        .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 20px solid #616161;
+        }
+
+        .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
+            border-bottom: 20px solid #616161;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+        }
+
+        .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-left {
+            border-bottom: 6px solid transparent;
+            border-right: 20px solid #616161;
+            border-top: 6px solid transparent;
+        }
+
+        .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
+            border-bottom: 6px solid transparent;
+            border-left: 20px solid #616161;
+            border-top: 6px solid transparent;
+        }
+</style>
+<script>
+    var tooltip;
+    window.onload = function () {
+        tooltip = document.getElementById('Tooltip').ej2_instances[0];
+    }
+    function onChange(args) {
+        tooltip.position = args.value;
+    }
+</script>

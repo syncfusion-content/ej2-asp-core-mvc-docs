@@ -1,0 +1,40 @@
+<input type="file" id="file_upload" style="position:fixed; left:-100em" /> 
+@Html.EJS().Button("import").Content("Import").Render()
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditor("container").Render()
+</div>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        var documenteditorElement = document.getElementById("container");        
+        documenteditor = documenteditorElement.ej2_instances[0];
+        documenteditor.resize();
+        document.getElementById('file_upload').setAttribute('accept', '.dotx,.docx,.docm,.dot,.doc,.rtf,.txt,.xml,.sfdt');
+
+        document.getElementById('file_upload').addEventListener("change", function (e) {
+            if (e.target.files[0]) {
+                var file = e.target.files[0];
+                if (file.name.substr(file.name.lastIndexOf('.')) !== '.sfdt') {
+                    loadFile(file);
+                }
+            }
+        });
+
+        function loadFile(file) {
+            var ajax = new XMLHttpRequest();
+            ajax.open('POST', 'https://localhost:4000/api/documenteditor/Import', true);
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState === 4) {
+                    if (ajax.status === 200 || ajax.status === 304) {
+                        // open SFDT text in document editor
+                        documenteditor.open(ajax.responseText);
+                    }
+                }
+            }
+            var formData = new FormData();
+            formData.append('files', file);
+            ajax.send(formData);
+        }
+    }); 
+</script>

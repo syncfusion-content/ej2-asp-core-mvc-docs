@@ -1,0 +1,42 @@
+<input type="file" id="insertImageButton" style="position:fixed; left:-110em" accept=".jpg,.jpeg,.png,.bmp" /> @Html.EJS().Button("insert_picture").Content("Image").Render()
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnableSelection(true).EnableImageResizer(true).EnableEditorHistory(true).Render()
+</div>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        document.getElementById('insert-picture').addEventListener('click', function () {
+            var pictureUpload = document.getElementById("insertImageButton");
+            pictureUpload.value = '';
+            pictureUpload.click();
+        });
+        document.getElementById('insertImageButton').addEventListener('change', onInsertImage);
+        function onInsertImage(args) {
+            if (navigator.userAgent.match('Chrome') || navigator.userAgent.match('Firefox') || navigator.userAgent.match('Edge') || navigator.userAgent.match('MSIE') || navigator.userAgent.match('.NET')) {
+                if (args.target.files[0]) {
+                    var path = args.target.files[0];
+                    var reader = new FileReader();
+                    reader.onload = function (frEvent) {
+                        var base64String = frEvent.target.result;
+                        var image = document.createElement('img');
+                        image.addEventListener('load', function () {
+                            documenteditor.editor.insertImage(base64String, this.width, this.height);
+                        })
+                        image.src = base64String;
+                    };
+                    reader.readAsDataURL(path);
+                }
+                //Safari does not Support FileReader Class
+            } else {
+                var image = document.createElement('img');
+                image.addEventListener('load', function () {
+                    documenteditor.editor.insertImage(args.target.value);
+                })
+                image.src = args.target.value;
+            }
+        }
+
+    });
+</script>

@@ -1,0 +1,27 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" height="220" childMapping="Children" treeColumnIndex="1" toolbar="@(new List<string>() { "ExcelExport"})" allowExcelExport="true" allowPaging="true" toolbarClick="toolbarClick" excelExportComplete="excelExportComplete">
+    <e-treegrid-pagesettings pageSize="7"></e-treegrid-pagesettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="180"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" textAlign="Right" format="yMd" type="date" width="90"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="80" visible="false"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function toolbarClick(args) {
+        if (args['item'].text === 'Excel Export') {
+            var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+            var cols = treegrid.grid.columns;
+            cols[2].visible = false;
+            cols[3].visible = true;
+            treegrid.excelExport();
+        }
+    }
+    function excelExportComplete(args) {
+        var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+        var cols = treegrid.grid.columns;
+        cols[3].visible = false;
+        cols[2].visible = true;
+    }
+</script>

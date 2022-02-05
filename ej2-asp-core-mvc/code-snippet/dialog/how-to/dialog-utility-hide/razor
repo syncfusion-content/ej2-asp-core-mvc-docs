@@ -1,0 +1,28 @@
+<div style="height:400px;">
+    @Html.EJS().Button("dialogButton").Content("Open Confirm Dialog").Render()
+</div>
+<script>
+  var DialogObj;
+    // To Render dialog utility on button click
+    document.getElementById('dialogButton').onclick = function () {
+
+// Initialize and render confirm dialog with custom options
+	DialogObj = ej.popups.DialogUtility.confirm({
+        title: ' Confirmation Dialog',
+        content: "This is a Confirmation Dialog!",
+        okButton: {  text: 'OK', click: okClick },
+        cancelButton: {  text: 'Cancel', click: cancelClick },
+        showCloseIcon: true,
+        closeOnEscape: true,
+		animationSettings: { effect: 'Zoom' }
+    });
+	function okClick(){
+		alert('You clicked OK button');
+	}
+
+    function cancelClick() {
+        //Hide the dialog
+        DialogObj.hide();
+    }
+};
+</script>

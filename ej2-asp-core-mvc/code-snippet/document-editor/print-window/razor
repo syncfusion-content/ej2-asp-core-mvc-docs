@@ -1,0 +1,15 @@
+
+    @Html.EJS().Button("print").Content("Print").Render()
+    <div id="documenteditor">
+        @Html.EJS().DocumentEditor("container").EnablePrint(true).Render()
+    </div>
+
+    <script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        var documenteditorElement = document.getElementById("container");
+        documenteditor = documenteditorElement.ej2_instances[0];
+        documenteditor.print(window);
+
+    }); 
+</script>

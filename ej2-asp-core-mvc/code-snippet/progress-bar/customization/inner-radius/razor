@@ -1,0 +1,6 @@
+@(Html.EJS().ProgressBar("container").Type(Syncfusion.EJ2.ProgressBar.ProgressType.Circular).Value(60)
+    .Width("160px").Height("160px").EnableRtl(false)
+    .TrackThickness(80).ProgressThickness(10).Radius("100%").InnerRadius("190%")
+    .ProgressColor("white").CornerRadius(Syncfusion.EJ2.ProgressBar.CornerType.Round)
+    .Minimum(0).Maximum(100)
+    .Render())

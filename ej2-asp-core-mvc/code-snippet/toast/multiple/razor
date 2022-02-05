@@ -1,0 +1,30 @@
+<div class="control-section" style="width:400px;margin:0 auto;">
+    @Html.EJS().Toast("element").Position(p => p.X("Right").Y("Bottom")).Title("Warning !").Content("There was a problem with your network connection.").Click("onClick").Render()
+    @Html.EJS().Toast("element1").Position(p => p.X("Left").Y("Bottom")).Title("Success !").Content("Your message has been sent successfully.").Click("onClick").Render()
+    <div class="row">
+        @Html.EJS().Button("show_toast").Content("Show Right Position Toast").CssClass("e-btn").Render()
+        @Html.EJS().Button("show_toast1").Content("Show Left Position Toast").CssClass("e-btn").Render()
+    </div> 
+</div>
+<script type="text/javascript">
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show();
+            var toastObj = document.getElementById('element1').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show();
+        }, 200);
+    document.getElementById("show_toast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show();
+    });
+    document.getElementById("show_toast1").addEventListener('click', function () {
+        var toastObj = document.getElementById('element1').ej2_instances[0];
+        toastObj.show();
+    });
+    function onClick(e) {
+        e.clickToClose = true;
+    }
+</script>

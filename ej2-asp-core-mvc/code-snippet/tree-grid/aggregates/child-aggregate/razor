@@ -1,0 +1,24 @@
+@(Html.EJS().TreeGrid("TreeGrid")
+      .Height(260)
+      .DataSource((IEnumerable<object>)ViewBag.datasource)
+      .Aggregates(agg =>
+       {
+          agg.Columns(new List<Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn>() {
+                new Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn() {
+                  Field = "units", Type = "Max",
+                  FooterTemplate = "Maximum: ${Max}" , ColumnName = "units"
+          },
+          new Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn() {
+             Field = "price", Type = "Min",
+             FooterTemplate = "Minimum: ${Min}"
+          } 
+        }).ShowChildSummary(true).Add();
+      })
+      .Columns(col =>
+       {
+        col.Field("orderID").HeaderText("Order ID").Width(130).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("orderName").HeaderText("Order Name").Width(195).Add();
+        col.Field("units").HeaderText("Units").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(130).Add();
+        col.Field("price").HeaderText("Price").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(125).Add();
+
+       }).ChildMapping("subTasks").TreeColumnIndex(1).Render())

@@ -1,0 +1,56 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" height="220" childMapping="subTasks" locale="de-DE" allowFiltering="true" allowPaging="true" toolbar="@(new List<string>() {"Print"})" treeColumnIndex="1">
+    <e-treegrid-pagesettings pageSize="7"></e-treegrid-pagesettings>
+    <e-treegrid-filtersettings type="Menu"></e-treegrid-filtersettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="orderID" headerText="Order ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="orderName" headerText="Order Name" width="180"></e-treegrid-column>
+        <e-treegrid-column field="price" headerText="Price" textAlign="Right" format="C2" type="number" width="80"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    ej.base.setCurrencyCode('EUR');
+    ej.base.L10n.load({
+        'de-DE': {
+            'treegrid': {
+                'EmptyRecord': 'Keine Aufzeichnungen angezeigt',
+                'Expand All': 'Alle erweitern',
+                'Collapse All': 'Alles einklappen',
+                "Print": "Drucken",
+                "Pdfexport": "PDF-Export",
+                "Excelexport": "Excel-Export",
+                "Wordexport": "Word-Export",
+                "FilterButton": "Filter",
+                "ClearButton": "klar",
+                "StartsWith": "Beginnt mit",
+                "EndsWith": "Endet mit",
+                "Contains": "Enthält",
+                "Equal": "Gleich",
+                "NotEqual": "Nicht gleich",
+                "LessThan": "Weniger als",
+                "LessThanOrEqual": "Weniger als oder gleich",
+                "GreaterThan": "Größer als",
+                "GreaterThanOrEqual": "Größer als oder gleich",
+                "EnterValue": "Geben Sie den Wert ein",
+                "FilterMenu": "Filter"
+            },
+            'pager': {
+                'currentPageInfo': '{0} von {1} Seiten',
+                'totalItemsInfo': '({0} Beiträge)',
+                'firstPageTooltip': 'Zur ersten Seite',
+                'lastPageTooltip': 'Zur letzten Seite',
+                'nextPageTooltip': 'Zur nächsten Seite',
+                'previousPageTooltip': 'Zurück zur letzten Seit',
+                'nextPagerTooltip': 'Zum nächsten Pager',
+                'previousPagerTooltip': 'Zum vorherigen Pager'
+            },
+            "dropdowns": {
+                "noRecordsTemplate": "Keine Aufzeichnungen gefunden"
+            },
+            "datepicker": {
+                "placeholder": "Wählen Sie ein Datum",
+                "today": "heute"
+            }
+        }
+    });
+</script>

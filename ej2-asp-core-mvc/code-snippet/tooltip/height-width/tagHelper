@@ -1,0 +1,13 @@
+     <ejs-tooltip id="tooltip" height="40px" width="150px" content="Tooltip with specific width and height">
+        <e-content-template>
+                <span id='target'>Show Tooltip</span>
+        </e-content-template>
+    </ejs-tooltip>
+
+<style>
+    #tooltip {
+        position: absolute;
+        left: calc( 50% - 60px);
+        top: 38%;
+    }
+</style>

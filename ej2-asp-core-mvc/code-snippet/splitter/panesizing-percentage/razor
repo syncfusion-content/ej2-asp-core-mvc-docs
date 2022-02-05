@@ -1,0 +1,14 @@
+@Html.EJS().Splitter("splitter").Width("600px").Height("200px").PaneSettings(item => {
+   item.Size("30%").Content("<div class='content'>Left pane</div>").Add();
+   item.Size("40%").Content("<div class='content'>Middle pane</div>").Add();
+   item.Size("30%").Content("<div class='content'>Right pane</div>").Add();
+}).Render()
+<style>
+    .content {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        height: 100%;
+    }
+</style>

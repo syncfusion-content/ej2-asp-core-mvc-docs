@@ -1,0 +1,24 @@
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditorContainer("container").Created("onDocCreate").EnableToolbar(true).Render()
+</div>
+
+<script>
+    function onDocCreate() {
+        var container = document.getElementById("container").ej2_instances[0];
+        var toolItem = {
+            prefixIcon: "e-de-ctnr-lock",
+            tooltipText: "Disable Image",
+            text: "Disable Image",
+            id: "Custom"
+        };
+        container.toolbarItems = [toolItem, 'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'Comments', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'Separator', 'Find', 'Separator', 'LocalClipboard', 'RestrictEditing'];
+        container.toolbarClick = function (args) {
+            switch (args.item.id) {
+                case 'Custom':
+                    //Disable image toolbar item.
+                    container.toolbar.enableItems(4, false);
+                    break;
+            }
+        };
+    }
+</script>

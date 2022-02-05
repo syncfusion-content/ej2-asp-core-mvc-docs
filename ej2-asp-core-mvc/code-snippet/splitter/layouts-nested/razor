@@ -1,0 +1,35 @@
+<div>
+    @Html.EJS().Splitter("Horizontal_splitter").Created("onCreate").PaneSettings(item => {
+        item.Size("200px").Content("<div class='content'><h4 class='h4'>PARIS </h4>Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism...</div>").Add();
+        item.Size("200px").Content("<div class='content'><h4 class='h4'>CAMEMBERT </h4>The village in the Orne département of Normandy where the famous French cheese is originated from.</div>").Add();
+        item.Size("200px").Content("<div id ='vertical_splitter' class='vertical_splitter'><div class='content'><h4 class='h4'>GRENOBLE </h4>The capital city of the French Alps and a major scientific center surrounded by many ski resorts, host of the Winter Olympics in 1968.</div><div class='content'><h4 class='h4'>AUSTRALIA </h4>Australia is a country and continent surrounded by the Indian and Pacific oceans. Its major cities – Sydney, Brisbane, Melbourne, Perth, Adelaide – are coastal. Its capital, Canberra, is inland.</div></div>").Add();
+    }).Height("320px").Width("600px").Render()
+</div>
+<style>
+    .content {
+        padding: 9px;
+    }
+
+    .vertical_splitter.e-splitter.e-splitter-vertical {
+        border: none;
+    }
+
+    .h4 {
+        font-weight: 550;
+        font-size: 14px;
+    }
+</style>
+
+<script type="text/javascript">
+    function onCreate(args) {
+        var splitterObj = new ej.layouts.Splitter({
+            paneSettings: [
+                { size: '150px', min: '20%' },
+                { size: '100px', min: '20%' }
+            ],
+            orientation: 'Vertical'
+        });
+        splitterObj.appendTo('#vertical_splitter');
+    }
+
+</script>

@@ -1,0 +1,23 @@
+@(Html.EJS().TreeGrid("AutoFill")
+        .DataSource((IEnumerable<object>)ViewBag.dataSource)
+        .SelectionSettings(select =>
+        {
+            select.Mode(SelectionMode.Cell);
+            select.CellSelectionMode(CellSelectionMode.Box);
+            select.Type(SelectionType.Multiple);
+        })
+        .Toolbar(new List<string>() { "Add", "Update", "Cancel" })
+        .EditSettings(edit =>
+        {
+            edit.AllowAdding(true);
+            edit.AllowEditing(true);
+            edit.AllowDeleting(true);
+            edit.Mode(Syncfusion.EJ2.TreeGrid.EditMode.Batch);
+        })
+        .Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").IsPrimaryKey(true).Width(110).TextAlign(TextAlign.Right).Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+            col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(110).Add();
+            col.Field("Progress").HeaderText("Progress").TextAlign(TextAlign.Right).Width(90).Add();
+        }).ChildMapping("Children").TreeColumnIndex(1).Height(200).EnableAutoFill(true).Render())

@@ -1,0 +1,33 @@
+@{
+    object customAggregateFn = "customAggregateFn";
+}
+
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" height="260" childMapping="subTasks" treeColumnIndex="0">
+    <e-treegrid-aggregates>
+        <e-treegrid-aggregate>
+            <e-treegrid-aggregate-columns>
+                <e-treegrid-aggregate-column columnName="category" type="Custom" customAggregate="customAggregateFn" footerTemplate="Count of Frozen seafood : ${Custom}"></e-treegrid-aggregate-column>
+            </e-treegrid-aggregate-columns>
+        </e-treegrid-aggregate>
+    </e-treegrid-aggregates>
+    <e-treegrid-columns>
+        <e-treegrid-column field="category" headerText="Category" width="130"></e-treegrid-column>
+        <e-treegrid-column field="units" headerText="Total Units" textAlign="Right" width="195"></e-treegrid-column>
+        <e-treegrid-column field="unitPrice" headerText="Unit Price($)" format="C2" textAlign="Right" width="130"></e-treegrid-column>
+        <e-treegrid-column field="price" headerText="Price($)" textAlign="Right" width="125"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function customAggregateFn(data) {
+        var sampleData = ej.base.getValue('result', data);
+        var countLength; countLength = 0;
+        sampleData.filter(function (item) {
+            var data = ej.base.getValue('category', item);
+            if (data === 'Frozen seafood') {
+                countLength++;
+            }
+        });
+        return countLength;
+    };
+</script>

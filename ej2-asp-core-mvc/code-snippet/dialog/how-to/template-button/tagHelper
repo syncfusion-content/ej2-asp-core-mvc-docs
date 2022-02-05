@@ -1,0 +1,43 @@
+<div class="col-lg-12 control-section" id="target">
+    <ejs-button id="normalbtn" content="Open"></ejs-button>
+    <ejs-dialog id="dialog" width="400px" target="#target" Content="Are you sure you want to permanently delete all of these items?"
+                showCloseIcon="true" header="Delete Multiple Items">
+        <e-dialog-animationsettings effect="Zoom"></e-dialog-animationsettings>
+        <e-dialog-buttons>
+            <e-dialog-dialogbutton buttonModel="ViewBag.DefaultButtons1" click="dlgButtonClick"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="ViewBag.DefaultButtons2" click="dlgButtonClick"></e-dialog-dialogbutton>
+        </e-dialog-buttons>
+    </ejs-dialog>
+</div>
+<style>
+    .control-section {
+        padding-left: 10px;
+    }
+
+    .control-section {
+        padding-left: 10px;
+    }
+
+    #target {
+        height: 100%;
+        min-height: 350px;
+    }
+
+    .e-ok-icon::before {
+        content: '\e7ff';
+    }
+
+    .e-close-icon::before {
+        content: '\e825';
+    }
+</style>
+<script>
+    document.getElementById('normalbtn').onclick = function () {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.show();
+    };
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+</script>

@@ -1,0 +1,53 @@
+    document.getElementById('export').addEventListener('click', () => {
+        documenteditor.saveAsBlob('Docx').then(function (exportedDocument) {
+            // The blob can be processed further
+            var formData = new FormData();
+            formData.append('fileName', 'sample.docx');
+            formData.append('data', exportedDocument);
+            saveAsRtf(formData);
+        });
+    });
+
+    function saveAsRtf(formData) {
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.open('POST', '/api/DocumentEditor/ExportAsRtf', true);
+        httpRequest.onreadystatechange = function () {
+            if (httpRequest.readyState === 4) {
+                if (httpRequest.status === 200 || httpRequest.status === 304) {
+                    if (!(!navigator.msSaveBlob)) {
+                        navigator.msSaveBlob(httpRequest.response, 'sample.rtf');
+                    } else {
+                        var downloadLink = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
+                        download('sample.rtf', 'rtf', httpRequest.response, downloadLink, 'download' in downloadLink);
+                    }
+                } else {
+                    console.error(httpRequest.response);
+                }
+            }
+        }
+        httpRequest.responseType = 'blob';
+        httpRequest.send(formData);
+    }
+
+    function download(fileName, extension, buffer, downloadLink, hasDownloadAttribute) {
+        if (hasDownloadAttribute) {
+            downloadLink.download = fileName;
+            var dataUrl = window.URL.createObjectURL(buffer);
+            downloadLink.href = dataUrl;
+            var event = document.createEvent('MouseEvent');
+            event.initEvent('click', true, true);
+            downloadLink.dispatchEvent(event);
+            setTimeout(function () {
+                window.URL.revokeObjectURL(dataUrl);
+                dataUrl = undefined;
+            });
+        } else {
+            if (extension !== 'docx' && extension !== 'xlsx') {
+                var url = window.URL.createObjectURL(buffer);
+                var isPopupBlocked = window.open(url, '_blank');
+                if (!isPopupBlocked) {
+                    window.location.href = url;
+                }
+            }
+        }
+    }

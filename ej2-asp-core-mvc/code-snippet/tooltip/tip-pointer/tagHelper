@@ -1,0 +1,34 @@
+     <div class="control-section">
+     <ejs-tooltip id="tooltip" tipPointerPosition="Start" content="Tooltip content">
+        <e-content-template>
+            <div id='target'>
+                    <span>Show tooltip</span>
+            </div>
+        </e-content-template>
+    </ejs-tooltip>
+    </div>
+
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    #target {
+        background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        margin: 50px auto;
+        padding: 20px;
+        width: 250px;
+    }
+</style>

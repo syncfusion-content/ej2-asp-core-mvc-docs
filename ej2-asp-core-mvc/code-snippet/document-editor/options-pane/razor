@@ -1,0 +1,35 @@
+@Html.EJS().Button("showhidepane").Content("Show hide pane").Render()
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditor("container").EnableSelection(true).EnableSearch(true).IsReadOnly(false).EnableEditor(true).EnableOptionsPane(true).Render()
+</div>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        var sfdt = {
+            "sections": [
+                {
+                    "blocks": [
+                        {
+                            "inlines": [
+                                {
+                                    "characterFormat": {
+                                        "bold": true,
+                                        "italic": true
+                                    },
+                                    "text": "Adventure Works Cycles, the fictitious company on which the AdventureWorks sample databases are based, is a large, multinational manufacturing company. The company manufactures and sells metal and composite bicycles to North American, European and Asian commercial markets. While its base operation is located in Bothell, Washington with 290 employees, several regional sales teams are located throughout their market base."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        };
+        documenteditor.open(JSON.stringify(sfdt));
+
+        document.getElementById('showhidepane').addEventListener('click', function () {
+            documenteditor.showOptionsPane();
+        });
+    });
+</script>

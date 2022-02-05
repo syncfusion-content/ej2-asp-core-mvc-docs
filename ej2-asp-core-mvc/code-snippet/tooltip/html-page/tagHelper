@@ -1,0 +1,36 @@
+     <div id="container">
+        <ejs-tooltip id="target" cssClass="e-tooltip-css" opensOn="Click" width="350" height="250" content="<iframe src='https://www.syncfusion.com/products/essential-js2' id='tooltipFrame'></iframe>">
+            <e-content-template>
+                <div id="tooltipContent">
+                    <div class="content">
+                        <button class="text" id="iframeContent">Embedded Iframe</button>
+                    </div>
+                </div>
+            </e-content-template>
+        </ejs-tooltip>
+    </div>
+
+<style>
+#tooltipContent {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 65px 10px;
+}
+
+.content {
+    display: inline-block;
+    width: 49%;
+}
+
+#tooltipFrame {
+    width: 332px;
+    height: 233px;
+}
+
+.content button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+</style>

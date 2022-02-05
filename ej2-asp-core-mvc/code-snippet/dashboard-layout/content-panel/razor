@@ -1,0 +1,59 @@
+@model WebApplication.Controllers.HomeController.spacingModel
+
+<div class="control-section">
+    <div>
+        <!--  Dashboardlayout element declaration -->
+        @Html.EJS().DashboardLayout("dashboard_default").Columns(6).CellSpacing(Model.cellSpacing).Panels(Panel =>
+        {
+            Panel.Id("Panel0").SizeX(1).SizeY(1).Row(0).Col(0).Header("<div>Panel 0</div>").Content("<div class='content'>Panel Content</div>").Add();
+            Panel.Id("Panel1").SizeX(3).SizeY(2).Row(0).Col(1).Header("<div>Panel 1</div>").Content("<div class='content'>Panel Content</div>").Add();
+            Panel.Id("Panel2").SizeX(1).SizeY(3).Row(0).Col(4).Header("<div>Panel 2</div>").Content("<div class='content'>Panel Content</div>").Add();
+            Panel.Id("Panel3").SizeX(1).SizeY(1).Row(1).Col(0).Header("<div>Panel 3</div>").Content("<div class='content'>Panel Content</div>").Add();
+            Panel.Id("Panel4").SizeX(2).SizeY(1).Row(2).Col(1).Header("<div>Panel 4</div>").Content("<div class='content'>Panel Content</div>").Add();
+            Panel.Id("Panel5").SizeX(1).SizeY(1).Row(2).Col(2).Header("<div>Panel 5</div>").Content("<div class='content'>Panel Content</div>").Add();
+            Panel.Id("Panel6").SizeX(1).SizeY(1).Row(2).Col(3).Header("<div>Panel 6</div>").Content("<div class='content'>Panel Content</div>").Add();
+        }).Render()
+    </div>
+</div>
+<!-- end of dashboardlayout element -->
+<style>
+    /* DashboardLayout element styles  */
+    #dashboard_default .e-panel .e-panel-container .content {
+        font-weight: 600;
+        text-align: center;
+        margin-top: 10px;
+        line-height: 100%;
+    }
+
+    .e-dashboard-layout.e-control .e-panel .e-panel-container .e-panel-header {
+        color: rgba(0, 0, 0, 0.61);
+    }
+
+    .e-panel .e-header-text {
+        padding: 12px 0 12px 0;
+    }
+
+    #dashboard .e-panel-container .e-panel-header {
+        border-bottom: 1px solid #888383;
+    }
+
+    .e-dashboard-layout.e-control .e-panel:hover {
+        border: 0px;
+    }
+
+    .e-dashboard-layout.e-control .e-panel .e-panel-header {
+        font-size: 15px;
+        font-weight: 500;
+        height: 37px;
+        padding: 10px;
+        vertical-align: middle;
+        /* text-align: left; */
+        border-bottom: 0.5px solid rgba(0, 0, 0, .125);
+    }
+
+    .e-panel-header {
+        padding: 10px;
+        margin-bottom: 0;
+        background-color: rgba(0, 0, 0, .03);
+    }
+</style>

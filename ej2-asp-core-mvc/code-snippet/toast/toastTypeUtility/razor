@@ -1,0 +1,31 @@
+
+<div class="control-section" style="width:400px;margin:0 auto;">
+    <div class="row">
+        @Html.EJS().Button("info_toast").Content("Info Toast").CssClass("e-btn e-control e-info").Render()
+        @Html.EJS().Button("success_toast").Content("Success Toast").CssClass("e-btn e-control e-success").Render()
+        @Html.EJS().Button("warning_toast").Content("Warning Toast").CssClass("e-btn e-control e-warning").Render()
+        @Html.EJS().Button("danger_toast").Content("Danger Toast").CssClass("e-btn e-control e-danger").Render()
+    </div>
+    <br/>
+    <div class="row" style="text-align: center;">
+        @Html.EJS().Button("hide_toast").Content(Hide All").CssClass("e-btn").Render()
+    </div>
+</div>
+<script type="text/javascript">
+    var toastObj;
+    document.getElementById("info_toast").addEventListener('click', function () {
+        toastObj = ej.notifications.ToastUtility.show('Please read the comments carefully', 'Information', 20000);
+    });
+    document.getElementById("success_toast").addEventListener('click', function () {
+        toastObj = ej.notifications.ToastUtility.show('Your message has been sent successfully', 'Success', 20000);
+    });
+    document.getElementById("warning_toast").addEventListener('click', function () {        
+        toastObj = ej.notifications.ToastUtility.show('There was a problem with your network connection', 'Warning', 20000);
+    });
+    document.getElementById("danger_toast").addEventListener('click', function () {
+        toastObj = ej.notifications.ToastUtility.show('A problem has been occurred while submitting the data', 'Error', 20000);
+    });
+    document.getElementById("hide_toast").addEventListener('click', function () {
+        toastObj.hide('All');
+    });
+</script>

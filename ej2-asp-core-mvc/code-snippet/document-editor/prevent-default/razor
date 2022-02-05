@@ -1,0 +1,17 @@
+@Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnableSelection(true).Render()
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        documentEditor.keyDown = function (args) {
+            var keyCode = args.event.which || args.event.keyCode;
+            var isCtrlKey = (args.event.ctrlKey || args.event.metaKey) ? true : ((keyCode === 17) ? true : false);
+            //67 is the character code for 'C'
+            if (isCtrlKey && keyCode === 67) {
+                //To prevent copy operation set isHandled to true
+                args.isHandled = true;
+            }
+        }
+    });
+</script>

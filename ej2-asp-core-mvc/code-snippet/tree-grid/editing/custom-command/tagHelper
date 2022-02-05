@@ -1,0 +1,24 @@
+@{
+    List<object> commands = new List<object>();
+    commands.Add(new { type = "taskstatus", buttonOption = new { content = "Details", cssClass = "e-flat e-details" } }); // custom
+}
+
+<script>
+    function load() {
+            this.columns[3].commands[0].buttonOption.click = function (args) {     //click event for custom command button
+            var treegrid = document.getElementById('TreeGrid').ej2_instances[0];  // treegrid instance
+            var rowObj= treegrid.grid.getRowObjectFromUID(ej.base.closest(args.target, '.e-row').getAttribute('data-uid'));
+            alert(JSON.stringify(rowObj.data));  // display row data
+         }
+    }
+</script>
+
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.dataSource" height="400" childMapping="Children" treeColumnIndex="1" load="load">
+    <e-treegrid-editsettings allowAdding="true" allowEditing="true" allowDeleting="true" mode="Row"></e-treegrid-editsettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" isPrimaryKey="true" textAlign="Right" width="100"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" editType="stringedit" width="190"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="120"></e-treegrid-column>
+        <e-treegrid-column headerText="Manage Records" width="120" commands=commands></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>

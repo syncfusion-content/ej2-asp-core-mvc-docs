@@ -1,0 +1,46 @@
+@{ 
+   var palette = new string[] { "white" };
+    var border = new TreeMapBorder { Color = "black", Width = 0.5 };
+}
+@using Syncfusion.EJ2;
+<div>
+    <div>
+        <ejs-treemap id="container" load="load" drillStart="drillStart" weightValuePath="Sales" enableDrillDown="true" palette="palette">
+            <e-treemap-leafitemsettings showLabels="false" labelTemplate="#template" templatePosition="Center">
+            </e-treemap-leafitemsettings>
+            <e-treemap-levels>
+                <e-treemap-level groupPath="Continent" border="border">
+                </e-treemap-level>
+            </e-treemap-levels>
+        </ejs-treemap>
+    </div>
+</div>
+<div id="template" style="display:none">
+    <div style="background-color: red">{{:Company}}</div>
+</div>       
+<script>
+    function drillStart(args) {
+        var labelElementGroup = document.getElementById('container_Label_Template_Group');
+        labelElementGroup.remove();
+    }
+    function load(args) {
+        var data = [
+            { Continent: "China", Company: "Volkswagen", Sales: 3005994 },
+            { Continent: "China", Company: "General Motors", Sales: 1230044 },
+            { Continent: "China", Company: "Honda", Sales: 1197023 },
+            { Continent: "United States", Company: "General Motors", Sales: 3042775 },
+            { Continent: "United States", Company: "Ford", Sales: 2599193 },
+            { Continent: "United States", Company: "Toyota", Sales: 2449587 },
+            { Continent: "Japan", Company: "Toyota", Sales: 1527977 },
+            { Continent: "Japan", Company: "Honda", Sales: 706982 },
+            { Continent: "Japan", Company: "Suzuki", Sales: 623041 },
+            { Continent: "Germany", Company: "Volkswagen", Sales: 655977 },
+            { Continent: "Germany", Company: "Mercedes", Sales: 310845 },
+            { Continent: "Germany", Company: "BMW", Sales: 261931 },
+            { Continent: "United Kingdom", Company: "Ford ", Sales: 319442 },
+            { Continent: "United Kingdom", Company: "Vauxhall", Sales: 251146 },
+            { Continent: "United Kingdom", Company: "Volkswagen", Sales: 206994 }
+        ];
+        args.treemap.dataSource = data;
+    }
+</script>

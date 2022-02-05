@@ -1,0 +1,51 @@
+<div style="width:400px;margin:0 auto;">
+    <ejs-toast id="element" title="Matt sent you a friend request" content="You have a new friend request yet to accept" beforeOpen="onBeforeOpen" showProgressBar="true">
+        <e-toast-position X="Right" Y="Bottom"></e-toast-position>
+    </ejs-toast>
+    <div class="row">
+        <ejs-button id="show_toast" content="Show Toast" cssClass="e-btn"></ejs-button>
+    </div>
+    <div class="row" style="padding-top: 20px">
+        <div class="e-float-input">
+            <input class="e-input" id="progressHeight" name="Digits" value="4" required>
+            <span class="e-float-line"></span>
+            <label class="e-float-text" for="Digits">Progress Bar Height</label>
+        </div>
+    </div>
+    <div class="row" style="padding-top: 20px">
+        <div class="col-md-6">
+            <label> Progress Bar Color </label>
+        </div>
+        <div class="col-md-6">
+            <ejs-dropdownlist id="Progress" dataSource="@ViewBag.data" placeholder="Select a animate type" index="0" popupHeight="150px" change="valueChange">
+                <e-dropdownlist-fields text="Value" value="Id"></e-dropdownlist-fields>
+            </ejs-dropdownlist>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show();
+        }, 200);
+    function onBeforeOpen(e) {
+        var progress = e.element.querySelector('.e-toast-progress');
+        progress.style.height = document.getElementById('progressHeight').value + 'px';
+        var listObjprogressColor = document.getElementById('Progress').ej2_instances[0];
+        progress.style.backgroundColor = listObjprogressColor.value;
+    }
+    function valueChange(e) {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        var listObjprogressColor = document.getElementById('Progress').ej2_instances[0];
+        var progressEles = toastObj.element.querySelectorAll('.e-toast-progress');
+        progressEles.forEach((ele) => {
+            ele.style.backgroundColor = listObjprogressColor.value;
+        })
+    }
+    document.getElementById("show_toast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show();
+    });
+</script>

@@ -1,0 +1,20 @@
+@(Html.EJS().TreeGrid("TreeGrid")
+      .Height(260)
+      .DataSource((IEnumerable<object>)ViewBag.datasource)
+      .Aggregates(agg =>
+       {
+          agg.Columns(new List<Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn>() {
+             new Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn() {
+                 Field = "price", Type = "Sum", Format = "C2",
+                 FooterTemplate = "Total: ${Sum}" , ColumnName = "price"
+             }
+          }).Add();
+       })
+      .Columns(col =>
+       {
+         col.Field("category").HeaderText("Category").Width(130).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+         col.Field("units").HeaderText("Total Units").Width(195).Add();
+         col.Field("unitPrice").HeaderText("Unit Price($)").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(130).Add();
+         col.Field("price").HeaderText("Price($)").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(125).Add();
+
+       }).ChildMapping("subTasks").TreeColumnIndex(0).Render())

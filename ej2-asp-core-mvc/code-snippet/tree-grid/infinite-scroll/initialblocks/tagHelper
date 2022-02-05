@@ -1,0 +1,11 @@
+<ejs-treegrid id="TreeGrid" height="600" dataSource="ViewBag.datasource" enableInfiniteScrolling="true" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-infinitescrollsettings initialBlocks="5"></e-treegrid-infinitescrollsettings>
+    <e-treegrid-pagesettings pageSize="50"></e-treegrid-pagesettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskID" headerText="Player Jersey" textAlign="Right" width="120"></e-treegrid-column>
+        <e-treegrid-column field="FIELD1" headerText="Player Name" width="120"></e-treegrid-column>
+        <e-treegrid-column field="FIELD2" headerText="Year" textAlign="Right" width="100"></e-treegrid-column>
+        <e-treegrid-column field="FIELD3" headerText="Stint" textAlign="Right" width="120"></e-treegrid-column>
+        <e-treegrid-column field="FIELD4" headerText="TMID" textAlign="Right" width="120"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>

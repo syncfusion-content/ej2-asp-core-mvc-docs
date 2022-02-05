@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+     @Html.EJS().Tooltip("tooltip").Content("Tooltip content").Animation(new {
+    open = new { effect = "ZoomIn", duration = 1000, delay = 0 },
+    close = new { effect = "ZoomOut", duration = 500, delay = 0 }
+}).ContentTemplate(@<div id="target">
+        Show tooltip
+    </div>).Render()
+
+<style>
+    #target {
+        background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        margin: 50px auto;
+        padding: 10px;
+        width: 100px;
+    }
+</style>

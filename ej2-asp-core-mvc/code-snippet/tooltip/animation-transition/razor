@@ -1,0 +1,50 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+     @Html.EJS().Tooltip("tooltip").Target(".circletool").BeforeRender("onBeforeRender").AfterClose("onAfterClose").CloseDelay(1000).Animation(new {
+   open = new { effect = "ZoomIn", duration = 500 },
+   close = new { effect = "ZoomOut", duration = 500 }
+}).ContentTemplate(@<div>
+        <h3> Transition effect </h3>
+        <div id="box" class="e-prevent-select">
+            <div class="circletool" style="top:18%;left:5%" title="This is Turtle !!!"></div>
+            <div class="circletool" style="top:30%;left:30%" title="This is Snake !!!"></div>
+            <div class="circletool" style="top:80%;left:80%" title="This is Croc !!!"></div>
+            <div class="circletool" style="top:65%;left:50%" title="This is String Ray !!!"></div>
+            <div class="circletool" style="top:75%;left:15%" title="This is Blob Fish !!!"></div>
+            <div class="circletool" style="top:30%;left:70%" title="This is Mammoth !!!"></div>
+        </div>
+    </div>).Render()
+
+<style>
+    #box {
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        height: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    .circletool {
+        background: yellowgreen;
+        border-radius: 50px;
+        height: 20px;
+        position: absolute;
+        width: 20px;
+    }
+</style>
+<script>
+    function onBeforeRender(args) {
+        if (args.element) {
+            // here prevent animation while apply transition
+            this.animation = { open: { effect: 'None' } };
+            args.element.style.display = 'block';
+            args.element.style.transitionProperty = 'left,top';
+            args.element.style.transitionDuration = '1000ms';
+        }
+    }
+    function onAfterClose(args) {
+        // restore the animation effects
+        this.animation = { open: { effect: 'ZoomIn', duration: 500 }, close: { effect: 'ZoomOut', duration: 500 } };
+    }
+</script>

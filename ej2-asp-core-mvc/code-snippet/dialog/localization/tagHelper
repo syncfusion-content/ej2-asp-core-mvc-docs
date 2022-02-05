@@ -1,0 +1,19 @@
+
+<div id='container' style="height:400px;">
+    <ejs-button id="targetButton" content="Ouvrir le dialogue"></ejs-button>
+    <ejs-dialog id="dialog" locale="fr-BE" showCloseIcon="true" header="Dialogue" content="Dialogue avec la culture française" target="#container" width="250px"></ejs-dialog>
+</div>
+
+<script>
+    window.onload = function () {
+        document.getElementById('targetButton').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            dialog.show();
+        }
+        ej.base.L10n.load({
+            'fr-BE': {
+                'dialog': { 'close': "Fermer" }
+            }
+        });
+    }
+</script>

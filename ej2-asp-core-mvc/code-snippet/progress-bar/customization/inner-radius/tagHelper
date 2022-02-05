@@ -1,0 +1,4 @@
+<ejs-progressbar id="container" minimum="0" maximum="100" enableRtl="false" type='Circular' value=60 
+        radius="100%" width='160px' height='160px' innerRadius="190%" trackColor="#FFD939" progressColor="white" 
+        trackThickness=80 cornerRadius="Round" progressThickness=10>
+</ejs-progressbar>

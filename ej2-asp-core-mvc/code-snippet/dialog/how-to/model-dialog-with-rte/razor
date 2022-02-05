@@ -1,0 +1,25 @@
+<div id='container' style="height:400px;">
+    @Html.EJS().Button("targetButton").Content("Open Modal Dialog").Render()
+    <div class="e-content">
+        @Html.EJS().Dialog("dialog").IsModal(true).OverlayClick("onOverlayClick").Open("Dlgopen").Width("300px").Target("#container").ContentTemplate(@<div>
+    @Html.EJS().RichTextEditor("defaultRTE").Render()
+</div>).Render()
+</div>
+</div>
+
+<script>
+    window.onload = function () {
+        document.getElementById('targetButton').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            dialog.show();
+        }
+    }
+    function onOverlayClick() {
+        var dialog = document.getElementById("dialog").ej2_instances[0];
+        dialog.hide();
+    }
+    function Dlgopen() {
+        var RTE = document.getElementById("defaultRTE").ej2_instances[0];
+        RTE.refreshUI();
+    }
+</script>

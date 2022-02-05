@@ -1,0 +1,36 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+     @Html.EJS().Tooltip("hover").OpensOn("Hover").Content("Tooltip from hover").ContentTemplate(@<div id="tooltiphover" class="blocks"><span>Hover Me !(Default)</span></div>).Render()
+    @Html.EJS().Tooltip("click").OpensOn("Click").Content("Tooltip from Click").ContentTemplate(@<div id="tooltipclick" class="blocks"><span>Click Me !</span></div>).Render()
+    @Html.EJS().Tooltip("focus").OpensOn("Focus").Content("Tooltip from focus").Target(".e-info").ContentTemplate(@<div class="blocks"><span><input class="e-info" id="tooltipfocus" type="text" placeholder="Focus and blur" /></span></div>).Render()
+    @Html.EJS().Tooltip("custom").OpensOn("Custom").Content("Tooltip from custom mode").ContentTemplate(@<div id="tooltipcustom" class="blocks">
+    @Html.EJS().Button("open").Content("Click to open tooltip manually").Render()
+    </div>).Render()
+
+<style>
+    #hover, #click, #focus, #custom, #open {
+        width: 200px;
+    }
+    .blocks {
+        background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        display: inline-block;
+        line-height: 50px;
+        margin: 0 10px 10px 0;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: middle;
+        width: 200px;
+    }
+</style>
+<script>
+    document.getElementById('open').addEventListener("click", function () {
+        var customTooltip = document.getElementById('custom').ej2_instances[0];
+        if (this.getAttribute("data-tooltip-id")) {
+            customTooltip.close();
+        } else {
+            customTooltip.open(this);
+        }
+    });
+</script>

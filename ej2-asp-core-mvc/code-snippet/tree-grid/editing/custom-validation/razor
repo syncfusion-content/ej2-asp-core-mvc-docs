@@ -1,0 +1,36 @@
+@using Syncfusion.EJ2.Grids
+
+@(Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.datasource)
+      .EditSettings(edit =>
+       {
+         edit.AllowAdding(true);
+         edit.AllowDeleting(true);
+         edit.AllowEditing(true);
+         edit.Mode(Syncfusion.EJ2.TreeGrid.EditMode.Cell);
+
+        })
+        .Load("onLoad").Toolbar(new List<string>() { "Add", "Delete", "Update", "Cancel" })
+        .Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").IsPrimaryKey(true).Width(70)
+               .ValidationRules(new { required = true, number = true })
+               .TextAlign(TextAlign.Right).Add();
+            col.Field("TaskName").HeaderText("Task Name").EditType("stringedit").Width(180)
+               .ValidationRules(new { required = true }).Add();
+            col.Field("StartDate").HeaderText("Start Date").Width(180)
+               .EditType("datetimepickeredit").ValidationRules(new { date = true })
+               .TextAlign(TextAlign.Right).Format("yMd").Add();
+            col.Field("Priority").HeaderText("Priority").Width(100)
+               .Add();
+
+        }).Height(400).ChildMapping("Children").TreeColumnIndex(1).Render()
+)
+
+<script>
+    function customFn(args) {
+        return args['value'].length >= 4;
+    }
+    function onLoad() {
+        this.columns[3].validationRules = { required: true, minLength: [customFn, 'Need atleast 5 letters'] };
+    }
+</script>

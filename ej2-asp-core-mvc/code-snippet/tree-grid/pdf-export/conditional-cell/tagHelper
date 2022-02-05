@@ -1,0 +1,37 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" height="220" childMapping="Children" treeColumnIndex="1" toolbar="@(new List<string>() { "PdfExport"})" allowPdfExport="true" allowPaging="true" toolbarClick="toolbarClick" pdfQueryCellInfo="pdfQueryCellInfo" queryCellInfo="queryCellInfo">
+    <e-treegrid-pagesettings pageSize="7"></e-treegrid-pagesettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="180"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" textAlign="Right" format="yMd" type="date" width="90"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="80"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function toolbarClick(args) {
+        if (args['item'].text === 'PDF Export') {
+            var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+            treegrid.pdfExport();
+        }
+    }
+    function queryCellInfo(args) {
+        if (args.data['Duration'] == 0 && args.column.field === 'Duration') {
+            args.cell.style.background = '#336c12';
+        } else if (args.data['Duration'] < 3 && args.column.field === 'Duration') {
+            args.cell.style.background = '#7b2b1d';
+        }
+
+    }
+    function pdfQueryCellInfo(args) {
+        if (args.column.field == 'Duration') {
+            if (+args.value === 0 || args.value === "") {
+                args.style = { backgroundColor: '#336c12' };
+            }
+            else if (args.value < 3) {
+                args.style = { backgroundColor: '#7b2b1d' };
+            }
+        }
+
+    }
+</script>

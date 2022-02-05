@@ -1,0 +1,26 @@
+<div>
+    @Html.EJS().Splitter("splitter").Width("600px").Height("200px").PaneSettings(item => {
+        item.Size("200px").Content("<div class='content'>Pane 1</div>").Add();
+        item.Size("200px").Content("<div class='content'>Pane 2</div>").Add();
+        item.Size("200px").Content("<div class='content'>Pane 3</div>").Add();
+    }).Render()
+    <button id="removePane" class="e-btn" onclick="onClicked()">Remove pane</button>
+</div>
+<style>
+    .content {
+        padding: 9px;
+    }
+
+    #removePane {
+        margin-top: 15px;
+    }
+</style>
+
+<script type="text/javascript">
+    function onClicked() {
+        var splitterObj = document.getElementById('splitter');
+        if (!ej.base.isNullOrUndefined(document.querySelector('#splitter').querySelectorAll('.e-pane-horizontal')[1])) {
+            splitterObj.ej2_instances[0].removePane(1);
+        }
+    }
+</script>

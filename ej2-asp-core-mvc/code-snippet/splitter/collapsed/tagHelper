@@ -1,0 +1,17 @@
+<ejs-splitter id="splitter" height="200px" width="600px">
+    <e-splitter-panes>
+        <e-splitter-pane size="200px" content="<div class='content' collapsible=true>Left pane</div>"></e-splitter-pane>
+        <e-splitter-pane size="200px" content="<div class='content' collapsed=true>Middle pane</div>"></e-splitter-pane>
+        <e-splitter-pane size="200px" content="<div class='content' collapsible=true>Right pane</div>"></e-splitter-pane>
+    </e-splitter-panes>
+</ejs-splitter>
+
+<style>
+    .content {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        height: 100%;
+    }
+</style>

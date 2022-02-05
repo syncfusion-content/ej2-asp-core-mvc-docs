@@ -1,0 +1,70 @@
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        font-family: 'Helvetica Neue','calibiri';
+        font-size: 14px;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+</style>
+
+<script id="template" type="text/x-template">
+        <div class="e-pagertemplate">
+        <div class="col-lg-12 control-section">
+            <div class="content-wrapper">
+                <input id="currentPage" type="text" value=${currentPage} style="padding-left: 10px; text-align: left">
+            </div>                                   
+        </div>
+    
+        <div id="totalPages" class="e-pagertemplatemessage" style="margin-top:5px;margin-left:30px;border: none; display: inline-block ">
+            <span class ="e-pagenomsg">${currentPage} of ${totalPages} pages (${totalRecordsCount} items)</span>
+        </div>
+    </div>
+</script>
+
+<ejs-treegrid id="TreeGrid" dataSource="ViewBag.datasource" dataBound="dataBound" actionComplete="actionComplete" allowPaging="true" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-pagesettings pageSize="6" template="#template"></e-treegrid-pagesettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="100"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="190"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" type="date" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="110"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    var flag = true;
+    function dataBound(args) {
+        if (flag) {
+            flag = false;
+            updateTemplate();
+        }
+    }
+    function actionComplete(args) {
+        if (args.requestType === 'paging') {
+            updateTemplate();
+        }
+    }
+    function updateTemplate() {
+        var numeric = new ej.inputs.NumericTextBox({
+            min: 1,
+            max: 6,
+            step: 1,
+            width: 75,
+            format: '###.##',
+            change: function(args) {
+                var treegridObj = document.getElementById('TreeGrid').ej2_instances[0];
+                var value = args.value;
+                treegridObj.goToPage(value);
+            }
+        });
+        numeric.appendTo('#currentPage');
+    };
+</script>

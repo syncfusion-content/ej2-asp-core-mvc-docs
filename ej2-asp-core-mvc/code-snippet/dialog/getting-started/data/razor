@@ -1,0 +1,19 @@
+<div id="container" style="height:400px;">
+
+    @Html.EJS().Button("normalbtn").Content("Open").Render()
+    @Html.EJS().Dialog("default_dialog").Header("About SYNCFUSION Succinctly Series").ShowCloseIcon(true).CloseOnEscape(false).Width("50%").Target("#container").ContentTemplate(@<p>
+        In the Succinctly series, Syncfusion created a robust,
+        free library of more than 130 technical e - books formatted for PDF, Kindle, and EPUB.The Succinctly series was born in 2012 out of a desire to provide concise technical e-books for software developers.Each title in the Succinctly series is written by a carefully chosen expert and provides essential content in about 100 pages.
+    </p>).Render()
+
+</div>
+<script>
+    window.onload = function () {
+        document.getElementById('normalbtn').onclick = function () {
+            var dialog = document.getElementById("default_dialog").ej2_instances[0];
+            dialog.show();
+        }
+    }
+</script>
+
+

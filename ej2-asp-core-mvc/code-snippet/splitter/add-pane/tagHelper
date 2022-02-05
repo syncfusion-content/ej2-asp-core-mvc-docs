@@ -1,0 +1,32 @@
+<div>
+    <ejs-splitter id="splitter" height="200px" width="600px">
+        <e-splitter-panes>
+            <e-splitter-pane size="190px" content="<div class='content'>Pane 1</div>"></e-splitter-pane>
+            <e-splitter-pane size="190px" content="<div class='content'>Pane 2</div>"></e-splitter-pane>
+        </e-splitter-panes>
+    </ejs-splitter>
+    <button id="addPane" class="e-btn" onclick="onClicked()">Add pane</button>
+</div>
+
+<style>
+    .content {
+        padding: 9px;
+    }
+
+    #addPane {
+        margin-top: 15px;
+    }
+</style>
+
+<script type="text/javascript">
+    function onClicked() {
+        var splitterObj = document.getElementById('splitter').ej2_instances[0];
+        var paneDetails = {
+            size: '190px',
+            content: '<div class="content">New Pane</div>',
+            min: '30px',
+            max: '250px',
+        }
+        splitterObj.addPane(paneDetails, 1);
+    }
+</script>

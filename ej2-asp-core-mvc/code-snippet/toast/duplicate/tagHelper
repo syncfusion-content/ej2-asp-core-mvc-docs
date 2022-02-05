@@ -1,0 +1,54 @@
+<div class="control-section" style="width:400px;margin:0 auto;">
+    <ejs-toast id="element" title="Sample Toast Title" content="Sample Toast content" beforeOpen="onBeforeOpen" close="onClose" created="onCreate">
+        <e-toast-position X="Center"></e-toast-position>
+    </ejs-toast>
+    <ejs-button id="showToast" content="Show Toast" cssClass="e-btn"></ejs-button>
+</div>
+<script type="text/javascript">
+    var toasts = [
+        { title: 'Warning !', content: 'There was a problem with your network connection.', isOpen: false },
+        { title: 'Success !', content: 'Your message has been sent successfully.', isOpen: false },
+        { title: 'Error !', content: 'A problem has been occurred while submitting your data.', isOpen: false }
+    ];
+    var toastFlag = 0;
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show(toasts[toastFlag]);
+            ++toastFlag;
+        }, 1000);
+    function onBeforeOpen(e) {
+        if (preventDuplicate(e)) {
+            e.cancel = true;
+        }
+    }
+    function preventDuplicate(e) {
+        for (var i = 0; i < toasts.length; i++) {
+            if (toasts[i].title === e.options.title && !toasts[i].isOpen) {
+                toasts[i].isOpen = true;
+                return false;
+            }
+        }
+        return true;
+    }
+    function onCreate() {
+        toastObj.show(toasts[toastFlag]);
+        ++toastFlag;
+    }
+    function onClose(e) {
+        for (var i= 0; i < toasts.length; i++) {
+            if (toasts[i].title === e.options.title) {
+                toasts[i].isOpen = false;
+            }
+        }
+    }
+    document.getElementById("showToast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show(toasts[toastFlag]);
+        ++toastFlag;
+        if (toastFlag === (toasts.length)) {
+            toastFlag = 0;
+        }
+    });
+</script>

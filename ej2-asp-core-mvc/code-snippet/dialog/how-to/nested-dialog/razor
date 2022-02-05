@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2.Popups
+
+<div id='container' style="height:400px;">
+    @Html.EJS().Button("targetButton").Content("Open Dialog").Render()
+    @Html.EJS().Dialog("dialog").Header("Outer Dialog").ShowCloseIcon(true).Target("#container").Height("300px").CloseOnEscape(false).Width("400px").AnimationSettings(e => e.Effect(DialogEffect.None)).Created("onCreated").ContentTemplate(@<button class="e-control e-btn" id="innerButton" role="button">Open InnerDialog</button>).Render()
+    @Html.EJS().Dialog("innerDialog").ShowCloseIcon(true).Header("Inner Dialog").CloseOnEscape(false).Content("This is a Nested Dialog").Target("#dialog").Height("150px").AnimationSettings(e => e.Effect(DialogEffect.None)).Width("250px").Render()
+</div>
+<script>
+    window.onload = function () {
+        document.getElementById('targetButton').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            var innerDialog = document.getElementById("innerDialog").ej2_instances[0];
+            dialog.show();
+            innerDialog.show();
+        }
+    }
+    function onCreated() {
+        document.getElementById("innerButton").addEventListener("click", function () {
+            var innerDialog = document.getElementById("innerDialog").ej2_instances[0];
+            innerDialog.show();
+        })
+    }
+
+</script>

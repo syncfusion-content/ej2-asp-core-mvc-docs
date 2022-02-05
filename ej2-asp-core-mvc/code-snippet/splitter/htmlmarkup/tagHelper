@@ -1,0 +1,17 @@
+<ejs-splitter id="splitter" height="250px" width="600px">
+    <e-splitter-panes>
+        <e-splitter-pane size="200px" content="<div class='content'><h4 class='h4'>PARIS </h4>Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism...</div>"></e-splitter-pane>
+        <e-splitter-pane size="200px" content="<div class='content'><h4 class='h4'>CAMEMBERT </h4>The village in the Orne département of Normandy where the famous French cheese is originated from.</div>"></e-splitter-pane>
+        <e-splitter-pane size="200px" content="<div class='content'><h4 class='h4'>GRENOBLE </h4>The capital city of the French Alps and a major scientific center surrounded by many ski resorts, host of the Winter Olympics in 1968.</div>"></e-splitter-pane>
+    </e-splitter-panes>
+</ejs-splitter>
+
+<style>
+    .content {
+        padding: 9px;
+    }
+
+    .h4 {
+        font-weight: 550;
+    }
+</style>

@@ -1,0 +1,1 @@
+@Html.EJS().Splitter("splitter").Width("600px").Height("250px").PaneSettings(item => { item.Content("<div></div>").Add(); item.Content("<div></div>").Add(); item.Content("<div></div>").Add(); }).Render()

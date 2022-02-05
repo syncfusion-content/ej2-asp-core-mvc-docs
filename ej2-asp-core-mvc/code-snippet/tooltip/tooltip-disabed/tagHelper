@@ -1,0 +1,23 @@
+<ejs-tooltip id="tooltip" content="Tooltip content">
+    <e-content-template>
+        <div id="box" style="display: inline-block;">
+            <input type="button" id="disabledbutton" disabled value="Disabled button" />
+        </div>
+    </e-content-template>
+</ejs-tooltip>
+
+
+<style>
+    #tooltip {
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: auto;
+    }
+
+    #disabledbutton {
+        pointer-events: none;
+        color: graytext;
+    }
+</style>

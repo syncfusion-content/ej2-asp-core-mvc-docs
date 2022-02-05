@@ -1,0 +1,14 @@
+<ejs-button id="print">Print</ejs-button>
+<div id="documenteditor">
+<ejs-documenteditor enablePrint=true id="container"></ejs-documenteditor>    
+</div>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        var documenteditorElement = document.getElementById("container");
+        documenteditor = documenteditorElement.ej2_instances[0];
+        documenteditor.print(window);
+
+    }); 
+</script>

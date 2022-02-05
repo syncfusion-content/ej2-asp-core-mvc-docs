@@ -1,0 +1,19 @@
+@Html.EJS().TreeGrid("TreeGrid").Height(300).DataSource((IEnumerable<object>)ViewBag.datasource).QueryCellInfo("customizeCell").Columns(col =>
+{
+   col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+   col.Field("Duration").HeaderText("Duration").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(110).Add();
+   col.Field("Progress").HeaderText("Progress").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+
+}).ChildMapping("Children").TreeColumnIndex(1).AllowPaging().Render()
+
+<script>
+    function customizeCell(QueryCellInfoEventArgs) {
+        var args = QueryCellInfoEventArgs;
+        if (args.column.field === 'Progress' && +args.cell.innerHTML > 90 && +args.cell.innerHTML <= 100) {
+            args.cell.setAttribute('style', 'background-color:#336c12;color:white;');
+        } else if (+args.cell.innerHTML > 20 && args.column.field === 'Progress') {
+            args.cell.setAttribute('style', 'background-color:#7b2b1d;color:white;');
+        }
+    }
+</script>

@@ -1,0 +1,32 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+     @Html.EJS().Tooltip("Tooltip").Content("Tooltip content").TipPointerPosition(Syncfusion.EJ2.Popups.TipPointerPosition.Start).ContentTemplate(@<div>
+        <div id='target'>
+            <span>Show Tooltip</span>
+        </div>
+    </div>).Render()
+
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    #target {
+        background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        margin: 50px auto;
+        padding: 20px;
+        width: 250px;
+    }
+</style>

@@ -1,0 +1,20 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.data" load="onLoad" childMapping="subTasks" height="315" treeColumnIndex="1">
+    <e-treegrid-columns>
+        <e-treegrid-column field="orderID" headerText="Order ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="orderName" headerText="Order Name" width="220"></e-treegrid-column>
+        <e-treegrid-column field="orderDate" headerText="Order Date" textAlign="Right" width="160" ></e-treegrid-column>
+        <e-treegrid-column field="price" headerText="Price" textAlign="Right" width="90" format="C2" type="number"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function onLoad() {
+        var treegridObj = document.getElementById("TreeGrid").ej2_instances[0];
+        for (i = 0; i < treegridObj.columns.length; i++) {
+            if (treegridObj.columns[i].field == "orderDate") {
+                treegridObj.columns[i].format = { type: 'dateTime', format: 'dd/MM/yyyy' };
+            }
+        }
+
+    }
+</script>

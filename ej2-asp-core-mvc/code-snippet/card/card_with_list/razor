@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.Lists;
+
+<div tabindex="0" class="e-card" id="basic">
+    <div class="e-card-title">To-Do List</div>
+    <div class="e-card-separator"></div>
+    <div class="e-card-content">
+        @Html.EJS().ListView("element").DataSource((IEnumerable<object>)ViewBag.dataSource).Fields(new ListViewFieldSettings { Text = "todoList" }).ShowCheckBox(true).Render()
+    </div>
+</div>

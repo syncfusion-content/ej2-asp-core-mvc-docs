@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.Grids
+
+@(Html.EJS().TreeGrid("ColumnMenu").AllowFiltering().AllowSorting().AllowResizing()
+      .ShowColumnMenu()
+      .PageSettings(p => p.PageSize(10))
+      .FilterSettings(f => f.Type(Syncfusion.EJ2.TreeGrid.FilterType.Menu))
+      .DataSource((IEnumerable<object>)ViewBag.datasource)
+      .Columns(col =>
+       {
+         col.Field("TaskId").HeaderText("Task ID").Width(90).TextAlign(TextAlign.Right).Add();
+         col.Field("TaskName").HeaderText("Task Name").Width(180).Add();
+         col.Field("StartDate").HeaderText("Start Date").Format("yMd").TextAlign(TextAlign.Right).Width(90).Add();
+         col.Field("Duration").HeaderText("Duration").Width(80).Add();
+
+       }).Height(315).ChildMapping("Children").TreeColumnIndex(1).Render()
+)

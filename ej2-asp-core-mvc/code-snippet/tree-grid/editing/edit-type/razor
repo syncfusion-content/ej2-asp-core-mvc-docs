@@ -1,0 +1,39 @@
+@using Syncfusion.EJ2.Grids
+
+@(Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.datasource)
+      .EditSettings(edit =>
+       {
+         edit.AllowAdding(true);
+         edit.AllowDeleting(true);
+         edit.AllowEditing(true);
+         edit.Mode(Syncfusion.EJ2.TreeGrid.EditMode.Row);
+       })
+       .Load("load")
+       .Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })
+       .Columns(col =>
+        {
+          col.Field("TaskId").HeaderText("Task ID").IsPrimaryKey(true).Width(90)
+             .ValidationRules(new { required = true, number = true })
+             .TextAlign(TextAlign.Right).Add();
+          col.Field("TaskName").HeaderText("Task Name").EditType("stringedit").Width(200)
+             .ValidationRules(new { required = true }).Add();
+          col.Field("StartDate").HeaderText("Start Date").Width(130)
+             .EditType("datetimepickeredit")
+             .Edit(new { @params = new { format = "M/d/y hh:mm a" } }).TextAlign(TextAlign.Right).Add();
+          col.Field("Approved").HeaderText("Approved").Width(80).EditType("booleanedit")
+             .Type("boolean").DisplayAsCheckBox(true)
+             .TextAlign(TextAlign.Center).Add();
+          col.Field("Progress").HeaderText("Progress").Width(100).EditType("numericedit")
+             .Edit(new { @params = new { format = "n" } })
+             .TextAlign(TextAlign.Right).Add();
+          col.Field("Priority").HeaderText("Priority").Width(100).EditType("dropdownedit").Add();
+
+       }).Height(270).ChildMapping("Children").TreeColumnIndex(1).Render())
+
+<script>
+    function load(args) {
+        this.columns[2].format = { format: 'M/d/y hh:mm a', type: 'dateTime' };
+    }
+</script>
+
+

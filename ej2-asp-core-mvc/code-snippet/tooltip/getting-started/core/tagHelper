@@ -1,0 +1,15 @@
+<ejs-tooltip id="Tooltip" content="Lets go green & Save Earth !!!">
+    <!-- Target element -->
+    <e-content-template>
+        <span id='target'>Show Tooltip</span>
+    </e-content-template>
+</ejs-tooltip>
+
+<style>
+    #Tooltip {
+        position: absolute;
+        left: calc( 50% - 60px);
+        top: 38%;
+    }
+
+</style>

@@ -1,0 +1,55 @@
+
+<div id="default" style="padding-bottom:75px;">
+    <div class='row'>
+        @Html.EJS().Button("show_toast").Content("Show Toast").CssClass("e-btn").Render()
+    </div>
+    <div class='row'>
+        <div class="col-md-6">
+            <label> Show Animation </label>
+        </div>
+        <div class="col-md-6">
+            @Html.EJS().DropDownList("showAnimation").Fields(e => e.Text("Value").Value("Id")).Placeholder("Select a animate type").PopupHeight("200px").Index(0).DataSource((IEnumerable<object>)ViewBag.data).Change("valueChange").Render()
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col-md-6">
+            <label> Hide Animation </label>
+        </div>
+        <div class="col-md-6">
+            @Html.EJS().DropDownList("hideAnimation").Fields(e => e.Text("Value").Value("Id")).Placeholder("Select a animate type").PopupHeight("200px").Index(0).DataSource((IEnumerable<object>)ViewBag.data).Change("valueChange1").Render()
+        </div>
+    </div>
+    @Html.EJS().Toast("element").Title("Matt sent you a friend request").Content("You have a new friend request yet to accept").Position(p => p.X("Right").Y("Bottom")).Render()
+</div>
+<script type="text/javascript">
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.animation.show.effect = "FadeIn";
+            toastObj.animation.hide.effect = "FadeOut";
+            toastObj.show();
+        }, 1000);
+    document.getElementById("show_toast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show();
+    });
+    function valueChange(e) {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.animation.show.effect = e.value;
+    }
+    function valueChange1(e) {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.animation.hide.effect = e.value;
+    }
+</script>
+<style>
+    #default {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .row {
+        margin: 15px;
+    }
+</style>

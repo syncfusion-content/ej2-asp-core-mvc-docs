@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+       @Html.EJS().Tooltip("tooltip").Width("150px").Height("40px").Content("Tooltip with specific width and height").ContentTemplate(@<div>
+        <div>
+            <span id='target'>Show Tooltip</span>
+        </div>
+    </div>).Render()
+
+
+<style>
+    #tooltip {
+        position: absolute;
+        left: calc( 50% - 60px);
+        top: 38%;
+    }
+</style>

@@ -1,0 +1,48 @@
+<div id="container">
+    <ejs-tooltip id="target" cssClass="customtooltip" content="<div id='tooltip'><h2>HTML Tags</h2>Through templates, <b><span style='color:#e3165b'>tooltip content</span></b> can be loaded with <u><i> inline HTML, images, iframe, videos, maps </i></u>. A title can be added to the content</div>">
+        <e-content-template>
+            <div id="tooltipContent">
+                <div class="content">
+                    <button class="text" id="Title">HTML(With Title)</button>
+                </div>
+            </div>
+        </e-content-template>
+    </ejs-tooltip>
+</div>
+
+
+<style>
+    #tooltipContent table {
+        margin: 0 auto;
+    }
+
+
+    #tooltipContent {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+    }
+
+    .text {
+        text-transform: capitalize;
+        width: 155px;
+    }
+
+    .header {
+        font-family: "Arial Black", Gadget, sans-serif;
+        font-size: 12px;
+        padding-bottom: 2px;
+        margin: 4px -7px 7px -7px;
+        padding-right: 5px;
+        padding-left: 6px;
+        font-weight: bold;
+        height: 18px;
+        border-bottom: 1px solid white;
+    }
+
+    .e-tooltip-css.e-tooltip-wrap .e-tip-content {
+        padding: 0 10px 10px 10px;
+    }
+</style>

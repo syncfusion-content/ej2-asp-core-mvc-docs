@@ -1,0 +1,24 @@
+@{
+    var dict = new Dictionary<string, object>();
+    dict.Add("require", true);
+}
+
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.dataSource" height="400" childMapping="Children" treeColumnIndex="1" toolbar="@(new List<string>() { "Add", "Delete", "Update", "Cancel" })" load="load">
+    <e-treegrid-editsettings allowAdding="true" allowEditing="true" allowDeleting="true"></e-treegrid-editsettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" isPrimaryKey="true" validationRules="@(new { required = true, number = true})" textAlign="Right" width="70"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" editType="stringedit" width="180"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" validationRules="@(new { date = true})" format="yMd" editType="datetimepickeredit" textAlign="Right" width="185"></e-treegrid-column>
+        <e-treegrid-column field="Priority" headerText="Priority" validationRules="@(dict)" width="100"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function load() {
+        this.columns[1].validationRules = { required: true, min: [customFn, 'Value should be greater than 5 letters'] }; 
+    }
+
+    function customFn(args) {
+        return args['value'].length >= 5;
+    }
+</script>

@@ -1,0 +1,23 @@
+<div class="control-section">
+    <ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated" height="590px"></ejs-documenteditorcontainer>
+</div>
+
+<script>
+  var documenteditor;
+  var container;
+  function onCreated() {
+      var documenteditorElement = document.getElementById("container");
+      container = documenteditorElement.ej2_instances[0];
+      documenteditor = container.documentEditor;
+      // creating Custom Options
+      let menuItems = [
+          {
+              text: 'Search In Google',
+              id: 'search_in_google',
+              iconCss: 'e-icons e-de-ctnr-find',
+          },
+      ];
+      // The second parameter "true" hide the default context menu
+      container.documentEditor.contextMenu.addCustomMenu(menuItems, true);
+  }
+</script>

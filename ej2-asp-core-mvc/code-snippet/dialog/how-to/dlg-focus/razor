@@ -1,0 +1,26 @@
+<div id="container" style="height:400px;">
+    @Html.EJS().Button("targetButton").Content("Open Dialog").Render()
+    @Html.EJS().Dialog("dialog").Header("Sign In").Open("onOpen").ContentTemplate(@<div class='wrap'>
+    <div class='form-group'><label for='email'>Email:</label>
+        <input type='email' class='form-control' id='email'>
+    </div>
+    <div class='form-group'>
+        <label for='comment'>Password:</label>
+        <input type='password' class='form-control' id='password'>
+    </div></div>).Target("#container").Width("300px").Buttons(btn=> {
+        btn.Click("dlgButtonClick").ButtonModel(ViewBag.DialogButtons1).Add();
+        btn.Click("dlgButtonClick").ButtonModel(ViewBag.DialogButtons2).Add();}).Render()
+</div>
+<script>
+    document.getElementById('targetButton').onclick = function () {
+        var dialog = document.getElementById("dialog").ej2_instances[0];
+        dialog.show();
+    }
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+    function onOpen() {
+        args.preventFocus = true;
+    }
+</script>

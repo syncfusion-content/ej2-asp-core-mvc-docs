@@ -1,0 +1,28 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+      @Html.EJS().Tooltip("tooltip").OpensOn("Custom").Content("Tooltip from custom mode").ContentTemplate(@<div id="box">
+        Double-click to open Tooltip.
+    </div>).Created("created").Render()
+
+<style>
+    #box {
+        background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        margin: 50px auto;
+        padding: 20px;
+        width: 250px;
+    }
+</style>
+<script>
+    function created() {
+        document.getElementById('box').addEventListener("dblclick", function () {
+            var tooltip = document.getElementById('tooltip').ej2_instances[0];
+            if (this.getAttribute("data-tooltip-id")) {
+                tooltip.close();
+            } else {
+                tooltip.open(this);
+            }
+        });
+    }
+</script>

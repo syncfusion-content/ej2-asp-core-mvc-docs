@@ -1,0 +1,16 @@
+<ejs-splitter id="splitter" height="200px" width="550px" orientation="Vertical">
+    <e-splitter-panes>
+        <e-splitter-pane size="50%" min="30%" content="<div class='content'> Top pane</div>"></e-splitter-pane>
+        <e-splitter-pane size="50%" min="30%" content="<div class='content'> Bottom pane</div>"></e-splitter-pane>
+    </e-splitter-panes>
+</ejs-splitter>
+
+<style>
+    .content {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 100%;
+        display: flex;
+    }
+</style>

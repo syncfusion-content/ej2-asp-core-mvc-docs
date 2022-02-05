@@ -1,0 +1,9 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.dataSource" height="400" childMapping="Children" treeColumnIndex="1" toolbar="@(new List<string>() { "Add", "Delete", "Update", "Cancel" })">
+    <e-treegrid-editsettings allowAdding="true" allowEditing="true" allowDeleting="true" mode="Cell"></e-treegrid-editsettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" isPrimaryKey="true" textAlign="Right" width="100"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" editType="stringedit" width="190"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" editType="datepickeredit" textAlign="Right" format="yMd" type="date" width="130"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" editType="numericedit" textAlign="Right" width="120"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>

@@ -1,0 +1,28 @@
+
+<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated" height="590px"></ejs-documenteditorcontainer>
+
+<script>
+    var documenteditor;
+    var container;
+function onCreated() {
+    var documenteditorElement = document.getElementById("container");
+    container = documenteditorElement.ej2_instances[0];
+    documenteditor = container.documentEditor;
+     setInterval(() => {
+      updateDocumentEditorSize();
+    }, 100);
+    //Adds event listener for browser window resize event.
+    window.addEventListener('resize', onWindowResize);
+}
+function onWindowResize() {
+    //Resizes the document editor component to fit full browser window automatically whenever the browser resized.
+    updateDocumentEditorSize();
+  }
+function updateDocumentEditorSize() {
+    //Resizes the document editor component to fit full browser window.
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+    container.resize(windowWidth, windowHeight);
+  }
+</script>
+

@@ -1,0 +1,3 @@
+<ejs-progressbar id="container" type='Circular' height='60' minimum="0" maximum="100"
+                value=100 segmentCount="8">
+</ejs-progressbar>

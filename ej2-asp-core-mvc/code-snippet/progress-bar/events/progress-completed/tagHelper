@@ -1,0 +1,24 @@
+<div id="pause-container">
+<ejs-progressbar id="pause-container" type="Circular" value=100
+                    width="160px" height="160px" minimum="0" maximum="100"
+                    progressCompleted="progressCompleted">
+    <e-progressbar-progressbarannotations>
+        <e-progressbar-progressbarannotation content='<div id="point1" style="font-size:20px;font-weight:bold;color:#ffffff;fill:#ffffff"><span>60%</span></div>'>
+        </e-progressbar-progressbarannotation>
+    </e-progressbar-progressbarannotations>
+    <e-progressbar-animation enable=true duration=2000 delay=0></e-progressbar-animation>
+</ejs-progressbar>
+</div>
+
+<script>
+var clearTimeout1;
+var clearTimeout2;
+var progressCompleted = function (args) {
+            clearTimeout(clearTimeout2);
+            clearTimeout2 = setTimeout(function () {
+                var pausePlay = document.getElementById("pause-container").ej2_instances[0];
+                pausePlay.annotations[0].content = "<div id="point1" style="font-size:20px;font-weight:bold;color:#ffffff;fill:#ffffff"><span>60%</span></div>";
+                pausePlay.dataBind();
+            }, 2000);
+        }
+</script>

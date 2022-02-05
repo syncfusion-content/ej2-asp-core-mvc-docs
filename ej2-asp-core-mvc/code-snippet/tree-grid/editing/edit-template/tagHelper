@@ -1,0 +1,33 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" height="400" childMapping="Children" treeColumnIndex="1" toolbar="@(new List<string>() { "Add", "Delete", "Update", "Cancel" })">
+    <e-treegrid-editsettings allowAdding="true" allowEditing="true" allowDeleting="true" mode="Cell" newRowPosition="Below"></e-treegrid-editsettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" isPrimaryKey="true" textAlign="Right" width="100"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" editType="stringedit" width="190" edit="@(new { create = "create", read = "read", write = "write", destroy ="destroy" })"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" editType="datepickeredit" textAlign="Right" format="yMd" type="date" width="130"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" editType="numericedit" textAlign="Right" width="120"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    var autoCompleteObj, elem;
+    function create(args) {
+        elem = document.createElement('input');
+        return elem;
+    }
+    function read(args) {
+        return autoCompleteObj.value;
+    }
+    function destroy(args) {
+        return autoCompleteObj.destroy();
+    }
+    function write(args) {
+        var treeGridObj = document.getElementById("TreeGrid").ej2_instances[0];
+        autoCompleteObj = new ej.dropdowns.AutoComplete({
+            dataSource: treeGridObj.grid.dataSource,
+            fields: { value: 'TaskName' },
+            value: args.rowData[args.column.field]
+        });
+        autoCompleteObj.appendTo(elem);
+
+    }
+</script>

@@ -1,0 +1,34 @@
+@Html.EJS().Button("Copy").Content("Copy").IsPrimary(true).Render()
+
+@Html.EJS().Button("CopyHeader").Content("Copy With Header").IsPrimary(true).Render()
+
+@(Html.EJS().TreeGrid("CopyBtn")
+        .DataSource((IEnumerable<object>)ViewBag.dataSource)
+        .SelectionSettings(select =>
+        {
+            select.Mode(SelectionMode.Row);
+            select.Type(SelectionType.Multiple);
+        })
+        .Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(TextAlign.Right).Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+            col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(110).Add();
+            col.Field("Progress").HeaderText("Progress").TextAlign(TextAlign.Right).Width(90).Add();
+        }).ChildMapping("Children").TreeColumnIndex(1).Height(200).Render())
+
+
+
+<script>
+
+    document.getElementById("Copy").onclick = function () {
+        var treegrid = document.getElementById("CopyBtn").ej2_instances[0];
+        treegrid.copy();
+    }
+
+    document.getElementById("CopyHeader").onclick = function () {
+        var treegrid = document.getElementById("CopyBtn").ej2_instances[0];
+        treegrid.copy(true);
+    }
+
+</script>

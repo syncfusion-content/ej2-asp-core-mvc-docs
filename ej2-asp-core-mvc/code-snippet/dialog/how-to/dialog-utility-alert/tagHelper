@@ -1,0 +1,12 @@
+
+<div style="height:400px;">
+    <ejs-button id="dialogBtn" content="Open Alert Dialog"></ejs-button>
+</div>
+
+<script>
+    // To Render dialog utility on button click
+    document.getElementById('dialogBtn').onclick = function () {
+        // Initialize and render alert dialog
+        ej.popups.DialogUtility.alert('This is an Alert Dialog!');
+    };
+</script>

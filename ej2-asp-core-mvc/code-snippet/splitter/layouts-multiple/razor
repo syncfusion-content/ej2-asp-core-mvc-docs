@@ -1,0 +1,16 @@
+@Html.EJS().Splitter("splitter").Width("600px").Height("280px").PaneSettings(item => {
+   item.Size("150px").Content("<div class='content'><h4 class='h4'>PARIS </h4>Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism...</div>").Add();
+   item.Size("150px").Content("<div class='content'><h4 class='h4'>CAMEMBERT </h4>The village in the Orne département of Normandy where the famous French cheese is originated from.</div>").Add();
+   item.Size("150px").Content("<div class='content'><h4 class='h4'>GRENOBLE </h4>The capital city of the French Alps and a major scientific center surrounded by many ski resorts, host of the Winter Olympics in 1968.</div>").Add();
+   item.Size("150px").Content("<div class='content'><h4 class='h4'>AUSTRALIA </h4>Australia is a country and continent surrounded by the Indian and Pacific oceans. Its major cities – Sydney, Brisbane, Melbourne, Perth, Adelaide – are coastal. Its capital, Canberra, is inland.</div>").Add();
+ }).Render()
+<style>
+    .content {
+        padding: 9px;
+    }
+
+    .h4 {
+        font-weight: 550;
+        font-size: 14px;
+    }
+</style>

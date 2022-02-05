@@ -1,0 +1,9 @@
+<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableSfdtExport=true id="container"></ejs-documenteditor>
+
+<script>
+    var documenteditor;    
+    document.addEventListener('DOMContentLoaded', function () {        
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        documenteditor.enableEditorHistory = true;
+    });
+</script>

@@ -1,0 +1,4 @@
+<ejs-progressbar id="lineardeterminate" type='Linear' height='60'
+        minimum="0" maximum="100" value=100 valueChanged="progressValue">
+<e-progressbar-animation enable=true duration=2000 delay=0></e-progressbar-animation>
+</ejs-progressbar>

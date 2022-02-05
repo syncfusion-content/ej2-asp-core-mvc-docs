@@ -1,0 +1,9 @@
+@(Html.EJS().TreeGrid("SelectionAPI").AllowPaging().DataSource((IEnumerable<object>)ViewBag.datasource)
+      .AllowSelection().Columns(col =>
+      {
+        col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+        col.Field("StartDate").HeaderText("Start Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width(210).Add();
+        col.Field("Duration").HeaderText("Duration").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(190).Add();
+      })
+      .ChildMapping("Children").SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).TreeColumnIndex(1).Render())

@@ -1,0 +1,38 @@
+@{ 
+   var border= new TreeMapBorder{color= 'black', width=0.3}
+}
+@using Syncfusion.EJ2;
+<div id="container">
+    <ejs-treemap id="container" load="load" height="350px" weightValuePath="count" >
+            <e-treemap-leafitemsettings labelPath="fruit" fill= '#8ebfe2' labelPosition= 'Center'></e-treemap-leafitemsettings>
+			<e-treemap-levels>
+              <e-treemap-level groupPath= 'dataType' fill= '#c5e2f7' headerAlignment= 'Center' groupGap= 5 >
+			  <e-treemap-level groupPath= 'product' fill= '#a4d1f2' headerAlignment= 'Center' groupGap= 2 >
+            </e-treemap-level>
+			<e-treemap-highlightsettings enable= 'true' fill='#71b0dd' opacity= '1'></e-treemap-highlightsettings>
+    </ejs-treemap>
+</div>         
+<script>
+    function load(args)
+    { 
+        var data = [
+    { dataType: "Import", type: "Animal products",   product: "2010", sales: 20839332874 },
+    { dataType: "Import", type: "Animal products",   product: "2011", sales: 23098635589 },
+    { dataType: "Import", type: "Chemical products", product: "2010", sales: 141637951510 },
+    { dataType: "Import", type: "Chemical products", product: "2011", sales: 161550338209 },
+    { dataType: "Import", type: "Base metals",       product: "2010", sales: 86079439944 },
+    { dataType: "Import", type: "Base metals",       product: "2011", sales: 103821671535 },
+    { dataType: "Import", type: "Textile articles",       product: "2010", sales: 97126140830 },
+    { dataType: "Import", type: "Textile articles",       product: "2011", sales: 104980750811 },
+    { dataType: "Export", type: "Animal products",   product: "2010", sales:  15845503378 },
+    { dataType: "Export", type: "Animal products",   product: "2011", sales:  20650111620 },
+    { dataType: "Export", type: "Chemical products", product: "2010", sales: 136100054087 },
+    { dataType: "Export", type: "Chemical products", product: "2011", sales: 146341672411 },
+    { dataType: "Export", type: "Base metals",       product: "2010", sales: 59060592813 },
+    { dataType: "Export", type: "Base metals",       product: "2011", sales: 71785882641 },
+    { dataType: "Export", type: "Textile articles",       product: "2010", sales: 20982380561 },
+    { dataType: "Export", type: "Textile articles",       product: "2011", sales: 26016143783 }
+        ];
+        args.treemap.dataSource = data;
+    }
+</script>

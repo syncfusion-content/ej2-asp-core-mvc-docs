@@ -1,0 +1,30 @@
+
+<div class="control-section" style="width:400px;margin:0 auto;">
+    <div class="row">
+        @Html.EJS().Button("show_toast").Content("Show Toast").CssClass("e-btn").Render()
+    </div>
+</div>
+<script type="text/javascript">
+    var toastObj;
+    document.getElementById("show_toast").addEventListener('click', function () {
+        toastObj = ejs.notifications.ToastUtility.show({
+            title: 'Toast Title',
+            content: 'Toast is shown using the utility function with ToastModel',
+            timeOut: 20000,
+            position: { X: 'Right', Y: 'Bottom' },
+            showCloseButton: true,
+            click: toastClick,
+            buttons:  [{
+                model: { content: 'Close' }, click: toastClose
+            }]
+        });
+    });
+    
+    function toastClick() {
+        console.log('Toast click event triggered');
+    }
+
+    function toastClose() {
+        toastObj.hide();
+    }
+</script>

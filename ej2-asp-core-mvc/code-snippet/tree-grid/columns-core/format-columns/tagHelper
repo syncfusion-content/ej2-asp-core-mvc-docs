@@ -1,0 +1,7 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.data" childMapping="Children" height="315" treeColumnIndex="1">
+    <e-treegrid-columns>
+        <e-treegrid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="OrderName" headerText="Order Name" width="180"></e-treegrid-column>
+        <e-treegrid-column field="Price" headerText="Price" textAlign="Right" width="90" format="c2" type="number"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>

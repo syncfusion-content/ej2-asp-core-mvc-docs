@@ -1,0 +1,32 @@
+    <ejs-tooltip id="tooltip" content="Tooltip content" opensOn="Custom" created="created">
+        <e-content-template>
+            <div id="target">
+                Show tooltip
+            </div>
+        </e-content-template>
+    </ejs-tooltip>
+
+<style>
+    #target {
+        background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        margin: 50px auto;
+        padding: 10px;
+        width: 100px;
+    }
+</style>
+<script>
+    function created() {
+        document.getElementById('target').addEventListener("click", function () {
+            var tooltip = document.getElementById('tooltip').ej2_instances[0];
+            if (this.getAttribute("data-tooltip-id")) {
+                var closeAnimation = { effect: 'FadeOut', duration: 1000 }
+                tooltip.close(closeAnimation);
+            } else {
+                var openAnimation = { effect: 'FadeIn', duration: 1000 }
+                tooltip.open(this, openAnimation);
+            }
+        });
+    }
+</script>

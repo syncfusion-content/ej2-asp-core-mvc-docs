@@ -1,0 +1,125 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+<div id="container">
+    <div id="box" class="e-prevent-select">
+        @Html.EJS().Tooltip("tooltip01").Content("SVG Square").Target("#rectShape").ContentTemplate(@<div class="circletool" id="rectShape" style="left:1%;top:10%">
+            <svg>
+                <rect id="square" class="shape" x="50" y="20" width="50" height="50" style="fill:#FDA600;stroke:none;stroke-width:5;stroke-opacity:0.9" />
+            </svg>
+        </div>).Render()
+        @Html.EJS().Tooltip("tooltip02").Content("SVG Ellipse").Target("#ellipseShape").ContentTemplate(@<div class="circletool" id="ellipseShape" style="top:65%;">
+            <svg>
+                <ellipse id="ellipse" class="shape" cx="100" cy="50" rx="20" ry="40" style="fill:#0450C2;stroke:none;stroke-width:2" />
+            </svg>
+        </div>).Render()
+        @Html.EJS().Tooltip("tooltip03").Content("SVG PolyShape").Target("#polyShape").ContentTemplate(@<div class="circletool" id="polyShape" style="top:25%;left:40%">
+            <svg>
+                <polyline id="polyline" class="shape" points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" style="fill:#ffffff;stroke:#0450C2;stroke-width:4" />
+            </svg>
+        </div>).Render()
+        @Html.EJS().Tooltip("tooltip04").Content("Canvas Circle").Target("#circleShape").ContentTemplate(@<div class="circletool" id="circleShape" style="top:16%;left:72%">
+            <canvas id="circle" class="shape" width="60" height="60"></canvas>
+        </div>).Render()
+        @Html.EJS().Tooltip("tooltip05").Content("Canvas Triangle").Target("#triShape").ContentTemplate(@<div class="circletool" id="triShape" style="top:73%;left:76%">
+            <canvas id="triangle" class="shape" width="100" height="50"></canvas>
+        </div>).Render()
+    </div>
+</div>
+
+
+
+<script>
+
+    window.onload = function () {
+        var canvas = document.getElementById('triangle');
+        var context;
+        if (canvas.getContext) {
+            context = canvas.getContext('2d');
+            context.beginPath();
+            context.moveTo(0, 50);
+            context.lineTo(100, 50);
+            context.lineTo(50, 0);
+            context.fillStyle = "#FDA600";
+            context.fill();
+        }
+        canvas = document.getElementById('circle');
+        context = canvas.getContext('2d');
+        var centerX = canvas.width / 2;
+        var centerY = canvas.height / 2;
+        var radius = 30;
+        context.beginPath();
+        context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+        context.fillStyle = '#0450C2';
+        context.fill();
+
+    };
+</script>
+
+<style>
+    @@media (max-width: 500px) {
+        #rectShape {
+            /* csslint ignore:start */
+            left: -11% !important;
+            /* csslint ignore:end */
+        }
+
+        #ellipseShape {
+            /* csslint ignore:start */
+            left: -20% !important;
+            /* csslint ignore:end */
+        }
+
+        #polyShape {
+            /* csslint ignore:start */
+            left: 28% !important;
+            /* csslint ignore:end */
+        }
+
+        #circleShape {
+            /* csslint ignore:start */
+            left: 68% !important;
+            /* csslint ignore:end */
+        }
+
+        #triShape {
+            /* csslint ignore:start */
+            left: 65% !important;
+            /* csslint ignore:end */
+        }
+    }
+
+    @@media (min-width: 500px) and (max-width: 600px) {
+        #triShape {
+            /* csslint ignore:start */
+            left: 70% !important;
+            /* csslint ignore:end */
+        }
+    }
+
+    #container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .e-tooltip-css {
+        filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.25));
+    }
+
+    #control-container {
+        /* csslint ignore:start */
+        padding: 0 !important;
+        /* csslint ignore:end */
+    }
+
+    #box {
+        border: 1px solid #dddddd;
+        background: #ffffff;
+        box-sizing: border-box;
+        height: 320px;
+        position: relative;
+    }
+
+    .circletool {
+        position: absolute;
+    }
+</style>

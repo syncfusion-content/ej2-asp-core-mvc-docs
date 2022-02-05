@@ -1,0 +1,31 @@
+
+    <div id='container' style="height:400px;">
+        <ejs-button id="targetButton" content="Open Dialog"></ejs-button>
+        <ejs-dialog id="dialog" header="Feedback" showCloseIcon="true" target="#container" width="400px" height="300px">
+            <e-content-template>
+                <form>
+                    <div class='form-group'>
+                        <label for='email'>Email:</label><input type='email' class='form-control' id='email'>
+                    </div><div class='form-group'>
+                    </div><div class='form-group'>
+                        <label for='comment'>Comments:</label><textarea style='resize: none;' class='form-control' rows='5' id='comment'></textarea>
+                    </div>
+                </form>
+            </e-content-template>
+            <e-dialog-buttons>
+                <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons" click="dlgButtonClick"></e-dialog-dialogbutton>
+            </e-dialog-buttons>
+        </ejs-dialog>
+    </div>
+<script>
+    window.onload = function () {
+        document.getElementById('targetButton').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            dialog.show();
+        }
+    }
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+</script>

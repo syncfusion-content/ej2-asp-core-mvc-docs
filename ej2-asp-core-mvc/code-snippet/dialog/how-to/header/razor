@@ -1,0 +1,17 @@
+<div id="container" style="height:400px;">
+    @Html.EJS().Button("targetButton").Content("Open Dialog").Render()
+    @Html.EJS().Dialog("dialog").Content("This is a dialog without header.").Target("#container").Width("250px").Buttons(btn=> {
+    btn.Click("dlgButtonClick").ButtonModel(ViewBag.DialogButtons1).Add();
+    btn.Click("dlgButtonClick").ButtonModel(ViewBag.DialogButtons2).Add();
+}).Render()
+</div>
+<script>
+    document.getElementById('targetButton').onclick = function () {
+        var dialog = document.getElementById("dialog").ej2_instances[0];
+        dialog.show();
+    }
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+</script>

@@ -1,0 +1,19 @@
+<div>
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+</div>
+<script>
+    var documenteditor;
+    var container;
+function onCreated() {
+    var documenteditorElement = document.getElementById("container");
+    container = documenteditorElement.ej2_instances[0];
+    documenteditor = container.documentEditor;
+    var defaultParagraphFormat = {
+      beforeSpacing: 8,
+      lineSpacing: 1.5,
+      leftIndent: 24,
+      textAlignment: "Center"
+   };
+   container.documentEditor.setDefaultParagraphFormat(defaultParagraphFormat);
+}
+</script>

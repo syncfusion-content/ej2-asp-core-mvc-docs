@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.Layouts
+@Html.EJS().Splitter("vertical").CssClass("splitterContent").Width("100%").Height("200px").PaneSettings(item => {
+item.Size("50%").Min("30%").Content("<div class='content'> Top pane</div>").Add();
+item.Size("50%").Min("30%").Content("<div class='content'> Bottom pane</div>").Add(); }).Orientation(Orientation.Vertical).Render()
+
+<style>
+    .content {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 100%;
+        display: flex;
+    }
+</style>

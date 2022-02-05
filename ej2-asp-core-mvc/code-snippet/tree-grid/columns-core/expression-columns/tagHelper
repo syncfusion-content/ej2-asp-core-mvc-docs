@@ -1,0 +1,19 @@
+@{
+    Object totalPrice = "totalPrice";
+}
+
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.data" childMapping="subTasks" height="315" treeColumnIndex="1">
+    <e-treegrid-columns>
+        <e-treegrid-column field="orderID" headerText="Order ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="orderName" headerText="Order Name" width="180"></e-treegrid-column>
+        <e-treegrid-column field="units" headerText="Units" textAlign="Right" width="120"></e-treegrid-column>
+        <e-treegrid-column field="unitPrice" headerText="Unit Price" textAlign="Right" width="120"></e-treegrid-column>
+        <e-treegrid-column field="price" headerText="Total Price" textAlign="Right" width="90" valueAccessor="totalPrice"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function totalPrice(field, data, column) {
+        return data.units * data.unitPrice;
+    };
+</script>

@@ -1,0 +1,21 @@
+      <ejs-tooltip id="tooltip" height="60px" width="300px" isSticky="true" target="#target" content="<div><b>Environmentally friendly</b> or environment-friendly, (also referred to as eco-friendly, nature-friendly, and green) are marketing and sustainability terms referring to goods and services, laws, guidelines and policies that inflict reduced, minimal, or no harm upon ecosystems or the environment.</div>">
+        <e-content-template>
+            <div id='container'>
+                <p>
+                    A green home is a type of house designed to be
+                    <a id="target">
+                        <u>environmentally friendly</u>
+                    </a> and sustainable. And also focuses on the efficient use of "energy, water, and building materials." As green homes
+                    have become more prevalent we have also seen the emergence of green affordable housing.
+                </p>
+            </div>
+        </e-content-template>
+    </ejs-tooltip>
+
+<style>
+    #tooltip {
+        position: absolute;
+        left: calc( 50% - 60px);
+        top: 38%;
+    }
+</style>

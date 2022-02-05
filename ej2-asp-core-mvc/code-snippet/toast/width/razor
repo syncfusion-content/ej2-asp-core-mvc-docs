@@ -1,0 +1,81 @@
+<div style="width:400px;margin:0 auto;">
+    @Html.EJS().Toast("element").Title("Matt sent you a friend request").Content("You have a new friend request yet to accept").Width("400").Height("150").Position(p => p.X("Center").Y("Bottom")).Render()
+
+    <div class='row' style="padding-top: 20px" id="toast_pos_target">
+        <table>
+            <tr>
+                <td>
+                    <div style='padding:25px 0 0 0;'>
+                        @Html.EJS().RadioButton("topAlign").Label("Top").Name("toast").Value("Target").Change("checkboxChange").Render()
+                    </div>
+                </td>
+                <td>
+                    <div style='padding:25px 0 0 0;'>
+                        @Html.EJS().RadioButton("bottomAlign").Label("Bottom").Name("toast").Value("Global").Change("checkboxChange1").Checked(true).Render()
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style='padding:25px 0 0 0;'>
+                        @Html.EJS().CheckBox("fullWidth").Change("onChange").Label("100% Width").Render()
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    @Html.EJS().Button("show_toast").Content("Show Toast").CssClass("e-btn").Render()
+</div>
+<script type="text/javascript">
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show();
+        }, 1000);
+    document.getElementById("show_toast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show();
+    });
+    var timeDelay = 1000;
+    function checkboxChange(e) {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        if (e.event.target.checked) {
+            toastObj.position.Y = "Top";
+            toastObj.hide();
+            toastShow(timeDelay);
+        }
+    }
+    function checkboxChange1(e) {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        if (e.event.target.checked) {
+            toastObj.position.Y = "Bottom";
+            toastObj.hide();
+            toastShow(timeDelay);
+        }
+    }
+    function toastShow(timeOutDelay) {
+        setTimeout(
+            () => {
+                var toastObj = document.getElementById('element').ej2_instances[0];
+                toastObj.show();
+            }, timeOutDelay);
+    }
+
+    function onChange(e) {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        if (e.checked) {
+            toastObj.hide();
+            toastObj.width = "100%";
+            toastObj.title = "";
+            toastObj.content = "<div class='e-custom'>Take a look at our next generation <b>Javascript</b> <a href='https://ej2.syncfusion.com/home/index.html' target='_blank'>LEARN MORE</a></div>";
+            toastShow(timeDelay);
+        } else {
+            toastObj.hide();
+            toastObj.width = 300;
+            toastObj.title = 'Matt sent you a friend request',
+                toastObj.content = 'You have a new friend request yet to accept',
+                toastShow(timeDelay);
+        }
+    }
+</script>

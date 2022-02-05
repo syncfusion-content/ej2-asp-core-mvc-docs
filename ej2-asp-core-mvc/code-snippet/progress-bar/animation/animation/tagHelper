@@ -1,0 +1,4 @@
+<ejs-progressbar id="container" minimum="0" maximum="100" type='Linear' value=90
+                trackColor="#FFFFFF">
+        <e-progressbar-animation enable=true duration=2000 delay=0></e-progressbar-animation>
+</ejs-progressbar>

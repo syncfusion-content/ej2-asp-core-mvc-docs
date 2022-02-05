@@ -1,0 +1,9 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="275" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-filtersettings type="Excel"></e-treegrid-filtersettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="80"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="190"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="Progress" headerText="Progress" textAlign="Right" width="90"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>

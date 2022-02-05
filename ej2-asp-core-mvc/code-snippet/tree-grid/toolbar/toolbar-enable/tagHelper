@@ -1,0 +1,39 @@
+@{
+    List<object> toolbarItems = new List<object>();
+        toolbarItems.Add("QuickFilter");
+        toolbarItems.Add("ClearFilter");
+  }
+    
+<ejs-button id="enable" content="Enable"></ejs-button>
+<ejs-button id="disable" content="Disable"></ejs-button>
+
+<ejs-treegrid id="TreeGrid" dataSource="ViewBag.datasource" height="200" allowFiltering="true" toolbar=toolbarItems toolbarClick="toolbarClick" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-columns>
+         <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+         <e-treegrid-column field="TaskName" headerText="Task Name" width="180" textAlign="Left"></e-treegrid-column>
+         <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" type="date" width="90"></e-treegrid-column>
+         <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="80"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+        function toolbarClick(args) {
+            if (args.item.text === 'QuickFilter') {
+                var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+                treegrid.filterByColumn("TaskName", "startswith", "Testing");
+            }
+            if (args.item.text === 'ClearFilter') {
+                var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+                treegrid.clearFiltering();
+            }
+        }
+
+        document.getElementById('enable').onclick = () => {
+            var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+            treegrid.toolbarModule.enableItems([treegrid.element.id + '_gridcontrol_QuickFilter', treegrid.element.id + '_gridcontrol_ClearFilter'], true);// enable toolbar items.
+        };
+        document.getElementById('disable').onclick = () => {
+            var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+            treegrid.toolbarModule.enableItems([treegrid.element.id + '_gridcontrol_QuickFilter', treegrid.element.id + '_gridcontrol_ClearFilter'], false);// disable toolbar items.
+        };
+</script>

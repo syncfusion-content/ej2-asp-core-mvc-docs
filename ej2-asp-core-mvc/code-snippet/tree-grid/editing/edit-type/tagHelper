@@ -1,0 +1,23 @@
+@{
+    var numParams = new { @params = new { format = "n" } };
+    var dateParams = new { @params = new { format = "M/d/y hh:mm a" } };
+}
+
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" childMapping="Children" load="load" height="270" treeColumnIndex="1" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-treegrid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Row"></e-treegrid-editSettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" isPrimaryKey="true" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" editType="stringedit" width="120"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start Date" edit=dateParams editType="datetimepickeredit" textAlign="Right" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Approved" headerText="Approved" editType="booleanedit"
+            type="boolean" displayAsCheckBox="true" textAlign="Center" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Progress" headerText="Progress" edit=numParams editType="numericedit" textAlign="Right" width="80"></e-treegrid-column>
+        <e-treegrid-column field="Priority" headerText="Priority" editType="dropdownedit" width="120"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function load(args) {
+        this.columns[2].format = { format: 'M/d/y hh:mm a', type: 'dateTime' };
+    }
+</script>

@@ -1,0 +1,35 @@
+@Html.EJS().Toolbar("defaultToolbar").Items(new List<ToolbarItem> {
+    new ToolbarItem { PrefixIcon = "e-de-icon-Bullets",Id="Bullets", TooltipText = "Bullets" },
+    new ToolbarItem { PrefixIcon = "e-de-icon-Numbering",Id="Numbering", TooltipText = "Numbering" },
+    new ToolbarItem { Text = "Clear",Id="clearlist", TooltipText = "Clear List" }}).Clicked("toolbarAction").Render()
+<div id="documenteditor">
+@Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnableSelection(true).EnableSfdtExport(true).EnableEditorHistory(true).Render()
+</div>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        documenteditor.resize();
+        updateContainerSize();
+
+        function toolbarAction(args) {
+            switch (args.item.id) {
+                case 'Bullets':
+                    //To create bullet list
+                    documenteditor.editor.applyBullet('\uf0b7', 'Symbol');
+                    break;
+                case 'Numbering':
+                    //To create numbering list
+                    documenteditor.editor.applyNumbering('%1)', 'UpRoman');
+                    break;
+                case 'clearlist':
+                    //To clear list
+                    documenteditor.editor.clearList();
+                    break;
+            }
+        };
+
+    });
+</script>

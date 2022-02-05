@@ -1,0 +1,11 @@
+<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enablePrint=true enableSfdtExport=true enablePageSetupDialog=true id="container"></ejs-documenteditor>
+
+<script>
+    var documenteditor;    
+        var documenteditorElement = document.getElementById("container");
+        documenteditorElement.style.height = "100%";
+        documenteditorElement.style.width = "100%";
+        documenteditor = documenteditorElement.ej2_instances[0];
+        documenteditor.resize();
+        documenteditor.showPageSetupDialog();    
+</script>

@@ -1,0 +1,29 @@
+<div>
+    @Html.EJS().Splitter("splitter").Width("600px").Height("200px").PaneSettings(item => {
+          item.Size("190px").Content("<div class='content'>Pane 1</div>").Add();
+          item.Size("190px").Content("<div class='content'>Pane 2</div>").Add();
+    }).Render()
+    <button id="addPane" class="e-btn" onclick="onClicked()">Add pane</button>
+</div>
+<style>
+    .content {
+        padding: 9px;
+    }
+
+    #addPane {
+        margin-top: 15px;
+    }
+</style>
+
+<script type="text/javascript">
+    function onClicked() {
+        var splitterObj = document.getElementById('splitter');
+        var paneDetails = {
+            size: '190px',
+            content: '<div class="content">New Pane</div>',
+            min: '30px',
+            max: '250px',
+        }
+        splitterObj.ej2_instances[0].addPane(paneDetails, 1);
+    }
+</script>

@@ -1,0 +1,19 @@
+<input type="text" id="searchText">
+<ejs-button id="Search" content="Search" cssClass="e-primary"></ejs-button>
+
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" height="270" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="100"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="190"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" type="date" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="110"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    document.getElementById('Search').addEventListener('click', function (args) {
+        var val = document.getElementById('searchText').value;
+        var treegrid = document.getElementById('TreeGrid').ej2_instances[0];
+        treegrid.search(val);
+    });
+</script>

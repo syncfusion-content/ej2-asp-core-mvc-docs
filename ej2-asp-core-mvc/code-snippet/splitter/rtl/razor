@@ -1,0 +1,5 @@
+@Html.EJS().Splitter("splitter").EnableRtl(true).Width("500px").Height("200px").PaneSettings(item => {
+   item.Size("200px").Content("<div class='content'>Left pane</div>").Add();
+   item.Size("200px").Content("<div class='content'>Middle pane</div>").Add();
+   item.Size("200px").Content("<div class='content'>Right pane</div>").Add();
+}).Render()

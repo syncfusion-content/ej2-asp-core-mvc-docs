@@ -1,0 +1,34 @@
+<div class="control-section" style="width:400px;margin:0 auto;">
+    <ejs-toast id="element" click="onClick">
+        <e-toast-position X="Right" Y="Bottom"></e-toast-position>
+    </ejs-toast>
+    <div id='templateToast' style="display: none;color:red"> System affected by virus !!! </div>
+    <ejs-button id="show_toast" content="Show Toast" cssClass="e-btn"></ejs-button>
+</div>
+<script type="text/javascript">
+    var toastFlag = 0;
+    var toasts = [{ template: '2 Mail has received' },
+    { template: 'User Guest Logged in' },
+    { template: 'Logging in as Guest' },
+    { template: 'Ticket has reserved ' },
+    { template: '#templateToast' }];
+
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show(toasts[toastFlag]);
+            ++toastFlag;
+        }, 1000);
+    document.getElementById("show_toast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show(toasts[toastFlag]);
+        ++toastFlag;
+        if (toastFlag === (toasts.length)) {
+            toastFlag = 0;
+        }
+    });
+    function onClick(e) {
+        e.clickToClose = true;
+    }
+</script>

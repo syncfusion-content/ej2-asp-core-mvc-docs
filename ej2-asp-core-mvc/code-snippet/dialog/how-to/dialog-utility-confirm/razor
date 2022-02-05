@@ -1,0 +1,14 @@
+<div style="height:400px;">
+    @Html.EJS().Button("dialogButton").Content("Open Confirm Dialog").Render()
+</div>
+
+<script>
+
+    // To Render dialog utility on button click
+    document.getElementById('dialogButton').onclick = function () {
+
+        // Initialize and render confirm dialog
+        ej.popups.DialogUtility.confirm('This is a Confirmation Dialog!');
+
+    };
+</script>

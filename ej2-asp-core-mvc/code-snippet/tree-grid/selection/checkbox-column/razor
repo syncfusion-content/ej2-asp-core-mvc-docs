@@ -1,0 +1,12 @@
+@(Html.EJS().TreeGrid("CheckboxSelection")
+        .Height(400)
+        .DataSource((IEnumerable<object>)ViewBag.datasource)
+        .AutoCheckHierarchy(true)
+        .Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(TextAlign.Right).Add();
+            col.Field("TaskName").HeaderText("Task Name").ShowCheckbox(true).Width(210).Add();
+            col.Field("StartDate").HeaderText("Start Date").TextAlign(TextAlign.Right).Format("yMd").Width(210).Add();
+            col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(190).Add();
+        })
+        .ChildMapping("Children").TreeColumnIndex(1).Render())

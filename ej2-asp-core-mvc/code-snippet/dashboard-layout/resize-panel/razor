@@ -1,0 +1,34 @@
+@model WebApplication.Controllers.HomeController.spacingModel
+
+<div class="control-section">
+    <div>
+        @Html.EJS().DashboardLayout("dashboard_default").Columns(5).CellSpacing(Model.cellSpacing).AllowResizing(true).Created("onCreated").Panels(Panel =>
+        {
+            Panel.SizeX(1).SizeY(1).Row(0).Col(0).Content("<div class='content'>0</div>").Add();
+            Panel.SizeX(3).SizeY(2).Row(0).Col(1).Content("<div class='content'>1</div>").Add();
+            Panel.SizeX(1).SizeY(3).Row(0).Col(4).Content("<div class='content'>2</div>").Add();
+            Panel.SizeX(1).SizeY(1).Row(1).Col(0).Content("<div class='content'>3</div>").Add();
+            Panel.SizeX(2).SizeY(1).Row(2).Col(0).Content("<div class='content'>4</div>").Add();
+            Panel.SizeX(1).SizeY(1).Row(2).Col(2).Content("<div class='content'>5</div>").Add();
+            Panel.SizeX(1).SizeY(1).Row(2).Col(3).Content("<div class='content'>6</div>").Add();
+        }).Render()
+    </div>
+</div>
+<script>
+//Dashboard Layout's created event function
+function onCreated(args) {
+    // resizePanel("id", sizeX, sizeY)
+    this.resizePanel("layout_4", 1, 1);
+    this.resizePanel("layout_5", 2, 1);
+}
+
+</script>
+<style>
+    #dashboard_default .e-panel .e-panel-container .content {
+        vertical-align: middle;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        line-height: 90px;
+    }
+</style>

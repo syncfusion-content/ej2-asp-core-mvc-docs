@@ -1,0 +1,23 @@
+<ejs-button id="hide" content="Hide Columns"></ejs-button>
+<ejs-button id="show" content="showColumns"></ejs-button>
+
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.data" allowFiltering="true" allowSorting="true" childMapping="Children" treeColumnIndex="1" allowPaging="true">
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" allowSorting="false" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="180"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText=" Start Date" allowFiltering="false" textAlign="Right" format="yMd" width="90"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="80"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    document.getElementById('show').onclick = () => {
+        var treeGridObj = document.getElementById("TreeGrid").ej2_instances[0];
+        treeGridObj.showColumns(['Task ID', 'Duration']); //show by HeaderText
+    };
+
+    document.getElementById('hide').onclick = () => {
+        var treeGridObj = document.getElementById("TreeGrid").ej2_instances[0];
+        treeGridObj.hideColumns(['Task ID', 'Duration']); //hide by HeaderText
+    };
+</script>

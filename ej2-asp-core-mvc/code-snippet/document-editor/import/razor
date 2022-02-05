@@ -1,0 +1,32 @@
+@Html.EJS().DocumentEditor("container").Render()
+
+<script>
+    var documenteditor;    
+    document.addEventListener('DOMContentLoaded', function () {        
+        documenteditor = documenteditorElement.ej2_instances[0];
+        documenteditor.resize();
+        var sfdt = {
+            "sections": [
+                {
+                    "blocks": [
+                        {
+                            "inlines": [
+                                {
+                                    "characterFormat": {
+                                        "bold": true,
+                                        "italic": true
+                                    },
+                                    "text": "Hello World"
+                                }
+                            ]
+                        }
+                    ],
+                    "headersFooters": {
+                    }
+                }
+            ]
+        };
+
+        documenteditor.open(JSON.stringify(sfdt));
+    }); 
+</script>

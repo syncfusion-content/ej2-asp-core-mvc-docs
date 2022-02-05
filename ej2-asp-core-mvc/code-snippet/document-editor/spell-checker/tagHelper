@@ -1,0 +1,11 @@
+<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableSpellChecker=true id="container"></ejs-documenteditor>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        documenteditor.spellChecker.languageID = 1033 //LCID of "en-us";
+        documenteditor.spellChecker.removeUnderline = false;
+        documenteditor.spellChecker.allowSpellCheckAndSuggestion = true;
+    });
+</script>

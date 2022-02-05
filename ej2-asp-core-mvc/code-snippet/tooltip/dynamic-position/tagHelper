@@ -1,0 +1,61 @@
+<ejs-tooltip id="targetContainer" content="Tooltip content" offsetX="-15" target="#demoSmart">
+    <e-content-template>
+        <div id="demoSmart"></div>
+    </e-content-template>
+</ejs-tooltip>
+
+
+<script type="text/javascript">
+    var tooltip, ele;
+    window.onload = function () {
+        ele = document.getElementById('demoSmart');
+        tooltip = document.getElementById("targetContainer").ej2_instances[0];
+        ////Initialize Draggable for tooltip element
+        var drag = new ej.base.Draggable(ele, {
+            clone: false,
+            dragArea: '#targetContainer',
+            drag: function (args) {
+                if (args.element.getAttribute('data-tooltip-id') === null) {
+                    tooltip.open(args.element);
+                }
+                else {
+                    tooltip.refresh(args.element);
+                }
+            },
+            dragStart: function (args) {
+                if (args.element.getAttribute('data-tooltip-id') !== null) {
+                    return;
+                }
+                tooltip.open(args.element);
+            },
+            dragStop: function (args) {
+                tooltip.close();
+            }
+        });
+    }
+</script>
+
+<style type="text/css">
+    #demoSmart {
+        background: rebeccapurple;
+        height: 50px;
+        left: 35%;
+        position: absolute;
+        top: 35%;
+        width: 50px;
+    }
+
+    #targetContainer {
+        margin: 10px;
+        min-height: 320px;
+        width: 100%;
+        float: left;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+    .control-section {
+        padding: 3px;
+        margin-right: 20px;
+    }
+</style>

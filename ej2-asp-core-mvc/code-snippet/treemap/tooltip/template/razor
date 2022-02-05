@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2;
+<div id="container">
+    @Html.EJS().TreeMap("container").Load("load").WeightValuePath("count").TooltipSettings(tool => tool.Visible(true).Template("<div><p>Name: ${fruit}</p><p>Total Count: ${count}</p></div>")).LeafItemSettings(leaf => leaf.LabelPath("fruit")).Render()
+</div>
+<script>
+    function load(args)
+    { 
+        var data = [
+            { fruit: 'Apple', count: 5000 },
+            { fruit: 'Mango', count: 3000 },
+            { fruit: 'Orange', count: 2300 },
+            { fruit: 'Banana', count: 500 },
+            { fruit: 'Grape', count: 4300 },
+            { fruit: 'Papaya', count: 1200 },
+            { fruit: 'Melon', count: 4500 }
+        ];
+        args.treemap.dataSource = data;
+    }
+</script>

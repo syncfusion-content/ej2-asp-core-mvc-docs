@@ -1,0 +1,15 @@
+
+<div id='container' style="height:400px;">
+    <ejs-button id="targetButton" content="Open Dialog"></ejs-button>
+    <ejs-dialog id='dialog' header="Dialog" showCloseIcon="true" content="This is a dialog with header" target="#container" width="250px"></ejs-dialog>
+</div>
+<script>
+    window.onload = function () {
+        document.getElementById('targetButton').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            dialog.show();
+        }
+    }
+</script>
+
+

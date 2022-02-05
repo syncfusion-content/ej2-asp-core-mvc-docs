@@ -1,0 +1,20 @@
+
+<div id='container' style="height:400px;">
+    <ejs-button id="targetButton" content="Open Dialog"></ejs-button>
+    <ejs-dialog id="dialog" content="This is a dialog without header." target="#container" width="250px">
+        <e-dialog-buttons>
+            <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons1" click="dlgButtonClick"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons2" click="dlgButtonClick"></e-dialog-dialogbutton>
+        </e-dialog-buttons>
+    </ejs-dialog>
+</div>
+<script>
+    document.getElementById('targetButton').onclick = function () {
+        var dialog = document.getElementById("dialog").ej2_instances[0];
+        dialog.show();
+    }
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.hide();
+    }
+</script>

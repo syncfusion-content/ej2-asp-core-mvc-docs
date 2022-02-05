@@ -1,0 +1,31 @@
+@{
+    List<object> toolbarItems = new List<object>();
+    toolbarItems.Add("ExpandAll");
+    toolbarItems.Add("CollapseAll");
+    toolbarItems.Add(new { text = "Click", tooltipText = "Click", id = "Click", prefixIcon = "e-time" });
+}
+
+@(Html.EJS().TreeGrid("ToolbarTemplate").DataSource((IEnumerable<object>)ViewBag.datasource)
+      .EditSettings(edit =>
+       {
+         edit.AllowAdding(true);
+         edit.AllowDeleting(true);
+         edit.AllowEditing(true);
+       })
+       .Columns(col =>
+        {
+          col.Field("TaskId").HeaderText("Task ID").Width(90).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+          col.Field("TaskName").HeaderText("Task Name").Width(180).Add();
+          col.Field("StartDate").HeaderText("Start Date").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("date").Width(90).Add();
+          col.Field("Duration").HeaderText("Duration").Width(80).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+
+        }).Height(270).Toolbar(toolbarItems).ToolbarClick("onToolbarClick").ChildMapping("Children").TreeColumnIndex(1)
+          .Render())
+
+<script>
+    function onToolbarClick(args) {
+        if (args.item.text === 'Click') {
+            alert("Custom toolbar click...");
+        }
+    }
+</script>

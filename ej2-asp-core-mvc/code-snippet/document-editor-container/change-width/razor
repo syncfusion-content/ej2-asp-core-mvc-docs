@@ -1,0 +1,3 @@
+
+@Html.EJS().DocumentEditorContainer("container").Width('100%').EnableToolbar(true).Render()
+

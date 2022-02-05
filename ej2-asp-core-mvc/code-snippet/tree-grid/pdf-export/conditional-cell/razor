@@ -1,0 +1,42 @@
+@using Syncfusion.EJ2.Grids
+
+@(Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.datasource)
+      .Columns(col =>
+       {
+         col.Field("TaskId").HeaderText("Task ID").Width(90).TextAlign(TextAlign.Right).Add();
+         col.Field("TaskName").HeaderText("Task Name").Width(180).Add();
+         col.Field("StartDate").HeaderText("Start Date").Format("yMd").Type("date").TextAlign(TextAlign.Right).Width(120).Add();
+         col.Field("Duration").HeaderText("Duration").Width(110).TextAlign(TextAlign.Right).Add();
+
+       }).Height(220).ChildMapping("Children").TreeColumnIndex(1).Toolbar(new List<string>() { "PdfExport" })
+         .AllowPdfExport().AllowPaging().PageSettings(page => page.PageSize(7)).ToolbarClick("toolbarClick")
+         .QueryCellInfo("queryCellInfo").PdfQueryCellInfo("pdfQueryCellInfo").Render()
+)
+
+<script>
+    function toolbarClick(args) {
+        if (args['item'].text === 'PDF Export') {
+            var treegrid = document.getElementById("TreeGrid").ej2_instances[0];
+            treegrid.pdfExport();
+        }
+    }
+    function queryCellInfo(args) {
+        if (args.data['Duration'] == 0 && args.column.field === 'Duration') {
+            args.cell.style.background = '#336c12';
+        } else if (args.data['Duration'] < 3 && args.column.field === 'Duration') {
+            args.cell.style.background = '#7b2b1d';
+        }
+
+    }
+    function pdfQueryCellInfo(args) {
+        if (args.column.field == 'Duration') {
+            if (+args.value === 0 || args.value === "") {
+                args.style = { backgroundColor: '#336c12' };
+            }
+            else if (args.value < 3) {
+                args.style = { backgroundColor: '#7b2b1d' };
+            }
+        }
+
+    }
+</script>

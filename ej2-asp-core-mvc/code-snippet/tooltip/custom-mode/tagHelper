@@ -1,0 +1,30 @@
+     <ejs-tooltip id="box" content="Tooltip from custom mode"  OpensOn="Custom" created="created">
+        <e-content-template>
+            <div id="content">
+                Double-click to open Tooltip.
+            </div>
+        </e-content-template>
+    </ejs-tooltip>
+
+<style>
+    #box {
+        background-color: #ececec;
+        border: 1px solid #c8c8c8;
+        box-sizing: border-box;
+        margin: 50px auto;
+        padding: 20px;
+        width: 250px;
+    }
+</style>
+<script>
+    function created() {
+        document.getElementById('box').addEventListener("dblclick", function () {
+            var tooltip = document.getElementById('box').ej2_instances[0];
+            if (this.getAttribute("data-tooltip-id")) {
+                tooltip.close();
+            } else {
+                tooltip.open(this);
+            }
+        });
+    }
+</script>

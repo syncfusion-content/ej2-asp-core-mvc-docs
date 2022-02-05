@@ -1,0 +1,16 @@
+@Html.EJS().Button("export").Content("Export").Render()
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnableSelection(true).EnableSfdtExport(true).EnableTextExport(true).Render()
+</div>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        var documenteditorElement = document.getElementById("container");
+        documenteditor = documenteditorElement.ej2_instances[0];
+        documenteditor.resize();
+        document.getElementById('export').addEventListener('click', function () {
+            documenteditor.save('sample', 'Txt');
+        });
+    }); 
+</script>

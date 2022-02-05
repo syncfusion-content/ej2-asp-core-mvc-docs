@@ -1,0 +1,8 @@
+@Html.EJS().TreeGrid("TreeGrid").Height(300).DataSource((IEnumerable<object>)ViewBag.datasource).Columns(col =>
+{
+   col.Field("TaskId").HeaderText("<span> Task ID </span>").Width(110).DisableHtmlEncode(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("TaskName").HeaderText("<span> Task Name </span>").DisableHtmlEncode(true).Width(210).Add();
+   col.Field("StartDate").HeaderText("Start Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width(210).Add();
+   col.Field("Duration").HeaderText("Duration").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(110).Add();
+
+}).ChildMapping("Children").AllowPaging(true).TreeColumnIndex(1).Render()

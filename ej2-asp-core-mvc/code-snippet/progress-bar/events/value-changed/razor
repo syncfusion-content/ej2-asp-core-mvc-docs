@@ -1,0 +1,5 @@
+@(Html.EJS().ProgressBar("lineardeterminate").Type(Syncfusion.EJ2.ProgressBar.ProgressType.Linear).Value(100)
+                        .Height("60").Load("Load")
+                        .Minimum(0).Maximum(100).ValueChanged("progressValue")
+                        .Animation(an => an.Enable(true).Delay(0).Duration(2000))
+                        .Render())

@@ -1,0 +1,34 @@
+<div class="control-section" style="width:400px;margin:0 auto;">
+    <ejs-toast id="element" title="Warning !" content="There was a problem with your network connection." click="onClick">
+        <e-toast-position X="Right" Y="Bottom"></e-toast-position>
+    </ejs-toast>
+    <ejs-toast id="element1" title="Success !" content="Your message has been sent successfully." click="onClick">
+        <e-toast-position X="Left" Y="Bottom"></e-toast-position>
+    </ejs-toast>
+    <div class="row">
+        <ejs-button id="show_toast" content="Show Right Position Toast" cssClass="e-btn"></ejs-button>
+        <ejs-button id="show_toast1" content="Show Left Position Toast" cssClass="e-btn"></ejs-button>
+    </div>
+</div>
+<script type="text/javascript">
+    setTimeout(
+        () => {
+            var toastObj = document.getElementById('element').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show();
+            var toastObj = document.getElementById('element1').ej2_instances[0];
+            toastObj.target = document.body;
+            toastObj.show();
+        }, 200);
+    document.getElementById("show_toast").addEventListener('click', function () {
+        var toastObj = document.getElementById('element').ej2_instances[0];
+        toastObj.show();
+    });
+    document.getElementById("show_toast1").addEventListener('click', function () {
+        var toastObj = document.getElementById('element1').ej2_instances[0];
+        toastObj.show();
+    });
+    function onClick(e) {
+        e.clickToClose = true;
+    }
+</script>

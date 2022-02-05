@@ -1,0 +1,26 @@
+@(Html.EJS().TreeGrid("StackedResize").AllowResizing().DataSource((IEnumerable<object>)ViewBag.datasource)
+            .Columns(col =>
+             {
+               col.HeaderText("Order Details").Columns(
+                   new List<Syncfusion.EJ2.TreeGrid.TreeGridColumn>() {
+                       new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "ID", Width = "90",
+                       HeaderText = "Order ID",
+                       TextAlign =Syncfusion.EJ2.Grids.TextAlign.Right
+                   },
+                   new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "Name", Width = "170",
+                       HeaderText = "Order Name"
+                   },
+               }).Add();
+               col.HeaderText("Shipment Details").Columns(
+                   new List<Syncfusion.EJ2.TreeGrid.TreeGridColumn>() {
+                       new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "ShipmentCategory", Width = "90",
+                       HeaderText = "Category"
+                   },
+                   new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "ShippedDate", Width = "90",
+                       HeaderText = "Shipped Date", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right,
+                       Format = "yMd"
+                   }
+               }).Add();
+
+             }).Height(260).ChildMapping("Children").TreeColumnIndex(1).Render()
+)
