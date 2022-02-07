@@ -71,7 +71,7 @@ var connection = new signalR.HubConnectionBuilder().withUrl('https://localhost:4
 
 Initially create a AspNetCore project and add the hub file for sending and receiving the data between server and clients.
 
-```tsx
+```c#
 using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
 
@@ -89,13 +89,13 @@ namespace WebApplication.Hubs
 
 To configure the SignalR middleware by registering the following service in the `ConfigureServices` method of the `Startup` class.
 
-```tsx
+```c#
     services.AddSignalR();
 ```
 
 To set up the SignalR routes by calling MapHub in the `Configure` method of the `Startup` class.
 
-```tsx
+```c#
     app.UseEndpoints(endpoints =>
 
     {
