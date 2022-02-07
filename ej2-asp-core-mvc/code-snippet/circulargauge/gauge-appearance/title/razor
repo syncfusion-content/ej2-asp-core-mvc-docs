@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("circular2").Title("Speedometer").TitleStyle(ts => ts.Color("#27d5ff")).Render()

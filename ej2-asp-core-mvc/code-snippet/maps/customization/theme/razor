@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Theme(Syncfusion.EJ2.Maps.MapsTheme.MaterialDark).Layers(l =>
+{
+    l.ShapeData(ViewBag.worldmap).Add();
+}).Render()

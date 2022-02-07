@@ -1,0 +1,11 @@
+@Html.EJS().PivotView("PivotGrid").Height(300).DataSource(dataSource => dataSource.Data((IEnumerable<object>)ViewBag.Data)
+ .Rows(rows =>
+ {
+     rows.Name("Country").ShowNoDataItems(true).Add(); rows.Name("State").ShowNoDataItems(true).Add();
+ }).Columns(columns =>
+ {
+     columns.Name("Date").ShowNoDataItems(true).Add();
+ }).Values(values =>
+ {
+     values.Name("Quantity").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+ })).Render()

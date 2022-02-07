@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.CircularGauge;
+
+@Html.EJS().CircularGauge("circular").Axes(axes => axes
+ .Pointers(pointer => {
+     pointer.Value(90).Type(PointerType.Marker)
+     .Radius("100%").MarkerShape(GaugeShape.Triangle).MarkerWidth(15).MarkerHeight(15).Add();
+     pointer.Value(90).Type(PointerType.RangeBar).Radius("60%").PointerWidth(10).Add();
+     pointer.Value(90).NeedleTail(nt => nt.Length("22%")).PointerWidth(20)
+         .Cap(cap => cap.Radius(15).Border(border => border.Width(5))).Radius("60%").Add();
+ })
+.Add()).Render()

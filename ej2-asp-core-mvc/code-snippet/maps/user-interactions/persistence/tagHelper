@@ -1,0 +1,16 @@
+    @{  
+
+     }
+    <div class="control-section">
+        <ejs-maps id="maps" >            
+            <e-maps-layers>
+             <e-maps-zoomsettings enable= true> </e-maps-zoomsettings>
+                <e-maps-layer shapeData="ViewBag.world">   
+                    <e-layersettings-selectionsettings enable= true fill= "green">
+                        <e-layers-selection-border color="White" width= 2> </e-layers-selection-border>
+                     </e-layersettings-selectionsettings>
+                </e-maps-layer>
+            </e-maps-layers>
+        </ejs-maps>
+    </div>
+    }

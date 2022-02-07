@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.Maps;
+@{
+    var propertyPath = new[] { "name" };
+    var data = new[]
+    {
+        new {latitude = 49.95121990866204, longitude =  18.468749999999998},
+        new {latitude =  59.88893689676585, longitude =  -109.3359375},
+        new {latitude =  -6.64607562172573, longitude =  -55.54687499999999}
+    };
+}
+
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.worldmap">
+         <e-layersettings-markers>
+             <e-layersettings-marker visible="true" animationDuration="0" dataSource="data" height="20" width="20"></e-layersettings-marker>
+         </e-layersettings-markers>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

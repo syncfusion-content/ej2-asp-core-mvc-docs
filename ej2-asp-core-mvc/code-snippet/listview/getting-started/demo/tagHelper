@@ -1,0 +1,1 @@
+<ej-listview id="list" dataSource="@ViewBag.dataSource"></ej-listview>

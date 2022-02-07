@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("container").LegendRender("LegendRender").LegendSettings(legend =>
+         legend.Visible(true)
+        ).Axes(axes => axes.Minimum(0).Maximum(100).LabelStyle(ls => ls.UseRangeColor(true))
+     .Ranges(range =>
+     {
+         range.Start(0).End(25).Radius("108%").LegendText("light air").Add();
+         range.Start(25).End(50).Radius("108%").LegendText("light air").Add();
+         range.Start(50).End(75).Radius("108%").LegendText("light breeze").Add();
+         range.Start(75).End(100).Radius("108%").LegendText("light breeze").Add();
+     }).MinorTicks(mi => mi.UseRangeColor(true)).MajorTicks(mj => mj.UseRangeColor(true)).Add()).Render()
+
+<script type="text/javascript">
+    function LegendRender(args) {
+        args.text = 'Legend Modified Text Value'
+    }
+</script>

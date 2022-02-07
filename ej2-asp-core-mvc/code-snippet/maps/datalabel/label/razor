@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.ShapeSettings(s => s.Autofill(true)).DataLabelSettings(label => label.Visible(true).LabelPath("name")).
+      ShapeData(ViewBag.usmap).Add();
+}).Render()

@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts => 
+ts.Text("Sales Revenue per Employee")).XAxis(xAxis =>
+xAxis.Labels(ViewBag.xLabels)).YAxis(yaxis =>
+yaxis.Labels(ViewBag.yLabels)).CellSettings(cs => cs.ShowLabel(false)).PaletteSettings(ps => ps.Palette(palette =>
+{
+    palette.Value(0).Color("#6EB5D0").Add();
+    palette.Value(50).Color("#7EDCA2").Add();
+    palette.Value(100).Color("#DCD57E").Add();
+}).Type(Syncfusion.EJ2.HeatMap.PaletteType.Fixed)).LegendSettings(ls =>
+ls.Position(Syncfusion.EJ2.HeatMap.LegendPosition.Bottom).Width("75%").EnableSmartLegend(true).ToggleVisibility(true).Title(title=>title.Text("1000 US$"))).DataSource(ViewBag.dataSource).Render()

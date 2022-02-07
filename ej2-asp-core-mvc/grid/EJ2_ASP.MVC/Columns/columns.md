@@ -8,12 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-title: "Columns"
-component: "Grid"
-description: "Documentation on column reordering, resizing, header templates (custom header content), and column templates (custom cell content) in the Essential JS 2 DataGrid control."
----
-
 # Columns
 
 The column definitions are used as the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) schema in the Grid. This plays a vital role in rendering column values in the required format.

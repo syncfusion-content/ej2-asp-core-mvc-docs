@@ -1,0 +1,16 @@
+<ejs-heatmap id='container' dataSource="ViewBag.dataSource">
+  <e-heatmap-titlesettings text="Sales Revenue per Employee (in 1000 US$)" textStyle="ViewBag.textStyle">
+  </e-heatmap-titlesettings>
+  <e-heatmap-xaxis labels="ViewBag.xLabels">
+  </e-heatmap-xaxis>
+  <e-heatmap-yaxis labels="ViewBag.yLabels">
+  </e-heatmap-yaxis>
+  <e-heatmap-palettesettings type="Gradient">
+        <e-palettes>
+            <e-palette color="#C06C84", label:"Low", value:50></e-palette>
+            <e-palette color="#6C5B7B", label:"Moderate", value:80 ></e-palette>
+            <e-palette color="#355C7D", label:"High", value: 100></e-palette>
+        </e-palettes>
+  </e-heatmap-palettesettings>
+  <e-heatmap-legendsettings visible="true"></e-heatmap-legendsettings>
+</ejs-heatmap>

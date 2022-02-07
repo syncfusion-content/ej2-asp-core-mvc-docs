@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var data = new[]
+       {
+            new { name= "India", population= "38332521" },
+            new { name= "Pakistan", population= "3090416" }
+    };
+    var bubble = new List<MapsBubble>
+{
+            new MapsBubble{Visible=true, DataSource=data, ValuePath="population", BubbleType=Syncfusion.EJ2.Maps.BubbleType.Square}
+};
+}
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.world_map" shapeDataPath="name" shapePropertyPath='new[] { "name" }' bubbleSettings="bubble">
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

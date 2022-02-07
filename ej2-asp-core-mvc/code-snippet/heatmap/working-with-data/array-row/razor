@@ -1,0 +1,7 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts =>
+ts.Text("GDP Growth Rate for Major Economies (in Percentage)").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+{
+    xAxis.ValueType(Syncfusion.EJ2.HeatMap.ValueType.DateTime).Minimum(new System.DateTime(2007, 1, 1)).IntervalType(Syncfusion.EJ2.HeatMap.IntervalType.Years).LabelFormat("yyyy");
+}).YAxis(yaxis => yaxis.ValueType(Syncfusion.EJ2.HeatMap.ValueType.Numeric)).LegendSettings(ls =>
+ls.Visible(false)).DataSource(ViewBag.dataSource).Render()

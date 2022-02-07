@@ -1,0 +1,219 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists
+<div class="list_container">
+    <div id="list_container_1">
+        <input class="e-input" type="text" id="firstInput" placeholder="Filter" title="Type in a name">
+        @Html.EJS().ListView("list-1").DataSource((IEnumerable<object>)ViewBag.firstListData).Select("onFirstListSelect").SortOrder(Syncfusion.EJ2.Lists.SortOrder.Ascending).Render()
+
+    </div>
+    <div id="btn">
+        @Html.EJS().Button("firstBtn").Content(">>").Render()
+
+        @Html.EJS().Button("secondBtn").Content(">").Disabled(true).Render()
+
+        @Html.EJS().Button("thirdBtn").Content("<").Disabled(true).Render()
+
+        @Html.EJS().Button("fourthBtn").Content("<<").Render()
+    </div>
+    <div id="list_container_2">
+        <input class="e-input" type="text" id="secondInput" placeholder="Filter" title="Type in a name">
+        @Html.EJS().ListView("list-2").DataSource((IEnumerable<object>)ViewBag.secondListData).Select("onSeconListSelect").SortOrder(Syncfusion.EJ2.Lists.SortOrder.Ascending).Render()
+    </div>
+
+</div>
+
+<style>
+.list_container {
+    height: 398px;
+    max-width: 485px;
+    margin: auto;
+}
+
+#list_container_1,
+#list_container_2 {
+    width: 200px;
+}
+
+#list-1,
+#list-2 {
+    height: 362px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+#list_container_1,
+#list_container_2 {
+    display: inline-block;
+}
+
+.e-btn {
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+#btn {
+    display: inline-block;
+    width: 41px;
+    margin: 0 15px;
+    position: relative;
+    top: -53%;
+    transform: translateY(50%);
+}
+</style>
+<script type="text/javascript">
+
+    var firstListObj, secondListObj, firstBtnObj, secondBtnObj, thirdBtnObj, fourthBtnObj, firstListData, secondListData;
+    window.onload = function () {
+        firstListObj = document.getElementById("list-1").ej2_instances[0];
+        secondListObj = document.getElementById("list-2").ej2_instances[0];
+        secondBtnObj = document.getElementById("secondBtn").ej2_instances[0];
+        thirdBtnObj = document.getElementById("thirdBtn").ej2_instances[0];
+        firstBtnObj = document.getElementById("firstBtn").ej2_instances[0];
+        fourthBtnObj = document.getElementById("fourthBtn").ej2_instances[0];
+        firstListData = firstListObj.dataSource.slice();
+        secondListData = secondListObj.dataSource.slice();
+    }
+
+    //Here we are moving all list items to second list on clicking move all button
+    document.getElementById("firstBtn").addEventListener('click', function () {
+        secondListObj.dataSource = Array.prototype.concat.call(firstListObj.dataSource, secondListObj.dataSource);
+        secondListObj.dataBind();
+        updateFirstListData();
+        firstListObj.removeMultipleItems(firstListObj.liCollection);
+        firstListData = firstListData.concat(firstListObj.dataSource);
+        secondListData = secondListObj.dataSource.slice();
+        firstBtnObj.disabled = true;
+        onFirstKeyUp();
+        setButtonState();
+    });
+
+    //Here we are moving selected list item to second list on clicking move button
+    document.getElementById("secondBtn").addEventListener('click', function () {
+        var e = firstListObj.getSelectedItems();
+        secondListObj.dataSource = Array.prototype.concat.call(secondListObj.dataSource, e.data);
+        secondListObj.dataBind();
+        updateFirstListData();
+        firstListObj.removeItem(e.item);
+        firstListData = firstListData.concat(firstListObj.dataSource);
+        secondListData = secondListObj.dataSource.slice();
+        onFirstKeyUp();
+        secondBtnObj.disabled = true;
+        setButtonState();
+    });
+
+    //Here we are moving selected list item to first list on clicking move button
+    document.getElementById("thirdBtn").addEventListener('click', function () {
+        var e = secondListObj.getSelectedItems();
+        firstListObj.dataSource = Array.prototype.concat.call(firstListObj.dataSource, e.data);
+        firstListObj.dataBind();
+        updateSecondListData();
+        secondListObj.removeItem(e.item);
+        secondListData = secondListData.concat(secondListObj.dataSource);
+        firstListData = firstListObj.dataSource.slice();
+        onSecondKeyUp();
+        thirdBtnObj.disabled = true;
+        setButtonState();
+
+    });
+
+    //Here we are moving all list items to first list on clicking move all button
+    document.getElementById("fourthBtn").addEventListener('click', function () {
+        firstListObj.dataSource = Array.prototype.concat.call(firstListObj.dataSource, secondListObj.dataSource);
+        firstListObj.dataBind();
+        updateSecondListData();
+        secondListObj.removeMultipleItems(secondListObj.liCollection);
+        secondListData = secondListData.concat(secondListObj.dataSource);
+        firstListData = firstListObj.dataSource.slice();
+        onSecondKeyUp();
+        setButtonState();
+
+    });
+
+    //Here we are updating ListView dataSource for First List
+    function updateFirstListData() {
+        Array.prototype.forEach.call(firstListObj.liCollection, function (list) {
+            firstListData.forEach(function (data, index) {
+                if (list.innerText.trim() === data.text) {
+                    delete firstListData[index];
+                }
+            });
+        });
+        document.getElementById("firstInput").value = '';
+        var ds = [];
+        firstListData.forEach(function (data) {
+            ds.push(data);
+        })
+        firstListData = ds;
+
+    }
+
+    //Here we are updating ListView dataSource for second List
+    function updateSecondListData() {
+        Array.prototype.forEach.call(secondListObj.liCollection, function (list) {
+            secondListData.forEach(function (data, index) {
+                if (list.innerText.trim() === data.text) {
+                    delete secondListData[index];
+                }
+            });
+
+        });
+        document.getElementById("secondInput").value = '';
+        var ds = [];
+        secondListData.forEach(function (data) {
+            ds.push(data);
+        })
+        secondListData = ds;
+
+    }
+    function onFirstListSelect() {
+        secondBtnObj.disabled = false;
+    }
+    function onSeconListSelect() {
+        thirdBtnObj.disabled = false;
+    }
+
+    //Here we are handling filtering of list items using dataManager for first List
+    function onFirstKeyUp(e) {
+        var value = document.getElementById("firstInput").value;
+        var data = new ej.data.DataManager(firstListData).executeLocal(new ej.data.Query().where('text', 'startswith', value, true));
+        if (!value) {
+            firstListObj.dataSource = firstListData.slice();
+        } else {
+            firstListObj.dataSource = data;
+        }
+        firstListObj.dataBind();
+
+    }
+
+    //Here we are handling filtering of list items using dataManager for second List
+    function onSecondKeyUp(e) {
+        var value = document.getElementById("secondInput").value;
+        var data = new ej.data.DataManager(secondListData).executeLocal(new ej.data.Query().where('text', 'startswith', value, true));
+        if (!value) {
+            secondListObj.dataSource = secondListData.slice();
+        } else {
+            secondListObj.dataSource = data;
+        }
+        secondListObj.dataBind();
+    }
+
+    //Here we are changing the button state
+    function setButtonState() {
+        if (firstListObj.dataSource.length) {
+            firstBtnObj.disabled = false;
+        } else {
+            firstBtnObj.disabled = true;
+            secondBtnObj.disabled = true;
+        }
+
+        if (secondListObj.dataSource.length) {
+            fourthBtnObj.disabled = false;
+        } else {
+            fourthBtnObj.disabled = true;
+            thirdBtnObj.disabled = true;
+        }
+
+    }
+
+</script>

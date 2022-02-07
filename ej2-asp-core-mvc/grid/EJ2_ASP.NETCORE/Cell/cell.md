@@ -8,12 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-title: "Cell"
-component: "Grid"
-description: "Learn how to customize the Essential JS 2 DataGrid cells with styling, text wrapping, adding custom attributes and tooltips."
----
-
 # Cell
 
 ## Cell customization

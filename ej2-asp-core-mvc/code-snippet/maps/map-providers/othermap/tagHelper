@@ -1,0 +1,6 @@
+  @using Syncfusion.EJ2;
+   <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer layerType="OSM" urlTemplate="http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level"></e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>

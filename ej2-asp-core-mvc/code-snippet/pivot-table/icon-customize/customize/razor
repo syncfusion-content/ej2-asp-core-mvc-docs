@@ -1,0 +1,58 @@
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true).AllowLabelFilter(true).AllowValueFilter(true)
+ .FormatSettings(formatsettings =>
+ {
+     formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+ }).Rows(rows =>
+ {
+     rows.Name("Country").Add(); rows.Name("Products").Add();
+ }).Columns(columns =>
+ {
+     columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+ }).Values(values =>
+ {
+     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+ })).ShowFieldList(true).ShowGroupingBar(true).Render()
+
+<style>
+    #PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-dropdown-icon::before,
+    #PivotView .e-pivot-button .e-icons.e-dropdown-icon::before {
+        content: "\ec25";
+    }
+
+    #PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-pv-filtered::before,
+    #PivotView .e-pivot-button .e-icons.e-pv-filtered::before {
+        content: "\e611";
+    }
+
+    #PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-pv-filter::before,
+    #PivotView .e-pivot-button .e-icons.e-pv-filter::before {
+        content: '\e611';
+    }
+
+    #PivotView_PivotFieldList .e-icons.e-toggle-field-list::before {
+        content: '\e342';
+    }
+
+    #PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-sort::before,
+    #PivotView .e-pivot-button .e-icons.e-sort::before {
+        content: '\e523';
+    }
+
+    #PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-remove::before,
+    #PivotView .e-pivot-button .e-icons.e-remove::before {
+        content: '\e94a';
+    }
+
+    #PivotView_PivotFieldList_Wrapper .e-icons.e-drag::before,
+    #PivotView .e-pivot-button .e-icons.e-drag::before {
+        content: '\e571';
+    }
+
+    #PivotView .e-icons.e-expand::before {
+        content: '\e22c';
+    }
+
+    #PivotView .e-icons.e-collapse::before {
+        content: '\e22b';
+    }
+</style>

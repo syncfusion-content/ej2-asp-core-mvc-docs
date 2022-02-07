@@ -1,0 +1,51 @@
+ <ejs-spreadsheet id="spreadsheet" created="created" showFormulaBar="false" allowDelete="false" showRibbon="false">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet name="Sheet1">
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="220"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="140"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+            <e-spreadsheet-sheet name="Sheet2">
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="220"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="140"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+ 
+
+    <script>
+
+       function created() {
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        // deleting the rows from 8th to 10th index. To delete row, the third argument of enum type is passed as 'Row', the last argument specifies the sheet name or index in which the delete operation will perform. By default,active sheet will be considered. It is applicable only for model type Row and Column.
+        this.delete(8, 10, 'Row', 0); // startIndex, endIndex, Row, sheet index
+        // deleting the 2nd and 5th indexed columns
+        this.delete(2, 2, 'Column', 'Sheet2');
+        this.delete(5, 5, 'Column');
+        this.delete(0, 0, "Sheet"); // delete the first sheet. sheet index starts from 0
+        // Applies style formatting after deleted the rows and columns
+        this.cellFormat({ textAlign: 'center' }, 'A2:A8');
+        this.cellFormat({ textAlign: 'center' }, 'D2:G8');
+    }
+
+    </script>

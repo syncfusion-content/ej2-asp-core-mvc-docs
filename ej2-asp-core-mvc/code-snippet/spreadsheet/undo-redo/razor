@@ -1,0 +1,38 @@
+<button id="customBtn" class="e-btn"> add/remove Class</button>
+
+@Html.EJS().Spreadsheet("spreadsheet").AllowUndoRedo(true).ActionComplete("onActionComplete").Render()
+
+<script>
+    document.getElementById("customBtn").addEventListener('click', updateCollection);
+
+    function onActionComplete(args) {
+        var actionEvents = args;
+        var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        if (actionEvents.eventArgs.action == "customCSS") {
+            var Element = spreadsheetObj.getCell(actionEvents.eventArgs.rowIdx, actionEvents.eventArgs.colIdx);
+            if (actionEvents.eventArgs.requestType == "undo") {
+                Element.classList.remove('customClass'); // To remove the custom class in undo action
+            }
+            else {
+                Element.classList.add('customClass');// To add the custom class in redo action
+            }
+        }
+    }
+
+    function updateCollection() {
+        var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet'),
+            cell = spreadsheetObj.getActiveSheet().activeCell,
+            cellIdx = ej.spreadsheet.getRangeIndexes(cell),
+            Element = spreadsheetObj.getCell(cellIdx[0], cellIdx[1]);
+        if (!Element.classList.contains("customClass")) {
+            Element.classList.add('customClass'); // To add the custom class in active cell element
+            spreadsheetObj.updateUndoRedoCollection({ eventArgs: { class: 'customClass', rowIdx: cellIdx[0], colIdx: cellIdx[1], action: 'customCSS' } }); // To update the undo redo collection
+        }
+    }
+</script>
+
+<style>
+    .customClass.e-cell {
+        background-color: red;
+    }
+</style>

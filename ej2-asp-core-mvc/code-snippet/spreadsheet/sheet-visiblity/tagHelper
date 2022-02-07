@@ -1,0 +1,58 @@
+ <ejs-spreadsheet id="spreadsheet" showFormulaBar="false" created="created">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet name="Visible Sheet" state="Visible">
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="130"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="220"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="140"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        
+            <e-spreadsheet-sheet name="Very Hidden Sheet" state="VeryHidden">
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="130"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="220"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="140"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+            <e-spreadsheet-sheet name="Hidden Sheet" state="Hidden">
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="130"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="220"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="140"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+<script>
+     function created() {
+      // Applies style formatting to active visible sheet
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.cellFormat({ textAlign: 'center' }, 'D2:H11');
+        // Applies style formatting to active hidden sheet
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Hidden Sheet!A1:H1');
+        this.cellFormat({ textAlign: 'center' }, 'Hidden Sheet!D2:H15');
+    }
+</script>

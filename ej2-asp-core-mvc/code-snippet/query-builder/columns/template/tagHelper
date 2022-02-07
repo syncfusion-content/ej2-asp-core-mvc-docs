@@ -1,0 +1,79 @@
+<div class="col-lg-8 control-section">
+    <ejs-querybuilder id="querybuilder" width="100%" rule="ViewBag.rule" dataSource="ViewBag.dataSource">
+        <e-querybuilder-columns>
+            <e-querybuilder-column field="Category" label="Category" type="string"></e-querybuilder-column>
+            <e-querybuilder-column field="PaymentMode" label="Payment Mode" type="string" template="ViewBag.template[0]" operators="ViewBag.paymentOperator"></e-querybuilder-column>
+            <e-querybuilder-column field="TransactionType" label="Transaction Type" type="boolean" operators="ViewBag.transactionOperator"></e-querybuilder-column>
+            <e-querybuilder-column field="Description" label="Description" type="string"></e-querybuilder-column>
+            <e-querybuilder-column field="Date" label="Date" type="date"></e-querybuilder-column>
+            <e-querybuilder-column field="Amount" label="Amount" type="number" operators="ViewBag.amountOperator"></e-querybuilder-column>
+        </e-querybuilder-columns>
+    </ejs-querybuilder>
+</div>
+    
+<script>
+    function paymentCreate() {
+        var elem = document.createElement('input');
+        elem.setAttribute('type', 'text');
+        return elem;
+    }
+    function paymentDestroy(args) {
+        var selectObj = ej.base.getComponent(document.getElementById(args.elementId), 'multiselect');
+        if (selectObj) {
+            selectObj.destroy();
+        }
+        var dropdown = ej.base.getComponent(document.getElementById(args.elementId), 'dropdownlist');
+        if (dropdown) {
+            dropdown.destroy();
+        }
+    }
+    function paymentWrite(args) {
+        var ds = ['Cash', 'Debit Card', 'Credit Card', 'Net Banking', 'Wallet'];
+        var inOperators = ['in', 'notin'];
+        var qryBldrObj = ej.base.getComponent(document.getElementById("querybuilder"), 'query-builder');
+        if (inOperators.indexOf(args.operator) > -1) {
+            var multiSelectObj = new ej.dropdowns.MultiSelect({
+                dataSource: ds,
+                value: args.values,
+                mode: 'CheckBox',
+                placeholder: 'Select Transaction',
+                change: function (e) {
+                    qryBldrObj.notifyChange(e.value, e.element);
+                }
+            });
+            multiSelectObj.appendTo('#' + args.elements.id);
+        }
+        else {
+            var dropDownObj = new ej.dropdowns.DropDownList({
+                dataSource: ds,
+                value: args.values ? args.values : ds[0],
+                change: function (e) {
+                    qryBldrObj.notifyChange(e.itemData.value, e.element);
+                }
+            });
+            dropDownObj.appendTo('#' + args.elements.id);
+        }
+    }
+</script>
+
+<style>
+   .e-control-wrapper.e-slider-container.e-horizontal {
+        height: 0;
+    }
+
+    .e-querybuilder {
+        margin: 3% auto;
+    }
+
+    #ruleContent {
+        border: 1px solid #d3d3d3;
+        width: 100%;
+        height: 500px;
+        overflow: auto;
+    }
+
+    .highcontrast textarea#ruleContent {
+	  background-color: #000;
+	}
+
+</style>

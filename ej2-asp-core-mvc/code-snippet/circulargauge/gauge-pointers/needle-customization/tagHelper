@@ -1,0 +1,37 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.CircularGauge;
+
+@{
+    var font = new CircularGaugeFont
+    {
+        Color = "#1E7145"
+    };
+}
+<ejs-circulargauge id="circular">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis minimum="0" maximum="100" startAngle="270" endAngle="90">
+			<e-axis-labelstyle position="Outside" font="font">
+            </e-axis-labelstyle>
+			<e-axis-linestyle color="#1E7145" width="3"></e-axis-linestyle>
+			<e-axis-majorticks interval="100" width="1" height="0"></e-axis-majorticks>
+            <e-axis-minorticks width="0" height="0"></e-axis-minorticks>
+			<e-circulargauge-annotations>
+                <e-circulargauge-annotation content="#annotation-template" zIndex="1"></e-circulargauge-annotation>
+            </e-circulargauge-annotations>
+            <e-circulargauge-pointers>
+                <e-circulargauge-pointer value="70" radius="80%" color="Green" pointerWidth="2" needleStartWidth="4" needleEndWidth="4">
+                    <e-pointer-cap radius="8" color="green">
+                    </e-pointer-cap>
+                    <e-pointer-needletail length="0%"></e-pointer-needletail>
+                </e-circulargauge-pointer>
+            </e-circulargauge-pointers>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>
+<script id='annotation-template' type="text/x-template">
+    <div id='templateWrap'>
+        <div class='des'>
+            <div style="color:#757575; font-family:Roboto; font-size:14px;padding-top: 26px">Customized Needle</div>
+        </div>
+    </div>
+</script>

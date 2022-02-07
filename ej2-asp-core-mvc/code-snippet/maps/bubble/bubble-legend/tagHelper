@@ -1,0 +1,20 @@
+@{
+    var data = new[]
+        {
+            new {color= "green", name = "India", population= "38332521" },
+            new { color="purple", name= "Australia", population= "383521" },
+            new { color="blue", name= "Pakistan", population= "3090416" }
+        };
+    var bubble = new List<MapsBubble>
+    {
+        new MapsBubble{Visible=true, MinRadius=20, DataSource=data, MaxRadius=40, ColorValuePath="color", ValuePath="population"}
+    };
+}
+@using Syncfusion.EJ2.Maps;
+<ejs-maps id="maps">
+    <e-maps-legendsettings visible="true" type="Bubbles"></e-maps-legendsettings>
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.world_map" shapeDataPath="name" shapePropertyPath='new[] { "name" }' bubbleSettings="bubble">
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

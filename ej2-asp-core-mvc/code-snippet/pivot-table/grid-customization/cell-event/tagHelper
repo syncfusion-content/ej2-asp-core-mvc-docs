@@ -1,0 +1,76 @@
+
+
+<div>
+<div class="column-8">
+    <ejs-pivotview id="PivotView" height="300" load="onLoad" cellSelected="onCellSelected")>
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+    <e-gridSettings allowSelection="true">
+           <e-selectionSettings mode="Cell" cellSelectionMode="Box" type="Multiple"></e-selectionSettings>
+    </e-gridSettings>
+</ejs-pivotview>
+</div>
+<div class="column-3">
+     <div class="eventarea" style="height: 230px;overflow: auto">
+         <span class="EventLog" id="selection-EventLog" style="word-break: normal;"></span>
+     </div>
+</div>
+</div>
+<script>
+    function onCellSelected(args) {
+        document.getElementById('selection-EventLog').innerHTML = '';
+        if (args.selectedCellsInfo.length > 0) {
+            for (var cnt = 0; cnt < args.selectedCellsInfo.length; cnt++) {
+                var cell = args.selectedCellsInfo[cnt];
+                var summMeasure = this.engineModule.fieldList[cell.measure] ? this.engineModule.fieldList[cell.measure].aggregateType + ' of ' +
+                    this.engineModule.fieldList[cell.measure].caption : '';
+                appendElement(
+                    (cell.columnHeaders == '' ? '' : 'Column Headers: ' + '<b>' + cell.columnHeaders.split('.').join(' - ') + '</b></br>') +
+                    (cell.rowHeaders == '' ? '' : 'Row Headers: ' + '<b>' + cell.rowHeaders.split('.').join(' - ') + '</b></br>') +
+                    (summMeasure == '' ? '' : 'Measure: ' + '<b>' + summMeasure + '</b></br>') +
+                    'Value: ' + '<b>' + cell.currentCell.formattedText + '</b><hr></br>');
+            }
+        }
+    }
+    function appendElement(html) {
+        var span = document.createElement('span');
+        span.innerHTML = html;
+        var log = document.getElementById('selection-EventLog');
+        log.appendChild(span);
+    }
+    var modeddl = new ej.dropdowns.DropDownList({
+        floatLabelType: 'Auto',
+        width: 150,
+        change: function (args) {
+            var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+            pivotObj.gridSettings.selectionSettings.mode = args.value;
+            pivotObj.renderModule.updateGridSettings();
+        }
+    });
+    modeddl.appendTo('#mode');
+    var typeddl = new ej.dropdowns.DropDownList({
+        floatLabelType: 'Auto',
+        width: 150,
+        change: function (args) {
+            var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+            pivotObj.gridSettings.selectionSettings.type = args.value;
+            pivotObj.renderModule.updateGridSettings();
+        }
+    });
+    typeddl.appendTo('#type');
+</script>

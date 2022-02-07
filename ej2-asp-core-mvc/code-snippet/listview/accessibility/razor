@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists
+
+    @Html.EJS().ListView("listview").DataSource((IEnumerable<object>)ViewBag.dataSource).Fields(new ListViewFieldSettings { Tooltip = "text" }).ShowHeader(true).HeaderTitle("Continent").Render()
+
+<style>
+    #listview {
+        display: block;
+        max-width: 400px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>

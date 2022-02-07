@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var propertyPath = new[] { "name" };
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new  MapsColorMapping{ From = 1, To = 100, MinOpacity = 0.3, MaxOpacity = 1, Color = "rgb(153,174,214)"  },
+        new MapsColorMapping { From = 101, To = 200,  MinOpacity = 0.4, MaxOpacity = 1, Color = "rgb(115,143,199)" }
+    };
+}
+
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer dataSource="ViewBag.populationData" shapeData="ViewBag.world_map" shapeDataPath="name" shapePropertyPath="propertyPath">
+            <e-layersettings-shapesettings colorValuePath="density" fill="#E5E5E5" colorMapping="colormapping"></e-layersettings-shapesettings>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

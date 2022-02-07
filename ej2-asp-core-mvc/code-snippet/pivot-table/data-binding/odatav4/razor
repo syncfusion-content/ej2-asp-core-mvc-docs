@@ -1,0 +1,16 @@
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource(dataManger =>
+{
+    dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/Orders/").CrossDomain(true).Adaptor("ODataV4Adaptor");
+
+}).ExpandAll(false).ShowAggregationOnValueField(false).EnableSorting(true)
+    .Rows(rows =>
+    {
+        rows.Name("ShipCountry").Add(); rows.Name("ShipCity").Add();
+    }).Columns(columns =>
+    {
+        columns.Name("CustomerID").Caption("Customer ID").Add();
+    }).Values(values =>
+    {
+        values.Name("Freight").Caption("Freight").Add(); //values.Name("UnitPrice").Caption("Unit Price").Add();
+    })
+    ).ShowFieldList(true).Render()

@@ -1,0 +1,24 @@
+@Html.EJS().Button("pdf").Content("Pdf Export").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotGrid").Height("300").DataSource(dataSource => dataSource.Data((IEnumerable<object>)ViewBag.Data).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Production Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).AllowPdfExport(true).Render()
+
+<script>
+    var pivotGridObj;
+    document.getElementById('pdf').onclick = function () {
+        pivotGridObj = document.getElementById('PivotGrid').ej2_instances[0];
+        pivotGridObj.pdfExport();
+    }
+</script>

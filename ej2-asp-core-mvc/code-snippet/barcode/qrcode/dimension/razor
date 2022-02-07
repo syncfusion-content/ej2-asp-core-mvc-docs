@@ -1,0 +1,5 @@
+@(Html.EJS().QRCodeGenerator("container").
+Width("300px").
+foreColor("red").
+Height("300px").
+Value("SYNCFUSION").Render() )

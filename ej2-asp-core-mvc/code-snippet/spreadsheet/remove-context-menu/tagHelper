@@ -1,0 +1,40 @@
+ <ejs-spreadsheet id="spreadsheet" contextMenuBeforeOpen="createdHandler">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet>
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="80"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="80"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="80"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+<script>
+    function createdHandler() {
+        // To remove existing context menu items.
+        this.removeContextMenuItems(["Insert Column"], false);
+    }
+</script>
+
+<style>
+    .e-spreadsheet .e-tab .e-tab-text {
+        display: inherit;
+    }
+</style>

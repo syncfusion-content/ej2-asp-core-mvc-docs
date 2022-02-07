@@ -1,0 +1,67 @@
+     @{ var headerTemplate = "<div class='headerContainer'><span class='fruitHeader'>Fruits</span>" +
+              "<button id='search'></button><button id='add'></button><button id='sort'></button></div>";
+
+    }
+        <ejs-listview id="element" dataSource="ViewBag.fruitsdata" showHeader="true" headerTemplate="@headerTemplate" actionComplete="renderHeaderButtons">
+        </ejs-listview>
+
+<style>
+    #element {
+        display: block;
+        max-width: 353px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+        #element .e-list-header {
+            padding: 0;
+        }
+
+        #element .headerContainer {
+            width: 350px;
+            height: 48px;
+            line-height: 48px;
+            background: rgb(2, 120, 215);
+            color: white;
+            margin-bottom: 3px;
+        }
+
+    .headerContainer .fruitHeader {
+        margin-left: 20px;
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .headerContainer #add,
+    .headerContainer #sort,
+    .headerContainer #search {
+        float: right;
+        margin-right: 15px;
+        margin-top: 7px;
+        background: white;
+        color: black
+    }
+
+    .headerContainer .e-search-icon::before {
+        content: '\e961';
+        color: lightslategray;
+    }
+
+
+    .headerContainer .e-add-icon::before {
+        content: '\e823';
+    }
+
+    .headerContainer .e-sort-icon::before {
+        content: '\e840';
+    }
+</style>
+
+<script>
+    function renderHeaderButtons() {
+        ['search', 'sort', 'add'].forEach((item) => {
+            new ej.buttons.Button({ iconCss: `e-icons e-${item}-icon`, cssClass: 'e-small e-round', isPrimary: true }, `#${item}`)
+        });
+    }
+</script>

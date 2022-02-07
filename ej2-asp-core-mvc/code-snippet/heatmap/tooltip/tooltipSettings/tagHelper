@@ -1,0 +1,24 @@
+<ejs-heatmap id='container' dataSource="ViewBag.dataSource"  tooltipRender="window.ontooltipRender" showTooltip="true">
+  <e-heatmap-titlesettings text="Sales Revenue per Employee (in 1000 US$)" textStyle="ViewBag.textStyle">
+  </e-heatmap-titlesettings>
+  <e-heatmap-xaxis labels="ViewBag.xLabels">
+  </e-heatmap-xaxis>
+  <e-heatmap-yaxis labels="ViewBag.yLabels">
+  </e-heatmap-yaxis>
+  <e-heatmap-cellsettings showLabel="false"></e-heatmap-cellsettings>
+  <e-heatmap-palettesettings>
+        <e-palettes>
+            <e-palette color="#F0ADCE"></e-palette>
+            <e-palette color="#19307B"></e-palette>
+        </e-palettes>
+  </e-heatmap-palettesettings>
+   <e-heatmap-tooltipsettings fill="#265259">
+   <e-tooltipsettings-textstyle color="#FFFFFF" size="12px"></e-tooltipsettings-textstyle>
+   <e-tooltipsettings-border color="#98BABF" width="1"></e-tooltipsettings-border>
+   </e-heatmap-tooltipsettings>
+</ejs-heatmap>
+<script>
+  var tooltipRender = function (args) {
+    args.content = ['In ' + args.yLabel + ', the ' + args.xLabel + ' produced ' + args.value + ' million barrels per day'];
+  };
+</script>

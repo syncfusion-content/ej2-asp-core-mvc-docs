@@ -1,0 +1,15 @@
+  @Html.EJS().Kanban("kanban").KeyField("Status").AllowDragAndDrop(false).DataSource(dataManger => {
+            dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Kanban").CrossDomain(true).Adaptor("ODataAdaptor");
+            }).Columns(col=> {
+           col.HeaderText("To Do").KeyField("Open").Add();
+           col.HeaderText("In Progress").KeyField("InProgress").Add();
+           col.HeaderText("Testing").KeyField("Testing").Add();
+           col.HeaderText("Done").KeyField("Close").Add();
+           }).CardSettings(card =>  {
+            card.ContentField("Summary").HeaderField("Id");
+            }).DialogOpen("onDialogOpen").Render()
+<script>
+    function onDialogOpen(args) {
+        args.cancel = true;
+    }
+</script>

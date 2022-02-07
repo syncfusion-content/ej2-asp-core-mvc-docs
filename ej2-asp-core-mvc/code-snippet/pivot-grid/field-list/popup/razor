@@ -1,0 +1,48 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().Button("fieldlistbtn").Content("Field List").IsPrimary(true).Render()
+
+<div id="Popup_FieldList"></div>
+
+@Html.EJS().PivotView("PivotGrid").Height("300").EnginePopulated("onGridEnginePopulate").Render()
+
+@Html.EJS().PivotFieldList("PivotFieldList").RenderMode(Mode.Popup).Target("#Popup_FieldList").DataSource(dataSource => dataSource.Data((IEnumerable<object>)ViewBag.Data).ExpandAll(false).EnableSorting(true)
+ .FormatSettings(formatsettings =>
+ {
+     formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+ }).Rows(rows =>
+ {
+     rows.Name("Country").Add(); rows.Name("Products").Add();
+ }).Columns(columns =>
+ {
+     columns.Name("Year").Caption("Production Year").Add(); columns.Name("Quarter").Add();
+ }).Values(values =>
+ {
+     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+ })).EnginePopulated("onFieldListEnginePopulate").Render()
+
+<style>
+    .e-toggle-field-list {
+        display: none !important;
+    }
+</style>
+
+<script>
+    var pivotGridObj; var fieldlistObj;
+    function onGridEnginePopulate(args) {
+        pivotGridObj = document.getElementById('PivotGrid').ej2_instances[0];
+        fieldlistObj = document.getElementById('PivotFieldList').ej2_instances[0];
+        if (fieldlistObj) {
+            fieldlistObj.update(pivotGridObj);
+        }
+    }
+    function onFieldListEnginePopulate(args) {
+        pivotGridObj = document.getElementById('PivotGrid').ej2_instances[0];
+        fieldlistObj = document.getElementById('PivotFieldList').ej2_instances[0];
+        fieldlistObj.updateView(pivotGridObj);
+    }
+    document.getElementById('fieldlistbtn').onclick = function () {
+        fieldlistObj = document.getElementById('PivotFieldList').ej2_instances[0];
+        fieldlistObj.dialogRenderer.fieldListDialog.show();
+    };
+</script>

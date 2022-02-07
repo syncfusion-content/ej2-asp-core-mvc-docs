@@ -1,0 +1,39 @@
+@Html.EJS().Spreadsheet("spreadsheet").contextMenuBeforeOpen("createdHandler").Sheets(sheet =>
+{
+    sheet.Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+  
+    }).Columns(column =>
+    {
+        column.Width(80).Add();
+           column.Width(80).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(80).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+    }).Add();
+}).Render()
+
+<script>
+    function createdHandler() {
+        //To enable / disable context menu items.
+          this.spreadsheet.enableContextMenuItems(['Rename'], false, false); // Contextmenu Items that needs to be enabled / disabled, Set true / false to enable / disable the menu items, Set true if the given text is a unique id.
+    }
+</script>
+
+<style>
+    .e-spreadsheet .e-tab .e-tab-text {
+        display: inherit;
+    }
+</style>

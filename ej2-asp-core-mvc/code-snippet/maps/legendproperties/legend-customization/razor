@@ -1,0 +1,49 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var data = new[]
+        {
+            new { Country= "China", Membership= "Permanent" },
+            new { Country= "France", Membership= "Permanent" },
+            new { Country= "Russia", Membership= "Permanent" },
+            new { Country= "Kazakhstan", Membership= "Non-Permanent" },
+            new { Country= "Poland", Membership= "Non-Permanent" },
+            new { Country= "Sweden", Membership= "Non-Permanent" },
+        };
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new MapsColorMapping{ Color = "#D84444",Value= "Permanent"  },
+        new MapsColorMapping { Color= "#316DB5", Value = "Non-Permanent" },
+    };
+    var text = new MapsFont
+    {
+        Size = "12px",
+        Color = "red",
+        FontStyle = "italic"
+    };
+    var title = new MapsCommonTitleSettings
+    {
+        Description = "Legend title",
+        Text = "Legend"
+    };
+    var titleStyle = new TitleSettingsTextStyleTitleSettings
+    {
+        Size = "12px",
+        Color = "#d6e341",
+        FontStyle = "italic"
+    };
+    var border = new MapsBorder
+    {
+        Color = "blue",
+        Width = 2,
+        Opacity = 1
+    };
+}
+
+@Html.EJS().Maps("maps").LegendSettings(legend => legend.Visible(true).Background("green").Fill("orange").LabelPosition(Syncfusion.EJ2.Maps.LabelPosition.Before).
+Orientation(Syncfusion.EJ2.Maps.LegendArrangement.Vertical).TextStyle(text).Title(title).TitleStyle(titleStyle).Border(border)).Layers(l =>
+{
+    l.ShapeSettings(ss => ss.ColorValuePath("Membership").ColorMapping(colormapping)).ShapeData(ViewBag.worldMap)
+    .ShapeDataPath("Country").ShapePropertyPath("name")
+    .DataSource(data).Add();
+}).Render()

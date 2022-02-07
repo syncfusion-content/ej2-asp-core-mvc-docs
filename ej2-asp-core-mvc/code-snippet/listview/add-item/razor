@@ -1,0 +1,69 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists;
+<div id="sample">
+    @Html.EJS().ListView("sample-list-flat").DataSource((IEnumerable<object>)ViewBag.dataSource).Fields(new ListViewFieldSettings { IconCss = "icon", Text = "text" }).ActionComplete("onComplete").Template("<div class='text-content'> ${text} <span class = 'delete-icon'></span> </div>").Render()
+    @Html.EJS().Button("btn").Content("Add Item").Render()
+</div>
+
+<style>
+    #sample-list-flat {
+        margin: 40px auto;
+        max-width: 350px;
+    }
+
+    #btn {
+        margin: 40px auto;
+        display: block;
+    }
+    /* csslint ignore:start */
+
+    @@font-face {
+        font-family: "e-icon";
+        src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAAKAIAAAwAgT1MvMj1tSfIAAAEoAAAAVmNtYXDnEOdVAAABiAAAADZnbHlmXOniGAAAAcgAAAFAaGVhZBC1AhkAAADQAAAANmhoZWEIUQQDAAAArAAAACRobXR4CAAAAAAAAYAAAAAIbG9jYQCgAAAAAAHAAAAABm1heHABDgCYAAABCAAAACBuYW1lv4Bt4QAAAwgAAAIZcG9zdJx8QW4AAAUkAAAAOwABAAAEAAAAAFwEAAAAAAAD9AABAAAAAAAAAAAAAAAAAAAAAgABAAAAAQAApWcDV18PPPUACwQAAAAAANbRXpQAAAAA1tFelAAAAAAD9AP0AAAACAACAAAAAAAAAAEAAAACAIwAAgAAAAAAAgAAAAoACgAAAP8AAAAAAAAAAQQAAZAABQAAAokCzAAAAI8CiQLMAAAB6wAyAQgAAAIABQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUGZFZABA5wDnAAQAAAAAXAQAAAAAAAABAAAAAAAABAAAAAQAAAAAAAACAAAAAwAAABQAAwABAAAAFAAEACIAAAAEAAQAAQAA5wD//wAA5wD//wAAAAEABAAAAAEAAAAAAAAAoAAAAAIAAAAAA/QD9AALAIsAAAEHFwcnByc3JzcXNwUfHz8fLx8PHgLuhIRrg4NrhIRrg4P9iQECAwQGBwcJCwsMDQ4PDxEREhMUFBUWFhcXFxkYGRkaGhkZGBkXFxcWFhUUFBMSEREPDw4NDAsLCQcHBgQDAgEBAgMEBgcHCQsLDA0ODw8RERITFBQVFhYXFxcZGBkZGhoZGRgZFxcXFhYVFBQTEhERDw8ODQwLCwkHBwYEAwICg4OGa4SEa4ODaoCE7hoZGRgZFxcXFhYVFBQTEhERDw8ODQwLCwkHBwYEAwIBAQIDBAYHBwkLCwwNDg8PERESExQUFRYWFxcXGRgZGRoaGRkYGRcXFxYWFRQUExIREQ8PDg0MCwsJBwcGBAMCAQECAwQGBwcJCwsMDQ4PDxEREhMUFBUWFhcXFxkYGRkAAAASAN4AAQAAAAAAAAABAAAAAQAAAAAAAQAGAAEAAQAAAAAAAgAHAAcAAQAAAAAAAwAGAA4AAQAAAAAABAAGABQAAQAAAAAABQALABoAAQAAAAAABgAGACUAAQAAAAAACgAsACsAAQAAAAAACwASAFcAAwABBAkAAAACAGkAAwABBAkAAQAMAGsAAwABBAkAAgAOAHcAAwABBAkAAwAMAIUAAwABBAkABAAMAJEAAwABBAkABQAWAJ0AAwABBAkABgAMALMAAwABBAkACgBYAL8AAwABBAkACwAkARcgZGVsZXRlUmVndWxhcmRlbGV0ZWRlbGV0ZVZlcnNpb24gMS4wZGVsZXRlRm9udCBnZW5lcmF0ZWQgdXNpbmcgU3luY2Z1c2lvbiBNZXRybyBTdHVkaW93d3cuc3luY2Z1c2lvbi5jb20AIABkAGUAbABlAHQAZQBSAGUAZwB1AGwAYQByAGQAZQBsAGUAdABlAGQAZQBsAGUAdABlAFYAZQByAHMAaQBvAG4AIAAxAC4AMABkAGUAbABlAHQAZQBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIAB1AHMAaQBuAGcAIABTAHkAbgBjAGYAdQBzAGkAbwBuACAATQBlAHQAcgBvACAAUwB0AHUAZABpAG8AdwB3AHcALgBzAHkAbgBjAGYAdQBzAGkAbwBuAC4AYwBvAG0AAAAAAgAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQIBAwARY2lyY2xlLWNsb3NlLS0tMDIAAAA=) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /* csslint ignore:end */
+
+    #sample-list-flat .delete-icon::after {
+        font-family: "e-icon";
+        content: "\e700";
+        float: right;
+        cursor: pointer;
+    }
+</style>
+<script>
+    //Event handler to add the list item on button click
+    document.getElementById("btn").onclick = () => {
+        var listviewInstance = document.getElementById("sample-list-flat").ej2_instances[0];
+        var data = {
+            text: "Koenigsegg - " + (Math.random() * 1000).toFixed(0),
+            id: (Math.random() * 1000).toFixed(0).toString(),
+            icon: "delete-icon"
+        };
+        listviewInstance.addItem([data]);
+        setTimeout(() => {
+            var newEle = document.querySelectorAll('[data-uid="' + data.id + '"]');
+            newEle[0].addEventListener("click", deleteItem.bind(this));
+        }, 100);
+    };
+
+    //Method for actionComplete handler
+    function onComplete() {
+        var iconEle = document.getElementsByClassName("delete-icon");
+        //Event handler to bind the click event for delete icon
+        Array.prototype.forEach.call(iconEle, (element) => {
+            element.addEventListener("click", deleteItem.bind(this));
+        });
+    }
+
+    //Method to delete the list item
+    function deleteItem(args) {
+        var listviewInstance = document.getElementById("sample-list-flat").ej2_instances[0];
+        args.stopPropagation();
+        var liItem = (args.target).parentElement.parentElement;
+        listviewInstance.removeItem(liItem);
+        onComplete();
+    }
+</script>

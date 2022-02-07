@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+@Html.EJS().Maps("maps").Annotations(new List<Syncfusion.EJ2.Maps.MapsAnnotation>{
+    new Syncfusion.EJ2.Maps.MapsAnnotation
+    {
+        Content = "<div id='annotation' style='display:none'><img src=''~/App_Data/ballon.png'></div>",
+        X = "0%",
+        Y = "50%",
+    }
+}).Layers(layer =>
+{
+    layer.ShapeData(ViewBag.worldmap).Add();
+}).Render()

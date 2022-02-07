@@ -1,0 +1,28 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Maps
+@{
+    var data = new[]
+    {
+        new {latitude= 49.95121990866204, longitude= 18.468749999999998, name= "Europe" },
+        new {latitude= 59.88893689676585, longitude= -109.3359375, name= "North America" },
+        new {latitude= -6.64607562172573, longitude= -55.54687499999999, name= "South America" }
+    };
+}
+@Html.EJS().Maps("container").ZoomSettings(new Syncfusion.EJ2.Maps.MapsZoomSettings
+      {
+          Enable = true,
+          ShouldZoomInitially = true,
+          HorizontalAlignment = Alignment.Near
+      }).Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+         {
+                    new Syncfusion.EJ2.Maps.MapsLayer
+                    {
+                        ShapeData = ViewBag.world_map,
+                        MarkerSettings  = new List<Syncfusion.EJ2.Maps.MapsMarker>
+                        {
+                            new Syncfusion.EJ2.Maps.MapsMarker
+                            {
+                                Visible = true,
+                                DataSource = data
+                            }
+                        }}}).Render()

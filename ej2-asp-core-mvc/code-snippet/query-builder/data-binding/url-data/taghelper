@@ -1,0 +1,17 @@
+<div> 
+   <ejs-querybuilder id="querybuilder" width="100%" > 
+        <e-data-manager url="Home/QBDataSource" adaptor="UrlAdaptor" crossDomain="true"></e-data-manager> 
+        <e-querybuilder-columns> 
+            <e-querybuilder-column field="EmployeeID" label="Employee ID" type="number"></e-querybuilder-column>
+        <e-querybuilder-column field="FirstName" label="FirstName" type="string">
+        </e-querybuilder-column>
+        <e-querybuilder-column field="TitleOfCourtesy" label="Title Of Courtesy" type="boolean"></e-querybuilder-column>
+        <e-querybuilder-column field="Title" label="Title" type="string"></e-querybuilder-column>
+        <e-querybuilder-column field="HireDate" label="Hire Date" type="date" format="dd/MM/yyyy"></e-querybuilder-column>
+        <e-querybuilder-column field="Country" label="Country" type="string"></e-querybuilder-column>
+        <e-querybuilder-column field="City" label="City" type="string"></e-querybuilder-column>
+        </e-querybuilder-columns> 
+    </ejs-querybuilder> 
+</div> 
+           
+        

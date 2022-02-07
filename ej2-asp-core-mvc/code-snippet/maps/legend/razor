@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var ColorMapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping>
+{
+         new MapsColorMapping{Value="Permanent", Color="#D84444"},
+         new MapsColorMapping{Value="Non-Permanent", Color="#316DB5"}
+    };
+}
+
+@Html.EJS().Maps("maps").LegendSettings(legend => legend.Visible(true)).Layers(l =>
+{
+l.ShapeSettings(ss => ss.ColorValuePath("Membership").ColorMapping(ColorMapping))
+    .ShapeData(ViewBag.worldMap).ShapeDataPath("Country").ShapePropertyPath("name")
+    .DataSource(ViewBag.uncountries).Add();
+}).Render()

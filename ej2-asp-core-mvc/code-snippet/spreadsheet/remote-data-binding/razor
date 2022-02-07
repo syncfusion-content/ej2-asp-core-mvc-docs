@@ -1,0 +1,29 @@
+@Html.EJS().Spreadsheet("spreadsheet").Sheets(sheet =>
+  {
+      sheet.Name("Shipment Details").Ranges(ranges =>
+      {
+          ranges.ShowFieldAsHeader(false).StartCell("A2").Query("new ej.data.Query().select(['OrderID', 'CustomerID', 'ShipName', 'ShipCity', 'ShipCountry', 'Freight']).take(200)").DataSource(dataManger =>
+   {
+       dataManger.Url("https://js.syncfusion.com/demos/ejServices//wcf/Northwind.svc/Orders").CrossDomain(true);
+   }).Add();
+      }).Rows(row =>
+      {
+          row.Cells(cell =>
+          {
+              cell.Value("Order ID").Add();
+              cell.Value("Customer Name").Add();
+              cell.Value("Freight").Add();
+              cell.Value("Ship Name").Add();
+              cell.Value("Ship City").Add();
+              cell.Value("Ship Country").Add();
+          }).Add();
+      }).Columns(column =>
+      {
+          column.Width(100).Add();
+          column.Width(130).Add();
+          column.Width(100).Add();
+          column.Width(220).Add();
+          column.Width(150).Add();
+          column.Width(180).Add();
+      }).Add();
+  }).Render()

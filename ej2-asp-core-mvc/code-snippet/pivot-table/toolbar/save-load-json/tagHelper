@@ -1,0 +1,76 @@
+<ejs-pivotview id="pivotview" width="100%" height="300" dataBound="ondataBound">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" enableSorting="true">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year"></e-field>
+            <e-field name="Order_Source" caption="Order Source"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="In_Stock" caption="In Stock"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+        <e-filters>
+            <e-field name="Product_Categories" caption="Product Categories"></e-field>
+        </e-filters>
+    </e-datasourcesettings>
+    <e-gridSettings columnWidth="140"></e-gridSettings>
+</ejs-pivotview>
+<a id="save" class="btn btn-primary">Save</a><div class="fileUpload btn btn-primary"><span>Load</span><input id="files" type="file" class="upload" /></div>
+<style>
+    #pivotview {
+        width: 100%;
+        height: 100%;
+    }
+
+    .fileUpload {
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+    }
+
+    .fileUpload input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+</style>
+<script>
+    function ondataBound(args) {
+        var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
+        var dataSource = JSON.parse(pivotTableObj.getPersistData()).dataSourceSettings.dataSource;
+        var a = document.getElementById('save');
+        var mime_type = 'application/octet-stream'; // text/html, image/png, et c
+        a.setAttribute('download', 'pivot.JSON');
+        a.href = 'data:'+ mime_type +';base64,'+ btoa(JSON.stringify(dataSource) || '');
+        document.getElementById('files').addEventListener('change', readBlob, false);
+    }
+
+    function readBlob(args) {
+        var files = document.getElementById('load').files;
+        var file = files[0];
+        var start = 0;
+        var stop = file.size - 1;
+        var reader = new FileReader();
+        reader.onloadend = function(evt) {
+            if (evt.target.readyState == FileReader.DONE) {
+                var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
+                pivotTableObj.dataSource = JSON.parse(evt.target.result);
+            }
+        };
+        var blob = file.slice(start, stop + 1);
+        reader.readAsBinaryString(blob);
+    }
+</script>

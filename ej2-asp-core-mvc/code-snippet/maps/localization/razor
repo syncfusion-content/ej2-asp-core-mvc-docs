@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+@Html.EJS().Maps("maps").Locale("ar-AR").Layers(l => {
+    l.ShapeData(ViewBag.usmap).Add();
+}).ZoomSettings(zs=>zs.Enable(true)).Render()
+
+<script>
+    ej.base.L10n.load({
+        'ar-AR': {
+            'maps': {
+                ZoomIn: 'تكبير',
+                ZoomOut: 'تصغير',
+                Zoom: 'زوم',
+                Pan: 'مقلاة',
+                Reset: 'إعادة تعيين'
+            },
+        }
+    });
+</script>

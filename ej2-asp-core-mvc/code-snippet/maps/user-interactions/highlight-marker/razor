@@ -1,0 +1,29 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+@{
+    var highlight = new Syncfusion.EJ2.Maps.MapsHighlightSettings
+    {
+        Enable = true,
+        Fill = "green",
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Color = "white",
+            Width = 2,
+            Opacity = 1
+        }
+    };
+    var data = new[]
+    {
+        new {latitude= 37.0000, longitude= -120.0000, city= "California" },
+        new {latitude= 40.7127, longitude= -74.0059, city= "New York" },
+        new {latitude= 42.0000, longitude= -93.0000, city= "Iowa" }
+    };
+}
+
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l
+    .MarkerSettings(marker => marker.Visible(true).HighlightSettings(highlight).Shape(Syncfusion.EJ2.Maps.MarkerType.Balloon).
+    DataSource(data).Height(20).Width(20).Add())
+   .ShapeData(ViewBag.worldMap).Add();
+}).Render()

@@ -1,0 +1,225 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists;
+@using Syncfusion.EJ2.Popups;
+@{
+    var template = "<div class='fruits'><div class='first'><img id='listImage' src='${ imgUrl}' alt='fruit' /><button class='delete e-control e-btn e-small e-round e-delete-btn e-primary e-icon-btn' data-ripple='true'><span class='e-btn-icon e-icons delete-icon'></span></button></div><div class='fruitName'>${text}</div></div>";
+}
+<div id="container">
+    <div class="headerContainer">
+        <div class="e-input-group">
+            <input id="search" class="e-input" type="text" placeholder="Search fruits" />
+            <span class="e-input-group-icon e-input-search"></span>
+        </div>
+        <button id="sort" class="e-control e-btn e-small e-round e-primary e-icon-btn" title="Sort fruits" data-ripple="true">
+            <span class="e-btn-icon e-icons e-sort-icon-ascending"></span>
+        </button>
+        <button id="add" class="e-control e-btn e-small e-round e-primary e-icon-btn" title="Add fruit" data-ripple="true">
+            <span class="e-btn-icon e-icons e-add-icon"></span>
+        </button>
+
+        <ejs-dialog id="dialog" showCloseIcon="true" buttons="ViewBag.DialogButtons" width="300" visible="false">
+            <e-content-template>
+                <div id='listDialog'><div class='input_name'><label for='name'>Fruit Name: </label><input id='name' class='e-input' type='text' placeholder='Enter fruit name' /></div><div><label for='imgurl'>Fruit Image: </label><input id='imgurl' class='e-input' type='text' placeholder='Enter image url' /></div></div>
+            </e-content-template>
+        </ejs-dialog>
+
+        <!-- ListView element -->
+        <ejs-listview id="element" dataSource="(IEnumerable<object>)ViewBag.dataSource" actionComplete="wireEvents" template="@template" sortOrder="Ascending">
+        </ejs-listview>
+    </div>
+</div>
+
+<style>
+    #listImage {
+        width: 55px;
+        height: 55px;
+        margin-left: 25px;
+    }
+
+    #container {
+        max-width: 440px;
+        margin: auto;
+        margin-top: 130px;
+        box-shadow: 0 3px 6px lightgray;
+    }
+
+    #dialog {
+        top: auto !important;
+    }
+
+    .headerContainer {
+        height: 48px;
+        line-height: 48px;
+        background: rgb(2, 120, 215);
+        color: white;
+        margin-bottom: 3px;
+    }
+
+        .headerContainer .e-input-group {
+            margin-left: 20px;
+            width: 200px;
+            background: white;
+            height: 31px;
+        }
+
+        .headerContainer #search {
+            height: 21px;
+            margin-left: 10px;
+        }
+
+    #listDialog .input_name {
+        margin-bottom: 20px;
+    }
+
+    .headerContainer #add,
+    .headerContainer #sort {
+        float: right;
+        margin-right: 15px;
+        margin-top: 7px;
+        background: white;
+        color: black;
+    }
+
+    .headerContainer .e-input-search::before {
+        font-family: 'e-icons';
+        content: '\e961';
+        margin-top: 3px;
+    }
+
+    .headerContainer .e-input-group .e-input-group-icon.e-input-search {
+        padding: 0 10px 0 10px;
+    }
+
+    #element .e-list-item {
+        height: 110px;
+        width: 110px;
+        float: left;
+        padding: 0;
+        position: relative;
+        user-select: none;
+    }
+
+    #element .e-delete-btn {
+        float: right;
+        visibility: hidden;
+        margin-top: -10px;
+    }
+
+        #element .e-delete-btn.e-btn.e-small.e-round {
+            width: 2em;
+            height: 2em;
+        }
+
+    #element .e-btn.e-small.e-round .e-btn-icon.delete-icon {
+        font-size: 9px;
+    }
+
+    #element .e-list-item:hover .e-delete-btn {
+        visibility: visible;
+        background: red;
+        border-radius: 50%;
+    }
+
+    #element .fruits {
+        height: inherit;
+        width: inherit;
+        padding: 10px 0 10px 0;
+    }
+
+    #element .fruitName {
+        text-align: center;
+    }
+
+    .headerContainer .e-add-icon::before {
+        content: '\e823';
+    }
+
+    #element .delete-icon::before {
+        content: '\e7fc';
+        color: white;
+    }
+
+    .headerContainer .e-sort-icon-ascending::before {
+        content: '\e840';
+    }
+
+    .headerContainer .e-sort-icon-descending::before {
+        content: '\e83f';
+    }
+</style>
+<script>
+    var fruitsdata  = @(Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.dataSource)));
+
+    var listViewInstance;
+    window.onload = function () {
+        listViewInstance = document.getElementById("element").ej2_instances[0];
+    }
+
+    function addItem() {
+        var dialogObj = document.getElementById("dialog").ej2_instances[0];
+        (document.getElementById("name")).value = "";
+        (document.getElementById("imgurl")).value = "";
+        dialogObj.show()
+    }
+
+    function wireEvents() {
+        Array.prototype.forEach.call(document.getElementsByClassName('e-delete-btn'), (ele) => {
+            ele.addEventListener('click', onDeleteBtnClick);
+        });
+        document.getElementById("add").addEventListener('click', addItem);
+        document.getElementById("sort").addEventListener('click', sortItems);
+        document.getElementById("search").addEventListener("keyup", onKeyUp);
+    }
+
+    //Here we are removing list item
+    function onDeleteBtnClick(e) {
+        e.stopPropagation();
+        var li = e.currentTarget.closest(".e-list-item");
+        var data = listViewInstance.findItem(li);
+        listViewInstance.removeItem(data);
+        new ej.data.DataManager(fruitsdata).remove('id', { id: (data)["id"] });
+    }
+
+    //Here we are adding list item
+    function dlgButtonClick() {
+        var dialogObj = document.getElementById("dialog").ej2_instances[0];
+        var name = (document.getElementById("name")).value;
+        var url = (document.getElementById("imgurl")).value;
+        var id = Math.random() * 10000;
+        listViewInstance.addItem([{ text: name, id: id, imgUrl: url }]);
+        fruitsdata.push({ text: name, id: id, imgUrl: url });
+        listViewInstance.element.querySelector('[data-uid="' + id + '"]').getElementsByClassName('e-delete-btn')[0].addEventListener('click', onDeleteBtnClick);
+        dialogObj.hide();
+    }
+
+    //Here we are sorting list item
+    function sortItems() {
+        var ele = document.getElementById("sort").firstElementChild;
+        var des = ele.classList.contains('e-sort-icon-descending') ? true : false;
+        if (des) {
+            ele.classList.remove('e-sort-icon-descending');
+            ele.classList.add('e-sort-icon-ascending');
+            listViewInstance.sortOrder = 'Ascending'
+        } else {
+            ele.classList.remove('e-sort-icon-ascending');
+            ele.classList.add('e-sort-icon-descending');
+            listViewInstance.sortOrder = 'Descending'
+        }
+        listViewInstance.dataBind();
+        wireEvents();
+    }
+
+    //Here, the list items are filtered using the DataManager instance.
+    function onKeyUp() {
+        var value = (document.getElementById("search")).value;
+        var data = new ej.data.DataManager(fruitsdata).executeLocal(
+            new ej.data.Query().where("text", "startswith", value, true)
+        );
+        if (!value) {
+            listViewInstance.dataSource = fruitsdata.slice();
+        } else {
+            listViewInstance.dataSource = data;
+            listViewInstance.dataBind();
+        }
+    }
+</script>

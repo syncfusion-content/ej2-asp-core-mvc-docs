@@ -1,0 +1,21 @@
+@Html.EJS().Spreadsheet("spreadsheet").DataBound("dataBound").AllowFiltering(true).Sheets((sheet) =>
+{
+    sheet.Ranges((ranges) =>
+    {
+        ranges.DataSource(@ViewBag.DefaultData).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    function dataBound() {
+        var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        if (spreadsheetObj.activeSheetIndex === 0) {
+            var colors = ['Pink', 'Aquamarine', 'Blue'];
+            var predicateList = []
+            colors.forEach((color) => { predicateList.push({ field: 'C', predicate: 'or', operator: 'equal', value: color }); })
+            spreadsheetObj.applyFilter(predicateList);
+        }
+    }
+
+</script>

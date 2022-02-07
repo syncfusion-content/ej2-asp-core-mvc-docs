@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2;
+
+<ejs-circulargauge id="circular">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis startAngle="270" endAngle="90" minimum="0" maximum="200" hideIntersectingLabel="true">
+            <e-axis-majorticks interval="4"></e-axis-majorticks>
+            <e-axis-minorticks interval="2"></e-axis-minorticks>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>

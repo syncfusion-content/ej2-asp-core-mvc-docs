@@ -1,0 +1,4 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("circular").Axes(axes => axes
+              .LabelStyle(labels =>labels.Format("{value}°C")).Add()).Render()

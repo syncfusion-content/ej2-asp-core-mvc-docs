@@ -1,0 +1,55 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists;
+
+<div class="control-section">
+    <div class="e-input-group">
+        <input class="e-input" id="textbox" name='input' type="text" placeholder="Search" />
+    </div>
+     @Html.EJS().ListView("nestedlist").DataSource(dataManger =>
+   {
+       dataManger.Url("/Home/UrlDatasource").Adaptor("UrlAdaptor").CrossDomain(true);
+
+   }).Fields(new ListViewFieldSettings { Id = "id", Text = "text", Tooltip= "text" }).Render()
+</div>
+
+<script>
+    document.getElementById("textbox").addEventListener("keyup", onKeyUp);
+    //Here, the list items are filtered using the DataManager instance for ListView
+    function onKeyUp() { 
+        var listObj = (document.getElementById("nestedlist")).ej2_instances[0];
+        var value = (document.getElementById("textbox")).value;
+        var newdata;
+        var data = new ej.data.DataManager({ url: "/Home/UrlDatasource", adaptor: new ej.data.UrlAdaptor }).executeQuery(new ej.data.Query()).then((e) => {
+            (e.result).forEach((data) => { 
+                newdata = e.result;
+            });
+            myfilter();
+        });
+
+        function myfilter() {
+            var listData = new ej.data.DataManager(newdata).executeLocal(
+                new ej.data.Query().where("text", "startswith", value, true)
+            );
+            if (!value) {
+                listObj.dataSource = newdata;
+            } else {
+                listObj.dataSource = listData;
+            }
+            listObj.refresh();
+        }
+    }
+</script>
+
+<style>
+
+    #nestedlist, #textbox, .e-input-group {
+        max-width: 500px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+    .e-input-group {
+        margin-left: 320px;
+        margin-top: 40px;
+    }
+</style>

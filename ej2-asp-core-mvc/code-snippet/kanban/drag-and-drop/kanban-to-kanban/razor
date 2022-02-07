@@ -1,0 +1,62 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Kanban A</h4>
+            @Html.EJS().Kanban("kanbanA").KeyField("Status").DataSource((IEnumerable<object>)ViewBag.data).ExternalDropId((string[])ViewBag.externalDropIdA).Columns(col =>
+                       {
+                      col.HeaderText("To Do").KeyField("Open").Add();
+                      col.HeaderText("Done").KeyField("Close").Add();
+                  }).CardSettings(card =>
+                        {
+                      card.ContentField("Summary").HeaderField("Id");
+                  }).DragStop("onDragStopA").Render()
+        </div>
+        <div class="col-md-6">
+            <h4>Kanban B</h4>
+            @Html.EJS().Kanban("kanbanB").KeyField("Status").DataSource((IEnumerable<object>)ViewBag.data).ExternalDropId((string[])ViewBag.externalDropIdB).Columns(col =>
+                       {
+                      col.HeaderText("To Do").KeyField("Open").Add();
+                      col.HeaderText("Done").KeyField("Close").Add();
+                  }).CardSettings(card =>
+                        {
+                      card.ContentField("Summary").HeaderField("Id");
+                  }).DragStop("onDragStopB").Render()
+        </div>
+    </div>
+</div>
+<script>
+    function onDragStopA(args) {
+        var kanbanObjA = document.querySelector("#kanbanA").ej2_instances[0];
+        var kanbanObjB = document.querySelector("#kanbanB").ej2_instances[0];
+        if (ej.base.closest(args.event.target, '#kanbanB')) {
+            kanbanObjA.deleteCard(args.data);
+            args.data.forEach(function (card, i) {
+                var index = kanbanObjB.kanbanData.findIndex(function (colData) {
+                    return colData[kanbanObjB.cardSettings.headerField] === card[kanbanObjB.cardSettings.headerField];
+                });
+                if (index !== -1) {
+                    card[kanbanObjB.cardSettings.headerField] = Math.max.apply(Math, kanbanObjB.kanbanData.map(function (obj) { return parseInt(obj[kanbanObjB.cardSettings.headerField], 10); })) + ++i;
+                }
+            });
+            kanbanObjB.addCard(args.data, args.dropIndex);
+            args.cancel = true;
+        }
+    }
+    function onDragStopB(args) {
+        var kanbanObjA = document.querySelector("#kanbanA").ej2_instances[0];
+        var kanbanObjB = document.querySelector("#kanbanB").ej2_instances[0];
+        if (ej.base.closest(args.event.target, '#kanbanA')) {
+            kanbanObjB.deleteCard(args.data);
+            args.data.forEach(function (card, i) {
+                var index = kanbanObjA.kanbanData.findIndex(function (colData) {
+                    return colData[kanbanObjA.cardSettings.headerField] === card[kanbanObjA.cardSettings.headerField];
+                });
+                if (index !== -1) {
+                    card[kanbanObjA.cardSettings.headerField] = Math.max.apply(Math, kanbanObjA.kanbanData.map(function (obj) { return parseInt(obj[kanbanObjA.cardSettings.headerField], 10); })) + ++i;
+                }
+            });
+            kanbanObjA.addCard(args.data, args.dropIndex);
+            args.cancel = true;
+        }
+    }
+</script>

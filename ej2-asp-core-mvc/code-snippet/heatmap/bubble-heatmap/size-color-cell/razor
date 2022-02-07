@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts =>
+ts.Text("Commercial Aviation Accidents and Fatalities by year 2012 - 2017").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+xAxis.Labels(ViewBag.xLabels)).YAxis(yaxis =>
+yaxis.Labels(ViewBag.yLabels)).LegendSettings(ls =>
+ls.Visible(true)).PaletteSettings(ps => ps.Palette(palette =>
+{
+	palette.Color("#C06C84").Add();
+	palette.Color("#6C5B7B").Add();
+	palette.Color("#355C7D").Add();
+}).Type(Syncfusion.EJ2.HeatMap.PaletteType.Gradient)).CellSettings(cs =>
+    cs.Border(ViewBag.border).TileType(Syncfusion.EJ2.HeatMap.CellType.Bubble).BubbleType(Syncfusion.EJ2.HeatMap.BubbleType.SizeAndColor)).DataSource("dataSource").TooltipRender("tooltipRender").
+    DataSourceSettings(ds => { ds.IsJsonData(false).AdaptorType(Syncfusion.EJ2.HeatMap.AdaptorType.Cell); }).Render()
+
+<script>
+    var tooltipRender = function (args) {
+        args.content = ['Year ' + ' : ' + args.xLabel + '<br/>' + 'Months ' + ' : ' + args.yLabel + '<br/>'
+            + 'Accidents ' + ' : ' + args.value[0].bubbleData + '<br/>' + 'Fatalities ' + ' : '
+            + args.value[1].bubbleData];
+    };
+    var dataSource =  [
+[0,0,[4,39]], [0,1,[3,8]], [0,2,[1,3]], [0,3,[1,10]], [0,4,[4,4]], [0,5,[2,15]],
+[1,0,[4,28]], [1,1,[5,92]], [1,2,[5,73]], [1,3,[3,1]], [1,4,[3,4]], [1,5,[4,126]],
+[2,0,[4,45]], [2,1,[5,152]], [2,2,[0,44]], [2,3,[4,54]], [2,4,[5,243]], [2,5,[2,45]]
+    ];
+</script>

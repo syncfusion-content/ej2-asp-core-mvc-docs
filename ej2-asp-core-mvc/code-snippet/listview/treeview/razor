@@ -1,0 +1,44 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists;
+using Syncfusion.EJ2.Navigations;
+@Html.EJS().TreeView("element").Fields(ViewBag.TreeViewFields).AllowDragAndDrop(true).NodeDragging("onDragStop").NodeDragStop("onDragStop").Render()
+
+<style>
+    #element.e-treeview .e-ul {
+        padding: 0;
+    }
+
+    #element.e-treeview .e-list-item {
+        padding: 0 16px;
+    }
+
+    #element.e-treeview .e-text-content {
+        padding: 0;
+    }
+
+    #element.e-treeview .e-fullrow {
+        height: 36px;
+    }
+
+    #element.e-treeview .e-list-text {
+        line-height: 34px;
+    }
+
+    #element.e-treeview .e-list-item:last-child {
+        margin-bottom: 9px;
+    }
+
+    #element.e-treeview .e-list-item:first-child {
+        margin-top: 9px;
+    }
+</style>
+<script>
+    function onDragStop(args) {
+        //Block the Child Drop operation in TreeView
+        var draggingItem = document.getElementsByClassName("e-drop-in");
+        if (draggingItem.length == 1) {
+            draggingItem[0].classList.add('e-no-drop');
+            args.cancel = true;
+        }
+    }
+</script>

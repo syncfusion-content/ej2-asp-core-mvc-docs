@@ -1,0 +1,49 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists
+
+<ejs-listview id="listview" dataSource="(IEnumerable<object>)ViewBag.dataSource" select="onSelect" showIcon="true" showHeader="true" headerTitle="Folders">
+    <e-listview-fieldsettings iconCss="icon" tooltip="text"></e-listview-fieldsettings>
+</ejs-listview>
+
+<style>
+    #listview {
+        display: block;
+        max-width: 350px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+        #listview.e-listview .e-list-icon {
+            height: 24px;
+            width: 30px;
+        }
+
+    .folder, .file {
+        background: url('https://ej2.syncfusion.com/demos/src/listview/images/file_icons.png') no-repeat;
+        background-size: 302%;
+    }
+
+    .folder {
+        background-position: -5px -466px;
+    }
+
+    .file {
+        background-position: -5px -151px;
+    }
+    /* csslint ignore:start */
+
+    .new-list {
+        color: deeppink !important;
+    }
+
+    /* csslint ignore:end */
+</style>
+
+<script>
+    //Select event to add new list item in child page
+    function onSelect(args) {
+        //Add new file to the child page of selected list item
+        this.dataSource[args.index].child.push({ id: '01-02', text: 'Newly Added File', icon: 'file', htmlAttributes: { role: 'li', class: 'new-list' } });
+    }
+</script>

@@ -1,0 +1,7 @@
+@Html.EJS().Spreadsheet("spreadsheet").Sheets((sheet) =>
+{
+    sheet.Ranges((ranges) =>
+    {
+        ranges.DataSource(@ViewBag.defaultData).Add();
+    }).Add();
+}).Render()

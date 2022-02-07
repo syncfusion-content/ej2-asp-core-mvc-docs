@@ -1,0 +1,10 @@
+  @Html.EJS().QueryBuilder("querybuilder").Width("72%").Columns(col =>
+   {
+       col.Field("EmployeeID").Label("Employee ID").Type("number").Add();
+       col.Field("FirstName").Label("First Name").Type("string").Add();
+       col.Field("TitleOfCourtesy").Label("Title Of Courtesy").Type("boolean").Values(new List<string> { "Mr.", "Mrs." }).Add();
+       col.Field("Title").Label("Title").Type("string").Add();
+       col.Field("HireDate").Label("Hire Date").Type("date").Format("dd/MM/yyyy").Add();
+       col.Field("Country").Label("Country").Type("string").Add();
+       col.Field("City").Label("City").Type("string").Add();
+   }).DataSource(ViewBag.dataSource).Render()

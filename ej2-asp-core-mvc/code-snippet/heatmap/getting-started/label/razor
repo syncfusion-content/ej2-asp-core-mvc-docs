@@ -1,0 +1,8 @@
+@Html.EJS().HeatMap("container").TitleSettings(ts => ts.Text("Hourly Weather Forecast (in Celsius)").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+{
+xAxis.Labels(ViewBag.xLabels);
+}).YAxis(yaxis =>
+{
+    yaxis.Labels(ViewBag.yLabels);
+}).LegendSettings(ls =>ls.Visible(true).Position(Syncfusion.EJ2.HeatMap.LegendPosition.Right).ShowLabel(true).Height("150px")).CellSettings(cs =>cs.ShowLabel(true)).DataSource(ViewBag.dataSource).Render()
+              

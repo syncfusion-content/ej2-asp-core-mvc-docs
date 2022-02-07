@@ -1,0 +1,18 @@
+  @Html.EJS().QueryBuilder("querybuilder").Width("72%").Columns(col =>
+   {
+       col.Field("EmployeeID").Label("Employee ID").Type("number").Add();
+       col.Field("FirstName").Label("First Name").Type("string").Add();
+       col.Field("TitleOfCourtesy").Label("Title Of Courtesy").Type("boolean").Values(new List<string> { "Mr.", "Mrs." }).Add();
+       col.Field("Title").Label("Title").Type("string").Add();
+       col.Field("HireDate").Label("Hire Date").Type("date").Format("dd/MM/yyyy").Add();
+       col.Field("Country").Label("Country").Type("string").Add();
+       col.Field("City").Label("City").Type("string").Add();
+   }).Render()
+ @Html.EJS().Button("importrules").CssClass("e-primary").Content("Import Rule").Render()
+ 
+ <script>
+  document.getElementById('importrules').onclick = function () {
+        var querybuilderObj = ej.base.getInstance(document.getElementById("querybuilder"), ej.querybuilder.QueryBuilder);
+        querybuilderObj.setRules({ 'condition': 'or', 'rules': [{ 'label': 'Employee ID', 'field': 'EmployeeID', 'type': 'number', 'operator': 'equal', 'value': '1001' }] });
+    }
+ </script>

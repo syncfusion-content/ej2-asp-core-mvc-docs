@@ -1,0 +1,37 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists
+
+@{ var template = "<div id='list-container' class=\"${ $id % 2 === 0 ? \'even-list\' : \'odd-list\' }\" > ${text} </div>"; }
+
+    @Html.EJS().ListView("ui-list").DataSource((IEnumerable<object>)ViewBag.listData).EnableVirtualization(true).Template(@template).Height(500).Render()
+
+
+<style>
+    #ui-list {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#list-container{
+    height: inherit;
+    width: inherit;
+    padding-left: 30px;
+}
+
+#ui-list .e-list-item{
+    padding: 0;
+}
+
+#ui-list .even-list{
+    background-color: #cfd8dc;
+}
+
+#ui-list .odd-list{
+    background-color: #eceff1;
+}
+
+</style>

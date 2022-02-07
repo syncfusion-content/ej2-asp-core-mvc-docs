@@ -1,0 +1,14 @@
+<ejs-pivotview id="PivotView" height="300">
+    <e-datasourcesettings Url="https://cdn.syncfusion.com/data/sales-analysis.json">
+        <e-rows>
+            <e-field name="EnerType"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="EneSource"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="PowUnits"></e-field>
+            <e-field name="ProCost"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>

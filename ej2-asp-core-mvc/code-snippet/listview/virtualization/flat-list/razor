@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists
+
+    @Html.EJS().ListView("ui-list").DataSource((IEnumerable<object>)ViewBag.listData).EnableVirtualization(true).Height(500).Render()
+
+
+<style>
+    #ui-list {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+</style>

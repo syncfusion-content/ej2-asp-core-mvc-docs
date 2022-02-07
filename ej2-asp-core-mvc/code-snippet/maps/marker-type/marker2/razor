@@ -1,0 +1,75 @@
+@{
+    var data = new[]
+    {
+        new { latitude=  40.7424509, longitude = -74.0081468, city = "New York"}
+    };
+    var data1 = new[]
+    {
+        new { latitude=  33.5302186, longitude = -117.7418381, city = "Laguna Niguel"}
+    };
+    var data2 = new[]
+    {
+        new { latitude=  37.6276571, longitude = -122.4276688, city = "San Bruno"}
+    };
+    var border = new Syncfusion.EJ2.Maps.MapsBorder
+    {
+        Width = 2,
+        Color = "#333",
+        Opacity = 1
+    };
+    var border1 = new Syncfusion.EJ2.Maps.MapsBorder
+    {
+        Width = 2,
+        Color = "#333",
+        Opacity = 1
+    };
+    var border2 = new Syncfusion.EJ2.Maps.MapsBorder
+    {
+        Width = 2,
+        Color = "blue",
+        Opacity = 1
+    };
+}
+
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Maps
+@Html.EJS().Maps("container").Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+    {
+        new Syncfusion.EJ2.Maps.MapsLayer
+            {
+                ShapeData = ViewBag.usMap,
+                MarkerSettings  = new List<Syncfusion.EJ2.Maps.MapsMarker>
+                    {
+                        new Syncfusion.EJ2.Maps.MapsMarker
+                            {
+                                Visible = true,
+                                DataSource = data2,
+                                Width= 3,
+                                AnimationDuration= 0,
+                                Border = border,
+                                Fill = "white",
+                                Shape = Syncfusion.EJ2.Maps.MarkerType.Circle
+                            },
+                          new Syncfusion.EJ2.Maps.MapsMarker
+                          {
+                              Visible = true,
+                                DataSource = data1,
+                                Width= 15,
+                                Height = 4,
+                                AnimationDuration= 0,
+                                Border = border,
+                                Fill = "yellow",
+                                Shape = Syncfusion.EJ2.Maps.MarkerType.Rectangle
+                          },
+                           new Syncfusion.EJ2.Maps.MapsMarker
+                          {
+                              Visible = true,
+                                DataSource = data,
+                                Width= 10,
+                                Height = 10,
+                                AnimationDuration= 0,
+                                Border = border,
+                                Fill = "white",
+                                Shape = Syncfusion.EJ2.Maps.MarkerType.Diamond
+                          }
+                    }}}).Render()

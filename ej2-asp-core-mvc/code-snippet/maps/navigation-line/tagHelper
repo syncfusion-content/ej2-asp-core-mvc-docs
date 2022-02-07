@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.Maps;
+@{ 
+    var latitude = new[] { 40.7128, 36.7783 };
+    var longitude = new[] { -74.0060, -119.4179 };
+}
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.worldmap">
+            <e-layersettings-navigationlines>
+                <e-layersettings-navigationline visible="true" color="black" angle="90" width="2" dashArray="4"
+                                                latitude="latitude" longitude="longitude">
+                </e-layersettings-navigationline>
+            </e-layersettings-navigationlines>
+        </e-maps-layer>
+    </e-maps-layers>
+ </ejs-maps>

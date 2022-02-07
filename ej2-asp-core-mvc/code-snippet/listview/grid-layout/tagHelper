@@ -1,0 +1,32 @@
+@{
+    var template = "<img id='listImage' src='https://ej2.syncfusion.com/demos/src/avatar/images/pic01.png'
+    alt='apple' />";
+}
+
+<ejs-listview id="element" dataSource="(IEnumerable<object>)ViewBag.dataSource" template="@template" showHeader="true" headerTitle="Grid Layout">
+
+</ejs-listview>
+<style>
+
+    #element {
+        display: block;
+        max-width: 303px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+        #element .e-list-item {
+            height: 100px;
+            width: 100px;
+            float: left;
+            padding: 0;
+        }
+
+    #listImage {
+        width: 55px;
+        height: 55px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+</style>

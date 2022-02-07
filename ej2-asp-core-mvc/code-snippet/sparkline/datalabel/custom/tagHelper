@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2;
+<div class="spark" align="center">
+    <ejs-sparkline id="sparkline" loaded="loaded" height="200px" width="350px" dataSource="ViewBag.sparkData">
+	 <e-sparkline-axissettings MinX="-1" MaxX="7" MaxY="-1" MaxY="7" fill="blue">
+          </e-sparkline-axissettings>
+		   <e-sparkline-datalabelsettings fill="blue" opacity="0.4" visible ="viewBag.sparkVisible"></e-sparkline-datalabelsettings>
+	</ejs-sparkline>
+</div>
+<style>
+    .spark {
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 2px;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<script>
+    function loaded(args)
+    { 
+        window.sparkline = args.sparkline;
+        args.sparkline.loaded = null;
+        args.sparkline.refresh();
+    }
+</script>

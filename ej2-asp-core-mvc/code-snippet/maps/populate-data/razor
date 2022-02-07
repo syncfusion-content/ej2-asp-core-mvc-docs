@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Height("450px").Width("650px").Layers(m =>
+{
+    m.ShapeSettings(ss => ss.Fill("#E5E5E5").ColorValuePath("color")).ShapeData(ViewBag.worldMap).ShapeDataPath("name").ShapePropertyPath("name").DataSource(ViewBag.populationData).Add();
+}).Render()

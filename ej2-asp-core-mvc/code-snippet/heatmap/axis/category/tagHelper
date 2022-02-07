@@ -1,0 +1,8 @@
+<ejs-heatmap id='container' dataSource="ViewBag.dataSource">
+  <e-heatmap-titlesettings text="Sales Revenue per Employee (in 1000 US$)" textStyle="ViewBag.textStyle">
+  </e-heatmap-titlesettings>
+  <e-heatmap-xaxis vaueType="Category" labels="ViewBag.xLabels">
+  </e-heatmap-xaxis>
+  <e-heatmap-yaxis vaueType="Category" labels=" ViewBag.yLabels">
+  </e-heatmap-yaxis>
+</ejs-heatmap>

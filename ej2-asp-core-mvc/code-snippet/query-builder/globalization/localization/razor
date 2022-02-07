@@ -1,0 +1,44 @@
+  @Html.EJS().QueryBuilder("querybuilder").Width("72%").Columns(col =>
+   {
+       col.Field("EmployeeID").Label("Employee ID").Type("number").Add();
+       col.Field("FirstName").Label("First Name").Type("string").Add();
+       col.Field("TitleOfCourtesy").Label("Title Of Courtesy").Type("boolean").Values(new List<string> { "Mr.", "Mrs." }).Add();
+       col.Field("Title").Label("Title").Type("string").Add();
+       col.Field("HireDate").Label("Hire Date").Type("date").Format("dd/MM/yyyy").Add();
+       col.Field("Country").Label("Country").Type("string").Add();
+       col.Field("City").Label("City").Type("string").Add();
+   }).Rule(ViewBag.rule).DataSource(ViewBag.dataSource).Locale("de-DE").Render()
+
+   <script type="text/javascript">
+    var qbObj = document.getElementById('querybuilder1').ej2_instances[0];
+    ej.base.L10n.load({
+        'de-DE': {
+        'querybuilder': {
+            'AddGroup': 'Gruppe hinzufügen',
+            'AddCondition': 'Bedingung hinzufügen',
+            'DeleteRule': 'Entfernen Sie diesen Zustand',
+            'DeleteGroup': 'Gruppe löschen',
+            'Edit': 'BEARBEITEN',
+            'SelectField': 'Wählen Sie ein Feld aus',
+            'DeleteRule': 'Entfernen Sie diesen Zustand',
+            'DeleteGroup': 'Gruppe löschen',
+            'SelectOperator': 'Operator auswählen',
+            'StartsWith': 'Beginnt mit',
+            'EndsWith': 'Endet mit',
+            'Contains': 'Enthält',
+            'Equal': 'Gleich',
+            'NotEqual': 'Nicht gleich',
+            'LessThan': 'Weniger als',
+            'LessThanOrEqual': 'Weniger als oder gleich',
+            'GreaterThan': 'Größer als',
+            'GreaterThanOrEqual': 'Größer als oder gleich',
+            'Between': 'Zwischen',
+            'NotBetween': 'Nicht zwischen',
+            'In': 'Im',
+            'NotIn': 'Nicht in',
+            'Remove': 'LÖSCHEN',
+            'ValidationMessage': 'Dieses Feld wird benötigt',
+        }
+    }
+    });
+</script>

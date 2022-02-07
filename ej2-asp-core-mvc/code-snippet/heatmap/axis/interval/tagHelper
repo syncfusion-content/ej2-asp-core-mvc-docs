@@ -1,0 +1,16 @@
+@{
+    var Xminimum = new DateTime(2007, 1, 1);
+    var Xmaximum = new DateTime(2017, 1, 1);
+}
+
+<ejs-heatmap id='container' dataSource="ViewBag.dataSource">
+ <e-heatmap-titlesettings text="Monthly Flight Traffic at JFK Airport" textStyle=" ViewBag.textStyle">
+ </e-heatmap-titlesettings>
+ <e-heatmap-xaxis minimum="Xminimum" minimum="Xmaximum" intervalType="Years" valueType="DateTime" labelFormat="yyyy" interval="2">
+ </e-heatmap-xaxis>
+ <e-heatmap-yaxis label=" ViewBag.yLabels">
+ </e-heatmap-yaxis>
+ <e-heatmap-cellsettings border="ViewBag.border" showLabel="false" format="{value} flights">
+  </e-heatmap-cellsettings>
+ <e-heatmap-legendsettings visible="false"></e-heatmap-legendsettings>
+</ejs-heatmap>

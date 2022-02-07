@@ -1,0 +1,24 @@
+@{ 
+    var data = new[]
+    {
+        new { latitude=  40.7424509, longitude = -74.0081468, city = "New York"}
+    };
+    var border = new Syncfusion.EJ2.Maps.MapsBorder
+    {
+        Width = 2,
+        Color = "#333",
+        Opacity = 1
+    };
+}
+
+<div id="map">
+    <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.usmap">
+                <e-layersettings-markers>
+                    <e-layersettings-marker visible="true" shape="Circle" fill="white" width="2" animationDuration="0" border="border" dataSource="data" ></e-layersettings-marker>
+                </e-layersettings-markers>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

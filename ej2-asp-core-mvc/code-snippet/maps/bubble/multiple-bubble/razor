@@ -1,0 +1,7 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.BubbleSettings(ViewBag.bubbleSettings).ShapeData(ViewBag.worldMap).ShapeDataPath("name").ShapePropertyPath("name").Add();
+}).Render()

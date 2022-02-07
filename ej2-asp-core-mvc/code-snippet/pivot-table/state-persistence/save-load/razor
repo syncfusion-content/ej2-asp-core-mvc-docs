@@ -1,0 +1,30 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().Button("save").Content("Save Layout").IsPrimary(true).Render()
+
+@Html.EJS().Button("load").Content("Load Layout").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height(300).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+ .Rows(rows =>
+ {
+     rows.Name("Country").Add(); rows.Name("Products").Add();
+ }).Columns(columns =>
+ {
+     columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+ }).Values(values =>
+ {
+     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+ })).ShowGroupingBar(true).ShowFieldList(true).Render()
+
+<script>
+    var pivotObj;
+    var pivotLayout;
+    document.getElementById('save').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotLayout = pivotObj.getPersistData();
+    }
+    document.getElementById('load').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.loadPersistData(pivotLayout);
+    }
+</script>

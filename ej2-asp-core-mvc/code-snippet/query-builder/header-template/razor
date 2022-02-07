@@ -1,0 +1,134 @@
+ @Html.EJS().QueryBuilder("querybuilder").Width("850px").HeaderTemplate("#headerTemplate").ActionBegin("actionBegin").EnableNotCondition(true).Columns(col =>
+            {
+               col.Field("EmployeeID").Label("Employee ID").Type("number").Add();
+               col.Field("LastName").Label("LastName").Type("string").Add();
+               col.Field("TitleOfCourtesy").Label("Title Of Courtesy").Type("boolean").Values(new List<string> { "Mr.", "Mrs." }).Add();
+               col.Field("Title").Label("Title").Type("string").Add();
+               col.Field("HireDate").Label("Hire Date").Type("date").Format("dd/MM/yyyy").Add();
+               col.Field("Country").Label("Country").Type("string").Add();
+               col.Field("City").Label("City").Type("string").Add();
+           }).Rule(ViewBag.importRules).MaxGroupCount(5).Render()
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .e-query-builder .e-add-btn {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .e-query-builder .cndtnbtn.e-control.e-dropdownlist.e-lib.e-input {
+        padding-left: 10px;
+    }
+
+    .e-query-builder span.e-custom-group-btn {
+        max-width: 100px;
+        border-radius: 5px !important;
+        border-width: 1px !important;
+        margin-top: 3px;
+    }
+
+    .e-query-builder .e-custom-group-btn.e-input-focus::before, .e-custom-group-btn.e-input-focus::after {
+        background: transparent !important;
+    }
+
+    .e-query-builder .e-group-header .e-addrulegroup, .e-group-header .e-delete-btn {
+        border: 1px solid grey !important;
+    }
+
+    e-query-builder .e-group-header .e-addrulegroup:hover, .e-group-header .e-delete-btn:hover {
+        border: 1px solid grey !important;
+    }
+
+    .e-query-builder .e-toggle {
+        background: #317ab9;
+        border-color: #317ab9;
+        color: #fff;
+    }
+
+    .e-query-builder .e-cb-wrapper {
+        margin-right: 5px;
+        height: 32px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        background-color: white;
+    }
+
+    .e-query-builder .e-custom-group-btn {
+        padding-left: 10px;
+        height: 32px;
+    }
+</style>
+
+<script id="headerTemplate" type="text/x-template">
+    <div class='e-groupheader'>
+        ${if(notCondition !== undefined)}
+        <button class="e-cb-wrapper">
+            <input type="checkbox" class="e-not" id='${ruleID}_notoption' checked='${notCondition}'>
+        </button>
+        ${/if}
+        <input type="text" class="e-custom-group-btn" id='${ruleID}_cndtnbtn'>
+        <button id='${ruleID}_addbtn' class='e-add-btn'></button>
+        ${if(ruleID !== 'querybuilder_group0')}
+        <button id='dltbtn' class="e-btn e-delete-btn e-lib e-small e-round e-icon-btn">
+            <span class='e-btn-icon e-icons e-delete-icon'></span>
+        </button>
+        ${/if}
+    </div>
+</script>
+
+<script>
+    function actionBegin(args) {
+        debugger
+        var queryBldrObj = ej.base.getComponent(document.getElementById("querybuilder"), "query-builder");
+        if (args.requestType === 'header-template-create') {
+            var checkBoxObj = new ej.buttons.CheckBox({
+                label: 'NOT',
+                checked: args.notCondition,
+                change: function (e) {
+                    queryBldrObj.notifyChange(e.checked, e.event.target, 'not');
+                }
+            });
+            checkBoxObj.appendTo('#' + args.ruleID + '_notoption');
+            var ds = [{ 'key': 'AND', 'value': 'and' }, { 'key': 'OR', 'value': 'or' }];
+            var btnObj = new ej.dropdowns.DropDownList({
+                dataSource: ds,
+                fields: { text: 'key', value: 'value' },
+                value: args.condition,
+                cssClass: 'e-custom-group-btn e-active-toggle',
+                change: function (e) {
+                    queryBldrObj.notifyChange(e.value, e.element, 'condition');
+                }
+            });
+            btnObj.appendTo('#' + args.ruleID + '_cndtnbtn');
+            var ddbitems = [
+                { text: 'AddGroup', iconCss: 'e-icons e-add-icon e-addgroup' },
+                { text: 'AddCondition', iconCss: 'e-icons e-add-icon e-addrule' }
+            ];
+            var addbtn = new ej.splitbuttons.DropDownButton({
+                items: ddbitems,
+                cssClass: 'e-round e-small e-caret-hide e-addrulegroup',
+                iconCss: 'e-icons e-add-icon',
+                select: function (event) {
+                    var addbtn = ej.base.closest(event.element, '.e-dropdown-popup');
+                    var ddb = addbtn.id.split('_');
+                    if (event.item.text === 'AddGroup') {
+                      queryBldrObj.addGroups([{ condition: 'and', 'rules': [{}], not: false }], ddb[1]);
+                    }
+                    else if (event.item.text === 'AddCondition') {
+                      queryBldrObj.addRules([{}], ddb[1]);
+                    }
+                }
+            });
+            addbtn.appendTo('#' + args.ruleID + '_addbtn');
+            var deleteGroupBtn = document.getElementById(args.ruleID).querySelector('.e-delete-btn');
+            if (deleteGroupBtn) {
+                deleteGroupBtn.onclick = function (e) {
+                  queryBldrObj.deleteGroup(ej.base.closest(e.target.offsetParent, '.e-group-container'));
+                }
+            }
+        }
+    }
+</script>

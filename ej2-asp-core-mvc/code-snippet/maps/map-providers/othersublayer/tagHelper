@@ -1,0 +1,11 @@
+@{ 
+}  
+@using Syncfusion.EJ2;
+<ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer LayerType="OSM" UrlTemplate="http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level"></e-maps-layer>
+            <e-maps-layer type="SubLayer" shapeData="ViewBag.usMap">
+                <e-layersettings-shapesettings fill="blue"></e-layersettings-shapesettings>
+            </e-maps-layer>
+        </e-maps-layers>
+</ejs-maps>

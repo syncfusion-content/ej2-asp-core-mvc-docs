@@ -1,0 +1,2 @@
+<ejs-datamatrixgenerator id="container" width="200px" height="150px" value="Syncfusion" foreColor="red" mode="SVG">
+</ejs-datamatrixgenerator>

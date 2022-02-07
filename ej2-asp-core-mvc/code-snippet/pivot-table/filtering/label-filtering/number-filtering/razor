@@ -1,0 +1,18 @@
+@Html.EJS().PivotView("PivotView").Height(300).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>
+    )ViewBag.DataSource).ExpandAll(false).AllowLabelFilter(true)
+    .FilterSettings(filtersettings =>
+    {
+    filtersettings.Name("Sold").Type(Syncfusion.EJ2.PivotView.FilterType.Number).Condition(Syncfusion.EJ2.PivotView.Operators.Between).Value1("90").Value2(100).Add();
+    }).Rows(rows =>
+    {
+        rows.Name("Sold").Caption("Units Sold").Add();
+    }).Columns(columns =>
+    {
+        columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+    }).Values(values =>
+    {
+        values.Name("Amount").Caption("Sold Amount").Add();
+    }).Filters(filters =>
+    {
+    filters.Name("Country").Add(); filters.Name("Products").Add();
+    })).Render()

@@ -1,0 +1,13 @@
+     <ejs-listview id="ui-list" dataSource="ViewBag.listData" enableVirtualization="true" height="500" >
+    </ejs-listview>
+
+<style>
+    #ui-list {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+</style>

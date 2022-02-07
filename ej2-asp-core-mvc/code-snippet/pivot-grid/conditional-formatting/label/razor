@@ -1,0 +1,27 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotGrid").Width("100%").Height("300").DataSource(dataSource => dataSource.Data((IEnumerable<object>)ViewBag.Data).ExpandAll(false).EnableSorting(true)
+           .Rows(rows =>
+           {
+               rows.Name("Country").Add();
+               rows.Name("Products").Add();
+           })
+           .Columns(columns =>
+           {
+               columns.Name("Year").Add();
+               columns.Name("Order_Source").Caption("Order Source").Add();
+           })
+           .Values(values =>
+           {
+               values.Name("In_Stock").Caption("In Stock").Add();
+               values.Name("Sold").Caption("Units Sold").Add();
+           })
+           .Filters(filters =>
+           {
+               filters.Name("Product_Categories").Caption("Product Categories").Add();
+           })
+           .ConditionalFormatSettings( format =>
+           {
+               format.Conditions(Condition.Between).Label("Germany").Value1(500).Value2(50000).Style(style => { style.BackgroundColor("#f48fb1").Color("black").FontFamily("Tahoma").FontSize("12px"); }).Add();
+           })
+           ).AllowConditionalFormatting(true).Render()

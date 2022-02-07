@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").LegendSettings(legend=> legend.Visible(true)).Layers(l =>
+{
+    l.NavigationLineSettings(ns => {
+        ns.Visible(true).Latitude(new double[] { 40.7128, 36.7783})
+        .Longitude(new double[] { -74.0060, -119.4179 }).Color("black").Angle(90)
+        .Width(4).DashArray("4").Add();
+    }).ShapeData(ViewBag.worldmap).Add();
+}).Render()

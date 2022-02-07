@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotGrid").Width("100%").Height("300").GroupingBarSettings( new PivotViewGroupingBarSettings {
+ShowSortIcon =false }).DataSource(dataSource => dataSource.Data((IEnumerable<object>)ViewBag.Data).ExpandAll(false).EnableSorting(true)
+.FormatSettings(formatsettings =>
+{
+formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+rows.Name("Country").ShowSubTotals(false).Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+columns.Name("Year").ShowSubTotals(false).Caption("Production Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).ShowFieldList(true).Render()

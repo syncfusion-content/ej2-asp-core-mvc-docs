@@ -1,0 +1,56 @@
+<ejs-spreadsheet id="spreadsheet" created="created" showFormulaBar="false">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet selectedRange="C7" >
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-rows>
+                    <e-spreadsheet-row height="30"></e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="7" wrap="true"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="7" wrap="true"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="7" wrap="true"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="7" wrap="true"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                </e-spreadsheet-rows>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column index="1" width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="140"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="150"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="180"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+
+    <script>
+
+    function created() {
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.cellFormat({ verticalAlign: 'middle' }, 'A1:H5');
+        this.cellFormat({ textAlign: 'center' }, 'A2:B5');
+        this.cellFormat({ textAlign: 'center' }, 'D2:D5');
+        // To wrap the cells from E2 to E5 range
+        this.wrap('E2:E5');
+        // To unwrap the H3 cell
+        this.wrap('H3', false);
+    }
+    </script>

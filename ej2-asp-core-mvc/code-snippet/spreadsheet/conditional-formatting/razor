@@ -1,0 +1,30 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowFormulaBar(false).Created("created").Sheets(sheet =>
+{
+    sheet.Name("Car Sales Record").Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+    }).ConditionalFormats(
+		   new List<ConditionalFormat> {
+		   new ConditionalFormat() { Type = ConditionalFormatType.GreaterThan, CFColor: CFColor.RedFT, Value= "7700" , Range = "B2:B9" },
+		   new ConditionalFormat() { Type = ConditionalFormatType.Bottom10Items , CFColor = CFColor.YellowFT, Value = "4", Range = "C2:C9" },
+           new ConditionalFormat() { Type = ConditionalFormatType.BlueDataBar , Range = "D2:D9" },
+	}).Columns(column =>
+    {
+        column.Width(120).Index(1).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    function created() {
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:N1');
+        this.conditionalFormat({ type: "RYGColorScale", range: 'E2:E9' });
+        this.conditionalFormat({ type: "ThreeArrows", range: 'H2:H9' });
+        //Custom format
+        this.conditionalFormat({ type: 'Top10Items', value: '1',
+            format: { style: { color: '#ffffff', backgroundColor: '#009999', fontWeight: 'bold'}}, range: 'F2:F9' });
+        this.conditionalFormat({ type: 'Bottom10Items', value: '1',
+            format: { style: { color: '#ffffff', backgroundColor: '#c68d53', fontWeight: 'bold'}}, range: 'G2:G9' });
+        }
+
+</script>

@@ -1,0 +1,6 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").BaseLayerIndex(1).Layers(l =>
+   {
+       l.ShapeData(ViewBag.worldMap).Add();
+       l.ShapeData(ViewBag.usaMap).Add();
+   }).Render()

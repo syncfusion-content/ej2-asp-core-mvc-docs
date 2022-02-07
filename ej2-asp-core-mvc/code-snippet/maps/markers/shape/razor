@@ -1,0 +1,30 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Maps
+
+@{
+    var data = new[]
+    {
+        new {latitude =  49.95121990866204, longitude = 18.468749999999998, name="Europe", color="red",
+        shape="Triangle"},
+        new {latitude =  59.88893689676585, longitude = -109.3359375, name="North America", color="blue",
+        shape="Pentagon"},
+        new {latitude =  -6.64607562172573, longitude = -55.54687499999999, name="South America", color="green",
+        shape="InvertedTriangle"}
+    };
+}
+@Html.EJS().Maps("container").Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+    {
+        new Syncfusion.EJ2.Maps.MapsLayer
+            {
+                ShapeData = ViewBag.world_map,
+                MarkerSettings  = new List<Syncfusion.EJ2.Maps.MapsMarker>
+                    {
+                        new Syncfusion.EJ2.Maps.MapsMarker
+                            {
+                                Visible = true,
+                                DataSource = data,
+                                ShapeValuePath = "shape",
+                                ColorValuePath = "color"
+                            }
+                    }}}).Render()
+       

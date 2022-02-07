@@ -1,0 +1,19 @@
+<ejs-pivotview id="PivotGrid" height="300">
+    <e-datasource data="@ViewBag.data" expandAll="false" enableSorting="true">
+        <e-formatsettings>
+            <e-field name="Amount" format="C2" maximumSignificantDigits="3" minimumSignificantDigits="1" useGrouping="false"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Production Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasource>
+</ejs-pivotview>

@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+@Html.EJS().Maps("maps").Layers(l =>
+ {
+     l.BubbleSettings(bubble =>
+     {
+         bubble.Visible(true).ValuePath("population").MinRadius(20).MaxRadius(40).ValuePath("population").
+                DataSource(ViewBag.bubbleData).Add();
+     }).ShapeData(ViewBag.worldMap).ShapeDataPath("name").ShapePropertyPath("name").Add();
+ }).Render()

@@ -1,0 +1,46 @@
+@{ 
+    var data = new[]
+    {
+        new { latitude=  40.7424509, longitude = -74.0081468, city = "New York"}
+    };
+    var data1 = new[]
+    {
+        new { latitude=  33.5302186, longitude = -117.7418381, city = "Laguna Niguel"}
+    };
+    var data2 = new[]
+    {
+        new { latitude=  37.6276571, longitude = -122.4276688, city = "San Bruno"}
+    };
+    var border = new Syncfusion.EJ2.Maps.MapsBorder
+    {
+        Width = 2,
+        Color = "#333",
+        Opacity = 1
+    };
+    var border1 = new Syncfusion.EJ2.Maps.MapsBorder
+    {
+        Width = 2,
+        Color = "#333",
+        Opacity = 1
+    };
+    var border2 = new Syncfusion.EJ2.Maps.MapsBorder
+    {
+        Width = 2,
+        Color = "blue",
+        Opacity = 1
+    };
+}
+
+<div id="map">
+    <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.usmap">
+                <e-layersettings-markers>
+                    <e-layersettings-marker visible="true" shape="Circle" fill="white" width="3" animationDuration="0" border="border" dataSource="data2"></e-layersettings-marker>
+                    <e-layersettings-marker visible="true" shape="Rectangle" fill="yellow" width="15" height="4" animationDuration="0" border="border" dataSource="data1"></e-layersettings-marker>
+                    <e-layersettings-marker visible="true" shape="Diamond" fill="white" width="10" height="10" animationDuration="0" border="border" dataSource="data"></e-layersettings-marker>
+                </e-layersettings-markers>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

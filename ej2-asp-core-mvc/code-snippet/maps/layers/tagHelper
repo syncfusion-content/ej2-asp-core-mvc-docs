@@ -1,0 +1,35 @@
+@using Syncfusion.EJ2.Maps;
+@{
+    var border = new MapsBorder
+    {
+        Width = 0.1,
+        Color = "black",
+        Opacity = 1
+    };
+    var bordermap = new MapsBorder
+    {
+        Width = 0.25,
+        Color = "#1a9cff",
+        Opacity = 1
+    };
+    var bordertexasmap = new MapsBorder
+    {
+        Width = 0.25,
+        Color = "#1a9cff",
+        Opacity = 1
+    };
+};
+
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.usa">
+            <e-layersettings-shapesettings fill="#E5E5E5" border="border"></e-layersettings-shapesettings>
+        </e-maps-layer>
+        <e-maps-layer shapeData="ViewBag.texas" type="SubLayer">
+            <e-layersettings-shapesettings fill="rgba(141, 206, 255, 0.6)" border="bordermap"></e-layersettings-shapesettings>
+        </e-maps-layer>
+        <e-maps-layer shapeData="ViewBag.california" type="SubLayer">
+            <e-layersettings-shapesettings fill="rgba(141, 206, 255, 0.6)" border="bordertexasmap"></e-layersettings-shapesettings>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

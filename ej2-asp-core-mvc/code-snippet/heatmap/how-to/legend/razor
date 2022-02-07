@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts => 
+ts.Text("Sales Revenue per Employee (in 1000 US$)").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+xAxis.Labels(ViewBag.xLabels)).YAxis(yaxis =>
+yaxis.Labels(ViewBag.yLabels)).PaletteSettings(ps => ps.Palette(palette =>
+{
+    palette.Value(0).Color("#C2E7EC").Add();
+    palette.Value(25000).Color("#AEDFE6").Add();
+    palette.Value(50000).Color("#9AD7E0").Add();
+    palette.Value(75000).Color("#72C7D4").Add();
+    palette.Value(99000).Color("#5EBFCE").Add();
+})).LegendSettings(ls =>
+ls.Position(Syncfusion.EJ2.HeatMap.LegendPosition.Right)).LegendRender("legendRender")DataSource(ViewBag.dataSource).Render()
+
+<script>
+    var legendRender = function (args) {
+        if(args.text=='25,000' || args.text=='50,000'|| args.text=='99,000'){
+            args.text = args.text.replace(/,/, "");
+            args.text = `${parseInt(args.text/1000)}` + "k "+"$";
+        } else {
+            args.cancel=true;
+        }
+    };
+</script>

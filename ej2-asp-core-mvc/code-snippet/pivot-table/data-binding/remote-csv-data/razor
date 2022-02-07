@@ -1,0 +1,19 @@
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://bi.syncfusion.com/productservice/api/sales")
+.ExpandAll(false).ShowAggregationOnValueField(false).EnableSorting(true).Type(Syncfusion.EJ2.PivotView.DataSourceType.CSV)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Total Cost").Format("C0").UseGrouping(true).Add();
+    formatsettings.Name("Total Revenue").Format("C0").UseGrouping(true).Add();
+    formatsettings.Name("Total Profit").Format("C0").UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Region").Add(); rows.Name("Country").Add();
+}).Columns(columns =>
+{
+    columns.Name("Item Type").Add();
+    columns.Name("Sales Channel").Add();
+}).Values(values =>
+{
+    values.Name("Total Cost").Add(); values.Name("Total Revenue").Add(); values.Name("Total Profit").Add();
+})
+).Render()

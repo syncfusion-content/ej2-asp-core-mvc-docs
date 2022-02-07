@@ -1,0 +1,56 @@
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var tooltip = new Syncfusion.EJ2.Maps.MapsTooltipSettings
+    {
+        Visible = true,
+        ValuePath = "name",
+        Format = "${name}: ${value1}",
+        Fill = "#D0D0D0",
+        TextStyle = new MapsFont
+        {
+            Color = "green",
+            FontFamily = "Times New Roman",
+            FontStyle = "Sans-serif"
+        }
+    };
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new  MapsColorMapping{ Color = "#b3daff",Value= "1"  },
+        new MapsColorMapping { Color= "#80c1ff", Value = "2" },
+        new MapsColorMapping { Color= "#1a90ff", Value = "3" },
+        new MapsColorMapping { Color= "#005cb3", Value = "7" }
+    };
+    var data = new[]
+    {
+        new { name= "India", value1= "3", value2="2", country="India" },
+        new { name= "Dominican Rep.", value1= "3", value2="2", country="West Indies" },
+        new { name= "Cuba", value1= "3", value2="2", country="West Indies" },
+        new { name= "Jamaica", value1= "3", value2="2", country="West Indies" },
+        new { name= "Haiti", value1= "3", value2="2", country="West Indies" },
+        new { name= "Guyana", value1= "3", value2="2", country="West Indies" },
+        new { name= "Suriname", value1= "3", value2="2", country="West Indies" },
+        new { name= "Trinidad and Tobago", value1= "3", value2="2", country="West Indies" },
+        new { name= "Sri Lanka", value1= "3", value2="1", country="Sri Lanka" },
+        new { name= "United Kingdom", value1= "3", value2="0", country="England" },
+        new { name= "Pakistan", value1= "2", value2="1", country="Pakistan" },
+        new { name= "New Zealand", value1= "1", value2="0", country="New Zealand" },
+        new { name= "Australia", value1= "7", value2="5", country="Australia" },
+    };
+}
+<div id="control-section">
+    <ejs-maps id="maps" tooltipRender="tooltipRender">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map" dataSource="data" shapeDataPath="name" shapePropertyPath='new[] { "name" }' tooltipSettings="tooltip">
+                <e-layersettings-shapesettings fill="#E5E5E5" colorValuePath="value1" colorMapping="colormapping"></e-layersettings-shapesettings>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>
+
+<script>
+    function tooltipRender(args) {
+        if (!args.options['data']) {
+            args.cancel = true;
+        }
+    }
+</script>

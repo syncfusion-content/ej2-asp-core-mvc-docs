@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.LayerType(Syncfusion.EJ2.Maps.ShapeLayerType.Bing).Key('../bingmapkey').Add();
+    l.ShapeSettings(s => s.Fill("blue")).ShapeData(ViewBag.africaShape).Type(Syncfusion.EJ2.Maps.Type.SubLayer).Add();
+}).Render()

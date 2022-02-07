@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2.PivotView
+
+
+@Html.EJS().PivotView("PivotGrid").Height("300").DataSource(dataSource => dataSource.Data((IEnumerable<object>)ViewBag.Data).ExpandAll(false).EnableSorting(true).AllowLabelFilter(true).AllowValueFilter(true)
+.FormatSettings(formatsettings => 
+{ 
+    formatsettings.Name("Amount").Format("C0").UseGrouping(true).Add(); 
+}).Rows(rows => 
+{ 
+    rows.Name("Country").Add(); rows.Name("Products").Add(); 
+}).Columns(columns => 
+{ 
+   columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add(); 
+}).Values(values => 
+{ 
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add(); 
+})).ShowFieldList(true).Render()
+
+<script>
+    var pivotGridObj;
+    document.getElementById('Refresh').addEventListener('click', () => {
+        pivotGridObj = document.getElementById('PivotGrid').ej2_instances[0];
+        pivotGridObj.engineModule.fieldList = {};
+        pivotGridObj.dataSourceSettings.dataSource = [
+            { 'Sold': 31, 'Amount': 52824, 'Country': 'France', 'Year': 'FY 2015' },
+            { 'Sold': 51, 'Amount': 86904, 'Country': 'France', 'Year': 'FY 2015' },
+            { 'Sold': 90, 'Amount': 153360, 'Country': 'France', 'Year': 'FY 2015' },
+            { 'Sold': 25, 'Amount': 42600, 'Country': 'France', 'Year': 'FY 2015' },
+            { 'Sold': 27, 'Amount': 46008, 'Country': 'France', 'Year': 'FY 2016' }];
+    });
+</script>

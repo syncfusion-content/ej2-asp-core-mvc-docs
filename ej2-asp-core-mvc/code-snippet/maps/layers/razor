@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.ShapeSettings(ss => ss.Fill("#E5E5E5").Border(border => border.Color("black").Width(0.1).Opacity(1)))
+    .ShapeData(ViewBag.usamap).Add();
+    l.ShapeSettings(ss => ss.Fill("rgba(141, 206, 255, 0.6)").Border(border => border.Color("#1a9cff").Width(0.25).Opacity(1)))
+    .ShapeData(ViewBag.texasmap).Type(Syncfusion.EJ2.Maps.Type.SubLayer).Add();
+    l.ShapeSettings(ss => ss.Fill("rgba(141, 206, 255, 0.6)").Border(border => border.Color("#1a9cff").Width(0.25).Opacity(1)))
+   .ShapeData(ViewBag.californiamap).Type(Syncfusion.EJ2.Maps.Type.SubLayer).Add();
+}).Render()

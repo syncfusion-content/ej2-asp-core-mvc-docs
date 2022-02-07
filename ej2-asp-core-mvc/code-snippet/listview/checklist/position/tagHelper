@@ -1,0 +1,16 @@
+
+   <ejs-listview id="listview" dataSource="ViewBag.dataSource" showCheckBox="true" checkBoxPosition="Right">
+        <e-listview-fieldsettings text="text" id="id">
+        </e-listview-fieldsettings>
+    </ejs-listview>
+
+
+<style>
+    #listview {
+        display: block;
+        max-width: 400px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>

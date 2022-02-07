@@ -1,0 +1,97 @@
+<ejs-pivotview id="PivotView" height="300" showFieldList="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>
+
+<script>
+    var pivotObj;
+    var L10n = ej.base.L10n;
+    L10n.load({
+        "fr-CH": {
+            "pivotview": {
+                "grandTotal": "Grand Total",
+                "total": "Total",
+                "value": "Valeur",
+                "noValue": "Pas de valeur",
+                "row": "Rangée",
+                "column": "La colonne",
+                "collapse": "Effondrement",
+                "expand": "L'expansion"
+            },
+            "pivotfieldlist": {
+                "fieldList": "Field List",
+                "dropRowPrompt": "Drop row ici",
+                "dropColPrompt": "Drop column here",
+                "dropValPrompt": "Valeur liste déroulante ici",
+                "dropFilterPrompt": "Filtre goutte ici",
+                "addPrompt": "Ajouter un champ ici",
+                "centerHeader": "Faire glisser les champs entre les zones ci-dessous :",
+                "add": "Ajouter",
+                "drag": "Faites glisser",
+                "filter": "Filter",
+                "filtered": "Filtered",
+                "sort": "Trier",
+                "remove": "Déposer",
+                "filters": "Filters",
+                "rows": "Lignes",
+                "columns": "Colonnes",
+                "values": "Valeurs",
+                "error": "Error",
+                "dropAction": "Champ calculé ne peut pas être place dans toute autre région, à l'exception de l'axe des valeurs.",
+                "search": "Recherchez",
+                "close": "Fermer",
+                "cancel": "Annuler",
+                "delete": "Supprimer",
+                "alert": "Alert",
+                "warning": "Attention",
+                "ok": "OK",
+                "allFields": "Tous les domaines",
+                "noMatches": "Pas de correspondance"
+            }
+        }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        loadCultureFiles('fr-CH');
+        pivotObj.locale = 'fr-CH';
+    });
+
+    function loadCultureFiles(name) {
+        var files = ['ca-gregorian.json', 'numbers.json', 'timeZoneNames.json'];
+        if (name === 'ar') {
+            files.push('numberingSystems.json');
+        }
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var val, ajax;
+            if (name === 'ar' && prop === files.length - 1) {
+                ajax = new ej.base.Ajax(location.origin + '/../../scripts/cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                ajax = new ej.base.Ajax(location.origin + '/../../scripts/cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+            ajax.onSuccess = function (value) {
+                val = value;
+            };
+            ajax.send();
+            loader(JSON.parse(val));
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+</script>

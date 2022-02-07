@@ -1,0 +1,11 @@
+@{ 
+}  
+@using Syncfusion.EJ2;
+<ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer layerType="OSM"></e-maps-layer>
+            <e-maps-layer type="SubLayer" shapeData="ViewBag.usMap">
+               <e-layersettings-shapesettings fill="blue"></e-layersettings-shapesettings>
+            </e-maps-layer>
+        </e-maps-layers>
+</ejs-maps>

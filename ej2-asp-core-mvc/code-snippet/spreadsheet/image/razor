@@ -1,0 +1,151 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowFormulaBar(false).ShowRibbon(false).Created("created").Sheets(sheet =>
+   {
+       sheet.Name("Employee Deatils").SelectedRange("B2").Rows(row =>
+       {
+           row.Index(1).Height(30).Cells(cell =>
+           {
+               cell.Value("   Mark").Add();
+           }).Add();
+           row.Index(2).Height(40).Cells(cell =>
+           {
+               cell.Index(2).Value("Id").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Bottom  }).Add();
+               cell.Index(3).Value(": 1001").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Bottom  }).Add();
+           }).Add();
+           row.Index(3).Cells(cell =>
+           {
+               cell.Index(2).Value("Gender").Add();
+               cell.Index(3).Value(": Male").Add();
+           }).Add();
+           row.Index(4).Cells(cell =>
+           {
+               cell.Index(2).Value("Contact Preference").Add();
+               cell.Index(3).Value(": Email").Add();
+           }).Add();
+           row.Index(5).Cells(cell =>
+           {
+               cell.Index(2).Value("Email").Add();
+               cell.Index(3).Value(": mark@gmail.com").Add();
+           }).Add();
+           row.Index(6).Cells(cell =>
+           {
+               cell.Index(2).Value("Date of Birth").Add();
+               cell.Index(3).Value(": Jan 3, 1985").Add();
+           }).Add();
+           row.Index(7).Height(40).Cells(cell =>
+           {
+               cell.Index(2).Value("Department").Add();
+               cell.Index(3).Value(": IT").Add();
+           }).Add();
+           row.Index(8).Height(40).Cells(cell =>
+           {
+               cell.Index(2).Value("IsActive").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Top  }).Add();
+               cell.Index(3).Value(": True").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Top  }).Add();
+           }).Add();
+
+           row.Index(10).Height(30).Cells(cell =>
+           {
+               cell.Value("   Mary").Add();
+           }).Add();
+           row.Index(11).Height(40).Cells(cell =>
+           {
+               cell.Index(2).Value("Id").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Bottom  }).Add();
+               cell.Index(3).Value(": 1002").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Bottom  }).Add();
+           }).Add();
+           row.Index(12).Cells(cell =>
+           {
+               cell.Index(2).Value("Gender").Add();
+               cell.Index(3).Value(": Female").Add();
+           }).Add();
+           row.Index(13).Cells(cell =>
+           {
+               cell.Index(2).Value("Contact Preference").Add();
+               cell.Index(3).Value(": Phone").Add();
+           }).Add();
+           row.Index(14).Cells(cell =>
+           {
+               cell.Index(2).Value("Email").Add();
+               cell.Index(3).Value(": mary@gmail.com").Add();
+           }).Add();
+           row.Index(15).Cells(cell =>
+           {
+               cell.Index(2).Value("Date of Birth").Add();
+               cell.Index(3).Value(": Jan 3, 1985").Add();
+           }).Add();
+           row.Index(16).Height(40).Cells(cell =>
+           {
+               cell.Index(2).Value("Department").Add();
+               cell.Index(3).Value(": HR").Add();
+           }).Add();
+           row.Index(17).Height(40).Cells(cell =>
+           {
+               cell.Index(2).Value("IsActive").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Top  }).Add();
+               cell.Index(3).Value(": True").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Top  }).Add();
+           }).Add();
+
+           row.Index(19).Height(30).Cells(cell =>
+           {
+               cell.Value("   Nashi").Add();
+           }).Add();
+           row.Index(20).Height(40).Cells(cell =>
+           {
+               cell.Index(2).Value("Id").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Bottom  }).Add();
+               cell.Index(3).Value(": 1003").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Bottom  }).Add();
+           }).Add();
+           row.Index(21).Cells(cell =>
+           {
+               cell.Index(2).Value("Gender").Add();
+               cell.Index(3).Value(": Female").Add();
+           }).Add();
+           row.Index(22).Cells(cell =>
+           {
+               cell.Index(2).Value("Contact Preference").Add();
+               cell.Index(3).Value(": Email").Add();
+           }).Add();
+           row.Index(23).Cells(cell =>
+           {
+               cell.Index(2).Value("Email").Add();
+               cell.Index(3).Value(": nashi@gmail.com").Add();
+           }).Add();
+           row.Index(24).Cells(cell =>
+           {
+               cell.Index(2).Value("Date of Birth").Add();
+               cell.Index(3).Value(": Apr 11, 1986").Add();
+           }).Add();
+           row.Index(25).Height(40).Cells(cell =>
+           {
+               cell.Index(2).Value("Department").Add();
+               cell.Index(3).Value(": IT").Add();
+           }).Add();
+           row.Index(26).Height(40).Cells(cell =>
+           {
+               cell.Index(2).Value("IsActive").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Top  }).Add();
+               cell.Index(3).Value(": True").Style(new SpreadsheetCellStyle() { VerticalAlign = VerticalAlign.Top  }).Add();
+           }).Add()).Add();
+       }).Columns(column =>
+       {
+           column.Width(20).Add();
+           column.Width(280).Add();
+           column.Width(172).Add();
+           column.Width(160).Add();
+       }).Add();
+   }).Render()
+
+
+<script>
+
+     function created() {
+            this.merge('B2:D2');
+            this.merge('B11:D11');
+            this.merge('B20:D20');
+            this.cellFormat({ fontWeight: 'bold', verticalAlign: 'middle', backgroundColor: '#1167b1', color: '#ffffff' }, 'B2');
+            this.cellFormat({ fontWeight: 'bold', verticalAlign: 'middle', backgroundColor: '#1167b1', color: '#ffffff' }, 'B11');
+            this.cellFormat({ fontWeight: 'bold', verticalAlign: 'middle', backgroundColor: '#1167b1', color: '#ffffff' }, 'B20');
+            this.cellFormat({ fontWeight: 'bold' }, 'C3:C9');
+            this.cellFormat({ fontWeight: 'bold' }, 'C12:C18');
+            this.cellFormat({ fontWeight: 'bold' }, 'C21:C27');
+            this.setBorder({ border: '1px solid #1167b1' }, 'B2:D9', 'Outer');
+            this.setBorder({ border: '1px solid #1167b1' }, 'B11:D18', 'Outer');
+            this.setBorder({ border: '1px solid #1167b1' }, 'B20:D27', 'Outer');
+    }
+
+</script>

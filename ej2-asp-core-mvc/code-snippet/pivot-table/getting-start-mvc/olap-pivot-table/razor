@@ -1,0 +1,4 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("pivotview").Width("100%").Height("600").DataSourceSettings(dataSourceSettings => dataSourceSettings.EnableSorting(true)
+        .Url("https://bi.syncfusion.com/olap/msmdpump.dll").Catalog("Adventure Works DW 2008 SE").Cube("Adventure Works").ProviderType(ProviderType.SSAS)).Render()

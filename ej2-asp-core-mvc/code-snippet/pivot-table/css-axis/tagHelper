@@ -1,0 +1,63 @@
+<ejs-pivotview id="PivotView" height="300" showGroupingBar="true" showFieldList="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource">
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>
+
+ <style>
+    #PivotTable .e-group-columns {
+      display: none;
+    }
+    #PivotTable .e-group-filters {
+      height: 71px !important;
+    }
+    
+    #PivotTable_PivotFieldList_Wrapper .e-field-list-columns{
+      display: none;
+    }
+    #PivotTable_PivotFieldList_Wrapper .e-field-list-values{
+      margin-top: 0px;
+      height: 338px;
+    }
+    .e-pivotfieldlist-wrapper .e-values {
+      height: 310px !important;
+    }
+    
+    /* Hiding row axis in grouping bar */
+    /* #PivotView .e-group-rows {
+        display: none;
+    } */
+    
+    /* Hiding row axis in field list */
+    /* .e-pivotfieldlist-wrapper .e-field-list-rows {
+        display: none;
+    } */
+    
+    /* Hiding value axis in grouping bar */
+    /* #PivotView .e-group-values {
+        display: none;
+    } */
+    /* Hiding value axis in field list */
+    /* .e-pivotfieldlist-wrapper .e-field-list-values {
+        display: none;
+    } */
+    /* Hiding filter axis in grouping bar */
+    /* #PivotView .e-group-filters {
+        display: none;
+    } */
+    /* Hiding filter axis in field list */
+    /* .e-pivotfieldlist-wrapper .e-field-list-filters {
+        display: none;
+    } */
+ </style>

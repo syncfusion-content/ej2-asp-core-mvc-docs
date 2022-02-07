@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2;
+<div id="control-section">
+    <ejs-maps id="maps">
+        <e-maps-zoomsettings enable="true" DoubleClickZoom="true"></e-maps-zoomsettings>
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map">
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

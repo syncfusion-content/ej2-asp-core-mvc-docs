@@ -1,0 +1,30 @@
+using Syncfusion.EJ2
+@using Syncfusion.EJ2.Maps
+@{ var data = new[]
+                {
+        new {latitude = 37.0000, longitude = -120.0000, city= "California"},
+        new {latitude = 40.7127, longitude = -74.0059, city= "New York"},
+        new {latitude = 42.000, longitude = -93.000, city= "Iowa"}
+    }; }
+@Html.EJS().Maps("container").Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+{
+                    new Syncfusion.EJ2.Maps.MapsLayer
+                    {
+                        ShapeData = ViewBag.worldMap,
+                        ShapeSettings = new MapsShapeSettings
+                        {
+                           Fill="lightgray"
+                        },
+                        MarkerSettings  = new List<Syncfusion.EJ2.Maps.MapsMarker>
+            {
+                            new Syncfusion.EJ2.Maps.MapsMarker
+                            {
+                                Visible = true,
+                                Fill = "green",
+                                DataSource = data,
+                                Shape=MarkerType.Image,
+                                Height= 20,
+                                Width= 20,
+                                ImageUrl="~/ballon.png"
+                            }
+                        }}}).Render()

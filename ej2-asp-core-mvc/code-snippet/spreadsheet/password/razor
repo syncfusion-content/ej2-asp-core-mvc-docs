@@ -1,0 +1,22 @@
+@Html.EJS().Spreadsheet("spreadsheet").Password("syncfusion).DataBound("dataBound").Sheets(sheet =>
+{
+    sheet.Name("Budget").Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.budgetData).StartCell("A1").Add();
+    }).Columns(column =>
+    {
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    function dataBound() {
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:D1');
+        this.cellFormat({ fontWeight: 'bold'}, 'A11:D11');
+    }
+
+</script>

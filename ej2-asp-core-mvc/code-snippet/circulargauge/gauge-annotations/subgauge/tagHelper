@@ -1,0 +1,66 @@
+@using Syncfusion.EJ2;
+
+<ejs-circulargauge id="circular">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis minimum="0" maximum="12" startAngle="0" endAngle="360">
+            <e-axis-labelstyle hiddenLabel="First"></e-axis-labelstyle>
+            <e-axis-linestyle width="0"></e-axis-linestyle>
+            <e-circulargauge-ranges>
+                <e-circulargauge-range start="0" end="3" color="rgba(29,29,29,0.7)"></e-circulargauge-range>
+                <e-circulargauge-range start="3" end="12" color="rgba(168,145,102,0.1)"></e-circulargauge-range>
+            </e-circulargauge-ranges>
+            <e-circulargauge-annotations>
+                <e-circulargauge-annotation content="<div id='subGauge' style='width:90px;height:90px;'></div>" angle="270" radius="40%" zIndex="1"></e-circulargauge-annotation>
+                <e-circulargauge-annotation content="<div id='time'><span>6:30 PM</span></div>" angle="90" radius="40%" zIndex="1"></e-circulargauge-annotation>
+            </e-circulargauge-annotations>
+            <e-circulargauge-pointers>
+                <e-circulargauge-pointer value="6.5" radius="40%" color="rgb(29,29,29)" pointerWidth="5">
+                    <e-pointer-cap radius="0" color="rgb(29,29,29)">
+                        <e-pointers-cap-border color="red" width="0.2"></e-pointers-cap-border>
+                    </e-pointer-cap>
+                    <e-pointer-border color="rgb(29,29,29)" width="1"></e-pointer-border>
+                    <e-pointer-needletail length="0%"></e-pointer-needletail>
+                    <e-pointer-animation enable="false"></e-pointer-animation>
+                </e-circulargauge-pointer>
+                <e-circulargauge-pointer value="6" radius="60%" color="rgb(29,29,29)" pointerWidth="5">
+                    <e-pointer-cap radius="0" color="rgb(29,29,29)">
+                        <e-pointers-cap-border color="red" width="0.2"></e-pointers-cap-border>
+                    </e-pointer-cap>
+                    <e-pointer-border color="rgb(29,29,29)" width="1"></e-pointer-border>
+                    <e-pointer-needletail length="0%"></e-pointer-needletail>
+                    <e-pointer-animation enable="false"></e-pointer-animation>
+                </e-circulargauge-pointer>
+                <e-circulargauge-pointer value="9.8" radius="70%" color="rgba(168,145,102,1)" pointerWidth="4">
+                    <e-pointer-cap radius="4" color="rgba(168,145,102,1)">
+                        <e-pointers-cap-border color="rgba(168,145,102,1)" width="0.2"></e-pointers-cap-border>
+                    </e-pointer-cap>
+                    <e-pointer-needletail length="20%" color="rgba(168,145,102,1)"></e-pointer-needletail>
+                    <e-pointer-animation enable="false"></e-pointer-animation>
+                </e-circulargauge-pointer>
+            </e-circulargauge-pointers>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>
+<ejs-circulargauge id="subGauge">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis minimum="0" maximum="12" startAngle="0" endAngle="360">
+            <e-axis-labelstyle hiddenLabel="First"></e-axis-labelstyle>
+            <e-axis-majorticks interval="3"></e-axis-majorticks>
+            <e-circulargauge-ranges>
+                <e-circulargauge-range start="0" end="3" color="rgba(29,29,29,0.7)" startWidth="5" endWidth="5"></e-circulargauge-range>
+                <e-circulargauge-range start="3" end="12" color="rgba(168,145,102,0.1)" startWidth="5" endWidth="5"></e-circulargauge-range>
+            </e-circulargauge-ranges>
+            <e-axis-linestyle width="0"></e-axis-linestyle>
+            <e-circulargauge-pointers>
+                <e-circulargauge-pointer radius="40%" color="rgb(29,29,29)" pointerWidth="2">
+                    <e-pointer-cap radius="2" color="rgb(29,29,29)">
+                        <e-pointers-cap-border color="red" width="0.2"></e-pointers-cap-border>
+                    </e-pointer-cap>
+                    <e-pointer-border color="rgb(29,29,29)" width="1"></e-pointer-border>
+                    <e-pointer-needletail length="0%"></e-pointer-needletail>
+                    <e-pointer-animation enable="false"></e-pointer-animation>
+                </e-circulargauge-pointer>
+            </e-circulargauge-pointers>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>

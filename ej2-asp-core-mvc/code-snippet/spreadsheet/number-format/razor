@@ -1,0 +1,46 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowSheetTabs(false).Created("created").ShowRibbon(false).ShowFormulaBar(false).AllowInsert(false).AllowDelete(false).Sheets(sheet =>
+{
+    sheet.SelectedRange("U15").ShowGridLines(false).Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A2").Add();
+    }).Rows(row =>
+    {
+        row.Height(35).CustomHeight(true).Cells(cell =>
+        {
+            cell.ColSpan(6).Value("Sales Team Summary").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, VerticalAlign = VerticalAlign.Middle, TextAlign=TextAlign.Center, FontSize="16pt", Border="1px solid #e0e0e0", BackgroundColor="#EEEEEE", Color="#279377" }).Add();
+        }).Add();
+        row.Index(10).Cells(cell =>
+        {
+            cell.Index(1).Value("Total:").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, FontStyle= FontStyle.Italic  }).Add();
+            cell.Formula("=SUM(C3:C10)").Format("$#,##0.00").Add();
+            cell.Formula("=SUM(D3:D10)").Format("_($* #,##0.00_);_($* (#,##0.00);_($* \"-\"??_);_(@_)").Add();
+            cell.Formula("=SUM(E3:E10)").Format("_($* #,##0.00_);_($* (#,##0.00);_($* \"-\"??_);_(@_)").Add();
+        }).Add();
+    }).Columns(column =>
+    {
+        column.Width(140).Add();
+        column.Width(140).Add();
+        column.Width(160).Add();
+        column.Width(160).Add();
+        column.Width(160).Add();
+        column.Width(120).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    function created() {
+        this.cellFormat({ fontWeight: 'bold', fontSize: '12pt', backgroundColor: '#279377', textAlign: 'center', color: '#ffffff', borderBottom: '1px solid #e0e0e0' }, 'A2:F2');
+        this.cellFormat({ borderTop: '1px solid #e0e0e0', backgroundColor: '#EEEEEE' }, 'A11:F11');
+        this.setBorder({ border: '1px solid #e0e0e0' }, 'A2:F11', 'Outer');
+        // Applied Accounting format to the cells from C3 to E10 range.
+        this.numberFormat('_($* #,##0.00_);_($* (#,##0.00);_($* "-"??_);_(@@_)', 'C3:E10');
+        // Applied Percentage format to the cells from C3 to E11 range.
+        this.numberFormat('0%', 'F3:F10');
+        // applied the custom number format for cell form D3 to D10 range
+        this.numberFormat('[Red][<=2000]$#,##0.00;[Blue][>2000]$#,##0.00', 'D3:D10');
+        // applied the custom number format for cell from F3 to F10 range
+        this.numberFormat('#,##0.00_);[Red](#,##0.00)', 'F3:F10');
+    }
+
+</script>

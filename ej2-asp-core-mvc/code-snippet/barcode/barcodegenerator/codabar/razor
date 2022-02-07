@@ -1,0 +1,3 @@
+@(Html.EJS().BarcodeGenerator("container").
+Width("200px").Height("150px").
+Value("123456789").Type(Syncfusion.EJ2.BarcodeGenerator.Type.Codabar).Render() )

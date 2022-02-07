@@ -1,0 +1,90 @@
+<div>
+      <button id="changeDataBtn" class='e-btn'>Change Datasource</button>
+</div>
+
+@Html.EJS().Spreadsheet("spreadsheet").DataSourceChanged("dataSourceChanged").Sheets((sheet) =>
+{
+    sheet.Ranges((ranges) =>
+    {
+        ranges.DataSource(@ViewBag.DefaultData).Add();
+    }).Add();
+}).Render()
+
+<div>
+                        <h4><b>Event Trace</b></h4>
+                        <div id="evt">
+                                <div style="height:173px;overflow: auto;min-width: 250px;">
+                                        <span id="EventLog" style="word-break: normal;"></span>
+                                </div>
+                                <button id="clearBtn" class='e-btn'>Clear</button>
+                        </div>
+                </div>
+
+<script>
+
+document.getElementById('changeDataBtn').addEventListener('click', ()=> {
+    var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+    var itemData = [
+            {
+                'Item Name': 'Casual Shoes',
+                'Date': '02/14/2019',
+                'Time': '11:34:32 AM',
+                'Quantity': 10,
+                'Price': 20,
+                'Amount': '=D2*E2',
+                'Discount': 1,
+                'Profit': 10
+            },
+            {
+                'Item Name': 'Sports Shoes',
+                'Date': '06/11/2019',
+                'Time': '05:56:32 AM',
+                'Quantity': 20,
+                'Price': 30,
+                'Amount': '=D3*E3',
+                'Discount': 5,
+                'Profit': 50
+            } 
+        ];
+    spreadsheet.sheets[0].ranges[0].dataSource = itemData;
+});
+
+document.getElementById('clearBtn').addEventListener('click', ()=> {
+    document.getElementById('EventLog').innerHTML = "";
+});
+
+function appendElement(html): void {
+     var span = document.createElement("span");
+     span.innerHTML = html;
+     var log = document.getElementById('EventLog');
+     log.insertBefore(span, log.firstChild);
+}
+
+function dataSourcechanged() {
+      this.appendElement("Data source changed with" + "<b>&nbsp;" + args.action + "</b> action<hr>"
+    );
+}
+
+</script>
+
+<style>
+
+#changeDataBtn {
+    margin-bottom: 10px;
+}
+
+#EventLog b {
+  color: #388e3c;
+ }
+
+#evt {
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+</style>

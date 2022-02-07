@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotGrid").Height("300").DataSource(dataSource => dataSource.Data((IEnumerable<object>)ViewBag.Data).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Production Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).Load("onLoad").CellSelected("onCellSelected").GridSettings( new PivotViewGridSettings { AllowSelection=true }).Render()
+
+<script>
+    var pivotGridObj;
+    function onLoad(args) {
+        pivotGridObj = document.getElementById('PivotGrid').ej2_instances[0];
+        pivotGridObj.gridSettings.selectionSettings = {
+            mode: "Both",
+            type: "Multiple"            
+        };
+    }
+    function onCellSelected(args) {
+        //args.selectedCellsInfo -> get selected cells information.
+        //args.pivotValues -> get the pivot values of the pivot grid.
+    }
+</script>

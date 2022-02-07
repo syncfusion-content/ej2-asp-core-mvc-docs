@@ -1,0 +1,2 @@
+    <ejs-querybuilder id="querybuilder" width="100%" dataSource="ViewBag.dataSource" >
+    </ejs-querybuilder>

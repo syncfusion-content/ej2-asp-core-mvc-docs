@@ -1,0 +1,112 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("pivotview").Width("100%").Height("300").ShowToolbar(true).ShowFieldList(true).AllowExcelExport(true).AllowNumberFormatting(true).AllowConditionalFormatting(true).AllowPdfExport(true).ShowToolbar(true).AllowCalculatedField(true).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true)
+.FormatSettings(formatsettings => { formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add(); })
+.Rows(rows => { rows.Name("Country").Add(); rows.Name("Products").Add(); })
+.Columns(columns => { columns.Name("Year").Add(); columns.Name("Order_Source").Caption("Order Source").Add(); })
+.Values(values =>
+{
+    values.Name("In_Stock").Caption("In Stock").Add(); values.Name("Sold").Caption("Units Sold").Add();
+    values.Name("Amount").Caption("Sold Amount").Add();
+})
+.Filters(filters =>
+{
+    filters.Name("Product_Categories").Caption("Product Categories").Add();
+})).GridSettings(new PivotViewGridSettings { ColumnWidth = 140 }).DisplayOption(new PivotViewDisplayOption { View = View.Both }).Toolbar(new List<string>
+() { "New", "Save", "SaveAs", "Rename", "Remove", "Load", "Grid", "Chart", "Export", "SubTotal", "GrandTotal", "ConditionalFormatting", "NumberFormatting" "FieldList" }).SaveReport("saveReport").LoadReport("loadReport").FetchReport("fetchReport").RenameReport("renameReport").RemoveReport("removeReport").NewReport("newReport").Render()
+<style>
+    #pivotview {
+        width: 100%;
+        height: 100%;
+    }
+
+    .e-tool-expand::before {
+        content: '\e702';
+    }
+</style>
+<script>
+    function saveReport(args) {
+        var reports = [];
+        var isSaved = false;
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reports = JSON.parse(localStorage.pivotviewReports);
+        }
+        if (args.report && args.reportName && args.reportName !== '') {
+            reports.map(function (item) {
+                if (args.reportName === item.reportName) {
+                    item.report = args.report;
+                    isSaved = true;
+                }
+            });
+            if (!isSaved) {
+                reports.push(args);
+            }
+            localStorage.pivotviewReports = JSON.stringify(reports);
+        }
+    }
+    function fetchReport(args) {
+        var reportCollection = [];
+        var reeportList = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item) {
+            reeportList.push(item.reportName);
+        });
+        args.reportName = reeportList;
+    }
+    function loadReport(args) {
+        var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+        var reportCollection = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item) {
+            if (args.reportName === item.reportName) {
+                args.report = item.report;
+            }
+        });
+        if (args.report) {
+            pivotObj.dataSourceSettings = JSON.parse(args.report).dataSourceSettings;
+        }
+    }
+    function removeReport(args) {
+        var reportCollection = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        for (var i = 0; i < reportCollection.length; i++) {
+            if (reportCollection[i].reportName === args.reportName) {
+                reportCollection.splice(i, 1);
+            }
+        }
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            localStorage.pivotviewReports = JSON.stringify(reportCollection);
+        }
+    }
+    function renameReport(args) {
+        var reportCollection = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item) {
+            if (args.reportName === item.reportName) {
+                item.reportName = args.rename;
+            }
+        });
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            localStorage.pivotviewReports = JSON.stringify(reportCollection);
+        }
+    }
+    function newReport() {
+        var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+        pivotObj.setProperties({
+            dataSourceSettings: {
+                columns: [],
+                rows: [],
+                values: [],
+                filters: []
+            }
+        }, false);
+    }
+</script>

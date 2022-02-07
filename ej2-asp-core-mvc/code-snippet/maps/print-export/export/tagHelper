@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2;
+<div id="map">
+    <button id="export">Export</button>
+    <ejs-maps id="maps" load="onMapLoad"  allowImageExport="true">
+        <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.MapsData">
+        </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>
+
+<script>
+    function onMapLoad(args) {
+        window.maps = args.maps;
+    }
+    window.onload = function () {
+        document.getElementById("export").onclick = () => {
+            window.maps.export('PNG', 'Maps');
+        };
+    };
+</script>

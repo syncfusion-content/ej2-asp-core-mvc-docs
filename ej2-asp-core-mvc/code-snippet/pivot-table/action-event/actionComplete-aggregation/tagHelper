@@ -1,0 +1,24 @@
+<ejs-pivotview id="PivotView" height="300" showGroupingBar="true" actionComplete:"actionComplete">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold" type="DifferenceFrom" baseField="Country" baseItem="France"></e-field>
+            <e-field name="Amount" caption="Sold Amount" type="Min"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>
+
+<script>
+    function actionComplete(args) {
+        if (args.actionName == 'Field aggregated') {
+            // Triggers when the aggregation type is applied.
+        }
+    }
+</script>

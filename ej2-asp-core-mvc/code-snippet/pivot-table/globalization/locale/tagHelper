@@ -1,0 +1,95 @@
+<ejs-pivotview id="PivotView" height="300" showFieldList="true" locale="de-DE">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
+        <e-formatsettings>
+            <e-field name="Amount" format="C2" currency="EUR"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>
+
+<script>
+     var pivotObj;
+    var L10n = ej.base.L10n;
+    L10n.load({
+    'de-DE': {
+        'pivotview': {
+            'grandTotal': 'Gesamtsumme',
+            'total': 'Insgesamt',
+            'value': 'Wert',
+            'noValue': 'Kein Wert',
+            'row': 'Zeile',
+            'column': 'Spalte',
+            'collapse': 'Zusammenbruch',
+            'expand': 'Erweitern'
+        },
+        "pivotfieldlist": {
+            'fieldList': 'Feld Liste',
+            'dropRowPrompt': 'Drop Reihe hier',
+            'dropColPrompt': 'Drop column Hier',
+            'dropValPrompt': 'Drop wert hier',
+            'dropFilterPrompt': 'Drop Filter Hier',
+            'addPrompt': 'Feld hinzufügen',
+            'centerHeader': 'Ziehen Sie die Felder zwischen den Bereichen unten:',
+            'add': 'Hinzufügen',
+            'drag': 'Ziehen',
+            'filters': 'Filter',
+            'rows': 'Zeilen',
+            'columns': 'Spalten',
+            'values': 'Werte',
+            'error': 'Fehler',
+            'dropAction': 'Berechnetes Feld nicht in jeder anderen Region außer Wert Achse sein.',
+            'search': 'Suche',
+            'close': 'Schließen',
+            'cancel': 'Abbrechen',
+            'delete': 'Löschen',
+            'alert': 'Warnung',
+            'warning': 'Warnung',
+            'ok': 'OK',
+            'allFields': 'Alle Felder',
+            'noMatches': 'Keine Treffer'
+            }
+        }
+   });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        loadCultureFiles('de-DE');
+    });
+
+    function loadCultureFiles(name) {
+        var files = ['ca-gregorian.json', 'numbers.json', 'timeZoneNames.json'];
+        if (name === 'ar') {
+            files.push('numberingSystems.json');
+        }
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var val, ajax;
+            if (name === 'ar' && prop === files.length - 1) {
+                ajax = new ej.base.Ajax(location.origin + '/../../scripts/cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                ajax = new ej.base.Ajax(location.origin + '/../../scripts/cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+            ajax.onSuccess = function (value) {
+                val = value;
+            };
+            ajax.send();
+            loader(JSON.parse(val));
+            ej.base.setCulture('de');
+            ej.base.setCurrencyCode('EUR');
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+</script>

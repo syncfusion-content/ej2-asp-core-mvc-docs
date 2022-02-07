@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts => ts.Text("Crude Oil Production of Non-OPEC Countries (in Million barrels per day)").TextStyle(ViewBag.textStyle)).XAxis(
+xAxis =>{ xAxis.Labels(ViewBag.xLabels)}).YAxis(yaxis =>
+yaxis.Labels(ViewBag.yLabels)).CellSettings(cs =>
+cs.ShowLabel(false)).ShowTooltip(true).TooltipRender("tooltipRender").PaletteSettings(ps => ps.Palette(palette =>
+{
+    palette.Color("#F0ADCE").Add();
+    palette.Color("#19307B").Add();
+}).TooltipSettings(ts =>
+            ts.Fill("#265259").Border(br => br.Color("#98BABF").Width(1)).TextStyle(style =>
+            style.Color("#FFFFFF").Size("12px"))).DataSource(ViewBag.dataSource).Render()
+
+<script>
+    var tooltipRender = function (args) {
+        args.content = ['In ' + args.yLabel + ', the ' + args.xLabel + ' produced ' + args.value + ' million barrels per day'];
+    };
+</script>      
+

@@ -1,0 +1,9 @@
+@Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Open").AllowOpen(true).BeforeOpen("beforeOpen").Render()
+
+<script>
+
+    function beforeOpen(args) {
+        // your code snippets here
+    }
+
+</script>

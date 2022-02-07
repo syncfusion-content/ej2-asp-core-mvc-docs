@@ -1,0 +1,16 @@
+ @Html.EJS().PivotView("PivotGrid").Width("100%").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>
+            )ViewBag.Data)
+            .FormatSettings(formatsettings => 
+             { 
+             formatsettings.Name("Amount").Format("C0").Add(); 
+             })
+            .Columns(columns =>
+            {
+                columns.Name("Country").Add();
+            }).Rows(rows =>
+            {
+                rows.Name("ProductID").DataType("Number").Add();;
+            }).Values(values =>
+            {
+                values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+            })).ShowGroupingBar(true).Render()

@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2
+<div class="control-section">
+    @Html.EJS().ListView("remotelist").Enable(true).DataSource(dataManger =>
+{
+   dataManger.Url("//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/").CrossDomain(true);
+
+}).Query("new ej.data.Query().from('Products').select('ProductID,ProductName').take(10)").Fields(new Syncfusion.EJ2.Lists.ListViewFieldSettings { Id = "ProductID" , Text = "ProductName" }).ShowHeader(true).HeaderTitle("Products").Render()
+</div>

@@ -1,0 +1,5 @@
+@(Html.EJS().BarcodeGenerator("container").
+Width("200px").
+Height("150px").
+Value("112").
+Type(Syncfusion.EJ2.BarcodeGenerator.Type.Code11).Render() )

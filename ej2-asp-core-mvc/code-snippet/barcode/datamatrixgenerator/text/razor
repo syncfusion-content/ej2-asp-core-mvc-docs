@@ -1,0 +1,6 @@
+@(Html.EJS().DataMatrixGenerator("container").
+Width("200px").
+foreColor("red").
+Height("150px").
+DisplayText(s => s.text("text")).
+Value("SYNCFUSION").Render() )

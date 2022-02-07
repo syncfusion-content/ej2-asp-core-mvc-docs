@@ -1,0 +1,50 @@
+<ejs-heatmap id='container' load="window.onHeatmapLoad" tooltipRender="window.ontooltipRender" showTooltip="true">
+  <e-heatmap-titlesettings text="Commercial Aviation Accidents and Fatalities by year 2012 - 2017" textStyle="ViewBag.textStyle">
+  </e-heatmap-titlesettings>
+  <e-heatmap-xaxis labels="ViewBag.xLabels">
+  </e-heatmap-xaxis>
+  <e-heatmap-yaxis labels="ViewBag.yLabels">
+  </e-heatmap-yaxis>
+  <e-heatmap-palettesettings type="Gradient">
+        <e-palettes>
+            <e-palette color="#C06C84"></e-palette>
+            <e-palette color="#6C5B7B"></e-palette>
+            <e-palette color="#355C7D"></e-palette>
+        </e-palettes>
+  </e-heatmap-palettesettings>
+  <e-heatmap-cellsettings tileType="Bubble" bubbleType="SizeAndColor"></e-heatmap-cellsettings>
+  <e-heatmap-legendsettings visible="true"></e-heatmap-legendsettings>
+  <e-heatmap-datasourcesettings isJsonData="true" adaptorType="Cell" xDataMapping="Year" yDataMapping="Months">
+  <e-heatmap-bubbleDataMapping size="Accidents" color ="Fatalities"></e-heatmap-bubbleDataMapping></e-heatmap-datasourcesettings>
+</ejs-heatmap>
+
+<script>
+   var dataSource = [
+            { Year: '2017', Months: 'Jan-Feb', Accidents: 4, Fatalities: 39 },
+            { Year: '2017', Months: 'Mar-Apr', Accidents: 3, Fatalities: 8 },
+            { Year: '2017', Months: 'May-Jun', Accidents: 1, Fatalities: 3 },
+            { Year: '2017', Months: 'Jul-Aug', Accidents: 1, Fatalities: 10 },
+            { Year: '2017', Months: 'Sep-Oct', Accidents: 4, Fatalities: 4 },
+            { Year: '2017', Months: 'Nov-Dec', Accidents: 2, Fatalities: 15 },
+            { Year: '2016', Months: 'Jan-Feb', Accidents: 4, Fatalities: 28 },
+            { Year: '2016', Months: 'Mar-Apr', Accidents: 5, Fatalities: 92 },
+            { Year: '2016', Months: 'May-Jun', Accidents: 5, Fatalities: 73 },
+            { Year: '2016', Months: 'Jul-Aug', Accidents: 3, Fatalities: 1 },
+            { Year: '2016', Months: 'Sep-Oct', Accidents: 3, Fatalities: 4 },
+            { Year: '2016', Months: 'Nov-Dec', Accidents: 4, Fatalities: 126 },
+            { Year: '2015', Months: 'Jan-Feb', Accidents: 4, Fatalities: 45 },
+            { Year: '2015', Months: 'Mar-Apr', Accidents: 5, Fatalities: 152 },
+            { Year: '2015', Months: 'May-Jun', Accidents: 0, Fatalities: 0 },
+            { Year: '2015', Months: 'Jul-Aug', Accidents: 4, Fatalities: 54 },
+            { Year: '2015', Months: 'Sep-Oct', Accidents: 5, Fatalities: 243 },
+            { Year: '2015', Months: 'Nov-Dec', Accidents: 2, Fatalities: 45 },
+   ];
+    window.onHeatmapLoad = function (args) {
+        args.heatmap.dataSource = dataSource;
+    }
+    window.ontooltipRender = function (args) {
+        args.content = ['Year ' + ' : ' + args.xLabel + '<br/>' + 'Months ' + ' : ' + args.yLabel + '<br/>'
+          + 'Accidents ' + ' : ' + args.value[0].bubbleData + '<br/>' + 'Fatalities ' + ' : '
+            + args.value[1].bubbleData];
+    }
+</script>

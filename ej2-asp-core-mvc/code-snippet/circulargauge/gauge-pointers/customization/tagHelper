@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2;
+
+<ejs-circulargauge id="circular">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis>
+            <e-circulargauge-pointers>
+                <e-circulargauge-pointer value="90" radius="50%" color="#007DD1" pointerWidth="25">
+                    <e-pointer-cap radius="15" color="white">
+                        <e-pointers-cap-border color="#007DD1" width="5"></e-pointers-cap-border>
+                    </e-pointer-cap>
+                    <e-pointer-needletail length="22%" color="#007DD1"></e-pointer-needletail>
+                </e-circulargauge-pointer>
+            </e-circulargauge-pointers>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>

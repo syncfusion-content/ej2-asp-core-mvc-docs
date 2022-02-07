@@ -1,0 +1,62 @@
+@using Syncfusion.EJ2.CircularGauge;
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("container").Load("onGaugeLoad").Axes(axes => axes.Radius("90%").StartAngle(270).EndAngle(90)
+                   .LineStyle(new CircularGaugeLine{ Width = 3, Color = "#E63B86" }).LabelStyle(new CircularGaugeLabel
+                   {
+                       Font = new CircularGaugeFont { Size = "0px" }
+                   }).MajorTicks(new CircularGaugeTick
+                   {
+                       Height = 0,
+                       Color = "transparent"
+                   })
+                   .MinorTicks(new CircularGaugeTick
+                   {
+                       Height = 0,
+                       Color = "transparent"
+                   }).Minimum(0).Maximum(100).Add()).Render()
+
+<script>
+    var pointerRadialGradient = {
+        radius: '50%',
+        innerPosition: { x: '50%', y: '50%' },
+        outerPosition: { x: '50%', y: '50%' },
+        colorStop: [
+        { color: '#FEF3F9', offset: '0%', opacity: 0.9 },
+        { color: '#E63B86', offset: '60%', opacity: 0.9 }]
+    }
+    function onGaugeLoad(sender) {
+        sender.gauge.axes[0].pointers = [{
+            radius: '80%',
+            value: 80,
+            animation: { enable: true, duration: 1000 },
+            pointerWidth: 10,
+            radialGradient: pointerRadialGradient,
+            cap: {
+                radius: 8,
+                color: 'white',
+                border: {
+                    color: '#E63B86',
+                    width: 1
+                }
+                },
+            needleTail: {
+                length: '20%',
+                radialGradient: pointerRadialGradient
+            }
+        }, {
+            radius: '60%', value: 40,
+            animation: { duration: 1000 },
+            pointerWidth: 10,
+            radialGradient: pointerRadialGradient,
+            cap: {
+                radius: 8, color: 'white',
+                border: { color: '#E63B86', width: 1 }
+            },
+            needleTail: {
+                length: '20%',
+                radialGradient: pointerRadialGradient
+            }
+        }];
+    }
+</script>

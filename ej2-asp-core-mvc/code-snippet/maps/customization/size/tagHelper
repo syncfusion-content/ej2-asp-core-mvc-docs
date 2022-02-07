@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2;
+<div id="map">
+    <ejs-maps id="maps" height="500px" width="300px">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map">
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

@@ -1,0 +1,15 @@
+ @Html.EJS().PivotView("PivotGrid").Width("100%").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>
+            )ViewBag.Data)
+            .FormatSettings(formatsettings =>
+            {
+                formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+            }).Columns(columns =>
+            {
+                columns.Name("Date").Add(); columns.Name("Product").Add();
+            }).Rows(rows =>
+            {
+                rows.Name("Country").Add();;
+            }).Values(values =>
+            {
+                values.Name("Quantity").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+            })).EditSettings(pivotViewCellEditSettings=>pivotViewCellEditSettings.AllowEditing(true).AllowInlineEditing(true)).Render()

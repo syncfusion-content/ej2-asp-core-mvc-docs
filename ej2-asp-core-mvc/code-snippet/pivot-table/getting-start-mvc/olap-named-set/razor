@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("pivotview").Width("100%").Height("600").ShowFieldList(true).ShowGroupingBar(true).AllowCalculatedField(true).DataSourceSettings(dataSourceSettings => dataSourceSettings.EnableSorting(true)
+        .Url("https://bi.syncfusion.com/olap/msmdpump.dll").Catalog("Adventure Works DW 2008 SE").Cube("Adventure Works").ProviderType(ProviderType.SSAS)
+        .Rows(rows => { rows.Name("[Customer].[Customer Geography]").Caption("Customer Geography").Add(); })
+        .Columns(columns => { columns.Name("[Core Product Group]").Caption("Core Product Group").IsNamedSet(true).Add(); columns.Name("[Measures]").Caption("Measures").Add(); })
+        .Values(values => { values.Name("[Measures].[Customer Count]").Caption("Customer Count").Add(); values.Name("[Measures].[Internet Sales Amount]").Caption("Internet Sales Amount").Add(); })
+        .Filters(filters => { filters.Name("[Date].[Fiscal]").Caption("Date Fiscal").Add(); })
+        .FilterSettings(filterSettings =>
+        {
+            filterSettings.Name("[Date].[Fiscal]").Items(ViewBag.filterMembers).LevelCount(3).Add();
+        })).Render()
+
+<style>
+    #pivotview {
+        display: block;
+    }
+</style>

@@ -1,0 +1,17 @@
+@Html.EJS().PivotView("PivotView").Height(300).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.DrilledMembers(drilledmembers =>
+ {
+     drilledmembers.Name("Country").Items(ViewBag.countryMembers).Add(); drilledmembers.Name("Year").Items(ViewBag.yearMembers).Add();
+ }).FormatSettings(formatsettings =>
+ {
+     formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+ }).Rows(rows =>
+ {
+     rows.Name("Country").Add(); rows.Name("Products").Add();
+ }).Columns(columns =>
+ {
+     columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+ }).Values(values =>
+ {
+     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+ })).HyperlinkSettings(hyperlinksettings => hyperlinksettings.ShowValueCellHyperlink(true)).Render()

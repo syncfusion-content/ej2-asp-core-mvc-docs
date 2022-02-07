@@ -1,0 +1,35 @@
+
+@Html.EJS().QueryBuilder("querybuilder").Width("73%").Columns(col =>
+{
+   col.Field("CustomerID").Label("Customer ID").Type("number").Add();
+   col.Field("CompanyName").Label("Company Name").Type("string").Add();
+   col.Field("ContactName").Label("Contact Name").Type("string").Add();
+   col.Field("City").Label("City").Type("string").Add();
+}).RuleChange("updateRule").Render()
+
+
+@Html.EJS().Grid("Grid").DataSource(dataManager => { dataManager.Url("/Home/UrlDataSource").Adaptor("UrlAdaptor"); }).Columns(col =>
+{
+    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+    col.Field("CompanyName").HeaderText("Company Name").Width("120").Add();
+    col.Field("ContactName").HeaderText("Contact Name").Width("120").Add();
+    col.Field("City").HeaderText("City").Width("120").Add();
+
+}).AllowPaging().Render()
+
+<script>
+
+    function updateRule(args) {
+        var dataManagerQuery;
+        var qryBldrObj  = ej.base.getComponent(document.getElementById("querybuilder"), 'query-builder');
+        var grid = ej.base.getComponent(document.getElementById("grid"), 'grid');
+        var predicate = qryBldrObj.getPredicate(args.rule);
+        if (ej.base.isNullOrUndefined(predicate)) {
+            dataManagerQuery = new ej.data.Query().select(['CustomerID', 'CompanyName', 'ContactName', 'City']);
+         } else {
+            dataManagerQuery = new ej.data.Query().select(['CustomerID', 'CompanyName', 'ContactName', 'City']).where(predicate);
+         }
+            grid.query = dataManagerQuery;
+            grid.refresh();
+    }
+</script>

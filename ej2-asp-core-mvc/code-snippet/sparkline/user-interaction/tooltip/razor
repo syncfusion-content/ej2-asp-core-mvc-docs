@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2;
+<div class="spark" align="center">
+@Html.EJS().Sparkline("sparkline").Loaded("loaded").Height("200px").Width("500px").AxisSettings(axis => axis.MinX(-1).MaxX(8)).Fill("blue").ValueType(SparklineValueType.Category).XName("xval").YName("yval").TooltipSettings(tool => tool.Visible(true).Format("${xval} : ${yval}")).DataSource(ViewBag.data).Render()
+</div>
+<style>
+    .spark {
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 2px;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<script>
+    function loaded(args)
+    { 
+        window.sparkline = args.sparkline;
+        args.sparkline.loaded = null;
+        args.sparkline.refresh();
+    }
+</script>

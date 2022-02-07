@@ -1,0 +1,14 @@
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://cdn.syncfusion.com/data/sales-analysis.json")
+.ExpandAll(false)
+.Rows(rows =>
+{
+    columns.Name("EnerType").Add();
+}).Columns(columns =>
+{
+    columns.Name("EneSource").Add();
+}).Values(values =>
+{
+    values.Name("PowUnits").Add();
+    values.Name("ProCost").Add();
+})
+).Render()

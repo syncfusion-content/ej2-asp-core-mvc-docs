@@ -1,0 +1,36 @@
+@Html.EJS().Spreadsheet("spreadsheet").Created("created").Sheets(sheet =>
+{
+     sheet.Name("Book Sales").Rows(row =>
+	   {
+		   row.Height(30).Cells(cell =>
+		   {
+			   cell.Value("Book Sales 2016-2020").Style(new SpreadsheetCellStyle() { BackgroundColor = "#357cd2", Color = "#fff", FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center, VerticalAlign = VerticalAlign.Middle }).Add();
+		   }).Add();
+		   row.Cells(cell =>
+		   {
+			   cell.Index(7).Chart(new List<Syncfusion.EJ2.Spreadsheet.Chart> { new Syncfusion.EJ2.Spreadsheet.Chart() { Type = Syncfusion.EJ2.Spreadsheet.ChartType.Column, Range = "A3:F8" } }).Add();
+		   }).Add();
+	   }).Ranges(ranges =>
+	   {
+		   ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A3").Add();
+	   }).Columns(column =>
+	   {
+		   column.Width(110).Add();
+		   column.Width(100).Add();
+		   column.Width(100).Add();
+		   column.Width(100).Add();
+		   column.Width(100).Add();
+           column.Width(100).Add();
+	   }).Add();
+   }).Render()
+
+<script>
+
+    function created() {
+        this.merge('A1:F1');
+		this.cellFormat({ backgroundColor: '#357cd2', color: '#fff', 
+        fontWeight: 'bold', textAlign: 'center' }, 'A3:F3');
+		this.numberFormat(getFormatFromType('Currency'), 'B4:F8');
+        }
+
+</script>

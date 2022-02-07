@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2;
+
+
+<ejs-circulargauge id="circular">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis direction="AntiClockWise"></e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>

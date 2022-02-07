@@ -1,0 +1,7 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.CircularGauge;
+
+@Html.EJS().CircularGauge("circular").Axes(axes => axes
+ .Pointers(pointer => pointer.Value(50).Type(PointerType.Marker)
+ .Radius("100%").MarkerShape(GaugeShape.InvertedTriangle).MarkerWidth(15).MarkerHeight(15).Add())
+.Add()).Render()

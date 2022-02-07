@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.Maps;
+
+<ejs-maps id="maps">
+    <e-maps-annotations>
+        <e-maps-annotation content="#annotation" x="0%" y="50%"></e-maps-annotation>
+    </e-maps-annotations>
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.worldmap">  
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>
+<div id='annotation' style="display:none">
+    <img src="./wwwroot/wheel.png">
+</div>

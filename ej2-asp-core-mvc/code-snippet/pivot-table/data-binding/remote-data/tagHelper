@@ -1,0 +1,19 @@
+<ejs-pivotview id="PivotView" height="300">
+    <e-datasourcesettings>
+        <e-data-manager url="https://bi.syncfusion.com/northwindservice/api/orders" adaptor="WebApiAdaptor" crossdomain="true"></e-data-manager>
+        <e-rows>
+            <e-field name="ShipCountry" caption="Ship Country"></e-field>
+            <e-field name="ShipCity" caption="Ship City"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="ProductName" caption="Product Name"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="UnitPrice" caption="Unit Price"></e-field>
+            <e-field name="Quantity" caption="Quantity"></e-field>
+        </e-values>
+        <e-formatsettings>
+            <e-field name="UnitPrice" format="C0" useGrouping="true"></e-field>
+        </e-formatsettings>
+    </e-datasourcesettings>
+</ejs-pivotview>

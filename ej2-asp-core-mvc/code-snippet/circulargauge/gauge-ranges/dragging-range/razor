@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("circular").Height("250px").Width("250px").EnableRangeDrag(true).Axes(axes => axes
+.Pointers(pointer => pointer.Value(50)).Ranges(range =>range.Start(0).End(100).StartWidth(8).EndWidth(8).Radius("108%").Color("#30B32D").Add())
+  .Add()).Render()

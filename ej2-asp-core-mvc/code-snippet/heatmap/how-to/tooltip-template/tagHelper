@@ -1,0 +1,21 @@
+<ejs-heatmap id='container' dataSource="ViewBag.dataSource" showTooltip="true">
+  <e-heatmap-titlesettings text="Sales Revenue per Employee (in 1000 US$)" textStyle="ViewBag.textStyle">
+  </e-heatmap-titlesettings>
+  <e-heatmap-xaxis labels="ViewBag.xLabels">
+  </e-heatmap-xaxis>
+  <e-heatmap-yaxis labels="ViewBag.yLabels">
+  </e-heatmap-yaxis>
+  <e-heatmap-cellsettings showLabel="false"></e-heatmap-cellsettings>
+  <e-heatmap-tooltipsettings fill="#265259" template="#tooltipTemplate">
+    <e-tooltipsettings-textstyle color="#FFFFFF" size="12px"></e-tooltipsettings-textstyle>
+    <e-tooltipsettings-border color="#98BABF" width="1"></e-tooltipsettings-border>
+  </e-heatmap-tooltipsettings>
+</ejs-heatmap>
+
+<script id="tooltipTemplate" type="text/x-template">
+    <div id='template'>
+        <table>
+            <tr bgcolor="pink"><td align="right">${xValue}</td><td>${yValue}:</td><td>${value}</td></tr>
+        </table>
+    </div>
+</script>

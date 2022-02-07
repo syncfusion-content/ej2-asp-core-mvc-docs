@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2.PivotView
+@Html.EJS().PivotView("PivotView").Height("300").DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ShowFieldList(true).DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.Data).ExpandAll(false)
+.EnableSorting(true).Rows(rows =>
+{
+    rows.Name("Country").Add();
+    rows.Name("Products").Add();
+})
+.Columns(columns =>
+{
+    columns.Name("Year").Add();
+    columns.Name("Quarter").Add();
+})
+.Values(values =>
+{
+    values.Name("Amount").Caption("Sales Amount").Add();values.Name("Sold").Caption("Units Sold").Add();
+})
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C").Add();
+})
+.Filters(filters =>
+{
+    filters.Name("Product_Categories").Caption("Product Categories").Add();
+})).ChartSettings(chartSettings =>
+chartSettings.ChartSeries(chartSeries =>chartSeries.Type(ChartSeriesType.Pie)
+)).ShowGroupingBar(true).Render();

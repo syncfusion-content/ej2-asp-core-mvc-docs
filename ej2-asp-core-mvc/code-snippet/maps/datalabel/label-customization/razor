@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+@{
+    var label = new MapsDataLabelSettings
+    {
+        Visible = true,
+        LabelPath = "name",
+        Border = new MapsBorder
+        {
+            Color = "green",
+            Width = 2,
+            Opacity = 1
+        },
+        Fill = "#CCD1D1",
+        Opacity = 0.9,
+        TextStyle = new MapsFont
+        {
+            Color = "blue",
+            Size = "10px",
+            FontStyle = "Sans-serif",
+            FontWeight = "normal"
+        }
+    };
+}
+
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.ShapeSettings(s => s.Autofill(true)).DataLabelSettings(label).
+      ShapeData(ViewBag.usmap).Add();
+}).Render()

@@ -1,0 +1,18 @@
+<div class="col-lg-9">
+    <div style="width:200px;margin:auto;padding-bottom:20px">
+        <img src="~/wheel.png" alt="Bus icon" style="width:25px;height:25px;float:left">
+        <div style="padding-left:30px;font-size:20px;font-weight:400;">Bus seat selection</div>
+    </div>
+    <div style="border: 3px solid darkgray;width:200px;display:block;margin:auto;border-radius:5px">
+        <img src="~/bus-icon.jpg" alt="Steering wheel icon" style="width:30px;height:30px;margin-left:18%;margin-top:10px">
+        <ejs-maps id="maps" height="400" projectionType="Equirectangular">
+            <e-maps-zoomsettings enable="false"></e-maps-zoomsettings>
+            <e-maps-layers>
+                <e-maps-layer geometryType="Normal" shapeData="ViewBag.seatData">
+                    <e-layersettings-shapesettings colorValuePath="fill"></e-layersettings-shapesettings>
+                    <e-layersettings-selectionsettings enable="true" opacity="1" enableMultiSelect="true"></e-layersettings-selectionsettings>
+                </e-maps-layer>
+            </e-maps-layers>
+        </ejs-maps>
+    </div>
+</div>

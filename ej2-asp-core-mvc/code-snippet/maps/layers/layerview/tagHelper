@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2.Maps;
+
+<ejs-maps id="maps" BaseLayerIndex="1">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.world_map"></e-maps-layer>
+        <e-maps-layer shapeData="ViewBag.usa"></e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

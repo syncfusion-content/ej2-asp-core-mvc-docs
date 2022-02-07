@@ -1,0 +1,99 @@
+<ejs-pivotview id="PivotView" enablevirtualization="true" enginePopulated="onGridEnginePopulate" height="300"></ejs-pivotview>
+<br />
+<ejs-pivotfieldlist id="PivotFieldList" renderMode="Fixed" load="onLoad" enginePopulated="onFieldListEnginePopulate">
+    <e-datasourcesettings dataSource="data(1000)" expandAll="false" enableSorting="true">
+        <e-fieldlist-rows>
+            <e-field name="ProductID"></e-field>
+        </e-fieldlist-rows>
+        <e-fieldlist-columns>
+            <e-field name="Year"></e-field>
+        </e-fieldlist-columns>
+        <e-fieldlist-values>
+            <e-field name="Price" caption="Unit Price"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+        </e-fieldlist-values>
+    </e-datasourcesettings>
+</ejs-pivotfieldlist>
+
+<style>
+    #PivotView {
+        width: 58%;
+        height: 100%;
+    }
+    #PivotFieldList {
+        width: 42%;
+        height: 100%;
+    }
+    .e-PivotView {
+        float: left;
+    }
+    .e-PivotFieldList {
+        float: right;
+    }
+    .e-PivotFieldList .e-static {
+        width: 100% !important;
+    }
+</style>
+
+<script>
+
+    var dt = 0;
+    var data = function (count) {
+        var result = [];
+        for (var i = 1; i < (count + 1); i++) {
+            dt++;
+            var round = void 0;
+            var toString_1 = i.toString();
+            if (toString_1.length === 1) {
+                round = '0000' + (i);
+            }
+            else if (toString_1.length === 2) {
+                round = '000' + i;
+            }
+            else if (toString_1.length === 3) {
+                round = '00' + i;
+            }
+            else if (toString_1.length === 4) {
+                round = '0' + i;
+            }
+            else {
+                round = toString_1;
+            }
+            result.push({
+                ProductID: 'PRO-' + round,
+                Year: "FY " + (dt + 2013),
+                Price: Math.round(Math.random() * 5000) + 5000,
+                Sold: Math.round(Math.random() * 80) + 10,
+            });
+            if (dt / 4 == 1)
+                dt = 0;
+        }
+        return result;
+    };
+
+    var pivotObj; var fieldListObj; var pivotGridModule;
+    function onGridEnginePopulate(args) {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        fieldListObj = document.getElementById('PivotFieldList').ej2_instances[0];
+        if (fieldListObj) {
+            fieldListObj.update(pivotObj);
+        }
+    }
+    function onFieldListEnginePopulate(args) {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        fieldListObj = document.getElementById('PivotFieldList').ej2_instances[0];
+        fieldListObj.updateView(pivotObj);
+    }
+    function onLoad(args) {
+        //Getting component instance.
+        fieldListObj = document.getElementById('PivotFieldList').ej2_instances[0];
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotGridModule = pivotObj;
+        //Assigning report to pivot table component.
+        pivotObj.datasourcesettings = fieldListObj.datasourcesettings;
+        //Generating page settings based on pivot table component’s size.
+        pivotObj.updatePageSettings(true);
+        //Assigning page settings to field list component.
+        fieldListObj.pageSettings =  pivotObj.pageSettings;
+    }
+</script>

@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("container").Tooltip(Tl => Tl.Enable(true).Type(new string[] { "Pointer", "Range", "Annotation" }).AnnotationSettings(annotation => annotation.Format("CircularGauge")).RangeSettings(range => range.Fill("red"))).Axes(axes => axes
+     .Minimum(0).Maximum(120).Radius("90%").StartAngle(240).EndAngle(120).Annotations(annotation => annotation.Content("CircularGauge")
+     .ZIndex("1").Angle(180).Add()).LabelStyle(ls => ls.UseRangeColor(true)
+     .Font(font => font.Color("#424242").Size("13px").FontFamily("Roboto")))
+     .Pointers(pt => pt.Value(70).Radius("60%").Color("#33BCBD").Cap(cp => cp.Radius(10).Border(br => br.Width(5).Color("#33BCBD")))
+     .Animation(An => An.Enable(false)).Add())
+     .LineStyle(lin => lin.Width(0))
+     .Ranges(range =>
+     {
+         range.Start(0).End(50).Radius("102%").StartWidth(10).EndWidth(10).Color("#3A5DC8").Add();
+         range.Start(50).End(120).Radius("102%").StartWidth(10).EndWidth(10).Color("#33BCBD").Add();
+     })
+     .MajorTicks(mi => mi.Color("white").Offset(-5).Height(12)).MinorTicks(mj => mj.Width(0).Color("transparent")).Add()).Render()

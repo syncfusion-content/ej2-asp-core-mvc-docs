@@ -1,0 +1,32 @@
+<ejs-spreadsheet id="spreadsheet" allowFindAndReplace="true">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet name="Shipment Details">
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="130"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="220"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="140"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+            <e-spreadsheet-sheet name="Company Details">
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="130"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="220"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="140"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>

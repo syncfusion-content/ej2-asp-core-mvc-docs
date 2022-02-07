@@ -1,0 +1,13 @@
+
+    <ejs-listview id="listview" dataSource="ViewBag.dataSource">
+    </ejs-listview>
+
+<style>
+    #listview {
+        display: block;
+        max-width: 400px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>

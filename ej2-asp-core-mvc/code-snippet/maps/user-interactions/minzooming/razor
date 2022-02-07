@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").ZoomSettings(zoom => zoom.Enable(true).MinZoom(2).MaxZoom(12)).Layers(l =>
+{
+    l.ShapeData(ViewBag.worldMap).Add();
+}).Render()

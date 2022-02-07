@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().Button("chartexport").Content("Export").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ChartSettings(chartSettings => chartSettings.ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column))).Render()
+
+<script>
+    var pivotObj;
+    document.getElementById("chartexport").onclick = function () {
+        pivotObj = document.getElementById("PivotView").ej2_instances[0];
+        pivotObj.chartExport("PNG", "result");
+    }
+</script>

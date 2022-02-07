@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+@{
+    var label = new MapsDataLabelSettings
+    {
+        Visible = true,
+        LabelPath = "name",
+        IntersectionAction = Syncfusion.EJ2.Maps.IntersectAction.Trim
+    };
+}
+
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.ShapeSettings(s => s.Autofill(true)).DataLabelSettings(label).
+      ShapeData(ViewBag.usmap).Add();
+}).Render()

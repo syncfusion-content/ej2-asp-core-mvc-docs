@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2;
+@{
+    var data = new[]
+    {
+        new { continent="North America", color="#71B081"},
+        new { continent="South America", color="#5A9A77"},
+        new { continent="Africa", color="#498770"},
+        new { continent="Europe", color="#39776C"},
+        new { continent="Asia", color="#266665"},
+        new { continent="Australia", color="#124F5E"}
+    };
+}
+<div id="map">
+    <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map" shapeDataPath="continent" shapePropertyPath='new[] { "continent" }' dataSource="data">
+                <e-layersettings-shapesettings colorValuePath="color"></e-layersettings-shapesettings>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

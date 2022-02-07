@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2;
+
+<ejs-circulargauge id="circular">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis background="rgba(0, 128, 128, 0.3)">
+            <e-axis-linestyle color="red" dashArray="4,3" width="2"></e-axis-linestyle>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>

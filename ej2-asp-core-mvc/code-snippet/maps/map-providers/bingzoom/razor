@@ -1,0 +1,4 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").ZoomSettings(zoom=>zoom.Enable(true)).Layers(l=> {
+    l.LayerType(Syncfusion.EJ2.Maps.ShapeLayerType.Bing).BingMapType(Syncfusion.EJ2.Maps.ShapeLayerType.BingMapType.CanvasLight).Key("// …bingMapKey")Add();
+}).Render()

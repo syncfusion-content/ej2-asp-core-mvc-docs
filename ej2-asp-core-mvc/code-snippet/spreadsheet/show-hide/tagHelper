@@ -1,0 +1,41 @@
+<ejs-spreadsheet id="spreadsheet" created="created" showFormulaBar="false" showSheetTabs="false" showRibbon="false">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet>
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-rows>
+                    <e-spreadsheet-row index="2" hidden="true"> </e-spreadsheet-row>
+                    <e-spreadsheet-row hidden="true"> </e-spreadsheet-row>
+                </e-spreadsheet-rows>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="220"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="140"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+ 
+
+    <script>
+
+         function created() {
+       this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        // Unhide the 2nd index hidden column
+        this.hideColumn(1, 1, false);
+        // Unhide the 3rd index hidden row
+        this.hideRow(3, 3, false);
+        // Hiding the 6th index column
+        this.hideColumn(6);
+        // Hiding the 8th and 9th index row
+        this.hideRow(8, 9);
+        this.cellFormat({ textAlign: 'center' }, 'D2:H11');
+    }
+
+    </script>

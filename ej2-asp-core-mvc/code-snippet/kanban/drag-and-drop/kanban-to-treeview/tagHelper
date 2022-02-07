@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Kanban</h4>
+            <ejs-kanban id="Kanban" keyField="Status" dataSource="@ViewBag.data" externalDropId="@ViewBag.externalDropId" dragStop="onDragStop">
+                <e-kanban-columns>
+                    <e-kanban-column headerText="To Do" keyField="Open"></e-kanban-column>
+                    <e-kanban-column headerText="Done" keyField="Close"></e-kanban-column>
+                </e-kanban-columns>
+                <e-kanban-cardsettings headerField="Id" contentField="Summary"></e-kanban-cardsettings>
+            </ejs-kanban>
+        </div>
+        <div class="col-md-6">
+            <h4>TreeView</h4>
+            <ejs-treeview id="TreeView" allowDragAndDrop="true" nodeDragStop="onTreeDragStop" nodeTemplate="#treeTemplate">
+                <e-treeview-fields dataSource="@ViewBag.treeDataSource" id="Id" text="Status"></e-treeview-fields>
+            </ejs-treeview>
+        </div>
+    </div>
+</div>
+<script>
+    function onDragStop(args) {
+        var kanbanObj = document.querySelector("#Kanban").ej2_instances[0];
+        var treeObj = document.querySelector("#TreeView").ej2_instances[0];
+        if (ej.base.closest(args.event.target, "#TreeView")) {
+            kanbanObj.deleteCard(args.data);
+            treeObj.addNodes(args.data);
+            args.cancel = true;
+        }
+    }
+    function onTreeDragStop(args) {
+        var kanbanObj = document.querySelector("#Kanban").ej2_instances[0];
+        var treeObj = document.querySelector("#TreeView").ej2_instances[0];
+        if (ej.base.closest(args.event.target, '#Kanban')) {
+            var treeData = treeObj.fields.dataSource;
+            var filteredData = treeData.filter(function (item) { return item.Id === parseInt(args.draggedNodeData.id, 10); });
+            treeObj.removeNodes([args.draggedNodeData.id]);
+            kanbanObj.openDialog('Add', filteredData[0]);
+            args.cancel = true;
+        }
+    }
+</script>
+<!-- Template to render tree node -->
+<script id="treeTemplate" type="text/x-template">
+    <div id="waiting">
+        <div id="treelist">
+            <div id="treeviewlist">${Id} - ${Status}</div>
+        </div>
+    </div>
+</script>

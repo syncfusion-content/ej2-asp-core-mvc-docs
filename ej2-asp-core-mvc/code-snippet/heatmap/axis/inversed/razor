@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts =>
+ts.Text("Monthly Flight Traffic at JFK Airport").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+{
+    xAxis.ValueType(Syncfusion.EJ2.HeatMap.ValueType.DateTime).Minimum(new System.DateTime(2007, 1, 1))
+    .Maximum(new System.DateTime(2017, 1, 1)).IntervalType(Syncfusion.EJ2.HeatMap.IntervalType.Years)
+    .LabelFormat("yyyy").LabelRotation(45)
+    .LabelIntersectAction(Syncfusion.EJ2.HeatMap.LabelIntersectAction.None).IsInversed(true);
+}).YAxis(yaxis => yaxis.Labels( ViewBag.yLabels)).CellSettings(cs =>
+cs.Border(ViewBag.border).ShowLabel(false).Format("{value} flights")).LegendSettings(ls =>
+ls.Visible(false)).DataSource(ViewBag.dataSource).Render()

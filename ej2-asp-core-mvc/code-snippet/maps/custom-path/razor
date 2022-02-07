@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2.Maps
+@using Syncfusion.EJ2
+
+@Html.EJS().Maps("container").Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+{
+                    new Syncfusion.EJ2.Maps.MapsLayer
+                    {
+                        GeometryType = GeometryType.Normal,
+                        ShapeData = ViewBag.seatData,
+                        ShapeSettings = new MapsShapeSettings
+                        {
+                          ColorValuePath = "fill"
+                        },
+                        } }).Render()
+
+<div class="col-lg-9">
+    <div style="width:200px;margin:auto;padding-bottom:20px">
+        <img src="~/wheel.png" alt="Bus icon" style="width:25px;height:25px;float:left">
+        <div style="padding-left:30px;font-size:20px;font-weight:400;">Bus seat selection</div>
+    </div>
+    <div style="border: 3px solid darkgray;width:200px;display:block;margin:auto;border-radius:5px">
+        <img src="~/bus-icon.jpg" alt="Steering wheel icon" style="width:30px;height:30px;margin-left:18%;margin-top:10px">
+    </div>
+</div>

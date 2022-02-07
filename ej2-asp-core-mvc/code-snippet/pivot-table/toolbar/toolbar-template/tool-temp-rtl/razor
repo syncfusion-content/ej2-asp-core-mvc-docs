@@ -1,0 +1,36 @@
+@using Syncfusion.EJ2.PivotView
+
+       @{
+            List<object> toolbarItems = new List<object>();
+            toolbarItems.Add(new { template = "#enablertl" });
+            toolbarItems.Add(new { template = "#disablertl" });
+        }
+        @Html.EJS().Button("enablertl").Content("Enable Rtl").CssClass("e-flat").IsPrimary(true).Render()
+        @Html.EJS().Button("disablertl").Content("Disable Rtl").CssClass("e-flat").IsPrimary(true).Render()
+        @Html.EJS().PivotView("PivotGrid").Width("100%").Height("300").ShowToolbar(true).ShowToolbar(true).DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>
+            )ViewBag.Data)
+            .FormatSettings(formatsettings =>
+            {
+                formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+            }).Columns(columns =>
+            {
+                columns.Name("Year").Add(); columns.Name("Quarter").Add();
+            }).Rows(rows =>
+            {
+                rows.Name("Country").Caption("Products").Add(); rows.Name("Quarter").Add();
+            }).Values(values =>
+            {
+                values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+            })).GridSettings(new Syncfusion.EJ2.PivotView.PivotViewGridSettings { ColumnWidth = 140 }).Toolbar(toolbarItems).Render()
+    </div>
+</div>
+<script>
+  document.getElementById("enablertl").addEventListener('click', function () {
+        var pivotObj = document.getElementById("PivotGrid").ej2_instances[0];
+        pivotObj.enableRtl = true;
+    });
+    document.getElementById("disablertl").addEventListener('click', function () {
+        var pivotObj = document.getElementById("PivotGrid").ej2_instances[0];
+        pivotObj.enableRtl = false;
+    });
+</script>

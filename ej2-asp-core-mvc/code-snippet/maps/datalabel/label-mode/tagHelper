@@ -1,0 +1,16 @@
+@{
+    var label = new MapsDataLabelSettings
+    {
+        Visible = true,
+        LabelPath = "name",
+        SmartLabelMode = Syncfusion.EJ2.Maps.SmartLabelMode.Hide
+    };
+}
+@using Syncfusion.EJ2.Maps;
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.usa" dataLabelSettings="label">
+            <e-layersettings-shapesettings autofill=true></e-layersettings-shapesettings>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

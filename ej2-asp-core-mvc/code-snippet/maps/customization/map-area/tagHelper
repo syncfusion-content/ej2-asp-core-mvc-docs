@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2;
+@{
+    var maparea = new Syncfusion.EJ2.Maps.MapsMapsAreaSettings
+    {
+        Background = "#CCD1D1",
+        Border = new Syncfusion.EJ2.Maps.MapsAreaSettingsBorderMapsArea
+        {
+            Width = 2,
+            Color = "green",
+            Opacity = 1
+        }
+    };
+}
+<div id="map">
+    <ejs-maps id="maps" mapsArea="maparea">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map">
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

@@ -1,0 +1,30 @@
+@Html.EJS().PivotView("PivotView").Height(300).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource)
+ .Rows(rows =>
+ {
+     rows.Name("Country").Add(); rows.Name("Products").Add();
+ }).Columns(columns =>
+ {
+     columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+ }).Values(values =>
+ {
+     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+ })).ShowGroupingBar(true).ShowFieldList(true).Render()
+
+ <style>
+    .e-pivotview .e-headercell { 
+      background-color: thistle !important; 
+    } 
+
+    .e-pivotview .e-rowsheader { 
+      background-color: skyblue !important; 
+    }
+
+    .e-pivotview .e-summary:not(.e-gtot)  { 
+      background-color: pink !important; 
+    } 
+
+    .e-pivotview .e-gtot  { 
+      background-color: greenYellow !important; 
+    } 
+
+ </style>

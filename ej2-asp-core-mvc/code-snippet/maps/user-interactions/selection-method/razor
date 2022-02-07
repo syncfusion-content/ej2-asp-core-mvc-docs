@@ -1,0 +1,36 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+@{
+    var select = new Syncfusion.EJ2.Maps.MapsSelectionSettings
+    {
+        Enable = true,
+        Fill = "green",
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Color = "white",
+            Width = 2,
+            Opacity = 1
+        }
+
+    };
+}
+<button id="selection">Selection</button>
+<button id="unselection">UnSelection</button>
+@Html.EJS().Maps("maps").Load("onMapLoad").Layers(l =>
+{
+    l.SelectionSettings(select).ShapeData(ViewBag.worldMap).Add();
+}).Render()
+
+<script>
+    function onMapLoad(args) {
+        window.maps = args.maps;
+    }
+    window.onload = function () {
+        document.getElementById('selection').onclick = () => {
+            window.maps.shapeSelection(0, "continent", "Asia", true);
+        };
+        document.getElementById('unselection').onclick = () => {
+            window.maps.shapeSelection(0, "continent", "Asia", false);
+        };
+    };
+</script>

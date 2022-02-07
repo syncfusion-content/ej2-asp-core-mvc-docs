@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+@Html.EJS().Maps("maps").Annotations(new List<Syncfusion.EJ2.Maps.MapsAnnotation>{ 
+    new Syncfusion.EJ2.Maps.MapsAnnotation
+    {
+        Content = "<div id='first'><h1>Maps</h1></div>",
+        X = "20%",
+        Y = "50%",
+        ZIndex = "-1",
+        HorizontalAlignment = AnnotationAlignment.Center
+    }
+}).Layers(layer =>
+{
+    layer.ShapeData(ViewBag.worldmap).Add();
+}).Render()

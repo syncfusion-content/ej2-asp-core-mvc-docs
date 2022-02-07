@@ -1,0 +1,43 @@
+<ejs-button id="pdf" content="Pdf Export" isPrimary="true"></ejs-button>
+
+<ejs-pivotview id="PivotGrid" height="300" allowPdfExport="true">
+    <e-datasource data="@ViewBag.data" expandAll="false">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Production Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasource>
+</ejs-pivotview>
+
+<script>
+    var pivotGridObj;
+    document.getElementById('pdf').onclick = function () {
+        pivotGridObj = document.getElementById('PivotGrid').ej2_instances[0];
+
+        var pdfExportProperties = {
+            theme: {
+                header: {
+                    fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true, borders: { color: '#64FA50', lineStyle: 'Thin' }
+                },
+                record: {
+                    fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true
+                },
+                caption: {
+                    fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true
+                }
+            }
+        };
+        pivotGridObj.pdfExport(pdfExportProperties);
+    }
+</script>

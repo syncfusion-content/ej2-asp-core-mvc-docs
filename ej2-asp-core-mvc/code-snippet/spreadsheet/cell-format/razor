@@ -1,0 +1,66 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowSheetTabs(false).Created("created").ShowRibbon(false).ShowFormulaBar(false).AllowInsert(false).AllowDelete(false).AllowEditing(false).Sheets(sheet =>
+{
+    sheet.SelectedRange("U15").ShowGridLines(false).Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A2").Add();
+    }).Rows(row =>
+    {
+        row.Height(40).CustomHeight(true).Cells(cell =>
+        {
+            cell.ColSpan(5).Value("Order Summary").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, VerticalAlign = VerticalAlign.Middle, TextAlign=TextAlign.Center, FontSize="18pt", Border="1px solid #e0e0e0", BackgroundColor="#EEEEEE", Color="#279377" }).Add();
+        }).Add();
+        row.Height(30).Cells(cell =>
+        {
+            cell.Index(2).Style(new SpreadsheetCellStyle() { TextAlign = TextAlign.Right  }).Add();
+        }).Add();
+        row.Height(30).Add();
+        row.Height(30).Add();
+        row.Height(30).Add();
+        row.Height(30).Add();
+        row.Height(30).Add();
+        row.Height(30).Add();
+        row.Height(30).Add();
+        row.Height(30).Add();
+        row.Height(30).Add();
+        row.Height(30).Add();
+    }).Columns(column =>
+    {
+        column.Width(100).Add();
+        column.Width(200).Add();
+        column.Width(110).Add();
+        column.Width(140).Add();
+        column.Width(90).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    function created() {
+        // Setting common styles to table header cells
+        this.cellFormat({ fontWeight: 'bold', fontSize: '12pt', backgroundColor: '#279377', color: '#ffffff' }, 'A2:E2');
+        // Setting common styles to whole table cells
+        this.cellFormat({ verticalAlign: 'middle', fontFamily: 'Axettac Demo' }, 'A2:E12');
+        // Column wise styles setting
+        this.cellFormat({ textAlign: 'center' }, 'A2:A12');
+        // Setting text-indent to 2 and 4 column
+        var style = { textAlign: 'left', textIndent: '8pt' };
+        this.cellFormat(style, 'B2:B12');
+        this.cellFormat(style, 'D2:D12');
+        this.cellFormat({ fontStyle: 'italic', textAlign: 'right' }, 'C3:C12');
+        this.cellFormat({ textAlign: 'center' }, 'E2:E12');
+        // Applied border to range of cells using 'setBorder' method
+        this.setBorder({ borderLeft: '1px solid #e0e0e0', borderRight: '1px solid #e0e0e0' }, 'A2:E2');
+        this.setBorder({ border: '1px solid #e0e0e0' }, 'A4:E11', 'Horizontal');
+        this.setBorder({ border: '1px solid #e0e0e0' }, 'A3:E12', 'Outer');
+        this.cellFormat({ color: '#10c469', textDecoration: 'line-through' }, 'E3:E4');
+        this.cellFormat({ color: '#10c469', textDecoration: 'line-through' }, 'E9');
+        this.cellFormat({ color: '#10c469', textDecoration: 'line-through' }, 'E12');
+        this.cellFormat({ color: '#FFC107', textDecoration: 'underline' }, 'E5');
+        this.cellFormat({ color: '#FFC107', textDecoration: 'underline' }, 'E8');
+        this.cellFormat({ color: '#FFC107', textDecoration: 'underline' }, 'E11');
+        this.cellFormat({ color: '#62c9e8' }, 'E6');
+        this.cellFormat({ color: '#62c9e8' }, 'E10');
+        this.cellFormat({ color: '#ff5b5b' }, 'E7');
+    }
+
+</script>

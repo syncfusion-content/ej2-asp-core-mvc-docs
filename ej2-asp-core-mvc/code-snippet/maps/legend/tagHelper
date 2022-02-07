@@ -1,0 +1,20 @@
+@{
+    var propertyPath = new[] { "name" };
+    var ColorMapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping>
+{
+         new MapsColorMapping{Value="Permanent", Color="#D84444"},
+         new MapsColorMapping{Value="Non-Permanent", Color="#316DB5"}
+    };
+}
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+<div id="control-section">
+    <ejs-maps id="maps">
+        <e-maps-legendsettings visible="true"></e-maps-legendsettings>
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map" shapeDataPath="Country" shapePropertyPath="propertyPath" dataSource="ViewBag.unCountries">
+                <e-layersettings-shapesettings colorValuePath="Membership" colorMapping="ColorMapping"></e-layersettings-shapesettings>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

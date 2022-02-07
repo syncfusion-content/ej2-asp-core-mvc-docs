@@ -1,0 +1,61 @@
+@using Syncfusion.EJ2.PivotView
+<div class="control-section" style="overflow:auto">
+    <div id="dropdown-control" style="margin-bottom:5px;">
+        <table style="width: 350px;">
+            <tbody>
+                <tr style="height: 50px">
+                    <td>
+                        <div>
+                            <b>Chart Type:</b>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <select id="charttypes" name="ddl-view-mode">
+                                <option value='Pie' selected>Pie</option>
+                                <option value='Doughnut'>DoughNut</option>
+                                <option value='Pyramid'>Pyramid</option>
+                                <option value='Funnel'>Funnel</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="content-wrapper">
+        @Html.EJS().PivotView("PivotView").Height("300").DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ShowFieldList(true).DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.Data).ExpandAll(false)
+        .EnableSorting(true).Rows(rows =>
+        {
+            rows.Name("Country").Add();
+            rows.Name("Products").Add();
+        })
+        .Columns(columns =>
+        {
+            columns.Name("Year").Add();
+            columns.Name("Quarter").Add();
+        })
+        .Values(values =>
+        {
+            values.Name("Amount").Caption("Sales Amount").Add();values.Name("Sold").Caption("Units Sold").Add();
+        })
+        .FormatSettings(formatsettings =>
+        {
+            formatsettings.Name("Amount").Format("C").Add();
+        })
+        .Filters(filters =>
+        {
+            filters.Name("Product_Categories").Caption("Product Categories").Add();
+        })).ChartSettings(chartSettings => chartSettings.ChartSeries(chartseries =>chartseries.Type(ChartSeriesType.Pie))).Render();
+    </div>
+</div>
+<script>
+    var chartTypesDropDown = new ej.dropdowns.DropDownList({
+        floatLabelType: "Auto",
+        change: function (args) {
+            var pivotObj = document.getElementById('PivotView').ej2_instances[0];
+            pivotObj.chartSettings.chartSeries.type = args.value;
+        }
+    });
+    chartTypesDropDown.appendTo("#charttypes");
+</script>

@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.Maps;
+@{
+    var titleStyle = new MapsFont
+    {
+        Size = "16px",
+    };
+}
+<ejs-maps id="maps" format="n" useGroupingSeparator="true" enablePersistence="true">
+    <e-maps-titlesettings alignment="@Syncfusion.EJ2.Maps.Alignment.Center" text="Top 50 largest cities in the World" textStyle="titleStyle"></e-maps-titlesettings>
+        <e-maps-zoomsettings enable="true"></e-maps-zoomsettings>
+            <e-maps-layers>
+                <e-maps-layer shapeData="ViewBag.shapeData">
+                <e-layersettings-shapesettings fill="#C1DFF5"></e-layersettings-shapesettings>
+                <e-layersettings-markers>
+                    <e-layersettings-marker visible="true" shape="Balloon" height="20" width="20" animationDuration="0"
+                                            dataSource="ViewBag.markerData"></e-layersettings-marker>
+            </e-layersettings-markers>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

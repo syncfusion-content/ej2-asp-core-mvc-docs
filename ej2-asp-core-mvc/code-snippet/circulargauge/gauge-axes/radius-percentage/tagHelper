@@ -1,0 +1,7 @@
+@using Syncfusion.EJ2;
+
+<ejs-circulargauge id="circular">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis radius="50%"></e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>

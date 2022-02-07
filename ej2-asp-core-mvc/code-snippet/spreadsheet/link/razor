@@ -1,0 +1,113 @@
+@Html.EJS().Spreadsheet("spreadsheet").BeforeHyperlinkClick("beforeHyperlinkClick").Sheets(sheet =>
+   {
+       sheet.Name("PriceDetails").SelectedRange("D13").Rows(row =>
+       {
+           row.Cells(cell =>
+           {
+               cell.Value("Item Name").Add();
+               cell.Value("Quantity").Add();
+               cell.Value("Price").Add();
+               cell.Value("Amount").Add();
+               cell.Value("Stock Detail").Add();
+               cell.Value("Website").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Casual Shoes").Add();
+               cell.Value("10").Add();
+               cell.Value("$20").Add();
+               cell.Value("$200").Add();
+               cell.Value("OUT OF STOCK").Add();
+               cell.Value("Amazon").Hyperlink("www.amazon.com").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Sports Shoes").Add();
+               cell.Value("20").Add();
+               cell.Value("$30").Add();
+               cell.Value("$600").Add();
+               cell.Value("IN STOCK").Hyperlink("Stock!A3:B3").Add();
+               cell.Value("Overstack").Hyperlink("www.overstock.com").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Formal Shoes").Add();
+               cell.Value("20").Add();
+               cell.Value("$15").Add();
+               cell.Value("$300").Add();
+               cell.Value("IN STOCK").Hyperlink("Stock!A2:B2").Add();
+               cell.Value("AliExpress").Hyperlink("www.aliexpress.com").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Sandals & Floaters").Add();
+               cell.Value("15").Add();
+               cell.Value("$20").Add();
+               cell.Value("$300").Add();
+               cell.Value("OUT OF STOCK").Add();
+               cell.Value("Alibaba").Hyperlink("www.alibaba.com").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Flip-Flops & Slippers").Add();
+               cell.Value("30").Add();
+               cell.Value("$10").Add();
+               cell.Value("$300").Add();
+              cell.Value("IN STOCK").Hyperlink("Stock!A4:B4").Add();
+               cell.Value("Taobao").Hyperlink("www.taobao.com").Add();
+           }).Add();
+       }).Columns(column =>
+       {
+           column.Width(110).Add();
+           column.Width(115).Add();
+           column.Width(110).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+       }).Add();
+       sheet.Name("Stock").SelectedRange("D13").Rows(row =>
+       {
+           row.Cells(cell =>
+           {
+               cell.Value("Item Name").Add();
+               cell.Value("Available Count").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Casual Shoes").Add();
+               cell.Value("30").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Sports Shoes").Add();
+               cell.Value("25").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Formal Shoes").Add();
+               cell.Value("40").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Sandals & Floaters").Add();
+               cell.Value("15").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Flip-Flops & Slippers").Add();
+               cell.Value("30").Add();
+           }).Add();
+       }).Columns(column =>
+       {
+           column.Width(110).Add();
+           column.Width(115).Add();
+       }).Add();
+   }).Render()
+
+
+<script>
+
+    function beforeHyperlinkClick(args) {
+        args.target = '_self'; //change target attribute
+    }
+
+</script>

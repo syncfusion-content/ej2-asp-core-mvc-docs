@@ -1,0 +1,23 @@
+<ejs-spreadsheet id="spreadsheet" allowFiltering="true" dataBound="dataBound">
+    <e-spreadsheet-sheets>
+        <e-spreadsheet-sheet>
+            <e-spreadsheet-ranges>
+                <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+            </e-spreadsheet-ranges>
+        </e-spreadsheet-sheet>
+    </e-spreadsheet-sheets>
+</ejs-spreadsheet>
+
+<script>
+
+function dataBound() {
+    var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+    if (spreadsheetObj.activeSheetIndex === 0) {
+        var colors = ['Pink', 'Aquamarine', 'Blue'];
+        var predicateList = []
+        colors.forEach((color) => { predicateList.push({ field: 'C', predicate: 'or', operator: 'equal', value: color }); })
+        spreadsheetObj.applyFilter(predicateList);
+    }
+}
+
+</script>

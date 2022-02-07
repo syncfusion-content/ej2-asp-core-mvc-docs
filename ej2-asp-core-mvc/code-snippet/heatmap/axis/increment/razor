@@ -1,0 +1,4 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").XAxis(xAxis =>
+xAxis.ValueType(Syncfusion.EJ2.HeatMap.ValueType.Numeric).Minimum(0).Increment(2)).YAxis(yaxis =>
+yaxis.ValueType(Syncfusion.EJ2.HeatMap.ValueType.Numeric).Minimum(0).Increment(3)).DataSource(ViewBag.dataSource).Render()

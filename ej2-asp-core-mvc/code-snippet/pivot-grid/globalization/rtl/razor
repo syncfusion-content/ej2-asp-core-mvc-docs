@@ -1,0 +1,67 @@
+@Html.EJS().PivotView("PivotGrid").Width("100%").Height("300").DataSource(dataSource => dataSource.Data((IEnumerable<object>)ViewBag.Data).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Production Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).ShowFieldList(true).Locale("ar").EnableRtl(true).Render()
+
+<script>
+    var L10n = ej.base.L10n;
+    L10n.load({
+        "ar": {
+            "pivotview": {
+                "grandTotal": "المجموع الكلى",
+                "total": "المجموع",
+                "value": "القيمة",
+                "noValue": "لا قيمة لها",
+                "row": "صف",
+                "column": "العمود",
+                "collapse": "الانهيار",
+                "expand": "توسيع"
+            },
+            "pivotfieldlist": {
+                "fieldList": "قائمة الحقول",
+                "dropRowPrompt": "تراجع الخلاف هنا",
+                "dropColPrompt": "انخفاض العمود هنا",
+                "dropValPrompt": "انخفاض قيمة هنا",
+                "dropFilterPrompt": "انخفاض هنا عامل التصفية",
+                "addPrompt": "اضافة حقل هنا",
+                "centerHeader": "اسحب المجالات بين المناطق الموضحة ادناه:",
+                "add": "اضافة",
+                "drag": "اسحب",
+                "filter": "الفلتر",
+                "filtered": "تصفية",
+                "sort": "النوع",
+                "remove": "قم بازالة",
+                "filters": "عوامل التصفية",
+                "rows": "الصفوف",
+                "columns": "الاعمدة",
+                "values": "قيم",
+                "error": "خطا",
+                "search": "البحث",
+                "close": "قريب",
+                "cancel": "الغاء",
+                "delete": "احذف",
+                "alert": "حالة تاهب قصوى",
+                "warning": "تحذير",
+                "ok": "موافق",
+                "allFields": "جميع الحقول",
+                "noMatches": "لا مباريات"
+            }
+        }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        pivotGridObj = document.getElementById('PivotGrid').ej2_instances[0];
+        ej.base.setStyleAttribute(pivotGridObj.fieldlistModule.element, {
+            width: ej.base.formatUnit(pivotGridObj.width)
+        });
+    });
+</script>

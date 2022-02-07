@@ -8,12 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-title: "Right to Left"
-component: "Common"
-description: "Learn about the right-to-left (RTL) behavior of Syncfusion web components in the web application."
----
-
 # System Requirements
 
 ## Syncfusion ASP.NET MVC UI (Essential JS 2)

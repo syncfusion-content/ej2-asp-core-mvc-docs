@@ -1,0 +1,3 @@
+<ejs-barcodegenerator id="container" width="300px" height="300px" type="Code128"foreColor = "red"value="SYNCFUSION" mode="SVG">
+<e-qrcodegenerator-displaytext text="text"></e-qrcodegenerator-displaytext>
+</ejs-barcodegenerator>

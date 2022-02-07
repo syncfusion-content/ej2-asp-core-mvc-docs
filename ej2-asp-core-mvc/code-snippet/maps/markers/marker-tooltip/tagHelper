@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2.Maps;
+@{
+    var tooltip = new MapsTooltipSettings
+    {
+        Visible = true,
+        ValuePath = "name"
+    };
+    var border = new MapsBorder
+    {
+        Width = 2,
+        Color = "green",
+        Opacity = 1
+    };
+    var data = new[]
+    {
+        new { latitude= 40.7424509, longitude= 1-74.0081468, name="New York" }
+    };
+}
+<div class="control-section">
+    <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.usa">
+                <e-layersettings-markers>
+                    <e-layersettings-marker visible="true" shape="Circle" fill="white" 
+                                            width="2" animationDuration="0" tooltipSettings="tooltip" 
+                                            border="border" dataSource="data"></e-layersettings-marker>
+                </e-layersettings-markers>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

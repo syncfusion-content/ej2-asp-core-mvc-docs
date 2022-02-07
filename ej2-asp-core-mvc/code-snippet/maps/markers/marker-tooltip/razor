@@ -1,0 +1,40 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Maps
+@{
+    var border = new MapsBorder
+    {
+        Width = 2,
+        Color = "green",
+        Opacity = 1
+    };
+    var data = new[]
+    {
+        new { latitude= 40.7424509, longitude= 1-74.0081468, name="New York" }
+    };
+}
+@Html.EJS().Maps("container").ZoomSettings(new Syncfusion.EJ2.Maps.MapsZoomSettings
+      {
+          Enable = true
+      }).Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+         {
+                    new Syncfusion.EJ2.Maps.MapsLayer
+                    {
+                        ShapeData = ViewBag.usamap,
+                        MarkerSettings  = new List<Syncfusion.EJ2.Maps.MapsMarker>
+                        {
+                            new Syncfusion.EJ2.Maps.MapsMarker
+                            {
+                                Visible = true,
+                                Fill = "white",
+                                DataSource = data,
+                                Shape=MarkerType.Circle,
+                                TooltipSettings = new MapsTooltipSettings {
+                                    Visible = true,
+                                    ValuePath= "name",
+                                },
+                                Width= 2,
+                                AnimationDuration= 0,
+                                Border = border
+                            }
+                        }}}).Render()
+       

@@ -1,0 +1,41 @@
+<ejs-dropdownbutton id="element" content="Clipboard" items="ViewBag.items" select="itemSelect"></ejs-dropdownbutton>
+<ejs-spreadsheet id="spreadsheet" created="createHandler" actionBegin="actionBeginHandler">
+    <e-spreadsheet-sheets>
+        <e-spreadsheet-sheet>
+            <e-spreadsheet-ranges>
+                <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+            </e-spreadsheet-ranges>
+            <e-spreadsheet-columns>
+                <e-spreadsheet-column width="130"></e-spreadsheet-column>
+                <e-spreadsheet-column width="92"></e-spreadsheet-column>
+                <e-spreadsheet-column width="96"></e-spreadsheet-column>
+            </e-spreadsheet-columns>
+        </e-spreadsheet-sheet>
+    </e-spreadsheet-sheets>
+</ejs-spreadsheet>
+
+<script>
+    document.getElementById("cutBtn").addEventListener('click', cut);
+    document.getElementById("copyBtn").addEventListener('click', copy);
+    document.getElementById("pasteBtn").addEventListener('click', paste);
+    function createHandler() {
+        //Applies format to specified range
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }, 'A1:G1');
+    }
+    // Triggers before the action begins.
+    function actionBeginHandler(pasteArgs) {
+        // To cancel the paste action.
+        if (pasteArgs.args.eventArgs.requestType === 'paste') {
+            pasteArgs.args.eventArgs.cancel = true;
+        }
+    }
+    function itemSelect(args) {
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        if (args.item.text === 'Copy')
+      spreadsheet.copy();
+    if (args.item.text === 'Cut')
+      spreadsheet.cut();
+    if (args.item.text === 'Paste')
+      spreadsheet.paste();
+    }
+</script>

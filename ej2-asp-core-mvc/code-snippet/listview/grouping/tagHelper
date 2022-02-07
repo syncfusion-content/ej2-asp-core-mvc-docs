@@ -1,0 +1,15 @@
+    <ejs-listview id="element" dataSource="ViewBag.dataSource">
+        <e-listview-fieldsettings groupBy="category" tooltip="text">
+        </e-listview-fieldsettings>
+    </ejs-listview>
+
+
+<style>
+    #element {
+        display: block;
+        max-width: 400px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>

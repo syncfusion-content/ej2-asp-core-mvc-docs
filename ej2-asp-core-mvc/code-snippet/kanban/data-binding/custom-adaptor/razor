@@ -1,0 +1,30 @@
+     @Html.EJS().Kanban("kanban").KeyField("Status").AllowDragAndDrop(false).Columns(col=> {
+           col.HeaderText("To Do").KeyField("Open").Add();
+           col.HeaderText("In Progress").KeyField("InProgress").Add();
+           col.HeaderText("Testing").KeyField("Testing").Add();
+           col.HeaderText("Done").KeyField("Close").Add();
+       }).CardSettings(card =>  {
+            card.ContentField("Summary").HeaderField("Id");
+            }).DialogOpen("onDialogOpen").Created("onCreate").Render()
+<script>
+    function onDialogOpen(args) {
+        args.cancel = true;
+    }
+
+    function onCreate(args) {
+        class TaskIdAdaptor extends ej.data.ODataAdaptor {
+            processResponse() {
+                var i = 0;
+                // calling base class processResponse function
+                var original = super.processResponse.apply(this, arguments);
+                original.forEach((item) => item['Id'] = 'Task - ' + ++i);
+                return original;
+            }
+        }
+        var kanban = document.querySelector('#kanban').ej2_instances[0];
+        kanban.dataSource = new ej.data.DataManager({
+            url: "https://ej2services.syncfusion.com/production/web-services/api/Kanban",
+            adaptor: new TaskIdAdaptor()
+        });
+    }
+</script>

@@ -1,0 +1,58 @@
+ <ejs-kanban id="Kanban" keyField="Status" enableTooltip="true" tooltipTemplate="tooltipTemplate"  dataSource="@ViewBag.data" created="onCreate">
+    <e-kanban-columns>
+        <e-kanban-column headerText="To Do" keyField="Open"></e-kanban-column>
+        <e-kanban-column headerText="In Progress" keyField="InProgress"></e-kanban-column>
+        <e-kanban-column headerText="In Review" keyField="Review"></e-kanban-column>
+        <e-kanban-column headerText="Done" keyField="Close"></e-kanban-column>
+    </e-kanban-columns>
+    <e-kanban-cardsettings contentField="Summary" headerField="Title"></e-kanban-cardsettings>
+</ejs-kanban>
+
+<script id="tooltipTemp" type="text/x-template">
+        <div class='e-kanbantooltiptemp'>
+            <table>
+                <tr>
+                    <td class="details">
+                        <table>
+                            <colgroup>
+                                <col style="width:30%">
+                                <col style="width:70%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="CardHeader">Assignee:</td>
+                                    <td>${Assignee}</td>
+                                </tr>
+                                <tr>
+                                    <td class="CardHeader">Type:</td>
+                                    <td>${Type}</td>
+                                </tr>
+                                <tr>
+                                    <td class="CardHeader">Estimate:</td>
+                                    <td>${Estimate}</td>
+                                </tr>
+                                <tr>
+                                    <td class="CardHeader">Summary:</td>
+                                    <td>${Summary}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </script>
+<style type="text/css">
+    .e-kanbantooltiptemp {
+        width: 250px;
+        padding: 3px;
+    }
+
+    .e-kanbantooltiptemp > table {
+        width: 100%;
+    }
+
+    .e-kanbantooltiptemp td {
+        vertical-align: top;
+    }
+</style>

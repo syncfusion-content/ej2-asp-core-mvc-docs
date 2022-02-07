@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2;
+
+<div id="container">
+    <ejs-circulargauge id="circular" locale="de">
+        <e-circulargauge-axes>
+            <e-circulargauge-axis>
+                <e-axis-labelstyle format="c"></e-axis-labelstyle>
+            </e-circulargauge-axis>
+        </e-circulargauge-axes>
+    </ejs-circulargauge>
+</div>
+<script>
+    ej.base.setCulture('de');
+    ej.base.setCurrencyCode('EUR');
+</script>

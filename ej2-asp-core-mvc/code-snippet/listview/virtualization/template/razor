@@ -1,0 +1,101 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists
+ @{ var template = "<div class='list-container'><div id='icon' class=\"${$imgUrl ? \'img\' : $icon }\">" +
+           "<span class=\"${$imgUrl ? \'hideUI\' : \'showUI\' }\">" +
+           "${icon}</span> <img class=\"${$imgUrl ? \'showUI\' : \'hideUI\' }\" width = 45 height = 45 src=\"${$imgUrl ?  $imgUrl : \' \' }\" />" +
+           "</div><div class='text'>${text}</div></div>";
+    }
+
+    @Html.EJS().ListView("ui-list").DataSource((IEnumerable<object>)ViewBag.listData).EnableVirtualization(true).ShowHeader(true).HeaderTitle("Contacts").Template(@template).Height(500).Render()
+
+
+<style>
+    #ui-list {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button {
+    float: right
+}
+
+#icon {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 500;
+    float: left;
+    margin-top: 17px;
+    margin-right: 35px;
+}
+
+img {
+    border-radius: 50%;
+    border: #ddd;
+    border: 1px solid rgba(40, 40, 40, 0.12);
+}
+
+.R {
+    background: purple;
+}
+
+.M {
+    background: pink;
+}
+
+.A {
+    background: green;
+}
+
+.S {
+    background: lightskyblue;
+}
+
+.J {
+    background: orange;
+}
+
+.N {
+    background: blue;
+}
+
+#ui-list .e-list-item {
+    height: 80px;
+    border: #ddd;
+    border: 1px solid rgba(184, 184, 184, 0.12);
+}
+
+.list-container {
+    width: inherit;
+    height: 100%;
+
+}
+
+.showUI {
+    display: inline;
+}
+
+.hideUI {
+    display: none;
+}
+
+.content {
+    height: 100%;
+    float: left;
+}
+
+.name {
+    height: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 78px;
+}
+
+</style>

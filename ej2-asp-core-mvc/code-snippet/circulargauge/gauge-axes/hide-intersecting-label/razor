@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("container").Axes(axes => axes
+	 .Minimum(0).Maximum(200).StartAngle(270).EndAngle(90).HideIntersectingLabel(true)
+	 .MajorTicks(mi => mi.Interval(4)).MinorTicks(mj => mj.Interval(2)).Add()).Render()

@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2;
+@{
+    var border = new Syncfusion.EJ2.Maps.MapsBorder
+    {
+        Color = "green",
+        Width = 2,
+        Opacity = 1
+    };
+    var margin = new Syncfusion.EJ2.Maps.MapsMargin
+    {
+        Bottom = 10,
+        Top = 10,
+        Left = 20,
+        Right = 20
+    };
+}
+<div id="map">
+    <ejs-maps id="maps" background="#CCD1D1" border="border" margin="margin" height="600" width="600">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map">
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

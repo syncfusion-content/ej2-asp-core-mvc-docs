@@ -1,0 +1,35 @@
+@{
+    var select = new Syncfusion.EJ2.Maps.MapsSelectionSettings
+    {
+        Enable = true,
+        Fill = "green",
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Color = "white",
+            Width = 2,
+            Opacity = 1
+        }
+    };
+    var point = new double[] { 42.0000, -93.0000 };
+    var data = new[]
+    {
+        new {latitude= 37.0000, longitude= -120.0000, city= "California" },
+        new {latitude= 40.7127, longitude= -74.0059, city= "New York" },
+        new {latitude= 42.0000, longitude= -93.0000, city= "Iowa" }
+    };
+}
+@using Syncfusion.EJ2.Maps;
+<div id="control-section">
+    <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map">
+                <e-layersettings-markers>
+                    <e-layersettings-marker visible="true" shape="Balloon" dataSource="data"
+                                            selectionSettings="select" initialMarkerSelection="point"
+                                            height="20" width="20" fill="green">
+                    </e-layersettings-marker>
+                </e-layersettings-markers>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

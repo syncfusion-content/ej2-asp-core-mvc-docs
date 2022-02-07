@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+
+<ejs-circulargauge id="circular" title="Speedometer">
+    <e-circulargauge-titlestyle color="red"></e-circulargauge-titlestyle>
+</ejs-circulargauge>

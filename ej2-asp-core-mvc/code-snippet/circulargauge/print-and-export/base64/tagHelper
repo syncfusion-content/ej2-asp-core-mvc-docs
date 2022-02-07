@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2;
+
+<div id="container">
+    <button id="export">Export</button>
+		<ejs-circulargauge id="gauge" load="gaugeload" allowImageExport="true">
+			<e-circulargauge-axes>
+				<e-circulargauge-axis startAngle="0" direction="AntiClockWise" endAngle="0" minimum="0" maximum="100" radius="80%">						
+				</e-circulargauge-axis>
+			</e-circulargauge-axes>
+		</ejs-circulargauge>
+		<div id="data"></div>
+</div>         
+<script>
+    window.gaugeload = function (args) {       
+		window.gauge = args.gauge;		
+	}
+	window.onload = function () {
+		document.getElementById("export").onclick = () => {
+            window.gauge.export('JPEG', 'CircularGauge', null, false).then((data) => {
+                document.getElementById("data").innerHTML = data;
+            });
+		};
+	};
+</script>

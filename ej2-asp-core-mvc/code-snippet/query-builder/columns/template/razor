@@ -1,0 +1,80 @@
+   <div class="col-lg-8 control-section">
+        @Html.EJS().QueryBuilder("querybuilder").Columns(col =>
+        {
+            col.Field("Category").Label("Category").Type("string").Add();
+            col.Field("PaymentMode").Label("Payment Mode").Type("string").Template(ViewBag.template).Operators(ViewBag.paymentOperator).Add();
+            col.Field("TransactionType").Label("Transaction Type").Type("boolean").Operators(ViewBag.transactionOperator).Add();
+            col.Field("Description").Label("Description").Type("string").Add();
+            col.Field("Date").Label("Date").Type("date").Add();
+            col.Field("Amount").Label("Amount").Type("number").Operators(ViewBag.amountOperator).Add();
+        }).DataSource(ViewBag.dataSource).Rule(ViewBag.rule).Width("100%").Render()
+    </div>
+
+<script>
+    function paymentCreate() {
+        var elem = document.createElement('input');
+        elem.setAttribute('type', 'text');
+        return elem;
+    }
+    function paymentDestroy(args) {
+        var selectObj = ej.base.getComponent(document.getElementById(args.elementId), 'multiselect');
+        if (selectObj) {
+            selectObj.destroy();
+        }
+        var dropdown = ej.base.getComponent(document.getElementById(args.elementId), 'dropdownlist');
+        if (dropdown) {
+            dropdown.destroy();
+        }
+    }
+    function paymentWrite(args) {
+        var ds = ['Cash', 'Debit Card', 'Credit Card', 'Net Banking', 'Wallet'];
+        var inOperators = ['in', 'notin'];
+        var qryBldrObj = ej.base.getComponent(document.getElementById("querybuilder"), 'query-builder');
+        if (inOperators.indexOf(args.operator) > -1) {
+            var multiSelectObj = new ej.dropdowns.MultiSelect({
+                dataSource: ds,
+                value: args.values,
+                mode: 'CheckBox',
+                placeholder: 'Select Transaction',
+                change: function (e) {
+                    qryBldrObj.notifyChange(e.value, e.element);
+                }
+            });
+            multiSelectObj.appendTo('#' + args.elements.id);
+        }
+        else {
+            var dropDownObj = new ej.dropdowns.DropDownList({
+                dataSource: ds,
+                value: args.values ? args.values : ds[0],
+                change: function (e) {
+                    qryBldrObj.notifyChange(e.itemData.value, e.element);
+                }
+            });
+            dropDownObj.appendTo('#' + args.elements.id);
+
+        }
+
+    }
+
+</script>
+
+<style>
+    .e-control-wrapper.e-slider-container.e-horizontal {
+        height: 0;
+    }
+
+    .e-querybuilder {
+        margin: 3% auto;
+    }
+
+    #ruleContent {
+        border: 1px solid #d3d3d3;
+        width: 100%;
+        height: 500px;
+        overflow: auto;
+    }
+
+    .highcontrast textarea#ruleContent {
+        background-color: #000;
+    }
+</style>

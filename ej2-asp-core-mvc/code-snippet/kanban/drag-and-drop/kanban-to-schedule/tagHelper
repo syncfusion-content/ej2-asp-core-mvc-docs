@@ -1,0 +1,84 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Kanban</h4>
+            <ejs-kanban id="Kanban" keyField="Status" dataSource="@ViewBag.data" externalDropId="@ViewBag.externalDropId" dragStop="onDragStop">
+                <e-kanban-columns>
+                    <e-kanban-column headerText="To Do" keyField="Open"></e-kanban-column>
+                    <e-kanban-column headerText="Done" keyField="Close"></e-kanban-column>
+                </e-kanban-columns>
+                <e-kanban-cardsettings headerField="Id" contentField="Summary"></e-kanban-cardsettings>
+            </ejs-kanban>
+        </div>
+        <div class="col-md-6">
+            <h4>TreeView</h4>
+            <ejs-schedule id="Schedule" width="100%" height="650px" resourceHeaderTemplate="#resource-template" currentView="TimelineDay" selectedDate="new DateTime(2018, 7, 1)" dragStop="scheduleDragStop">
+                <e-schedule-group enableCompactView="false" resources="@ViewBag.Resources"></e-schedule-group>
+                <e-schedule-resources>
+                    <e-schedule-resource dataSource="@ViewBag.Departments" field="DepartmentID" title="Department" name="Departments" textField="text" idField="id" colorField="color"></e-schedule-resource>
+                    <e-schedule-resource dataSource="@ViewBag.Consultants" field="ConsultantID" title="Consultant" name="Consultants" textField="text" idField="id" colorField="color" groupIDField="groupId" allowMultiple="false"></e-schedule-resource>
+                </e-schedule-resources>
+                <e-schedule-views>
+                    <e-schedule-view option="TimelineDay"></e-schedule-view>
+                    <e-schedule-view option="TimelineMonth"></e-schedule-view>
+                </e-schedule-views>
+                <e-schedule-workhours highlight="true" start="08:00" end="18:00"></e-schedule-workhours>
+                <e-schedule-eventsettings dataSource="@ViewBag.datasource">
+                    <e-eventsettings-fields>
+                        <e-field-subject name="Name" title="Patient Name"></e-field-subject>
+                        <e-field-starttime name="StartTime" title="From"></e-field-starttime>
+                        <e-field-endtime name="EndTime" title="To"></e-field-endtime>
+                        <e-field-description name="Description" title="Reason"></e-field-description>
+                    </e-eventsettings-fields>
+                </e-schedule-eventsettings>
+            </ejs-schedule>
+        </div>
+    </div>
+</div>
+<!-- Resource Header Template -->
+<script id="resource-template" type="text/x-template">
+    <div class="template-wrap">
+        <div class="specialist-category">
+            ${getConsultantImage(data)}
+            <div class="specialist-name">${getConsultantName(data)}</div>
+            <div class="specialist-designation">${getConsultantDesignation(data)}</div>
+        </div>
+    </div>
+</script>
+<script>
+    function getConsultantName(value) {
+        return value.resourceData[value.resource.textField];
+    };
+
+    function getConsultantImage() {
+        return '';
+    };
+
+    function getConsultantDesignation(value) {
+        let resourceName = value.resourceData[value.resource.textField];
+        if (resourceName === 'GENERAL' || resourceName === 'DENTAL') {
+            return '';
+        } else {
+            return value.resourceData.designation;
+        }
+    };
+    function scheduleDragStop(args) {
+        var kanbanObj = document.querySelector("#Kanban").ej2_instances[0];
+        var scheduleObj = document.querySelector("#Schedule").ej2_instances[0];
+        if (ej.base.closest(args.event.target, '#Kanban')) {
+            scheduleObj.deleteEvent(args.data.Id);
+            ej.base.removeClass([scheduleObj.element.querySelector('.e-selected-cell')], 'e-selected-cell');
+            kanbanObj.openDialog('Add', args.data);
+            args.cancel = true;
+        }
+    }
+    function onDragStop(args) {
+        var kanbanObj = document.querySelector("#Kanban").ej2_instances[0];
+        var scheduleObj = document.querySelector("#Schedule").ej2_instances[0];
+        if (ej.base.closest(args.event.target, '#Schedule')) {
+            kanbanObj.deleteCard(args.data);
+            scheduleObj.openEditor(args.data[0], 'Add', true);
+            args.cancel = true;
+        }
+    }
+</script>

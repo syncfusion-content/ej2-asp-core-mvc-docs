@@ -1,0 +1,41 @@
+@Html.EJS().DropDownButton("element").Content("Clipboard").Items((IEnumerable<object>)ViewBag.items).Select("itemSelect").Render()
+@Html.EJS().Spreadsheet("spreadsheet").AllowScrolling(true).Created("createHandler").ActionBegin("actionBeginHandler").Sheets(sheet =>
+{
+    sheet.Name("Price Details").Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+
+    }).Columns(column =>
+    {
+        column.Width(110).Add();
+        column.Width(92).Add();
+        column.Width(96).Add();
+    }).Add();
+}).Render()
+
+<script>
+    document.getElementById("cutBtn").addEventListener('click', cut);
+    document.getElementById("copyBtn").addEventListener('click', copy);
+    document.getElementById("pasteBtn").addEventListener('click', paste);
+    function createHandler() {
+        //Applies format to specified range
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }, 'A1:G1');
+    }
+    // Triggers before the action begins.
+    function actionBeginHandler(pasteArgs) {
+      // To cancel the paste action.
+        if (pasteArgs.args.eventArgs.requestType === 'paste') {
+            pasteArgs.args.eventArgs.cancel = true;
+        }
+    }
+    
+    function itemSelect(args) {
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        if (args.item.text === 'Copy')
+      spreadsheet.copy();
+    if (args.item.text === 'Cut')
+      spreadsheet.cut();
+    if (args.item.text === 'Paste')
+      spreadsheet.paste();
+    }
+</script>

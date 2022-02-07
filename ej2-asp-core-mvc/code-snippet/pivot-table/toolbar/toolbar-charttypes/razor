@@ -1,0 +1,33 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("pivotview").Width("100%").Height("300").ShowToolbar(true).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true)
+.FormatSettings(formatsettings => 
+{ 
+    formatsettings.Name("Amount").Format("C0").UseGrouping(true).Add(); 
+})
+.Rows(rows => 
+{ 
+    rows.Name("Country").Add(); rows.Name("Products").Add(); 
+})
+.Columns(columns => 
+{ 
+    columns.Name("Year").Add(); columns.Name("Quarter").Add(); 
+})
+.Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add();
+    values.Name("Amount").Caption("Sold Amount").Add();
+})
+).GridSettings(new Syncfusion.EJ2.PivotView.PivotViewGridSettings { ColumnWidth = 140 }).DisplayOption(new PivotViewDisplayOption { View = Syncfusion.EJ2.PivotView.View.Both }).Toolbar(new List<string>
+() { "Grid", "Chart" }).ChartTypes(new List<string>() {"Column", "Bar", "Line", "Area"}).Render()
+<style>
+    #pivotview {
+        width: 100%;
+        height: 100%;
+    }
+
+    .e-tool-expand::before {
+        content: '\e702';
+    }
+</style>
+  

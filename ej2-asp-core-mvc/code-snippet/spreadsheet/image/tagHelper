@@ -1,0 +1,198 @@
+<ejs-spreadsheet id="spreadsheet" created="created" showRibbon="false" showFormulaBar="false">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet name="Employee Deatils" selectedRange="B2" showGridLines="false">
+                <e-spreadsheet-rows>
+                    <e-spreadsheet-row index="1" height="30">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="   Mark"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="2" height="40">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Id">
+                                <e-spreadsheet-cellstyle verticalAlign="Bottom"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": 1001">
+                                <e-spreadsheet-cellstyle verticalAlign="Bottom"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="3">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Gender"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": Male"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="4">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Contact Preference"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": Email"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="5">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Email"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": mark@gmail.com"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="6">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Date of Birth"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": Jan 3, 1985"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="7">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Department"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": IT"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="8" height="40">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="IsActive">
+                                <e-spreadsheet-cellstyle verticalAlign="Top"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": True">
+                                <e-spreadsheet-cellstyle verticalAlign="Top"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+
+                    <e-spreadsheet-row index="10" height="30">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="   Mary"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="11" height="40">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Id">
+                                <e-spreadsheet-cellstyle verticalAlign="Bottom"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": 1002">
+                                <e-spreadsheet-cellstyle verticalAlign="Bottom"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="12">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Gender"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": Female"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="13">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Contact Preference"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": Phone"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="14">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Email"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": mary@gmail.com"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="15">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Date of Birth"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": Jan 3, 1985"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="16">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Department"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": HR"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="17" height="40">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="IsActive">
+                                <e-spreadsheet-cellstyle verticalAlign="Top"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": True">
+                                <e-spreadsheet-cellstyle verticalAlign="Top"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+
+                    <e-spreadsheet-row index="19" height="30">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="   Nashi"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="20" height="40">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Id">
+                                <e-spreadsheet-cellstyle verticalAlign="Bottom"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": 1003">
+                                <e-spreadsheet-cellstyle verticalAlign="Bottom"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="21">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Gender"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": Female"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="22">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Contact Preference"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": Email"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="23">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Email"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": nashi@gmail.com"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="24">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Date of Birth"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": Apr 11, 1986"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="25">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="Department"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": IT"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row index="26" height="40">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="2" value="IsActive">
+                                <e-spreadsheet-cellstyle verticalAlign="Top"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" value=": True">
+                                <e-spreadsheet-cellstyle verticalAlign="Top"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+            <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="20"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="280"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="172"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="160"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+                </e-spreadsheet-rows>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+    <script>
+    function created() {
+            this.merge('B2:D2');
+            this.merge('B11:D11');
+            this.merge('B20:D20');
+            this.cellFormat({ fontWeight: 'bold', verticalAlign: 'middle', backgroundColor: '#1167b1', color: '#ffffff' }, 'B2');
+            this.cellFormat({ fontWeight: 'bold', verticalAlign: 'middle', backgroundColor: '#1167b1', color: '#ffffff' }, 'B11');
+            this.cellFormat({ fontWeight: 'bold', verticalAlign: 'middle', backgroundColor: '#1167b1', color: '#ffffff' }, 'B20');
+            this.cellFormat({ fontWeight: 'bold' }, 'C3:C9');
+            this.cellFormat({ fontWeight: 'bold' }, 'C12:C18');
+            this.cellFormat({ fontWeight: 'bold' }, 'C21:C27');
+            this.setBorder({ border: '1px solid #1167b1' }, 'B2:D9', 'Outer');
+            this.setBorder({ border: '1px solid #1167b1' }, 'B11:D18', 'Outer');
+            this.setBorder({ border: '1px solid #1167b1' }, 'B20:D27', 'Outer');
+    }
+    </script>

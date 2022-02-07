@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2;
+
+<ejs-circulargauge id="circular">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis>
+            <e-circulargauge-pointers>
+                <e-circulargauge-pointer value="90" type="Marker" radius="100%" markerShape="Triangle" color="white" markerHeight="15" markerWidth="15">
+                    <e-pointer-border color="#007DD1" width="2"></e-pointer-border>
+                </e-circulargauge-pointer>
+            </e-circulargauge-pointers>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>

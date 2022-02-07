@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+@Html.EJS().Maps("container").LegendSettings(legend => legend.Visible(true).ToggleLegendSettings(Tl => Tl.Enable(true)
+.ApplyShapeSettings(false).Fill("green").Border(Br => Br.Color("green").Width(2).Opacity(1)))).Layers(layer =>
+{
+    layer.DataSource(ViewBag.populationDensity).ShapeDataPath("name")
+    .ShapePropertyPath("name").ShapeSettings(new MapsShapeSettings
+    {
+        ColorValuePath = "density",
+        ColorMapping = new List<MapsColorMapping> {
+                 new MapsColorMapping { From = 1 , To = 100, Color="rgb(153,174,214)"},
+                 new MapsColorMapping { From = 101 , To = 200, Color="rgb(115,143,199)" },
+                 new MapsColorMapping { Color="rgb(77,112,184)" },
+    }
+    }).ShapeData(ViewBag.worldMap).Add();
+}).Render()

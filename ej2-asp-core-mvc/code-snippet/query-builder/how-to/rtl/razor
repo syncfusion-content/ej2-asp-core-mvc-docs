@@ -1,0 +1,44 @@
+  @Html.EJS().QueryBuilder("querybuilder").Width("72%").Columns(col =>
+   {
+       col.Field("EmployeeID").Label("Employee ID").Type("number").Add();
+       col.Field("FirstName").Label("First Name").Type("string").Add();
+       col.Field("TitleOfCourtesy").Label("Title Of Courtesy").Type("boolean").Values(new List<string> { "Mr.", "Mrs." }).Add();
+       col.Field("Title").Label("Title").Type("string").Add();
+       col.Field("HireDate").Label("Hire Date").Type("date").Format("dd/MM/yyyy").Add();
+       col.Field("Country").Label("Country").Type("string").Add();
+       col.Field("City").Label("City").Type("string").Add();
+   }).Rule(ViewBag.rule).EnableRtl(true).Locale("ar-AE").Render()
+
+    <script type="text/javascript">
+    var qbObj = document.getElementById('querybuilder1').ej2_instances[0];
+    ej.base.L10n.load({
+         'ar-AE': {
+        'querybuilder': {
+            'AddGroup': 'إضافة مجموعة',
+            'AddCondition': 'اضافة الشرط',
+            'DeleteRule': 'أزل هذا الشرط',
+            'DeleteGroup': 'حذف المجموعة',
+            'Edit': 'تصحيح',
+            'SelectField': 'اختر مجال',
+            'DeleteRule': 'أزل هذا الشرط',
+            'DeleteGroup': 'حذف المجموعة',
+            'SelectOperator': 'حدد المشغل',
+            'StartsWith': 'ابدا ب',
+            'EndsWith': 'ينتهي مع',
+            'Contains': 'يحتوي على',
+            'Equal': 'مساو',
+            'NotEqual': 'ليس متساوي',
+            'LessThan': 'أقل من',
+            'LessThanOrEqual': 'اصغر من او يساوي',
+            'GreaterThan': 'أكثر من',
+            'GreaterThanOrEqual': 'أكبر من أو يساوي',
+            'Between': 'ما بين',
+            'NotBetween': 'ليس بينهما',
+            'In': 'في',
+            'NotIn': 'ليس في',
+            'Remove': 'إزالة',
+            'ValidationMessage': 'هذه الخانة مطلوبه'
+        }
+    }
+    });
+</script>

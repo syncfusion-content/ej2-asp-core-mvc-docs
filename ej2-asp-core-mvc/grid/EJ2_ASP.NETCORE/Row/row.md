@@ -8,12 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-title: "Row"
-component: "Grid"
-description: "Documentation for row templates (custom row content), detail templates, and DataGrid row styles."
----
-
 # Row
 
 The row represents record details fetched from data source.

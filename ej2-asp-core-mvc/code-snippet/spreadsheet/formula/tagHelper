@@ -1,0 +1,87 @@
+  <ejs-spreadsheet id="spreadsheet" created="created" showRibbon="false" showSheetTabs="false">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet>
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData" startCell="A2"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-rows>
+                    <e-spreadsheet-row height="40" customHeight="true">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Monthly Expense" colSpan="5">
+                                <e-spreadsheet-cellstyle textAlign="Center" fontWeight="Bold" verticalAlign="Middle" fontStyle="Italic" fontSize="15pt"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row height="30"></e-spreadsheet-row>
+                    <e-spreadsheet-row index="11">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Totals" colSpan="2">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" fontStyle="Italic"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell formula="=SUM(B3:B11)"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell formula="=SUM(C3:C11)"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell formula="=SUM(D3:D11)"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="1" value="Number of Categories" colSpan="2">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Right"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" formula="=COUNTA(A3:A11)"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="1" value="Average Spend" colSpan="2">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Right"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" formula="=AVERAGE(B3:B11)" format="$#,##0"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="1" value="Min Spend" colSpan="2">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Right"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" formula="=MIN(B3:B11)" format="$#,##0"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="1" value="Max Spend" colSpan="2">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Right"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" formula="=MAX(B3:B11)" format="$#,##0"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                </e-spreadsheet-rows>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="150"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+
+    <script>
+
+        function created() {
+            this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A2:E2');
+            this.numberFormat('$#,##0', 'B3:D12');
+            this.numberFormat('0%', 'E3:E12');
+            // Adding custom function for calculating the percentage between two cells.
+            this.addCustomFunction(calculatePercentage, 'PERCENTAGE');
+            // Calculate percentage using custom added formula in E12 cell.
+            this.updateCell({ formula: '=PERCENTAGE(C12,D12)' }, 'E12');
+        }
+
+        // Custom function to calculate percentage between two cell values.
+        function calculatePercentage(firstCell, secondCell) {
+            return (firstCell) / (secondCell);
+        }
+    </script>

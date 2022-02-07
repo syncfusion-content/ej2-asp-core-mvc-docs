@@ -1,0 +1,29 @@
+   @Html.EJS().PivotView("PivotGrid").Width("100%").Height("300").DataSource(dataSource => dataSource.Data((IEnumerable<object>)ViewBag.Data).ExpandAll(false).EnableSorting(true)
+    .FormatSettings(formatsettings => 
+    { 
+        formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add(); 
+    }).Rows(rows => 
+    { 
+        rows.Name("Country").Add(); rows.Name("Products").Add(); 
+    }).Columns(columns => 
+    { 
+        columns.Name("Year").Caption("Production Year").Add(); columns.Name("Quarter").Add(); 
+    }).Values(values => 
+    { 
+        values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add(); 
+    })).DrillThrough("drillThrough").EditSettings(new PivotViewCellEditSettings{AllowAdding=true;AllowDeleting=true;AllowEditing=true;AllowCommandColumns=true}).Render()
+
+    <script>
+    function drillThrough(args) {
+        for (var i = 0; i < args.gridColumns.length; i++) {
+            if (args.gridColumns[i].field === 'Country') {
+                args.gridColumns[i].editType = 'dropdownedit';
+                //args.gridColumns[i].editType = 'numericedit';
+                //args.gridColumns[i].editType = 'textedit';
+                //args.gridColumns[i].editType = 'booleanedit';
+                //args.gridColumns[i].editType = 'datepickeredit';
+                //args.gridColumns[i].editType = 'datetimepickeredit';
+            }
+        }
+    }
+</script>

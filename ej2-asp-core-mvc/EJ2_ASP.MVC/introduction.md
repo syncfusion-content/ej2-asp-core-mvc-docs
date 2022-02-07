@@ -8,12 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
----
-title: "Introduction"
-component: "Common"
-description: ""
----
-
 # Syncfusion ASP.NET MVC UI (Essential JS 2)
 
 The Syncfusion ASP.NET MVC UI (Essential JS 2) is a modern enterprise UI toolkit that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It also available in other frameworks such as JavaScript and Angular, React.

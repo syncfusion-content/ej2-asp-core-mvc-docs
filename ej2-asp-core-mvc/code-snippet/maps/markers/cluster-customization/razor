@@ -1,0 +1,43 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Maps
+
+@Html.EJS().Maps("container").ZoomSettings(new Syncfusion.EJ2.Maps.MapsZoomSettings
+{
+    Enable = true
+}).Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+    {
+        new Syncfusion.EJ2.Maps.MapsLayer
+            {
+                ShapeData =  ViewBag.worldmap,
+                MarkerClusterSettings = new MapsMarkerClusterSettings
+                    {
+                        AllowClustering = true,
+                        Height = 40,
+                        Width = 40,
+                        Fill = "green",
+                        Opacity = 0.9,
+                        AllowClusterExpand = true,
+                        Shape = Syncfusion.EJ2.Maps.MarkerType.Circle,
+                        LabelStyle = new MapsFont
+                        {
+                            Color = "White"
+                        },
+                        ConnectorLineSettings = new MapsConnectorLineSettings
+                        {
+                            Color = "orange",
+                            Opacity = 0.8,
+                            Width = 2
+                        }
+                    },
+                MarkerSettings  = new List<Syncfusion.EJ2.Maps.MapsMarker>
+                    {
+                        new Syncfusion.EJ2.Maps.MapsMarker
+                            {
+                                Visible = true,
+                                DataSource = ViewBag.ClusterData,
+                                Shape= MarkerType.Balloon,
+                                Height = 20,
+                                Width = 20,
+                                AnimationDuration = 0,
+                            }
+                    }}}).Render()

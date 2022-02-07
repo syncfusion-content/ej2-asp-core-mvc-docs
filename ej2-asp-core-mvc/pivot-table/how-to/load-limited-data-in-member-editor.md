@@ -1,0 +1,44 @@
+---
+layout: post
+title: Welcome to Syncfusion Essential ##Platform_Name##
+description: Learn here all about Load Limited Data In Member Editor of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+platform: ej2-asp-core-mvc
+control: Load Limited Data In Member Editor
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Load limited data in member editor
+
+In the filter dialog, you can set the limit to display the field values while loading large data. Based on this limit, the initial loading will complete quickly without any performance constraint. You can use the search option to refine the field values from the exceeded limit and refine the data further. A message with the remaining data count will be displayed in the member editor. The data limit can be set in the `maxNodeLimitInEditor` property.
+
+By default, the property holds the value 1000.
+
+> The property is available in both pivot table and Field List components.
+
+In the below example, the data in the member editor limits to 100. So, the member editor of the field `ProductID` shows only its first 100 members from its 1000 members.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/limit-data/limit-data/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="LimitData.cs" %}
+{% include code-snippet/pivot-table/limit-data/limit-data/LimitData.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/limit-data/limit-data/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="LimitData.cs" %}
+{% include code-snippet/pivot-table/limit-data/limit-data/LimitData.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+

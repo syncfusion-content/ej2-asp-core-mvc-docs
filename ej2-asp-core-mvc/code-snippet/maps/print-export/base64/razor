@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Button("togglebtn").IconCss("e-icons e-play-icon").Content("Export").CssClass("e-flat").Render()
+@Html.EJS().Maps("maps").Height("450px").AllowImageExport(true).Width("650px").Layers(l =>
+{
+    l.TooltipSettings(ts => ts.ValuePath("name").Visible(true))
+    .DataLabelSettings(ds => ds.Visible(true).LabelPath("name").SmartLabelMode(Syncfusion.EJ2.Maps.SmartLabelMode.Trim))
+    .ShapeSettings(ss => ss.Autofill(true)).ShapeData(ViewBag.ShapeData).Add();
+}).Render()
+<div id="data"></div>
+<script>
+    
+    document.getElementById('togglebtn').onclick = function () {
+        var maps = document.getElementById('maps').ej2_instances[0];
+        maps.export('JPEG', 'Maps', null, false).then((data) => { 
+            document.getElementById('data').innerHTML = data;
+        });
+    };
+</script>

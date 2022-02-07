@@ -1,0 +1,53 @@
+<ejs-spreadsheet id="spreadsheet" locale="fr-CH">
+    <e-spreadsheet-sheets>
+        <e-spreadsheet-sheet>
+            <e-spreadsheet-ranges>
+                <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+            </e-spreadsheet-ranges>
+        </e-spreadsheet-sheet>
+    </e-spreadsheet-sheets>
+</ejs-spreadsheet>
+
+<sctipt>
+ej.base.L10n.load({
+         'fr-CH': {
+        'spreadsheet': {
+            'File': 'Fichier',
+            'Home': 'Accueil',
+            'Insert': 'Insérer',
+            'Formulas': 'Formules',
+            'Data': 'Les données',
+            'View': 'Vue',
+            'Cut': 'Coupe',
+            'Copy': 'Copie',
+            'Paste': 'Pâte',
+            'PasteSpecial': 'Pâte spéciale',
+            'All': 'Tous les',
+            'Values': 'Valeurs',
+            'Formats': 'Les formats',
+            'Font': 'fonte',
+            'FontSize': 'Taille de police',
+            'Bold': 'Audacieux',
+            'Italic': 'Italique',
+            'Underline': 'Souligner',
+            'Strikethrough': 'Barré',
+            'TextColor': 'Couleur du texte',
+            'FillColor': 'La couleur de remplissage',
+            'HorizontalAlignment': 'Alignement horizontal',
+            'AlignLeft': 'Alignez à gauche',
+            'AlignCenter': 'centre',
+            'AlignRight': 'Aligner à droite',
+            'VerticalAlignment': 'Alignement vertical',
+            'AlignTop': 'Aligner en haut',
+            'AlignMiddle': 'Aligner le milieu',
+            'AlignBottom': 'Aligner le bas',
+            'InsertFunction': 'Insérer une fonction',
+            'Delete': 'Effacer',
+            'Rename': 'Rebaptiser',
+            'Hide': 'Cacher',
+            'Unhide': 'Démasquer',
+            'NumberFormat': 'Nombre Format',
+        }
+    }
+    });
+</script>

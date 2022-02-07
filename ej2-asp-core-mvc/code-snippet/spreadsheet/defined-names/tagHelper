@@ -1,0 +1,93 @@
+<ejs-spreadsheet id="spreadsheet" created="created" showRibbon="false" showSheetTabs="false" beforeDataBound="beforeDataBound">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet name="Budget Details">
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData" startCell="A2"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-rows>
+                    <e-spreadsheet-row height="40" customHeight="true">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Monthly Expense" colSpan="5">
+                                <e-spreadsheet-cellstyle textAlign="Center" fontWeight="Bold" verticalAlign="Middle" fontStyle="Italic" fontSize="15pt"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row height="30"></e-spreadsheet-row>
+                    <e-spreadsheet-row index="11">
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Totals" colSpan="2">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" fontStyle="Italic"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell formula="=SUM(MonthlySpendings)"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell formula="=SUM(AnnualSpendings)"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell formula="=SUM(LastYearSpendings)"></e-spreadsheet-cell>
+                            <e-spreadsheet-cell formula="=C12/D12"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="1" value="Number of Categories" colSpan="2">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Right"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" formula="=COUNTA(Categories)"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="1" value="Average Spend" colSpan="2">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Right"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" formula="=AVERAGE(MonthlySpendings)" format="$#,##0"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="1" value="Min Spend" colSpan="2">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Right"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" formula="=MIN(MonthlySpendings)" format="$#,##0"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell index="1" value="Max Spend" colSpan="2">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Right"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell index="3" formula="=MAX(MonthlySpendings)" format="$#,##0"></e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                </e-spreadsheet-rows>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="150"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+        <e-spreadsheet-definednames>
+            <e-spreadsheet-definedname name="Categories" refersTo="=Budget Details!A3:A11"></e-spreadsheet-definedname>
+            <e-spreadsheet-definedname name="MonthlySpendings" refersTo="=Budget Details!B3:B11"></e-spreadsheet-definedname>
+            <e-spreadsheet-definedname name="AnnualSpendings" refersTo="=Budget Details!C3:C11"></e-spreadsheet-definedname>
+        </e-spreadsheet-definednames>
+    </ejs-spreadsheet>
+
+
+    <script>
+
+      function created() {
+        // Removing the unwanted `PercentageChange` named range
+        this.removeDefinedName('PercentageChange', '');
+
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A2:E2');
+        this.numberFormat('$#,##0', 'B3:D12');
+        this.numberFormat('0%', 'E3:E12');
+    }
+
+    function beforeDataBound() {
+        // Adding name dynamically for `last year spending` and `percentage change` ranges.
+        this.addDefinedName({ name: 'LastYearSpendings', refersTo: '=D3:D11' });
+        this.addDefinedName({ name: 'PercentageChange', refersTo: '=E3:E11' });
+    }
+    </script>

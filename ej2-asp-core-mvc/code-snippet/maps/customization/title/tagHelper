@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2;
+@{
+    var title = new Syncfusion.EJ2.Maps.MapsTitleSettings
+    {
+        Text = "Maps control",
+        TextStyle = new Syncfusion.EJ2.Maps.MapsFont
+        {
+            Color = "red",
+            FontFamily = "arial",
+            FontStyle = "italic",
+            FontWeight = "regular",
+            Size = "14px"
+        },
+        Alignment = Syncfusion.EJ2.Maps.Alignment.Center
+    };
+}
+<div id="map">
+    <ejs-maps id="maps" titleSettings="title">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map">
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>
