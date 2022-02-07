@@ -19,10 +19,10 @@ The following sample demonstrates how to save and restore the state of the panel
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/state-maintenance//tagHelper %}
+{% include code-snippet/dashboard-layout/state-maintenance/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/state-maintenance//HomeController.cs %}
+{% include code-snippet/dashboard-layout/state-maintenance/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ The following sample demonstrates how to save and restore the state of the panel
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/state-maintenance//razor %}
+{% include code-snippet/dashboard-layout/state-maintenance/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/state-maintenance//HomeController.cs %}
+{% include code-snippet/dashboard-layout/state-maintenance/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

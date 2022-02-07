@@ -86,10 +86,10 @@ The following example shows a Sidebar component with enabled backdrop.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/getting-started/backdrop//tagHelper %}
+{% include code-snippet/sidebar/getting-started/backdrop/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Backdrop.cs" %}
-{% include code-snippet/sidebar/getting-started/backdrop//backdrop.cs %}
+{% include code-snippet/sidebar/getting-started/backdrop/backdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -97,10 +97,10 @@ The following example shows a Sidebar component with enabled backdrop.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/getting-started/backdrop//razor %}
+{% include code-snippet/sidebar/getting-started/backdrop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Backdrop.cs" %}
-{% include code-snippet/sidebar/getting-started/backdrop//backdrop.cs %}
+{% include code-snippet/sidebar/getting-started/backdrop/backdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -122,10 +122,10 @@ In the following sample, the sidebar is rendered with position property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/getting-started/position//tagHelper %}
+{% include code-snippet/sidebar/getting-started/position/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Position.cs" %}
-{% include code-snippet/sidebar/getting-started/position//position.cs %}
+{% include code-snippet/sidebar/getting-started/position/position.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -133,10 +133,10 @@ In the following sample, the sidebar is rendered with position property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/getting-started/position//razor %}
+{% include code-snippet/sidebar/getting-started/position/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Position.cs" %}
-{% include code-snippet/sidebar/getting-started/position//position.cs %}
+{% include code-snippet/sidebar/getting-started/position/position.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

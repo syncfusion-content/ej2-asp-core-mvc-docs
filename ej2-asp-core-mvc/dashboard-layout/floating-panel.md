@@ -19,10 +19,10 @@ The following sample demonstrates how to enable or disable the floating of panel
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/floating-panels//tagHelper %}
+{% include code-snippet/dashboard-layout/floating-panels/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/floating-panels//HomeController.cs %}
+{% include code-snippet/dashboard-layout/floating-panels/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ The following sample demonstrates how to enable or disable the floating of panel
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/floating-panels//razor %}
+{% include code-snippet/dashboard-layout/floating-panels/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/floating-panels//HomeController.cs %}
+{% include code-snippet/dashboard-layout/floating-panels/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

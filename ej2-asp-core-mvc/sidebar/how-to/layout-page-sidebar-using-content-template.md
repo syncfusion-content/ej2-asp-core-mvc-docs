@@ -17,10 +17,10 @@ In the following example, Menu component  is rendered inside the Sidebar using c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/content-template//tagHelper %}
+{% include code-snippet/sidebar/content-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Index.cshtml" %}
-{% include code-snippet/sidebar/content-template//Index.cshtml %}
+{% include code-snippet/sidebar/content-template/Index.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ In the following example, Menu component  is rendered inside the Sidebar using c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/content-template//razor %}
+{% include code-snippet/sidebar/content-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Index.cshtml" %}
-{% include code-snippet/sidebar/content-template//Index.cshtml %}
+{% include code-snippet/sidebar/content-template/Index.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -34,10 +34,10 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/getting-started//tagHelper %}
+{% include code-snippet/dashboard-layout/getting-started/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/getting-started//HomeController.cs %}
+{% include code-snippet/dashboard-layout/getting-started/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -45,10 +45,10 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/getting-started//razor %}
+{% include code-snippet/dashboard-layout/getting-started/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/getting-started//HomeController.cs %}
+{% include code-snippet/dashboard-layout/getting-started/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -69,10 +69,10 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/getting-started-panel//tagHelper %}
+{% include code-snippet/dashboard-layout/getting-started-panel/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/getting-started-panel//HomeController.cs %}
+{% include code-snippet/dashboard-layout/getting-started-panel/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -80,10 +80,10 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/getting-started-panel//razor %}
+{% include code-snippet/dashboard-layout/getting-started-panel/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/getting-started-panel//HomeController.cs %}
+{% include code-snippet/dashboard-layout/getting-started-panel/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

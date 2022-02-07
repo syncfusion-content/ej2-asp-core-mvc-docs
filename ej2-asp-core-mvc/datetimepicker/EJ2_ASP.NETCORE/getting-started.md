@@ -54,10 +54,10 @@ DateTimePicker.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/datetimepicker/getting-started/daterange//tagHelper %}
+{% include code-snippet/datetimepicker/getting-started/daterange/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/datetimepicker/getting-started/daterange//daterange.cs %}
+{% include code-snippet/datetimepicker/getting-started/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,10 +65,10 @@ DateTimePicker.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/datetimepicker/getting-started/daterange//razor %}
+{% include code-snippet/datetimepicker/getting-started/daterange/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/datetimepicker/getting-started/daterange//daterange.cs %}
+{% include code-snippet/datetimepicker/getting-started/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

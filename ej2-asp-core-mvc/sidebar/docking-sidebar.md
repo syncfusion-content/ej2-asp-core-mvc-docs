@@ -19,10 +19,10 @@ In the following sample, the list item has icon with text representation. On doc
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/docking-sidebar//tagHelper %}
+{% include code-snippet/sidebar/docking-sidebar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dock.cs" %}
-{% include code-snippet/sidebar/docking-sidebar//dock.cs %}
+{% include code-snippet/sidebar/docking-sidebar/dock.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ In the following sample, the list item has icon with text representation. On doc
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/docking-sidebar//razor %}
+{% include code-snippet/sidebar/docking-sidebar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dock.cs" %}
-{% include code-snippet/sidebar/docking-sidebar//dock.cs %}
+{% include code-snippet/sidebar/docking-sidebar/dock.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

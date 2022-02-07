@@ -26,10 +26,10 @@ The following sample demonstrates dragging and pushing of panels. For example, w
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/drag-and-drop//tagHelper %}
+{% include code-snippet/dashboard-layout/drag-and-drop/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/drag-and-drop//HomeController.cs %}
+{% include code-snippet/dashboard-layout/drag-and-drop/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -37,10 +37,10 @@ The following sample demonstrates dragging and pushing of panels. For example, w
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/drag-and-drop//razor %}
+{% include code-snippet/dashboard-layout/drag-and-drop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/drag-and-drop//HomeController.cs %}
+{% include code-snippet/dashboard-layout/drag-and-drop/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -61,10 +61,10 @@ The following sample demonstrates customizing the dragging handler of the panels
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/dragging-handler//tagHelper %}
+{% include code-snippet/dashboard-layout/dragging-handler/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/dragging-handler//HomeController.cs %}
+{% include code-snippet/dashboard-layout/dragging-handler/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,10 +72,10 @@ The following sample demonstrates customizing the dragging handler of the panels
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/dragging-handler//razor %}
+{% include code-snippet/dashboard-layout/dragging-handler/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/dragging-handler//HomeController.cs %}
+{% include code-snippet/dashboard-layout/dragging-handler/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -96,10 +96,10 @@ The following sample demonstrates Dashboard Layout with dragging support disable
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/disable-dragging//tagHelper %}
+{% include code-snippet/dashboard-layout/disable-dragging/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/disable-dragging//HomeController.cs %}
+{% include code-snippet/dashboard-layout/disable-dragging/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -107,10 +107,10 @@ The following sample demonstrates Dashboard Layout with dragging support disable
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/disable-dragging//razor %}
+{% include code-snippet/dashboard-layout/disable-dragging/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/disable-dragging//HomeController.cs %}
+{% include code-snippet/dashboard-layout/disable-dragging/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

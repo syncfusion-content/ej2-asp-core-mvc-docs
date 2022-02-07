@@ -17,10 +17,10 @@ The following example demonstrates how to hide layout page sidebar. Initially si
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/hide-sidebar//tagHelper %}
+{% include code-snippet/sidebar/hide-sidebar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Contact.cshtml" %}
-{% include code-snippet/sidebar/hide-sidebar//Contact.cshtml %}
+{% include code-snippet/sidebar/hide-sidebar/Contact.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ The following example demonstrates how to hide layout page sidebar. Initially si
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/hide-sidebar//razor %}
+{% include code-snippet/sidebar/hide-sidebar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Contact.cshtml" %}
-{% include code-snippet/sidebar/hide-sidebar//Contact.cshtml %}
+{% include code-snippet/sidebar/hide-sidebar/Contact.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

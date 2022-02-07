@@ -40,10 +40,10 @@ The following sample demonstrates the positioning of panels within the dashboard
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/panel-position//tagHelper %}
+{% include code-snippet/dashboard-layout/panel-position/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/panel-position//HomeController.cs %}
+{% include code-snippet/dashboard-layout/panel-position/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -51,10 +51,10 @@ The following sample demonstrates the positioning of panels within the dashboard
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/panel-position//razor %}
+{% include code-snippet/dashboard-layout/panel-position/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/panel-position//HomeController.cs %}
+{% include code-snippet/dashboard-layout/panel-position/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -75,10 +75,10 @@ The following sample demonstrates the sizing of panels within the dashboard layo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/panel-size//tagHelper %}
+{% include code-snippet/dashboard-layout/panel-size/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/panel-size//HomeController.cs %}
+{% include code-snippet/dashboard-layout/panel-size/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -86,10 +86,10 @@ The following sample demonstrates the sizing of panels within the dashboard layo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/panel-size//razor %}
+{% include code-snippet/dashboard-layout/panel-size/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/panel-size//HomeController.cs %}
+{% include code-snippet/dashboard-layout/panel-size/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

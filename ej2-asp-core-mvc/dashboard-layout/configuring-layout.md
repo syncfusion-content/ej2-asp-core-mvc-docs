@@ -27,10 +27,10 @@ The following sample demonstrates how to modify a cell size using the [`columns`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/modifying-cell-size//tagHelper %}
+{% include code-snippet/dashboard-layout/modifying-cell-size/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/modifying-cell-size//HomeController.cs %}
+{% include code-snippet/dashboard-layout/modifying-cell-size/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,10 +38,10 @@ The following sample demonstrates how to modify a cell size using the [`columns`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/modifying-cell-size//razor %}
+{% include code-snippet/dashboard-layout/modifying-cell-size/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/modifying-cell-size//HomeController.cs %}
+{% include code-snippet/dashboard-layout/modifying-cell-size/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -62,10 +62,10 @@ The following sample demonstrates the usage of the [`cellSpacing`](https://help.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/cell-spacing//tagHelper %}
+{% include code-snippet/dashboard-layout/cell-spacing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/cell-spacing//HomeController.cs %}
+{% include code-snippet/dashboard-layout/cell-spacing/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -73,10 +73,10 @@ The following sample demonstrates the usage of the [`cellSpacing`](https://help.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/cell-spacing//razor %}
+{% include code-snippet/dashboard-layout/cell-spacing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/cell-spacing//HomeController.cs %}
+{% include code-snippet/dashboard-layout/cell-spacing/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -97,10 +97,10 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/graphical-representation//tagHelper %}
+% include code-snippet/dashboard-layout/graphical-representation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/graphical-representation//HomeController.cs %}
+{% include code-snippet/dashboard-layout/graphical-representation/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,10 +108,10 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/graphical-representation//razor %}
+{% include code-snippet/dashboard-layout/graphical-representation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/graphical-representation//HomeController.cs %}
+{% include code-snippet/dashboard-layout/graphical-representation/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -132,10 +132,10 @@ The following sample demonstrates Dashboard Layout in right-to-left direction.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/rtl//tagHelper %}
+{% include code-snippet/dashboard-layout/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/rtl//HomeController.cs %}
+{% include code-snippet/dashboard-layout/rtl/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -143,10 +143,10 @@ The following sample demonstrates Dashboard Layout in right-to-left direction.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/rtl//razor %}
+{% include code-snippet/dashboard-layout/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/rtl//HomeController.cs %}
+{% include code-snippet/dashboard-layout/rtl/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

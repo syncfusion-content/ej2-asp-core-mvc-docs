@@ -19,10 +19,10 @@ Sidebar will automatically adjust expanding animation to match any custom size s
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/animation//tagHelper %}
+{% include code-snippet/sidebar/animation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Animation.cs" %}
-{% include code-snippet/sidebar/animation//animation.cs %}
+{% include code-snippet/sidebar/animation/animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ Sidebar will automatically adjust expanding animation to match any custom size s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/animation//razor %}
+{% include code-snippet/sidebar/animation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Animation.cs" %}
-{% include code-snippet/sidebar/animation//animation.cs %}
+{% include code-snippet/sidebar/animation/animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

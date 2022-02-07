@@ -21,10 +21,10 @@ The following sample demonstrates the usage of the [`mediaQuery`](https://help.s
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/adaptive-layout//tagHelper %}
+{% include code-snippet/dashboard-layout/adaptive-layout/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/adaptive-layout//HomeController.cs %}
+{% include code-snippet/dashboard-layout/adaptive-layout/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,10 +32,10 @@ The following sample demonstrates the usage of the [`mediaQuery`](https://help.s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/adaptive-layout//razor %}
+{% include code-snippet/dashboard-layout/adaptive-layout/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/adaptive-layout//HomeController.cs %}
+{% include code-snippet/dashboard-layout/adaptive-layout/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

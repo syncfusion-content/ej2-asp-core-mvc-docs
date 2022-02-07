@@ -32,10 +32,10 @@ In the following sample, Sidebar component's expand behaviour are demonstrated.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/variations//tagHelper %}
+{% include code-snippet/sidebar/variations/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Types.cs" %}
-{% include code-snippet/sidebar/variations//types.cs %}
+{% include code-snippet/sidebar/variations/types.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -43,10 +43,10 @@ In the following sample, Sidebar component's expand behaviour are demonstrated.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/variations//razor %}
+{% include code-snippet/sidebar/variations/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Types.cs" %}
-{% include code-snippet/sidebar/variations//types.cs %}
+{% include code-snippet/sidebar/variations/types.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

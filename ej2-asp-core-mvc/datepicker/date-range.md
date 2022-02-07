@@ -33,10 +33,10 @@ a month.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/datepicker/daterange//tagHelper %}
+{% include code-snippet/datepicker/daterange/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/datepicker/daterange//daterange.cs %}
+{% include code-snippet/datepicker/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,10 +44,10 @@ a month.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/datepicker/daterange//razor %}
+{% include code-snippet/datepicker/daterange/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/datepicker/daterange//daterange.cs %}
+{% include code-snippet/datepicker/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

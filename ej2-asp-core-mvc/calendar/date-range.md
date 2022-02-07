@@ -20,10 +20,10 @@ The following example allows you to select a date within the range of 7th to 27t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/calendar/daterange//tagHelper %}
+{% include code-snippet/calendar/daterange/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/calendar/daterange//daterange.cs %}
+{% include code-snippet/calendar/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ The following example allows you to select a date within the range of 7th to 27t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/calendar/daterange//razor %}
+{% include code-snippet/calendar/daterange/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/calendar/daterange//daterange.cs %}
+{% include code-snippet/calendar/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

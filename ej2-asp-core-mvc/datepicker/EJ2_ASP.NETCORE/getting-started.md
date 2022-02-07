@@ -54,10 +54,10 @@ The below example demonstrates the DatePicker to select a date within a range fr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/datepicker/getting-started/daterange//tagHelper %}
+{% include code-snippet/datepicker/getting-started/daterange/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/datepicker/getting-started/daterange//daterange.cs %}
+{% include code-snippet/datepicker/getting-started/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,10 +65,10 @@ The below example demonstrates the DatePicker to select a date within a range fr
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/datepicker/getting-started/daterange//razor %}
+{% include code-snippet/datepicker/getting-started/daterange/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/datepicker/getting-started/daterange//daterange.cs %}
+{% include code-snippet/datepicker/getting-started/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
