@@ -31,10 +31,10 @@ The following sample demonstrates moving a panel programatically to a new positi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/moving//tagHelper %}
+{% include code-snippet/dashboard-layout/moving/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/moving//HomeController.cs %}
+{% include code-snippet/dashboard-layout/moving/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,10 +42,10 @@ The following sample demonstrates moving a panel programatically to a new positi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/moving//razor %}
+{% include code-snippet/dashboard-layout/moving/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/moving//HomeController.cs %}
+{% include code-snippet/dashboard-layout/moving/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

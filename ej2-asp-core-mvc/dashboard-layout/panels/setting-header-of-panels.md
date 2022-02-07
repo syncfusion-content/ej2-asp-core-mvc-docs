@@ -19,10 +19,10 @@ The following sample demonstrates how to add content for each panel using the he
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/content-panel//tagHelper %}
+{% include code-snippet/dashboard-layout/content-panel/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/content-panel//HomeController.cs %}
+{% include code-snippet/dashboard-layout/content-panel/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ The following sample demonstrates how to add content for each panel using the he
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/content-panel//razor %}
+{% include code-snippet/dashboard-layout/content-panel/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/content-panel//HomeController.cs %}
+{% include code-snippet/dashboard-layout/content-panel/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -56,10 +56,10 @@ The following sample demonstrates how to add ej2-chart components as the [`conte
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/placing-content//tagHelper %}
+{% include code-snippet/dashboard-layout/placing-content/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/placing-content//HomeController.cs %}
+{% include code-snippet/dashboard-layout/placing-content/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,10 +67,10 @@ The following sample demonstrates how to add ej2-chart components as the [`conte
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/placing-content//razor %}
+{% include code-snippet/dashboard-layout/placing-content/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/placing-content//HomeController.cs %}
+{% include code-snippet/dashboard-layout/placing-content/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

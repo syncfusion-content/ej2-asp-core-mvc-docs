@@ -19,10 +19,10 @@ On collapse, the LI elements of TreeView show icons only to represent the short 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/layout-page-treeview//tagHelper %}
+{% include code-snippet/sidebar/layout-page-treeview/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Index.cshtml" %}
-{% include code-snippet/sidebar/layout-page-treeview//Index.cshtml %}
+{% include code-snippet/sidebar/layout-page-treeview/Index.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ On collapse, the LI elements of TreeView show icons only to represent the short 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/layout-page-treeview//razor %}
+{% include code-snippet/sidebar/layout-page-treeview/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Index.cshtml" %}
-{% include code-snippet/sidebar/layout-page-treeview//Index.cshtml %}
+{% include code-snippet/sidebar/layout-page-treeview/Index.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

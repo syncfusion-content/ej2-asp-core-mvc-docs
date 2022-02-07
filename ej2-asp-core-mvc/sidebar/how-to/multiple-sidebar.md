@@ -22,10 +22,10 @@ In the following sample, more than one sidebar is rendered based on [`position`]
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/multiple//tagHelper %}
+{% include code-snippet/sidebar/multiple/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Multiple.cs" %}
-{% include code-snippet/sidebar/multiple//multiple.cs %}
+{% include code-snippet/sidebar/multiple/multiple.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,10 +33,10 @@ In the following sample, more than one sidebar is rendered based on [`position`]
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/multiple//razor %}
+{% include code-snippet/sidebar/multiple/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Multiple.cs" %}
-{% include code-snippet/sidebar/multiple//multiple.cs %}
+{% include code-snippet/sidebar/multiple/multiple.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

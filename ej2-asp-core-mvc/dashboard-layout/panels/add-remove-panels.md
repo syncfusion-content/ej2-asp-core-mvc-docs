@@ -30,10 +30,10 @@ The following sample demonstrates how to add and remove the panels dynamically i
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/add-panel//tagHelper %}
+{% include code-snippet/dashboard-layout/add-panel/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/add-panel//HomeController.cs %}
+{% include code-snippet/dashboard-layout/add-panel/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,10 +41,10 @@ The following sample demonstrates how to add and remove the panels dynamically i
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/add-panel//razor %}
+{% include code-snippet/dashboard-layout/add-panel/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/add-panel//HomeController.cs %}
+{% include code-snippet/dashboard-layout/add-panel/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

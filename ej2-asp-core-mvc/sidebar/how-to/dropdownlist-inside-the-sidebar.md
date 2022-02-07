@@ -21,10 +21,10 @@ The following example shows how to prevent the closes of sidebar while click the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/sidebar-dropdownlist//tagHelper %}
+{% include code-snippet/sidebar/sidebar-dropdownlist/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Sidebar-dropdownlist.cs" %}
-{% include code-snippet/sidebar/sidebar-dropdownlist//sidebar-dropdownlist.cs %}
+{% include code-snippet/sidebar/sidebar-dropdownlist/sidebar-dropdownlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,10 +32,10 @@ The following example shows how to prevent the closes of sidebar while click the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/sidebar-dropdownlist//razor %}
+{% include code-snippet/sidebar/sidebar-dropdownlist/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Sidebar-dropdownlist.cs" %}
-{% include code-snippet/sidebar/sidebar-dropdownlist//sidebar-dropdownlist.cs %}
+{% include code-snippet/sidebar/sidebar-dropdownlist/sidebar-dropdownlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -29,10 +29,10 @@ The following example allows you to select a time value within a range of `9:00 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/timepicker/time-range//tagHelper %}
+{% include code-snippet/timepicker/time-range/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Timerange.cs" %}
-{% include code-snippet/timepicker/time-range//timerange.cs %}
+{% include code-snippet/timepicker/time-range/timerange.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -40,10 +40,10 @@ The following example allows you to select a time value within a range of `9:00 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/timepicker/time-range//razor %}
+{% include code-snippet/timepicker/time-range/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Timerange.cs" %}
-{% include code-snippet/timepicker/time-range//timerange.cs %}
+{% include code-snippet/timepicker/time-range/timerange.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -63,10 +63,10 @@ Before the start time selection, the end time TimePicker is in disable state. Wh
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/timepicker/time-range-customization//tagHelper %}
+{% include code-snippet/timepicker/time-range-customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Timerange-customization.cs" %}
-{% include code-snippet/timepicker/time-range-customization//timerange-customization.cs %}
+{% include code-snippet/timepicker/time-range-customization/timerange-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -74,10 +74,10 @@ Before the start time selection, the end time TimePicker is in disable state. Wh
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/timepicker/time-range-customization//razor %}
+{% include code-snippet/timepicker/time-range-customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Timerange-customization.cs" %}
-{% include code-snippet/timepicker/time-range-customization//timerange-customization.cs %}
+{% include code-snippet/timepicker/time-range-customization/timerange-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

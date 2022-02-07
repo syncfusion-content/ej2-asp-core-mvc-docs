@@ -53,10 +53,10 @@ the TimePicker. The TimePicker allows you to select the time value within a rang
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/timepicker/getting-started/daterange//tagHelper %}
+{% include code-snippet/timepicker/getting-started/daterange/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/timepicker/getting-started/daterange//daterange.cs %}
+{% include code-snippet/timepicker/getting-started/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,10 +64,10 @@ the TimePicker. The TimePicker allows you to select the time value within a rang
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/timepicker/getting-started/daterange//razor %}
+{% include code-snippet/timepicker/getting-started/daterange/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daterange.cs" %}
-{% include code-snippet/timepicker/getting-started/daterange//daterange.cs %}
+{% include code-snippet/timepicker/getting-started/daterange/daterange.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -90,10 +90,10 @@ interval. The time interval is set to
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/timepicker/getting-started/format//tagHelper %}
+{% include code-snippet/timepicker/getting-started/format/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Format.cs" %}
-{% include code-snippet/timepicker/getting-started/format//format.cs %}
+{% include code-snippet/timepicker/getting-started/format/format.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -101,10 +101,10 @@ interval. The time interval is set to
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/timepicker/getting-started/format//razor %}
+{% include code-snippet/timepicker/getting-started/format/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Format.cs" %}
-{% include code-snippet/timepicker/getting-started/format//format.cs %}
+{% include code-snippet/timepicker/getting-started/format/format.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

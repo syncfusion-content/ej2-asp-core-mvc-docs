@@ -25,10 +25,10 @@ In the following sample, toggle method has been used to show or hide the Sidebar
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/howto//tagHelper %}
+{% include code-snippet/sidebar/howto/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Open.cs" %}
-{% include code-snippet/sidebar/howto//open.cs %}
+{% include code-snippet/sidebar/howto/open.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,10 +36,10 @@ In the following sample, toggle method has been used to show or hide the Sidebar
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/howto//razor %}
+{% include code-snippet/sidebar/howto/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Open.cs" %}
-{% include code-snippet/sidebar/howto//open.cs %}
+{% include code-snippet/sidebar/howto/open.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

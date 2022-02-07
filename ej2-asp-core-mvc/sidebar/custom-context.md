@@ -21,10 +21,10 @@ In the following sample, click the toggle button to expand or collapse the sideb
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/custom-context//tagHelper %}
+{% include code-snippet/sidebar/custom-context/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Context.cs" %}
-{% include code-snippet/sidebar/custom-context//context.cs %}
+{% include code-snippet/sidebar/custom-context/context.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,10 +32,10 @@ In the following sample, click the toggle button to expand or collapse the sideb
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/custom-context//razor %}
+{% include code-snippet/sidebar/custom-context/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Context.cs" %}
-{% include code-snippet/sidebar/custom-context//context.cs %}
+{% include code-snippet/sidebar/custom-context/context.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

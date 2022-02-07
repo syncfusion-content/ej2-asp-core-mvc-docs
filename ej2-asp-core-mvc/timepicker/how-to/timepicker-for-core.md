@@ -19,10 +19,10 @@ The following sample demonstrates how to retrieve the value in the controller by
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/timepicker/how-to/timepicker-for//tagHelper %}
+{% include code-snippet/timepicker/how-to/timepicker-for/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Timepickerfor.cs" %}
-{% include code-snippet/timepicker/how-to/timepicker-for//timepickerfor.cs %}
+{% include code-snippet/timepicker/how-to/timepicker-for/timepickerfor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ The following sample demonstrates how to retrieve the value in the controller by
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/timepicker/how-to/timepicker-for//razor %}
+{% include code-snippet/timepicker/how-to/timepicker-for/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Timepickerfor.cs" %}
-{% include code-snippet/timepicker/how-to/timepicker-for//timepickerfor.cs %}
+{% include code-snippet/timepicker/how-to/timepicker-for/timepickerfor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

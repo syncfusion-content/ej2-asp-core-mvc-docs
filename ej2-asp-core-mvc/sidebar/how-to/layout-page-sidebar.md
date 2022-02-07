@@ -17,10 +17,10 @@ The following example demonstrates how to render sidebar in layout page. Sidebar
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/layout-page//tagHelper %}
+{% include code-snippet/sidebar/layout-page/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TextBox.cshtml" %}
-{% include code-snippet/sidebar/layout-page//TextBox.cshtml %}
+{% include code-snippet/sidebar/layout-page/TextBox.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ The following example demonstrates how to render sidebar in layout page. Sidebar
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/layout-page//razor %}
+{% include code-snippet/sidebar/layout-page/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TextBox.cshtml" %}
-{% include code-snippet/sidebar/layout-page//TextBox.cshtml %}
+{% include code-snippet/sidebar/layout-page/TextBox.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

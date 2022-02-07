@@ -17,10 +17,10 @@ The Sidebar does not require any specific style to make it as a fixed one. By de
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/fixed-position//tagHelper %}
+{% include code-snippet/sidebar/fixed-position/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fixed_position.cs" %}
-{% include code-snippet/sidebar/fixed-position//fixed_position.cs %}
+{% include code-snippet/sidebar/fixed-position/fixed_position.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ The Sidebar does not require any specific style to make it as a fixed one. By de
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/fixed-position//razor %}
+{% include code-snippet/sidebar/fixed-position/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fixed_position.cs" %}
-{% include code-snippet/sidebar/fixed-position//fixed_position.cs %}
+{% include code-snippet/sidebar/fixed-position/fixed_position.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

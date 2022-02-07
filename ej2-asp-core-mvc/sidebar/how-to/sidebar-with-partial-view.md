@@ -17,10 +17,10 @@ The following example demonstrates how to render the sidebar with partial view. 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/partial-view//tagHelper %}
+{% include code-snippet/sidebar/partial-view/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TextBox.cshtml" %}
-{% include code-snippet/sidebar/partial-view//TextBox.cshtml %}
+{% include code-snippet/sidebar/partial-view/TextBox.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ The following example demonstrates how to render the sidebar with partial view. 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/partial-view//razor %}
+{% include code-snippet/sidebar/partial-view/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TextBox.cshtml" %}
-{% include code-snippet/sidebar/partial-view//TextBox.cshtml %}
+{% include code-snippet/sidebar/partial-view/TextBox.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -26,10 +26,10 @@ The following sample demonstrates how to enable and disable the resizing of pane
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/resizing-panels//tagHelper %}
+{% include code-snippet/dashboard-layout/resizing-panels/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/resizing-panels//HomeController.cs %}
+{% include code-snippet/dashboard-layout/resizing-panels/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -37,10 +37,10 @@ The following sample demonstrates how to enable and disable the resizing of pane
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/resizing-panels//razor %}
+{% include code-snippet/dashboard-layout/resizing-panels/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/resizing-panels//HomeController.cs %}
+{% include code-snippet/dashboard-layout/resizing-panels/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -71,10 +71,10 @@ The following sample demonstrates resizing panels programatically in the Dashboa
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/resize-panel//tagHelper %}
+{% include code-snippet/dashboard-layout/resize-panel/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/resize-panel//HomeController.cs %}
+{% include code-snippet/dashboard-layout/resize-panel/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,10 +82,10 @@ The following sample demonstrates resizing panels programatically in the Dashboa
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dashboard-layout/resize-panel//razor %}
+{% include code-snippet/dashboard-layout/resize-panel/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/resize-panel//HomeController.cs %}
+{% include code-snippet/dashboard-layout/resize-panel/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

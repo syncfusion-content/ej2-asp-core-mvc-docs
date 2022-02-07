@@ -19,10 +19,10 @@ In the following sample, mediaQuery has been used for specific resolution to clo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/autoclose//tagHelper %}
+{% include code-snippet/sidebar/autoclose/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Autoclose.cs" %}
-{% include code-snippet/sidebar/autoclose//autoclose.cs %}
+{% include code-snippet/sidebar/autoclose/autoclose.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ In the following sample, mediaQuery has been used for specific resolution to clo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/autoclose//razor %}
+{% include code-snippet/sidebar/autoclose/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Autoclose.cs" %}
-{% include code-snippet/sidebar/autoclose//autoclose.cs %}
+{% include code-snippet/sidebar/autoclose/autoclose.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -50,10 +50,10 @@ Output be like the below.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/autoclose/max-width//tagHelper %}
+{% include code-snippet/sidebar/autoclose/max-width/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Autoclose.cs" %}
-{% include code-snippet/sidebar/autoclose/max-width//autoclose.cs %}
+{% include code-snippet/sidebar/autoclose/max-width/autoclose.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,10 +61,10 @@ Output be like the below.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/autoclose/max-width//razor %}
+{% include code-snippet/sidebar/autoclose/max-width/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Autoclose.cs" %}
-{% include code-snippet/sidebar/autoclose/max-width//autoclose.cs %}
+{% include code-snippet/sidebar/autoclose/max-width/autoclose.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
