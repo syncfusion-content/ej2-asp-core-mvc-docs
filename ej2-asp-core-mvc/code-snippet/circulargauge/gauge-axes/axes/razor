@@ -1,0 +1,4 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("circular2").Axes(axes => axes.LineStyle(ls =>ls.Color("red").Width(2))
+.Background("rgba(0, 128, 128, 0.3)").Add()).Render()

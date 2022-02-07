@@ -1,0 +1,35 @@
+     @{ var template = "<div class='e-list-wrapper e-list-multi-line e-list-avatar'>" +
+     "<img class='e-avatar e-avatar-circle' src=${image} style='background:#BCBCBC' />" +
+     "<span class='e-list-item-header'>${Name}</span>" +
+     "<span class='e-list-content'>${contact}</span>" +
+     "</div>";
+
+        var groupTemplate = "<div><span class='category'>${items[0].category}</span> <span class='count'> ${items.length} Item(s)</span></div>";
+
+    }
+<ejs-listview id='List' dataSource=ViewBag.listData width=350 template=@template groupTemplate=@groupTemplate cssClass="e-list-template">
+    <e-listview-fieldsettings text="Name" groupBy="category"></e-listview-fieldsettings>
+</ejs-listview>
+
+
+<style>
+    #List {
+        display: block;
+        margin: auto;
+        font-size: 15px;
+        border: 1px solid;
+        border-color: #ccc;
+        border-color: #00001f;
+        width: 350px;
+    }
+
+        #List .e-list-group-item {
+            height: 56px;
+            line-height: 56px;
+        }
+
+        #List .count {
+            float: right;
+        }
+
+</style>

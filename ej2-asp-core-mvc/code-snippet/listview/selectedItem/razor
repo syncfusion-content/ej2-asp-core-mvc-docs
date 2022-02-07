@@ -1,0 +1,54 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists
+
+    @Html.EJS().ListView("element").DataSource((IEnumerable<object>)ViewBag.dataSource).Fields(new ListViewFieldSettings { Text = "text", Id="id"}).ShowCheckBox(true).Render()
+    <div id="text">
+        @Html.EJS().Button("btn").Content("Get selected Items").Render()
+        <table id="val"></table>
+    </div>
+
+
+
+<style>
+    #text {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    #element {
+        max-width: 350px;
+        margin: auto;
+        margin-top: 10px;
+        display: block;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>
+<script>
+
+document.getElementById('btn').addEventListener('click', () => {
+    var selecteditem = document.getElementById('element').ej2_instances[0].getSelectedItems();
+    var data = document.getElementById('val');
+    data.innerHTML = "";
+    var row1 = document.createElement('tr');
+    var header1 = document.createElement('th');
+    header1.innerHTML = 'Text';
+    row1.appendChild(header1);
+    var header2 = document.createElement('th');
+    header2.innerHTML = 'Id';
+    row1.appendChild(header2);
+    document.getElementById('val').appendChild(row1);
+    for (var i= 0; i < (selecteditem["data"]).length; i++) {
+        var row2 = document.createElement('tr');
+        row2.setAttribute("id", i.toString());
+        var data1 = document.createElement('td');
+        data1.innerHTML = selecteditem["text"][i];
+        row2.appendChild(data1);
+        var data2 = document.createElement('td');
+        data2.innerHTML = (selecteditem["data"])[i].id.toString();
+        row2.appendChild(data2);
+        document.getElementById('val').appendChild(row2);
+    }
+
+});
+</script>

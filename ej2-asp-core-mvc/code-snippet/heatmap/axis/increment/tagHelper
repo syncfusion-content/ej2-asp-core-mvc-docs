@@ -1,0 +1,6 @@
+<ejs-heatmap id='container' dataSource="ViewBag.dataSource">
+ <e-heatmap-xaxis minimum="0" increment="2" valueType="Numeric">
+ </e-heatmap-xaxis>
+ <e-heatmap-yaxis minimum="0" increment="3" valueType="Numeric">
+ </e-heatmap-yaxis>
+</ejs-heatmap>

@@ -1,0 +1,50 @@
+<ejs-pivotview id="PivotGrid" height="300" showFieldList="true">
+    <e-datasource data="@ViewBag.data" expandAll="false" enableSorting="true" allowLabelFilter="true" allowValueFilter="true">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Production Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasource>
+</ejs-pivotview>
+
+<style>
+#PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-dropdown-icon::before,
+#PivotView .e-pivot-button .e-icons.e-dropdown-icon::before {
+      content: "\e941";
+}
+
+#PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-pv-filtered::before,
+#PivotView .e-pivot-button .e-icons.e-pv-filtered::before {
+    content: "\e974";
+}
+
+#PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-pv-filter::before,
+#PivotView .e-pivot-button .e-icons.e-pv-filter::before {
+    content: '\e202';
+}
+
+#PivotView_PivotFieldList .e-icons.e-toggle-field-list::before {
+    content: '\e337';
+}
+
+#PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-sort::before,
+#PivotView .e-pivot-button .e-icons.e-sort::before {
+    content: '\e306';
+}
+
+#PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-remove::before,
+#PivotView .e-pivot-button .e-icons.e-remove::before {
+    content: '\e201';
+}
+</style>

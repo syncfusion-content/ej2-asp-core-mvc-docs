@@ -1,0 +1,48 @@
+@using Syncfusion.EJ2.Maps;
+@{
+    var titleStyle = new MapsFont
+    {
+        Size = "16px",
+    };
+    var cluster = new MapsMarkerClusterSettings
+    {
+        AllowClustering = true,
+        Height = 40,
+        Width = 40,
+        Fill = "green",
+        Opacity = 0.9,
+        AllowClusterExpand = true,
+        Shape = Syncfusion.EJ2.Maps.MarkerType.Circle,
+        LabelStyle = new MapsFont
+        {
+            Color = "White"
+        },
+        ConnectorLineSettings = new MapsConnectorLineSettings
+        {
+            Color = "orange",
+            Opacity = 0.8,
+            Width = 2
+        }
+    };
+    var tooltip = new MapsTooltipSettings
+    {
+        Visible = true,
+        ValuePath = "city"
+    };
+
+}
+<div class="control-section">
+    <ejs-maps id="maps" format="n" useGroupingSeparator="true" height="600" width="400">
+        <e-maps-titlesettings alignment="@Syncfusion.EJ2.Maps.Alignment.Center" text="Top 50 largest cities in the World" textStyle="titleStyle"></e-maps-titlesettings>
+        <e-maps-zoomsettings enable="true"></e-maps-zoomsettings>
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.shapeData" markerClusterSettings="cluster">
+                <e-layersettings-shapesettings fill="#C1DFF5"></e-layersettings-shapesettings>
+                <e-layersettings-markers>
+                    <e-layersettings-marker visible="true" shape="Balloon" height="20" width="20" animationDuration="0" tooltipSettings="tooltip" dataSource="ViewBag.ClusterData"></e-layersettings-marker>
+                </e-layersettings-markers>
+
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

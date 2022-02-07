@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Maps;
+<div id="control-section">
+    <ejs-maps id="maps">
+        <e-maps-legendsettings visible="true" removeDuplicateLegend="true" valuePath="continent"></e-maps-legendsettings>
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map" shapeDataPath="continent" shapePropertyPath='new[] { "continent" }' dataSource="ViewBag.legendData">
+                <e-layersettings-shapesettings colorValuePath="color"></e-layersettings-shapesettings>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

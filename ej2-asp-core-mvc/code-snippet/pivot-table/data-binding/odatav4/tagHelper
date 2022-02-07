@@ -1,0 +1,15 @@
+<ejs-pivotview id="PivotView" height="300">
+    <e-datasourcesettings>
+        <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/Orders/" adaptor="ODataV4Adaptor" crossdomain="true"></e-data-manager>
+        <e-rows>
+            <e-field name="ShipCountry"></e-field>
+            <e-field name="ShipCity"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="CustomerID" caption="Customer ID"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Freight" caption="Freight"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>

@@ -1,0 +1,30 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("pivotview").Width("100%").Height("300").ShowToolbar(true).ShowFieldList(true).AllowExcelExport(true).AllowNumberFormatting(true).AllowConditionalFormatting(true).AllowPdfExport(true).ShowToolbar(true).AllowCalculatedField(true).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true)
+.FormatSettings(formatsettings => 
+{ 
+    formatsettings.Name("Amount").Format("C0").UseGrouping(true).Add(); 
+})
+.Rows(rows => 
+{ 
+    rows.Name("Country").Add(); rows.Name("Products").Add(); 
+})
+.Columns(columns => 
+{ 
+    columns.Name("Year").Add(); columns.Name("Quarter").Add(); 
+})
+.Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add();
+    values.Name("Amount").Caption("Sold Amount").Add();
+})
+).GridSettings(new Syncfusion.EJ2.PivotView.PivotViewGridSettings { ColumnWidth = 140 }).DisplayOption(new PivotViewDisplayOption { View = Syncfusion.EJ2.PivotView.View.Both }).Toolbar(new List<string>
+() { "New", "Save", "SaveAs", "Rename", "Remove", "Load", "Grid", "Chart", "Export", "SubTotal", "GrandTotal", "ConditionalFormatting", "NumberFormatting", "FieldList" }).ActionComplete("actionComplete").Render()
+
+<script>
+    function actionComplete(args) {
+        if (args.actionName == 'New report added' && args.actionName == 'Report saved') {
+            // Triggers when the toolbar UI actions such as add new report and save current report icon are completed.
+        }
+    }
+</script>

@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var colorMapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new MapsColorMapping {From = 0.00001, To = 100, Color = "rgb(153,174,214)"},
+        new MapsColorMapping {From = 100, To = 200, Color = "rgb(115,143,199)"},
+        new MapsColorMapping {From = 200, To = 300, Color = "rgb(77,112,184)"},
+        new MapsColorMapping {From = 300, To = 500, Color = "rgb(38,82,168)"},
+        new MapsColorMapping {From = 500, To = 19000, Color = "rgb(0,51,153)"}
+     };
+}
+
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.ShapeSettings(ss => ss.Fill("#E5E5E5").ColorValuePath("density")
+    .ColorMapping(colorMapping)).DataSource(ViewBag.populationDensity)
+    .ShapeData(ViewBag.worldMap).ShapeDataPath("name").ShapePropertyPath("name").Add();
+}).Render()

@@ -1,0 +1,13 @@
+  @Html.EJS().QueryBuilder("OdataV4").DataSource(dataManger =>
+   {
+       dataManger.Url("http://services.odata.org/V4/Northwind/Northwind.svc/Orders/").CrossDomain(true).Adaptor("ODataV4Adaptor");
+   }).Columns(col =>
+   {
+       col.Field("EmployeeID").Label("Employee ID").Type("number").Add();
+       col.Field("FirstName").Label("First Name").Type("string").Add();
+       col.Field("TitleOfCourtesy").Label("Title Of Courtesy").Type("boolean").Values(new List<string> { "Mr.", "Mrs." }).Add();
+       col.Field("Title").Label("Title").Type("string").Add();
+       col.Field("HireDate").Label("Hire Date").Type("date").Format("dd/MM/yyyy").Add();
+       col.Field("Country").Label("Country").Type("string").Add();
+       col.Field("City").Label("City").Type("string").Add();
+   }).Rule(ViewBag.rule).Width("72%").MaxGroupCount(5).Render()

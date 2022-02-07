@@ -1,0 +1,49 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Maps
+@{
+    var data = new[]
+    {
+        new {latitude = 37.0000, longitude = -120.0000, city= "California"},
+        new {latitude = 40.7127, longitude = -74.0059, city= "New York"},
+        new {latitude = 42.000, longitude = -93.000, city= "Iowa"}
+    };
+    var border = new MapsBorder
+    {
+        Color = "green",
+        Width = 2,
+        Opacity = 1
+    };
+}
+@Html.EJS().Maps("container").ZoomSettings(new Syncfusion.EJ2.Maps.MapsZoomSettings
+      {
+          Enable = true
+      }).Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+         {
+                    new Syncfusion.EJ2.Maps.MapsLayer
+                    {
+                        ShapeSettings = new MapsShapeSettings
+                        {
+                            Fill = "#C1DFF5"
+                        },
+                        ShapeData = ViewBag.world_map,
+                        MarkerSettings  = new List<Syncfusion.EJ2.Maps.MapsMarker>
+                        {
+                            new Syncfusion.EJ2.Maps.MapsMarker
+                            {
+                                Visible = true,
+                                Fill = "red",
+                                DataSource = data,
+                                DashArray = "1",
+                                Shape=MarkerType.Balloon,
+                                TooltipSettings = new MapsTooltipSettings {
+                                    Visible = true,
+                                    ValuePath= "area",
+                                },
+                                Height= 20,
+                                Width= 20,
+                                AnimationDuration= 0,
+                                AnimationDelay = 100,
+                                Border = border
+                            }
+                        }}}).Render()
+       

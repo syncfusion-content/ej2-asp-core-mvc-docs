@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var internData = new[]
+    {
+        new { Country= "China", Membership="Permanent", population= "38332521" },
+        new { Country= "France", Membership="Permanent", population= "19651127" },
+        new { Country= "Russia", Membership="Permanent", population= "3090416" },
+        new { Country= "Kazakhstan", Membership="Non-Permanent", population= "1232521" },
+        new { Country= "Poland", Membership="Non-Permanent", population= "90332521" },
+        new { Country= "Sweden", Membership="Non-Permanent", population= "383521" }
+    };
+    var colorMapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new MapsColorMapping {Value="Permanent", Color="#D84444"},
+        new MapsColorMapping {Value="Non-Permanent", Color="#316DB5"}
+     };
+}
+<ejs-maps id="maps" format="c" useGroupingSeparator="true">
+    <e-maps-layers>
+        <e-maps-layer dataSource="internData" shapeData="ViewBag.world_map" shapeDataPath="Country" shapePropertyPath='new[] { "name" }'>
+            <e-layersettings-shapesettings colorValuePath="Membership" fill="#E5E5E5" colorMapping="colorMapping">
+            </e-layersettings-shapesettings>
+            <e-layersettings-tooltipsettings visible="true" valuePath="population"></e-layersettings-tooltipsettings>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().Button("togglebtn").IconCss("e-icons e-play-icon").Content("Export").CssClass("e-flat").Render()
+@Html.EJS().CircularGauge("circular").Height("450px").AllowImageExport(true).Width("650px").Render()
+<div id="data"></div>
+<script>
+    document.getElementById('togglebtn').onclick = function () {
+        var circularObj = document.getElementById('circular').ej2_instances[0];
+        var base64 = circularObj.export('JPEG', 'CircularGauge', null, false).then((data) => {
+            document.getElementById("data").innerHTML = data;
+        });
+    };
+</script>

@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.CircularGauge;
+
+@Html.EJS().CircularGauge("circular").Locale("de").Axes(axis => axis
+.LabelStyle(ls => ls.Position(Position.Inside).Format("c")).Add()).Render()
+
+<script>
+        ej.base.setCulture('de');
+        ej.base.setCurrencyCode('EUR');    
+</script>

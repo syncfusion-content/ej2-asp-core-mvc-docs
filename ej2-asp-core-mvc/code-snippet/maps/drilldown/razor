@@ -1,0 +1,55 @@
+
+@{ var data = new[]
+                   {
+        new { drillColor = "#C13664", continent = "North America", CategoryName = "Books", Sales = 10882,
+              color="#71B081", visibility = true},
+        new { drillColor = "#9C3367", continent = "South America", CategoryName = "Books", Sales = 13776,
+              color="#5A9A77", visibility = true},
+        new { drillColor = "#80306A", continent = "Europe", CategoryName = "Books", Sales = 3746,
+              color="#39776C", visibility = false},
+        new { drillColor = "#462A6D", continent = "Asia", CategoryName = "Books", Sales = 10688,
+              color="#266665", visibility = false},
+        new { drillColor = "#80306A", continent = "Africa", CategoryName = "Books", Sales = 18718,
+              color="#498770", visibility = true},
+        new { drillColor = "#2A2870", continent = "Australia", CategoryName = "Books", Sales = 30716,
+              color="#124F5E", visibility = false}
+    };
+    var markerData = new[]
+  {
+        new {latitude = 10.97274101999902, longitude = 16.390625}
+    };
+
+}
+
+@Html.EJS().Maps("maps").ShapeSelected("shapeSelected").Layers(l =>
+{
+    l.ShapeSettings(ss => ss.ColorValuePath("drillColor")).MarkerSettings(m =>m.Visible(true).Template("<div id='marker3' class='markerTemplate'>Africa</div>").DataSource(markerData).AnimationDuration(0).Add()).ShapeDataPath("continent").ShapePropertyPath("continent").DataSource(data).ShapeData(ViewBag.worldMap).Add();
+    l.ShapeSettings(ss => ss.Fill("#80306A")).ShapeData(ViewBag.africaMap).Add();
+}).Render()
+
+<script>
+    function shapeSelected(args) {
+        window.maps = args.maps;
+        let shape = args.shapeData.continent;
+        if (shape === 'Africa') {
+            window.maps.baseLayerIndex = 1;
+            window.maps.refresh();
+        }
+    }
+</script>
+
+<style>
+    .markerTemplate {
+        font-size: 12px;
+        color: white;
+        text-shadow: 0px 1px 1px black;
+        font-weight: 500
+    }
+
+    .markerTemplate {
+        height: 30px;
+        width: 30px;
+        display: block;
+        margin: auto;
+    }
+</style>

@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Maps;
+
+<ejs-maps id="maps">
+    <e-maps-annotations>
+        <e-maps-annotation content='<div id="first"><h1>Maps</h1></div>' x="40%" y="50%" zIndex="-1"></e-maps-annotation>
+    </e-maps-annotations>
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.worldmap">
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

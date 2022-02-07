@@ -1,0 +1,27 @@
+@{
+    var anchor_template = "<a target='_blank' href='${url}'>${name}</a>";
+}
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists;
+@Html.EJS().ListView("element").DataSource((IEnumerable<object>)ViewBag.dataSource).Template(anchor_template).HeaderTitle("Search engines").ShowHeader(true).Render()
+
+<style>
+    #element {
+        display: block;
+        max-width: 350px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+    #element a {
+        text-decoration: none;
+    }
+
+    #element .e-list-header {
+        background: rgb(2, 120, 215);
+        color: white;
+        font-size: 19px;
+        font-weight: 500;
+    }
+</style>

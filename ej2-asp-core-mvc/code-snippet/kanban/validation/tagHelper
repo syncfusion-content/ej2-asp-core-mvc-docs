@@ -1,0 +1,9 @@
+<ejs-kanban id="Kanban" keyField="Status" dataSource="@ViewBag.data">
+    <e-kanban-columns>
+        <e-kanban-column headerText="To Do" keyField="Open" showItemCount="true" minCount= "6" ></e-kanban-column>
+        <e-kanban-column headerText="In Progress" keyField="InProgress" showItemCount="true" minCount= "5"maxCount= "6"></e-kanban-column>
+        <e-kanban-column headerText="Testing" keyField="Testing" showItemCount="true" minCount= "3" ></e-kanban-column>
+        <e-kanban-column headerText="Done" keyField="Close" showItemCount="true" minCount= "6"></e-kanban-column>
+    </e-kanban-columns>
+    <e-kanban-cardsettings contentField="Summary" headerField="Title"></e-kanban-cardsettings>
+</ejs-kanban>

@@ -1,0 +1,4 @@
+@(Html.EJS().DataMatrixGenerator("container").
+Width("200px").
+Height("150px").
+Value("SYNCFUSION").Render() )

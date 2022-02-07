@@ -1,0 +1,85 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowFormulaBar(false).Created("created").Sheets(sheet =>
+{
+    sheet.Name("Movie List").Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+    }).Rows(row =>
+    {
+        row.Height(35).Add();
+        row.Height(35).Cells(cell =>
+        {
+            cell.Index(1).RowSpan(2).Add();
+            cell.ColSpan(2).Add();
+            cell.Index(6).ColSpan(3).Add();
+            cell.Index(10).RowSpan(2).ColSpan(3).Add();
+            cell.ColSpan(2).Index(13).Add();
+            cell.ColSpan(2).Index(17).Add();
+        }).Add();
+        row.Height(35).Cells(cell =>
+        {
+            cell.Index(3).ColSpan(3).Add();
+            cell.ColSpan(4).Index(6).Add();
+            cell.Index(13).ColSpan(3).Add();
+            cell.Index(17).ColSpan(2).Add();
+        }).Add();
+        row.Height(35).Cells(cell =>
+        {
+            cell.Index(2).ColSpan(3).Add();
+            cell.ColSpan(2).Index(5).Add();
+            cell.Index(7).ColSpan(3).Add();
+            cell.Index(15).ColSpan(2).Add();
+            cell.Index(17).ColSpan(2).Add();
+        }).Add();
+       row.Height(35).Cells(cell =>
+        {
+            cell.Index(2).ColSpan(3).Add();
+            cell.ColSpan(4).Index(6).Add();
+            cell.Index(16).ColSpan(2).Add();
+        }).Add();
+         row.Height(35).Cells(cell =>
+        {
+            cell.Index(2).ColSpan(4).Add();
+            cell.ColSpan(3).Index(7).Add();
+            cell.Index(15).ColSpan(2).Add();
+            cell.Index(17).ColSpan(2).Add();
+        }).Add();
+    }).Columns(column =>
+    {
+        column.Width(90).Add();
+        column.Width(150).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    function created() {
+       this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:S1');
+        this.numberFormat('h:mm AM/PM', 'C1:S1');
+        this.cellFormat({ verticalAlign: 'middle' }, 'A1:S11');
+        // Merging the `K4:M4` cells using method
+        this.merge('K4:M4');
+        // Merging the 5th and 6th row cells across 11th, 12th and 13th column
+        this.merge('K5:M6', 'Vertically');
+        // Merging the 18th and 19th column cells across 2nd, 3rd and 4th row
+        this.merge('N4:O6', 'Horizontally');
+    }
+
+</script>

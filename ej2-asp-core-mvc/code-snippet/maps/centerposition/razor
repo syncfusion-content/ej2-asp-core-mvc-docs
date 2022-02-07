@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+@{
+    var zoom = new Syncfusion.EJ2.Maps.MapsZoomSettings
+    {
+        Enable = true,
+        ZoomFactor = 13
+    };
+    var centerPosition = new Syncfusion.EJ2.Maps.MapsCenterPosition
+    {
+        Latitude = 25.5424414701248,
+        Longitude = -89.62646484375
+    };
+}
+
+
+@Html.EJS().Maps("maps").ZoomSettings(zoom).CenterPosition(centerPosition).Layers(l =>
+{
+    l.ShapeData(ViewBag.worldMap).Add();
+}).Render()

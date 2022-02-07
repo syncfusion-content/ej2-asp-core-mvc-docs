@@ -1,0 +1,29 @@
+<ejs-spreadsheet id="spreadsheet" created="created" showFormulaBar="false">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet>
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-conditionalformats>
+                        <e-spreadsheet-conditionalformat type= "GreaterThan", cFColor= "RedFT", value= "700", range= 'B2:B9'>
+                        <e-spreadsheet-conditionalformat type= "Bottom10Items", cFColor= "YellowFT", value= '4', range= 'C2:C9'></e-spreadsheet-conditionalformat>
+                        <e-spreadsheet-conditionalformat type= "BlueDataBar", range= 'D2:D9'></e-spreadsheet-conditionalformat>
+                </e-spreadsheet-conditionalformats>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column index="1" width="120"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+    <script>
+    function created() {
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:N1');
+        this.conditionalFormat({ type: "RYGColorScale", range: 'E2:E9' });
+        this.conditionalFormat({ type: "ThreeArrows", range: 'H2:H9' });
+        //Custom format
+        this.conditionalFormat({ type: 'Top10Items', value: '1',
+            format: { style: { color: '#ffffff', backgroundColor: '#009999', fontWeight: 'bold'}}, range: 'F2:F9' });
+        this.conditionalFormat({ type: 'Bottom10Items', value: '1',
+            format: { style: { color: '#ffffff', backgroundColor: '#c68d53', fontWeight: 'bold'}}, range: 'G2:G9' });
+    </script>

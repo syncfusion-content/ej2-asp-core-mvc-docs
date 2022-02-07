@@ -1,0 +1,40 @@
+ <ejs-spreadsheet id="spreadsheet" contextMenuBeforeOpen="createdHandler">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet>
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="80"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="80"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="80"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+<script>
+    function createdHandler() {
+        //To enable / disable context menu items.
+          this.spreadsheet.enableContextMenuItems(['Rename'], false, false); // Contextmenu Items that needs to be enabled / disabled, Set true / false to enable / disable the menu items, Set true if the given text is a unique id.
+    }
+</script>
+
+<style>
+    .e-spreadsheet .e-tab .e-tab-text {
+        display: inherit;
+    }
+</style>

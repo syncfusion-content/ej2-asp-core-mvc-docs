@@ -1,0 +1,35 @@
+@using Syncfusion.EJ2.CircularGauge;
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("container").Load("onGaugeLoad").Axes(axes => axes
+         .Radius("80%").StartAngle(200).EndAngle(160).Minimum(0).Maximum(100).LabelStyle(ls => ls.Position(Position.Inside))
+         .MajorTicks(major => major.Height(0)).MinorTicks(minor => minor.Height(0))
+         .Pointers(pt => pt.Value(60).RoundedCornerRadius(20).PointerWidth(0).Cap(cap => cap.Radius(0)).Add())
+         .LineStyle(lin => lin.Width(0))
+         .Add()).Render()
+
+<script>
+    var rangeLinearGradient = {
+        startValue: '0%',
+        endValue: '100%',
+        colorStop: [
+            { color: '#9E40DC', offset: '0%', opacity: 0.9 },
+            { color: '#E63B86', offset: '70%', opacity: 0.9 }
+        ]
+    }
+    function onGaugeLoad(sender) {
+        sender.gauge.axes[0].minorTicks.height = 0;
+        sender.gauge.axes[0].majorTicks.height = 0;
+        sender.gauge.axes[0].labelStyle.font.size = "0px";
+        sender.gauge.axes[0].ranges = [{
+            start: 0,
+            end: 100,
+            radius: '90%',
+            startWidth: 30,
+            endWidth: 30,
+            color: '#E0E0E0',
+            roundedCornerRadius: 20,
+            linearGradient: rangeLinearGradient
+        }];
+    }
+</script>

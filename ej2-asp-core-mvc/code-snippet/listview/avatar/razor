@@ -1,0 +1,56 @@
+﻿﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists
+    @{ var template = "<div class='e-list-wrapper e-list-multi-line e-list-avatar'>" +
+         "${if(avatar!=='')}" +
+         "<span class='e-avatar e-avatar-circle'>${avatar}</span>" +
+         "${else}" +
+         "<span class='${pic} e-avatar e-avatar-circle'> </span>" +
+         "${/if}" +
+         "<span class='e-list-item-header'>${text}</span>" +
+         "<span class='e-list-content'>${contact}</span>" +
+         "</div>";
+
+    }
+
+    @Html.EJS().ListView("List").DataSource((IEnumerable<object>)ViewBag.listData).Template(template).CssClass("e-list-template").SortOrder(SortOrder.Ascending).Width(350).HeaderTitle("Contacts").ShowHeader(true).Fields(new ListViewFieldSettings { Text = "name"}).Render()
+
+
+<style>
+    #List {
+        margin: 0 auto;
+        font-size: 15px;
+        border: 1px solid #ccc;
+    }
+
+    ic01 {
+        background-image: url("https://ej2.syncfusion.com/demos/src/grid/images/1.png");
+    }
+
+    .pic02 {
+        background-image: url("https://ej2.syncfusion.com/demos/src/grid/images/3.png");
+    }
+
+    .pic03 {
+        background-image: url("https://ej2.syncfusion.com/demos/src/grid/images/5.png");
+    }
+
+    .pic04 {
+        background-image: url("https://ej2.syncfusion.com/demos/src/grid/images/2.png");
+    }
+
+    #List .e-list-item:nth-child(1) .e-avatar {
+        background-color: #039be5;
+    }
+
+    #List .e-list-item:nth-child(2) .e-avatar {
+        background-color: #e91e63;
+    }
+
+    #List .e-list-item:nth-child(6) .e-avatar {
+        background-color: #009688;
+    }
+
+    #List .e-list-item:nth-child(8) .e-avatar {
+        background-color: #000088;
+    }
+</style>

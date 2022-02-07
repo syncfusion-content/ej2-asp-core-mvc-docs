@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.CircularGauge;
+
+@Html.EJS().CircularGauge("circular").Axes(axes => axes
+.LabelStyle(labels =>labels.Position(Position.Outside).Offset(5)).Add()).Render()

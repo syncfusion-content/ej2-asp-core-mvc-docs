@@ -1,0 +1,59 @@
+<div class="control-section" style="overflow:auto">
+    <div id="dropdown-control" style="margin-bottom:5px;">
+        <table style="width: 350px;">
+            <tbody>
+                <tr style="height: 50px">
+                    <td>
+                        <div>
+                            <b>Chart Type:</b>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <select id="charttype" name="ddl-view-mode">
+                                <option value='Pie' selected>Pie</option>
+                                <option value='Doughnut'>Doughnut</option>
+                                <option value='Pyramid'>Pyramid</option>
+                                <option value='Funnel'>Funnel</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="content-wrapper">
+        <ejs-pivotview id="Pivotview" height="300">
+            <e-datasourceSettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
+                <e-rows>
+                    <e-field name="Country"></e-field>
+                    <e-field name="Products"></e-field>
+                </e-rows>
+                <e-columns>
+                    <e-field name="Year"></e-field>
+                    <e-field name="Quarter"></e-field>
+                </e-columns>
+                <e-values>
+                    <e-field name="Sold" caption="Units Sold"></e-field>
+                    <e-field name="Amount" caption="Sold Amount"></e-field>
+                </e-values>
+                <e-formatsettings>
+                    <e-field name="Amount" format="C" maximumsignificantdigits="10" minimumsignificantdigits="1" usegrouping="true"></e-field>
+                </e-formatsettings>
+            </e-datasourceSettings>
+            <e-chartSettings title="Sales Analysis">
+                <e-chartSeries type="Pie"></e-chartSeries>
+            </e-chartSettings>
+            <e-displayOption view="Chart"></e-displayOption>
+        </ejs-pivotview>
+    </div>
+</div>
+<script>
+    var chartDropDown = new ej.dropdowns.DropDownList({
+        change: function (args) {
+            var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+            pivotObj.chartSettings.chartSeries.type = args.value;
+        }
+    });
+    chartDropDown.appendTo('#charttype');
+</script>

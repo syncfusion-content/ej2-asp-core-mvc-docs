@@ -1,0 +1,19 @@
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource(dataManger =>
+{
+    dataManger.Url("https://bi.syncfusion.com/northwindservice/api/orders").CrossDomain(true).Adaptor("WebApiAdaptor");
+
+}).ExpandAll(false).ShowAggregationOnValueField(false).EnableSorting(true)
+    .FormatSettings(formatsettings =>
+    {
+        formatsettings.Name("UnitPrice").Format("C0").UseGrouping(true).Add();
+    }).Rows(rows =>
+    {
+        rows.Name("ShipCountry").Add(); rows.Name("ShipCity").Add();
+    }).Columns(columns =>
+    {
+        columns.Name("ProductName").Caption("Product Name").Add();
+    }).Values(values =>
+    {
+        values.Name("Quantity").Caption("Quantity").Add(); values.Name("UnitPrice").Caption("Unit Price").Add();
+    })
+    ).Render()

@@ -1,0 +1,42 @@
+<ejs-button id="conditional-formatting-btn" content="Apply Formatting" isPrimary="true"></ejs-button>
+<ejs-pivotview id="PivotGrid"  width="100%" height="300" allowConditionalFormatting="true" showFieldList="true">
+                <e-datasource data="@ViewBag.data" expandAll="false" enableSorting="true">
+                    <e-formatsettings>
+                        <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+                    </e-formatsettings>
+                    <e-drilledmembers>
+                        <e-field name="Country" items="@ViewBag.drilledMembers"></e-field>
+                    </e-drilledmembers>
+                    <e-rows>
+                        <e-field name="Country"></e-field>
+                        <e-field name="Products"></e-field>
+                    </e-rows>
+                    <e-columns>
+                        <e-field name="Year"></e-field>
+                        <e-field name="Order_Source" caption="Order Source"></e-field>
+                    </e-columns>
+                    <e-values>
+                        <e-field name="In_Stock" caption="In Stock"></e-field>
+                        <e-field name="Sold" caption="Units Sold"></e-field>
+                    </e-values>
+                    <e-filters>
+                        <e-field name="Product_Categories" caption="Product Categories"></e-field>
+                    </e-filters>
+                    <e-conditionalformatsettings>
+                        <e-format measure="In Stock" conditions="LessThan" value1="5000">
+                            <e-fieldlist-style backgroundColor="#80cbc4" color="black" fontFamily="Tahoma" fontSize="12px"/>
+                        </e-format>
+                        <e-format measure="Units Sold" conditions="Between" value1="3400" value2="40000">
+                            <e-fieldlist-style backgroundColor="#f48fb1" color="black" fontFamily="Tahoma" fontSize="12px" />
+                        </e-format>
+                    </e-conditionalformatsettings>
+                </e-datasource>
+                <e-gridSettings columnWidth="100"></e-gridSettings>
+</ejs-pivotview>
+
+<script>
+    document.getElementById("conditional-formatting-btn").addEventListener('click', function () {
+        var pivotGridObj = document.getElementById("PivotGrid").ej2_instances[0];
+        pivotGridObj.conditionalFormattingModule.showConditionalFormattingDialog();
+    });
+</script>

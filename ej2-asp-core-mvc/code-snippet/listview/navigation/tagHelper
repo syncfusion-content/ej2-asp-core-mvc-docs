@@ -1,0 +1,27 @@
+@{
+    var anchor_template = "<a target='_blank' href='${url}'>${name}</a>";
+}
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists;
+<ejs-listview id="element" dataSource="(IEnumerable<object>)ViewBag.dataSource" template="@anchor_template" headerTitle="Search engines" showHeader="true">
+</ejs-listview>
+<style>
+    #element {
+        display: block;
+        max-width: 350px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+        #element a {
+            text-decoration: none;
+        }
+
+        #element .e-list-header {
+            background: rgb(2, 120, 215);
+            color: white;
+            font-size: 19px;
+            font-weight: 500;
+        }
+</style>

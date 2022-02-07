@@ -1,0 +1,30 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+@{
+    var highlight = new Syncfusion.EJ2.Maps.MapsHighlightSettings
+    {
+        Enable = true,
+        Fill = "green",
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Color = "white",
+            Width = 2,
+            Opacity = 1
+        }
+
+    };
+    var data = new[]
+    {
+            new { name= "India", population= "38332521" },
+            new { name= "Australia", population= "383521" },
+            new { name= "Pakistan", population= "3090416" }
+    };
+}
+
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l
+    .BubbleSettings(bubble => bubble.Visible(true).MinRadius(20).MaxRadius(20).DataSource(data).ValuePath("population").HighlightSettings(highlight).Add()).
+    ShapeDataPath("name").ShapePropertyPath("name").ShapeData(ViewBag.worldMap).Add();
+}).Render()

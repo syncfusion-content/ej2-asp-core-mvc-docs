@@ -1,0 +1,1 @@
+ <ejs-barcodegenerator id="container" width="200px" height="150px" invalid="invalidInput" type="Codabar" value="123456789" mode="SVG"></ejs-barcodegenerator>

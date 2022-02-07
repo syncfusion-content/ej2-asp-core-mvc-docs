@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("pivotview").Width("100%").Height("600").DataSourceSettings(dataSourceSettings => dataSourceSettings
+        .Url("https://bi.syncfusion.com/olap/msmdpump.dll").Catalog("Adventure Works DW 2008 SE").Cube("Adventure Works").ProviderType(ProviderType.SSAS)
+        .Rows(rows => { rows.Name("[Customer].[Customer]").Caption("Customer").Add(); })
+        .Columns(columns => { columns.Name("[Product].[Product Categories]").Caption("Product Categories").Add(); columns.Name("[Measures]").Caption("Measures").Add(); })
+        .Values(values => { values.Name("[Measures].[Customer Count]").Caption("Customer Count").Add(); values.Name("[Measures].[Internet Sales Amount]").Caption("Internet Sales Amount").Add(); })
+        .Filters(filters => { filters.Name("[Date].[Fiscal]").Caption("Date Fiscal").Add(); })
+        .FormatSettings(formatSettings =>
+        {
+            formatSettings.Name("[Measures].[Internet Sales Amount]").Format("C0").Add();
+        })).EnableVirtualization(true).Render()

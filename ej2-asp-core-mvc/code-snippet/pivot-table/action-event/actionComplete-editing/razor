@@ -1,0 +1,22 @@
+   @Html.EJS().PivotView("PivotView").Width("100%").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true)
+    .FormatSettings(formatsettings => 
+    { 
+        formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add(); 
+    }).Rows(rows => 
+    { 
+        rows.Name("Country").Add(); rows.Name("Products").Add(); 
+    }).Columns(columns => 
+    { 
+        columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add(); 
+    }).Values(values => 
+    { 
+        values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add(); 
+    })).EditSettings(pivotViewCellEditSettings=>pivotViewCellEditSettings.AllowAdding(true).AllowDeleting(true).AllowEditing(true).Mode(Syncfusion.EJ2.PivotView.EditMode.Dialog)).ActionComplete("actionComplete").Render()
+
+<script>
+    function actionComplete(args) {
+        if (args.actionName == 'New record added' && args.actionName == 'Edited records saved') {
+            // Triggers when the editing UI actions such as add and edit are completed.
+        }
+    }
+</script>

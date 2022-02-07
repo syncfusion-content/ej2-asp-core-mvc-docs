@@ -1,0 +1,13 @@
+<ejs-pivotview id="PivotView" height="300" maxNodeLimitInMemberEditor=500>
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
+        <e-rows>
+            <e-field name="DeliveryDate"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>

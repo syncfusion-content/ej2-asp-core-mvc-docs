@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var data = new[]
+        {
+            new { name= "India", population= "38332521" },
+            new { name= "Australia", population= "19651127" },
+            new { name= "Pakistan", population= "3090416" }
+        };
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> 
+        {
+            new  MapsColorMapping{ Color = "#C3E6ED",Value= "38332521"  },
+            new MapsColorMapping { Color= "#F1931B", Value = "19651127" },
+            new MapsColorMapping { Color= "blue", Value = "3090416" }
+        };
+}
+
+@Html.EJS().Maps("maps").Layers(l =>
+ {
+     l.BubbleSettings(bubble =>
+     {
+         bubble.Visible(true).ValuePath("population").MinRadius(5).MaxRadius(20).ColorValuePath("population").ValuePath("population").
+                DataSource(data).ColorMapping(colormapping).Add();
+     }).ShapeData(ViewBag.worldMap).ShapeDataPath("name").ShapePropertyPath("name").Add();
+ }).Render()

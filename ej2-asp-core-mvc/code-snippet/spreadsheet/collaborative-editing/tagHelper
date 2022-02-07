@@ -1,0 +1,24 @@
+<ejs-spreadsheet id="spreadsheet" actionComplete="actionComplete">
+</ejs-spreadsheet>
+
+<script>
+    // For signalR Hub connection
+    var connection = new signalR.HubConnectionBuilder().withUrl('https://localhost:44385/hubs/spreadsheethub', { // localhost from AspNetCore service
+        skipNegotiation: true,
+        transport: signalR.HttpTransportType.WebSockets
+    }).build();
+
+    function actionComplete(args) {
+        connection.send('BroadcastData', JSON.stringify(args)); // send the action data to the server
+    }
+
+    connection.on('dataReceived', (data) => {
+        var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        var model = JSON.parse(data);
+        spreadsheetObj.updateAction({ action: model.action, eventArgs: model.eventArgs });
+    });
+    connection.start().then(() => {
+        console.log('server connected!!!');
+    }).catch((err) => console.log(err));
+
+</script>

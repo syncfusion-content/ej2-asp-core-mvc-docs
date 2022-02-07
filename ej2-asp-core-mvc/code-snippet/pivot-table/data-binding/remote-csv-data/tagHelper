@@ -1,0 +1,22 @@
+<ejs-pivotview id="PivotView" height="300">
+    <e-datasourcesettings Url="https://bi.syncfusion.com/productservice/api/sales" Type='CSV'>
+        <e-rows>
+            <e-field name="Region"></e-field>
+            <e-field name="Country"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Item Type"></e-field>
+            <e-field name="Sales Channel"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Total Cost"></e-field>
+            <e-field name="Total Revenue"></e-field>
+            <e-field name="Total Profit"></e-field>
+        </e-values>
+        <e-formatsettings>
+            <e-field name="Total Cost" format="C0" useGrouping="true"></e-field>
+            <e-field name="Total Revenue" format="C0" useGrouping="true"></e-field>
+            <e-field name="Total Profit" format="C0" useGrouping="true"></e-field>
+        </e-formatsettings>
+    </e-datasourcesettings>
+</ejs-pivotview>

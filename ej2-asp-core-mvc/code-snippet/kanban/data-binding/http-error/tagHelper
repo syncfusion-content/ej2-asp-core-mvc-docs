@@ -1,0 +1,18 @@
+ <ejs-kanban id="Kanban" keyField="Status" allowDragAndDrop="false" actionFailure="onActionFailure" >
+                <e-data-manager url="http://some.com/invalidUrl" crossdomain="true"></e-data-manager>
+                <e-kanban-columns>
+                    <e-kanban-column headerText="To Do" keyField="Open"></e-kanban-column>
+                    <e-kanban-column headerText="In Progress" keyField="InProgress"></e-kanban-column>
+                    <e-kanban-column headerText="Testing" keyField="Testing"></e-kanban-column>
+                    <e-kanban-column headerText="Done" keyField="Close"></e-kanban-column>
+                </e-kanban-columns>
+                <e-kanban-cardsettings headerField="Id" contentField="Summary"></e-kanban-cardsettings>
+            </ejs-kanban>
+<script>
+    function onActionFailure() {
+        var span = document.createElement('span');
+        this.element.parentNode.insertBefore(span, this.element);
+        span.style.color = '#FF0000'
+        span.innerHTML = 'Server exception: 404 Not found'
+    }
+</script>

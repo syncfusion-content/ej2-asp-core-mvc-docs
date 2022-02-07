@@ -1,0 +1,1 @@
+   @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource)).Render()

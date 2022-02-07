@@ -1,0 +1,7 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("circular").Background("skyblue").Border(border =>border.Width(2).Color("#FF0000")).Axes(axis => axis
+.Radius("90 %").Maximum(120).StartAngle(230).EndAngle(130).LineStyle(ls =>ls.Width(2)).MajorTicks(mt =>mt.Width(1).Color("#8c8c8c"))
+.MinorTicks(mi => mi.Color("#8c8c8c").Width(1)).Add()).Render()
+
+

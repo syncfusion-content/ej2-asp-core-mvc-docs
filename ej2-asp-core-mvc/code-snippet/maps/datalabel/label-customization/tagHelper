@@ -1,0 +1,32 @@
+@{
+    var label = new MapsDataLabelSettings
+    {
+        Visible = true,
+        LabelPath = "name",
+        Border = new MapsBorder
+        {
+            Color = "green",
+            Width = 2,
+            Opacity = 1
+        },
+        Fill = "#CCD1D1",
+        Opacity = 0.9,
+        TextStyle = new MapsFont
+        {
+            Color = "blue",
+            Size = "10px",
+            FontStyle = "Sans-serif",
+            FontWeight = "normal"
+        }
+    };
+}
+
+@using Syncfusion.EJ2.Maps;
+
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.usa" dataLabelSettings="label">
+            <e-layersettings-shapesettings autofill=true></e-layersettings-shapesettings>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

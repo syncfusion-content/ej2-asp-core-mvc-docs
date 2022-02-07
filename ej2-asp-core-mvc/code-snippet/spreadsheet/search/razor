@@ -1,0 +1,17 @@
+@Html.EJS().Spreadsheet("spreadsheet").AllowFindAndReplace(true).Sheets(sheet =>
+{
+    sheet.Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+  
+    }).Columns(column =>
+    {
+        column.Width(110).Add();
+        column.Width(220).Add();
+        column.Width(90).Add();
+        column.Width(140).Add();
+        column.Width(90).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+    }).Add();
+}).Render()

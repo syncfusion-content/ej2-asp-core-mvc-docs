@@ -1,0 +1,38 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowSheetTabs(false).Created("created").ShowRibbon(false).ShowFormulaBar(false).Sheets(sheet =>
+{
+    sheet.Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+  
+    }).Rows(row =>
+    {
+        row.Index(2).Hidden(true).Add();
+        row.Hidden(true).Add();
+    }).Columns(column =>
+    {
+        column.Width(90).Add();
+        column.Width(220).Add();
+        column.Width(90).Add();
+        column.Width(140).Add();
+        column.Width(90).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    function created() {
+       this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        // Unhide the 2nd index hidden column
+        this.hideColumn(1, 1, false);
+        // Unhide the 3rd index hidden row
+        this.hideRow(3, 3, false);
+        // Hiding the 6th index column
+        this.hideColumn(6);
+        // Hiding the 8th and 9th index row
+        this.hideRow(8, 9);
+        this.cellFormat({ textAlign: 'center' }, 'D2:H11');
+    }
+
+</script>

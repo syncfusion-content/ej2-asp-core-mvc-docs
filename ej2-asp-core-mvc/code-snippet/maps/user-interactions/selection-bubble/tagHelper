@@ -1,0 +1,32 @@
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var select = new Syncfusion.EJ2.Maps.MapsSelectionSettings
+    {
+        Enable = true,
+        Fill = "green",
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Color = "white",
+            Width = 2,
+            Opacity = 1
+        }
+
+    };
+    var data = new[]
+    {
+            new { name= "India", population= "38332521" },
+            new { name= "Australia", population= "383521" },
+            new { name= "Pakistan", population= "3090416" }
+    };
+}
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.world_map" shapeDataPath="name" shapePropertyPath='new[] { "name" }'>
+            <e-layersettings-bubbles>
+                <e-layersettings-bubble visible="true" minRadius="20" maxRadius="40" dataSource="data"
+                                        valuePath="population" selectionSettings="select"></e-layersettings-bubble>
+            </e-layersettings-bubbles>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

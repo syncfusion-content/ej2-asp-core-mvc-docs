@@ -1,0 +1,33 @@
+@Html.EJS().Button("showfillbtn").Content("Change showFillOptions").Render();
+@Html.EJS().Spreadsheet("spreadsheet").Created("created").Sheets(sheet =>
+{
+     sheet.Name("Price Details").Rows(row =>
+	   {
+		   row.Height(30).Add();
+	   }).Ranges(ranges =>
+	   {
+		   ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A1").Add();
+	   }).Columns(column =>
+	   {
+		   column.Width(130).Add();
+		   column.Width(100).Add();
+		   column.Width(100).Add();
+	   }).Add();
+   }).Render()
+
+<script>
+
+    function created() {
+		this.cellFormat({ backgroundColor: '#357cd2', color: '#fff', fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.autoFill('D2:D3','D4:D11','Down','CopyCells');
+        this.autoFill('E2:E3','E4:E11','Down','FillSeries');
+        this.autoFill('B2:B3','B4:B11','Down','FillFormattingOnly');
+        this.autoFill('C2:C3','C4:C11','Down','FillWithoutFormatting');
+        }
+	document.getElementById("showfillbtn").addEventListener('click', function () {
+            var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
+            var showFillOptions = spreadsheetObj.autoFillSettings.showFillOptions;
+            spreadsheetObj.autoFillSettings.showFillOptions = !showFillOptions;
+        });
+
+</script>

@@ -1,0 +1,49 @@
+<table>
+    <tbody>
+        <td style="width: 200px">
+            @Html.EJS().TextBox("search_text").Placeholder("Enter search text").ShowClearButton(true).Created("searchCreate").Render();
+        </td>
+        <td>
+            @Html.EJS().Button("reset_filter").Content("Reset").Render()
+        </td>
+    </tbody>
+</table>
+ @Html.EJS().Kanban("kanban").KeyField("Status").DataSource((IEnumerable<object>)ViewBag.data).Columns(col =>
+    {
+        col.HeaderText("To Do").KeyField("Open").Add();
+        col.HeaderText("In Progress").KeyField("InProgress").Add();
+        col.HeaderText("Testing").KeyField("Testing").Add();
+        col.HeaderText("Done").KeyField("Close").Add();
+    }).CardSettings(card => {
+        card.ContentField("Summary").HeaderField("Id");
+    }).Created("kanbanCreate").Render()
+<script>
+    var kanbanObj, textObj;
+    function kanbanCreate() {
+        kanbanObj = this;
+    }
+
+    function searchCreate() {
+        textObj = this;
+    }
+
+    function change(args) {
+        var filterQuery = new ej.data.Query();
+        if (args.value !== 'None') {
+            filterQuery = new ej.data.Query().where('Priority', 'equal', args.value);
+        }
+        kanbanObj.query = filterQuery;
+    }
+    document.getElementById('reset_filter').onclick = function () {
+        textObj.value = '';
+        kanbanObj.query = new ej.data.Query();
+    };
+    document.getElementById('search_text').onkeyup = function (e) {
+        var searchValue = e.target.value;
+        var searchQuery = new ej.data.Query();
+        if (searchValue !== '') {
+            searchQuery = new ej.data.Query().search(searchValue, ['Id', 'Summary'], 'contains', true);
+        }
+        kanbanObj.query = searchQuery;
+    };
+</script>

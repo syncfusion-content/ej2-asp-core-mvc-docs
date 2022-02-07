@@ -1,0 +1,15 @@
+<ejs-pivotview id="PivotGrid" height="300">
+    <e-datasource data="@ViewBag.data">
+        <e-rows>
+            <e-field name="Country" showNoDataItems="true"></e-field>
+            <e-field name="State" showNoDataItems="true"></e-field>            
+        </e-rows>
+        <e-columns>
+            <e-field name="Date" showNoDataItems="true"></e-field>            
+        </e-columns>
+        <e-values>
+            <e-field name="Quantity" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasource>
+</ejs-pivotview>

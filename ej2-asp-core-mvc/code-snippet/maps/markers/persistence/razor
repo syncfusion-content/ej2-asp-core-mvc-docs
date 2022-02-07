@@ -1,0 +1,28 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Maps
+@Html.EJS().Maps("container").EnablePersistence(true).TitleSettings(title => title.Text("Top 50 largest cities in the World").
+    TextStyle(new MapsFont { Size = "16px" })).ZoomSettings(new Syncfusion.EJ2.Maps.MapsZoomSettings
+      {
+          Enable = true
+      }).Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+         {
+            new Syncfusion.EJ2.Maps.MapsLayer
+                {
+                    ShapeSettings = new MapsShapeSettings
+                        {
+                            Fill = "#C1DFF5"
+                        },
+                    ShapeData =  ViewBag.shapeData,
+                    MarkerSettings  = new List<Syncfusion.EJ2.Maps.MapsMarker>
+                        {
+                            new Syncfusion.EJ2.Maps.MapsMarker
+                            {
+                                Visible = true,
+                                DataSource = ViewBag.ClusterData,
+                                Shape=MarkerType.Circle,
+                                Height= 20,
+                                Width= 20,
+                                AnimationDuration= 0,
+                            }
+                        }}}).Render()
+       

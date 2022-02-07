@@ -1,0 +1,16 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Maps
+@Html.EJS().Maps("container").EnablePersistence("true")ZoomSettings(zoom=>zoom.Enable(true)).Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+         {
+            new Syncfusion.EJ2.Maps.MapsLayer
+            { 
+                ShapeData = ViewBag.shapeData,
+                selectionSettings = new MapsSelectionSettings
+                {
+                    enable= true,
+                    fill= "green",
+                    border: new MapsSelectionSettingBorder{ color= "white", width= 2}
+                },
+               }
+        }).Render()
+       

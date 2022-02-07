@@ -1,0 +1,36 @@
+
+<ejs-pivotview id="PivotView" height="300" multiLevelLabelRender="multiLevelLabelRender">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+    <e-chartSettings>
+        <e-chartSeries type="Column"></e-chartSeries>
+    </e-chartSettings>
+    <e-displayOption view="Chart"></e-displayOption>
+</ejs-pivotview>
+
+<script>
+    function multiLevelLabelRender(args) {
+        args.alignment = 'Far';
+        args.textStyle = { fontFamily: 'Bold', fontWeight: '400', size: '16px', color: 'red' };
+        if (args.text === ' + United States') {
+            args.text = 'Text Changed';
+            args.alignment = 'Near';
+            args.textStyle = { fontFamily: 'Bold', fontWeight: '800', size: '16px', color: 'Blue' };
+        }
+    }
+</script>

@@ -1,0 +1,34 @@
+ <ejs-kanban id="Kanban" keyField="Status" dataSource="@ViewBag.data">
+    <e-kanban-columns>
+        <e-kanban-column headerText="To Do" keyField="Open"></e-kanban-column>
+        <e-kanban-column headerText="In Progress" keyField="InProgress"></e-kanban-column>
+        <e-kanban-column headerText="Testing" keyField="Testing"></e-kanban-column>
+        <e-kanban-column headerText="Done" keyField="Close"></e-kanban-column>
+    </e-kanban-columns>
+    <e-kanban-cardsettings contentField="Summary" headerField="Title"></e-kanban-cardsettings>
+    <e-kanban-swimlanesettings keyField="Assignee" template="#swimlaneTemplate"></e-kanban-swimlanesettings>
+</ejs-kanban>
+ <script id="swimlaneTemplate" type="text/x-jsrender">
+        <div class='swimlane-template e-swimlane-template-table'>
+            <div class="e-swimlane-row-text"><img src="../images/Kanban/${keyField}.png" alt="" /><span>${textField}</span></div>
+        </div>
+    </script>
+}
+
+<style>
+    .swimlane-template {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .swimlane-template img {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+    }
+
+    .swimlane-template span {
+        padding-left: 10px;
+    }
+
+</style>

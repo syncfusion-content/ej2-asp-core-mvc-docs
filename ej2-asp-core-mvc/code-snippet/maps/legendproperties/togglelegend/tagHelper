@@ -1,0 +1,34 @@
+@{
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+                        new MapsColorMapping{
+                            From = 1, To = 100, Color = "rgb(153,174,214)"
+                        },
+                        new MapsColorMapping{
+                            From = 101, To = 200, Color = "rgb(115,143,199)"
+                        },
+                        new MapsColorMapping{
+                            Color = "rgb(77,112,184)"
+                        },
+                };
+    var border = new MapsBorder
+    {
+        Color = "blue",
+        Width = 2,
+        Opacity = 1
+    };
+}
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+<div id="control-section">
+    <ejs-maps id="maps">
+        <e-maps-legendsettings visible="true">
+            <e-legendsettings-togglelegendsettings enable="true" applyShapeSettings="false" fill="green" border="border">
+            </e-legendsettings-togglelegendsettings>
+        </e-maps-legendsettings>
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map" shapeDataPath="name" shapePropertyPath='new[] { "name" }' dataSource="ViewBag.populationData">
+                <e-layersettings-shapesettings colorValuePath="density" colorMapping="colormapping"></e-layersettings-shapesettings>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

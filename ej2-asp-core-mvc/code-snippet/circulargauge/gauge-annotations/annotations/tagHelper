@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2;
+
+<div id="container">
+    <ejs-circulargauge id="circular">
+        <e-circulargauge-axes>
+            <e-circulargauge-axis>
+                <e-circulargauge-annotations>
+                    <e-circulargauge-annotation content="#annotation-template" zIndex="1"></e-circulargauge-annotation>
+                </e-circulargauge-annotations>
+                <e-circulargauge-pointers>
+                    <e-circulargauge-pointer value="50"></e-circulargauge-pointer>
+                </e-circulargauge-pointers>
+            </e-circulargauge-axis>
+        </e-circulargauge-axes>
+    </ejs-circulargauge>
+</div>
+<script id='annotation-template' type="text/x-template">
+    <div id='templateWrap'>
+        <div class='des'>
+            <span>Pointer Value : 50</span>
+        </div>
+    </div>
+</script>

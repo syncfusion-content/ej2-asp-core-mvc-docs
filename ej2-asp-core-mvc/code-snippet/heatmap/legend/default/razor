@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts => 
+ts.Text("Sales Revenue per Employee (in 1000 US$)").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+xAxis.Labels(ViewBag.xLabels)).YAxis(yaxis =>
+yaxis.Labels(ViewBag.yLabels)).PaletteSettings(ps => ps.Palette(palette =>
+{
+    palette.Value(0).Color("#C2E7EC").Add();
+    palette.Value(10).Color("#AEDFE6").Add();
+    palette.Value(20).Color("#9AD7E0").Add();
+    palette.Value(30).Color("#72C7D4").Add();
+    palette.Value(40).Color("#5EBFCE").Add();
+    palette.Value(50).Color("#4AB7C8").Add();
+    palette.Value(60).Color("#309DAE").Add();
+    palette.Value(70).Color("#2B8C9B").Add();
+    palette.Value(80).Color("#206974").Add();
+    palette.Value(90).Color("#15464D").Add();
+    palette.Value(100).Color("#000000").Add();
+})).LegendSettings(ls =>
+ls.Position(Syncfusion.EJ2.HeatMap.LegendPosition.Right)).DataSource(ViewBag.dataSource).Render()

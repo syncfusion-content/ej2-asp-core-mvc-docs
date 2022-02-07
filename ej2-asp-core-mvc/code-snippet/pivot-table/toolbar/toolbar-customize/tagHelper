@@ -1,0 +1,46 @@
+<ejs-pivotview id="pivotview" showToolbar="true"  width="100%" height="300" toolbar="@(new List<string>() {"Expand/Collapse" })" toolbarRender="beforeToolbarRender">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" enableSorting="true">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year"></e-field>
+            <e-field name="Order_Source" caption="Order Source"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="In_Stock" caption="In Stock"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+        <e-filters>
+            <e-field name="Product_Categories" caption="Product Categories"></e-field>
+        </e-filters>
+    </e-datasourcesettings>
+    <e-gridSettings columnWidth="140"></e-gridSettings>
+    <e-displayOption view="Both"></e-displayOption>
+</ejs-pivotview>
+<style>
+    #pivotview {
+        width: 100%;
+        height: 100%;
+    }
+
+    .e-tool-expand::before {
+        content: '\e702';
+    }
+</style>
+<script>
+    function beforeToolbarRender(args) {
+        args.customToolbar.splice(12, 0, {
+                prefixIcon: 'e-tool-expand e-icons', tooltipText: 'Expand/Collapse',
+                click: function (args: ClickEventArgs) {
+                    var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
+                    pivotTableObj.dataSourceSettings.expandAll = !pivotTableObj.dataSourceSettings.expandAll;
+                },
+        });
+    }
+</script>

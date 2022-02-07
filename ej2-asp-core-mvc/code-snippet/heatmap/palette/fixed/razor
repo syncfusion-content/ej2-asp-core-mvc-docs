@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.HeatMap;
+@Html.EJS().HeatMap("container").TitleSettings(ts => 
+ts.Text("Sales Revenue per Employee (in 1000 US$)").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+xAxis.Labels(ViewBag.xLabels)).YAxis(yaxis =>
+yaxis.Labels(ViewBag.yLabels)).CellSettings(cs =>
+cs.ShowLabel(false)).LegendSettings(ls =>
+ls.Position(LegendPosition.Left)).PaletteSettings(ps => 
+ps.Type(Syncfusion.EJ2.HeatMap.PaletteType.Fixed)).DataSource(ViewBag.dataSource).Render()

@@ -1,0 +1,3 @@
+<ejs-qrcodegenerator id="container" width="200px" height="150px" value="Syncfusion">
+<e-qrcodegenerator-displaytext text="text"></e-datamatrixgenerator-displaytext>
+</ejs-qrcodegenerator>

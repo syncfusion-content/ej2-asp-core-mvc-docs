@@ -1,0 +1,117 @@
+@using Syncfusion.EJ2.PivotView;
+
+<div class="control-section" style="overflow:auto">
+<div class="content-wrapper">
+    @Html.EJS().PivotView("pivotview").Width("100%").ShowTooltip(false).Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>
+        )ViewBag.Data).ExpandAll(true).EnableSorting(true)
+        .Rows(rows =>
+        {
+            rows.Name("Country").Add();
+            rows.Name("Products").Add();
+        })
+        .Columns(columns =>
+        {
+            columns.Name("Year").Add();
+        })
+        .Values(values =>
+        {
+            values.Name("Sold").Caption("Units Sold").Add();
+        })).GridSettings(new PivotViewGridSettings { ColumnWidth = 140, AllowSelection = true }).DataBound("onDataBound").Load("onLoad").CellSelected("onCellSelected").Render()
+</div>
+<br />
+<br />
+<div id="Chart" style="height: 450px;"></div>
+</div>
+
+<script>
+        var onInit = true;
+        var measureList = {};
+        var chart;
+        var selectedCells;
+        var chartSeries;
+        function dataBound() {
+            var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+            if (onInit) {
+                for (var i = 0; i < pivotObj.dataSourceSettings.values.length; i++) {
+                    var value = pivotObj.dataSourceSettings.values[i];
+                    measureList[value.name] = value.caption || value.name;
+                }
+                pivotObj.grid.selectionModule.selectCellsByRange({ cellIndex: 1, rowIndex: 1 }, { cellIndex: 3, rowIndex: 3 });
+            }
+        }
+        function cellSelected(args) {
+            selectedCells = args.selectedCellsInfo;
+            if (selectedCells && selectedCells.length > 0) {
+            chartSeries = frameChartSeries();
+            chartUpdate();
+            }
+        }
+        function frameChartSeries() {
+                var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+                var columnGroupObject = {};
+                for (var b = 0; b < selectedCells.length; b++) {
+                    var cell = selectedCells[b];
+                    if (cell.measure !== '') {
+                    var columnSeries = (pivotObj.dataSourceSettings.values.length > 1 && measureList[cell.measure]) ?
+                        (cell.columnHeaders.toString() + ' ~ ' + measureList[cell.measure]) : cell.columnHeaders.toString();
+                    if (columnGroupObject[columnSeries]) {
+                        columnGroupObject[columnSeries].push({ x: cell.rowHeaders == '' ? 'Grand Total' : cell.rowHeaders.toString(), y: Number(cell.value) });
+                    }
+                    else {
+                        columnGroupObject[columnSeries] = [{ x: cell.rowHeaders == '' ? 'Grand Total' : cell.rowHeaders.toString(), y: Number(cell.value) }];
+                    }
+                    }
+                }
+                var columnKeys = Object.keys(columnGroupObject);
+                var chartSeries = [];
+                for (var c = 0; c < columnKeys.length; c++) {
+                    var key = columnKeys[c];
+                    chartSeries.push({
+                    dataSource: columnGroupObject[key],
+                    xName: 'x',
+                    yName: 'y',
+                    type: 'Column',
+                    name: key
+                    });
+                }
+                return chartSeries;
+        }
+        function chartUpdate() {
+            var chart = document.getElementById('Chart').ej2_instances[0];
+            var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+            if (onInit) {
+                onInit = false;
+                chart = new ej.charts.Chart({
+                title: 'Sales Analysis',
+                legendSettings: {
+                    visible: true
+                },
+                tooltip: {
+                    enable: true
+                },
+                primaryYAxis: {
+                    title: pivotObj.dataSourceSettings.values.map(function (args) { return args.caption || args.name; }).join(' ~ '),
+                },
+                primaryXAxis: {
+                    valueType: 'Category',
+                    title: pivotObj.dataSourceSettings.rows.map(function (args) { return args.caption || args.name; }).join(' ~ '),
+                    labelIntersectAction: 'Rotate45'
+                },
+                series: chartSeries,
+                }, '#Chart');
+            }
+            else {
+                chart.series = chartSeries;
+                chart.primaryXAxis.title = pivotObj.dataSourceSettings.rows.map(function (args) { return args.caption || args.name; }).join(' ~ ');
+                chart.primaryYAxis.title = pivotObj.dataSourceSettings.values.map(function (args) { return args.caption || args.name; }).join(' ~ ');
+                chart.refresh();
+            }
+        }
+
+        function onLoad() {
+            if (onInit) {
+                var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+                pivotObj.gridSettings.selectionSettings= { mode: 'Cell', type: 'Multiple', cellSelectionMode: 'Box' };
+            }
+        }
+    </script>

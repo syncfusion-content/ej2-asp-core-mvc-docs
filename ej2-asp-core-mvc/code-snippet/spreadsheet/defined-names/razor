@@ -1,0 +1,71 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowSheetTabs(false).BeforeDataBound("beforeDataBound").Created("created").ShowRibbon(false).Sheets(sheet =>
+{
+    sheet.Name("Budget Details").Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A2").Add();
+    }).Rows(row =>
+    {
+        row.Height(40).CustomHeight(true).Cells(cell =>
+        {
+            cell.ColSpan(5).Value("Monthly Expense").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, VerticalAlign = VerticalAlign.Middle, TextAlign = TextAlign.Center, FontSize = "15pt", FontStyle = FontStyle.Italic }).Add();
+        }).Add();
+        row.Height(30).Add();
+        row.Index(11).Cells(cell =>
+        {
+            cell.Value("Totals").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, FontStyle = FontStyle.Italic }).Add();
+            cell.Formula("=SUM(MonthlySpendings)").Add();
+            cell.Formula("=SUM(AnnualSpendings)").Add();
+            cell.Formula("=SUM(LastYearSpendings)").Add();
+            cell.Formula("=C12/D12").Add();
+        }).Add();
+         row.Cells(cell =>
+        {
+            cell.Index(1).Value("Number of Categories").ColSpan(2).Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Right }).Add();
+            cell.Formula("=COUNTA(=C12/D12)").Index(3).Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Index(1).Value("Average Spend").ColSpan(2).Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Right }).Add();
+            cell.Formula("=AVERAGE(MonthlySpendings)").Index(3).Format("$#,##0").Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Index(1).Value("Min Spend").ColSpan(2).Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Right }).Add();
+            cell.Formula("=MIN(MonthlySpendings)").Index(3).Format("$#,##0").Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Index(1).Value("Max Spend").ColSpan(2).Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Right }).Add();
+            cell.Formula("=MAX(MonthlySpendings)").Index(3).Format("$#,##0").Add();
+        }).Add();
+    }).Columns(column =>
+    {
+        column.Width(150).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+    }).Add();
+}).DefinedNames(definedName => {
+       definedName.Name("Categories").RefersTo("=Budget Details!A3:A11").Add();
+       definedName.Name("MonthlySpendings").RefersTo("=Budget Details!B3:B11").Add();
+     definedName.Name("AnnualSpendings").RefersTo("=Budget Details!C3:C11").Add();
+   }).Render()
+
+<script>
+
+    function created() {
+        // Removing the unwanted `PercentageChange` named range
+        this.removeDefinedName('PercentageChange', '');
+
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A2:E2');
+        this.numberFormat('$#,##0', 'B3:D12');
+        this.numberFormat('0%', 'E3:E12');
+    }
+
+    function beforeDataBound() {
+        // Adding name dynamically for `last year spending` and `percentage change` ranges.
+        this.addDefinedName({ name: 'LastYearSpendings', refersTo: '=D3:D11' });
+        this.addDefinedName({ name: 'PercentageChange', refersTo: '=E3:E11' });
+    }
+</script>

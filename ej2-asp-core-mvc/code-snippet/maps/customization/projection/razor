@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").ProjectionType(Syncfusion.EJ2.Maps.ProjectionType.Miller).Layers(l =>
+{
+    l.ShapeData(ViewBag.worldMap).Add();
+}).Render()

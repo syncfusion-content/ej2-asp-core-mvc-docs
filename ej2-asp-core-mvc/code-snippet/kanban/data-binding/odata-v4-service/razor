@@ -1,0 +1,15 @@
+  @Html.EJS().Kanban("kanban").KeyField("ContactTitle").AllowDragAndDrop(false).DataSource(dataManger =>
+       { dataManger.Url("https://services.odata.org/v4/northwind/northwind.svc/Suppliers").CrossDomain(true).Adaptor("ODataV4Adaptor");
+       }).Columns(col=> {
+           col.HeaderText("Order Administrator").KeyField("Order Administrator").Add();
+           col.HeaderText("Sales Representative").KeyField("Sales Representative").Add();
+           col.HeaderText("Export Administrator").KeyField("Export Administrator").Add();
+ 
+       }).CardSettings(card =>  {
+           card.ContentField("ContactName").HeaderField("SupplierID");
+       }).DialogOpen("onDialogOpen").Render()
+<script>
+    function onDialogOpen(args) {
+        args.cancel = true;
+    }
+</script>

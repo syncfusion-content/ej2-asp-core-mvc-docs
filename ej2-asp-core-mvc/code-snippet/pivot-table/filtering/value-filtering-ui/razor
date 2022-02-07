@@ -1,0 +1,11 @@
+@Html.EJS().PivotView("PivotView").Height(300).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).AllowValueFilter(true)
+.Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).Render()

@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2.Maps;
+
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.usa">
+            <e-layersettings-shapesettings autofill=true></e-layersettings-shapesettings>
+            <e-layersettings-datalabelsettings visible="true" labelPath="name"></e-layersettings-datalabelsettings>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

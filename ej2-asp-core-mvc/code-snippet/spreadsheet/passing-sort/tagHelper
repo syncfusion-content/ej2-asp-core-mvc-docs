@@ -1,0 +1,39 @@
+<ejs-spreadsheet id="spreadsheet" allowSorting="true" dataBound="dataBound" beforeSort="beforeSort" sortComplete="sortComplete">
+    <e-spreadsheet-sheets>
+        <e-spreadsheet-sheet>
+            <e-spreadsheet-ranges>
+                <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+            </e-spreadsheet-ranges>
+        </e-spreadsheet-sheet>
+    </e-spreadsheet-sheets>
+</ejs-spreadsheet>
+
+<script>
+
+    function dataBound() {
+        var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        var sortDescriptors = [{
+            field: 'A',
+            order: 'Ascending'
+        },
+        {
+            field: 'B',
+            order: 'Ascending'
+        },
+        {
+            field: 'C',
+            order: 'Descending'
+        }];
+        if (spreadsheetObj.activeSheetIndex === 0) {
+            spreadsheetObj.sort({ sortDescriptors: sortDescriptors, containsHeader: true }, 'A1:F15');
+        }
+    }
+
+    function beforeSort(args) {
+        //code here to handle sorting arguments.
+    }
+    function sortComplete(args) {
+        spreadsheet.selectRange(args.range);
+        // code here.
+    }
+</script>

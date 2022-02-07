@@ -1,0 +1,34 @@
+@{var amount = "\"" + "Sum(Amount)" + "\"";}
+@{var sold = "\"" + "Sum(Sold)" + "\"";}
+@{ var totalPrice = amount + "+" + sold;}
+
+<ejs-button id="calculated-field-btn" content="Formatting" isPrimary="true"></ejs-button>
+<ejs-pivotview id="PivotView" height="300" allowCalculatedField="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+        <e-calculatedfieldsettings>
+            <e-field name="Total" formula="@totalPrice"></e-field>
+        </e-calculatedfieldsettings>
+    </e-datasourcesettings>
+</ejs-pivotview>
+
+<script>
+    document.getElementById("calculated-field-btn").addEventListener('click', function () {
+        var pivotObj = document.getElementById("PivotView").ej2_instances[0];
+        pivotObj.numberFormattingModule.showNumberFormattingDialog();
+    });
+</script>

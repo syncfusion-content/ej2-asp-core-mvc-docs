@@ -1,0 +1,21 @@
+<ejs-pivotview id="PivotView" width="100%" height="350" showGroupingBar="true" allowGrouping="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
+        <e-formatsettings>
+            <e-field name="Amount" format="C"></e-field>
+            <e-field name="Product_ID" format="N0"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Product_ID" caption="Product ID"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Products"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Unit Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+        <e-groupsettings>
+            <e-field name="Product_ID" type="Number" rangeInterval=2 startingAt=1004, endingAt=1008></e-field>
+        </e-groupsettings>
+    </e-datasourcesettings>
+</ejs-pivotview>

@@ -1,0 +1,28 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).MultiLevelLabelRender("multiLevelLabelRender").DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ChartSettings(chartSettings => chartSettings.ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column))).Render()
+
+<script>
+    function multiLevelLabelRender(args) {
+        args.alignment = 'Far';
+        args.textStyle = { fontFamily: 'Bold', fontWeight: '400', size: '16px', color: 'red' };
+        if (args.text === ' + United States') {
+            args.text = 'Text Changed';
+            args.alignment = 'Near';
+            args.textStyle = { fontFamily: 'Bold', fontWeight: '800', size: '16px', color: 'Blue' };
+        }
+    }
+</script>

@@ -1,0 +1,61 @@
+@using Syncfusion.EJ2;
+
+    <ejs-circulargauge id="gauge" load="gaugeload">
+        <e-circulargauge-axes>
+            <e-circulargauge-axis startAngle="270" endAngle="90" radius="90%" minimum="0" maximum="100">
+                <e-axis-linestyle width="3" color="#E63B86"></e-axis-linestyle>
+            </e-circulargauge-axis>
+        </e-circulargauge-axes>
+    </ejs-circulargauge>
+
+   <script>
+   var pointerRadialGradient = {
+        radius: '50%',
+        innerPosition: { x: '50%', y: '50%' },
+        outerPosition: { x: '50%', y: '50%' },
+        colorStop: [
+        { color: '#FEF3F9', offset: '0%', opacity: 0.9 },
+        { color: '#E63B86', offset: '60%', opacity: 0.9 }]
+   }
+    window.gaugeload = function (args) {
+        window.gauge = args.gauge;
+        var axis = args.gauge.axes[0];
+        axis.labelStyle.font = {
+            size: "0px",
+        };
+        axis.majorTicks = { height: 0 };
+        axis.minorTicks = { height: 0 };
+        axis.pointers = [{
+            radius: '80%',
+            value: 80,
+            animation: { enable: true, duration: 1000 },
+            pointerWidth: 10,
+            radialGradient: pointerRadialGradient,
+            cap: {
+                radius: 8,
+                color: 'white',
+                border: {
+                    color: '#E63B86',
+                    width: 1
+                }
+            },
+            needleTail: {
+                length: '20%',
+                radialGradient: pointerRadialGradient
+            }
+        }, {
+            radius: '60%', value: 40,
+            animation: { duration: 1000 },
+            pointerWidth: 10,
+            radialGradient: pointerRadialGradient,
+            cap: {
+                radius: 8, color: 'white',
+                border: { color: '#E63B86', width: 1 }
+            },
+            needleTail: {
+                length: '20%',
+                radialGradient: pointerRadialGradient
+            }
+        }]
+    }    
+</script>

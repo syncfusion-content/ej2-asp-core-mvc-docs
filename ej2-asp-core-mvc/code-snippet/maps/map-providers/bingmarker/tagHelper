@@ -1,0 +1,39 @@
+@{
+    var data = new[]
+    {
+            new {latitude= 37.0000, longitude= -120.0000, city= "California" },
+            new {latitude= 40.7127, longitude= -74.0059, city= "New York" },
+            new {latitude= 42.0000, longitude= -93.0000, city= "Iowa" }
+       };
+    var marker = new List<MapsMarker>
+    {
+        new MapsMarker{Visible=true, DataSource=data}
+    };
+
+    }
+
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+<div id="control-section">
+    <ejs-maps id="maps" load="window.onMapLoad">
+        <e-maps-layers>
+            <e-maps-layer LayerType="OSM" markerSettings="marker"></e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>
+
+<script>
+    function onMapLoad(args) {
+        args.maps.layers[0].navigationLineSettings = [
+            {
+                visible: true,
+                latitude: [40.7128, 36.7783],
+                longitude: [-74.0060, -119.4179],
+                color: 'black',
+                angle: 90,
+                width: 2,
+                dashArray: '4'
+            }
+        ];
+    }
+</script>

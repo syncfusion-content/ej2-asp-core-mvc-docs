@@ -1,0 +1,25 @@
+    <ejs-spreadsheet id="spreadsheet" isProtected="true" dataBound="dataBound">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet name="Budget">
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.budgetData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+
+    <script>
+
+      function dataBound() {
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:D1');
+        this.cellFormat({ fontWeight: 'bold'}, 'A11:D11');
+    }
+
+    </script>

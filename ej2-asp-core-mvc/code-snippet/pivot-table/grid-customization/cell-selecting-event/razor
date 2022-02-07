@@ -1,0 +1,35 @@
+<div>
+<div class="column-8">
+    @using Syncfusion.EJ2.PivotView
+
+    @Html.EJS().PivotView("pivotview").Width("100%").Height("400").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>
+        )ViewBag.DataSource).ExpandAll(true).EnableSorting(true)
+        .Rows(rows =>
+        {
+            rows.Name("Country").Add();
+            rows.Name("Products").Add();
+        })
+        .Columns(columns =>
+        {
+            columns.Name("Year").Add();
+            columns.Name("Order_Source").Caption("Order Source").Add();
+        })
+        .Values(values =>
+        {
+            values.Name("Sold").Caption("Units Sold").Add();
+            values.Name("Amount").Caption("Sold Amount").Add();
+        })
+        .FormatSettings(formatsettings =>
+        {
+            formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+        })
+        .Filters(filters =>
+        {
+            filters.Name("Product_Categories").Caption("Product Categories").Add();
+        })).GridSettings(gridSettings => gridSettings.AllowSelection(true).SelectionSettings(selectionSettings => selectionSettings.CellSelectionMode(PivotCellSelectionMode.Box).Type("Multiple").Mode(SelectionMode.Cell))).CellSelecting("cellSelecting").Render()
+</div>
+<script>
+    function cellSelecting(args) {
+        
+    }
+</script>

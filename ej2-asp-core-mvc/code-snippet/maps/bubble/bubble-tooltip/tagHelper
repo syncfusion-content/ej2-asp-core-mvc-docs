@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var data = new[]
+    {
+        new { name= "India", population= "38332521" },
+        new { name= "Australia", population= "383521" },
+        new { name= "Pakistan", population= "3090416" }
+    };
+    var tooltip = new MapsTooltipSettings
+    {
+        Visible = true,
+        ValuePath = "population"
+    };
+}
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData=" ViewBag.world_map" shapeDataPath="name" shapePropertyPath='new[] { "name" }'>
+            <e-layersettings-bubbles>
+                <e-layersettings-bubble visible="true" valuePath="population" dataSource="data"
+                                        minRadius="20" maxRadius="40" tooltipSettings="tooltip"></e-layersettings-bubble>
+            </e-layersettings-bubbles>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

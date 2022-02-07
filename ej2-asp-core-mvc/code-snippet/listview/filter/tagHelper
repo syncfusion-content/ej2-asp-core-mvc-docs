@@ -1,0 +1,41 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists;
+
+    <div id="sample">
+        <input class="e-input" type="text" id="textbox" placeholder="Filter" title="Type in a name">
+        <ejs-listview id="list" dataSource="(IEnumerable<object>)ViewBag.dataSource" sortOrder="Ascending">
+            <e-listview-fieldsettings id="id" text="text"></e-listview-fieldsettings>
+        </ejs-listview>
+    </div>
+
+<style>
+    #list {
+        box-shadow: 0 1px 4px #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #sample {
+        height: 220px;
+        margin: 0 auto;
+        display: block;
+        max-width: 350px;
+    }
+</style>
+<script>
+    document.getElementById("textbox").addEventListener("keyup", onKeyUp);
+    //Here, the list items are filtered using the DataManager instance for ListView
+    function onKeyUp() {
+        var listData  = @(Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.dataSource)));
+        var listObj = (document.getElementById("list")).ej2_instances[0];
+        var value = (document.getElementById("textbox")).value;
+        var data = new ej.data.DataManager(listData).executeLocal(
+          new ej.data.Query().where("text", "startswith", value, true)
+        );
+        if (!value) {
+            listObj.dataSource = listData.slice();
+        } else {
+            listObj.dataSource = data;
+        }
+        listObj.dataBind();
+    }
+</script>

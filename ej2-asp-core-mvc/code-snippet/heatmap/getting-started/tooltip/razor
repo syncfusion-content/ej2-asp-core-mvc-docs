@@ -1,0 +1,12 @@
+@Html.EJS().HeatMap("container").TitleSettings(ts => ts.Text("Hourly Weather Forecast (in Celsius)").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+{
+xAxis.Labels(ViewBag.xLabels);
+}).YAxis(yaxis =>
+{
+    yaxis.Labels(ViewBag.yLabels);
+}).LegendSettings(ls =>ls.Visible(true).Position(Syncfusion.EJ2.HeatMap.LegendPosition.Right).ShowLabel(true).Height("150px")).CellSettings(cs =>cs.ShowLabel(true)).ShowTooltip(true).PaletteSettings(ps => ps.Palette(palette =>
+             {
+                 palette.Color("#C06C84").Value(0).Add();
+                 palette.Color("#6C5B7B").Value(50).Add();
+                 palette.Color("#355C7D").Value(100).Add();
+             }).Type(Syncfusion.EJ2.HeatMap.PaletteType.Gradient)).DataSource(ViewBag.dataSource).Render()

@@ -1,0 +1,44 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowSheetTabs(false).Created("created").CellEdit("cellEdit").BeforeCellSave("beforeCellSave").Sheets(sheet =>
+{
+    sheet.SelectedRange("C7").Name("Movie List").Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+    }).Rows(row =>
+    {
+        row.Index(10).Cells(cell =>
+        {
+            cell.Index(3).Value("Total Amount:").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold }).Add();
+            cell.Formula("=SUM(E2:E10").Add();
+        }).Add();
+    }).Columns(column =>
+    {
+        column.Width(120).Add();
+        column.Width(180).Add();
+        column.Width(100).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    function created() {
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:E1');
+        this.cellFormat({ textAlign: 'center' }, 'A2:A10');
+        this.cellFormat({ textAlign: 'center' }, 'C2:C10');
+        this.numberFormat('$#,##0.00', 'D2:D10');
+        this.numberFormat('$#,##0.00', 'E2:E11');
+    }
+    function cellEdit(args) {
+        // Preventing the editing in 5th(Amount) column.
+        if (args.address.includes('E')) { args.cancel = true; }
+    }
+    function beforeCellSave(args) {
+        // Prevent saving the edited changes in 4th(Rate) column.
+        if (args.address.includes('D')) {
+            args.cancel = true;
+            // Manually removes the editable state without saving the changes. Use `endEdit` method if you want to save the changes.
+            this.closeEdit();
+        }
+    }
+</script>

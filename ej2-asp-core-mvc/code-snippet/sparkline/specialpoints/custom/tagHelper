@@ -1,0 +1,22 @@
+@using Syncfusion.EJ2;
+<div class="spark" align="center">
+    <ejs-sparkline id="sparkline" loaded="loaded" height="150px" width="130px" dataSource="ViewBag.sparkData" xName="xval" yName="yval"  type="@SparklineType.Column" valueType="@Syncfusion.EJ2.Charts.SparklineValueType.Category"
+highPointColor="blue" lowPointColor="orange" startPointColor="green" endPointColor="green" negativePointColor="red">
+	</ejs-sparkline>
+</div>
+<style>
+    .spark {
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 2px;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<script>
+    function loaded(args)
+    { 
+        window.sparkline = args.sparkline;
+        args.sparkline.loaded = null;
+        args.sparkline.refresh();
+    }
+</script>

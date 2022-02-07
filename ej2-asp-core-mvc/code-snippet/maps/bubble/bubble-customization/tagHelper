@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.Maps;
+@{
+    var data = new[]
+       {
+            new { name= "Australia", population= "383521" },
+            new { name= "Pakistan", population= "3090416" },
+            new { name= "Russia", population= "30916" }
+    };
+    var bubble = new List<MapsBubble>
+        {
+            new MapsBubble { Visible=true, DataSource=data, ValuePath="population",
+                           MinRadius=10, MaxRadius=30, Fill="green" ,Opacity=1, AnimationDelay=100, AnimationDuration=1000,
+                           Border = new MapsBorder{
+                               Color="blue", Width=2, Opacity=1
+                           }}
+        };
+}
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.world_map" shapeDataPath="name" shapePropertyPath='new[] { "name" }' bubbleSettings="bubble">
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

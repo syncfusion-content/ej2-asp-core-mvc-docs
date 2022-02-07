@@ -1,0 +1,6 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.TooltipSettings(ts =>ts.ValuePath("name").Visible(true))
+    .ShapeData(ViewBag.worldMap).Add();
+}).Render()

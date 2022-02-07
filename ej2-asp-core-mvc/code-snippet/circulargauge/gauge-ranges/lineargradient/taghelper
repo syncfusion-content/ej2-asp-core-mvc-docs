@@ -1,0 +1,66 @@
+@{
+    var minor = new Syncfusion.EJ2.CircularGauge.CircularGaugeTick
+    {
+
+        Height = 0,
+        Width = 0,
+        Color = "transparent"
+    };
+    var major = new Syncfusion.EJ2.CircularGauge.CircularGaugeTick
+    {
+
+        Height = 0,
+        Width = 0,
+        Color = "transparent"
+    };
+    var border = new Syncfusion.EJ2.CircularGauge.CircularGaugeBorder { Color = "grey", Width = 2 };
+}
+
+<ejs-circulargauge id="range-container" load="gaugeload">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis startAngle="200" endAngle="160" minimum="0" maximum="100" radius="80%" majorTicks="major" minorTicks="minor">
+            <e-axis-linestyle width="0"></e-axis-linestyle>
+            <e-axis-labelstyle position="Inside" useRangeColor="true">
+            </e-axis-labelstyle>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>
+
+<script>
+    var rangeLinearGradient = {
+        startValue: '0%',
+        endValue: '100%',
+        colorStop: [
+            { color: '#9E40DC', offset: '0%', opacity: 0.9 },
+            { color: '#E63B86', offset: '70%', opacity: 0.9 }
+        ]
+    }
+    window.gaugeload = function (args) {
+        var axis = args.gauge.axes[0];
+        axis.labelStyle.font = {
+            fontFamily: "Roboto",
+            size: "0px",
+            fontWeight: "Regular"
+        };
+        axis.pointers = [{
+            roundedCornerRadius: 20,
+            cap: {
+                radius: 0
+            },
+            pointerWidth: 0
+
+        }];
+        axis.ranges = [
+            {
+                start: 0,
+                end: 100,
+                radius: '90%',
+                startWidth: 30,
+                endWidth: 30,
+                color: '#E0E0E0',
+                roundedCornerRadius: 20,
+                linearGradient: rangeLinearGradient
+            }
+        ];
+    }
+</script>

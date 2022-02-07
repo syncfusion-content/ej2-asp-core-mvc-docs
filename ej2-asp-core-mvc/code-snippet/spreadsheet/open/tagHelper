@@ -1,0 +1,11 @@
+<ejs-spreadsheet id="spreadsheet" openUrl="Open" allowOpen = "true" beforeOpen="beforeOpen">
+
+</ejs-spreadsheet>
+
+<script>
+
+    function beforeOpen(args) {
+        // your code snippets here
+    }
+
+</script>

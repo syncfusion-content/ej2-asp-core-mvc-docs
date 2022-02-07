@@ -1,0 +1,32 @@
+<ejs-pivotview id="PivotView" height="300" beginDrillThrough="beginDrillThrough" showTooltip="false">
+    <e-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-editSettings>
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>
+
+<script>
+    function beginDrillThrough(args) {
+        if (args.gridObj) {
+            var gridObj = args.gridObj;
+            gridObj.allowGrouping = true;
+            gridObj.allowSorting = true;
+            gridObj.allowFiltering = true;
+            gridObj.filterSettings = { type: 'CheckBox' };
+        }
+    }
+</script>

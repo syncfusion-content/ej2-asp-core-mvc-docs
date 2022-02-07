@@ -1,0 +1,8 @@
+  @using Syncfusion.EJ2;
+  <ejs-maps id="maps" height="600" width="400">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.worldmap" shapeDataPath="name" shapePropertyPath='new[] { "name" }' dataSource="ViewBag.populationData">
+                <e-layersettings-shapesettings fill="#E5E5E5" colorValuePath="color"></e-layersettings-shapesettings>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>

@@ -1,0 +1,55 @@
+    <ejs-querybuilder id="querybuilder" width="100%" rule="ViewBag.rule">
+            <e-querybuilder-columns>
+                <e-querybuilder-column field="TaskID" label="Task ID" type="number"></e-querybuilder-column>
+                <e-querybuilder-column field="Name" label="Name" type="string"></e-querybuilder-column>
+                <e-querybuilder-column field="Category" label="Category" type="string"></e-querybuilder-column>
+                <e-querybuilder-column field="SerialNo" label="Serial No" type="string"></e-querybuilder-column>
+                <e-querybuilder-column field="InvoiceNo" label="Invoice No" type="string"></e-querybuilder-column>
+                <e-querybuilder-column field="Status" label="Status" type="string"></e-querybuilder-column>
+            </e-querybuilder-columns>
+        </ejs-querybuilder>
+
+<ejs-button id="getpredicate" cssClass='e-primary' content="Get Predicate"></ejs-button>
+
+<script>
+  document.getElementById('getpredicate').onclick = function () {
+        var querybuilderObj = ej.base.getInstance(document.getElementById("querybuilder"), ej.querybuilder.QueryBuilder);
+        var template = '<tr><td>${TaskID}</td><td>${Name}</td><td>${Category}</td></tr>';
+        var compileFunction = ej.base.compile(template);
+        var table = (document.getElementById('datatable'));
+        table.className = 'e-table';
+        var predicate = querybuilderObj.getPredicate(querybuilderObj.getValidRules(querybuilderObj.rule));
+        dataManagerQuery = new ej.data.Query().select(['TaskID', 'Name', 'Category', 'SerialNo', 'InvoiceNo', 'Status']).where(predicate);
+        new ej.data.DataManager(@Html.Raw(JsonConvert.SerializeObject(@ViewBag.DataSource)))
+                .executeQuery(dataManagerQuery)
+                .then(function (e) {
+                    e.result.forEach(function (data) {
+                        table.appendChild(compileFunction(data)[0]);
+                    });
+                });
+    }
+ </script>
+ <style type="text/css">
+    .e-hide {
+        display: none;
+    }
+</style>
+ <body>
+    <div id="container">
+        <div id="Grid"></div>
+        <table id="datatable" class="e-table e-hide">
+            <thead>
+               <tr><th>Task ID</th><th>Category</th><th>Name</th></tr>
+            </thead>
+            <tbody>
+            </tbody>    
+        </table>        
+    </div>
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+    ele.style.visibility = "visible";
+ }   
+        </script>
+</body>

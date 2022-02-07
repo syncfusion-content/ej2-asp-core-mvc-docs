@@ -1,0 +1,131 @@
+<ejs-spreadsheet id="spreadsheet"  created="created" showFormulaBar="false">
+<e-spreadsheet-sheets>
+    <e-spreadsheet-sheet name="PriceDetails">
+        <e-spreadsheet-rows>
+            <e-spreadsheet-row>
+                <e-spreadsheet-cells>
+                    <e-spreadsheet-cell value="Seller Name">
+                        <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Customer Id">
+                        <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Customer Name">
+                        <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Product Name">
+                        <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Product Price">
+                        <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Sales Date">
+                        <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Billing Time">
+                        <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Total Price">
+                        <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                    </e-spreadsheet-cell
+                </e-spreadsheet-cells>
+            </e-spreadsheet-row>
+            <e-spreadsheet-row>
+                <e-spreadsheet-cells>
+                    <e-spreadsheet-cell value="John"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="1">
+                        <e-cell-validation type="WholeNumber" operator="NotEqualTo" value1="1"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Nash"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Digger">
+                        <e-cell-validation type="List" value1="Digger, Digger, Cherrypicker"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="50000">
+                        <e-cell-validation type="List" value1="50000,50000,45000"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="04/11/2019"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="11:34:32 AM"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="1,45,000.00"></e-spreadsheet-cell
+                </e-spreadsheet-cells>
+            </e-spreadsheet-row>
+            <e-spreadsheet-row>
+                <e-spreadsheet-cells>
+                    <e-spreadsheet-cell value="Mike"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="2">
+                        <e-cell-validation type="WholeNumber" operator="NotEqualTo" value1="1"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Jim"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Cherrypicker">
+                        <e-cell-validation type="List" value1="Cherrypicker, JCB, Wheelbarrow"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="45000">
+                        <e-cell-validation type="List" value1="45000,90000,40"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="04/11/2019"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="11:34:32 AM"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="1,45,000.00"></e-spreadsheet-cell
+                </e-spreadsheet-cells>
+            </e-spreadsheet-row>
+            <e-spreadsheet-row>
+                <e-spreadsheet-cells>
+                    <e-spreadsheet-cell value="shane"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="3">
+                        <e-cell-validation type="WholeNumber" operator="NotEqualTo" value1="1"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Sean"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Kango">
+                        <e-cell-validation type="List" value1="Kango, Ropes"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="450">
+                        <e-cell-validation type="List" value1="450, 95"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="06/25/2019"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="01:30:11 PM"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="545.00"></e-spreadsheet-cell
+                </e-spreadsheet-cells>
+            </e-spreadsheet-row>
+            <e-spreadsheet-row>
+                <e-spreadsheet-cells>
+                    <e-spreadsheet-cell value="John"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="1">
+                        <e-cell-validation type="WholeNumber" operator="NotEqualTo" value1="1"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="Nash"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="JCB">
+                        <e-cell-validation type="List" value1="JCB, Ropes, scaffolding"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="90000">
+                        <e-cell-validation type="List" value1="90000, 95, 10000"></e-cell-validation>
+                    </e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="09/22/2019"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="12:30:02 PM"></e-spreadsheet-cell>
+                    <e-spreadsheet-cell value="1,00,095.00"></e-spreadsheet-cell
+                </e-spreadsheet-cells>
+            </e-spreadsheet-row>
+           <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="88"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="88"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="106"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="98"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="88"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="86"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="107"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="81"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+        </e-spreadsheet-rows>
+    </e-spreadsheet-sheet>
+</e-spreadsheet-sheets>
+</ejs-spreadsheet>
+
+<script>
+    function created() {
+        //Add Data Validation to range.
+        this.addDataValidation({ type: 'TextLength', Operator: 'LessThanOrEqualTo', Value1: '4' }, 'A2:A5');
+        this.addDataValidation({ type: 'WholeNumber', Operator: 'NotEqualTo', Value1: '1' }, 'B2:B5');
+        this.addDataValidation({ type: 'Date', Operator: 'NotEqualTo', Value1: '04/11/2019' }, 'F2:F5');
+        this.addDataValidation({ type: 'Time', Operator: 'Between', Value1: '10:00:00 AM', value2: '11:00:00 AM' }, 'G2:G5');
+        this.addDataValidation({ type: 'Decimal', Operator: 'LessThan', Value1: '100000.00' }, 'H2:H5');
+        //Highlight Invalid Data.
+        this.addInvalidHighlight('A1:H5');
+    }
+</script>

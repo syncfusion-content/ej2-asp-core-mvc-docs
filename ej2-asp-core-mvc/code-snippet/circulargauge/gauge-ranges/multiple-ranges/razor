@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("circular2").Axes(axes =>
+    axes.Minimum(0).Maximum(100).MajorTicks(mt =>mt.UseRangeColor(true)).
+    MinorTicks(minor=> minor.UseRangeColor(true))
+    .LabelStyle(labels =>labels.UseRangeColor(true))
+    .Ranges(range => {
+        range.Start(0).End(25).Radius("108%").Add();
+        range.Start(25).End(50).Radius("70%").Add();
+        range.Start(50).End(75).Radius("70%").Add();
+        range.Start(75).End(100).Radius("108%").Add();
+    })
+.Add()).Render()

@@ -1,0 +1,50 @@
+    <button id="customBtn" class="e-btn"> Unlock cells</button>
+    <ejs-spreadsheet id="spreadsheet" dataBound="dataBound">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet isProtected="true" name="Budget">
+                <e-spreadsheet-protect-settings selectCells="true"></e-spreadsheet-protect-settings>
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.budgetData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+            <e-spreadsheet-sheet name="Salary">
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.salaryData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+<ejs-dialog id="defaultDialog" header="Spreadsheet" target="#spreadsheet" content="'A1:F3' range of cells has been unlocked." showCloseIcon="true" isModal="true" visible="false" width="500px" buttons="ViewBag.DefaultButtons"></ejs-dialog>
+ 
+
+    <script>
+
+        document.getElementById("customBtn").addEventListener('click', showAlert);
+        function dataBound() {
+            this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:D1');
+            this.cellFormat({ fontWeight: 'bold' }, 'A11:D11');
+        }
+        function lockCells() {
+            var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+            var dialogObj = ej.base.getComponent(document.getElementById('defaultDialog'), 'dialog');
+            spreadsheetObj.lockCells('A1:F3', false);
+            dialogObj.hide();
+        }
+        function showAlert() {
+            var dialogObj = ej.base.getComponent(document.getElementById('defaultDialog'), 'dialog');
+            dialogObj.show();
+        }
+    </script>

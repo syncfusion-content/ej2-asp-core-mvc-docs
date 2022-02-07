@@ -1,0 +1,23 @@
+<ejs-spreadsheet id="spreadsheet" created="createHandler">
+    <e-spreadsheet-sheets>
+        <e-spreadsheet-sheet>
+            <e-spreadsheet-ranges>
+                <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+            </e-spreadsheet-ranges>
+            <e-spreadsheet-columns>
+                <e-spreadsheet-column width="130"></e-spreadsheet-column>
+                <e-spreadsheet-column width="92"></e-spreadsheet-column>
+                <e-spreadsheet-column width="96"></e-spreadsheet-column>
+            </e-spreadsheet-columns>
+        </e-spreadsheet-sheet>
+    </e-spreadsheet-sheets>
+</ejs-spreadsheet>
+
+<script>
+    function createHandler() {
+        //Applies format to specified range
+        this.cellFormat({ fontWeight: 'bold' }, 'A1:D1');
+        var rowCount = this.getActiveSheet().rowCount;
+        this.selectRange(ej.spreadsheet.getRangeAddress([0, 2, rowCount, 2]));
+    }
+</script>

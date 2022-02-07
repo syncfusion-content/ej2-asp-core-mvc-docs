@@ -1,0 +1,30 @@
+@Html.EJS().QueryBuilder("querybuilder").Width("72%").Columns(col =>
+   {
+       col.Field("EmployeeID").Label("Employee ID").Type("number").Add();
+       col.Field("FirstName").Label("First Name").Type("string").Add();
+       col.Field("TitleOfCourtesy").Label("Title Of Courtesy").Type("boolean").Values(new List<string> { "Mr.", "Mrs." }).Add();
+       col.Field("Title").Label("Title").Type("string").Add();
+       col.Field("HireDate").Label("Hire Date").Type("date").Format("dd/MM/yyyy").Add();
+       col.Field("Country").Label("Country").Type("string").Add();
+       col.Field("City").Label("City").Type("string").Add();
+   }).Render()
+    
+@Html.EJS().Dialog("defaultdialog").Target(".e-query-builder").Width("50%").Header("Query builder").Visible(false).ShowCloseIcon(true).Render()
+
+@Html.EJS().Button("getsql").CssClass("e-primary").Content("Get Sql").Render()
+@Html.EJS().Button("getrule").CssClass("e-primary").Content("Get Rule").Render()
+
+<script>
+ document.getElementById('getsql').onclick = function () {
+        var querybuilderObj = ej.base.getInstance(document.getElementById("querybuilder"), ej.querybuilder.QueryBuilder);
+        var dialogObj = ej.base.getInstance(document.getElementById("defaultdialog"), ej.popups.Dialog);
+        dialogObj.content = querybuilderObj.getSqlFromRules(querybuilderObj.getRules());
+        dialogObj.show();
+ }
+ document.getElementById('getrule').onclick = function () {
+        var querybuilderObj = ej.base.getInstance(document.getElementById("querybuilder"), ej.querybuilder.QueryBuilder);
+        var dialogObj = ej.base.getInstance(document.getElementById("defaultdialog"), ej.popups.Dialog);
+        dialogObj.content = '<pre>' + JSON.stringify(querybuilderObj.getValidRules(querybuilderObj.rule), null, 4) + '</pre>';
+        dialogObj.show();
+    }
+</script>

@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+@{
+    var shapesettings = new Syncfusion.EJ2.Maps.MapsShapeSettings
+    {
+        Autofill = true,
+        Palette = new string[] { "#33CCFF", "#FF0000", "#800000", "#FFFF00", "#808000" },
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Width = 2,
+            Color = "green",
+            Opacity = 1
+        },
+        DashArray = "1",
+        Opacity = 0.9
+    };
+
+}
+
+@Html.EJS().Maps("maps").Layers(l =>
+ {
+     l.ShapeSettings(shapesettings)
+     .ShapeData(ViewBag.worldMap).Add();
+ }).Render()

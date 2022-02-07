@@ -1,0 +1,18 @@
+<div class="control-section">
+        <!-- ListView element -->
+        <ejs-listview enable="true" id="remotelist" headerTitle="Products" showHeader="true" query="new ej.data.Query().from('Products').select('ProductID,ProductName').take(10)">
+            <e-data-manager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" crossDomain="true">
+            </e-data-manager>
+            <e-listview-fieldsettings id="ProductID" text="ProductName">
+            </e-listview-fieldsettings>
+        </ejs-listview>
+    </div>
+
+<style>
+    #remotelist {
+        max-width: 500px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>

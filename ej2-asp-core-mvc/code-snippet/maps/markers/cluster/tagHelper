@@ -1,0 +1,38 @@
+@using Syncfusion.EJ2.Maps;
+@{
+    var cluster = new MapsMarkerClusterSettings
+    {
+        AllowClustering = true,
+        AllowClusterExpand = true,
+        Height = 40,
+        Width = 40,
+        LabelStyle = new MapsFont
+        {
+            Color = "White"
+        }
+    };
+    var data = new[]
+{
+        new { latitude= 49.95121990866204, longitude= 18.468749999999998, name="Europe" },
+        new { latitude= 49.95121990866204, longitude= 18.468749999999998, name="Europe" },
+        new { latitude= 49.95121990866204, longitude= 18.468749999999998, name="Europe" },
+        new { latitude= 49.95121990866204, longitude= 18.468749999999998, name="Europe" },
+        new { latitude= 49.95121990866204, longitude= 18.468749999999998, name="Europe" },
+        new { latitude= 49.95121990866204, longitude= 18.468749999999998, name="Europe" },
+        new { latitude= 49.95121990866204, longitude= 18.468749999999998, name="Europe" },
+        new { latitude= 59.88893689676585, longitude= -109.3359375, name="North America" },
+        new { latitude= -6.64607562172573, longitude= -55.54687499999999, name="South America"}
+    };
+}
+<div class="control-section">
+    <ejs-maps id="maps">
+        <e-maps-zoomsettings enable="true" mouseWheelZoom="true"></e-maps-zoomsettings>
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.shapeData" markerClusterSettings="cluster">
+                <e-layersettings-markers>
+                    <e-layersettings-marker visible="true" dataSource="data"></e-layersettings-marker>
+                </e-layersettings-markers>
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

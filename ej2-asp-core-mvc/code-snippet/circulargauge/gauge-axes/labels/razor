@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.CircularGauge;
+
+@Html.EJS().CircularGauge("circular2").Axes(axes => axes
+.LabelStyle(ls => ls.Font(new CircularGaugeFont {Color="red", Size="20px", FontWeight="Bold" })).Add()).Render()

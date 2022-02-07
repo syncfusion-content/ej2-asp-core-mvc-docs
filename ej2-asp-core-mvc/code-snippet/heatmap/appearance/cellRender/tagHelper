@@ -1,0 +1,14 @@
+<ejs-heatmap id='container' dataSource="ViewBag.dataSource" cellRender="window.onHeatmapCellRender">
+  <e-heatmap-titlesettings text="Sales Revenue per Employee (in 1000 US$)" textStyle="ViewBag.textStyle">
+  </e-heatmap-titlesettings>
+  <e-heatmap-xaxis labels="ViewBag.xLabels">
+  </e-heatmap-xaxis>
+  <e-heatmap-yaxis labels="ViewBag.yLabels">
+  </e-heatmap-yaxis>
+</ejs-heatmap>
+
+<script>
+  window.onHeatmapCellRender = function (args) {
+      args.displayText = (args.value) + '$';
+  };
+</script>

@@ -1,0 +1,1 @@
+<ejs-barcodegenerator id="container" width="200px" height="150px" type="Code32" value="01234567" mode="SVG"></ejs-barcodegenerator>

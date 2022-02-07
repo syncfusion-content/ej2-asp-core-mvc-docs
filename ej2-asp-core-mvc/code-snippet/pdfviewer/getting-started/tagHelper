@@ -1,0 +1,1 @@
+<ejs-pdfviewer id="container" style="height:600px" serviceUrl="/api/PdfViewer"></ejs-pdfviewer>

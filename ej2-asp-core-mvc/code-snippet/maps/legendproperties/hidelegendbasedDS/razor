@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+@Html.EJS().Maps("maps").LegendSettings(legend => legend.Visible(true).ShowLegendPath("visibility")).Layers(l =>
+{
+    l.ShapeSettings(ss => ss.ColorValuePath("color")).ShapeData(ViewBag.worldMap)
+    .ShapeDataPath("continent").ShapePropertyPath("continent")
+    .DataSource(ViewBag.populationDensity).Add();
+}).Render()
+

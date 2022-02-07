@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var data = new[]
+        {
+            new { name= "India", population= "38332521" },
+            new { name= "Australia", population= "19651127" },
+            new { name= "Pakistan", population= "3090416" }
+        };
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new  MapsColorMapping{ Color = "#C3E6ED",Value= "38332521"  },
+        new MapsColorMapping { Color= "#F1931B", Value = "19651127" },
+        new MapsColorMapping { Color= "blue", Value = "3090416" }
+    };
+}
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.world_map" shapeDataPath="name" shapePropertyPath='new[] { "name" }'>
+            <e-layersettings-bubbles>
+                <e-layersettings-bubble visible="true" minRadius="5" maxRadius="20" dataSource="data" valuePath="population" 
+                                        colorValuePath="population" colorMapping="colormapping"></e-layersettings-bubble>
+            </e-layersettings-bubbles>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").ZoomSettings(zoom=>zoom.Enable(true)).Layers(l=> { l.AnimationDuration(500).ShapeData(ViewBag.worldMap).Add();
+}).Render()

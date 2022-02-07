@@ -1,0 +1,33 @@
+@Html.EJS().Spreadsheet("spreadsheet").DataBound("dataBound").Sheets(sheet =>
+{
+    sheet.Name("Budget").IsProtected(true).ProtectSettings(new SpreadsheetProtectSettings { SelectCells=false }).Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.budgetData).StartCell("A1").Add();
+    }).Columns(column =>
+    {
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+    }).Add();
+    sheet.Name("Salary").Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.salaryData).StartCell("A1").Add();
+    }).Columns(column =>
+    {
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    function dataBound() {
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:D1');
+        this.cellFormat({ fontWeight: 'bold'}, 'A11:D11');
+        spreadsheet.protectSheet(1, { selectCells: false}, "syncfusion"); // protect sheet with password
+    }
+
+</script>

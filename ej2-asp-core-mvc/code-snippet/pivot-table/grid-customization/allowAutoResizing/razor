@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FilterSettings(filtersettings =>
+{
+    filtersettings.Name("Year").Type(Syncfusion.EJ2.PivotView.FilterType.Exclude).Items(ViewBag.filterMembers).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add();
+})).GridSettings( new PivotViewGridSettings { AllowAutoResizing=true }).Render()

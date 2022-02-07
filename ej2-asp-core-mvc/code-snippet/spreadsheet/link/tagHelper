@@ -1,0 +1,172 @@
+<ejs-spreadsheet id="spreadsheet" beforeHyperlinkClick="beforeHyperlinkClick">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet name="PriceDetails" selectedRange="D13">
+                <e-spreadsheet-rows>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Item Name">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="Quantity">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="Price">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="Amount">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="Stock Detail">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="Website">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Casual Shoes">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="10">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="$20">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="$200">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="OUT OF STOCK">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="Amazon" hyperlink="www.amazon.com">
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Sports Shoes">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="20">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="$30">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="$300">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="IN STOCK" hyperlink="Stock!A3:B3">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="Overstack" hyperlink="www.overstock.com">
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Formal Shoes">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="20">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="$15">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="$300">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="IN STOCK" hyperlink="Stock!A2:B2">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="Aliexpress" hyperlink="www.aliexpress.com">
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Sandals & Floaters">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="15">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="$25">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="$300">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="OUT OF STOCK">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="Alibaba" hyperlink="www.alibaba.com">
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Flip-Flops & Slippers">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="30">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="$10">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="$300">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="IN STOCK" hyperlink="Stock!A4:B4">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="Taobao" hyperlink="www.taobao.com">
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                </e-spreadsheet-rows>
+            </e-spreadsheet-sheet>
+            <e-spreadsheet-sheet name="Stock" selectedRange="D13">
+                <e-spreadsheet-rows>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Item Name">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="Available Count">
+                                <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Casual Shoes">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="10">
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Sports Shoes">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="20">
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Formal Shoes">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="20">
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Sandals & Floaters">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="15">
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                    <e-spreadsheet-row>
+                        <e-spreadsheet-cells>
+                            <e-spreadsheet-cell value="Flip-Flops & Slippers">
+                            </e-spreadsheet-cell>
+                            <e-spreadsheet-cell value="30">
+                            </e-spreadsheet-cell>
+                        </e-spreadsheet-cells>
+                    </e-spreadsheet-row>
+                </e-spreadsheet-rows>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+    <script>
+
+        function beforeHyperlinkClick(args) {
+            args.target = '_self'; //change target attribute
+        }
+
+    </script>

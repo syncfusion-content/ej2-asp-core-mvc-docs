@@ -1,0 +1,11 @@
+using Syncfusion.EJ2.CircularGauge;
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("circular").Axes(axes => axes.Minimum(0).Maximum(12).StartAngle(0).EndAngle(360)
+.MajorTicks(majorticks => majorticks.Interval(1)
+                                    .Position(Position.Inside).Height(10))
+.MinorTicks(minorticks =>minorticks.Interval(0.2)
+                                   .Position(Position.Inside).Height(5))
+.LabelStyle(labels => labels.Position(Position.Inside)
+                              .HiddenLabel(HiddenLabel.First)).Add()).Render()
+

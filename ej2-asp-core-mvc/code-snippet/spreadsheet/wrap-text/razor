@@ -1,0 +1,51 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowFormulaBar(false).Created("created").Sheets(sheet =>
+{
+    sheet.Name("Movie List").Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+    }).Rows(row =>
+    {
+        row.Height(30).Add();
+        row.Cells(cell =>
+        {
+            cell.Index(7).Wrap(true).Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Index(7).Wrap(true).Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Index(7).Wrap(true).Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Index(7).Wrap(true).Add();
+        }).Add();
+    }).Columns(column =>
+    {
+        column.Width(100).Index
+        (1).Add();
+        column.Width(140).Add();
+        column.Width(90).Add();
+        column.Width(150).Add();
+        column.Width(120).Add();
+        column.Width(90).Add();
+        column.Width(180).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    function created() {
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.cellFormat({ verticalAlign: 'middle' }, 'A1:H5');
+        this.cellFormat({ textAlign: 'center' }, 'A2:B5');
+        this.cellFormat({ textAlign: 'center' }, 'D2:D5');
+        // To wrap the cells from E2 to E5 range
+        this.wrap('E2:E5');
+        // To unwrap the H3 cell
+        this.wrap('H3', false);
+    }
+
+</script>

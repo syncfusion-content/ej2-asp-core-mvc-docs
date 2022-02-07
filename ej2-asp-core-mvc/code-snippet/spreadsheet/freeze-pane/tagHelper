@@ -1,0 +1,82 @@
+<ejs-spreadsheet id="spreadsheet" created="createdHandler">
+            <e-spreadsheet-sheets>
+                <e-spreadsheet-sheet name="Gross Salary" frozenRows="2" frozenColumns="2" selectedRange="C1">
+                    <e-spreadsheet-ranges>
+                        <e-spreadsheet-range dataSource="ViewBag.DefaultData" startCell="A2"></e-spreadsheet-range>
+                    </e-spreadsheet-ranges>
+                    <e-spreadsheet-rows>
+                        <e-spreadsheet-row>
+                            <e-spreadsheet-cells>
+                                <e-spreadsheet-cell index=1 value="Period">
+                                    <e-spreadsheet-cellstyle fontSize="12pt" fontWeight="Bold" textAlign="Center" verticalAlign="Middle"></e-spreadsheet-cellstyle>
+                                </e-spreadsheet-cell>
+                                <e-spreadsheet-cell index=3 value="Total Gross Salary">
+                                    <e-spreadsheet-cellstyle fontSize="12pt" fontWeight="Bold" textAlign="Center" verticalAlign="Middle"></e-spreadsheet-cellstyle>
+                                </e-spreadsheet-cell>
+                            </e-spreadsheet-cells>
+                        </e-spreadsheet-row>
+                        <e-spreadsheet-row>
+                            <e-spreadsheet-cells>
+                                <e-spreadsheet-cell index=2 value="Basic Salary"></e-spreadsheet-cell>
+                                <e-spreadsheet-cell value="Revised Basic Salary"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="DA"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="Revised DA"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="HRA"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="Revised HRA"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="Conveyance Allowance"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="Revised Conveyance Allowance"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="Medical Expenses"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="Revised Medical Expenses"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="Special Allowance"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="Revised Spcial Allowance"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="Total Gross Salary"></e-spreadsheet-cell>;
+                                <e-spreadsheet-cell value="Revised Total Gross Salary"></e-spreadsheet-cell>;
+                            </e-spreadsheet-cells>
+                        </e-spreadsheet-row>
+                        <e-spreadsheet-row index=26>
+                            <e-spreadsheet-cells>
+                                <e-spreadsheet-cell index=13 value="Total Amount">
+                                    <e-spreadsheet-cellstyle fontSize="12pt" fontWeight="Bold" textAlign="Center" verticalAlign="Middle"></e-spreadsheet-cellstyle>
+                                </e-spreadsheet-cell>
+                                <e-spreadsheet-cell formula="=SUM(O4:O26)">
+                                    <e-spreadsheet-cellstyle fontSize="12pt" fontWeight="Bold" textAlign="Center" verticalAlign="Middle"></e-spreadsheet-cellstyle>
+                                </e-spreadsheet-cell>
+                                <e-spreadsheet-cell formula="=SUM(P4:P26)">
+                                    <e-spreadsheet-cellstyle fontSize="12pt" fontWeight="Bold" textAlign="Center" verticalAlign="Middle"></e-spreadsheet-cellstyle>
+                                </e-spreadsheet-cell>
+                            </e-spreadsheet-cells>
+                        </e-spreadsheet-row>
+                    </e-spreadsheet-rows>
+                    <e-spreadsheet-columns>
+                        <e-spreadsheet-column width="80"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="80"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="80"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                        <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    </e-spreadsheet-columns>
+                </e-spreadsheet-sheet>
+            </e-spreadsheet-sheets>
+        </ejs-spreadsheet>
+
+<script>
+    function createdHandler() {
+        this.wrap("C2:P2");
+        this.merge('A1:B1');
+        this.merge('C1:P1');
+        this.cellFormat({ backgroundColor: '#4e4ee6', color: '#FFFFF4', fontSize: '12pt', fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }, 'A1:P2');
+        this.cellFormat({ backgroundColor: '#4e4ee6', color: '#FFFFF4' }, 'A3:B26');
+        this.numberFormat('$#,##0.00', 'C2:P26');
+        this.numberFormat('$#,##0.00', 'O27:P27');
+    }
+</script>

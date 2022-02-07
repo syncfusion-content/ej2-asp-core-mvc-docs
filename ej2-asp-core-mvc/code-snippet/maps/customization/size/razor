@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Height("500px").Width("300px").Layers(l =>
+{
+    l.ShapeData(ViewBag.worldMap).Add();
+}).Render()

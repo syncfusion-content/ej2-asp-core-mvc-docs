@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var data = new[]
+        {
+            new { Country= "China", Membership= "Permanent" },
+            new { Country= "France", Membership= "Permanent" },
+            new { Country= "Russia", Membership= "Permanent" },
+            new { Country= "Kazakhstan", Membership= "Non-Permanent" },
+            new { Country= "Poland", Membership= "Non-Permanent" },
+            new { Country= "Sweden", Membership= "Non-Permanent" },
+        };
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new MapsColorMapping{ Color = "#D84444",Value= "Permanent"  },
+        new MapsColorMapping { Color= "#316DB5", Value = "Non-Permanent" },
+    };
+}
+
+@Html.EJS().Maps("maps").LegendSettings(legend => legend.Visible(true).Position(Syncfusion.EJ2.Maps.LegendPosition.Top).Alignment(Syncfusion.EJ2.Maps.Alignment.Near)).Layers(l =>
+{
+    l.ShapeSettings(ss => ss.ColorValuePath("Membership").ColorMapping(colormapping)).ShapeData(ViewBag.worldMap)
+    .ShapeDataPath("Country").ShapePropertyPath("name")
+    .DataSource(data).Add();
+}).Render()

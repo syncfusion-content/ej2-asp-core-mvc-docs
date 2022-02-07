@@ -1,0 +1,72 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("pivotview").Width("100%").Height("300").TooltipTemplate("#Template").ShowToolbar(true).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true)
+.FormatSettings(formatsettings => { formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add(); })
+.Rows(rows => { rows.Name("Country").Add(); rows.Name("Products").Add(); })
+.Columns(columns => { columns.Name("Year").Add(); columns.Name("Order_Source").Caption("Order Source").Add(); })
+.Values(values =>
+{
+    values.Name("In_Stock").Caption("In Stock").Add(); values.Name("Sold").Caption("Units Sold").Add();
+    values.Name("Amount").Caption("Sold Amount").Add();
+})
+.Filters(filters =>
+{
+    filters.Name("Product_Categories").Caption("Product Categories").Add();
+})).GridSettings(new PivotViewGridSettings { ColumnWidth = 140 }).DisplayOption(new PivotViewDisplayOption { View = View.Both }).Toolbar(new List<string>
+() { "Grid", "Chart" }).ChartSettings(chartSettings => chartSettings.ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column)).Tooltip(tooltip => tooltip.Template("<span class='wrap'>${aggregateType} of ${valueField}: ${value}</span>"))).Render()
+<style>
+    #pivotview {
+        width: 100%;
+        height: 100%;
+    }
+
+    .e-tool-expand::before {
+        content: '\e702';
+    }
+    .wrap {
+        border: 3px solid #27b1f0;
+        background-color: #4d4d4d;
+        width: auto;
+        color: #FFFFFF;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .pivotTooltipValue {
+        font-style: italic;
+    }
+
+    .pivotTooltipHeader {
+        color: aqua;
+        font-weight: bold;
+        width: 100px;
+    }
+</style>
+<script id="Template" type="text/x-template">
+        <div class='wrap'>
+                    <div>
+                        <span class='pivotTooltipHeader'>Row Headers :</span > 
+                        <span class='pivotTooltipValue'>${columnHeaders}${rowHeaders}</span >
+                    </div>
+                    <div>
+                        <span class='pivotTooltipHeader'>Row Fields : </span>
+                        <span class='pivotTooltipValue'>${rowFields}</span>
+                    </div>
+                    <div>
+                        <span class='pivotTooltipHeader'>Column Headers :</span >
+                        <span class='pivotTooltipValue'>${columnHeaders}</span>
+                    </div>
+                    <div>
+                        <span class='pivotTooltipHeader'>Column Fields :</span> 
+                        <span class='pivotTooltipValue'>${columnFields}</span>
+                    </div>
+                    <div>
+                        <span class='pivotTooltipHeader'>Value Field :</span> 
+                        <span class='pivotTooltipValue'>${valueField}</span>
+                    </div>
+                    <div>
+                        <span class='pivotTooltipHeader'>Value : </span>
+                        <span class='pivotTooltipValue'>${value}</span>
+                    </div>
+        </div>
+</script>

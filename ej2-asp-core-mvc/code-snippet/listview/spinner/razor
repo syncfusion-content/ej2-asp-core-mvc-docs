@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists;
+<!-- ListView element -->
+@Html.EJS().ListView("element").DataSource(dataManger =>
+{dataManger.Url("http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/").CrossDomain(true);
+}).Query("new ej.data.Query().from('Products').select('ProductID,ProductName').take(10)").ActionBegin("onBegin").Fields(new ListViewFieldSettings { Id = "ProductID", Text = "ProductName" }).ShowHeader(true).HeaderTitle("Product Name").Width("300").ActionComplete("oncomplete").Render()
+
+<style>
+    #element {
+        display: block;
+        max-width: 350px;
+        min-height: 200px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>
+<script>
+    function oncomplete() {
+        document.getElementById('spinner').style.display = "none";
+    }
+    function onBegin() {
+        var ele = document.createElement('div');
+        ele.id = 'spinner';
+        document.getElementById('element').appendChild(ele);
+        ej.popups.createSpinner({
+            target: document.getElementById('spinner')
+        });
+        ej.popups.showSpinner(document.getElementById('spinner'));
+    }
+</script>

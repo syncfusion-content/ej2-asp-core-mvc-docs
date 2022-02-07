@@ -1,0 +1,13 @@
+@{
+    var Xminimum = new DateTime(2007, 1, 1);
+}
+
+<ejs-heatmap id='container' dataSource="ViewBag.dataSource">
+ <e-heatmap-titlesettings text="Monthly Flight Traffic at JFK Airport" textStyle=" ViewBag.textStyle">
+ </e-heatmap-titlesettings>
+ <e-heatmap-xaxis minimum="Xminimum" intervalType="Years" valueType="DateTime" labelFormat="yyyy">
+ </e-heatmap-xaxis>
+ <e-heatmap-yaxis valueType="Numeric" labelFormat="${value}">
+ </e-heatmap-yaxis>
+ <e-heatmap-legendsettings visible="false"></e-heatmap-legendsettings>
+</ejs-heatmap>

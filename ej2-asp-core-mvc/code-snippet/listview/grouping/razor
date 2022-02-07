@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists
+
+    @Html.EJS().ListView("element").DataSource((IEnumerable<object>)ViewBag.dataSource).Fields(new ListViewFieldSettings { GroupBy = "category" }).Render()
+
+ <style>
+
+    #element {
+        display: block;
+        max-width: 400px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+</style>

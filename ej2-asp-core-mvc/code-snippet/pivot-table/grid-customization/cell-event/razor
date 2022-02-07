@@ -1,0 +1,79 @@
+<div>
+<div class="column-8">
+    @using Syncfusion.EJ2.PivotView
+
+    @Html.EJS().PivotView("pivotview").Width("100%").Height("400").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>
+        )ViewBag.DataSource).ExpandAll(true).EnableSorting(true)
+        .Rows(rows =>
+        {
+            rows.Name("Country").Add();
+            rows.Name("Products").Add();
+        })
+        .Columns(columns =>
+        {
+            columns.Name("Year").Add();
+            columns.Name("Order_Source").Caption("Order Source").Add();
+        })
+        .Values(values =>
+        {
+            values.Name("Sold").Caption("Units Sold").Add();
+            values.Name("Amount").Caption("Sold Amount").Add();
+        })
+        .FormatSettings(formatsettings =>
+        {
+            formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+        })
+        .Filters(filters =>
+        {
+            filters.Name("Product_Categories").Caption("Product Categories").Add();
+        })).GridSettings(gridSettings => gridSettings.AllowSelection(true).SelectionSettings(selectionSettings => selectionSettings.CellSelectionMode(PivotCellSelectionMode.Box).Type("Multiple").Mode(SelectionMode.Cell))).CellSelected("onCellSelected").Render()
+</div>
+<div class="column-3">
+     <div class="eventarea" style="height: 230px;overflow: auto">
+         <span class="EventLog" id="selection-EventLog" style="word-break: normal;"></span>
+     </div>
+</div>
+</div>
+<script>
+    function onCellSelected(args) {
+        document.getElementById('selection-EventLog').innerHTML = '';
+        if (args.selectedCellsInfo.length > 0) {
+            for (var cnt = 0; cnt < args.selectedCellsInfo.length; cnt++) {
+                var cell = args.selectedCellsInfo[cnt];
+                var summMeasure = this.engineModule.fieldList[cell.measure] ? this.engineModule.fieldList[cell.measure].aggregateType + ' of ' +
+                    this.engineModule.fieldList[cell.measure].caption : '';
+                appendElement(
+                    (cell.columnHeaders == '' ? '' : 'Column Headers: ' + '<b>' + cell.columnHeaders.split('.').join(' - ') + '</b></br>') +
+                    (cell.rowHeaders == '' ? '' : 'Row Headers: ' + '<b>' + cell.rowHeaders.split('.').join(' - ') + '</b></br>') +
+                    (summMeasure == '' ? '' : 'Measure: ' + '<b>' + summMeasure + '</b></br>') +
+                    'Value: ' + '<b>' + cell.currentCell.formattedText + '</b><hr></br>');
+            }
+        }
+    }
+    function appendElement(html) {
+        var span = document.createElement('span');
+        span.innerHTML = html;
+        var log = document.getElementById('selection-EventLog');
+        log.appendChild(span);
+    }
+    var modeddl = new ej.dropdowns.DropDownList({
+        floatLabelType: 'Auto',
+        width: 150,
+        change: function (args) {
+            var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+            pivotObj.gridSettings.selectionSettings.mode = args.value;
+            pivotObj.renderModule.updateGridSettings();
+        }
+    });
+    modeddl.appendTo('#mode');
+    var typeddl = new ej.dropdowns.DropDownList({
+        floatLabelType: 'Auto',
+        width: 150,
+        change: function (args) {
+            var pivotObj = document.getElementById('pivotview').ej2_instances[0];
+            pivotObj.gridSettings.selectionSettings.type = args.value;
+            pivotObj.renderModule.updateGridSettings();
+        }
+    });
+    typeddl.appendTo('#type');
+</script>

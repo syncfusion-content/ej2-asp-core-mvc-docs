@@ -1,0 +1,85 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowFormulaBar(false).Created("created").Sheets(sheet =>
+{
+    sheet.Name("PriceDetails").Rows(row =>
+    {
+        row.Cells(cell =>
+        {
+            cell.Value("Seller Name").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Customer Id").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Customer Name").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Product Name").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Product Price").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Sales Date").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Billing Time").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+            cell.Value("Total Price").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Value("John").Add();
+            cell.Value("1").Validation(new SpreadsheetValidation() { Type = ValidationType.WholeNumber, Operator = ValidationOperator.NotEqualTo, Value1 = "1" } ).Add();
+            cell.Value("Nash").Add();
+            cell.Value("Digger").Validation(new SpreadsheetValidation() { Type = ValidationType.List, Value1 = "Digger, Digger, Cherrypicker" } ).Add();
+            cell.Value("50000").Validation(new SpreadsheetValidation() { Type = ValidationType.List, Value1 = "50000,50000,45000" } ).Add();
+            cell.Value("04/11/2019").Add();
+            cell.Value("11:34:32 AM").Add();
+            cell.Value("1,45,000.00").Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Value("Mike").Add();
+            cell.Value("2").Validation(new SpreadsheetValidation() { Type = ValidationType.WholeNumber, Operator = ValidationOperator.NotEqualTo, Value1 = "1" } ).Add();
+            cell.Value("Jim").Add();
+            cell.Value("Cherrypicker").Validation(new SpreadsheetValidation() { Type = ValidationType.List, Value1 = "Cherrypicker, JCB, Wheelbarrow" } ).Add();
+            cell.Value("45000").Validation(new SpreadsheetValidation() { Type = ValidationType.List, Value1 = "45000,90000,40" } ).Add();
+            cell.Value("04/11/2019").Add();
+            cell.Value("11:34:32 AM").Add();
+            cell.Value("1,45,000.00").Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Value("shane").Add();
+            cell.Value("3").Validation(new SpreadsheetValidation() { Type = ValidationType.WholeNumber, Operator = ValidationOperator.NotEqualTo, Value1 = "1" } ).Add();
+            cell.Value("Sean").Add();
+            cell.Value("Kango").Validation(new SpreadsheetValidation() { Type = ValidationType.List, Value1 = "Kango, Ropes" } ).Add();
+            cell.Value("450").Validation(new SpreadsheetValidation() { Type = ValidationType.List, Value1 = "450, 95" } ).Add();
+            cell.Value("06/25/2019").Add();
+            cell.Value("01:30:11 PM").Add();
+            cell.Value("545.00").Add();
+        }).Add();
+        row.Cells(cell =>
+        {
+            cell.Value("John").Add();
+            cell.Value("1").Validation(new SpreadsheetValidation() { Type = ValidationType.WholeNumber, Operator = ValidationOperator.NotEqualTo, Value1 = "1" } ).Add();
+            cell.Value("Nash").Add();
+            cell.Value("JCB").Validation(new SpreadsheetValidation() { Type = ValidationType.List, Value1 = "JCB, Ropes, scaffolding" } ).Add();
+            cell.Value("90000").Validation(new SpreadsheetValidation() { Type = ValidationType.List, Value1 = "90000, 95, 10000" } ).Add();
+            cell.Value("09/22/2019").Add();
+            cell.Value("12:30:02 PM").Add();
+            cell.Value("1,00,095.00").Add();
+        }).Add();
+    }).Columns(column =>
+    {
+        column.Width(88).Add();
+        column.Width(88).Add();
+        column.Width(106).Add();
+        column.Width(98).Add();
+        column.Width(88).Add();
+        column.Width(86).Add();
+        column.Width(107).Add();
+        column.Width(81).Add();
+    }).Add();
+}).Render()
+
+
+<script>
+    function created() {
+        //Add Data Validation to range.
+        this.addDataValidation({ type: 'TextLength', Operator: 'LessThanOrEqualTo', Value1: '4' }, 'A2:A5');
+        this.addDataValidation({ type: 'WholeNumber', Operator: 'NotEqualTo', Value1: '1' }, 'B2:B5');
+        this.addDataValidation({ type: 'Date', Operator: 'NotEqualTo', Value1: '04/11/2019' }, 'F2:F5');
+        this.addDataValidation({ type: 'Time', Operator: 'Between', Value1: '10:00:00 AM', value2: '11:00:00 AM' }, 'G2:G5');
+        this.addDataValidation({ type: 'Decimal', Operator: 'LessThan', Value1: '100000.00' }, 'H2:H5');
+        //Highlight Invalid Data.
+        this.addInvalidHighlight('A1:H5');
+    }
+</script>

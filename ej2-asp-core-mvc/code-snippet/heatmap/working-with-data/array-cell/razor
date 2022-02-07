@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts => ts.Text("Percentage of Individuals Using Internet by Country").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+xAxis.Labels(ViewBag.xLabels)).YAxis(yaxis =>
+yaxis.Labels(ViewBag.yLabels)).DataSource(ViewBag.dataSource).PaletteSettings(ps => ps.Palette(palette =>
+{
+    palette.Color("#3498DB").Add();
+    palette.Color("#2C3E50").Add();      
+})).CellSettings(cs =>cs.Border(ViewBag.border).TextStyle(ViewBag.cellTextStyle).Format("{value} %")).LegendSettings(ls =>
+ls.Visible(false)).TooltipRender("tooltipRender").DataSourceSettings(ds => { ds.IsJsonData(false).AdaptorType(Syncfusion.EJ2.HeatMap.AdaptorType.Cell); }).Render()
+
+<script>
+    var tooltipRender = function (args) {
+        args.content = [args.yLabel + ' | ' + args.xLabel + ' : ' + args.value + ' %'];
+    };
+</script>

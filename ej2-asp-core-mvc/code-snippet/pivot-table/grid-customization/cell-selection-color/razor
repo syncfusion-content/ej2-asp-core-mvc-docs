@@ -1,0 +1,27 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).GridSettings(gridSettings => gridSettings.AllowSelection(true).SelectionSettings(selectionSettings => selectionSettings.CellSelectionMode("Box").Type("Multiple").Mode(SelectionMode.Both))).Render()
+
+<style>
+
+    .e-pivotview .e-cellselectionbackground,
+    .e-pivotview .e-selectionbackground,
+    .e-pivotview .e-grid .e-rowsheader.e-selectionbackground,
+    .e-pivotview .e-grid .e-columnsheader.e-selectionbackground { 
+        background-color: greenYellow !important; 
+    }
+
+ </style>

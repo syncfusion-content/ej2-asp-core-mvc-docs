@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var maparea = new Syncfusion.EJ2.Maps.MapsMapsAreaSettings
+    {
+        Background = "#CCD1D1",
+        Border = new Syncfusion.EJ2.Maps.MapsAreaSettingsBorderMapsArea
+        {
+            Width = 2,
+            Color = "green",
+            Opacity = 1
+        }
+    };
+
+}
+
+@Html.EJS().Maps("maps").MapsArea(maparea).Layers(l =>
+{
+    l.ShapeData(ViewBag.worldMap).Add();
+}).Render()

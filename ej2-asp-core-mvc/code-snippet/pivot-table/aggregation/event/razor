@@ -1,0 +1,17 @@
+@Html.EJS().PivotView("PivotView").Height(300).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource)
+ .Rows(rows =>
+ {
+     rows.Name("Country").Add(); rows.Name("Products").Add();
+ }).Columns(columns =>
+ {
+     columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+ }).Values(values =>
+ {
+     values.Name("Sold").Caption("Units Sold").Type(Syncfusion.EJ2.PivotView.SummaryTypes.DifferenceFrom).BaseField("Country").BaseItem("France").Add(); values.Name("Amount").Caption("Sold Amount").Type(Syncfusion.EJ2.PivotView.SummaryTypes.Min).Add();
+ })).ShowGroupingBar(true).AggregateCellInfo("aggregateCell").Render()
+
+<script>
+    function aggregateCell(args){
+        args.skipFormatting = true;
+    }
+</script>

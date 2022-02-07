@@ -1,0 +1,83 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists;
+<h4 id="evt-text">
+    <b>Event Trace</b>
+</h4>
+
+<div id="list-container">
+    <!-- ListView element -->
+    @Html.EJS().ListView("listview-def").DataSource((IEnumerable<object>)ViewBag.dataSource).ActionComplete("onActionComplete").ActionBegin("onActionBegin").Select("onSelect").Width("250").Render()
+    <div id="list_event">
+        <div id="evt">
+            <div class="eventarea" style="height:273px;overflow: auto">
+                <!-- Event log element -->
+                <span class="EventLog" id="EventLog" style="word-break: normal"></span>
+            </div>
+            <div class="evtbtn">
+                <!-- clear button element -->
+                @Html.EJS().Button("clear").Content("Clear").Render()
+            </div>
+        </div>
+    </div>
+</div>
+
+ <style>
+    #list-container {
+        max-width: 600px;
+        margin: auto;
+    }
+
+
+    #EventLog b {
+        color: #388e3c;
+    }
+
+    #listview-def {
+        display: inline-block;
+        border: 1px solid #dcdcdc;
+    }
+
+    .evtbtn {
+        margin-top: 40px;
+        margin-left: 70px;
+    }
+
+    #evt {
+        border: 1px solid #dcdcdc;
+        padding: 10px;
+        width: 250px;
+    }
+
+    #list_event {
+        padding-left: 40px;
+        display: inline-block;
+        vertical-align: top;
+    }
+</style>
+<script>
+
+    //Clears the event log details
+    document.getElementById("clear").onclick = () => {
+        document.getElementById("EventLog").innerHTML = "";
+    };
+    //Handler for actionBegin event trace
+    function onActionBegin() {
+        appendElement("<b>actionBegin </b> event is triggered<hr>");
+    }
+    //Handler for select event trace
+    function onSelect(args) {
+        appendElement(args.text + "<b>&nbsp;&nbsp;is selected</b><hr>");
+    }
+    //Handler for actionComplete event trace
+    function onActionComplete() {
+        appendElement("<b>actionComplete</b> is triggered <hr>");
+    }
+
+    //Display event log
+    function appendElement(html) {
+        var span = document.createElement("span");
+        span.innerHTML = html;
+        var log = document.getElementById("EventLog");
+        log.insertBefore(span, log.firstChild);
+    }
+</script>

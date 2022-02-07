@@ -1,0 +1,6 @@
+@using Syncfusion.EJ2;
+
+
+@Html.EJS().CircularGauge("circular2").Axes(axes =>
+    axes.Ranges(range => range.Start(20).End(80).Radius("60%").RoundedCornerRadius(6).Add())
+.Add()).Render()

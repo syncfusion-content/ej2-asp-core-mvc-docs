@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+<div id="control-section">
+    <ejs-maps id="maps" locale="ar-AR">
+        <e-maps-zoomsettings enable="true"></e-maps-zoomsettings>
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map">
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>
+
+<script>
+    ej.base.L10n.load({
+        'ar-AR': {
+            'maps': {
+                ZoomIn: 'تكبير',
+                ZoomOut: 'تصغير',
+                Zoom: 'زوم',
+                Pan: 'مقلاة',
+                Reset: 'إعادة تعيين'
+            },
+        }
+    });
+</script>

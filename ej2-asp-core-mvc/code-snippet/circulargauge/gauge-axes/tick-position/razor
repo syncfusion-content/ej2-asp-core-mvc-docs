@@ -1,0 +1,7 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.CircularGauge;
+
+@Html.EJS().CircularGauge("circular2").Axes(axes => axes
+.MajorTicks(majortick => majortick.Interval(10).Color("red").Height(10).Width(3).Position(Position.Inside).Offset(5))
+.MinorTicks(minortick =>minortick.Interval(10).Color("green").Height(5).Width(2).Position(Position.Inside).Offset(5))
+.Add()).Render()

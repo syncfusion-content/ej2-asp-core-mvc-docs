@@ -1,0 +1,6 @@
+  @using Syncfusion.EJ2;
+   <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer layerType="OSM" urlTemplate="http://a.tile.openstreetmap.org/level/tileX/tileY.png"></e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>

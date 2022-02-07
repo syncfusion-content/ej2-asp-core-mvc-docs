@@ -1,0 +1,5 @@
+@(Html.EJS().BarcodeGenerator("container").
+Width("200px").
+Height("150px").
+foreColor("red").
+Value("SYNCFUSION").Type(Syncfusion.EJ2.BarcodeGenerator.Type.Code128).Render() )

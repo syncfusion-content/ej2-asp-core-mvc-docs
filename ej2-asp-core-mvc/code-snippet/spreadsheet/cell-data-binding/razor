@@ -1,0 +1,60 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowRibbon(false).ShowFormulaBar(false).Sheets(sheet =>
+   {
+       sheet.Name("Monthly Budget").SelectedRange("D13").Rows(row =>
+       {
+           row.Cells(cell =>
+           {
+               cell.Value("Category").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+               cell.Value("Planned cost").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+               cell.Value("Actual cost").Style(new SpreadsheetCellStyle() { FontWeight = FontWeight.Bold, TextAlign = TextAlign.Center }).Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Food").Add();
+               cell.Value("$7000").Add();
+               cell.Value("$8120").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Loan").Add();
+               cell.Value("$1500").Add();
+               cell.Value("$1500").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Medical").Add();
+               cell.Value("$300").Add();
+               cell.Value("$0").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Clothing").Add();
+               cell.Value("$400").Add();
+               cell.Value("$140").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Education").Add();
+               cell.Value("$900").Add();
+               cell.Value("$750").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Insurance").Add();
+               cell.Value("$30").Add();
+               cell.Value("$30").Add();
+           }).Add();
+           row.Cells(cell =>
+           {
+               cell.Value("Utilities").Add();
+               cell.Value("$130").Add();
+               cell.Value("$160").Add();
+           }).Add();
+       }).Columns(column =>
+       {
+           column.Width(110).Add();
+           column.Width(115).Add();
+           column.Width(110).Add();
+           column.Width(100).Add();
+       }).Add();
+   }).Render()

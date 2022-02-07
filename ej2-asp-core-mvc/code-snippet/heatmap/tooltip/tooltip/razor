@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts => ts.Text("Crude Oil Production of Non-OPEC Countries (in Million barrels per day)").TextStyle(ViewBag.textStyle)).XAxis(
+xAxis =>{ xAxis.Labels(ViewBag.xLabels)}).YAxis(yaxis =>
+yaxis.Labels(ViewBag.yLabels)).CellSettings(cs =>
+cs.ShowLabel(false)).ShowTooltip(true).DataSource(ViewBag.dataSource).Render()

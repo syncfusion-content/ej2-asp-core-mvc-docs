@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+@{
+    var internData = new[]
+    {
+        new { Country= "China", Membership="Permanent", population= "38332521" },
+        new { Country= "France", Membership="Permanent", population= "19651127" },
+        new { Country= "Russia", Membership="Permanent", population= "3090416" },
+        new { Country= "Kazakhstan", Membership="Non-Permanent", population= "1232521" },
+        new { Country= "Poland", Membership="Non-Permanent", population= "90332521" },
+        new { Country= "Sweden", Membership="Non-Permanent", population= "383521" }
+    };
+    var colorMapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new MapsColorMapping {Value="Permanent", Color="#D84444"},
+        new MapsColorMapping {Value="Non-Permanent", Color="#316DB5"}
+     };
+}
+
+@Html.EJS().Maps("maps").Format("c").UseGroupingSeparator(true).Layers(l =>
+{
+    l.ShapeSettings(s => s.ColorValuePath("Membership").Fill("#E5E5E5").ColorMapping(colorMapping)).
+      TooltipSettings(tooltip => tooltip.Visible(true).ValuePath("population")).
+      DataSource(internData).ShapeDataPath("Country").ShapePropertyPath("name").
+      ShapeData(ViewBag.worldMap).Add();
+}).Render()

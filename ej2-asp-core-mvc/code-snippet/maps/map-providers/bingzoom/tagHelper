@@ -1,0 +1,7 @@
+  @using Syncfusion.EJ2;
+   <ejs-maps id="maps">
+        <e-maps-zoomSettings Enable="true">
+        <e-maps-layers>
+            <e-maps-layer layerType="Bing" key="// …bingMapKey"></e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>

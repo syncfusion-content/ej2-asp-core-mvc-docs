@@ -1,0 +1,25 @@
+@using Syncfusion.EJ2;
+<div class="spark" align="center">
+    <ejs-sparkline id="sparkline" loaded="loaded" height="200px" width="350px" type="@SparklineType.Area" dataSource="ViewBag.sparkData">
+	<e-sparkline-containerarea>
+     <e-sparkline-containerarea-border color='#033e96' width="2"></e-sparkline-containerarea-border>
+      </e-sparkline-containerarea>
+            <e-sparkline-border color= 'red' width="1"></e-sparkline-border>
+    </ejs-sparkline>
+</div>
+<style>
+    .spark {
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 2px;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<script>
+    function loaded(args)
+    { 
+        window.sparkline = args.sparkline;
+        args.sparkline.loaded = null;
+        args.sparkline.refresh();
+    }
+</script>

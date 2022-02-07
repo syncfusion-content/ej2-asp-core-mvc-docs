@@ -1,0 +1,26 @@
+<ejs-spreadsheet id="spreadsheet" created="createHandler">
+    <e-spreadsheet-scrollsettings isFinite="true"></e-spreadsheet-scrollsettings>
+    <e-spreadsheet-sheets>
+        <e-spreadsheet-sheet rowCount="9" colCount="7">
+            <e-spreadsheet-ranges>
+                <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+            </e-spreadsheet-ranges>
+            <e-spreadsheet-columns>
+                <e-spreadsheet-column width="130"></e-spreadsheet-column>
+                <e-spreadsheet-column width="92"></e-spreadsheet-column>
+                <e-spreadsheet-column width="96"></e-spreadsheet-column>
+                <e-spreadsheet-column width="130"></e-spreadsheet-column>
+                <e-spreadsheet-column width="92"></e-spreadsheet-column>
+                <e-spreadsheet-column width="96"></e-spreadsheet-column>
+                <e-spreadsheet-column width="96"></e-spreadsheet-column>
+            </e-spreadsheet-columns>
+        </e-spreadsheet-sheet>
+    </e-spreadsheet-sheets>
+</ejs-spreadsheet>
+
+<script>
+    function createHandler() {
+        //Applies format to specified range
+        this.cellFormat({ fontWeight: 'bold' }, 'A1:F1');
+    }
+</script>

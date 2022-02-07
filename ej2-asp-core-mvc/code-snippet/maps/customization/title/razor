@@ -1,0 +1,22 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+@{
+    var title = new Syncfusion.EJ2.Maps.MapsTitleSettings
+    {
+        Text = "Maps control",
+        TextStyle = new Syncfusion.EJ2.Maps.MapsFont
+        {
+            Color = "red",
+            FontFamily = "arial",
+            FontStyle = "italic",
+            FontWeight = "regular",
+            Size = "14px"
+        },
+        Alignment = Syncfusion.EJ2.Maps.Alignment.Center
+    };
+}
+@Html.EJS().Maps("maps").TitleSettings(title).Layers(l =>
+{
+    l.ShapeData(ViewBag.worldMap).Add();
+}).Render()

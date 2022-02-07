@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).GridSettings(gridSettings => gridSettings.PdfQueryCellInfo("pdfqueryCell")).Render()
+<script>
+    function pdfqueryCell(args) {
+
+    }
+</script>

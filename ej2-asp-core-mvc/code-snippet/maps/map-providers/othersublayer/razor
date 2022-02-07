@@ -1,0 +1,6 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l =>
+   {
+       l.LayerType("OSM").UrlTemplate("http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level").Add();
+       l.ShapeData(ViewBag.usMapShape).Type("SubLayer").Add();
+   }).Render()

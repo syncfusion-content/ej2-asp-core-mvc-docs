@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2.Maps;
+@{
+    var data = new[]
+       {
+            new { name= "Australia", population= "383521" },
+            new { name= "Pakistan", population= "3090416" },
+            new { name= "Russia", population= "30916" }
+    };
+}
+@Html.EJS().Maps("maps").Layers(l =>
+ {
+     l.BubbleSettings(bubble =>
+     {
+         bubble.Visible(true).ValuePath("population").MinRadius(10).MaxRadius(30).ValuePath("population").
+                DataSource(data).Fill("green").Opacity(1).AnimationDelay(100).AnimationDuration(1000).Border(border => border.Color("blue").Width(2).Opacity(1)).Add();
+     }).ShapeData(ViewBag.worldMap).ShapeDataPath("name").ShapePropertyPath("name").Add();
+ }).Render()

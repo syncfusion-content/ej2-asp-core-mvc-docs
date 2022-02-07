@@ -1,0 +1,39 @@
+@Html.EJS().Spreadsheet("spreadsheet").contextMenuBeforeOpen("createdHandler").Sheets(sheet =>
+{
+    sheet.Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+  
+    }).Columns(column =>
+    {
+        column.Width(80).Add();
+           column.Width(80).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(80).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+    }).Add();
+}).Render()
+
+<script>
+    function createdHandler() {
+        // To remove existing context menu items.
+        this.removeContextMenuItems(["Insert Column"], false);
+    }
+</script>
+
+<style>
+    .e-spreadsheet .e-tab .e-tab-text {
+        display: inherit;
+    }
+</style>

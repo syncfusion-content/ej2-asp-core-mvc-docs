@@ -1,0 +1,42 @@
+<ejs-pivotview id="pivotview" allowNumberFormatting="true" width="100%" height="300" numberFormatting="numberFormatting" showToolbar="true" toolbar="@(new List<string>() {"NumberFormatting" })" >
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" >
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year"></e-field>
+            <e-field name="Order_Source" caption="Order Source"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="In_Stock" caption="In Stock"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+        <e-filters>
+            <e-field name="Product_Categories" caption="Product Categories"></e-field>
+        </e-filters>
+    </e-datasourcesettings>
+    <e-gridSettings columnWidth="140"></e-gridSettings>
+    <e-displayOption view="Both"></e-displayOption>
+</ejs-pivotview>
+<style>
+    #pivotview {
+        width: 100%;
+        height: 100%;
+    }
+
+    .e-tool-expand::before {
+        content: '\e702';
+    }
+</style>
+<script>
+    function numberFormatting(args) {
+       if (args.formatName === 'Amount' ) {
+            args.cancel = true;
+        }
+    }
+</script>

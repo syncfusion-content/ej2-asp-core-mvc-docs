@@ -1,0 +1,6 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l =>
+   {
+       l.LayerType("OSM").Add();
+       l.ShapeSettings(s => s.Fill("blue")).ShapeData(ViewBag.usMapShape).Type(Syncfusion.EJ2.Maps.Type.SubLayer).Add();
+   }).Render()

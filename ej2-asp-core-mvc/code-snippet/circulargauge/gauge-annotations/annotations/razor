@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2;
+@Html.EJS().CircularGauge("circular").Axes(axes => axes.Annotations(annotation => annotation
+ .Content("#template").ZIndex("1").Add()).Pointers(pointer => pointer.Value(50).Add()).Add()).Render()
+
+<script id='template' type="text/x-template">
+    <div id='templateWrap'>
+        <div class='des'>
+            <span>Pointer Value : 50</span>
+        </div>
+    </div>
+</script>

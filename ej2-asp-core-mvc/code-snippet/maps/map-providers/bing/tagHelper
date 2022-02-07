@@ -1,0 +1,6 @@
+  @using Syncfusion.EJ2;
+    <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer layerType="Bing" bingMapType="AerialWithLabel" key="// …bingMapKey"></e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>

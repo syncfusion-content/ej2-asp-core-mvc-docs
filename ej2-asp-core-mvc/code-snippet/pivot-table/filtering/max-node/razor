@@ -1,0 +1,11 @@
+@Html.EJS().PivotView("PivotView").Width("100%").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(false).AllowMemberFilter(true)
+.Rows(rows =>
+{
+    rows.Name("ProductID").Add();
+}).Columns(columns =>
+{
+    columns.Name("DeliveryDate").Add(); 
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); 
+})).MaxNodeLimitInMemberEditor(500).ShowGroupingBar(true).Render()

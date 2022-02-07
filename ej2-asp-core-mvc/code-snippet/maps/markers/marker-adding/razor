@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var propertyPath = new[] { "name" };
+    var data = new[]
+    {
+        new {latitude = 49.95121990866204, longitude =  18.468749999999998},
+        new {latitude =  59.88893689676585, longitude =  -109.3359375},
+        new {latitude =  -6.64607562172573, longitude =  -55.54687499999999}
+    };
+}
+@Html.EJS().Maps("maps").Layers(l =>
+   {
+       l.MarkerSettings(marker =>
+       {
+           marker.Visible(true).AnimationDuration(0).DataSource(data).Height(20).Width(20).Add();
+       }).ShapeData(ViewBag.world_map).Add();
+   }).Render()

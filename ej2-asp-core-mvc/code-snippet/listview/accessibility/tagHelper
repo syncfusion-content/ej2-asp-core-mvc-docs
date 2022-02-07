@@ -1,0 +1,15 @@
+
+   <ejs-listview id="listview" dataSource="ViewBag.dataSource" showHeader="true" headerTitle="Continent">
+        <e-listview-fieldsettings tooltip="text">
+        </e-listview-fieldsettings>
+    </ejs-listview>
+
+<style>
+    #listview {
+        display: block;
+        max-width: 400px;
+        margin: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>

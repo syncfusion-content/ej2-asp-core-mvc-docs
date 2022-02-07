@@ -1,0 +1,22 @@
+@{
+    var data = new[]
+    {
+        new {name="Afghanistan", value=53, countryCode="AF", population=29863010, color="red",
+             density=119, continent="Asia"},
+        new {name="Albania", value=117, countryCode="AL", population=3195000, color="Blue",
+             density=111, continent="Europe"},
+        new {name="Algeria", value=15, countryCode="DZ", population=34895000, color="Green",
+             density=15, continent="Africa"}
+    };
+}
+
+@using Syncfusion.EJ2.Maps;
+
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.world_map" shapeDataPath="name" shapePropertyPath='new[] { "name" }' dataSource="data">
+            <e-layersettings-shapesettings autofill=true></e-layersettings-shapesettings>
+            <e-layersettings-datalabelsettings visible="true" labelPath="continent" smartLabelMode="Trim"></e-layersettings-datalabelsettings>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

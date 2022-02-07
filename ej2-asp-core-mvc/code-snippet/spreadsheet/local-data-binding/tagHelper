@@ -1,0 +1,9 @@
+<ejs-spreadsheet id="spreadsheet">
+    <e-spreadsheet-sheets>
+        <e-spreadsheet-sheet>
+            <e-spreadsheet-ranges>
+                <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+            </e-spreadsheet-ranges>
+        </e-spreadsheet-sheet>
+    </e-spreadsheet-sheets>
+</ejs-spreadsheet>

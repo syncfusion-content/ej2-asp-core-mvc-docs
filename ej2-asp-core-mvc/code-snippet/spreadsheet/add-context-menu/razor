@@ -1,0 +1,40 @@
+@Html.EJS().Spreadsheet("spreadsheet").contextMenuBeforeOpen("createdHandler").Sheets(sheet =>
+{
+    sheet.Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+  
+    }).Columns(column =>
+    {
+        column.Width(80).Add();
+           column.Width(80).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(80).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+           column.Width(100).Add();
+    }).Add();
+}).Render()
+
+<script>
+    function createdHandler(args) {
+        if (args.element.id === this.element.id + '_contextmenu') {
+        this.addContextMenuItems([{ text: 'Custom Item' }], 'Paste Special', false); //To pass the items, Item before / after that the element to be inserted, Set false if the items need to be inserted before the text.
+      }
+    }
+</script>
+
+<style>
+    .e-spreadsheet .e-tab .e-tab-text {
+        display: inherit;
+    }
+</style>

@@ -1,0 +1,39 @@
+@Html.EJS().Spreadsheet("spreadsheet").ShowRibbon(false).ShowFormulaBar(false).Created("created").Sheets(sheet =>
+{
+    sheet.Name("Shipment Details").Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+  
+    }).Columns(column =>
+    {
+        column.Width(130).Add();
+        column.Width(220).Add();
+        column.Width(90).Add();
+        column.Width(140).Add();
+        column.Width(90).Add();
+        column.Width(100).Add();
+        column.Width(100).Add();
+    }).Add();
+}).Render()
+
+    <script>
+
+    function created() {
+      // Applies style formatting to the active sheet before inserting a new sheet
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.cellFormat({ textAlign: 'center' }, 'D2:H11');
+        // inserting a new sheet with data at 1st index
+        // You can also insert empty sheets by specifying the start and end sheet index instead of sheet model
+        this.insertSheet([{
+            index: 1,
+            name: 'Inserted Sheet',
+            ranges: [{ dataSource: @Html.Raw(JsonConvert.SerializeObject(@ViewBag.DefaultData)) }],
+            columns: [{ width: 150 }, { width: 110 }, { width: 110 }, { width: 85 }, { width: 85 }, { width: 85 }, { width: 85 },
+                { width: 85 }]
+        }]);
+        // Applies style formatting for the inserted sheet
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Inserted Sheet!A1:H1');
+        this.cellFormat({ textAlign: 'center' }, 'Inserted Sheet!D2:H15');
+    }
+
+    </script>

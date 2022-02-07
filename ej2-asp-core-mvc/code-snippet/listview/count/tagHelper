@@ -1,0 +1,93 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Lists;
+
+@{
+    var template = "<div class='settings'>"
+    + "<div id='postContainer'><div id='postImg'>"
+    + "<img src=${image} style='height:35px;width:35px;border-radius:50%; border: 1px solid #ccc;' /></div>"
+    + "<div id='content'><div class='name'>${Name}</div><div id='info'>${contact}</div></div></div>";
+
+    var groupTemplate = "<div><span class='category'>${items[0].category}</span> <span class='count'> ${items.length} Item(s)</span></div>";
+}
+
+<ejs-listview id="List" dataSource="(IEnumerable<object>)ViewBag.dataSource" template="@template" groupTemplate="@groupTemplate">
+    <e-listview-fieldsettings GroupBy="category" text="Name"></e-listview-fieldsettings>
+</ejs-listview>
+
+
+<style>
+    .count {
+        float: right;
+    }
+
+    #List {
+        display: block;
+        margin: auto;
+        border: 1px solid;
+        border-color: #ccc;
+        border-color: rgba(0, 0, 0, 0.12);
+        width: 350px;
+    }
+
+        #List .settings {
+            height: auto;
+        }
+
+        #List .e-list-group-item {
+            height: 56px;
+            line-height: 56px;
+        }
+
+        #List .e-list-item {
+            height: 70px;
+            padding: 0;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        #List .e-list-header .e-text {
+            font-family: sans-serif;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        #List #content {
+            margin: 9px 0 0 15px;
+        }
+
+        #List .name {
+            font-size: 14px;
+            line-height: 25px;
+            font-weight: 500;
+        }
+
+    #info {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    #postImg {
+        margin: 15px 9px 9px 9px;
+    }
+
+    #postContainer {
+        width: inherit;
+        margin: auto;
+        display: inline-flex;
+    }
+</style>
+<style>
+    #text {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    #element {
+        max-width: 350px;
+        margin: auto;
+        margin-top: 10px;
+        display: block;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+</style>

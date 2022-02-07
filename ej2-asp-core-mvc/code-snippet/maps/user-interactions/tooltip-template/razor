@@ -1,0 +1,90 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var tooltip = new Syncfusion.EJ2.Maps.MapsTooltipSettings
+    {
+        Visible = true,
+        ValuePath = "name",
+        Template = "#template"
+    };
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new  MapsColorMapping{ Color = "#b3daff",Value= "1"  },
+        new MapsColorMapping { Color= "#80c1ff", Value = "2" },
+        new MapsColorMapping { Color= "#1a90ff", Value = "3" },
+        new MapsColorMapping { Color= "#005cb3", Value = "7" }
+    };
+    var data = new[]
+    {
+        new { name= "India", value1= "3", value2="2", country="India" },
+        new { name= "Dominican Rep.", value1= "3", value2="2", country="West Indies" },
+        new { name= "Cuba", value1= "3", value2="2", country="West Indies" },
+        new { name= "Jamaica", value1= "3", value2="2", country="West Indies" },
+        new { name= "Haiti", value1= "3", value2="2", country="West Indies" },
+        new { name= "Guyana", value1= "3", value2="2", country="West Indies" },
+        new { name= "Suriname", value1= "3", value2="2", country="West Indies" },
+        new { name= "Trinidad and Tobago", value1= "3", value2="2", country="West Indies" },
+        new { name= "Sri Lanka", value1= "3", value2="1", country="Sri Lanka" },
+        new { name= "United Kingdom", value1= "3", value2="0", country="England" },
+        new { name= "Pakistan", value1= "2", value2="1", country="Pakistan" },
+        new { name= "New Zealand", value1= "1", value2="0", country="New Zealand" },
+        new { name= "Australia", value1= "7", value2="5", country="Australia" },
+    };
+}
+
+@Html.EJS().Maps("maps").TooltipRender("tooltipRender").Layers(l =>
+{
+    l.ShapeSettings(shape => shape.Fill("#E5E5E5").ColorValuePath("value1").ColorMapping(colormapping))
+    .ShapeDataPath("name").ShapePropertyPath("name").DataSource(data).TooltipSettings(tooltip).ShapeData(ViewBag.worldMap).Add();
+}).Render()
+
+<div id="template" style="display:none">
+    <div class="toolback">
+        <div class="listing2">
+            <center>
+                ${country}
+            </center>
+        </div>
+        <hr style="margin-top: 2px;margin-bottom:5px;border:0.5px solid #DDDDDD">
+        <div>
+            <span class="listing1">Finalist : </span><span class="listing2">${value1}</span>
+        </div>
+        <div>
+            <span class="listing1">Win : </span><span class="listing2">${value2}</span>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    function tooltipRender(args) {
+        if (!args.options['data']) {
+            args.cancel = true;
+        }
+    }
+</script>
+<style>
+    .toolback {
+        border - radius: 4px;
+        border: 1px #abb9c6;
+        opacity: 90%;
+        background: rgba(53, 63, 76, 0.90);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.40);
+        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 90px;
+    }
+
+    .listing1 {
+        font - size:13px;
+        color: #cccccc
+    }
+
+    .listing2 {
+        font - size:13px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+</style>

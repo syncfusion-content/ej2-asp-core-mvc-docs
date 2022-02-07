@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts => 
+ts.Text("Sales Revenue per Employee (in 1000 US$)").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+xAxis.Labels(ViewBag.xLabels).ValueType(Syncfusion.EJ2.HeatMap.ValueType.Category)).YAxis(yaxis =>
+yaxis.Labels(ViewBag.yLabels).ValueType(Syncfusion.EJ2.HeatMap.ValueType.Category)).DataSource(ViewBag.dataSource).Render()

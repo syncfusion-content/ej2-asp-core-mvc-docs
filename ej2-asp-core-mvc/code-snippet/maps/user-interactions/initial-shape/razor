@@ -1,0 +1,26 @@
+﻿@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Maps
+@Html.EJS().Maps("container").Layers(new List<Syncfusion.EJ2.Maps.MapsLayer>
+    {
+        new Syncfusion.EJ2.Maps.MapsLayer
+            {
+                ShapeData =  ViewBag.worldMap,
+                SelectionSettings = new MapsSelectionSettings
+                {
+                    Enable= true,
+                    Fill= "green",
+                    Border = new MapsBorder
+                    {
+                        Color = "white",
+                        Width = 2,
+                        Opacity = 1
+                    }
+                },
+                InitialShapeSelection = new List<Syncfusion.EJ2.Maps.MapsInitialShapeSelection>
+                {
+                    new Syncfusion.EJ2.Maps.MapsInitialShapeSelection{ ShapePath= "continent", ShapeValue= "Africa" },
+                    new Syncfusion.EJ2.Maps.MapsInitialShapeSelection{ ShapePath= "name", ShapeValue= "India" }
+                }
+            }
+        }).Render()
+       

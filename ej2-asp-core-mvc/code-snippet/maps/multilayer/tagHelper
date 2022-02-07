@@ -1,0 +1,44 @@
+@{ 
+    var shapeSettings = new Syncfusion.EJ2.Maps.MapsShapeSettings
+    {
+        Fill = "#E5E5E5",
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Color = "black",
+            Width = 0.1,
+            Opacity = 1
+        }
+    };
+    var shapeSettings1 = new Syncfusion.EJ2.Maps.MapsShapeSettings
+    {
+        Fill = "rgba(141, 206, 255, 0.6)",
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Color = "#1a9cff",
+            Width = 0.25,
+            Opacity = 1
+        }
+    };
+    var shapeSettings2 = new Syncfusion.EJ2.Maps.MapsShapeSettings
+    {
+        Fill = "rgba(141, 206, 255, 0.6)",
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Color = "#1a9cff",
+            Width = 0.25,
+            Opacity = 1
+        }
+    };
+}
+<div id="map">
+    <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.usa" shapeSettings="shapeSettings">
+            </e-maps-layer>
+            <e-maps-layer shapeData="ViewBag.california" type="SubLayer" shapeSettings="shapeSettings1">
+            </e-maps-layer>
+            <e-maps-layer shapeData="ViewBag.texas" type="SubLayer" shapeSettings="shapeSettings2">
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

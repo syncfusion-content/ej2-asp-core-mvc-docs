@@ -1,0 +1,36 @@
+@{
+    var Xminimum = new DateTime(2017, 6, 23);
+    var Xmaximum = new DateTime(2018, 6, 30);
+}
+
+<ejs-heatmap id='container' height="280px" tooltipRender="window.ontooltipRender" dataSource="ViewBag.dataSource">
+<e-heatmap-titlesettings text="Summary of merge requests in GitLab" textStyle="ViewBag.textStyle">
+</e-heatmap-titlesettings>
+<e-heatmap-xaxis opposedPosition="true" minimum="Xminimum" maximum="Xmaximum" intervalType="Days" valueType="DateTime" labelFormat="MMM" showLabelOn="Months" increment="7"></e-heatmap-xaxis>
+<e-heatmap-yaxis labels="ViewBag.yLabels" isInversed="true"></e-heatmap-yaxis>
+<e-heatmap-palettesettings type="Fixed" emptyPointColor="white">
+<e-palettes>
+    <e-palette value="0" color="rgb(238,238,238)" label="No contributions"></e-palette>
+    <e-palette value="1" color="rgb(172, 213, 242)" label="1-15 contributions"></e-palette>
+    <e-palette value="16" color="rgb(127, 168, 201)" label="16-31 contributions"></e-palette>
+    <e-palette value="32" color="rgb(82, 123, 160)" label="31-49 contributions"></e-palette>
+    <e-palette value="50" color="rgb(37, 78, 119)" label="50+ contributions"></e-palette>
+</e-palettes>
+</e-heatmap-palettesettings>
+<e-heatmap-cellsettings border="ViewBag.border" showLabel="false"></e-heatmap-cellsettings>
+<e-heatmap-legendsettings position="Bottom" width="20%" showLabel="true" alignment="Near" labelDisplayType="None" enableSmartLegend="true"></e-heatmap-legendsettings>
+</ejs-heatmap>
+
+<script>
+    window.ontooltipRender = function (args) {
+            var intl = new ej.base.Internationalization();
+            var format = intl.getDateFormat({ format: 'EEE MMM dd, yyyy' });
+            var newDate = args.xValue;
+            var date = new Date(newDate.getTime());
+            var axisLabel = args.heatmap.axisCollections[1].axisLabels;
+            var index = axisLabel.indexOf(args.yLabel);
+            (date).setDate((date).getDate() + index);
+            var value = format(date);
+            args.content = [(args.value === 0 ? 'No' : args.value) + ' ' + 'contributions' + '<br>' + value];
+    }
+</script>

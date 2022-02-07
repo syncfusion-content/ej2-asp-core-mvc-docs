@@ -1,0 +1,16 @@
+@{
+    var tooltip = new Syncfusion.EJ2.Maps.MapsTooltipSettings
+    {
+        Visible = true,
+        ValuePath = "name"
+    };
+}
+@using Syncfusion.EJ2;
+<div id="control-section">
+    <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.world_map" tooltipSettings="tooltip">
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>

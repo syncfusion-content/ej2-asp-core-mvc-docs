@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l=> {
+    l.LayerType(Syncfusion.EJ2.Maps.ShapeLayerType.Bing).BingMapType(Syncfusion.EJ2.Maps.BingMapType.AerialWithLabel).Key("// …bingMapKey").Add();
+}).Render()
+

@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var colorMapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new MapsColorMapping {From = 1, To = 100, Color = "rgb(153,174,214)", ShowLegend=true},
+        new MapsColorMapping {From = 100, To = 200, Color = "rgb(115,143,199)", ShowLegend=true},
+        new MapsColorMapping {Color = "rgb(77,112,184)", ShowLegend=false},
+     };
+}
+@Html.EJS().Maps("maps").LegendSettings(legend => legend.Visible(true)).Layers(l =>
+{
+    l.ShapeSettings(ss => ss.ColorValuePath("density").ColorMapping(colorMapping))
+    .ShapeData(ViewBag.worldMap).ShapeDataPath("name").ShapePropertyPath("name")
+    .DataSource(ViewBag.populationDensity).Add();
+}).Render()
+

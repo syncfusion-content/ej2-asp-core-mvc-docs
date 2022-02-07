@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("circular2").Axes(axes =>axes
+.Pointers(pointer => pointer.Value(70).Add()).Add()).Tooltip(tooltip =>tooltip.Enable(true).Template("#template")).Render()
+
+<script id='template' type="text/x-template">
+    <div id='templateWrap'>
+        <div class='des' style="float: right; padding-left:10px; line-height:30px;">
+            <span>Pointer value : 70</span>
+        </div>
+    </div>
+</script>

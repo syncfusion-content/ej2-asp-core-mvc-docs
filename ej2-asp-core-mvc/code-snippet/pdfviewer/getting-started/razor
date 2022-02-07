@@ -1,0 +1,3 @@
+<div style="height:500px;width:100%;">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).Render()
+</div>

@@ -1,0 +1,35 @@
+ <ejs-querybuilder id="querybuilder" width="73%" ruleChange="updateRule">
+        <e-querybuilder-columns>
+            <e-querybuilder-column field="CustomerID" label="Customer ID" type="number"></e-querybuilder-column>
+            <e-querybuilder-column field="CompanyName" label="Company Name" type="string"></e-querybuilder-column>
+            <e-querybuilder-column field="ContactName" label="Contact Name" type="string"></e-querybuilder-column>
+            <e-querybuilder-column field="City" label="City" type="string"></e-querybuilder-column>
+        </e-querybuilder-columns>
+    </ejs-querybuilder>
+
+ <ejs-grid id="grid" allowPaging="true">
+     <e-data-manager url="/Home/UrlDataSource" adaptor="UrlAdaptor"></e-data-manager>
+     <e-grid-columns>
+         <e-grid-column field="CustomerID" headerText="Customer ID" width="120">  </e-grid-column>
+         <e-grid-column field="CompanyName" headerText="Company Name" width="120"></e-grid-column>
+         <e-grid-column field="ContactName" headerText="Contact Name" width="100"></e-grid-column>
+         <e-grid-column field="City" headerText="City" width="120"></e-grid-column>
+     </e-grid-columns>
+ </ejs-grid>
+
+<script>
+
+    function updateRule(args) {
+        var dataManagerQuery;
+        var qryBldrObj  = ej.base.getComponent(document.getElementById("querybuilder"), 'query-builder');
+        var grid = ej.base.getComponent(document.getElementById("grid"), 'grid');
+        var predicate = qryBldrObj.getPredicate(args.rule);
+        if (ej.base.isNullOrUndefined(predicate)) {
+            dataManagerQuery = new ej.data.Query().select(['CustomerID', 'CompanyName', 'ContactName', 'City']);
+         } else {
+            dataManagerQuery = new ej.data.Query().select(['CustomerID', 'CompanyName', 'ContactName', 'City']).where(predicate);
+         }
+            grid.query = dataManagerQuery;
+            grid.refresh();
+    }
+</script>

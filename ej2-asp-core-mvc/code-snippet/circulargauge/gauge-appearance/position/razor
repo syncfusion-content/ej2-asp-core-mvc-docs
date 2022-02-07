@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("circular2").CenterX("20").CenterY("20").Axes(axis => axis.LineStyle(ls => ls.Color("#F8F8F8").Width(2)).StartAngle(0).EndAngle(180).Add()).Render()

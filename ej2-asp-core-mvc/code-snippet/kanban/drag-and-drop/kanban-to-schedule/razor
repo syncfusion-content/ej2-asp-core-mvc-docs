@@ -1,0 +1,71 @@
+@using Syncfusion.EJ2.Schedule
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Kanban</h4>
+            @Html.EJS().Kanban("Kanban").KeyField("Status").DataSource((IEnumerable<object>)ViewBag.data).ExternalDropId((string[])ViewBag.externalDropId).Columns(col =>
+                       {
+                      col.HeaderText("To Do").KeyField("Open").Add();
+                      col.HeaderText("Done").KeyField("Close").Add();
+                  }).CardSettings(card =>
+                        {
+                      card.ContentField("Summary").HeaderField("Id");
+                  }).DragStop("onDragStop").Render()
+        </div>
+        <div class="col-md-6">
+            <h4>Schedule</h4>
+            @Html.EJS().Schedule("Schedule").Width("100%").Height("650px").Views(view => { view.Option(View.TimelineDay).Add(); view.Option(View.TimelineMonth).Add(); }).CurrentView(View.TimelineDay).SelectedDate(new DateTime(2018, 7, 1)).WorkHours(new ScheduleWorkHours { Highlight = true, Start = "08:00", End = "18:00" }).Group(group => group.EnableCompactView(false).Resources(ViewBag.Resources)).Resources(res =>
+       {
+           res.DataSource(ViewBag.Departments).Field("DepartmentID").Title("Department").Name("Departments").TextField("text").IdField("id").ColorField("color").Add();
+           res.DataSource(ViewBag.Consultants).Field("ConsultantID").Title("Consultant").Name("Consultants").TextField("text").IdField("id").ColorField("color").GroupIDField("groupId").AllowMultiple(false).Add();
+       }).ResourceHeaderTemplate("#resource-template").DragStop("scheduleDragStop").EventSettings(e => e.Fields(f => f.Subject(sub => sub.Name("Name").Title("Patient Name")).StartTime(start => start.Name("StartTime").Title("From")).EndTime(end => end.Name("EndTime").Title("To")).Description(des => des.Name("Description").Title("Reason"))).DataSource(ViewBag.datasource)).Render()
+        </div>
+    </div>
+</div>
+<!-- Resource Header Template -->
+<script id="resource-template" type="text/x-template">
+    <div class="template-wrap">
+        <div class="specialist-category">
+            ${getConsultantImage(data)}
+            <div class="specialist-name">${getConsultantName(data)}</div>
+            <div class="specialist-designation">${getConsultantDesignation(data)}</div>
+        </div>
+    </div>
+</script>
+<script>
+    function getConsultantName(value) {
+        return value.resourceData[value.resource.textField];
+    };
+
+    function getConsultantImage() {
+        return '';
+    };
+
+    function getConsultantDesignation(value) {
+        let resourceName = value.resourceData[value.resource.textField];
+        if (resourceName === 'GENERAL' || resourceName === 'DENTAL') {
+            return '';
+        } else {
+            return value.resourceData.designation;
+        }
+    };
+    function scheduleDragStop(args) {
+        var kanbanObj = document.querySelector("#Kanban").ej2_instances[0];
+        var scheduleObj = document.querySelector("#Schedule").ej2_instances[0];
+        if (ej.base.closest(args.event.target, '#Kanban')) {
+            scheduleObj.deleteEvent(args.data.Id);
+            ej.base.removeClass([scheduleObj.element.querySelector('.e-selected-cell')], 'e-selected-cell');
+            kanbanObj.openDialog('Add', args.data);
+            args.cancel = true;
+        }
+    }
+    function onDragStop(args) {
+        var kanbanObj = document.querySelector("#Kanban").ej2_instances[0];
+        var scheduleObj = document.querySelector("#Schedule").ej2_instances[0];
+        if (ej.base.closest(args.event.target, '#Schedule')) {
+            kanbanObj.deleteCard(args.data);
+            scheduleObj.openEditor(args.data[0], 'Add', true);
+            args.cancel = true;
+        }
+    }
+</script>

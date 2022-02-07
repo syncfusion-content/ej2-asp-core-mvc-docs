@@ -1,0 +1,30 @@
+<ejs-pivotview id="pivotview" height="300">
+    <e-datasourceSettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
+        <e-rows>
+            <e-field name="Year"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Country"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sales Amount"></e-field>
+        </e-values>
+        <e-formatsettings>
+            <e-field name="Amount" format="C" maximumsignificantdigits="10" minimumsignificantdigits="1" usegrouping="true"></e-field>
+        </e-formatsettings>
+        <e-filters>
+            <e-field name="Product_Categories" caption="Product Categories"></e-field>
+        </e-filters>
+    </e-datasourceSettings>
+    <e-chartSettings title="Sales Analysis" enableSmartLabels="true">
+        <e-chartSeries type="Funnel">
+            <e-datalabel position="@ViewBag.position">
+                <e-connectorStyle color="#f4429e" dashArray="5,3" length="50px" width="2"></e-connectorStyle>
+            </e-datalabel>       
+         </e-chartSeries>
+    </e-chartSettings>
+    <e-displayOption view="Chart"></e-displayOption>
+</ejs-pivotview>

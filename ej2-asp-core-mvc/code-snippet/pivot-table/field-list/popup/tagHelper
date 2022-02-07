@@ -1,0 +1,51 @@
+<ejs-button id="fieldlistbtn" content="Field List" isPrimary="true"></ejs-button>
+
+<div id="Popup_FieldList"></div>
+
+<ejs-pivotview id="PivotView" enginePopulated="onGridEnginePopulate" height="300"></ejs-pivotview>
+
+<ejs-pivotfieldlist id="PivotFieldList" renderMode="Popup" target="#Popup_FieldList" enginePopulated="onFieldListEnginePopulate">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
+        <e-fieldlist-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-fieldlist-formatsettings>
+        <e-fieldlist-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-fieldlist-rows>
+        <e-fieldlist-columns>
+            <e-field name="Year" caption="Year"></e-field>
+            <e-field name="Quarter"></e-field>
+        </e-fieldlist-columns>
+        <e-fieldlist-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-fieldlist-values>
+    </e-datasourcesettings>
+</ejs-pivotfieldlist>
+
+<style>
+    .e-toggle-field-list {
+        display: none !important;
+    }
+</style>
+
+<script>
+    var pivotObj; var fieldlistObj;
+    function onGridEnginePopulate(args) {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        fieldlistObj = document.getElementById('PivotFieldList').ej2_instances[0];
+        if (fieldlistObj) {
+            fieldlistObj.update(pivotObj);
+        }
+    }
+    function onFieldListEnginePopulate(args) {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        fieldlistObj = document.getElementById('PivotFieldList').ej2_instances[0];
+        fieldlistObj.updateView(pivotObj);
+    }
+    document.getElementById('fieldlistbtn').onclick = function () {
+        fieldlistObj = document.getElementById('PivotFieldList').ej2_instances[0];
+        fieldlistObj.dialogRenderer.fieldListDialog.show();
+    };
+</script>

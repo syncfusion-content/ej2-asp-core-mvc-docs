@@ -1,0 +1,85 @@
+ <ejs-spreadsheet id="spreadsheet" created="created" fileMenuItemSelect="fileMenuItemSelect" fileMenuBeforeOpen="fileMenuBeforeOpen" showFormulaBar="false" showSheetTabs="false" allowInsert="false" allowDelete="false" allowMerge="false" openUrl="Home/open" saveUrl="Home/Save">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet name="Shipment Details">
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="130"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="140"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="140"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="90"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+    <script>
+
+        function created() {
+            this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:F1');
+            // Hiding the `Insert` from ribbon.
+            this.hideRibbonTabs(['Insert']);
+            // Set disabled state to `View` ribbon tab.
+            this.enableRibbonTabs(['View'], false);
+            // Adding the `Help` ribbon tab at the last index.
+            // Specify the ribbon tab header text in last optional argument(`insertBefore`) for inserting new tab before any existing tab.
+            this.addRibbonTabs([{
+                header: { text: 'Help' }, content: [{
+                    text: 'Feedback', tooltipText: 'Feedback',
+                    click: (args) => { /* Any click action for this toolbar item will come here. */ }
+                }]
+            }]);
+            // Hiding the unwanted toolbar items from `Home` by specifying its index.
+            this.hideToolbarItems('Home', [0, 1, 2, 4, 14, 15, 21, 24]);
+            // Set disable state to `Underline`, 'Wrap text` toolbar items from `Home` by specifying the item id.
+            this.enableToolbarItems('Home', [`${this.element.id}_underline`, `${this.element.id}_wrap`], false);
+            // Set disable state to `Protect Sheet` toolbar item from `Data` by mentioning its index.
+            this.enableToolbarItems('Data', [0], false);
+            // Adding the new `Custom Formulas` toolbar item under `Formulas` tab for adding custom formulas.
+            this.addToolbarItems(
+                'Formulas', [{ type: 'Separator' }, {
+                    text: 'Custom Formulas', tooltipText: 'Custom Formulas',
+                    // You can set click handler for each new custom toolbar item
+                    click: (args) => {
+                        // You can add custom formulas here.
+                    }
+                }]);
+            // Adding new custom item `Import` after the existing `Open` item. By default, new item will add after the specified item.
+            this.addFileMenuItems([{ text: 'Import', iconCss: 'e-open e-icons' }], 'Open');
+            // Adding new custom item `Export As` after the existing `Save As` item.
+            // Set `insertAfter` optional argument as `false` for adding new item before the specified item.
+            this.addFileMenuItems(
+                [{
+                    text: 'Export As', iconCss: 'e-save e-icons', items: [{ text: 'XLSX', iconCss: 'e-xlsx e-icons' },
+                    { text: 'XLS', iconCss: 'e-xls e-icons' }, { text: 'CSV', iconCss: 'e-csv e-icons' }]
+                }],
+                'Save As', false);
+        }
+        function fileMenuBeforeOpen() { // Because the file menu items are created dynamically, you need to perform the hide or show and enable/disable operations
+            // under filemenu before open event.
+            // Hiding the `Save As` and `Open` item.
+            this.hideFileMenuItems(['Save As', 'Open']);
+            // Set disable state to `New` item. You can perform any file menu items customization by specifying the item id,
+            // if it has more than one same item text. Set the last argument `isUniqueId` as true for using the item id.
+            this.enableFileMenuItems([`${this.element.id}_New`], false, true);
+        }
+
+        function fileMenuItemSelect(args) {
+            // Custom file menu items select handler
+            switch (args.item.text) {
+                case 'Import': select(`#${this.element.id}_fileUpload`, this.element).click();
+                    break;
+                case 'XLSX': this.save({ saveType: 'Xlsx' });
+                    break;
+                case 'XLS': this.save({ saveType: 'Xls' });
+                    break;
+                case 'CSV': this.save({ saveType: 'Csv' });
+                    break;
+            }
+        }
+
+    </script>

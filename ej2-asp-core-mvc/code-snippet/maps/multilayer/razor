@@ -1,0 +1,43 @@
+
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+@{
+    var shapeSettings = new Syncfusion.EJ2.Maps.MapsShapeSettings
+    {
+        Fill = "#E5E5E5",
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Color = "black",
+            Width = 0.1,
+            Opacity = 1
+        }
+    };
+    var shapeSettings1 = new Syncfusion.EJ2.Maps.MapsShapeSettings
+    {
+        Fill = "rgba(141, 206, 255, 0.6)",
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Color = "#1a9cff",
+            Width = 0.25,
+            Opacity = 1
+        }
+    };
+    var shapeSettings2 = new Syncfusion.EJ2.Maps.MapsShapeSettings
+    {
+        Fill = "rgba(141, 206, 255, 0.6)",
+        Border = new Syncfusion.EJ2.Maps.MapsBorder
+        {
+            Color = "#1a9cff",
+            Width = 0.25,
+            Opacity = 1
+        }
+    };
+}
+
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.ShapeSettings(shapeSettings).ShapeData(ViewBag.usmap).Add();
+    l.ShapeSettings(shapeSettings1).Type(Syncfusion.EJ2.Maps.Type.SubLayer).ShapeData(ViewBag.california).Add();
+    l.ShapeSettings(shapeSettings2).Type(Syncfusion.EJ2.Maps.Type.SubLayer).ShapeData(ViewBag.texas).Add();
+}).Render()

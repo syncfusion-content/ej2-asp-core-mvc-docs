@@ -1,0 +1,4 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("circular2").Axes(axes =>axes
+.Pointers(pointer => pointer.Value(70).Add()).Add()).Tooltip(tooltip =>tooltip.Enable(true)).Render()

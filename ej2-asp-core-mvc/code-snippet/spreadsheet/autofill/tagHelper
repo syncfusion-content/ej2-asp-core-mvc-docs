@@ -1,0 +1,34 @@
+<ejs-button id="showfillbtn" content="Change showFillOptions"></ejs-button>
+<ejs-spreadsheet id="spreadsheet" created="created">
+            <e-spreadsheet-sheets>
+                <e-spreadsheet-sheet name="Price Details">
+					<e-spreadsheet-rows>
+						<e-spreadsheet-row height=30>
+						</e-spreadsheet-row>
+					</e-spreadsheet-rows>
+                    <e-spreadsheet-ranges>
+                        <e-spreadsheet-range dataSource="ViewBag.DefaultData" startCell="A1"></e-spreadsheet-range>
+                    </e-spreadsheet-ranges>
+					<e-spreadsheet-columns>
+						<e-spreadsheet-column width="130"></e-spreadsheet-column>
+						<e-spreadsheet-column width="100"></e-spreadsheet-column>
+						<e-spreadsheet-column width="100"></e-spreadsheet-column>
+					</e-spreadsheet-columns>
+                </e-spreadsheet-sheet>
+            </e-spreadsheet-sheets>
+        </ejs-spreadsheet>
+
+    <script>
+    function created() {
+		this.cellFormat({ backgroundColor: '#357cd2', color: '#fff', fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.autoFill('D2:D3','D4:D11','Down','CopyCells');
+        this.autoFill('E2:E3','E4:E11','Down','FillSeries');
+        this.autoFill('B2:B3','B4:B11','Down','FillFormattingOnly');
+        this.autoFill('C2:C3','C4:C11','Down','FillWithoutFormatting');
+    }
+	 document.getElementById("togglebtn").addEventListener('click', function () {
+            var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
+			var showFillOptions = spreadsheetObj.autoFillSettings.showFillOptions;
+            spreadsheetObj.autoFillSettings.showFillOptions = !showFillOptions;
+        });
+    </script>

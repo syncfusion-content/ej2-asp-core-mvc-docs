@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.CircularGauge;
+
+@{
+    var font = new CircularGaugeFont
+    {
+        Color = "red"
+    };
+}
+<ejs-circulargauge id="circular">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis>
+            <e-axis-labelstyle font="font">
+            </e-axis-labelstyle>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>

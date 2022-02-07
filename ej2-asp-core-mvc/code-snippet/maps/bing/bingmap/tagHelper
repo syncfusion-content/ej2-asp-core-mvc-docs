@@ -1,0 +1,7 @@
+
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer layerType="Bing" key="AuQazZ3PUo3p2_c2KPhqMku-iKvee5fKcRREIg46MENqVTM9dp2ZyTbrHJpR9esZ">
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

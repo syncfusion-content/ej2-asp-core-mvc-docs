@@ -1,0 +1,29 @@
+@using Syncfusion.EJ2;
+
+<ejs-circulargauge id="circular">
+    <e-circulargauge-tooltip enable="true" enableAnimation="false" type='new string[]{"Pointer", "Range", "Annotation"}'>
+        <e-tooltipsettings-annotationSettings format="Circulargauge">
+        </e-tooltipsettings-annotationSettings>
+        <e-tooltipsettings-rangeSettings fill="red">
+        </e-tooltipsettings-rangeSettings>
+    </e-circulargauge-tooltip>
+    <e-circulargauge-axes>
+        <e-circulargauge-axis startAngle="240" endAngle="120" minimum="0" maximum="120" radius="80%">
+            <e-axis-linestyle width="0"></e-axis-linestyle>
+            <e-axis-labelstyle useRangeColor="true">
+            </e-axis-labelstyle>
+            <e-axis-majorticks color="white" offset="-5" height="12"></e-axis-majorticks>
+            <e-axis-minorticks color="transparent" width="0"></e-axis-minorticks>
+            <e-circulargauge-annotations>
+                <e-circulargauge-annotation content="CircularGauge" zIndex="1" angle="180"></e-circulargauge-annotation>
+            </e-circulargauge-annotations>
+            <e-circulargauge-ranges>
+                <e-circulargauge-range start="0" end="50" startWidth="10" endWidth="10" radius="102%"></e-circulargauge-range>
+                <e-circulargauge-range start="50" end="120" startWidth="10" endWidth="10" radius="102%"></e-circulargauge-range>
+            </e-circulargauge-ranges>
+            <e-circulargauge-pointers>
+                <e-circulargauge-pointer value="50"></e-circulargauge-pointer>
+            </e-circulargauge-pointers>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>

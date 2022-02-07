@@ -1,0 +1,35 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts => ts.Text("Summary of merge requests in GitLab").TextStyle(ViewBag.textStyle)).XAxis(
+xAxis =>
+{
+    xAxis.Minimum(new System.DateTime(2017, 6, 23)).Maximum(new System.DateTime(2018, 6, 30)).IntervalType(Syncfusion.EJ2.HeatMap.IntervalType.Days).ValueType(Syncfusion.EJ2.HeatMap.ValueType.DateTime).
+    ShowLabelOn(Syncfusion.EJ2.HeatMap.LabelType.Months).
+    LabelFormat("MMM").OpposedPosition(true).Increment(7);
+}).YAxis(yaxis =>
+{
+    yaxis.Labels(ViewBag.yLabels).IsInversed(true);
+}).LegendSettings(ls => ls.Position(Syncfusion.EJ2.HeatMap.LegendPosition.Bottom).Width("20%").ShowLabel(true).
+Alignment(Syncfusion.EJ2.HeatMap.Alignment.Near).LabelDisplayType(Syncfusion.EJ2.HeatMap.LabelDisplayType.None).
+EnableSmartLegend(true)).PaletteSettings(ps => ps.Palette(palette =>
+{
+    palette.Value(0).Color("rgb(238,238,238)").Label("no contributions").Add();
+    palette.Value(1).Color("rgb(172, 213, 242)").Label("1-15 contributions").Add();
+    palette.Value(16).Color("rgb(127, 168, 201)").Label("16-31 contributions").Add();
+    palette.Value(32).Color("rgb(82, 123, 160)").Label("31-49 contributions").Add();
+    palette.Value(50).Color("rgb(37, 78, 119)").Label("50+ contributions").Add();
+}).Type(Syncfusion.EJ2.HeatMap.PaletteType.Fixed).EmptyPointColor("white")).Height("300px").CellSettings(cs =>
+cs.Border(ViewBag.border).ShowLabel(false)).TooltipRender("tooltipRender").DataSource(ViewBag.dataSource).Render()
+
+<script>
+    var tooltipRender = function (args) {
+        var intl = new ej.base.Internationalization();
+        var format = intl.getDateFormat({ format: 'EEE MMM dd, yyyy' });
+        var newDate = args.xValue;
+        var date = new Date(newDate.getTime());
+        var axisLabel = args.heatmap.axisCollections[1].axisLabels;
+        var index = axisLabel.indexOf(args.yLabel);
+        (date).setDate((date).getDate() + index);
+        var value = format(date);
+        args.content = [(args.value === 0 ? 'No' : args.value) + ' ' + 'contributions' + '<br>' + value];
+    };
+</script>  

@@ -1,0 +1,30 @@
+@{
+    var data = new[]
+    {
+            new {latitude= 37.0000, longitude= -120.0000, city= "California" },
+            new {latitude= 40.7127, longitude= -74.0059, city= "New York" },
+            new {latitude= 42.0000, longitude= -93.0000, city= "Iowa" }
+       };
+    var marker = new List<MapsMarker>
+    {
+        new MapsMarker{Visible=true, Template="#template", DataSource=data}
+    };
+
+    }
+
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+<div id="control-section">
+    <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.worldmap" markerSettings="marker"></e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>
+<div id="template" style="display: none;">
+    <div>
+        <div style="margin-left:8px;height:45px;width:120px;margin-top:-23px;">
+            <label style="color:black;margin-left:15px;font-weight:normal;">\{\{\:city\}\}</label>
+        </div>
+    </div>
+</div>

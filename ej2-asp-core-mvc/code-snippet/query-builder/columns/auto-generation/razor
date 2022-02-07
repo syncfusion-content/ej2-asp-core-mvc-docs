@@ -1,0 +1,1 @@
+  @Html.EJS().QueryBuilder("querybuilder").Width("100%").DataSource(ViewBag.dataSource).Render()

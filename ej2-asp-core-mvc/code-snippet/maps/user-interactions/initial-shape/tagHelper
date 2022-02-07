@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.Maps;
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData="ViewBag.world_map">
+            <e-layersettings-initialshapeselections>
+                <e-layersettings-initialshapeselection shapePath="continent", shapeValue="Africa"></e-layersettings-initialshapeselection>
+                <e-layersettings-initialshapeselection shapePath="name", shapeValue="India"></e-layersettings-initialshapeselection>
+            </e-layersettings-initialshapeselections>
+            <e-layersettings-selectionsettings enable="true" fill="green">
+                <e-layers-selection-border color="White" width="2" opacity="1"> </e-layers-selection-border>
+            </e-layersettings-selectionsettings>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

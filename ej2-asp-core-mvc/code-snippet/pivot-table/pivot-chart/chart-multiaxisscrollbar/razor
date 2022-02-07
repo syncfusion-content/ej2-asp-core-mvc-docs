@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add(); values.Name("Products").Type("Count").Add();
+})).DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ChartSettings(chartSettings => chartSettings.EnableMultipleAxis(true).enableScrollOnMultiAxis(true).ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column))).Render()

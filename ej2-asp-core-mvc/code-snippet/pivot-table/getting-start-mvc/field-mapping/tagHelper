@@ -1,0 +1,21 @@
+<ejs-pivotview id="PivotView" height="300" showGroupingBar="true" showFieldList="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" allowLabelFilter="true" allowValueFilter="true">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country" caption="Country"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+        </e-values>
+         <e-fieldmapping>
+            <e-field name="Quarter" showSortIcon="false"></e-field>
+            <e-field name="Products" showFilterIcon="false" showRemoveIcon="false"></e-field>
+            <e-field name="Amount" caption="Sold Amount" showValueTypeIcon="false"></e-field>
+        </e-fieldmapping>
+    </e-datasourcesettings>
+</ejs-pivotview>

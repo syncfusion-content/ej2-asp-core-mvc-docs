@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2;
+@Html.EJS().HeatMap("container").TitleSettings(ts => 
+ts.Text("Sales Revenue per Employee (in 1000 US$)").TextStyle(ViewBag.textStyle)).XAxis(xAxis =>
+xAxis.Labels(ViewBag.xLabels)).YAxis(yaxis =>
+yaxis.Labels(ViewBag.yLabels)).CellRender("cellRender").DataSource(ViewBag.dataSource).Render()
+
+<script>
+var cellRender = function (args) {
+    args.displayText = (args.value) + '$';
+};
+</script>

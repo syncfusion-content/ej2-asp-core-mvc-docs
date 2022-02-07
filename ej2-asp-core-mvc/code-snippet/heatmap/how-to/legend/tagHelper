@@ -1,0 +1,29 @@
+<ejs-heatmap id='container' dataSource="ViewBag.dataSource" legendRender="legendRender">
+  <e-heatmap-titlesettings text="Sales Revenue per Employee (in 1000 US$)" textStyle="ViewBag.textStyle">
+  </e-heatmap-titlesettings>
+  <e-heatmap-xaxis labels="ViewBag.xLabels">
+  </e-heatmap-xaxis>
+  <e-heatmap-yaxis labels="ViewBag.yLabels">
+  </e-heatmap-yaxis>
+  <e-heatmap-palettesettings>
+        <e-palettes>
+            <e-palette value="0" color="#C2E7EC"></e-palette>
+            <e-palette value="25000" color="#AEDFE6"></e-palette>
+            <e-palette value="50000" color="#9AD7E0"></e-palette>
+            <e-palette value="75000" color="#72C7D4"></e-palette>
+            <e-palette value="99000" color="#5EBFCE"></e-palette>
+        </e-palettes>
+  </e-heatmap-palettesettings>
+  <e-heatmap-legendsettings position="Right"></e-heatmap-legendsettings>
+</ejs-heatmap>
+
+<script>
+    var legendRender = function (args) {
+        if(args.text=='25,000' || args.text=='50,000'|| args.text=='99,000'){
+            args.text = args.text.replace(/,/, "");
+            args.text = `${parseInt(args.text/1000)}` + "k "+"$";
+        } else {
+            args.cancel=true;
+        }
+    };
+</script>

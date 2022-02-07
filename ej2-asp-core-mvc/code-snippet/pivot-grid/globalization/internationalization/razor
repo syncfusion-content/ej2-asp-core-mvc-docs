@@ -1,0 +1,92 @@
+@Html.EJS().PivotView("PivotGrid").Height("300").DataSource(dataSource => dataSource.Data((IEnumerable<object>)ViewBag.Data).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Production Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).ShowFieldList(true).Render()
+
+<script>
+    var pivotGridObj;
+    var L10n = ej.base.L10n;
+    L10n.load({
+        "fr-CH": {
+            "pivotview": {
+                "grandTotal": "Grand Total",
+                "total": "Total",
+                "value": "Valeur",
+                "noValue": "Pas de valeur",
+                "row": "Rangée",
+                "column": "La colonne",
+                "collapse": "Effondrement",
+                "expand": "L'expansion"
+            },
+            "pivotfieldlist": {
+                "fieldList": "Field List",
+                "dropRowPrompt": "Drop row ici",
+                "dropColPrompt": "Drop column here",
+                "dropValPrompt": "Valeur liste déroulante ici",
+                "dropFilterPrompt": "Filtre goutte ici",
+                "addPrompt": "Ajouter un champ ici",
+                "centerHeader": "Faire glisser les champs entre les zones ci-dessous :",
+                "add": "Ajouter",
+                "drag": "Faites glisser",
+                "filter": "Filter",
+                "filtered": "Filtered",
+                "sort": "Trier",
+                "remove": "Déposer",
+                "filters": "Filters",
+                "rows": "Lignes",
+                "columns": "Colonnes",
+                "values": "Valeurs",
+                "error": "Error",
+                "dropAction": "Champ calculé ne peut pas être place dans toute autre région, à l'exception de l'axe des valeurs.",
+                "search": "Recherchez",
+                "close": "Fermer",
+                "cancel": "Annuler",
+                "delete": "Supprimer",
+                "alert": "Alert",
+                "warning": "Attention",
+                "ok": "OK",
+                "allFields": "Tous les domaines",
+                "noMatches": "Pas de correspondance"
+            }
+        }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        pivotGridObj = document.getElementById('PivotGrid').ej2_instances[0];
+        loadCultureFiles('fr-CH');
+        pivotGridObj.locale = 'fr-CH';
+    });
+
+    function loadCultureFiles(name) {
+        var files = ['ca-gregorian.json', 'numbers.json', 'timeZoneNames.json'];
+        if (name === 'ar') {
+            files.push('numberingSystems.json');
+        }
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var val, ajax;
+            if (name === 'ar' && prop === files.length - 1) {
+                ajax = new ej.base.Ajax(location.origin + '/../../scripts/cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                ajax = new ej.base.Ajax(location.origin + '/../../scripts/cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+            ajax.onSuccess = function (value) {
+                val = value;
+            };
+            ajax.send();
+            loader(JSON.parse(val));
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+</script>

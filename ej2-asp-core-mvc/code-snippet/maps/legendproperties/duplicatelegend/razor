@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+@Html.EJS().Maps("maps").LegendSettings(legend => legend.Visible(true).ValuePath("continent")
+.RemoveDuplicateLegend(true)).Layers(l =>
+{
+    l.ShapeSettings(ss => ss.ColorValuePath("color")).ShapeData(ViewBag.worldMap)
+    .ShapeDataPath("continent").ShapePropertyPath("continent")
+    .DataSource(ViewBag.legendData1).Add();
+}).Render()
+
+

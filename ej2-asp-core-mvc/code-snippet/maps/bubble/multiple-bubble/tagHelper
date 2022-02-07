@@ -1,0 +1,30 @@
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var data = new[]
+       {
+           new { country= "United States", femaleRatio=50.50442726, maleRatio=49.49557274, femaleRatioColor="green", maleRatioColor="blue" },
+           new { country= "India", femaleRatio=48.18032713, maleRatio=51.81967287, femaleRatioColor="blue", maleRatioColor="#c2d2d6" },
+           new { country= "Oman", femaleRatio=34.15597234, maleRatio=65.84402766, femaleRatioColor="#09156d", maleRatioColor="orange" },
+           new { country= "United Arab Emirates", femaleRatio=27.59638942, maleRatio=72.40361058, femaleRatioColor="#09156d", maleRatioColor="orange" }
+       };
+    var bubbledata = new[]
+       {
+           new { country= "United States", femaleRatio=50.50442726, maleRatio=49.49557274, femaleRatioColor="green", maleRatioColor="blue" },
+           new { country= "India", femaleRatio=48.18032713, maleRatio=51.81967287, femaleRatioColor="blue", maleRatioColor="#c2d2d6" },
+           new { country= "Oman", femaleRatio= 34.15597234, maleRatio=65.84402766, femaleRatioColor="#09156d", maleRatioColor="orange" },
+           new { country= "United Arab Emirates", femaleRatio= 27.59638942, maleRatio=72.40361058, femaleRatioColor="#09156d", maleRatioColor="orange" }
+       };
+}
+<ejs-maps id="maps">
+    <e-maps-layers>
+        <e-maps-layer shapeData=" ViewBag.world_map" shapeDataPath="name" shapePropertyPath='new[] { "name" }'>
+            <e-layersettings-bubbles>
+                <e-layersettings-bubble visible="true" valuePath="femaleRatio" colorValuePath="femaleRatioColor" dataSource="data"
+                                        minRadius="5" maxRadius="20"></e-layersettings-bubble>
+                <e-layersettings-bubble visible="true" valuePath="maleRatio" colorValuePath="maleRatioColor" dataSource="bubbledata"
+                                        minRadius="15" maxRadius="25" bubbleType="Circle" opacity="0.4"></e-layersettings-bubble>
+            </e-layersettings-bubbles>
+        </e-maps-layer>
+    </e-maps-layers>
+</ejs-maps>

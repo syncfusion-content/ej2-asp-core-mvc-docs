@@ -1,0 +1,45 @@
+   @Html.EJS().PivotView("PivotGrid").Height("300").DataSource(dataSource => dataSource.Data((IEnumerable<object>)ViewBag.Data).ExpandAll(false).EnableSorting(true).AllowLabelFilter(true).AllowValueFilter(true)
+    .FormatSettings(formatsettings => 
+    { 
+        formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add(); 
+    }).Rows(rows => 
+    { 
+        rows.Name("Country").Add(); rows.Name("Products").Add(); 
+    }).Columns(columns => 
+    { 
+        columns.Name("Year").Caption("Production Year").Add(); columns.Name("Quarter").Add(); 
+    }).Values(values => 
+    { 
+        values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add(); 
+    })).ShowFieldList(true).Render()
+
+    <style>
+#PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-dropdown-icon::before,
+#PivotView .e-pivot-button .e-icons.e-dropdown-icon::before {
+      content: "\e941";
+}
+
+#PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-pv-filtered::before,
+#PivotView .e-pivot-button .e-icons.e-pv-filtered::before {
+    content: "\e974";
+}
+
+#PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-pv-filter::before,
+#PivotView .e-pivot-button .e-icons.e-pv-filter::before {
+    content: '\e202';
+}
+
+#PivotView_PivotFieldList .e-icons.e-toggle-field-list::before {
+    content: '\e337';
+}
+
+#PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-sort::before,
+#PivotView .e-pivot-button .e-icons.e-sort::before {
+    content: '\e306';
+}
+
+#PivotView_PivotFieldList_Wrapper .e-pivot-button .e-icons.e-remove::before,
+#PivotView .e-pivot-button .e-icons.e-remove::before {
+    content: '\e201';
+}
+</style>

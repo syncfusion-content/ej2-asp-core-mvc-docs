@@ -1,0 +1,21 @@
+@Html.EJS().PivotView("PivotView").Height(300).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).ShowGroupingBar(true).MemberEditorOpen("memberEditorOpen").Render()
+
+<script>
+    function memberEditorOpen(args) {
+         if (args.fieldName == 'Country') {
+            args.fieldMembers = args.fieldMembers.filter((key) => {
+                return (key.id == 'France' || key.id == 'Germany')
+            });
+       }
+    }
+</script>

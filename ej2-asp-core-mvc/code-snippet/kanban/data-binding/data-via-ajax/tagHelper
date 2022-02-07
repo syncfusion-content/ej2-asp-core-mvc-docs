@@ -1,0 +1,23 @@
+  <ejs-button id="btn" content="ajax"></ejs-button>
+<ejs-kanban id="Kanban" keyField = "ShipCountry" created="onCreate">
+    <e-kanban-columns>
+        <e-kanban-column headerText="Denmark" keyField="Denmark"></e-kanban-column>
+        <e-kanban-column headerText="Brazil" keyField="Brazil"></e-kanban-column>
+        <e-kanban-column headerText="Switzerland" keyField="Switzerland"></e-kanban-column>
+        <e-kanban-column headerText="Germany" keyField="Germany"></e-kanban-column>
+    </e-kanban-columns>
+        <e-kanban-cardsettings contentField="ShippedDate" headerField="OrderID"></e-kanban-cardsettings>
+</ejs-kanban>
+<script>
+    function onCreate() {
+        var kanbanObj = this;
+        var button = document.getElementById('btn');
+        button.addEventListener("click", function (e) {
+            let ajax = new ej.base.Ajax("https://ej2services.syncfusion.com/production/web-services/api/Orders", "GET");
+            ajax.send();
+            ajax.onSuccess = function (data) {
+                kanbanObj.dataSource = JSON.parse(data);
+            };
+        });
+    }
+</script>

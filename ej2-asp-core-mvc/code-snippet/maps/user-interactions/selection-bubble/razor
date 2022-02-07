@@ -1,0 +1,22 @@
+@using Syncfusion.EJ2.Maps;
+@using Syncfusion.EJ2;
+
+@{ var select = new Syncfusion.EJ2.Maps.MapsSelectionSettings
+        {
+            Enable = true,
+            Fill = "green",
+            Border = new Syncfusion.EJ2.Maps.MapsBorder
+                    {
+                        Color = "white",
+                        Width = 2,
+                        Opacity = 1
+                    }
+            };
+}
+
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l
+    .BubbleSettings(bubble => bubble.Visible(true).SelectionSettings(select).MinRadius(20).MaxRadius(20).DataSource(ViewBag.bubbleData).ValuePath("population").Add()).
+    ShapeDataPath("name").ShapePropertyPath("name").ShapeData(ViewBag.worldMap).Add();
+}).Render()

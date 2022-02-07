@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("pivotview").Width("100%").Height("600").ShowFieldList(true).ShowGroupingBar(true).LoadOnDemandInMemberEditor(true).AllowCalculatedField(true).DataSourceSettings(dataSourceSettings => dataSourceSettings.EnableSorting(true)
+        .Url("https://bi.syncfusion.com/olap/msmdpump.dll").Catalog("Adventure Works DW 2008 SE").Cube("Adventure Works").ProviderType(ProviderType.SSAS)
+        .Rows(rows => { rows.Name("[Customer].[Customer Geography]").Caption("Customer Geography").Add(); })
+        .Columns(columns => { columns.Name("[Product].[Product Categories]").Caption("Product Categories").Add(); columns.Name("[Measures]").Caption("Measures").Add(); })
+        .Values(values => { values.Name("[Measures].[Customer Count]").Caption("Customer Count").Add(); values.Name("[Measures].[Internet Sales Amount]").Caption("Internet Sales Amount").Add(); values.Name("Order on Discount").IsCalculatedField(true).Add(); })
+        .Filters(filters => { filters.Name("[Date].[Fiscal]").Caption("Date Fiscal").Add(); })
+        .CalculatedFieldSettings(calculatedFieldSettings =>
+        {
+            calculatedFieldSettings.Name("BikeAndComponents").Formula("([Product].[Product Categories].[Category].[Bikes] + [Product].[Product Categories].[Category].[Components])").HierarchyUniqueName("[Product].[Product Categories]").FormatString("Standard").Add();
+            calculatedFieldSettings.Name("Order on Discount").Formula("[Measures].[Order Quantity] + ([Measures].[Order Quantity] * 0.10)").FormatString("Currency").Add();
+        })).Render()
+
+<style>
+    #pivotview {
+        display: block;
+    }
+</style>

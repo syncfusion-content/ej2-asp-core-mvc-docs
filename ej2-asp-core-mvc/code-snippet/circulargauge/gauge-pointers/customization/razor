@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().CircularGauge("circular").Axes(axes => axes
+.Pointers(pointer => pointer.Value(90)
+                            .Radius("50%").Color("#007DD1").PointerWidth(10)
+                            .Border(border => border.Color("#007DD1").Width(5))
+                            .Cap(cab => cab.Radius(10).Color("white"))
+                            .NeedleTail(needle => needle.Length("25%").Color("#007DD1"))
+        .Add())
+  .Add()).Render()
