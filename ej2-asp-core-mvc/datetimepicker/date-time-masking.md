@@ -19,8 +19,7 @@ DateTimePicker has `enableMask` property that provides the option to enable the 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/datetimepicker/mask-module/mask-input/tagHelper %}
 {% endhighlight %}
-{% highlight  tabtitle="" %}
-{% include code-snippet/datetimepicker/mask-module/mask-input/ %}
+{% highlight c#  tabtitle="code-snippet/datetimepicker/mask-module/mask-input/" %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,8 +29,7 @@ DateTimePicker has `enableMask` property that provides the option to enable the 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/datetimepicker/mask-module/mask-input/razor %}
 {% endhighlight %}
-{% highlight  tabtitle="" %}
-{% include code-snippet/datetimepicker/mask-module/mask-input/ %}
+{% highlight c# tabtitle="code-snippet/datetimepicker/mask-module/mask-input" %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
