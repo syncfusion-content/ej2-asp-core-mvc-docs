@@ -55,7 +55,7 @@ select the corresponding Chart **X-axis and Y-axis** from option.
 
 ![Model-MVC](how-to/images/model-mvc.png)
 
-N> Ensure that  at least one Entity Framework model  exists in your project and the application gets compiled once. If no Entity Framework model exists in your application, refer to the [`documentation`](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/creating-the-web-application#generate-the-models) to generate the Entity Framework model. Once model file added, ensure required DBContext and properties are added. Now, build the application and try scaffolding. If any changes done in model properties later, compile the application once before perform scaffolding.
+N> Ensure that  at least one Entity Framework model  exists in your project and the application gets compiled once. If no Entity Framework model exists in your application, refer to the [`documentation`](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/creating-the-web-application#generate-the-models) to generate the Entity Framework model. Once model file added, ensure required DBContext and properties are added. Now, build the application and try scaffolding. If any changes done in model properties later, compile the application once before perform scaffolding.
 
 ## How to render Syncfusion Control'?'
 

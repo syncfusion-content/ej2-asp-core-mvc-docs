@@ -23,11 +23,58 @@ The following properties can be used to customize `majorTicklines` and `minorTic
 * **color** - Specifies the color of ticklines.
 * **useRangeColor** - Specifies the color of ticklines and represents the color from corresponding range colors.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/axis-customization/ticks/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Ticks.cs" %}
+{% include code-snippet/bullet-chart/axis-customization/ticks/ticks.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/axis-customization/ticks/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Ticks.cs" %}
+{% include code-snippet/bullet-chart/axis-customization/ticks/ticks.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
 ![Customizing Major and Minor TickLines in Bullet Chart](images/blazor-bullet-chart-tick-line-customization.png)
 
 ## Tick Placement
 
 The major and the minor ticks can be placed **inside** or **outside** the ranges using the `tickPosition` property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/axis-customization/tick-placement/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tick-placement.cs" %}
+{% include code-snippet/bullet-chart/axis-customization/tick-placement/tick-placement.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/axis-customization/tick-placement/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tick-placement.cs" %}
+{% include code-snippet/bullet-chart/axis-customization/tick-placement/tick-placement.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Label Format
 
@@ -125,6 +172,30 @@ The following table describes the result of applying some commonly used formats 
 To separate groups of thousands, use the [`enableGroupSeparator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBuilder.html) property of bullet-chart.
 To separate the groups of thousands, set the `enableGroupSeparator` property to **true**.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/axis-customization/grouping/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Grouping.cs" %}
+{% include code-snippet/bullet-chart/axis-customization/grouping/grouping.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/axis-customization/grouping/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Grouping.cs" %}
+{% include code-snippet/bullet-chart/axis-customization/grouping/grouping.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
 ## Custom Label Format
 
 Using the `labelFormat` property, axis labels can be specified with a custom defined format in addition to the axis value. The label format uses a placeholder such as **${value}K**, which represents the axis label.
@@ -160,9 +231,58 @@ Using the `labelFormat` property, axis labels can be specified with a custom def
 
 You can customize the axis labels `inside` or `outside` the bullet-chart using the [`labelPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.LabelPosition.html) property.
 
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/axis-customization/label-placement/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Label-placement.cs" %}
+{% include code-snippet/bullet-chart/axis-customization/label-placement/label-placement.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/axis-customization/label-placement/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Label-placement.cs" %}
+{% include code-snippet/bullet-chart/axis-customization/label-placement/label-placement.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
 ## Opposed Position
 
 To place an axis opposite to its original position, set the `opposedPosition` property to **true**.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/axis-customization/opposed/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opposed.cs" %}
+{% include code-snippet/bullet-chart/axis-customization/opposed/opposed.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/axis-customization/opposed/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opposed.cs" %}
+{% include code-snippet/bullet-chart/axis-customization/opposed/opposed.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 
 ## Category Label
 

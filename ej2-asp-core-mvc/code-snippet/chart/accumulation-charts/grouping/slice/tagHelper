@@ -1,0 +1,10 @@
+<ejs-accumulationchart id="container" title="RIO Olympics Gold" enableSmartLabels="true">
+    <e-accumulation-series-collection>
+        <e-accumulation-series explode="true" dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="RIO" groupTo="9" groupMode="Point">
+            <e-accumulationseries-datalabel visible="true" position="Outside">
+                <e-connectorstyle type="Line" length="5%"></e-connectorstyle>
+                <e-font size="14px"></e-font>
+            </e-accumulationseries-datalabel>
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>

@@ -44,8 +44,8 @@ Here, the legend for a point can be collapsed by giving the empty string to the 
 
 ## Position and Alignment
 
-By using the position property, you can position the legend at the `Left`, `Right`, `Top` or `Bottom` of the chart.
-You can also align the legend to `Center`, `Far` or `Near` of the chart using the alignment property.
+By using the position property, you can position the legend at the `Left`, `Right`, `Top` or `Bottom` of the chart.
+You can also align the legend to `Center`, `Far` or `Near` of the chart using the alignment property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -103,8 +103,8 @@ You can reverse the order of the legend items by using the [`Reverse`](https://h
 
 ## Legend Shape
 
-To change the legend icon shape, use the `LegendShape` property in the `Series`. By default, legend icon shape
-is `SeriesType`.
+To change the legend icon shape, use the `LegendShape` property in the `Series`. By default, legend icon shape
+is `SeriesType`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

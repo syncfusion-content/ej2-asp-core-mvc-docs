@@ -1,0 +1,30 @@
+@(Html.EJS().Chart("container").EnableAnimation(true).Crosshair(ch => ch.Enable(true).LineType(Syncfusion.EJ2.Charts.LineType.Vertical)).ChartArea(ca => ca.Border(br => br.Width(0))).Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).
+        XName("x").
+        YName("y").
+        Low("low").
+        High("high").
+        Close("close").
+        Volume("volume").
+        Open("open").
+        Name("Apple Inc").
+        BearFillColor("#2ecd71").
+        BullFillColor("#e74c3d").
+        DataSource(ViewBag.dataSource).Width(2).Add();
+}).
+    Indicators(ind => {
+        ind.Type(Syncfusion.EJ2.Charts.TechnicalIndicators.BollingerBands).
+            Field(Syncfusion.EJ2.Charts.FinancialDataFields.Close).
+            SeriesName("Apple Inc").
+            Fill("#606eff").
+            Period(14).
+            Animation(an => an.Enable(true)).
+            UpperLine(ul => ul.Color("#ffb735").Width(1)).
+            LowerLine(ll => ll.Color("#f2ec2f").Width(1)).Add();
+    }).
+   PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).CrosshairTooltip(cr => cr.Enable(true)).IntervalType(Syncfusion.EJ2.Charts.IntervalType.Months).MajorGridLines(mg => mg.Width(0)))
+   .PrimaryYAxis(py => py.Title("Price").LabelFormat("${value}").Minimum(0).Maximum(180).Interval(30).LineStyle(ls => ls.Width(0)))
+   .Tooltip(tp => tp.Enable(true).Shared(true))
+   .Render()
+)

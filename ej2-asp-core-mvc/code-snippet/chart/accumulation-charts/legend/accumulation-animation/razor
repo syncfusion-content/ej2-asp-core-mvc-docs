@@ -1,0 +1,18 @@
+@(Html.EJS().AccumulationChart("container")
+                    .Series(sr =>
+                    {
+                        sr.Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                               .XName("xValue")
+                               .YName("yValue")
+                               .Name("RIO")
+                               .Radius("70%")
+                               .StartAngle(0)
+                               .EndAngle(360)
+                               .InnerRadius("0%")
+                               .DataSource(ViewBag.dataSource).Add();
+                    })
+                     .Tooltip(tp => tp.Enable(true))
+                     .LegendSettings(leg => leg.Visible(true))
+                     .EnableAnimation(true)
+                     .Title("RIO Olympics Gold").Render()
+            )
