@@ -53,8 +53,10 @@ You can visualize all points available in club/group points by clicking on the g
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/grouping/slice/tagHelper%}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/accumulation-charts/grouping/slice/slice.cs" %}
+{% highlight c# tabtitle="Slice.cs" %}
+{% include code-snippet/chart/accumulation-charts/grouping/slice/slice.cs%}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,8 +64,10 @@ You can visualize all points available in club/group points by clicking on the g
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/grouping/slice/razor%}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/accumulation-charts/grouping/slice/slice.cs" %}
+{% highlight c# tabtitle="Slice.cs" %}
+{% include code-snippet/chart/accumulation-charts/grouping/slice/slice.cs%}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -79,8 +83,10 @@ to Point. For example, if the group to value is 11, accumulation chart will show
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/grouping/groupmode/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/accumulation-charts/grouping/groupmode/groupmode.cs" %}
+{% highlight c# tabtitle="Groupmode.cs" %}
+{% include code-snippet/chart/accumulation-charts/grouping/groupmode/groupmode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,8 +94,10 @@ to Point. For example, if the group to value is 11, accumulation chart will show
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/grouping/groupmode/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/accumulation-charts/grouping/groupmode/groupmode.cs" %}
+{% highlight c# tabtitle="Groupmode.cs" %}
+{% include code-snippet/chart/accumulation-charts/grouping/groupmode/groupmode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
