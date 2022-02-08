@@ -1,0 +1,8 @@
+<ejs-chart id="container" enableAnimation="true">
+    <e-chart-primaryxaxis stripLines="ViewBag.yAxis" valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime" interval="1" intervalType="@Syncfusion.EJ2.Charts.IntervalType.Years"></e-chart-primaryxaxis>
+    <e-chart-primaryyaxis interval="10"></e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="Gold" xName="xValue" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

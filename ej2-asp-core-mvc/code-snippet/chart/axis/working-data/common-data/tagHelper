@@ -1,0 +1,9 @@
+<ejs-chart id="container">
+    <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="month" yName="sales" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="month" yName="sales" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

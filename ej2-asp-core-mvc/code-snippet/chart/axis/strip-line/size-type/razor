@@ -1,0 +1,13 @@
+@(Html.EJS().Chart("container").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+        XName("xValue").
+        YName("yValue").
+        DataSource(ViewBag.dataSource).
+        Name("Gold").
+        Width(2).Add();
+}).
+     PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).IntervalType(Syncfusion.EJ2.Charts.IntervalType.Years).StripLines(sl => { sl.Visible(true).Start(new System.DateTime(2005, 01, 01)).Size(1).SizeType(Syncfusion.EJ2.Charts.SizeType.Years).Color("rgba(167,169,171, 0.3)").Add(); })).
+     PrimaryYAxis(py => py.Interval(10))
+   .Render()
+)

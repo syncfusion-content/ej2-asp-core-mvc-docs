@@ -1,14 +1,15 @@
-public IActionResult Index()
+public ActionResult Index()
         {
             List<DefaultBulletData> bulletData = new List<DefaultBulletData>
             {
-                new DefaultBulletData { value = 23, target = 22}     
+                new DefaultBulletData { value = 1500, target = 1300}
             };
             ViewBag.dataSource = bulletData;
             return View();
         }
+
         public class DefaultBulletData
-        {           
+        {
             public double value;
             public double target;
         }

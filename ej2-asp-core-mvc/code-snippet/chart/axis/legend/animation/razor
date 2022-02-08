@@ -1,0 +1,23 @@
+@(Html.EJS().Chart("container").EnableAnimation(true).Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+            Marker(mr => mr.Visible(false).DataLabel(dl => dl.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top))).
+            XName("x").
+            YName("y").
+            DataSource(ViewBag.dataSource).Name("Gold").Width(2).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+            Marker(mr => mr.Visible(false).DataLabel(dl => dl.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top))).
+            XName("x").
+            YName("y").
+            DataSource(ViewBag.dataSource1).Name("Silver").Width(2).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+            Marker(mr => mr.Visible(false).DataLabel(dl => dl.Visible(true).Position(Syncfusion.EJ2.Charts.LabelPosition.Top))).
+            XName("x").
+            YName("y").
+            DataSource(ViewBag.dataSource).Name("Bronze").Width(2).Add();
+
+}).
+   PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category).MajorGridLines(mg => mg.Width(0))).
+   PrimaryYAxis(py => py.MajorGridLines(ml => ml.Width(0)).MajorTickLines(mt => mt.Width(0)).LineStyle(ls => ls.Width(0)).LabelStyle(ls => ls.Color("transparent")))
+   .Render()
+)

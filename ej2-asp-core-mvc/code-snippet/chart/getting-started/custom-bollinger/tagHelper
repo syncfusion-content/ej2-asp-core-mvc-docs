@@ -1,0 +1,27 @@
+<ejs-chart id="container"enableAnimation="true">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime" intervalType="@Syncfusion.EJ2.Charts.IntervalType.Months">
+        <e-majorgridlines width="0"></e-majorgridlines>
+        <e-crosshairtooltip enable="true"></e-crosshairtooltip>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Price" minimum="0" maximum="180" interval="30" labelFormat="${value}">
+        <e-linestyle width="0"></e-linestyle>
+    </e-chart-primaryyaxis>
+    <e-chart-tooltipsettings enable="true" shared="true"></e-chart-tooltipsettings>
+    <e-chart-crosshairsettings enable="true" lineType="@Syncfusion.EJ2.Charts.LineType.Vertical"></e-chart-crosshairsettings>
+    <e-chart-chartarea>
+        <e-chartarea-border width="0"></e-chartarea-border>
+    </e-chart-chartarea>
+    <e-chart-primaryxaxis valueType="DateTime" intervalType="Months"></e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" low="low" high="high" close="close" volume="volume" open="open"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Candle" bullFillColor="#e74c3d" bearFillColor="#2ecd71" name="Apple Inc"></e-series>
+    </e-series-collection>
+    <e-indicators>
+        <e-indicator type="@Syncfusion.EJ2.Charts.TechnicalIndicators.BollingerBands" field="Close" seriesName="Apple Inc" fill="#606eff"
+                     period=14>
+            <e-indicator-animation enable="true"></e-indicator-animation>
+            <e-technicalindicator-lowerline color="#f2ec2f" width="1"></e-technicalindicator-lowerline>
+            <e-technicalindicator-upperline color="#ffb735" width="1"></e-technicalindicator-upperline>
+        </e-indicator>
+    </e-indicators>
+</ejs-chart>

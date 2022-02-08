@@ -1,0 +1,23 @@
+@(Html.EJS().AccumulationChart("container")
+    .Series(sr =>
+    {
+        sr.Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+            .XName("xValue")
+            .YName("yValue")
+            .Name("RIO")
+            .Explode(true)
+            .DataLabel(dl => dl.Visible(true).Name("text").Position(Syncfusion.EJ2.Charts.AccumulationLabelPosition.Outside).ConnectorStyle(cs=>cs.Type(Syncfusion.EJ2.Charts.ConnectorType.Line).Length("5%")).Font(ft => ft.Size("14px")))
+            .Animation(animate => animate.Enable(false))
+            .Radius("70%")
+            .StartAngle(0)
+            .EndAngle(360)
+            .InnerRadius("0%")
+            .GroupTo("3")
+            .GroupMode(Syncfusion.EJ2.Charts.GroupModes.Point)
+            .DataSource(ViewBag.dataSource).Add();
+    })
+    .EnableSmartLabels(true)
+    .Tooltip(tp => tp.Enable(false))
+    .LegendSettings(leg => leg.Visible(false))
+    .Title("RIO Olympics Gold").Render()
+)

@@ -1,0 +1,17 @@
+@(Html.EJS().BulletChart("container")
+                        .Title("Sales Rate")
+                        .Tooltip(tp => tp.Enable(true))
+                        .MajorTickLines(ml => ml.Color("red").Width(5))
+                        .MinorTickLines(mi => mi.Width(4).Color("blue"))
+                        .ValueField("value")
+                        .TargetField("target")
+                        .Ranges(rn =>
+                        {
+                            rn.End(500).Add();
+                            rn.End(1500).Add();
+                            rn.End(2500).Add();
+                        })
+                        .Minimum(0).Maximum(2500).Interval(250)
+                        .DataSource(ViewBag.dataSource)
+                        .Render()
+)

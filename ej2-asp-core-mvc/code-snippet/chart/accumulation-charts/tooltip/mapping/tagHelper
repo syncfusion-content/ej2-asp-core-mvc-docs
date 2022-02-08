@@ -1,0 +1,9 @@
+<ejs-accumulationchart id="container">
+    <e-accumulationchart-tooltipsettings enable="true" format="${point.tooltip}"></e-accumulationchart-tooltipsettings>
+    <e-accumulationchart-legendsettings visible="true">
+    </e-accumulationchart-legendsettings>
+    <e-accumulation-series-collection>
+        <e-accumulation-series tooltipMappingName="text" dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser">
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>

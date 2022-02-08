@@ -1,0 +1,12 @@
+@(Html.EJS().Chart("container").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).
+        XName("xValue").
+        YName("yValue").
+        DataSource(ViewBag.dataSource).
+        Name("Gold").
+        Width(2).Add();
+}).
+     PrimaryYAxis(py => py.Interval(10).StripLines(sl => { sl.Visible(true).Start(20).End(40).IsSegmented(true).SegmentStart(2).SegmentEnd(4).Color("rgba(167,169,171, 0.3)").Add(); }))
+   .Render()
+)

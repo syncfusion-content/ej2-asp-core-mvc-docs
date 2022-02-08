@@ -1,5 +1,0 @@
-  <ejs-chart id="lineContainer" title="Sales Comparison" useGroupingSeparator="true">
-        <e-series-collection>
-            <e-series dataSource="ViewBag.dataSource"  name="Germany" xName="x" width="2" opacity="1" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
-        </e-series-collection>
-    </ejs-chart>
