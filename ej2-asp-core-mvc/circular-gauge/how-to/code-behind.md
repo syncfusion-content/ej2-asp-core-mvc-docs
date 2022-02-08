@@ -80,8 +80,10 @@ Bind the gauge properties passed via ViewData from the controller at client-side
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/circulagauge/how-to/database/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/circulagauge/how-to/database/database.cs" %}
+{% highlight c# tabtitle="Database.cs" %}
+{% include code-snippet/circulagauge/how-to/database/database.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -89,8 +91,10 @@ Bind the gauge properties passed via ViewData from the controller at client-side
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/circulagauge/how-to/database/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/circulagauge/how-to/database/database.cs" %}
+{% highlight c# tabtitle="Database.cs" %}
+{% include code-snippet/circulagauge/how-to/database/database.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -56,8 +56,10 @@ You can also bind a JSON data common to all series using
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/working-data/common-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/working-data/common-data/common-data.cs" %}
+{% highlight c# tabtitle="Common-data.cs" %}
+{% include code-snippet/chart/axis/working-data/common-data/common-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,8 +67,10 @@ You can also bind a JSON data common to all series using
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/working-data/common-data/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/working-data/common-data/common-data.cs" %}
+{% highlight c# tabtitle="Common-data.cs" %}
+{% include code-snippet/chart/axis/working-data/common-data/common-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

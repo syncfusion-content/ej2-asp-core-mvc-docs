@@ -148,8 +148,10 @@ You can create dash array stripline by using `dashArray` property. The Stripline
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/strip-line/dasarray/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/strip-line/dasarray/dash.cs" %}
+{% highlight c# tabtitle="Dash.cs" %}
+{% include code-snippet/chart/axis/strip-line/dasarray/dash.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -157,8 +159,10 @@ You can create dash array stripline by using `dashArray` property. The Stripline
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/strip-line/dasarray/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/strip-line/dasarray/dash.cs" %}
+{% highlight c# tabtitle="Dash.cs" %}
+{% include code-snippet/chart/axis/strip-line/dasarray/dash.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -177,8 +181,10 @@ You can create dash array stripline by using `dashArray` property. The Stripline
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/strip-line/recurrence/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/strip-line/recurrence/recurrence.cs" %}
+{% highlight c# tabtitle="Recurrence.cs" %}
+{% include code-snippet/chart/axis/strip-line/recurrence/recurrence.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -186,8 +192,10 @@ You can create dash array stripline by using `dashArray` property. The Stripline
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/strip-line/recurrence/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/strip-line/recurrence/recurrence.cs" %}
+{% highlight c# tabtitle="Recurrence.cs" %}
+{% include code-snippet/chart/axis/strip-line/recurrence/recurrence.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -211,8 +219,10 @@ The `sizeType` property refers the size of the stripline. They are,
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/strip-line/size-type/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/strip-line/size-type/size-type.cs" %}
+{% highlight c# tabtitle="Size-type.cs" %}
+{% include code-snippet/chart/axis/strip-line/size-type/size-type.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -220,8 +230,10 @@ The `sizeType` property refers the size of the stripline. They are,
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/strip-line/size-type/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/strip-line/size-type/size-type.cs" %}
+{% highlight c# tabtitle="Size-type.cs" %}
+{% include code-snippet/chart/axis/strip-line/size-type/size-type.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -241,8 +253,10 @@ You can create stripline in a particular region with respect to segment. You can
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/strip-line/segment/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/strip-line/segment/segment.cs" %}
+{% highlight c# tabtitle="Segment.cs" %}
+{% include code-snippet/chart/axis/strip-line/segment/segment.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -250,8 +264,10 @@ You can create stripline in a particular region with respect to segment. You can
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/strip-line/segment/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/strip-line/segment/segment.cs" %}
+{% highlight c# tabtitle="Segment.cs" %}
+{% include code-snippet/chart/axis/strip-line/segment/segment.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
