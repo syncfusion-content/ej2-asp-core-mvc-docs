@@ -12,14 +12,14 @@ public ActionResult Index()
             };
 
             List<ChartStripLine> yaxisstriplines = new List<ChartStripLine>();
-            ChartStripLine stripy1 = new ChartStripLine();
-            stripy1.Start = 1;
-            stripy1.Size = 1;
-            stripy1.IsRepeat = true;
-            stripy1.RepeatEvery = 2;
-            stripy1.Color = "rgba(167,169,171, 0.3)";
-            stripy1.Visible = true;
-            yaxisstriplines.Add(stripy1);
+            ChartStripLine stripy = new ChartStripLine();
+            stripy.Start = 1;
+            stripy.Size = 1;
+            stripy.IsRepeat = true;
+            stripy.RepeatEvery = 2;
+            stripy.Color = "rgba(167,169,171, 0.3)";
+            stripy.Visible = true;
+            yaxisstriplines.Add(stripy);
 
             ViewBag.yAxis = yaxisstriplines;
             ViewBag.dataSource = chartData;

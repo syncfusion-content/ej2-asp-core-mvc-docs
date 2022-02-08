@@ -11,15 +11,15 @@ public ActionResult Index()
             };
 
             List<ChartStripLine> yaxisstriplines = new List<ChartStripLine>();
-            ChartStripLine stripy1 = new ChartStripLine();
-            stripy1.Start = 20;
-            stripy1.End = 40;
-            stripy1.IsSegmented = true;
-            stripy1.SegmentStart = 2;
-            stripy1.SegmentEnd = 4;
-            stripy1.Color = "rgba(167,169,171, 0.3)";
-            stripy1.Visible = true;
-            yaxisstriplines.Add(stripy1);
+            ChartStripLine stripy = new ChartStripLine();
+            stripy.Start = 20;
+            stripy.End = 40;
+            stripy.IsSegmented = true;
+            stripy.SegmentStart = 2;
+            stripy.SegmentEnd = 4;
+            stripy.Color = "rgba(167,169,171, 0.3)";
+            stripy.Visible = true;
+            yaxisstriplines.Add(stripy);
 
             ViewBag.yAxis = yaxisstriplines;
             ViewBag.dataSource = chartData;

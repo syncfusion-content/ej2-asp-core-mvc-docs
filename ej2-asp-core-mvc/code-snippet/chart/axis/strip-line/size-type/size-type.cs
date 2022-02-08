@@ -10,13 +10,13 @@ public ActionResult Index()
             ViewBag.dataSource = chartData;
 
             List<ChartStripLine> yaxisstriplines = new List<ChartStripLine>();
-            ChartStripLine stripy1 = new ChartStripLine();
-            stripy1.Start = new DateTime(2005, 01, 01);
-            stripy1.Size = 1;
-            stripy1.SizeType = SizeType.Years;
-            stripy1.Color = "rgba(167,169,171, 0.3)";
-            stripy1.Visible = true;
-            yaxisstriplines.Add(stripy1);
+            ChartStripLine stripy = new ChartStripLine();
+            stripy.Start = new DateTime(2005, 01, 01);
+            stripy.Size = 1;
+            stripy.SizeType = SizeType.Years;
+            stripy.Color = "rgba(167,169,171, 0.3)";
+            stripy.Visible = true;
+            yaxisstriplines.Add(stripy);
 
             ViewBag.yAxis = yaxisstriplines;
             return View();
