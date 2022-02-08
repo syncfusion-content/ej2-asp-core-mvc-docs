@@ -197,8 +197,10 @@ By default, tooltip shows information of x and y value in points. You can show m
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/mapping/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/accumulation-charts/tooltip/mapping/mapping.cs" %}
+{% highlight c# tabtitle="Mapping.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/mapping/mapping.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -206,9 +208,10 @@ By default, tooltip shows information of x and y value in points. You can show m
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/mapping/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/accumulation-charts/tooltip/mapping/mapping.cs" %}
-{% endhighlight %}
+{% highlight c# tabtitle="Mapping.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/mapping/mapping.cs %}
 {% endtabs %}
 {% endif %}
 

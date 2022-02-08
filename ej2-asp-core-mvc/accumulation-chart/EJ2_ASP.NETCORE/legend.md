@@ -227,8 +227,10 @@ You can customize the animation while clicking legend by setting enableAnimation
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/legend/accumulation-animation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/accumulation-charts/legend/accumulation-animation/accumulation-animation.cs" %}
+{% highlight c# tabtitle="Accumulation-animation.cs" %}
+{% include code-snippet/chart/accumulation-charts/legend/accumulation-animation/accumulation-animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -236,8 +238,10 @@ You can customize the animation while clicking legend by setting enableAnimation
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/legend/accumulation-animation/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/accumulation-charts/legend/accumulation-animation/accumulation-animation.cs" %}
+{% highlight c# tabtitle="Accumulation-animation.cs" %}
+{% include code-snippet/chart/accumulation-charts/legend/accumulation-animation/accumulation-animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
