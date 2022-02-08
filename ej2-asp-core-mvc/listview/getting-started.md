@@ -78,7 +78,6 @@ Refer the required theme file in your `layout.cshtml` page from `wwwroot/styles`
 
 * ListView component can be rendered with the help of `ej-listview` tag helper. Add the below code to your `index.cshtml` page which is present under `Views/Home` folder, where the ListView is initialized.
 
-{% aspCodeBlock  razorTemplate="layout/listview/getting-started/basicSyntax" %}
 
 ```cs
 
@@ -86,13 +85,12 @@ Refer the required theme file in your `layout.cshtml` page from `wwwroot/styles`
 
 ```
 
-{% endaspCodeBlock %}
+
 
 ## Bind dataSource
 
 Populate the data in `ListView` by using the `dataSource` property. Here, the JSON values are passed to the ListView component are generated in `HomeController.cs` and assigned to `ViewBag` variable.
 
-{% aspCodeBlock razorTemplate="layout/listview/getting-started/controller" %}
 
 ```cs
 public IActionResult Index()
@@ -111,17 +109,12 @@ public IActionResult Index()
 
 ```
 
-{% endaspCodeBlock %}
-
  `ViewBag.dataSource` variable is used for bounding the `dataSource` property in view page.
 
-{% aspCodeBlock razorTemplate="layout/listview/getting-started/listdata" %}
 
 ```cs
     <ej-listview id="list" dataSource="@ViewBag.dataSource"></ej-listview>
 ```
-
-{% endaspCodeBlock %}
 
 ## Run the application
 
