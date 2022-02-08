@@ -56,7 +56,7 @@ You can visualize all points available in club/group points by clicking on the g
 {% include code-snippet/chart/accumulation-charts/grouping/slice/tagHelper%}
 {% endhighlight %}
 {% highlight c# tabtitle="Slice.cs" %}
-{% include code-snippet/chart/accumulation-charts/grouping/slice/slice.cs%}
+{% include code-snippet/chart/accumulation-charts/grouping/slice/slice.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,7 +67,7 @@ You can visualize all points available in club/group points by clicking on the g
 {% include code-snippet/chart/accumulation-charts/grouping/slice/razor%}
 {% endhighlight %}
 {% highlight c# tabtitle="Slice.cs" %}
-{% include code-snippet/chart/accumulation-charts/grouping/slice/slice.cs%}
+{% include code-snippet/chart/accumulation-charts/grouping/slice/slice.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
