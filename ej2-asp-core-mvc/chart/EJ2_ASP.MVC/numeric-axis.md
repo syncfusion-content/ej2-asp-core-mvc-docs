@@ -334,8 +334,10 @@ property in chart.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/double/group/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/double/group/group.cs" %}
+{% highlight c# tabtitle="Group.cs" %}
+{% include code-snippet/chart/axis/double/group/group.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -343,8 +345,10 @@ property in chart.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/double/group/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/double/group/group.cs" %}
+{% highlight c# tabtitle="Group.cs" %}
+{% include code-snippet/chart/axis/double/group/group.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

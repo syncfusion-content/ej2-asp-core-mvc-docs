@@ -90,8 +90,10 @@ value as '0%' and [`centerY`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/circulargauge/gauge-appearance/position-percentage/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/circulargauge/gauge-appearance/position-percentage/position-percentage.cs" %}
+{% highlight c# tabtitle="Position-Percentage.cs" %}
+{% include code-snippet/circulargauge/gauge-appearance/position-percentage/position-percentage.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -99,8 +101,10 @@ value as '0%' and [`centerY`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/circulargauge/gauge-appearance/position-percentage/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/circulargauge/gauge-appearance/position-percentage/position-percentage.cs" %}
+{% highlight c# tabtitle="Position-Percentage.cs" %}
+{% include code-snippet/circulargauge/gauge-appearance/position-percentage/position-percentage.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

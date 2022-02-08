@@ -172,8 +172,10 @@ RangeBar can be customized in terms of color, border and thickness by using
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/circulargauge/gauge-pointers/pointer-customization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/circulargauge/gauge-pointers/pointer-customization/pointer-customization.cs" %}
+{% highlight c# tabtitle="Pointer-customization.cs" %}
+{% include code-snippet/circulargauge/gauge-pointers/pointer-customization/pointer-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -181,8 +183,10 @@ RangeBar can be customized in terms of color, border and thickness by using
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/circulargauge/gauge-pointers/pointer-customization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/circulargauge/gauge-pointers/pointer-customization/pointer-customization.cs" %}
+{% highlight c# tabtitle="Pointer-customization.cs" %}
+{% include code-snippet/circulargauge/gauge-pointers/pointer-customization/pointer-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -267,8 +271,10 @@ The marker can be customized in terms of color, border, width and height by usin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/circulargauge/gauge-pointers/marker-customization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/circulargauge/gauge-pointers/marker-customization/marker-customization.cs" %}
+{% highlight c# tabtitle="Marker-customization.cs" %}
+{% include code-snippet/circulargauge/gauge-pointers/marker-customization/marker-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -276,8 +282,10 @@ The marker can be customized in terms of color, border, width and height by usin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/circulargauge/gauge-pointers/marker-customization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/circulargauge/gauge-pointers/marker-customization/marker-customization.cs" %}
+{% highlight c# tabtitle="Marker-customization.cs" %}
+{% include code-snippet/circulargauge/gauge-pointers/marker-customization/marker-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

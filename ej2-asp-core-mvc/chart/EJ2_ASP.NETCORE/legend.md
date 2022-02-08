@@ -323,8 +323,10 @@ You can customize the animation while clicking legend by setting enableAnimation
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/animation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/legend/animation/animation.cs" %}
+{% highlight c# tabtitle="Animation.cs" %}
+{% include code-snippet/chart/axis/legend/animation/animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -332,8 +334,10 @@ You can customize the animation while clicking legend by setting enableAnimation
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/animation/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/axis/legend/animation/animation.cs" %}
+{% highlight c# tabtitle="Animation.cs" %}
+{% include code-snippet/chart/axis/legend/animation/animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

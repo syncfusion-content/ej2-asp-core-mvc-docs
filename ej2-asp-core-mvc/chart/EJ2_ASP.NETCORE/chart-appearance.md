@@ -291,8 +291,10 @@ Chart can be given a subtitle using [`subTitle`](https://help.syncfusion.com/cr/
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column/subtitle/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/series/column/subtitle/subtitle.cs" %}
+{% highlight c# tabtitle="Subtitle.cs" %}
+{% include code-snippet/chart/series/column/subtitle/subtitle.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -300,8 +302,10 @@ Chart can be given a subtitle using [`subTitle`](https://help.syncfusion.com/cr/
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column/subtitle/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/series/column/subtitle/subtitle.cs" %}
+{% highlight c# tabtitle="Subtitle.cs" %}
+{% include code-snippet/chart/series/column/subtitle/subtitle.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

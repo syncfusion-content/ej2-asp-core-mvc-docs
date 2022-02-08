@@ -122,8 +122,10 @@ and the lowerLine can be customized by using [`LowerLine`](https://help.syncfusi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/getting-started/custom-bollinger/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/getting-started/custom-bollinger/custom-bollinger.cs" %}
+{% highlight c# tabtitle="Custom-bollinger.cs" %}
+{% include code-snippet/chart/getting-started/custom-bollinger/custom-bollinger.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -131,8 +133,10 @@ and the lowerLine can be customized by using [`LowerLine`](https://help.syncfusi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/getting-started/custom-bollinger/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/getting-started/custom-bollinger/custom-bollinger.cs" %}
+{% highlight c# tabtitle="Custom-bollinger.cs" %}
+{% include code-snippet/chart/getting-started/custom-bollinger/custom-bollinger.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

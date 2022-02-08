@@ -393,8 +393,10 @@ To render a pareto chart, use series [`type`](https://help.syncfusion.com/cr/asp
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/other-types/pareto/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/series/other-types/pareto/pareto.cs" %}
+{% highlight c# tabtitle="Pareto.cs" %}
+{% include code-snippet/chart/series/other-types/pareto/pareto.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -402,8 +404,10 @@ To render a pareto chart, use series [`type`](https://help.syncfusion.com/cr/asp
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/other-types/pareto/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/chart/series/other-types/pareto/pareto.cs" %}
+{% highlight c# tabtitle="Pareto.cs" %}
+{% include code-snippet/chart/series/other-types/pareto/pareto.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

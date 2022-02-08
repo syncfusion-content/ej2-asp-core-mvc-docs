@@ -25,10 +25,10 @@ When you reset the form, the file list and data will be cleared.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet//uploader/form-support/tagHelper %}
+{% include code-snippet/uploader/form-support/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Index.css" %}
-{% include code-snippet//uploader/form-support/index.css %}
+{% include code-snippet/uploader/form-support/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,10 +36,10 @@ When you reset the form, the file list and data will be cleared.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet//uploader/form-support/razor %}
+{% include code-snippet/uploader/form-support/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Index.css" %}
-{% include code-snippet//uploader/form-support/index.css %}
+{% include code-snippet/uploader/form-support/index.css %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
