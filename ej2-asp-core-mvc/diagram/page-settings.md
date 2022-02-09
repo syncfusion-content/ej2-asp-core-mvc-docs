@@ -59,8 +59,10 @@ The following code illustrates how to stretch and align the background image.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/image/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pageSettings/image/image.cs" %}
+{% highlight c# tabtitle="Image.cs" %}
+{% include code-snippet/diagram/pagesettings/image/image.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,8 +70,10 @@ The following code illustrates how to stretch and align the background image.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/image/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pageSettings/image/image.cs" %}
+{% highlight c# tabtitle="Image.cs" %}
+{% include code-snippet/diagram/pagesettings/image/image.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -87,8 +91,10 @@ The following code illustrates how to enable multiple page and page break lines.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/image/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pageSettings/image/image.cs" %}
+{% highlight c# tabtitle="Image.cs" %}
+{% include code-snippet/diagram/pagesettings/image/image.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,8 +102,10 @@ The following code illustrates how to enable multiple page and page break lines.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/image/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pageSettings/image/image.cs" %}
+{% highlight c# tabtitle="Image.cs" %}
+{% include code-snippet/diagram/pagesettings/image/image.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -115,8 +123,10 @@ The following code example illustrates how to define boundary constraints with r
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/boundary/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pageSettings/boundry/bound.cs" %}
+{% highlight c# tabtitle="Boundary.cs" %}
+{% include code-snippet/diagram/pagesettings/boundary/boundary.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -124,8 +134,10 @@ The following code example illustrates how to define boundary constraints with r
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/boundary/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pageSettings/boundry/bound.cs" %}
+{% highlight c# tabtitle="Boundary.cs" %}
+{% include code-snippet/diagram/pagesettings/boundary/boundary.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

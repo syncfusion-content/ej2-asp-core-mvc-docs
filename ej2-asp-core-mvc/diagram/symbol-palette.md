@@ -286,8 +286,10 @@ While adding more number of symbols such as nodes and connectors to the palette,
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/symbol-palette/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/symbol-palette/default/default.cs" %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/diagram/symbol-palette/default/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -295,8 +297,10 @@ While adding more number of symbols such as nodes and connectors to the palette,
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/symbol-palette/default/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/symbol-palette/default/default.cs" %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/diagram/symbol-palette/default/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

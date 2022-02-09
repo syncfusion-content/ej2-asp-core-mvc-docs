@@ -28,8 +28,10 @@ In the following example, the vertical scroll bar is scrolled down by 50px and h
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/status/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/status/status.cs" %}
+{% highlight c# tabtitle="Status.cs" %}
+{% include code-snippet/diagram/pagesettings/status/status.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -37,8 +39,10 @@ In the following example, the vertical scroll bar is scrolled down by 50px and h
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/status/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/status/status.cs" %}
+{% highlight c# tabtitle="Status.cs" %}
+{% include code-snippet/diagram/pagesettings/status/status.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -53,8 +57,10 @@ You can programmatically change the scroll offsets at runtime by using the clien
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/update/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/update/update.cs" %}
+{% highlight c# tabtitle="Update.cs" %}
+{% include code-snippet/diagram/pagesettings/update/update.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,8 +68,10 @@ You can programmatically change the scroll offsets at runtime by using the clien
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/update/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/update/update.cs" %}
+{% highlight c# tabtitle="Update.cs" %}
+{% include code-snippet/diagram/pagesettings/update/update.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -100,8 +108,10 @@ The autoscroll border is used to specify the maximum distance between the object
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/auto/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/auto/auto.cs" %}
+{% highlight c# tabtitle="Auto.cs" %}
+{% include code-snippet/diagram/pagesettings/auto/auto.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -109,8 +119,10 @@ The autoscroll border is used to specify the maximum distance between the object
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/auto/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/auto/auto.cs" %}
+{% highlight c# tabtitle="Auto.cs" %}
+{% include code-snippet/diagram/pagesettings/auto/auto.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -133,8 +145,10 @@ The following code example illustrates how to specify the scroll limit.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+<% include code-snippet/diagram/pagesettings/default/tagHelper %>
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/default/default.cs" %}
+{% highlight c# tabtitle="Default.cs" %}
+<% include code-snippet/diagram/pagesettings/default/default.cs %>
 {% endhighlight %}
 {% endtabs %}
 
@@ -142,8 +156,10 @@ The following code example illustrates how to specify the scroll limit.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+<% include code-snippet/diagram/pagesettings/default/razor %>
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/default/default.cs" %}
+{% highlight c# tabtitle="Default.cs" %}
+<% include code-snippet/diagram/pagesettings/default/default.cs %>
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -160,8 +176,10 @@ The following code example illustrates how to set scroll padding to diagram regi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+<% include code-snippet/diagram/pagesettings/default/tagHelper %>
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/default/default.cs" %}
+{% highlight c# tabtitle="Default.cs" %}
+<% include code-snippet/diagram/pagesettings/default/default.cs %>
 {% endhighlight %}
 {% endtabs %}
 
@@ -169,8 +187,10 @@ The following code example illustrates how to set scroll padding to diagram regi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+<% include code-snippet/diagram/pagesettings/default/razor %>
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/default/default.cs" %}
+{% highlight c# tabtitle="Default.cs" %}
+<% include code-snippet/diagram/pagesettings/default/default.cs %>
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -185,8 +205,10 @@ Scrolling beyond any particular rectangular area can be restricted by using the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/area/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/area/area.cs" %}
+{% highlight c# tabtitle="Area.cs" %}
+{% include code-snippet/diagram/pagesettings/area/area.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -194,8 +216,10 @@ Scrolling beyond any particular rectangular area can be restricted by using the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/pagesettings/area/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/pagesettings/area/area.cs" %}
+{% highlight c# tabtitle="Area.cs" %}
+{% include code-snippet/diagram/pagesettings/area/area.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

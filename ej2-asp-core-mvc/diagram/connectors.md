@@ -281,8 +281,10 @@ To create a straight line, specify the [`type`](https://ej2.syncfusion.com/docum
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/connectors/segment/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/connectors/segments/segments.cs" %}
+{% highlight c# tabtitle="Segment.cs" %}
+{% include code-snippet/diagram/connectors/segment/segment.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -290,8 +292,10 @@ To create a straight line, specify the [`type`](https://ej2.syncfusion.com/docum
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/connectors/segment/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/connectors/segments/segments.cs" %}
+{% highlight c# tabtitle="Segment.cs" %}
+{% include code-snippet/diagram/connectors/segment/segment.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -304,8 +308,10 @@ The [`point`](https://ej2.syncfusion.com/documentation/api/diagram/straightSegme
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/connectors/segment/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/connectors/segments/segments.cs" %}
+{% highlight c# tabtitle="Segment.cs" %}
+{% include code-snippet/diagram/connectors/segment/segment.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -313,8 +319,10 @@ The [`point`](https://ej2.syncfusion.com/documentation/api/diagram/straightSegme
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/connectors/segment/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/connectors/segments/segments.cs" %}
+{% highlight c# tabtitle="Segment.cs" %}
+{% include code-snippet/diagram/connectors/segment/segment.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

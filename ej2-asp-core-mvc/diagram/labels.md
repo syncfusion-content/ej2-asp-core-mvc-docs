@@ -353,8 +353,10 @@ Diagram provides a support to add a [`hyperlink`](https://help.syncfusion.com/cr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/annotation/hyperLink/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/annotation/hyperLink/hyperLink.cs" %}
+{% highlight c# tabtitle="HyperLink.cs" %}
+{% include code-snippet/diagram/annotation/hyperLink/hyperLink.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -362,8 +364,10 @@ Diagram provides a support to add a [`hyperlink`](https://help.syncfusion.com/cr
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/annotation/hyperLink/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/annotation/hyperLink/hyperLink.cs" %}
+{% highlight c# tabtitle="HyperLink.cs" %}
+{% include code-snippet/diagram/annotation/hyperLink/hyperLink.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

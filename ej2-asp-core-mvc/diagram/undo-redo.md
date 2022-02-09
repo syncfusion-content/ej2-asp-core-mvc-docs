@@ -47,8 +47,10 @@ The client-side method [`startGroupAction`](../api/diagram) is used  to notify t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/undoRedo/undoRedo/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/undoRedo/undoRedo/undoRedo.cs" %}
+{% highlight c# tabtitle="UndoRedo.cs" %}
+{% include code-snippet/diagram/undoRedo/undoRedo/undoRedo.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,8 +58,10 @@ The client-side method [`startGroupAction`](../api/diagram) is used  to notify t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/undoRedo/undoRedo/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/undoRedo/undoRedo/undoRedo.cs" %}
+{% highlight c# tabtitle="UndoRedo.cs" %}
+{% include code-snippet/diagram/undoRedo/undoRedo/undoRedo.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

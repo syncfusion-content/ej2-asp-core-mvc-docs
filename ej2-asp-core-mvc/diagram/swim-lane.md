@@ -210,8 +210,10 @@ The following code example illustrates how to add nodes to lane.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/swimlane/lanechildren/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/swimlane/lanechildren/lanechildren.cs" %}
+{% highlight c# tabtitle="Lanechildren.cs" %}
+{% include code-snippet/diagram/swimlane/lanechildren/lanechildren.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -219,8 +221,10 @@ The following code example illustrates how to add nodes to lane.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/swimlane/lanechildren/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/diagram/swimlane/lanechildren/lanechildren.cs" %}
+{% highlight c# tabtitle="Lanechildren.cs" %}
+{% include code-snippet/diagram/swimlane/lanechildren/lanechildren.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
