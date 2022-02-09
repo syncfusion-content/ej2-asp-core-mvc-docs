@@ -39,7 +39,7 @@ The rendered Maps can be printed directly from the browser by calling the [`prin
 
 
 
-![Print](../images/Print/print.png)
+![Print](../maps/images/Print/print.png)
 
 ## Export
 
@@ -76,7 +76,7 @@ To use the image export functionality in Maps, set the `AllowImageExport` proper
 
 
 
-![Image export](../images/Print/export.png)
+![Image export](../maps/images/Print/export.png)
 
 ### Exporting Maps as base 64 string of the file
 
@@ -136,7 +136,7 @@ To use the PDF export functionality, set the `AllowPdfExport` property to **true
 
 
 
-![PDF export](../images/Print/export.png)
+![PDF export](../maps/images/Print/export.png)
 
 ### Export the tile Maps
 
@@ -171,4 +171,4 @@ The rendered Maps with providers such as OSM, Bing and Google static Maps can be
 
 
 
-![Tile export](../images/Print/osm-export.png)
+![Tile export](../maps/images/Print/osm-export.png)

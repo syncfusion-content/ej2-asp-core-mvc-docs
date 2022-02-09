@@ -30,15 +30,15 @@ The following steps are used to create the ASP.NET Core Application.
 
 **Step 2:** Select **ASP.NET Core Web Application** templates in visual studio 2019 and click **Next**.
 
-![Select the Asp.Net core application](../images/project-selection.png)
+![Select the Asp.Net core application](../linear-gauge/images/project-selection.png)
 
 **Step 3:** Change the application name and location of the application if necessary then click **Create**.
 
-![Changing the application name](../images/application-name.png)
+![Changing the application name](../linear-gauge/images/application-name.png)
 
 **Step 4:** Choose the .NET Core version as **ASP.NET Core 5.0** and select **ASP.NET Core Web App (Model-View-Controller)**, and then click **Create**. The web application project is now created with default ASP.NET Core template.
 
-![Selecting the .net version](../images/application-name.png)
+![Selecting the .net version](../linear-gauge/images/application-name.png)
 
 **Step 5**: Add the [`Syncfusion.EJ2.AspNet.Core`](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package to the created application by using the Nuget Package Manager. Right-click the **dependencies** in the project and select the **Manage Nuget Packages** option.
 
@@ -46,7 +46,7 @@ The following steps are used to create the ASP.NET Core Application.
 
 **Step 6:** Install the **Syncfusion.EJ2.AspNet.Core** package to the application.
 
-![Installing the nuget](../images/nuget-install.png)
+![Installing the nuget](../linear-gauge/images/nuget-install.png)
 
 The EJ2 package will be added to the application after the installation is completed.
 
