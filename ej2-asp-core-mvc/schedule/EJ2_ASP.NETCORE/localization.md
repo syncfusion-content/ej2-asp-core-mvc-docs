@@ -23,7 +23,7 @@ By default, Scheduler is set to follow the English culture ('en-US'). If you wan
 
 Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
 
-```cmd
+```
 npm install cldr-data --save
 ```
 
