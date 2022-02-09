@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("linear").Width("650px").Height("350px").Render()

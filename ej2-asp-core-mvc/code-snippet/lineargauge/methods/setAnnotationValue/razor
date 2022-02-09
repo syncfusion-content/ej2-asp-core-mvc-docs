@@ -1,0 +1,28 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().Button("togglebtn").Content("Print").CssClass("e-flat").Render()
+
+@Html.EJS().LinearGauge("linear").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        Pointers = new List<Syncfusion.EJ2.LinearGauge.LinearGaugePointer>
+        {
+            new Syncfusion.EJ2.LinearGauge.LinearGaugePointer
+            {
+                Value = 10
+            }
+        }
+    }
+}).Annotations(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAnnotation> {
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAnnotation
+    {
+        Content = "10", ZIndex = "1", AxisValue = 0
+    }}).Render()
+
+<script>
+    document.getElementById('togglebtn').onclick = function () {
+        var linearObj = document.getElementById('linear').ej2_instances[0];
+        linearObj.setAnnotationValue(0, '50', 50);
+    };
+</script>

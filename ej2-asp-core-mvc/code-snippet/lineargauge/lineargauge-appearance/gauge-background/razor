@@ -1,0 +1,15 @@
+
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Width("200px").Height("400px").Background("skyblue").Border(new Syncfusion.EJ2.LinearGauge.LinearGaugeBorder
+    {
+        Width = 3, Color = "red"
+    }).Margin(new Syncfusion.EJ2.LinearGauge.LinearGaugeMargin {
+        Left = 20, Bottom = 20, Right = 20, Top = 20
+    }).Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+        {
+            new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+            {
+            }
+        }
+    ).Render()

@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.LinearGauge
+
+<ejs-lineargauge id="gauge">
+    <e-lineargauge-tooltip Enable="true" Fill="#e5bcbc">
+        <e-tooltipsettings-border Width="2" Color="#d80000"></e-tooltipsettings-border>
+    </e-lineargauge-tooltip>
+    <e-lineargauge-axes>
+        <e-lineargauge-axis>
+            <e-lineargauge-pointers>
+                <e-lineargauge-pointer Value="80"></e-lineargauge-pointer>
+            </e-lineargauge-pointers>
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Tooltip(new Syncfusion.EJ2.LinearGauge.LinearGaugeTooltipSettings {
+    Enable = true, Position = TooltipPosition.Center
+}).Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        Pointers = new List<LinearGaugePointer>
+        {
+            new Syncfusion.EJ2.LinearGauge.LinearGaugePointer
+            {
+              Value = 50, Type=Point.Bar, Color="blue"
+            }
+        }
+    }
+}).Render()

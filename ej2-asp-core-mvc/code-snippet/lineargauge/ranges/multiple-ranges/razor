@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("container").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        Ranges = new List<LinearGaugeRange>
+        {
+            new Syncfusion.EJ2.LinearGauge.LinearGaugeRange
+            {
+                Start = 0, End = 30, Color = "#41f47f", StartWidth = 10, EndWidth = 10
+            },
+            new Syncfusion.EJ2.LinearGauge.LinearGaugeRange
+            {
+                 Start = 30, End = 50, Color = "#f49441", StartWidth = 10, EndWidth = 10
+            },
+            new Syncfusion.EJ2.LinearGauge.LinearGaugeRange
+            {
+                Start = 50, End = 100, Color = "#cd41f4", StartWidth = 10, EndWidth = 10
+            }
+        }
+    }
+}).Render();

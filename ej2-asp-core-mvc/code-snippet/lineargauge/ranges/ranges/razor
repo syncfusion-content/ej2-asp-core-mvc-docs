@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("container").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        Ranges = new List<LinearGaugeRange>
+        {
+            new Syncfusion.EJ2.LinearGauge.LinearGaugeRange
+            {
+                Start = 50, End = 80
+            }
+        }
+    }
+}).Render();

@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Container(new Syncfusion.EJ2.LinearGauge.LinearGaugeContainer
+{
+    Width = 30, Type= ContainerType.RoundedRectangle 
+}).Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+    {
+        new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+        {
+            Pointers = new List<LinearGaugePointer>
+            {
+                new Syncfusion.EJ2.LinearGauge.LinearGaugePointer
+                {
+                    Type = Point.Bar, Value = 50, Width = 15
+                }
+            }
+        }
+    }
+).Render()

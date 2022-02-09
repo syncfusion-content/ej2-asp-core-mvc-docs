@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2;
+<ejs-lineargauge id="linear" load="gaugeLoad"></ejs-lineargauge>
+<script>
+    window.gaugeLoad = function (args) {
+        var axis = args.gauge.axes[0];
+        axis.pointers = [{
+            value: 80,
+            markerType: 'Circle',
+            height: 15,
+            width: 15,
+            color: '#cd41f4'
+        }]
+    }
+</script>
+=======
+@using Syncfusion.EJ2.LinearGauge
+
+<ejs-lineargauge id="linear">
+    <e-lineargauge-axes>
+        <e-lineargauge-axis>
+            <e-lineargauge-pointers>
+                <e-lineargauge-pointer Type="Marker" Height="15" Width="15" MarkerType="Circle" Value="60" Position="Outside" Color="#cd41f4"></e-lineargauge-pointer>
+            </e-lineargauge-pointers>
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

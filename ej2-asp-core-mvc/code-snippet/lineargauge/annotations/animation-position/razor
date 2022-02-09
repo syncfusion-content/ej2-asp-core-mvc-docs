@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Annotations(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAnnotation> {
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAnnotation
+    {
+        Content = "<div id='first'><h1>Gauge</h1></div>",
+        ZIndex = "1", X=250, Y=100
+    },
+}).Render()

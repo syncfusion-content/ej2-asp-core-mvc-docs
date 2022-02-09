@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Format("c").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+    }
+}).Render()

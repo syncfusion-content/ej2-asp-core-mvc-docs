@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+<ejs-lineargauge id="linear" Width="100%" Height="50%"></ejs-lineargauge>

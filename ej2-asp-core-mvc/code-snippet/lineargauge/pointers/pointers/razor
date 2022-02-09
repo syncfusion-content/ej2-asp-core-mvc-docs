@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2;
+@Html.EJS().LinearGauge("gauge").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        Pointers = new List<LinearGaugePointer>
+        {
+            new Syncfusion.EJ2.LinearGauge.LinearGaugePointer
+            {
+              Value = 80
+            }
+        }
+    }
+}).Render()

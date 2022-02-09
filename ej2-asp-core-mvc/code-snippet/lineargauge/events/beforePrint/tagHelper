@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2;
+
+<div id="container">
+    <button id="print">Print</button>
+        <ejs-lineargauge id="gauge" Load="gaugeLoad" AllowPrint="true" BeforePrint="beforePrint" Orientation="Horizontal">
+            <e-lineargauge-axes>
+                <e-lineargauge-axis Minimum="0" Maximum="120">
+                </e-lineargauge-axis>
+            </e-lineargauge-axes>
+      </ejs-lineargauge>
+</div>
+<script>
+    window.gaugeLoad = function (args) {
+        window.gauge = args.gauge;
+    }
+    window.onload = function () {
+        document.getElementById("print").onclick = () => {
+            window.gauge.print();
+        };
+    };
+	
+	function beforePrint(args) {
+	}
+</script>

@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.LinearGauge
+
+<ejs-lineargauge id="linear">
+    <e-lineargauge-axes>
+        <e-lineargauge-axis>
+            <e-lineargauge-pointers>
+                <e-lineargauge-pointer Type="Bar" Width="20" Value="60" Color="#f44141"></e-lineargauge-pointer>
+            </e-lineargauge-pointers>
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

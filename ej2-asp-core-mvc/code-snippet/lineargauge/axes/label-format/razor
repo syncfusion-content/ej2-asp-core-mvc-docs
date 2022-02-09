@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().LinearGauge("gauge").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        LabelStyle = new Syncfusion.EJ2.LinearGauge.LinearGaugeLabel
+        {
+            Format = "{value}°C"
+        }
+    }
+}).Render()

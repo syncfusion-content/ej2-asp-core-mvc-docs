@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        Line = new Syncfusion.EJ2.LinearGauge.LinearGaugeLine
+        {
+            Height = 150, Width= 2, Color = "#4286f4", Offset = 2
+        }
+    }
+}).Render()

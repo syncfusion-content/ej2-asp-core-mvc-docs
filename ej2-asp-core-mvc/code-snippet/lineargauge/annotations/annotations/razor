@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Orientation(Orientation.Horizontal).Annotations(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAnnotation> {
+       new Syncfusion.EJ2.LinearGauge.LinearGaugeAnnotation
+       {
+           Content = "#walking",
+           ZIndex = "1", X = 100 , Y = 100
+       },
+   }).Render()
+
+<div>    
+    <script id="walking" type="text/x-template">
+        <div id="annotation" style="width:100px;">
+            <img style="height:20px;width:20px" src="@Url.Content("~/Content/CircularGauge/walking.svg")">
+        </div>
+    </script>
+</div>

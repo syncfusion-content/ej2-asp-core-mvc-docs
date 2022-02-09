@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+<ejs-lineargauge id="linear" AxisLabelRender="axisLabelRender">
+</ejs-lineargauge>
+
+<script>
+    function axisLabelRender() {
+	}
+</script>

@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+<ejs-lineargauge id="linear" GaugeMouseMove="gaugeMouseMove"></ejs-lineargauge>
+
+<script>
+    function gaugeMouseMove(args) {
+	}
+</script>

@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Annotations(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAnnotation> {
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAnnotation
+    {
+        Content = "<div><h1 style='color: red;'>Speed</h1></div>",
+        ZIndex = "1", VerticalAlignment=Placement.Near, HorizontalAlignment=Placement.Center, X=100, Y=150
+    },
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAnnotation
+    {
+        Content = "<div><h1 style='color: blue;'>Meter</h1></div>",
+        ZIndex = "1", VerticalAlignment=Placement.Center, HorizontalAlignment=Placement.Center, X=-100, Y=-100
+    }
+}).Render()

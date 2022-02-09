@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+<ejs-lineargauge id="linear" Load="load"></ejs-lineargauge>
+
+<script>
+    function load(args) {
+	}
+</script>

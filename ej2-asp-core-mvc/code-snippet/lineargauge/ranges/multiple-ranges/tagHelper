@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2;
+
+<ejs-lineargauge id="gauge">
+    <e-lineargauge-axes>
+        <e-lineargauge-axis>
+            <e-lineargauge-ranges>
+                <e-lineargauge-range Start="0" End="30" Color="#41f47f" StartWidth="10" EndWidth="10"></e-lineargauge-range>
+                <e-lineargauge-range Start="30" End="50" Color="#f49441" StartWidth="10" EndWidth="10"></e-lineargauge-range>
+                <e-lineargauge-range Start="50" End="100" Color="#cd41f4" StartWidth="10" EndWidth="10"></e-lineargauge-range>
+            </e-lineargauge-ranges>
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

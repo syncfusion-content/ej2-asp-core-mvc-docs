@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("linear").GaugeMouseUp("gaugeMouseUp").Render()
+
+<script>
+    function gaugeMouseUp(args) {
+	}
+</script>

@@ -1,0 +1,17 @@
+@using Syncfusion.EJ2;
+@Html.EJS().LinearGauge("linear").Axes(axis=>axis.Minimum(0).Maximum(120).MajorTicks(new
+{
+    interval = 10,
+    height = 10
+}).MinorTicks(new
+{
+    interval = 5,
+    height = 5
+}).LabelStyle(new
+{
+    format = "c"
+})).Render()
+<script>
+    ej.base.setCulture('de');
+    ej.base.setCurrencyCode('EUR');
+</script>

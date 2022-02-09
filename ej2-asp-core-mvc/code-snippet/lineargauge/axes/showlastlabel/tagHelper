@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2.LinearGauge
+
+<ejs-lineargauge id="linear">
+    <e-lineargauge-axes>
+        <e-lineargauge-axis Minimum="0" Maximum="115" ShowLastLabel="true">
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

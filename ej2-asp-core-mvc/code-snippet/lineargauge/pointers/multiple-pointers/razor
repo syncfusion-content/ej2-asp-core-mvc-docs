@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        Pointers = new List<LinearGaugePointer>
+        {
+            new Syncfusion.EJ2.LinearGauge.LinearGaugePointer
+            {
+                Value = 80
+            },
+            new Syncfusion.EJ2.LinearGauge.LinearGaugePointer
+            {
+                Value = 30, MarkerType = MarkerType.Circle
+            },
+            new Syncfusion.EJ2.LinearGauge.LinearGaugePointer
+            {
+                Value = 60, MarkerType = MarkerType.Diamond 
+            }
+        }
+    }
+}).Render()

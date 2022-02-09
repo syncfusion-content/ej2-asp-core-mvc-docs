@@ -1,0 +1,7 @@
+@using Syncfusion.EJ2
+
+<ejs-lineargauge id="linear">
+    <e-lineargauge-annotations>
+        <e-lineargauge-annotation Content="<div id='first'><h1>Gauge</h1></div>" VerticalAlignment="Center" HorizontalAlignment="Center" ZIndex="1"></e-lineargauge-annotation>
+    </e-lineargauge-annotations>
+</ejs-lineargauge>

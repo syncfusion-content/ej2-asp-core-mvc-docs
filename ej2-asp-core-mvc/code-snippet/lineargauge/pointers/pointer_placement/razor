@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2;
+@Html.EJS().LinearGauge("linear").Load("gaugeLoad").Render()
+<script>
+    window.gaugeLoad = function (args) {
+        var axis = args.gauge.axes[0];
+        axis.pointers = [{
+            value: 60,
+            markerType: 'Arrow',
+            color: '#f44141',
+            placement: 'Near'
+        }]
+    }
+</script>
