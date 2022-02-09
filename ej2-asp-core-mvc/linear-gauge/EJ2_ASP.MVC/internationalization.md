@@ -41,4 +41,4 @@ The text in axis labels and tooltip can be displayed in the numeric format such 
 
 
 
-![Linear Gauge with currency label format](../images/custom-label.png)
+![Linear Gauge with currency label format](../linear-gauge/images/custom-label.png)

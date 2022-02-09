@@ -36,7 +36,7 @@ The start value and end value for the Linear Gauge can be set using the [`Minimu
 
 
 
-![Linear Gauge with minimum and maximum values](../images/min-max.png)
+![Linear Gauge with minimum and maximum values](../linear-gauge/images/min-max.png)
 
 ## Line Customization
 
@@ -72,7 +72,7 @@ The following properties in the [`e-axis-line`](https://help.syncfusion.com/cr/
 
 
 
-![Linear Gauge with line customization](../images/line-custom.png)
+![Linear Gauge with line customization](../linear-gauge/images/line-custom.png)
 
 ## Ticks Customization
 
@@ -110,7 +110,7 @@ Ticks are used to specify the interval in the axis. Ticks are of two types, majo
 
 
 
-![Linear Gauge with ticks customization](../images/ticks-custom.png)
+![Linear Gauge with ticks customization](../linear-gauge/images/ticks-custom.png)
 
 ### Positioning the ticks
 
@@ -141,7 +141,7 @@ The minor and major ticks can be positioned by using the [`Offset`](https://help
 
 
 
-![Linear Gauge with ticks position](../images/ticks-position.png)
+![Linear Gauge with ticks position](../linear-gauge/images/ticks-position.png)
 
 ## Labels Customization
 
@@ -181,7 +181,7 @@ The style of the labels can be customized using the following properties in [`Li
 
 
 
-![Linear Gauge with label customization](../images/label-custom.png)
+![Linear Gauge with label customization](../linear-gauge/images/label-custom.png)
 
 ### Positioning the axis label
 
@@ -212,7 +212,7 @@ Labels can be positioned by using [`Offset`](https://help.syncfusion.com/cr/aspn
 
 
 
-![Linear Gauge with label position](../images/label-position.png)
+![Linear Gauge with label position](../linear-gauge/images/label-position.png)
 
 ### Customizing the display of the last label
 
@@ -245,7 +245,7 @@ If the last label is not in the visible range, it will be hidden by default. The
 
 
 
-![Linear Gauge with last label](../images/showlast-label.png)
+![Linear Gauge with last label](../linear-gauge/images/showlast-label.png)
 
 <!-- markdownlint-disable MD036 -->
 
@@ -278,7 +278,7 @@ Axis labels in the Linear Gauge control can be formatted using the [`Format`](ht
 
 
 
-![Linear Gauge with label format](../images/label-format.png)
+![Linear Gauge with label format](../linear-gauge/images/label-format.png)
 
 ### Displaying numeric format in labels
 
@@ -367,7 +367,7 @@ The numeric formats such as currency, percentage, and so on can be displayed in 
 
 
 
-![Linear Gauge with custom label format](../images/custom-label.png)
+![Linear Gauge with custom label format](../linear-gauge/images/custom-label.png)
 
 ## Orientation
 
@@ -398,7 +398,7 @@ By default, the Linear Gauge is rendered vertically. To change its orientation, 
 
 
 
-![Linear Gauge with horizontal orientation](../images/orientation.png)
+![Linear Gauge with horizontal orientation](../linear-gauge/images/orientation.png)
 
 ## Inverted Axis
 
@@ -429,7 +429,7 @@ The axis of the Linear Gauge component can be inversed by setting the [`IsInvers
 
 
 
-![Linear Gauge with inversed axis](../images/isInversed.png)
+![Linear Gauge with inversed axis](../linear-gauge/images/isInversed.png)
 
 ## Opposed Axis
 
@@ -460,7 +460,7 @@ To place an axis opposite from its original position, [`OpposedPosition`](https:
 
 
 
-![Linear Gauge with opposed axis](../images/opposedPosition.png)
+![Linear Gauge with opposed axis](../linear-gauge/images/opposedPosition.png)
 
 ## Multiple Axes
 
@@ -491,4 +491,4 @@ Multiple axes can be added to the Linear Gauge by adding multiple [`e-lineargaug
 
 
 
-![Linear Gauge with multiple axis](../images/multiple-axis.png)
+![Linear Gauge with multiple axis](../linear-gauge/images/multiple-axis.png)
