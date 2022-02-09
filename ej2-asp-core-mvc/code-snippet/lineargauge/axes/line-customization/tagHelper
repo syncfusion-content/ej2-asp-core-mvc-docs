@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.LinearGauge
+
+<ejs-lineargauge id="linear">
+    <e-lineargauge-axes>
+        <e-lineargauge-axis>
+            <e-axis-line Height="150" Width="2" Color="#4286f4" Offset="2"></e-axis-line>
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

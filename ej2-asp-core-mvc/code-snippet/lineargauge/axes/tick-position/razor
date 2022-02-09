@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.LinearGauge
+
+@Html.EJS().LinearGauge("gauge").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        MajorTicks = new Syncfusion.EJ2.LinearGauge.LinearGaugeTick
+        {
+            Height=10, Width=2, Interval=20, Color="red", Position = Position.Outside
+        },
+        MinorTicks = new Syncfusion.EJ2.LinearGauge.LinearGaugeTick
+        {
+            Height = 5, Width = 2, Interval = 5, Color = "Orange", Position = Position.Cross
+        }
+    }
+}).Render()

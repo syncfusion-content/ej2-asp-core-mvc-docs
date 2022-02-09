@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2
+
+<ejs-lineargauge id="linear" Orientation="Horizontal" AnnotationRender="annotationRender">
+    <e-lineargauge-annotations>
+        <e-lineargauge-annotation Content="<div><h1>Gauge</h1></div>" ZIndex="1" AxisValue="0"></e-lineargauge-annotation>
+    </e-lineargauge-annotations>
+</ejs-lineargauge>
+
+<script>
+    function annotationRender(args) {
+    }
+</script>

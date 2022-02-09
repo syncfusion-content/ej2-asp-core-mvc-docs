@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().LinearGauge("gauge").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        Minimum = 0, Maximum = 115, ShowLastLabel = true
+    }
+}).Render()

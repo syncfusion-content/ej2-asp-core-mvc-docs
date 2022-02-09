@@ -1,0 +1,19 @@
+@{
+    var label = new LinearGaugeLabel
+    {
+        Font = new LinearGaugeFont
+        {
+            Color = "red",
+            Opacity = 1
+        }
+    };
+}
+
+@using Syncfusion.EJ2.LinearGauge
+
+<ejs-lineargauge id="linear">
+    <e-lineargauge-axes>
+        <e-lineargauge-axis labelStyle="label">
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

@@ -1,0 +1,21 @@
+@using Syncfusion.EJ2;
+
+<div id="container">
+    <button id="export">Export</button>
+        <ejs-lineargauge id="gauge" load="gaugeLoad" allowImageExport="true" orientation="Horizontal">
+            <e-lineargauge-axes>
+                <e-lineargauge-axis minimum="0" maximum="120">
+                </e-lineargauge-axis>
+            </e-lineargauge-axes>
+      </ejs-lineargauge>
+</div>
+<script>
+    window.gaugeLoad = function (args) {
+        window.gauge = args.gauge;
+    }
+    window.onload = function () {
+        document.getElementById("export").onclick = () => {
+            window.gauge.export('PNG', 'LinearGauge');
+        };
+    };
+</script>

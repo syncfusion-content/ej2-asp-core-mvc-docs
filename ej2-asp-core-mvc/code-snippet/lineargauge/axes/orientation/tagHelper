@@ -1,0 +1,7 @@
+@using Syncfusion.EJ2;
+<ejs-lineargauge id="linear" Orientation="Horizontal">
+     <e-lineargauge-axes>
+        <e-lineargauge-axis Minimum="20" Maximum="140">
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

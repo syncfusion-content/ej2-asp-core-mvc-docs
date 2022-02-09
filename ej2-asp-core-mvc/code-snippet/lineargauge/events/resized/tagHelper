@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+<ejs-lineargauge id="linear" Resized="resized"></ejs-lineargauge>
+
+<script>
+    function resized(args) {
+	}
+</script>

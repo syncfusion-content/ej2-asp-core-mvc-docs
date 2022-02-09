@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.LinearGauge
+
+<ejs-lineargauge id="gauge">
+    <e-lineargauge-tooltip Enable="true" Position="Center">
+    </e-lineargauge-tooltip>
+    <e-lineargauge-axes>
+        <e-lineargauge-axis>
+            <e-lineargauge-pointers>
+                <e-lineargauge-pointer Value="50" Type="Bar" Color="blue"></e-lineargauge-pointer>
+            </e-lineargauge-pointers>
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

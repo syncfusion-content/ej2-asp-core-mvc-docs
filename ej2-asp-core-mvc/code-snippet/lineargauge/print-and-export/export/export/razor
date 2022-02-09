@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2;
+
+@Html.EJS().Button("togglebtn").IconCss("e-icons e-play-icon").Content("Export").CssClass("e-flat").Render()
+
+@Html.EJS().LinearGauge("linear").Height("450px").AllowImageExport(true).Width("650px").Render()
+
+<script>
+    document.getElementById('togglebtn').onclick = function () {
+        var linearObj = document.getElementById('linear').ej2_instances[0];
+        linearObj.export('PNG', 'LinearGauge');    
+    };
+</script>

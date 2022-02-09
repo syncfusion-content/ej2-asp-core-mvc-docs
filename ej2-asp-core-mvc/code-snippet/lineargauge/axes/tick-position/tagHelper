@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2.LinearGauge
+
+<ejs-lineargauge id="linear">
+    <e-lineargauge-axes>
+        <e-lineargauge-axis>
+            <e-axis-majorticks Interval="20" Height="10" Width="2" Color="red" Position="Outside"></e-axis-majorticks>
+            <e-axis-minorticks Interval="5" Height="5" Width="2" Color="green" Position="Cross"></e-axis-minorticks>
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

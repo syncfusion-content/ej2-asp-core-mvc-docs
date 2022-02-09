@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2
+
+<ejs-lineargauge id="linear" Orientation="Horizontal">
+    <e-lineargauge-annotations>
+        <e-lineargauge-annotation Content="#walking" X="100" Y="100" ZIndex="1"></e-lineargauge-annotation>
+    </e-lineargauge-annotations>
+</ejs-lineargauge>
+
+<div>    
+    <script id="walking" type="text/x-template">
+        <div id="annotation" style="width:100px;">
+            <img style="height:20px;width:20px" src="@Url.Content("~/Content/CircularGauge/walking.svg")">
+        </div>
+    </script>
+</div>

@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("linear").ValueChange("valueChange").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        Pointers = new List<Syncfusion.EJ2.LinearGauge.LinearGaugePointer>
+        {
+            new Syncfusion.EJ2.LinearGauge.LinearGaugePointer
+            {
+                EnableDrag = true
+            }
+        }
+    }
+}).Render()
+
+<script>
+    function valueChange(args) {
+	}
+</script>

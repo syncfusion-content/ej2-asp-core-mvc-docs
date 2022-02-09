@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2.LinearGauge
+
+<ejs-lineargauge id="linear" Orientation="Horizontal" Background="skyblue" AllowMargin="false" Height="100%" Width="100%">
+    <e-lineargauge-border Width="3" Color="red"></e-lineargauge-border>
+    <e-lineargauge-margin Left="0" Right="0" Top="0" Bottom="0"></e-lineargauge-margin>
+    <e-lineargauge-axes>
+        <e-lineargauge-axis></e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

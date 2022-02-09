@@ -1,0 +1,16 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Title("Linear Gauge").TitleStyle(new Syncfusion.EJ2.LinearGauge.LinearGaugeTitleStyleLinearGauge {
+    FontFamily = "Arial",
+    FontStyle = "italic",
+    FontWeight = "regular",
+    Color = "#E27F2D",
+    Size = "23px",
+    Opacity = 1
+}).Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+    {
+        new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+        {
+        }
+    }
+).Render()

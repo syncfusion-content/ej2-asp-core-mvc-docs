@@ -1,0 +1,41 @@
+@using Syncfusion.EJ2.LinearGauge;
+ 
+@Html.EJS().LinearGauge("container").Load("onGaugeLoad").Orientation(Orientation.Horizontal).Container(
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeContainer {
+        Width = 30, Offset = 30 
+    }).Margin(new Syncfusion.EJ2.LinearGauge.LinearGaugeMargin {
+        Bottom=50
+    }).Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+        {
+            new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+            {
+                Minimum = 0, Maximum = 100,
+                Line = new Syncfusion.EJ2.LinearGauge.LinearGaugeLine { Width = 0 },
+                MajorTicks = new Syncfusion.EJ2.LinearGauge.LinearGaugeTick { Interval= 25, Height= 0 },
+                MinorTicks = new Syncfusion.EJ2.LinearGauge.LinearGaugeTick { Height=0 },
+                LabelStyle = new Syncfusion.EJ2.LinearGauge.LinearGaugeLabel {  Offset = 55 },
+            } 
+        }
+    ).Render();
+
+<script type="text/javascript">
+    function onGaugeLoad(sender) {
+        sender.gauge.axes[0].pointers = [{
+            value: 80, height: 25,
+            width: 35, placement: 'Near',
+            offset: -44, markerType: 'Triangle',
+            linearGradient: {
+                startValue: '0%',
+                endValue: '100%',
+                colorStop: [
+                { color: '#fef3f9', offset: '0%', opacity: 1 },
+                { color: '#f54ea2', offset: '100%', opacity: 1 }]
+            }
+        }];
+        sender.gauge.axes[0].ranges = [{
+            start: 0, end: 80,
+            startWidth: 30, endWidth: 30,
+            color: '#f54ea2', offset: 30,
+        }]
+    }
+</script>

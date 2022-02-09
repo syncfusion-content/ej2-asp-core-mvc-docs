@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").AllowMargin(false).Orientation(Orientation.Horizontal).Height("300px").Background("skyblue").Border(new Syncfusion.EJ2.LinearGauge.LinearGaugeBorder
+{
+    Width = 3, Color = "red"
+}).Margin(new Syncfusion.EJ2.LinearGauge.LinearGaugeMargin {
+    Left = 0, Bottom = 0, Right = 0, Top = 0
+}).Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+    {
+        new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+        {
+        }
+    }
+).Render()

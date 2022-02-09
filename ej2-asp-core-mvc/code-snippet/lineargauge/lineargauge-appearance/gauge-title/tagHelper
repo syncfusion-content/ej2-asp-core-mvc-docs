@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2.LinearGauge
+
+@{
+    var titlestyle = new LinearGaugeTitleStyleLinearGauge
+    {
+        FontFamily = "Arial",
+        FontStyle = "italic",
+        FontWeight = "regular",
+        Color = "#E27F2D",
+        Size ="23px",
+        Opacity = 1
+    };
+}
+
+<ejs-lineargauge id="linear" Title="Linear Gauge" TitleStyle="titlestyle"></ejs-lineargauge>

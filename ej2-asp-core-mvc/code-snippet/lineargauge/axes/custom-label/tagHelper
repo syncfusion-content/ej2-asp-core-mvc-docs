@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2.LinearGauge
+
+<ejs-lineargauge id="linear" Format="c">
+    <e-lineargauge-axes>
+        <e-lineargauge-axis>
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>

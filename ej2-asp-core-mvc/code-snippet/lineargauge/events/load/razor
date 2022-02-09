@@ -1,0 +1,8 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("linear").Load("load").Render()
+
+<script>
+    function load(args) {
+	}
+</script>

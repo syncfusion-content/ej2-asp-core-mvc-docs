@@ -1,0 +1,19 @@
+@using Syncfusion.EJ2.LinearGauge;
+
+@Html.EJS().LinearGauge("gauge").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis>
+{
+    new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+    {
+        LabelStyle = new Syncfusion.EJ2.LinearGauge.LinearGaugeLabel
+        {
+            Font = new LinearGaugeFont
+            {
+                FontFamily = "Roboto",
+                Size = "12px",
+                Color = "red",
+                Opacity = 1,
+                FontWeight = "Regular"
+            }
+        }
+    }
+ }).Render()

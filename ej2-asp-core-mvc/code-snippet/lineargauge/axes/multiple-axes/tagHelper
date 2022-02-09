@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2.LinearGauge
+
+<ejs-lineargauge id="linear">
+    <e-lineargauge-axes>
+        <e-lineargauge-axis>
+            <e-axis-labelstyle Format="{value}°C"></e-axis-labelstyle>
+        </e-lineargauge-axis>
+        <e-lineargauge-axis OpposedPosition="true">
+            <e-axis-labelstyle Format="{value}°F"></e-axis-labelstyle>
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>
