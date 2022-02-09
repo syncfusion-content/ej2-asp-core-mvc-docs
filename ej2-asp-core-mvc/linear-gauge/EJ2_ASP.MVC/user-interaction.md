@@ -41,7 +41,7 @@ Linear Gauge displays the details about a pointer value through [`LinearGaugeToo
 {% endif %}
 
 
-![Linear Gauge with tooltip](../images/tooltip.png)
+![Linear Gauge with tooltip](../linear-gauge/images/tooltip.png)
 
 <!-- markdownlint-disable MD013 -->
 
@@ -76,7 +76,7 @@ Tooltip in the Linear Gauge control can be formatted using the [`Format`](https:
 
 
 
-![Linear Gauge with tooltip format](../images/tooltip-formats.png)
+![Linear Gauge with tooltip format](../linear-gauge/images/tooltip-formats.png)
 
 ### Tooltip Template
 
@@ -107,7 +107,7 @@ The HTML element can be rendered in the tooltip of the Linear Gauge using the [`
 
 
 
-![Linear Gauge with tooltip template](../images/tooltip-template1.png)
+![Linear Gauge with tooltip template](../linear-gauge/images/tooltip-template1.png)
 
 ### Customize the appearance of the tooltip
 
@@ -144,7 +144,7 @@ The tooltip can be customized using the following properties in [`LinearGaugeToo
 
 
 
-![Linear Gauge with tooltip customization](../images/tooltip-custom.png)
+![Linear Gauge with tooltip customization](../linear-gauge/images/tooltip-custom.png)
 
 ## Positioning the tooltip
 
@@ -175,7 +175,7 @@ The tooltip is positioned at the **End** of the pointer. To change the position 
 
 
 
-![Linear Gauge with tooltip position](../images/tooltip-position.png)
+![Linear Gauge with tooltip position](../linear-gauge/images/tooltip-position.png)
 
 ## Pointer Drag
 
@@ -206,4 +206,4 @@ To drag either marker or bar pointer to the desired axis value, set the [`Enable
 
 
 
-![Linear Gauge with pointer drag](../images/dragging-pointr.gif)
+![Linear Gauge with pointer drag](../linear-gauge/images/dragging-pointr.gif)

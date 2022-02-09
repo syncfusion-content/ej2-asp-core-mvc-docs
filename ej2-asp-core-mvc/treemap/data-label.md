@@ -72,7 +72,7 @@ The template supports customizing labels of each leaf node using the `labelTempl
 
 
 
-![TreeMap label with template](images/datalabel/template.png)
+![TreeMap label with template](images/datalabel/Template.png)
 
 ## InterSectAction
 
