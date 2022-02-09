@@ -374,8 +374,10 @@ The `labelFormat` property is used to format and parse the date to all globalize
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/range-navigator/data/date-time-format/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/range-navigator/data/date-time-format/date-time-format.cs" %}
+{% highlight c# tabtitle="Date-time-format.cs" %}
+{% include code-snippet/range-navigator/data/date-time-format/date-time-format.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -383,8 +385,10 @@ The `labelFormat` property is used to format and parse the date to all globalize
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/range-navigator/data/date-time-format/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/range-navigator/data/date-time-format/date-time-format.cs" %}
+{% highlight c# tabtitle="Date-time-format.cs" %}
+{% include code-snippet/range-navigator/data/date-time-format/date-time-format.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

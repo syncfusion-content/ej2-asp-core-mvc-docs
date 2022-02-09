@@ -128,8 +128,10 @@ In the below example, Duration column is locked and its reordering functionality
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/columns-mvc/lock/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/treegrid/columns-mvc/lock/lock.cs" %}
+{% highlight c# tabtitle="Lock.cs" %}
+{% include code-snippet/tree-grid/columns-mvc/lock/lock.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -137,8 +139,10 @@ In the below example, Duration column is locked and its reordering functionality
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/columns-mvc/lock/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/treegrid/columns-mvc/lock/lock.cs" %}
+{% highlight c# tabtitle="Lock.cs" %}
+{% include code-snippet/tree-grid/columns-mvc/lock/lock.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

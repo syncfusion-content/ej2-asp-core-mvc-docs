@@ -346,8 +346,10 @@ The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/kanban/dialog/crud-url-adaptor/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/kanban/dialog/crud-url-adaptor/datasource.cs" %}
+{% highlight c# tabtitle="Datasource.cs" %}
+{% include code-snippet/kanban/dialog/crud-url-adaptor/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -355,8 +357,10 @@ The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/kanban/dialog/crud-url-adaptor/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/kanban/dialog/crud-url-adaptor/datasource.cs" %}
+{% highlight c# tabtitle="Datasource.cs" %}
+{% include code-snippet/kanban/dialog/crud-url-adaptor/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

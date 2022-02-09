@@ -1,0 +1,24 @@
+{
+  "name": "ej2-asp-core-mvc-docs",
+  "version": "1.0.0",
+  "description": "This is the common UG Document repository for the EJ2 ASP.NET MVC and EJ2 ASP.NET CORE controls",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "glob": "^7.2.0",
+    "gulp": "3.9.1",
+    "shelljs": "^0.8.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syncfusion-content/ej2-asp-core-mvc-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syncfusion-content/ej2-asp-core-mvc-docs/issues"
+  },
+  "homepage": "https://github.com/syncfusion-content/ej2-asp-core-mvc-docs#readme"
+}

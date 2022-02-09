@@ -248,8 +248,10 @@ By default the `QuickInfo` popup will open on single click of the cell. To open 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/show-quick-info/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/schedule/editor-template/show-quick-info/data.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/show-quick-info/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -257,8 +259,10 @@ By default the `QuickInfo` popup will open on single click of the cell. To open 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/show-quick-info/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/schedule/editor-template/show-quick-info/data.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/show-quick-info/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

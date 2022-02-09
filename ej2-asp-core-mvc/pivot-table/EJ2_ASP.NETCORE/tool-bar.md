@@ -339,8 +339,10 @@ For example, you can add the header and footer for the pdf document by setting t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/toolbar/toolbar-export/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/pivot-table/toolbar/toolbar-export/ToolbarExport.cs" %}
+{% highlight c# tabtitle="ToolbarExport.cs" %}
+{% include code-snippet/pivot-table/toolbar/toolbar-export/ToolbarExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -348,8 +350,10 @@ For example, you can add the header and footer for the pdf document by setting t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/toolbar/toolbar-export/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/pivot-table/toolbar/toolbar-export/ToolbarExport.cs" %}
+{% highlight c# tabtitle="ToolbarExport.cs" %}
+{% include code-snippet/pivot-table/toolbar/toolbar-export/ToolbarExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

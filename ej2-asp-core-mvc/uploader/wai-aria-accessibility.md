@@ -30,7 +30,8 @@ The following are the standard keys that works on uploader control:
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/uploader/keyboard/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/uploader/keyboard/keyboard.cs" %}
+{% highlight c# tabtitle="Keyboard.cs" %}
+{% include code-snippet/uploader/keyboard/keyboard.cs %}
 {% include code-snippet/uploader/keyboard/keyboard.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -41,7 +42,8 @@ The following are the standard keys that works on uploader control:
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/uploader/keyboard/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/uploader/keyboard/keyboard.cs" %}
+{% highlight c# tabtitle="Keyboard.cs" %}
+{% include code-snippet/uploader/keyboard/keyboard.cs %}
 {% include code-snippet/uploader/keyboard/keyboard.cs %}
 {% endhighlight %}
 {% endtabs %}

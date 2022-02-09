@@ -264,8 +264,10 @@ User can show custom string in empty value cells using the [`EmptyCellsTextConte
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/data-binding/empty-cells/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/pivot-table/data-binding/emty-cells/empty-cells.cs" %}
+{% highlight c# tabtitle="Empty-cells.cs" %}
+{% include code-snippet/pivot-table/data-binding/empty-cells/empty-cells.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -273,8 +275,10 @@ User can show custom string in empty value cells using the [`EmptyCellsTextConte
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/data-binding/empty-cells/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/pivot-table/data-binding/emty-cells/empty-cells.cs" %}
+{% highlight c# tabtitle="Empty-cells.cs" %}
+{% include code-snippet/pivot-table/data-binding/empty-cells/empty-cells.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

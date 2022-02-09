@@ -31,8 +31,10 @@ In the following code example, tooltip is globalized to Deutsch culture.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/treemap/internationalization/internationalization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/treemap/internationlization/internationlization/internationlization.cs" %}
+{% highlight c# tabtitle="Internationlization.cs" %}
+{% include code-snippet/treemap/internationalization/internationalization/internationalization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -40,8 +42,10 @@ In the following code example, tooltip is globalized to Deutsch culture.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/treemap/internationalization/internationalization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/treemap/internationlization/internationlization/internationlization.cs" %}
+{% highlight c# tabtitle="Internationlization.cs" %}
+{% include code-snippet/treemap/internationalization/internationalization/internationalization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

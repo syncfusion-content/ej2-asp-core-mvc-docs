@@ -242,8 +242,10 @@ The filtering feature enables you to view reduced amount of records based on fil
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/getting-start-core/filtering/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/grid/getting-start-core/filtering/filtering.cs" %}
+{% highlight c# tabtitle="Filtering.cs" %}
+{% include code-snippet/tree-grid/getting-start-core/filtering/filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -251,8 +253,10 @@ The filtering feature enables you to view reduced amount of records based on fil
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/getting-start-core/filtering/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/grid/getting-start-core/filtering/filtering.cs" %}
+{% highlight c# tabtitle="Filtering.cs" %}
+{% include code-snippet/tree-grid/getting-start-core/filtering/filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
