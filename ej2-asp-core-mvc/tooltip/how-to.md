@@ -18,7 +18,6 @@ By default, Tooltips will not be displayed on disabled elements. However, it is 
 2. Set the pointer event as `none` for the disabled element (button) through CSS.
 3. Now, initialize the Tooltip for outer div element that holds the disabled button element.
 
-{% tab template="layout/tooltip/disabled-elements", isDefaultActive=true, sourceFiles="index.ts,index.html,index.css", es5Template="disabled-template" %}
 
 {% if page.publishingplatform == "aspnet-core" %}
 

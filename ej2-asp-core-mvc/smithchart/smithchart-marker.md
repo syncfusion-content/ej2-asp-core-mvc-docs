@@ -59,10 +59,10 @@ Using marker settings in series, you can customize the marker for each series di
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/smithchart/marker/custom-marker/tagHelper %}
+{% include code-snippet/smithchart/marker/custom-maker/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom-marker.cs" %}
-{% include code-snippet/smithchart/marker/custom-marker/custom-marker.cs %}
+{% highlight c# tabtitle="Custom-maker.cs" %}
+{% include code-snippet/smithchart/marker/custom-maker/custom-maker.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,10 +70,10 @@ Using marker settings in series, you can customize the marker for each series di
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/smithchart/marker/custom-marker/razor %}
+{% include code-snippet/smithchart/marker/custom-maker/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Cusom-marker.cs" %}
-{% include code-snippet/smithchart/marker/custom-marker/custom-marker.cs %}
+{% include code-snippet/smithchart/marker/custom-maker/custom-maker.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
