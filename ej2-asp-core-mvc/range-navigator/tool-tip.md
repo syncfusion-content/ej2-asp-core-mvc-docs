@@ -25,8 +25,10 @@ The tooltip can be used to display information about the selected data and it is
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/range-navigator/getting-started/tooltip/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/range-navigator/getting-started/tooltip/tooltip.cs" %}
+{% highlight c# tabtitle="Tooltip.cs" %}
+{% include code-snippet/range-navigator/getting-started/tooltip/tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,8 +36,10 @@ The tooltip can be used to display information about the selected data and it is
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/range-navigator/getting-started/tooltip/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/range-navigator/getting-started/tooltip/tooltip.cs" %}
+{% highlight c# tabtitle="Tooltip.cs" %}
+{% include code-snippet/range-navigator/getting-started/tooltip/tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

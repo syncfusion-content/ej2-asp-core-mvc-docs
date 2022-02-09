@@ -18,8 +18,10 @@ You can set the visibility of tooltip using `showTooltip` in the pivot table.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/tooltip/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/pivot-table/tooltip/tooltip/ToolTip.cs" %}
+{% highlight c# tabtitle="ToolTip.cs" %}
+{% include code-snippet/pivot-table/tooltip/tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -27,8 +29,10 @@ You can set the visibility of tooltip using `showTooltip` in the pivot table.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/tooltip/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/pivot-table/tooltip/tooltip/ToolTip.cs" %}
+{% highlight c# tabtitle="ToolTip.cs" %}
+{% include code-snippet/pivot-table/tooltip/tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

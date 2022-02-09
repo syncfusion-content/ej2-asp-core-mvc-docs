@@ -19,8 +19,10 @@ In the below sample, you can filter the cards based on the ‘where’ query and
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/kanban/cards/filter-cards/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/kanban/cards/filter-cards/datasource.cs" %}
+{% highlight c# tabtitle="Datasource.cs" %}
+{% include code-snippet/kanban/cards/filter-cards/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,8 +30,10 @@ In the below sample, you can filter the cards based on the ‘where’ query and
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/kanban/cards/filter-cards/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/kanban/cards/filter-cards/datasource.cs" %}
+{% highlight c# tabtitle="Datasource.cs" %}
+{% include code-snippet/kanban/cards/filter-cards/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

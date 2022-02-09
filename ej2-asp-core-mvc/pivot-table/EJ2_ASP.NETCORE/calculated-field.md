@@ -336,8 +336,10 @@ In the below sample, the calculated field button click action, that is, opening 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/action-event/actionBegin-calculatedField/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/action-event/actionBegin-calculatedField/actionBegin-calculatedField.cs" %}
+{% highlight c# tabtitle="ActionBegin-calculatedField.cs" %}
+{% include code-snippet/pivot-table/action-event/actionBegin-calculatedField/actionBegin-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -345,8 +347,10 @@ In the below sample, the calculated field button click action, that is, opening 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/action-event/actionBegin-calculatedField/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/action-event/actionBegin-calculatedField/actionBegin-calculatedField.cs" %}
+{% highlight c# tabtitle="ActionBegin-calculatedField.cs" %}
+{% include code-snippet/pivot-table/action-event/actionBegin-calculatedField/actionBegin-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -376,8 +380,10 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/action-event/actionComplete-calculatedField/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/action-event/actionComplete-calculatedField/actionComplete-calculatedField.cs" %}
+{% highlight c# tabtitle="ActionComplete-calculatedField.cs" %}
+{% include code-snippet/pivot-table/action-event/actionComplete-calculatedField/actionComplete-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -385,8 +391,10 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/action-event/actionComplete-calculatedField/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/action-event/actionComplete-calculatedField/actionComplete-calculatedField.cs" %}
+{% highlight c# tabtitle="ActionComplete-calculatedField.cs" %}
+{% include code-snippet/pivot-table/action-event/actionComplete-calculatedField/actionComplete-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -411,8 +419,10 @@ The event [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/action-event/actionFailure-calculatedField/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/action-event/actionFailure-calculatedField/actionFailure-calculatedField.cs" %}
+{% highlight c# tabtitle="ActionFailure-calculatedField.cs" %}
+{% include code-snippet/pivot-table/action-event/actionFailure-calculatedField/actionFailure-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -420,8 +430,10 @@ The event [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/action-event/actionFailure-calculatedField/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/action-event/actionFailure-calculatedField/actionFailure-calculatedField.cs" %}
+{% highlight c# tabtitle="ActionFailure-calculatedField.cs" %}
+{% include code-snippet/pivot-table/action-event/actionFailure-calculatedField/actionFailure-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

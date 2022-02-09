@@ -86,8 +86,10 @@ The [`maxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs" %}
+{% highlight c# tabtitle="Drill-through.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -95,8 +97,10 @@ The [`maxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs" %}
+{% highlight c# tabtitle="Drill-through.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

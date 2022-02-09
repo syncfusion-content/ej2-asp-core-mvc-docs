@@ -61,8 +61,10 @@ The Tooltip content can be dynamically loaded  by making use of the AJAX call. T
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tooltip/ajaxcontent/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/tooltip/ajaxcontent/icons.css" %}
+{% highlight css tabtitle="Icons.css" %}
+{% include code-snippet/tooltip/ajaxcontent/icons.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,8 +72,10 @@ The Tooltip content can be dynamically loaded  by making use of the AJAX call. T
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tooltip/ajaxcontent/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/tooltip/ajaxcontent/icons.css" %}
+{% highlight c# tabtitle="Icons.css" %}
+{% include code-snippet/tooltip/ajaxcontent/icons.css %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

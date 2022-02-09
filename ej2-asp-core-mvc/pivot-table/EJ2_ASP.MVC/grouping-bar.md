@@ -455,8 +455,10 @@ During runtime, the **Values** button in the grouping bar can be moved to a diff
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/field-list/groupingbar-valuesbutton/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/pivot-table/field-list/groupingbar-valuesbutton/groupingbar-valuesbutton.cs" %}
+{% highlight c# tabtitle="Groupingbar-valuesbutton.cs" %}
+{% include code-snippet/pivot-table/field-list/groupingbar-valuesbutton/groupingbar-valuesbutton.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -464,8 +466,10 @@ During runtime, the **Values** button in the grouping bar can be moved to a diff
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/field-list/groupingbar-valuesbutton/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/pivot-table/field-list/groupingbar-valuesbutton/groupingbar-valuesbutton.cs" %}
+{% highlight c# tabtitle="Groupingbar-valuesbutton.cs" %}
+{% include code-snippet/pivot-table/field-list/groupingbar-valuesbutton/groupingbar-valuesbutton.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
