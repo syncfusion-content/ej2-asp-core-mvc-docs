@@ -75,10 +75,10 @@ After Installation complete this will included in the project. You can refer it 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/barcode/getting-start/barcode/tagHelper %}
+{% include code-snippet/barcode/getting-started/barcode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Barcode.cs" %}
-{% include code-snippet/barcode/getting-start/barcode/barcode.cs %}
+{% include code-snippet/barcode/getting-started/barcode/barcode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -86,10 +86,10 @@ After Installation complete this will included in the project. You can refer it 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/barcode/getting-start/barcode/razor %}
+{% include code-snippet/barcode/getting-started/barcode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Barcode.cs" %}
-{% include code-snippet/barcode/getting-start/barcode/barcode.cs %}
+{% include code-snippet/barcode/getting-started/barcode/barcode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
