@@ -19,7 +19,8 @@ DatePicker has `enableMask` property that provides the option to enable the buil
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/datepicker/mask-module/mask-input/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/datepicker/mask-module/mask-input/" %}
+{% highlight c# tabtitle="Mask-input.cs" %}
+{% include code-snippet/datepicker/mask-module/mask-input/mask-input.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -29,7 +30,8 @@ DatePicker has `enableMask` property that provides the option to enable the buil
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/datepicker/mask-module/mask-input/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="code-snippet/datepicker/mask-module/mask-input/" %}
+{% highlight c# tabtitle="Mask-input.cs" %}
+{% include code-snippet/datepicker/mask-module/mask-input/mask-input.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
