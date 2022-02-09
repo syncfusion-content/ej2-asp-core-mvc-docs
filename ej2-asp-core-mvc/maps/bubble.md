@@ -172,7 +172,7 @@ The size of the bubbles is calculated from the values got from the `ValuePath` p
 
 
 
-![Bubble shape](./images/Bubble/bubble-sizing.PNG)
+![Bubble shape](./images/Bubble/bubble-sizing.png)
 
 ## Multiple bubble groups
 
