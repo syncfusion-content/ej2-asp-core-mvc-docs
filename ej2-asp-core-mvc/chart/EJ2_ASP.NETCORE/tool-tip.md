@@ -151,7 +151,7 @@ By default, tooltip shows information of x and y value in points. You can show m
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/user-interaction/tooltip/tooltip-mapping/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tooltip-mapping.cs" %}

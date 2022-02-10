@@ -212,6 +212,7 @@ By default, tooltip shows information of x and y value in points. You can show m
 {% endhighlight %}
 {% highlight c# tabtitle="Mapping.cs" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/mapping/mapping.cs %}
+{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
