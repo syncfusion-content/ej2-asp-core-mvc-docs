@@ -19,9 +19,6 @@ TimePicker has `enableMask` property that provides the option to enable the buil
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timepicker/mask-module/mask-input/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="" %}
-{% include code-snippet/timepicker/mask-module/mask-input/ %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -29,9 +26,6 @@ TimePicker has `enableMask` property that provides the option to enable the buil
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/timepicker/mask-module/mask-input/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="" %}
-{% include code-snippet/timepicker/mask-module/mask-input/ %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

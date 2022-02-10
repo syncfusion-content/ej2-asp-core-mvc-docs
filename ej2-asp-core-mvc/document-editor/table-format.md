@@ -90,7 +90,8 @@ Set the desired width of table cells that will be considered when the table is l
 {% include code-snippet/document-editor/cell-width/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Cell-width.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -99,7 +100,8 @@ Set the desired width of table cells that will be considered when the table is l
 {% include code-snippet/document-editor/cell-width/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Cell-width.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -115,7 +117,8 @@ You can set the desired width of a table in `Point` or `Percent` type. Refer to 
 {% include code-snippet/document-editor/table-width/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Table-width.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -124,7 +127,8 @@ You can set the desired width of a table in `Point` or `Percent` type. Refer to 
 {% include code-snippet/document-editor/table-width/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Table-width.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -140,7 +144,8 @@ Document editor exposes API to customize the borders for table cells by specifyi
 {% include code-snippet/document-editor/apply-borders/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Apply-borders.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -149,7 +154,8 @@ Document editor exposes API to customize the borders for table cells by specifyi
 {% include code-snippet/document-editor/apply-borders/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Apply-borders.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -195,7 +201,7 @@ documenteditor.selection.rowFormat.isHeader=true;
 
 This property is valid if a table row does not fit in the current page during table layout. It defines whether a table row can be allowed to break. If the value is false, the entire row will be moved to the start of next page. You can modify this property for selected rows using the following sample code.
 
-```typesript
+```typescript
 documenteditor.selection.rowFormat.allowRowBreakAcrossPages=false;
 ```
 

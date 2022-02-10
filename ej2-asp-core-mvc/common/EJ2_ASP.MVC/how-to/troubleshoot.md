@@ -28,7 +28,7 @@ This error is thrown due to not including the required target library for the Ty
 
     By adding the required target `dom,es2015` library in `TypeScriptLib` MSBuild property in your `.csproj` file as like below.
 
-    ```csproj
+    ```cs
 
         <TypeScriptLib>dom,es2015</TypeScriptLib>
     ```
