@@ -97,7 +97,7 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-% include code-snippet/dashboard-layout/graphical-representation/tagHelper %}
+{% include code-snippet/dashboard-layout/graphical-representation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
 {% include code-snippet/dashboard-layout/graphical-representation/HomeController.cs %}
