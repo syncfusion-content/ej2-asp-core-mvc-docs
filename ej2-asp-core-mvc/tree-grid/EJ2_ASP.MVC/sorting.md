@@ -113,7 +113,6 @@ You can customize the default sort action for a column by defining the [`column.
 
 In the following example, custom sort comparer function was defined in the `Category` column.
 
-{% tab template="tree-grid/sorting", es5Template="sort-comparer" %}
 
 ```typescript
 import { TreeGrid, Sort } from '@syncfusion/ej2-treegrid';

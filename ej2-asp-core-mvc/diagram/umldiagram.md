@@ -223,7 +223,6 @@ Composition is a “strong” form of “aggregation”. Composition is decorate
 
 The following code example illustrates how to create a composition.
 
-{% tab template= "diagram/umldiagramshapes", es5Template="es5composition" %}
 
 {% if page.publishingplatform == "aspnet-core" %}
 

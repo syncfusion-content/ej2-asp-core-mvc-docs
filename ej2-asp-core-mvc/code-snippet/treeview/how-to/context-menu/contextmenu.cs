@@ -17,7 +17,7 @@ namespace EJ2CoreSampleBrowser.Controllers.TreeView
                 name = "Discover Music",
                 hasChild = true,
                 expanded = true,
-                htmlAttribute = new Dictionary<string, string>() {{ "class" , "remove rename"} }
+                htmlAttribute = new Dictionary<string, string>() {{ "class" , "remove rename" }}
 
             });
             treedata.Add(new
