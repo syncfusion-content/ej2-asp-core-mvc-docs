@@ -56,10 +56,10 @@ To use the image export functionality, set the [`AllowImageExport`](https://help
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/print-and-export/export\export/tagHelper %}
+{% include code-snippet/lineargauge/print-and-export/export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/lineargauge/print-and-export/export\export/export.cs %}
+{% include code-snippet/lineargauge/print-and-export/export/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,10 +67,10 @@ To use the image export functionality, set the [`AllowImageExport`](https://help
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/print-and-export/export\export/razor %}
+{% include code-snippet/lineargauge/print-and-export/export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/lineargauge/print-and-export/export\export/export.cs %}
+{% include code-snippet/lineargauge/print-and-export/export/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

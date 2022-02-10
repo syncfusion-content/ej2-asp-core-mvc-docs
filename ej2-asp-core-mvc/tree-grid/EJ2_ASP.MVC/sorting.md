@@ -150,8 +150,6 @@ treeGridObj.appendTo('#TreeGrid');
 
 ```
 
-{% endtab %}
-
 > The sort comparer function will work only for the local data. -->
 
 ## Touch interaction
