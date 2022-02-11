@@ -8,6 +8,75 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Search
+
+You can search records in a TreeGrid, by using the [`search`](https://ej2.syncfusion.com/documentation/api/treegrid/#search) method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding **search** item to the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/searching/default-searching/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="DefaultSearching.cs" %}
+{% include code-snippet/tree-grid/searching/default-searching/defaultSearching.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/searching/default-searching/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="DefaultSearching.cs" %}
+{% include code-snippet/tree-grid/searching/default-searching/defaultSearching.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Initial search
+
+To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~SearchSettings.html).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/searching/initial-search/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Initialsearch.cs" %}
+{% include code-snippet/tree-grid/searching/initial-search/initialsearch.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/searching/initial-search/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Initialsearch.cs" %}
+{% include code-snippet/tree-grid/searching/initial-search/initialsearch.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+> By default, treegrid searches all the bound column values. To customize this behavior define the [`SearchSettings.Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings~Fields.html) property.
+
+## Search operators
+
+The search operator can be defined in the [`Operators`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings~Operators.html) property of [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) to configure specific searching.
+
+The following operators are supported in searching:
+
+Operator |Description
+-----|-----
 startsWith |Checks whether a value begins with the specified value.
 endsWith |Checks whether a value ends with the specified value.
 contains |Checks whether a value contains the specified value.

@@ -8,6 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Add floating label to TextBox programmatically
+
+The `Floating Label TextBox` floats label above the TextBox after focusing, or entering a value in the TextBox.
+
+Floating label supports the types of actions as given below.
+
+Type     | Description
+------------ | -------------
   Auto       | The floating label will float above the input after focusing, or entering a value in the input.
   Always     | The floating label will always float above the input.
   Never      | By default, never float the label in the input when the placeholder is available.
