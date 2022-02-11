@@ -19,7 +19,7 @@ The Gantt control supports three types of mode. They are:
 * `Manual`: All the tasks are manually validate by the user.
 * `Custom`: Both Auto and Manual tasks are render by mapped from data source.
 
->Note: The default value of [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) is `Auto`.
+> The default value of [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) is `Auto`.
 
 ## Automatically Scheduled Tasks
 
