@@ -8,6 +8,292 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Columns
+
+The column definitions are used as the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) schema in the Grid. This plays a vital role in rendering column values in the required format.
+
+The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) property of the [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html)
+is necessary to map the data source values in Grid columns.
+
+> 1. If the column [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) is not specified in the dataSource, the column values will be empty.
+> 2. If the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) name contains “dot” operator, it is considered as complex binding.
+
+## Auto generation
+
+The [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) are automatically generated when
+[`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) declaration is empty or undefined while initializing the grid. All the columns in the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) are bound as grid columns.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/auto/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Auto.cs" %}
+{% include code-snippet/grid/columns/auto/auto.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/auto/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Auto.cs" %}
+{% include code-snippet/grid/columns/auto/auto.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+> When columns are auto-generated, the column [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Type) will be determined from the first record of the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource).
+
+### Set Primary key column for auto generated columns when editing is enabled
+
+Primary key can be defined in the declaration of column object of the grid. When you did not declare the columns, the grid will generate the columns automatically. For these auto generated columns, you can set [`IsPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) column property as true by using the following ways,
+
+If Primary key "column index" is known then refer the following example
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/primary/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Primary.cs" %}
+{% include code-snippet/grid/columns/primary/primary.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/primary/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Primary.cs" %}
+{% include code-snippet/grid/columns/primary/primary.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+> If Primary key "column fieldname" is known then you can get the column by using **var column = grid.getColumnByField('OrderID')** and then set primary key by defining **Column.IsPrimaryKey = 'true'**
+
+### Set column options to auto generated columns
+
+You can set column options such as [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format), [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Width) to the auto generated columns by using [`DataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the grid.
+
+In the below example, [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Width) is set for **OrderID** column, date type is set for **OrderDate** column and numeric type is set for **Freight** column.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/autocolumnformat/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Autocolumnformat.cs" %}
+{% include code-snippet/grid/columns/autocolumnformat/autocolumnformat.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/autocolumnformat/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Autocolumnformat.cs" %}
+{% include code-snippet/grid/columns/autocolumnformat/autocolumnformat.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Complex data binding
+
+You can achieve complex data binding in the grid by using the dot(.) operator in the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/complexbinding/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Complexbinding.cs" %}
+{% include code-snippet/grid/columns/complexbinding/complexbinding.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/complexbinding/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Complexbinding.cs" %}
+{% include code-snippet/grid/columns/complexbinding/complexbinding.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Foreign Key Column
+
+Foreign key column can be enabled by using [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_DataSource), [`ForeignKeyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyField) and [`ForeignKeyValue`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyValue) properties of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html).
+
+* [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_DataSource) - Defines the foreign data.
+* [`ForeignKeyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyField) - Defines the mapping column name to the foreign data.
+* [`ForeignKeyValue`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyValue) - Defines the display field from the foreign data.
+
+In the following example, **Employee Name** is a foreign column which shows **FirstName** column from foreign data.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/foreign/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="EmployeeView.cs" %}
+{% include code-snippet/grid/columns/foreign/employeeView.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/foreign/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="EmployeeView.cs" %}
+{% include code-snippet/grid/columns/foreign/employeeView.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+> For remote data, the sorting and grouping is done based on [`ForeignKeyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyField) instead of [`ForeignKeyValue`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyValue).
+> If [`ForeignKeyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyField) is not defined, then the column uses [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumnBuilder-1.html#Syncfusion_EJ2_Grids_GridColumnBuilder_1_Field_System_String_).
+
+## Header Template
+
+You can customize the header element by using the [`HeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderTemplate) property. In this demo, the custom element is rendered for both EmployeeID and BirthDate column headers.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/headertemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Headertemplate.cs" %}
+{% include code-snippet/grid/columns/headertemplate/headertemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/headertemplate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Headertemplate.cs" %}
+{% include code-snippet/grid/columns/headertemplate/headertemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Header text
+
+By default, column header title is displayed from column [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) value. To override the default header title, you have to define the [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderText) value.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/headertext/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Headertext.cs" %}
+{% include code-snippet/grid/columns/headertext/headertext.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/headertext/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Headertext.cs" %}
+{% include code-snippet/grid/columns/headertext/headertext.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+> If both the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) and [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderText)
+are not defined in the column, the column renders with empty header text.
+
+## Format
+
+To format cell values based on specific culture, use the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property of [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html). The grid uses Internalization library to format number and date values.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/format/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Format.cs" %}
+{% include code-snippet/grid/columns/format/format.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/format/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Format.cs" %}
+{% include code-snippet/grid/columns/format/format.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+> By default, the number and date values are formatted in **en-US** locale.
+
+### Number formatting
+
+The number or integer values can be formatted using the below format strings.
+
+Format |Description |Remarks
+-----|-----|-----
+N | Denotes numeric type. | The numeric format is followed by integer value as N2, N3. etc which denotes the number of precision to be allowed.
+C | Denotes currency type. | The currency format is followed by integer value as C2, C3. etc which denotes the number of precision to be allowed.
+P | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 1. For example the cell value **0.2** is formatted as **20%**. The percentage format is followed by integer value as P2, P3. etc which denotes the number of precision to be allowed.
+
+### Date formatting
+
+You can format date values either using built-in date format string or custom format string.
+
+For built-in date format you can specify [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property as string(Example: `yMd`).
+
+You can also use custom format string to format the date values. Some of the custom formats and the formatted date values are given in the below table.
+
+Format | Formatted value
+-----|-----
 { type:'date', format:'dd/MM/yyyy' } | 04/07/1996
 { type:'date', format:'dd.MM.yyyy' } | 04.07.1996
 { type:'date', skeleton:'short' } | 7/4/96

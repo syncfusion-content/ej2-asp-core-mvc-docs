@@ -8,6 +8,119 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Task Scheduling
+
+The Gantt provides support for automatic and manual task scheduling modes. It is used to indicate whether the start date and end date of all the tasks will be automatically validated or not. [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) is the property used to change the schedule mode of a task.
+
+The Gantt control supports three types of mode. They are:
+
+* `Auto`: All the tasks are automatically validate.
+* `Manual`: All the tasks are manually validate by the user.
+* `Custom`: Both Auto and Manual tasks are render by mapped from data source.
+
+>Note: The default value of [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) is `Auto`.
+
+## Automatically Scheduled Tasks
+
+When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) property is set as `Auto`, the start date and end date of all the tasks in the project will be automatically validated. That is, dates are validated based on various factors such as working time, holidays, weekends and predecessors.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/task-scheduling/auto-tasks/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Auto-tasks.cs" %}
+{% include code-snippet/gantt/task-scheduling/auto-tasks/auto-tasks.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/task-scheduling/auto-tasks/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Auto-tasks.cs" %}
+{% include code-snippet/gantt/task-scheduling/auto-tasks/auto-tasks.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/auto-tasks.png)
+
+## Manually Scheduled Tasks
+
+When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) property is set as `Manual`, the start date and end date of all the tasks in the project will be same as given in the data source. That is, dates are not validated based on various factors such as dependencies between tasks, holidays, weekends, working time.
+We can restrict this mode in predecessor validation alone. That is, we can automatically validate the dates based on predecessor values by enabling the [`validateManualTasksOnLinking`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ValidateManualTasksOnLinking) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/task-scheduling/manual-tasks/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Manual-tasks.cs" %}
+{% include code-snippet/gantt/task-scheduling/manual-tasks/manual-tasks.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/task-scheduling/manual-tasks/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Manual-tasks.cs" %}
+{% include code-snippet/gantt/task-scheduling/manual-tasks/manual-tasks.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/manual-tasks.png)
+
+## Custom
+
+When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) property is set as `Custom`, the scheduling mode for each tasks will be mapped from the data source field. The `Boolean` property [`taskFields.manual`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Manual_System_String_) is used to map the manual scheduling mode field from the data source.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/task-scheduling/custom-tasks/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-tasks.cs" %}
+{% include code-snippet/gantt/task-scheduling/custom-tasks/custom-tasks.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/task-scheduling/custom-tasks/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-tasks.cs" %}
+{% include code-snippet/gantt/task-scheduling/custom-tasks/custom-tasks.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/custom-tasks.png)
+
+## Unscheduled Tasks
+
+Unscheduled tasks are planned for a project without any definite schedule dates. The Gantt control supports rendering the unscheduled tasks. You can create or update the tasks with anyone of start date, end date, and duration values or none. You can enable or disable the unscheduled tasks by using the [`allowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property. The following images represent the various types of unscheduled tasks in Gantt.
+
+Taskbar state |Auto |Manual
+-----|-----|-----
 `Start Date Only` | ![Alt text](images/startDate-only.png) | ![Alt text](images/startDate-manual.png)
 `End Date Only` | ![Alt text](images/endDate-only.png) | ![Alt text](images/endDate-manual.png)
 `Duration Only` | ![Alt text](images/duration-only.png) | ![Alt text](images/duration-manual.png)

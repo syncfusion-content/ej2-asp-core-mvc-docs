@@ -11,7 +11,7 @@ documentation: ug
 
 # Data Matrix generator
 
-# Data Matrix
+## Data Matrix
 
 DataMatrix Barcode is a two dimensional barcode that consists of a grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the barcode can either be numbers or alphanumeric. They are widely used in printed media such as labels and letters. You can read it easily with the help of a barcode reader and mobile phones.
 

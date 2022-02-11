@@ -8,6 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Sizing
+
+You can render the TextBox in two different sizes.
+
+Property   | Description
+------------ | -------------
   Normal     | By default, the TextBox is rendered with normal size.
   Small      | You need to add `e-small` class to the input element, or else add to the input container.
 

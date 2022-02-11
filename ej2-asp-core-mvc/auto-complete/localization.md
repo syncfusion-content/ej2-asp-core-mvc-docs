@@ -8,6 +8,14 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Localization
+
+The Localization library allows you to localize static text content of the
+`noRecordsTemplate` and `actionFailureTemplate` properties according to the culture currently assigned to the AutoComplete.
+
+| Locale key | en-US (default)
+|------|------
 | noRecordsTemplate |  No Records Found
 | actionFailureTemplate | The Request Failed
 

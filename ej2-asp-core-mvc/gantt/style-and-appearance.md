@@ -8,6 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Styling
+
+To modify the Gantt Chart appearance, you need to override the default CSS of gantt chart. Please find the list of CSS classes and its corresponding section in Gantt Chart. Also, you have an option to create your own custom theme for all the JavaScript controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+
+Section | CSS Class | Purpose of Class
+-----|-----|-----
 **Root**|e-gantt|This class is in the root element (div) of the gantt chart control.
 **Header**|e-gridheader|This class is added in the root element of header element. In this class, You can override thin line between header and content of the gantt chart.
 ||e-table|This class is added at 'table' of the gantt chart header. This CSS class makes table width as 100 %.
