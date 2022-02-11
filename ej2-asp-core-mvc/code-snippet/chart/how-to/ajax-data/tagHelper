@@ -1,0 +1,21 @@
+<ejs-chart id="container" load="chartLoad" >
+    <e-chart-primaryxaxis title="Years" valueType="Category"></e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series name="Product X" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    var chartLoad = function (args) {
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("GetServerData","ajaxdata")',
+            async: false,
+            success: function (data) {
+                args.chart.series[0].dataSource = data;
+                args.chart.series[0].xName = "x";
+                args.chart.series[0].yName = "y";
+            }
+        });
+    }
+</script>
