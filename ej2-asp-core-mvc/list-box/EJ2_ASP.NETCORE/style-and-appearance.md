@@ -8,6 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Styles and Appearances
+
+To modify the ListBox appearance, you need to override the default CSS of ListBox component. Please find the list of CSS classes and its corresponding section in ListBox component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+
+CSS Class | Purpose of Class
+-----|-----
 |.e-listbox-wrapper|To customize the listbox wrapper
 |.e-list-parent .e-list-item|To customize the listbox list items
 |.e-list-parent .e-list-item:hover|To customize the listbox list items on hover

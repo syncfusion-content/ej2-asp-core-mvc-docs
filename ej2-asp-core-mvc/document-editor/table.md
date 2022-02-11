@@ -8,6 +8,49 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Tables
+
+Tables are an efficient way to present information. Document editor can display and edit the tables. You can select and edit tables through keyboard, mouse, or touch interactions. Document editor exposes a rich set of APIs to perform these operations programmatically.
+
+## Create a table
+
+You can create and insert a table at cursor position by specifying the required number of rows and columns.
+
+Refer to the following sample code.
+
+```typescript
+ documenteditor.editor.insertTable(3,3);
+```
+
+The maximum size of row and column is limited to 32767 and 63 respectively.
+
+## Insert rows
+
+You can add a row (or several rows) above or below the row at cursor position by using the `insertRow` method. This method accepts the following parameters:
+
+Parameter | Type | Description
+----------|------|-------------
+above(optional) | boolean | This is optional and if omitted, it takes the value as false and inserts below the row at cursor position.
+count(optional) | number | This is optional and if omitted, it takes the value as 1.
+
+Refer to the following sample code.
+
+```typescript
+//Inserts a row below the row at cursor position
+documentedior.editor.insertRow();
+//Inserts a row above the row at cursor position
+documentedior.editor.insertRow(false);
+//Inserts three rows below the row at cursor position
+documentedior.editor.insertRow(true, 3)
+```
+
+## Insert columns
+
+You can add a column (or several columns) to the left or right of the column at cursor position by using the `insertColumn` method. This method accepts the following parameters:
+
+Parameter | Type | Description
+----------|------|-------------
 left(optional) | boolean| This is optional and if omitted, it takes the value as false and inserts to the right of column at cursor position.
 count(optional) | number |  This is optional and if omitted, it takes the value as 1.
 

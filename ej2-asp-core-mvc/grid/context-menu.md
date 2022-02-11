@@ -8,6 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Context menu
+
+The Grid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`ContextMenuItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuItems).
+
+The default items are in the following table.
+
+Items| Description
+----|----
 `AutoFit`|  Auto fit the current column.
 `AutoFitAll` | Auto fit all columns.
 `Edit`|  Edit the current record.

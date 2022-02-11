@@ -8,6 +8,22 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Header and Content
+
+## Header
+
+The Card can be created with header title, sub title and images. For adding header you need to create `div` element with the class `e-card-header` added.
+
+Card provides below elements and corresponding class definitions to include header.
+
+Elements   | Description
+------------ | -------------
+Caption | It is the wrapper element to include title and sub-title.
+Image | It supports to include header images with the specified dimensions.
+
+Class   | Description
+------------ | -------------
 `e-card-header-caption` | To group the title and subtitle within the header which acts as wrapper.
 `e-card-header-title` |  Main title text with in the header.
 `e-card-sub-title` | A sub-title within the header.
