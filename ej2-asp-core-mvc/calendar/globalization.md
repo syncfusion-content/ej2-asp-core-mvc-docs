@@ -32,7 +32,7 @@ To go with the different culture other than `English`, follow the below steps.
 know more about CLDR-Data refer the
 [`CLDR-Data`](http://cldr.unicode.org/index/cldr-spec/json) link.
 
-```cmd
+```
 npm install cldr-data --save
 ```
 

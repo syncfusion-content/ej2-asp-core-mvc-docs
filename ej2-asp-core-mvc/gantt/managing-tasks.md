@@ -210,10 +210,10 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/editing/add-edit dialogtab/tagHelper %}
+{% include code-snippet/gantt/editing/add-edit-dialogtab/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Add-edit dialogtab.cs" %}
-{% include code-snippet/gantt/editing/add-edit dialogtab/add-edit dialogtab.cs %}
+{% include code-snippet/gantt/editing/add-edit-dialogtab/add-edit-dialogtab.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -221,10 +221,10 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt/editing/add-edit dialogtab/razor %}
+{% include code-snippet/gantt/editing/add-edit-dialogtab/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Add-edit dialogtab.cs" %}
-{% include code-snippet/gantt/editing/add-edit dialogtab/add-edit dialogtab.cs %}
+{% include code-snippet/gantt/editing/add-edit-dialogtab/add-edit-dialogtab.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

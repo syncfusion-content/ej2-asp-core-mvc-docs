@@ -21,7 +21,7 @@ By default, all the Essential JS 2 component are specific to English culture ('e
 
 * Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
 
-```cmd
+```
 npm install cldr-data --save
 ```
 
