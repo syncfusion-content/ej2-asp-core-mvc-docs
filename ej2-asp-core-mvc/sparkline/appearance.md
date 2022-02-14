@@ -86,7 +86,7 @@ The background color of the sparkline area can be customized using the [`contain
 {% include code-snippet/sparkline/appearance/area-custom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Area_custom.cs" %}
-{% include code-snippet/sparkline/appearance/area-custom/area-custom.cs %}
+{% include code-snippet/sparkline/appearance/area-custom/area_custom.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -97,7 +97,7 @@ The background color of the sparkline area can be customized using the [`contain
 {% include code-snippet/sparkline/appearance/area-custom/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Area_custom.cs" %}
-{% include code-snippet/sparkline/appearance/area-custom/area-custom.cs %}
+{% include code-snippet/sparkline/appearance/area-custom/area_custom.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
