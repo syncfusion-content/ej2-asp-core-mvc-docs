@@ -202,7 +202,7 @@ You can placement the marker pointer in any of the following locations using [`p
 {% include code-snippet/lineargauge/pointers/pointer-placement/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pointer-placement.cs" %}
-{% include code-snippet/lineargauge/pointers/pointer-placementlacement/pointer-placement.cs %}
+{% include code-snippet/lineargauge/pointers/pointer-placement/pointer-placement.cs %}
 {% endhighlight %}
 {% endtabs %}
 
