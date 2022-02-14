@@ -178,7 +178,7 @@ Axis of the sparkline can be collapsed using the [`visible`](https://help.syncfu
 {% include code-snippet/sparkline/axis/axis-line/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis_line.cs" %}
-{% include code-snippet/sparkline/axis/axis-line/axis-line.cs %}
+{% include code-snippet/sparkline/axis/axis-line/axis_line.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -189,7 +189,7 @@ Axis of the sparkline can be collapsed using the [`visible`](https://help.syncfu
 {% include code-snippet/sparkline/axis/axis-line/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis_line.cs" %}
-{% include code-snippet/sparkline/axis/axis-line/axis-line.cs %}
+{% include code-snippet/sparkline/axis/axis-line/axis_line.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

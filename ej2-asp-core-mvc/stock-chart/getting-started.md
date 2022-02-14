@@ -83,10 +83,10 @@ This section explains how to plot below JSON data to the  Stock Chart.Please fin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/getting-started/populateData/tagHelper %}
+{% include code-snippet/stock-chart/getting-started/populateData/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PopularData.cs" %}
-{% include code-snippet/getting-started/populateData/populateData.cs %}
+{% include code-snippet/stock-chart/getting-started/populateData/populateData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,10 +94,10 @@ This section explains how to plot below JSON data to the  Stock Chart.Please fin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/getting-started/populateData/razor %}
+{% include code-snippet/stock-chart/getting-started/populateData/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PopulateData.cs" %}
-{% include code-snippet/getting-started/populateData/populateData.cs %}
+{% include code-snippet/stock-chart/getting-started/populateData/populateData.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
