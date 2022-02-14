@@ -125,10 +125,10 @@ You can handle the success and failure actions using the [success](https://help.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/uploader/success_failed/tagHelper %}
+{% include code-snippet/uploader/success-failed/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Success_failed.cs" %}
-{% include code-snippet/uploader/success_failed/success_failed.cs %}
+{% include code-snippet/uploader/success-failed/success-failed.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -136,10 +136,10 @@ You can handle the success and failure actions using the [success](https://help.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/uploader/success_failed/razor %}
+{% include code-snippet/uploader/success-failed/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Success_failed.cs" %}
-{% include code-snippet/uploader/success_failed/success_failed.cs %}
+{% include code-snippet/uploader/success-failed/success-failed.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

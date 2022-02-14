@@ -35,10 +35,10 @@ Class   | Description
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/card_horizontal/tagHelper %}
+{% include code-snippet/card/card-horizontal/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_horizontal/controller.cs %}
+{% include code-snippet/card/card-horizontal/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -46,10 +46,10 @@ Class   | Description
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/card/card_horizontal/razor %}
+{% include code-snippet/card/card-horizontal/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_horizontal/controller.cs %}
+{% include code-snippet/card/card-horizontal/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

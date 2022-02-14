@@ -32,10 +32,10 @@ To render a line draw type, use series [`drawType`](https://help.syncfusion.com/
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-line/tagHelper %}
+{% include code-snippet/chart/series/polar-radar/polar-line/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-line.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-line/polar-line.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-line/polar-line.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -43,10 +43,10 @@ To render a line draw type, use series [`drawType`](https://help.syncfusion.com/
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-line/razor %}
+{% include code-snippet/chart/series/polar-radar/polar-line/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-line.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-line/polar-line.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-line/polar-line.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -61,10 +61,10 @@ To render a spline line draw type, use series [`drawType`](https://help.syncfusi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-spline/tagHelper %}
+{% include code-snippet/chart/series/polar-radar/polar-spline/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-spline.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-spline/polar-spline.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-spline/polar-spline.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,10 +72,10 @@ To render a spline line draw type, use series [`drawType`](https://help.syncfusi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-spline/razor %}
+{% include code-snippet/chart/series/polar-radar/polar-spline/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-spline.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-spline/polar-spline.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-spline/polar-spline.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -90,10 +90,10 @@ To render a area line draw type, use series [`drawType`](https://help.syncfusion
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-area/tagHelper %}
+{% include code-snippet/chart/series/polar-radar/polar-area/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-area.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-area/polar-area.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-area/polar-area.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -101,10 +101,10 @@ To render a area line draw type, use series [`drawType`](https://help.syncfusion
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-area/razor %}
+{% include code-snippet/chart/series/polar-radar/polar-area/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-area.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-area/polar-area.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-area/polar-area.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -119,10 +119,10 @@ To render a stacked area draw type, use series [`drawType`](https://help.syncfus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-stackedarea/tagHelper %}
+{% include code-snippet/chart/series/polar-radar/polar-stackedarea/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-stackedarea.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-stackedarea/polar-stackedarea.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-stackedarea/polar-stackedarea.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -130,10 +130,10 @@ To render a stacked area draw type, use series [`drawType`](https://help.syncfus
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-stackedarea/razor %}
+{% include code-snippet/chart/series/polar-radar/polar-stackedarea/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-stackedarea.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-stackedarea/polar-stackedarea.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-stackedarea/polar-stackedarea.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -148,10 +148,10 @@ To render a column draw type, use series [`drawType`](https://help.syncfusion.co
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-column/tagHelper %}
+{% include code-snippet/chart/series/polar-radar/polar-column/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-column.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-column/polar-column.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-column/polar-column.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -159,10 +159,10 @@ To render a column draw type, use series [`drawType`](https://help.syncfusion.co
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-column/razor %}
+{% include code-snippet/chart/series/polar-radar/polar-column/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-column.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-column/polar-column.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-column/polar-column.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -177,10 +177,10 @@ To render a stacked column draw type, use series [`drawType`](https://help.syncf
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-stackedcolumn/tagHelper %}
+{% include code-snippet/chart/series/polar-radar/polar-stackedcolumn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-stackedcolumn.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-stackedcolumn/polar-stackedcolumn.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-stackedcolumn/polar-stackedcolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -188,10 +188,10 @@ To render a stacked column draw type, use series [`drawType`](https://help.syncf
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-stackedcolumn/razor %}
+{% include code-snippet/chart/series/polar-radar/polar-stackedcolumn/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-stackedcolumn.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-stackedcolumn/polar-stackedcolumn.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-stackedcolumn/polar-stackedcolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -206,10 +206,10 @@ To render a range column draw type, use series [`drawType`](https://help.syncfus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-rangecolumn/tagHelper %}
+{% include code-snippet/chart/series/polar-radar/polar-rangecolumn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-rangecolumn.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-rangecolumn/polar-rangecolumn.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-rangecolumn/polar-rangecolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -217,10 +217,10 @@ To render a range column draw type, use series [`drawType`](https://help.syncfus
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-rangecolumn/razor %}
+{% include code-snippet/chart/series/polar-radar/polar-rangecolumn/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-rangecolumn.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-rangecolumn/polar-rangecolumn.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-rangecolumn/polar-rangecolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -235,10 +235,10 @@ To render a scatter draw type, use series [`drawType`](https://help.syncfusion.c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-scatter/tagHelper %}
+{% include code-snippet/chart/series/polar-radar/polar-scatter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-scatter.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-scatter/polar-scatter.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-scatter/polar-scatter.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -246,10 +246,10 @@ To render a scatter draw type, use series [`drawType`](https://help.syncfusion.c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/polar-scatter/razor %}
+{% include code-snippet/chart/series/polar-radar/polar-scatter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Polar-scatter.cs" %}
-{% include code-snippet/chart/series/polar_radar/polar-scatter/polar-scatter.cs %}
+{% include code-snippet/chart/series/polar-radar/polar-scatter/polar-scatter.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -272,10 +272,10 @@ a line series used in polar chart to form a closed path. Default value of isClos
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/radar-line/tagHelper %}
+{% include code-snippet/chart/series/polar-radar/radar-line/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Radar-line.cs" %}
-{% include code-snippet/chart/series/polar_radar/radar-line/radar-line.cs %}
+{% include code-snippet/chart/series/polar-radar/radar-line/radar-line.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -283,10 +283,10 @@ a line series used in polar chart to form a closed path. Default value of isClos
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/radar-line/razor %}
+{% include code-snippet/chart/series/polar-radar/radar-line/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Radar-line.cs" %}
-{% include code-snippet/chart/series/polar_radar/radar-line/radar-line.cs %}
+{% include code-snippet/chart/series/polar-radar/radar-line/radar-line.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -304,10 +304,10 @@ You can customize the start angle of the polar series using
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/start-angle/tagHelper %}
+{% include code-snippet/chart/series/polar-radar/start-angle/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Start-angle.cs" %}
-{% include code-snippet/chart/series/polar_radar/start-angle/start-angle.cs %}
+{% include code-snippet/chart/series/polar-radar/start-angle/start-angle.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -315,10 +315,10 @@ You can customize the start angle of the polar series using
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/start-angle/razor %}
+{% include code-snippet/chart/series/polar-radar/start-angle/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Start-angle.cs" %}
-{% include code-snippet/chart/series/polar_radar/start-angle/start-angle.cs %}
+{% include code-snippet/chart/series/polar-radar/start-angle/start-angle.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -334,10 +334,10 @@ You can customize the radius of the polar series and radar series using
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/co-efficient/tagHelper %}
+{% include code-snippet/chart/series/polar-radar/co-efficient/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Co-efficient.cs" %}
-{% include code-snippet/chart/series/polar_radar/co-efficient/co-efficient.cs %}
+{% include code-snippet/chart/series/polar-radar/co-efficient/co-efficient.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -345,10 +345,10 @@ You can customize the radius of the polar series and radar series using
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/polar_radar/co-efficient/razor %}
+{% include code-snippet/chart/series/polar-radar/co-efficient/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Co-efficient.cs" %}
-{% include code-snippet/chart/series/polar_radar/co-efficient/co-efficient.cs %}
+{% include code-snippet/chart/series/polar-radar/co-efficient/co-efficient.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

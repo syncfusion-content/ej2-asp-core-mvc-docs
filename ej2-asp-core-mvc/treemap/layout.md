@@ -60,10 +60,10 @@ The `SliceAndDiceVertical` layout creates rectangles with high aspect ratio and 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/layout/slice_vertical/tagHelper %}
+{% include code-snippet/treemap/layout/slice-vertical/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Slice_vertical.cs" %}
-{% include code-snippet/treemap/layout/slice_vertical/slice_vertical.cs %}
+{% include code-snippet/treemap/layout/slice-vertical/slice-vertical.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,10 +71,10 @@ The `SliceAndDiceVertical` layout creates rectangles with high aspect ratio and 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/layout/slice_vertical/razor %}
+{% include code-snippet/treemap/layout/slice-vertical/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Slice_vertical.cs" %}
-{% include code-snippet/treemap/layout/slice_vertical/slice_vertical.cs %}
+{% include code-snippet/treemap/layout/slice-vertical/slice-vertical.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -91,10 +91,10 @@ The `SliceAndDiceHorizontal` layout creates rectangles with high aspect ratio an
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/layout/slice_horizontal/tagHelper %}
+{% include code-snippet/treemap/layout/slice-horizontal/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Slice_horizontal.cs" %}
-{% include code-snippet/treemap/layout/slice_horizontal/slice_horizontal.cs %}
+{% include code-snippet/treemap/layout/slice-horizontal/slice-horizontal.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -102,10 +102,10 @@ The `SliceAndDiceHorizontal` layout creates rectangles with high aspect ratio an
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/layout/slice_horizontal/razor %}
+{% include code-snippet/treemap/layout/slice-horizontal/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Slice_horizontal.cs" %}
-{% include code-snippet/treemap/layout/slice_horizontal/slice_horizontal.cs %}
+{% include code-snippet/treemap/layout/slice-horizontal/slice-horizontal.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -122,10 +122,10 @@ The `SliceAndDiceAuto` layout creates rectangles with high aspect ratio and disp
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/layout/slice_auto/tagHelper %}
+{% include code-snippet/treemap/layout/slice-auto/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Slice_auto.cs" %}
-{% include code-snippet/treemap/layout/slice_auto/slice_auto.cs %}
+{% include code-snippet/treemap/layout/slice-auto/slice-auto.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -133,10 +133,10 @@ The `SliceAndDiceAuto` layout creates rectangles with high aspect ratio and disp
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/layout/slice_auto/razor %}
+{% include code-snippet/treemap/layout/slice-auto/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Slice_auto.cs" %}
-{% include code-snippet/treemap/layout/slice_auto/slice_auto.cs %}
+{% include code-snippet/treemap/layout/slice-auto/slice-auto.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

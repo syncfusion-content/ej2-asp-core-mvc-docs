@@ -17,10 +17,10 @@ You can integrate any component inside the card element. Here ListView component
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/card_with_list/tagHelper %}
+{% include code-snippet/card/card-with-list/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_with_list/controller.cs %}
+{% include code-snippet/card/card-with-list/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ You can integrate any component inside the card element. Here ListView component
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/card/card_with_list/razor %}
+{% include code-snippet/card/card-with-list/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_with_list/controller.cs %}
+{% include code-snippet/card/card-with-list/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

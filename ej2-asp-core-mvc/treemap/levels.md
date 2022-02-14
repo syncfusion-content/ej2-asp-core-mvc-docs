@@ -24,10 +24,10 @@ In the following example, three levels are added and each level is configured us
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/levels/group_path/tagHelper %}
+{% include code-snippet/treemap/levels/group-path/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Group_path.cs" %}
-{% include code-snippet/treemap/levels/group_path/group_path.cs %}
+{% include code-snippet/treemap/levels/group-path/group-path.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +35,10 @@ In the following example, three levels are added and each level is configured us
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/levels/group_path/razor %}
+{% include code-snippet/treemap/levels/group-path/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Group_path.cs" %}
-{% include code-snippet/treemap/levels/group_path/group_path.cs %}
+{% include code-snippet/treemap/levels/group-path/group-path.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -57,10 +57,10 @@ The `groupGap` property is used to separate an item from each group or another i
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/levels/group_gap/tagHelper %}
+{% include code-snippet/treemap/levels/group-gap/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Group_gap.cs" %}
-{% include code-snippet/treemap/levels/group_gap/group_gap.cs %}
+{% include code-snippet/treemap/levels/group-gap/group-gap.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,10 +68,10 @@ The `groupGap` property is used to separate an item from each group or another i
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/levels/group_gap/razor %}
+{% include code-snippet/treemap/levels/group-gap/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Group_gap.cs" %}
-{% include code-snippet/treemap/levels/group_gap/group_gap.cs %}
+{% include code-snippet/treemap/levels/group-gap/group-gap.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -90,10 +90,10 @@ Customize header using the `headerFormat` property in which fields are mapping f
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/levels/header_format/tagHelper %}
+{% include code-snippet/treemap/levels/header-format/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Header_format.cs" %}
-{% include code-snippet/treemap/levels/header_format/header_format.cs %}
+{% include code-snippet/treemap/levels/header-format/header-format.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -101,10 +101,10 @@ Customize header using the `headerFormat` property in which fields are mapping f
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/levels/header_format/razor %}
+{% include code-snippet/treemap/levels/header-format/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Header_format.cs" %}
-{% include code-snippet/treemap/levels/header_format/header_format.cs %}
+{% include code-snippet/treemap/levels/header-format/header-format.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -119,10 +119,10 @@ Customize the font color, family, weight, opacity and size using the `headerStyl
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/levels/header_height/tagHelper %}
+{% include code-snippet/treemap/levels/header-height/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Header_height.cs" %}
-{% include code-snippet/treemap/levels/header_height/header_height.cs %}
+{% include code-snippet/treemap/levels/header-height/header-height.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -130,10 +130,10 @@ Customize the font color, family, weight, opacity and size using the `headerStyl
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/levels/header_height/razor %}
+{% include code-snippet/treemap/levels/header-height/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Header_height.cs" %}
-{% include code-snippet/treemap/levels/header_height/header_height.cs %}
+{% include code-snippet/treemap/levels/header-height/header-height.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

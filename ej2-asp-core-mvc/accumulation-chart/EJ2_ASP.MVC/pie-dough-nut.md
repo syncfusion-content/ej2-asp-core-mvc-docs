@@ -20,10 +20,10 @@ as `Pie`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/pie/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/pie/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pie.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/pie/pie.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/pie/pie.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ as `Pie`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/pie/razor %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/pie/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pie.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/pie/pie.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/pie/pie.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -51,10 +51,10 @@ property of the series.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/radius/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/radius/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Radius.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/radius/radius.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/radius/radius.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,10 +62,10 @@ property of the series.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/radius/razor %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/radius/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Radius.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/radius/radius.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/radius/radius.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -80,10 +80,10 @@ The center position of the pie can be changed by Center X and Center Y. By defau
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/piecenter/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/piecenter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Piecenter.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/piecenter/piecenter.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/piecenter/piecenter.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,10 +91,10 @@ The center position of the pie can be changed by Center X and Center Y. By defau
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/piecenter/razor %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/piecenter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Piecenter.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/piecenter/piecenter.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/piecenter/piecenter.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -109,10 +109,10 @@ You can use radius mapping to render the slice with different [`Radius`](https:/
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/various-radius/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/various-radius/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Various-radius.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/various-radius/various-radius.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/various-radius/various-radius.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -120,10 +120,10 @@ You can use radius mapping to render the slice with different [`Radius`](https:/
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/various-radius/razor %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/various-radius/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Various-radius.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/various-radius/various-radius.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/various-radius/various-radius.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -140,10 +140,10 @@ The `InnerRadius` property takes value from 0% to 100% of the pie radius.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/doughnut/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/doughnut/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Doughnut.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/doughnut/doughnut.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/doughnut/doughnut.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -151,10 +151,10 @@ The `InnerRadius` property takes value from 0% to 100% of the pie radius.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/doughnut/razor %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/doughnut/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Doughnut.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/doughnut/doughnut.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/doughnut/doughnut.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -173,10 +173,10 @@ you can achieve a semi pie series.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/start-angle/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/start-angle/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Start-angle.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/start-angle/start-angle.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/start-angle/start-angle.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -184,10 +184,10 @@ you can achieve a semi pie series.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/start-angle/razor %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/start-angle/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Start-angle.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/start-angle/start-angle.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/start-angle/start-angle.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -203,10 +203,10 @@ The fill color and the text in the data source can be mapped to the chart using 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/map/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/map/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Map.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/map/map.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/map/map.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -214,10 +214,10 @@ The fill color and the text in the data source can be mapped to the chart using 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/map/razor %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/map/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Map.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/map/map.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/map/map.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -232,10 +232,10 @@ Individual points can be customized using the `PointRender` event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/custom/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/custom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/custom/custom.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/custom/custom.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -243,10 +243,10 @@ Individual points can be customized using the `PointRender` event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/custom/razor %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/custom/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/custom/custom.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/custom/custom.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -262,10 +262,10 @@ setting `EnableBorderOnMouseMove` property is `false`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/border/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/border/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Border.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/border/border.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/border/border.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -273,10 +273,10 @@ setting `EnableBorderOnMouseMove` property is `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/border/razor %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/border/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Border.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/border/border.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/border/border.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -291,10 +291,10 @@ You can customize the color the of the point using the `Palettes` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/palette/tagHelper %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/palette/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Palette.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/palette/palette.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/palette/palette.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -302,10 +302,10 @@ You can customize the color the of the point using the `Palettes` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/palette/razor %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/palette/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Palette.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie_doughnut/palette/palette.cs %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/palette/palette.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

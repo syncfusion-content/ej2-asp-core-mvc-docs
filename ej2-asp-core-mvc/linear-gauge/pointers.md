@@ -199,10 +199,10 @@ You can placement the marker pointer in any of the following locations using [`p
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/pointers/pointer_placement/tagHelper %}
+{% include code-snippet/lineargauge/pointers/pointer-placement/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pointer-placement.cs" %}
-{% include code-snippet/lineargauge/pointers/pointer_placement/pointer-placement.cs %}
+{% include code-snippet/lineargauge/pointers/pointer-placementlacement/pointer-placement.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -210,10 +210,10 @@ You can placement the marker pointer in any of the following locations using [`p
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/pointers/pointer_placement/razor %}
+{% include code-snippet/lineargauge/pointers/pointer-placement/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pointer-placement.cs" %}
-{% include code-snippet/lineargauge/pointers/pointer_placement/pointer-placement.cs %}
+{% include code-snippet/lineargauge/pointers/pointer-placement/pointer-placement.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

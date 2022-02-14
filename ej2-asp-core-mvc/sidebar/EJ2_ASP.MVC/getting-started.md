@@ -188,10 +188,10 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/document_click/tagHelper %}
+{% include code-snippet/sidebardocument-click/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Document-click.cs" %}
-{% include code-snippet/sidebar/document_click/document-click.cs %}
+{% include code-snippet/sidebardocument-click/document-click.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -199,10 +199,10 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/document_click/razor %}
+{% include code-snippet/sidebardocument-click/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Document-click.cs" %}
-{% include code-snippet/sidebar/document_click/document-click.cs %}
+{% include code-snippet/sidebardocument-click/document-click.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -211,7 +211,7 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 Output be like the below.
 
-![Sidebar Sample](./images/document_click.png)
+![Sidebar Sample](./imagesdocument-click.png)
 
 ## Enable gestures
 

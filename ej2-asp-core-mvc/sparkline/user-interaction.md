@@ -52,10 +52,10 @@ The fill color, text styles, format, and border of the tooltip can be customized
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_custom/tagHelper %}
+{% include code-snippet/sparkline/user-interaction/tooltip-custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip_custom.cs" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_custom/tooltip_custom.cs %}
+{% highlight c# tabtitle="Tooltip-custom.cs" %}
+{% include code-snippet/sparkline/user-interaction/tooltip-custom/tooltip-custom.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,10 +63,10 @@ The fill color, text styles, format, and border of the tooltip can be customized
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_custom/razor %}
+{% include code-snippet/sparkline/user-interaction/tooltip-custom/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip_custom.cs" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_custom/tooltip_custom.cs %}
+{% highlight c# tabtitle="Tooltip-custom.cs" %}
+{% include code-snippet/sparkline/user-interaction/tooltip-custom/tooltip-custom.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -81,10 +81,10 @@ Sparkline tooltip has template support. By using tooltip template, you can custo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_template/tagHelper %}
+{% include code-snippet/sparkline/user-interaction/tooltip-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tooltip_template.cs" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_template/tooltip_template.cs %}
+{% include code-snippet/sparkline/user-interaction/tooltip-template/tooltip-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,10 +92,10 @@ Sparkline tooltip has template support. By using tooltip template, you can custo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_template/razor %}
+{% include code-snippet/sparkline/user-interaction/tooltip-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tooltip_template.cs" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_template/tooltip_template.cs %}
+{% include code-snippet/sparkline/user-interaction/tooltip-template/tooltip-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -114,10 +114,10 @@ To use track line in sparkline, inject the [`SparklineTooltip`](https://help.syn
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_trackline/tagHelper %}
+{% include code-snippet/sparkline/user-interaction/tooltip-trackline/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tooltip_trackline.cs" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_trackline/tooltip_trackline.cs %}
+{% include code-snippet/sparkline/user-interaction/tooltip-trackline/tooltip-trackline.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,10 +125,10 @@ To use track line in sparkline, inject the [`SparklineTooltip`](https://help.syn
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_trackline/razor %}
+{% include code-snippet/sparkline/user-interaction/tooltip-trackline/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tooltip_trackline.cs" %}
-{% include code-snippet/sparkline/user-interaction/tooltip_trackline/tooltip_trackline.cs %}
+{% include code-snippet/sparkline/user-interaction/tooltip-trackline/tooltip-trackline.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

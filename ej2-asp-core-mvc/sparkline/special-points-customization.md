@@ -48,10 +48,10 @@ Tie point color is used to configure the win-loss series type sparkline's y-valu
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/specialpoints/tie_point/tagHelper %}
+{% include code-snippet/sparkline/specialpoints/tie-point/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tie_point.cs" %}
-{% include code-snippet/sparkline/specialpoints/tie_point/tie_point.cs %}
+{% include code-snippet/sparkline/specialpoints/tie-point/tie-point.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,10 +59,10 @@ Tie point color is used to configure the win-loss series type sparkline's y-valu
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/specialpoints/tie_point/razor %}
+{% include code-snippet/sparkline/specialpoints/tie-point/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tie_point.cs" %}
-{% include code-snippet/sparkline/specialpoints/tie_point/tie_point.cs %}
+{% include code-snippet/sparkline/specialpoints/tie-point/tie-point.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

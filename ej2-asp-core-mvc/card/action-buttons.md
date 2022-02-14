@@ -41,10 +41,10 @@ By default, action buttons positioned in horizontal alignment , and also it can 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/card_action_btn/tagHelper %}
+{% include code-snippet/card/card-action-btn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_action_btn/controller.cs %}
+{% include code-snippet/card/card-action-btn/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,10 +52,10 @@ By default, action buttons positioned in horizontal alignment , and also it can 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/card/card_action_btn/razor %}
+{% include code-snippet/card/card-action-btn/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_action_btn/controller.cs %}
+{% include code-snippet/card/card-action-btn/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

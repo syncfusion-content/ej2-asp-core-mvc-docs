@@ -48,10 +48,10 @@ Card header has an option for adding images in the header. It is aligned with ei
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/card_header/tagHelper %}
+{% include code-snippet/card/card-header/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_header/controller.cs %}
+{% include code-snippet/card/card-header/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,10 +59,10 @@ Card header has an option for adding images in the header. It is aligned with ei
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/card/card_header/razor %}
+{% include code-snippet/card/card-header/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_header/controller.cs %}
+{% include code-snippet/card/card-header/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -80,10 +80,10 @@ Content in Card holds texts, images, links and all possible HTML elements. Its a
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/card_header_content/tagHelper %}
+{% include code-snippet/card/card-header-content/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_header_content/controller.cs %}
+{% include code-snippet/card/card-header-content/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,10 +91,10 @@ Content in Card holds texts, images, links and all possible HTML elements. Its a
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/card/card_header_content/razor %}
+{% include code-snippet/card/card-header-content/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_header_content/controller.cs %}
+{% include code-snippet/card/card-header-content/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
