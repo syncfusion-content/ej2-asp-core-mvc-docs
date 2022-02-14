@@ -354,7 +354,7 @@ The [`enginePopulated`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 
 The event [`enginePopulated`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnginePopulated) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
 
-N> This event is not required for Popup field list since it is a in built one.
+> This event is not required for Popup field list since it is a in built one.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

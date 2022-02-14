@@ -696,6 +696,6 @@ When you drag and drop a normal event on the Scheduler, the event editing action
 
 When you resize a normal event on the Scheduler, the event editing action takes place. When a recurring event is resized to a new desired time, the batch action explained in `Editing a single occurrence` process will takes place - thus allowing both the `Add` and `Edit` action to take place together.
 
-N> By default, when you resize a recurring instance, only the occurrence of the event gets edited and not a whole series.
+> By default, when you resize a recurring instance, only the occurrence of the event gets edited and not a whole series.
 
 > You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

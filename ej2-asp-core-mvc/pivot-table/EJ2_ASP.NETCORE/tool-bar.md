@@ -33,7 +33,7 @@ The following table shows built-in toolbar options and its actions.
 | Conditional Formatting | Shows the conditional formatting pop-up to apply formatting |
 | Number Formatting | Shows the number formatting pop-up to apply number formatting |
 | Field List | Shows the fieldlist pop-up |
-| MDX | Shows the MDX query that was run to retrieve data from the OLAP data source. N> This applies only to the OLAP data source.** |
+| MDX | Shows the MDX query that was run to retrieve data from the OLAP data source. **This applies only to the OLAP data source.** |
 
 > The order of toolbar options can be changed by simply moving the position of items in the **ToolbarItems** collection. Also if end user wants to remove any toolbar option from getting displayed, it can be simply ignored from adding into the **ToolbarItems** collection.
 

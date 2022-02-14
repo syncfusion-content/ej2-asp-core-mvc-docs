@@ -60,7 +60,7 @@ To get started with ASP.NET MVC 5 application, ensure that the following softwar
 
     The Essential JS2 MVC5 NuGet package will be included in the project, after the installation process is completed.
 
-    N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization, [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key and [`Syncfusion.EJ2.JavaScript`](https://www.nuget.org/packages/Syncfusion.EJ2.JavaScript/).
+    > The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization, [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key and [`Syncfusion.EJ2.JavaScript`](https://www.nuget.org/packages/Syncfusion.EJ2.JavaScript/).
 
 **Step 3:** Open **~/Views/Web.config** file and add the `Syncfusion.EJ2` namespace reference to the `<system.web.webPages.razor>` element and `Syncfusion.EJ2` assembly reference to `<system.web>` element.
 

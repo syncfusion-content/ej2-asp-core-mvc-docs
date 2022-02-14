@@ -20,7 +20,7 @@ The Essential JS 2 has provided the below list of in-built themes those are,
 6. High Contrast
 7. Tailwind CSS
 
-N> The Essential JS 2 Bootstrap theme is designed based on `Bootstrap v3`, however it can be compatible in `Bootstrap v4` applications. In addition to these four built-in themes, [ThemeStudio](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme-studio/) provides support for the Fusion Theme that can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
+> The Essential JS 2 Bootstrap theme is designed based on `Bootstrap v3`, however it can be compatible in `Bootstrap v4` applications. In addition to these four built-in themes, [ThemeStudio](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme-studio/) provides support for the Fusion Theme that can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
 
 Themes are shipped as individual and combined CSS files. Combined CSS file can be referred from the npm package `@syncfusion/ej2` and individual CSS files are available within same component repository’s `style` folder. In ej2 npm packages, we have shipped both CSS and SCSS files for all components.
 

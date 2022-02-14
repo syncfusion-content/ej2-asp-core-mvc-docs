@@ -73,7 +73,7 @@ In the below sample, the image has been load from the local machine and it will 
 
 The selected image can be uploaded to the required destination by using the below controller action. Map this method name in saveUrl property of [`InsertImageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_InsertImageSettings_Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_) and provide required destination path through path property.
 
-N> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-mvc-richtexteditor-image-upload) repository.
+> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-mvc-richtexteditor-image-upload) repository.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -289,7 +289,7 @@ Grid methods can be used to perform CRUD operations programmatically. The `addRe
 
 * To remove a selected row from the Grid, use the `deleteRecord` method. For both edit and delete operations, you must select a row first.
 
-N> In both normal and dialog editing modes, these methods can be used.
+> In both normal and dialog editing modes, these methods can be used.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

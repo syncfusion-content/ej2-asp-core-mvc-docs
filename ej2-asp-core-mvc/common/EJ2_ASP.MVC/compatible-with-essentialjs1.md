@@ -48,7 +48,7 @@ Add scripts for Essential JS 1 and Essential JS 2 as shown in the following code
 <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
 ```
 
-N> If you do not add ej1 script before ej2 script, it will throw script error.
+> If you do not add ej1 script before ej2 script, it will throw script error.
 
 ## Adding compatibility
 

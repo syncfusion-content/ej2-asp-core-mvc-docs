@@ -83,8 +83,8 @@ number formatting and parsing operations are processed. You need to specify some
 | 1 | `format` | Denotes the format to be set .Possible values are  <br />  1. **N -** denotes numeric type.  <br /> 2. **C -** denotes currency type.  <br /> 3. **P -**  denotes percentage type.  <br /> E.g:  <br /> `formatNumber`( **1234344** ,{format:&#39;N4&#39;}).   <br /> <br/> > If no format is specified it takes numeric as default format type. |
 | 2 | `minimumFractionDigits` | Indicates the minimum number of fraction digits . Possible values are 0 to 20.  |
 | 3 | `maximumFractionDigits` | Indicates the maximum number of fraction digits. Possible values are 0 to 20.  |
-| 4 | `minimumSignificantDigits` | Indicates he minimum number of significant digits. Possible values are  1 to 21. <br /> N> If `minimumSignificantDigits` is given it is mandatory to give `maximumSignificantDigits`  |
-| 5 | `maximumSignificantDigits` | Indicates he maximum number of significant digits. . Possible values are  1 to 21.  <br /> N> If `maximumSignificantDigits` is given it is mandatory to give `minimumSignificantDigits`  |
+| 4 | `minimumSignificantDigits` | Indicates he minimum number of significant digits. Possible values are  1 to 21. <br /> > If `minimumSignificantDigits` is given it is mandatory to give `maximumSignificantDigits`  |
+| 5 | `maximumSignificantDigits` | Indicates he maximum number of significant digits. . Possible values are  1 to 21.  <br /> > If `maximumSignificantDigits` is given it is mandatory to give `minimumSignificantDigits`  |
 | 6 | `useGrouping` | Indicates whether to enable  the group separator or not . By default grouping value will be true.  |
 | 7 | `minimumIntegerDigits` | Indicates the minimum number of the integer digits to be placed in the value. Possible values are 1 to 21.  |
 | 8 | `currency`| Indicates the currency code which needs to considered for the currency formatting.  |

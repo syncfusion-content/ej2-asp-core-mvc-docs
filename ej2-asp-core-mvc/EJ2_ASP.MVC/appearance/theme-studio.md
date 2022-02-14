@@ -76,7 +76,7 @@ You can directly use the customized CSS file in the web application.
     </head>
 ```
 
-N> If you are using Essential JS 1 and Essential JS 2 components in a same web application, then you have to copy/paste the customized CSS file from the `compatibility` folder in the download location.
+> If you are using Essential JS 1 and Essential JS 2 components in a same web application, then you have to copy/paste the customized CSS file from the `compatibility` folder in the download location.
 
 ## Import previously changed settings into the theme studio
 

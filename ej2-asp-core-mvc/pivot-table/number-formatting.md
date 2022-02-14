@@ -79,7 +79,7 @@ You can add any custom format directly to the [`format`](https://ej2.syncfusion.
 | ; | Denotes separate formats for positive, negative and zero values. | { format: '###.##;(###.00);-0' } | '(120.00)'    |
 | 'String' (single Quotes) | Denotes the characters that are enclosed in the single quote (') to be replaced in the resulting string. | { format: "####.00 '@'" } | "123.00 @"    |
 
-N> If custom format is defined, certain properties such as [`useGrouping`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel/#usegrouping) and [`currency`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel/#currency) will not be considered.
+> If custom format is defined, certain properties such as [`useGrouping`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel/#usegrouping) and [`currency`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel/#currency) will not be considered.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

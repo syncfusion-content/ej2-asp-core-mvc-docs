@@ -13,7 +13,7 @@ documentation: ug
 
 Syncfusion provides the **Visual Studio Scaffolding** for the Syncfusion ASP.NET MVC platform to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create Views and Controller action methods for Syncfusion ASP.NET MVC DataGrid controls.
 
-N> The Syncfusion ASP.NET MVC UI Scaffolder is available from **v16.4.0.40**.
+> The Syncfusion ASP.NET MVC UI Scaffolder is available from **v16.4.0.40**.
 
 ## Add a Scaffolded Item
 
