@@ -15,15 +15,14 @@ The issue, “The type initializer for 'Syncfusion.EJ2.PdfViewer.PdfiumNative' t
 
 Pdfium dll: [pdfium.dll](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Pdfium1515619754.zip)
 
-N>
-· Kindly use both the client and server-side of the same version in your project.
-· Ensure whether the pdfium.dll file is created in your project during runtime. Else, place the pdfium assemblies in any of the production environment locations and refer to the path by using the ReferencePath API.
+> Kindly use both the client and server-side of the same version in your project.
+> Ensure whether the pdfium.dll file is created in your project during runtime. Else, place the pdfium assemblies in any of the production environment locations and refer to the path by using the ReferencePath API.
 
 For example, if the Pdfium assembly is available in this path C:\Pdfium\x64 or D:\Pdfium\x86, the reference path should be PdfRenderer.ReferencePath = "C:/";
 
 The parent folder has to be provided as the path in the ReferencePath API.
 
-N> Provide this path in the Load method of the PDFViewerController.cs
+> Provide this path in the Load method of the PDFViewerController.cs
 
 > PdfRenderer PdfRenderer = new PdfRenderer();
 > PdfRenderer.ReferencePath = @"C:/";
@@ -36,7 +35,7 @@ N> Provide this path in the Load method of the PDFViewerController.cs
 ![Pdfium.dll settings](../../pdfviewer/images/pdfium_dll_settings.png)
 
 3. Provide this path in the Load method of the PDFViewerController.cs
-N> You need to refer the ParentFolder up to the x64/x86 folder.
+> You need to refer the ParentFolder up to the x64/x86 folder.
 *PdfRenderer.ReferencePath = _hostingEnvironment.ContentRootPath + \\Pdfium\\;*
 
 4. Build and publish the application.

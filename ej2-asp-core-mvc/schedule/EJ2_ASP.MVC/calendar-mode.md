@@ -63,6 +63,6 @@ It requires the following CLDR data to be loaded using loadCldr function.
 
 
 
-N> However, this feature does not yet support recurrence options, which we are planning to add them in the next release.
+> However, this feature does not yet support recurrence options, which we are planning to add them in the next release.
 
 > You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

@@ -36,4 +36,4 @@ self-help resources mentioned above then please contact us by creating a support
 in [our support site](http://syncfusion.com/support) or ask your query.
 with tag `syncfusion-ej2`.
 
-N> Syncfusion does not collect any kind of information when our components are used in customer applications.
+> Syncfusion does not collect any kind of information when our components are used in customer applications.

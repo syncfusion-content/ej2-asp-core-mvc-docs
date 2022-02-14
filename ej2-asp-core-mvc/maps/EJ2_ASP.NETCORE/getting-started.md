@@ -114,7 +114,7 @@ Elements in the Maps will be rendered in the layers. So, add a layer to the Maps
 
 ```
 
-N> Only if [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) is provided, map layers will render.
+> Only if [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) is provided, map layers will render.
 
 ## Bind data source to map
 
@@ -233,7 +233,7 @@ public object GetData()
 
 ```
 
-N> Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
+> Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
 
 ## Add title to Maps
 
@@ -323,7 +323,7 @@ public object GetData()
 
 ```
 
-N> Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
+> Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
 
 ## Add data label
 

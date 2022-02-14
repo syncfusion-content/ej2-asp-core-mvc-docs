@@ -279,7 +279,7 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 * `fieldInfo`: It holds the selected value field information.
 
-N> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
+> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

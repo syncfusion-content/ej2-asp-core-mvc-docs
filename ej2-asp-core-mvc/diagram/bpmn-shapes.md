@@ -681,7 +681,7 @@ The following table contains various representation of sequence flows.
 | Conditional | ![Conditional Sequence BPMN Shpae](images/Conditional.png) |
 | Normal | ![Normal Sequence BPMN Shpae](images/Normal.png) |
 
-N> The default value for the property `sequence` is **normal**.
+> The default value for the property `sequence` is **normal**.
 
 ## Message
 

@@ -106,4 +106,4 @@ when the height is ‘50%’, chart renders to half of the container height.
 
 
 
-N>  When you do not specify the size, it takes `450px` as the height and window size as its width.
+> When you do not specify the size, it takes `450px` as the height and window size as its width.

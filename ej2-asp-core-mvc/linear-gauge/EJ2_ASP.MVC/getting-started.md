@@ -49,7 +49,7 @@ The following steps are used to create ASP.NET MVC Application.
 
 After installation complete, this will be included in the project. You can refer it from the Project Assembly Reference.
 
-N> We need to install **NewtonSoft.JSON** as a dependency, since **Syncfusion.EJ2** dependent to `NewtonSoft.JSON` package.
+> We need to install **NewtonSoft.JSON** as a dependency, since **Syncfusion.EJ2** dependent to `NewtonSoft.JSON` package.
 
 **Step 7:** Open **~/Views/Web.config** file and add the **Syncfusion.EJ2** namespace reference to the `<system.web.webPages.razor>` element and Syncfusion.EJ2 assembly reference to `<system.web>` element.
 

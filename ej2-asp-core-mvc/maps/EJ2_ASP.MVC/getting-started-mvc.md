@@ -42,7 +42,7 @@ Install the **Syncfusion.EJ2.MVC4** package to the application.
 
 After installation complete, this will be included in the project. You can refer it from the Project Assembly Reference.
 
-N> We need to install **NewtonSoft.JSON** as a dependency, since **Syncfusion.EJ2** dependent to `NewtonSoft.JSON` package.
+> We need to install **NewtonSoft.JSON** as a dependency, since **Syncfusion.EJ2** dependent to `NewtonSoft.JSON` package.
 
 **Step 3:** Add Syncfusion.EJ2 namespace reference in `Web.Config`.
 

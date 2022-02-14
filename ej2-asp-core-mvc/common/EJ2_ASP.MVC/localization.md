@@ -48,4 +48,4 @@ Current locale can be changed for all the Essential JS 2 components in your appl
 </script>
 ```
 
-N> Before changing a culture globally, ensure that locale text for the concerned culture is loaded through `L10n.load` function.
+> Before changing a culture globally, ensure that locale text for the concerned culture is loaded through `L10n.load` function.
