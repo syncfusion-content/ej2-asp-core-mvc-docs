@@ -183,10 +183,10 @@ Html elements can be embedded in the diagram using [`Html`](https://help.syncfus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/shapes/HTML_Template/tagHelper %}
+{% include code-snippet/diagram/shapes/html-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HTML_Node_With_Template.cshtml" %}
-{% include code-snippet/diagram/shapes/HTML_Template/HTML_Node_With_Template.cshtml %}
+{% include code-snippet/diagram/shapes/html-template/HTML-Node-With-Template.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -194,7 +194,7 @@ Html elements can be embedded in the diagram using [`Html`](https://help.syncfus
 
 {% tabs %}
 {% highlight c# tabtitle="HTML_Node_With_Template.cshtml" %}
-{% include code-snippet/diagram/shapes/HTML_Template/HTML_Node_With_Template.cshtml %}
+{% include code-snippet/diagram/shapes/html-template/HTML-Node-With-Template.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

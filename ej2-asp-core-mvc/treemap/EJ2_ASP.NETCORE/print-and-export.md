@@ -18,10 +18,10 @@ To use the print functionality, we should set the [`allowPrint`](https://ej2.syn
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/print_export/print/tagHelper %}
+{% include code-snippet/treemap/print-export/print/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Print.cs" %}
-{% include code-snippet/treemap/print_export/print/print.cs %}
+{% include code-snippet/treemap/print-export/print/print.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -29,10 +29,10 @@ To use the print functionality, we should set the [`allowPrint`](https://ej2.syn
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/print_export/print/razor %}
+{% include code-snippet/treemap/print-export/print/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Print.cs" %}
-{% include code-snippet/treemap/print_export/print/print.cs %}
+{% include code-snippet/treemap/print-export/print/print.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -53,10 +53,10 @@ To use the image export functionality, we should set the [`allowImageExport`](ht
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/print_export/export/tagHelper %}
+{% include code-snippet/treemap/print-export/export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/treemap/print_export/export/export.cs %}
+{% include code-snippet/treemap/print-export/export/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,10 +64,10 @@ To use the image export functionality, we should set the [`allowImageExport`](ht
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/print_export/export/razor %}
+{% include code-snippet/treemap/print-export/export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/treemap/print_export/export/export.cs %}
+{% include code-snippet/treemap/print-export/export/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -80,10 +80,10 @@ We can get the image file as base64 string for the JPEG and PNG formats. The tre
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/print_export/base64/tagHelper %}
+{% include code-snippet/treemap/print-export/base64/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/treemap/print_export/base64/export.cs %}
+{% include code-snippet/treemap/print-export/base64/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,10 +91,10 @@ We can get the image file as base64 string for the JPEG and PNG formats. The tre
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/print_export/base64/razor %}
+{% include code-snippet/treemap/print-export/base64/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/treemap/print_export/base64/export.cs %}
+{% include code-snippet/treemap/print-export/base64/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -109,10 +109,10 @@ To use the PDF export functionality, we should set the [`allowPdfExport`](https:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/print_export/exportPdf/tagHelper %}
+{% include code-snippet/treemap/print-export/exportPdf/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/treemap/print_export/exportPdf/export.cs %}
+{% include code-snippet/treemap/print-export/exportPdf/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -120,10 +120,10 @@ To use the PDF export functionality, we should set the [`allowPdfExport`](https:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/print_export/exportPdf/razor %}
+{% include code-snippet/treemap/print-export/exportPdf/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/treemap/print_export/exportPdf/export.cs %}
+{% include code-snippet/treemap/print-export/exportPdf/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

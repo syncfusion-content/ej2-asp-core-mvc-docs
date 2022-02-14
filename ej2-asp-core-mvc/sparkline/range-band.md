@@ -50,10 +50,10 @@ You can define multiple range bands to a sparkline as shown in the following cod
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/rangeband/multi_range/tagHelper %}
+{% include code-snippet/sparkline/rangeband/multi-range/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Multi_range.cs" %}
-{% include code-snippet/sparkline/rangeband/multi_range/multi_range.cs %}
+{% include code-snippet/sparkline/rangeband/multi-range/multi-range.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,10 +61,10 @@ You can define multiple range bands to a sparkline as shown in the following cod
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/rangeband/multi_range/razor %}
+{% include code-snippet/sparkline/rangeband/multi-range/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Multi_range.cs" %}
-{% include code-snippet/sparkline/rangeband/multi_range/multi_range.cs %}
+{% include code-snippet/sparkline/rangeband/multi-range/multi-range.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

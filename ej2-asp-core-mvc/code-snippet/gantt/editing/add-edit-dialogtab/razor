@@ -1,0 +1,14 @@
+  @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
+    "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks").ResourceInfo(
+      "ResourceId").Notes("info").Dependency("Dependency")).Toolbar(new List<string>() { "Add"}).EditSettings(es=>es.AllowEditing(
+        true).AllowAdding(true).Mode(Syncfusion.EJ2.Gantt.EditMode.Dialog)).Resources((IEnumerable<object>)ViewBag.projectResources).EditDialogFields(edf =>
+    {
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General").Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency).Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Resources).Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).Add();
+    }).ResourceFields(rf => rf.Id("ResourceId").Name("ResourceName"))
+    .AddDialogFields(adf=> {
+        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General Tab").Add();
+        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency).Add();
+    }).Render()
