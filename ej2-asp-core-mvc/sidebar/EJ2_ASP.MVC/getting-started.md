@@ -188,10 +188,10 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebardocument-click/tagHelper %}
+{% include code-snippet/sidebar/document-click/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Document-click.cs" %}
-{% include code-snippet/sidebardocument-click/document-click.cs %}
+{% include code-snippet/sidebar/document-click/document-click.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -199,10 +199,10 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebardocument-click/razor %}
+{% include code-snippet/sidebar/document-click/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Document-click.cs" %}
-{% include code-snippet/sidebardocument-click/document-click.cs %}
+{% include code-snippet/sidebar/document-click/document-click.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
