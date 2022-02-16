@@ -45,7 +45,7 @@ The series are rendered in the order as it is added to the series array.
 
 Combination of different types like Line, column etc, can be rendered in a chart.
 
->Bar series cannot be combined with any other series as the axis orientation is different from other series.
+> Bar series cannot be combined with any other series as the axis orientation is different from other series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
