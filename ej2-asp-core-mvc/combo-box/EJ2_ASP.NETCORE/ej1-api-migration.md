@@ -15,23 +15,23 @@ This article describes the API migration process of ComboBox component from Esse
 ## DataBinding
 
 <!-- markdownlint-disable MD010 -->
-| Behavior	| API in Essential JS 1 | API in Essential JS 2 |
-| --- | --- | --- |
-| **Default** |	**Property**: *dataSource*<br/>`<ej-combo-box datasource="(IEnumerable<CarsList>)ViewBag.datasource"></ej-combo-box>`|**Property**: *dataSource*<br/>`<ejs-combobox dataSource="@ViewBag.data"></ejs-combobox>`|
-| **Fields for mapping** | **Property**: *fields*<br/>`<ej-combo-box ><e-combo-box-fields text="text" /></ej-combo-box>`|**Property**: *fields*<br/>`<ejs-combobox> <e-combobox-fields text="Game" value="Id"></e-combobox-fields></ejs-combobox>` |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|----------|-----------------------|-----------------------|
+| **Default** |	**Property**: *dataSource*<br/>`<ej-combo-box datasource="(IEnumerable<CarsList>)ViewBag.datasource"></ej-combo-box>` | **Property**: *dataSource*<br/>`<ejs-combobox dataSource="@ViewBag.data"></ejs-combobox>` |
+| **Fields for mapping** | **Property**: *fields*<br/>`<ej-combo-box ><e-combo-box-fields text="text" /></ej-combo-box>` | **Property**: *fields*<br/>`<ejs-combobox> <e-combobox-fields text="Game" value="Id"></e-combobox-fields></ejs-combobox>` |
 |**Query** | **Property**: *query*<br/>`<ej-combo-box id="searchCustomer" query="ej.Query().from('Suppliers').select('SupplierID', 'ContactName')"/>` | **Property**: *query*<br/>`<ejs-combobox query="@ViewBag.query"></ejs-combobox>` |
 | **Begin event** | **Event**:*action-begin*<br/>`<ej-combo-box action-begin = "begin"/>` | **Event**: *actionBegin*<br/>`<ejs-combobox actionBegin="actionBegin"></ejs-combobox>` |
-| **Complete event** | **Event**:*action-complete*<br/>`<ej-combo-box action-complete = "complete"/>` | **Event**: *actionComplete*<br/>`<ejs-combobox actionComplete="actionComplete"></ejs-combobox>`|
-| **Failure event** |**Event**:*action-failure*<br/>`<ej-combo-box action-failure = "failure"/>` | **Event**: *actionFailure*<br/>`<ejs-combobox actionFailure="actionFailure"></ejs-combobox>` |
+| **Complete event** | **Event**:*action-complete*<br/>`<ej-combo-box action-complete = "complete"/>` | **Event**: *actionComplete*<br/>`<ejs-combobox actionComplete="actionComplete"></ejs-combobox>` |
+| **Failure event** | **Event**:*action-failure*<br/>`<ej-combo-box action-failure = "failure"/>` | **Event**: *actionFailure*<br/>`<ejs-combobox actionFailure="actionFailure"></ejs-combobox>` |
 
 ## Filtering
 
 <!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
-| --- | --- | --- |
-| **Default**| **Property**: *allow-filtering*<br/>`<ej-combo-box allow-filtering = "true"/>`  |	**Property**: *allowFiltering*<br/>`<ejs-combobox allowFiltering="true"></ejs-combobox>`|
-| **No records template** | **Property**: *no-records-template*<br/>`<ej-combo-box no-records-template="<span class='norecord'> NO DATA AVAILABLE</span>"/>` |**Property**: *noRecordsTemplate*<br/>`<ejs-combobox noRecordsTemplate="<span class='norecord'> NO DATA AVAILABLE</span>"></ejs-combobox>` |
-| **Ignore casing and diacritics**| **Not Applicable** | **Property**: *ignoreAccent*<br/>`<ejs-combobox ignoreAccent = "true"/>` |
+|----------|-----------------------|-----------------------|
+| **Default** | **Property**: *allow-filtering*<br/>`<ej-combo-box allow-filtering = "true"/>` | **Property**: *allowFiltering*<br/>`<ejs-combobox allowFiltering="true"></ejs-combobox>` |
+| **No records template** | **Property**: *no-records-template*<br/>`<ej-combo-box no-records-template="<span class='norecord'> NO DATA AVAILABLE</span>"/>` | **Property**: *noRecordsTemplate*<br/>`<ejs-combobox noRecordsTemplate="<span class='norecord'> NO DATA AVAILABLE</span>"></ejs-combobox>` |
+| **Ignore casing and diacritics** | **Not Applicable** | **Property**: *ignoreAccent*<br/>`<ejs-combobox ignoreAccent = "true"/>` |
 | **Custom value addition** | **Property**: *allow-custom*<br/>`<ej-combo-box allow-custom = "true"/>` | **Property**: *allowCustom*<br/>`<ejs-combobox allowCustom = "true"/>` |
 | **Search event** | **Event**: *filtering*<br/>`<ej-combo-box filtering = "filtering"/>` | **Event**: *filtering*<br/>`<ejs-combobox filtering = "onFiltering"/>` |
 
@@ -39,73 +39,73 @@ This article describes the API migration process of ComboBox component from Esse
 
 <!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
-| --- | --- | --- |
+|----------|-----------------------|-----------------------|
 | **Default** | **Property**: *item-template*<br/>`<ej-combo-box item-template="<div><img class='eimg' src='../images/combobox/${eimg}.png' alt='employee'/><div class='ename'> ${text} </div><div class='temp'> ${country} </div></div>"/>` | **Property**: *itemTemplate*<br/>`<ejs-combobox itemTemplate="<div><img class='eimg' src='../images/combobox/${eimg}.png' alt='employee'/><div class='ename'> ${text} </div><div class='temp'> ${country} </div></div>"></ejs-combobox>`|
-| **Group Template** | **Property**: *group-template*<br/>`<ej-combo-box group-template="<strong>${country}</strong>"/>` | **Property**: *groupTemplate*<br/>`<ejs-combobox groupTemplate="<strong>${country}</strong>"></ejs-combobox>`|
-| **ValueTemplate** | **Not Applicable** |**Property**: *valueTemplate*<br/>`<ejs-combobox valueTemplate="<span class='norecord'> NO DATA AVAILABLE</span>"></ejs-combobox>` |
+| **Group Template** | **Property**: *group-template*<br/>`<ej-combo-box group-template="<strong>${country}</strong>"/>` | **Property**: *groupTemplate*<br/>`<ejs-combobox groupTemplate="<strong>${country}</strong>"></ejs-combobox>` |
+| **ValueTemplate** | **Not Applicable** | **Property**: *valueTemplate*<br/>`<ejs-combobox valueTemplate="<span class='norecord'> NO DATA AVAILABLE</span>"></ejs-combobox>` |
 | **Header Template** | **Property**: *header-template*<br/>`<ej-combo-box header-template="<div class='head'>  Photo  <span style='padding-left:42px'> Contact Info </span></div>"/>` |	**Property**: *headerTemplate*<br/>`<ejs-combobox headerTemplate="<div class='head'>  Photo  <span style='padding-left:42px'> Contact Info </span></div>"></ejs-combobox>` |
-| **FooterTemplate**| **Property**: *footer-template*<br/>`<ej-combo-box footer-template="<div class='Foot'> Total Items Count: 5 </div>"/>`| **Property**: *footerTemplate*<br/>`<ejs-combobox footerTemplate="<div class='Foot'> Total Items Count: 5 </div>"></ejs-combobox>` |
-| **No records Template** |	**Property**: *no-records-template*<br/>`<ej-combo-box no-records-template="<span class='norecord'> NO DATA AVAILABLE</span>"/>`| **Property**: *noRecordsTemplate*<br/>`<ejs-combobox noRecordsTemplate="<span class='norecord'> NO DATA AVAILABLE</span>"></ejs-combobox>` |
-| **Auto fill** | **Property**: *auto-fill*<br/>`<ej-combo-box auto-fill="true"/>`|**Property**: *autofill*<br/>`<ejs-combobox autoFill="true"></ejs-combobox>`|
-| **Action failure Template** |	**Property**: *action-failure-template*<br/>`<ej-combo-box action-failure-template="<span class='action-failure'>Data fetch get fails</span>"/>`|**Property**: *actionFailureTemplate*<br/>`<ejs-combobox actionFailureTemplate="<span class='action-failure'>Data fetch get fails</span>"></ejs-combobox>`|
+| **FooterTemplate** | **Property**: *footer-template*<br/>`<ej-combo-box footer-template="<div class='Foot'> Total Items Count: 5 </div>"/>` | **Property**: *footerTemplate*<br/>`<ejs-combobox footerTemplate="<div class='Foot'> Total Items Count: 5 </div>"></ejs-combobox>` |
+| **No records Template** |	**Property**: *no-records-template*<br/>`<ej-combo-box no-records-template="<span class='norecord'> NO DATA AVAILABLE</span>"/>` | **Property**: *noRecordsTemplate*<br/>`<ejs-combobox noRecordsTemplate="<span class='norecord'> NO DATA AVAILABLE</span>"></ejs-combobox>` |
+| **Auto fill** | **Property**: *auto-fill*<br/>`<ej-combo-box auto-fill="true"/>` | **Property**: *autofill*<br/>`<ejs-combobox autoFill="true"></ejs-combobox>` |
+| **Action failure Template** |	**Property**: *action-failure-template*<br/>`<ej-combo-box action-failure-template="<span class='action-failure'>Data fetch get fails</span>"/>` | **Property**: *actionFailureTemplate*<br/>`<ejs-combobox actionFailureTemplate="<span class='action-failure'>Data fetch get fails</span>"></ejs-combobox>` |
 
 ## Applying CSS
 
 <!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
-| --- | --- | ---|
-| **Default** | **Property**: *css-class* <br/>`<ej-combo-box css-class="customclass"/>`| **Property**: *cssClass*<br/>`<ejs-combobox cssClass="customclass"></ejs-combobox>` |
+|----------|-----------------------|-----------------------|
+| **Default** | **Property**: *css-class* <br/>`<ej-combo-box css-class="customclass"/>` | **Property**: *cssClass*<br/>`<ejs-combobox cssClass="customclass"></ejs-combobox>` |
 | **width** | **Property**: *width* <br/>`<ej-combo-box width="200px"/>` | **Property**: *width*<br/>`<ejs-combobox width="200px"></ejs-combobox>` |
 
 ## Grouping
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
-| --- | --- | --- |
-| **Default** | **Property**: *fields.groupBy*<br/>`<ej-combo-box><e-combo-box-fields group-by="SupplierID" /></ej-combo-box>`| **Property**: *fields.groupBy*<br/>`<ejs-combobox> <e-combobox-fields groupBy="Id"></e-combobox-fields></ejs-combobox>` |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|----------|-----------------------|-----------------------|
+| **Default** | **Property**: *fields.groupBy*<br/>`<ej-combo-box><e-combo-box-fields group-by="SupplierID" /></ej-combo-box>` | **Property**: *fields.groupBy*<br/>`<ejs-combobox> <e-combobox-fields groupBy="Id"></e-combobox-fields></ejs-combobox>` |
 
 ## Accessibility
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
-| --- | --- | --- |
-| **Globalizaation** | **Property**: *locale*<br/>`<ej-combo-box locale="fr-FE"/>`| **Property**: *locale*<br/>`<ejs-combobox locale="fr-FE"/>` |
-| **Rtl support**| **Property**: *enable-rtl*<br/>`<ej-combo-box enable-rtl="true"/>`|**Property**: *enableRtl*<br/>`<ejs-combobox enableRtl="true"/>`|
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|----------|-----------------------|-----------------------|
+| **Globalizaation** | **Property**: *locale*<br/>`<ej-combo-box locale="fr-FE"/>` | **Property**: *locale*<br/>`<ejs-combobox locale="fr-FE"/>` |
+| **Rtl support** | **Property**: *enable-rtl*<br/>`<ej-combo-box enable-rtl="true"/>` | **Property**: *enableRtl*<br/>`<ejs-combobox enableRtl="true"/>` |
 
 ## Placeholder
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
-| --- | --- | --- |
-| **Watermark text** | **Property**: *placeholder*<br/>`<ej-combo-box placeholder="select"/>`|<br/>**Property**: *placeholder*<br/>`<ejs-combobox placeholder="select"/>` |
-| **Floating  of waterMarkText**| **Not applicable** |**Property**: *floatLabelType*<br/>`<ejs-combobox floatLabelType="Auto"/>` |
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|----------|-----------------------|-----------------------|
+| **Watermark text** | **Property**: *placeholder*<br/>`<ej-combo-box placeholder="select"/>` | <br/>**Property**: *placeholder*<br/>`<ejs-combobox placeholder="select"/>` |
+| **Floating  of waterMarkText** | **Not applicable** | **Property**: *floatLabelType*<br/>`<ejs-combobox floatLabelType="Auto"/>` |
 
 ## Miscellaneous
 
 <!-- markdownlint-disable MD010 -->
-| Behavior | API in Essential JS 1 | API in Essential JS 2|
-| --- | --- | --- |
-| **Enable/disable** | **Property**: *enabled*<br/>`<ej-combo-box enabled="true"></ej-combo-box>`|**Property**: *enabled*<br/>`<ejs-combobox enabled="true"/>` |
-| **Read only** | **Property**: *read-only*<br/>`<ej-combo-box read-only="true"></ej-combo-box>` |**Property**: *readOnly*<br/>`<ejs-combobox readOnly="true"/>`|
-| **Addition of Html attributes** | **Property**: *html-Attributes*<br/>`<ej-combo-box html-attributes="@ViewBag.attr"></ej-combo-box>` | **Property**: *htmlAttributes*<br/>`<ejs-combobox htmlAttributes="@ViewBag.attr"/>`|
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|----------|-----------------------|-----------------------|
+| **Enable/disable** | **Property**: *enabled*<br/>`<ej-combo-box enabled="true"></ej-combo-box>` | **Property**: *enabled*<br/>`<ejs-combobox enabled="true"/>` |
+| **Read only** | **Property**: *read-only*<br/>`<ej-combo-box read-only="true"></ej-combo-box>` | **Property**: *readOnly*<br/>`<ejs-combobox readOnly="true"/>` |
+| **Addition of Html attributes** | **Property**: *html-Attributes*<br/>`<ej-combo-box html-attributes="@ViewBag.attr"></ej-combo-box>` | **Property**: *htmlAttributes*<br/>`<ejs-combobox htmlAttributes="@ViewBag.attr"/>` |
 
 ## Sorting
 
 <!-- markdownlint-disable MD010 -->
-|Behavior | API in Essential JS 1 | API in Essential JS 2 |
-| --- | --- | --- |
-| **Order of sorting** | **Property**: *sort-order*<br/>`<ej-combo-box sort-order="Ascending"></ej-combo-box>` | **Property**: *sortOrder*<br/>`<ejs-combobox sortOrder="Ascending"/>`|
+| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+|----------|-----------------------|-----------------------|
+| **Order of sorting** | **Property**: *sort-order*<br/>`<ej-combo-box sort-order="Ascending"></ej-combo-box>` | **Property**: *sortOrder*<br/>`<ejs-combobox sortOrder="Ascending"/>` |
 
 ## Selection
 
 <!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
-| --- | --- | --- |
+|----------|-----------------------|-----------------------|
 | **Selecting particular index** | **Property**: *index*<br/>`<ej-combo-box index="1"></ej-combo-box>` | **Property**: *index*<br/>`<ejs-combobox index="1"/>` |
-| **Selecting particular value** | **Property**: *value*<br/>`<ej-combo-box value="car"></ej-combo-box>`| **Property**: *value*<br/>`<ejs-combobox value="car"/>` |
-| **Selecting particular text** | **Property**: *text* <br/>`<ej-combo-box text="data"></ej-combo-box>` | **Property**: *text*<br/>`<ejs-combobox text="data"/>`|
-| **Getting data by using value** |	**Method**: *getItemDataByValue*<br/>`<ej-combo-box></ej-combo-box>` <br/> <br/>$('#dropdown').ejDropDownList('getItemDataByValue',"data") | **Method**: *getDataByValue*<br/>`<ejs-combobox />`<br/> <br/>var cmbObj = document.getElementById(combobox).ej2_Instances[0];<br/><br/> cmbObj.getDataByValue("data");
-| **Select event** | **Event**: *select*<br/>`<ej-combo-box select="onSelect"></ej-combo-box>`| **Event**: *select*<br/>`<ejs-combobox select="onSelect"/>`|
+| **Selecting particular value** | **Property**: *value*<br/>`<ej-combo-box value="car"></ej-combo-box>` | **Property**: *value*<br/>`<ejs-combobox value="car"/>` |
+| **Selecting particular text** | **Property**: *text* <br/>`<ej-combo-box text="data"></ej-combo-box>` | **Property**: *text*<br/>`<ejs-combobox text="data"/>` |
+| **Getting data by using value** |	**Method**: *getItemDataByValue*<br/>`<ej-combo-box></ej-combo-box>` <br/> <br/>$('#dropdown').ejDropDownList('getItemDataByValue',"data") | **Method**: *getDataByValue*<br/>`<ejs-combobox />`<br/> <br/>var cmbObj = document.getElementById(combobox).ej2_Instances[0];<br/><br/> cmbObj.getDataByValue("data"); |
+| **Select event** | **Event**: *select*<br/>`<ej-combo-box select="onSelect"></ej-combo-box>` | **Event**: *select*<br/>`<ejs-combobox select="onSelect"/>` |
 
 ## Popup
 

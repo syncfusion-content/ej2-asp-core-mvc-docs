@@ -104,7 +104,7 @@ This article describes the API migration process of ComboBox component from Esse
 | **Selecting particular index** | **Property**: *Index*<br/>`Html.EJ().ComboBox("select").Index(1).Render()` | **Property**: *Index*<br/>`Html.EJS().ComboBox("select").Index(1).Render()` |
 | **Selecting particular value** | **Property**: *Value*<br/>`Html.EJ().ComboBox("select").Value("Car").Render()`| **Property**: *Value*<br/>`Html.EJS().ComboBox("select").Value("Car").Render()` |
 | **Selecting particular text** | **Property**: *Text* <br/>`Html.EJ().ComboBox("select").Text("Car").Render()` | **Property**: *Text*<br/>`Html.EJ()S.ComboBox("select").Text("Car").Render()`|
-| **Getting data by using value** |	**Method**: *getItemDataByValue*<br/>`Html.EJ().ComboBox("dropdown").Render()` <br/> <br/>$('#dropdown').ejDropDownList('getItemDataByValue',"data") | **Method**: *getDataByValue*<br/>`Html.EJ().ComboBox("combobox").Render()`<br/> <br/>var cmbObj = document.getElementById(combobox).ej2_Instances[0];<br/><br/> cmbObj.getDataByValue("data");
+| **Getting data by using value** |	**Method**: *getItemDataByValue*<br/>`Html.EJ().ComboBox("dropdown").Render()` <br/> <br/>$('#dropdown').ejDropDownList('getItemDataByValue',"data") | **Method**: *getDataByValue*<br/>`Html.EJ().ComboBox("combobox").Render()`<br/> <br/>var cmbObj = document.getElementById(combobox).ej2_Instances[0];<br/><br/> cmbObj.getDataByValue("data"); |
 | **Select event** | **Event**: *Select*<br/>`Html.EJ().ComboBox("dropdown").Select("onSelect").Render()`| **Event**: *Select*<br/>`Html.EJS().ComboBox("dropdown").Select("onSelect").Render()`|
 
 ## Popup

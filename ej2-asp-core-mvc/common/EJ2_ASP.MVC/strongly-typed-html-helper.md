@@ -43,7 +43,6 @@ public class EditorValue
     public EditorValue() { }
 }
 ```
-
 2. Create an action method that renders the NumericTextBox on the view page, and passes the model to be bound to the view page.
 
 ```csharp
@@ -58,7 +57,6 @@ public ActionResult Index()
     return View(new EditorValue(66));
 }
 ```
-
 3. In View, invoke the strongly typed NumericTextBoxFor helper with the lambda expression to set the default value.
 
 ```html
