@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Icon And Width of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Icon And Width in ##Platform_Name## Drop Down Button Component
+description: Learn here all about Customize Icon And Width in Syncfusion ##Platform_Name## Drop Down Button component and more.
 platform: ej2-asp-core-mvc
 control: Customize Icon And Width
 publishingplatform: ##Platform_Name##

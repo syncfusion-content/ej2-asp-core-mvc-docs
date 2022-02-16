@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Cell Customization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Cell Customization in ##Platform_Name## Schedule Component
+description: Learn here all about Cell Customization in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Cell Customization
 publishingplatform: ##Platform_Name##

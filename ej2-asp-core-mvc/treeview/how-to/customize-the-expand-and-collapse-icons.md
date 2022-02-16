@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize The Expand And Collapse Icons of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize The Expand And Collapse Icons in ##Platform_Name## Treeview Component
+description: Learn here all about Customize The Expand And Collapse Icons in Syncfusion ##Platform_Name## Treeview component and more.
 platform: ej2-asp-core-mvc
 control: Customize The Expand And Collapse Icons
 publishingplatform: ##Platform_Name##

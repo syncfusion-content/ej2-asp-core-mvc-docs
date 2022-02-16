@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Perform Search Using Controller Data of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Perform Search Using Controller Data in ##Platform_Name## Listview Component
+description: Learn here all about Perform Search Using Controller Data in Syncfusion ##Platform_Name## Listview component and more.
 platform: ej2-asp-core-mvc
 control: Perform Search Using Controller Data
 publishingplatform: ##Platform_Name##

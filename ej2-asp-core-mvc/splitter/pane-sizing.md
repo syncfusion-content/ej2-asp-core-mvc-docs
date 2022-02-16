@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Pane Sizing of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Pane Sizing in ##Platform_Name## Splitter Component
+description: Learn here all about Pane Sizing in Syncfusion ##Platform_Name## Splitter component and more.
 platform: ej2-asp-core-mvc
 control: Pane Sizing
 publishingplatform: ##Platform_Name##

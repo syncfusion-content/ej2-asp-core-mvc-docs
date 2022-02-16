@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Deploy Document Editor Component For Mobile of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Deploy Document Editor Component For Mobile in ##Platform_Name## Document Editor Component
+description: Learn here all about Deploy Document Editor Component For Mobile in Syncfusion ##Platform_Name## Document Editor component and more.
 platform: ej2-asp-core-mvc
 control: Deploy Document Editor Component For Mobile
 publishingplatform: ##Platform_Name##

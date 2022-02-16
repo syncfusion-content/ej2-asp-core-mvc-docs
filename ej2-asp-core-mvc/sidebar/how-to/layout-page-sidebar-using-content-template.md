@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Layout Page Sidebar Using Content Template of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Layout Page Sidebar Using Content Template in ##Platform_Name## Sidebar Component
+description: Learn here all about Layout Page Sidebar Using Content Template in Syncfusion ##Platform_Name## Sidebar component and more.
 platform: ej2-asp-core-mvc
 control: Layout Page Sidebar Using Content Template
 publishingplatform: ##Platform_Name##

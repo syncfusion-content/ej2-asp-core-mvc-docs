@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Custom Context of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Custom Context in ##Platform_Name## Sidebar Component
+description: Learn here all about Custom Context in Syncfusion ##Platform_Name## Sidebar component and more.
 platform: ej2-asp-core-mvc
 control: Custom Context
 publishingplatform: ##Platform_Name##

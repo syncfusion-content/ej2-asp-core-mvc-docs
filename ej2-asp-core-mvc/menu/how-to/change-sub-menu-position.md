@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Change Sub Menu Position of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Change Sub Menu Position in ##Platform_Name## Menu Component
+description: Learn here all about Change Sub Menu Position in Syncfusion ##Platform_Name## Menu component and more.
 platform: ej2-asp-core-mvc
 control: Change Sub Menu Position
 publishingplatform: ##Platform_Name##

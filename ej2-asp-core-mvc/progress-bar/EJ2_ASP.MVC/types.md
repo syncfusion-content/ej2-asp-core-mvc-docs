@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Types of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Types in ##Platform_Name## Progress Bar Component
+description: Learn here all about Types in Syncfusion ##Platform_Name## Progress Bar component and more.
 platform: ej2-asp-core-mvc
 control: Types
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Managing Tasks of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Managing Tasks in ##Platform_Name## Gantt Component
+description: Learn here all about Managing Tasks in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Managing Tasks
 publishingplatform: ##Platform_Name##

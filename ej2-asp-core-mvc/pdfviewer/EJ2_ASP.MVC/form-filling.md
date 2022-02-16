@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Form Filling of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Form Filling in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Form Filling in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Form Filling
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize The Appearance Of A Switch of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize The Appearance Of A Switch in ##Platform_Name## Switch Component
+description: Learn here all about Customize The Appearance Of A Switch in Syncfusion ##Platform_Name## Switch component and more.
 platform: ej2-asp-core-mvc
 control: Customize The Appearance Of A Switch
 publishingplatform: ##Platform_Name##

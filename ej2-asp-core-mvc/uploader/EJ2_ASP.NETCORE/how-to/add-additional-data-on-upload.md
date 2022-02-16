@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Add Additional Data On Upload of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Add Additional Data On Upload in ##Platform_Name## Uploader Component
+description: Learn here all about Add Additional Data On Upload in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Add Additional Data On Upload
 publishingplatform: ##Platform_Name##

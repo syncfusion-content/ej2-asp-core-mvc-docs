@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customization in ##Platform_Name## Datetimepicker Component
+description: Learn here all about Customization in Syncfusion ##Platform_Name## Datetimepicker component and more.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##

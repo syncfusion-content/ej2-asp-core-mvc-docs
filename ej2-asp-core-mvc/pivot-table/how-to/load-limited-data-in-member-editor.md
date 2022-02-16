@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Load Limited Data In Member Editor of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Load Limited Data In Member Editor in ##Platform_Name## Pivot Table Component
+description: Learn here all about Load Limited Data In Member Editor in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Load Limited Data In Member Editor
 publishingplatform: ##Platform_Name##

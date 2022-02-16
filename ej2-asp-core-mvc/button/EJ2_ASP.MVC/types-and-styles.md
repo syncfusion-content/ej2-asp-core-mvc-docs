@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Types And Styles of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Types And Styles in ##Platform_Name## Button Component
+description: Learn here all about Types And Styles in Syncfusion ##Platform_Name## Button component and more.
 platform: ej2-asp-core-mvc
 control: Types And Styles
 publishingplatform: ##Platform_Name##

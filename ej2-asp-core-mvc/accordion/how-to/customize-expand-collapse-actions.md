@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Expand Collapse Actions of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Expand Collapse Actions in ##Platform_Name## Accordion Component
+description: Learn here all about Customize Expand Collapse Actions in Syncfusion ##Platform_Name## Accordion component and more.
 platform: ej2-asp-core-mvc
 control: Customize Expand Collapse Actions
 publishingplatform: ##Platform_Name##

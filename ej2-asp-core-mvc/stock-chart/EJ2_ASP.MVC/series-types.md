@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Series Types of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Series Types in ##Platform_Name## Stock Chart Component
+description: Learn here all about Series Types in Syncfusion ##Platform_Name## Stock Chart component and more.
 platform: ej2-asp-core-mvc
 control: Series Types
 publishingplatform: ##Platform_Name##

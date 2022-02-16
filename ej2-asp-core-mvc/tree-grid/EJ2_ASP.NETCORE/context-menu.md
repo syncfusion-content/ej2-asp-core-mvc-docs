@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Context Menu of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Context Menu in ##Platform_Name## Tree Grid Component
+description: Learn here all about Context Menu in Syncfusion ##Platform_Name## Tree Grid component and more.
 platform: ej2-asp-core-mvc
 control: Context Menu
 publishingplatform: ##Platform_Name##

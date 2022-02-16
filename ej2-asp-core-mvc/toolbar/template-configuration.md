@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Template Configuration of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Template Configuration in ##Platform_Name## Toolbar Component
+description: Learn here all about Template Configuration in Syncfusion ##Platform_Name## Toolbar component and more.
 platform: ej2-asp-core-mvc
 control: Template Configuration
 publishingplatform: ##Platform_Name##

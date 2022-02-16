@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Grouped Row Page Size of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Grouped Row Page Size in ##Platform_Name## Grid Component
+description: Learn here all about Grouped Row Page Size in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Grouped Row Page Size
 publishingplatform: ##Platform_Name##

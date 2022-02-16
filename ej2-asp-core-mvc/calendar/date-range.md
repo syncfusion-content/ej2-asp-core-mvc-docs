@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Date Range of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Date Range in ##Platform_Name## Calendar Component
+description: Learn here all about Date Range in Syncfusion ##Platform_Name## Calendar component and more.
 platform: ej2-asp-core-mvc
 control: Date Range
 publishingplatform: ##Platform_Name##

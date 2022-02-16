@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Close Comment Panel of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Close Comment Panel in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Close Comment Panel in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Close Comment Panel
 publishingplatform: ##Platform_Name##

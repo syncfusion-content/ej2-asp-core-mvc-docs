@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Pager Drop Down of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Pager Drop Down in ##Platform_Name## Grid Component
+description: Learn here all about Customize Pager Drop Down in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Customize Pager Drop Down
 publishingplatform: ##Platform_Name##

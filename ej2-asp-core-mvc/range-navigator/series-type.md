@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Series Type of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Series Type in ##Platform_Name## Range Navigator Component
+description: Learn here all about Series Type in Syncfusion ##Platform_Name## Range Navigator component and more.
 platform: ej2-asp-core-mvc
 control: Series Type
 publishingplatform: ##Platform_Name##

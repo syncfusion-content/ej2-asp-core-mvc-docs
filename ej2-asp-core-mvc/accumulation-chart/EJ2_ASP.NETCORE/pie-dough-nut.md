@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Pie Dough Nut of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Pie Dough Nut in ##Platform_Name## Accumulation Chart Component
+description: Learn here all about Pie Dough Nut in Syncfusion ##Platform_Name## Accumulation Chart component and more.
 platform: ej2-asp-core-mvc
 control: Pie Dough Nut
 publishingplatform: ##Platform_Name##

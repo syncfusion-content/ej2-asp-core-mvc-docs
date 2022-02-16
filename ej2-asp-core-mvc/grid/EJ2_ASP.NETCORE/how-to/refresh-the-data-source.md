@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Refresh The Data Source of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Refresh The Data Source in ##Platform_Name## Grid Component
+description: Learn here all about Refresh The Data Source in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Refresh The Data Source
 publishingplatform: ##Platform_Name##

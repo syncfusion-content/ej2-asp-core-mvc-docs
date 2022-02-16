@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Navigation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Navigation in ##Platform_Name## Breadcrumb Component
+description: Learn here all about Navigation in Syncfusion ##Platform_Name## Breadcrumb component and more.
 platform: ej2-asp-core-mvc
 control: Navigation
 publishingplatform: ##Platform_Name##

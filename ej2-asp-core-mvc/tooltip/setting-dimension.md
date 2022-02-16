@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Setting Dimension of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Setting Dimension in ##Platform_Name## Tooltip Component
+description: Learn here all about Setting Dimension in Syncfusion ##Platform_Name## Tooltip component and more.
 platform: ej2-asp-core-mvc
 control: Setting Dimension
 publishingplatform: ##Platform_Name##

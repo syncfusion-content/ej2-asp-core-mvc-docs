@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Code Behind Chart of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Code Behind Chart in ##Platform_Name## Chart Component
+description: Learn here all about Code Behind Chart in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Code Behind Chart
 publishingplatform: ##Platform_Name##

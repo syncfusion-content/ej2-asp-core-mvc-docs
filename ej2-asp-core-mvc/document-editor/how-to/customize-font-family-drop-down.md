@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Font Family Drop Down of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Font Family Drop Down in ##Platform_Name## Document Editor Component
+description: Learn here all about Customize Font Family Drop Down in Syncfusion ##Platform_Name## Document Editor component and more.
 platform: ej2-asp-core-mvc
 control: Customize Font Family Drop Down
 publishingplatform: ##Platform_Name##

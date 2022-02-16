@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Filtering of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Filtering in ##Platform_Name## Combo Box Component
+description: Learn here all about Filtering in Syncfusion ##Platform_Name## Combo Box component and more.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##

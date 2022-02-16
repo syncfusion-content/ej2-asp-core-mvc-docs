@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Cascading Preselect of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Cascading Preselect in ##Platform_Name## Drop Down List Component
+description: Learn here all about Cascading Preselect in Syncfusion ##Platform_Name## Drop Down List component and more.
 platform: ej2-asp-core-mvc
 control: Cascading Preselect
 publishingplatform: ##Platform_Name##

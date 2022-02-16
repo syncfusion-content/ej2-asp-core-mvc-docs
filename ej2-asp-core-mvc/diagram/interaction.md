@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Interaction of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Interaction in ##Platform_Name## Diagram Component
+description: Learn here all about Interaction in Syncfusion ##Platform_Name## Diagram component and more.
 platform: ej2-asp-core-mvc
 control: Interaction
 publishingplatform: ##Platform_Name##

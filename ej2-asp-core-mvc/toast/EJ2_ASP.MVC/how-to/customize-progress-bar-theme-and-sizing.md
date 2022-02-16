@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Progress Bar Theme And Sizing of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Progress Bar Theme And Sizing in ##Platform_Name## Toast Component
+description: Learn here all about Customize Progress Bar Theme And Sizing in Syncfusion ##Platform_Name## Toast component and more.
 platform: ej2-asp-core-mvc
 control: Customize Progress Bar Theme And Sizing
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Data Labels of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Data Labels in ##Platform_Name## Sparkline Component
+description: Learn here all about Data Labels in Syncfusion ##Platform_Name## Sparkline component and more.
 platform: ej2-asp-core-mvc
 control: Data Labels
 publishingplatform: ##Platform_Name##

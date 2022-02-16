@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Horizontal of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Horizontal in ##Platform_Name## Card Component
+description: Learn here all about Horizontal in Syncfusion ##Platform_Name## Card component and more.
 platform: ej2-asp-core-mvc
 control: Horizontal
 publishingplatform: ##Platform_Name##

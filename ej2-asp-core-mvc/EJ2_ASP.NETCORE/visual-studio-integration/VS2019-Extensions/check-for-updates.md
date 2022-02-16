@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Check For Updates of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Check For Updates in ##Platform_Name## Ej2_asp.netcore Component
+description: Learn here all about Check For Updates in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
 platform: ej2-asp-core-mvc
 control: Check For Updates
 publishingplatform: ##Platform_Name##

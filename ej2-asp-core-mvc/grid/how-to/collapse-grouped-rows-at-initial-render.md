@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Collapse Grouped Rows At Initial Render of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Collapse Grouped Rows At Initial Render in ##Platform_Name## Grid Component
+description: Learn here all about Collapse Grouped Rows At Initial Render in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Collapse Grouped Rows At Initial Render
 publishingplatform: ##Platform_Name##

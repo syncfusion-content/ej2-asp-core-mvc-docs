@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Different Layouts of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Different Layouts in ##Platform_Name## Splitter Component
+description: Learn here all about Different Layouts in Syncfusion ##Platform_Name## Splitter component and more.
 platform: ej2-asp-core-mvc
 control: Different Layouts
 publishingplatform: ##Platform_Name##

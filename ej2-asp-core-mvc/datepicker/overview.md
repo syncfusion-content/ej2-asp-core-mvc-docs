@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Index of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Overview in ##Platform_Name## Datepicker Component
+description: Learn here all about Overview in Syncfusion ##Platform_Name## Datepicker component and more.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##

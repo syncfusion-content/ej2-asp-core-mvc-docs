@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Category Axis of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Category Axis in ##Platform_Name## Chart Component
+description: Learn here all about Category Axis in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Category Axis
 publishingplatform: ##Platform_Name##

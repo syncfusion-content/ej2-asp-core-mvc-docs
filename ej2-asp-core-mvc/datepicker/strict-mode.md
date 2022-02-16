@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Strict Mode of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Strict Mode in ##Platform_Name## Datepicker Component
+description: Learn here all about Strict Mode in Syncfusion ##Platform_Name## Datepicker component and more.
 platform: ej2-asp-core-mvc
 control: Strict Mode
 publishingplatform: ##Platform_Name##

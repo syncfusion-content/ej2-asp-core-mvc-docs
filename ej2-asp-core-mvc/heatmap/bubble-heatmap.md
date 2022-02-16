@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Bubble Heatmap of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Bubble Heatmap in ##Platform_Name## Heatmap Component
+description: Learn here all about Bubble Heatmap in Syncfusion ##Platform_Name## Heatmap component and more.
 platform: ej2-asp-core-mvc
 control: Bubble Heatmap
 publishingplatform: ##Platform_Name##

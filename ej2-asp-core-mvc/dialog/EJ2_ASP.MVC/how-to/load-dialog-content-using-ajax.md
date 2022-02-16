@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Load Dialog Content Using Ajax of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Load Dialog Content Using Ajax in ##Platform_Name## Dialog Component
+description: Learn here all about Load Dialog Content Using Ajax in Syncfusion ##Platform_Name## Dialog component and more.
 platform: ej2-asp-core-mvc
 control: Load Dialog Content Using Ajax
 publishingplatform: ##Platform_Name##

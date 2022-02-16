@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Maintain Zoom To Fit of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Maintain Zoom To Fit in ##Platform_Name## Gantt Component
+description: Learn here all about Maintain Zoom To Fit in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Maintain Zoom To Fit
 publishingplatform: ##Platform_Name##

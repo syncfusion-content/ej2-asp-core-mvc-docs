@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Button Appearance of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Button Appearance in ##Platform_Name## Button Component
+description: Learn here all about Customize Button Appearance in Syncfusion ##Platform_Name## Button component and more.
 platform: ej2-asp-core-mvc
 control: Customize Button Appearance
 publishingplatform: ##Platform_Name##

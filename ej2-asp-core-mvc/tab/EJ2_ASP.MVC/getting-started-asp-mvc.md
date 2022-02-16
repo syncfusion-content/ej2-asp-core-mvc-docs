@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Getting Started Asp Mvc of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Getting Started with ##Platform_Name## Tab Component
+description: Checkout and learn about getting started with ##Platform_Name## Tab component of Syncfusion, and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Asp Mvc
 publishingplatform: ##Platform_Name##

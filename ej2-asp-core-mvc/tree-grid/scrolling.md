@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Scrolling of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Scrolling in ##Platform_Name## Tree Grid Component
+description: Learn here all about Scrolling in Syncfusion ##Platform_Name## Tree Grid component and more.
 platform: ej2-asp-core-mvc
 control: Scrolling
 publishingplatform: ##Platform_Name##

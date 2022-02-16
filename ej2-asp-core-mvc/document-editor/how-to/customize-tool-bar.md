@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Tool Bar of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Tool Bar in ##Platform_Name## Document Editor Component
+description: Learn here all about Customize Tool Bar in Syncfusion ##Platform_Name## Document Editor component and more.
 platform: ej2-asp-core-mvc
 control: Customize Tool Bar
 publishingplatform: ##Platform_Name##

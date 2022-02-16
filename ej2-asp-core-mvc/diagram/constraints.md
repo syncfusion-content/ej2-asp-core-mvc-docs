@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Constraints of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Constraints in ##Platform_Name## Diagram Component
+description: Learn here all about Constraints in Syncfusion ##Platform_Name## Diagram component and more.
 platform: ej2-asp-core-mvc
 control: Constraints
 publishingplatform: ##Platform_Name##

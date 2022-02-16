@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Preview Images Before Uploading of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Preview Images Before Uploading in ##Platform_Name## Uploader Component
+description: Learn here all about Preview Images Before Uploading in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Preview Images Before Uploading
 publishingplatform: ##Platform_Name##

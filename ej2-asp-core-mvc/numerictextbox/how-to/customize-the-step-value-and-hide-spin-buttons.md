@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize The Step Value And Hide Spin Buttons of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize The Step Value And Hide Spin Buttons in ##Platform_Name## Numerictextbox Component
+description: Learn here all about Customize The Step Value And Hide Spin Buttons in Syncfusion ##Platform_Name## Numerictextbox component and more.
 platform: ej2-asp-core-mvc
 control: Customize The Step Value And Hide Spin Buttons
 publishingplatform: ##Platform_Name##

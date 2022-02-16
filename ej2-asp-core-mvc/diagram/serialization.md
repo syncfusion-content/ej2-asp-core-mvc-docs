@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Serialization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Serialization in ##Platform_Name## Diagram Component
+description: Learn here all about Serialization in Syncfusion ##Platform_Name## Diagram component and more.
 platform: ej2-asp-core-mvc
 control: Serialization
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Create With User Interface Interaction of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Create With User Interface Interaction in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Create With User Interface Interaction in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Create With User Interface Interaction
 publishingplatform: ##Platform_Name##

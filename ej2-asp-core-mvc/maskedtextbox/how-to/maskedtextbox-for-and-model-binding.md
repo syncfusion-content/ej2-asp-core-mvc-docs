@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Maskedtextbox For And Model Binding of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Maskedtextbox For And Model Binding in ##Platform_Name## Maskedtextbox Component
+description: Learn here all about Maskedtextbox For And Model Binding in Syncfusion ##Platform_Name## Maskedtextbox component and more.
 platform: ej2-asp-core-mvc
 control: Maskedtextbox For And Model Binding
 publishingplatform: ##Platform_Name##

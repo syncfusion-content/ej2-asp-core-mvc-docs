@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Set Custom Animation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Set Custom Animation in ##Platform_Name## Tab Component
+description: Learn here all about Set Custom Animation in Syncfusion ##Platform_Name## Tab component and more.
 platform: ej2-asp-core-mvc
 control: Set Custom Animation
 publishingplatform: ##Platform_Name##

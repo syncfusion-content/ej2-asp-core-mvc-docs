@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Create Buttongroup With Rounded Corner of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Create Buttongroup With Rounded Corner in ##Platform_Name## Button Group Component
+description: Learn here all about Create Buttongroup With Rounded Corner in Syncfusion ##Platform_Name## Button Group component and more.
 platform: ej2-asp-core-mvc
 control: Create Buttongroup With Rounded Corner
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Action Buttons of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Action Buttons in ##Platform_Name## Card Component
+description: Learn here all about Action Buttons in Syncfusion ##Platform_Name## Card component and more.
 platform: ej2-asp-core-mvc
 control: Action Buttons
 publishingplatform: ##Platform_Name##

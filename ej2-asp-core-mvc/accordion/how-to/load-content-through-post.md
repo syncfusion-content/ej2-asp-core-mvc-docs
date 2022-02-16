@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Load Content Through Post of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Load Content Through Post in ##Platform_Name## Accordion Component
+description: Learn here all about Load Content Through Post in Syncfusion ##Platform_Name## Accordion component and more.
 platform: ej2-asp-core-mvc
 control: Load Content Through Post
 publishingplatform: ##Platform_Name##

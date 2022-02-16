@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Convert Project of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Convert Project in ##Platform_Name## Component
+description: Learn here all about Convert Project in Syncfusion ##Platform_Name## component and more.
 platform: ej2-asp-core-mvc
 control: Convert Project
 publishingplatform: ##Platform_Name##

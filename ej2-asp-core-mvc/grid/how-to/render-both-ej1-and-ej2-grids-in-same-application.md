@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Render Both Ej1 And Ej2 Grids In Same Application of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Render Both Ej1 And Ej2 Grids In Same Application in ##Platform_Name## Grid Component
+description: Learn here all about Render Both Ej1 And Ej2 Grids In Same Application in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Render Both Ej1 And Ej2 Grids In Same Application
 publishingplatform: ##Platform_Name##

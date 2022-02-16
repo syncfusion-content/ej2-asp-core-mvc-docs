@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize The Datetimepicker Day Header of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize The Datetimepicker Day Header in ##Platform_Name## Datetimepicker Component
+description: Learn here all about Customize The Datetimepicker Day Header in Syncfusion ##Platform_Name## Datetimepicker component and more.
 platform: ej2-asp-core-mvc
 control: Customize The Datetimepicker Day Header
 publishingplatform: ##Platform_Name##

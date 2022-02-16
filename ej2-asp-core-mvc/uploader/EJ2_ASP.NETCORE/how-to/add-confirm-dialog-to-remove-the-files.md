@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Add Confirm Dialog To Remove The Files of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Add Confirm Dialog To Remove The Files in ##Platform_Name## Uploader Component
+description: Learn here all about Add Confirm Dialog To Remove The Files in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Add Confirm Dialog To Remove The Files
 publishingplatform: ##Platform_Name##

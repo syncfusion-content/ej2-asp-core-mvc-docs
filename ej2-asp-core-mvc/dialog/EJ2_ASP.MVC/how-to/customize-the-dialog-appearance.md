@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize The Dialog Appearance of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize The Dialog Appearance in ##Platform_Name## Dialog Component
+description: Learn here all about Customize The Dialog Appearance in Syncfusion ##Platform_Name## Dialog component and more.
 platform: ej2-asp-core-mvc
 control: Customize The Dialog Appearance
 publishingplatform: ##Platform_Name##

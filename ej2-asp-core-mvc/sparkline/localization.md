@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Localization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Localization in ##Platform_Name## Sparkline Component
+description: Learn here all about Localization in Syncfusion ##Platform_Name## Sparkline component and more.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Marker of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Marker in ##Platform_Name## Sparkline Component
+description: Learn here all about Marker in Syncfusion ##Platform_Name## Sparkline component and more.
 platform: ej2-asp-core-mvc
 control: Marker
 publishingplatform: ##Platform_Name##

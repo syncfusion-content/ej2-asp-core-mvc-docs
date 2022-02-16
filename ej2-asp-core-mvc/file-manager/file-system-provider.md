@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about File System Provider of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: File System Provider in ##Platform_Name## File Manager Component
+description: Learn here all about File System Provider in Syncfusion ##Platform_Name## File Manager component and more.
 platform: ej2-asp-core-mvc
 control: File System Provider
 publishingplatform: ##Platform_Name##

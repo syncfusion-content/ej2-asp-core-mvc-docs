@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Cells Elements of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Cells Elements in ##Platform_Name## Pivot Table Component
+description: Learn here all about Customize Cells Elements in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Customize Cells Elements
 publishingplatform: ##Platform_Name##

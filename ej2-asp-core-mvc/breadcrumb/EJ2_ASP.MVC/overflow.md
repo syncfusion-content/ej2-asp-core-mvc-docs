@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Overflow of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Overflow in ##Platform_Name## Breadcrumb Component
+description: Learn here all about Overflow in Syncfusion ##Platform_Name## Breadcrumb component and more.
 platform: ej2-asp-core-mvc
 control: Overflow
 publishingplatform: ##Platform_Name##

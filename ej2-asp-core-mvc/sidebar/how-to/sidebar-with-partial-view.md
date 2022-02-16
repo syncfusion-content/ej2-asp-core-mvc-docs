@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Sidebar With Partial View of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Sidebar With Partial View in ##Platform_Name## Sidebar Component
+description: Learn here all about Sidebar With Partial View in Syncfusion ##Platform_Name## Sidebar component and more.
 platform: ej2-asp-core-mvc
 control: Sidebar With Partial View
 publishingplatform: ##Platform_Name##

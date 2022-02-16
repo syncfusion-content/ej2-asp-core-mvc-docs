@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Import Export Annotation Object of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Import Export Annotation Object in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Import Export Annotation Object in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Import Export Annotation Object
 publishingplatform: ##Platform_Name##

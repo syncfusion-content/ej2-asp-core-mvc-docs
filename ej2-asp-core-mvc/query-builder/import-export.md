@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Import Export of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Import Export in ##Platform_Name## Query Builder Component
+description: Learn here all about Import Export in Syncfusion ##Platform_Name## Query Builder component and more.
 platform: ej2-asp-core-mvc
 control: Import Export
 publishingplatform: ##Platform_Name##

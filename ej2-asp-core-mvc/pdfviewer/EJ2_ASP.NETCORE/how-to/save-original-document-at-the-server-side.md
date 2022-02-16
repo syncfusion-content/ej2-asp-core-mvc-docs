@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Save Original Document At The Server Side of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Save Original Document At The Server Side in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Save Original Document At The Server Side in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Save Original Document At The Server Side
 publishingplatform: ##Platform_Name##

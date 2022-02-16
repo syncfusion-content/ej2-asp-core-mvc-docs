@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Create Sample of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Create Sample in ##Platform_Name## Component
+description: Learn here all about Create Sample in Syncfusion ##Platform_Name## component and more.
 platform: ej2-asp-core-mvc
 control: Create Sample
 publishingplatform: ##Platform_Name##

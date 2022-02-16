@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Column Spanning of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Column Spanning in ##Platform_Name## Grid Component
+description: Learn here all about Column Spanning in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Column Spanning
 publishingplatform: ##Platform_Name##

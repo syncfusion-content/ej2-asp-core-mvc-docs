@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Underline A Character In A Text of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Underline A Character In A Text in ##Platform_Name## Split Button Component
+description: Learn here all about Underline A Character In A Text in Syncfusion ##Platform_Name## Split Button component and more.
 platform: ej2-asp-core-mvc
 control: Underline A Character In A Text
 publishingplatform: ##Platform_Name##

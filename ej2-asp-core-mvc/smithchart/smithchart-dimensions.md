@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Smithchart Dimensions of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Smithchart Dimensions in ##Platform_Name## Smithchart Component
+description: Learn here all about Smithchart Dimensions in Syncfusion ##Platform_Name## Smithchart component and more.
 platform: ej2-asp-core-mvc
 control: Smithchart Dimensions
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Icon Support of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Icon Support in ##Platform_Name## Auto Complete Component
+description: Learn here all about Icon Support in Syncfusion ##Platform_Name## Auto Complete component and more.
 platform: ej2-asp-core-mvc
 control: Icon Support
 publishingplatform: ##Platform_Name##

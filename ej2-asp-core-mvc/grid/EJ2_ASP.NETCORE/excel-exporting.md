@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Excel Exporting of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Excel Exporting in ##Platform_Name## Grid Component
+description: Learn here all about Excel Exporting in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Excel Exporting
 publishingplatform: ##Platform_Name##

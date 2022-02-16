@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Range Band of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Range Band in ##Platform_Name## Sparkline Component
+description: Learn here all about Range Band in Syncfusion ##Platform_Name## Sparkline component and more.
 platform: ej2-asp-core-mvc
 control: Range Band
 publishingplatform: ##Platform_Name##

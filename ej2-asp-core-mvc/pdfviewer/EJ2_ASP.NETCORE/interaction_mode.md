@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Interaction_mode of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Interaction_mode in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Interaction_mode in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Interaction_mode
 publishingplatform: ##Platform_Name##

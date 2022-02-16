@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Position of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Position in ##Platform_Name## Toast Component
+description: Learn here all about Position in Syncfusion ##Platform_Name## Toast component and more.
 platform: ej2-asp-core-mvc
 control: Position
 publishingplatform: ##Platform_Name##

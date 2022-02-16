@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Button Size of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Button Size in ##Platform_Name## Button Component
+description: Learn here all about Customize Button Size in Syncfusion ##Platform_Name## Button component and more.
 platform: ej2-asp-core-mvc
 control: Customize Button Size
 publishingplatform: ##Platform_Name##

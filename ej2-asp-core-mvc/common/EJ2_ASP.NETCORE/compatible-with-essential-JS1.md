@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Compatible With Essential Js1 of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Compatible With Essential Js1 in ##Platform_Name## Common Component
+description: Learn here all about Compatible With Essential Js1 in Syncfusion ##Platform_Name## Common component and more.
 platform: ej2-asp-core-mvc
 control: Compatible With Essential Js1
 publishingplatform: ##Platform_Name##
