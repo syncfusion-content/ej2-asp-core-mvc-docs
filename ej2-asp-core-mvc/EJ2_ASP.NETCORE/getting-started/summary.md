@@ -16,3 +16,4 @@ documentation: ug
 * [Visual Studio Code](getting-started/vscode.md)
 * [Visual Studio for Mac](getting-started/visual-studio-mac.md)
 * [Yeoman Generator](getting-started/yeoman.md)
+* [Areas](getting-started/areas.md)
