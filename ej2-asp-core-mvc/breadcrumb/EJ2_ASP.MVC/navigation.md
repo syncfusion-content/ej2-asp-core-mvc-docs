@@ -116,7 +116,7 @@ The feature enables the last item of the Breadcrumb component by setting the `en
 
 Output be like the below.
 
-![Breadcrumb Sample](./images/enable-navigation.PNG)
+![Breadcrumb Sample](./images/navigation.PNG)
 
 ## Open URL in new page or tab
 
@@ -149,4 +149,4 @@ To open the Breadcrumb item in a new page or tab, set the target property of the
 
 Output be like the below.
 
-![Breadcrumb Sample](./images/enable-navigation.PNG)
+![Breadcrumb Sample](./images/navigation.PNG)

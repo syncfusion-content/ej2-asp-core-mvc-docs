@@ -44,7 +44,7 @@ documentation: ug
 
 Output be like the below.
 
-![Default accordion](../../accordion/images/accordion.PNG)
+![Default accordion](../images/accordion.PNG)
 
 ## Render the Accordion using content template
 
@@ -79,6 +79,6 @@ In the below demo, the Accordion items are given with [chart](../../chart), [gri
 
 Output be like the below.
 
-![content template](../../accordion/images/contenttemplate.PNG)
+![content template](../images/contenttemplate.PNG)
 
 You can also render accordion without using `ContentTemplate` which can be referred [here](../../accordion/how-to/set-the-nested-accordion).
