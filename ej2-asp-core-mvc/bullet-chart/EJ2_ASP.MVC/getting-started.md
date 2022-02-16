@@ -33,7 +33,7 @@ The following steps to create ASP.NET MVC Application.
 
 Open the `NuGet` package manager.
 
-![Solution Explorer](./images/solution-explorer-mvc.png)
+![Solution Explorer](./images/solution-explorer-core.png)
 
 Install the **Syncfusion.EJ2.MVC4** package to the application.
 

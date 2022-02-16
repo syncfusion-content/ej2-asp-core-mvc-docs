@@ -19,6 +19,11 @@ be used for rendering DOM element using desired data.
 `compile` method from `ej2-base` can be used to convert our template strings into
 executable functions.
 
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+{% include code-snippet/common/template-engine/compiling/razor %}
+{% endhighlight %}{% endtabs %}
+
 ## Available Template Syntax
 
 | Name | Syntax | Description |
@@ -45,7 +50,8 @@ Custom helper function can be defined and passed to `compile` function. Refer to
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Custom-helper.cs" %}
+{% highlight c# tabtitle="CSHTML" %}
+{% include code-snippet/common/template-engine/custom-helper/razor %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 

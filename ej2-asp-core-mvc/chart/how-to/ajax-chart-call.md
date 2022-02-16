@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# How To
+# Ajax Chart in ASP.NET MVC Chart control
 
 The following section explains how to customize various aspects of the chart.
 

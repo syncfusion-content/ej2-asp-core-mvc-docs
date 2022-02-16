@@ -77,4 +77,4 @@ In the  following example, the separators are customized with icons using `separ
 
 Output be like the below.
 
-![Breadcrumb Sample](./images/separator-template.PNG)
+![Breadcrumb Sample](./images/separator-temp.PNG)
