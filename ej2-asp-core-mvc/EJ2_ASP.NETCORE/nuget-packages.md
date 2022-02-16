@@ -22,7 +22,7 @@ documentation: ug
 
     ![img3](images/manage-nuget.png)
 
-    Alternatively, click **Tools**, menu, NuGet Package Manager | Manage NuGet Packages for Solution.
+    Alternatively, click **Tools**, menu, NuGet Package Manager -> Manage NuGet Packages for Solution.
 
 3. By default, the `NuGet.org` package is selected in the **Package source** drop-down. Select your appropriate feed name that you configured.
 
