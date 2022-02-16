@@ -22,3 +22,4 @@ This document illustrates how to build and run a simple Essential JS 2 web appli
 * [Getting Started with Essential JS 2 for ASP.NET Core in Visual Studio Code](vscode)
 * [Getting Started with Essential JS 2 for ASP.NET Core in Visual Studio for Mac](visual-studio-mac)
 * [Getting Started with Essential JS 2 for ASP.NET Core and Yeoman tool in Visual Studio Code](yeoman)
+* [Getting Started with Essential JS 2 for ASP.NET Core and Areas](areas)
