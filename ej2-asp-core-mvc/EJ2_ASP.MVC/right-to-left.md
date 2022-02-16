@@ -28,13 +28,17 @@ To control a component’s direction individually you can directly set the compo
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/common/rtl/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/common/rtl/razor %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

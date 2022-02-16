@@ -22,7 +22,7 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
     ![img3](images/nuget1.png)
 
-    Alternatively, click **Tools** in menu, **NuGet Package Manager | Manage NuGet Packages for Solution...**
+    Alternatively, click **Tools** in menu, **NuGet Package Manager -> Manage NuGet Packages for Solution...**
 
 2. By default, the `NuGet.org` package is selected in the **Package source** drop-down. Select your appropriate feed name that you configured If `NuGet.org` is not configured in your Visual Studio, refer to the Microsoft docs to configure `NuGet.org` feed URL in your Visual Studio.
 
