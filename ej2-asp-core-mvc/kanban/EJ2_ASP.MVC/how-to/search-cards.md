@@ -42,4 +42,4 @@ In the following sample, the searching operation starts as soon as you start typ
 
 Output be like the below.
 
-![kanban](./images/search-cards.PNG)
+![kanban](../../images/search-cards.PNG)
