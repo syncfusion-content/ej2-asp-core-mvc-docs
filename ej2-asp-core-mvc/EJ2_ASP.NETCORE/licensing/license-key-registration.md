@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about License Key Registration of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+description: Learn here all about License Key Registration of Syncfusion Essential ##Platform_Name## controls which is powered by Essential JS2.
 platform: ej2-asp-core-mvc
 control: License Key Registration
 publishingplatform: ##Platform_Name##

@@ -1,6 +1,16 @@
-# Getting Started with ASP.NET Core using Tag Helper in Visual Studio
+---
+layout: post
+title: Welcome to Syncfusion Essential ##Platform_Name##
+description: Learn here all about Razor Pages of Syncfusion Essential ##Platform_Name## components which is powered by Essential JS 2.
+platform: ej2-asp-core-mvc
+control: Razor Pages
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
 
-This article provides a step-by-step instructions for building ASP.NET Core application with Calendar component using tag helper in Visual Studio.
+# Getting Started with ASP.NET Core using Razor pages in Visual Studio
+
+This article provides a step-by-step instructions for building ASP.NET Core application with Calendar component using razor pages in Visual Studio.
 
 ## Prerequisites
 
@@ -35,7 +45,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
         ....
 
         <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/19.4.38/material.css" />
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 
     </head>
     ```
@@ -49,7 +59,7 @@ In this getting started walk-through, the required scripts are referred using CD
         ....
 
         <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/19.4.38/dist/ej2.min.js"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
     ```
 

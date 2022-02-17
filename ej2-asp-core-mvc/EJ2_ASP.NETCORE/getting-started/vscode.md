@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about VS Code of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+description: Learn here all about VS Code of Syncfusion Essential ##Platform_Name## components which is powered by Essential JS 2.
 platform: ej2-asp-core-mvc
 control: Vscode
 publishingplatform: ##Platform_Name##
@@ -69,7 +69,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
         ....
 
         <!-- Syncfusion ASP.NET Core components Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/19.4.38/material.css" />
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 
     </head>
     ```
@@ -83,7 +83,7 @@ In this getting started walk-through, the required scripts are referred using CD
         ....
 
         <!-- Syncfusion ASP.NET Core components Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/19.4.38/dist/ej2.min.js"></script>
+        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
     ```
 
