@@ -42,4 +42,4 @@ In the below sample, you can dynamically change the [`allowToggle`](../../api/ka
 
 Output be like the below.
 
-![kanban](./images/dynamic-columns.PNG)
+![kanban](../../images/dynamic-columns.PNG)

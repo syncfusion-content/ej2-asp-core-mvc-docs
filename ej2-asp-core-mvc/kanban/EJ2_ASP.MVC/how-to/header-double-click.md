@@ -40,4 +40,4 @@ You can bind the header double click event by using the [`dataBound`](../../api/
 
 Output be like the below.
 
-![kanban](./images/header-double-click.PNG)
+![kanban](../../images/header-double-click.PNG)
