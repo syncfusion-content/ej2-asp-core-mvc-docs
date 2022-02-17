@@ -10,23 +10,23 @@ documentation: ug
 
 # Installation using web Installer
 
-You can refer to the [Download](https://ej2.syncfusion.com/aspnetcore/documentation/installation/download/) section to learn how to get the ASP . NET Core - EJ2 trial or licensed installer.
+You can refer to the [Download](https://ej2.syncfusion.com/aspnetcore/documentation/installation/download/) section to learn how to get the ASP.NET Core - EJ2 trial or licensed installer.
 
 ## Overview
 
-For the Essential Studio ASP . NET Core - EJ2 product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/account/downloads/latest-version).
+For the Essential Studio ASP.NET Core - EJ2 product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/account/downloads/latest-version).
 
 ## Installation
 
-The steps below show how to install Essential Studio ASP . NET Core - EJ2 Web Installer.
+The steps below show how to install Essential Studio ASP.NET Core - EJ2 Web Installer.
 
-1. Open the Syncfusion Essential Studio ASP . NET Core - EJ2 Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically open and extracts the package.
+1. Open the Syncfusion Essential Studio ASP.NET Core - EJ2 Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically open and extracts the package.
 
     ![Web Installer Setup](images\Webinstaller-Installation-1.png)
 
     >**NOTE** <br /> The installer wizard extracts the syncfusionessentialaspnetcore-js2webinstaller_{version}.exe dialog, which displays the package's unzip operation.
 
-2. The Syncfusion ASP . NET Core - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
+2. The Syncfusion ASP.NET Core - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
 
     ![Web Installer welcome wizard](images\Webinstaller-Installation-2.png)
 
@@ -102,33 +102,33 @@ The steps below show how to install Essential Studio ASP . NET Core - EJ2 Web In
 
 ## Uninstallation
 
-Syncfusion ASP . NET Core - EJ2 installer can be uninstalled in two ways.
+Syncfusion ASP.NET Core - EJ2 installer can be uninstalled in two ways.
 
-* Uninstall the ASP . NET Core - EJ2 using the Syncfusion ASP . NET Core - EJ2 web installer.
+* Uninstall the ASP.NET Core - EJ2 using the Syncfusion ASP.NET Core - EJ2 web installer.
 
-* Uninstall the ASP . NET Core - EJ2 from Windows Control Panel.
+* Uninstall the ASP.NET Core - EJ2 from Windows Control Panel.
 
-Follow either one of the option below to uninstall Syncfusion Essential Studio ASP . NET Core - EJ2 installer.
+Follow either one of the option below to uninstall Syncfusion Essential Studio ASP.NET Core - EJ2 installer.
 
-### Option 1: Uninstall the ASP . NET Core - EJ2 using the Syncfusion ASP . NET Core - EJ2 web installer
+### Option 1: Uninstall the ASP.NET Core - EJ2 using the Syncfusion ASP.NET Core - EJ2 web installer
 
 Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
-Open the Syncfusion Essential Studio ASP . NET Core - EJ2 Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+Open the Syncfusion Essential Studio ASP.NET Core - EJ2 Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
 ![Web Installer Setup](images\Webinstaller-uninstallation-1.png)
 
-The Syncfusion ASP . NET Core - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
+The Syncfusion ASP.NET Core - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
 
 ![Web Installer welcome wizard](images\Webinstaller-uninstallation-2.png)
 
-### Option 2: Uninstall the ASP . NET Core from Windows Control Panel
+### Option 2: Uninstall the ASP.NET Core from Windows Control Panel
 
-You can uninstall all the installed products by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall ASP . NET Core alone by selecting the **Syncfusion Essential Studio for ASP . NET Core {version}** entry (element 2 in the below screenshot) from the Windows control panel.
+You can uninstall all the installed products by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall ASP.NET Core alone by selecting the **Syncfusion Essential Studio for ASP.NET Core {version}** entry (element 2 in the below screenshot) from the Windows control panel.
 
 ![Control Panel Uninstallation entries](images\Webinstaller-uninstallation-3.png)
 
->**NOTE** <br /> If the **Syncfusion Essential Studio for** ASP . NET Core  **{version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio ASP . NET Core - EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
+>**NOTE** <br /> If the **Syncfusion Essential Studio for** ASP.NET Core  **{version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio ASP.NET Core - EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
 
 1. The Platform Selection Wizard will appear. From the **Installed** tab, select the products to be uninstalled. To select all the products, check the **Uninstall All** checkbox. Click the Next button.
 

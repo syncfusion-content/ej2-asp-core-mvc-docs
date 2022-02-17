@@ -8,17 +8,17 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion ASP . NET Core (Essential JS2)
+# Upgrading Syncfusion ASP.NET Core (Essential JS2)
 
 Syncfusion releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 
 You can upgrade to our latest version from any installed Syncfusion version.
 
-See our **"[Upgrade Guide](https://help.syncfusion.com/upgrade-guide/aspnet-core-ui-controls)"** for ASP . NET Core - EJ2 to learn more about the "Breaking Changes, Bug Fixes, Features and Knows Issues" between your current version and the latest version you are trying to upgrade.
+See our **"[Upgrade Guide](https://help.syncfusion.com/upgrade-guide/aspnet-core-ui-controls)"** for ASP.NET Core - EJ2 to learn more about the "Breaking Changes, Bug Fixes, Features and Knows Issues" between your current version and the latest version you are trying to upgrade.
 
 ## Upgrading to the latest version
 
-The most recent version of Syncfusion ASP . NET Core - EJ2 can be downloaded and installed by clicking on the "Latest Version: {Version}" link at the top of the Syncfusion ASP . NET Core - EJ2 Control Panel.
+The most recent version of Syncfusion ASP.NET Core - EJ2 can be downloaded and installed by clicking on the "Latest Version: {Version}" link at the top of the Syncfusion ASP.NET Core - EJ2 Control Panel.
 
 ![Web Installer Upgrade](images\upgrade1.png)
 
