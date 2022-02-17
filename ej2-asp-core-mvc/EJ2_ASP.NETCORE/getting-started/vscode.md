@@ -10,378 +10,139 @@ documentation: ug
 
 <!-- markdownlint-disable MD024 -->
 
-# Getting Started with Essential JS 2 for ASP.NET Core in Visual Studio Code
+# Getting Started with ASP.NET Core in Visual Studio Code using Razor pages
 
-This article provides a step-by-step introduction to configure Essential JS 2 setup, build and publish a simple .NET Core web application using the [Visual Studio Code](https://code.visualstudio.com/) (VS Code).
+This article provides a step-by-step instruction for building ASP.NET Core web application using the [Visual Studio Code](https://code.visualstudio.com/).
 
-> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET Core application to use the components.
+## Prerequisites
 
-## Getting Started with ASP.NET Core 5.x
+* [Visual Studio Code](https://code.visualstudio.com/download)
+* [C# for Visual Studio Code (latest version)](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+* [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
-### Prerequisites
-
-The official prerequisites to create and run an ASP.NET Core 5.0 application on Windows environment are described in the [.NET Core documentation website](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net50#dependencies).
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-
-### Created ASP.NET Core web application
+## Created ASP.NET Core web application
 
 1. Create a new folder and open it in the VS Code by **File > Open Folder...**.
 
-    ![aspnetcore5.x vscode open folder](images/aspnetcore-vscode-open.png)
+> Visual Studio Code displays a dialog box that asks Do you trust the authors of the files in this folder. Select:
 
-2. Select **View > Integrated Terminal** to open the terminal in VS Code.
+* The checkbox trust the authors of all files in the parent folder
+* Yes, I trust the authors.
 
-    ![aspnetcore5.x vscode integrated terminal](images/aspnetcore-vscode-terminal.png)
+2. Open the [Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) by selecting a menu using **View > Terminal** in VS Code.
 
-3. Select **View > Integrated Terminal** to open the terminal in VS Code.
+3. Run the following command in the terminal to create a new ASP.NET Core web application. 
 
-4. Run the following command line in the terminal to create a new ASP.NET Core web application. 
+{% tabs %}
+{% highlight c# tabtitle=".NET CLI" %}
 
-    ```
-    dotnet new mvc
-    ```
+dotnet new webapp -o GettingStartedUsingVsCode
 
-    ![aspnetcore5.x vscode new web application](images/aspnetcore5x-vscode-web-app.png)
+{% endhighlight %}
+{% endtabs %}
 
-    > Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=net50), to learn more details about `dotnet new` command line. You can run the command line `dotnet new --help`, to learn more options available in the .NET CLI.
+The dotnet new command creates a new Razor Pages project in the GettingStartedUsingVsCode folder. Please refer to this [topic](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=net60) for more information about .NET CLI commands.
 
-### Configure Essential JS 2 in the application
+4. Run the following command in the terminal to open the project in current instance of the VS Code. 
 
-1. Run the following command in the VS Code terminal to add `Syncfusion.EJ2.AspNet.Core` NuGet package in the project.
+{% tabs %}
+{% highlight c# tabtitle=".NET CLI" %}
 
-    ```
+    code -r GettingStartedUsingVsCode
+
+{% endhighlight %}
+{% endtabs %}
+
+## Install Syncfusion ASP.NET Core package in the application
+
+Run the following command in the terminal to install `Syncfusion.EJ2.AspNet.Core` NuGet package in the application.
+
+{% tabs %}
+{% highlight c# tabtitle=".NET CLI" %}
+
     dotnet add package Syncfusion.EJ2.AspNet.Core
-    ```
 
-    ![aspnetcore5.x vscode adding syncfusion package in the project](images/dotnetnew-5x.png)
+{% endhighlight %}
+{% endtabs %}
 
-    > Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package), to learn more details about the `dotnet add` command line.
+Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) for more details about NuGet packages.
 
-2. Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
+## Add Syncfusion ASP.NET Core Tag Helper 
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
-    ```html
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
     @addTagHelper *, Syncfusion.EJ2
-    ```
 
-3. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/base/deployment.html?lang=typescript#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
+{% endhighlight %}
+{% endtabs %}
 
-    ```html
+## Add Style Sheet
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core components. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
     <head>
         ....
         ....
 
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+        <!-- Syncfusion ASP.NET Core components Styles -->
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
     </head>
-    ```
 
-4. Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
+{% endhighlight %}
+{% endtabs %}
 
-    ```html
-    <body>
-        ....
-        ....
-        <!-- Syncfusion Essential JS 2 ScriptManager -->
-        <ejs-scripts></ejs-scripts>
-    </body>
-    ```
+## Add Script Reference
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-5. Now, you can add the Syncfusion Essential JS 2 components in any web page (`cshtml`) in the `Views` folder.
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
 
-    For example, the calendar component is added to the `~/Views/Home/Index.cshtml` page.
-
-    ```html
-    <div>
-        <ejs-calendar id="calendar"></ejs-calendar>
-    </div>
-    ```
-
-6. Run the application by pressing the <kbd>F5</kbd> key. Set `Select Environment` to `.NET Core`, if settings required for VS Code.
-
-    ![aspnetcore5.x vscode select environment](images/aspnetcore-vscode-core-environment.png)
-
-    The Essential JS 2 calendar component will render in the web browser.
-
-    ![aspnetcore5.x calendar component output](images/aspnetcore-calendar.png)
-
-
-## Getting Started with ASP.NET Core 3.x
-
-### Prerequisites
-
-The official prerequisites to create and run an ASP.NET Core 3.x application on Windows environment are described in the [.NET Core documentation website](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=netcore31#dependencies).
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-
-### Created ASP.NET Core web application
-
-1. Create a new folder and open it in the VS Code by **File > Open Folder...**.
-
-    ![aspnetcore3.x vscode open folder](images/aspnetcore-vscode-open.png)
-
-2. Select **View > Integrated Terminal** to open the terminal in VS Code.
-
-    ![aspnetcore3.x vscode integrated terminal](images/aspnetcore-vscode-terminal.png)
-
-3. Select **View > Integrated Terminal** to open the terminal in VS Code.
-
-4. Run the following command line in the terminal to create a new ASP.NET Core web application. 
-
-    ```
-    dotnet new mvc
-    ```
-
-    ![aspnetcore3.x vscode new web application](images/aspnetcore3x-vscode-web-app.png)
-
-    > Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=netcore3x), to learn more details about `dotnet new` command line. You can run the command line `dotnet new --help`, to learn more options available in the .NET CLI.
-
-### Configure Essential JS 2 in the application
-
-1. Run the following command in the VS Code terminal to add `Syncfusion.EJ2.AspNet.Core` NuGet package in the project.
-
-    ```
-    dotnet add package Syncfusion.EJ2.AspNet.Core
-    ```
-
-    ![aspnetcore3.x vscode adding syncfusion package in the project](images/dotnetnew-3x.png)
-
-    > Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package), to learn more details about the `dotnet add` command line.
-
-2. Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
-
-    ```html
-    @addTagHelper *, Syncfusion.EJ2
-    ```
-
-3. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/base/deployment.html?lang=typescript#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
-
-    ```html
     <head>
         ....
         ....
 
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
-
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+        <!-- Syncfusion ASP.NET Core components Scripts -->
+        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
-    ```
 
-4. Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
+{% endhighlight %}
+{% endtabs %}
 
-    ```html
+## Register Syncfusion Script Manager
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
     <body>
         ....
         ....
-        <!-- Syncfusion Essential JS 2 ScriptManager -->
+        <!-- Syncfusion ScriptManager -->
         <ejs-scripts></ejs-scripts>
     </body>
-    ```
+    
+{% endhighlight %}
+{% endtabs %}
 
-5. Now, you can add the Syncfusion Essential JS 2 components in any web page (`cshtml`) in the `Views` folder.
+## Add ASP.NET Core Calendar Component
 
-    For example, the calendar component is added to the `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Calendar tag helper in `~/Pages/Index.cshtml` page.
 
-    ```html
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
     <div>
         <ejs-calendar id="calendar"></ejs-calendar>
     </div>
-    ```
 
-6. Run the application by pressing the <kbd>F5</kbd> key. Set `Select Environment` to `.NET Core`, if settings required for VS Code.
+{% endhighlight %}
+{% endtabs %}
 
-    ![aspnetcore3.x vscode select environment](images/aspnetcore-vscode-core-environment.png)
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the app. Set `Select Environment` to `.NET Core`, if settings required for VS Code. Then, the default web browser launched with Syncfusion ASP.NET Core Calendar component.
 
-    The Essential JS 2 calendar component will render in the web browser.
-
-    ![aspnetcore3.x calendar component output](images/aspnetcore-calendar.png)
-
-
-## Getting Started with ASP.NET Core 2.x
-
-### Prerequisites
-
-The official prerequisites to create and run an ASP.NET Core 2.x application on Windows environment are described in the [.NET Core documentation website](https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore2x).
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-
-### Create ASP.NET Core web application
-
-1. Create a new folder and open it in the VS Code by **File > Open Folder...**.
-
-    ![aspnetcore2.x vscode open folder](images/aspnetcore-vscode-open.png)
-
-2. Select **View > Integrated Terminal** to open the terminal in VS Code.
-
-    ![aspnetcore2.x vscode integrated terminal](images/aspnetcore-vscode-terminal.png)
-
-3. Run the following command line in the terminal to create a new ASP.NET Core web application.
-
-    ```
-    dotnet new mvc
-    ```
-
-    ![aspnetcore2.x vscode new web application](images/aspnetcore2x-vscode-web-app.png)
-
-    > Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=netcore2x), to learn more details about `dotnet new` command line. You can run the command line `dotnet new --help`, to learn more options available in the .NET CLI.
-
-### Configure Essential JS 2 in the application
-
-1. Run the following command in the VS Code terminal to add `Syncfusion.EJ2.AspNet.Core` NuGet package in the project.
-
-    ```
-    dotnet add package Syncfusion.EJ2.AspNet.Core
-    ```
-
-    ![aspnetcore2.x vscode adding syncfusion package in the project](images/dotnetnew.png)
-
-    > Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package), to learn more details about the `dotnet add` command line.
-
-2. Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
-
-    ```html
-    @addTagHelper *, Syncfusion.EJ2
-    ```
-
-3. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/base/deployment.html?lang=typescript#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
-
-    ```html
-    <head>
-        ....
-        ....
-
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
-
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
-    </head>
-    ```
-
-4. Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
-
-    ```html
-    <body>
-        ....
-        ....
-        <!-- Syncfusion Essential JS 2 ScriptManager -->
-        <ejs-scripts></ejs-scripts>
-    </body>
-    ```
-
-5. Now, you can add the Syncfusion Essential JS 2 components in any web page (`cshtml`) in the `Views` folder.
-
-    For example, the calendar component is added to the `~/Views/Home/Index.cshtml` page.
-
-    ```html
-    <div>
-        <ejs-calendar id="calendar"></ejs-calendar>
-    </div>
-    ```
-
-6. Run the application by pressing the <kbd>F5</kbd> key. Set `Select Environment` to `.NET Core`, if settings required for VS Code.
-
-    ![aspnetcore2.x vscode select environment](images/aspnetcore-vscode-core-environment.png)
-
-    The Essential JS 2 calendar component will render in the web browser.
-
-    ![aspnetcore2.x calendar component output](images/aspnetcore-calendar.png)
-
-## Getting Started with ASP.NET Core 1.x
-
-### Prerequisites
-
-The official prerequisites to create and run an ASP.NET Core 1.x application on Windows environment are described in the [.NET Core documentation website](https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore1x).
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-
-### Create ASP.NET Core web application
-
-1. Create a new folder and open it in VS Code by **File > Open Folder...**.
-
-    ![aspnetcore1.x vscode open folder](images/aspnetcore-vscode-open.png)
-
-2. Select **View > Integrated Terminal** to open the terminal in VS Code.
-
-    ![aspnetcore1.x vscode integrated terminal](images/aspnetcore-vscode-terminal.png)
-
-3. Run the following command line in the VS Code terminal to create a new ASP.NET Core web application.
-
-    ```
-    dotnet new -t web
-    ```
-
-    ![aspnetcore1.x vscode new web application](images/aspnetcore1x-vscode-web-app.png)
-
-    > Refer [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=netcore1x), to learn more details about the `dotnet new` command line.
-
-### Configure Essential JS 2 in the application
-
-1. Add `Syncfusion.EJ2` assembly reference in the `dependencies` of `project.json` file.
-
-    ![aspnetcore1.x vscode project json](images/nugetpackage-version.png)
-
-2. Restore the dependent packages in the application by running the following command line in the VS Code terminal.
-
-    ```
-    dotnet restore
-    ```
-
-    ![aspnetcore1.x vscode dotnet restore](images/aspnetcore1x-vscode-dotnet-restore.png)
-
-    > Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore1x), to learn more details about `dotnet restore` command line.
-
-3. Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
-
-    ```html
-    @addTagHelper *, Syncfusion.EJ2
-    ```
-
-4. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/base/deployment.html?lang=typescript#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
-
-    ```html
-    <head>
-        ....
-        ....
-
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
-
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
-    </head>
-    ```
-
-5. Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
-
-    ```html
-    <body>
-        ....
-        ....
-        <!-- Syncfusion Essential JS 2 ScriptManager -->
-        <ejs-scripts></ejs-scripts>
-    </body>
-    ```
-
-6. Now, you can add the Syncfusion Essential JS 2 components in any web page (`cshtml`) in the `Views` folder.
-
-    For example, the calendar component is added to the `~/Views/Home/Index.cshtml` page.
-
-    ```html
-    <div>
-        <ejs-calendar id="calendar"></ejs-calendar>
-    </div>
-    ```
-
-7. Run the application by pressing <kbd>F5</kbd> key. Set `Select Environment` to `.NET Core`, if settings required for VS Code.
-
-    ![aspnetcore1.x vscode select environment](images/aspnetcore-vscode-core-environment.png)
-
-    The Essential JS 2 calendar component will render in the web browser.
-
-    ![aspnetcore1.x calendar component output](images/aspnetcore-calendar.png)
+    ![ASP.NET Core Calendar component - Getting Started using VS Code](images/aspnetcore-calendar.png)

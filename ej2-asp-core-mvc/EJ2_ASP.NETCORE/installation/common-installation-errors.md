@@ -54,7 +54,7 @@ This article describes the most common installation errors, as well as the cause
 
 ## Unable to find a valid license or trial
 
-**Error Message:** Sorry, we are unable to find a valid license or trial for Essential Studio for ASP . NET Core - EJ2 under your account.
+**Error Message:** Sorry, we are unable to find a valid license or trial for Essential Studio for ASP.NET Core - EJ2 under your account.
 
 ***Offline installer***
 
