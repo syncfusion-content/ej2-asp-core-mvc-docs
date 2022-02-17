@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Set Different Event Time Duration of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Set Different Event Time Duration in ##Platform_Name## Schedule Component
+description: Learn here all about Set Different Event Time Duration in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Set Different Event Time Duration
 publishingplatform: ##Platform_Name##

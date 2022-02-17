@@ -1,13 +1,212 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Rows of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Rows in ##Platform_Name## Gantt Component
+description: Learn here all about Rows in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Rows
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Rows
+
+Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.
+
+## Row height
+
+It is possible to change the height of the row in Gantt by setting row height in pixels to the [`RowHeight`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~RowHeight.html) property. The following code example explains how to change the row height in Gantt at load time.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/rowHeight/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="RowHeight.cs" %}
+{% include code-snippet/gantt/rows/rowHeight/rowHeight.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/rowHeight/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RowHeight.cs" %}
+{% include code-snippet/gantt/rows/rowHeight/rowHeight.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/rowHeight.png)
+
+## Expand/Collapse Row
+
+In Gantt parent tasks are expanded/collapsed by using expand/collapse icons, expand all/collapse all toolbar items and by using public methods. By default all tasks in Gantt was rendered in expanded state but we can change this status in Gantt.
+
+### Collapse all tasks at Gantt load
+
+All tasks available in Gantt was rendered in collapsed state by setting [`CollapseAllParentTasks`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~CollapseAllParentTasks.html) property as `true`. The following code example shows how to use this property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/enableCollapseAll/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="EnableCollapseAll.cs" %}
+{% include code-snippet/gantt/rows/enableCollapseAll/enableCollapseAll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/enableCollapseAll/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="EnableCollapseAll.cs" %}
+{% include code-snippet/gantt/rows/enableCollapseAll/enableCollapseAll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/enableCollapseAll.png)
+
+### Define expand/collapse status of tasks
+
+In Gantt, we can render some tasks in collapsed state and some tasks in expanded state, this can done by defining expand status of the task in data source. This value was mapped to Gantt control by using [`ExpandState`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttTaskFields~ExpandState.html) property. The following code example shows how to use this property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/expandState/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ExpandState.cs" %}
+{% include code-snippet/gantt/rows/expandState/expandState.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/expandState/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ExpandState.cs" %}
+{% include code-snippet/gantt/rows/expandState/expandState.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/expandState.png)
+
+### Customize expand/collapse action
+
+On expand action [`Expanding`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~Expanding.html) and [`Expanded`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~Expanded.html) event will be triggered with current expanding row’s information. Similarly on collapse action [`Collapsing`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~Collapsing.html) and [`Collapsed`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~Collapsed.html) event will be triggered. Using this events and it’s arguments we can customize the expand/collapse action. The following code example shows how to prevent the particular row from expand/collapse action using [`Expanding`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~Expanding.html) and [`Collapsing`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~Collapsing.html) event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/expandCollapseEvent/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ExpandCollapseEvent.cs" %}
+{% include code-snippet/gantt/rows/expandCollapseEvent/expandCollapseEvent.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/expandCollapseEvent/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ExpandCollapseEvent.cs" %}
+{% include code-snippet/gantt/rows/expandCollapseEvent/expandCollapseEvent.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Drag and drop
+
+You can dynamically rearrange the rows in the Gantt control by using the `AllowRowDragAndDrop` property. Using this property, row drag and drop can be enabled or disabled in Gantt. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/defaultdrag/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Defaultdrag.cs" %}
+{% include code-snippet/gantt/rows/defaultdrag/defaultdrag.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/defaultdrag/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Defaultdrag.cs" %}
+{% include code-snippet/gantt/rows/defaultdrag/defaultdrag.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/defaultdrag.png)
+
+### Multiple row drag and drop
+
+Gantt also supports dragging multiple rows at a time and drop them on any rows above, below, or at child positions. In Gantt, you can enable the multiple drag and drop by setting the `SelectionSettings.Type` to `Multiple` and you should enable the `AllowRowDragAndDrop` property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/multidrag/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Multidrag.cs" %}
+{% include code-snippet/gantt/rows/multidrag/multidrag.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/multidrag/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Multidrag.cs" %}
+{% include code-snippet/gantt/rows/multidrag/multidrag.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/multidrag.png)
+
+### Drag and drop events
+
+We provide various events to customize the row drag and drop action, the following table explains about the available events and its details.
+
+Event Name |Description
+-----|-----
 `RowDragStartHelper`  |Triggers when clicking the drag icon or Gantt row.
 `RowDragStart`  |Triggers when drag action starts in Gantt.
 `RowDrag`  |Triggers while dragging the Gantt row.

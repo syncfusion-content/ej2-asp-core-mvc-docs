@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Stock Events of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Stock Events in ##Platform_Name## Stock Chart Component
+description: Learn here all about Stock Events in Syncfusion ##Platform_Name## Stock Chart component and more.
 platform: ej2-asp-core-mvc
 control: Stock Events
 publishingplatform: ##Platform_Name##

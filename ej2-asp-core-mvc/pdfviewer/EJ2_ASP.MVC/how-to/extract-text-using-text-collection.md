@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Extract Text Using Text Collection of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Extract Text Using Text Collection in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Extract Text Using Text Collection in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Extract Text Using Text Collection
 publishingplatform: ##Platform_Name##

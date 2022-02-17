@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Hide Sidebar of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Hide Sidebar in ##Platform_Name## Sidebar Component
+description: Learn here all about Hide Sidebar in Syncfusion ##Platform_Name## Sidebar component and more.
 platform: ej2-asp-core-mvc
 control: Hide Sidebar
 publishingplatform: ##Platform_Name##

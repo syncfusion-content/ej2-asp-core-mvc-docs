@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Template And Multilevel Nesting of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Template And Multilevel Nesting in ##Platform_Name## Context Menu Component
+description: Learn here all about Template And Multilevel Nesting in Syncfusion ##Platform_Name## Context Menu component and more.
 platform: ej2-asp-core-mvc
 control: Template And Multilevel Nesting
 publishingplatform: ##Platform_Name##

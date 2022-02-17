@@ -1,13 +1,130 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Columns Core of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Columns Core in ##Platform_Name## Tree Grid Component
+description: Learn here all about Columns Core in Syncfusion ##Platform_Name## Tree Grid component and more.
 platform: ej2-asp-core-mvc
 control: Columns Core
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Columns
+
+The column definitions are used as the dataSource schema in the TreeGrid. This plays a vital role in rendering column values in the required format.
+The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`field`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Field.html) property of [`e-treegrid-columns`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumns.html) tag helper
+is necessary to map the data source values in TreeGrid columns.
+
+> 1. If the column [`field`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Field.html) is not specified in the dataSource, the column values will be empty.
+> 2. If the [`field`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Field.html) name contains “dot” operator, it is considered as complex binding.
+
+[`treeColumnIndex`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~TreeColumnIndex.html) property denotes the column that is used to expand and collapse child rows.
+
+## Header Template
+
+You can customize the header element by using the [`headerTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~HeaderTemplate.html) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/columns-core/header-template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Headertemplate.cs" %}
+{% include code-snippet/tree-grid/columns-core/header-template/headertemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Headertemplate.cs" %}
+{% include code-snippet/tree-grid/columns-core/header-template/headertemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Header text
+
+By default, column header title is displayed from column [`field`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Field.html) value. To override the default header title, you have to define the [`headerText`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~HeaderText.html) value.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/columns-core/default/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/tree-grid/columns-core/default/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/tree-grid/columns-core/default/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+> If both the [`field`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Field.html) and [`headerText`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~HeaderText.html)
+are not defined in the column, the column renders with **empty** header text.
+
+## Format
+
+To format cell values based on specific culture, use the [`format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper. The TreeGrid uses [`Internalization`](../../common/internationalization/) library to format the number values.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/columns-core/format-columns/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Format.cs" %}
+{% include code-snippet/tree-grid/columns-core/format-columns/format.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Format.cs" %}
+{% include code-snippet/tree-grid/columns-core/format-columns/format.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+> By default, the number and date values are formatted in **en-US** locale.
+
+### Number formatting
+
+The number or integer values can be formatted using the below format strings.
+
+Format |Description |Remarks
+-----|-----
+N | Denotes numeric type. | The numeric format is followed by integer value as N2, N3. etc which denotes the number of precision to be allowed.
+C | Denotes currency type. | The currency format is followed by integer value as C2, C3. etc which denotes the number of precision to be allowed.
+P | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 100. For example the cell value `0.2` is formatted as `20%`. The percentage format is followed by integer value as P2, P3. etc which denotes the number of precision to be allowed.
+
+Please refer to the link to know more about [`Number formatting`](../../common/internationalization/#number-formatting).
+
+### Date formatting
+
+You can format date values either using built-in date format string or custom format string.
+
+For built-in date format you can specify [`format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property as string   (Example: `yMd`). Please refer to the link to know more about [`Date formatting`](../../common/internationalization/#manipulating-datetime).
+
+You can also use custom format string to format the date values. Some of the custom formats and the formatted date values are given in the below table.
+
+Format | Formatted value
+-----|-----
 { type:'date', format:'dd/MM/yyyy' } | 04/07/1996
 { type:'date', format:'dd.MM.yyyy' } | 04.07.1996
 { type:'date', skeleton:'short' } | 7/4/96

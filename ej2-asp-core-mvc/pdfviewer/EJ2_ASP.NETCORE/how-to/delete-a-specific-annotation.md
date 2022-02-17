@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Delete A Specific Annotation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Delete A Specific Annotation in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Delete A Specific Annotation in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Delete A Specific Annotation
 publishingplatform: ##Platform_Name##

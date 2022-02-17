@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Fixed Sidebar of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Fixed Sidebar in ##Platform_Name## Sidebar Component
+description: Learn here all about Fixed Sidebar in Syncfusion ##Platform_Name## Sidebar component and more.
 platform: ej2-asp-core-mvc
 control: Fixed Sidebar
 publishingplatform: ##Platform_Name##

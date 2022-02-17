@@ -1,13 +1,20 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Treegrid Styling of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Treegrid Styling in ##Platform_Name## Tree Grid Component
+description: Learn here all about Treegrid Styling in Syncfusion ##Platform_Name## Tree Grid component and more.
 platform: ej2-asp-core-mvc
 control: Treegrid Styling
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Styling
+
+To modify the TreeGrid appearance, you need to override the default CSS of treegrid. Please find the list of CSS classes and its corresponding section in treegrid. Also, you have an option to create your own custom theme for all the ASP.NET MVC controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+
+Section|CSS class|Purpose of CSS class
+-----|-----|-----
 **Root**|e-treegrid|This classes are in this root element (div) of the treegrid control.
 **Header**|e-gridheader|This class is added in the root element of header element. In this class, You can override thin line between header and content of the treegrid.
 ||e-table|This class is added at 'table' of the treegrid header. This CSS class makes table width as 100 %.

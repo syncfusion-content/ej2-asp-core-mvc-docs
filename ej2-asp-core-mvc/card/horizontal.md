@@ -1,13 +1,24 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Horizontal of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Horizontal in ##Platform_Name## Card Component
+description: Learn here all about Horizontal in Syncfusion ##Platform_Name## Card component and more.
 platform: ej2-asp-core-mvc
 control: Horizontal
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Horizontal Card
+
+By default, all the card elements are aligned vertically one after the other as in the DOM. You can achieve the element to align horizontally as well by adding the class `e-card-horizontal` in the root card element.
+
+## Stacked cards
+
+* An horizontally aligned card can push a specific column to align vertical using `e-card-stacked` class. This will align the stacked section vertically aligned differentiating from horizontal layout.
+
+Class   | Description
+------------ | -------------
 `e-card-horizontal` | To align card elements horizontally.
 `e-card-stacked` | To align elements vertically within the horizontal layout.
 
@@ -24,10 +35,10 @@ documentation: ug
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/card_horizontal/tagHelper %}
+{% include code-snippet/card/card-horizontal/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_horizontal/controller.cs %}
+{% include code-snippet/card/card-horizontal/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +46,10 @@ documentation: ug
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/card/card_horizontal/razor %}
+{% include code-snippet/card/card-horizontal/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_horizontal/controller.cs %}
+{% include code-snippet/card/card-horizontal/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

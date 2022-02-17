@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Theme Studio of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Theme Studio in ##Platform_Name## Component
+description: Learn here all about Theme Studio in Syncfusion ##Platform_Name## component and more.
 platform: ej2-asp-core-mvc
 control: Theme Studio
 publishingplatform: ##Platform_Name##
@@ -76,7 +76,7 @@ You can directly use the customized CSS file in the web application.
     </head>
 ```
 
-N> If you are using Essential JS 1 and Essential JS 2 components in a same web application, then you have to copy/paste the customized CSS file from the `compatibility` folder in the download location.
+> If you are using Essential JS 1 and Essential JS 2 components in a same web application, then you have to copy/paste the customized CSS file from the `compatibility` folder in the download location.
 
 ## Import previously changed settings into the theme studio
 

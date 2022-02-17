@@ -1,19 +1,24 @@
-
-        <ejs-chart id="container" title="Sales History of Product X" load="load" loaded="loaded" pointRender="pointRender">
-            <e-chart-primaryxaxis valueType="DateTime" majorGridLines="ViewBag.line" majorTickLines="ViewBag.line"></e-chart-primaryxaxis>
-            <e-chart-primaryyaxis stripLines="ViewBag.yAxisStripLine" majorGridLines="ViewBag.line" majorTickLines="ViewBag.line"></e-chart-primaryyaxis>
-            <e-series-collection>
-                <e-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
-                    <e-series-marker visible="true" height="10" width="10"></e-series-marker>
-                </e-series>
-            </e-series-collection>
-            <e-chart-annotations>
-                <e-chart-annotation Content="<div>LCL</div>" X="30" Y="2" CoordinateUnits='@Syncfusion.EJ2.Charts.Units.Point'></e-chart-annotation>
-                <e-chart-annotation Content="<div>CL</div>" X="30" Y="2" CoordinateUnits='@Syncfusion.EJ2.Charts.Units.Point'></e-chart-annotation>
-                <e-chart-annotation Content="<div>UCL</div>" X="30" Y="2" CoordinateUnits='@Syncfusion.EJ2.Charts.Units.Point'></e-chart-annotation>
-                <e-chart-annotation Content="<div>Number of groups: xx</div><div>CL: xx</div><div>LCL: xx</div><div>UCL: xx</div><div>Standard Divation: xx</div>" X="400" Y="500" CoordinateUnits='@Syncfusion.EJ2.Charts.Units.Pixel'></e-chart-annotation>
-            </e-chart-annotations>
-        </ejs-chart>
+<ejs-chart id="container" title="Sales History of Product X" load="load" loaded="loaded" pointRender="pointRender">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime">
+        <e-majorgridlines width="0"></e-majorgridlines>
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis stripLines="ViewBag.yAxisStripLine">
+        <e-majorgridlines width="0"></e-majorgridlines>
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+            <e-series-marker visible="true" height="10" width="10"></e-series-marker>
+        </e-series>
+    </e-series-collection>
+    <e-chart-annotations>
+        <e-chart-annotation Content="<div>LCL</div>" X="30" Y="2" CoordinateUnits='@Syncfusion.EJ2.Charts.Units.Point'></e-chart-annotation>
+        <e-chart-annotation Content="<div>CL</div>" X="30" Y="2" CoordinateUnits='@Syncfusion.EJ2.Charts.Units.Point'></e-chart-annotation>
+        <e-chart-annotation Content="<div>UCL</div>" X="30" Y="2" CoordinateUnits='@Syncfusion.EJ2.Charts.Units.Point'></e-chart-annotation>
+        <e-chart-annotation Content="<div>Number of groups: xx</div><div>CL: xx</div><div>LCL: xx</div><div>UCL: xx</div><div>Standard Divation: xx</div>" X="400" Y="500" CoordinateUnits='@Syncfusion.EJ2.Charts.Units.Pixel'></e-chart-annotation>
+    </e-chart-annotations>
+</ejs-chart>
 
 <script>
     var mean = 0, LCL = 0, UCL = 0, s = 0;
@@ -48,10 +53,10 @@
         args.chart.annotations[2].y = UCL;
     }
     function loaded(args) {
-        var strip1 = document.getElementById('container_stripline_Behind_rect_0');
+        var strip1 = document.getElementById('container_stripline_Behind_rect_primaryYAxis_0');
         strip1.setAttribute('stroke', 'black');
         strip1.setAttribute('stroke-dasharray', '5');
-        var strip2 = document.getElementById('container_stripline_Behind_rect_2');
+        var strip2 = document.getElementById('container_stripline_Behind_rect_primaryYAxis_0');
         strip2.setAttribute('stroke', 'black');
         strip2.setAttribute('stroke-dasharray', '5');
         var annotation = document.getElementById('container_Annotation_Collections');

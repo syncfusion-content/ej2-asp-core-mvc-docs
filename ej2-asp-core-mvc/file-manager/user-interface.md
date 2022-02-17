@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about User Interface of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: User Interface in ##Platform_Name## File Manager Component
+description: Learn here all about User Interface in Syncfusion ##Platform_Name## File Manager component and more.
 platform: ej2-asp-core-mvc
 control: User Interface
 publishingplatform: ##Platform_Name##

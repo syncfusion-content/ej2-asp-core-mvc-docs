@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Placeholder Style of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Placeholder Style in ##Platform_Name## Rich Text Editor Component
+description: Learn here all about Customize Placeholder Style in Syncfusion ##Platform_Name## Rich Text Editor component and more.
 platform: ej2-asp-core-mvc
 control: Customize Placeholder Style
 publishingplatform: ##Platform_Name##

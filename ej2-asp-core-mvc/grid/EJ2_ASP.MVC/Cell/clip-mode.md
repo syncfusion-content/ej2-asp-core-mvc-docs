@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Clip Mode of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Clip Mode in ##Platform_Name## Grid Component
+description: Learn here all about Clip Mode in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Clip Mode
 publishingplatform: ##Platform_Name##

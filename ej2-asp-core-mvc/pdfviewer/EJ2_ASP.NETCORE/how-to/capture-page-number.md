@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Capture Page Number of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Capture Page Number in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Capture Page Number in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Capture Page Number
 publishingplatform: ##Platform_Name##

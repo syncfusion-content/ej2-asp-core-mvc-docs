@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Floating Panel of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Floating Panel in ##Platform_Name## Dashboard Layout Component
+description: Learn here all about Floating Panel in Syncfusion ##Platform_Name## Dashboard Layout component and more.
 platform: ej2-asp-core-mvc
 control: Floating Panel
 publishingplatform: ##Platform_Name##

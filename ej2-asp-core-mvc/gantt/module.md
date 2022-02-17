@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Module of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Module in ##Platform_Name## Gantt Component
+description: Learn here all about Module in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Module
 publishingplatform: ##Platform_Name##

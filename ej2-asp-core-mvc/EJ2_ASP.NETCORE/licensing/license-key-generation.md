@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about License Key Generation of Syncfusion Essential ##Platform_Name## controls which is powered by Essential JS2.
+title: License Key Generation in ##Platform_Name## Ej2_asp.netcore Component
+description: Learn here all about License Key Generation in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
 platform: ej2-asp-core-mvc
 control: License Key Generation
 publishingplatform: ##Platform_Name##

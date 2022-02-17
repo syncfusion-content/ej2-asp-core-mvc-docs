@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Special Points Customization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Special Points Customization in ##Platform_Name## Sparkline Component
+description: Learn here all about Special Points Customization in Syncfusion ##Platform_Name## Sparkline component and more.
 platform: ej2-asp-core-mvc
 control: Special Points Customization
 publishingplatform: ##Platform_Name##
@@ -48,10 +48,10 @@ Tie point color is used to configure the win-loss series type sparkline's y-valu
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/specialpoints/tie_point/tagHelper %}
+{% include code-snippet/sparkline/specialpoints/tie-point/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tie_point.cs" %}
-{% include code-snippet/sparkline/specialpoints/tie_point/tie_point.cs %}
+{% include code-snippet/sparkline/specialpoints/tie-point/tie-point.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,10 +59,10 @@ Tie point color is used to configure the win-loss series type sparkline's y-valu
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/specialpoints/tie_point/razor %}
+{% include code-snippet/sparkline/specialpoints/tie-point/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tie_point.cs" %}
-{% include code-snippet/sparkline/specialpoints/tie_point/tie_point.cs %}
+{% include code-snippet/sparkline/specialpoints/tie-point/tie-point.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

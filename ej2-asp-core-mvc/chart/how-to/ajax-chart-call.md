@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Ajax Chart Call of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Ajax Chart Call in ##Platform_Name## Chart Component
+description: Learn here all about Ajax Chart Call in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Ajax Chart Call
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# How To
+# Ajax Chart in ASP.NET MVC Chart control
 
 The following section explains how to customize various aspects of the chart.
 

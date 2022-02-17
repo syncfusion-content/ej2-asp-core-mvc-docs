@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Calendar Mode of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Calendar Mode in ##Platform_Name## Schedule Component
+description: Learn here all about Calendar Mode in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Calendar Mode
 publishingplatform: ##Platform_Name##
@@ -63,6 +63,6 @@ It requires the following CLDR data to be loaded using loadCldr function.
 
 
 
-N> However, this feature does not yet support recurrence options, which we are planning to add them in the next release.
+> However, this feature does not yet support recurrence options, which we are planning to add them in the next release.
 
 > You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

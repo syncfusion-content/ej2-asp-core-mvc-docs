@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Linear Gauge Dimensions of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Linear Gauge Dimensions in ##Platform_Name## Linear Gauge Component
+description: Learn here all about Linear Gauge Dimensions in Syncfusion ##Platform_Name## Linear Gauge component and more.
 platform: ej2-asp-core-mvc
 control: Linear Gauge Dimensions
 publishingplatform: ##Platform_Name##

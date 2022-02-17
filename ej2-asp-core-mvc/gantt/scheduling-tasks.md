@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Scheduling Tasks of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Scheduling Tasks in ##Platform_Name## Gantt Component
+description: Learn here all about Scheduling Tasks in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Scheduling Tasks
 publishingplatform: ##Platform_Name##

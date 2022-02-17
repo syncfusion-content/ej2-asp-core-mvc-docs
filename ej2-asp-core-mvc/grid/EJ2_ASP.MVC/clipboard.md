@@ -1,13 +1,22 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Clipboard of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Clipboard in ##Platform_Name## Grid Component
+description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Clipboard
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Clipboard
+
+The clipboard provides an option to copy selected rows or cells data into the clipboard.
+
+The following list of keyboard shortcuts is supported in the Grid to copy selected rows or cells data into the clipboard.
+
+Interaction keys |Description
+-----|-----
 <kbd>Ctrl + C</kbd> |Copy selected rows or cells data into clipboard.
 <kbd>Ctrl + Shift + H</kbd> |Copy selected rows or cells data with header into clipboard.
 

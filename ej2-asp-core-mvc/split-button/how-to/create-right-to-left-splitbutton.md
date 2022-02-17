@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Create Right To Left Splitbutton of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Create Right To Left Splitbutton in ##Platform_Name## Split Button Component
+description: Learn here all about Create Right To Left Splitbutton in Syncfusion ##Platform_Name## Split Button component and more.
 platform: ej2-asp-core-mvc
 control: Create Right To Left Splitbutton
 publishingplatform: ##Platform_Name##

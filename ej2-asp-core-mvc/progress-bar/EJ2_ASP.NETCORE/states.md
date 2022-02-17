@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about States of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: States in ##Platform_Name## Progress Bar Component
+description: Learn here all about States in Syncfusion ##Platform_Name## Progress Bar component and more.
 platform: ej2-asp-core-mvc
 control: States
 publishingplatform: ##Platform_Name##

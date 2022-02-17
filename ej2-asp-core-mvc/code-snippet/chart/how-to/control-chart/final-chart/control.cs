@@ -12,9 +12,7 @@ public IActionResult Index()
                 new LineChartData { xValue = new DateTime(2010, 01, 01), yValue = 66 },
             };
             ViewBag.dataSource = chartData;
-
-            ViewBag.line = new { width = 0.0001 };
-
+            
             List<ChartStripLine> yAxisStripline = new List<ChartStripLine>();
             ChartStripLine ystripline1 = new ChartStripLine();
             ystripline1.Start = "30";

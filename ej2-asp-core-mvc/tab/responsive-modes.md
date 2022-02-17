@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Responsive Modes of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Responsive Modes in ##Platform_Name## Tab Component
+description: Learn here all about Responsive Modes in Syncfusion ##Platform_Name## Tab component and more.
 platform: ej2-asp-core-mvc
 control: Responsive Modes
 publishingplatform: ##Platform_Name##

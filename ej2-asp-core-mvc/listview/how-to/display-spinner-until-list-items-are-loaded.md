@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Display Spinner Until List Items Are Loaded of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Display Spinner Until List Items Are Loaded in ##Platform_Name## Listview Component
+description: Learn here all about Display Spinner Until List Items Are Loaded in Syncfusion ##Platform_Name## Listview component and more.
 platform: ej2-asp-core-mvc
 control: Display Spinner Until List Items Are Loaded
 publishingplatform: ##Platform_Name##

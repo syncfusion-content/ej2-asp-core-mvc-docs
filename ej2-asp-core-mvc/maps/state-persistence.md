@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about State Persistence of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: State Persistence in ##Platform_Name## Maps Component
+description: Learn here all about State Persistence in Syncfusion ##Platform_Name## Maps component and more.
 platform: ej2-asp-core-mvc
 control: State Persistence
 publishingplatform: ##Platform_Name##

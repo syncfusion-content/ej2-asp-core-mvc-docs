@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Print And Export of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Print And Export in ##Platform_Name## Linear Gauge Component
+description: Learn here all about Print And Export in Syncfusion ##Platform_Name## Linear Gauge component and more.
 platform: ej2-asp-core-mvc
 control: Print And Export
 publishingplatform: ##Platform_Name##
@@ -56,10 +56,10 @@ To use the image export functionality, set the [`AllowImageExport`](https://help
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/print-and-export/export\export/tagHelper %}
+{% include code-snippet/lineargauge/print-and-export/export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/lineargauge/print-and-export/export\export/export.cs %}
+{% include code-snippet/lineargauge/print-and-export/export/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,10 +67,10 @@ To use the image export functionality, set the [`AllowImageExport`](https://help
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/print-and-export/export\export/razor %}
+{% include code-snippet/lineargauge/print-and-export/export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/lineargauge/print-and-export/export\export/export.cs %}
+{% include code-snippet/lineargauge/print-and-export/export/export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

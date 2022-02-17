@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Change Orientation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Change Orientation in ##Platform_Name## Menu Component
+description: Learn here all about Change Orientation in Syncfusion ##Platform_Name## Menu component and more.
 platform: ej2-asp-core-mvc
 control: Change Orientation
 publishingplatform: ##Platform_Name##

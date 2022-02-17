@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Getting Started of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Getting Started with ##Platform_Name## Uploader Component
+description: Checkout and learn about getting started with ##Platform_Name## Uploader component of Syncfusion, and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -125,10 +125,10 @@ You can handle the success and failure actions using the [success](https://help.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/uploader/success_failed/tagHelper %}
+{% include code-snippet/uploader/success-failed/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Success_failed.cs" %}
-{% include code-snippet/uploader/success_failed/success_failed.cs %}
+{% include code-snippet/uploader/success-failed/success-failed.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -136,10 +136,10 @@ You can handle the success and failure actions using the [success](https://help.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/uploader/success_failed/razor %}
+{% include code-snippet/uploader/success-failed/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Success_failed.cs" %}
-{% include code-snippet/uploader/success_failed/success_failed.cs %}
+{% include code-snippet/uploader/success-failed/success-failed.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

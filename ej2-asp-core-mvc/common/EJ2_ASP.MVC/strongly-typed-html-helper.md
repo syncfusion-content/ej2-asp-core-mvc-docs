@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Strongly Typed Html Helper of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Strongly Typed Html Helper in ##Platform_Name## Common Component
+description: Learn here all about Strongly Typed Html Helper in Syncfusion ##Platform_Name## Common component and more.
 platform: ej2-asp-core-mvc
 control: Strongly Typed Html Helper
 publishingplatform: ##Platform_Name##
@@ -43,7 +43,6 @@ public class EditorValue
     public EditorValue() { }
 }
 ```
-
 2. Create an action method that renders the NumericTextBox on the view page, and passes the model to be bound to the view page.
 
 ```csharp
@@ -58,7 +57,6 @@ public ActionResult Index()
     return View(new EditorValue(66));
 }
 ```
-
 3. In View, invoke the strongly typed NumericTextBoxFor helper with the lambda expression to set the default value.
 
 ```html

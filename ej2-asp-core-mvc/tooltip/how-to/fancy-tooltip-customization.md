@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Fancy Tooltip Customization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Fancy Tooltip Customization in ##Platform_Name## Tooltip Component
+description: Learn here all about Fancy Tooltip Customization in Syncfusion ##Platform_Name## Tooltip component and more.
 platform: ej2-asp-core-mvc
 control: Fancy Tooltip Customization
 publishingplatform: ##Platform_Name##

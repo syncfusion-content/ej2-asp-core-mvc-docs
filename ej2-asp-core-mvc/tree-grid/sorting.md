@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Sorting of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Sorting in ##Platform_Name## Tree Grid Component
+description: Learn here all about Sorting in Syncfusion ##Platform_Name## Tree Grid component and more.
 platform: ej2-asp-core-mvc
 control: Sorting
 publishingplatform: ##Platform_Name##
@@ -148,8 +148,6 @@ let treeGridObj: TreeGrid = new TreeGrid({
 treeGridObj.appendTo('#TreeGrid');
 
 ```
-
-{% endtab %}
 
 > The sort comparer function will work only for the local data. -->
 

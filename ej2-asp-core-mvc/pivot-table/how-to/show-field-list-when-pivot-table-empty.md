@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Show Field List When Pivot Table Empty of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Show Field List When Pivot Table Empty in ##Platform_Name## Pivot Table Component
+description: Learn here all about Show Field List When Pivot Table Empty in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Show Field List When Pivot Table Empty
 publishingplatform: ##Platform_Name##

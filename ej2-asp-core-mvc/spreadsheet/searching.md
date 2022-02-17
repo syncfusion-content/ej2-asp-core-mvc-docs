@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Searching of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Searching in ##Platform_Name## Spreadsheet Component
+description: Learn here all about Searching in Syncfusion ##Platform_Name## Spreadsheet component and more.
 platform: ej2-asp-core-mvc
 control: Searching
 publishingplatform: ##Platform_Name##

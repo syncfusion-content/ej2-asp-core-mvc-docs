@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Member Filtering of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Member Filtering in ##Platform_Name## Pivot Table Component
+description: Learn here all about Member Filtering in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Member Filtering
 publishingplatform: ##Platform_Name##

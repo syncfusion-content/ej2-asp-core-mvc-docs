@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Navigation Line of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Navigation Line in ##Platform_Name## Maps Component
+description: Learn here all about Navigation Line in Syncfusion ##Platform_Name## Maps component and more.
 platform: ej2-asp-core-mvc
 control: Navigation Line
 publishingplatform: ##Platform_Name##

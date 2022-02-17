@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Code Behind of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Code Behind in ##Platform_Name## Circular Gauge Component
+description: Learn here all about Code Behind in Syncfusion ##Platform_Name## Circular Gauge component and more.
 platform: ej2-asp-core-mvc
 control: Code Behind
 publishingplatform: ##Platform_Name##

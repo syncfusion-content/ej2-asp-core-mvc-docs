@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Zooming of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Zooming in ##Platform_Name## Chart Component
+description: Learn here all about Zooming in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Zooming
 publishingplatform: ##Platform_Name##

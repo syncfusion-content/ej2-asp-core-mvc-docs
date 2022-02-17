@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Change The First Day Of Week of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Change The First Day Of Week in ##Platform_Name## Calendar Component
+description: Learn here all about Change The First Day Of Week in Syncfusion ##Platform_Name## Calendar component and more.
 platform: ej2-asp-core-mvc
 control: Change The First Day Of Week
 publishingplatform: ##Platform_Name##

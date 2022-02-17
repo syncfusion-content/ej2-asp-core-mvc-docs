@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Ruler of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Ruler in ##Platform_Name## Diagram Component
+description: Learn here all about Ruler in Syncfusion ##Platform_Name## Diagram component and more.
 platform: ej2-asp-core-mvc
 control: Ruler
 publishingplatform: ##Platform_Name##

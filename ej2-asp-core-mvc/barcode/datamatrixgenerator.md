@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Datamatrixgenerator of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Datamatrixgenerator in ##Platform_Name## Barcode Component
+description: Learn here all about Datamatrixgenerator in Syncfusion ##Platform_Name## Barcode component and more.
 platform: ej2-asp-core-mvc
 control: Datamatrixgenerator
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Data Matrix generator
 
-# Data Matrix
+## Data Matrix
 
 DataMatrix Barcode is a two dimensional barcode that consists of a grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the barcode can either be numbers or alphanumeric. They are widely used in printed media such as labels and letters. You can read it easily with the help of a barcode reader and mobile phones.
 

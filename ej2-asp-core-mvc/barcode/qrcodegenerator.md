@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Qrcodegenerator of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Qrcodegenerator in ##Platform_Name## Barcode Component
+description: Learn here all about Qrcodegenerator in Syncfusion ##Platform_Name## Barcode component and more.
 platform: ej2-asp-core-mvc
 control: Qrcodegenerator
 publishingplatform: ##Platform_Name##

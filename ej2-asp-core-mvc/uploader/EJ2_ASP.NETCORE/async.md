@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Async of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Async in ##Platform_Name## Uploader Component
+description: Learn here all about Async in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Async
 publishingplatform: ##Platform_Name##

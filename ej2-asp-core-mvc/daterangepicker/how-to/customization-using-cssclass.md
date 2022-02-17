@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customization Using Cssclass of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customization Using Cssclass in ##Platform_Name## Daterangepicker Component
+description: Learn here all about Customization Using Cssclass in Syncfusion ##Platform_Name## Daterangepicker component and more.
 platform: ej2-asp-core-mvc
 control: Customization Using Cssclass
 publishingplatform: ##Platform_Name##

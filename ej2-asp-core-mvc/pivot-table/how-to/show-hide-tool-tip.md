@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Show Hide Tool Tip of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Show Hide Tool Tip in ##Platform_Name## Pivot Table Component
+description: Learn here all about Show Hide Tool Tip in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Show Hide Tool Tip
 publishingplatform: ##Platform_Name##

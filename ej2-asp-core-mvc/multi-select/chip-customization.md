@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Chip Customization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Chip Customization in ##Platform_Name## Multi Select Component
+description: Learn here all about Chip Customization in Syncfusion ##Platform_Name## Multi Select component and more.
 platform: ej2-asp-core-mvc
 control: Chip Customization
 publishingplatform: ##Platform_Name##

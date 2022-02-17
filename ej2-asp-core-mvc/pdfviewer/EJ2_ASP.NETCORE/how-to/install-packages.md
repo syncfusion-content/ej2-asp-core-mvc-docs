@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Install Packages of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Install Packages in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Install Packages in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Install Packages
 publishingplatform: ##Platform_Name##

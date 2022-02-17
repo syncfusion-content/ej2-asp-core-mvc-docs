@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Nodes of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Nodes in ##Platform_Name## Diagram Component
+description: Learn here all about Nodes in Syncfusion ##Platform_Name## Diagram component and more.
 platform: ej2-asp-core-mvc
 control: Nodes
 publishingplatform: ##Platform_Name##

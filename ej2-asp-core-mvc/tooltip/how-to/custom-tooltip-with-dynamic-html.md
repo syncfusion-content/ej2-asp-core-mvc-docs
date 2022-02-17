@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Custom Tooltip With Dynamic Html of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Custom Tooltip With Dynamic Html in ##Platform_Name## Tooltip Component
+description: Learn here all about Custom Tooltip With Dynamic Html in Syncfusion ##Platform_Name## Tooltip component and more.
 platform: ej2-asp-core-mvc
 control: Custom Tooltip With Dynamic Html
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Trigger Click Event Of Input File From External Button of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Trigger Click Event Of Input File From External Button in ##Platform_Name## Uploader Component
+description: Learn here all about Trigger Click Event Of Input File From External Button in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Trigger Click Event Of Input File From External Button
 publishingplatform: ##Platform_Name##

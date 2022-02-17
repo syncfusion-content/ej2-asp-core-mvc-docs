@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Bpmn Shapes of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Bpmn Shapes in ##Platform_Name## Diagram Component
+description: Learn here all about Bpmn Shapes in Syncfusion ##Platform_Name## Diagram component and more.
 platform: ej2-asp-core-mvc
 control: Bpmn Shapes
 publishingplatform: ##Platform_Name##
@@ -681,7 +681,7 @@ The following table contains various representation of sequence flows.
 | Conditional | ![Conditional Sequence BPMN Shpae](images/Conditional.png) |
 | Normal | ![Normal Sequence BPMN Shpae](images/Normal.png) |
 
-N> The default value for the property `sequence` is **normal**.
+> The default value for the property `sequence` is **normal**.
 
 ## Message
 

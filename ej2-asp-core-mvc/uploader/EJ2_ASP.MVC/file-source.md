@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about File Source of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: File Source in ##Platform_Name## Uploader Component
+description: Learn here all about File Source in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: File Source
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Pointers of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Pointers in ##Platform_Name## Linear Gauge Component
+description: Learn here all about Pointers in Syncfusion ##Platform_Name## Linear Gauge component and more.
 platform: ej2-asp-core-mvc
 control: Pointers
 publishingplatform: ##Platform_Name##

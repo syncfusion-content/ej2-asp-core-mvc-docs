@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Template Engine of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Template Engine in ##Platform_Name## Common Component
+description: Learn here all about Template Engine in Syncfusion ##Platform_Name## Common component and more.
 platform: ej2-asp-core-mvc
 control: Template Engine
 publishingplatform: ##Platform_Name##
@@ -18,6 +18,11 @@ be used for rendering DOM element using desired data.
 
 `compile` method from `ej2-base` can be used to convert our template strings into
 executable functions.
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+{% include code-snippet/common/template-engine/compiling/razor %}
+{% endhighlight %}{% endtabs %}
 
 ## Available Template Syntax
 
@@ -45,7 +50,8 @@ Custom helper function can be defined and passed to `compile` function. Refer to
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Custom-helper.cs" %}
+{% highlight c# tabtitle="CSHTML" %}
+{% include code-snippet/common/template-engine/custom-helper/razor %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 

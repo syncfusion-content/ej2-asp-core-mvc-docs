@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Date Time Range of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Date Time Range in ##Platform_Name## Datetimepicker Component
+description: Learn here all about Date Time Range in Syncfusion ##Platform_Name## Datetimepicker component and more.
 platform: ej2-asp-core-mvc
 control: Date Time Range
 publishingplatform: ##Platform_Name##

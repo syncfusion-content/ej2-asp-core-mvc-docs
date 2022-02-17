@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Show Items Count In Group Header of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Show Items Count In Group Header in ##Platform_Name## Listview Component
+description: Learn here all about Show Items Count In Group Header in Syncfusion ##Platform_Name## Listview component and more.
 platform: ej2-asp-core-mvc
 control: Show Items Count In Group Header
 publishingplatform: ##Platform_Name##

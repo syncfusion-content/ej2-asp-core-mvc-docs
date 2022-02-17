@@ -1,13 +1,29 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Header Content of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Header Content in ##Platform_Name## Card Component
+description: Learn here all about Header Content in Syncfusion ##Platform_Name## Card component and more.
 platform: ej2-asp-core-mvc
 control: Header Content
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Header and Content
+
+## Header
+
+The Card can be created with header title, sub title and images. For adding header you need to create `div` element with the class `e-card-header` added.
+
+Card provides below elements and corresponding class definitions to include header.
+
+Elements   | Description
+------------ | -------------
+Caption | It is the wrapper element to include title and sub-title.
+Image | It supports to include header images with the specified dimensions.
+
+Class   | Description
+------------ | -------------
 `e-card-header-caption` | To group the title and subtitle within the header which acts as wrapper.
 `e-card-header-title` |  Main title text with in the header.
 `e-card-sub-title` | A sub-title within the header.
@@ -32,10 +48,10 @@ Card header has an option for adding images in the header. It is aligned with ei
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/card_header/tagHelper %}
+{% include code-snippet/card/card-header/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_header/controller.cs %}
+{% include code-snippet/card/card-header/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -43,10 +59,10 @@ Card header has an option for adding images in the header. It is aligned with ei
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/card/card_header/razor %}
+{% include code-snippet/card/card-header/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_header/controller.cs %}
+{% include code-snippet/card/card-header/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -64,10 +80,10 @@ Content in Card holds texts, images, links and all possible HTML elements. Its a
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/card_header_content/tagHelper %}
+{% include code-snippet/card/card-header-content/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_header_content/controller.cs %}
+{% include code-snippet/card/card-header-content/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -75,10 +91,10 @@ Content in Card holds texts, images, links and all possible HTML elements. Its a
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/card/card_header_content/razor %}
+{% include code-snippet/card/card-header-content/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_header_content/controller.cs %}
+{% include code-snippet/card/card-header-content/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

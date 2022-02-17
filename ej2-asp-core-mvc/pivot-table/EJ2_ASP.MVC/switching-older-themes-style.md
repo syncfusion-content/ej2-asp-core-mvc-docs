@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Switching Older Themes Style of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Switching Older Themes Style in ##Platform_Name## Pivot Table Component
+description: Learn here all about Switching Older Themes Style in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Switching Older Themes Style
 publishingplatform: ##Platform_Name##

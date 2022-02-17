@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Multiple Selection of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Multiple Selection in ##Platform_Name## File Manager Component
+description: Learn here all about Multiple Selection in Syncfusion ##Platform_Name## File Manager component and more.
 platform: ej2-asp-core-mvc
 control: Multiple Selection
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Use Case Scenarios of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Use Case Scenarios in ##Platform_Name## Menu Component
+description: Learn here all about Use Case Scenarios in Syncfusion ##Platform_Name## Menu component and more.
 platform: ej2-asp-core-mvc
 control: Use Case Scenarios
 publishingplatform: ##Platform_Name##

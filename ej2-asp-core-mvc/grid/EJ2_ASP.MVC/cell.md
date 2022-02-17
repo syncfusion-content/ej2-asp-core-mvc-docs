@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Cell of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Cell in ##Platform_Name## Grid Component
+description: Learn here all about Cell in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Cell
 publishingplatform: ##Platform_Name##
@@ -82,7 +82,7 @@ There are three types of [`WrapMode`](https://help.syncfusion.com/cr/aspnetcore-
 * **Header**: Auto wrap will be enabled only for the header.
 * **Content**: Auto wrap will be enabled only for the content.
 
- N> When a column width is not specified, then auto wrap of columns will be adjusted with respect to the grid's width.
+ > When a column width is not specified, then auto wrap of columns will be adjusted with respect to the grid's width.
 
 In the following example, the [`WrapMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridTextWrapSettings.html#Syncfusion_EJ2_Grids_GridTextWrapSettings_WrapMode) is set to **Content**.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize The Edit Dialog of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize The Edit Dialog in ##Platform_Name## Grid Component
+description: Learn here all about Customize The Edit Dialog in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Customize The Edit Dialog
 publishingplatform: ##Platform_Name##

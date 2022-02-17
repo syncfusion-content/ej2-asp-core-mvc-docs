@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize The Daterangepicker Day Header of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize The Daterangepicker Day Header in ##Platform_Name## Daterangepicker Component
+description: Learn here all about Customize The Daterangepicker Day Header in Syncfusion ##Platform_Name## Daterangepicker component and more.
 platform: ej2-asp-core-mvc
 control: Customize The Daterangepicker Day Header
 publishingplatform: ##Platform_Name##

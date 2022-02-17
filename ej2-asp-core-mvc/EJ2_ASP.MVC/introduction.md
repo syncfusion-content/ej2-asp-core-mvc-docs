@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Introduction of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Introduction in ##Platform_Name## Component
+description: Learn here all about Introduction in Syncfusion ##Platform_Name## component and more.
 platform: ej2-asp-core-mvc
 control: Introduction
 publishingplatform: ##Platform_Name##
@@ -36,4 +36,4 @@ self-help resources mentioned above then please contact us by creating a support
 in [our support site](http://syncfusion.com/support) or ask your query.
 with tag `syncfusion-ej2`.
 
-N> Syncfusion does not collect any kind of information when our components are used in customer applications.
+> Syncfusion does not collect any kind of information when our components are used in customer applications.

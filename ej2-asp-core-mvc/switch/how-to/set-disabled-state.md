@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Set Disabled State of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Set Disabled State in ##Platform_Name## Switch Component
+description: Learn here all about Set Disabled State in Syncfusion ##Platform_Name## Switch component and more.
 platform: ej2-asp-core-mvc
 control: Set Disabled State
 publishingplatform: ##Platform_Name##

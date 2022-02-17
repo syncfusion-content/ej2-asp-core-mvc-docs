@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Formatting of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Formatting in ##Platform_Name## Spreadsheet Component
+description: Learn here all about Formatting in Syncfusion ##Platform_Name## Spreadsheet component and more.
 platform: ej2-asp-core-mvc
 control: Formatting
 publishingplatform: ##Platform_Name##

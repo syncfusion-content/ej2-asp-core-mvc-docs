@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Immutable Mode of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Immutable Mode in ##Platform_Name## Grid Component
+description: Learn here all about Immutable Mode in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Immutable Mode
 publishingplatform: ##Platform_Name##

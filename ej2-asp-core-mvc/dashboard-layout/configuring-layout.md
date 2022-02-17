@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Configuring Layout of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Configuring Layout in ##Platform_Name## Dashboard Layout Component
+description: Learn here all about Configuring Layout in Syncfusion ##Platform_Name## Dashboard Layout component and more.
 platform: ej2-asp-core-mvc
 control: Configuring Layout
 publishingplatform: ##Platform_Name##
@@ -97,7 +97,7 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-% include code-snippet/dashboard-layout/graphical-representation/tagHelper %}
+{% include code-snippet/dashboard-layout/graphical-representation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
 {% include code-snippet/dashboard-layout/graphical-representation/HomeController.cs %}

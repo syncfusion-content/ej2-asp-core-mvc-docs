@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Smithchart Print of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Smithchart Print in ##Platform_Name## Smithchart Component
+description: Learn here all about Smithchart Print in Syncfusion ##Platform_Name## Smithchart component and more.
 platform: ej2-asp-core-mvc
 control: Smithchart Print
 publishingplatform: ##Platform_Name##

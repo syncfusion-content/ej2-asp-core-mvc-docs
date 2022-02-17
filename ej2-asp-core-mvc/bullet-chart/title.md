@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Title of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Title in ##Platform_Name## Bullet Chart Component
+description: Learn here all about Title in Syncfusion ##Platform_Name## Bullet Chart component and more.
 platform: ej2-asp-core-mvc
 control: Title
 publishingplatform: ##Platform_Name##

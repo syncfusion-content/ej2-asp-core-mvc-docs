@@ -1,13 +1,22 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Context Menu of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Context Menu in ##Platform_Name## Tree Grid Component
+description: Learn here all about Context Menu in Syncfusion ##Platform_Name## Tree Grid component and more.
 platform: ej2-asp-core-mvc
 control: Context Menu
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Context menu
+
+The TreeGrid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`ContextMenuItems`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ContextMenuItems.html).
+
+The default items are in the following table.
+
+Items| Description
+----|----
 `AutoFit`|  Auto fit the current column.
 `AutoFitAll` | Auto fit all columns.
 `Edit`|  Edit the current record.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Localization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Localization in ##Platform_Name## Common Component
+description: Learn here all about Localization in Syncfusion ##Platform_Name## Common component and more.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -48,4 +48,4 @@ Current locale can be changed for all the Essential JS 2 components in your appl
 </script>
 ```
 
-N> Before changing a culture globally, ensure that locale text for the concerned culture is loaded through `L10n.load` function.
+> Before changing a culture globally, ensure that locale text for the concerned culture is loaded through `L10n.load` function.

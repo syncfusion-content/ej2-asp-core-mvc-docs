@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Resizing of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Resizing in ##Platform_Name## Splitter Component
+description: Learn here all about Resizing in Syncfusion ##Platform_Name## Splitter component and more.
 platform: ej2-asp-core-mvc
 control: Resizing
 publishingplatform: ##Platform_Name##

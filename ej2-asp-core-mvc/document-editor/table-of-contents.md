@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Table Of Contents of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Table Of Contents in ##Platform_Name## Document Editor Component
+description: Learn here all about Table Of Contents in Syncfusion ##Platform_Name## Document Editor component and more.
 platform: ej2-asp-core-mvc
 control: Table Of Contents
 publishingplatform: ##Platform_Name##

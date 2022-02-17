@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Open And Edit The Uploaded Files of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Open And Edit The Uploaded Files in ##Platform_Name## Uploader Component
+description: Learn here all about Open And Edit The Uploaded Files in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Open And Edit The Uploaded Files
 publishingplatform: ##Platform_Name##

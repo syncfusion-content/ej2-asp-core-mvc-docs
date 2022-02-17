@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Chart Series of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Chart Series in ##Platform_Name## Chart Component
+description: Learn here all about Chart Series in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Chart Series
 publishingplatform: ##Platform_Name##

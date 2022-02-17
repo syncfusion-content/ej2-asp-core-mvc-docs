@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Complex Data Binding of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Complex Data Binding in ##Platform_Name## Grid Component
+description: Learn here all about Complex Data Binding in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Complex Data Binding
 publishingplatform: ##Platform_Name##

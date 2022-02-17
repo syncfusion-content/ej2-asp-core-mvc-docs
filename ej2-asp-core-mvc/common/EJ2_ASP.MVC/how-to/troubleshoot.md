@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Troubleshoot of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Troubleshoot in ##Platform_Name## Common Component
+description: Learn here all about Troubleshoot in Syncfusion ##Platform_Name## Common component and more.
 platform: ej2-asp-core-mvc
 control: Troubleshoot
 publishingplatform: ##Platform_Name##
@@ -28,12 +28,12 @@ This error is thrown due to not including the required target library for the Ty
 
     By adding the required target `dom,es2015` library in `TypeScriptLib` MSBuild property in your `.csproj` file as like below.
 
-    ```csproj
+    ```cs
 
         <TypeScriptLib>dom,es2015</TypeScriptLib>
     ```
 
-    N> If `tsconfig.json` exists in your project, the compiler will prioritize using the specified configuration options from `tsconfig.json` file. Otherwise, it’ll use the specified configuration options from the project file (`.csproj`).
+    > If `tsconfig.json` exists in your project, the compiler will prioritize using the specified configuration options from `tsconfig.json` file. Otherwise, it’ll use the specified configuration options from the project file (`.csproj`).
 
     Refer [KB Link](https://www.syncfusion.com/kb/10136/typescript-library-upgrade-in-asp-net-mvc-project) for more details.
 

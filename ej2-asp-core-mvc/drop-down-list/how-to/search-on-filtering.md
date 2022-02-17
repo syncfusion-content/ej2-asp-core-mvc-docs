@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Search On Filtering of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Search On Filtering in ##Platform_Name## Drop Down List Component
+description: Learn here all about Search On Filtering in Syncfusion ##Platform_Name## Drop Down List component and more.
 platform: ej2-asp-core-mvc
 control: Search On Filtering
 publishingplatform: ##Platform_Name##

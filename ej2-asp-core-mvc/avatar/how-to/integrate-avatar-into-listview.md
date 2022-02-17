@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Integrate Avatar Into Listview of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Integrate Avatar Into Listview in ##Platform_Name## Avatar Component
+description: Learn here all about Integrate Avatar Into Listview in Syncfusion ##Platform_Name## Avatar component and more.
 platform: ej2-asp-core-mvc
 control: Integrate Avatar Into Listview
 publishingplatform: ##Platform_Name##

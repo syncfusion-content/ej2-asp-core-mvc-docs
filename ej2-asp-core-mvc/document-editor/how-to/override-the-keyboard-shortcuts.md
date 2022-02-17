@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Override The Keyboard Shortcuts of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Override The Keyboard Shortcuts in ##Platform_Name## Document Editor Component
+description: Learn here all about Override The Keyboard Shortcuts in Syncfusion ##Platform_Name## Document Editor component and more.
 platform: ej2-asp-core-mvc
 control: Override The Keyboard Shortcuts
 publishingplatform: ##Platform_Name##

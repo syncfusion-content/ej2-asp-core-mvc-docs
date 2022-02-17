@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Icons And Templates of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Icons And Templates in ##Platform_Name## List Box Component
+description: Learn here all about Icons And Templates in Syncfusion ##Platform_Name## List Box component and more.
 platform: ej2-asp-core-mvc
 control: Icons And Templates
 publishingplatform: ##Platform_Name##

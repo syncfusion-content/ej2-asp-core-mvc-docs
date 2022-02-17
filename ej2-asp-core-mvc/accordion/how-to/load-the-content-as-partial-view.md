@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Load The Content As Partial View of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Load The Content As Partial View in ##Platform_Name## Accordion Component
+description: Learn here all about Load The Content As Partial View in Syncfusion ##Platform_Name## Accordion component and more.
 platform: ej2-asp-core-mvc
 control: Load The Content As Partial View
 publishingplatform: ##Platform_Name##

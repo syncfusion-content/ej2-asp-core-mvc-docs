@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Selection of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Selection in ##Platform_Name## List Box Component
+description: Learn here all about Selection in Syncfusion ##Platform_Name## List Box component and more.
 platform: ej2-asp-core-mvc
 control: Selection
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Add An Icons To Dialog Buttons of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Add An Icons To Dialog Buttons in ##Platform_Name## Dialog Component
+description: Learn here all about Add An Icons To Dialog Buttons in Syncfusion ##Platform_Name## Dialog component and more.
 platform: ej2-asp-core-mvc
 control: Add An Icons To Dialog Buttons
 publishingplatform: ##Platform_Name##

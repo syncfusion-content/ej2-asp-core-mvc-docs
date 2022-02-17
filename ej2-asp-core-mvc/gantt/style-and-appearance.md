@@ -1,13 +1,20 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Style And Appearance of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Style And Appearance in ##Platform_Name## Gantt Component
+description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Styling
+
+To modify the Gantt Chart appearance, you need to override the default CSS of gantt chart. Please find the list of CSS classes and its corresponding section in Gantt Chart. Also, you have an option to create your own custom theme for all the JavaScript controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+
+Section | CSS Class | Purpose of Class
+-----|-----|-----
 **Root**|e-gantt|This class is in the root element (div) of the gantt chart control.
 **Header**|e-gridheader|This class is added in the root element of header element. In this class, You can override thin line between header and content of the gantt chart.
 ||e-table|This class is added at 'table' of the gantt chart header. This CSS class makes table width as 100 %.

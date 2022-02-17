@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Getting Started of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Getting Started with ##Platform_Name## Sidebar Component
+description: Checkout and learn about getting started with ##Platform_Name## Sidebar component of Syncfusion, and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -188,10 +188,10 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/document_click/tagHelper %}
+{% include code-snippet/sidebar/document-click/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Document-click.cs" %}
-{% include code-snippet/sidebar/document_click/document-click.cs %}
+{% include code-snippet/sidebar/document-click/document-click.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -199,10 +199,10 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sidebar/document_click/razor %}
+{% include code-snippet/sidebar/document-click/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Document-click.cs" %}
-{% include code-snippet/sidebar/document_click/document-click.cs %}
+{% include code-snippet/sidebar/document-click/document-click.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -211,7 +211,7 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 Output be like the below.
 
-![Sidebar Sample](./images/document_click.png)
+![Sidebar Sample](./imagesdocument-click.png)
 
 ## Enable gestures
 

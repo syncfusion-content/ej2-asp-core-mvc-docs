@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Print of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Print in ##Platform_Name## Tree Grid Component
+description: Learn here all about Print in Syncfusion ##Platform_Name## Tree Grid component and more.
 platform: ej2-asp-core-mvc
 control: Print
 publishingplatform: ##Platform_Name##

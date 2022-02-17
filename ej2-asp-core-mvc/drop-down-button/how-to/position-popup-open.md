@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Position Popup Open of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Position Popup Open in ##Platform_Name## Drop Down Button Component
+description: Learn here all about Position Popup Open in Syncfusion ##Platform_Name## Drop Down Button component and more.
 platform: ej2-asp-core-mvc
 control: Position Popup Open
 publishingplatform: ##Platform_Name##

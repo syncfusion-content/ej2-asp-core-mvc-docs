@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customizing Loading Indicator of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customizing Loading Indicator in ##Platform_Name## Pivot Table Component
+description: Learn here all about Customizing Loading Indicator in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Customizing Loading Indicator
 publishingplatform: ##Platform_Name##

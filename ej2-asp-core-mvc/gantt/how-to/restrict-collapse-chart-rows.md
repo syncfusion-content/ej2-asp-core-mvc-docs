@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Restrict Collapse Chart Rows of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Restrict Collapse Chart Rows in ##Platform_Name## Gantt Component
+description: Learn here all about Restrict Collapse Chart Rows in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Restrict Collapse Chart Rows
 publishingplatform: ##Platform_Name##

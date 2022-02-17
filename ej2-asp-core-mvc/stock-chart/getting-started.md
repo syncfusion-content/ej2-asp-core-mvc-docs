@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Getting Started of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Getting Started with ##Platform_Name## Stock Chart Component
+description: Checkout and learn about getting started with ##Platform_Name## Stock Chart component of Syncfusion, and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -83,10 +83,10 @@ This section explains how to plot below JSON data to the  Stock Chart.Please fin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/getting-started/populateData/tagHelper %}
+{% include code-snippet/stock-chart/getting-started/populateData/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PopularData.cs" %}
-{% include code-snippet/getting-started/populateData/populateData.cs %}
+{% include code-snippet/stock-chart/getting-started/populateData/populateData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,10 +94,10 @@ This section explains how to plot below JSON data to the  Stock Chart.Please fin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/getting-started/populateData/razor %}
+{% include code-snippet/stock-chart/getting-started/populateData/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PopulateData.cs" %}
-{% include code-snippet/getting-started/populateData/populateData.cs %}
+{% include code-snippet/stock-chart/getting-started/populateData/populateData.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

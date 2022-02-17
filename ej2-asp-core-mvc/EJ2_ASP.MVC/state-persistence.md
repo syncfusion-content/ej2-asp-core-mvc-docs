@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about State Persistence of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: State Persistence in ##Platform_Name## Component
+description: Learn here all about State Persistence in Syncfusion ##Platform_Name## component and more.
 platform: ej2-asp-core-mvc
 control: State Persistence
 publishingplatform: ##Platform_Name##
@@ -18,13 +18,15 @@ enabled persistence to grid component in the following code.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Persistence.cs" %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/common/persistence/tagHelper %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Persistence.cs" %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/common/persistence/razor %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 

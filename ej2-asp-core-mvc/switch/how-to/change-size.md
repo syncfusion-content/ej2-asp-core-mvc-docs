@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Change Size of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Change Size in ##Platform_Name## Switch Component
+description: Learn here all about Change Size in Syncfusion ##Platform_Name## Switch component and more.
 platform: ej2-asp-core-mvc
 control: Change Size
 publishingplatform: ##Platform_Name##

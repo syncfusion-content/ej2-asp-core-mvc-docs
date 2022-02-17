@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Show Different Types Of Toast of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Show Different Types Of Toast in ##Platform_Name## Toast Component
+description: Learn here all about Show Different Types Of Toast in Syncfusion ##Platform_Name## Toast component and more.
 platform: ej2-asp-core-mvc
 control: Show Different Types Of Toast
 publishingplatform: ##Platform_Name##

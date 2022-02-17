@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Virtual Scroll of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Virtual Scroll in ##Platform_Name## Gantt Component
+description: Learn here all about Virtual Scroll in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Virtual Scroll
 publishingplatform: ##Platform_Name##

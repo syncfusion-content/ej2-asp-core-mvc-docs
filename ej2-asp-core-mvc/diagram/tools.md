@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Tools of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Tools in ##Platform_Name## Diagram Component
+description: Learn here all about Tools in Syncfusion ##Platform_Name## Diagram component and more.
 platform: ej2-asp-core-mvc
 control: Tools
 publishingplatform: ##Platform_Name##

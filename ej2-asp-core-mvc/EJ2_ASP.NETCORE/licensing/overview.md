@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Overview of Syncfusion Essential ##Platform_Name## controls which is powered by Essential JS2.
+title: Overview in ##Platform_Name## Ej2_asp.netcore Component
+description: Learn here all about Overview in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
 platform: ej2-asp-core-mvc
 control: Overview
 publishingplatform: ##Platform_Name##

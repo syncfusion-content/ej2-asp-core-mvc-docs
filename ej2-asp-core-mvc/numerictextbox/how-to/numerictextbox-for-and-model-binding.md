@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Numerictextbox For And Model Binding of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Numerictextbox For And Model Binding in ##Platform_Name## Numerictextbox Component
+description: Learn here all about Numerictextbox For And Model Binding in Syncfusion ##Platform_Name## Numerictextbox component and more.
 platform: ej2-asp-core-mvc
 control: Numerictextbox For And Model Binding
 publishingplatform: ##Platform_Name##

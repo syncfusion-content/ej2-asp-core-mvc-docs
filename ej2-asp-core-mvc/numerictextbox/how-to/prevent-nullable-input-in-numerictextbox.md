@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Prevent Nullable Input In Numerictextbox of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Prevent Nullable Input In Numerictextbox in ##Platform_Name## Numerictextbox Component
+description: Learn here all about Prevent Nullable Input In Numerictextbox in Syncfusion ##Platform_Name## Numerictextbox component and more.
 platform: ej2-asp-core-mvc
 control: Prevent Nullable Input In Numerictextbox
 publishingplatform: ##Platform_Name##

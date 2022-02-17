@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Custom Indication of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Custom Indication in ##Platform_Name## In Place Editor Component
+description: Learn here all about Custom Indication in Syncfusion ##Platform_Name## In Place Editor component and more.
 platform: ej2-asp-core-mvc
 control: Custom Indication
 publishingplatform: ##Platform_Name##

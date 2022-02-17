@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Progressbar of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Progressbar in ##Platform_Name## Uploader Component
+description: Learn here all about Customize Progressbar in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Customize Progressbar
 publishingplatform: ##Platform_Name##

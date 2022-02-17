@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Templates of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Templates in ##Platform_Name## Breadcrumb Component
+description: Learn here all about Templates in Syncfusion ##Platform_Name## Breadcrumb component and more.
 platform: ej2-asp-core-mvc
 control: Templates
 publishingplatform: ##Platform_Name##
@@ -77,4 +77,4 @@ In the  following example, the separators are customized with icons using `separ
 
 Output be like the below.
 
-![Breadcrumb Sample](./images/separator-template.PNG)
+![Breadcrumb Sample](./images/separator-temp.PNG)

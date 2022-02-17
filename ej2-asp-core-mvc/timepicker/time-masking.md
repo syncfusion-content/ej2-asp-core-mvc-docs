@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Time Masking of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Time Masking in ##Platform_Name## Timepicker Component
+description: Learn here all about Time Masking in Syncfusion ##Platform_Name## Timepicker component and more.
 platform: ej2-asp-core-mvc
 control: Time Masking
 publishingplatform: ##Platform_Name##
@@ -19,9 +19,6 @@ TimePicker has `enableMask` property that provides the option to enable the buil
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timepicker/mask-module/mask-input/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="" %}
-{% include code-snippet/timepicker/mask-module/mask-input/ %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -29,9 +26,6 @@ TimePicker has `enableMask` property that provides the option to enable the buil
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/timepicker/mask-module/mask-input/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="" %}
-{% include code-snippet/timepicker/mask-module/mask-input/ %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

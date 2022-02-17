@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Paste Cleanup of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Paste Cleanup in ##Platform_Name## Rich Text Editor Component
+description: Learn here all about Paste Cleanup in Syncfusion ##Platform_Name## Rich Text Editor component and more.
 platform: ej2-asp-core-mvc
 control: Paste Cleanup
 publishingplatform: ##Platform_Name##

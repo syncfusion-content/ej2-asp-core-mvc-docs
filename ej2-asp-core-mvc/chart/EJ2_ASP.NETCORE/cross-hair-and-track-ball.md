@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Cross Hair And Track Ball of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Cross Hair And Track Ball in ##Platform_Name## Chart Component
+description: Learn here all about Cross Hair And Track Ball in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Cross Hair And Track Ball
 publishingplatform: ##Platform_Name##

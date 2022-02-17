@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Set Different Work Hours of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Set Different Work Hours in ##Platform_Name## Schedule Component
+description: Learn here all about Set Different Work Hours in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Set Different Work Hours
 publishingplatform: ##Platform_Name##

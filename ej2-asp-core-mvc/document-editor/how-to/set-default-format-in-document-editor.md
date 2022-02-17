@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Set Default Format In Document Editor of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Set Default Format In Document Editor in ##Platform_Name## Document Editor Component
+description: Learn here all about Set Default Format In Document Editor in Syncfusion ##Platform_Name## Document Editor component and more.
 platform: ej2-asp-core-mvc
 control: Set Default Format In Document Editor
 publishingplatform: ##Platform_Name##

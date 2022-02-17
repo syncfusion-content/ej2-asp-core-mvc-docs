@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Display A Dialog With Custom Position of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Display A Dialog With Custom Position in ##Platform_Name## Dialog Component
+description: Learn here all about Display A Dialog With Custom Position in Syncfusion ##Platform_Name## Dialog component and more.
 platform: ej2-asp-core-mvc
 control: Display A Dialog With Custom Position
 publishingplatform: ##Platform_Name##
