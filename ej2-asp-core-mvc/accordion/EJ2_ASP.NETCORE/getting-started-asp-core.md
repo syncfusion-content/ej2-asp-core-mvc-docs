@@ -1,84 +1,77 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Getting Started Asp Core of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
-platform: ej2-asp-core-mvc
-control: Getting Started Asp Core
-publishingplatform: ##Platform_Name##
+title: Getting Started with ASP.NET Core Accordion Component | Syncfusion
+description: Checkout and learn about getting started with Accordion component using tag helper in ASP.NET Core application.
+platform: ASP.NET Core
+control: Accordion
 documentation: ug
 ---
 
+# Getting Started with ASP.NET Core Accordion Component
 
-# Getting Started
+This section briefly explains about how to include [ASP.NET Core Accordion](https://www.syncfusion.com/aspnet-core-ui-controls/accordion) component in your ASP.NET Core application using Visual Studio.
 
- This section briefly explains about how to include a simple Accordion in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/) page for introduction part of the system requirements and configure the common specifications.
+## Prerequisites
 
-## Adding component to the Application
+[System requirements for ASP.NET Core components](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
+
+## Create ASP.NET Core web application with Razor pages
+
+ * [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
+
+ * [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
+
+ ## Install ASP.NET Core package in the application
+
+Syncfusion ASP.NET Core components are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core components in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
+
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+
+## Add Syncfusion ASP.NET Core Tag Helper
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+
+    ```cshtml
+    @addTagHelper *, Syncfusion.EJ2
+    ```
+
+    
+## Add ASP.NET Core Accordion Component
+
+Now, add the Syncfusion ASP.NET Core Calendar tag helper in `~/Pages/Index.cshtml` page.
+
+{% aspTab template="accordion/getting-started/data", sourceFiles="data.cs" %}
+
+{% endaspTab %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Calendar component will be rendered in the default web browser.
+
+    ![ASP.NET Core Accordion component - Getting Started](../../accordion/images/accordion.PNG)
+    
+## Adding Accordion component to the Application
 
 * Now open your view page to render Accordion component.
 
-{% if page.publishingplatform == "aspnet-core" %}
+{% aspTab template="accordion/getting-started/data", sourceFiles="data.cs" %}
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/accordion/getting-started/data/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/accordion/getting-started/data/data.cs %}
-{% endhighlight %}
-{% endtabs %}
+{% endaspTab %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![ASP.NET Core Accordion - Getting Started](../../accordion/images/accordion.PNG)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/accordion/getting-started/data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/accordion/getting-started/data/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+## Adding Accordion component using content template
 
-
-
-Output be like the below.
-
-![Default accordion](../../accordion/images/accordion.PNG)
-
-## Render the Accordion using content template
-
-You can bind any data in Accordion items, by simply using the content template property in ASP.NET Accordion. Accordion is already provided with the content template support and hence we can utilize this support to load the other HTML elements or as per your requirement
+Bind any data by simply using the content template property in ASP.NET Core Accordion. Accordion is already provided with the content template support and hence you can utilize this support to load the other HTML elements or as per your requirement
 
 In the below demo, the Accordion items are given with [chart](../../chart), [grid](../../grid), [calender](../../calendar) as their content using the content template.
 
-{% if page.publishingplatform == "aspnet-core" %}
+{% aspTab template="accordion/getting-started/contenttemplate", sourceFiles="contenttemplate.cs" %}
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/accordion/getting-started/contenttemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Contenttemplate.cs" %}
-{% include code-snippet/accordion/getting-started/contenttemplate/contenttemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
+{% endaspTab %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![ASP.NET Core Accordion using content template](../../accordion/images/contenttemplate.PNG)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/accordion/getting-started/contenttemplate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Contenttemplate.cs" %}
-{% include code-snippet/accordion/getting-started/contenttemplate/contenttemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+> Also render accordion without using `contentTemplate` which can be referred [here](../../accordion/how-to/set-the-nested-accordion).
 
+## See Also
 
-
-Output be like the below.
-
-![content template](../../accordion/images/contenttemplate.PNG)
-
-You can also render accordion without using `contentTemplate` which can be referred [here](../../accordion/how-to/set-the-nested-accordion).
+1. [Getting Started with Syncfusion ASP.NET Core for client-side in Visual Studio](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+2. [Getting Started with Syncfusion ASP.NET Core using Project Template](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
