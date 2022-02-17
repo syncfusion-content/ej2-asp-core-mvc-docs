@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Treemap Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Treemap component and more.
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##

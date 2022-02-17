@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Access Editor Components in ##Platform_Name## Grid Component
-description: Learn here all about Access Editor Components in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Access Editor Components in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Access Editor Components
 publishingplatform: ##Platform_Name##

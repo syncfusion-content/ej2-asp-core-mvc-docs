@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Resource Generator in ##Platform_Name## Common Component
-description: Learn here all about Custom Resource Generator in Syncfusion ##Platform_Name## Common component and more.
+description: Learn here all about Custom Resource Generator in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Custom Resource Generator
 publishingplatform: ##Platform_Name##

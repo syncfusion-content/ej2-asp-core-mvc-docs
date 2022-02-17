@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting Dimension in ##Platform_Name## Tooltip Component
-description: Learn here all about Setting Dimension in Syncfusion ##Platform_Name## Tooltip component and more.
+description: Learn here all about Setting Dimension in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Setting Dimension
 publishingplatform: ##Platform_Name##

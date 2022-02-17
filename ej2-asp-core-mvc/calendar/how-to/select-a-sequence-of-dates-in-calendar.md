@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Select A Sequence Of Dates In Calendar in ##Platform_Name## Calendar Component
-description: Learn here all about Select A Sequence Of Dates In Calendar in Syncfusion ##Platform_Name## Calendar component and more.
+description: Learn here all about Select A Sequence Of Dates In Calendar in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Select A Sequence Of Dates In Calendar
 publishingplatform: ##Platform_Name##

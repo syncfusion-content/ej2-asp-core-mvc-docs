@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Types in ##Platform_Name## Badge Component
-description: Learn here all about Types in Syncfusion ##Platform_Name## Badge component and more.
+description: Learn here all about Types in Syncfusion ##Platform_Name## Badge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
 publishingplatform: ##Platform_Name##

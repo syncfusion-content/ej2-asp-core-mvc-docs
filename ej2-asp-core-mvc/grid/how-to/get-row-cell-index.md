@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get Row Cell Index in ##Platform_Name## Grid Component
-description: Learn here all about Get Row Cell Index in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Get Row Cell Index in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Get Row Cell Index
 publishingplatform: ##Platform_Name##

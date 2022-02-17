@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Icons And Navigation in ##Platform_Name## Context Menu Component
-description: Learn here all about Icons And Navigation in Syncfusion ##Platform_Name## Context Menu component and more.
+description: Learn here all about Icons And Navigation in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons And Navigation
 publishingplatform: ##Platform_Name##

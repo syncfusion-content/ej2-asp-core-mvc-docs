@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Upgrading Syncfusion Aspnetcore Extensions in ##Platform_Name## Ej2_asp.netcore Component
-description: Learn here all about Upgrading Syncfusion Aspnetcore Extensions in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
+title: Upgrading Syncfusion Aspnetcore Extensions in ##Platform_Name## Component
+description: Learn here all about Upgrading Syncfusion Aspnetcore Extensions in Syncfusion ##Platform_Name## component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Upgrading Syncfusion Aspnetcore Extensions
 publishingplatform: ##Platform_Name##

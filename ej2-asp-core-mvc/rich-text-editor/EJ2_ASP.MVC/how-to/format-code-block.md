@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Format Code Block in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about Format Code Block in Syncfusion ##Platform_Name## Rich Text Editor component and more.
+description: Learn here all about Format Code Block in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Format Code Block
 publishingplatform: ##Platform_Name##

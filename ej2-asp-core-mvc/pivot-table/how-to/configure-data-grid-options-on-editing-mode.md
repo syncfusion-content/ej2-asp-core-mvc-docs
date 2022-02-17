@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Data Grid Options On Editing Mode in ##Platform_Name## Pivot Table Component
-description: Learn here all about Configure Data Grid Options On Editing Mode in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about Configure Data Grid Options On Editing Mode in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Configure Data Grid Options On Editing Mode
 publishingplatform: ##Platform_Name##

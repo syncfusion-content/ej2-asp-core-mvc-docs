@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Apply Conditional Formatting For Specific Row Or Column in ##Platform_Name## Pivot Table Component
-description: Learn here all about Apply Conditional Formatting For Specific Row Or Column in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about Apply Conditional Formatting For Specific Row Or Column in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Apply Conditional Formatting For Specific Row Or Column
 publishingplatform: ##Platform_Name##

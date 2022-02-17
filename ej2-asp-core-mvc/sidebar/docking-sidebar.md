@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docking Sidebar in ##Platform_Name## Sidebar Component
-description: Learn here all about Docking Sidebar in Syncfusion ##Platform_Name## Sidebar component and more.
+description: Learn here all about Docking Sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Docking Sidebar
 publishingplatform: ##Platform_Name##

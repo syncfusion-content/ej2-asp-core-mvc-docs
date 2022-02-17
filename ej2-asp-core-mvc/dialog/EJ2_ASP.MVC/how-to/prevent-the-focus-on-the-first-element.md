@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent The Focus On The First Element in ##Platform_Name## Dialog Component
-description: Learn here all about Prevent The Focus On The First Element in Syncfusion ##Platform_Name## Dialog component and more.
+description: Learn here all about Prevent The Focus On The First Element in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Prevent The Focus On The First Element
 publishingplatform: ##Platform_Name##

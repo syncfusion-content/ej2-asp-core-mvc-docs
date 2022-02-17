@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Detail Template in ##Platform_Name## Grid Component
-description: Learn here all about Detail Template in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Detail Template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Detail Template
 publishingplatform: ##Platform_Name##

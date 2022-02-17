@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Migration From Css Textbox To Aspnetmvc Textbox in ##Platform_Name## Textbox Component
-description: Learn here all about Migration From Css Textbox To Aspnetmvc Textbox in Syncfusion ##Platform_Name## Textbox component and more.
+description: Learn here all about Migration From Css Textbox To Aspnetmvc Textbox in Syncfusion ##Platform_Name## Textbox component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Migration From Css Textbox To Aspnetmvc Textbox
 publishingplatform: ##Platform_Name##

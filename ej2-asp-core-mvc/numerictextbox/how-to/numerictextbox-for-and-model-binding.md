@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Numerictextbox For And Model Binding in ##Platform_Name## Numerictextbox Component
-description: Learn here all about Numerictextbox For And Model Binding in Syncfusion ##Platform_Name## Numerictextbox component and more.
+description: Learn here all about Numerictextbox For And Model Binding in Syncfusion ##Platform_Name## Numerictextbox component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Numerictextbox For And Model Binding
 publishingplatform: ##Platform_Name##

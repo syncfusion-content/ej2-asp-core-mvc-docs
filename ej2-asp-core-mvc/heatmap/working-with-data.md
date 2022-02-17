@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working With Data in ##Platform_Name## Heatmap Component
-description: Learn here all about Working With Data in Syncfusion ##Platform_Name## Heatmap component and more.
+description: Learn here all about Working With Data in Syncfusion ##Platform_Name## Heatmap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Working With Data
 publishingplatform: ##Platform_Name##

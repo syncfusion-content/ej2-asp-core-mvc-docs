@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Troubleshoot in ##Platform_Name## Common Component
-description: Learn here all about Troubleshoot in Syncfusion ##Platform_Name## Common component and more.
+description: Learn here all about Troubleshoot in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Troubleshoot
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create With User Interface Interaction in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Create With User Interface Interaction in Syncfusion ##Platform_Name## Pdfviewer component and more.
+description: Learn here all about Create With User Interface Interaction in Syncfusion ##Platform_Name## Pdfviewer component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Create With User Interface Interaction
 publishingplatform: ##Platform_Name##

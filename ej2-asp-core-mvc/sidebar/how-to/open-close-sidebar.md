@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Close Sidebar in ##Platform_Name## Sidebar Component
-description: Learn here all about Open Close Sidebar in Syncfusion ##Platform_Name## Sidebar component and more.
+description: Learn here all about Open Close Sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open Close Sidebar
 publishingplatform: ##Platform_Name##

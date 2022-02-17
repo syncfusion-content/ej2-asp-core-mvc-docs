@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Free Text Annotation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Free Text Annotation in Syncfusion ##Platform_Name## Pdfviewer component and more.
+description: Learn here all about Free Text Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Free Text Annotation
 publishingplatform: ##Platform_Name##

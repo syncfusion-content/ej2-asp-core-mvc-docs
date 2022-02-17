@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Schedule Component
-description: Checkout and learn about getting started with ##Platform_Name## Schedule component of Syncfusion, and more details.
+description: Checkout and learn about getting started with ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

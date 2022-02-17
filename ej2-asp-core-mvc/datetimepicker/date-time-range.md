@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Time Range in ##Platform_Name## Datetimepicker Component
-description: Learn here all about Date Time Range in Syncfusion ##Platform_Name## Datetimepicker component and more.
+description: Learn here all about Date Time Range in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Date Time Range
 publishingplatform: ##Platform_Name##

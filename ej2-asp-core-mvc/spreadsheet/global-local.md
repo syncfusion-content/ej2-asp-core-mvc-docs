@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Global Local in ##Platform_Name## Spreadsheet Component
-description: Learn here all about Global Local in Syncfusion ##Platform_Name## Spreadsheet component and more.
+description: Learn here all about Global Local in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Global Local
 publishingplatform: ##Platform_Name##

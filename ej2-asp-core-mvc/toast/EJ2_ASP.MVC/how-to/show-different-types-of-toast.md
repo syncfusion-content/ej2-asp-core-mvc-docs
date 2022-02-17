@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show Different Types Of Toast in ##Platform_Name## Toast Component
-description: Learn here all about Show Different Types Of Toast in Syncfusion ##Platform_Name## Toast component and more.
+description: Learn here all about Show Different Types Of Toast in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Show Different Types Of Toast
 publishingplatform: ##Platform_Name##

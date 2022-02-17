@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create Dual List From Listview in ##Platform_Name## Listview Component
-description: Learn here all about Create Dual List From Listview in Syncfusion ##Platform_Name## Listview component and more.
+description: Learn here all about Create Dual List From Listview in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Dual List From Listview
 publishingplatform: ##Platform_Name##

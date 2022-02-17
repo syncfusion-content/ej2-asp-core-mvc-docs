@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Check The Mime Type Of File Before Upload It in ##Platform_Name## Uploader Component
-description: Learn here all about Check The Mime Type Of File Before Upload It in Syncfusion ##Platform_Name## Uploader component and more.
+description: Learn here all about Check The Mime Type Of File Before Upload It in Syncfusion ##Platform_Name## Uploader component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Check The Mime Type Of File Before Upload It
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Types And Styles in ##Platform_Name## Button Group Component
-description: Learn here all about Types And Styles in Syncfusion ##Platform_Name## Button Group component and more.
+description: Learn here all about Types And Styles in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types And Styles
 publishingplatform: ##Platform_Name##

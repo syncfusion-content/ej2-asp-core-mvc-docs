@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Frozen in ##Platform_Name## Tree Grid Component
-description: Learn here all about Frozen in Syncfusion ##Platform_Name## Tree Grid component and more.
+description: Learn here all about Frozen in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Frozen
 publishingplatform: ##Platform_Name##
