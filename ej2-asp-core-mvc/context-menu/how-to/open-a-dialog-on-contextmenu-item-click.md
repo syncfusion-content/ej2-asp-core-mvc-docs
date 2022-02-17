@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Open A Dialog On Contextmenu Item Click of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Open A Dialog On Contextmenu Item Click in ##Platform_Name## Context Menu Component
+description: Learn here all about Open A Dialog On Contextmenu Item Click in Syncfusion ##Platform_Name## Context Menu component and more.
 platform: ej2-asp-core-mvc
 control: Open A Dialog On Contextmenu Item Click
 publishingplatform: ##Platform_Name##

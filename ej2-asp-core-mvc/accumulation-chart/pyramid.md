@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Pyramid of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Pyramid in ##Platform_Name## Accumulation Chart Component
+description: Learn here all about Pyramid in Syncfusion ##Platform_Name## Accumulation Chart component and more.
 platform: ej2-asp-core-mvc
 control: Pyramid
 publishingplatform: ##Platform_Name##

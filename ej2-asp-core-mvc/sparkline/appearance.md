@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Appearance of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Appearance in ##Platform_Name## Sparkline Component
+description: Learn here all about Appearance in Syncfusion ##Platform_Name## Sparkline component and more.
 platform: ej2-asp-core-mvc
 control: Appearance
 publishingplatform: ##Platform_Name##
@@ -83,10 +83,10 @@ The background color of the sparkline area can be customized using the [`contain
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/appearance/area_custom/tagHelper %}
+{% include code-snippet/sparkline/appearance/area-custom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Area_custom.cs" %}
-{% include code-snippet/sparkline/appearance/area_custom/area_custom.cs %}
+{% include code-snippet/sparkline/appearance/area-custom/area_custom.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,10 +94,10 @@ The background color of the sparkline area can be customized using the [`contain
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/appearance/area_custom/razor %}
+{% include code-snippet/sparkline/appearance/area-custom/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Area_custom.cs" %}
-{% include code-snippet/sparkline/appearance/area_custom/area_custom.cs %}
+{% include code-snippet/sparkline/appearance/area-custom/area_custom.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

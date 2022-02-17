@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Identify The Loaded Document Is Edited of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Identify The Loaded Document Is Edited in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Identify The Loaded Document Is Edited in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Identify The Loaded Document Is Edited
 publishingplatform: ##Platform_Name##

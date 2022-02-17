@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Keyboard Shortcut of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Keyboard Shortcut in ##Platform_Name## Document Editor Component
+description: Learn here all about Keyboard Shortcut in Syncfusion ##Platform_Name## Document Editor component and more.
 platform: ej2-asp-core-mvc
 control: Keyboard Shortcut
 publishingplatform: ##Platform_Name##

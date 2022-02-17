@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Prevent Toast Close With Mobile Swipe of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Prevent Toast Close With Mobile Swipe in ##Platform_Name## Toast Component
+description: Learn here all about Prevent Toast Close With Mobile Swipe in Syncfusion ##Platform_Name## Toast component and more.
 platform: ej2-asp-core-mvc
 control: Prevent Toast Close With Mobile Swipe
 publishingplatform: ##Platform_Name##

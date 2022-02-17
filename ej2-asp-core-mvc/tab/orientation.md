@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Orientation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Orientation in ##Platform_Name## Tab Component
+description: Learn here all about Orientation in Syncfusion ##Platform_Name## Tab component and more.
 platform: ej2-asp-core-mvc
 control: Orientation
 publishingplatform: ##Platform_Name##

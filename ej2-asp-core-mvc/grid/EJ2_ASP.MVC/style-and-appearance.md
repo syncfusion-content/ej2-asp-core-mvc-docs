@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Style And Appearance of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Style And Appearance in ##Platform_Name## Grid Component
+description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Print The Expanded State From Other Pages of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Print The Expanded State From Other Pages in ##Platform_Name## Grid Component
+description: Learn here all about Print The Expanded State From Other Pages in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Print The Expanded State From Other Pages
 publishingplatform: ##Platform_Name##

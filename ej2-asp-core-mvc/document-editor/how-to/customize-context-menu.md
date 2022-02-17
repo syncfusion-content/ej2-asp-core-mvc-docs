@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Context Menu of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Context Menu in ##Platform_Name## Document Editor Component
+description: Learn here all about Customize Context Menu in Syncfusion ##Platform_Name## Document Editor component and more.
 platform: ej2-asp-core-mvc
 control: Customize Context Menu
 publishingplatform: ##Platform_Name##

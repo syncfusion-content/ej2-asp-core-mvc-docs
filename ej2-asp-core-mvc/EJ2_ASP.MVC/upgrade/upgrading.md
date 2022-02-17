@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Upgrading of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Upgrading in ##Platform_Name## Component
+description: Learn here all about Upgrading in Syncfusion ##Platform_Name## component and more.
 platform: ej2-asp-core-mvc
 control: Upgrading
 publishingplatform: ##Platform_Name##
@@ -34,8 +34,4 @@ To upgrade from trial version, there are two possible solutions.
 
 * If you are using Syncfusion controls from [nuget.org](https://www.nuget.org/packages?q=syncfusion), replace the currently used trial license key with a paid license key that can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of our website. Refer to [this](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/license-key-registration/) topic for more information regarding registering the license in the application.
 
-<<<<<<< HEAD
 >**NOTE** <br /> License registration is not required if you reference Syncfusion assemblies from Licensed installer. These licensing changes applicable to all evaluators who refers the Syncfusion assemblies from evaluation installer and those who use Syncfusion NuGet packages from [nuget.org](https://www.nuget.org/packages?q=syncfusion).
-=======
->**NOTE** <br /> License registration is not required if you reference Syncfusion assemblies from Licensed installer. These licensing changes applicable to all evaluators who refers the Syncfusion assemblies from evaluation installer and those who use Syncfusion NuGet packages from [nuget.org](https://www.nuget.org/packages?q=syncfusion).
->>>>>>> 8c34c6cca72dd0527815227895b4df7722654067

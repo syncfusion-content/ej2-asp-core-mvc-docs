@@ -1,13 +1,95 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Editing of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Editing in ##Platform_Name## Tree Grid Component
+description: Learn here all about Editing in Syncfusion ##Platform_Name## Tree Grid component and more.
 platform: ej2-asp-core-mvc
 control: Editing
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Editing
+
+The TreeGrid component has options to dynamically insert, delete and update records.
+Editing feature is enabled by using [`EditSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~EditSettings.html) property and it requires a primary key column for CRUD operations.
+To define the primary key, set [`Columns.IsPrimaryKey`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~IsPrimaryKey.html) to `true` in particular column.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/editing/editing/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit.cs" %}
+{% include code-snippet/tree-grid/editing/editing/edit.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/editing/editing/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit.cs" %}
+{% include code-snippet/tree-grid/editing/editing/edit.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+> * You can disable editing for a particular column, by specifying
+[`Columns.AllowEditing`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowEditing.html) to `false`.
+
+## Toolbar with edit option
+
+The treegrid toolbar has the built-in items to execute Editing actions.
+You can define this by using the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/editing/editing-tools/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="EditTools.cs" %}
+{% include code-snippet/tree-grid/editing/editing-tools/editTools.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/editing/editing-tools/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="EditTools.cs" %}
+{% include code-snippet/tree-grid/editing/editing-tools/editTools.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Cell edit type and its params
+
+The [`Columns.EditType`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~EditType.html) is used to customize the edit type of the particular column.
+You can set the [`Columns.EditType`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~EditType.html) based on data type of the column.
+
+* [`NumericTextBox`](../numerictextbox) component for integers, double, and decimal data types.
+
+* [`TextBox`](../textbox) component for string data type.
+
+* [`DropDownList`](../drop-down-list) component for list data type.
+
+Also, you can customize model of the [`Columns.EditType`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~EditType.html) component through the [`Columns.Edit.params`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Edit.html).
+
+The following table describes cell edit type component and their corresponding edit params of the column.
+
+Component |Example
+-----|-----
 [`NumericTextBox`](../numerictextbox) | params: { decimals: 2, value: 5 }
 [`TextBox`](../textbox) | -
 [`DropDownList`](../drop-down-list) | params: { value: 'Germany' }

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Export of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Export in ##Platform_Name## Barcode Component
+description: Learn here all about Export in Syncfusion ##Platform_Name## Barcode component and more.
 platform: ej2-asp-core-mvc
 control: Export
 publishingplatform: ##Platform_Name##
@@ -40,7 +40,6 @@ await barcode.exportAsBase64Image('JPG');
 
 ```
 
-N>
 >Format is to specify the type or format of the exported file. You can export the barcode to the following formats:
 >* JPG.
 >* PNG.

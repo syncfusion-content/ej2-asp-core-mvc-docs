@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Hand Written Signature of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Hand Written Signature in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Hand Written Signature in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Hand Written Signature
 publishingplatform: ##Platform_Name##

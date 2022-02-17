@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Getting Started of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Getting Started with ##Platform_Name## Chart Component
+description: Checkout and learn about getting started with ##Platform_Name## Chart component of Syncfusion, and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -27,17 +27,17 @@ The following steps to create ASP.NET MVC Application.
 
 **Step 1:** Create ASP.NET MVC Application with default template project in Visual Studio.
 
-![Default Template](./images/default-template.png)
+![Default Template](../how-to/images/default-template.png)
 
 **Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using `NuGet Package Manager`.
 
 Open the `NuGet` package manager.
 
-![Solution Explorer](./images/solution-explorer-mvc.png)
+![Solution Explorer](../how-to/images/solution-explorer-core.png)
 
 Install the **Syncfusion.EJ2.MVC4** package to the application.
 
-![Nuget Demo](./images/nuget-demo.png)
+![Nuget Demo](../how-to/images/nuget-demo.png)
 
 After installation complete, this will be included in the project. You can refer it from the Project Assembly Reference.
 
@@ -88,6 +88,6 @@ After installation complete, this will be included in the project. You can refer
 
 ```
 
-![Alt text](./images/chart.png)
+![Alt text](../how-to/images/chart.png)
 
 > You can refer to our [ASP.NET MVC Charts](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Charts example](https://ej2.syncfusion.com/aspnetmvc/Chart/Line#/material) that shows various chart types and how to represent time-dependent data, showing trends in data at equal intervals.

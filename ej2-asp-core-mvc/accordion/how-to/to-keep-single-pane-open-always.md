@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about To Keep Single Pane Open Always of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: To Keep Single Pane Open Always in ##Platform_Name## Accordion Component
+description: Learn here all about To Keep Single Pane Open Always in Syncfusion ##Platform_Name## Accordion component and more.
 platform: ej2-asp-core-mvc
 control: To Keep Single Pane Open Always
 publishingplatform: ##Platform_Name##

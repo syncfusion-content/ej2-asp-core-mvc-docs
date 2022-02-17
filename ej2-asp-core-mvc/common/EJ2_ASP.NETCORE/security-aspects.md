@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Security Aspects of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Security Aspects in ##Platform_Name## Common Component
+description: Learn here all about Security Aspects in Syncfusion ##Platform_Name## Common component and more.
 platform: ej2-asp-core-mvc
 control: Security Aspects
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Aggregation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Aggregation in ##Platform_Name## Pivot Table Component
+description: Learn here all about Aggregation in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Aggregation
 publishingplatform: ##Platform_Name##
@@ -279,7 +279,7 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 * `fieldInfo`: It holds the selected value field information.
 
-N> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
+> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

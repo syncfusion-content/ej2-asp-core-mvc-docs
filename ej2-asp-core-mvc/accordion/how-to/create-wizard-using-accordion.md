@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Create Wizard Using Accordion of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Create Wizard Using Accordion in ##Platform_Name## Accordion Component
+description: Learn here all about Create Wizard Using Accordion in Syncfusion ##Platform_Name## Accordion component and more.
 platform: ej2-asp-core-mvc
 control: Create Wizard Using Accordion
 publishingplatform: ##Platform_Name##

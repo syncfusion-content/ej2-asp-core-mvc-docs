@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about State Persistence of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: State Persistence in ##Platform_Name## Grid Component
+description: Learn here all about State Persistence in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: State Persistence
 publishingplatform: ##Platform_Name##
@@ -126,7 +126,7 @@ When the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 The following example demonstrates how to prevent Grid columns from persisting. In the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
 
-N> When the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) property is set to true, the Grid properties such as column template, column formatter, header text, and value accessor will not persist.
+> When the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) property is set to true, the Grid properties such as column template, column formatter, header text, and value accessor will not persist.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

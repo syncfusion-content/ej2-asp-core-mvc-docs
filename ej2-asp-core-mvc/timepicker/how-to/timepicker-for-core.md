@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Timepicker For Core of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Timepicker For Core in ##Platform_Name## Timepicker Component
+description: Learn here all about Timepicker For Core in Syncfusion ##Platform_Name## Timepicker component and more.
 platform: ej2-asp-core-mvc
 control: Timepicker For Core
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Rename Images In Server of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Rename Images In Server in ##Platform_Name## Rich Text Editor Component
+description: Learn here all about Rename Images In Server in Syncfusion ##Platform_Name## Rich Text Editor component and more.
 platform: ej2-asp-core-mvc
 control: Rename Images In Server
 publishingplatform: ##Platform_Name##
@@ -15,7 +15,7 @@ By using the [`insertImageSettings`](https://help.syncfusion.com/cr/aspnetcore-j
 
 Refer `controller` file for configure the server-side.
 
-> Note: The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-core-richtexteditor-rename-image) repository.
+> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-core-richtexteditor-rename-image) repository.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

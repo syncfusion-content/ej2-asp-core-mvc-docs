@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Change Animation Settings of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Change Animation Settings in ##Platform_Name## Context Menu Component
+description: Learn here all about Change Animation Settings in Syncfusion ##Platform_Name## Context Menu component and more.
 platform: ej2-asp-core-mvc
 control: Change Animation Settings
 publishingplatform: ##Platform_Name##

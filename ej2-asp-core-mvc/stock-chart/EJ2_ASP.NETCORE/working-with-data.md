@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Working With Data of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Working With Data in ##Platform_Name## Stock Chart Component
+description: Learn here all about Working With Data in Syncfusion ##Platform_Name## Stock Chart component and more.
 platform: ej2-asp-core-mvc
 control: Working With Data
 publishingplatform: ##Platform_Name##

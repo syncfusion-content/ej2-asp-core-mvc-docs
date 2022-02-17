@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Upgrade Project of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Upgrade Project in ##Platform_Name## Ej2_asp.netcore Component
+description: Learn here all about Upgrade Project in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
 platform: ej2-asp-core-mvc
 control: Upgrade Project
 publishingplatform: ##Platform_Name##

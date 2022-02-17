@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Getting Started Mvc of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Getting Started with ##Platform_Name## Circular Gauge Component
+description: Checkout and learn about getting started with ##Platform_Name## Circular Gauge component of Syncfusion, and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Mvc
 publishingplatform: ##Platform_Name##
@@ -38,7 +38,7 @@ Install the **Syncfusion.EJ2.MVC4** package to the application.
 
 After installation complete, this will be included in the project. You can refer it from the Project Assembly Reference.
 
-**Note:** We need to install **NewtonSoft.JSON** as a dependency, since **Syncfusion.EJ2** dependent to `NewtonSoft.JSON` package.
+> We need to install **NewtonSoft.JSON** as a dependency, since **Syncfusion.EJ2** dependent to `NewtonSoft.JSON` package.
 
 **Step 3:** Add Syncfusion.EJ2 namespace reference in `Web.Config`.
 

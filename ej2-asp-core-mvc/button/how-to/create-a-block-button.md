@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Create A Block Button of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Create A Block Button in ##Platform_Name## Button Component
+description: Learn here all about Create A Block Button in Syncfusion ##Platform_Name## Button component and more.
 platform: ej2-asp-core-mvc
 control: Create A Block Button
 publishingplatform: ##Platform_Name##

@@ -1,13 +1,22 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Context Menu of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Context Menu in ##Platform_Name## Gantt Component
+description: Learn here all about Context Menu in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Context Menu
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Context menu
+
+The Gantt control allows you to perform quick actions by using context menu. When right-clicking the context menu, the context menu options are shown. To enable this feature, set the [`enableContextMenu`] to true. The default context menu options are enabled using the [`editSettings`] property. The context menu options can be customized using the [`contextMenuItems`] property.
+
+The default items are listed in the following table.
+
+Items| Description
+----|----
 `AutoFit`|  Auto-fits the current column.
 `AutoFitAll` | Auto-fits all columns.
 `SortAscending` | Sorts the current column in ascending order.

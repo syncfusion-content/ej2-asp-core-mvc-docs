@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Ej1 Ej2 Compatability of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Ej1 Ej2 Compatability in ##Platform_Name## Common Component
+description: Learn here all about Ej1 Ej2 Compatability in Syncfusion ##Platform_Name## Common component and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Ej2 Compatability
 publishingplatform: ##Platform_Name##

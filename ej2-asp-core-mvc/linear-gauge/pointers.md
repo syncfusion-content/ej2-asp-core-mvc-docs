@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Pointers of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Pointers in ##Platform_Name## Linear Gauge Component
+description: Learn here all about Pointers in Syncfusion ##Platform_Name## Linear Gauge component and more.
 platform: ej2-asp-core-mvc
 control: Pointers
 publishingplatform: ##Platform_Name##
@@ -199,10 +199,10 @@ You can placement the marker pointer in any of the following locations using [`p
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/pointers/pointer_placement/tagHelper %}
+{% include code-snippet/lineargauge/pointers/pointer-placement/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pointer-placement.cs" %}
-{% include code-snippet/lineargauge/pointers/pointer_placement/pointer-placement.cs %}
+{% include code-snippet/lineargauge/pointers/pointer-placement/pointer-placement.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -210,10 +210,10 @@ You can placement the marker pointer in any of the following locations using [`p
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/pointers/pointer_placement/razor %}
+{% include code-snippet/lineargauge/pointers/pointer-placement/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pointer-placement.cs" %}
-{% include code-snippet/lineargauge/pointers/pointer_placement/pointer-placement.cs %}
+{% include code-snippet/lineargauge/pointers/pointer-placement/pointer-placement.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

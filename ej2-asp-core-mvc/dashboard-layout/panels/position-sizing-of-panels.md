@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Position Sizing Of Panels of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Position Sizing Of Panels in ##Platform_Name## Dashboard Layout Component
+description: Learn here all about Position Sizing Of Panels in Syncfusion ##Platform_Name## Dashboard Layout component and more.
 platform: ej2-asp-core-mvc
 control: Position Sizing Of Panels
 publishingplatform: ##Platform_Name##

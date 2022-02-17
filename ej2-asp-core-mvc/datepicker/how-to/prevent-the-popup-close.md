@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Prevent The Popup Close of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Prevent The Popup Close in ##Platform_Name## Datepicker Component
+description: Learn here all about Prevent The Popup Close in Syncfusion ##Platform_Name## Datepicker component and more.
 platform: ej2-asp-core-mvc
 control: Prevent The Popup Close
 publishingplatform: ##Platform_Name##

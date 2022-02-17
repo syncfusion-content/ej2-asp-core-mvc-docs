@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Tool Tip of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Tool Tip in ##Platform_Name## Chart Component
+description: Learn here all about Tool Tip in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Tool Tip
 publishingplatform: ##Platform_Name##
@@ -151,7 +151,7 @@ By default, tooltip shows information of x and y value in points. You can show m
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/user-interaction/tooltip/tooltip-mapping/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tooltip-mapping.cs" %}

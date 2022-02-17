@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Show Hide Columns In Dialog Editing of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Show Hide Columns In Dialog Editing in ##Platform_Name## Grid Component
+description: Learn here all about Show Hide Columns In Dialog Editing in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Show Hide Columns In Dialog Editing
 publishingplatform: ##Platform_Name##

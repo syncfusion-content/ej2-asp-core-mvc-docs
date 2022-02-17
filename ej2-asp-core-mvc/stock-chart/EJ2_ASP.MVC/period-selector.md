@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Period Selector of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Period Selector in ##Platform_Name## Stock Chart Component
+description: Learn here all about Period Selector in Syncfusion ##Platform_Name## Stock Chart component and more.
 platform: ej2-asp-core-mvc
 control: Period Selector
 publishingplatform: ##Platform_Name##

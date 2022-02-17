@@ -1,13 +1,105 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Edit of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Edit in ##Platform_Name## Grid Component
+description: Learn here all about Edit in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Edit
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Editing
+
+The Grid component has options to dynamically insert, delete and update records.
+Editing feature requires a primary key column for CRUD operations.
+To define the primary key, set [`Columns.IsPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) to `true` in particular column.
+
+You can start the edit action either by double clicking the particular row or by selecting the required row and click on `Edit` button in the toolbar. Similarly, you can add a new record to grid either by clicking on `Add` button in the toolbar or on an external button which is bound to invoke the `addRecord` method of the grid, `Save` and `Cancel` while in edit mode is possible using respective toolbar icon in grid.
+
+Deletion of the record is possible by selecting the required row and click on `Delete` button in the toolbar.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/edit/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit.cs" %}
+{% include code-snippet/grid/edit/edit/edit.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/edit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit.cs" %}
+{% include code-snippet/grid/edit/edit/edit.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+> * If [`Columns.IsIdentity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) is enabled, then it will be considered as a read-only column when editing and adding a record.
+> * You can disable editing for a particular column, by specifying
+[`Columns.AllowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing) to `false`.
+
+## Toolbar with edit option
+
+The grid toolbar has the [built-in items](./tool-bar##Built-in-toolbar-items) to execute Editing actions.
+You can define this by using the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/edittoolbar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edittoolbar.cs" %}
+{% include code-snippet/grid/edit/edittoolbar/edittoolbar.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/edittoolbar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edittoolbar.cs" %}
+{% include code-snippet/grid/edit/edittoolbar/edittoolbar.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Cell edit type and its params
+
+The [`Columns.EditType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_EditType) is used to define the editor component for any particular column.
+
+You can set the [`Columns.EditType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_EditType) based on data type of the column.
+
+* `NumericTextBox` component for integers, double, and decimal data types.
+
+* `TextBox` component for string data type.
+
+* `DropDownList` component to show all unique values related to that field.
+
+* `DatePicker` component for date data type.
+
+* `DateTimePicker` component for date time data type.
+
+Also, you can customize the behavior of the editor component through `Columns.Edit.Params`.
+
+The following table describes cell edit type and their corresponding edit params of the column.
+
+Component |Example
+-----|-----
 `NumericTextBox` | params: { decimals: 2, value: 5 }
 `DropDownList` | params: { value: 'Germany' }
 `Checkbox` | params: { checked: true}

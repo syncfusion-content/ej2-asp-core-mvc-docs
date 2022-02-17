@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Hide Empty Headers of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Hide Empty Headers in ##Platform_Name## Pivot Table Component
+description: Learn here all about Hide Empty Headers in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Hide Empty Headers
 publishingplatform: ##Platform_Name##

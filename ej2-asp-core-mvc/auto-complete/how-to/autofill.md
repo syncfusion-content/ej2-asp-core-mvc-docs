@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Autofill of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Autofill in ##Platform_Name## Auto Complete Component
+description: Learn here all about Autofill in Syncfusion ##Platform_Name## Auto Complete component and more.
 platform: ej2-asp-core-mvc
 control: Autofill
 publishingplatform: ##Platform_Name##

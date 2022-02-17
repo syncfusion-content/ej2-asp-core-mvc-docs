@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Render The Tab Using Content Template of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Render The Tab Using Content Template in ##Platform_Name## Tab Component
+description: Learn here all about Render The Tab Using Content Template in Syncfusion ##Platform_Name## Tab component and more.
 platform: ej2-asp-core-mvc
 control: Render The Tab Using Content Template
 publishingplatform: ##Platform_Name##

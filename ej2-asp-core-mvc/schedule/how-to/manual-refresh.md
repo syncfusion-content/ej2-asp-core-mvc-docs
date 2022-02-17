@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Manual Refresh of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Manual Refresh in ##Platform_Name## Schedule Component
+description: Learn here all about Manual Refresh in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Manual Refresh
 publishingplatform: ##Platform_Name##

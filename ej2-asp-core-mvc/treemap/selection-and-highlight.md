@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Selection And Highlight of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Selection And Highlight in ##Platform_Name## Treemap Component
+description: Learn here all about Selection And Highlight in Syncfusion ##Platform_Name## Treemap component and more.
 platform: ej2-asp-core-mvc
 control: Selection And Highlight
 publishingplatform: ##Platform_Name##
@@ -20,10 +20,10 @@ The `fill` property is used to change the selected item color. The `color` and t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/selection_highlight/selection/tagHelper %}
+{% include code-snippet/treemap/selection-highlight/selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Selection.cs" %}
-{% include code-snippet/treemap/selection_highlight/selection/selection.cs %}
+{% include code-snippet/treemap/selection-highlight/selection/selection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ The `fill` property is used to change the selected item color. The `color` and t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/selection_highlight/selection/razor %}
+{% include code-snippet/treemap/selection-highlight/selection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Selection.cs" %}
-{% include code-snippet/treemap/selection_highlight/selection/selection.cs %}
+{% include code-snippet/treemap/selection-highlight/selection/selection.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -53,10 +53,10 @@ The `fill` property is used to change the highlighted item color. The `color` an
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treemap/selection_highlight/highlight/tagHelper %}
+{% include code-snippet/treemap/selection-highlight/highlight/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Highlight.cs" %}
-{% include code-snippet/treemap/selection_highlight/highlight/highlight.cs %}
+{% include code-snippet/treemap/selection-highlight/highlight/highlight.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,10 +64,10 @@ The `fill` property is used to change the highlighted item color. The `color` an
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treemap/selection_highlight/highlight/razor %}
+{% include code-snippet/treemap/selection-highlight/highlight/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Highlight.cs" %}
-{% include code-snippet/treemap/selection_highlight/highlight/highlight.cs %}
+{% include code-snippet/treemap/selection-highlight/highlight/highlight.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

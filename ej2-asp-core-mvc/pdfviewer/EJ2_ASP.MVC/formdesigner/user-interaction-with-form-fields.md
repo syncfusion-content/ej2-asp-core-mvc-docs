@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about User Interaction With Form Fields of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: User Interaction With Form Fields in ##Platform_Name## Pdfviewer Component
+description: Learn here all about User Interaction With Form Fields in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: User Interaction With Form Fields
 publishingplatform: ##Platform_Name##

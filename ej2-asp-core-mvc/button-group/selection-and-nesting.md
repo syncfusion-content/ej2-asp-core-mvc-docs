@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Selection And Nesting of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Selection And Nesting in ##Platform_Name## Button Group Component
+description: Learn here all about Selection And Nesting in Syncfusion ##Platform_Name## Button Group component and more.
 platform: ej2-asp-core-mvc
 control: Selection And Nesting
 publishingplatform: ##Platform_Name##

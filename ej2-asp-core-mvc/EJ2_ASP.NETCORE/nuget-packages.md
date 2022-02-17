@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Nuget Packages of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Nuget Packages in ##Platform_Name## Ej2_asp.netcore Component
+description: Learn here all about Nuget Packages in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
 platform: ej2-asp-core-mvc
 control: Nuget Packages
 publishingplatform: ##Platform_Name##
@@ -22,7 +22,7 @@ documentation: ug
 
     ![img3](images/manage-nuget.png)
 
-    Alternatively, click **Tools**, menu, NuGet Package Manager | Manage NuGet Packages for Solution.
+    Alternatively, click **Tools**, menu, NuGet Package Manager -> Manage NuGet Packages for Solution.
 
 3. By default, the `NuGet.org` package is selected in the **Package source** drop-down. Select your appropriate feed name that you configured.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Radiobutton Appearance of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Radiobutton Appearance in ##Platform_Name## Radio Button Component
+description: Learn here all about Customize Radiobutton Appearance in Syncfusion ##Platform_Name## Radio Button component and more.
 platform: ej2-asp-core-mvc
 control: Customize Radiobutton Appearance
 publishingplatform: ##Platform_Name##

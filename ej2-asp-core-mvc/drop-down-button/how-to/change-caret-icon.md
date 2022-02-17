@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Change Caret Icon of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Change Caret Icon in ##Platform_Name## Drop Down Button Component
+description: Learn here all about Change Caret Icon in Syncfusion ##Platform_Name## Drop Down Button component and more.
 platform: ej2-asp-core-mvc
 control: Change Caret Icon
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Pdf Export of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Pdf Export in ##Platform_Name## Grid Component
+description: Learn here all about Pdf Export in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Pdf Export
 publishingplatform: ##Platform_Name##
@@ -705,4 +705,4 @@ To Export the Grid in server side, You need to call the
 
 
 
-N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
+> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).

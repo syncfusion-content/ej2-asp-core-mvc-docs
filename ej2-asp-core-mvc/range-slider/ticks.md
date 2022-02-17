@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Ticks of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Ticks in ##Platform_Name## Range Slider Component
+description: Learn here all about Ticks in Syncfusion ##Platform_Name## Range Slider component and more.
 platform: ej2-asp-core-mvc
 control: Ticks
 publishingplatform: ##Platform_Name##

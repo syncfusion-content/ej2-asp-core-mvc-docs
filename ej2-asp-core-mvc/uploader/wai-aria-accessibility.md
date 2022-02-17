@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Wai Aria Accessibility of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Wai Aria Accessibility in ##Platform_Name## Uploader Component
+description: Learn here all about Wai Aria Accessibility in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Wai Aria Accessibility
 publishingplatform: ##Platform_Name##

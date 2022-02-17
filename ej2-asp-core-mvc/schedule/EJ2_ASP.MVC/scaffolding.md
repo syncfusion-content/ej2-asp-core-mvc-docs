@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Scaffolding of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Scaffolding in ##Platform_Name## Schedule Component
+description: Learn here all about Scaffolding in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Scaffolding
 publishingplatform: ##Platform_Name##
@@ -49,6 +49,6 @@ Let's start with the steps on how to scaffold the ASP.NET MVC Scheduler into you
 
 ![Solution explorer displaying the newly created Controller and View files](../../schedule/images/solution-explorer.png)
 
-N> Ensure that at least one Entity Framework model exists in your active project and also the application gets compiled once. If you make any changes in the Model properties later, compile the application once before performing scaffold.
+> Ensure that at least one Entity Framework model exists in your active project and also the application gets compiled once. If you make any changes in the Model properties later, compile the application once before performing scaffold.
 
 > You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

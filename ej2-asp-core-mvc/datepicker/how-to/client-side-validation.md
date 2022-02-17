@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Client Side Validation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Client Side Validation in ##Platform_Name## Datepicker Component
+description: Learn here all about Client Side Validation in Syncfusion ##Platform_Name## Datepicker component and more.
 platform: ej2-asp-core-mvc
 control: Client Side Validation
 publishingplatform: ##Platform_Name##

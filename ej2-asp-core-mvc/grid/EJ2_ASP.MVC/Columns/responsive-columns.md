@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Responsive Columns of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Responsive Columns in ##Platform_Name## Grid Component
+description: Learn here all about Responsive Columns in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Responsive Columns
 publishingplatform: ##Platform_Name##

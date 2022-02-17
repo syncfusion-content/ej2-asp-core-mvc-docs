@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Crud Actions of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Crud Actions in ##Platform_Name## Schedule Component
+description: Learn here all about Crud Actions in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Crud Actions
 publishingplatform: ##Platform_Name##
@@ -698,6 +698,6 @@ When you drag and drop a normal event on the Scheduler, the event editing action
 
 When you resize a normal event on the Scheduler, the event editing action takes place. When a recurring event is resized to a new desired time, the batch action explained in `Editing a single occurrence` process will takes place - thus allowing both the `Add` and `Edit` action to take place together.
 
-N> By default, when you resize a recurring instance, only the occurrence of the event gets edited and not a whole series.
+> By default, when you resize a recurring instance, only the occurrence of the event gets edited and not a whole series.
 
 > You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

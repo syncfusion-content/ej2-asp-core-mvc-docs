@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Toast Services of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Toast Services in ##Platform_Name## Toast Component
+description: Learn here all about Toast Services in Syncfusion ##Platform_Name## Toast component and more.
 platform: ej2-asp-core-mvc
 control: Toast Services
 publishingplatform: ##Platform_Name##

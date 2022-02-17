@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Navigation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Navigation in ##Platform_Name## Breadcrumb Component
+description: Learn here all about Navigation in Syncfusion ##Platform_Name## Breadcrumb component and more.
 platform: ej2-asp-core-mvc
 control: Navigation
 publishingplatform: ##Platform_Name##
@@ -116,7 +116,7 @@ The feature enables the last item of the Breadcrumb component by setting the `en
 
 Output be like the below.
 
-![Breadcrumb Sample](./images/enable-navigation.PNG)
+![Breadcrumb Sample](./images/navigation.PNG)
 
 ## Open URL in new page or tab
 
@@ -149,4 +149,4 @@ To open the Breadcrumb item in a new page or tab, set the target property of the
 
 Output be like the below.
 
-![Breadcrumb Sample](./images/enable-navigation.PNG)
+![Breadcrumb Sample](./images/navigation.PNG)

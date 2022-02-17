@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Scaffolding of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Scaffolding in ##Platform_Name## Grid Component
+description: Learn here all about Scaffolding in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Scaffolding
 publishingplatform: ##Platform_Name##
@@ -13,7 +13,7 @@ documentation: ug
 
 Syncfusion provides the **Visual Studio Scaffolding** for the Syncfusion ASP.NET MVC platform to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create Views and Controller action methods for Syncfusion ASP.NET MVC DataGrid controls.
 
-N> The Syncfusion ASP.NET MVC UI Scaffolder is available from **v16.4.0.40**.
+> The Syncfusion ASP.NET MVC UI Scaffolder is available from **v16.4.0.40**.
 
 ## Add a Scaffolded Item
 

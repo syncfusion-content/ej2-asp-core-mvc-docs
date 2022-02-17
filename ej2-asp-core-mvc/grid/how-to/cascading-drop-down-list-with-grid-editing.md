@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Cascading Drop Down List With Grid Editing of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Cascading Drop Down List With Grid Editing in ##Platform_Name## Grid Component
+description: Learn here all about Cascading Drop Down List With Grid Editing in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Cascading Drop Down List With Grid Editing
 publishingplatform: ##Platform_Name##

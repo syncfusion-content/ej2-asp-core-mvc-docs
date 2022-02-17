@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Right To Left of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Right To Left in ##Platform_Name## Component
+description: Learn here all about Right To Left in Syncfusion ##Platform_Name## component and more.
 platform: ej2-asp-core-mvc
 control: Right To Left
 publishingplatform: ##Platform_Name##
@@ -28,13 +28,17 @@ To control a component’s direction individually you can directly set the compo
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/common/rtl/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/common/rtl/razor %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

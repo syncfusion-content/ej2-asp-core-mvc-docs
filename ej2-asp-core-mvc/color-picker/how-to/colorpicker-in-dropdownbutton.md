@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Colorpicker In Dropdownbutton of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Colorpicker In Dropdownbutton in ##Platform_Name## Color Picker Component
+description: Learn here all about Colorpicker In Dropdownbutton in Syncfusion ##Platform_Name## Color Picker component and more.
 platform: ej2-asp-core-mvc
 control: Colorpicker In Dropdownbutton
 publishingplatform: ##Platform_Name##

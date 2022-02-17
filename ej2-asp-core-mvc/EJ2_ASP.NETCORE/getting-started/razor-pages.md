@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Razor Pages of Syncfusion Essential ##Platform_Name## components which is powered by Essential JS 2.
+title: Getting Started with ##Platform_Name## Ej2_asp.netcore Component
+description: Checkout and learn about getting started with ##Platform_Name## Ej2_asp.netcore component of Syncfusion, and more details.
 platform: ej2-asp-core-mvc
 control: Razor Pages
 publishingplatform: ##Platform_Name##

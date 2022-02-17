@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Datepicker For Mvc of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Datepicker For Mvc in ##Platform_Name## Datepicker Component
+description: Learn here all about Datepicker For Mvc in Syncfusion ##Platform_Name## Datepicker component and more.
 platform: ej2-asp-core-mvc
 control: Datepicker For Mvc
 publishingplatform: ##Platform_Name##

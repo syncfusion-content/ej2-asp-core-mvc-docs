@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Financial Types of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Financial Types in ##Platform_Name## Chart Component
+description: Learn here all about Financial Types in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Financial Types
 publishingplatform: ##Platform_Name##

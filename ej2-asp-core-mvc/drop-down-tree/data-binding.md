@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Data Binding of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Data Binding in ##Platform_Name## Drop Down Tree Component
+description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Drop Down Tree component and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Auto Generated Columns of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Auto Generated Columns in ##Platform_Name## Grid Component
+description: Learn here all about Auto Generated Columns in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Auto Generated Columns
 publishingplatform: ##Platform_Name##

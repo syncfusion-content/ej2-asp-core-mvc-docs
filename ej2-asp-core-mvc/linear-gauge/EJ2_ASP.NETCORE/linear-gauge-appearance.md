@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Linear Gauge Appearance of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Linear Gauge Appearance in ##Platform_Name## Linear Gauge Component
+description: Learn here all about Linear Gauge Appearance in Syncfusion ##Platform_Name## Linear Gauge component and more.
 platform: ej2-asp-core-mvc
 control: Linear Gauge Appearance
 publishingplatform: ##Platform_Name##

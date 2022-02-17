@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Content of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Content in ##Platform_Name## Tooltip Component
+description: Learn here all about Content in Syncfusion ##Platform_Name## Tooltip component and more.
 platform: ej2-asp-core-mvc
 control: Content
 publishingplatform: ##Platform_Name##

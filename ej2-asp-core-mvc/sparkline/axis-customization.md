@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Axis Customization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Axis Customization in ##Platform_Name## Sparkline Component
+description: Learn here all about Axis Customization in Syncfusion ##Platform_Name## Sparkline component and more.
 platform: ej2-asp-core-mvc
 control: Axis Customization
 publishingplatform: ##Platform_Name##
@@ -175,10 +175,10 @@ Axis of the sparkline can be collapsed using the [`visible`](https://help.syncfu
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/axis/axis_line/tagHelper %}
+{% include code-snippet/sparkline/axis/axis-line/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis_line.cs" %}
-{% include code-snippet/sparkline/axis/axis_line/axis_line.cs %}
+{% include code-snippet/sparkline/axis/axis-line/axis_line.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -186,10 +186,10 @@ Axis of the sparkline can be collapsed using the [`visible`](https://help.syncfu
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sparkline/axis/axis_line/razor %}
+{% include code-snippet/sparkline/axis/axis-line/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis_line.cs" %}
-{% include code-snippet/sparkline/axis/axis_line/axis_line.cs %}
+{% include code-snippet/sparkline/axis/axis-line/axis_line.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

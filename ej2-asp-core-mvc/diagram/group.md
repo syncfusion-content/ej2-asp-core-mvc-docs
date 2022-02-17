@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Group of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Group in ##Platform_Name## Diagram Component
+description: Learn here all about Group in Syncfusion ##Platform_Name## Diagram component and more.
 platform: ej2-asp-core-mvc
 control: Group
 publishingplatform: ##Platform_Name##

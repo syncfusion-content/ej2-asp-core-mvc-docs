@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Tooltip Open Or Display Modes of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Tooltip Open Or Display Modes in ##Platform_Name## Tooltip Component
+description: Learn here all about Tooltip Open Or Display Modes in Syncfusion ##Platform_Name## Tooltip component and more.
 platform: ej2-asp-core-mvc
 control: Tooltip Open Or Display Modes
 publishingplatform: ##Platform_Name##

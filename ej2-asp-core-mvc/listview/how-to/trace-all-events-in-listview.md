@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Trace All Events In Listview of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Trace All Events In Listview in ##Platform_Name## Listview Component
+description: Learn here all about Trace All Events In Listview in Syncfusion ##Platform_Name## Listview component and more.
 platform: ej2-asp-core-mvc
 control: Trace All Events In Listview
 publishingplatform: ##Platform_Name##

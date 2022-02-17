@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Add Floating Label To Read Only Textbox of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Add Floating Label To Read Only Textbox in ##Platform_Name## Textbox Component
+description: Learn here all about Add Floating Label To Read Only Textbox in Syncfusion ##Platform_Name## Textbox component and more.
 platform: ej2-asp-core-mvc
 control: Add Floating Label To Read Only Textbox
 publishingplatform: ##Platform_Name##

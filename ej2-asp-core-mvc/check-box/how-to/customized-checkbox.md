@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customized Checkbox of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customized Checkbox in ##Platform_Name## Check Box Component
+description: Learn here all about Customized Checkbox in Syncfusion ##Platform_Name## Check Box component and more.
 platform: ej2-asp-core-mvc
 control: Customized Checkbox
 publishingplatform: ##Platform_Name##

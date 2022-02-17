@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Virtual Scrolling of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Virtual Scrolling in ##Platform_Name## Schedule Component
+description: Learn here all about Virtual Scrolling in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Virtual Scrolling
 publishingplatform: ##Platform_Name##
@@ -38,6 +38,6 @@ To achieve better performance in the Scheduler when loading a large number of re
 
 
 
-N> For now, the virtual loading of resources and events is available only for timeline views. In the future, we plan to port the same virtual loading on all other applicable Scheduler views.
+> For now, the virtual loading of resources and events is available only for timeline views. In the future, we plan to port the same virtual loading on all other applicable Scheduler views.
 
 > You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

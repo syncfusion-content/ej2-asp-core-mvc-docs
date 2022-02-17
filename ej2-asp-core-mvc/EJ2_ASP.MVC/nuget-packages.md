@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Nuget Packages of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Nuget Packages in ##Platform_Name## Component
+description: Learn here all about Nuget Packages in Syncfusion ##Platform_Name## component and more.
 platform: ej2-asp-core-mvc
 control: Nuget Packages
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # NuGet Packages for ASP.NET MVC
 
-N> You can use the Syncfusion ASP.NET MVC NuGet packages without installing the Essential Studio or ASP.NET MVC platform installation to implement the Syncfusion ASP.NET MVC controls.
+> You can use the Syncfusion ASP.NET MVC NuGet packages without installing the Essential Studio or ASP.NET MVC platform installation to implement the Syncfusion ASP.NET MVC controls.
 
 ## Installing NuGet Packages
 
@@ -22,7 +22,7 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
     ![img3](images/nuget1.png)
 
-    Alternatively, click **Tools** in menu, **NuGet Package Manager | Manage NuGet Packages for Solution...**
+    Alternatively, click **Tools** in menu, **NuGet Package Manager -> Manage NuGet Packages for Solution...**
 
 2. By default, the `NuGet.org` package is selected in the **Package source** drop-down. Select your appropriate feed name that you configured If `NuGet.org` is not configured in your Visual Studio, refer to the Microsoft docs to configure `NuGet.org` feed URL in your Visual Studio.
 
@@ -30,7 +30,7 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
 3. The Syncfusion ASP.NET MVC NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
 
-N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from `v16.2.0.46`. So, If you need to Install earlier version of `16.2.0.46` Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
+> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from `v16.2.0.46`. So, If you need to Install earlier version of `16.2.0.46` Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ### Using Package Manager Console
 
@@ -78,7 +78,7 @@ The NuGet Command Line Interface (CLI), `nuget.exe`, provides the full extent of
 
 1. Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
-    N>  To update the existing `nuget.exe` to latest version use the following command:
+    >  To update the existing `nuget.exe` to latest version use the following command:
 
     ```
     nuget update -self
@@ -114,7 +114,7 @@ The NuGet Command Line Interface (CLI), `nuget.exe`, provides the full extent of
 
     ```
 
-   N> If you need to Install `v16.2.0.46` before Syncfusion NuGet packages, configure [Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
+   > If you need to Install `v16.2.0.46` before Syncfusion NuGet packages, configure [Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ## Upgrading NuGet packages
 
@@ -137,7 +137,7 @@ Using **Update** context menu from Visual Studio for Mac application, NuGet pack
 
 2. This will update the NuGet package to the latest version. You can double-click the Add packages and choose the specific version.
 
-N> To update all the projects from solution, use update option in the solution level.
+> To update all the projects from solution, use update option in the solution level.
 
 ### Using Package Manger Console
 
@@ -174,7 +174,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
 
 1. Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
-    N> To update the existing `nuget.exe` to latest version use the following command:
+    > To update the existing `nuget.exe` to latest version use the following command:
 
     ```
     nuget update -self
@@ -190,7 +190,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update
     ```
 
-    N> `configPath` is optional. This identifies the `package.config` or solutions file lists the packages utilized in the project.
+    > `configPath` is optional. This identifies the `package.config` or solutions file lists the packages utilized in the project.
 
     **For example:**
 
@@ -199,4 +199,4 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update “C:\Users\SyncfusionApplication\package.config”
     ```
 
-    N> Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.
+    > Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.

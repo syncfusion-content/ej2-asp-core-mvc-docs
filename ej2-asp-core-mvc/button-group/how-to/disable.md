@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Disable of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Disable in ##Platform_Name## Button Group Component
+description: Learn here all about Disable in Syncfusion ##Platform_Name## Button Group component and more.
 platform: ej2-asp-core-mvc
 control: Disable
 publishingplatform: ##Platform_Name##

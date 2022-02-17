@@ -1,13 +1,20 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Sizing of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Sizing in ##Platform_Name## Textbox Component
+description: Learn here all about Sizing in Syncfusion ##Platform_Name## Textbox component and more.
 platform: ej2-asp-core-mvc
 control: Sizing
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Sizing
+
+You can render the TextBox in two different sizes.
+
+Property   | Description
+------------ | -------------
   Normal     | By default, the TextBox is rendered with normal size.
   Small      | You need to add `e-small` class to the input element, or else add to the input container.
 

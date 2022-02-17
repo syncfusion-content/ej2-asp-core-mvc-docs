@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Card Image of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Card Image in ##Platform_Name## Card Component
+description: Learn here all about Card Image in Syncfusion ##Platform_Name## Card component and more.
 platform: ej2-asp-core-mvc
 control: Card Image
 publishingplatform: ##Platform_Name##
@@ -40,10 +40,10 @@ Card image is supported to include a title or caption for the image. By default,
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/card_img/tagHelper %}
+{% include code-snippet/card/card-img/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_img/controller.cs %}
+{% include code-snippet/card/card-img/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -51,10 +51,10 @@ Card image is supported to include a title or caption for the image. By default,
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/card/card_img/razor %}
+{% include code-snippet/card/card-img/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_img/controller.cs %}
+{% include code-snippet/card/card-img/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -75,10 +75,10 @@ Divider used to separate the elements inside the card. You can add divider insid
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/card_sep/tagHelper %}
+{% include code-snippet/card/card-sep/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_sep/controller.cs %}
+{% include code-snippet/card/card-sep/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -86,10 +86,10 @@ Divider used to separate the elements inside the card. You can add divider insid
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/card/card_sep/razor %}
+{% include code-snippet/card/card-sep/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_sep/controller.cs %}
+{% include code-snippet/card/card-sep/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

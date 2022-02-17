@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Light Weight of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Light Weight in ##Platform_Name## Range Navigator Component
+description: Learn here all about Light Weight in Syncfusion ##Platform_Name## Range Navigator component and more.
 platform: ej2-asp-core-mvc
 control: Light Weight
 publishingplatform: ##Platform_Name##

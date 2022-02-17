@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Client Side Validation Using Form Validator of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Client Side Validation Using Form Validator in ##Platform_Name## Timepicker Component
+description: Learn here all about Client Side Validation Using Form Validator in Syncfusion ##Platform_Name## Timepicker component and more.
 platform: ej2-asp-core-mvc
 control: Client Side Validation Using Form Validator
 publishingplatform: ##Platform_Name##

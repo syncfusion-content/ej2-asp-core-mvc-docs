@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Show Buttongroup Selected State On Initial Render of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Show Buttongroup Selected State On Initial Render in ##Platform_Name## Button Group Component
+description: Learn here all about Show Buttongroup Selected State On Initial Render in Syncfusion ##Platform_Name## Button Group component and more.
 platform: ej2-asp-core-mvc
 control: Show Buttongroup Selected State On Initial Render
 publishingplatform: ##Platform_Name##

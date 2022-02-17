@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Spinner And Progress of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Spinner And Progress in ##Platform_Name## Progress Button Component
+description: Learn here all about Spinner And Progress in Syncfusion ##Platform_Name## Progress Button component and more.
 platform: ej2-asp-core-mvc
 control: Spinner And Progress
 publishingplatform: ##Platform_Name##

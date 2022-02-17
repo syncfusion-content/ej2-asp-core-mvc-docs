@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Labels of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Labels in ##Platform_Name## Range Navigator Component
+description: Learn here all about Labels in Syncfusion ##Platform_Name## Range Navigator component and more.
 platform: ej2-asp-core-mvc
 control: Labels
 publishingplatform: ##Platform_Name##

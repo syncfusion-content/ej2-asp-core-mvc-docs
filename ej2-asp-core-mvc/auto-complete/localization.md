@@ -1,13 +1,21 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Localization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Localization in ##Platform_Name## Auto Complete Component
+description: Learn here all about Localization in Syncfusion ##Platform_Name## Auto Complete component and more.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
+# Localization
+
+The Localization library allows you to localize static text content of the
+`noRecordsTemplate` and `actionFailureTemplate` properties according to the culture currently assigned to the AutoComplete.
+
+| Locale key | en-US (default)
+|------|------
 | noRecordsTemplate |  No Records Found
 | actionFailureTemplate | The Request Failed
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Islamic Calendar of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Islamic Calendar in ##Platform_Name## Calendar Component
+description: Learn here all about Islamic Calendar in Syncfusion ##Platform_Name## Calendar component and more.
 platform: ej2-asp-core-mvc
 control: Islamic Calendar
 publishingplatform: ##Platform_Name##

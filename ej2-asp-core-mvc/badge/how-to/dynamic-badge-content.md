@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Dynamic Badge Content of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Dynamic Badge Content in ##Platform_Name## Badge Component
+description: Learn here all about Dynamic Badge Content in Syncfusion ##Platform_Name## Badge component and more.
 platform: ej2-asp-core-mvc
 control: Dynamic Badge Content
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Set Command Customization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Set Command Customization in ##Platform_Name## Toolbar Component
+description: Learn here all about Set Command Customization in Syncfusion ##Platform_Name## Toolbar component and more.
 platform: ej2-asp-core-mvc
 control: Set Command Customization
 publishingplatform: ##Platform_Name##

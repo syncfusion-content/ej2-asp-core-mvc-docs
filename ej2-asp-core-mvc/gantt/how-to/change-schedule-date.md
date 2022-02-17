@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Change Schedule Date of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Change Schedule Date in ##Platform_Name## Gantt Component
+description: Learn here all about Change Schedule Date in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Change Schedule Date
 publishingplatform: ##Platform_Name##

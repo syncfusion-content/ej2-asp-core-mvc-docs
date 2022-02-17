@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Download of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Download in ##Platform_Name## Component
+description: Learn here all about Download in Syncfusion ##Platform_Name## component and more.
 platform: ej2-asp-core-mvc
 control: Download
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Dual List Box of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Dual List Box in ##Platform_Name## List Box Component
+description: Learn here all about Dual List Box in Syncfusion ##Platform_Name## List Box component and more.
 platform: ej2-asp-core-mvc
 control: Dual List Box
 publishingplatform: ##Platform_Name##

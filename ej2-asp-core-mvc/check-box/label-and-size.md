@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Label And Size of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Label And Size in ##Platform_Name## Check Box Component
+description: Learn here all about Label And Size in Syncfusion ##Platform_Name## Check Box component and more.
 platform: ej2-asp-core-mvc
 control: Label And Size
 publishingplatform: ##Platform_Name##

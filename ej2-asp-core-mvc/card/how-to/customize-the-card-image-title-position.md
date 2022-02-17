@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize The Card Image Title Position of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize The Card Image Title Position in ##Platform_Name## Card Component
+description: Learn here all about Customize The Card Image Title Position in Syncfusion ##Platform_Name## Card component and more.
 platform: ej2-asp-core-mvc
 control: Customize The Card Image Title Position
 publishingplatform: ##Platform_Name##
@@ -17,10 +17,10 @@ Card Image titles are placed as always Bottom-Left Corner only, You can manually
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/card/card_img-title-pos/tagHelper %}
+{% include code-snippet/card/card-img-title-pos/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_img-title-pos/controller.cs %}
+{% include code-snippet/card/card-img-title-pos/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ Card Image titles are placed as always Bottom-Left Corner only, You can manually
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/card/card_img-title-pos/razor %}
+{% include code-snippet/card/card-img-title-pos/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card_img-title-pos/controller.cs %}
+{% include code-snippet/card/card-img-title-pos/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

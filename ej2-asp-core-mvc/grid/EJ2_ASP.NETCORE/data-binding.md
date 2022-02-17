@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Data Binding of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Data Binding in ##Platform_Name## Grid Component
+description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -578,7 +578,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-N> For ASP.NET **Core  3.0 or above**, use the below code
+> For ASP.NET **Core  3.0 or above**, use the below code
 
 For this we need to install **Microsoft.AspNetCore.Mvc.NewtonsoftJson** package.
 

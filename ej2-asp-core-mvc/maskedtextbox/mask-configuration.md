@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Mask Configuration of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Mask Configuration in ##Platform_Name## Maskedtextbox Component
+description: Learn here all about Mask Configuration in Syncfusion ##Platform_Name## Maskedtextbox component and more.
 platform: ej2-asp-core-mvc
 control: Mask Configuration
 publishingplatform: ##Platform_Name##

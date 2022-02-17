@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Avatar Customization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Avatar Customization in ##Platform_Name## Avatar Component
+description: Learn here all about Avatar Customization in Syncfusion ##Platform_Name## Avatar component and more.
 platform: ej2-asp-core-mvc
 control: Avatar Customization
 publishingplatform: ##Platform_Name##
