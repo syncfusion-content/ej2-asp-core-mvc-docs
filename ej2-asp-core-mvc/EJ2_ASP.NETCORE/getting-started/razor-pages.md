@@ -31,15 +31,20 @@ Syncfusion ASP.NET Core components are available in [nuget.org.](https://www.nug
 ## Add Syncfusion ASP.NET Core Tag Helper
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
-    ```cshtml
-    @addTagHelper *, Syncfusion.EJ2
-    ```
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+@addTagHelper *, Syncfusion.EJ2
+
+{% endhighlight %}
+{% endtabs %}
     
 ## Add Style Sheet
 
 Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core components. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-    ```cshtml
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
     <head>
         ....
         ....
@@ -48,12 +53,14 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
         <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 
     </head>
-    ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Script Reference
 In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-    ```cshtml
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
     <head>
         ....
         ....
@@ -61,29 +68,34 @@ In this getting started walk-through, the required scripts are referred using CD
         <!-- Syncfusion Essential JS 2 Scripts -->
         <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
-    ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Register Syncfusion Script Manager
 Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
 
-    ```cshtml
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
     <body>
         ....
         ....
         <!-- Syncfusion ScriptManager -->
         <ejs-scripts></ejs-scripts>
     </body>
-    ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Add ASP.NET Core Calendar Component
 
 Now, add the Syncfusion ASP.NET Core Calendar tag helper in `~/Pages/Index.cshtml` page.
 
-    ```cshtml
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
     <div>
         <ejs-calendar id="calendar"></ejs-calendar>
     </div>
-    ```
+{% endhighlight %}
+{% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Calendar component will be rendered in the default web browser.
 

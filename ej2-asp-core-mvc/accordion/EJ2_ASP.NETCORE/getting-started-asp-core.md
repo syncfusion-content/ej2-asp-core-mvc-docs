@@ -30,46 +30,38 @@ Syncfusion ASP.NET Core components are available in [nuget.org.](https://www.nug
 ## Add Syncfusion ASP.NET Core Tag Helper
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
-    ```cshtml
-    @addTagHelper *, Syncfusion.EJ2
-    ```
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
 
+@addTagHelper *, Syncfusion.EJ2
+
+{% endhighlight %}
+{% endtabs %}
     
 ## Add ASP.NET Core Accordion Component
 
-Now, add the Syncfusion ASP.NET Core Calendar tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Accordion tag helper in `~/Pages/Index.cshtml` page.
 
-{% aspTab template="accordion/getting-started/data", sourceFiles="data.cs" %}
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
 
-{% endaspTab %}
+        <div class="control_wrapper accordion-control-section">
+            <ejs-accordion id="defaultAccordion">
+                <e-accordion-accordionitems>
+                    <e-accordion-accordionitem expanded="true" header="ASP.NET" content="Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser. ASP.NET pages use a compiled,event-driven programming model that improves performance and enables the separation of application logic and user interface."></e-accordion-accordionitem>
+                    <e-accordion-accordionitem header="ASP.NET MVC" content="The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications. The ASP.NET MVC framework is a lightweight, highly testable presentation framework that (as with Web Forms-based applications) is integrated with existing ASP.NET features, such as master pages and membership-based authentication."></e-accordion-accordionitem>
+                    <e-accordion-accordionitem header="JavaScript" content="JavaScript (JS) is an interpreted computer programming language.It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.More recently, however, it has become common in both game development and the creation of desktop applications."></e-accordion-accordionitem>
+                </e-accordion-accordionitems>
+            </ejs-accordion>
+        </div>
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Calendar component will be rendered in the default web browser.
+{% endhighlight %}
+{% endtabs %}
 
-    ![ASP.NET Core Accordion component - Getting Started](../../accordion/images/accordion.PNG)
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Accordion component will be rendered in the default web browser.
+
+[ASP.NET Core Accordion component - Getting Started](../../accordion/images/accordion.PNG)
     
-## Adding Accordion component to the Application
-
-* Now open your view page to render Accordion component.
-
-{% aspTab template="accordion/getting-started/data", sourceFiles="data.cs" %}
-
-{% endaspTab %}
-
-![ASP.NET Core Accordion - Getting Started](../../accordion/images/accordion.PNG)
-
-## Adding Accordion component using content template
-
-Bind any data by simply using the content template property in ASP.NET Core Accordion. Accordion is already provided with the content template support and hence you can utilize this support to load the other HTML elements or as per your requirement
-
-In the below demo, the Accordion items are given with [chart](../../chart), [grid](../../grid), [calender](../../calendar) as their content using the content template.
-
-{% aspTab template="accordion/getting-started/contenttemplate", sourceFiles="contenttemplate.cs" %}
-
-{% endaspTab %}
-
-![ASP.NET Core Accordion using content template](../../accordion/images/contenttemplate.PNG)
-
-> Also render accordion without using `contentTemplate` which can be referred [here](../../accordion/how-to/set-the-nested-accordion).
 
 ## See Also
 
