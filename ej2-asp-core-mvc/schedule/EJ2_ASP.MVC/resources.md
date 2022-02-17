@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Resources of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Resources in ##Platform_Name## Schedule Component
+description: Learn here all about Resources in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Resources
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Change The Text Content And Styles Of The Progressbutton During Progress of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Change The Text Content And Styles Of The Progressbutton During Progress in ##Platform_Name## Progress Button Component
+description: Learn here all about Change The Text Content And Styles Of The Progressbutton During Progress in Syncfusion ##Platform_Name## Progress Button component and more.
 platform: ej2-asp-core-mvc
 control: Change The Text Content And Styles Of The Progressbutton During Progress
 publishingplatform: ##Platform_Name##

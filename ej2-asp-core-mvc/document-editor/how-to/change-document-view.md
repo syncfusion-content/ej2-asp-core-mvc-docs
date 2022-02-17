@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Change Document View of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Change Document View in ##Platform_Name## Document Editor Component
+description: Learn here all about Change Document View in Syncfusion ##Platform_Name## Document Editor component and more.
 platform: ej2-asp-core-mvc
 control: Change Document View
 publishingplatform: ##Platform_Name##

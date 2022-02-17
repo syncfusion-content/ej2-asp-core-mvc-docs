@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Colorpicker of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Colorpicker in ##Platform_Name## Color Picker Component
+description: Learn here all about Customize Colorpicker in Syncfusion ##Platform_Name## Color Picker component and more.
 platform: ej2-asp-core-mvc
 control: Customize Colorpicker
 publishingplatform: ##Platform_Name##

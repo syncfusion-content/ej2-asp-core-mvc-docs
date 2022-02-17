@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Item Configuration of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Item Configuration in ##Platform_Name## Toolbar Component
+description: Learn here all about Item Configuration in Syncfusion ##Platform_Name## Toolbar component and more.
 platform: ej2-asp-core-mvc
 control: Item Configuration
 publishingplatform: ##Platform_Name##

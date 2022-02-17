@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Input And Anchor Elements of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Input And Anchor Elements in ##Platform_Name## Button Component
+description: Learn here all about Customize Input And Anchor Elements in Syncfusion ##Platform_Name## Button component and more.
 platform: ej2-asp-core-mvc
 control: Customize Input And Anchor Elements
 publishingplatform: ##Platform_Name##

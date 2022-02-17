@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Daterangepicker For Core of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Daterangepicker For Core in ##Platform_Name## Daterangepicker Component
+description: Learn here all about Daterangepicker For Core in Syncfusion ##Platform_Name## Daterangepicker component and more.
 platform: ej2-asp-core-mvc
 control: Daterangepicker For Core
 publishingplatform: ##Platform_Name##

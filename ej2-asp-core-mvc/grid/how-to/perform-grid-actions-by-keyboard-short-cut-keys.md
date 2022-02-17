@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Perform Grid Actions By Keyboard Short Cut Keys of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Perform Grid Actions By Keyboard Short Cut Keys in ##Platform_Name## Grid Component
+description: Learn here all about Perform Grid Actions By Keyboard Short Cut Keys in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Perform Grid Actions By Keyboard Short Cut Keys
 publishingplatform: ##Platform_Name##

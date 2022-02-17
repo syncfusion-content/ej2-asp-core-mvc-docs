@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Hide Dropdown Arrow of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Hide Dropdown Arrow in ##Platform_Name## Drop Down Button Component
+description: Learn here all about Hide Dropdown Arrow in Syncfusion ##Platform_Name## Drop Down Button component and more.
 platform: ej2-asp-core-mvc
 control: Hide Dropdown Arrow
 publishingplatform: ##Platform_Name##

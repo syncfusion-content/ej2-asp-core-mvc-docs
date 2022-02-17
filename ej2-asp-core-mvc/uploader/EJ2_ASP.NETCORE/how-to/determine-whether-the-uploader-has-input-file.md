@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Determine Whether The Uploader Has Input File of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Determine Whether The Uploader Has Input File in ##Platform_Name## Uploader Component
+description: Learn here all about Determine Whether The Uploader Has Input File in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Determine Whether The Uploader Has Input File
 publishingplatform: ##Platform_Name##

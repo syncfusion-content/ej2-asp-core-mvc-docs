@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Render Listview With Hyper Link Navigation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Render Listview With Hyper Link Navigation in ##Platform_Name## Listview Component
+description: Learn here all about Render Listview With Hyper Link Navigation in Syncfusion ##Platform_Name## Listview component and more.
 platform: ej2-asp-core-mvc
 control: Render Listview With Hyper Link Navigation
 publishingplatform: ##Platform_Name##

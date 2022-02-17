@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Validate The Text When Renaming The Tree Node of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Validate The Text When Renaming The Tree Node in ##Platform_Name## Treeview Component
+description: Learn here all about Validate The Text When Renaming The Tree Node in Syncfusion ##Platform_Name## Treeview component and more.
 platform: ej2-asp-core-mvc
 control: Validate The Text When Renaming The Tree Node
 publishingplatform: ##Platform_Name##

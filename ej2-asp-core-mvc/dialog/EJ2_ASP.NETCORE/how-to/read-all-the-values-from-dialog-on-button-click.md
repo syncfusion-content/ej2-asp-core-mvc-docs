@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Read All The Values From Dialog On Button Click of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Read All The Values From Dialog On Button Click in ##Platform_Name## Dialog Component
+description: Learn here all about Read All The Values From Dialog On Button Click in Syncfusion ##Platform_Name## Dialog component and more.
 platform: ej2-asp-core-mvc
 control: Read All The Values From Dialog On Button Click
 publishingplatform: ##Platform_Name##

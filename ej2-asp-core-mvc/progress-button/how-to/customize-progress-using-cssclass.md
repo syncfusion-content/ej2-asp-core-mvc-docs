@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Progress Using Cssclass of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Progress Using Cssclass in ##Platform_Name## Progress Button Component
+description: Learn here all about Customize Progress Using Cssclass in Syncfusion ##Platform_Name## Progress Button component and more.
 platform: ej2-asp-core-mvc
 control: Customize Progress Using Cssclass
 publishingplatform: ##Platform_Name##

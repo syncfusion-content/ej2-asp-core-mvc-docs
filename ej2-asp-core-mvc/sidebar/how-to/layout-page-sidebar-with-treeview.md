@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Layout Page Sidebar With Treeview of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Layout Page Sidebar With Treeview in ##Platform_Name## Sidebar Component
+description: Learn here all about Layout Page Sidebar With Treeview in Syncfusion ##Platform_Name## Sidebar component and more.
 platform: ej2-asp-core-mvc
 control: Layout Page Sidebar With Treeview
 publishingplatform: ##Platform_Name##

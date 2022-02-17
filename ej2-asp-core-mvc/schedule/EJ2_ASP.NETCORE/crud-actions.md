@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Crud Actions of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Crud Actions in ##Platform_Name## Schedule Component
+description: Learn here all about Crud Actions in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Crud Actions
 publishingplatform: ##Platform_Name##

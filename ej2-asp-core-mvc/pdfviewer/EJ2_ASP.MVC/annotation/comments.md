@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Comments of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Comments in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Comments in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Comments
 publishingplatform: ##Platform_Name##

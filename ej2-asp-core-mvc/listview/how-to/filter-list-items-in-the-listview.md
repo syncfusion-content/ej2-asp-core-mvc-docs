@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Filter List Items In The Listview of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Filter List Items In The Listview in ##Platform_Name## Listview Component
+description: Learn here all about Filter List Items In The Listview in Syncfusion ##Platform_Name## Listview component and more.
 platform: ej2-asp-core-mvc
 control: Filter List Items In The Listview
 publishingplatform: ##Platform_Name##

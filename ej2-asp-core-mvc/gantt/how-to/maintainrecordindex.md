@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Maintainrecordindex of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Maintainrecordindex in ##Platform_Name## Gantt Component
+description: Learn here all about Maintainrecordindex in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Maintainrecordindex
 publishingplatform: ##Platform_Name##

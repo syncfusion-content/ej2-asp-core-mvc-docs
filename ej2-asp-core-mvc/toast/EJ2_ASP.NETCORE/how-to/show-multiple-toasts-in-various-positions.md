@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Show Multiple Toasts In Various Positions of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Show Multiple Toasts In Various Positions in ##Platform_Name## Toast Component
+description: Learn here all about Show Multiple Toasts In Various Positions in Syncfusion ##Platform_Name## Toast component and more.
 platform: ej2-asp-core-mvc
 control: Show Multiple Toasts In Various Positions
 publishingplatform: ##Platform_Name##

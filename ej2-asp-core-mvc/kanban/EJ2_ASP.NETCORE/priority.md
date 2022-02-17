@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Priority of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Priority in ##Platform_Name## Kanban Component
+description: Learn here all about Priority in Syncfusion ##Platform_Name## Kanban component and more.
 platform: ej2-asp-core-mvc
 control: Priority
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Submit Name And Value In Form of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Submit Name And Value In Form in ##Platform_Name## Switch Component
+description: Learn here all about Submit Name And Value In Form in Syncfusion ##Platform_Name## Switch component and more.
 platform: ej2-asp-core-mvc
 control: Submit Name And Value In Form
 publishingplatform: ##Platform_Name##

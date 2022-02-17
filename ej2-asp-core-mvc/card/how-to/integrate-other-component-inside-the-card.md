@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Integrate Other Component Inside The Card of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Integrate Other Component Inside The Card in ##Platform_Name## Card Component
+description: Learn here all about Integrate Other Component Inside The Card in Syncfusion ##Platform_Name## Card component and more.
 platform: ej2-asp-core-mvc
 control: Integrate Other Component Inside The Card
 publishingplatform: ##Platform_Name##

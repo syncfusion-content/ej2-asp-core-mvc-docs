@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Exporting of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Exporting in ##Platform_Name## Schedule Component
+description: Learn here all about Exporting in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Exporting
 publishingplatform: ##Platform_Name##

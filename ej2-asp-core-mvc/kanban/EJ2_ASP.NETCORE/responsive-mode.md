@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Responsive Mode of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Responsive Mode in ##Platform_Name## Kanban Component
+description: Learn here all about Responsive Mode in Syncfusion ##Platform_Name## Kanban component and more.
 platform: ej2-asp-core-mvc
 control: Responsive Mode
 publishingplatform: ##Platform_Name##

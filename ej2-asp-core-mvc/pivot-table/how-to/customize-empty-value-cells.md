@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Empty Value Cells of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Empty Value Cells in ##Platform_Name## Pivot Table Component
+description: Learn here all about Customize Empty Value Cells in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Customize Empty Value Cells
 publishingplatform: ##Platform_Name##

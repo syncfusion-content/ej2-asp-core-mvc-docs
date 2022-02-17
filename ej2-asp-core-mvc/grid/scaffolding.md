@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Scaffolding of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Scaffolding in ##Platform_Name## Grid Component
+description: Learn here all about Scaffolding in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Scaffolding
 publishingplatform: ##Platform_Name##

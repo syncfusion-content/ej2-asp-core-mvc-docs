@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Migration From Css Textbox To Aspnetmvc Textbox of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Migration From Css Textbox To Aspnetmvc Textbox in ##Platform_Name## Textbox Component
+description: Learn here all about Migration From Css Textbox To Aspnetmvc Textbox in Syncfusion ##Platform_Name## Textbox component and more.
 platform: ej2-asp-core-mvc
 control: Migration From Css Textbox To Aspnetmvc Textbox
 publishingplatform: ##Platform_Name##

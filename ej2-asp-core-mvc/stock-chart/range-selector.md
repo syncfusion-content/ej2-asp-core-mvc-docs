@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Range Selector of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Range Selector in ##Platform_Name## Stock Chart Component
+description: Learn here all about Range Selector in Syncfusion ##Platform_Name## Stock Chart component and more.
 platform: ej2-asp-core-mvc
 control: Range Selector
 publishingplatform: ##Platform_Name##

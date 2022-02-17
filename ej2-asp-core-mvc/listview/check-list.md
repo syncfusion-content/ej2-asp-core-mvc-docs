@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Check List of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Check List in ##Platform_Name## Listview Component
+description: Learn here all about Check List in Syncfusion ##Platform_Name## Listview component and more.
 platform: ej2-asp-core-mvc
 control: Check List
 publishingplatform: ##Platform_Name##

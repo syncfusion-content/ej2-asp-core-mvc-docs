@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Header Double Click of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Header Double Click in ##Platform_Name## Kanban Component
+description: Learn here all about Header Double Click in Syncfusion ##Platform_Name## Kanban component and more.
 platform: ej2-asp-core-mvc
 control: Header Double Click
 publishingplatform: ##Platform_Name##

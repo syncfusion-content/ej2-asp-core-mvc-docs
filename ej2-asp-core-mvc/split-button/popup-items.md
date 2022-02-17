@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Popup Items of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Popup Items in ##Platform_Name## Split Button Component
+description: Learn here all about Popup Items in Syncfusion ##Platform_Name## Split Button component and more.
 platform: ej2-asp-core-mvc
 control: Popup Items
 publishingplatform: ##Platform_Name##

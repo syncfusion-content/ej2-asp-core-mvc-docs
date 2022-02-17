@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Menu Items of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Menu Items in ##Platform_Name## Menu Component
+description: Learn here all about Customize Menu Items in Syncfusion ##Platform_Name## Menu component and more.
 platform: ej2-asp-core-mvc
 control: Customize Menu Items
 publishingplatform: ##Platform_Name##

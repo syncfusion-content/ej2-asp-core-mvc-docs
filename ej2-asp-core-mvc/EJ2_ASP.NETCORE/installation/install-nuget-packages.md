@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Install Nuget Packages of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Install Nuget Packages in ##Platform_Name## Ej2_asp.netcore Component
+description: Learn here all about Install Nuget Packages in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
 platform: ej2-asp-core-mvc
 control: Install Nuget Packages
 publishingplatform: ##Platform_Name##

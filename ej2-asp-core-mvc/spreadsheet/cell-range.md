@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Cell Range of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Cell Range in ##Platform_Name## Spreadsheet Component
+description: Learn here all about Cell Range in Syncfusion ##Platform_Name## Spreadsheet component and more.
 platform: ej2-asp-core-mvc
 control: Cell Range
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Dynamic Chart of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Dynamic Chart in ##Platform_Name## Chart Component
+description: Learn here all about Dynamic Chart in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Dynamic Chart
 publishingplatform: ##Platform_Name##

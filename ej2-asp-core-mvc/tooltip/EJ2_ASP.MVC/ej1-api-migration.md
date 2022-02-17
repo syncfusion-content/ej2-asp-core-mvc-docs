@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Ej1 Api Migration of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Ej1 Api Migration in ##Platform_Name## Tooltip Component
+description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Tooltip component and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##

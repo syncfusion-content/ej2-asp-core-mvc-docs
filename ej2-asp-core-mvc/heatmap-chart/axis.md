@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Axis of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Axis in ##Platform_Name## Heatmap Chart Component
+description: Learn here all about Axis in Syncfusion ##Platform_Name## Heatmap Chart component and more.
 platform: ej2-asp-core-mvc
 control: Axis
 publishingplatform: ##Platform_Name##

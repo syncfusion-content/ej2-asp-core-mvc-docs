@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Title Subtitle of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Title Subtitle in ##Platform_Name## Smithchart Component
+description: Learn here all about Title Subtitle in Syncfusion ##Platform_Name## Smithchart component and more.
 platform: ej2-asp-core-mvc
 control: Title Subtitle
 publishingplatform: ##Platform_Name##

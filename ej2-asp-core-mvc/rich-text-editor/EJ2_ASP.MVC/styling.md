@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Styling of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Styling in ##Platform_Name## Rich Text Editor Component
+description: Learn here all about Styling in Syncfusion ##Platform_Name## Rich Text Editor component and more.
 platform: ej2-asp-core-mvc
 control: Styling
 publishingplatform: ##Platform_Name##

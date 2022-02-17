@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Model Dialog With Rte of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Model Dialog With Rte in ##Platform_Name## Dialog Component
+description: Learn here all about Model Dialog With Rte in Syncfusion ##Platform_Name## Dialog component and more.
 platform: ej2-asp-core-mvc
 control: Model Dialog With Rte
 publishingplatform: ##Platform_Name##

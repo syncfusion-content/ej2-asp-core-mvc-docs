@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Recurrence Editor of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Recurrence Editor in ##Platform_Name## Schedule Component
+description: Learn here all about Recurrence Editor in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Recurrence Editor
 publishingplatform: ##Platform_Name##

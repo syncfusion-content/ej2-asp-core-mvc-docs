@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Tool Tip of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Tool Tip in ##Platform_Name## Range Navigator Component
+description: Learn here all about Tool Tip in Syncfusion ##Platform_Name## Range Navigator component and more.
 platform: ej2-asp-core-mvc
 control: Tool Tip
 publishingplatform: ##Platform_Name##

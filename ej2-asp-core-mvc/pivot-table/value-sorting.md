@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Value Sorting of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Value Sorting in ##Platform_Name## Pivot Table Component
+description: Learn here all about Value Sorting in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Value Sorting
 publishingplatform: ##Platform_Name##

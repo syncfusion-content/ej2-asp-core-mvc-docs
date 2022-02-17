@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Tool Bar of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Tool Bar in ##Platform_Name## Gantt Component
+description: Learn here all about Tool Bar in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Tool Bar
 publishingplatform: ##Platform_Name##

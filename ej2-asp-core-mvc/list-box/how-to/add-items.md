@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Add Items of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Add Items in ##Platform_Name## List Box Component
+description: Learn here all about Add Items in Syncfusion ##Platform_Name## List Box component and more.
 platform: ej2-asp-core-mvc
 control: Add Items
 publishingplatform: ##Platform_Name##

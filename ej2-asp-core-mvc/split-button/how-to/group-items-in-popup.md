@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Group Items In Popup of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Group Items In Popup in ##Platform_Name## Split Button Component
+description: Learn here all about Group Items In Popup in Syncfusion ##Platform_Name## Split Button component and more.
 platform: ej2-asp-core-mvc
 control: Group Items In Popup
 publishingplatform: ##Platform_Name##

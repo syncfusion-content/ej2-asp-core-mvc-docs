@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Chart Annotations of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Chart Annotations in ##Platform_Name## Chart Component
+description: Learn here all about Chart Annotations in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Chart Annotations
 publishingplatform: ##Platform_Name##

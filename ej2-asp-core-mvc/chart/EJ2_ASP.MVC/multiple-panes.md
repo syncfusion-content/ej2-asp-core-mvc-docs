@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Multiple Panes of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Multiple Panes in ##Platform_Name## Chart Component
+description: Learn here all about Multiple Panes in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Multiple Panes
 publishingplatform: ##Platform_Name##

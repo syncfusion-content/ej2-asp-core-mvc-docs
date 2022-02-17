@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Repeat Button of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Repeat Button in ##Platform_Name## Button Component
+description: Learn here all about Repeat Button in Syncfusion ##Platform_Name## Button component and more.
 platform: ej2-asp-core-mvc
 control: Repeat Button
 publishingplatform: ##Platform_Name##

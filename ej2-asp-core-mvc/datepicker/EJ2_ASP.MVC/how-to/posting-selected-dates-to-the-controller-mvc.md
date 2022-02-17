@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Posting Selected Dates To The Controller Mvc of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Posting Selected Dates To The Controller Mvc in ##Platform_Name## Datepicker Component
+description: Learn here all about Posting Selected Dates To The Controller Mvc in Syncfusion ##Platform_Name## Datepicker component and more.
 platform: ej2-asp-core-mvc
 control: Posting Selected Dates To The Controller Mvc
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Set Cursor Position While Focus On The Input Textbox of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Set Cursor Position While Focus On The Input Textbox in ##Platform_Name## Maskedtextbox Component
+description: Learn here all about Set Cursor Position While Focus On The Input Textbox in Syncfusion ##Platform_Name## Maskedtextbox component and more.
 platform: ej2-asp-core-mvc
 control: Set Cursor Position While Focus On The Input Textbox
 publishingplatform: ##Platform_Name##

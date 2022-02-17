@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Grid Tick of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Grid Tick in ##Platform_Name## Range Navigator Component
+description: Learn here all about Grid Tick in Syncfusion ##Platform_Name## Range Navigator component and more.
 platform: ej2-asp-core-mvc
 control: Grid Tick
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Title And Sub Title of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Title And Sub Title in ##Platform_Name## Accumulation Chart Component
+description: Learn here all about Title And Sub Title in Syncfusion ##Platform_Name## Accumulation Chart component and more.
 platform: ej2-asp-core-mvc
 control: Title And Sub Title
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Page Settings of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Page Settings in ##Platform_Name## Diagram Component
+description: Learn here all about Page Settings in Syncfusion ##Platform_Name## Diagram component and more.
 platform: ej2-asp-core-mvc
 control: Page Settings
 publishingplatform: ##Platform_Name##

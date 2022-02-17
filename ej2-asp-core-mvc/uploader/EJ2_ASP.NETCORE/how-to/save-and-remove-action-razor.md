@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Save And Remove Action Razor of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Save And Remove Action Razor in ##Platform_Name## Uploader Component
+description: Learn here all about Save And Remove Action Razor in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Save And Remove Action Razor
 publishingplatform: ##Platform_Name##

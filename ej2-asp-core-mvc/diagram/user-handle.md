@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about User Handle of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: User Handle in ##Platform_Name## Diagram Component
+description: Learn here all about User Handle in Syncfusion ##Platform_Name## Diagram component and more.
 platform: ej2-asp-core-mvc
 control: User Handle
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Globalization And Localization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Globalization And Localization in ##Platform_Name## Pivot Table Component
+description: Learn here all about Globalization And Localization in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Globalization And Localization
 publishingplatform: ##Platform_Name##

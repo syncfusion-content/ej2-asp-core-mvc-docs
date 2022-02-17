@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Changing The Pivotview Component Minimum Height of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Changing The Pivotview Component Minimum Height in ##Platform_Name## Pivot Table Component
+description: Learn here all about Changing The Pivotview Component Minimum Height in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Changing The Pivotview Component Minimum Height
 publishingplatform: ##Platform_Name##

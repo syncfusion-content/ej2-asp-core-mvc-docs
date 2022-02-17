@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Grouping Bar of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Grouping Bar in ##Platform_Name## Pivot Table Component
+description: Learn here all about Grouping Bar in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Grouping Bar
 publishingplatform: ##Platform_Name##

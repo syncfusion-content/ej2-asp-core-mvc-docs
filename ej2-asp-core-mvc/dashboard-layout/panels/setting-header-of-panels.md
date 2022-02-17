@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Setting Header Of Panels of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Setting Header Of Panels in ##Platform_Name## Dashboard Layout Component
+description: Learn here all about Setting Header Of Panels in Syncfusion ##Platform_Name## Dashboard Layout component and more.
 platform: ej2-asp-core-mvc
 control: Setting Header Of Panels
 publishingplatform: ##Platform_Name##

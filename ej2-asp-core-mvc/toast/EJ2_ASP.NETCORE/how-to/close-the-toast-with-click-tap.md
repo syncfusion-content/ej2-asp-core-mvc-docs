@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Close The Toast With Click Tap of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Close The Toast With Click Tap in ##Platform_Name## Toast Component
+description: Learn here all about Close The Toast With Click Tap in Syncfusion ##Platform_Name## Toast component and more.
 platform: ej2-asp-core-mvc
 control: Close The Toast With Click Tap
 publishingplatform: ##Platform_Name##

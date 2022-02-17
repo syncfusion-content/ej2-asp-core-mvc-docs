@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Display Numeric Keypad When Focus On Mobile Devices of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Display Numeric Keypad When Focus On Mobile Devices in ##Platform_Name## Maskedtextbox Component
+description: Learn here all about Display Numeric Keypad When Focus On Mobile Devices in Syncfusion ##Platform_Name## Maskedtextbox component and more.
 platform: ej2-asp-core-mvc
 control: Display Numeric Keypad When Focus On Mobile Devices
 publishingplatform: ##Platform_Name##

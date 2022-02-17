@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Enable Scroll Option On All Day Section of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Enable Scroll Option On All Day Section in ##Platform_Name## Schedule Component
+description: Learn here all about Enable Scroll Option On All Day Section in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Enable Scroll Option On All Day Section
 publishingplatform: ##Platform_Name##

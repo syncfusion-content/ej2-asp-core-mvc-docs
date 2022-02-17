@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Layout of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Layout in ##Platform_Name## Treemap Component
+description: Learn here all about Layout in Syncfusion ##Platform_Name## Treemap component and more.
 platform: ej2-asp-core-mvc
 control: Layout
 publishingplatform: ##Platform_Name##

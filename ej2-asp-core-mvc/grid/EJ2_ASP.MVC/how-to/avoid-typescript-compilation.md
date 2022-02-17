@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Avoid Typescript Compilation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Avoid Typescript Compilation in ##Platform_Name## Grid Component
+description: Learn here all about Avoid Typescript Compilation in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Avoid Typescript Compilation
 publishingplatform: ##Platform_Name##

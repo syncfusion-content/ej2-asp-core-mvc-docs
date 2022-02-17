@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Tooltip For Button of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Tooltip For Button in ##Platform_Name## Button Component
+description: Learn here all about Tooltip For Button in Syncfusion ##Platform_Name## Button component and more.
 platform: ej2-asp-core-mvc
 control: Tooltip For Button
 publishingplatform: ##Platform_Name##

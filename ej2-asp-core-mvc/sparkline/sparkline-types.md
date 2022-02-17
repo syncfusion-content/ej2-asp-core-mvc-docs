@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Sparkline Types of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Sparkline Types in ##Platform_Name## Sparkline Component
+description: Learn here all about Sparkline Types in Syncfusion ##Platform_Name## Sparkline component and more.
 platform: ej2-asp-core-mvc
 control: Sparkline Types
 publishingplatform: ##Platform_Name##

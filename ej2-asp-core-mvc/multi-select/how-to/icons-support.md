@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Icons Support of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Icons Support in ##Platform_Name## Multi Select Component
+description: Learn here all about Icons Support in Syncfusion ##Platform_Name## Multi Select component and more.
 platform: ej2-asp-core-mvc
 control: Icons Support
 publishingplatform: ##Platform_Name##

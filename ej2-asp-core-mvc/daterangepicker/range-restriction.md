@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Range Restriction of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Range Restriction in ##Platform_Name## Daterangepicker Component
+description: Learn here all about Range Restriction in Syncfusion ##Platform_Name## Daterangepicker component and more.
 platform: ej2-asp-core-mvc
 control: Range Restriction
 publishingplatform: ##Platform_Name##

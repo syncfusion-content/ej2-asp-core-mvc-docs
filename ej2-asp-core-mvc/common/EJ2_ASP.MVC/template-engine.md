@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Template Engine of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Template Engine in ##Platform_Name## Common Component
+description: Learn here all about Template Engine in Syncfusion ##Platform_Name## Common component and more.
 platform: ej2-asp-core-mvc
 control: Template Engine
 publishingplatform: ##Platform_Name##

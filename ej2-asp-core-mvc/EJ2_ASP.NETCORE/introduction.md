@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Introduction of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Introduction in ##Platform_Name## Ej2_asp.netcore Component
+description: Learn here all about Introduction in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
 platform: ej2-asp-core-mvc
 control: Introduction
 publishingplatform: ##Platform_Name##
@@ -55,7 +55,6 @@ vertical-align: top;
 text-decoration: none!important;
 font-size: 14px!important;
 text-align: left!important;
-padding: 5px 5px 5px 0px;
 }
 .controlcategory
 {
@@ -183,7 +182,7 @@ in [our support site](https://www.syncfusion.com/support/directtrac/incidents/ne
 
 * Don’t see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/aspnet-core).
 
->Note: Syncfusion does not collect any kind of information when our components are used in customer applications.
+> Syncfusion does not collect any kind of information when our components are used in customer applications.
 
 ## See Also
 

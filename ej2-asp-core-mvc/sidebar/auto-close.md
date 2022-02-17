@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Auto Close of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Auto Close in ##Platform_Name## Sidebar Component
+description: Learn here all about Auto Close in Syncfusion ##Platform_Name## Sidebar component and more.
 platform: ej2-asp-core-mvc
 control: Auto Close
 publishingplatform: ##Platform_Name##

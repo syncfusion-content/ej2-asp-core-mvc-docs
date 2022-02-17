@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Slider Ticks Label of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Slider Ticks Label in ##Platform_Name## Range Slider Component
+description: Learn here all about Customize Slider Ticks Label in Syncfusion ##Platform_Name## Range Slider component and more.
 platform: ej2-asp-core-mvc
 control: Customize Slider Ticks Label
 publishingplatform: ##Platform_Name##

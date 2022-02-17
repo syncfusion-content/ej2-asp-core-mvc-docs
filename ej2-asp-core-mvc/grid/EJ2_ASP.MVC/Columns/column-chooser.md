@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Column Chooser of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Column Chooser in ##Platform_Name## Grid Component
+description: Learn here all about Column Chooser in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Column Chooser
 publishingplatform: ##Platform_Name##

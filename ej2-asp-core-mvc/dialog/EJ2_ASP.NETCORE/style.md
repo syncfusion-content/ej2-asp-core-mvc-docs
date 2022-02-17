@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Style of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Style in ##Platform_Name## Dialog Component
+description: Learn here all about Style in Syncfusion ##Platform_Name## Dialog component and more.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##

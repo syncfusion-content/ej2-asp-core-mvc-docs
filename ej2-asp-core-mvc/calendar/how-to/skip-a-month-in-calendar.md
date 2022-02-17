@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Skip A Month In Calendar of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Skip A Month In Calendar in ##Platform_Name## Calendar Component
+description: Learn here all about Skip A Month In Calendar in Syncfusion ##Platform_Name## Calendar component and more.
 platform: ej2-asp-core-mvc
 control: Skip A Month In Calendar
 publishingplatform: ##Platform_Name##

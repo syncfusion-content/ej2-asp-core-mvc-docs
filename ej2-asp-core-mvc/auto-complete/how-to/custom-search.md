@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Custom Search of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Custom Search in ##Platform_Name## Auto Complete Component
+description: Learn here all about Custom Search in Syncfusion ##Platform_Name## Auto Complete component and more.
 platform: ej2-asp-core-mvc
 control: Custom Search
 publishingplatform: ##Platform_Name##

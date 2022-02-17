@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Card Image of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Card Image in ##Platform_Name## Card Component
+description: Learn here all about Card Image in Syncfusion ##Platform_Name## Card component and more.
 platform: ej2-asp-core-mvc
 control: Card Image
 publishingplatform: ##Platform_Name##

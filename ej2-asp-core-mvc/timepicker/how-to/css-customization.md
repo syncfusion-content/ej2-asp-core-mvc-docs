@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Css Customization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Css Customization in ##Platform_Name## Timepicker Component
+description: Learn here all about Css Customization in Syncfusion ##Platform_Name## Timepicker component and more.
 platform: ej2-asp-core-mvc
 control: Css Customization
 publishingplatform: ##Platform_Name##

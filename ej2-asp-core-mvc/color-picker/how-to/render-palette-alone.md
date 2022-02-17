@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Render Palette Alone of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Render Palette Alone in ##Platform_Name## Color Picker Component
+description: Learn here all about Render Palette Alone in Syncfusion ##Platform_Name## Color Picker component and more.
 platform: ej2-asp-core-mvc
 control: Render Palette Alone
 publishingplatform: ##Platform_Name##

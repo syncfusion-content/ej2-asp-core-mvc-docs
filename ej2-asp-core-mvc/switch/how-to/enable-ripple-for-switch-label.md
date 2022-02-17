@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Enable Ripple For Switch Label of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Enable Ripple For Switch Label in ##Platform_Name## Switch Component
+description: Learn here all about Enable Ripple For Switch Label in Syncfusion ##Platform_Name## Switch component and more.
 platform: ej2-asp-core-mvc
 control: Enable Ripple For Switch Label
 publishingplatform: ##Platform_Name##

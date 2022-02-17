@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Load Tab With Data Source of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Load Tab With Data Source in ##Platform_Name## Tab Component
+description: Learn here all about Load Tab With Data Source in Syncfusion ##Platform_Name## Tab component and more.
 platform: ej2-asp-core-mvc
 control: Load Tab With Data Source
 publishingplatform: ##Platform_Name##

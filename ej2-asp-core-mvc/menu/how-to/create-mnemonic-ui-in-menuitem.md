@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Create Mnemonic Ui In Menuitem of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Create Mnemonic Ui In Menuitem in ##Platform_Name## Menu Component
+description: Learn here all about Create Mnemonic Ui In Menuitem in Syncfusion ##Platform_Name## Menu component and more.
 platform: ej2-asp-core-mvc
 control: Create Mnemonic Ui In Menuitem
 publishingplatform: ##Platform_Name##

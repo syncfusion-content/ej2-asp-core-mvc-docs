@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Gauge Ranges of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Gauge Ranges in ##Platform_Name## Circular Gauge Component
+description: Learn here all about Gauge Ranges in Syncfusion ##Platform_Name## Circular Gauge component and more.
 platform: ej2-asp-core-mvc
 control: Gauge Ranges
 publishingplatform: ##Platform_Name##

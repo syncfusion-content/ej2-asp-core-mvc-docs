@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Limits of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Limits in ##Platform_Name## Range Slider Component
+description: Learn here all about Limits in Syncfusion ##Platform_Name## Range Slider component and more.
 platform: ej2-asp-core-mvc
 control: Limits
 publishingplatform: ##Platform_Name##

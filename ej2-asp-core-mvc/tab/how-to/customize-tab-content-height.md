@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Tab Content Height of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Tab Content Height in ##Platform_Name## Tab Component
+description: Learn here all about Customize Tab Content Height in Syncfusion ##Platform_Name## Tab component and more.
 platform: ej2-asp-core-mvc
 control: Customize Tab Content Height
 publishingplatform: ##Platform_Name##

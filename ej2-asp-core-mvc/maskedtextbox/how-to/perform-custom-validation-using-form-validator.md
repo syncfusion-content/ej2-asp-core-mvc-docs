@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Perform Custom Validation Using Form Validator of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Perform Custom Validation Using Form Validator in ##Platform_Name## Maskedtextbox Component
+description: Learn here all about Perform Custom Validation Using Form Validator in Syncfusion ##Platform_Name## Maskedtextbox component and more.
 platform: ej2-asp-core-mvc
 control: Perform Custom Validation Using Form Validator
 publishingplatform: ##Platform_Name##

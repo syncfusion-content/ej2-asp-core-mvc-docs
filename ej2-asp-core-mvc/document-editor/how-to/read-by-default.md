@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Read By Default of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Read By Default in ##Platform_Name## Document Editor Component
+description: Learn here all about Read By Default in Syncfusion ##Platform_Name## Document Editor component and more.
 platform: ej2-asp-core-mvc
 control: Read By Default
 publishingplatform: ##Platform_Name##

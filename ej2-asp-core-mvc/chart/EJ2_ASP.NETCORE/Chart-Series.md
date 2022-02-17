@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Chart Series of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Chart Series in ##Platform_Name## Chart Component
+description: Learn here all about Chart Series in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Chart Series
 publishingplatform: ##Platform_Name##
@@ -45,7 +45,7 @@ The series are rendered in the order as it is added to the series array.
 
 Combination of different types like Line, column etc, can be rendered in a chart.
 
-> Bar series cannot be combined with any other series as the axis orientation is different from other series.
+>Bar series cannot be combined with any other series as the axis orientation is different from other series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
