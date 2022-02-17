@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Set The Readonly of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Set The Readonly in ##Platform_Name## Datepicker Component
+description: Learn here all about Set The Readonly in Syncfusion ##Platform_Name## Datepicker component and more.
 platform: ej2-asp-core-mvc
 control: Set The Readonly
 publishingplatform: ##Platform_Name##

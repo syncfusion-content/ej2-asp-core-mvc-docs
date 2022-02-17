@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Formulas of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Formulas in ##Platform_Name## Spreadsheet Component
+description: Learn here all about Formulas in Syncfusion ##Platform_Name## Spreadsheet component and more.
 platform: ej2-asp-core-mvc
 control: Formulas
 publishingplatform: ##Platform_Name##

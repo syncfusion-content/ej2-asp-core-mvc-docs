@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Render A Dialog Without Header of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Render A Dialog Without Header in ##Platform_Name## Dialog Component
+description: Learn here all about Render A Dialog Without Header in Syncfusion ##Platform_Name## Dialog component and more.
 platform: ej2-asp-core-mvc
 control: Render A Dialog Without Header
 publishingplatform: ##Platform_Name##

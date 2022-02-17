@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Multiple Cascading of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Multiple Cascading in ##Platform_Name## Drop Down List Component
+description: Learn here all about Multiple Cascading in Syncfusion ##Platform_Name## Drop Down List component and more.
 platform: ej2-asp-core-mvc
 control: Multiple Cascading
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Date Format of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Date Format in ##Platform_Name## Datepicker Component
+description: Learn here all about Date Format in Syncfusion ##Platform_Name## Datepicker component and more.
 platform: ej2-asp-core-mvc
 control: Date Format
 publishingplatform: ##Platform_Name##

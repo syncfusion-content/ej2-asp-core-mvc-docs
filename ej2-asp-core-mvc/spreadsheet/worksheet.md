@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Worksheet of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Worksheet in ##Platform_Name## Spreadsheet Component
+description: Learn here all about Worksheet in Syncfusion ##Platform_Name## Spreadsheet component and more.
 platform: ej2-asp-core-mvc
 control: Worksheet
 publishingplatform: ##Platform_Name##

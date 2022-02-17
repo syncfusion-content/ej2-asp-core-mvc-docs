@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Datamatrixgenerator of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Datamatrixgenerator in ##Platform_Name## Barcode Component
+description: Learn here all about Datamatrixgenerator in Syncfusion ##Platform_Name## Barcode component and more.
 platform: ej2-asp-core-mvc
 control: Datamatrixgenerator
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Hide Control Buttons of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Hide Control Buttons in ##Platform_Name## Color Picker Component
+description: Learn here all about Hide Control Buttons in Syncfusion ##Platform_Name## Color Picker component and more.
 platform: ej2-asp-core-mvc
 control: Hide Control Buttons
 publishingplatform: ##Platform_Name##

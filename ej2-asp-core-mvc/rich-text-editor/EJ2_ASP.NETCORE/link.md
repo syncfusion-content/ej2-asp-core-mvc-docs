@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Link of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Link in ##Platform_Name## Rich Text Editor Component
+description: Learn here all about Link in Syncfusion ##Platform_Name## Rich Text Editor component and more.
 platform: ej2-asp-core-mvc
 control: Link
 publishingplatform: ##Platform_Name##

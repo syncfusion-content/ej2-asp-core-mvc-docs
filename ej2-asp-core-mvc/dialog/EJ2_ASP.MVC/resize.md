@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Resize of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Resize in ##Platform_Name## Dialog Component
+description: Learn here all about Resize in Syncfusion ##Platform_Name## Dialog component and more.
 platform: ej2-asp-core-mvc
 control: Resize
 publishingplatform: ##Platform_Name##

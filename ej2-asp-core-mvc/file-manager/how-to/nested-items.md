@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Nested Items of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Nested Items in ##Platform_Name## File Manager Component
+description: Learn here all about Nested Items in Syncfusion ##Platform_Name## File Manager component and more.
 platform: ej2-asp-core-mvc
 control: Nested Items
 publishingplatform: ##Platform_Name##

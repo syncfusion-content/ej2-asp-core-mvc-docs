@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Underline A Character In The Item Text of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Underline A Character In The Item Text in ##Platform_Name## Drop Down Button Component
+description: Learn here all about Underline A Character In The Item Text in Syncfusion ##Platform_Name## Drop Down Button component and more.
 platform: ej2-asp-core-mvc
 control: Underline A Character In The Item Text
 publishingplatform: ##Platform_Name##

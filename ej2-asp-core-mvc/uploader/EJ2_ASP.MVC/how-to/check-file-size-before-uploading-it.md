@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Check File Size Before Uploading It of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Check File Size Before Uploading It in ##Platform_Name## Uploader Component
+description: Learn here all about Check File Size Before Uploading It in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Check File Size Before Uploading It
 publishingplatform: ##Platform_Name##

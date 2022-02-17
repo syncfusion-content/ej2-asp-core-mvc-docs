@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Show Dates Of Other Months of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Show Dates Of Other Months in ##Platform_Name## Calendar Component
+description: Learn here all about Show Dates Of Other Months in Syncfusion ##Platform_Name## Calendar component and more.
 platform: ej2-asp-core-mvc
 control: Show Dates Of Other Months
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Funnel of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Funnel in ##Platform_Name## Accumulation Chart Component
+description: Learn here all about Funnel in Syncfusion ##Platform_Name## Accumulation Chart component and more.
 platform: ej2-asp-core-mvc
 control: Funnel
 publishingplatform: ##Platform_Name##

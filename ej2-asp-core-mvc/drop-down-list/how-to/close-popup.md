@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Close Popup of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Close Popup in ##Platform_Name## Drop Down List Component
+description: Learn here all about Close Popup in Syncfusion ##Platform_Name## Drop Down List component and more.
 platform: ej2-asp-core-mvc
 control: Close Popup
 publishingplatform: ##Platform_Name##

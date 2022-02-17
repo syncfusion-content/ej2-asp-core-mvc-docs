@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Add Edit And Remove Events of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Add Edit And Remove Events in ##Platform_Name## Schedule Component
+description: Learn here all about Add Edit And Remove Events in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Add Edit And Remove Events
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Add Toggle Button of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Add Toggle Button in ##Platform_Name## Toolbar Component
+description: Learn here all about Add Toggle Button in Syncfusion ##Platform_Name## Toolbar component and more.
 platform: ej2-asp-core-mvc
 control: Add Toggle Button
 publishingplatform: ##Platform_Name##

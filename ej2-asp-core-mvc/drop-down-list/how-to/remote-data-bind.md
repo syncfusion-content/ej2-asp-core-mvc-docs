@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Remote Data Bind of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Remote Data Bind in ##Platform_Name## Drop Down List Component
+description: Learn here all about Remote Data Bind in Syncfusion ##Platform_Name## Drop Down List component and more.
 platform: ej2-asp-core-mvc
 control: Remote Data Bind
 publishingplatform: ##Platform_Name##

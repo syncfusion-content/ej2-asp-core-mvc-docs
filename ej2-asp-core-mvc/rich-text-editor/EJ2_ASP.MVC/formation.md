@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Formation of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Formation in ##Platform_Name## Rich Text Editor Component
+description: Learn here all about Formation in Syncfusion ##Platform_Name## Rich Text Editor component and more.
 platform: ej2-asp-core-mvc
 control: Formation
 publishingplatform: ##Platform_Name##

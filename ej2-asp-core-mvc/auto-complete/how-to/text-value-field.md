@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Text Value Field of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Text Value Field in ##Platform_Name## Auto Complete Component
+description: Learn here all about Text Value Field in Syncfusion ##Platform_Name## Auto Complete component and more.
 platform: ej2-asp-core-mvc
 control: Text Value Field
 publishingplatform: ##Platform_Name##

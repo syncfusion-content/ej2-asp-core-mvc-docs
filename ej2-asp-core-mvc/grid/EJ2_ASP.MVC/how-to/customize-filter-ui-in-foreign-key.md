@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Filter Ui In Foreign Key of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Filter Ui In Foreign Key in ##Platform_Name## Grid Component
+description: Learn here all about Customize Filter Ui In Foreign Key in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Customize Filter Ui In Foreign Key
 publishingplatform: ##Platform_Name##

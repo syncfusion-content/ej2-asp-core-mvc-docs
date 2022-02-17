@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Prioritize Resource Colors For Events of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Prioritize Resource Colors For Events in ##Platform_Name## Schedule Component
+description: Learn here all about Prioritize Resource Colors For Events in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Prioritize Resource Colors For Events
 publishingplatform: ##Platform_Name##

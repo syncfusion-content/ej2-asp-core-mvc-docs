@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Accessiblility of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Accessiblility in ##Platform_Name## Kanban Component
+description: Learn here all about Accessiblility in Syncfusion ##Platform_Name## Kanban component and more.
 platform: ej2-asp-core-mvc
 control: Accessiblility
 publishingplatform: ##Platform_Name##

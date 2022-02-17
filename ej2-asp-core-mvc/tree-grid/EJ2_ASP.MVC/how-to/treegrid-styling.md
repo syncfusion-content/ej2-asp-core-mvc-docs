@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Treegrid Styling of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Treegrid Styling in ##Platform_Name## Tree Grid Component
+description: Learn here all about Treegrid Styling in Syncfusion ##Platform_Name## Tree Grid component and more.
 platform: ej2-asp-core-mvc
 control: Treegrid Styling
 publishingplatform: ##Platform_Name##

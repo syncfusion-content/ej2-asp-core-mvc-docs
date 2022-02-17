@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Gauge Annotations of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Gauge Annotations in ##Platform_Name## Circular Gauge Component
+description: Learn here all about Gauge Annotations in Syncfusion ##Platform_Name## Circular Gauge component and more.
 platform: ej2-asp-core-mvc
 control: Gauge Annotations
 publishingplatform: ##Platform_Name##

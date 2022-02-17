@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Select Grid Rows Based On Certain Condition of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Select Grid Rows Based On Certain Condition in ##Platform_Name## Grid Component
+description: Learn here all about Select Grid Rows Based On Certain Condition in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Select Grid Rows Based On Certain Condition
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Selected Field of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Selected Field in ##Platform_Name## Multi Select Component
+description: Learn here all about Selected Field in Syncfusion ##Platform_Name## Multi Select component and more.
 platform: ej2-asp-core-mvc
 control: Selected Field
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Data Label Customization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Data Label Customization in ##Platform_Name## Chart Component
+description: Learn here all about Data Label Customization in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Data Label Customization
 publishingplatform: ##Platform_Name##

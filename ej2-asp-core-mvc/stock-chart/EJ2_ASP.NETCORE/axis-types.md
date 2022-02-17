@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Axis Types of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Axis Types in ##Platform_Name## Stock Chart Component
+description: Learn here all about Axis Types in Syncfusion ##Platform_Name## Stock Chart component and more.
 platform: ej2-asp-core-mvc
 control: Axis Types
 publishingplatform: ##Platform_Name##

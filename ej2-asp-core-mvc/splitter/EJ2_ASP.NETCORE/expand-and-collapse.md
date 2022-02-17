@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Expand And Collapse of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Expand And Collapse in ##Platform_Name## Splitter Component
+description: Learn here all about Expand And Collapse in Syncfusion ##Platform_Name## Splitter component and more.
 platform: ej2-asp-core-mvc
 control: Expand And Collapse
 publishingplatform: ##Platform_Name##

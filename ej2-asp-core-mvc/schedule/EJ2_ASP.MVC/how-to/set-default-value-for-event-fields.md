@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Set Default Value For Event Fields of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Set Default Value For Event Fields in ##Platform_Name## Schedule Component
+description: Learn here all about Set Default Value For Event Fields in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Set Default Value For Event Fields
 publishingplatform: ##Platform_Name##

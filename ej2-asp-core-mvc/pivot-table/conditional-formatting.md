@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Conditional Formatting of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Conditional Formatting in ##Platform_Name## Pivot Table Component
+description: Learn here all about Conditional Formatting in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Conditional Formatting
 publishingplatform: ##Platform_Name##

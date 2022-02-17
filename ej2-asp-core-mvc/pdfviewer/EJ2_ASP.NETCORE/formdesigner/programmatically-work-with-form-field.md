@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Programmatically Work With Form Field of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Programmatically Work With Form Field in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Programmatically Work With Form Field in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Programmatically Work With Form Field
 publishingplatform: ##Platform_Name##

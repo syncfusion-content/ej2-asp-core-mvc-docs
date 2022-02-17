@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Custom Field of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Custom Field in ##Platform_Name## Gantt Component
+description: Learn here all about Custom Field in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Custom Field
 publishingplatform: ##Platform_Name##

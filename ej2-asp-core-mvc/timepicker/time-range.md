@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Time Range of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Time Range in ##Platform_Name## Timepicker Component
+description: Learn here all about Time Range in Syncfusion ##Platform_Name## Timepicker component and more.
 platform: ej2-asp-core-mvc
 control: Time Range
 publishingplatform: ##Platform_Name##

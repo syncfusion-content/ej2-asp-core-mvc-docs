@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Exporting Selected Data of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Exporting Selected Data in ##Platform_Name## Grid Component
+description: Learn here all about Exporting Selected Data in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Exporting Selected Data
 publishingplatform: ##Platform_Name##

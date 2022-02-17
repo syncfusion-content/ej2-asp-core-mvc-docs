@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Internationalization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Internationalization in ##Platform_Name## Common Component
+description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Common component and more.
 platform: ej2-asp-core-mvc
 control: Internationalization
 publishingplatform: ##Platform_Name##

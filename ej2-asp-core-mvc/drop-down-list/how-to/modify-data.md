@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Modify Data of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Modify Data in ##Platform_Name## Drop Down List Component
+description: Learn here all about Modify Data in Syncfusion ##Platform_Name## Drop Down List component and more.
 platform: ej2-asp-core-mvc
 control: Modify Data
 publishingplatform: ##Platform_Name##

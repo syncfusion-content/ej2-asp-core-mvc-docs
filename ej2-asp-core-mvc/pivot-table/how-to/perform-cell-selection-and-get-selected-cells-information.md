@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Perform Cell Selection And Get Selected Cells Information of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Perform Cell Selection And Get Selected Cells Information in ##Platform_Name## Pivot Table Component
+description: Learn here all about Perform Cell Selection And Get Selected Cells Information in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Perform Cell Selection And Get Selected Cells Information
 publishingplatform: ##Platform_Name##

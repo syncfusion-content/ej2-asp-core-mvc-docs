@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Right To Left of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Right To Left in ##Platform_Name## Button Component
+description: Learn here all about Right To Left in Syncfusion ##Platform_Name## Button component and more.
 platform: ej2-asp-core-mvc
 control: Right To Left
 publishingplatform: ##Platform_Name##

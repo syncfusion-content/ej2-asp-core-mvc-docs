@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize Menu Using Events of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize Menu Using Events in ##Platform_Name## Menu Component
+description: Learn here all about Customize Menu Using Events in Syncfusion ##Platform_Name## Menu component and more.
 platform: ej2-asp-core-mvc
 control: Customize Menu Using Events
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Technical Indicators of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Technical Indicators in ##Platform_Name## Chart Component
+description: Learn here all about Technical Indicators in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Technical Indicators
 publishingplatform: ##Platform_Name##

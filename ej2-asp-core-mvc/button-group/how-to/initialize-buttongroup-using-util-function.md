@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Initialize Buttongroup Using Util Function of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Initialize Buttongroup Using Util Function in ##Platform_Name## Button Group Component
+description: Learn here all about Initialize Buttongroup Using Util Function in Syncfusion ##Platform_Name## Button Group component and more.
 platform: ej2-asp-core-mvc
 control: Initialize Buttongroup Using Util Function
 publishingplatform: ##Platform_Name##

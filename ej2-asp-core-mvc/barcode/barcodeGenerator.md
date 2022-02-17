@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Barcodegenerator of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Barcodegenerator in ##Platform_Name## Barcode Component
+description: Learn here all about Barcodegenerator in Syncfusion ##Platform_Name## Barcode component and more.
 platform: ej2-asp-core-mvc
 control: Barcodegenerator
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Header Content of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Header Content in ##Platform_Name## Card Component
+description: Learn here all about Header Content in Syncfusion ##Platform_Name## Card component and more.
 platform: ej2-asp-core-mvc
 control: Header Content
 publishingplatform: ##Platform_Name##

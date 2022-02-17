@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Use Filter Bar Template In Foreign Key Column of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Use Filter Bar Template In Foreign Key Column in ##Platform_Name## Grid Component
+description: Learn here all about Use Filter Bar Template In Foreign Key Column in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Use Filter Bar Template In Foreign Key Column
 publishingplatform: ##Platform_Name##

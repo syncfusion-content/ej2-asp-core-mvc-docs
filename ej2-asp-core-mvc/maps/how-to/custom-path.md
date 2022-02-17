@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Custom Path of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Custom Path in ##Platform_Name## Maps Component
+description: Learn here all about Custom Path in Syncfusion ##Platform_Name## Maps component and more.
 platform: ej2-asp-core-mvc
 control: Custom Path
 publishingplatform: ##Platform_Name##

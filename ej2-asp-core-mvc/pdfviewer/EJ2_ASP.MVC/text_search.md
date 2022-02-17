@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Text_search of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Text_search in ##Platform_Name## Pdfviewer Component
+description: Learn here all about Text_search in Syncfusion ##Platform_Name## Pdfviewer component and more.
 platform: ej2-asp-core-mvc
 control: Text_search
 publishingplatform: ##Platform_Name##

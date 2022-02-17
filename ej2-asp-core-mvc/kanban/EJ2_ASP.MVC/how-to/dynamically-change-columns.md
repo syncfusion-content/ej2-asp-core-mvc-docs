@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Dynamically Change Columns of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Dynamically Change Columns in ##Platform_Name## Kanban Component
+description: Learn here all about Dynamically Change Columns in Syncfusion ##Platform_Name## Kanban component and more.
 platform: ej2-asp-core-mvc
 control: Dynamically Change Columns
 publishingplatform: ##Platform_Name##

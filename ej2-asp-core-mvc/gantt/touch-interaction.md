@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Touch Interaction of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Touch Interaction in ##Platform_Name## Gantt Component
+description: Learn here all about Touch Interaction in Syncfusion ##Platform_Name## Gantt component and more.
 platform: ej2-asp-core-mvc
 control: Touch Interaction
 publishingplatform: ##Platform_Name##

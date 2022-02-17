@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Form Submit of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Form Submit in ##Platform_Name## List Box Component
+description: Learn here all about Form Submit in Syncfusion ##Platform_Name## List Box component and more.
 platform: ej2-asp-core-mvc
 control: Form Submit
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Badge Customization of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Badge Customization in ##Platform_Name## Badge Component
+description: Learn here all about Badge Customization in Syncfusion ##Platform_Name## Badge component and more.
 platform: ej2-asp-core-mvc
 control: Badge Customization
 publishingplatform: ##Platform_Name##

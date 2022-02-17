@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Bullet Chart Dimensions of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Bullet Chart Dimensions in ##Platform_Name## Bullet Chart Component
+description: Learn here all about Bullet Chart Dimensions in Syncfusion ##Platform_Name## Bullet Chart component and more.
 platform: ej2-asp-core-mvc
 control: Bullet Chart Dimensions
 publishingplatform: ##Platform_Name##

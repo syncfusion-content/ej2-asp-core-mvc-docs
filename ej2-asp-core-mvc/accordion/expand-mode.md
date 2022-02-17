@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Expand Mode of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Expand Mode in ##Platform_Name## Accordion Component
+description: Learn here all about Expand Mode in Syncfusion ##Platform_Name## Accordion component and more.
 platform: ej2-asp-core-mvc
 control: Expand Mode
 publishingplatform: ##Platform_Name##

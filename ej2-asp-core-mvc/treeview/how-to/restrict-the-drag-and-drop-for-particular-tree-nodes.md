@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Restrict The Drag And Drop For Particular Tree Nodes of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Restrict The Drag And Drop For Particular Tree Nodes in ##Platform_Name## Treeview Component
+description: Learn here all about Restrict The Drag And Drop For Particular Tree Nodes in Syncfusion ##Platform_Name## Treeview component and more.
 platform: ej2-asp-core-mvc
 control: Restrict The Drag And Drop For Particular Tree Nodes
 publishingplatform: ##Platform_Name##

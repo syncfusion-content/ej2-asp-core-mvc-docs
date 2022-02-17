@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Range of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Range in ##Platform_Name## Progress Bar Component
+description: Learn here all about Range in Syncfusion ##Platform_Name## Progress Bar component and more.
 platform: ej2-asp-core-mvc
 control: Range
 publishingplatform: ##Platform_Name##

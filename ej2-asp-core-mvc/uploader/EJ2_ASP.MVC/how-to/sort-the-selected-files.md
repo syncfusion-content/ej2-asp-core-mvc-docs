@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Sort The Selected Files of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Sort The Selected Files in ##Platform_Name## Uploader Component
+description: Learn here all about Sort The Selected Files in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Sort The Selected Files
 publishingplatform: ##Platform_Name##

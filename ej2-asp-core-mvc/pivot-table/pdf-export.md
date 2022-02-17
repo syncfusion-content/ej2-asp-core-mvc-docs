@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Pdf Export of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Pdf Export in ##Platform_Name## Pivot Table Component
+description: Learn here all about Pdf Export in Syncfusion ##Platform_Name## Pivot Table component and more.
 platform: ej2-asp-core-mvc
 control: Pdf Export
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Load List Items In Child List Dynamically of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Load List Items In Child List Dynamically in ##Platform_Name## Listview Component
+description: Learn here all about Load List Items In Child List Dynamically in Syncfusion ##Platform_Name## Listview component and more.
 platform: ej2-asp-core-mvc
 control: Load List Items In Child List Dynamically
 publishingplatform: ##Platform_Name##

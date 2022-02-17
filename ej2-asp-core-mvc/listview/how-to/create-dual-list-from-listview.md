@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Create Dual List From Listview of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Create Dual List From Listview in ##Platform_Name## Listview Component
+description: Learn here all about Create Dual List From Listview in Syncfusion ##Platform_Name## Listview component and more.
 platform: ej2-asp-core-mvc
 control: Create Dual List From Listview
 publishingplatform: ##Platform_Name##

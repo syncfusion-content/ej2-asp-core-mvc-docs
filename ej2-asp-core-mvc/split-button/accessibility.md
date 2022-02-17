@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Accessibility of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Accessibility in ##Platform_Name## Split Button Component
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Split Button component and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##

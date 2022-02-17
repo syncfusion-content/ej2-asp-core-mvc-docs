@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Render Filemanager In Internet Explorer of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Render Filemanager In Internet Explorer in ##Platform_Name## File Manager Component
+description: Learn here all about Render Filemanager In Internet Explorer in Syncfusion ##Platform_Name## File Manager component and more.
 platform: ej2-asp-core-mvc
 control: Render Filemanager In Internet Explorer
 publishingplatform: ##Platform_Name##

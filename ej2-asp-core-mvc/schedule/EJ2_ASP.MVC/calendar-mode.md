@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Calendar Mode of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Calendar Mode in ##Platform_Name## Schedule Component
+description: Learn here all about Calendar Mode in Syncfusion ##Platform_Name## Schedule component and more.
 platform: ej2-asp-core-mvc
 control: Calendar Mode
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Passing Parameter To Server Exporting of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Passing Parameter To Server Exporting in ##Platform_Name## Grid Component
+description: Learn here all about Passing Parameter To Server Exporting in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Passing Parameter To Server Exporting
 publishingplatform: ##Platform_Name##

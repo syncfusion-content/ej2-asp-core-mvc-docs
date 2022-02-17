@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Foreign Key Column of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Foreign Key Column in ##Platform_Name## Grid Component
+description: Learn here all about Foreign Key Column in Syncfusion ##Platform_Name## Grid component and more.
 platform: ej2-asp-core-mvc
 control: Foreign Key Column
 publishingplatform: ##Platform_Name##

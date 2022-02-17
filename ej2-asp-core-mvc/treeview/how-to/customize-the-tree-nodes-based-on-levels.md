@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Customize The Tree Nodes Based On Levels of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Customize The Tree Nodes Based On Levels in ##Platform_Name## Treeview Component
+description: Learn here all about Customize The Tree Nodes Based On Levels in Syncfusion ##Platform_Name## Treeview component and more.
 platform: ej2-asp-core-mvc
 control: Customize The Tree Nodes Based On Levels
 publishingplatform: ##Platform_Name##

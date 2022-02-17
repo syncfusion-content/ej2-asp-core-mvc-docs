@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Set Tool Tip To The Commands of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Set Tool Tip To The Commands in ##Platform_Name## Toolbar Component
+description: Learn here all about Set Tool Tip To The Commands in Syncfusion ##Platform_Name## Toolbar component and more.
 platform: ej2-asp-core-mvc
 control: Set Tool Tip To The Commands
 publishingplatform: ##Platform_Name##

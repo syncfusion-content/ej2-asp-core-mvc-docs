@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Enable Disable Toolbar Item of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Enable Disable Toolbar Item in ##Platform_Name## File Manager Component
+description: Learn here all about Enable Disable Toolbar Item in Syncfusion ##Platform_Name## File Manager component and more.
 platform: ej2-asp-core-mvc
 control: Enable Disable Toolbar Item
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Prevent Closing Of Modal Dialog of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Prevent Closing Of Modal Dialog in ##Platform_Name## Dialog Component
+description: Learn here all about Prevent Closing Of Modal Dialog in Syncfusion ##Platform_Name## Dialog component and more.
 platform: ej2-asp-core-mvc
 control: Prevent Closing Of Modal Dialog
 publishingplatform: ##Platform_Name##

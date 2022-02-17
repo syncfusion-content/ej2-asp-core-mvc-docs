@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Smithchart Marker of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Smithchart Marker in ##Platform_Name## Smithchart Component
+description: Learn here all about Smithchart Marker in Syncfusion ##Platform_Name## Smithchart component and more.
 platform: ej2-asp-core-mvc
 control: Smithchart Marker
 publishingplatform: ##Platform_Name##

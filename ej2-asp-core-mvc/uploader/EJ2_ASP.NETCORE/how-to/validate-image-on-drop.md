@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Validate Image On Drop of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Validate Image On Drop in ##Platform_Name## Uploader Component
+description: Learn here all about Validate Image On Drop in Syncfusion ##Platform_Name## Uploader component and more.
 platform: ej2-asp-core-mvc
 control: Validate Image On Drop
 publishingplatform: ##Platform_Name##

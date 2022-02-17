@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Polar Radar of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Polar Radar in ##Platform_Name## Chart Component
+description: Learn here all about Polar Radar in Syncfusion ##Platform_Name## Chart component and more.
 platform: ej2-asp-core-mvc
 control: Polar Radar
 publishingplatform: ##Platform_Name##

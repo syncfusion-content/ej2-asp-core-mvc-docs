@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Syncfusion Essential ##Platform_Name##
-description: Learn here all about Sorting And Grouping of Syncfusion Essential ##Platform_Name## widgets based on HTML5 and jQuery.
+title: Sorting And Grouping in ##Platform_Name## List Box Component
+description: Learn here all about Sorting And Grouping in Syncfusion ##Platform_Name## List Box component and more.
 platform: ej2-asp-core-mvc
 control: Sorting And Grouping
 publishingplatform: ##Platform_Name##
