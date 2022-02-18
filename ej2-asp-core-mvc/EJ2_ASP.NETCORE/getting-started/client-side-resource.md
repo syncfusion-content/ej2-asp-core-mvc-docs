@@ -139,21 +139,13 @@ By using either one of the following methods, Client-Side Resource can be loaded
 Install required Syncfusion EJ2 Component packages as mentioned in “[**Installing NPM Packages in ASP.NET Core Web Application**](#installing-npm-packages-in-aspnet-core-web-application)”. 
 
 1. In addition to Syncfusion EJ2 packages, install gulp and glob packages using below commands.
-
 >Gulp Installation - **npm install gulp --save**
->
 >![Gulp Installation](images/gulp-installation.png)
->
 >Glob Installation - **npm install glob --save**
->
 >![Glob Installation](images/glob-installation.png)
-
 2. To set up the server, open Dependencies -> Manage NuGet Packages -> Browse. Then, search and install "**Microsoft.AspNetCore.StaticFiles**" and "**Microsoft.TypeScript.MSBuild**" packages.
-
-    ![Install NuGet Packages](images/install-nuGet-package.png)
-     
+![Install NuGet Packages](images/install-nuGet-package.png)     
 Open up your "**Startup.cs**" file and edit your Configure function to looks like the below code snippet.
-
 ```js
 
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -169,15 +161,10 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 ```
 Restart Visual Studio for the red squiggly lines below "**UseDefaultFiles**" and "**UseStaticFiles**" to disappear.
-
 3. Open the Source Explorer and right click on the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
-
 4. Select “**ASP.NET Core**” on the left side Tree View and select “**JavaScript File**” in the “**Add New Item**” window. It will include a js file in the root folder of the ASP.NET Core web application. Rename the js file as “**gulpfile.js**”.
-
-    ![Add gulpjs file](images/add-gulpjs.png)
-
+![Add gulpjs file](images/add-gulpjs.png)
 5. Copy the following code snippet and paste it in gulpfile.js for automatically copying the script and styles from “**node_modules**” to “**wwwroot**” while building the web application. 
-
 ```js
 
 /// <binding BeforeBuild='copy-client-resource'/>
@@ -202,13 +189,9 @@ gulp.task("copy-client-resource", function (done) {
     done();
 });
 ```
-
 6. Build the ASP.NET Core web application and notice that a new folder named “**Syncfusion**” is created in “**wwwroot**” folder.
-
-    ![Copied to wwwroot](images/copied-to-wwwroot.png)
-
+![Copied to wwwroot](images/copied-to-wwwroot.png)
 7. Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion EJ2 Calendar has been loaded for example.  
-
 ```html
 <head>
 
