@@ -832,6 +832,7 @@ Prevent open
 
 </td>
 </tr>
+</thead>
 </table>
 
 ## Accessibility
@@ -1257,6 +1258,7 @@ Float Label Type
 
 </td>
 </tr>
+</thead>
 </table>
 
 ## Globalization

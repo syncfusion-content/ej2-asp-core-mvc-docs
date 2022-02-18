@@ -424,7 +424,7 @@ It is possible to customize the resource header cells using built-in template op
 
 > To customize the resource header in compact mode properly make use of the class `e-device` as in the code example.
 
-![Resource header template in compact mode](../../schedule/images/header-template.png)
+![Resource header template in compact mode](../images/header-template.png)
 
 ## Customizing resource header with multiple columns
 
@@ -621,7 +621,7 @@ Although the Scheduler views are designed keeping in mind the responsiveness of 
 
 With this compact view enabled on mobile, you can view only single resource at a time and to switch to other resources, there is a TreeView at the left listing out all other available resources - clicking on which will display that particular resource and its related appointments.
 
-![Resources in compact mode](../../schedule/images/resource.png)
+![Resources in compact mode](../images/resource.png)
 
 ## Adaptive UI in desktop
 

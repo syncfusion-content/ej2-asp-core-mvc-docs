@@ -1,0 +1,25 @@
+<ejs-dropdownlist id="priority_filter" dataSource="@ViewBag.PriorityData" index="0" change="change" placeholder="Select a priority">
+ <e-dropdownlist-fields value="Priority"></e-dropdownlist-fields>
+ </ejs-dropdownlist>
+<ejs-kanban id="Kanban" keyField="Status" dataSource="@ViewBag.data" created="onCreate">
+    <e-kanban-columns>
+        <e-kanban-column headerText="To Do" keyField="Open"></e-kanban-column>
+        <e-kanban-column headerText="In Progress" keyField="InProgress"></e-kanban-column>
+        <e-kanban-column headerText="In Review" keyField="Review"></e-kanban-column>
+        <e-kanban-column headerText="Done" keyField="Close"></e-kanban-column>
+    </e-kanban-columns>
+    <e-kanban-cardsettings contentField="Summary" headerField="Title"></e-kanban-cardsettings>
+</ejs-kanban>
+<script type="text/javascript">
+    var kanbanObj;
+    function onCreate() {
+        kanbanObj = this;
+    }
+    function change(args) {
+        var filterQuery = new ej.data.Query();
+        if (args.value !== 'None') {
+            filterQuery = new ej.data.Query().where('Priority', 'equal', args.value);
+        }
+        kanbanObj.query = filterQuery;
+    }
+</script>

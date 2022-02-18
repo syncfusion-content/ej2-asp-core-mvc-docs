@@ -8,6 +8,36 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Accessibility in ASP.NET MVC Grid control
+
+Accessibility is achieved in the Grid component through WAI-ARIA standard and keyboard navigations. The Grid features can be effectively accessed through assistive technologies such as screen readers.
+
+## WAI-ARIA
+
+WAI-ARIA (Accessibility Initiative – Accessible Rich Internet Applications) defines a way to increase the accessibility of web pages, dynamic content, and user interface components developed with Ajax, HTML, JavaScript, and related technologies. ARIA provides additional semantics to describe the role, state, and functionality of web components.
+
+The following ARIA attributes are used in the Grid:
+
+* grid (role)
+* row (role)
+* gridcell (role)
+* aria-selected (attribute)
+* aria-expanded (attribute)
+* aria-sort (attribute)
+* aria-busy (attribute)
+* aria-invalid (attribute)
+* aria-grabbed (attribute)
+* aria-owns (attribute)
+* aria-label (attribute)
+
+## Keyboard navigation
+
+Grid functionalities can be interactive with keyboard shortcuts. In order to utilize all the available keyboard shortcuts, the ‘enableHeaderFocus’ property of the Grid needs to be set as `true`.
+
+The following keyboard shortcuts are supported by the Grid.
+
+|Interaction Keys|Description|
+|----------------|-----------|
 <b>Pager</b>||
 <kbd>PageDown</kbd> | Goes to the next page.
 <kbd>PageUp</kbd> | Goes to the previous page.

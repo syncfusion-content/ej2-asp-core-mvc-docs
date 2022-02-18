@@ -42,4 +42,4 @@ In the below sample, you can filter the cards based on the ‘where’ query and
 
 Output be like the below.
 
-![kanban](./images/filter-cards.PNG)
+![kanban](../../images/filter-cards.PNG)

@@ -147,7 +147,4 @@ col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
     }).AllowPaging().PageSettings(page => page.PageSize(4).PageSizes(true)).Render()
 
 ```
-
-## Sample
-
-https://github.com/SyncfusionExamples/ej2-aspmvc-ej1compatibility
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ej2-aspmvc-ej1compatibility).

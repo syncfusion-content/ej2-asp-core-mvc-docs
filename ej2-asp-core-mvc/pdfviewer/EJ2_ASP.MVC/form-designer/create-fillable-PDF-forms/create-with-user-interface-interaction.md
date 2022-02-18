@@ -13,14 +13,14 @@ documentation: ug
 
 The PDF viewer control provides the option for interaction with Form Fields such as Drag and resize. you can draw a Form Field dynamically by clicking the Form Field icon on the toolbar and draw it in the PDF document. The Form Fields type supported by the PDF Viewer Control are:
 
-    * Textbox
-    * Password
-    * CheckBox
-    * RadioButton
-    * ListBox
-    * DropDown
-    * SignatureField
-    * InitialField
+* Textbox
+* Password
+* CheckBox
+* RadioButton
+* ListBox
+* DropDown
+* SignatureField
+* InitialField
 
 ## Enable or Disable form designer toolbar
 
@@ -37,35 +37,35 @@ We should inject FormDesigner module and set enableFormDesignerToolbar as true t
 
 Click the Form Field icon on the toolbar and then click on to the PDF document to draw a Form Field. Refer the below GIF for further reference.
 
-![Alt text](../../../../pdfviewer/images/addformfield.gif)
+![Alt text](../../../images/addformfield.gif)
 
 ## Drag the form field
 
 We provide options to drag the Form Field which is currently selected in the PDF document. Refer the below GIF for further reference.
 
-![Alt text](../../../../pdfviewer/images/dragformfield.gif)
+![Alt text](../../../images/dragformfield.gif)
 
 ## Resize the form field
 
 We provide options to resize the Form Field which is currently selected in the PDF document. Refer the below GIF for further reference.
 
-![Alt text](../../../../pdfviewer/images/resizeformfield.gif)
+![Alt text](../../../images/resizeformfield.gif)
 
 ## Edit or Update the form field dynamically
 
 The properties of the Form Fields can be edited using the Form Field Properties window. It can be opened by selecting the Properties option in the context menu that appears on the right by clicking the Form Field object. Refer the below image for the properties available to customize the appearance of the Form Field.  
 
-![Alt text](../../../../pdfviewer/images/generalproperties.png)
+![Alt text](../../../images/generalproperties.png)
 
-![Alt text](../../../../pdfviewer/images/appearanceproperties.png)
+![Alt text](../../../images/appearanceproperties.png)
 
-![Alt text](../../../../pdfviewer/images/dropdownproperties.png)
+![Alt text](../../../images/dropdownproperties.png)
 
 ## Clipboard operation with form field
 
 The PDF Viewer control supports the clipboard operations such as cut, copy and paste for Form Fields. You can right click on the Form Field object to view the context menu and select to the clipboard options that you would like to perform. Refer the below image for the options in the context menu.
 
-![Alt text](../../../../pdfviewer/images/clipboardformfield.png)
+![Alt text](../../../images/clipboardformfield.png)
 
 ## Undo and Redo
 

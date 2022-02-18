@@ -48,4 +48,4 @@ In the below example, the data type of the `Country` column is set to `DropDownL
 
 
 
-![output](images/edit-type.png)
+![output](../images/edit-type.png)

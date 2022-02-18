@@ -46,7 +46,7 @@ This mode can be enable by setting the `EnableVirtualization` property to `true`
 
 
 
-![Alt text](images/virtual-scroll.png.png)
+![Alt text](images/virtual-scroll.png)
 
 ## Limitations for Virtual Scroll
 

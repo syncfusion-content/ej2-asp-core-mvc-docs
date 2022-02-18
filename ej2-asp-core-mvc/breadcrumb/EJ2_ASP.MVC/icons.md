@@ -153,10 +153,10 @@ To display only icons for the items, add icons using the `iconCss` property. In 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/url/icon-only/tagHelper %}
+{% include code-snippet/breadcrumb/icon/icon-only/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/url/icon-only/default.cs %}
+{% include code-snippet/breadcrumb/icon/icon-only/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -164,10 +164,10 @@ To display only icons for the items, add icons using the `iconCss` property. In 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/url/icon-only/razor %}
+{% include code-snippet/breadcrumb/icon/icon-only/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/url/icon-only/default.cs %}
+{% include code-snippet/breadcrumb/icon/icon-only/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
