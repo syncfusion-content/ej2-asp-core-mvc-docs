@@ -37,4 +37,4 @@ The cell selection support is enabled using the `allowSelection` property and it
 
 
 
-![output](images/chart-selection.png)
+![output](../images/chart-selection.png)

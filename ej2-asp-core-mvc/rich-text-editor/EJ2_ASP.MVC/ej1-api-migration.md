@@ -18,8 +18,8 @@ This article describes the API migration process of Rich Text Editor control fro
 <!-- markdownlint-disable MD033 -->
 <!-- markdownlint-disable MD038 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
-| Keyboard Navigation | **Property:** AllowKeyboardNavigation <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AllowKeyboardNavigation(true).Render();}` | No separate Property for enable/disable keyboard navigation.  Its enabled by default. |
+|------------|-------------------------|-------------------------|
+| Keyboard Navigation | **Property:** AllowKeyboardNavigation <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AllowKeyboardNavigation(true).Render();}` | No separate Property for enable/disable keyboard navigation. Its enabled by default. |
 | Localization | **Property:** Locale <br/> <br/>` @{Html.EJ().RichTextEditor("rteSample").Locale("en-US").Render();}` | **Property:** Locale <br/> <br/>`@Html.EJS().RichTextEditor("default").Locale("en-US").Render()` |
 | RTL | **Property:** EnableRtl<br/> <br/>` @{Html.EJ().RichTextEditor("rteSample").EnableRTL(true).Render();}` | **Property:** EnableRtl <br/> <br/>`@Html.EJS().RichTextEditor("rtl").EnableRtl(true).Render()` |
 | Key Config | Not Applicable | **Property:**  KeyConfig<br/> <br/>`@Html.EJS().RichTextEditor("default").KeyConfig((object)ViewBag.keyConfig).Render()` |
@@ -31,13 +31,13 @@ This article describes the API migration process of Rich Text Editor control fro
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
+|------------|-------------------------|-------------------------|
 | showToolbar | **Property:**  ShowToolbar<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowToolbar(true).Render();}` | **Property:** Enable <br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).Height("720px").ToolbarSettings(e => e.Enable(true)).Render()` |
 | Tools item | **Property:** Tools <br/> <br/>`List<String> lists = new List<string>() { "unorderedList", "orderedList" };` <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Tools(tool => tool.Lists(lists)).Render();}` | **Property:** Items<br/> <br/>`@Html.EJS().RichTextEditor("customtool").ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Tools-list | **Property:** ToolsList<br/> <br/>` @{    List<String> toolsList = new List<string>() { "style", "lists", "doAction", "links", "images" };`<br/> <br/>` @{Html.EJ().RichTextEditor("rteSample").ToolsList(toolsList).Render();}` | **Property:**  Items<br/> <br/>`@Html.EJS().RichTextEditor("customtool").ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Toolbar Overflow Mode | **Property:** ToolbarOverflowMode <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ToolbarOverflowMode(ToolbarOverflowMode.Inline).Render();}` | **Property:**  Type <br/> <br/>`1.Expand`<br/> <br/>` 2.MultiRow`<br/> <br/>`@Html.EJS().RichTextEditor("types").ToolbarSettings(e => e.Type(Syncfusion.EJ2.RichTextEditor.ToolbarType.Expand)).Render()` |
-| Floating Toolbar | Not Applicable | **Property:**  EnableFloating <br/> <br/>`@Html.EJS().RichTextEditor("types").ToolbarSettings(e =>e.EnableFloating(true)).Render()`  |
-| Floating Toolbar Offset | Not Applicable | **Property:**  FloatingToolbarOffset <br/> <br/>`@Html.EJS().RichTextEditor("types").ToolbarSettings(e =>e.EnableFloating(true)).FloatingToolbarOffset(50).Render()`  |
+| Floating Toolbar | Not Applicable | **Property:**  EnableFloating <br/> <br/>`@Html.EJS().RichTextEditor("types").ToolbarSettings(e =>e.EnableFloating(true)).Render()` |
+| Floating Toolbar Offset | Not Applicable | **Property:**  FloatingToolbarOffset <br/> <br/>`@Html.EJS().RichTextEditor("types").ToolbarSettings(e =>e.EnableFloating(true)).FloatingToolbarOffset(50).Render()` |
 | Inline toolbar | Not Applicable | **Property:** InlineMode<br/> <br/>` @Html.EJS().RichTextEditor("defaultRTE").Value((string)ViewBag.value).InlineMode(e=>e.Enable(true).OnSelection(true)).ToolbarSettings(e => e.Items((object)ViewBag.items)).Render()` |
 | Quick Toolbar | Not Applicable | **Property:**  Quicktoolbarsettings<br/> <br/>`1.image`<br/> <br/>`2.link`<br/> <br/>`3.table`<br/> <br/>`4.clipboard`<br/> <br/>` @Html.EJS().RichTextEditor("inline").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e =>e.Image((object)ViewBag.image)).Format(t=>t.Width("40px")).Value((string)ViewBag.value).Render()` |
 | Enable Toolbar Item | **Method:** enableToolbarItem()<br/> <br/>`var rteObj = $("#rte ").data("ejRTE "); `<br/> <br/>`rteObj.enableToolbarItem()` | **Method:**  enableToolbarItem() <br/> <br/>`var rteObj = document.getElementById("richtexteditor").ej2_Instances[0];` <br/> <br/>`rteObj.enableToolbarItem();` |
@@ -50,7 +50,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
+|------------|-------------------------|-------------------------|
 | Format | **Property:**  Format <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Format(format).Render();}` | **Property:** Format <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").Format(t=>t.Width("70px").Default("Paragraph").Types("items")).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Font Size | **Property:** FontSize <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").FontSize(size).Render();}` | **Property:** FontSize<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").FontSize(t=>t.Width("70px").Default("Paragraph").Types("items")).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Font Family | **Property:** FontName<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").FontName(fontname).Render();}` | **Property:** FontFamily<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").FontFamily(t=>t.Width("70px").Default("Paragraph").Types("items")).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
@@ -60,10 +60,10 @@ This article describes the API migration process of Rich Text Editor control fro
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
+|------------|-------------------------|-------------------------|
 | Font Color | **Property:** ColorCode <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ColorCode(colorCode).Render();}` | **Property:** FontColor<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").FontColor(t=>t.columns("10").default("'#fff).modeSwitcher(false)).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Background Color | Not Applicable | **Property:** BackgroundColor<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").BackgroundColor(t=>t.columns("10").Default("'#fff).ModeSwitcher(false).Mode("Palette")).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
-| Color Palette  Columns | **Property:** ColorPaletteColumns <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ColorPaletteColumns(10).Render();}` | **Property:** BackgroundColor<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").BackgroundColor(b=>b.Columns(10)).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
+| Color Palette Columns | **Property:** ColorPaletteColumns <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ColorPaletteColumns(10).Render();}` | **Property:** BackgroundColor<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").BackgroundColor(b=>b.Columns(10)).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Color Palette Rows | **Property:** ColorPaletteRows <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ColorPaletteRows(6).Render();}` | Not Applicable |
 | Color Picker Type | **Method:**  setColorPickerType () <br/> <br/>` var rteObj = $("#rte ").data("ejRTE ");` <br/> <br/>` rteObj.setColorPickerType("picker")` | **Property:** ColorModeType <br/> <br/>` @Html.EJS().RichTextEditor("defaultRTE").BackgroundColor(b=>b.Mode("Palette")).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 
@@ -71,7 +71,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
+|------------|-------------------------|-------------------------|
 | Link | Not Applicable | **Property:** CreateLink<br/> <br/>` viewBag.item = new[] {"CreateLink"}`<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Quick Toolbar | Not Applicable | **Property:** Link<br/> <br/>`viewBag.link = new [] {Open, Edit, UnLink}`<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e => e.Link((object)ViewBag.link)).Render()` |
 
@@ -79,19 +79,19 @@ This article describes the API migration process of Rich Text Editor control fro
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
+|------------|-------------------------|-------------------------|
 | Image | Not Applicable | **Property:** Image <br/> <br/>` viewBag.item = new[] {"Image"}` <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
 | Quick Toolbar | Not Applicable | **Property:** Image <br/> <br/>`viewBag.link = new [] {"Replace", "Align", "Caption", "Remove", "-", "InsertLink","OpenImageLink", "EditImageLink", "RemoveImageLink", "Display", "AltText", "Dimension"}` <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e => e.Image((object)ViewBag.image)).Render()` |
-| Image Setting | **Property:** Images<br/> <br/>` List<String> images = new List<string>() { "image" };` <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Tools(tool=>tool.Image(image)).Render();}` | **Property:** InsrtImageSettings <br/> <br/>`@Html.EJS().RichTextEditor("image").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertImageSettings(obj=>obj.Display("inline")).Value((string)ViewBag.value).Render()`  |
+| Image Setting | **Property:** Images<br/> <br/>` List<String> images = new List<string>() { "image" };` <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Tools(tool=>tool.Image(image)).Render();}` | **Property:** InsrtImageSettings <br/> <br/>`@Html.EJS().RichTextEditor("image").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertImageSettings(obj=>obj.Display("inline")).Value((string)ViewBag.value).Render()` |
 
 ## Table
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
+|------------|-------------------------|-------------------------|
 | Table | Not Applicable | **Property:** CreateTable<br/> <br/>` viewBag.item = new[] {"CreateTable"}` <br/> <br/>`@Html.EJS().RichTextEditor("table").ToolbarSettings(e => e.Items((object)ViewBag.items)).Render()` |
 | Quick Toolbar | Not Applicable | **Property:** Table<br/> <br/>`viewBag.table = new [] {"TableHeader", "TableRows", "TableColumns", "BackgroundColor", "-", "TableRemove", "Alignments", "TableCellVerticalAlign", "Styles" }`<br/><br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e => e.Table((object)ViewBag.table)).Render()` |
-| Table Setting | **Property:** TableColumns, TableRows<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").TableColumns(10).Render();}` <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").TableRows(10).Render();}`  | **Property:** TableSettings<br/> <br/>`@Html.EJS().RichTextEditor("image").ToolbarSettings(e => e.Items((object)ViewBag.items)).TableSettings(obj=>obj.width("80%")).Render()` |
+| Table Setting | **Property:** TableColumns, TableRows<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").TableColumns(10).Render();}` <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").TableRows(10).Render();}` | **Property:** TableSettings<br/> <br/>`@Html.EJS().RichTextEditor("image").ToolbarSettings(e => e.Items((object)ViewBag.items)).TableSettings(obj=>obj.width("80%")).Render()` |
 | Custom table | **Property:** ShowCustomTable<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowCustomTable(true).Render();}` | Not Applicable |
 | Insert Column | **Method:**  insertColumn([before],[cell])<br/> <br/>` var rteObj = $("#rte ").data("ejRTE ");` <br/> <br/>`rteObj.insertColumn(true, "<td></td>")` | **Property:**  TableColumns <br/> <br/>` viewBag.table = new [] {"TableColumns"}` <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e =>  e.Table((object)ViewBag.table)).Render()` |
 | Insert Row | **Method:**  insertRow([before],[cell]) <br/> <br/>`var rteObj = $("#rte ").data("ejRTE ");` <br/> <br/>`rteObj.insertRow(true, "<tr></tr>")` | **Property:**  <br/> <br/>`TableRows viewBag.table = new [] {"TableRows"}` <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e => e.Table((object)ViewBag.table)).Render()` |
@@ -101,8 +101,8 @@ This article describes the API migration process of Rich Text Editor control fro
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
-| Character Count | **Property:** ShowCharCount<br/><br/>`@{Html.EJ().RichTextEditor("rteSample").ShowCharCount(true).Render();}` | **Property:** ShowCharCount<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).ShowCharCount(true).Render()`  |
+|------------|-------------------------|-------------------------|
+| Character Count | **Property:** ShowCharCount<br/><br/>`@{Html.EJ().RichTextEditor("rteSample").ShowCharCount(true).Render();}` | **Property:** ShowCharCount<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).ShowCharCount(true).Render()` |
 | Word Count | **Property:** ShowWordCount<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowWordCount(true).Render();}` | Not Applicable |
 | Maximum Length | **Property:**  MaxLength <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").MaxLength(1000).Render();}` | **Property:** MaxLength<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").MaxLength(1000).Render()` |
 
@@ -110,8 +110,8 @@ This article describes the API migration process of Rich Text Editor control fro
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
-| Enable Iframe | By Default, enabled | **Property:** IframeSettings<br/> <br/>`@Html.EJS().RichTextEditor("iframe").Value((string)ViewBag.value).IframeSettings(iframeSettings => iframeSettings.Enable(true)).Render()`  |
+|------------|-------------------------|-------------------------|
+| Enable Iframe | By Default, enabled | **Property:** IframeSettings<br/> <br/>`@Html.EJS().RichTextEditor("iframe").Value((string)ViewBag.value).IframeSettings(iframeSettings => iframeSettings.Enable(true)).Render()` |
 | Attributes | **Property:** IFrameAttributes<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Width("800px").IFrameAttributes(new Dictionary<string, object> { { "style", "background-color:#e0ffff color:#6495ed;" } }).Render();}` | **Property:** Attributes <br/> <br/>`@Html.EJS().RichTextEditor("iframe").Value((string)ViewBag.value).Height("500").IframeSettings(iframeSettings => iframeSettings.Enable(true)).Render()` <br/> <br/>`<script>var iframeRTE; function created() {`<br/><br/>` iframeRTE = this; `<br/> <br/>`this.setProperties({`<br/> <br/>`iframeSettings: { enable: true, attributes: { readonly: "readonly"} } }, false); }`<br/><br/>`</script>` |
 | Resource | **Property:** external-CSS<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ExternalCSS("/Content/Css/iframe-custom.css").Render();}` | **Property:** Attributes<br/> <br/>`@Html.EJS().RichTextEditor("iframe").Value((string)ViewBag.value).Height("500").IframeSettings(iframeSettings => iframeSettings.Enable(true)).Render()`<br/> <br/>`<script>`<br/> <br/> `var iframeRTE;`<br/> <br/>`function created() {`<br/> <br/>`iframeRTE = this;`<br/> <br/>`this.setProperties({  iframeSettings: { enable: true, resources: { styles: ["myStyle.css"]}}}, false);}`<br/> <br/>`</script>` |
 
@@ -119,14 +119,14 @@ This article describes the API migration process of Rich Text Editor control fro
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
+|------------|-------------------------|-------------------------|
 | Editor Mode | Not Applicable | **Property:** EditorMode <br/> <br/>1.HTML<br/> <br/> 2.Markdown <br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).EditorMode(EditorMode.Html).Render()` |
 
 ## Undo
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
+|------------|-------------------------|-------------------------|
 | Undo Stack Limit | **Property:** UndoStackLimit <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").UndoStackLimit(50).Render();}` | **Property:** UndoRedoSteps <br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).UndoRedoSteps(30).Render()` |
 | Undo Redo Timer | Not Applicable | **Property:** UndoRedoTimer<br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).UndoRedoTimer(300).Render()` |
 
@@ -134,10 +134,10 @@ This article describes the API migration process of Rich Text Editor control fro
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
+|------------|-------------------------|-------------------------|
 | Allow Editing | **Property:** AllowEditing <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AllowEditing(true).Render();}` | **Property:** Readonly<br/> <br/>`@Html.EJS().RichTextEditor("default").Readonly(true).Render()` |
 | Auto Focus | **Property:** AutoFocus <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AutoFocus(true).Render();}` | Not Applicable |
-| Auto Height | **Property:** AutoHeight <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AutoHeight(true).Render();}` | Not Applicable  |
+| Auto Height | **Property:** AutoHeight <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AutoHeight(true).Render();}` | Not Applicable |
 | Paste Clean Up | **Property:** paste-cleanup-settings <br/><br/>`@{Html.EJ().RichTextEditor("rteSample").PasteCleanupSettings(c=>c.CleanCSS(true).CleanElements(true).ListConversion(true).RemoveStyles(true)).Render();}` | Not Applicable |
 | Css Class | **Property:** CssClass <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").CssClass("customstyles").Render();}` | **Property:** CssClass <br/> <br/>`@Html.EJS().RichTextEditor("default").CssClass("customStyle").Render()` |
 | Enabled | **Property:** Enabled <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Enabled(true).Render();}` | **Property:** Enabled<br/> <br/>`@Html.EJS().RichTextEditor("default").Enabled(true).Render()` |
@@ -148,14 +148,14 @@ This article describes the API migration process of Rich Text Editor control fro
 | Height | **Property:** Height <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Height("350px").Render();}` | **Property:** Height<br/> <br/>`@Html.EJS().RichTextEditor("default").Height("300px").Render()` |
 | Width | **Property:** Width  <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Width("500px").Render();}` | **Property:** Width  <br/> <br/>`@Html.EJS().RichTextEditor("default").Width("500px").Render()` |
 | Html Attributes | **Property:** HtmlAttributes <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Width("800px").HtmlAttributes(htmlattr).Render();}` | **Property:** HtmlAttributes<br/> <br/>`@Html.EJS().RichTextEditor("default").HtmlAttributes((object)ViewBag.attr)).Render()` |
-| Is Responsive | **Property:** IsResponsive <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").IsResponsive(true).Render();}`   | No separate Property for responsive, provided default. |
+| Is Responsive | **Property:** IsResponsive <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").IsResponsive(true).Render();}` | No separate Property for responsive, provided default. |
 | Maximum Height | **Property:** MaxHeight <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").MaxHeight("500px").Render();}` | Not Applicable |
 | Maximum Width | **Property:** MaxWidth <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").MaxWidth("500px").Render();}` | Not Applicable |
 | Minimum Height | **Property:** MinHeight <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").MinHeight("300px").Render();}` | Not Applicable |
 | Minimum Width | **Property:** MinWidth <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").MinWidth("300px").Render();}` | Not Applicable |
 | name | **Property:** name <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").name("commentBlog").Render();}` | Not Applicable |
 | Clear All | **Property:** ShowClearAll <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowClearAll(true).Render();}` | Not Applicable |
-| Clear Format | **Property:** ShowClearFormat <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowClearFormat(true).Render();}` | No separate Property for clear Format. Its Provided in toolbar command.<br/> <br/>` viewBag.item = new[] {"ClearFormat"}` <br/> <br/>`@Html.EJS().RichTextEditor("default").ToolbarSettings(e => e.Items((object)ViewBag.item)).Render()`  |
+| Clear Format | **Property:** ShowClearFormat <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowClearFormat(true).Render();}` | No separate Property for clear Format. Its Provided in toolbar command.<br/> <br/>` viewBag.item = new[] {"ClearFormat"}` <br/> <br/>`@Html.EJS().RichTextEditor("default").ToolbarSettings(e => e.Items((object)ViewBag.item)).Render()` |
 | Place holder | Not Applicable | **Property:** Placeholder<br/> <br/>`@Html.EJS().RichTextEditor("default").Placeholder("Enter the text").Render()` |
 | Context Menu | **Property:** ShowContextMenu<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowContextMenu(true).Render();}` | Not Applicable |
 | Dimensions | **Property:** ShowDimensions<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowDimensions(true).Render();}` | Not Applicable |
@@ -164,7 +164,7 @@ This article describes the API migration process of Rich Text Editor control fro
 | Html Tag Info | **Property:** ShowHtmlTagInfo<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowHtmlTagInfo(true).Render();}` | Not Applicable |
 | Rounded Corner | **Property:** ShowRoundedCorner<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowRoundedCorner(true).Render();}` | Not Applicable |
 | Tooltip | **Property:** TooltipSettings<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").TooltipSettings(tooltip=>tooltip.ShowShadow(false)).Render();}` | Not Applicable |
-| value | **Property:** Value<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Value("The Rich Text Editor (RichTextEditor) control is an easy to render in client side.").Render();}` | **Property:** Value<br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).Height("720px").ToolbarSettings(e => { e.Enable(true); }).Render()`  |
+| value | **Property:** Value<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Value("The Rich Text Editor (RichTextEditor) control is an easy to render in client side.").Render();}` | **Property:** Value<br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).Height("720px").ToolbarSettings(e => { e.Enable(true); }).Render()` |
 | Validation Rules | **Property:** ValidationRules<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ValidationRules(new Dictionary<string, object> { { "required", "true" }, { "minWordCount", 15 } }).Render();}` | Achieved in sample level. <br/> <br/>[https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/validation.html#validation-rules](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/validation.html#validation-rules) |
 | Validation Message | **Property:** ValidationMessage<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ValidationMessage(new Dictionary<string, object> { { "minWordCount", "A minimum of {10} words is required here" }, { "Required", "Please enter the content" } }).Render();}` | Achieved in sample level.<br/> <br/>[https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/validation.html#validation-message](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/validation.html#validation-message) |
 | Zoom Step | **Property:** ZoomStep<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ZoomStep("0.5").Render();}` | Not Applicable |
@@ -199,7 +199,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
-| ------------ | ------------------------- | ------------------------- |
+|------------|-------------------------|-------------------------|
 | Execute Command | **Method:**  executeCommand(cmdName, args, [textnodeType]) <br/> <br/>`var rteObj = $("#rte ").data("ejRTE "); `<br/> <br/>` rteObj.executeCommand("bold", true)` | **Method:** executeCommand(cmdName, value) <br/> <br/>`var rteObj = document.getElementById("richtexteditor").ej2_Instances[0];`<br/> <br/>`rteObj. executeCommand("Bold" );` |
 | Execute events | **Event:** Execute<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ClientSideEvents(evt => evt.Execute("onExecute")).Render();}` | **Event:** ActionComplete <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ActionComplete("onActionComplete").Render()` |
 | Before Execute | Not Applicable | **Event:**  ActionBegin <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ActionBegin("onActionBegin").Render()` |

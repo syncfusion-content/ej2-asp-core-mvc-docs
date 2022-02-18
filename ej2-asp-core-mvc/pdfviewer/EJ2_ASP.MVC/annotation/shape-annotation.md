@@ -19,7 +19,7 @@ The PDF Viewer control provides the options to add, edit, and delete the shape a
 * Circle
 * Polygon
 
-![ShapeAnnotation](../../../pdfviewer/images/shape_annot.png)
+![ShapeAnnotation](../../images/shape_annot.png)
 
 ## Adding a shape annotation to the PDF document
 
@@ -32,7 +32,7 @@ Shape annotations can be added to the PDF document using the annotation toolbar.
 
 In the pan mode, if the shape annotation mode is entered, the PDF Viewer control will switch to text select mode.
 
-![ShapeTool](../../../pdfviewer/images/shape_toolbar.png)
+![ShapeTool](../../images/shape_toolbar.png)
 
 Refer to the following code sample to switch to the circle annotation mode.
 
@@ -58,25 +58,25 @@ The fill color, stroke color, thickness, and opacity of the shape annotation can
 
 The fill color of the annotation can be edited using the color palette provided in the Edit Color tool.
 
-![ShapeFillColor](../../../pdfviewer/images/shape_fillcolor.png)
+![ShapeFillColor](../../images/shape_fillcolor.png)
 
 ### Editing stroke color
 
 The stroke color of the annotation can be edited using the color palette provided in the Edit Stroke Color tool.
 
-![ShapeStrokeColor](../../../pdfviewer/images/shape_strokecolor.png)
+![ShapeStrokeColor](../../images/shape_strokecolor.png)
 
 ### Editing thickness
 
 The thickness of the border of the annotation can be edited using the range slider provided in the Edit Thickness tool.
 
-![ShapeThickness](../../../pdfviewer/images/shape_thickness.png)
+![ShapeThickness](../../images/shape_thickness.png)
 
 ### Editing opacity
 
 The opacity of the annotation can be edited using the range slider provided in the Edit Opacity tool.
 
-![ShapeOpacity](../../../pdfviewer/images/shape_opacity.png)
+![ShapeOpacity](../../images/shape_opacity.png)
 
 ### Editing the line properties
 
@@ -84,7 +84,7 @@ The properties of the line shapes such as line and arrow annotations can be edit
 
 Refer to the following code sample to set the default annotation settings.
 
-![ShapeProperty](../../../pdfviewer/images/shape_lineproperty.png)
+![ShapeProperty](../../images/shape_lineproperty.png)
 
 ## Setting default properties during the control initialization
 
