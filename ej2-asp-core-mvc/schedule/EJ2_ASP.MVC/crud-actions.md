@@ -86,7 +86,7 @@ if (param.action == "insert" || (param.action == "batch" && param.added != null)
 }
 ```
 
-![adding event](../../schedule/images/add.png)
+![adding event](../images/add.png)
 
 ### Restricting add action based on specific criteria
 
@@ -249,7 +249,7 @@ if (param.action == "update" || (param.action == "batch" && param.changed != nul
 }
 ```
 
-![updating event](../../schedule/images/edit.png)
+![updating event](../images/edit.png)
 
 ### How to edit a single occurrence or entire series and update it in database at server-side
 
@@ -569,7 +569,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 }
 ```
 
-![removing event](../../schedule/images/remove.png)
+![removing event](../images/remove.png)
 
 ### How to delete a single occurrence or entire series from Scheduler and update it in database at server-side
 

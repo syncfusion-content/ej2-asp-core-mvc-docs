@@ -241,8 +241,6 @@ You can lock columns by using [`column.lockColumn`](https://help.syncfusion.com/
 
 In the below example, Duration column is locked and its reordering functionality is disabled.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/columns-core/lock/tagHelper %}
@@ -251,20 +249,6 @@ In the below example, Duration column is locked and its reordering functionality
 {% include code-snippet/tree-grid/columns-core/lock/lock.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/columns-core/lock/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Lock.cs" %}
-{% include code-snippet/tree-grid/columns-core/lock/lock.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Column resizing
 

@@ -143,7 +143,4 @@ Essential JS 1 and Essential JS 2 controls have already been initialized via get
 </ejs-grid>
 
 ```
-
-## Sample
-
-https://github.com/SyncfusionExamples/ej2-aspcore-ej1compatibility
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-ej1compatibility).

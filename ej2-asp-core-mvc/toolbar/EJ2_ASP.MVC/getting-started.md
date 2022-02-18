@@ -44,7 +44,7 @@ documentation: ug
 
 Output be like the below.
 
-![getting started](../../toolbar/images/gettingstarted.PNG)
+![getting started](../images/gettingstarted.PNG)
 
 ## Render the Toolbar items using content template
 
@@ -79,7 +79,7 @@ In the below demo, the Toolbar items are given as [Button](../button), [MaskedTe
 
 Output be like the below.
 
-![content template](../../toolbar/images/contenttemplate.PNG)
+![content template](../images/contenttemplate.PNG)
 
 ## See Also
 

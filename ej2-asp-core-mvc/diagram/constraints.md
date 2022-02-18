@@ -11,7 +11,7 @@ documentation: ug
 
 # Constraints
 
-Constraints are used to enable/disable certain behaviors of the diagram, nodes and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled using Bitwise operators (&, |, ~, <<, etc.).
+Constraints are used to enable/disable certain behaviors of the diagram, nodes and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled using Bitwise operators (`&, |, ~, <<, etc.`).
 
 To know more about Bitwise operators, refer to [`Bitwise Operations`](#bitwise-operations).
 

@@ -16,10 +16,10 @@ This article describes the API migration process of File Upload component from E
 ## Accessibility
 
 <!-- markdownlint-disable MD038 -->
-| **Behavior**           | **Property in Essential JS 1**     |        **Property in Essential JS 2**       |
-| -----------------------| -----------------------------------| ------------------------------------------- |
-| Localization           | **Property** : locale <br/><br/> `@Html.EJ().Uploadbox("UploadDefault")`<br/>`.Locale("es-ES")` | **Property** : locale <br/><br/> `@Html.EJS().`<br/>`Uploader("UploadFiles").`<br/>`Locale("es-ES").Render()` |
-| Right to left | **Property:** enableRTL <br/><br/> `@Html.EJ().Uploadbox("UploadDefault").`<br/>`EnableRTL(true)`  | **Property:** enableRTL <br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`EnableRtl(true).Render()`
+| **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
+|--------------|---------------------------|---------------------|
+| Localization | **Property** : locale <br/><br/> `@Html.EJ().Uploadbox("UploadDefault")`<br/>`.Locale("es-ES")` | **Property** : locale <br/><br/> `@Html.EJS().`<br/>`Uploader("UploadFiles").`<br/>`Locale("es-ES").Render()` |
+| Right to left | **Property:** enableRTL <br/><br/> `@Html.EJ().Uploadbox("UploadDefault").`<br/>`EnableRTL(true)` | **Property:** enableRTL <br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`EnableRtl(true).Render()` |
 
 ## File list
 

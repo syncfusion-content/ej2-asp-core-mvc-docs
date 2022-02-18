@@ -37,4 +37,4 @@ When there are no fields in a pivot table's row, column, value, and filter axes,
 
 
 
-![output](images/empty-report-all-axes.png)
+![output](../images/empty-report-all-axes.png)

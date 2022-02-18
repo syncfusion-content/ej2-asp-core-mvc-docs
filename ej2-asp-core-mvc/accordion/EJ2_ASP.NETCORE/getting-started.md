@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started
 
  This section briefly explains about how to include a simple Accordion in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/) page for introduction part of the system requirements and configure the common specifications.
@@ -40,11 +39,7 @@ documentation: ug
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![Default accordion](../images/accordion.PNG)
+![Default accordion](images/accordion.PNG)
 
 ## Render the Accordion using content template
 
@@ -75,10 +70,6 @@ In the below demo, the Accordion items are given with [chart](../../chart), [gri
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![content template](../images/contenttemplate.PNG)
+![content template](images/contenttemplate.PNG)
 
 You can also render accordion without using `contentTemplate` which can be referred [here](../../accordion/how-to/set-the-nested-accordion).
