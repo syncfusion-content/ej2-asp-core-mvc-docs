@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize The Spin Buttons Up And Down Arrow in ##Platform_Name## Numerictextbox Component
-description: Learn here all about Customize The Spin Buttons Up And Down Arrow in Syncfusion ##Platform_Name## Numerictextbox component and more.
+description: Learn here all about Customize The Spin Buttons Up And Down Arrow in Syncfusion ##Platform_Name## Numerictextbox component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Customize The Spin Buttons Up And Down Arrow
 publishingplatform: ##Platform_Name##

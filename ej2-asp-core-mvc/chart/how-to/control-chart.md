@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Control Chart in ##Platform_Name## Chart Component
-description: Learn here all about Control Chart in Syncfusion ##Platform_Name## Chart component and more.
+description: Learn here all about Control Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Control Chart
 publishingplatform: ##Platform_Name##

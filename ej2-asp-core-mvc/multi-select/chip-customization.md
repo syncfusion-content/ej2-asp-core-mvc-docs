@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chip Customization in ##Platform_Name## Multi Select Component
-description: Learn here all about Chip Customization in Syncfusion ##Platform_Name## Multi Select component and more.
+description: Learn here all about Chip Customization in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chip Customization
 publishingplatform: ##Platform_Name##

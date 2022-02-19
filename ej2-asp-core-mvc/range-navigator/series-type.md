@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series Type in ##Platform_Name## Range Navigator Component
-description: Learn here all about Series Type in Syncfusion ##Platform_Name## Range Navigator component and more.
+description: Learn here all about Series Type in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Series Type
 publishingplatform: ##Platform_Name##

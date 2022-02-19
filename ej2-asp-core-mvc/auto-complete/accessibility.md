@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Auto Complete Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Auto Complete component and more.
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##

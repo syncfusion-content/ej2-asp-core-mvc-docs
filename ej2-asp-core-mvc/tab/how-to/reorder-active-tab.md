@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reorder Active Tab in ##Platform_Name## Tab Component
-description: Learn here all about Reorder Active Tab in Syncfusion ##Platform_Name## Tab component and more.
+description: Learn here all about Reorder Active Tab in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Reorder Active Tab
 publishingplatform: ##Platform_Name##

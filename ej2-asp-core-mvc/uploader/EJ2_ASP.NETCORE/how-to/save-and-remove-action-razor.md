@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Save And Remove Action Razor in ##Platform_Name## Uploader Component
-description: Learn here all about Save And Remove Action Razor in Syncfusion ##Platform_Name## Uploader component and more.
+description: Learn here all about Save And Remove Action Razor in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Save And Remove Action Razor
 publishingplatform: ##Platform_Name##

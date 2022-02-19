@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create Right To Left Splitbutton in ##Platform_Name## Split Button Component
-description: Learn here all about Create Right To Left Splitbutton in Syncfusion ##Platform_Name## Split Button component and more.
+description: Learn here all about Create Right To Left Splitbutton in Syncfusion ##Platform_Name## Split Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Right To Left Splitbutton
 publishingplatform: ##Platform_Name##

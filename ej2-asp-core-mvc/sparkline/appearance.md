@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in ##Platform_Name## Sparkline Component
-description: Learn here all about Appearance in Syncfusion ##Platform_Name## Sparkline component and more.
+description: Learn here all about Appearance in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appearance
 publishingplatform: ##Platform_Name##

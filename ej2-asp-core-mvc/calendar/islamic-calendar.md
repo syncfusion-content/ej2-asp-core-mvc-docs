@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Islamic Calendar in ##Platform_Name## Calendar Component
-description: Learn here all about Islamic Calendar in Syncfusion ##Platform_Name## Calendar component and more.
+description: Learn here all about Islamic Calendar in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Islamic Calendar
 publishingplatform: ##Platform_Name##

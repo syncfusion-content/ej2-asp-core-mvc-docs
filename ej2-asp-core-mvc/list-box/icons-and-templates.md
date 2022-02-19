@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Icons And Templates in ##Platform_Name## List Box Component
-description: Learn here all about Icons And Templates in Syncfusion ##Platform_Name## List Box component and more.
+description: Learn here all about Icons And Templates in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons And Templates
 publishingplatform: ##Platform_Name##

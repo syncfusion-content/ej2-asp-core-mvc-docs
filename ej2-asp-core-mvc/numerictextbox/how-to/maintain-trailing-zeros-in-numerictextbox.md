@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maintain Trailing Zeros In Numerictextbox in ##Platform_Name## Numerictextbox Component
-description: Learn here all about Maintain Trailing Zeros In Numerictextbox in Syncfusion ##Platform_Name## Numerictextbox component and more.
+description: Learn here all about Maintain Trailing Zeros In Numerictextbox in Syncfusion ##Platform_Name## Numerictextbox component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Maintain Trailing Zeros In Numerictextbox
 publishingplatform: ##Platform_Name##

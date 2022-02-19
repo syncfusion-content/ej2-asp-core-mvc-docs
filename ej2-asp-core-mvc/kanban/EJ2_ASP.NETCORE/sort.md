@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sort in ##Platform_Name## Kanban Component
-description: Learn here all about Sort in Syncfusion ##Platform_Name## Kanban component and more.
+description: Learn here all about Sort in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sort
 publishingplatform: ##Platform_Name##

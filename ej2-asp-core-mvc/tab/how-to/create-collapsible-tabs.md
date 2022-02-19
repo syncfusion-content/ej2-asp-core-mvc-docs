@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create Collapsible Tabs in ##Platform_Name## Tab Component
-description: Learn here all about Create Collapsible Tabs in Syncfusion ##Platform_Name## Tab component and more.
+description: Learn here all about Create Collapsible Tabs in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Collapsible Tabs
 publishingplatform: ##Platform_Name##

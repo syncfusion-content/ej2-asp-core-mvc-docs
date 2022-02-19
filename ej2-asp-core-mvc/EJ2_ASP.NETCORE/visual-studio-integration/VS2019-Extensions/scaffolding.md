@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scaffolding in ##Platform_Name## Ej2_asp.netcore Component
-description: Learn here all about Scaffolding in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
+title: Scaffolding in ##Platform_Name## Component
+description: Learn here all about Scaffolding in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scaffolding
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Custom Thumbnail in ##Platform_Name## File Manager Component
-description: Learn here all about Customize Custom Thumbnail in Syncfusion ##Platform_Name## File Manager component and more.
+description: Learn here all about Customize Custom Thumbnail in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Custom Thumbnail
 publishingplatform: ##Platform_Name##

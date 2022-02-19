@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtualization in ##Platform_Name## Listview Component
-description: Learn here all about Virtualization in Syncfusion ##Platform_Name## Listview component and more.
+description: Learn here all about Virtualization in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtualization
 publishingplatform: ##Platform_Name##

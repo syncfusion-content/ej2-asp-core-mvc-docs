@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Badge Customization in ##Platform_Name## Badge Component
-description: Learn here all about Badge Customization in Syncfusion ##Platform_Name## Badge component and more.
+description: Learn here all about Badge Customization in Syncfusion ##Platform_Name## Badge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Badge Customization
 publishingplatform: ##Platform_Name##

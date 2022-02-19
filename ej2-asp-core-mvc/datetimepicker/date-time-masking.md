@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Time Masking in ##Platform_Name## Datetimepicker Component
-description: Learn here all about Date Time Masking in Syncfusion ##Platform_Name## Datetimepicker component and more.
+description: Learn here all about Date Time Masking in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Date Time Masking
 publishingplatform: ##Platform_Name##

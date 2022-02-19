@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dynamic Tooltip Content With Html Elements in ##Platform_Name## Tooltip Component
-description: Learn here all about Dynamic Tooltip Content With Html Elements in Syncfusion ##Platform_Name## Tooltip component and more.
+description: Learn here all about Dynamic Tooltip Content With Html Elements in Syncfusion ##Platform_Name## Tooltip component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Dynamic Tooltip Content With Html Elements
 publishingplatform: ##Platform_Name##

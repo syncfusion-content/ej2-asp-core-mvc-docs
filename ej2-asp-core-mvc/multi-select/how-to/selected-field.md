@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selected Field in ##Platform_Name## Multi Select Component
-description: Learn here all about Selected Field in Syncfusion ##Platform_Name## Multi Select component and more.
+description: Learn here all about Selected Field in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selected Field
 publishingplatform: ##Platform_Name##

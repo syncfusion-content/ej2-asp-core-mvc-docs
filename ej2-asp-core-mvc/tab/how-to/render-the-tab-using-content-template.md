@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Render The Tab Using Content Template in ##Platform_Name## Tab Component
-description: Learn here all about Render The Tab Using Content Template in Syncfusion ##Platform_Name## Tab component and more.
+description: Learn here all about Render The Tab Using Content Template in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Render The Tab Using Content Template
 publishingplatform: ##Platform_Name##

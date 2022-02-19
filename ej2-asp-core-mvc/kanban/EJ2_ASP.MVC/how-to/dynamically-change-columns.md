@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dynamically Change Columns in ##Platform_Name## Kanban Component
-description: Learn here all about Dynamically Change Columns in Syncfusion ##Platform_Name## Kanban component and more.
+description: Learn here all about Dynamically Change Columns in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dynamically Change Columns
 publishingplatform: ##Platform_Name##

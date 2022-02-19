@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changing The Pivotview Component Minimum Height in ##Platform_Name## Pivot Table Component
-description: Learn here all about Changing The Pivotview Component Minimum Height in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about Changing The Pivotview Component Minimum Height in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Changing The Pivotview Component Minimum Height
 publishingplatform: ##Platform_Name##

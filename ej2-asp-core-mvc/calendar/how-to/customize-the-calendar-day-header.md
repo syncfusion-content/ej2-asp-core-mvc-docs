@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize The Calendar Day Header in ##Platform_Name## Calendar Component
-description: Learn here all about Customize The Calendar Day Header in Syncfusion ##Platform_Name## Calendar component and more.
+description: Learn here all about Customize The Calendar Day Header in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize The Calendar Day Header
 publishingplatform: ##Platform_Name##

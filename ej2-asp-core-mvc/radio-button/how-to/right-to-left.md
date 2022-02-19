@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Right To Left in ##Platform_Name## Radio Button Component
-description: Learn here all about Right To Left in Syncfusion ##Platform_Name## Radio Button component and more.
+description: Learn here all about Right To Left in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Right To Left
 publishingplatform: ##Platform_Name##
