@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set The Cursor At The Specific Range in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about Set The Cursor At The Specific Range in Syncfusion ##Platform_Name## Rich Text Editor component and more.
+description: Learn here all about Set The Cursor At The Specific Range in Syncfusion ##Platform_Name## Rich Text Editor component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Set The Cursor At The Specific Range
 publishingplatform: ##Platform_Name##

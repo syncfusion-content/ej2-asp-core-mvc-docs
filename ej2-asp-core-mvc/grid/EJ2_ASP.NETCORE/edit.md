@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Edit in ##Platform_Name## Grid Component
-description: Learn here all about Edit in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Edit in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Edit
 publishingplatform: ##Platform_Name##

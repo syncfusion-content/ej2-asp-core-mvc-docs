@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Item Wise Custom Template in ##Platform_Name## Toolbar Component
-description: Learn here all about Set Item Wise Custom Template in Syncfusion ##Platform_Name## Toolbar component and more.
+description: Learn here all about Set Item Wise Custom Template in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set Item Wise Custom Template
 publishingplatform: ##Platform_Name##

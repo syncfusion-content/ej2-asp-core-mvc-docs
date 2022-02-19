@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Close The Toast With Click Tap in ##Platform_Name## Toast Component
-description: Learn here all about Close The Toast With Click Tap in Syncfusion ##Platform_Name## Toast component and more.
+description: Learn here all about Close The Toast With Click Tap in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Close The Toast With Click Tap
 publishingplatform: ##Platform_Name##

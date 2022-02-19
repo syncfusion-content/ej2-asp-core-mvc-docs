@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open A Dialog On Popup Item Click in ##Platform_Name## Split Button Component
-description: Learn here all about Open A Dialog On Popup Item Click in Syncfusion ##Platform_Name## Split Button component and more.
+description: Learn here all about Open A Dialog On Popup Item Click in Syncfusion ##Platform_Name## Split Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open A Dialog On Popup Item Click
 publishingplatform: ##Platform_Name##

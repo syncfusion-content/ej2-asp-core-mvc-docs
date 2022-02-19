@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in ##Platform_Name## Color Picker Component
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Color Picker component and more.
+description: Learn here all about Localization in Syncfusion ##Platform_Name## Color Picker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##

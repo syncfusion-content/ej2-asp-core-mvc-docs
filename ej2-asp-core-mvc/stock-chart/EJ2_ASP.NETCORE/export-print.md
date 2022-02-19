@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export Print in ##Platform_Name## Stock Chart Component
-description: Learn here all about Export Print in Syncfusion ##Platform_Name## Stock Chart component and more.
+description: Learn here all about Export Print in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export Print
 publishingplatform: ##Platform_Name##

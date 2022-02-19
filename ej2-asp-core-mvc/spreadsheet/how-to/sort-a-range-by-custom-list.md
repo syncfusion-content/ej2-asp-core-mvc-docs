@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sort A Range By Custom List in ##Platform_Name## Spreadsheet Component
-description: Learn here all about Sort A Range By Custom List in Syncfusion ##Platform_Name## Spreadsheet component and more.
+description: Learn here all about Sort A Range By Custom List in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sort A Range By Custom List
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set State Persistence Of The Tab Component in ##Platform_Name## Tab Component
-description: Learn here all about Set State Persistence Of The Tab Component in Syncfusion ##Platform_Name## Tab component and more.
+description: Learn here all about Set State Persistence Of The Tab Component in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set State Persistence Of The Tab Component
 publishingplatform: ##Platform_Name##

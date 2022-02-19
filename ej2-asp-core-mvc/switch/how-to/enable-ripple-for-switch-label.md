@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enable Ripple For Switch Label in ##Platform_Name## Switch Component
-description: Learn here all about Enable Ripple For Switch Label in Syncfusion ##Platform_Name## Switch component and more.
+description: Learn here all about Enable Ripple For Switch Label in Syncfusion ##Platform_Name## Switch component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Enable Ripple For Switch Label
 publishingplatform: ##Platform_Name##

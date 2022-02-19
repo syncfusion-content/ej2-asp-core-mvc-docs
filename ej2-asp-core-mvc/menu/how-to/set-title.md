@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Title in ##Platform_Name## Menu Component
-description: Learn here all about Set Title in Syncfusion ##Platform_Name## Menu component and more.
+description: Learn here all about Set Title in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set Title
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns Mvc in ##Platform_Name## Tree Grid Component
-description: Learn here all about Columns Mvc in Syncfusion ##Platform_Name## Tree Grid component and more.
+description: Learn here all about Columns Mvc in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Columns Mvc
 publishingplatform: ##Platform_Name##

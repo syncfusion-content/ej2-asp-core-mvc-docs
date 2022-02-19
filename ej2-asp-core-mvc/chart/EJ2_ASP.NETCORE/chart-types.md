@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Types in ##Platform_Name## Chart Component
-description: Learn here all about Chart Types in Syncfusion ##Platform_Name## Chart component and more.
+description: Learn here all about Chart Types in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chart Types
 publishingplatform: ##Platform_Name##

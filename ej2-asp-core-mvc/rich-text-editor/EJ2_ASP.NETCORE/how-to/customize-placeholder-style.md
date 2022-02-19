@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Placeholder Style in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about Customize Placeholder Style in Syncfusion ##Platform_Name## Rich Text Editor component and more.
+description: Learn here all about Customize Placeholder Style in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Placeholder Style
 publishingplatform: ##Platform_Name##

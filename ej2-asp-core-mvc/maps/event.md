@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event in ##Platform_Name## Maps Component
-description: Learn here all about Event in Syncfusion ##Platform_Name## Maps component and more.
+description: Learn here all about Event in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Event
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Provide Custom Data Source And Enabling Filtering To Drop Down List in ##Platform_Name## Grid Component
-description: Learn here all about Provide Custom Data Source And Enabling Filtering To Drop Down List in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Provide Custom Data Source And Enabling Filtering To Drop Down List in Syncfusion ##Platform_Name## Grid component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Provide Custom Data Source And Enabling Filtering To Drop Down List
 publishingplatform: ##Platform_Name##

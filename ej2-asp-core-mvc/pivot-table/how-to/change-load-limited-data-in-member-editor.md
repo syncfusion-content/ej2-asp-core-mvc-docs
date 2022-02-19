@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Change Load Limited Data In Member Editor in ##Platform_Name## Pivot Table Component
-description: Learn here all about Change Load Limited Data In Member Editor in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about Change Load Limited Data In Member Editor in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Change Load Limited Data In Member Editor
 publishingplatform: ##Platform_Name##

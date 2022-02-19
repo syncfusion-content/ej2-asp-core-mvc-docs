@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Check Box in ##Platform_Name## Treeview Component
-description: Learn here all about Check Box in Syncfusion ##Platform_Name## Treeview component and more.
+description: Learn here all about Check Box in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Check Box
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: File System Provider in ##Platform_Name## File Manager Component
-description: Learn here all about File System Provider in Syncfusion ##Platform_Name## File Manager component and more.
+description: Learn here all about File System Provider in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File System Provider
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maskedtextbox For And Model Binding in ##Platform_Name## Maskedtextbox Component
-description: Learn here all about Maskedtextbox For And Model Binding in Syncfusion ##Platform_Name## Maskedtextbox component and more.
+description: Learn here all about Maskedtextbox For And Model Binding in Syncfusion ##Platform_Name## Maskedtextbox component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Maskedtextbox For And Model Binding
 publishingplatform: ##Platform_Name##

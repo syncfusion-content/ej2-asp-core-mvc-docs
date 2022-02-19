@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent Toast Close With Mobile Swipe in ##Platform_Name## Toast Component
-description: Learn here all about Prevent Toast Close With Mobile Swipe in Syncfusion ##Platform_Name## Toast component and more.
+description: Learn here all about Prevent Toast Close With Mobile Swipe in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Prevent Toast Close With Mobile Swipe
 publishingplatform: ##Platform_Name##

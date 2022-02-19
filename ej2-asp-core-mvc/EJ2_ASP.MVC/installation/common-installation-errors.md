@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Common Installation Errors in ##Platform_Name## Component
-description: Learn here all about Common Installation Errors in Syncfusion ##Platform_Name## component and more.
+description: Learn here all about Common Installation Errors in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common Installation Errors
 publishingplatform: ##Platform_Name##

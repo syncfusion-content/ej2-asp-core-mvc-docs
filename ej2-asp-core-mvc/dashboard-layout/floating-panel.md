@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Floating Panel in ##Platform_Name## Dashboard Layout Component
-description: Learn here all about Floating Panel in Syncfusion ##Platform_Name## Dashboard Layout component and more.
+description: Learn here all about Floating Panel in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Floating Panel
 publishingplatform: ##Platform_Name##

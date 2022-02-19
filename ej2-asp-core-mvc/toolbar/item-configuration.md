@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Item Configuration in ##Platform_Name## Toolbar Component
-description: Learn here all about Item Configuration in Syncfusion ##Platform_Name## Toolbar component and more.
+description: Learn here all about Item Configuration in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Item Configuration
 publishingplatform: ##Platform_Name##

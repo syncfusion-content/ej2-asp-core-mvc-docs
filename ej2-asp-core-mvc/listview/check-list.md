@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Check List in ##Platform_Name## Listview Component
-description: Learn here all about Check List in Syncfusion ##Platform_Name## Listview component and more.
+description: Learn here all about Check List in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Check List
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animation in ##Platform_Name## Tooltip Component
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Tooltip component and more.
+description: Learn here all about Animation in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Animation
 publishingplatform: ##Platform_Name##

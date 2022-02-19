@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modify Data in ##Platform_Name## Drop Down List Component
-description: Learn here all about Modify Data in Syncfusion ##Platform_Name## Drop Down List component and more.
+description: Learn here all about Modify Data in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Modify Data
 publishingplatform: ##Platform_Name##

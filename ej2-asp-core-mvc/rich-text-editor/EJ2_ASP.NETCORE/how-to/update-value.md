@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Update Value in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about Update Value in Syncfusion ##Platform_Name## Rich Text Editor component and more.
+description: Learn here all about Update Value in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Update Value
 publishingplatform: ##Platform_Name##
