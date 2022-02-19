@@ -131,8 +131,6 @@ public ActionResult GetServerData()
     }
 ```
 
-{% if page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/lineargauge/how-to/dynamic-gauge/razor %}
@@ -141,8 +139,6 @@ public ActionResult GetServerData()
 {% include code-snippet/lineargauge/how-to/dynamic-gauge/dynamic.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 
 **Sample reference**
