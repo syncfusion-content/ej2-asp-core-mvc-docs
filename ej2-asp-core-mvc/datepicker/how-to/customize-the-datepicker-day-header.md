@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize The Datepicker Day Header in ##Platform_Name## Datepicker Component
-description: Learn here all about Customize The Datepicker Day Header in Syncfusion ##Platform_Name## Datepicker component and more.
+description: Learn here all about Customize The Datepicker Day Header in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize The Datepicker Day Header
 publishingplatform: ##Platform_Name##

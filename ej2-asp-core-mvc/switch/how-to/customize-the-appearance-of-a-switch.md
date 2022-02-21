@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize The Appearance Of A Switch in ##Platform_Name## Switch Component
-description: Learn here all about Customize The Appearance Of A Switch in Syncfusion ##Platform_Name## Switch component and more.
+description: Learn here all about Customize The Appearance Of A Switch in Syncfusion ##Platform_Name## Switch component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize The Appearance Of A Switch
 publishingplatform: ##Platform_Name##

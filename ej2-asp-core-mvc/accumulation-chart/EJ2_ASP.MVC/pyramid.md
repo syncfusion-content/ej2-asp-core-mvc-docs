@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pyramid in ##Platform_Name## Accumulation Chart Component
-description: Learn here all about Pyramid in Syncfusion ##Platform_Name## Accumulation Chart component and more.
+description: Learn here all about Pyramid in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pyramid
 publishingplatform: ##Platform_Name##

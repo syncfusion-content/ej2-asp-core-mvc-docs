@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Daterangepicker For Mvc in ##Platform_Name## Daterangepicker Component
-description: Learn here all about Daterangepicker For Mvc in Syncfusion ##Platform_Name## Daterangepicker component and more.
+description: Learn here all about Daterangepicker For Mvc in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Daterangepicker For Mvc
 publishingplatform: ##Platform_Name##

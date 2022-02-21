@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Table Of Contents in ##Platform_Name## Document Editor Component
-description: Learn here all about Table Of Contents in Syncfusion ##Platform_Name## Document Editor component and more.
+description: Learn here all about Table Of Contents in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Table Of Contents
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enable Editing In Single Click in ##Platform_Name## Grid Component
-description: Learn here all about Enable Editing In Single Click in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Enable Editing In Single Click in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Enable Editing In Single Click
 publishingplatform: ##Platform_Name##

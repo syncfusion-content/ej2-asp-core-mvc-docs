@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Close Dialog While Click On Outside Of Dialog in ##Platform_Name## Dialog Component
-description: Learn here all about Close Dialog While Click On Outside Of Dialog in Syncfusion ##Platform_Name## Dialog component and more.
+description: Learn here all about Close Dialog While Click On Outside Of Dialog in Syncfusion ##Platform_Name## Dialog component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Close Dialog While Click On Outside Of Dialog
 publishingplatform: ##Platform_Name##

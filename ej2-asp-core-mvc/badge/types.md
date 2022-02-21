@@ -1,21 +1,31 @@
 ---
 layout: post
 title: Types in ##Platform_Name## Badge Component
-description: Learn here all about Types in Syncfusion ##Platform_Name## Badge component and more.
+description: Learn here all about Types in Syncfusion ##Platform_Name## Badge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-| e-badge-primary   | Represents a primary notification.
-| e-badge-secondary | Represents a secondary notification.
-| e-badge-success   | Represents a positive notification.
-| e-badge-danger    | Represents a negative notification.
-| e-badge-warning   | Represents notification with caution.
-| e-badge-info      | Represents an informative notification.
-| e-badge-light     | Represents notification in light variant.
-| e-badge-dark      | Represents notification in dark variant.
+# Types
+
+This section explains different styles and types of the badges.
+
+## Badge styles
+
+The Essential JS 2 Badge has the following predefined styles that can be used with `.e-badge` class to change the appearance of a badge
+
+| Class Name | Description |
+|------------|-------------|
+| e-badge-primary   | Represents a primary notification. |
+| e-badge-secondary | Represents a secondary notification. |
+| e-badge-success   | Represents a positive notification. |
+| e-badge-danger    | Represents a negative notification. |
+| e-badge-warning   | Represents notification with caution. |
+| e-badge-info      | Represents an informative notification. |
+| e-badge-light     | Represents notification in light variant. |
+| e-badge-dark      | Represents notification in dark variant. |
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Display Custom Tool Tip For Columns In Grid in ##Platform_Name## Grid Component
-description: Learn here all about Display Custom Tool Tip For Columns In Grid in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Display Custom Tool Tip For Columns In Grid in Syncfusion ##Platform_Name## Grid component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Display Custom Tool Tip For Columns In Grid
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scrolling in ##Platform_Name## Tree Grid Component
-description: Learn here all about Scrolling in Syncfusion ##Platform_Name## Tree Grid component and more.
+description: Learn here all about Scrolling in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scrolling
 publishingplatform: ##Platform_Name##

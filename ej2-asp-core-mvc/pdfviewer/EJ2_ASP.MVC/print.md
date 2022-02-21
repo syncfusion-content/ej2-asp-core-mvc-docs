@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Print in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Print in Syncfusion ##Platform_Name## Pdfviewer component and more.
+description: Learn here all about Print in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print
 publishingplatform: ##Platform_Name##
@@ -18,7 +18,7 @@ The PDF Viewer supports printing the loaded PDF file. You can enable/disable the
     </div>
 ```
 
-![Alt text](./images/print.png)
+![Alt text](../images/print.png)
 
 You can invoke print action using the following code snippet.,
 

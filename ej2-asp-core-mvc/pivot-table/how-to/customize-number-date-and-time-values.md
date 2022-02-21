@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Number Date And Time Values in ##Platform_Name## Pivot Table Component
-description: Learn here all about Customize Number Date And Time Values in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about Customize Number Date And Time Values in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Customize Number Date And Time Values
 publishingplatform: ##Platform_Name##

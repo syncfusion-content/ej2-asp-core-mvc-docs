@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show Multiple Toasts In Various Positions in ##Platform_Name## Toast Component
-description: Learn here all about Show Multiple Toasts In Various Positions in Syncfusion ##Platform_Name## Toast component and more.
+description: Learn here all about Show Multiple Toasts In Various Positions in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Show Multiple Toasts In Various Positions
 publishingplatform: ##Platform_Name##

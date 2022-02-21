@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Compatible With Essential Js1 in ##Platform_Name## Common Component
-description: Learn here all about Compatible With Essential Js1 in Syncfusion ##Platform_Name## Common component and more.
+description: Learn here all about Compatible With Essential Js1 in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Compatible With Essential Js1
 publishingplatform: ##Platform_Name##
@@ -143,7 +143,4 @@ Essential JS 1 and Essential JS 2 controls have already been initialized via get
 </ejs-grid>
 
 ```
-
-## Sample
-
-https://github.com/SyncfusionExamples/ej2-aspcore-ej1compatibility
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-ej1compatibility).

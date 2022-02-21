@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populate Tab Items And Their Content Through View Bag in ##Platform_Name## Tab Component
-description: Learn here all about Populate Tab Items And Their Content Through View Bag in Syncfusion ##Platform_Name## Tab component and more.
+description: Learn here all about Populate Tab Items And Their Content Through View Bag in Syncfusion ##Platform_Name## Tab component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Populate Tab Items And Their Content Through View Bag
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns Mvc in ##Platform_Name## Tree Grid Component
-description: Learn here all about Columns Mvc in Syncfusion ##Platform_Name## Tree Grid component and more.
+description: Learn here all about Columns Mvc in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Columns Mvc
 publishingplatform: ##Platform_Name##
@@ -242,18 +242,6 @@ You can lock columns by using [`LockColumn`](https://help.syncfusion.com/cr/cref
 
 In the below example, Duration column is locked and its reordering functionality is disabled.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/columns-mvc/lock/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Lock.cs" %}
-{% include code-snippet/tree-grid/columns-mvc/lock/lock.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -263,7 +251,7 @@ In the below example, Duration column is locked and its reordering functionality
 {% include code-snippet/tree-grid/columns-mvc/lock/lock.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
+
 
 
 
@@ -328,16 +316,6 @@ In the following sample, minimum and maximum width are defined for **Duration**,
 
 Stacked columns can be resized by clicking and dragging the right edge of the stacked column header. While dragging, the width of the respective child columns will be resized at the same time. You can disable resize for particular stacked column by setting [`AllowResizing`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowResizing.html) as **false** to its columns.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Stackedresize.cs" %}
-{% include code-snippet/tree-grid/columns-mvc/stackedresize/stackedresize.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/columns-mvc/stackedresize/razor %}
@@ -346,9 +324,6 @@ Stacked columns can be resized by clicking and dragging the right edge of the st
 {% include code-snippet/tree-grid/columns-mvc/stackedresize/stackedresize.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ### Touch interaction
 
@@ -356,9 +331,7 @@ When the right edge of the header cell is tapped, a floating handler will be vis
 
 The following screenshot represents the column resizing in touch device.
 
-<!-- markdownlint-disable MD033 -->
-<img src="/tree-grid/images/column-resizing.png" alt="Touch interaction image" style="width:320px;height: 620px">
-<!-- markdownlint-enable MD033 -->
+![Touch Interaction](../images/column-resizing.png)
 
 ## Column template
 

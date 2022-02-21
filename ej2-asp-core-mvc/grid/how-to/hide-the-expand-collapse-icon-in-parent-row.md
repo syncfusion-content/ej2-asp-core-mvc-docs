@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hide The Expand Collapse Icon In Parent Row in ##Platform_Name## Grid Component
-description: Learn here all about Hide The Expand Collapse Icon In Parent Row in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Hide The Expand Collapse Icon In Parent Row in Syncfusion ##Platform_Name## Grid component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Hide The Expand Collapse Icon In Parent Row
 publishingplatform: ##Platform_Name##

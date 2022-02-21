@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pdf Export in ##Platform_Name## Pivot Table Component
-description: Learn here all about Pdf Export in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about Pdf Export in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pdf Export
 publishingplatform: ##Platform_Name##

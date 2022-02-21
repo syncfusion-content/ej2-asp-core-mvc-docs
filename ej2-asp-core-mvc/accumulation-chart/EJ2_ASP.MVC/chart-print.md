@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Print in ##Platform_Name## Accumulation Chart Component
-description: Learn here all about Chart Print in Syncfusion ##Platform_Name## Accumulation Chart component and more.
+description: Learn here all about Chart Print in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chart Print
 publishingplatform: ##Platform_Name##

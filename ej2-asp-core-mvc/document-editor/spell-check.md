@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spell Check in ##Platform_Name## Document Editor Component
-description: Learn here all about Spell Check in Syncfusion ##Platform_Name## Document Editor component and more.
+description: Learn here all about Spell Check in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Spell Check
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customized Checkbox in ##Platform_Name## Check Box Component
-description: Learn here all about Customized Checkbox in Syncfusion ##Platform_Name## Check Box component and more.
+description: Learn here all about Customized Checkbox in Syncfusion ##Platform_Name## Check Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customized Checkbox
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How To Upgrade Syncfusion Components Using Vs Extensions in ##Platform_Name## Ej2_asp.netcore Component
-description: Learn here all about How To Upgrade Syncfusion Components Using Vs Extensions in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
+title: How To Upgrade Syncfusion Components Using Vs Extensions in ##Platform_Name## Component
+description: Learn here all about How To Upgrade Syncfusion Components Using Vs Extensions in Syncfusion ##Platform_Name## component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: How To Upgrade Syncfusion Components Using Vs Extensions
 publishingplatform: ##Platform_Name##

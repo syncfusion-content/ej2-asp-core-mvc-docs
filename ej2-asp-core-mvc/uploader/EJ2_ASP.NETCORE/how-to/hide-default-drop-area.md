@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hide Default Drop Area in ##Platform_Name## Uploader Component
-description: Learn here all about Hide Default Drop Area in Syncfusion ##Platform_Name## Uploader component and more.
+description: Learn here all about Hide Default Drop Area in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Hide Default Drop Area
 publishingplatform: ##Platform_Name##

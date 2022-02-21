@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set The Disabled State in ##Platform_Name## Split Button Component
-description: Learn here all about Set The Disabled State in Syncfusion ##Platform_Name## Split Button component and more.
+description: Learn here all about Set The Disabled State in Syncfusion ##Platform_Name## Split Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set The Disabled State
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Code Behind in ##Platform_Name## Circular Gauge Component
-description: Learn here all about Code Behind in Syncfusion ##Platform_Name## Circular Gauge component and more.
+description: Learn here all about Code Behind in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Code Behind
 publishingplatform: ##Platform_Name##
@@ -76,19 +76,6 @@ Bind the gauge properties passed via ViewData from the controller at client-side
    @Html.EJS().CircularGauge("container", (Syncfusion.EJ2.CircularGauge.CircularGauge)ViewData["GaugeModel"]).Render();
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/circulargauge/how-to/database/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Database.cs" %}
-{% include code-snippet/circulargauge/how-to/database/database.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/how-to/database/razor %}
@@ -97,7 +84,6 @@ Bind the gauge properties passed via ViewData from the controller at client-side
 {% include code-snippet/circulargauge/how-to/database/database.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

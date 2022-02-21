@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Font Family Drop Down in ##Platform_Name## Document Editor Component
-description: Learn here all about Customize Font Family Drop Down in Syncfusion ##Platform_Name## Document Editor component and more.
+description: Learn here all about Customize Font Family Drop Down in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Font Family Drop Down
 publishingplatform: ##Platform_Name##

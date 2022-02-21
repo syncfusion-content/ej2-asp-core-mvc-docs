@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Common Installation Errors in ##Platform_Name## Ej2_asp.netcore Component
-description: Learn here all about Common Installation Errors in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
+title: Common Installation Errors in ##Platform_Name## Component
+description: Learn here all about Common Installation Errors in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common Installation Errors
 publishingplatform: ##Platform_Name##
@@ -54,7 +54,7 @@ This article describes the most common installation errors, as well as the cause
 
 ## Unable to find a valid license or trial
 
-**Error Message:** Sorry, we are unable to find a valid license or trial for Essential Studio for ASP . NET Core - EJ2 under your account.
+**Error Message:** Sorry, we are unable to find a valid license or trial for Essential Studio for ASP.NET Core - EJ2 under your account.
 
 ***Offline installer***
 

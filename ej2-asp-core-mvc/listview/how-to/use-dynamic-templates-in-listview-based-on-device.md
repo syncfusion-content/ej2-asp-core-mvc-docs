@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use Dynamic Templates In Listview Based On Device in ##Platform_Name## Listview Component
-description: Learn here all about Use Dynamic Templates In Listview Based On Device in Syncfusion ##Platform_Name## Listview component and more.
+description: Learn here all about Use Dynamic Templates In Listview Based On Device in Syncfusion ##Platform_Name## Listview component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Use Dynamic Templates In Listview Based On Device
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Based On Pivot Table Selection in ##Platform_Name## Pivot Table Component
-description: Learn here all about Chart Based On Pivot Table Selection in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about Chart Based On Pivot Table Selection in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Chart Based On Pivot Table Selection
 publishingplatform: ##Platform_Name##
@@ -37,4 +37,4 @@ The cell selection support is enabled using the `allowSelection` property and it
 
 
 
-![output](images/chart-selection.png)
+![output](../images/chart-selection.png)

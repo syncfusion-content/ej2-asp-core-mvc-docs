@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Infinite Scroll in ##Platform_Name## Grid Component
-description: Learn here all about Infinite Scroll in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Infinite Scroll in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Infinite Scroll
 publishingplatform: ##Platform_Name##

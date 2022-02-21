@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create Dropdownbutton With Rounded Corner in ##Platform_Name## Drop Down Button Component
-description: Learn here all about Create Dropdownbutton With Rounded Corner in Syncfusion ##Platform_Name## Drop Down Button component and more.
+description: Learn here all about Create Dropdownbutton With Rounded Corner in Syncfusion ##Platform_Name## Drop Down Button component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Create Dropdownbutton With Rounded Corner
 publishingplatform: ##Platform_Name##
