@@ -44,7 +44,7 @@ Initially, render the home view page, and then call the partial view action meth
 ```
 
 **Initial Chart**
-![Alt text](./images/initialview.png)
+![Alt text](images/initialview.png)
 
 **Step 2**:
 Then create chart model properties in controller page. After initial rendering then update the created chart properties in the home view page through partial view action method in ajax call.
@@ -161,7 +161,7 @@ var firstChartLoad = function (args) {
 ```
 
 **Updated Chart**
-![Alt text](./images/updatechart.png)
+![Alt text](images/updatechart.png)
 
 **Sample reference**
 

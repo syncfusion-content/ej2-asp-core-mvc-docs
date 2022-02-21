@@ -17,7 +17,6 @@ The following table describes the migration from CSS textbox to ASP.NET MVC text
 
 ## Normal textbox
 
-<!-- markdownlint-disable MD038 -->
 | **Rendering mode** | **CSS textbox** | **ASP.NET MVC textbox control** |
 |--------------------|-----------------|-----------------------|
 | Default rendering | `<div class='e-input-group'>`<br/>`<input class='e-input' type='text' placeholder='Enter Value'/>`<br/>`</div>` | `@Html.EJS().TextBox("default").`<br/>`Placeholder("Enter Value").`<br/>`FloatLabelType`<br/>`(FloatLabelType.Never).`<br/>`Render()` |
@@ -26,7 +25,6 @@ The following table describes the migration from CSS textbox to ASP.NET MVC text
 
 ## Floating label textbox
 
-<!-- markdownlint-disable MD038 -->
 | **Rendering mode** | **CSS textbox** | **ASP.NET MVC textbox control** |
 |--------------------|-----------------|----------------------|
 | Default rendering | `<div class='e-float-input'>`<br/>`<input type='text' required />`<br/>`<span class='e-float-line'></span>`<br/>`<label class='e-float-text'>Enter Value</label>`<br/>`</div>` | `@Html.EJS().TextBox("default").`<br/>`Placeholder("Enter Value").`<br/>`FloatLabelType`<br/>`(FloatLabelType.Auto).`<br/>`Render()` |

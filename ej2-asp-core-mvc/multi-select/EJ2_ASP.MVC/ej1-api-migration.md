@@ -15,8 +15,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Accessibility and Localization
 
-<!-- markdownlint-disable MD033 -->
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Localization | **Property** : Locale<br/> <br/>`@Html.EJ().DropDownList("locale").Locale("de-DE")` | **Property** : Locale<br/> <br/>`@Html.EJS().MultiSelect("locale").Locale("de-DE").Render()` |
@@ -24,14 +22,12 @@ This article describes the API migration process of multiselect component from E
 
 ## Animation
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Animation | **Property** : EnableAnimation<br/> <br/>`@Html.EJ().DropDownList("default").EnableAnimation(true)` | Not Applicable |
 
 ## Template
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Header Template | **Property** : HeaderTemplate<br/> <br/>`@Html.EJ().DropDownList("DropDownList1").Datasource((IEnumerable<Employee1>)ViewData["LocalDataSource"]).HeaderTemplate("<div class='eheader'><span>PHOTO</span> <span>DETAILS</span></div>")` | **Property** : HeaderTemplate<br/> <br/>`@Html.EJS().MultiSelect("remote").HeaderTemplate("<span class='head'><span class='name'>Name</span><span class='city'>City</span></span>").Render()` |
@@ -44,7 +40,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Data Binding
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Data Source | **Property** : Datasource<br/> <br/>`@Html.EJ().DropDownList("DropDownList1").Datasource((IEnumerable<Employee>)ViewData["LocalDataSource"]).DropDownListFields(Df => Df.Text("Text").Value("Country"))` | **Property** : Datasource <br/><br/> ` @Html.EJS().MultiSelect("default").DataSource((IEnumerable<object>)ViewBag.localdata).Render()` |
@@ -58,7 +53,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Filtering
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Filtering | **Property** : EnableFilterSearch<br/> <br/>`@Html.EJ().DropDownList("default").EnableFilterSearch(true)` | **Property** : AllowFiltering<br/> <br/>`@Html.EJS().MultiSelect("default").AllowFiltering(true).Render()` |
@@ -71,7 +65,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Popups
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Popup Resize | **Property** : EnablePopupResize<br/> <br/>`@Html.EJ().DropDownList("default").EnablePopupResize(true)` | Not Applicable |
@@ -96,7 +89,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Selection
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Selected Index | **Property** : SelectedIndex<br/> <br/>`@Html.EJ().DropDownList("default").SelectedIndex(2)` | Not Applicable |
@@ -119,7 +111,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Common
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Virtual Scrolling | **Property** : AllowVirtualScrolling<br/> <br/>`@Html.EJ().DropDownList("default").AllowVirtualScrolling(true)` | It will be acheived in sample level using `actionComplete` event |

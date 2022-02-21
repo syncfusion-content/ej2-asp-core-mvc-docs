@@ -17,7 +17,6 @@ The following table describes the migration from CSS textbox to ASP.NET Core tex
 
 ## Normal textbox
 
-<!-- markdownlint-disable MD038 -->
 | **Rendering mode** | **CSS textbox** | **ASP.NET Core textbox control** |
 | -----------------------| -----------------------------------| ------------------------------------------- |
 | Default rendering |  `<div class='e-input-group'>`<br/>`<input class='e-input' type='text' placeholder='Enter Value'/>`<br/>`</div>` |  `<ejs-textbox id="default" placeholder="Enter Value" floatLabelType="Never" ></ejs-textbox>` |
@@ -26,7 +25,6 @@ The following table describes the migration from CSS textbox to ASP.NET Core tex
 
 ## Floating label textbox
 
-<!-- markdownlint-disable MD038 -->
 | **Rendering mode** | **CSS textbox** | **ASP.NET Core textbox control** |
 | -----------------------| -----------------------------------| ------------------------------------------- |
 | Default rendering |  `<div class='e-float-input'>`<br/>`<input type='text' required />`<br/>`<span class='e-float-line'></span>`<br/>`<label class='e-float-text'>Enter Value</label>`<br/>`</div>` |  `<ejs-textbox id="default" placeholder="Enter Value" floatLabelType="Auto" ></ejs-textbox>` |
