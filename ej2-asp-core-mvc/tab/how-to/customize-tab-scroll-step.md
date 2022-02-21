@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Tab Scroll Step in ##Platform_Name## Tab Component
-description: Learn here all about Customize Tab Scroll Step in Syncfusion ##Platform_Name## Tab component and more.
+description: Learn here all about Customize Tab Scroll Step in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Tab Scroll Step
 publishingplatform: ##Platform_Name##

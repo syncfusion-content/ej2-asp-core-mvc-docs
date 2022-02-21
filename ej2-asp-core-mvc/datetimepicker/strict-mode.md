@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Strict Mode in ##Platform_Name## Datetimepicker Component
-description: Learn here all about Strict Mode in Syncfusion ##Platform_Name## Datetimepicker component and more.
+description: Learn here all about Strict Mode in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Strict Mode
 publishingplatform: ##Platform_Name##

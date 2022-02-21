@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Selected Tab Styles in ##Platform_Name## Tab Component
-description: Learn here all about Customize Selected Tab Styles in Syncfusion ##Platform_Name## Tab component and more.
+description: Learn here all about Customize Selected Tab Styles in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Selected Tab Styles
 publishingplatform: ##Platform_Name##

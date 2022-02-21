@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Datepicker Popup On Input Click in ##Platform_Name## Datepicker Component
-description: Learn here all about Open Datepicker Popup On Input Click in Syncfusion ##Platform_Name## Datepicker component and more.
+description: Learn here all about Open Datepicker Popup On Input Click in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open Datepicker Popup On Input Click
 publishingplatform: ##Platform_Name##

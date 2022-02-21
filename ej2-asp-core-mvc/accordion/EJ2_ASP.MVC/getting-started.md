@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Accordion Component
-description: Checkout and learn about getting started with ##Platform_Name## Accordion component of Syncfusion, and more details.
+description: Checkout and learn about getting started with ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -40,11 +40,7 @@ documentation: ug
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![Default accordion](../images/accordion.PNG)
+![Default accordion](images/accordion.PNG)
 
 ## Render the Accordion using content template
 
@@ -79,6 +75,6 @@ In the below demo, the Accordion items are given with [chart](../../chart), [gri
 
 Output be like the below.
 
-![content template](../images/contenttemplate.PNG)
+![content template](images/contenttemplate.PNG)
 
 You can also render accordion without using `ContentTemplate` which can be referred [here](../../accordion/how-to/set-the-nested-accordion).

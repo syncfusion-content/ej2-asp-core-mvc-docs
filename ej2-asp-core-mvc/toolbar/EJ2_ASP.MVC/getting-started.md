@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Toolbar Component
-description: Checkout and learn about getting started with ##Platform_Name## Toolbar component of Syncfusion, and more details.
+description: Checkout and learn about getting started with ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -44,7 +44,7 @@ documentation: ug
 
 Output be like the below.
 
-![getting started](../../toolbar/images/gettingstarted.PNG)
+![getting started](../images/gettingstarted.PNG)
 
 ## Render the Toolbar items using content template
 
@@ -79,7 +79,7 @@ In the below demo, the Toolbar items are given as [Button](../button), [MaskedTe
 
 Output be like the below.
 
-![content template](../../toolbar/images/contenttemplate.PNG)
+![content template](../images/contenttemplate.PNG)
 
 ## See Also
 

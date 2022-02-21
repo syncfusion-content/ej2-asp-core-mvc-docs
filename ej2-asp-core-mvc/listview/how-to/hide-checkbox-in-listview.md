@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hide Checkbox In Listview in ##Platform_Name## Listview Component
-description: Learn here all about Hide Checkbox In Listview in Syncfusion ##Platform_Name## Listview component and more.
+description: Learn here all about Hide Checkbox In Listview in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Hide Checkbox In Listview
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Display Numeric Keypad When Focus On Mobile Devices in ##Platform_Name## Maskedtextbox Component
-description: Learn here all about Display Numeric Keypad When Focus On Mobile Devices in Syncfusion ##Platform_Name## Maskedtextbox component and more.
+description: Learn here all about Display Numeric Keypad When Focus On Mobile Devices in Syncfusion ##Platform_Name## Maskedtextbox component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Display Numeric Keypad When Focus On Mobile Devices
 publishingplatform: ##Platform_Name##

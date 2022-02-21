@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Horizontal in ##Platform_Name## Card Component
-description: Learn here all about Horizontal in Syncfusion ##Platform_Name## Card component and more.
+description: Learn here all about Horizontal in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Horizontal
 publishingplatform: ##Platform_Name##

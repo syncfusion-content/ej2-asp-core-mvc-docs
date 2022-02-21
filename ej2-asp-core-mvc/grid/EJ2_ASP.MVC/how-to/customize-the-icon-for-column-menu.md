@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize The Icon For Column Menu in ##Platform_Name## Grid Component
-description: Learn here all about Customize The Icon For Column Menu in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Customize The Icon For Column Menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize The Icon For Column Menu
 publishingplatform: ##Platform_Name##

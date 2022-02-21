@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Render Other Components In Column in ##Platform_Name## Grid Component
-description: Learn here all about Render Other Components In Column in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Render Other Components In Column in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Render Other Components In Column
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State Persistence in ##Platform_Name## Pivot Table Component
-description: Learn here all about State Persistence in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about State Persistence in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: State Persistence
 publishingplatform: ##Platform_Name##

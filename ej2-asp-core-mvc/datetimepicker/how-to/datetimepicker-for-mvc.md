@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Datetimepicker For Mvc in ##Platform_Name## Datetimepicker Component
-description: Learn here all about Datetimepicker For Mvc in Syncfusion ##Platform_Name## Datetimepicker component and more.
+description: Learn here all about Datetimepicker For Mvc in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Datetimepicker For Mvc
 publishingplatform: ##Platform_Name##

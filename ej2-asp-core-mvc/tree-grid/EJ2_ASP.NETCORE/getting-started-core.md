@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Tree Grid Component
-description: Checkout and learn about getting started with ##Platform_Name## Tree Grid component of Syncfusion, and more details.
+description: Checkout and learn about getting started with ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
 publishingplatform: ##Platform_Name##
@@ -238,8 +238,6 @@ The sorting feature enables you to order the records. It can be enabled by setti
 
 The filtering feature enables you to view reduced amount of records based on filter criteria. It can be enabled by setting the [`allowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowFiltering.html) property as true. Filtering feature can be customized using [`e-treegrid-filtersettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html) tag helper.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/getting-start-core/filtering/tagHelper %}
@@ -248,20 +246,6 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% include code-snippet/tree-grid/getting-start-core/filtering/filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/getting-start-core/filtering/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/tree-grid/getting-start-core/filtering/filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 

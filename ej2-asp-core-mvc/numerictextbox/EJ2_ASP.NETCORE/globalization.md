@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Globalization in ##Platform_Name## Numerictextbox Component
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Numerictextbox component and more.
+description: Learn here all about Globalization in Syncfusion ##Platform_Name## Numerictextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##

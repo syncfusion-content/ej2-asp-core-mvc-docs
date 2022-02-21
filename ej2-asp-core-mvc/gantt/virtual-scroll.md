@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtual Scroll in ##Platform_Name## Gantt Component
-description: Learn here all about Virtual Scroll in Syncfusion ##Platform_Name## Gantt component and more.
+description: Learn here all about Virtual Scroll in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtual Scroll
 publishingplatform: ##Platform_Name##
@@ -46,7 +46,7 @@ This mode can be enable by setting the `EnableVirtualization` property to `true`
 
 
 
-![Alt text](images/virtual-scroll.png.png)
+![Alt text](images/virtual-scroll.png)
 
 ## Limitations for Virtual Scroll
 

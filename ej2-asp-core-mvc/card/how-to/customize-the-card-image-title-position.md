@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize The Card Image Title Position in ##Platform_Name## Card Component
-description: Learn here all about Customize The Card Image Title Position in Syncfusion ##Platform_Name## Card component and more.
+description: Learn here all about Customize The Card Image Title Position in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize The Card Image Title Position
 publishingplatform: ##Platform_Name##

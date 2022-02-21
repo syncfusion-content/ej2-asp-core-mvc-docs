@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Security Aspects in ##Platform_Name## Common Component
-description: Learn here all about Security Aspects in Syncfusion ##Platform_Name## Common component and more.
+description: Learn here all about Security Aspects in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Security Aspects
 publishingplatform: ##Platform_Name##

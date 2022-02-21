@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load Content Through Post in ##Platform_Name## Accordion Component
-description: Learn here all about Load Content Through Post in Syncfusion ##Platform_Name## Accordion component and more.
+description: Learn here all about Load Content Through Post in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Content Through Post
 publishingplatform: ##Platform_Name##

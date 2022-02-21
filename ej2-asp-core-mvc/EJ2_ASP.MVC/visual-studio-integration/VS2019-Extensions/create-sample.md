@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create Sample in ##Platform_Name## Component
-description: Learn here all about Create Sample in Syncfusion ##Platform_Name## component and more.
+description: Learn here all about Create Sample in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Sample
 publishingplatform: ##Platform_Name##

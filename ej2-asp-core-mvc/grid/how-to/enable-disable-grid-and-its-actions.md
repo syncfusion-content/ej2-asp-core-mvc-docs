@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enable Disable Grid And Its Actions in ##Platform_Name## Grid Component
-description: Learn here all about Enable Disable Grid And Its Actions in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Enable Disable Grid And Its Actions in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Enable Disable Grid And Its Actions
 publishingplatform: ##Platform_Name##

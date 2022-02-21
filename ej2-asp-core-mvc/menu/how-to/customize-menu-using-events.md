@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Menu Using Events in ##Platform_Name## Menu Component
-description: Learn here all about Customize Menu Using Events in Syncfusion ##Platform_Name## Menu component and more.
+description: Learn here all about Customize Menu Using Events in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Menu Using Events
 publishingplatform: ##Platform_Name##

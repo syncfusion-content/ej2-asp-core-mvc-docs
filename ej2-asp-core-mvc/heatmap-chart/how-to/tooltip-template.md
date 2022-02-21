@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip Template in ##Platform_Name## Heatmap Chart Component
-description: Learn here all about Tooltip Template in Syncfusion ##Platform_Name## Heatmap Chart component and more.
+description: Learn here all about Tooltip Template in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip Template
 publishingplatform: ##Platform_Name##

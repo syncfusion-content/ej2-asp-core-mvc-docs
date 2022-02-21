@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ej1 Api Migration in ##Platform_Name## Button Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Button component and more.
+description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##

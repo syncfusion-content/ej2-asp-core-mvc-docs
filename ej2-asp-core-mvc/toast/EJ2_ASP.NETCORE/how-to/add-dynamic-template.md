@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add Dynamic Template in ##Platform_Name## Toast Component
-description: Learn here all about Add Dynamic Template in Syncfusion ##Platform_Name## Toast component and more.
+description: Learn here all about Add Dynamic Template in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Dynamic Template
 publishingplatform: ##Platform_Name##

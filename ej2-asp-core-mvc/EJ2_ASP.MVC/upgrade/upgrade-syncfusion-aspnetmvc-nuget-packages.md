@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upgrade Syncfusion Aspnetmvc Nuget Packages in ##Platform_Name## Component
-description: Learn here all about Upgrade Syncfusion Aspnetmvc Nuget Packages in Syncfusion ##Platform_Name## component and more.
+description: Learn here all about Upgrade Syncfusion Aspnetmvc Nuget Packages in Syncfusion ##Platform_Name## component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Upgrade Syncfusion Aspnetmvc Nuget Packages
 publishingplatform: ##Platform_Name##

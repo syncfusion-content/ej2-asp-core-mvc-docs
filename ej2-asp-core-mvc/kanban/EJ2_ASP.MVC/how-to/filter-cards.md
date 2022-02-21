@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filter Cards in ##Platform_Name## Kanban Component
-description: Learn here all about Filter Cards in Syncfusion ##Platform_Name## Kanban component and more.
+description: Learn here all about Filter Cards in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filter Cards
 publishingplatform: ##Platform_Name##
@@ -42,4 +42,4 @@ In the below sample, you can filter the cards based on the ‘where’ query and
 
 Output be like the below.
 
-![kanban](./images/filter-cards.PNG)
+![kanban](../../images/filter-cards.PNG)

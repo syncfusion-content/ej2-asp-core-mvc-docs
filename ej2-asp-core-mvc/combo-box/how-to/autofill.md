@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Autofill in ##Platform_Name## Combo Box Component
-description: Learn here all about Autofill in Syncfusion ##Platform_Name## Combo Box component and more.
+description: Learn here all about Autofill in Syncfusion ##Platform_Name## Combo Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Autofill
 publishingplatform: ##Platform_Name##

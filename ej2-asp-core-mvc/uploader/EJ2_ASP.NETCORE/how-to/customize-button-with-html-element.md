@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Button With Html Element in ##Platform_Name## Uploader Component
-description: Learn here all about Customize Button With Html Element in Syncfusion ##Platform_Name## Uploader component and more.
+description: Learn here all about Customize Button With Html Element in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Button With Html Element
 publishingplatform: ##Platform_Name##

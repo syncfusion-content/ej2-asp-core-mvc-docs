@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series Types in ##Platform_Name## Stock Chart Component
-description: Learn here all about Series Types in Syncfusion ##Platform_Name## Stock Chart component and more.
+description: Learn here all about Series Types in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Series Types
 publishingplatform: ##Platform_Name##

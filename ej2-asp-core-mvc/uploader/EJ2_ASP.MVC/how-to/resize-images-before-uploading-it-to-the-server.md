@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resize Images Before Uploading It To The Server in ##Platform_Name## Uploader Component
-description: Learn here all about Resize Images Before Uploading It To The Server in Syncfusion ##Platform_Name## Uploader component and more.
+description: Learn here all about Resize Images Before Uploading It To The Server in Syncfusion ##Platform_Name## Uploader component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Resize Images Before Uploading It To The Server
 publishingplatform: ##Platform_Name##

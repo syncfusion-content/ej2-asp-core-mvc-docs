@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show Hide Tool Tip in ##Platform_Name## Pivot Table Component
-description: Learn here all about Show Hide Tool Tip in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about Show Hide Tool Tip in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Show Hide Tool Tip
 publishingplatform: ##Platform_Name##
