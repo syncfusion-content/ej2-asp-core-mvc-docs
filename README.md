@@ -9,3 +9,4 @@ MVC -->  https://ej2.syncfusion.com/aspnetmvc/documentation/
 ## Contributions Welcome!
 
 We welcome the [pull request](https://docs.github.com/en/github/managing-files-in-a-repository/editing-files-in-another-users-repository) for improving the CORE AND MVC Components user guide documentation. Your contribution towards this will be greatly appreciated.
+
