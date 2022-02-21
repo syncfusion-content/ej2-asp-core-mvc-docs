@@ -15,7 +15,6 @@ This article describes the API migration process of File Upload component from E
 
 ## Accessibility
 
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |--------------|---------------------------|---------------------|
 | Localization | **Property** : locale <br/><br/> `@Html.EJ().Uploadbox("UploadDefault")`<br/>`.Locale("es-ES")` | **Property** : locale <br/><br/> `@Html.EJS().`<br/>`Uploader("UploadFiles").`<br/>`Locale("es-ES").Render()` |
@@ -23,7 +22,6 @@ This article describes the API migration process of File Upload component from E
 
 ## File list
 
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Show/Hide the selected files | **Property** : showFileDetails <br/><br/> `@Html.EJ().Uploadbox("UploadDefault")`<br/>`.ShowFileDetails(false)`  | **Property** :  showFileList <br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`ShowFileList(false).Render()`  |
@@ -34,7 +32,6 @@ This article describes the API migration process of File Upload component from E
 
 ## File selection
 
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Select multiple files to upload | **Property** : multipleFilesSelection <br/><br/> `@Html.EJ().Uploadbox("UploadDefault").`<br/>`MultipleFilesSelection(true)`  | **Property** : multiple <br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`Multiple(true).Render()` |
@@ -55,7 +52,6 @@ This article describes the API migration process of File Upload component from E
 
 ## Upload action
 
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Save URL | **Property** : saveUrl <br/><br/> `@Html.EJ().Uploadbox("UploadBox").`<br/>`SaveUrl("Uploadbox/Save")` | **Property** : saveUrl<br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`AsyncSettings(new Syncfusion.`<br/>`EJ2.Inputs.`<br/>`UploaderAsyncSettings `<br/>`{SaveUrl = @Url.Content("/Uploader/Save")})`<br/>`.Render()`  |
@@ -77,7 +73,6 @@ This article describes the API migration process of File Upload component from E
 
 ## Chunk upload
 
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Enabling the chunk upload | Not Applicable | **Property:** chunkSize<br/><br/> `@Html.EJS().Uploader("UploadFiles").`<br/>`MaxFileSize(104857600).AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = @Url.Content("https://aspnetmvc.syncfusion.com/`<br/>`services/api/uploadbox/Save"), `<br/>`RemoveUrl = @Url.Content("https://aspnetmvc.syncfusion.com/`<br/>`services/api/uploadbox/Remove"), ChunkSize = 500000 }).Render()`<br/>  |
@@ -94,7 +89,6 @@ This article describes the API migration process of File Upload component from E
 
 ## Remove action
 
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Remove the uploaded file | Not Applicable | **Method:** remove<br/><br/> `@Html.EJS().Uploader("UploadFiles").Render()`<br/><br/>`var uploadobj = document.`<br/>`getElementById("UploadFiles").ej2_instances[0]; `<br/>`uploadObj.remove = filesData;`<br/> |
@@ -103,14 +97,12 @@ This article describes the API migration process of File Upload component from E
 
 ## Buttons
 
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **Property in essential JS 1** | **Property in essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Customize button text | **Property** : buttonText<br/><br/> `@Html.EJ().`<br/>`Uploadbox("UploadDefault").`<br/>`Browse(ButtonText.Browse).`<br/>`Upload(ButtonText.Upload).`<br/>`Cancel(ButtonText.Cancel)`<br/> | **Property** : buttons<br/><br/> `@Html.EJS().`<br/>`Uploader("UploadFiles").`<br/>`Buttons(ViewBag.UploadButtons).Render()`<br/><br/>`public ActionResult DefaultFunctionalities() { List<UploaderButton> buttons = new List<UploaderButton>() { }; buttons.Add(new UploaderButton() { browse = "Choose File", clear = "Clear Files", upload = "Upload Files"   }); ViewBag.UploadButtons = buttons; return View(); }public class DefaultButtonModel { public string browse { get; set; } public string clear { get; set; } public string upload { get; set; } }`<br/> |
 
 ## Drag and drop
 
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **Property in Essential JS  1** | **Property in Essential JS 2** |
 | ------------ | --------------------------------| ------------------------------ |
 | Enable drag and drop upload | **Property** : allowDragAndDrop<br/><br/> `@Html.EJ().`<br/>`Uploadbox("UploadDefault").`<br/>`AllowDragAndDrop(true)` | No separate Property to disabling drag and drop |
@@ -118,7 +110,6 @@ This article describes the API migration process of File Upload component from E
 
 ## Common
 
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Adding custom class to wrapper element | **Property** : cssClass<br/><br/> `@Html.EJ().Uploadbox("UploadDefault").`<br/>`CssClass("Custom-Class")` | Not Applicable |
