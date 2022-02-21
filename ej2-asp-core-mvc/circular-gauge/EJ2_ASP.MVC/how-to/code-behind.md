@@ -76,19 +76,6 @@ Bind the gauge properties passed via ViewData from the controller at client-side
    @Html.EJS().CircularGauge("container", (Syncfusion.EJ2.CircularGauge.CircularGauge)ViewData["GaugeModel"]).Render();
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/circulargauge/how-to/database/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Database.cs" %}
-{% include code-snippet/circulargauge/how-to/database/database.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/how-to/database/razor %}
@@ -97,7 +84,6 @@ Bind the gauge properties passed via ViewData from the controller at client-side
 {% include code-snippet/circulargauge/how-to/database/database.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
