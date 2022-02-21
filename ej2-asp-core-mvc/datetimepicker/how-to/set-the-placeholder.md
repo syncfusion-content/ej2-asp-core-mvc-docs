@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set The Placeholder in ##Platform_Name## Datetimepicker Component
-description: Learn here all about Set The Placeholder in Syncfusion ##Platform_Name## Datetimepicker component and more.
+description: Learn here all about Set The Placeholder in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set The Placeholder
 publishingplatform: ##Platform_Name##

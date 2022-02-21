@@ -1,13 +1,23 @@
 ---
 layout: post
 title: Global Local in ##Platform_Name## Spreadsheet Component
-description: Learn here all about Global Local in Syncfusion ##Platform_Name## Spreadsheet component and more.
+description: Learn here all about Global Local in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Global Local
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Globalization in ASP.NET MVC Spreadsheet control
+
+## Localization
+
+The [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/) library allows you to localize the default text content of the Spreadsheet. The Spreadsheet has static text on some features (cell formatting, Merge, Data validation, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://ej2.syncfusion.com/aspnetmvc/documentation/api/spreadsheet/#locale) value and translation object.
+
+The following list of properties and their values are used in the Spreadsheet.
+
+|Locale keywords|Text|
+|---------------|----|
 Cut | Cut
 Copy | Copy
 Paste | Paste

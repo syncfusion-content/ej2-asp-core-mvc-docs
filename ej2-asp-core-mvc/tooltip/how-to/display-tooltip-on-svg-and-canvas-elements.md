@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Display Tooltip On Svg And Canvas Elements in ##Platform_Name## Tooltip Component
-description: Learn here all about Display Tooltip On Svg And Canvas Elements in Syncfusion ##Platform_Name## Tooltip component and more.
+description: Learn here all about Display Tooltip On Svg And Canvas Elements in Syncfusion ##Platform_Name## Tooltip component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Display Tooltip On Svg And Canvas Elements
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Content in ##Platform_Name## Tooltip Component
-description: Learn here all about Content in Syncfusion ##Platform_Name## Tooltip component and more.
+description: Learn here all about Content in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Content
 publishingplatform: ##Platform_Name##
@@ -63,8 +63,8 @@ The Tooltip content can be dynamically loaded  by making use of the AJAX call. T
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/tooltip/ajaxcontent/tagHelper %}
 {% endhighlight %}
-{% highlight css tabtitle="Icons.css" %}
-{% include code-snippet/tooltip/ajaxcontent/icons.css %}
+{% highlight c# tabtitle="AjaxContent.cs" %}
+{% include code-snippet/tooltip/ajaxcontent/ajaxcontent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -74,8 +74,8 @@ The Tooltip content can be dynamically loaded  by making use of the AJAX call. T
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tooltip/ajaxcontent/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Icons.css" %}
-{% include code-snippet/tooltip/ajaxcontent/icons.css %}
+{% highlight c# tabtitle="AjaxContent.cs" %}
+{% include code-snippet/tooltip/ajaxcontent/ajaxcontent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

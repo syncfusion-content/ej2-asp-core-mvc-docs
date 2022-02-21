@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use Wizard Like Dialog Editing in ##Platform_Name## Grid Component
-description: Learn here all about Use Wizard Like Dialog Editing in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Use Wizard Like Dialog Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Use Wizard Like Dialog Editing
 publishingplatform: ##Platform_Name##

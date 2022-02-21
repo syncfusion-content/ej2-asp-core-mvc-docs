@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exec Command in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about Exec Command in Syncfusion ##Platform_Name## Rich Text Editor component and more.
+description: Learn here all about Exec Command in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Exec Command
 publishingplatform: ##Platform_Name##

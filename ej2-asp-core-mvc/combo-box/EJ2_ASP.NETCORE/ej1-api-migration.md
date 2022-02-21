@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ej1 Api Migration in ##Platform_Name## Combo Box Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Combo Box component and more.
+description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Combo Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -14,7 +14,6 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## DataBinding
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** |	**Property**: *dataSource*<br/>`<ej-combo-box datasource="(IEnumerable<CarsList>)ViewBag.datasource"></ej-combo-box>` | **Property**: *dataSource*<br/>`<ejs-combobox dataSource="@ViewBag.data"></ejs-combobox>` |
@@ -26,7 +25,6 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Filtering
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *allow-filtering*<br/>`<ej-combo-box allow-filtering = "true"/>` | **Property**: *allowFiltering*<br/>`<ejs-combobox allowFiltering="true"></ejs-combobox>` |
@@ -37,7 +35,6 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Template
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *item-template*<br/>`<ej-combo-box item-template="<div><img class='eimg' src='../images/combobox/${eimg}.png' alt='employee'/><div class='ename'> ${text} </div><div class='temp'> ${country} </div></div>"/>` | **Property**: *itemTemplate*<br/>`<ejs-combobox itemTemplate="<div><img class='eimg' src='../images/combobox/${eimg}.png' alt='employee'/><div class='ename'> ${text} </div><div class='temp'> ${country} </div></div>"></ejs-combobox>`|
@@ -51,7 +48,6 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Applying CSS
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *css-class* <br/>`<ej-combo-box css-class="customclass"/>` | **Property**: *cssClass*<br/>`<ejs-combobox cssClass="customclass"></ejs-combobox>` |
@@ -59,14 +55,12 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Grouping
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *fields.groupBy*<br/>`<ej-combo-box><e-combo-box-fields group-by="SupplierID" /></ej-combo-box>` | **Property**: *fields.groupBy*<br/>`<ejs-combobox> <e-combobox-fields groupBy="Id"></e-combobox-fields></ejs-combobox>` |
 
 ## Accessibility
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Globalizaation** | **Property**: *locale*<br/>`<ej-combo-box locale="fr-FE"/>` | **Property**: *locale*<br/>`<ejs-combobox locale="fr-FE"/>` |
@@ -74,7 +68,6 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Placeholder
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Watermark text** | **Property**: *placeholder*<br/>`<ej-combo-box placeholder="select"/>` | <br/>**Property**: *placeholder*<br/>`<ejs-combobox placeholder="select"/>` |
@@ -82,7 +75,6 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Miscellaneous
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Enable/disable** | **Property**: *enabled*<br/>`<ej-combo-box enabled="true"></ej-combo-box>` | **Property**: *enabled*<br/>`<ejs-combobox enabled="true"/>` |
@@ -91,14 +83,12 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Sorting
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Order of sorting** | **Property**: *sort-order*<br/>`<ej-combo-box sort-order="Ascending"></ej-combo-box>` | **Property**: *sortOrder*<br/>`<ejs-combobox sortOrder="Ascending"/>` |
 
 ## Selection
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Selecting particular index** | **Property**: *index*<br/>`<ej-combo-box index="1"></ej-combo-box>` | **Property**: *index*<br/>`<ejs-combobox index="1"/>` |
@@ -109,7 +99,6 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Popup
 
-<!-- markdownlint-disable MD010 -->
 | Behavior| API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Popup height** | **Property**: *popup-height*<br/>`<ej-combo-box popup-height="300px"></ej-combo-box>`|**Event**:*popupHeight*<br/>`<ejs-combobox popupHeight="300px"/>`|
@@ -121,7 +110,6 @@ This article describes the API migration process of ComboBox component from Esse
 
 ## Common
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 |API in Essential JS 2 |
 | --- | --- | --- |
 | **Adding new item** | **Method** : *addItem*<br/>`<ej-combo-box></ej-combo-box>` <br/> <br/>$('#dropdown').ejComboBox("addItem", { text :"India"});| **Method**: *addItem*<br/>`<ejs-combobox />`<br/><br/>var cmbObj = document.getElementById(combobox).ej2_Instances[0];<br/><br/> cmbObj.addItem({Id: 'id', Game: 'Golf'},2);|

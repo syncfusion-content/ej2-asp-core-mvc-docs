@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Strongly Typed Html Helper in ##Platform_Name## Common Component
-description: Learn here all about Strongly Typed Html Helper in Syncfusion ##Platform_Name## Common component and more.
+description: Learn here all about Strongly Typed Html Helper in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Strongly Typed Html Helper
 publishingplatform: ##Platform_Name##
@@ -31,7 +31,6 @@ The following steps explain how to use the strongly typed helpers to create a Nu
 1. The NumericTextBox control supports strongly typed HTML helpers that uses lambda expression to refer to the models or view models passed to a view template. These helpers allows you to define the value of the NumericTextBoxFor from the model.
 
 Add a class name “EditorValue” in the Models folder and replace the code with the following code:
-
 ```csharp
 public class EditorValue
 {
@@ -44,7 +43,6 @@ public class EditorValue
 }
 ```
 2. Create an action method that renders the NumericTextBox on the view page, and passes the model to be bound to the view page.
-
 ```csharp
 using Syncfusion.EJ2.Inputs;
 
@@ -58,7 +56,6 @@ public ActionResult Index()
 }
 ```
 3. In View, invoke the strongly typed NumericTextBoxFor helper with the lambda expression to set the default value.
-
 ```html
 
 <div>
@@ -69,7 +66,6 @@ public ActionResult Index()
         }
 </div>
 ```
-
 ![aspnetmvc4 numeric textbox control](images/numeric-textbox.png)
 
 The following steps explain how to get the values by using the Scaffolding methods in Post back.
@@ -100,7 +96,7 @@ In the server-side validation, the page must be submitted via a postback to vali
 
 The best way to validate a model is by using the Data Annotations that has a set of attributes and classes defined in the System.ComponentModel.DataAnnotations assembly.
 
-Step 1: Add the following namespace to the “EditorValue” model.
+**Step 1**: Add the following namespace to the “EditorValue” model.
 
 ```csharp
 using System.ComponentModel.DataAnnotations;
@@ -111,7 +107,7 @@ The Data Annotations allows to decorate model classes with the metadata. This me
 The following Data Annotation attributes are used for the Numeric Textbox.
 Required: Indicates that the property is a required field.
 
-Step 2: Next, Update the number property of the “EditorValue” class as “Required Field” by adding the following line
+**Step 2**: Next, Update the number property of the “EditorValue” class as “Required Field” by adding the following line
 
 ```csharp
 public class EditorValue
@@ -121,7 +117,7 @@ public class EditorValue
 }
 ```
 
-Step 3: Modify the view page as follows:
+**Step 3**: Modify the view page as follows:
 
 ```html
 <div>

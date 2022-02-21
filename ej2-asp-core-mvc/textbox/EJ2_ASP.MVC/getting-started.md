@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Textbox Component
-description: Checkout and learn about getting started with ##Platform_Name## Textbox component of Syncfusion, and more details.
+description: Checkout and learn about getting started with ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -79,7 +79,7 @@ You can create a TextBox with icon as a group by creating the parent div element
 
 Output be like the below.
 
-![textbox](./images/textbox-getting.png)
+![textbox](../images/textbox-getting.png)
 
 ## Floating label
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Disable The Datetimepicker Component in ##Platform_Name## Datetimepicker Component
-description: Learn here all about Disable The Datetimepicker Component in Syncfusion ##Platform_Name## Datetimepicker component and more.
+description: Learn here all about Disable The Datetimepicker Component in Syncfusion ##Platform_Name## Datetimepicker component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Disable The Datetimepicker Component
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Config in ##Platform_Name## Toast Component
-description: Learn here all about Config in Syncfusion ##Platform_Name## Toast component and more.
+description: Learn here all about Config in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Config
 publishingplatform: ##Platform_Name##

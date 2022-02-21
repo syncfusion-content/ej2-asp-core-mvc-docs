@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dual List Box in ##Platform_Name## List Box Component
-description: Learn here all about Dual List Box in Syncfusion ##Platform_Name## List Box component and more.
+description: Learn here all about Dual List Box in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dual List Box
 publishingplatform: ##Platform_Name##

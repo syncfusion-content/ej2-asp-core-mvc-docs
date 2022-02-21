@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Center The Dialog Based On Current Scroll Position in ##Platform_Name## Dialog Component
-description: Learn here all about Center The Dialog Based On Current Scroll Position in Syncfusion ##Platform_Name## Dialog component and more.
+description: Learn here all about Center The Dialog Based On Current Scroll Position in Syncfusion ##Platform_Name## Dialog component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Center The Dialog Based On Current Scroll Position
 publishingplatform: ##Platform_Name##

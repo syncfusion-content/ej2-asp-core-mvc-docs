@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Name And Value In Form Submit in ##Platform_Name## Radio Button Component
-description: Learn here all about Name And Value In Form Submit in Syncfusion ##Platform_Name## Radio Button component and more.
+description: Learn here all about Name And Value In Form Submit in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Name And Value In Form Submit
 publishingplatform: ##Platform_Name##

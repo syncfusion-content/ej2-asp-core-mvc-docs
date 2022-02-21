@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create And Show Tooltip On Multiple Targets in ##Platform_Name## Tooltip Component
-description: Learn here all about Create And Show Tooltip On Multiple Targets in Syncfusion ##Platform_Name## Tooltip component and more.
+description: Learn here all about Create And Show Tooltip On Multiple Targets in Syncfusion ##Platform_Name## Tooltip component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Create And Show Tooltip On Multiple Targets
 publishingplatform: ##Platform_Name##

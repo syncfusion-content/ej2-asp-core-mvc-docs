@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show Slider From Hidden State in ##Platform_Name## Range Slider Component
-description: Learn here all about Show Slider From Hidden State in Syncfusion ##Platform_Name## Range Slider component and more.
+description: Learn here all about Show Slider From Hidden State in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Show Slider From Hidden State
 publishingplatform: ##Platform_Name##

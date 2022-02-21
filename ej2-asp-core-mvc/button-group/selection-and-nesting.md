@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection And Nesting in ##Platform_Name## Button Group Component
-description: Learn here all about Selection And Nesting in Syncfusion ##Platform_Name## Button Group component and more.
+description: Learn here all about Selection And Nesting in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection And Nesting
 publishingplatform: ##Platform_Name##

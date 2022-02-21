@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Author Name To Annotation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Set Author Name To Annotation in Syncfusion ##Platform_Name## Pdfviewer component and more.
+description: Learn here all about Set Author Name To Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set Author Name To Annotation
 publishingplatform: ##Platform_Name##

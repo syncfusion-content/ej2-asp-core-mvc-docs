@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Play An Audio Before Open The Toast in ##Platform_Name## Toast Component
-description: Learn here all about Play An Audio Before Open The Toast in Syncfusion ##Platform_Name## Toast component and more.
+description: Learn here all about Play An Audio Before Open The Toast in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Play An Audio Before Open The Toast
 publishingplatform: ##Platform_Name##

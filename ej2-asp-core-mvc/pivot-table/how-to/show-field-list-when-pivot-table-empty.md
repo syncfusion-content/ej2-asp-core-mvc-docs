@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show Field List When Pivot Table Empty in ##Platform_Name## Pivot Table Component
-description: Learn here all about Show Field List When Pivot Table Empty in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about Show Field List When Pivot Table Empty in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Show Field List When Pivot Table Empty
 publishingplatform: ##Platform_Name##
@@ -37,4 +37,4 @@ When there are no fields in a pivot table's row, column, value, and filter axes,
 
 
 
-![output](images/empty-report-all-axes.png)
+![output](../images/empty-report-all-axes.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add Remove Panels in ##Platform_Name## Dashboard Layout Component
-description: Learn here all about Add Remove Panels in Syncfusion ##Platform_Name## Dashboard Layout component and more.
+description: Learn here all about Add Remove Panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Remove Panels
 publishingplatform: ##Platform_Name##

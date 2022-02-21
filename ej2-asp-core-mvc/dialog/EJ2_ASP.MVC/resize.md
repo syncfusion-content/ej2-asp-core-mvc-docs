@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resize in ##Platform_Name## Dialog Component
-description: Learn here all about Resize in Syncfusion ##Platform_Name## Dialog component and more.
+description: Learn here all about Resize in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resize
 publishingplatform: ##Platform_Name##

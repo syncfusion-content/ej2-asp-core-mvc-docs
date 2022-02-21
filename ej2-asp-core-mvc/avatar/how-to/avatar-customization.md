@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Avatar Customization in ##Platform_Name## Avatar Component
-description: Learn here all about Avatar Customization in Syncfusion ##Platform_Name## Avatar component and more.
+description: Learn here all about Avatar Customization in Syncfusion ##Platform_Name## Avatar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Avatar Customization
 publishingplatform: ##Platform_Name##

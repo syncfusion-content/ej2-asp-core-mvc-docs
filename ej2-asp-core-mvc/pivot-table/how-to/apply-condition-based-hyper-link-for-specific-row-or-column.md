@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Apply Condition Based Hyper Link For Specific Row Or Column in ##Platform_Name## Pivot Table Component
-description: Learn here all about Apply Condition Based Hyper Link For Specific Row Or Column in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about Apply Condition Based Hyper Link For Specific Row Or Column in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Apply Condition Based Hyper Link For Specific Row Or Column
 publishingplatform: ##Platform_Name##

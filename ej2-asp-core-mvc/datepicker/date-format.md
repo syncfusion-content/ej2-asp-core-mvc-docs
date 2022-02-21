@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Format in ##Platform_Name## Datepicker Component
-description: Learn here all about Date Format in Syncfusion ##Platform_Name## Datepicker component and more.
+description: Learn here all about Date Format in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Date Format
 publishingplatform: ##Platform_Name##

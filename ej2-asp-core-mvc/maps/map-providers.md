@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Map Providers in ##Platform_Name## Maps Component
-description: Learn here all about Map Providers in Syncfusion ##Platform_Name## Maps component and more.
+description: Learn here all about Map Providers in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Map Providers
 publishingplatform: ##Platform_Name##

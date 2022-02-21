@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sidebar With Variation Animation in ##Platform_Name## Sidebar Component
-description: Learn here all about Sidebar With Variation Animation in Syncfusion ##Platform_Name## Sidebar component and more.
+description: Learn here all about Sidebar With Variation Animation in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sidebar With Variation Animation
 publishingplatform: ##Platform_Name##

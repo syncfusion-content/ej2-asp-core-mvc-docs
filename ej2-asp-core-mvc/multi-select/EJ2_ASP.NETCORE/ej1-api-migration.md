@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ej1 Api Migration in ##Platform_Name## Multi Select Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Multi Select component and more.
+description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -15,8 +15,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Accessibility and Localization
 
-<!-- markdownlint-disable MD033 -->
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Localization | **Property** : locale<br/> <br/>`<ej-drop-down-list locale="en-US"></ej-drop-down-list>` | **Property** : locale<br/> <br/>`<ejs-multiselect locale="en-US" />`  |
@@ -24,14 +22,12 @@ This article describes the API migration process of multiselect component from E
 
 ## Animation
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Animation | **Property** : enable-animation<br/> <br/>`<ej-drop-down-list enable-animation="true "></ej-drop-down-list>` |  Not Applicable  |
 
 ## Template
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Header Template | **Property** : header-template<br/> <br/>`<ej-drop-down-list header-template="<div class='eheader'><span>PHOTO</span> <span>DETAILS</span></div>" ></ej-drop-down-list>` |  **Property** : headerTemplate<br/> <br/>`<ejs-multiselect headerTemplate="@Html.Raw("<span class='head'><span class='name'>Name</span><span class='city'>City</span></span>")" />`  |
@@ -44,7 +40,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Data Binding
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Data Source | **Property** : data-source<br/> <br/>`<ej-drop-down-list data-source="(IEnumerable&lt; groups>)ViewBag.datasource"></ej-drop-down-list>` |  **Property** : dataSource <br/><br/> `<ejs-multiselect dataSource="@ViewBag.data" /> `  |
@@ -58,7 +53,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Filtering
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Filtering | **Property** : enable-filter-search<br/> <br/>`<ej-drop-down-list enable-filter-search = "true" ></ej-drop-down-list>` |  **Property** : allowFiltering<br/> <br/>`<ejs-multiselect allowFiltering ="true" />`  |
@@ -71,7 +65,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Popups
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Popup Resize | **Property** : enable-popup-resize<br/> <br/>`<ej-drop-down-list enable-popup-resize = "true" ></ej-drop-down-list>` | Not Applicable |
@@ -96,7 +89,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Selection
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Selected Index| **Property** : selected-index<br/> <br/>`<ej-drop-down-list selected-index="2" />` | Not Applicable |
@@ -119,7 +111,6 @@ This article describes the API migration process of multiselect component from E
 
 ## Common
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Virtual Scrolling| **Property** : allow-virtual-scrolling<br/> <br/>`<ej-drop-down-list allow-virtual-scrolling ="true "></ej-drop-down-list>` | It will be acheived in sample level using `actionComplete` event |

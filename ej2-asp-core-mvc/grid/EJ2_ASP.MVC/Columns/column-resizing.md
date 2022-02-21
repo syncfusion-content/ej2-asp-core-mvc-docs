@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Resizing in ##Platform_Name## Grid Component
-description: Learn here all about Column Resizing in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Column Resizing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Resizing
 publishingplatform: ##Platform_Name##

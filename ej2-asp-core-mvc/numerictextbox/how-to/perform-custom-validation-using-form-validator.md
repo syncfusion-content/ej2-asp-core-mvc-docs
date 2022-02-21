@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Perform Custom Validation Using Form Validator in ##Platform_Name## Numerictextbox Component
-description: Learn here all about Perform Custom Validation Using Form Validator in Syncfusion ##Platform_Name## Numerictextbox component and more.
+description: Learn here all about Perform Custom Validation Using Form Validator in Syncfusion ##Platform_Name## Numerictextbox component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Perform Custom Validation Using Form Validator
 publishingplatform: ##Platform_Name##

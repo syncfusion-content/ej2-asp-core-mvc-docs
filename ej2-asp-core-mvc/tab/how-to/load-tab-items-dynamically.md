@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load Tab Items Dynamically in ##Platform_Name## Tab Component
-description: Learn here all about Load Tab Items Dynamically in Syncfusion ##Platform_Name## Tab component and more.
+description: Learn here all about Load Tab Items Dynamically in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Tab Items Dynamically
 publishingplatform: ##Platform_Name##

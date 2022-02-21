@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Different Work Hours in ##Platform_Name## Schedule Component
-description: Learn here all about Set Different Work Hours in Syncfusion ##Platform_Name## Schedule component and more.
+description: Learn here all about Set Different Work Hours in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set Different Work Hours
 publishingplatform: ##Platform_Name##

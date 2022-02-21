@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ej1 Api Migration in ##Platform_Name## Dialog Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Dialog component and more.
+description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -15,7 +15,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Accessibility and localization
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |--------------|--------------------------------|-------------------------|
 | Keyboard Navigation | **Property** : allowKeyboardNavigation<br/> <br/>`@Html.EJ().Dialog("dialog").AllowKeyboardNavigation(true)` | No separate Property for enable/disable keyboard navigation.  Its enabled by default. |
@@ -24,7 +23,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Header
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |--------------|---------------------------|-------------------------|
 | Header Content | **Property** : title<br/> <br/>`@Html.EJ().Dialog("dialog").Title("EJ1 Dialog header")`<br/>   **Method** : setTitle<br/> $('#dialog').ejDialog('setTitle', 'EJ1 Dialog Header'); | **Property** : header<br/> <br/>`@Html.EJS().Dialog("dialog").Header("EJ2 Dialog").Render()` |
@@ -41,7 +39,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Footer
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |--------------|---------------------------|-------------------------|
 | Footer Content | **Property** :footerTemplateId<br/> <br/>`@Html.EJ().Dialog("dialog").FooterTemplateId("sample")` | **Property:** footerTemplate<br/> <br/>`@Html.EJS().Dialog("dialog").FooterTemplate("<button>Submit</button>").Render()` |
@@ -50,7 +47,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Content
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |-------------|-------------------------|------------------------|
 | Dialog content | **Method** : setContent<br/> <br/>`@Html.EJ().Dialog("dialog")`<br/> $('#dialog').ejDialog('setContent', 'Dialog Content') | **Property** : content<br/> <br/>`@Html.EJS().Dialog("dialog").Content("Dialog content").Render()` |
@@ -61,7 +57,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Animation
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|------------------------|
 | Enabling Animation | **Property** : enableAnimation<br/> <br/>`@Html.EJ().Dialog("dialog").EnableAnimation(true)` | Not Applicable |
@@ -71,7 +66,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Draggable and resizing
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Draggable dialog | **Property** : allowDraggable<br/> <br/>`@Html.EJ().Dialog("dialog").AllowDraggable(true)` | **Property** : allowDragging<br/> <br/>`@Html.EJS().Dialog("dialog").AllowDragging(true).Render()` |
@@ -85,7 +79,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Target
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Target element to append dialog in document | **Property** : target <br/> <br/>`@Html.EJ().Dialog("dialog").Target("#dialogTarget")` | **Property**: target<br/> <br/>`@Html.EJS().Dialog("dialog").Target("#dialogTarget").Render()` |
@@ -93,7 +86,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Position
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Customizing dialog position using X, Y coordinate values | **Property** : position<br/> <br/>`@Html.EJ().Dialog("dialog").ClientSideEvents(evt => evt.Position.X(300).Y(100))`<br/> | **Property** : position<br/><br/> `@Html.EJS().Dialog("dialog").Position(obj => obj.X("300").Y("100")).Render()`<br/> |
@@ -101,28 +93,24 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Visibility
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Render dialog in visible/hidden state | **Property:** showOnInit<br/> <br/>`@Html.EJ().Dialog("dialog").ShowOnInit(true)` | **Property:** visible<br/> <br/>`@Html.EJS().Dialog("dialog").visible(false).Render()` |
 
 ## Dialog mode
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Render modal dialog | **Property** : enableModal<br/> <br/>`@Html.EJ().Dialog("dialog").EnableModal(true)` | **Property** : isModal<br/> <br/> `@Html.EJS().Dialog("dialog").IsModal(true).Render()` |
 
 ## Tooltip
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Sets the tooltip for dialog buttons | **Property** : tooltip<br/><br/> `@Html.EJ().Dialog("dialog").ClientSideEvents(evt => evt.Tooltip("tooltip"))`<br/><br/>`function tooltip: object { close: 'Exit' }`<br/> | No Separate Property for tooltip. It renders based on locale text. |
 
 ## Control state
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Enable/Disable the control | **Property** : enabled <br/><br/> `@Html.EJ().Dialog("dialog").Enabled(false)` | Not Applicable |
@@ -130,14 +118,12 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## State maintenance
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Save the model values in local storage or cookies | **Property** : enablePersistence <br/> <br/>`@Html.EJ().Dialog("dialog").EnablePersistence(true)` | **Property** : enablePersistence <br/><br/>`@Html.EJS().Dialog("dialog").EnablePersistence(true).Render()` |
 
 ## Common
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Adjusting Height | **Property** : height <br/><br/>`@Html.EJ().Dialog("dialog").Height("400")` | **Property** : height <br/><br/> `@Html.EJS().Dialog("dialog").Height("50%").Render()` |

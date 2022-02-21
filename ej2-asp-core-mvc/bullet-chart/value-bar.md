@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Value Bar in ##Platform_Name## Bullet Chart Component
-description: Learn here all about Value Bar in Syncfusion ##Platform_Name## Bullet Chart component and more.
+description: Learn here all about Value Bar in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Value Bar
 publishingplatform: ##Platform_Name##

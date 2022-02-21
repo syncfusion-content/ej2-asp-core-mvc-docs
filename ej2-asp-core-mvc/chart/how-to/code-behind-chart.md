@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Code Behind Chart in ##Platform_Name## Chart Component
-description: Learn here all about Code Behind Chart in Syncfusion ##Platform_Name## Chart component and more.
+description: Learn here all about Code Behind Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Code Behind Chart
 publishingplatform: ##Platform_Name##
@@ -44,7 +44,7 @@ Initially, render the home view page, and then call the partial view action meth
 ```
 
 **Initial Chart**
-![Alt text](./images/initialview.png)
+![Alt text](images/initialview.png)
 
 **Step 2**:
 Then create chart model properties in controller page. After initial rendering then update the created chart properties in the home view page through partial view action method in ajax call.
@@ -161,7 +161,7 @@ var firstChartLoad = function (args) {
 ```
 
 **Updated Chart**
-![Alt text](./images/updatechart.png)
+![Alt text](images/updatechart.png)
 
 **Sample reference**
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Datamatrixgenerator in ##Platform_Name## Barcode Component
-description: Learn here all about Datamatrixgenerator in Syncfusion ##Platform_Name## Barcode component and more.
+description: Learn here all about Datamatrixgenerator in Syncfusion ##Platform_Name## Barcode component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Datamatrixgenerator
 publishingplatform: ##Platform_Name##

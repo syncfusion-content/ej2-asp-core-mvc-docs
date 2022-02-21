@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scaffolding in ##Platform_Name## Chart Component
-description: Learn here all about Scaffolding in Syncfusion ##Platform_Name## Chart component and more.
+description: Learn here all about Scaffolding in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scaffolding
 publishingplatform: ##Platform_Name##
@@ -29,31 +29,29 @@ The following steps direct you to add a Scaffolded item to your ASP.NET MVC Web 
 
 * Right-click on Controller folder in the Solution Explorer and select **Add → New Scaffolded Item.**
 
-![Solution explorer showing New Scaffold option](how-to/images/default-template-mvc.png)
+![Solution explorer showing New Scaffold option](../images/default-template-mvc.png)
 
 * You will see the Add Scaffold dialog. Select **Syncfusion ASP.NET MVC UI Scaffolder** and click ‘Add’ button, which will display the Syncfusion UI Scaffolding dialog.
 
-![Syncfusion ASPNET MVC UI scaffolder](how-to/images/ui-scaffolder.png)
+![Syncfusion ASPNET MVC UI scaffolder](../images/ui-scaffolder.png)
 
 * Select the Chart control to perform Scaffolding and click**Next**.
 
-![Syncfusion UI scaffolding dialog showing control selection](how-to/images/control-template.png)
+![Syncfusion UI scaffolding dialog showing control selection](../images/control-template.png)
 
 * Syncfusion UI Scaffolding for the selected control dialog will be opened. Enter the **Controller and View** names as per the application requirement. Also, select the required **Model Class** of the active project and its relevant **Data Context Class** and then Click **Next**.
 
-![Syncfusion UI scaffolding dialog showing model and data context options](how-to/images/scaffold-template.png)
+![Syncfusion UI scaffolding dialog showing model and data context options](../images/scaffold-template.png)
 
 * Syncfusion UI Scaffolding for the Chart control feature dialog will be opened. Select the required features and Click **Add**. Use the **back arrow** if you want to modify the already provided Controller or View name, and to change the **selected Model Class and Data Context Class**.
 
-![Syncfusion UI scaffolding dialog showing chart features](how-to/images/feature.png)
+![Syncfusion UI scaffolding dialog showing chart features](../images/feature.png)
 
 select the corresponding Chart **X-axis and Y-axis** from option.
 
 * The **Controller** and the corresponding **View** files are now generated with the selected features code snippet.
 
-![Solution explorer displaying the newly created Controller and View files](how-to/images/solution-explorer-mvc.png)
-
-![Model-MVC](how-to/images/model-mvc.png)
+![Solution explorer displaying the newly created Controller and View files](../images/solution-explorer-mvc.png)
 
 > Ensure that  at least one Entity Framework model  exists in your project and the application gets compiled once. If no Entity Framework model exists in your application, refer to the [`documentation`](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/creating-the-web-application#generate-the-models) to generate the Entity Framework model. Once model file added, ensure required DBContext and properties are added. Now, build the application and try scaffolding. If any changes done in model properties later, compile the application once before perform scaffolding.
 

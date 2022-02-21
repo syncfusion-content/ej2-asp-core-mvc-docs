@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Bar in ##Platform_Name## Schedule Component
-description: Learn here all about Header Bar in Syncfusion ##Platform_Name## Schedule component and more.
+description: Learn here all about Header Bar in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Header Bar
 publishingplatform: ##Platform_Name##

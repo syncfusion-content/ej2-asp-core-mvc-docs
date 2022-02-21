@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Find And Replace in ##Platform_Name## Document Editor Component
-description: Learn here all about Find And Replace in Syncfusion ##Platform_Name## Document Editor component and more.
+description: Learn here all about Find And Replace in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Find And Replace
 publishingplatform: ##Platform_Name##

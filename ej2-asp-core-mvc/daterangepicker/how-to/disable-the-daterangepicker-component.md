@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Disable The Daterangepicker Component in ##Platform_Name## Daterangepicker Component
-description: Learn here all about Disable The Daterangepicker Component in Syncfusion ##Platform_Name## Daterangepicker component and more.
+description: Learn here all about Disable The Daterangepicker Component in Syncfusion ##Platform_Name## Daterangepicker component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Disable The Daterangepicker Component
 publishingplatform: ##Platform_Name##
