@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Immutable Mode in ##Platform_Name## Tree Grid Component
-description: Learn here all about Immutable Mode in Syncfusion ##Platform_Name## Tree Grid component and more.
+description: Learn here all about Immutable Mode in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Immutable Mode
 publishingplatform: ##Platform_Name##

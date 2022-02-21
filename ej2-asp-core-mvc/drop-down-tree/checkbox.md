@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Checkbox in ##Platform_Name## Drop Down Tree Component
-description: Learn here all about Checkbox in Syncfusion ##Platform_Name## Drop Down Tree component and more.
+description: Learn here all about Checkbox in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Checkbox
 publishingplatform: ##Platform_Name##

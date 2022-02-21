@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Width And Height in ##Platform_Name## Radio Button Component
-description: Learn here all about Customize Width And Height in Syncfusion ##Platform_Name## Radio Button component and more.
+description: Learn here all about Customize Width And Height in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Width And Height
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Position The Dialog On Center Of The Page On Scrolling in ##Platform_Name## Dialog Component
-description: Learn here all about Position The Dialog On Center Of The Page On Scrolling in Syncfusion ##Platform_Name## Dialog component and more.
+description: Learn here all about Position The Dialog On Center Of The Page On Scrolling in Syncfusion ##Platform_Name## Dialog component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Position The Dialog On Center Of The Page On Scrolling
 publishingplatform: ##Platform_Name##

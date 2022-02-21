@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize The Dialog Appearance in ##Platform_Name## Dialog Component
-description: Learn here all about Customize The Dialog Appearance in Syncfusion ##Platform_Name## Dialog component and more.
+description: Learn here all about Customize The Dialog Appearance in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize The Dialog Appearance
 publishingplatform: ##Platform_Name##

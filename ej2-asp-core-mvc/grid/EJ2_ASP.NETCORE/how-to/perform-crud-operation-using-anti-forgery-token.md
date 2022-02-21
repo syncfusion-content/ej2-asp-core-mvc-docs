@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Perform Crud Operation Using Anti Forgery Token in ##Platform_Name## Grid Component
-description: Learn here all about Perform Crud Operation Using Anti Forgery Token in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Perform Crud Operation Using Anti Forgery Token in Syncfusion ##Platform_Name## Grid component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Perform Crud Operation Using Anti Forgery Token
 publishingplatform: ##Platform_Name##

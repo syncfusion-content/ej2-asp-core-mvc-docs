@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in ##Platform_Name## Query Builder Component
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Query Builder component and more.
+description: Learn here all about Filtering in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##

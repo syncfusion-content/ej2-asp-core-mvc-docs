@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open A Dialog On Contextmenu Item Click in ##Platform_Name## Context Menu Component
-description: Learn here all about Open A Dialog On Contextmenu Item Click in Syncfusion ##Platform_Name## Context Menu component and more.
+description: Learn here all about Open A Dialog On Contextmenu Item Click in Syncfusion ##Platform_Name## Context Menu component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Open A Dialog On Contextmenu Item Click
 publishingplatform: ##Platform_Name##

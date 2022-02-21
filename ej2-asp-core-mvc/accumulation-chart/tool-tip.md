@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tool Tip in ##Platform_Name## Accumulation Chart Component
-description: Learn here all about Tool Tip in Syncfusion ##Platform_Name## Accumulation Chart component and more.
+description: Learn here all about Tool Tip in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tool Tip
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Include The Authorization Token in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Include The Authorization Token in Syncfusion ##Platform_Name## Pdfviewer component and more.
+description: Learn here all about Include The Authorization Token in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Include The Authorization Token
 publishingplatform: ##Platform_Name##

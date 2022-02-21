@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Group Popup Items With Listview Component in ##Platform_Name## Drop Down Button Component
-description: Learn here all about Group Popup Items With Listview Component in Syncfusion ##Platform_Name## Drop Down Button component and more.
+description: Learn here all about Group Popup Items With Listview Component in Syncfusion ##Platform_Name## Drop Down Button component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Group Popup Items With Listview Component
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set The Nested Accordion in ##Platform_Name## Accordion Component
-description: Learn here all about Set The Nested Accordion in Syncfusion ##Platform_Name## Accordion component and more.
+description: Learn here all about Set The Nested Accordion in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set The Nested Accordion
 publishingplatform: ##Platform_Name##

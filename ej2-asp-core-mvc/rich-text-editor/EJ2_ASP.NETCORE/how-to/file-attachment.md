@@ -1,7 +1,7 @@
 ---
 layout: post
 title: File Attachment in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about File Attachment in Syncfusion ##Platform_Name## Rich Text Editor component and more.
+description: Learn here all about File Attachment in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File Attachment
 publishingplatform: ##Platform_Name##

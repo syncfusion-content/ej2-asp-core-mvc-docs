@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Select Grid Rows Based On Certain Condition in ##Platform_Name## Grid Component
-description: Learn here all about Select Grid Rows Based On Certain Condition in Syncfusion ##Platform_Name## Grid component and more.
+description: Learn here all about Select Grid Rows Based On Certain Condition in Syncfusion ##Platform_Name## Grid component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Select Grid Rows Based On Certain Condition
 publishingplatform: ##Platform_Name##

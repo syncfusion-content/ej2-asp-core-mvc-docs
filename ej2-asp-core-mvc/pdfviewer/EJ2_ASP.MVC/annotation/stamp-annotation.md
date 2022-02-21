@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stamp Annotation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Stamp Annotation in Syncfusion ##Platform_Name## Pdfviewer component and more.
+description: Learn here all about Stamp Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Stamp Annotation
 publishingplatform: ##Platform_Name##
@@ -18,7 +18,7 @@ The PDF Viewer control provides options to add, edit, delete, and rotate the fol
 * Standard Business
 * Custom Stamp
 
-![StampAnnotation](../../../pdfviewer/images/stamp_annot.png)
+![StampAnnotation](../../images/stamp_annot.png)
 
 ## Adding stamp annotations to the PDF document
 
@@ -27,11 +27,11 @@ The stamp annotations can be added to the PDF document using the annotation tool
 * Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
 * Click the **Stamp Annotation** drop-down button. A drop-down pop-up will appear and shows the stamp annotations to be added.
 
-![StampTool](../../../pdfviewer/images/stamp_tool.png)
+![StampTool](../../images/stamp_tool.png)
 
 * Select the annotation type to be added to the page in the pop-up.
 
-![StampPopup](../../../pdfviewer/images/selectstamp_annot.png)
+![StampPopup](../../images/selectstamp_annot.png)
 
 * You can add the annotation over the pages of the PDF document.
 
@@ -43,7 +43,7 @@ In the pan mode, if the stamp annotation mode is entered, the PDF Viewer control
 * Click the **Stamp Annotation** drop-down button. A drop-down pop-up will appear and shows the stamp annotations to be added.
 * Click the Custom Stamp button.
 
-![CustomStamp](../../../pdfviewer/images/customstamp.png)
+![CustomStamp](../../images/customstamp.png)
 
 * The file explorer dialog will appear, choose the image and then add the image to the PDF page.
 

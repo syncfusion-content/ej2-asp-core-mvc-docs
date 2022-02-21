@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show Tooltip On Disabled Elements And Disable Tooltip in ##Platform_Name## Tooltip Component
-description: Learn here all about Show Tooltip On Disabled Elements And Disable Tooltip in Syncfusion ##Platform_Name## Tooltip component and more.
+description: Learn here all about Show Tooltip On Disabled Elements And Disable Tooltip in Syncfusion ##Platform_Name## Tooltip component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Show Tooltip On Disabled Elements And Disable Tooltip
 publishingplatform: ##Platform_Name##

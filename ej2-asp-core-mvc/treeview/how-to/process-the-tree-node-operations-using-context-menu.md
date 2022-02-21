@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Process The Tree Node Operations Using Context Menu in ##Platform_Name## Treeview Component
-description: Learn here all about Process The Tree Node Operations Using Context Menu in Syncfusion ##Platform_Name## Treeview component and more.
+description: Learn here all about Process The Tree Node Operations Using Context Menu in Syncfusion ##Platform_Name## Treeview component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Process The Tree Node Operations Using Context Menu
 publishingplatform: ##Platform_Name##

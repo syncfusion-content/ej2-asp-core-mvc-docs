@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create A Block Button in ##Platform_Name## Button Component
-description: Learn here all about Create A Block Button in Syncfusion ##Platform_Name## Button component and more.
+description: Learn here all about Create A Block Button in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create A Block Button
 publishingplatform: ##Platform_Name##

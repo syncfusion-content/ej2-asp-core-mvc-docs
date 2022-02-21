@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Highlight Filtering in ##Platform_Name## Drop Down List Component
-description: Learn here all about Highlight Filtering in Syncfusion ##Platform_Name## Drop Down List component and more.
+description: Learn here all about Highlight Filtering in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Highlight Filtering
 publishingplatform: ##Platform_Name##

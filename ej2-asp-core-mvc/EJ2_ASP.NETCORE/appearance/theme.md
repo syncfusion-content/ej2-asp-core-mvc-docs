@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theme in ##Platform_Name## Ej2_asp.netcore Component
-description: Learn here all about Theme in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
+title: Theme in ##Platform_Name## Component
+description: Learn here all about Theme in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Theme
 publishingplatform: ##Platform_Name##

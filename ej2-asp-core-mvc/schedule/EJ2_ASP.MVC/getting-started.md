@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Schedule Component
-description: Checkout and learn about getting started with ##Platform_Name## Schedule component of Syncfusion, and more details.
+description: Checkout and learn about getting started with ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -40,7 +40,7 @@ We are going to render `Scheduler` component in ASP.NET MVC application. Add the
 
 > Running the above code will display an empty Scheduler with system date and time on the browser like below.
 
-![empty scheduler](../../schedule/images/scheduler.png)
+![empty scheduler](../images/scheduler.png)
 
 ## Populating appointments
 
@@ -152,7 +152,7 @@ public List<AppointmentData> GetScheduleData()
 
 Output be like the below.
 
-![appointments](../../schedule/images/appointments.png)
+![appointments](../images/appointments.png)
 
 ## Setting  date
 

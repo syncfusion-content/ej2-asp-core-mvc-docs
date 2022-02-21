@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time Masking in ##Platform_Name## Timepicker Component
-description: Learn here all about Time Masking in Syncfusion ##Platform_Name## Timepicker component and more.
+description: Learn here all about Time Masking in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Time Masking
 publishingplatform: ##Platform_Name##

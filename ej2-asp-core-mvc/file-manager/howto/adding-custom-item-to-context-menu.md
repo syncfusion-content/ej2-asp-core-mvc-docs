@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding Custom Item To Context Menu in ##Platform_Name## File Manager Component
-description: Learn here all about Adding Custom Item To Context Menu in Syncfusion ##Platform_Name## File Manager component and more.
+description: Learn here all about Adding Custom Item To Context Menu in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Adding Custom Item To Context Menu
 publishingplatform: ##Platform_Name##

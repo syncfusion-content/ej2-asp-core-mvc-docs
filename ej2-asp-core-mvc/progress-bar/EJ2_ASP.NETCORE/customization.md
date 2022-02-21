@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in ##Platform_Name## Progress Bar Component
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Progress Bar component and more.
+description: Learn here all about Customization in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##

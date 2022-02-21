@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Search Cards in ##Platform_Name## Kanban Component
-description: Learn here all about Search Cards in Syncfusion ##Platform_Name## Kanban component and more.
+description: Learn here all about Search Cards in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Search Cards
 publishingplatform: ##Platform_Name##
@@ -42,4 +42,4 @@ In the following sample, the searching operation starts as soon as you start typ
 
 Output be like the below.
 
-![kanban](./images/search-cards.PNG)
+![kanban](../../images/search-cards.PNG)

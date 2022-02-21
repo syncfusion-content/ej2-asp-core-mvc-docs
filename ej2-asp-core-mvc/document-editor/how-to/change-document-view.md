@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Change Document View in ##Platform_Name## Document Editor Component
-description: Learn here all about Change Document View in Syncfusion ##Platform_Name## Document Editor component and more.
+description: Learn here all about Change Document View in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Change Document View
 publishingplatform: ##Platform_Name##

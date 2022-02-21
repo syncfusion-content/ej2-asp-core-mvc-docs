@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Card Component
-description: Checkout and learn about getting started with ##Platform_Name## Card component of Syncfusion, and more details.
+description: Checkout and learn about getting started with ##Platform_Name## Card component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -67,7 +67,7 @@ You can create Card with a header in a specific structure. For adding header you
 
 Output be like the below.
 
-![getting started](../../card/images/gettingstarted.PNG)
+![getting started](../images/gettingstarted.PNG)
 
 ## See Also
 

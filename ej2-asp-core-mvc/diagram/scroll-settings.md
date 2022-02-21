@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scroll Settings in ##Platform_Name## Diagram Component
-description: Learn here all about Scroll Settings in Syncfusion ##Platform_Name## Diagram component and more.
+description: Learn here all about Scroll Settings in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scroll Settings
 publishingplatform: ##Platform_Name##

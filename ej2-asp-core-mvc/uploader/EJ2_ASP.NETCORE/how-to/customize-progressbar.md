@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Progressbar in ##Platform_Name## Uploader Component
-description: Learn here all about Customize Progressbar in Syncfusion ##Platform_Name## Uploader component and more.
+description: Learn here all about Customize Progressbar in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Progressbar
 publishingplatform: ##Platform_Name##

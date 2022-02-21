@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Time Masking in ##Platform_Name## Datetimepicker Component
-description: Learn here all about Date Time Masking in Syncfusion ##Platform_Name## Datetimepicker component and more.
+description: Learn here all about Date Time Masking in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Date Time Masking
 publishingplatform: ##Platform_Name##
@@ -19,7 +19,7 @@ DateTimePicker has `enableMask` property that provides the option to enable the 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/datetimepicker/mask-module/mask-input/tagHelper %}
 {% endhighlight %}
-{% highlight c#  tabtitle="Mask-input.cs" %}
+{% highlight c# tabtitle="Mask-input.cs" %}
 {% include code-snippet/datetimepicker/mask-module/mask-input/mask-input.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -30,7 +30,7 @@ DateTimePicker has `enableMask` property that provides the option to enable the 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/datetimepicker/mask-module/mask-input/razor %}
 {% endhighlight %}
-{% highlight c#  tabtitle="Mask-input.cs" %}
+{% highlight c# tabtitle="Mask-input.cs" %}
 {% include code-snippet/datetimepicker/mask-module/mask-input/mask-input.cs %}
 {% endhighlight %}
 {% endtabs %}

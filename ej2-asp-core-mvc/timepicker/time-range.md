@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time Range in ##Platform_Name## Timepicker Component
-description: Learn here all about Time Range in Syncfusion ##Platform_Name## Timepicker component and more.
+description: Learn here all about Time Range in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Time Range
 publishingplatform: ##Platform_Name##

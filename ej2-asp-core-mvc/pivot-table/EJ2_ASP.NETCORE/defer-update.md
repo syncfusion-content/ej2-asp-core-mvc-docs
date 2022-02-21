@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Defer Update in ##Platform_Name## Pivot Table Component
-description: Learn here all about Defer Update in Syncfusion ##Platform_Name## Pivot Table component and more.
+description: Learn here all about Defer Update in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Defer Update
 publishingplatform: ##Platform_Name##

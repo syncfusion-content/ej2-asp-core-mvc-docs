@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Content in ##Platform_Name## Card Component
-description: Learn here all about Header Content in Syncfusion ##Platform_Name## Card component and more.
+description: Learn here all about Header Content in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Header Content
 publishingplatform: ##Platform_Name##

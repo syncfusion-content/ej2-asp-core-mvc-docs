@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To in ##Platform_Name## Linear Gauge Component
-description: Learn here all about How To in Syncfusion ##Platform_Name## Linear Gauge component and more.
+description: Learn here all about How To in Syncfusion ##Platform_Name## Linear Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: How To
 publishingplatform: ##Platform_Name##
@@ -131,19 +131,6 @@ public ActionResult GetServerData()
     }
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/lineargauge/how-to/dynamic-gauge/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dynamic.cs" %}
-{% include code-snippet/lineargauge/how-to/dynamic-gauge/dynamic.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/lineargauge/how-to/dynamic-gauge/razor %}
@@ -152,8 +139,6 @@ public ActionResult GetServerData()
 {% include code-snippet/lineargauge/how-to/dynamic-gauge/dynamic.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 
 **Sample reference**

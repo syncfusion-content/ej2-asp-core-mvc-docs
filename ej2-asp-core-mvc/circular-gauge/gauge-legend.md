@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gauge Legend in ##Platform_Name## Circular Gauge Component
-description: Learn here all about Gauge Legend in Syncfusion ##Platform_Name## Circular Gauge component and more.
+description: Learn here all about Gauge Legend in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Gauge Legend
 publishingplatform: ##Platform_Name##

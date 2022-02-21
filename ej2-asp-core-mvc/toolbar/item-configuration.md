@@ -1,18 +1,28 @@
 ---
 layout: post
 title: Item Configuration in ##Platform_Name## Toolbar Component
-description: Learn here all about Item Configuration in Syncfusion ##Platform_Name## Toolbar component and more.
+description: Learn here all about Item Configuration in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Item Configuration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-  text       | The text to be displayed for button.
- id         | The ID of the button to be rendered. If the ID is not given, auto ID is generated.
-  prefixIcon | Defines the class used to specify an icon for the button. The icon is `positioned before` the text if text is available or the icon alone button is rendered.
-suffixIcon | Defines the class used to specify an icon for the button. The icon is `positioned after` the text if text is available. If both `prefixIcon` and `suffixIcon` are specified, only `prefixIcon` is considered.
-  width      | Used to set the width of the button.
+# Item Configuration in ASP.NET MVC Toolbar control
+
+The Toolbar can be rendered by defining an array of items. Items can be constructed with the following built-in command types or item template.
+
+## Button
+
+`Button` is the default command `type`, and it can be rendered by using the `text` property. Properties of the button command type:
+
+|Property|Description|
+|--------|-----------|
+| text | The text to be displayed for button.|
+| id | The ID of the button to be rendered. If the ID is not given, auto ID is generated. |
+| prefixIcon | Defines the class used to specify an icon for the button. The icon is `positioned before` the text if text is available or the icon alone button is rendered. |
+| suffixIcon | Defines the class used to specify an icon for the button. The icon is `positioned after` the text if text is available. If both `prefixIcon` and `suffixIcon` are specified, only `prefixIcon` is considered. |
+| width | Used to set the width of the button. |
 
 ## Separator
 

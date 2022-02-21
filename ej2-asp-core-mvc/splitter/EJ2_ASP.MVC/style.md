@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style in ##Platform_Name## Splitter Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Splitter component and more.
+description: Learn here all about Style in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##

@@ -1,98 +1,108 @@
 ---
 layout: post
 title: Global Local in ##Platform_Name## Tree Grid Component
-description: Learn here all about Global Local in Syncfusion ##Platform_Name## Tree Grid component and more.
+description: Learn here all about Global Local in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Global Local
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-EmptyRecord | No records to display
-True | true
-False | false
-ExpandAll | Expand All
-CollapseAll | Collapse All
-InvalidFilterMessage | Invalid Filter Data
-FilterbarTitle | \s filter bar cell
-Add | Add
-Edit| Edit
-Cancel| Cancel
-Update| Update
-Delete | Delete
-Print | Print
-Pdfexport | PDF Export
-Excelexport | Excel Export
-Wordexport | Word Export
-Csvexport | CSV Export
-Search | Search
-Save | Save
-EditOperationAlert | No records selected for edit operation
-DeleteOperationAlert | No records selected for delete operation
-SaveButton | Save
-OKButton | OK
-CancelButton | Cancel
-EditFormTitle | Details of
-AddFormTitle | Add New Record
-ConfirmDelete | Are you sure you want to Delete Record?
-SearchColumns | search columns
-Matchs | No Matches Found
-FilterButton | Filter
-ClearButton | Clear
-StartsWith | Starts With
-EndsWith | Ends With
-Contains | Contains
-Equal | Equal
-NotEqual | Not Equal
-LessThan | Less Than
-LessThanOrEqual | Less Than Or Equal
-GreaterThan | Greater Than
-GreaterThanOrEqual | Greater Than Or Equal
-ChooseDate | Choose a Date
-EnterValue | Enter the value
-autoFitAll | Auto Fit all columns
-autoFit | Auto Fit this column
-Export | Export
-FirstPage | First Page
-LastPage | Last Page
-PreviousPage | Previous Page
-NextPage | Next Page
-SortAscending | Sort Ascending
-SortDescending | Sort Descending
-EditRecord | Edit Record
-DeleteRecord | Delete Record
-Above | Above
-Below | Below
-AddRow | Add Row
-FilterMenu | Filter
-SelectAll | Select All
-Blanks | Blanks
-FilterTrue | True
-FilterFalse | False
-NoResult | No Matches Found
-ClearFilter | Clear Filter
-NumberFilter | Number Filters
-TextFilter | Text Filters
-DateFilter | Date Filters
-MatchCase | Match Case
-Between | Between
-CustomFilter | Custom Filter
-CustomFilterPlaceHolder | Enter the value
-CustomFilterDatePlaceHolder | Choose a date
-AND | AND
-OR | OR
-ShowRowsWhere | Show rows where:
-currentPageInfo | {0} of {1} pages
-totalItemsInfo | ({0} items)
-firstPageTooltip | Go to first page
-lastPageTooltip | Go to last page
-nextPageTooltip | Go to next page
-previousPageTooltip | Go to previous page
-nextPagerTooltip | Go to next pager
-previousPagerTooltip | Go to previous pager
-pagerDropDown | Items per page
-pagerAllDropDown | Items
-All | All
+# Globalization in ASP.NET MVC Tree Grid control
+
+## Localization
+
+The Localization library allows you to localize default text content of the TreeGrid. The treegrid component has static text on some features (like toolbar area text, filter menu text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the Locale value and translation object.
+
+The following list of properties and its values are used in the treegrid.
+
+| Locale keywords | Text |
+|-----------------|------|
+| EmptyRecord | No records to display |
+| True | true |
+| False | false |
+| ExpandAll | Expand All |
+| CollapseAll | Collapse All |
+| InvalidFilterMessage | Invalid Filter Data |
+| FilterbarTitle | \s filter bar cell |
+| Add | Add |
+| Edit | Edit |
+| Cancel | Cancel |
+| Update | Update |
+| Delete | Delete |
+| Print | Print |
+| Pdfexport | PDF Export |
+| Excelexport | Excel Export |
+| Wordexport | Word Export |
+| Csvexport | CSV Export |
+| Search | Search |
+| Save | Save |
+| EditOperationAlert | No records selected for edit operation |
+| DeleteOperationAlert | No records selected for delete operation |
+| SaveButton | Save |
+| OKButton | OK |
+| CancelButton | Cancel |
+| EditFormTitle | Details of |
+| AddFormTitle | Add New Record |
+| ConfirmDelete | Are you sure you want to Delete Record? |
+| SearchColumns | search columns |
+| Matchs | No Matches Found |
+| FilterButton | Filter |
+| ClearButton | Clear |
+| StartsWith | Starts With |
+| EndsWith | Ends With |
+| Contains | Contains |
+| Equal | Equal |
+| NotEqual | Not Equal |
+| LessThan | Less Than |
+| LessThanOrEqual | Less Than Or Equal |
+| GreaterThan | Greater Than |
+| GreaterThanOrEqual | Greater Than Or Equal |
+| ChooseDate | Choose a Date |
+| EnterValue | Enter the value |
+| autoFitAll | Auto Fit all columns |
+| autoFit | Auto Fit this column |
+| Export | Export |
+| FirstPage | First Page |
+| LastPage | Last Page |
+| PreviousPage | Previous Page |
+| NextPage | Next Page |
+| SortAscending | Sort Ascending |
+| SortDescending | Sort Descending |
+| EditRecord | Edit Record |
+| DeleteRecord | Delete Record |
+| Above | Above |
+| Below | Below |
+| AddRow | Add Row |
+| FilterMenu | Filter |
+| SelectAll | Select All |
+| Blanks | Blanks |
+| FilterTrue | True |
+| FilterFalse | False |
+| NoResult | No Matches Found |
+| ClearFilter | Clear Filter |
+| NumberFilter | Number Filters |
+| TextFilter | Text Filters |
+| DateFilter | Date Filters |
+| MatchCase | Match Case |
+| Between | Between |
+| CustomFilter | Custom Filter |
+| CustomFilterPlaceHolder | Enter the value |
+| CustomFilterDatePlaceHolder | Choose a date |
+| AND | AND |
+| OR | OR |
+| ShowRowsWhere | Show rows where: |
+| currentPageInfo | {0} of {1} pages |
+| totalItemsInfo | ({0} items) |
+| firstPageTooltip | Go to first page |
+| lastPageTooltip | Go to last page |
+| nextPageTooltip | Go to next page |
+| previousPageTooltip | Go to previous page |
+| nextPagerTooltip | Go to next pager |
+| previousPagerTooltip | Go to previous pager |
+| pagerDropDown | Items per page |
+| pagerAllDropDown | Items |
+| All | All |
 
 ### Loading translations
 

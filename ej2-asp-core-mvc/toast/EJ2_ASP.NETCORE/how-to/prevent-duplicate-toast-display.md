@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent Duplicate Toast Display in ##Platform_Name## Toast Component
-description: Learn here all about Prevent Duplicate Toast Display in Syncfusion ##Platform_Name## Toast component and more.
+description: Learn here all about Prevent Duplicate Toast Display in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Prevent Duplicate Toast Display
 publishingplatform: ##Platform_Name##

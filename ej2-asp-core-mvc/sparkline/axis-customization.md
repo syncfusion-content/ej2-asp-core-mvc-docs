@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axis Customization in ##Platform_Name## Sparkline Component
-description: Learn here all about Axis Customization in Syncfusion ##Platform_Name## Sparkline component and more.
+description: Learn here all about Axis Customization in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis Customization
 publishingplatform: ##Platform_Name##

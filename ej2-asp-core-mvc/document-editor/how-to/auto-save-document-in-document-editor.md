@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Auto Save Document In Document Editor in ##Platform_Name## Document Editor Component
-description: Learn here all about Auto Save Document In Document Editor in Syncfusion ##Platform_Name## Document Editor component and more.
+description: Learn here all about Auto Save Document In Document Editor in Syncfusion ##Platform_Name## Document Editor component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Auto Save Document In Document Editor
 publishingplatform: ##Platform_Name##

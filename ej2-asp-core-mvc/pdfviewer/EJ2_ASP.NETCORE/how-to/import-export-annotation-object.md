@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Import Export Annotation Object in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Import Export Annotation Object in Syncfusion ##Platform_Name## Pdfviewer component and more.
+description: Learn here all about Import Export Annotation Object in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Import Export Annotation Object
 publishingplatform: ##Platform_Name##

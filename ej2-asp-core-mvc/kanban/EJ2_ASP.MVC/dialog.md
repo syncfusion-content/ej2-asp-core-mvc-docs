@@ -1,13 +1,33 @@
 ---
 layout: post
 title: Dialog in ##Platform_Name## Kanban Component
-description: Learn here all about Dialog in Syncfusion ##Platform_Name## Kanban component and more.
+description: Learn here all about Dialog in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dialog
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Card Editing in ASP.NET MVC Kanban control
+
+The Kanban provides built-in support to add, edit and delete a card using dialog module. User can edit a card using the following ways.
+
+* Built-in dialog module
+* Custom Fields
+* Dialog template
+
+## Default Dialog
+
+When double-click on the cards, the dialog is opened with below fields to edit a card. This dialog contains `Delete`, `Save` and `Cancel` buttons.
+
+* To edit a card, modify the card details and click the `Save` button.
+* To delete a card, click `Delete` button.
+* Click on the `Cancel` button to cancel the editing action.
+
+The dialog displays with the following fields which mapped to dialog fields by default.
+
+|Key|Type|Text|
+|---|----|----|
 cardSettings.headerField | Input | ID
 keyField | DropDown | -
 cardSettings.contentField | TextArea | -
