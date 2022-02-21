@@ -1,6 +1,6 @@
 # Syncfusion ASP.NET Core and MVC Documentation
 
-This is the GitHub repository for the technical product documentation for Syncfusion Blazor components. This documentation is published to https://ej2.syncfusion.com/aspnetcore/documentation/introduction/
+This is the GitHub repository for the technical product documentation for Syncfusion ASP.NET Core and MVC components. This documentation is published to https://ej2.syncfusion.com/aspnetcore/documentation/introduction/
 
 ## Contributions Welcome!
 
