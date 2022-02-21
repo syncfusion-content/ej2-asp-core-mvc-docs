@@ -15,7 +15,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Accessibility and localization
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ---------- | ----------------------- | ----------------------- |
 | Keyboard Navigation | **Property** : allowKeyboardNavigation<br/> <br/>`<ej-dialog id="dialog" allow-keyboard-navigation="true"></ej-dialog>` | No separate Property for enable/disable keyboard navigation.  Its enabled by default. |
@@ -24,7 +23,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Header
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Header Content | **Property** : title<br/> <br/>`<ej-dialog id="dialog" title="EJ1 Dialog header"></ej-dialog>`<br/>   **Method** : setTitle<br/> $('#dialog').ejDialog('setTitle', 'EJ1 Dialog Header'); | **Property** : header<br/> <br/>`<ejs-dialog id="dialog" header="EJ2 Dialog"></ejs-dialog>` |
@@ -41,7 +39,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Footer
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Footer Content | **Property** :footerTemplateId<br/> <br/>`<ej-dialog id="dialog" footer-templateId="sample"></ej-dialog>` | **Property:** footerTemplate<br/> <br/>`<ejs-dialog id="dialog" footerTemplate="<button>Submit</button>"></ejs-dialog>` |
@@ -50,7 +47,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Content
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Dialog content | **Method** : setContent<br/> <br/>`<ej-dialog id="dialog"></ej-dialog>`<br/> $('#dialog').ejDialog('setContent', 'Dialog Content') | **Property** : content<br/> <br/>`<ejs-dialog id="dialog" content="Dialog content"></ejs-dialog>` |
@@ -61,7 +57,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Animation
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Enabling Animation | **Property** : enableAnimation<br/> <br/>`<ej-dialog id="dialog" enable-animation="true" ></ej-dialog>`| Not Applicable |
@@ -71,7 +66,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Draggable and resizing
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Draggable dialog | **Property** : allowDraggable<br/> <br/>`<ej-dialog id="dialog" allow-draggable="true" ></ej-dialog>` | **Property** : allowDragging<br/> <br/>`<ejs-dialog id="dialog" allowDragging="true"></ejs-dialog>` |
@@ -85,7 +79,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Target
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Target element to append dialog in document | **Property** : target <br/> <br/>`<ej-dialog id="dialog" target="#dialogTarget" ></ej-dialog>` | **Property**: target<br/> <br/>`<ejs-dialog id="dialog" target="#dialogTarget"></ejs-dialog>` |
@@ -93,7 +86,6 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Position
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Customizing dialog position using X, Y coordinate values | **Property** : position<br/> <br/>`<ej-dialog id="dialog"><e-dialog-position x-value="300" y-value="100" /></ej-dialog>`<br/> | **Property** : position<br/><br/> `<ejs-dialog id="dialog">`<br/>`<e-dialog-position X="300" Y="100"></e-dialog-position></ejs-dialog>`<br/> |
@@ -101,28 +93,24 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## Visibility
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Render dialog in visible/hidden state | **Property:** showOnInit<br/> <br/>`<ej-dialog id="dialog" show-onInit="true" ></ej-dialog>` | **Property:** visible<br/> <br/>`<ejs-dialog id="dialog" visible="false"></ejs-dialog>` |
 
 ## Dialog mode
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Render modal dialog | **Property** : enableModal<br/> <br/>`<ej-dialog id="dialog" enable-modal="true" ></ej-dialog>` | **Property** : isModal<br/> <br/> `<ejs-dialog id="dialog" isModal="true"></ejs-dialog>` |
 
 ## Tooltip
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Sets the tooltip for dialog buttons | **Property** : tooltip<br/><br/> `<ej-dialog id="dialog" tooltip="tooltip"></ej-dialog>`<br/><br/>`function tooltip(): object { close: 'Exit' }`<br/> | No Separate Property for tooltip. It renders based on locale text. |
 
 ## Control state
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Enable/Disable the control | **Property** : enabled <br/><br/> `<ej-dialog id="dialog" enabled="false" ></ej-dialog>` | Not Applicable |
@@ -130,14 +118,12 @@ This article describes the API migration process of Dialog control from Essentia
 
 ## State maintenance
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Save the model values in local storage or cookies | **Property** : enablePersistence <br/> <br/>`<ej-dialog id="dialog" enable-persistence="true" ></ej-dialog>` | **Property** : enablePersistence <br/><br/>`<ejs-dialog id="dialog" enablePersistence="true"></ejs-dialog>` |
 
 ## Common
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Adjusting Height | **Property** : height <br/><br/>`<ej-dialog id="dialog" height="400" ></ej-dialog>` | **Property** : height <br/><br/> `<ejs-dialog id="dialog" height="50%"></ejs-dialog>` |
