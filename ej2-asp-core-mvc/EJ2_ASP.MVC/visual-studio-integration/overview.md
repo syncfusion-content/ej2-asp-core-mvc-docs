@@ -22,13 +22,13 @@ The Syncfusion ASP.NET MVC (Essential JS 2) Visual Studio Extensions can be acce
 The Syncfusion ASP.NET MVC (Essential JS 2) menu option is available from v17.1.0.32.
 Syncfusion provides the following supports in Visual Studio:
 
-[Project Template](./visual-studio-extensions/create-project): Creates the Syncfusion ASP.NET MVC (Essential JS 2) application by adding the required Essential JS 2 components.
+[Project Template](vs2019-extensions/create-project): Creates the Syncfusion ASP.NET MVC (Essential JS 2) application by adding the required Essential JS 2 components.
 
-[Convert Project](./visual-studio-extensions/convert-project): Converts an existing ASP.NET MVC application into a Syncfusion ASP.NET MVC (Essential JS 2) application by adding the required Syncfusion assemblies and resource files.
+[Convert Project](vs2019-extensions/convert-project): Converts an existing ASP.NET MVC application into a Syncfusion ASP.NET MVC (Essential JS 2) application by adding the required Syncfusion assemblies and resource files.
 
-[Upgrade Project](./visual-studio-extensions/upgrade-project): Upgrades the existing Syncfusion ASP.NET MVC (Essential JS 2) application from one Essential Studio version to another version.
+[Upgrade Project](vs2019-extensions/upgrade-project): Upgrades the existing Syncfusion ASP.NET MVC (Essential JS 2) application from one Essential Studio version to another version.
 
-[Creator Sample](./visual-studio-extensions/create-sample): Creates the Syncfusion ASP.NET MVC (Essential JS2) application with the sample code of required controls and features.
+[Creator Sample](vs2019-extensions/create-sample): Creates the Syncfusion ASP.NET MVC (Essential JS2) application with the sample code of required controls and features.
 
 ### No project selected in Visual Studio
 

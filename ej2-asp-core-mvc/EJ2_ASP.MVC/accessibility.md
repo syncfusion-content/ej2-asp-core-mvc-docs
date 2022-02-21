@@ -27,5 +27,5 @@ each component.
 * [Dialog](./dialog/accessibility)
 * [DropDownList](./drop-down-list/accessibility)
 * [Grid](./grid/accessibility)
-* [ListView](./list-view/accessibility)
+* [ListView](./listview/accessibility)
 * [TimePicker](./timepicker/accessibility)
