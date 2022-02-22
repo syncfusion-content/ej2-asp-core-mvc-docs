@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started
 
- This section briefly explains about how to include a simple Accordion in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/) page for introduction part of the system requirements and configure the common specifications.
+ This section briefly explains about how to include a simple Accordion in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](https://helpej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017) page for introduction part of the system requirements and configure the common specifications.
 
 ## Adding component to the Application
 
@@ -45,7 +45,7 @@ documentation: ug
 
 You can bind any data in Accordion items, by simply using the content template property in ASP.NET Accordion. Accordion is already provided with the content template support and hence we can utilize this support to load the other HTML elements or as per your requirement
 
-In the below demo, the Accordion items are given with [chart](../../chart), [grid](../../grid), [calender](../../calendar) as their content using the content template.
+In the below demo, the Accordion items are given with [chart](../chart/getting-started), [grid](../grid/getting-started-core), [calender](../calendar/getting-started) as their content using the content template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

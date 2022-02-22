@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started
 
-This section briefly explains about how to render Badge component in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](../getting-started/) page for introduction part of the system requirements and configure the common specifications.
+This section briefly explains about how to render Badge component in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](https://helpej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017) page for introduction part of the system requirements and configure the common specifications.
 
 > Starting with `v16.2.0.x`, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP .NET Core application to use our components.
 

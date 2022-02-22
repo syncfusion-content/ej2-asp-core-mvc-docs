@@ -67,7 +67,7 @@ You can create Card with a header in a specific structure. For adding header you
 
 Output be like the below.
 
-![getting started](../images/gettingstarted.PNG)
+![getting started](images/gettingstarted.PNG)
 
 ## See Also
 
