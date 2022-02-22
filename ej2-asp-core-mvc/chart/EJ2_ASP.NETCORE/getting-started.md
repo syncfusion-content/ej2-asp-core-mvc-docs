@@ -24,17 +24,17 @@ The following steps to create ASP.NET Core Application.
 
 **Step 1:** Create ASP.NET Core Web Application with default template project in Visual Studio 2017.
 
-![Alt text](../how-to/images/default-template.png)
+![Alt text](how-to/images/default-template.png)
 
 **Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using Nugget Package Manager.
 
 Open the `nuGet` package manager.
 
-![Alt text](../how-to/images/solution-explorer-core.png)
+![Alt text](how-to/images/solution-explorer-core.png)
 
 Install the **Syncfusion.EJ2** package to the application
 
-![Alt text](../how-to/images/nuget-demo.png)
+![Alt text](how-to/images/nuget-demo.png)
 
 After Installation complete this will included in the project. You can refer it from the Project Assembly Reference.
 
@@ -78,6 +78,6 @@ After Installation complete this will included in the project. You can refer it 
 
 ```
 
-![Alt text](../how-to/images/chart.png)
+![Alt text](how-to/images/chart.png)
 
 > You can refer to our [ASP.NET Core Charts](https://www.syncfusion.com/aspnet-core-ui-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Charts example](https://ej2.syncfusion.com/aspnetcore/Chart/Line#/material) that shows various chart types and how to represent time-dependent data, showing trends in data at equal intervals.

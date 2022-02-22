@@ -14,7 +14,6 @@ This article describes the API migration process of  DropDownList component from
 
 ## DataBinding
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *Datasource* <br/>`@Html.EJ().DropDownList("countryList").Datasource((IEnumerable<Countries>)ViewBag.datasource1)` | **Property**: *dataSource* <br/>`@Html.EJS().DropDownList("games").DataSource((IEnumerable<object>)ViewBag.localdata).Render()` |
@@ -28,7 +27,6 @@ This article describes the API migration process of  DropDownList component from
 
 ## Filtering
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** |	**Property**: *EnableFilterSearch* <br/>`@Html.EJ().DropDownList("selectCompany").EnableFilterSearch(true)` | **Property**: *AllowFiltering* <br/>`@Html.EJS().DropDownList("customers").AllowFiltering(true).Render()` |
@@ -43,7 +41,6 @@ This article describes the API migration process of  DropDownList component from
 
 ## Template
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *Template* <br/>`@Html.EJ().DropDownList("selectCompany").Template("<div><img class='imgId' src='../Content/Employees/${Image}.png' alt='employee'/> <div class='ename'> ${Text} </div><div class='role'> ${Role} </div><div class='cont'> ${Country} </div></div>")` | **Property**: *ItemTemplate*<br/>`@Html.EJS().DropDownList("customers").ItemTemplate("@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")").Render()` |
@@ -56,14 +53,12 @@ This article describes the API migration process of  DropDownList component from
 
 ## Virtual Scrolling
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** |	**Property**: *AllowVirtualScrolling* <br/>`@Html.EJ().DropDownList("customers").AllowVirtualScrolling(true)` | **Not applicable** |
 
 ## Applying CSS
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *CssClass* <br/>`@Html.EJ().DropDownList("customers").CssClass("customClass")` | **Property**: *CssClass* <br/>`@Html.EJS().DropDownList("customers").CssClass("class").Render()` |
@@ -71,7 +66,6 @@ This article describes the API migration process of  DropDownList component from
 
 ## Sorting
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** |	**Property**: *EnableSorting* <br/>`@Html.EJ().DropDownList("customers").EnableSorting(true)` | **Enabled only on using sortorder **Property**** |
@@ -79,7 +73,6 @@ This article describes the API migration process of  DropDownList component from
 
 ## Popup
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Popup height** | **Property**: *PopupHeight* <br/>`@Html.EJ().DropDownList("customers").PopupHeight("550px")` | **Property**: PopupHeight <br/>`@Html.EJS().DropDownList("customers").PopupHeight("220px").Render()` |
@@ -104,7 +97,6 @@ This article describes the API migration process of  DropDownList component from
 
 ## Placeholder
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Watermark text** | **Property**: *WatermarkText* <br/>`@Html.EJ().DropDownList("dropdown").WatermarkText("Select")` | **Property**: *Placeholder* <br/>`@Html.EJS().DropDownList("dropdown").PlaceHolder("Select").Render()` |
@@ -112,7 +104,6 @@ This article describes the API migration process of  DropDownList component from
 
 ## Grouping
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Default** | **Property**: *fields.groupBy* <br/>`@Html.EJ().DropDownList("groupsList").DropDownListFields(f => f.GroupBy("parentId"))` | **Property**: *fields.groupBy*<br/>>`@Html.EJS().DropDownList("games").Fields(new DropDownListFieldSettings { GroupBy = "Game" }).Render()` |
@@ -120,7 +111,6 @@ This article describes the API migration process of  DropDownList component from
 
 ## Accessibility
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Globalization** | **Property**: *Locale*<br/>`@Html.EJ().DropDownList("customers").Locale("fr-FE")` | **Property**: *Locale*<br/>`@Html.EJS().DropDownList("customers").Locale("fr-FE").Render()` |
@@ -128,7 +118,6 @@ This article describes the API migration process of  DropDownList component from
 
 ## Miscellaneous
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Enable/disable** | **Property**: *Enabled*<br/>`@Html.EJ().DropDownList("customers").Enabled(true)` | **Property**: *Enabled* <br/>`@Html.EJS().DropDownList("customers").Enabled(true).Render()` |
@@ -141,7 +130,6 @@ This article describes the API migration process of  DropDownList component from
 
 ## Selection
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | Selecting particular index | **Property**: *selected-index*<br/>`@Html.EJ().DropDownList("dropdown").Index(3)` | **Property**: *index*<br/>`@Html.EJS().DropDownList("customers").Index(3).Render()` |
@@ -159,7 +147,6 @@ This article describes the API migration process of  DropDownList component from
 
 ## Common
 
-<!-- markdownlint-disable MD010 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |----------|-----------------------|-----------------------|
 | **Adding new item** | **Method** : *addItem*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/><br/>`$('#dropdown').ejDropDownList("addItem", {text:"India"});` | **Method**: *addItem*<br/>`<ejs-dropdownlist/>`<br/> <br/>`var ddlObj = document.getElementById(dropdownlist).ej2_Instances[0];`<br/><br/>`ddlObj.addItem({Id: 'game4', Game: 'Golf'}, 2);` |

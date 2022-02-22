@@ -27,13 +27,13 @@ The following steps are used to create ASP.NET Core application.
 **Step 1:** Create ASP.NET Core web application with default template project in Visual Studio.
 
 * Create a new project
-![Create Project](../../pdfviewer/images/create_new_project_core.png)
+![Create Project](images/create_new_project_core.png)
 
 * Configure the project
-![Configure Project](../../pdfviewer/images/configure_new_project_core.png)
+![Configure Project](images/configure_new_project_core.png)
 
 * Specify the target framework and create the ASP.NET Core Web App.
-![Default Template](../../pdfviewer/images/create_core_web_app.png)
+![Default Template](images/create_core_web_app.png)
 
 **Step 2:** After creating the project, add the following dependencies to your application by using `NuGet Package Manager`.
 * Syncfusion.EJ2.AspNet.Core
@@ -41,15 +41,15 @@ The following steps are used to create ASP.NET Core application.
 
 Open the `NuGet` package manager.
 
-![Add NuGet](../../pdfviewer/images/add_nuget_packages_core.png)
+![Add NuGet](images/add_nuget_packages_core.png)
 
 Install the **Syncfusion.EJ2.AspNet.Core** package to the application.
 
-![NuGet Demo1](../../pdfviewer/images/nuget_ej2_core.png)
+![NuGet Demo1](images/nuget_ej2_core.png)
 
 Install the **Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows** package to the application.
 
-![NuGet Demo2](../../pdfviewer/images/nuget_ej2_pdfviewer_core.png)
+![NuGet Demo2](images/nuget_ej2_pdfviewer_core.png)
 
 >For Linux and OSX operating systems use the corresponding libraries as below,
 * Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
@@ -57,7 +57,7 @@ Install the **Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows** package to the appl
 
 **Step 3:** For ASP.NET Core 3.0 or later, install the **Microsoft.AspNetCore.Mvc.NewtonsoftJson** NuGet package and configure to serialize the JSON objects by adding the below namespace and the code to the ConfigureServices(IServiceCollection services) method of the Startup.cs file.
 
-![NuGet Demo3](../../pdfviewer/images/nuget_newtonsoftjson.png)
+![NuGet Demo3](images/nuget_newtonsoftjson.png)
 
 ```cs
 using Newtonsoft.Json.Serialization;

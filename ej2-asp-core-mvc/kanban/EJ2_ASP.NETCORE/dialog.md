@@ -8,11 +8,31 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-cardSettings.headerField | Input | ID
-keyField | DropDown | -
-cardSettings.contentField | TextArea | -
-cardSettings.priority(If applicable) | Numeric | -
-swimlaneSettings.keyField(If applicable) | DropDown | -
+# Card Editing in ASP.NET Core Kanban control
+
+The Kanban provides built-in support to add, edit and delete a card using dialog module. User can edit a card using the following ways.
+
+* Built-in dialog module
+* Custom Fields
+* Dialog template
+
+## Default Dialog
+
+When double-click on the cards, the dialog is opened with below fields to edit a card. This dialog contains `Delete`, `Save` and `Cancel` buttons.
+
+* To edit a card, modify the card details and click the `Save` button.
+* To delete a card, click `Delete` button.
+* Click on the Cancel button to `cancel` the editing action.
+
+The dialog displays with the following fields which mapped to dialog fields by default.
+
+|Key|Type|Text|
+|---|----|----|
+| cardSettings.headerField | Input | ID |
+| keyField | DropDown | - |
+| cardSettings.contentField | TextArea | - |
+| cardSettings.priority(If applicable) | Numeric | - |
+| swimlaneSettings.keyField(If applicable) | DropDown | - |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
