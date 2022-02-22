@@ -14,6 +14,7 @@ The Essential JS 2 styles are developed under the SCSS environment with `base64`
 
 ## Key Features
 
-* [Theming](theme/)
-* [Icons Library](icons/)
+* [Built-in Themes](theme/)
+* [Size Modes](size-modes/)
 * [Theme Studio](theme-studio/)
+* [Icons Library](icons/)
