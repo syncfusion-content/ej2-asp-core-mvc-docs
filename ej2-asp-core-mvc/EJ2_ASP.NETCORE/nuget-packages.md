@@ -10,196 +10,143 @@ documentation: ug
 
 # NuGet Packages for ASP.NET Core
 
-> You can use the Syncfusion ASP.NET Core NuGet packages without installing the Essential Studio or ASP.NET Core platform installation to implement the Syncfusion ASP.NET Core controls.
+## Overview
 
-## Installing NuGet Packages
+**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET Core NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22+Syncfusion). The Syncfusion ASP.NET Core NuGet packages can be used without installing the Essential Studio or ASP.NET Core platform installation to implement the Syncfusion ASP.NET Core components.
 
-### Using NuGet Package Manager
+## Installation using Package Manager UI
 
-1. The NuGet Package Manager can be used to search and install NuGet packages in the Visual Studio solution or project:
+The NuGet Package Manager UI allows you to search, install, uninstall, and update Syncfusion ASP.NET Core NuGet packages in your applications and solutions. You can find and install the Syncfusion ASP.NET Core NuGet packages in your Visual Studio ASP.NET Core application and this process is easy with the steps below:
 
-2. Right-click the project/solution in the Solution Explorer tab, and choose **Manage NuGet Packages**
+1. Right-click on the ASP.NET Core application or solution in the Solution Explorer, and choose **Manage NuGet Packages...**
 
-    ![img3](images/manage-nuget.png)
+    ![Manage NuGet Packages add-in](images/manage-nuget.png)
 
-    Alternatively, click **Tools**, menu, NuGet Package Manager -> Manage NuGet Packages for Solution.
+    As an alternative, after opening the ASP.NET Core application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
 
-3. By default, the `NuGet.org` package is selected in the **Package source** drop-down. Select your appropriate feed name that you configured.
+2. The Manage NuGet Packages window will open. Navigate to the **Browse** tab, then search for the Syncfusion Essential JS 2 ASP.NET Core NuGet packages using a term like **"Syncfusion.EJ2.AspNet.Core"** and select the appropriate Syncfusion ASP.NET Core NuGet package for your development.
 
-     ![core4](images/package-manager.png)
+    > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
 
-4. The Syncfusion ASP.NET Core NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
+    ![NuGet Packages Search](images/nuget-search.png)
 
-### Using Package Manager Console
+3. When you select a Syncfusion ASP.NET Core package, the right side panel will provide more information about it.
 
-To reference the Syncfusion ASP.NET Core component using the Package Manager Console as NuGet packages, follow the below steps
+4. By default, the package selected with latest version. You can choose the required version and click the **Install** button and accept the license terms. The package will be added to your ASP.NET Core application.
 
-1. On the **Tools** menu, select **NuGet Package Manager** and then **Package Manager Console**.
+    ![NuGet Packages Install](images/install-nuget.png)
 
-2. Run the following NuGet installation commands:
+5. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion ASP.NET Core controls](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [Syncfusion ASP.NET Core help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction/) for development.
 
-    ```
-    #install specified package in default project
-    Install-Package <Package Name>
+## Installation using Package Manager Console
 
-    #install specified package in default project with specified package source
-    Install-Package <Package Name> -Source <Source Location>
+The Package Manager Console saves NuGet packages installation time since you don’t have to search for the Syncfusion ASP.NET Core NuGet package which you want to install, and you can just type the installation command to install the appropriate Syncfusion ASP.NET Core NuGet package. Follow the instructions below to use the Package Manager Console to reference the Syncfusion ASP.NET Core component as NuGet packages in your ASP.NET Core application.
 
-    #install specified package in specified project
-    Install-Package <Package Name> - ProjectName <Project Name>
-    ```
+1. To show the Package Manager Console, open your ASP.NET Core application in Visual Studio and navigate to **Tools -> NuGet Package Manager -> Package Manager Console**.
+
+    ![Package Manager Console](images/console.png)
+
+2. The **Package Manager Console** will be shown at the bottom of the screen. You can install the Syncfusion ASP.NET Core NuGet packages by enter the following NuGet installation commands.
+
+    ***Install specified Syncfusion ASP.NET Core NuGet package.***
+
+    The below command will install the Syncfusion ASP.NET Core NuGet package in the default ASP.NET Core application.
+
+    <!-- markdownlint-disable MD033 -->
+
+    ```Install-Package <Package Name>```
 
     **For example:**
 
-    ```
-    #install specified package in default project
+    ```cmd
     Install-Package Syncfusion.EJ2.AspNet.Core
-
-    #install specified package in default project with specified Package Source
-    Install-Package Syncfusion.EJ2.AspNet.Core -Source “http://nuget.syncfusion.com/nuget_aspnetcore-js2/nuget/getsyncfusionpackages/aspnetcore-js2”
-
-    #install specified package in specified project
-    Install-Package Syncfusion.EJ2.AspNet.Core -ProjectName SyncfusionDemoApplication
     ```
 
-### Using Visual Studio for macOS
+    > You can find the list of Syncfusion ASP.NET Core NuGet packages which are published in nuget.org from [here](https://www.nuget.org/packages?q=Tags%3A%22EJ2%22+syncfusion)
 
-Add packages can be used to search and install NuGet packages to the Visual Studio project in macOS:
+    ***Install specified Syncfusion ASP.NET Core NuGet package in specified ASP.NET Core application***
 
-1. Right-click the folder in the project, and then select **Add Packages…**
+    The below command will install the Syncfusion ASP.NET Core NuGet package in the given ASP.NET Core application.
 
-    ![img1](images/add-packages.png)
-
-2. By default, the `NuGet.org` package is selected in the **Package source** drop-down.
-
-3. The Syncfusion ASP.NET Core NuGet Packages available in the package source location will be listed. Search and install the required packages in your application, by clicking **Add Package** button.
-
-## Managing NuGet package using NuGet CLI
-
-The NuGet Command Line Interface (CLI), `nuget.exe`, provides the full extent of NuGet functionality to install, create, publish, and manage packages without making any change to the project files.
-
-1. Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-
-    > To update the existing `nuget.exe` to latest version use the following command:
-
-    ```
-    nuget update -self
-    ```
-
-2. Open the downloaded executable location in the command window, and run the following commands to download and install the required NuGet packages to a project specified in the `package.config`.
-
-```
-#install specified package in default project from specified package source for Windows Platform
-nuget.exe install <Package name | ConfigFilePath > <Options>
-
-#install specified package in default project from specified package source for MAC/Linux Platform
-mono nuget.exe install <Package name | ConfigFilePath > <Options>
-```
-
-> `configPath` is optional. This identifies the `package.config` or solutions file that lists the packages utilized in the project.
-
-**For example:**
-
-```
-#install specific package for Windows
-nuget.exe install Syncfusion.EJ2.AspNet.Core”
-
-#install all package which mention in package.config path for Windows
-nuget.exe install “C:\Users\SyncfusionApplication\package.config”
-
-#install specific package for Mac and Linux
-mono nuget.exe install “ Syncfusion.EJ2.AspNet.Core”
-
-#install all package which mention in package.config path for Mac and Linux
-mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
-
-```
-
-## Upgrading NuGet packages
-
-### Using NuGet Package Manger
-
-1. NuGet packages can be updated to their specific version or latest version available in the Visual Studio solution or project:
-
-2. Right-click the project/solution in the Solution Explorer tab, and choose **Manage NuGet Packages**. Alternatively, click **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution`.
-
-3. Select the **Updates** tab to see the packages available for update from the desired package sources. Select the required packages and the specific version from the dropdown, and click the **Update** button.
-
-<!-- markdownlint-disable MD024 -->
-
-### Using Visual Studio for macOS
-
-1. Using **Update** context menu from Visual Studio for Mac application, NuGet packages can be updated.
-
-2. Right-click on the Packages folder in the project, and select **Update**.
-
-    ![img4](images/package-update.png)
-
-3. This will update the NuGet package to the latest version. You can double-click the Add packages and choose the specific version.
-
-> To update all the projects from solution, use update option in the solution level.
-
-### Using Package Manger Console
-
-To update the installed Syncfusion ASP.NET Core NuGet packages using the Package Manager Console, follow the below steps
-
-1. On the **Tools** menu, select **NuGet Package Manager**, and then **Package Manager Console.**
-
-2. Run the following NuGet installation commands:
-
-    ```
-    #Update specific NuGet package in default project
-    Update-Package <Package Name>
-
-    #Update all the packages in default project
-    Update-Package
-
-    #Update specified package in default project with specified package source
-    Update-Package <Package Name> -Source <Source Location>
-
-    #Update specified package in specified project
-    Update-Package <Package Name> - ProjectName <Project Name>
-    ```
+    ```Install-Package <Package Name> - ProjectName <Project Name>```
 
     **For example:**
 
-    ```
-    #Update specified Syncfusion ASP.NET Core NuGet package
-    Update-Package Syncfusion.EJ2.AspNet.Core
-
-    #Update specified package in specified project
-    Update-Package Syncfusion.EJ2.AspNet.Core -ProjectName SyncfusionDemoApplication
+    ```cmd
+    Install-Package Syncfusion.EJ2.AspNet.Core -ProjectName SyncfusionDemoApp
     ```
 
-### Using NuGet CLI
+3. By default, the package will be installed with latest version. You can give the required version with the -Version term like below to install the Syncfusion ASP.NET Core NuGet packages in the appropriate version.
 
-Using the NuGet CLI, all the NuGet packages in the project can be updated to the available latest version.
-
-1. Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-
-    > To update the existing `nuget.exe` to latest version use the following command:
-
-    ```
-    nuget update -self
+    ```cmd
+    Install-Package Syncfusion.EJ2.AspNet.Core -Version 19.4.0.47
     ```
 
-2. Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion ASP.NET Core NuGet packages.
+    ![Package Manager Console Output ](images/console-installation-output.png)
 
+4. The NuGet package manager console will install the Syncfusion ASP.NET Core NuGet package as well as the dependencies it has. When the installation is complete, the console will show that your Syncfusion ASP.NET Core package has been successfully added to the application.
+
+5. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion ASP.NET Core controls](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [Syncfusion ASP.NET Core help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction/) for development.
+
+## Install and manage using Dotnet (.NET) CLI
+
+The [dotnet Command Line Interface (CLI)](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-dotnet-cli), allows you to add, restore, pack, publish, and manage packages without making any changes to your application files. [Dotnet add package](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package?tabs=netcore2x) adds a package reference to the application file, then runs [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) to install the package.
+
+Follow the below instructions to use the dotnet CLI command to install the Syncfusion ASP.NET Core NuGet packages.
+
+1. Open a command prompt and navigate to the directory where your ASP.NET Core application file is located.
+
+2. To install a NuGet package, run the following command.
+
+    ```dotnet add package <Package name>```
+    <!-- markdownlint-enable MD033 -->
+
+    **For Example:**
+
+    ```cmd
+    dotnet add package Syncfusion.EJ2.AspNet.Core
     ```
-    #update all NuGet packages from config file
-    nuget update <configPath> [options]
 
-    #update all NuGet packages from specified Packages Source
-    nuget update -Source <Source Location> [optional]
-    ```
+    > If you don’t provide a version flag, this command will be upgrading to the latest version by default. To specify a version, add the -v parameter: dotnet add package Syncfusion.EJ2.AspNet.Core -v 19.4.0.47.
 
-    > `configPath` is optional. This identifies the `package.config` or solutions file lists the packages utilized in the project.
+3. Examine the ASP.NET Core application file after the command has completed to ensure that the Syncfusion ASP.NET Core package was installed. To see the added reference, open the .csproj file.
 
-    **For example:**
+    ![Nuget Package Entry ](images/package-entry.png)
 
-    ```
-    #Update all NuGet packages from config file
-    nuget update “C:\Users\SyncfusionApplication\package.config”
-    ```
+4. Then run  [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) command to restores all the packages listed in the application file.
 
-    > Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.
+    > Restoring is done automatically with **dotnet build** and **dotnet run** in .NET Core 2.0 and later.
+
+5. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion ASP.NET Core controls](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [Syncfusion ASP.NET Core help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction/) for development.
+
+## Install and manage NuGet packages in Visual Studio for Mac
+
+The NuGet Package Manager UI in visual studio for Mac allows you to search, install, uninstall, and update Syncfusion ASP.NET Core NuGet packages in your applications and solutions. You can find and install the Syncfusion ASP.NET Core NuGet packages in your Visual Studio for Mac ASP.NET Core application and this process is easy with the steps below:
+
+1. Right-click on the ASP.NET Core application or solution in the Solution Window, and choose **Manage NuGet Packages...**
+
+    ![Manage NuGet Packages add-in](images/manage-nuget-mac.png)
+
+2. The NuGet Packages window will open. Navigate to the **Browse** tab, then search for the Syncfusion Essential JS 2 ASP.NET Core NuGet packages using a term like **"Syncfusion.EJ2.AspNet.Core"** and select the appropriate Syncfusion ASP.NET Core NuGet package for your development.
+
+    > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If you want to add other package source to Visual Studio for mac, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/visualstudio/mac/nuget-walkthrough?toc=%2Fnuget%2Ftoc.json&view=vsmac-2019#adding-package-sources) to set up the other package source.
+
+    ![NuGet Packages Search](images/mac-nuGet-search.png)
+
+3. When you select a Syncfusion ASP.NET Core package, the right side panel will provide more information about it.
+
+4. By default, the package selected with latest version. You can choose the required version and click the **Add Package** button and accept the license terms. The package will be added to your ASP.NET Core application.
+
+    ![NuGet Packages Install](images/mac-install-nuGet.png)
+
+5. Using **Update** context menu from Visual Studio for Mac application, NuGet packages can be updated. Right-click on the Syncfusion ASP.NET Core Nuget Package in the ASP.NET Core application, and select **Update**.
+
+    ![Nuget Packages Update](images/mac-package-update.png)
+
+    > To update all the Nuget Packages from solution, use **Update Nuget Packages** option in the solution level.
+
+6. You can restore all Nuget Packages from solution using **Restore Nuget Packages** option in the solution level like below.
+
+    ![NuGet Packages restore](images/mac-restore-nuGet.png)
+
+7. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion ASP.NET Core controls](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [Syncfusion ASP.NET Core help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction/) for development.
