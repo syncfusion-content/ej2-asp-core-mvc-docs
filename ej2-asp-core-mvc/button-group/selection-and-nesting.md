@@ -87,7 +87,7 @@ Nesting with other components can be possible in ButtonGroup. The following comp
 
 ### DropDownButton
 
-To initialize DropDownButton component refer [`DropDownButton Getting Started documentation`](./../../drop-down-button/getting-started).
+To initialize DropDownButton component refer [DropDownButton Getting Started documentation](https://helpej2.syncfusion.com/aspnetcore/documentation/drop-down-button/getting-started).
 
 In the following example, the DropDownButton component is rendered in ButtonGroup.
 
