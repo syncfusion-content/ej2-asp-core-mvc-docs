@@ -18,7 +18,6 @@ The component implements the keyboard navigation support by following the
 
 ## ARIA attributes
 
-<!-- markdownlint-disable MD033 -->
 | Property | Functionality |
 |----------|---------------|
 | role | <b>presentation:</b><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It indicates that the element is used to control presentation. This attribute is added to the Accordion element describing the actual role of the element.<br/><b>heading:</b><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It identifies the element as a heading that serves as an Accordion header. This attribute is added to all the Accordion header elements describing the actual role of the element.<br/> |

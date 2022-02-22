@@ -174,7 +174,7 @@ The month header of each date cell in the month view can be customized using the
 
 
 
-![Month view cell header template](../../schedule/images/cell-header-template.png)
+![Month view cell header template](../schedule/images/cell-header-template.png)
 
 ## Customizing the minimum and maximum date values
 

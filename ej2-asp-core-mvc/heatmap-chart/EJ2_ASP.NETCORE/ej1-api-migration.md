@@ -15,7 +15,6 @@ This article describes the API migration process of heat map component from Esse
 
 ## Members
 
-<!-- markdownlint-disable MD033 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | Specifies the width of the heat map | **Property:**  *width*<br/><br/><code>`<ej-heatmap id="HeatMap" width="810px">`<br/>`</ej-heatmap>`</code>| **Property:**  *width*<br/><br/><code>`<ejs-heatmap id='heatmap-container' width="300px">`</ejs-heatmap>`</code>|
@@ -37,7 +36,6 @@ This article describes the API migration process of heat map component from Esse
 
 ## Events
 
-<!-- markdownlint-disable MD033 -->
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | Triggered when the cell get clicked.| **Property:**  *cellSelected*<br/><br/><code>`<ej-heatmap actionComplete="window.actionComplete">`<br>`</ej-heatmap>`<br><br><code>window.actionComplete = function(args) {}</code>|**Property:**  *cellClick*<br/><br/><code>`<ejs-heatmap id='heatmap-container' cellClick="window.cellClick">`<br>`</ejs-heatmap>`<br><br><code>window.cellClick = function (args) { }</code>|

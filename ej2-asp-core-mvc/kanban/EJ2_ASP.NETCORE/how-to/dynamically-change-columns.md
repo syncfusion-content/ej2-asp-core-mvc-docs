@@ -42,4 +42,4 @@ You can dynamically change the Kanban columns by using the [`columns`](../../api
 
 Output be like the below.
 
-![kanban](./images/dynamic-columns.PNG)
+![kanban](../images/dynamic-columns.PNG)
