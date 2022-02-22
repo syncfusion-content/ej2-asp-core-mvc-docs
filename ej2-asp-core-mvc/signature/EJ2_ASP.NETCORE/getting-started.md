@@ -31,7 +31,7 @@ Using NuGet Package Manager we need to add **Syncfusion.EJ2.AspNet.Core** packag
 
 Open the `NuGet` package manager.
 
-![Alt text](/images/solution-explorer-core.png)
+![Alt text](../signature/images/solution-explorer-core.png)
 
 Install the **Syncfusion.EJ2.AspNet.Core** package to the application
 
