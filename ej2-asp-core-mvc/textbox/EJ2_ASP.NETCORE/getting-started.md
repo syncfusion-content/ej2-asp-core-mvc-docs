@@ -79,7 +79,7 @@ You can create a TextBox with icon as a group by creating the parent div element
 
 Output be like the below.
 
-![textbox](./images/textbox-getting.png)
+![textbox](../images/textbox-getting.png)
 
 ## Floating label
 
