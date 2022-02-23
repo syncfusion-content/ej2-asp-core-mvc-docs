@@ -1,0 +1,19 @@
+<div class="control-section">
+    <div style="margin: 0 auto; width:350px;">
+        @Html.EJS().DropDownTree("ddt").CssClass("custom").Placeholder("Select an employee").Width("350px").PopupHeight("250px").Fields(ViewBag.templateData).ItemTemplate("<div class=\"ename\">${name}</div>").FooterTemplate("<div class=\"footer\"><div class=\"footer-content\">Total number of employees: 10 </div></div>").Render()
+    </div>
+</div>
+<style>
+    .custom .footer {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 20px;
+        font-weight: bold;
+    }
+    .custom .e-ddt-footer{
+        border-top: 1px solid #e0e0e0;
+    }
+</style>
