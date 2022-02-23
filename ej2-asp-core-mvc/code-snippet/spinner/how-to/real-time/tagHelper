@@ -1,0 +1,37 @@
+<div id="container" style="position: relative;height: 300px;">
+    <ejs-kanban id="Kanban" keyField="Status" actionBegin="actionBegin" dataSource="@ViewBag.data" dataBound="onDataBound">
+        <e-kanban-columns>
+            <e-kanban-column headerText="To Do" keyField="Open"></e-kanban-column>
+            <e-kanban-column headerText="In Progress" keyField="InProgress"></e-kanban-column>
+            <e-kanban-column headerText="Testing" keyField="Testing"></e-kanban-column>
+            <e-kanban-column headerText="Done" keyField="Close"></e-kanban-column>
+        </e-kanban-columns>
+        <e-kanban-cardsettings contentField="Summary" headerField="Title"></e-kanban-cardsettings>
+        <e-kanban-swimlanesettings keyField="Assignee"></e-kanban-swimlanesettings>
+    </ejs-kanban>
+    </div>
+    <script>
+        var flag = true;
+        var spinTarget = document.getElementById('container');
+        ej.popups.createSpinner({
+            target: spinTarget
+        });
+        function onDataBound() {
+            if (flag) {
+                var ele = document.querySelectorAll(".e-icons.e-swimlane-row-expand");
+                for (var i = 0; i < ele.length; i++) {
+                    ele[i].click();
+                }
+                flag = false;
+            }
+        }
+        function actionBegin(args) {
+            if (args.requestType === "rowExpandCollapse") {
+                ej.popups.showSpinner(spinTarget);
+                setInterval(function () {
+                    //hideSpinner() method is used to hide the Spinner  
+                    ej.popups.hideSpinner(spinTarget);
+                }, 5000);
+            }
+        }
+    </script>
