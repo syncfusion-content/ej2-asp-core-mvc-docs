@@ -1,0 +1,22 @@
+@{
+    var nodataTemplate = "<span class='norecord'> NO DATA AVAILABLE</span>";
+}
+<div id='container' style="margin:0 auto; width:250px;">
+    <ejs-dropdowntree id="treedata" popupHeight="250px" placeholder="Select an employee" cssClass="custom" noRecordsTemplate="@nodataTemplate">
+        <e-dropdowntree-fields dataSource="ViewBag.localData" expanded="expanded" value="id" parentValue="pid" hasChildren="hasChild" text="name"></e-dropdowntree-fields>
+    </ejs-dropdowntree>
+</div>
+<style>
+    .custom .foot {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 20px;
+        font-weight: bold;
+    }
+    .custom .e-ddt-footer {
+        border-top: 1px solid #e0e0e0;
+    }
+</style>

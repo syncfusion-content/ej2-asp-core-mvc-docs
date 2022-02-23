@@ -1,0 +1,17 @@
+<div class="control-section">
+    <div style="margin: 0 auto; width:350px;">
+        @Html.EJS().DropDownTree("ddt").CssClass("custom").Placeholder("Select an employee").Width("350px").PopupHeight("250px").Fields(ViewBag.templateData).ItemTemplate("<div class=\"ename\">${name}</div>").HeaderTemplate("<div class=\"head\">Employee List</div>").Render()
+    </div>
+</div>
+<style>
+    .custom .head {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 20px;
+        font-weight: bold;
+        border-bottom: 1px solid #e0e0e0;
+    }
+</style>
