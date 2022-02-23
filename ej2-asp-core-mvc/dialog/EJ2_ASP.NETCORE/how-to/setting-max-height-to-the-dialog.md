@@ -1,10 +1,14 @@
 ---
-title: "Setting maximum height to the Dialog | Syncfusion"
-component: "Dialog"
-description: "This section explains how to set maximum height to the Dialog in ASP.NET Core Dialog"
+layout: post
+title: Setting Maximum Height to ##Platform_Name## Dialog Component
+description: Learn here all about setting maximum height to Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Dialog
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# Setting maximum height to the Dialog
+# Setting Maximum Height to the Dialog
 
 By default, the maxHeight for the Dialog is calculated based on the target. If the target is not specified externally, the Dialog consider the body as target and will calculate the maxHeight based on it. We have an option to set the maxHeight of the Dialog in the `beforeOpen` event.
 
