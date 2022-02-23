@@ -73,11 +73,10 @@ In this demo, the frozenColumns is set as ‘2’, and the frozenRows is set as 
 
 ## Limitations
 
-Freeze Panes feature is not compatible with all the features which are available in the spreadsheet and it has limited features support. Here, we have listed out the features which are not compatible with Freeze Panes feature.
+Freeze Panes feature is not compatible with all the features which are available in the spreadsheet. Below features are not compatible with Freeze Panes feature.
 
-* Show/hide rows and columns with freeze panes.
-* Filtering support with freeze panes.
 * Merging the cells between freeze and unfreeze area.
+* If images and charts are added inside the freeze area cells, their portion in the unfreeze area will not move when scrolling.
 
 ## See Also
 
