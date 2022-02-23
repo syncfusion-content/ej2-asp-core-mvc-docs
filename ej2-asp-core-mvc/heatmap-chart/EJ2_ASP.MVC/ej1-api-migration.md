@@ -15,7 +15,6 @@ This article describes the API migration process of heat map component from Esse
 
 ## Members
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -430,7 +429,6 @@ ViewBag.dataSource = new {
 
 ## Events
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>

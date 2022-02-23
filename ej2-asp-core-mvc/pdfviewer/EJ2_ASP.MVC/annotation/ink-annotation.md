@@ -13,7 +13,7 @@ documentation: ug
 
 The PDF Viewer control provides the options to add, edit, and delete the ink annotations.
 
-![InkAnnotation](../../images/ink_annotation.png)
+![InkAnnotation](../../pdfviewer/images/ink_annotation.png)
 
 ## Adding an ink annotation to the PDF document
 
@@ -23,7 +23,7 @@ The ink annotations can be added to the PDF document using the annotation toolba
 * Select the **Draw Ink** button in the annotation toolbar. It enables the ink annotation mode.
 * You can draw anything over the pages of the PDF document.
 
-![InkTool](../../images/ink_tool.png)
+![InkTool](../../pdfviewer/images/ink_tool.png)
 
 Refer to the following code sample to switch to the ink annotation mode.
 
@@ -49,16 +49,16 @@ The stroke color, thickness, and opacity of the ink annotation can be edited usi
 
 The stroke color of the annotation can be edited using the color palette provided in the Edit Stroke Color tool.
 
-![InkStrokeColor](../../images/ink_strokecolor.png)
+![InkStrokeColor](../../pdfviewer/images/ink_strokecolor.png)
 
 ### Editing thickness
 
 The thickness of the border of the annotation can be edited using the range slider provided in the Edit Thickness tool.
 
-![InkThickness](../../images/ink_thickness.png)
+![InkThickness](../../pdfviewer/images/ink_thickness.png)
 
 ### Editing opacity
 
 The opacity of the annotation can be edited using the range slider provided in the Edit Opacity tool.
 
-![InkOpacity](../../images/ink_opacity.png)
+![InkOpacity](../../pdfviewer/images/ink_opacity.png)

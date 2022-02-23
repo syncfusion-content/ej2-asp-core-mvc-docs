@@ -331,7 +331,7 @@ When the right edge of the header cell is tapped, a floating handler will be vis
 
 The following screenshot represents the column resizing in touch device.
 
-![Touch Interaction](../images/column-resizing.png)
+![Touch Interaction](images/column-resizing.png)
 
 ## Column template
 
