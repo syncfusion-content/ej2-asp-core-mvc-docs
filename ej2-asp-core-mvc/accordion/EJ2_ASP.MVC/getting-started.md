@@ -46,7 +46,7 @@ documentation: ug
 
 You can bind any data in Accordion items, by simply using the content template property in ASP.NET Accordion. Accordion is already provided with the content template support and hence we can utilize this support to load the other HTML elements or as per your requirement
 
-In the below demo, the Accordion items are given with [chart](../../chart), [grid](../../grid), [calender](../../calendar) as their content using the content template.
+In the below demo, the Accordion items are given with [chart](../chart/getting-started), [grid](../grid/getting-started-mvc), [calender](../calendar/getting-started) as their content using the content template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -11,9 +11,9 @@ documentation: ug
 
 # Load accordion with DataSource
 
-You can bind any data object to Accordion items, by mapping it to [header](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.AccordionAccordionItem~Header.html) and [content](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.AccordionAccordionItem~Content.html)&nbsp; property.
+You can bind any data object to Accordion items, by mapping it to [header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.AccordionAccordionItem.html#Syncfusion_EJ2_Navigations_AccordionAccordionItem_Header) and [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.AccordionAccordionItem.html#Syncfusion_EJ2_Navigations_AccordionAccordionItem_Content)&nbsp; property.
 
-In the below demo, Data is fetched from an `OData` service using `DataManager`. The result data is formatted as a JSON object with `header` and `content` fields, which is set to items property of Accordion.
+In the below demo, Data is fetched from an `OData` service using `DataManager`. The result data is formatted as a JSON object with [header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.AccordionAccordionItem.html#Syncfusion_EJ2_Navigations_AccordionAccordionItem_Header) and [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.AccordionAccordionItem.html#Syncfusion_EJ2_Navigations_AccordionAccordionItem_Content) fields, which is set to items property of Accordion.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
