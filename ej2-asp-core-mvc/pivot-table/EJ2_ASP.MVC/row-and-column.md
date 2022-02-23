@@ -758,5 +758,4 @@ The event `CellClick` triggers while clicking a cell in the pivot table. For ins
 
 ## See Also
 
-* [Show/hide tooltip](./how-to/show-hide-tool-tip)
-* [Perform cell selection and get selected cells information](./how-to/perform-cell-selection-and-get-selected-cells-information)
+* [Show/hide tooltip](./tool-tip)
