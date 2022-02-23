@@ -141,10 +141,32 @@ Markers can be added to the layers of Bing Maps by setting the corresponding loc
 {% endtabs %}
 {% endif %}
 
-
-
->Specify Bing Maps key in the `Key` property.
+> Specify Bing Maps key in the `Key` property.
 
 ## Sublayer
 
-Any GeoJSON shape can be rendered as a sublayer on top of the Bing Maps layer for highlighting a particular continent or country in Bing Maps by adding another layer and specifying the [`type`](../api/maps/layerSettingsModel/#type) property of Maps layer to **SubLayer**.
+Any GeoJSON shape can be rendered as a sublayer on top of the Bing Maps layer for highlighting a particular continent or country in Bing Maps by adding another layer and specifying the `Type` property of Maps layer to **SubLayer**. The key for the Bing Maps must be set in the `Key` property.
+
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/bing/bingsublayer/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bingsublayer.cs" %}
+{% include code-snippet/maps/bing/bingsublayer/bingsublayer.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/bing/bingsublayer/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Bingsublayer.cs" %}
+{% include code-snippet/maps/bing/bingsublayer/bingsublayer.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
