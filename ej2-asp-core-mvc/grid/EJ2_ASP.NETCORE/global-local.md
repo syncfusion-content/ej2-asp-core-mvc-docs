@@ -8,6 +8,16 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Globalization in ASP.NET MVC Grid control
+
+## Localization
+
+The [Localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization/) library allows you to localize default text content of the Grid. The grid component has static text on some features (like group drop area text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [Locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html?&_ga=2.266005519.1841876099.1644811631-1223836246.1561029397#Syncfusion_EJ2_Grids_Grid_Locale) value and translation object.
+
+The following list of properties and its values are used in the grid.
+
+|Locale keywords|Text|
+|----|----|
 EmptyRecord |No records to display.
 True |true
 False |false

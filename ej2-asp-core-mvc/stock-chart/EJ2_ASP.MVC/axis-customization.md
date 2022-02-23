@@ -15,9 +15,9 @@ documentation: ug
 
 ## Axis Crossing
 
-An axis can be positioned in the chart area using [`CrossesAt`] (https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesAt) and [`CrossesInAxis`] (https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesInAxis) properties. The [`CrossesAt`] (https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesAt)
+An axis can be positioned in the chart area using [CrossesAt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesAt) and [CrossesInAxis](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesInAxis) properties. The [CrossesAt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesAt)
 property specifies the values (datetime, numeric, or logarithmic) at which the axis line has to be intersected
-with the vertical axis or vice-versa, and the [`CrossesInAxis`] (https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesInAxis) property specifies the axis name with which the
+with the vertical axis or vice-versa, and the [CrossesInAxis](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesInAxis) property specifies the axis name with which the
 axis line has to be crossed.
 
 {% if page.publishingplatform == "aspnet-core" %}

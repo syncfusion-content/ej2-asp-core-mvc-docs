@@ -25,7 +25,7 @@ The following steps are used to create ASP.NET MVC Application.
 
 **Step 1:** Open the Visual Studio and click the **File** menu and select **New -> Project** option.
 
-![Default Template](../images/default-template.png)
+![Default Template](../linear-gauge/images/default-template.png)
 
 **Step 2:** Select **ASP.NET Web Application  (.NET Framework)** templates in visual studio 2019 and click **Next**.
 

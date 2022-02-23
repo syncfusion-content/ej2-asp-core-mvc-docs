@@ -15,8 +15,6 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Accessibility
 
-<!-- markdownlint-disable MD033 -->
-<!-- markdownlint-disable MD038 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Keyboard Navigation | **Property:** AllowKeyboardNavigation <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AllowKeyboardNavigation(true).Render();}` | No separate Property for enable/disable keyboard navigation. Its enabled by default. |
@@ -29,7 +27,6 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Toolbar
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | showToolbar | **Property:**  ShowToolbar<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowToolbar(true).Render();}` | **Property:** Enable <br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).Height("720px").ToolbarSettings(e => e.Enable(true)).Render()` |
@@ -48,7 +45,6 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Custom Formats and Fonts
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Format | **Property:**  Format <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Format(format).Render();}` | **Property:** Format <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").Format(t=>t.Width("70px").Default("Paragraph").Types("items")).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
@@ -58,7 +54,6 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Custom Font Colors
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Font Color | **Property:** ColorCode <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ColorCode(colorCode).Render();}` | **Property:** FontColor<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").FontColor(t=>t.columns("10").default("'#fff).modeSwitcher(false)).ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
@@ -69,7 +64,6 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Link
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Link | Not Applicable | **Property:** CreateLink<br/> <br/>` viewBag.item = new[] {"CreateLink"}`<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
@@ -77,7 +71,6 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Image
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Image | Not Applicable | **Property:** Image <br/> <br/>` viewBag.item = new[] {"Image"}` <br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e =>  e.Items((object)ViewBag.items)).Render()` |
@@ -86,7 +79,6 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Table
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Table | Not Applicable | **Property:** CreateTable<br/> <br/>` viewBag.item = new[] {"CreateTable"}` <br/> <br/>`@Html.EJS().RichTextEditor("table").ToolbarSettings(e => e.Items((object)ViewBag.items)).Render()` |
@@ -99,7 +91,6 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Counts
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Character Count | **Property:** ShowCharCount<br/><br/>`@{Html.EJ().RichTextEditor("rteSample").ShowCharCount(true).Render();}` | **Property:** ShowCharCount<br/> <br/>`@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).ShowCharCount(true).Render()` |
@@ -108,7 +99,6 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## IFrame
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Enable Iframe | By Default, enabled | **Property:** IframeSettings<br/> <br/>`@Html.EJS().RichTextEditor("iframe").Value((string)ViewBag.value).IframeSettings(iframeSettings => iframeSettings.Enable(true)).Render()` |
@@ -117,14 +107,12 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Editor Mode
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Editor Mode | Not Applicable | **Property:** EditorMode <br/> <br/>1.HTML<br/> <br/> 2.Markdown <br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).EditorMode(EditorMode.Html).Render()` |
 
 ## Undo
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Undo Stack Limit | **Property:** UndoStackLimit <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").UndoStackLimit(50).Render();}` | **Property:** UndoRedoSteps <br/> <br/>`@Html.EJS().RichTextEditor("types").Value((string)ViewBag.value).UndoRedoSteps(30).Render()` |
@@ -132,7 +120,6 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Common
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Allow Editing | **Property:** AllowEditing <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AllowEditing(true).Render();}` | **Property:** Readonly<br/> <br/>`@Html.EJS().RichTextEditor("default").Readonly(true).Render()` |
@@ -197,7 +184,6 @@ This article describes the API migration process of Rich Text Editor control fro
 
 ## Execute Command
 
-<!-- markdownlint-disable MD033 -->
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |
 |------------|-------------------------|-------------------------|
 | Execute Command | **Method:**  executeCommand(cmdName, args, [textnodeType]) <br/> <br/>`var rteObj = $("#rte ").data("ejRTE "); `<br/> <br/>` rteObj.executeCommand("bold", true)` | **Method:** executeCommand(cmdName, value) <br/> <br/>`var rteObj = document.getElementById("richtexteditor").ej2_Instances[0];`<br/> <br/>`rteObj. executeCommand("Bold" );` |

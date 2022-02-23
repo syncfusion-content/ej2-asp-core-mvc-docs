@@ -28,13 +28,13 @@ The following steps are used to create an ASP.NET MVC application.
 **Step 1:** Create ASP.NET MVC web application with default template project in Visual Studio.
 
 * Create a new project
-![Create Project](../images/create_new_project.png)
+![Create Project](images/create_new_project.png)
 
 * Configure the project
-![Configure Project](../images/configure_new_project.png)
+![Configure Project](images/configure_new_project.png)
 
 * Create ASP.NET MVC web application
-![Default Template](../images/create_mvc_web_app.png)
+![Default Template](images/create_mvc_web_app.png)
 
 **Step 2:** After creating the project, add the following dependencies to your application by using `NuGet Package Manager`.
 
@@ -43,15 +43,15 @@ The following steps are used to create an ASP.NET MVC application.
 
 Open the `NuGet` package manager.
 
-![Add NuGet](../images/add_nuget_packages.png)
+![Add NuGet](images/add_nuget_packages.png)
 
 Install the **Syncfusion.EJ2.PdfViewer.AspNet.Mvc5** package to the application.
 
-![NuGet Demo2](../images/nuget_ej2_pdfviewer_aspnet_mvc5.png)
+![NuGet Demo2](images/nuget_ej2_pdfviewer_aspnet_mvc5.png)
 
 Install the **Syncfusion.EJ2.MVC5** package to the application.
 
-![NuGet Demo1](../images/nuget_ej2_mvc5.png)
+![NuGet Demo1](images/nuget_ej2_mvc5.png)
 
 **Step 3 :** Add the following assemblies in `Views\Shared\_Layout.cshtml` and `Views\Home\Index.cshtml` view pages.
 
