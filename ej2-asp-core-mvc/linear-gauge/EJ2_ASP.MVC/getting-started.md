@@ -25,27 +25,27 @@ The following steps are used to create ASP.NET MVC Application.
 
 **Step 1:** Open the Visual Studio and click the **File** menu and select **New -> Project** option.
 
-![Default Template](../linear-gauge/images/default-template.png)
+![Default Template](images/default-template.png)
 
 **Step 2:** Select **ASP.NET Web Application  (.NET Framework)** templates in visual studio 2019 and click **Next**.
 
-![Select the Asp.Net MVC application](../linear-gauge/images/project-selecctmvc.png)
+![Select the Asp.Net MVC application](images/project-selecctmvc.png)
 
 **Step 3:** Change the application name and location of the application if necessary then click **Create**.
 
-![Changing the application name](../linear-gauge/images/application-namemvc.png)
+![Changing the application name](images/application-namemvc.png)
 
 **Step 4:** Choose **MVC** and then click **Create**. Now, the MVC web application project is created with default ASP.NET MVC template.
 
-![Selecting the MVC](../linear-gauge/images/choose-mvc.png)
+![Selecting the MVC](images/choose-mvc.png)
 
 **Step 5:** Add the [`Syncfusion.EJ2.MVC4`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages…**.
 
-![Adding the nuget to the application](../images/solution-Explorer.png)
+![Adding the nuget to the application](images/solution-Explorer.png)
 
 **Step 6:** Search the `Syncfusion EJ2 MVC5` keyword in the Browse tab and install **Syncfusion.EJ2.MVC5** NuGet package in the application.
 
-![Nuget Demo](../linear-gauge/images/nuget-mvc.png)
+![Nuget Demo](images/nuget-mvc.png)
 
 After installation complete, this will be included in the project. You can refer it from the Project Assembly Reference.
 

@@ -82,4 +82,4 @@ In the below code sample, we replicate the older theme style.
 
 
 
-![output](images/row-height.png)
+![output](../images/row-height.png)
