@@ -26,8 +26,11 @@ The template expression should be provided inside the ${...} interpolation synta
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/itemTemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="itemTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/itemTemplate/itemTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/itemTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -37,8 +40,11 @@ The template expression should be provided inside the ${...} interpolation synta
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/itemTemplate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="itemTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/itemTemplate/itemTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/itemTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -59,8 +65,11 @@ In the following sample, the header is customized with the custom element.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/headerTemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="headerTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/headerTemplate/headerTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/headerTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,8 +79,11 @@ In the following sample, the header is customized with the custom element.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/headerTemplate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="headerTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/headerTemplate/headerTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/headerTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -92,8 +104,11 @@ In the following sample, the footer element displays the total number of employe
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/footerTemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="footerTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/footerTemplate/footerTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/footerTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -103,8 +118,11 @@ In the following sample, the footer element displays the total number of employe
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/footerTemplate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="footerTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/footerTemplate/footerTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/footerTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -125,8 +143,11 @@ In the following sample, popup list content displays the notification of no data
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/noRecordsTemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="noRecordsTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/noRecordsTemplate/noRecordsTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/noRecordsTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -136,8 +157,11 @@ In the following sample, popup list content displays the notification of no data
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/noRecordsTemplate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="noRecordsTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/noRecordsTemplate/noRecordsTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/noRecordsTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -158,8 +182,11 @@ In the following sample, when the data fetch request fails, the Dropdown Tree di
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/actionFailureTemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="actionFailureTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/actionFailureTemplate/actionFailureTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/actionFailureTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -169,8 +196,11 @@ In the following sample, when the data fetch request fails, the Dropdown Tree di
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/actionFailureTemplate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="actionFailureTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/actionFailureTemplate/actionFailureTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/actionFailureTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -194,8 +224,11 @@ In the following sample, the Dropdown Tree is rendered with default value of the
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/customTemplate_mode/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="customTemplatemode.cs" %}
 {% include code-snippet/dropdowntree/templates/customTemplate_mode/customTemplatemode.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/customTemplate_mode/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -205,8 +238,11 @@ In the following sample, the Dropdown Tree is rendered with default value of the
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/customTemplate_mode/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="customTemplatemode.cs" %}
 {% include code-snippet/dropdowntree/templates/customTemplate_mode/customTemplatemode.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/customTemplate_mode/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -223,8 +259,11 @@ In the following sample, the Dropdown Tree is rendered with custom value of the 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/customTemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="customTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/customTemplate/customTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/customTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -234,8 +273,11 @@ In the following sample, the Dropdown Tree is rendered with custom value of the 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/templates/customTemplate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
+{% highlight c# tabtitle="customTemplate.cs" %}
 {% include code-snippet/dropdowntree/templates/customTemplate/customTemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="DropDownTreeTemplate.cs" %}
+{% include code-snippet/dropdowntree/templates/customTemplate/DropDownTreeTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
