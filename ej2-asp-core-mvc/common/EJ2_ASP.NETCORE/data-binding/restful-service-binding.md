@@ -50,7 +50,7 @@ Now, click on **Update Database**.
 
 ## Create OData service project
 
-Open Visual Studio 2019 and create an empty ASP.NET Core Web Application and name it as ODataServiceProject. After creating the application, install **Microsoft.AspNetCore.OData** package by running the following command in the Package Manager Console.
+Open Visual Studio and create an empty ASP.NET Core Web Application and name it as ODataServiceProject. After creating the application, install **Microsoft.AspNetCore.OData** package by running the following command in the Package Manager Console.
 * **Install-Package Microsoft.AspNetCore.OData -Version 8.0.7**: This package contains everything you need to create OData v4.0 endpoints using ASP.NET Core MVC and to support OData query syntax for your web APIs.
 
 ### Generate DbContext and model class from the database
@@ -59,8 +59,8 @@ Now, we are going to scaffold **DbContext** and **model classes** from the exist
 
 Run the following commands in the **Package Manager Console**.
 
-* **Install-Package Microsoft.EntityFrameworkCore.Tools -Version 3.0.0**: This package creates database context and model classes from the database.
-* **Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 3.0.0**: The database provider that allows Entity Framework Core to work with SQL Server.
+* **Install-Package Microsoft.EntityFrameworkCore.Tools -Version 6.0.2**: This package creates database context and model classes from the database.
+* **Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 6.0.2**: The database provider that allows Entity Framework Core to work with SQL Server.
 
 Once the above packages are installed, we can scaffold DbContext and Model classes. Run the following command in the **Package Manager Console**.
 
