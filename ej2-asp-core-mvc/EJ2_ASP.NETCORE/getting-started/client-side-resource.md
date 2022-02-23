@@ -185,10 +185,9 @@ gulp.task("copy-client-resource", function (done) {
 6. Build the ASP.NET Core web application and notice that a new folder named “**Syncfusion**” is created in “**wwwroot**” folder.
 ![Copied to wwwroot](images/copied-to-wwwroot.png)
 7. Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion EJ2 Calendar has been loaded for example.  
+
 ```html
 <head>
-….
-….
         <!-- Syncfusion Essential JS 2 Styles -->
         <link rel="stylesheet" href="~/syncfusion/ej2-calendars/styles/calendar/material.css" />
         <link rel="stylesheet" href="~/syncfusion/ej2-base/styles/material.css" />

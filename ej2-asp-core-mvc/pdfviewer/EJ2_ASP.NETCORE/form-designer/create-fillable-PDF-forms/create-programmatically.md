@@ -13,14 +13,14 @@ documentation: ug
 
 The PDF Viewer control provides the option to add, edit and delete the Form Fields. The Form Fields type supported by the PDF Viewer Control are:
 
-    * Textbox
-    * Password
-    * CheckBox
-    * RadioButton
-    * ListBox
-    * DropDown
-    * SignatureField
-    * InitialField
+* Textbox
+* Password
+* CheckBox
+* RadioButton
+* ListBox
+* DropDown
+* SignatureField
+* InitialField
 
 ## Add a form field to PDF document programmatically
 
