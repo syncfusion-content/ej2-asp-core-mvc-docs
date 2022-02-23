@@ -23,7 +23,7 @@ The Free text annotations can be added to the PDF document using the annotation 
 
 In the pan mode, if the free text annotation mode is entered, the PDF Viewer control will switch to text select mode.
 
-![FreeTextAnnotation in ASP.NET MVC PDF Viewer](../../pdfviewer/images/freetext_tool.png)
+![FreeTextAnnotation in ASP.NET MVC PDF Viewer](../images/freetext_tool.png)
 
 Refer to the following code sample to switch to the Free Text annotation mode.
 
@@ -49,55 +49,55 @@ The font family, font size, font styles, font color, text alignment, fill color,
 
 The font family of the annotation can be edited by selecting the desired font in the Font Family tool.
 
-![FontFamily](../../pdfviewer/images/fontfamily.png)
+![FontFamily](../images/fontfamily.png)
 
 ### Editing font size
 
 The font size of the annotation can be edited by selecting the desired size in the Font Size tool.
 
-![FontSize](../../pdfviewer/images/fontsize.png)
+![FontSize](../images/fontsize.png)
 
 ### Editing font color
 
 The font color of the annotation can be edited using the color palette provided in the Font Color tool.
 
-![FontColor](../../pdfviewer/images/fontcolor.png)
+![FontColor](../images/fontcolor.png)
 
 ### Editing the text alignment
 
 The text in the annotation can be aligned by selecting the desired styles in the drop-down pop-up in the Text Align tool.
 
-![FreeTextAnnotation](../../pdfviewer/images/textalign.png)
+![FreeTextAnnotation](../images/textalign.png)
 
 ### Editing text styles
 
 The style of the text in the annotation can be edited by selecting the desired styles in the drop-down pop-up in the Font Style tool.
 
-![FontStyle](../../pdfviewer/images/fontstyle.png)
+![FontStyle](../images/fontstyle.png)
 
 ### Editing fill color
 
 The fill color of the annotation can be edited using the color palette provided in the Edit Color tool.
 
-![FillColor](../../pdfviewer/images/fillcolor.png)
+![FillColor](../images/fillcolor.png)
 
 ### Editing stroke color
 
 The stroke color of the annotation can be edited using the color palette provided in the Edit Stroke Color tool.
 
-![StrokeColor](../../pdfviewer/images/fontstroke.png)
+![StrokeColor](../images/fontstroke.png)
 
 ### Editing thickness
 
 The border thickness of the annotation can be edited using the range slider provided in the Edit Thickness tool.
 
-![FontThickness](../../pdfviewer/images/fontthickness.png)
+![FontThickness](../images/fontthickness.png)
 
 ### Editing opacity
 
 The opacity of the annotation can be edited using the range slider provided in the Edit Opacity tool.
 
-![FontOpacity](../../pdfviewer/images/fontopacity.png)
+![FontOpacity](../images/fontopacity.png)
 
 ## Setting default properties during control initialization
 

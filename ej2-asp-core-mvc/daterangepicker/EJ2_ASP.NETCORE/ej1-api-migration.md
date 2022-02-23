@@ -15,7 +15,6 @@ This article describes the API migration process of DateRangePicker component fr
 
 ## Date selection
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -55,7 +54,6 @@ Setting the value
 
 ## Date format
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -89,7 +87,6 @@ Display date format
 
 ## Date range
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -333,7 +330,6 @@ Set date range
 
 ## Disabled dates
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -370,7 +366,6 @@ Disabled dates
 
 ## Customization
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -650,7 +645,6 @@ Focus out method
 
 ## Accessibility
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -679,7 +673,6 @@ Enable RTL
 
 ## Persistence
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -713,7 +706,6 @@ Enable Persistence
 
 ## Common
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -984,7 +976,6 @@ Separator
 
 ## Globalization
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -1034,7 +1025,6 @@ First day of week
 
 ## Strict mode
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -1063,7 +1053,6 @@ Strict mode
 
 ## Open and Close
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -1205,7 +1194,6 @@ Show
 
 ## View navigation
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
