@@ -3,15 +3,14 @@ layout: post
 title: Getting Started with ##Platform_Name## Accordion Component
 description: Checkout and learn about getting started with ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Getting Started Asp Mvc
+control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started
 
- This section briefly explains about how to include a simple Accordion in your ASP.NET MVC application. You can refer [ASP.NET MVC Getting Started documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/) page for introduction part of the system requirements and configure the common specifications.
+ This section briefly explains about how to include a simple Accordion in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](https://helpej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017) page for introduction part of the system requirements and configure the common specifications.
 
 ## Adding component to the Application
 
@@ -40,17 +39,13 @@ documentation: ug
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![Default accordion](../../accordion/images/accordion.PNG)
+![Default accordion](images/accordion.PNG)
 
 ## Render the Accordion using content template
 
 You can bind any data in Accordion items, by simply using the content template property in ASP.NET Accordion. Accordion is already provided with the content template support and hence we can utilize this support to load the other HTML elements or as per your requirement
 
-In the below demo, the Accordion items are given with [chart](../../chart), [grid](../../grid), [calender](../../calendar) as their content using the content template.
+In the below demo, the Accordion items are given with [chart](../chart/getting-started), [grid](../grid/getting-started-core), [calender](../calendar/getting-started) as their content using the content template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -75,10 +70,6 @@ In the below demo, the Accordion items are given with [chart](../../chart), [gri
 {% endtabs %}
 {% endif %}
 
+![content template](images/contenttemplate.PNG)
 
-
-Output be like the below.
-
-![content template](../../accordion/images/contenttemplate.PNG)
-
-You can also render accordion without using `ContentTemplate` which can be referred [here](../../accordion/how-to/set-the-nested-accordion).
+You can also render accordion without using `contentTemplate` which can be referred [here](../../accordion/how-to/set-the-nested-accordion).
