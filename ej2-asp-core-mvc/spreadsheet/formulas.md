@@ -139,7 +139,7 @@ The following are the list of formulas supported in spreadsheet,
 | INT | Rounds a number down to the nearest integer. |
 | INTERCEPT | Calculates the point of the Y-intercept line via linear regression. |
 | ISNUMBER | Returns true when the value parses as a numeric value. |
-| LARGE | Returns the k-th largest value in a given array. |
+| LARGE | Returns the `k-th` largest value in a given array. |
 | LEN | Returns a number of characters in a given string. |
 | LN | Returns the natural logarithm of a number. |
 | LOG | Returns the logarithm of a number to the base that you specify. |
@@ -162,7 +162,7 @@ The following are the list of formulas supported in spreadsheet,
 | ROUND | Rounds a number to the specified number of digits. |
 | ROUNDUP | Rounds a number up, away from zero. |
 | SECOND | Returns the number of seconds in a specified time string. |
-| SMALL | Returns the k-th smallest value in a given array. |
+| SMALL | Returns the `k-th` smallest value in a given array. |
 | SLOPE | Returns the slope of the line from linear regression of the data points. |
 | SORT | Sorts the contents of a column, range, or array in ascending or descending order. |
 | SUBTOTAL | Returns subtotal for a range using the given function number. |

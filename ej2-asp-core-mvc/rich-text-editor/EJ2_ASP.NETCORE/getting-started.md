@@ -184,6 +184,14 @@ To fetch the Rich Text Editor's text content, use `getText` method of Rich Text 
   var rteValue = this.rteObj.getText();
 ```
 
+## Retrieve the number of characters
+
+To get the maximum number of characters in the Rich Text Editor's content, use `getCharCount`
+
+```typescript
+  let rteCount = this.rteObj.getCharCount();
+```
+
 The final output will be displayed as follows
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -214,7 +222,8 @@ The final output will be displayed as follows
 > You can refer to our [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Rich Text Editor example](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/DefaultFunctionalities#/material) that shows how to render the rich text editor tools.
 
 ## See Also
-
+* [How to insert Emoticons](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/InsertEmoticons#/material)
+* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/Forums#/material)
 * [How to change the editor type](./formation/)
 * [How to render the iframe](./iframe/)
 * [How to render the toolbar in inline mode](./inline-mode/)

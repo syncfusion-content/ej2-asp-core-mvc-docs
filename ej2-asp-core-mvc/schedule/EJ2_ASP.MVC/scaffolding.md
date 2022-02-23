@@ -25,25 +25,25 @@ Let's start with the steps on how to scaffold the ASP.NET MVC Scheduler into you
 
 * Right-click on the **Controllers** folder in the Solution Explorer and select **Add → New Scaffolded Item** from the menu options.
 
-![Solution explorer showing New Scaffold option](../images/default-template.png)
+![Solution explorer showing New Scaffold option](images/default-template.png)
 
 * You will see the `Add Scaffold` dialog. Select the **Syncfusion ASP.NET MVC UI Scaffolder** and click `Add` button, which will display the Syncfusion UI Scaffolding dialog.
 
-![Syncfusion ASPNET MVC UI scaffolder](../images/ui-scaffolder.png)
+![Syncfusion ASPNET MVC UI scaffolder](images/ui-scaffolder.png)
 
 * Choose the Scheduler control to perform Scaffolding with it and click **Next**.
 
-![Syncfusion UI scaffolding dialog showing control selection](../images/control-template.png)
+![Syncfusion UI scaffolding dialog showing control selection](images/control-template.png)
 
 * `Syncfusion UI Scaffolding for Scheduler` dialog will be opened, from which you are opted to choose the Model and Data Context options. Enter the **Controller** and **View** names as per the application requirement. Once the required **Model Class** and its relevant **Data Context Class** are chosen, now click the **Next** button, which offers the Scheduler functionalities to be configured before scaffolding.
 
-![Syncfusion UI scaffolding dialog showing model and data context options](../images/feature.png)
+![Syncfusion UI scaffolding dialog showing model and data context options](images/feature.png)
 
 > All the model types present in the current application will be listed in the **Model Class** DropDownList. Also, from the available **Data Context Class**, choose the appropriate Entity Framework Data Model.
 
 * Now, select the required Scheduler options (select the corresponding **Scheduler Views** and **Properties** from the options) and Click the **Add** button. Use the **Back Arrow**, if you need to modify the already chosen Controller or View name, or to change the **selected Model Class** and **Data Context Class**.
 
-![Syncfusion UI scaffolding dialog showing scheduler features](../images/scaffold-template.png)
+![Syncfusion UI scaffolding dialog showing scheduler features](images/scaffold-template.png)
 
 * Once the required Scheduler options are configured through the **Scheduler UI Scaffolding**, the respective Scheduler **Controller** and the corresponding **View** files are now generated with the appropriate Scheduler code snippet.
 

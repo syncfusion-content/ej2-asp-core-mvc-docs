@@ -1,0 +1,5 @@
+<div class="control-section">
+    <div style="margin: 0 auto; width:350px;">
+        @Html.EJS().DropDownTree("ddtremote").Placeholder("Select a name").PopupHeight("200px").ActionFailureTemplate("<span class='action-failure'> Data fetch request fails</span>").Fields(ViewBag.remoteFields).Render()
+    </div>
+</div>

@@ -147,18 +147,15 @@ Install required Syncfusion EJ2 Component packages as mentioned in “[**Install
 ![Install NuGet Packages](images/install-nuGet-package.png)     
 Open up your "**Startup.cs**" file and edit your Configure function to looks like the below code snippet.
 ```js
-
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
     if (env.IsDevelopment())
     {
         app.UseDeveloperExceptionPage();
     }
-
     app.UseDefaultFiles();
     app.UseStaticFiles();
 }
-
 ```
 Restart Visual Studio for the red squiggly lines below "**UseDefaultFiles**" and "**UseStaticFiles**" to disappear.
 3. Open the Source Explorer and right click on the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
@@ -166,14 +163,10 @@ Restart Visual Studio for the red squiggly lines below "**UseDefaultFiles**" and
 ![Add gulpjs file](images/add-gulpjs.png)
 5. Copy the following code snippet and paste it in gulpfile.js for automatically copying the script and styles from “**node_modules**” to “**wwwroot**” while building the web application. 
 ```js
-
 /// <binding BeforeBuild='copy-client-resource'/>
-
 // nodejs requiring statement for importing and using the package in this js file
 var gulp = require('gulp');
 var glob = require('glob');
-
-
 // gulp task for copying file form “node_modules” to “wwwroot” directory
 gulp.task("copy-client-resource", function (done) {
     let packagePath = './node_modules/@syncfusion/';
@@ -192,21 +185,15 @@ gulp.task("copy-client-resource", function (done) {
 6. Build the ASP.NET Core web application and notice that a new folder named “**Syncfusion**” is created in “**wwwroot**” folder.
 ![Copied to wwwroot](images/copied-to-wwwroot.png)
 7. Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion EJ2 Calendar has been loaded for example.  
+
 ```html
 <head>
-
-
-….
-
-….
         <!-- Syncfusion Essential JS 2 Styles -->
         <link rel="stylesheet" href="~/syncfusion/ej2-calendars/styles/calendar/material.css" />
         <link rel="stylesheet" href="~/syncfusion/ej2-base/styles/material.css" />
         <link rel="stylesheet" href="~/syncfusion/ej2-buttons/styles/button/material.css" />
         <link rel="stylesheet" href="~/syncfusion/ej2-popups/styles/popup/material.css" />
         <link rel="stylesheet" href="~/syncfusion/ej2-lists/styles/list-view/material.css" />
-
-
         <!-- Syncfusion Essential JS 2 Scripts -->
         <script src="~/syncfusion/ej2-base/ej2-base.min.js"></script>
         <script src="~/syncfusion/ej2-buttons/ej2-buttons.min.js"></script>
@@ -236,11 +223,8 @@ The required script and style files could be downloaded either form npm packages
 #### From NPM packages
 
 1. Run the below command from the machine which has internet connection to install the `@syncfusion/ej2` package.
-
    ```sh
-
    npm i @syncfusion/ej2 
-
    ```
 2. Navigate to the `./node_modules/@syncfusion/ej2/dist/` then copy the `ej2.min.js` file to your desired location. 
 

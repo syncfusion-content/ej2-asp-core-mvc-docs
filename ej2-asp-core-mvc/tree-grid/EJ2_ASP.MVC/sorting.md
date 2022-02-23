@@ -158,8 +158,6 @@ When you tap the treegrid header on touchscreen devices, the selected column hea
 
 The following screenshot shows treegrid touch sorting.
 
-<!-- markdownlint-disable MD033 -->
-<img src="../images/touch-sorting.jpg" alt="Touch interaction" style="width:320px;height: 620px">
-<!-- markdownlint-enable MD033 -->
+![Touch interaction](images/touch-sorting.jpg)
 
 > You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.

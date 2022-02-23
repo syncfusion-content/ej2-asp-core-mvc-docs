@@ -30,9 +30,7 @@ This article provides a step-by-step instruction for building ASP.NET Core web a
 3. Run the following command in the terminal to create a new ASP.NET Core web application. 
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}
-
 dotnet new webapp -o GettingStartedUsingVsCode
-
 {% endhighlight %}
 {% endtabs %}
 The dotnet new command creates a new Razor Pages project in the GettingStartedUsingVsCode folder. Please refer to this [topic](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=net60) for more information about .NET CLI commands.

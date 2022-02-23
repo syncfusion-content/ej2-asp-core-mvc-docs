@@ -145,10 +145,10 @@ The following code example illustrates how to specify the scroll limit.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-<% include code-snippet/diagram/scrollsettings/default/tagHelper %>
+{% include code-snippet/diagram/scrollsettings/default/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-<% include code-snippet/diagram/scrollsettings/default/default.cs %>
+{% include code-snippet/diagram/scrollsettings/default/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -156,10 +156,10 @@ The following code example illustrates how to specify the scroll limit.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-<% include code-snippet/diagram/scrollsettings/default/razor %>
+{% include code-snippet/diagram/scrollsettings/default/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-<% include code-snippet/diagram/scrollsettings/default/default.cs %>
+{% include code-snippet/diagram/scrollsettings/default/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -176,10 +176,10 @@ The following code example illustrates how to set scroll padding to diagram regi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-<% include code-snippet/diagram/scrollsettings/padding/tagHelper %>
+{% include code-snippet/diagram/scrollsettings/padding/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-<% include code-snippet/diagram/scrollsettings/padding/padding.cs %>
+{% include code-snippet/diagram/scrollsettings/padding/padding.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -187,10 +187,10 @@ The following code example illustrates how to set scroll padding to diagram regi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-<% include code-snippet/diagram/scrollsettings/padding/razor %>
+{% include code-snippet/diagram/scrollsettings/padding/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-<% include code-snippet/diagram/scrollsettings/padding/padding.cs %>
+{% include code-snippet/diagram/scrollsettings/padding/padding.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

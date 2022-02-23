@@ -1,0 +1,6 @@
+@using Syncfusion.EJ2.DropDowns
+<div class="control-section">
+    <div style="margin: 0 auto; width:350px;">
+        @Html.EJS().DropDownTree("ddt").Placeholder("Select an employee").Mode(Mode.Custom).CustomTemplate("${value.length} item(s) selected").ShowCheckBox(true).PopupHeight("200px").Fields(ViewBag.templateData).Render()
+    </div>
+</div>

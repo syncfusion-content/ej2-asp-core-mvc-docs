@@ -1,0 +1,10 @@
+@{
+    var actionFailureTemplate = "<span class='action-failure'> Data fetch request fails</span>";
+}
+<div id='container' style="margin:0 auto; width:250px;">
+    <ejs-dropdowntree id="tree" popupHeight="200px" placeholder="Select a Name" actionFailureTemplate="@actionFailureTemplate">
+        <e-dropdowntree-fields child="ViewBag.child" query="new ej.data.Query().from('Employees').select('EmployeeID,FirstName,Title').take(5)" value="EmployeeID" text="FirstName" hasChildren="EmployeeID">
+            <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svs" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
+        </e-dropdowntree-fields>
+    </ejs-dropdowntree>
+</div>

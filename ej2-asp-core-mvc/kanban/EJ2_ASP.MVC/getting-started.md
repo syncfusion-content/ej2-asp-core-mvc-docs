@@ -150,3 +150,7 @@ Output be like the below.
 Output be like the below.
 
 ![kanban](./images/enable-swimlane.PNG)
+
+## See Also
+
+* [Real time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
