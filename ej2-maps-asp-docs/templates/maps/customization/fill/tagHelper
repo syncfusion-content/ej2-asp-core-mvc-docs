@@ -1,0 +1,18 @@
+@{
+    var shape = new
+    {
+        fill = "#33CCFF",
+        border = new
+        {
+            color = "#FFFFFF",
+            width = 2
+        },
+        palette = new string[] { "#33CCFF", "#FF0000", "#800000", "#FFFF00", "#808000" };
+    };
+}
+@using Syncfusion.EJ2;
+ <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer layerType="Geometry" shapeData="ViewBag.worldmap" shapeSettings="shape"></e-maps-layer>
+        </e-maps-layers>
+ </ejs-maps>

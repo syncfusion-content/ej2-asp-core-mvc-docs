@@ -1,0 +1,2 @@
+aspmvc/src/**/*.md
+!aspmvc/src/summary.md

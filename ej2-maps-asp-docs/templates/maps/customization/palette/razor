@@ -1,0 +1,7 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.LayerType(Syncfusion.EJ2.Maps.ShapeLayerType.Geometry).ShapeSettings(ss => ss
+    .Autofill(true).Palette(new string[] { "#33CCFF", "#FF0000", "#800000", "#FFFF00", "#808000" }))
+    .ShapeData(ViewBag.worldmap).Add();
+}).Render()

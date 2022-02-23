@@ -1,0 +1,9 @@
+{
+    "mapping": {
+        "tree-grid": "Tree Grid"
+    },
+    "platform": "aspcore",
+    "customNames": ["pdf", "mvc", "ej1", "api", "ej2", "ui", "treegrid"],
+    "map":{"aspmvc/documentation/treegrid/how-to/treegrid-styling/":"treegrid/treegrid-styling/"},
+    "map":{"aspcore/documentation/treegrid/how-to/treegrid-styling/":"treegrid/treegrid-styling/"}
+}

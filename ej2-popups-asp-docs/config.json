@@ -1,0 +1,14 @@
+{
+    "mapping": {},
+    "platform": "aspmvc",
+    "skipValidation": [
+        "src/dialog/accessibility.md",
+        "src/dialog/index.md",
+        "src/dialog/localization.md",
+        "src/spinner/index.md",
+        "src/spinner/style.md",
+        "src/spinner/template.md",
+        "src/spinner/types.md"
+    ],
+    "customNames": ["tooltip", "asp", "mvc", "ej1", "api", "migration", "html", "svg", "ajax", "dialog"]
+}

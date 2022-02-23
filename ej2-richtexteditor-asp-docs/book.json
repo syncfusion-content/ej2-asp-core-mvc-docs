@@ -1,0 +1,14 @@
+{
+    "root": "./src",
+    "title": "Syncfusion Essential JS 2",
+    "pluginsConfig": {
+        "fontsettings": {
+            "size": 1
+        }
+    },
+    "plugins": [
+        "syncfusion-ej2-doc-helper",
+        "-lunr",
+        "-search"
+    ]
+}

@@ -1,0 +1,31 @@
+---
+title: "ExtractText"
+component: "PDF Viewer"
+description: "Learn about EtractText module API in PDF Viewer server library"
+---
+# Extract Text from PDF document
+
+The PDF Viewer server library allows you to extract the text from a page along with the bounds. Text extracting can be done using the ExtractText() method. Add the following dependency to your application using the `NuGet Package Manager`.
+* Syncfusion.EJ2.PdfViewer.AspNet.Mvc5
+
+>From Volume 2 2019 release Syncfusion.Pdf.AspNet.Mvc5 and Syncfusion.Compression.Base packages are added as dependency for PDF Viewer control. Ensure the dependency packages are referred in your application properly.
+
+The following code snippet explains how to extract the text from a page.
+
+```cs
+
+//Uses the Syncfusion.EJ2.PdfViewer assembly
+PdfRenderer pdfExtractText = new PdfRenderer();
+pdfExtractText.Load("../../Data/HTTP Succinctly.pdf");
+//Returns the bounds of the text
+List<Syncfusion.EJ2.PdfViewer.TextData> textCollection = new List<Syncfusion.EJ2.PdfViewer.TextData>();
+//Extracts the text from the first page of the PDF document along with its bounds
+string text = pdfExtractText.ExtractText(0, out textCollection);
+System.IO.File.WriteAllText("../../Data/data.txt", text);
+
+```
+
+Sample:
+[https://www.syncfusion.com/downloads/support/directtrac/general/ze/ExtractText853154752](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ExtractText853154752)
+
+>Ensure the provided document path and output text saved locations in your application level.

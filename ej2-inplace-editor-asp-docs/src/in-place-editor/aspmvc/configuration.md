@@ -1,0 +1,113 @@
+---
+title: "Configuration"
+component: "In-place Editor"
+description: "Learn how to configure various renders, display modes, and configure the focus out actions in the Syncfusion ASP.NET MVC In-place Editor control."
+---
+
+# Configuration
+
+## Rendering modes
+
+This section explains the supported rendering modes of the In-place Editor. Possible Rendering modes are as follows.
+
+* Popup
+* Inline
+
+> By default, `Popup` mode will be rendered, when opening an editor.
+
+* For `Popup` mode, editable container displays as like tooltip or popover above the element.
+
+* For `Inline` mode, editable container displays as instead of the element. To render `Inline` mode while opening the editor, specify [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Mode) as `Inline`.
+
+In the following sample, the In-place Editor renders with `Inline` mode. You can dynamically switch into another mode by changing the drop-down item value.
+
+{% aspTab template="in-place-editor/modes", sourceFiles="controller.cs" %}
+
+{% endaspTab %}
+
+The output will be as follows.
+
+![Modes](./images/mode.PNG)
+
+### Pop-up customization
+
+In-place Editor popup mode can be customized by using the `Title` and `Model` properties in [`PopupSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PopupSettings) API.
+
+Popup mode rendered by using the Syncfusion ASP.NET MVC Tooltip control, so you can use tooltip properties and events to customize the behavior of popup via the `Model` property of `PopupSettings` API.
+
+> For more details, refer the tooltip documentation section.
+
+In the following sample, popup `Title` and `Position` customized using the `PopupSettings` property. All possible tooltip position data configured in the drop-down, if we change drop down item, selected value bound to `Model` property and applied it to `Tooltip` control. `Tooltip` have following position options.
+
+* TopLeft
+* TopCenter
+* TopRight
+* BottomLeft
+* BottomCenter
+* BottomRight
+* LeftTop
+* LeftCenter
+* LeftBottom
+* RightTop
+* RightCenter
+* RightBottom
+
+{% aspTab template="in-place-editor/popup", sourceFiles="controller.cs" %}
+
+{% endaspTab %}
+
+The output will be as follows.
+
+![Popup](./images/popup.PNG)
+
+## Event actions for editing
+
+The event action of the editor that enable in the edit mode based on the [`EditableOn`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_EditableOn) property, by default `Click` is assigned, the following options are also supported.
+
+* **`Click`**:  The editor will be opened as single click actions.
+* **`DblClick`**: The editor will be opened as double-click actions and it is not applicable for edit icon.
+* **`EditIconClick`**: Disables the editing of event action of input and allows user to edit only through edit icon.
+
+> In-place Editor get focus by pressing the `tab` key from previous focusable DOM element and then by pressing `enter` key, the editor will be opened.
+
+In the following sample, when switching drop-down item, the selected value assigned to the `EditableOn` property. If you changed to `DblClick`, the editor will open when making a double click on the input.
+
+{% aspTab template="in-place-editor/editable-on", sourceFiles="controller.cs" %}
+
+{% endaspTab %}
+
+The output will be as follows.
+
+![Editable-on](./images/editable-on.PNG)
+
+## Action on focus out
+
+Action to be performed when the user clicks outside the container, that means focusing out of editable content and it can be handled by the [`ActionOnBlur`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_ActionOnBlur) property, by default `Submit` assigned. It also has the following options.
+
+* **`Cancel`**: Cancels the editing and resets the old content.
+* **`Submit`**: Submits the edited content to the server.
+* **`Ignore`**: No action is performed with this type and allows to edit multiple editors.
+
+In the following sample, when switching drop-down item, the selected value assigned to the `ActionOnBlur` property.
+
+{% aspTab template="in-place-editor/action-on-blur", sourceFiles="controller.cs" %}
+
+{% endaspTab %}
+
+The output will be as follows.
+
+![Action-on-blur](./images/action-on-blur.PNG)
+
+## Display modes
+
+By default, In-place Editor input element highlighted with a dotted underline. To remove dotted underline from input element, add `data-underline="false"` attribute at In-place Editor root element.
+
+In the following sample, denotes to indicate intractable and normal display modes with different samples.
+
+{% aspTab template="in-place-editor/under-line", sourceFiles="controller.cs" %}
+
+{% endaspTab %}
+
+The output will be as follows.
+
+![Underline](./images/under-line.PNG)

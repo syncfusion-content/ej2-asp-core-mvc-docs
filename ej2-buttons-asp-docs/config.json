@@ -1,0 +1,31 @@
+{
+    "mapping": {
+        "auto-complete": "AutoComplete",
+        "combo-box": "ComboBox",
+        "drop-down-list": "DropDownList",
+        "button-group": "ButtonGroup",
+        "check-box": "CheckBox",
+        "drop-down-button": "DropDownButton",
+        "radio-button": "RadioButton",
+        "split-button": "SplitButton",
+        "progress-button": "ProgressButton"
+    },
+    "platform": "aspcore",
+    "customNames": [
+        "popup",
+        "buttongroup",
+        "rtl",
+        "util",
+        "tooltip",
+        "ej1",
+        "api",
+        "checkbox",
+        "dropdownbutton",
+        "listview",
+        "dropdown",
+        "progressbutton",
+        "cssclass",
+        "radiobutton",
+        "splitbutton"
+    ]
+}

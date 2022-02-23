@@ -1,0 +1,31 @@
+{
+    "mapping": {
+        "in-place-editor": "InPlaceEditor"
+    },
+    "redirectFiles": [
+        "/in-place-editor/aspcore/getting-started-asp-core.md",
+        "/in-place-editor/aspmvc/getting-started-asp-mvc.md"
+    ],
+    "skipValidation": [
+        "src/in-place-editor/aspcore/getting-started-asp-core.md",
+        "src/in-place-editor/aspmvc/getting-started-asp-mvc.md",
+        "src/in-place-editor/buttons.md",
+        "src/in-place-editor/configuration.md",
+        "src/in-place-editor/controls.md",
+        "src/in-place-editor/data-binding.md",
+        "src/in-place-editor/how-to/custom-animation.md",
+        "src/in-place-editor/how-to/custom-indication.md",
+        "src/in-place-editor/how-to/disable-edit-mode.md",
+        "src/in-place-editor/how-to/dynamic-edit-mode.md",
+        "src/in-place-editor/integration.md",
+        "src/in-place-editor/localization.md",
+        "src/in-place-editor/server-actions.md",
+        "src/in-place-editor/validation.md"
+    ],
+    "map": {
+        "aspnetcore/documentation/in-place-editor/getting-started-asp-core": "aspnetcore/documentation/in-place-editor/getting-started",
+        "aspnetmvc/documentation/in-place-editor/getting-started-asp-mvc": "aspnetmvc/documentation/in-place-editor/getting-started"
+    },
+    "platform": "aspcore",
+    "customNames": ["mvc"]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@syncfusion/ej2-calendars-asp-docs",
+  "version": "0.0.1",
+  "description": "Syncfusion TypeScript Docs",
+  "author": "Syncfusion Inc.",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@syncfusion/ej2-doc-helpers": "*",
+    "@types/es6-promise": "0.0.32",
+    "es6-promise": "^4.0.5",
+    "jasmine-node": "^1.14.5",
+    "typescript": "^2.1.6"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "gulp test"
+    }
+  },
+  "scripts": {
+    "test": "gulp ci-test",
+    "ci-publish": "gulp ship-to-docs"
+  }
+}

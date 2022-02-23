@@ -1,0 +1,11 @@
+{
+    "mapping": {},
+    "platform": "aspcore",
+    "customNames": [
+        "barcodeGenerator",
+        "datamatrixgenerator",
+        "QRCodegenerator",
+        "qrcodegenerator",
+        "barcode"
+    ]
+}

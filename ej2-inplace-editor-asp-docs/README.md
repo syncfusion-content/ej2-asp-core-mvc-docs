@@ -1,0 +1,1 @@
+Repository for inplace-editor component ASP MVC/ ASP Core documentation

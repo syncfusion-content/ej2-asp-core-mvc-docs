@@ -1,0 +1,12 @@
+@{
+    var shape = new
+    {
+     autofill = true
+    };
+}
+@using Syncfusion.EJ2;
+ <ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer layerType="Geometry" shapeData="ViewBag.worldmap" shapeSettings="shape"></e-maps-layer>
+        </e-maps-layers>
+ </ejs-maps>

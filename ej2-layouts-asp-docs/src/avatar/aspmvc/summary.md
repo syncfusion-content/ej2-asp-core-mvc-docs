@@ -1,0 +1,5 @@
+* [Getting Started(ASP.NET MVC)](avatar/getting-started-asp-mvc.md)
+* [Types](avatar/types.md)
+* [Avatar Customization](avatar/how-to/avatar-customization.md)
+* [Integrate avatar into ListView](avatar/how-to/integrate-avatar-into-listview.md)
+* [Integrate avatar into Badge](avatar/how-to/integrate-avatar-into-badge.md)

@@ -1,0 +1,24 @@
+{
+    "mapping": {},
+    "platform": "aspmvc",
+    "redirectFiles": [
+        "/listview/aspcore/getting-started-asp-core.md",
+        "/listview/aspmvc/getting-started-asp-mvc.md"
+    ],
+    "map": {
+        "aspnetcore/documentation/listview/getting-started-asp-core": "aspnetcore/documentation/listview/getting-started",
+        "aspnetmvc/documentation/listview/getting-started-asp-mvc": "aspnetmvc/documentation/listview/getting-started"
+    },
+    "customNames": [
+        "virtualization",
+        "asp",
+        "mvc",
+        "ej1",
+        "migration",
+        "api",
+        "listview",
+        "checkbox",
+        "ajax",
+        "html"
+    ]
+}

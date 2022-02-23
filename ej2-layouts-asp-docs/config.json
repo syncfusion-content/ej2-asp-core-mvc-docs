@@ -1,0 +1,22 @@
+{
+    "mapping": {
+        "auto-complete": "AutoComplete",
+        "combo-box": "ComboBox",
+        "drop-down-list": "DropDownList"
+    },
+    "platform": "aspcore",
+    "redirectFiles": [
+        "/avatar/aspcore/getting-started.md",
+        "src/avatar/aspmvc/getting-started.md",
+        "src/splitter/aspcore/getting-started.md",
+        "src/splitter/aspmvc/getting-started.md"
+    ],
+    "skipValidation": [
+        "src/splitter/aspcore/getting-started-asp-core.md",
+        "src/splitter/aspmvc/getting-started-asp-mvc.md"
+    ],
+    "customNames": [
+        "mvc",
+        "listview", "ej1", "api", "migration" , "globalization"
+    ]
+}

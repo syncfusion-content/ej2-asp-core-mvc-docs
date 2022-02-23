@@ -1,8 +1,0 @@
-@(Html.EJS().RangeNavigator("container")
-                    .ValueType(Syncfusion.EJ2.Charts.RangeValueType.DateTime)
-                    .LabelFormat("'y/M/d")
-                .Series(sr =>
-                {
-                    sr.XName("x").YName("y").Type(Syncfusion.EJ2.Charts.RangeNavigatorType.Area).DataSource(ViewBag.dataSource).Add();
-                }).Render()
-                )

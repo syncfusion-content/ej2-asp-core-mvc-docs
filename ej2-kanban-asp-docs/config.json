@@ -1,0 +1,26 @@
+{
+    "mapping": {
+        "kanbna": "Kanban"
+    },
+    "platform": "aspmvc",
+    "customNames": [
+        "kanban" ,
+        "swimlane",
+        "tooltip",
+        "validation",
+        "accessiblility"
+    ],
+    "redirectFiles": [
+        "/kanban/aspcore/getting-started-core.md",
+        "/kanban/aspmvc/getting-started-mvc.md"
+    ],
+    "skipValidation": [
+        "src/kanban/aspcore/getting-started-core.md",
+        "src/kanban/aspmvc/getting-started-mvc.md"
+    ],
+    "map": {
+        "aspnetcore/documentation/kanban/getting-started-core": "aspnetcore/documentation/kanban/getting-started",
+        "aspnetmvc/documentation/kanban/getting-started-mvc": "aspnetmvc/documentation/kanban/getting-started"
+    }
+
+}

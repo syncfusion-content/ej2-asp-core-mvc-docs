@@ -1,0 +1,9 @@
+        <ejs-chart id="container" title="Sales History of Product X">
+            <e-chart-primaryxaxis valueType="DateTime" majorGridLines="ViewBag.line" majorTickLines="ViewBag.line"></e-chart-primaryxaxis>
+            <e-chart-primaryyaxis stripLines="ViewBag.yAxisStripLine" majorGridLines="ViewBag.line" majorTickLines="ViewBag.line"></e-chart-primaryyaxis>
+            <e-series-collection>
+                <e-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+                    <e-series-marker visible="true" height="10" width="10"></e-series-marker>
+                </e-series>
+            </e-series-collection>
+        </ejs-chart>

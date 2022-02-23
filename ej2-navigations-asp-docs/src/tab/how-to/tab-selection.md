@@ -1,0 +1,13 @@
+---
+title: "isInteracted property in select and selecting events of Tab"
+component: "Tab"
+description: "This example demonstrates how to find whether the tab is selected programmatically or not of the Essential JS 2 Tab component."
+---
+
+# How to find whether the tab is selected programmatically or user interaction
+
+We can able to find the tab selection whether it is selected by user interaction or programmatically way in the `selecting` and `selected` event argument with the field of `isInteracted`. When the user changes the tab through click actions it will return true otherwise, it will return false. The following code example depicts to find the tab selecting the state in selecting and selected events.
+
+{% aspTab template="tab/tabselection", sourceFiles="tabselection.cs" %}
+
+{% endaspTab %}

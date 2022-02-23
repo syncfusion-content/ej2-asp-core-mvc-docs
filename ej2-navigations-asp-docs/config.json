@@ -1,0 +1,41 @@
+{
+    "mapping": {
+        "treeview": "TreeView",
+        "context-menu": "ContextMenu"
+    },
+    "platform": "aspcore",
+    "customNames": [
+        "treeview",
+        "toolbar",
+        "mvc",
+        "ej1",
+        "api",
+        "migration",
+        "uncheck",
+        "checkbox",
+        "contextmenu",
+        "ui",
+        "menuitem",
+        "sidebar",
+        "with",
+        "listview",
+        "dropdownlist"
+    ],
+    "redirectFiles": [
+        "/sidebar/aspcore/getting-started-asp-core.md",
+        "/sidebar/aspmvc/getting-started-asp-mvc.md",
+        "/accordion/aspcore/getting-started-asp-core.md",
+        "/accordion/aspmvc/getting-started-asp-mvc.md",
+        "/treeview/aspmvc/getting-started-mvc.md",
+		"/sidebar/autoclose.md"
+    ],
+    "map": {
+        "aspcore/documentation/sidebar/aspcore/getting-started-asp-core": "sidebar/aspcore/getting-started/",
+        "aspmvc/documentation/sidebar/aspmvc/getting-started-asp-mvc/": "sidebar/aspmvc/getting-started/",
+        "aspmvc/documentation/treeview/aspmvc/getting-started-mvc/": "treeview/aspmvc/getting-started/",
+        "aspcore/documentation/accordion/aspcore/getting-started-asp-core":"accordion/aspcore/getting-started/",
+        "aspmvc/documentation/accordion/aspmvc/getting-started-asp-mvc/" : "accordion/aspmvc/getting-started/",
+		"aspcore/documentation/sidebar/autoclose/": "sidebar/auto-close/",
+        "aspmvc/documentation/sidebar/autoclose/" : "sidebar/auto-close/"
+    }
+}

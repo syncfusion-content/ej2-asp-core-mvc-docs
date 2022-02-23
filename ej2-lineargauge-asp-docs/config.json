@@ -1,0 +1,7 @@
+{
+    "mapping": {},
+    "platform": "aspcore",
+    "customNames": ["mvc","ej1","api","gauge" ],
+    "redirectFiles":["/linear-gauge/print-and-export.md"],
+    "skipValidation": [ "src/linear-gauge/accessibility.md", "src/linear-gauge/annotations.md", "src/linear-gauge/axis.md", "src/linear-gauge/internationalization.md", "src/linear-gauge/linear-gauge-appearance.md", "src/linear-gauge/linear-gauge-dimensions.md", "src/linear-gauge/pointers.md", "src/linear-gauge/print-and-export.md", "src/linear-gauge/ranges.md", "src/linear-gauge/user-interaction.md" ]
+}

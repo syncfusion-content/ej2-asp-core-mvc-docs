@@ -1,0 +1,17 @@
+{
+    "mapping": {       
+        "gantt": "Gantt"
+    },
+    "platform": "aspmvc",
+  "customNames": [
+    "gantt",
+    "tooltip",
+    "ej1",
+    "api",
+    "migration",
+    "pdf",
+    "copypasterecords",
+    "maintainrecordindex"
+  ],
+  "skipValidation" : ["src/gantt/how-to/styling-and-appearance.md"]
+}

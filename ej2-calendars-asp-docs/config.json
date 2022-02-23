@@ -1,0 +1,67 @@
+{
+    "mapping": {
+        "datepicker": "DatePicker",
+        "datetimepicker": "DateTimePicker",
+        "daterangepicker": "DateRangePicker",
+        "timepicker": "TimePicker"
+    },
+    "platform": "aspcore",
+    "customNames":[
+        "globalization",
+        "mvc",
+        "core",
+        "getting",
+        "started",
+        "datepicker",
+		"datetimepicker",
+		"daterangepicker",
+        "timepicker",
+        "ej1",
+        "api",
+        "migration",
+        "prevent",
+        "the",
+        "popup",
+        "close",
+        "set",
+        "readonly",
+        "customization",
+        "using",
+        "cssclass",
+        "client",
+        "side",
+        "validition",
+        "form",
+        "validator",
+        "css",
+        "islamic",
+        "calendar"
+
+    ],
+    "redirectFiles" : [ 
+        "src/calendar/aspcore/getting-started-core.md",
+        "src/calendar/aspmvc/getting-started-mvc.md",
+        "src/datepicker/aspcore/getting-started-core.md",
+        "src/datepicker/aspmvc/getting-started-mvc.md",
+        "src/datetimepicker/aspcore/getting-started-core.md",
+        "src/datetimepicker/aspmvc/getting-started-mvc.md",
+        "src/daterangepicker/aspcore/getting-started-core.md",
+        "src/daterangepicker/aspmvc/getting-started-mvc.md",
+        "src/timepicker/aspcore/getting-started-core.md",
+        "src/timepicker/aspmvc/getting-started-mvc.md"
+       ],
+       
+       "map" : {
+   
+           "aspcore/documentation/calendar/getting-started-core/" : "calendar/getting-started/",
+           "aspmvc/documentation/calendar/getting-started-mvc/" : "calendar/getting-started/",
+           "aspcore/documentation/datepicker/getting-started-core/" : "datepicker/getting-started/",
+           "aspmvc/documentation/datepicker/getting-started-mvc/" : "datepicker/getting-started/",
+           "aspcore/documentation/datetimepicker/getting-started-core/" : "datetimepicker/getting-started/",
+           "aspmvc/documentation/datetimepicker/getting-started-mvc/" : "datetimepicker/getting-started/",
+           "aspcore/documentation/daterangepicker/getting-started-core/" : "daterangepicker/getting-started/",
+           "aspmvc/documentation/daterangepicker/getting-started-mvc/" : "daterangepicker/getting-started/",
+           "aspcore/documentation/timepicker/getting-started-core/" : "timepicker/getting-started/",
+           "aspmvc/documentation/timepicker/getting-started-mvc/" : "timepicker/getting-started/"
+         }
+   }

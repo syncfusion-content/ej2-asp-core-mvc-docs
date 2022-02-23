@@ -1,0 +1,38 @@
+{
+    "mapping": {
+        "rich-text-editor": "RichTextEditor"
+    },
+    "platform": "aspmvc",
+    "customNames": [
+        "globalization",
+        "inline",
+        "toolbar",
+        "iframe",
+        "getting",
+        "getting-started-mvc",
+        "started",
+        "mvc",
+        "ej1",
+        "api",
+        "migration",
+        "ej1-api-migration",
+        "google",
+        "resizable",
+        "xhtml"
+    ],
+    "redirectFiles": [
+        "/rich-text-editor/aspcore/getting-started-core.md",
+        "/rich-text-editor/aspmvc/getting-started-mvc.md"
+    ],
+    "skipValidation": [
+        "src/rich-text-editor/aspcore/getting-started-core.md",
+        "src/rich-text-editor/aspmvc/getting-started-mvc.md",
+        "src/rich-text-editor/aspcore/how-to/change-default-font-family.md",
+        "src/rich-text-editor/aspmvc/how-to/change-default-font-family.md"
+    ],
+    "map": {
+        "aspnetcore/documentation/rich-text-editor/getting-started-core": "aspnetcore/documentation/rich-text-editor/getting-started",
+        "aspnetmvc/documentation/rich-text-editor/getting-started-mvc": "aspnetmvc/documentation/rich-text-editor/getting-started"
+    }
+
+}

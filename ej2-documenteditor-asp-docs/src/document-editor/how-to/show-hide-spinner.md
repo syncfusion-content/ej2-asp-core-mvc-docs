@@ -1,0 +1,27 @@
+---
+title: "how to show and hide spinner while opening document"
+component: "DocumentEditor"
+description: "Learn how to show and hide spinner while opening document in React Document Editor component."
+---
+
+# How to show and hide spinner while opening document in React Document Editor component
+
+Using [`spinner`](https://ej2.syncfusion.com/aspnetcore/documentation/spinner/getting-started-asp-core/) component, you can show/hide spinner while opening document in DocumentEditor .
+
+Example code snippet to show/hide spinner
+
+```typescript
+// showSpinner() will make the spinner visible
+showSpinner(document.getElementById('container'));
+
+// hideSpinner() method used hide spinner
+hideSpinner(document.getElementById('container'));
+```
+
+Refer to the following example.
+
+{% aspTab template="document-editor-container/spinner" %}
+
+{% endaspTab %}
+
+>Note: In above example, we have used setInterval to hide spinner, just for demo purpose.

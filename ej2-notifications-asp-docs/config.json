@@ -1,0 +1,31 @@
+{
+    "mapping": {
+		"progress-bar": "ProgressBar"
+	},
+    "platform": "aspcore",
+    "redirectFiles": [
+        "/toast/aspcore/getting-started-asp-core.md",
+        "/toast/aspmvc/getting-started-asp-mvc.md"
+    ],
+    "skipValidation": [
+        "src/toast/accessibility.md",
+        "src/toast/action-buttons.md",
+        "src/toast/animation.md",
+        "src/toast/aspcore/getting-started-asp-core.md",
+        "src/toast/aspmvc/getting-started-asp-mvc.md",
+        "src/toast/config.md",
+        "src/toast/how-to/add-dynamic-template.md",
+        "src/toast/how-to/close-the-toast-with-click-tap.md",
+        "src/toast/how-to/customize-progress-bar-theme-and-sizing.md",
+        "src/toast/how-to/play-an-audio-before-open-the-toast.md",
+        "src/toast/how-to/prevent-duplicate-toast-display.md",
+        "src/toast/how-to/restrict-the-maximum-toast-to-show.md",
+        "src/toast/how-to/show-different-types-of-toast.md",
+        "src/toast/how-to/show-multiple-toasts-in-various-positions.md",
+        "src/toast/index.md",
+        "src/toast/position.md",
+        "src/toast/template.md",
+        "src/toast/timeout.md"
+    ],
+    "customNames": ["config","mvc", "listview"]
+}

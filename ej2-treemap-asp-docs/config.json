@@ -1,0 +1,16 @@
+{
+    "mapping": {},
+    "platform": "aspcore",
+    "customNames": [
+        "mvc",
+        "treemap",
+        "ej1",
+        "api",
+        "drilldown",
+        "tooltip"
+        
+    ],
+    "redirectFiles":["/treemap/print-and-export.md"],
+    "map":{"aspcore/documentation/treemap/print-and-export/":"treemap/aspcore/print-and-export/","aspmvc/documentation/treemap/print-and-export/":"treemap/aspmvc/print-and-export/" }
+
+}

@@ -1,0 +1,48 @@
+{
+    "mapping": {
+        "auto-complete": "AutoComplete",
+        "combo-box": "ComboBox",
+        "drop-down-list": "DropDownList",
+        "multi-select": "MultiSelect",
+        "drop-down-tree": "Dropdown Tree"
+    },
+    "platform": "aspmvc",
+     "customNames":[
+	 "ej1-api-migration",
+     "getting",
+     "getting-started-mvc",
+     "started",
+     "mvc",
+     "checkbox",
+     "ej1",
+	 "ejfor",
+     "api",
+     "migration",
+     "popup",
+     "tooltip",
+     "autofill",
+     "scroller"
+	 ],
+	 "redirectFiles" : [ 
+	 "src/auto-complete/aspcore/getting-started-core.md",
+	 "src/auto-complete/aspmvc/getting-started-mvc.md",
+	 "src/combo-box/aspcore/getting-started-core.md",
+	 "src/combo-box/aspmvc/getting-started-mvc.md",
+	 "src/drop-down-list/aspcore/getting-started-core.md",
+	 "src/drop-down-list/aspmvc/getting-started-mvc.md",
+	 "src/multi-select/aspcore/getting-started-core.md",
+	 "src/multi-select/aspmvc/getting-started-mvc.md"
+    ],
+    
+    "map" : {
+
+        "aspcore/documentation/auto-complete/getting-started-core/" : "auto-complete/getting-started/",
+        "aspmvc/documentation/auto-complete/getting-started-mvc/" : "auto-complete/getting-started/",
+        "aspcore/documentation/combo-box/getting-started-core/" : "combo-box/getting-started/",
+        "aspmvc/documentation/combo-box/getting-started-mvc/" : "combo-box/getting-started/",
+        "aspcore/documentation/drop-down-list/getting-started-core/" : "drop-down-list/getting-started/",
+        "aspmvc/documentation/drop-down-list/getting-started-mvc/" : "drop-down-list/getting-started/",
+        "aspcore/documentation/multi-select/getting-started-core/" : "multi-select/getting-started/",
+        "aspmvc/documentation/multi-select/getting-started-mvc/" : "multi-select/getting-started/"
+      }
+}

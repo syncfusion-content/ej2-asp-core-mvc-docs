@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+@Html.EJS().Maps("maps").Layers(l =>
+   {
+       l.MarkerSettings(marker =>
+       {
+           marker.Visible(true).Template("#template").DataSource(ViewBag.markerData).Add();
+       }).ShapeData(ViewBag.worldmap).Add();
+   }).Render()
+<div id="template" style="display: none;">
+    <div>
+        <div style="background-image:url(http://js.syncfusion.com/demos/web/Images/map/pin.png);margin-left:3px;height:40px;width:25px;margin-top:-15px;">
+        </div>
+    </div>
+</div>

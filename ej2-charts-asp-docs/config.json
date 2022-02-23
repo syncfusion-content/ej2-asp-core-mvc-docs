@@ -1,0 +1,14 @@
+{
+    "mapping": {},
+    "platform": "aspmvc",
+    "customNames": [
+        "ej1",
+        "api",
+        "ajax"
+    ],
+    "componentNames": {
+        "accumulation-chart": "Accumulation Chart",
+        "chart": "Chart",
+        "range-navigator": "Range Navigator"
+    }
+}

@@ -1,9 +1,0 @@
-<ejs-bulletchart id="bulletgraph" minimum="0" maximum="2500" interval="250" valueField="value" targetField="target" dataSource="ViewBag.dataSource">
-        <e-bullet-range-collection>
-            <e-bullet-range end="500"></e-bullet-range>
-            <e-bullet-range end="1500"></e-bullet-range>
-            <e-bullet-range end="2500"></e-bullet-range>
-        </e-bullet-range-collection>
-        <e-bulletchart-majorticklines color="red" width="4"></e-bulletchart-majorticklines>
-        <e-bulletchart-minorticklines color="blue" width="5"></e-bulletchart-minorticklines>
-</ejs-bulletchart>

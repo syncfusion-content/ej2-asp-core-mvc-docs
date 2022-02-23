@@ -1,0 +1,1 @@
+This project is used to maintain the UG in ASP>NET MVC and ASP.NET Core platform for Kanban component.

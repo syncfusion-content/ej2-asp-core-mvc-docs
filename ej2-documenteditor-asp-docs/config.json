@@ -1,0 +1,8 @@
+{
+    "mapping": {
+        "document-editor": "DocumentEditor"
+    },
+	"redirectFiles":["src/document-editor/how-to.md","src/document-editor/how-to/override-the-keyboard-shortcuts.md"],
+    "customNames":["url","pdf"],
+    "platform": "aspcore"
+}

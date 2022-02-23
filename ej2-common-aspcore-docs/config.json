@@ -1,0 +1,28 @@
+{
+    "platform": "aspcore",
+    "customNames": [
+        "nuget","syncfusion","vs","blazor","aspnetcore"
+    ],
+	"redirectFiles" : [ "/installation-and-upgrade/common-installation-errors" ,"/installation-and-upgrade/upgrading","/installation-and-upgrade/download","/installation-and-upgrade/installation-using-off-line-installer","/installation-and-upgrade/installation-using-web-installer","/visual-studio-integration/visual-studio-extensions/check-for-updates.md", "/visual-studio-integration/nuget-packages.md" , "/visual-studio-integration/visual-studio-extensions/convert-project.md","/visual-studio-integration/visual-studio-extensions/create-samples.md", "/visual-studio-integration/visual-studio-extensions/download-and-installation.md", "/visual-studio-integration/visual-studio-extensions/scaffolding.md", "/visual-studio-integration/visual-studio-extensions/create-project.md", "/visual-studio-integration/visual-studio-extensions/upgrade-project.md" ],
+	"map" : {
+			  "ej2/aspnetcore/documentation/installation-and-upgrade/common-installation-errors/" : "/installation/common-installation-errors/",
+			  "ej2/aspnetcore/documentation/installation-and-upgrade/download/" : "/installation/download/",
+			  "ej2/aspnetcore/documentation/installation-and-upgrade/installation-using-off-line-installer/" : "/installation/installation-using-off-line-installer/",
+			  "ej2/aspnetcore/documentation/installation-and-upgrade/installation-using-web-installer/" : "/installation/installation-using-web-installer/",
+			  "ej2/aspnetcore/documentation/installation-and-upgrade/upgrading/" : "/upgrade/upgrading/",
+			  "ej2/aspnetcore/documentation/visual-studio-integration/nuget-packages/" : "/installation/install-nuget-packages/",
+              "ej2/aspnetcore/documentation/visual-studio-integration/visual-studio-extensions/check-for-updates/" : "/visual-studio-integration/vs2019-extensions/check-for-updates/",
+			  "ej2/aspnetcore/documentation/visual-studio-integration/visual-studio-extensions/convert-project/" : "/visual-studio-integration/vs2019-extensions/convert-project/",
+			  "ej2/aspnetcore/documentation/visual-studio-integration/visual-studio-extensions/download-and-installation/" : "/visual-studio-integration/vs2019-extensions/download-and-installation/",
+			  "ej2/aspnetcore/documentation/visual-studio-integration/visual-studio-extensions/scaffolding/" : "/visual-studio-integration/vs2019-extensions/scaffolding/",
+			  "ej2/aspnetcore/documentation/visual-studio-integration/visual-studio-extensions/create-project/" : "/visual-studio-integration/vs2019-extensions/create-project/",
+			  "ej2/aspnetcore/documentation/visual-studio-integration/visual-studio-extensions/create-samples/" : "/visual-studio-integration/vs2019-extensions/create-samples/",
+			  "ej2/aspnetcore/documentation/visual-studio-integration/visual-studio-extensions/upgrade-project/" : "/visual-studio-integration/vs2019-extensions/upgrade-project/"
+            },
+	"skipValidation": [ "src/visual-studio-integration/visual-studio-extensions/convert-project.md", "src/visual-studio-integration/nuget-packages.md", "src/installation-and-upgrade/summary.md", "src/visual-studio-integration/visual-studio-extensions/download-and-installation.md","src/visual-studio-integration/visual-studio-extensions/template-studio.md","src/visual-studio-integration/visual-studio-extensions/upgrade-project.md"],
+    "componentsName": {
+        "appearance": "Appearance",
+        "common": "Common",
+        "getting-started": "Getting Started"
+    }
+}

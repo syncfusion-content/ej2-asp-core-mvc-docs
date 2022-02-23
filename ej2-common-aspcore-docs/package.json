@@ -1,0 +1,20 @@
+{
+    "name": "@syncfusion/ej2-common-aspcore-docs",
+    "version": "1.0.0",
+    "description": "Syncfusion ASP.NET Core common documentation",
+    "author": "Syncfusion Inc.",
+    "license": "UNLICENSED",
+    "dependencies": {
+      "@syncfusion/ej2-doc-helpers": "*"
+    },
+    "config": {
+      "ghooks": {
+        "pre-commit": "gulp test"
+      }
+    },
+    "scripts": {
+      "test": "gulp ci-test",
+      "ci-publish": "gulp ship-to-docs"
+    }
+  }
+  

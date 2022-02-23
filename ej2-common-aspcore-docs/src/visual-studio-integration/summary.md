@@ -1,0 +1,8 @@
+* [Overview](visual-studio-integration/overview.md)
+* [Download And Installation](visual-studio-integration/Visual-Studio-Extensions/download-and-installation.md)
+* [Create Project](visual-studio-integration/Visual-Studio-Extensions/create-project.md)
+* [Convert Project](visual-studio-integration/Visual-Studio-Extensions/convert-project.md)
+* [Upgrade Project](visual-studio-integration/Visual-Studio-Extensions/upgrade-project.md)
+* [Create Samples](visual-studio-integration/Visual-Studio-Extensions/create-samples.md)
+* [Scaffolding](visual-studio-integration/Visual-Studio-Extensions/scaffolding.md)
+* [Check for Updates](visual-studio-integration/Visual-Studio-Extensions/check-for-updates.md)

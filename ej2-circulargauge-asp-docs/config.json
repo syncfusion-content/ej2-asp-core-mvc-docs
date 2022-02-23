@@ -1,0 +1,13 @@
+{
+    "mapping": {},
+    "platform": "aspcore",
+    "customNames": [
+        "gauge",
+        "circular",
+        "mvc",
+        "api",
+        "ej1"
+    ],
+    "redirectFiles":["/circular-gauge/print-and-export.md"],
+    "map":{"aspcore/documentation/circular-gauge/print-and-export/":"circular-gauge/aspcore/print-and-export/","aspmvc/documentation/circular-gauge/print-and-export/":"circular-gauge/aspmvc/print-and-export/" }
+}

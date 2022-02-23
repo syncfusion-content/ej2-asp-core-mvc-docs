@@ -1,8 +1,0 @@
-<div class="col-lg-12 control-section">
-    <div class="content-wrapper">
-        @(Html.EJS().Diagram("container")
-        .Width("100%")
-        .Height("500px")
-        .Nodes(ViewBag.nodes).Render())
-    </div>
-</div>

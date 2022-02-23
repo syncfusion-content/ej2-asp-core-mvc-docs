@@ -1,0 +1,1 @@
+Documents for file manager component in ASP.NET MVC & Core platform

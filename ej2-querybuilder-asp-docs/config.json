@@ -1,0 +1,7 @@
+{
+    "mapping": {
+        "query-builder": "QueryBuilder"
+    },
+    "platform": "aspcore",
+    "customNames": [ ]
+}

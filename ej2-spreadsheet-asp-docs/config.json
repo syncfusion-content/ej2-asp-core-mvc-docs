@@ -1,0 +1,5 @@
+{
+    "mapping": {},
+    "platform": "aspmvc",
+    "customNames": ["pdf", "mvc", "ej1", "api", "ej2", "ui","params"]
+}

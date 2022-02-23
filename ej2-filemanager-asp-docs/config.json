@@ -1,0 +1,37 @@
+{
+    "mapping": {
+	"filemanager": "File Manager"
+    },
+    "platform": "aspcore",
+    "customNames": [
+        "filemanager",
+        "file-manager",
+        "api",
+        "toolbar",
+        "getting",
+        "started",
+        "ej1",
+        "api",
+        "aspmvc",
+        "aspcore",
+        "migration",
+        "contextmenu",
+		"internet",
+		"explorer",
+		"async", "api", "globalization","css"
+    ],
+	"redirectFiles": [
+	"/file-manager/howto/adding-custom-item-to-context-menu.md",
+	"/file-manager/howto/adding-custom-item-to-toolbar.md",
+	"/file-manager/howto/enable-disable-toolbar-item.md"
+    ],
+    "map": {
+        "aspcore/documentation/file-manager/howto/adding-custom-item-to-context-menu/": "file-manager/how-to/adding-custom-item-to-context-menu/",
+        "aspcore/documentation/file-manager/howto/adding-custom-item-to-toolbar/": "file-manager/how-to/adding-custom-item-to-toolbar/",
+        "aspcore/documentation/file-manager/howto/enable-disable-toolbar-item/": "file-manager/how-to/enable-disable-toolbar-item/",
+        "aspmvc/documentation/file-manager/howto/adding-custom-item-to-context-menu/": "file-manager/how-to/adding-custom-item-to-context-menu/",
+        "aspmvc/documentation/file-manager/howto/adding-custom-item-to-toolbar/": "file-manager/how-to/adding-custom-item-to-toolbar/",
+        "aspmvc/documentation/file-manager/howto/enable-disable-toolbar-item/": "file-manager/how-to/enable-disable-toolbar-item/"
+       
+    }
+}

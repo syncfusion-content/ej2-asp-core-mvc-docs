@@ -1,0 +1,2 @@
+src/**/summary.md
+!src/summary.md

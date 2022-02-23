@@ -1,0 +1,10 @@
+{
+    "mapping": {
+        "pdfviewer": "PDF Viewer", "aspcore/documentation/pdfviewer/text-markup-annotation/" : "pdfviewer/annotation/text-markup-annotation/"
+    },
+    "platform": "aspcore",
+    "customNames": [
+        "pdfviewer", "interaction_mode","globalization", "toolbar_customization","text_search",
+        "text_selection","toolbar", "programmatically", "pdfium"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "mapping":{
+        
+    },
+    "platform":"aspcore",
+    "customNames": ["mvc", "api","ej1" ],
+    "redirectFiles":["/maps/print.md"],
+    "map":{"aspcore/documentation/maps/print/":"maps/aspcore/print/","aspmvc/documentation/maps/print/":"maps/aspmvc/print/" }  
+}

@@ -1,0 +1,7 @@
+* [Animation](common/animation.md)
+* [Localization](common/localization.md)
+* [Internationalization](common/internationalization.md)
+* [Drag and Drop](common/drag-and-drop.md)
+* [EJ1 and EJ2 Compatibility](common/compatible-with-essential-JS1.md)
+* [CRG](common/custom-resource-generator.md)
+* [Security Aspects](common/security-aspects.md)

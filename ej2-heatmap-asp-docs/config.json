@@ -1,0 +1,34 @@
+{
+    "mapping": {
+        "heatmap-chart": "HeatMap Chart"
+    },
+    "platform": "aspmvc",
+    "customNames": [
+        "heatmap",
+        "tooltip",
+        "ej1",
+        "api",
+        "migration"
+    ],
+    "redirectFiles": ["/heatmap/appearance.md","/heatmap/axis.md", "/heatmap/bubble-heatmap.md", "/heatmap/legend.md", "/heatmap/palette.md", "/heatmap/rendering-mode.md", "/heatmap/tooltip.md", "/heatmap/working-with-data.md"],
+    "skipValidation": ["src/heatmap/appearance.md", "src/heatmap/axis.md", "src/heatmap/bubble-heatmap.md", "src/heatmap/dimensions.md", "src/heatmap/aspcore/ej1-api-migration.md", "src/heatmap/aspcore/getting-started.md", "src/heatmap/aspcore/summary.md", "src/heatmap/aspmvc/ej1-api-migration.md", "src/heatmap/aspmvc/getting-started.md", "src/heatmap/aspmvc/summary.md", "src/heatmap/images/default-template.png", "src/heatmap/images/default-template-mvc.png", "src/heatmap/images/nuget-demo.png", "src/heatmap/images/nuget-demo-core.png", "src/heatmap/images/nuget-demo-mvc.png", "src/heatmap/images/solution-explorer-core.png", "src/heatmap/images/solution-explorer-mvc.png", "src/heatmap/how-to/legend-label-customization.md", "src/heatmap/how-to/tooltip-template.md", "src/heatmap/index.md", "src/heatmap/legend.md", "src/heatmap/palette.md", "src/heatmap/rendering-mode.md", "src/heatmap/selection.md", "src/heatmap/tooltip.md", "src/heatmap/working-with-data.md"],
+    "map" : {
+		"aspnetcore/documentation/heatmap/appearance.md/" : "heatmap-chart/appearance.md/",
+        "aspnetcore/documentation/heatmap/axis.md/": "heatmap-chart/axis.md/",
+		"aspnetcore/documentation/heatmap/bubble-heatmap.md/" : "heatmap-chart/bubble-heatmap.md/",	
+		"aspnetcore/documentation/heatmap/legend.md/" : "heatmap-chart/legend.md/",
+		"aspnetcore/documentation/heatmap/palette.md/" : "heatmap-chart/palette.md/",
+		"aspnetcore/documentation/heatmap/rendering-mode.md/" : "heatmap-chart/rendering-mode.md/",
+		"aspnetcore/documentation/heatmap/tooltip.md/" : "heatmap-chart/tooltip.md/",
+		"aspnetcore/documentation/heatmap/working-with-data.md/" : "heatmap-chart/working-with-data.md/",
+        
+        "aspnetmvc/documentation/heatmap/appearance.md/" : "heatmap-chart/appearance.md/",
+        "aspnetmvc/documentation/heatmap/axis.md/": "heatmap-chart/axis.md/",
+		"aspnetmvc/documentation/heatmap/bubble-heatmap.md/" : "heatmap-chart/bubble-heatmap.md/",	
+		"aspnetmvc/documentation/heatmap/legend.md/" : "heatmap-chart/legend.md/",
+		"aspnetmvc/documentation/heatmap/palette.md/" : "heatmap-chart/palette.md/",
+		"aspnetmvc/documentation/heatmap/rendering-mode.md/" : "heatmap-chart/rendering-mode.md/",
+		"aspnetmvc/documentation/heatmap/tooltip.md/" : "heatmap-chart/tooltip.md/",
+		"aspnetmvc/documentation/heatmap/working-with-data.md/" : "heatmap-chart/working-with-data.md/"
+	}
+}

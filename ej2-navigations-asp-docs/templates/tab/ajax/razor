@@ -1,0 +1,35 @@
+@using Syncfusion.EJ2.Navigations;
+
+@Html.EJS().Tab("MainTab").Created("Created").Render()
+
+<style>
+    #container {
+        visibility: hidden;
+    }
+
+    #loader {
+        color: #008cff;
+        height: 40px;
+        left: 45%;
+        position: absolute;
+        top: 45%;
+        width: 30%;
+    }
+
+    .e-content .e-item {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+</style>
+
+<script>
+    function Created() {
+       var TabObj = document.getElementById("MainTab").ej2_instances[0];
+       var ajax = new ej.base.Ajax('./network.html', 'GET', true);
+       ajax.send().then();
+       ajax.onSuccess = function (data) {
+           TabObj.addTab([{ header: { 'text': 'Twitter' }, content: data }], 0);
+       }
+    }
+</script>

@@ -1,7 +1,0 @@
-<ejs-diagram id="container" width="100%" height="700px" nodes="@ViewBag.nodes">
-    <e-diagram-pagesettings>
-        <e-pagesettings-background source="https://www.w3schools.com/images/w3schools_green.jpg" align="XMinYMid" scale="Meet"></e-pagesettings-background>
-        <e-pagesettings-margin left="10" right="10" bottom="10" top="10"></e-pagesettings-margin>
-
-    </e-diagram-pagesettings>
-</ejs-diagram>

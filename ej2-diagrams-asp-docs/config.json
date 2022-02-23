@@ -1,0 +1,15 @@
+{
+    "mapping": {},
+    "platform": "aspcore",
+    "customNames": [
+        "pdf",
+        "mvc",
+        "bpmn",
+        "tooltip",
+        "ej1",
+        "api",
+        "migration",
+        "umldiagram",
+        "virtualization"
+    ]
+}
