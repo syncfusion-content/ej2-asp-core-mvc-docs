@@ -1,0 +1,13 @@
+@{ 
+    var itemTemplate = "<div><span class='ename'> ${name} - </span><span class='ejob'>${job}</span></div>";
+}
+<div id='container' style="margin:0 auto; width:250px;">
+    <ejs-dropdowntree id="treedata" popupHeight="270px" placeholder="Select an employee" cssClass="custom" itemTemplate="@itemTemplate">
+        <e-dropdowntree-fields dataSource="ViewBag.localData" expanded="expanded" value="id" parentValue="pid" hasChildren="hasChild" text="name"></e-dropdowntree-fields>
+    </ejs-dropdowntree>
+</div>
+<style>
+    .custom .ejob {
+        opacity: .60;
+    }
+</style>

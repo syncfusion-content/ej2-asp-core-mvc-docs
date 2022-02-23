@@ -1,0 +1,6 @@
+@{
+    var customTemplate = "Selected items count: ${value.length}";
+}
+<ejs-dropdowntree id="treedata" popupHeight="250px" placeholder="Select items" treeSettings="new Syncfusion.EJ2.DropDowns.DropDownTreeTreeSettings() { AutoCheck = true }" showCheckBox="true" cssClass="custom" mode="Custom" customTemplate="@customTemplate">
+    <e-dropdowntree-fields dataSource="ViewBag.localData" expanded="expanded" value="id" parentValue="pid" hasChildren="hasChild" text="name"></e-dropdowntree-fields>
+</ejs-dropdowntree>
