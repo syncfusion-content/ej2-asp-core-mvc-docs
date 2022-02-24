@@ -11,8 +11,7 @@ documentation: ug
 
 # Data Label
 
-Data label can be added to a chart series by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Visible)
-option in the dataLabel property.
+Data label can be added to a chart series by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Visible) option in the dataLabel property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -70,9 +69,7 @@ Accumulation chart provides support for placing the data label either `Inside` o
 
 ## Smart Labels
 
-Datalabels will be arranged smartly without overlapping with each other. You can enable or disable this feature using
-the [`EnableSmartLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_EnableSmartLabels)
-property.
+Datalabels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`EnableSmartLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_EnableSmartLabels) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -101,10 +98,7 @@ property.
 
 ## Data Label Template
 
-Label content can be formatted by using the template option. Inside the template, you can add the placeholder text
-`${point.x}` and `${point.y}` to display corresponding data points x & y value. Using
-[`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Template)
-property, you can set data label template in chart.
+Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Template) property, you can set data label template in chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -133,8 +127,7 @@ property, you can set data label template in chart.
 
 ## Connector Line
 
-Connector line will be visible when the data label is placed `Outside` the chart.
-The connector line can be customized using the `Type`, `Color`, `Width`, `Length` and `DashArray` properties
+Connector line will be visible when the data label is placed `Outside` the chart. The connector line can be customized using the `Type`, `Color`, `Width`, `Length` and `DashArray` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

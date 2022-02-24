@@ -10,9 +10,7 @@ documentation: ug
 
 # Right-To-Left
 
-Right To Left (RTL) can be enabled for Essential JS 2 components by calling `enableRtl` with
-`true`. This will render all the Essential JS 2 components in right to left direction. Find the code snippet
-for this below.
+Right To Left (RTL) can be enabled for Essential JS 2 components by calling `enableRtl` with `true`. This will render all the Essential JS 2 components in right to left direction. Find the code snippet for this below.
 
 ```html
 <script>

@@ -18,7 +18,7 @@ The steps below will assist you to upgrade the Syncfusion version in the Syncfus
 
 1. Open the Syncfusion ASP.NET Core Web application that uses the Syncfusion component.
 
-2. Open the Migration Wizard,  by right-click the **Syncfusion ASP.NET Core Application** from Solution Explorer and select **Syncfusion Web**. Choose **Migrate the Syncfusion ASP.NET Core Project to Another Version…**
+2. Open the Migration Wizard, by right-click the **Syncfusion ASP.NET Core Application** from Solution Explorer and select **Syncfusion Web**. Choose **Migrate the Syncfusion ASP.NET Core Project to Another Version…**
 
     ![MigrationAddin](images/MigrationAddin.png)
 
