@@ -24,7 +24,7 @@ End user can also hide grand totals for row or columns separately by setting the
 {% include code-snippet/pivot-table/summary-customization/grand-total/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/pivot-table/summary-customization/grand-total/default.cs %}
+{% include code-snippet/pivot-table/summary-customization/grand-total/GrandTotal.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,7 +34,7 @@ End user can also hide grand totals for row or columns separately by setting the
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/summary-customization/grand-total/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="default.cs" %}
+{% highlight c# tabtitle="GrandTotal.cs" %}
 {% include code-snippet/pivot-table/summary-customization/grand-total/GrandTotal.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -54,7 +54,7 @@ Allows to show or hide sub-totals in rows and columns using the [`ShowSubTotals`
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/summary-customization/sub-total/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="default.cs" %}
+{% highlight c# tabtitle="SubTotal.cs" %}
 {% include code-snippet/pivot-table/summary-customization/sub-total/SubTotal.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -65,7 +65,7 @@ Allows to show or hide sub-totals in rows and columns using the [`ShowSubTotals`
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/summary-customization/sub-total/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="default.cs" %}
+{% highlight c# tabtitle="SubTotal.cs" %}
 {% include code-snippet/pivot-table/summary-customization/sub-total/SubTotal.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -85,7 +85,7 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/summary-customization/sub-total-specific/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="default.cs" %}
+{% highlight c# tabtitle="SubTotalSpecific.cs" %}
 {% include code-snippet/pivot-table/summary-customization/sub-total-specific/SubTotalSpecific.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -96,7 +96,7 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/summary-customization/sub-total-specific/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="default.cs" %}
+{% highlight c# tabtitle="SubTotalSpecific.cs" %}
 {% include code-snippet/pivot-table/summary-customization/sub-total-specific/SubTotalSpecific.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -114,7 +114,7 @@ It can also be achieved using built-in toolbar options by setting the [`ShowTool
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/summary-customization/toolbar/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="default.cs" %}
+{% highlight c# tabtitle="Toolbar.cs" %}
 {% include code-snippet/pivot-table/summary-customization/toolbar/Toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -125,7 +125,7 @@ It can also be achieved using built-in toolbar options by setting the [`ShowTool
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/summary-customization/toolbar/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="default.cs" %}
+{% highlight c# tabtitle="Toolbar.cs" %}
 {% include code-snippet/pivot-table/summary-customization/toolbar/Toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
