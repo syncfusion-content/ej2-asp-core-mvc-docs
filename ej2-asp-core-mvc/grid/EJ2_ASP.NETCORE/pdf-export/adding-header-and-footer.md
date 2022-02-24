@@ -2,9 +2,9 @@
 layout: post
 title: Adding Header and Footer in ##Platform_Name## Grid Component
 description: Learn here all about Adding Header and Footer in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core
+platform: ej2-asp-core-mvc
 control: Adding Header and Footer
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

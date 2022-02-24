@@ -2,9 +2,9 @@
 layout: post
 title: Template Editing in ##Platform_Name## Grid Component
 description: Learn here all about Template Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core
+platform: ej2-asp-core-mvc
 control: Template Editing
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

@@ -2,9 +2,9 @@
 layout: post
 title: Remote Data in ##Platform_Name## Grid Component
 description: Learn here all about Remote Data in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core
+platform: ej2-asp-core-mvc
 control: Remote Data
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
