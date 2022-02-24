@@ -33,5 +33,5 @@ One of the the following .NET SDK is required to develop and run the Syncfusion 
 If you are planning to use Visual Studio to develop ASP.NET Core Applications.
 * .NET 6.0 requires Visual Studio 2022 17.0 or later.
 * .NET 5.0 requires Visual Studio 2019 16.8 or later.
-* .NET Core SDK 3.1 requires Visual Studio 2019 16.4 or later
-* .NET Core SDK 2.0 requires Visual Studio 2017 15.7 or later
+* .NET Core SDK 3.1 requires Visual Studio 2019 16.4 or later.
+* .NET Core SDK 2.0 requires Visual Studio 2017 15.7 or later.
