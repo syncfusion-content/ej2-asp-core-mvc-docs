@@ -19,8 +19,6 @@ The PDF Viewer server library allows you to achieve a Load balancing 
 
 **Step 1**: Install the [StackExchange.Redis.StrongName](https://www.nuget.org/packages/StackExchange.Redis.StrongName) NuGet in the web-service sample.
 
-![Image](../../images/load-balancing.jpeg)
-
 **Step 2:** Create a new class in the web-service project (Example: CacheManager.cs) and implement the **Syncfusion.EJ2.PdfViewer.ICacheManager** interface in the class.
 
 ```cs
