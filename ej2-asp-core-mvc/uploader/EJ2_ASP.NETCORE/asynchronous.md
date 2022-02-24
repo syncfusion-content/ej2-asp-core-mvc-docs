@@ -11,8 +11,7 @@ documentation: ug
 
 # Asynchronous upload
 
-The uploader control allows you to upload the files asynchronously.
-The upload process requires save and remove action URL to manage the upload process in the server.
+The uploader control allows you to upload the files asynchronously. The upload process requires save and remove action URL to manage the upload process in the server.
 
     *   The save action is necessary to handle the upload operation.
     *   The remove action is optional, one can handle the removed files from server.
@@ -21,9 +20,7 @@ The File can be uploaded automatically or manually. For more information, you ca
 
 ## Multiple file upload
 
-By Default, the uploader control allows you to select and upload multiple files simultaneously.
-The selected files are organized in a list for every file selection until you clear it by clicking clear button that is shown in footer. You can add the multiple attributes to original input element of file by enabling the multiple file selection.
-The following example explains about [multiple](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Multiple) file upload settings.
+By Default, the uploader control allows you to select and upload multiple files simultaneously. The selected files are organized in a list for every file selection until you clear it by clicking clear button that is shown in footer. You can add the multiple attributes to original input element of file by enabling the multiple file selection. The following example explains about [multiple](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Multiple) file upload settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -52,8 +49,7 @@ The following example explains about [multiple](https://help.syncfusion.com/cr/a
 
 ## Single file upload
 
-You can select and upload a single file by disabling the [multiple](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Multiple) file selection property.
-The file list item is removed for every selection and it always maintain a single file to upload.
+You can select and upload a single file by disabling the [multiple](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Multiple) file selection property. The file list item is removed for every selection and it always maintain a single file to upload.
 You can remove the multiple attributes form the original input element of file by enabling the single file upload property.
 
 The following example explains about single file upload settings.
@@ -85,10 +81,7 @@ The following example explains about single file upload settings.
 
 ## Save action
 
-The save action handler upload the files that needs to be specified in the [saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) property.
-The save handler receives the submitted files and manages the save process in server.
-After uploading the files to server location, the color of the selected file name changes to green and the remove
-icon is changed as bin icon.
+The save action handler upload the files that needs to be specified in the [saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) property. The save handler receives the submitted files and manages the save process in server. After uploading the files to server location, the color of the selected file name changes to green and the remove icon is changed as bin icon.
 
     *   When the file is uploaded successfully, the event “success” triggers to handle the operation after upload.
     *   When the file is failed to upload, the event “failure” triggers with information, which cause this failure.
@@ -208,8 +201,7 @@ public void Save(IList<IFormFile> chunkFile, IList<IFormFile> UploadFiles)
 
 ## Remove action
 
-The remove action is optional. Specify the URL to handle remove process from server.
-The remove handler receives the posted files and handle the remove operation in server.
+The remove action is optional. Specify the URL to handle remove process from server. The remove handler receives the posted files and handle the remove operation in server.
 
     *   When the files are removed successfully from the server, the success event triggers to denote the process has completed.
     *   When remove action fails, the event [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) triggers with information, which cause failure in remove process.
