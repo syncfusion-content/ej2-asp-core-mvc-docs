@@ -11,12 +11,7 @@ documentation: ug
 
 # Multi Selection
 
-Selection provides an interactive support and highlights the node that you select. Selection can be done through simple mouse down or keyboard interaction.
-
-The TreeView also supports selection of multiple nodes by setting [allowMultiSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowMultiSelection.html) to **true**.
-
-To multi-select, press and hold **CTRL** key and click the desired nodes. To select range of nodes, press and hold the **SHIFT** key and click the nodes.
-In the following example, the `allowMultiSelection` property is enabled.
+Selection provides an interactive support and highlights the node that you select. Selection can be done through simple mouse down or keyboard interaction. The TreeView also supports selection of multiple nodes by setting [allowMultiSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowMultiSelection.html) to **true**. To multi-select, press and hold **CTRL** key and click the desired nodes. To select range of nodes, press and hold the **SHIFT** key and click the nodes. In the following example, the `allowMultiSelection` property is enabled.
 
 > Multi selection is not applicable through touch interactions.
 

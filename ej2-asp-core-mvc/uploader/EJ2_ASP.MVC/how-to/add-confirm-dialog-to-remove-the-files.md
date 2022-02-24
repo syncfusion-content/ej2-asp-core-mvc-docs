@@ -11,8 +11,7 @@ documentation: ug
 
 # Add confirm dialog to remove the files
 
-You can customize the uploader control using confirm dialog before removing the files.
-Here, ej2 dialog is used as confirm dialog. Refer to the following example.
+You can customize the uploader control using confirm dialog before removing the files. Here, ej2 dialog is used as confirm dialog. Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

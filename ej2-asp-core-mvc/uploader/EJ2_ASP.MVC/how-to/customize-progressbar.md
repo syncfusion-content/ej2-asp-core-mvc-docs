@@ -11,7 +11,7 @@ documentation: ug
 
 # Customize progressbar
 
-You can customize the progress bar’s size, color, and background by overriding  the styles in uploader control. Refer to the following example.
+You can customize the progress bar’s size, color, and background by overriding the styles in uploader control. Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
