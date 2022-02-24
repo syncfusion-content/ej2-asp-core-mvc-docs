@@ -11,8 +11,7 @@ documentation: ug
 
 # Achieve invisible upload
 
-You can achieve the invisible upload feature by using the [selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event in uploader control.
-Refer to the following example.
+You can achieve the invisible upload feature by using the [selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event in uploader control. Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
