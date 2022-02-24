@@ -1,0 +1,44 @@
+
+@using Syncfusion.EJ2.Popups
+
+<div id="container" style="position: relative;height: 300px;">
+    @Html.EJS().Kanban("kanban").KeyField("Status").ActionBegin("actionBegin").DataBound("onDataBound").DataSource((IEnumerable<object>
+        )ViewBag.data).Columns(col =>
+        {
+        col.HeaderText("To Do").KeyField("Open").Add();
+        col.HeaderText("In Progress").KeyField("InProgress").Add();
+        col.HeaderText("Testing").KeyField("Testing").Add();
+        col.HeaderText("Done").KeyField("Close").Add();
+        }).CardSettings(card =>
+        {
+        card.ContentField("Summary").HeaderField("Id");
+        }).SwimlaneSettings(swim =>
+        {
+        swim.KeyField("Assignee");
+        }).Render()
+</div>
+<script>
+    var spinTarget = document.getElementById('container');
+    ej.popups.createSpinner({
+        target: spinTarget
+    });
+    var flag = true;
+    function onDataBound() {
+        if (flag) {
+            var ele = document.querySelectorAll(".e-icons.e-swimlane-row-expand");
+            for (var i = 0; i < ele.length; i++) {
+                ele[i].click();
+            }
+            flag = false;
+        }
+    }
+    function actionBegin(args) {
+        if (args.requestType === "rowExpandCollapse") {
+            ej.popups.showSpinner(spinTarget);
+            setInterval(function () {
+                //hideSpinner() method is used to hide the Spinner  
+                ej.popups.hideSpinner(spinTarget);
+            }, 5000);
+        }
+    }
+</script>
