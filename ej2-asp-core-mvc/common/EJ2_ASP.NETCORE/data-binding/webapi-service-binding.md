@@ -68,15 +68,15 @@ Now, we are going to scaffold **DbContext** and **model classes** from the exist
 
 Run the following commands in the **Package Manager Console**.
 
-* **Install-Package Microsoft.EntityFrameworkCore.Tools -Version 3.0.0**: This package creates database context and model classes from the database.
-* **Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 3.0.0**: The database provider that allows Entity Framework Core to work with SQL Server.
+* **Install-Package Microsoft.EntityFrameworkCore.Tools -Version 6.0.2**: This package creates database context and model classes from the database.
+* **Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 6.0.2**: The database provider that allows Entity Framework Core to work with SQL Server.
 
 Once the above packages are installed, we can scaffold DbContext and Model classes. Run the following command in the **Package Manager Console**.
 
 {% tabs %}
 {% highlight c# tabtitle="CMD" %}
 
-Scaffold-DbContext “Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=OrdersDetails;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False” Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data
+Scaffold-DbContext “Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=OrdersDetails;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False” Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
 {% endhighlight %}
 {% endtabs %}
@@ -84,7 +84,7 @@ Scaffold-DbContext “Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=OrdersD
 The above scaffolding command contains the following details for creating DbContext and model classes for the existing database and its tables.
 * **Connection string**: Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=OrdersDetails;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
 * **Data provider**: Microsoft.EntityFrameworkCore.SqlServer
-* **Output directory**: -OutputDir Data
+* **Output directory**: -OutputDir Models
 
 After running the above command, **OrdersDetailsContext.cs** and **Orders.cs** files will be created under the **WEBAPICRUD.Models** folder as follows.
 
@@ -100,7 +100,7 @@ It is not recommended to have a connection string with sensitive information in 
 
 Now, the DbContext must be configured using connection string and registered as scoped service using the **AddDbContext** method in **Startup.cs**.
 
-![Startup file](../images/webapi-startup.png)
+![Startup file](../images/webapi-program.png)
 
 ### Creating API Controller
 
@@ -131,34 +131,44 @@ namespace WEBAPICRUD
         {
             _context = context;
         }
+
         // GET: api/<OrdersController>
         [HttpGet]
         public object Get()
         {
-            return new { Items = _context.Orders, Count = _context.Orders.Count() };
+            return new { Items = _context.Orders.ToList(), Count = _context.Orders.Count() };
         }
+
+        // GET api/<OrdersController>/5
+        [HttpGet("{id}")]
+        public string Get(int id)
+        {
+            return "value";
+        }
+
         // POST api/<OrdersController>
         [HttpPost]
-        public void Post([FromBody] Orders book)
+        public void Post([FromBody] Order book)
         {
             _context.Orders.Add(book);
             _context.SaveChanges();
         }
         // PUT api/<OrdersController>
         [HttpPut]
-        public void Put(long id, [FromBody] Orders book)
+        public void Put(long id, [FromBody] Order book)
         {
-            Orders _book = _context.Orders.Where(x => x.OrderId.Equals(book.OrderId)).FirstOrDefault();
-            _book.CustomerId = book.CustomerId;
+            Order _book = _context.Orders.Where(x => x.OrderID.Equals(book.OrderID)).FirstOrDefault();
+            _book.CustomerID = book.CustomerID;
             _book.Freight = book.Freight;
             _book.OrderDate = book.OrderDate;
             _context.SaveChanges();
         }
-        // DELETE api/<OrdersController>
+
+        // DELETE api/<OrdersController>/5
         [HttpDelete("{id}")]
-        public void Delete(long id)
+        public void Delete(int id)
         {
-            Orders _book = _context.Orders.Where(x => x.OrderId.Equals(id)).FirstOrDefault();
+            Order _book = _context.Orders.Where(x => x.OrderID.Equals(id)).FirstOrDefault();
             _context.Orders.Remove(_book);
             _context.SaveChanges();
         }
@@ -385,15 +395,16 @@ Clicking the **Update** toolbar button will update the record in the Orders tabl
 {% tabs %}
 {% highlight c# tabtitle="OrdersController.cs" %}
 
-[HttpPut]
-public void Put(long id, [FromBody] Orders book)
-{
-    Orders _book = _context.Orders.Where(x => x.OrderId.Equals(book.OrderId)).FirstOrDefault();
-    _book.CustomerId = book.CustomerId;
-    _book.Freight = book.Freight;
-    _book.OrderDate = book.OrderDate;
-    _context.SaveChanges();
-}
+    // PUT api/<OrdersController>
+    [HttpPut]
+    public void Put(long id, [FromBody] Order book)
+    {
+        Order _book = _context.Orders.Where(x => x.OrderID.Equals(book.OrderID)).FirstOrDefault();
+        _book.CustomerID = book.CustomerID;
+        _book.Freight = book.Freight;
+        _book.OrderDate = book.OrderDate;
+        _context.SaveChanges();
+    }
 
 {% endhighlight %}
 {% endtabs %}
@@ -412,7 +423,7 @@ To delete a row, select any row and click the **Delete** toolbar button. Deletin
 [HttpDelete("{id}")]
 public void Delete(long id)
 {
-    Orders _book = _context.Orders.Where(x => x.OrderId.Equals(id)).FirstOrDefault();
+    Order _book = _context.Orders.Where(x => x.OrderID.Equals(id)).FirstOrDefault();
     _context.Orders.Remove(_book);
     _context.SaveChanges();
 }
