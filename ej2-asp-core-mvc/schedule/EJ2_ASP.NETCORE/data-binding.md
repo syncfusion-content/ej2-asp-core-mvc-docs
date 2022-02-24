@@ -246,13 +246,13 @@ namespace ScheduleSample.Controllers
         {
             return View();
         }  
-        public JsonResult LoadData()  // Here we get the Start and End Date and based on that can filter the data and return to Scheduler
+        public ActionResult LoadData()  // Here we get the Start and End Date and based on that can filter the data and return to Scheduler
         {
             var data = db.ScheduleEventDatas.ToList();
-            return Json(data, JsonRequestBehavior.AllowGet);
+            return Json(data);
         }
         [HttpPost]
-        public JsonResult UpdateData(EditParams param)
+        public ActionResult UpdateData([FromBody] EditParams param)
         {
             if (param.action == "insert" || (param.action == "batch" && param.added != null)) // this block of code will execute while inserting the appointments
             {
@@ -316,7 +316,7 @@ namespace ScheduleSample.Controllers
                 db.SubmitChanges();
             }
             var data = db.ScheduleEventDatas.ToList();
-            return Json(data, JsonRequestBehavior.AllowGet);
+            return Json(data);
         }
 
         public class EditParams
