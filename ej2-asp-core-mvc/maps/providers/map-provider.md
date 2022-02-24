@@ -109,10 +109,10 @@ Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/bing/binmaps/map-providers/osmsublayer/tagHelper %}
+{% include code-snippet/maps/map-providers/osmsublayer/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Osmsublayer.cs" %}
-{% include code-snippet/maps/bing/binmaps/map-providers/osmsublayer/osmsublayer.cs %}
+{% highlight c# tabtitle="Sublayer.cs" %}
+{% include code-snippet/maps/map-providers/osmsublayer/sublayer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -120,10 +120,10 @@ Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/bing/binmaps/map-providers/osmsublayer/razor %}
+{% include code-snippet/maps/map-providers/osmsublayer/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Osmsublayer.cs" %}
-{% include code-snippet/maps/bing/binmaps/map-providers/osmsublayer/osmsublayer.cs %}
+{% highlight c# tabtitle="Sublayer.cs" %}
+{% include code-snippet/maps/map-providers/osmsublayer/sublayer.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
