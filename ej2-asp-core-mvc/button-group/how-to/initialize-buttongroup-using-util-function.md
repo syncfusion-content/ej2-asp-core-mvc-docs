@@ -13,8 +13,7 @@ documentation: ug
 
 Though, it is a CSS component for easy initialization of ButtonGroup `createButtonGroup` util function can be used.
 
-Using `createButtonGroup` method, the Button options, selector, and cssClass is passed and the corresponding classes is added to the
-elements.
+Using `createButtonGroup` method, the Button options, selector, and cssClass is passed and the corresponding classes is added to the elements.
 
 ## Create basic ButtonGroup
 
@@ -28,8 +27,7 @@ To create a radio type ButtonGroup, the target element along with the input elem
 
 Checkbox type ButtonGroup creation is similar to radio type ButtonGroup, instead the type of the input elements should be `checkbox`.
 
-The following example illustrates how to create ButtonGroup using `createButtonGroup` method for basic, checkbox, and radio
-type behaviors.
+The following example illustrates how to create ButtonGroup using `createButtonGroup` method for basic, checkbox, and radio type behaviors.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

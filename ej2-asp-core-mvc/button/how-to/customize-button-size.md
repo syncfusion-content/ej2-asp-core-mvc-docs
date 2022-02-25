@@ -13,8 +13,7 @@ documentation: ug
 
 Button size can be customized by setting `height` and `width` for the button element.
 
-In the following sample, the height and width of the large button is customized as `50px` and `120px` and
-the height and width of the small button is customized as `30px` and `25px`.
+In the following sample, the height and width of the large button is customized as `50px` and `120px` and the height and width of the small button is customized as `30px` and `25px`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

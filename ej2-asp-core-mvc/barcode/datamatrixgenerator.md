@@ -42,7 +42,7 @@ DataMatrix Barcode is a two dimensional barcode that consists of a grid of dark 
 
 ## Customizing the Barcode color
 
-A page or printed media with barcode often appears colorful in the background and surrounding region with other contents. In such cases the barcode can also be customized to suit the needs. You can achieve this by using the forecolor property .
+A page or printed media with barcode often appears colorful in the background and surrounding region with other contents. In such cases the barcode can also be customized to suit the needs. You can achieve this by using the forecolor property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,7 +100,7 @@ The dimension of the barcode can be changed using the height and width property 
 
 ## Customizing the text
 
-In barcode generators you can customize the barcode text by using the display text property .
+In barcode generators you can customize the barcode text by using the display text property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
