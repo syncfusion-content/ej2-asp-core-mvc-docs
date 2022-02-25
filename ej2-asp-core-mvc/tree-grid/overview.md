@@ -11,7 +11,7 @@ documentation: ug
 
 # Overview
 
-The TreeGrid component is a feature-rich control used to visualize  self-referential hierarchical data effectively in a tabular format. It can pull data from data sources such as an array of JSON, RESTful services, `OData services`, `WCF services` or `DataManager`, and binding data fields to columns. It also expands or collapses child data using the tree column.
+The TreeGrid component is a feature-rich control used to visualize self-referential hierarchical data effectively in a tabular format. It can pull data from data sources such as an array of JSON, RESTful services, `OData services`, `WCF services` or `DataManager`, and binding data fields to columns. It also expands or collapses child data using the tree column.
 
 The most important features available in the TreeGrid component are paging, sorting, filtering, and searching.
 
@@ -23,9 +23,9 @@ The most important features available in the TreeGrid component are paging, sort
 * **Paging**: Allows easy switching between pages using the pager bar.
 * **Editing**: Offers cell and row editing modes for updating the records.
 * **Columns**: The column definitions are used as the datasource schema in the TreeGrid. This plays a vital role in rendering column values in the required tree structure.
-    * **Reordering**: Allows dragging and dropping of any column anywhere in the treegrid’s column header row, thus allowing repositioning of columns.
-    * **Resizing**:Resizing allows changing column width on the fly by simply dragging the right corner of the column header.
-    * **Cell Styling**: TreeGrid cell styles can be customized either by using CSS or programmatically.
+* **Reordering**: Allows dragging and dropping of any column anywhere in the treegrid’s column header row, thus allowing repositioning of columns.
+* **Resizing**: Resizing allows changing column width on the fly by simply dragging the right corner of the column header.
+* **Cell Styling**: TreeGrid cell styles can be customized either by using CSS or programmatically.
 * **Selection**: Rows or cells can be selected in the treegrid. One or more rows or cells can also be selected by holding Ctrl or Command, or programmatically.
 * **Templates**: Templates can be used to create custom user experiences in the treegrid.
 * **Aggregation**: Provides the option to easily visualize the aggregates for column values. Displays aggregates for child data.
