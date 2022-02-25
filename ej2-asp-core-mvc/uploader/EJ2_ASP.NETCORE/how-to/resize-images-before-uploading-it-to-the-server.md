@@ -11,7 +11,8 @@ documentation: ug
 
 # Resize images before uploading it to the server
 
-You can customize the dimension of the images before uploading it to the server. By using selected event, you can get the selected file information as type of an object. From the obtained image file information, create a new canvas and render an image with the custom dimensions. Refer the corresponding code snippet as follows.
+You can customize the dimension of the images before uploading it to the server. 
+By using selected event, you can get the selected file information as type of an object. From the obtained image file information, create a new canvas and render an image with the custom dimensions. Refer the corresponding code snippet as follows.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

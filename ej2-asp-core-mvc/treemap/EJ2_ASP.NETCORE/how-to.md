@@ -15,7 +15,9 @@ documentation: ug
 
 ## Customize the header for treemap drilldown
 
-Yon can add a header element as <div> and customize it to show the population of a particular country or continent on treemap drill-down. To customize the header for treemap drill-down, follow the given steps:
+You can add a header element as <div> and customize it to show the population of a particular country or continent on treemap drill-down. 
+
+To customize the header for treemap drill-down, follow the given steps:
 
 **Step 1**:
 
@@ -92,7 +94,9 @@ Customize the population for drilled countries or states in the header element w
 
 ## Add label template with drill down
 
-Yon can add a label template as <div> element to the treemap control when using the label template. To add a label template to the treemap control, you have to hide another labels by setting the `showLabels` property to **false** in `leafItemSettings` to show only the label template. To add label template to treemap drilldown, follow the given steps:
+You can add a label template as <div> element to the treemap control when using the label template. To add a label template to the treemap control, you have to hide another labels by setting the `showLabels` property to **false** in `leafItemSettings` to show only the label template. 
+
+To add label template to treemap drilldown, follow the given steps:
 
 **Step 1**:
 

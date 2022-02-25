@@ -22,7 +22,8 @@ Uploader control can be rendered by using the `ejs-uploader` tag helper in ASP.N
 
 The following example shows a basic Uploader control.
 
-> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests. Hence, use the third party `promise` library like blue-bird to use the uploader in Internet Explorer.
+> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests. 
+Hence, use the third party `promise` library like blue-bird to use the uploader in Internet Explorer.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

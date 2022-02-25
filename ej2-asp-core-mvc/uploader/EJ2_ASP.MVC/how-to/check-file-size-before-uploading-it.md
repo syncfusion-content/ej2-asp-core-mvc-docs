@@ -11,7 +11,9 @@ documentation: ug
 
 # Check file size before uploading it
 
-By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event, you can get the file size before upload it to server. File object contains the file size in bytes only. You can convert the size to standard formats (`KB` or `MB`) using **bytesToSize** method.
+By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event, you can get the file size before upload it to server. 
+File object contains the file size in bytes only. 
+You can convert the size to standard formats (`KB` or `MB`) using **bytesToSize** method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
