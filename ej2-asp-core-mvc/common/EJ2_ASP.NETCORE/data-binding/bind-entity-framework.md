@@ -201,10 +201,8 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
     <head>
         ....
         ....
-
         <!-- Syncfusion Essential JS 2 Styles -->
         <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
-
     </head>
 {% endhighlight %}
 {% endtabs %}
@@ -217,7 +215,6 @@ In this getting started walk-through, the required scripts are referred using CD
     <head>
         ....
         ....
-
         <!-- Syncfusion Essential JS 2 Scripts -->
         <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
@@ -246,7 +243,6 @@ In previous steps, we have successfully configured the Syncfusion ASP.NET Core p
 {% highlight c# tabtitle="CSHTML" %}
 
 <ejs-grid id="Grid">
-
 </ejs-grid>
 
 {% endhighlight %}
@@ -289,11 +285,13 @@ Grid columns can be defined by using the [GridColumn](https://help.syncfusion.co
 
 When you run the application, the `UrlDatasource` method will be called in your controller to load the datasource.
 
+{% tabs %}
+{% highlight c# tabtitle="HomeController.cs" %}
+
 using LibraryManagement.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Syncfusion.EJ2.Base;
-
 namespace LibraryManagement.Controllers
 {
     public class HomeController : Controller
@@ -304,14 +302,12 @@ namespace LibraryManagement.Controllers
         {
             _context = context;
         }
-
         public IActionResult UrlDatasource([FromBody] DataManagerRequest dm)
         {
             IEnumerable<Book> DataSource = _context.Books.ToList();
             int count = DataSource.Cast<Book>().Count();
             return Json(new { result = DataSource, count = count });
         }
-
         ...
     }
 }
