@@ -11,7 +11,8 @@ documentation: ug
 
 # Achieve file upload programmatically
 
-You can upload a file programmatically using `upload` method. The selected files data, get from `getFilesData` public method in uploader.
+You can upload a file programmatically using `upload` method. 
+The selected files data, get from `getFilesData` public method in uploader.
 
 The upload method behaves differently based on its arguments.
 * If this method receives any files as arguments, those files only start to upload.

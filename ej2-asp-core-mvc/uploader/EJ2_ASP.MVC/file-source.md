@@ -15,7 +15,8 @@ documentation: ug
 
 The uploader control allows you to upload the files using the select or drop files option from the file explorer. It also supports pasting to upload the image files. You can upload any currently copied images in the clipboard.
 
-> When you paste the image, it will be saved in the server with the filename as `image.png`. The file name can be renamed in the server end. You can generate a random name for the file name using `getUniqueID` method. Refer to the following example.
+> When you paste the image, it will be saved in the server with the filename as `image.png`. The file name can be renamed in the server end. You can generate a random name for the file name using `getUniqueID` method. 
+Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -143,7 +144,9 @@ public void Save()
 
 ## Drag and drop
 
-The uploader control allows you to drag and drop the files to upload. You can drag the files from file explorer and drop into the drop area. By default, the uploader control act as drop area element. The drop area gets highlighted when you drag the files over drop area.
+The uploader control allows you to drag and drop the files to upload. 
+You can drag the files from file explorer and drop into the drop area. 
+By default, the uploader control act as drop area element. The drop area gets highlighted when you drag the files over drop area.
 
 ### Custom drop area
 
@@ -180,7 +183,8 @@ Output be like the below.
 
 ### Customize drop area
 
-You can customize the appearance of drop area by overriding the default drop area styles. The class “” and “” is available to handle this customization.
+You can customize the appearance of drop area by overriding the default drop area styles. 
+The class “” and “” is available to handle this customization.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
