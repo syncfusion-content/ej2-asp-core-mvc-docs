@@ -112,3 +112,23 @@ Use the following CSS to customize the split bar arrows.
     border-color: rgba(33, 227, 22, 0.5);
 }
 ```
+
+## To hide the resize handle in Splitter
+
+Use the following CSS to hide the resize handler in the split bar
+
+### Hide the horizontal split bar resize arrow
+
+```CSS
+.e-splitter .e-split-bar.e-split-bar-horizontal .e-resize-handler {
+    display: none;
+}
+```
+
+### Hide the vertical split bar resize arrow
+
+```CSS
+.e-splitter .e-split-bar.e-split-bar-vertical .e-resize-handler {
+    display: none;
+}
+```

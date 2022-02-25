@@ -15,7 +15,6 @@ This article describes the API migration process of DatePicker component from Es
 
 ## Date selection
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -49,7 +48,6 @@ Setting the value
 
 ## Date format
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -99,7 +97,6 @@ Day header format
 
 ## Calendar views
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -154,7 +151,6 @@ Depth
 
 ## Date range
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -209,7 +205,6 @@ Maximum date
 
 ## Disabled dates
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -257,7 +252,6 @@ Block-out dates
 
 ## Customization
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -837,7 +831,6 @@ Prevent open
 
 ## Accessibility
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -871,7 +864,6 @@ Enable RTL
 
 ## Persistence
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -905,7 +897,6 @@ Enable Persistence
 
 ## Validation
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -981,7 +972,6 @@ Validation message
 
 ## Common
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -1263,7 +1253,6 @@ Float Label Type
 
 ## Globalization
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -1318,7 +1307,6 @@ First day of week
 
 ## Strict mode
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -1352,7 +1340,6 @@ Strict mode
 
 ## Open and Close
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>
@@ -1495,7 +1482,6 @@ Show
 
 ## View navigation
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <thead>
 <tr>

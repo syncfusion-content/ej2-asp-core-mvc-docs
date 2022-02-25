@@ -21,7 +21,7 @@ The PDF Viewer control provides options to add, edit, and delete the comments to
 * Free text annotation
 * Ink annotation
 
-![Comments](../../pdfviewer/images/commentannot.png)
+![Comments](../images/commentannot.png)
 
 ## Adding a comment to the annotation
 
@@ -53,7 +53,7 @@ If the comment panel is already in the open state, you can select the annotation
 * The selected annotation comment container is highlighted in the comment panel.
 * Now, you can add comment and comment replies using the comment panel.
 
-![AddingComments](../../pdfviewer/images/stickycomment.png)
+![AddingComments](../images/stickycomment.png)
 
 ### Adding Comment Replies
 
@@ -67,7 +67,7 @@ If the comment panel is already in the open state, you can select the annotation
 * Select the Set Status option in the context menu that appears.
 * Select the status of the annotation comment in the context menu that appears.
 
-![CommentStatus](../../pdfviewer/images/commentstatus.png)
+![CommentStatus](../images/commentstatus.png)
 
 ### Editing the comments and comments replies of the annotations
 
@@ -98,7 +98,7 @@ The annotation comment and comment replies can be edited in the following ways:
 * Select the status of the annotation comment in the context menu that appears.
 * Status ‘None’ is the default state. If the status is set to ‘None,’ the comments or reply does not appear.
 
-![CommentEdit](../../pdfviewer/images/commentsedit.png)
+![CommentEdit](../images/commentsedit.png)
 
 ### Delete Comment or Comment Replies
 
@@ -106,6 +106,6 @@ The annotation comment and comment replies can be edited in the following ways:
 * Click the more options button shown in the Comments or reply container.
 * Select the Delete option in the context menu that appears.
 
-![CommentEdit](../../pdfviewer/images/commentsdelete.png)
+![CommentEdit](../images/commentsdelete.png)
 
 >The annotation will be deleted on deleting the comment using comment panel.

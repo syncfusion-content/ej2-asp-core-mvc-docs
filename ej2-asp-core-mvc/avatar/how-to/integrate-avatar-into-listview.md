@@ -10,8 +10,7 @@ documentation: ug
 
 # Integrate avatar into ListView
 
-Avatar is integrated into the listview to create contacts applications. The `xsmall` size avatar is used to match
-the size of the list item. Letters and images are also used as avatar content.
+Avatar is integrated into the listview to create contacts applications. The `xsmall` size avatar is used to match the size of the list item. Letters and images are also used as avatar content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -78,8 +78,7 @@ Output be like the below.
 
 ## Custom position
 
-Even though the badges support the conventional `top` and `bottom` positions, the position of the badges can be changed as desired.
-This can be done by adding a custom class to the badge element to override the default position applied from the source.
+Even though the badges support the conventional `top` and `bottom` positions, the position of the badges can be changed as desired. This can be done by adding a custom class to the badge element to override the default position applied from the source.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
