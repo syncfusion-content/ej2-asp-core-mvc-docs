@@ -19,7 +19,7 @@ The PDF Viewer provides the options to add measurement annotations. You can meas
 * Radius
 * Volume
 
-![CalibrateAnnotation](../../../pdfviewer/images/calibrate_annotation.png)
+![CalibrateAnnotation](../../pdfviewer/images/calibrate_annotation.png)
 
 ## Adding a measurement annotation to the PDF document
 
@@ -32,7 +32,7 @@ The measurement annotations can be added to the PDF document using the annotatio
 
 In the pan mode, if the measurement annotation mode is entered, the PDF Viewer control will switch to text select mode.
 
-![CalibrateTool](../../../pdfviewer/images/calibrate_tool.png)
+![CalibrateTool](../../pdfviewer/images/calibrate_tool.png)
 
 Refer to the following code sample to switch to the distance annotation mode.
 
@@ -59,31 +59,31 @@ The fill color, stroke color, thickness, and opacity of the measurement annotati
 
 The fill color of the annotation can be edited using the color palette provided in the Edit Color tool.
 
-![CalibrateFillColor](../../../pdfviewer/images/calibrate_fillcolor.png)
+![CalibrateFillColor](../../pdfviewer/images/calibrate_fillcolor.png)
 
 ### Editing stroke color
 
 The stroke color of the annotation can be edited using the color palette provided in the Edit Stroke Color tool.
 
-![CalibrateStrokeColor](../../../pdfviewer/images/calibrate_stroke.png)
+![CalibrateStrokeColor](../../pdfviewer/images/calibrate_stroke.png)
 
 ### Editing thickness
 
 The thickness of the border of the annotation can be edited using the range slider provided in the Edit thickness tool.
 
-![CalibrateThickness](../../../pdfviewer/images/calibrate_thickness.png)
+![CalibrateThickness](../../pdfviewer/images/calibrate_thickness.png)
 
 ### Editing opacity
 
 The opacity of the annotation can be edited using the range slider provided in the Edit Opacity tool.
 
-![CalibrateOpacity](../../../pdfviewer/images/calibrate_opacity.png)
+![CalibrateOpacity](../../pdfviewer/images/calibrate_opacity.png)
 
 ### Editing the line properties
 
 The properties of the line shapes such as distance and perimeter annotations can be edited using the Line properties window. It can be opened by selecting the Properties option in the context menu that appears on right-clicking the distance and perimeter annotations.
 
-![CalibrateProperty](../../../pdfviewer/images/calibrate_lineprop.png)
+![CalibrateProperty](../../pdfviewer/images/calibrate_lineprop.png)
 
 ## Setting default properties during control initialization
 
@@ -106,7 +106,7 @@ Refer to the following code sample to set the default annotation settings.
 
 The scale ratio and unit of measurement can be modified using the scale ratio option provided in the context menu of the PDF Viewer control.
 
-![CalibrateScaleRatio](../../../pdfviewer/images/calibrate_scaleratio.png)
+![CalibrateScaleRatio](../../pdfviewer/images/calibrate_scaleratio.png)
 
 The Units of measurements supported for the measurement annotations in the PDF Viewer are:
 
@@ -117,7 +117,7 @@ The Units of measurements supported for the measurement annotations in the PDF V
 * Pica
 * Feet
 
-![CalibrateScaleDialog](../../../pdfviewer/images/calibrate_scaledialog.png)
+![CalibrateScaleDialog](../../pdfviewer/images/calibrate_scaledialog.png)
 
 ## Setting default scale ratio settings during the control initialization
 

@@ -101,8 +101,29 @@ Markers can be added to the layers of OSM Maps by setting the corresponding loca
 {% endtabs %}
 {% endif %}
 
-
-
 ## Sublayer
 
 Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for highlighting a particular continent or country in OSM Maps by adding another layer and specifying the `Type` property of Maps layer to **SubLayer**.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/map-providers/osmsublayer/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sublayer.cs" %}
+{% include code-snippet/maps/map-providers/osmsublayer/sublayer.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/map-providers/osmsublayer/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sublayer.cs" %}
+{% include code-snippet/maps/map-providers/osmsublayer/sublayer.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

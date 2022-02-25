@@ -40,7 +40,7 @@ Scheduler component can be rendered by using the `ejs-schedule` tag helper in AS
 
 > Running the above code will display an empty Scheduler with system date and time on the browser like below.
 
-![empty scheduler](../../schedule/images/scheduler.png)
+![empty scheduler](images/scheduler.png)
 
 ## Populating appointments
 
@@ -147,7 +147,7 @@ public List<AppointmentData> GetScheduleData()
 
 Output be like the below.
 
-![appointments](../../schedule/images/appointments.png)
+![appointments](images/appointments.png)
 
 ## Setting date
 
