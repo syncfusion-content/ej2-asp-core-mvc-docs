@@ -140,8 +140,7 @@ Now assign the `ViewBag.dataSource` to `DataSource` property. **value** and **ta
 
 ## Add Bullet Chart Title
 
-You can add a title using `Title` property to the Bullet Chart to provide quick
-information to the user about the data plotted in the Bullet Chart.
+You can add a title using `Title` property to the Bullet Chart to provide quick information to the user about the data plotted in the Bullet Chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

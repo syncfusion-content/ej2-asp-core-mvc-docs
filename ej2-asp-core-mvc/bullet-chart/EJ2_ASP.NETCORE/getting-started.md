@@ -125,8 +125,7 @@ Now assign the data to `dataSource` property. **value** and **target** values sh
 
 ## Add Bullet Chart Title
 
-You can add a title using `title` property to the bullet chart to provide quick
-information to the user about the data plotted in the bullet chart.
+You can add a title using `title` property to the bullet chart to provide quick information to the user about the data plotted in the bullet chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

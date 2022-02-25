@@ -15,8 +15,7 @@ When the mouse is hovered over a bar in the Bullet Chart, the tooltip displays i
 
 ## Default Tooltip
 
-By setting [`enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBuilder.html)property to true. By default tooltip is visible in bullet-chart.
-The tooltip is not visible by default. To make it visible, set the `enable` property in the `tooltip` to **true**.
+By setting [`enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBuilder.html)property to true. By default tooltip is visible in bullet-chart. The tooltip is not visible by default. To make it visible, set the `enable` property in the `tooltip` to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

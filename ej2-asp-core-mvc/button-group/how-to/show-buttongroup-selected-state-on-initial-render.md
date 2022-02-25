@@ -11,8 +11,7 @@ documentation: ug
 
 # Show ButtonGroup selected state on initial render
 
-To show selected state on initial render, `checked` property should to added to the corresponding
-input element.
+To show selected state on initial render, `checked` property should to added to the corresponding input element.
 
 The following example illustrates how to show selected state on initial render.
 
