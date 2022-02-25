@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started
 
- This section briefly explains about how to include a simple Accordion in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](https://helpej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017) page for introduction part of the system requirements and configure the common specifications.
+This section briefly explains about how to include a simple Accordion in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](https://helpej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017) page for introduction part of the system requirements and configure the common specifications.
 
 ## Adding component to the Application
 

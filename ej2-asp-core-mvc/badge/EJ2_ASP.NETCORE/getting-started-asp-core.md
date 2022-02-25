@@ -17,8 +17,7 @@ This section briefly explains about how to render Badge component in your ASP.NE
 
 ## Adding Badge component to the Application
 
-Since the `Badge` is a CSS component there is no need to html tag helper, the component is added by using
-CSS classes. Add the below code to your `index.cshtml` page which is present under `Views/Home` folder.
+Since the `Badge` is a CSS component there is no need to html tag helper, the component is added by using CSS classes. Add the below code to your `index.cshtml` page which is present under `Views/Home` folder.
 
 ```html
 <h1>Badge Component <span class="e-badge">New</span></h1>
