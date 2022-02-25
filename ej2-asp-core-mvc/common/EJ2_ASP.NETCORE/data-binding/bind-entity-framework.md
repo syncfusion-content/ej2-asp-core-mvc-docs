@@ -81,7 +81,7 @@ It is not recommended to have a connection string with sensitive information in 
 
 ![Move connection string to appsettings.json](../images/library-change-connection-string.png)
 
-Now, the **DbContext** must be configured using connection string and registered as scoped service using the **AddDbContext** method in **Startup.cs**.
+Now, the **DbContext** must be configured using connection string and registered as scoped service using the **AddDbContext** method in **Program.cs**.
 
 ![Modified appsettings.json](../images/library-configure-program.png)
 
