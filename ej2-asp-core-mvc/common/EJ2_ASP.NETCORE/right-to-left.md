@@ -8,27 +8,34 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Right-To-Left
+# Right-To-Left support in Syncfusion ASP.NET Core Components
 
-Right To Left (RTL) can be enabled for Essential JS 2 components by calling `enableRtl` with
-`true`. This will render all the Essential JS 2 components in right to left direction. Find the code snippet
-for this below.
+The right-to-left (RTL) support can be enabled for Syncfusion ASP.NET Core components by setting `enableRtl` property to `true`. This will render all the Syncfusion ASP.NET Core components in the right-to-left direction.
 
-```html
+## Enable RTL for all components
+
+You can enable right to left (RTL) for all Syncfusion components used in the application by setting `enableRtl` property to `true` in the script tag. Add the below code snippet in the **_Layout.cshtml** file inside **body** tag.
+
+{% tabs %}
+{% highlight c# tabtitle="_Layout.cshtml" %}
 <script>
     // Enables Right to left alignment for all controls
     ej.base.enableRtl(true);
 </script>
-```
+{% endhighlight %}
+{% endtabs %}
+
+![Grid component is rendered from the right to left](images/rtl-grid.png)
 
 ## Enable RTL to individual component
 
-To control a component’s direction individually you can directly set the component’s `enableRtl` property as true. For illustration, we have enabled RTL for Button component in following code snippet.
+To control a component’s direction individually you can directly set the component’s `enableRtl` property as true. For illustration, we have enabled RTL for Schedule component in following code snippet.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Rtl.cs" %}
+{% highlight c# tabtitle="CSHTML" %}
+<ejs-schedule id="schedule" height="550px" enableRtl="true"></ejs-schedule>
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -38,3 +45,4 @@ To control a component’s direction individually you can directly set the compo
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
+![Schedule component is rendered from the right-to-left](images/rightToLeft.png)
