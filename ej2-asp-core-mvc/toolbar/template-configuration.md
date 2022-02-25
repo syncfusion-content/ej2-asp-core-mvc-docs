@@ -51,8 +51,7 @@ Here, the template ID, `#template_toolbar` is directly appended to the Toolbar.
 
 ## Popup customization
 
-`Popup` is one of the supported responsive modes of the Toolbar. The Toolbar commands, popup mode priority and button text mode customizations are
-achieved in the item based rendering through property declaration. For more information on popup mode, refer [here](./responsive-mode/)
+`Popup` is one of the supported responsive modes of the Toolbar. The Toolbar commands, popup mode priority and button text mode customizations are achieved in the item based rendering through property declaration. For more information on popup mode, refer [here](./responsive-mode/)
 
 The above behavior can also be achieved with template rendering by defining `equivalent class` names instead of property declaration.
 
