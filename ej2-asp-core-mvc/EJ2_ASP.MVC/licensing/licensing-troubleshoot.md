@@ -10,6 +10,12 @@ documentation: ug
 
 # Licensing FAQ
 
+## Is an internet connection required for Syncfusion Essential Studio license validation?
+
+* Syncfusion license validation is done offline during application execution and does not require internet access. 
+
+* Apps registered with a Syncfusion license key can be deployed on any system that does not have an internet connection.
+
 ## How to upgrade from Trial version after purchasing a license
 
 To upgrade from trial version, there are two possible solutions.
