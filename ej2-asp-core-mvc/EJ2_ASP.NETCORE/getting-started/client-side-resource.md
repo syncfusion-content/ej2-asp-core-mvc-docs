@@ -1,13 +1,3 @@
----
-layout: post
-title: Getting Started with ##Platform_Name## Component
-description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
-platform: ej2-asp-core-mvc
-control: Client Side Resource
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
 # Including Client-Side Resources
 
 This article provides the details extensively about all the possible ways of including the client-side resources of Syncfusion EJ2 Components in an ASP.NET Core web application. 
@@ -48,7 +38,7 @@ Here, the generic syntax of the Syncfusion EJ2 CDN URL for the both Individual E
 
 The primary goal of EJ2 package is to help the novice to get started with Syncfusion EJ2 by referring the single line for script and styles without bothering about the dependency graph of the EJ2 components.
 
-> Syncfusion will never recommend EJ2 CDN for real-time projects. Because, the size of EJ2 CDN impacts website/app loading time since this package includes all the EJ2 components.
+>**Note:** Syncfusion will never recommend EJ2 CDN for real-time projects. Because, the size of EJ2 CDN impacts website/app loading time since this package includes all the EJ2 components.
 
 Add the EJ2 CDN client-side resources to the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
 
@@ -139,13 +129,21 @@ By using either one of the following methods, Client-Side Resource can be loaded
 Install required Syncfusion EJ2 Component packages as mentioned in “[**Installing NPM Packages in ASP.NET Core Web Application**](#installing-npm-packages-in-aspnet-core-web-application)”. 
 
 1. In addition to Syncfusion EJ2 packages, install gulp and glob packages using below commands.
+
 >Gulp Installation - **npm install gulp --save**
+>
 >![Gulp Installation](images/gulp-installation.png)
+>
 >Glob Installation - **npm install glob --save**
+>
 >![Glob Installation](images/glob-installation.png)
+
 2. To set up the server, open Dependencies -> Manage NuGet Packages -> Browse. Then, search and install "**Microsoft.AspNetCore.StaticFiles**" and "**Microsoft.TypeScript.MSBuild**" packages.
-![Install NuGet Packages](images/install-nuGet-package.png)     
+
+    ![Install NuGet Packages](images/install-nuGet-package.png)
+     
 Open up your "**Startup.cs**" file and edit your Configure function to looks like the below code snippet.
+
 ```js
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
@@ -158,10 +156,15 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 }
 ```
 Restart Visual Studio for the red squiggly lines below "**UseDefaultFiles**" and "**UseStaticFiles**" to disappear.
+
 3. Open the Source Explorer and right click on the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
+
 4. Select “**ASP.NET Core**” on the left side Tree View and select “**JavaScript File**” in the “**Add New Item**” window. It will include a js file in the root folder of the ASP.NET Core web application. Rename the js file as “**gulpfile.js**”.
-![Add gulpjs file](images/add-gulpjs.png)
+
+    ![Add gulpjs file](images/add-gulpjs.png)
+
 5. Copy the following code snippet and paste it in gulpfile.js for automatically copying the script and styles from “**node_modules**” to “**wwwroot**” while building the web application. 
+
 ```js
 /// <binding BeforeBuild='copy-client-resource'/>
 // nodejs requiring statement for importing and using the package in this js file
@@ -182,8 +185,11 @@ gulp.task("copy-client-resource", function (done) {
     done();
 });
 ```
+
 6. Build the ASP.NET Core web application and notice that a new folder named “**Syncfusion**” is created in “**wwwroot**” folder.
-![Copied to wwwroot](images/copied-to-wwwroot.png)
+
+    ![Copied to wwwroot](images/copied-to-wwwroot.png)
+
 7. Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion EJ2 Calendar has been loaded for example.  
 
 ```html
