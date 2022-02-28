@@ -134,7 +134,7 @@ In the following sample, the `picker` icon is added to primary button and using 
 
 
 
->> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icon to customize the primary button.
+> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icon to customize the primary button.
 
 ## Display hex code in input
 

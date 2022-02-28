@@ -96,8 +96,7 @@ You can add a title using `title` attribute to the circulargauge to provide quic
 
 ## Axis
 
-You can set the range to the axis using `minimum` and `maximum` attributes for axis tag.
-Refer below code snippet to add the axis range to circulargauge.
+You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer below code snippet to add the axis range to circulargauge.
 
 ```cs
 <ejs-circulargauge id="circular">

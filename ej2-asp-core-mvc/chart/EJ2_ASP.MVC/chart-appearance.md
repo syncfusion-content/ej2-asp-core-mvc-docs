@@ -13,8 +13,7 @@ documentation: ug
 
 ## Chart Theme Customization
 
-You can customize the default theme of the chart `Theme` property. There are 9 themes available. They are,
-`Material`, `Fabric`, `Bootstrap`, `HighContrastLight`, `MaterialDark`, `FabricDark`, `HighContrast`, `BootstrapDark` and `Bootstrap4`.
+You can customize the default theme of the chart `Theme` property. There are 9 themes available. They are, `Material`, `Fabric`, `Bootstrap`, `HighContrastLight`, `MaterialDark`, `FabricDark`, `HighContrast`, `BootstrapDark` and `Bootstrap4`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -43,8 +42,7 @@ You can customize the default theme of the chart `Theme` property. There are 9 t
 
 ## Custom Color Palette
 
-You can customize the default color of series or points by providing a custom color palette of your choice by
-using the [`Palettes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Palettes) property.
+You can customize the default color of series or points by providing a custom color palette of your choice by using the [`Palettes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Palettes) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,9 +71,7 @@ using the [`Palettes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ## Point Level Customization
 
-Marker, datalabel and fill color of each data point can be customized with
-[`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) and
-[`TextRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TextRender) event.
+Marker, datalabel and fill color of each data point can be customized with [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) and [`TextRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TextRender) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

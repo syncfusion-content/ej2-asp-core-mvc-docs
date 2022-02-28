@@ -10,8 +10,7 @@ documentation: ug
 
 # Pointers
 
-Pointers are used to indicate values on the axis. Value of the pointer can be modified using the
-[`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html#Syncfusion_EJ2_CircularGauge_CircularGaugePointer_Value) property.
+Pointers are used to indicate values on the axis. Value of the pointer can be modified using the [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html#Syncfusion_EJ2_CircularGauge_CircularGaugePointer_Value) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,11 +41,7 @@ Gauge supports 3 types of pointers such as `Needle`, `RangeBar` and `Marker`. Yo
 
 ## Needle Pointers
 
-A needle pointer contains three parts, a needle, a cap / knob and a tail. The length of the needle can be
-customized by using [`radius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html#Syncfusion_EJ2_CircularGauge_CircularGaugePointer_Radius) property. The length of the tail can be
-customized by using [`length`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property. The radius of the cap
-can be customized by using [`radius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) in cap object. The needle and tail
-length takes value either in `percentage` or `pixel`.
+A needle pointer contains three parts, a needle, a cap / knob and a tail. The length of the needle can be customized by using [`radius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html#Syncfusion_EJ2_CircularGauge_CircularGaugePointer_Radius) property. The length of the tail can be customized by using [`length`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property. The radius of the cap can be customized by using [`radius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) in cap object. The needle and tail length takes value either in `percentage` or `pixel`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -77,9 +72,7 @@ length takes value either in `percentage` or `pixel`.
 
 **Customization**
 
-Needle color and width can be customized by using [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) and [`pointerWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property.
-Cap and tails can be customized by using [`cap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) and
-[`needleTail`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) object.
+Needle color and width can be customized by using [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) and [`pointerWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property. Cap and tails can be customized by using [`cap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) and [`needleTail`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) object.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -135,8 +128,7 @@ The appearance of the needle pointer can be customized by using [`NeedleStartWid
 
 ## RangeBar Pointer
 
-RangeBar pointer is like ranges in an axis, that can be placed on gauge to mark the pointer value.
-RangeBar starts from the beginning of the gauge and ends at the pointer value.
+RangeBar pointer is like ranges in an axis, that can be placed on gauge to mark the pointer value. RangeBar starts from the beginning of the gauge and ends at the pointer value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -165,8 +157,7 @@ RangeBar starts from the beginning of the gauge and ends at the pointer value.
 
 **Customization**
 
-RangeBar can be customized in terms of color, border and thickness by using
-[`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html), [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) and [`pointerWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property.
+RangeBar can be customized in terms of color, border and thickness by using [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html), [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) and [`pointerWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -224,7 +215,7 @@ The start and end pointers of range bar in the circular gauge are rounded to for
 
 ## Marker Pointer
 
-Different type of marker shape can be used to mark the pointer value in axis.  You can change the marker shape using [`markerShape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in pointer. Gauge supports the below marker shape.
+Different type of marker shape can be used to mark the pointer value in axis. You can change the marker shape using [`markerShape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in pointer. Gauge supports the below marker shape.
 * Circle
 * Rectangle
 * Triangle
@@ -260,12 +251,7 @@ We can use image instead of rendering marker shape to denote the pointer value. 
 
 **Customization**
 
-The marker can be customized in terms of color, border, width and height by using
-[`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html),
-[`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html),
-[`markerWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) and
-[`markerHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in
-[`pointer`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html).
+The marker can be customized in terms of color, border, width and height by using [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html), [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html), [`markerWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) and [`markerHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in [`pointer`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -352,10 +338,7 @@ In addition to the default pointer, you can add n number of pointer to an axis b
 
 ## Animation
 
-Pointer will get animate on loading the gauge, this can be handled by using
-[`animation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in pointer.
-The [`enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in animation allows you to enable or disable the animation.
-The [`duration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property specify the duration of the animation in milliseconds.
+Pointer will get animate on loading the gauge, this can be handled by using [`animation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in pointer. The [`enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in animation allows you to enable or disable the animation. The [`duration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property specify the duration of the animation in milliseconds.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

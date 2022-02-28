@@ -10,14 +10,11 @@ documentation: ug
 
 # Template Engine
 
-Syncfusion ASP.NET MVC (Essential JS 2) has built-in template engine which provides options to compile
-template string into a executable function. Then the generated executable function can
-be used for rendering DOM element using desired data.
+Syncfusion ASP.NET MVC (Essential JS 2) has built-in template engine which provides options to compile template string into a executable function. Then the generated executable function can be used for rendering DOM element using desired data.
 
 ## Compiling
 
-`compile` method from `ej2-base` can be used to convert our template strings into
-executable functions.
+`compile` method from `ej2-base` can be used to convert our template strings into executable functions.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -27,7 +24,7 @@ executable functions.
 ## Available Template Syntax
 
 | Name | Syntax | Description |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Expression | `<div>${name}</div>`  | We have expression evolution as like ES6 expression string literals. |
 | Dot Variable Access | `<div>${person.info.name}</div>` | Access the json variable with dot notation. |
 | Variable Function | `<div>${name.toUpperCase()}</div>` | Utilize the variable function example, `name.toUpperCase()` |
