@@ -38,31 +38,6 @@ The tooltip can be enabled or disabled by setting the [`showTooltip`](https://ej
 
 
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize/ToolbarCustomize.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize/ToolbarCustomize.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Tooltip Template
 
 User can design their own tooltip by setting the property [`TooltipTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_TooltipTemplate) with own HTML elements. The property accepts both HTML string and ID attribute. The following place holders are available to display its dynamic values inside the HTML elements.

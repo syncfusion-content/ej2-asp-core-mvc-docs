@@ -18,7 +18,7 @@ The PDF Viewer supports printing the loaded PDF file. You can enable/disable the
     </div>
 ```
 
-![Alt text](../images/print.png)
+![Alt text](images/print.png)
 
 You can invoke print action using the following code snippet.,
 

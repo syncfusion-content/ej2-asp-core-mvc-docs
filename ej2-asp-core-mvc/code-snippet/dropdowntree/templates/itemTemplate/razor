@@ -1,0 +1,10 @@
+<div class="control-section">
+    <div style="margin: 0 auto; width:350px;">
+        @Html.EJS().DropDownTree("ddt").CssClass("custom").Placeholder("Select an employee").Width("350px").PopupHeight("250px").Fields(ViewBag.templateData).ItemTemplate("<div><span class=\"ename\">${name} - </span><span class=\"ejob\">${job}</span></div>").Render()
+    </div>
+</div>
+<style>
+    .custom .ejob {
+        opacity: .60;
+    }
+</style>

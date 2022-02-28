@@ -11,7 +11,7 @@ documentation: ug
 
 # Resize images before uploading it to the server
 
-You can customize the dimension of the images before uploading it to the server.
+You can customize the dimension of the images before uploading it to the server. 
 By using [selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event, you can get the selected file information as type of an object. From the obtained image file information, create a new canvas and render an image with the custom dimensions. Refer the corresponding code snippet as follows.
 
 {% if page.publishingplatform == "aspnet-core" %}

@@ -12,8 +12,7 @@ documentation: ug
 
 The badges can be integrated with the `listview` component to indicate new notification with colour based on priority.
 
-In the following sample, `default` badges are used and there is no need to customize the badge size. The component
-will automatically adjust the size based on the container element.
+In the following sample, `default` badges are used and there is no need to customize the badge size. The component will automatically adjust the size based on the container element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

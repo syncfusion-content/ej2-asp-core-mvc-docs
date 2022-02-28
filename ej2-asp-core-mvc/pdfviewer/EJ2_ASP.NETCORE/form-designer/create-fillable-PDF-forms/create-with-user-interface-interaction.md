@@ -13,14 +13,14 @@ documentation: ug
 
 The PDF viewer control provides the option for interaction with Form Fields such as Drag and resize. you can draw a Form Field dynamically by clicking the Form Field icon on the toolbar and draw it in the PDF document. The Form Fields type supported by the PDF Viewer Control are:
 
-    * Textbox
-    * Password
-    * CheckBox
-    * RadioButton
-    * ListBox
-    * DropDown
-    * SignatureField
-    * InitialField
+* Textbox
+* Password
+* CheckBox
+* RadioButton
+* ListBox
+* DropDown
+* SignatureField
+* InitialField
 
 ## Enable or Disable form designer toolbar
 

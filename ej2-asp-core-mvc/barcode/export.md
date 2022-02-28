@@ -15,8 +15,7 @@ Export barcode as an image and base64 string is common for barcode,QRcode and da
 
 ## Export
 
-Barcode provides the support to export its content as an image in the specified image type and downloads it in the browser.
-The following code example shows how to export the barcode as an image
+Barcode provides the support to export its content as an image in the specified image type and downloads it in the browser. The following code example shows how to export the barcode as an image
 
 ```typescript
 
@@ -30,8 +29,7 @@ The filename specifies the name of the file to be downloaded.
 
 ### Export As Base64String
 
-Barcode provides the support to export its content as an image in the specified image type and returns it as base64 string.
-The following code example shows how to export the barcode as a base64 string
+Barcode provides the support to export its content as an image in the specified image type and returns it as base64 string. The following code example shows how to export the barcode as a base64 string,
 
 ```typescript
 

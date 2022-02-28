@@ -11,7 +11,7 @@ documentation: ug
 
 # Drag and Drop
 
-The TreeView control allows you to drag and drop any node by setting [allowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowDragAndDrop.html)&nbsp;to **true**. Nodes can be dragged and dropped at all levels of the same TreeView.
+The TreeView control allows you to drag and drop any node by setting [allowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowDragAndDrop.html)&nbsp;to **true**. Nodes can be dragged and dropped at all levels of the same TreeView. 
 
 The dragged nodes can be dropped at any level by indicator lines with **line**, **plus/minus**, and **restrict** icons. It represents the exact position where the node is to be dropped as sibling or child.
 
@@ -62,9 +62,9 @@ Output be like the below.
 
 ## Multiple-node drag and drop
 
-To drag and drop more than one node, you should enable the [allowMultiSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowMultiSelection.html) property along with the `allowDragAndDrop` property.
+To drag and drop more than one node, you should enable the [allowMultiSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowMultiSelection.html) property along with the `allowDragAndDrop` property. 
 
-To perform multi-selection, press and hold **CTRL** key and click the desired nodes. To select range of nodes, press and hold the **SHIFT** key and click the nodes.
+To perform multi-selection, press and hold **CTRL** key and click the desired nodes. To select range of nodes, press and hold the **SHIFT** key and click the nodes. 
 
 In the following sample,  the `allowMultiSelection` property is  enabled along with the `allowDragAndDrop` property.
 

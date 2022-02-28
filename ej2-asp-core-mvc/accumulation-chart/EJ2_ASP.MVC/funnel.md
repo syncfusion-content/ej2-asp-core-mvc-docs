@@ -11,8 +11,7 @@ documentation: ug
 
 # Funnel Chart
 
-To render a funnel series, use the series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Type)
-as `Funnel`.
+To render a funnel series, use the series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Type) as `Funnel`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -99,8 +98,7 @@ The funnel's neck size can be customized by using the `NeckWidth` and `NeckHeigh
 
 ## Gap Between the Segments
 
-Funnel chart provides options to customize the space between the segments by using the `GapRatio` property of the
-series. It ranges from 0 to 1.
+Funnel chart provides options to customize the space between the segments by using the `GapRatio` property of the series. It ranges from 0 to 1.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -129,8 +127,7 @@ series. It ranges from 0 to 1.
 
 ## Explode
 
-Points can be exploded on mouse click by setting the `Explode` property to true. You can also explode the point
-on load using `ExplodeIndex`. Explode distance can be set by using `ExplodeOffset` property.
+Points can be exploded on mouse click by setting the `Explode` property to true. You can also explode the point on load using `ExplodeIndex`. Explode distance can be set by using `ExplodeOffset` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

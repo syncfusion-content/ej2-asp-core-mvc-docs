@@ -64,7 +64,7 @@ By default, the [ProgressDirection](https://help.syncfusion.com/cr/aspnetcore-js
 
 By default, the newly created toasts will append next with existing toasts. You can change the sequence like inserting before the toast by enabling the [`NewestOnTop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_NewestOnTop).
 
-Here, The following sample demonstrates the combination of the `Target`, `ShowCloseButton`, `ShowProgressBar`, and `NewestOnTop` properties in toast.
+Here, the following sample demonstrates the combination of the `Target`, `ShowCloseButton`, `ShowProgressBar`, and `NewestOnTop` properties in toast.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

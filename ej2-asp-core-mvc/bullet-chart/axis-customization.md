@@ -13,8 +13,7 @@ documentation: ug
 
 ## MajorTickLines and MinorTickLines Customization
 
-You can customize the `width`, `color`, and `size` of minor and major tick lines using the
-[`majorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMajorTickLines.html) and [`minorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMinorTickLines.html) properties of the bullet-chart.
+You can customize the `width`, `color`, and `size` of minor and major tick lines using the [`majorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMajorTickLines.html) and [`minorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartMinorTickLines.html) properties of the bullet-chart.
 
 The following properties can be used to customize `majorTicklines` and `minorTicklines`.
 
@@ -169,8 +168,7 @@ The following table describes the result of applying some commonly used formats 
 
 ## GroupingSeparator
 
-To separate groups of thousands, use the [`enableGroupSeparator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBuilder.html) property of bullet-chart.
-To separate the groups of thousands, set the `enableGroupSeparator` property to **true**.
+To separate groups of thousands, use the [`enableGroupSeparator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBuilder.html) property of bullet-chart. To separate the groups of thousands, set the `enableGroupSeparator` property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
