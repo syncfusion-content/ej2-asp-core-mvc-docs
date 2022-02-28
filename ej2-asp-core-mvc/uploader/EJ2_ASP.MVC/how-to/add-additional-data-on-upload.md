@@ -11,7 +11,8 @@ documentation: ug
 
 # Add additional data on upload
 
-The uploader control allows to add additional data on file upload, which is used to get in the server-side. By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event and its customFormData argument, this behavior can be achieved.
+The uploader control allows to add additional data on file upload, which is used to get in the server-side. 
+By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event and its customFormData argument, this behavior can be achieved.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

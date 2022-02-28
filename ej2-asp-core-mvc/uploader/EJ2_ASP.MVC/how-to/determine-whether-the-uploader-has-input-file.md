@@ -11,7 +11,8 @@ documentation: ug
 
 # Determine whether uploader has file input (required validation)
 
-By setting **required** attribute to uploader input element, you can validate the file input has any value in it. In the below sample, set required attribute to the uploader input element and showcase the validation failure message using `data-required-message` attribute.
+By setting **required** attribute to uploader input element, you can validate the file input has any value in it. 
+In the below sample, set required attribute to the uploader input element and showcase the validation failure message using `data-required-message` attribute.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

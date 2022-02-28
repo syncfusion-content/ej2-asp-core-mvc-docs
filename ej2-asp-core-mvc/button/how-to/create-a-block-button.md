@@ -11,9 +11,7 @@ documentation: ug
 
 # Create a Block Button
 
-You can customize a Button into a Block Button that will span the entire width of its parent element. To create a Block
-Button, set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass)
-property to `e-block`.
+You can customize a Button into a Block Button that will span the entire width of its parent element. To create a Block Button, set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-block`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

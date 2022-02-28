@@ -102,9 +102,7 @@ Specifies the coordinate units of an annotation either in `Pixel` or `Point`.
 
 ## Alignment
 
-The annotations can be moved vertically and horizontally from its default position by using `VerticalAlignment`
-or `HorizontalAlignment` properties. The verticalAlignment property takes value as `Top`, `Bottom` or `Middle` and the
-horizontalAlignment property takes value as `Near`, `Far` or `Center`.
+The annotations can be moved vertically and horizontally from its default position by using `VerticalAlignment` or `HorizontalAlignment` properties. The verticalAlignment property takes value as `Top`, `Bottom` or `Middle` and the horizontalAlignment property takes value as `Near`, `Far` or `Center`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

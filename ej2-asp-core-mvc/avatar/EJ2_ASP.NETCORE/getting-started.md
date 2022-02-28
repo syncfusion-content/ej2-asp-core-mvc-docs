@@ -17,8 +17,7 @@ This section briefly explains about how to render Avatar component in your ASP.N
 
 ## Adding Avatar component to the Application
 
-Since the `Avatar` is a CSS component there is no need to html tag helper, the component is added by
-using CSS classes. Add the below code to your `index.cshtml` page which is present under `Views/Home` folder.
+Since the `Avatar` is a CSS component there is no need to html tag helper, the component is added by using CSS classes. Add the below code to your `index.cshtml` page which is present under `Views/Home` folder.
 
 ```html
 <span class="e-avatar">GR</span>

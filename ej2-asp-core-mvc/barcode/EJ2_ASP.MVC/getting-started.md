@@ -82,7 +82,7 @@ After installation complete, this will be included in the project. You can refer
 
 ## Add Barcode to the project
 
-Create and add a `barcode` (JSON data) with specific size, value .
+Create and add a `barcode` (JSON data) with specific size, value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

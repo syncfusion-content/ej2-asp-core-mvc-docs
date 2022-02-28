@@ -12,12 +12,11 @@ documentation: ug
 # Animation
 
 To animate the Tooltip, a set of specific animation effects are available, and it can be controlled using the `animation` property.
- The animation property also allows you to set delay, duration, and various other effects of your choice.
+The animation property also allows you to set delay, duration, and various other effects of your choice.
 
 `AnimationModel` is derived from base to apply the chosen animation effect, duration, etc. on Tooltips.
 
-By default, Tooltip entrance occurs over 150 ms using the `ease-out` timing function. It exits also at 150 ms,
-but uses `ease-in` timing function.
+By default, Tooltip entrance occurs over 150 ms using the `ease-out` timing function. It exits also at 150 ms, but uses `ease-in` timing function.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -78,9 +77,7 @@ When the `effect` is specified as `None`, no effect will be applied to the Toolt
 
 ## Animating via open/close methods
 
-Animations can also be applied on Tooltips dynamically through `open` and `close` methods. These methods accept the animation model as an
- optional parameter. If you pass `TooltipAnimationSettings`, animation takes this model; otherwise, it takes the values from the
-  `animation` property. It is also possible to pass different animations for Tooltips on each target.
+Animations can also be applied on Tooltips dynamically through `open` and `close` methods. These methods accept the animation model as an optional parameter. If you pass `TooltipAnimationSettings`, animation takes this model; otherwise, it takes the values from the `animation` property. It is also possible to pass different animations for Tooltips on each target.
 
 Refer to the code snippet below to apply animations using public methods.
 
@@ -115,8 +112,7 @@ Output be like the below.
 
 ## Apply transition
 
-The transition effect can be applied on Tooltips by using the `beforeRender` event as given in the
- following work-around code example.
+The transition effect can be applied on Tooltips by using the `beforeRender` event as given in the following work-around code example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

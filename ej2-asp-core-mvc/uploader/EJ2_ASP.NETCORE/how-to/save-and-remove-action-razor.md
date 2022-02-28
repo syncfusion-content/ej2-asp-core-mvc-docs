@@ -11,7 +11,8 @@ documentation: ug
 
 # Save and Remove action in ASP.NET Core Razor
 
-The save action handler upload the files that needs to be specified in the [saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) property. The save handler receives the submitted files and manages the save process in server.
+The save action handler upload the files that needs to be specified in the [saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) property. 
+The save handler receives the submitted files and manages the save process in server.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

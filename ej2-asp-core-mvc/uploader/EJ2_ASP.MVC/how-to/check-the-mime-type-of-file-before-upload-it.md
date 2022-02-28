@@ -11,7 +11,8 @@ documentation: ug
 
 # Check the MIME type of file before upload it
 
-By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event, you can get the file MIME type before uploading it to server. In the below sample, file MIME type is shown in the alert box before file start to upload.
+By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event, you can get the file MIME type before uploading it to server. 
+In the below sample, file MIME type is shown in the alert box before file start to upload.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

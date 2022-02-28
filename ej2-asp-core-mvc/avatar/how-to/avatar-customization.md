@@ -12,8 +12,7 @@ documentation: ug
 
 ## Colour customization
 
-The avatar comes with default background colour (grey). This can be easily customized to desired colour by adding
-custom class or directly selecting the avatar class from the CSS.
+The avatar comes with default background colour (grey). This can be easily customized to desired colour by adding custom class or directly selecting the avatar class from the CSS.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -46,9 +45,7 @@ Output be like the below.
 
 ## Customize avatar sizes
 
-Even though the avatar comes with five predefined sizes, sometimes it's not enough. So, the avatar is designed in such
-a way that the width and height will be relative to font-size. By changing the `font-size` of the avatar element, you can
-change the width and height automatically.
+Even though the avatar comes with five predefined sizes, sometimes it's not enough. So, the avatar is designed in such a way that the width and height will be relative to font-size. By changing the `font-size` of the avatar element, you can change the width and height automatically.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

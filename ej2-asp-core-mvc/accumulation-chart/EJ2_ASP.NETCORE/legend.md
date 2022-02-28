@@ -11,11 +11,7 @@ documentation: ug
 
 # Legend
 
-As like a chart, the legend is also available for accumulation charts, which gives information about the points.
-By default, the legend will be placed on the right, if the width of the chart is high or will be placed on the bottom,
-if the height of the chart is high. Other customization features regarding the legend element are same as the
-[`chart legend`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html).
-Here, the legend for a point can be collapsed by giving the empty string to the x value of the point.
+As like a chart, the legend is also available for accumulation charts, which gives information about the points. By default, the legend will be placed on the right, if the width of the chart is high or will be placed on the bottom, if the height of the chart is high. Other customization features regarding the legend element are same as the [`chart legend`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html). Here, the legend for a point can be collapsed by giving the empty string to the x value of the point.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,8 +40,7 @@ Here, the legend for a point can be collapsed by giving the empty string to the 
 
 ## Position and Alignment
 
-By using the position property, you can position the legend at the `left`, `right`, `top` or `bottom` of the chart.
-You can also align the legend to `center`, `far` or `near` of the chart using the alignment property.
+By using the position property, you can position the legend at the `left`, `right`, `top` or `bottom` of the chart. You can also align the legend to `center`, `far` or `near` of the chart using the alignment property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -103,8 +98,7 @@ You can reverse the order of the legend items by using the [`reverse`](https://h
 
 ## Legend Shape
 
-To change the legend icon shape, use the `legendShape` property in the `series`. By default, legend icon shape
-is `seriesType`.
+To change the legend icon shape, use the `legendShape` property in the `series`. By default, legend icon shape is `seriesType`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -191,8 +185,7 @@ You can customize the size of the legend items by using the `shapeHeight` and `s
 
 ## Paging for Legend
 
-Paging will be enabled by default, when the legend items exceeds the legend bounds. You can view the each legend
-item by navigating between the pages using the navigation buttons.
+Paging will be enabled by default, when the legend items exceeds the legend bounds. You can view the each legend item by navigating between the pages using the navigation buttons.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -250,8 +243,7 @@ You can customize the animation while clicking legend by setting enableAnimation
 
 ## Legend Title
 
-You can set title for legend using `Title` property in `LegendSettings`. You can also customize the `FontStyle`, `Size`, `FontWeight`,
-`Color`, `TextAlignment`, `FontFamily`, `Opacity` and `TextOverflow` of legend title. `TitlePosition` is used to set the legend position in `Top`, `Left` and `Right` position. `MaximumTitleWidth` is used to set the width of the legend title. By default, it will be `100px`.
+You can set title for legend using `Title` property in `LegendSettings`. You can also customize the `FontStyle`, `Size`, `FontWeight`, `Color`, `TextAlignment`, `FontFamily`, `Opacity` and `TextOverflow` of legend title. `TitlePosition` is used to set the legend position in `Top`, `Left` and `Right` position. `MaximumTitleWidth` is used to set the width of the legend title. By default, it will be `100px`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

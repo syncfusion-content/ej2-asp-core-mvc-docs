@@ -10,13 +10,16 @@ documentation: ug
 
 # Overview
 
-The **uploader** control is used to upload images, documents, and other files to the server. This control is the extended version of HTML5 that is uploaded with multiple file selection, auto upload, drag and drop, progress bar, preload files, and validation.
+The **uploader** control is used to upload images, documents, and other files to the server. 
+This control is the extended version of HTML5 that is uploaded with multiple file selection, auto upload, drag and drop, progress bar, preload files, and validation.
 
 ## Key features
 
-* **[Asynchronous upload](./async/)** - Allows you to upload the files asynchronously. The upload process requires save and remove action URL to manage upload process in the server.
+* **[Asynchronous upload](./async/)** - Allows you to upload the files asynchronously. 
+The upload process requires save and remove action URL to manage upload process in the server.
 
-* **[Drag and drop](./file-source/#drag-and-drop)** - Allows you to drag files from the file explorer and drop into the drop area. By default, the uploader control act as drop area element.
+* **[Drag and drop](./file-source/#drag-and-drop)** - Allows you to drag files from the file explorer and drop into the drop area. 
+By default, the uploader control act as drop area element.
 
 * **[Directory upload](./file-source/#directory-upload)** - Allows you to upload all files of folders to server.
 

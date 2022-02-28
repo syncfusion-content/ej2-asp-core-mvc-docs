@@ -15,8 +15,7 @@ This section briefly explains about how to create a simple ButtonGroup in your A
 
 ## Add ButtonGroup to the project
 
-To create simple ButtonGroup add the div tag with class name as `e-btn-group` and add `ejs-button` elements should group
-inside the `div` element in your **Index.cshtml** page.
+To create simple ButtonGroup add the div tag with class name as `e-btn-group` and add `ejs-button` elements should group inside the `div` element in your **Index.cshtml** page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -49,9 +48,9 @@ Output be like the below.
 
 ## Run the application
 
- After successful compilation of your application, simply press `F5` to run the application.
+After successful compilation of your application, simply press `F5` to run the application.
 
- The following example shows a default rendering of ButtonGroup.
+The following example shows a default rendering of ButtonGroup.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

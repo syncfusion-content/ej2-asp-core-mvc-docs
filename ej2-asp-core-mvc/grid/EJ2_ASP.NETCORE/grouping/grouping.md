@@ -204,4 +204,4 @@ You can collapse the selected group from an external button by invoking the **ex
 
 ## See Also
 
-* [Exporting grouped records](../excel-exporting#Exporting-grouped-records)
+* [Exporting grouped records](../../EJ2_ASP.NETCORE/excel-export/excel-exporting#Exporting-grouped-records)

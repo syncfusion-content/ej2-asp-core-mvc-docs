@@ -13,8 +13,7 @@ documentation: ug
 
 ## Pie Chart
 
-To render a pie series, use the series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Type)
-as `Pie`.
+To render a pie series, use the series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Type) as `Pie`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -43,9 +42,7 @@ as `Pie`.
 
 ## Radius Customization
 
-By default, radius of the pie series will be 80% of the size (minimum of chart width and height).
-You can customize this using [`radius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Radius)
-property of the series.
+By default, radius of the pie series will be 80% of the size (minimum of chart width and height). You can customize this using [`radius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Radius) property of the series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -132,9 +129,7 @@ You can use radius mapping to render the slice with different [`radius`](https:/
 
 ## Doughnut Chart
 
-To achieve a doughnut in pie series, customize the [`innerRadius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_InnerRadius)
-property of the series. By setting value greater than 0%, a doughnut will appear.
-The `innerRadius` property takes value from 0% to 100% of the pie radius.
+To achieve a doughnut in pie series, customize the [`innerRadius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_InnerRadius) property of the series. By setting value greater than 0%, a doughnut will appear. The `innerRadius` property takes value from 0% to 100% of the pie radius.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -163,11 +158,7 @@ The `innerRadius` property takes value from 0% to 100% of the pie radius.
 
 ## Start and End angles
 
-You can customize the start and end angle of the pie series using the
-[`startAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_StartAngle) and
-[`endAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_EndAngle)
-properties. The default value of  `startAngle` is 0 degree, and `endAngle` is 360 degrees. By customizing this,
-you can achieve a semi pie series.
+You can customize the start and end angle of the pie series using the [`startAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_StartAngle) and [`endAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_EndAngle) properties. The default value of `startAngle` is 0 degree, and `endAngle` is 360 degrees. By customizing this, you can achieve a semi pie series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -196,8 +187,7 @@ you can achieve a semi pie series.
 
 ## Color & Text Mapping
 
-The fill color and the text in the data source can be mapped to the chart using `pointColorMapping` in series and
-`name` in datalabel respectively.
+The fill color and the text in the data source can be mapped to the chart using `pointColorMapping` in series and `name` in datalabel respectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -255,8 +245,7 @@ Individual points can be customized using the `pointRender` event.
 
 ## Hide pie or doughnut border
 
-By default, the border will appear in the pie/doughnut chart while mouse hover on the chart. You can disable the the border by
-setting `EnableBorderOnMouseMove` property is `false`.
+By default, the border will appear in the pie/doughnut chart while mouse hover on the chart. You can disable the the border by setting `EnableBorderOnMouseMove` property is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
