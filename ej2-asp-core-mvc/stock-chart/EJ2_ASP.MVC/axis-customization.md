@@ -15,8 +15,7 @@ documentation: ug
 
 ## Axis Crossing
 
-An axis can be positioned in the chart area using [CrossesAt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesAt) and [CrossesInAxis](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesInAxis) properties. The [CrossesAt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesAt)
-property specifies the values (datetime, numeric, or logarithmic) at which the axis line has to be intersected with the vertical axis or vice-versa, and the [CrossesInAxis](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesInAxis) property specifies the axis name with which the axis line has to be crossed.
+An axis can be positioned in the chart area using [CrossesAt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesAt) and [CrossesInAxis](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesInAxis) properties. The [CrossesAt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesAt) property specifies the values (datetime, numeric, or logarithmic) at which the axis line has to be intersected with the vertical axis or vice-versa, and the [CrossesInAxis](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_CrossesInAxis) property specifies the axis name with which the axis line has to be crossed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -45,8 +44,7 @@ property specifies the values (datetime, numeric, or logarithmic) at which the a
 
 ## Title
 
-You can add a title to the axis using [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChart.html#Syncfusion_EJ2_Charts_StockChart_Title)property to provide quick
-information to the user about the data plotted in the axis.Title style can be customized using [`TitleStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChart.html#Syncfusion_EJ2_Charts_StockChart_TitleStyle) property of the axis.
+You can add a title to the axis using [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChart.html#Syncfusion_EJ2_Charts_StockChart_Title)property to provide quick information to the user about the data plotted in the axis.Title style can be customized using [`TitleStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChart.html#Syncfusion_EJ2_Charts_StockChart_TitleStyle) property of the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -75,9 +73,7 @@ information to the user about the data plotted in the axis.Title style can be cu
 
 ## Tick Lines Customization
 
-You can customize the  `Width`, `Color` and `Size` of the minor and major tick lines, using
-[`MajorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MajorTickLines) and
-[`MinorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MinorTickLines) properties in the axis.
+You can customize the  `Width`, `Color` and `Size` of the minor and major tick lines, using [`MajorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MajorTickLines) and [`MinorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MinorTickLines) properties in the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -106,9 +102,7 @@ You can customize the  `Width`, `Color` and `Size` of the minor and major 
 
 ## Grid Lines Customization
 
-You can customize the `Width`, `Color` and `DashArray` of the minor and major grid lines,
-using [`MajorGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MajorGridLines) and
-[`MinorGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MinorGridLines) properties in the axis.
+You can customize the `Width`, `Color` and `DashArray` of the minor and major grid lines, using [`MajorGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MajorGridLines) and [`MinorGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MinorGridLines) properties in the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -137,8 +131,7 @@ using [`MajorGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 
 ## Multiple Axis
 
-In addition to primary X and Y axis, we can add n number of axis to the chart. Series can be associated with
-this [`Axis`] (https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartAxis.html), by mapping with axis's unique name.
+In addition to primary X and Y axis, we can add n number of axis to the chart. Series can be associated with this [`Axis`] (https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartAxis.html), by mapping with axis's unique name.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -169,8 +162,7 @@ this [`Axis`] (https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Char
 
 <!-- markdownlint-disable MD033 -->
 
-When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property
- [`IsInversed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_IsInversed) to true.
+When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property [`IsInversed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_IsInversed) to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -200,8 +192,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 ## Opposed Position
 
 <!-- markdownlint-disable MD012 -->
-To place an axis opposite from its original position, set [`OpposedPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_OpposedPosition)
-property of the axis to true.
+To place an axis opposite from its original position, set [`OpposedPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_OpposedPosition) property of the axis to true.
 <!-- markdownlint-disable MD012 -->
 
 {% if page.publishingplatform == "aspnet-core" %}

@@ -42,8 +42,7 @@ To create SplitButton add the `ejs-splitbutton` tag with id attribute as `elemen
 
 ## Bind dataSource
 
-Populate the action items in `SplitButton` by using the `items` property. Here, the JSON values are passed to the
-SplitButton control are generated in `HomeController.cs` and assigned to `ViewBag` variable.
+Populate the action items in `SplitButton` by using the `items` property. Here, the JSON values are passed to the SplitButton control are generated in `HomeController.cs` and assigned to `ViewBag` variable.
 
 ```cs
 public IActionResult Index()

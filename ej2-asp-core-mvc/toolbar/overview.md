@@ -14,8 +14,7 @@ The ToolBar displays a group of command buttons arranged horizontally.
 
 ## Key features
 
-1. **[Scrollable](./responsive-mode#scrollable)** : Scrollable display mode supports to display the Toolbar commands in a single line with horizontal scrolling
-enabled while the commands are overflows the available space.
+1. **[Scrollable](./responsive-mode#scrollable)** : Scrollable display mode supports to display the Toolbar commands in a single line with horizontal scrolling enabled while the commands are overflows the available space.
 
 2. **[Popup](./responsive-mode#popup)** : Popup display mode supports to display commands in the popup when the commands are overflowing to the available space.
 
