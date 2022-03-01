@@ -55,7 +55,7 @@ Once the package is installed, you can find the culture specific JSON data under
 
 4. The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now you can move this file to the location `wwwroot\cldr-data\supplemental`.
 
-5. The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules\cldr-data\main\de`. Now create a folder named `fr-CH` inside the location `wwwroot\cldr-data\main` and move the files inside it.
+5. The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules\cldr-data\main\fr-CH`. Now create a folder named `fr-CH` inside the location `wwwroot\cldr-data\main` and move the files inside it.
 
     ![Moved cldr data to application](./images/cldr-structure.png)
 
