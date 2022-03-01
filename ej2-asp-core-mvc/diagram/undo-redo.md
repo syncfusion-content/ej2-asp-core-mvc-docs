@@ -86,11 +86,9 @@ var diagram = document.getElementById('container').ej2_instances[0];
 
 ### Track custom changes
 
-Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship diagram, track the changes in the employee information. The historyList of the diagram enables you to track such changes.
-The following example illustrates how to track such custom property changes.
+Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship diagram, track the changes in the employee information. The historyList of the diagram enables you to track such changes. The following example illustrates how to track such custom property changes.
 
-Before changing the employee information, save the existing information to historyList by using the client-side method push of historyList.
-The historyList canLog method can be used which takes a history entry as argument and returns whether the specific entry can be added or not.
+Before changing the employee information, save the existing information to historyList by using the client-side method push of historyList. The historyList canLog method can be used which takes a history entry as argument and returns whether the specific entry can be added or not.
 
 The following code example illustrates how to save the existing property values.
 
@@ -123,8 +121,7 @@ diagram.historyList.canLog = function(entry) {
 
 ### Track undo/redo actions
 
-The historyList undoStack property is used to get the collection of undo actions which should be performed in the diagram.
-The undoStack/redoStack is the read-only property.
+The historyList undoStack property is used to get the collection of undo actions which should be performed in the diagram. The undoStack/redoStack is the read-only property.
 
 ```javascript
 

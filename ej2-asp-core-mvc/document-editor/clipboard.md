@@ -36,8 +36,10 @@ Due to limitations, you can paste contents from system clipboard as plain text i
 ## Local paste
 
 Document editor expose API to enable local paste within the control. On enabling this, the following is performed:
+
 * Selected contents will be stored to an internal clipboard in addition to system clipboard.
 * Clipboard paste will be overridden, and internally stored data that has formatted text will be pasted.
+
 Refer to the following sample code.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -61,8 +63,7 @@ Refer to the following sample code.
 
 
 
-By default, **enableLocalPaste** is false.
-When local paste is enabled for a document editor instance, you can paste contents programmatically if the internal clipboard has stored data during last copy operation. Refer to the following sample code.
+By default, **enableLocalPaste** is false. When local paste is enabled for a document editor instance, you can paste contents programmatically if the internal clipboard has stored data during last copy operation. Refer to the following sample code.
 
 ```typescript
 documentEditor.editor.pasteLocal();
@@ -83,6 +84,7 @@ documentEditor.editor.pasteLocal();
 Document Editor provides support to paste the system clipboard data with formatting. To enable clipboard paste with formatting options, set the `EnableLocalPaste` property in Document Editor to false and use this .NET Standard library [`Syncfusion.EJ2.WordEditor.AspNet.Core`](<https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/>) by the web API service implementation. This library helps you to paste the system clipboard data with formatting.
 
 You can paste your system clipboard data in the following ways:
+
 * **Keep Source Formatting** This option retains the character styles and direct formatting applied to the copied text. Direct formatting includes characteristics such as font size, italics, or other formatting that is not included in the paragraph style.
 * **Match Destination Formatting** This option discards most of the formatting applied directly to the copied text, but it retains the formatting applied for emphasis, such as bold and italic when it is applied to only a portion of the selection. The text takes on the style characteristics of the paragraph where it is pasted. The text also takes on any direct formatting or character style properties of text that immediately precedes the cursor when the text is pasted.
 * **Text Only** This option discards all formatting and non-text elements such as pictures or tables. The text takes on the style characteristics of the paragraph where it is pasted and takes on any direct formatting or character style properties of text that immediately precedes the cursor when the text is pasted. Graphical elements are discarded and tables are converted to a series of paragraphs.

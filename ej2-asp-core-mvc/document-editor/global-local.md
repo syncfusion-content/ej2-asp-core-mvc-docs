@@ -13,7 +13,7 @@ documentation: ug
 
 ## Localization
 
-The [`Localization`](../../common/localization/) library allows you to localize default text content of the DocumentEditor. The document editor component has static text on some features (like find & replace, context-menu, dialogs) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the locale value and translation object. Please refer the sample link [RTL](https://ej2.syncfusion.com/aspnetcore/DocumentEditor/RightToLeft#/material)
+The [`Localization`](../../common/localization/) library allows you to localize default text content of the DocumentEditor. The document editor component has static text on some features (like find & replace, context-menu, dialogs) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the locale value and translation object. Please refer the sample link [RTL](https://ej2.syncfusion.com/aspnetcore/DocumentEditor/RightToLeft#/material).
 
 > Please refer the [Locale](https://github.com/syncfusion/ej2-locale/tree/master/src).
 

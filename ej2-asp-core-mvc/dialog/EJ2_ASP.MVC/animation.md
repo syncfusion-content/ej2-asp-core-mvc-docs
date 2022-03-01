@@ -11,10 +11,7 @@ documentation: ug
 
 # Animation
 
-The Dialog can be animated during the open and close actions. Also, user can
-customize animation's [`delay`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Delay),
-[`duration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Duration)
-and [`effect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Effect).
+The Dialog can be animated during the open and close actions. Also, user can customize animation's [`delay`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Delay), [`duration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Duration) and [`effect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Effect).
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -41,8 +38,7 @@ If the user sets 'Fade' effect, then the Dialog will open with 'FadeIn' effect a
 </td></tr>
 </table>
 
-In the below sample, `Zoom` effect is enabled. So, The Dialog will open with `ZoomIn`
-and close with `ZoomOut` effects.
+In the below sample, `Zoom` effect is enabled. So, The Dialog will open with `ZoomIn` and close with `ZoomOut` effects.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

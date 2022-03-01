@@ -26,10 +26,10 @@ This error is thrown due to not including the required target library for the Ty
 
 1. **Using MS build**
 
-    By adding the required target `dom,es2015` library in `TypeScriptLib` MSBuild property in your `.csproj` file as like below.
+    By adding the required target `dom,es2015` library in `TypeScriptLib` MSBuild property in your `.csproj` file as like below, following the TypeScriptToolsVersion tag.
 
     ```cs
-
+        <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
         <TypeScriptLib>dom,es2015</TypeScriptLib>
     ```
 

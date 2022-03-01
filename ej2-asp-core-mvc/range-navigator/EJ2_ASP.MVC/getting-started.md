@@ -90,8 +90,7 @@ After installation complete, this will be included in the project. You can refer
 
 ## Populate range navigator with data
 
-Now, we are going to provide data to the range navigator. Add a series object to the range navigator by
-using series property. Now map the field names x and y in the JSON data to the `xName` and `yName`properties of the `series`, then set the JSON data to dataSource property. Since the JSON contains Datetime data, set the `valueType` as `DateTime`. By default, the axis valueType is Numeric.
+Now, we are going to provide data to the range navigator. Add a series object to the range navigator by using series property. Now map the field names x and y in the JSON data to the `xName` and `yName`properties of the `series`, then set the JSON data to dataSource property. Since the JSON contains Datetime data, set the `valueType` as `DateTime`. By default, the axis valueType is Numeric.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

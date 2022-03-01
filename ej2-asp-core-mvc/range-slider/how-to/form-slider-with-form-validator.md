@@ -10,8 +10,7 @@ documentation: ug
 
 # Form Slider with FormValidator
 
-The Slider control can be validated using our
-[FormValidator](https://ej2.syncfusion.com/documentation/form-validator/?lang=typescript). The following steps walk-through
+The Slider control can be validated using our [FormValidator](https://ej2.syncfusion.com/documentation/form-validator/?lang=typescript). The following steps walk-through
 slider validation.
 
 * Render slider control inside a form.
@@ -21,13 +20,9 @@ slider validation.
 
 > Form validation is done either by ID or name value of the slider control. Above ID of the slider is used to validate it.
 
-Using slider name: Render slider with name attribute. In the following code snippet, name attribute value of slider is used
-for form validation.
+Using slider name: Render slider with name attribute. In the following code snippet, name attribute value of slider is used for form validation.
 
-* Validate the form using
-[validate](https://ej2.syncfusion.com/documentation/form-validator/api-formValidator.html?lang=typescript#validate) method,
-and it validates the slider value with the defined rules collection and returns the result. If user selects the value less than
-the minimum value, form will not submit.
+* Validate the form using [validate](https://ej2.syncfusion.com/documentation/form-validator/api-formValidator.html?lang=typescript#validate) method, and it validates the slider value with the defined rules collection and returns the result. If user selects the value less than the minimum value, form will not submit.
 
 * Slider validation can be done during value changes in slider. Refer to the following code snippet.
 

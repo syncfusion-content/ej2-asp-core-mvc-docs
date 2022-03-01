@@ -77,7 +77,6 @@ Document editor exposes an API to insert endnotes at cursor position programmati
 
 ## Update or edit footnotes and endnotes
 
-You can update or edit the footnotes and endnotes using the built-in context menu shown up by right-clicking it.
-the footnote endnote dialog box popup and you can customize the number format and start at. Refer to the following screenshot.
+You can update or edit the footnotes and endnotes using the built-in context menu shown up by right-clicking it. The footnote endnote dialog box popup and you can customize the number format and start at. Refer to the following screenshot.
 
 ![Update or edit footnotes and endnotes](images/notes-option.jpg)

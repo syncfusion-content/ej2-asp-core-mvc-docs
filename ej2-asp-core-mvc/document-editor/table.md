@@ -29,10 +29,10 @@ The maximum size of row and column is limited to 32767 and 63 respectively.
 
 You can add a row (or several rows) above or below the row at cursor position by using the `insertRow` method. This method accepts the following parameters:
 
-Parameter | Type | Description
-----------|------|-------------
-above(optional) | boolean | This is optional and if omitted, it takes the value as false and inserts below the row at cursor position.
-count(optional) | number | This is optional and if omitted, it takes the value as 1.
+| Parameter | Type | Description |
+|----------|------|-------------|
+| above(optional) | boolean | This is optional and if omitted, it takes the value as false and inserts below the row at cursor position. |
+| count(optional) | number | This is optional and if omitted, it takes the value as 1. |
 
 Refer to the following sample code.
 
@@ -49,10 +49,10 @@ documentedior.editor.insertRow(true, 3)
 
 You can add a column (or several columns) to the left or right of the column at cursor position by using the `insertColumn` method. This method accepts the following parameters:
 
-Parameter | Type | Description
-----------|------|-------------
-left(optional) | boolean| This is optional and if omitted, it takes the value as false and inserts to the right of column at cursor position.
-count(optional) | number |  This is optional and if omitted, it takes the value as 1.
+| Parameter | Type | Description |
+|----------|------|-------------|
+| left(optional) | boolean | This is optional and if omitted, it takes the value as false and inserts to the right of column at cursor position. |
+| count(optional) | number |  This is optional and if omitted, it takes the value as 1. |
 
 Refer to the following sample code.
 
@@ -127,8 +127,7 @@ documenteditor.editor.deleteColumn();
 
 ## Merge cells
 
-You can merge cells vertically, horizontally, or combination of both to a single cell. To vertically merge the cells, the columns within selection should be even in left and right directions. To horizontally merge the cells, the rows within selection should be even in top and bottom direction.
-Refer to the following sample code.
+You can merge cells vertically, horizontally, or combination of both to a single cell. To vertically merge the cells, the columns within selection should be even in left and right directions. To horizontally merge the cells, the rows within selection should be even in top and bottom direction. Refer to the following sample code.
 
 ```typescript
 documenteditor.editor.mergeCells()

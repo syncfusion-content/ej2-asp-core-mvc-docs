@@ -42,8 +42,7 @@ The Gantt control provides the menu filtering support for each column. You can e
 
 
 
-> The [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowFiltering.html) property should be set to `true` to enable the filter menu.
-> Setting the [`Columns.AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttColumn~AllowFiltering.html) property to `false` prevents rendering filter menu for a particular column.
+> The [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowFiltering.html) property should be set to `true` to enable the filter menu. Setting the [`Columns.AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttColumn~AllowFiltering.html) property to `false` prevents rendering filter menu for a particular column.
 
 ### Filter hierarchy modes
 
@@ -193,8 +192,7 @@ You can filter the columns dynamically by using the `filterByColumn` method.
 
 ### Clear filtered columns
 
-You can clear all the filtering condition done in the Gantt control by using the `clearFiltering` method.
-The following code snippet explains the above behaviour.
+You can clear all the filtering condition done in the Gantt control by using the `clearFiltering` method. The following code snippet explains the above behaviour.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -256,8 +254,7 @@ The following screenshot shows the output of searching for string in Gantt contr
 
 ### Initial search
 
-In the Gantt control, you can load a task with some search criteria and this can be done by using the [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~SearchSettings.html) property.
-To apply search at initial rendering, set the value for [`Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Fields.html), [`Operator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Operator.html), [`Key`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Key.html), and [`IgnoreCase`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~IgnoreCase.html) in the [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~SearchSettings.html) property.
+In the Gantt control, you can load a task with some search criteria and this can be done by using the [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~SearchSettings.html) property. To apply search at initial rendering, set the value for [`Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Fields.html), [`Operator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Operator.html), [`Key`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Key.html), and [`IgnoreCase`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~IgnoreCase.html) in the [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~SearchSettings.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -294,13 +291,13 @@ The search operator can be defined in the [`SearchSettings.Operator`](https://he
 
 The following operators are supported in searching:
 
-Operator |Description
------|-----
-startsWith |Checks whether a value begins with the specified value.
-endsWith |Checks whether a value ends with the specified value.
-contains |Checks whether a value contains the specified value.
-equal |Checks whether a value is equal to the specified value.
-notEqual |Checks for the values that are not equal to the specified value.
+|Operator |Description|
+|-----|-----|
+|startsWith |Checks whether a value begins with the specified value.|
+|endsWith |Checks whether a value ends with the specified value.|
+|contains |Checks whether a value contains the specified value.|
+|equal |Checks whether a value is equal to the specified value.|
+|notEqual |Checks for the values that are not equal to the specified value.|
 
 > By default, the [`SearchSettings.Operator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Operator.html) value is `contains`.
 

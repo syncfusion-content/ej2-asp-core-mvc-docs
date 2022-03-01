@@ -27,7 +27,7 @@ The Document Editor component is used to create, edit, view, and print Word docu
 * Provides support to insert, and edit [form fields](../document-editor/form-fields).
 * Provides support to insert, and edit [comments](../document-editor/comments).
 * Provides support to track the inserted and deleted content.
-* Provides support to perform [spell checking](../document-editor/spell-check) for any input text
+* Provides support to perform [spell checking](../document-editor/spell-check) for any input text.
 * Allows user interactions like [zoom](../document-editor/scrolling-zooming#zooming), [scroll](../document-editor/scrolling-zooming), select contents through touch, mouse, and keyboard.
 * Provides intuitive UI options like context menu, [dialogs](../document-editor/dialog), and [navigation pane](../document-editor/find-and-replace#options-pane).
 * [Localizes](../document-editor/global-local) all the static text to any desired language.

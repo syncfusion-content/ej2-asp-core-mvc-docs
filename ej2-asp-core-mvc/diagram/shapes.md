@@ -113,8 +113,7 @@ Link 2: `http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chr
 
 Stretch and align the image content anywhere but within the node boundary.
 
-The scale property of the node allows to stretch the image as you desired (either to maintain proportion or to stretch). By default, the [`scale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Scale.html) property of the node is set as **meet**.
-The following code illustrates how to scale or stretch the content of the image node.
+The scale property of the node allows to stretch the image as you desired (either to maintain proportion or to stretch). By default, the [`scale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Scale.html) property of the node is set as **meet**. The following code illustrates how to scale or stretch the content of the image node.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -233,8 +232,7 @@ Diagram provides support to embed SVG element into a node. The shape property of
 
 Stretch and align the svg content anywhere but within the node boundary.
 
-The scale property of the node allows to stretch the svg content as you desired (either to maintain proportion or to stretch). By default, the `scale` property of node is set as **meet**.
-The following code illustrates how to scale or stretch the content of the node.
+The scale property of the node allows to stretch the svg content as you desired (either to maintain proportion or to stretch). By default, the `scale` property of node is set as **meet**. The following code illustrates how to scale or stretch the content of the node.
 
 The following tables illustrates all the possible scale options for the node.
 

@@ -54,8 +54,7 @@ When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 ## Manually Scheduled Tasks
 
-When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) property is set as `Manual`, the start date and end date of all the tasks in the project will be same as given in the data source. That is, dates are not validated based on various factors such as dependencies between tasks, holidays, weekends, working time.
-We can restrict this mode in predecessor validation alone. That is, we can automatically validate the dates based on predecessor values by enabling the [`validateManualTasksOnLinking`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ValidateManualTasksOnLinking) property.
+When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) property is set as `Manual`, the start date and end date of all the tasks in the project will be same as given in the data source. That is, dates are not validated based on various factors such as dependencies between tasks, holidays, weekends, working time. We can restrict this mode in predecessor validation alone. That is, we can automatically validate the dates based on predecessor values by enabling the [`validateManualTasksOnLinking`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ValidateManualTasksOnLinking) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -119,14 +118,14 @@ When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 Unscheduled tasks are planned for a project without any definite schedule dates. The Gantt control supports rendering the unscheduled tasks. You can create or update the tasks with anyone of start date, end date, and duration values or none. You can enable or disable the unscheduled tasks by using the [`allowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property. The following images represent the various types of unscheduled tasks in Gantt.
 
-Taskbar state |Auto |Manual
------|-----|-----
-`Start Date Only` | ![Alt text](images/startDate-only.png) | ![Alt text](images/startDate-manual.png)
-`End Date Only` | ![Alt text](images/endDate-only.png) | ![Alt text](images/endDate-manual.png)
-`Duration Only` | ![Alt text](images/duration-only.png) | ![Alt text](images/duration-manual.png)
-`Milestone`| ![Alt text](images/milestone.png) | ![Alt text](images/milestone.png)
+|Taskbar state |Auto |Manual|
+|-----|-----|-----|
+|`Start Date Only` | ![Alt text](images/startDate-only.png) | ![Alt text](images/startDate-manual.png)|
+|`End Date Only` | ![Alt text](images/endDate-only.png) | ![Alt text](images/endDate-manual.png)|
+|`Duration Only` | ![Alt text](images/duration-only.png) | ![Alt text](images/duration-manual.png)|
+|`Milestone`| ![Alt text](images/milestone.png) | ![Alt text](images/milestone.png)|
 
-> A milestone is a task that has no start and end dates, but it has a duration value of zero
+> A milestone is a task that has no start and end dates, but it has a duration value of zero.
 
 ## Define unscheduled tasks in data source
 
@@ -159,7 +158,6 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 ![Alt text](images/unscheduledTasks.png)
 
-> NOTE
 > If the [`allowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property is set to false, then the Gantt control automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
 
 ## Working Time Range
@@ -195,7 +193,6 @@ The following code snippet explains how to define the working time range for the
 
 ![Alt text](images/workingtime-range.png)
 
-> NOTE
 >* Individual tasks can lie between any time within the defined working time range of the project.
 >* The [`dayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
 

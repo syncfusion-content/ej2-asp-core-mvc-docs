@@ -23,6 +23,7 @@ Document editor features are segregated into individual feature-wise modules to 
 * User interface options such as context menu, options pane, image resizer, and dialog are available as individual modules.
 
 >In addition to injecting the required modules in your application, enable corresponding properties to extend the functionality for a document editor instance.
+
 Refer to the following table.
 
 | Module | Property to enable the functionality for a document editor instance |

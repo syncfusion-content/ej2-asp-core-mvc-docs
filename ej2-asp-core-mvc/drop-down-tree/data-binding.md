@@ -125,8 +125,7 @@ Adaptor is responsible for processing response and request from/to the service e
 
 * `WebMethodAdaptor`: Used to interact with web methods.
 
-In the following example, `ODataV4Adaptor` is  used to fetch data from the remote services. The **EmployeeID**, **FirstName**, and **EmployeeID**
-columns from the Employees table have been mapped to **value**, **text**, and **hasChildren** fields respectively for first level nodes.
+In the following example, `ODataV4Adaptor` is  used to fetch data from the remote services. The **EmployeeID**, **FirstName**, and **EmployeeID** columns from the Employees table have been mapped to **value**, **text**, and **hasChildren** fields respectively for first level nodes.
 
 The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table have been mapped to **value**, **parentValue**, and **text** fields respectively for second level nodes.
 

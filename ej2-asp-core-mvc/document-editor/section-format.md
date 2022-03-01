@@ -26,8 +26,7 @@ You can change the orientation of the page by swapping the values of page width 
 
 ## Page margins
 
-Left and right page margin defines the gap between the document content from left and right side of the page respectively. Top and bottom page margins defines the gap between the document content from header and footer of the page respectively.
-Refer to the following sample code.
+Left and right page margin defines the gap between the document content from left and right side of the page respectively. Top and bottom page margins defines the gap between the document content from header and footer of the page respectively. Refer to the following sample code.
 
 ```typescript
 documenteditor.selection.sectionFormat.leftMargin = 10;
