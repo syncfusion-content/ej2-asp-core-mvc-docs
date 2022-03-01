@@ -17,8 +17,7 @@ Chart can visualise data bound from local or remote data.
 
 ## Local Data
 
-You can bind a simple JSON data to the chart using
-[`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartSeries.html#Syncfusion_EJ2_Charts_StockChartStockChartSeries_DataSource) property in series.
+You can bind a simple JSON data to the chart using [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartSeries.html#Syncfusion_EJ2_Charts_StockChartStockChartSeries_DataSource) property in series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

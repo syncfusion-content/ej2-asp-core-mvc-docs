@@ -46,8 +46,7 @@ The following example shows a basic TimePicker control.
 
 ## Setting the value within min and max time
 
-The following example demonstrates how to set the value, min and max time on initializing
-the TimePicker. The TimePicker allows you to select the time value within a range from `1:00 AM` to `11:00 AM`.
+The following example demonstrates how to set the value, min and max time on initializing the TimePicker. The TimePicker allows you to select the time value within a range from `1:00 AM` to `11:00 AM`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -76,15 +75,9 @@ the TimePicker. The TimePicker allows you to select the time value within a rang
 
 ## Setting the time format
 
-Time formats is a way of representing the time value in different string format in textbox and popup
-list. By default, the TimePicker's format is based on the culture. You can also customize the format by using the
-[format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Format)
-property. To know more about the time format standards, refer to the
-[Date and Time Format](../../common/internationalization#custom-formats) section.
+Time formats is a way of representing the time value in different string format in textbox and popup list. By default, the TimePicker's format is based on the culture. You can also customize the format by using the [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Format) property. To know more about the time format standards, refer to the [Date and Time Format](../../common/internationalization#custom-formats) section.
 
-The following example demonstrates the TimePicker control in 24 hours format with 60 minutes
-interval. The time interval is set to
-60 minutes by using the [step](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Step) property.
+The following example demonstrates the TimePicker control in 24 hours format with 60 minutes interval. The time interval is set to 60 minutes by using the [step](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_Step) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

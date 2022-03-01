@@ -13,8 +13,7 @@ documentation: ug
 
 ## Stock Chart Title
 
-Stock Chart can be given a title using [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChart.html#Syncfusion_EJ2_Charts_StockChart_Title) property, to show the information
-about the data plotted.
+Stock Chart can be given a title using [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChart.html#Syncfusion_EJ2_Charts_StockChart_Title) property, to show the information about the data plotted.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
