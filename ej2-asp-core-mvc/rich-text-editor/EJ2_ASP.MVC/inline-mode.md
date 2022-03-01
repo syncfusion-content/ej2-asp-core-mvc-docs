@@ -19,7 +19,7 @@ Inline editing is a true WYSIWYG formation and on the contrary to Rich Text Edit
 
 ## Show on Select/Click
 
-Enabling the `onSelection` option of inlineMode makes the inline Rich Text Editor to appear.  You can select the text in the editable area otherwise the inline Rich Text Editor will be appear once click into the editable area.
+Enabling the `onSelection` option of inlineMode makes the inline Rich Text Editor to appear. You can select the text in the editable area otherwise the inline Rich Text Editor will be appear once click into the editable area.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

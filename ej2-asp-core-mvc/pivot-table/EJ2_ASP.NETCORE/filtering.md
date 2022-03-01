@@ -137,7 +137,7 @@ Allows to load members inside the filter dialog on-demand by setting the [`loadO
 * By clicking on the expander button of the respective member, only its child members will be loaded.
 * Select a level from the drop-down list that will load all members up to the chosen level from the cube.
 
-This will help to avoid performance lags when opening a member editor whose hierarchy has a large number of members. Once level members are queried and added one after the other, they will be maintained internally (for all operations like dialog re-opening, drag and drop, etc...) and will not be removed until the web page is refreshed.
+This will help to avoid performance lags when opening a member editor whose hierarchy has a large number of members. Once level members are queried and added one after the other, they will be maintained internally (for all operations like dialog re-opening, drag and drop, etc.) and will not be removed until the web page is refreshed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -169,7 +169,7 @@ This will help to avoid performance lags when opening a member editor whose hier
 In the example above, "Customer Geography" dimension is loaded with first level (Country) during initial loading. The search will therefore be applied on the members of the "Country" level alone. After that, you can load members to the next level (State-Province) on-demand by expanding the "Australia" node (or) by selecting the "State-Province" level from the drop down list.
 
 * When you expand "Australia", the "State-Province" members will be loaded to "Australia" alone.
-* If you load the members by selecting the "State-Province" level from the drop-down list means, the "State-Province" members will be loaded across all countries like Australia, Canada, France, etc...
+* If you load the members by selecting the "State-Province" level from the drop-down list means, the "State-Province" members will be loaded across all countries like Australia, Canada, France, etc.
 
 Once members are loaded, they are maintained internally and will not be removed until the page is refreshed.
 

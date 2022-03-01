@@ -11,7 +11,7 @@ documentation: ug
 
 # Render the RichTextEditorFor control
 
-The RichTextEditorFor control can be rendered by passing values from the controller.  The formatted Rich Text Editor value is retrieved when submitting the form using the post method.
+The RichTextEditorFor control can be rendered by passing values from the controller. The formatted Rich Text Editor value is retrieved when submitting the form using the post method.
 
 In the following sample, the RichTextEditorFor control is rendered.
 
