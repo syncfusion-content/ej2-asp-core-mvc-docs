@@ -27,10 +27,7 @@ npm install cldr-data --save
 
 Once the package installed, you can find the culture specific JSON data under the location `\scripts\cldr-data`.
 
-* Now use the
-[`loadCultureFiles`](https://ej2.syncfusion.com/aspnetmvc/documentation/base/intl.html#loading-culture-data)
-method
-to load the culture specific CLDR JSON data.
+* Now use the [`loadCultureFiles`](https://ej2.syncfusion.com/aspnetmvc/documentation/base/intl.html#loading-culture-data) method to load the culture specific CLDR JSON data.
 
 In ASP.NET MVC refer the culture files directly from `\scripts\cldr-data` location. In ASP.NET Core refer the culture files directly from `\wwwroot\scripts\cldr-data` location as like the below code examples for both ASP.NET Core and MVC
 
@@ -57,8 +54,7 @@ In ASP.NET MVC refer the culture files directly from `\scripts\cldr-data` locati
 
 ```
 
-* Before changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through `load` method of
-  `L10n` class.
+* Before changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through `load` method of `L10n` class.
 
 ```sh
       var L10n = ej.base.L10n;
@@ -294,7 +290,7 @@ The following example demonstrates the Pivot Table in `Deutsch` culture.
 
 ## Right-to-left (RTL)
 
-RTL provides an option to switch the text direction and layout of the Pivot Table component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc...). To enable RTL Pivot Table, set the `enableRtl` property to **true**.
+RTL provides an option to switch the text direction and layout of the Pivot Table component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Pivot Table, set the `enableRtl` property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

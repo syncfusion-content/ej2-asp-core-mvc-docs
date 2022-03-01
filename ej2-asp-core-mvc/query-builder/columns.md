@@ -79,7 +79,7 @@ The Query Builder allows you to set the step values to the number fields. So tha
 
 ## Format
 
-The Query Builder formats date and number values. Use the `Format`   property, to format date and number values.
+The Query Builder formats date and number values. Use the `Format` property, to format date and number values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

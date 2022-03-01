@@ -180,9 +180,7 @@ Stretches the editor to the maximum width and height of the browser window throu
 
 ## Prevention of cross-site scripting (XSS)
 
-The Rich Text Editor allows the users to edit the content with security by preventing cross-site
-scripting (XSS). By default, provided built-in support to remove the elements from editor content, which cause XSS
-attack. The editor removes the elements based on the attributes if it is possible to execute script.
+The Rich Text Editor allows the users to edit the content with security by preventing cross-site scripting (XSS). By default, provided built-in support to remove the elements from editor content, which cause XSS attack. The editor removes the elements based on the attributes if it is possible to execute script.
 
 In the following sample, removed `script` tag and `onmouseover` attribute from content of the Rich Text Editor.
 
@@ -215,8 +213,7 @@ In the following sample, removed `script` tag and `onmouseover` attribute from c
 
 ### Custom cross-site scripting
 
-You can also filter the elements and attributes additionally, which cause the XSS attack through
-[`BeforeSanitizeHtml`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_BeforeSanitizeHtml) event. Return the value from the event argument `helper` function to apply in the editor. To prevent the built-in support and make own cross-site scripting rules, set `cancel` argument to true.
+You can also filter the elements and attributes additionally, which cause the XSS attack through [`BeforeSanitizeHtml`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_BeforeSanitizeHtml) event. Return the value from the event argument `helper` function to apply in the editor. To prevent the built-in support and make own cross-site scripting rules, set `cancel` argument to true.
 
 The following sample demonstrates how to filter `script` tag from value.
 

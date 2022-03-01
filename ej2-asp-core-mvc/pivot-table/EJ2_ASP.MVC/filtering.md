@@ -169,7 +169,7 @@ This will help to avoid performance lags when opening a member editor whose hier
 In the example above, "Customer Geography" dimension is loaded with first level (Country) during initial loading. The search will therefore be applied on the members of the "Country" level alone. After that, you can load members to the next level (State-Province) on-demand by expanding the "Australia" node (or) by selecting the "State-Province" level from the drop down list.
 
 * When you expand "Australia", the "State-Province" members will be loaded to "Australia" alone.
-* If you load the members by selecting the "State-Province" level from the drop-down list means, the "State-Province" members will be loaded across all countries like Australia, Canada, France, etc...
+* If you load the members by selecting the "State-Province" level from the drop-down list means, the "State-Province" members will be loaded across all countries like Australia, Canada, France, etc.
 
 Once members are loaded, they are maintained internally and will not be removed until the page is refreshed.
 
