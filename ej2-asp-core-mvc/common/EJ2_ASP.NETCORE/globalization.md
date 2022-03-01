@@ -57,7 +57,9 @@ Once the package is installed, you can find the culture specific JSON data under
 
 5. The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules\cldr-data\main\de`. Now create a folder named `fr-CH` inside the location `wwwroot\cldr-data\main` and move the files inside it.
 
-Now use the below `loadCultureFiles` method to load the culture specific CLDR JSON data.
+    ![Moved cldr data to application](./images/cldr-structure.png)
+
+6. Now use the below `loadCultureFiles` method to load the culture specific CLDR JSON data.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -89,7 +91,7 @@ Now use the below `loadCultureFiles` method to load the culture specific CLDR JS
 {% endhighlight %}
 {% endtabs %}
 
-6. Now, set the culture to Schedule component by using the locale property.
+7. The following code example lets you to set the culture to the Schedule component by using the locale property.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -138,7 +140,40 @@ Now use the below `loadCultureFiles` method to load the culture specific CLDR JS
 
 Output be like the below.
 
-![Globalization schedule component](./images/schedule-locale.PNG)
+![Globalization schedule component](./images/schedule-locale.png)
+
+> Refer this documentation to [localizing the static Scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
+
+## Changing Global Culture and Currency Code
+
+To set the default culture and the currencyCode for all ASP.NET Core components, you can use the methods
+ `setCulture` for setting default locale and `setCurrencyCode` for setting the currencyCode in view page.
+
+### Setting Global Culture
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<script>
+    ej.base.setCulture('ar');
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+### Setting Currency Code
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<script>
+    ej.base.setCurrencyCode('QAR');
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+> If global culture is not set then `en-US` is set as default locale and `USD` is set as default currency code.
 
 ## Manipulating Numbers
 
@@ -209,6 +244,8 @@ The `getNumberFormat`
 {% endhighlight %}
 {% endtabs %}
 
+![output of getNumberFormat method](./images/format-number.png)
+
 #### `formatNumber`
 
  The `formatNumber` method which takes two arguments numeric value and `NumberFormatOptions` and returns the formatted string.
@@ -228,6 +265,8 @@ The `getNumberFormat`
 
 {% endhighlight %}
 {% endtabs %}
+
+![output of formatNumber method](./images/format-number-options.png)
 
 ### Parsing
 
@@ -250,6 +289,8 @@ The `getNumberParser` method which will return a function that parses given stri
 {% endhighlight %}
 {% endtabs %}
 
+![output of getNumberParser method](./images/number-parser.png)
+
 #### `parseNumber`
 
 The `parseNumber` method which takes two arguments the string value, `NumberFormatOptions` and returns the numeric value.
@@ -267,6 +308,8 @@ The `parseNumber` method which takes two arguments the string value, `NumberForm
 
 {% endhighlight %}
 {% endtabs %}
+
+![output of parseNumber method](./images/number-parser-options.png)
 
 ## Manipulating DateTime
 
@@ -379,12 +422,14 @@ Apart from the standard date type formats additional format are supported by usi
 <div>Formatted Value:<span class='result text'> </span></div>
 <script>
     var intl = new ej.base.Internationalization();
-    var formattedString = intl.formatDate(new Date('1/12/2014 10:20:33'), { format: '\'year:\'y' \'month:\' MM' });
-    //Output: "year:2014 month:01"
+    var formattedString = intl.formatDate(new Date('1/12/2014 10:20:33'), { format: '\'year:\'y' + " " + '\'month:\' MM' });
+    document.querySelector('.result').innerHTML = formattedString;
 </script>
 
 {% endhighlight %}
 {% endtabs %}
+
+![output of custom date format](./images/custom-date-format.png)
 
 >If format property is given in options other properties are not considered.
 
@@ -412,6 +457,8 @@ The `getDateFormat`
 {% endhighlight %}
 {% endtabs %}
 
+![output of getDateFormat method](./images/date-format-options.png)
+
 #### `formatDate`
 
  The `formatDate` method which takes two arguments date object,`DateFormatOptions` and returns the formatted string.
@@ -430,6 +477,8 @@ The `getDateFormat`
 
 {% endhighlight %}
 {% endtabs %}
+
+![output of formatDate method](./images/format-date-options.png)
 
 <!-- markdownlint-enable MD036 -->
 
@@ -456,6 +505,8 @@ method which will return a function that parses given string based on the
 {% endhighlight %}
 {% endtabs %}
 
+![output of getDateParser method](./images/date-parser.png)
+
 #### `parseDate`
 
 The `parseDate` method which takes two arguments  string value, `DateFormatOptions` and returns the date Object.
@@ -473,3 +524,5 @@ The `parseDate` method which takes two arguments  string value, `DateFormatOptio
 
 {% endhighlight %}
 {% endtabs %}
+
+![output of parseDate method](./images/date-parser-options.png)

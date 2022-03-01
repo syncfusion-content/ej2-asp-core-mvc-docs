@@ -62,7 +62,7 @@ You can change the different culture in Syncfusion ASP.NET Core components by se
 
 ## Changing current locale
 
-Current locale can be changed for all the Syncfusion ASP.NET Core components in your application by invoking `setCulture` function with your desired culture name.
+Current locale can be changed for all the Syncfusion ASP.NET Core components in your application by invoking `setCulture` function with your desired culture name. The following example demonstrates the Grid in Deutsch culture.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
