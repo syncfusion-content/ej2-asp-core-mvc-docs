@@ -17,8 +17,7 @@ You can render the charts from code behind and update the charts in partial view
 
 Follow the given steps to render and update the charts from code behind.
 
-**Step 1**:
-Initially, render the home view page, and then call the partial view action method via ajax call in the home view page. In that chart is render using client side content.
+**Step 1**: Initially, render the home view page, and then call the partial view action method via ajax call in the home view page. In that chart is render using client side content.
 
 ```html
 <div class="row" style="margin-top:10px">
@@ -46,8 +45,7 @@ Initially, render the home view page, and then call the partial view action meth
 **Initial Chart**
 ![Alt text](images/initialview.png)
 
-**Step 2**:
-Then create chart model properties in controller page. After initial rendering then update the created chart properties in the home view page through partial view action method in ajax call.
+**Step 2**: Then create chart model properties in controller page. After initial rendering then update the created chart properties in the home view page through partial view action method in ajax call.
 
 ```cs
 // partial view action method
@@ -118,9 +116,7 @@ Then create chart model properties in controller page. After initial rendering t
     }
 ```
 
-**Step 3**:
-
-Return the partial view page when calling partial view action method. In that partial view, refer the `scriptManager` to render the charts. Using `viewData` you can get chart object in view page from code behind and append it to chart container.
+**Step 3**: Return the partial view page when calling partial view action method. In that partial view, refer the `scriptManager` to render the charts. Using `viewData` you can get chart object in view page from code behind and append it to chart container.
 
 ```html
 <div>
@@ -165,5 +161,4 @@ var firstChartLoad = function (args) {
 
 **Sample reference**
 
-Sample for how to render the charts from code behind and update using partial view
-[`chart sample`](http://www.syncfusion.com/downloads/support/directtrac/219809/ze/ajaxcall-611246099)
+Sample for how to render the charts from code behind and update using partial view [`chart sample`](http://www.syncfusion.com/downloads/support/directtrac/219809/ze/ajaxcall-611246099)

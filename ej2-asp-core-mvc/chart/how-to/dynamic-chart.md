@@ -15,11 +15,7 @@ By using html button, you can add the chart dynamically when click the button.
 
 To add the chart dynamically through button click, follow the given steps:
 
-**Step 1**:
-
-Initially create the html button.
-
-Then create chart inside of button `onClick` function. Now click the button charts will render based on click count.
+**Step 1**: Initially create the html button. Then create chart inside of button `onClick` function. Now click the button charts will render based on click count.
 
 The following code sample demonstrates the output.
 

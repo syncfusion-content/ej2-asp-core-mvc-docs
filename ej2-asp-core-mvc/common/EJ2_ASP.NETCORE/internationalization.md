@@ -10,9 +10,7 @@ documentation: ug
 
 # Internationalization
 
-The `Internationalization` library provides support for formatting and parsing date and number objects
- using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. The `en-US` locale is set as
- default _culture_ and `USD` is set as default _currencyCode_ for all Essential JS 2 components.
+The `Internationalization` library provides support for formatting and parsing date and number objects using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. The `en-US` locale is set as default _culture_ and `USD` is set as default _currencyCode_ for all Essential JS 2 components.
 
 ## Loading Culture Data
 
@@ -46,8 +44,7 @@ npm install cldr-data
 
 ## Changing Global Culture and Currency Code
 
-To set the default culture and the currencyCode for all Essential JS 2 components, you can use the methods
- `setCulture` for setting default locale and `setCurrencyCode` for setting the currencyCode.
+To set the default culture and the currencyCode for all Essential JS 2 components, you can use the methods `setCulture` for setting default locale and `setCurrencyCode` for setting the currencyCode.
 
 ### Setting Global Culture
 
@@ -75,8 +72,7 @@ To set the default culture and the currencyCode for all Essential JS 2 component
 
 <!-- markdownlint-disable MD024 -->
 
-Based on the  `NumberFormatOptions`
-number formatting and parsing operations are processed. You need to specify some or all of the following properties mentioned in the below table.
+Based on the  `NumberFormatOptions` number formatting and parsing operations are processed. You need to specify some or all of the following properties mentioned in the below table.
 
 | No | Properties | Description |
 | --- | --- | --- |
@@ -89,16 +85,11 @@ number formatting and parsing operations are processed. You need to specify some
 | 7 | `minimumIntegerDigits` | Indicates the minimum number of the integer digits to be placed in the value. Possible values are 1 to 21.  |
 | 8 | `currency`| Indicates the currency code which needs to considered for the currency formatting.  |
 
->The `minimumIntegerDigits`, `minimumFractionDigits` and `maximumFractionDigits` are categorized
-as group one,
-`minimumSignificantDigits` and `maximumSignificantDigits` are categorized as group two.
-If group two properties are defined, then the  group one properties will be ignored.
+> The `minimumIntegerDigits`, `minimumFractionDigits` and `maximumFractionDigits` are categorized as group one, `minimumSignificantDigits` and `maximumSignificantDigits` are categorized as group two. If group two properties are defined, then the  group one properties will be ignored.
 
 ### Custom number formatting and parsing
 
- Custom number formatting and parsing are also supported by specifying the pattern directly
- in the **format** property of `NumberFormatOptions`. Custom number format can be achieved by
- using one or more custom format specifiers listed in the below table.
+Custom number formatting and parsing are also supported by specifying the pattern directly in the **format** property of `NumberFormatOptions`. Custom number format can be achieved by using one or more custom format specifiers listed in the below table.
 
 | Specifier | Description | Input | Format Output |
 | ------- |--------------- | ---------------- | --------------- |
@@ -116,9 +107,7 @@ If group two properties are defined, then the  group one properties will be igno
 
 #### `getNumberFormat`
 
-The `getNumberFormat`
- method which will return a function that formats given number based on the
- `NumberFormatOptions` specified.
+The `getNumberFormat` method which will return a function that formats given number based on the `NumberFormatOptions` specified.
 
 ```html
 <script>
@@ -147,8 +136,7 @@ The `getNumberFormat`
 
 #### `getNumberParser`
 
-The `getNumberParser` method which will return a function
- that parses given string based on the `NumberFormatOptions` specified.
+The `getNumberParser` method which will return a function that parses given string based on the `NumberFormatOptions` specified.
 
 ```html
 
@@ -177,12 +165,10 @@ The `parseNumber` method which takes two arguments the string value, `NumberForm
 
 ### Supported Format String
 
- Based on the  `DateFormatOptions`
-  date formatting and parsing operations are processed. You need to specify  some or all of the following properties
- mentioned below table.
+Based on the  `DateFormatOptions` date formatting and parsing operations are processed. You need to specify  some or all of the following properties mentioned below table.
 
 | Options | Descriptions |
-| --- | --- | --- |
+| --- | --- |
 | Type | It specifies the type of format to be used supported types .<br/>1. **`date`** <br/> 2. **`dateTime`** <br/> 3. **`time`** <br/> Based on the type specified the supported skeletons are given below. <br/> 1. short <br/> 2. medium, <br/>3. long <br/>4. full  <br/> **E.g:** `formatDate`(new Date(), {type: &#39;date&#39;, skeleton:medium})<br/> > If no type is specified then **date** type is set by default.   |
 | skeleton | Specifies the format in which the `dateTime` format will process |
 
@@ -258,8 +244,7 @@ Apart from the standard date type formats additional format are supported by usi
 
 ### Custom Formats
 
- To use the custom date and time formats we need to specify the date/time pattern directly in the *format* property.
- Custom format string must contain one or more  of the following standard date/time symbols
+To use the custom date and time formats we need to specify the date/time pattern directly in the *format* property. Custom format string must contain one or more  of the following standard date/time symbols
 
 | Symbols | Description |
 |--------- |------------- |
@@ -293,8 +278,7 @@ Apart from the standard date type formats additional format are supported by usi
 
 #### `getDateFormat`
 
-The `getDateFormat`
- method which will return a function that formats given date object based on the `DateFormatOptions` specified.
+The `getDateFormat` method which will return a function that formats given date object based on the `DateFormatOptions` specified.
 
 ```html
 <script>
@@ -328,9 +312,7 @@ The `getDateFormat`
 
 #### `getDateParser`
 
-The `getDateParser`
-method which will return a function that parses given string based on the
-`DateFormatOptions` specified.
+The `getDateParser` method which will return a function that parses given string based on the `DateFormatOptions` specified.
 
 ```html
 

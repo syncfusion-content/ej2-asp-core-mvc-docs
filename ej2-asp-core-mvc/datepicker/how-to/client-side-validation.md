@@ -11,14 +11,9 @@ documentation: ug
 
 # Client side validation
 
-To achieve the client side validation in a DatePicker control by using
-[Essential JavaScript 2 FormValidator](https://ej2.syncfusion.com/documentation/form-validator). It provides an option to customize the feedback error messages to the corresponding
-fields to take action to resolve the issue.
+To achieve the client side validation in a DatePicker control by using [Essential JavaScript 2 FormValidator](https://ej2.syncfusion.com/documentation/form-validator). It provides an option to customize the feedback error messages to the corresponding fields to take action to resolve the issue.
 
-In this below example, the required field validation is implemented by mapping
-the name attribute
-value to the rules property. It will validate the DatePicker control and display the validation
-message when the textbox value is empty during form post back or focus out.
+In this below example, the required field validation is implemented by mapping the name attribute value to the rules property. It will validate the DatePicker control and display the validation message when the textbox value is empty during form post back or focus out.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

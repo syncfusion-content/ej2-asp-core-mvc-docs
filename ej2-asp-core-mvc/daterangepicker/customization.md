@@ -15,8 +15,7 @@ The DateRangePicker is available for UI customization that can be achieved by us
 
 ## Day cell format
 
-The DateRangePicker is available for UI customization based on your application requirements. It can be achieved by using [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_RenderDayCell)
- event that provides an option to customize each day cell on rendering.
+The DateRangePicker is available for UI customization based on your application requirements. It can be achieved by using [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_RenderDayCell) event that provides an option to customize each day cell on rendering.
 
 The following example disables the weekends of every month by using `renderDayCell` event.
 
@@ -43,9 +42,7 @@ The following example disables the weekends of every month by using `renderDayCe
 
 ## First day of week
 
-Start day in a week will differ based on the culture, but you can also customize this based on the application needs.
-For this, you have to make use of [firstDayOfWeek](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_FirstDayOfWeek) property.
-By default, first day of a week in en-US is Sunday. In the following example it is customized to Monday with the help of this property.
+Start day in a week will differ based on the culture, but you can also customize this based on the application needs. For this, you have to make use of [firstDayOfWeek](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_FirstDayOfWeek) property. By default, first day of a week in en-US is Sunday. In the following example it is customized to Monday with the help of this property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

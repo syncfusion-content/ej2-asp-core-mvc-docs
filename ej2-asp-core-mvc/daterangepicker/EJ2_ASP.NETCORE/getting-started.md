@@ -46,9 +46,7 @@ The following example shows a basic DateRangePicker control
 
 ## Setting the start and end date
 
-The start and end date in a range can be defined with the help of startDate and endDate property.
-The following example demonstrates to set the start and end date on initializing the
-DateRangePicker.
+The start and end date in a range can be defined with the help of startDate and endDate property. The following example demonstrates to set the start and end date on initializing the DateRangePicker.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

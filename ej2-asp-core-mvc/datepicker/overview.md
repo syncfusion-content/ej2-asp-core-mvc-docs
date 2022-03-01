@@ -10,8 +10,7 @@ documentation: ug
 
 # Overview
 
-The **DatePicker** is a graphical user interface control that allows the user to select
-or enter a date value.
+The **DatePicker** is a graphical user interface control that allows the user to select or enter a date value.
 
 ## Key Features
 
