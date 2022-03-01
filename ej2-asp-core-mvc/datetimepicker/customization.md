@@ -15,9 +15,7 @@ The DateTimePicker is available for UI customization that can be achieved by usi
 
 ## Day and Time Cell format
 
-The DateTimePicker is available for UI customization based on your application requirements.
-It can be achieved by using [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_RenderDayCell)
-event that provides an option to customize each day cell on rendering.
+The DateTimePicker is available for UI customization based on your application requirements. It can be achieved by using [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_RenderDayCell) event that provides an option to customize each day cell on rendering.
 
 The following example disables the weekends of every month by using `renderDayCell` event.
 

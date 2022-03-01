@@ -19,8 +19,7 @@ EJ2 chart supports horizontal and vertical strip lines and customization of stri
 
 ## Horizontal Strip lines
 
-You can create Horizontal stripline by adding the `stripline` in the vertical axis and set `visible` option to true.
-Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
+You can create Horizontal stripline by adding the `stripline` in the vertical axis and set `visible` option to true. Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -49,8 +48,7 @@ Striplines are rendered in the specified start to end range and you can add more
 
 ## Vertical Striplines
 
-You can create vertical stripline by adding the`stripline` in the horizontal axis and set `visible` option to true.
-Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
+You can create vertical stripline by adding the`stripline` in the horizontal axis and set `visible` option to true. Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,11 +77,7 @@ Striplines are rendered in the specified start to end range and you can add more
 
 ## Customize the strip line
 
-Starting value in specific strip line can be customized by `start` property in strip line. Similarly, ending value
-is customized by `end`. It can be also set for starting from the corresponding origin of the axis by `startFromOrigin`.
-Size of the strip line is customized by `size`. Border for the stripline is customized by `border`.
-Order of the strip line such that whether it should be rendered in behind or over the series elements
-is customized by `zIndex`.
+Starting value in specific strip line can be customized by `start` property in strip line. Similarly, ending value is customized by `end`. It can be also set for starting from the corresponding origin of the axis by `startFromOrigin`. Size of the strip line is customized by `size`. Border for the stripline is customized by `border`. Order of the strip line such that whether it should be rendered in behind or over the series elements is customized by `zIndex`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -112,8 +106,7 @@ is customized by `zIndex`.
 
 ## Customize the stripline text
 
-You can customize the text rendered in stripline by `textStyle` property. Rotation of the strip line text can be changed by `rotation` property.
-Horizontal and Vertical alignment of stripline text can be changed by `horizontalAlignment` and `verticalAlignment` property.
+You can customize the text rendered in stripline by `textStyle` property. Rotation of the strip line text can be changed by `rotation` property. Horizontal and Vertical alignment of stripline text can be changed by `horizontalAlignment` and `verticalAlignment` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -171,7 +164,7 @@ You can create dash array stripline by using `dashArray` property. The Stripline
 
 ## Recurrence Stripline
 
- The strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
+The strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
 
 * `isRepeat`       - It is used for enable / disable the recurrence strip line.
 * `repeatEvery`    - It is used for mention the stripline interval.

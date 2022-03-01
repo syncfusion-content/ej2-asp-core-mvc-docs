@@ -59,8 +59,7 @@ public ActionResult Index()
 }
 ```
 
-* In View, invoke the strongly typed NumericTextBoxFor helper 
-with the lambda expression to set the default value.
+* In View, invoke the strongly typed NumericTextBoxFor helper with the lambda expression to set the default value.
 
 ```html
 <div>
@@ -110,9 +109,9 @@ using System.ComponentModel.DataAnnotations;
 The Data Annotations allows to decorate model classes with the metadata. This metadata describes a set of rules that are used to validate a property.
 
 The following Data Annotation attributes are used for the Numeric Textbox.
-Required: Indicates that the property is a required field.
+**Required**: Indicates that the property is a required field.
 
-**Step 2**: Next, Update the number property of the “EditorValue” class as “Required Field” by adding the following line
+**Step 2**: Next, Update the number property of the “EditorValue” class as “Required Field” by adding the following line.
 
 ```csharp
 public class EditorValue

@@ -11,14 +11,9 @@ documentation: ug
 
 # Accessibility
 
-The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies.
-DateRangePicker provides built-in compliance with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA
-support is achieved through the attributes
-like `aria-expanded`, `aria-disabled`, and `aria-activedescendant`
-applied as an input element.
+The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. DateRangePicker provides built-in compliance with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA support is achieved through the attributes like `aria-expanded`, `aria-disabled`, and `aria-activedescendant` applied as an input element.
 
-To know about the accessibility of Calendar, refer to the Calendar's
-[Accessibility](../calendar/accessibility/)  section.
+To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](../calendar/accessibility/) section.
 
 It helps people with disabilities by providing information about the widget for assistive technology in the screen readers. DateRangePicker control contains grid role and grid cell for each day cell.
 
@@ -28,15 +23,13 @@ It helps people with disabilities by providing information about the widget for 
 
 ## Keyboard Interaction
 
-Use the below keys to interact with the DateRangePicker.
-This control implements the keyboard navigation support by following the  [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+Use the below keys to interact with the DateRangePicker. This control implements the keyboard navigation support by following the  [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
 It supports the following list of shortcut keys:
 
 ### Input Navigation
 
-Before opening the popup, use the following list of keys to
-control the popup element.
+Before opening the popup, use the following list of keys to control the popup element.
 
 | **Press** | **To do this** |
 | --- | --- |

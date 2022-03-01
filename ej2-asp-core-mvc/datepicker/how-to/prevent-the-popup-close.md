@@ -11,9 +11,7 @@ documentation: ug
 
 # Prevent the popup close
 
-To prevent the DatePicker popup from closing, use the
-preventDefault method from the
-`PreventableEventArgs`.
+To prevent the DatePicker popup from closing, use the preventDefault method from the `PreventableEventArgs`.
 
 The following example demonstrates how to prevent the popup from closing.
 

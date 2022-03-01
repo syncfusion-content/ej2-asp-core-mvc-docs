@@ -11,14 +11,11 @@ documentation: ug
 
 # Filtering
 
-The ComboBox has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~AllowFiltering.html) is enabled. The filter
-operation starts as soon as you start typing characters in the control.
+The ComboBox has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~AllowFiltering.html) is enabled. The filter operation starts as soon as you start typing characters in the control.
 
-To display filtered items in the popup, filter the required data and return it to the ComboBox
-via `updateData` method by using the [filtering](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~Filtering.html) event.
+To display filtered items in the popup, filter the required data and return it to the ComboBox via `updateData` method by using the [filtering](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~Filtering.html) event.
 
-The following sample illustrates how to query the data source and pass the data to the ComboBox
-through the `updateData` method in `filtering` event.
+The following sample illustrates how to query the data source and pass the data to the ComboBox through the `updateData` method in `filtering` event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,8 +44,7 @@ through the `updateData` method in `filtering` event.
 
 ## Limit the minimum filter character
 
-When filtering the list items, you can set the limit for character count to raise remote request and fetch
-filtered data on the ComboBox. This can be done by manual validation within the filter event handler.
+When filtering the list items, you can set the limit for character count to raise remote request and fetch filtered data on the ComboBox. This can be done by manual validation within the filter event handler.
 
 In the following example, the remote request does not fetch the search data until the search key contains three characters.
 
@@ -79,8 +75,7 @@ In the following example, the remote request does not fetch the search data unti
 
 ## Change the filter type
 
-While filtering, you can change the filter type to `contains`,
-`startsWith`, or `endsWith` for string type within the filter event handler.
+While filtering, you can change the filter type to `contains`, `startsWith`, or `endsWith` for string type within the filter event handler.
 
 In the following examples, data filtering is done with `endsWith` type.
 
@@ -111,8 +106,7 @@ In the following examples, data filtering is done with `endsWith` type.
 
 ## Case sensitive filtering
 
-Data items can be filtered either with or without case sensitivity using the DataManager. This can be done
-by passing the fourth optional parameter of the `where` clause.
+Data items can be filtered either with or without case sensitivity using the DataManager. This can be done by passing the fourth optional parameter of the `where` clause.
 
 The following example shows how to perform case-sensitive filter.
 
@@ -143,9 +137,7 @@ The following example shows how to perform case-sensitive filter.
 
 ## Diacritics filtering
 
-ComboBox supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and
-makes it easier to filter the results in international characters lists
-when the [`ignoreAccent`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~IgnoreAccent.html) is enabled.
+ComboBox supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [`ignoreAccent`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~IgnoreAccent.html) is enabled.
 
 In the following sample,data with diacritics are bound as dataSource for ComboBox.
 

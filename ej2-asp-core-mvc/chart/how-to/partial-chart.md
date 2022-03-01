@@ -17,9 +17,7 @@ You can render the charts in partial view in ajax call by calling the partial vi
 
 Follow the given steps to render the charts in partial view.
 
-**Step 1**:
-
-Initially, render the home view page, and then call the partial view action method via ajax call in the home view page.
+**Step 1**: Initially, render the home view page, and then call the partial view action method via ajax call in the home view page.
 
 ```html
  <div id="chartContainer">
@@ -62,9 +60,7 @@ Initially, render the home view page, and then call the partial view action meth
         }
 ```
 
-**Step 2**:
-
-Return the partial view page when calling partial view action method. In that partial view, refer the `scriptManager` to render the charts.
+**Step 2**: Return the partial view page when calling partial view action method. In that partial view, refer the `scriptManager` to render the charts.
 
 ```html
 <div>
@@ -77,6 +73,4 @@ Return the partial view page when calling partial view action method. In that pa
 @Html.EJS().ScriptManager()
 ```
 
-**Sample reference**
-
-Sample for how to render the charts in partial view is available in [`chart sample`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/chartsample1860216677).
+**Sample reference:** Sample for how to render the charts in partial view is available in [`chart sample`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/chartsample1860216677).
