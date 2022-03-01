@@ -13,10 +13,7 @@ documentation: ug
 
 ## ARIA attributes
 
-The web accessibility makes web content and web applications more accessible for people with disabilities. Mostly it helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies.
-DropDownButton provides built-in compliance with `WAI-ARIA` specifications. `WAI-ARIA` support is achieved through the attributes like `aria-expanded`, `aria-owns` and `aria-haspopup` applied for action item in
-DropDownButton. It helps by providing information about the widget for assistive
-technology in the screen readers. DropDownButton component contains the `menu` role and `menuItem` role.
+The web accessibility makes web content and web applications more accessible for people with disabilities. Mostly it helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. DropDownButton provides built-in compliance with `WAI-ARIA` specifications. `WAI-ARIA` support is achieved through the attributes like `aria-expanded`, `aria-owns` and `aria-haspopup` applied for action item in DropDownButton. It helps by providing information about the widget for assistive technology in the screen readers. DropDownButton component contains the `menu` role and `menuItem` role.
 
 | Properties | Functionality |
 | ------------ | ----------------------- |

@@ -116,11 +116,11 @@ To format the cell values based on a specific culture, use the [`Columns.Format`
 
 The number or integer values can be formatted using the following format strings.
 
-Format |Description |Remarks
------|-----
-N | Denotes numeric type. | The numeric format is followed by an integer value like N2 or N3, which denotes the number of precisions to be allowed.
-C | Denotes currency type. | The currency format is followed by an integer value like C2 or C3, which denotes the number of precisions to be allowed.
-P | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 100. For example, the cell value `0.2` is formatted as `20%`. The percentage format is followed by an integer value like P2, P3, which denotes the number of precisions to be allowed.
+|Format |Description |Remarks|
+|-----|-----|----|
+|N | Denotes numeric type. | The numeric format is followed by an integer value like N2 or N3, which denotes the number of precisions to be allowed.|
+|C | Denotes currency type. | The currency format is followed by an integer value like C2 or C3, which denotes the number of precisions to be allowed.|
+|P | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 100. For example, the cell value `0.2` is formatted as `20%`. The percentage format is followed by an integer value like P2, P3, which denotes the number of precisions to be allowed.|
 
 ### Date formatting
 
@@ -130,13 +130,13 @@ For the built-in date format, you can specify the [`Columns.Format`](https://hel
 
 You can also use the custom format string to format the date values. Some of the custom formats and the formatted date values are given in the following table.
 
-Format | Formatted value
------|-----
-{ type:'date', format:'dd/MM/yyyy' } | 04/07/2019
-{ type:'date', format:'dd.MM.yyyy' } | 04.07.2019
-{ type:'date', skeleton:'short' } | 7/4/19
-{ type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/2019 12:00 AM
-{ type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2019 12:00:00 AM
+|Format | Formatted value|
+|-----|-----|
+|{ type:'date', format:'dd/MM/yyyy' } | 04/07/2019|
+|{ type:'date', format:'dd.MM.yyyy' } | 04.07.2019|
+|{ type:'date', skeleton:'short' } | 7/4/19|
+|{ type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/2019 12:00 AM|
+|{ type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2019 12:00:00 AM|
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -351,8 +351,7 @@ A column template is used to customize the column’s look. The following code e
 
 ## Column menu
 
-The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click the Multiple icon of the column. To enable the column menu, you should set the [`ShowColumnMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ShowColumnMenu) property to true.
-The default items are displayed in the following table:
+The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click the Multiple icon of the column. To enable the column menu, you should set the [`ShowColumnMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ShowColumnMenu) property to true. The default items are displayed in the following table:
 
 | Item | Description |
 |-----|-----|
@@ -425,8 +424,7 @@ During the resizing action, the gantt component triggers the below two events.
 
 ### Custom Column Menu Item
 
-Custom column menu items can be added by defining the `columnMenuItems`.
-Actions for this customized items can be defined in the [`columnMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ColumnMenuClick) event.
+Custom column menu items can be added by defining the `columnMenuItems`. Actions for this customized items can be defined in the [`columnMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ColumnMenuClick) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -486,7 +484,7 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 
 ## Responsive columns
 
-You can toggle the column visibility based on media queries, which are defined in the [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia). The [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia) accepts valid [Media Queries]( http://cssmediaqueries.com/what-are-css-media-queries.html ).
+You can toggle the column visibility based on media queries, which are defined in the [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia). The [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia) accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -647,8 +645,8 @@ Gantt column supports the following types:
 * boolean
 * date
 * date-time
-> If the `type` is not defined, it will be determined from the first record of the `dataSource`.
-> In case if the first record of the `dataSource` is null/blank value for a column then it is necessary to define the `type` for that column.
+
+> If the `type` is not defined, it will be determined from the first record of the `dataSource`. In case if the first record of the `dataSource` is null/blank value for a column then it is necessary to define the `type` for that column.
 
 ## Column Spanning
 

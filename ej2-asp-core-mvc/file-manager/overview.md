@@ -10,8 +10,7 @@ documentation: ug
 
 # Overview
 
-The **File Manager** is a graphical user interface component for managing the file system that allows the users to perform most common file operation like accessing, editing, and sorting the files and folders.
-Also, this component has easy navigation functionality for browsing the folders to select a file or folder from the file system.
+The **File Manager** is a graphical user interface component for managing the file system that allows the users to perform most common file operation like accessing, editing, and sorting the files and folders. Also, this component has easy navigation functionality for browsing the folders to select a file or folder from the file system.
 
 ## Key features
 
@@ -49,7 +48,7 @@ Types of navigation support available in File Manager are:
 
 * `Context Menu` - The File Manager control provided with context-menu support to perform list of file operations with the files and folders. It appears when a file or folder is right-clicked, and it appears with varying options based on the target such as a file or a folder. The context menu items can be customized according to user preference.
 
-* `Toolbar` - The toolbar contains the list of tools to perform various operations like file upload or download, view switching, and more. The toolbar can also be configured to add any custom functionality to be performed with the file system
+* `Toolbar` - The toolbar contains the list of tools to perform various operations like file upload or download, view switching, and more. The toolbar can also be configured to add any custom functionality to be performed with the file system.
 
 ### Data Handling
 

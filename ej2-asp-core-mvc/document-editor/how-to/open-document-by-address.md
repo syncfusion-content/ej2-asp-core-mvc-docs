@@ -13,9 +13,7 @@ documentation: ug
 
 ## How to open a document from URL in DocumentEditor
 
-In this article, we are going to see how to open a document from URL in DocumentEditor
-
-please refer below example for client-side code
+In this article, we are going to see how to open a document from URL in DocumentEditor. Please refer below example for client-side code,
 
 {% if page.publishingplatform == "aspnet-core" %}
 

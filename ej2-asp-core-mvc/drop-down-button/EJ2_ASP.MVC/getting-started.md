@@ -42,8 +42,7 @@ We are going to render `DropDownButton` component in **Index.cshtml** page.
 
 ## Bind dataSource
 
-Populate the action items in `SplitButton` by using the `items` property. Here, the JSON values are passed to the
-DropDownButton component are generated in `default.cs` and assigned to `ViewBag` variable.
+Populate the action items in `SplitButton` by using the `items` property. Here, the JSON values are passed to the DropDownButton component are generated in `default.cs` and assigned to `ViewBag` variable.
 
 ```cs
 public ActionResult Index()

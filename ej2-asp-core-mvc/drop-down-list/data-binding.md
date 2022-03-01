@@ -11,9 +11,7 @@ documentation: ug
 
 # Data Binding
 
-The DropDownList loads the data either from local data sources or
-remote data services using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~DataSource.html) property. It supports
-the data type of `array` or [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html).
+The DropDownList loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~DataSource.html) property. It supports the data type of `array` or [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html).
 
 The DropDownList also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html) adaptors.
 
@@ -61,8 +59,7 @@ The DropDownList has support to load array of primitive data such as strings and
 
 ### 2. Array of JSON data
 
-The DropDownList can generate its list items through an array of complex data. For this,
-the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~fields.html) property.
+The DropDownList can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~fields.html) property.
 
 In the following example, `Vegetable` column from complex data have been mapped to the `value` field.
 
@@ -93,8 +90,7 @@ In the following example, `Vegetable` column from complex data have been mapped 
 
 ### 3. Array of Complex data
 
-The DropDownList can generate its list items through an array of complex data. For this,
-the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~fields.html) property.
+The DropDownList can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~fields.html) property.
 
 In the following example, `Code.Id` column and `Country.CountrtyId` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -125,8 +121,7 @@ In the following example, `Code.Id` column and `Country.CountrtyId` column from 
 
 ## Binding remote data
 
-The DropDownList supports retrieval of data from remote data services with the help of [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html) control. The [`Query`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~Query.html) property is used to fetch
-data from the database and bind it to the DropDownList.
+The DropDownList supports retrieval of data from remote data services with the help of [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html) control. The [`Query`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~Query.html) property is used to fetch data from the database and bind it to the DropDownList.
 
 The following sample displays the first 6 contacts from **Customers** table of the `Northwind` Data Service.
 

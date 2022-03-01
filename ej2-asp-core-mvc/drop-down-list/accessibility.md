@@ -11,15 +11,11 @@ documentation: ug
 
 # Accessibility
 
-The DropDownList control has been designed, keeping in mind the `WAI-ARIA` specifications, and applies
-the WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized
-by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who
-use assistive technologies (AT) or those who completely rely on keyboard navigation.
+The DropDownList control has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 
 ## ARIA attributes
 
-The DropDownList control uses the `Listbox` role, and each list item has an `option` role. The following
-`ARIA attributes` denote the DropDownList state.
+The DropDownList control uses the `Listbox` role, and each list item has an `option` role. The following `ARIA attributes` denote the DropDownList state.
 
 | **Properties** | **Functionalities** |
 | --- | --- |

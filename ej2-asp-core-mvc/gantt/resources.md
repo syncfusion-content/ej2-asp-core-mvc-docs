@@ -17,12 +17,12 @@ In Gantt, the resources are represented by staff, equipment and materials etc. I
 
 The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resources) property. These resource fields are mapped to the Gantt control using the [`resourceFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html) property.
 
-Resource fields | Description
------|-----
-[`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Id) | This field is used to assign resources to the tasks.
-[`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Name) | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [`labelSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_LabelSettings) property.
-[`unit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Unit) | It indicates the amount of work that can be done by a resource for the task in a day.
-[`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Group) | This field is used to group the resources and the tasks assigned to that particular resource into category.
+|Resource fields | Description|
+|-----|-----|
+|[`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Id) | This field is used to assign resources to the tasks.|
+|[`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Name) | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [`labelSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_LabelSettings) property.|
+|[`unit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Unit) | It indicates the amount of work that can be done by a resource for the task in a day.|
+|[`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Group) | This field is used to group the resources and the tasks assigned to that particular resource into category.|
 
 The following code snippets shows resource collection and how it assigned to Gantt control.
 

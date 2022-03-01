@@ -11,8 +11,7 @@ documentation: ug
 
 # Disable a DropDownButton
 
-DropdownButton component can be enabled/disabled by giving [`disabled`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_Disabled) property.
-To disable DropdownButton component, the disabled property can be set as `true`.
+DropdownButton component can be enabled/disabled by giving [`disabled`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_Disabled) property. To disable DropdownButton component, the disabled property can be set as `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

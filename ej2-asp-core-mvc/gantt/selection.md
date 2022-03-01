@@ -235,8 +235,7 @@ In the Gantt control, when you click an already selected row, selection will be 
 
 ## Toggle selection
 
-The toggle selection allows you to select and deselect a specific row or cell. To enable toggle selection, set the `enableToggle` property of the selectionSettings to `true`. If you click the selected row or cell, then it will be deselected and vice versa.
-By default, the `enableToggle` property is set to `false`.
+The toggle selection allows you to select and deselect a specific row or cell. To enable toggle selection, set the `enableToggle` property of the selectionSettings to `true`. If you click the selected row or cell, then it will be deselected and vice versa. By default, the `enableToggle` property is set to `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

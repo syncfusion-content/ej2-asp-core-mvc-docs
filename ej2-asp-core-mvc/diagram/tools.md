@@ -282,8 +282,7 @@ There are some functionalities that can be achieved by clicking and dragging on 
 * Pan the diagram: Zoom pan
 * Draw nodes/connectors: DrawOnce/DrawOnce
 
-As all the three behaviors are completely different, you can achieve only one behavior at a time based on the tool that you choose.
-When more than one of those tools are applied, a tool is activated based on the precedence given in the following table.
+As all the three behaviors are completely different, you can achieve only one behavior at a time based on the tool that you choose. When more than one of those tools are applied, a tool is activated based on the precedence given in the following table.
 
 |Precedence|Tools|Description|
 |----------|-----|-----------|
