@@ -32,15 +32,11 @@ When a child element of any group is clicked, its contained group is selected in
 
 Multiple elements can be selected with the following ways:
 
-* Ctrl+Click
-
-During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
+* Ctrl+Click - During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
 
 ![Multiple Selection](images/multi-select-ctrl.gif)
 
-* Selection rectangle/rubber band selection
-
-Clicking and dragging the diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
+* Selection rectangle/rubber band selection - Clicking and dragging the diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
 
 ![Multiple Rubberband Selection](images/multi-select-rubber-band.gif)
 
@@ -69,7 +65,7 @@ The client-side method [`selectAll`](https://help.syncfusion.com/cr/aspnetcore-j
 
 ![Resize](images/resize.gif)
 
->  While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
+> While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
 
 ## Rotate
 

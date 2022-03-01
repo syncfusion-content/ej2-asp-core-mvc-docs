@@ -13,13 +13,11 @@ documentation: ug
 
 <!-- markdownlint-disable MD010 -->
 
-In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created.
-Diagram provides some in-built context menu items and allows to define custom menu items through the [`contextMenuSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramContextMenuSettings.html) property.
+In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created. Diagram provides some in-built context menu items and allows to define custom menu items through the [`contextMenuSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramContextMenuSettings.html) property.
 
 ## Customize context menu
 
-The [`show`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramContextMenuSettings.html#Syncfusion_EJ2_Diagrams_DiagramContextMenuSettings_Show) property helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands.
-The following code illustrates how to enable the default context menu items.
+The [`show`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramContextMenuSettings.html#Syncfusion_EJ2_Diagrams_DiagramContextMenuSettings_Show) property helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands. The following code illustrates how to enable the default context menu items.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -113,8 +111,7 @@ To display the custom context menu items alone, set  the `showCustomMenuOnly` pr
 
 ## Context menu events
 
-You would be notified with events, when you try to open the context menu items `contextMenuOpen` and when you click the menu items `contextMenuClick`.
-The following code example illustrates how to define those events.
+You would be notified with events, when you try to open the context menu items `contextMenuOpen` and when you click the menu items `contextMenuClick`. The following code example illustrates how to define those events.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

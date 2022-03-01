@@ -19,8 +19,7 @@ In Gantt, the tasks’ duration value can be measured by the following duration 
 * Hour
 * Minute
 
-In Gantt, we can define duration unit for whole project by using [`DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value.
-And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
+In Gantt, we can define duration unit for whole project by using [`DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
 
 * Using [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property, to map the duration unit data source field.
 * Defining the duration unit value along with the duration field in the data source.
@@ -56,8 +55,7 @@ The below code snippet explains the mapping of duration unit data source field t
 
 ![Alt text](images/durationUnits.png)
 
-> NOTE
-The default value of the [`DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property is `day`.
+> The default value of the [`DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property is `day`.
 
 ### Defining duration unit along with duration field
 
@@ -116,7 +114,7 @@ A milestone is a task that has no start and end dates, but it has a duration val
 
 ## Define unscheduled tasks in data source
 
-You can define the various types of unscheduled tasks in the data source as follows
+You can define the various types of unscheduled tasks in the data source as follows,
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -145,7 +143,6 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 ![Alt text](images/unscheduledTasks.png)
 
-> NOTE
 > If the [`AllowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property is set to false, then the Gantt control automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
 
 ## Working Time Range
@@ -183,7 +180,6 @@ The following screen shot shows working time range in Gantt control.
 
 ![Alt text](images/working-time-range.png)
 
-> NOTE
 >* Individual tasks can lie between any time within the defined working time range of the project.
 >* The [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
 

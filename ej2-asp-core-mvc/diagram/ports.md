@@ -57,8 +57,7 @@ To add a connection port, define the port object and add it to node’s ports co
 
 Add ports at runtime by using the client-side method [`addPorts`](../api/diagram#addPorts). The following code illustrates how to add ports to node at runtime.
 
-The port’s ID property is used to define the unique ID for the port and its further used to find the port at runtime.
-If ID is not set, then default ID is automatically set.
+The port’s ID property is used to define the unique ID for the port and its further used to find the port at runtime. If ID is not set, then default ID is automatically set.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -206,8 +205,7 @@ diagram.dataBind();
 
 * The shape of port can be changed by using its shape property. To explore the different types of port shapes, refer to Port Shapes. If you need to render a custom shape, then you can set shape as path and define path using path data property of port.
 
-* The appearance of ports can be customized by using [`strokeColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeColor),
-[`strokeWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeWidth), and [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_Fill) properties of the port.
+* The appearance of ports can be customized by using [`strokeColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeColor), [`strokeWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeWidth), and [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_Fill) properties of the port.
 
 * Customize the port size by using the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramPort.html#Syncfusion_EJ2_Diagrams_DiagramPort_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramPort.html#Syncfusion_EJ2_Diagrams_DiagramPort_Height) properties of port.
 
@@ -243,5 +241,4 @@ The offset property of port is used to align the port based on fractions. 0 repr
 
 ## Constraints
 
-The constraints property allows to enable/disable certain behaviors of ports. For more information about port
-constraints, refer to [`Port Constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.PortConstraints.html).
+The constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [`Port Constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.PortConstraints.html).

@@ -59,9 +59,10 @@ The BPMN shapes and its types are explained as follows.
 
 An [`event`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnEvent.html) is notated with a circle and it represents an event in a business process. The type of events are as follows:
 
-    * Start
-    * End
-    * Intermediate
+* Start
+* End
+* Intermediate
+
 The event property of the node allows you to define the type of the event. The default value of the event is **start**. The following code example illustrates how to create a BPMN event.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -181,9 +182,7 @@ The different activities of BPMN process are listed as follows.
 
 ## Tasks
 
-The [`task`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnTask.html) property of the node allows you to define the type of task such as sending, receiving, user based task, etc. By default, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnTask.html#Syncfusion_EJ2_Diagrams_DiagramBpmnTask_Type) property of task is set as **none**. The following code illustrates how to create different types of
-BPMN tasks.
-The events property of tasks allow to represent these results as an event attached to the task.
+The [`task`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnTask.html) property of the node allows you to define the type of task such as sending, receiving, user based task, etc. By default, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnTask.html#Syncfusion_EJ2_Diagrams_DiagramBpmnTask_Type) property of task is set as **none**. The following code illustrates how to create different types of BPMN tasks. The events property of tasks allow to represent these results as an event attached to the task.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -248,8 +247,8 @@ A [`sub-process`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.D
 
 The different types of subprocess are as follows:
 
-    * Event subprocess
-    * Transaction
+* Event subprocess
+* Transaction
 
 ## Event subprocess
 
@@ -317,8 +316,7 @@ Processes is an array collection that defines the children values for BPMN subpr
 
 ## Loop
 
-[`Loop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnSubProcess.html#Syncfusion_EJ2_Diagrams_DiagramBpmnSubProcess_Loop) is a task that is internally being looped. The loop property of task allows you to define the type of loop. The default value for `loop` is **none**.
-You can define the loop property in subprocess BPMN shape as shown in the following code.
+[`Loop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnSubProcess.html#Syncfusion_EJ2_Diagrams_DiagramBpmnSubProcess_Loop) is a task that is internally being looped. The loop property of task allows you to define the type of loop. The default value for `loop` is **none**. You can define the loop property in subprocess BPMN shape as shown in the following code.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

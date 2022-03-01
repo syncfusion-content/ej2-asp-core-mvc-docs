@@ -15,9 +15,9 @@ The File Manager component has been designed with keeping the `WAI-ARIA` specifi
 
 ## ARIA attributes
 
- The following `ARIA` Attributes denote the state of File Manager.
+The following `ARIA` Attributes denote the state of File Manager.
 
- | **Property** | **Functionalities** |
+| **Property** | **Functionalities** |
 | --- | --- |
 | aria-disabled | Indicates whether the File Manager component is in disabled state.|
 | aria-haspopup | Indicates whether the Toolbar element has a suggestion list. |

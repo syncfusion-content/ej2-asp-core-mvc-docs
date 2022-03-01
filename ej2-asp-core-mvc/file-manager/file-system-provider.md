@@ -64,7 +64,7 @@ After setting the root directory of the file system, just build and run the proj
 
 
 
->  To learn more about file actions that can be performed with ASP.NET Core file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider#key-features)
+> To learn more about file actions that can be performed with ASP.NET Core file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider#key-features)
 
 ## ASP.NET MVC 5 file system provider
 
@@ -103,11 +103,11 @@ After setting the root directory of the file system, just build and run the proj
 
 
 
-> To learn more about file actions that can be performed with ASP.NET MVC 5 file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-aspmvc-file-provider#key-features)
+> To learn more about file actions that can be performed with ASP.NET MVC 5 file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-aspmvc-file-provider#key-features).
 
 ## ASP.NET Core Azure cloud file system Provider
 
-In ASP.NET Core, Azure file system provider allows the users to access and manage the blobs in the Azure blob storage. To get started, clone the [azure-aspcore-file-provider](https://github.com/SyncfusionExamples/azure-aspcore-file-provider) using the following command
+In ASP.NET Core, Azure file system provider allows the users to access and manage the blobs in the Azure blob storage. To get started, clone the [azure-aspcore-file-provider](https://github.com/SyncfusionExamples/azure-aspcore-file-provider) using the following command.
 
 ```typescript
 
@@ -209,11 +209,11 @@ After setting the blob container references, just build and run the project. Now
 
 
 
->  To learn more about file actions that can be performed with ASP.NET MVC 5 Azure cloud file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-azure-aspmvc-file-provider#key-features)
+> To learn more about file actions that can be performed with ASP.NET MVC 5 Azure cloud file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-azure-aspmvc-file-provider#key-features).
 
 ## Amazon S3 cloud file system provider
 
-In ASP.NET Core, Amazon ***S3*** (*Simple Storage Service*) cloud file system provider allows the users to access and manage a server hosted file system as collection of objects stored in the Amazon S3 Bucket. To get started, clone the [amazon-s3-aspcore-file-provider](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider) using the following command
+In ASP.NET Core, Amazon ***S3*** (*Simple Storage Service*) cloud file system provider allows the users to access and manage a server hosted file system as collection of objects stored in the Amazon S3 Bucket. To get started, clone the [amazon-s3-aspcore-file-provider](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider) using the following command.
 
 ```typescript
 
@@ -254,11 +254,11 @@ After registering the Amazon client account details, just build and run the proj
 
 
 
-> To learn more about the file actions that can be performed with Amazon S3 Cloud File System provider, refer to this [link](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider#key-features)
+> To learn more about the file actions that can be performed with Amazon S3 Cloud File System provider, refer to this [link](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider#key-features).
 
 ## File Transfer Protocol file system provider
 
-In ASP.NET Core, File Transfer Protocol file system provider allows the users to access to the hosted file system as collection of objects stored in the file storage using File Transfer Protocol. To get started, clone the [ftp-aspcore-file-provider](https://github.com/SyncfusionExamples/ftp-aspcore-file-provider) using the following command
+In ASP.NET Core, File Transfer Protocol file system provider allows the users to access to the hosted file system as collection of objects stored in the file storage using File Transfer Protocol. To get started, clone the [ftp-aspcore-file-provider](https://github.com/SyncfusionExamples/ftp-aspcore-file-provider) using the following command.
 
 ```typescript
 
@@ -297,7 +297,7 @@ After registering the File Transfer Protocol details, just build and run the pro
 
 
 
-> To learn more about the file actions that can be performed with File Transfer Protocol file system provider, refer to this [link](https://github.com/SyncfusionExamples/ftp-aspcore-file-provider#key-features)
+> To learn more about the file actions that can be performed with File Transfer Protocol file system provider, refer to this [link](https://github.com/SyncfusionExamples/ftp-aspcore-file-provider#key-features).
 
 ## SQL database file system provider
 
@@ -360,7 +360,7 @@ After configuring the connection, just build and run the project. Now, the proje
 
 
 
-> To learn more about file actions that can be performed with SQL database file system provider, refer to this [link](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider#key-features)
+> To learn more about file actions that can be performed with SQL database file system provider, refer to this [link](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider#key-features).
 
 ## NodeJS file system provider
 
@@ -370,13 +370,13 @@ In ASP.NET Core, NodeJS file system provider allows the users to manage the file
 
 * Install the ej2-filemanager-node-filesystem package by running the below command.
 
- ```typescript
+```typescript
 
 npm install @syncfusion/ej2-filemanager-node-filesystem
 
 ```
 
-* After installing the package, navigate to the ej2-filemanager-node-filesystem package folder within the node-modules
+* After installing the package, navigate to the ej2-filemanager-node-filesystem package folder within the node-modules.
 * Run the command **npm install** command.
 
 ### Cloning the ej2-filemanager-node-filesystem from GitHub
@@ -434,7 +434,7 @@ Now, just mapping the **ajaxSettings** property of the FileManager component to 
 
 
 
-> To learn more about file actions that can be performed with NodeJS file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem#key-features)
+> To learn more about file actions that can be performed with NodeJS file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem#key-features).
 
 ## Google Drive file system provider
 
@@ -479,7 +479,7 @@ After updating the credentials, just build and run the project. Now, the project
 
 
 
-> To learn more about file actions that can be performed with Google Drive file system provider, refer to this [link](https://github.com/SyncfusionExamples/google-drive-aspcore-file-provider#key-features)
+> To learn more about file actions that can be performed with Google Drive file system provider, refer to this [link](https://github.com/SyncfusionExamples/google-drive-aspcore-file-provider#key-features).
 
 ## Firebase Realtime Database file system provider
 
@@ -584,9 +584,9 @@ void RegisterFirebaseRealtimeDB("https://filemanager-c0f6d.firebaseio.com/", "Fi
 
 In the above code,
 
-* `https://filemanager-c0f6d.firebaseio.com/` denotes Firebase Realtime Database REST API link
+* `https://filemanager-c0f6d.firebaseio.com/` denotes Firebase Realtime Database REST API link.
 
-* `Files` denotes newly created root node in Firebase Realtime  Database
+* `Files` denotes newly created root node in Firebase Realtime Database.
 
 * `{give the service account key path}` denotes service account key path which has authentication key for the Firebase Realtime Database data.
 
@@ -613,7 +613,7 @@ After configuring the Firebase Realtime Database service link, build and run the
 
 
 
-> To learn more about the file actions that can be performed with Firebase Realtime Database file system provider, refer to this [link](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider#key-features)
+> To learn more about the file actions that can be performed with Firebase Realtime Database file system provider, refer to this [link](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider#key-features).
 
 ## IBM Cloud Object Storage file provider
 
@@ -623,7 +623,7 @@ The IBM Cloud Object Storage file provider module allows you work with the IBM C
 
 * Install the ej2-filemanager-ibm-cos-node-file-provider npm package by running the below command.
 
- ```typescript
+```typescript
 
 npm install @syncfusion/ej2-filemanager-ibm-cos-node-file-provider
 
@@ -678,4 +678,4 @@ Now, just mapping the **ajaxSettings** property of the FileManager component to 
 
 
 
-> To learn more about the file actions that can be performed with IBM Cloud Object Storage file provider, refer to this [link](https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider#key-features)
+> To learn more about the file actions that can be performed with IBM Cloud Object Storage file provider, refer to this [link](https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider#key-features).

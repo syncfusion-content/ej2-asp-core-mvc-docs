@@ -36,9 +36,10 @@ container.documentEditor.userColor = '#fff000';
 ## Restrict Editing Pane
 
 Restrict Editing Pane provides the following options to manage the document:
+
 * To apply formatting restrictions to the current document, select the allow formatting check box.
 * To apply editing restrictions to the current document, select the read only check box.
 * To add users to the current document, select more users option and add user from the popup dialog.
 * To include range permission to the current document, select parts of the document and choose users who are allowed to freely edit them from the listed check box.
-* To apply the chosen editing restrictions, click the **YES,START ENFORCING PROTECTION** button. A dialog box displays asking for a   password to protect.
+* To apply the chosen editing restrictions, click the **YES,START ENFORCING PROTECTION** button. A dialog box displays asking for a password to protect.
 * To stop protection, select **STOP PROTECTION** button. A dialog box displays asking for a password to stop protection.

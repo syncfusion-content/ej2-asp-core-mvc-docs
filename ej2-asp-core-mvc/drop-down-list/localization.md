@@ -14,8 +14,8 @@ The Localization library allows you to localize static text content of the [noRe
 
 | Locale key | en-US (default) |
 |------------|-----------------|
-| noRecordsTemplate |  No records found
-| actionFailureTemplate | The request failed
+| noRecordsTemplate |  No records found |
+| actionFailureTemplate | The request failed |
 
 ## Loading translations
 

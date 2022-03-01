@@ -42,8 +42,7 @@ To create DropDownButton add the `ejs-dropdownbutton` tag with id attribute as `
 
 ## Bind dataSource
 
-Populate the action items in `SplitButton` by using the `items` property. Here, the JSON values are passed to the
-DropDownButton component are generated in `default.cs` and assigned to `ViewBag` variable.
+Populate the action items in `SplitButton` by using the `items` property. Here, the JSON values are passed to the DropDownButton component are generated in `default.cs` and assigned to `ViewBag` variable.
 
 ```cs
 public IActionResult Index()
@@ -73,9 +72,9 @@ Output be like the below.
 
 ## Run the application
 
- After successful compilation of your application, simply press `F5` to run the application.
+After successful compilation of your application, simply press `F5` to run the application.
 
- The following example shows a basic DropDownButton.
+The following example shows a basic DropDownButton.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
