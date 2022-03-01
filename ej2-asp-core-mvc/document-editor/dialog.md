@@ -108,6 +108,7 @@ This dialog allows you to perform the following operations:
 * Navigate to a bookmark.
 * Create a bookmark at current selection.
 * Delete an existing bookmark.
+
 To open this dialog, refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}

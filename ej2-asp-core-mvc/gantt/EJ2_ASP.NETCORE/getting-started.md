@@ -34,7 +34,7 @@ Open the `nuGet` package manager.
 
 ![Alt text](./images/solution-explorer-core.png)
 
-Install the **Syncfusion.EJ2** package to the application
+Install the **Syncfusion.EJ2** package to the application.
 
 ![Alt text](./images/nuget-demo.png)
 
@@ -227,7 +227,7 @@ Modify the task details through cell editing by setting the edit mode to `Auto`.
 
 
 
-`Note:` When the edit mode is set to `Auto`, you can change the cells to editable mode by double-clicking anywhere at the TreeGrid and edit the task details in the edit dialog by double-clicking anywhere at the chart.
+> When the edit mode is set to `Auto`, you can change the cells to editable mode by double-clicking anywhere at the TreeGrid and edit the task details in the edit dialog by double-clicking anywhere at the chart.
 
 ### Dialog editing
 
@@ -254,7 +254,7 @@ Modify the task details through dialog by setting the edit mode to `Dialog`.
 
 
 
-`Note:` In dialog editing mode, the edit dialog will appear while performing double-click action in both TreeGrid and chart sides.
+> In dialog editing mode, the edit dialog will appear while performing double-click action in both TreeGrid and chart sides.
 
 ### Taskbar editing
 

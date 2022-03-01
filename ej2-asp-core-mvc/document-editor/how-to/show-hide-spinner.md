@@ -11,7 +11,7 @@ documentation: ug
 
 # How to show and hide spinner while opening document in React Document Editor component
 
-Using [`spinner`](https://ej2.syncfusion.com/aspnetcore/documentation/spinner/getting-started-asp-core/) component, you can show/hide spinner while opening document in DocumentEditor .
+Using [`spinner`](https://ej2.syncfusion.com/aspnetcore/documentation/spinner/getting-started-asp-core/) component, you can show/hide spinner while opening document in DocumentEditor.
 
 Example code snippet to show/hide spinner
 

@@ -13,9 +13,7 @@ documentation: ug
 
 DropDownButton with rounded corner can be achieved by adding `border-radius` CSS property to button element.
 
-In the following example, `e-round-corner` class is defined with `5px` `border-radius`
-property and added that class to button element using
-[`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_CssClass) property.
+In the following example, `e-round-corner` class is defined with `5px` `border-radius` property and added that class to button element using [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_CssClass) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

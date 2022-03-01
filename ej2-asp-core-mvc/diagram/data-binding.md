@@ -27,8 +27,8 @@ documentation: ug
 
 * Diagram supports two types of data binding. They are:
 
-    1. Local data
-    2. Remote data
+1. Local data
+2. Remote data
 
 ## Local data
 
