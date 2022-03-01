@@ -52,7 +52,7 @@ To modify the Kanban appearance, you need to override the default CSS of Kanban.
 | .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells.e-dropping | Customize swimlane content cells card dropping of kanban. |
 | .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells .e-card-wrapper | Swimlane content cells of card wrapper. |
 | .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells.e-min-color | Swimlane content cells of minimum color of kanban. |
-| .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells.e-max-color | Swimlane content cells of maximum color of kanban. |Customize the kanban CSS theme. Please find the list of CSS classes in Kanban.| .e-kanban .e-kanban-table .e-header-cells | Header cells of kanban. |
+| .e-kanban .e-kanban-content .e-content-row:not(.e-swimlane-row) .e-content-cells.e-max-color | Swimlane content cells of maximum color of kanban. |
 | .e-kanban .e-kanban-table .e-header-cells .e-header-text | Header text of Kanban. |
 | .e-kanban .e-kanban-table .e-header-cells .e-item-count | Header cells Item count of Kanban. |
 | .e-kanban .e-kanban-table .e-header-cells .e-column-expand | Header cells of toggle icon in column expand. |

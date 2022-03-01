@@ -13,7 +13,7 @@ documentation: ug
 
 In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately.
 
-Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other
+Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other.
 Rich Text Editor supports markdown editing when the [`editorMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_EditorMode_Syncfusion_EJ2_RichTextEditor_EditorMode_) set as `Markdown` and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text.
 
 ## Supported Commands

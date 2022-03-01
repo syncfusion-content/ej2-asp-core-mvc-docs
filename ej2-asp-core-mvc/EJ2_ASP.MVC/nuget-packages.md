@@ -122,8 +122,7 @@ The NuGet Command Line Interface (CLI), `nuget.exe`, provides the full extent of
 
 NuGet packages can be updated to their specific version or latest version available in the Visual Studio solution or project:
 
-1. Right-click the project/solution in the Solution Explorer tab, and choose **Manage NuGet Packages…** Alternatively
-click **Tools** menu, **NuGet Package Manager | Manage NuGet Packages for Solution…**
+1. Right-click the project/solution in the Solution Explorer tab, and choose **Manage NuGet Packages…** Alternatively click **Tools** menu, **NuGet Package Manager | Manage NuGet Packages for Solution…**
 
 2. Select the **Updates** tab to see the packages available for update from the desired package sources. Select the required packages and the specific version from the dropdown, and click the **Update** button.
 

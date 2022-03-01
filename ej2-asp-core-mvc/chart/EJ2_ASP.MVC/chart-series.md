@@ -13,8 +13,7 @@ documentation: ug
 
 ## Multiple Series
 
-You can add multiple series to the chart by using [`Series`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html) property.
-The series are rendered in the order as it is added to the series array.
+You can add multiple series to the chart by using [`Series`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html) property. The series are rendered in the order as it is added to the series array.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

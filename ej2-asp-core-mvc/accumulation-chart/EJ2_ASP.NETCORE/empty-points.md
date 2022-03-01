@@ -11,9 +11,7 @@ documentation: ug
 
 # Empty Points
 
-The data points those uses the `null` or `undefined` as value are considered as empty points. The empty data points
-are ignored and not plotted in the chart. You can customize those points, using the `emptyPointSettings` property in
-series. The default mode of the empty point is `Gap`. Other supported modes are `Average` and `Zero`.
+The data points those uses the `null` or `undefined` as value are considered as empty points. The empty data points are ignored and not plotted in the chart. You can customize those points, using the `emptyPointSettings` property in series. The default mode of the empty point is `Gap`. Other supported modes are `Average` and `Zero`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,8 +40,7 @@ series. The default mode of the empty point is `Gap`. Other supported modes are 
 
 ## Customization
 
-Specific color for an empty point can be set by using the `fill` property in `emptyPointSettings` and the
-border for an empty point can be set by using the `border` property.
+Specific color for an empty point can be set by using the `fill` property in `emptyPointSettings` and the border for an empty point can be set by using the `border` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -44,8 +44,7 @@ We are going to render `Scheduler` component in ASP.NET MVC application. Add the
 
 ## Populating appointments
 
-To populate an empty Scheduler with appointments, bind the event data to it by
-assigning the `DataSource` property under `EventSettings` property.
+To populate an empty Scheduler with appointments, bind the event data to it by assigning the `DataSource` property under `EventSettings` property.
 
 * Create a new Class in controller page to define the data to be passed to the Scheduler as mentioned below,
 

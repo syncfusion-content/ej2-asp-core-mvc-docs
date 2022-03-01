@@ -152,8 +152,7 @@ In the below example, we have customized the cells of `TaskID` and `StartDate` c
 
  Grid Lines
 
-The [`gridLines`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~GridLines.html) have option to display cell border and it can be defined by the
-[`gridLines`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~GridLines.html) property.
+The [`gridLines`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~GridLines.html) have option to display cell border and it can be defined by the [`gridLines`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~GridLines.html) property.
 
 The available modes of grid lines are:
 

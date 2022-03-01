@@ -33,8 +33,7 @@ import {Input} from '@syncfusion/ej2-inputs';
 
 The `watermark label` will be updated based on the specified `placeholder` value of the `Floating Label TextBox`.
 
-* You can add the `icons` on the input by passing `buttons` property value with the
-class name `e-input-group-icon` as parameter to the `createInput` method.
+* You can add the `icons` on the input by passing `buttons` property value with the class name `e-input-group-icon` as parameter to the `createInput` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

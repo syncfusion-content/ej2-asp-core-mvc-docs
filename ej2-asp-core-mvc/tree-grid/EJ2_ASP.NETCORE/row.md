@@ -16,8 +16,7 @@ The row represents record details fetched from data source.
 ## Customize rows
 
 You can customize the appearance of a row by using the [`rowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDataBound.html) event.
-The [`rowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDataBound.html) event triggers for every row. In the event handler, you can get the
-**args** which contains details of the row.
+The [`rowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDataBound.html) event triggers for every row. In the event handler, you can get the **args** which contains details of the row.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -114,8 +113,7 @@ In the below example, the rowHeight is set as **60px**.
 
 ### Customize row height for particular row
 
-Grid row height for particular row can be customized using the [`rowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDataBound.html)
-event by setting the [`rowHeight`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowHeight.html) in arguments for each row based on the requirement.
+Grid row height for particular row can be customized using the [`rowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDataBound.html) event by setting the [`rowHeight`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowHeight.html) in arguments for each row based on the requirement.
 
 In the below example, the row height for the row with Task ID as '3' is set as '90px' using the [`rowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDataBound.html) event.
 
@@ -146,8 +144,7 @@ In the below example, the row height for the row with Task ID as '3' is set as '
 
 ## Row template
 
-The **rowTemplate** has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowTemplate.html) property accepts either
-the **template** string or HTML element ID.
+The **rowTemplate** has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowTemplate.html) property accepts either the **template** string or HTML element ID.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -178,7 +175,7 @@ The [`rowTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syn
 
 ### Row template with formatting
 
-If the [`rowTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowTemplate.html) is used, the value cannot be  formatted  inside the template using the [`format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
+If the [`rowTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowTemplate.html) is used, the value cannot be formatted inside the template using the [`format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

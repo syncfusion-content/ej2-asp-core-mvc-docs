@@ -13,8 +13,7 @@ documentation: ug
 
 This section briefly explains about how to include a simple Textbox in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](../getting-started) page for introduction part part of the system requirements and configure the common specifications.
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed,
-you also have to include the license key in your projects.
+> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include the license key in your projects.
 Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
 ## Initialize TextBox control to the Application
@@ -79,7 +78,7 @@ You can create a TextBox with icon as a group by creating the parent div element
 
 Output be like the below.
 
-![textbox](../images/textbox-getting.png)
+![textbox](images/textbox-getting.png)
 
 ## Floating label
 

@@ -19,8 +19,7 @@ The Syncfusion ASP.NET MVC (Essential JS 2) Visual Studio Extensions can be acce
 
 ## IMPORTANT
 
-The Syncfusion ASP.NET MVC (Essential JS 2) menu option is available from v17.1.0.32.
-Syncfusion provides the following supports in Visual Studio:
+The Syncfusion ASP.NET MVC (Essential JS 2) menu option is available from v17.1.0.32. Syncfusion provides the following supports in Visual Studio:
 
 [Project Template](vs2019-extensions/create-project): Creates the Syncfusion ASP.NET MVC (Essential JS 2) application by adding the required Essential JS 2 components.
 

@@ -33,7 +33,7 @@ Open the `NuGet` package manager.
 
 ![Alt text](./images/solution-explorer-core.png)
 
-Install the **Syncfusion.EJ2.AspNet.Core** package to the application
+Install the **Syncfusion.EJ2.AspNet.Core** package to the application.
 
 ![Alt text](./images/nuget-package-demo.png)
 

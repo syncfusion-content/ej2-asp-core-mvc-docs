@@ -19,8 +19,7 @@ EJ2 chart supports horizontal and vertical strip lines and customization of stri
 
 ## Horizontal Strip lines
 
-You can create Horizontal stripline by adding the `Stripline` in the vertical axis and set `Visible` option to true.
-Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
+You can create Horizontal stripline by adding the `Stripline` in the vertical axis and set `Visible` option to true. Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -49,8 +48,7 @@ Striplines are rendered in the specified start to end range and you can add more
 
 ## Vertical Striplines
 
-You can create vertical stripline by adding the `Stripline` in the horizontal axis and set `Visible` option to true.
-Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
+You can create vertical stripline by adding the `Stripline` in the horizontal axis and set `Visible` option to true. Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,11 +77,7 @@ Striplines are rendered in the specified start to end range and you can add more
 
 ## Customize the strip line
 
-Starting value in specific strip line can be customized by `Start` property in strip line. Similarly, ending value
-is customized by `End`. It can be also set for starting from the corresponding origin of the axis by `StartFromOrigin`.
-Size of the strip line is customized by `Size`. Border for the stripline is customized by `Border`.
-Order of the strip line such that whether it should be rendered in behind or over the series elements
-is customized by `ZIndex`.
+Starting value in specific strip line can be customized by `Start` property in strip line. Similarly, ending value is customized by `End`. It can be also set for starting from the corresponding origin of the axis by `StartFromOrigin`. Size of the strip line is customized by `Size`. Border for the stripline is customized by `Border`. Order of the strip line such that whether it should be rendered in behind or over the series elements is customized by `ZIndex`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -112,8 +106,7 @@ is customized by `ZIndex`.
 
 ## Customize the stripline text
 
-You can customize the text rendered in stripline by `TextStyle` property. Rotation of the strip line text can be changed by `Rotation` property.
-Horizontal and Vertical alignment of stripline text can be changed by `HorizontalAlignment` and `VerticalAlignment` property.
+You can customize the text rendered in stripline by `TextStyle` property. Rotation of the strip line text can be changed by `Rotation` property. Horizontal and Vertical alignment of stripline text can be changed by `HorizontalAlignment` and `VerticalAlignment` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

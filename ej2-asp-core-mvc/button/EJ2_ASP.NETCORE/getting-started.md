@@ -48,9 +48,9 @@ Output be like the below.
 
 ## Run the application
 
- After successful compilation of your application, simply press `F5` to run the application.
+After successful compilation of your application, simply press `F5` to run the application.
 
- The following example shows a default rendering of Button.
+The following example shows a default rendering of Button.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

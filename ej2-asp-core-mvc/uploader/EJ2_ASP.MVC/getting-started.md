@@ -13,15 +13,14 @@ documentation: ug
 
  This section briefly explains about how to include a simple Uploader in your ASP.NET MVC application. You can refer [ASP.NET MVC Getting Started documentation](../getting-started) page for introduction part part of the system requirements and configure the common specifications.
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed,
-you also have to include the license key in your projects.
+> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include the license key in your projects.
 Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET MVC application to use our controls.
 
 ## Initialize Uploader control to the Application
 
 Uploader control can be rendered by using the `EJS().Uploader()` tag helper in ASP.NET MVC application. Add the below simple code to your `index.cshtml` page which is available within the `Views/Home` folder, to initialize the Uploader.
 
-> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests.
+> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests. 
 Hence, use the third party `promise` library like blue-bird to use the uploader in Internet Explorer.
 
 {% if page.publishingplatform == "aspnet-core" %}

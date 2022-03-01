@@ -74,6 +74,8 @@ A [`modal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.
 should interact the Dialog compulsory before interacting with the remaining content in an
 application.
 
+The dialog is always centered based on the target container. If the target is not specified, then the dialog will be rendered based on its body and centered in the position of the current viewpoint.
+
 While the user clicks the overlay, the action can be handled through the
 [`OverlayClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_OverlayClick) event. In the below sample, the
 Dialog close action is performed while clicking on the overlay.

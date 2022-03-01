@@ -10,19 +10,13 @@ documentation: ug
 
 # How To
 
-<!-- markdownlint-disable MD036 -->
-
 ## Get data from database for circular gauge and render gauge from code behind
 
-<!-- markdownlint-disable MD033 -->
 Circular gauge can be rendered from the code behind by initializing the required properties in controller and passing them through ViewData to client-side. You can get the data from the database by creating a data table and accessing the data table values to gauge pointers value.
 
 To get the data from data base and render the gauge from code behind, follow the given steps:
 
-**Step 1**:
-
-<!-- markdownlint-disable MD031 -->
-Initialize the required properties in controller and get data from database, create a new data collection that contains minimum, maximum, and value attributes from the data base data, and then assign the data to the minimum, maximum, and pointer values of gauge.
+**Step 1**: Initialize the required properties in controller and get data from database, create a new data collection that contains minimum, maximum, and value attributes from the data base data, and then assign the data to the minimum, maximum, and pointer values of gauge.
 
 ```cs
  public ActionResult Index()
@@ -68,9 +62,7 @@ Initialize the required properties in controller and get data from database, cre
         }
 ```
 
-**Step 2**:
-
-Bind the gauge properties passed via ViewData from the controller at client-side as demonstrated in the following code sample.
+**Step 2**: Bind the gauge properties passed via ViewData from the controller at client-side as demonstrated in the following code sample.
 
 ```html
    @Html.EJS().CircularGauge("container", (Syncfusion.EJ2.CircularGauge.CircularGauge)ViewData["GaugeModel"]).Render();
@@ -87,9 +79,7 @@ Bind the gauge properties passed via ViewData from the controller at client-side
 
 
 
-**Sample reference**
-
-[`circulargauge sample`](https://github.com/SyncfusionExamples/How-to-get-data-for-circular-gauge-from-database-and-render-gauge-from-code-behind).
+**Sample reference** : [`circulargauge sample`](https://github.com/SyncfusionExamples/How-to-get-data-for-circular-gauge-from-database-and-render-gauge-from-code-behind).
 
 **Screenshot**
 

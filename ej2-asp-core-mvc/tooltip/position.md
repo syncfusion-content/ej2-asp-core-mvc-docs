@@ -103,8 +103,7 @@ By default, tip pointers are auto adjusted so that the arrow does not point outs
 
 ## Dynamic positioning
 
-The Tooltip and its tip pointer can be positioned dynamically based on the target's location. This can be achieved by using the `refresh`
- method, which auto adjusts the Tooltip over the target.
+The Tooltip and its tip pointer can be positioned dynamically based on the target's location. This can be achieved by using the `refresh` method, which auto adjusts the Tooltip over the target.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

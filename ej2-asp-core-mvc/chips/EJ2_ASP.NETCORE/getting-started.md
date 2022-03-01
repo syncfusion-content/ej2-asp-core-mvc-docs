@@ -24,9 +24,7 @@ To create simple `Chip` add the `ejs-chiplist` tag with id attribute as `element
 
 ## Run the application
 
- After successful compilation of your application, simply press `F5` to run the application.
-
- The following example shows a default rendering of Chip.
+After successful compilation of your application, simply press `F5` to run the application. The following example shows a default rendering of Chip.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

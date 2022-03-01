@@ -10,9 +10,7 @@ documentation: ug
 
 # Customize Slider Bar
 
-Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize the slider bar. The
-slider bar can be customized with different themes. By default, slider have class name `e-slider-track` for bar. The class can
-be overridden with our own color values like the following code snippet.
+Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize the slider bar. The slider bar can be customized with different themes. By default, slider have class name `e-slider-track` for bar. The class can be overridden with our own color values like the following code snippet.
 
 ```css
 .e-control.e-slider .e-slider-track .e-range {
