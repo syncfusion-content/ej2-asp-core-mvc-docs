@@ -10,9 +10,17 @@ documentation: ug
 
 # NuGet Packages for ASP.NET Core UI Controls
 
+<style>
+img
+{
+width:100%;
+height: auto;
+}
+</style>
+
 ## Overview
 
-**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET Core NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22+Syncfusion). The Syncfusion ASP.NET Core NuGet packages can be used without installing the Essential Studio or ASP.NET Core platform installation to implement the Syncfusion ASP.NET Core components.
+**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET Core NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22+Syncfusion). The Syncfusion ASP.NET Core NuGet packages can be used without installing the Essential Studio or ASP.NET Core platform installation to implement the Syncfusion ASP.NET Core controls.
 
 ## Installation using Package Manager
 
@@ -121,7 +129,7 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 
 ## Install and manage NuGet packages in Visual Studio for Mac
 
-The NuGet Package Manager UI in visual studio for Mac allows you to search, install, uninstall, and update Syncfusion ASP.NET Core NuGet packages in your applications and solutions. You can find and install the Syncfusion ASP.NET Core NuGet packages in your Visual Studio for Mac ASP.NET Core application and this process is easy with the steps below:
+The NuGet Package Manager UI in Visual Studio for Mac allows you to search, install, uninstall, and update Syncfusion ASP.NET Core NuGet packages in your applications and solutions. You can find and install the Syncfusion ASP.NET Core NuGet packages in your Visual Studio for Mac ASP.NET Core application and this process is easy with the steps below:
 
 1. Right-click on the ASP.NET Core application or solution in the Solution Window, and choose **Manage NuGet Packages...**
 

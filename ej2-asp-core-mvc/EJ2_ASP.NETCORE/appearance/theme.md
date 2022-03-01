@@ -10,7 +10,7 @@ documentation: ug
 
 # Syncfusion ASP.NET Core Themes
 
-The following list of themes are included in the Syncfusion ASP.NET Core components library.
+The following list of themes are included in the Syncfusion ASP.NET Core controls library.
 
 |Theme |Style Sheet Name|
 |--------|--------|

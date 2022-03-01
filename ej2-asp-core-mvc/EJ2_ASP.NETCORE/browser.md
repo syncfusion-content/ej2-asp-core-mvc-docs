@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Browser in ##Platform_Name## Component
-description: Learn here all about Browser in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Browser in ##Platform_Name## controls
+description: Learn here all about Browser in Syncfusion ##Platform_Name## controls of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Browser
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Browser Compatibility in ASP.NET Core
 
-The Syncfusion Essential JS 2 ASP.NET Core components are supported by all modern browsers on Windows, Linux, and MacOS.
+The Syncfusion ASP.NET Core controls are supported by all modern browsers on Windows, Linux, and MacOS.
 
 |    Browser    |    Versions    |
 |--------------|---------------|
