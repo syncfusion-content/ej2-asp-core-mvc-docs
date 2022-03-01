@@ -197,8 +197,7 @@ To use marker data label and its customization in Smith chart, use marker `dataL
 
 ## Enable legend for Smith chart
 
-The legend feature is used to denote the corresponding series. You can enable the legend for the smithchart by setting the [`visible`]
-property to true in [`legendSettings`] object. The following sample shows enabling legend for Smith chart. The series name can be customized using the series `name`.
+The legend feature is used to denote the corresponding series. You can enable the legend for the smithchart by setting the [`visible`] property to true in [`legendSettings`] object. The following sample shows enabling legend for Smith chart. The series name can be customized using the series `name`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -227,8 +226,7 @@ property to true in [`legendSettings`] object. The following sample shows enabli
 
 ## Enable tooltip for the Smith chart series
 
-The tooltip feature is used to show the values of the current point. You can enable tooltip by setting the [`visible`] property to true
-in [`tooltipSettings`] object. The following sample shows enabling tooltip for Smith chart series collection.
+The tooltip feature is used to show the values of the current point. You can enable tooltip by setting the [`visible`] property to true in [`tooltipSettings`] object. The following sample shows enabling tooltip for Smith chart series collection.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -76,8 +76,7 @@ Output be like the below.
 
 ## Enable backdrop
 
-Enabling the `showBackdrop` in the Sidebar component will prevent
-the main content from user interactions.
+Enabling the `showBackdrop` in the Sidebar component will prevent the main content from user interactions.
 Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting [`width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Width.html) property.
 
 The following example shows a Sidebar component with enabled backdrop.

@@ -15,9 +15,7 @@ This section explains the different sizes and labels.
 
 ## Label
 
-The CheckBox caption can be defined by using the [`label`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Label) property.
-This reduces the manual addition of label for CheckBox. You can customize the label position before or after the CheckBox
-through the [`labelPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_LabelPosition) property.
+The CheckBox caption can be defined by using the [`label`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Label) property. This reduces the manual addition of label for CheckBox. You can customize the label position before or after the CheckBox through the [`labelPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_LabelPosition) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -46,8 +44,7 @@ through the [`labelPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ## Size
 
-The different CheckBox sizes available are default and small. To reduce the size of default CheckBox to small,
-set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_CssClass) property to `e-small`.
+The different CheckBox sizes available are default and small. To reduce the size of default CheckBox to small, set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_CssClass) property to `e-small`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

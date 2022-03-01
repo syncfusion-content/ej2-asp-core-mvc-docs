@@ -11,14 +11,12 @@ documentation: ug
 
 # Localization
 
-The Localization library allows you to localize static text content of the
-[noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~NoRecordsTemplate.html)
- and [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~ActionFailureTemplate.html) properties according to the culture currently assigned to the ComboBox.
+The Localization library allows you to localize static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~NoRecordsTemplate.html) and [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~ActionFailureTemplate.html) properties according to the culture currently assigned to the ComboBox.
 
-| Locale key | en-US (default)
-|------|------
-| noRecordsTemplate |  No records found
-| actionFailureTemplate | The request failed
+| Locale key | en-US (default) |
+|------|------|
+| noRecordsTemplate |  No records found |
+| actionFailureTemplate | The request failed |
 
 ## Loading translations
 

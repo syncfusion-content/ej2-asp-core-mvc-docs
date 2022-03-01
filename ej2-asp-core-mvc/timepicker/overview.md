@@ -10,8 +10,7 @@ documentation: ug
 
 # Overview
 
-**TimePicker** is an intuitive interface control which provides an options to select a
-time value from popup list or to set a desired time value. test
+**TimePicker** is an intuitive interface control which provides an options to select a time value from popup list or to set a desired time value. test
 
 ## Key Features
 

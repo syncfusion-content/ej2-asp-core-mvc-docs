@@ -46,8 +46,7 @@ Category axis are used to represent, the string values instead of numbers.
 
 <!-- markdownlint-disable MD036 -->
 
-By default, category labels are placed between the ticks in an axis, this can also be placed on ticks
-using [`LabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelPlacement) property.
+By default, category labels are placed between the ticks in an axis, this can also be placed on ticks using [`LabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelPlacement) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -76,9 +75,7 @@ using [`LabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 ## Range
 
-Range of the category axis can be customized using [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Minimum),
-[`Maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Maximum) and [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Interval) property of
-the axis.
+Range of the category axis can be customized using [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Minimum), [`Maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Maximum) and [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Interval) property of the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -107,8 +104,7 @@ the axis.
 
 ## Indexed category axis
 
-Category axis also can be rendered based on the index values of data source. This can be achieved by defining the
-`IsIndexed` property to `true` in the axis.
+Category axis also can be rendered based on the index values of data source. This can be achieved by defining the `IsIndexed` property to `true` in the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

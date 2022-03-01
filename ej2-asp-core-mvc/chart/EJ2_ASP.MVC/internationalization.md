@@ -17,15 +17,12 @@ Chart provide supports for internationalization for below chart elements.
 * Axis label.
 * Tooltip.
 
-For more information about number and date formatter you can refer
-[`internationalization`](http://ej2.syncfusion.com/documentation/base/intl.html).
+For more information about number and date formatter you can refer [`internationalization`](http://ej2.syncfusion.com/documentation/base/intl.html).
 
 <!-- markdownlint-disable MD036 -->
 **Globalization**
 
-Globalization is the process of designing and developing an component that works in different
-cultures/locales.  Internationalization  library is used to globalize number, date, time values in
-Chart component using  `LabelFormat` property in axis.
+Globalization is the process of designing and developing an component that works in different cultures/locales. Internationalization library is used to globalize number, date, time values in Chart component using `LabelFormat` property in axis.
 
 **Numeric Format**
 

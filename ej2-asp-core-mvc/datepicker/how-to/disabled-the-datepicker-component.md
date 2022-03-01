@@ -11,12 +11,9 @@ documentation: ug
 
 # Disabled State
 
-To disable the DatePicker, use its
-[enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Enabled)
-property.
+To disable the DatePicker, use its [enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Enabled) property.
 
-The following example demonstrates the DatePicker in
-a disabled state.
+The following example demonstrates the DatePicker in a disabled state.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

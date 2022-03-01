@@ -15,7 +15,6 @@ This article describes the API migration process of  Chart component from Essent
 
 ## Annotations
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -441,7 +440,7 @@ This article describes the API migration process of  Chart component from Essent
 </code>
 </td>
 <td>
-<b>Not applicable</b>
+<b>Not applicable</b></td>
 </tr>
 </table>
 
@@ -1215,7 +1214,6 @@ This article describes the API migration process of  Chart component from Essent
 
 ## Legend
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -1658,7 +1656,6 @@ Not applicable
 
 ## primaryXAxis
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -3151,11 +3148,10 @@ Not Applicable
 </code>
 </td>
 </tr>
-<table>
+</table>
 
 ## primaryYAxis
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -4648,11 +4644,10 @@ Not Applicable
 </code>
 </td>
 </tr>
-<table>
+</table>
 
 ## Axes
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -6145,11 +6140,10 @@ Not Applicable
 </code>
 </td>
 </tr>
-<table>
+</table>
 
 ## Rows
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -6240,7 +6234,6 @@ chart.appendTo('#chart');
 
 ## Series
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -7478,7 +7471,6 @@ Not applicable.
 
 ## marker
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>visibility of marker</b></td>
@@ -8104,7 +8096,6 @@ Not Applicable
 
 ## TrendLines
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -8467,7 +8458,6 @@ Not Applicable.
 
 ## StripLines
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -8723,7 +8713,6 @@ PrimaryXAxis(px => px.StripLines(st => st.FontStyle())))
 
 ## Multilevel Labels
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -8925,7 +8914,6 @@ Not applicable
 
 ## Methods
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -9050,7 +9038,6 @@ Not Applicable
 
 ## Events
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>
@@ -9954,7 +9941,6 @@ Not applicable
 
 ## Chart properties
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>Behaviour</b></td>

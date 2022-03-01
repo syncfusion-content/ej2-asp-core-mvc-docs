@@ -16,9 +16,7 @@ By default, gauge will be displayed with an axis. Each axis contains its own ran
 
 ## Axis Customization
 
-You can customize the width and color of an axis line by using [`lineStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_LineStyle) property.
-Background for an axis can be customized by using [`background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_Background)
-property.
+You can customize the width and color of an axis line by using [`lineStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_LineStyle) property. Background for an axis can be customized by using [`background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_Background) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,10 +45,7 @@ property.
 
 ## Angles and Direction
 
-Circular gauge axis can sweep from 0 to 360 degrees. By default start angle of an axis is 200 degree and
-end angle is 160 degree and you can customize this option by using
-[`startAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_StartAngle) and [`endAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_EndAngle)
-property.
+Circular gauge axis can sweep from 0 to 360 degrees. By default start angle of an axis is 200 degree and end angle is 160 degree and you can customize this option by using [`startAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_StartAngle) and [`endAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_EndAngle) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -77,8 +72,7 @@ property.
 
 
 
-The [`direction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_Direction) property enables you to render the gauge axis either in
-`ClockWise` or in `AntiClockWise` direction.
+The [`direction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_Direction) property enables you to render the gauge axis either in `ClockWise` or in `AntiClockWise` direction.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -170,14 +164,7 @@ By setting value in percentage, gauge gets its dimension with respect to its ava
 ## Ticks
 
 You can customize the [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html),
-[`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTick_Color) and
-[`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTick_Width) of major and minor ticks by
-using [`majorTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_MajorTicks)
-and [`minorTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_MinorTicks) property.
-By default, [`interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTick_Interval) for
-`majorTicks` will be calculated automatically
-and also you can customize the interval for major and minor ticks using
-`interval` property.
+[`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTick_Color) and [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTick_Width) of major and minor ticks by using [`majorTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_MajorTicks) and [`minorTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_MinorTicks) property. By default, [`interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTick_Interval) for `majorTicks` will be calculated automatically and also you can customize the interval for major and minor ticks using `interval` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -206,9 +193,7 @@ and also you can customize the interval for major and minor ticks using
 
 **Tick Position**
 
-Both minor and major ticks can be moved by using [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html) and [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html) property. The [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTick_Offset) defines the distance between the axis and ticks.
-By default, offset value is 0. The [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTick_Position) will place the ticks either inside or outside of the axis.
-By default, ticks will be placed `inside` the axis.
+Both minor and major ticks can be moved by using [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html) and [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html) property. The [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTick_Offset) defines the distance between the axis and ticks. By default, offset value is 0. The [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTick_Position) will place the ticks either inside or outside of the axis. By default, ticks will be placed `inside` the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -266,12 +251,7 @@ Labels of an axis can be customized by using [`font`](https://help.syncfusion.co
 
 **Label Position**
 
-Labels can be moved by using [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Offset) or
-[`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Position) property.
-The [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Offset) defines the distance between the labels and ticks.
-By default, offset value is 0.
-The [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Position) will place the labels either inside or outside of the axis.
-By default, labels will be placed `inside` the axis.
+Labels can be moved by using [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Offset) or [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Position) property. The [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Offset) defines the distance between the labels and ticks. By default, offset value is 0. The [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_Position) will place the labels either inside or outside of the axis. By default, labels will be placed `inside` the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -329,12 +309,7 @@ Labels can be swept along the axis angle by enabling [`autoAngle`](https://help.
 
 **Smart Labels**
 
-When an axis makes a complete circle, then the first and last label of the axis will get overlap with each other.
-In this scenario, you can either hide 1st or last label using [`hiddenLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_HiddenLabel) property.
-When `hiddenLabel` value is `First`,
-then the 1st label will be hidden and when the
-`hiddenLabel` value is 'Last',
-then the last label will be hidden.
+When an axis makes a complete circle, then the first and last label of the axis will get overlap with each other. In this scenario, you can either hide 1st or last label using [`hiddenLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html#Syncfusion_EJ2_CircularGauge_CircularGaugeLabel_HiddenLabel) property. When `hiddenLabel` value is `First`, then the 1st label will be hidden and when the `hiddenLabel` value is 'Last', then the last label will be hidden.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -510,8 +485,7 @@ When the axis labels overlap with each other, you can hide the intersected label
 
 ## Minimum and Maximum
 
-The [`minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_Minimum) and [`maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_Maximum) properties
-enables you to customize the start and end values of an axis.
+The [`minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_Minimum) and [`maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAxis.html#Syncfusion_EJ2_CircularGauge_CircularGaugeAxis_Maximum) properties enables you to customize the start and end values of an axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -540,8 +514,7 @@ enables you to customize the start and end values of an axis.
 
 ## Multiple Axes
 
-In addition to the default axis, you can add n number of axis to a gauge.
-Each axis will have its own ranges, pointers, annotations and customization options.
+In addition to the default axis, you can add n number of axis to a gauge. Each axis will have its own ranges, pointers, annotations and customization options.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

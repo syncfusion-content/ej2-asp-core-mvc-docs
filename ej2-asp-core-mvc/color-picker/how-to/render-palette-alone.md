@@ -39,4 +39,4 @@ In the following sample, the [`showButtons`](https://help.syncfusion.com/cr/aspn
 
 
 
->> To render `Picker` alone specify the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Mode) property as 'Picker'.
+> To render `Picker` alone specify the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Mode) property as 'Picker'.

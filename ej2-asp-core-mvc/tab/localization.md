@@ -11,8 +11,7 @@ documentation: ug
 
 # Localization
 
-Localization library allows to localize the default text content of
-Tab. In Tab, The close button's tooltip text alone will be localize based on culture.
+Localization library allows to localize the default text content of Tab. In Tab, The close button's tooltip text alone will be localize based on culture.
 
 | Locale key | en-US (default) |
 |------|------|
@@ -22,8 +21,7 @@ Tab. In Tab, The close button's tooltip text alone will be localize based on cul
 
 To load translation object in an application use `load` function of `L10n` class.
 
-In the below sample, `French` culture is set to Tab and change the close button's tooltip
-text.
+In the below sample, `French` culture is set to Tab and change the close button's tooltip text.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
