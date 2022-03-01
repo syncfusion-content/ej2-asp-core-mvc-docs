@@ -2,9 +2,10 @@
 
 This is the GitHub repository for the technical product documentation for Syncfusion EJ2 ASP.NET CORE AND MVC components. This documentation is published to 
 
-Core --> https://ej2.syncfusion.com/aspnetcore/documentation/ 
-
-MVC -->  https://ej2.syncfusion.com/aspnetmvc/documentation/
+| Platform | Live link |
+|--- |---|
+| ASP.NET Core | https://ej2.syncfusion.com/aspnetcore/documentation/ |
+| ASP.NET MVC | https://ej2.syncfusion.com/aspnetmvc/documentation/ |
 
 ## Contributions Welcome!
 
