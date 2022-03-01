@@ -106,8 +106,7 @@ Using the `navigatorBorder`, the `width` and `color` of the Range Selector borde
 
 ## Deferred update
 
-If the `enableDeferredUpdate` property is set to **true**, then the changed event will be triggered after dragging the slider. If the `enableDeferredUpdate` is **false**, then the changed event will be triggered when dragging the slider. By default,
-the `enableDeferredUpdate` is set to **false**.
+If the `enableDeferredUpdate` property is set to **true**, then the changed event will be triggered after dragging the slider. If the `enableDeferredUpdate` is **false**, then the changed event will be triggered when dragging the slider. By default, the `enableDeferredUpdate` is set to **false**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
