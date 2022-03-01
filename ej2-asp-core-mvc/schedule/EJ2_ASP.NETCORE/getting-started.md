@@ -44,8 +44,7 @@ Scheduler component can be rendered by using the `ejs-schedule` tag helper in AS
 
 ## Populating appointments
 
-To populate an empty Scheduler with appointments, bind the event data to it by
-assigning the `dataSource` property under `e-schedule-eventsettings` tag Helper.
+To populate an empty Scheduler with appointments, bind the event data to it by assigning the `dataSource` property under `e-schedule-eventsettings` tag Helper.
 
 * Create a new Class in controller page to define the data to be passed to the Scheduler as mentioned below,
 

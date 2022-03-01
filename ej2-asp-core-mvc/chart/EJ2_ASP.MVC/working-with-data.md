@@ -17,10 +17,7 @@ Chart can visualise data bound from local or remote data.
 
 ## Local Data
 
-You can bind a simple JSON data to the chart using
-[`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DataSource) property in series. Now map the fields in JSON to
-[`XName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_XName) and [`YName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_YName)
-properties.
+You can bind a simple JSON data to the chart using [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DataSource) property in series. Now map the fields in JSON to [`XName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_XName) and [`YName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_YName) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -49,8 +46,7 @@ properties.
 
 ### Common Datasource
 
-You can also bind a JSON data common to all series using
-[`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DataSource) property in chart.
+You can also bind a JSON data common to all series using [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DataSource) property in chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,12 +75,7 @@ You can also bind a JSON data common to all series using
 
 ## Remote Data
 
-You can also bind remote data to the chart using `DataManager`. The DataManager requires minimal information
-like webservice URL, adaptor and crossDomain to interact with service endpoint properly. Assign the instance
- of DataManager to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DataSource) property in series and map
- the fields of data to [`XName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_XName) and
-[`YName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_YName) properties. You can also use the
-[`Query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Query) property of the series to filter the data.
+You can also bind remote data to the chart using `DataManager`. The DataManager requires minimal information like webservice URL, adaptor and crossDomain to interact with service endpoint properly. Assign the instance of DataManager to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DataSource) property in series and map the fields of data to [`XName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_XName) and [`YName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_YName) properties. You can also use the [`Query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Query) property of the series to filter the data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -113,10 +104,7 @@ like webservice URL, adaptor and crossDomain to interact with service endpoint 
 
 ## Empty points
 
-The Data points that uses the `null` or `undefined` as value are considered as empty points.
-Empty data points are ignored and not plotted in the Chart.
-When the data is provided by using the points property,
-By using `EmptyPointSettings` property in series, you can customize the empty point. Default `Mode` of the empty point is `Gap`.
+The Data points that uses the `null` or `undefined` as value are considered as empty points. Empty data points are ignored and not plotted in the Chart. When the data is provided by using the points property, By using `EmptyPointSettings` property in series, you can customize the empty point. Default `Mode` of the empty point is `Gap`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -145,8 +133,7 @@ By using `EmptyPointSettings` property in series, you can customize the empty po
 
 ## Lazy loading
 
-Lazy loading allows you to load data for chart on demand. Chart will fire the scrollEnd event, in that we can
-get the minimum and maximum range of the axis, based on this, we can upload the data to chart.
+Lazy loading allows you to load data for chart on demand. Chart will fire the scrollEnd event, in that we can get the minimum and maximum range of the axis, based on this, we can upload the data to chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -174,8 +161,7 @@ get the minimum and maximum range of the axis, based on this, we can upload the 
 
 **Customizing empty point**
 
-Specific color for empty point can be set by `Fill` property in `EmptyPointSettings`. Border for a empty point can be set by
-`Border` property.
+Specific color for empty point can be set by `Fill` property in `EmptyPointSettings`. Border for a empty point can be set by `Border` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

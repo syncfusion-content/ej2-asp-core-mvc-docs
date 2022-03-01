@@ -46,9 +46,7 @@ The following example shows a basic DateTimePicker control.
 
 ## Setting the min and max
 
-The minimum and maximum date time can be defined with the help of `min` and `max` property.
-The following example demonstrates to set the `min` and `max` on initializing the
-DateTimePicker.
+The minimum and maximum date time can be defined with the help of `min` and `max` property. The following example demonstrates to set the `min` and `max` on initializing the DateTimePicker.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

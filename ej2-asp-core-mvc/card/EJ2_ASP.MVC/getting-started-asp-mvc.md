@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started
 
-  This section briefly explains about how to include a simple Card in your ASP.NET MVC application. You can refer [ASP.NET MVC Getting Started documentation](../getting-started) page for introduction part of the system requirements and configure the common specifications.
+This section briefly explains about how to include a simple Card in your ASP.NET MVC application. You can refer [ASP.NET MVC Getting Started documentation](../getting-started) page for introduction part of the system requirements and configure the common specifications.
 
 ## Adding a simple Card
 

@@ -13,8 +13,7 @@ documentation: ug
 
 ## Print
 
-The rendered chart can be printed directly from the browser by calling the public method print.
-You can pass array of ID of elements or element to this method. By default it take element of the chart.
+The rendered chart can be printed directly from the browser by calling the public method print. You can pass array of ID of elements or element to this method. By default it take element of the chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -109,16 +108,13 @@ The rendered chart can be exported to specific orientation, width and height by 
 
 ## Multiple Chart Export
 
-You can export the multiple charts in single page by passing the multiple chart objects in the export
-method of chart.
+You can export the multiple charts in single page by passing the multiple chart objects in the export method of chart.
 
 To export multiple charts in a single page, follow the given steps:
 
 **Step 1**:
 
-Initially, render more than one chart to export, and then add button to export the multiple charts. In
-button click, call the export private method in charts, and then pass the multiple chart objects in the
-export method.
+Initially, render more than one chart to export, and then add button to export the multiple charts. In button click, call the export private method in charts, and then pass the multiple chart objects in the export method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

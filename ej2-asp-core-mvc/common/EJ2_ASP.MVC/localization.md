@@ -31,8 +31,7 @@ To load translation object in your application use `load` function of `L10n` cla
 
 ## Changing current locale
 
-Current locale can be changed for all the Essential JS 2 components in your application by invoking
- `setCulture` function with your desired culture name.
+Current locale can be changed for all the Essential JS 2 components in your application by invoking `setCulture` function with your desired culture name.
 
 ```html
 <script>

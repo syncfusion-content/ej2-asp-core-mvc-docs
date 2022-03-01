@@ -17,8 +17,7 @@ Stock Chart will display details about the points through tooltip, when the mous
 
 ## Default Tooltip
 
-By default, tooltip is not visible. Enable the tooltip by setting
-[`Enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_Enable)property to true .
+By default, tooltip is not visible. Enable the tooltip by setting [`Enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_Enable) property to true .
 
 {% if page.publishingplatform == "aspnet-core" %}
 

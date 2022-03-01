@@ -10,7 +10,7 @@ documentation: ug
 
 # Set Default Value for Event Fields
 
-Event window default fields name like Title, Location, etc.. can be customized and default value can be set to Subject field using `default` property which will be added if an appointment is created with empty subject.
+Event window default fields name like Title, Location, etc. can be customized and default value can be set to Subject field using `default` property which will be added if an appointment is created with empty subject.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

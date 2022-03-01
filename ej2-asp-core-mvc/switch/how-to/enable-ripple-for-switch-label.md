@@ -11,8 +11,7 @@ documentation: ug
 
 # Enable ripple for Switch label
 
-By default, label with ripple effect is not available in Switch. You can achieve this using `rippleMouseHandler`
-method. The following example illustrates how to enable ripple effect for labels in Switch component.
+By default, label with ripple effect is not available in Switch. You can achieve this using `rippleMouseHandler` method. The following example illustrates how to enable ripple effect for labels in Switch component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
