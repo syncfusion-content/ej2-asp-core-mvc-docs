@@ -11,16 +11,13 @@ documentation: ug
 
 # ToolBar
 
-The TreeGrid provides ToolBar support to handle treegrid actions. The [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html)
-property accepts either the collection of built-in toolbar items and [`ItemModel`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem_members.html) objects for custom toolbar items or
-HTML element ID for toolbar template.
+The TreeGrid provides ToolBar support to handle treegrid actions. The [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) property accepts either the collection of built-in toolbar items and [`ItemModel`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem_members.html) objects for custom toolbar items or HTML element ID for toolbar template.
 
 To use ToolBar, inject `Toolbar` module in the treegrid.
 
 ## Built-in toolbar items
 
-Built-in toolbar items execute standard actions of the treegrid, and it can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html)
-as a collection of built-in items. It renders the button with icon and text.
+Built-in toolbar items execute standard actions of the treegrid, and it can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) as a collection of built-in items. It renders the button with icon and text.
 
 The following table shows built-in toolbar items and its actions.
 
@@ -68,8 +65,7 @@ The following table shows built-in toolbar items and its actions.
 
 ## Custom toolbar items
 
-Custom toolbar items can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) as a collection of
-[`ItemModels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem_members.html).
+Custom toolbar items can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) as a collection of [`ItemModels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem_members.html).
 Actions for this customized toolbar items are defined in the [`ToolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) event.
 
 By default, Custom toolbar items are in position `Left`. You can change the position by using the [`Align`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem~Align.html) property. In the below sample, we have applied position `Right` for the `Quick Filter` toolbar item.

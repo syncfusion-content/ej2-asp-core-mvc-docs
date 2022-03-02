@@ -11,8 +11,7 @@ documentation: ug
 
 # Change Size
 
-The different Switch sizes available are default and small. To reduce the size of default Switch to small,
-set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_CssClass) property to `e-small`.
+The different Switch sizes available are default and small. To reduce the size of default Switch to small, set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_CssClass) property to `e-small`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

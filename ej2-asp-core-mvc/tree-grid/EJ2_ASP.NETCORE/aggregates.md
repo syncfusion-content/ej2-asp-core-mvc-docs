@@ -30,8 +30,7 @@ The built-in aggregates are,
 * Truecount
 * Falsecount
 
-> Multiple aggregates can be used for an aggregate column by setting the [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~Type.html) property
-with an array of aggregate types.
+> Multiple aggregates can be used for an aggregate column by setting the [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~Type.html) property with an array of aggregate types.
 > Multiple types for a column is supported only when one of the aggregate templates is used.
 
 ## Footer aggregate

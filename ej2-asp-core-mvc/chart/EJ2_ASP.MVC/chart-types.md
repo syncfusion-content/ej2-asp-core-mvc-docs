@@ -195,8 +195,7 @@ To render a spline series, use series [`Type`](https://help.syncfusion.com/cr/as
 
 **Multicolored Line**
 
-To render a multicolored line series, use the series type as `MultiColoredLine`.
-Here, the individual colors to the data can be mapped by using `PointColorMapping`.
+To render a multicolored line series, use the series type as `MultiColoredLine`. Here, the individual colors to the data can be mapped by using `PointColorMapping`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -225,8 +224,7 @@ Here, the individual colors to the data can be mapped by using `PointColorMappin
 
 **Customization of Line Charts**
 
-`stroke`, `stroke-width` and `dashArray` of all line type series can be customized by using [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill),
-[`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Width) and [`DashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
+`stroke`, `stroke-width` and `dashArray` of all line type series can be customized by using [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill), [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Width) and [`DashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -286,8 +284,7 @@ To render a area series, use series [`Type`](https://help.syncfusion.com/cr/aspn
 
 **Range Area**
 
-To render a range area series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type)
-as `RangeArea`.
+To render a range area series, use series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `RangeArea`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -463,8 +460,7 @@ To render a stacked step area series, use series `Type` as `StackingStepArea`.
 
 **Multicolored area**
 
-To render a multicolored area series, use the series type as `MultiColoredArea`.
-The required `Segments` of the series can be customized using the `Value`, `Color`, and `DashArray`.
+To render a multicolored area series, use the series type as `MultiColoredArea`. The required `Segments` of the series can be customized using the `Value`, `Color`, and `DashArray`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -493,8 +489,7 @@ The required `Segments` of the series can be customized using the `Value`, `Colo
 
 **Customization of Area Charts**
 
-fill, width and dashArray properties can be customized by [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill),
-[`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Width) and [`DashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
+fill, width and dashArray properties can be customized by [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill), [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Width) and [`DashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -641,8 +636,7 @@ To render a 100% stacked column series, use series [`Type`](https://help.syncfus
 
 **Stacking Group**
 
-You can use the [`StackingGroup`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_StackingGroup) property to group the stacked columns and 100% stacked columns.
-Columns with same group name are stacked on top of each other.
+You can use the [`StackingGroup`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_StackingGroup) property to group the stacked columns and 100% stacked columns. Columns with same group name are stacked on top of each other.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -671,8 +665,7 @@ Columns with same group name are stacked on top of each other.
 
 **Grouped Column**
 
-You can use the [`GroupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_GroupName) property to group the data points in the column type charts.
-Data points with same group name are grouped together.
+You can use the [`GroupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_GroupName) property to group the data points in the column type charts. Data points with same group name are grouped together.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -702,11 +695,7 @@ Data points with same group name are grouped together.
 **Customization of Column Charts**
 
 <!-- markdownlint-disable MD013 -->
-`Fill` and `Border` of all column type series can be
-customized using [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Border) properties.
-Width of the column and space between each column can be customized using [`columnWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnWidth) and [`columnSpacing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnSpacing) properties respectively. The [`columnWidthInPixel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnWidthInPixel) property allows to specify the column width in pixel unit.
-For customizing a specify point, please refer the
-[`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender).
+`Fill` and `Border` of all column type series can be customized using [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Border) properties. Width of the column and space between each column can be customized using [`columnWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnWidth) and [`columnSpacing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnSpacing) properties respectively. The [`columnWidthInPixel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnWidthInPixel) property allows to specify the column width in pixel unit. For customizing a specify point, please refer the [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -824,8 +813,7 @@ To render a 100% stacked bar series, use series [`Type`](https://help.syncfusion
 
 **Stacking Group**
 
-You can use the [`StackingGroup`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_StackingGroup) property to group the stacked
-bar and 100% stacked bar. Columns with same group name are stacked on top of each other.
+You can use the [`StackingGroup`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_StackingGroup) property to group the stacked bar and 100% stacked bar. Columns with same group name are stacked on top of each other.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -854,8 +842,7 @@ bar and 100% stacked bar. Columns with same group name are stacked on top of eac
 
 **Grouped Bar**
 
-You can use the [`GroupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_GroupName) property to group the data points in the bar type charts.
-Data points with same group name are grouped together.
+You can use the [`GroupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_GroupName) property to group the data points in the bar type charts. Data points with same group name are grouped together.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -884,10 +871,7 @@ Data points with same group name are grouped together.
 
 **Customization of Bar Charts**
 
-`Fill` and `Border` of all bar type series can be
-customized using [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Border).
-Width of the bar and space between each bar can be customized using [`columnWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnWidth) and [`columnSpacing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnSpacing) properties respectively. The [`columnWidthInPixel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnWidthInPixel) property allows to specify the bar width in pixel unit.
-For customizing a specify point, please refer the [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender).
+`Fill` and `Border` of all bar type series can be customized using [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Border). Width of the bar and space between each bar can be customized using [`columnWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnWidth) and [`columnSpacing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnSpacing) properties respectively. The [`columnWidthInPixel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_ColumnWidthInPixel) property allows to specify the bar width in pixel unit. For customizing a specify point, please refer the [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

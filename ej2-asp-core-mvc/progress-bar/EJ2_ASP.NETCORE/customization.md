@@ -67,7 +67,7 @@ You can customize the thickness of the track  using `trackThickness` and progres
 
 <!-- markdownlint-disable MD033 -->
 
-The  radius of the progress bar can be customized using `radius` property and  corner can be customized by **cornerRadius** property.
+The radius of the progress bar can be customized using `radius` property and  corner can be customized by **cornerRadius** property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

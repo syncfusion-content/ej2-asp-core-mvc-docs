@@ -248,8 +248,7 @@ The PDF export provides an option to change page orientation of the document bef
 
 The PDF export provides an option to change page size of the document before exporting. In-order to change the page size, define **pageSize** property in **pdfExportProperties** object and pass it as a parameter to the `pdfExport` method.
 
-**Supported page sizes are:** Letter, Note, Legal, A0, A1, A2, A3, A5, A6, A7, A8, A9, B0, B1, B2, B3, B4, B5, Archa, Archb, Archc, Archd,
-Arche, Flsa, HalfLetter, Letter11x17, Ledger.
+**Supported page sizes are:** Letter, Note, Legal, A0, A1, A2, A3, A5, A6, A7, A8, A9, B0, B1, B2, B3, B4, B5, Archa, Archb, Archc, Archd, Arche, Flsa, HalfLetter, Letter11x17, Ledger.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

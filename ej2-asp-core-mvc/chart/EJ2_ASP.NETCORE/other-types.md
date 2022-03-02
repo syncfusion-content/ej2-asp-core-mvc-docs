@@ -13,8 +13,7 @@ documentation: ug
 
 # Box and whisker
 
-To render a box and whisker chart, use series[`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `BoxAndWhisker`.
-The field y requires n number of data or it should contains minimum of five values to plot a segment.
+To render a box and whisker chart, use series[`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `BoxAndWhisker`. The field y requires n number of data or it should contains minimum of five values to plot a segment.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -45,11 +44,9 @@ The field y requires n number of data or it should contains minimum of five valu
 
 ### boxPlotMode
 
-You can change the rendering mode of the Box and Whisker series using the `boxPlotMode` property.
-The default boxPlotMode is `exclusive`.The other boxPlotMode available are `inclusive` and `normal`.
+You can change the rendering mode of the Box and Whisker series using the `boxPlotMode` property. The default boxPlotMode is `exclusive`.The other boxPlotMode available are `inclusive` and `normal`.
 
-To render a box and whisker chart, use series[`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `BoxAndWhisker`.
-The field y requires n number of data or it should contains minimum of five values to plot a segment.
+To render a box and whisker chart, use series[`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `BoxAndWhisker`. The field y requires n number of data or it should contains minimum of five values to plot a segment.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -107,12 +104,7 @@ In Box and Whisker series `showMean` property is used to show the box and whiske
 
 ## Waterfall Chart
 
-Waterfall chart helps to understand the cumulative effect of the sequentially introduced positive
-and negative values. To render a Waterfall series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as
-`Waterfall`. [`intermediateSumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IntermediateSumIndexes)
-property of waterfall is used to represent the in between the sum values and
-[`sumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_SumIndexes)
-is used to represent the cumulative sum values.
+Waterfall chart helps to understand the cumulative effect of the sequentially introduced positive and negative values. To render a Waterfall series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Waterfall`. [`intermediateSumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IntermediateSumIndexes) property of waterfall is used to represent the in between the sum values and [`sumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_SumIndexes) is used to represent the cumulative sum values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -141,10 +133,7 @@ is used to represent the cumulative sum values.
 
 **Customization of Waterfall Series**
 
-The negative changes of waterfall charts is
-represented by using [`negativeFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_NegativeFillColor)
-and the summary changes are represented by using [`summaryFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_SummaryFillColor)
-properties.
+The negative changes of waterfall charts is represented by using [`negativeFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_NegativeFillColor) and the summary changes are represented by using [`summaryFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_SummaryFillColor) properties.
 
 By default, the negativeFillColor as ‘#E94649’ and the summaryFillColor as ‘#4E81BC’.
 
@@ -175,9 +164,7 @@ By default, the negativeFillColor as ‘#E94649’ and the summaryFillColor as �
 
 ## Error Bar Chart
 
-Error bars are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported
-measurement. To render the error bar for the series, set [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Visible)
-as `true` in error bar object.
+Error bars are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement. To render the error bar for the series, set [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Visible) as `true` in error bar object.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -206,9 +193,7 @@ as `true` in error bar object.
 
 **Changing Error Bar Type**
 
-To change the error bar rendering type using [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type)
-option of error bar. To change the error bar line length you can use [`verticalError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html)
-property.
+To change the error bar rendering type using [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) option of error bar. To change the error bar line length you can use [`verticalError`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -237,8 +222,7 @@ property.
 
 **Customizing Error Bar Type**
 
-To customize the error bar type, set error bar [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Custom` and
-then change the horizontal/vertical positive and negative error of error bar.
+To customize the error bar type, set error bar [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Custom` and then change the horizontal/vertical positive and negative error of error bar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -267,8 +251,7 @@ then change the horizontal/vertical positive and negative error of error bar.
 
 **Changing Error Bar Mode**
 
-Error bar mode is used to define whether the error bar line has to be drawn horizontally, vertically or in both side.
-To change the error bar mode use [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html) option.
+Error bar mode is used to define whether the error bar line has to be drawn horizontally, vertically or in both side. To change the error bar mode use [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html) option.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -355,8 +338,7 @@ To customize the error bar cap length, width and fill color, you can use [`error
 
 ## Vertical Chart
 
-In EJ2 chart, you can draw a chart in vertical manner by changing orientation of the axis. All series types support this feature.
-You can use `isTransposed` property in chart to render a chart in vertical manner.
+In EJ2 chart, you can draw a chart in vertical manner by changing orientation of the axis. All series types support this feature. You can use `isTransposed` property in chart to render a chart in vertical manner.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -385,9 +367,7 @@ You can use `isTransposed` property in chart to render a chart in vertical manne
 
 ## Pareto chart
 
-Pareto charts are used to find the cumulative values of data in different categories. It is a combination of Column and Line series.
-The initial values are represented by column chart and the cumulative values are represented by Line chart.
-To render a pareto chart, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Pareto`.
+Pareto charts are used to find the cumulative values of data in different categories. It is a combination of Column and Line series. The initial values are represented by column chart and the cumulative values are represented by Line chart. To render a pareto chart, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Pareto`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

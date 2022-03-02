@@ -28,19 +28,17 @@ Setting the value
 </td>
 <td>
 <b>Property:</b> <i>value</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date"  value="DateTime.Now"></ej-date-picker>
-```
-
+{% endhighlight %}
 </td>
 <td>
 <b>Property:</b> <i>value</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" value="DateTime.Now"></ejs-datepicker>
-```
-
+{% endhighlight %}
 </td>
 </tr>
 </thead>
@@ -61,19 +59,17 @@ Display date format
 </td>
 <td>
 <b>Property:</b> <i>date-format</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" value="DateTime.Now" date-format="dd/MM/yyyy"></ej-date-picker>
-```
-
+{% endhighlight %}
 </td>
 <td>
 <b>Property:</b> <i>format</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" format="yyyy-MM-dd" value="DateTime.Now"></ejs-datepicker>
-```
-
+{% endhighlight %}
 </td>
 </tr>
 <tr>
@@ -82,10 +78,10 @@ Day header format
 </td>
 <td>
 <b>Property:</b> <i>day-header-format</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" day-header-format="Short"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
@@ -110,18 +106,18 @@ Start
 </td>
 <td>
 <b>Property:</b> <i>start-level</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" start-level="Year"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>start</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" start="Decade"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -131,18 +127,18 @@ Depth
 </td>
 <td>
 <b>Property:</b> <i>depth-level</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" depth-level="Year"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>depth</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" depth="Year"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -164,18 +160,17 @@ Minimum date
 </td>
 <td>
 <b>Property:</b> <i>min-date</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" min-date="new DateTime(2018,9,3)"></ej-date-picker>
-```
-
+{% endhighlight %}
 </td>
 <td>
 <b>Property:</b> <i>min</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" min="new DateTime(2018,9,3)"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -185,19 +180,17 @@ Maximum date
 </td>
 <td>
 <b>Property:</b> <i>max-date</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" max-date="new DateTime(2019,1,1)"></ej-date-picker>
-```
-
+{% endhighlight %}
 </td>
 <td>
 <b>Property:</b> <i>max</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" max="new DateTime(2019,1,1)"></ejs-datepicker>
-```
-
+{% endhighlight %}
 </td>
 </tr>
 </thead>
@@ -218,8 +211,8 @@ Block-out dates
 </td>
 <td>
 <b>Property:</b> <i>blackout-dates</i>
-
-```html
+<br>
+{% highlight html %}
     @{
         List<object> blackoutDates = new List<object>();
         blackoutDates.Add(new DateTime(2018, 5, 10));
@@ -227,13 +220,13 @@ Block-out dates
     }
 
     <ej-date-picker id="date" blackout-dates="blackoutDates"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Event:</b> <i>renderDayCell</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" renderdaycell="disableDate"></ejs-datepicker>
 
     <script>
@@ -243,7 +236,7 @@ Block-out dates
             }
         }
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -265,18 +258,18 @@ css Class
 </td>
 <td>
 <b>Property:</b> <i>css-class</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date"  css-class="gradient-lime"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>cssClass</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" cssClass="gradient-lime"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -289,14 +282,14 @@ Render day cell
 </td>
 <td>
 <b>Event:</b> <i>renderDayCell</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" renderdaycell="onRenderCell"></ejs-datepicker>
 
     <script>
         function onRenderCell() { }
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -306,18 +299,18 @@ Show today button
 </td>
 <td>
 <b>Property:</b> <i>show-footer</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" show-footer="false"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>showTodayButton</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" showTodayButton="false"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -327,16 +320,16 @@ Show other month dates
 </td>
 <td>
 <b>Property:</b> <i>show-other-months</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" show-other-months="false"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b></b>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date"></ejs-datepicker>
 
     <style>
@@ -349,7 +342,7 @@ Show other month dates
             touch-action: none;
         }
     </style>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -359,10 +352,10 @@ Show disabled range
 </td>
 <td>
 <b>Property:</b> <i>show-disabled-range</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" show-disabled-range="false"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
@@ -375,16 +368,16 @@ Show popup button
 </td>
 <td>
 <b>Property:</b> <i>show-popup-button</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" show-popup-button="false"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Event:</b> <i>focus</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" focus="onFocus"></ejs-datepicker>
 
     <script>
@@ -399,7 +392,7 @@ Show popup button
             display: none;
         }
     </style>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -409,16 +402,16 @@ Show rounded corner
 </td>
 <td>
 <b>Property:</b> <i>show-rounded-corner</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" show-rounded-corner="true"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>cssClass</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" cssclass="e-custom-style"></ejs-datepicker>
 
     <style>
@@ -426,7 +419,7 @@ Show rounded corner
             border-radius: 4px;
         }
     </style>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -436,16 +429,16 @@ Skip a month
 </td>
 <td>
 <b>Property:</b> <i>step-months</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" step-months="2"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Method:</b> navigateTo()
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" value="new DateTime(2018,09,04)" open="onOpen"></ejs-datepicker>
 
     <script>
@@ -454,7 +447,7 @@ Skip a month
             datepicker.navigateTo('Year', new Date("03/18/2018"));
         }
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -464,10 +457,10 @@ Show tooltip
 </td>
 <td>
 <b>Property:</b> <i>show-tooltip</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" show-tooltip="false"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
@@ -480,16 +473,16 @@ Button text
 </td>
 <td>
 <b>Property:</b> <i>button-text</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" button-text="Now"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Method:</b> <i>load()</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" locale="en"></ejs-datepicker>
 
     <script>
@@ -504,7 +497,7 @@ Button text
             });
         });
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -514,10 +507,10 @@ Display inline
 </td>
 <td>
 <b>Property:</b> <i>display-inline</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" tag-name="div" display-inline="true"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
@@ -530,10 +523,10 @@ Enable animation
 </td>
 <td>
 <b>Property:</b> <i>enable-animation</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" enable-animation="false"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
@@ -546,16 +539,16 @@ Highlight section
 </td>
 <td>
 <b>Property:</b> <i>highlight-section</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" highlight-section="Week"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Event:</b> renderDayCell
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" renderdaycell="highlightDate"></ejs-datepicker>
 
     <script>
@@ -575,7 +568,7 @@ Highlight section
             background-color: #cfe9f3;
         }
     </style>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -585,16 +578,16 @@ Highlight weekend
 </td>
 <td>
 <b>Property:</b> <i>highlight-weekend</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" highlight-weekend="true"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Event:</b> <i>renderDayCell</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" renderdaycell="highlightDate"></ejs-datepicker>
 
     <script>
@@ -614,7 +607,7 @@ Highlight weekend
             background-color: #cfe9f3;
         }
     </style>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -624,10 +617,10 @@ Tooltip format
 </td>
 <td>
 <b>Property:</b> <i>tooltip-format</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" tooltip-format="dd/MM/yyyy"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
@@ -640,21 +633,21 @@ Special Dates
 </td>
 <td>
 <b>Property:</b> <i>special-dates</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date">
         <e-special-dates>
             <e-special-date date="1/1/2019" tooltip="In Australia" icon-class="flags sprite-Australia" />
             <e-special-date date="1/2/2019" tooltip="In France" icon-class="flags sprite-France" />
         </e-special-dates>
     </ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Event:</b> <i>renderDayCell</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" renderdaycell="customDates" value="new DateTime(2017,05,05)"></ejs-datepicker>
 
     <script>
@@ -669,7 +662,7 @@ Special Dates
             }
         }
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -679,26 +672,26 @@ Focus In event
 </td>
 <td>
 <b>Event:</b> <i>focus-in</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" focus-in="onFocus"></ej-date-picker>
 
     <script>
         function onFocus() { }
     </script>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Event:</b> <i>focus</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" focus="onFocus"></ejs-datepicker>
 
     <script>
         function onFocus() { }
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -708,26 +701,26 @@ Focus out event
 </td>
 <td>
 <b>Event:</b> <i>focus-out</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" focus-out="onFocusout"></ej-date-picker>
 
     <script>
         function onFocusout() { }
     </script>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Event:</b> <i>blur</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" blur="onBlur"></ejs-datepicker>
 
     <script>
         function onBlur() { }
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -740,8 +733,8 @@ Focus in method
 </td>
 <td>
 <b>Method:</b> <i>focusIn()</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker"></ejs-datepicker>
 
     <script>
@@ -750,7 +743,7 @@ Focus in method
             dateObject.focusIn();
         });
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -763,8 +756,8 @@ Focus out method
 </td>
 <td>
 <b>Method:</b> <i>focusOut()</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker"></ejs-datepicker>
 
     <script>
@@ -773,7 +766,7 @@ Focus out method
             dateObject.focusOut();
         });
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -786,8 +779,8 @@ Prevent close
 </td>
 <td>
 <b>Event:</b> <i>close</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" close="onClose"></ejs-datepicker>
 
     <script>
@@ -800,7 +793,7 @@ Prevent close
             dateObject.show();
         });
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -813,8 +806,8 @@ Prevent open
 </td>
 <td>
 <b>Event:</b> <i>open</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" open="onOpen"></ejs-datepicker>
 
     <script>
@@ -822,7 +815,7 @@ Prevent open
             args.cancel = true;
         }
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -844,18 +837,18 @@ Enable RTL
 </td>
 <td>
 <b>Property:</b> <i>enable-rtl</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" enable-rtl="true"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>enableRtl</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" enableRtl="true"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -877,18 +870,18 @@ Enable Persistence
 </td>
 <td>
 <b>Property:</b> <i>enable-persistence</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" enable-persistence="true"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>enablePersistence</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" enablePersistence="true"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -910,16 +903,16 @@ Validation rules
 </td>
 <td>
 <b>Property:</b> <i>validation-rules</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" validation-rules='new Dictionary<string, object>() {{ "required",true}}'></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>rules</i>
-
-```html
+<br>
+{% highlight html %}
     <form id="form-element" class="form-vertical">
         <ejs-datepicker id="datepicker"></ejs-datepicker>
     </form>
@@ -930,7 +923,7 @@ Validation rules
             var formObject = new ej.inputs.FormValidator('#form-element', options);
         });
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -940,16 +933,16 @@ Validation message
 </td>
 <td>
 <b>Property:</b> <i>validation-messages</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" validation-rules='new Dictionary<string, object>() {{ "required",true}}' validation-messages='new Dictionary<string, object>() {{ "required","Required Date value"}}'></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>rules</i>
-
-```html
+<br>
+{% highlight html %}
     <form id="form-element" class="form-vertical">
         <ejs-datepicker id="datepicker"></ejs-datepicker>
     </form>
@@ -963,7 +956,7 @@ Validation message
         var formObject = new ej.inputs.FormValidator('#form-element', options);
         });
     </script>  
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -985,18 +978,18 @@ Width
 </td>
 <td>
 <b>Property:</b> <i>width</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" width="200"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>width</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" width="200"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1006,18 +999,18 @@ Read only
 </td>
 <td>
 <b>Property:</b> <i>read-only</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" read-only="true"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>readonly</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" readonly="true"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1030,10 +1023,10 @@ Show Clear Button
 </td>
 <td>
 <b>Property:</b> <i>showClearButton</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" showClearButton="true"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1043,16 +1036,16 @@ Height
 </td>
 <td>
 <b>Property:</b> <i>height</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" height="35"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>cssClass</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" cssclass="e-custom-style"></ejs-datepicker>
 
     <style>
@@ -1060,7 +1053,7 @@ Height
             height: 35px;
         }
     </style>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1070,8 +1063,8 @@ Html Attributes
 </td>
 <td>
 <b>Property:</b> <i>html-attributes</i>
-
-```html
+<br>
+{% highlight html %}
     @{
 
     IDictionary<string, object> htmlAttr = new Dictionary<string, object>();
@@ -1079,7 +1072,7 @@ Html Attributes
 
     }
     <ej-date-picker id="date" html-attributes="htmlAttr"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
@@ -1092,18 +1085,18 @@ Week Number
 </td>
 <td>
 <b>Property:</b> <i>week-number</i>
-
-```html
+<br>
+{% highlight html %}
 <ej-date-picker id="date" week-number="true"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>weekNumber</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" weekNumber="true"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1113,18 +1106,18 @@ Watermark Text
 </td>
 <td>
 <b>Property:</b> <i>watermark-text</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" watermark-text="Enter date"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>placeholder</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" placeholder="Enter date"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1134,18 +1127,18 @@ Disable and enable
 </td>
 <td>
 <b>Property:</b> <i>enabled</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" enabled="false"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>enabled</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" enabled="false"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1155,8 +1148,8 @@ Disable date
 </td>
 <td>
 <b>Method:</b> <i>disable()</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" create="onCreate"></ej-date-picker>
 
     <script>
@@ -1165,7 +1158,7 @@ Disable date
             dateObject.disable();
         }
     </script>
-```
+{% endhighlight %}
 
 </td>
 <td>
@@ -1178,8 +1171,8 @@ Enable date
 </td>
 <td>
 <b>Method:</b> <i>enable()</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" create="onCreate"></ej-date-picker>
 
     <script>
@@ -1188,7 +1181,7 @@ Enable date
             dateObject.enable();
         }
     </script>
-```
+{% endhighlight %}
 
 </td>
 <td>
@@ -1201,18 +1194,18 @@ Allow Editing
 </td>
 <td>
 <b>Property:</b> <i>allow-edit</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" allow-edit="true"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>allowEdit</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" allowEdit="true"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1225,10 +1218,10 @@ z Index
 </td>
 <td>
 <b>Property:</b> <i>zIndex</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="date" zIndex="100"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1241,10 +1234,10 @@ Float Label Type
 </td>
 <td>
 <b>Property:</b> <i>floatLabelType</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" placeholder="Enter date" floatLabelType="Syncfusion.EJ2.Inputs.FloatLabelType.Auto"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1266,18 +1259,18 @@ Locale
 </td>
 <td>
 <b>Property:</b> <i>locale</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" locale="en-US"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>locale</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" locale="en"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1287,18 +1280,18 @@ First day of week
 </td>
 <td>
 <b>Property:</b> <i>start-day</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" start-day="2"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>firstDayOfWeek</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" firstDayOfWeek="2"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1320,18 +1313,18 @@ Strict mode
 </td>
 <td>
 <b>Property:</b> <i>enableStrictMode</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" enable-strict-mode="true"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>strictMode</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" strictMode="true"></ejs-datepicker>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1353,26 +1346,26 @@ Close
 </td>
 <td>
 <b>Event:</b> <i>close</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" close="onClose"></ej-date-picker>  
 
     <script>
         function onClose() { }
     </script>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Event:</b> <i>close</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" close="onClose"></ejs-datepicker>
 
     <script>
         function onClose() { }
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1382,8 +1375,8 @@ Hide
 </td>
 <td>
 <b>Method:</b> <i>hide()</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" create="onCreate"></ej-date-picker>
 
     <script>
@@ -1393,13 +1386,13 @@ Hide
             dateObject.hide();
         }
     </script>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Method:</b> <i>hide()</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker"></ejs-datepicker>
 
     <script>
@@ -1409,7 +1402,7 @@ Hide
             datepickerObject.hide();
         });
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1419,26 +1412,26 @@ Open
 </td>
 <td>
 <b>Event:</b> <i>open</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" open="onOpen"></ej-date-picker>
 
     <script>
         function onOpen() { }
     </script>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Event:</b> <i>open</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" open="onOpen"></ejs-datepicker>
 
     <script>
         function onOpen() { }
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1448,8 +1441,8 @@ Show
 </td>
 <td>
 <b>Method:</b> <i>show()</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" create="onCreate"></ej-date-picker>
 
     <script>
@@ -1458,13 +1451,13 @@ Show
             dateObject.show();
         }
     </script>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Method:</b> <i>show()</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker"></ejs-datepicker>
 
     <script>
@@ -1473,7 +1466,7 @@ Show
             datepickerObject.show();
         });
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1498,8 +1491,8 @@ Navigate to
 </td>
 <td>
 <b>Method:</b> <i>navigateTo()</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" open="onOpen"></ejs-datepicker>
 
     <script>
@@ -1508,7 +1501,7 @@ Navigate to
             dateObject.navigateTo('Year', new Date("03/18/2018"));
         }
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1518,26 +1511,26 @@ Navigation
 </td>
 <td>
 <b>Event:</b> <i>navigate</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" navigate="onNavigate"></ej-date-picker>  
 
     <script>
         function onNavigate() { }
     </script>
-```
+{% endhighlight %}
 
 </td>
 <td>
 <b>Event:</b> <i>navigated</i>
-
-```html
+<br>
+{% highlight html %}
     <ejs-datepicker id="datepicker" navigated="onNavigated"></ejs-datepicker>
 
     <script>
         function onNavigated() { }
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -1547,10 +1540,10 @@ Drill down
 </td>
 <td>
 <b>Property:</b> <i>allow-drill-down</i>
-
-```html
+<br>
+{% highlight html %}
     <ej-date-picker id="date" allow-drill-down="true"></ej-date-picker>
-```
+{% endhighlight %}
 
 </td>
 <td>

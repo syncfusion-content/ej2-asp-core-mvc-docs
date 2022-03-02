@@ -11,8 +11,7 @@ documentation: ug
 
 # Overview
 
-The ComboBox control allows the user to type a value or choose an option from the list of predefined options.
-When an arrow icon accompanied with this control is pressed, the dropdown displays a list of values, from which the user can select one.
+The ComboBox control allows the user to type a value or choose an option from the list of predefined options. When an arrow icon accompanied with this control is pressed, the dropdown displays a list of values, from which the user can select one.
 
 ## Key features
 

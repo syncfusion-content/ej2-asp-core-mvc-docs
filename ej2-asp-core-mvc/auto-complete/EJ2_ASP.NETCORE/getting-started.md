@@ -48,9 +48,7 @@ AutoComplete control can be rendered by using the `ejs-autocomplete` tag helper 
 
 ## Binding data source
 
-After initialization, populate the AutoComplete with data using the
-[dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~DataSource.html) property.
-Here, an array of string values is passed to the AutoComplete control.
+After initialization, populate the AutoComplete with data using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~DataSource.html) property. Here, an array of string values is passed to the AutoComplete control.
 
 The following example illustrates the output in your browser.
 
@@ -81,11 +79,7 @@ The following example illustrates the output in your browser.
 
 ## Custom values
 
-The AutoComplete allows the user to give input as custom value which is not required to present in
-predefined set of values. By default, this support is enabled by
-[allowCustom](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~AllowCustom.html) property.
-The custom value will be sent to post back handler when a form
-is about to be submitted.
+The AutoComplete allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~AllowCustom.html) property. The custom value will be sent to post back handler when a form is about to be submitted.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

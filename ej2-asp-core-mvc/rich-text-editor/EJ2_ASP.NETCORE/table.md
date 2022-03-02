@@ -54,8 +54,7 @@ Tables can also be inserted through the `Insert Table` option in the pop-up wher
 
 ## Quick Toolbar
 
-Quick toolbar is opened by clicking the table. It has different sets of commands to be performed on
-the table which increases the feasibility to edit the table easily.
+Quick toolbar is opened by clicking the table. It has different sets of commands to be performed on the table which increases the feasibility to edit the table easily.
 
 ## Table Header
 
@@ -87,15 +86,13 @@ Using the delete item in the quick toolbar, users can delete the entire table.
 
 ## Vertical Align
 
-Text inside the table can be aligned to top, middle, or bottom using the `tableCellVerticalAlign`
-tool of the quick toolbar.
+Text inside the table can be aligned to top, middle, or bottom using the `tableCellVerticalAlign` tool of the quick toolbar.
 
 ![Rich Text Editor table vertical alignment](./images/table_vertical.png)
 
 ## Horizontal Align
 
-Text inside the table can be aligned left, right, or center using the `tableCellHorizontalAlign` tool
-of the quick toolbar.
+Text inside the table can be aligned left, right, or center using the `tableCellHorizontalAlign` tool of the quick toolbar.
 
 ![Rich Text Editor table horizontal alignment](./images/table_horizontal.png)
 
@@ -113,8 +110,7 @@ By Default, provides Dashed border and Alternate rows.
 
 ## Table Properties
 
-Sets the default width of the table when it is inserted in the Rich Text Editor using the width of
-[`tableSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_TableSettings).
+Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [`tableSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_TableSettings).
 
 Using the quick toolbar, users can change the width, cell padding, and cell spacing in the selected table using the properties option.
 

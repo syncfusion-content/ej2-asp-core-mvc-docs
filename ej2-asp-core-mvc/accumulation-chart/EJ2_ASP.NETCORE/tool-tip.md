@@ -69,8 +69,7 @@ We can specify header for the tooltip using `header` property.
 
 ## Format
 
-By default, tooltip shows information of x and y value in points. In addition to that, you can show more
-information in tooltip. For example the format `${series.name} ${point.x}` shows series name and point x value.
+By default, tooltip shows information of x and y value in points. In addition to that, you can show more information in tooltip. For example the format `${series.name} ${point.x}` shows series name and point x value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -128,11 +127,7 @@ Any HTML element can be displayed in the tooltip by using the `template` propert
 
 ## Customization
 
-The [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Fill) and
-[`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Border)
-properties are used to customize the background color and border of the tooltip respectively.
-The [`textStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_TextStyle)
-property in the tooltip is used to customize the font of the tooltip text.
+The [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Fill) and [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_TextStyle) property in the tooltip is used to customize the font of the tooltip text.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -161,8 +156,7 @@ property in the tooltip is used to customize the font of the tooltip text.
 
 ## To customize individual tooltip
 
-Using `tooltipRender` event, you can customize a tooltip for particular point. event, you can customize a
-tooltip for particular point.
+Using `tooltipRender` event, you can customize a tooltip for particular point. event, you can customize a tooltip for particular point.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

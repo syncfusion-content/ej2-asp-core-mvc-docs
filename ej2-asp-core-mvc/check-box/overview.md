@@ -10,8 +10,7 @@ documentation: ug
 
 # Overview
 
-The CheckBox is a graphical user interface element that allows you to select one or more options from the choices.
-It contains checked, unchecked, and indeterminate states.
+The CheckBox is a graphical user interface element that allows you to select one or more options from the choices. It contains checked, unchecked, and indeterminate states.
 
 ## Key Features
 

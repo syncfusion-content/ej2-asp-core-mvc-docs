@@ -41,8 +41,7 @@ Add the HTML `ejs-contextmenu` tag with `id` attribute as `contextmenu` to your 
 
 ## Bind dataSource
 
-Populate the menu items in `ContextMenu` by using the `items` property. Here, the JSON values are passed to the
-ContextMenu component are generated in `default.cs` and assigned to `ViewBag` variable.
+Populate the menu items in `ContextMenu` by using the `items` property. Here, the JSON values are passed to the ContextMenu component are generated in `default.cs` and assigned to `ViewBag` variable.
 
 ```cs
 public IActionResult Index()
@@ -104,9 +103,7 @@ The following example shows a basic ContextMenu.
 
 ## Rendering items with Separator
 
-The Separators are the horizontal lines that are used to separate the menu items. You cannot select the separators. You
-can enable separators to group the menu items using the [`separator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~Separator.html)
-property. Cut, Copy, and Paste menu items are grouped using the `separator` property in the following sample.
+The Separators are the horizontal lines that are used to separate the menu items. You cannot select the separators. You can enable separators to group the menu items using the [`separator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~Separator.html) property. Cut, Copy, and Paste menu items are grouped using the `separator` property in the following sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

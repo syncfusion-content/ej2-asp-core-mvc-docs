@@ -16,9 +16,7 @@ You can create a control chart (with UCL, CL, and LCL limits) using the striplin
 
 To create a control charts, follow the given steps.
 
-**Step 1**:
-
-Load line charts for the data.
+**Step 1**: Load line charts for the data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,9 +45,7 @@ Load line charts for the data.
 
 ![Alt text](../images/step1.png)
 
-**Step 2**:
-
-Now, add three striplines for three control limits: LCL, UCL, and CL.
+**Step 2**: Now, add three striplines for three control limits: LCL, UCL, and CL.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -76,9 +72,7 @@ Now, add three striplines for three control limits: LCL, UCL, and CL.
 
 
 
-**Step 3**:
-
-Then, add annotations to show the text for LCL, UCL, and CL in respective positions.
+**Step 3**: Then, add annotations to show the text for LCL, UCL, and CL in respective positions.
 
 ```html
         <ejs-chart id="container" title="Sales History of Product X">
@@ -98,9 +92,7 @@ Then, add annotations to show the text for LCL, UCL, and CL in respective positi
         </ejs-chart>
 ```
 
-**Step 4**:
-
-Calculate the control limits based on the CL, LCL, and UCL. The start and end ranges have been set for strip lines in the load event.
+**Step 4**: Calculate the control limits based on the CL, LCL, and UCL. The start and end ranges have been set for strip lines in the load event.
 
 ```html
 <script>
@@ -133,9 +125,7 @@ Calculate the control limits based on the CL, LCL, and UCL. The start and end ra
 
 ![Alt text](./images/step4.png)
 
-**Step 5**:
-
-Highlight the points that are above the UCL using the pointRender event.
+**Step 5**: Highlight the points that are above the UCL using the pointRender event.
 
 ```html
 <script>
@@ -150,9 +140,7 @@ Highlight the points that are above the UCL using the pointRender event.
 
 ![Alt text](./images/step5.png)
 
-**Step 6**:
-
-Change the values of annotation text (UCL, LCL, mean, and CL).
+**Step 6**: Change the values of annotation text (UCL, LCL, mean, and CL).
 
 ```html
 <script>
@@ -186,9 +174,7 @@ Change the values of annotation text (UCL, LCL, mean, and CL).
 
 ![Alt text](./images/step6.png)
 
-**Step 7**:
-
-Add the dasharray for stripline elements and add some pixel for the annotation elements to move from its default position and then add the text for the last annotation to show the mean, UCL, CL, LCL and standard divation in the loaded event.
+**Step 7**: Add the dasharray for stripline elements and add some pixel for the annotation elements to move from its default position and then add the text for the last annotation to show the mean, UCL, CL, LCL and standard divation in the loaded event.
 
 ```html
 <script>
@@ -250,7 +236,4 @@ Add the dasharray for stripline elements and add some pixel for the annotation e
 
 ![Alt text](./images/control-charts.png)
 
-**Sample link**:
-
-A sample for creating control chart is available in the following link,
-[`chartSample`](http://www.syncfusion.com/downloads/support/directtrac/207077/ze/coreEJ2Sample-1067535862)
+**Sample link**: A sample for creating control chart is available in the following link, [`chartSample`](http://www.syncfusion.com/downloads/support/directtrac/207077/ze/coreEJ2Sample-1067535862).
