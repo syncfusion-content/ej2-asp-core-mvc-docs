@@ -12,12 +12,9 @@ documentation: ug
 
 ## Add or remove menu items
 
-Menu items can be added or removed using the `insertAfter`,
-`insertBefore` and `removeItems` methods.
+Menu items can be added or removed using the `insertAfter`, `insertBefore` and `removeItems` methods.
 
-In the following example, the **Europe** menu items are added before the **Oceania** item,
-the **Africa** menu items are added after the **Asia**, and the **South America**
-and **Mexico** items are removed from menu.
+In the following example, the **Europe** menu items are added before the **Oceania** item, the **Africa** menu items are added after the **Asia**, and the **South America** and **Mexico** items are removed from menu.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,8 +45,7 @@ and **Mexico** items are removed from menu.
 
 ## Enable or disable menu items
 
-You can enable and disable the menu items using the `enableItems`
-method in Menu. To enable menuItems, set the `enable` property in argument to `true` and vice-versa.
+You can enable and disable the menu items using the `enableItems` method in Menu. To enable menuItems, set the `enable` property in argument to `true` and vice-versa.
 
 In the following example, the **Directory** header item, **Conferences**, and **Music** sub menu items are disabled.
 
@@ -82,11 +78,9 @@ In the following example, the **Directory** header item, **Conferences**, and **
 
 ## Hide or show menu items
 
-You can show or hide the menu items using the `showItems`
-and `hideItems` methods.
+You can show or hide the menu items using the `showItems` and `hideItems` methods.
 
-In the following example, the **Movies** header item, **Workshops**, and **Music** sub menu items
-are hidden in menu.
+In the following example, the **Movies** header item, **Workshops**, and **Music** sub menu items are hidden in menu.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

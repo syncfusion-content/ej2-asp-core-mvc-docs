@@ -14,9 +14,7 @@ documentation: ug
 The ListView supports checkbox in default and group-lists which is used to select multiple items.
 The checkbox can be enabled by the `showCheckBox` property.
 
-The Checkbox will be useful in the scenario where we need to select multiple options. For Example,
-In Shipping cart we can be able to select or unselect the desired items before checkout and also
-it will be useful in selecting multiple items that belongs to same category using the group list.
+The Checkbox will be useful in the scenario where we need to select multiple options. For Example, in Shipping cart we can be able to select or unselect the desired items before checkout and also it will be useful in selecting multiple items that belongs to same category using the group list.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

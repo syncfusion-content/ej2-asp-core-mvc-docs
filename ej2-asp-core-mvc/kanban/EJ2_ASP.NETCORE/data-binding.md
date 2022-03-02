@@ -323,8 +323,7 @@ To add a custom parameter to the data request, use the **addParams** method of *
 
 ### Handling HTTP error
 
-During server interaction from the kanban, some server-side exceptions may occur, and you can acquire those error messages or exception details
-in client-side using the `actionFailure` event.
+During server interaction from the kanban, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the `actionFailure` event.
 
 The argument passed to the `actionFailure` event contains the error details returned from the server.
 
@@ -357,8 +356,7 @@ Output be like the below.
 
 ![kanban](./images/http-error.PNG)
 
-> The `actionFailure` event will be triggered not only for the server errors, but
-also when there is an exception while processing the kanban actions.
+> The `actionFailure` event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
 
 ## Loading data via ajax
 

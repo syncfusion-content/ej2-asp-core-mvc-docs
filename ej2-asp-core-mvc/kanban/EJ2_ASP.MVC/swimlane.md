@@ -50,7 +50,7 @@ Output be like the below.
 
 Customize the swimlane row header text by using the `TextField` property mapped from datasource.
 
-> It is not mandatory to define the `TextField` to `SwimlaneSettings`.  It will automatically consider the `KeyField` to swimlane row header text.
+> It is not mandatory to define the `TextField` to `SwimlaneSettings`. It will automatically consider the `KeyField` to swimlane row header text.
 > If the mapping `TextField` key is not present in the datasource, it will consider the swimlane `KeyField` as swimlane row header text.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -175,7 +175,7 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 
 ## Create empty row
 
-You can render the empty swimlane row by enabling the `ShowEmptyRow` property.  If mapping `KeyField` does not have cards, empty swimlane row will be rendered.
+You can render the empty swimlane row by enabling the `ShowEmptyRow` property. If mapping `KeyField` does not have cards, empty swimlane row will be rendered.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

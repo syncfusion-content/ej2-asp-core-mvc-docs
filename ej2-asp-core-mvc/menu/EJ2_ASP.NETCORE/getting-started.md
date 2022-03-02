@@ -42,8 +42,7 @@ Add the HTML `ejs-menu` tag with `id` attribute as `menu` to your **Index.cshtml
 
 ## Bind datasource
 
-The menu items can be rendered by assigning JSON values to `ViewBag` variable in `Default.cs`, and passed to the
-[`items`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~Items.html) property in the view.
+The menu items can be rendered by assigning JSON values to `ViewBag` variable in `Default.cs`, and passed to the [`items`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~Items.html) property in the view.
 
 ```cs
 public IActionResult Index()
@@ -141,14 +140,12 @@ The following example shows a basic Menu.
 
 
 > This example demonstrates the basic rendering of Menu with items support.
-For more information about data source support,
-refer to the [`Data Source Binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
+For more information about data source support, refer to the [`Data Source Binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
 
 ## Group menu items with separator
 
 The separators are both horizontal and vertical lines used to separate the menu items.
-You cannot select the separators, but you can enable separators to group the menu items
-using the `separator` property.
+You cannot select the separators, but you can enable separators to group the menu items using the `separator` property.
 The `Open` and `Save` sub menu items are grouped using the `separator` property in the following sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -176,6 +173,5 @@ The `Open` and `Save` sub menu items are grouped using the `separator` property 
 
 
 
-> The `separator` property should not be given
-along with the other fields in the `MenuItem`.
+> The `separator` property should not be given along with the other fields in the `MenuItem`.
 You can also enable the separator to group **horizontal** menu items.
