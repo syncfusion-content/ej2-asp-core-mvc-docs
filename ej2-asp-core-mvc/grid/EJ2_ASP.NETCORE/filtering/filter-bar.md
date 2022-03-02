@@ -91,8 +91,7 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 
 ## Change default filterbar operator
 
-You can change the default filter operator by extending **filterOperators** property in [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event. In the following sample,
-we have changed the default operator for string typed columns as **contains** from **startsWith**.
+You can change the default filter operator by extending **filterOperators** property in [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event. In the following sample, we have changed the default operator for string typed columns as **contains** from **startsWith**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

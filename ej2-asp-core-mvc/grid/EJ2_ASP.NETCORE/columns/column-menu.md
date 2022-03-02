@@ -87,8 +87,7 @@ During the resizing action, the grid component triggers the below two events.
 
 ## Custom column menu item
 
-Custom column menu items can be added by defining the [`columnMenuItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuItems) as collection of
-the **columnMenuItemModel**.
+Custom column menu items can be added by defining the [`columnMenuItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuItems) as collection of the **columnMenuItemModel**.
 
 Actions for this customized items can be defined in the [`columnMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuClick) event.
 

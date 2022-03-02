@@ -332,8 +332,7 @@ For every operations, an AJAX post will be send to the specified data service.
 
 
 
-`WebMethodAdaptor` expects JSON response from the server and the response object should contain properties `result` and `count`
-whose values are collection of entities and total count of the entities respectively.
+`WebMethodAdaptor` expects JSON response from the server and the response object should contain properties `result` and `count` whose values are collection of entities and total count of the entities respectively.
 
 The sample response object should look like below.
 
