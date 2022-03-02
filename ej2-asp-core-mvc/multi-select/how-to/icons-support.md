@@ -11,9 +11,7 @@ documentation: ug
 
 # Show the list items with icons
 
-You can render **icons** to the list items by mapping the
-`iconCss` field. This `iconCss` field create a span in the list item with mapped class name
-to allow styling as per your need.
+You can render **icons** to the list items by mapping the `iconCss` field. This `iconCss` field create a span in the list item with mapped class name to allow styling as per your need.
 
 In the following sample, icon classes are mapped with `iconCss` field.
 

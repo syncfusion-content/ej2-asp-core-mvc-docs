@@ -11,9 +11,7 @@ documentation: ug
 
 # Accessibility
 
-The NumericTextBox characterized with complete ARIA Accessibility support which helps to accessible
-by on-screen readers and other assistive technology devices. This component designed with the
-reference of the guidelines document given in [WAI ARAI Accessibility practices](http://www.w3.org/TR/wai-aria-practices-1.1/#spinbutton).
+The NumericTextBox characterized with complete ARIA Accessibility support which helps to accessible by on-screen readers and other assistive technology devices. This component designed with the reference of the guidelines document given in [WAI ARAI Accessibility practices](http://www.w3.org/TR/wai-aria-practices-1.1/#spinbutton).
 
 The NumericTextBox uses the `spinbutton` role and following ARIA properties to its element based on its state.
 
@@ -30,9 +28,7 @@ The NumericTextBox uses the `spinbutton` role and following ARIA properties to i
 
 ## Keyboard interaction
 
-Keyboard interaction of the NumericTextBox control has been designed based on
-[WAI-ARIA Practices](http://www.w3.org/TR/wai-aria-practices-1.1/#spinbutton) described for the NumericTextBox and
-it is an alternative to mouse actions to interact with the NumericTextBox.
+Keyboard interaction of the NumericTextBox control has been designed based on [WAI-ARIA Practices](http://www.w3.org/TR/wai-aria-practices-1.1/#spinbutton) described for the NumericTextBox and it is an alternative to mouse actions to interact with the NumericTextBox.
 
 The below table shows shortcut keys and its corresponding usage.
 

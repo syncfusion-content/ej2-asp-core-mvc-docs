@@ -10,8 +10,7 @@ documentation: ug
 
 # Customize the spin button’s up and down arrow
 
-This section explains about how to change/customize spin up and down icons. You can customize spin button icons using `e-spin-up` and `e-spin-down`
-classes of those buttons.
+This section explains about how to change/customize spin up and down icons. You can customize spin button icons using `e-spin-up` and `e-spin-down` classes of those buttons.
 
 You can override the default icons of `e-spin-up` and `e-spin-down` classes using the following CSS code snippets.
 

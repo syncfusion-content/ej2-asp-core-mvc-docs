@@ -11,8 +11,7 @@ documentation: ug
 
 # Data Binding
 
-The ListBox loads the data either from local data sources or remote data services using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~DataSource.html) property. It supports
-the data type of `array` or `DataManager`.
+The ListBox loads the data either from local data sources or remote data services using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~DataSource.html) property. It supports the data type of `array` or `DataManager`.
 
 | Fields | Type | Description |
 |------|------|-------------|
