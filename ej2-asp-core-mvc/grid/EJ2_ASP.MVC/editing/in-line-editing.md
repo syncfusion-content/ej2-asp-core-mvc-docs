@@ -11,9 +11,7 @@ documentation: ug
 
 # Inline Editing
 
-In Normal edit mode, when you start editing the currently selected record is changed to edit state.
-You can change the cell values and save edited data to the data source.
-To enable Normal edit, set the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) of [`EditSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) as **Normal**.
+In Normal edit mode, when you start editing the currently selected record is changed to edit state. You can change the cell values and save edited data to the data source. To enable Normal edit, set the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) of [`EditSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) as **Normal**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -118,7 +116,7 @@ Grid methods can be used to perform CRUD operations programmatically. The `addRe
 
 * To remove a selected row from the Grid, use the `deleteRecord` method. For both edit and delete operations, you must select a row first.
 
-> **Note:** In both normal and dialog editing modes, these methods can be used.
+> In both normal and dialog editing modes, these methods can be used.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -178,8 +176,7 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 
 ## Default column values on add new row
 
-The grid provides an option to set the default value for the columns when adding a new record in it.
-To set a default value for the particular column by defining the [`DefaultValue`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_DefaultValue) of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html).
+The grid provides an option to set the default value for the columns when adding a new record in it. To set a default value for the particular column by defining the [`DefaultValue`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_DefaultValue) of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

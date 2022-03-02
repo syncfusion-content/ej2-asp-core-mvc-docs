@@ -15,10 +15,10 @@ The clipboard provides an option to copy selected rows or cells data into the cl
 
 The following list of keyboard shortcuts is supported in the Grid to copy selected rows or cells data into the clipboard.
 
-Interaction keys |Description
------|-----
-<kbd>Ctrl + C</kbd> |Copy selected rows or cells data into clipboard.
-<kbd>Ctrl + Shift + H</kbd> |Copy selected rows or cells data with header into clipboard.
+|Interaction keys |Description|
+|-----|-----|
+|<kbd>Ctrl + C</kbd> |Copy selected rows or cells data into clipboard.|
+|<kbd>Ctrl + Shift + H</kbd> |Copy selected rows or cells data with header into clipboard.|
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -104,7 +104,7 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 
 
 > If [`EnableAutoFill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableAutoFill) is set to true, then the autofill icon will be displayed on cell selection to copy cells.
-> It requires the selection [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) to be **Cell**,  [`CellSelectionMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CellSelectionMode) to be **Box** and also Batch Editing should be enabled.
+> It requires the selection [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) to be **Cell**, [`CellSelectionMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CellSelectionMode) to be **Box** and also Batch Editing should be enabled.
 
 ### Limitations of AutoFill
 

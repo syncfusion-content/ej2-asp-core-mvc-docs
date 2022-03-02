@@ -113,8 +113,7 @@ In JSON table data binding, each JSON object contains an X-axis data point as ro
 
 ### JSON data - Cell binding
 
-In JSON cell data binding, each JSON object consists a value for each cell along with a mapping value for row and column. You can bind the JSON cell data having information for each cell to the heat map using the `data` property in [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~DataSource.html). To achieve this, you should define the `adaptorType` property as `Cell`. and enable the `isJsonData` property. Now, map the fields of data by using the `valueMapping`,
-`xDataMapping` and `yDataMapping` properties.
+In JSON cell data binding, each JSON object consists a value for each cell along with a mapping value for row and column. You can bind the JSON cell data having information for each cell to the heat map using the `data` property in [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~DataSource.html). To achieve this, you should define the `adaptorType` property as `Cell`. and enable the `isJsonData` property. Now, map the fields of data by using the `valueMapping`, `xDataMapping` and `yDataMapping` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -172,9 +171,7 @@ The data points that use the `null` or `""` or `undefined` as value are consider
 
 ## Binding nested JSON data
 
-In complex data binding, you can bind the nested JSON data to the data points in the heat map.
-The nested data can be mapped using the `xDataMapping`, `yDataMapping`, `valueMapping`
-and `bubbleDataMapping` properties as string value concatenated by a dot.
+In complex data binding, you can bind the nested JSON data to the data points in the heat map. The nested data can be mapped using the `xDataMapping`, `yDataMapping`, `valueMapping` and `bubbleDataMapping` properties as string value concatenated by a dot.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

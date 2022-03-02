@@ -48,9 +48,7 @@ You can add/delete the data source records through an external button. To reflec
 
 To refresh the data source:
 
-**Step 1**:
-
-Add/delete the data source record by using the following code.
+**Step 1**: Add/delete the data source record by using the following code.
 
 ```typescript
     grid.dataSource.unshift(data); // add a new record.
@@ -59,9 +57,7 @@ Add/delete the data source record by using the following code.
 
 ```
 
-**Step 2**:
-
-Refresh the grid after the data source change by using the `refresh` method.
+**Step 2**: Refresh the grid after the data source change by using the `refresh` method.
 
 ```typescript
     grid.refresh(); // refresh the Grid.

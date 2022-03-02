@@ -48,10 +48,10 @@ To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](
 
 You can use the `UrlAdaptor` of `DataManager` when binding the remote data. Along with the default server request, this feature will additionally send the below details to handle the lazy load grouping. In the server end, these details are bound with the `IsLazyLoad` and `OnDemandGroupInfo` parameters in the `DataManagerRequest` model. Please refer to the below table and screenshots.
 
-Property Name |Description
------|-----
-`isLazyLoad` |To differentiate the default grouping and lazy load grouping
-`onDemandGroupInfo` |Have the details of expanded caption row grouping `level`, `skip`, `take` and `filter` query of the child records
+|Property Name |Description|
+|-----|-----|
+|`isLazyLoad` |To differentiate the default grouping and lazy load grouping|
+|`onDemandGroupInfo` |Have the details of expanded caption row grouping `level`, `skip`, `take` and `filter` query of the child records|
 
 ![IsLazyLoad](../../images/islazyload.jpg)
 

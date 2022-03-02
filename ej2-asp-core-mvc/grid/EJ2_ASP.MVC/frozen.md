@@ -12,8 +12,7 @@ documentation: ug
 
 Frozen rows and columns provides an option to make rows and columns always visible in the top and left side of the grid while scrolling.
 
-In this demo, the [`FrozenColumns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FrozenColumns) is set as **2** and the [`FrozenRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FrozenRows)
-is set as **3**. Hence, the left two columns and top three rows are frozen.
+In this demo, the [`FrozenColumns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FrozenColumns) is set as **2** and the [`FrozenRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FrozenRows) is set as **3**. Hence, the left two columns and top three rows are frozen.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -56,8 +55,7 @@ The following features are not supported in frozen rows and columns:
 
 To freeze particular column in the grid, the [`IsFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsFrozen) property can be used.
 
-In this demo, the columns with field name **OrderID** and **CustomerID** is frozen using
-the [`IsFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsFrozen) property.
+In this demo, the columns with field name **OrderID** and **CustomerID** is frozen using the [`IsFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsFrozen) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -26,8 +26,7 @@ The Server side export functionality is shipped in the Syncfusion.EJ2.GridExport
 
 The following code snippets shows server configuration using ASP.NET MVC Controller Action.
 
-To Export the Grid in server side, You need to call the
- [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/grid/#serverpdfexport) method for passing the Grid properties to server exporting action.
+To Export the Grid in server side, You need to call the [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/grid/#serverpdfexport) method for passing the Grid properties to server exporting action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

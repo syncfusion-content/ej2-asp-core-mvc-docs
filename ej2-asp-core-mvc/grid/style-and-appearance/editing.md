@@ -13,7 +13,7 @@ documentation: ug
 
 ## Customizing the edited and added row element
 
-Use the below CSS to customize the Grid edited and added row table elements
+Use the below CSS to customize the Grid edited and added row table elements.
 
 ```css
 
@@ -38,7 +38,7 @@ Grid edited row input elements can be customized using the below CSS.
 
 ## Customizing the edit dialog header element
 
-Use the below CSS to customize the Grid edit dialog header element
+Use the below CSS to customize the Grid edit dialog header element.
 
 ```css
 
@@ -50,7 +50,7 @@ Use the below CSS to customize the Grid edit dialog header element
 
 ## Customizing the edited row input element in dialog edit mode
 
-Below CSS customizes the Grid edited row input element in Dialog edit mode
+Below CSS customizes the Grid edited row input element in Dialog edit mode.
 
 ```css
 

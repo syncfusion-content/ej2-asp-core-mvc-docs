@@ -11,8 +11,7 @@ documentation: ug
 
 # PDF Export
 
-PDF export allows exporting Grid data to PDF document. You need to use the
-[`PdfExport`](https://ej2.syncfusion.com/documentation/api/grid/#pdfexport) method for exporting. To enable PDF export in the grid, set the [`AllowPdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowPdfExport) as true.
+PDF export allows exporting Grid data to PDF document. You need to use the [`PdfExport`](https://ej2.syncfusion.com/documentation/api/grid/#pdfexport) method for exporting. To enable PDF export in the grid, set the [`AllowPdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowPdfExport) as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
