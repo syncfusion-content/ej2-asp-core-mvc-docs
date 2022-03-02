@@ -15,9 +15,7 @@ UI virtualization loads only viewable list items in a view port, which will impr
 
 ## Getting started
 
-UI virtualization can be enabled in the ListView by setting the
-[`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListView.html#Syncfusion_EJ2_Lists_ListView_EnableVirtualization)
-property to true.
+UI virtualization can be enabled in the ListView by setting the [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListView.html#Syncfusion_EJ2_Lists_ListView_EnableVirtualization) property to true.
 
 It has two types of scrollers as follows:
 

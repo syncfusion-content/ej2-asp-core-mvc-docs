@@ -42,8 +42,8 @@ The legend is used to provide the information about the heat map cell. You can e
 
 Heat map supports two legend types: Gradient and list type.
 
-* Gradient - This is a continuous color legend with smooth color transition between palette color values.
-* List - List is a fixed color legend. Each palette color information is shown separately in the list item.
+* **Gradient** - This is a continuous color legend with smooth color transition between palette color values.
+* **List** - List is a fixed color legend. Each palette color information is shown separately in the list item.
 
 You can change the legend type by using the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings~Type.html) property in the `paletteSettings` property.
 
@@ -195,9 +195,9 @@ Smart legend is another way of showing list type legend with responsiveness and 
 In smart legend, you can change the display type of legend labels by using the [`labelDisplayType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~LabelDisplayType.html) property.
 
 The following are the legend label display types:
-* All: Displays all labels in the legend.
-* Edge: Displays the legend labels only at extreme ends.
-* None: None of the labels are displayed. The tooltip will appear for this type of label display when hovering over the legend item.
+* **All**: Displays all labels in the legend.
+* **Edge**: Displays the legend labels only at extreme ends.
+* **None**: None of the labels are displayed. The tooltip will appear for this type of label display when hovering over the legend item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

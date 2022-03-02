@@ -24,8 +24,7 @@ The Server side export functionality is shipped in the Syncfusion.EJ2.GridExport
 
 The following code snippet shows server configuration using ASP.NET Core Controller Action.
 
-To Export the Grid in server side, You need to call the
- [`serverExcelExport`](https://ej2.syncfusion.com/documentation/api/grid/#serverexcelexport) method for passing the Grid properties to server exporting action.
+To Export the Grid in server side, You need to call the [`serverExcelExport`](https://ej2.syncfusion.com/documentation/api/grid/#serverexcelexport) method for passing the Grid properties to server exporting action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

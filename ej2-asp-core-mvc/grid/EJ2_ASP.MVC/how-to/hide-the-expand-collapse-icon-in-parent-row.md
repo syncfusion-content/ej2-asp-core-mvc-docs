@@ -17,9 +17,7 @@ You can use [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 To hide the expand/collapse icon in parent row when no records in child grid, follow the given steps:
 
-**Step 1**:
-
-Create CSS class with custom style to override the default style of Grid.
+**Step 1**: Create CSS class with custom style to override the default style of Grid.
 
 ```css
     .e-row[aria-selected="true"] .e-customizedExpandcell {
@@ -32,9 +30,7 @@ Create CSS class with custom style to override the default style of Grid.
 
 ```
 
-**Step 2**:
-
-Add the CSS class to the Grid in the [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event handler of Grid.
+**Step 2**: Add the CSS class to the Grid in the [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event handler of Grid.
 
 ```typescript
 

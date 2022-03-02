@@ -15,7 +15,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## Background
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -27,20 +26,20 @@ This article describes the API migration process of Diagram component from Essen
 <td><b>Property</b>:<i>`BackgroundColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").BackgroundColor("yellow").Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td><b>Property</b>:<i>`BackgroundColor`</i>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").BackgroundColor("red")).Render()
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 <tr>
@@ -48,65 +47,64 @@ This article describes the API migration process of Diagram component from Essen
 <td><b>Property</b>:<i>`BackgroundImage.Alignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").BackgroundImage(new BackgroundImage() { Alignment= ImageAlignment.XMidYMid}).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td><b>Property</b>:<i>`Background.Align`</i>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").PageSettings(new DiagramPageSettings() { Background= new DiagramBackground() { Align=ImageAlignment.XMidYMid} }).Render()
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 <tr>
 <td><b>Defines how the background image should be scaled/stretched</b></td>
 <td><b>Property</b>:<i>`BackgroundImage.Scale`</i>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").BackgroundImage(new BackgroundImage() { Scale=ScaleConstraints.Meet }).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td><b>Property</b>:<i>`Background.Scale`</i>
-<code>
+{% highlight html %}
 
     Html.EJS().Diagram("container").PageSettings(new DiagramPageSettings() { Background= new DiagramBackground() { Scale=Scale.Meet} }).Render()
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 <tr>
 <td><b>Sets the source path of the background image</b></td>
 <td><b>Property</b>:<i>`BackgroundImage.Source`</i>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").BackgroundImage(new BackgroundImage() { Source= "../images/Employee/artBoard 13.Png" }).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td><b>Property</b>:<i>`Background.Source`</i>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").PageSettings(new DiagramPageSettings() { Background= new DiagramBackground() { Source= "Syncfusion.Png" } }).Render()
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 </table>
 
 ## Bridging
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -116,28 +114,27 @@ This article describes the API migration process of Diagram component from Essen
 <tr>
 <td><b>Sets the direction of line bridges</b></td>
 <td><b>Property</b>:<i>`BridgeDirection`</i>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").BridgeDirection(BridgeDirection.Bottom).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 
 <td><b>Property</b>:<i>`BridgeDirection`</i>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").BridgeDirection(BridgeDirection.Left)).Render()
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 </table>
 
 ## CommandManager
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -152,12 +149,12 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function canExecute(args) {
         var diagram = $("#DiagramContent").EjDiagram("instance");
@@ -169,10 +166,10 @@ This article describes the API migration process of Diagram component from Essen
         diagram.Paste();
     }
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Command clone = new Command() {
@@ -182,20 +179,20 @@ This article describes the API migration process of Diagram component from Essen
     Model.CommandManager.Commands.Add("clone", clone);
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`CommandManager.Commands`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").CommandManager(ViewBag.commandManager).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramCommand> commands = new List<DiagramCommand>();
     commands.Add(new DiagramCommand() { Name = "customCopy" });
@@ -205,7 +202,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.commandManager = commandManager;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines any additional parameters that are required at runtime</b></td>
@@ -214,12 +211,12 @@ This article describes the API migration process of Diagram component from Essen
 
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as Syncfusion.JavaScript.DataVisualization.Models.DiagramProperties);
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function canExecute(args) {
         var diagram = $("#DiagramContent").EjDiagram("instance");
@@ -231,10 +228,10 @@ This article describes the API migration process of Diagram component from Essen
         diagram.Paste();
     }
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Command clone = new Command() {
@@ -244,20 +241,20 @@ This article describes the API migration process of Diagram component from Essen
     Model.CommandManager.Commands.Add("clone", clone);
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`CommandManager.Commands.Parameter`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").CommandManager(ViewBag.commandManager).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramCommand> commands = new List<DiagramCommand>();
     commands.Add(new DiagramCommand() { Parameter = "node" });
@@ -267,13 +264,12 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.commandManager = commandManager;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## Connectors
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -285,7 +281,7 @@ This article describes the API migration process of Diagram component from Essen
 <td>
 <b>Property</b>:<i>`Connector.AddInfo`</i>
 
-<code>
+{% highlight html %}
 
     @{
         Dictionary<string, object> AddInfo = new Dictionary<string, object>();
@@ -294,20 +290,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Connectors(c => c.Add(new Connector() { AddInfo = AddInfo })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.AddInfo`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Dictionary<string, object> AddInfo = new Dictionary<string, object>();
     AddInfo.Add("Description", "Bidirectional Flow");
@@ -315,7 +311,7 @@ This article describes the API migration process of Diagram component from Essen
     connectors.Add(new DiagramConnector() { AddInfo = AddInfo });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -324,33 +320,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.BridgeSpace`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram")Connectors(c => c.Add(new Connector() { BridgeSpace = 15 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.BridgeSpace`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { BridgeSpace = 15 });
     ViewBag.Connectors = connectors;
-
-</code>
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -359,32 +353,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() {  Constraints = Syncfusion.JavaScript.DataVisualization.DiagramEnums.ConnectorConstraints.Bridging })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.Constraints`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { Constraints = ConnectorConstraints.Bridging });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -393,7 +387,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.CornerRadius`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Segment = new Collection();
@@ -401,26 +395,26 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { CornerRadius = 15 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.CornerRadius`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { CornerRadius = 5});
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Customize connectors appearance using user-defined CSS</b></td>
@@ -428,20 +422,20 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.CssClass`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     //CSS style
     .HoverConnector:hover {
         stroke:blue
     }
-</code><br>
-<code>
+{% endhighlight %}<br>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { CssClass = "hoverConnector" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -452,13 +446,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.HorizontalAlign`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() {  HorizontalAlign = HorizontalAlignment.Right })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -468,7 +462,7 @@ This article describes the API migration process of Diagram component from Essen
 <td>
 <b>Property</b>:<i>`Connector.Labels`</i>
 
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -477,21 +471,21 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.Annotations`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnectorAnnotation> annotation = new List<DiagramConnectorAnnotation>();
     annotation.Add(new DiagramConnectorAnnotation() { Content = "connector" });
@@ -499,7 +493,7 @@ This article describes the API migration process of Diagram component from Essen
     connectors.Add(new DiagramConnector() { Annotations =  annotation});
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Stroke color of the connector</b></td>
@@ -507,33 +501,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.LineColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { Name = "connector1", LineColor = "blue" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.Style.StrokeColor`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { Style = { StrokeColor = "blue" }});
     ViewBag.Connectors = connectors;
 
-</code></td>
-</tr>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Sets the pattern of dashes and gaps used to stroke the path of the connector</b></td>
@@ -541,32 +534,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.LineDashArray`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { LineDashArray = "2,2" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.Style.StrokeDashArray`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() {  Style = { StrokeDashArray= "2, 2" }});
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Sets the width of the line</b></td>
@@ -574,31 +567,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.LineWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { LineWidth = 10 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.Style.StrokeWidth`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() {  Style = { StrokeWidth = 2 }});
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -608,32 +601,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.LineHitPadding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { LineHitPadding = 15 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.HitPadding`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { HitPadding = 20 });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Sets a unique name for the connector</b></td>
@@ -641,31 +634,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { Name = "connector1" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Id`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { Id = "connector1" });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the transparency of the connector</b></td>
@@ -673,31 +666,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Opacity`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { Opacity = 1 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Style.Opacity`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { Style = { Opacity = 0.5} });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Sets the parent name of the connector.</b></td>
@@ -705,13 +698,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Parent`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { Parent = "parent" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Not applicable</b>
 </td>
@@ -723,7 +716,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Segment = new Collection();
@@ -731,19 +724,19 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ Segments=Segment } )) .Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connector.Segments`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<Segment> segments = new List<Segment>();
     segments.Add(new Segment() { Type = Segments.Orthogonal });
@@ -751,7 +744,7 @@ This article describes the API migration process of Diagram component from Essen
     connectors.Add(new DiagramConnector() { Segments = segments });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -761,7 +754,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Direction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Segment = new Collection();
@@ -769,19 +762,19 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ Segments=Segment } )) .Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Segments.Direction`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<Segment> segments = new List<Segment>();
     segments.Add(new Segment() { Direction = "Bottom" });
@@ -789,7 +782,7 @@ This article describes the API migration process of Diagram component from Essen
     connectors.Add(new DiagramConnector() { Segments = segments });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -799,7 +792,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Length`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Segment = new Collection();
@@ -807,19 +800,19 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ Segments=Segment } )) .Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Segments.Length`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<Segment> segments = new List<Segment>();
     segments.Add(new Segment() { Length=30 });
@@ -827,7 +820,7 @@ This article describes the API migration process of Diagram component from Essen
     connectors.Add(new DiagramConnector() { Segments = segments });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -836,7 +829,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Point`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Segment = new Collection();
@@ -844,7 +837,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ Segments=Segment } )) .Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Point`</i>
@@ -859,7 +852,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Point1`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Segment = new Collection();
@@ -867,7 +860,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ Segments=Segment } )) .Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Point1`</i>
@@ -883,7 +876,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Point2`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Segment = new Collection();
@@ -891,7 +884,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ Segments=Segment } )) .Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Point2`</i>
@@ -905,7 +898,7 @@ This article describes the API migration process of Diagram component from Essen
 <td><b>Sets the type of the segment
 </b></td>
 <td>
-<code>
+{% highlight html %}
 
     @{
         Collection Segment = new Collection();<br>
@@ -913,20 +906,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Connectors(c => c.Add(new Connector(){ Segments=Segment } )) .Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Type`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<Segment> segments = new List<Segment>();
     segments.Add(new Segment() { Type = Segments.Bezier });
@@ -934,7 +927,7 @@ This article describes the API migration process of Diagram component from Essen
     connectors.Add(new DiagramConnector() { Segments = segments });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -943,7 +936,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Vector1`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Segment = new Collection();<br>
@@ -951,7 +944,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ Segments=Segment } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Vector1`</i>
@@ -968,7 +961,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Vector2`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Segment = new Collection();<br>
@@ -976,7 +969,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ Segments=Segment } )) .Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Vector2`</i>
@@ -993,32 +986,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Shape.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ Shape = new Shape() { Type = Shapes.BPMN } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Shape.Type`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { Shape= new BpmnConnectors() { Type = "Bpmn" } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the source decorator of the connector
@@ -1027,31 +1020,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ SourceDecorator = new Decorator() { Shape=DecoratorShapes.OpenArrow } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { SourceDecorator = new DiagramDecorator () { Shape = DecoratorShapes.OpenArrow } } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1060,31 +1053,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.BorderColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ SourceDecorator = new Decorator() { BorderColor = "red" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Style.StrokeColor`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { SourceDecorator = new DiagramDecorator () {  Style = { StrokeColor="green" } } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Sets the border width of the decorator</b></td>
@@ -1092,31 +1085,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.BorderWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ SourceDecorator = new Decorator() { BorderWidth = 5 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Style.StrokeWidth`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { SourceDecorator = new DiagramDecorator () { Style = { StrokeWidth=2 } } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines to customize sourceDecorator appearance using user-defined CSS
@@ -1125,13 +1118,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.CssClass`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ SourceDecorator = new Decorator() { CssClass = "className"  } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Not applicable</b></td>
 </tr>
@@ -1142,31 +1135,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.FillColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Height("500px").Width("500px").Connectors(c => c.Add(new Connector(){SourceDecorator = new Decorator() { FillColor = "red"  } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Style.Fill`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Width("1000").Height("645px").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { SourceDecorator = new DiagramDecorator () {  Style = { Fill= "red" } } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Sets the height of the source decorator</b></td>
@@ -1174,31 +1167,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ SourceDecorator = new Decorator() { Height = 10  } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Height`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { SourceDecorator = new DiagramDecorator () {  Height=10 } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the custom shape of the source decorator
@@ -1207,31 +1200,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.PathData`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ SourceDecorator = new Decorator() { Shape = DecoratorShapes.Path, PathData = "M 376.892,225.284L 371.279,211.95L 376.892,198.617L 350.225,211.95L 376.892,225.284 Z"  } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.PathData`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() {  SourceDecorator = new DiagramDecorator () { Shape = DecoratorShapes.Custom, PathData= "M 376.892,225.284 L 371.279,211.95 L 376.892,198.617 L 350.225,211.95 L 376.892,225.284 Z" } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1241,31 +1234,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.Shape`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ SourceDecorator = new Decorator() { Shape = OpenArrow  } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Shape`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { SourceDecorator = new DiagramDecorator () { Shape = DecoratorShapes.OpenArrow } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the width of the source decorator
@@ -1274,31 +1267,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.Width`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram".Connectors(c => c.Add(new Connector(){ SourceDecorator = new Decorator() { Width = 10 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Width`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() {  SourceDecorator = new DiagramDecorator () { Width=10 } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Sets the source node of the connector
@@ -1307,31 +1300,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceNode`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ SourceNode = "source" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceID`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { SourceID="source" } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1340,31 +1333,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourcePadding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ SourcePadding = 2 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.HitPadding`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() {HitPadding=2 });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Describes the start point of the connector
@@ -1373,31 +1366,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourcePoint`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){SourcePoint = new DiagramPoint(100, 100) })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourcePoint`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { SourcePoint = { X= 100, Y=100} } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1407,31 +1400,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourcePort`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ SourcePort = "sourcePort" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourcePortID`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() {  SourceID="source", SourcePortID="sourcePortId" });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1442,31 +1435,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetDecorator = new Decorator() { Shape=DecoratorShapes.OpenArrow } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { TargetDecorator = new DiagramDecorator () { Shape = DecoratorShapes.OpenArrow } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1475,31 +1468,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.BorderColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetDecorator = new Decorator() { BorderColor = "red" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Style.StrokeColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 <b>[View]</b>
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { TargetDecorator = new DiagramDecorator () { Style = { StrokeColor="green" } } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Sets the border width of the decorator</b></td>
@@ -1507,31 +1500,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.BorderWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetDecorator = new Decorator() { Shape=DecoratorShapes.OpenArrow, BorderWidth = 5 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Style.StrokeWidth`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { TargetDecorator = new DiagramDecorator () { Style = { StrokeWidth=2 } }});
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines to customize target Decorator appearance using user-defined CSS
@@ -1540,13 +1533,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.CssClass`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetDecorator = new Decorator() { CssClass = "className" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Not applicable</b></td>
 </tr>
@@ -1558,31 +1551,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.FillColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetDecorator = new Decorator() { FillColor = "red" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Style.Fill`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { TargetDecorator = new DiagramDecorator () { Style = {Fill= "red" }} });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Sets the height of the target decorator</b></td>
@@ -1590,31 +1583,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetDecorator = new Decorator() { Height = 10 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Height`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Width("1000").Height("645px").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { TargetDecorator = new DiagramDecorator () { Height=10 } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the custom shape of the target decorator
@@ -1623,32 +1616,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.PathData`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetDecorator = new Decorator() { shape: DecoratorShapes.Path,
         pathData: "M 376.892,225.284 L 371.279,211.95 L 376.892,198.617 L 350.225,211.95 L 376.892,225.284 Z" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.PathData`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { TargetDecorator = new DiagramDecorator () { Shape = DecoratorShapes.Custom, PathData= "M 376.892,225.284 L 371.279,211.95 L 376.892,198.617 L 350.225,211.95 L 376.892,225.284 Z" } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1658,31 +1651,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.Shape`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetDecorator = new Decorator() { Shape = DecoratorShapes.OpenArrow } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Shape`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Width("1000").Height("645px").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { TargetDecorator = new DiagramDecorator () { Shape = DecoratorShapes.OpenArrow } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the width of the target decorator
@@ -1691,31 +1684,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.Width`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetDecorator = new Decorator() { Width = 10 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Width`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { TargetDecorator = new DiagramDecorator () { Width=10 } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1725,31 +1718,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetNode`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetNode = "target" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetID`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() {  TargetID="target" });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the space to be left between the target node and the target point of a connector</b></td>
@@ -1757,31 +1750,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetPadding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetPadding = 2 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.HitPadding`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { TargetDecorator = new DiagramDecorator () { HitPadding = 2 });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1791,31 +1784,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetPoint`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){Name = "connector1", TargetPoint = new DiagramPoint(200, 200)})).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetPoint`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { TargetPoint = { X = 200, Y = 200 } } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1825,31 +1818,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetPort`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector(){ TargetPort = "targetPort" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetPortID`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { TargetID="target", TargetPortID="targetPortId" });
     ViewBag.Connectors = connectors;
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 
@@ -1860,7 +1853,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Tooltip`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
     <script type="text/x-jsrender" id="mouseovertooltip"><br>
         <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px"><br>
             <span style="padding: 5px;">  </span><br>
@@ -1872,25 +1865,25 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Height("500px").Width("500px").Connectors(c => c.Add(new Connector() { Name = "connector1", SourcePoint = new DiagramPoint(100, 100), TargetPoint = new DiagramPoint(200, 200), Segments = Segment, Tooltip = new Tooltip() { TemplateId = "mouseOverTooltip"} } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Tooltip`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { Constraints=ConnectorConstraints.Default | ConnectorConstraints.Tooltip, Tooltip = { Content = "Connector" } });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1900,13 +1893,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.VerticalAlign`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { VerticalAlign= VerticalAlignment.Bottom})).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Not applicable</b></td>
 </tr>
@@ -1918,31 +1911,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Visible`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { Visible= false })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Visible`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { Visible = true });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1952,31 +1945,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.ZOrder`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { ZOrder = 3 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.ZIndex`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramConnector> connectors = new List<DiagramConnector>();
     connectors.Add(new DiagramConnector() { ZIndex = -1 });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -1986,29 +1979,27 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Connectors(c => c.Add(new Connector() { Constraints=ConnectorConstraints.Default | ConnectorConstraints.Bridging })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Constraints(DiagramConstraints.Default | DiagramConstraints.Bridging).Render()
 
-<code>
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## ContextMenu
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -2024,14 +2015,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
@@ -2042,20 +2033,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ContextMenuSettings(ViewBag.contextMenuSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Text = "delete" });
@@ -2065,7 +2056,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -2076,14 +2067,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
@@ -2094,20 +2085,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items.Text`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ContextMenuSettings(ViewBag.contextMenuSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Text = "delete" });
@@ -2117,7 +2108,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -2128,14 +2119,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
@@ -2146,20 +2137,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items.Id`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ContextMenuSettings(ViewBag.contextMenuSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Id = "id" });
@@ -2169,7 +2160,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -2180,14 +2171,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
@@ -2198,20 +2189,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items.Url`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ContextMenuSettings(ViewBag.contextMenuSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Url = "Images/zoomIn.Png" });
@@ -2221,7 +2212,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the cssClass for the collection of context menu items</b></td>
@@ -2231,14 +2222,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
@@ -2249,20 +2240,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items.IconCss`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ContextMenuSettings(ViewBag.contextMenuSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { IconCss = "e-copy" });
@@ -2272,7 +2263,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the collection of sub items for the context menu items</b></td>
@@ -2282,14 +2273,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     List<ContextMenuItem> SubItems = new List<ContextMenuItem>();
@@ -2302,20 +2293,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items.Items`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ContextMenuSettings(ViewBag.contextMenuSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> SubItems = new List<ContextMenuItem>();
     SubItems.Add(new ContextMenuItem() { Id = "id" });
@@ -2327,7 +2318,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Set whether to display the default context menu items or not</b></td>
@@ -2337,14 +2328,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.ContextMenu = new DiagramContextMenu()
@@ -2353,20 +2344,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.ShowCustomMenuOnly`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ContextMenuSettings(ViewBag.contextMenuSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     LDiagramContextMenuSettings contextMenuSettings = new DiagramContextMenuSettings()
     {
@@ -2374,7 +2365,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -2387,13 +2378,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ContextMenuSettings(ViewBag.contextMenuSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Separator = true });
@@ -2403,7 +2394,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -2416,13 +2407,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ContextMenuSettings(ViewBag.contextMenuSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Target = ".E-diagramcontent" });
@@ -2432,7 +2423,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -2445,13 +2436,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ContextMenuSettings(ViewBag.contextMenuSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Id = "id" });
@@ -2461,13 +2452,12 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## DataSourceSettings
 
-<!-- markdownlint-disable MD033 -->
 
 <table>
 <tr>
@@ -2483,33 +2473,33 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.DataSource = getDatasource();
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`DataSourceSettings.DataManager`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").DataSourceSettings(ViewBag.dataSource).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramDataSource dataSource = new DiagramDataSource()
     {
@@ -2517,7 +2507,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.dataSource = dataSource;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Sets the unique id of the data source items</b></td>
@@ -2527,33 +2517,33 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.Id = "ID";
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`DataSourceSettings.Id`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").DataSourceSettings(ViewBag.dataSource).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramDataSource dataSource = new DiagramDataSource()
     {
@@ -2561,7 +2551,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.dataSource = dataSource;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the parent id of the data source item</b></td>
@@ -2571,33 +2561,33 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.Parent = "ReportingPerson";
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`DataSourceSettings.ParentId`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").DataSourceSettings(ViewBag.dataSource).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramDataSource dataSource = new DiagramDataSource()
     {
@@ -2605,7 +2595,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.dataSource = dataSource;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Describes query to retrieve a set of data from the specified datasource</b></td>
@@ -2615,20 +2605,20 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.Query = "datasource query";
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2641,33 +2631,33 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.Root = "E1";
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`DataSourceSettings.Root`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").DataSourceSettings(ViewBag.dataSource).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramDataSource dataSource = new DiagramDataSource()
     {
@@ -2675,7 +2665,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.dataSource = dataSource;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Describes the name of the table on which the specified query has to be executed</b></td>
@@ -2685,20 +2675,20 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.TableName = "datasource table name";
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2711,20 +2701,20 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.CrudAction = { Read = "http://js.Syncfusion.Com/demos/ejservices/api/Diagram/GetNodes" }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2736,20 +2726,20 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DataSourceSettings.CrudAction.Create`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.CrudAction = { Create = "http://js.Syncfusion.Com/demos/ejservices/api/Diagram/AddNodes" }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2762,20 +2752,20 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.CrudAction = { Update = "http://js.Syncfusion.Com/demos/ejservices/api/Diagram/UpdateNodes" }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2788,20 +2778,20 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.CrudAction = { Destroy = "http://js.Syncfusion.Com/demos/ejservices/api/Diagram/DeleteNodes" }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2814,20 +2804,20 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.CrudAction = { Read = "http://js.Syncfusion.Com/demos/ejservices/api/Diagram/GetNodes" }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2839,14 +2829,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.CustomFields = new List<string>()
@@ -2856,20 +2846,20 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`DataSourceSettings.Data`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").DataSourceSettings(ViewBag.dataSource).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramDataSource dataSource = new DiagramDataSource()
     {
@@ -2881,7 +2871,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.dataSource = dataSource;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the data source either as a collection of objects or as an instance of ej.DataManager</b></td>
@@ -2890,14 +2880,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -2908,7 +2898,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2921,14 +2911,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -2937,7 +2927,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2950,14 +2940,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -2966,7 +2956,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2978,14 +2968,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -2994,7 +2984,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3006,14 +2996,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -3022,7 +3012,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3034,14 +3024,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -3050,7 +3040,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3062,14 +3052,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -3078,7 +3068,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3090,14 +3080,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -3106,7 +3096,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3118,14 +3108,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -3134,7 +3124,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3146,14 +3136,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -3162,7 +3152,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3175,14 +3165,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -3191,7 +3181,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3204,14 +3194,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -3221,7 +3211,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3234,14 +3224,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -3250,7 +3240,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3263,14 +3253,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -3279,7 +3269,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3292,14 +3282,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties).Render();
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DataSourceSettings.ConnectionDataSource = new ConnectionDataSourceSettings()
@@ -3312,7 +3302,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3321,7 +3311,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## DefaultSettings
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3334,25 +3323,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DefaultSettings.Node`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Node defaultNode = new Node() { FillColor = "red" };
         Html.EJ().Diagram("diagram").DefaultSettings(d=>d.Node(defaultNode)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`GetNodeDefaults`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").GetNodeDefaults("getNodeDefaults")
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function getNodeDefaults(obj, diagram) {
         obj.Shape = { type: 'Basic', shape: 'Rectangle', cornerRadius: 10 };
@@ -3362,7 +3351,7 @@ This article describes the API migration process of Diagram component from Essen
         obj.Height = 35;
     }
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -3371,26 +3360,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DefaultSettings.Connector`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Connector defaultConnector = new Connector() { LineColor = "red", LineWidth = 4, LineDashArray = "2,2" };
         Html.EJ().Diagram("diagram").DefaultSettings(d=>d.Connector(defaultConnector)).Render();
     }
 
-</code>
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`GetConnectorDefaults`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").GetConnectorDefaults("getConnectorDefaults").Render()
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function getConnectorDefaults(obj, diagram) {
         obj.Type = 'Bezier';
@@ -3404,7 +3392,7 @@ This article describes the API migration process of Diagram component from Essen
         }
     }
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -3414,20 +3402,20 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Group defaultNode = new Group() { Constraints = NodeConstraints.Default | ~NodeConstraints.Drag };
     Model.DefaultSettings.Group = defaultNode;
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b>
@@ -3437,7 +3425,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## DrawType
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3451,30 +3438,30 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.DrawType = { Type: "node" };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`DrawingObject`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Created("diagramCreated").Render()
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function diagramCreated() {
         diagram = document.GetElementById("diagram").Ej2_instances[0];
@@ -3483,13 +3470,12 @@ This article describes the API migration process of Diagram component from Essen
         diagram.DataBind();
     }
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## EnableAutoScroll
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3502,32 +3488,29 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`EnableAutoScroll`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").EnableAutoScroll(false).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`CanAutoScroll`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ScrollSettings(new DiagramScrollSettings() { CanAutoScroll = true}).Render()
 
-</code>
-<b>[Model]</b>
-<code>
-</code></td>
+{% endhighlight %}
+</td>
 </tr>
 </table>
 
 ## EnableContextMenu
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3540,29 +3523,28 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`EnableContextMenu`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").EnableContextMenu(true).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Show`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ContextMenuSettings(new DiagramContextMenuSettings() { Show = true}).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## GetCustomCursor
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3578,12 +3560,12 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`GetCustomCursor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").GetCustomCursor("getCustomCursor").Render()
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function getCustomCursor(action, active) {
         var cursor;
@@ -3595,13 +3577,12 @@ This article describes the API migration process of Diagram component from Essen
         return cursor;
     }
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## GetCustomProperty
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3617,12 +3598,12 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`GetCustomProperty`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").GetCustomProperty("getCustomProperty").Render()
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function getCustomProperty(key: string) {
         if (key === 'nodes') {
@@ -3631,13 +3612,12 @@ This article describes the API migration process of Diagram component from Essen
         return null;
     }
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## GetDescription
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3653,12 +3633,12 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`GetDescription`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").GetDescription("getAccessibility").Render()
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function getAccessibility(object, diagram) {
         var value;
@@ -3670,13 +3650,12 @@ This article describes the API migration process of Diagram component from Essen
         return value;
     }
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## GetCustomTool
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3692,12 +3671,11 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`GetCustomTool`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Width("1000").Height("645px").GetCustomTool("getTool")
-
-<code>
-</code>
+{% endhighlight %}
+{% highlight html %}
 
     function getTool(action) {
         var tool;
@@ -3714,13 +3692,12 @@ This article describes the API migration process of Diagram component from Essen
         }
     }
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## Height
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3733,30 +3710,28 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Height("500px").Render();
     }
 
-</code>
-<code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Height("645px").Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## HistoryManager
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3769,7 +3744,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.CanPop`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagramcontent").EjDiagram("instance");
@@ -3782,7 +3757,7 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3793,7 +3768,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.CloseGroupAction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var group = diagram.Model.SelectedItems;
@@ -3808,13 +3783,13 @@ This article describes the API migration process of Diagram component from Essen
         diagram.Model.HistoryManager.CloseGroupAction();
     </sccript>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.EndGroupAction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -3827,7 +3802,7 @@ This article describes the API migration process of Diagram component from Essen
         diagram.HistoryList.EndGroupAction();
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>A method that removes the history of a recent change made in diagram</b></td>
@@ -3835,14 +3810,14 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.Pop`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagramcontent").EjDiagram("instance");
         diagram.Model.HistoryManager.Pop();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3853,7 +3828,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.Push`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagramcontent").EjDiagram("instance");
@@ -3863,13 +3838,13 @@ This article describes the API migration process of Diagram component from Essen
         node.employeeData = value;
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.Push`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -3880,7 +3855,7 @@ This article describes the API migration process of Diagram component from Essen
         diagram.DataBind();
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines what should be happened while trying to restore a custom change</b></td>
@@ -3889,13 +3864,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.HistoryManager = new HistoryManager()
@@ -3904,8 +3879,8 @@ This article describes the API migration process of Diagram component from Essen
     }
     ViewData["diagramModel"] = Model;
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function customUndoRedo(args) {
         var diagram = $("#diagramcontent").EjDiagram("instance");
@@ -3915,13 +3890,13 @@ This article describes the API migration process of Diagram component from Essen
         args.PrevState = currentState;
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.Redo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -3942,7 +3917,7 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 <tr>
@@ -3951,20 +3926,20 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.RedoStack`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagramcontent").EjDiagram("instance");
         diagram.Model.HistoryManager.RedoStack();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.RedoStack`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -3972,7 +3947,7 @@ This article describes the API migration process of Diagram component from Essen
         diagram.HistoryList.RedoStack();
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Restricts the undo and redo actions to a certain limit</b></td>
@@ -3980,14 +3955,14 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.StackLimit`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagramcontent").EjDiagram("instance");
         diagram.Model.HistoryManager.StackLimit();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3998,7 +3973,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.StartGroupAction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var group = diagram.Model.SelectedItems
@@ -4012,13 +3987,13 @@ This article describes the API migration process of Diagram component from Essen
         diagram.Model.HistoryManager.CloseGroupAction();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.StartGroupAction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -4031,7 +4006,7 @@ This article describes the API migration process of Diagram component from Essen
         diagram.HistoryList.EndGroupAction();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 <tr>
@@ -4040,14 +4015,14 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.Undo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").HistoryManager(h=>h.Undo("customUndoRedo").Redo("customUndoRedo")).Render();
     }
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function customUndoRedo(args) {
@@ -4059,13 +4034,13 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.Undo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -4081,7 +4056,7 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 </tr>
 <tr>
 <td><b>Gets the number of undo actions to be stored on the history manager. Its an read-only property and the collection should not be modified</b></td>
@@ -4089,27 +4064,27 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.UndoStack`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagramcontent").EjDiagram("instance");
         diagram.Model.HistoryManager.UndoStack();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.UndoStack`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
         diagram.HistoryList.UndoStack();
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Set the current entry object</b></td>
@@ -4120,14 +4095,14 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryList.CurrentEntry`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
         diagram.HistoryList.CurrentEntry();
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Set the history entry can be undo</b></td>
@@ -4138,14 +4113,14 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryList.CanUndo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
         diagram.HistoryList.CanUndo = true;
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Set the history entry can be redo</b></td>
@@ -4156,14 +4131,14 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryList.CanRedo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
         diagram.HistoryList.CanRedo = true;
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Used to decide to stored the changes to history</b></td>
@@ -4171,18 +4146,18 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.CanLog`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     var diagram = $("#diagramcontent").EjDiagram("instance");
     diagram.Model.HistoryManager.CanLog();
 
-</code>
-</td></td>
+{% endhighlight %}
+</td>
 <td>
 <b>Property</b>:<i>`HistoryList.CanLog`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -4192,13 +4167,12 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## Layout
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -4212,26 +4186,26 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.Bounds`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout(l=>l.Bounds(new Rectangle() { X = 10, Y = 10, Width = 100, Height = 100 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.Bounds`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.Bounds("getBounds")).Render();
 
-</code>
+{% endhighlight %}
 <br>
 <br>
-<code>
+{% highlight html %}
     <script>
         function getBounds() {
             var bounds = { X = 10, Y = 10, Width = 100, Height = 100 };
@@ -4239,7 +4213,7 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 
@@ -4249,23 +4223,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.FixedNode`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout(l=>l.FixedNode("nodeName")).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.FixedNode`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.FixedNode("node")).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4274,7 +4248,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.GetLayoutInfo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         function getLayoutInfo(diagram, node, options) {
@@ -4283,25 +4257,25 @@ This article describes the API migration process of Diagram component from Essen
         };
     </script>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout(l=>l.GetLayoutInfo("getLayoutInfo")).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.GetLayoutInfo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.GetLayoutInfo("getLayoutInfo")).Render();
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function getLayoutInfo(node, options) {
@@ -4315,7 +4289,7 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 
@@ -4325,23 +4299,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.GetConnectorSegments`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout(l=>l.GetConnectorSegments("getConnectorSegments")).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.ConnectorSegments`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.ConnectorSegments(ConnectorSegments.Default)).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4350,23 +4324,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.HorizontalSpacing`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout(l=>l.HorizontalSpacing(50)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.HorizontalSpacing`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.HorizontalSpacing(50)).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4375,23 +4349,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout(l=>l.Margin(new Margin() { Left = 20, Right = 20, Top = 20, Bottom = 20 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.Margin(m=> m.Top(50).Bottom(0).Left(50).Right(0))).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4400,25 +4374,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout(l=>l.HorizontalAlignment(HorizontalAlignment.Center)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.HorizontalAlignment(HorizontalAlignment.Center)).Render();
 
-</code>
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4427,23 +4399,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.VerticalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout(l=>l.VerticalAlignment(VerticalAlignment.Center)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.VerticalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.VerticalAlignment(VerticalAlignment.Top)).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4452,23 +4424,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.Orientation`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout(l=>l.Orientation(LeftToRight)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.Orientation`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.Orientation(LayoutOrientation.TopToBottom)).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4477,23 +4449,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout(l=>l.Type(LayoutTypes.HierarchicalTree)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.Type(LayoutType.OrganizationalChart)).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4502,23 +4474,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.VerticalSpacing`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout(l=>l.VerticalSpacing(50)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.VerticalSpacing`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.VerticalSpacing(50)).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4528,29 +4500,29 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.Layout.Root = "nodeName";
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.Root`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.Root("nodeName")).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4560,29 +4532,29 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.Layout.SpringFactor = .4F;
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.SpringFactor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.SpringFactor(0.8)).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4592,29 +4564,29 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.Layout.MaxIteration = 50;
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.MaxIteration`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.MaxIteration(500)).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4624,29 +4596,29 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties)
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.Layout.SpringLength = 50;
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.SpringLength`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.SpringLength(80)).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4657,11 +4629,11 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.ConnectionDirection`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.ConnectionDirection(ConnectionDirection.Auto)).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4672,11 +4644,11 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.EnableAnimation`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.EnableAnimation(true)).Render();
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4687,24 +4659,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.GetBranch`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(l => l.GetBranch("getBranch")).Render();
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function getBranch(node, nodes) {
         return node.Data.Branch;
     }
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## Nodes
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -4718,32 +4689,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Name = "node1" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Id = "nodeName" });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4752,32 +4723,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Activity`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Activity = BPMNActivity.SubProcess })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Id = "nodeName", shape: { type =  'Bpmn', shape =  'Activity', activity = { activity = "Task" } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4786,7 +4757,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.AddInfo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Dictionary<string, object> AddInfo = new Dictionary<string, object>();
@@ -4794,7 +4765,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { AddInfo = AddInfo })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -4802,13 +4773,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Dictionary<string, object> AddInfo = new Dictionary<string, object>();
     AddInfo.Add("Description", "Bidirectional Flow");
@@ -4816,7 +4787,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { AddInfo = AddInfo });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4825,26 +4796,26 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new BPMNNode() { Annotation = new BPMNAnnotation(){ Text= "Text" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Annotations`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> Node = new List<DiagramNodeAnnotation>();
     Node.Add(new DiagramNodeAnnotation() { Content = "Place Order" } });
@@ -4852,7 +4823,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = Node});
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4861,26 +4832,26 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Angle`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Annotation = new BPMNAnnotation(){ Angle=-45 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Annotations.Angle`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramBpmnAnnotation> Node = new List<DiagramBpmnAnnotation>();
     Node.Add(new DiagramBpmnAnnotation() { Angle = -45 });
@@ -4888,7 +4859,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = Node});
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4897,13 +4868,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Direction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Annotation = new BPMNAnnotation(){Direction=BPMNAnnotationDirections.Left } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -4915,23 +4886,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Annotation = new BPMNAnnotation(){ Height=50 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramBpmnAnnotation> Node = new List<DiagramBpmnAnnotation>();
     Node.Add(new DiagramBpmnAnnotation() { Height = 50 });
@@ -4939,7 +4910,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = Node});
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4948,26 +4919,26 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Length`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Annotation = new BPMNAnnotation(){ Length=150 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Annotations.Length`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramBpmnAnnotation> Node = new List<DiagramBpmnAnnotation>();
     Node.Add(new DiagramBpmnAnnotation() { Length = 150 });
@@ -4975,7 +4946,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = Node});
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4984,26 +4955,26 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Text`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Annotation = new BPMNAnnotation(){ Text= "Text" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Annotations.Text`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramBpmnAnnotation> Node = new List<DiagramBpmnAnnotation>();
     Node.Add(new DiagramBpmnAnnotation() { Text= "Text" });
@@ -5011,7 +4982,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = Node});
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5020,26 +4991,26 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Width`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Annotation = new BPMNAnnotation(){ Width=100 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Annotations.Width`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramBpmnAnnotation> Node = new List<DiagramBpmnAnnotation>();
     Node.Add(new DiagramBpmnAnnotation() { Width = 100 });
@@ -5047,7 +5018,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = Node});
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5060,13 +5031,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramBpmnAnnotation> Node = new List<DiagramBpmnAnnotation>();
     Node.Add(new DiagramBpmnAnnotation() { Id = "id" });
@@ -5074,7 +5045,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = Node});
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5084,13 +5055,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Node node1 = new Node() { Name = "node1"};
@@ -5101,7 +5072,7 @@ This article describes the API migration process of Diagram component from Essen
     group.CanUngroup = false;
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b>
@@ -5115,13 +5086,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Node node1 = new Node() { Name = "node1"};
@@ -5131,7 +5102,7 @@ This article describes the API migration process of Diagram component from Essen
     group.Children.Add(node2);
     ViewData["diagramModel"] = Model;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5140,13 +5111,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Classifier`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new UMLClassifier() { Classifier=ClassifierShapes.Class } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5158,13 +5129,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n=>n.Add(new UMLClassifier() { Classifier = ClassifierShapes.Class, Class = { Name = "name" } } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5176,13 +5147,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Name = "name"} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5193,7 +5164,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Attributes`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection attribute = new Collection();
@@ -5201,7 +5172,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Attributes= attribute} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5212,7 +5183,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Attributes.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection attribute = new Collection();
@@ -5220,7 +5191,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Attributes= attribute} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5231,7 +5202,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Attributes.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection attribute = new Collection();
@@ -5239,7 +5210,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Attributes= attribute} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5250,7 +5221,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Attributes.Scope`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection attribute = new Collection();
@@ -5258,7 +5229,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Attributes= attribute} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5269,7 +5240,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Methods`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection methods = new Collection();
@@ -5277,7 +5248,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Methods = methods} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5288,7 +5259,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Methods.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection methods = new Collection();
@@ -5296,7 +5267,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Methods = methods} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5307,7 +5278,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Methods.Arguments`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection parameter = new Collection();
@@ -5317,7 +5288,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Methods = methods} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5328,7 +5299,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Methods.Arguments.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection parameter = new Collection();
@@ -5338,7 +5309,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Methods = methods} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5349,7 +5320,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Methods.Arguments.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection parameter = new Collection();
@@ -5359,7 +5330,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Methods = methods} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5370,7 +5341,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Methods.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection methods = new Collection();
@@ -5378,7 +5349,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Methods = methods} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5389,7 +5360,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Methods.Scope`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection methods = new Collection();
@@ -5397,7 +5368,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram.Nodes(n => n.Add(new UMLClassifier() {Classifier=ClassifierShapes.Class, Class= { Methods = methods} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5409,32 +5380,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { CollapseIcon = { Shape=IconShapes.ArrowUp, } } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { CollapseIcon = { Shape = IconShapes.ArrowUp} });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5443,32 +5414,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.BorderColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { CollapseIcon = { BorderColor= "red"} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.BorderColor`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { CollapseIcon = { BorderColor = "red" } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5477,32 +5448,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.BorderWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { CollapseIcon = { BorderWidth=2 } } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.BorderWidth`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { CollapseIcon = { BorderWidth = 2 } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5511,32 +5482,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.FillColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { CollapseIcon = { FillColor="green" } } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.Fill`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { CollapseIcon = { Fill = "red" } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5545,32 +5516,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { CollapseIcon = { Height = 10 } } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.Height`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { CollapseIcon = { Height = 10 } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5579,32 +5550,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { CollapseIcon = { HorizontalAlignment = HorizontalAlignment.Left} } )).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.HorizontalAlignment`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { CollapseIcon = { HorizontalAlignment = HorizontalAlignment.Left } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5613,32 +5584,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() {  CollapseIcon = {  Margin = new Margin() { Left = 5 } } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.Margin`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { CollapseIcon = { Margin = new DiagramMargin() { Left = 5} } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5647,32 +5618,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.Offset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { CollapseIcon = {Offset=new DiagramPoint() { X= 0, Y= 0.5F } } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.Offset`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { CollapseIcon = { Offset = { X = 0, Y = 0.5 } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5681,33 +5652,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.Shape`</i>
 <br>
 <br>
-<code>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { CollapseIcon = { Shape = IconShapes.ArrowUp } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.Shape`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { CollapseIcon = { Shape = IconShapes.ArrowUp } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5716,32 +5686,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.VerticalAlignment `</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { CollapseIcon = { VerticalAlignment= VerticalAlignment.Top } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.VerticalAlignment `</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { CollapseIcon = { VerticalAlignment= VerticalAlignment.Top } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5754,13 +5724,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() {
@@ -5782,7 +5752,7 @@ This article describes the API migration process of Diagram component from Essen
     });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5795,13 +5765,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() {
@@ -5809,7 +5779,7 @@ This article describes the API migration process of Diagram component from Essen
     });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5822,13 +5792,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() {
@@ -5836,7 +5806,7 @@ This article describes the API migration process of Diagram component from Essen
     });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5849,13 +5819,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() {
@@ -5863,7 +5833,7 @@ This article describes the API migration process of Diagram component from Essen
     });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5872,13 +5842,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.ConnectorPadding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { ConnectorPadding = 5 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5890,13 +5860,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Constraints = NodeConstraints.Default })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -5904,13 +5874,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() {
@@ -5918,7 +5888,7 @@ This article describes the API migration process of Diagram component from Essen
     });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -5928,13 +5898,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Node node1 = new Node() { Name = "node1"};
@@ -5945,7 +5915,7 @@ This article describes the API migration process of Diagram component from Essen
     group.Container = new Container() { Orientation = "Horizontal" };
     ViewData["diagramModel"] = Model;
 
-</code></td>
+{% endhighlight %}</td>
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5958,13 +5928,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Node node1 = new Node() { Name = "node1"};
@@ -5975,7 +5945,7 @@ This article describes the API migration process of Diagram component from Essen
     group.Container = new Container() { Orientation = "Horizontal" };
     ViewData["diagramModel"] = Model;
 
-</code></td>
+{% endhighlight %}</td>
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5987,13 +5957,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CornerRadius`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new BasicShape() { CornerRadius=5 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6005,13 +5975,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CssClass`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { CssClass= "hoverNode" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6023,32 +5993,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Data.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Shape = BPMNShapes.DataObject, Data = new BPMNDataObject(){ Type = BPMNDataObjects.Input } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.DataObject.Type`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Shape = new BpmnShapes() { Type = "BPMN", Shape = "DataObject", dataObject = new DiagramBpmnDataObject() { Type = BpmnDataObjects.Input} } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6057,32 +6027,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Data.Collection`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Shape = BPMNShapes.DataObject, Data = new BPMNDataObject(){ Collection = false } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.DataObject.Collection`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Shape = new BpmnShapes() { Type = "BPMN", Shape = "DataObject", dataObject = new DiagramBpmnDataObject() { Collection = false } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6091,13 +6061,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Enumeration`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new UMLClassifier() { Classifier = ClassifierShapes.Enumeration, Enumeration = { Name = "AccountType" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6109,13 +6079,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Enumeration.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new UMLClassifier() { Classifier = ClassifierShapes.Enumeration, Enumeration={ Name = "AccountType" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6127,7 +6097,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Enumeration.Members`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection member = new Collection();
@@ -6135,7 +6105,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new UMLClassifier() { Classifier = ClassifierShapes.Enumeration, Enumeration = new UMLEnumeration() { Members = member } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6147,7 +6117,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Enumeration.Members.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection member = new Collection();
@@ -6155,7 +6125,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new UMLClassifier() { Classifier = ClassifierShapes.Enumeration, Enumeration = new UMLEnumeration() { Members = member } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6167,32 +6137,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Event`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Shape=BPMNShapes.Event, Event=BPMNEvents.Intermediate })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Event`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Shape = new BpmnShapes() { Type = "Bpmn", Shape = "Event", Event = { Event = BpmnEvents.Start } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6201,32 +6171,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Event.Trigger`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Shape = BPMNShapes.Event, Trigger = BPMNTriggers.None })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Event.Trigger`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Shape = new BpmnShapes() { Type = "Bpmn", Shape = "Event", Event = { Trigger = BpmnTriggers.None } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6235,13 +6205,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.ExcludeFromLayout`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Layout( l=>l.Type(LayoutTypes.HierarchicalTree)).Nodes(n => n.Add(new Node() { Name = "Patient"ExcludeFromLayout=true }).Add(new Node() { Name = "Patient1" }).Add(new Node() { Name = "Patient2" })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6249,13 +6219,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layout(new DiagramLayout() { Type = LayoutType.HierarchicalTree}).Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Id = "Patient", ExcludeFromLayout= true } } });
@@ -6263,7 +6233,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Id = "Patient2" } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6272,13 +6242,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.FillColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Height("500px").Width("500px").Nodes(n => n.Add(new Node() { FillColor="red" })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6286,19 +6256,19 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Style = new DiagramShapeStyle { Fill = "red" } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6307,32 +6277,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gateway`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Shape=BPMNShapes.Gateway, Gateway=BPMNGateways.Exclusive })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Gateway`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Shape = new BpmnShapes() { Type = "Bpmn", Shape = "Gateways", gateWay = { Type = BpmnGateways.Exclusive } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6341,13 +6311,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Gradient= new LinearGradient() { Type = "linear" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6355,19 +6325,19 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Style = new DiagramShapeStyle { Gradient = new DiagramGradient() { Type = GradientType.Linear } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6377,13 +6347,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.LinearGradient.X1`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() {  Gradient= new LinearGradient() { Type = "linear", X1 = 0 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6400,13 +6370,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.LinearGradient.X2`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() {  Gradient= new LinearGradient() { Type = "linear", X2 = 50 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6423,13 +6393,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.LinearGradient.Y1`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() {  Gradient= new LinearGradient() { Type = "linear", Y1 = 0 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6446,13 +6416,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.LinearGradient.Y2`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Gradient= new LinearGradient() { Type = "linear",  Y2 = 50 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6468,13 +6438,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.RadialGradient.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() {  Gradient= new RadialGradient() { Type = "radial" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6482,19 +6452,19 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Style = new DiagramShapeStyle { Gradient = new DiagramGradient() { Type = GradientType.Radial } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6504,13 +6474,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.RadialGradient.Cx`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() {  Gradient= new RadialGradient() { Type = "radial", CX=50 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6526,13 +6496,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.RadialGradient.Cy`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() {  Gradient= new RadialGradient() { Type = "radial", CY=50 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6548,13 +6518,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.RadialGradient.Fx`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Gradient= new RadialGradient() { Type = "radial", FX=50 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6570,13 +6540,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.RadialGradient.Fy`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Gradient= new RadialGradient() { Type = "radial", FY=50 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6592,7 +6562,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.RadialGradient.Stops`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection stops = new Collection();
@@ -6601,7 +6571,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Gradient= new RadialGradient() { Stops = stops } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6609,13 +6579,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramStop> stops = new List<DiagramStop>();
     stops.Add(new DiagramStop() { Color = "white", Offset = 0 });
@@ -6624,7 +6594,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Style = new DiagramShapeStyle { Gradient = new DiagramGradient() { Stops = stops } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6633,7 +6603,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.Stops.Color`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection stops = new Collection();
@@ -6641,7 +6611,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Gradient= new RadialGradient() { Stops = stops } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6649,13 +6619,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramStop> stops = new List<DiagramStop>();
     stops.Add(new DiagramStop() { Color = "white" });
@@ -6663,7 +6633,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Style = new DiagramShapeStyle { Gradient = new DiagramGradient() { Stops = stops } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6672,7 +6642,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.Stops.Offset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection stops = new Collection();
@@ -6680,7 +6650,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Gradient= new RadialGradient() { Stops = stops } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6688,13 +6658,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramStop> stops = new List<DiagramStop>();
     stops.Add(new DiagramStop() { Offset = 0 });
@@ -6702,7 +6672,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Style = new DiagramShapeStyle { Gradient = new DiagramGradient() { Stops = stops } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6711,7 +6681,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.Stops.Opacity`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection stops = new Collection();
@@ -6719,7 +6689,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Gradient= new RadialGradient() { Stops = stops } })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6727,13 +6697,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramStop> stops = new List<DiagramStop>();
     stops.Add(new DiagramStop() { Opacity = 0.5 });
@@ -6741,7 +6711,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Style = new DiagramShapeStyle { Gradient = new DiagramGradient() { Stops = stops } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6751,13 +6721,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     SwimLane swimLane = new SwimLane();
@@ -6767,7 +6737,7 @@ This article describes the API migration process of Diagram component from Essen
     Model.Nodes.Add(swimLane);
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6779,32 +6749,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Height=100 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Height`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Height = 100 });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -6813,13 +6783,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.HorizontalAlign`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { HorizontalAlign=HorizontalAlignment.Left })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6831,13 +6801,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new UMLClassifier() { Classifier = ClassifierShapes.Interface,  } } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6849,13 +6819,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Name = "Patient" } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6867,7 +6837,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Attributes`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection attribute = new Collection();
@@ -6875,7 +6845,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Attributes = attribute } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6886,7 +6856,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Attributes.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection attribute = new Collection();
@@ -6894,7 +6864,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Attributes = attribute } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6905,7 +6875,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Attributes.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection attribute = new Collection();
@@ -6913,7 +6883,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Attributes = attribute } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6924,7 +6894,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Attributes.Scope`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection attribute = new Collection();
@@ -6932,7 +6902,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Attributes = attribute } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6943,7 +6913,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Methods`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection methods = new Collection();
@@ -6951,7 +6921,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Attributes = attribute } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6962,7 +6932,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Methods.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection methods = new Collection();
@@ -6970,7 +6940,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Attributes = attribute } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6981,7 +6951,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Methods.Arguments`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection parameter = new Collection();
@@ -6991,7 +6961,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Attributes = attribute } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7002,7 +6972,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Methods.Arguments.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection parameter = new Collection();
@@ -7012,7 +6982,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Attributes = attribute } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7023,7 +6993,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Methods.Arguments.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection parameter = new Collection();
@@ -7033,7 +7003,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Attributes = attribute } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7044,7 +7014,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Methods.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection methods = new Collection();
@@ -7052,7 +7022,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Attributes = attribute } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7063,7 +7033,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Methods.Scope`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection methods = new Collection();
@@ -7071,7 +7041,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram")Nodes(n => n.Add(new UMLClassifier() { Classifier = Interface, Interface = { Attributes = attribute } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7082,13 +7052,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.IsExpanded`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { IsExpanded=false })).Render();
     }
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -7096,19 +7066,19 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { IsExpanded = false });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7118,13 +7088,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     SwimLane swimLane = new SwimLane();
@@ -7132,7 +7102,7 @@ This article describes the API migration process of Diagram component from Essen
     Model.Nodes.Add(swimLane);
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7143,7 +7113,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Labels`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -7151,20 +7121,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Height("500px").Width("500px").Nodes(n => n.Add(new Node() { Name = "Patient", OffsetX = 100, OffsetY = 100, Labels=Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Annotations`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Content = "Annotation" });
@@ -7172,7 +7142,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7182,13 +7152,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Collection lanes = new Collection();
@@ -7199,7 +7169,7 @@ This article describes the API migration process of Diagram component from Essen
     Model.Nodes.Add(swimLane);
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7212,13 +7182,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Collection lanes = new Collection();
@@ -7228,7 +7198,7 @@ This article describes the API migration process of Diagram component from Essen
     Model.Nodes.Add(swimLane);
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7241,13 +7211,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection lanes = new Collection();
     Header header = new Header();
@@ -7258,7 +7228,7 @@ This article describes the API migration process of Diagram component from Essen
     swimLane.IsSwimlane = true;
     Model.Nodes.Add(swimLane);
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7271,13 +7241,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection lanes = new Collection();
     lanes.Add(new Lane() { Width = 200 });
@@ -7286,7 +7256,7 @@ This article describes the API migration process of Diagram component from Essen
     swimLane.IsSwimlane = true;
     Model.Nodes.Add(swimLane);
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7299,13 +7269,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection lanes = new Collection();
     Collection children = new Collection();
@@ -7316,7 +7286,7 @@ This article describes the API migration process of Diagram component from Essen
     swimLane.IsSwimlane = true;
     Model.Nodes.Add(swimLane);
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7329,13 +7299,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection lanes = new Collection();
     lanes.Add(new Lane() {  IsLane = true });
@@ -7343,7 +7313,7 @@ This article describes the API migration process of Diagram component from Essen
     swimLane.Lanes = lanes;
     Model.Nodes.Add(swimLane);
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7355,32 +7325,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() {  MarginBottom=50, MarginLeft=10, MarginRight=10, MarginTop=10 })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Margin`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Margin = new DiagramMargin() { Bottom = 15, Left = 15, Right = 15, Up = 15 }  });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7389,32 +7359,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.MaxHeight`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() {MaxHeight=100})).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.MaxHeight`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { MaxHeight = 50  });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7423,32 +7393,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Name = "Patient" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Id`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { ID = "Name"  });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7457,32 +7427,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.PathData`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Height("500px").Width("500px").Nodes(n => n.Add(new BasicShape() { Shape = BasicShapes.Path, PathData= "M 370.9702,194.9961 L 359.5112,159.7291 L 389.5112,137.9341 L 419.5112,159.7291 L 408.0522,194.9961 L 370.9702,194.9961 z" })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Data`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Shape = new DiagramBasicShape() { Type = Shapes.Path  } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7493,13 +7463,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection phase = new Collection();
     phase.Add(new Phase() { Name = "Phase1" });
@@ -7507,7 +7477,7 @@ This article describes the API migration process of Diagram component from Essen
     swimLane.Phases = phase;
     Model.Nodes.Add(swimLane);
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7520,13 +7490,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection label = new Collection();
     label.Add(new Label() { Text = "Phase1" });
@@ -7536,7 +7506,7 @@ This article describes the API migration process of Diagram component from Essen
     swimLane.Phases = phase;
     Model.Nodes.Add(swimLane);
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7549,13 +7519,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection phase = new Collection();
     phase.Add(new Phase() { LineColor = "green" });
@@ -7563,7 +7533,7 @@ This article describes the API migration process of Diagram component from Essen
     swimLane.Phases = phase;
     Model.Nodes.Add(swimLane);
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7576,13 +7546,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection phase = new Collection();
     phase.Add(new Phase() { Offset = "150" });
@@ -7590,7 +7560,7 @@ This article describes the API migration process of Diagram component from Essen
     swimLane.Phases = phase;
     Model.Nodes.Add(swimLane);
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7603,13 +7573,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection phase = new Collection();
     phase.Add(new Phase() { Orientation = "Horizontal" });
@@ -7617,7 +7587,7 @@ This article describes the API migration process of Diagram component from Essen
     swimLane.Phases = phase;
     Model.Nodes.Add(swimLane);
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7629,13 +7599,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection phase = new Collection();
     phase.Add(new Phase() { Orientation = "Horizontal" });
@@ -7643,7 +7613,7 @@ This article describes the API migration process of Diagram component from Essen
     swimLane.PhaseSize = "50";
     Model.Nodes.Add(swimLane);
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7654,32 +7624,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Pivot`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Pivot = new DiagramPoint() { X=0, Y=0 } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Pivot`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Pivot = new DiagramPoint() { X = 0, Y = 0} });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7688,7 +7658,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Points`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection point = new Collection();
@@ -7701,20 +7671,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Height("500px").Width("500px").Nodes(n => n.Add(new BasicShape() { Name = "Patient", OffsetX = 100, OffsetY = 100, Shape=Syncfusion.JavaScript.DataVisualization.DiagramEnums.BasicShapes.Polygon, Points= point })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Points`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramPoint> points = new List<DiagramPoint>();
     points.Add(new DiagramPoint() { X = 35, Y = 0 });
@@ -7729,7 +7699,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Shape = new DiagramBasicShape() { Type = Basic, Shape = BasicShapes.Polygon, Points = points  } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7738,7 +7708,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Ports`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection ports = new Collection();
@@ -7746,20 +7716,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Ports=ports })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Ports`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramPort> ports = new List<DiagramPort>();
     ports.Add(new DiagramPort() { Id = "port" });
@@ -7767,7 +7737,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Ports = ports });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7776,7 +7746,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Ports.BorderColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection ports = new Collection();
@@ -7784,20 +7754,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Ports=ports })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Ports.Style.StrokeColor`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramPort> ports = new List<DiagramPort>();
     ports.Add(new DiagramPort() {  });
@@ -7805,9 +7775,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Ports = ports });
     ViewBag.Nodes = nodes;
 
-</code></td>
-<code>
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7816,7 +7784,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Ports.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection ports = new Collection();
@@ -7824,20 +7792,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Ports=ports })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Ports.Constraints`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramPort> ports = new List<DiagramPort>();
     ports.Add(new DiagramPort() { Constraints = PortConstraints.Drag });
@@ -7845,7 +7813,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Ports = ports });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7854,7 +7822,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Ports.Shape`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection ports = new Collection();
@@ -7862,20 +7830,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Ports=ports })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Ports.Shape`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramPort> ports = new List<DiagramPort>();
     ports.Add(new DiagramPort() { Shape = PortShapes.Circle });
@@ -7883,7 +7851,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Ports = ports });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7896,13 +7864,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramPort> ports = new List<DiagramPort>();
     ports.Add(new DiagramPort() { VerticalAlignment = VerticalAlignment.Top });
@@ -7910,7 +7878,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Ports = ports });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7919,32 +7887,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Shadow`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() {  Shadow=new Shadow() { Opacity=0.5F } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shadow`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Shadow = new DiagramShadow() { Opacity = 0.5 } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7953,32 +7921,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.SubProcess`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() {  Shape=BPMNShapes.Activity, Activity=BPMNActivity.SubProcess, SubProcess = { Loop=BPMNLoops.Standard, Adhoc=true } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity.SubProcess`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Shape = new BpmnShapes() { Type = "Bpmn", Shape = "Activity", Activity = { Activity = BpmnActivities.SubProcess} } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -7987,7 +7955,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.SubProcess.Events`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection events = new Collection();
@@ -7995,20 +7963,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() {  Shape = BPMNShapes.Activity, Activity = BPMNActivity.SubProcess, SubProcess = { Type = BPMNSubProcessTypes.Event, Events=events } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity.SubProcess.Events`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramBpmnSubEvent> events = new List<DiagramBpmnSubEvent>();
     events.Add(new DiagramBpmnSubEvent() { Event = BpmnEvents.Intermediate });
@@ -8016,7 +7984,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Shape = new BpmnShapes() { Type = "Bpmn", Shape = "Activity", Activity = { Activity = BpmnActivities.SubProcess, SubProcess = { Type = BpmnSubProcessTypes.Event, Events = events }  } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8025,7 +7993,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.SubProcess.Events.Ports`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection ports = new Collection();
@@ -8035,20 +8003,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() {  Shape = BPMNShapes.Activity, Activity = BPMNActivity.SubProcess, SubProcess = { Type = BPMNSubProcessTypes.Event, Events=events } })).Render();
     }
 
-<code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity.SubProcess.Events.Ports`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramPort> ports = new List<DiagramPort>();
     ports.Add(new DiagramPort() { Id = "port"};
@@ -8058,7 +8026,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Shape = new BpmnShapes() { Type = "Bpmn", Shape = "Activity", Activity = { Activity = BpmnActivities.SubProcess, SubProcess = { Type = BpmnSubProcessTypes.Event, Events = events }  } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8067,7 +8035,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.SubProcess.Events.Labels`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8077,20 +8045,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() {  Shape = BPMNShapes.Activity, Activity = BPMNActivity.SubProcess, SubProcess = { Type = BPMNSubProcessTypes.Event, Events=events } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity.SubProcess.Events.Annotations`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Content = "Annotation" });
@@ -8100,7 +8068,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Shape = new BpmnShapes() { Type = "Bpmn", Shape = "Activity", Activity = { Activity = BpmnActivities.SubProcess, SubProcess = { Type = BpmnSubProcessTypes.Event, Events = events }  } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8109,38 +8077,37 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Task`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new BPMNNode() { Shape = BPMNShapes.Activity, Activity = BPMNActivity.Task, Task = { Type=BPMNTasks.Service } })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity.Task`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNode> nodes = new List<DiagramNode>();
     nodes.Add(new DiagramNode() { Shape = new BpmnShapes() { Type = "Bpmn", Shape = "Activity", Activity = BpmnActivities.Task, Task = { Type = BpmnTasks.Service } }  } } });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## NodeTemplate
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -8154,15 +8121,15 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`NodeTemplate`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
         Labels.Add(new Label() { Text = "Label" });
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
 
@@ -8176,19 +8143,19 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property</b>:<i>`SetNodeTemplate`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").SetNodeTemplate("setNodeTemplate").Render()
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         var getTextElement = (text: string) => {
@@ -8219,13 +8186,12 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## Layers
 
-<!-- markdownlint-disable MD033 -->
  <table>
 <tr>
 <td><b>behavior</b></td>
@@ -8240,37 +8206,37 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Model.Layers = new Collection();
     Model.Layers.Add(new Layer() { Name = "Layer1" });
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layers`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Layers(ViewBag.Layers).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramLayer> layers = new List<DiagramLayer>();
     layers.Add(new DiagramLayer() { Id = "layer" });
     ViewBag.Layers = layers;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8281,18 +8247,18 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("Diagram1", ViewData["diagramModel "] as DiagramProperties).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Model.Layers = new Collection();
     Model.Layers.Add(new Layer() { Print = true });
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -8301,7 +8267,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## Annotations
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -8315,7 +8280,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Text`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8323,20 +8288,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Content`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Content = "Annotation" });
@@ -8344,7 +8309,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8353,7 +8318,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Offset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8361,20 +8326,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Offset`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Offset=new DiagramPoint() { X = 0, Y = 1 } });
@@ -8382,7 +8347,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8391,7 +8356,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.HyperLink`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8399,20 +8364,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Hyperlink`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() {Content = "HRPortal", Hyperlink = "https://www.Syncfusion.Com" });
@@ -8420,7 +8385,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8429,7 +8394,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Bold`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8437,20 +8402,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.Bold`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Style = new DiagramTextStyle() { Bold = true } });
@@ -8458,7 +8423,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8467,7 +8432,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.BorderColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8475,20 +8440,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.StrokeColor`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Style = new DiagramTextStyle() { StrokeColor = "red" } });
@@ -8496,7 +8461,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8505,7 +8470,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.BorderWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8513,20 +8478,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.StrokeWidth`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Style = new DiagramTextStyle() { StrokeWidth=2 } });
@@ -8534,7 +8499,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8543,7 +8508,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.CssClass`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8551,7 +8516,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b>
@@ -8564,7 +8529,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8572,20 +8537,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Constraints`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Constraints = AnnotationConstraints.InheritReadOnly });
@@ -8593,7 +8558,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8602,7 +8567,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.FillColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8610,20 +8575,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.Fill`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Style = new DiagramTextStyle() { Fill = "white" } });
@@ -8631,7 +8596,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8640,7 +8605,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.FontColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8648,20 +8613,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.Color`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Style = new DiagramTextStyle() { Color = "black" } });
@@ -8669,7 +8634,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8678,7 +8643,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.FontFamily`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8686,20 +8651,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.FontFamily`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Style = new DiagramTextStyle() { FontFamily = "segoe UI" } });
@@ -8707,7 +8672,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8716,7 +8681,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8724,20 +8689,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Height`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Height = 10 });
@@ -8745,7 +8710,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8754,7 +8719,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8762,20 +8727,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.HorizontalAlignment`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { HorizontalAlignment = HorizontalAlignment.Center });
@@ -8783,7 +8748,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8792,7 +8757,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8800,20 +8765,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Margin`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Margin = new DiagramMargin() { Bottom = 15 } });
@@ -8821,7 +8786,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8830,7 +8795,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.ReadOnly`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8838,20 +8803,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Constraints`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Constraints = AnnotationConstraints.ReadOnly });
@@ -8859,7 +8824,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8868,7 +8833,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.TemplateId`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script id="SvgEllipse" type="text/x-jsrender">
             <svg xmlns="http://www.w3.Org/2000/svg"
@@ -8878,8 +8843,8 @@ This article describes the API migration process of Diagram component from Essen
             </svg>
     </script>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8887,7 +8852,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -8899,7 +8864,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.TextAlign`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8907,20 +8872,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.TextAlign`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Style = new DiagramTextStyle() { TextAlign = TextAlign.Left } });
@@ -8928,7 +8893,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8937,7 +8902,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Visible`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8945,20 +8910,20 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Visibility`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Nodes(ViewBag.Nodes).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramNodeAnnotation> annotation = new List<DiagramNodeAnnotation>();
     annotation.Add(new DiagramNodeAnnotation() { Visibility = false });
@@ -8966,7 +8931,7 @@ This article describes the API migration process of Diagram component from Essen
     nodes.Add(new DiagramNode() { Annotations = annotation });
     ViewBag.Nodes = nodes;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -8975,7 +8940,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Mode`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Collection Labels = new Collection();
@@ -8983,7 +8948,7 @@ This article describes the API migration process of Diagram component from Essen
         Html.EJ().Diagram("diagram").Nodes(n => n.Add(new Node() { Labels = Labels })).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -8992,7 +8957,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## PageSettings
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9006,13 +8970,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`PageSettings.AutoScrollBorder`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").PageSettings(p=>p.AutoScrollBorder(new AutoScrollBorder() { Left=50, Top=50, Bottom=50, Right=50})).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -9024,23 +8988,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`PageSettings.MultiplePage`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").PageSettings(p=>p.MultiplePage(false)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`PageSettings.MultiplePage`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").PageSettings(new DiagramPageSettings() { MultiplePage= true  }).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9049,23 +9013,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`PageSettings.PageBackgroundColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").PageSettings(p=>p.PageBackground("Grey")).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`PageSettings.Background.Color`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").PageSettings(new DiagramPageSettings() { Background = new DiagramBackground() {Color="red" }  }).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9074,24 +9038,24 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`PageSettings.ScrollableArea`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").PageSettings(p=>p.ScrollableArea(new ScrollableArea() { Height=300, Width=300, X=0, Y= 0})).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ScrollSettings.ScrollableArea`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ScrollSettings(new DiagramScrollSettings() { ScrollableArea = "getScrollableArea" }).Render()
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function getScrollableArea() {
@@ -9100,7 +9064,7 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9111,14 +9075,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.PageSettings = new PageSettings()
@@ -9127,22 +9091,21 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 <td>
 <b>Property</b>:<i>`PageSettings.BoundaryConstraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").PageSettings(new DiagramPageSettings() { BoundaryConstraints= BoundaryConstraints.Diagram  }).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## ScrollSettings
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9158,14 +9121,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.ScrollSettings = new ScrollSettings()
@@ -9174,17 +9137,17 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ScrollSettings.HorizontalOffset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ScrollSettings(new DiagramScrollSettings() { HorizontalOffset = 300 }).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9195,14 +9158,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.ScrollSettings = new ScrollSettings()
@@ -9211,7 +9174,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -9225,11 +9188,11 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ScrollSettings.MaxZoom`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ScrollSettings(new DiagramScrollSettings() { MaxZoom = 2.5  }).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
  <tr>
@@ -9240,11 +9203,11 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ScrollSettings.AutoScrollBorder`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ScrollSettings(new DiagramScrollSettings() { MaxZoom = 2.5  }).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9255,11 +9218,11 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ScrollSettings.CanAutoScroll`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ScrollSettings(new DiagramScrollSettings() { CanAutoScroll = true }).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9270,12 +9233,12 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ScrollSettings.ScrollableArea`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").ScrollSettings(new DiagramScrollSettings() { ScrollableArea = "getScrollableArea" }).Render()
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function getScrollableArea() {
@@ -9284,13 +9247,12 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## SnapSettings
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9304,13 +9266,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SnapSettings.EnableSnapToObject`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").SnapSettings(s=>s.EnableSnapToObject(true)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -9322,27 +9284,27 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SnapSettings.HorizontalGridLines`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         decimal lineInterval = { 1, 14, 0.5F, 14.5F};
         Html.EJ().Diagram("diagram").SnapSettings(s=>s.HorizontalGridLines(h=>h.LinesInterval(lineInterval))).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SnapSettings.HorizontalGridlines`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").SnapSettings(ViewBag.SnapSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     double[] intervals = { 0.95, 9.05, 0.2, 9.75 };
     DiagramSnapSettings snapSettings = new DiagramSnapSettings();
@@ -9351,7 +9313,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.SnapSettings = snapSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9360,27 +9322,27 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SnapSettings.VerticalGridLines`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         decimal lineInterval = { 1, 14, 0.5F, 14.5F};
         Html.EJ().Diagram("diagram").SnapSettings(s=>s.VerticalGridLines(v=> v.LinesInterval(lineInterval))).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SnapSettings.VerticalGridLines`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").SnapSettings(ViewBag.SnapSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     double[] intervals = { 0.95, 9.05, 0.2, 9.75 };
     DiagramSnapSettings snapSettings = new DiagramSnapSettings();
@@ -9389,7 +9351,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.SnapSettings = snapSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9398,32 +9360,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SnapSettings.SnapAngle`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").SnapSettings(s=>s.SnapAngle(5)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SnapSettings.SnapAngle`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").SnapSettings(ViewBag.SnapSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramSnapSettings snapSettings = new DiagramSnapSettings();
     snapSettings.SnapAngle = 5;
     ViewBag.SnapSettings = snapSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9432,32 +9394,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SnapSettings.SnapObjectDistance`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").SnapSettings(s=>s.SnapObjectDistance(5)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SnapSettings.SnapObjectDistance`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").SnapSettings(ViewBag.SnapSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramSnapSettings snapSettings = new DiagramSnapSettings();
     snapSettings.SnapObjectDistance = 5;
     ViewBag.SnapSettings = snapSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9466,38 +9428,37 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SnapSettings.SnapConstraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").SnapSettings(s=>s.SnapConstraints(SnapConstraints.ShowLines)).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SnapSettings.Constraints`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").SnapSettings(ViewBag.SnapSettings).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     DiagramSnapSettings snapSettings = new DiagramSnapSettings();
     snapSettings.Constraints = SnapConstraints.ShowLines;
     ViewBag.SnapSettings = snapSettings;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## ZoomFactor
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9511,31 +9472,30 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ZoomFactor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").ZoomFactor(1).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ZoomFactor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     var zoomIn = { type: 'ZoomIn', zoomFactor: 0.5 };
     diagram.ZoomTo(zoomIn);
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 </table>
 
 ## Tool
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9549,29 +9509,28 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tool`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Tool(Tool.ZoomPan).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Tool`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Tool(DiagramTools.ZoomPan).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## ShowTooltip
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9585,29 +9544,28 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ShowTooltip`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Height("500px").Width("500px").ShowTooltip(true).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Constraints(DiagramConstraints.Default | DiagramConstraints.Tooltip).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## SelectedItems
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9620,14 +9578,14 @@ This article describes the API migration process of Diagram component from Essen
 <td>
 <b>Property</b>:<i>`SelectedItems.Children`</i>
 <br>
-<code>
+{% highlight html %}
 
     var diagram = $("#diagramcontent").EjDiagram("instance");
     for(var i =0; i< diagram.Model.SelectedItems.Children; i++){
         //Do your actions here
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -9639,23 +9597,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").SelectedItems(new SelectedItems() { Constraints = SelectorConstraints.UserHandles } } }).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SelectedItems.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").SelectedItems(new DiagramSelector() { Constraints = SelectorConstraints.UserHandle}).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9664,13 +9622,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.Tooltip`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").SelectedItems(new SelectedItems() { Tooltip = new Tooltip() { Alignment = { Vertical = VerticalAlignment.Top } } }).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -9682,7 +9640,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.UserHandles`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     var userHandle= [];
     var cloneHandle = ej.Datavisualization.Diagram.UserHandle();
@@ -9694,20 +9652,20 @@ This article describes the API migration process of Diagram component from Essen
             }
         });
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SelectedItems.UserHandles`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").SelectedItems(ViewBag.Selector).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramUserHandle> userHandle = new List<DiagramUserHandle>();
     userHandle.Add(new DiagramUserHandle()
@@ -9720,7 +9678,7 @@ This article describes the API migration process of Diagram component from Essen
     selector.UserHandles = userHandle;
     ViewBag.Selector = selector;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9729,7 +9687,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.UserHandles.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     var userHandle = [];
     var cloneHandle = ej.Datavisualization.Diagram.UserHandle();
@@ -9753,7 +9711,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     });
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -9761,13 +9719,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").SelectedItems(ViewBag.Selector).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramUserHandle> userHandle = new List<DiagramUserHandle>();
     userHandle.Add(new DiagramUserHandle()
@@ -9779,7 +9737,7 @@ This article describes the API migration process of Diagram component from Essen
     selector.UserHandles = userHandle;
     ViewBag.Selector = selector;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9789,7 +9747,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.UserHandles.Tool`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     var CloneTool = (function(base) {
         ej.Datavisualization.Diagram.Extend(CloneTool, base);
@@ -9819,7 +9777,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     });
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -9833,7 +9791,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.UserHandles.EnableMultiSelection`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     var userHandle = [];
     var cloneHandle = ej.Datavisualization.Diagram.UserHandle();
@@ -9846,7 +9804,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     });
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -9863,13 +9821,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").SelectedItems(ViewBag.Selector).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramUserHandle> userHandle = new List<DiagramUserHandle>();
     userHandle.Add(new DiagramUserHandle()
@@ -9880,13 +9838,12 @@ This article describes the API migration process of Diagram component from Essen
     selector.UserHandles = userHandle;
     ViewBag.Selector = selector;
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## SerializationSettings
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9902,14 +9859,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     @Html.EJ().Diagram("diagram", ViewData["diagramModel"] as DiagramProperties);
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramProperties Model = new DiagramProperties();
     Model.SerializationSettings = new SerializationSettings() {
@@ -9917,7 +9874,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewData["diagramModel"] = Model;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -9926,7 +9883,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## Tooltip
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9940,7 +9896,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script type="text/x-jsrender" id="mouseovertooltip">
     <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
@@ -9948,24 +9904,24 @@ This article describes the API migration process of Diagram component from Essen
     </div>
     </script>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Tooltip(new Diagram.Tooltip() { TemplateId= "mouseOverTooltip" }).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Tooltip`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Constraints(DiagramConstraints.Default | DiagramConstraints.Tooltip).Tooltip(new DiagramDiagramTooltip() { Content = "Diagram"}).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -9974,13 +9930,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip.Alignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Tooltip(new Diagram.Tooltip() { Alignment= new Diagram.Alignment() { Horizontal=HorizontalAlignment.Left}  }).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b>
@@ -9993,13 +9949,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @{
         Html.EJ().Diagram("diagram").Tooltip(new Diagram.Tooltip() {  Margin= new Margin() { Left=5, Bottom=5, Right=5, Top=5}  }).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -10011,32 +9967,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip.TemplateId`</i>
 <br>
 <br>
-<code>
-
-    <script type="text/x-jsrender" id="mouseovertooltip">
-    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-            <span style="padding: 5px;">  </span>
-    </div>
-    </script>
-
-<code>
-</code>
-
+{% highlight html %}
     @{
         Html.EJ().Diagram("diagram").Tooltip(new Diagram.Tooltip() { TemplateId= "mouseOverTooltip"  }).Render();
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Tooltip.Content`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Tooltip(new DiagramDiagramTooltip() { Content = "Diagram"}).Render()
 
-</code></td>
+{% endhighlight %}
+</td>
 </tr>
 
 <tr>
@@ -10047,11 +9994,12 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip.ShowTipPointer`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Tooltip(new DiagramDiagramTooltip() { ShowTipPointer = true }).Render()
 
-</code></td>
+{% endhighlight %}
+</td>
 </tr>
 
 <tr>
@@ -10062,10 +10010,10 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip.Position`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Tooltip(new DiagramDiagramTooltip() { Position = "TopLeft" }).Render()
 
-</code></td>
+{% endhighlight %}</td>
 </tr>
 </table>

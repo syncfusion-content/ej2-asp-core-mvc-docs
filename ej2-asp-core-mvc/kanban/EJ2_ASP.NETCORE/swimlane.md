@@ -175,7 +175,7 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 
 ## Create empty row
 
-You can render the empty swimlane row by enabling the `showEmptyRow` property.  If mapping `keyField` does not have cards, empty swimlane row will be rendered.
+You can render the empty swimlane row by enabling the `showEmptyRow` property. If mapping `keyField` does not have cards, empty swimlane row will be rendered.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

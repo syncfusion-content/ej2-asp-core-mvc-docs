@@ -75,13 +75,13 @@ The search operator can be defined in the [`Operator`](https://help.syncfusion.c
 
 The following operators are supported in searching:
 
-Operator |Description
------|-----
-startswith |Checks whether a value begins with the specified value.
-endswith |Checks whether a value ends with the specified value.
-contains |Checks whether a value contains the specified value.
-equal |Checks whether a value is equal to the specified value.
-notequal |Checks for values not equal to the specified value.
+|Operator |Description|
+|-----|-----|
+|startswith |Checks whether a value begins with the specified value.|
+|endswith |Checks whether a value ends with the specified value.|
+|contains |Checks whether a value contains the specified value.|
+|equal |Checks whether a value is equal to the specified value.|
+|notequal |Checks for values not equal to the specified value.|
 
 > By default, the [`Operator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_Operator) value is **contains**.
 

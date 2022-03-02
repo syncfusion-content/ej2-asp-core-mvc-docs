@@ -11,14 +11,12 @@ documentation: ug
 
 # Templates
 
-The MultiSelect has been provided with several options to customize each list item, group title,
-selected value, header, and footer elements. It uses the Essential JS 2
+The MultiSelect has been provided with several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential JS 2
 `Template engine` to compile and render the elements properly.
 
 ## Item template
 
-The content of each list item within the MultiSelect can be customized with the
-help of [itemTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~ItemTemplate.html) property.
+The content of each list item within the MultiSelect can be customized with the help of [itemTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~ItemTemplate.html) property.
 
 In the following sample, each list item is split into two columns to display relevant data's.
 
@@ -51,8 +49,7 @@ In the following sample, each list item is split into two columns to display rel
 
 The currently selected value that is displayed by default on the MultiSelect input element can be customized using the [valueTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~ValueTemplate.html) property.
 
-In the following sample, the selected value is displayed as a combined text of both `FirstName` and `City`
-in the MultiSelect input, which is separated by a hyphen.
+In the following sample, the selected value is displayed as a combined text of both `FirstName` and `City` in the MultiSelect input, which is separated by a hyphen.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -81,8 +78,7 @@ in the MultiSelect input, which is separated by a hyphen.
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be
-customize with the help of [groupTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~GroupTemplate.html) property.
+The group header title under which appropriate sub-items are categorized can also be customize with the help of [groupTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~GroupTemplate.html) property.
 This template is common for both inline and floating group header template.
 
 In the following sample, employees are grouped according to their city.
@@ -114,12 +110,10 @@ In the following sample, employees are grouped according to their city.
 
 ## Header template
 
-The header element is shown statically at the top of the popup list items within the
-MultiSelect, and any custom element can be placed as a header element using the
+The header element is shown statically at the top of the popup list items within the MultiSelect, and any custom element can be placed as a header element using the
 [headerTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~HeaderTemplate.html) property.
 
-In the following sample, the list items and its headers are designed and displayed as two columns
-similar to multiple columns of the grid.
+In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -180,8 +174,7 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The MultiSelect is provided with support to custom design the popup list content when no data is found
-and no matches found on search with the help of
+The MultiSelect is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of
 [noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~NoRecordsTemplate.html) property.
 
 In the following sample, popup list content displays the notification of no data available.
@@ -213,8 +206,7 @@ In the following sample, popup list content displays the notification of no data
 
 ## Action failure template
 
-There is also an option to custom design the popup list content when the data fetch request
-fails at the remote server. This can be achieved using the
+There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the
 [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~ActionFailureTemplate.html) property.
 
 In the following sample, when the data fetch request fails, the MultiSelect displays the notification.

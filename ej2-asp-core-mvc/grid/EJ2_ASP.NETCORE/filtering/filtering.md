@@ -39,13 +39,11 @@ Filtering allows you to view particular records based on filter criteria. To ena
 
 
 > * You can apply and clear filtering by using **filterByColumn** and **clearFiltering** methods.
-> * To disable filtering for a particular column, set
-[`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowFiltering) property of **e-grid-column** as false.
+> * To disable filtering for a particular column, set [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowFiltering) property of **e-grid-column** as false.
 
 ## Initial filter
 
-To apply the filter at initial rendering, set the filter **Predicate** object in
-[`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Columns) property of **e-grid-filterSettings** tag helper.
+To apply the filter at initial rendering, set the filter **Predicate** object in [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Columns) property of **e-grid-filterSettings** tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

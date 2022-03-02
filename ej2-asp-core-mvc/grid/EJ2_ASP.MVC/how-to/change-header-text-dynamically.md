@@ -15,10 +15,7 @@ You can change the column [`HeaderText`](https://help.syncfusion.com/cr/aspnetco
 
 Follow the given steps to change the header text dynamically:
 
-**Step 1**:
-
-Get the column object corresponding to the field name by using the [`getColumnByField`](https://ej2.syncfusion.com/documentation/api/grid/#getcolumnbyfield) method.
-Then, change the header text value.
+**Step 1**: Get the column object corresponding to the field name by using the [`getColumnByField`](https://ej2.syncfusion.com/documentation/api/grid/#getcolumnbyfield) method. Then, change the header text value.
 
 ```typescript
 var column = grid.getColumnByField("ShipCity"); // Get column object.
@@ -26,9 +23,7 @@ column.headerText = 'Changed Text';
 
 ```
 
-**Step 2**:
-
-To reflect the changes in the grid header, invoke the [`refreshHeader`](https://ej2.syncfusion.com/documentation/api/grid/#refreshheader) method.
+**Step 2**: To reflect the changes in the grid header, invoke the [`refreshHeader`](https://ej2.syncfusion.com/documentation/api/grid/#refreshheader) method.
 
 ```typescript
 grid.refreshHeader();

@@ -13,8 +13,7 @@ documentation: ug
 
 This section briefly explains how to include simple **Kanban** control in your ASP.NET CORE application. You can refer to [ASP.NET CORE Getting Started documentation](../getting-started/) page for system requirements, and configure common specifications.
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed,
-you also have to include the license key in your projects.
+> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include the license key in your projects.
 Please refer to this [`link`](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our control.
 
 ## Adding Kanban control to the application

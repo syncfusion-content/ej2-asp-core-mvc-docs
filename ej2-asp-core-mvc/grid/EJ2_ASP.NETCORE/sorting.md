@@ -47,8 +47,7 @@ To enable sorting in the Grid, set the [`allowSorting`](https://help.syncfusion.
 
 ## Initial sort
 
-To sort at initial rendering, set the **field** and
-**direction** in [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html#Syncfusion_EJ2_Grids_GridSortSettings_Columns) property of **e-grid-sortsettings** tag helper.
+To sort at initial rendering, set the **field** and **direction** in [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html#Syncfusion_EJ2_Grids_GridSortSettings_Columns) property of **e-grid-sortsettings** tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
