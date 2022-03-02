@@ -357,8 +357,7 @@ Output be like the below.
 
 ![kanban](./images/http-error.PNG)
 
-> The `ActionFailure` event will be triggered not only for the server errors, but
-also when there is an exception while processing the kanban actions.
+> The `ActionFailure` event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
 
 ## Loading data via ajax
 

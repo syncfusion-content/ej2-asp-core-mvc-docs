@@ -11,8 +11,7 @@ documentation: ug
 
 # Data Binding
 
-The MultiSelect loads the data either from local data sources or
-remote data services using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~DataSource.html) property. It supports the data type of `array` or [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html).
+The MultiSelect loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~DataSource.html) property. It supports the data type of `array` or [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html).
 
 The MultiSelect also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html) adaptors.
 
@@ -60,8 +59,7 @@ The MultiSelect has support to load array of primitive data such as strings and 
 
 ### 2. Array of object
 
-The MultiSelect can generate its list items through an array of complex data. For this,
-the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~fields.html) property.
+The MultiSelect can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~fields.html) property.
 
 In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -92,8 +90,7 @@ In the following example, `Id` column and `Game` column from complex data have b
 
 ### 3. Array of complex object
 
-The MultiSelect can generate its list items through an array of complex data. For this,
-the appropriate columns should be mapped to the [`fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~fields.html) property.
+The MultiSelect can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~fields.html) property.
 
 In the following example, `Code.Id` column and `Country.CountryId` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -124,8 +121,7 @@ In the following example, `Code.Id` column and `Country.CountryId` column from c
 
 ## Binding remote data
 
-The MultiSelect supports retrieval of data from remote data services with the help of `DataManager` control. The `Query` property is used to fetch
-data from the database and bind it to the MultiSelect.
+The MultiSelect supports retrieval of data from remote data services with the help of `DataManager` control. The `Query` property is used to fetch data from the database and bind it to the MultiSelect.
 
 The following sample displays the first 6 contacts from “Customers” table of the `Northwind` Data Service.
 

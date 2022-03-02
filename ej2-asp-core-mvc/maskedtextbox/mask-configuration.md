@@ -75,8 +75,7 @@ Other than the above standard mask elements, the mask can be configured with th
 
 ### Custom characters
 
-You can define any of the non-mask element as the mask element
-and its behavior through the [customCharacters](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.MaskedTextBox.html#Syncfusion_EJ2_Inputs_MaskedTextBox_CustomCharacters) property.
+You can define any of the non-mask element as the mask element and its behavior through the [customCharacters](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.MaskedTextBox.html#Syncfusion_EJ2_Inputs_MaskedTextBox_CustomCharacters) property.
 
 In the following example, non-mask element `P` accepts the values `P, A, p, a`, and `M` accepts the values `M, m`  as mentioned in the custom characters collection.
 
@@ -147,8 +146,7 @@ Output be like the below.
 
 ## Prompt character
 
-The Prompt character is a prompting symbol in the MaskedTextBox for the mask elements. The symbol is used to show the input positions in the MaskedTextBox. You can customize the prompt character of MaskedTextBox
-by using the [promptChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.MaskedTextBox.html#Syncfusion_EJ2_Inputs_MaskedTextBox_PromptChar) property.
+The Prompt character is a prompting symbol in the MaskedTextBox for the mask elements. The symbol is used to show the input positions in the MaskedTextBox. You can customize the prompt character of MaskedTextBox by using the [promptChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.MaskedTextBox.html#Syncfusion_EJ2_Inputs_MaskedTextBox_PromptChar) property.
 
 The following example demonstrates the MaskedTextBox with customized prompt character as `#`.
 

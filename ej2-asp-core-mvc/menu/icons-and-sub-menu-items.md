@@ -14,10 +14,7 @@ documentation: ug
 ## Icons
 
 The menu item contains an icon/image in it to provide a visual representation of an action.
-To place the icon on a menu item, set the `iconCss`
-property with the required icon CSS. By default, the icon is positioned at the left of the
-menu item. In the following sample, the icons of `File` and `Edit` menu items and `Open`,
-`Save`, `Cut`, `Copy`,and `Paste` sub menu items are added using the `iconCss` property.
+To place the icon on a menu item, set the `iconCss` property with the required icon CSS. By default, the icon is positioned at the left of the menu item. In the following sample, the icons of `File` and `Edit` menu items and `Open`, `Save`, `Cut`, `Copy`,and `Paste` sub menu items are added using the `iconCss` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,8 +44,7 @@ menu item. In the following sample, the icons of `File` and `Edit` menu items an
 ## Navigation
 
 Navigation in Menu is used to navigate to the other web page when a menu item is clicked.
-It can be achieved by providing a link to the menu item using the url property. In the following sample,
-the Navigation URL is added to sub menu items using the url property.
+It can be achieved by providing a link to the menu item using the url property. In the following sample, the Navigation URL is added to sub menu items using the url property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -77,8 +73,7 @@ the Navigation URL is added to sub menu items using the url property.
 
 ## Multilevel nesting
 
-The Menu supports multiple level nesting, and it can be achieved by mapping the `items`
-property inside the parent `menuItems`.
+The Menu supports multiple level nesting, and it can be achieved by mapping the `items` property inside the parent `menuItems`.
 In the following sample, three-level nesting of menu has been provided.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -106,10 +101,7 @@ In the following sample, three-level nesting of menu has been provided.
 
 
 
-> You can achieve multi level nesting with data source by mapping `name` of the child items
-to the `children` sub-property
-of [`fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~Fields.html) property. For more information, refer to
-the [`data source binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
+> You can achieve multi level nesting with data source by mapping `name` of the child items to the `children` sub-property of [`fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~Fields.html) property. For more information, refer to the [`data source binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
 
 The below table represents the MenuItem properties and it's description.
 
