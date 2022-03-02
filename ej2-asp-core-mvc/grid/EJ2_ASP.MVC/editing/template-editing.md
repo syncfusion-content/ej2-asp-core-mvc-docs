@@ -94,10 +94,7 @@ In the below code example, we have format and updated the **freight** value.
 
 ## Set focus to editor
 
-By default, the first input element in the dialog will be focused while opening the dialog.
-If the first input element is in disabled or hidden state, focus the valid input element in the
-[`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete)
-event based on **requestType** as **beginEdit**.
+By default, the first input element in the dialog will be focused while opening the dialog. If the first input element is in disabled or hidden state, focus the valid input element in the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event based on **requestType** as **beginEdit**.
 
 ```typescript
 

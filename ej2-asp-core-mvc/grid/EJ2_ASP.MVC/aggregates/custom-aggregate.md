@@ -14,8 +14,8 @@ documentation: ug
 To calculate the aggregate value with your own aggregate functions, use the custom aggregate option. To use custom aggregation, specify the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_Type) as **Custom**, and provide the custom aggregate function in the [`CustomAggregate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_CustomAggregate) property.
 
 The custom aggregate function will be invoked with different arguments for total and group aggregations.
-* **Total aggregation**: The custom aggregate function will be called with the whole data and current [`AggregateColumn`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html)
-object.
+
+* **Total aggregation**: The custom aggregate function will be called with the whole data and current [`AggregateColumn`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html) object.
 * **Group aggregation**: This will be called with the current group details and [`AggregateColumn`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html) object.
 
 {% if page.publishingplatform == "aspnet-core" %}

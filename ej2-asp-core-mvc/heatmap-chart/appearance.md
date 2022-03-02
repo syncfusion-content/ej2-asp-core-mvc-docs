@@ -77,12 +77,11 @@ Enable or disable the cell highlighting while hover over the heat map cells by u
 
 ### Color gradient mode
 
-You can set the minimum and maximum value colors based on row and column using the `ColorGradientMode` property.
-The types of ColorGradientMode,
+You can set the minimum and maximum value colors based on row and column using the `ColorGradientMode` property. The types of ColorGradientMode,
 
-* Table: The minimum and maximum value colors calculated for overall data.
-* Row: The minimum and maximum value colors calculated for each row of data.
-* Column: The minimum and maximum value colors calculated for each column of data.
+* **Table**: The minimum and maximum value colors calculated for overall data.
+* **Row**: The minimum and maximum value colors calculated for each row of data.
+* **Column**: The minimum and maximum value colors calculated for each column of data.
 
 > The default value of `ColorGradientMode` is Table.
 
@@ -113,7 +112,7 @@ The types of ColorGradientMode,
 
 ## Margin
 
-Set the margin for the heat map from its container by using the  [`margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Margin.html) property.
+Set the margin for the heat map from its container by using the [`margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Margin.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -10,8 +10,7 @@ documentation: ug
 
 # Column Chooser
 
-The column chooser has options to show or hide columns dynamically. It can be enabled by defining the
-[`ShowColumnChooser`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) as true.
+The column chooser has options to show or hide columns dynamically. It can be enabled by defining the [`ShowColumnChooser`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,8 +41,7 @@ The column chooser has options to show or hide columns dynamically. It can be en
 
 ## Open column chooser by external button
 
-The Column chooser can be displayed on a page through external button by invoking
-the **openColumnChooser** method with X and Y axis positions.
+The Column chooser can be displayed on a page through external button by invoking the **openColumnChooser** method with X and Y axis positions.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -17,18 +17,18 @@ By setting the [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/
 
  You can enter the following filter expressions (operators) manually in the filter bar.
 
-Expression |Example |Description |Column Type
------|-----|-----|-----
-= |=value |equal |Number
-!= |!=value |notequal |Number
-> |>value |greaterthan |Number
-< |<value |lessthan |Number
->= |>=value |greaterthanorequal |Number
-<=|<=value|lessthanorequal |Number
-* |*value |startswith |String
-% |%value |endswith |String
-N/A |N/A | `equal` operator will always be used for date filter. |Date
-N/A |N/A |`equal` operator will always be used for Boolean filter. |Boolean
+|Expression |Example |Description |Column Type|
+|-----|-----|-----|-----|
+|= |=value |equal |Number|
+|!= |!=value |notequal |Number|
+|> |>value |greaterthan |Number|
+|< |<value |lessthan |Number|
+|>= |>=value |greaterthanorequal |Number|
+|<=|<=value|lessthanorequal |Number|
+|* |*value |startswith |String|
+|% |%value |endswith |String|
+|N/A |N/A | `equal` operator will always be used for date filter. |Date|
+|N/A |N/A |`equal` operator will always be used for Boolean filter. |Boolean|
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -92,8 +92,7 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 
 ## Change default filterbar operator
 
-You can change the default filter operator by extending filterOperators property in [`DataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event. In the following sample,
-we have changed the default operator for string typed columns as **contains** from **startsWith**.
+You can change the default filter operator by extending filterOperators property in [`DataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event. In the following sample, we have changed the default operator for string typed columns as **contains** from **startsWith**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

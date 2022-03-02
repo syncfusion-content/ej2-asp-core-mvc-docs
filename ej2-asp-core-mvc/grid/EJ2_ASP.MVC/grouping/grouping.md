@@ -40,10 +40,8 @@ To enable grouping in the grid, set the [`AllowGrouping`](https://help.syncfusio
 
 
 
-> You can group and ungroup columns by using the [`groupColumn`](https://ej2.syncfusion.com/documentation/api/grid/#groupcolumn) and
-[`ungroupColumn`](https://ej2.syncfusion.com/documentation/api/grid/#ungroupcolumn) methods.
-> To disable grouping for a particular column, set
-[`AllowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowGrouping) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) to false.
+> You can group and ungroup columns by using the [`groupColumn`](https://ej2.syncfusion.com/documentation/api/grid/#groupcolumn) and [`ungroupColumn`](https://ej2.syncfusion.com/documentation/api/grid/#ungroupcolumn) methods.
+> To disable grouping for a particular column, set [`AllowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowGrouping) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) to false.
 
 ## Initial group
 
@@ -76,8 +74,7 @@ To apply group at initial rendering, set the column field name in the [`Columns`
 
 ## Hide drop area
 
-To avoid ungrouping or further grouping of a column after initial column
-grouping, define the [`ShowDropArea`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_ShowDropArea) of [`GroupSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html) as false.
+To avoid ungrouping or further grouping of a column after initial column grouping, define the [`ShowDropArea`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_ShowDropArea) of [`GroupSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html) as false.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -112,10 +109,7 @@ On grouping columns with paging feature, the aggregated information and total it
 
 ## Group by format
 
-By default, a column will be grouped by the data or value present for the particular row. To group the numeric
-or datetime column based on the mentioned format, you have to enable the
-[`EnableGroupByFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_EnableGroupByFormat) property of the corresponding
-grid columns.
+By default, a column will be grouped by the data or value present for the particular row. To group the numeric or datetime column based on the mentioned format, you have to enable the [`EnableGroupByFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_EnableGroupByFormat) property of the corresponding grid columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -144,8 +138,7 @@ grid columns.
 
 ## Grouping events
 
-During the group action, the grid component triggers two events. The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event
-triggers before the group action starts and the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event triggers after the group action is completed. Using these events you can perform any action.
+During the group action, the grid component triggers two events. The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event triggers before the group action starts and the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event triggers after the group action is completed. Using these events you can perform any action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

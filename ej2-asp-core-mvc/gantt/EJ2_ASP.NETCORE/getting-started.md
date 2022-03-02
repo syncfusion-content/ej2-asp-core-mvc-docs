@@ -380,6 +380,7 @@ Predecessor or task dependency in the Gantt control is used to depict the relati
 * Start to Finish (SF): You cannot finish a task until the dependent task finishes.
 * Finish to Start (FS): You cannot start a task until the dependent task completes.
 * Finish to Finish (FF): You cannot finish a task until the dependent task completes.
+
 You can show the relationship in tasks by using the [`Dependency`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Dependency) property as shown in the following code example.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -409,9 +410,7 @@ You can show the relationship in tasks by using the [`Dependency`](https://help.
 
 ## Assigning resources
 
-You can display and assign the resource for each task in the Gantt control.
-Create a collection of JSON object, which contains id, name, unit and group of the resources and assign it to the [`Resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resources) property.
-Map these fields to the Gantt control using the [`ResourceFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ResourceFields) property.
+You can display and assign the resource for each task in the Gantt control. Create a collection of JSON object, which contains id, name, unit and group of the resources and assign it to the [`Resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resources) property. Map these fields to the Gantt control using the [`ResourceFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ResourceFields) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

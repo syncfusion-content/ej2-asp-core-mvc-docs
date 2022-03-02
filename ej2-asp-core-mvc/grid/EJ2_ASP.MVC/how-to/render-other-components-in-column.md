@@ -15,9 +15,7 @@ You can render any component in a grid column using the [`Template`](https://hel
 
 To render other components in the grid, ensure the following steps:
 
-**Step 1**:
-
-Initialize the column template for your custom component.
+**Step 1**: Initialize the column template for your custom component.
 
 ```typescript
 template:`<div>
@@ -30,9 +28,7 @@ template:`<div>
 
 ```
 
-**Step 2**:
-
-Using the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event, you can render the DropDown component with the following code.
+**Step 2**: Using the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event, you can render the DropDown component with the following code.
 
 ```typescript
     function dropdown(args) {
