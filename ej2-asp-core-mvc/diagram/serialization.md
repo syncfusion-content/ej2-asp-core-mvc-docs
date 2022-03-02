@@ -39,8 +39,7 @@ Diagram can also be saved as raster or vector image files. For more information 
 
 ## Load
 
-Diagram is loaded from the serialized string data by client-side method, [`loadDiagram`](../api/diagram#loadDiagram).
-The following code illustrates how to load the diagram from serialized string data.
+Diagram is loaded from the serialized string data by client-side method, [`loadDiagram`](../api/diagram#loadDiagram). The following code illustrates how to load the diagram from serialized string data.
 
 ```javascript
 var diagramElement = document.getElementById('element');
@@ -55,8 +54,7 @@ diagram.loadDiagram(saveData);
 
 ## Prevent Default Values
 
-The [`preventDefaults`](https://ej2.syncfusion.com/documentation/api/diagram/serializationSettingsModel) property of serializationSettings is used to simplifying the saved JSON object without adding the default properties that are presented in the diagram.
-The following code illustrates how to simplify the JSON object.
+The [`preventDefaults`](https://ej2.syncfusion.com/documentation/api/diagram/serializationSettingsModel) property of serializationSettings is used to simplifying the saved JSON object without adding the default properties that are presented in the diagram. The following code illustrates how to simplify the JSON object.
 
 ```typescript
 var diagram: Diagram = new Diagram({

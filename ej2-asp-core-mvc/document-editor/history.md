@@ -46,8 +46,7 @@ editor.enableEditorHistory = false;
 
 ## Undo and redo
 
-You can perform undo and redo by `CTRL+Z` and `CTRL+Y` keyboard shortcuts. Document editor exposes API to do it programmatically.
-To undo the last editing operation in document editor, refer to the following sample code.
+You can perform undo and redo by `CTRL+Z` and `CTRL+Y` keyboard shortcuts. Document editor exposes API to do it programmatically. To undo the last editing operation in document editor, refer to the following sample code.
 
 ```typescript
 editor.editorHistory.undo();

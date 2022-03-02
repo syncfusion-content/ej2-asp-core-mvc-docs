@@ -141,7 +141,7 @@ On expand action [`Expanding`](https://help.syncfusion.com/cr/cref_files/aspnetc
 
 ## Drag and drop
 
-You can dynamically rearrange the rows in the Gantt control by using the `AllowRowDragAndDrop` property. Using this property, row drag and drop can be enabled or disabled in Gantt. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows
+You can dynamically rearrange the rows in the Gantt control by using the `AllowRowDragAndDrop` property. Using this property, row drag and drop can be enabled or disabled in Gantt. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -205,12 +205,12 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 
 We provide various events to customize the row drag and drop action, the following table explains about the available events and its details.
 
-Event Name |Description
------|-----
-`RowDragStartHelper`  |Triggers when clicking the drag icon or Gantt row.
-`RowDragStart`  |Triggers when drag action starts in Gantt.
-`RowDrag`  |Triggers while dragging the Gantt row.
-`RowDrop`  |Triggers when a drag row was dropped on the target row.
+|Event Name |Description|
+|-----|-----|
+|`RowDragStartHelper`  |Triggers when clicking the drag icon or Gantt row.|
+|`RowDragStart`  |Triggers when drag action starts in Gantt.|
+|`RowDrag`  |Triggers while dragging the Gantt row.|
+|`RowDrop`  |Triggers when a drag row was dropped on the target row.|
 
 ### Customize row drag and drop action
 
@@ -278,8 +278,7 @@ In the following sample, we have prevented the drop action based on the position
 
 ### Perform row drag and drop action programmatically
 
-Gantt provides option to perform row drag and drop action programmatically by using the `reorderRows` method, this method can be used for any external actions like button click.
-The following arguments are used to specify the positions to drag and drop a row:
+Gantt provides option to perform row drag and drop action programmatically by using the `reorderRows` method, this method can be used for any external actions like button click. The following arguments are used to specify the positions to drag and drop a row:
 
 * `fromIndexes`: Index value of source(dragging) row.
 * `toIndex`: Value of target index.
@@ -314,7 +313,7 @@ The following code example shows how to drag and drop a row on button click acti
 
 ## Customize rows
 
-You can customize the appearance of a row in grid side, by using the [`rowDataBound`](../api/gantt/#rowdatabound) event and in chart side by using [`queryTaskbarInfo`](../api/gantt/#querytaskbarinfo) event
+You can customize the appearance of a row in grid side, by using the [`rowDataBound`](../api/gantt/#rowdatabound) event and in chart side by using [`queryTaskbarInfo`](../api/gantt/#querytaskbarinfo) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -345,7 +344,7 @@ You can customize the appearance of a row in grid side, by using the [`rowDataBo
 
 ## Styling alternate rows
 
- You can change the background colour of alternative rows in Gantt chart, by overriding the class as shown below.
+You can change the background colour of alternative rows in Gantt chart, by overriding the class as shown below.
 
 ```css
 .e-altrow, tr.e-chart-row:nth-child(even)  {

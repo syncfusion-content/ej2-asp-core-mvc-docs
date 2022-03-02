@@ -52,7 +52,7 @@ A row can be added to the Gantt component from the toolbar while the [`EditSetti
 
 ### Context menu
 
-A row can also be added above, below or child of the selected row by using context menu support. For this, we need to enable the property[`enableContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableContextMenu) and inject the `ContextMenu` module into the Gantt control.
+A row can also be added above, below or child of the selected row by using context menu support. For this, we need to enable the property [`enableContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableContextMenu) and inject the `ContextMenu` module into the Gantt control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -159,15 +159,15 @@ The following code example shows you how to enable the cell editing in Gantt con
 
 
 
-`Note:` When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
+> When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
 
 ![Alt text](images/enableCellEditing1.png)
 
-double click action on TreeGrid side
+double click action on TreeGrid side.
 
 ![Alt text](images/enableCellEditing2.png)
 
-double click action on chart side
+double click action on chart side.
 
 ### Dialog editing
 
@@ -198,7 +198,7 @@ Modify the task details through the edit dialog by setting the edit mode to `Dia
 
 
 
-`Note:` In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
+> In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
 
 ![Alt text](images/enableDialogEditing.png)
 
@@ -243,7 +243,7 @@ Tabs in Add Dialog
 
 In the Gantt dialog, you can make only specific data source fields visible for editing by using the [`AddDialogFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AddDialogFields) and [`EditDialogFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EditDialogFields) properties. The data fields are defined with `Type` and `Fields` properties.
 
-`Note:` You can also define the custom fields in the add/edit dialog General tab using the `Fields` property.
+> You can also define the custom fields in the add/edit dialog General tab using the `Fields` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -305,7 +305,7 @@ Modify the task details through user interaction such as resizing and dragging t
 
 #### Prevent editing for specific tasks
 
-On taskbar edit action, the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event will be triggered. You can prevent the taskbar from editing using the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event. This can be done by setting cancel property of [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event argument to true. And we can hide the taskbar editing indicators like taskbar resizer, progress resizer and connector points by using [`QueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event.  The following code example shows how to achieve this.
+On taskbar edit action, the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event will be triggered. You can prevent the taskbar from editing using the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event. This can be done by setting cancel property of [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event argument to true. And we can hide the taskbar editing indicators like taskbar resizer, progress resizer and connector points by using [`QueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event. The following code example shows how to achieve this.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -381,11 +381,11 @@ Updating with cell Edit
 
 Updating with Dialog
 
-`Note:` When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
+> When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
 
 ### Update task values using method
 
-Tasks' value can be dynamically updated by using the `updateRecordById` method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
+Tasks value can be dynamically updated by using the `updateRecordById` method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
 
 > Using the `updateRecordById` method, you cannot update the task ID value.
 
@@ -416,8 +416,7 @@ Tasks' value can be dynamically updated by using the `updateRecordById` method. 
 
 ### Cell edit type and its params
 
-The [`columns.editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_EditType) is used to define the edit type for any particular column.
-You can set the [`columns.editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_EditType) based on data type of the column.
+The [`columns.editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_EditType) is used to define the edit type for any particular column. You can set the [`columns.editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_EditType) based on data type of the column.
 
 * `numericedit` - [`NumericTextBox`](../numerictextbox) component for integers, double, and decimal data types.
 
@@ -435,13 +434,13 @@ Also, you can customize the behavior of the editor component through the [`colum
 
 The following table describes cell edit type component and their corresponding edit params of the column.
 
-Edit Type |Component |Example
------|-----|-----
-`numericedit` | [`NumericTextBox`](../numerictextbox) | params: { decimals: 2, value: 5 }
-`dropdownedit` | [`DropDownList`](../drop-down-list) | params: { value: 'Germany' }
-`booleanedit` | [`Checkbox`](../check-box) | params: { checked: true}
-`datepickeredit` | [`DatePicker`](../datepicker) | params: { format:'dd.MM.yyyy' }
-`datetimepickeredit` | [`DateTimePicker`](../datetimepicker) | params: { value: new Date() }
+|Edit Type |Component |Example|
+|-----|-----|-----|
+|`numericedit` | [`NumericTextBox`](../numerictextbox) | params: { decimals: 2, value: 5 }|
+|`dropdownedit` | [`DropDownList`](../drop-down-list) | params: { value: 'Germany' }|
+|`booleanedit` | [`Checkbox`](../check-box) | params: { checked: true}|
+|`datepickeredit` | [`DatePicker`](../datepicker) | params: { format:'dd.MM.yyyy' }|
+|`datetimepickeredit` | [`DateTimePicker`](../datetimepicker) | params: { value: new Date() }|
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -834,8 +833,7 @@ In Gantt, all create, update, delete operations can be disabled by set `readOnly
 
 ### Splitting task at load time
 
-To split task at load time, we can define segment details in both hierarchical and self-referential way.
-Refer below link for more details.
+To split task at load time, we can define segment details in both hierarchical and self-referential way. Refer below link for more details.
 
 * [Split task at load time](./data-binding/#split-task)
 
@@ -892,5 +890,4 @@ The split tasks can be merged either by using the `Merge Task` item of the Conte
 
 ## Troubleshoot: Editing works only when primary key column is defined
 
-Editing feature requires a primary key column for CRUD operations.
-While defining columns in Gantt using the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property, it is mandatory that any one of the columns, must be a primary column. By default, the [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column will be the primary key column.  If [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column is not defined, we need to enable [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property.
+Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property, it is mandatory that any one of the columns, must be a primary column. By default, the [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column will be the primary key column.  If [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column is not defined, we need to enable [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property.

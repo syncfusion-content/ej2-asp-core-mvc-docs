@@ -19,8 +19,7 @@ In Gantt, the task's duration value can be measured by the following duration un
 * Hour
 * Minute
 
-In Gantt, we can define duration unit for whole project by using [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value.
-And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
+In Gantt, we can define duration unit for whole project by using [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
 
 * Using [`taskFields.durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_DurationUnit_System_String_) property, to map the duration unit data source field.
 * Defining the duration unit value along with the duration field in the data source.
@@ -56,8 +55,7 @@ The below code snippet explains the mapping of duration unit data source field t
 
 ![Alt text](images/durationUnits.png)
 
-> NOTE
-The default value of the [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_DurationUnit_System_String_) property is `day`.
+> The default value of the [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_DurationUnit_System_String_) property is `day`.
 
 ### Defining duration unit along with duration field
 
@@ -90,5 +88,4 @@ Duration units for the tasks can also be defined along with the duration values,
 
 ![Alt text](images/durationUnitswithDuration.png)
 
->
-The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.
+> The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.

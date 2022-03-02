@@ -48,13 +48,11 @@ The file manager provides navigation between files and folders using the followi
 
 ### Navigation pane
 
-FileManager provides navigation pane, it displays the folder hierarchy of the file system and provides easy navigation to the desired folder. Using `navigationPaneSettings` minimum and maximum width of the navigation pane can be changed.
-The navigation pane can be shown or hidden using the `visible` option in the `navigationPaneSettings`.
+FileManager provides navigation pane, it displays the folder hierarchy of the file system and provides easy navigation to the desired folder. Using `navigationPaneSettings` minimum and maximum width of the navigation pane can be changed. The navigation pane can be shown or hidden using the `visible` option in the `navigationPaneSettings`.
 
 ### BreadCrumb
 
-The file manager provides breadcrumb for navigating to the parent folders. The breadcrumb the in file manager is responsible for resizing.
-Whenever the path length exceeds the breadcrumb length, a dropdown button will be added at the starting of the breadcrumb to hold the parent folders adjacent to root.
+The file manager provides breadcrumb for navigating to the parent folders. The breadcrumb the in file manager is responsible for resizing. Whenever the path length exceeds the breadcrumb length, a dropdown button will be added at the starting of the breadcrumb to hold the parent folders adjacent to root.
 
 ![BreadCrumb](./images/breadcrumb.png "Responsiveness of BreadCrumb Bar")
 
@@ -69,7 +67,7 @@ The `large icons view` is the default starting view in the file manager. The vie
 
 ### Large icons view
 
-In the large icons view, the thumbnail icons will be shown in a larger size, which displays the data in a form that best suits their content.  For image and video type files, a **preview** will be displayed. Extension thumbnails will be displayed for other type files.
+In the large icons view, the thumbnail icons will be shown in a larger size, which displays the data in a form that best suits their content. For image and video type files, a **preview** will be displayed. Extension thumbnails will be displayed for other type files.
 
 ![LargeIconView](./images/largeiconsview.png "File Manager Large Icon View")
 
@@ -81,7 +79,7 @@ FileManager can be changed from large icon to details view by using `View` prope
 
 ## Context menu
 
-The context menu appears on user interaction such as right-click. The file manager is provided with context menu support to perform list of file operations with the files and folders. Context menu appears with varying menu items based on the targets such as file, folder (including navigation pane folders),  and layout (empty area in view).
+The context menu appears on user interaction such as right-click. The file manager is provided with context menu support to perform list of file operations with the files and folders. Context menu appears with varying menu items based on the targets such as file, folder (including navigation pane folders), and layout (empty area in view).
 
 Context menu can be customized using the `contextMenuSettings`, `menuOpen`, and `menuClick` events.
 

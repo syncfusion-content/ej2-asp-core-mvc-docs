@@ -15,10 +15,7 @@ In Dialog the template support is provided to the header, footer and content sec
 
 ## Header
 
-The Dialog header content can be provided through the
-[`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property, and it will allow both text and any HTML content as a string.
-Also in header, close button is provided as built-in support, and this can be enabled through
-the [`showCloseIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ShowCloseIcon) property.
+The Dialog header content can be provided through the [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property, and it will allow both text and any HTML content as a string. Also in header, close button is provided as built-in support, and this can be enabled through the [`showCloseIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ShowCloseIcon) property.
 
 ## Footer
 
@@ -28,8 +25,7 @@ The Dialog footer can be enabled by adding built-in [`buttons`](https://help.syn
 
 ## Content
 
-The Dialog content can be provided through the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Content) property, and it accepts both text and HTML string as content
-by using `e-content-template` tag helper.
+The Dialog content can be provided through the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Content) property, and it accepts both text and HTML string as content by using `e-content-template` tag helper.
 
 The below example demonstrates the usage of header, footer and content templates in the Dialog control.
 

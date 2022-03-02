@@ -11,9 +11,7 @@ documentation: ug
 
 # Accessibility
 
-The Dialog characterized with complete ARIA Accessibility support which helps to accessible
-by on-screen readers and other assistive technology devices. This component designed with the
-reference of the guidelines document given in [WAI ARAI Accessibility Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal).
+The Dialog characterized with complete ARIA Accessibility support which helps to accessible by on-screen readers and other assistive technology devices. This component designed with the reference of the guidelines document given in [WAI ARAI Accessibility Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal).
 
 The Dialog control uses the `Dialog` role and following ARIA properties to its element based on its state.
 
@@ -26,9 +24,7 @@ The Dialog control uses the `Dialog` role and following ARIA properties to its e
 
 ## Keyboard interaction
 
-Keyboard interaction of Dialog control has designed based on
-[WAI-ARIA Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal) described for Dialog.
-User can use the following shortcut keys to interact with the Dialog.
+Keyboard interaction of Dialog control has designed based on [WAI-ARIA Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal) described for Dialog. User can use the following shortcut keys to interact with the Dialog.
 
 <!-- markdownlint-disable MD033 -->
 <table>

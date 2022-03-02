@@ -11,9 +11,7 @@ documentation: ug
 
 # Hide dropdown arrow
 
-You can hide the dropdown arrow from the DropDownButton by adding class `e-caret-hide`
-to DropDownButton element using [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_CssClass)
-property.
+You can hide the dropdown arrow from the DropDownButton by adding class `e-caret-hide` to DropDownButton element using [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_CssClass) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

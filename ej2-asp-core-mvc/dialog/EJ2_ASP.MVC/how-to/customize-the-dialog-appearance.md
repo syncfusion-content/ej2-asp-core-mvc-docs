@@ -11,7 +11,7 @@ documentation: ug
 
 # Customize the Dialog appearance
 
-You can customize the dialog appearance by providing dialog template through [`ContentTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ContentTemplate) property. In the following sample, dialog is customized as  error window appearance.
+You can customize the dialog appearance by providing dialog template through [`ContentTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_ContentTemplate) property. In the following sample, dialog is customized as error window appearance.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

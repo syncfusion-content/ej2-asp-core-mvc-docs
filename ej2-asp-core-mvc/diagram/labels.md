@@ -180,8 +180,7 @@ Annotation can be aligned relative to the node boundaries. It has [`margin`](htt
 
 The offset property of annotation is used to align the annotations based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
 
-Set the size for a nodes annotation by using [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Width) and
-[`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Height) properties.
+Set the size for a nodes annotation by using [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Height) properties.
 
 The following code shows the relationship between the annotation position (black color circle) and offset (fraction values).
 
@@ -288,8 +287,7 @@ The following code example illustrates how to align connector annotations.
 
 ## Margin
 
-[`Margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Margin) is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property.
-The following code example illustrates how to align a annotation based on its `offset`, `horizontalAlignment`, `verticalAlignment`, and `margin` values.
+[`Margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Margin) is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property. The following code example illustrates how to align a annotation based on its `offset`, `horizontalAlignment`, `verticalAlignment`, and `margin` values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -562,15 +560,13 @@ Diagram allows annotation to be interacted by selecting, dragging, rotating, and
 
 Diagram provides support to edit an annotation at runtime, either programmatically or interactively. By default, annotation is in view mode. But it can be brought to edit mode in two ways;
 
-* Programmatically
-By using [`startTextEdit`](../api/diagram/#startTextEdit) method, edit the text through programmatically.
+* Programmatically - By using [`startTextEdit`](../api/diagram/#startTextEdit) method, edit the text through programmatically.
 
 * Interactively
     1. By double-clicking the annotation.
     2. By selecting the item and pressing the F2 key.
 
-Double-clicking any annotation will enables editing and the node enables first annotation editing. When the focus of editor is lost, the annotation for the node is updated.
-When you double-click on the node/connector/diagram model, the [`doubleClick`](../api/diagram/#doubleClick--emittypeidoubleClickeventargs) event gets triggered.
+Double-clicking any annotation will enables editing and the node enables first annotation editing. When the focus of editor is lost, the annotation for the node is updated. When you double-click on the node/connector/diagram model, the [`doubleClick`](../api/diagram/#doubleClick--emittypeidoubleClickeventargs) event gets triggered.
 
 ## Read-only annotations
 

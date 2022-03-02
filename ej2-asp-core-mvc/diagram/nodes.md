@@ -49,8 +49,7 @@ To create a node, define the [`node`](https://help.syncfusion.com/cr/aspnetcore-
 
 ## Add/Remove node at runtime
 
-* Nodes can be added at runtime by using public method, add and can be removed at runtime by using public method,
-remove. On adding node at runtime, the nodes collection is changed and the [`collectionChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_CollectionChange) event will trigger.
+* Nodes can be added at runtime by using public method, add and can be removed at runtime by using public method, remove. On adding node at runtime, the nodes collection is changed and the [`collectionChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_CollectionChange) event will trigger.
 
 * The node’s ID property is used to define the name of the node and its further used to find the node at runtime and do any customization.
 
@@ -87,8 +86,7 @@ diagram.add(node);
 
 ## Add node from palette
 
-Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information
-about adding nodes from symbol palette, refer to [`Symbol Palette`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html).
+Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information about adding nodes from symbol palette, refer to [`Symbol Palette`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html).
 
 * Once you drag a node/connector from the palette to the diagram, the following events can be used to do your customization.
 * When a symbol is dragged into diagram from symbol palette, the [`dragEnter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_DragEnter) event gets triggered.
@@ -98,13 +96,11 @@ about adding nodes from symbol palette, refer to [`Symbol Palette`](https://help
 
 ## Create node through data source
 
-Nodes can be generated automatically with the information provided through data source. The default properties for
-these nodes are fetched from default settings. For more information about data source, refer to Data Binding.
+Nodes can be generated automatically with the information provided through data source. The default properties for these nodes are fetched from default settings. For more information about data source, refer to Data Binding.
 
 ## Draw nodes
 
-Nodes can be interactively drawn by clicking and dragging the diagram surface by using `NodeDrawingTool`. For more
-information about drawing nodes, refer to Draw Nodes.
+Nodes can be interactively drawn by clicking and dragging the diagram surface by using `NodeDrawingTool`. For more information about drawing nodes, refer to Draw Nodes.
 
 ## Position
 
@@ -112,8 +108,7 @@ information about drawing nodes, refer to Draw Nodes.
 
 * You may expect this offset values to represent the distance between page origin and node’s top-left corner instead of center. The Pivot property helps to solve this problem. Default value of node’s [`pivot`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Pivot) point is (0.5, 0.5), that means center of the node.
 
-* The size of the node can be controlled by using its [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Width) and
-[`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Height) properties.
+* The size of the node can be controlled by using its [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Height) properties.
 
 * Rotation of a node is controlled by using its [`rotateAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_RotateAngle) property.
 
@@ -151,19 +146,15 @@ The following code illustrates how to change the `pivot` value.
 
 ## Flip
 
-The diagram Provides support to flip the node. [`flip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Flip) is performed to
-give the mirrored image of the original element.
+The diagram Provides support to flip the node. [`flip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Flip) is performed to give the mirrored image of the original element.
 
 The flip types are as follows:
 
-* HorizontalFlip
- `Horizontal` is used to change the element in horizontal direction.
+* HorizontalFlip - `Horizontal` is used to change the element in horizontal direction.
 
-* VerticalFlip
-`Vertical` is used to change the element in vertical direction
+* VerticalFlip - `Vertical` is used to change the element in vertical direction.
 
-* Both
-`Both` which involves both vertical and horizontal changes of the element.
+* Both - `Both` which involves both vertical and horizontal changes of the element.
 
 The following code illustrates how to provide the mirror image of the original element.
 
@@ -193,8 +184,7 @@ The following code illustrates how to provide the mirror image of the original e
 
 ## Appearance
 
-* The appearance of a node can be customized by changing its [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_Fill) color, [`borderColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeColor), [`borderWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeWidth), [`strokeDashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeDashArray),
-[`opacity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_Opacity), and [`shadow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html).
+* The appearance of a node can be customized by changing its [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_Fill) color, [`borderColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeColor), [`borderWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeWidth), [`strokeDashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeDashArray), [`opacity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_Opacity), and [`shadow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html).
 
 * The [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Visible) property of the node enables or disables the visibility of the node.
 
@@ -294,8 +284,7 @@ There are two types of gradients as follows:
 
 ## Shadow
 
-Diagram provides support to add [`shadow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Shadow) effect to a node that is disabled, by default. It can be enabled with the
-constraints property of the node. The following code illustrates how to drop shadow.
+Diagram provides support to add [`shadow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Shadow) effect to a node that is disabled, by default. It can be enabled with the constraints property of the node. The following code illustrates how to drop shadow.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -321,8 +310,7 @@ constraints property of the node. The following code illustrates how to drop sha
 
 ## Customizing shadow
 
-The angle, distance, and opacity of the shadow can be customized with the shadow property of the node. The following code
-example illustrates how to customize shadow.
+The angle, distance, and opacity of the shadow can be customized with the shadow property of the node. The following code example illustrates how to customize shadow.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -390,11 +378,9 @@ The following code example illustrates how to create an icon of various shapes.
 
 ## Customizing collapse icon
 
-* Set the [`borderColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_BorderColor),
-[`borderWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_BorderWidth), background color for an collapseIcon using borderColor, borderWidth, and [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_Fill) properties.
+* Set the [`borderColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_BorderColor), [`borderWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_BorderWidth), background color for an collapseIcon using borderColor, borderWidth, and [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_Fill) properties.
 
-* Set a size for collapseIcon by using [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_Width) and
-[`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_Height) properties.
+* Set a size for collapseIcon by using [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramIconShape.html#Syncfusion_EJ2_Diagrams_DiagramIconShape_Height) properties.
 
 * Like expand icon, collapse icon also can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
 

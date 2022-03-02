@@ -203,8 +203,7 @@ node.constraints =  NodeConstraints.Default & ~NodeConstraints.InConnect,
 
 ## Connections with ports
 
-The [`sourcePortID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_SourcePortID) and [`targetPortID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_TargetPortID) properties allow to create connections between some specific points of source/target nodes.
-The following code example illustrates how to create port to port connections.
+The [`sourcePortID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_SourcePortID) and [`targetPortID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_TargetPortID) properties allow to create connections between some specific points of source/target nodes. The following code example illustrates how to create port to port connections.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -535,14 +534,11 @@ The diagram Provides support to flip the connector. The [`flip`](https://help.sy
 
 The flip types are as follows:
 
-* HorizontalFlip
- `Horizontal` is used to interchange the connector source and target x points.
+* HorizontalFlip - `Horizontal` is used to interchange the connector source and target x points.
 
-* VerticalFlip
-`Vertical` is used to interchange the connector source and target y points.
+* VerticalFlip - `Vertical` is used to interchange the connector source and target y points.
 
-* Both
-`Both` is used to interchange the source point as target point and target point as source point
+* Both - `Both` is used to interchange the source point as target point and target point as source point.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -570,8 +566,7 @@ The flip types are as follows:
 
 ## Bridging
 
-Line bridging creates a bridge for lines to smartly cross over the other lines, at points of intersection. By default, [`bridgeDirection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.BridgeDirection.html) is set to top. Depending upon the direction given bridging direction appears.
-Bridging can be enabled/disabled either with the `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
+Line bridging creates a bridge for lines to smartly cross over the other lines, at points of intersection. By default, [`bridgeDirection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.BridgeDirection.html) is set to top. Depending upon the direction given bridging direction appears. Bridging can be enabled/disabled either with the `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

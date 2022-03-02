@@ -69,9 +69,9 @@ It helps to explain how to apply security permission to file manager file or fol
 
 Use the `Role` property to apply created roles to the file manager. After that, the file manager displays folder or file and allow permisssion based on assigned roles.
 
-The following syntax represent how to apply permission based on assigned roles
+The following syntax represent how to apply permission based on assigned roles.
 
-Permission denied for administrator to write a file or folder.
+* Permission denied for administrator to write a file or folder.
 
 ```typescript
 // For file
@@ -84,9 +84,7 @@ Permission denied for administrator to write a file or folder.
 
 The following syntax represent how to allow or deny permission based on file or folder access rule.
 
-"Examples"
-
-Permission denied for writing except for particular file or folder.
+* Permission denied for writing except for particular file or folder.
 
 ```typescript
 // Deny writing for particular folder
@@ -97,7 +95,7 @@ Permission denied for writing except for particular file or folder.
 
 ```
 
-Permission denied for writing and uploading in root folder.
+* Permission denied for writing and uploading in root folder.
 
 ``` typescript
 // Folder Rule
