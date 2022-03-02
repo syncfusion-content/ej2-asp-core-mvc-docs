@@ -10,9 +10,7 @@ documentation: ug
 
 # Drag and Drop
 
-The grid row drag and drop allows you to drag and drop grid rows to another grid or custom component. To enable row drag and drop, set the [`AllowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowRowDragAndDrop) to true.
-The target component where the grid rows are to be dropped can be set by using
-the **TargetID**.
+The grid row drag and drop allows you to drag and drop grid rows to another grid or custom component. To enable row drag and drop, set the [`AllowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowRowDragAndDrop) to true. The target component where the grid rows are to be dropped can be set by using the **TargetID**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,8 +38,7 @@ the **TargetID**.
 
 
 > Selection feature must be enabled for row drag and drop.
-> Multiple rows can be selected by clicking and dragging inside the grid.
-For multiple row selection, the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property of [`SelectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html) must be set to **Multiple**.
+> Multiple rows can be selected by clicking and dragging inside the grid. For multiple row selection, the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property of [`SelectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html) must be set to **Multiple**.
 
 ## Drag and drop within Grid
 

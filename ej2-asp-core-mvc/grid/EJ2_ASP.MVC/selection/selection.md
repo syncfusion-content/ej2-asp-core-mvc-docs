@@ -16,8 +16,7 @@ Selection provides an option to highlight a row or a cell. It can be done throug
 The grid supports two types of selection that can be set by using the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property of [`SelectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html). They are:
 
 * **Single**: The Single value is set by default, and it only allows selection of a single row or a cell or a column.
-* **Multiple**: Allows you to select multiple rows or cells or columns.
-To perform the multi-selection, press and hold CTRL key and click the desired rows or cells or columns. To select range of rows or cells or columns, press and hold the SHIFT key and click the rows or cells or columns.
+* **Multiple**: Allows you to select multiple rows or cells or columns. To perform the multi-selection, press and hold CTRL key and click the desired rows or cells or columns. To select range of rows or cells or columns, press and hold the SHIFT key and click the rows or cells or columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -46,8 +45,7 @@ To perform the multi-selection, press and hold CTRL key and click the desired ro
 
 ## Selection mode
 
-The grid supports three types of selection mode that can be set by using
-the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) property of [`SelectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html). They are:
+The grid supports three types of selection mode that can be set by using the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) property of [`SelectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html). They are:
 
 * **Row**: The Row value is set by default, and allows you to select only rows.
 * **Cell**: Allows you to select only cells.
@@ -80,9 +78,7 @@ the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.
 
 ## Touch interaction
 
-When you tap a grid row on touchscreen device, the tapped row is selected.
-It also shows a popup ![selection](../../images/selection.jpg)  for multi-row selection.
-To select multiple rows or cells, tap the popup![mselection](../../images/mselection.jpg)  and then tap the desired rows or cells.
+When you tap a grid row on touchscreen device, the tapped row is selected. It also shows a popup ![selection](../../images/selection.jpg) for multi-row selection. To select multiple rows or cells, tap the popup![mselection](../../images/mselection.jpg)  and then tap the desired rows or cells.
 
 > Multi-selection requires the selection `Type` to be `Multiple`.
 

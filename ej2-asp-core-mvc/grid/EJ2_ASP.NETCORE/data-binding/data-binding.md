@@ -80,8 +80,7 @@ The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspn
 
 
 
-> The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event will be triggered not only for the server errors, but
-also when there is an exception while processing the grid actions.
+> The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event will be triggered not only for the server errors, but also when there is an exception while processing the grid actions.
 
 ## Binding with ajax
 

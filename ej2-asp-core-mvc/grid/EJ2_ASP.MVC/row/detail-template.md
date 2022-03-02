@@ -10,8 +10,7 @@ documentation: ug
 
 # Detail Template
 
-The detail template provides additional information about a particular row by expanding or collapsing detail content. The [`DetailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property accepts either
-the template string or HTML element ID.
+The detail template provides additional information about a particular row by expanding or collapsing detail content. The [`DetailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property accepts either the template string or HTML element ID.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,8 +39,7 @@ the template string or HTML element ID.
 
 ## Rendering custom component
 
-To render the custom component inside the detail row, define the template in the [`DetailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) and render the
-component in the [`DetailDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event.
+To render the custom component inside the detail row, define the template in the [`DetailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) and render the component in the [`DetailDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event.
 
 For example, to render grid inside the detail row, place an HTML div element as the [`DetailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) and render the DIV element as grid component in the [`DetailDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event.
 

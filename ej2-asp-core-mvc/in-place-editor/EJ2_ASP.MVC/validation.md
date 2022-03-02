@@ -39,9 +39,9 @@ In-place Editor has following validation rules, which are used to perform valida
 
 The following steps are used to configure validation in In-place Editor.
 
-Step 1: To perform default validation in In-place Editor the `name` property is mandatory. And the specified name must be the same as the key name.
+**Step 1**: To perform default validation in In-place Editor the `name` property is mandatory. And the specified name must be the same as the key name.
 
-Step 2:  The corresponding name specified in the name property should bind with the `validationRules` property. For example, in the below code snippet, the `Number`  in the name property is bind with the `maxLength`  of validationRules.  Likewise, you can bind with the in-build validation configurations in the above table.
+**Step 2**: The corresponding name specified in the name property should bind with the `validationRules` property. For example, in the below code snippet, the `Number`  in the name property is bind with the `maxLength`  of validationRules.  Likewise, you can bind with the in-build validation configurations in the above table.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

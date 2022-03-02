@@ -11,8 +11,7 @@ documentation: ug
 
 # Sorting
 
-Sorting enables you to sort data in the **Ascending** or **Descending** order.
-To sort a column, click the column header.
+Sorting enables you to sort data in the **Ascending** or **Descending** order. To sort a column, click the column header.
 
 To enable sorting in the Grid, set the [`AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) to true. Sorting options can be configured through the [`SortSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html).
 
@@ -47,8 +46,7 @@ To enable sorting in the Grid, set the [`AllowSorting`](https://help.syncfusion.
 
 ## Initial sort
 
-To sort at initial rendering, set the **Field** and
-**Direction** in [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html#Syncfusion_EJ2_Grids_GridSortSettings_Columns) property of [`SortSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html).
+To sort at initial rendering, set the **Field** and **Direction** in [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html#Syncfusion_EJ2_Grids_GridSortSettings_Columns) property of [`SortSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

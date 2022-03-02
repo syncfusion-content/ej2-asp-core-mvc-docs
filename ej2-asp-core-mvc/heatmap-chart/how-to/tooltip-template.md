@@ -15,13 +15,9 @@ You can show a tooltip as a table using the `template` property in `TooltipSetti
 
 The following steps describe how to show the table tooltip.
 
-**Step 1**:
+**Step 1**: Initialize the tooltip template div as shown in the following html page.
 
-Initialize the tooltip template div as shown in the following html page.
-
-**Step 2**:
-
-Set the element id to the `template` property in `TooltipSettings` to show the tooltip template.
+**Step 2**: Set the element id to the `template` property in `TooltipSettings` to show the tooltip template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

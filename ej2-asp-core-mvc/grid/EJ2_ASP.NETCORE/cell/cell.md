@@ -80,8 +80,7 @@ In the below example, we have customized the cells of **OrderID** and **ShipCity
 
 ## Grid lines
 
-The **GridLines** have option to display cell border and it can be defined by the
-[`gridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GridLines) property.
+The **GridLines** have option to display cell border and it can be defined by the [`gridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GridLines) property.
 
 The available modes of grid lines are:
 

@@ -11,7 +11,7 @@ documentation: ug
 
 # Scrolling
 
- The scrollbar will be displayed in the grid when content exceeds the element [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) or [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
+The scrollbar will be displayed in the grid when content exceeds the element [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) or [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 
 * The vertical scrollbar appears when the total height of rows present in the grid exceeds its element height.
 * The horizontal scrollbar appears when the sum of columns width exceeds the grid element width.
@@ -50,8 +50,7 @@ To specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 
 ## Responsive with parent container
 
-Specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) and [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) as **100%** to make the grid element fill its parent container.
-Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) to **100%** requires the grid parent element to have explicit height.
+Specify the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) and [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) as **100%** to make the grid element fill its parent container. Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) to **100%** requires the grid parent element to have explicit height.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

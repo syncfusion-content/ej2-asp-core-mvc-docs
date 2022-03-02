@@ -13,8 +13,7 @@ documentation: ug
 
 ## Built-in toolbar items
 
-Built-in toolbar items execute standard actions of the grid, and it can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar)
-as a collection of built-in items. It renders the button with icon and text.
+Built-in toolbar items execute standard actions of the grid, and it can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) as a collection of built-in items. It renders the button with icon and text.
 
 The following table shows built-in toolbar items and its actions.
 
@@ -60,9 +59,7 @@ The following table shows built-in toolbar items and its actions.
 
 ## Custom toolbar items
 
-Custom toolbar items can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) as a collection of
-**ItemModels**.
-Actions for this customized toolbar items are defined in the [`ToolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event.
+Custom toolbar items can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) as a collection of **ItemModels**. Actions for this customized toolbar items are defined in the [`ToolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event.
 
 By default, Custom toolbar items are in position **Left**. You can change the position by using the **align** property. In the below sample, we have applied position **Right** for the **Collapse All** toolbar item.
 
