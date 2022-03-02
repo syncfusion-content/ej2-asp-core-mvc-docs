@@ -12,7 +12,7 @@ documentation: ug
 
 The Grid has options to group records by dragging and dropping the column header to the group drop area. When grouping is applied, grid records are organized into a hierarchical structure to facilitate easier expansion and collapse of records.
 
-To enable grouping in the grid, set the [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) as true. Grouping options can be configured through the [`e-grid-groupsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings)  tag helper.
+To enable grouping in the grid, set the [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) as true. Grouping options can be configured through the [`e-grid-groupsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,10 +39,8 @@ To enable grouping in the grid, set the [`allowGrouping`](https://help.syncfusio
 
 
 
-> * You can group and ungroup columns by using the **groupColumn** and
-**ungroupColumn** methods.
-> * To disable grouping for a particular column, set the
-[`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) to false in **e-grid-column** tag helper.
+> * You can group and ungroup columns by using the **groupColumn** and **ungroupColumn** methods.
+> * To disable grouping for a particular column, set the [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) to false in **e-grid-column** tag helper.
 
 ## Initial group
 
@@ -75,8 +73,7 @@ To apply group at initial rendering, set the column field name in the [`columns`
 
 ## Hide drop area
 
-To avoid ungrouping or further grouping of a column after initial column
-grouping, define the [`showDropArea`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_ShowDropArea) of **e-grid-groupsettings**  as false.
+To avoid ungrouping or further grouping of a column after initial column grouping, define the [`showDropArea`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_ShowDropArea) of **e-grid-groupsettings**  as false.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -111,10 +108,7 @@ On grouping columns with paging feature, the aggregated information and total it
 
 ## Group by format
 
-By default, a column will be grouped by the data or value present for the particular row. To group the numeric
-or datetime column based on the mentioned format, you have to enable the
-[`enableGroupByFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_EnableGroupByFormat) property of the corresponding
-grid columns.
+By default, a column will be grouped by the data or value present for the particular row. To group the numeric or datetime column based on the mentioned format, you have to enable the [`enableGroupByFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_EnableGroupByFormat) property of the corresponding grid columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -143,8 +137,7 @@ grid columns.
 
 ## Grouping events
 
-During the group action, the grid component triggers two events. The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event
-triggers before the group action starts and the [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event triggers after the group action is completed. Using these events you can perform any action.
+During the group action, the grid component triggers two events. The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event triggers before the group action starts and the [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event triggers after the group action is completed. Using these events you can perform any action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

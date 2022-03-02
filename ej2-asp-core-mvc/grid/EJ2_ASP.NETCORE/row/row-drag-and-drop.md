@@ -11,8 +11,7 @@ documentation: ug
 # Drag and Drop
 
 The grid row drag and drop allows you to drag and drop grid rows to another grid or custom component. To enable row drag and drop, set the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowRowDragAndDrop) property to true.
-The target component where the grid rows are to be dropped can be set by using
-the **TargetID**.
+The target component where the grid rows are to be dropped can be set by using the **TargetID**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
