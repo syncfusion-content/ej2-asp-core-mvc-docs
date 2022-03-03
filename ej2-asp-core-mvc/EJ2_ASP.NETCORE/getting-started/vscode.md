@@ -69,7 +69,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 {% endtabs %}
 
 ## Add Style Sheet
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core components. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -78,7 +78,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
         ....
         ....
 
-        <!-- Syncfusion ASP.NET Core components Styles -->
+        <!-- Syncfusion ASP.NET Core controls Styles -->
         <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 
     </head>
@@ -96,7 +96,7 @@ In this getting started walk-through, the required scripts are referred using CD
         ....
         ....
 
-        <!-- Syncfusion ASP.NET Core components Scripts -->
+        <!-- Syncfusion ASP.NET Core controls Scripts -->
         <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
 

@@ -26,9 +26,9 @@ The following steps are used to create the ASP.NET Core Application.
 
 **Step 1:** Open the Visual Studio and click the **File** menu and select **New -> Project** option.
 
-![Getting started with the visual studio](../images/default-template.png)
+![Getting started with the Visual Studio](../images/default-template.png)
 
-**Step 2:** Select **ASP.NET Core Web Application** templates in visual studio 2019 and click **Next**.
+**Step 2:** Select **ASP.NET Core Web Application** templates in Visual Studio 2019 and click **Next**.
 
 ![Select the Asp.Net core application](../linear-gauge/images/project-selection.png)
 

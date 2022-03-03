@@ -10,7 +10,7 @@ documentation: ug
 
 # Size Mode for ASP.NET Core Components
 
-Syncfusion ASP.NET Core components support touch (bigger theme) and normal size modes. Below topics explains how to enable the same in your application.
+Syncfusion ASP.NET Core controls support touch (bigger theme) and normal size modes. Below topics explains how to enable the same in your application.
 
 ## Size mode for application
 
