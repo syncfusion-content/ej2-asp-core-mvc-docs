@@ -135,8 +135,7 @@ Page orientation can be changed to `Portrait` (Default Landscape) for the export
 
 ### How to change page size
 
-Page size can be customized for the exported document using the property `pdfExportProperties.pageSize`.
-The supported page sizes are:
+Page size can be customized for the exported document using the property `pdfExportProperties.pageSize`. The supported page sizes are:
 
 * Letter
 * Note
@@ -432,9 +431,7 @@ In the following sample, the taskbar background color is customized in the chart
 
 ### Theme
 
-PDF export provides an option to include theme for the exported PDF document.
-To apply theme in exported PDF, define the `theme` in `pdfExportProperties`.
-The available themes are:
+PDF export provides an option to include theme for the exported PDF document. To apply theme in exported PDF, define the `theme` in `pdfExportProperties`. The available themes are:
 
 * Material
 * Fabric
@@ -468,8 +465,7 @@ The available themes are:
 
 ### Customized Theme
 
-PDF export provides an option to customize the Gantt style for the exported PDF document.
-To customize Gantt style in exported PDF, define the `ganttStyle` in `pdfExportProperties`.
+PDF export provides an option to customize the Gantt style for the exported PDF document. To customize Gantt style in exported PDF, define the `ganttStyle` in `pdfExportProperties`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

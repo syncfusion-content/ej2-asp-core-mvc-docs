@@ -13,10 +13,7 @@ documentation: ug
 
 ## DropDownButton icons
 
-DropDownButton can have an icon to provide the visual representation of the action. To place the icon on a DropDownButton,
-set the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_IconCss) property to `e-icons` with the required icon CSS. By default,
-the icon is positioned to the left side of the DropDownButton. You can customize the icon's position using
-the [`iconPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_IconPosition) property.
+DropDownButton can have an icon to provide the visual representation of the action. To place the icon on a DropDownButton, set the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_IconCss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the DropDownButton. You can customize the icon's position using the [`iconPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_IconPosition) property.
 
 In the following example, the DropDownButton with default iconPosition and iconPosition as `Top` is showcased:
 
@@ -45,8 +42,7 @@ In the following example, the DropDownButton with default iconPosition and iconP
 
 
 
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
-You can also use third party icons on the DropDownButton using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_IconCss) property.
+> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the DropDownButton using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_IconCss) property.
 
 ### Vertical button
 

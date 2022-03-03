@@ -11,9 +11,7 @@ documentation: ug
 
 # Magnification
 
-The magnification tools of the PDF viewer contains ZoomIn,ZoomOut,Zoom,FitPage, and FitWidth tools in the
-default toolbar. The PDF Viewer also has an option to show or hide the magnification tools in the
-default toolbar.
+The magnification tools of the PDF viewer contains ZoomIn,ZoomOut,Zoom,FitPage, and FitWidth tools in the default toolbar. The PDF Viewer also has an option to show or hide the magnification tools in the default toolbar.
 
 The following code snippet describes how to enable the magnification in PDF Viewer.
 

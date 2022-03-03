@@ -40,12 +40,11 @@ Scheduler component can be rendered by using the `ejs-schedule` tag helper in AS
 
 > Running the above code will display an empty Scheduler with system date and time on the browser like below.
 
-![empty scheduler](../../schedule/images/scheduler.png)
+![empty scheduler](images/scheduler.png)
 
 ## Populating appointments
 
-To populate an empty Scheduler with appointments, bind the event data to it by
-assigning the `dataSource` property under `e-schedule-eventsettings` tag Helper.
+To populate an empty Scheduler with appointments, bind the event data to it by assigning the `dataSource` property under `e-schedule-eventsettings` tag Helper.
 
 * Create a new Class in controller page to define the data to be passed to the Scheduler as mentioned below,
 
@@ -147,7 +146,7 @@ public List<AppointmentData> GetScheduleData()
 
 Output be like the below.
 
-![appointments](../../schedule/images/appointments.png)
+![appointments](images/appointments.png)
 
 ## Setting date
 

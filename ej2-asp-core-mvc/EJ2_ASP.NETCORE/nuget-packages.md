@@ -60,13 +60,11 @@ The Package Manager Console saves NuGet packages installation time since you don
 
     The below command will install the Syncfusion ASP.NET Core NuGet package in the default ASP.NET Core application.
 
-    <!-- markdownlint-disable MD033 -->
-
     ```Install-Package <Package Name>```
 
-    **For example:**
+    **Example:**
 
-    ```cmd
+    ```
     Install-Package Syncfusion.EJ2.AspNet.Core
     ```
 
@@ -78,15 +76,15 @@ The Package Manager Console saves NuGet packages installation time since you don
 
     ```Install-Package <Package Name> - ProjectName <Project Name>```
 
-    **For example:**
+    **Example:**
 
-    ```cmd
+    ```
     Install-Package Syncfusion.EJ2.AspNet.Core -ProjectName SyncfusionDemoApp
     ```
 
 3. By default, the package will be installed with latest version. You can give the required version with the -Version term like below to install the Syncfusion ASP.NET Core NuGet packages in the appropriate version.
 
-    ```cmd
+    ```
     Install-Package Syncfusion.EJ2.AspNet.Core -Version 19.4.0.47
     ```
 
@@ -107,11 +105,10 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 2. To install a NuGet package, run the following command.
 
     ```dotnet add package <Package name>```
-    <!-- markdownlint-enable MD033 -->
 
-    **For Example:**
+    **Example:**
 
-    ```cmd
+    ```
     dotnet add package Syncfusion.EJ2.AspNet.Core
     ```
 

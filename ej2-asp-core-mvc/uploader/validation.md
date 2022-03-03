@@ -11,8 +11,8 @@ documentation: ug
 
 # Validation
 
-The uploader control validate the selected files size and extension using the [allowedExtensions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AllowedExtensions), [minFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MinFileSize) and [maxFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MaxFileSize) properties. The files can be validated before uploading to the server and can be ignored on uploading.
-Also, you can validate the files by setting the HTML attributes to the original input element.
+The uploader control validate the selected files size and extension using the [allowedExtensions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AllowedExtensions), [minFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MinFileSize) and [maxFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MaxFileSize) properties. The files can be validated before uploading to the server and can be ignored on uploading. 
+Also, you can validate the files by setting the HTML attributes to the original input element. 
 The validation process occurs on drag-and-drop the files also.
 
 ## File type
@@ -112,7 +112,7 @@ You can restrict uploading the maximum number of files using the **selected** ev
 
 ## Duplicate files
 
-You can validate the duplicate files before uploading to server using the selected event.
+You can validate the duplicate files before uploading to server using the selected event. 
 Compare the selected files with the existing files data and filter the file list by removing the duplicate files.
 
 {% if page.publishingplatform == "aspnet-core" %}

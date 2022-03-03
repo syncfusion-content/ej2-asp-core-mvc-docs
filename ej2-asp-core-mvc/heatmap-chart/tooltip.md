@@ -15,7 +15,7 @@ Tooltip is used to provide the details of the heatmap cell, and this can be disp
 
 ## Default tooltip
 
-You can enable the tooltip by setting the [`showTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~ShowTooltip.html)  property to true.
+You can enable the tooltip by setting the [`showTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~ShowTooltip.html) property to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

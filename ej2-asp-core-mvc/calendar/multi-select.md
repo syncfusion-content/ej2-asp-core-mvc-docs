@@ -18,7 +18,7 @@ Calendar provides an option to select **single** or **multiple dates** by using 
 | `isMultiSelection`| **Boolean**| Enables the multi-selection option in the Calendar control |
 |`values`| **Date[]** | Gets or sets the date range values in multi-selection option |
 
-The following example demonstrates the functionality of  `isMultiSelection` property and `values` properties in the Calendar control.
+The following example demonstrates the functionality of `isMultiSelection` property and `values` properties in the Calendar control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

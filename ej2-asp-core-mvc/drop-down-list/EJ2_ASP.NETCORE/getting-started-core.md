@@ -48,8 +48,7 @@ DropDownList control can be rendered by using the `ejs-dropdownlist` tag helper 
 
 ## Binding data source
 
-After initialization, populate the DropDownList with data using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~DataSource.html) property.
-Here, an array of string values is passed to the DropDownList component.
+After initialization, populate the DropDownList with data using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~DataSource.html) property. Here, an array of string values is passed to the DropDownList component.
 
 The following example illustrates the output in your browser.
 
@@ -82,9 +81,7 @@ The following example illustrates the output in your browser.
 
 By default, the width of the popup list automatically adjusts according to the DropDownList input element's width, and the height of the popup list has '300px'.
 
-The height and width of the popup list can also be customized using the
-[popupHeight](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~PopupHeight.html) and [popupWidth](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~PopupWidth.html) properties
-respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~PopupHeight.html) and [popupWidth](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~PopupWidth.html) properties respectively.
 
 In the following sample, popup list's width and height are configured.
 

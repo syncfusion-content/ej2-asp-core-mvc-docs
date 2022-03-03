@@ -13,8 +13,7 @@ documentation: ug
 
 ## Uml Class Diagram Shapes
 
-Class diagram is used to represent the static view of an application. The class diagrams are widely used in the modelling of object oriented systems because they are the only UML diagrams which can be mapped directly with object-oriented languages.
-Diagram supports to generate the class diagram shapes from business logic.
+Class diagram is used to represent the static view of an application. The class diagrams are widely used in the modelling of object oriented systems because they are the only UML diagrams which can be mapped directly with object-oriented languages. Diagram supports to generate the class diagram shapes from business logic.
 
 The UML class diagram shapes are explained as follows.
 
@@ -155,8 +154,8 @@ The UML class diagram shapes are explained as follows.
 
 Association is basically a set of links that connects elements of an UML model. The type of association are as follows.
 
-    1. Directional
-    2. BiDirectional
+1. Directional
+2. BiDirectional
 
 The association property allows you to define the type of association. The default value of association is “Directional”. The following code example illustrates how to create an association.
 
@@ -187,8 +186,7 @@ The association property allows you to define the type of association. The defau
 
 ## Aggregation
 
-Aggregation is a binary association between a property and one or more composite objects which group together a set of instances.
-Aggregation is decorated with a hollow diamond. To create an aggregation shape, define the relationship as “aggregation”.
+Aggregation is a binary association between a property and one or more composite objects which group together a set of instances. Aggregation is decorated with a hollow diamond. To create an aggregation shape, define the relationship as “aggregation”.
 
 The following code example illustrates how to create an aggregation.
 
@@ -251,8 +249,7 @@ The following code example illustrates how to create a composition.
 
 ## Dependency
 
-Dependency is a directed relationship, which is used to show that some UML elements needs or depends on other model elements for specifications. Dependency is shown as dashed line with opened arrow.
-To create a dependency, define the relationship property of connector as “dependency”.
+Dependency is a directed relationship, which is used to show that some UML elements needs or depends on other model elements for specifications. Dependency is shown as dashed line with opened arrow. To create a dependency, define the relationship property of connector as “dependency”.
 
 The following code example illustrates how to create an dependency.
 
@@ -283,12 +280,9 @@ The following code example illustrates how to create an dependency.
 
 ## Inheritance
 
-Inheritance is also called as “generalization”. Inheritance is a binary taxonomic directed relationship between a more general classifier (super class) and a more specific classifier (subclass).
-Inheritance is shown as a line with hollow triangle.
+Inheritance is also called as “generalization”. Inheritance is a binary taxonomic directed relationship between a more general classifier (super class) and a more specific classifier (subclass). Inheritance is shown as a line with hollow triangle.
 
-To create an inheritance, define the relationship as “inheritance”.
-
-The following code example illustrates how to create an inheritance.
+To create an inheritance, define the relationship as “inheritance”. The following code example illustrates how to create an inheritance.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -319,10 +313,10 @@ The following code example illustrates how to create an inheritance.
 
 Multiplicity is a definition of an inclusive interval of non-negative integers to specify the allowable number of instances of described element. The type of multiplicity are as follows.
 
-    1. OneToOne
-    2. ManyToOne
-    3. OneToMany
-    4. ManyToMany
+1. OneToOne
+2. ManyToOne
+3. OneToMany
+4. ManyToMany
 
 * By default the multiplicity will be considered as “OneToOne”.
 
@@ -334,7 +328,7 @@ Multiplicity is a definition of an inclusive interval of non-negative integers t
 
 * The [`lowerBounds`](https://ej2.syncfusion.com/documentation/api/diagram/multiplicityLabelModel#lowerbounds) and [`upperBounds`](https://ej2.syncfusion.com/documentation/api/diagram/multiplicityLabelModel#upperbounds) could be natural constants or constant expressions evaluated to natural (non negative) number. Upper bound could be also specified as asterisk ‘\*’ which denotes unlimited number of elements. Upper bound should be greater than or equal to the lower bound.
 
-* The following code example illustrates how to customize the multiplicity.
+The following code example illustrates how to customize the multiplicity.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -367,11 +361,11 @@ Activity diagram is basically a flowchart to represent the flow from one activit
 
 The purpose of an activity diagram can be described as follows.
 
-    1. Draw the activity flow of a system.
+1. Draw the activity flow of a system.
 
-    2. Describe the sequence from one activity to another.
+2. Describe the sequence from one activity to another.
 
-    3. Describe the parallel, branched, and concurrent flow of the system.
+3. Describe the parallel, branched, and concurrent flow of the system.
 
 To create a UmlActivity, define type as "UmlActivity" and the list of built-in shapes as demonstrated as follows and it should be set in the "shape" property.
 

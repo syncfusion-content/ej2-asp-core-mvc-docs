@@ -17,9 +17,7 @@ Bind the text and interior information for a point from dataSource. To change th
 
 Follow the given steps to customize the  background color of data label template from webservice, which includes colors:
 
-**Step 1**:
-
-Get the data from webservice, which also includes color attribute to bind the name in the data label options to use point.text in the data label template.
+**Step 1**: Get the data from webservice, which also includes color attribute to bind the name in the data label options to use point.text in the data label template.
 
 To get data from web service, use any adaptor webApi or Url adaptor in the data manager, and then bind the data manager to the `dataSource` property in the series options.
 
@@ -71,10 +69,7 @@ public class EmployeeModel
 }
 ```
 
-**Step 2**:
-
-<!-- markdownlint-disable MD033 -->
-Initialize the data label template <div> as demonstrated in the following html page.
+**Step 2**: Initialize the data label template <div> as demonstrated in the following html page.
 
 ```html
 <script id="index" type="text/x-template">
@@ -87,9 +82,7 @@ Initialize the data label template <div> as demonstrated in the following html p
 </script>
 ```
 
-**Step 3**:
-
-To show the data label template, set the element id to the `template` property in data label.
+**Step 3**: To show the data label template, set the element id to the `template` property in data label.
 
 ```html
  @Html.EJS().Chart("container").Series(
@@ -133,6 +126,4 @@ To show the data label template, set the element id to the `template` property i
 
 
 
-**Sample reference**
-
-Sample for how to customize the background color of data label is available in [`chart sample`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/chartsample1860216677).
+**Sample:** Customize the background color of data label is available in [`chart sample`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/chartsample1860216677).

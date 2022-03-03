@@ -40,12 +40,11 @@ We are going to render `Scheduler` component in ASP.NET MVC application. Add the
 
 > Running the above code will display an empty Scheduler with system date and time on the browser like below.
 
-![empty scheduler](../images/scheduler.png)
+![empty scheduler](images/scheduler.png)
 
 ## Populating appointments
 
-To populate an empty Scheduler with appointments, bind the event data to it by
-assigning the `DataSource` property under `EventSettings` property.
+To populate an empty Scheduler with appointments, bind the event data to it by assigning the `DataSource` property under `EventSettings` property.
 
 * Create a new Class in controller page to define the data to be passed to the Scheduler as mentioned below,
 
@@ -152,7 +151,7 @@ public List<AppointmentData> GetScheduleData()
 
 Output be like the below.
 
-![appointments](../images/appointments.png)
+![appointments](images/appointments.png)
 
 ## Setting  date
 

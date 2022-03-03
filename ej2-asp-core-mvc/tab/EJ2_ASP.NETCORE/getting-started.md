@@ -44,7 +44,7 @@ documentation: ug
 
 Output be like the below.
 
-![getting started](../../tab/images/gettingstarted.PNG)
+![getting started](../tab/images/gettingstarted.PNG)
 
 ## Initialize the Tab using JSON items collection
 

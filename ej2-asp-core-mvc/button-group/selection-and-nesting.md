@@ -15,9 +15,7 @@ documentation: ug
 
 ### Single selection
 
-ButtonGroup supports radio type selection in which only one button can be selected. This can be achieved by adding input element
-along with `id` attribute with its corresponding label along with `for` attribute inside the target element. In this ButtonGroup,
-the type of the input element should be `radio` and `e-btn` is added to the `label` element.
+ButtonGroup supports radio type selection in which only one button can be selected. This can be achieved by adding input element along with `id` attribute with its corresponding label along with `for` attribute inside the target element. In this ButtonGroup, the type of the input element should be `radio` and `e-btn` is added to the `label` element.
 
 The following example illustrates the single selection behavior in ButtonGroup.
 
@@ -48,9 +46,7 @@ The following example illustrates the single selection behavior in ButtonGroup.
 
 ### Multiple selection
 
-ButtonGroup supports checkbox type selection in which multiple button can be selected. This can be achieved by adding input element
-along with `id` attribute with its corresponding label along with `for` attribute inside the target element. In this ButtonGroup,
-the type of the input element should be `checkbox` and `e-btn` is added to the `label` element.
+ButtonGroup supports checkbox type selection in which multiple button can be selected. This can be achieved by adding input element along with `id` attribute with its corresponding label along with `for` attribute inside the target element. In this ButtonGroup, the type of the input element should be `checkbox` and `e-btn` is added to the `label` element.
 
 The following example illustrates the multiple selection behavior in ButtonGroup.
 

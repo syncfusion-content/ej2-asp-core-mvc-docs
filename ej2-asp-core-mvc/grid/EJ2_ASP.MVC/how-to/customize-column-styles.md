@@ -15,9 +15,7 @@ You can customize the appearance of the header and content of a particular colum
 
 To customize the grid column, follow the given steps:
 
-**Step 1**:
-
-Create a CSS class with custom style to override the default style for rowcell and headercell.
+**Step 1**: Create a CSS class with custom style to override the default style for rowcell and headercell.
 
 ```css
 .e-grid .e-rowcell.customcss{
@@ -36,9 +34,7 @@ Create a CSS class with custom style to override the default style for rowcell a
 
 ```
 
-**Step 2**:
-
-Add the custom CSS class to the specified column by using the [`customAttributes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_CustomAttributes) property.
+**Step 2**: Add the custom CSS class to the specified column by using the [`customAttributes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_CustomAttributes) property.
 
 ```typescript
 col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).CustomAttributes(new { @class = "customcss" }).Add();

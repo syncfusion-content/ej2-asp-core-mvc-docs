@@ -369,9 +369,7 @@ The zooming support provides options to increase or decrease the width of timeli
 
 ### Zoom in
 
-This support is used to increase the timeline width and timeline unit from years to minutes
-timespan. When the `ZoomIn` icon was clicked, the timeline cell width is increased when the cell
-size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
+This support is used to increase the timeline width and timeline unit from years to minutes timespan. When the `ZoomIn` icon was clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
 
 ### Zoom out
 

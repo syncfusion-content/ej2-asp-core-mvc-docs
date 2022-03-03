@@ -110,8 +110,7 @@ To arrange nodes in a radial tree structure, set the [`type`](https://help.syncf
 
 ## Organizational Chart
 
-An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as an `OrganizationalChart`.
-The following code example illustrates how to create an organizational chart.
+An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as an `OrganizationalChart`. The following code example illustrates how to create an organizational chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -154,8 +153,8 @@ Organizational chart layout starts parsing from root and iterate through all its
 
 Set chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, `diagram.layout.getLayoutInfo`. The [`getLayoutInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_GetLayoutInfo) method is called to configure every subtree of the organizational chart. It takes the following arguments.
 
-    * node: Parent node to that options are to be customized.
-    * options: Object to set the customizable properties.
+* node: Parent node to that options are to be customized.
+* options: Object to set the customizable properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -323,8 +322,7 @@ The following code illustrates how to arrange the nodes in a radial tree structu
 
 ## Mind Map layout
 
-A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `MindMap`.
-The following code example illustrates how to create an organizational chart.
+A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `MindMap`. The following code example illustrates how to create an organizational chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -350,8 +348,7 @@ The following code example illustrates how to create an organizational chart.
 
 ## Complex hierarchical tree
 
-Complex hierarchical tree layout is the extended version of the hierarchical tree layout. The child had been two or more parents. To create a complex hierarchical tree, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `ComplexHierarchicalTree`.
-The following code example illustrates how to create a complex hierarchical tree.
+Complex hierarchical tree layout is the extended version of the hierarchical tree layout. The child had been two or more parents. To create a complex hierarchical tree, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `ComplexHierarchicalTree`. The following code example illustrates how to create a complex hierarchical tree.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -620,7 +617,7 @@ Diagram allows to refresh the layout at runtime. To refresh the layout, refer to
 
 ### setNodeTemplate
 
- The setNodeTemplate function is provided for the purpose of customizing nodes. It will be called for each node on node initialization. In this function, the node style and its properties can be customized and can bind the custom JSON with node.
+The setNodeTemplate function is provided for the purpose of customizing nodes. It will be called for each node on node initialization. In this function, the node style and its properties can be customized and can bind the custom JSON with node.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

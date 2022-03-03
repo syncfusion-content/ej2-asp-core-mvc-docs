@@ -13,8 +13,7 @@ documentation: ug
 
 ## Smart Axis Labels
 
-When the axis labels overlap with each other, you can use [`labelIntersectAction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelIntersectAction)
-property in the axis, to place them smartly.
+When the axis labels overlap with each other, you can use [`labelIntersectAction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelIntersectAction) property in the axis, to place them smartly.
 
 When setting `labelIntersectAction` as `Hide`
 
@@ -99,8 +98,7 @@ When setting `labelIntersectAction` as `Rotate90`
 
 ## Axis Labels Positioning
 
-By default, the axis labels can be placed at `outside` the axis line and this also can be placed at `inside`
-the axis line using the `labelPosition` property.
+By default, the axis labels can be placed at `outside` the axis line and this also can be placed at `inside` the axis line using the `labelPosition` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -129,8 +127,7 @@ the axis line using the `labelPosition` property.
 
 ## Multilevel Labels
 
-Any number of levels of labels can be added to an axis using the `multiLevelLabels` property. This property can be
-configured using the following properties:
+Any number of levels of labels can be added to an axis using the `multiLevelLabels` property. This property can be configured using the following properties:
 
 • Categories
 • Overflow
@@ -227,8 +224,7 @@ The `alignment` property provides option to position the multilevel labels at `f
 
 ### Text customization
 
-The `textStyle` property of multilevel labels provides options to customize the `size`, `color`, `fontFamily`,
-`fontWeight`, `fontStyle`, `opacity`, `textAlignment` and `textOverflow`.
+The `textStyle` property of multilevel labels provides options to customize the `size`, `color`, `fontFamily`, `fontWeight`, `fontStyle`, `opacity`, `textAlignment` and `textOverflow`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -257,8 +253,7 @@ The `textStyle` property of multilevel labels provides options to customize the 
 
 ### Border customization
 
-Using the `border` property, you can customize the `width`, `color`, and `type`. The `type` of border
-are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBottomBorder` and `CurlyBrace`.
+Using the `border` property, you can customize the `width`, `color`, and `type`. The `type` of border are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBottomBorder` and `CurlyBrace`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -287,9 +282,7 @@ are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBot
 
 ## Edge Label Placement
 
-Labels with long text at the edges of an axis may appear partially in the chart. To avoid this,
-use [`edgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_EdgeLabelPlacement) property in axis, which moves
-the label inside the chart area for better appearance or hides it.
+Labels with long text at the edges of an axis may appear partially in the chart. To avoid this, use [`edgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_EdgeLabelPlacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -318,8 +311,7 @@ the label inside the chart area for better appearance or hides it.
 
 ## Labels Customization
 
-The [`labelStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelStyle) property of an axis provides options to customize the
-`color`, `font-family`, `font-size` and `font-weight` of the axis labels.
+The [`labelStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelStyle) property of an axis provides options to customize the `color`, `font-family`, `font-size` and `font-weight` of the axis labels.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -406,8 +398,7 @@ You can trim the label using [`enableTrim`](https://help.syncfusion.com/cr/aspne
 
 ## Line break support
 
-Line break feature used to customize the long axis label text into multiple lines by using
-`<br>` tag. Refer the below example in that dataSource x value contains long text, it breaks into two lines by using  `<br>` tag.
+Line break feature used to customize the long axis label text into multiple lines by using `<br>` tag. Refer the below example in that dataSource x value contains long text, it breaks into two lines by using  `<br>` tag.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

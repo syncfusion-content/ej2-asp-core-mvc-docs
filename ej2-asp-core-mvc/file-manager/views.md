@@ -13,7 +13,7 @@ documentation: ug
 
 View is the section where the files and folders are displayed for the user to browse. The [view](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~View.html) API can also be used to change the initial view of the file manager.
 
- The file manager has two types of [views](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~View.html) to display the files and folders.
+The file manager has two types of [views](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~View.html) to display the files and folders.
 
 * [LargeIcons View](#largeicons-view)
 * [Details View](#details-view)

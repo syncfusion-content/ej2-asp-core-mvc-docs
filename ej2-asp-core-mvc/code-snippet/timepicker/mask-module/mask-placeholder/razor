@@ -10,7 +10,7 @@
                 <div class="tabs-wrap">
                     <div class="wrap">
                        // Specifies the masked TimePicker without format.
-                       @Html.EJS().TimePicker("element").EnableMask("true").MaskPlaceholder(new Syncfusion.EJ2.Calendars.TimePickerTimeMaskPlaceholder {Hour="h", Minute="m", Second="s"}).Render()
+                       @Html.EJS().TimePicker("element").EnableMask("true").MaskPlaceholder(new Syncfusion.EJ2.Calendars.TimePickerMaskPlaceholder {Hour="h", Minute="m", Second="s"}).Render()
                     </div>
                 </div>
             </div>

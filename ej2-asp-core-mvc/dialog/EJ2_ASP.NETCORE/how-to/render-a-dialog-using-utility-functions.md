@@ -11,8 +11,7 @@ documentation: ug
 
 # Render a Dialog using utility functions
 
-The Dialog control provides built-in utility functions to render the alert and confirm dialogs with the minimal code.
-The following options are used as an argument on calling the utility functions:
+The Dialog control provides built-in utility functions to render the alert and confirm dialogs with the minimal code. The following options are used as an argument on calling the utility functions:
 
 | Options   | Description |
 |-----------|-------------|

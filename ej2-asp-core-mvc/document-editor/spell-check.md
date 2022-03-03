@@ -37,7 +37,7 @@ Document editor supports performing spell checking for any input text. You can p
 ## Features
 
 * Supports context menu suggestions.
-* Provides build-in options to Ignore, Ignore All, Change, Change All for error words in spell checker        dialog.
+* Provides build-in options to Ignore, Ignore All, Change, Change All for error words in spell checker dialog.
 
 ## Enable SpellCheck
 

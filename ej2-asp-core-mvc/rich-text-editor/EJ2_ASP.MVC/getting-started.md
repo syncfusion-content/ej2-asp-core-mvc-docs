@@ -184,6 +184,14 @@ To fetch the Rich Text Editor's text content, use `getText` method of Rich Text 
   var rteValue = this.rteObj.getText();
 ```
 
+## Retrieve the number of characters
+
+To get the maximum number of characters in the Rich Text Editor's content, use `getCharCount`
+
+```typescript
+  let rteCount = this.rteObj.getCharCount();
+```
+
 The final output will be displayed as follows
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -215,6 +223,8 @@ The final output will be displayed as follows
 
 ## See Also
 
+* [Real time example using Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/Forums#/bootstrap5)
+* [How to insert Emoticons](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/InsertEmoticons#/material)
 * [How to change the editor type](./formation/)
 * [How to render the iframe](./iframe/)
 * [How to render the toolbar in inline mode](./inline-mode/)

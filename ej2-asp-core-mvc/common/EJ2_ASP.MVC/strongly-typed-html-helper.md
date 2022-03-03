@@ -28,9 +28,10 @@ The following list of controls supports the Strongly-Typed HTML Helper
 
 The following steps explain how to use the strongly typed helpers to create a Numeric Textbox.
 
-1. The NumericTextBox control supports strongly typed HTML helpers that uses lambda expression to refer to the models or view models passed to a view template. These helpers allows you to define the value of the NumericTextBoxFor from the model.
+* The NumericTextBox control supports strongly typed HTML helpers that uses lambda expression to refer to the models or view models passed to a view template. These helpers allows you to define the value of the NumericTextBoxFor from the model.
 
 Add a class name “EditorValue” in the Models folder and replace the code with the following code:
+
 ```csharp
 public class EditorValue
 {
@@ -42,7 +43,9 @@ public class EditorValue
     public EditorValue() { }
 }
 ```
-2. Create an action method that renders the NumericTextBox on the view page, and passes the model to be bound to the view page.
+
+* Create an action method that renders the NumericTextBox on the view page, and passes the model to be bound to the view page.
+
 ```csharp
 using Syncfusion.EJ2.Inputs;
 
@@ -55,9 +58,10 @@ public ActionResult Index()
     return View(new EditorValue(66));
 }
 ```
-3. In View, invoke the strongly typed NumericTextBoxFor helper with the lambda expression to set the default value.
-```html
 
+* In View, invoke the strongly typed NumericTextBoxFor helper with the lambda expression to set the default value.
+
+```html
 <div>
 @using (Html.BeginForm())
         {
@@ -66,12 +70,12 @@ public ActionResult Index()
         }
 </div>
 ```
+
 ![aspnetmvc4 numeric textbox control](images/numeric-textbox.png)
 
 The following steps explain how to get the values by using the Scaffolding methods in Post back.
 
-1. Create an action method, FormPost that handles the Post request and processes the data.
-In the action method, you can pass the model as the parameter and that model has the NumericTexBox’s value.
+* Create an action method, FormPost that handles the Post request and processes the data. In the action method, you can pass the model as the parameter and that model has the NumericTexBox’s value.
 
 ```csharp
 [HttpPost]
@@ -105,9 +109,9 @@ using System.ComponentModel.DataAnnotations;
 The Data Annotations allows to decorate model classes with the metadata. This metadata describes a set of rules that are used to validate a property.
 
 The following Data Annotation attributes are used for the Numeric Textbox.
-Required: Indicates that the property is a required field.
+**Required**: Indicates that the property is a required field.
 
-**Step 2**: Next, Update the number property of the “EditorValue” class as “Required Field” by adding the following line
+**Step 2**: Next, Update the number property of the “EditorValue” class as “Required Field” by adding the following line.
 
 ```csharp
 public class EditorValue

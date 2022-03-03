@@ -47,9 +47,7 @@ Output be like the below.
 
 ## Run the application
 
- After successful compilation of your application, simply press `F5` to run the application.
-
- The following example shows a default rendering of ColorPicker.
+After successful compilation of your application, simply press `F5` to run the application. The following example shows a default rendering of ColorPicker.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -78,8 +76,7 @@ Output be like the below.
 
 ## Inline type
 
-By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To
-render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Inline) property to `true`.
+By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Inline) property to `true`.
 
 The following sample shows the inline type rendering of ColorPicker.
 
@@ -108,7 +105,7 @@ The following sample shows the inline type rendering of ColorPicker.
 
 
 
->> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](./how-to/hide-control-buttons) sample.
+> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](./how-to/hide-control-buttons) sample.
 
 ## See Also
 

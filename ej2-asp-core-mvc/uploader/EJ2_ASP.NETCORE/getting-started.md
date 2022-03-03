@@ -13,8 +13,7 @@ documentation: ug
 
 This section briefly explains about how to include a simple Uploader in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](../getting-started) page for introduction part part of the system requirements and configure the common specifications.
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed,
-you also have to include the license key in your projects.
+> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include the license key in your projects.
 Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our controls.
 
 ## Initialize Uploader control to the Application
@@ -23,7 +22,7 @@ Uploader control can be rendered by using the `ejs-uploader` tag helper in ASP.N
 
 The following example shows a basic Uploader control.
 
-> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests.
+> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests. 
 Hence, use the third party `promise` library like blue-bird to use the uploader in Internet Explorer.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -59,7 +58,7 @@ Output be like the below.
 
 ## Adding drop area
 
-By default, the uploader control allows to upload files by drag the files from file explorer, and drop into the drop area.  You can configure any other external element as drop target using [dropArea](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_DropArea) property.
+By default, the uploader control allows to upload files by drag the files from file explorer, and drop into the drop area. You can configure any other external element as drop target using [dropArea](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_DropArea) property.
 
 In the following sample, drop target is configured.
 

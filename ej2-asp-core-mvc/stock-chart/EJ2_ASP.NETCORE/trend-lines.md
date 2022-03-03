@@ -17,14 +17,12 @@ Stock Chart supports 6 types of trendlines namely `Linear`,`Exponential`,`Logari
 
 ## Linear
 
-A linear trendline is a best fit straight line that is used with simpler data sets.To render a linear trendline,
-use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `Linear`.
+A linear trendline is a best fit straight line that is used with simpler data sets.To render a linear trendline, use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `Linear`.
 
 ## Exponential
 
 An exponential trendline is a curved line that is most useful when data values rise or fall at increasingly higher rates. You cannot create an exponential trendline, if your data contains zero or negative values.
-To render a exponential trendline,
-use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `Exponential`.
+To render a exponential trendline, use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `Exponential`.
 
 ## Logarithmic
 
@@ -34,8 +32,7 @@ To render a logarithmic trendline, use trendline [`type`](https://help.syncfusio
 ## Polynomial
 
 A polynomial trendline is a curved line that is used when data fluctuates.
-to render a polynomial trendline,
-use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `Polynomial`.
+To render a polynomial trendline, use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartTrendlines.html#Syncfusion_EJ2_Charts_StockChartTrendlines_Type) as `Polynomial`.
 `polynomialOrder` used to define the polynomial value.
 
 ## Power

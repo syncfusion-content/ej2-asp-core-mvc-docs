@@ -30,13 +30,24 @@ There are several commands available in the diagram as follows.
 
 Alignment commands enable you to align the selected or defined objects such as nodes and connectors with respect to the selection boundary. Refer to [`align`](https://ej2.syncfusion.com/documentation/api/diagram/#align) commands which shows how to use align methods in the diagram.
 
-<!-- markdownlint-disable MD033 -->
-
-| Parameters | Description |
-|:------------| :------: |
-|[`Alignment Options`](https://ej2.syncfusion.com/documentation/api/diagram/#align) | <p align="left">Defines the specific direction, with respect to which the objects to be aligned. <br> The accepted values of the argument "alignment options" are as follows.</p> <table><tr><td> Left </td><td align="left"> Aligns all the selected objects at the left of the selection boundary. </td></tr><tr><td> Right </td><td align="left"> Aligns all the selected objects at the right of the selection boundary. </td></tr><tr><td> Center </td><td align="left"> Aligns all the selected objects at the center of the selection boundary. </td></tr><tr><td>Top </td><td align="left"> Aligns all the selected objects at the top of the selection boundary. </td></tr><tr><td> Bottom </td><td align="left"> Aligns all the selected objects at the bottom of the selection boundary. </td></tr><tr><td> Middle </td><td align="left"> Aligns all the selected objects at the middle of the selection boundary. </td></tr></table>|
-| Objects | <p align="left">Defines the objects to be aligned. This is an optional parameter. By default, all the nodes and connectors in the selected region of the diagram gets aligned.</p> |
-[`Alignment Mode`](https://ej2.syncfusion.com/documentation/api/diagram/alignmentMode/)  | <p align="left">Defines the specific mode, with respect to which the objects to be aligned. This is an optional parameter. The default alignment mode is `Object`.<br> The accepted values of the argument "alignment mode" are as follows.</p> <table><tr><td> Object </td><td align="left"> Aligns the objects based on the first object in the selected list. </td></tr><tr><td> Selector </td><td align="left"> Aligns the objects based on the selection boundary. </td></tr></table>|
+<table>
+<th>Parameters</th>
+<th>Description</th>
+<tr>
+<td>
+{{'[`Alignment Options`](https://ej2.syncfusion.com/documentation/api/diagram/#align)' | markdownify}}</td><td><p align="left">Defines the specific direction, with respect to which the objects to be aligned. <br> The accepted values of the argument "alignment options" are as follows.</p> <table><tr><td> Left </td><td align="left"> Aligns all the selected objects at the left of the selection boundary. </td></tr><tr><td> Right </td><td align="left"> Aligns all the selected objects at the right of the selection boundary. </td></tr><tr><td> Center </td><td align="left"> Aligns all the selected objects at the center of the selection boundary. </td></tr><tr><td>Top </td><td align="left"> Aligns all the selected objects at the top of the selection boundary. </td></tr><tr><td> Bottom </td><td align="left"> Aligns all the selected objects at the bottom of the selection boundary. </td></tr><tr><td> Middle </td><td align="left"> Aligns all the selected objects at the middle of the selection boundary. </td></tr></table></td>
+</tr>
+<tr>
+<td>Objects</td>
+<td><p align="left">Defines the objects to be aligned. This is an optional parameter. By default, all the nodes and connectors in the selected region of the diagram gets aligned.</p></td>
+</tr>
+<tr>
+<td>
+{{'[`Alignment Mode`](https://ej2.syncfusion.com/documentation/api/diagram/alignmentMode/)' | markdownify}}</td>
+<td> <p align="left">Defines the specific mode, with respect to which the objects to be aligned. This is an optional parameter. The default alignment mode is `Object`.<br> The accepted values of the argument "alignment mode" are as follows.</p> <table><tr><td> Object </td><td align="left"> Aligns the objects based on the first object in the selected list. </td></tr><tr><td> Selector </td><td align="left"> Aligns the objects based on the selection boundary. </td></tr></table>
+</td>
+</tr>
+</table>
 
 The following code example illustrates how to align all the selected objects at the left side of the selection boundary.
 
@@ -636,8 +647,7 @@ diagram.fitToPage({
 
 ## Command manager
 
-Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some built-in commands.
-[`CommandManager`](https://ej2.syncfusion.com/documentation/api/diagram/commandManager/) provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
+Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some built-in commands. [`CommandManager`](https://ej2.syncfusion.com/documentation/api/diagram/commandManager/) provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
 
 ## Custom command
 

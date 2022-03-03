@@ -8,6 +8,16 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Globalization in ASP.NET Core Tree Grid control
+
+## Localization
+
+The [Localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization/) library allows you to localize default text content of the TreeGrid. The treegrid component has static text on some features (like toolbar area text, filter menu text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [Locale](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Locale.html) value and translation object.
+
+The following list of properties and its values are used in the treegrid.
+
+| Locale keywords | Text |
+|-----------------|------|
 EmptyRecord | No records to display
 True | true
 False | false

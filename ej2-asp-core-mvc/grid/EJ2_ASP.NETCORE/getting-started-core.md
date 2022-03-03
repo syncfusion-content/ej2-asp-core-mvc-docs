@@ -155,7 +155,7 @@ Let’s check the properties used here:
 By default, columns will be left aligned. To change columns to right align, we need to define `textAlign` as `Right`.
 * Also, we have used another useful property, [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format).
 Using this, we can format number and date values to standard or custom formats.
-Here, we have defined it for the conversion of numeric values to currency.
+Here, we have defined it for the conversion of date object value to `yMd` format.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -259,9 +259,8 @@ The filtering feature enables you to view reduced amount of records based on fil
 
 ## Enable Grouping
 
-The grouping feature enables users to view the grid record in a grouped view. It can be enabled by setting the
- [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to true.
- Grouping feature can be customized using the [`e-grid-groupsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings) tag helper.
+The grouping feature enables users to view the grid record in a grouped view. It can be enabled by setting the [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to true.
+Grouping feature can be customized using the [`e-grid-groupsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -287,4 +286,4 @@ The grouping feature enables users to view the grid record in a grouped view. It
 
 Output be like the below.
 
-![Alt text](./images/grid-sample.png)
+![ASP.NET Core DataGrid Component - Getting Started](./images/grid-sample.png)

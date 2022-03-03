@@ -21,5 +21,4 @@ It has the support to provide multi-level nested menu items.
 
 * [**Orientation**](./how-to/change-orientation): Supports to displays the Menu in horizontal or vertical direction.
 
-* [**Accessibility**](./accessibility): Provided with built-in accessibility support that helps to
-access all the Menu component features through the keyboard, screen readers, or other assistive technology devices.
+* [**Accessibility**](./accessibility): Provided with built-in accessibility support that helps to access all the Menu component features through the keyboard, screen readers, or other assistive technology devices.

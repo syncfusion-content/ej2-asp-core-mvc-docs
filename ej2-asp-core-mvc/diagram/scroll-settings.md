@@ -11,8 +11,7 @@ documentation: ug
 
 # Scroll Settings
 
-The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars,mousewheel can be used to scroll the diagram.
-Diagram’s [`scrollSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramScrollSettings.html) enable you to read the current scroll status, view port size, current zoom, and zoom factor. It also allows you to scroll the diagram programmatically.
+The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars,mousewheel can be used to scroll the diagram. Diagram’s [`scrollSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramScrollSettings.html) enable you to read the current scroll status, view port size, current zoom, and zoom factor. It also allows you to scroll the diagram programmatically.
 
 ## Get current scroll status
 
@@ -138,17 +137,16 @@ The scroll limit allows you to define the scrollable region of the diagram. It i
 * Allows to scroll within the specified scrollable area.
 * The [`scrollLimit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramScrollSettings.html#Syncfusion_EJ2_Diagrams_DiagramScrollSettings_ScrollLimit) property of scroll settings helps to limit the scrolling.
 
-The scrollSettings [`scrollableArea`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramScrollSettings.html#Syncfusion_EJ2_Diagrams_DiagramScrollSettings_ScrollableArea) allow to extend the scrollable region that is based on the scroll limit.
-The following code example illustrates how to specify the scroll limit.
+The scrollSettings [`scrollableArea`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramScrollSettings.html#Syncfusion_EJ2_Diagrams_DiagramScrollSettings_ScrollableArea) allow to extend the scrollable region that is based on the scroll limit. The following code example illustrates how to specify the scroll limit.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-<% include code-snippet/diagram/scrollsettings/default/tagHelper %>
+{% include code-snippet/diagram/scrollsettings/default/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-<% include code-snippet/diagram/scrollsettings/default/default.cs %>
+{% include code-snippet/diagram/scrollsettings/default/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -156,10 +154,10 @@ The following code example illustrates how to specify the scroll limit.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-<% include code-snippet/diagram/scrollsettings/default/razor %>
+{% include code-snippet/diagram/scrollsettings/default/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-<% include code-snippet/diagram/scrollsettings/default/default.cs %>
+{% include code-snippet/diagram/scrollsettings/default/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -176,10 +174,10 @@ The following code example illustrates how to set scroll padding to diagram regi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-<% include code-snippet/diagram/scrollsettings/padding/tagHelper %>
+{% include code-snippet/diagram/scrollsettings/padding/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-<% include code-snippet/diagram/scrollsettings/padding/padding.cs %>
+{% include code-snippet/diagram/scrollsettings/padding/padding.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -187,10 +185,10 @@ The following code example illustrates how to set scroll padding to diagram regi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-<% include code-snippet/diagram/scrollsettings/padding/razor %>
+{% include code-snippet/diagram/scrollsettings/padding/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-<% include code-snippet/diagram/scrollsettings/padding/padding.cs %>
+{% include code-snippet/diagram/scrollsettings/padding/padding.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

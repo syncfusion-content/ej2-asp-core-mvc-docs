@@ -132,8 +132,7 @@ diagram.add(group);
 
 ## Container
 
-Containers are used to automatically measure and arrange the size and position of the child elements in a predefined manner.
-There are two types of containers available.
+Containers are used to automatically measure and arrange the size and position of the child elements in a predefined manner. There are two types of containers available.
 
 ## Canvas
 

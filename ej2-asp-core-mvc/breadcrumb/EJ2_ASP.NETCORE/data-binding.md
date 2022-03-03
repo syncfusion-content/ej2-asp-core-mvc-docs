@@ -13,7 +13,7 @@ documentation: ug
 
 ## Items as tag directive
 
-The Breadcrumb contains `e-breadcrumb-items` and `e-breadcrumb-item` tags to render items for the component. To bind items, use  `e-breadcrumb-items` tag and `e-breadcrumb-item` tag to bind properties for breadcrumb items.
+The Breadcrumb contains `e-breadcrumb-items` and `e-breadcrumb-item` tags to render items for the component. To bind items, use `e-breadcrumb-items` tag and `e-breadcrumb-item` tag to bind properties for breadcrumb items.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
