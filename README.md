@@ -4,8 +4,8 @@ This is the GitHub repository for the technical product documentation for Syncfu
 
 | Platform | Live link |
 |--- |---|
-| ASP.NET Core | https://ej2.syncfusion.com/aspnetcore/documentation/ |
-| ASP.NET MVC | https://ej2.syncfusion.com/aspnetmvc/documentation/ |
+| ASP.NET Core | https://ej2.syncfusion.com/aspnetcore/documentation |
+| ASP.NET MVC | https://ej2.syncfusion.com/aspnetmvc/documentation |
 
 ## Contributions Welcome!
 
