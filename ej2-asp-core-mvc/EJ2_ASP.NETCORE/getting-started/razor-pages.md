@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Component
-description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Control
+description: Checkout and learn about getting started with ##Platform_Name## control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Razor Pages
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core using Razor pages in Visual Studio
 
-This article provides a step-by-step instructions for building ASP.NET Core application with Calendar component using razor pages in Visual Studio.
+This article provides a step-by-step instructions for building ASP.NET Core application with Calendar control using razor pages in Visual Studio.
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 {% endhighlight %}
 {% endtabs %}
     
-## Add Style Sheet
+## Add style sheet
 
 Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
@@ -54,7 +54,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 {% endhighlight %}
 {% endtabs %}
 
-## Add Script Reference
+## Add script reference
 In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
@@ -82,7 +82,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Calendar Component
+## Add ASP.NET Core Calendar control
 
 Now, add the Syncfusion ASP.NET Core Calendar tag helper in `~/Pages/Index.cshtml` page.
 
@@ -94,6 +94,6 @@ Now, add the Syncfusion ASP.NET Core Calendar tag helper in `~/Pages/Index.cshtm
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Calendar component will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Calendar control will be rendered in the default web browser.
 
-![ASP.NET Core Calendar component - Getting Started](images/aspnetcore-calendar.png)
+![ASP.NET Core Calendar control - Getting Started](images/aspnetcore-calendar.png)
