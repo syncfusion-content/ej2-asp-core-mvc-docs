@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## Common Component
-description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Drag And Drop in ##Platform_Name## Common control
+description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drag And Drop
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drag and Drop support in Syncfusion ASP.NET Core Components
+# Drag and Drop support in Syncfusion ASP.NET Core controls
 
-* Drag and Drop support can be enabled for Syncfusion ASP.NET Core components by setting `allowDragAndDrop` property to `true`. It allows you to drag and drop the specific elements in the Syncfusion ASP.NET Core components.
+* Drag and Drop support can be enabled for Syncfusion ASP.NET Core controls by setting `allowDragAndDrop` property to `true`. It allows you to drag and drop the specific elements in the Syncfusion ASP.NET Core controls.
 
 * Drag and Drop is supported through two libraries of Essential JS 2. Those are [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable/). Draggable makes DOM to be dragged using mouse or touch gestures and Droppable mark required DOM as droppable zone.
 
-## Drag and Drop Supported Components
+## Drag and Drop Supported controls
 
-The following table demonstrates the list of Syncfusion ASP.NET Core component documents that are supported with Drag and Drop.
+The following table demonstrates the list of Syncfusion ASP.NET Core control documents that are supported with Drag and Drop.
 
 * [Tabs](../tab/drag-and-drop)
 * [Dashboard Layout](../dashboard-layout/interaction-with-panels/dragging-of-panels)

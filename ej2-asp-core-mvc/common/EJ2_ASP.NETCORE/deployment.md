@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Deployment in ##Platform_Name## Component
-description: Learn here all about Deployment in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Deployment in ##Platform_Name## control
+description: Learn here all about Deployment in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Deployment
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Deployment in ASP.NET Core
 
-This section provides information about deploying ASP.NET Core applications with the Syncfusion ASP.NET Core components.
+This section provides information about deploying ASP.NET Core applications with the Syncfusion ASP.NET Core controls.
 
 Refer to [Host and deploy ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-6.0) topic for more information.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Common Component
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Animation in ##Platform_Name## Common control
+description: Learn here all about Animation in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Animation
 publishingplatform: ##Platform_Name##
@@ -12,9 +12,9 @@ documentation: ug
 
 The **Animation** library is used to perform animation effects on HTML elements by running sequence of frames.
 
-## Animation Supported Components
+## Animation Supported controls
 
-The following table demonstrates the list of Syncfusion ASP.NET Core component documents that are supported with Animation.
+The following table demonstrates the Syncfusion ASP.NET Core control documents that support Animation.
 
 * [Accordion](../accordion/how-to/customize-expand-collapse-actions)
 * [Accumulation Chart](../accumulation-chart/legend#enable-animation)
@@ -22,7 +22,20 @@ The following table demonstrates the list of Syncfusion ASP.NET Core component d
 * [Chart](../chart/legend#enable-animation)
 * [Circular Gauge](../circular-gauge/gauge-pointers#animation)
 * [Context Menu](../context-menu/how-to/change-animation-settings)
-* [Dialog](../dialog/animation)
+* [Dialog](../dialog/dialog/animation)
+* [In-place Editor](../in-place-editor/how-to/custom-animation)
+* [ProgressBar](../progress-bar/animation)
+* [SideBar](../sidebar/how-to/sidebar-with-variation-animation)
+* [Tabs](../tab/how-to/set-custom-animation)
+* [Toast](../toast/animation)
+* [ToolTip](../tooltip/animation)
+* ListView
+* Menu
+* Pivot Table
+* ProgressButton
+* Smith Chart
+* Stock Chart
+* TreeView
 
 ## Animating a HTML Element
 
@@ -49,3 +62,7 @@ The `animate` method of `Animation` library can be used to animate the HTML elem
 }
 </style>
 ```
+
+Output be like the below.
+
+![animate the HTML element](images/animation.gif)
