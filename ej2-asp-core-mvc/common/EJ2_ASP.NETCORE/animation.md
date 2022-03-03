@@ -8,18 +8,44 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Animation
+# Animation in Syncfusion ASP.NET Core
 
 The **Animation** library is used to perform animation effects on HTML elements by running sequence of frames.
+
+## Animation Supported Components
+
+The following table demonstrates the list of Syncfusion ASP.NET Core component documents that are supported with Animation.
+
+* [Accordion](../accordion/how-to/customize-expand-collapse-actions)
+* [Accumulation Chart](../accumulation-chart/legend#enable-animation)
+* [Bullet Chart](../bullet-chart/customization#animation)
+* [Chart](../chart/legend#enable-animation)
+* [Circular Gauge](../circular-gauge/gauge-pointers#animation)
+* [Context Menu](../context-menu/how-to/change-animation-settings)
+* [Dialog](../dialog/animation)
 
 ## Animating a HTML Element
 
 The `animate` method of `Animation` library can be used to animate the HTML elements. This method can also take additional `AnimationModel`. Refer the below code snippet to animate a multiple DOM element.
 
-```typescript
+```cshtml
+<div id="fade"></div>
+<div id="zoom"></div>
 
-import {Animation} from '@syncfusion/ej2-base';
-let animation: Animation = new Animation({ duration: 5000 });
-animation.animate('#element1', { name: 'FadeOut' });
-animation.animate('#element2', { name: 'ZoomOut' });
+<script>
+    var animation = new ej.base.Animation({ duration: 5000 });
+    animation.animate('#fade', { name: 'FadeOut' });
+    animation.animate('#zoom', { name: 'ZoomOut' });
+</script>
+
+<style>
+#fade, #zoom {
+    background: #333333;
+    border: 1px solid #cecece;
+    box-sizing: border-box;
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+</style>
 ```
