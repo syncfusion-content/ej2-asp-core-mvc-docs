@@ -14,7 +14,7 @@ This documentation will help to develop a secure ASP.NET Core MVC web applicatio
 
 ## Applicable Security Aspects
 
-Syncfusion ASP.NET Core components are applicable for the below security aspects to secure the web application.
+Syncfusion ASP.NET Core controls are applicable for the below security aspects to secure the web application.
 
    * Cross-Site Scripting
    * Injection

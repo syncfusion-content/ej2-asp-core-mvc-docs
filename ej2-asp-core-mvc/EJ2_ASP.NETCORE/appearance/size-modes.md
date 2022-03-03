@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Size Modes in ##Platform_Name## Ej2_asp.netcore Component
-description: Learn here all about size modes in Syncfusion ##Platform_Name## Ej2_asp.netcore component and more.
+title: Size Modes in ##Platform_Name## Control | Syncfusion
+description: Learn here all about size modes in Syncfusion ##Platform_Name## control and much more.
 platform: ej2-asp-core-mvc
-control: Size Modes
+control: common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Size Mode for ASP.NET Core Components
 
-Syncfusion ASP.NET Core components support touch (bigger theme) and normal size modes. Below topics explains how to enable the same in your application.
+Syncfusion ASP.NET Core controls support touch (bigger theme) and normal size modes. Below topics explains how to enable the same in your application.
 
 ## Size mode for application
 

@@ -20,6 +20,8 @@ Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been 
 
 * Another valuable resource is the API reference which provides detailed information on the object hierarchy as well as the settings available on every object.
 
+* The user guide covers tag helper code snippet in most of its sections. But the Syncfusion ASP.NET Core controls support both Tag helper and HTML helper. 
+
 ## Component List
 
 <!-- markdownlint-disable MD033 MD018 -->
@@ -97,7 +99,7 @@ border:0 !important;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/getting-started">Stock Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started">Circular Gauge</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started">Linear Gauge</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started">Diagram Component</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started">Diagram</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/heatmap-chart/getting-started">HeatMap Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/getting-started">Map</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/smithchart/getting-started">Smith Chart</a></div>
@@ -188,11 +190,3 @@ border:0 !important;
    Visual Studio for Mac
 
 * [Getting started with Syncfusion ASP.NET Core Components](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
-
-   Yeoman
-
-* [Getting started with Syncfusion ASP.NET Core Components](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/yeoman)
-
-   Areas
-
-* [Getting started with Syncfusion ASP.NET Core Components](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/areas)
