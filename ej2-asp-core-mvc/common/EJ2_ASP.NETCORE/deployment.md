@@ -42,23 +42,35 @@ Packing the application and its dependencies into a folder for deployment to a h
 
 For CLI deployment, run the following command from your root directory.
 
-```
+{% tabs %}
+{% highlight c# tabtitle=".NET CLI" %}
+
 dotnet publish -c Release
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 For ASP.NET Core CLI deployment.
 
-```
+{% tabs %}
+{% highlight c# tabtitle=".NET CLI" %}
+
 dotnet publish -c Release --self-contained true -r win-x86
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Refer to the dotnet publish\'s [optional arguments](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish?tabs=netcore21#arguments).
 
 Use the following command to specify the path for the output directory.
 
-```
+{% tabs %}
+{% highlight c# tabtitle=".NET CLI" %}
+
 dotnet publish -c Release -o <output directory>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 > If the output directory is not specified, it defaults to **./bin/[configuration]/[framework]/publish/** for a **framework-dependent deployment** or **./bin/[configuration]/[framework]/[runtime]/publish/** for a **self-contained deployment**.
 

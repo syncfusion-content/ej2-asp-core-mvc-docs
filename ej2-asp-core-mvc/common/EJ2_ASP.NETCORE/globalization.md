@@ -136,7 +136,7 @@ npm install cldr-data
 {% endhighlight %}
 {% endtabs %}
 
-Output be like the below.
+The output will be as follows.
 
 ![Globalization schedule component](./images/schedule-locale.png)
 
@@ -234,6 +234,8 @@ The `getNumberFormat` method which will return a function that formats given num
 {% endhighlight %}
 {% endtabs %}
 
+The output will be as follows.
+
 ![output of getNumberFormat method](./images/format-number.png)
 
 #### `formatNumber`
@@ -255,6 +257,8 @@ The `getNumberFormat` method which will return a function that formats given num
 
 {% endhighlight %}
 {% endtabs %}
+
+The output will be as follows.
 
 ![output of formatNumber method](./images/format-number-options.png)
 
@@ -279,6 +283,8 @@ The `getNumberParser` method which will return a function that parses given stri
 {% endhighlight %}
 {% endtabs %}
 
+The output will be as follows.
+
 ![output of getNumberParser method](./images/number-parser.png)
 
 #### `parseNumber`
@@ -298,6 +304,8 @@ The `parseNumber` method which takes two arguments the string value, `NumberForm
 
 {% endhighlight %}
 {% endtabs %}
+
+The output will be as follows.
 
 ![output of parseNumber method](./images/number-parser-options.png)
 
@@ -416,6 +424,8 @@ To use the custom date and time formats we need to specify the date/time pattern
 {% endhighlight %}
 {% endtabs %}
 
+The output will be as follows.
+
 ![output of custom date format](./images/custom-date-format.png)
 
 >If format property is given in options other properties are not considered.
@@ -443,6 +453,8 @@ The `getDateFormat` method which will return a function that formats given date 
 {% endhighlight %}
 {% endtabs %}
 
+The output will be as follows.
+
 ![output of getDateFormat method](./images/date-format-options.png)
 
 #### `formatDate`
@@ -463,6 +475,8 @@ The `getDateFormat` method which will return a function that formats given date 
 
 {% endhighlight %}
 {% endtabs %}
+
+The output will be as follows.
 
 ![output of formatDate method](./images/format-date-options.png)
 
@@ -489,6 +503,8 @@ The `getDateParser` method which will return a function that parses given string
 {% endhighlight %}
 {% endtabs %}
 
+The output will be as follows.
+
 ![output of getDateParser method](./images/date-parser.png)
 
 #### `parseDate`
@@ -508,5 +524,7 @@ The `parseDate` method which takes two arguments  string value, `DateFormatOptio
 
 {% endhighlight %}
 {% endtabs %}
+
+The output will be as follows.
 
 ![output of parseDate method](./images/date-parser-options.png)

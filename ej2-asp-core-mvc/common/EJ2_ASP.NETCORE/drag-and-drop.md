@@ -16,7 +16,7 @@ documentation: ug
 
 ## Drag and Drop Supported controls
 
-The following table demonstrates the list of Syncfusion ASP.NET Core control documents that are supported with Drag and Drop.
+The following list demonstrates the Syncfusion ASP.NET Core control documents that are supported with Drag and Drop.
 
 * [Tabs](../tab/drag-and-drop)
 * [Dashboard Layout](../dashboard-layout/interaction-with-panels/dragging-of-panels)
@@ -34,70 +34,80 @@ The following table demonstrates the list of Syncfusion ASP.NET Core control doc
 
 You can make any element draggable by passing the element to Draggable constructor. Refer the following code snippet to enable draggable for DOM element.
 
- ```cshtml
-<div id="drag">
-    <div id="drag-element"><p>Draggable Element </p></div>
-</div>
-    
-<script> 
-var dragElement = document.getElementById('drag-element');
-var draggable = new ej.base.Draggable(dragElement,{clone: false});
-</script>
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
 
-<style>
-    #drag-element {
-        height: 100px;
-        width: 150px;
-        border: 1px solid #cecece;
-        cursor: move;
-        user-select: none;
-        color: #6a77a7;
-        touch-action: none;
-    }
-    p {
-        padding-top: 20px;
-        text-align: center;
-        margin: 14px 0px 14px 0px;
-    }
-</style>
- ```
+    <div id="drag-element"><p>Draggable Element </p></div>
+    
+    <script>
+        var dragElement = document.getElementById('drag-element');
+        var draggable = new ej.base.Draggable(dragElement,{clone: false});
+    </script>
+
+    <style>
+        #drag-element {
+            height: 100px;
+            width: 150px;
+            border: 1px solid #cecece;
+            cursor: move;
+            user-select: none;
+            color: #6a77a7;
+            touch-action: none;
+        }
+
+        p {
+            padding-top: 20px;
+            text-align: center;
+            margin: 14px 0px 14px 0px;
+        }
+    </style>
+
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
 
 ![draggable element](./images/draggable.gif)
-
 
 ## Creating Droppable zone
 
 You can convert any DOM element as a droppable zone, which accepts the draggable elements. Refer the following code snippet to enable droppable zone.
 
- ```cshtml
-<div id="droppable">
-    <p class="drop">
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+    <div id="droppable">
+        <p class="drop">
         <span>Drop Target</span> 
-    </p>
-</div>    
+        </p>
+    </div>    
 
-<script>
-    var droppable = new ej.base.Droppable(document.getElementById('droppable'));
-</script>
+    <script>
+        var droppable = new ej.base.Droppable(document.getElementById('droppable'));
+    </script>
 
-<style>
-    #droppable {
-        margin: 5px;
-        line-height: 170px;
-        font-size: 14px;
-        width: 250px;
-        border: 1px solid #cecece;
-        background: #f6f6f6;
-        touch-action: none;
-    }
-    
-    .drop {
-        padding-top: 23px;
-        text-align: center;
-        margin: 14px 0px 14px 0px;
+    <style>
+        #droppable {
+            margin: 5px;
+            line-height: 170px;
+            font-size: 14px;
+            width: 250px;
+            border: 1px solid #cecece;
+            background: #f6f6f6;
+            touch-action: none;
         }
-</style>
- ```
+    
+        .drop {
+            padding-top: 23px;
+            text-align: center;
+            margin: 14px 0px 14px 0px;
+        }
+    </style>
+
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
 
 ![droppable area](./images/droppable.png)
 
@@ -105,53 +115,56 @@ You can convert any DOM element as a droppable zone, which accepts the draggable
 
 To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable/#drop) callback function during droppable object creation. You can get details of dropped element through dropped element property in event argument. Refer the following code snippet to use basic drag and drop action.
 
- ```cshtml
-<div id="droppable">
-    <p class="drop"><span>Drop Target </span></p></div>
-<div id="drag-element"><p class="drag-text">Drag </p></div>
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
 
-<script>
-    var draggable = new ej.base.Draggable(document.getElementById('drag-element'), {
-    clone: false
-});
-var droppable = new ej.base.Droppable(document.getElementById('droppable'), {
-    drop: (function (e) {
-        e.droppedElement.querySelector('.drag-text').textContent = 'Dropped';
-    })
-});
-</script>
+    <div id="droppable"><p class="drop"><span>Drop Target </span></p></div>
+    <div id="drag-element"><p class="drag-text">Drag </p></div>
 
+    <script>
+        var draggable = new ej.base.Draggable(document.getElementById('drag-element'), {
+        clone: false});
+        var droppable = new ej.base.Droppable(document.getElementById('droppable'), {
+            drop: (function (e) {
+                e.droppedElement.querySelector('.drag-text').textContent = 'Dropped';
+            })
+        });
+    </script>
 
-<style>
-    #drag-element {
-    height: 100px;
-    width: 150px;
-    border: 1px solid #cecece;
-    cursor: move;
-    background: #cdffe3;
-    user-select: none;
-    touch-action: none;
-}
+    <style>
+        #drag-element {
+            height: 100px;
+            width: 150px;
+            border: 1px solid #cecece;
+            cursor: move;
+            background: #cdffe3;
+            user-select: none;
+            touch-action: none;
+        }
+        
+        #droppable {
+            margin: 5px;
+            line-height: 170px;
+            font-size: 14px;
+            width: 250px;
+            border: 1px solid #cecece;
+            background: #f6f6f6;
+            touch-action: none;
+        }
+        
+        .drop,.drag-text {
+            padding-top: 23px;
+            text-align: center;
+            margin: 14px 0px 14px 0px;
+        }
+    </style>
 
-#droppable {
-    margin: 5px;
-    line-height: 170px;
-    font-size: 14px;
-    width: 250px;
-    border: 1px solid #cecece;
-    background: #f6f6f6;
-    touch-action: none;
-}
+{% endhighlight %}
+{% endtabs %}
 
-.drop,.drag-text {
-    padding-top: 23px;
-    text-align: center;
-    margin: 14px 0px 14px 0px;
-}
-</style>
- ```
+The output will be as follows.
 
- ![drag and drop element](./images/drag-drop.gif)
+![drag and drop element](./images/drag-drop.gif)
 
 ## See Also
 

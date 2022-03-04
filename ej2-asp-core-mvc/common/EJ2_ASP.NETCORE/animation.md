@@ -14,7 +14,7 @@ The **Animation** library is used to perform animation effects on HTML elements 
 
 ## Animation Supported controls
 
-The following table demonstrates the Syncfusion ASP.NET Core control documents that support Animation.
+The following list demonstrates the Syncfusion ASP.NET Core control documents that are supported with Animation.
 
 * [Accordion](../accordion/how-to/customize-expand-collapse-actions)
 * [Accumulation Chart](../accumulation-chart/legend#enable-animation)
@@ -41,28 +41,32 @@ The following table demonstrates the Syncfusion ASP.NET Core control documents t
 
 The `animate` method of `Animation` library can be used to animate the HTML elements. This method can also take additional `AnimationModel`. Refer the below code snippet to animate a multiple DOM element.
 
-```cshtml
-<div id="fade"></div>
-<div id="zoom"></div>
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+     
+     <div id="fade"></div>
+     <div id="zoom"></div>
 
-<script>
-    var animation = new ej.base.Animation({ duration: 5000 });
-    animation.animate('#fade', { name: 'FadeOut' });
-    animation.animate('#zoom', { name: 'ZoomOut' });
-</script>
+    <script>
+        var animation = new ej.base.Animation({ duration: 5000 });
+        animation.animate('#fade', { name: 'FadeOut' });
+        animation.animate('#zoom', { name: 'ZoomOut' });
+    </script>
+    
+    <style>
+        #fade, #zoom {
+            background: #333333;
+            border: 1px solid #cecece;
+            box-sizing: border-box;
+            float: left;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
 
-<style>
-#fade, #zoom {
-    background: #333333;
-    border: 1px solid #cecece;
-    box-sizing: border-box;
-    float: left;
-    height: 100px;
-    width: 100px;
-}
-</style>
-```
+{% endhighlight %}
+{% endtabs %}
 
-Output be like the below.
+The output will be as follows.
 
 ![animate the HTML element](images/animation.gif)
