@@ -904,19 +904,20 @@ Validation rules
 <td>
 <b>Property:</b> <i>validation-rules</i>
 <br>
+
 {% highlight html %}
-    <ej-date-picker id="date" validation-rules='new Dictionary<string, object>() {{ "required",true}}'></ej-date-picker>
+    <ej-date-picker id="date" validation-rules="new Dictionary<string, object>() {{ 'required',true}}"></ej-date-picker>
 {% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>rules</i>
 <br>
+
 {% highlight html %}
     <form id="form-element" class="form-vertical">
         <ejs-datepicker id="datepicker"></ejs-datepicker>
     </form>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var options = { rules: { 'datepicker': { required: true } } };
@@ -934,19 +935,20 @@ Validation message
 <td>
 <b>Property:</b> <i>validation-messages</i>
 <br>
+
 {% highlight html %}
-    <ej-date-picker id="date" validation-rules='new Dictionary<string, object>() {{ "required",true}}' validation-messages='new Dictionary<string, object>() {{ "required","Required Date value"}}'></ej-date-picker>
+    <ej-date-picker id="date" validation-rules="new Dictionary<string, object>() {{ 'required',true}}" validation-messages="new Dictionary<string, object>() {{ 'required','Required Date value'}}"></ej-date-picker>
 {% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>rules</i>
 <br>
+
 {% highlight html %}
     <form id="form-element" class="form-vertical">
         <ejs-datepicker id="datepicker"></ejs-datepicker>
     </form>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var options = { rules: { 'datepicker': { required: true } },
@@ -1064,12 +1066,11 @@ Html Attributes
 <td>
 <b>Property:</b> <i>html-attributes</i>
 <br>
+
 {% highlight html %}
     @{
-
     IDictionary<string, object> htmlAttr = new Dictionary<string, object>();
     htmlAttr.Add("required", "required");
-
     }
     <ej-date-picker id="date" html-attributes="htmlAttr"></ej-date-picker>
 {% endhighlight %}
