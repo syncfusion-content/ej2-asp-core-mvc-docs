@@ -694,7 +694,7 @@ Validation rules
 <b>Property:</b> <i>validation-rules</i>
 
 {% highlight html %}
-    <ej-date-time-picker id="datetime" validation-rules='new Dictionary<string, object>() {{ "required",true}}'></ej-date-time-picker>
+<ej-date-time-picker id="datetime" validation-rules="new Dictionary<string, object>() {{ 'required',true}}"></ej-date-time-picker>
 {% endhighlight %}
 
 </td>
@@ -724,13 +724,12 @@ Validation message
 <b>Property:</b> <i>validation-messages</i>
 
 {% highlight html %}
-    <ej-date-time-picker id="datetime" validation-rules='new Dictionary<string, object>() {{ "required",true}}' validation-messages='new Dictionary<string, object>() {{ "required","Required Date Time value"}}'></ej-date-time-picker>
+<ej-date-time-picker id="datetime" validation-rules="new Dictionary<string, object>() {{ 'required',true}}" validation-messages="new Dictionary<string, object>() {{ 'required','Required Date Time value'}}"></ej-date-time-picker>
 {% endhighlight %}
 
 </td>
 <td>
 <b>Property:</b> <i>rules</i>
-
 {% highlight html %}
     <form id="form-element" class="form-vertical">
         <ejs-datetimepicker id="datetime"></ejs-datetimepicker>
@@ -745,7 +744,6 @@ Validation message
         });
     </script>
 {% endhighlight %}
-
 </td>
 </tr>
 </thead>
@@ -852,15 +850,12 @@ Html Attributes
 </td>
 <td>
 <b>Property:</b> <i>html-attributes</i>
-
 {% highlight html %}
     @{ IDictionary<string, object> htmlAttr = new Dictionary<string, object>();
        htmlAttr.Add("required", "required");
     }
-
     <ej-date-time-picker id="datetime" html-attributes="htmlAttr"></ej-date-time-picker>
 {% endhighlight %}
-
 </td>
 <td>
 <b>Not Applicable</b>

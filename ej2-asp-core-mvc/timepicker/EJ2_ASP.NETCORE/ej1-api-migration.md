@@ -593,27 +593,24 @@ Validation rules
 </td>
 <td>
 <b>Property:</b> <i>validation-rules</i>
-
-```html
-    <ej-time-picker id="time" validation-rules='new Dictionary<string, object>() {{ "required",true}}'></ej-time-picker>
-```
-
+{% highlight html %}
+    <ej-time-picker id="time" validation-rules="new Dictionary<string, object>() {{ 'required',true}}"></ej-time-picker>
+{% endhighlight %}
 </td>
 <td>
 <b>Property:</b> <i>rules</i>
 
-```html
+{% highlight html %}
     <form id="form-element" class="form-vertical">
         <ejs-timepicker id="timepicker"></ejs-timepicker>
     </form>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var options = { rules: { 'timepicker': { required: true } } };
             var formObject = new ej.inputs.FormValidator('#form-element', options);
         });
     </script>
-```
+{% endhighlight %}
 
 </td>
 </tr>
@@ -625,7 +622,7 @@ Validation message
 <b>Property:</b> <i>validation-messages</i>
 
 ```html
-    <ej-time-picker id="time" validation-rules='new Dictionary<string, object>() {{ "required",true}}' validation-messages='new Dictionary<string, object>() {{ "required","Required Time value"}}'></ej-time-picker>
+    <ej-time-picker id="time" validation-rules="new Dictionary<string, object>() {{ 'required',true}}" validation-messages="new Dictionary<string, object>() {{ 'required','Required Time value'}}"></ej-time-picker>
 ```
 
 </td>
