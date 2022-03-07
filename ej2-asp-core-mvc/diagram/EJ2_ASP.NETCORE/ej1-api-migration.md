@@ -3413,7 +3413,6 @@ This article describes the API migration process of Diagram component from Essen
     </ej-diagram>
 
 {% endhighlight %}
-{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`GetConnectorDefaults`</i>
