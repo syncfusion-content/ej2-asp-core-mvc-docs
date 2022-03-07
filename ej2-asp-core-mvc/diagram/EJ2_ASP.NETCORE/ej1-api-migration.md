@@ -1592,7 +1592,6 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 {% highlight html %}
-{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
