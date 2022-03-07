@@ -1592,8 +1592,6 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 {% highlight html %}
-{% highlight html %}
-
     <ejs-diagram>
         <e-diagram-connectors>
             <e-diagram-connector>
@@ -1603,9 +1601,7 @@ This article describes the API migration process of Diagram component from Essen
             </e-diagram-connector>
         </e-diagram-connectors>
     </ejs-diagram>
-
 {% endhighlight %}</td>
-
 </tr>
 <tr>
 <td><b>Sets the border width of the decorator</b></td>
@@ -2564,13 +2560,11 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DataSourceSettings.Id`</i>
 <br>
 <br>
-
+{% highlight html %}
     <ejs-diagram>
         <e-diagram-datasourcesettings id="id"></e-diagram-datasourcesettings>
     </ejs-diagram>
-
 {% endhighlight %}</td>
-
 </tr>
 <tr>
 <td><b>Defines the parent id of the data source item</b></td>
@@ -3710,12 +3704,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 {% highlight html %}
-
     <ejs-diagram getCustomTool="@ViewBag.getTool"></ejs-diagram>
-
-{% highlight html %}
-{% endhighlight %}
-
     function getTool(action) {
         var tool;
         if (action === 'userHandle') {
@@ -3723,7 +3712,6 @@ This article describes the API migration process of Diagram component from Essen
         }
         return tool;
     }
-
 {% endhighlight %}
 <b>[Model]</b>
 
@@ -3763,7 +3751,6 @@ This article describes the API migration process of Diagram component from Essen
     <ej-diagram height="500px"></ej-diagram>
 
 {% endhighlight %}
-{% highlight html %}
 </td>
 <td>
 <b>Property</b>:<i>`Height`</i>
@@ -3830,7 +3817,7 @@ This article describes the API migration process of Diagram component from Essen
             diagram.UpdateNode(item.Name, option);
         }
         diagram.model.historyManager.closeGroupAction();
-    </sccript>
+    </script>
 
 {% endhighlight %}
 </td>
