@@ -12,6 +12,71 @@ documentation: ug
 
 The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons, that can be utilized in the ASP.NET Core application.
 
+## Steps to Use Icon
+
+1. Add a class `e-icons` to the HTML element that shows the icon. This class contains the font-family and common property of the font icons.
+
+2. Add the icon class with corresponding icon content from the [available icons](#available-icons). For example, the below code snippet represents the search icon class.
+
+{% tabs %}
+{% highlight c# tabtitle="CSS" %}
+
+    .e-search:before{
+        content:'\e993';
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+3. Add `e-icons` and `e-search` class to the HTML element.
+
+{% tabs %}
+{% highlight c# tabtitle="CSS" %}
+
+    <span class="e-icons e-search"></span>
+
+{% endhighlight %}
+{% endtabs %}
+
+    The below code snippet represents the complete example of icon usage.
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+    <!doctype html>
+    <html>
+        <head>
+            <title>Essential JS 2 </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
+            <link href="./node_modules/@syncfusion/ej2/material.css" rel="stylesheet" />
+            <style>
+                .e-search:before{
+                    content:'\e993';
+                }
+                .e-upload:before{
+                    content: '\e725';
+                }
+                .e-font:before{
+                    content: '\e34c';
+                }
+            </style>
+        </head>
+
+        <body>
+            <div class="icons">
+                <ul>
+                    <li><span class="e-icons e-search"></span></li>
+                    <li><span class="e-icons e-settings"></span></li>
+                    <li><span class="e-icons e-upload"></span></li>
+                    <li><span class="e-icons e-font"></span></li>
+                </ul>
+            </div>
+        </body>
+    </html>
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Icons Size
 
 You can change the icon size by adding `e-small`, `e-medium` and `e-large` class in the HTML element.
