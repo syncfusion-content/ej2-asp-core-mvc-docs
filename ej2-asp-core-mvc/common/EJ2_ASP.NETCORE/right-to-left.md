@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Right To Left in ##Platform_Name## Component
-description: Learn here all about Right To Left in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Right To Left in ##Platform_Name## control
+description: Learn here all about Right To Left in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Right To Left
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Right-To-Left support in Syncfusion ASP.NET Core Components
+# Right-To-Left support in Syncfusion ASP.NET Core controls
 
-The right-to-left (RTL) support can be enabled for Syncfusion ASP.NET Core components by setting `enableRtl` property to `true`. This will render all the Syncfusion ASP.NET Core components in the right-to-left direction.
+The right-to-left (RTL) support can be enabled for Syncfusion ASP.NET Core controls by setting `enableRtl` property to `true`. This will render all the Syncfusion ASP.NET Core controls in the right-to-left direction.
 
-## Enable RTL for all components
+## Enable RTL for all controls
 
-You can enable right to left (RTL) for all Syncfusion components used in the application by setting `enableRtl` property to `true` in the script tag. Add the below code snippet in the **_Layout.cshtml** file inside **body** tag.
+You can enable right to left (RTL) for all Syncfusion controls used in the application by setting `enableRtl` property to `true` in the script tag. Add the below code snippet in the **_Layout.cshtml** file inside **body** tag.
 
 {% tabs %}
 {% highlight c# tabtitle="_Layout.cshtml" %}
@@ -25,11 +25,13 @@ You can enable right to left (RTL) for all Syncfusion components used in the app
 {% endhighlight %}
 {% endtabs %}
 
-![Grid component is rendered from the right to left](images/rtl-grid.png)
+The output will be as follows.
 
-## Enable RTL to individual component
+![Grid control is rendered from the right to left](images/rtl-grid.png)
 
-To control a component’s direction individually you can directly set the component’s `enableRtl` property as true. For illustration, we have enabled RTL for Schedule component in following code snippet.
+## Enable RTL to individual control
+
+To control a control’s direction individually you can directly set the control’s `enableRtl` property as true. For illustration, we have enabled RTL for Schedule control in following code snippet.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -45,4 +47,6 @@ To control a component’s direction individually you can directly set the compo
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-![Schedule component is rendered from the right-to-left](images/rightToLeft.png)
+The output will be as follows.
+
+![Schedule control is rendered from the right-to-left](images/rightToLeft.png)

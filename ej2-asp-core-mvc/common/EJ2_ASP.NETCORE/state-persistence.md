@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State Persistence in ##Platform_Name## Component
-description: Learn here all about State Persistence in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: State Persistence in ##Platform_Name## control
+description: Learn here all about State Persistence in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: State Persistence
 publishingplatform: ##Platform_Name##
@@ -10,10 +10,10 @@ documentation: ug
 
 # State Persistence
 
-The Syncfusion ASP.NET Core library supports persisting a component's state across page refreshes or navigation. To
-enable this feature, set `enablePersistence` property as true to the required component. This will store
-the component’s state in browser’s `localStorage` object on page `unload` event. For example, we have
-enabled persistence to grid component in the following code.
+The Syncfusion ASP.NET Core library supports persisting a control's state across page refreshes or navigation. To
+enable this feature, set `enablePersistence` property as true to the required control. This will store
+the control’s state in browser’s `localStorage` object on page `unload` event. For example, we have
+enabled persistence to grid control in the following code.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -30,14 +30,14 @@ enabled persistence to grid component in the following code.
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-## State Persistance Supported Components and Properties
+## State Persistance Supported controls and Properties
 
-The following table demonstrates the list of Syncfusion ASP.NET Core components that are supported with state persistence and describes the list of properties stored in the `localStorage`.
+The following table demonstrates the list of Syncfusion ASP.NET Core controls that are supported with state persistence and describes the list of properties stored in the `localStorage`.
 
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
-<td><b>Component Name</b></td>
+<td><b>control Name</b></td>
 <td><b>Properties</b></td>
 </tr>
 <tr>
