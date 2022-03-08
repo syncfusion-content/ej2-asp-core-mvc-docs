@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Controls | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Ej2_asp.netcore control of Syncfusion, and more details.
+description: Checkout and learn about getting started with ##Platform_Name## control of Syncfusion, and more details.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
