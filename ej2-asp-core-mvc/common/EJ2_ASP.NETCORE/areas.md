@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Component
-description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Control
+description: Checkout and learn about getting started with ##Platform_Name## control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Areas
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Areas in ASP.NET Core
 
-This article provides a step-by-step introduction to add areas and configure the EJ2 Syncfusion component in the ASP.NET Core platform.
+This article provides a step-by-step introduction to add areas and configure the Syncfusion control in the ASP.NET Core platform.
 
 ## Areas
 
@@ -50,15 +50,21 @@ ASP.NET Areas is a feature that allows you to create a separate module in the ap
 
 7. Open the `_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
-    ```html
+    {% tabs %}
+    {% highlight c# tabtitle="CSHTML" %}
+
     @addTagHelper *, Syncfusion.EJ2
-    ```
+
+    {% endhighlight %}
+    {% endtabs %}
 
     >If `_ViewImports.cshtml` file is added in the appropriate Views folder under the areas, import the `Syncfusion.EJ2` package into each `_ViewImports.cshtml` file.
 
 8. Add the Area routing configuration before the default routing in the `Startup.cs` page.
 
-    ```html
+    {% tabs %}
+    {% highlight c# tabtitle="Startup.cs" %}
+
         app.UseEndpoints(endpoints =>
         {
           endpoints.MapControllerRoute(
@@ -68,47 +74,61 @@ ASP.NET Areas is a feature that allows you to create a separate module in the ap
 
           ---
         });
-    ```
+
+    {% endhighlight %}
+    {% endtabs %}
 
 9. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
 
-    ```html
+    {% tabs %}
+    {% highlight c# tabtitle="_Layout.cshtml" %}
+
     <head>
         ....
         ....
 
         <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
 
         <!-- Syncfusion Essential JS 2 Scripts -->
         <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
-    ```
 
-10. Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
+    {% endhighlight %}
+    {% endtabs %}
 
-    ```html
+10. Add the Syncfusion script manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
+
+    {% tabs %}
+    {% highlight c# tabtitle="_Layout.cshtml" %}
+
     <body>
         ....
         ....
-        <!-- Syncfusion Essential JS 2 ScriptManager -->
+        <!-- Syncfusion script manager -->
         <ejs-scripts></ejs-scripts>
     </body>
-    ```
 
-    >If `_ViewStart.cshtml` file is added in the appropriate Views folder under the areas, add the Essential JS 2 Script Manager in that referred layout page.
+    {% endhighlight %}
+    {% endtabs %}
 
-11. Now, you can add the Syncfusion Essential JS 2 components in `Index.cshtml` View file  in the `~/Areas/Products/Views/` folder.
+    >If `_ViewStart.cshtml` file is added in the appropriate Views folder under the areas, add the Syncfusion script manager in that referred layout page.
 
-    ```html
+11. Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` View file  in the `~/Areas/Products/Views/` folder.
+
+    {% tabs %}
+    {% highlight c# tabtitle="CSHTML" %}
+
     <div>
         <ejs-calendar id="calendar"></ejs-calendar>
     </div>
-    ```
 
-12. Run the application. The Essential JS 2 calendar component will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
+    {% endhighlight %}
+    {% endtabs %}
 
-   ![ASP.NET Core calendar component output](images/aspnetcore-calendar.png)
+12. Run the application. Syncfusion ASP.NET Core calendar control will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
+
+   ![ASP.NET Core calendar Control output](images/aspnetcore-calendar.png)
 
 ### Areas with Razor Pages
 
@@ -130,48 +150,64 @@ ASP.NET Areas is a feature that allows you to create a separate module in the ap
 
 5. Open the `_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
-    ```html
+    {% tabs %}
+    {% highlight c# tabtitle="CSHTML" %}
+
     @addTagHelper *, Syncfusion.EJ2
-    ```
+
+    {% endhighlight %}
+    {% endtabs %}
 
     >If `_ViewImports.cshtml` file is added in the appropriate Pages folder under the areas, import the `Syncfusion.EJ2` package into each `_ViewImports.cshtml` file.
 
 6. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Pages/Shared/_Layout.cshtml` layout page.
 
-    ```html
+    {% tabs %}
+    {% highlight c# tabtitle="_Layout.cshtml" %}
+
     <head>
         ....
         ....
 
         <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
 
         <!-- Syncfusion Essential JS 2 Scripts -->
         <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
-    ```
 
-7. Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Pages/Shared/_Layout.cshtml` layout page.
+    {% endhighlight %}
+    {% endtabs %}
 
-    ```html
+7. Add the Syncfusion script manager at the end of `<body>` element in the `~/Pages/Shared/_Layout.cshtml` layout page.
+
+    {% tabs %}
+    {% highlight c# tabtitle="_Layout.cshtml" %}
+
     <body>
         ....
         ....
-        <!-- Syncfusion Essential JS 2 ScriptManager -->
+        <!-- Syncfusion script manager -->
         <ejs-scripts></ejs-scripts>
     </body>
-    ```
 
-    >If `_ViewStart.cshtml` file is added in the appropriate Pages folder under the areas, add the Essential JS 2 Script Manager in that referred layout page.
+    {% endhighlight %}
+    {% endtabs %}
 
-8. Now, you can add the Syncfusion Essential JS 2 components in `Index.cshtml` Razor Page file in the `~/Areas/Products/Pages/` folder.
+    >If `_ViewStart.cshtml` file is added in the appropriate Pages folder under the areas, add the Syncfusion script manager in that referred layout page.
 
-    ```html
+8. Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` Razor Page file in the `~/Areas/Products/Pages/` folder.
+
+    {% tabs %}
+    {% highlight c# tabtitle="CSHTML" %}
+
     <div>
         <ejs-calendar id="calendar"></ejs-calendar>
     </div>
-    ```
 
-9. Run the application. The Essential JS 2 calendar component will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
+    {% endhighlight %}
+    {% endtabs %}
 
-   ![ASP.NET Core calendar component output](images/aspnetcore-calendar.png)
+9. Run the application. Syncfusion ASP.NET Core calendar control will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
+
+   ![ASP.NET Core calendar Control output](images/aspnetcore-calendar.png)
