@@ -274,3 +274,4 @@ The below sample demonstrates the option to insert the image to the Rich Text Ed
 ## See Also
 
 * [How to render the toolbar in inline mode](./inline-mode/)
+* [Set line spacing using custom toolbar item](https://www.syncfusion.com/forums/173334/set-line-spacing)
