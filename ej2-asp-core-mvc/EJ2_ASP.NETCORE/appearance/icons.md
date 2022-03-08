@@ -115,8 +115,6 @@ You can change the icon size by adding `e-small`, `e-medium` and `e-large` class
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![Icon size customization](./images/icons/icon-size.png)
 
 ## Tooltip for icons
@@ -136,8 +134,6 @@ The output will be as follows.
 
 {% endhighlight %}
 {% endtabs %}
-
-The output will be as follows.
 
 ![ToolTip for Icon](./images/icons/icon-title.png)
 
@@ -165,8 +161,6 @@ You can customize color and size by overriding the `e-icons` class. The followin
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![Icon Customization](./images/icons/custom-icon.png)
 
 ## Third party icons integration
@@ -193,8 +187,6 @@ The following code explains how to render `open-iconic` icons using `prefixIcon`
 
 {% endhighlight %}
 {% endtabs %}
-
-The output will be as follows.
 
 ![Load custom icon in Icon](./images/icons/icon-css.png)
 

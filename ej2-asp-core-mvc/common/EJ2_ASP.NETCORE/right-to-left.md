@@ -25,8 +25,6 @@ You can enable right to left (RTL) for all Syncfusion controls used in the appli
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![Grid control is rendered from the right to left](images/rtl-grid.png)
 
 ## Enable RTL to individual control
@@ -46,7 +44,5 @@ To control a control’s direction individually you can directly set the control
 {% highlight c# tabtitle="Rtl.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
-
-The output will be as follows.
 
 ![Schedule control is rendered from the right-to-left](images/rightToLeft.png)
