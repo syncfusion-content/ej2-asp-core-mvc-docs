@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Component
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Control
+description: Learn here all about Globalization in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Globalization
 
- Globalization is the combination of adapting the control to various languages by parsing and formatting the date or numbers (`Internationalization (L18N)`), adding cultural-specific customizations and translating the text (`Localization (L10N)`). The `American English (en-US)` locale is set as default _culture_ and `USD` is set as default _currencyCode_ for all Syncfusion ASP.NET Core components.
+ Globalization is the combination of adapting the control to various languages by parsing and formatting the date or numbers (`Internationalization (L18N)`), adding cultural-specific customizations and translating the text (`Localization (L10N)`). The `American English (en-US)` locale is set as default _culture_ and `USD` is set as default _currencyCode_ for all Syncfusion ASP.NET Core controls.
 
 ## Loading Culture Data
 
@@ -26,9 +26,9 @@ It requires the following [CLDR](http://cldr.unicode.org/) data to be loaded usi
 
 > For `en`, dependency files are already loaded in the library.
 
-### Installing CLDR Data and enable localization in schedule component
+### Installing CLDR Data and enable localization in schedule control
 
-1. CLDR data is available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules\cldr-data`.
+1.CLDR data is available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules\cldr-data`.
 
 {% tabs %}
 {% highlight c# tabtitle="CMD" %}
@@ -38,12 +38,12 @@ npm install cldr-data
 {% endhighlight %}
 {% endtabs %}
 
-2. Once the `CLDR-Data` installed create a folder `cldr-data` inside the `wwwroot` folder. Then create the folder directory like shown below in the structure inside the `wwwroot` folder.
+2.Once the `CLDR-Data` installed create a folder `cldr-data` inside the `wwwroot` folder. Then create the folder directory like shown below in the structure inside the `wwwroot` folder.
 
     * `wwwroot\cldr-data\supplemental`
     * `wwwroot\cldr-data\main`
 
-3. The files named as below are required to setup the specific culture to the Schedule component.
+3.The files named as below are required to setup the specific culture to the Schedule control.
 
     * numberingSystems.json
     * ca-gregorian.json
@@ -51,13 +51,13 @@ npm install cldr-data
     * timeZoneNames.json
     * ca-islamic.json
 
-4. The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now you can move this file to the location `wwwroot\cldr-data\supplemental`.
+4.The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now you can move this file to the location `wwwroot\cldr-data\supplemental`.
 
-5. The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules\cldr-data\main\fr-CH`. Now create a folder named `fr-CH` inside the location `wwwroot\cldr-data\main` and move the files inside it.
+5.The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules\cldr-data\main\fr-CH`. Now create a folder named `fr-CH` inside the location `wwwroot\cldr-data\main` and move the files inside it.
 
     ![Moved cldr data to application](./images/cldr-structure.png)
 
-6. Now use the below `loadCultureFiles` method to load the culture specific CLDR JSON data.
+6.Now use the below `loadCultureFiles` method to load the culture specific CLDR JSON data.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -89,7 +89,7 @@ npm install cldr-data
 {% endhighlight %}
 {% endtabs %}
 
-7. The following code example lets you to set the culture to the Schedule component by using the locale property.
+7.The following code example lets you to set the culture to the Schedule control by using the locale property.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -136,15 +136,13 @@ npm install cldr-data
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
-![Globalization schedule component](./images/schedule-locale.png)
+![Globalization schedule control](./images/schedule-locale.png)
 
 > Refer this documentation to [localizing the static Scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
 
 ## Changing Global Culture and Currency Code
 
-To set the default culture and the currencyCode for all ASP.NET Core components, you can use the methods
+To set the default culture and the currencyCode for all ASP.NET Core controls, you can use the methods
  `setCulture` for setting default locale and `setCurrencyCode` for setting the currencyCode in view page.
 
 ### Setting Global Culture
@@ -234,8 +232,6 @@ The `getNumberFormat` method which will return a function that formats given num
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![output of getNumberFormat method](./images/format-number.png)
 
 #### `formatNumber`
@@ -257,8 +253,6 @@ The output will be as follows.
 
 {% endhighlight %}
 {% endtabs %}
-
-The output will be as follows.
 
 ![output of formatNumber method](./images/format-number-options.png)
 
@@ -283,8 +277,6 @@ The `getNumberParser` method which will return a function that parses given stri
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![output of getNumberParser method](./images/number-parser.png)
 
 #### `parseNumber`
@@ -304,8 +296,6 @@ The `parseNumber` method which takes two arguments the string value, `NumberForm
 
 {% endhighlight %}
 {% endtabs %}
-
-The output will be as follows.
 
 ![output of parseNumber method](./images/number-parser-options.png)
 
@@ -424,8 +414,6 @@ To use the custom date and time formats we need to specify the date/time pattern
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![output of custom date format](./images/custom-date-format.png)
 
 >If format property is given in options other properties are not considered.
@@ -453,8 +441,6 @@ The `getDateFormat` method which will return a function that formats given date 
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![output of getDateFormat method](./images/date-format-options.png)
 
 #### `formatDate`
@@ -475,8 +461,6 @@ The output will be as follows.
 
 {% endhighlight %}
 {% endtabs %}
-
-The output will be as follows.
 
 ![output of formatDate method](./images/format-date-options.png)
 
@@ -503,8 +487,6 @@ The `getDateParser` method which will return a function that parses given string
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![output of getDateParser method](./images/date-parser.png)
 
 #### `parseDate`
@@ -524,7 +506,5 @@ The `parseDate` method which takes two arguments  string value, `DateFormatOptio
 
 {% endhighlight %}
 {% endtabs %}
-
-The output will be as follows.
 
 ![output of parseDate method](./images/date-parser-options.png)

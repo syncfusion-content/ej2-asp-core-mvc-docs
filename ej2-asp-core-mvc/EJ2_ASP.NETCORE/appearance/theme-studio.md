@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theme Studio in ##Platform_Name## Component
-description: Learn here all about Theme Studio in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Theme Studio in ##Platform_Name## Control
+description: Learn here all about Theme Studio in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Theme Studio
 publishingplatform: ##Platform_Name##
@@ -10,39 +10,39 @@ documentation: ug
 
 # Overview
 
-Theme Studio for Essential JS 2 can be used to customize a new theme from an existing theme. It doesn't support with Data visualization components like Chart, Diagram, Gauge, Range Navigator, Maps.
+Theme Studio for Essential JS 2 can be used to customize a new theme from an existing theme. It doesn't support with Data visualization controls like Chart, Diagram, Gauge, Range Navigator, Maps.
 
 ## Customizing theme color from theme studio
 
-The Essential JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion ASP.NET Core components. All the Syncfusion ASP.NET Core component styles are derived from these [theme-based common variables](theme#common-variables).This common variable list is handled inside the theme studio application for customizing theme-based colors.
+The Essential JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion ASP.NET Core controls. All the Syncfusion ASP.NET Core control styles are derived from these [theme-based common variables](theme#common-variables).This common variable list is handled inside the theme studio application for customizing theme-based colors.
 
-**Step 1:** Navigate to the [theme studio application](https://ej2.syncfusion.com/themestudio/).
+**Step 1:** Open the [Syncfusion Theme Studio](https://ej2.syncfusion.com/themestudio/) application.
 
-**Step 2:** The theme studio application page can be divided into two sections: the components preview section on the left, and the theme customization section on the right.
+**Step 2:** The theme studio application page can be divided into two sections: the controls preview section on the left, and the theme customization section on the right.
 
 ![two-sections](images/two-pane.png)
 
 **Step 3:** Click the color pickers in the theme customization section to select your desired colors.
 
-![colpr-picker](images/colorpicker.png)
+![color-picker](images/colorpicker.png)
 
-**Step 4:** After selecting colors with the color pickers, the Syncfusion ASP.NET Core components will have the newly selected colors applied to them in the components preview section.
+**Step 4:** After selecting colors with the color pickers, the Syncfusion ASP.NET Core controls will have the newly selected colors applied to them in the controls preview section.
 
 ![customized](images/customized.png)
 
-### Filtering a specific list of components
+### Filtering a specific list of controls
 
-Using the theme studio, you can apply custom themes to a list of specific components. This option is useful when you have integrated a selective list of Syncfusion ASP.NET Core components in your application. The theme studio will filter the selected components and customize the final output for those components’ styles alone, reducing the final output file size.
+Using the theme studio, you can apply custom themes to a list of specific controls. This option is useful when you have integrated a selective list of Syncfusion ASP.NET Core controls in your application. The theme studio will filter the selected controls and customize the final output for those controls’ styles alone, reducing the final output file size.
 
-**Step 1:** Click the Filter icon in the top right corner and select the components whose theme you want to customize.
+**Step 1:** Click the Filter icon in the top right corner and select the controls whose theme you want to customize.
 
 ![filter-icon](images/filter-icon.png)
 
-**Step 2:** Click the Apply button in the Filter dialog. Now, only the selected components will be rendered in the components preview section.
+**Step 2:** Click the Apply button in the Filter dialog. Now, only the selected controls will be rendered in the controls preview section.
 
 ![filter-dialog](images/filter-dialog.png)
 
-**Step 3:** Now you can customize the colors in the theme customization section for the components you selected.
+**Step 3:** Now you can customize the colors in the theme customization section for the controls you selected.
 
 ![filter-customized](images/filter-customized.png)
 
@@ -54,11 +54,11 @@ You can download the custom styles after customizing the theme colors.
 
 ![download-icon](images/download-icon.png)
 
-**Step 2:** Assign a theme name in the File Name field and click the Download button. If your application uses both Essential JS 1 and Essential JS 2 components, then select the Include compatibility css check box before downloading the theme. This option will generate the custom theme for Essential JS 2 compatibility styles, which are compatible as Essential JS 1 styles. Refer this [link](../common/compatible-with-essential-JS1/) for more details about Essential JS 1 and Essential JS 2 compatibility.
+**Step 2:** Assign a theme name in the File Name field and click the Download button. If your application uses both Essential JS 1 and Essential JS 2 controls, then select the Include compatibility css check box before downloading the theme. This option will generate the custom theme for Essential JS 2 compatibility styles, which are compatible as Essential JS 1 styles. Refer this [link](../common/compatible-with-essential-JS1/) for more details about Essential JS 1 and Essential JS 2 compatibility.
 
 ![download-dialog](images/download-dialog.png)
 
-**Step 3:** The download styles will come as a zip file that contains SCSS and CSS files for the selected Syncfusion ASP.NET Core components. The current settings are stored in the `settings.json` file.
+**Step 3:** The download styles will come as a zip file that contains SCSS and CSS files for the selected Syncfusion ASP.NET Core controls. The current settings are stored in the `settings.json` file.
 
 ![output-files](images/output-files.png)
 
@@ -70,17 +70,21 @@ You can directly use the customized CSS file in the web application.
 
 **Step 2:** Refer the customized CSS file reference in the `index.html` or `shared/_layout.cshtml` main page head section.
 
-```html
+{% tabs %}
+{% highlight c# tabtitle="_Layout.cshtml" %}
+
     <head>
         <link href="styles/{file-name}.css" rel="stylesheet"/>
     </head>
-```
 
-> If you are using Essential JS 1 and Essential JS 2 components in a same web application, then you have to copy/paste the customized CSS file from the `compatibility` folder in the download location.
+{% endhighlight %}
+{% endtabs %}
+
+> If you are using Essential JS 1 and Essential JS 2 controls in a same web application, then you have to copy/paste the customized CSS file from the `compatibility` folder in the download location.
 
 ## Import previously changed settings into the theme studio
 
-When you want to change your application theme and UI design in the future, you won’t need to customize the Syncfusion ASP.NET Core components from scratch in the theme studio. Just import the old `settings.json` file to review and update your stored settings in the theme studio application.
+When you want to change your application theme and UI design in the future, you won’t need to customize the Syncfusion ASP.NET Core controls from scratch in the theme studio. Just import the old `settings.json` file to review and update your stored settings in the theme studio application.
 
 **Step 1:** Click the Import icon in the top right corner.
 
@@ -102,7 +106,7 @@ When you want to change your application theme and UI design in the future, you 
 
 ## Common Variables
 
-The following list of common variables is used in the Syncfusion ASP.NET Core library themes for all UI components. You can change these variables to customize the corresponding theme.
+The following list of common variables is used in the Syncfusion ASP.NET Core library themes for all UI controls. You can change these variables to customize the corresponding theme.
 
 ### Bootstrap 5 Theme
 

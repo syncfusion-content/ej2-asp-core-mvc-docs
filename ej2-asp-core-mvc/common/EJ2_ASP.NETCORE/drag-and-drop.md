@@ -65,8 +65,6 @@ You can make any element draggable by passing the element to Draggable construct
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![draggable element](./images/draggable.gif)
 
 ## Creating Droppable zone
@@ -106,8 +104,6 @@ You can convert any DOM element as a droppable zone, which accepts the draggable
 
 {% endhighlight %}
 {% endtabs %}
-
-The output will be as follows.
 
 ![droppable area](./images/droppable.png)
 
@@ -161,8 +157,6 @@ To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/
 
 {% endhighlight %}
 {% endtabs %}
-
-The output will be as follows.
 
 ![drag and drop element](./images/drag-drop.gif)
 

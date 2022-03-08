@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Common Component
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Common control
+description: Learn here all about Localization in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization (Multi-Language) support in Syncfusion ASP.NET Core components
+# Localization (Multi-Language) support in Syncfusion ASP.NET Core Controls
 
-Localization (L10N) is the process of adapting application components and content to the desired language with its corresponding region. This page shows you how to use the Localization feature in your application.
+Localization (L10N) is the process of adapting application controls and content to the desired language with its corresponding region. This page shows you how to use the Localization feature in your application.
 
 ## Loading translations
 
 To load translation object in your application use `load` function of `L10n` class.
 
-You can change the different culture in Syncfusion ASP.NET Core components by setting [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property with culture codes. The following example demonstrates the Grid in Deutsch culture.
+You can change the different culture in Syncfusion ASP.NET Core controls by setting [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property with culture codes. The following example demonstrates the Grid in Deutsch culture.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -62,7 +62,7 @@ You can change the different culture in Syncfusion ASP.NET Core components by se
 
 ## Changing current locale
 
-Current locale can be changed for all the Syncfusion ASP.NET Core components in your application by invoking `setCulture` function with your desired culture name. The following example demonstrates the Grid in Deutsch culture.
+Current locale can be changed for all the Syncfusion ASP.NET Core controls in your application by invoking `setCulture` function with your desired culture name. The following example demonstrates the Grid in Deutsch culture.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -111,4 +111,4 @@ Current locale can be changed for all the Syncfusion ASP.NET Core components in 
 
 ## See also
 
-* [Globalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/globalization)
+* [Globalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization)
