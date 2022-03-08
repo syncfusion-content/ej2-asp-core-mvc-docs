@@ -10,7 +10,7 @@ documentation: ug
 
 # Custom Resource Generator for Syncfusion ASP.NET Core
 
-Syncfusion provides an option to generate a selective controls script (JavaScript ES5) and styles by using the [`Custom Resource Generator`](https://crg.syncfusion.com/) (CRG) web tool for ASP.NET Core controls from v18.1.0.42.
+Syncfusion provides an option to generate a selective controls script (JavaScript ES5) and styles by using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) web tool for ASP.NET Core controls from v18.1.0.42.
 
 ![ej2 custom resource generator preview](images/custom-resource-generator-preview.png)
 

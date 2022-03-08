@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Component
-description: Learn here all about Icons in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Icons in ##Platform_Name## control
+description: Learn here all about Icons in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons
 publishingplatform: ##Platform_Name##
@@ -14,9 +14,9 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 
 ## Steps to Use Icon
 
-1. Add a class `e-icons` to the HTML element that shows the icon. This class contains the font-family and common property of the font icons.
+1.Add a class `e-icons` to the HTML element that shows the icon. This class contains the font-family and common property of the font icons.
 
-2. Add the icon class with corresponding icon content from the [available icons](#available-icons). For example, the below code snippet represents the search icon class.
+2.Add the icon class with corresponding icon content from the [available icons](#available-icons). For example, the below code snippet represents the search icon class.
 
 {% tabs %}
 {% highlight c# tabtitle="CSS" %}
@@ -28,7 +28,7 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 {% endhighlight %}
 {% endtabs %}
 
-3. Add `e-icons` and `e-search` class to the HTML element.
+3.Add `e-icons` and `e-search` class to the HTML element.
 
 {% tabs %}
 {% highlight c# tabtitle="CSS" %}
@@ -38,7 +38,7 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 {% endhighlight %}
 {% endtabs %}
 
-    The below code snippet represents the complete example of icon usage.
+The below code snippet represents the complete example of icon usage.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -115,6 +115,8 @@ You can change the icon size by adding `e-small`, `e-medium` and `e-large` class
 {% endhighlight %}
 {% endtabs %}
 
+The output will be as follows.
+
 ![Icon size customization](./images/icons/icon-size.png)
 
 ## Tooltip for icons
@@ -134,6 +136,8 @@ You can change the icon size by adding `e-small`, `e-medium` and `e-large` class
 
 {% endhighlight %}
 {% endtabs %}
+
+The output will be as follows.
 
 ![ToolTip for Icon](./images/icons/icon-title.png)
 
@@ -161,11 +165,13 @@ You can customize color and size by overriding the `e-icons` class. The followin
 {% endhighlight %}
 {% endtabs %}
 
+The output will be as follows.
+
 ![Icon Customization](./images/icons/custom-icon.png)
 
 ## Third party icons integration
 
-The Syncfusion ASP.NET core Toolbar component supports to render custom font icons using the [prefixIcon](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html#Syncfusion_EJ2_Navigations_ToolbarItem_PrefixIcon) property. To render custom font icons define the required font CSS that provides the required font name, font size, and content for the icon.
+The Syncfusion ASP.NET core Toolbar control supports to render custom font icons using the [prefixIcon](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html#Syncfusion_EJ2_Navigations_ToolbarItem_PrefixIcon) property. To render custom font icons define the required font CSS that provides the required font name, font size, and content for the icon.
 
 The following code explains how to render `open-iconic` icons using `prefixIcon` property.
 
@@ -188,11 +194,13 @@ The following code explains how to render `open-iconic` icons using `prefixIcon`
 {% endhighlight %}
 {% endtabs %}
 
+The output will be as follows.
+
 ![Load custom icon in Icon](./images/icons/icon-css.png)
 
 ## HTML attribute support
 
-You can add the additional HTML attributes to the Syncfusion ASP.NET Core Button using [HtmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_HtmlAttributes) property. All syncfusion ASP.NET Core components support HTML attribute.
+You can add the additional HTML attributes to the Syncfusion ASP.NET Core Button using [HtmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_HtmlAttributes) property. All syncfusion ASP.NET Core controls support HTML attribute.
 
 The following example shows the font size customization using `HtmlAttributes` directive.
 

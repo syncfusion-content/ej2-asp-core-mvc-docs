@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theme in ##Platform_Name## Component
-description: Learn here all about Theme in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Theme in ##Platform_Name## Control
+description: Learn here all about Theme in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Theme
 publishingplatform: ##Platform_Name##
@@ -74,7 +74,7 @@ Syncfusion ASP.NET Core Themes are available in the CDN. Make sure that the vers
 
 In the ASP.NET Core application, the application theme can be changed dynamically by changing its style sheet reference in code.
 
-1. Modify the **~/Pages/Shared/_Layout.cshtml** page with the below code to implement a theme change dynamically using the dropdown by its id value in javascript function in the application.
+1.Modify the **~/Pages/Shared/_Layout.cshtml** page with the below code to implement a theme change dynamically using the dropdown by its id value in javascript function in the application.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -113,7 +113,7 @@ In the ASP.NET Core application, the application theme can be changed dynamicall
 {% endhighlight %}
 {% endtabs %}
 
-2. Add the following code for dropdown data on the **~/Pages/index.cshtml.cs** model page.
+2.Add the following code for dropdown data on the **~/Pages/index.cshtml.cs** model page.
 
 {% tabs %}
 {% highlight c# tabtitle="index.cshtml.cs" %}
@@ -139,5 +139,7 @@ In the ASP.NET Core application, the application theme can be changed dynamicall
 
 {% endhighlight %}
 {% endtabs %}
+
+The output will be as follows.
 
 ![Change theme dynamically](images/dynamic-theme-switching.gif)
