@@ -140,6 +140,4 @@ In the ASP.NET Core application, the application theme can be changed dynamicall
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![Change theme dynamically](images/dynamic-theme-switching.gif)

@@ -67,6 +67,4 @@ The `animate` method of `Animation` library can be used to animate the HTML elem
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![animate the HTML element](images/animation.gif)

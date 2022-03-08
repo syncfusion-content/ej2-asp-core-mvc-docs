@@ -118,8 +118,6 @@ Follow the below steps to change the size mode for an application at runtime.
 {% endhighlight %}
 {% endtabs %}
 
-The output will be as follows.
-
 ![change-size-mode-for-application-at-runtime](images/change-size-mode-for-application-at-runtime.gif)
 
 ## Change size mode for a control at runtime
@@ -173,8 +171,6 @@ Refer to the following code, in which the `e-bigger` class is added for enabling
 
 {% endhighlight %}
 {% endtabs %}
-
-The output will be as follows.
 
 ![change-size-mode-for-a-control-at-runtime](images/change-size-mode-for-a-component-at-runtime.gif)
 
