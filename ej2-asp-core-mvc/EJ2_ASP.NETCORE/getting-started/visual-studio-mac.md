@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Component in Visual Studio for Mac
-description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Control in Visual Studio for Mac
+description: Checkout and learn about getting started with ##Platform_Name## control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Visual Studio Mac
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-<!-- markdownlint-disable MD024 -->
+# Getting Started with ASP.NET Core application in Visual Studio Mac
 
-# Getting Started with ASP.NET Core application in Visual Studio for Mac
-
-This article provides a step-by-step instructions for building ASP.NET Core application with [Syncfusion EJ2 ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) component using [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/).
+This article provides a step-by-step instructions for building ASP.NET Core application with [Syncfusion ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) control using [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/).
 
 ## Prerequisites
 
@@ -26,7 +24,7 @@ This article provides a step-by-step instructions for building ASP.NET Core appl
 
 ## Install ASP.NET Core package in the application
 
-Syncfusion ASP.NET Core components are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core components in the application, Right-click on the ASP.NET Core application or solution in the Solution Window, and choose **Manage NuGet Packages...**, search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core components in the application, Right-click on the ASP.NET Core application or solution in the Solution Window, and choose **Manage NuGet Packages...**, search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
 > The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
@@ -42,36 +40,33 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 {% endhighlight %}
 {% endtabs %}
 
-## Add Style Sheet
+## Add style sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core components. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <head>
         ....
         ....
-
-        <!-- Syncfusion Essential JS 2 Styles -->
+        <!-- Syncfusion ASP.NET Core styles -->
         <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
-
     </head>
 {% endhighlight %}
 {% endtabs %}
 
-## Add Script Reference
+## Add script reference
 
 Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Pages/Shared/_Layout.cshtml` layout page.
 
-> Checkout [Adding Script Reference topic](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) to learn different ways to add script reference in the ASP.NET Core Application.
+> Checkout [Adding Script Reference topic](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/client-side-resource) to learn different ways to add script reference in the ASP.NET Core Application.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <head>
         ....
         ....
-
-        <!-- Syncfusion Essential JS 2 Scripts -->
+        <!-- Syncfusion ASP.NET Core controls script -->
         <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
 {% endhighlight %}
@@ -86,15 +81,15 @@ Add the Syncfusion Script Manager at the end of `<body>` element in the `~/Pages
     <body>
         ....
         ....
-        <!-- Syncfusion Script Manager -->
+        <!-- Syncfusion ASP.NET Core Script Manager -->
         <ejs-scripts></ejs-scripts>
     </body>
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Calendar Component
+## Add ASP.NET Core Calendar control
 
-Now, add the Syncfusion ASP.NET Core Calendar component in the `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Calendar control in the `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -104,6 +99,6 @@ Now, add the Syncfusion ASP.NET Core Calendar component in the `~/Pages/Index.cs
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Calendar component will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Calendar control will be rendered in the default web browser.
 
-![ASP.NET Core Calendar component](images/aspnetcore-calendar.png)
+![ASP.NET Core Calendar control](images/aspnetcore-calendar.png)
