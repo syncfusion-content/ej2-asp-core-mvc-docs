@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Internationalization in ##Platform_Name## Common Component
-description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Control
+description: Learn here all about Globalization in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Internationalization
+control: Globalization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Internationalization
+# Globalization
 
-The `Internationalization` library provides support for formatting and parsing date and number objects using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. The `en-US` locale is set as default _culture_ and `USD` is set as default _currencyCode_ for all Essential JS 2 components.
+ Globalization is the combination of adapting the control to various languages by parsing and formatting the date or numbers (`Internationalization (L18N)`), adding cultural-specific customizations and translating the text (`Localization (L10N)`). The `American English (en-US)` locale is set as default _culture_ and `USD` is set as default _currencyCode_ for all Syncfusion ASP.NET Core controls.
 
 ## Loading Culture Data
 
-It requires the following CLDR data to be loaded using `loadCldr` function for cultures other than `en-US`.
+It requires the following [CLDR](http://cldr.unicode.org/) data to be loaded using `loadCldr` function for cultures other than `en-US`.
 
 | File Name | Path |
 | ------------- | ------------- |
@@ -26,41 +26,150 @@ It requires the following CLDR data to be loaded using `loadCldr` function for c
 
 > For `en`, dependency files are already loaded in the library.
 
-### Installing CLDR Data
+### Installing CLDR Data and enable localization in schedule control
 
-CLDR data is available as npm package. So, you can install it through the below command to our package.
+1.CLDR data is available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules\cldr-data`.
 
-```bash
+{% tabs %}
+{% highlight c# tabtitle="CMD" %}
+
 npm install cldr-data
-```
 
-### Binding to i18n library
+{% endhighlight %}
+{% endtabs %}
 
-```html
+2.Once the `CLDR-Data` installed create a folder `cldr-data` inside the `wwwroot` folder. Then create the folder directory like shown below in the structure inside the `wwwroot` folder.
+
+    * `wwwroot\cldr-data\supplemental`
+    * `wwwroot\cldr-data\main`
+
+3.The files named as below are required to setup the specific culture to the Schedule control.
+
+    * numberingSystems.json
+    * ca-gregorian.json
+    * numbers.json
+    * timeZoneNames.json
+    * ca-islamic.json
+
+4.The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now you can move this file to the location `wwwroot\cldr-data\supplemental`.
+
+5.The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules\cldr-data\main\fr-CH`. Now create a folder named `fr-CH` inside the location `wwwroot\cldr-data\main` and move the files inside it.
+
+    ![Moved cldr data to application](./images/cldr-structure.png)
+
+6.Now use the below `loadCultureFiles` method to load the culture specific CLDR JSON data.
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
 <script>
-    ej.base.loadcldr(enNumberData, entimeZoneData);
+    loadCultureFiles('fr-CH');
+    function loadCultureFiles(name) {
+        var files = ['ca-gregorian.json', 'numberingSystems.json', 'numbers.json', 'timeZoneNames.json', 'ca-islamic.json'];
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var val, ajax;
+            if (files[prop] === 'numberingSystems.json') {
+                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+            ajax.onSuccess = function (value) {
+                val = value;
+            };
+            ajax.send();
+            loader(JSON.parse(val));
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
+
+7.The following code example lets you to set the culture to the Schedule control by using the locale property.
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+@using Syncfusion.EJ2
+@{
+    var dataManager = new DataManager()
+    {
+        Url = "https://ej2services.syncfusion.com/production/web-services/api/Schedule",
+        Adaptor = "ODataV4Adaptor",
+        CrossDomain = true
+    };
+}
+
+<ejs-schedule id="schedule" width="100%" height="550" selectedDate="DateTime.Now" readonly="true" locale="fr-CH">
+    <e-schedule-eventsettings dataSource="dataManager">
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<script>
+    loadCultureFiles('fr-CH');
+    function loadCultureFiles(name) {
+        var files = ['ca-gregorian.json', 'numberingSystems.json', 'numbers.json', 'timeZoneNames.json', 'ca-islamic.json'];
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var val, ajax;
+            if (files[prop] === 'numberingSystems.json') {
+                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+            ajax.onSuccess = function (value) {
+                val = value;
+            };
+            ajax.send();
+            loader(JSON.parse(val));
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
+
+![Globalization schedule control](./images/schedule-locale.png)
+
+> Refer this documentation to [localizing the static Scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
 
 ## Changing Global Culture and Currency Code
 
-To set the default culture and the currencyCode for all Essential JS 2 components, you can use the methods `setCulture` for setting default locale and `setCurrencyCode` for setting the currencyCode.
+To set the default culture and the currencyCode for all ASP.NET Core controls, you can use the methods
+ `setCulture` for setting default locale and `setCurrencyCode` for setting the currencyCode in view page.
 
 ### Setting Global Culture
 
-```html
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
 <script>
     ej.base.setCulture('ar');
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Setting Currency Code
 
-```html
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
 <script>
     ej.base.setCurrencyCode('QAR');
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 > If global culture is not set then `en-US` is set as default locale and `USD` is set as default currency code.
 
@@ -109,20 +218,36 @@ Custom number formatting and parsing are also supported by specifying the patter
 
 The `getNumberFormat` method which will return a function that formats given number based on the `NumberFormatOptions` specified.
 
-```html
+ {% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<div>Value:<span class='format text'>1234545.65</span></div>
+<div>Formatted Value:<span class='result text'></span></div>
+
 <script>
     var intl = new ej.base.Internationalization();
     var nFormatter = intl.getNumberFormat({ skeleton: 'C3', currency: 'USD',minimumIntegerDigits:8});
     var formattedValue = nFormatter(1234545.65)
     document.querySelector('.result').innerHTML = formattedValue;
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
+
+![output of getNumberFormat method](./images/format-number.png)
 
 #### `formatNumber`
 
  The `formatNumber` method which takes two arguments numeric value and `NumberFormatOptions` and returns the formatted string.
 
- ```html
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<div>Value:<span class='format text'>12345.65</span></div>
+<div>Formatted Value:<span class='result text'> </span></div>
+
  <script>
     var intl = new ej.base.Internationalization();
     var formattedString = intl.formatNumber(12345.65, { format:'C5' , useGrouping: false,
@@ -130,7 +255,12 @@ The `getNumberFormat` method which will return a function that formats given num
     document.querySelector('.result').innerHTML = formattedString;
 </script>
 
-```
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
+
+![output of formatNumber method](./images/format-number-options.png)
 
 ### Parsing
 
@@ -138,8 +268,11 @@ The `getNumberFormat` method which will return a function that formats given num
 
 The `getNumberParser` method which will return a function that parses given string based on the `NumberFormatOptions` specified.
 
-```html
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
 
+<div>FormattedValue:<span class='format text'>123567.45%</span></div>
+<div>ParsedOutput:<span class='result text'> </span></div>
 <script>
     var intl = new ej.base.Internationalization();
     var nParser =  intl.getNumberParser({ format:'P2' , useGrouping: false});
@@ -147,19 +280,34 @@ The `getNumberParser` method which will return a function that parses given stri
     document.querySelector('.result').innerHTML = val + '';
 </script>
 
-```
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
+
+![output of getNumberParser method](./images/number-parser.png)
 
 #### `parseNumber`
 
 The `parseNumber` method which takes two arguments the string value, `NumberFormatOptions` and returns the numeric value.
 
- ```html
- <script>
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<div>FormattedValue:<span class='format text'>$01,234,545.650</span></div>
+<div>ParsedOutput:<span class='result text'> </span></div>
+<script>
     var intl = new ej.base.Internationalization();
     var val = intl.parseNumber('$01,234,545.650', { format: 'C3', currency: 'USD', minimumIntegerDigits: 8 });
     document.querySelector('.result').innerHTML = val + '';
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
+
+![output of parseNumber method](./images/number-parser-options.png)
 
 ## Manipulating DateTime
 
@@ -262,13 +410,23 @@ To use the custom date and time formats we need to specify the date/time pattern
 
 **Custom format example**
 
-```html
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<div>DateValue:<span class='format text'>new Date('1/12/2014 10:20:33')</span></div>
+<div>Formatted Value:<span class='result text'> </span></div>
 <script>
     var intl = new ej.base.Internationalization();
-    var formattedString = intl.formatDate(new Date('1/12/2014 10:20:33'), { format: '\'year:\'y' \'month:\' MM' });
-    //Output: "year:2014 month:01"
+    var formattedString = intl.formatDate(new Date('1/12/2014 10:20:33'), { format: '\'year:\'y' + " " + '\'month:\' MM' });
+    document.querySelector('.result').innerHTML = formattedString;
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
+
+![output of custom date format](./images/custom-date-format.png)
 
 >If format property is given in options other properties are not considered.
 
@@ -280,23 +438,34 @@ To use the custom date and time formats we need to specify the date/time pattern
 
 The `getDateFormat` method which will return a function that formats given date object based on the `DateFormatOptions` specified.
 
-```html
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<div>DateValue:<span class='format text'>new Date('1/12/2014 10:20:33')</span></div>
+<div>Formatted Value:<span class='result text'> </span></div>
 <script>
     var intl = new ej.base.Internationalization();
     var dFormatter = intl.getDateFormat({ skeleton: 'full', type: 'dateTime' });
     var formattedString = dFormatter(new Date('1/12/2014 10:20:33'));
     document.querySelector('.result').innerHTML = formattedString;
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
+
+![output of getDateFormat method](./images/date-format-options.png)
 
 #### `formatDate`
 
- The `formatDate`
-  method which takes two arguments date object,
- `DateFormatOptions` and
- returns the formatted string.
+ The `formatDate` method which takes two arguments date object,`DateFormatOptions` and returns the formatted string.
 
- ```html
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<div>DateValue:<span class='format text'>new Date('1/12/2014 10:20:33')</span></div>
+<div>Formatted Value:<span class='result text'> </span></div>
 <script>
     var intl = new ej.base.Internationalization();
     var date = new Date();
@@ -304,7 +473,12 @@ The `getDateFormat` method which will return a function that formats given date 
     document.querySelector('.result').innerHTML = formattedString;
 </script>
 
-```
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
+
+![output of formatDate method](./images/format-date-options.png)
 
 <!-- markdownlint-enable MD036 -->
 
@@ -314,8 +488,11 @@ The `getDateFormat` method which will return a function that formats given date 
 
 The `getDateParser` method which will return a function that parses given string based on the `DateFormatOptions` specified.
 
-```html
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
 
+<div>Fromatted value:<span class='format text'>Friday, November 4, 2016 at 1:03:04 PM GMT+05:30</span></div>
+<div>parsed Value:<span class='result text'> </span></div>
 <script>
     var intl = new ej.base.Internationalization();
     var dParser = intl.getDateParser({skeleton: 'full', type: 'dateTime'});
@@ -323,18 +500,31 @@ The `getDateParser` method which will return a function that parses given string
     document.querySelector('.result').innerHTML = val.toString();
 </script>
 
-```
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
+
+![output of getDateParser method](./images/date-parser.png)
 
 #### `parseDate`
 
 The `parseDate` method which takes two arguments  string value, `DateFormatOptions` and returns the date Object.
 
-```html
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
 
+<div>Fromatted value:<span class='format text'>11/2016</span></div>
+<div>parsed Value:<span class='result text'> </span></div>
 <script>
     var intl = new ej.base.Internationalization();
     var val =  intl.parseDate('11/2016',{skeleton: 'yM'});
     document.querySelector('.result').innerHTML = val.toString();
 </script>
 
-```
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
+
+![output of parseDate method](./images/date-parser-options.png)
