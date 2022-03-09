@@ -37,7 +37,6 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 
 {% endhighlight %}
 {% endtabs %}
-
 The below code snippet represents the complete example of icon usage.
 
 {% tabs %}

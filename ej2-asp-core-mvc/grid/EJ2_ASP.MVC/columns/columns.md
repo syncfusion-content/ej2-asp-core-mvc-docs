@@ -17,68 +17,6 @@ The grid operations such as sorting, filtering and grouping etc. are performed b
 > 1. If the column [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) is not specified in the dataSource, the column values will be empty.
 > 2. If the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) name contains “dot” operator, it is considered as complex binding.
 
-## Headers
-
-### Header text
-
-By default, column header title is displayed from column [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) value. To override the default header title, you have to define the [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderText) value.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/headertext/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Headertext.cs" %}
-{% include code-snippet/grid/columns/headertext/headertext.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/headertext/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Headertext.cs" %}
-{% include code-snippet/grid/columns/headertext/headertext.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-> If both the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) and [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderText) are not defined in the column, the column renders with empty header text.
-
-### Header template
-
-You can customize the header element by using the [`HeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderTemplate) property. In this demo, the custom element is rendered for both EmployeeID and BirthDate column headers.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/headertemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Headertemplate.cs" %}
-{% include code-snippet/grid/columns/headertemplate/headertemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/headertemplate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Headertemplate.cs" %}
-{% include code-snippet/grid/columns/headertemplate/headertemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Column types
 
 Column type can be specified using the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Type) property of [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html). It specifies the type of data the column binds.
@@ -206,7 +144,7 @@ You can also use custom format string to format the date values. Some of the cus
 
 
 
-## How to render boolean values as checkbox
+## Render boolean value as checkbox
 
 To render boolean values as checkbox in columns, you need to set [`DisplayAsCheckBox`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_DisplayAsCheckBox) property as **true**.
 
@@ -353,18 +291,107 @@ You can show or hide grid columns dynamically using external buttons by invoking
 
 
 
+## Customize column styles
+
+You can customize the appearance of the header and content of a particular column using the [`customAttributes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_CustomAttributes) property.
+
+To customize the grid column, follow the given steps:
+
+**Step 1**: Create a CSS class with custom style to override the default style for rowcell and headercell.
+
+```css
+.e-grid .e-rowcell.customcss{
+    background-color: #ecedee;
+    color: 'red';
+    font-family: 'Bell MT';
+    font-size: 20px;
+}
+
+.e-grid .e-headercell.customcss{
+    background-color: #2382c3;
+    color: white;
+    font-family: 'Bell MT';
+    font-size: 20px;
+}
+
+```
+
+**Step 2**: Add the custom CSS class to the specified column by using the [`customAttributes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_CustomAttributes) property.
+
+```typescript
+col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).CustomAttributes(new { @class = "customcss" }).Add();
+
+```
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/custom-column-style/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-column-style.cs" %}
+{% include code-snippet/grid/how-to/custom-column-style/custom-column-style.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/custom-column-style/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-column-style.cs" %}
+{% include code-snippet/grid/how-to/custom-column-style/custom-column-style.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Display custom tooltip for columns
+
+To display a custom ToolTip (**EJ2 Tooltip**), you can render the Grid control inside the Tooltip component and set the target as “.e-rowcell”. The tooltip is displayed when hovering the grid cells.
+
+Change the tooltip content for the grid cells by using the following code in the  (**beforeRender**) event.
+
+```typescript
+
+function beforeRender(args) {
+        // event triggered before render the tooltip on target element.
+        var tooltip = document.getElementById("Tooltip").ej2_instances[0]
+        tooltip.content = args.target.closest("td").innerText;
+}
+
+```
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/custom-tooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-tooltip.cs" %}
+{% include code-snippet/grid/how-to/custom-tooltip/custom-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/custom-tooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-tooltip.cs" %}
+{% include code-snippet/grid/how-to/custom-tooltip/custom-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## See Also
 
-* [How to Change Column Header Text Dynamically](../how-to/change-header-text-dynamically)
-* [Customize Column Styles](../how-to/customize-column-styles)
-* [Custom Tooltip for Columns](../how-to/display-custom-tool-tip-for-columns-in-grid)
-* [How to Render Other Component in a Column](../how-to/render-other-components-in-column)
-* [How to change the Orientation of Header Text](../how-to/change-orientation-of-header-text)
 * [Group Column by Format](../grouping#group-by-format)
-* [How to Use Edit Template in Foreign Key Column](../how-to/use-edit-template-in-foreign-key-column)
-* [How to Create and use custom Filter UI in Foreign Key Column](../how-to/customize-filter-ui-in-foreign-key)
-* [How to Use Filter Bar Template in Foreign Key Column](../how-to/use-filter-bar-template-in-foreign-key-column)
-* [How to Perform aggregation in Foreign Key Column](../how-to/perform-aggregation-in-foreign-key-column)
 * [How to set complex column as Foreignkey column](../how-to/complex-column-as-foreign-key-column)
 * [Complex Data Binding with list of Array Of Objects](../how-to/list-of-array-of-objects)
 * [How to add primaryKey after column rendered in ASP.NET MVC  Grid](https://www.syncfusion.com/forums/138439/how-to-add-primarykey-after-column-rendered-in-asp-net-mvc-grid)
