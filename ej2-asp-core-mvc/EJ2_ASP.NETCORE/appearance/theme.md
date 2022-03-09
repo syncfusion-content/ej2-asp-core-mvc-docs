@@ -36,8 +36,8 @@ Syncfusion ASP.NET Core themes can be used in your ASP.NET Core application by r
 Using the below approaches the themes can be referenced in the ASP.NET Core application,
 
 1. [CDN](#cdn-reference) - Used to reference complete css via static web assets.
-3. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/) - Used to generate resources only for the selected (used) components.
-2. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
+2. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/) - Used to generate resources only for the selected (used) components.
+3. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
 
 ## CDN Reference
 
