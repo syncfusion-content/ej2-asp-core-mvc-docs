@@ -24,7 +24,7 @@ ASP.NET Areas is a feature that allows you to create a separate module in the ap
 
 ![Add MVC Area template](images/new-scaffolded-item.png)
 
-    Select **MVC Area** from the pop-up and click **Add** to create an Area.
+Select **MVC Area** from the pop-up and click **Add** to create an Area.
 
 ![Add MVC Area in scaffolded item](images/add-mvc-area.png)
 
