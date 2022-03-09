@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Nuget Packages in ##Platform_Name## Control
-description: Learn here all about Nuget Packages in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: Nuget Packages in ##Platform_Name## Controls
+description: Learn here all about NuGet Packages and its installation steps in Syncfusion ##Platform_Name## controls and more.
 platform: ej2-asp-core-mvc
-control: Nuget Packages
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# NuGet Packages for ASP.NET Core UI Controls
+# NuGet Packages for ASP.NET Core Controls
 
 <style>
 img
@@ -41,8 +41,6 @@ As an alternative, after opening the ASP.NET Core application in Visual Studio, 
 3.When you select a Syncfusion ASP.NET Core package, the right side panel will provide more information about it.
 
 4.By default, the package selected with latest version. You can choose the required version and click the **Install** button and accept the license terms. The package will be added to your ASP.NET Core application.
-
-![NuGet Packages Install](images/install-nuget.png)
 
 5.At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion ASP.NET Core controls](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [Syncfusion ASP.NET Core help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction/) for development.
 
