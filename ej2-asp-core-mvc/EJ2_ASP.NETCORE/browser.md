@@ -10,7 +10,7 @@ documentation: ug
 
 # Browser Compatibility in ASP.NET Core
 
-The Syncfusion Essential JS 2 ASP.NET Core components are supported by all modern browsers on Windows, Linux, and MacOS.
+The Syncfusion ASP.NET Core controls are supported by all modern browsers on Windows, Linux, and MacOS.
 
 |    Browser    |    Versions    |
 |--------------|---------------|

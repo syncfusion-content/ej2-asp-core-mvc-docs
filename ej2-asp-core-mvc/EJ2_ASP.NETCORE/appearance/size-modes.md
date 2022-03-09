@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Size Mode for ASP.NET Core Components
+# Size Mode for ASP.NET Core Controls
 
-Syncfusion ASP.NET Core components support touch (bigger theme) and normal size modes. Below topics explains how to enable the same in your application.
+Syncfusion ASP.NET Core controls support touch (bigger theme) and normal size modes. Below topics explains how to enable the same in your application.
 
 ## Size mode for application
 
@@ -23,20 +23,20 @@ You can enable touch mode (bigger theme) for an application by adding `.e-bigger
       font-size: x-large;
     }
 
+    {% endhighlight %}
+    {% endtabs %}
+
+    {% tabs %}
+    {% highlight c# tabtitle="CSHTML" %}
+
+    <body class="e-bigger">...</body>
+
 {% endhighlight %}
 {% endtabs %}
 
-{% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+## Size mode for a Control
 
-<body class="e-bigger">...</body>
-
-{% endhighlight %}
-{% endtabs %}
-
-## Size mode for a Component
-
-You can enable touch mode (bigger theme) for ASP.NET Core components by adding `.e-bigger` class and assign to the `div` which contains the component.
+You can enable touch mode (bigger theme) for ASP.NET Core controls by adding `.e-bigger` class and assign to the `div` which contains the control.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -70,7 +70,7 @@ You can change the size mode of an application between touch and normal (mouse) 
 
 Follow the below steps to change the size mode for an application at runtime.
 
-1. Add the `e-bigger` CSS class in the `~/wwwroot/css/site.css` file.
+1.Add the `e-bigger` CSS class in the `~/wwwroot/css/site.css` file.
 
 {% tabs %}
 {% highlight c# tabtitle="CSS" %}
@@ -82,7 +82,7 @@ Follow the below steps to change the size mode for an application at runtime.
 {% endhighlight %}
 {% endtabs %}
 
-2. Refer to the following code for adding component and the JavaScript click action inside the script tag of `Pages/index.cshtml` file to switch between touch and mouse mode using `e-bigger` class.
+2.Refer to the following code for adding control and the JavaScript click action inside the script tag of `Pages/index.cshtml` file to switch between touch and mouse mode using `e-bigger` class.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -120,9 +120,9 @@ Follow the below steps to change the size mode for an application at runtime.
 
 ![change-size-mode-for-application-at-runtime](images/change-size-mode-for-application-at-runtime.gif)
 
-## Change size mode for a component at runtime
+## Change size mode for a control at runtime
 
-You can change the size mode of a component between touch and normal (mouse) mode at runtime by setting `.e-bigger` CSS class.  
+You can change the size mode of a control between touch and normal (mouse) mode at runtime by setting `.e-bigger` CSS class.  
 
 Refer to the following code, in which the `e-bigger` class is added for enabling touch mode using the for loop in ASP.NET core application.
 
@@ -172,11 +172,11 @@ Refer to the following code, in which the `e-bigger` class is added for enabling
 {% endhighlight %}
 {% endtabs %}
 
-![change-size-mode-for-a-component-at-runtime](images/change-size-mode-for-a-component-at-runtime.gif)
+![change-size-mode-for-a-control-at-runtime](images/change-size-mode-for-a-component-at-runtime.gif)
 
 ## See Also
 
-Refer below topics to learn about responsiveness components based on the available size in Syncfusion ASP.NET Core Components.
+Refer below topics to learn about responsiveness controls based on the available size in Syncfusion ASP.NET Core Controls.
 
 * [Sidebar Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/sidebar/auto-close/)
 * [DataGrid Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/grid/Columns/responsive-columns/)
