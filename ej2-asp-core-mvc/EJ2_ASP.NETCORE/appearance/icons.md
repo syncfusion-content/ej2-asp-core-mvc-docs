@@ -21,9 +21,9 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 {% tabs %}
 {% highlight c# tabtitle="CSS" %}
 
-    .e-search:before{
-        content:'\e993';
-    }
+.e-search:before{
+    content:'\e993';
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -31,9 +31,9 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 3.Add `e-icons` and `e-search` class to the HTML element.
 
 {% tabs %}
-{% highlight c# tabtitle="CSS" %}
+{% highlight c# tabtitle="CSHTML" %}
 
-    <span class="e-icons e-search"></span>
+<span class="e-icons e-search"></span>
 
 {% endhighlight %}
 {% endtabs %}
