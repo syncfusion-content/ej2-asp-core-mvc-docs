@@ -92,7 +92,7 @@ The Syncfusion ASP.NET Core UI input and editor controls can be validated by usi
 
 ![Validation message for individual input control](images/validation-message.png)
 
-5. You can also use the [submit](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/#submit) event from FromValidator to validate the form manually.
+5.You can also use the [submit](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/#submit) event from FromValidator to validate the form manually.
 
 ## ASP.NET Core Form Validation Supported Controls
 

@@ -40,22 +40,22 @@ npm install cldr-data
 
 2.Once the `CLDR-Data` installed create a folder `cldr-data` inside the `wwwroot` folder. Then create the folder directory like shown below in the structure inside the `wwwroot` folder.
 
-    * `wwwroot\cldr-data\supplemental`
-    * `wwwroot\cldr-data\main`
+* `wwwroot\cldr-data\supplemental`
+* `wwwroot\cldr-data\main`
 
 3.The files named as below are required to setup the specific culture to the Schedule control.
 
-    * numberingSystems.json
-    * ca-gregorian.json
-    * numbers.json
-    * timeZoneNames.json
-    * ca-islamic.json
+* numberingSystems.json
+* ca-gregorian.json
+* numbers.json
+* timeZoneNames.json
+* ca-islamic.json
 
 4.The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now you can move this file to the location `wwwroot\cldr-data\supplemental`.
 
 5.The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules\cldr-data\main\fr-CH`. Now create a folder named `fr-CH` inside the location `wwwroot\cldr-data\main` and move the files inside it.
 
-    ![Moved cldr data to application](./images/cldr-structure.png)
+![Moved cldr data to application](./images/cldr-structure.png)
 
 6.Now use the below `loadCultureFiles` method to load the culture specific CLDR JSON data.
 
