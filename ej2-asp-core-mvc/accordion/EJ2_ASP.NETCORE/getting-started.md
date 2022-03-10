@@ -38,6 +38,47 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 {% endhighlight %}
 {% endtabs %}
+
+## Add style sheet
+
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+    <head>
+        ...
+        <!-- Syncfusion ASP.NET Core controls styles -->
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+    </head>
+{% endhighlight %}
+{% endtabs %}
+
+## Add script reference
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+    <head>
+        ...
+        <!-- Syncfusion ASP.NET Core controls scripts -->
+        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    </head>
+{% endhighlight %}
+{% endtabs %}
+
+## Register Syncfusion Script Manager
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+    <body>
+        ....
+        ....
+        <!-- Syncfusion ASP.NET Core Script Manager -->
+        <ejs-scripts></ejs-scripts>
+    </body>
+{% endhighlight %}
+{% endtabs %}
     
 ## Add ASP.NET Core Accordion Component
 
@@ -61,9 +102,8 @@ Now, add the Syncfusion ASP.NET Core Accordion tag helper in `~/Pages/Index.csht
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Accordion component will be rendered in the default web browser.
 
-[ASP.NET Core Accordion component - Getting Started](../../accordion/images/accordion.PNG)
+[ASP.NET Core Accordion component - Getting Started](./images/accordion.PNG)
     
-
 ## See Also
 
 1. [Getting Started with Syncfusion ASP.NET Core for client-side in Visual Studio](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
