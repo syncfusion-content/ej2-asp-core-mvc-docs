@@ -139,8 +139,7 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 
 ## Export with filter options
 
-The excel export provides an option to export with filter option in excel by defining `enableFilter` as **true** .
-It requires the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) to be true.
+The excel export provides an option to export with filter option in excel by defining `enableFilter` as **true**. It requires the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) to be true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -169,8 +168,7 @@ It requires the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2
 
 ## Exporting grouped records
 
-The excel export provides outline option for grouped records which hides the detailed data for better viewing.
-In grid, we have provided the outline option for the exported document when the data's are grouped.
+The excel export provides outline option for grouped records which hides the detailed data for better viewing. In grid, we have provided the outline option for the exported document when the data's are grouped.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

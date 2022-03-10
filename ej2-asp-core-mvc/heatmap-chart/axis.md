@@ -259,11 +259,11 @@ Axis label increment in the heat map is used to display the axis labels with reg
 
 You can display the axis labels at specific time intervals along with the date-time axis using the [`showLabelOn`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~ShowLabelOn.html) property. This property supports the following types:
 
-* None: Displays the axis labels based on the `intervalType` and `interval` property of the axis. This type is default value of the `showLabelOn` property.
-* Years: Displays the axis labels on every year between given date-time range.
-* Months: Displays the axis labels on every month between given date-time range.
-* Days: Displays the axis labels on every day between given date-time range.
-* Minutes: Displays the axis labels on every minute between given date-time range.
+* **None**: Displays the axis labels based on the `intervalType` and `interval` property of the axis. This type is default value of the `showLabelOn` property.
+* **Years**: Displays the axis labels on every year between given date-time range.
+* **Months**: Displays the axis labels on every month between given date-time range.
+* **Days**: Displays the axis labels on every day between given date-time range.
+* **Minutes**: Displays the axis labels on every minute between given date-time range.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

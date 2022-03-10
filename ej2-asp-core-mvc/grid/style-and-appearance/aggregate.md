@@ -13,7 +13,7 @@ documentation: ug
 
 ## Customizing the aggregate root element
 
-Use the below CSS to customize the Grid aggregate root elements
+Use the below CSS to customize the Grid aggregate root elements.
 
 ```css
 

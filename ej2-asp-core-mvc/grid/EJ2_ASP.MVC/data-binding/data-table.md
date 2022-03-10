@@ -13,7 +13,7 @@ documentation: ug
 
 DataTable represents a table with relational data which has in-built schema to work easily with data column and data row objects.
 
-You can bind DataTable to the grid by using [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. While binding DataTable like below, grid actions such as **Sorting**, **Filtering**, **Grouping**, **Paging** etc., will handle at client side..
+You can bind DataTable to the grid by using [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. While binding DataTable like below, grid actions such as **Sorting**, **Filtering**, **Grouping**, **Paging** etc., will handle at client side.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -33,13 +33,13 @@ Also, you can customize the behavior of the editor component through **Params** 
 
 The following table describes cell edit type and their corresponding edit params of the column.
 
-Component |Example
------|-----
-`NumericTextBox` | params: { decimals: 2, value: 5 }
-`DropDownList` | params: { value: 'Germany' }
-`Checkbox` | params: { checked: true}
-`DatePicker` | params: { format:'dd.MM.yyyy' }
-`DateTimePicker` | params: { value: new Date() }
+|Component |Example|
+|-----|-----|
+|`NumericTextBox` | params: { decimals: 2, value: 5 }|
+|`DropDownList` | params: { value: 'Germany' }|
+|`Checkbox` | params: { checked: true}|
+|`DatePicker` | params: { format:'dd.MM.yyyy' }|
+|`DateTimePicker` | params: { value: new Date() }|
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -66,13 +66,13 @@ Component |Example
 
 
 
-> If edit type is not defined in the column, then it will be considered as the **stringedit** type (Textbox component) .
+> If edit type is not defined in the column, then it will be considered as the **stringedit** type (Textbox component).
 
 ### Restrict to type decimal points in a NumericTextBox while editing the numeric column
 
 By default, the number of decimal places will be restricted to two in the NumericTextBox while editing the numeric column. We can restrict to type the decimal points in a NumericTextBox by using the **validateDecimalOnType** and **decimals** properties of NumericTextBox.
 
-In the below demo, while editing the row we have restricted to type the decimal point value in the NumericTextBox of **Freight** column
+In the below demo, while editing the row we have restricted to type the decimal point value in the NumericTextBox of **Freight** column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

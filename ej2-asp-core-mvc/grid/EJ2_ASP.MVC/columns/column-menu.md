@@ -87,8 +87,7 @@ During the resizing action, the grid component triggers the below two events.
 
 ## Custom column menu item
 
-Custom column menu items can be added by defining the [`ColumnMenuItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuItems) as collection of
-the ColumnMenuItemModel.
+Custom column menu items can be added by defining the [`ColumnMenuItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuItems) as collection of the ColumnMenuItemModel.
 
 Actions for this customized items can be defined in the [`ColumnMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuClick) event.
 
@@ -142,6 +141,43 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% endhighlight %}
 {% highlight c# tabtitle="Customizecolumnmenu.cs" %}
 {% include code-snippet/grid/columns/customizecolumnmenu/customizecolumnmenu.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Customize the icon of column menu
+
+You can customize the column menu icon by overriding the default grid class **.e-icons.e-columnmenu** with a custom property **content** as mentioned below,
+
+```css
+.e-grid .e-columnheader .e-icons.e-columnmenu::before {
+      content: "\e941";
+}
+```
+
+In the below sample, grid is rendered with a customized column menu icon.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/custom-column-menu-icon/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Column-icon.cs" %}
+{% include code-snippet/grid/how-to/custom-column-menu-icon/column-icon.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/custom-column-menu-icon/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Column-icon.cs" %}
+{% include code-snippet/grid/how-to/custom-column-menu-icon/column-icon.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

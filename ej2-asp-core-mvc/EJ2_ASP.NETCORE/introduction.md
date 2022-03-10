@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Introduction in ##Platform_Name## Component
-description: Learn here all about Introduction in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Introduction of ##Platform_Name## controls
+description: Learn here all about introduction of 70+ Syncfusion ##Platform_Name## UI controls powered by Essential JS 2.
 platform: ej2-asp-core-mvc
-control: Introduction
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -14,15 +14,16 @@ Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been 
 
 ## How to best read this user guide
 
-* The best way to get started would be to read the "Getting Started" section of the documentation for the component that you would like to start using first. The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that we recommend reading end-to-end before starting to write code, all other information can be referred as needed.
+* The best way to get started would be to read the "Getting Started" section of the documentation for the control that you would like to start using first. The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that we recommend reading end-to-end before starting to write code, all other information can be referred as needed.
 
-* Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code snippets in the [online sample browser](http://ej2.syncfusion.com/aspnetcore/) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
+* Now that you are familiar with the basics of using the control, the next step would be to start integrating the control into your application. A good starting point would be to refer to the code snippets in the [online sample browser](http://ej2.syncfusion.com/aspnetcore/) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
 
 * Another valuable resource is the API reference which provides detailed information on the object hierarchy as well as the settings available on every object.
 
-## Component List
+* The user guide covers tag helper code snippet in most of its sections. But the Syncfusion ASP.NET Core controls support both Tag helper and HTML helper. 
 
-<!-- markdownlint-disable MD033 MD018 -->
+## Control List
+
 <style>
 #table
 {
@@ -97,7 +98,7 @@ border:0 !important;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/getting-started">Stock Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started">Circular Gauge</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started">Linear Gauge</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started">Diagram Component</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started">Diagram</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/heatmap-chart/getting-started">HeatMap Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/getting-started">Map</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/smithchart/getting-started">Smith Chart</a></div>
@@ -171,7 +172,7 @@ border:0 !important;
 
 * Don't see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/aspnet-core).
 
-> Syncfusion does not collect any kind of information when our components are used in customer applications.
+> Syncfusion does not collect any kind of information when our controls are used in customer applications.
 
 ## See Also
 
@@ -179,20 +180,12 @@ border:0 !important;
 
    Syncfusion Project Template
 
-* [Getting started with Syncfusion ASP.NET Core Components](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
+* [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
 
    Visual Studio Code
 
-* [Getting started with Syncfusion ASP.NET Core Components](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/vscode)
+* [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/vscode)
 
    Visual Studio for Mac
 
-* [Getting started with Syncfusion ASP.NET Core Components](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
-
-   Yeoman
-
-* [Getting started with Syncfusion ASP.NET Core Components](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/yeoman)
-
-   Areas
-
-* [Getting started with Syncfusion ASP.NET Core Components](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/areas)
+* [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)

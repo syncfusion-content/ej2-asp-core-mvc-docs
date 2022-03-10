@@ -51,8 +51,7 @@ To add a custom parameter to the data request, use the addParams method of **Que
 
 ## Handling HTTP error
 
-During server interaction from the grid, some server-side exceptions may occur, and you can acquire those error messages or exception details
-in client-side using the [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event.
+During server interaction from the grid, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event.
 
 The argument passed to the [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event contains the error details returned from the server.
 
@@ -81,8 +80,7 @@ The argument passed to the [`ActionFailure`](https://help.syncfusion.com/cr/aspn
 
 
 
-> The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event will be triggered not only for the server errors, but
-also when there is an exception while processing the grid actions.
+> The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event will be triggered not only for the server errors, but also when there is an exception while processing the grid actions.
 
 ## Binding with ajax
 

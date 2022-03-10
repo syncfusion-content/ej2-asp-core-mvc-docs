@@ -15,8 +15,8 @@ documentation: ug
 
 This section explains the supported rendering modes of the In-place Editor. Possible Rendering modes are as follows.
 
-    * Popup
-    * Inline
+* Popup
+* Inline
 
 > By default, `Popup` mode will be rendered, when opening an editor.
 

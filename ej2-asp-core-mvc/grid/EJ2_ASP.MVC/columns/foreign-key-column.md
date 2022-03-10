@@ -45,3 +45,126 @@ In the following example, **Employee Name** is a foreign column which shows **Fi
 
 > For remote data, the sorting and grouping is done based on [`ForeignKeyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyField) instead of [`ForeignKeyValue`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyValue).
 > If [`ForeignKeyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyField) is not defined, then the column uses [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumnBuilder-1.html#Syncfusion_EJ2_Grids_GridColumnBuilder_1_Field_System_String_).
+
+## Use edit template in foreignkey column
+
+By default, foreign key column uses dropdown component for editing. You can render other than the dropdown by using the [`Edit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Edit) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html). The following example demonstrates the way of using edit template in foreign column.
+
+In the following example, The **Employee Name** is a foreign key column and while editing, AutoComplete component is rendered instead of DropDownList.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/edit-template-foreign/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit-template-foreign.cs" %}
+{% include code-snippet/grid/how-to/edit-template-foreign/edit-template-foreign.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/edit-template-foreign/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit-template-foreign.cs" %}
+{% include code-snippet/grid/how-to/edit-template-foreign/edit-template-foreign.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Customize filter UI in foreignkey column
+
+You can create your own filtering UI by using [`Filter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Filter) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html). The following example demonstrates the way to create a custom filtering UI in the foreign column.
+
+In the following example, The **Employee Name** is a foreign key column. DropDownList is rendered using Filter UI.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/filter-ui-foreign/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Filter-ui-foreign.cs" %}
+{% include code-snippet/grid/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/filter-ui-foreign/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Filter-ui-foreign.cs" %}
+{% include code-snippet/grid/how-to/filter-ui-foreign/filter-ui-foreign.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Use filter bar template in foreignkey column
+
+You can use the filter bar template in foreign key column by defining the [`FilterBarTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_FilterBarTemplate) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html). The following example demonstrates the way to use filter bar template in foreign column.
+
+In the following example, The **Employee Name** is a foreign key column. This column header shows the custom filter bar template and you can select filter value by using the **DropDown** options.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/filterbar-temp-foreign/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Filterbar-temp-foreign.cs" %}
+{% include code-snippet/grid/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/filterbar-temp-foreign/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Filterbar-temp-foreign.cs" %}
+{% include code-snippet/grid/how-to/filterbar-temp-foreign/filterbar-temp-foreign.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Perform aggregation in foreignkey column
+
+Default aggregations are not supported in a foreign key column. You can achieve aggregation for the foreign key column by using the custom aggregates. The following example demonstrates the way to achieve aggregation in foreign key column.
+
+In the following example, The **Employee Name** is a foreign key column and the aggregation for the foreign column was calculated in customAggregateFn.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/aggregate-foreign/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Aggregate-foreign.cs" %}
+{% include code-snippet/grid/how-to/aggregate-foreign/aggregate-foreign.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/aggregate-foreign/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Aggregate-foreign.cs" %}
+{% include code-snippet/grid/how-to/aggregate-foreign/aggregate-foreign.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+

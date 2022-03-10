@@ -15,7 +15,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## Background
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -27,16 +26,16 @@ This article describes the API migration process of Diagram component from Essen
 <td><b>Property</b>:<i>`BackgroundImage.Alignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-background-image alignment="XMidYMid"></e-background-image>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td><b>Property</b>:<i>`Background.Align`</i>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-pagesettings>
@@ -44,22 +43,22 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-pagesettings>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 <tr>
 <td><b>Defines how the background image should be scaled/stretched</b></td>
 <td><b>Property</b>:<i>`BackgroundImage.Scale`</i>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-background-image scale="Meet"></e-background-image>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td><b>Property</b>:<i>`Background.Align`</i>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-pagesettings>
@@ -67,22 +66,22 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-pagesettings>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 <tr>
 <td><b>Sets the source path of the background image</b></td>
 <td><b>Property</b>:<i>`BackgroundImage.Source`</i>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-background-image source="../images/Employee/Artboard 13.Png"></e-background-image>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td><b>Property</b>:<i>`Background.Source`</i>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-pagesettings>
@@ -90,14 +89,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-pagesettings>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 </table>
 
 ## Bridging
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -107,26 +105,25 @@ This article describes the API migration process of Diagram component from Essen
 <tr>
 <td><b>Sets the direction of line bridges</b></td>
 <td><b>Property</b>:<i>`BridgeDirection`</i>
-<code>
+{% highlight html %}
 
     <ej-diagram bridge-direction="Bottom"></ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 
 <td><b>Property</b>:<i>`BridgeDirection`</i>
-<code>
+{% highlight html %}
 
     <ejs-diagram  bridgeDirection="Bottom"></ejs-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 </table>
 
 ## CommandManager
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -139,7 +136,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`CommandManager.Commands`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-command-manager>
@@ -151,8 +148,8 @@ This article describes the API migration process of Diagram component from Essen
         </e-command-manager>
     </ej-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function canExecute(args) {
@@ -166,19 +163,19 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`CommandManager.Commands`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram commandManager="@ViewBag.commands"></ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
 
@@ -198,22 +195,22 @@ This article describes the API migration process of Diagram component from Essen
 
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramCommand> commands = new List<DiagramCommand>();
     commands.Add(new DiagramCommand() { CanExecute = "canExecute", Execute = "execute", Gesture = new DiagramKeyGesture() { Key = Keys.C, KeyModifiers = KeyModifiers.Shift }, Name = "clone", Parameter = "node" });
     ViewBag.commands = commands;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
 <td><b>Defines any additional parameters that are required at runtime</b></td>
 <td>
 <b>Property</b>:<i>`CommandManager.Commands.Parameter`</i>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-command-manager>
@@ -225,8 +222,8 @@ This article describes the API migration process of Diagram component from Essen
         </e-command-manager>
     </ej-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function canExecute(args) {
@@ -240,19 +237,19 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`CommandManager.Commands.Parameter`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram commandManager="@ViewBag.commands"></ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
 
@@ -272,22 +269,21 @@ This article describes the API migration process of Diagram component from Essen
 
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<DiagramCommand> commands = new List<DiagramCommand>();
     commands.Add(new DiagramCommand() { CanExecute = "canExecute", Execute = "execute", Gesture = new DiagramKeyGesture() { Key = Keys.C, KeyModifiers = KeyModifiers.Shift }, Name = "clone", Parameter = "node" });
     ViewBag.commands = commands;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## Connectors
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -301,7 +297,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -309,22 +305,22 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Dictionary<string, object> addInfo = new Dictionary<string, object>();
     addInfo.Add("Description", "Bidirectional Flow");
     ViewBag.addInfo = addInfo;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.AddInfo`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -332,15 +328,15 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Dictionary<string, object> addInfo = new Dictionary<string, object>();
     addInfo.Add("Description", "Bidirectional Flow");
     ViewBag.addInfo = addInfo;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -350,7 +346,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.BridgeSpace`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -358,13 +354,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.BridgeSpace`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -372,7 +368,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -382,7 +378,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -390,13 +386,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -404,7 +400,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -414,7 +410,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.CornerRadius`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -422,13 +418,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.CornerRadius`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -436,7 +432,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -445,15 +441,15 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.CssClass`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     //CSS style
     .HoverConnector:hover {
         stroke:blue
     }
 
-</code><br>
-<code>
+{% endhighlight %}<br>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -461,7 +457,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -472,7 +468,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.HorizontalAlign`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -480,7 +476,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -490,7 +486,7 @@ This article describes the API migration process of Diagram component from Essen
 <td>
 <b>Property</b>:<i>`Connector.Labels`</i>
 
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -502,13 +498,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.Annotations`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -520,7 +516,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -529,7 +525,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.LineColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -537,13 +533,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.Style.StrokeColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -553,9 +549,8 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
-</tr>
 </tr>
 <tr>
 <td><b>Sets the pattern of dashes and gaps used to stroke the path of the connector</b></td>
@@ -563,7 +558,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.LineDashArray`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -571,13 +566,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.Style.StrokeDashArray`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -587,7 +582,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -596,7 +591,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.LineWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -604,13 +599,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connector.Style.StrokeWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -620,7 +615,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -631,7 +626,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.LineHitPadding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -639,13 +634,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.HitPadding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -654,7 +649,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -663,7 +658,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -671,12 +666,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Id`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -684,7 +679,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -693,7 +688,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Opacity`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -701,12 +696,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Style.Opacity`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -716,7 +711,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -725,7 +720,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Parent`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -733,7 +728,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Not applicable</b>
 </td>
@@ -745,7 +740,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -757,13 +752,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connector.Segments`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -771,15 +766,15 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<Segment> segments = new List<Segment>();
     segments.Add(new Segment() { Type = Segments.Orthogonal });
     ViewBag.segments = segments;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -790,7 +785,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Direction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -802,13 +797,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Segments.Direction`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -816,15 +811,15 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<Segment> segments = new List<Segment>();
     segments.Add(new Segment() { Direction = "Bottom" });
     ViewBag.segments = segments;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -835,7 +830,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Length`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -847,13 +842,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Segments.Length`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -861,15 +856,15 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<Segment> segments = new List<Segment>();
     segments.Add(new Segment() { Length = 30 });
     ViewBag.segments = segments;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -879,7 +874,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Point`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -893,7 +888,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Point`</i>
@@ -908,7 +903,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Point1`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -922,7 +917,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Point1`</i>
@@ -938,7 +933,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Point2`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -952,7 +947,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Point2`</i>
@@ -969,7 +964,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connectors.Segments.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -981,20 +976,20 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Type`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     @Html.EJS().Diagram("container").Connectors(ViewBag.Connectors).Render()
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<Segment> segments = new List<Segment>();
     segments.Add(new Segment() { Type = Segments.Bezier });
@@ -1002,7 +997,7 @@ This article describes the API migration process of Diagram component from Essen
     connectors.Add(new DiagramConnector() { Segments = segments });
     ViewBag.Connectors = connectors;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1012,7 +1007,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Vector1`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1026,7 +1021,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Vector1`</i>
@@ -1043,7 +1038,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Segments.Vector2`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1057,7 +1052,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Segments.Vector2`</i>
@@ -1074,7 +1069,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Shape.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1084,13 +1079,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Connectors.Shape.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1100,7 +1095,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1110,7 +1105,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1120,12 +1115,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1135,7 +1130,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1145,7 +1140,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.BorderColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1155,12 +1150,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Style.StrokeColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1172,7 +1167,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1181,7 +1176,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.BorderWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1191,12 +1186,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Style.StrokeWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1208,7 +1203,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1218,7 +1213,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.CssClass`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1228,7 +1223,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Not applicable</b></td>
 </tr>
@@ -1239,7 +1234,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.FillColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1249,12 +1244,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Style.Fill`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1266,7 +1261,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1275,7 +1270,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1285,12 +1280,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1300,7 +1295,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1310,7 +1305,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.PathData`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1320,12 +1315,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.PathData`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1335,7 +1330,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1346,7 +1341,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.Shape`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1356,12 +1351,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Shape`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1371,7 +1366,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1381,7 +1376,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceDecorator.Width`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1391,12 +1386,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceDecorator.Width`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1406,7 +1401,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1416,7 +1411,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourceNode`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1424,12 +1419,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourceID`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1437,7 +1432,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1447,7 +1442,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourcePadding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1455,12 +1450,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.HitPadding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1468,7 +1463,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1478,7 +1473,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourcePoint`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1488,12 +1483,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourcePoint`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1503,7 +1498,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1514,7 +1509,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.SourcePort`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1522,12 +1517,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.SourcePortID`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1535,7 +1530,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1546,7 +1541,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1556,12 +1551,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1571,7 +1566,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1581,7 +1576,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.BorderColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1591,14 +1586,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Style.StrokeColor`</i>
 <br>
 <br>
-<code>
-<code>
-
+{% highlight html %}
     <ejs-diagram>
         <e-diagram-connectors>
             <e-diagram-connector>
@@ -1608,9 +1601,7 @@ This article describes the API migration process of Diagram component from Essen
             </e-diagram-connector>
         </e-diagram-connectors>
     </ejs-diagram>
-
-</code></td>
-
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Sets the border width of the decorator</b></td>
@@ -1618,7 +1609,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.BorderWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1628,12 +1619,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Style.StrokeWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1645,7 +1636,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1655,7 +1646,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.CssClass`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1665,7 +1656,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Not applicable</b></td>
 </tr>
@@ -1677,7 +1668,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.FillColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1687,12 +1678,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Style.Fill`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1704,7 +1695,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1713,7 +1704,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1723,12 +1714,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1738,7 +1729,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1748,7 +1739,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.PathData`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1758,12 +1749,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.PathData`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1773,7 +1764,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1784,7 +1775,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.Shape`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1794,12 +1785,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Shape`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1809,7 +1800,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1819,7 +1810,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetDecorator.Width`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1829,12 +1820,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetDecorator.Width`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1844,7 +1835,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1855,7 +1846,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetNode`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1863,12 +1854,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetID`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1876,7 +1867,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -1885,7 +1876,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetPadding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1893,12 +1884,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.HitPadding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1906,7 +1897,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1917,7 +1908,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetPoint`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1927,12 +1918,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetPoint`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1942,7 +1933,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -1953,7 +1944,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.TargetPort`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -1961,12 +1952,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.TargetPortID`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -1974,7 +1965,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 
@@ -1986,7 +1977,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <script type="text/x-jsrender" id="mouseovertooltip"><br>
         <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px"><br>
@@ -2002,19 +1993,19 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Tooltip tooltip = new Tooltip() { TemplateId = "mouseOverTooltip"};
     ViewBag.tooltip = tooltip;
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Tooltip`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -2024,7 +2015,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -2035,7 +2026,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.VerticalAlign`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -2043,7 +2034,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Not applicable</b></td>
 </tr>
@@ -2055,7 +2046,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.Visible`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -2063,12 +2054,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.Visible`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -2076,7 +2067,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -2087,7 +2078,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Connector.ZOrder`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-connectors>
@@ -2095,12 +2086,12 @@ This article describes the API migration process of Diagram component from Essen
         </e-connectors>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td><td>
 <b>Property</b>:<i>`Connectors.ZIndex`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-connectors>
@@ -2108,14 +2099,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-connectors>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## ContextMenu
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -2131,14 +2121,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     <ej-diagram context-menu="@ViewBag.contextMenu"></ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> items = new List<ContextMenuItem>();
     items.Add(new ContextMenuItem() { Name = "HyperLink" });
@@ -2148,20 +2138,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenu = contextMenu;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram contextMenuSettings="@ViewBag.contextMenuSettings"></ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Text = "delete" });
@@ -2171,7 +2161,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -2183,14 +2173,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     <ej-diagram context-menu="@ViewBag.contextMenu"></ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> items = new List<ContextMenuItem>();
     items.Add(new ContextMenuItem() { Text = "text" });
@@ -2200,20 +2190,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenu = contextMenu;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items.Text`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram contextMenuSettings="@ViewBag.contextMenuSettings"></ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Text = "text" });
@@ -2223,7 +2213,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -2235,14 +2225,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     <ej-diagram context-menu="@ViewBag.contextMenu"></ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> items = new List<ContextMenuItem>();
     items.Add(new ContextMenuItem() { Name = "HyperLink" });
@@ -2252,20 +2242,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenu = contextMenu;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items.Id`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram contextMenuSettings="@ViewBag.contextMenuSettings"></ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Id = "id" });
@@ -2275,7 +2265,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -2287,14 +2277,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     <ej-diagram context-menu="@ViewBag.contextMenu"></ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> items = new List<ContextMenuItem>();
     items.Add(new ContextMenuItem() { ImageUrl = "Images/zoomIn.Png" });
@@ -2304,20 +2294,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenu = contextMenu;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items.Url`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram contextMenuSettings="@ViewBag.contextMenuSettings"></ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Url = "Images/zoomIn.Png" });
@@ -2327,7 +2317,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -2338,14 +2328,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     <ej-diagram context-menu="@ViewBag.contextMenu"></ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> items = new List<ContextMenuItem>();
     items.Add(new ContextMenuItem() { CssClass = "menu" });
@@ -2355,20 +2345,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenu = contextMenu;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items.IconCss`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram contextMenuSettings="@ViewBag.contextMenuSettings"></ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { IconCss = "e-copy" });
@@ -2378,7 +2368,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -2389,14 +2379,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <b>[View]</b>
 
-<code>
+{% highlight html %}
 
     <ej-diagram context-menu="@ViewBag.contextMenu"></ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> subItems = new List<ContextMenuItem>();
     subItems.Add(new ContextMenuItem() { Name = "HyperLink" });
@@ -2408,20 +2398,20 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenu = contextMenu;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Items.Items`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram contextMenuSettings="@ViewBag.contextMenuSettings"></ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> SubItems = new List<ContextMenuItem>();
     SubItems.Add(new ContextMenuItem() { Id = "id" });
@@ -2433,7 +2423,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -2442,25 +2432,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ContextMenu.ShowCustomMenuItemsOnly`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram >
         <e-context-menu show-custom-menu-items-only="true"></e-context-menu>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.ShowCustomMenuOnly`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-contextmenusettings showCustomMenuOnly="true"></e-diagram-contextmenusettings>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 </tr>
 
 <tr>
@@ -2473,13 +2463,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram contextMenuSettings="@ViewBag.contextMenuSettings"></ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Separator = true });
@@ -2489,7 +2479,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -2503,13 +2493,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram contextMenuSettings="@ViewBag.contextMenuSettings"></ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<ContextMenuItem> menuItems = new List<ContextMenuItem>();
     menuItems.Add(new ContextMenuItem() { Target = ".E-diagramcontent" });
@@ -2519,7 +2509,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.contextMenuSettings = contextMenuSettings;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -2532,20 +2522,19 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ContextMenuSettings.Show`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram contextMenuSettings="@ViewBag.contextMenuSettings">
         <e-diagram-contextmenusettings show="true"></e-diagram-contextmenusettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## DataSourceSettings
 
-<!-- markdownlint-disable MD033 -->
 
 <table>
 <tr>
@@ -2559,25 +2548,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DataSourceSettings.Id`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings  id="id"></e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`DataSourceSettings.Id`</i>
 <br>
 <br>
-
+{% highlight html %}
     <ejs-diagram>
         <e-diagram-datasourcesettings id="id"></e-diagram-datasourcesettings>
     </ejs-diagram>
-
-</code></td>
-
+{% endhighlight %}</td>
 </tr>
 <tr>
 <td><b>Defines the parent id of the data source item</b></td>
@@ -2585,25 +2572,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DataSourceSettings.Parent`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings parent="parent"></e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`DataSourceSettings.ParentId`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-datasourcesettings parentId="parentId"></e-diagram-datasourcesettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -2612,13 +2599,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DataSourceSettings.Query`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings query="datasource query"></e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2629,25 +2616,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DataSourceSettings.Root`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings root="E1"></e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`DataSourceSettings.Root`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-datasourcesettings root="E1"></e-diagram-datasourcesettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -2656,13 +2643,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DataSourceSettings.TableName`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings table-name="datasource table name"></e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2675,16 +2662,16 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings crud-action="@ViewBag.crudAction"></e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     CRUDAction crudAction = new CRUDAction()
     {
@@ -2692,7 +2679,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.crudAction = crudAction;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2704,16 +2691,16 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DataSourceSettings.CrudAction.Create`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings crud-action="@ViewBag.crudAction"></e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     CRUDAction crudAction = new CRUDAction()
     {
@@ -2721,7 +2708,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.crudAction = crudAction;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2734,16 +2721,16 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings crud-action="@ViewBag.crudAction"></e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     CRUDAction crudAction = new CRUDAction()
     {
@@ -2751,7 +2738,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.crudAction = crudAction;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2764,16 +2751,16 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings crud-action="@ViewBag.crudAction"></e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     CRUDAction crudAction = new CRUDAction()
     {
@@ -2781,7 +2768,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.crudAction = crudAction;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2794,16 +2781,16 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings crud-action="@ViewBag.crudAction"></e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     CRUDAction crudAction = new CRUDAction()
     {
@@ -2811,7 +2798,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.crudAction = crudAction;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2823,45 +2810,45 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings custom-fields="@ViewBag.customFeilds"></e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     List<string> customFields = new List<string>();
     customFields.Add("Description");
     customFields.Add("Color");
     ViewBag.customFields = customFields;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`DataSourceSettings.Data`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-datasourcesettings data="@ViewBag.data"></e-diagram-datasourcesettings>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     List<string> data = new List<string>();
     data.Add("Description");
     data.Add("Color");
     ViewBag.data = data;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -2871,17 +2858,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ConnectionDataSourceSettings connectionDataSourceSettings = new ConnectionDataSourceSettings()
     {
@@ -2891,7 +2878,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2904,17 +2891,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ConnectionDataSourceSettings connectionDataSourceSettings = new ConnectionDataSourceSettings()
     {
@@ -2922,7 +2909,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2935,17 +2922,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ConnectionDataSourceSettings connectionDataSourceSettings = new ConnectionDataSourceSettings()
     {
@@ -2953,7 +2940,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2965,17 +2952,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ConnectionDataSourceSettings connectionDataSourceSettings = new ConnectionDataSourceSettings()
     {
@@ -2983,7 +2970,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -2995,17 +2982,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ConnectionDataSourceSettings connectionDataSourceSettings = new ConnectionDataSourceSettings()
     {
@@ -3013,7 +3000,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3025,17 +3012,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ConnectionDataSourceSettings connectionDataSourceSettings = new ConnectionDataSourceSettings()
     {
@@ -3043,7 +3030,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3055,17 +3042,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ConnectionDataSourceSettings connectionDataSourceSettings = new ConnectionDataSourceSettings()
     {
@@ -3073,7 +3060,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3085,17 +3072,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ConnectionDataSourceSettings connectionDataSourceSettings = new ConnectionDataSourceSettings()
     {
@@ -3103,7 +3090,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3115,17 +3102,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ConnectionDataSourceSettings connectionDataSourceSettings = new ConnectionDataSourceSettings()
     {
@@ -3133,7 +3120,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3145,17 +3132,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     CRUDAction crudAction = new CRUDAction()
     {
@@ -3168,7 +3155,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3181,17 +3168,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     CRUDAction crudAction = new CRUDAction()
     {
@@ -3204,7 +3191,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3217,17 +3204,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     CRUDAction crudAction = new CRUDAction()
     {
@@ -3240,7 +3227,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3253,17 +3240,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     CRUDAction crudAction = new CRUDAction()
     {
@@ -3276,7 +3263,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3289,17 +3276,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     CRUDAction crudAction = new CRUDAction()
     {
@@ -3312,7 +3299,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3325,17 +3312,17 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-datasource-settings connection-DataSource="@ViewBag.connectionDataSourceSettings">
         </e-datasource-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     List<string> customFields = new List<string>();
     customFields.Add("Description");
@@ -3347,7 +3334,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.connectionDataSourceSettings = connectionDataSourceSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3356,7 +3343,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## DefaultSettings
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3369,7 +3355,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DefaultSettings.Node`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-default-settings>
@@ -3377,32 +3363,32 @@ This article describes the API migration process of Diagram component from Essen
         </e-default-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`GetNodeDefaults`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram getNodeDefaults="@ViewBag.getNodeDefaults"></ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function getNodeDefaults(obj, diagram) {
         obj.Shape = { type: 'Basic' };
     }
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.getNodeDefaults = getNodeDefaults;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -3412,7 +3398,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DefaultSettings.Connector`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-default-settings>
@@ -3420,33 +3406,32 @@ This article describes the API migration process of Diagram component from Essen
         </e-default-settings>
     </ej-diagram>
 
-</code>
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`GetConnectorDefaults`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram getConnectorDefaults="@ViewBag.getConnectorDefaults"></ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function getConnectorDefaults(obj, diagram) {
         obj.Type = 'Bezier';
     }
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.getConnectorDefaults = getConnectorDefaults;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -3456,7 +3441,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`DefaultSettings.Group`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-default-settings>
@@ -3464,7 +3449,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-default-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b>
@@ -3474,7 +3459,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## DrawType
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3488,12 +3472,12 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram create="@ViewBag.create"></ej-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function create(args) {
@@ -3502,25 +3486,25 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     ViewBag.create = "create";
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`DrawingObject`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram created="@ViewBag.created"></ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function created() {
         diagram = document.getElementById("diagram").ej2_instances[0];
@@ -3528,21 +3512,20 @@ This article describes the API migration process of Diagram component from Essen
         diagram.dataBind();
     }
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.created = created;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## EnableAutoScroll
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3555,32 +3538,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`EnableAutoScroll`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram enable-auto-scroll="true"></ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`CanAutoScroll`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-scrollsettings canAutoScroll="true"></e-diagram-scrollsettings>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
-</code></td>
+{% highlight html %}
+{% endhighlight %}</td>
 </tr>
 </table>
 
 ## EnableContextMenu
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3593,30 +3575,29 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`EnableContextMenu`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram enable-context-menu="true"></ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ContextMenuSettings.Show`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-contextmenusettings show="true"></e-diagram-contextmenusettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## GetCustomCursor
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3633,12 +3614,12 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram getCustomCursor="@ViewBag.getCustomCursor"></ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function getCustomCursor(action, active) {
         var cursor;
@@ -3650,21 +3631,20 @@ This article describes the API migration process of Diagram component from Essen
         return cursor;
     }
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.getCustomCursor = "getCustomCursor";
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## GetCustomProperty
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3680,12 +3660,12 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`GetCustomProperty`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram getCustomProperty="@ViewBag.getCustomProperty"></ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function getCustomProperty(key: string) {
         if (key === 'nodes') {
@@ -3694,21 +3674,20 @@ This article describes the API migration process of Diagram component from Essen
         return null;
     }
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.getCustomProperty = "getCustomProperty";
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## GetCustomTool
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3724,13 +3703,8 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`GetCustomTool`</i>
 <br>
 <br>
-<code>
-
+{% highlight html %}
     <ejs-diagram getCustomTool="@ViewBag.getTool"></ejs-diagram>
-
-<code>
-</code>
-
     function getTool(action) {
         var tool;
         if (action === 'userHandle') {
@@ -3738,11 +3712,10 @@ This article describes the API migration process of Diagram component from Essen
         }
         return tool;
     }
-
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.getTool = "getTool";
 
@@ -3754,14 +3727,13 @@ This article describes the API migration process of Diagram component from Essen
         }
     }
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## Height
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3774,29 +3746,27 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram height="500px"></ej-diagram>
 
-</code>
-<code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram height="500px"></ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## HistoryManager
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -3809,7 +3779,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.CanPop`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagram").ejDiagram("instance");
@@ -3822,7 +3792,7 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3833,7 +3803,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.CloseGroupAction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagram").ejDiagram("instance");
@@ -3847,15 +3817,15 @@ This article describes the API migration process of Diagram component from Essen
             diagram.UpdateNode(item.Name, option);
         }
         diagram.model.historyManager.closeGroupAction();
-    </sccript>
+    </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.EndGroupAction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -3868,7 +3838,7 @@ This article describes the API migration process of Diagram component from Essen
         diagram.historyList.endGroupAction();
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -3877,14 +3847,14 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.Pop`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagramcontent").EjDiagram("instance");
         diagram.model.historyManager.pop();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -3895,7 +3865,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.Push`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagram").ejDiagram("instance");
@@ -3905,13 +3875,13 @@ This article describes the API migration process of Diagram component from Essen
         node.employeeData = value;
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.Push`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -3922,7 +3892,7 @@ This article describes the API migration process of Diagram component from Essen
         diagram.dataBind();
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -3932,14 +3902,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-history-manager redo="@ViewBag.customUndoRedo"></e-history-manager>
     </ej-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function customUndoRedo(args) {
         var diagram = $("#diagram").ejDiagram("instance");
@@ -3949,19 +3919,19 @@ This article describes the API migration process of Diagram component from Essen
         args.PrevState = currentState;
     }
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     ViewBag.customUndoRedo = "customUndoRedo";
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.Redo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -3982,7 +3952,7 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 <tr>
@@ -3991,20 +3961,20 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.RedoStack`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagram").ejDiagram("instance");
         diagram.model.historyManager.redoStack();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.RedoStack`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -4012,7 +3982,7 @@ This article describes the API migration process of Diagram component from Essen
         diagram.historyList.redoStack();
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -4021,14 +3991,14 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.StackLimit`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagram").ejDiagram("instance");
         diagram.model.historyManager.stackLimit();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -4039,7 +4009,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.StartGroupAction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagram").ejDiagram("instance");
@@ -4054,13 +4024,13 @@ This article describes the API migration process of Diagram component from Essen
         diagram.model.historyManager.closeGroupAction();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.StartGroupAction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -4073,7 +4043,7 @@ This article describes the API migration process of Diagram component from Essen
         diagram.historyList.endGroupAction();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 </tr>
 <tr>
@@ -4083,14 +4053,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-history-manager undo="@ViewBag.customUndoRedo"></e-history-manager>
     </ej-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function customUndoRedo(args) {
@@ -4102,19 +4072,19 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     ViewBag.customUndoRedo = "customUndoRedo";
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.Undo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -4130,7 +4100,7 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 </tr>
 <tr>
 <td><b>Gets the number of undo actions to be stored on the history manager. Its an read-only property and the collection should not be modified</b></td>
@@ -4138,27 +4108,27 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.UndoStack`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = $("#diagram").ejDiagram("instance");
         diagram.model.historyManager.undoStack();
     </script>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`HistoryList.UndoStack`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
         diagram.historyList.undoStack();
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -4170,14 +4140,14 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryList.CurrentEntry`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
         diagram.historyList.currentEntry();
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -4189,14 +4159,14 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryList.CanUndo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
         diagram.historyList.canUndo = true;
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -4208,14 +4178,14 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryList.CanRedo`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
         diagram.historyList.canRedo = true;
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 <tr>
@@ -4224,18 +4194,18 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`HistoryManager.CanLog`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     var diagram = $("#diagram").ejDiagram("instance");
     diagram.model.historyManager.canLog();
 
-</code>
-</td></td>
+{% endhighlight %}
+</td>
 <td>
 <b>Property</b>:<i>`HistoryList.CanLog`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script>
         var diagram = document.getElementById("container").ej2_instances[0];
@@ -4245,14 +4215,13 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## Layout
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -4267,14 +4236,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout bounds="@ViewBag.getBounds"></e-layout>
     </ej-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function getBounds() {
@@ -4283,28 +4252,28 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.getBounds = "getBounds";
 
-</code></td>
+{% endhighlight %}</td>
 
 <td>
 <b>Property</b>:<i>`Layout.Bounds`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout bounds="@ViewBag.getBounds"></e-diagram-layout>
     </ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function getBounds() {
@@ -4313,14 +4282,14 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.getBounds = "getBounds";
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4330,25 +4299,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.FixedNode`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout fixed-node="nodeName"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.FixedNode`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout fixedNode="nodeId"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4359,14 +4328,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout getLayoutInfo="@ViewBag.getLayoutInfo"></e-layout>
     </ej-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function getLayoutInfo(diagram, node, options) {
@@ -4375,28 +4344,28 @@ This article describes the API migration process of Diagram component from Essen
         };
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.getLayoutInfo = "getLayoutInfo";
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.GetLayoutInfo`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout getLayoutInfo="@ViewBag.getLayoutInfo"></e-diagram-layout>
     </ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function getLayoutInfo(node, options) {
@@ -4410,14 +4379,14 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.getLayoutInfo = "getLayoutInfo";
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4428,32 +4397,32 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout getConnectorSegments="@ViewBag.getConnectorSegments"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.getConnectorSegments = "getConnectorSegments";
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.ConnectorSegments`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout connectorSegments="Default"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4463,25 +4432,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.HorizontalSpacing`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout horizontal-spacing="50"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.HorizontalSpacing`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout horizontalSpacing="50"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4491,7 +4460,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout >
@@ -4499,13 +4468,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout>
@@ -4513,7 +4482,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4523,27 +4492,27 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout horizontal-alignment="Left"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
-<code>
+{% highlight html %}
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout horizontalAlignment="Left"></e-diagram-layout>
     </ejs-diagram>
 
-</code>
-</code></td>
+{% endhighlight %}
+{% endhighlight %}</td>
 </tr>
 
 <tr>
@@ -4552,25 +4521,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.VerticalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout vertical-alignment="Bottom"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.VerticalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout verticalAlignment="Bottom"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4580,25 +4549,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.Orientation`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout orientation="TopToBottom"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.Orientation`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout orientation="TopToBottom"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4608,25 +4577,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout type="OrganizationalChart"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout type="OrganizationalChart"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4636,25 +4605,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.VerticalSpacing`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout vertical-spacing="50"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.VerticalSpacing`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout verticalSpacing="50"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4664,25 +4633,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.Root`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout root="nodeName"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.Root`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout root="nodeId"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4692,25 +4661,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.SpringFactor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout spring-factor="0.4F"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.SpringFactor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout springFactor="0.4"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4720,25 +4689,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.MaxIteration`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout max-iteration="50"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.MaxIteration`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout maxIteration="50"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4748,25 +4717,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.SpringLength`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout spring-length="80"></e-layout>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layout.SpringLength`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout springLength="80"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4778,13 +4747,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.ConnectionDirection`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout connectionDirection="Auto"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4796,13 +4765,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layout.EnableAnimation`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout enableAnimation="true"></e-diagram-layout>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4815,34 +4784,33 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout getBranch="@ViewBag.getBranch"></e-diagram-layout>
     </ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function getBranch(node, nodes) {
         return node.Data.Branch;
     }
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.getBranch = "getBranch";
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## Nodes
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -4856,7 +4824,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -4864,13 +4832,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -4878,7 +4846,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4888,7 +4856,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Activity`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -4896,13 +4864,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -4914,7 +4882,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4925,7 +4893,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -4933,16 +4901,16 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     Dictionary<string, object> addInfo = new Dictionary<string, object>();
     addInfo.Add("Description", "Bidirectional Flow");
     ViewBag.addInfo = addInfo;
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -4950,7 +4918,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -4958,15 +4926,15 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Dictionary<string, object> addInfo = new Dictionary<string, object>();
     addInfo.Add("Description", "Bidirectional Flow");
     ViewBag.addInfo = addInfo;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -4976,7 +4944,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -4986,13 +4954,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Annotations`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5006,7 +4974,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5016,7 +4984,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Angle`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5026,13 +4994,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Annotations.Angle`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5046,7 +5014,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5056,7 +5024,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Direction`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5066,7 +5034,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5078,7 +5046,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5088,13 +5056,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Annotation.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5108,7 +5076,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5118,7 +5086,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Length`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5128,13 +5096,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Annotations.Length`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5148,7 +5116,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5158,7 +5126,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Text`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5168,13 +5136,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Annotations.Text`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5188,7 +5156,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5198,7 +5166,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Annotation.Width`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5208,13 +5176,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Annotations.Width`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5228,7 +5196,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5241,7 +5209,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Shape.Annotations.Id`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5255,7 +5223,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5265,7 +5233,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CanUngroup`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5279,7 +5247,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 <td>
 <b>Not applicable</b>
@@ -5292,7 +5260,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Classifier`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5300,7 +5268,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5312,7 +5280,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5322,7 +5290,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5334,7 +5302,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5344,7 +5312,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5355,7 +5323,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Attributes`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5369,7 +5337,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5380,7 +5348,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Attributes.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5394,7 +5362,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5405,7 +5373,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Attributes.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5419,7 +5387,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5430,7 +5398,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Attributes.Scope`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5444,7 +5412,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5455,7 +5423,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Methods`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5469,7 +5437,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5480,7 +5448,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Methods.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5494,7 +5462,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5506,7 +5474,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5520,15 +5488,15 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection parameters = new Collection();
     parameters.Add(new UMLParameter() { Name = "name" });
     ViewBag.parameters = parameters;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5540,7 +5508,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5554,15 +5522,15 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection parameters = new Collection();
     parameters.Add(new UMLParameter() { Name = "name" });
     ViewBag.parameters = parameters;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5574,7 +5542,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5588,15 +5556,15 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection parameters = new Collection();
     parameters.Add(new UMLParameter() { Type = "String" });
     ViewBag.parameters = parameters;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5607,7 +5575,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Methods.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5621,7 +5589,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5632,7 +5600,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Class.Methods.Scope`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5646,7 +5614,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -5659,7 +5627,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5667,10 +5635,10 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramIcon collapseIcon = new DiagramIcon()
     {
@@ -5678,13 +5646,13 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.collapseIcon = collapseIcon;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5694,7 +5662,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5705,7 +5673,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5713,10 +5681,10 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramIcon collapseIcon = new DiagramIcon()
     {
@@ -5724,13 +5692,13 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.collapseIcon = collapseIcon;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.BorderColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5740,7 +5708,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5751,7 +5719,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5759,10 +5727,10 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramIcon collapseIcon = new DiagramIcon()
     {
@@ -5770,13 +5738,13 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.collapseIcon = collapseIcon;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.BorderWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5786,7 +5754,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5797,7 +5765,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5805,10 +5773,10 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramIcon collapseIcon = new DiagramIcon()
     {
@@ -5816,13 +5784,13 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.collapseIcon = collapseIcon;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.Fill`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5832,7 +5800,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5843,7 +5811,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5851,10 +5819,10 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramIcon collapseIcon = new DiagramIcon()
     {
@@ -5862,13 +5830,13 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.collapseIcon = collapseIcon;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5878,7 +5846,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5889,7 +5857,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5897,10 +5865,10 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramIcon collapseIcon = new DiagramIcon()
     {
@@ -5908,13 +5876,13 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.collapseIcon = collapseIcon;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5924,7 +5892,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5935,7 +5903,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5943,10 +5911,10 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramIcon collapseIcon = new DiagramIcon()
     {
@@ -5954,13 +5922,13 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.collapseIcon = collapseIcon;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -5972,7 +5940,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -5983,7 +5951,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -5991,10 +5959,10 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramIcon collapseIcon = new DiagramIcon()
     {
@@ -6002,13 +5970,13 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.collapseIcon = collapseIcon;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.Offset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6020,7 +5988,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6031,7 +5999,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6039,10 +6007,10 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramIcon collapseIcon = new DiagramIcon()
     {
@@ -6050,13 +6018,13 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.collapseIcon = collapseIcon;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.Shape`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6066,7 +6034,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6077,7 +6045,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6085,10 +6053,10 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     DiagramIcon collapseIcon = new DiagramIcon()
     {
@@ -6096,13 +6064,13 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.collapseIcon = collapseIcon;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.CollapseIcon.VerticalAlignment `</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6112,7 +6080,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6125,7 +6093,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.Content`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6145,7 +6113,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6158,7 +6126,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.PathData`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6168,7 +6136,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6181,7 +6149,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.CornerRadius`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6191,7 +6159,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6204,7 +6172,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CollapseIcon.Padding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6216,7 +6184,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6226,7 +6194,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.ConnectorPadding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6234,7 +6202,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6246,7 +6214,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6254,14 +6222,14 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6269,7 +6237,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6279,7 +6247,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Container.Orientation`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6293,7 +6261,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </td>
 <td>
@@ -6306,7 +6274,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Container.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6320,7 +6288,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </td>
 <td>
@@ -6333,7 +6301,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CornerRadius`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6341,13 +6309,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shapes.CornerRadius`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6357,7 +6325,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 </tr>
 
 <tr>
@@ -6366,7 +6334,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.CssClass`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6374,7 +6342,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6386,7 +6354,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Data.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6396,13 +6364,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.DataObject.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6414,7 +6382,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6424,7 +6392,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Data.Collection`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6434,13 +6402,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.DataObject.Collection`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6452,7 +6420,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6462,7 +6430,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Enumeration`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6472,7 +6440,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6484,7 +6452,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Enumeration.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6494,7 +6462,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6506,7 +6474,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Enumeration.Members`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6520,7 +6488,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6532,7 +6500,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Enumeration.Members.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6546,7 +6514,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -6558,7 +6526,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Event`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6566,13 +6534,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Event`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6584,7 +6552,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6594,7 +6562,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Event.Trigger`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6602,13 +6570,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Event.Trigger`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6620,7 +6588,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6630,7 +6598,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.ExcludeFromLayout`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-layout type="HierarchicalTree"></e-layout>
@@ -6641,14 +6609,14 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.ExcludeFromLayout`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layout type="HierarchicalTree"></e-diagram-layout>
@@ -6659,7 +6627,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6669,7 +6637,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.FillColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6677,14 +6645,14 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Style.Fill`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6694,7 +6662,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6704,7 +6672,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gateway`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6712,13 +6680,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Gateway`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6730,7 +6698,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -6740,7 +6708,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.LinearGradient.X1`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6750,7 +6718,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6767,7 +6735,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.LinearGradient.X2`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6777,7 +6745,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6794,7 +6762,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.LinearGradient.Y1`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6804,7 +6772,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6821,7 +6789,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.LinearGradient.Y2`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6831,7 +6799,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6848,7 +6816,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.RadialGradient.Cx`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6858,7 +6826,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6874,7 +6842,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.RadialGradient.Cy`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6884,7 +6852,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6900,7 +6868,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.RadialGradient.Fx`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6910,7 +6878,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6926,7 +6894,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.RadialGradient.Fy`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6936,7 +6904,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -6952,7 +6920,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.RadialGradient.Stops`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -6967,14 +6935,14 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Style.RadialGradient.Stops`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -6991,7 +6959,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7001,7 +6969,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.Stops.Color`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7015,14 +6983,14 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Style.Gradient.Stops.Color`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -7038,7 +7006,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7048,7 +7016,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.Stops.Offset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7062,14 +7030,14 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Style.Gradient.Stops.Offset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -7085,7 +7053,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7095,7 +7063,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Gradient.Stops.Opacity`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7109,14 +7077,14 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Style.Gradient.Stops.Opacity`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -7132,7 +7100,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7142,7 +7110,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Header`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7152,7 +7120,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7164,7 +7132,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7172,13 +7140,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -7186,7 +7154,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7196,7 +7164,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.HorizontalAlign`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7204,7 +7172,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7216,7 +7184,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7226,7 +7194,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7238,7 +7206,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7248,7 +7216,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7260,7 +7228,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Attributes`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7274,7 +7242,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7285,7 +7253,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Attributes.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7299,7 +7267,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7310,7 +7278,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Attributes.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7324,7 +7292,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7335,7 +7303,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Attributes.Scope`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7349,7 +7317,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7360,7 +7328,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Methods`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7374,7 +7342,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7385,7 +7353,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Methods.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7399,7 +7367,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7411,7 +7379,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7425,15 +7393,15 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection parameters = new Collection();
     parameters.Add(new UMLParameter() { Name = "Date", Type = "String" });
     ViewBag.parameters = parameters;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7445,7 +7413,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7459,15 +7427,15 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection parameters = new Collection();
     parameters.Add(new UMLParameter() { Name = "Date" });
     ViewBag.parameters = parameters;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7479,7 +7447,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7493,15 +7461,15 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection parameters = new Collection();
     parameters.Add(new UMLParameter() { Type = "String" });
     ViewBag.parameters = parameters;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7512,7 +7480,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Methods.Type`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7527,7 +7495,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7538,7 +7506,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Interface.Methods.Scope`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7553,7 +7521,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7564,7 +7532,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.IsExpanded`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7572,14 +7540,14 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.IsExpanded`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -7587,7 +7555,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7597,7 +7565,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.IsSwimlane`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7605,7 +7573,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7616,7 +7584,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Labels`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7628,13 +7596,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Annotations`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -7646,7 +7614,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7656,7 +7624,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Lanes`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7669,7 +7637,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7681,7 +7649,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Lanes.CssClass`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7693,7 +7661,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7705,7 +7673,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Lanes.Header`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7719,7 +7687,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7731,7 +7699,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Lanes.Width`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7743,7 +7711,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7755,7 +7723,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Lanes.Children`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7769,7 +7737,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7781,7 +7749,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Lanes.IsLane`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7793,7 +7761,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7805,7 +7773,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7813,13 +7781,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -7829,7 +7797,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7839,7 +7807,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.MaxHeight`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7847,13 +7815,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.MaxHeight`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -7861,7 +7829,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7871,7 +7839,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Name`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7879,13 +7847,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Id`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -7893,7 +7861,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7903,7 +7871,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.PathData`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7911,13 +7879,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Data`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -7927,7 +7895,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -7937,7 +7905,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Phases`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7949,7 +7917,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7961,7 +7929,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Phases.Label`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7975,7 +7943,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -7987,7 +7955,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Phases.LineColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -7999,7 +7967,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -8011,7 +7979,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Phases.Offset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8023,7 +7991,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -8035,7 +8003,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Phases.Orientation`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8047,7 +8015,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -8058,7 +8026,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.PhaseSize`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8066,7 +8034,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -8077,7 +8045,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Pivot`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8087,13 +8055,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Pivot`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8103,7 +8071,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8113,7 +8081,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Points`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8130,13 +8098,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Points`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8155,7 +8123,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8165,7 +8133,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Ports`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8177,13 +8145,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Ports`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8195,7 +8163,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8205,7 +8173,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Ports.BorderColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8217,13 +8185,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Ports.Style.StrokeColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8237,9 +8205,9 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
-<code>
-</code></td>
+{% endhighlight %}</td>
+{% highlight html %}
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8249,7 +8217,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Ports.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8261,13 +8229,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Ports.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8279,7 +8247,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8289,7 +8257,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Ports.Shape`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8301,13 +8269,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Ports.Shape`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8319,7 +8287,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8332,7 +8300,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Ports.VerticalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8344,7 +8312,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8354,7 +8322,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Shadow`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8364,13 +8332,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shadow`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8380,7 +8348,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8390,7 +8358,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.SubProcess`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8398,13 +8366,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity.SubProcess`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8416,7 +8384,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8426,7 +8394,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.SubProcess.Events`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8440,13 +8408,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity.SubProcess.Events`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8464,7 +8432,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8475,7 +8443,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8486,9 +8454,9 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection labels = new Collection();
     labels.Add(new Label() { Name = "labelName" });
@@ -8498,13 +8466,13 @@ This article describes the API migration process of Diagram component from Essen
     events.Add(new BPMNEvent() { Ports = ports });
     ViewBag.events = events;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity.SubProcess.Events.Ports`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8526,7 +8494,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8537,7 +8505,7 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8548,9 +8516,9 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     Collection labels = new Collection();
     labels.Add(new Label() { Name = "labelName" });
@@ -8558,13 +8526,13 @@ This article describes the API migration process of Diagram component from Essen
     events.Add(new BPMNEvent() { Labels = labels });
     ViewBag.events = events;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity.SubProcess.Events.Annotations`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8586,7 +8554,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8596,7 +8564,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Nodes.Task`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8606,13 +8574,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Nodes.Shape.Activity.Task`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8626,14 +8594,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## NodeTemplate
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -8648,12 +8615,12 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram node-template="@ViewBag.nodeTemplate"></ej-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function nodeTemplate(diagram, node) {
@@ -8666,25 +8633,25 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     ViewBag.nodeTemplate = nodeTemplate;
 
-</code></td>
+{% endhighlight %}</td>
 
 <td>
 <b>Property</b>:<i>`SetNodeTemplate`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram setNodeTemplate="@ViewBag.setNodeTemplate"></ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         var getTextElement = (text: string) => {
@@ -8715,21 +8682,20 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     ViewBag.setNodeTemplate = "setNodeTemplate";
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## Layers
 
-<!-- markdownlint-disable MD033 -->
- <table>
+<table>
 <tr>
 <td><b>behavior</b></td>
 <td><b>API in Essential JS 1</b></td>
@@ -8742,7 +8708,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layers`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-diagram-layers>
@@ -8750,13 +8716,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-layers>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Layers`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-layers>
@@ -8764,7 +8730,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-layers>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8774,7 +8740,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Layers.Print`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-diagram-layers>
@@ -8782,7 +8748,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-layers>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -8791,7 +8757,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## Annotations
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -8805,7 +8770,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Text`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8817,13 +8782,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Content`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8835,7 +8800,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8845,7 +8810,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Offset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8859,13 +8824,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Offset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8879,7 +8844,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8889,7 +8854,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.HyperLink`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8901,13 +8866,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Hyperlink`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8919,7 +8884,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8929,7 +8894,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Bold`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8941,13 +8906,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.Bold`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -8961,7 +8926,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -8971,7 +8936,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.BorderColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -8983,13 +8948,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.StrokeColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9003,7 +8968,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9013,7 +8978,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.BorderWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9025,13 +8990,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.StrokeWidth`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9045,7 +9010,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9055,7 +9020,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.CssClass`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9067,7 +9032,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b>
@@ -9080,7 +9045,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9092,13 +9057,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9110,7 +9075,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9120,7 +9085,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.FillColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9132,13 +9097,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.Fill`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9152,7 +9117,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9162,7 +9127,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.FontColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9174,13 +9139,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.Color`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9194,7 +9159,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9204,7 +9169,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.FontFamily`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9216,13 +9181,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.FontFamily`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9236,7 +9201,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9246,7 +9211,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9258,13 +9223,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Height`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9276,7 +9241,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9286,7 +9251,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9298,13 +9263,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9316,7 +9281,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9326,7 +9291,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9340,13 +9305,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9360,7 +9325,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9370,7 +9335,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.ReadOnly`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9382,13 +9347,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9400,7 +9365,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9410,7 +9375,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.TemplateId`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script id="SvgEllipse" type="text/x-jsrender">
         <svg xmlns="http://www.w3.Org/2000/svg"
@@ -9419,8 +9384,8 @@ This article describes the API migration process of Diagram component from Essen
         </svg>
     </script>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9432,7 +9397,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -9444,7 +9409,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.TextAlign`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9456,13 +9421,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Style.TextAlign`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9476,7 +9441,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9486,7 +9451,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Visible`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9498,13 +9463,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Annotations.Visibility`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-nodes>
@@ -9516,7 +9481,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-nodes>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9526,7 +9491,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Labels.Mode`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-nodes>
@@ -9538,7 +9503,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-nodes>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -9547,7 +9512,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## PageSettings
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9561,7 +9525,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`PageSettings.AutoScrollBorder`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-page-settings>
@@ -9569,7 +9533,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-page-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -9581,25 +9545,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`PageSettings.MultiplePage`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-page-settings multiple-page="true"></e-page-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`PageSettings.MultiplePage`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-pagesettings multiplePage="false"></e-diagram-pagesettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9609,19 +9573,19 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`PageSettings.PageBackgroundColor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-page-settings page-background-color="grey"></e-page-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`PageSettings.Background.Color`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-pagesettings >
@@ -9629,7 +9593,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-pagesettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9639,7 +9603,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`PageSettings.scrollableArea`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-page-settings>
@@ -9647,21 +9611,21 @@ This article describes the API migration process of Diagram component from Essen
         </e-page-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ScrollSettings.ScrollableArea`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-scrollsettings scrollableArea="@ViewBag.getScrollableArea"></e-diagram-scrollsettings>
     </ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function getScrollableArea() {
@@ -9670,13 +9634,13 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     ViewBag.getScrollableArea = "getScrollableArea";
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9687,31 +9651,30 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-page-settings boundary-constraints="Diagram"></e-page-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <td>
 <b>Property</b>:<i>`PageSettings.BoundaryConstraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-pagesettings boundaryConstraints="Diagram"></e-diagram-pagesettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## ScrollSettings
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9725,25 +9688,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ScrollSettings.HorizontalOffset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-scroll-settings horizontal-offset="300"></e-scroll-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ScrollSettings.HorizontalOffset`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-scrollsettings horizontalOffset="300"></e-diagram-scrollsettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9753,7 +9716,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ScrollSettings.Padding`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-scroll-settings>
@@ -9761,7 +9724,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-scroll-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -9775,13 +9738,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ScrollSettings.MaxZoom`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-scrollsettings maxZoom="5"></e-diagram-scrollsettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9793,13 +9756,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ScrollSettings.CanAutoScroll`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-scrollsettings canAutoScroll="true"></e-diagram-scrollsettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9812,14 +9775,14 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-scrollsettings scrollableArea="@ViewBag.getScrollableArea"></e-diagram-scrollsettings>
     </ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <script>
         function getScrollableArea() {
@@ -9828,20 +9791,19 @@ This article describes the API migration process of Diagram component from Essen
         }
     </script>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     ViewBag.getScrollableArea = "getScrollableArea";
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## SnapSettings
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -9855,13 +9817,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SnapSettings.EnableSnapToObject`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-snap-settings enable-snap-to-object="true"></e-snap-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -9874,16 +9836,16 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-snap-settings horizontal-gridlines="@ViewBag.gridLines"></e-snap-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     List<decimal> lineInterval = new List<decimal>();
     lineInterval.Add(1);
@@ -9896,22 +9858,22 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.gridLines = gridLines;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SnapSettings.HorizontalGridlines`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-snapsettings horizontalGridlines="@ViewBag.gridLines"></e-diagram-snapsettings>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     double[] intervals = { 0.95, 9.05, 0.2, 9.75 };
     DiagramSnapSettings snapSettings = new DiagramSnapSettings();
@@ -9920,7 +9882,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.SnapSettings = snapSettings;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9931,16 +9893,16 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-snap-settings vertical-gridlines="@ViewBag.gridLines"></e-snap-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     List<decimal> lineInterval = new List<decimal>();
     lineInterval.Add(1);
@@ -9953,22 +9915,22 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.gridLines = gridLines;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SnapSettings.VerticalGridLines`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-snapsettings verticalGridlines="@ViewBag.gridLines"></e-diagram-snapsettings>
     </ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     double[] lineInterval = { 0.95, 9.05, 0.2, 9.75 };
     DiagramGridlines gridlines = new DiagramGridlines()
@@ -9977,7 +9939,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.lineInterval = lineInterval;
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -9987,25 +9949,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SnapSettings.SnapAngle`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-snap-settings snap-angle="5"></e-snap-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SnapSettings.SnapAngle`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-snapsettings snapAngle="5"></e-diagram-snapsettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -10015,25 +9977,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SnapSettings.SnapObjectDistance`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-snap-settings snap-object-distance="5"></e-snap-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SnapSettings.SnapObjectDistance`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-snapsettings snapObjectDistance="5"></e-diagram-snapsettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -10043,32 +10005,31 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SnapSettings.SnapConstraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-snap-settings snap-constraints="ShowLines"></e-snap-settings>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SnapSettings.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-snapsettings constraints="ShowLines"></e-diagram-snapsettings>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## ZoomFactor
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -10082,23 +10043,23 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ZoomFactor`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram zoom-factor="1"></ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`ZoomFactor`</i>
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram created="@ViewBag.created"></ejs-diagram>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     function created() {
         diagram = document.getElementById("diagram").ej2_instances[0];
@@ -10106,14 +10067,14 @@ This article describes the API migration process of Diagram component from Essen
         diagram.ZoomTo(zoomIn);
     }
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
 
-<code>
+{% highlight html %}
 
     ViewBag.created = created;
 
-</code></td>
+{% endhighlight %}</td>
 
 </td>
 </tr>
@@ -10121,7 +10082,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## Tool
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -10135,28 +10095,27 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tool`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram tool="ZoomPan"></ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Tool`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram tool="ZoomPan"></ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## ShowTooltip
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -10170,28 +10129,27 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`ShowTooltip`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram show-tooltip="true"></ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram constraints="Tooltip"></ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## SelectedItems
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -10204,14 +10162,14 @@ This article describes the API migration process of Diagram component from Essen
 <td>
 <b>Property</b>:<i>`SelectedItems.Children`</i>
 <br>
-<code>
+{% highlight html %}
 
     var diagram = $("#diagram").ejDiagram("instance");
     for(var i =0; i< diagram.model.selectedItems.children.length; i++){
         //Do your actions here
     }
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -10223,25 +10181,25 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-selected-items constraints="UserHandles"></e-selected-items>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SelectedItems.Constraints`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-selecteditems constraints="UserHandle"></e-diagram-selecteditems>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -10251,7 +10209,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.Tooltip`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-selected-items>
@@ -10261,7 +10219,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-selected-items>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -10273,7 +10231,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.UserHandles`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     var userHandle= [];
     var cloneHandle = ej.Datavisualization.Diagram.UserHandle();
@@ -10285,13 +10243,13 @@ This article describes the API migration process of Diagram component from Essen
         }
     });
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`SelectedItems.UserHandles`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-selecteditems>
@@ -10301,7 +10259,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-selecteditems>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -10311,7 +10269,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.UserHandles.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     var userHandle = [];
     var cloneHandle = ej.Datavisualization.Diagram.UserHandle();
@@ -10335,14 +10293,14 @@ This article describes the API migration process of Diagram component from Essen
     }
     });
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
 <b>Property</b>:<i>`SelectedItems.UserHandles.HorizontalAlignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-selecteditems>
@@ -10352,7 +10310,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-selecteditems>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -10363,7 +10321,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.UserHandles.Tool`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     var CloneTool = (function(base) {
         ej.Datavisualization.Diagram.Extend(CloneTool, base);
@@ -10393,7 +10351,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     });
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -10407,7 +10365,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.UserHandles.EnableMultiSelection`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     var userHandle = [];
     var cloneHandle = ej.Datavisualization.Diagram.UserHandle();
@@ -10420,7 +10378,7 @@ This article describes the API migration process of Diagram component from Essen
     }
     });
 
-</code>
+{% endhighlight %}
 
 </td>
 <td>
@@ -10436,7 +10394,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`SelectedItems.UserHandles.Displacement`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram>
         <e-diagram-selecteditems>
@@ -10446,14 +10404,13 @@ This article describes the API migration process of Diagram component from Essen
         </e-diagram-selecteditems>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
 
 ## SerializationSettings
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -10468,13 +10425,13 @@ This article describes the API migration process of Diagram component from Essen
 <br>
 <br>
 <b>[View]</b>
-<code>
+{% highlight html %}
 
     <ejs-diagram serializationSettings="@ViewBag.serializationSettings"></ejs-diagram>
 
-</code>
+{% endhighlight %}
 <b>[Model]</b>
-<code>
+{% highlight html %}
 
     SerializationSettings serializationSettings = new SerializationSettings()
     {
@@ -10482,7 +10439,7 @@ This article describes the API migration process of Diagram component from Essen
     };
     ViewBag.serializationSettings = serializationSettings;
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -10491,7 +10448,6 @@ This article describes the API migration process of Diagram component from Essen
 
 ## Tooltip
 
-<!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td><b>behavior</b></td>
@@ -10505,7 +10461,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script type="text/x-jsrender" id="mouseovertooltip">
         <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
@@ -10513,26 +10469,26 @@ This article describes the API migration process of Diagram component from Essen
         </div>
     </script>
 
-</code>
-<code>
+{% endhighlight %}
+{% highlight html %}
 
     <ej-diagram>
         <e-tooltip template-id="mouseovertooltip"></e-tooltip>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Tooltip`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram constraints="Tooltip">
         <e-diagram-tooltip content="diagram"></e-diagram-tooltip>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -10542,7 +10498,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip.Alignment`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-tooltip>
@@ -10550,7 +10506,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-tooltip>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b>
@@ -10563,7 +10519,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip.Margin`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ej-diagram>
         <e-tooltip>
@@ -10571,7 +10527,7 @@ This article describes the API migration process of Diagram component from Essen
         </e-tooltip>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Not applicable</b></td>
@@ -10583,7 +10539,7 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip.TemplateId`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <script type="text/x-jsrender" id="mouseovertooltip">
         <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
@@ -10591,26 +10547,26 @@ This article describes the API migration process of Diagram component from Essen
         </div>
     </script>
 
-<code>
-</code>
+{% highlight html %}
+{% endhighlight %}
 
     <ej-diagram>
         <e-tooltip template-id="mouseovertooltip"></e-tooltip>
     </ej-diagram>
 
-</code>
+{% endhighlight %}
 </td>
 <td>
 <b>Property</b>:<i>`Tooltip.Content`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram constraints="Tooltip">
         <e-diagram-tooltip content="diagram"></e-diagram-tooltip>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -10622,13 +10578,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip.ShowTipPointer`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram constraints="Tooltip">
         <e-diagram-tooltip showTipPointer="true"></e-diagram-tooltip>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 
@@ -10640,13 +10596,13 @@ This article describes the API migration process of Diagram component from Essen
 <b>Property</b>:<i>`Tooltip.Position`</i>
 <br>
 <br>
-<code>
+{% highlight html %}
 
     <ejs-diagram constraints="Tooltip">
         <e-diagram-tooltip position="TopLeft"></e-diagram-tooltip>
     </ejs-diagram>
 
-</code></td>
+{% endhighlight %}</td>
 
 </tr>
 </table>
