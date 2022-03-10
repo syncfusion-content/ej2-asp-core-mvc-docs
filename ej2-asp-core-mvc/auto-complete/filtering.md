@@ -15,13 +15,13 @@ The AutoComplete has built-in support to filter data items. The filter operation
 
 ## Change the filter type
 
-Determines on which filter type, the control needs to be considered on search action. The available [filterType](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~FilterType.html) and its supported data types are
+Determines on which filter type, the control needs to be considered on search action. The available [filterType](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~FilterType.html) and its supported data types are as follows.
 
 | **Filter Type** | **Description** | **Supported Types** |
 | --- | --- |
 | StartsWith | Checks whether a value begins with the specified value. | String |
-| EndsWith | Checks whether a value ends with specified value. | String |
-| Contains | Checks whether a value contains with specified value. | String |
+| EndsWith | Checks whether a value ends with the specified value. | String |
+| Contains | Checks whether a value contains the specified value. | String |
 
 The following examples shows the data filtering is done with `StartsWith` type.
 
@@ -83,7 +83,7 @@ The following example, to restrict the suggestion list item counts as 5.
 
 ## Limit the minimum filter character
 
-You can set the limit for the character count to filter the data on the AutoComplete. This can be done by set the [minLength](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~MinLength.html) property to AutoComplete.
+You can set the limit for the character count to filter the data on the AutoComplete. This can be done by setting the [minLength](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~MinLength.html) property to AutoComplete.
 
 In the following example, the remote request doesn't fetch the search data, until the search key contains three characters.
 
@@ -147,7 +147,7 @@ The following sample depicts how to filter the data with case-sensitive.
 
 An AutoComplete supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~IgnoreAccent.html) is enabled.
 
-In the following sample,data with diacritics are bound as dataSource for AutoComplete.
+In the following sample, data with diacritics are bound as dataSource for AutoComplete.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

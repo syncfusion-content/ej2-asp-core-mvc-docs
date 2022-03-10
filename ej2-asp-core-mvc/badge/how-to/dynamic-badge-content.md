@@ -36,7 +36,4 @@ Badges in real-time needs to be updated dynamically based on the requirements. T
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Badge Sample](../images/badgecount.PNG)

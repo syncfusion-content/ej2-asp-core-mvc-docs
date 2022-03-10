@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Integrate Badge Into Listview in ##Platform_Name## Badge Component
-description: Learn here all about Integrate Badge Into Listview in Syncfusion ##Platform_Name## Badge component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to integrate badge into Listview in Syncfusion ##Platform_Name## Badge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integrate Badge Into Listview
 publishingplatform: ##Platform_Name##
@@ -37,8 +37,5 @@ In the following sample, `default` badges are used and there is no need to custo
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Badge Sample](../images/listview.PNG)
