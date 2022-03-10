@@ -15,7 +15,6 @@ This section briefly explains about how to include [ASP.NET Core Accordion](http
 ## Prerequisites
 
 [System requirements for ASP.NET Core components](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
-* Now, open your view page to render Accordion component.
 
 ## Create ASP.NET Core web application with Razor pages
 
@@ -31,7 +30,6 @@ Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
-You can bind any data in Accordion items, by simply using the content template property in ASP.NET Accordion. Accordion is already provided with the content template support and hence this support can be utilized to load the other HTML elements or as per your requirement.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
