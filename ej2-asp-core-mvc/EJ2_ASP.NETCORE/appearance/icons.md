@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Icons in ##Platform_Name## control
-description: Learn here all about Icons in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Icons with its customization in Syncfusion ##Platform_Name##. Also, listed the icons by theme-wise.
 platform: ej2-asp-core-mvc
-control: Icons
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

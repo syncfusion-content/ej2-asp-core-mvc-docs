@@ -1,7 +1,7 @@
 ---
 layout: post
-title: System Requirements in ##Platform_Name## Control
-description: Learn here all about System Requirements in Syncfusion ##Platform_Name## Control of Syncfusion Essential JS 2 and more.
+title: System Requirements in ##Platform_Name## Controls
+description: Learn here all about System Requirements with supported frameworks in Syncfusion ##Platform_Name## Controls and more.
 platform: ej2-asp-core-mvc
 control: System Requirements
 publishingplatform: ##Platform_Name##
