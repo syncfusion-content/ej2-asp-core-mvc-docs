@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Control in Visual Studio for Mac
-description: Checkout and learn about getting started with ##Platform_Name## control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## in Visual Studio for Mac
+description: Checkout and learn about getting started with ##Platform_Name## Calendar control using Tag Helpers in Visual Studio for Mac.
 platform: ej2-asp-core-mvc
-control: Visual Studio Mac
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

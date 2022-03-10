@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Theme Studio in ##Platform_Name## Control
-description: Learn here all about Theme Studio in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: Theme Studio in ##Platform_Name##
+description: Learn here all about Theme Studio in Syncfusion ##Platform_Name##. Customize and generate a theme for specific controls. 
 platform: ej2-asp-core-mvc
-control: Theme Studio
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
