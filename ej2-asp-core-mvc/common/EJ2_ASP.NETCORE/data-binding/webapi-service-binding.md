@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Bind data to the Syncfusion ##Platform_Name## Component using WebApiAdaptor of DataManager and perform CRUD operations.
-description: Learn how to retrieve data from WebApi controller, bind it to the Syncfusion DataGrid component using WebApiAdaptor of DataManager, and perform CRUD operations.
+title: Bind data to the Syncfusion ##Platform_Name## Control using WebApiAdaptor of DataManager and perform CRUD operations.
+description: Learn how to retrieve data from WebApi controller, bind it to the Syncfusion DataGrid control using WebApiAdaptor of DataManager, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: WebApi Service Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Bind data to the Syncfusion ASP.NET Core components using WebApiAdaptor of DataManager and perform CRUD operations
+# Bind data to the Syncfusion Controls using WebApiAdaptor
 
-In this topic, we are going to learn how to retrieve data from WebApi Controller, bind to Grid component using **WebApiAdaptor** of `DataManger`, and perform CRUD operations.
+In this topic, we are going to learn how to retrieve data from WebApi Controller, bind to Grid control using **WebApiAdaptor** of `DataManger`, and perform CRUD operations.
 
 You can use the WebApiAdaptor of DataManager to interact with Web APIs created with OData endpoint. The WebApiAdaptor is extended from the ODataAdaptor. Hence, to use WebApiAdaptor, the endpoint should understand the OData formatted queries sent along with the request.
 
@@ -39,8 +39,8 @@ Use the following query to add a new table named **Orders**.
 {% highlight c# tabtitle="SQL" %}
 
 Create Table Orders(
- OrderID BigInt Primary Key Not Null,
- CustomerID Varchar(100) Not Null,
+ OrderId BigInt Identity(1,1) Primary Key Not Null,
+ CustomerId Varchar(100) Not Null,
  Freight int Null,
  OrderDate datetime null
 )
@@ -56,7 +56,7 @@ Now, click on **Update Database**.
 
 ![Update database](../images/odata-update-db.png)
 
-## Create ASP.NET Core MVC Application
+## Create ASP.NET Core Application
 
 Open Visual Studio and follow the steps in the below documentation to create the Application.
 
@@ -86,7 +86,7 @@ The above scaffolding command contains the following details for creating DbCont
 * **Data provider**: Microsoft.EntityFrameworkCore.SqlServer
 * **Output directory**: -OutputDir Models
 
-After running the above command, **OrdersDetailsContext.cs** and **Orders.cs** files will be created under the **WEBAPICRUD.Models** folder as follows.
+After running the above command, **OrdersDetailsContext.cs** and **Order.cs** files will be created under the **WEBAPICRUD.Models** folder as follows.
 
 ![Data folder](../images/webapi-data-folder.png)
 
@@ -98,9 +98,9 @@ It is not recommended to have a connection string with sensitive information in 
 
 ![Add connection string in appsettings](../images/odata-appsettings.png)
 
-Now, the DbContext must be configured using connection string and registered as scoped service using the **AddDbContext** method in **Startup.cs**.
+Now, the DbContext must be configured using connection string and registered as scoped service using the **AddDbContext** method in **Program.cs**.
 
-![Startup file](../images/webapi-program.png)
+![Program file](../images/webapi-program.png)
 
 ### Creating API Controller
 
@@ -114,12 +114,11 @@ Now, replace the Web API controller with the following code which contains code 
 {% highlight c# tabtitle="OrdersController.cs" %}
 
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using WEBAPICRUD.Models;
-namespace WEBAPICRUD
+
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+namespace WEBAPICRUD.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -156,8 +155,8 @@ namespace WEBAPICRUD
         [HttpPut]
         public void Put(long id, [FromBody] Order book)
         {
-            Order _book = _context.Orders.Where(x => x.OrderID.Equals(book.OrderID)).FirstOrDefault();
-            _book.CustomerID = book.CustomerID;
+            Order _book = _context.Orders.Where(x => x.OrderId.Equals(book.OrderId)).FirstOrDefault();
+            _book.CustomerId = book.CustomerId;
             _book.Freight = book.Freight;
             _book.OrderDate = book.OrderDate;
             _context.SaveChanges();
@@ -167,7 +166,7 @@ namespace WEBAPICRUD
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            Order _book = _context.Orders.Where(x => x.OrderID.Equals(id)).FirstOrDefault();
+            Order _book = _context.Orders.Where(x => x.OrderId.Equals(id)).FirstOrDefault();
             _context.Orders.Remove(_book);
             _context.SaveChanges();
         }
@@ -179,7 +178,7 @@ namespace WEBAPICRUD
 
 ## Install ASP.NET Core package in the application
 
-Syncfusion ASP.NET Core components are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core components in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
 > The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
@@ -196,14 +195,12 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
     
 ## Add Style Sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core components. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <head>
-        ....
-        ....
-
+        ...
         <!-- Syncfusion Essential JS 2 Styles -->
         <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 
@@ -217,9 +214,7 @@ In this getting started walk-through, the required scripts are referred using CD
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <head>
-        ....
-        ....
-
+        ...
         <!-- Syncfusion Essential JS 2 Scripts -->
         <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
@@ -232,29 +227,26 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <body>
-        ....
-        ....
+        ...
         <!-- Syncfusion Script Manager -->
         <ejs-scripts></ejs-scripts>
     </body>
 {% endhighlight %}
 {% endtabs %}
 
-## Add Syncfusion ASP.NET Core Grid component to an application
+## Add Syncfusion Grid control to an application
 
-In previous steps, we have successfully configured the Syncfusion ASP.NET Core package in the application. Now, we can add the grid component to to your **Index.cshtml** view page which is present under `Views/Home` folder.
+In previous steps, we have successfully configured the Syncfusion ASP.NET Core package in the application. Now, we can add the grid control to to your **Index.cshtml** view page which is present under `Views/Home` folder.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
 
-<ejs-grid id="Grid">
-
-</ejs-grid>
+<ejs-grid id="Grid"></ejs-grid>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Binding data to ASP.NET Core Grid component using WebApiAdaptor
+## Binding data to Grid control using WebApiAdaptor
 
 To consume data from the WebApi Controller, we need to add the **DataManager** with **WebApiAdaptor**.
 
@@ -277,8 +269,8 @@ Grid columns can be defined by using the [GridColumn](https://help.syncfusion.co
     <e-data-manager url="/api/Orders" adaptor="WebApiAdaptor" crossdomain="true"></e-data-manager>
     <e-grid-editSettings allowDeleting="true" allowEditing="true" allowAdding="true"></e-grid-editSettings>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120" isPrimaryKey="true"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140"></e-grid-column>
+        <e-grid-column field="OrderId" headerText="Order ID" type="number" textAlign="Right" width="120" isPrimaryKey="true"></e-grid-column>
+        <e-grid-column field="CustomerId" headerText="Customer ID" type="string" width="140"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' textAlign="Right" width="140"></e-grid-column>
     </e-grid-columns>
@@ -292,9 +284,7 @@ When you run the application, the `Get()` method will be called in your API cont
 {% tabs %}
 {% highlight c# tabtitle="OrdersController.cs" %}
 
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using WEBAPICRUD.Models;
 
 namespace WEBAPICRUD
@@ -334,31 +324,30 @@ The sample response object should look like this:
 
 ```
 
-## Handling CRUD operations with our Syncfusion ASP.NET Core Grid component
+## Handling CRUD operations with Syncfusion Grid control
 
-We can enable editing in the grid component using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#normal), [Dialog](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#dialog), and [Batch](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#batch) editing.
+We can enable editing in the grid control using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/in-line-editing), [Dialog](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/dialog-editing), and [Batch](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/batch-editing) editing.
 
 Here, we are using **Inline** edit mode and used Toolbar property to show toolbar items for editing.
-We have added the Grid Editing and Toolbar code with previous Grid model.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
 
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
     <e-data-manager url="/api/Orders" adaptor="WebApiAdaptor" crossdomain="true"></e-data-manager>
-    <e-grid-editSettings allowDeleting="true" allowEditing="true" allowAdding="true"></e-grid-editSettings>
+    <e-grid-editSettings allowDeleting="true" allowEditing="true" allowAdding="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120" isPrimaryKey="true"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140"></e-grid-column>
+        <e-grid-column field="OrderId" headerText="Order ID" type="number" textAlign="Right" width="120" isPrimaryKey="true"></e-grid-column>
+        <e-grid-column field="CustomerId" headerText="Customer ID" type="string" width="140"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' textAlign="Right" width="140"></e-grid-column>
     </e-grid-columns>
- </ejs-grid>
+</ejs-grid>
 
 {% endhighlight %}
 {% endtabs %}
 
-> Normal editing is the default edit mode for the Grid component. Set the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property of Column as **true** for a particular column, whose value is a unique value for editing purposes.
+> Normal editing is the default edit mode for the Grid control. Set the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property of Column as **true** for a particular column, whose value is a unique value for editing purposes.
 
 ### Insert a row
 
@@ -398,8 +387,8 @@ Clicking the **Update** toolbar button will update the record in the Orders tabl
     [HttpPut]
     public void Put(long id, [FromBody] Order book)
     {
-        Order _book = _context.Orders.Where(x => x.OrderID.Equals(book.OrderID)).FirstOrDefault();
-        _book.CustomerID = book.CustomerID;
+        Order _book = _context.Orders.Where(x => x.OrderId.Equals(book.OrderId)).FirstOrDefault();
+        _book.CustomerId = book.CustomerId;
         _book.Freight = book.Freight;
         _book.OrderDate = book.OrderDate;
         _context.SaveChanges();
@@ -422,7 +411,7 @@ To delete a row, select any row and click the **Delete** toolbar button. Deletin
 [HttpDelete("{id}")]
 public void Delete(long id)
 {
-    Order _book = _context.Orders.Where(x => x.OrderID.Equals(id)).FirstOrDefault();
+    Order _book = _context.Orders.Where(x => x.OrderId.Equals(id)).FirstOrDefault();
     _context.Orders.Remove(_book);
     _context.SaveChanges();
 }
