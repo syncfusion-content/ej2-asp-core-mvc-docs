@@ -3,7 +3,7 @@ layout: post
 title: Bind data from RESTful web services to Syncfusion ##Platform_Name## control and perform CRUD operations
 description: Learn here all about retrieve data from RESTful service, bind data to Syncfusion ##Platform_Name## Common control and more.
 platform: ej2-asp-core-mvc
-control: Restful Service Binding
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -97,7 +97,7 @@ It is not recommended to have a connection string with sensitive information in 
 
 ![Add connection string in appsettings](../images/odata-appsettings.png)
 
-Now, the DbContext must be configured using connection string and registered as scoped service using the AddDbContext method in **Startup.cs**.
+Now, the DbContext must be configured using connection string and registered as scoped service using the AddDbContext method in **Program.cs**.
 
 ![Register service](../images/odata-program.png)
 
