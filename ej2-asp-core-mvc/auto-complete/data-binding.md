@@ -242,8 +242,6 @@ The following example for remote data binding using OData service.
 
 To avoid post back for every action, set the autocomplete to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of `DataManager`.
 
-The following example for remote data binding and enabled offline mode.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

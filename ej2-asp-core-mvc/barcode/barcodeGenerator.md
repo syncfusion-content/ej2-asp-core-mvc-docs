@@ -13,7 +13,7 @@ documentation: ug
 
 ## Code39
 
-The Code 39 character set includes the digits 0-9, the letters A-Z (upper case only), and the symbols: space, minus (-), plus (+), period (.), dollar sign ($), slash (/), and percent (%). A special start / stop character is placed at the beginning and ending of each barcode. The barcode can be of any length; even more than 25 characters begin to push the bounds. Code 39 is the only type of barcode that does not require a checksum for common use.
+The Code 39 character set includes the digits 0-9, the letters A-Z (upper case only), and the symbols: space, minus (-), plus (+), period (.), dollar sign ($), slash (/), and percent (%). A special start or stop character is placed at the beginning and ending of each barcode. The barcode can be of any length; even more than 25 characters begin to push the bounds. Code 39 is the only type of barcode that does not require a checksum for common use.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +71,7 @@ Code 39 Extended is an extended version of Code 39 that supports ASCII character
 
 ## Code 11
 
-Code 11 is used primarily for labeling the telecommunication equipment’s. The character set includes the digits 0 to 9, a dash (-), and a start / stop code.
+Code 11 is used primarily for labeling the telecommunication equipment. The character set includes the digits 0 to 9, a dash (-), and a start / stop code.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

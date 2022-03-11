@@ -40,7 +40,7 @@ To render a funnel series, use the series [`type`](https://help.syncfusion.com/c
 
 ## Size
 
-The size of the funnel chart can be customized by using the  `width` and `height` properties.
+The size of the funnel chart can be customized by using the `width` and `height` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -156,7 +156,7 @@ Points can be exploded on mouse click by setting the `explode` property to true.
 
 ## Smart Data Label
 
-It provides the data label smart arrangement of the funnel and pyramid series. The overlap data label will be placed on left side of the funnel/pyramid series.
+It provides the data label smart arrangement of the funnel and pyramid series. The overlap data label will be placed on left side of the funnel or pyramid series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

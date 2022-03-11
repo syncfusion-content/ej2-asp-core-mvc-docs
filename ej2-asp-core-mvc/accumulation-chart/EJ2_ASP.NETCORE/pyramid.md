@@ -69,7 +69,7 @@ The Pyramid chart supports linear and surface modes of rendering. The default ty
 
 ## Size
 
-The size of the pyramid chart can be customized by using the  `width` and `height` properties.
+The size of the pyramid chart can be customized by using the `width` and `height` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

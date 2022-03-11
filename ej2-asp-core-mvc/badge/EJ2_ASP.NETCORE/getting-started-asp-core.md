@@ -27,8 +27,6 @@ This section briefly explains about how to include [ASP.NET Core Badge](https://
 
 Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core components in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
-
 ## Add Syncfusion ASP.NET Core Tag Helper
 
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
@@ -116,7 +114,7 @@ Now, add the Syncfusion ASP.NET Core Badge tag helper in `~/Pages/Index.cshtml` 
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Badge component will be rendered in the default web browser.
 
-![ASP.NET Core Badge Component](./images/badge.PNG)
+![ASP.NET Core Badge Component](images/badge.PNG)
 
 ## See Also
 

@@ -13,7 +13,7 @@ documentation: ug
 
 This section briefly explains about how to render Avatar component in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](https://helpej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017) page for introduction part of the system requirements and configure the common specifications.
 
-> Starting with `v16.2.0.x`, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP .NET Core application to use our components.
+> Starting with `v16.2.0.x`, if you refer Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
 ## Adding Avatar component to the Application
 
@@ -26,8 +26,6 @@ Since the `Avatar` is a CSS component there is no need to html tag helper, the c
 ## Run the application
 
 After successful compilation of your application, simply press `F5` to run the application.
-
-The following example shows a basic Avatar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -52,9 +50,6 @@ The following example shows a basic Avatar.
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Avatar Sample](./images/avatar.PNG)
 

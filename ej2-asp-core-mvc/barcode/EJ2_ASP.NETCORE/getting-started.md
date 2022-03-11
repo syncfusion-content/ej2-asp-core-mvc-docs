@@ -120,7 +120,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Adding QR Generator control
 
-You can add the QR code in our barcode generator component.
+You can add the QR code in the barcode generator component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -144,7 +144,7 @@ You can add the QR code in our barcode generator component.
 
 ## Adding Datamatrix Generator control
 
-You can add the datamatrix code in our barcode generator component.
+You can add the datamatrix code in the barcode generator component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -124,8 +124,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 After initialization, populate the AutoComplete with data using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~DataSource.html) property. Here, an array of string values is passed to the AutoComplete control.
 
-The following example illustrates the output in your browser.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -178,10 +176,8 @@ The AutoComplete allows the user to give input as custom value which is not requ
 
 By default, suggestion list width automatically adjusts according to the AutoComplete input element's width, and the height of the suggestion list has '300px'.
 
-The height and width of the popup list can also be customized using the
-[popupHeight](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~PopupHeight.html) and [popupWidth](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~PopupWidth.html) property respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~PopupHeight.html) and [popupWidth](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~PopupWidth.html) property respectively.
 
-In the following sample, suggestion list's width and height are configured.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

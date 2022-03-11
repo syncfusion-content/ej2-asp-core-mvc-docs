@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Integrate Avatar Into Badge in ##Platform_Name## Avatar Component
-description: Learn here all about Integrate Avatar Into Badge in Syncfusion ##Platform_Name## Avatar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to integrate avatar into badge in Syncfusion ##Platform_Name## Avatar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integrate Avatar Into Badge
 publishingplatform: ##Platform_Name##
@@ -34,9 +34,5 @@ The badge is dependent and supportive component, and it can be used with avatar 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![Avatar Sample](../images/badge.png)
