@@ -1,7 +1,7 @@
 ---
 layout: post
 title: To Keep Single Pane Open Always in ##Platform_Name## Accordion Component
-description: Learn here all about To Keep Single Pane Open Always in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to keep single pane open always in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: To Keep Single Pane Open Always
 publishingplatform: ##Platform_Name##

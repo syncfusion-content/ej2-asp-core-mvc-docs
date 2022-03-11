@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Types in ##Platform_Name## Badge Component
-description: Learn here all about Types in Syncfusion ##Platform_Name## Badge component of Syncfusion Essential JS 2 and more.
+description: Learn here all about types in Syncfusion ##Platform_Name## Badge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
 publishingplatform: ##Platform_Name##
@@ -14,7 +14,7 @@ This section explains different styles and types of the badges.
 
 ## Badge styles
 
-The Essential JS 2 Badge has the following predefined styles that can be used with `.e-badge` class to change the appearance of a badge
+The Essential JS 2 Badge has the following predefined styles that can be used with `.e-badge` class to change the appearance of a badge.
 
 | Class Name | Description |
 |------------|-------------|
@@ -50,9 +50,6 @@ The Essential JS 2 Badge has the following predefined styles that can be used wi
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Badge Sample](./images/badgestyles.PNG)
 
@@ -96,9 +93,6 @@ The circle badge style can be applied by adding the modifier class `.e-badge-cir
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Badge Sample](./images/circle.PNG)
 
 ### Pill
@@ -128,9 +122,6 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Badge Sample](./images/pill.PNG)
 
@@ -162,9 +153,6 @@ When badge modifier classes are applied to the anchor tag, the badge’s appeara
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Badge Sample](./images/link.PNG)
 
 ### Notification
@@ -194,9 +182,6 @@ The notification badge style can be applied by adding the modifier class `.e-bad
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Badge Sample](./images/notification.PNG)
 
@@ -228,9 +213,6 @@ Dot can be applied by adding the modifier class `.e-badge-dot` to the target ele
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Badge Sample](./images/dot.PNG)
 
 ### Overlap
@@ -261,9 +243,6 @@ The overlap badge can be used with `notification` or `dot` badge, which overlaps
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Badge Sample](./images/overlap.PNG)
 
 ### Position
@@ -292,9 +271,5 @@ The default position of the `notification` or `dot` badge is top. But, the posit
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![Badge Sample](./images/position.PNG)

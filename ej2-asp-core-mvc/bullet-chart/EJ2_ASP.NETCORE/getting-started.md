@@ -11,11 +11,11 @@ documentation: ug
 
 # Getting Started with ASP.NET Core
 
-Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+Starting with v16.2.0.x, if you refer Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
 ## Prerequisites
 
-To get start with ASP.NET Core application, need to ensure the following software to be installed on the machine.
+To get start with ASP.NET Core application, ensure the following software to be installed on the machine.
 * Visual Studio 2017
 * DotNet Core 2.0
 
@@ -27,7 +27,7 @@ The following steps to create ASP.NET Core Application.
 
 ![project selection](./images/default-template.png)
 
-**Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using Nugget Package Manager.
+**Step 2:** Once your project created. Add Syncfusion EJ2 package into your application by using Nugget Package Manager.
 
 Open the `nuGet` package manager.
 
@@ -37,9 +37,9 @@ Install the **Syncfusion.EJ2** package to the application
 
 ![package install](./images/nuget-demo.png)
 
-After Installation complete this will included in the project. You can refer it from the Project Assembly Reference.
+After Installation is completed, this will be included in the project. You can refer it from the Project Assembly Reference.
 
-> We need to install **NewtonSoft.JSON** as dependency since it **Syncfusion.EJ2** dependent to NewtonSoft.JSON package.
+> Install **NewtonSoft.JSON** as dependency since it **Syncfusion.EJ2** dependent to NewtonSoft.JSON package.
 
 **Step 3:** Open the **Views/_ViewImports.cshtml** to import Syncfusion.EJ2 package.
 
@@ -96,7 +96,7 @@ This section explains how to plot local data to the Bullet Chart.
 </script>
 ```
 
-Now assign the data to `dataSource` property. **value** and **target** values should be mapped with `valueField` and `targetField` respectively.
+Now, assign the data to `dataSource` property. **value** and **target** values should be mapped with `valueField` and `targetField` respectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -156,7 +156,7 @@ The [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts
 
 ## To customize individual tooltip
 
-Using `tooltipRender` event, you can customize a tooltip for particular point. event, you can customize a tooltip for particular point.
+Using `tooltipRender` event, you can customize a tooltip for particular point.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

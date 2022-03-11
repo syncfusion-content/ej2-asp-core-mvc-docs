@@ -49,9 +49,6 @@ The Essential JS 2 Avatar has the following predefined sizes that can be used wi
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Avatar Size](./images/size.PNG)
 
 ## Avatar types
@@ -88,10 +85,6 @@ The default style of the avatar is rectangular shape with rounded corners, which
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
 ![Avatar Default](./images/types.PNG)
 
 ### Circle
@@ -120,9 +113,5 @@ The circle avatar style can be applied by adding the modifier class `.e-avatar-c
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![Avatar Circle](./images/circle.PNG)
