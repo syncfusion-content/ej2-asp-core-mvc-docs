@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Bind data from from SQL server to Syncfusion ##Platform_Name## Component and perform CRUD operations
-description: retrieve data from SQL server, bind it to Syncfusion ASP.NET Core Grid component using Entity Framework, and perform CRUD operations.
+title: Bind data from from SQL server to Syncfusion ##Platform_Name## Control and perform CRUD operations
+description: retrieve data from SQL server, bind it to Syncfusion ASP.NET Core Grid control using Entity Framework, and perform CRUD operations.
 platform: ej2-asp-core-mvc
-control: Bind data using entity framework
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Bind data from SQL server to Syncfusion ASP.NET Core components
+# Bind data from SQL server to ASP.NET Core controls
 
-In this topic, we are going to learn how to retrieve data from SQL database using [Entity Framework](https://docs.microsoft.com/en-us/ef/core/) to bind it to the Grid component and perform CRUD operations. 
-Entity Framework is an open-source object-relational mapper (O/RM) from Microsoft.  Entity Framework works with many databases. But here, we are going to discuss the step-by-step procedure to create an Entity Framework using the [MS SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server) database and connect it to the Syncfusion component to perform CRUD operations in a ASP.NET Core Application.
+In this topic, we are going to learn how to retrieve data from SQL database using [Entity Framework](https://docs.microsoft.com/en-us/ef/core/) to bind it to the Grid control and perform CRUD operations. 
+Entity Framework is an open-source object-relational mapper (O/RM) from Microsoft.  Entity Framework works with many databases. But here, we are going to discuss the step-by-step procedure to create an Entity Framework using the [MS SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server) database and connect it to the Syncfusion control to perform CRUD operations in a ASP.NET Core Application.
 
 ## Prerequisite software
 
@@ -28,15 +28,20 @@ The first step is to create a Library database and a table named Book to hold a 
 * Right-click on the created database and select New Query.
 * Use the following SQL query to create a table named Book.
 
-```
+{% tabs %}
+{% highlight c# tabtitle="SQL" %}
+
 Create Table Book(
 Id BigInt Identity(1,1) Primary Key Not Null,
 Name Varchar(200) Not Null,
 Author Varchar(100) Not Null,
 Quantity int,
 Price int Not Null,
-Available bit)
-```
+Available bit
+)
+
+{% endhighlight %}
+{% endtabs %}
 
 Now, the Book table design will look like below.
 
@@ -59,9 +64,13 @@ Run the following commands in the Package Manager Console.
 
 Once the above packages are installed, we can scaffold DbContext and Model classes. Run the following command in the Package Manager Console under the LibraryManagement project.
 
-```
+{% tabs %}
+{% highlight c# tabtitle="CONSOLE" %}
+
 Scaffold-DbContext “Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Library;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False” Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The above scaffolding command contains the following details for creating DbContext and model classes for the existing database and its tables.
 
@@ -133,10 +142,9 @@ namespace LibraryManagement.Controllers
             return Json(new { result = DataSource, count = count });
         }
 
-
         public ActionResult Insert([FromBody] ICRUDModel<Book> value)
         {
-            _context.Books.Add(value.value);
+            _context.Books.Add(value.Value);
             _context.SaveChanges();
             return Json(value);
         }
@@ -144,13 +152,13 @@ namespace LibraryManagement.Controllers
         public IActionResult Update([FromBody] ICRUDModel<Book> value)
         {
             var ord = value;
-            Book val = _context.Books.Where(or => or.Id == ord.value.Id).FirstOrDefault();
-            val.Id = ord.value.Id;
-            val.Name = ord.value.Name;
-            val.Author = ord.value.Author;
-            val.Quantity = ord.value.Quantity;
-            val.Price = ord.value.Price;
-            val.Available = ord.value.Available;
+            Book val = _context.Books.Where(or => or.Id == ord.Value.Id).FirstOrDefault();
+            val.Id = ord.Value.Id;
+            val.Name = ord.Value.Name;
+            val.Author = ord.Value.Author;
+            val.Quantity = ord.Value.Quantity;
+            val.Price = ord.Value.Price;
+            val.Available = ord.Value.Available;
             _context.SaveChanges();
             return Json(value);
         }
@@ -166,9 +174,8 @@ namespace LibraryManagement.Controllers
         public class ICRUDModel<T> where T : class
         {
             public int? key { get; set; }
-            public T value { get; set; }
+            public T Value { get; set; }
         }
-
     }
 }
 
@@ -177,7 +184,7 @@ namespace LibraryManagement.Controllers
 
 ## Install ASP.NET Core package in the application
 
-Syncfusion ASP.NET Core components are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core components in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
 > The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
@@ -191,16 +198,15 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 {% endhighlight %}
 {% endtabs %}
-    
+  
 ## Add Style Sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core components. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <head>
-        ....
-        ....
+        ...
         <!-- Syncfusion Essential JS 2 Styles -->
         <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
     </head>
@@ -213,8 +219,7 @@ In this getting started walk-through, the required scripts are referred using CD
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <head>
-        ....
-        ....
+        ...
         <!-- Syncfusion Essential JS 2 Scripts -->
         <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
@@ -227,28 +232,26 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <body>
-        ....
-        ....
+        ...
         <!-- Syncfusion Script Manager -->
         <ejs-scripts></ejs-scripts>
     </body>
 {% endhighlight %}
 {% endtabs %}
 
-## Add Syncfusion ASP.NET Core Grid component to an application
+## Add Syncfusion DataGrid control to an application
 
-In previous steps, we have successfully configured the Syncfusion ASP.NET Core package in the application. Now, we can add the grid component to to your **Index.cshtml** view page which is present under `Views/Home` folder.
+In previous steps, we have successfully configured the Syncfusion ASP.NET Core package in the application. Now, we can add the grid control to to your **Index.cshtml** view page which is present under `Views/Home` folder.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
 
-<ejs-grid id="Grid">
-</ejs-grid>
+<ejs-grid id="Grid"></ejs-grid>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Binding data to ASP.NET Core Grid component using Entity Framework
+## Binding data to Grid control using Entity Framework
 
 To consume data from the Home Controller, we need to add the **DataManager** with **UrlAdaptor**.
 
@@ -283,7 +286,7 @@ Grid columns can be defined by using the [GridColumn](https://help.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
 
-When you run the application, the `UrlDatasource` method will be called in your controller to load the datasource.
+When you run the application, the **UrlDatasource** method will be called in your controller to load the datasource.
 
 {% tabs %}
 {% highlight c# tabtitle="HomeController.cs" %}
@@ -328,9 +331,9 @@ The sample response object should look like this:
 
 ```
 
-## Handling CRUD operations with our Syncfusion ASP.NET Core Grid component
+## Handling CRUD operations with ASP.NET Core Grid control
 
-We can enable editing in the grid component using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#normal), [Dialog](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#dialog), and [Batch](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#batch) editing.
+We can enable editing in the grid control using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#normal), [Dialog](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#dialog), and [Batch](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#batch) editing.
 
 Here, we are using **Inline** edit mode and used Toolbar property to show toolbar items for editing.
 We have added the Grid Editing and Toolbar code with previous Grid model.
@@ -354,7 +357,7 @@ We have added the Grid Editing and Toolbar code with previous Grid model.
 {% endhighlight %}
 {% endtabs %}
 
-> Normal editing is the default edit mode for the Grid component. Set the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property of Column as **true** for a particular column, whose value is a unique value for editing purposes.
+> Normal editing is the default edit mode for the Grid control. Set the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property of Column as **true** for a particular column, whose value is a unique value for editing purposes.
 
 ### Insert a row
 
@@ -369,7 +372,7 @@ Clicking the **Update** toolbar button will insert the record in the Book table 
 
 public ActionResult Insert([FromBody] ICRUDModel<Book> value)
 {
-    _context.Books.Add(value.value);
+    _context.Books.Add(value.Value);
     _context.SaveChanges();
     return Json(value);
 }
@@ -392,16 +395,16 @@ Clicking the **Update** toolbar button will update the record in the Orders tabl
 
 public IActionResult Update([FromBody] ICRUDModel<Book> value)
 {
-            var ord = value;
-            Book val = _context.Books.Where(or => or.Id == ord.value.Id).FirstOrDefault();
-            val.Id = ord.value.Id;
-            val.Name = ord.value.Name;
-            val.Author = ord.value.Author;
-            val.Quantity = ord.value.Quantity;
-            val.Price = ord.value.Price;
-            val.Available = ord.value.Available;
-            _context.SaveChanges();
-            return Json(value);
+    var ord = value;
+    Book val = _context.Books.Where(or => or.Id == ord.Value.Id).FirstOrDefault();
+    val.Id = ord.Value.Id;
+    val.Name = ord.Value.Name;
+    val.Author = ord.Value.Author;
+    val.Quantity = ord.Value.Quantity;
+    val.Price = ord.Value.Price;
+    val.Available = ord.Value.Available;
+    _context.SaveChanges();
+    return Json(value);
 }
 
 {% endhighlight %}
@@ -418,13 +421,13 @@ To delete a row, select any row and click the **Delete** toolbar button. Deletin
 {% tabs %}
 {% highlight c# tabtitle="HomeController.cs" %}
 
-        public IActionResult Delete([FromBody] ICRUDModel<Book> value)
-        {
-            Book order = _context.Books.Where(c => c.Id == (int)value.key).FirstOrDefault();
-            _context.Books.Remove(order);
-            _context.SaveChanges();
-            return Json(order);
-        }
+public IActionResult Delete([FromBody] ICRUDModel<Book> value)
+{
+    Book order = _context.Books.Where(c => c.Id == (int)value.key).FirstOrDefault();
+     _context.Books.Remove(order);
+     _context.SaveChanges();
+    return Json(order);
+}
 
 {% endhighlight %}
 {% endtabs %}
