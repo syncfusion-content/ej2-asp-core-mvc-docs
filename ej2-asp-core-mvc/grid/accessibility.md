@@ -39,8 +39,7 @@ The following keyboard shortcuts are supported by the Grid.
 |Interaction Keys|Description|
 |----------------|-----------|
 |<b>Pager</b>||
-|<kbd>Tab</kbd> | Focus on the next pager item.|
-|<kbd>Shift + Tab</kbd> | Focus on the previous pager item.|
+|<kbd>Tab / Shift + Tab</kbd> | Focus on the next/previous pager item.|
 |<kbd>Enter / Space</kbd> | Select the currently focused page.|
 |<kbd>Right Arrow / PageDown</kbd> | Navigate to next page.|
 |<kbd>Left Arrow / PageUp</kbd> | Navigate to previous page.|
