@@ -32,20 +32,19 @@ The following ARIA attributes are used in the Grid:
 
 ## Keyboard navigation
 
-Grid functionalities can be interactive with keyboard shortcuts. In order to utilize all the available keyboard shortcuts, the `enableHeaderFocus` property of the Grid needs to be set as `true`.
+Grid functionalities can be interactive with keyboard shortcuts. In order to utilize all the available keyboard shortcuts, the [`EnableHeaderFocus`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableHeaderFocus) property of the Grid needs to be set as **true**.
 
 The following keyboard shortcuts are supported by the Grid.
 
 |Interaction Keys|Description|
 |----------------|-----------|
 |<b>Pager</b>||
-|<kbd>Tab</kbd> | Moves the element focus right side.|
-|<kbd>Shift + Tab</kbd> | Moves the element focus left side.|
-|<kbd>Enter / Space</kbd> | Performing page action for current focused item.|
-|<kbd>Right Arrow / PageDown</kbd> | Goes to the next page.|
-|<kbd>Left Arrow / PageUp</kbd> | Goes to the previous page.|
-|<kbd>Home / Ctrl + Alt + PageUp</kbd> | Goes to the first page.|
-|<kbd>End / Ctrl + Alt + PageDown</kbd> | Goes to the last page.|
+|<kbd>Tab</kbd> | Focus on the next pager item.|
+|<kbd>Shift + Tab</kbd> | Focus on the previous pager item.|
+|<kbd>Enter / Space</kbd> | Select the currently focused page.|
+|<kbd>Right Arrow / PageDown</kbd> | Navigate to next page.|
+|<kbd>Left Arrow / PageUp</kbd> | Navigate to previous page.|
+|<kbd>Home / End</kbd> | Navigate to first and last page.|
 |<b>Focus Elements</b>||
 |<kbd>Home</kbd> | Goes to the first cell.|
 |<kbd>End</kbd> | Goes to the last cell.|
