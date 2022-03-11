@@ -13,8 +13,6 @@ documentation: ug
 
 The AutoComplete data can be filtered based on both text and value fields using `predicate` of dataManager through filtering event. The filtered data can be again updated through `updateData` method.
 
-In the following example, filtering is done based on text and value fields.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

@@ -11,7 +11,7 @@ documentation: ug
 
 # Overview
 
-The AutoComplete control provides the matched suggestion list when type into the input, from which the user can select one.
+When the user types into the input, the AutoComplete control displays a list of matched suggestions from which the user can choose.
 
 ## Key features
 

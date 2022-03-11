@@ -245,7 +245,7 @@ Individual points can be customized using the `pointRender` event.
 
 ## Hide pie or doughnut border
 
-By default, the border will appear in the pie/doughnut chart while mouse hover on the chart. You can disable the the border by setting `EnableBorderOnMouseMove` property is `false`.
+By default, the border will appear in the pie or doughnut chart while mouse hover on the chart. You can disable the border by setting `EnableBorderOnMouseMove` property is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -274,7 +274,7 @@ By default, the border will appear in the pie/doughnut chart while mouse hover o
 
 ## Color Palette
 
-You can customize the color the of the point using the `palettes` property.
+You can customize the color of the point using the `palettes` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

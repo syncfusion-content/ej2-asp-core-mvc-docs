@@ -34,13 +34,13 @@ You can use the following key shortcuts to access the AutoComplete without inter
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
-| <kbd>Arrow Down</kbd> | In popup hidden state, opens the suggestion list. In popup open state, selects the first item when no item selected else selects the item next to the currently selected item. |
-| <kbd>Arrow Up</kbd> | In popup hidden state, opens the suggestion list. In popup open state, selects the last item when no item selected else selects the item previous to the currently selected one. |
+| <kbd>Arrow Down</kbd> | In popup hidden state, opens the suggestion list. In popup open state, selects the first item when no item is selected, else selects the item next to the currently selected item. |
+| <kbd>Arrow Up</kbd> | In popup hidden state, opens the suggestion list. In popup open state, selects the last item when no item is selected, else selects the item previous to the currently selected one. |
 | <kbd>Page Down</kbd> | Scrolls down to the next page and selects the first item when popup list opens. |
 | <kbd>Page Up</kbd> | Scrolls up to previous page and select the first item when popup list open. |
 | <kbd>Enter</kbd> | Selects the focused item and set to AutoComplete control. |
 | <kbd>Tab</kbd> | Focuses on the next tab indexed element when the popup is closed. Otherwise, closes the popup list and remains the focus in control suppose if it is in an open state. |
-| <kbd>Shift + tab </kbd> | Focuses the previous tab indexed element when the popup is closed.  Otherwise,closes the popup list and remains the focus in control suppose if it is in an open state. |
+| <kbd>Shift + tab </kbd> | Focuses the previous tab indexed element when the popup is closed. Otherwise, closes the popup list and remains the focus in control suppose if it is in an open state. |
 | <kbd>Alt + Down</kbd> | Opens the popup list. |
 | <kbd>Alt + Up</kbd> | In popup hidden state, opens the popup list. In popup open state, closes the popup list. |
 | <kbd>Esc(Escape)</kbd> | Closes the popup list when it is in an open state then remove the selection. |

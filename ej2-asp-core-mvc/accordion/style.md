@@ -11,7 +11,7 @@ documentation: ug
 
 # CSS Structure
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 
 ## Customizing Accordion
 

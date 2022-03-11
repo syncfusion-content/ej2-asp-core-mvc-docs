@@ -13,8 +13,6 @@ documentation: ug
 
 The AutoCompleteFor control can be rendered by passing values and data from the model. The selected values can be retrieved during form submit using the post method.
 
-In the following sample, AutoCompleteFor control is rendered.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
