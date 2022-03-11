@@ -3,7 +3,7 @@ layout: post
 title: Bind data from from SQL server to Syncfusion ##Platform_Name## Control and perform CRUD operations
 description: retrieve data from SQL server, bind it to Syncfusion ASP.NET Core Grid control using Entity Framework, and perform CRUD operations.
 platform: ej2-asp-core-mvc
-control: Bind data using entity framework
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -37,7 +37,8 @@ Name Varchar(200) Not Null,
 Author Varchar(100) Not Null,
 Quantity int,
 Price int Not Null,
-Available bit)
+Available bit
+)
 
 {% endhighlight %}
 {% endtabs %}
@@ -141,10 +142,9 @@ namespace LibraryManagement.Controllers
             return Json(new { result = DataSource, count = count });
         }
 
-
         public ActionResult Insert([FromBody] ICRUDModel<Book> value)
         {
-            _context.Books.Add(value.value);
+            _context.Books.Add(value.Value);
             _context.SaveChanges();
             return Json(value);
         }
@@ -152,13 +152,13 @@ namespace LibraryManagement.Controllers
         public IActionResult Update([FromBody] ICRUDModel<Book> value)
         {
             var ord = value;
-            Book val = _context.Books.Where(or => or.Id == ord.value.Id).FirstOrDefault();
-            val.Id = ord.value.Id;
-            val.Name = ord.value.Name;
-            val.Author = ord.value.Author;
-            val.Quantity = ord.value.Quantity;
-            val.Price = ord.value.Price;
-            val.Available = ord.value.Available;
+            Book val = _context.Books.Where(or => or.Id == ord.Value.Id).FirstOrDefault();
+            val.Id = ord.Value.Id;
+            val.Name = ord.Value.Name;
+            val.Author = ord.Value.Author;
+            val.Quantity = ord.Value.Quantity;
+            val.Price = ord.Value.Price;
+            val.Available = ord.Value.Available;
             _context.SaveChanges();
             return Json(value);
         }
@@ -174,9 +174,8 @@ namespace LibraryManagement.Controllers
         public class ICRUDModel<T> where T : class
         {
             public int? key { get; set; }
-            public T value { get; set; }
+            public T Value { get; set; }
         }
-
     }
 }
 
@@ -199,7 +198,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 {% endhighlight %}
 {% endtabs %}
-
+  
 ## Add Style Sheet
 
 Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
@@ -247,8 +246,7 @@ In previous steps, we have successfully configured the Syncfusion ASP.NET Core p
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
 
-<ejs-grid id="Grid">
-</ejs-grid>
+<ejs-grid id="Grid"></ejs-grid>
 
 {% endhighlight %}
 {% endtabs %}
@@ -374,7 +372,7 @@ Clicking the **Update** toolbar button will insert the record in the Book table 
 
 public ActionResult Insert([FromBody] ICRUDModel<Book> value)
 {
-    _context.Books.Add(value.value);
+    _context.Books.Add(value.Value);
     _context.SaveChanges();
     return Json(value);
 }
@@ -398,13 +396,13 @@ Clicking the **Update** toolbar button will update the record in the Orders tabl
 public IActionResult Update([FromBody] ICRUDModel<Book> value)
 {
     var ord = value;
-    Book val = _context.Books.Where(or => or.Id == ord.value.Id).FirstOrDefault();
-    val.Id = ord.value.Id;
-    val.Name = ord.value.Name;
-    val.Author = ord.value.Author;
-    val.Quantity = ord.value.Quantity;
-    val.Price = ord.value.Price;
-    val.Available = ord.value.Available;
+    Book val = _context.Books.Where(or => or.Id == ord.Value.Id).FirstOrDefault();
+    val.Id = ord.Value.Id;
+    val.Name = ord.Value.Name;
+    val.Author = ord.Value.Author;
+    val.Quantity = ord.Value.Quantity;
+    val.Price = ord.Value.Price;
+    val.Available = ord.Value.Available;
     _context.SaveChanges();
     return Json(value);
 }
@@ -426,8 +424,8 @@ To delete a row, select any row and click the **Delete** toolbar button. Deletin
 public IActionResult Delete([FromBody] ICRUDModel<Book> value)
 {
     Book order = _context.Books.Where(c => c.Id == (int)value.key).FirstOrDefault();
-    _context.Books.Remove(order);
-    _context.SaveChanges();
+     _context.Books.Remove(order);
+     _context.SaveChanges();
     return Json(order);
 }
 

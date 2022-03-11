@@ -3,7 +3,7 @@ layout: post
 title: Cross-Site Scripting in ##Platform_Name## Common Control
 description: Learn here all about Cross-Site Scripting in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Cross-Site Scripting
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
