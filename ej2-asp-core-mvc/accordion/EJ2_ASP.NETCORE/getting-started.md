@@ -102,7 +102,7 @@ Now, add the Syncfusion ASP.NET Core Accordion tag helper in `~/Pages/Index.csht
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Accordion component will be rendered in the default web browser.
 
-[ASP.NET Core Accordion component - Getting Started](./images/accordion.PNG)
+![ASP.NET Core Accordion component - Getting Started](images/accordion.PNG)
     
 ## See Also
 
