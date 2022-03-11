@@ -3,7 +3,7 @@ layout: post
 title: Bind data to the Syncfusion ##Platform_Name## Control using WebApiAdaptor of DataManager and perform CRUD operations.
 description: Learn how to retrieve data from WebApi controller, bind it to the Syncfusion DataGrid control using WebApiAdaptor of DataManager, and perform CRUD operations.
 platform: ej2-asp-core-mvc
-control: WebApi Service Binding
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -100,7 +100,7 @@ It is not recommended to have a connection string with sensitive information in 
 
 Now, the DbContext must be configured using connection string and registered as scoped service using the **AddDbContext** method in **Program.cs**.
 
-![Startup file](../images/webapi-program.png)
+![Program file](../images/webapi-program.png)
 
 ### Creating API Controller
 
