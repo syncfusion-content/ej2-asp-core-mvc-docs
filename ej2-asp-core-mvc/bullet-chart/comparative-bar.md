@@ -67,8 +67,6 @@ The shape of the target bar can be customized using the `targetTypes` property a
 {% endtabs %}
 {% endif %}
 
-
-
 ![Rectangle Target Bar with Bullet Chart](images/blazor-bullet-chart-rectangle-target-bar.png)
 
 ## Target Bar Customization

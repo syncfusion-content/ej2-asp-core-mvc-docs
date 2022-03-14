@@ -25,7 +25,7 @@ This section briefly explains about how to include a simple Card in your ASP.NET
 
 ## Adding a header and content
 
-You can create Card with a header in a specific structure. For adding header you need to create a `div` element with `e-card-header` class added.
+You can create Card with a header in a specific structure. For adding header, you need to create a `div` element with `e-card-header` class added.
 
 * You can include heading inside the Card header by adding a `div` element with `e-card-header-caption` class, and also content will be added by adding element with `e-card-content`. For detailed information, refer to the [Header and Content](./header-content/).
 
@@ -64,8 +64,6 @@ You can create Card with a header in a specific structure. For adding header you
 {% endif %}
 
 
-
-Output be like the below.
 
 ![getting started](../../card/images/gettingstarted.PNG)
 

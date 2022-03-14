@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize The Calendar Day Header in ##Platform_Name## Calendar Component
-description: Learn here all about Customize The Calendar Day Header in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to customize the Calendar Day Header in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize The Calendar Day Header
 publishingplatform: ##Platform_Name##
@@ -11,11 +11,9 @@ documentation: ug
 
 # Customize the calendar day header
 
-You can change the format of the day that to be displayed in header using [`dayHeaderFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_DayHeaderFormat) property.
+You can change the format of the day that has to be displayed in header using [`dayHeaderFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_DayHeaderFormat) property.
 
 > By default, the format is `Short`.
-
-You can find the possible formats on below.
 
 | **Name** | **Description** |
 |------|---------------------|
@@ -43,9 +41,6 @@ You can find the possible formats on below.
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![calendar](../images/narrow.png)
 

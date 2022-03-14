@@ -39,7 +39,6 @@ The Bullet Chart can be rendered in different orientations such as **Horizontal*
 {% endif %}
 
 
-
 ![Bullet Chart with Orientation](images/blazor-bullet-chart-orientation.png)
 
 ## Right-to-left (RTL)
@@ -128,7 +127,6 @@ The Bullet Chart supports different type of themes via the `theme` property.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 
 ![Applying Theme to Bullet Chart](images/blazor-bullet-chart-theme.png)
