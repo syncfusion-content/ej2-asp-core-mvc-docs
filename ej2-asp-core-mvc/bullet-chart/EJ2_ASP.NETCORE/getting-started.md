@@ -15,7 +15,7 @@ Starting with v16.2.0.x, if you refer Syncfusion assemblies from trial setup or 
 
 ## Prerequisites
 
-To get start with ASP.NET Core application, ensure the following software to be installed on the machine.
+To get started with ASP.NET Core application, ensure the following software to be installed on the machine.
 * Visual Studio 2017
 * DotNet Core 2.0
 
@@ -27,19 +27,19 @@ The following steps to create ASP.NET Core Application.
 
 ![project selection](./images/default-template.png)
 
-**Step 2:** Once your project created. Add Syncfusion EJ2 package into your application by using Nugget Package Manager.
+**Step 2:** Once your project is created, add Syncfusion EJ2 package into your application by using Nugget Package Manager.
 
 Open the `nuGet` package manager.
 
 ![nugget package install](./images/solution-explorer-core.png)
 
-Install the **Syncfusion.EJ2** package to the application
+Install the **Syncfusion.EJ2** package to the application.
 
 ![package install](./images/nuget-demo.png)
 
 After Installation is completed, this will be included in the project. You can refer it from the Project Assembly Reference.
 
-> Install **NewtonSoft.JSON** as dependency since it **Syncfusion.EJ2** dependent to NewtonSoft.JSON package.
+> Install **NewtonSoft.JSON** as dependency since **Syncfusion.EJ2** is dependent on NewtonSoft.JSON package.
 
 **Step 3:** Open the **Views/_ViewImports.cshtml** to import Syncfusion.EJ2 package.
 
@@ -71,7 +71,7 @@ After Installation is completed, this will be included in the project. You can r
 
 ## Adding component to the Application
 
-* Now open your view page to render our Syncfusion components.
+* Now, open your view page to render our Syncfusion components.
 
 ```cs
 <ejs-bulletchart id="container"></ejs-bulletchart>

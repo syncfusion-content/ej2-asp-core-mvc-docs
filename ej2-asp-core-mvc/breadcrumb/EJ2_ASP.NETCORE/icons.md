@@ -11,7 +11,7 @@ documentation: ug
 
 # Icons
 
-The Breadcrumb component contains an icon/image to provide a visual representation of an item.
+The Breadcrumb component contains an icon or image to provide a visual representation of an item.
 
 ## Loading icon in BreadcrumbItem
 
@@ -41,14 +41,11 @@ To place the font icon on the breadcrumb item, set the `iconCss` property to `e-
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Breadcrumb Sample](./images/items.PNG)
 
 ### Breadcrumb with Image
 
-In the Breadcrumb component, images can be added for the items using the `iconCss` property. In the following example, an image was added to the breadcrumb item by using the iconCss class `e-image` and specifying height and width.
+In the Breadcrumb component, images can be added for the items using the `iconCss` property. In the following example, an image was added to the breadcrumb item by using the iconCss class `e-image`, specifying height and width.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -74,14 +71,11 @@ In the Breadcrumb component, images can be added for the items using the `iconCs
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Breadcrumb Sample](./images/image.PNG)
 
 ### Breadcrumb with SVG Image
 
-In the Breadcrumb component, SVG image can be added for the items using the `iconCss` property. In the following example, SVG image was added to the breadcrumb item by using the iconCss class `e-image` and specifying height and width.
+In the Breadcrumb component, SVG image can be added for the items using the `iconCss` property. In the following example, SVG image was added to the breadcrumb item by using the iconCss class `e-image`, specifying height and width.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -106,9 +100,6 @@ In the Breadcrumb component, SVG image can be added for the items using the `ico
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Breadcrumb Sample](./images/svg.PNG)
 
@@ -140,9 +131,6 @@ By default, the icon is positioned to the left side of the item in the Breadcrum
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Breadcrumb Sample](./images/icons-position.PNG)
 
 ## Icon Only
@@ -172,10 +160,6 @@ To display only icons for the items, add icons using the `iconCss` property. In 
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
 ![Breadcrumb Sample](./images/icon-only.PNG)
 
 ## Show icon only for first item
@@ -200,9 +184,5 @@ To show icon only for the first item in the Breadcrumb component, add icons to t
 {% highlight c# tabtitle="Items.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![Breadcrumb Sample](./images/items.PNG)

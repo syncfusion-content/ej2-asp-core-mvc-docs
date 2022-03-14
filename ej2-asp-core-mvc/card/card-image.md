@@ -60,9 +60,6 @@ Card image is supported to include a title or caption for the image. By default,
 {% endif %}
 
 
-
-Output be like the below.
-
 ![CSS Card Control with images and divider](./images/card-image.PNG)
 
 ## Divider
@@ -94,9 +91,6 @@ Divider used to separate the elements inside the card. You can add divider insid
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![CSS Card Control with images and divider](./images/card-divider.PNG)
 

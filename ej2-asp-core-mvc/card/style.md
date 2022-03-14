@@ -10,7 +10,7 @@ documentation: ug
 
 # Style and Appearance of Card Component
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 
 ## Customizing the card
 
@@ -60,7 +60,7 @@ Use the following CSS to customize the Divider used to separate the elements ins
 
 ## Including image within card element
 
-Use the following CSS to Include image within card element.
+Use the following CSS to include image within card element.
 
 ```css
 .e-card .e-card-image {
@@ -72,7 +72,7 @@ Use the following CSS to Include image within card element.
 
 ## Including a title or caption for the image
 
-Use the following CSS to Include a title or caption for the image.
+Use the following CSS to include a title or caption for the image.
 
 ```css
 .e-card .e-card-image .e-card-title {
@@ -83,7 +83,7 @@ Use the following CSS to Include a title or caption for the image.
 
 ## To include heading image within the header
 
-Use the following CSS to Include heading image within the header.
+Use the following CSS to include heading image within the header.
 
 ```css
 .e-card .e-card-header .e-card-header-image  {
@@ -94,7 +94,7 @@ Use the following CSS to Include heading image within the header.
 
 ## Customizing the Header main title
 
-Use the following CSS to Customize the Header main title.
+Use the following CSS to customize the Header main title.
 
 ```css
 .e-card .e-card-header .e-card-header-caption .e-card-header-title  {
@@ -105,7 +105,7 @@ Use the following CSS to Customize the Header main title.
 
 ## Customizing the Header subtitle
 
-Use the following CSS to Customize the Header subtitle.
+Use the following CSS to customize the Header subtitle.
 
 ```css
 .e-card .e-card-header .e-card-header-caption .e-card-sub-title  {
@@ -116,7 +116,7 @@ Use the following CSS to Customize the Header subtitle.
 
 ## Including action buttons or anchor tags
 
-Use the following CSS to Include action buttons or anchor tags.
+Use the following CSS to include action buttons or anchor tags.
 
 ```css
 .e-card .e-card-actions .e-card-btn  {

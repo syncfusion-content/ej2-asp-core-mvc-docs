@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core
 
-> Starting with v16.2.0.x, if you refer Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+> Starting with v16.2.0.x, if you refer Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use the components.
 
 ## Prerequisites
 
@@ -27,19 +27,19 @@ The following steps to create ASP.NET Core Application.
 
 ![Alt text](./images/default-template.png)
 
-**Step 2:** Once your project created. Add Syncfusion EJ2 package into your application by using Nugget Package Manager.
+**Step 2:** Once your project is created, add Syncfusion EJ2 package into your application by using Nugget Package Manager.
 
 Open the `nuGet` package manager.
 
 ![Alt text](./images/solution-explorer-core.png)
 
-Install the **Syncfusion.EJ2** package to the application
+Install the **Syncfusion.EJ2** package to the application.
 
 ![Alt text](./images/nuget-demo.png)
 
-After Installation complete this will be included in the project. You can refer it from the Project Assembly Reference.
+After Installation is completed, this will be included in the project. You can refer it from the Project Assembly Reference.
 
-> Install **NewtonSoft.JSON** as dependency since **Syncfusion.EJ2** is dependent to NewtonSoft.JSON package.
+> Install **NewtonSoft.JSON** as dependency since **Syncfusion.EJ2** is dependent on NewtonSoft.JSON package.
 
 **Step 3:** Open the **Views/_ViewImports.cshtml** to import Syncfusion.EJ2 package.
 
@@ -69,7 +69,7 @@ After Installation complete this will be included in the project. You can refer 
 </body>
 ```
 
-**Step 6:** Add the below code to your Index.cshtml view page which is present under Views/Home folder, to initialize the barcode.
+**Step 6:** Add the following code to your Index.cshtml view page which is present under Views/Home folder, to initialize the barcode.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -98,7 +98,7 @@ After Installation complete this will be included in the project. You can refer 
 
 ## Add Barcode to the project
 
-Create and add a `barcode` (JSON data) with specific size, value .
+Create and add a `barcode` (JSON data) with specific size value .
 
 {% if page.publishingplatform == "aspnet-core" %}
 
