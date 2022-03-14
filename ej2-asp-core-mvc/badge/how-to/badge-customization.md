@@ -38,9 +38,6 @@ Even though badges come with `8 predefined colors`, you can also customize the c
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Badge Sample](../images/colorcustom.PNG)
 
 ## Customize badge size
@@ -71,9 +68,6 @@ Badges are designed to change its size based on the content. To change the size 
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Badge Sample](../images/badgecustom.PNG)
 
 ## Custom position
@@ -102,9 +96,5 @@ Even though the badges support the conventional `top` and `bottom` positions, th
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![Badge Sample](../images/custompos.PNG)

@@ -153,7 +153,6 @@ namespace LibraryManagement.Controllers
         {
             //do stuff
             var ord = value;
-
             Book val = _context.Books.Where(or => or.Id == ord.Value.Id).FirstOrDefault();
             val.Id = ord.Value.Id;
             val.Name = ord.Value.Name;
@@ -201,7 +200,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 {% endhighlight %}
 {% endtabs %}
-    
+  
 ## Add Style Sheet
 
 Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
@@ -209,8 +208,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <head>
-        ....
-        ....
+        ...
         <!-- Syncfusion Essential JS 2 Styles -->
         <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
     </head>
@@ -223,8 +221,7 @@ In this getting started walk-through, the required scripts are referred using CD
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <head>
-        ....
-        ....
+        ...
         <!-- Syncfusion Essential JS 2 Scripts -->
         <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
@@ -237,8 +234,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <body>
-        ....
-        ....
+        ...
         <!-- Syncfusion Script Manager -->
         <ejs-scripts></ejs-scripts>
     </body>
@@ -252,8 +248,7 @@ In previous steps, we have successfully configured the Syncfusion ASP.NET Core p
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
 
-<ejs-grid id="Grid">
-</ejs-grid>
+<ejs-grid id="Grid"></ejs-grid>
 
 {% endhighlight %}
 {% endtabs %}

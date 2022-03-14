@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Size Modes in ##Platform_Name## Control | Syncfusion
-description: Learn here all about size modes in Syncfusion ##Platform_Name## control and much more.
+title: Size Modes in ##Platform_Name## | Syncfusion
+description: Learn here all about size modes in Syncfusion ##Platform_Name## and how to apply it to application or specific control.
 platform: ej2-asp-core-mvc
 control: common
 publishingplatform: ##Platform_Name##

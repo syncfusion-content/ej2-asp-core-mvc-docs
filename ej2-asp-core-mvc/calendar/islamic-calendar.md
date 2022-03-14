@@ -17,8 +17,6 @@ Also, it consists of all Gregorian calendar functionalities as like min and max 
 
 By default, calendar mode is in **Gregorian**. You can enable the Islamic mode by setting the **calendarMode** as **Islamic**.
 
-The following example demonstrates how to display the Islamic Calendar (Hijri Calendar).
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Control
-description: Checkout and learn about getting started with ##Platform_Name## control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## in Visual Studio Code
+description: Checkout and learn about getting started with ##Platform_Name## Calendar control using Tag helpers in Visual Studio Code.
 platform: ej2-asp-core-mvc
 control: Vscode
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Types And Styles in ##Platform_Name## Button Group Component
-description: Learn here all about Types And Styles in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Types and Styles in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types And Styles
 publishingplatform: ##Platform_Name##
@@ -19,7 +19,6 @@ This section explains about different types and styles of ButtonGroup.
 
 An Outline ButtonGroup has a border with transparent background. To create Outline ButtonGroup, `e-outline` class should be added to the target element and to each button elements using `CssClass` property.
 
-The following sample illustrates how to achieve an Outline ButtonGroup,
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -58,8 +57,6 @@ The Essential JS 2 ButtonGroup has the following predefined styles. This can be 
 | e-info | Used to represent an informative action. |
 | e-warning | Used to represent an action with caution. |
 | e-danger | Used to represent a negative action. |
-
-The following example illustrates how to achieve predefined styles in ButtonGroup.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

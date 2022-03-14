@@ -11,11 +11,11 @@ documentation: ug
 
 # Getting Started
 
-This section briefly explains about how to include a simple Accordion in your ASP.NET MVC application. You can refer [ASP.NET MVC Getting Started documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/) page for introduction part of the system requirements and configure the common specifications.
+This section briefly explains about how to include a simple Accordion in the ASP.NET MVC application. Refer [ASP.NET MVC Getting Started documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/) page for introduction part of the system requirements and configure the common specifications.
 
 ## Adding component to the Application
 
-* Now open your view page to render Accordion component.
+* Now, open the view page to render Accordion component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,7 +44,7 @@ This section briefly explains about how to include a simple Accordion in your AS
 
 ## Render the Accordion using content template
 
-You can bind any data in Accordion items, by simply using the content template property in ASP.NET Accordion. Accordion is already provided with the content template support and hence we can utilize this support to load the other HTML elements or as per your requirement
+You can bind any data in Accordion items, by simply using the content template property in ASP.NET Accordion. Accordion is already provided with the content template support and hence this support can be utilized to load the other HTML elements or as per your requirement.
 
 In the below demo, the Accordion items are given with [chart](../chart/getting-started), [grid](../grid/getting-started-mvc), [calender](../calendar/getting-started) as their content using the content template.
 
@@ -71,9 +71,6 @@ In the below demo, the Accordion items are given with [chart](../chart/getting-s
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![content template](images/contenttemplate.PNG)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enable Rtl in ##Platform_Name## Button Group Component
-description: Learn here all about Enable Rtl in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to Enable Rtl in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Enable Rtl
 publishingplatform: ##Platform_Name##
@@ -12,8 +12,6 @@ documentation: ug
 # Enable RTL
 
 ButtonGroup supports RTL functionality. This can be achieved by adding `e-rtl` class to the target element.
-
-The following example illustrates how to create ButtonGroup with RTL support.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

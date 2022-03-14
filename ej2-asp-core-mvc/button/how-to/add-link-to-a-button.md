@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add Link To A Button in ##Platform_Name## Button Component
-description: Learn here all about Add Link To A Button in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
+description: Learn here all about add link to a Button in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Link To A Button
 publishingplatform: ##Platform_Name##

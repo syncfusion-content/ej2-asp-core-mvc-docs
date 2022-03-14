@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Theme in ##Platform_Name## Control
-description: Learn here all about Theme in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: Themes in ##Platform_Name## Controls
+description: Learn here all about built-in themes and how to change it dynamically in Syncfusion ##Platform_Name## controls.
 platform: ej2-asp-core-mvc
-control: Theme
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Controls | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Ej2_asp.netcore control of Syncfusion, and more details.
+title: Getting Started with ##Platform_Name## using Tag Helpers | Syncfusion
+description: Checkout and learn about building ##Platform_Name## MVC application with Calendar control using tag helper in Visual Studio.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

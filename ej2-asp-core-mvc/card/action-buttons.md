@@ -26,7 +26,7 @@ You can include Action buttons within the Card and customize them. Action button
 
 ## Vertical
 
-By default, action buttons positioned in horizontal alignment , and also it can be aligned to show in vertical alignment by adding `e-card-vertical` class.
+By default, action buttons positioned in horizontal alignment, and also it can be aligned to show in vertical alignment by adding `e-card-vertical` class.
 
 ```html
     <div class = "e-card">
@@ -60,9 +60,6 @@ By default, action buttons positioned in horizontal alignment , and also it can 
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![CSS Card Control with action buttons](./images/card-action.PNG)
 

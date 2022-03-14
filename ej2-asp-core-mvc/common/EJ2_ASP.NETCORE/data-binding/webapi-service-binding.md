@@ -39,7 +39,7 @@ Use the following query to add a new table named **Orders**.
 {% highlight c# tabtitle="SQL" %}
 
 Create Table Orders(
- OrderId BigInt Primary Key Not Null,
+ OrderId BigInt Identity(1,1) Primary Key Not Null,
  CustomerId Varchar(100) Not Null,
  Freight int Null,
  OrderDate datetime null
@@ -200,9 +200,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <head>
-        ....
-        ....
-
+        ...
         <!-- Syncfusion Essential JS 2 Styles -->
         <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 
@@ -216,9 +214,7 @@ In this getting started walk-through, the required scripts are referred using CD
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <head>
-        ....
-        ....
-
+        ...
         <!-- Syncfusion Essential JS 2 Scripts -->
         <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     </head>
@@ -231,8 +227,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
     <body>
-        ....
-        ....
+        ...
         <!-- Syncfusion Script Manager -->
         <ejs-scripts></ejs-scripts>
     </body>
@@ -246,9 +241,7 @@ In previous steps, we have successfully configured the Syncfusion ASP.NET Core p
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
 
-<ejs-grid id="Grid">
-
-</ejs-grid>
+<ejs-grid id="Grid"></ejs-grid>
 
 {% endhighlight %}
 {% endtabs %}

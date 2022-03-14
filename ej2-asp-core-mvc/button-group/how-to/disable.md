@@ -19,8 +19,6 @@ To disable a particular button in a ButtonGroup, `disabled` attribute should be 
 
 To disable whole ButtonGroup, `disabled` attribute should be added to all the button elements.
 
-The following example illustrates how to disable the particular and the whole ButtonGroup.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

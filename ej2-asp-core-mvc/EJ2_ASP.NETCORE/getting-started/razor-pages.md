@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Control
-description: Checkout and learn about getting started with ##Platform_Name## control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## using Razor pages | Syncfusion
+description: Checkout and learn about building ##Platform_Name## application with Calendar control using razor pages and tag helpers in Visual Studio.
 platform: ej2-asp-core-mvc
-control: Razor Pages
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
