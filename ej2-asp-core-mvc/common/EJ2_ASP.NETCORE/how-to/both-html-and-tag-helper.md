@@ -32,7 +32,7 @@ Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="CSHTML" hl_lines="1" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -44,7 +44,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="CSHTML" hl_lines="4" %}
     <head>
         ...
         <!-- Syncfusion Essential JS 2 Styles -->
@@ -57,7 +57,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="CSHTML" hl_lines="4" %}
     <head>
         ...
         <!-- Syncfusion Essential JS 2 Scripts -->
@@ -70,7 +70,7 @@ In this getting started walk-through, the required scripts are referred using CD
 Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="CSHTML" hl_lines="4 5" %}
     <body>
         ...
         <!-- Syncfusion Script Manager -->
