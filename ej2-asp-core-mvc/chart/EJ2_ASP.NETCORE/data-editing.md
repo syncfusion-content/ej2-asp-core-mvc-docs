@@ -13,7 +13,7 @@ documentation: ug
 
 ## Enable Data Editing
 
-It provides drag and drop support to the rendered points. Now, we can change the location or value of the point based on its `y` value.  To enable the data editing, set the `enable` property to true in the drag settings of the series. Also, we can set color using `fill` property and set the data editing minimum and maximum range using `minY` and `maxY` properties.
+It provides drag and drop support to the rendered points. Now, the location or value of the point based on its `y` value can be changed. To enable the data editing, set the `enable` property to true in the drag settings of the series. Also, the color can be set using `fill` property and set the data editing minimum and maximum range using `minY` and `maxY` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
