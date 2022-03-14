@@ -98,7 +98,7 @@ When setting `labelIntersectAction` as `Rotate90`
 
 ## Axis Labels Positioning
 
-By default, the axis labels can be placed at `outside` the axis line and this also can be placed at `inside` the axis line using the `labelPosition` property.
+By default, the axis labels can be placed `outside` the axis line and this also can be placed `inside` the axis line using the `labelPosition` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -398,7 +398,7 @@ You can trim the label using [`enableTrim`](https://help.syncfusion.com/cr/aspne
 
 ## Line break support
 
-Line break feature used to customize the long axis label text into multiple lines by using `<br>` tag. Refer the below example in that dataSource x value contains long text, it breaks into two lines by using  `<br>` tag.
+Line break feature used to customize the long axis label text into multiple lines by using `<br>` tag. Refer the following example in that dataSource x value contains long text, it breaks into two lines by using `<br>` tag.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -427,7 +427,7 @@ Line break feature used to customize the long axis label text into multiple line
 
 ## Maximum Labels
 
-`MaximumLabels` property is set, then the labels will be rendered based on the count in the property per 100 pixel. If you have set range (minimum, maximum, interval) and maximumLabels, then the priority goes to range only. If you haven’t set the range, then we have considered priority to maximumLabels property.
+`MaximumLabels` property is set, then the labels will be rendered based on the count in the property per 100 pixel. If you have set range (minimum, maximum, interval) and maximumLabels, then the priority goes to range only. If you haven’t set the range, then priority is considered to be maximumLabels property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
