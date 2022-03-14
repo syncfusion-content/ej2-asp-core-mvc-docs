@@ -136,3 +136,49 @@ This feature has the below limitations, along with the above mentioned Frozen Gr
 * Column virtualization
 * Infinite scroll cache mode
 * Freeze direction in the stacked header is not compatible with column reordering.
+
+## Add validation rule for frozen Grid
+
+In a frozen column enabled Grid, Grid content will be separated into frozen and movable parts. The following code can be used to dynamically add validation to input fields that are placed in the movable part. In the [ActionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event args, you can find the movableform instance as an argument. Here, you can add validation rules dynamically.
+
+```typescript
+  actionComplete: (args: DialogEditEventArgs) => {
+        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
+            // Add Validation Rules
+            args.movableForm.ej2_instances[0].addRules('Freight', { max: 200 }); // Here, 'Freight' is the column name.
+        }
+    }
+
+```
+
+Validation rules for the 'EmployeeID' and 'Freight' columns can be added in the sample below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/scrolling/freeze-validation/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Freeze-validation.cs" %}
+{% include code-snippet/grid/scrolling/freeze-validation/freeze-validation.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Freeze-validation.cs" %}
+{% include code-snippet/grid/scrolling/freeze-validation/freeze-validation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/scrolling/freeze-validation/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Freeze-validation.cs" %}
+{% include code-snippet/grid/scrolling/freeze-validation/freeze-validation.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Freeze-validation.cs" %}
+{% include code-snippet/grid/scrolling/freeze-validation/freeze-validation.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
