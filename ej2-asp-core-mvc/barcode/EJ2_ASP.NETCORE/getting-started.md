@@ -12,7 +12,6 @@ documentation: ug
 # Getting Started with ASP.NET Core Barcode Control
 
 This section briefly explains about how to include [ASP.NET Core Barcode](https://www.syncfusion.com/aspnet-core-ui-controls/barcode) control in your ASP.NET Core application using Visual Studio.
-> Starting with v16.2.0.x, if you refer Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use the components.
 
 ## Prerequisites
 
@@ -27,24 +26,20 @@ This section briefly explains about how to include [ASP.NET Core Barcode](https:
 ## Install ASP.NET Core package in the application
 
 Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
-**Step 2:** Once your project is created, add Syncfusion EJ2 package into your application by using Nugget Package Manager.
 
 > The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
-Install the **Syncfusion.EJ2** package to the application.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
 
 @addTagHelper *, Syncfusion.EJ2
-After Installation is completed, this will be included in the project. You can refer it from the Project Assembly Reference.
 
 {% endhighlight %}
 {% endtabs %}
-> Install **NewtonSoft.JSON** as dependency since **Syncfusion.EJ2** is dependent on NewtonSoft.JSON package.
 
 ## Add style sheet
 
@@ -65,7 +60,6 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 ## Add script reference
 
 In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
-**Step 6:** Add the following code to your Index.cshtml view page which is present under Views/Home folder, to initialize the barcode.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -99,10 +93,6 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 ## Add ASP.NET Core Barcode Control
 
 Now, add the Syncfusion ASP.NET Core Barcode tag helper in `~/Pages/Index.cshtml` page.
-
-## Add Barcode to the project
-
-Create and add a `barcode` (JSON data) with specific size value .
 
 {% if page.publishingplatform == "aspnet-core" %}
 
