@@ -65,7 +65,7 @@ CDN Link:
 
 NPM Package:
 
-Install `@syncfusion/ej2` package using below command.
+Install `@syncfusion/ej2` package using the following command.
 
 > npm install @syncfusion/ej2
 
@@ -95,7 +95,7 @@ Add `ScriptManager` to the bottom of the `_Layout.cshtml` page. The ScriptManage
 
 ## Add Breadcrumb component
 
-To initialize the Breadcrumb component, add the below code to your `Index.cshtml` view page which is present under `Views/Home` folder.
+To initialize the Breadcrumb component, add the following code to your `Index.cshtml` view page which is present under `Views/Home` folder.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

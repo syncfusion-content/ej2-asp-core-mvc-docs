@@ -15,7 +15,7 @@ This section briefly explains about how to create a simple Button in your ASP.NE
 
 ## Add Button to the project
 
-To create simple Button add the `ejs-button` tag with id attribute as `element` in your **Index.cshtml** page.
+To create simple Button, add the `ejs-button` tag with id attribute as `element` in your **Index.cshtml** page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,16 +41,11 @@ To create simple Button add the `ejs-button` tag with id attribute as `element` 
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Button Sample](./images/button.PNG)
 
 ## Run the application
 
 After successful compilation of your application, simply press `F5` to run the application.
-
-The following example shows a default rendering of Button.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

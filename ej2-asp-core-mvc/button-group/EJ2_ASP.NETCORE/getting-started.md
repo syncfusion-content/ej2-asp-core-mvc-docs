@@ -41,9 +41,6 @@ To create simple ButtonGroup add the div tag with class name as `e-btn-group` an
 {% endif %}
 
 
-
-Output be like the below.
-
 ![ButtonGroup Sample](./images/button-group.png)
 
 ## Run the application

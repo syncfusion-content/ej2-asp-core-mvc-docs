@@ -47,7 +47,4 @@ In the following example, the maxItems is set as 3 with overflowMode as Default.
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Breadcrumb Sample](./images/overflow.PNG)
