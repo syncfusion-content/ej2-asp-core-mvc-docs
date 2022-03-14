@@ -1,1 +1,8 @@
-<ejs-autocomplete id="games" dataSource="@ViewBag.data"> </ejs-autocomplete>
+@{
+    ....
+    var data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };    
+}
+
+<div class="control_wrapper AutoComplete-control-section">
+	<ejs-autocomplete id="games" dataSource="@ViewBag.data"> </ejs-autocomplete>
+</div>
