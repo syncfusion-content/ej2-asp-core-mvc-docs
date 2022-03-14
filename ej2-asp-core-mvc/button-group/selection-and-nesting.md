@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection And Nesting in ##Platform_Name## Button Group Component
-description: Learn here all about Selection And Nesting in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Selection and Nesting in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection And Nesting
 publishingplatform: ##Platform_Name##
@@ -16,8 +16,6 @@ documentation: ug
 ### Single selection
 
 ButtonGroup supports radio type selection in which only one button can be selected. This can be achieved by adding input element along with `id` attribute with its corresponding label along with `for` attribute inside the target element. In this ButtonGroup, the type of the input element should be `radio` and `e-btn` is added to the `label` element.
-
-The following example illustrates the single selection behavior in ButtonGroup.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,8 +45,6 @@ The following example illustrates the single selection behavior in ButtonGroup.
 ### Multiple selection
 
 ButtonGroup supports checkbox type selection in which multiple button can be selected. This can be achieved by adding input element along with `id` attribute with its corresponding label along with `for` attribute inside the target element. In this ButtonGroup, the type of the input element should be `checkbox` and `e-btn` is added to the `label` element.
-
-The following example illustrates the multiple selection behavior in ButtonGroup.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -85,8 +81,6 @@ Nesting with other components can be possible in ButtonGroup. The following comp
 
 To initialize DropDownButton component refer [DropDownButton Getting Started documentation](https://helpej2.syncfusion.com/aspnetcore/documentation/drop-down-button/getting-started).
 
-In the following example, the DropDownButton component is rendered in ButtonGroup.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -115,8 +109,6 @@ In the following example, the DropDownButton component is rendered in ButtonGrou
 ### SplitButton
 
 To initialize SplitButton component refer [`SplitButton Getting Started documentation`](./../../split-button/getting-started).
-
-In the following example, the SplitButton component is rendered in ButtonGroup.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

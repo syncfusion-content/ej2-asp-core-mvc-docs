@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Introduction in ##Platform_Name## control
-description: Learn here all about Introduction in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: Introduction of ##Platform_Name## controls
+description: Learn here all about introduction of 70+ Syncfusion ##Platform_Name## UI controls powered by Essential JS 2.
 platform: ej2-asp-core-mvc
-control: Introduction
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -24,7 +24,6 @@ Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been 
 
 ## Control List
 
-<!-- markdownlint-disable MD033 MD018 -->
 <style>
 #table
 {

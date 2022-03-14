@@ -47,14 +47,11 @@ The Breadcrumb items with relative URL contain only the path but do not locate t
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Breadcrumb Sample](./images/relative-url.PNG)
 
 ### Absolute URL
 
-The Breadcrumb items with absolute URL contain the path and locate to the resource if the static url is bound to the breadcrumb item. The following example represents the breadcrumb items with static url.
+The Breadcrumb items with absolute URL contain the path and locate to the resource if the static url is bound to the breadcrumb item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,9 +76,6 @@ The Breadcrumb items with absolute URL contain the path and locate to the resour
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Breadcrumb Sample](./images/relative-url.PNG)
 
@@ -114,8 +108,6 @@ The feature enables the last item of the Breadcrumb component by setting the `en
 
 
 
-Output be like the below.
-
 ![Breadcrumb Sample](./images/navigation.PNG)
 
 ## Open URL in new page or tab
@@ -145,8 +137,5 @@ To open the Breadcrumb item in a new page or tab, set the target property of the
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Breadcrumb Sample](./images/navigation.PNG)

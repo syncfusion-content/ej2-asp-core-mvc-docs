@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Browser in ##Platform_Name## controls
-description: Learn here all about Browser in Syncfusion ##Platform_Name## controls of Syncfusion Essential JS 2 and more.
+title: Browser Compatibility in ##Platform_Name## controls
+description: Learn here all about Browser compatibility of Syncfusion ##Platform_Name## controls and more.
 platform: ej2-asp-core-mvc
-control: Browser
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

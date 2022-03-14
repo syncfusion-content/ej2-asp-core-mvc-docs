@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set The Nested Accordion in ##Platform_Name## Accordion Component
-description: Learn here all about Set The Nested Accordion in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to set the Nested Accordion in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set The Nested Accordion
 publishingplatform: ##Platform_Name##
@@ -36,8 +36,5 @@ Accordion supports to render `nested` level of Accordion by using content proper
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Alt text](../images/nested.PNG)

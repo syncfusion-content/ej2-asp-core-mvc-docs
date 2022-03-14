@@ -25,8 +25,6 @@ You can disable weekends of every month in a Calendar by using the [`renderDayCe
 | `isDisabled` | Specifies whether the current date is to be disabled or not. |
 | `isOutOfRange` | Defines whether the current date is out of range or not. |
 
-The following example demonstrates how to disable weekends of every month.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -101,7 +99,7 @@ The following example highlights the World Health Day (every 7th April) and Worl
 
 ## Highlight Weekends
 
-You can highlight the weekends of every month in a Calendar by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event. The following example demonstrates how to highlights the weekends of every month.
+You can highlight the weekends of every month in a Calendar by using the [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.Calendar.html#Syncfusion_EJ2_Calendars_Calendar_RenderDayCell) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
