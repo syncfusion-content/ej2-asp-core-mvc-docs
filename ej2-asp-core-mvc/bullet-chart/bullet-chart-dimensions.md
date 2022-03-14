@@ -46,7 +46,7 @@ The `width` and `height` properties are used to adjust the size of the Bullet Ch
 
 ### Pixel
 
-Can set the size of the Bullet Chart in pixels as shown below.
+Sets the size of the Bullet Chart in pixels as shown below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

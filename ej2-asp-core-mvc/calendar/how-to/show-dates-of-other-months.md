@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show Dates Of Other Months in ##Platform_Name## Calendar Component
-description: Learn here all about Show Dates Of Other Months in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about show dates of other months in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Show Dates Of Other Months
 publishingplatform: ##Platform_Name##
@@ -13,7 +13,7 @@ documentation: ug
 
 The following example demonstrates how to show dates of other months.
 
-Using the styles below, you can bring the dates of other months to visibility from its hidden state.
+Using the following styles, you can bring the dates of other months to visibility from its hidden state.
 
 ```css
 .e-calendar .e-content tr.e-month-hide,

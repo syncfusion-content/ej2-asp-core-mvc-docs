@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Integrate Other Component Inside The Card in ##Platform_Name## Card Component
-description: Learn here all about Integrate Other Component Inside The Card in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to integrate other component inside the card in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integrate Other Component Inside The Card
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Integrate other component inside the card
 
-You can integrate any component inside the card element. Here ListView component is placed inside the card for showcasing the To-Do list.
+You can integrate any component inside the card element. Here, ListView component is placed inside the card for showcasing the To-Do list.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,8 +36,5 @@ You can integrate any component inside the card element. Here ListView component
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Alt text](./../images/card-other.PNG)

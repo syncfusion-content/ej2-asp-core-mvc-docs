@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand Mode in ##Platform_Name## Accordion Component
-description: Learn here all about Expand Mode in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to expand mode in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Expand Mode
 publishingplatform: ##Platform_Name##
@@ -44,14 +44,11 @@ The property enables to expand only one Accordion item at a time. If you expand 
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Accordion Control with expand mode of single type](./images/single.PNG)
 
 ## Multiple
 
-Default expand mode of the Accordion is `Multiple`. It enables you to expand more than one Accordion item at a time. Expand/collapse action can also be toggled by clicking on it again. For example, expanded item is collapsed when you click on it again.
+Default expand mode of the Accordion is `Multiple`. It enables you to expand more than one Accordion item at a time. Expand or collapse action can also be toggled by clicking on it again. For example, expanded item is collapsed when you click on it again.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -76,9 +73,6 @@ Default expand mode of the Accordion is `Multiple`. It enables you to expand mor
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Accordion Control with expand mode of multiple type](./images/multiple.PNG)
 
