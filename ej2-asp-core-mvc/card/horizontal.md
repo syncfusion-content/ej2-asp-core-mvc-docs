@@ -11,7 +11,7 @@ documentation: ug
 
 # Horizontal Card
 
-By default, all the card elements are aligned vertically one after the other as in the DOM. You can achieve the element to align horizontally as well by adding the class `e-card-horizontal` in the root card element.
+By default, all the card elements are aligned vertically one after the other as in the DOM. You can achieve the element to align horizontally as well as by adding the class `e-card-horizontal` in the root card element.
 
 ## Stacked cards
 
@@ -54,8 +54,5 @@ Class   | Description
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![CSS Card Control with horizontal structure](./images/card-horizontal.PNG)

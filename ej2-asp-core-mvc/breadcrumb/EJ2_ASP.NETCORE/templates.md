@@ -41,14 +41,11 @@ In the following example, Shopping Cart details are used as breadcrumb Items and
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Breadcrumb Sample](./images/item-template.PNG)
 
 ## Separator Template
 
-In the  following example, the separators are customized with icons using `separatorTemplate`.
+In the following example, the separators are customized with icons using `separatorTemplate`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -72,9 +69,5 @@ In the  following example, the separators are customized with icons using `separ
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![Breadcrumb Sample](./images/separator-temp.PNG)

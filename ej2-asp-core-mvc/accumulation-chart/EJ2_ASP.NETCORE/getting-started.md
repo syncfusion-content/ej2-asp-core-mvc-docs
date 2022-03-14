@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Accumulation Chart Component
-description: Checkout and learn about getting started with ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Accumulation Chart Control
+description: Checkout and learn about getting started with ##Platform_Name## Accumulation Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -11,78 +11,105 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Getting Started with ASP.NET Core
+# Getting Started with ASP.NET Core AccumulationChart Control
 
-> Starting with v16.2.0.x, if you refer Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+This section briefly explains about how to include [ASP.NET Core AccumulationChart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
-To get started with ASP.NET Core application, ensure the following software to be installed on the machine.
-* Visual Studio 2017
-* DotNet Core 2.0
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-## Setup ASP.NET Core application with Essential JS 2 for ASP.NET Core
+## Create ASP.NET Core web application with Razor pages
 
-The following steps to create ASP.NET Core Application.
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-**Step 1:** Create ASP.NET Core Web Application with default template project in Visual Studio 2017.
+* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
 
-![Alt text](./images/default-template.png)
+## Install ASP.NET Core package in the application
 
-**Step 2:** Once your project is created, add Syncfusion EJ2 package into your application by using Nugget Package Manager.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-Open the `nuGet` package manager.
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-![Alt text](./images/solution-explorer-core.png)
+## Add Syncfusion ASP.NET Core Tag Helper
 
-Install the **Syncfusion.EJ2** package to the application.
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
-![Alt text](./images/nuget-demo.png)
+{% tabs %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
-After Installation is completed, this will be included in the project. You can refer it from the Project Assembly Reference.
-
-> The **NewtonSoft.JSON** has to be installed as dependency since **Syncfusion.EJ2** is dependent to NewtonSoft.JSON package.
-
-**Step 3:** Open the **Views/_ViewImports.cshtml** to import Syncfusion.EJ2 package.
-
-```cs
 @addTagHelper *, Syncfusion.EJ2
-```
 
-**Step 4:** Add client side resource through [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **Views/Shared/_Layout.cshtml.**
+{% endhighlight %}
+{% endtabs %}
 
-```html
+## Add style sheet
+
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <head>
-@* Syncfusion Essential JS 2 Styles *@
-<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
-
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 </head>
-```
 
-**Step 5:** Adding Script Manager in layout page **Views/Shared/_Layout.cshtml.**
+{% endhighlight %}
+{% endtabs %}
 
-```cs
+## Add script reference
+
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Register Syncfusion Script Manager
+
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <body>
-    @RenderBody()
-    @RenderSection("Scripts", required: false)
-<ejs-scripts></ejs-scripts>
+    ....
+    ....
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts></ejs-scripts>
 </body>
-```
 
-**Step 6:** Add the below code to your Index.cshtml view page which is present under Views/Home folder, to initialize the Accumulationchart.
+{% endhighlight %}
+{% endtabs %}
 
-```cs
+## Add ASP.NET Core AccumulationChart Control
+
+Now, add the Syncfusion ASP.NET Core AccumulationChart tag helper in `~/Pages/Index.cshtml` page.
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
 <ejs-accumulationchart id="container" title="Mobile Browser Statistics">
-            <e-accumulationchart-legendsettings visible="false">
-            </e-accumulationchart-legendsettings>
-            <e-accumulation-series-collection>
-                <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser">
-                </e-accumulation-series>
-            </e-accumulation-series-collection>
-        </ejs-accumulationchart>
-```
+    <e-accumulationchart-legendsettings visible="false">
+    </e-accumulationchart-legendsettings>
+    <e-accumulation-series-collection>
+        <e-accumulation-series dataSource="ViewBag.dataSource" xName="xValue" yName="yValue" name="Browser">
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>
+
+{% endhighlight %}
+{% endtabs %}
 
 **Pie Series**
 
@@ -94,8 +121,16 @@ By default, the pie series will be rendered when assigning the JSON data to the 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/initial/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Initial.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/initial/initial.cs %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
+....
+....
+public class PieChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+    public string fill;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -111,6 +146,6 @@ By default, the pie series will be rendered when assigning the JSON data to the 
 {% endtabs %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core AccumulationChart control will be rendered in the default web browser.
 
-
-![Alt text](./images/accumulationchart.png)
+![ASP.NET Core AccumulationChart Control](images/accumulation-chart-component.png)

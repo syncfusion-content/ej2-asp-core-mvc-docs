@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize The Card Image Title Position in ##Platform_Name## Card Component
-description: Learn here all about Customize The Card Image Title Position in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to customize the Card Image title position in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize The Card Image Title Position
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Customize the card image title position
 
-Card Image titles are placed as always Bottom-Left Corner only, You can manually customize to placing titles anywhere over the image by adding styles.
+Card Image titles are placed as always at Bottom-Left Corner only, you can manually customize to place titles anywhere over the image by adding styles.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
