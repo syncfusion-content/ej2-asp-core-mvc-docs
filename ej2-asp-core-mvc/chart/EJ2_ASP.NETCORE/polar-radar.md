@@ -23,7 +23,7 @@ Polar drawType property is used to change the series plotting type to line, colu
 
 **Line**
 
-To render a line draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Line`. [`isClosed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IsClosed) property specifies whether to join start and end point of a line series used in polar chart to form a closed path. Default value of isClosed is true.
+To render a line draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Line`. The [`isClosed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IsClosed) property specifies whether to join start and end point of a line series used in polar chart to form a closed path. Default value of isClosed is true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -81,7 +81,7 @@ To render a spline line draw type, use series [`drawType`](https://help.syncfusi
 
 **Area**
 
-To render a area line draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Area`.
+To render an area line draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Area`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -261,7 +261,7 @@ To render a radar series, use series [`type`](https://help.syncfusion.com/cr/asp
 
 **Line**
 
-To render a line draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Line`. [`isClosed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IsClosed) property specifies whether to join start and end point of a line series used in polar chart to form a closed path. Default value of isClosed is true.
+To render a line draw type, use series [`drawType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DrawType) as `Line`. The [`isClosed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IsClosed) property specifies whether to join start and end point of a line series used in polar chart to form a closed path. Default value of isClosed is true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

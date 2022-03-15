@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working With Data in ##Platform_Name## Chart Component
-description: Learn here all about Working With Data in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+description: Learn here all about working with data in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Working With Data
 publishingplatform: ##Platform_Name##
@@ -17,7 +17,7 @@ Chart can visualise data bound from local or remote data.
 
 ## Local Data
 
-You can bind a simple JSON data to the chart using [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DataSource) property in series. Now map the fields in JSON to [`xName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_XName) and [`yName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_YName) properties.
+You can bind a simple JSON data to the chart using [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DataSource) property in series. Now, map the fields in JSON to [`xName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_XName) and [`yName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_YName) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -104,7 +104,7 @@ You can also bind remote data to the chart using `DataManager`. The DataManager 
 
 ## Empty points
 
-The Data points that uses the `null` or `undefined` as value are considered as empty points. Empty data points are ignored and not plotted in the Chart. When the data is provided by using the points property, By using `emptyPointSettings` property in series, you can customize the empty point. Default `mode` of the empty point is `Gap`.
+The Data points that uses the `null` or `undefined` as value are considered as empty points. Empty data points are ignored and not plotted in the Chart. When the data is provided by using the points property, by using `emptyPointSettings` property in series, you can customize the empty point. Default `mode` of the empty point is `Gap`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -133,7 +133,7 @@ The Data points that uses the `null` or `undefined` as value are considered as e
 
 ## Lazy loading
 
-Lazy loading allows you to load data for chart on demand. Chart will fire the scrollEnd event, in that we can get the minimum and maximum range of the axis, based on this, we can upload the data to chart.
+Lazy loading allows to load data for chart on demand. Chart will fire the scrollEnd event, in that the minimum and maximum range of the axis is achieved. Based on this, the data can be uploaded to chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
