@@ -38,7 +38,7 @@ The following is a list of Syncfusion ASP.NET Core UI Controls that use the stan
 * [Slider](../range-slider/getting-started)
 * [Switch](../switch/getting-started)
 
-## Available Syncfusion Properties Equivalent to HTML Attributes
+### Available Syncfusion Properties Equivalent to HTML Attributes
 
 The following table illustrates the HTML attributes and their equivalent Syncfusion API.
 
@@ -258,7 +258,7 @@ The textbox will be rendered with the following output.
 {% endhighlight %}
 {% endtabs %}
 
-### Input DOM Events
+## Input DOM Events
 
 The Syncfusion ASP.NET Core UI control supports binding the native DOM events on the input element.
 
