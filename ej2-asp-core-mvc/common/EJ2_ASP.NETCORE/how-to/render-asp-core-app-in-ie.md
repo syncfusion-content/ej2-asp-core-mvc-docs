@@ -10,19 +10,19 @@ documentation: ug
 
 # How to Render the ASP.NET Core Application in IE11 Web Browser
 
-This section explains how to render the ASP.NET Core application in IE11 web browser. The Microsoft Internet Explorer supports `ASP.NET Core` app with additional polyfills in .NET Core apps
+This section explains how to render the ASP.NET Core application in IE11 web browser. The Microsoft Internet Explorer supports `ASP.NET Core` app with additional polyfills in .NET Core apps.
 
 ## Prerequisites
 
 [System requirements for ASP.NET Core components](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-## ASP.NET Core application.
+## ASP.NET Core application
 
 Find the following steps to add the polyfills in the ASP.NET Core application.
 
-1. Create a ASP.NET Core application using [ASP.NET Core Getting Started](../../getting-started/razor-pages) documentation.
+1.Create a ASP.NET Core application using [ASP.NET Core Getting Started](../../getting-started/razor-pages) documentation.
 
-2. Add the polyfill script reference in the `<head>` element of the `~/Pages/Shared/_Layout.cshtml` page.
+2.Add the polyfill script reference in the `<head>` element of the `~/Pages/Shared/_Layout.cshtml` page.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Pages/Shared/_Layout.cshtml" hl_lines="4" %}
@@ -38,9 +38,9 @@ Find the following steps to add the polyfills in the ASP.NET Core application.
 
 > This [polyfill](https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js) is required to configure in ASP.NET Core application for IE 11 web browser. For further detail, refer to the link [here](https://github.com/stefanpenner/es6-promise).
 
-3. Run the application in the IE 11 web browser and the Syncfusion ASP.NET Core Control is now rendered on IE 11.
+3.Run the application in the IE 11 web browser and the Syncfusion ASP.NET Core Control is now rendered on IE 11.
 
-    ![Syncfusion control rendering on IE11](images/ie-output.png)
+![Syncfusion control rendering on IE11](images/ie-output.png)
 
 ## See Also
 
