@@ -3,7 +3,7 @@ layout: post
 title: Localization in ##Platform_Name## Common control
 description: Learn here all about Localization in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Localization
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -19,7 +19,7 @@ To load translation object in your application use `load` function of `L10n` cla
 You can change the different culture in Syncfusion ASP.NET Core controls by setting [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property with culture codes. The following example demonstrates the Grid in Deutsch culture.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <ejs-grid id="Grid" allowPaging="true" locale="de-DE" allowGrouping="true">
     <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/Orders/" adaptor="ODataV4Adaptor" crossdomain="true"></e-data-manager>
@@ -65,7 +65,7 @@ You can change the different culture in Syncfusion ASP.NET Core controls by sett
 Current locale can be changed for all the Syncfusion ASP.NET Core controls in your application by invoking `setCulture` function with your desired culture name. The following example demonstrates the Grid in Deutsch culture.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <ejs-grid id="Grid" allowPaging="true" locale="de-DE" allowGrouping="true">
     <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/Orders/" adaptor="ODataV4Adaptor" crossdomain="true"></e-data-manager>

@@ -3,7 +3,7 @@ layout: post
 title: Adding script references in ##Platform_Name## control
 description: Learn here all about adding script references in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Adding Script References
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -34,12 +34,10 @@ The primary goal of all the ASP.NET Core controls package is to help the novice 
 Add the EJ2 CDN client-side resources to the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
-{% highlight c# tabtitle="_Layout.cshtml" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <head>
-    ....
-    ....
-
+    ...
     <!-- Syncfusion Essential JS 2 Styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 
@@ -64,26 +62,23 @@ The primary goal of individual control CDN is to optimize the loading time and m
 Add the CDN client-side resources in the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
-{% highlight c# tabtitle="_Layout.cshtml" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2{{ site.ej2version }}//ej2-lists/styles/material.css" />
 
-    ...
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/material.css" />
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/material.css" />
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/material.css" />
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/material.css" />
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2{{ site.ej2version }}//ej2-lists/styles/material.css" />
-
-
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -231,21 +226,21 @@ gulp.task("copy-client-resource", function (done) {
 7.Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion ASP.NET Core Calendar has been loaded for example.  
 
 {% tabs %}
-{% highlight c# tabtitle="_Layout.cshtml" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <head>
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="~/syncfusion/ej2-calendars/styles/calendar/material.css" />
-        <link rel="stylesheet" href="~/syncfusion/ej2-base/styles/material.css" />
-        <link rel="stylesheet" href="~/syncfusion/ej2-buttons/styles/button/material.css" />
-        <link rel="stylesheet" href="~/syncfusion/ej2-popups/styles/popup/material.css" />
-        <link rel="stylesheet" href="~/syncfusion/ej2-lists/styles/list-view/material.css" />
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="~/syncfusion/ej2-base/ej2-base.min.js"></script>
-        <script src="~/syncfusion/ej2-buttons/ej2-buttons.min.js"></script>
-        <script src="~/syncfusion/ej2-popups/ej2-popups.min.js"></script>
-        <script src="~/syncfusion/ej2-lists/ej2-lists.min.js"></script>
-        <script src="~/syncfusion/ej2-calendars/ej2-calendars.min.js"></script>
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="~/syncfusion/ej2-calendars/styles/calendar/material.css" />
+    <link rel="stylesheet" href="~/syncfusion/ej2-base/styles/material.css" />
+    <link rel="stylesheet" href="~/syncfusion/ej2-buttons/styles/button/material.css" />
+    <link rel="stylesheet" href="~/syncfusion/ej2-popups/styles/popup/material.css" />
+    <link rel="stylesheet" href="~/syncfusion/ej2-lists/styles/list-view/material.css" />
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="~/syncfusion/ej2-base/ej2-base.min.js"></script>
+    <script src="~/syncfusion/ej2-buttons/ej2-buttons.min.js"></script>
+    <script src="~/syncfusion/ej2-popups/ej2-popups.min.js"></script>
+    <script src="~/syncfusion/ej2-lists/ej2-lists.min.js"></script>
+    <script src="~/syncfusion/ej2-calendars/ej2-calendars.min.js"></script>
 </head>
 
 {% endhighlight %}

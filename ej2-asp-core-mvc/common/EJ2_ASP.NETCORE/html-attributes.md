@@ -219,7 +219,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 <!-- markdownlint-enable MD033 -->
 
 {% tabs %}
-{% highlight c# tabtitle="Index.cshtml" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 <ejs-textbox id="textbox" name="first-name" title="First name" autocomplete="Off"></ejs-textbox>
 {% endhighlight %}
 {% endtabs %}
@@ -237,7 +237,7 @@ The textbox will be rendered with the following output.
 In some cases, you may need to add HTML attributes to the root/container element of the above input-based controls. For this, you can use [HtmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_HtmlAttributes) Syncfusion API to add HTML attributes to the root/container element.
 
 {% tabs %}
-{% highlight c# tabtitle="Index.cshtml" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 @{
     IDictionary<string, object> customAttribute = new Dictionary<string, object>()
     {
@@ -263,7 +263,7 @@ The textbox will be rendered with the following output.
 The Syncfusion ASP.NET Core UI control supports binding the native DOM events on the input element.
 
 {% tabs %}
-{% highlight c# tabtitle="Index.cshtml" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 <div class="alert "></div>
 
 <ejs-textbox id="first"></ejs-textbox>

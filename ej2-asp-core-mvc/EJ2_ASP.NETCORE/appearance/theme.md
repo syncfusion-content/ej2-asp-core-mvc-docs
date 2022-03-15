@@ -46,7 +46,7 @@ Instead of using a local resource on your server, you can use a cloud CDN to ref
 Syncfusion ASP.NET Core Themes are available in the CDN. Make sure that the version in the URLs matches the version of the Syncfusion Essential JS 2 ASP.NET Core Package you are using.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <head>
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" rel="stylesheet"/>
@@ -77,67 +77,65 @@ In the ASP.NET Core application, the application theme can be changed dynamicall
 1.Modify the **~/Pages/Shared/_Layout.cshtml** page with the below code to implement a theme change dynamically using the dropdown by its id value in javascript function in the application.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-    @model IndexModel
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    -----
-
+@model IndexModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    ...
     <!-- Syncfusion Essential JS 2 Styles -->
     <link id="cssfile" rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-
-    </head>
-
-    <body>
-    <header>
-    -----
-
-        <div>
+</head>
+<body>
+<header>
+    ...
+    <div>
         <ejs-dropdownlist id="theme" dataSource="@Model.Themes" index="1" change="onThemeChange" placeholder="Themes" floatLabelType="Always">
         <e-dropdownlist-fields text="Text" value="ID"></e-dropdownlist-fields>
         </ejs-dropdownlist>
-        </div>
-    </header>
+    </div>
+</header>
 
-    <script type="text/javascript">
-        function onThemeChange(e) {
-            document.getElementsByTagName('body')[0].style.display = 'none';
-            var themeName = e.value;
-            let synclink = document.getElementById('cssfile');
-            synclink.href = 'https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/' + themeName + '.css';
-            setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 200);
-        }
-    </script>
+<script type="text/javascript">
+    function onThemeChange(e) {
+        document.getElementsByTagName('body')[0].style.display = 'none';
+        var themeName = e.value;
+        let synclink = document.getElementById('cssfile');
+        synclink.href = 'https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/' + themeName + '.css';
+        setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 200);
+    }
+</script>
 {% endhighlight %}
 {% endtabs %}
 
-2.Add the following code for dropdown data on the **~/Pages/index.cshtml.cs** model page.
+2.Add the following code for dropdown data on the **~/Pages/Index.cshtml.cs** model page.
 
 {% tabs %}
-{% highlight c# tabtitle="index.cshtml.cs" %}
+{% highlight c# tabtitle="~/Index.cshtml.cs" %}
 
-    public List<ThemeDetails> Themes = new List<ThemeDetails>() {
-        new ThemeDetails(){ ID = "material", Text = "Material" },
-        new ThemeDetails(){ ID = "bootstrap", Text = "Bootstrap" },
-        new ThemeDetails(){ ID = "fabric", Text = "Fabric" },
-        new ThemeDetails(){ ID = "bootstrap4", Text = "Bootstrap 4" },
-        new ThemeDetails(){ ID = "tailwind", Text = "TailWind"},
-        new ThemeDetails(){ ID = "tailwind-dark", Text = "TailWind Dark" },
-        new ThemeDetails(){ ID = "material-dark", Text = "Material Dark" },
-        new ThemeDetails(){ ID = "bootstrap-dark", Text = "Bootstrap Dark" },
-        new ThemeDetails(){ ID = "fabric-dark", Text = "Fabric Dark" },
-        new ThemeDetails(){ ID = "highcontrast", Text = "High Contrast" }
-    };
+public List<ThemeDetails> Themes = new List<ThemeDetails>() {
+    new ThemeDetails(){ ID = "material", Text = "Material" },
+    new ThemeDetails(){ ID = "bootstrap", Text = "Bootstrap" },
+    new ThemeDetails(){ ID = "fabric", Text = "Fabric" },
+    new ThemeDetails(){ ID = "bootstrap4", Text = "Bootstrap 4" },
+    new ThemeDetails(){ ID = "tailwind", Text = "TailWind"},
+    new ThemeDetails(){ ID = "tailwind-dark", Text = "TailWind Dark" },
+    new ThemeDetails(){ ID = "material-dark", Text = "Material Dark" },
+    new ThemeDetails(){ ID = "bootstrap-dark", Text = "Bootstrap Dark" },
+    new ThemeDetails(){ ID = "fabric-dark", Text = "Fabric Dark" },
+    new ThemeDetails(){ ID = "highcontrast", Text = "High Contrast" }
+};
 
-    public class ThemeDetails
-    {
-        public string ID { get; set; }
-        public string Text { get; set; }
-    }
+public class ThemeDetails
+{
+    public string ID { get; set; }
+    public string Text { get; set; }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Change theme dynamically](images/dynamic-theme-switching.gif)
+
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/theme-switch)

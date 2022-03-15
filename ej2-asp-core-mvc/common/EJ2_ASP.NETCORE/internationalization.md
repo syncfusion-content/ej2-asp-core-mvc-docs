@@ -3,7 +3,7 @@ layout: post
 title: Globalization in ##Platform_Name## Control
 description: Learn here all about Globalization in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Globalization
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -60,7 +60,7 @@ npm install cldr-data
 6.Now use the below `loadCultureFiles` method to load the culture specific CLDR JSON data.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <script>
     loadCultureFiles('fr-CH');
@@ -148,7 +148,7 @@ To set the default culture and the currencyCode for all ASP.NET Core controls, y
 ### Setting Global Culture
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <script>
     ej.base.setCulture('ar');
@@ -160,7 +160,7 @@ To set the default culture and the currencyCode for all ASP.NET Core controls, y
 ### Setting Currency Code
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <script>
     ej.base.setCurrencyCode('QAR');
@@ -216,8 +216,8 @@ Custom number formatting and parsing are also supported by specifying the patter
 
 The `getNumberFormat` method which will return a function that formats given number based on the `NumberFormatOptions` specified.
 
- {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% tabs %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <div>Value:<span class='format text'>1234545.65</span></div>
 <div>Formatted Value:<span class='result text'></span></div>
@@ -239,7 +239,7 @@ The `getNumberFormat` method which will return a function that formats given num
  The `formatNumber` method which takes two arguments numeric value and `NumberFormatOptions` and returns the formatted string.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <div>Value:<span class='format text'>12345.65</span></div>
 <div>Formatted Value:<span class='result text'> </span></div>
@@ -263,7 +263,7 @@ The `getNumberFormat` method which will return a function that formats given num
 The `getNumberParser` method which will return a function that parses given string based on the `NumberFormatOptions` specified.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <div>FormattedValue:<span class='format text'>123567.45%</span></div>
 <div>ParsedOutput:<span class='result text'> </span></div>
@@ -284,7 +284,7 @@ The `getNumberParser` method which will return a function that parses given stri
 The `parseNumber` method which takes two arguments the string value, `NumberFormatOptions` and returns the numeric value.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <div>FormattedValue:<span class='format text'>$01,234,545.650</span></div>
 <div>ParsedOutput:<span class='result text'> </span></div>
@@ -401,7 +401,7 @@ To use the custom date and time formats we need to specify the date/time pattern
 **Custom format example**
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <div>DateValue:<span class='format text'>new Date('1/12/2014 10:20:33')</span></div>
 <div>Formatted Value:<span class='result text'> </span></div>
@@ -427,7 +427,7 @@ To use the custom date and time formats we need to specify the date/time pattern
 The `getDateFormat` method which will return a function that formats given date object based on the `DateFormatOptions` specified.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <div>DateValue:<span class='format text'>new Date('1/12/2014 10:20:33')</span></div>
 <div>Formatted Value:<span class='result text'> </span></div>
@@ -448,7 +448,7 @@ The `getDateFormat` method which will return a function that formats given date 
  The `formatDate` method which takes two arguments date object,`DateFormatOptions` and returns the formatted string.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <div>DateValue:<span class='format text'>new Date('1/12/2014 10:20:33')</span></div>
 <div>Formatted Value:<span class='result text'> </span></div>
@@ -473,7 +473,7 @@ The `getDateFormat` method which will return a function that formats given date 
 The `getDateParser` method which will return a function that parses given string based on the `DateFormatOptions` specified.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <div>Fromatted value:<span class='format text'>Friday, November 4, 2016 at 1:03:04 PM GMT+05:30</span></div>
 <div>parsed Value:<span class='result text'> </span></div>
@@ -494,7 +494,7 @@ The `getDateParser` method which will return a function that parses given string
 The `parseDate` method which takes two arguments  string value, `DateFormatOptions` and returns the date Object.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <div>Fromatted value:<span class='format text'>11/2016</span></div>
 <div>parsed Value:<span class='result text'> </span></div>
