@@ -13,7 +13,7 @@ documentation: ug
 
 # Box and whisker
 
-To render a box and whisker chart, use series[`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `BoxAndWhisker`. The field y requires n number of data or it should contains minimum of five values to plot a segment.
+To render a box and whisker chart, use series[`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `BoxAndWhisker`. The field y requires n number of data or it should contain minimum of five values to plot a segment.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,9 +44,9 @@ To render a box and whisker chart, use series[`type`](https://help.syncfusion.co
 
 ### boxPlotMode
 
-You can change the rendering mode of the Box and Whisker series using the `boxPlotMode` property. The default boxPlotMode is `exclusive`.The other boxPlotMode available are `inclusive` and `normal`.
+You can change the rendering mode of the Box and Whisker series using the `boxPlotMode` property. The default boxPlotMode is `exclusive`. The other boxPlotMode available are `inclusive` and `normal`.
 
-To render a box and whisker chart, use series[`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `BoxAndWhisker`. The field y requires n number of data or it should contains minimum of five values to plot a segment.
+To render a box and whisker chart, use series[`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `BoxAndWhisker`. The field y requires n number of data or it should contain minimum of five values to plot a segment.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -104,7 +104,7 @@ In Box and Whisker series `showMean` property is used to show the box and whiske
 
 ## Waterfall Chart
 
-Waterfall chart helps to understand the cumulative effect of the sequentially introduced positive and negative values. To render a Waterfall series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Waterfall`. [`intermediateSumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IntermediateSumIndexes) property of waterfall is used to represent the in between the sum values and [`sumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_SumIndexes) is used to represent the cumulative sum values.
+Waterfall chart helps to understand the cumulative effect of the sequentially introduced positive and negative values. To render a Waterfall series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `Waterfall`. [`intermediateSumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_IntermediateSumIndexes) property of waterfall is used to represent inbetween the sum values and [`sumIndexes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_SumIndexes) is used to represent the cumulative sum values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

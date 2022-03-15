@@ -11,16 +11,16 @@ documentation: ug
 
 # Overview
 
-The Chart control is used to visualize the data with user interactivity and provides customizing options to configure the data visually. It can bind data from  datasource such as array of JSON objects , OData web services or [`DataManager`](http://ej2.syncfusion.com/documentation/data/api-dataManager.html). All chart elements are rendered using Scalable Vector Graphics (SVG).
+The Chart control is used to visualize the data with user interactivity and provides customizing options to configure the data visually. It can bind data from  datasource such as array of JSON objects, OData web services or [`DataManager`](http://ej2.syncfusion.com/documentation/data/api-dataManager.html). All chart elements are rendered using Scalable Vector Graphics (SVG).
 
 ## Key Features
 
 * **Chart Types** - Supports 25 interactive chart types starting from line to financial chart.
 * [**Data sources**](https://ej2.syncfusion.com/aspnetmvc/Chart/LocalData#/material) - Bind the Chart component with an array of JSON objects or DataManager.
-* **Axis Types** - Supports multiple axes, and able to plot data with different data types such as numbers, datetime, logarithmic and string.
-* [**Multiple Pane**](https://ej2.syncfusion.com/aspnetmvc/Chart/Candle#/material) - Provides the options to split the chart area into multiple pane.
+* **Axis Types** - Supports multiple axes, and to plot data with different data types such as numbers, datetime, logarithmic and string.
+* [**Multiple Pane**](https://ej2.syncfusion.com/aspnetmvc/Chart/Candle#/material) - Provides the options to split the chart area into multiple panes.
 * [**Multilevel Labels**](https://ej2.syncfusion.com/aspnetmvc/Chart/MultiLevelLabels#/material) - Organizes or groups data points in the chart based on different categories.
-* [**Axis Crossing**](https://ej2.syncfusion.com/aspnetmvc/Chart/AxesCrossing#/material) - Provides the option to moves the origin of axis to any point within the chart area.
+* [**Axis Crossing**](https://ej2.syncfusion.com/aspnetmvc/Chart/AxesCrossing#/material) - Provides the option to move the origin of axis to any point within the chart area.
 * [**Smart Labels**](https://ej2.syncfusion.com/aspnetmvc/Chart/SmartAxisLabels#/material) - Avoids overlapping of axis labels by trimming, wrapping, rotating, hiding, or placing them on multiple rows.
 * [**Stripline**](https://ej2.syncfusion.com/aspnetmvc/Chart/StripLine#/material) - Provides options to highlight and annotate any region in chart.
 * [**DataLabel**](https://ej2.syncfusion.com/aspnetmvc/Chart/DataLabelTemplate#/material) - Datalabel annotates data points with label to improve the readability of data.

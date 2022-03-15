@@ -15,7 +15,7 @@ documentation: ug
 
 Chart can be zoomed in three ways.
 
-* Selection - By setting [`enableSelectionZooming`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html) property to true in `zoomSettings`, you can zoom the chart by using the rubber band selection.
+* Selection - By setting [`enableSelectionZooming`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html) property to true in `zoomSettings`, you can zoom the chart using the rubber band selection.
 * Mousewheel - By setting [`enableMouseWheelZooming`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html) property to true in `zoomSettings`, you can zoomin and zoomout the chart by scrolling the mouse wheel.
 * Pinch - By setting  [`enablePinchZooming`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html) property to true in `zoomSettings`, you can zoom the chart through pinch gesture in touch enabled devices.
 
@@ -114,7 +114,7 @@ By default, zoomin, zoomout, pan and reset buttons will be displayed for zo
 
 ## Enable pan
 
-Using [`enablePan`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html) property you can able to pan the zoomed chart without help of toolbar items.
+Using [`enablePan`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html) property, you can pan the zoomed chart without the help of toolbar items.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
