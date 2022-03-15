@@ -172,7 +172,7 @@ To render a power trendline, use trendline [`type`](https://help.syncfusion.com/
 
 A moving average trendline smoothen out fluctuations in data to show a pattern or trend more clearly.
 
-To render a moving average trendline, use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) as `MovingAverage`. `period` property defines the period to find the moving average.
+To render a moving average trendline, use trendline [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) as `MovingAverage`. The `period` property defines the period to find the moving average.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
