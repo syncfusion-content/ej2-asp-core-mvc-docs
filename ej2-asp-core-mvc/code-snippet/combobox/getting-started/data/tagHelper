@@ -1,2 +1,7 @@
-<ejs-combobox id="games" dataSource="@ViewBag.data" placeholder="Select a Country" popupHeight="220px">
+@{
+    ....
+    var data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };
+}
+
+<ejs-combobox id="games" dataSource="data" placeholder="Select a Country" popupHeight="220px">
 </ejs-combobox>
