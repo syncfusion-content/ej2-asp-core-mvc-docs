@@ -16,7 +16,7 @@ This section explains how to render the ASP.NET Core application in IE11 web bro
 
 [System requirements for ASP.NET Core components](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-## ASP.NET Core application.
+## ASP.NET Core application
 
 Find the following steps to add the polyfills in the ASP.NET Core application.
 

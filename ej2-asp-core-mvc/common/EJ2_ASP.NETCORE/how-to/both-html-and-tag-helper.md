@@ -32,7 +32,7 @@ Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Views/_ViewImports.cshtml" hl_lines="1" %}
+{% highlight c# tabtitle="~/Views/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -82,7 +82,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 
 ## Add ASP.NET Core Calendar control
 
-Now, add the Syncfusion ASP.NET Core Calendar HTML and tag helper in `~/Views/Home/Index.cshtml` page.
+Now, add the both HTML and Tag ASP.NET Core Calendar control in `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Views/Home/Index.cshtml" %}
