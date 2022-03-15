@@ -168,7 +168,7 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 
 **Solid Candles**
 
-[`enableSolidCandles`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_EnableSolidCandles) is used to enable/disable the solid candles. By default is set to be false. The fill color of the candle will be defined by its opening and closing values.
+[`enableSolidCandles`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_EnableSolidCandles) is used to enable/disable the solid candles. By default, it is set to be false. The fill color of the candle will be defined by its opening and closing values.
 
 [`bearFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BearFillColor) will be applied when the opening value is less than the closing value.
 [`bullFillColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_BullFillColor) will be applied when the opening value is greater than closing value.
