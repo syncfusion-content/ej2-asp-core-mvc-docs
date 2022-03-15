@@ -90,7 +90,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Breadcrumb component
+## Add ASP.NET Core Breadcrumb control
 
 Now, add the Syncfusion ASP.NET Core Breadcrumb tag helper in `~/Pages/Index.cshtml` page.
 
@@ -112,9 +112,9 @@ Now, add the Syncfusion ASP.NET Core Breadcrumb tag helper in `~/Pages/Index.csh
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-## Add Items to the Breadcrumb Component
+## Add Items to the Breadcrumb Control
 
-Use `items` property to bind items for Breadcrumb component.
+Use `items` property to bind items for Breadcrumb control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
