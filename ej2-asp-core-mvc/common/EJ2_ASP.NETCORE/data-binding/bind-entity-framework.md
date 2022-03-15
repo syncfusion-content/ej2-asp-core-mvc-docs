@@ -151,7 +151,6 @@ namespace LibraryManagement.Controllers
 
         public IActionResult Update([FromBody] ICRUDModel<Book> value)
         {
-            //do stuff
             var ord = value;
             Book val = _context.Books.Where(or => or.Id == ord.Value.Id).FirstOrDefault();
             val.Id = ord.Value.Id;
@@ -166,7 +165,6 @@ namespace LibraryManagement.Controllers
 
         public IActionResult Delete([FromBody] ICRUDModel<Book> value)
         {
-            //do stuff
             Book order = _context.Books.Where(c => c.Id == (int)value.key).FirstOrDefault();
             _context.Books.Remove(order);
             _context.SaveChanges();
