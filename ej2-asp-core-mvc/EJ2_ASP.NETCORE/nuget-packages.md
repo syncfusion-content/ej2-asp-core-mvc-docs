@@ -65,7 +65,7 @@ The below command will install the Syncfusion ASP.NET Core NuGet package in the 
 **Example:**
 
 {% tabs %}
-{% highlight c# tabtitle="console" %}
+{% highlight c# tabtitle="CONSOLE" %}
 
 Install-Package Syncfusion.EJ2.AspNet.Core
 
@@ -85,7 +85,7 @@ The below command will install the Syncfusion ASP.NET Core NuGet package in the 
 **Example:**
 
 {% tabs %}
-{% highlight c# tabtitle="console" %}
+{% highlight c# tabtitle="CONSOLE" %}
 
 Install-Package Syncfusion.EJ2.AspNet.Core -ProjectName SyncfusionDemoApp
 
@@ -95,7 +95,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -ProjectName SyncfusionDemoApp
 3.By default, the package will be installed with latest version. You can give the required version with the -Version term like below to install the Syncfusion ASP.NET Core NuGet packages in the appropriate version.
 
 {% tabs %}
-{% highlight c# tabtitle="console" %}
+{% highlight c# tabtitle="CONSOLE" %}
 
 Install-Package Syncfusion.EJ2.AspNet.Core -Version 19.4.0.47
 
@@ -164,7 +164,7 @@ The NuGet Package Manager UI in Visual Studio for Mac allows you to search, inst
 
 ![NuGet Packages Install](images/mac-install-nuGet.png)
 
-5. Using **Update** context menu from Visual Studio for Mac application, NuGet packages can be updated. Right-click on the Syncfusion ASP.NET Core Nuget Package in the ASP.NET Core application, and select **Update**.
+5.Using **Update** context menu from Visual Studio for Mac application, NuGet packages can be updated. Right-click on the Syncfusion ASP.NET Core Nuget Package in the ASP.NET Core application, and select **Update**.
 
 ![Nuget Packages Update](images/mac-package-update.png)
 

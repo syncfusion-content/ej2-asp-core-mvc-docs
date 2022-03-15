@@ -19,11 +19,13 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 2.Add the icon class with corresponding icon content from the [available icons](#available-icons). For example, the below code snippet represents the search icon class.
 
 {% tabs %}
-{% highlight c# tabtitle="CSS" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
-.e-search:before{
-    content:'\e993';
-}
+<style>
+    .e-search:before{
+        content:'\e993';
+    }
+</style>
 
 {% endhighlight %}
 {% endtabs %}
@@ -31,47 +33,37 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 3.Add `e-icons` and `e-search` class to the HTML element.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <span class="e-icons e-search"></span>
 
 {% endhighlight %}
 {% endtabs %}
+
 The below code snippet represents the complete example of icon usage.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
+<style>
+    .e-search:before{
+        content:'\e993';
+    }
+    .e-upload:before{
+        content: '\e725';
+    }
+    .e-font:before{
+        content: '\e34c';
+    }
+</style>
 
-    <!doctype html>
-    <html>
-        <head>
-            <title>Essential JS 2 </title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"  />
-            <link href="./node_modules/@syncfusion/ej2/material.css" rel="stylesheet" />
-            <style>
-                .e-search:before{
-                    content:'\e993';
-                }
-                .e-upload:before{
-                    content: '\e725';
-                }
-                .e-font:before{
-                    content: '\e34c';
-                }
-            </style>
-        </head>
-
-        <body>
-            <div class="icons">
-                <ul>
-                    <li><span class="e-icons e-search"></span></li>
-                    <li><span class="e-icons e-settings"></span></li>
-                    <li><span class="e-icons e-upload"></span></li>
-                    <li><span class="e-icons e-font"></span></li>
-                </ul>
-            </div>
-        </body>
-    </html>
+<div class="icons">
+    <ul>
+        <li><span class="e-icons e-search"></span></li>
+        <li><span class="e-icons e-settings"></span></li>
+        <li><span class="e-icons e-upload"></span></li>
+        <li><span class="e-icons e-font"></span></li>
+    </ul>
+</div>
 
 {% endhighlight %}
 {% endtabs %}
@@ -85,7 +77,7 @@ You can change the icon size by adding `e-small`, `e-medium` and `e-large` class
 * When icon size set to Large, the font size will be `24px`.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <p>Smaller icons</p>
 <span class="e-icons e-cut e-small"></span>
@@ -121,7 +113,7 @@ You can change the icon size by adding `e-small`, `e-medium` and `e-large` class
 `title` attribute is used to improve accessibility with screen readers and shows a tooltip on mouseover. The following example code displays tooltip text for appropriate icons.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <span class="e-icons e-upload-1" title="Upload"></span>
 <span class="e-icons e-download" title="Download"></span>
@@ -141,7 +133,7 @@ You can change the icon size by adding `e-small`, `e-medium` and `e-large` class
 You can customize color and size by overriding the `e-icons` class. The following example code demonstrates the custom font-size and color for icons.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <span class="e-icons e-align-top"></span>
 <span class="e-icons e-align-bottom"></span>
@@ -169,20 +161,20 @@ The Syncfusion ASP.NET core Toolbar control supports to render custom font icons
 The following code explains how to render `open-iconic` icons using `prefixIcon` property.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
-    <ejs-toolbar id="defaultToolbar">
-        <e-toolbar-items>
-            <e-toolbar-item prefixIcon="oi oi-list-rich"></e-toolbar-item>
-            <e-toolbar-item prefixIcon="oi oi-account-login"></e-toolbar-item>
-            <e-toolbar-item prefixIcon="oi oi-account-logout"></e-toolbar-item>
-            <e-toolbar-item prefixIcon="oi oi-action-redo"></e-toolbar-item>
-            <e-toolbar-item prefixIcon="oi oi-action-undo"></e-toolbar-item>
-            <e-toolbar-item prefixIcon="oi oi-clock"></e-toolbar-item>
-            <e-toolbar-item prefixIcon="oi oi-audio"></e-toolbar-item>
-            <e-toolbar-item prefixIcon="oi oi-bluetooth"></e-toolbar-item>
-        </e-toolbar-items>
-    </ejs-toolbar>
+<ejs-toolbar id="defaultToolbar">
+    <e-toolbar-items>
+        <e-toolbar-item prefixIcon="oi oi-list-rich"></e-toolbar-item>
+        <e-toolbar-item prefixIcon="oi oi-account-login"></e-toolbar-item>
+        <e-toolbar-item prefixIcon="oi oi-account-logout"></e-toolbar-item>
+        <e-toolbar-item prefixIcon="oi oi-action-redo"></e-toolbar-item>
+        <e-toolbar-item prefixIcon="oi oi-action-undo"></e-toolbar-item>
+        <e-toolbar-item prefixIcon="oi oi-clock"></e-toolbar-item>
+        <e-toolbar-item prefixIcon="oi oi-audio"></e-toolbar-item>
+        <e-toolbar-item prefixIcon="oi oi-bluetooth"></e-toolbar-item>
+    </e-toolbar-items>
+</ejs-toolbar>
 
 {% endhighlight %}
 {% endtabs %}
@@ -196,7 +188,7 @@ You can add the additional HTML attributes to the Syncfusion ASP.NET Core Button
 The following example shows the font size customization using `HtmlAttributes` directive.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 @{IDictionary<string, object> customAttribute = new Dictionary<string, object>()
     {
@@ -216,7 +208,7 @@ The built-in Syncfusion icons can be rendered directly in the HTML element by de
 The following code example explains the direct rendering of Syncfusion `download` icon in the span element.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <span class="e-icons e-download"></span>
 

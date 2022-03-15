@@ -186,7 +186,7 @@ Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Views/_ViewImports.cshtml" %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -198,13 +198,12 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight c# tabtitle="~/Views/Shared/_Layout.cshtml" hl_lines="4" %}
-    <head>
-        ...
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
-
-    </head>
+{% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
+<head>
+    ...
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+</head>
 {% endhighlight %}
 {% endtabs %}
 
@@ -212,12 +211,12 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight c# tabtitle="~/Views/Shared/_Layout.cshtml" hl_lines="4" %}
-    <head>
-        ...
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    </head>
+{% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
+<head>
+    ...
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
 {% endhighlight %}
 {% endtabs %}
 
@@ -225,12 +224,12 @@ In this getting started walk-through, the required scripts are referred using CD
 Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
 
 {% tabs %}
-{% highlight c# tabtitle="~/Views/Shared/_Layout.cshtml" hl_lines="4" %}
-    <body>
-        ...
-        <!-- Syncfusion Script Manager -->
-        <ejs-scripts></ejs-scripts>
-    </body>
+{% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
+<body>
+    ...
+    <!-- Syncfusion Script Manager -->
+    <ejs-scripts></ejs-scripts>
+</body>
 {% endhighlight %}
 {% endtabs %}
 
@@ -239,7 +238,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 In previous steps, we have successfully configured the Syncfusion ASP.NET Core package in the application. Now, we can add the grid control to to your **Index.cshtml** view page which is present under `Views/Home` folder.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Views/Home/Index.cshtml" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <ejs-grid id="Grid"></ejs-grid>
 
@@ -251,7 +250,7 @@ In previous steps, we have successfully configured the Syncfusion ASP.NET Core p
 To consume data from the WebApi Controller, we need to add the **DataManager** with **WebApiAdaptor**.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Views/Home/Index.cshtml" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <ejs-grid id="Grid">
 <e-data-manager url="/api/Orders" adaptor="WebApiAdaptor" crossdomain="true"></e-data-manager>
@@ -263,7 +262,7 @@ To consume data from the WebApi Controller, we need to add the **DataManager** w
 Grid columns can be defined by using the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) component. We are going to create columns using the following code.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Views/Home/Index.cshtml" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <ejs-grid id="Grid">
     <e-data-manager url="/api/Orders" adaptor="WebApiAdaptor" crossdomain="true"></e-data-manager>
@@ -331,7 +330,7 @@ We can enable editing in the grid control using the [GridEditSettings](https://h
 Here, we are using **Inline** edit mode and used Toolbar property to show toolbar items for editing.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Views/Home/Index.cshtml" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
     <e-data-manager url="/api/Orders" adaptor="WebApiAdaptor" crossdomain="true"></e-data-manager>
@@ -383,16 +382,16 @@ Clicking the **Update** toolbar button will update the record in the Orders tabl
 {% tabs %}
 {% highlight c# tabtitle="OrdersController.cs" %}
 
-    // PUT api/<OrdersController>
-    [HttpPut]
-    public void Put(long id, [FromBody] Order book)
-    {
-        Order _book = _context.Orders.Where(x => x.OrderId.Equals(book.OrderId)).FirstOrDefault();
-        _book.CustomerId = book.CustomerId;
-        _book.Freight = book.Freight;
-        _book.OrderDate = book.OrderDate;
-        _context.SaveChanges();
-    }
+// PUT api/<OrdersController>
+[HttpPut]
+public void Put(long id, [FromBody] Order book)
+{
+    Order _book = _context.Orders.Where(x => x.OrderId.Equals(book.OrderId)).FirstOrDefault();
+    _book.CustomerId = book.CustomerId;
+    _book.Freight = book.Freight;
+    _book.OrderDate = book.OrderDate;
+    _context.SaveChanges();
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -418,3 +417,6 @@ public void Delete(long id)
 
 {% endhighlight %}
 {% endtabs %}
+
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/data-binding/WebAPI%20Service%20Binding)
+

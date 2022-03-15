@@ -3,7 +3,7 @@ layout: post
 title: Animation in ##Platform_Name## Common control
 description: Learn here all about Animation in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Animation
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -42,27 +42,26 @@ The following list demonstrates the Syncfusion ASP.NET Core control documents th
 The `animate` method of `Animation` library can be used to animate the HTML elements. This method can also take additional `AnimationModel`. Refer the below code snippet to animate a multiple DOM element.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
      
-     <div id="fade"></div>
-     <div id="zoom"></div>
-
-    <script>
-        var animation = new ej.base.Animation({ duration: 5000 });
-        animation.animate('#fade', { name: 'FadeOut' });
-        animation.animate('#zoom', { name: 'ZoomOut' });
-    </script>
+<div id="fade"></div>
+<div id="zoom"></div>
+<script>
+    var animation = new ej.base.Animation({ duration: 5000 });
+    animation.animate('#fade', { name: 'FadeOut' });
+    animation.animate('#zoom', { name: 'ZoomOut' });
+</script>
     
-    <style>
-        #fade, #zoom {
-            background: #333333;
-            border: 1px solid #cecece;
-            box-sizing: border-box;
-            float: left;
-            height: 100px;
-            width: 100px;
-        }
-    </style>
+<style>
+    #fade, #zoom {
+        background: #333333;
+        border: 1px solid #cecece;
+        box-sizing: border-box;
+        float: left;
+        height: 100px;
+        width: 100px;
+    }
+</style>
 
 {% endhighlight %}
 {% endtabs %}

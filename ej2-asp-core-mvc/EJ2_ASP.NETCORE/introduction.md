@@ -174,7 +174,7 @@ border:0 !important;
 
 > Syncfusion does not collect any kind of information when our controls are used in customer applications.
 
-## See Also
+## See also
 
 * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
 
