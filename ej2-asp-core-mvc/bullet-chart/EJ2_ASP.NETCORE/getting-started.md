@@ -147,6 +147,7 @@ You can add a title using `title` property to the bullet chart to provide quick 
 {% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/bullet-chart/getting-started/title/tagHelper %}
 {% endhighlight %}
+{% highlight cshtml tabtitle="~/Index.cshtml.cs" %}
 public class DefaultBulletData
 {
     public double value;
@@ -210,6 +211,7 @@ You can use tooltip for the bullet chart by setting the `enable` property to tru
 {% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/bullet-chart/getting-started/tooltip/tagHelper %}
 {% endhighlight %}
+{% highlight cshtml tabtitle="~/Index.cshtml.cs" %}
 public class DefaultBulletData
 {
     public double value;
