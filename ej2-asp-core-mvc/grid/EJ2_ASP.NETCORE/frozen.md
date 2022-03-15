@@ -182,3 +182,6 @@ Validation rules for the 'EmployeeID' and 'Freight' columns can be added in the 
 {% endtabs %}
 {% endif %}
 
+
+
+> This is applicable when a frozen column is enabled and the edit mode is set as "**Normal**" in the Grid.
