@@ -71,7 +71,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 
 ## Range Padding
 
-Padding can be applied to the minimum and maximum extremes of the axis range by using the [`rangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property. Numeric axis supports following types of padding.
+Padding can be applied to the minimum and maximum extremes of the axis range by using the [`rangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property. Numeric axis supports the following types of padding.
 
 * None
 * Round
@@ -197,7 +197,7 @@ When the [`rangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 **Numeric - Auto**
 
-When the [`rangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) is set to `Auto`,horizontal numeric axis takes None as padding calculation, while the vertical numeric axis takes Normal as padding calculation.
+When the [`rangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) is set to `Auto`, horizontal numeric axis takes None as padding calculation, while the vertical numeric axis takes Normal as padding calculation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -276,13 +276,13 @@ The following table describes the result of applying some commonly used label fo
 <td>1000</td>
 <td>n2</td>
 <td>1000.00</td>
-<td>The Number is rounded to 2 decimal place</td>
+<td>The Number is rounded to 2 decimal places</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>n3</td>
 <td>1000.000</td>
-<td>The Number is rounded to 3 decimal place</td>
+<td>The Number is rounded to 3 decimal places</td>
 </tr>
 <tr>
 <td>0.01</td>
@@ -294,13 +294,13 @@ The following table describes the result of applying some commonly used label fo
 <td>0.01</td>
 <td>p2</td>
 <td>1.00%</td>
-<td>The Number is converted to percentage with 2 decimal place</td>
+<td>The Number is converted to percentage with 2 decimal places</td>
 </tr>
 <tr>
 <td>0.01</td>
 <td>p3</td>
 <td>1.000%</td>
-<td>The Number is converted to percentage with 3 decimal place</td>
+<td>The Number is converted to percentage with 3 decimal places</td>
 </tr>
 <tr>
 <td>1000</td>
@@ -312,7 +312,7 @@ The following table describes the result of applying some commonly used label fo
 <td>1000</td>
 <td>c2</td>
 <td>$1000.00</td>
-<td>The Currency symbol is appended to number and number is rounded to 2 decimal place</td>
+<td>The Currency symbol is appended to number and number is rounded to 2 decimal places</td>
 </tr>
 </table>
 
@@ -347,7 +347,7 @@ To separate groups of thousands, use [`useGroupingSeparator`](https://help.syncf
 
 ## Custom Label Format
 
-Axis also supports custom label format using placeholder like {value}°C, in which the value represent the axis label e.g 20°C.
+Axis also supports custom label format using placeholder like {value}°C, in which the value represents the axis label e.g 20°C.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

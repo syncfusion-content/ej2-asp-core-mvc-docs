@@ -3,7 +3,7 @@ layout: post
 title: Right To Left in ##Platform_Name## control
 description: Learn here all about Right To Left in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Right To Left
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -17,7 +17,7 @@ The right-to-left (RTL) support can be enabled for Syncfusion ASP.NET Core contr
 You can enable right to left (RTL) for all Syncfusion controls used in the application by setting `enableRtl` property to `true` in the script tag. Add the below code snippet in the **_Layout.cshtml** file inside **body** tag.
 
 {% tabs %}
-{% highlight c# tabtitle="_Layout.cshtml" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 <script>
     // Enables Right to left alignment for all controls
     ej.base.enableRtl(true);
@@ -34,7 +34,7 @@ To control a control’s direction individually you can directly set the control
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 <ejs-schedule id="schedule" height="550px" enableRtl="true"></ejs-schedule>
 {% endhighlight %}{% endtabs %}
 

@@ -129,7 +129,7 @@ You can customize the `width`, `color` and `dashArray` of the minor and maj
 
 ## Multiple Axis
 
-In addition to primary X and Y axis, we can add n number of axis to the chart. Series can be associated with this axis, by mapping with axis's unique name.
+In addition to primary X and Y axis, add n number of axis to the chart. Series can be associated with this axis, by mapping with axis's unique name.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

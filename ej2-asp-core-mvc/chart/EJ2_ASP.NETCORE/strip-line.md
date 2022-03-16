@@ -164,10 +164,10 @@ You can create dash array stripline by using `dashArray` property. The Stripline
 
 ## Recurrence Stripline
 
-The strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
+The strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. The following properties are used to configure this feature.
 
-* `isRepeat`       - It is used for enable / disable the recurrence strip line.
-* `repeatEvery`    - It is used for mention the stripline interval.
+* `isRepeat`       - It is used to enable or disable the recurrence strip line.
+* `repeatEvery`    - It is used to mention the stripline interval.
 * `repeatUntil`    - It specifies the end value at which point strip line has to stop repeating.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -237,7 +237,7 @@ The `sizeType` property refers the size of the stripline. They are,
 
 You can create stripline in a particular region with respect to segment. You can enable the segment stripline using `isSegmented` property. The start and end value of this type of stripline can be defined using `segmentStart` and `segmentEnd` properties.
 
-* `isSegmented`     - It is used for enable the segment stripline.
+* `isSegmented`     - Used to enable the segment stripline.
 * `segmentStart`    - Used to change the segment start value. Value correspond to associated axis.
 * `segmentEnd`      - Used to change the segment end value. Value correspond to associated axis.
 * `segmentAxisName` - Used to specify the name of the associated axis.

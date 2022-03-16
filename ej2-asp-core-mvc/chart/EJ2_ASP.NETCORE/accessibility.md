@@ -11,9 +11,9 @@ documentation: ug
 
 # Accessibility
 
-Chart provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provides information about elements in a document for assistive technology.
+Chart provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provide information about elements in a document for assistive technology.
 
-**Aria-label:**   Attribute provides the text label with some default description for below elements in chart
+**Aria-label:** Attribute provides the text label with some default description for the following elements in chart.
 
 <!-- markdownlint-disable MD033 -->
 <table>

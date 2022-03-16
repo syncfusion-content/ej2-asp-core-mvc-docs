@@ -3,7 +3,7 @@ layout: post
 title: State Persistence in ##Platform_Name## control
 description: Learn here all about State Persistence in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: State Persistence
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -18,7 +18,7 @@ enabled persistence to grid control in the following code.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/common/persistence/tagHelper %}
 {% endhighlight %}{% endtabs %}
 

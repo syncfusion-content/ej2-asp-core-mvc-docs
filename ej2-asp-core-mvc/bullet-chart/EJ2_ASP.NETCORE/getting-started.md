@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Bullet Chart Component
-description: Checkout and learn about getting started with ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Bullet Chart Control
+description: Checkout and learn about getting started with ##Platform_Name## Bullet Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -11,101 +11,117 @@ documentation: ug
 
 # Getting Started with ASP.NET Core
 
-Starting with v16.2.0.x, if you refer Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+This section briefly explains about how to include [ASP.NET Core Bullet Chart](https://www.syncfusion.com/aspnet-core-ui-controls/bullet-chart) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
-To get started with ASP.NET Core application, ensure the following software to be installed on the machine.
-* Visual Studio 2017
-* DotNet Core 2.0
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-## Setup ASP.NET Core application with Essential JS 2 for ASP.NET Core
+## Create ASP.NET Core web application with Razor pages
 
-The following steps to create ASP.NET Core Application.
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-**Step 1:** Create ASP.NET Core Web Application with default template project in Visual Studio 2017.
+* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
 
-![project selection](./images/default-template.png)
+## Install ASP.NET Core package in the application
 
-**Step 2:** Once your project is created, add Syncfusion EJ2 package into your application by using Nugget Package Manager.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-Open the `nuGet` package manager.
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-![nugget package install](./images/solution-explorer-core.png)
+## Add Syncfusion ASP.NET Core Tag Helper
 
-Install the **Syncfusion.EJ2** package to the application.
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
-![package install](./images/nuget-demo.png)
+{% tabs %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
-After Installation is completed, this will be included in the project. You can refer it from the Project Assembly Reference.
-
-> Install **NewtonSoft.JSON** as dependency since **Syncfusion.EJ2** is dependent on NewtonSoft.JSON package.
-
-**Step 3:** Open the **Views/_ViewImports.cshtml** to import Syncfusion.EJ2 package.
-
-```cs
 @addTagHelper *, Syncfusion.EJ2
-```
 
-**Step 4:** Add client side resource through [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **Views/Shared/_Layout.cshtml.**
+{% endhighlight %}
+{% endtabs %}
 
-```html
+## Add style sheet
+
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <head>
-@* Syncfusion Essential JS 2 Styles *@
-<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
-
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 </head>
-```
 
-**Step 5:** Adding Script Manager in layout page **Views/Shared/_Layout.cshtml.**
+{% endhighlight %}
+{% endtabs %}
 
-```cs
+## Add script reference
+
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Register Syncfusion Script Manager
+
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <body>
-    @RenderBody()
-    @RenderSection("Scripts", required: false)
-<ejs-scripts></ejs-scripts>
+    ....
+    ....
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts></ejs-scripts>
 </body>
-```
 
-## Adding component to the Application
+{% endhighlight %}
+{% endtabs %}
 
-* Now, open your view page to render our Syncfusion components.
+## Add ASP.NET Core Bullet Chart control
 
-```cs
+Now, add the Syncfusion ASP.NET Core Bullet Chart tag helper in `~/Pages/Index.cshtml` page.
+
+{% tabs %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
+
 <ejs-bulletchart id="container"></ejs-bulletchart>
-```
+
+{% endhighlight %}
+{% endtabs %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Bullet Chart control will be rendered in the default web browser.
+
+![ASP.NET Core Bullet Chart Control](images/bullet-chart-control.png)
 
 ## BulletChart With Data
-
-This section explains how to plot local data to the Bullet Chart.
-
-```javascript
-<script type="text/javascript" >
-        window.onLoad = function (args) {
-            args.bulletChart.dataSource = data;
-        }
-        var data = [
-       { value: 100, target: 80 },
-       { value: 200, target: 180 },
-       { value: 300, target: 280 },
-       { value: 400, target: 380 },
-       { value: 500, target: 480 },
-        ];
-</script>
-```
 
 Now, assign the data to `dataSource` property. **value** and **target** values should be mapped with `valueField` and `targetField` respectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/bullet-chart/getting-started/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/bullet-chart/getting-started/default/default.cs %}
+{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+public class DefaultBulletData
+{
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -121,8 +137,6 @@ Now, assign the data to `dataSource` property. **value** and **target** values s
 {% endtabs %}
 {% endif %}
 
-
-
 ## Add Bullet Chart Title
 
 You can add a title using `title` property to the bullet chart to provide quick information to the user about the data plotted in the bullet chart.
@@ -130,11 +144,15 @@ You can add a title using `title` property to the bullet chart to provide quick 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/bullet-chart/getting-started/title/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/bullet-chart/getting-started/title/title.cs %}
+{% highlight cshtml tabtitle="~/Index.cshtml.cs" %}
+public class DefaultBulletData
+{
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -150,7 +168,7 @@ You can add a title using `title` property to the bullet chart to provide quick 
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core Bullet Chart with Title](images/bullet-chart-with-title.png)
 
 ## Ranges
 
@@ -159,11 +177,15 @@ You can add a range using `e-bullet-range` of the `e-bullet-range-collection`.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/bullet-chart/getting-started/ranges/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Ranges.cs" %}
-{% include code-snippet/bullet-chart/getting-started/ranges/ranges.cs %}
+{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+public class DefaultBulletData
+{
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -179,8 +201,6 @@ You can add a range using `e-bullet-range` of the `e-bullet-range-collection`.
 {% endtabs %}
 {% endif %}
 
-
-
 ## Tooltip
 
 You can use tooltip for the bullet chart by setting the `enable` property to true in `e-bulletchart-tooltipsettings`.
@@ -188,11 +208,15 @@ You can use tooltip for the bullet chart by setting the `enable` property to tru
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/bullet-chart/getting-started/tooltip/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% include code-snippet/bullet-chart/getting-started/tooltip/tooltip.cs %}
+{% highlight cshtml tabtitle="~/Index.cshtml.cs" %}
+public class DefaultBulletData
+{
+    public double value;
+    public double target;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -208,3 +232,11 @@ You can use tooltip for the bullet chart by setting the `enable` property to tru
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core Bullet Chart with Tooltip](images/bullet-chart-with-tooltip.png)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/BulletChart/BulletChartSample).
+
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

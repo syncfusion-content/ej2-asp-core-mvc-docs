@@ -44,7 +44,7 @@ You can add annotations to the chart by using the <code>annotations</code> optio
 
 ## Region
 
-Annotations can be placed either with respect to `Series` or `Chart`. by default, it will placed with respect to `Chart`.
+Annotations can be placed either with respect to `Series` or `Chart`. By default, it will be placed with respect to `Chart`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,7 +73,7 @@ Annotations can be placed either with respect to `Series` or `Chart`. by default
 
 ## Co-ordinate Units
 
-Specified the coordinates units of the annotation either `Pixel` or `Point`.
+Specified the coordinates units of the annotation either with `Pixel` or `Point`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -131,7 +131,7 @@ Annotation provides `verticalAlignment` and `horizontalAlignment`. The `vertical
 
 ## Adding y-axis sub title through on annotation
 
-By setting text div in the `content` option of annotation object you can add sub title to chart y-axis. Specified the `coordinate` value as `pixel` and customize x and y location of the text.
+By setting text div in the `content` option of annotation object, you can add sub title to chart y-axis. Specify the `coordinate` value as `pixel` and customize x and y location of the text.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

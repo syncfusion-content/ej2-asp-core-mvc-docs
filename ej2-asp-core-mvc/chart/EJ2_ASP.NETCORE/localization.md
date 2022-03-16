@@ -11,7 +11,7 @@ documentation: ug
 
 # Localization
 
-Localization library allows to localize the default text content of Chart. In Chart component, it has the static text on some features(like zooming toolbars) and this can be changed to any other culture(Arabic, Deutsch, French, etc) by defining the locale value and translation object.
+Localization library allows to localize the default text content of Chart. In Chart component, it has the static text on some features (like zooming toolbars) and this can be changed to any other culture (Arabic, Deutsch, French, etc) by defining the locale value and translation object.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -46,7 +46,7 @@ Localization library allows to localize the default text content of Chart. In Ch
 </tr>
 </table>
 
-To load translation object in an application use load function of L10n class.
+To load translation object in an application, use load function of L10n class.
 
 For more information about localization, refer this [`localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization/).
 
