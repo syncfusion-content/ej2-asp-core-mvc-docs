@@ -34,7 +34,7 @@ Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core Breadcrumb tag helper in `~/Pages/Index.csh
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/breadcrumb/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -119,7 +119,7 @@ Use `items` property to bind items for Breadcrumb control.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/breadcrumb/getting-started/items/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -145,7 +145,7 @@ This feature enables or disables the item navigation. By default, the navigation
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/breadcrumb/getting-started/enable-disable/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -164,3 +164,10 @@ This feature enables or disables the item navigation. By default, the navigation
 
 
 ![Breadcrumb Sample](./images/enable-disable.png)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Breadcrumb/BreadcrumbSample).
+
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

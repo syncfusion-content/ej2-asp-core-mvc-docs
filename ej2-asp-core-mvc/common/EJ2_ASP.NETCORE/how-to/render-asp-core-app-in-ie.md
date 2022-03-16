@@ -25,13 +25,13 @@ Find the following steps to add the polyfills in the ASP.NET Core application.
 2.Add the polyfill script reference in the `<head>` element of the `~/Pages/Shared/_Layout.cshtml` page.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Pages/Shared/_Layout.cshtml" hl_lines="4" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
 
-    <head>
-        ...
-        <!-- Minified version of `es6-promise` below. -->
-        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-    </head>
+<head>
+    ...
+    <!-- Minified version of `es6-promise` below. -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+</head>
 
 {% endhighlight %}
 {% endtabs %}
@@ -42,6 +42,6 @@ Find the following steps to add the polyfills in the ASP.NET Core application.
 
 ![Syncfusion control rendering on IE11](images/ie-output.png)
 
-## See Also
+## See also
 
 * [ASP.NET Core supported platforms](https://docs.microsoft.com/en-us/aspnet/core/blazor/supported-platforms)

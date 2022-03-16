@@ -34,7 +34,7 @@ Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -148,4 +148,11 @@ Button Group can be aligned vertically by using the built-in CSS class `e-vertic
 
 ![ASP.NET Core Button Group Control in Vertical Position](images/button-group-vertical.png)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ButtonGroup/ButtonGroupSample).
+
 > ButtonGroup does not support SplitButton control nesting in a vertical orientation.
+
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

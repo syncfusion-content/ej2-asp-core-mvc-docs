@@ -34,7 +34,7 @@ Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core Calendar tag helper in `~/Pages/Index.cshtm
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/calendar/getting-started/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -144,8 +144,12 @@ Here the Calendar allows you to select a date within the range from 5th to 27th 
 
 ![Setting Minimum and Maximum Date in ASP.NET Core Calendar](images/calendar-with-min-and-max-dates.png)
 
-## See Also
+[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Calendar).
 
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [Select multiple dates in the Calendar](./multi-select)
 * [Render Calendar with specific culture](./globalization)
 * [How to change the initial view of the Calendar](./calendar-views)

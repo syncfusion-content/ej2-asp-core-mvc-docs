@@ -34,7 +34,7 @@ Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core Button tag helper in `~/Pages/Index.cshtml`
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/button/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -125,7 +125,7 @@ To change the default Button to flat Button, set the [`cssClass`](https://help.s
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/button/getting-started/flat-btn/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -142,4 +142,9 @@ To change the default Button to flat Button, set the [`cssClass`](https://help.s
 {% endtabs %}
 {% endif %}
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Button/ButtonSample).
 
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

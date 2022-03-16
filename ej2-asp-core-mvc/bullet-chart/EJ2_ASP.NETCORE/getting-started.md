@@ -34,7 +34,7 @@ Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -116,7 +116,7 @@ Now, assign the data to `dataSource` property. **value** and **target** values s
 {% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/bullet-chart/getting-started/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
+{% highlight c# tabtitle="~/Index.cshtml.cs" %}
 public class DefaultBulletData
 {
     public double value;
@@ -180,7 +180,7 @@ You can add a range using `e-bullet-range` of the `e-bullet-range-collection`.
 {% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/bullet-chart/getting-started/ranges/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Ranges.cs" %}
+{% highlight c# tabtitle="~/Index.cshtml.cs" %}
 public class DefaultBulletData
 {
     public double value;
@@ -233,3 +233,10 @@ public class DefaultBulletData
 {% endif %}
 
 ![ASP.NET Core Bullet Chart with Tooltip](images/bullet-chart-with-tooltip.png)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/BulletChart/BulletChartSample).
+
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
