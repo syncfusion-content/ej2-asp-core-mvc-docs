@@ -44,7 +44,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 ## DateTimeCategory Axis
 
-Date-time category axis is used to display the date-time values with non-linear intervals. For example, the business days alone have been depicted in a week here.
+Date-time category axis is used to display the date-time values with non-linear intervals.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -308,7 +308,7 @@ The following table describes the result of applying some common date time forma
 
 ## Custom Label Format
 
-Axis also supports custom label format using placeholder like {value}°C, in which the value represent the axis label e.g 20°C.
+Axis also supports custom label format using placeholder like {value}°C, in which the value represents the axis label e.g 20°C.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

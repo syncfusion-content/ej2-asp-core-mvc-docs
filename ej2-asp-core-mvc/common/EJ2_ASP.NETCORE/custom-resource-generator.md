@@ -3,7 +3,7 @@ layout: post
 title: Custom Resource Generator in ##Platform_Name## control
 description: Learn here all about Custom Resource Generator in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Custom Resource Generator
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

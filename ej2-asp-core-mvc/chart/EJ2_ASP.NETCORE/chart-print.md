@@ -13,7 +13,7 @@ documentation: ug
 
 ## Print
 
-The rendered chart can be printed directly from the browser by calling the public method print. You can pass array of ID of elements or element to this method. By default it take element of the chart.
+The rendered chart can be printed directly from the browser by calling the public method print. You can pass array of ID of elements or element to this method. By default, it takes element of the chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,7 +79,7 @@ The optional parameters for this method are,
 <!-- markdownlint-disable MD036 -->
 **Export with optional parameters**
 <!-- markdownlint-disable MD036 -->
-The rendered chart can be exported to specific orientation, width and height by passing it as optional parameters in the export method of chart
+The rendered chart can be exported to specific orientation, width and height by passing it as optional parameters in the export method of chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

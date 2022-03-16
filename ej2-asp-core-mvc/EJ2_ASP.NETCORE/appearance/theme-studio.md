@@ -71,11 +71,11 @@ You can directly use the customized CSS file in the web application.
 **Step 2:** Refer the customized CSS file reference in the `index.html` or `shared/_layout.cshtml` main page head section.
 
 {% tabs %}
-{% highlight c# tabtitle="_Layout.cshtml" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-    <head>
-        <link href="styles/{file-name}.css" rel="stylesheet"/>
-    </head>
+<head>
+    <link href="styles/{file-name}.css" rel="stylesheet"/>
+</head>
 
 {% endhighlight %}
 {% endtabs %}

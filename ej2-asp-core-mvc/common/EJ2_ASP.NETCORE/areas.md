@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with ##Platform_Name## Control
 description: Checkout and learn about getting started with ##Platform_Name## control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Areas
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -51,7 +51,7 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 7.Open the `_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -65,15 +65,14 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 {% tabs %}
 {% highlight c# tabtitle="Startup.cs" %}
 
-    app.UseEndpoints(endpoints =>
-    {
-        endpoints.MapControllerRoute(
-            name : "MyAreas",
-            pattern : "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-        );
-
-        ---
-    });
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name : "MyAreas",
+        pattern : "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+    ...
+});
 
 {% endhighlight %}
 {% endtabs %}
@@ -83,16 +82,14 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 {% tabs %}
 {% highlight c# tabtitle="_Layout.cshtml" %}
 
-    <head>
-        ....
-        ....
+<head>
+    ...
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
 
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    </head>
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
 
 {% endhighlight %}
 {% endtabs %}
@@ -100,14 +97,13 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 10.Add the Syncfusion script manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
-{% highlight c# tabtitle="_Layout.cshtml" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-    <body>
-        ....
-        ....
-        <!-- Syncfusion script manager -->
-        <ejs-scripts></ejs-scripts>
-    </body>
+<body>
+    ...
+    <!-- Syncfusion script manager -->
+    <ejs-scripts></ejs-scripts>
+</body>
 
 {% endhighlight %}
 {% endtabs %}
@@ -117,11 +113,11 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 11.Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` View file  in the `~/Areas/Products/Views/` folder.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
-    <div>
-        <ejs-calendar id="calendar"></ejs-calendar>
-    </div>
+<div>
+    <ejs-calendar id="calendar"></ejs-calendar>
+</div>
 
 {% endhighlight %}
 {% endtabs %}
@@ -151,7 +147,7 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 5.Open the `_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -163,18 +159,16 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 6.Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Pages/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
-{% highlight c# tabtitle="_Layout.cshtml" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-    <head>
-        ....
-        ....
+<head>
+    ...
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
 
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    </head>
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
 
 {% endhighlight %}
 {% endtabs %}
@@ -182,14 +176,13 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 7.Add the Syncfusion script manager at the end of `<body>` element in the `~/Pages/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
-{% highlight c# tabtitle="_Layout.cshtml" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-    <body>
-        ....
-        ....
-        <!-- Syncfusion script manager -->
-        <ejs-scripts></ejs-scripts>
-    </body>
+<body>
+    ...
+    <!-- Syncfusion script manager -->
+    <ejs-scripts></ejs-scripts>
+</body>
 
 {% endhighlight %}
 {% endtabs %}
@@ -199,11 +192,11 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 8.Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` Razor Page file in the `~/Areas/Products/Pages/` folder.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
-    <div>
-        <ejs-calendar id="calendar"></ejs-calendar>
-    </div>
+<div>
+    <ejs-calendar id="calendar"></ejs-calendar>
+</div>
 
 {% endhighlight %}
 {% endtabs %}

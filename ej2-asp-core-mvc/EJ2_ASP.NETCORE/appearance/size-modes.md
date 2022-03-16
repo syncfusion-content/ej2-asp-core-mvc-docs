@@ -14,22 +14,22 @@ Syncfusion ASP.NET Core controls support touch (bigger theme) and normal size mo
 
 ## Size mode for application
 
-You can enable touch mode (bigger theme) for an application by adding `.e-bigger` class in the `~/wwwroot/css/site.css` file and assign to the `body` element in the `Pages/Shared/_Layout.cshtml` page.
+You can enable touch mode (bigger theme) for an application by adding `.e-bigger` class in the `~/wwwroot/css/site.css` file and assign to the `body` element in the `~/Pages/Shared/_Layout.cshtml` page.
 
 {% tabs %}
-{% highlight c# tabtitle="CSS" %}
+{% highlight c# tabtitle="~/site.css" %}
 
-    .e-bigger {
-      font-size: x-large;
-    }
+.e-bigger {
+    font-size: x-large;
+}
 
-    {% endhighlight %}
-    {% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
-    {% tabs %}
-    {% highlight c# tabtitle="CSHTML" %}
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-    <body class="e-bigger">...</body>
+<body class="e-bigger">...</body>
 
 {% endhighlight %}
 {% endtabs %}
@@ -39,27 +39,25 @@ You can enable touch mode (bigger theme) for an application by adding `.e-bigger
 You can enable touch mode (bigger theme) for ASP.NET Core controls by adding `.e-bigger` class and assign to the `div` which contains the control.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
-    <div class="e-bigger">
-        <ejs-calendar id="calendar"></ejs-calendar>
-    </div>
+<div class="e-bigger">
+    <ejs-calendar id="calendar"></ejs-calendar>
+</div>
 
-    <div class="e-bigger">
+<div class="e-bigger">
+    <ejs-button id="element" content="Button"></ejs-button>
+</div>
 
-        <ejs-button id="element" content="Button"></ejs-button>
+<div class="e-bigger">
+    <ejs-checkbox id="default" label="Checked" checked="true"></ejs-checkbox>
+</div>
 
-    </div>
-
-    <div class="e-bigger">
-        <ejs-checkbox id="default" label="Checked" checked="true"></ejs-checkbox>
-    </div>
-
-    <style>
+<style>
     .e-bigger {
      font-size: x-large;
     }
-    </style>
+</style>
 
 {% endhighlight %}
 {% endtabs %}
@@ -73,47 +71,47 @@ Follow the below steps to change the size mode for an application at runtime.
 1.Add the `e-bigger` CSS class in the `~/wwwroot/css/site.css` file.
 
 {% tabs %}
-{% highlight c# tabtitle="CSS" %}
+{% highlight c# tabtitle="~/site.css" %}
 
-    .e-bigger {
-      font-size: x-large;
-    }
+.e-bigger {
+    font-size: x-large;
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-2.Refer to the following code for adding control and the JavaScript click action inside the script tag of `Pages/index.cshtml` file to switch between touch and mouse mode using `e-bigger` class.
+2.Refer to the following code for adding control and the JavaScript click action inside the script tag of `~/Pages/Index.cshtml` file to switch between touch and mouse mode using `e-bigger` class.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
-    <p> Size-modes for application </p>
-    <p> This demo shows the Size-Modes applied for an entire application </p>
+<p> Size-modes for application </p>
+<p> This demo shows the Size-Modes applied for an entire application </p>
 
-    <button id="touch">Touch Mode</button>
-    <button id="mouse">Mouse Mode</button>
+<button id="touch">Touch Mode</button>
+<button id="mouse">Mouse Mode</button>
 
-    <div>
-    <ejs-calendar id="calendar"></ejs-calendar>
-    </div>
+<div>
+<ejs-calendar id="calendar"></ejs-calendar>
+</div>
 
-    <div>
-    <ejs-button id="element" content="Button"></ejs-button>
-    </div>
+<div>
+<ejs-button id="element" content="Button"></ejs-button>
+</div>
 
-    <div>
+<div>
     <ejs-checkbox id="default" label="Checked" checked="true"></ejs-checkbox>
-    </div>
+</div>
 
-    <script>
-        document.getElementById("touch").addEventListener("click", function () {
-            document.body.classList.add('e-bigger');
-        });
+<script>
+    document.getElementById("touch").addEventListener("click", function () {
+        document.body.classList.add('e-bigger');
+    });
 
-        document.getElementById("mouse").addEventListener("click", function () {
-            document.body.classList.remove('e-bigger');
-        });
-    </script>
+    document.getElementById("mouse").addEventListener("click", function () {
+        document.body.classList.remove('e-bigger');
+    });
+</script>
 
 {% endhighlight %}
 {% endtabs %}
@@ -127,33 +125,33 @@ You can change the size mode of a control between touch and normal (mouse) mode 
 Refer to the following code, in which the `e-bigger` class is added for enabling touch mode using the for loop in ASP.NET core application.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
-    <p> Size-modes for application </p>
-    <p> This demo shows the Size-Modes applied for an entire application </p>
+<p> Size-modes for application </p>
+<p> This demo shows the Size-Modes applied for an entire application </p>
 
-    <button id="touch">Touch Mode</button>
-    <button id="mouse">Mouse Mode</button>
+<button id="touch">Touch Mode</button>
+<button id="mouse">Mouse Mode</button>
 
-    <div class="control">
+<div class="control">
     <ejs-calendar id="calendar"></ejs-calendar>
-    </div>
+</div>
 
-    <div class="control">
+<div class="control">
     <ejs-button id="element" content="Button"></ejs-button>
-    </div>
+</div>
 
-    <div class="control">
+<div class="control">
     <ejs-checkbox id="default" label="Checked" checked="true"></ejs-checkbox>
-    </div>
+</div>
 
-    <style>
+<style>
     .e-bigger {
         font-size: x-large;
     }
-    </style>
+</style>
 
-    <script>
+<script>
     document.getElementById("touch").addEventListener("click", function () {
         var controls = document.querySelectorAll('.control');
         for (var index = 0; index < controls.length; index++) {
@@ -167,7 +165,7 @@ Refer to the following code, in which the `e-bigger` class is added for enabling
             controls[index].classList.remove('e-bigger');
         }
     });
-    </script>
+</script>
 
 {% endhighlight %}
 {% endtabs %}

@@ -162,7 +162,7 @@ You can align the legend as `center`, `far` or `near` to the chart using [`align
 
 ## Customization
 
-To change the legend icon shape, you can use [`legendShape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_LegendShape) property in the [`series`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html). By default legend icon shape is `seriesType`.
+To change the legend icon shape, you can use [`legendShape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_LegendShape) property in the [`series`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html). By default, legend icon shape is `seriesType`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -278,7 +278,7 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 
 ## Series Selection on Legend
 
-By default, legend click enables you to collapse the series visibility. On other hand, if you need to select a series through legend click, disable the [`toggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility).
+By default, legend click enables to collapse the series visibility. On other hand, if you need to select a series through legend click, disable the [`toggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

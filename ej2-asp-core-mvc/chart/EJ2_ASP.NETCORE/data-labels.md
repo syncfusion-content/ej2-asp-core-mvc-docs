@@ -129,7 +129,7 @@ Text from the data source can be mapped using `name` property.
 
 ## Margin
 
-`margin` for data label can be applied to using `left`, `right`, `bottom` and `top` properties.
+The `margin` for data label can be applied to use `left`, `right`, `bottom` and `top` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -158,7 +158,7 @@ Text from the data source can be mapped using `name` property.
 
 ## Customization
 
-`stroke` and `border` of data label can be customized using `fill` and `border` properties. Rounded corners can be customized using `rx` and `ry` properties.
+The `stroke` and `border` of data label can be customized using `fill` and `border` properties. Rounded corners can be customized using `rx` and `ry` properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -189,7 +189,7 @@ Text from the data source can be mapped using `name` property.
 
 ## Customizing Specific Point
 
-You can also customize the specific marker and label using [`pointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) and [`textRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TextRender) event. `pointRender` event allows you to change the shape, color and border for a point, whereas the `textRender` event allows you to change the text for the point.
+You can also customize the specific marker and label using [`pointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) and [`textRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TextRender) event. The `pointRender` event allows to change the shape, color and border for a point, whereas the `textRender` event allows to change the text for the point.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

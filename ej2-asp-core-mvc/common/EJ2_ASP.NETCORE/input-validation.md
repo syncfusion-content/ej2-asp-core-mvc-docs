@@ -3,7 +3,7 @@ layout: post
 title: Input Form Validation in ##Platform_Name## control
 description: Learn here all about Input Form Validation in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Input Form Validation
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -17,9 +17,9 @@ The Syncfusion ASP.NET Core UI input and editor controls can be validated by usi
 1.Add the `Form` component in the **Index.cshtml** page. Also, declare the Syncfusion ASP.NET Core [TextBox](../textbox/getting-started) control inside the `Form` component.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
-    <form id="form-element">
+<form id="form-element">
     <div class="form-group">
         <label for="first-name">First Name:</label>
         <ejs-textbox id="firstname" name="FirstName" placeholder="First Name" width="50%"></ejs-textbox>
@@ -29,7 +29,7 @@ The Syncfusion ASP.NET Core UI input and editor controls can be validated by usi
         <ejs-textbox id="lastname" name="LastName" placeholder="Last Name"  width="50%"></ejs-textbox>
     </div>
     <ejs-button id="submit" content="Submit"></ejs-button>
-    </form>
+</form>
 
 {% endhighlight %}
 {% endtabs %}
@@ -37,7 +37,7 @@ The Syncfusion ASP.NET Core UI input and editor controls can be validated by usi
 2.The following code shows how to perform client side validation using `FormValidator` inside the script tag.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <script>
     // Sets required property in the FormValidator rules collection
@@ -75,7 +75,7 @@ The Syncfusion ASP.NET Core UI input and editor controls can be validated by usi
 4.You can use the FormValidator [rules](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/#rules) property to display the custom validation error message for each input control.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <script>
     // sets required property in the FormValidator rules collection
