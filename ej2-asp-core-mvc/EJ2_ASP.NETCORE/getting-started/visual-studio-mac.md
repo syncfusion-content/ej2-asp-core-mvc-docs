@@ -42,7 +42,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add style sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](../appearance/theme/) to learn different ways ([CDN](../../common/adding-script-references), [NPM package](../../common/adding-script-references#node-package-manager-npm), and [CRG](../../common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -56,12 +56,10 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 
 ## Add script reference
 
-Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Pages/Shared/_Layout.cshtml` layout page.
-
-> Checkout [Adding Script Reference topic](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/client-side-resource) to learn different ways to add script reference in the ASP.NET Core Application.
+In this getting started walk-through, the required scripts are referred using [CDN](../../common/adding-script-references) inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight c# tabtitle="~/_Layout.cshtm" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls script -->
@@ -75,7 +73,7 @@ Add the client-side resources through [CDN](https://ej2.syncfusion.com/documenta
 Add the Syncfusion Script Manager at the end of `<body>` element in the `~/Pages/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
-{% highlight c# tabtitle="~/_Layout.cshtm" %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 <body>
     ...
     <!-- Syncfusion ASP.NET Core Script Manager -->
