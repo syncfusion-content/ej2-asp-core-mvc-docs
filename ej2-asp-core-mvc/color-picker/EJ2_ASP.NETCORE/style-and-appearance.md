@@ -15,7 +15,7 @@ To modify the ColorPicker appearance, you need to override the default CSS of Co
 
 | CSS Class | Purpose of Class |
 | ----- | ----- |
-| .e-custom-picker .e-container .e-handler | To customized Color Picker selection handler |
+| .e-custom-picker .e-container .e-handler | To customize Color Picker selection handler |
 | .color-picker.e-dropdown-popup ul .e-container | To customize the Color Picker container |
 | .color-picker.e-dropdown-popup ul .e-item.e-palette-item | To customize the Color Picker pallete item |
 | .color-picker.e-dropdown-popup .e-container .e-switch | To customize the Color Picker switch control |

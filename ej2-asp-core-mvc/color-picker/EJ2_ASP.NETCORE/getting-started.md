@@ -14,7 +14,7 @@ This section briefly explains about how to create a default ColorPicker in your 
 
 ## Add ColorPicker to the project
 
-To create default ColorPicker add the `ejs-colorpicker` tag with id attribute as `element` in your **Index.cshtml** page.
+To create default ColorPicker, add the `ejs-colorpicker` tag with id attribute as `element` in your **Index.cshtml** page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,14 +40,11 @@ To create default ColorPicker add the `ejs-colorpicker` tag with id attribute as
 {% endif %}
 
 
-
-Output be like the below.
-
 ![ColorPicker Sample](./images/color-picker.PNG)
 
 ## Run the application
 
-After successful compilation of your application, simply press `F5` to run the application. The following example shows a default rendering of ColorPicker.
+After successful compilation of your application, simply press `F5` to run the application.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -77,8 +74,6 @@ After successful compilation of your application, simply press `F5` to run the a
 ## Inline type
 
 By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Inline) property to `true`.
-
-The following sample shows the inline type rendering of ColorPicker.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
