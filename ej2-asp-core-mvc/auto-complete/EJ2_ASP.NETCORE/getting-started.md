@@ -197,7 +197,7 @@ The height and width of the popup list can also be customized using the [popupHe
 {% endtabs %}
 {% endif %}
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/AutoComplete/AutoCompleteSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/AutoComplete/AutoCompleteSample).
 
 ## See also
 

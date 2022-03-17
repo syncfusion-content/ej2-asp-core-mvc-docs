@@ -142,7 +142,7 @@ To change the default Button to flat Button, set the [`cssClass`](https://help.s
 {% endtabs %}
 {% endif %}
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Button/ButtonSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Button/ButtonSample).
 
 ## See also
 

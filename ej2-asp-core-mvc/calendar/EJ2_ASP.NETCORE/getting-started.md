@@ -144,7 +144,7 @@ Here the Calendar allows you to select a date within the range from 5th to 27th 
 
 ![Setting Minimum and Maximum Date in ASP.NET Core Calendar](images/calendar-with-min-and-max-dates.png)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Calendar).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Calendar).
 
 ## See also
 

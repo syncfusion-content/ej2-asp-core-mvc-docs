@@ -1,5 +1,5 @@
 <div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
-<ejs-contextmenu id="contextmenu" target="#contextmenutarget" items="ViewBag.menuItems"></ejs-contextmenu>
+<ejs-contextmenu id="contextmenu" target="#contextmenutarget" items="menuItems"></ejs-contextmenu>
 
 <style>
 

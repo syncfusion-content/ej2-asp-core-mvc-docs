@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Dialog Component
-description: Checkout and learn about getting started with ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Dialog Control
+description: Checkout and learn about getting started with ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -11,57 +11,94 @@ documentation: ug
 
 # Getting Started
 
-This section briefly explains about how to include a simple Dialog in your ASP.NET Core application. You can refer [ASP.NET Core Getting Started documentation](../getting-started) page for introduction part part of the system requirements and configure the common specifications.
+This section briefly explains about how to include [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) control in your ASP.NET Core application using Visual Studio.
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include the license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+## Prerequisites
 
-## Adding Dialog control to the Application
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-* Now open your view page to render Dialog control.
+## Create ASP.NET Core web application with Razor pages
+
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
+
+* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
+
+## Install ASP.NET Core package in the application
+
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
+
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+
+## Add Syncfusion ASP.NET Core Tag Helper
+
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+
+{% tabs %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
+
+@addTagHelper *, Syncfusion.EJ2
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add style sheet
+
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add script reference
+
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Register Syncfusion Script Manager
+
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<body>
+    ....
+    ....
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts></ejs-scripts>
+</body>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add ASP.NET Core Dialog control
+
+Now, add the Syncfusion ASP.NET Core Dialog tag helper in `~/Pages/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/dialog/getting-started/data/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/data/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dialog/getting-started/data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/data/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-## Initialize the Dialog
-
-* Dialog component can be rendered with the help of `ejs-dialog` tag helper. Add the below code to your `index.cshtml` page which is present under `Views/Home` folder, where the Dialog is initialized.
-
-## Run the application
-
-After successful compilation of your application, simply press `F5` to run the application.
-
-The below example shows the Dialog.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/dialog/getting-started/getting-started/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/getting-started/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,11 +114,31 @@ The below example shows the Dialog.
 {% endtabs %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Dialog control will be rendered in the default web browser.
 
+![ASP.NET Core Dialog Control](images/dialog-getting.png)
 
-Output be like the below.
+Diaplying the content using `ContentTemplate`.
 
-![dialog](./images/dialog-getting.png)
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% include code-snippet/dialog/getting-started/data/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/dialog/getting-started/data/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/dialog/getting-started/data/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 > In the dialog control, max-height is calculated based on the dialog target element height. If the target property is not configured, the document.body is considered as a target. Therefore, to show a dialog in proper height, you need to add min-height to the target element.
 
@@ -96,11 +153,8 @@ While the user clicks the overlay, the action can be handled through the [`overl
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/dialog/getting-started/modal/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/modal/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -116,11 +170,7 @@ While the user clicks the overlay, the action can be handled through the [`overl
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![dialog](./images/modal-dialog-getting.png)
+![ASP.NET Core Modal Dialog](./images/modal-dialog-getting.png)
 
 >In the dialog control, If the dialog is rendered based on the body, then the dialog get the height is based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, we can set the CSS style for the html and body to get the dialog height.
 
@@ -139,7 +189,7 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/dialog/getting-started/enable-header/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
@@ -174,11 +224,16 @@ The below sample render with button and its click event.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/dialog/getting-started/enable-footer/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/enable-footer/controller.cs %}
+{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+public class ButtonModel
+{
+   public string content { get; set; }
+   public bool isPrimary { get; set; }
+   public string cssClass { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -205,11 +260,15 @@ The Dialog supports to [drag](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/dialog/getting-started/draggable/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/draggable/controller.cs %}
+{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+public class ButtonModel
+{
+   public string content { get; set; }
+   public string cssClass { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -239,11 +298,8 @@ The below example demonstrates the different Dialog positions.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/dialog/getting-started/positioning/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/positioning/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -261,8 +317,10 @@ The below example demonstrates the different Dialog positions.
 
 
 
-## See Also
+## See also
 
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [Load dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
 * [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
