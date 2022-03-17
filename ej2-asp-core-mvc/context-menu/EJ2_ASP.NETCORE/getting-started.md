@@ -201,6 +201,8 @@ The Separators are the horizontal lines that are used to separate the menu items
 
 ![ASP.NET Core Context Menu with Separator](images/context-menu-with-seperator.png)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ContextMenu/ContextMenuSample)
+
 ## See also
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
