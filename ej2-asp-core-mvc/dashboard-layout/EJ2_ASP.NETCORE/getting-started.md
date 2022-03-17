@@ -171,7 +171,7 @@ public class spacingModel
 
 ![Dashboard tag helper](images/tag_helper.PNG)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DashboardLayout/DashboardLayoutSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DashboardLayout/DashboardLayoutSample).
 
 ## See also
 

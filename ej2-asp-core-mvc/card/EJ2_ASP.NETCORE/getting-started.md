@@ -145,7 +145,7 @@ You can create Card with a header in a specific structure. For adding header you
 
 ![ASP.NET Core Card Control](images/gettingstarted.PNG)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Card/CardSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Card/CardSample).
 
 ## See also
 
