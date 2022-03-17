@@ -82,8 +82,6 @@ The `font` of the legend item text can be customized using the following propert
 * color
 * size
 
-The following code example shows how to add legend in the gauge.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

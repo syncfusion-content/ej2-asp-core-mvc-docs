@@ -15,7 +15,7 @@ This section briefly explains about how to create a simple CheckBox in your ASP.
 
 ## Add CheckBox to the project
 
-To create simple CheckBox add the `ejs-checkbox` tag with id attribute as `element` in your **Index.cshtml** page.
+To create simple CheckBox, add the `ejs-checkbox` tag with id attribute as `element` in your **Index.cshtml** page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,14 +41,11 @@ To create simple CheckBox add the `ejs-checkbox` tag with id attribute as `eleme
 {% endif %}
 
 
-
-Output be like the below.
-
 ![CheckBox Sample](./images/check-box.PNG)
 
 ## Run the application
 
-After successful compilation of your application, simply press `F5` to run the application. The following example shows a default rendering of CheckBox.
+After successful compilation of your application, simply press `F5` to run the application.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -82,7 +79,7 @@ The Essential JS 2 CheckBox contains 3 different states visually, they are:
 * Unchecked
 * Indeterminate
 
-The CheckBox [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In checked state a tick mark will be added to the visualization of CheckBox.
+The CheckBox [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In checked state, a tick mark will be added to the visualization of CheckBox.
 
 ### Indeterminate
 

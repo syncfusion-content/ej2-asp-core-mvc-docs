@@ -12,7 +12,7 @@ documentation: ug
 
 ## Prerequisites
 
-To get start with ASP.NET Core application, need to ensure the following software to be installed on the machine.
+To get started with ASP.NET Core application, ensure the following software to be installed on the machine.
 * Visual Studio 2017
 * DotNet Core 2.0
 
@@ -24,7 +24,7 @@ The following steps to create ASP.NET Core Application.
 
 ![Alt text](./images/default-template.png)
 
-**Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using Nugget Package Manager.
+**Step 2:** Once your project is created, add Syncfusion EJ2 package into your application by using Nugget Package Manager.
 
 Open the `nuGet` package manager.
 
@@ -34,9 +34,9 @@ Install the **Syncfusion.EJ2** package to the application
 
 ![Alt text](./images/nuget-demo.png)
 
-After Installation complete this will included in the project. You can refer it from the Project Assembly Reference.
+After Installation is completed, this will be included in the project. You can refer it from the Project Assembly Reference.
 
-> We need to install **NewtonSoft.JSON** as dependency since it **Syncfusion.EJ2** dependent to NewtonSoft.JSON package.
+> Install **NewtonSoft.JSON** as dependency, since **Syncfusion.EJ2** is dependent on  NewtonSoft.JSON package.
 
 **Step 3:** Open the **_ViewImports.cshtml** to import Syncfusion.EJ2 package.
 
@@ -57,7 +57,7 @@ After Installation complete this will included in the project. You can refer it 
 <ejs-scripts></ejs-scripts>
 ```
 
-**Step 6:** Add the below code to your Index.cshtml view page which is present under Views/Home folder, to initialize the circulargauge.
+**Step 6:** Add the following code to your Index.cshtml view page which is present under Views/Home folder, to initialize the circulargauge.
 
 ## Render Default circulargauge
 
@@ -72,7 +72,7 @@ public IActionResult Default()
 
 ```
 
-Add the `ejs-circulargauge` tag like below code snippet to create the default circulargauge.
+Add the `ejs-circulargauge` tag like the following code snippet to create the default circulargauge.
 
 ```cs
 
@@ -96,7 +96,7 @@ You can add a title using `title` attribute to the circulargauge to provide quic
 
 ## Axis
 
-You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer below code snippet to add the axis range to circulargauge.
+You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer the following code snippet to add the axis range to circulargauge.
 
 ```cs
 <ejs-circulargauge id="circular">

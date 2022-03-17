@@ -14,7 +14,7 @@ This section briefly explains about how to create a simple Chip in your ASP.NET 
 
 ## Add Chip to the project
 
-To create simple `Chip` add the `ejs-chiplist` tag with id attribute as `element` in your **Index.cshtml** page.
+To create simple `Chip`, add the `ejs-chiplist` tag with id attribute as `element` in your **Index.cshtml** page.
 
 ```html
 
@@ -24,7 +24,7 @@ To create simple `Chip` add the `ejs-chiplist` tag with id attribute as `element
 
 ## Run the application
 
-After successful compilation of your application, simply press `F5` to run the application. The following example shows a default rendering of Chip.
+After successful compilation of your application, simply press `F5` to run the application.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -49,8 +49,5 @@ After successful compilation of your application, simply press `F5` to run the a
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Chip Sample](./images/chip.png)
