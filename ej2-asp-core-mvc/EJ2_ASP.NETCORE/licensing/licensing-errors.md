@@ -92,7 +92,7 @@ If the application is registered with another version’s license key, the follo
 
 **Error message:** <br /> The included Syncfusion license ({Registered Version}) is invalid for version {Required version}. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/licensing-errors/#version-mismatch) for more information.
 
-![Version Mismatch](images/licensing-error-5.png)
+![Version Mismatch](images/version-mismatch.png)
 
 **Solution:**
 
