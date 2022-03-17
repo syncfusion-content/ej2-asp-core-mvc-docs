@@ -1,1 +1,7 @@
-<ejs-datepicker id="datepicker" value="@ViewBag.value" min="@ViewBag.minDate" max="@ViewBag.maxDate" ></ejs-datepicker>
+@{
+    ViewData["Title"] = "Home page";
+    var minDate= new DateTime(DateTime.Now.Year,DateTime.Now.Month,05);
+    var maxDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 27);
+}
+
+<ejs-datepicker id="datepicker" min="minDate" max="maxDate" ></ejs-datepicker>
