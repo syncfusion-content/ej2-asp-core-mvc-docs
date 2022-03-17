@@ -1,6 +1,12 @@
+@{
+    .....
+    spacingModel modelValue = new spacingModel();
+    modelValue.cellSpacing = new double[] { 10, 10 };
+}
+
 <div class=" control-section">
     <!--  DashboardLayout element declaration -->
-    <ejs-dashboardlayout id="defaultLayout" columns="6" cellSpacing="@Model.cellSpacing">
+    <ejs-dashboardlayout id="defaultLayout" columns="6" cellSpacing="modelValue..cellSpacing">
         <e-content-template>
             <div id="one" class="e-panel" data-row="0" data-col="0" data-sizeX="1" data-sizeY="1">
                 <div class="e-panel-container">

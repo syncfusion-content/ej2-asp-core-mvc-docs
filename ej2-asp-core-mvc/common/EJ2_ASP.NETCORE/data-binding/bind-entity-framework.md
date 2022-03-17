@@ -184,15 +184,16 @@ namespace LibraryManagement.Controllers
 
 ## Install ASP.NET Core package in the application
 
-Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](../../nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
 > The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
+
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -201,41 +202,43 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
   
 ## Add Style Sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](../../appearance/theme/) to learn different ways ([CDN](../../common/adding-script-references), [NPM package](../../common/adding-script-references#node-package-manager-npm), and [CRG](../../common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
-    <head>
-        ...
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
-    </head>
+{% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
+<head>
+    ...
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+</head>
 {% endhighlight %}
 {% endtabs %}
 
 ## Add Script Reference
-In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+
+In this getting started walk-through, the required scripts are referred using [CDN](../../common/adding-script-references) inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
-    <head>
-        ...
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    </head>
+{% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
+<head>
+    ...
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
 {% endhighlight %}
 {% endtabs %}
 
 ## Register Syncfusion Script Manager
+
 Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
-    <body>
-        ...
-        <!-- Syncfusion Script Manager -->
-        <ejs-scripts></ejs-scripts>
-    </body>
+{% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
+<body>
+    ...
+    <!-- Syncfusion Script Manager -->
+    <ejs-scripts></ejs-scripts>
+</body>
 {% endhighlight %}
 {% endtabs %}
 
@@ -244,7 +247,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 In previous steps, we have successfully configured the Syncfusion ASP.NET Core package in the application. Now, we can add the grid control to to your **Index.cshtml** view page which is present under `Views/Home` folder.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <ejs-grid id="Grid"></ejs-grid>
 
@@ -256,7 +259,7 @@ In previous steps, we have successfully configured the Syncfusion ASP.NET Core p
 To consume data from the Home Controller, we need to add the **DataManager** with **UrlAdaptor**.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <ejs-grid id="Grid">
 <e-data-manager url="/Home/UrlDataSource" adaptor="UrlAdaptor" insertUrl="/Home/Insert" removeUrl="/Home/Delete" updateUrl="/Home/Update" crossDomain="true"></e-data-manager>
@@ -268,12 +271,12 @@ To consume data from the Home Controller, we need to add the **DataManager** wit
 Grid columns can be defined by using the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) component. We are going to create columns using the following code.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
-        <e-data-manager url="/Home/UrlDataSource" adaptor="UrlAdaptor" insertUrl="/Home/Insert" removeUrl="/Home/Delete" updateUrl="/Home/Update" crossDomain="true"></e-data-manager>
-        <e-grid-editSettings allowDeleting="true" allowEditing="true" allowAdding="true"></e-grid-editSettings>
-        <e-grid-columns>
+    <e-data-manager url="/Home/UrlDataSource" adaptor="UrlAdaptor" insertUrl="/Home/Insert" removeUrl="/Home/Delete" updateUrl="/Home/Update" crossDomain="true"></e-data-manager>
+    <e-grid-editSettings allowDeleting="true" allowEditing="true" allowAdding="true"></e-grid-editSettings>
+    <e-grid-columns>
         <e-grid-column field="Id" headerText="Order ID" type="number" visible="false" textAlign="Right" width="120" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="Name" headerText="Name" type="string" width="140"></e-grid-column>
         <e-grid-column field="Author" headerText="Author" type="string" textAlign="Right" width="120"></e-grid-column>
@@ -339,12 +342,12 @@ Here, we are using **Inline** edit mode and used Toolbar property to show toolba
 We have added the Grid Editing and Toolbar code with previous Grid model.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
 
 <ejs-grid id="Grid" actionBegin="actionBegin" actionComplete="actionComplete"  toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
-        <e-data-manager url="/Home/UrlDataSource" adaptor="UrlAdaptor" insertUrl="/Home/Insert" removeUrl="/Home/Delete" updateUrl="/Home/Update" crossDomain="true"></e-data-manager>
-        <e-grid-editSettings allowDeleting="true" allowEditing="true" allowAdding="true"></e-grid-editSettings>
-        <e-grid-columns>
+    <e-data-manager url="/Home/UrlDataSource" adaptor="UrlAdaptor" insertUrl="/Home/Insert" removeUrl="/Home/Delete" updateUrl="/Home/Update" crossDomain="true"></e-data-manager>
+    <e-grid-editSettings allowDeleting="true" allowEditing="true" allowAdding="true"></e-grid-editSettings>
+    <e-grid-columns>
         <e-grid-column field="Id" headerText="Order ID" type="number" visible="false" textAlign="Right" width="120" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="Name" headerText="Name" type="string" width="140"></e-grid-column>
         <e-grid-column field="Author" headerText="Author" type="string" textAlign="Right" width="120"></e-grid-column>
@@ -431,3 +434,5 @@ public IActionResult Delete([FromBody] ICRUDModel<Book> value)
 
 {% endhighlight %}
 {% endtabs %}
+
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/data-binding/Bind%20data%20from%20SQL%20Server)

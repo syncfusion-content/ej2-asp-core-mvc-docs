@@ -3,7 +3,7 @@ layout: post
 title: Deployment in ##Platform_Name## control
 description: Learn here all about Deployment in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Deployment
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -80,7 +80,7 @@ Also, refer to the MSDN reference [here](https://docs.microsoft.com/en-us/aspnet
 
 Now, you can host the published folder by using the IIS or Azure app service.
 
-## See Also
+## See also
 
 * [Host and Deploy ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-6.0)
 * [Publish a Web app to Azure App Service using Visual Studio](https://docs.microsoft.com/en-us/visualstudio/deployment/quickstart-deploy-aspnet-web-app)

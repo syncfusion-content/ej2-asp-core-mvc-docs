@@ -24,7 +24,7 @@ This article provides a step-by-step instructions for building ASP.NET Core appl
 
 ## Install ASP.NET Core package in the application
 
-Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core components in the application, Right-click on the ASP.NET Core application or solution in the Solution Window, and choose **Manage NuGet Packages...**, search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](../nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core components in the application, Right-click on the ASP.NET Core application or solution in the Solution Window, and choose **Manage NuGet Packages...**, search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
 > The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
@@ -33,7 +33,7 @@ Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -42,33 +42,29 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add style sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](../appearance/theme/) to learn different ways ([CDN](../common/adding-script-references), [NPM package](../common/adding-script-references#node-package-manager-npm), and [CRG](../common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
-    <head>
-        ....
-        ....
-        <!-- Syncfusion ASP.NET Core styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
-    </head>
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+</head>
 {% endhighlight %}
 {% endtabs %}
 
 ## Add script reference
 
-Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Pages/Shared/_Layout.cshtml` layout page.
-
-> Checkout [Adding Script Reference topic](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/client-side-resource) to learn different ways to add script reference in the ASP.NET Core Application.
+In this getting started walk-through, the required scripts are referred using [CDN](../common/adding-script-references) inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
-    <head>
-        ....
-        ....
-        <!-- Syncfusion ASP.NET Core controls script -->
-        <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    </head>
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls script -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,13 +73,12 @@ Add the client-side resources through [CDN](https://ej2.syncfusion.com/documenta
 Add the Syncfusion Script Manager at the end of `<body>` element in the `~/Pages/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
-    <body>
-        ....
-        ....
-        <!-- Syncfusion ASP.NET Core Script Manager -->
-        <ejs-scripts></ejs-scripts>
-    </body>
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+<body>
+    ...
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts></ejs-scripts>
+</body>
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,10 +87,10 @@ Add the Syncfusion Script Manager at the end of `<body>` element in the `~/Pages
 Now, add the Syncfusion ASP.NET Core Calendar control in the `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
-    <div>
-        <ejs-calendar id="calendar"></ejs-calendar>
-    </div>
+{% highlight c# tabtitle="~/Index.cshtml" %}
+<div>
+    <ejs-calendar id="calendar"></ejs-calendar>
+</div>
 {% endhighlight %}
 {% endtabs %}
 
