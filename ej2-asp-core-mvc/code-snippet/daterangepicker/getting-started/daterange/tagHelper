@@ -1,1 +1,7 @@
-<ejs-daterangepicker id="daterange" startdate="ViewBag.startDate" enddate="ViewBag.endDate"></ejs-daterangepicker>
+@{
+    ....
+    var startDate = new DateTime(2017, 11, 09);
+    var endDate = new DateTime(2017, 11, 21);
+}
+
+<ejs-daterangepicker id="daterange" startdate="startDate" enddate="endDate"></ejs-daterangepicker>

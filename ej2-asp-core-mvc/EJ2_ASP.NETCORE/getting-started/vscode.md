@@ -51,7 +51,7 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 {% endhighlight %}
 {% endtabs %}
 
-Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) for more details about NuGet packages.
+Refer to [NuGet packages topic](../nuget-packages/) for more details about NuGet packages.
 
 ## Add Syncfusion ASP.NET Core Tag Helper 
 
@@ -65,7 +65,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
 ## Add style sheet
 
-Checkout the [Themes topic](../appearance/theme/) to learn different ways ([CDN](../../common/adding-script-references), [NPM package](../../common/adding-script-references#node-package-manager-npm), and [CRG](../../common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](../appearance/theme/) to learn different ways ([CDN](../common/adding-script-references), [NPM package](../common/adding-script-references#node-package-manager-npm), and [CRG](../common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -78,7 +78,7 @@ Checkout the [Themes topic](../appearance/theme/) to learn different ways ([CDN]
 {% endtabs %}
 
 ## Add script reference
-In this getting started walk-through, the required scripts are referred using [CDN](../../common/adding-script-references) inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+In this getting started walk-through, the required scripts are referred using [CDN](../common/adding-script-references) inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
