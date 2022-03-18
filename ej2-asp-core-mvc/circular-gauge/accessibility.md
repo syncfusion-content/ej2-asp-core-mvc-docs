@@ -13,7 +13,7 @@ documentation: ug
 
 Circular gauge provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provides information about elements in a document for assistive technology.
 
-**Aria-label:**   Attribute provides the text label with some default description for below elements in gauge.
+**Aria-label:**  Attribute provides the text label with some default description for below elements in gauge.
 
 <!-- markdownlint-disable MD033 -->
 <table>

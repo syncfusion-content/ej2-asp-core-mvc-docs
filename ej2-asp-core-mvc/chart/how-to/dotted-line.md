@@ -17,7 +17,7 @@ To add dotted lines in the chart, follow the given steps:
 
 **Step 1**: Initialize the custom elements by using the `annotation` property.
 
-By setting `coordinateUnits` value as `point` in annotation object you can placed dotted lines in the chart based on point x and y values.
+By setting `coordinateUnits` value as `point` in annotation object, you can place dotted lines in the chart based on point x and y values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

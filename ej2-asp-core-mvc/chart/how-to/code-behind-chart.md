@@ -17,7 +17,7 @@ You can render the charts from code behind and update the charts in partial view
 
 Follow the given steps to render and update the charts from code behind.
 
-**Step 1**: Initially, render the home view page, and then call the partial view action method via ajax call in the home view page. In that chart is render using client side content.
+**Step 1**: Initially, render the home view page, and then call the partial view action method via ajax call in the home view page. In that chart is rendered using client side content.
 
 ```html
 <div class="row" style="margin-top:10px">

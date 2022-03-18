@@ -12,7 +12,7 @@ documentation: ug
 
 ## Tooltip for pointers
 
-Circular gauge will displays the pointer details through [tooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTooltipSettings.html), when the mouse is moved over the pointer.
+Circular gauge will display the pointer details through [tooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTooltipSettings.html), when the mouse is moved over the pointer.
 
 <!-- markdownlint-disable MD036 -->
 
