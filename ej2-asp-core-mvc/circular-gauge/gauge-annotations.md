@@ -74,7 +74,7 @@ Radius of the annotation takes value either in pixel or percentage. By setting v
 
 ## Sub Gauge
 
-As the annotation allows you to place any custom element, we can initialize a gauge to the element and can be used to place that in another gauge.
+As the annotation allows to place any custom element, it can initialize a gauge to the element and can be used to place that in another gauge.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -10,12 +10,12 @@ documentation: ug
 
 # Internationalization
 
-Circular gauge provide supports for internationalization for below gauge elements.
+Circular gauge provides support for internationalization for the following gauge elements.
 
 * Axis label.
 * Tooltip.
 
-For more information about number formatter you can refer [`internationalization`](http://ej2.syncfusion.com/aspnet/documentation/base/intl.html).
+For more information about number formatter, you can refer [`internationalization`](http://ej2.syncfusion.com/aspnet/documentation/base/intl.html).
 
 <!-- markdownlint-disable MD036 -->
 **Globalization**

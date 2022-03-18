@@ -43,7 +43,7 @@ Start and end value of a range in an axis can be customized by using [`start`](h
 
 ## Customization
 
-Color and thickness of the range can be customized by using [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeRange.html#Syncfusion_EJ2_CircularGauge_CircularGaugeRange_Color),[`startWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeRange.html#Syncfusion_EJ2_CircularGauge_CircularGaugeRange_StartWidth) and [`endWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeRange.html#Syncfusion_EJ2_CircularGauge_CircularGaugeRange_EndWidth) property.
+Color and thickness of the range can be customized by using [`color`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeRange.html#Syncfusion_EJ2_CircularGauge_CircularGaugeRange_Color), [`startWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeRange.html#Syncfusion_EJ2_CircularGauge_CircularGaugeRange_StartWidth) and [`endWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeRange.html#Syncfusion_EJ2_CircularGauge_CircularGaugeRange_EndWidth) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -74,11 +74,11 @@ Color and thickness of the range can be customized by using [`color`](https://he
 
 ## Radius
 
-You can place the range inside or outside of the axis by using [`radius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeRange.html#Syncfusion_EJ2_CircularGauge_CircularGaugeRange_Radius) property. The radius of the range can takes value either in percentage or in pixels. By default, ranges take 100% of the axis radius.
+You can place the range inside or outside of the axis by using [`radius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeRange.html#Syncfusion_EJ2_CircularGauge_CircularGaugeRange_Radius) property. The radius of the range can take value either in percentage or in pixels. By default, ranges take 100% of the axis radius.
 
 **In Pixel**
 
-You can set the radius of the range in pixel as demonstrated below,
+You can set the radius of the range in pixel.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -167,7 +167,7 @@ The ranges can be dragged over the axis line by clicking and dragging the same. 
 
 ## Multiple Ranges
 
-You can add multiple ranges to an axis with the above customization as demonstrated below.
+You can add multiple ranges to an axis with the above customization.
 
 > You can set the range color to axis ticks and labels by enabling `useRangeColor` property in [`majorTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html), [`minorTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTick.html) and [`labelStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeLabel.html) object.
 
@@ -234,8 +234,7 @@ Gradient support allows to add multiple colors in the ranges and pointers of the
 
 ### Linear Gradient
 
-Using linear gradient, colors will be applied in a linear progression. The start value of the linear gradient will be set using the [`startValue`](../api/circular-gauge/linearGradient/#startvalue) property. The end value of the linear gradient will be set using the [`endValue`](../api/circular-gauge/linearGradient/#endvalue) property. The color stop values such as color, opacity and offset are set using [`colorStop`](../api/circular-gauge/linearGradient/#colorstop) property. To apply linear gradient to the range, follow the below code sample.
-
+Using linear gradient, colors will be applied in a linear progression. The start value of the linear gradient will be set using the [`startValue`](../api/circular-gauge/linearGradient/#startvalue) property. The end value of the linear gradient will be set using the [`endValue`](../api/circular-gauge/linearGradient/#endvalue) property. The color stop values such as color, opacity and offset are set using [`colorStop`](../api/circular-gauge/linearGradient/#colorstop) property.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -264,8 +263,6 @@ Using linear gradient, colors will be applied in a linear progression. The start
 ### Radial Gradient
 
 Using radial gradient, colors will be applied in circular progression. The inner circle position of the radial gradient will be set using the [`innerPosition`](../api/circular-gauge/radialGradient/#innerposition) property. The outer circle position of the radial gradient can be set using the [`outerPosition`](../api/circular-gauge/radialGradient/#outerposition) property. The color stop values such as color, opacity and offset are set using [`colorStop`](../api/circular-gauge/radialGradient/#colorstop) property.
-
-To apply radial gradient to the range, follow the below code sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

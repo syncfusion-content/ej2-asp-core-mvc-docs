@@ -11,13 +11,11 @@ documentation: ug
 
 # To add chart dynamically
 
-By using html button, you can add the chart dynamically when click the button.
+By using html button, you can add the chart dynamically by clicking the button.
 
 To add the chart dynamically through button click, follow the given steps:
 
-**Step 1**: Initially create the html button. Then create chart inside of button `onClick` function. Now click the button charts will render based on click count.
-
-The following code sample demonstrates the output.
+**Step 1**: Initially create the html button. Then create chart inside of button `onClick` function. Now, clicking the button charts will render based on click count.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

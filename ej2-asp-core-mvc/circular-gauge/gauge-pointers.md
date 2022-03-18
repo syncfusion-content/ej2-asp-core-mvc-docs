@@ -222,7 +222,7 @@ Different type of marker shape can be used to mark the pointer value in axis. Yo
 * InvertedTriangle
 * Diamond
 
-We can use image instead of rendering marker shape to denote the pointer value. It can be achieved by setting [`markerShape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) to Image and assigning  image path to [`imageUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) in pointer.
+The image can be used instead of rendering marker shape to denote the pointer value. It can be achieved by setting [`markerShape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) to Image and assigning  image path to [`imageUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) in pointer.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -338,7 +338,7 @@ In addition to the default pointer, you can add n number of pointer to an axis b
 
 ## Animation
 
-Pointer will get animate on loading the gauge, this can be handled by using [`animation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in pointer. The [`enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in animation allows you to enable or disable the animation. The [`duration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property specify the duration of the animation in milliseconds.
+Pointer will get animate on loading the gauge, this can be handled by using [`animation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in pointer. The [`enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property in animation allows to enable or disable the animation. The [`duration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html) property specifies the duration of the animation in milliseconds.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -376,7 +376,7 @@ Gradient support allows to add multiple colors in the range and pointer of the c
 
 Using linear gradient, colors will be applied in a linear progression. The start value of the linear gradient will be set using the [`startValue`](../api/circular-gauge/linearGradient/#startvalue) property. The end value of the linear gradient will be set using the [`endValue`](../api/circular-gauge/linearGradient/#endvalue) property. The color stop values such as color, opacity and offset are set using [`colorStop`](../api/circular-gauge/linearGradient/#colorstop) property.
 
-The linear gradient can be applied to all pointer types like marker, range bar and needle. To do so, follow the below code sample.
+The linear gradient can be applied to all pointer types like marker, range bar and needle.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -407,7 +407,7 @@ The linear gradient can be applied to all pointer types like marker, range bar a
 
 Using radial gradient, colors will be applied in circular progression. The inner circle position of the radial gradient will be set using the [`innerPosition`](../api/circular-gauge/radialGradient/#innerposition) property. The outer circle position of the radial gradient can be set using the [`outerPosition`](../api/circular-gauge/radialGradient/#outerposition) property. The color stop values such as color, opacity and offset are set using [`colorStop`](../api/circular-gauge/radialGradient/#colorstop) property.
 
-The radial gradient can be applied to all pointer types like marker, range bar and needle. To do so, follow the below code sample.
+The radial gradient can be applied to all pointer types like marker, range bar and needle.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
