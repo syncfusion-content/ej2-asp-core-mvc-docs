@@ -15,7 +15,7 @@ documentation: ug
 
 Bind the text and interior information for a point from dataSource. To change the background color in the datalabel template, use `${point.text}`. You have to bind the property from dataSource to name in the data label options to use point.text.
 
-Follow the given steps to customize the  background color of data label template from webservice, which includes colors:
+Follow the given steps to customize the background color of data label template from webservice, which includes colors:
 
 **Step 1**: Get the data from webservice, which also includes color attribute to bind the name in the data label options to use point.text in the data label template.
 

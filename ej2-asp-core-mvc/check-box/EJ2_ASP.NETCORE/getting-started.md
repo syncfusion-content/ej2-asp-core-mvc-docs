@@ -125,7 +125,7 @@ The Essential JS 2 CheckBox contains 3 different states visually, they are:
 * Unchecked
 * Indeterminate
 
-The CheckBox [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In checked state a tick mark will be added to the visualization of CheckBox.
+The CheckBox [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In checked state, a tick mark will be added to the visualization of CheckBox.
 
 ### Indeterminate
 
