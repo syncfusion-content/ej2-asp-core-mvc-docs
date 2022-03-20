@@ -125,10 +125,10 @@ The Dropdown Tree control can load the data either from local data sources or re
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/dropdowntree/getting-started/data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
+{% highlight c# tabtitle="~/Index.cshtml.cs" %}
 public class Parent
 {
     public string nodeId;
