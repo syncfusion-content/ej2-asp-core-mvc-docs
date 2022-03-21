@@ -1,10 +1,15 @@
+@{
+    ....
+    var DialogButtons1 = new ButtonModel() { isPrimary = true, cssClass = "e-flat", content = "OK" };
+    var DialogButtons2 = new ButtonModel() { content = "Cancel", cssClass = "e-flat" };
+}
 
 <div id='container' style="height:400px;">
     <ejs-button id="targetButton" content="Open Dialog"></ejs-button>
     <ejs-dialog id="dialog" header="Dialog" content="This is a Dialog with button and primary button" target="#container" width="250px">
         <e-dialog-buttons>
-            <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons1" click="dlgButtonClick"></e-dialog-dialogbutton>
-            <e-dialog-dialogbutton buttonModel="@ViewBag.DialogButtons2" click="dlgButtonClick"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="DialogButtons1" click="dlgButtonClick"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="DialogButtons2" click="dlgButtonClick"></e-dialog-dialogbutton>
         </e-dialog-buttons>
     </ejs-dialog>
 </div>

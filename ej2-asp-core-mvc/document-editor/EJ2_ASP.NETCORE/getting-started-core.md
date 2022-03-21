@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Document Editor Component
-description: Checkout and learn about getting started with ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Document Editor Control
+description: Checkout and learn about getting started with ##Platform_Name## Document Editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
 publishingplatform: ##Platform_Name##
@@ -11,94 +11,94 @@ documentation: ug
 
 # Getting Started with ASP.NET Core
 
-This article provides a step-by-step introduction to configure Essential JS 2 setup and build a simple .NET Core web application with Razor pages using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core DocumentEditor](https://www.syncfusion.com/aspnet-core-ui-controls/word-processor) control in your ASP.NET Core application using Visual Studio.
 
-> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET Core application to use the components.
+## Prerequisites
 
-## Getting Started with ASP.NET Core 2.x
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-### Prerequisites
+## Create ASP.NET Core web application with Razor pages
 
-The official prerequisites to create and run an ASP.NET Core 2.x application on Windows environment are described in the [.NET Core documentation website](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.0#prerequisites-1).
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-### Create ASP.NET Core web application with Razor pages
+* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
 
-1. Choose **File > New > Project...** in the Visual Studio menu bar.
+## Install ASP.NET Core package in the application
 
-    ![new project in aspnetcore2.x razor](images/new-project.png)
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-2. Select **Installed > Visual C# > .NET Core** and choose the required **.NET Framework** in the drop-down.
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-3. Select **ASP.NET Core Web Application** and change the application name and click **OK**.
+## Add Syncfusion ASP.NET Core Tag Helper
 
-    > The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET Core application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET Core (Essential JS 2).
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
-    ![aspnetcore2.x project template](images/aspnetcore2x-template.png)
+{% tabs %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
-4. Choose **.NET Core** with **ASP.NET Core 2.0** and select **Web Application**, and then click **OK**. Now, the web application project is created with default ASP.NET Core template.
+@addTagHelper *, Syncfusion.EJ2
 
-    ![aspnetcore2.x razor web application template](images/aspnetcore2x-netcore-razor.png)
+{% endhighlight %}
+{% endtabs %}
 
-### Configure Essential JS 2 in the application
+## Add style sheet
 
-1. Add the [`Syncfusion.EJ2.AspNet.Core`](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-    > Refer to [this article](../nuget-packages) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-    ![aspnetcore2.x razor manage nuget packages](images/aspnetcore2x-razor-manage-nuget.png)
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+</head>
 
-2. Search the `Syncfusion.EJ2.AspNet` in the **Browse** tab and install **Syncfusion.EJ2.AspNet.Core** NuGet package in the application.
+{% endhighlight %}
+{% endtabs %}
 
-    ![aspnetcore2.x razor install nuget packages](images/aspnetcore-nuget-package.png)
+## Add script reference
 
-    The Essential JS 2 package will be included in the project, after the installation process is completed.
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-    > The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-3. Open the `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
 
-    ```html
-    @addTagHelper *, Syncfusion.EJ2
-    ```
+{% endhighlight %}
+{% endtabs %}
 
-4. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/base/deployment.html?lang=typescript#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Pages/_Layout.cshtml` layout page.
+## Register Syncfusion Script Manager
 
-    ```html
-    <head>
-        ....
-        ....
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
 
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
-    </head>
-    ```
+<body>
+    ....
+    ....
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts></ejs-scripts>
+</body>
 
-5. Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Pages/_Layout.cshtml` layout page.
+{% endhighlight %}
+{% endtabs %}
 
-    ```html
-    <body>
-        ....
-        ....
-        <!-- Syncfusion Essential JS 2 ScriptManager -->
-        <ejs-scripts></ejs-scripts>
-    </body>
-    ```
+## Add ASP.NET Core DropDownTree control
 
-6. Now, you can add the Syncfusion Essential JS 2 components in any web page (`cshtml`) in the `Pages` folder.
-
-For example, the Document Editor component is added to the `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core DocumentEditor tag helper in `~/Pages/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/document-editor/getting-started/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Document-editor.cs" %}
-{% include code-snippet/document-editor/getting-started/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -114,18 +114,13 @@ For example, the Document Editor component is added to the `~/Pages/Index.cshtml
 {% endtabs %}
 {% endif %}
 
-
-
 For example, the Document Editor Container component is added to the `~/Pages/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/document-editor-container/getting-started/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Document-editor-continer.cs" %}
-{% include code-snippet/document-editor-container/getting-started/document-editor-continer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -141,12 +136,14 @@ For example, the Document Editor Container component is added to the `~/Pages/In
 {% endtabs %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core DocumentEditor control will be rendered in the default web browser.
 
+![ASP.NET Core DocumentEditor Control](images/documenteditor-control.png)
 
-> Starting from `v19.3.0.x`, we have optimized the accuracy of text size measurements such as to match Microsoft Word pagination for most Word documents. This improvement is included as default behavior along with an optional API [to disable it and retain the document pagination behavior of older versions](../document-editor/how-to/disable-optimized-text-measuring).
+## See also
 
-## Frequently Asked Questions
-
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [How to localize the Documenteditor container](../document-editor/global-local).
 * [How to load the document by default](../document-editor/how-to/open-default-document).
 * [How to customize tool bar](../document-editor/how-to/customize-tool-bar).

@@ -138,7 +138,7 @@ You can set the range to the axis using `minimum` and `maximum` attributes for a
 
 ![ASP.NET Core CircularGauge with Axis](images/circulargauge-with-axis.png)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/CircularGauge/CircularGaugeSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/CircularGauge/CircularGaugeSample).
 
 ## See also
 

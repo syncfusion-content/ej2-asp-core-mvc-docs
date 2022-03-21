@@ -196,7 +196,7 @@ The height and width of the popup list can also be customized using the [popupHe
 {% endtabs %}
 {% endif %}
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ComboBox/ComboBoxSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ComboBox/ComboBoxSample).
 
 ## See also
 
