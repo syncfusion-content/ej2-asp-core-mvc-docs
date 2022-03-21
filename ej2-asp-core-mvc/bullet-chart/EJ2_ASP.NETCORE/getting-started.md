@@ -234,7 +234,7 @@ public class DefaultBulletData
 
 ![ASP.NET Core Bullet Chart with Tooltip](images/bullet-chart-with-tooltip.png)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/BulletChart/BulletChartSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/BulletChart/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

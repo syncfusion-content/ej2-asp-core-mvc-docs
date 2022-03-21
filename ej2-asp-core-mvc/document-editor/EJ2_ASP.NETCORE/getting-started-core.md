@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core
+# Getting Started
 
 This section briefly explains about how to include [ASP.NET Core DocumentEditor](https://www.syncfusion.com/aspnet-core-ui-controls/word-processor) control in your ASP.NET Core application using Visual Studio.
 
@@ -139,6 +139,8 @@ For example, the Document Editor Container component is added to the `~/Pages/In
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core DocumentEditor control will be rendered in the default web browser.
 
 ![ASP.NET Core DocumentEditor Control](images/documenteditor-control.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DocumentEditor/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
