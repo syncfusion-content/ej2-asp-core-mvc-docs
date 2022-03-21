@@ -30,7 +30,7 @@ Local data can be represented in two ways as described below.
 
 ### 1. Array of simple data
 
-The ComboBox has support to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
+The ComboBox has supported to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -61,7 +61,7 @@ The ComboBox has support to load array of primitive data such as strings and num
 
 The ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~Fields.html) property.
 
-In the following example, `Vegetable` column from complex data have been mapped to the `value` field.
+In the following example, `Vegetable` column from complex data has been mapped to the `value` field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -212,8 +212,6 @@ Use the `WebApiAdaptor` to bind ComboBox with Web API created using OData.
 
 `OData` is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager.
 
-The following example for remote data binding using OData service.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -242,8 +240,6 @@ The following example for remote data binding using OData service.
 ### Offline mode
 
 To avoid post back for every action, set the ComboBox to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html).
-
-The following example for remote data binding and enabled offline mode.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

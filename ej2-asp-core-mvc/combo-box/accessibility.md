@@ -15,7 +15,7 @@ The ComboBox control has been designed, keeping in mind the `WAI-ARIA` specifica
 
 ## ARIA attributes
 
-The ComboBox control uses the `combobox` role, and each list item has an `option` role. The following `ARIA attributes` denote the ComboBox state.
+The ComboBox control uses the `combobox` role, and each list item has an `option` role. The following `ARIA attributes` denotes the ComboBox state.
 
 | **Properties** | **Functionalities** |
 | --- | --- |
@@ -24,9 +24,9 @@ The ComboBox control uses the `combobox` role, and each list item has an `option
 | aria-selected | Indicates the selected option. |
 | aria-readonly | Indicates the readonly state of the ComboBox element. |
 | aria-disabled | Indicates whether the ComboBox control is in a disabled state or not. |
-| aria-activedescendent | This attribute holds the ID of the active list item  to focus its descendant child element. |
+| aria-activedescendent | This attribute holds the ID of the active list item to focus its descendant child element. |
 | aria-owns | This attribute contains the ID of the popup list to indicate popup as a child element. |
-| aria-autocomplete | This attribute contains the ‘both’ to a list of options shows and the currently selected suggestion also shows inline. |
+| aria-autocomplete | This attribute contains ‘both’ to a list of options shows and the currently selected suggestion also shows inline. |
 
 ## Keyboard interaction
 
@@ -34,7 +34,7 @@ You can use the following key shortcuts to access the ComboBox without interrupt
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
-| <kbd>Arrow Down</kbd> | Selects the first item in the ComboBox when no item selected. Otherwise, selects the item next to the currently selected item. |
+| <kbd>Arrow Down</kbd> | Selects the first item in the ComboBox when no item is selected. Otherwise, selects the item next to the currently selected item. |
 | <kbd>Arrow Up</kbd> | Selects the item previous to the currently selected one. |
 | <kbd>Page Down</kbd> | Scrolls down to the next page and selects the first item when popup list opens. |
 | <kbd>Page Up</kbd> | Scrolls up to the previous page and selects the first item when popup list opens. |
@@ -44,8 +44,8 @@ You can use the following key shortcuts to access the ComboBox without interrupt
 | <kbd>Alt + Down</kbd> | Open the popup list |
 | <kbd>Alt + Up</kbd> | Close the popup list|
 | <kbd>Esc(Escape)</kbd> | Closes the popup list when it is in an open state and the currently selected item remains the same. |
-| <kbd>Home</kbd> | Cursor moves to before of first character in input |
-| <kbd>End</kbd> | Cursor moves to next of last character in input  |
+| <kbd>Home</kbd> | Cursor moves before the first character in input |
+| <kbd>End</kbd> | Cursor moves next to the last character in input  |
 
 > In the following sample, focus the ComboBox control using <kbd>alt+t</kbd> keys.
 

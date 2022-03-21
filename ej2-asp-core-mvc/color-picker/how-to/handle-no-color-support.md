@@ -45,8 +45,6 @@ In the following sample, the first tile of the color palette represents the no c
 
 ## Custom no color
 
-The following sample show the color palette with custom no color option.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
