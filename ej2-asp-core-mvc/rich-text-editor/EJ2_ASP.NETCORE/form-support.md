@@ -65,3 +65,4 @@ Upon submitting the form, `getValue` method will be triggered. Through the `Form
 
 * [How to integrate the third party library](./third-party-integration/)
 * [How to validate the value](./validation/)
+* [How to get the Rich Text Editor value on the controller](./how-to/render-rich-text-editor-for)
