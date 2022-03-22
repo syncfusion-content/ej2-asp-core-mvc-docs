@@ -364,7 +364,7 @@ You can add the a phase at runtime by using client side API method called `addPh
 * The length of region can be set by using the [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the phase.
 * Every phase region can be textually described with the [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the phase.
 * You can increase the width of phase by using [`phaseSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of swimlane.
-* We can provide additional information to the phase by using the [`addInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the phase.
+* We can provide additional information to the phase by using the [`addInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the phase .
 
 The following code example illustrates how to customize the phase in swimlane.
 
