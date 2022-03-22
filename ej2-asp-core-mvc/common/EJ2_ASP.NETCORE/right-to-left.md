@@ -29,7 +29,7 @@ You can enable right to left (RTL) for all Syncfusion controls used in the appli
 
 ## Enable RTL to individual control
 
-To control a control’s direction individually you can directly set the control’s `enableRtl` property as true. For illustration, we have enabled RTL for Schedule control in following code snippet.
+To control a control’s direction individually, you can directly set the control’s `enableRtl` property as true. For illustration, RTL has been enabled for Schedule control in following code snippet.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
