@@ -144,7 +144,7 @@ The below example demonstrates the DatePicker to select a date within a range fr
 
 ![ASP.NET Core DatePicker with Minumum and Maximum Values](images/datepicker-with-min-and-max-values.png)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DatePicker/DatePickerSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DatePicker/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
