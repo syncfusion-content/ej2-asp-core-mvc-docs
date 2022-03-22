@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bind data from from SQL server to Syncfusion ##Platform_Name## Control and perform CRUD operations
-description: retrieve data from SQL server, bind it to Syncfusion ASP.NET Core Grid control using Entity Framework, and perform CRUD operations.
+description: Retrieve data from SQL server, bind it to Syncfusion ASP.NET Core Grid control using Entity Framework, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 # Bind data from SQL server to ASP.NET Core controls
 
 In this topic, we are going to learn how to retrieve data from SQL database using [Entity Framework](https://docs.microsoft.com/en-us/ef/core/) to bind it to the Grid control and perform CRUD operations. 
-Entity Framework is an open-source object-relational mapper (O/RM) from Microsoft.  Entity Framework works with many databases. But here, we are going to discuss the step-by-step procedure to create an Entity Framework using the [MS SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server) database and connect it to the Syncfusion control to perform CRUD operations in a ASP.NET Core Application.
+Entity Framework is an open-source object-relational mapper (O/RM) from Microsoft. Entity Framework works with many databases. But here, we are going to discuss the step-by-step procedure to create an Entity Framework using the [MS SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server) database and connect it to the Syncfusion control to perform CRUD operations in a ASP.NET Core Application.
 
 ## Prerequisite software
 
@@ -60,7 +60,7 @@ Now, we are going to scaffold DbContext and model classes from the existing Libr
 Run the following commands in the Package Manager Console.
 
 * **Install-Package Microsoft.EntityFrameworkCore.Tools -Version 6.0.2**: This package creates database context and model classes from the database.
-* **Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 6.0.2**: The database provider that allows Entity Framework Core to work with SQL Server.
+* **Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 6.0.2**: The database provider allows Entity Framework Core to work with SQL Server.
 
 Once the above packages are installed, we can scaffold DbContext and Model classes. Run the following command in the Package Manager Console under the LibraryManagement project.
 
@@ -82,11 +82,11 @@ After running the above command, **LibraryContext.cs** and **Book.cs** files wil
 
 ![Created Model class](../images/library-model-class.png)
 
-We can see that **LibraryContext.cs** file contains the connection string details in the OnConfiguring method.
+The **LibraryContext.cs** file contains the connection string details in the OnConfiguring method.
 
 ![Created Connectionstring](../images/library-connection-string.png)
 
-It is not recommended to have a connection string with sensitive information in the **LibraryContext.cs** file, so we are moving the connection string to the **app settings.json** file.
+It is not recommended to have a connection string with sensitive information in the **LibraryContext.cs** file, so the connection string is moved to the **app settings.json** file.
 
 ![Move connection string to appsettings.json](../images/library-change-connection-string.png)
 
@@ -96,7 +96,7 @@ Now, the **DbContext** must be configured using connection string and registered
 
 ## Creating a Data Access Layer in controller
 
-The application is now configured to connect with the **Library** database using Entity Framework. Now, it’s time to consume data from the Library database. To do so, we need to modify the Home controller to serve data from the DbContext to the ASP.NET Core application.
+The application is now configured to connect with the **Library** database using Entity Framework. Now, it’s time to consume data from the Library database. To do so, modify the Home controller to serve data from the DbContext to the ASP.NET Core application.
 
 Now, replace the Home controller with the following code which contains code to handle CRUD operations in the Book table.
 
@@ -184,7 +184,7 @@ namespace LibraryManagement.Controllers
 
 ## Install ASP.NET Core package in the application
 
-Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](../../nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to [NuGet packages topic](../../nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
 > The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
@@ -244,7 +244,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 
 ## Add Syncfusion DataGrid control to an application
 
-In previous steps, we have successfully configured the Syncfusion ASP.NET Core package in the application. Now, we can add the grid control to to your **Index.cshtml** view page which is present under `Views/Home` folder.
+In previous steps, the Syncfusion ASP.NET Core package is successfully configured in the application. Now, add the grid control to your **Index.cshtml** view page which is present under `Views/Home` folder.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -256,7 +256,7 @@ In previous steps, we have successfully configured the Syncfusion ASP.NET Core p
 
 ## Binding data to Grid control using Entity Framework
 
-To consume data from the Home Controller, we need to add the **DataManager** with **UrlAdaptor**.
+To consume data from the Home Controller, add the **DataManager** with **UrlAdaptor**.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -268,7 +268,7 @@ To consume data from the Home Controller, we need to add the **DataManager** wit
 {% endhighlight %}
 {% endtabs %}
 
-Grid columns can be defined by using the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) component. We are going to create columns using the following code.
+Grid columns can be defined by using the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) component.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -321,9 +321,7 @@ namespace LibraryManagement.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-The response object from the Web API should contain the properties, `Items` and `Count`, whose values are a collection of entities and the total count of the entities, respectively.
-
-The sample response object should look like this:
+The response object from the Web API should contain the properties `Items` and `Count`, whose values are a collection of entities and the total count of the entities respectively.
 
 ```c#
 
@@ -336,10 +334,10 @@ The sample response object should look like this:
 
 ## Handling CRUD operations with ASP.NET Core Grid control
 
-We can enable editing in the grid control using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#normal), [Dialog](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#dialog), and [Batch](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#batch) editing.
+The editing can be enabled in the grid control using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#normal), [Dialog](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#dialog), and [Batch](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#batch) editing.
 
-Here, we are using **Inline** edit mode and used Toolbar property to show toolbar items for editing.
-We have added the Grid Editing and Toolbar code with previous Grid model.
+Here, **Inline** edit mode and Toolbar property are used to show toolbar items for editing.
+The Grid Editing and Toolbar code are added with previous Grid model.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -412,8 +410,6 @@ public IActionResult Update([FromBody] ICRUDModel<Book> value)
 
 {% endhighlight %}
 {% endtabs %}
-
-The resultant grid will look like below.
 
 ![Update Operation](../images/url-update-two.png)
 

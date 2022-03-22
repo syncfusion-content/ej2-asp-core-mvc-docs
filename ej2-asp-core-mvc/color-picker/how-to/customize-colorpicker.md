@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Colorpicker in ##Platform_Name## Color Picker Component
-description: Learn here all about Customize Colorpicker in Syncfusion ##Platform_Name## Color Picker component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to customize Colorpicker in Syncfusion ##Platform_Name## Color Picker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Colorpicker
 publishingplatform: ##Platform_Name##
@@ -74,9 +74,7 @@ In the following sample, the ColorPicker is rendered without input area.
 
 ## Custom handle
 
-Color picker handle shape and UI can be customized. Here, we have customized the handle as `svg icon`. The same way you can customize the handle based on your requirement.
-
-The following sample show the customized color picker handle.
+Color picker handle shape and UI can be customized. Here, the handle has been customized as `svg icon`. The same way you can customize the handle based on your requirement.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -107,7 +105,7 @@ The following sample show the customized color picker handle.
 
 By default, the applied color will be updated in primary button of the color picker. You can customize that as `icon`.
 
-In the following sample, the `picker` icon is added to primary button and using [`change`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Change) event the selected color will be updated in bottom portion of the icon.
+In the following sample, the `picker` icon is added to primary button and using [`change`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Change) event, the selected color will be updated in bottom portion of the icon.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -140,8 +138,6 @@ In the following sample, the `picker` icon is added to primary button and using 
 
 The color picker input element can be showcased in the place of primary button. The applied color hex code will be updated in the primary button input.
 
-The following sample shows the color picker with input.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -169,7 +165,7 @@ The following sample shows the color picker with input.
 
 ## Custom UI
 
-The color picker UI can be customized in all possible ways. The following sample shows the excel like UI customization with help of SplitButton and Dialog component. In that by clicking the more colors option from color palette, the dialog contains color picker will open.
+The color picker UI can be customized in all possible ways. The following sample shows the excel like UI customization with the help of SplitButton and Dialog component. In that by clicking the more colors option from color palette, the dialog contains color picker will open.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
