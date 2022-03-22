@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core DocumentEditor tag helper in `~/Pages/Index
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -119,7 +119,7 @@ For example, the Document Editor Container component is added to the `~/Pages/In
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

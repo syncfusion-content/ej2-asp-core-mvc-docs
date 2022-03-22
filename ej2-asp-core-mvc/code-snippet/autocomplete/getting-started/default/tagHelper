@@ -4,5 +4,5 @@
 }
 
 <div class="control_wrapper AutoComplete-control-section">
-	<ejs-autocomplete id="games" dataSource="@ViewBag.data"> </ejs-autocomplete>
+	<ejs-autocomplete id="games" dataSource="data"> </ejs-autocomplete>
 </div>

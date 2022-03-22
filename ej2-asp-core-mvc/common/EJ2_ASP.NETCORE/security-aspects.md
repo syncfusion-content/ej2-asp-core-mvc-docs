@@ -10,7 +10,7 @@ documentation: ug
 
 # Cross-Site Scripting (XSS)
 
-Cross-Site Scripting is a security vulnerability and a client-side injection attack. Attackers inject the malicious code in a web application, usually JavaScript but could also be HTML or CSS. To prevent this aspect, we have provided the API `EnableHtmlSanitizer` and its default value is set to true.
+Cross-Site Scripting is a security vulnerability and a client-side injection attack. Attackers inject the malicious code in a web application, usually JavaScript but could also be HTML or CSS. To prevent this aspect, the API `EnableHtmlSanitizer` is provided and its default value is set to true.
 
 ## EnableHtmlSanitizer Supported Controls
 

@@ -28,7 +28,7 @@ It requires the following [CLDR](http://cldr.unicode.org/) data to be loaded usi
 
 ### Installing CLDR Data and enable localization in schedule control
 
-1.CLDR data is available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules\cldr-data`.
+1. CLDR data is available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules\cldr-data`.
 
 {% tabs %}
 {% highlight c# tabtitle="CMD" %}
@@ -38,12 +38,12 @@ npm install cldr-data
 {% endhighlight %}
 {% endtabs %}
 
-2.Once the `CLDR-Data` installed create a folder `cldr-data` inside the `wwwroot` folder. Then create the folder directory like shown below in the structure inside the `wwwroot` folder.
+2. Once the `CLDR-Data` installed create a folder `cldr-data` inside the `wwwroot` folder. Then create the folder directory like shown below in the structure inside the `wwwroot` folder.
 
 * `wwwroot\cldr-data\supplemental`
 * `wwwroot\cldr-data\main`
 
-3.The files named as below are required to setup the specific culture to the Schedule control.
+3. The files named as below are required to setup the specific culture to the Schedule control.
 
 * numberingSystems.json
 * ca-gregorian.json
@@ -51,13 +51,13 @@ npm install cldr-data
 * timeZoneNames.json
 * ca-islamic.json
 
-4.The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now you can move this file to the location `wwwroot\cldr-data\supplemental`.
+4. The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now, you can move this file to the location `wwwroot\cldr-data\supplemental`.
 
-5.The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture having the culture files inside the folder named as its language culture code. For example if we are loading the German culture we can find the German culture files inside the location `node_modules\cldr-data\main\fr-CH`. Now create a folder named `fr-CH` inside the location `wwwroot\cldr-data\main` and move the files inside it.
+5. The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture has the culture files inside the folder named as its language culture code. For example if the German culture is loaded, then the German culture files could be found inside the location `node_modules\cldr-data\main\fr-CH`. Now, create a folder named `fr-CH` inside the location `wwwroot\cldr-data\main` and move the files inside it.
 
 ![Moved cldr data to application](./images/cldr-structure.png)
 
-6.Now use the below `loadCultureFiles` method to load the culture specific CLDR JSON data.
+6. Now, use the below `loadCultureFiles` method to load the culture specific CLDR JSON data.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -89,7 +89,7 @@ npm install cldr-data
 {% endhighlight %}
 {% endtabs %}
 
-7.The following code example lets you to set the culture to the Schedule control by using the locale property.
+7. The following code example lets you to set the culture to the Schedule control by using the locale property.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -142,8 +142,7 @@ npm install cldr-data
 
 ## Changing Global Culture and Currency Code
 
-To set the default culture and the currencyCode for all ASP.NET Core controls, you can use the methods
- `setCulture` for setting default locale and `setCurrencyCode` for setting the currencyCode in view page.
+To set the default culture and the currencyCode for all ASP.NET Core controls, you can use the methods `setCulture` for setting default locale and `setCurrencyCode` for setting the currencyCode in view page.
 
 ### Setting Global Culture
 
@@ -169,7 +168,7 @@ To set the default culture and the currencyCode for all ASP.NET Core controls, y
 {% endhighlight %}
 {% endtabs %}
 
-> If global culture is not set then `en-US` is set as default locale and `USD` is set as default currency code.
+> If global culture is not set, then `en-US` is set as default locale and `USD` is set as default currency code.
 
 ## Manipulating Numbers
 
@@ -183,20 +182,20 @@ Based on the  `NumberFormatOptions` number formatting and parsing operations are
 
 | No | Properties | Description |
 | --- | --- | --- |
-| 1 | `format` | Denotes the format to be set .Possible values are  <br />  1. **N -** denotes numeric type.  <br /> 2. **C -** denotes currency type.  <br /> 3. **P -**  denotes percentage type.  <br /> E.g:  <br /> `formatNumber`( **1234344** ,{format:&#39;N4&#39;}).   <br /> <br/> > If no format is specified it takes numeric as default format type. |
+| 1 | `format` | Denotes the format to be set. Possible values are  <br />  1. **N -** denotes numeric type.  <br /> 2. **C -** denotes currency type.  <br /> 3. **P -**  denotes percentage type.  <br /> E.g:  <br /> `formatNumber`( **1234344** ,{format:&#39;N4&#39;}).   <br /> <br/> > If no format is specified it takes numeric as default format type. |
 | 2 | `minimumFractionDigits` | Indicates the minimum number of fraction digits . Possible values are 0 to 20.  |
 | 3 | `maximumFractionDigits` | Indicates the maximum number of fraction digits. Possible values are 0 to 20.  |
-| 4 | `minimumSignificantDigits` | Indicates he minimum number of significant digits. Possible values are  1 to 21. <br /> > If `minimumSignificantDigits` is given it is mandatory to give `maximumSignificantDigits`  |
-| 5 | `maximumSignificantDigits` | Indicates he maximum number of significant digits. . Possible values are  1 to 21.  <br /> > If `maximumSignificantDigits` is given it is mandatory to give `minimumSignificantDigits`  |
-| 6 | `useGrouping` | Indicates whether to enable  the group separator or not . By default grouping value will be true.  |
+| 4 | `minimumSignificantDigits` | Indicates the minimum number of significant digits. Possible values are  1 to 21. <br /> > If `minimumSignificantDigits` is given it is mandatory to give `maximumSignificantDigits`  |
+| 5 | `maximumSignificantDigits` | Indicates the maximum number of significant digits. . Possible values are  1 to 21.  <br /> > If `maximumSignificantDigits` is given it is mandatory to give `minimumSignificantDigits`  |
+| 6 | `useGrouping` | Indicates whether to enable the group separator or not. By default grouping value will be true.  |
 | 7 | `minimumIntegerDigits` | Indicates the minimum number of the integer digits to be placed in the value. Possible values are 1 to 21.  |
 | 8 | `currency`| Indicates the currency code which needs to considered for the currency formatting.  |
 
-> The `minimumIntegerDigits`, `minimumFractionDigits` and `maximumFractionDigits` are categorized as group one, `minimumSignificantDigits` and `maximumSignificantDigits` are categorized as group two. If group two properties are defined, then the  group one properties will be ignored.
+> The `minimumIntegerDigits`, `minimumFractionDigits` and `maximumFractionDigits` are categorized as group one, `minimumSignificantDigits` and `maximumSignificantDigits` are categorized as group two. If group two properties are defined, then the group one properties will be ignored.
 
 ### Custom number formatting and parsing
 
-Custom number formatting and parsing are also supported by specifying the pattern directly in the **format** property of `NumberFormatOptions`. Custom number format can be achieved by using one or more custom format specifiers listed in the below table.
+Custom number formatting and parsing are also be supported by specifying the pattern directly in the **format** property of `NumberFormatOptions`. Custom number format can be achieved by using one or more custom format specifiers listed in the below table.
 
 | Specifier | Description | Input | Format Output |
 | ------- |--------------- | ---------------- | --------------- |
@@ -214,7 +213,7 @@ Custom number formatting and parsing are also supported by specifying the patter
 
 #### `getNumberFormat`
 
-The `getNumberFormat` method which will return a function that formats given number based on the `NumberFormatOptions` specified.
+The `getNumberFormat` method will return a function that formats given number based on the `NumberFormatOptions` specified.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -236,7 +235,7 @@ The `getNumberFormat` method which will return a function that formats given num
 
 #### `formatNumber`
 
- The `formatNumber` method which takes two arguments numeric value and `NumberFormatOptions` and returns the formatted string.
+ The `formatNumber` method which takes two arguments numeric value and `NumberFormatOptions`, returns the formatted string.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -260,7 +259,7 @@ The `getNumberFormat` method which will return a function that formats given num
 
 #### `getNumberParser`
 
-The `getNumberParser` method which will return a function that parses given string based on the `NumberFormatOptions` specified.
+The `getNumberParser` method will return a function that parses given string based on the `NumberFormatOptions` specified.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -281,7 +280,7 @@ The `getNumberParser` method which will return a function that parses given stri
 
 #### `parseNumber`
 
-The `parseNumber` method which takes two arguments the string value, `NumberFormatOptions` and returns the numeric value.
+The `parseNumber` method takes two arguments the string value, `NumberFormatOptions` and returns the numeric value.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -303,7 +302,7 @@ The `parseNumber` method which takes two arguments the string value, `NumberForm
 
 ### Supported Format String
 
-Based on the  `DateFormatOptions` date formatting and parsing operations are processed. You need to specify  some or all of the following properties mentioned below table.
+Based on the `DateFormatOptions`, date formatting and parsing operations are processed. You need to specify some or all of the following properties mentioned below table.
 
 | Options | Descriptions |
 | --- | --- |
@@ -382,7 +381,7 @@ Apart from the standard date type formats additional format are supported by usi
 
 ### Custom Formats
 
-To use the custom date and time formats we need to specify the date/time pattern directly in the *format* property. Custom format string must contain one or more  of the following standard date/time symbols
+To use the custom date and time formats, specify the date/time pattern directly in the *format* property. Custom format string must contain one or more of the following standard date/time symbols
 
 | Symbols | Description |
 |--------- |------------- |
@@ -445,7 +444,7 @@ The `getDateFormat` method which will return a function that formats given date 
 
 #### `formatDate`
 
- The `formatDate` method which takes two arguments date object,`DateFormatOptions` and returns the formatted string.
+ The `formatDate` method takes two arguments date object and `DateFormatOptions`, and returns the formatted string.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -470,7 +469,7 @@ The `getDateFormat` method which will return a function that formats given date 
 
 #### `getDateParser`
 
-The `getDateParser` method which will return a function that parses given string based on the `DateFormatOptions` specified.
+The `getDateParser` method will return a function that parses given string based on the `DateFormatOptions` specified.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -491,7 +490,7 @@ The `getDateParser` method which will return a function that parses given string
 
 #### `parseDate`
 
-The `parseDate` method which takes two arguments  string value, `DateFormatOptions` and returns the date Object.
+The `parseDate` method takes two arguments string value, `DateFormatOptions` and returns the date Object.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}

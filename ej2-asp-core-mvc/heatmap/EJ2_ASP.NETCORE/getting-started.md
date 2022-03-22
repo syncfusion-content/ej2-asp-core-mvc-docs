@@ -95,7 +95,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 Now, add the Syncfusion ASP.NET Core HeatMap tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
 <ejs-heatmap id="heatmap">
 </ejs-heatmap>
@@ -110,7 +110,7 @@ This section explains how to populate the following two-dimensional array data t
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/data/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -138,7 +138,7 @@ You can add axis labels to the heat map and format those labels using the [`xAxi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/axis/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -164,7 +164,7 @@ Add a title using the [`titleSettings`](https://help.syncfusion.com/cr/aspnetcor
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/title/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -190,7 +190,7 @@ Use a legend for the heat map in the [`legendSettings`](https://help.syncfusion.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/legend/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -216,7 +216,7 @@ Add data labels to improve the readability of the heat map. This can be achieved
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/label/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -242,7 +242,7 @@ The default palette settings of the heat map cells can be customized by using th
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/palette/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -268,7 +268,7 @@ The tooltip is used when you cannot display information by using the data labels
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/heatmap/getting-started/tooltip/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -286,6 +286,8 @@ The tooltip is used when you cannot display information by using the data labels
 {% endif %}
 
 ![ASP.NET Core HeatMap with Tooltip](images/heatmap-with-tooltip.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/HeatMap/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

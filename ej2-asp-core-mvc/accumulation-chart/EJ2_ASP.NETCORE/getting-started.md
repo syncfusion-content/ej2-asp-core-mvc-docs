@@ -97,7 +97,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 Now, add the Syncfusion ASP.NET Core AccumulationChart tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <ejs-accumulationchart id="container" title="Mobile Browser Statistics">
     <e-accumulationchart-legendsettings visible="false">
@@ -118,10 +118,10 @@ By default, the pie series will be rendered when assigning the JSON data to the 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/datalabel/initial/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Index.cshtml.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 ....
 ....
 public class PieChartData

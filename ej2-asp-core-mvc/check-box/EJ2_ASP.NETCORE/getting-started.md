@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core CheckBox tag helper in `~/Pages/Index.cshtm
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/check-box/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -134,7 +134,7 @@ The CheckBox indeterminate state can be set through [`indeterminate`](https://he
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/check-box/state/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

@@ -28,7 +28,7 @@ Refer to [Host and deploy ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/
 
 ![Release Configuration](./images/config.png)
 
-* For `ASp.NET Core application`, Set Deployment Mode as `Self-Contained`. Because some dependencies are not loaded properly when we host the published folder.
+* For `ASp.NET Core application`, set Deployment Mode as `Self-Contained`. Because some dependencies are not loaded properly when the published folder is hosted.
 
 ![Deploy Mode](./images/deploy.png)
 
@@ -60,7 +60,7 @@ dotnet publish -c Release --self-contained true -r win-x86
 {% endhighlight %}
 {% endtabs %}
 
-Refer to the dotnet publish\'s [optional arguments](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish?tabs=netcore21#arguments).
+Refer to the dotnet publish's [optional arguments](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish?tabs=netcore21#arguments).
 
 Use the following command to specify the path for the output directory.
 

@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core DateTimePicker tag helper in `~/Pages/Index
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/datetimepicker/getting-started/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -123,7 +123,7 @@ The minimum and maximum date time can be defined with the help of `min` and `max
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/datetimepicker/getting-started/daterange/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
