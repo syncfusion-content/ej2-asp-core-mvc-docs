@@ -70,7 +70,7 @@ Refer to the following steps to download the custom resources in CRG.
 
 ## Import previously generated settings into the CRG
 
-To add more controls or upgrade the latest Syncfusion ASP.NET Core library resources, it is not necessary to generate it from the scratch in the CRG. Just import the old **import.json** file and made the changes, then download it again from the CRG application.
+To add more controls or upgrade the latest Syncfusion ASP.NET Core library resources, it is not necessary to generate it from the scratch in the CRG. Just import the old **import.json** file and make the changes, then download it again from the CRG application.
 
 Refer to the following steps to import previous **import.json** file in the CRG.
 

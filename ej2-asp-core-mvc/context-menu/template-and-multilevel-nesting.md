@@ -41,7 +41,7 @@ The ContextMenu items can be customized by using the [`Render`](https://help.syn
 
 ## Multilevel nesting
 
-The Multiple level nesting supports in ContextMenu. It can be achieved by mapping the [`items`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~Items.html) property inside the parent [`menuItems`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem.html). In the below sample, three level nesting of ContextMenu is provided.
+The Multiple level nesting supports in ContextMenu. It can be achieved by mapping the [`items`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~Items.html) property inside the parent [`menuItems`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
