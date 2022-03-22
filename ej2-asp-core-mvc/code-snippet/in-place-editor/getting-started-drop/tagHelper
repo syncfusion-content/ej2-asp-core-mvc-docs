@@ -1,3 +1,8 @@
+@{
+    ....
+    string[] genderData = new string[] { "Male", "Female" };
+    ViewBag.modalData = new { placeholder = "Select gender", dataSource = genderData };
+}
 
 <div style="margin:0 auto; width:300px;">
     <ejs-inplaceeditor id="element" type="DropDownList" model="ViewBag.modalData" mode="Inline">

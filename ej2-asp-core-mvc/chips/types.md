@@ -48,7 +48,7 @@ Input Chip holds information in compact form. It converts user input into chips.
 
 ## Choice Chip
 
-Choice Chip allows you to select a single chip from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Single`.
+Choice Chip allows to select a single chip from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Single`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -77,7 +77,7 @@ Choice Chip allows you to select a single chip from the set of ChipList/ChipColl
 
 ## Filter Chip
 
-Filter Chip allows you to select a multiple chip from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Multiple`.
+Filter Chip allows to select a multiple chip from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Multiple`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -135,7 +135,7 @@ The Action Chip triggers the event like click or delete, which helps doing actio
 
 ### Deletable Chip
 
-Deletable Chip allows you to delete a chip from ChipList/ChipCollection. It can be enabled by setting the `enableDelete` property to `true`.
+Deletable Chip allows to delete a chip from ChipList/ChipCollection. It can be enabled by setting the `enableDelete` property to `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

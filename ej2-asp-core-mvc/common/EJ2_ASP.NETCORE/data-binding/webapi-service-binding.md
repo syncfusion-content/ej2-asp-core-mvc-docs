@@ -10,7 +10,7 @@ documentation: ug
 
 # Bind data to the Syncfusion Controls using WebApiAdaptor
 
-In this topic, we are going to learn how to retrieve data from WebApi Controller, bind to Grid control using **WebApiAdaptor** of `DataManger`, and perform CRUD operations.
+In this topic, you can learn how to retrieve data from WebApi Controller, bind to Grid control using **WebApiAdaptor** of `DataManger`, and perform CRUD operations.
 
 You can use the WebApiAdaptor of DataManager to interact with Web APIs created with OData endpoint. The WebApiAdaptor is extended from the ODataAdaptor. Hence, to use WebApiAdaptor, the endpoint should understand the OData formatted queries sent along with the request.
 
@@ -64,14 +64,14 @@ Open Visual Studio and follow the steps in the below documentation to create the
 
 ### Generate DbContext and model class from the database
 
-Now, we are going to scaffold **DbContext** and **model classes** from the existing **OrdersDetails** database. To perform scaffolding and work with the SQL Server database in our application, we need to install the following NuGet packages.
+Now, **DbContext** and **model classes** are going to be scaffolded from the existing **OrdersDetails** database. To perform scaffolding and work with the SQL Server database in the application, you need to install the following NuGet packages.
 
 Run the following commands in the **Package Manager Console**.
 
 * **Install-Package Microsoft.EntityFrameworkCore.Tools -Version 6.0.2**: This package creates database context and model classes from the database.
-* **Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 6.0.2**: The database provider that allows Entity Framework Core to work with SQL Server.
+* **Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 6.0.2**: The database provider allows Entity Framework Core to work with SQL Server.
 
-Once the above packages are installed, we can scaffold DbContext and Model classes. Run the following command in the **Package Manager Console**.
+Once the above packages are installed, you can scaffold DbContext and Model classes. Run the following command in the **Package Manager Console**.
 
 {% tabs %}
 {% highlight c# tabtitle="CONSOLE" %}
@@ -90,11 +90,11 @@ After running the above command, **OrdersDetailsContext.cs** and **Order.cs** fi
 
 ![Data folder](../images/webapi-data-folder.png)
 
-We can see that OrdersDetailsContext.cs file contains the connection string details in the **OnConfiguring** method.
+OrdersDetailsContext.cs file contains the connection string details in the **OnConfiguring** method.
 
 ![Remove connection string from context file](../images/webapi-context.png)
 
-It is not recommended to have a connection string with sensitive information in the OrdersDetailsContext.cs file, so we are moving the connection string to the **appsettings.json** file.
+It is not recommended to have a connection string with sensitive information in the OrdersDetailsContext.cs file, so the connection string is moved to the **appsettings.json** file.
 
 ![Add connection string in appsettings](../images/odata-appsettings.png)
 
@@ -104,9 +104,9 @@ Now, the DbContext must be configured using connection string and registered as 
 
 ### Creating API Controller
 
-The application is now configured to connect with the **OrdersDetails** database using Entity Framework. Now, it’s time to consume data from the OrdersDetails database. To do so, we need a Web API controller to serve data from the DbContext to the ASP.NET Core application.
+The application is now configured to connect with the **OrdersDetails** database using Entity Framework. Now, it’s time to consume data from the OrdersDetails database. To do so, a Web API controller is required to serve data from the DbContext to the ASP.NET Core application.
 
-To create a Web API controller, right-click the **Controller** folder in the Server project and select **Add -> New Item -> API controller with read/write actions** to create a new Web API controller. We are naming this controller as OrdersController as it returns Orders table records.
+To create a Web API controller, right-click the **Controller** folder in the Server project and select **Add -> New Item -> API controller with read/write actions** to create a new Web API controller. This controller is named as OrdersController as it returns Orders table records.
 
 Now, replace the Web API controller with the following code which contains code to handle CRUD operations in the Orders table.
 
@@ -178,7 +178,7 @@ namespace WEBAPICRUD.Controllers
 
 ## Install ASP.NET Core package in the application
 
-Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](../../nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
 > The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
@@ -195,7 +195,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
     
 ## Add Style Sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](../../appearance/theme/) to learn different ways ([CDN](../../common/adding-script-references), [NPM package](../../common/adding-script-references#node-package-manager-npm), and [CRG](../../common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
@@ -208,7 +208,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 {% endtabs %}
 
 ## Add Script Reference
-In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+In this getting started walk-through, the required scripts are referred using [CDN](../../common/adding-script-references) inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
@@ -235,7 +235,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 
 ## Add Syncfusion Grid control to an application
 
-In previous steps, we have successfully configured the Syncfusion ASP.NET Core package in the application. Now, we can add the grid control to to your **Index.cshtml** view page which is present under `Views/Home` folder.
+In previous steps, the Syncfusion ASP.NET Core package is successfully configured in the application. Now, add the grid control to your **Index.cshtml** view page which is present under `Views/Home` folder.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -247,7 +247,7 @@ In previous steps, we have successfully configured the Syncfusion ASP.NET Core p
 
 ## Binding data to Grid control using WebApiAdaptor
 
-To consume data from the WebApi Controller, we need to add the **DataManager** with **WebApiAdaptor**.
+To consume data from the WebApi Controller, add the **DataManager** with **WebApiAdaptor**.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -259,7 +259,7 @@ To consume data from the WebApi Controller, we need to add the **DataManager** w
 {% endhighlight %}
 {% endtabs %}
 
-Grid columns can be defined by using the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) component. We are going to create columns using the following code.
+Grid columns can be defined by using the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) component.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -312,8 +312,6 @@ namespace WEBAPICRUD
 
 The response object from the Web API should contain the properties, `Items` and `Count`, whose values are a collection of entities and the total count of the entities, respectively.
 
-The sample response object should look like this:
-
 ```c#
 
 {
@@ -325,9 +323,9 @@ The sample response object should look like this:
 
 ## Handling CRUD operations with Syncfusion Grid control
 
-We can enable editing in the grid control using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/in-line-editing), [Dialog](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/dialog-editing), and [Batch](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/batch-editing) editing.
+The grid control can enable editing by using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/in-line-editing), [Dialog](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/dialog-editing), and [Batch](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/batch-editing) editing.
 
-Here, we are using **Inline** edit mode and used Toolbar property to show toolbar items for editing.
+Here, **Inline** edit mode and Toolbar property are used to show toolbar items for editing.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -350,7 +348,7 @@ Here, we are using **Inline** edit mode and used Toolbar property to show toolba
 
 ### Insert a row
 
-To insert a new row, click the **Add** toolbar button. The new record edit form will look like below.
+To insert a new row, click the **Add** toolbar button.
 
 ![Insert Operation](../images/odata-add-one.png)
 
@@ -396,7 +394,6 @@ public void Put(long id, [FromBody] Order book)
 {% endhighlight %}
 {% endtabs %}
 
-The resultant grid will look like below.
 
 ![Update Operation](../images/odata-update-two.png)
 

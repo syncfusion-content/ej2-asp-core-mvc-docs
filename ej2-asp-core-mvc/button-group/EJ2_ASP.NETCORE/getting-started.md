@@ -148,7 +148,7 @@ Button Group can be aligned vertically by using the built-in CSS class `e-vertic
 
 ![ASP.NET Core Button Group Control in Vertical Position](images/button-group-vertical.png)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ButtonGroup/ButtonGroupSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ButtonGroup/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 > ButtonGroup does not support SplitButton control nesting in a vertical orientation.
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # Bind data to the Syncfusion Controls using ODataV4Adaptor
 
-In this topic, we are going to learn how to retrieve data from RESTful web services, bind data to a ASP.NET Core Grid control, and perform CRUD operations. Here, we have fetched data from the ODataV4 service using **ODataV4Adaptor** in `DataManger`. It is recommended to choose the suitable adaptor based on the RESTful service which you are using to bind data for the Syncfusion ASP.NET Core control.
+In this topic, you can learn how to retrieve data from RESTful web services, bind data to a ASP.NET Core Grid control, and perform CRUD operations. Here, data is fetched from the ODataV4 service using **ODataV4Adaptor** in `DataManger`. It is recommended to choose the suitable adaptor based on the RESTful service which you are using to bind data for the Syncfusion ASP.NET Core control.
 
 ## Prerequisite software
 
@@ -63,14 +63,14 @@ After creating the application, install **Microsoft.AspNetCore.OData** package b
 
 ### Generate DbContext and model class from the database
 
-Now, we are going to scaffold **DbContext** and **model classes** from the existing **OrdersDetails** database. To perform scaffolding and work with the SQL Server database in our application, we need to install the following NuGet packages.
+Now, scaffold **DbContext** and **model classes** from the existing **OrdersDetails** database. To perform scaffolding and work with the SQL Server database in our application, install the following NuGet packages.
 
 Run the following commands in the **Package Manager Console**.
 
 * **Install-Package Microsoft.EntityFrameworkCore.Tools -Version 6.0.2**: This package creates database context and model classes from the database.
 * **Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 6.0.2**: The database provider that allows Entity Framework Core to work with SQL Server.
 
-Once the above packages are installed, we can scaffold DbContext and Model classes. Run the following command in the **Package Manager Console**.
+Once the above packages are installed, you can scaffold DbContext and Model classes. Run the following command in the **Package Manager Console**.
 
 {% tabs %}
 {% highlight c# tabtitle="CONSOLE" %}
@@ -89,11 +89,11 @@ After running the above command, the **OrdersDetailsContext.cs** and **Order.cs*
 
 ![Models folder](../images/odata-models.png)
 
-We can see that OrdersDetailsContext.cs file contains the connection string details in the **OnConfiguring** method.
+The OrdersDetailsContext.cs file contains the connection string details in the **OnConfiguring** method.
 
 ![Remove connection string from context file](../images/odata-context.png)
 
-It is not recommended to have a connection string with sensitive information in the OrdersDetailsContext.cs file, so we are moving the connection string to the **appsettings.json** file.
+It is not recommended to have a connection string with sensitive information in the OrdersDetailsContext.cs file, so move the connection string to the **appsettings.json** file.
 
 ![Add connection string in appsettings](../images/odata-appsettings.png)
 
@@ -103,9 +103,9 @@ Now, the DbContext must be configured using connection string and registered as 
 
 ### Creating ODataV4 Service
 
-The application is now configured to connect with the **OrdersDetails** database using Entity Framework. Now, it’s time to consume data from the OrdersDetails database. To do so, we need an OData controller to serve data from the DbContext to the ASP.NET Core application.
+The application is now configured to connect with the **OrdersDetails** database using Entity Framework. Now, it’s time to consume data from the OrdersDetails database. To do so, an OData controller is required to serve data from the DbContext to the ASP.NET Core application.
 
-To create OData controller, right-click **Controller** folder in ODataServiceProject and select **Add -> New Item -> API controller with read/write actions**. We are naming this controller as **OrdersController** as it returns Orders table records.
+To create OData controller, right-click **Controller** folder in ODataServiceProject and select **Add -> New Item -> API controller with read/write actions**. This controller is named as **OrdersController** as it returns Orders table records.
 
 Now, replace the controller with the following code which contains code to handle CRUD operations in the Orders table.
 
@@ -224,11 +224,12 @@ app.Run();
 
 ## Install ASP.NET Core package in the application
 
-Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](../../nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
 > The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
 ## Add Syncfusion ASP.NET Core Tag Helper
+
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
@@ -241,7 +242,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
     
 ## Add Style Sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](../../appearance/theme/) to learn different ways ([CDN](../../common/adding-script-references), [NPM package](../../common/adding-script-references#node-package-manager-npm), and [CRG](../../common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
@@ -254,7 +255,8 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 {% endtabs %}
 
 ## Add Script Reference
-In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+
+In this getting started walk-through, the required scripts are referred using [CDN](../../common/adding-script-references) inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
@@ -267,6 +269,7 @@ In this getting started walk-through, the required scripts are referred using CD
 {% endtabs %}
 
 ## Register Syncfusion Script Manager
+
 Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
 
 {% tabs %}
@@ -281,7 +284,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 
 ## Add DataGrid control to an application
 
-In previous steps, we have successfully configured the Syncfusion ASP.NET Core package in the application. Now, we can add the grid control to to your **Index.cshtml** view page which is present under `Views/Home` folder.
+In previous steps, the Syncfusion ASP.NET Core package in the application is successfully configured. Now, add the grid control to your **Index.cshtml** view page which is present under `Views/Home` folder.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -293,7 +296,7 @@ In previous steps, we have successfully configured the Syncfusion ASP.NET Core p
 
 ## Binding data to  DataGrid control using ODataV4Adaptor
 
-To consume data from the OData Controller, we need to add the **DataManager** with **ODataV4Adaptor** like below.
+To consume data from the OData Controller, add the **DataManager** with **ODataV4Adaptor** like below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -305,9 +308,9 @@ To consume data from the OData Controller, we need to add the **DataManager** wi
 {% endhighlight %}
 {% endtabs %}
 
-> In the above code example, we have used our localhost address from our application. Instead of localhost, you can give the exact URL of your OData service.
+> In the above code example, use localhost address from the application. Instead of localhost, you can give the exact URL of your OData service.
 
-Grid columns can be defined by using the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) component. We are going to create columns using the following code.
+Grid columns can be defined by using the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) component.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -326,7 +329,7 @@ Grid columns can be defined by using the [GridColumn](https://help.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
 
-When you run the application, the **Get()** method will be called in your OData controller.
+When the application is run, the **Get()** method will be called in OData controller.
 
 {% tabs %}
 {% highlight c# tabtitle="OrdersController.cs" %}
@@ -355,9 +358,9 @@ public class OrdersController : ODataController
 
 ## Handling CRUD operations with Syncfusion DataGrid control
 
-We can enable editing in the grid control using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/in-line-editing), [Dialog](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/dialog-editing), and [Batch](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/batch-editing) editing.
+Editing can be enabled in the grid control using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/in-line-editing), [Dialog](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/dialog-editing), and [Batch](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/batch-editing) editing.
 
-Here, we are using **Inline** edit mode and used Toolbar property to show toolbar items for editing.
+Here, **Inline** edit mode and Toolbar property are used to show toolbar items for editing.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -380,7 +383,7 @@ Here, we are using **Inline** edit mode and used Toolbar property to show toolba
 
 ### Insert a row
 
-To insert a new row, click the **Add** toolbar button. The new record edit form will look like below.
+To insert a new row, click the **Add** toolbar button.
 
 ![Insert Operation](../images/odata-add-one.png)
 
@@ -424,8 +427,6 @@ public async Task<IActionResult> Patch([FromODataUri] long key, [FromBody] Delta
 
 {% endhighlight %}
 {% endtabs %}
-
-The resultant grid will look like below.
 
 ![Update Operation](../images/odata-update-two.png)
 

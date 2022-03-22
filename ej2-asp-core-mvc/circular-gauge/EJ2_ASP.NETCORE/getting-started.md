@@ -121,7 +121,7 @@ You can add a title using `title` attribute to the circulargauge to provide quic
 
 ## Axis
 
-You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer below code snippet to add the axis range to circulargauge.
+You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer the following code snippet to add the axis range to circulargauge.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/Index.cshtml" %}
@@ -138,7 +138,7 @@ You can set the range to the axis using `minimum` and `maximum` attributes for a
 
 ![ASP.NET Core CircularGauge with Axis](images/circulargauge-with-axis.png)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/CircularGauge/CircularGaugeSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

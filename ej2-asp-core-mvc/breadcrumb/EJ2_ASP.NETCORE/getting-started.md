@@ -165,7 +165,7 @@ This feature enables or disables the item navigation. By default, the navigation
 
 ![Breadcrumb Sample](./images/enable-disable.png)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Breadcrumb/BreadcrumbSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Breadcrumb/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

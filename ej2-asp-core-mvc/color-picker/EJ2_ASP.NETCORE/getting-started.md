@@ -146,7 +146,7 @@ By default, the ColorPicker will be rendered using SplitButton and open the pop-
 
 ![ASP.NET Core ColorPicker with Inline](images/color-picker-with-inline.png)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ColorPicker/ColorPickerSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ColorPicker/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

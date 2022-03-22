@@ -94,15 +94,15 @@ Now, add the Syncfusion ASP.NET Core Accordion tag helper in `~/Pages/Index.csht
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
 
-        <div class="control_wrapper accordion-control-section">
-            <ejs-accordion id="defaultAccordion">
-                <e-accordion-accordionitems>
-                    <e-accordion-accordionitem expanded="true" header="ASP.NET" content="Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser. ASP.NET pages use a compiled,event-driven programming model that improves performance and enables the separation of application logic and user interface."></e-accordion-accordionitem>
-                    <e-accordion-accordionitem header="ASP.NET MVC" content="The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications. The ASP.NET MVC framework is a lightweight, highly testable presentation framework that (as with Web Forms-based applications) is integrated with existing ASP.NET features, such as master pages and membership-based authentication."></e-accordion-accordionitem>
-                    <e-accordion-accordionitem header="JavaScript" content="JavaScript (JS) is an interpreted computer programming language.It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.More recently, however, it has become common in both game development and the creation of desktop applications."></e-accordion-accordionitem>
-                </e-accordion-accordionitems>
-            </ejs-accordion>
-        </div>
+<div class="control_wrapper accordion-control-section">
+    <ejs-accordion id="defaultAccordion">
+        <e-accordion-accordionitems>
+            <e-accordion-accordionitem expanded="true" header="ASP.NET" content="Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser. ASP.NET pages use a compiled,event-driven programming model that improves performance and enables the separation of application logic and user interface."></e-accordion-accordionitem>
+            <e-accordion-accordionitem header="ASP.NET MVC" content="The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating Web applications. The ASP.NET MVC framework is a lightweight, highly testable presentation framework that (as with Web Forms-based applications) is integrated with existing ASP.NET features, such as master pages and membership-based authentication."></e-accordion-accordionitem>
+            <e-accordion-accordionitem header="JavaScript" content="JavaScript (JS) is an interpreted computer programming language.It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.More recently, however, it has become common in both game development and the creation of desktop applications."></e-accordion-accordionitem>
+        </e-accordion-accordionitems>
+    </ejs-accordion>
+</div>
 
 {% endhighlight %}
 {% endtabs %}
@@ -111,7 +111,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Accordion control - Getting Started](images/accordion.PNG)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Accordion/AccordionSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Accordion/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
