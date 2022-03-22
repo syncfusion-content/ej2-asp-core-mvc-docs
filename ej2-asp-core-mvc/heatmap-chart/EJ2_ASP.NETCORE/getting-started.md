@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Heatmap Chart Component
-description: Checkout and learn about getting started with ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## HeatmapChart Control
+description: Checkout and learn about getting started with ##Platform_Name## HeatmapChart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -11,65 +11,97 @@ documentation: ug
 
 # Getting Started
 
+This section briefly explains about how to include [ASP.NET Core HeatMapChart](https://www.syncfusion.com/aspnet-core-ui-controls/heatmap-chart) control in your ASP.NET Core application using Visual Studio.
+
 ## Prerequisites
 
-To get start with ASP.NET Core application, need to ensure the following software to be installed on the machine.
-* Visual Studio 2017
-* DotNet Core 2.0
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-## Setup ASP.NET Core application with Essential JS 2 for ASP.NET Core
+## Create ASP.NET Core web application with Razor pages
 
-The following steps to create ASP.NET Core Application.
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-**Step 1:** Create ASP.NET Core Web Application with default template project in Visual Studio 2017.
+* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
 
-![Alt text](./images/default-template.png)
+## Install ASP.NET Core package in the application
 
-**Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using Nugget Package Manager.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-Open the `nuGet` package manager.
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-![Alt text](./images/solution-explorer-core.png)
+## Add Syncfusion ASP.NET Core Tag Helper
 
-Install the **Syncfusion.EJ2.AspNet.Core** package to the application
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
-![Alt text](./images/nuget-demo-core.png)
+{% tabs %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
-After Installation complete this will included in the project. You can refer it from the Project Assembly Reference.
-
-> We need to install **NewtonSoft.JSON** as dependency since it **Syncfusion.EJ2** dependent to NewtonSoft.JSON package.
-
-**Step 3:** Open the **_ViewImports.cshtml** to import Syncfusion.EJ2 package.
-
-```cs
 @addTagHelper *, Syncfusion.EJ2
-```
 
-**Step 4:** Add client side resource through [`CDN`](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/client-side-resource/) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **_Layout.cshtml.**
+{% endhighlight %}
+{% endtabs %}
 
-```cs
-@* Syncfusion Essential JS 2 Styles *@
-<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+## Add style sheet
 
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
-```
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-**Step 5:** Adding Script Manager in layout page **_Layout.cshtml.**
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-```cs
-<ejs-scripts></ejs-scripts>
-```
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+</head>
 
-**Step 6:** Add the below code to your Index.cshtml view page which is present under Views/Home folder, to initialize the heatmap.
+{% endhighlight %}
+{% endtabs %}
 
-```html
+## Add script reference
 
-@using Syncfusion.EJ2.HeatMap;
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Register Syncfusion Script Manager
+
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<body>
+    ....
+    ....
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts></ejs-scripts>
+</body>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add ASP.NET Core HeatMap control
+
+Now, add the Syncfusion ASP.NET Core HeatMap tag helper in `~/Pages/Index.cshtml` page.
+
+{% tabs %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
+
 <ejs-heatmap id="heatmap">
 </ejs-heatmap>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Populate heat map with data
 
@@ -78,11 +110,8 @@ This section explains how to populate the following two-dimensional array data t
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/heatmap/getting-started/data/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/heatmap/getting-started/data/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -98,7 +127,9 @@ This section explains how to populate the following two-dimensional array data t
 {% endtabs %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core HeatMapChart control will be rendered in the default web browser.
 
+![ASP.NET Core HeatMap with Data](images/heatmap-with-data.png)
 
 ## Enable axis labels
 
@@ -107,11 +138,8 @@ You can add axis labels to the heat map and format those labels using the [`xAxi
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/heatmap/getting-started/axis/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/heatmap/getting-started/axis/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,7 +155,7 @@ You can add axis labels to the heat map and format those labels using the [`xAxi
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatMap with Axis Labels](images/heatmap-with-axis-labels.png)
 
 ## Add heat map title
 
@@ -136,11 +164,8 @@ Add a title using the [`titleSettings`](https://help.syncfusion.com/cr/aspnetcor
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/heatmap/getting-started/title/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/heatmap/getting-started/title/title.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -156,7 +181,7 @@ Add a title using the [`titleSettings`](https://help.syncfusion.com/cr/aspnetcor
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatMap with Title](images/heatmap-with-title.png)
 
 ## Enable legend
 
@@ -165,11 +190,8 @@ Use a legend for the heat map in the [`legendSettings`](https://help.syncfusion.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/heatmap/getting-started/legend/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Legend.cs" %}
-{% include code-snippet/heatmap/getting-started/legend/legend.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -185,7 +207,7 @@ Use a legend for the heat map in the [`legendSettings`](https://help.syncfusion.
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatMap with Legend](images/heatmap-with-legend.png)
 
 ## Add data label
 
@@ -194,11 +216,8 @@ Add data labels to improve the readability of the heat map. This can be achieved
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/heatmap/getting-started/label/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Label.cs" %}
-{% include code-snippet/heatmap/getting-started/label/label.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -214,7 +233,7 @@ Add data labels to improve the readability of the heat map. This can be achieved
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatMap with DataLabel](images/heatmap-with-datalabel.png)
 
 ## Add custom cell palette
 
@@ -223,11 +242,8 @@ The default palette settings of the heat map cells can be customized by using th
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/heatmap/getting-started/palette/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Palette.cs" %}
-{% include code-snippet/heatmap/getting-started/palette/palette.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -243,7 +259,7 @@ The default palette settings of the heat map cells can be customized by using th
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core HeatMap with Custom Palette](images/heatmap-with-palette.png)
 
 ## Enable tooltip
 
@@ -252,11 +268,8 @@ The tooltip is used when you cannot display information by using the data labels
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="~/Index.cshtml" %}
 {% include code-snippet/heatmap/getting-started/tooltip/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% include code-snippet/heatmap/getting-started/tooltip/tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -272,3 +285,9 @@ The tooltip is used when you cannot display information by using the data labels
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core HeatMap with Tooltip](images/heatmap-with-tooltip.png)
+
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
