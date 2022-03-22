@@ -151,7 +151,7 @@ The CheckBox indeterminate state can be set through [`indeterminate`](https://he
 {% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/CheckBox/CheckBoxSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/CheckBox/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
