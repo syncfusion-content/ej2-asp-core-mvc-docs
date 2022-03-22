@@ -102,7 +102,7 @@ namespace ASPCore.Pages
 {% endhighlight %}
 {% endtabs %}
 
-![Output of extending Syncfusion component](images/extend-sync-component.png)
+![Output of extending Syncfusion control](images/extend-sync-component.png)
 
 ## Use Syncfusion ASP.NET Core Control within Another view component
 

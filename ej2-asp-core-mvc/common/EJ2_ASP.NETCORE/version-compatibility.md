@@ -29,7 +29,7 @@ The following table represents the supported .NET and .NET Core versions by diff
 
 ## Syncfusion Version Information
 
-In a year, Syncfusion releases new volumes once every three months. Syncfusion ASP.NET Core components follows sequence-based identifiers to process software releases based on the **Major.Minor.Build.Revision** format to track all the release changes. It helps developers to keep track of the changes in every release. 
+In a year, Syncfusion releases new volumes once every three months. Syncfusion ASP.NET Core controls follows sequence-based identifiers to process software releases based on the **Major.Minor.Build.Revision** format to track all the release changes. It helps developers to keep track of the changes in every release. 
 
 For example, if the release a package version is `19.3.0.43`, the version number indicates the details as follows,
 

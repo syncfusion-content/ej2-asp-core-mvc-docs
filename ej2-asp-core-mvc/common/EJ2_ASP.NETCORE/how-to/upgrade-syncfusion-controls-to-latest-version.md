@@ -26,17 +26,17 @@ Ensure your Script and CSS files have been properly configured in your applicati
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Scripts -->
+    <!-- Syncfusion ASP.NET Core controls Scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 </head>
-{% endhighlight %}
+{% endhighlight %}z
 {% endtabs %}
 
 Make sure that the version in the URLs matches the version of the `Syncfusion.EJ2.AspNet.Core` NuGet package in your application.
     
-> For production purpose and minimal requirement, Syncfusion provides an option to generate custom styles of selective components by using the ThemeStudio web application. Refer to this [link](http://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
+> For production purpose and minimal requirement, Syncfusion provides an option to generate custom styles of selective controls by using the ThemeStudio web application. Refer to this [link](http://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
 
 ## Breaking changes
 
