@@ -95,7 +95,7 @@ Now, add the Syncfusion ASP.NET Core Badge tag helper in `~/Pages/Index.cshtml` 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/getting-started/core/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core DropDownList tag helper in `~/Pages/Index.c
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdownlist/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -125,7 +125,7 @@ After initialization, populate the DropDownList with data using the [dataSource]
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdownlist/getting-started/data/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -155,7 +155,7 @@ In the following sample, popup list's width and height are configured.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdownlist/getting-started/suggestionlist/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

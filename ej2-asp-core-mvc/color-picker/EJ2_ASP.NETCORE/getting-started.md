@@ -96,7 +96,7 @@ Now, add the Syncfusion ASP.NET Core ColorPicker tag helper in `~/Pages/Index.cs
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/color-picker/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

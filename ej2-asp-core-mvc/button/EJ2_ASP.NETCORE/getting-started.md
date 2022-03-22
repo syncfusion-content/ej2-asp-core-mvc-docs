@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core Button tag helper in `~/Pages/Index.cshtml`
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -125,7 +125,7 @@ To change the default Button to flat Button, set the [`cssClass`](https://help.s
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/getting-started/flat-btn/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
