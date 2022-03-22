@@ -95,7 +95,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 Now, add the Syncfusion ASP.NET Core Bullet Chart tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
 <ejs-bulletchart id="container"></ejs-bulletchart>
 
@@ -113,10 +113,10 @@ Now, assign the data to `dataSource` property. **value** and **target** values s
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/getting-started/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class DefaultBulletData
 {
     public double value;
@@ -144,10 +144,10 @@ You can add a title using `title` property to the bullet chart to provide quick 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/getting-started/title/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="~/Index.cshtml.cs" %}
+{% highlight cshtml tabtitle="CSHTML.cs" %}
 public class DefaultBulletData
 {
     public double value;
@@ -177,10 +177,10 @@ You can add a range using `e-bullet-range` of the `e-bullet-range-collection`.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/getting-started/ranges/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class DefaultBulletData
 {
     public double value;
@@ -208,10 +208,10 @@ You can use tooltip for the bullet chart by setting the `enable` property to tru
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/getting-started/tooltip/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="~/Index.cshtml.cs" %}
+{% highlight cshtml tabtitle="CSHTML.cs" %}
 public class DefaultBulletData
 {
     public double value;

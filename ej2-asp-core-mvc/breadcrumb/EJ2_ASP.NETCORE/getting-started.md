@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core Breadcrumb tag helper in `~/Pages/Index.csh
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -119,7 +119,7 @@ Use `items` property to bind items for Breadcrumb control.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/getting-started/items/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -145,7 +145,7 @@ This feature enables or disables the item navigation. By default, the navigation
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/getting-started/enable-disable/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core DateRangePicker tag helper in `~/Pages/Inde
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/daterangepicker/getting-started/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -123,7 +123,7 @@ The start and end date in a range can be defined with the help of `startDate` an
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/daterangepicker/getting-started/daterange/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core Kanban tag helper in `~/Pages/Index.cshtml`
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/kanban/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -125,10 +125,10 @@ To populate the empty Kanban with cards, define the list or remote data using th
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/kanban/getting-started/populating-cards/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class KanbanDataModels
 {
     public string Id { get; set; }
@@ -167,10 +167,10 @@ public class KanbanDataModels
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/kanban/getting-started/enable-swimlane/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class KanbanDataModels
 {
     public string Id { get; set; }
@@ -201,6 +201,8 @@ public class KanbanDataModels
 {% endif %}
 
 ![ASP.NET Core Kanban with Swimlane](./images/enable-swimlane.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

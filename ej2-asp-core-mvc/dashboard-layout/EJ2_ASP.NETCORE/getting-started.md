@@ -106,10 +106,10 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/getting-started/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="~/index.cshtml.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 ....
 public class spacingModel
 {
@@ -144,10 +144,10 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/getting-started-panel/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="~/index.cshtml.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 ....
 public class spacingModel
 {
