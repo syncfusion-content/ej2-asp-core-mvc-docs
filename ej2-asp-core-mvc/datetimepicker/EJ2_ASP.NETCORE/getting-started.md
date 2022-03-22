@@ -142,7 +142,7 @@ The minimum and maximum date time can be defined with the help of `min` and `max
 
 ![ASP.NET Core DateTimePicker with Specific Date and Time](images/datetimepicker-with-specific-date.png)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DateTimePicker/DateTimePicker).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DateTimePicker/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

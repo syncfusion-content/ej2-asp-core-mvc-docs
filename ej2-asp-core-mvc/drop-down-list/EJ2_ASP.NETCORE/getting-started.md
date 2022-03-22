@@ -172,7 +172,7 @@ In the following sample, popup list's width and height are configured.
 {% endtabs %}
 {% endif %}
 
-
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DropDownList/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

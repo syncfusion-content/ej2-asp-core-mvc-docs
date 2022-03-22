@@ -142,7 +142,7 @@ The start and end date in a range can be defined with the help of `startDate` an
 
 ![ASP.NET Core DateRangePicker with Specific Date Range](images/daterangepicker-with-specific-date.png)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DateRangePicker/DateRangePickerSample).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DateRangePicker/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
