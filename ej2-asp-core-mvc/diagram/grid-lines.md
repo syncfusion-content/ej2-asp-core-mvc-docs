@@ -173,7 +173,7 @@ The [`snapAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.D
 
 The [`snapConstraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SnapConstraints.html) property allows you to enable or disable the certain features of the snapping, refer to `snapConstraints`.
 
-The [`snapLineColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_SnapLineColor) property allows you to define the color of the snapline .
+The [`snapLineColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_SnapLineColor) property allows you to define the color of the snapline.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
