@@ -347,6 +347,8 @@ The [`textAlign`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.D
 
 Diagram provides a support to add a [`hyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Hyperlink) for the nodes/connectors annotation. It can also be customized.
 
+A User can open the hyperlink in the new window, the same tab and the new tab by using the  [`hyperlinkOpenState`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Hyperlink_HyperlinkOpenState)  property
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
