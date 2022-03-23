@@ -246,6 +246,7 @@ The below sample demonstrates the different Dialog positions.
 
 ## See Also
 
+* [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/Grid/DialogEditing#/bootstrap5)
 * [Load dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
 * [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
