@@ -250,4 +250,5 @@ Output be like the below.
 
 ## See Also
 
+* [Real time example using Splitter](https://ej2.syncfusion.com/aspnetmvc/Splitter/OutlookStyleLayout#/bootstrap5).
 * [Construct different layouts using Splitter](./different-layouts).
