@@ -43,9 +43,15 @@ private List<EventData> generateStaticEvents(DateTime date, int v1, int v2)
                 number = random.Next(max);
             } while (listNumbers.Contains(number));
             listNumbers.Add(number);                    
-            var startDate = date.AddDays(number);
-            startDate = startDate.AddMilliseconds((((number % 10) * 10) * (1000 * 60)));
-            var endDate = startDate.AddMilliseconds(((1440 + 30) * (1000 * 60)));
+            int Month = random.Next(1, 12);
+            int Date = random.Next(1, 28);
+            int Hour = random.Next(1, 24);
+            int Minutes = random.Next(1, 60);
+            DateTime YearStart = new DateTime(DateTime.Now.Year, 1, 1);
+            DateTime start = new DateTime(YearStart.Year, Month, Date, Hour, Minutes, 0);
+            DateTime end = new DateTime(start.Ticks).AddHours(2);
+            DateTime startDate = new DateTime(start.Ticks);
+            DateTime endDate = new DateTime(end.Ticks);
             data.Add(new EventData
             {
                 Id = id,
