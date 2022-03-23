@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core Dialog tag helper in `~/Pages/Index.cshtml`
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -123,7 +123,7 @@ Diaplying the content using `ContentTemplate`.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/data/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -153,7 +153,7 @@ While the user clicks the overlay, the action can be handled through the [`overl
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/modal/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -189,11 +189,8 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/enable-header/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/dialog/getting-started/enable-header/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -224,10 +221,10 @@ The below sample render with button and its click event.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/enable-footer/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class ButtonModel
 {
    public string content { get; set; }
@@ -260,10 +257,10 @@ The Dialog supports to [drag](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/draggable/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class ButtonModel
 {
    public string content { get; set; }
@@ -298,7 +295,7 @@ The below example demonstrates the different Dialog positions.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dialog/getting-started/positioning/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

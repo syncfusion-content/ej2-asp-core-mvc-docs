@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core ColorPicker tag helper in `~/Pages/Index.cs
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -125,7 +125,7 @@ After initializing, populate the ComboBox with data using the [dataSource](https
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/getting-started/data/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -151,7 +151,7 @@ The ComboBox allows the user to give input as custom value which is not required
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/getting-started/customvalue/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -179,7 +179,7 @@ The height and width of the popup list can also be customized using the [popupHe
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/getting-started/suggestionlist/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

@@ -10,7 +10,7 @@ documentation: ug
 
 # Accessibility support with ADA compliance in Syncfusion ASP.NET Core controls
 
-All the Syncfusion ASP.NET Core controls follow the WAI-ARIA accessibility standard by default. This enables you to build accessible web applications, which are fully navigable by users with disabilities.
+All the Syncfusion ASP.NET Core controls follow the WAI-ARIA accessibility standard by default. This enables to build accessible web applications, which are fully navigable by users with disabilities.
 
 ## Section 508
 

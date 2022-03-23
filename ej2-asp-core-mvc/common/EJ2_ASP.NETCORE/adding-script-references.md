@@ -101,17 +101,17 @@ Scripts and style sheets of Syncfusion ASP.NET Core controls can be included in 
 
 #### Installing NPM packages in ASP.NET Core Web Application
 
-1.Open the Source Explorer and right click the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
+1. Open the Source Explorer and right click the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
 
 ![Add New Item Window](images/add-new-item.png)
 
-2.Select “**Web**” on the left side Tree View and select “**npm configuration File**” in “**Add New Item**” window which will include and configure “**package.json**” file in root folder of the ASP.NET Core web application. 
+2. Select “**Web**” on the left side Tree View and select “**npm configuration File**” in “**Add New Item**” window which will include and configure “**package.json**” file in root folder of the ASP.NET Core web application. 
 
 ![Adding package.json](images/add-package-json.png)
 
-3.Open the Source Explorer and right click on the application name. Then, select “**Open Folder in File Explorer**”. 
+3. Open the Source Explorer and right click on the application name. Then, select “**Open Folder in File Explorer**”. 
 
-4.Open the Command Prompt for this location and install the required Syncfusion packages using “**npm install @syncfusion/{PACKAGE_NAME} --save**”
+4. Open the Command Prompt for this location and install the required Syncfusion packages using “**npm install @syncfusion/{PACKAGE_NAME} --save**”
 
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}
@@ -121,7 +121,7 @@ npm install @syncfusion/ej2-calendars --save
 {% endhighlight %}
 {% endtabs %}
 
-5.Installed packages with all its dependencies can be found under the  “**node_modules**” folder as shown in the following image.
+5. Installed packages with all its dependencies can be found under the  “**node_modules**” folder as shown in the following image.
 
 ![Installed Syncfusion Packages](images/installed-syncfusion-package.png)
 
@@ -140,7 +140,7 @@ By using either one of the following methods, Client-Side Resource can be loaded
 
 Install required Syncfusion ASP.NET Core control packages as mentioned in “[**Installing NPM Packages in ASP.NET Core Web Application**](#installing-npm-packages-in-aspnet-core-web-application)”. 
 
-1.In addition to Syncfusion ASP.NET Core packages, install gulp and glob packages using below commands.
+1. In addition to Syncfusion ASP.NET Core packages, install gulp and glob packages using below commands.
 
 >Gulp Installation - **npm install gulp --save**
 
@@ -162,11 +162,11 @@ npm install glob@latest --save
 {% endhighlight %}
 {% endtabs %}
 
-2.To set up the server, open Dependencies -> Manage NuGet Packages -> Browse. Then, search and install "**Microsoft.AspNetCore.StaticFiles**" and "**Microsoft.TypeScript.MSBuild**" packages.
+2. To set up the server, open Dependencies -> Manage NuGet Packages -> Browse. Then, search and install "**Microsoft.AspNetCore.StaticFiles**" and "**Microsoft.TypeScript.MSBuild**" packages.
 
 ![Install NuGet Packages](images/install-nuGet-package.png)
      
-Open up your "**Startup.cs**" file and edit your Configure function to looks like the below code snippet.
+Open up your "**Startup.cs**" file and edit your Configure function.
 
 {% tabs %}
 {% highlight c# tabtitle="Startup.cs" %}
@@ -186,13 +186,13 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 Restart Visual Studio for the red squiggly lines below "**UseDefaultFiles**" and "**UseStaticFiles**" to disappear.
 
-3.Open the Source Explorer and right click on the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
+3. Open the Source Explorer and right click on the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
 
-4.Select “**ASP.NET Core**” on the left side Tree View and select “**JavaScript File**” in the “**Add New Item**” window. It will include a js file in the root folder of the ASP.NET Core web application. Rename the js file as “**gulpfile.js**”.
+4. Select “**ASP.NET Core**” on the left side Tree View and select “**JavaScript File**” in the “**Add New Item**” window. It will include a js file in the root folder of the ASP.NET Core web application. Rename the js file as “**gulpfile.js**”.
 
 ![Add gulpjs file](images/add-gulpjs.png)
 
-5.Copy the following code snippet and paste it in **gulpfile.js** for automatically copying the script and styles from “**node_modules**” to “**wwwroot**” while building the web application.
+5. Copy the following code snippet and paste it in **gulpfile.js** for automatically copying the script and styles from “**node_modules**” to “**wwwroot**” while building the web application.
 
 {% tabs %}
 {% highlight c# tabtitle="gulpfile.js" %}
@@ -219,11 +219,11 @@ gulp.task("copy-client-resource", function (done) {
 {% endhighlight %}
 {% endtabs %}
 
-6.Build the ASP.NET Core web application and notice that a new folder named “**Syncfusion**” is created in “**wwwroot**” folder.
+6. Build the ASP.NET Core web application and notice that a new folder named “**Syncfusion**” is created in “**wwwroot**” folder.
 
 ![Copied to wwwroot](images/copied-to-wwwroot.png)
 
-7.Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion ASP.NET Core Calendar has been loaded for example.  
+7. Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion ASP.NET Core Calendar has been loaded for example.  
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}

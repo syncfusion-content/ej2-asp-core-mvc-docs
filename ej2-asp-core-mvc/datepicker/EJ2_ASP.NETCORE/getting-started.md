@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core DatePicker tag helper in `~/Pages/Index.csh
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/datepicker/getting-started/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -125,7 +125,7 @@ The below example demonstrates the DatePicker to select a date within a range fr
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/datepicker/getting-started/daterange/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

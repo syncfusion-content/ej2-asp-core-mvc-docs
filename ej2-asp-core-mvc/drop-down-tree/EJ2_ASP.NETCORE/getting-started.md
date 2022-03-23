@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core DropDownTree tag helper in `~/Pages/Index.c
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -125,10 +125,10 @@ The Dropdown Tree control can load the data either from local data sources or re
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdowntree/getting-started/data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class Parent
 {
     public string nodeId;

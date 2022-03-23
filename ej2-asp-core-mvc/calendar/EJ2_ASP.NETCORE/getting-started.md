@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core Calendar tag helper in `~/Pages/Index.cshtm
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/calendar/getting-started/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -105,7 +105,7 @@ Now, add the Syncfusion ASP.NET Core Calendar tag helper in `~/Pages/Index.cshtm
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="~/Index.cshtml" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/calendar/getting-started/getting-started/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Getting-started.cs" %}
@@ -125,7 +125,7 @@ Here the Calendar allows you to select a date within the range from 5th to 27th 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/calendar/getting-started/daterange/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

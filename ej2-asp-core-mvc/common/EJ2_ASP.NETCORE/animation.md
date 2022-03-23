@@ -39,7 +39,7 @@ The following list demonstrates the Syncfusion ASP.NET Core control documents th
 
 ## Animating a HTML Element
 
-The `animate` method of `Animation` library can be used to animate the HTML elements. This method can also take additional `AnimationModel`. Refer the below code snippet to animate a multiple DOM element.
+The `animate` method of `Animation` library can be used to animate the HTML elements. This method can also take additional `AnimationModel`.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}

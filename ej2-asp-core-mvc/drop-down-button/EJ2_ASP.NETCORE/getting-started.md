@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdownbutton/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -117,7 +117,7 @@ Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index
 Populate the action items in `SplitButton` by using the `items` property.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml.cs" %}
+{% highlight cshtml tabtitle="CSHTML.cs" %}
 
 @{
     ....

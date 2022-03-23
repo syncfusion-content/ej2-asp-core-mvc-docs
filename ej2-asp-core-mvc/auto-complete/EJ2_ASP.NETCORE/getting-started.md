@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core AutoComplete tag helper in `~/Pages/Index.c
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -125,7 +125,7 @@ After initialization, populate the AutoComplete with data using the [dataSource]
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/getting-started/data/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -151,7 +151,7 @@ The AutoComplete allows the user to give input as custom value which is not requ
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/getting-started/customvalue/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -180,7 +180,7 @@ The height and width of the popup list can also be customized using the [popupHe
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/getting-started/suggestionlist/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
