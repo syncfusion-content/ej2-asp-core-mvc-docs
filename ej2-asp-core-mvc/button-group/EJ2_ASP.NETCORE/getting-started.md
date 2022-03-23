@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core Button Group tag helper in `~/Pages/Index.c
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -129,7 +129,7 @@ Button Group can be aligned vertically by using the built-in CSS class `e-vertic
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/orientation/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

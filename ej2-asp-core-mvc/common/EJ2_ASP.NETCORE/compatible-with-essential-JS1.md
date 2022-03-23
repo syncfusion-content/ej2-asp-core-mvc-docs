@@ -10,7 +10,7 @@ documentation: ug
 
 # Compatibility with Syncfusion ASP.NET Core (Essential JS 1)
 
-This documentation explains how to render  Essential JS 1 and Essential JS 2 Syncfusion components in a single page.
+This documentation explains how to render Essential JS 1 and Essential JS 2 Syncfusion components in a single page.
 
 ## Adding application
 
@@ -51,7 +51,7 @@ Add scripts for Essential JS 1 and Essential JS 2 as shown in the following code
 
 ## Adding compatibility
 
-To add compatibility, use the following code in the _Layout.cshtml page. Since EJ1 and EJ2 controls have same library names to perform different actions, conflicts may occur when you refer these both controls in same application. To overcome this, extend these libraries in ej namespace.
+To add compatibility, use the following code in the _Layout.cshtml page. Since EJ1 and EJ2 controls have same library names to perform different actions, conflicts may occur when you refer both the controls in same application. To overcome this, extend these libraries in ej namespace.
 
 ```html
 <script>
@@ -69,8 +69,6 @@ Define script manager for both Essential JS 1 and Essential JS 2:
     <ej-script-manager></ej-script-manager>
     <ejs-scripts></ejs-scripts>
 ```
-
-The following code illustrates the final view of layout page.
 
 ```html
 <head>
@@ -112,7 +110,7 @@ The following code illustrates the final view of layout page.
 
 ## Declare Essential JS 1 and Essential JS 2 controls
 
-Essential JS 1 and Essential JS 2 controls have already been initialized via getting started. If you want change control, you can initialize using the following code.
+Essential JS 1 and Essential JS 2 controls have already been initialized via getting started. If you want to change control, you can initialize using the following code.
 
 ```html
 

@@ -95,7 +95,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 Now, add the Syncfusion ASP.NET Core In-place Editor tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
 <ejs-inplaceeditor id="element">
 </ejs-inplaceeditor>
@@ -110,7 +110,7 @@ By default, Syncfusion ASP.NET Core TextBox control is rendered in In-place Edit
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/in-place-editor/getting-started-text/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -138,7 +138,7 @@ In the following sample, `type` and model values are configured to render th
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/in-place-editor/getting-started-drop/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -166,7 +166,7 @@ In the following sample, `type` and `model` values are configured to render 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/in-place-editor/getting-started-date/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -190,7 +190,7 @@ In the following sample, type and model values are configured to render the Text
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/in-place-editor/getting-started-form/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -230,7 +230,7 @@ The edited data is submitted to the server and you can see the new values gettin
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/in-place-editor/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -248,6 +248,8 @@ The edited data is submitted to the server and you can see the new values gettin
 {% endif %}
 
 ![ASP.NET Core In-place Editor with Editing Value](images/getting-started.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/InplaceEditor/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

@@ -10,10 +10,7 @@ documentation: ug
 
 # State Persistence
 
-The Syncfusion ASP.NET Core library supports persisting a control's state across page refreshes or navigation. To
-enable this feature, set `enablePersistence` property as true to the required control. This will store
-the control’s state in browser’s `localStorage` object on page `unload` event. For example, we have
-enabled persistence to grid control in the following code.
+The Syncfusion ASP.NET Core library supports persisting a control's state across page refreshes or navigation. To enable this feature, set `enablePersistence` property as true to the required control. This will store the control’s state in browser’s `localStorage` object on page `unload` event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

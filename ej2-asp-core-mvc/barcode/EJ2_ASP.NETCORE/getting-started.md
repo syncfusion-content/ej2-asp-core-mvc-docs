@@ -97,7 +97,7 @@ Now, add the Syncfusion ASP.NET Core Barcode tag helper in `~/Pages/Index.cshtml
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/getting-started/barcode/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -127,7 +127,7 @@ You can add the QR code in the barcode generator control.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/getting-started/qrcode/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -151,7 +151,7 @@ You can add the datamatrix code in the barcode generator control.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/getting-started/datamatrix/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

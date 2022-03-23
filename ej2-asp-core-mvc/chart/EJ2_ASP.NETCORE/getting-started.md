@@ -94,7 +94,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 Now, add the Syncfusion ASP.NET Core Chart tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <ejs-chart id="container"></ejs-chart>
 
