@@ -1,20 +1,19 @@
 @using Syncfusion.EJ2;
 @using Syncfusion.EJ2.Charts;
  <ejs-smithchart id="smithchart" loaded="loaded">
-        <e-smithchart-title text="Transmission lines applied for both impedance and admittance"></e-smithchart-title>
-        <e-smithchart-legendsettings visible="true"></e-smithchart-legendsettings>
-        <e-smithchart-smithchartseriescollection>
-            <e-smithchart-smithchartseries name="Transmission1">
-                <e-smithchartseries-tooltip visible="true"></e-smithchartseries-tooltip>
-                <e-smithchartseries-marker visible="true">
-                    <e-series-marker-datalabel visible="true"></e-series-marker-datalabel>
-                </e-smithchartseries-marker>
-            </e-smithchart-smithchartseries>
-            <e-smithchart-smithchartseries name="Transmission2">
-                <e-smithchartseries-tooltip visible="true"></e-smithchartseries-tooltip>
-            </e-smithchart-smithchartseries>
-        </e-smithchart-smithchartseriescollection>
-        </ejs-smithchart>
+	<e-smithchart-title text="Transmission lines applied for both impedance and admittance"></e-smithchart-title>
+	<e-smithchart-legendsettings visible="true"></e-smithchart-legendsettings>
+	<e-smithchart-smithchartseriescollection>
+		<e-smithchart-smithchartseries name="Transmission1">
+			<e-smithchartseries-tooltip visible="true"></e-smithchartseries-tooltip>
+			<e-smithchartseries-marker visible="true">
+				<e-series-marker-datalabel visible="true"></e-series-marker-datalabel>
+			</e-smithchartseries-marker>
+		</e-smithchart-smithchartseries>
+		<e-smithchart-smithchartseries name="Transmission2">
+			<e-smithchartseries-tooltip visible="true"></e-smithchartseries-tooltip>
+		</e-smithchart-smithchartseries>
+	</e-smithchart-smithchartseriescollection>
 </ejs-smithchart>
 <script>
     function loaded(args) {
