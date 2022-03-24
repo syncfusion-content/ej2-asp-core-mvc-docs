@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent The Popup Close in ##Platform_Name## Datepicker Component
-description: Learn here all about Prevent The Popup Close in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to prevent the popup close in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Prevent The Popup Close
 publishingplatform: ##Platform_Name##
@@ -12,8 +12,6 @@ documentation: ug
 # Prevent the popup close
 
 To prevent the DatePicker popup from closing, use the preventDefault method from the `PreventableEventArgs`.
-
-The following example demonstrates how to prevent the popup from closing.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

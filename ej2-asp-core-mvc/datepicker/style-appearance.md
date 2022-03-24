@@ -26,7 +26,7 @@ Use the following CSS to customize the appearance of wrapper element.
 
 ## Customizing the DatePicker icon element
 
-Use the following CSS to customize the DatePicker icon element
+Use the following CSS to customize the DatePicker icon element.
 
 ```css
 /* To specify background color and font size */
