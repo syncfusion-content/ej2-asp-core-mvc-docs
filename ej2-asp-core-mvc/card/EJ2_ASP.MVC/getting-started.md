@@ -71,4 +71,5 @@ Output be like the below.
 
 ## See Also
 
+* [Real time example using Card](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
 * [How to add a header and content](./header-content/)
