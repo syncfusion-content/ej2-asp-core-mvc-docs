@@ -52,8 +52,6 @@ Define the [depth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 > Always the depth view has to be smaller than the start view, otherwise the view restriction will be not restricted.
 
-The following example demonstrates how to create a DatePicker that allows users to select a month.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

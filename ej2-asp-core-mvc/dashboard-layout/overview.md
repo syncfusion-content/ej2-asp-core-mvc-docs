@@ -10,7 +10,7 @@ documentation: ug
 
 # Overview
 
-The **DashboardLayout** is a grid structured layout control that helps create a dashboard with panels. Panels hold the UI components and allow resize, reorder, drag-n-drop, remove and add options. This allows users to easily place the components at the desired position within the grid layout.
+The **DashboardLayout** is a grid structured layout control that helps to create a dashboard with panels. Panels hold the UI components and allows to resize, reorder, drag-n-drop, remove and add options. This allows users to easily place the components at the desired position within the grid layout.
 
 ## Key features
 
