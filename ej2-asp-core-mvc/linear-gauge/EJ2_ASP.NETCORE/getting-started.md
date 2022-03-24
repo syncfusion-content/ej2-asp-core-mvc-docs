@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Linear Gauge Component
-description: Checkout and learn about getting started with ##Platform_Name## Linear Gauge component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## LinearGauge Control
+description: Checkout and learn about getting started with ##Platform_Name## LinearGauge control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,112 +9,118 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Linear Gauge
+# Getting Started with ASP.NET Core LinearGauge
+
+This section briefly explains about how to include [ASP.NET Core LinearGauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
-To get started with the ASP.NET Core application, ensure the following software are installed on the machine.
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-* Visual Studio 2019
-* DotNet Core 5.0
+## Create ASP.NET Core web application with Razor pages
 
-## Getting started with ASP.NET Core 5.0
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-### Create ASP.NET Core application
+* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
 
-The following steps are used to create the ASP.NET Core Application.
+## Install ASP.NET Core package in the application
 
-**Step 1:** Open the Visual Studio and click the **File** menu and select **New -> Project** option.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-![Getting started with the visual studio](../images/default-template.png)
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-**Step 2:** Select **ASP.NET Core Web Application** templates in visual studio 2019 and click **Next**.
+## Add Syncfusion ASP.NET Core Tag Helper
 
-![Select the Asp.Net core application](../linear-gauge/images/project-selection.png)
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
-**Step 3:** Change the application name and location of the application if necessary then click **Create**.
+{% tabs %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
-![Changing the application name](../linear-gauge/images/application-name.png)
-
-**Step 4:** Choose the .NET Core version as **ASP.NET Core 5.0** and select **ASP.NET Core Web App (Model-View-Controller)**, and then click **Create**. The web application project is now created with default ASP.NET Core template.
-
-![Selecting the .net version](../linear-gauge/images/application-name.png)
-
-**Step 5**: Add the [`Syncfusion.EJ2.AspNet.Core`](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package to the created application by using the Nuget Package Manager. Right-click the **dependencies** in the project and select the **Manage Nuget Packages** option.
-
-![Adding the nuget to the application](../images/solution-Explorer.png)
-
-**Step 6:** Install the **Syncfusion.EJ2.AspNet.Core** package to the application.
-
-![Installing the nuget](../linear-gauge/images/nuget-install.png)
-
-The EJ2 package will be added to the application after the installation is completed.
-
-**Step 7:** Open the **~Views/ViewImports.cshtml** to import Syncfusion.EJ2 TagHelper.
-
-```cs
 @addTagHelper *, Syncfusion.EJ2
-```
 
-**Step 8:** Add the client side resources through [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of the layout page **~/Views/Shared/_Layout.cshtml**.
+{% endhighlight %}
+{% endtabs %}
 
-```cs
+## Add style sheet
+
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <head>
-    ....
-    ....
-
-    <!-- Syncfusion Essential JS 2 Styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
-
-    <!-- Syncfusion Essential JS 2 Scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 </head>
-```
 
-**Step 9:** Add the JS2 Script Manager at the end of the `<body>` element in the layout page **~/Views/Shared/_Layout.cshtml**.
+{% endhighlight %}
+{% endtabs %}
 
-```cs
-<ejs-scripts></ejs-scripts>
-```
+## Add script reference
 
-**Step 10:** Add the below code to your **Index.cshtml** view page which is present under **Views/Home** folder, to initialize the Linear Gauge.
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-```cs
-@using Syncfusion.EJ2.LinearGauge;
-```
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-## Render LinearGauge
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
 
-This section explains how to render default Linear Gauge.
+{% endhighlight %}
+{% endtabs %}
 
-```cs
+## Register Syncfusion Script Manager
 
-public IActionResult Default()
-{
-    return View();
-}
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
 
-```
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-Add the `ejs-lineargauge` tag like below code snippet to create the Linear Gauge component.
+<body>
+    ....
+    ....
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts></ejs-scripts>
+</body>
 
-```cs
-@using Syncfusion.EJ2;
+{% endhighlight %}
+{% endtabs %}
+
+## Add ASP.NET Core LinearGauge control
+
+Now, add the Syncfusion ASP.NET Core LinearGauge tag helper in `~/Pages/Index.cshtml` page.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
 <ejs-lineargauge id="linear">
 </ejs-lineargauge>
-```
+
+{% endhighlight %}
+{% endtabs %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core LinearGauge control will be rendered in the default web browser.
+
+![ASP.NET Core LinearGauge Control](images/lineargauge-control.png)
 
 ## Add Gauge Title
 
 The title for the Linear Gauge can be rendered using the `title` property in the `ejs-lineargauge` tag.
 
-```cs
-@using Syncfusion.EJ2;
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
 <ejs-lineargauge id="linear" title="Temperature Measure">
 </ejs-lineargauge>
-```
+
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core LinearGauge with Title](images/lineargauge-with-title.png)
 
 ## Axis
 
@@ -122,11 +128,24 @@ The start value and end value of the Linear Gauge axis can be added using the `m
 
 Refer below code snippet to add the axis range to Linear Gauge.
 
-```cs
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <ejs-lineargauge id="linear" orientation="Horizontal">
     <e-lineargauge-axes>
         <e-lineargauge-axis minimum="0" maximum="200">
         </e-lineargauge-axis>
     </e-lineargauge-axes>
 </ejs-lineargauge>
-```
+
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core LinearGauge with Axis](images/lineargauge-with-axis.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/LinearGauge/ASP.NET%20Core%20Tag%20Helper%20Examples).
+
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

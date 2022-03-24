@@ -96,7 +96,7 @@ Now, add the Syncfusion ASP.NET Core Chips tag helper in `~/Pages/Index.cshtml` 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

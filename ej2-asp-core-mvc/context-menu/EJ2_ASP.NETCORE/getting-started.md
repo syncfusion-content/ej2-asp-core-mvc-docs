@@ -96,7 +96,7 @@ Now, add the Syncfusion ASP.NET Core ContextMenu tag helper in `~/Pages/Index.cs
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/context-menu/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -116,7 +116,7 @@ Now, add the Syncfusion ASP.NET Core ContextMenu tag helper in `~/Pages/Index.cs
 Populate the menu items in `ContextMenu` by using the `items` property.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
 @{
     .....    
@@ -150,10 +150,10 @@ The Separators are the horizontal lines that are used to separate the menu items
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/context-menu/separator/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="~/Index.cshtml.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 @{
     .....
     List<object> menuItems = new List<object>();

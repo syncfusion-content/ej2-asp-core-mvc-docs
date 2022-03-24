@@ -94,7 +94,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 Now, add the Syncfusion ASP.NET Core CircularGauge tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
 <ejs-circulargauge id="gauge">
 </ejs-circulargauge>
@@ -111,7 +111,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 You can add a title using `title` attribute to the circulargauge to provide quick information to the user.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
 <ejs-circulargauge id="circular" title="Speed">
 </ejs-circulargauge>
@@ -124,7 +124,7 @@ You can add a title using `title` attribute to the circulargauge to provide quic
 You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer the following code snippet to add the axis range to circulargauge.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
 <ejs-circulargauge id="circular" title="speed">
     <e-circulargauge-axes>
