@@ -7,8 +7,7 @@
         items = new List<object>()
         {
             new { text = "Open" },
-            new { text = "Save" },
-			new { separator = true},
+            new { text = "Save" }, new { separator = true},
             new { text = "Exit" }
         }
     });
