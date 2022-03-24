@@ -11,7 +11,7 @@ documentation: ug
 
 # Globalization
 
-Globalization is the combination of  adapting the component to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization/) and also by adding cultural specific customizations and translating the text [`localization`](../common/localization/).
+Globalization is the combination of adapting the component to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization/) and also by adding cultural specific customizations and translating the text [`localization`](../common/localization/).
 
 By default, DatePicker date format, week and month names are specific to the `American English` culture. It utilizes the [Essential JavaScript 2 Internationalization](../common/internationalization/) package to parse and format the date object based on the culture by using the official [UNICODE CLDR](http://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data.
 
@@ -19,17 +19,15 @@ By default, DatePicker date format, week and month names are specific to the `Am
 
 To go with the different culture other than `English`, follow the below steps.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data refer the [CLDR-Data](http://cldr.unicode.org/index/cldr-spec/json) link.
+* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data, refer the [CLDR-Data](http://cldr.unicode.org/index/cldr-spec/json) link.
 
 ```
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
+Once the package is installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
 
-In ASP.NET Core, the static file contents are should present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `\wwwroot\scripts\cldr-data` location as like the below code examples
-
-```typescript
+In ASP.NET Core, the static file contents should be present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `\wwwroot\scripts\cldr-data` location.
 
 function loadCultureFiles(name) {
         var files = ['ca-gregorian.json', 'numbers.json', 'timeZoneNames.json'];
@@ -50,7 +48,7 @@ function loadCultureFiles(name) {
 
 ```
 
-> The `Localization` library allows you to localize default text content of the DatePicker. The DatePicker component has static text for **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Locale) value and translation object.
+> The `Localization` library allows to localize default text content of the DatePicker. The DatePicker component has static text for **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Locale) value and translation object.
 
 | Locale keywords | Text |
 | ----- | ----- |
@@ -97,7 +95,7 @@ The following example demonstrates the DatePicker in `German` culture.
 
 The DatePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_EnableRtl) property to set the RTL direction.
 
-The following code example initialize the DatePicker component in `Arabic` culture and also explains how to set the localized text to the placeholder using `load` method of `L10n` class.
+The following code example initializes the DatePicker component in `Arabic` culture and also explains how to set the localized text to the placeholder using `load` method of `L10n` class.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

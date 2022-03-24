@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set The Readonly in ##Platform_Name## Datepicker Component
-description: Learn here all about Set The Readonly in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to set the Readonly in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set The Readonly
 publishingplatform: ##Platform_Name##
