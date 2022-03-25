@@ -271,6 +271,8 @@ The tooltip feature is used to show the values of the current point. You can ena
 
 ![ASP.NET Core SmithChart with Tooltip](images/smithchart-with-tooltip.png)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/SmithChart/ASP.NET%20Core%20Tag%20Helper%20Examples).
+
 ## See also
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)

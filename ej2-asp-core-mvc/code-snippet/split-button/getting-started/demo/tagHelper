@@ -1,1 +1,18 @@
-<ejs-splitbutton id="element" content="Paste" items="@ViewBag.items"></ejs-splitbutton>
+@{
+    ......
+    List<object> items = new List<object>();
+    items.Add(new
+    {
+        text = "Cut"
+    });
+    items.Add(new
+    {
+        text = "Copy"
+    });
+    items.Add(new
+    {
+        text = "Paste"
+    });
+}
+
+<ejs-splitbutton id="element" content="Paste" items="items"></ejs-splitbutton>

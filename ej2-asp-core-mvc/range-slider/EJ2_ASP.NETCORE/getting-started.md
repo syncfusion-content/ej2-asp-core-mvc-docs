@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## RangeSlider Component
-description: Checkout and learn about getting started with ##Platform_Name## RangeSlider component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## RangeSlider Control
+description: Checkout and learn about getting started with ##Platform_Name## RangeSlider control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -117,6 +117,8 @@ Now, add the Syncfusion ASP.NET Core RangeSlider tag helper in `~/Pages/Index.cs
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core RangeSlider control will be rendered in the default web browser.
 
 ![ASP.NET Core RangeSlider Control](images/slider.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/RangeSlider/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
