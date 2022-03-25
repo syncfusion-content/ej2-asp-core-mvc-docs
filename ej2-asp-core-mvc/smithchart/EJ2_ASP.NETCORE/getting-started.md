@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Smithchart Component
-description: Checkout and learn about getting started with ##Platform_Name## Smithchart component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Smithchart Control
+description: Checkout and learn about getting started with ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,67 +9,103 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core
+# Getting Started
 
-This section explains you the steps required to create a Smithchart and demonstrate the basic usage of the Smithchart control.
+This section briefly explains about how to include [ASP.NET Core SmithChart](https://www.syncfusion.com/aspnet-core-ui-controls/smith-chart) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
-To get start with ASP.NET Core application, need to ensure the following software to be installed on the machine.
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-* Visual Studio 2017
-* DotNet Core 2.0
+## Create ASP.NET Core web application with Razor pages
 
-## Setup ASP.NET Core application with Essential JS 2 for ASP.NET Core
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-The following steps to create ASP.NET Core Application.
+* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
 
-**Step 1:** Create ASP.NET Core Web Application with default template project in Visual Studio 2017.
+## Install ASP.NET Core package in the application
 
-![Alt text](./images/default-template.png)
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-**Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using Nugget Package Manager.
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-Open the `nuGet` package manager.
+## Add Syncfusion ASP.NET Core Tag Helper
 
-![Alt text](./images/solution-Explorer.png)
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
-Install the **Syncfusion.EJ2** package to the application
+{% tabs %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
-![Alt text](./images/nuget-demo.png)
-
-After Installation complete this will included in the project. You can refer it from the Project Assembly Reference.
-
-> We need to install **NewtonSoft.JSON** as dependency since it **Syncfusion.EJ2** dependent to NewtonSoft.JSON package.
-
-**Step 3:** Open the **_ViewImports.cshtml** to import Syncfusion.EJ2 package.
-
-```cs
 @addTagHelper *, Syncfusion.EJ2
-```
 
-**Step 4:** Add client side resource through [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **_Layout.cshtml.**
+{% endhighlight %}
+{% endtabs %}
 
-```cs
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
-```
+## Add style sheet
 
-**Step 5:** Adding Script Manager in layout page **_Layout.cshtml.**
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-```cs
-<ejs-scripts></ejs-scripts>
-```
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-**Step 6:** Add the below code to your Index.cshtml view page which is present under Views/Home folder, to initialize the smith chart.
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+</head>
 
-```html
+{% endhighlight %}
+{% endtabs %}
 
-@using Syncfusion.EJ2;
- <ejs-smithchart id="smithchart">
+## Add script reference
+
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Register Syncfusion Script Manager
+
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<body>
+    ....
+    ....
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts></ejs-scripts>
+</body>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add ASP.NET Core SmithChart Control
+
+Now, add the Syncfusion ASP.NET Core SmithChart tag helper in `~/Pages/Index.cshtml` page.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
+<ejs-smithchart id="smithchart">
 </ejs-smithchart>
 
-```
+{% endhighlight %}
+{% endtabs %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core SmithChart control will be rendered in the default web browser.
+
+![ASP.NET Core SmithChart Control](images/smithchart-control.png)
 
 ## Add series to Smith chart
 
@@ -89,9 +125,6 @@ The following two ways demonstrate adding two series to the Smith chart.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/series/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Series.cs" %}
-{% include code-snippet/smithchart/getting-started/series/series.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -106,7 +139,7 @@ The following two ways demonstrate adding two series to the Smith chart.
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core SmithChart with Series](images/smithchart-series.png)
 
 ## Add title to SmithChart
 
@@ -117,9 +150,6 @@ smithchart `title` API used to add title for smithchart. In that `text` API used
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/title/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/smithchart/getting-started/title/title.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,7 +165,7 @@ smithchart `title` API used to add title for smithchart. In that `text` API used
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core SmithChart with Title](images/smithchart-with-title.png)
 
 ## Enable marker to the Smith chart
 
@@ -146,9 +176,6 @@ To use marker in series and its customization in Smith chart, use series `marker
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/marker/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Marker.cs" %}
-{% include code-snippet/smithchart/getting-started/marker/marker.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -164,7 +191,7 @@ To use marker in series and its customization in Smith chart, use series `marker
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core SmithChart with Marker](images/smithchart-with-marker.png)
 
 ## Enable data label to marker
 
@@ -175,9 +202,6 @@ To use marker data label and its customization in Smith chart, use marker `dataL
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/data-label/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data-label.cs" %}
-{% include code-snippet/smithchart/getting-started/data-label/data-label.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -193,7 +217,7 @@ To use marker data label and its customization in Smith chart, use marker `dataL
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core SmithChart with DataLabel](images/smithchart-with-datalabel.png)
 
 ## Enable legend for Smith chart
 
@@ -204,9 +228,6 @@ The legend feature is used to denote the corresponding series. You can enable th
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/legend/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Legend.cs" %}
-{% include code-snippet/smithchart/getting-started/legend/legend.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -234,9 +255,6 @@ The tooltip feature is used to show the values of the current point. You can ena
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/smithchart/getting-started/tooltip/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% include code-snippet/smithchart/getting-started/tooltip/tooltip.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -251,4 +269,9 @@ The tooltip feature is used to show the values of the current point. You can ena
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core SmithChart with Tooltip](images/smithchart-with-tooltip.png)
 
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

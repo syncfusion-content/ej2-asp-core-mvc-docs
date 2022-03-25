@@ -1,10 +1,10 @@
 @{
     .....
-    ViewBag.dateValue = new DateTime(2018, 12, 04);
-    ViewBag.modalData = new { showTodayButton = true };
+    var dateValue = new DateTime(2018, 12, 04);
+    var modalData = new { showTodayButton = true };
 }
 
 <div style="margin:0 auto; width:300px;">
-    <ejs-inplaceeditor id="element" type="Date" value="ViewBag.dateValue" model="ViewBag.modalData">
+    <ejs-inplaceeditor id="element" type="Date" value="dateValue" model="modalData">
     </ejs-inplaceeditor>
 </div>

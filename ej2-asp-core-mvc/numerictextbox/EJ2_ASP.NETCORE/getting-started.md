@@ -206,6 +206,8 @@ Else, number of decimals will be restricted while typing in the NumericTextBox.
 
 ![Restricting Decimal Values in ASP.NET Core NumericTextBox](./images/precision.png)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/NumericTextBox/ASP.NET%20Core%20Tag%20Helper%20Examples)
+
 ## See also
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
