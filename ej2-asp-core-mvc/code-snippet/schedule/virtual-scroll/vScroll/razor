@@ -4,7 +4,7 @@
     .Width("100%")
     .Height("650px")
     .SelectedDate(new DateTime(DateTime.Today.Year, 4, 1))
-    .CurrentView(View.TimelineYear)
+    .CurrentView(View.TimelineMonth)
     .Views(view => {
         view.Option(View.TimelineMonth).AllowVirtualScrolling(true).Add();
         view.Option(View.TimelineYear).Orientation(Orientation.Vertical).AllowVirtualScrolling(true).Add();
