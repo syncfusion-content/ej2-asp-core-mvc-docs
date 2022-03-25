@@ -46,10 +46,6 @@ The following sample demonstrates how to modify a cell size using the [`columns`
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
 ![Modifying cell size](./images/modifying_cell_size.PNG)
 
 ## Setting cell spacing
@@ -80,10 +76,6 @@ The following sample demonstrates the usage of the [`cellSpacing`](https://help.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![Setting cell spacing](./images/cell_spacing.PNG)
 
@@ -117,16 +109,11 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Graphical representation of the layout](./images/graphical_representation.PNG)
 
 ## Rendering component in right-to-left direction
 
 It is possible to render the Dashboard Layout in right-to-left direction by setting the [enableRtl](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~EnableRtl.html) API to true.
-
-The following sample demonstrates Dashboard Layout in right-to-left direction.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -152,9 +139,6 @@ The following sample demonstrates Dashboard Layout in right-to-left direction.
 {% endif %}
 
 
-
-Output be like the below.
-
 ![Right to left direction ](./images/enable_rtl.PNG)
 
-> You can refer to our [ASP.NET Core Dashboard Layout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dashboard Layout example](https://ej2.syncfusion.com/aspnetcore/DashboardLayout/DefaultFunctionalities#/material) to knows how to present and manipulate data.
+> You can refer to our [ASP.NET Core Dashboard Layout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dashboard Layout example](https://ej2.syncfusion.com/aspnetcore/DashboardLayout/DefaultFunctionalities#/material) to know how to present and manipulate data.

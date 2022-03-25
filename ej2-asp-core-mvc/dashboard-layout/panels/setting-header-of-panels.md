@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting Header Of Panels in ##Platform_Name## Dashboard Layout Component
-description: Learn here all about Setting Header Of Panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Setting Header of Panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Setting Header Of Panels
 publishingplatform: ##Platform_Name##
@@ -12,8 +12,6 @@ documentation: ug
 # Header and content of panels
 
 The dashboard layout component is mostly used to represent the data used for monitoring or managing a process. These data or any HTML template can be placed as the [`content`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayoutPanel~Content.html) of a panel using the content property. Also, word or phrase that summarize the panel’s content can be added as the header on the top of each panel using the [`header`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayoutPanel~Header.html) property of the panel.
-
-The following sample demonstrates how to add content for each panel using the header and content properties of the panels.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,10 +35,6 @@ The following sample demonstrates how to add content for each panel using the he
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![Header and content of panels](./../images/content_panel.PNG)
 
@@ -74,10 +68,6 @@ The following sample demonstrates how to add ej2-chart components as the [`conte
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![Placing components as content](./../images/dragging_handler.PNG)
 
