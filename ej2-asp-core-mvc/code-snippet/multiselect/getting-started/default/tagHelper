@@ -1,6 +1,6 @@
 @{
     .....
-    ViewBag.data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };
+    var data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };
 }
 
-<ejs-multiselect id="games" dataSource="@ViewBag.data"></ejs-multiselect>
+<ejs-multiselect id="games" dataSource="data"></ejs-multiselect>

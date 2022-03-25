@@ -92,7 +92,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 
 ## Add ASP.NET Core DropDownButton control
 
-Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index.cshtml` page. Populate the action items in `DropDownButton` by using the `items` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,23 +100,6 @@ Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdownbutton/getting-started/demo/tagHelper %}
 {% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dropdownbutton/getting-started/demo/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Demo.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-## Bind dataSource
-
-Populate the action items in `SplitButton` by using the `items` property.
-
-{% tabs %}
 {% highlight cshtml tabtitle="CSHTML.cs" %}
 
 @{
@@ -138,6 +121,16 @@ Populate the action items in `SplitButton` by using the `items` property.
 
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/dropdownbutton/getting-started/demo/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Demo.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core DropDownButton control will be rendered in the default web browser.
 

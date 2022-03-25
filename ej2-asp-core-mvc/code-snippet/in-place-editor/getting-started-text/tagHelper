@@ -1,10 +1,10 @@
 @{
     ....
-    ViewBag.modalData = new { placeholder = "Enter employee name" };
-    ViewBag.value = "Andrew";
+    var modalData = new { placeholder = "Enter employee name" };
+    var value = "Andrew";
 }
 
 <div style="margin:0 auto; width:300px;">
-    <ejs-inplaceeditor id="element" type="Text" value="ViewBag.value" model="ViewBag.modalData">
+    <ejs-inplaceeditor id="element" type="Text" value="value" model="modalData">
     </ejs-inplaceeditor>
 </div>
