@@ -15,7 +15,7 @@ The Web accessibility defines a way to make web content and web applications mor
 
 DatePicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
 
-To know about the accessibility of Calendar refer to the Calendar's [Accessibility](../calendar/accessibility/) section.
+To know about the accessibility of Calendar, refer to the Calendar's [Accessibility](../calendar/accessibility/) section.
 
 It helps to provide information about the widget for assistive technology to the disabled person in screen reader.
 
@@ -39,7 +39,7 @@ Before opening the popup, use the below list of keys to control the popup elemen
 | --- | --- |
 | <kbd>Alt +  Down Arrow</kbd> | Opens the popup. |
 | <kbd>Alt +  Upper Arrow</kbd> | Closes the popup.|
-| <kbd>Esc</kbd> | closes the popup. |
+| <kbd>Esc</kbd> | Closes the popup. |
 
 ### Calendar Navigation
 

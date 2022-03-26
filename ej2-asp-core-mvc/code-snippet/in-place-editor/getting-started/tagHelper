@@ -1,15 +1,15 @@
 @{
 	string[] frameWorkList = new string[] { "Andrew Fuller", "Janet Leverling", "Laura Callahan", "Margaret Hamilt", "Michael Suyama", "Nancy Davloio", "Robert King" };
-	ViewBag.elementModel = new { dataSource = frameWorkList, placeholder = "Select employee", popupHeight = "200px" };
-	ViewBag.url = "https://ej2services.syncfusion.com/development/web-services/api/Editor/UpdateData";
-	ViewBag.textValue = "Andrew Fuller";
+	var elementModel = new { dataSource = frameWorkList, placeholder = "Select employee", popupHeight = "200px" };
+	var url = "https://ej2services.syncfusion.com/development/web-services/api/Editor/UpdateData";
+	var textValue = "Andrew Fuller";
 }
 
 <div class="control_wrapper">
     <div id='container'>
         <div class='control-group'>
             Best Employee of the year:
-            <ejs-inplaceeditor id="element" type="DropDownList" value="ViewBag.textValue" model="ViewBag.elementModel" mode='Inline' name="Employee" url="https://ej2services.syncfusion.com/development/web-services/api/Editor/UpdateData" primaryKey="Employee" adaptor="UrlAdaptor" actionSuccess="actionSuccess">
+            <ejs-inplaceeditor id="element" type="DropDownList" value="textValue" model="elementModel" mode='Inline' name="Employee" url="https://ej2services.syncfusion.com/development/web-services/api/Editor/UpdateData" primaryKey="Employee" adaptor="UrlAdaptor" actionSuccess="actionSuccess">
             </ejs-inplaceeditor>
         </div>
         <table style='margin:auto;width:50%'>

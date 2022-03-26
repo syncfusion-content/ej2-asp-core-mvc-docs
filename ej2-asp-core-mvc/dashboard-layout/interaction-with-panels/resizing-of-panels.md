@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resizing Of Panels in ##Platform_Name## Dashboard Layout Component
-description: Learn here all about Resizing Of Panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Resizing of Panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resizing Of Panels
 publishingplatform: ##Platform_Name##
@@ -19,8 +19,6 @@ On resizing a panel in Dashboard layout the following events will be triggered,
 * [resizeStart](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~ResizeStart.html) - Triggers when panel resize starts
 * [resize](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Resize.html) - Triggers when panel is being resized
 * [resizeStop](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~ResizeStop.html) - Triggers when panel resize stops
-
-The following sample demonstrates how to enable and disable the resizing of panels in the DashboardLayout component in different directions.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,10 +42,6 @@ The following sample demonstrates how to enable and disable the resizing of pane
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![Resizing panels](./../images/resizing_panels.PNG)
 
@@ -90,10 +84,6 @@ The following sample demonstrates resizing panels programatically in the Dashboa
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
 ![Resizing panels](./../images/resize_panel.PNG)
 
-> You can refer to our [ASP.NET Core Dashboard Layout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dashboard Layout example](https://ej2.syncfusion.com/aspnetcore/DashboardLayout/DefaultFunctionalities#/material) to knows how to present and manipulate data.
+> You can refer to our [ASP.NET Core Dashboard Layout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dashboard Layout example](https://ej2.syncfusion.com/aspnetcore/DashboardLayout/DefaultFunctionalities#/material) to know how to present and manipulate data.
