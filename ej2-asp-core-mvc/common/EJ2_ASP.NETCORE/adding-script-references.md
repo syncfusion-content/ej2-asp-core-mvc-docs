@@ -16,13 +16,11 @@ This section provides information about reference scripts from CDN and Custom re
 
 Syncfusion hosts every ASP.NET Core control as a separate node package in CDN, from which scripts and style sheets of the individual package can be loaded. It also hosts a single node package with all ASP.NET Core controls on it, from which scripts and style sheets of all controls can be loaded as single script and style file.
 
-Here, the generic syntax of the Syncfusion ASP.NET Core CDN URL for the both Individual ASP.NET Core control package and Complete ASP.NET Core controls package has been explained.
+Here, the Syncfusion ASP.NET Core CDN URL for the both Individual ASP.NET Core control package and Complete ASP.NET Core controls package has been explained.
 
 ### CDN Reference for all controls
 
 The primary goal of all the ASP.NET Core controls package is to help the novice to get started with Syncfusion ASP.NET Core control by referring the single line for script and styles without bothering about the dependency graph of the ASP.NET Core controls.
-
-**Syntax:**
 
 | controls | CDN Reference |
 | --- | --- |
@@ -51,8 +49,6 @@ Add the EJ2 CDN client-side resources to the `<head>` element of the `~/Views/Sh
 ### Individual control CDN Reference
 
 The primary goal of individual control CDN is to optimize the loading time and memory of the website/app in the production stage. The order of individual control package loading should be in line with its dependency graph. The CDN of the Dependency Packages should be included manually before the intended individual control package CDN.
-
-**Syntax:**
 
 | controls | CDN Reference |
 | --- | --- |

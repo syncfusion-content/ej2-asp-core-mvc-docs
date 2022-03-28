@@ -39,7 +39,7 @@ You can enable touch mode (bigger theme) for an application by adding `.e-bigger
 You can enable touch mode (bigger theme) for ASP.NET Core controls by adding `.e-bigger` class and assign to the `div` which contains the control.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div class="e-bigger">
     <ejs-calendar id="calendar"></ejs-calendar>
@@ -83,7 +83,7 @@ Follow the below steps to change the size mode for an application at runtime.
 2.Refer to the following code for adding control and the JavaScript click action inside the script tag of `~/Pages/Index.cshtml` file to switch between touch and mouse mode using `e-bigger` class.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <p> Size-modes for application </p>
 <p> This demo shows the Size-Modes applied for an entire application </p>
@@ -125,7 +125,7 @@ You can change the size mode of a control between touch and normal (mouse) mode 
 Refer to the following code, in which the `e-bigger` class is added for enabling touch mode using the for loop in ASP.NET core application.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <p> Size-modes for application </p>
 <p> This demo shows the Size-Modes applied for an entire application </p>

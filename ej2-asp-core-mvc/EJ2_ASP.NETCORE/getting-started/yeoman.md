@@ -73,9 +73,7 @@ The official prerequisites to create and run an ASP.NET Core 2.x application on 
 
     ```html
     <head>
-        ....
-        ....
-
+        ...
         <!-- Syncfusion Essential JS 2 Styles -->
         <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
 
@@ -88,8 +86,7 @@ The official prerequisites to create and run an ASP.NET Core 2.x application on 
 
     ```html
     <body>
-        ....
-        ....
+        ...
         <!-- Syncfusion Essential JS 2 ScriptManager -->
         <ejs-scripts></ejs-scripts>
     </body>
@@ -176,8 +173,7 @@ The official prerequisites to create and run an ASP.NET Core 1.x application on 
 
     ```html
     <head>
-        ....
-        ....
+        ...
 
         <!-- Syncfusion Essential JS 2 Styles -->
         <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
@@ -191,8 +187,7 @@ The official prerequisites to create and run an ASP.NET Core 1.x application on 
 
     ```html
     <body>
-        ....
-        ....
+        ...
         <!-- Syncfusion Essential JS 2 ScriptManager -->
         <ejs-scripts></ejs-scripts>
     </body>

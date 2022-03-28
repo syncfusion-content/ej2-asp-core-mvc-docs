@@ -1,5 +1,5 @@
 @{
-    ....
+    ...
     List<PieChartData> chartData = new List<PieChartData>
     {
         new PieChartData { xValue = "Chrome", yValue = 37, text = "37%", fill="#498fff"},

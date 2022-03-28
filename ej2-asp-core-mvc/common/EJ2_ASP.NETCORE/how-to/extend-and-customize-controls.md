@@ -10,7 +10,7 @@ documentation: ug
 
 # Extend and Customize Syncfusion Controls
 
-The AP provides the support to extend a component or customize it within another component for a strong composite model.
+The ASP.NET Core provides the support to extend a component or customize it within another component for a strong composite model.
 
 ## Extend Syncfusion ASP.NET Core Control
 
@@ -91,7 +91,7 @@ namespace ASPCore.Pages
 4.Render your new component in the view page `~/Pages/Index.cshtml` and run the application.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <SyncButton Content="Primary" IsPrimary="true" Disabled="true"></SyncButton>
 <SyncButton Content="Success" Styles="@ASPCore.Pages.SyncButton.ButtonStyles.Success"></SyncButton>
@@ -103,6 +103,8 @@ namespace ASPCore.Pages
 {% endtabs %}
 
 ![Output of extending Syncfusion control](images/extend-sync-component.png)
+
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ExtendControl)
 
 ## Use Syncfusion ASP.NET Core Control within Another view component
 
@@ -198,7 +200,7 @@ namespace ASPCORE.Pages
 5.Render your new view component in the view page `~/Pages/Index.cshtml` and run the application.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <vc:todo-list></vc:todo-list>
 
@@ -206,6 +208,8 @@ namespace ASPCORE.Pages
 {% endtabs %}
 
 ![Render Syncfusion ASP.NET Core control inside another view component](images/todolist.gif)
+
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ViewComponent)
 
 ## See also
 

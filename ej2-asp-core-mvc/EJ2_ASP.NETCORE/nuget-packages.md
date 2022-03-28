@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nuget Packages in ##Platform_Name## Controls
-description: Learn here all about NuGet Packages and its installation steps in Syncfusion ##Platform_Name## controls and more.
+description: Learn here all about NuGet Packages in Syncfusion ##Platform_Name## controls and more.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -16,7 +16,7 @@ documentation: ug
 
 ### Syncfusion.EJ2.AspNet.Core
 
-Syncfusion ASP.NET Core UI controls are built from the ground up to be lightweight, responsive, and touch- friendly. It includes over 70+ controls, including grid, chart, scheduler, spreadsheet, gantt chart, listbox, file manager, powerpoint or presentation, excel and much more.
+Syncfusion ASP.NET Core UI controls powered by Essential JS 2, it contains 70+ high performance, lightweight, responsive, and touch- friendly UI controls including grid, chart, scheduler, spreadsheet, gantt chart, listbox, file manager, powerpoint or presentation, excel and much more.
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -42,74 +42,6 @@ Syncfusion ASP.NET Core UI controls are built from the ground up to be lightweig
 <ul>
 <li><a href="https://www.nuget.org/packages/Newtonsoft.Json/" target="_blank">Newtonsoft.Json</a></li>
 <li><a href="https://www.nuget.org/packages/Syncfusion.Licensing/" target="_blank">Syncfusion.Licensing</a></li>
-</ul>
-</td>
-</tr>
-</table>
-
-### Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
-
-The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them. The thumbnail, bookmark, hyperlink, and table of contents support provides easy navigation within and outside PDF files. The form-filling support provides a platform to fill and print with AcroForms. The PDF files can be reviewed with the available annotation tools.
-
-<table>
-<tr>
-<td>
-<b>NuGet package name</b>
-</td>
-<td>
-<b>Controls</b>
-</td>
-<td>
-<b>Dependencies</b>
-</td>
-</tr>
-<tr>
-<td>
-<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows/">Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows</a>
-</td>
-<td>
-ejs-pdfviewer
-</td>
-<td>
-<ul><li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
-<li><a href="nuget.org/packages/Syncfusion.Compression.Net.Core/" target="_blank">Syncfusion.Compression.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
-<li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
-</ul>
-</td>
-</tr>
-</table>
-
-### Syncfusion.EJ2.WordEditor.AspNet.Core
-
-The ASP.NET Core Word Processor provides all the common Word processing features including editing text, formatting contents, resizing images and tables, finding and replacing text, bookmarks, tables of contents, printing, and importing and exporting Word documents.
-
-<table>
-<tr>
-<td>
-<b>NuGet package name</b>
-</td>
-<td>
-<b>Controls</b>
-</td>
-<td>
-<b>Dependencies</b>
-</td>
-</tr>
-<tr>
-<td>
-<a href="https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/">Syncfusion.EJ2.WordEditor.AspNet.Core</a>
-</td>
-<td>
-ejs-documenteditor
-</td>
-<td>
-<ul>
-<li><a href="https://www.nuget.org/packages/Newtonsoft.Json/" target="_blank">Newtonsoft.Json</a></li>
-<li><a href="nuget.org/packages/Syncfusion.Compression.Net.Core/" target="_blank">Syncfusion.Compression.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.DocIO.Net.Core/" target="_blank">Syncfusion.DocIO.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.OfficeChart.Net.Core/" target="_blank">Syncfusion.OfficeChart.Net.Core</a></li>
 </ul>
 </td>
 </tr>
@@ -151,9 +83,9 @@ ejs-spreadsheet
 </tr>
 </table>
 
-### Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
+### Syncfusion.EJ2.WordEditor.AspNet.Core
 
-The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them in the Linux operating system.
+The ASP.NET Core Word Processor provides all the common Word processing features including editing text, formatting contents, resizing images and tables, finding and replacing text, bookmarks, tables of contents, printing, and importing and exporting Word documents.
 
 <table>
 <tr>
@@ -169,18 +101,17 @@ The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web appl
 </tr>
 <tr>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux/">Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux</a>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/">Syncfusion.EJ2.WordEditor.AspNet.Core</a>
 </td>
 <td>
-ejs-pdfviewer
+ejs-documenteditor
 </td>
 <td>
 <ul>
-<li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
+<li><a href="https://www.nuget.org/packages/Newtonsoft.Json/" target="_blank">Newtonsoft.Json</a></li>
 <li><a href="nuget.org/packages/Syncfusion.Compression.Net.Core/" target="_blank">Syncfusion.Compression.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
-<li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.DocIO.Net.Core/" target="_blank">Syncfusion.DocIO.Net.Core</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.OfficeChart.Net.Core/" target="_blank">Syncfusion.OfficeChart.Net.Core</a></li>
 </ul>
 </td>
 </tr>
@@ -212,6 +143,75 @@ ejs-documenteditor
 <td>
 <ul>
 <li>This package has no dependencies.</li>
+</ul>
+</td>
+</tr>
+</table>
+
+### Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
+
+The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them. The thumbnail, bookmark, hyperlink, and table of contents support provides easy navigation within and outside PDF files. The form-filling support provides a platform to fill and print with AcroForms. The PDF files can be reviewed with the available annotation tools.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows/">Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows</a>
+</td>
+<td>
+ejs-pdfviewer
+</td>
+<td>
+<ul><li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
+<li><a href="nuget.org/packages/Syncfusion.Compression.Net.Core/" target="_blank">Syncfusion.Compression.Net.Core</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
+<li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
+<li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+### Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
+
+The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them in the Linux operating system.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux/">Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux</a>
+</td>
+<td>
+ejs-pdfviewer
+</td>
+<td>
+<ul>
+<li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
+<li><a href="nuget.org/packages/Syncfusion.Compression.Net.Core/" target="_blank">Syncfusion.Compression.Net.Core</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
+<li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
+<li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
 </ul>
 </td>
 </tr>
@@ -316,3 +316,4 @@ ejs-filemanager
 </td>
 </tr>
 </table>
+<!-- markdownlint-enable MD033 -->

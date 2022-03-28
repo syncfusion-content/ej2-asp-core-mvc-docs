@@ -35,7 +35,7 @@ The following list demonstrates the Syncfusion ASP.NET Core control documents th
 You can make any element draggable by passing the element to Draggable constructor.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div id="drag-element"><p>Draggable Element </p></div>
     
@@ -72,7 +72,7 @@ You can make any element draggable by passing the element to Draggable construct
 You can convert any DOM element as a droppable zone, which accepts the draggable elements.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div id="droppable">
     <p class="drop">
@@ -112,7 +112,7 @@ You can convert any DOM element as a droppable zone, which accepts the draggable
 To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable/#drop) callback function during droppable object creation. You can get details of dropped element through dropped element property in event argument.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div id="droppable"><p class="drop"><span>Drop Target </span></p></div>
 <div id="drag-element"><p class="drag-text">Drag </p></div>
