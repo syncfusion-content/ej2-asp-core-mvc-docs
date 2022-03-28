@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization Using Cssclass in ##Platform_Name## Daterangepicker Component
-description: Learn here all about Customization Using Cssclass in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Customization using Cssclass in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization Using Cssclass
 publishingplatform: ##Platform_Name##

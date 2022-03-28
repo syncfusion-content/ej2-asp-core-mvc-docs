@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Daterangepicker Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
+description: Learn here all about accessibility in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -19,11 +19,11 @@ It helps people with disabilities by providing information about the widget for 
 
 * **Aria-expanded**: Indicates the currently selected date of the DateRangePicker control.
 
-* **Aria-disabled**:  Indicates the disabled state of the DateRangePicker control.
+* **Aria-disabled**: Indicates the disabled state of the DateRangePicker control.
 
 ## Keyboard Interaction
 
-Use the below keys to interact with the DateRangePicker. This control implements the keyboard navigation support by following the  [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+Use the below keys to interact with the DateRangePicker. This control implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
 It supports the following list of shortcut keys:
 
