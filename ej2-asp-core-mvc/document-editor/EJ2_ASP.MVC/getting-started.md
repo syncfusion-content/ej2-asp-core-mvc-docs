@@ -66,8 +66,7 @@ After installation complete, this will be included in the project. You can refer
 
 ```html
 <head>
-    ....
-    ....
+...
 
     <!-- Syncfusion Essential JS 2 Styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
@@ -81,8 +80,7 @@ After installation complete, this will be included in the project. You can refer
 
 ```html
 <body>
-    ....
-    ....
+...
     <!-- Syncfusion Essential JS 2 ScriptManager -->
     @Html.EJS().ScriptManager()
 </body>

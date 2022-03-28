@@ -81,8 +81,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <body>
-    ....
-    ....
+...
     <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
@@ -117,6 +116,8 @@ Now, add the Syncfusion ASP.NET Core SplitButton tag helper in `~/Pages/Index.cs
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core SplitButton control will be rendered in the default web browser.
 
 ![ASP.NET Core SplitButton Control](images/split-button.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/SplitButton/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

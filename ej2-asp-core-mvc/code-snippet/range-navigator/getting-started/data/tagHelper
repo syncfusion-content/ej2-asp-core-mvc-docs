@@ -1,5 +1,5 @@
 @{
-    ....
+    ...
 	List <data> dataSource = new List<data>
     {
         new data { x = new DateTime(2005, 01, 01), y = 21, y1 = 28 },

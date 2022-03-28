@@ -113,7 +113,7 @@ app.UseEndpoints(endpoints =>
 11. Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` View file in the `~/Areas/Products/Views/` folder.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>
     <ejs-calendar id="calendar"></ejs-calendar>
@@ -192,7 +192,7 @@ app.UseEndpoints(endpoints =>
 8. Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` Razor Page file in the `~/Areas/Products/Pages/` folder.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>
     <ejs-calendar id="calendar"></ejs-calendar>

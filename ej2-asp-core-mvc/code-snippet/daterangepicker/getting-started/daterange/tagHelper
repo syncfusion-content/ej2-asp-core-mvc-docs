@@ -1,5 +1,5 @@
 @{
-    ....
+    ...
     var startDate = new DateTime(2022, 11, 09);
     var endDate = new DateTime(2022, 11, 21);
 }

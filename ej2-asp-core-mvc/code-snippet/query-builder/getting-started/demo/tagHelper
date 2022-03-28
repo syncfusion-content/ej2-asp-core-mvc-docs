@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2.QueryBuilder
 @{
-    .....
+    ...
 	List<string> values = new List<string> { "Mr.", "Mrs." };
     QueryBuilderRule rule = new QueryBuilderRule()
     {
