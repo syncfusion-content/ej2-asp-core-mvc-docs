@@ -431,4 +431,4 @@ public IActionResult Delete([FromBody] ICRUDModel<Book> value)
 {% endhighlight %}
 {% endtabs %}
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/data-binding/Bind%20data%20from%20SQL%20Server)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DataBinding/Bind%20data%20from%20SQL%20Server)
