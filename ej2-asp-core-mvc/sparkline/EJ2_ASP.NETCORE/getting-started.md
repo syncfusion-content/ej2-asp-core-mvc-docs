@@ -186,6 +186,7 @@ public class DataSource
         return data1;
     }
 }
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
