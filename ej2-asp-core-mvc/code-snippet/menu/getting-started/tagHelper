@@ -1,5 +1,5 @@
 @{
-    .....
+    ...
     List<object> menuItems = new List<object>();
     menuItems.Add(new
     {

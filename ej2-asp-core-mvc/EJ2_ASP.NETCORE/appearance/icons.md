@@ -19,7 +19,7 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 2.Add the icon class with corresponding icon content from the [available icons](#available-icons). For example, the below code snippet represents the search icon class.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <style>
     .e-search:before{
@@ -33,7 +33,7 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 3.Add `e-icons` and `e-search` class to the HTML element.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <span class="e-icons e-search"></span>
 
@@ -43,7 +43,7 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 The below code snippet represents the complete example of icon usage.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 <style>
     .e-search:before{
         content:'\e993';
@@ -77,7 +77,7 @@ You can change the icon size by adding `e-small`, `e-medium` and `e-large` class
 * When icon size set to Large, the font size will be `24px`.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <p>Smaller icons</p>
 <span class="e-icons e-cut e-small"></span>
@@ -113,7 +113,7 @@ You can change the icon size by adding `e-small`, `e-medium` and `e-large` class
 `title` attribute is used to improve accessibility with screen readers and shows a tooltip on mouseover. The following example code displays tooltip text for appropriate icons.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <span class="e-icons e-upload-1" title="Upload"></span>
 <span class="e-icons e-download" title="Download"></span>
@@ -133,7 +133,7 @@ You can change the icon size by adding `e-small`, `e-medium` and `e-large` class
 You can customize color and size by overriding the `e-icons` class. The following example code demonstrates the custom font-size and color for icons.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <span class="e-icons e-align-top"></span>
 <span class="e-icons e-align-bottom"></span>
@@ -161,7 +161,7 @@ The Syncfusion ASP.NET core Toolbar control supports to render custom font icons
 The following code explains how to render `open-iconic` icons using `prefixIcon` property.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <ejs-toolbar id="defaultToolbar">
     <e-toolbar-items>
@@ -188,7 +188,7 @@ You can add the additional HTML attributes to the Syncfusion ASP.NET Core Button
 The following example shows the font size customization using `HtmlAttributes` directive.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 @{IDictionary<string, object> customAttribute = new Dictionary<string, object>()
     {
@@ -208,7 +208,7 @@ The built-in Syncfusion icons can be rendered directly in the HTML element by de
 The following code example explains the direct rendering of Syncfusion `download` icon in the span element.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <span class="e-icons e-download"></span>
 

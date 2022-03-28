@@ -81,8 +81,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <body>
-    ....
-    ....
+...
     <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
@@ -103,7 +102,7 @@ Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index
 {% highlight cshtml tabtitle="CSHTML.cs" %}
 
 @{
-    ....
+    ...
     List<object> items = new List<object>();
     items.Add(new
     {

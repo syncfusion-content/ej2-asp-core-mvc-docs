@@ -1,5 +1,5 @@
 @{
-    ....
+    ...
     List<DefaultBulletData> bulletData = new List<DefaultBulletData>
     {
         new DefaultBulletData { value = 270, target = 250}

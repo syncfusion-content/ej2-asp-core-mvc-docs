@@ -54,8 +54,7 @@ Add the EJ2 CDN client-side resources to the `<head>` element of the `~/Views/Sh
 
 ```html
 <head>
-    ....
-    ....
+...
 
     <!-- Syncfusion Essential JS 2 Styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />

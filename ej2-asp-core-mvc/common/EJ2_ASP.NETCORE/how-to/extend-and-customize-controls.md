@@ -91,7 +91,7 @@ namespace ASPCore.Pages
 4.Render your new component in the view page `~/Pages/Index.cshtml` and run the application.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <SyncButton Content="Primary" IsPrimary="true" Disabled="true"></SyncButton>
 <SyncButton Content="Success" Styles="@ASPCore.Pages.SyncButton.ButtonStyles.Success"></SyncButton>
@@ -200,7 +200,7 @@ namespace ASPCORE.Pages
 5.Render your new view component in the view page `~/Pages/Index.cshtml` and run the application.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <vc:todo-list></vc:todo-list>
 

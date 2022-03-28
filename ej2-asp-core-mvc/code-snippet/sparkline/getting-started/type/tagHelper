@@ -1,5 +1,5 @@
 @{
-    .....
+    ...
     var data = DataSource.GetData();
 }
 
