@@ -1,1 +1,6 @@
-<ejs-timepicker id="timepicker" format="HH:mm" step="60" value="@ViewBag.value"></ejs-timepicker>
+@{
+    .....
+    var value = new DateTime(2022, 05, 07, 4, 00, 00);
+}
+
+<ejs-timepicker id="timepicker" format="HH:mm" step="60" value="value"></ejs-timepicker>
