@@ -1,8 +1,0 @@
-
-@Html.EJS().Charts("container").Series(series =>
-       {
-           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).Width(2).XName("country").YName("gold").DataSource(ViewBag.dataSource).Name("Gold Medals").Add();
-           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).Width(2).XName("country").YName("silver").DataSource(ViewBag.dataSource).Name("Silver Medals").Add();
-           series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).Width(2).XName("country").YName("bronze").DataSource(ViewBag.dataSource).Name("Bronze Medals").Add();
-       }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).LegendSettings(legend => legend.shape(Syncfusion.EJ2.Charts.LegendShape.Circle).position(@Syncfusion.EJ2.Charts.LegendPosition.Right)
-         .maximumLabelWidth(50).textWrap(Syncfusion.EJ2.Charts.TextWrap.Wrap)).Title("Olymbic Medals").Render();

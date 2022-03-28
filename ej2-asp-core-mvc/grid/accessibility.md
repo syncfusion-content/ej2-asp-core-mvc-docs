@@ -32,18 +32,16 @@ The following ARIA attributes are used in the Grid:
 
 ## Keyboard navigation
 
-Grid functionalities can be interactive with keyboard shortcuts. In order to utilize all the available keyboard shortcuts, the [`EnableHeaderFocus`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableHeaderFocus) property of the Grid needs to be set as **true**.
+Grid functionalities can be interactive with keyboard shortcuts. In order to utilize all the available keyboard shortcuts, the ‘enableHeaderFocus’ property of the Grid needs to be set as `true`.
 
 The following keyboard shortcuts are supported by the Grid.
 
 |Interaction Keys|Description|
 |----------------|-----------|
 |<b>Pager</b>||
-|<kbd>Tab / Shift + Tab</kbd> | Focus on the next/previous pager item.|
-|<kbd>Enter / Space</kbd> | Select the currently focused page.|
-|<kbd>Right Arrow / PageDown</kbd> | Navigate to next page.|
-|<kbd>Left Arrow / PageUp</kbd> | Navigate to previous page.|
-|<kbd>Home / End</kbd> | Navigate to first and last page.|
+|<kbd>PageDown</kbd> | Goes to the next page.|
+|<kbd>PageUp</kbd> | Goes to the previous page.|
+|<kbd>Ctrl + Alt +PageDown</kbd> | Goes to the last page.|
 |<b>Focus Elements</b>||
 |<kbd>Home</kbd> | Goes to the first cell.|
 |<kbd>End</kbd> | Goes to the last cell.|
