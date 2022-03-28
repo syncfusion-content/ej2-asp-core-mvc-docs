@@ -1,5 +1,5 @@
 @{
-    .....
+    ...
     List<string> values = new List<string> { "Mr.", "Mrs." };
 }
 

@@ -83,8 +83,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <body>
-    ....
-    ....
+    ...
     <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
@@ -122,8 +121,7 @@ By default, the pie series will be rendered when assigning the JSON data to the 
 {% include code-snippet/chart/accumulation-charts/datalabel/initial/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
-....
-....
+...
 public class PieChartData
 {
     public string xValue;

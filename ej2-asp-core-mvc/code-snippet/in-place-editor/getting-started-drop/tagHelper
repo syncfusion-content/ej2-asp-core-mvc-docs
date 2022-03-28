@@ -1,5 +1,5 @@
 @{
-    ....
+    ...
     string[] genderData = new string[] { "Male", "Female" };
     var modalData = new { placeholder = "Select gender", dataSource = genderData };
 }

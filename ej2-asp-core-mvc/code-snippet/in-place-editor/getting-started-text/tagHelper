@@ -1,5 +1,5 @@
 @{
-    ....
+    ...
     var modalData = new { placeholder = "Enter employee name" };
     var value = "Andrew";
 }

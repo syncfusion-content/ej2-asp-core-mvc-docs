@@ -88,7 +88,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 Now, add the both HTML and Tag ASP.NET Core Calendar control in `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 <div class="control">
    @Html.EJS().Calendar("first-calendar").Render()
    <ejs-calendar id="second-calendar"></ejs-calendar>

@@ -1,5 +1,5 @@
 @{
-    .....
+    ...
 	var textStyle = new
     {
         size= "15px",

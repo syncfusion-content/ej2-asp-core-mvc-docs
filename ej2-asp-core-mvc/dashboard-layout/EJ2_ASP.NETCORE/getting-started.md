@@ -81,8 +81,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <body>
-    ....
-    ....
+...
     <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
@@ -110,12 +109,12 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 {% include code-snippet/dashboard-layout/getting-started/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
-....
+...
 public class spacingModel
 {
     public double[] cellSpacing { get; set; }
 }
-....
+...
 {% endhighlight %}
 {% endtabs %}
 
@@ -148,12 +147,12 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 {% include code-snippet/dashboard-layout/getting-started-panel/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
-....
+...
 public class spacingModel
 {
     public double[] cellSpacing { get; set; }
 }
-....
+...
 {% endhighlight %}
 {% endtabs %}
 
