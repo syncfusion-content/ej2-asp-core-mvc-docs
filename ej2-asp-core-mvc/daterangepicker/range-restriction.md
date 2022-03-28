@@ -19,8 +19,6 @@ You can restrict the minimum and maximum date that can be allowed as start and e
 * `min` – sets the minimum date that can be selected as startDate.
 * `max` – sets the maximum date that can be selected as endDate.
 
-In the following sample, you can select a range from 15th day of this month to 15th day of next month.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -54,8 +52,6 @@ Span between ranges can be limited to avoid excess or less days selection toward
 
 * `minDays` - Sets the minimum number of days between start and end date.
 * `maxDays` - Sets the maximum number of days between start and end date.
-
-In the following sample, the range selection should be greater than 3 days and less than 8 days else it will not set.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

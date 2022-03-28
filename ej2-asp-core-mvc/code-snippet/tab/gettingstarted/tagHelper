@@ -20,13 +20,16 @@
             "audio media messages to other users using standard cellular mobile numbers. As of February 2016, WhatsApp had a user" +
             "base of up to one billion,[10] making it the most globally popular messaging application.WhatsApp Inc., based in" +
             "Mountain View, California, was acquired by Facebook Inc.on February 19, 2014, for approximately US$19.3 billion.";
+	var headerText0 = new TabHeader { Text = "Twitter" };
+    var headerText1 = new TabHeader { Text = "Facebook" };
+    var headerText2 = new TabHeader { Text = "Whatsapp" };
 }
 
 <ejs-tab id="ej2Tab">
     <e-tab-tabitems>
-        <e-tab-tabitem header="ViewBag.headerText0" content="@content0"></e-tab-tabitem>
-        <e-tab-tabitem header="ViewBag.headerText1" content="@content1"></e-tab-tabitem>
-        <e-tab-tabitem header="ViewBag.headerText2" content="@content2"></e-tab-tabitem>
+        <e-tab-tabitem header="headerText0" content="@content0"></e-tab-tabitem>
+        <e-tab-tabitem header="headerText1" content="@content1"></e-tab-tabitem>
+        <e-tab-tabitem header="headerText2" content="@content2"></e-tab-tabitem>
     </e-tab-tabitems>
 </ejs-tab>
 
