@@ -118,3 +118,8 @@ Now, add the Syncfusion ASP.NET Core Calendar tag helper in `~/Pages/Index.cshtm
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the app. Set `Select Environment` to `.NET Core`, if settings required for VS Code. Then, the default web browser launched with Syncfusion ASP.NET Core Calendar control.
 
 ![ASP.NET Core Calendar control - Getting Started using VS Code](images/aspnetcore-calendar.png)
+
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
