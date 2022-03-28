@@ -34,7 +34,7 @@ To control a control’s direction individually, you can directly set the contro
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 <ejs-schedule id="schedule" height="550px" enableRtl="true"></ejs-schedule>
 {% endhighlight %}{% endtabs %}
 

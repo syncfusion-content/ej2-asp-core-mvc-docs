@@ -1,5 +1,5 @@
 @{
-    .....
+    ...
     List<ListViewData> data = new List<ListViewData>();
     data.Add(new ListViewData() { text = "Artwork", id = "01" });
     data.Add(new ListViewData() { text = "Abstract", id = "02" });

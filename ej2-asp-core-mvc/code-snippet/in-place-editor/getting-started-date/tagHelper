@@ -1,5 +1,5 @@
 @{
-    .....
+    ...
     var dateValue = new DateTime(2018, 12, 04);
     var modalData = new { showTodayButton = true };
 }

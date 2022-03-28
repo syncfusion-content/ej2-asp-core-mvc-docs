@@ -80,8 +80,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <body>
-    ....
-    ....
+...
     <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
@@ -119,7 +118,7 @@ Populate the menu items in `ContextMenu` by using the `items` property.
 {% highlight cshtml tabtitle="CSHTML" %}
 
 @{
-    .....    
+    ...    
     //define the array of JSON
     List<object> menuItems = new List<object>();
     menuItems.Add(new
@@ -155,7 +154,7 @@ The Separators are the horizontal lines that are used to separate the menu items
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
 @{
-    .....
+    ...
     List<object> menuItems = new List<object>();
     menuItems.Add(new
     {

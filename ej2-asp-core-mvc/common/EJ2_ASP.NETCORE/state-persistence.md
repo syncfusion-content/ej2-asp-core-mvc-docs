@@ -15,7 +15,7 @@ The Syncfusion ASP.NET Core library supports persisting a control's state across
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/common/persistence/tagHelper %}
 {% endhighlight %}{% endtabs %}
 
