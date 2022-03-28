@@ -51,6 +51,7 @@ The virtual scrolling option allows you to load the large amounts of data withou
 * Grouping, which takes additional time to splitting the raw items into the provided format.
 * Date Formatting, which takes additional time to convert date format.
 * Date Formatting with sorting, here additionally full date time format should be framed to perform sorting along with the provided date format which lags the performance.
+* The loading time in virtual scrolling is determined by the width and height of the pivot table.  If the height and width of the pivot table are increased, the loading time may be affected. As a result, performance may decrease as well.
 
 ## Data Compression
 
