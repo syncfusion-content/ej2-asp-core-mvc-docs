@@ -1,4 +1,9 @@
-<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.DataSource" childMapping="Children" treeColumnIndex="1">
+@{
+    ....
+    var data = TreeGridItems.GetTreeData();
+}
+
+<ejs-treegrid id="TreeGrid" dataSource="@data" childMapping="Children" treeColumnIndex="1">
     <e-treegrid-columns>
         <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="95"></e-treegrid-column>
         <e-treegrid-column field="TaskName" headerText="Task Name" width="220"></e-treegrid-column>

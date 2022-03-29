@@ -1,4 +1,9 @@
-<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.DataSource" allowPaging="true" childMapping="Children" treeColumnIndex="1">
+@{
+    ....
+    var data = TreeGridItems.GetTreeData();
+}
+
+<ejs-treegrid id="TreeGrid" dataSource="@data" allowPaging="true" childMapping="Children" treeColumnIndex="1">
     <e-treegrid-pagesettings pageSizes="true" pageSize="10" pageCount="4"></e-treegrid-pagesettings>
     <e-treegrid-columns>
         <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="95"></e-treegrid-column>
