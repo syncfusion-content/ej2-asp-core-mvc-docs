@@ -197,7 +197,7 @@ You can handle the success and failure actions using the [success](https://help.
 
 ![ASP.NET Core Uploader](images/uploader-auto-01.png)
 
-> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) that shows how to render the file upload and browse the files which you want to upload to the server.
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Uploader/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
