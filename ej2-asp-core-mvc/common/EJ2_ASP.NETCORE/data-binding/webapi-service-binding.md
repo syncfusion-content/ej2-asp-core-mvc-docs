@@ -201,7 +201,7 @@ Checkout the [Themes topic](../../appearance/theme/) to learn different ways ([C
 {% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 </head>
 {% endhighlight %}
@@ -214,7 +214,7 @@ In this getting started walk-through, the required scripts are referred using [C
 {% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Scripts -->
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 {% endhighlight %}

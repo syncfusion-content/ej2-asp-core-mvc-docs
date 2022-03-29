@@ -36,10 +36,10 @@ Add the EJ2 CDN client-side resources to the `<head>` element of the `~/Views/Sh
 
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 
-    <!-- Syncfusion Essential JS 2 Scripts -->
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -62,14 +62,14 @@ Add the CDN client-side resources in the `<head>` element of the `~/Views/Shared
 
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/material.css" />
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/material.css" />
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/material.css" />
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/material.css" />
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2{{ site.ej2version }}//ej2-lists/styles/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/material.css" />
 
-    <!-- Syncfusion Essential JS 2 Scripts -->
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
@@ -225,13 +225,13 @@ gulp.task("copy-client-resource", function (done) {
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <head>
-    <!-- Syncfusion Essential JS 2 Styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="~/syncfusion/ej2-calendars/styles/calendar/material.css" />
     <link rel="stylesheet" href="~/syncfusion/ej2-base/styles/material.css" />
     <link rel="stylesheet" href="~/syncfusion/ej2-buttons/styles/button/material.css" />
     <link rel="stylesheet" href="~/syncfusion/ej2-popups/styles/popup/material.css" />
     <link rel="stylesheet" href="~/syncfusion/ej2-lists/styles/list-view/material.css" />
-    <!-- Syncfusion Essential JS 2 Scripts -->
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="~/syncfusion/ej2-base/ej2-base.min.js"></script>
     <script src="~/syncfusion/ej2-buttons/ej2-buttons.min.js"></script>
     <script src="~/syncfusion/ej2-popups/ej2-popups.min.js"></script>
