@@ -1,3 +1,13 @@
+---
+layout: post
+title: Scaffolding process for ASP.NET MVC - EJ2 platform
+description: Code-generation Framework for Syncfusion ASP.NET Core platform to quickly create the Controller and Views in a short time.
+platform: ASP.NET MVC - EJ2
+control: Syncfusion VS Extensions
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
 # Scaffolding
 
 Syncfusion provides **Visual Studio Scaffolding**for Syncfusion ASP.NET MVC platform to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create Views and Controller action methods for Syncfusion ASP.NET MVC DataGrid, Charts, and Scheduler controls.
