@@ -17,12 +17,12 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 ## Single selection
 
-An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
+An element can be selected by clicking that element. During single click, all previously selected items are cleared.
 
 ![Single Selection](images/single-select.gif)
 
 * While selecting the diagram elements, the following events can be used to do your customization.
-* When selecting/unselecting the diagram elements, the [`selectionChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_SelectionChange) event gets triggered.
+* When selecting or unselecting the diagram elements, the [`selectionChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_SelectionChange) event gets triggered.
 
 ## Selecting a group
 
@@ -32,7 +32,7 @@ When a child element of any group is clicked, its contained group is selected in
 
 Multiple elements can be selected with the following ways:
 
-* Ctrl+Click - During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
+* Ctrl+Click - During single click, any existing item in the selection list will be cleared, and only the item clicked recently will be there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
 
 ![Multiple Selection](images/multi-select-ctrl.gif)
 
@@ -42,13 +42,13 @@ Multiple elements can be selected with the following ways:
 
 ## Select/Unselect elements using program
 
-The client-side methods [`select`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.html) and [`clearSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.html) help to select or clear the selection of the elements at runtime. The following code example illustrates how to select or clear the selection of an item using program.
+The client-side methods [`select`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.html) and [`clearSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.html) helps to select or clear the selection of the elements at runtime.
 
 Get the current selected items from the [`nodes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSelector.html#Syncfusion_EJ2_Diagrams_DiagramSelector_Nodes) and [`connectors`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSelector.html#Syncfusion_EJ2_Diagrams_DiagramSelector_Connectors) collection of the [`selectedItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_SelectedItems) property of the diagram model.
 
 ## Select entire elements in diagram programmatically
 
-The client-side method [`selectAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.html) used to select all the elements such as nodes/connectors in the diagram. Refer to the following link which shows how to use [`selectAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.html) method on the diagram.
+The client-side method [`selectAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.html) is used to select all the elements such as nodes/connectors in the diagram. Refer to the following link which shows how to use [`selectAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.html) method on the diagram.
 
 ## Drag
 
@@ -83,7 +83,7 @@ The client-side method [`selectAll`](https://help.syncfusion.com/cr/aspnetcore-j
 
 ## End point handles
 
-Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
+Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles helps to adjust the source and target points.
 
 ![Drag End Point Handles](images/connector-end-point.gif)
 
@@ -105,7 +105,7 @@ Source and target points of the selected connectors are represented with two han
 
 ## Orthogonal thumbs
 
-* Orthogonal thumbs allow you to adjust the length of adjacent segments by clicking and dragging it.
+* Orthogonal thumbs allows to adjust the length of adjacent segments by clicking and dragging it.
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
 ![orthogonal Segment Edit](images/orthogonal-segment-edit.gif)
@@ -118,7 +118,7 @@ Source and target points of the selected connectors are represented with two han
 
 ## Drag and drop nodes over other elements
 
-Diagram provides support to drop a node/connector over another node/connector. The [`drop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_Drop) event is raised to notify that an element is dropped over another one and it is disabled, by default. It can enabled with the constraints property.
+Diagram provides support to drop a node/connector over another node/connector. The [`drop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_Drop) event is raised to notify that an element is dropped over another one and it is disabled, by default. It can be enabled with the constraints property.
 
 ## User handles
 
@@ -267,7 +267,7 @@ var CloneTool = (function (_super) {
 
 ## Zoom pan status
 
-Diagram provides the support to notify the pan status of the zoom pan tool. When ever the diagram is panning the [`scrollChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_ScrollChange) event is triggered and hence the pan status can be obtained. The pan status is notified with Start, Progress, and Completed.
+Diagram provides the support to notify the pan status of the zoom pan tool. Whenever the diagram is panning the [`scrollChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_ScrollChange), event is triggered and hence the pan status can be obtained. The pan status is notified with Start, Progress, and Completed.
 
 |  Pan Status  | Description|
 |--------------|------------|
@@ -331,7 +331,7 @@ The following table illustrates those commands with the associated key values.
 | Left Arrow | nudge(“left”) | `nudgeLeft`: Moves the selected elements towards left by one pixel.|
 | Right Arrow | nudge(“right”) | `nudgeRight`: Moves the selected elements towards right by one pixel.|
 | Ctrl + MouseWheel | zoom | Zoom (Zoom in/Zoom out the diagram).|
-| F2 | `startLabelEditing` | Starts to edit the label of selected element.|
+| F2 | `startLabelEditing` | Starts to edit the label of the selected element.|
 | Esc | `endLabelEditing` | Sets the label mode as view and stops editing.|
 
 ## See Also
