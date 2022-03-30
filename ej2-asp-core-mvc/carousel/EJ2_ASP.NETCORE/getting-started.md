@@ -171,3 +171,8 @@ Now, add the Syncfusion ASP.NET Core Carousel tag helper in `~/Pages/Index.cshtm
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Carousel control will be rendered in the default web browser.
 
 ![ASP.NET Core Carousel Control](images/carousel-control.png)
+
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
