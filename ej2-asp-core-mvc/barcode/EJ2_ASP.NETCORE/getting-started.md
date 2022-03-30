@@ -143,6 +143,8 @@ You can add the QR code in the barcode generator control.
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core QR Genarator Control](images/qrcode-control.png)
+
 ## Adding Datamatrix Generator control
 
 You can add the datamatrix code in the barcode generator control.
@@ -166,6 +168,8 @@ You can add the datamatrix code in the barcode generator control.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![ASP.NET Core Datamatrix Genarator Control](images/datamatrix-control.png)
 
 ## See also
 
