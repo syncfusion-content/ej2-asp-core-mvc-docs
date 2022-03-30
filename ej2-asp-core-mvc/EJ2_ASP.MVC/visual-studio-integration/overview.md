@@ -1,3 +1,13 @@
+---
+layout: post
+title: Overview for ASP.NET MVC - EJ2 extension
+description: The Syncfusion ASP.NET MVC Extensions provide quick access to create or configure the Syncfusion ASP.NET projects along with Essential JS 2 components.
+platform: ASP.NET MVC - EJ2
+control: Syncfusion VS Extensions
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
 # Visual Studio Integration
 
 ## Overview
