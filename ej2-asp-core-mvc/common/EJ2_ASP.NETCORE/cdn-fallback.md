@@ -33,25 +33,18 @@ If you are using CDN for style sheet references then you have to add style sheet
 {% endhighlight %}
 {% endtabs %}
 
-> Alternately, fallback links can be provided using [script fallback](#script-fallback) and [style sheet fallback](#style-sheet-fallback) in ASP.NET Core app.
+> Alternately, fallback links can be provided using [style sheet fallback](#style-sheet-fallback) in ASP.NET Core app.
 
 ## Script Fallback
 
-You can check the Syncfusion ASP.NET Core object for script fallback whether scripts are loaded or not. If it's not loaded, create a script tag and refer scripts externally using [CRG](./custom-resource-generator) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file in ASP.NET Core app as in the below code.
+You can check the Syncfusion ASP.NET Core object for script fallback by using [script tag helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/script-tag-helper?view=aspnetcore-6.0) and refer scripts externally from [CRG](./custom-resource-generator) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file in ASP.NET Core app as in the below code.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/index.html" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    <script>
-    if (typeof(window.ejs) != "object") { // the Syncfusion ASP.NET Core object is not present
-        var fallbackScript = document.createElement("script");
-        fallbackScript.setAttribute("src", "/scripts/ej2.min.js"); // Path to external scripts
-        document.getElementsByTagName("head")[0].appendChild(fallbackScript);
-    }
-    </script>
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" asp-fallback-src="~/scripts/ej2.min.js" asp-fallback-test="window.ejs"></script>
 </head>
 
 {% endhighlight %}
@@ -62,7 +55,7 @@ You can check the Syncfusion ASP.NET Core object for script fallback whether scr
 You can refer the theme style sheet inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file and downloaded style from [Theme Studio](../../appearance/theme-studio) as fallback style sheet in ASP.NET Core app like below. 
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/index.html" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
