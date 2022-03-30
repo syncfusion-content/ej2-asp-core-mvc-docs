@@ -1,4 +1,9 @@
-<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.DataSource" allowFiltering="true" allowPaging="true" allowSorting="true" childMapping="Children" treeColumnIndex="1">
+@{
+    ....
+    var data = TreeGridItems.GetTreeData();
+}
+
+<ejs-treegrid id="TreeGrid" dataSource="@data" allowFiltering="true" allowPaging="true" allowSorting="true" childMapping="Children" treeColumnIndex="1">
     <e-treegrid-filtersettings type="FilterBar" hierarchyMode="Parent" mode="Immediate"></e-treegrid-filtersettings>
     <e-treegrid-pagesettings pageSize="10"></e-treegrid-pagesettings>
     <e-treegrid-columns>
