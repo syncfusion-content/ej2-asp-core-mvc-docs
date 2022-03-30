@@ -149,4 +149,4 @@ internal static FormatType GetFormatType(string format)
 
 ## See Also
 
-* [Feature modules](../../document-editor/feature-module/)
+* [Feature modules](../document-editor/feature-module/)

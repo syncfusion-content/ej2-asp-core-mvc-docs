@@ -69,5 +69,5 @@ editor.editorHistory.redoLimit = 400;
 
 ## See Also
 
-* [Feature modules](../../document-editor/feature-module/)
-* [Keyboard shortcuts](../../document-editor/keyboard-shortcut/)
+* [Feature modules](../document-editor/feature-module/)
+* [Keyboard shortcuts](../document-editor/keyboard-shortcut/)

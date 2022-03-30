@@ -100,7 +100,9 @@ Reset all the form fields in current document to default value using `resetFormF
 documentEditor.resetFormFields();
 ```
 
-## Protect and unprotect document programmatically
+## Protect the document in form filling mode
+
+Document Editor provides support for protecting the document with `FormFieldsOnly` protection. In this protection, user can only fill form fields in the document.
 
 Document editor provides an option to protect and unprotect document using [`enforceProtection`](../api/document-editor/editor/#enforceprotection) and [`stopProtection`](../api/document-editor/editor/#stopprotection) API.
 
@@ -125,3 +127,4 @@ The following example code illustrates how to enforce and stop protection in Doc
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
+>Note: In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.
