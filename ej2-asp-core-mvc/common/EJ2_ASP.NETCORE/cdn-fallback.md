@@ -65,7 +65,7 @@ You can refer the theme style sheet inside the `<head>` of **~/Pages/Shared/_Lay
 <body>
     ...
     <script>
-    function cdnScriptTest() {
+    function cdnStyleTest() {
         var testElem = document.createElement("div");
         testElem.className = "e-control"; // Syncfusion themes provides the e-control class
         document.body.appendChild(testElem);
@@ -80,7 +80,7 @@ You can refer the theme style sheet inside the `<head>` of **~/Pages/Shared/_Lay
             }
             document.body.removeChild(testElem);
         }
-        cdnScriptTest();
+        cdnStyleTest();
     </script>
 </body>
 
