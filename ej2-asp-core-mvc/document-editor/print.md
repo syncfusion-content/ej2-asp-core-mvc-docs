@@ -184,5 +184,5 @@ The following example shows how to customize layout options only for printing.
 
 ## See Also
 
-* [Feature modules](../../document-editor/feature-module/)
-* [Page Setup dialog](../../document-editor/dialog/#page-setup-dialog)
+* [Feature modules](../document-editor/feature-module/)
+* [Page Setup dialog](../document-editor/dialog/#page-setup-dialog)

@@ -176,5 +176,5 @@ In client-side, you can consume this web service and save the document as Rich T
 
 ## See Also
 
-* [Feature modules](../../document-editor/feature-module/)
+* [Feature modules](../document-editor/feature-module/)
 * [How to export the document as pdf](../document-editor/how-to/export-document-as-pdf).
