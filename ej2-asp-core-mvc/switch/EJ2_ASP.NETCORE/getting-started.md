@@ -142,8 +142,9 @@ This section explains how to set [`onLabel`](https://help.syncfusion.com/cr/aspn
 {% endtabs %}
 {% endif %}
 
-
 > Switch does not have text support for material themes, and does not support long custom text.
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Switch/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

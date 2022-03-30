@@ -99,9 +99,6 @@ Now, add the Syncfusion ASP.NET Core Signature tag helper in `~/Pages/Index.csht
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/signature/getting-started/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/signature/getting-started/default/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
