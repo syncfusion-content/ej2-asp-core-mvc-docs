@@ -245,3 +245,7 @@ gulp.task("copy-client-resource", function (done) {
 ## Custom Resource Generator
 
 The Syncfusion ASP.NET Core provides an option to generate a control's scripts using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) tool for the ASP.NET Core Controls. To generate the control-wise scripts externally using CRG, refer [here](./custom-resource-generator).
+
+## See also
+
+* [CDN Fallback](./cdn-fallback)
