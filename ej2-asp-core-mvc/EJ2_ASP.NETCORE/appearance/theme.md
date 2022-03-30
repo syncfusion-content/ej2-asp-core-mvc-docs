@@ -88,7 +88,7 @@ In the ASP.NET Core application, the application theme can be changed dynamicall
 <html lang="en">
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link id="cssfile" rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
 </head>
 <body>
