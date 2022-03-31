@@ -10,7 +10,7 @@ documentation: ug
 
 # Compatibility with Syncfusion ASP.NET Core (Essential JS 1)
 
-This documentation explains how to render Essential JS 1 and Essential JS 2 Syncfusion components in a single page.
+This documentation explains how to render Essential JS 1 and Essential JS 2 Syncfusion controls in a single page.
 
 ## Adding application
 
