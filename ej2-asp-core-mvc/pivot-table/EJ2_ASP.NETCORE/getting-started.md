@@ -61,8 +61,7 @@ The Essential JS 2 package will be included in the project, after the installati
 
 ```html
 <head>
-    ....
-    ....
+...
 
     <!-- Syncfusion Essential JS 2 Styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
@@ -76,8 +75,7 @@ The Essential JS 2 package will be included in the project, after the installati
 
 ```html
 <body>
-    ....
-    ....
+...
     <!-- Syncfusion Essential JS 2 ScriptManager -->
     <ejs-scripts></ejs-scripts>
 </body>

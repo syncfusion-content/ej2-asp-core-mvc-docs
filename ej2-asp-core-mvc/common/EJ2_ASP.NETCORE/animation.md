@@ -42,7 +42,7 @@ The following list demonstrates the Syncfusion ASP.NET Core control documents th
 The `animate` method of `Animation` library can be used to animate the HTML elements. This method can also take additional `AnimationModel`.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
      
 <div id="fade"></div>
 <div id="zoom"></div>
@@ -67,3 +67,5 @@ The `animate` method of `Animation` library can be used to animate the HTML elem
 {% endtabs %}
 
 ![animate the HTML element](images/animation.gif)
+
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Animation)

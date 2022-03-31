@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in ##Platform_Name## Daterangepicker Component
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
+description: Learn here all about customization in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
@@ -42,7 +42,7 @@ The following example disables the weekends of every month by using `renderDayCe
 
 ## First day of week
 
-Start day in a week will differ based on the culture, but you can also customize this based on the application needs. For this, you have to make use of [firstDayOfWeek](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_FirstDayOfWeek) property. By default, first day of a week in en-US is Sunday. In the following example it is customized to Monday with the help of this property.
+Start day in a week will differ based on the culture, but you can also customize this based on the application needs. For this, you have to make use of [firstDayOfWeek](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_FirstDayOfWeek) property. By default, first day of a week in en-US is Sunday.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -51,7 +51,7 @@ Checkout the [Themes topic](../appearance/theme/) to learn different ways ([CDN]
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 </head>
 {% endhighlight %}
@@ -64,8 +64,8 @@ In this getting started walk-through, the required scripts are referred using [C
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 <head>
-    ....
-    <!-- Syncfusion Essential JS 2 Scripts -->
+    ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 {% endhighlight %}
@@ -90,7 +90,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 Now, add the Syncfusion ASP.NET Core Calendar Html helper in `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 <div>
    @Html.EJS().Calendar("calendar").Render()
 </div>

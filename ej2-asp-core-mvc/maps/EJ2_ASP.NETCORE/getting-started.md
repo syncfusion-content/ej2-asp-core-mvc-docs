@@ -64,8 +64,7 @@ This package will be included in the project automatically once the installation
 
 ```cs
 <body>
-    ....
-    ....
+...
     <!-- Syncfusion Essential JS 2 ScriptManager -->
     <ejs-scripts></ejs-scripts>
 </body>

@@ -28,7 +28,7 @@ It requires the following [CLDR](http://cldr.unicode.org/) data to be loaded usi
 
 ### Installing CLDR Data and enable localization in schedule control
 
-1. CLDR data is available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules\cldr-data`.
+1.CLDR data is available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules\cldr-data`.
 
 {% tabs %}
 {% highlight c# tabtitle="CMD" %}
@@ -38,12 +38,12 @@ npm install cldr-data
 {% endhighlight %}
 {% endtabs %}
 
-2. Once the `CLDR-Data` installed create a folder `cldr-data` inside the `wwwroot` folder. Then create the folder directory like shown below in the structure inside the `wwwroot` folder.
+2.Once the `CLDR-Data` installed create a folder `cldr-data` inside the `wwwroot` folder. Then create the folder directory like shown below in the structure inside the `wwwroot` folder.
 
 * `wwwroot\cldr-data\supplemental`
 * `wwwroot\cldr-data\main`
 
-3. The files named as below are required to setup the specific culture to the Schedule control.
+3.The files named as below are required to setup the specific culture to the Schedule control.
 
 * numberingSystems.json
 * ca-gregorian.json
@@ -51,16 +51,16 @@ npm install cldr-data
 * timeZoneNames.json
 * ca-islamic.json
 
-4. The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now, you can move this file to the location `wwwroot\cldr-data\supplemental`.
+4.The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now, you can move this file to the location `wwwroot\cldr-data\supplemental`.
 
-5. The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture has the culture files inside the folder named as its language culture code. For example if the German culture is loaded, then the German culture files could be found inside the location `node_modules\cldr-data\main\fr-CH`. Now, create a folder named `fr-CH` inside the location `wwwroot\cldr-data\main` and move the files inside it.
+5.The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture has the culture files inside the folder named as its language culture code. For example if the German culture is loaded, then the German culture files could be found inside the location `node_modules\cldr-data\main\fr-CH`. Now, create a folder named `fr-CH` inside the location `wwwroot\cldr-data\main` and move the files inside it.
 
 ![Moved cldr data to application](./images/cldr-structure.png)
 
-6. Now, use the below `loadCultureFiles` method to load the culture specific CLDR JSON data.
+6.Now, use the below `loadCultureFiles` method to load the culture specific CLDR JSON data.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <script>
     loadCultureFiles('fr-CH');
@@ -147,7 +147,7 @@ To set the default culture and the currencyCode for all ASP.NET Core controls, y
 ### Setting Global Culture
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <script>
     ej.base.setCulture('ar');
@@ -159,7 +159,7 @@ To set the default culture and the currencyCode for all ASP.NET Core controls, y
 ### Setting Currency Code
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <script>
     ej.base.setCurrencyCode('QAR');
@@ -216,7 +216,7 @@ Custom number formatting and parsing are also be supported by specifying the pat
 The `getNumberFormat` method will return a function that formats given number based on the `NumberFormatOptions` specified.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>Value:<span class='format text'>1234545.65</span></div>
 <div>Formatted Value:<span class='result text'></span></div>
@@ -238,7 +238,7 @@ The `getNumberFormat` method will return a function that formats given number ba
  The `formatNumber` method which takes two arguments numeric value and `NumberFormatOptions`, returns the formatted string.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>Value:<span class='format text'>12345.65</span></div>
 <div>Formatted Value:<span class='result text'> </span></div>
@@ -262,7 +262,7 @@ The `getNumberFormat` method will return a function that formats given number ba
 The `getNumberParser` method will return a function that parses given string based on the `NumberFormatOptions` specified.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>FormattedValue:<span class='format text'>123567.45%</span></div>
 <div>ParsedOutput:<span class='result text'> </span></div>
@@ -283,7 +283,7 @@ The `getNumberParser` method will return a function that parses given string bas
 The `parseNumber` method takes two arguments the string value, `NumberFormatOptions` and returns the numeric value.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>FormattedValue:<span class='format text'>$01,234,545.650</span></div>
 <div>ParsedOutput:<span class='result text'> </span></div>
@@ -400,7 +400,7 @@ To use the custom date and time formats, specify the date/time pattern directly 
 **Custom format example**
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>DateValue:<span class='format text'>new Date('1/12/2014 10:20:33')</span></div>
 <div>Formatted Value:<span class='result text'> </span></div>
@@ -426,7 +426,7 @@ To use the custom date and time formats, specify the date/time pattern directly 
 The `getDateFormat` method which will return a function that formats given date object based on the `DateFormatOptions` specified.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>DateValue:<span class='format text'>new Date('1/12/2014 10:20:33')</span></div>
 <div>Formatted Value:<span class='result text'> </span></div>
@@ -447,7 +447,7 @@ The `getDateFormat` method which will return a function that formats given date 
  The `formatDate` method takes two arguments date object and `DateFormatOptions`, and returns the formatted string.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>DateValue:<span class='format text'>new Date('1/12/2014 10:20:33')</span></div>
 <div>Formatted Value:<span class='result text'> </span></div>
@@ -472,7 +472,7 @@ The `getDateFormat` method which will return a function that formats given date 
 The `getDateParser` method will return a function that parses given string based on the `DateFormatOptions` specified.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>Fromatted value:<span class='format text'>Friday, November 4, 2016 at 1:03:04 PM GMT+05:30</span></div>
 <div>parsed Value:<span class='result text'> </span></div>
@@ -493,7 +493,7 @@ The `getDateParser` method will return a function that parses given string based
 The `parseDate` method takes two arguments string value, `DateFormatOptions` and returns the date Object.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>Fromatted value:<span class='format text'>11/2016</span></div>
 <div>parsed Value:<span class='result text'> </span></div>

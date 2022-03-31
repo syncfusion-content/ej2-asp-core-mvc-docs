@@ -248,7 +248,7 @@ Checkout the [Themes topic](../../appearance/theme/) to learn different ways ([C
 {% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 </head>
 {% endhighlight %}
@@ -262,7 +262,7 @@ In this getting started walk-through, the required scripts are referred using [C
 {% highlight c# tabtitle="~/_Layout.cshtml" hl_lines="4" %}
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Scripts -->
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 {% endhighlight %}
@@ -287,7 +287,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 In previous steps, the Syncfusion ASP.NET Core package in the application is successfully configured. Now, add the grid control to your **Index.cshtml** view page which is present under `Views/Home` folder.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <ejs-grid id="Grid"></ejs-grid>
 
@@ -299,7 +299,7 @@ In previous steps, the Syncfusion ASP.NET Core package in the application is suc
 To consume data from the OData Controller, add the **DataManager** with **ODataV4Adaptor** like below.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <ejs-grid id="Grid">
     <e-data-manager url="https://localhost:7029/odata/Orders" adaptor="ODataV4Adaptor" crossdomain="true"></e-data-manager>
@@ -313,7 +313,7 @@ To consume data from the OData Controller, add the **DataManager** with **ODataV
 Grid columns can be defined by using the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) component.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <ejs-grid id="Grid">
     <e-data-manager url="https://localhost:7029/odata/Orders" adaptor="ODataV4Adaptor" crossdomain="true"></e-data-manager>
@@ -363,7 +363,7 @@ Editing can be enabled in the grid control using the [GridEditSettings](https://
 Here, **Inline** edit mode and Toolbar property are used to show toolbar items for editing.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
     <e-data-manager url="https://localhost:7029/odata/Orders" adaptor="ODataV4Adaptor" crossdomain="true"></e-data-manager>
@@ -449,4 +449,4 @@ public long Delete([FromODataUri] long key)
 {% endhighlight %}
 {% endtabs %}
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/data-binding/Restful%20Service%20Binding)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DataBinding/Restful%20Service%20Binding)
