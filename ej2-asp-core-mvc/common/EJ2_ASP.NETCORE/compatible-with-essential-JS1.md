@@ -179,7 +179,7 @@ The following code illustrates the final view of layout page.
 Essential JS 1 and Essential JS 2 controls have already been initialized via getting started. If you want to change control, you can initialize using the following code.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <h2> Essential JS 1 - Grid Control</h2>
 
