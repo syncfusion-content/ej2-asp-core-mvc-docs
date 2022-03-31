@@ -118,6 +118,8 @@ Follow the below steps to change the size mode for an application at runtime.
 
 ![change-size-mode-for-application-at-runtime](images/change-size-mode-for-application-at-runtime.gif)
 
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/SizeModes/SizeModeApp)
+
 ## Change size mode for a control at runtime
 
 You can change the size mode of a control between touch and normal (mouse) mode at runtime by setting `.e-bigger` CSS class.  
@@ -128,7 +130,7 @@ Refer to the following code, in which the `e-bigger` class is added for enabling
 {% highlight c# tabtitle="CSHTML" %}
 
 <p> Size-modes for application </p>
-<p> This demo shows the Size-Modes applied for an entire application </p>
+<p> This demo shows the Size-Modes applied for Syncfusion Control </p>
 
 <button id="touch">Touch Mode</button>
 <button id="mouse">Mouse Mode</button>
@@ -171,6 +173,8 @@ Refer to the following code, in which the `e-bigger` class is added for enabling
 {% endtabs %}
 
 ![change-size-mode-for-a-control-at-runtime](images/change-size-mode-for-a-component-at-runtime.gif)
+
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/SizeModes/SizeModeControl)
 
 ## See Also
 
