@@ -87,7 +87,7 @@ Add the Syncfusion Script Manager at the end of `<body>` element in the `~/Pages
 Now, add the Syncfusion ASP.NET Core Calendar control in the `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 <div>
     <ejs-calendar id="calendar"></ejs-calendar>
 </div>

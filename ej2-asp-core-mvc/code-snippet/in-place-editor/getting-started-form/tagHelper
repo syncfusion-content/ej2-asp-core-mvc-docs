@@ -1,5 +1,5 @@
 @{
-    .....
+    ...
     var elementModel = new { placeholder = "Enter your name" };
     var dateValue = new DateTime(2018, 12, 04);
     var dateModel = new { showTodayButton = true, placeholder = "Select date of birth" };

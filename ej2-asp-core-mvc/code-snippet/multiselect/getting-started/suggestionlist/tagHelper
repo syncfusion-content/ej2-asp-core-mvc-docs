@@ -1,5 +1,5 @@
 @{
-    .....
+    ...
     var data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };
 }
 
