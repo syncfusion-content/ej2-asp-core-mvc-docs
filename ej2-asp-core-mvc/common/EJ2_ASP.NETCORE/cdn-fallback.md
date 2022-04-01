@@ -10,7 +10,7 @@ documentation: ug
 
 # CDN fallback in ASP.NET Core application
 
-This section provides information about how to refer fallback scripts and style sheet from [CRG](./custom-resource-generator) and [Theme Studio](../../appearance/theme-studio) when CDN is not available in ASP.NET Core application.
+This section provides information about how to refer fallback scripts and style sheet from [CRG](./custom-resource-generator) and [Theme Studio](../appearance/theme-studio) when CDN is not available in ASP.NET Core application.
 
 ## ASP.NET Core App
 
@@ -18,7 +18,7 @@ CDN links can be down by connection issues or some other problems. This will cau
 
 ### Style Sheet Fallback
 
-If you are using CDN for style sheet references then you have to add style sheet fallback from [Theme Studio](../../appearance/theme-studio) by using the [link tag helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/link-tag-helper). Syncfusion theme provides the `e-control` class. You can check the style from provided class by using link tag helper property inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
+If you are using CDN for style sheet references then you have to add style sheet fallback from [Theme Studio](../appearance/theme-studio) by using the [link tag helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/link-tag-helper). Syncfusion theme provides the `e-control` class. You can check the style from provided class by using link tag helper property inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
