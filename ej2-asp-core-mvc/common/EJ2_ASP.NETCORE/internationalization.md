@@ -89,7 +89,7 @@ npm install cldr-data
 {% endhighlight %}
 {% endtabs %}
 
-7. The following code example lets you to set the culture to the Schedule control by using the locale property.
+7.The following code example lets you to set the culture to the Schedule control by using the locale property.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}

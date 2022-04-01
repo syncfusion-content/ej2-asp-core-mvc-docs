@@ -44,13 +44,6 @@
 <script>
     document.getElementById('getRTEvalue').addEventListener('click', function () {
         var obj = document.getElementById('defaultRTE').ej2_instances[0];
-        var value = JSON.stringify(
-          { text: obj.value }
-        );
-        const Http = new XMLHttpRequest();
-        const url = '@Url.Action("Save")';
-        Http.open("POST", url);
-        Http.setRequestHeader('Content-Type', 'application/json');
-        Http.send(value);
+        alert(obj.value);
     });
 </script>
