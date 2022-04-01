@@ -10,7 +10,10 @@ documentation: ug
 
 # Installation using Offline Installer
 
-You can refer to the [Download](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/download/) section to learn how to get the ASP . NET MVC - EJ2 trial or licensed installer.
+You can refer to the [Download](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/download/) section to learn how to get the ASP . NET MVC - EJ2 installer.
+
+I> Starting with 2022 Volume 1 v20.1.0.47, all Syncfusion customers (evaluators and paid customers) who use Syncfusion installers or nuget packages from [nuget.org](https://www.nuget.org/packages?q=Syncfusion) must generate and register the corresponding platform and version license key in your projects.<br>
+For more information, please see [this](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/overview) help topic.
 
 ***Installing with UI***
 

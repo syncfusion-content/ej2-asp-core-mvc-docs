@@ -184,4 +184,5 @@ The output will be as follows.
 
 ## See Also
 
+* [Real time example using In-place Editor](https://ej2.syncfusion.com/aspnetmvc/InPlaceEditor/EditPost#/bootstrap5)
 * [Types of rendering the editor](./integration)

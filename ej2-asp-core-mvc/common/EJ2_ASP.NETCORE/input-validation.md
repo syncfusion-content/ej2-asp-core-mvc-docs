@@ -17,7 +17,7 @@ The Syncfusion ASP.NET Core UI input and editor controls can be validated by usi
 1.Add the `Form` component in the **Index.cshtml** page. Also, declare the Syncfusion ASP.NET Core [TextBox](../textbox/getting-started) control inside the `Form` component.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <form id="form-element">
     <div class="form-group">
@@ -37,7 +37,7 @@ The Syncfusion ASP.NET Core UI input and editor controls can be validated by usi
 2.The following code shows how to perform client side validation using `FormValidator` inside the script tag.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <script>
     // Sets required property in the FormValidator rules collection
@@ -75,7 +75,7 @@ The Syncfusion ASP.NET Core UI input and editor controls can be validated by usi
 4.You can use the FormValidator [rules](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/#rules) property to display the custom validation error message for each input control.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <script>
     // sets required property in the FormValidator rules collection

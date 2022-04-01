@@ -48,6 +48,8 @@ Output be like the below.
 
 ## See Also
 
+* [Real time example using Toast](https://ej2.syncfusion.com/aspnetmvc/Toast/Template#/material)
+
 * [How to close the toast with click/tap](./how-to/close-the-toast-with-click-tap/)
 
 * [How to prevent duplicate toast display](./how-to/prevent-duplicate-toast-display/)

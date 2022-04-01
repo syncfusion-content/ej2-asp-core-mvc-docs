@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Datepicker For Core in ##Platform_Name## Datepicker Component
-description: Learn here all about Datepicker For Core in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Datepicker for Core in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Datepicker For Core
 publishingplatform: ##Platform_Name##
@@ -12,8 +12,6 @@ documentation: ug
 # Render DatePickerFor
 
 The DatePickerFor component can be rendered by passing a value from the model. The selected date value can be retrieved during form submission using the post method at the server end.
-
-The following sample demonstrates how to retrieve the value in the controller by rendering the DatePickerFor component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,9 +35,5 @@ The following sample demonstrates how to retrieve the value in the controller by
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Selected value will be retrieved as below.
 
 ![DatePickerFor Component in ASP.NET Core](../images/asp-net-core-datepickerfor-value-post.png)

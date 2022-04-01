@@ -10,7 +10,7 @@ documentation: ug
 
 # Drag and Drop support in Syncfusion ASP.NET Core controls
 
-* Drag and Drop support can be enabled for Syncfusion ASP.NET Core controls by setting `allowDragAndDrop` property to `true`. It allows you to drag and drop the specific elements in the Syncfusion ASP.NET Core controls.
+* Drag and Drop support can be enabled for Syncfusion ASP.NET Core controls by setting `allowDragAndDrop` property to `true`. It allows to drag and drop the specific elements in the Syncfusion ASP.NET Core controls.
 
 * Drag and Drop is supported through two libraries of Essential JS 2. Those are [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable/). Draggable makes DOM to be dragged using mouse or touch gestures and Droppable mark required DOM as droppable zone.
 
@@ -32,10 +32,10 @@ The following list demonstrates the Syncfusion ASP.NET Core control documents th
 
 ## Initializing custom Draggable element
 
-You can make any element draggable by passing the element to Draggable constructor. Refer the following code snippet to enable draggable for DOM element.
+You can make any element draggable by passing the element to Draggable constructor.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div id="drag-element"><p>Draggable Element </p></div>
     
@@ -69,10 +69,10 @@ You can make any element draggable by passing the element to Draggable construct
 
 ## Creating Droppable zone
 
-You can convert any DOM element as a droppable zone, which accepts the draggable elements. Refer the following code snippet to enable droppable zone.
+You can convert any DOM element as a droppable zone, which accepts the draggable elements.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div id="droppable">
     <p class="drop">
@@ -109,10 +109,10 @@ You can convert any DOM element as a droppable zone, which accepts the draggable
 
 ## Defining Drop Action
 
-To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable/#drop) callback function during droppable object creation. You can get details of dropped element through dropped element property in event argument. Refer the following code snippet to use basic drag and drop action.
+To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable/#drop) callback function during droppable object creation. You can get details of dropped element through dropped element property in event argument.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div id="droppable"><p class="drop"><span>Drop Target </span></p></div>
 <div id="drag-element"><p class="drag-text">Drag </p></div>

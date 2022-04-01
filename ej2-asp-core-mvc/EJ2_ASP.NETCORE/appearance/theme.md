@@ -22,7 +22,9 @@ The following list of themes are included in the Syncfusion ASP.NET Core control
 |Google’s Material | material.css |
 |Google’s Material-Dark | material-dark.css |
 |Tailwind CSS | tailwind.css |
-|TailwindDark CSS | tailwind-dark.css |
+|Tailwind CSS Dark | tailwind-dark.css |
+|Fluent | fluent.css |
+|Fluent Dark | fluent-dark.css |
 |Microsoft Office Fabric | fabric.css |
 |Microsoft Office Fabric Dark | fabric-dark.css |
 |High Contrast | highcontrast.css |
@@ -66,6 +68,8 @@ Syncfusion ASP.NET Core Themes are available in the CDN. Make sure that the vers
 | Google’s Material Dark | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material-dark.css |
 | Tailwind CSS | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/tailwind.css |
 | Tailwind Dark CSS | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/tailwind-dark.css |
+| Fluent | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css |
+| Fluent Dark | https://cdn.syncfusion.com/blazor/{{ site.ej2version }}/fluent-dark.css |
 | Microsoft Office Fabric  | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fabric.css |
 | Microsoft Office Fabric Dark | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fabric-dark.css |
 | High Contrast  | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/highcontrast.css |
@@ -84,7 +88,7 @@ In the ASP.NET Core application, the application theme can be changed dynamicall
 <html lang="en">
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link id="cssfile" rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
 </head>
 <body>
@@ -138,4 +142,4 @@ public class ThemeDetails
 
 ![Change theme dynamically](images/dynamic-theme-switching.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/theme-switch)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ThemeSwitch)

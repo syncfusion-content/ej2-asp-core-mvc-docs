@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in ##Platform_Name## Datepicker Component
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+description: Learn here all about customization in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Customization
 
-You can customize the  entire appearance of the input element and Calendar by using custom [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_CssClass) property, and also you can use the calendar's [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_RenderDayCell) event to customize the appearance of the each day cell.
+You can customize the entire appearance of the input element and Calendar by using custom [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_CssClass) property, and also you can use the calendar's [renderDayCell](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_RenderDayCell) event to customize the appearance of the each day cell.
 
 Below is the list of classes that provides flexible way to customize the DatePicker component.
 
@@ -34,7 +34,7 @@ Below is the list of classes that provides flexible way to customize the DatePic
 | e-selected | Applied to Calendar selected dates.|
 | e-disabled | Applied to Calendar disabled dates.|
 
-The following example disables the weekends of every month using `renderDayCell` event. Here we have used the `e-disabled` class to highlight the disabled date.
+The following example disables the weekends of every month using `renderDayCell` event. Here, the `e-disabled` class is used to highlight the disabled date.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

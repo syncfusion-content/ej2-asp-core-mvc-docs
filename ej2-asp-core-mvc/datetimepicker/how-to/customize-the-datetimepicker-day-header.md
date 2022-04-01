@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize The Datetimepicker Day Header in ##Platform_Name## Datetimepicker Component
-description: Learn here all about Customize The Datetimepicker Day Header in Syncfusion ##Platform_Name## Datetimepicker component of syncfusion and more.
+description: Learn here all about how to customize the Datetimepicker Day Header in Syncfusion ##Platform_Name## Datetimepicker component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Customize The Datetimepicker Day Header
 publishingplatform: ##Platform_Name##
@@ -11,11 +11,9 @@ documentation: ug
 
 # Customize the datetimepicker day header
 
-You can change the format of the day that to be displayed in header using [dayHeaderFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_DayHeaderFormat) property.
+You can change the format of the day that has to be displayed in header using [dayHeaderFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_DayHeaderFormat) property.
 
 > By default, the format is `Short`.
-
-You can find the possible formats on below.
 
 | **Name** | **Description** |
 |------|---------------------|
@@ -42,9 +40,5 @@ You can find the possible formats on below.
 {% highlight c# tabtitle="Headerformat.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![datetimepicker](../images/narrow.png) ![datetimepicker](../images/abbreviated.png)

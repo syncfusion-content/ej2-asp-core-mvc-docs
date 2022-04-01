@@ -14,7 +14,7 @@ This article provides a step-by-step introduction to add areas and configure the
 
 ## Areas
 
-ASP.NET Areas is a feature that allows you to create a separate module in the application with its own set of Razor Pages, controllers, views, and models.
+ASP.NET Areas is a feature that allows to create a separate module in the application with its own set of Razor Pages, controllers, views, and models.
 
 ### MVC Areas
 
@@ -46,7 +46,7 @@ Select **MVC Area** from the pop-up and click **Add** to create an Area.
 
 ![Common layout for all view pages](images/mvc-view-files.png)
 
->You can also add the `_ViewImports.cshtml` and `_ViewStart.cshtml` files to the appropriate Views folder under areas if want to maintain it separately.
+>You can also add the `_ViewImports.cshtml` and `_ViewStart.cshtml` files to the appropriate Views folder under areas if you want to maintain it separately.
 
 7.Open the `_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
@@ -84,10 +84,10 @@ app.UseEndpoints(endpoints =>
 
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
 
-    <!-- Syncfusion Essential JS 2 Scripts -->
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -110,10 +110,10 @@ app.UseEndpoints(endpoints =>
 
 >If `_ViewStart.cshtml` file is added in the appropriate Views folder under the areas, add the Syncfusion script manager in that referred layout page.
 
-11.Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` View file  in the `~/Areas/Products/Views/` folder.
+11.Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` View file in the `~/Areas/Products/Views/` folder.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>
     <ejs-calendar id="calendar"></ejs-calendar>
@@ -142,7 +142,7 @@ app.UseEndpoints(endpoints =>
 
 ![Common layout for all razor pages](images/razor-view-files.png)
 
->You can also add the `_ViewImports.cshtml` and `_ViewStart.cshtml` files to the appropriate Pages folder under areas if want to maintain it separately.
+>You can also add the `_ViewImports.cshtml` and `_ViewStart.cshtml` files to the appropriate Pages folder under areas if you want to maintain it separately.
 
 5.Open the `_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
@@ -163,10 +163,10 @@ app.UseEndpoints(endpoints =>
 
 <head>
     ...
-    <!-- Syncfusion Essential JS 2 Styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
 
-    <!-- Syncfusion Essential JS 2 Scripts -->
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -192,7 +192,7 @@ app.UseEndpoints(endpoints =>
 8.Now, you can add the Syncfusion ASP.NET Core controls in `Index.cshtml` Razor Page file in the `~/Areas/Products/Pages/` folder.
 
 {% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml" %}
+{% highlight c# tabtitle="CSHTML" %}
 
 <div>
     <ejs-calendar id="calendar"></ejs-calendar>

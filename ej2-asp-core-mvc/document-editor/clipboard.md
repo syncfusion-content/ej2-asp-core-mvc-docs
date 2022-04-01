@@ -95,4 +95,4 @@ This paste option appears as follows.
 
 ## See Also
 
-* [Keyboard shortcuts](../../document-editor/keyboard-shortcut/)
+* [Keyboard shortcuts](../document-editor/keyboard-shortcut/)

@@ -43,7 +43,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add style sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -81,8 +81,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <body>
-    ....
-    ....
+...
     <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
@@ -92,35 +91,18 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 
 ## Add ASP.NET Core DropDownButton control
 
-Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core DropDownButton tag helper in `~/Pages/Index.cshtml` page. Populate the action items in `DropDownButton` by using the `items` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dropdownbutton/getting-started/demo/tagHelper %}
 {% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/dropdownbutton/getting-started/demo/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Demo.cs" %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
-
-## Bind dataSource
-
-Populate the action items in `SplitButton` by using the `items` property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml.cs" %}
+{% highlight cshtml tabtitle="CSHTML.cs" %}
 
 @{
-    ....
+    ...
     List<object> items = new List<object>();
     items.Add(new
     {
@@ -138,6 +120,16 @@ Populate the action items in `SplitButton` by using the `items` property.
 
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/dropdownbutton/getting-started/demo/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Demo.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core DropDownButton control will be rendered in the default web browser.
 

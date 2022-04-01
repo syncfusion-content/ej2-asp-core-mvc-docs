@@ -1,6 +1,10 @@
-@using Syncfusion.EJ2;
+@{
+    ...
+    var data = DataSource.GetData();
+}
+
 <div class="spark" align="center">
-    <ejs-sparkline id="sparkline" loaded="loaded" type="Area" height="100px" width="70%" dataSource="ViewBag.data" xName="xval" yName="yval"></ejs-sparkline>
+    <ejs-sparkline id="sparkline" loaded="loaded" type="Area" height="100px" width="70%" dataSource="data" xName="xval" yName="yval"></ejs-sparkline>
 </div>
 <style>
     .spark {

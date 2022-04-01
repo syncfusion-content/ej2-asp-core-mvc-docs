@@ -1,6 +1,6 @@
 @{
-    ....
-    ViewBag.data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };
+    ...
+    var data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };
 }
 
-<ejs-dropdownlist id="games" dataSource="@ViewBag.data"> </ejs-dropdownlist>
+<ejs-dropdownlist id="games" dataSource="data"> </ejs-dropdownlist>

@@ -10,15 +10,12 @@ documentation: ug
 
 # State Persistence
 
-The Syncfusion ASP.NET Core library supports persisting a control's state across page refreshes or navigation. To
-enable this feature, set `enablePersistence` property as true to the required control. This will store
-the control’s state in browser’s `localStorage` object on page `unload` event. For example, we have
-enabled persistence to grid control in the following code.
+The Syncfusion ASP.NET Core library supports persisting a control's state across page refreshes or navigation. To enable this feature, set `enablePersistence` property as true to the required control. This will store the control’s state in browser’s `localStorage` object on page `unload` event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/common/persistence/tagHelper %}
 {% endhighlight %}{% endtabs %}
 
@@ -41,7 +38,7 @@ The following table demonstrates the list of Syncfusion ASP.NET Core controls th
 <td><b>Properties</b></td>
 </tr>
 <tr>
-<td>Grid</td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/state-persistence">Grid</a></td>
 <td>
 <ul>
 <li>Columns</li>
@@ -63,7 +60,7 @@ The following table demonstrates the list of Syncfusion ASP.NET Core controls th
 </td>
 </tr>
 <tr>
-<td>Tab</td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tab/how-to/set-state-persistence-of-the-tab-component">Tabs</a></td>
 <td>
 <ul>
 <li>selectedItem</li>
@@ -71,7 +68,7 @@ The following table demonstrates the list of Syncfusion ASP.NET Core controls th
 </td>
 </tr>
 <tr>
-<td>Schedule</td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/schedule/state-persistence">Schedule</a></td>
 <td>
 <ul>
 <li>currentView</li>
@@ -82,7 +79,7 @@ The following table demonstrates the list of Syncfusion ASP.NET Core controls th
 </td>
 </tr>
 <tr>
-<td>Kanban</td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/kanban/persistence">Kanban</a></td>
 <td>
 <ul>
 <li>columns</li>
@@ -101,7 +98,7 @@ The following table demonstrates the list of Syncfusion ASP.NET Core controls th
 </td>
 </tr>
 <tr>
-<td>Maps</td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/state-persistence">Maps</a></td>
 <td>
 <ul>
 <li>zoomSettings</li>
@@ -109,7 +106,7 @@ The following table demonstrates the list of Syncfusion ASP.NET Core controls th
 </td>
 </tr>
 <tr>
-<td>Pivot Table</td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/state-persistence">Pivot Table</a></td>
 <td>
 <ul>
 <li>dataSourceSettings</li>
@@ -121,7 +118,7 @@ The following table demonstrates the list of Syncfusion ASP.NET Core controls th
 </td>
 </tr>
 <tr>
-<td>TreeGrid</td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/state-persistence">TreeGrid</a></td>
 <td>
 <ul>
 <li>columns</li>
@@ -175,7 +172,7 @@ The following table demonstrates the list of Syncfusion ASP.NET Core controls th
 </td>
 </tr>
 <tr>
-<td>QueryBuilder</td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/how-to/state-persistence">QueryBuilder</a></td>
 <td>
 <ul>
 <li>rule</li>

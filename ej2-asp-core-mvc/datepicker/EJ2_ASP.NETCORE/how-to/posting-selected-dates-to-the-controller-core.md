@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Posting Selected Dates To The Controller Core in ##Platform_Name## Datepicker Component
-description: Learn here all about Posting Selected Dates To The Controller Core in Syncfusion ##Platform_Name## Datepicker component of syncfusion and more.
+description: Learn here all about Posting Selected Dates to the Controller Core in Syncfusion ##Platform_Name## Datepicker component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Posting Selected Dates To The Controller Core
 publishingplatform: ##Platform_Name##
