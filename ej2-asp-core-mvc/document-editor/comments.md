@@ -48,3 +48,37 @@ All the comments in the document can be deleted using the below code snippet.
 ```typescript
 documentEditor.editor.deleteAllComments();
 ```
+
+## Protect the document in comments only mode
+
+Document Editor provides support for protecting the document with `CommentsOnly` protection. In this protection, user allowed to add or edit comments alone in the document.
+
+Document editor provides an option to protect and unprotect document using [`enforceProtection`](../api/document-editor/editor/#enforceprotection) and [`stopProtection`](../api/document-editor/editor/#stopprotection) API.
+
+The following example code illustrates how to enforce and stop protection in Document editor container.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/comment-only-protect/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Comment-only.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/comment-only-protect/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Comment-only.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
+
+Comment only protection can be enabled in UI by using [Restrict Editing pane](../document-editor/document-management#restrict-editing-pane/)
+
+![Enable comment only protection](images/commentsonly.png)
+
+>Note: In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.

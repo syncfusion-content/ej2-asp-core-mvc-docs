@@ -274,7 +274,32 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 {% endtabs %}
 {% endif %}
 
+**Legend Text Wrap**
 
+When the legend text exceed the container, the text can be wrapped by using the **textWrap** property. End user can also wrap the legend text based on the **maximumLabelWidth** property
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/text-wrap/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Textwrap.cs" %}
+{% include code-snippet/chart/axis/legend/text-wrap/textwrap.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/text-wrap/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Textwrap.cs" %}
+{% include code-snippet/chart/axis/legend/text-wrap/textwrap.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Series Selection on Legend
 

@@ -169,6 +169,6 @@ Refer to the following example.
 
 ## See Also
 
-* [Feature modules](../../document-editor/feature-module/)
-* [Font dialog](../../document-editor/dialog/#font-dialog)
-* [Keyboard shortcuts](../../document-editor/keyboard-shortcut/)
+* [Feature modules](../document-editor/feature-module/)
+* [Font dialog](../document-editor/dialog/#font-dialog)
+* [Keyboard shortcuts](../document-editor/keyboard-shortcut/)

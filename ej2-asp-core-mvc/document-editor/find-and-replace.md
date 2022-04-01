@@ -101,6 +101,11 @@ documentEditor.search.searchResults.replaceAll("Mike");
 
 Using [`insertText`](../api/document-editor/editor/#inserttext), you can replace the current searched text with specified text and it replace single occurrence.
 
+>Note: This [`insertText`](../api/document-editor/editor/#inserttext) API accepts following control characters
+>* New line characters ("\r", "\r\n", "\n") - Inserts a new paragraph and appends the remaining text to the new paragraph.
+>* Line break character ("\v") - Moves the remaining text to start in new line.
+>* Tab character ("\t") - Allocates a tab space and continue the next character.
+
 The following example code illustrates how to find a text in the document and replace each occurrence of the text one by one programmatically.
 
 ```typescript
@@ -161,5 +166,5 @@ Using the exposed APIs, you can customize the find and replace functionality in 
 
 ## See Also
 
-* [Options pane](../../document-editor/dialog.html#options-pane)
-* [Feature modules](../../document-editor/feature-module/)
+* [Options pane](../document-editor/dialog.html#options-pane)
+* [Feature modules](../document-editor/feature-module/)
