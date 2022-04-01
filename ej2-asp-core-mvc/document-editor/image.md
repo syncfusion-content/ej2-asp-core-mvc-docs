@@ -11,7 +11,7 @@ documentation: ug
 
 # Images
 
-Document editor supports common raster format images like PNG, BMP, JPEG, and GIF. You can insert an image file or online image in the document using the `insertImage()` method. Refer to the following sample code.
+Document Editor supports common raster format images like PNG, BMP, JPEG, SVG and GIF. You can insert an image file or online image in the document using the `insertImage()` method. Refer to the following sample code.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -63,4 +63,4 @@ DocumentEditor preserves the position properties of the image and displays the i
 
 ## See Also
 
-* [Feature modules](../../document-editor/feature-module/)
+* [Feature modules](../document-editor/feature-module/)
