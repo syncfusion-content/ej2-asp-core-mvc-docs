@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Grid Component
-description: Checkout and learn about getting started with ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Grid Control
+description: Checkout and learn about getting started with ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
 publishingplatform: ##Platform_Name##
@@ -9,93 +9,90 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core
+# Getting Started
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+This section briefly explains about how to include [ASP.NET Core Grid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
-To get started with ASP.NET Core application, need to ensure the following software to be installed on the machine.
-* Visual Studio 2017
-* DotNet Core 2.0
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-## Create ASP.NET Core application
+## Create ASP.NET Core web application with Razor pages
 
-Create ASP.NET Core Web Application with default template project in Visual Studio 2017.
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-![Alt text](./images/default-template.png)
+* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
 
-## Adding Syncfusion package
+## Install ASP.NET Core package in the application
 
-Using Nuget Package Manager we need to add **Syncfusion.EJ2.AspNet.Core** package into your application.
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
-Open the `NuGet` package manager.
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-![Alt text](./images/solution-explorer-core.png)
+## Add Syncfusion ASP.NET Core Tag Helper
 
-Install the **Syncfusion.EJ2.AspNet.Core** package to the application
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
-![Alt text](./images/nuget-package-demo.png)
+{% tabs %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
-After Installation completed the Syncfusion DLL's will be included in the project.
-
-> We need to install **NewtonSoft.JSON** as dependency since **Syncfusion.EJ2.AspNet.Core** dependent to NewtonSoft.JSON package.
-
-Open the **Views/_ViewImports.cshtml** to import Syncfusion.EJ2.AspNet.Core package.
-
-```cs
 @addTagHelper *, Syncfusion.EJ2
-```
 
-## Adding Scripts and CSS reference
+{% endhighlight %}
+{% endtabs %}
 
-We can add client side resource through [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) or NPM [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **Views/Shared/_Layout.cshtml.**
+## Add style sheet
 
-CDN Link:
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-```html
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <head>
-@* Syncfusion Essential JS 2 Styles *@
-<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
-
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 </head>
-```
 
-NPM Package:
+{% endhighlight %}
+{% endtabs %}
 
-Install `@syncfusion/ej2` package using below command.
+## Add script reference
 
-> npm install @syncfusion/ej2
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-Now the required scripts and CSS files are available in the **../node_modules/@syncfusion/ej2/dist** and CSS **../node_modules/@syncfusion/ej2/styles** package folders respectively. Copy those script and themes files from the `node_modules` into the `wwwroot` folder of the application.
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-```html
 <head>
-@* Syncfusion Essential JS 2 Styles *@
-<link href="~/styles/material.css" rel="stylesheet" />
-
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="~/scripts/ej2.min.js"></script>
+    ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
-```
 
-## Adding ScriptManager in layout page
+{% endhighlight %}
+{% endtabs %}
 
-Add `ScriptManager` to the bottom of the `_Layout.cshtml` page. The ScriptManager used to place our control initialization script in the page.
+## Register Syncfusion Script Manager
 
-```cs
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <body>
-    @RenderBody()
-    @RenderSection("Scripts", required: false)
-<ejs-scripts></ejs-scripts>
+    ....
+    ....
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts></ejs-scripts>
 </body>
-```
 
-## Add Grid Component
+{% endhighlight %}
+{% endtabs %}
 
-To initialize the Grid component add the below code to your `Index.cshtml` view page which is present under `Views/Home` folder.
+## Add ASP.NET Core Grid control
+
+Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -103,8 +100,7 @@ To initialize the Grid component add the below code to your `Index.cshtml` view
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/grid/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml tabtitle="Grid.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -112,8 +108,6 @@ To initialize the Grid component add the below code to your `Index.cshtml` view
 {% highlight cshtml tabtitle="Grid.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
-
-
 
 ## Defining Row Data
 
@@ -125,8 +119,39 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/databinding/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-core/databinding/orderDetails.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class OrdersDetails
+{
+    public OrdersDetails()
+    {
+
+    }
+    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.EmployeeID = EmployeeId;
+        this.Freight = Freight;
+        this.ShipCity = ShipCity;
+        this.Verified = Verified;
+        this.OrderDate = OrderDate;
+        this.ShipName = ShipName;
+        this.ShipCountry = ShipCountry;
+        this.ShippedDate = ShippedDate;
+        this.ShipAddress = ShipAddress;
+    }
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public double? Freight { get; set; }
+    public string ShipCity { get; set; }
+    public bool Verified { get; set; }
+    public DateTime OrderDate { get; set; }
+    public string ShipName { get; set; }
+    public string ShipCountry { get; set; }
+    public DateTime ShippedDate { get; set; }
+    public string ShipAddress { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -139,7 +164,9 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 {% endtabs %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Grid control will be rendered in the default web browser.
 
+![ASP.NET Core Grid with Row Data](images/grid-row.png)
 
 ## Defining Columns
 
@@ -163,8 +190,39 @@ Here, we have defined it for the conversion of date object value to `yMd` format
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/gridcolumns/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-core/gridcolumns/orderDetails.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class OrdersDetails
+{
+    public OrdersDetails()
+    {
+
+    }
+    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.EmployeeID = EmployeeId;
+        this.Freight = Freight;
+        this.ShipCity = ShipCity;
+        this.Verified = Verified;
+        this.OrderDate = OrderDate;
+        this.ShipName = ShipName;
+        this.ShipCountry = ShipCountry;
+        this.ShippedDate = ShippedDate;
+        this.ShipAddress = ShipAddress;
+    }
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public double? Freight { get; set; }
+    public string ShipCity { get; set; }
+    public bool Verified { get; set; }
+    public DateTime OrderDate { get; set; }
+    public string ShipName { get; set; }
+    public string ShipCountry { get; set; }
+    public DateTime ShippedDate { get; set; }
+    public string ShipAddress { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -177,7 +235,7 @@ Here, we have defined it for the conversion of date object value to `yMd` format
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core Grid with Columns Data](images/grid-column.png)
 
 ## Enable Paging
 
@@ -189,8 +247,39 @@ The paging feature enables users to view the grid record in a paged view. It can
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/page/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-core/page/orderDetails.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class OrdersDetails
+{
+    public OrdersDetails()
+    {
+
+    }
+    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.EmployeeID = EmployeeId;
+        this.Freight = Freight;
+        this.ShipCity = ShipCity;
+        this.Verified = Verified;
+        this.OrderDate = OrderDate;
+        this.ShipName = ShipName;
+        this.ShipCountry = ShipCountry;
+        this.ShippedDate = ShippedDate;
+        this.ShipAddress = ShipAddress;
+    }
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public double? Freight { get; set; }
+    public string ShipCity { get; set; }
+    public bool Verified { get; set; }
+    public DateTime OrderDate { get; set; }
+    public string ShipName { get; set; }
+    public string ShipCountry { get; set; }
+    public DateTime ShippedDate { get; set; }
+    public string ShipAddress { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -203,7 +292,7 @@ The paging feature enables users to view the grid record in a paged view. It can
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core Grid with Paging](images/grid-page.png)
 
 ## Enable Sorting
 
@@ -215,8 +304,39 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/sorting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-core/sorting/orderDetails.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class OrdersDetails
+{
+    public OrdersDetails()
+    {
+
+    }
+    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.EmployeeID = EmployeeId;
+        this.Freight = Freight;
+        this.ShipCity = ShipCity;
+        this.Verified = Verified;
+        this.OrderDate = OrderDate;
+        this.ShipName = ShipName;
+        this.ShipCountry = ShipCountry;
+        this.ShippedDate = ShippedDate;
+        this.ShipAddress = ShipAddress;
+    }
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public double? Freight { get; set; }
+    public string ShipCity { get; set; }
+    public bool Verified { get; set; }
+    public DateTime OrderDate { get; set; }
+    public string ShipName { get; set; }
+    public string ShipCountry { get; set; }
+    public DateTime ShippedDate { get; set; }
+    public string ShipAddress { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -229,7 +349,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% endtabs %}
 {% endif %}
 
-
+![Sorting in ASP.NET Core Grid](images/grid-sort.png)
 
 ## Enable Filtering
 
@@ -241,8 +361,39 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/filtering/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-core/filtering/orderDetails.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class OrdersDetails
+{
+    public OrdersDetails()
+    {
+
+    }
+    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.EmployeeID = EmployeeId;
+        this.Freight = Freight;
+        this.ShipCity = ShipCity;
+        this.Verified = Verified;
+        this.OrderDate = OrderDate;
+        this.ShipName = ShipName;
+        this.ShipCountry = ShipCountry;
+        this.ShippedDate = ShippedDate;
+        this.ShipAddress = ShipAddress;
+    }
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public double? Freight { get; set; }
+    public string ShipCity { get; set; }
+    public bool Verified { get; set; }
+    public DateTime OrderDate { get; set; }
+    public string ShipName { get; set; }
+    public string ShipCountry { get; set; }
+    public DateTime ShippedDate { get; set; }
+    public string ShipAddress { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -255,7 +406,7 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% endtabs %}
 {% endif %}
 
-
+![Filtering in ASP.NET Core Grid](images/grid-filter.png)
 
 ## Enable Grouping
 
@@ -268,8 +419,39 @@ Grouping feature can be customized using the [`e-grid-groupsettings`](https://he
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/grouping/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-core/grouping/orderDetails.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class OrdersDetails
+{
+    public OrdersDetails()
+    {
+
+    }
+    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.EmployeeID = EmployeeId;
+        this.Freight = Freight;
+        this.ShipCity = ShipCity;
+        this.Verified = Verified;
+        this.OrderDate = OrderDate;
+        this.ShipName = ShipName;
+        this.ShipCountry = ShipCountry;
+        this.ShippedDate = ShippedDate;
+        this.ShipAddress = ShipAddress;
+    }
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public double? Freight { get; set; }
+    public string ShipCity { get; set; }
+    public bool Verified { get; set; }
+    public DateTime OrderDate { get; set; }
+    public string ShipName { get; set; }
+    public string ShipCountry { get; set; }
+    public DateTime ShippedDate { get; set; }
+    public string ShipAddress { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -282,8 +464,9 @@ Grouping feature can be customized using the [`e-grid-groupsettings`](https://he
 {% endtabs %}
 {% endif %}
 
+![Grouping in ASP.NET Core Grid](images/grid-sample.png)
 
+## See also
 
-Output be like the below.
-
-![ASP.NET Core DataGrid Component - Getting Started](./images/grid-sample.png)
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
