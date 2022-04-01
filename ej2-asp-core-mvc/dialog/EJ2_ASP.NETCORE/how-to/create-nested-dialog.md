@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create Nested Dialog in ##Platform_Name## Dialog Component
-description: Learn here all about Create Nested Dialog in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to create Nested Dialog in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Nested Dialog
 publishingplatform: ##Platform_Name##
@@ -48,8 +48,5 @@ Set the inner Dialog target as `#dialog`.
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![dialog](../images/dialog-nested.png)

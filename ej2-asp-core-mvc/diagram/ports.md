@@ -17,11 +17,11 @@ Diagram provides support to define custom ports for making connections.
 
 <!-- markdownlint-disable MD033 -->
 
-When a connector is connected between two nodes, its end points are automatically docked to the node’s nearest boundary as shown in the following image.
+When a connector is connected between two nodes, its end points are automatically docked to the node’s nearest boundary.
 
 ![Port to Port](images/port2.png)
 
-Ports act as the connection points of the node and allows to create connections with only those specific points as shown in the following image.
+Ports act as the connection points of the node and allows to create connections with only those specific points.
 
 ![Port Image](images/Port3.png)
 
@@ -29,7 +29,7 @@ Ports act as the connection points of the node and allows to create connections 
 
 ## Add ports when initializing nodes
 
-To add a connection port, define the port object and add it to node’s ports collection. The `offset` property of port accepts an object of fractions and used to determine the position of ports. The following code illustrates how to add ports when initializing the node.
+To add a connection port, define the port object and add it to node’s ports collection. The `offset` property of port accepts an object of fractions and used to determine the position of ports.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -55,7 +55,7 @@ To add a connection port, define the port object and add it to node’s ports co
 
 ## Add ports at runtime
 
-Add ports at runtime by using the client-side method [`addPorts`](../api/diagram#addPorts). The following code illustrates how to add ports to node at runtime.
+Add ports at runtime by using the client-side method [`addPorts`](../api/diagram#addPorts).
 
 The port’s ID property is used to define the unique ID for the port and its further used to find the port at runtime. If ID is not set, then default ID is automatically set.
 
@@ -124,7 +124,7 @@ diagram.addPorts(diagram.nodes[0], port);
 
 ## Remove ports at runtime
 
-Remove ports at runtime by using client-side method [`removePorts`](../api/diagram#removePorts). Refer to the following example which shows how to remove ports at runtime.
+Remove ports at runtime by using client-side method [`removePorts`](../api/diagram#removePorts).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -167,8 +167,6 @@ diagram.removePorts(diagram.nodes[0], ports);
 
 You can change any port properties at runtime and update it through the client-side method [`dataBind`](../api/diagram#dataBind).
 
-The following code example illustrates how to change the port properties.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -209,9 +207,7 @@ diagram.dataBind();
 
 * Customize the port size by using the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramPort.html#Syncfusion_EJ2_Diagrams_DiagramPort_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramPort.html#Syncfusion_EJ2_Diagrams_DiagramPort_Height) properties of port.
 
-* The ports [`visibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramPort.html#Syncfusion_EJ2_Diagrams_DiagramPort_Visibility) property allows you to define, when the port should be visible.
-
-The following code illustrates how to change the appearance of port.
+* The ports [`visibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramPort.html#Syncfusion_EJ2_Diagrams_DiagramPort_Visibility) property allows to define, when the port should be visible.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
