@@ -127,7 +127,7 @@ Scripts and style sheets of Syncfusion ASP.NET Core controls from locally-instal
 By using either one of the following methods, Client-Side Resource can be loaded in ASP.NET Core web application:
 
 1. Copying scripts and styles using gulp
-2. Generating scripts and styles using CRG (Custom Resource Generator)
+2. Generating scripts and styles using [CRG (Custom Resource Generator)](./custom-resource-generator)
 
 #### Copying by Gulp
 
@@ -155,7 +155,7 @@ npm install glob@latest --save
 {% endhighlight %}
 {% endtabs %}
 
-2.To set up the server, open Dependencies -> Manage NuGet Packages -> Browse. Then, search and install "**Microsoft.AspNetCore.StaticFiles**" and "**Microsoft.TypeScript.MSBuild**" packages.
+2.To set up the server, open Dependencies -> Manage NuGet Packages -> Browse. Then, search and install "**Microsoft.AspNetCore.StaticFiles -Version 2.2.0**" and "**Microsoft.TypeScript.MSBuild -v3.8.3**" packages.
 
 ![Install NuGet Packages](images/install-nuGet-package.png)
      
@@ -226,13 +226,8 @@ gulp.task("copy-client-resource", function (done) {
     <link rel="stylesheet" href="~/syncfusion/ej2-calendars/styles/calendar/material.css" />
     <link rel="stylesheet" href="~/syncfusion/ej2-base/styles/material.css" />
     <link rel="stylesheet" href="~/syncfusion/ej2-buttons/styles/button/material.css" />
-    <link rel="stylesheet" href="~/syncfusion/ej2-popups/styles/popup/material.css" />
-    <link rel="stylesheet" href="~/syncfusion/ej2-lists/styles/list-view/material.css" />
     <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="~/syncfusion/ej2-base/ej2-base.min.js"></script>
-    <script src="~/syncfusion/ej2-buttons/ej2-buttons.min.js"></script>
-    <script src="~/syncfusion/ej2-popups/ej2-popups.min.js"></script>
-    <script src="~/syncfusion/ej2-lists/ej2-lists.min.js"></script>
     <script src="~/syncfusion/ej2-calendars/ej2-calendars.min.js"></script>
 </head>
 
