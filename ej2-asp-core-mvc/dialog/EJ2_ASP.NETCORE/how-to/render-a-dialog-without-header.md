@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Render A Dialog Without Header in ##Platform_Name## Dialog Component
-description: Learn here all about Render A Dialog Without Header in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to render a Dialog without header in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Render A Dialog Without Header
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Render a Dialog without header
 
-The dialog can be rendered without header by setting the [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property value as empty string or null.  By default, dialog is rendered without header.
+The dialog can be rendered without header by setting the [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property value as empty string or null. By default, dialog is rendered without header.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Display A Dialog With Custom Position in ##Platform_Name## Dialog Component
-description: Learn here all about Display A Dialog With Custom Position in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to display a Dialog with custom position in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Display A Dialog With Custom Position
 publishingplatform: ##Platform_Name##
@@ -36,8 +36,5 @@ By default, the dialog is displayed in the center of the target container. The d
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![dialog](../images/dialog-custom-position.png)
