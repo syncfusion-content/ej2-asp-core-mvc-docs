@@ -15,7 +15,7 @@ documentation: ug
 
 ## Save
 
-The diagram is serialized as string while saving. The client-side method, [`saveDiagram`](../api/diagram#saveDiagram) helps to serialize the diagram as a string. The following code illustrates how to save the diagram.
+The diagram is serialized as string while saving. The client-side method, [`saveDiagram`](../api/diagram#saveDiagram) helps to serialize the diagram as a string.
 
 ```javascript
 var diagramElement = document.getElementById('element');
@@ -26,7 +26,7 @@ saveData = diagram.saveDiagram();
 
 ```
 
-This string can be converted to JSON data and stored for future use. The following snippet illustrates how to save the serialized string into local storage.
+This string can be converted to JSON data and stored for future use.
 
 ```javascript
 //Saves the string in to local storage
@@ -39,7 +39,7 @@ Diagram can also be saved as raster or vector image files. For more information 
 
 ## Load
 
-Diagram is loaded from the serialized string data by client-side method, [`loadDiagram`](../api/diagram#loadDiagram). The following code illustrates how to load the diagram from serialized string data.
+Diagram is loaded from the serialized string data by client-side method, [`loadDiagram`](../api/diagram#loadDiagram).
 
 ```javascript
 var diagramElement = document.getElementById('element');
@@ -54,7 +54,7 @@ diagram.loadDiagram(saveData);
 
 ## Prevent Default Values
 
-The [`preventDefaults`](https://ej2.syncfusion.com/documentation/api/diagram/serializationSettingsModel) property of serializationSettings is used to simplifying the saved JSON object without adding the default properties that are presented in the diagram. The following code illustrates how to simplify the JSON object.
+The [`preventDefaults`](https://ej2.syncfusion.com/documentation/api/diagram/serializationSettingsModel) property of serializationSettings is used to simplifying the saved JSON object without adding the default properties that are presented in the diagram.
 
 ```typescript
 var diagram: Diagram = new Diagram({

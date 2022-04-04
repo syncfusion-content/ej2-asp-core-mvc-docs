@@ -259,8 +259,6 @@ diagram.appendTo('#element');
 
 The [`addInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayer.html#Syncfusion_EJ2_Diagrams_DiagramLayer_AddInfo) property of layers allow you to maintain additional information to the layers.
 
-The following code illustrates how to add additional information to the layers.
-
 ```typescript
 
 import {
@@ -343,8 +341,6 @@ Layers can be added at runtime by using the [`addLayer`](../api/diagram#addLayer
 
 The layer's [`ID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayer.html#Syncfusion_EJ2_Diagrams_DiagramLayer_Id) property defines the ID of the layer, and its further used to find the layer at runtime and do any customization.
 
-The following code illustrates how to add a layer.
-
 ```typescript
 
 let diagramElement = document.getElementById('element');
@@ -374,8 +370,6 @@ diagram.addLayer({
 
 Layers can be removed at runtime by using the [`removeLayer`](../api/diagram#removeLayer) public method.
 
-The following code illustrates how to remove a layer.
-
 ```typescript
 
 let diagramElement = document.getElementById('element');
@@ -388,8 +382,6 @@ diagram.removeLayer([diagram.model.layers[i]]);
 ### moveObjects
 
 Objects of the layers can be moved by using the [`moveObjects`](../api/diagram#moveObjects) public method.
-
-The following code illustrates how to move objects from one layer to another layer from the diagram.
 
 ```typescript
 
@@ -404,8 +396,6 @@ diagram.moveObjects(['connector1'], 'layer2');
 
 Layers can be moved forward at runtime by using the [`bringLayerForward`](../api/diagram#bringLayerForward) public method.
 
-The following code illustrates how to bring forward to layer.
-
 ```typescript
 
 let diagramElement = document.getElementById('element');
@@ -418,8 +408,6 @@ diagram.bringLayerForward('layer1');
 ### sendLayerBackward
 
 Layers can be moved backward at runtime by using the [`sendLayerBackward`](../api/diagram#sendLayerBackward) public method.
-
-The following code illustrates how to send backward to layer.
 
 ```typescript
 
@@ -434,8 +422,6 @@ diagram.sendLayerBackward('layer1');
 
 Layers can be cloned with its object by using the [`cloneLayer`](../api/diagram#cloneLayer) public method.
 
-The following code illustrates how to bring forward to layer.
-
 ```typescript
 
 let diagramElement = document.getElementById('element');
@@ -449,8 +435,6 @@ diagram.cloneLayer('layer2');
 
 To get the active layers back in diagram, use the [`getActiveLayer`](../api/diagram#getActiveLayer) public method.
 
-The following code illustrates how to bring forward to layer.
-
 ```typescript
 
 let diagramElement = document.getElementById('element');
@@ -463,8 +447,6 @@ diagram.getActiveLayer();
 ### setActiveLayer
 
 Set the active layer by using the [`setActiveLayer`](../api/diagram#setActiveLayer) public method.
-
-The following code illustrates how to bring forward to layer.
 
 ```typescript
 

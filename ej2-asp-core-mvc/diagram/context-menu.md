@@ -17,7 +17,7 @@ In graphical user interface (GUI), a context menu is a type of menu that appears
 
 ## Customize context menu
 
-The [`show`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramContextMenuSettings.html#Syncfusion_EJ2_Diagrams_DiagramContextMenuSettings_Show) property helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands. The following code illustrates how to enable the default context menu items.
+The [`show`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramContextMenuSettings.html#Syncfusion_EJ2_Diagrams_DiagramContextMenuSettings_Show) property helps to enable or disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -49,13 +49,11 @@ Context menu can be defined for individual node with the desired context menu it
 
 * Set an image for the context menu item using the context menu url property.
 
-* The `iconCss` property defines the class/multiple classes separated by a space for the menu item that is used to include an icon. Menu item can include font icon and sprite image.
+* The `iconCss` property defines the class or multiple classes separated by a space for the menu item that is used to include an icon. Menu item can include font icon and sprite image.
 
 * The `target` property used to set the target to show the menu item.
 
 * The `separator` property defines the horizontal lines that are used to separate the menu items. You cannot select the separators. You can enable separators to group the menu items using the separator property.
-
-The following code example illustrates how to add custom context menu items.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,7 +77,7 @@ The following code example illustrates how to add custom context menu items.
 
 
 
-To display the custom context menu items alone, set  the `showCustomMenuOnly` property to true.
+To display the custom context menu items alone, set the `showCustomMenuOnly` property to true.
 
 ## Template Support for Context menu
 
@@ -111,7 +109,7 @@ To display the custom context menu items alone, set  the `showCustomMenuOnly` pr
 
 ## Context menu events
 
-You would be notified with events, when you try to open the context menu items `contextMenuOpen` and when you click the menu items `contextMenuClick`. The following code example illustrates how to define those events.
+You would be notified with events, when you try to open the context menu items `contextMenuOpen` and when you click the menu items `contextMenuClick`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

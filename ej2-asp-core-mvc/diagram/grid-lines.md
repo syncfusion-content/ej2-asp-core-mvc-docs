@@ -17,7 +17,7 @@ The model’s [`snapSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 ## Customize the gridlines visibility
 
-The [`snapSettings.snapConstraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SnapConstraints.html) enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
+The [`snapSettings.snapConstraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SnapConstraints.html) enables you to show or hide the gridlines.
 
 If you need to enable snapping, then inject snapping module into the diagram.
 
@@ -43,19 +43,17 @@ If you need to enable snapping, then inject snapping module into the diagram.
 
 
 
-To show only horizontal/vertical gridlines or to hide gridlines, refer to [`Constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SnapConstraints.html).
+To show only horizontal or vertical gridlines or to hide gridlines, refer to [`Constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SnapConstraints.html).
 
 ## Appearance
 
 The appearance of the gridlines can be customized by using a set of predefined properties.
 
-* The [`horizontalGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_HorizontalGridlines) and the [`verticalGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_VerticalGridlines) properties allow to customize the appearance of the horizontal and vertical gridlines respectively.
+* The [`horizontalGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_HorizontalGridlines) and the [`verticalGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_VerticalGridlines) properties allows to customize the appearance of the horizontal and vertical gridlines respectively.
 
-* The horizontal gridlines [`lineColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramGridlines.html#Syncfusion_EJ2_Diagrams_DiagramGridlines_LineColor) and [`lineDashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramGridlines.html#Syncfusion_EJ2_Diagrams_DiagramGridlines_LineDashArray) properties are used to customizes the line color and line style of the horizontal gridlines.
+* The horizontal gridlines [`lineColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramGridlines.html#Syncfusion_EJ2_Diagrams_DiagramGridlines_LineColor) and [`lineDashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramGridlines.html#Syncfusion_EJ2_Diagrams_DiagramGridlines_LineDashArray) properties are used to customize the line color and line style of the horizontal gridlines.
 
-* The vertical gridlines [`lineColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramGridlines.html#Syncfusion_EJ2_Diagrams_DiagramGridlines_LineColor) and [`lineDashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramGridlines.html#Syncfusion_EJ2_Diagrams_DiagramGridlines_LineDashArray) properties are used to customizes the line color and line style of the vertical gridlines.
-
-The following code example illustrates how to customize the appearance of gridlines.
+* The vertical gridlines [`lineColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramGridlines.html#Syncfusion_EJ2_Diagrams_DiagramGridlines_LineColor) and [`lineDashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramGridlines.html#Syncfusion_EJ2_Diagrams_DiagramGridlines_LineDashArray) properties are used to customize the line color and line style of the vertical gridlines.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -82,8 +80,6 @@ The following code example illustrates how to customize the appearance of gridli
 ## Line intervals
 
 Thickness and the space between gridlines can be customized by using horizontal gridlines’s [`linesInterval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramGridlines.html#Syncfusion_EJ2_Diagrams_DiagramGridlines_LineIntervals) and vertical gridlines’s [`linesInterval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramGridlines.html#Syncfusion_EJ2_Diagrams_DiagramGridlines_LineIntervals) properties. In the lines interval collections, values at the odd places are referred as the thickness of lines and values at the even places are referred as the space between gridlines.
-
-The following code example illustrates how to customize the thickness of lines and the line intervals.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -113,7 +109,7 @@ The following code example illustrates how to customize the thickness of lines a
 
 This feature allows the diagram objects to snap to the nearest intersection of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
-Snapping to gridlines can be enabled/disabled with the [`snapSettings.snapConstraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SnapConstraints.html). The following code example illustrates how to enable/disable the snapping to gridlines.
+Snapping to gridlines can be enabled or disabled with the [`snapSettings.snapConstraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SnapConstraints.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -165,15 +161,15 @@ By default, the objects are snapped towards the nearest gridline. The gridline o
 
 ## Snap to objects
 
-The snap to object provides visual cues to assist with aligning and spacing diagram elements. A node can be snapped with its neighboring objects based on certain alignments. Such alignments are visually represented as smart guides.
+The snap to object provides visual cues to assist with aligning and spacing diagram elements. A node can be snapped with its neighbouring objects based on certain alignments. Such alignments are visually represented as smart guides.
 
-The [`snapObjectDistance`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_SnapObjectDistance) property allows you to define minimum distance between the selected object and the nearest object.
+The [`snapObjectDistance`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_SnapObjectDistance) property allows to define minimum distance between the selected object and the nearest object.
 
-The [`snapAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_SnapAngle) property allows you to define the snap angle by which the object needs to be rotated.
+The [`snapAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_SnapAngle) property allows to define the snap angle by which the object needs to be rotated.
 
-The [`snapConstraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SnapConstraints.html) property allows you to enable or disable the certain features of the snapping, refer to `snapConstraints`.
+The [`snapConstraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SnapConstraints.html) property allows to enable or disable the certain features of the snapping, refer to `snapConstraints`.
 
-The [`snapLineColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_SnapLineColor) property allows you to define the color of the snapline.
+The [`snapLineColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html#Syncfusion_EJ2_Diagrams_DiagramSnapSettings_SnapLineColor) property allows to define the color of the snapline.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
