@@ -60,11 +60,11 @@ documenteditor .selection.copyHyperlink();
 
 To create a basic hyperlink in the document, press `ENTER` / `SPACEBAR` / `SHIFT + ENTER` / `TAB` key after typing the address, for instance `http://www.google.com`. Document editor automatically converts this address to a hyperlink field. The text can be considered as a valid URL if it starts with any of the following.
 
-><http://><br>
-><https://><br>
->file:///<br>
->www.<br>
->mailto:<br>
+> `<http://>`<br>
+> `<https://>`<br>
+> `file:///`<br>
+> `www.`<br>
+> `mailto:`<br>
 
 Refer to the following example.
 
@@ -91,7 +91,17 @@ Refer to the following example.
 {% endtabs %}
 {% endif %}
 
+## Customize screen tip
 
+You can customize the screen tip text for the hyperlink by using below sample code.
+
+```typescript
+documenteditor.insertHyperlink('https://www.google.com', 'Google', '<<Screen tip text>>');
+```
+
+Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog/)
+
+![Add or modify the screen tip text for hyperlinks in a Word document.](images/screentip.png)
 
 ## Remove hyperlink
 
@@ -138,5 +148,5 @@ You can use the following keyboard shortcut to open the hyperlink dialog if the 
 
 ## See Also
 
-* [Feature modules](../../document-editor/feature-module/)
-* [Hyperlink dialog](../../document-editor/dialog/#hyperlink-dialog)
+* [Feature modules](../document-editor/feature-module/)
+* [Hyperlink dialog](../document-editor/dialog/#hyperlink-dialog)

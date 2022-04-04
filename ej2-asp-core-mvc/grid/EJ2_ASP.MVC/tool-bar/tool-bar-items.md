@@ -29,6 +29,7 @@ The following table shows built-in toolbar items and its actions.
 | ExcelExport | Exports the grid to Excel.|
 | PdfExport | Exports the grid to PDF.|
 | WordExport | Exports the grid to Word.|
+| ColumnChooser | Choose the column’s visibility.|
 
 {% if page.publishingplatform == "aspnet-core" %}
 

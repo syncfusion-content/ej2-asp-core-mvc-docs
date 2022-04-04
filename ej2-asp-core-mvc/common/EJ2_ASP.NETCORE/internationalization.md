@@ -138,7 +138,9 @@ npm install cldr-data
 
 ![Globalization schedule control](./images/schedule-locale.png)
 
-> Refer this documentation to [localizing the static Scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Localization/Localization-schedule-cldr)
+>
+> Refer this documentation to [localizing the static scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
 
 ## Changing Global Culture and Currency Code
 

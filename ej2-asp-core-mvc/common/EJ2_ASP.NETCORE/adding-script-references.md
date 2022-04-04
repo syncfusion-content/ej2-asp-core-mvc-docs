@@ -18,6 +18,8 @@ Syncfusion hosts every ASP.NET Core control as a separate node package in CDN, f
 
 Here, the Syncfusion ASP.NET Core CDN URL for the both Individual ASP.NET Core control package and Complete ASP.NET Core controls package has been explained.
 
+W> The un-versioned CDN links which always maintains latest version scripts are deprecated from 2022 Vol1 - 20.1 version. These links are available with 19.4 version scripts to avoid breaking in sites and apps that uses un-versioned links.
+
 ### CDN Reference for all controls
 
 The primary goal of all the ASP.NET Core controls package is to help the novice to get started with Syncfusion ASP.NET Core control by referring the single line for script and styles without bothering about the dependency graph of the ASP.NET Core controls.
@@ -242,3 +244,7 @@ gulp.task("copy-client-resource", function (done) {
 ## Custom Resource Generator
 
 The Syncfusion ASP.NET Core provides an option to generate a control's scripts using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) tool for the ASP.NET Core Controls. To generate the control-wise scripts externally using CRG, refer [here](./custom-resource-generator).
+
+## See also
+
+* [CDN Fallback](./cdn-fallback)

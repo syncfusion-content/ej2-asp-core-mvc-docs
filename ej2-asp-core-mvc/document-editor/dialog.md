@@ -369,4 +369,4 @@ To open this dialog, refer to the following example.
 
 ## See Also
 
-* [Feature module](../../document-editor/feature-module/)
+* [Feature module](../document-editor/feature-module/)

@@ -83,6 +83,40 @@ The following code example illustrates how to enable optimized spell checking.
 this.container.documentEditor.spellChecker.enableOptimizedSpellCheck = true;
 ```
 
+### Spell check dictionary cache
+
+Starting from `v20.1.0.xx`, we have optimized the performance and memory usage of spell checker by adding a static method to initialize the dictionaries with specified cache count.
+
+By default, the spell checker holds only one language dictionary in memory. If you want to hold multiple dictionaries in memory, you need to set the cache limit by using `InitializeDictionaries` method as in the below example.
+
+```csharp
+ List<DictionaryData> spellDictCollection = new List<DictionaryData>();
+ string personalDictPath = string.Empty;
+ int cacheCount = 2;
+ // Initialize dictionaries
+ SpellChecker.InitializeDictionaries(spellDictCollection, personalDictPath, cacheCount);
+```
+
+If dictionaries are initialized using `InitializeDictionaries` method, then we should use default constructor of the `SpellChecker`to check spelling and get suggestion as in the below example code, it will prevent reinitialization of already loaded dictionaries.
+
+```csharp
+public string SpellCheck([FromBody] SpellCheckJsonData spellChecker)
+{
+            try
+      {
+            SpellChecker spellCheck = new SpellChecker();
+            spellCheck.GetSuggestions(spellChecker.LanguageID, spellChecker.TexttoCheck, spellChecker.CheckSpelling, spellChecker.CheckSuggestion, spellChecker.AddWord);
+            return Newtonsoft.Json.JsonConvert.SerializeObject(spellCheck);
+      }
+      catch
+      {
+            return "{\"SpellCollection\":[],\"HasSpellingError\":false,\"Suggestions\":null}";
+      }
+}
+```
+
+Previously on every `SpellChecker.GetSuggestion()` method call, the `.aff` and dictionary data will be parsed to generate suggestion for miss spelled word. But, starting from `v20.1.0.xx`, the `.aff` and dictionary data will be parsed only for the first time alone while calling `SpellChecker.GetSuggestion()` method.
+
 ## Context menu
 
 Right click on error word to open the context menu with spell check options. Please see below screenshot for your reference.
