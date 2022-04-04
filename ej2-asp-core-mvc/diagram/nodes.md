@@ -23,7 +23,7 @@ A node can be created and added to the diagram, either programmatically or inter
 
 ## Add node through nodes collection
 
-To create a node, define the [`node`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html) object and add that to nodes collection of the diagram model. The following code example illustrates how to add a node to the diagram.
+To create a node, define the [`node`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html) object and add that to nodes collection of the diagram model.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -52,8 +52,6 @@ To create a node, define the [`node`](https://help.syncfusion.com/cr/aspnetcore-
 * Nodes can be added at runtime by using public method, add and can be removed at runtime by using public method, remove. On adding node at runtime, the nodes collection is changed and the [`collectionChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_CollectionChange) event will trigger.
 
 * The node’s ID property is used to define the name of the node and its further used to find the node at runtime and do any customization.
-
-The following code illustrates how to add a node.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -112,15 +110,11 @@ Nodes can be interactively drawn by clicking and dragging the diagram surface by
 
 * Rotation of a node is controlled by using its [`rotateAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_RotateAngle) property.
 
-The following table illustrates how pivot relates offset values with node boundaries.
-
 | Pivot | Offset |
 |-------- | -------- |
 | (0.5,0.5)| offsetX and offsetY values are considered as the node’s center point. |
 | (0,0) | offsetX and offsetY values are considered as the top-left corner of the node. |
 | (1,1) | offsetX and offsetY values are considered as the bottom-right corner of the node. |
-
-The following code illustrates how to change the `pivot` value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -146,7 +140,7 @@ The following code illustrates how to change the `pivot` value.
 
 ## Flip
 
-The diagram Provides support to flip the node. [`flip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Flip) is performed to give the mirrored image of the original element.
+The diagram provides support to flip the node. [`flip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Flip) is performed to give the mirrored image of the original element.
 
 The flip types are as follows:
 
@@ -155,8 +149,6 @@ The flip types are as follows:
 * VerticalFlip - `Vertical` is used to change the element in vertical direction.
 
 * Both - `Both` which involves both vertical and horizontal changes of the element.
-
-The following code illustrates how to provide the mirror image of the original element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -188,8 +180,6 @@ The following code illustrates how to provide the mirror image of the original e
 
 * The [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Visible) property of the node enables or disables the visibility of the node.
 
-The following code illustrates how to customize the appearance of the shape.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -214,7 +204,7 @@ The following code illustrates how to customize the appearance of the shape.
 
 ## Gradient
 
-The [`gradient`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_Gradient) property of the node allows you to define and apply the gradient effect to that node.
+The [`gradient`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_Gradient) property of the node allows to define and apply the gradient effect to that node.
 
 The gradient stop property defines the color and a position, where the previous color transition ends and a new color transition starts.
 
@@ -284,7 +274,7 @@ There are two types of gradients as follows:
 
 ## Shadow
 
-Diagram provides support to add [`shadow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Shadow) effect to a node that is disabled, by default. It can be enabled with the constraints property of the node. The following code illustrates how to drop shadow.
+Diagram provides support to add [`shadow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Shadow) effect to a node that is disabled, by default. It can be enabled with the constraints property of the node.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -310,7 +300,7 @@ Diagram provides support to add [`shadow`](https://help.syncfusion.com/cr/aspnet
 
 ## Customizing shadow
 
-The angle, distance, and opacity of the shadow can be customized with the shadow property of the node. The following code example illustrates how to customize shadow.
+The angle, distance, and opacity of the shadow can be customized with the shadow property of the node.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -342,9 +332,7 @@ Diagram provides support to describe the state of the node. i.e., the node is ex
 
 * To explore the properties of expand and collapse icon, refer to [`expandIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_ExpandIcon) and [`collapseIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_CollapseIcon).
 
-* The expandIcon’s and collapseIcon’s shape properties allow to define the shape of the icon.
-
-The following code example illustrates how to create an icon of various shapes.
+* The expandIcon’s and collapseIcon’s shape properties allows to define the shape of the icon.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -390,7 +378,7 @@ Diagram provides support to drag, resize, or rotate the node interactively. For 
 
 ## Constraints
 
-The constraints property of the node allows you to enable/disable certain features. For more information about node constraints, refer to [`Node Constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Constraints).
+The constraints property of the node allows to enable or disable certain features. For more information about node constraints, refer to [`Node Constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Constraints).
 
 ## Custom properties
 
