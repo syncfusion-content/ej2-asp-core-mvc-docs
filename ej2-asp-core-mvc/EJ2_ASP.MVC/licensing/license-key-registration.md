@@ -10,7 +10,7 @@ documentation: ug
 
 # License Key Registration
 
-License key should be registered, if your project using Syncfusion ASP . NET MVC - EJ2 packages reference from [nuget.org](https://www.nuget.org/packages?q=syncfusion) or from trial installer.
+License key should be registered, if your project using Syncfusion ASP . NET MVC - EJ2 packages reference from [nuget.org](https://www.nuget.org/packages?q=syncfusion) or from syncfusion installer.
 
 ## ASP . NET MVC
 
