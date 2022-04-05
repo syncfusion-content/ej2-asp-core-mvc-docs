@@ -134,3 +134,7 @@ It can also be achieved using built-in toolbar options by setting the [`ShowTool
 ![output](images/grand_toolbar.png)
 <br/>
 ![output](images/sub_toolbar.png)
+
+Additionally, with the built-in option available in the grand totals drop-down menu, the grand totals can be dynamically displayed at the top or bottom of the pivot table's row and column axes. By default, the grand totals are displayed at the bottom of the pivot table's row and column axes.
+
+![output](images/grandtotals-position.png)
