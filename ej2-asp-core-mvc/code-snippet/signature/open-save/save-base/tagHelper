@@ -1,0 +1,34 @@
+<div class='wrap'>
+    <h4>Sign here</h4>
+    <div id="signature-control">
+        <ejs-signature id="signature"></ejs-signature>
+    </div>
+    <ejs-button id="btn" cssClass="e-primary" content="Save as Base64"></ejs-button>
+    <ejs-dialog id='dialog' width="80%" visible="false" showCloseIcon="true" header="Base64 of the signature"></ejs-dialog>
+</div>
+
+<script>
+    document.getElementById("btn").addEventListener('click', function () {
+        var signature = document.getElementById("signature").ej2_instances[0];
+        var dialogObj = ej.base.getInstance(document.getElementById("dialog"), ej.popups.Dialog);
+        dialogObj.content = signature.getSignature();
+        dialogObj.show();
+    });
+</script>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    #signature {
+        border: 1px solid lightgray;
+        height: 100%;
+        width: 100%;
+    }
+
+    #btn {
+        margin-top: 30px;
+    }
+</style>

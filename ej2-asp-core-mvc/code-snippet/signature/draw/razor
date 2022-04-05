@@ -1,0 +1,55 @@
+<div class='wrap'>
+    <div id="input">
+        <table>
+            <tbody>
+                <tr>
+                    <td><div>Enter the Text:</div></td>
+                    <td><input type="text" id="text" placeholder="Enter the Text"></td>
+                </tr>
+                <tr>
+                    <td style="padding-top:10px"><div>Font Family:</div></td>
+                    <td style="padding-top:10px">
+                        @Html.EJS().DropDownList("font").Placeholder("Select a font").Value("Arial").PopupHeight("200px").DataSource(
+                   (IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "Text" }).Render()
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top:10px"><div>Font Size:</div></td>
+                    <td style="padding-top:10px">
+                        @Html.EJS().DropDownList("size").Placeholder("Select a size").Value("20").PopupHeight("200px").DataSource(
+                   (IEnumerable<object>)ViewBag.size).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "Text" }).Render()
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        @Html.EJS().Button("btn").Content("Draw").IsPrimary(true).Render()
+    </div>
+    <div id="signature-control">
+        @Html.EJS().Signature("signature").Render()
+    </div>
+</div>
+
+<script>
+    document.getElementById("btn").addEventListener('click', function () {
+        var signature = document.getElementById("signature").ej2_instances[0];
+        var text = document.getElementById("text").value;
+        var font = document.getElementById("font").ej2_instances[0].value;
+        var size = document.getElementById("size").ej2_instances[0].value;
+        signature.draw(text, font, size);
+    });
+</script>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 500px;
+        text-align: center;
+    }
+
+    #signature {
+        border: 1px solid lightgray;
+        height: 100%;
+        width: 100%;
+    }
+</style>

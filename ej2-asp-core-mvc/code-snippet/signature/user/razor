@@ -1,0 +1,98 @@
+<div class='wrap'>
+    <div id="option">
+        <table>
+            <tr>
+                <td>
+                    @Html.EJS().Button("undoBtn").Content("Undo").IsPrimary(true).Disabled(true).Render()
+                </td>
+                <td>
+                    @Html.EJS().Button("redoBtn").Content("Redo").IsPrimary(true).Disabled(true).Render()
+                </td>
+                <td>
+                    @Html.EJS().Button("clearBtn").Content("Clear").IsPrimary(true).Disabled(true).Render()
+                </td>
+                <td>
+                    <div style="margin-bottom: 5px; margin-left: 200px;">
+                        @Html.EJS().CheckBox("disable").Label("Disabled").Change("disableChange").Render()
+                    </div>
+                    <div style="margin-left: 200px;">
+                        @Html.EJS().CheckBox("readonly").Label("ReadOnly").Change("readOnlyChange").Render()
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="signature-control">
+        @Html.EJS().Signature("signature").Change("change").Render()
+    </div>
+</div>
+
+<script>
+    document.getElementById("undoBtn").addEventListener('click', function () {
+        var signature = document.getElementById("signature").ej2_instances[0];
+        if (!signature.isReadOnly && !signature.disabled) {
+            signature.undo();
+        }
+    });
+    document.getElementById("redoBtn").addEventListener('click', function () {
+        var signature = document.getElementById("signature").ej2_instances[0];
+        if (!signature.isReadOnly && !signature.disabled) {
+            signature.redo();
+        }
+    });
+    document.getElementById("clearBtn").addEventListener('click', function () {
+        var signature = document.getElementById("signature").ej2_instances[0];
+        if (!signature.isReadOnly && !signature.disabled) {
+            signature.clear();
+        }
+    });
+    function disableChange(args) {
+        var signature = document.getElementById("signature").ej2_instances[0];
+        signature.disabled = args.checked;
+    }
+    function readOnlyChange(args) {
+        var signature = document.getElementById("signature").ej2_instances[0];
+        signature.isReadOnly = args.checked;
+    }
+    function change() {
+        var signature = document.getElementById("signature").ej2_instances[0];
+        var undoBtn = document.getElementById("undoBtn").ej2_instances[0];
+        var redoBtn = document.getElementById("redoBtn").ej2_instances[0];
+        var clearBtn = document.getElementById("clearBtn").ej2_instances[0];
+        if (!signature.disabled && !signature.isReadOnly) {
+            if (signature.canUndo()) {
+                undoBtn.disabled = false;
+            } else {
+                undoBtn.disabled = true;
+            }
+            if (signature.canRedo()) {
+                redoBtn.disabled = false;
+            } else {
+                redoBtn.disabled = true;
+            }
+            if (!signature.isEmpty()) {
+                clearBtn.disabled = false;
+            } else {
+                clearBtn.disabled = true;
+            }
+        }
+    }
+</script>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 500px;
+        text-align: center;
+    }
+
+    #signature {
+        border: 1px solid lightgray;
+        height: 100%;
+        width: 100%;
+    }
+
+    #option {
+        margin-bottom: 10px;
+    }
+</style>
