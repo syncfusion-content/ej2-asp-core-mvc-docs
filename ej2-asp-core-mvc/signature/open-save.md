@@ -10,11 +10,11 @@ documentation: ug
 
 # Open and Save Signature
 
-The Signature component supports to open the signature by using hosted/online URL or base64. And it also supports various save options like image, base64, and blob.
+The Signature control supports to open the signature by using hosted/online URL or base64. And it also supports various save options like image, base64, and blob.
 
 ## Open Signature
 
-The signature component opens a pre-drawn signature as either base64 or hosted/ online URL using the `load` method. It supports the PNG, JPEG, and SVG image’s base64.
+The signature control opens a pre-drawn signature as either base64 or hosted/ online URL using the `load` method. It supports the PNG, JPEG, and SVG image’s base64.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

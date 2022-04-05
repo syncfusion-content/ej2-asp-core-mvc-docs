@@ -31,7 +31,7 @@ The `clear` method is used to clears the signature and makes the canvas empty. T
 
 ## Disabled
 
-The `disabled` property is used to enables/disables the signature component. In the disabled state, the user is not allowed to draw signature. And it can’t be focused until the user enabled the signature.
+The `disabled` property is used to enables/disables the signature control. In the disabled state, the user is not allowed to draw signature. And it can’t be focused until the user enabled the signature.
 
 ## ReadOnly
 
