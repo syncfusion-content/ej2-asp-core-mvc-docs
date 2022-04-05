@@ -14,12 +14,12 @@ documentation: ug
 Document editor features are segregated into individual feature-wise modules to enable selective referencing. By default, the document editor displays the document in read-only mode. The required modules should be injected to extend its functionality. The following are the selective modules of document editor that can be included as required:
 * **Print** - Prints the document.
 * **SfdtExport** - Exports the document as Syncfusion Document Text (.SFDT) file.
-* **Selection** - Selects a portion of the document and copy it to the clipboard.
-* **Search** - Searches specific text and navigate between the results.
+* **Selection** - Selects a portion of the document and copies it to the clipboard.
+* **Search** - Searches specific text and navigates between the results.
 * **WordExport** - Exports the document as Word Document (.DOCX) file.
 * **TextExport** - Exports the document as Text Document (.TXT) file.
-* **Editor** - Performs all kind of editing operations.
-* **EditorHistory** - Maintains the history of editing operations so that you can perform undo and redo at any time.
+* **Editor** - Performs all kinds of editing operations.
+* **EditorHistory** - Maintains the history of editing operations, so that you can perform undo and redo at any time.
 * User interface options such as context menu, options pane, image resizer, and dialog are available as individual modules.
 
 >In addition to injecting the required modules in your application, enable corresponding properties to extend the functionality for a document editor instance.

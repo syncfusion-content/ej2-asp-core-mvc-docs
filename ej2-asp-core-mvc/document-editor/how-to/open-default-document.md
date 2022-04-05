@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Default Document in ##Platform_Name## Document Editor Component
-description: Learn here all about Open Default Document in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to open default document in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open Default Document
 publishingplatform: ##Platform_Name##
@@ -11,13 +11,11 @@ documentation: ug
 
 # How to open a default document in DocumentEditor when initialized
 
-In this article, we are going to see how to open a default document when DocumentEditor & DocumentEditorContainer is initialized.
+This article explains how to open a default document when DocumentEditor & DocumentEditorContainer is initialized.
 
 ## Opening a default document in DocumentEditor
 
-Using `open` method in Document editor allows us to open the Document in sfdt format. To open the document by default, call the open method in the `created` event of Document editor which gets triggered once the control is created.
-
-The following example illustrates how to open the sfdt format document in Document editor by default.
+Using `open` method in Document editor allows to open the Document in sfdt format. To open the document by default, call the open method in the `created` event of Document editor which gets triggered once the control is created.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,8 +45,6 @@ The following example illustrates how to open the sfdt format document in Docume
 ## Opening a default document in DocumentEditorContainer
 
 To open the document by default, call the open method in the `created` event of Document editor container which gets triggered once the control is created.
-
-The following example illustrates how to open the sfdt format document in Document editor container by default.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

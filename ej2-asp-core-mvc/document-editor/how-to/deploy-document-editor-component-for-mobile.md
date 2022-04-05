@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deploy Document Editor Component For Mobile in ##Platform_Name## Document Editor Component
-description: Learn here all about Deploy Document Editor Component For Mobile in Syncfusion ##Platform_Name## Document Editor component of syncfusion and more.
+description: Learn here all about deploy document editor component for mobile in Syncfusion ##Platform_Name## Document Editor component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Deploy Document Editor Component For Mobile
 publishingplatform: ##Platform_Name##
@@ -13,11 +13,9 @@ documentation: ug
 
 ## Document editor component for Mobile
 
-At present, Document editor component is not responsive for mobile, and we haven't ensured the editing functionalities in mobile browsers. Whereas it works properly as a document viewer in mobile browsers.
+At present, Document editor component is not responsive for mobile, and the editing functionalities aren't ensured in mobile browsers. Whereas it works properly as a document viewer in mobile browsers.
 
 Hence, it is recommended to switch the Document editor component as read-only in mobile browsers. Also, invoke `fitPage` method with `FitPageWidth` parameter in document change event, such as to display one full page by adjusting the zoom factor.
-
-The following example code illustrates how to deploy Document Editor component for Mobile.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Auto Save Document In Document Editor in ##Platform_Name## Document Editor Component
-description: Learn here all about Auto Save Document In Document Editor in Syncfusion ##Platform_Name## Document Editor component of syncfusion and more.
+description: Learn here all about auto save document in Document Editor in Syncfusion ##Platform_Name## Document Editor component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Auto Save Document In Document Editor
 publishingplatform: ##Platform_Name##
@@ -11,11 +11,9 @@ documentation: ug
 
 # How to auto save the document of Document Editor component into AWS S3
 
-In this article, we are going to see how to autosave the document in AWS S3. You can automatically save the edited content in regular intervals of time. It helps reduce the risk of data loss by saving an open document automatically at customized intervals.
+This article explains how to autosave the document in AWS S3. You can automatically save the edited content in regular intervals of time. It helps to reduce the risk of data loss by saving an open document automatically at customized intervals.
 
-The following example illustrates how to auto save the document in AWS S3.
-
-* In the client-side, using content change event, we can automatically save the edited content in regular intervals of time. Based on `contentChanged` boolean, the document send as Docx format to server-side using `saveAsBlob` method.
+* In the client-side, using content change event, the edited content can be automatically saved in regular intervals of time. Based on `contentChanged` boolean, the document send as Docx format to server-side using `saveAsBlob` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
