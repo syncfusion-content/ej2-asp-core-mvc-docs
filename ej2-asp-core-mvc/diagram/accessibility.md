@@ -11,9 +11,9 @@ documentation: ug
 
 # Accessibility
 
-Diagram provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provides information about elements in a document for assistive technology.
+Diagram provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provide information about elements in a document for assistive technology.
 
-**Aria-label:**   Attribute provides the text label with some default description for below elements in diagram.
+**Aria-label:**  Attribute provides the text label with some default description for below elements in diagram.
 
 <!-- markdownlint-disable MD033 -->
 <table>

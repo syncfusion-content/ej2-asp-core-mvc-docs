@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent Opening Of The Dialog in ##Platform_Name## Dialog Component
-description: Learn here all about Prevent Opening Of The Dialog in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to prevent opening of the Dialog in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Prevent Opening Of The Dialog
 publishingplatform: ##Platform_Name##
