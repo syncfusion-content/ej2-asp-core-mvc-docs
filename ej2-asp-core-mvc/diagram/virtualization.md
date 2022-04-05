@@ -17,8 +17,6 @@ Virtualization is the process of loading the diagramming objects available in th
 
 This feature gives an optimized performance while loading and dragging items to the Diagram that consists of many Nodes and Connectors.
 
-The following code illustrates how to enable Virtualization mode in the diagram.
-
 ```javascript
 var diagramElement = document.getElementById('element');
 var diagram = diagramElement.ej2_instances[0];

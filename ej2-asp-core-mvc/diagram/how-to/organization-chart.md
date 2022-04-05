@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Organization Chart in ##Platform_Name## Diagram Component
-description: Learn here all about Organization Chart in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
+description: Learn here all about organization chart in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Organization Chart
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # HTML Template and CSS in the Organization chart
 
-An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as an `OrganizationalChart`. The following code example illustrates how to use HTML Templates and CSS in the organization chart by using the HTML node.
+An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as an `OrganizationalChart`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

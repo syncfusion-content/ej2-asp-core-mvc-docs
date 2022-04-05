@@ -19,9 +19,7 @@ Connector can be created by defining the source and target point of the connecto
 
 ## Add connectors through connectors collection
 
-The [`sourcePoint`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_SourcePoint) and [`targetPoint`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_TargetPoint) properties of connector allow you to define the end points of a connector.
-
-The following code example illustrates how to add a connector through connector collection.
+The [`sourcePoint`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_SourcePoint) and [`targetPoint`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_TargetPoint) properties of connector allows to define the end points of a connector.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,8 +46,6 @@ The following code example illustrates how to add a connector through connector 
 ## Add connector at runtime
 
 Connectors can be added at runtime by using public method, `diagram.add` and can be removed at runtime by using public method, `diagram.remove`.
-
-The following code example illustrates how to add connector at runtime.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -122,8 +118,6 @@ For more information about drawing connectors, refer to [`Draw Connectors`](http
 
 Various connector properties such as `sourcePoint`, `targetPoint`, `style`, `sourcePortID`, `targetPortID`, etc., can be updated at the runtime.
 
-The following code example illustrates how to update a connector's source point, target point, styles properties at runtime.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -165,8 +159,6 @@ diagram.dataBind();
 
 * The [`sourceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_SourceID) and [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_TargetID) properties allow to define the nodes to be connected.
 
-* The following code example illustrates how to connect two nodes.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -193,8 +185,6 @@ diagram.dataBind();
 
 * When you remove both InConnect and OutConnect NodeConstraints from Default, the node restricts connector to establish connection in it.
 
-* The following code illustrates how to disable InConnect constraints.
-
 ```javascript
 
 node.constraints =  NodeConstraints.Default & ~NodeConstraints.InConnect,
@@ -203,7 +193,7 @@ node.constraints =  NodeConstraints.Default & ~NodeConstraints.InConnect,
 
 ## Connections with ports
 
-The [`sourcePortID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_SourcePortID) and [`targetPortID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_TargetPortID) properties allow to create connections between some specific points of source/target nodes. The following code example illustrates how to create port to port connections.
+The [`sourcePortID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_SourcePortID) and [`targetPortID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_TargetPortID) properties allow to create connections between some specific points of source/target nodes.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -274,7 +264,7 @@ The path of the connector is defined with a collection of segments. There are th
 
 ## Straight
 
-To create a straight line, specify the [`type`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) of the segment as **straight** and add a straight segment to [`segments`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#segments) collection and need to specify [`type`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#type-Segments) for the connector. The following code example illustrates how to create a default straight segment.
+To create a straight line, specify the [`type`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) of the segment as **straight** and add a straight segment to [`segments`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#segments) collection and need to specify [`type`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#type-Segments) for the connector.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -301,7 +291,7 @@ To create a straight line, specify the [`type`](https://ej2.syncfusion.com/docum
 
 
 
-The [`point`](https://ej2.syncfusion.com/documentation/api/diagram/straightSegment/#point-PointModel) property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
+The [`point`](https://ej2.syncfusion.com/documentation/api/diagram/straightSegment/#point-PointModel) property of straight segment allows to define the end point of it.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -332,9 +322,9 @@ The [`point`](https://ej2.syncfusion.com/documentation/api/diagram/straightSegme
 
 Orthogonal segments is used to create segments that are perpendicular to each other.
 
-Set the segment [`type`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) as orthogonal to create a default orthogonal segment and need to specify [`type`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#segments). The following code example illustrates how to create a default orthogonal segment.
+Set the segment [`type`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) as orthogonal to create a default orthogonal segment and need to specify [`type`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#segments).
 
-Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to [`connector.segments`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#segments) collection. The following code example illustrates how to create a connector with multiple segments.
+Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to [`connector.segments`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#segments) collection.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -358,7 +348,7 @@ Multiple segments can be defined one after another. To create a connector with m
 
 
 
-The [`length`](https://ej2.syncfusion.com/documentation/api/diagram/orthogonalSegment/#length) and [`direction`](https://ej2.syncfusion.com/documentation/api/diagram/orthogonalSegment/) properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
+The [`length`](https://ej2.syncfusion.com/documentation/api/diagram/orthogonalSegment/#length) and [`direction`](https://ej2.syncfusion.com/documentation/api/diagram/orthogonalSegment/) properties allows to define the flow and length of segment.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -386,7 +376,7 @@ The [`length`](https://ej2.syncfusion.com/documentation/api/diagram/orthogonalSe
 
 ## Avoid overlapping
 
-Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target nodes. The following preview illustrates how orthogonal segments are re-routed.
+Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target nodes.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -414,7 +404,7 @@ Orthogonal segments are automatically re-routed, in order to avoid overlapping w
 
 Bezier segments are used to create curve segments and the curves are configurable either with the control points or with vectors.
 
-To create a bezier segment, the [`segment.type`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) is set as `bezier` and need to specify [`type`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#type-Segments) for the connector. The following code example illustrates how to create a default bezier segment.
+To create a bezier segment, the [`segment.type`](https://ej2.syncfusion.com/documentation/api/diagram/segments/) is set as `bezier` and need to specify [`type`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#type-Segments) for the connector.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -438,9 +428,9 @@ To create a bezier segment, the [`segment.type`](https://ej2.syncfusion.com/docu
 
 
 
-The [`point1`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegment/#point1) and [`point2`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegment/#point2) properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the bezier segments with control points.
+The [`point1`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegment/#point1) and [`point2`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegment/#point2) properties of bezier segment enables to set the control points.
 
-The [`vector1`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegment/#vector1) and [`vector2`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegment/#vector2) properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
+The [`vector1`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegment/#vector1) and [`vector2`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegment/#vector2) properties of bezier segment enable you to define the vectors.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -472,7 +462,6 @@ The [`vector1`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegme
 
 * To create custom shape for source decorator, use [`pathData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDecorator.html#Syncfusion_EJ2_Diagrams_DiagramDecorator_PathData) property. Similarly, to create custom shape for target decorator, use [`pathData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDecorator.html#Syncfusion_EJ2_Diagrams_DiagramDecorator_PathData) property.
 
-* The following code example illustrates how to create decorators of various shapes.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -503,8 +492,6 @@ Padding is used to leave the space between the Connector's end point and the obj
 * The [`sourcePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_SourcePadding) property of connector defines space between the source point and the source node of the connector.
 
 * The [`targetPadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_TargetPadding) property of connector defines space between the end point and the target node of the connector.
-
-* The following code example illustrates how to leave space between the connection end points and source and target nodes.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -566,7 +553,7 @@ The flip types are as follows:
 
 ## Bridging
 
-Line bridging creates a bridge for lines to smartly cross over the other lines, at points of intersection. By default, [`bridgeDirection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.BridgeDirection.html) is set to top. Depending upon the direction given bridging direction appears. Bridging can be enabled/disabled either with the `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
+Line bridging creates a bridge for lines to smartly cross over the other lines, at points of intersection. By default, [`bridgeDirection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.BridgeDirection.html) is set to top. Depending upon the direction given bridging direction appears. Bridging can be enabled or disabled either with the `connector.constraints` or `diagram.constraints`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -632,8 +619,6 @@ Corner radius allows to create connectors with rounded corners. The radius of th
 
 ## Segment appearance
 
-The following code example illustrates how to customize the segment appearance.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -663,8 +648,6 @@ The following code example illustrates how to customize the segment appearance.
 * To set the border stroke color, stroke width, and stroke dash array for the target decorator, use [`strokeColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeColor), [`strokeWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeWidth), and [`strokeDashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramShapeStyle.html#Syncfusion_EJ2_Diagrams_DiagramShapeStyle_StrokeDashArray).
 
 * To set the size for source and target decorator, use width and height property.
-
-The following code example illustrates how to customize the appearance of the decorator.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -725,7 +708,7 @@ Diagram provides additional flexibility to re-route the diagram connectors. A co
 
 
 
-* In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.ConnectorConstraints.html) property of the connector like the following code snippet.
+* In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.ConnectorConstraints.html) property of the connector.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -754,11 +737,9 @@ Diagram provides additional flexibility to re-route the diagram connectors. A co
 
 ## Constraints
 
-* The [`constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.ConnectorConstraints.html) property of connector allows to enable/disable certain features of connectors.
+* The [`constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.ConnectorConstraints.html) property of connector allows to enable or disable certain features of connectors.
 
 * To enable or disable the constraints, refer [`constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.ConnectorConstraints.html).
-
-The following code illustrates how to disable selection.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -784,7 +765,7 @@ The following code illustrates how to disable selection.
 
 ## Custom properties
 
-* The [`addInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_AddInfo) property of connectors allow you to maintain additional information to the connectors.
+* The [`addInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_AddInfo) property of connectors allows to maintain additional information to the connectors.
 
 ```javascript
 
@@ -802,8 +783,6 @@ var connectors = {
 ## Stack order
 
 The connectors [`zIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_ZIndex) property specifies the stack order of the connector. A connector with greater stack order is always in front of a connector with a lower stack order.
-
-The following code illustrates how to render connector based on the stack order.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

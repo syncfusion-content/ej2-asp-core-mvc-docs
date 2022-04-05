@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resize in ##Platform_Name## Dialog Component
-description: Learn here all about Resize in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+description: Learn here all about resize in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resize
 publishingplatform: ##Platform_Name##
@@ -11,9 +11,9 @@ documentation: ug
 
 # Resizing
 
-The Dialog supports resizing feature. To resize the dialog, we have to select and resize it by using its handle (grip) or hovering on any of the edges or borders of the dialog within the sample container.
+The Dialog supports resizing feature. To resize the dialog, select and resize it by using its handle (grip) or hovering on any of the edges or borders of the dialog within the sample container.
 
-The resizable dialog can be created by setting the `EnableResize` property to true, which is used to change the size of a dialog dynamically and view its content with expanded mode. The `ResizeHandles` property can also be configured for all the which directions in which the dialog should be resized. When you configure the target property along with the `EnableResize` property, the dialog can be resized within its specified target container.
+The resizable dialog can be created by setting the `EnableResize` property to true, which is used to change the size of a dialog dynamically and view its content with expanded mode. The `ResizeHandles` property can also be configured for the directions in which the dialog should be resized. When you configure the target property along with the `EnableResize` property, the dialog can be resized within its specified target container.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,9 +37,5 @@ The resizable dialog can be created by setting the `EnableResize` property to tr
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![dialog](./images/dialog_resize.gif)

@@ -19,7 +19,7 @@ documentation: ug
 
 * The [`ID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDataSource.html#Syncfusion_EJ2_Diagrams_DiagramDataSource_Id) property is used to define the unique field of each JSON data.
 
-* The [`parentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDataSource.html#Syncfusion_EJ2_Diagrams_DiagramDataSource_ParentId) property is used to defines the parent field which builds the relationship between ID and parent field.
+* The [`parentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDataSource.html#Syncfusion_EJ2_Diagrams_DiagramDataSource_ParentId) property is used to define the parent field which builds the relationship between ID and parent field.
 
 * The [`root`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDataSource.html#Syncfusion_EJ2_Diagrams_DiagramDataSource_Root) property is used to define the root node for the diagram populated from the data source.
 
@@ -34,7 +34,7 @@ documentation: ug
 
 Diagram can be populated based on the user defined JSON data (Local Data) by mapping the relevant data source fields.
 
-To map the user defined JSON data with diagram, configure the fields of [`dataSourceSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDataSource.html). The following code example illustrates how to bind local data with the diagram.
+To map the user defined JSON data with diagram, configure the fields of [`dataSourceSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDataSource.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -96,11 +96,11 @@ function diagramCreated() {
 
 ## CRUD
 
-This feature allows you to read the data source and perform add or edit or delete the data in data source at runtime.
+This feature allows to read the data source and perform add or edit or delete the data in data source at runtime.
 
 ## Read DataSource
 
-* This feature allows you to define the nodes and connectors collection in the data source and connectionDataSource respectively.
+* This feature allows to define the nodes and connectors collection in the data source and connectionDataSource respectively.
 
 * You can set the data collection in the model’s dataSourceSettings [`dataManager`](https://ej2.syncfusion.com/documentation/api/diagram/connectionDataSourceModel/#datamanager) property. The nodes will be generated based on the data specified in the data source.
 
@@ -110,9 +110,9 @@ This feature allows you to read the data source and perform add or edit or delet
 
 * If you have a data (data will be set in the dataSource property) with parent relationship in the database and also defined the connector in the connectionDataSource simultaneously, then the connectors set in the connectionDataSource will be considered as a priority to render the connector.
 
-* The dataSourceSettings [`crudAction’s`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/#crudaction) [`read`](https://ej2.syncfusion.com/documentation/api/diagram/crudActionModel#read) property specifies the method, which is used to read the data source and its populate the nodes in the diagram.
+* The dataSourceSettings [`crudAction’s`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/#crudaction) [`read`](https://ej2.syncfusion.com/documentation/api/diagram/crudActionModel#read) property specifies the method, which is used to read the data source and it populates the nodes in the diagram.
 
-* The connectionDataSource crudAction’s [`read`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/#read) specifies the method, which is used to read the data source and its populates the connectors in the diagram.
+* The connectionDataSource crudAction’s [`read`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/#read) specifies the method, which is used to read the data source and it populates the connectors in the diagram.
 
 * The dataSourceSettings’s [`id`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/) and connectionDataSource’s [`id`](https://ej2.syncfusion.com/documentation/api/diagram/connectionDataSourceModel#id) properties are used to define the unique field of each JSON data.
 
@@ -126,17 +126,15 @@ This feature allows you to read the data source and perform add or edit or delet
 
 ## How to perform Editing at runtime
 
-* The dataSourceSettings crudAction object allows you to define the method, which is used to get the changes done in the data source defined for shapes from the client-side to the server-side.
+* The dataSourceSettings crudAction object allows to define the method, which is used to get the changes done in the data source defined for shapes from the client-side to the server-side.
 
-* Similarly, the connectionDataSource crudAction object allows you to define the method, which is used to get the changes done in the data source defined for connectors from the client-side to the server-side.
+* Similarly, the connectionDataSource crudAction object allows to define the method, which is used to get the changes done in the data source defined for connectors from the client-side to the server-side.
 
 ## InsertData
 
 * The dataSourceSettings crudAction’s [`create`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/#crudaction) property specifies the method, which is used to get the nodes added from the client-side to the server-side.
 
-* The connectionDataSource crudAction’s  [`create`](https://ej2.syncfusion.com/documentation/api/diagram/crudActionModel/) specifies the method, which is used to get the connectors added from the client-side to the server-side.
-
-* The following code example illustrates how to send the newly added or inserted data from the client to server-side.
+* The connectionDataSource crudAction’s [`create`](https://ej2.syncfusion.com/documentation/api/diagram/crudActionModel/) specifies the method, which is used to get the connectors added from the client-side to the server-side.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -159,7 +157,6 @@ This feature allows you to read the data source and perform add or edit or delet
 {% endif %}
 
 
-
 ```javascript
 var diagramElement = document.getElementById('element');
 var diagram = diagramElement.ej2_instances[0];
@@ -173,8 +170,6 @@ diagram.insertData();
 * The dataSourceSettings crudAction’s [`update`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/#crudaction) property specifies the method, which is used to get the modified nodes from the client-side to the server-side.
 
 * The connectionDataSource crudAction’s [`update`](https://ej2.syncfusion.com/documentation/api/diagram/crudActionModel/) specifies the method, which is used to get the modified connectors from the client-side to the server-side.
-
-* The following code example illustrates how to send the updated data from the client to the server side.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
