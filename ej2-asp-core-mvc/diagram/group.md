@@ -17,11 +17,11 @@ Group is used to cluster multiple nodes and connectors into a single element. It
 
 ## Add group when initializing diagram
 
-A group can be added to the diagram model through [`nodes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html) collection. To define an object as group, add the child objects to the [`children`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Children) collection of the group. The following code illustrates how to create a group node.
+A group can be added to the diagram model through [`nodes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html) collection. To define an object as group, add the child objects to the [`children`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Children) collection of the group.
 
 * The [`padding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Padding) property of a group node defines the spacing between the group node’s edges and its children.
 
-* While creating group, its child node need to be declared before the group declaration.
+* While creating group, its child node needs to be declared before the group declaration.
 
 * Add a node to the existing group child by using the `diagram.group` method.
 
@@ -59,8 +59,6 @@ diagram.group();
 
 ```
 
-The following code illustrates how a ungroup  at runtime.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -95,8 +93,6 @@ diagram.unGroup();
 ## Add group at runtime
 
 A group node can be added at runtime by using the client-side method `diagram.add`.
-
-The following code illustrates how a group node is added at runtime.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -140,7 +136,7 @@ Containers are used to automatically measure and arrange the size and position o
 
 * The canvas panel supports absolute positioning and provides the least layout functionality to its contained diagram elements.
 
-* Canvas allows you to position its contained elements by using the margin and alignment properties.
+* Canvas allows to position its contained elements by using the margin and alignment properties.
 
 * Rendering alone possible in canvas container.
 
@@ -155,8 +151,6 @@ Containers are used to automatically measure and arrange the size and position o
 * Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.
 
 * It controls spacing by setting margin properties of child and padding properties of group. By default, a stack panel’s [`orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.html) is vertical.
-
-The following code illustrates how to add a stack panel.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

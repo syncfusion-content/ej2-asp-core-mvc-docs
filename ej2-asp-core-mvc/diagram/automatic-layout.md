@@ -24,7 +24,7 @@ Diagram provides support to auto-arrange the nodes in the diagram area that is r
 
 ## Hierarchical layout
 
-The hierarchical tree layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root. To arrange the nodes in a hierarchical structure, specify the layout [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) as `HierarchicalTree`. The following example shows how to arrange the nodes in a hierarchical structure.
+The hierarchical tree layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root. To arrange the nodes in a hierarchical structure, specify the layout [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) as `HierarchicalTree`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -82,9 +82,9 @@ The hierarchical tree layout arranges nodes in a tree-like structure, where the 
 
 ## Radial tree layout
 
-The radial tree layout arranges nodes on a virtual concentric circle around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement result in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. The layout [`root`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Root) property can be used to define the root node of the layout. When no root node is set, the algorithm automatically considers one of the diagram nodes as the root node.
+The radial tree layout arranges nodes on a virtual concentric circle around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. The layout [`root`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Root) property can be used to define the root node of the layout. When no root node is set, the algorithm automatically considers one of the diagram nodes as the root node.
 
-To arrange nodes in a radial tree structure, set the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of the layout as `RadialTree`. The following code illustrates how to arrange the nodes in a radial tree structure.
+To arrange nodes in a radial tree structure, set the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of the layout as `RadialTree`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -110,7 +110,7 @@ To arrange nodes in a radial tree structure, set the [`type`](https://help.syncf
 
 ## Organizational Chart
 
-An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as an `OrganizationalChart`. The following code example illustrates how to create an organizational chart.
+An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as an `OrganizationalChart`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -214,8 +214,6 @@ The following table illustrates the different chart orientations and chart types
 ||Right|Arranges the children vertically at the right side of the parent.|![Vertical Right](images/vright.jpg)|
 ||Alternate|Arranges the children vertically at both left and right sides of the parent.|![Vertical Alternate](images/vAlternate.jpg)|
 
-The following code example illustrates how to set the vertical right arrangement to the leaf level trees.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -251,8 +249,6 @@ The following code example illustrates how to set the vertical right arrangement
 ### Assistant
 
 Assistants are child item that have a different relationship with the parent node. They are laid out in a dedicated part of the tree. A node can be specified as an assistant of its parent by adding it to the `assistants` property of the argument “options”.
-
-The following code example illustrates how to add assistants to layout.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -296,8 +292,6 @@ The symmetric layout has been formed using nodes position by closer together or 
 
 The layout’s [`springLength`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_SpringLength) defined as how long edges should be, ideally. This will be the resting length for the springs. Edge attraction and vertex repulsion forces to be defined by using layout’s [`springFactor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_SpringFactor), the more sibling nodes repel each other. The relative positions do not change any more from one iteration to the next. The number of iterations can be specified by using layout’s [`maxIteration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_MaxIteration).
 
-The following code illustrates how to arrange the nodes in a radial tree structure.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -322,7 +316,7 @@ The following code illustrates how to arrange the nodes in a radial tree structu
 
 ## Mind Map layout
 
-A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `MindMap`. The following code example illustrates how to create an organizational chart.
+A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `MindMap`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -348,7 +342,7 @@ A mind map is a diagram that displays the nodes as a spider diagram organizes in
 
 ## Complex hierarchical tree
 
-Complex hierarchical tree layout is the extended version of the hierarchical tree layout. The child had been two or more parents. To create a complex hierarchical tree, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `ComplexHierarchicalTree`. The following code example illustrates how to create a complex hierarchical tree.
+Complex hierarchical tree layout is the extended version of the hierarchical tree layout. The child has two or more parents. To create a complex hierarchical tree, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Type) of layout should be set as `ComplexHierarchicalTree`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -374,9 +368,8 @@ Complex hierarchical tree layout is the extended version of the hierarchical tre
 
 ### Line Distribution
 
-Line distribution is used to arrange the connectors without overlapping in automatic layout. In some cases, the automatic layout connectors connecting to the nodes will be overlapped with one another. So user can decide whether the segment of each connector from a single parent node should be same point or different point. The [`ConnectionPointOrigin`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Diagrams.DiagramLayout.html#Syncfusion_Blazor_Diagrams_DiagramLayout_ConnectionPointOrigin) property of layout is used to enable or disable the line distribution in layout. By default ConnectionPointOrigin will be `SamePoint`.
+Line distribution is used to arrange the connectors without overlapping in automatic layout. In some cases, the automatic layout connectors connecting to the nodes will be overlapped with one another. So user can decide whether the segment of each connector from a single parent node should be same point or different point. The [`ConnectionPointOrigin`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Diagrams.DiagramLayout.html#Syncfusion_Blazor_Diagrams_DiagramLayout_ConnectionPointOrigin) property of layout is used to enable or disable the line distribution in layout. By default, ConnectionPointOrigin will be `SamePoint`.
 
-The following code example illustrates how to allow a line distribution in diagram layout.
 
 ```cs
 
@@ -391,11 +384,9 @@ The following code example illustrates how to allow a line distribution in diagr
 
 ### Linear Arrangement
 
-Linear arrangement is used to linearly arrange the child nodes in layout, which means the parent node is placed in the center corresponding to its children. When line distribution is enabled, linear arrangement is also activated by default. The [`Arrangement`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Diagrams.DiagramLayout.html#Syncfusion_Blazor_Diagrams_DiagramLayout_Arrangement) property of layout is used to enable or disable the linear arrangement in layout. By default Arrangement will be `Nonlinear`.
+Linear arrangement is used to linearly arrange the child nodes in layout, which means the parent node is placed in the center corresponding to its children. When line distribution is enabled, linear arrangement is also activated by default. The [`Arrangement`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Diagrams.DiagramLayout.html#Syncfusion_Blazor_Diagrams_DiagramLayout_Arrangement) property of layout is used to enable or disable the linear arrangement in layout. By default, Arrangement will be `Nonlinear`.
 
 > Linear arrangement is applicable only for complex hierarchical tree layout.
-
-The following code illustrates how to allow a linear arrangement in diagram layout.
 
 ```cs
 
@@ -432,8 +423,6 @@ Diagram provides support to align the layout within any custom rectangular area.
 
 The layout can be aligned anywhere over the layout bounds/viewport using the [`horizontalAlignment`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_HorizontalAlignment) and [`verticalAlignment`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_VerticalAlignment) properties of the layout.
 
-The following code illustrates how to align the layout at the top-left of the layout bounds.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -462,9 +451,7 @@ Layout provides support to add space horizontally and vertically between the nod
 
 ### Layout margin
 
-Layout provides support to add some blank space between the layout bounds/viewport and the layout. The [`margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.LayoutMarginLayout.html) property of the layout allows you to set the blank space.
-
-The following code illustrates how to set the layout margin.
+Layout provides support to add some blank space between the layout bounds/viewport and the layout. The [`margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.LayoutMarginLayout.html) property of the layout allows to set the blank space.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -490,7 +477,7 @@ The following code illustrates how to set the layout margin.
 
 ### Layout orientation
 
-The layout orientation can used to arrange the layout based on the direction. there are different orientation types that are defined in the following table.
+The layout orientation can used to arrange the layout based on the direction. There are different orientation types that are defined in the following table.
 
 |Orientation|Description|
 | -------- | ----------- |
@@ -502,8 +489,6 @@ The layout orientation can used to arrange the layout based on the direction. th
 Diagram provides support to customize the  [`orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_Orientation) of layout. You can set the desired orientation using layout.orientation.
 
 > In the diagram the default orientation is TopToBottom.
-
-The following code illustrates how to arrange the nodes in a BottomToTop orientation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -529,7 +514,7 @@ The following code illustrates how to arrange the nodes in a BottomToTop orienta
 
 ### Fixed node
 
-Layout provides support to arrange the nodes with reference to the position of a fixed node and set it to the [`fixedNode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_FixedNode) of the layout property. This is helpful when you try to expand/collapse a node. It might be expected that the position of the double-clicked node should not be changed.
+Layout provides support to arrange the nodes with reference to the position of a fixed node and set it to the [`fixedNode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramLayout.html#Syncfusion_EJ2_Diagrams_DiagramLayout_FixedNode) of the layout property. This is helpful when you try to expand or collapse a node. It might be expected that the position of the double-clicked node should not be changed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -555,7 +540,7 @@ Layout provides support to arrange the nodes with reference to the position of a
 
 ### Expand and collapse
 
-Diagram allows to expand/collapse the subtrees of a layout. The node’s isExpanded property allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node.
+Diagram allows to expand/collapse the subtrees of a layout. The node’s isExpanded property allows you to expand or collapse its children.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -609,7 +594,7 @@ Diagram allows to expand/collapse the subtrees of a layout. The node’s isExpan
         }
 ```
 
-In the previous example, while expanding/collapsing a node, it is set as fixed node in order to prevent it from repositioning.
+In the previous example, while expanding or collapsing a node, it is set as fixed node in order to prevent it from repositioning.
 
 ### Refresh layout
 

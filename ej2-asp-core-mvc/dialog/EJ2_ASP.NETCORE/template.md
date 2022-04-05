@@ -11,7 +11,7 @@ documentation: ug
 
 # Template
 
-In Dialog the template support is provided to the header, footer and content sections. So any text or HTML content can be appending in these sections.
+In Dialog, the template support is provided to the header, footer and content sections. So any text or HTML content can be appending in these sections.
 
 ## Header
 
@@ -26,8 +26,6 @@ The Dialog footer can be enabled by adding built-in [`buttons`](https://help.syn
 ## Content
 
 The Dialog content can be provided through the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Content) property, and it accepts both text and HTML string as content by using `e-content-template` tag helper.
-
-The below example demonstrates the usage of header, footer and content templates in the Dialog control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -51,10 +49,6 @@ The below example demonstrates the usage of header, footer and content templates
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![dialog](./images/dialog-template.png)
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # Add minimize and maximize buttons to the Dialog header
 
-##Platform_Name## Dialog allows end users to either minimize or maximize the Dialog component. You can add minimize and maximize custom buttons near the close icon in the Dialog header using the `headerTemplate` property and handle the actions in the button click events, as shown in the following sample.
+##Platform_Name## Dialog allows end users to either minimize or maximize the Dialog component. You can add minimize and maximize custom buttons near the close icon in the Dialog header using the `headerTemplate` property, and handle the actions in the button click events.
 
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -35,7 +35,5 @@ documentation: ug
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-Output be like the below.
 
 ![dialog](../images/min-max.png)
