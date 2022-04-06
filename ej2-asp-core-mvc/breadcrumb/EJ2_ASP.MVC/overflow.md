@@ -15,13 +15,40 @@ documentation: ug
 
 In the Breadcrumb component, `maxItems` and `overflowMode` properties were used to limit the number of breadcrumb items to be displayed.
 
+In the following example, the maxItems is set as 3 with overflowMode as Default. To prevent breadcrumb item navigation, the `enableNavigation` property has been set to false in the Breadcrumb component.
+
 The following overflow modes are available in the Breadcrumb component.
 
-`Default` - Specified maxItems count will be visible and the remaining items will be hidden. While clicking on the previous item, the hidden item will become visible.
+* Collapsed
+* Menu 
+* Wrap
+* Scroll
+* Hidden
+* None
 
-`Collapsed` - Only the first and last items will be visible, and the remaining items will be hidden in the collapsed icon. When the collapsed icon is clicked, all items will become visible.
+## Collapsed
 
-In the following example, the maxItems is set as 3 with overflowMode as Default. To prevent breadcrumb item navigation, the `enableNavigation` property has been set to false in the Breadcrumb component.
+Collapsed mode shows the first and last Breadcrumb items and hides the remaining items with a collapsed icon. When the collapsed icon is clicked, all items become visible and navigable.
+
+## Menu
+
+Menu mode shows the number of Breadcrumb items that can be accommodated within the container space and creates a submenu with the remaining items.
+
+## Wrap
+
+Wrap mode wraps the items to multiple lines when the Breadcrumb’s width exceeds the container space.
+
+## Scroll
+
+Scroll mode shows an HTML scroll bar when the Breadcrumb’s width exceeds the container space.
+
+## Hidden
+
+Hidden mode shows the maximum number of items possible in the container space and hides the remaining items. Clicking on a previous item will make the hidden item visible.
+
+## None
+
+None mode shows all the items on a single line.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -50,4 +77,4 @@ In the following example, the maxItems is set as 3 with overflowMode as Default.
 
 Output be like the below.
 
-![Breadcrumb Sample](./images/overflow.PNG)
+![Breadcrumb Sample](./../images/mvc%20-%20overflow.png)
