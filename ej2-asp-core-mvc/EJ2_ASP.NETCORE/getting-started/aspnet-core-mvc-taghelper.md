@@ -94,3 +94,8 @@ Now, add the Syncfusion ASP.NET Core Calendar tag helper in `~/Views/Home/Index.
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Calendar control will be rendered in the default web browser.
 
 ![ASP.NET Core MVC Calendar control using Tag helper](images/aspnetcore-calendar.png)
+
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using HTML Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-htmlhelper)
