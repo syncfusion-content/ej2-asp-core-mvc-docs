@@ -150,3 +150,36 @@ To open the Breadcrumb item in a new page or tab, set the target property of the
 Output be like the below.
 
 ![Breadcrumb Sample](./images/navigation.PNG)
+
+## Active last item
+
+The last item’s navigation can be enabled by setting the `enableActiveItemNavigation` property to true.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/breadcrumb/url/active-last-item/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/breadcrumb/url/active-last-item/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/breadcrumb/url/active-last-item/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/breadcrumb/url/active-last-item/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+Output be like the below.
+
+![Breadcrumb Sample](./../images/mvc%20-%20navigations.png)
