@@ -1,0 +1,72 @@
+@using Syncfusion.EJ2.DropDowns;
+
+@{
+    var jobRole = new DropDownList() { DataSource = ViewBag.roleData, Query = "new ej.data.Query()", Fields = new DropDownListFieldSettings() { Value = "role", Text = "role", Id = "role" }, AllowFiltering = true, Change = "ValChange" };
+    var salaryDetails = new DropDownList() { DataSource = ViewBag.salaryData, Query = "new ej.data.Query()", Fields = new DropDownListFieldSettings() { Value = "salary", Text = "salary", Id = "salary" }, AllowFiltering = true, };
+}
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("EmployeeID").HeaderText("Employee ID").IsPrimaryKey(true).Add();
+    col.Field("Role").HeaderText("Role").EditType("dropdownedit").Edit(new { @params = jobRole }).Width("120").Add();
+    col.Field("Salary").HeaderText("Salary").EditType("dropdownedit").Edit(new { @params = salaryDetails }).Width("150").Add();
+    col.Field("Address").HeaderText("Addreess").Width("150").Add();
+
+}).Load("load").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+
+<script>    
+    window.role = "";
+    function load() {
+        var column = this.getColumnByField("salary");
+        column.validationRules = { required: [customFn, window["Please enter valid salary"]] };
+    }
+
+    function ValChange(args) {        
+        window["role"] = args.value;
+    }
+
+    function customFn(args) {
+        switch (window["role"]) {
+            case "Engineer":
+                if (args.value > 10000 && args.value < 15000) {
+                    return true;
+                } else {
+                    this.rules["salary"]["required"][1] = "Please enter valid Engineer Salary";                    
+                }
+                break;
+
+            case "TeamLead":
+                if (args.value > 15000 && args.value < 20000) {
+                    return true;
+                } else {
+                    this.rules["salary"]["required"][1] = "Please enter valid TeamLead Salary";                    
+                }
+                break;
+
+            case "Manager":
+                if (args.value > 20000 && args.value < 25000) {
+                    return true;
+                } else {
+                    this.rules["salary"]["required"][1] = "Please enter valid Manager Salary";                   
+                    break;                   
+                }
+            case 'Sales':
+                if (args.value > 5000 && args.value < 25000) {
+                    return true;
+                } else {
+                    this.rules['Salary']['required'][1] = 'Please enter valid Manager Salary';
+                }
+            break;
+
+            case 'Support':
+                if (args.value > 10000 && args.value < 19000) {
+                    return true;
+                } else {
+                     this.rules['Salary']['required'][1] = 'Please enter valid Manager Salary';
+                }
+            break;    
+        }
+        return false;
+    }
+</script>

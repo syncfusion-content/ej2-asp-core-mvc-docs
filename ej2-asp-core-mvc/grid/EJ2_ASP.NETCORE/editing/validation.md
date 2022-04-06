@@ -71,3 +71,34 @@ In the below demo, custom validation applied for **CustomerID** column.
 {% endtabs %}
 {% endif %}
 
+
+
+### Custom validation based on dropdown change
+
+You can apply validation rules and messages to a column based on another column value in edit mode. You can achieve this requirement by using the custom validation feature of Grid.
+
+In the following sample, dropdownlist edit type is used for the **Role** and **Salary** columns. Here, you can apply the custom validation in the **Salary** column based on the value selected in the **Role** column.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/dropdown-validation/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dropdown-validation.cs" %}
+{% include code-snippet/grid/edit/dropdown-validation/dropdown-validation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/dropdown-validation/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dropdown-validation.cs" %}
+{% include code-snippet/grid/edit/dropdown-validation/dropdown-validation.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
