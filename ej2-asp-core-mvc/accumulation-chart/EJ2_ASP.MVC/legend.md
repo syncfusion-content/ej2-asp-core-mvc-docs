@@ -232,7 +232,7 @@ When the legend text exceeds the container, the text can be wrapped by using **T
 {% include code-snippet/chart/accumulation-charts/legend/text-wrap/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Textwrap.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/text-wrap/textwarp.cs %}
+{% include code-snippet/chart/accumulation-charts/legend/text-wrap/textwrap.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
