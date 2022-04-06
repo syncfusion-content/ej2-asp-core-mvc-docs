@@ -29,7 +29,7 @@ Allows to drill only the current position of the selected member and exclude the
 
 > This property is applicable only for the relational data source.
 
-Allows to either expand or collapse all headers that are displayed in row and column axes. To display all headers in expanded state, set the property [`ExpandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) to **true** and to collapse all headers, set the property [`ExpandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) to **false**. By default, [`ExpandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) property is set to **false**.
+Allows to either expand or collapse all headers that are displayed in row and column axes. To display all headers in expanded state, set the property [`ExpandAll`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) to **true** and to collapse all headers, set the property [`ExpandAll`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) to **false**. By default, [`ExpandAll`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) property is set to **false**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -50,6 +50,38 @@ Allows to either expand or collapse all headers that are displayed in row and co
 {% endhighlight %}
 {% highlight c# tabtitle="ExpandAll.cs" %}
 {% include code-snippet/pivot-table/drill-down/expand-all/ExpandAll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![output](images/expandall.png)
+
+## Expand all headers for specific fields
+
+> This property is applicable only for the relational data source.
+Allows to expand or collapse all headers for specific fields (only) in row and column axes. To expand headers for a specific field in row or column axis, set the property [`expandAll`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_FieldMapping_expandAll) in [`rows`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html) or [`columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.ColumnsDataSourceSettings.html) to **true**. By default, [`expandAll`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_FieldMapping_expandAll) property in [`rows`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html) or [`columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.ColumnsDataSourceSettings.html) is set to **false**.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/drill-down/expand-all-headers/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ExpandAll.cs" %}
+{% include code-snippet/pivot-table/drill-down/expand-all-headers/ExpandAll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/drill-down/expand-all-headers/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ExpandAll.cs" %}
+{% include code-snippet/pivot-table/drill-down/expand-all-headers/ExpandAll.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
