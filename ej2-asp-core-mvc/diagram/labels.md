@@ -17,7 +17,7 @@ documentation: ug
 
 ## Create annotation
 
-An annotation can be added to a node/connector by defining the annotation object and adding that to the annotation collection of the node/connector. The [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Content) property of annotation defines the text to be displayed. The following code illustrates how to create a annotation.
+An annotation can be added to a node/connector by defining the annotation object and adding that to the annotation collection of the node/connector. The [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Content) property of annotation defines the text to be displayed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -46,7 +46,7 @@ An annotation can be added to a node/connector by defining the annotation object
 
 ## Add annotations at runtime
 
-* Annotations can be added at runtime by using the client-side method [`addLabels`](../api/diagram/#addLabels). The following code illustrates how to add a annotation to a node.
+* Annotations can be added at runtime by using the client-side method [`addLabels`](../api/diagram/#addLabels).
 
 * The annotation's [`ID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Id) property is used to define the name of the annotation and its further used to find the annotation at runtime and do any customization.
 
@@ -91,7 +91,7 @@ diagram.dataBind();
 
 ## Remove annotation
 
-A collection of annotations can be removed from the node by using client-side method [`removeLabels`](../api/diagram/#removeLabels). The following code illustrates how to remove a annotation to a node.
+A collection of annotations can be removed from the node by using client-side method [`removeLabels`](../api/diagram/#removeLabels).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -134,8 +134,6 @@ diagram.removeLabels(diagram.nodes[0], annotation);
 ## Update annotation at runtime
 
 You can change any annotation properties at runtime and update it through the client-side method [`dataBind`](../api/diagram/#dataBind).
-
-The following code example illustrates how to change the annotation properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -180,9 +178,7 @@ Annotation can be aligned relative to the node boundaries. It has [`margin`](htt
 
 The offset property of annotation is used to align the annotations based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
 
-Set the size for a nodes annotation by using [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Height) properties.
-
-The following code shows the relationship between the annotation position (black color circle) and offset (fraction values).
+Set the size for nodes annotation by using [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Height) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -227,7 +223,6 @@ The following tables illustrates all the possible alignments visually with 'offs
 | Center | Bottom | ![Center Bottom Label Alignment](images/Label8.png) |
 | Right |Bottom |![Right Bottom Label Alignment](images/Label9.png) |
 
-The following codes illustrates how to align annotations.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -256,9 +251,7 @@ The following codes illustrates how to align annotations.
 
 ## Annotation alignment with respect to segments
 
-The offset and alignment properties of annotation allows you to align the connector annotations with respect to the segments.
-
-The following code example illustrates how to align connector annotations.
+The offset and alignment properties of annotation allows to align the connector annotations with respect to the segments.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -316,7 +309,7 @@ The following code example illustrates how to align connector annotations.
 
 ## Text align
 
-The [`textAlign`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTextStyle.html#Syncfusion_EJ2_Diagrams_DiagramTextStyle_TextAlign) property of annotation allows you to set how the text should be aligned (left, right, center, or justify) inside the text block. The following codes illustrate how to set textAlign for an annotation.
+The [`textAlign`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTextStyle.html#Syncfusion_EJ2_Diagrams_DiagramTextStyle_TextAlign) property of annotation allows to set how the text should be aligned (left, right, center, or justify) inside the text block.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -347,7 +340,7 @@ The [`textAlign`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.D
 
 Diagram provides a support to add a [`hyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Hyperlink) for the nodes/connectors annotation. It can also be customized.
 
-A User can open the hyperlink in the new window, the same tab and the new tab by using the  [`hyperlinkOpenState`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Hyperlink_HyperlinkOpenState)  property
+A user can open the hyperlink in the new window, the same tab and the new tab by using the [`hyperlinkOpenState`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Hyperlink_HyperlinkOpenState) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -376,9 +369,7 @@ A User can open the hyperlink in the new window, the same tab and the new tab by
 
 ## Template Support for Annotation
 
-Diagram provides template support for annotation. you should define a SVG/HTML content as string in the annotation's [`template`](https://ej2.syncfusion.com/documentation/api/diagram/annotationModel#template) property.
-
-The following code illustrates how to define a template in node's annotation. similarly, you can define it in connectors.
+Diagram provides template support for annotation. You should define a SVG/HTML content as string in the annotation's [`template`](https://ej2.syncfusion.com/documentation/api/diagram/annotationModel#template) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -407,7 +398,7 @@ The following code illustrates how to define a template in node's annotation. si
 
 ## Wrapping
 
-When text overflows node boundaries, you can control it by using [`text wrapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTextStyle.html#Syncfusion_EJ2_Diagrams_DiagramTextStyle_TextWrapping). So, it is wrapped into multiple lines. The wrapping property of annotation defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
+When text overflows node boundaries, you can control it by using [`text wrapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTextStyle.html#Syncfusion_EJ2_Diagrams_DiagramTextStyle_TextWrapping). So, it is wrapped into multiple lines. The wrapping property of annotation defines how the text should be wrapped.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -469,7 +460,7 @@ The label’s [`TextOverflow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 ## Appearance
 
-* You can change the font style of the annotations with the font specific properties (fontSize, fontFamily, color). The following code illustrates how to customize the appearance of the annotation.
+* You can change the font style of the annotations with the font specific properties (fontSize, fontFamily, color).
 
 * The label’s [`bold`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTextStyle.html#Syncfusion_EJ2_Diagrams_DiagramTextStyle_Bold), [`italic`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTextStyle.html#Syncfusion_EJ2_Diagrams_DiagramTextStyle_Italic), and [`textDecoration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTextStyle.html#Syncfusion_EJ2_Diagrams_DiagramTextStyle_TextDecoration) properties are used to style the label’s text.
 
@@ -502,7 +493,7 @@ The label’s [`TextOverflow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 
 
-The fill, border, and opacity appearances of the text can also be customized with appearance specific properties of annotation. The following code illustrates how to customize background, opacity, and border of the annotation.
+The fill, border, and opacity appearances of the text can also be customized with appearance specific properties of annotation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -531,7 +522,7 @@ The fill, border, and opacity appearances of the text can also be customized wit
 
 ## Interaction
 
-Diagram allows annotation to be interacted by selecting, dragging, rotating, and resizing. Annotation interaction is disabled, by default. You can enable annotation interaction with the [`constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.AnnotationConstraints.html)  property of annotation. You can also curtail the services of interaction by enabling either selecting, dragging, rotating, or resizing individually with the respective constraints property of annotation. The following code illustrates how to enable annotation interaction.
+Diagram allows annotation to be interacted by selecting, dragging, rotating, and resizing. Annotation interaction is disabled, by default. You can enable annotation interaction with the [`constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.AnnotationConstraints.html) property of annotation. You can also curtail the services of interaction by enabling either selecting, dragging, rotating, or resizing individually with the respective constraints property of annotation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -568,11 +559,11 @@ Diagram provides support to edit an annotation at runtime, either programmatical
     1. By double-clicking the annotation.
     2. By selecting the item and pressing the F2 key.
 
-Double-clicking any annotation will enables editing and the node enables first annotation editing. When the focus of editor is lost, the annotation for the node is updated. When you double-click on the node/connector/diagram model, the [`doubleClick`](../api/diagram/#doubleClick--emittypeidoubleClickeventargs) event gets triggered.
+Double-clicking any annotation will enable editing and the node enables first annotation editing. When the focus of editor is lost, the annotation for the node is updated. When you double-click on the node/connector/diagram model, the [`doubleClick`](../api/diagram/#doubleClick--emittypeidoubleClickeventargs) event gets triggered.
 
 ## Read-only annotations
 
-Diagram allows to create read-only annotations. You have to set the read-only property of annotation to enable/disable the read-only [`constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.AnnotationConstraints.html). The following code illustrates how to enable read-only mode.
+Diagram allows to create read-only annotations. You have to set the read-only property of annotation to enable/disable the read-only [`constraints`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.AnnotationConstraints.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -603,11 +594,9 @@ Diagram allows to create read-only annotations. You have to set the read-only pr
 
 * The diagram control now supports defining the [`dragLimit`](https://ej2.syncfusion.com/documentation/api/diagram/annotationModel#draglimit) to the label while dragging from the connector and also update the position to the nearest segment offset.
 
-* You can set the value to dragLimit [`left`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#left), [`right`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#right), [`top`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#top), and [`bottom`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#bottom) properties which allow the dragging of connector labels to a certain limit based on the user defined values.
+* You can set the value to dragLimit [`left`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#left), [`right`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#right), [`top`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#top), and [`bottom`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#bottom) properties which allows the dragging of connector labels to a certain limit based on the user defined values.
 
 * By default, drag limit will be disabled for the connector. It can be enabled by setting connector constraints as drag.
-
-* The following code illustrates how to set a dragLimit for connector annotations.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -636,7 +625,7 @@ Diagram allows to create read-only annotations. You have to set the read-only pr
 
 ## Multiple annotations
 
-You can add any number of annotations to a node or connector. The following code illustrates how to add multiple annotations to a node.
+You can add any number of annotations to a node or connector.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -665,4 +654,4 @@ You can add any number of annotations to a node or connector. The following code
 
 ## Constraints
 
-The constraints property of annotation allows you to enable/disable certain annotation behaviours. For instance, you can disable annotation editing.
+The constraints property of annotation allows to enable or disable certain annotation behaviours. For instance, you can disable annotation editing.

@@ -23,13 +23,11 @@ The UML class diagram shapes are explained as follows.
 
 * Also, define the [`name`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassModel#name), [`attributes`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassModel#attributes), and [`methods`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassModel#methods) of the class using the class property of node.
 
-* The attribute’s [`name`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassAttributeModel#name), [`type`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassAttributeModel#type), and [`scope`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassAttributeModel#scope) properties allow you to define the name, data type, and visibility of the attribute.
+* The attribute’s [`name`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassAttributeModel#name), [`type`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassAttributeModel#type), and [`scope`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassAttributeModel#scope) properties allows to define the name, data type, and visibility of the attribute.
 
-* The method’s [`name`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassMethodModel#name), [`parameters`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassMethodModel#parameters), [`type`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassMethodModel#type), and [`scope`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassMethodModel#scope) properties allow you to define the name, parameter, return type, and visibility of the methods.
+* The method’s [`name`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassMethodModel#name), [`parameters`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassMethodModel#parameters), [`type`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassMethodModel#type), and [`scope`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassMethodModel#scope) properties allows to define the name, parameter, return type, and visibility of the methods.
 
-* The method parameters object properties allow you to define the name and type of the parameter.
-
-* The following code example illustrates how to create a class.
+* The method parameters object properties allows to define the name and type of the parameter.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -62,13 +60,11 @@ The UML class diagram shapes are explained as follows.
 
 * Also, define the [`name`](https://ej2.syncfusion.com/documentation/api/diagram/umlInterfaceModel#name), [`attributes`](https://ej2.syncfusion.com/documentation/api/diagram/umlInterfaceModel#attributes), and [`methods`](https://ej2.syncfusion.com/documentation/api/diagram/umlInterfaceModel#methods) of the interface using the interface property of the node.
 
-* The attribute’s name, type, and scope properties allow you to define the name, data type, and visibility of the attribute.
+* The attribute’s name, type, and scope properties allows to define the name, data type, and visibility of the attribute.
 
-* The method’s name, parameter, type, and scope properties allow you to define the name, parameter, return type, and visibility of the methods.
+* The method’s name, parameter, type, and scope properties allows to define the name, parameter, return type, and visibility of the methods.
 
-* The method parameter object properties of name and type allows you to define the name and type of the parameter.
-
-* The following code example illustrates how to create an interface.
+* The method parameter object properties of name and type allows to define the name and type of the parameter.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,8 +96,6 @@ The UML class diagram shapes are explained as follows.
 * To define an enumeration, define the classifier property of node as [`enumeration`](https://ej2.syncfusion.com/documentation/api/diagram/umlClassifierShapeModel#enumerationshape). Also, define the name and members of the enumeration using the enumeration property of the node.
 
 * You can set a name for the enumeration members collection using the name property of members collection.
-
-* The following code example illustrates how to create an enumeration.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -157,7 +151,7 @@ Association is basically a set of links that connects elements of an UML model. 
 1. Directional
 2. BiDirectional
 
-The association property allows you to define the type of association. The default value of association is “Directional”. The following code example illustrates how to create an association.
+The association property allows to define the type of association. The default value of association is “Directional”.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -188,8 +182,6 @@ The association property allows you to define the type of association. The defau
 
 Aggregation is a binary association between a property and one or more composite objects which group together a set of instances. Aggregation is decorated with a hollow diamond. To create an aggregation shape, define the relationship as “aggregation”.
 
-The following code example illustrates how to create an aggregation.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -218,9 +210,6 @@ The following code example illustrates how to create an aggregation.
 ## Composition
 
 Composition is a “strong” form of “aggregation”. Composition is decorated with a black diamond. To create a composition shape, define the relationship property of connector as “composition”.
-
-The following code example illustrates how to create a composition.
-
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -251,8 +240,6 @@ The following code example illustrates how to create a composition.
 
 Dependency is a directed relationship, which is used to show that some UML elements needs or depends on other model elements for specifications. Dependency is shown as dashed line with opened arrow. To create a dependency, define the relationship property of connector as “dependency”.
 
-The following code example illustrates how to create an dependency.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -282,7 +269,7 @@ The following code example illustrates how to create an dependency.
 
 Inheritance is also called as “generalization”. Inheritance is a binary taxonomic directed relationship between a more general classifier (super class) and a more specific classifier (subclass). Inheritance is shown as a line with hollow triangle.
 
-To create an inheritance, define the relationship as “inheritance”. The following code example illustrates how to create an inheritance.
+To create an inheritance, define the relationship as “inheritance”.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -320,15 +307,13 @@ Multiplicity is a definition of an inclusive interval of non-negative integers t
 
 * By default the multiplicity will be considered as “OneToOne”.
 
-* The multiplicity property in UML allows you to specify large number of elements or some collection of elements.
+* The multiplicity property in UML allows to specify large number of elements or some collection of elements.
 
 * The shape multiplicity’s source property is used to set the source label to connector and the target property is used to set the target label to connector.
 
 * To set an optionality or cardinality for the connector source label, use optional property.
 
 * The [`lowerBounds`](https://ej2.syncfusion.com/documentation/api/diagram/multiplicityLabelModel#lowerbounds) and [`upperBounds`](https://ej2.syncfusion.com/documentation/api/diagram/multiplicityLabelModel#upperbounds) could be natural constants or constant expressions evaluated to natural (non negative) number. Upper bound could be also specified as asterisk ‘\*’ which denotes unlimited number of elements. Upper bound should be greater than or equal to the lower bound.
-
-The following code example illustrates how to customize the multiplicity.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -385,8 +370,6 @@ To create a UmlActivity, define type as "UmlActivity" and the list of built-in s
 | StructuredNode | ![StructuredNode](images/StructuredNode.png) |
 | Note           | ![Note](images/Note.png)           |
 
-The following code illustrates how to create a UmlActivity shapes.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -416,8 +399,6 @@ The following code illustrates how to create a UmlActivity shapes.
 
 To create an UmlActivity connector, define the type as "UmlActivity" and flow as either "Exception" or "Control" or "Object".
 
-The following code illustrates how to create a UmlActivity connector.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -446,7 +427,5 @@ The following code illustrates how to create a UmlActivity connector.
 ### Editing
 
 You can edit the name, attributes, and methods of the class diagram shapes just double clicking, similar to editing a node annotation.
-
-The following image illustrates how the text editor looks in an edit mode.
 
 ![Editing Class Diagram](images/ClassEdit.png)

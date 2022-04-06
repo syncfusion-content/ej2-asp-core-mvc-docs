@@ -11,7 +11,7 @@ documentation: ug
 
 # Exporting
 
-Diagram provides support to export its content as image/svg files. The client-side method [`exportDiagram`](https://ej2.syncfusion.com/documentation/api/diagram/#exportDiagram) helps to export the diagram. The following code illustrates how to export the diagram as image.
+Diagram provides support to export its content as image or svg files. The client-side method [`exportDiagram`](https://ej2.syncfusion.com/documentation/api/diagram/#exportDiagram) helps to export the diagram.
 
 > To use Print and Export, you need to inject `PrintAndExport` in the diagram.
 
@@ -37,7 +37,7 @@ Diagram provides support to export the desired region of the diagram to desired 
 
 ## Format
 
-[`Format`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/) is to specify the type/format of the exported file. By default, the diagram is exported as .jpg format. You can export diagram to the following formats:
+[`Format`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/) is to specify the type or format of the exported file. By default, the diagram is exported as .jpg format. You can export diagram to the following formats:
 
 * JPG
 * PNG
@@ -84,8 +84,6 @@ diagram.exportDiagram(options);
 
 For more information about the exporting modes, refer to Exporting Modes.
 
-The following code example illustrates how to export the diagram as raw data.
-
 ```javascript
 var diagram = new Diagram({
     width: 1500, height: 1500
@@ -109,8 +107,6 @@ You can export any particular [`region`](https://ej2.syncfusion.com/documentatio
 
 For more information about region, refer to Regions.
 
-The following code example illustrates how to export the region occupied by the diagram elements.
-
 ```javascript
 
 var diagram = new Diagram({
@@ -130,8 +126,6 @@ diagram.exportDiagram(options);
 ## Custom bounds
 
 Diagram provides support to export any specific region of the diagram by using [`bounds`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#region).
-
-The following code example illustrates how to export the region occupied by the diagram elements.
 
 ```javascript
 
@@ -155,8 +149,6 @@ diagram.exportDiagram(options);
 ## Export diagram with stretch option
 
 Diagram provides support to export the diagram as image for [`stretch`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#stretch) option. The exported images will be clearer but larger in file size.
-
-The following code example illustrates how to export the region occupied by the diagram elements.
 
 ```javascript
 
@@ -187,8 +179,6 @@ The client-side method [`print`](https://ej2.syncfusion.com/documentation/api/di
 | pageWidth | number | Sets the page width of the diagram while printing the diagram into multiple pages. |
 | pageHeight| number | Sets the page height of the diagram while printing the diagram into multiple pages.|
 | pageOrientation | enum | Sets the orientation of the page. |
-
-The following code example illustrates how to export the region occupied by the diagram elements.
 
 ```javascript
 

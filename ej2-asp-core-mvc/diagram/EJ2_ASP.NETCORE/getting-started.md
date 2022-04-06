@@ -10,35 +10,35 @@ documentation: ug
 
 # Getting Started with ASP.NET Core
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+> Starting with v16.2.0.x, if you refer Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
 ## Prerequisites
 
-To get start with ASP.NET Core application, need to ensure the following software to be installed on the machine.
+To get started with ASP.NET Core application, ensure the following software to be installed on the machine.
 * Visual Studio 2017
 * DotNet Core 2.0
 
 ## Setup ASP.NET Core application with Essential JS 2 for ASP.NET Core
 
-The following steps to create ASP.NET Core Application.
+The following steps help to create ASP.NET Core Application.
 
 **Step 1:** Create ASP.NET Core Web Application with default template project in Visual Studio 2017.
 
 ![Alt text](./images/default-template.png)
 
-**Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using Nugget Package Manager.
+**Step 2:** Once your project is created, add Syncfusion EJ2 package into your application by using Nugget Package Manager.
 
 Open the `nuGet` package manager.
 
 ![Alt text](./images/solution-explorer-core.png)
 
-Install the **Syncfusion.EJ2** package to the application
+Install the **Syncfusion.EJ2** package to the application.
 
 ![Alt text](./images/nuget-demo.png)
 
-After Installation complete this will included in the project. You can refer it from the Project Assembly Reference.
+After Installation is complete, this will be included in the project. You can refer it from the Project Assembly Reference.
 
-> We need to install **NewtonSoft.JSON** as dependency since it **Syncfusion.EJ2** dependent to NewtonSoft.JSON package.
+> Install **NewtonSoft.JSON** as dependency, since **Syncfusion.EJ2** is dependent on NewtonSoft.JSON package.
 
 **Step 3:** Open the **Views/_ViewImports.cshtml** to import Syncfusion.EJ2 package.
 
@@ -99,7 +99,7 @@ Create and add a `node` (JSON data) with specific position, size, label, and sha
 
 ## Connect two Nodes with a Connector
 
-Add two node to the diagram as shown in the previous example. Connect these nodes by adding a connector using the `connector` property and refer the source and target end by using the `sourceNode` and `targetNode` properties.
+Add two nodes to the diagram as shown in the previous example. Connect these nodes by adding a connector using the `connector` property and refer the source and target end by using the `sourceNode` and `targetNode` properties.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -129,7 +129,7 @@ Add two node to the diagram as shown in the previous example. Connect these node
 
 Default values for all `nodes` and `connectors` can be set using the `getNodeDefaults` and `getConnectorDefaults` properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
 
-For example, if all the nodes have same `height` and `width`, we can set such properties as follows.
+For example, if all the nodes have same `height` and `width`, set such properties as follows.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -235,7 +235,7 @@ Define Employee Information as JSON data. The following code example shows an em
 
 ## Map data source
 
-You can configure the above "Employee Information" with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example show how `dataSourceSettings` is used to map ID and parent with property name identifiers for employee information.
+You can configure the above "Employee Information" with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example shows how `dataSourceSettings` is used to map ID and parent with property name identifiers for employee information.
 
 ```cs
 
@@ -293,7 +293,7 @@ You can configure the above "Employee Information" with diagram, so that the nod
 
 ## Visualize employee
 
-The following code examples indicate how to define the default appearance of nodes and connectors. The `setNodeTemplate` is used to update each node based on employee data.
+The following code examples indicates how to define the default appearance of nodes and connectors. The `setNodeTemplate` is used to update each node based on employee data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

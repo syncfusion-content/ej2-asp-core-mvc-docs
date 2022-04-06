@@ -10,7 +10,7 @@ documentation: ug
 
 # Register Syncfusion License key in ASP.NET Core application
 
-Syncfusion license key should be registered, if your project using Syncfusion ASP.NET Core packages reference from [nuget.org](https://www.nuget.org/packages?q=syncfusion) or from trial installer. The generated license key is a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
+Syncfusion license key should be registered, if your project using Syncfusion ASP.NET Core packages reference from [nuget.org](https://www.nuget.org/packages?q=syncfusion) or from syncfusion installer. The generated license key is a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
 
 {% tabs %}
 {% highlight c# tabtitle="C#" %}

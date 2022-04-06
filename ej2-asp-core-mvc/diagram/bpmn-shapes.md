@@ -11,7 +11,7 @@ documentation: ug
 
 # Shapes
 
-BPMN shapes are used to represent the internal business procedure in a graphical notation and enable you to communicate the procedures in a standard manner. To create a BPMN shape, in the node property shape, type should be set as “bpmn” and its shape should be set as any one of the built-in shapes. The following code example illustrates how to create a simple business process.
+BPMN shapes are used to represent the internal business procedure in a graphical notation and enable you to communicate the procedures in a standard manner. To create a BPMN shape, in the node property shape, type should be set as “bpmn” and its shape should be set as any one of the built-in shapes.
 
 > If you want to use BPMN shapes in diagram, you need to inject BpmnDiagrams in the diagram.
 
@@ -63,7 +63,7 @@ An [`event`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagra
 * End
 * Intermediate
 
-The event property of the node allows you to define the type of the event. The default value of the event is **start**. The following code example illustrates how to create a BPMN event.
+The event property of the node allows to define the type of the event. The default value of the event is **start**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -107,7 +107,7 @@ Event triggers are notated as icons inside the circle and they represent the spe
 
 ## Gateway
 
-Gateway is used to control the flow of a process and it is represented as a diamond shape. To create a gateway, the shape property of the node should be set as “gateway” and the [`gateway`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnGateway.html) property can be set with any of the appropriate gateways. The following code example illustrates how to create a BPMN Gateway.
+Gateway is used to control the flow of a process and it is represented as a diamond shape. To create a gateway, the shape property of the node should be set as “gateway” and the [`gateway`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnGateway.html) property can be set with any of the appropriate gateways.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -154,7 +154,7 @@ There are two types of activities. They are listed as follows:
 * Task: Occurs within a process and it is not broken down to a finer level of detail.
 * Subprocess: Occurs within a process and it is broken down to a finer level of detail.
 
-To create a BPMN activity, set the shape as **activity**. You also need to set the type of the BPMN activity by using the activity property of the node. By default, the type of the activity is set as **task**. The following code example illustrates how to create an activity.
+To create a BPMN activity, set the shape as **activity**. You also need to set the type of the BPMN activity by using the activity property of the node. By default, the type of the activity is set as **task**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -182,7 +182,7 @@ The different activities of BPMN process are listed as follows.
 
 ## Tasks
 
-The [`task`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnTask.html) property of the node allows you to define the type of task such as sending, receiving, user based task, etc. By default, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnTask.html#Syncfusion_EJ2_Diagrams_DiagramBpmnTask_Type) property of task is set as **none**. The following code illustrates how to create different types of BPMN tasks. The events property of tasks allow to represent these results as an event attached to the task.
+The [`task`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnTask.html) property of the node allows to define the type of task such as sending, receiving, user based task, etc. By default, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnTask.html#Syncfusion_EJ2_Diagrams_DiagramBpmnTask_Type) property of task is set as **none**. The following code illustrates how to create different types of BPMN tasks. The events property of tasks allow to represent these results as an event attached to the task.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -280,7 +280,7 @@ A subprocess is defined as an event subprocess, when it is triggered by an event
 
 * [`transaction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnSubProcess.html#Syncfusion_EJ2_Diagrams_DiagramBpmnSubProcess_Transaction) is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The `events` property of subprocess allows to represent these results as an event attached to the subprocess.
 
-* The event object allows you to define the type of event by which the subprocess will be triggered. The name of the event can be defined to identify the event at runtime.
+* The event object allows to define the type of event by which the subprocess will be triggered. The name of the event can be defined to identify the event at runtime.
 
 * The event’s offset property is used to set the fraction/ratio (relative to parent) that defines the position of the event shape.
 
@@ -316,7 +316,7 @@ Processes is an array collection that defines the children values for BPMN subpr
 
 ## Loop
 
-[`Loop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnSubProcess.html#Syncfusion_EJ2_Diagrams_DiagramBpmnSubProcess_Loop) is a task that is internally being looped. The loop property of task allows you to define the type of loop. The default value for `loop` is **none**. You can define the loop property in subprocess BPMN shape as shown in the following code.
+[`Loop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnSubProcess.html#Syncfusion_EJ2_Diagrams_DiagramBpmnSubProcess_Loop) is a task that is internally being looped. The loop property of task allows to define the type of loop. The default value for `loop` is **none**. You can define the loop property in subprocess BPMN shape as shown in the following code.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -428,7 +428,7 @@ An adhoc subprocess is a group of tasks that are executed in any order or skippe
 
 ## Boundary
 
-Boundary represents the type of task that is being processed. The [`boundary`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnSubProcess.html#Syncfusion_EJ2_Diagrams_DiagramBpmnSubProcess_Boundary) property of subprocess allows you to define the type of boundary. By default, it is set as **default**.
+Boundary represents the type of task that is being processed. The [`boundary`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnSubProcess.html#Syncfusion_EJ2_Diagrams_DiagramBpmnSubProcess_Boundary) property of subprocess allows to define the type of boundary. By default, it is set as **default**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -496,7 +496,7 @@ The following table contains various representation of BPMN data object.
 
 ## Datasource
 
-Datasource is used to store or access data associated with a business process. To create a datasource, set the shape as **datasource**. The following code example illustrates how to create a datasource.
+Datasource is used to store or access data associated with a business process. To create a datasource, set the shape as **datasource**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -569,7 +569,7 @@ Artifact is used to show additional information about a process in order to make
 
 ## Group
 
-A group is used to frame a part of the diagram, shows that elements included in it are logically belong together and does not have any other semantics other than organizing elements. To create a group, the shape property of the node should be set as **group**. The following code example illustrates how to create a BPMN group.
+A group is used to frame a part of the diagram, shows that elements included in it logically belong together and does not have any other semantics other than organizing elements. To create a group, the shape property of the node should be set as **group**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -605,7 +605,7 @@ A group is used to frame a part of the diagram, shows that elements included in 
 * BiDirectional
 * Default
 
-The association property allows you to define the type of association. The following code example illustrates how to create an association.
+The association property allows you to define the type of association.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -647,7 +647,7 @@ A `Sequence` flow shows the order in which the activities are performed in a BPM
 * Conditional
 * Default
 
-The sequence property allows you to define the type of sequence. The following code example illustrates how to create a sequence flow.
+The sequence property allows to define the type of sequence.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -689,7 +689,7 @@ A `Message` flow shows the flow of messages between two participants and is repr
 * NonInitiatingMessage
 * Default
 
-The message property allows you to define the type of message. The following code example illustrates how to define a message flow.
+The message property allows to define the type of message.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

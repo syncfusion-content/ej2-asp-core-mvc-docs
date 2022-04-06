@@ -10,7 +10,7 @@ documentation: ug
 
 # Add Icons to Buttons in Dialog Component
 
-You can add icons to the dialog buttons using the [`buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property or [`footerTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) property . For detailed information about dialog buttons, refer to the documentation section.
+You can add icons to the dialog buttons using the [`buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Buttons) property or [`footerTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_FooterTemplate) property. For detailed information about dialog buttons, refer to the documentation section.
 
 In the following sample, dialog footer buttons are customized with icons using `buttons` property.
 
@@ -36,10 +36,6 @@ In the following sample, dialog footer buttons are customized with icons using `
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![dialog](../images/dialog-btn-icon.png)
 
@@ -67,9 +63,5 @@ In the following sample, dialog footer buttons are customized with icons using `
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![dialog](../images/dialog-btn-icon.png)

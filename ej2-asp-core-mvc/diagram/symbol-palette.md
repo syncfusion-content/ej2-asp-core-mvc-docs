@@ -47,8 +47,6 @@ The collection of predefined symbols can be added in palettes using the [`symbol
 
 To initialize a palette, define a JSON object with the property [`ID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalettePalette.html#Syncfusion_EJ2_Diagrams_SymbolPalettePalette_Id) that is unique ID is set to the palettes.
 
-The following code example illustrates how to define a palette and how its added to symbol palette.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -85,7 +83,7 @@ The [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Dia
 
 The [`description`](https://ej2.syncfusion.com/documentation/api/diagram/symbolDescription) defines the text to be displayed and how that is to be handled in `getSymbolInfo`.
 
-Also, any HTML element into a palette header can be embedded by defining the `getSymbolInfo` property. The following code example illustrates how to customize palette headers.
+Also, any HTML element into a palette header can be embedded by defining the `getSymbolInfo` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -178,7 +176,7 @@ The symbol palette panel can be restricted from getting expanded. The `cancel` a
 
 ## Stretch the symbols into the palette
 
-The [`fit`](https://ej2.syncfusion.com/documentation/api/diagram/symbolInfo#fit) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape. The following code example illustrates how to customize the symbol size.
+The [`fit`](https://ej2.syncfusion.com/documentation/api/diagram/symbolInfo#fit) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -218,7 +216,7 @@ The [`fit`](https://ej2.syncfusion.com/documentation/api/diagram/symbolInfo#fit)
 
 ## Customize the size of symbols
 
-The size of the individual symbol can be customized. The [`symbolWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_SymbolWidth) and  [`symbolHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_SymbolHeight) properties of node enables you to define the size of the symbols. The following code example illustrates how to change the size of a symbol.
+The size of the individual symbol can be customized. The [`symbolWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_SymbolWidth) and  [`symbolHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_SymbolHeight) properties of node enables to define the size of the symbols.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -246,9 +244,7 @@ The [`symbolMargin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 ## Symbol preview
 
-The symbol preview size of the palette items can be customized using [`symbolPreview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPaletteSymbolPreview.html). The [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPaletteSymbolPreview.html#Syncfusion_EJ2_Diagrams_SymbolPaletteSymbolPreview_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPaletteSymbolPreview.html#Syncfusion_EJ2_Diagrams_SymbolPaletteSymbolPreview_Height) properties of SymbolPalette enables you to define the preview size to all the symbol palette items. The [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPaletteSymbolPreview.html#Syncfusion_EJ2_Diagrams_SymbolPaletteSymbolPreview_Offset) of the dragging helper relative to the mouse cursor.
-
-The following code example illustrates how to change the preview size of a palette item.
+The symbol preview size of the palette items can be customized using [`symbolPreview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPaletteSymbolPreview.html). The [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPaletteSymbolPreview.html#Syncfusion_EJ2_Diagrams_SymbolPaletteSymbolPreview_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPaletteSymbolPreview.html#Syncfusion_EJ2_Diagrams_SymbolPaletteSymbolPreview_Height) properties of SymbolPalette enables to define the preview size to all the symbol palette items. The [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPaletteSymbolPreview.html#Syncfusion_EJ2_Diagrams_SymbolPaletteSymbolPreview_Offset) of the dragging helper relative to the mouse cursor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -328,9 +324,7 @@ function getSymbolInfo(symbol) {
 ## Adding symbol description for symbols in the palette
 
 The diagram provides support to add symbol description below each symbol of a palette. This descriptive representation of each symbol will enhance the details of the symbol visually. The height and width of the symbol description can also be set individually.
-* The property `getSymbolInfo`, can be used to add the symbol description at runtime.
-
-The following code is an example to set a symbol description for symbols in the palette.
+* The property `getSymbolInfo` can be used to add the symbol description at runtime.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -387,15 +381,15 @@ Palette interaction notifies the element enter, leave, and dragging of the symbo
 
 ## DragEnter
 
-[`DragEnter`] `IDragEnterEventArgs` notifies, when the element enter into the diagram from symbol palette.
+[`DragEnter`] `IDragEnterEventArgs` notifies, when the element enters into the diagram from symbol palette.
 
 ## DragLeave
 
-[`DragLeave`] `IDragLeaveEventArgs` notifies, when the element leaves from  the diagram.
+[`DragLeave`] `IDragLeaveEventArgs` notifies, when the element leaves from the diagram.
 
 ## DragOver
 
-[`DragOver`] `IDragOverEventArgs` notifies, when an element drag over another diagram element.
+[`DragOver`] `IDragOverEventArgs` notifies, when an element is dragged over another diagram element.
 
 > The diagram provides support to cancel the drag and drop operation from the symbol palette to the diagram when the ESC key is pressed.
 
