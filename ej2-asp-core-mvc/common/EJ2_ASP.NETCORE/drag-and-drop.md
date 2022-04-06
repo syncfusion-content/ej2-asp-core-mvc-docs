@@ -159,6 +159,8 @@ To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/
 
 ![drag and drop element](./images/drag-drop.gif)
 
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DragAndDrop)
+
 ## See also
 
 * [Define handle element for Draggable](https://ej2.syncfusion.com/documentation/api/base/draggable/#handle)<br/>
