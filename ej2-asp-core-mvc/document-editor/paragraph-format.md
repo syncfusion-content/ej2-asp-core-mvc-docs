@@ -78,6 +78,15 @@ documenteditor.selection.paragraphFormat.beforeSpacing= 24;
 documenteditor.selection.paragraphFormat.afterSpacing= 24;
 ```
 
+You can also set automatic spacing before and after the paragraph by using the following sample code.
+
+```typescript
+documenteditor.selection.paragraphFormat.spaceBeforeAuto = true;
+documenteditor.selection.paragraphFormat.spaceAfterAuto = true;
+```
+
+>Note: If auto spacing property is enabled, then value defined in the `beforeSpacing` and `afterSpacing` property will not be considered.
+
 ## Pagination properties
 
 You can enable or disable the following pagination properties for the paragraphs in a Word document.
@@ -121,6 +130,6 @@ The following sample demonstrates the paragraph formatting options using a toolb
 
 ## See Also
 
-* [Feature modules](../../document-editor/feature-module/)
-* [Paragraph dialog](../../document-editor/dialog/#paragraph-dialog)
-* [Keyboard shortcuts](../../document-editor/keyboard-shortcut/)
+* [Feature modules](../document-editor/feature-module/)
+* [Paragraph dialog](../document-editor/dialog/#paragraph-dialog)
+* [Keyboard shortcuts](../document-editor/keyboard-shortcut/)

@@ -41,6 +41,6 @@ The Document Editor component is used to create, edit, view, and print Word docu
 * [Angular](https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started/)
 * [React](https://ej2.syncfusion.com/react/documentation/document-editor/getting-started/)
 * [Vue](https://ej2.syncfusion.com/vue/documentation/document-editor/getting-started/)
-* [ASP.NET Core](https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started/)
+* [ASP.NET Core](https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started-core/)
 * [ASP.NET MVC](https://ej2.syncfusion.com/aspnetmvc/documentation/document-editor/getting-started/)
 * [Blazor](https://blazor.syncfusion.com/documentation/document-editor/getting-started/server-side-application/)

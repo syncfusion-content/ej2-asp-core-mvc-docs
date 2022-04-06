@@ -65,16 +65,13 @@
   <meta name="apple-itunes-app" content="app-id=1477376905" />
     <meta name="twitter:image:src" content="https://opengraph.githubassets.com/49f1c1d31dfe082d827f642c79dd08cb5dd44743e2769b40ce984826f3b8dd0f/syncfusion-content/ej2-asp-core-mvc-docs" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="ej2-asp-core-mvc-docs/client-side-resource.md at development · syncfusion-content/ej2-asp-core-mvc-docs" /><meta name="twitter:description" content="This is the common UG Document repository for the EJ2 ASP.NET MVC and EJ2 ASP.NET CORE controls - ej2-asp-core-mvc-docs/client-side-resource.md at development · syncfusion-content/ej2-asp-core-mvc-..." />
     <meta property="og:image" content="https://opengraph.githubassets.com/49f1c1d31dfe082d827f642c79dd08cb5dd44743e2769b40ce984826f3b8dd0f/syncfusion-content/ej2-asp-core-mvc-docs" /><meta property="og:image:alt" content="This is the common UG Document repository for the EJ2 ASP.NET MVC and EJ2 ASP.NET CORE controls - ej2-asp-core-mvc-docs/client-side-resource.md at development · syncfusion-content/ej2-asp-core-mvc-..." /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="600" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="ej2-asp-core-mvc-docs/client-side-resource.md at development · syncfusion-content/ej2-asp-core-mvc-docs" /><meta property="og:url" content="https://github.com/syncfusion-content/ej2-asp-core-mvc-docs" /><meta property="og:description" content="This is the common UG Document repository for the EJ2 ASP.NET MVC and EJ2 ASP.NET CORE controls - ej2-asp-core-mvc-docs/client-side-resource.md at development · syncfusion-content/ej2-asp-core-mvc-..." />
-    
 
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
 
-
-    
-
-  <link rel="assets" href="https://github.githubassets.com/">
-    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/17924565/ws?session=eyJ2IjoiVjMiLCJ1IjoxNzkyNDU2NSwicyI6ODU4ODc2NDAwLCJjIjozMjAyMjU4MzY4LCJ0IjoxNjQ5MjM3ODcyfQ==--c60d831575835bcfa1749fe7a8b29f0266e7191707f46480d18b377a0924aabb" data-refresh-url="/_alive" data-session-id="e88843fa6091e394eb7fbf5e3371745f2cdc2b9b4277b362bf4b743d279dd3cb">
-    <link rel="shared-web-socket-src" href="/assets-cdn/worker/socket-worker-b98ccfd9236e.js">
-  <link rel="sudo-modal" href="/sessions/sudo_modal">
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+</head>
 
 
   <meta name="request-id" content="A5B3:1A5F:77B008:867184:624D5F6C" data-pjax-transient="true" /><meta name="html-safe-nonce" content="865395f4251b0188d6cc7e6c72c21f0a29b7266537b8e07a5dfaf6a3f837a1cc" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9zeW5jZnVzaW9uLWNvbnRlbnQvZWoyLWFzcC1jb3JlLW12Yy1kb2NzL3RyZWUvZGV2ZWxvcG1lbnQvZWoyLWFzcC1jb3JlLW12Yy9FSjJfQVNQLk5FVENPUkUvZ2V0dGluZy1zdGFydGVkIiwicmVxdWVzdF9pZCI6IkE1QjM6MUE1Rjo3N0IwMDg6ODY3MTg0OjYyNEQ1RjZDIiwidmlzaXRvcl9pZCI6Ijg3MzI4Mzk0NjYxOTQxOTQ0OSIsInJlZ2lvbl9lZGdlIjoiYXAtc291dGgtMSIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true" /><meta name="visitor-hmac" content="e1b20204ff9076439eef733c7b0d2e796a177202b6be73f4b521ff44d754881a" data-pjax-transient="true" />
@@ -85,15 +82,28 @@
   <meta name="github-keyboard-shortcuts" content="repository,source-code" data-pjax-transient="true" />
 
   
+        <!-- Syncfusion ASP.NET Core controls styles -->
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" />
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" />
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" />
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" />
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/ej2-lists/styles/material.css" />
 
-  <meta name="selected-link" value="repo_source" data-pjax-transient>
 
     <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY">
   <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
   <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
   <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-<meta name="octolytics-url" content="https://collector.github.com/github/collect" /><meta name="octolytics-actor-id" content="17924565" /><meta name="octolytics-actor-login" content="rajendranr-5483" /><meta name="octolytics-actor-hash" content="d73b4947b9ac70fd33f2d0eb287c4da4b4f1166e30ec04f1ea18f5cfd1b5996e" />
+
+        <!-- Syncfusion ASP.NET Core controls scripts -->
+        <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js"></script>
+        <script src="https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+        <script src="https://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js"></script>
+        <script src="https://cdn.syncfusion.com/ej2/ej2-lists/dist/global/ej2-lists.min.js"></script>
+        <script src="https://cdn.syncfusion.com/ej2/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+</head>
+```
 
   <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
@@ -162,11 +172,22 @@
 </span>      
       
 
-
-        <script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-dp9NWljGko4dWiA5IsI4nM0UjWZQM6o/KauF1OpLp6T78Wc9p0khjP3HeHjlb4pUR6sI0Dgq1KvLjFWH6U3aOg==" src="https://github.githubassets.com/assets/6319-769f4d5a58c6.js"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-8yNF7k3IEYK6K9eB12rJ6qC+VbM5G5yaZnl/i5YB2VB5/o76R/gvSNNWeUb1q+yBgdPKiG/jJpKFUygD26y+Iw==" src="https://github.githubassets.com/assets/9255-f32345ee4dc8.js"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-iRMkCPldpV+iDGSQcBI5h4YYNCBUPaV/8/dcWreEEzc0ArI66cecSzkJxQbKLgPKyJxDrH7bKPrPaFewGNgYWg==" src="https://github.githubassets.com/assets/5623-89132408f95d.js"></script>
-<script crossorigin="anonymous" defer="defer" type="application/javascript" integrity="sha512-zh1/G8Ji0HjoDuYCeKHRVVd0CBEMG8ImBlFdagJVxQXXm+IbXAOh7ZfUY3kHHTO3KrikP8e7JS6S/knMyufhzQ==" src="https://github.githubassets.com/assets/command-palette-ce1d7f1bc262.js"></script>
+```html
+<head>
+        <!-- Syncfusion ASP.NET Core controls styles -->
+        <link rel="stylesheet" href="~/syncfusion/ej2-calendars/styles/calendar/material.css" />
+        <link rel="stylesheet" href="~/syncfusion/ej2-base/styles/material.css" />
+        <link rel="stylesheet" href="~/syncfusion/ej2-buttons/styles/button/material.css" />
+        <link rel="stylesheet" href="~/syncfusion/ej2-popups/styles/popup/material.css" />
+        <link rel="stylesheet" href="~/syncfusion/ej2-lists/styles/list-view/material.css" />
+        <!-- Syncfusion ASP.NET Core controls scripts -->
+        <script src="~/syncfusion/ej2-base/ej2-base.min.js"></script>
+        <script src="~/syncfusion/ej2-buttons/ej2-buttons.min.js"></script>
+        <script src="~/syncfusion/ej2-popups/ej2-popups.min.js"></script>
+        <script src="~/syncfusion/ej2-lists/ej2-lists.min.js"></script>
+        <script src="~/syncfusion/ej2-calendars/ej2-calendars.min.js"></script>
+</head>
+```
 
             <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap" role="banner" >
     <div class="Header-item mt-n1 mb-n1  d-none d-md-flex">

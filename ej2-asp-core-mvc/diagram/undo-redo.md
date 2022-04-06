@@ -23,7 +23,7 @@ Undo/redo commands can be executed through shortcut keys. Shortcut key for undo 
 
 ## Undo/redo through public APIs
 
-The client-side methods [`undo`](../api/diagram) and [`redo`](../api/diagram) help you to revert/restore the changes. The following code example illustrates how to undo/redo the changes through script.
+The client-side methods [`undo`](../api/diagram) and [`redo`](../api/diagram) helps to revert/restore the changes.
 
 ``` javascript
 var diagram = document.getElementById("diagram").ej2_instances[0];
@@ -41,7 +41,7 @@ When a change in the diagram is reverted or restored (undo/redo), the historyCha
 
 History list allows to revert or restore multiple changes through a single undo/redo command. For example, revert/restore the fill color change of multiple elements at a time.
 
-The client-side method [`startGroupAction`](../api/diagram) is used  to notify the diagram to start grouping the changes. The client-side method [`endGroupAction`](../api/diagram) is used to notify to stop grouping the changes. The following code illustrates how to undo/redo fillColor change of multiple elements at a time.
+The client-side method [`startGroupAction`](../api/diagram) is used to notify the diagram to start grouping the changes. The client-side method [`endGroupAction`](../api/diagram) is used to notify to stop grouping the changes.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -86,11 +86,9 @@ var diagram = document.getElementById('container').ej2_instances[0];
 
 ### Track custom changes
 
-Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship diagram, track the changes in the employee information. The historyList of the diagram enables you to track such changes. The following example illustrates how to track such custom property changes.
+Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship diagram, track the changes in the employee information. The historyList of the diagram enables to track such changes.
 
 Before changing the employee information, save the existing information to historyList by using the client-side method push of historyList. The historyList canLog method can be used which takes a history entry as argument and returns whether the specific entry can be added or not.
-
-The following code example illustrates how to save the existing property values.
 
 ```javascript
 
@@ -151,7 +149,7 @@ diagram.historyChange = (arg) => {
 
 ## Retain Selection
 
-You can retain a selection at undo/redo operation by using the client-side API Method called `updateSelection`.  Using this method, we can select a diagram objects.
+You can retain a selection at undo/redo operation by using the client-side API Method called `updateSelection`.  Using this method, you can select diagram objects.
 
 ```typescript
 let diagramInstance: DiagramComponent;

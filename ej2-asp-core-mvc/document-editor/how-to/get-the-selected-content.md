@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get The Selected Content in ##Platform_Name## Document Editor Component
-description: Learn here all about Get The Selected Content in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about get the selected content in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Get The Selected Content
 publishingplatform: ##Platform_Name##
@@ -16,8 +16,6 @@ You can get the selected content from the React Document Editor component as pla
 ## Get the selected content as plain text
 
 You can use `text` API to get the selected content as plain text from React Document Editor component.
-
-The following example code illustrates how to add search in google option in context menu for the selected text.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -49,8 +47,6 @@ You can add the following custom options using this API,
 ## Get the selected content as SFDT (rich text)
 
 You can use `sfdt` API to get the selected content as plain text from React Document Editor component.
-
-The following example code illustrates how to get the content of a bookmark and export it as SFDT.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

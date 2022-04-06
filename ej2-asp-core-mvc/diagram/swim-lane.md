@@ -11,21 +11,17 @@ documentation: ug
 
 # Swimlane
 
-Swimlane is a type of diagram nodes,which is typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities.
+Swimlane is a type of diagram nodes, which is typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities.
 
 ## Create a swimlane
 
-To create a swimlane,the type of shape should be set as [`swimlane`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html).By Default swimlane's are arranged vertically.
-
-The following code example illustrates how to define a swimlane object.
+To create a swimlane, the type of shape should be set as [`swimlane`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html). By Default swimlane's are arranged vertically.
 
 ### Headers
 
-Header was the primary element for swimlanes. The [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of swimlane allows you to define its textual description and to customize its appearance.
+Header was the primary element for swimlanes. The [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of swimlane allows to define its textual description and to customize its appearance.
 
-> By using this header,the swimlane interaction will be performed,like selection, dragging,etc.
-
-The following code example illustrates how to define a swimlane header.
+> By using this header, the swimlane interaction will be performed, like selection, dragging, etc.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -51,11 +47,9 @@ The following code example illustrates how to define a swimlane header.
 
 ### Customization of headers
 
-The height and width of swimlane header can be customized with [`weight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) properties of swimlane header. set fill color of header by using the [`style`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property. The orientation of swimlane can be customized with the [`orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the header.
+The height and width of swimlane header can be customized with [`weight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) properties of swimlane header. Set fill color of header by using the [`style`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property. The orientation of swimlane can be customized with the [`orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the header.
 
 > By default the swimlane orientation has Horizontal.
-
-The following code example illustrates how to customize the swimlane header..
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -81,7 +75,7 @@ The following code example illustrates how to customize the swimlane header..
 
 ### Dynamic customization of swimlane header
 
-You can customize the swimlane header style and text properties dynamically. The following code illustrates how to dynamically customize the lane header.
+You can customize the swimlane header style and text properties dynamically.
 
 ```typescript
 let lane : nodeModel = diagram.nodes[0];
@@ -91,22 +85,21 @@ diagram.dataBind();
 
 ### Header editing
 
-Diagram provides the support to edit swimlane headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that. The following image illustrates how to edit the phase header.
+Diagram provides the support to edit swimlane headers at runtime. The header editing is achieved by double click event. Double clicking the header label will enable the editing.
+
 ![Phase Header Editing](images/phase-header-edit.gif)
 
 ## Lanes
 
-Lane is a functional unit or a responsible department of a business process that helps to map a  process within the functional unit or in between other functional units.
+Lane is a functional unit or a responsible department of a business process that helps to map a process within the functional unit or in between other functional units.
 
-The number of [`lanes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) can be added to swimlane. The lanes are automatically stacked inside  swimlane based on the order they are added.
+The number of [`lanes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) can be added to swimlane. The lanes are automatically stacked inside swimlane based on the order they are added.
 
 ### Create an empty lane
 
 * The lanes `id` is used to define the name of the lane and its further used to find the lane at runtime and do any customization.
 
-* We can provide additional information to the lane by using the [`addInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the lane.
-
-The following code example illustrates how to define a swimlane with lane.
+* The additional information to the lane is provided by using the [`addInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the lane.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -132,9 +125,7 @@ The following code example illustrates how to define a swimlane with lane.
 
 ### Create lane header
 
-* The [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of lane allows you to textually describe the lane and to customize the appearance of the description.
-
-The following code example illustrates how to define a lane header.
+* The [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of lane allows to textually describe the lane and to customize the appearance of the description.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -163,8 +154,6 @@ The following code example illustrates how to define a lane header.
 * The size of lane can be controlled by using the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) properties of the lane.
 * The appearance of the lane can be set by using the [`style`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) properties.
 
-The following code example illustrates how to customize the lane header.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -189,7 +178,7 @@ The following code example illustrates how to customize the lane header.
 
 ### Dynamic customization of lane header
 
-You can customize the lane header style and text properties dynamically. The following code illustrates how to dynamically customize the lane header.
+You can customize the lane header style and text properties dynamically.
 
 ```typescript
 let lane : nodeModel = diagram.nodes[0];
@@ -199,13 +188,11 @@ diagram.dataBind();
 
 ### Add lane at runtime
 
- You can add the a lane at runtime by using the client side API method called `addLanes`.
+ You can add the lane at runtime by using the client side API method called `addLanes`.
 
 ### Add children to lane
 
-To add nodes to lane,you should add [`children`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) collection of the lane.
-
-The following code example illustrates how to add nodes to lane.
+To add nodes to lane, you should add [`children`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) collection of the lane.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -234,7 +221,7 @@ The following code example illustrates how to add nodes to lane.
 
 ### Dynamically add children to lane
 
-The diagram provides support to add children dynamically. The following code illustrates how to add children to lane dynamically.
+The diagram provides support to add children dynamically.
 
 ```typescript
  let node ={
@@ -260,10 +247,9 @@ diagram.dataBind();
 
 * Lane can be resized in the bottom and left direction.
 * Lane can be resized by using resize selector of the lane.
-* Once you can resize the lane,the swimlane will be resized automatically.
-* The lane can be resized either resizing the selector or the tight bounds of the child object. If the child node move to edge of the lane it can be automatically resized.
+* Once you can resize the lane, the swimlane will be resized automatically.
+* The lane can be resized by either resizing the selector or the tight bounds of the child object. If the child node moves to the edge of the lane, it can be automatically resized.
 
-The following image illustrates how resize the lane.
 ![Lane Resizing](images/lane-resize.gif)
 
 ### Lane swapping
@@ -271,14 +257,11 @@ The following image illustrates how resize the lane.
 * Lanes can be swapped using drag the lanes over another lane.
 * Helper should intimate the insertion point while lane swapping.
 
-The following image illustrates how swapping the lane.
 ![Lane Swapping](images/swapping.gif)
 
 ### Disable Swimlane Lane swapping
 
 You can disable swimlane lane swapping by using the property called `canMove`.
-
-The following code illustrates how to disable swimlane lane swapping.
 
 ```typescript
  let node ={
@@ -302,7 +285,7 @@ diagram.dataBind();
 
 * The special resize helper will be used to resize the lanes.
 * The resize cursor will be available on the left and bottom direction alone.
-* Once resize the lane the swimlane will be resized automatically.
+* Once the lane is resized, the swimlane will be resized automatically.
 
 ### Children interaction in lanes
 
@@ -311,19 +294,18 @@ diagram.dataBind();
 * Interchange the child nodes from one lane to another lane.
 * Drag and drop the child nodes from lane to diagram.
 * Drag and drop the child nodes from diagram to lane.
-* Based on the child node interactions,the lane size should be updated.
+* Based on the child node interactions, the lane size should be updated.
 
-The following image illustrates children interaction in lane.
 ![Lane Children Interaction](images/child-interaction.gif)  
   
 ### Lane Header editing
 
-Diagram provides the support to edit Lane headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that. The following image illustrates how to edit the swimlane header.
+Diagram provides the support to edit Lane headers at runtime. The header editing can be achieved by double click event. Double clicking the header label will enable its editing.
 ![Lane Header Editing](images/lane-header-edit.gif)
 
 ## Phase
 
-Phase are the subprocess which will split each lane as horizontally or vertically based on the swimlane orientation. The multiple number of [`Phase`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) can be added to swimlane. The following code example illustrates how to add phase at swimlane.
+Phase are the subprocess which will split each lane as horizontally or vertically based on the swimlane orientation. The multiple number of [`Phase`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) can be added to swimlane.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -349,7 +331,7 @@ Phase are the subprocess which will split each lane as horizontally or verticall
 
 ### Dynamically add phase to lane
 
-You can add the a phase at runtime by using client side API method called `addPhases`. The following code example illustrates how to add phase at run time.
+You can add the phase at runtime by using client side API method called `addPhases`.
 
 ```typescript
   let phase = [{
@@ -364,9 +346,7 @@ You can add the a phase at runtime by using client side API method called `addPh
 * The length of region can be set by using the [`offset`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the phase.
 * Every phase region can be textually described with the [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the phase.
 * You can increase the width of phase by using [`phaseSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of swimlane.
-* We can provide additional information to the phase by using the [`addInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the phase.
-
-The following code example illustrates how to customize the phase in swimlane.
+* The additional information can be provided to the phase by using the [`addInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) property of the phase.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -405,14 +385,12 @@ The following code example illustrates how to customize the phase in swimlane.
 
 ### Phase header editing
 
-Diagram provides the support to edit phase headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that. The following image illustrates how to edit the phase header.
+Diagram provides the support to edit phase headers at runtime. The header editing is achieved by double click event. Double clicking the header label will enable the editing of that.
 ![Phase Header Editing](images/phase-header-edit.gif)
 
 ## Add swimlane to palette
 
-Diagram provides support to add swimlane and phases to symbol palette. The following code sample illustrate how to add swimlane and phases to palette.
-
-The following code example illustrates how to customize the phase in swimlane.
+Diagram provides support to add swimlane and phases to symbol palette.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -439,11 +417,11 @@ The following code example illustrates how to customize the phase in swimlane.
 ### Drag and drop swimlane to palette
 
 * The drag and drop support for swimlane shapes has been provided.
-* When you drag and drop the lane shape,if the diagram already contains swimlane with the same orientation, the lane will be added and stacked inside a swimlane based on the order. Otherwise, it will be added a new swimlane.
+* When you drag and drop the lane shape, if the diagram already contains swimlane with the same orientation, the lane will be added and stacked inside a swimlane based on the order. Otherwise, it will be added a new swimlane.
 * The phase will only drop on swimlane shape with same orientation.
 ![Drag Symbol from Palette](images/symbol-palette.gif)
 
 ## Limitations
 
 * Connectors cannot be canceled when added directly to swimlane. You must initialize the connector through connector collection.
-* We cannot edit the phase line style.
+* The phase line style cannot be edited.

@@ -67,3 +67,5 @@ The `animate` method of `Animation` library can be used to animate the HTML elem
 {% endtabs %}
 
 ![animate the HTML element](images/animation.gif)
+
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Animation)

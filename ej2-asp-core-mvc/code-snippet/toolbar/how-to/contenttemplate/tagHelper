@@ -1,5 +1,7 @@
-@using Syncfusion.EJ2.Navigations;
-@using Syncfusion.EJ2.DropDowns;
+@{
+    .....
+    var data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };
+}
 
 <ejs-toolbar id="default">
     <e-toolbar-items>
@@ -12,7 +14,7 @@
                 <div>  <ejs-radiobutton id="radio1" label="Credit/Debit Card" name="payment" value="credit/debit"></ejs-radiobutton> </div>
                 <div class='e-separator'> </div>
                 <div>
-                    <ejs-dropdownlist id="games" dataSource="@ViewBag.data" placeholder="Select a game" index="2" popupHeight="220px" />
+                    <ejs-dropdownlist id="games" dataSource="@data" placeholder="Select a game" index="2" popupHeight="220px" />
                 </div>
             </div>
         </e-content-template>

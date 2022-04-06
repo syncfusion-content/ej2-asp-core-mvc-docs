@@ -1,5 +1,3 @@
-@using Syncfusion.EJ2.Navigations;
-
 <ejs-toolbar id="defaultToolbar" width="600px">
     <e-toolbar-items>
         <e-toolbar-item text="Cut" prefixIcon="e-cut-icon tb-icons" tooltipText="Cut"></e-toolbar-item>

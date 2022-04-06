@@ -13,11 +13,11 @@ documentation: ug
 
 ## Drawing tools
 
-Drawing tool allows you to draw any kind of node/connector during runtime by clicking and dragging on the diagram page.
+Drawing tool allows to draw any kind of node or connector during runtime by clicking and dragging on the diagram page.
 
 ## Shapes
 
-To draw a shape, set the JSON of that shape to the drawType property of the diagram and activate the drawing tool by using the [`tool`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTools.html) property. The following code example illustrates how to draw a rectangle at runtime.
+To draw a shape, set the JSON of that shape to the drawType property of the diagram and activate the drawing tool by using the [`tool`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTools.html) property. 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -55,8 +55,6 @@ function Created() {
         diagram.dataBind();
     }
 ```
-
-The following code example illustrates how to draw a path.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -105,7 +103,7 @@ function Created() {
 
 ## Connectors
 
-To draw connectors, set the JSON of the connector to the drawType property. The drawing [`tool`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTools.html) can be activated by using the tool property. The following code example illustrates how to draw a straight line connector.
+To draw connectors, set the JSON of the connector to the drawType property. The drawing [`tool`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTools.html) can be activated by using the tool property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -147,7 +145,7 @@ function Created() {
 
 ## Text
 
-Diagram allows you to create a textNode, when you click on the diagram page. The following code illustrates how to draw a text.
+Diagram allows to create a textNode, when you click on the diagram page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -194,8 +192,6 @@ Once you activate the TextTool, perform label editing of a node/connector.
 
 Diagram allows to create the polygon shape by clicking and moving the mouse at runtime on the diagram page.
 
-The following code illustrates how to draw a polygon shape.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -237,8 +233,6 @@ function Created() {
 ## Polyline Connector
 
 Diagram allows to create the polyline segments with straight lines and angled vertices at the control points by clicking and moving the mouse at runtime on the diagram page.
-
-The following code illustrates how to draw a polyline connector.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -282,7 +276,7 @@ There are some functionalities that can be achieved by clicking and dragging on 
 * Pan the diagram: Zoom pan
 * Draw nodes/connectors: DrawOnce/DrawOnce
 
-As all the three behaviors are completely different, you can achieve only one behavior at a time based on the tool that you choose. When more than one of those tools are applied, a tool is activated based on the precedence given in the following table.
+As all the three behaviors are completely different, you can achieve only one behavior at a time, based on the tool that you choose. When more than one of those tools are applied, a tool is activated based on the precedence given in the following table.
 
 |Precedence|Tools|Description|
 |----------|-----|-----------|
@@ -293,7 +287,7 @@ As all the three behaviors are completely different, you can achieve only one be
 |5th|SingleSelect|Allows you to select individual nodes or connectors.|
 |6th|None|Disables all tools.|
 
-Set the desired [`tool`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTools.html) to the tool property of the diagram model. The following code illustrates how to enable single/multiple tools.
+Set the desired [`tool`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTools.html) to the tool property of the diagram model.
 
 ```javascript
 // To Enable Single Tool

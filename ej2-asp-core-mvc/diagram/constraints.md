@@ -11,21 +11,19 @@ documentation: ug
 
 # Constraints
 
-Constraints are used to enable/disable certain behaviors of the diagram, nodes and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled using Bitwise operators (`&, |, ~, <<, etc.`).
+Constraints are used to enable or disable certain behaviors of the diagram, nodes and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled or disabled using Bitwise operators (`&, |, ~, <<, etc.`).
 
 To know more about Bitwise operators, refer to [`Bitwise Operations`](#bitwise-operations).
 
 ## Diagram constraints
 
-Diagram constraints allow to enable or disable the following behaviors:
+Diagram constraints allows to enable or disable the following behaviors:
 
 * Page editing
 * Bridging
 * Zoom and pan
 * Undo/redo
 * Tooltip
-
-The following example illustrates how to give page editing using the diagram constraints.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -64,8 +62,6 @@ Node constraints allows to enable or disable the following behaviors of node. Th
 * Shadow
 * Tooltip
 
-The following example illustrates how to disable rotation using the node constraints.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -92,7 +88,7 @@ For more information about node constraints, refer to [`NodeConstraints`](https:
 
 ## Connector constraints
 
-Connector constraints allow to enable or disable certain behaviors of connectors.
+Connector constraints allows to enable or disable certain behaviors of connectors.
 
 * Selection
 * Deletion
@@ -100,8 +96,6 @@ Connector constraints allow to enable or disable certain behaviors of connectors
 * Segment editing
 * Tooltip
 * Bridging
-
-The following code illustrates how to disable selection by using connector constraints.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -134,8 +128,6 @@ You can enable or disable certain behaviors of port. They are as follows:
 * Connect
 * ConnectOnDrag
 
-The following code illustrates how to disable creating connections with a port.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -163,8 +155,6 @@ For more information about port constraints, refer to [`PortConstraints`](https:
 ## Annotation constraints
 
 You can enable or disable read-only mode for the annotations by using the annotation constraints.
-
-The following code illustrates how to enable read-only mode for the annotations.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -198,8 +188,6 @@ Selector visually represents the selected elements with certain editable thumbs.
 * Rotator
 * User handles
 
-The following code illustrates how to hide rotator.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -226,14 +214,12 @@ For more information about selector constraints, refer to [`SelectorConstraints`
 
 ## Snap constraints
 
-Snap constraints control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
+Snap constraints control the visibility of gridlines and enable or disable snapping. Snap constraints allow to set the following behaviors.
 
 * Show only horizontal or vertical gridlines.
 * Show both horizontal and vertical gridlines.
 * Snap to either horizontal or vertical gridlines.
 * Snap to both horizontal and vertical gridlines.
-
-The following code illustrates how to show only horizontal gridlines.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -267,8 +253,6 @@ Boundary constraints defines a boundary for the diagram inside which the interac
 * Diagram sized boundary
 * Page sized boundary
 
-The following code illustrates how to limit the interaction done inside a diagram within a page.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -296,8 +280,6 @@ For more information about selector constraints, refer to [`BoundaryConstraints`
 ## Inherit behaviors
 
 Some of the behaviors can be defined through both the specific object (node/connector) and diagram. When the behaviors are contradictorily defined through both, the actual behavior is set through inherit options.
-
-The following code example illustrates how to inherit the line bridging behavior from the diagram model.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

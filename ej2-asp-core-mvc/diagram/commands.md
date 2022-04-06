@@ -28,7 +28,7 @@ There are several commands available in the diagram as follows.
 
 ## Align
 
-Alignment commands enable you to align the selected or defined objects such as nodes and connectors with respect to the selection boundary. Refer to [`align`](https://ej2.syncfusion.com/documentation/api/diagram/#align) commands which shows how to use align methods in the diagram.
+Alignment commands enables to align the selected or defined objects such as nodes and connectors with respect to the selection boundary. Refer to [`align`](https://ej2.syncfusion.com/documentation/api/diagram/#align) commands which shows how to use align methods in the diagram.
 
 <table>
 <th>Parameters</th>
@@ -49,7 +49,6 @@ Alignment commands enable you to align the selected or defined objects such as n
 </tr>
 </table>
 
-The following code example illustrates how to align all the selected objects at the left side of the selection boundary.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -101,8 +100,6 @@ The factor to distribute the shapes [`DistributeOptions`](https://ej2.syncfusion
 * Bottom: Distributes the objects based on the distance between the bottom sides of the adjacent objects.
 * Middle: Distributes the objects based on the distance between the vertical center of the adjacent objects.
 
-The following code example illustrates how to execute the space commands.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -147,8 +144,6 @@ Sizing [`sameSize`](https://ej2.syncfusion.com/documentation/api/diagram/#samesi
 * Height: Scales the height of the selected objects.
 * Size: Scales the selected objects both vertically and horizontally.
 
-The following code example illustrates how to execute the size commands.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -185,15 +180,13 @@ diagram.sameSize('Width', diagram.selectedItems.nodes);
 
 ## Clipboard
 
-Clipboard commands are used to cut, copy, or paste the selected elements. Refer to the following link which shows how to use clipboard methods in the diagram.
+Clipboard commands are used to cut, copy, or paste the selected elements.
 
 * Cuts the selected elements from the diagram to the diagram’s clipboard, [`cut`](https://ej2.syncfusion.com/documentation/api/diagram/#cut).
 
 * Copies the selected elements from the diagram to the diagram’s clipboard, [`copy`](https://ej2.syncfusion.com/documentation/api/diagram/#copy).
 
 * Pastes the diagram’s clipboard data (nodes/connectors) into the diagram, [`paste`](https://ej2.syncfusion.com/documentation/api/diagram/#paste).
-
-The following code illustrates how to execute the clipboard commands.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -229,13 +222,11 @@ diagram.paste(diagram.copy() as(NodeModel | ConnectorModel)[]);
 
 ## Grouping
 
-**Grouping commands** are used to group/ungroup the selected elements on the diagram. Refer to the following link which shows how to use grouping commands in the diagram.
+**Grouping commands** are used to group or ungroup the selected elements on the diagram.
 
 [`Group`](https://ej2.syncfusion.com/documentation/api/diagram/#group) the selected nodes and connectors in the diagram.
 
 [`Ungroup`](https://ej2.syncfusion.com/documentation/api/diagram/#ungroup) the selected nodes and connectors in the diagram.
-
-The following code illustrates how to execute the grouping commands.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -271,7 +262,7 @@ diagram.group();
 
 ## Z-Order command
 
-**Z-Order commands** enable you to visually arrange the selected objects such as nodes and connectors on the page.
+**Z-Order commands** enables to visually arrange the selected objects such as nodes and connectors on the page.
 
 ### bringToFront command
 
@@ -429,8 +420,6 @@ diagram.sendBackward();
 
 The [`zoom`](https://ej2.syncfusion.com/documentation/api/diagram/#zoom) command is used to zoom-in and zoom-out the diagram view.
 
-The following code illustrates how to zoom-in/zoom out the diagram.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -478,8 +467,6 @@ The accepted values of the argument "direction" are as follows:
 * Down: Moves the selected elements towards down by the specified delta value.
 * Left: Moves the selected elements towards left by the specified delta value.
 * Right: Moves the selected elements towards right by the specified delta value.
-
-The following code illustrates how to execute nudge command.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -596,7 +583,7 @@ diagram.bringToCenter(bound);
 
 The [`fitToPage`](https://ej2.syncfusion.com/documentation/api/diagram/#fittopage) command helps to fit the diagram content into the view with respect to either width, height, or at the whole.
 
-The [`mode`](https://ej2.syncfusion.com/documentation/api/diagram/fitModes/) parameter defines whether the diagram has to be horizontally/vertically fit into the viewport with respect to width, height, or entire bounds of the diagram.
+The [`mode`](https://ej2.syncfusion.com/documentation/api/diagram/fitModes/) parameter defines whether the diagram has to be horizontally/vertically fits into the viewport with respect to width, height, or entire bounds of the diagram.
 
 The [`region`](https://ej2.syncfusion.com/documentation/api/diagram/diagramRegions/) parameter defines the region that has to be drawn as an image.
 
@@ -647,7 +634,7 @@ diagram.fitToPage({
 
 ## Command manager
 
-Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some built-in commands. [`CommandManager`](https://ej2.syncfusion.com/documentation/api/diagram/commandManager/) provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
+Diagram provides support to map or bind command execution with desired combination of key gestures. Diagram provides some built-in commands. [`CommandManager`](https://ej2.syncfusion.com/documentation/api/diagram/commandManager/) provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
 
 ## Custom command
 
@@ -659,8 +646,6 @@ To define a custom command, specify the following properties:
 * [`name`](https://ej2.syncfusion.com/documentation/api/diagram/commandModel/#name): Defines the name of the command.
 
 To explore the properties of custom commands, refer to [`Commands`](https://ej2.syncfusion.com/documentation/api/diagram/command#commands).
-
-The following code example illustrates how to define a custom command.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -708,8 +693,6 @@ The following code example illustrates how to define a custom command.
 ## Modify the existing command
 
 When any one of the default commands is not desired, they can be disabled. To change the functionality of a specific command, the command can be completely modified.
-
-The following code example illustrates how to disable a command and how to modify the built-in commands.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

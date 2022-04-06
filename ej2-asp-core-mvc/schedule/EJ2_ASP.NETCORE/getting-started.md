@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Schedule Component
-description: Checkout and learn about getting started with ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Schedule Control
+description: Checkout and learn about getting started with ##Platform_Name## Schedule control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -11,11 +11,88 @@ documentation: ug
 
 # Getting Started
 
-This section briefly explains about how to include a simple [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) in your ASP.NET Core application. You can refer the [ASP.NET Core Getting Started documentation](../getting-started) page for introduction part of the system requirements and common component configurations.
+This section briefly explains about how to include [ASP.NET Core Schedule](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) control in your ASP.NET Core application using Visual Studio.
 
-## Initialize the Scheduler component
+## Prerequisites
 
-Scheduler component can be rendered by using the `ejs-schedule` tag helper in ASP.NET Core application. Add the below simple code to your `index.cshtml` page which is available within the `Views/Home` folder, to initialize the Scheduler.
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
+
+## Create ASP.NET Core web application with Razor pages
+
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
+
+* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
+
+## Install ASP.NET Core package in the application
+
+Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
+
+> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+
+## Add Syncfusion ASP.NET Core Tag Helper
+
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+
+{% tabs %}
+{% highlight c# tabtitle="~/_ViewImports.cshtml" %}
+
+@addTagHelper *, Syncfusion.EJ2
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add style sheet
+
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add script reference
+
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Register Syncfusion Script Manager
+
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<body>
+    ....
+    ....
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts></ejs-scripts>
+</body>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add ASP.NET Core Schedule control
+
+Now, add the Syncfusion ASP.NET Core Schedule tag helper in `~/Pages/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -23,8 +100,7 @@ Scheduler component can be rendered by using the `ejs-schedule` tag helper in AS
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/schedule/default/data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -36,88 +112,13 @@ Scheduler component can be rendered by using the `ejs-schedule` tag helper in AS
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Schedule control will be rendered in the default web browser.
 
-
-> Running the above code will display an empty Scheduler with system date and time on the browser like below.
-
-![empty scheduler](images/scheduler.png)
+![ASP.NET Core Schedule Control](images/scheduler.png)
 
 ## Populating appointments
 
 To populate an empty Scheduler with appointments, bind the event data to it by assigning the `dataSource` property under `e-schedule-eventsettings` tag Helper.
-
-* Create a new Class in controller page to define the data to be passed to the Scheduler as mentioned below,
-
-```c#
-public class AppointmentData
-{
-    public int Id { get; set; }
-    public string Subject { get; set; }
-    public DateTime StartTime { get; set; }
-    public DateTime EndTime { get; set; }
-}
-```
-
-* Now create an instance of the class and add the list of Scheduler data to it within the Index method in controller page, which will then be passed to the View page and bound to the Scheduler dataSource.
-
-* Call the GetScheduleData method to assign the datasource in Index method as shown below,
-
-```c#
-public ActionResult Index()
-{
-    ViewBag.appointments = GetScheduleData();
-    return View();
-}
-
-public List<AppointmentData> GetScheduleData()
-{
-    List<AppointmentData> appData = new List<AppointmentData>();
-    appData.Add(new AppointmentData
-    {
-        Id = 1,
-        Subject = "Explosion of Betelgeuse Star",
-        StartTime = new DateTime(2018, 2, 11, 9, 30, 0),
-        EndTime = new DateTime(2018, 2, 11, 11, 0, 0)
-    });
-    appData.Add(new AppointmentData
-    {
-        Id = 2,
-        Subject = "Thule Air Crash Report",
-        StartTime = new DateTime(2018, 2, 12, 12, 0, 0),
-        EndTime = new DateTime(2018, 2, 12, 14, 0, 0)
-    });
-    appData.Add(new AppointmentData
-    {
-        Id = 3,
-        Subject = "Blue Moon Eclipse",
-        StartTime = new DateTime(2018, 2, 13, 9, 30, 0),
-        EndTime = new DateTime(2018, 2, 13, 11, 0, 0)
-    });
-    appData.Add(new AppointmentData
-    {
-        Id = 4,
-        Subject = "Meteor Showers in 2018",
-        StartTime = new DateTime(2018, 2, 14, 13, 0, 0),
-        EndTime = new DateTime(2018, 2, 14, 14, 30, 0)
-    });
-    appData.Add(new AppointmentData
-    {
-        Id = 5,
-        Subject = "Milky Way as Melting pot",
-        StartTime = new DateTime(2018, 2, 15, 12, 0, 0),
-        EndTime = new DateTime(2018, 2, 15, 14, 0, 0)
-    });
-    return appData;
-}
-```
-
-* Add the Scheduler code in View page as shown below,
-
-```c#
-<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 2, 15)">
-    <e-schedule-eventsettings dataSource="@ViewBag.appointments"></e-schedule-eventsettings>
-</ejs-schedule>
-```
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -125,8 +126,14 @@ public List<AppointmentData> GetScheduleData()
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/schedule/getting-started/data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/getting-started/data/data.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class AppointmentData
+{
+    public int Id { get; set; }
+    public string Subject { get; set; }
+    public DateTime StartTime { get; set; }
+    public DateTime EndTime { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -142,11 +149,7 @@ public List<AppointmentData> GetScheduleData()
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![appointments](images/appointments.png)
+![ASP.NET Core Schedule with Appointments](images/appointments.png)
 
 ## Setting date
 
@@ -159,7 +162,13 @@ Scheduler usually displays the system date as its current date. To change the cu
 {% include code-snippet/schedule/getting-started/data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/getting-started/data/data.cs %}
+public class AppointmentData
+{
+    public int Id { get; set; }
+    public string Subject { get; set; }
+    public DateTime StartTime { get; set; }
+    public DateTime EndTime { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -174,8 +183,6 @@ Scheduler usually displays the system date as its current date. To change the cu
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Specific view
 
@@ -200,9 +207,6 @@ Scheduler displays `week` view by default. To change the current view, define th
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/schedule/views/specific-views/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/views/specific-views/data.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -217,21 +221,17 @@ Scheduler displays `week` view by default. To change the current view, define th
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core Schedule with Specific View](images/schedule-with-specific-view.png)
 
 ## Individual view customization
 
-Each individual scheduler views can be customized with its own options such as setting different start and end hour on Week and Work Week views, whereas hiding the weekend days on Month view alone.
-This can be achieved by defining views property to accept the array of object type, where each object depicts the individual view customization.
+Each individual scheduler views can be customized with its own options such as setting different start and end hour on Week and Work Week views, whereas hiding the weekend days on Month view alone. This can be achieved by defining views property to accept the array of object type, where each object depicts the individual view customization.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/schedule/views/individual-views/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/views/individual-views/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -247,6 +247,13 @@ This can be achieved by defining views property to accept the array of object ty
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Core Schedule with Custom Views](images/schedule-with-custom-views.png)
 
 > You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) that shows how to use the toolbar buttons to play with Scheduler functionalities.
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Schedule/ASP.NET%20Core%20Tag%20Helper%20Examples).
+
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

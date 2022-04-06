@@ -111,7 +111,7 @@ The fixed user handles are used to add some frequently used commands around the 
 
 ## Initialization an fixed user handles
 
-To create the fixed user handles, define and add them to the collection of nodes and connectors property. The following code example used to create an fixed user handles for the  nodes and connectors.
+To create the fixed user handles, define and add them to the collection of nodes and connectors property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -149,19 +149,17 @@ To create the fixed user handles, define and add them to the collection of nodes
 
 ### Size
 
-Diagram allows you set size for the fixed user handles by using the `width` and `height` property. The default value of the width and height property is 10.
+Diagram allows to set size for the fixed user handles by using the `width` and `height` property. The default value of the width and height property is 10.
 
 ### Style
 
 * You can change the style of the fixed user handles with the specific properties of borderColor, borderWidth, and background color using the handleStrokeColor, handleStrokeWidth, and fill properties, and the icon borderColor, and borderWidth using the iconStrokeColor and iconStrokeWidth.
 
-* The fixed user handle's `iconStrokeColor` and `iconStrokeWidth` property used to change the stroke color and stroke width of the given `pathData`.
+* The fixed user handle's `iconStrokeColor` and `iconStrokeWidth` property are used to change the stroke color and stroke width of the given `pathData`.
 
 * The fixed user handle `handleStrokeColor` and `fill` properties are used to define the background color and border color of the userhandle and the `handleStrokeWidth` property is used to define the border width of the fixed user handle.
 
 * The `visible` property of the fixed user handle enables or disables the visibility of fixed user handle.
-
-The following code explains how to customize the appearance of the fixed user handles.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -212,8 +210,6 @@ The following table shows all the possible alignments visually shows the fixed u
 | (0.5,1) | Top = 20 |![fixed user handle for node](images/bottomcenter.png)|
 | (1,1) | Left = 20 |![fixed user handle for node](images/bottomright.png)|
 
-The following code explains how to customize the node fixed user handle.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -240,7 +236,7 @@ The following code explains how to customize the node fixed user handle.
 
 * The connector fixed user handle can be aligned relative to the connector boundaries. It has alignment, displacement and offset settings. It is useful to position the connector fixed user handle and used together and gives you more control over the connector fixed user handle positioning.
 
-* The `offset` and `alignment` properties of fixed user handle allows you to align the connector fixed user handles to the segments.
+* The `offset` and `alignment` properties of fixed user handle allows to align the connector fixed user handles to the segments.
 
 ### Offset for the connector fixed user handle
 
@@ -272,8 +268,6 @@ The following table shows all the possible alignments visually shows the fixed u
 | y=10 | After |![fixed user handle for node](images/yafter.png)|
 
 > Displacement will not be done if the alignment is set to be center.
-
-The following code explains how to customize the connector fixed user handle.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -207,4 +207,4 @@ documenteditor.selection.rowFormat.allowRowBreakAcrossPages=false;
 
 ## See Also
 
-* [Table properties dialog](../../document-editor/dialog#table-properties-dialog)
+* [Table properties dialog](../document-editor/dialog#table-properties-dialog)

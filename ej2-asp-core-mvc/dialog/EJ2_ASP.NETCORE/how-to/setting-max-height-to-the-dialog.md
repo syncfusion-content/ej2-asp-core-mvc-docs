@@ -10,7 +10,7 @@ documentation: ug
 
 # Setting Maximum Height to the Dialog
 
-By default, the maxHeight for the Dialog is calculated based on the target. If the target is not specified externally, the Dialog consider the body as target and will calculate the maxHeight based on it. We have an option to set the maxHeight of the Dialog in the `beforeOpen` event.
+By default, the maxHeight for the Dialog is calculated based on the target. If the target is not specified externally, the Dialog consider the body as target and will calculate the maxHeight based on it. There is an option to set the maxHeight of the Dialog in the `beforeOpen` event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
