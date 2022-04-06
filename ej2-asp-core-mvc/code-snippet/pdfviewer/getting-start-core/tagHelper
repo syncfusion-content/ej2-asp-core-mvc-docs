@@ -1,1 +1,2 @@
-<ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer"></ejs-pdfviewer>
+<ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/Index" documentPath="Files/PDF_Succinctly.pdf">
+</ejs-pdfviewer>
