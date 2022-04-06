@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resize Document Editor in ##Platform_Name## Document Editor Component
-description: Learn here all about Resize Document Editor in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to resize Document Editor in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resize Document Editor
 publishingplatform: ##Platform_Name##
@@ -11,13 +11,11 @@ documentation: ug
 
 # How to change height and width of Document Editor component
 
-In this article, we are going to see how to change height and width of Documenteditor.
+This article explains how to change height and width of Document editor.
 
 ## Change height of Document Editor
 
-DocumentEditorContainer initially render with default height. You can change height of documenteditor using `height` property, the value which is in pixel.
-
-The following example code illustrates how to change height of Document Editor.
+DocumentEditorContainer initially renders with default height. You can change the height of document editor using `height` property, the value which is in pixel.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,9 +42,8 @@ Similarly, you can use `height` property for DocumentEditor also.
 
 ## Change width of Document Editor
 
-DocumentEditorContainer initially render with default width. You can change width of documenteditor using `width` property, the value which is in percent.
+DocumentEditorContainer initially renders with default width. You can change the width of document editor using `width` property, the value which is in percent.
 
-The following example code illustrates how to change width of Document Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -74,8 +71,6 @@ Similarly, you can use `width` property for DocumentEditor also.
 ## Resize Document Editor
 
 Using `resize` method, you change height and width of Document editor.
-
-The following example code illustrates how to fit Document Editor to browser window size.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

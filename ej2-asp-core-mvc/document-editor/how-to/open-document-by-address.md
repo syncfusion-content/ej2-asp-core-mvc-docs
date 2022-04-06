@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Document By Address in ##Platform_Name## Document Editor Component
-description: Learn here all about Open Document By Address in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about open document by address in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open Document By Address
 publishingplatform: ##Platform_Name##
@@ -13,7 +13,7 @@ documentation: ug
 
 ## How to open a document from URL in DocumentEditor
 
-In this article, we are going to see how to open a document from URL in DocumentEditor. Please refer below example for client-side code,
+This article explains how to open a document from URL in DocumentEditor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,7 +80,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 ```
 
-please refer below example for server-side code
 
 ```csharp
 
