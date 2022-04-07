@@ -11,15 +11,6 @@ namespace EJ2CoreSampleBrowser.Controllers.StockChart
         public IActionResult Default()
         {
             return View();
-        }
-        public class ChartData
-        {
-            public DateTime x;
-            public double high;
-            public double low;
-            public double close;
-            public double open;
-            public int volume;
-        }
+        }        
     }
 }
