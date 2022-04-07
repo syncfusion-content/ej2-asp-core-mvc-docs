@@ -11,7 +11,7 @@ documentation: ug
 
 # Form Fields
 
-DocumentEditorContainer component provide support for inserting Text, CheckBox, DropDown form fields through in-built toolbar.
+DocumentEditorContainer component provides support for inserting Text, CheckBox, DropDown form fields through in-built toolbar.
 
 ![Form Fields](images/toolbar-form-fields.png)
 
@@ -30,7 +30,7 @@ documentEditor.editor.insertFormField('Dropdown');
 
 ## Get form field names
 
-All the form fields names form current document can be retrieved using `getFormFieldNames()`.
+All the form fields names from current document can be retrieved using `getFormFieldNames()`.
 
 ```typescript
 var formFieldsNames = documentEditor.getFormFieldNames();
@@ -74,7 +74,7 @@ documentEditor.setFormFieldInfo('Drop1',dropdownfieldInfo);
 
 ## Export form field data
 
-Data of the all the Form fields in the document can be exported using `exportFormData`.
+Data of the all Form fields in the document can be exported using `exportFormData`.
 
 ```typescript
 var formFieldDate = documentEditor.exportFormData();
@@ -105,8 +105,6 @@ documentEditor.resetFormFields();
 Document Editor provides support for protecting the document with `FormFieldsOnly` protection. In this protection, user can only fill form fields in the document.
 
 Document editor provides an option to protect and unprotect document using [`enforceProtection`](../api/document-editor/editor/#enforceprotection) and [`stopProtection`](../api/document-editor/editor/#stopprotection) API.
-
-The following example code illustrates how to enforce and stop protection in Document editor container.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -24,8 +24,6 @@ Bullets are usually used for unordered lists. To apply bulleted list for selecte
 |Bullet|string|Bullet character.|
 |fontFamily|string|Bullet font family.|
 
-Refer to the following sample code.
-
 ```typescript
 documenteditor.editor.applyBullet('\uf0b7', 'Symbol');
 ```
@@ -41,23 +39,19 @@ Numbered lists are usually used for ordered lists. To apply numbered list for se
 |numberFormat|string|“%n” representations in ‘numberFormat’ parameter will be replaced by respective list level’s value.“%1)” will be displayed as “1)”|
 |listLevelPattern(optional)|string|Default value is 'Arabic'.|
 
-Refer to the following example.
-
 ```typescript
 documenteditor.editor.applyNumbering('%1)', 'UpRoman');
 ```
 
 ## Clear list
 
-You can also clear the list formatting applied for selected paragraphs. Refer to the following sample code.
+You can also clear the list formatting applied for selected paragraphs.
 
 ```typescript
 documenteditor.editor.clearList();
 ```
 
 ## Working with lists
-
-The following sample demonstrates how to create bullet and numbering lists in document editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -82,7 +76,7 @@ The following sample demonstrates how to create bullet and numbering lists in do
 
 ## Editing numbered list
 
-Document editor restarts the numbering or continue numbering for a numbered list. These options are found in the built-in context menu, if the list value is selected. Refer to the following screenshot.
+Document editor restarts the numbering or continue numbering for a numbered list. These options are found in the built-in context menu, if the list value is selected.
 
 ![Image](images/list.JPG)
 
