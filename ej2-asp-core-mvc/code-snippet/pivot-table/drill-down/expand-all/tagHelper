@@ -1,5 +1,5 @@
 <ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" ExpandAll="true">
         <e-rows>
             <e-field name="Country"></e-field>
             <e-field name="Products"></e-field>

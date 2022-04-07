@@ -1,10 +1,10 @@
 @Html.EJS().PivotView("PivotView").Height(300).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
  .Rows(rows =>
  {
-     rows.Name("Country").expandAll(true).Add(); rows.Name("Products").Add();
+     rows.Name("Country").ExpandAll(true).Add(); rows.Name("Products").Add();
  }).Columns(columns =>
  {
-     columns.Name("Year").Caption("Year").expandAll(true).Add(); columns.Name("Quarter").Add();
+     columns.Name("Year").Caption("Year").ExpandAll(true).Add(); columns.Name("Quarter").Add();
  }).Values(values =>
  {
      values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
