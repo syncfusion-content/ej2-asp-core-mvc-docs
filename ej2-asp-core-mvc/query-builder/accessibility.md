@@ -34,23 +34,23 @@ The web accessibility makes web content and web applications more accessible for
 <tr>
 <td>
 <kbd>Enter/Space</kbd></td><td>
-Click the item.</td></tr>
+Selects the focused item, and When it is in an open state the popup list closes.</td></tr>
 <tr>
 <td>
 <kbd>Tab</kbd></td><td>
-Navigate to the next item.</td></tr>
+Focuses on the next TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the component.</td></tr>
 <tr>
 <td>
 <kbd>Shift + Tab</kbd></td><td>
-Navigate to the previous item.</td></tr>
+Focuses on the previous TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the component.</td></tr>
 <tr>
 <td>
 <kbd>Up arrow</kbd></td><td>
-Select the previous options.</td></tr>
+Selects the item previous to the currently selected one.</td></tr>
 <tr>
 <td>
 <kbd>Down arrow</kbd></td><td>
-Select the next options.</td></tr>
+Selects the first item in the popup list when no item selected. Otherwise, selects the item next to the currently selected item.</td></tr>
 <tr>
 <td>
 <kbd>Home</kbd></td><td>
