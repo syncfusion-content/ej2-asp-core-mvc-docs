@@ -33,32 +33,36 @@ The web accessibility makes web content and web applications more accessible for
 <b>Actions</b></td></tr>
 <tr>
 <td>
-<kbd>Enter/Space</kbd></td><td>
-Selects the focused item, and When it is in an open state the popup list closes.</td></tr>
+<kbd>Enter</kbd></td><td>
+Select the focused item, and when it is in an open state the popup list closes.</td></tr>
+<tr>
+<td>
+<kbd>Space</kbd></td><td>
+Select the focused item.</td></tr>
 <tr>
 <td>
 <kbd>Tab</kbd></td><td>
-Focuses on the next TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the component.</td></tr>
+Focus on the next TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the component.</td></tr>
 <tr>
 <td>
 <kbd>Shift + Tab</kbd></td><td>
-Focuses on the previous TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the component.</td></tr>
+Focus on the previous TabIndex element on the page when the popup is closed. Otherwise, closes the popup list and remains the focus of the component.</td></tr>
 <tr>
 <td>
 <kbd>Up arrow</kbd></td><td>
-Selects the item previous to the currently selected one.</td></tr>
+Select the item previous to the currently selected one.</td></tr>
 <tr>
 <td>
 <kbd>Down arrow</kbd></td><td>
-Selects the first item in the popup list when no item selected. Otherwise, selects the item next to the currently selected item.</td></tr>
+Select the first item in the popup list when no item selected. Otherwise, select the item next to the currently selected item.</td></tr>
 <tr>
 <td>
 <kbd>Home</kbd></td><td>
-Select the first options.</td></tr>
+Select the first item in the popup list.</td></tr>
 <tr>
 <td>
 <kbd>End</kbd></td><td>
-Select the last options.</td></tr>
+Select the last item in the popup list.</td></tr>
 </table>
 
 {% if page.publishingplatform == "aspnet-core" %}
