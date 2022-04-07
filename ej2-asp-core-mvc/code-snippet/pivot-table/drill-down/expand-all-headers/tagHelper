@@ -1,11 +1,11 @@
 <ejs-pivotview id="PivotView" height="300">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-rows>
-            <e-field name="Country" ExpandAll="true"></e-field>
+            <e-field name="Country" expandAll="true"></e-field>
             <e-field name="Products"></e-field>
         </e-rows>
         <e-columns>
-            <e-field name="Year" caption="Year" ExpandAll="true"></e-field>
+            <e-field name="Year" caption="Year" expandAll="true"></e-field>
             <e-field name="Quarter"></e-field>
         </e-columns>
         <e-values>
