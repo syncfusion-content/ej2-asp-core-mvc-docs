@@ -94,16 +94,127 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 
 Now, add the Syncfusion ASP.NET Core FileManager tag helper in `~/Pages/Index.cshtml` page.
 
-In this sample demonstrates the File Manager with default view.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/getting-started/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/getting-started/HomeController_core.cs %}
+{% highlight c# tabtitle="HomeController.cs" %}
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using WebApplication4.Models;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Features;
+using Newtonsoft.Json;
+using Syncfusion.EJ2.FileManager.Base;
+using Syncfusion.EJ2.FileManager.PhysicalFileProvider;
+
+namespace WebApplication4.Controllers
+{
+    public class HomeController : Controller
+    {
+        public PhysicalFileProvider operation;
+        public string basePath;
+        string root = "wwwroot\\Files";
+
+        public HomeController(IHostingEnvironment hostingEnvironment)
+        {
+            this.basePath = hostingEnvironment.ContentRootPath;
+            this.operation = new PhysicalFileProvider();
+            this.operation.RootFolder(this.basePath + "\\" + this.root);
+        }
+
+        public object FileOperations([FromBody] FileManagerDirectoryContent args)
+        {
+            var fullPath = (this.basePath + "\\" + this.root + args.Path).Replace("/", "\\");
+            if (args.Action == "delete" || args.Action == "rename")
+            {
+                if ((args.TargetPath == null) && (args.Path == ""))
+                {
+                    FileManagerResponse response = new FileManagerResponse();
+                    response.Error = new ErrorDetails { Code = "401", Message = "Restricted to modify the root folder." };
+                    return this.operation.ToCamelCase(response);
+                }
+            }
+            switch (args.Action)
+            {
+                case "read":
+                    // reads the file(s) or folder(s) from the given path.
+                    return this.operation.ToCamelCase(this.operation.GetFiles(args.Path, args.ShowHiddenItems));
+                case "delete":
+                    // deletes the selected file(s) or folder(s) from the given path.
+                    return this.operation.ToCamelCase(this.operation.Delete(args.Path, args.Names));
+                case "copy":
+                    // copies the selected file(s) or folder(s) from a path and then pastes them into a given target path.
+                    return this.operation.ToCamelCase(this.operation.Copy(args.Path, args.TargetPath, args.Names, args.RenameFiles, args.TargetData));
+                case "move":
+                    // cuts the selected file(s) or folder(s) from a path and then pastes them into a given target path.
+                    return this.operation.ToCamelCase(this.operation.Move(args.Path, args.TargetPath, args.Names, args.RenameFiles, args.TargetData));
+                case "details":
+                    // gets the details of the selected file(s) or folder(s).
+                    return this.operation.ToCamelCase(this.operation.Details(args.Path, args.Names, args.Data));
+                case "create":
+                    // creates a new folder in a given path.
+                    return this.operation.ToCamelCase(this.operation.Create(args.Path, args.Name));
+                case "search":
+                    // gets the list of file(s) or folder(s) from a given path based on the searched key string.
+                    return this.operation.ToCamelCase(this.operation.Search(args.Path, args.SearchString, args.ShowHiddenItems, args.CaseSensitive));
+                case "rename":
+                    // renames a file or folder.
+                    return this.operation.ToCamelCase(this.operation.Rename(args.Path, args.Name, args.NewName));
+            }
+            return null;
+        }
+
+        // uploads the file(s) into a specified path
+        public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action)
+        {
+            FileManagerResponse uploadResponse;
+            uploadResponse = operation.Upload(path, uploadFiles, action, null);
+            if (uploadResponse.Error != null)
+            {
+                Response.Clear();
+                Response.ContentType = "application/json; charset=utf-8";
+                Response.StatusCode = Convert.ToInt32(uploadResponse.Error.Code);
+                Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = uploadResponse.Error.Message;
+            }
+            return Content("");
+        }
+
+        // downloads the selected file(s) and folder(s)
+        public IActionResult Download(string downloadInput)
+        {
+            FileManagerDirectoryContent args = JsonConvert.DeserializeObject<FileManagerDirectoryContent>(downloadInput);
+            return operation.Download(args.Path, args.Names, args.Data);
+        }
+
+        // gets the image(s) from the given path
+        public IActionResult GetImage(FileManagerDirectoryContent args)
+        {
+            return this.operation.GetImage(args.Path, args.Id, false, null, null);
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -119,11 +230,7 @@ In this sample demonstrates the File Manager with default view.
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![FileManager getting started](./images/getting-started.PNG)
+![FileManager getting started](images/getting-started.PNG)
 
 > The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for file manager service.
 
@@ -137,8 +244,7 @@ To perform the download operation, initialize the `DownloadUrl` property in a [`
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/file-download-url/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="File-download-url.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -162,8 +268,7 @@ To perform the upload operation, initialize the `UploadUrl` property in a [`Ajax
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/file-upload-url/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="File-upload-url.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -187,9 +292,6 @@ To perform the image preview support in the File Manager component, need to init
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/image-preview/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/image-preview/HomeController_core.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -203,10 +305,6 @@ To perform the image preview support in the File Manager component, need to init
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![File Manager Sample](images/getimage.png)
 
@@ -222,9 +320,6 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/overview/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/overview/HomeController_core.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -238,10 +333,6 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![FileManager overview](./images/overview.PNG)
 
@@ -257,9 +348,6 @@ The initial view of the File Manager can be changed to details or largeicons vie
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/view/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/view/HomeController_core.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -273,10 +361,6 @@ The initial view of the File Manager can be changed to details or largeicons vie
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![FileManager switching view ](./images/overview.PNG)
 
@@ -295,9 +379,6 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/persistence/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/persistence/HomeController_core.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -312,11 +393,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![FileManager enable persistence ](./images/enable_persistence.PNG)
+![FileManager enable persistence](images/enable_persistence.PNG)
 
 > The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
 
@@ -329,9 +406,6 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/rtl/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/rtl/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -347,11 +421,7 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![FileManager enablertl ](./images/enable_rtl.PNG)
+![Right to Left Support in ASP.NET Core FileManager](./images/enable_rtl.PNG)
 
 ## Specifying the current path of the File Manager
 
@@ -364,9 +434,6 @@ The following code snippet demonstrates specifying the current path in File Mana
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/path/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/path/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -382,8 +449,9 @@ The following code snippet demonstrates specifying the current path in File Mana
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core FileManager with Specific Path](images/path.png)
 
+## See also
 
-Output be like the below.
-
-![FileManager enablertl ](./images/path.png)
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

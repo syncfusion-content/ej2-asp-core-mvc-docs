@@ -284,9 +284,7 @@ The final output will be displayed as follows
 {% endtabs %}
 {% endif %}
 
-
-
-> You can refer to our [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Rich Text Editor example](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/DefaultFunctionalities#/material) that shows how to render the rich text editor tools.
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started
 
-This section briefly explains about how to include `ASP.NET Core Carousel` control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core Carousel](https://www.syncfusion.com/aspnet-core-ui-controls/carousel) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
