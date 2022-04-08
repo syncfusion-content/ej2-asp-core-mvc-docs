@@ -189,7 +189,7 @@ To change the legend icon shape, you can use [`legendShape`](https://help.syncf
 
 
 
-**Legend Size**
+### Legend Size
 
 By default, legend takes 20% - 25% of the chart's height horizontally, when it is placed on top or bottom position and 20% - 25% of the chart's width vertically, when placed on left or right position of the chart. You can change this default legend size by using the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_Height) property of the `legendSettings`.
 
@@ -218,7 +218,7 @@ By default, legend takes 20% - 25% of the chart's height horizontally, when it i
 
 
 
-**Legend Item Size**
+### Legend Item Size
 
 You can customize the size of the legend items by using the [`shapeHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ShapeHeight) and [`shapeWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ShapeWidth) property.
 
@@ -247,7 +247,7 @@ You can customize the size of the legend items by using the [`shapeHeight`](http
 
 
 
-**Paging for Legend**
+### Paging for Legend
 
 Paging will be enabled by default, when the legend items exceeds the legend bounds. You can view each legend items by navigating between the pages using navigation buttons.
 
@@ -274,9 +274,9 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 {% endtabs %}
 {% endif %}
 
-**Legend Text Wrap**
+### Legend Text Wrap
 
-When the legend text exceed the container, the text can be wrapped by using the **textWrap** property. End user can also wrap the legend text based on the **maximumLabelWidth** property
+When the legend text exceed the container, the text can be wrapped by using the [`textWrap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_TextWrap) property. End user can also wrap the legend text based on the [`maximumLabelWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_MaximumLabelWidth) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
