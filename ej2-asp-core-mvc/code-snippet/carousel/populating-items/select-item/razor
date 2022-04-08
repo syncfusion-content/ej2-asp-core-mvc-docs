@@ -1,0 +1,64 @@
+@using Syncfusion.EJ2.Charts;
+@using Syncfusion.EJ2.Navigations;
+
+<div>
+    Content Template
+</div>
+@(Html.EJS().Accordion("defaultAccordion")
+    .ContentTemplate(
+        @<div class="e-accordion-container">
+            <div>
+                <div>
+                    <div> Chart </div>
+                </div>
+                <div>
+                    <div>
+                        @(Html.EJS().Chart("container")
+                            .Series(series => {
+                                series.Type(ChartSeriesType.Line).Width(2).XName("xValue").Marker(mr=>mr.Visible(true).Width(10).Height(10)).YName("yValue").DataSource(ViewBag.dataSource).Name("Germany").Add();
+                                series.Type(ChartSeriesType.Line).Width(2).XName("xValue").YName("yValue1").Marker(mr => mr.Visible(true).Width(10).Height(10)).DataSource(ViewBag.dataSource).Name("England").Add();
+                            })
+                            .Title("Inflation - Consumer Price")
+                            .Render()
+                        )
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div> Grid </div>
+                </div>
+                <div>
+                    <div>
+                        @(Html.EJS().Grid("ej2grid")
+                            .Height("400px")
+                            .DataSource(dataManger => {
+                                dataManger.Url("https://services.odata.org/V4/Northwind/Northwind.svc/Products").CrossDomain(true).Adaptor("ODataV4Adaptor");
+                            })
+                            .Columns(col => {
+                                col.Field("ProductID").HeaderText("Product ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+                                col.Field("ProductName").HeaderText("Product Name").Width("150").Add();
+                                col.Field("UnitPrice").HeaderText("Supplier ID").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+                                col.Field("UnitsInStock").HeaderText("QuantityPerUnit").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+                                col.Field("Discontinued").HeaderText("Discontinued").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Type("boolean").DisplayAsCheckBox(true).Add();
+                            })
+                            .AllowPaging()
+                            .Render()
+                        )
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div> Calendar </div>
+                </div>
+                <div>
+                    <div>
+                        @Html.EJS().Calendar("calnder").Render()
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+    .Render()
+)

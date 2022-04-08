@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2.Navigations;
+
+@(Html.EJS().Accordion("defaultAccordion")
+    .Clicked("clicked")
+    .Expanding("beforeExpand")
+    .Items(new List<AccordionAccordionItem> {
+        new AccordionAccordionItem { Header = "ASP.NET", Expanded = true, Content = "Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services." },
+        new AccordionAccordionItem { Header = "ASP.NET MVC", Content = "The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller." },
+        new AccordionAccordionItem { Header = "JavaScript", Content = "JavaScript (JS) is an interpreted computer programming language.It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed." }
+    })
+    .Render()
+)
+
+<script type="text/javascript">
+    var clickEle;
+    function clicked(e) {
+        clickEle = e.originalEvent.target.closest('.e-acrdn-header');
+    }
+    function beforeExpand(e) {
+        var expandCount = this.element.querySelectorAll('.e-selected').length;
+        var ele = this.element.querySelectorAll('.e-selected')[0];
+        var tglIcon = ele;
+        if (ele) {
+            ele = ele.firstChild;
+            tglIcon = ele.querySelector('.e-tgl-collapse-icon');
+        }
+        if (expandCount === 1 && (ele === clickEle || tglIcon === clickEle)) {
+            e.cancel = true;
+        }
+    }
+</script>
