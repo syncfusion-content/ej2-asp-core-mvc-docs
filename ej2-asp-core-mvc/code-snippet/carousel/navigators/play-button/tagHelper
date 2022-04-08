@@ -2,13 +2,13 @@
 
 <div class="container">
     <div class="control-container">
-        <ejs-carousel id="carousel">
+        <ejs-carousel id="carousel" showPlayButton="true">
             <e-carousel-items>
-                <e-carousel-item template='<div class="fs-5">Slide 1</div>' interval="3000"></e-carousel-item>
-                <e-carousel-item template='<div class="fs-5">Slide 2</div>' interval="1000"></e-carousel-item>
-                <e-carousel-item template='<div class="fs-5">Slide 3</div>' interval="2000"></e-carousel-item>
-                <e-carousel-item template='<div class="fs-5">Slide 4</div>' interval="5000"></e-carousel-item>
-                <e-carousel-item template='<div class="fs-5">Slide 5</div>' interval="6000"></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 1</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 2</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 3</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 4</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 5</div>'></e-carousel-item>
             </e-carousel-items>
         </ejs-carousel>
     </div>

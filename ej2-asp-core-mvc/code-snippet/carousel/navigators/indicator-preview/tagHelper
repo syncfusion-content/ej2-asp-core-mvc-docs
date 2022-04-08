@@ -1,6 +1,12 @@
+@using Syncfusion.EJ2.Navigations;
+@using Syncfusion.EJ2.Buttons;
+
+<ejs-button id="prev" cssClass="e-info" content="Prev"></ejs-button>
+<ejs-button id="next" cssClass="e-info" content="Next"></ejs-button>
+
 <div class="container">
     <div class="control-container">
-        <ejs-carousel id="carousel" showPlayButton="true" playButtonTemplate='<div id="play"></div>'>
+        <ejs-carousel id="defaultCarousel">
             <e-carousel-items>
                 <e-carousel-item template='<div class="fs-5">Slide 1</div>'></e-carousel-item>
                 <e-carousel-item template='<div class="fs-5">Slide 2</div>'></e-carousel-item>
@@ -11,22 +17,15 @@
         </ejs-carousel>
     </div>
 </div>
-
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
+<script>
+    document.getElementById('prev').onclick = function () {
         var carouselObj = document.querySelector(".e-carousel").ej2_instances[0];
-        var button = new ej.buttons.Button({ cssClass: 'e-info', content: "Pause" });
-        button.appendTo('#play');
-        button.element.onclick = () => {
-            if (carouselObj.autoPlay) {
-                button.content = "Play";
-                carouselObj.autoPlay = false;
-            } else {
-                button.content = "Pause";
-                carouselObj.autoPlay = true;
-            }
-        };
-    });
+        carouselObj.prev();
+    }
+    document.getElementById('next').onclick = function () {
+        var carouselObj = document.querySelector(".e-carousel").ej2_instances[0];
+        carouselObj.next();
+    }
 </script>
 <style>
     .control-container {

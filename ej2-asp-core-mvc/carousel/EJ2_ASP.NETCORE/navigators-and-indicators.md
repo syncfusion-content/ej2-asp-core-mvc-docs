@@ -24,82 +24,82 @@ In navigators, the previous and next slide transition buttons are used to perfor
 
 The following example depicts the code to show/hide the navigators in the carousel.
 
-{% tab template= "carousel/default", sourceFiles="app.ts,index.html,styles.css",
- es5Template="button-visibility-template", isDefaultActive=true %}
+{% if page.publishingplatform == "aspnet-core" %}
 
-```typescript
-import { Carousel } from '@syncfusion/ej2-navigations';
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/visible/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/visible/visible.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-const carouselObj: Carousel = new Carousel({
-    items: [
-        { template: '<div class="fs-5">Slide 1</div>' },
-        { template: '<div class="fs-5">Slide 2</div>' },
-        { template: '<div class="fs-5">Slide 3</div>' },
-        { template: '<div class="fs-5">Slide 4</div>' },
-        { template: '<div class="fs-5">Slide 5</div>' }
-    ],
-    buttonsVisibility: 'Visible'
-});
-carouselObj.appendTo('#carousel');
-```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% endtab %}
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/visible/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/visible/visible.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Show previous and next button on hover
 
 In the carousel, we can able to show the previous and next buttons only on mouse hover using the `buttonsVisibility` property. The following example depicts the code to show the navigators on mouse hover in the carousel.
 
-{% tab template= "carousel/default", sourceFiles="app.ts,index.html,styles.css", es5Template="hover-template", isDefaultActive=true %}
+{% if page.publishingplatform == "aspnet-core" %}
 
-```typescript
-import { Carousel } from '@syncfusion/ej2-navigations';
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/visible-hover/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/visible-hover/select-item-method.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-const carouselObj: Carousel = new Carousel({
-    items: [
-        { template: '<div class="fs-5">Slide 1</div>' },
-        { template: '<div class="fs-5">Slide 2</div>' },
-        { template: '<div class="fs-5">Slide 3</div>' },
-        { template: '<div class="fs-5">Slide 4</div>' },
-        { template: '<div class="fs-5">Slide 5</div>' }
-    ],
-    buttonsVisibility: 'VisibleOnHover'
-});
-carouselObj.appendTo('#carousel');
-```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% endtab %}
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/visible-hover/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/visible-hover/visible-hover.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Previous and next button Template
 
 We had provided template options to customize the previous button using `previousButtonTemplate` and the next button using `nextButtonTemplate`. The following example depicts the code for applying the template to previous and next buttons in the carousel.
 
-{% tab template= "carousel/default", sourceFiles="app.ts,index.html,styles.css", es5Template="navigator-template", isDefaultActive=true %}
+{% if page.publishingplatform == "aspnet-core" %}
 
-```typescript
-import { Carousel } from '@syncfusion/ej2-navigations';
-import { Button } from '@syncfusion/ej2-buttons';
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/button-template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/button-template/button-template.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-const carouselObj: Carousel = new Carousel({
-    items: [
-        { template: '<div class="fs-5">Slide 1</div>' },
-        { template: '<div class="fs-5">Slide 2</div>' },
-        { template: '<div class="fs-5">Slide 3</div>' },
-        { template: '<div class="fs-5">Slide 4</div>' },
-        { template: '<div class="fs-5">Slide 5</div>' }
-    ],
-    previousButtonTemplate: '<button id="previous"></button>',
-    nextButtonTemplate: '<button id="next"></button>',
-});
-carouselObj.appendTo('#carousel');
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-const prevBtn: Button = new Button({ cssClass: 'e-flat e-round', iconCss: 'e-icons e-chevron-left-double' });
-prevBtn.appendTo('#previous');
-
-const nextBtn: Button = new Button({ cssClass: 'e-flat e-round', iconCss: 'e-icons e-chevron-right-double' });
-nextBtn.appendTo('#next');
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/button-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/button-template/button-template.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Indicators
 
@@ -107,81 +107,82 @@ nextBtn.appendTo('#next');
 
 In indicators, the total slides and current slide state has been depicted. We had provided options to show/hide the indicators using the `showIndicators` property. The following example depicts the code to show/hide the indicators in the carousel.
 
-{% tab template= "carousel/default", sourceFiles="app.ts,index.html,styles.css", es5Template="indicator-template", isDefaultActive=true %}
+{% if page.publishingplatform == "aspnet-core" %}
 
-```typescript
-import { Carousel } from '@syncfusion/ej2-navigations';
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/show-indicators/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/show-indicators/show-indicators.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-const carouselObj: Carousel = new Carousel({
-    items: [
-        { template: '<div class="fs-5">Slide 1</div>' },
-        { template: '<div class="fs-5">Slide 2</div>' },
-        { template: '<div class="fs-5">Slide 3</div>' },
-        { template: '<div class="fs-5">Slide 4</div>' },
-        { template: '<div class="fs-5">Slide 5</div>' }
-    ],
-    showIndicators: true
-});
-carouselObj.appendTo('#carousel');
-```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% endtab %}
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/show-indicators/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/show-indicators/show-indicators.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Indicators Template
 
 We had provided template options to customize the indicators by using the `indicatorTemplate` property. The following example depicts the code for applying a template to indicators in the carousel.
 
-{% tab template= "carousel/indicator", sourceFiles="app.ts,index.html,styles.css", es5Template="indicator-template", isDefaultActive=true %}
+{% if page.publishingplatform == "aspnet-core" %}
 
-```typescript
-import { Carousel } from '@syncfusion/ej2-navigations';
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/indicator-template/indicator-template.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-const carouselObj: Carousel = new Carousel({
-    items: [
-        { template: '<div class="fs-5">Slide 1</div>' },
-        { template: '<div class="fs-5">Slide 2</div>' },
-        { template: '<div class="fs-5">Slide 3</div>' },
-        { template: '<div class="fs-5">Slide 4</div>' },
-        { template: '<div class="fs-5">Slide 5</div>' }
-    ],
-    indicatorsTemplate: '#indicatorTemplate'
-});
-carouselObj.appendTo('#carousel');
-```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% endtab %}
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/indicator-template/indicator-template.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Showing preview of slide in indicator
 
 We can able to customize the indicators by showing the preview image of each slide using the `indicatorTemplate` property. The following example depicts the code for showing the preview image using a template for indicators in the carousel.
 
-{% tab template= "carousel/indicator-preview", sourceFiles="app.ts,index.html,styles.css", es5Template="indicator-template", isDefaultActive=true %}
+{% if page.publishingplatform == "aspnet-core" %}
 
-```typescript
-import { Carousel } from '@syncfusion/ej2-navigations';
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-preview/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/indicator-preview/indicator-preview.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-(window as TemplateFunction).getContent = (index: number) => {
-    const slides: string[] = ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5'];
-    return slides[index];
-};
-interface TemplateFunction extends Window {
-    getContent?: Function;
-}
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-const carouselObj: Carousel = new Carousel({
-    items: [
-        { template: '<div class="fs-5">Slide 1</div>' },
-        { template: '<div class="fs-5">Slide 2</div>' },
-        { template: '<div class="fs-5">Slide 3</div>' },
-        { template: '<div class="fs-5">Slide 4</div>' },
-        { template: '<div class="fs-5">Slide 5</div>' }
-    ],
-    indicatorsTemplate: '#indicatorTemplate'
-});
-carouselObj.appendTo('#carousel');
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/indicator-preview/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/indicator-preview/indicator-preview.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Play button
 
@@ -189,60 +190,52 @@ carouselObj.appendTo('#carousel');
 
 In the carousel, `autoplay` actions have been controlled by using the `showPlayButton` property in the user interface. When we enable this property, the slide transitions have been controlled using this play and pause button. This property depends on the `buttonVisibility` property. The following example depicts the code to show the play button in the carousel.
 
-{% tab template= "carousel/default", sourceFiles="app.ts,index.html,styles.css", es5Template="play-template", isDefaultActive=true %}
+{% if page.publishingplatform == "aspnet-core" %}
 
-```typescript
-import { Carousel } from '@syncfusion/ej2-navigations';
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/play-button/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/play-button/play-button.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-const carouselObj: Carousel = new Carousel({
-    items: [
-        { template: '<div class="fs-5">Slide 1</div>' },
-        { template: '<div class="fs-5">Slide 2</div>' },
-        { template: '<div class="fs-5">Slide 3</div>' },
-        { template: '<div class="fs-5">Slide 4</div>' },
-        { template: '<div class="fs-5">Slide 5</div>' }
-    ],
-    showPlayButton: true
-});
-carouselObj.appendTo('#carousel');
-```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% endtab %}
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/play-button/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/play-button/play-button.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Play button template
 
 We had provided template options to customize the play button by using the `playButtonTemplate` property. The following example depicts the code for applying a template to play Button in the carousel.
 
-{% tab template= "carousel/play-button", sourceFiles="app.ts,index.html,styles.css", es5Template="play-button-template", isDefaultActive=true %}
+{% if page.publishingplatform == "aspnet-core" %}
 
-```typescript
-import { Carousel } from '@syncfusion/ej2-navigations';
-import { Button } from '@syncfusion/ej2-buttons';
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/play-button-template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/play-button-template/play-button-template.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-const carouselObj: Carousel = new Carousel({
-    items: [
-        { template: '<div class="fs-5">Slide 1</div>' },
-        { template: '<div class="fs-5">Slide 2</div>' },
-        { template: '<div class="fs-5">Slide 3</div>' },
-        { template: '<div class="fs-5">Slide 4</div>' },
-        { template: '<div class="fs-5">Slide 5</div>' }
-    ],
-    showPlayButton: true,
-    playButtonTemplate: '<div id="play"></div>'
-});
-carouselObj.appendTo('#carousel');
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-const button: Button = new Button({ cssClass: 'e-info', content: "Pause" });
-button.appendTo('#play');
-button.element.onclick = (): void => {
-    if (carouselObj.autoPlay) {
-        button.content = "Play";
-        carouselObj.autoPlay = false;
-    } else {
-        button.content = "Pause";
-        carouselObj.autoPlay = true;
-    }
-};
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/navigators/play-button-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/navigators/play-button-template/play-button-template.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
