@@ -1,0 +1,39 @@
+<div class='wrap'>
+    <div id="input">
+        <input type="text" id="text" placeholder="Enter the URL of the background Image">
+        <ejs-button id="btn" cssClass="e-primary" content="Set Background Image"></ejs-button>
+    </div>
+    <div id="signature-control">
+        <ejs-signature id="signature"></ejs-signature>
+    </div>
+</div>
+
+<script>
+    document.getElementById("btn").addEventListener('click', function () {
+        var signature = document.getElementById("signature").ej2_instances[0];
+        var bgImage = document.getElementById("text").value;
+        signature.backgroundImage = bgImage;
+    });
+</script>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    #signature {
+        border: 1px solid lightgray;
+        height: 100%;
+        width: 100%;
+    }
+
+    #input {
+        margin-bottom: 30px;
+    }
+
+    #text {
+        height: 30px;
+        width: 300px;
+    }
+</style>

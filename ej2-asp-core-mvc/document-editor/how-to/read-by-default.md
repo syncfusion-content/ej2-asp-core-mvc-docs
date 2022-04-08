@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Read By Default in ##Platform_Name## Document Editor Component
-description: Learn here all about Read By Default in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about read by default in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Read By Default
 publishingplatform: ##Platform_Name##
@@ -11,13 +11,11 @@ documentation: ug
 
 # How to open a document in read only mode by default in Document Editor
 
-In this article, we are going to see how to open a document in read only mode by default in Document Editor & Document  Editor Container.
+This article explains how to open a document in read only mode by default in Document Editor & Document Editor Container.
 
 ## Opening a document in read only mode by default in Document Editor
 
-Using `isReadOnly` property in Document editor allows us to enable/disable read only mode in the document editor.
-
-The following example illustrates how to open the document in read-only mode by default.
+Using `isReadOnly` property in Document editor allows to enable or disable read only mode in the document editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,9 +40,7 @@ The following example illustrates how to open the document in read-only mode by 
 
 ## Opening a document in ready only mode by default in Document Editor Container
 
-Using `restrictEditing` property in Document editor container allows us to enable/disable read only mode in the document editor.
-
-The following example illustrates how to open the document in read only mode by default.
+Using `restrictEditing` property in Document editor container allows to enable or disable read only mode in the document editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
