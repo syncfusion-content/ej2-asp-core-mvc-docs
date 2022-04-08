@@ -78,64 +78,77 @@ Syncfusion ASP.NET MVC Themes are available in the CDN. Make sure that the versi
 
 In the ASP.NET MVC application, the application theme can be changed dynamically by changing its style sheet reference in code.
 
-1.Modify the **~/Views/Shared/_Layout.cshtml** page with the below code to implement a theme change dynamically using the dropdown by its id value in javascript function in the application.
+1.Add id in the Syncfusion style sheet references in **~/Views/Shared/_Layout.cshtml** page like below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-@model IndexModel
-<!DOCTYPE html>
-<html lang="en">
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
     <link id="cssfile" rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
 </head>
-<body>
-<header>
-    ...
-    <div>
-        <ejs-dropdownlist id="theme" dataSource="@Model.Themes" index="1" change="onThemeChange" placeholder="Themes" floatLabelType="Always">
-        <e-dropdownlist-fields text="Text" value="ID"></e-dropdownlist-fields>
-        </ejs-dropdownlist>
-    </div>
-</header>
+
+{% endhighlight %}
+{% endtabs %}
+
+2.Use the following code for dropdown data on the **~/Models/ThemeDetails.cs** model page.
+
+{% tabs %}
+{% highlight c# tabtitle="~/ThemeDetails.cs" %}
+
+using System.Collections.Generic;
+
+namespace ThemeSwitch.Models
+{
+    public class ThemeDetail
+    {
+        public string ID { get; set; }
+        public string Text { get; set; }
+
+        public List<ThemeDetail> ThemeDetails()
+        {
+            List<ThemeDetail> themes = new List<ThemeDetail>();
+            themes.Add(new ThemeDetail() { ID = "material", Text = "Material" });
+            themes.Add(new ThemeDetail() { ID = "bootstrap", Text = "Bootstrap" });
+            themes.Add(new ThemeDetail() { ID = "fabric", Text = "Fabric" });
+            themes.Add(new ThemeDetail() { ID = "bootstrap4", Text = "Bootstrap 4" });
+            themes.Add(new ThemeDetail() { ID = "tailwind", Text = "TailWind" });
+            themes.Add(new ThemeDetail() { ID = "tailwind-dark", Text = "TailWind Dark" });
+            themes.Add(new ThemeDetail() { ID = "material-dark", Text = "Material Dark" });
+            themes.Add(new ThemeDetail() { ID = "bootstrap-dark", Text = "Bootstrap Dark" });
+            themes.Add(new ThemeDetail() { ID = "fabric-dark", Text = "Fabric Dark" });
+            themes.Add(new ThemeDetail() { ID = "highcontrast", Text = "High Contrast" });
+            return themes;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+3.Implement a theme change dynamically using the dropdown by its id value in javascript function in the application as in the below code.
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+@using Syncfusion.EJ2.DropDowns;
+@using ThemeSwitch.Models;
+
+<div>
+    @Html.EJS().DropDownList("theme").Placeholder("Select a theme").PopupHeight("220px").Index(2).Width("20%").DataSource(
+    (IEnumerable<ThemeDetail>)ViewBag.data).Change("onThemeChange").Fields(new DropDownListFieldSettings { Text = "Text", Value = "ID" }).Render()
+</div>
 
 <script type="text/javascript">
     function onThemeChange(e) {
         document.getElementsByTagName('body')[0].style.display = 'none';
         var themeName = e.value;
         let synclink = document.getElementById('cssfile');
-        synclink.href = 'https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/' + themeName + '.css';
-        setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 200);
+        synclink.href = 'https://cdn.syncfusion.com/ej2/20.1.47/' + themeName + '.css';
+        setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 500);
     }
 </script>
-{% endhighlight %}
-{% endtabs %}
-
-2.Add the following code for dropdown data on the **~/Views/Home/Index.cshtml.cs** model page.
-
-{% tabs %}
-{% highlight c# tabtitle="~/Index.cshtml.cs" %}
-
-public List<ThemeDetails> Themes = new List<ThemeDetails>() {
-    new ThemeDetails(){ ID = "material", Text = "Material" },
-    new ThemeDetails(){ ID = "bootstrap", Text = "Bootstrap" },
-    new ThemeDetails(){ ID = "fabric", Text = "Fabric" },
-    new ThemeDetails(){ ID = "bootstrap4", Text = "Bootstrap 4" },
-    new ThemeDetails(){ ID = "tailwind", Text = "TailWind"},
-    new ThemeDetails(){ ID = "tailwind-dark", Text = "TailWind Dark" },
-    new ThemeDetails(){ ID = "material-dark", Text = "Material Dark" },
-    new ThemeDetails(){ ID = "bootstrap-dark", Text = "Bootstrap Dark" },
-    new ThemeDetails(){ ID = "fabric-dark", Text = "Fabric Dark" },
-    new ThemeDetails(){ ID = "highcontrast", Text = "High Contrast" }
-};
-
-public class ThemeDetails
-{
-    public string ID { get; set; }
-    public string Text { get; set; }
-}
 
 {% endhighlight %}
 {% endtabs %}

@@ -154,6 +154,53 @@ You can customize color and size by overriding the `e-icons` class. The followin
 
 ![Icon Customization](./images/icons/custom-icon.png)
 
+## Third party icons integration
+
+The Syncfusion ASP.NET MVC Toolbar control supports to render custom font icons using the [prefixIcon](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html#Syncfusion_EJ2_Navigations_ToolbarItem_PrefixIcon) property. To render custom font icons define the required font CSS that provides the required font name, font size, and content for the icon.
+
+The following code explains how to render `open-iconic` icons using `prefixIcon` property.
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+@using Syncfusion.EJ2.Navigations;
+
+@Html.EJS().Toolbar("defaultToolbar").Width("600px").Items(new List<ToolbarItem> {
+    new ToolbarItem { PrefixIcon = "oi oi-list-rich" },
+    new ToolbarItem { PrefixIcon = "oi oi-account-login" },
+    new ToolbarItem { PrefixIcon = "oi oi-account-logout" },
+    new ToolbarItem { PrefixIcon = "oi oi-action-redo" },
+    new ToolbarItem { PrefixIcon = "oi oi-action-undo" },
+    new ToolbarItem { PrefixIcon = "oi oi-clock" },
+    new ToolbarItem { PrefixIcon = "oi oi-audio" },
+    new ToolbarItem { PrefixIcon = "oi oi-bluetooth" }
+}).Render()
+
+{% endhighlight %}
+{% endtabs %}
+
+![Load custom icon in Icon](./images/icons/icon-css.png)
+
+## HTML attribute support
+
+You can add the additional HTML attributes to the Syncfusion ASP.NET MVC Button using [HtmlAttributes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_HtmlAttributes) property. All syncfusion ASP.NET MVC controls support HTML attribute.
+
+The following example shows the font size customization using `HtmlAttributes` directive.
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+@{IDictionary<string, object> customAttribute = new Dictionary<string, object>()
+    {
+       { "style", "font-size: 20px" }
+    };
+}
+
+@Html.EJS().Button("button").IconCss("e-icons e-copy").HtmlAttributes(customAttribute).Render()
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Using icons directly in HTML element
 
 The built-in Syncfusion icons can be rendered directly in the HTML element by defining `e-icons` class that contains the font-family and common property of font icons, and defining the [available icon's](#icons-list) class with `e-` prefix. 
