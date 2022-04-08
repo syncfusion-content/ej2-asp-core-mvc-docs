@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paragraph Format in ##Platform_Name## Document Editor Component
-description: Learn here all about Paragraph Format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about paragraph format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Paragraph Format
 publishingplatform: ##Platform_Name##
@@ -24,7 +24,7 @@ documenteditor.selection.paragraphFormat.rightIndent= 24;
 
 ## Special indentation
 
-You can define special indent for first line of the paragraph using the following sample code.
+You can define special indent for the first line of the paragraph using the following sample code.
 
 ```typescript
 documenteditor.selection.paragraphFormat.firstLineIndent= 24;
@@ -95,8 +95,6 @@ You can enable or disable the following pagination properties for the paragraphs
 * Keep with next - whether the specified paragraph remains on the same page as the paragraph that follows it while paginating the document.
 * Keep lines together - whether all lines in the specified paragraphs remain on the same page while paginating the document.
 
-The following example code illustrates how to enable or disable these pagination properties for the selected paragraphs.
-
 ```typescript
 documenteditor.selection.paragraphFormat.widowControl = false;
 documenteditor.selection.paragraphFormat.keepWithNext = true;
@@ -104,8 +102,6 @@ documenteditor.selection.paragraphFormat.keepLinesTogether = true;
 ```
 
 ## Toolbar with paragraph formatting options
-
-The following sample demonstrates the paragraph formatting options using a toolbar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
