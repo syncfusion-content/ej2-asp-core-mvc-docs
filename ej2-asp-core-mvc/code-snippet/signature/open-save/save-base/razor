@@ -1,0 +1,34 @@
+<div class='wrap'>
+    <h4>Sign here</h4>
+    <div id="signature-control">
+        @Html.EJS().Signature("signature").Render()
+    </div>
+    @Html.EJS().Button("btn").Content("Save as Base64").IsPrimary(true).Render()
+    @Html.EJS().Dialog("dialog").Width("80%").Header("Base64 of the signature").Visible(false).ShowCloseIcon(true).Render()
+</div>
+
+<script>
+    document.getElementById("btn").addEventListener('click', function () {
+        var signature = document.getElementById("signature").ej2_instances[0];
+        var dialogObj = ej.base.getInstance(document.getElementById("dialog"), ej.popups.Dialog);
+        dialogObj.content = signature.getSignature();
+        dialogObj.show();
+    });
+</script>
+
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    #signature {
+        border: 1px solid lightgray;
+        height: 100%;
+        width: 100%;
+    }
+
+    #btn {
+        margin-top: 30px;
+    }
+</style>
