@@ -153,8 +153,6 @@ The following properties are available to customize the container in the Maps.
 {% endtabs %}
 {% endif %}
 
-
-
 ![Customizing Maps container](./images/Customization/mapcontainer.PNG)
 
 ## Customizing Maps area
@@ -183,8 +181,6 @@ By default, the background color of the shape maps is set as **white**. To modif
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Customizing Maps area](./images/Customization/map-area.PNG)
 
@@ -221,8 +217,6 @@ The following properties are available in `MapsShapeSettings` class to customize
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Customizing the shapes](./images/Customization/shape-customization.PNG)
 

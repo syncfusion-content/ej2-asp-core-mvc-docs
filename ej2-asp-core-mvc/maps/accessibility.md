@@ -37,3 +37,20 @@ Maps provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/a
 </table>
 
 To change this default description, use the `Description` property available in `MapsCommonTitleSettings`, `MapsTitleSettings`, `MapsSubTitleSettings` and `Maps`. It helps the screen reader to read for an assistive purpose.
+
+## KeyBoard Navigation
+
+All the Maps actions can be controlled via keyboard keys. The applicable key combinations and their relative functionalities are listed below for the appropriate UI features available in the component.
+
+Interaction Keys |Description
+-----|-----
+<kbd>Tab</kbd> |Moves to the next focusable element on the map, such as the legend or shape.
+<kbd>Shift</kbd> + <kbd>Tab</kbd> |Moves to the previous focusable element on the map, such as the legend or shape.
+<kbd> + </kbd> |When zooming is enabled, zoom in operation can be performed.
+<kbd> - </kbd> |When zooming is enabled, zoom out operation can be performed.
+<kbd>Left arrow</kbd> |When zoomed in, the map can be scrolled to the left.
+<kbd>Right arrow</kbd> |When zoomed in, the map can be scrolled to the right.
+<kbd>Up arrow</kbd> |When zoomed in, the map can be scrolled upward.
+<kbd>Down arrow</kbd> |When zoomed in, the map can be scrolled downward.
+<kbd> R </kbd> |When zooming is enabled, reset operation can be performed.
+<kbd>Enter</kbd> |The page can be navigated to the next and previous states in legend. Similarly, the selection can be made while navigating over the shape.
