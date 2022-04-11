@@ -108,7 +108,7 @@ The following example shows how to export document as text document (.txt).
 
 ## Export as blob
 
-Document editor also supports API to store the document into a blob. Refer to the following sample to export document into blob in client-side.
+Document editor also supports API to store the document into a blob.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -131,7 +131,7 @@ Document editor also supports API to store the document into a blob. Refer to th
 
 
 
-For instance, to export the document as Rich Text Format file, implement an ASP.NET MVC web API controller using DocIO library by passing the DOCX blob. Refer to the following code example.
+For instance, to export the document as Rich Text Format file, implement an ASP.NET MVC web API controller using DocIO library by passing the DOCX blob.
 
 ```csharp
 //API controller for the conversion.
@@ -151,7 +151,7 @@ public HttpResponseMessage ExportAsRtf()
 
 ```
 
-In client-side, you can consume this web service and save the document as Rich Text Format (.rtf) file. Refer to the following example.
+In client-side, you can consume this web service and save the document as Rich Text Format (.rtf) file.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

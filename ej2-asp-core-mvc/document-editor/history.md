@@ -1,7 +1,7 @@
 ---
 layout: post
 title: History in ##Platform_Name## Document Editor Component
-description: Learn here all about History in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about history in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: History
 publishingplatform: ##Platform_Name##
@@ -15,7 +15,7 @@ Document editor tracks the history of all editing actions done in the document, 
 
 ## Enable or disable history
 
-Inject the `EditorHistory` module in your application to provide history preservation functionality for `DocumentEditor`. Refer to the following code example.
+Inject the `EditorHistory` module in your application to provide history preservation functionality for `DocumentEditor`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,7 +38,7 @@ Inject the `EditorHistory` module in your application to provide history preserv
 
 
 
-You can enable or disable history preservation for a document editor instance any time using the `enableEditorHistory` property. Refer to the following sample code.
+You can enable or disable history preservation for a document editor instance any time using the `enableEditorHistory` property.
 
 ```typescript
 editor.enableEditorHistory = false;
@@ -60,7 +60,7 @@ editor.editorHistory.redo();
 
 ## Stack size
 
-History of editing actions will be maintained in stack, so that the last item will be reverted first. By default, document editor limits the size of undo and redo stacks to 500 each respectively. However, you can customize this limit. Refer to the following sample code.
+History of editing actions will be maintained in stack, so that the last item will be reverted first. By default, document editor limits the size of undo and redo stacks to 500 each respectively. However, you can customize this limit.
 
 ```typescript
 editor.editorHistory.undoLimit = 400;

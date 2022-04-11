@@ -15,7 +15,7 @@ Document editor supports hyperlink field. You can link a part of the document co
 
 ## Navigate a hyperlink
 
-Document editor triggers ‘requestNavigate’ event whenever user clicks Ctrl key or tap a hyperlink within the document. This event provides necessary details about link type, navigation URL, and local URL (if any) as arguments, and allows you to easily customize the hyperlink navigation functionality. Refer to the following example.
+Document editor triggers ‘requestNavigate’ event whenever user clicks Ctrl key or tap a hyperlink within the document. This event provides necessary details about link type, navigation URL, and local URL (if any) as arguments, and allows to easily customize the hyperlink navigation functionality.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ Document editor triggers ‘requestNavigate’ event whenever user clicks Ctrl k
 
 
 
-If the selection is in hyperlink, trigger this event by calling ‘navigateHyperlink’ method of ‘Selection’ instance. Refer to the following example.
+If the selection is in hyperlink, trigger this event by calling ‘navigateHyperlink’ method of ‘Selection’ instance.
 
 ```typescript
 documenteditor.selection.navigateHyperlink();
@@ -50,7 +50,7 @@ documenteditor.selection.navigateHyperlink();
 
 ## Copy link
 
-Document editor copies link text of a hyperlink field to the clipboard if the selection is in hyperlink. Refer to the following example.
+Document editor copies link text of a hyperlink field to the clipboard if the selection is in hyperlink.
 
 ```typescript
 documenteditor .selection.copyHyperlink();
@@ -65,8 +65,6 @@ To create a basic hyperlink in the document, press `ENTER` / `SPACEBAR` / `SHIFT
 > `file:///`<br>
 > `www.`<br>
 > `mailto:`<br>
-
-Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -105,7 +103,7 @@ Screen tip text can be modified through UI by using the [Hyperlink dialog](../do
 
 ## Remove hyperlink
 
-To remove link from hyperlink in the document, press Backspace key at the end of a hyperlink. By removing the link, it will be converted as plain text. You can use ‘removeHyperlink’ method of ‘Editor’ instance if the selection is in hyperlink. Refer to the following example.
+To remove link from hyperlink in the document, press Backspace key at the end of a hyperlink. By removing the link, it will be converted as plain text. You can use ‘removeHyperlink’ method of ‘Editor’ instance if the selection is in hyperlink.
 
 ```typescript
 documenteditor.editor.removeHyperlink();
@@ -113,7 +111,7 @@ documenteditor.editor.removeHyperlink();
 
 ## Hyperlink dialog
 
-Document editor provides dialog support to insert or edit a hyperlink. Refer to the following example.
+Document editor provides dialog support to insert or edit a hyperlink.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
