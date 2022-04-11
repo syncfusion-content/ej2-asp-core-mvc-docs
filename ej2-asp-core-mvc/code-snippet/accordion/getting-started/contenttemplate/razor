@@ -1,5 +1,6 @@
 @using Syncfusion.EJ2.Charts;
 @using Syncfusion.EJ2.Navigations;
+@model List<Accordion.Controllers.LineChartData>
 
 <div>
     Content Template
@@ -15,8 +16,8 @@
                     <div>
                         @(Html.EJS().Chart("container")
                             .Series(series => {
-                                series.Type(ChartSeriesType.Line).Width(2).XName("xValue").Marker(mr=>mr.Visible(true).Width(10).Height(10)).YName("yValue").DataSource(ViewBag.dataSource).Name("Germany").Add();
-                                series.Type(ChartSeriesType.Line).Width(2).XName("xValue").YName("yValue1").Marker(mr => mr.Visible(true).Width(10).Height(10)).DataSource(ViewBag.dataSource).Name("England").Add();
+                                series.Type(ChartSeriesType.Line).Width(2).XName("xValue").Marker(mr=>mr.Visible(true).Width(10).Height(10)).YName("yValue").DataSource(Model).Name("Germany").Add();
+                                series.Type(ChartSeriesType.Line).Width(2).XName("xValue").YName("yValue1").Marker(mr => mr.Visible(true).Width(10).Height(10)).DataSource(Model).Name("England").Add();
                             })
                             .Title("Inflation - Consumer Price")
                             .Render()
