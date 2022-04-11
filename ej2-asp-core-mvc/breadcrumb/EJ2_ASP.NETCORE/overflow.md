@@ -34,10 +34,10 @@ Collapsed mode shows the first and last Breadcrumb items and hides the remaining
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/tagHelper %}
+{% include code-snippet/breadcrumb/overflow/collapsed/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
+{% include code-snippet/breadcrumb/overflow/collapsed/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -45,10 +45,10 @@ Collapsed mode shows the first and last Breadcrumb items and hides the remaining
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/razor %}
+{% include code-snippet/breadcrumb/overflow/collapsed/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
+{% include code-snippet/breadcrumb/overflow/collapsed/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -57,7 +57,7 @@ Collapsed mode shows the first and last Breadcrumb items and hides the remaining
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/mvc%20-%20overflow.png)
+![Breadcrumb Sample](./../images/breadcrumb-collapsed.png)
 
 ## Menu
 
@@ -67,10 +67,10 @@ Menu mode shows the number of Breadcrumb items that can be accommodated within t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/tagHelper %}
+{% include code-snippet/breadcrumb/overflow/menu/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
+{% include code-snippet/breadcrumb/overflow/menu/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -78,10 +78,10 @@ Menu mode shows the number of Breadcrumb items that can be accommodated within t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/razor %}
+{% include code-snippet/breadcrumb/overflow/menu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
+{% include code-snippet/breadcrumb/overflow/menu/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -90,7 +90,7 @@ Menu mode shows the number of Breadcrumb items that can be accommodated within t
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/mvc%20-%20overflow.png)
+![Breadcrumb Sample](./../images/breadcrumb-menu.png)
 
 ## Wrap
 
@@ -100,10 +100,10 @@ Wrap mode wraps the items to multiple lines when the Breadcrumb’s width exceed
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/tagHelper %}
+{% include code-snippet/breadcrumb/overflow/wrap/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
+{% include code-snippet/breadcrumb/overflow/wrap/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -111,10 +111,10 @@ Wrap mode wraps the items to multiple lines when the Breadcrumb’s width exceed
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/razor %}
+{% include code-snippet/breadcrumb/overflow/wrap/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
+{% include code-snippet/breadcrumb/overflow/wrap/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -123,7 +123,7 @@ Wrap mode wraps the items to multiple lines when the Breadcrumb’s width exceed
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/mvc%20-%20overflow.png)
+![Breadcrumb Sample](./../images/breadcrumb-wrap.png)
 
 ## Scroll
 
@@ -133,10 +133,10 @@ Scroll mode shows an HTML scroll bar when the Breadcrumb’s width exceeds the c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/tagHelper %}
+{% include code-snippet/breadcrumb/overflow/scroll/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
+{% include code-snippet/breadcrumb/overflow/scroll/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -144,10 +144,10 @@ Scroll mode shows an HTML scroll bar when the Breadcrumb’s width exceeds the c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/razor %}
+{% include code-snippet/breadcrumb/overflow/scroll/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
+{% include code-snippet/breadcrumb/overflow/scroll/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -156,7 +156,7 @@ Scroll mode shows an HTML scroll bar when the Breadcrumb’s width exceeds the c
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/mvc%20-%20overflow.png)
+![Breadcrumb Sample](./../images/breadcrumb-scroll.png)
 
 ## Hidden
 
@@ -166,10 +166,10 @@ Hidden mode shows the maximum number of items possible in the container space an
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/tagHelper %}
+{% include code-snippet/breadcrumb/overflow/hidden/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
+{% include code-snippet/breadcrumb/overflow/hidden/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -177,10 +177,10 @@ Hidden mode shows the maximum number of items possible in the container space an
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/razor %}
+{% include code-snippet/breadcrumb/overflow/hidden/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
+{% include code-snippet/breadcrumb/overflow/hidden/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -189,7 +189,7 @@ Hidden mode shows the maximum number of items possible in the container space an
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/mvc%20-%20overflow.png)
+![Breadcrumb Sample](./../images/breadcrumb-hidden.png)
 
 ## None
 
@@ -222,4 +222,4 @@ None mode shows all the items on a single line.
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/mvc%20-%20overflow.png)
+![Breadcrumb Sample](./../images/overflow.PNG)
