@@ -78,3 +78,36 @@ In the  following example, the separators are customized with icons using `separ
 Output be like the below.
 
 ![Breadcrumb Sample](./images/separator-temp.PNG)
+
+## Customize Specific Item Template
+
+The specific breadcrumb item can be customizable using itemTemplate with conditional rendering. In the following example, added the span element only for the `breadcrumb` text in breadcrumb item.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/breadcrumb/specific-item-template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/breadcrumb/specific-item-template/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/breadcrumb/specific-item-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/breadcrumb/specific-item-template/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+Output be like the below.
+
+![Breadcrumb Sample](./../images/mvc%20-%20templates.png)
