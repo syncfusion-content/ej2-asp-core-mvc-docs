@@ -5,11 +5,11 @@
     var shapesettings = new Syncfusion.EJ2.Maps.MapsShapeSettings
     {
         Autofill = true,
-        Palette = new string[] { "#33CCFF", "#FF0000", "#800000", "#FFFF00", "#808000" },
+        Palette = new string[] { "#C7DE6C", "#59A076", "#88D0BC", "#FEA78C", "#FFC557" },
         Border = new Syncfusion.EJ2.Maps.MapsBorder
         {
-            Width = 2,
-            Color = "green",
+            Width = 3,
+            Color = "#FEE1DD",
             Opacity = 1
         },
         DashArray = "1",
