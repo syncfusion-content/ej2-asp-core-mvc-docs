@@ -1,4 +1,12 @@
-<ejs-dropdownbutton id="disabled" content="Message" items="ViewBag.items" iconCss="ddb-icons e-message" disabled=true></ejs-dropdownbutton>
+<ejs-dropdownbutton id="disabled" content="Message" items="ViewBag.items" iconCss="ddb-icons e-message"></ejs-dropdownbutton>
+<ejs-button id="onDisable"  content="Disable"></ejs-button>
+
+<script>
+    document.getElementById('onDisable').onclick = function () {
+        var dropdownObj = ej.base.getInstance(document.getElementById('disabled'), ej.splitbuttons.DropDownButton);
+        dropdownObj.disabled = true;
+    }
+</script>
 
 <style>
 
