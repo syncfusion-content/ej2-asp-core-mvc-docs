@@ -38,7 +38,7 @@ Maps provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/a
 
 To change this default description, use the `Description` property available in `MapsCommonTitleSettings`, `MapsTitleSettings`, `MapsSubTitleSettings` and `Maps`. It helps the screen reader to read for an assistive purpose.
 
-## KeyBoard Navigation
+## Keyboard Navigation
 
 All the Maps actions can be controlled via keyboard keys. The applicable key combinations and their relative functionalities are listed below for the appropriate UI features available in the component.
 
