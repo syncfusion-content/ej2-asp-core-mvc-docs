@@ -4,10 +4,10 @@
 	</e-stockchart-series-collection>
 </ejs-stockchart>
 
+<script src="~/chart/financial-data.js"></script>
 <script>
-var data = chartData;
-function stockload(args) {
-args.stockChart.series[0].dataSource = data;
-
-}
+	var data = chartData;
+	function stockload(args) {
+		args.stockChart.series[0].dataSource = data;
+	}
 </script>

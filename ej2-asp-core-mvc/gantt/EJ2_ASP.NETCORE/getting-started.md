@@ -484,7 +484,7 @@ public class GanttResources
 
 ![ASP.NET Core Gantt with Resources](./images/gantt-resources.png)
 
-> You can refer to our [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Gantt Chart example](https://ej2.syncfusion.com/aspnetcore/Gantt/Default#/material) that shows how to render the Gantt Chart in ASP.NET Core.
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Gantt/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
