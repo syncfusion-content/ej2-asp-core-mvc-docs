@@ -138,4 +138,4 @@ Since the JSON contains DateTime data, set the [`valueType`](https://help.syncfu
 
 ![ASP.NET Core Stock Chart with Data](images/stockchart.png)
 
-> You can refer to our [ASP.NET Core Stock Chart](https://www.syncfusion.com/aspnet-core-ui-controls/stock-chart) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Stock Chart example](https://ej2.syncfusion.com/aspnetcore/StockChart/Default#/material) that shows you how to present and manipulate data.
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/StockChart/ASP.NET%20Core%20Tag%20Helper%20Examples).

@@ -1,13 +1,32 @@
-<div class=" control-section">
-    <div class="sample-container">
+<div class="control-section">
+    <div class="sample-container" style="padding:10px">        
         <!--  Filemanager element declaration -->
-        <ejs-filemanager id="file">
+        <ejs-filemanager id="file" created="created">
             <e-filemanager-ajaxsettings url="/Home/FileOperations">
             </e-filemanager-ajaxsettings>
             <e-filemanager-contextmenusettings visible="false"></e-filemanager-contextmenusettings>
             <e-filemanager-navigationpanesettings visible="false"></e-filemanager-navigationpanesettings>
             <e-filemanager-toolbarsettings visible="false"></e-filemanager-toolbarsettings>
         </ejs-filemanager>
-        <!-- end of filemanager element -->
     </div>
+
+    <script>
+        function created() {
+            var filemanager = document.getElementById("file").ej2_instances[0];
+            filemanager.uploadObj.dropArea = null;
+        }
+        document.getElementById("element").addEventListener('click', function () {
+            var filemanager = document.getElementById("file").ej2_instances[0];
+            var files = filemanager.getSelectedFiles();
+            for (var i = 0; i < files.length; i++) {
+                var path = files[i].filterPath + files[i].name;
+                console.log(path);
+            }
+        });
+    </script>
+    <style>
+        .e-empty-inner-content {
+            display: none;
+        }
+    </style>
 </div>
