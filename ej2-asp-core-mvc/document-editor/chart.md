@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart in ##Platform_Name## Document Editor Component
-description: Learn here all about Chart in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about chart in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chart
 publishingplatform: ##Platform_Name##
@@ -12,8 +12,6 @@ documentation: ug
 # Chart
 
 Document Editor provides chart preservation support. Using Document Editor, you can see the chart reports from your Word document.
-
-The following example shows chart preservation in Document Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

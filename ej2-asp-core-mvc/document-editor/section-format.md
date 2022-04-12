@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Section Format in ##Platform_Name## Document Editor Component
-description: Learn here all about Section Format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about section format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Section Format
 publishingplatform: ##Platform_Name##
@@ -26,7 +26,7 @@ You can change the orientation of the page by swapping the values of page width 
 
 ## Page margins
 
-Left and right page margin defines the gap between the document content from left and right side of the page respectively. Top and bottom page margins defines the gap between the document content from header and footer of the page respectively. Refer to the following sample code.
+Left and right page margin defines the gap between the document content from left and right side of the page respectively. Top and bottom page margins defines the gap between the document content from header and footer of the page respectively.
 
 ```typescript
 documenteditor.selection.sectionFormat.leftMargin = 10;

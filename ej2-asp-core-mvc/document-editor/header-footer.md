@@ -15,7 +15,7 @@ Document editor supports headers and footers in its document. Each section in th
 
 * First page: Used only on the first page of the section.
 * Even pages: Used on all even numbered pages in the section.
-* Default: Used on all pages of the section, where first or even pages are not applicable or not specified.
+* Default: Used on all pages of the section, where the first or even pages are not applicable or not specified.
 
 You can define this by setting format properties of the corresponding section using the following sample code.
 
@@ -28,7 +28,7 @@ documenteditor.selection.sectionFormat.differentOddAndEvenPages= true;
 
 ## Go to header footer region
 
-Double click in header or footer region to move the selection into it. You can also do this by using the following code.
+Double click in header or footer region to move the selection into it.
 
 ```typescript
 documenteditor.selection.goToHeader();
@@ -40,13 +40,13 @@ documenteditor.selection.goToFooter();
 
 ## Header and footer distance
 
-You can define the distance of header region content from the top of the page. Refer to the following sample code.
+You can define the distance of header region content from the top of the page.
 
 ```typescript
 documenteditor.selection.sectionFormat.headerDistance= 36;
 ```
 
-Same way, you can define the distance of footer region content from the bottom of the page. Refer to the following sample code.
+Same way, you can define the distance of footer region content from the bottom of the page.
 
 ```typescript
 documenteditor.selection.sectionFormat.footerDistace=36;
@@ -54,7 +54,7 @@ documenteditor.selection.sectionFormat.footerDistace=36;
 
 ## Close header footer region
 
-Move the selection to the document body from header or footer region by double clicking or tapping the document area. You can also perform this by using the following sample code.
+Move the selection to the document body from header or footer region by double clicking or tapping the document area.
 
 ```typescript
 documenteditor.selection.closeHeaderFooter()

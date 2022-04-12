@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style And Appearance in ##Platform_Name## Drop Down Button Component
-description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
+description: Learn here all about style and appearance in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##

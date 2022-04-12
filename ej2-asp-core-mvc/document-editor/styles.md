@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles in ##Platform_Name## Document Editor Component
-description: Learn here all about Styles in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about styles in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Styles
 publishingplatform: ##Platform_Name##
@@ -73,8 +73,6 @@ New Styles are defined and added to the style collection of the document. In thi
 
 ### Defining a character style
 
-The following example shows how to programmatically create a character style.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -97,8 +95,6 @@ The following example shows how to programmatically create a character style.
 
 
 ### Defining a paragraph style
-
-The following example shows how to programmatically create a paragraph style.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -123,8 +119,6 @@ The following example shows how to programmatically create a paragraph style.
 
 ### Defining a linked style
 
-The following example shows how to programmatically create linked style.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -148,9 +142,9 @@ The following example shows how to programmatically create linked style.
 
 ### Applying a style
 
-The styles are applied using the **applyStyle** method of **editorModule**, the parameter should be passed is the **Name** of the Style.
+The styles are applied using the **applyStyle** method of **editorModule**, the parameter should be passed in the **Name** of the Style.
 
-The styles of the **Character** type is applied to the currently selected part of the document. If there is no selection, the values that will be applied to the word at caret position. The styles of **Paragraph** type follow the same logic and are applied to all paragraphs in the selection or the current paragraph.
+The styles of the **Character** type is applied to the currently selected part of the document. If there is no selection, the values will be applied to the word at caret position. The styles of **Paragraph** type follows the same logic and are applied to all paragraphs in the selection or the current paragraph.
 
 When there is no selection, styles of **Linked** type will change the values of the paragraph, and apply both the Paragraph and Character properties. When there is selection, Linked Style changes only the character properties of the selected text.
 

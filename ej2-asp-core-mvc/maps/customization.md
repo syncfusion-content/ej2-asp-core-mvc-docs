@@ -153,8 +153,6 @@ The following properties are available to customize the container in the Maps.
 {% endtabs %}
 {% endif %}
 
-
-
 ![Customizing Maps container](./images/Customization/mapcontainer.PNG)
 
 ## Customizing Maps area
@@ -184,15 +182,13 @@ By default, the background color of the shape maps is set as **white**. To modif
 {% endtabs %}
 {% endif %}
 
-
-
 ![Customizing Maps area](./images/Customization/map-area.PNG)
 
 ## Customizing the shapes
 
-The following properties are available in `MapsShapeSettings` class to customize the shapes of the Maps component.
+The following properties are available in `MapsShapeSettings` class to customize the shapes of the Maps.
 
-* `Fill` - To apply the color to the shapes.
+* `Fill` - To apply the fill color to the all the shapes.
 * `Autofill` - To apply the palette colors to the shapes if it is set as true.
 * `Palette` - To set the custom palette for the shapes.
 * `DashArray` - To define the pattern of dashes and gaps that is applied to the outline of the shapes.
@@ -222,8 +218,6 @@ The following properties are available in `MapsShapeSettings` class to customize
 {% endtabs %}
 {% endif %}
 
-
-
 ![Customizing the shapes](./images/Customization/shape-customization.PNG)
 
 ## Setting color to the shapes from the data source
@@ -252,8 +246,6 @@ The color for each shape in the Maps can be set using the `ColorValuePath` prope
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Setting color to the shapes from the data source](./images/Customization/shape-color.PNG)
 
