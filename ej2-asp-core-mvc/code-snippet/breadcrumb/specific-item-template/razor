@@ -1,0 +1,71 @@
+@Html.EJS().Breadcrumb("specific-item-template").CssClass("e-specific-item-template").ItemTemplate("#specificItemTemplate").Items(item =>
+{
+    item.Text("Home").Url("https://ej2.syncfusion.com/home/aspnetmvc.html").Add();
+    item.Text("Components").Url("https://ej2.syncfusion.com/aspnetmvc/Grid/GridOverview").Add();
+    item.Text("Navigations").Url("https://ej2.syncfusion.com/aspnetmvc/Menu/DefaultFunctionalities").Add();
+    item.Text("Breadcrumb").Url("./DefaultFunctionalities").Add();
+}).Render()
+<script id="specificItemTemplate" type="text/x-template">
+    <div>
+        ${if(text=="Breadcrumb")}
+        <span class="e-searchfor-text">
+            <span style="margin-right: 5px">Search for:</span>
+            <a class="e-breadcrumb-text" href="${url}" onclick="return false">${text}</a>
+        </span>
+        ${else}
+        <a class="e-breadcrumb-text" href="${url}" onclick="return false">${text}</a>
+        ${/if}
+    </div>
+</script>
+<script>
+    function beforeItemRenderHandler(args) {
+        if (args.item.text !== 'Program Files') {
+            args.item.disabled = true;
+        }
+    }
+</script>
+
+@section Scripts {
+    <script>
+        document.getElementById("reset").addEventListener('click', function () {
+            var breadcrumb, breadcrumbInst, breadcrumbs = document.querySelector('.content-wrapper').getElementsByClassName("e-breadcrumb");
+            for (var i = 0; i < breadcrumbs.length; i++) {
+                breadcrumb = breadcrumbs[i];
+                breadcrumbInst = ej.base.getComponent(breadcrumb, 'breadcrumb');
+                breadcrumbInst.activeItem = breadcrumbInst.items[breadcrumbInst.items.length - 1].text;
+            }
+        });
+    </script>
+<style>
+     .e-searchfor-text {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    
+    .e-searchfor-text .e-breadcrumb-text {
+        padding-left: 0;
+    }
+
+    .e-bigger .e-searchfor-text {
+        font-size: 16px
+    }
+
+    .fabric .e-searchfor-text,
+    .fabric-dark .e-searchfor-text,
+    .highcontrast .e-searchfor-text {
+        font-size: 18px;
+    }
+
+    .e-bigger.fabric .e-searchfor-text,
+    .e-bigger.fabric-dark .e-searchfor-text,
+    .e-bigger.highcontrast .e-searchfor-text {
+        font-size: 21px;
+    }
+
+    .e-specific-item-template .e-breadcrumb-item:last-child a:hover {
+        text-decoration: underline;
+    }
+</style>
+}

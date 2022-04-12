@@ -14,7 +14,7 @@ This section provides information about reference scripts from CDN and Custom re
 
 ## CDN Reference
 
-Syncfusion hosts every ASP.NET Core control as a separate node package in CDN, from which scripts and style sheets of the individual package can be loaded. It also hosts a single node package with all ASP.NET Core controls on it, from which scripts and style sheets of all controls can be loaded as single script and style file.
+Syncfusion hosts every ASP.NET Core control as a separate node package in CDN, from which scripts and style sheets of the individual package can be loaded. Syncfusion also hosts a single node package with all ASP.NET Core controls on it, from which scripts and style sheets of all controls can be loaded as single script and style file.
 
 Here, the Syncfusion ASP.NET Core CDN URL for the both Individual ASP.NET Core control package and Complete ASP.NET Core controls package has been explained.
 
