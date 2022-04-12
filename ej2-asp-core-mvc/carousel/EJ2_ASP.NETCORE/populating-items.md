@@ -26,7 +26,7 @@ Using Items binding rendering, we can assign templates for each item separately 
 {% include code-snippet/carousel/populating-items/carousel-item/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/carousel-item//carousel-item.cs %}
+{% include code-snippet/carousel/populating-items/carousel-item/carousel-item.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -53,7 +53,7 @@ Using Data binding rendering, we can assign a common template only for all items
 {% include code-snippet/carousel/populating-items/item-datasource/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/default/data.cs %}
+{% include code-snippet/carousel/populating-items/item-datasource/item-datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,7 +61,7 @@ Using Data binding rendering, we can assign a common template only for all items
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/carousel/default/razor %}
+{% include code-snippet/carousel/populating-items/item-datasource/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/carousel/populating-items/item-datasource/item-datasource.cs %}

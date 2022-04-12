@@ -1,44 +1,51 @@
-<div id="element"></div>
-<div id="acrdnContnet1" style="display:none">
-    <ul style="margin : 0px;padding:0px 16px; list-style-type: none">
-        <li>Testing</li>
-        <li>Development</li>
-    </ul>
-</div>
-<div id="acrdnContnet2" style="display:none">
-    <ul style="margin : 0px;padding:0px 16px; list-style-type: none">
-        <li>Mobile</li>
-        <li>Web</li>
-    </ul>
-</div>
+<div class="container">
+    <div class="control-container">
+            @(Html.EJS().Carousel("defaultCarousel")
+            .ShowPlayButton(true)
+            .PlayButtonTemplate('<div id="play"></div>')
+            .Items(new List<CarouselItem> {
+                    new CarouselItem { Template = '<div class="fs-5">Slide 1</div>'  },
+                    new CarouselItem { Template = '<div class="fs-5">Slide 2</div>' },
+                    new CarouselItem { Template = '<div class="fs-5">Slide 3</div>' },
+                    new CarouselItem { Template = '<div class="fs-5">Slide 4</div>'  },
+                    new CarouselItem { Template = '<div class="fs-5">Slide 5</div>'  }
+                })
+                .Render()
+            )
+        </div>
+    </div>
 
-<script>
-    var ajax = new ej.base.Ajax('../Scripts/accordion/ajax.html', 'GET', true);
-    ajax.send().then();
-    ajax.onSuccess = function (data) {
-        var ctn2 = data;
-        //Initialize Accordion component
-        var accordion = new ej.navigations.Accordion({
-            items: [
-                { header: 'Department', content: '#acrdnContnet1' },
-                { header: 'Platform', content: '#acrdnContnet2' },
-                { header: 'Employee Details', content: ctn2 },
-            ]
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            var carouselObj = document.querySelector(".e-carousel").ej2_instances[0];
+            var button = new ej.buttons.Button({ cssClass: 'e-info', content: "Pause" });
+            button.appendTo('#play');
+            button.element.onclick = () => {
+                if (carouselObj.autoPlay) {
+                    button.content = "Play";
+                    carouselObj.autoPlay = false;
+                } else {
+                    button.content = "Pause";
+                    carouselObj.autoPlay = true;
+                }
+            };
         });
-
-        //Render initialized Accordion component
-        accordion.appendTo('#element');
-    }
-</script>
-
-<style>
-    .accordion-control-section {
-        margin: 0 10% 0 10%;
-    }
-
-    @@media screen and (max-width: 768px) {
-        .accordion-control-section {
-            margin: 0;
+    </script>
+    <style>
+        .control-container {
+            background-color: #adb5bd;
+            height: 300px;
+            margin: 0 auto;
+            width: 500px;
         }
-    }
-</style>
+    
+        .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-prev,
+        .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-next,
+        .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-active {
+            align-items: center;
+            border: 1px solid #f5f5f5;
+            display: flex;
+            justify-content: center;
+        }
+    </style>

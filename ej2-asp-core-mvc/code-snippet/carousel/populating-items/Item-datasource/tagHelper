@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="control-container">
-        <ejs-carousel id="defaultCarousel" cssClass="default-carousel" dataSource="@ViewBag.dataSource" itemTemplate='<div class="fs-5">${Title}</div>'>
+        <ejs-carousel id="defaultCarousel" dataSource="@ViewBag.dataSource" itemTemplate='<div class="fs-5">${Title}</div>'>
         </ejs-carousel>
     </div>
 </div>
