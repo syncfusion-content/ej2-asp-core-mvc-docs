@@ -18,9 +18,9 @@ The navigators and indicators are used to transition the slides manually.
 
 In navigators, the previous and next slide transition buttons are used to perform slide transitions manually. You can show/hide the navigators using the `buttonsVisibility` property. The possible property values are as follows:
 
-- `Hidden` – the navigator’s buttons are not visible.
-- `Visible` – the navigator’s buttons are visible.
-- `VisibleOnHover` – the navigator’s buttons are visible only when hovering over the carousel.
+* `Hidden` – the navigator’s buttons are not visible.
+* `Visible` – the navigator’s buttons are visible.
+* `VisibleOnHover` – the navigator’s buttons are visible only when hovering over the carousel.
 
 The following example depicts the code to show/hide the navigators in the carousel.
 

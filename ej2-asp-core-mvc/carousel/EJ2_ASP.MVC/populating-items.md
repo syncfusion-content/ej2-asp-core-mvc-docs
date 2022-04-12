@@ -12,8 +12,8 @@ documentation: ug
 
 In the Carousel, slides can be rendered in two ways as follows,
 
-- Populating items using carousel item
-- Populating Items using data source
+* Populating items using carousel item
+* Populating Items using data source
 
 ## Populating items using carousel item
 
@@ -73,8 +73,8 @@ When rendering the Carousel component using data binding, you can assign a commo
 
 The Carousel items will be populated from the first index of the Carousel items and can be customized using the following ways,
 
-- Select an item using the property.
-- Select an item using the method.
+* Select an item using the property.
+* Select an item using the method.
 
 ### Select an item using the property
 
