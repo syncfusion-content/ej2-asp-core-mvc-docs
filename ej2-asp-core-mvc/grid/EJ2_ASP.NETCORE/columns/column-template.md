@@ -137,3 +137,6 @@ In the following code, checkbox is rendered based on **Discontinued** field valu
 {% endtabs %}
 {% endif %}
 
+## See Also
+
+* [Dynamically render the icon based on the value in data source](https://www.syncfusion.com/forums/174307/change-variable-icon-based-on-the-information-obtained-from-the-datasource)
