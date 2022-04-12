@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Group Header in ##Platform_Name## Drop Down List Component
-description: Learn here all about Group Header in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+description: Learn here all about group header in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Group Header
 publishingplatform: ##Platform_Name##
