@@ -58,9 +58,7 @@ Refer to the following steps to download the custom resources in CRG.
 
 ## How to use custom resources in the ASP.NET MVC application
 
-1. Extract the downloaded script into `~/wwwroot` folder of the ASP.NET MVC web application.
-
-   ![Offline layout](images/offline-wwwroot-crg.png)
+1. Extract the downloaded script into `~/Content` folder of the ASP.NET MVC web application.
 
 2. Refer the script and style in `<head>` section of `~/Views/Shared/_Layout.cshtml` file.
 

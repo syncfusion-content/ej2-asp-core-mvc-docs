@@ -57,7 +57,7 @@ The primary goal of individual control CDN is to optimize the loading time and m
 | Scripts reference for individual control| https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/{PACKAGE-NAME}/dist/global/{PACKAGE-NAME}.min.js |
 | Styles reference for individual control | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/{PACKAGE-NAME}/styles/{THEME-NAME}.css |
 
-Add the CDN client-side resources in the `<head>` element of the `~/Pages/Shared/_Layout.cshtml` layout page.
+Add the CDN client-side resources in the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
 
 For example, the scripts and styles for the ASP.NET MVC Calendar control are listed below.
 
@@ -124,7 +124,7 @@ npm install @syncfusion/ej2-calendars --save
 
 Scripts and style sheets of Syncfusion ASP.NET MVC controls from locally-installed packages can be included in an ASP.NET MVC web application using the following two methods.
 
->Files in the **wwwroot** folder can be accessed only in client-side, hence Syncfusion scripts and style sheets should be copied from **node_modules** to **wwwroot**.
+>Files in the **Content** folder can be accessed only in client-side, hence Syncfusion scripts and style sheets should be copied from **node_modules** to **Content**.
 
 By using either one of the following methods, Client-Side Resource can be loaded in ASP.NET MVC web application:
 
@@ -133,7 +133,7 @@ By using either one of the following methods, Client-Side Resource can be loaded
 
 #### Copying by Gulp
 
-Install required Syncfusion ASP.NET MVC control packages as mentioned in “[**Installing NPM Packages in ASP.NET MVC Web Application**](#installing-npm-packages-in-aspnet-core-web-application)”. 
+Install required Syncfusion ASP.NET MVC control packages as mentioned in “[**Installing NPM Packages in ASP.NET MVC Web Application**](#installing-npm-packages-in-aspnet-mvc-web-application)”. 
 
 1.In addition to Syncfusion ASP.NET MVC packages, install gulp and glob packages using below commands.
 
@@ -157,37 +157,17 @@ npm install glob@latest --save
 {% endhighlight %}
 {% endtabs %}
 
-2.To set up the server, open Dependencies -> Manage NuGet Packages -> Browse. Then, search and install "**Microsoft.AspNetCore.StaticFiles -V2.2.0**" and "**Microsoft.TypeScript.MSBuild -V3.8.3**" packages.
+2.To set up the server, Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Then, search and install "**Microsoft.AspNetCore.StaticFiles**" and "**Microsoft.TypeScript.MSBuild**" packages.
 
 ![Install NuGet Packages](images/install-nuGet-package.png)
-     
-Open up your "**Startup.cs**" file and edit your Configure function to looks like the below code snippet.
-
-{% tabs %}
-{% highlight c# tabtitle="Startup.cs" %}
-
-public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-{
-    if (env.IsDevelopment())
-    {
-        app.UseDeveloperExceptionPage();
-    }
-    app.UseDefaultFiles();
-    app.UseStaticFiles();
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-Restart Visual Studio for the red squiggly lines below "**UseDefaultFiles**" and "**UseStaticFiles**" to disappear.
 
 3.Open the Source Explorer and right click on the application name. Then, select “**Add New Item**” menu item to open the “**Add New Item**” window. 
 
 4.Select “**ASP.NET Core**” on the left side Tree View and select “**JavaScript File**” in the “**Add New Item**” window. It will include a js file in the root folder of the ASP.NET MVC web application. Rename the js file as “**gulpfile.js**”.
 
-![Add gulpjs file](images/add-gulpjs.png)
+![Add gulp file](images/add-gulpjs.png)
 
-5.Copy the following code snippet and paste it in **gulpfile.js** for automatically copying the script and styles from “**node_modules**” to “**wwwroot**” while building the web application.
+5.Copy the following code snippet and paste it in **gulpfile.js** for automatically copying the script and styles from “**node_modules**” to “**Content**” while building the web application.
 
 {% tabs %}
 {% highlight c# tabtitle="gulpfile.js" %}
@@ -196,10 +176,10 @@ Restart Visual Studio for the red squiggly lines below "**UseDefaultFiles**" and
 // nodejs requiring statement for importing and using the package in this js file
 var gulp = require('gulp');
 var glob = require('glob');
-// gulp task for copying file form “node_modules” to “wwwroot” directory
+// gulp task for copying file form “node_modules” to “Content” directory
 gulp.task("copy-client-resource", function (done) {
     let packagePath = './node_modules/@syncfusion/';
-    let destCommonPath = 'wwwroot/syncfusion'
+    let destCommonPath = 'Content/syncfusion'
     let installedPackages = glob.sync(`${packagePath}*`);
     for (let insPackage of installedPackages) {
         let packagename = insPackage.replace(packagePath, '');
@@ -214,23 +194,27 @@ gulp.task("copy-client-resource", function (done) {
 {% endhighlight %}
 {% endtabs %}
 
-6.Build the ASP.NET MVC web application and notice that a new folder named “**Syncfusion**” is created in “**wwwroot**” folder.
+6.Build the ASP.NET MVC web application and notice that a new folder named “**Syncfusion**” is created in “**Content**” folder.
 
-![Copied to wwwroot](images/copied-to-wwwroot.png)
+![Copied to Content](images/copied-to-Content.png)
 
-7.Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion ASP.NET MVC Calendar has been loaded for example.  
+7.Right click the “**Syncfusion**” folder and include in project like below.
+
+![Include Syncfusion in project](images/include-syncfusion-package.png)
+
+8.Add the client-side resource in the `<head>` element of the `~/Views/Shared/_Layout.cshtml`. Here, scripts and styles of Syncfusion ASP.NET MVC Calendar has been loaded for example.  
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <head>
     <!-- Syncfusion ASP.NET MVC controls styles -->
-    <link rel="stylesheet" href="~/syncfusion/ej2-calendars/styles/calendar/material.css" />
-    <link rel="stylesheet" href="~/syncfusion/ej2-base/styles/material.css" />
-    <link rel="stylesheet" href="~/syncfusion/ej2-buttons/styles/button/material.css" />
+    @Styles.Render("~/Content/syncfusion/ej2-calendars/styles/calendar/material.css")
+    @Styles.Render("~/Content/syncfusion/ej2-base/styles/material.css")
+    @Styles.Render("~/Content/syncfusion/ej2-buttons/styles/button/material.css")
     <!-- Syncfusion ASP.NET MVC controls scripts -->
-    <script src="~/syncfusion/ej2-base/ej2-base.min.js"></script>
-    <script src="~/syncfusion/ej2-calendars/ej2-calendars.min.js"></script>
+    @Scripts.Render("~/Content/syncfusion/ej2-base/ej2-base.min.js")
+    @Scripts.Render("~/Content/syncfusion/ej2-calendars/ej2-calendars.min.js")
 </head>
 
 {% endhighlight %}
