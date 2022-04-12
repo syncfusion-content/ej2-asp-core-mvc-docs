@@ -189,7 +189,7 @@ Hidden mode shows the maximum number of items possible in the container space an
 
 Output be like the below.
 
-![Breadcrumb Sample](./images/breadcrumb-hidden.png)
+![Breadcrumb Sample](./images/bread-overflow-hidden.png)
 ## None
 
 None mode shows all the items on a single line.
