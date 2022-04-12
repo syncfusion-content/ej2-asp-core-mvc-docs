@@ -193,32 +193,3 @@ Output be like the below.
 ## None
 
 None mode shows all the items on a single line.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/breadcrumb/overflow/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-Output be like the below.
-
-![Breadcrumb Sample](./../images/mvc%20-%20overflow.png)
