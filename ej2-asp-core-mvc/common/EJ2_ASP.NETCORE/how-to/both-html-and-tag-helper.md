@@ -36,6 +36,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 {% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
+@using Syncfusion.EJ2
 
 {% endhighlight %}
 {% endtabs %}

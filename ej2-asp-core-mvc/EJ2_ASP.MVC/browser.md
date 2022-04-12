@@ -1,44 +1,26 @@
 ---
 layout: post
-title: Browser in ##Platform_Name## Component
-description: Learn here all about Browser in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Browser Compatibility in ##Platform_Name## controls
+description: Learn here all about Browser compatibility of Syncfusion ##Platform_Name## controls and more.
 platform: ej2-asp-core-mvc
-control: Browser
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Browser Support
+# Browser Compatibility in ASP.NET MVC
 
-The Syncfusion Essential JS 2 components are supported only in modern browsers. This includes the following versions.
+The Syncfusion ASP.NET MVC controls are supported by all modern browsers on Windows, Linux, and MacOS.
 
-|    Chrome    |    Firefox    |    Opera     |    Edge    |    IE      |    Safari    |    IOS    |    Android    |    Windows   Mobile    |
-|--------------|---------------|--------------|------------|------------|--------------|-----------|---------------|------------------------|
-|    Latest    |    Latest     |    Latest    |    13 +    |    11 +    |    9 +       |    9 +    |    4.4 +      |    IE 11 +             |
+|    Browser    |    Versions    |
+|--------------|---------------|
+|    Google Chrome, including Android & iOS    |    Latest Version  |
+|    Mozilla Firefox    |    Latest Version  |
+|    Microsoft Edge    |    Latest Version  |
+|    Apple Safari, including iOS    |    Latest Version  |
+|    Opera    |    Latest Version  |
+|    Microsoft Internet Explorer    |    11  |
 
-## Required Polyfills
+## See also
 
-The following polyfills are required to run Essential JS 2 components in each browser.
-
-|    Browser                                             |    Polyfills      |
-|:--------------------------------------------------------:|:-------------------:|
-|    Chrome(latest), Firefox(latest), Opera(latest), Edge, Safari 9+    |    NONE           |
-|    IE 11                                               |    ES6 Promise    |
-
-The Syncfusion Essential JS 2 components are supported in IE 11 browser with ES6 Promise polyfill.
-
-## Using CDN
-
-To add ES6 Promise polyfill using CDN, include this in your HTML file.
-
-```typescript
-<!-- Automatically provides/replaces `Promise` if missing or broken. -->
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
-<!-- Minified version of `es6-promise-auto` below. -->
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-
-```
-
-For further details, refer to the link [here](https://github.com/stefanpenner/es6-promise).
+* [ASP.NET MVC supported platforms](https://docs.microsoft.com/en-us/aspnet/core/blazor/supported-platforms)
