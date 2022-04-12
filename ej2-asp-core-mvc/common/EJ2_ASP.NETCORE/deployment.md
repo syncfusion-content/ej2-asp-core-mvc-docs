@@ -28,7 +28,7 @@ Refer to [Host and deploy ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/
 
 ![Release Configuration](./images/config.png)
 
-* For `ASp.NET Core application`, set Deployment Mode as `Self-Contained`. Because some dependencies are not loaded properly when the published folder is hosted.
+* For `ASP.NET Core application`, set Deployment Mode as `Self-Contained`. Because some dependencies are not loaded properly when the published folder is hosted.
 
 ![Deploy Mode](./images/deploy.png)
 

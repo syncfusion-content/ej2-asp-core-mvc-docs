@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Custom Resource Generator in ##Platform_Name## Common Component
-description: Learn here all about Custom Resource Generator in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Custom Resource Generator in ##Platform_Name## control
+description: Learn here all about Custom Resource Generator in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Custom Resource Generator
+control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Custom Resource Generator (Essential JS 2)
+# Custom Resource Generator for Syncfusion ASP.NET MVC
 
-Syncfusion provides an option to generate a selective controls script (JavaScript ES5) and styles by using the [`Custom Resource Generator`](https://crg.syncfusion.com/) (CRG) web tool.
+Syncfusion provides an option to generate a selective controls script (JavaScript ES5) and styles by using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) web tool for ASP.NET MVC controls from v18.1.0.42.
 
 ![ej2 custom resource generator preview](images/custom-resource-generator-preview.png)
 
@@ -29,9 +29,9 @@ The Syncfusion ASP.NET MVC UI controls can be categorized based on the below cha
 
 Refer to the following steps to search and select the controls in CRG.
 
-1.	Navigate to the Custom Resource Generator (CRG) application at [`CRG`](https://crg.syncfusion.com/).
+1. Open [Syncfusion Custom Resource Generator](https://crg.syncfusion.com/) (CRG) application.
 2.	Type the required control name in the search bar and select the check box. The dependency of the selected control is resolved in the application itself, so it does not need to choose each dependent control by manually.
-![ej2 search and select non-injectable module controls](images/search- non-injectable.png)
+![ej2 search and select non-injectable module controls](images/search-non-injectable.png)
 3. Click the expand icon and select the required feature for the injectable module supported controls.
 ![ej2 select injectable module supported controls](images/select-injectable-module.png)
 4. If the entire modules of the controls are needed, then click the specific control's check box to select all injectable modules.
@@ -51,17 +51,28 @@ Refer to the following steps to download the custom resources in CRG.
 ![ej2 Export popup for generation custom resources](images/export-popup.png)
 3. Now, the bundling process for the selected controls will be started, and the output will be downloaded as a zip file.
 ![ej2 Bundling custom resources](images/bundling-custom-resources.png)
-4. The final output contains the script and styles for the selected controls and a **settings.json** file, which stores the current settings.
+4. The final output contains the script and styles for the selected controls and a **import.json** file, which stores the current settings.
+> You can use theme files in the **customized** folder if you don't want google fonts references. For now, Material and tailwind themes only generate like below.
+
 ![ej2 Final output of customized resources](images/customized-resources.png)
+
+## How to use custom resources in the ASP.NET MVC application
+
+1. Extract the downloaded script into `~/Content` folder of the ASP.NET MVC web application.
+
+2. Refer the script and style in `<head>` section of `~/Views/Shared/_Layout.cshtml` file.
+
+   ![Offline layout](images/offline-layout-crg.png)
+
+3. Run the application and it will load the resources with application required controls.
 
 ## Import previously generated settings into the CRG
 
-To add more controls or upgrade the latest Syncfusion ASP.NET MVC library resources, it is not necessary to generate it from the scratch in the CRG. Just import the old **settings.json** file and made the changes, then download it again from the CRG application.
+To add more controls or upgrade the latest Syncfusion ASP.NET MVC library resources, it is not necessary to generate it from the scratch in the CRG. Just import the old **import.json** file and make the changes, then download it again from the CRG application.
 
-Refer to the following steps to import previous settings in the CRG.
+Refer to the following steps to import previous **import.json** file in the CRG.
 
 1.	Click the **IMPORT SETTINGS** button at the bottom of the page.
 ![ej2 Import option in CRG](images/import-option.png)
-
-2. Upload the **settings.json** file so that the previously stored data will be restored in the CRG application. Now, add more controls and export the resources again.
-![ej2 Previous chages restored](images/previous-changes-restored.png)
+2. Upload the **import.json** file so that the previously stored data will be restored in the CRG application. Now, add more controls and export the resources again.
+![ej2 Previous changes restored](images/previous-changes-restored.png)
