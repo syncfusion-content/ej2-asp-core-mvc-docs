@@ -1,1 +1,3 @@
-@Html.EJS().AutoComplete("games").DataSource(ViewBag.data).Render()
+@model List<string>
+
+@Html.EJS().AutoComplete("games").DataSource(Model).Render()
