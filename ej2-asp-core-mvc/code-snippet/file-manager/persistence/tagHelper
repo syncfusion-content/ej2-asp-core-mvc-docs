@@ -1,8 +1,8 @@
 <div class=" control-section">
-    <div class="sample-container">
+    <div class="sample-container" style="padding:10px">
         <!-- Declare filemanager element -->
         <ejs-filemanager id="filemanager" enablePersistence="true" success="onSuccess" failure="onFailure">
-            <e-filemanager-ajaxsettings  url="/Home/FileOperations"
+            <e-filemanager-ajaxsettings url="/Home/FileOperations"
                                         downloadUrl="/Home/Download"
                                         uploadUrl="/Home/Upload"
                                         getImageUrl="/Home/GetImage">
