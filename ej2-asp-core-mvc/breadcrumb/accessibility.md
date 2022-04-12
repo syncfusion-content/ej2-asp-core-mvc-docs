@@ -25,7 +25,7 @@ The web accessibility makes web content and web applications more accessible for
 <table>
 <tr>
 <td><b>Keyboard shortcuts</b></td>
-<td><b>Actions</b></td>
+<td><b>Actions</b></td></tr>
 <tr>
 <td>
 <kbd>Tab</kbd></td><td>
