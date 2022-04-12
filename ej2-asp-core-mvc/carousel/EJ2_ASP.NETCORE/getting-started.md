@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started
 
-This section briefly explains about how to include [ASP.NET Core Carousel](https://www.syncfusion.com/aspnet-core-ui-controls/carousel) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include `ASP.NET Core Carousel` control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -18,9 +18,9 @@ This section briefly explains about how to include [ASP.NET Core Carousel](https
 
 ## Create ASP.NET Core web application with Razor pages
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
+- [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
+- [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
 
 ## Install ASP.NET Core package in the application
 
@@ -35,7 +35,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 {% tabs %}
 {% highlight c# tabtitle="~/_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.EJ2
+@addTagHelper \*, Syncfusion.EJ2
 
 {% endhighlight %}
 {% endtabs %}
@@ -74,7 +74,7 @@ In this getting started walk-through, the required scripts are referred using CD
 
 ## Register Syncfusion Script Manager
 
-Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -94,6 +94,7 @@ Now, add the Syncfusion ASP.NET Core Carousel tag helper in `~/Pages/Index.cshtm
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+
 <div class="col-lg-12 control-section default-carousel-section">
     <div class="e-sample-resize-container carousel-sample">
         <ejs-carousel id="defaultCarousel" cssClass="default-carousel">
@@ -165,6 +166,7 @@ Now, add the Syncfusion ASP.NET Core Carousel tag helper in `~/Pages/Index.cshtm
         <figcaption class="img-caption">Stonehenge, England</figcaption>
     </figure>
 </script>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -172,9 +174,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Carousel Control](images/carousel-control.png)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Carousel/ASP.NET%20Core%20Tag%20Helper%20Examples).
-
 ## See also
 
-* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
-* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+- [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+- [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
