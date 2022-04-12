@@ -110,4 +110,4 @@ The specific breadcrumb item can be customizable using itemTemplate with conditi
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/breadcrumb-specific-item-template.png)
+![Breadcrumb Sample](./images/breadcrumb-specific-item-template.png)

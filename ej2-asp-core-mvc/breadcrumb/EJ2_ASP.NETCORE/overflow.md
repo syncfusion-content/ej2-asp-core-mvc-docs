@@ -57,7 +57,7 @@ Collapsed mode shows the first and last Breadcrumb items and hides the remaining
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/breadcrumb-collapsed.png)
+![Breadcrumb Sample](./images/breadcrumb-collapsed.png)
 
 ## Menu
 
@@ -90,7 +90,7 @@ Menu mode shows the number of Breadcrumb items that can be accommodated within t
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/breadcrumb-menu.png)
+![Breadcrumb Sample](./images/breadcrumb-menu.png)
 
 ## Wrap
 
@@ -123,7 +123,7 @@ Wrap mode wraps the items to multiple lines when the Breadcrumb’s width exceed
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/breadcrumb-wrap.png)
+![Breadcrumb Sample](./images/breadcrumb-wrap.png)
 
 ## Scroll
 
@@ -156,7 +156,7 @@ Scroll mode shows an HTML scroll bar when the Breadcrumb’s width exceeds the c
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/breadcrumb-scroll.png)
+![Breadcrumb Sample](./images/breadcrumb-scroll.png)
 
 ## Hidden
 
@@ -189,7 +189,7 @@ Hidden mode shows the maximum number of items possible in the container space an
 
 Output be like the below.
 
-![Breadcrumb Sample](./../images/breadcrumb-hidden.png)
+![Breadcrumb Sample](./images/breadcrumb-hidden.png)
 ## None
 
 None mode shows all the items on a single line.
