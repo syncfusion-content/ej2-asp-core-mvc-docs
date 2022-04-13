@@ -2,4 +2,4 @@
 Width("200px").
 Height("150px").
 Value("123456789").
-Type(Syncfusion.EJ2.BarcodeGenerator.Type.Codabar).Render() )
+Type(Syncfusion.EJ2.BarcodeGenerator.BarcodeType.Codabar).Render() )
