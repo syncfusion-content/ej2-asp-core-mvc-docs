@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="control-container">
+        <ejs-carousel id="carousel" buttonsVisibility="VisibleOnHover">
+            <e-carousel-items>
+                <e-carousel-item template='<div class="fs-5">Slide 1</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 2</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 3</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 4</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 5</div>'></e-carousel-item>
+            </e-carousel-items>
+        </ejs-carousel>
+    </div>
+</div>
+<style>
+    .control-container {
+        background-color: #adb5bd;
+        height: 300px;
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-prev,
+    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-next,
+    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-active {
+        align-items: center;
+        border: 1px solid #f5f5f5;
+        display: flex;
+        justify-content: center;
+    }
+</style>

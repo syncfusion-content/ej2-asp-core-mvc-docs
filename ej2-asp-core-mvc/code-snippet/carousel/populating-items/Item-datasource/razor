@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="control-container">
+            @(Html.EJS().Carousel("defaultCarousel").DataSource((IEnumerable<object>)ViewBag.dataSource).Render())
+        </div>
+    </div>
+
+<style>
+    .control-container {
+        background-color: #adb5bd;
+        height: 300px;
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-prev,
+    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-next,
+    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-active {
+        align-items: center;
+        border: 1px solid #f5f5f5;
+        display: flex;
+        justify-content: center;
+    }
+</style>
