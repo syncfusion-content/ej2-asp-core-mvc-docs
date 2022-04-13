@@ -112,6 +112,8 @@ Now, add the Syncfusion ASP.NET MVC Accordion control in `~/Home/Index.cshtml` p
 {% endhighlight %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Accordion control will be rendered in the default web browser.
+
 ![ASP.NET MVC Accordion Control](images/accordion.PNG)
 
 ## Render the Accordion using content template

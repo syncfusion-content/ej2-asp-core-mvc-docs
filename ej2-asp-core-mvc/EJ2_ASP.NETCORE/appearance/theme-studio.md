@@ -14,7 +14,7 @@ Theme Studio for Essential JS 2 can be used to customize a new theme from an exi
 
 ## Customizing theme color from theme studio
 
-The Essential JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion ASP.NET Core controls. All the Syncfusion ASP.NET Core control styles are derived from these [theme-based common variables](theme#common-variables).This common variable list is handled inside the theme studio application for customizing theme-based colors.
+The Essential JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion ASP.NET Core controls. All the Syncfusion ASP.NET Core control styles are derived from these [theme-based common variables](#common-variables).This common variable list is handled inside the theme studio application for customizing theme-based colors.
 
 **Step 1:** Open the [Syncfusion Theme Studio](https://ej2.syncfusion.com/themestudio/) application.
 

@@ -1,1 +1,3 @@
-@Html.EJS().AutoComplete("games").AllowCustom(true).Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Render()
+@model List<string>
+
+@Html.EJS().AutoComplete("games").AllowCustom(true).Placeholder("Select a game").DataSource((IEnumerable<object>)Model).Render()
