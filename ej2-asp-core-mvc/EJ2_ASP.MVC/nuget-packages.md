@@ -8,194 +8,200 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# NuGet Packages for ASP.NET MVC
-
-> You can use the Syncfusion ASP.NET MVC NuGet packages without installing the Essential Studio or ASP.NET MVC platform installation to implement the Syncfusion ASP.NET MVC controls.
-
-## Installing NuGet Packages
-
-### Using NuGet Package Manager
-
-The NuGet Package Manager can be used to search and install NuGet packages in the Visual Studio solution or project:
-
-1. Right-click the project/solution in the Solution Explorer tab, and choose `Manage NuGet Packages…`
-
-    ![img3](images/nuget1.png)
-
-    Alternatively, click **Tools** in menu, **NuGet Package Manager -> Manage NuGet Packages for Solution...**
-
-2. By default, the `NuGet.org` package is selected in the **Package source** drop-down. Select your appropriate feed name that you configured If `NuGet.org` is not configured in your Visual Studio, refer to the Microsoft docs to configure `NuGet.org` feed URL in your Visual Studio.
-
-     ![mvc4](images/nuget2.png)
-
-3. The Syncfusion ASP.NET MVC NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
-
-> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from `v16.2.0.46`. So, If you need to Install earlier version of `16.2.0.46` Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
-
-### Using Package Manager Console
-
-To reference the Syncfusion ASP.NET MVC UI Control using the Package Manager Console as NuGet packages, follow the below steps.
-
-1. On the **Tools** menu, select **NuGet Package Manager** and then **Package Manager Console**.
-
-2. Run the following NuGet installation commands:
-
-    ```
-    #install specified package in default project
-    Install-Package <Package Name>
-
-    #install specified package in specified project
-    Install-Package <Package Name> - ProjectName <Project Name>
-    ```
-
-    **For example:**
-
-    ```
-    # install specified package in default project
-    Install-Package Syncfusion.EJ2.MVC5
-
-    #install specified package in specified project
-    Install-Package Syncfusion.EJ2.MVC5 -ProjectName SyncfusionDemoApplication
-    ```
-
-### Using Visual Studio for macOS
-
-Add packages can be used to search and install NuGet packages to the Visual Studio project in macOS:
-
-1. Right-click on the folder in the project, and then select **Add Packages…**
-
-    ![img1](images/nuget3.png)
-
-2. By default, the `NuGet.org` package is selected in the **Package source** drop-down. Select the appropriate feed name.
-
-3. The Syncfusion ASP.NET MVC NuGet Packages available in the package source location will be listed. Search and install the required packages in your application, by clicking **Add Package** button.
-
-## Managing NuGet package using NuGet CLI
-
-The NuGet Command Line Interface (CLI), `nuget.exe`, provides the full extent of NuGet functionality to install, create, publish, and manage packages without making any change to the project files.
-
-### Configure NuGet feed URL
-
-1. Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-
-    >  To update the existing `nuget.exe` to latest version use the following command:
-
-    ```
-    nuget update -self
-    ```
-
-2. Open the downloaded executable location in the command window, and run the following commands to download and install the required NuGet packages to a project specified in the `package.config`.
-
-    ```
-    #install specified package in default project from specified package source for Windows Platform
-    nuget.exe install <Package name | ConfigFilePath > <Options>
-
-    #install specified package in default project from specified package source for MAC/Linux Platform
-    mono nuget.exe install <Package name | ConfigFilePath > <Options>
-
-    ```
-
-3. configPath is optional. This identifies the `package.config` or solutions file that lists the packages utilized in the project.
-
-   **For example:**
-
-   ```
-    #install specific package for Windows
-    nuget.exe install “Syncfusion.EJ2.MVC5”
-
-    #install all package which mention in package.config path for Windows
-    nuget.exe install “C:\Users\SyncfusionApplication\package.config”
-  
-    #install specific Syncfusion NuGet package for Windows
-    nuget.exe install “Syncfusion.EJ2.MVC5”
-
-    #install all package which mention in package.config path for Mac and Linux
-    mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
-
-    ```
-
-   > If you need to Install `v16.2.0.46` before Syncfusion NuGet packages, configure [Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
-
-## Upgrading NuGet packages
-
-### Using NuGet Package Manger
-
-NuGet packages can be updated to their specific version or latest version available in the Visual Studio solution or project:
-
-1. Right-click the project/solution in the Solution Explorer tab, and choose **Manage NuGet Packages…** Alternatively click **Tools** menu, **NuGet Package Manager | Manage NuGet Packages for Solution…**
-
-2. Select the **Updates** tab to see the packages available for update from the desired package sources. Select the required packages and the specific version from the dropdown, and click the **Update** button.
-
-<!-- markdownlint-disable MD024 -->
-
-### Using Visual Studio for macOS
-
-Using **Update** context menu from Visual Studio for Mac application, NuGet packages can be updated:
-
-1. Right-click on the Packages folder in the project, and select **Update**.
-
-2. This will update the NuGet package to the latest version. You can double-click the Add packages and choose the specific version.
-
-> To update all the projects from solution, use update option in the solution level.
-
-### Using Package Manger Console
-
-To update the installed Syncfusion ASP.NET MVC NuGet packages using the Package Manager Console, follow the below steps.
-
-1. On the **Tools** menu, select **NuGet Package Manager**, and then **Package Manager Console.**
-
-2. Run the following NuGet installation commands:
-
-    ```
-    #Update specific NuGet package in default project
-    Update-Package <Package Name>
-
-    #Update all the packages in default project
-    Update-Package
-
-    #Update specified package in specified project
-    Update-Package <Package Name> - ProjectName <Project Name>
-    ```
-
-    **For example:**
-
-    ```
-    #Update specified Syncfusion ASP.NET MVC NuGet package
-    Update-Package Syncfusion.EJ2.MVC5
-
-    #Update specified package in specified project
-    Update-Package Syncfusion.EJ2.MVC5 -ProjectName SyncfusionDemoApplication
-    ```
-
-### Using NuGet CLI
-
-Using the NuGet CLI, all the NuGet packages in the project can be updated to the available latest version:
-
-1. Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-
-    > To update the existing `nuget.exe` to latest version use the following command:
-
-    ```
-    nuget update -self
-    ```
-
-2. Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion ASP.NET MVC NuGet packages.
-
-    ```
-    #update all NuGet packages from config file
-    nuget update <configPath> [options]
-
-    #update all NuGet packages
-    nuget update
-    ```
-
-    > `configPath` is optional. This identifies the `package.config` or solutions file lists the packages utilized in the project.
-
-    **For example:**
-
-    ```
-    #Update all NuGet packages from config file
-    nuget update “C:\Users\SyncfusionApplication\package.config”
-    ```
-
-    > Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.
+# NuGet Packages for ASP.NET MVC UI controls
+
+**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET MVC NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22%20+%20%22MVC5%22+Syncfusion). The Syncfusion ASP.NET MVC NuGet packages can be used without installing the Essential Studio or ASP.NET MVC platform installation to implement the Syncfusion ASP.NET MVC controls.
+
+## Available NuGet packages
+
+### Syncfusion.EJ2.MVC5
+
+Syncfusion ASP.NET MVC UI controls are built from the ground up to be lightweight, responsive, and touch- friendly. It includes over 70+ controls, including grid, charts, scheduler, spreadsheet, gantt chart, listbox, file manager, rich text editor and much more.
+
+<!-- markdownlint-disable MD033 -->
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/">Syncfusion.EJ2.MVC5</a>
+</td>
+<td>
+70+ Controls
+</td>
+<td>
+<ul>
+<li><a href="https://www.nuget.org/packages/Newtonsoft.Json/" target="_blank">Newtonsoft.Json</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.EJ2.JavaScript/" target="_blank">Syncfusion.EJ2.JavaScript</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.Licensing/" target="_blank">Syncfusion.Licensing</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+### Syncfusion.EJ2.WordEditor.AspNet.Mvc5
+
+The ASP.NET MVC Word Processor is a component with editing capabilities like Microsoft Word. Also known as the document editor, it is used to create, edit, view, and print Word documents. It provides all the common Word processing features including editing text, formatting contents, resizing images and tables, finding and replacing text, bookmarks, tables of contents, printing, and importing and exporting Word documents.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Mvc5/">Syncfusion.EJ2.WordEditor.AspNet.Mvc5</a>
+</td>
+<td>
+Document Editor
+</td>
+<td>
+<ul>
+<li><a href="https://www.nuget.org/packages/Syncfusion.Compression.Base/" target="_blank">Syncfusion.Compression.Base</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.DocIO.AspNet.Mvc5/" target="_blank">Syncfusion.DocIO.AspNet.Mvc5</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.OfficeChart.Base/" target="_blank">Syncfusion.OfficeChart.Base</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+### Syncfusion.EJ2.PdfViewer.AspNet.Mvc5
+
+The ASP.NET MVC PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them. The thumbnail, bookmark, hyperlink, and table of contents support provides easy navigation within and outside PDF files. The form-filling support provides a platform to fill and print with AcroForms. The PDF files can be reviewed with the available annotation tools.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Mvc5/">Syncfusion.EJ2.PdfViewer.AspNet.Mvc5</a>
+</td>
+<td>
+PDF Viewer
+</td>
+<td>
+<ul>
+<li><a href="https://www.nuget.org/packages/Syncfusion.Compression.Base/" target="_blank">Syncfusion.Compression.Base</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.AspNet.Mvc5/" target="_blank">Syncfusion.Pdf.AspNet.Mvc5</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+### Syncfusion.EJ2.SpellChecker.AspNet.Mvc5
+
+The ASP.NET MVC Word Processor is a component with editing capabilities like Microsoft Word. Also known as the document editor, it is used to create, edit, view, and print Word documents. It provides all the common Word processing features including editing text, formatting contents, resizing images and tables, finding and replacing text, bookmarks, tables of contents, printing, and importing and exporting Word documents.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.SpellChecker.AspNet.Mvc5/">Syncfusion.EJ2.SpellChecker.AspNet.Mvc5</a>
+</td>
+<td>
+Document Editor
+</td>
+<td>
+<ul>
+<li>This package has no dependencies.</li>
+</ul>
+</td>
+</tr>
+</table>
+
+### Syncfusion.EJ2.Spreadsheet.AspNet.MVC5
+
+The ASP.NET Mvc Spreadsheet is also known as the ASP.NET Mvc Excel viewer, is a feature-rich control for organizing and analyzing data in tabular format. It provides all the common Excel features, including data binding, selection, editing, formatting, resizing, sorting, importing, and exporting Excel documents.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.Spreadsheet.AspNet.MVC5/">Syncfusion.EJ2.Spreadsheet.AspNet.MVC5</a>
+</td>
+<td>
+Spreadsheet
+</td>
+<td>
+<ul>
+<li>This package has no dependencies.</li>
+</ul>
+</td>
+</tr>
+</table>
+
+### Syncfusion.EJ2.GridExport.MVC5 
+
+The ASP.NET Mvc Grid Export is an ideal library for visualizing the Grid data in a Excel, Pdf and CSV formats whcih also handles the data actions like filtering, sorting, Groupin etc.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.GridExport.MVC5 /">Syncfusion.EJ2.GridExport.MVC5 </a>
+</td>
+<td>
+Grid Export
+</td>
+<td>
+<ul>
+<li>This package has no dependencies.</li>
+</ul>
+</td>
+</tr>
+</table>
