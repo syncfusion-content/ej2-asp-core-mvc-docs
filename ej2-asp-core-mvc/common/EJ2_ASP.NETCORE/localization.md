@@ -30,7 +30,7 @@ npm i @syncfusion/ej2-locale
 {% endhighlight %}
 {% endtabs %}
 
-Once the `ej2-locale` package has installed, create a folder `locale` inside the `wwwroot` folder. Then copy the specific culture files from `node_modules\@syncfusion\ej2-locale\src` location and paste it inside the `wwwroot` folder like below. The culture file contains all Syncfusion ASP.NET Core controls locale text.
+Once the `ej2-locale` package has installed, create a folder `locale` inside the `wwwroot` folder. Then copy the specific culture files from `node_modules\@syncfusion\ej2-locale\src` location and paste it inside the `wwwroot/locale` folder like below. The culture file contains all Syncfusion ASP.NET Core controls locale text.
 
 ![Moved locale data to ASP.NET Core app](images/moved-locale-data.png)
 
