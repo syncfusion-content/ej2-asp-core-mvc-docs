@@ -1,0 +1,46 @@
+@using Syncfusion.EJ2.Navigations;
+@using Syncfusion.EJ2.Buttons;
+
+<ejs-button id="prev" cssClass="e-info" content="Prev"></ejs-button>
+<ejs-button id="next" cssClass="e-info" content="Next"></ejs-button>
+
+<div class="container">
+    <div class="control-container">
+        <ejs-carousel id="defaultCarousel">
+            <e-carousel-items>
+                <e-carousel-item template='<div class="fs-5">Slide 1</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 2</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 3</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 4</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="fs-5">Slide 5</div>'></e-carousel-item>
+            </e-carousel-items>
+        </ejs-carousel>
+    </div>
+</div>
+<script>
+    document.getElementById('prev').onclick = function () {
+        var carouselObj = document.querySelector(".e-carousel").ej2_instances[0];
+        carouselObj.prev();
+    }
+    document.getElementById('next').onclick = function () {
+        var carouselObj = document.querySelector(".e-carousel").ej2_instances[0];
+        carouselObj.next();
+    }
+</script>
+<style>
+    .control-container {
+        background-color: #adb5bd;
+        height: 300px;
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-prev,
+    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-next,
+    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-active {
+        align-items: center;
+        border: 1px solid #f5f5f5;
+        display: flex;
+        justify-content: center;
+    }
+</style>
