@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Drop Down List Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+description: Learn here all about accessibility in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -15,7 +15,7 @@ The DropDownList control has been designed, keeping in mind the `WAI-ARIA` speci
 
 ## ARIA attributes
 
-The DropDownList control uses the `Listbox` role, and each list item has an `option` role. The following `ARIA attributes` denote the DropDownList state.
+The DropDownList control uses the `Listbox` role, and each list item has an `option` role. The following `ARIA attributes` denotes the DropDownList state.
 
 | **Properties** | **Functionalities** |
 | --- | --- |
@@ -24,7 +24,7 @@ The DropDownList control uses the `Listbox` role, and each list item has an `opt
 | aria-selected | Indicates the selected option. |
 | aria-readonly | Indicates the readonly state of the DropDownList element. |
 | aria-disabled | Indicates whether the DropDownList control is in a disabled state or not. |
-| aria-activedescendent | This attribute holds the ID of the active list item  to focus its descendant child element. |
+| aria-activedescendent | This attribute holds the ID of the active list item to focus its descendant child element. |
 | aria-owns | This attribute contains the ID of the popup list to indicate popup as a child element. |
 
 ## Keyboard interaction
@@ -33,7 +33,7 @@ You can use the following key shortcuts to access the DropDownList without inter
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
-| <kbd>Arrow Down</kbd> | Selects the first item in the DropDownList when no item selected. Otherwise, selects the item next to the currently selected item. |
+| <kbd>Arrow Down</kbd> | Selects the first item in the DropDownList when no item is selected. Otherwise, selects the item next to the currently selected item. |
 | <kbd>Arrow Up</kbd> | Selects the item previous to the currently selected one. |
 | <kbd>Page Down</kbd> | Scrolls down to the next page and selects the first item when popup list opens. |
 | <kbd>Page Up</kbd> | Scrolls up to the previous page and selects the first item when popup list opens. |

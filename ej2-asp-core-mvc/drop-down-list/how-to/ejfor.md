@@ -13,8 +13,6 @@ documentation: ug
 
 The DropDownListFor control can be rendered by passing values and data from the model. The selected values can be retrieved during form submit using the post method.
 
-In the following sample, DropDownListFor control is rendered.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
