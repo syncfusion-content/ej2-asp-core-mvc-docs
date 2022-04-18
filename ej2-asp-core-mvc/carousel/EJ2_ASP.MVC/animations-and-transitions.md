@@ -22,7 +22,7 @@ The following demo depicts the example for fade animation,
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/carousel/animations/carousel-item/tagHelper %}
+{% include code-snippet/carousel/animations/fade/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/carousel/animations/fade/fade.cs %}
@@ -33,7 +33,7 @@ The following demo depicts the example for fade animation,
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/carousel/animations/carousel-item/razor %}
+{% include code-snippet/carousel/animations/fade/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/carousel/animations/fade/fade.cs %}
