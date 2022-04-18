@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in ##Platform_Name## Drop Down List Component
-description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+description: Learn here all about tooltip in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # DropDownList options with tooltip
 
-You can achieve this behavior by using `ej2-tooltip` component. When the mouse hover on the DropDownList option that tooltip display some details related to hovered list item.
+You can achieve this behavior by using `ej2-tooltip` component. When the mouse hovers on the DropDownList option, the tooltip displays some details related to hovered list item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

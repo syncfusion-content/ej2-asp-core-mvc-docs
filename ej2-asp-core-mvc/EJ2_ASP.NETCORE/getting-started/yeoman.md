@@ -14,7 +14,7 @@ documentation: ug
 
 This article provides a step-by-step introduction to configure Essential JS 2 setup and build a simple .NET Core web application using the [Yeoman tool](http://yeoman.io/#) in [Visual Studio Code](https://code.visualstudio.com/) (VS Code).
 
-> Starting with v16.2.0.x, if you reference to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET Core application to use the components.
+> Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET Core application to use the components.
 
 ## Getting Started with ASP.NET Core 2.x
 
@@ -61,7 +61,7 @@ The official prerequisites to create and run an ASP.NET Core 2.x application on 
 
     ![aspnetcore2.x vscode adding syncfusion package in the project](images/dotnetnew.png)
 
-    > Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package), to learn more details about `dotnet add` command line.
+    > Refer [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package), to learn more details about `dotnet add` command line.
 
 2. Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
@@ -161,7 +161,7 @@ The official prerequisites to create and run an ASP.NET Core 1.x application on 
 
     ![aspnetcore1.x vscode dotnet restore](images/aspnetcore1x-vscode-dotnet-restore.png)
 
-    > Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore1x), to know more details about `dotnet restore` command line.
+    > Refer [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore1x), to know more details about `dotnet restore` command line.
 
 4. Open the `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 

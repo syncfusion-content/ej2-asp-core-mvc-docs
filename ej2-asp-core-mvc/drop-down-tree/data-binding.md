@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in ##Platform_Name## Drop Down Tree Component
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
+description: Learn here all about data binding in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -13,7 +13,7 @@ documentation: ug
 
 The Dropdown Tree control provides an option to load the data either from local data sources or from remote data services. This can be done through `dataSource` property that is a member of the `fields` property. The `dataSource` property supports list of data and `DataManager`. It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
-Dropdown Tree has `load on demand` (Lazy load) option. It reduces the bandwidth size when consuming the huge data. By default, the `loadOnDemand` is set to false. By enabling this property, it loads first level items initially, and when parent item is expanded, loads the child items based on the `parentValue/child` member.
+Dropdown Tree has `load on demand` (Lazy load) option. It reduces the bandwidth size while consuming the huge data. By default, the `loadOnDemand` is set to false. By enabling this property, it loads first level items initially, and when parent item is expanded, it loads the child items based on the `parentValue/child` member.
 
 ## Local data
 
@@ -54,10 +54,6 @@ In the following example, **code**, **name**, and **countries** columns from hie
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
 ![Hierarichal datasource Sample](./images/hierarichal-data.PNG)
 
 ### Self-referential data
@@ -93,10 +89,6 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
 ![Self referential datasource Sample](./images/self-referential.PNG)
 
 ## Remote data
@@ -113,7 +105,7 @@ The `DataManager` that acts as an interface between the service endpoint and the
 
 * `DataManager->adaptor`: Defines the adaptor option. By default, ODataAdaptor is used for remote binding.
 
-Adaptor is responsible for processing response and request from/to the service endpoint. The `@syncfusion/ej2-data` package provides some pre-defined adaptors  designed to interact with service endpoints. They are,
+Adaptor is responsible for processing response and request from/to the service endpoint. The `@syncfusion/ej2-data` package provides some pre-defined adaptors designed to interact with service endpoints. They are,
 
 * `UrlAdaptor`: Used to interact with remote services. This is the base adaptor for all remote based adaptors.
 
@@ -125,7 +117,7 @@ Adaptor is responsible for processing response and request from/to the service e
 
 * `WebMethodAdaptor`: Used to interact with web methods.
 
-In the following example, `ODataV4Adaptor` is  used to fetch data from the remote services. The **EmployeeID**, **FirstName**, and **EmployeeID** columns from the Employees table have been mapped to **value**, **text**, and **hasChildren** fields respectively for first level nodes.
+In the following example, `ODataV4Adaptor` is used to fetch data from the remote services. The **EmployeeID**, **FirstName**, and **EmployeeID** columns from the Employees table has been mapped to **value**, **text**, and **hasChildren** fields respectively for first level nodes.
 
 The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table have been mapped to **value**, **parentValue**, and **text** fields respectively for second level nodes.
 
@@ -152,8 +144,5 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![Remote datasource Sample](./images/remote-data.PNG)

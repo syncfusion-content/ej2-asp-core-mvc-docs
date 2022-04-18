@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview in ##Platform_Name## Drop Down List Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+description: Learn here all about overview in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -17,7 +17,7 @@ The DropDownList control contains a list of predefined values from which a singl
 
 * **[Data binding](/drop-down-list/data-binding.html)** - Allows binding and accessing the list of items from local or server-side data source.
 
-* **[Grouping](/drop-down-list/grouping.html)** -  Supports grouping of logically related items under a single or specific category.
+* **[Grouping](/drop-down-list/grouping.html)** - Supports grouping of logically related items under a single or specific category.
 
 * **[Sorting](/drop-down-list/api-dropDownList.html#sortorder-sortorder)** - Supports sorting of list items in an alphabetical order (either ascending or descending).
 

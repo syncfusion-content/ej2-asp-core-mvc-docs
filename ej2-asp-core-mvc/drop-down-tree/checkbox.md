@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Checkbox in ##Platform_Name## Drop Down Tree Component
-description: Learn here all about Checkbox in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
+description: Learn here all about checkbox in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Checkbox
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # CheckBox
 
-The Dropdown Tree control allows you to check more than one item from the tree without affecting the UI's appearance by enabling the `showCheckBox` property. When this property is enabled, checkbox appears before each item text in the popup.
+The Dropdown Tree control allows to check more than one item from the tree without affecting the UI's appearance by enabling the `showCheckBox` property. When this property is enabled, checkbox appears before each item text in the popup.
 
 In the following example, the `showCheckBox` property is enabled.
 
@@ -38,9 +38,6 @@ In the following example, the `showCheckBox` property is enabled.
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
 
 ![DropDown Tree Checkbox Sample](./images/check-box.PNG)
 
@@ -79,17 +76,13 @@ In the following example, the `autoCheck` property is enabled.
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
 ![DropDown Tree AutoCheck Sample](./images/auto-check.PNG)
 
 ## Select All
 
 The Dropdown Tree control has in-built support to select all the tree items using Select All options in the header.
 
-When the `showSelectAll` property is set to true, a checkbox will be displayed in the popup header that allows you to select or deselect all the tree items in the popup.
+When the `showSelectAll` property is set to true, a checkbox will be displayed in the popup header that allows to select or deselect all the tree items in the popup.
 
 By default, `Select All` and `unSelect All` text values will be showcased along with the checkbox in the popup header to indicate the action to be performed on checking or unchecking the checkbox. You can customize these name attributes by using `selectAllText` and `unSelectAllText` properties respectively.
 
@@ -115,9 +108,5 @@ By default, `Select All` and `unSelect All` text values will be showcased along 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![DropDown Tree SelectAll Sample](./images/select-all.PNG)
