@@ -29,7 +29,7 @@ The following list of themes are included in the Syncfusion ASP.NET MVC controls
 |Microsoft Office Fabric Dark | fabric-dark.css |
 |High Contrast | highcontrast.css |
 
-The Syncfusion ASP.NET MVC Bootstrap Theme is designed based on Bootstrap v3, whereas the Bootstrap4 theme is designed based on Bootstrap v4. Syncfusion ASP.NET MVC themes provide support for the Fusion Theme that can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
+The Syncfusion ASP.NET MVC Bootstrap theme is designed based on Bootstrap v3, whereas the Bootstrap4 theme is designed based on Bootstrap v4. Syncfusion ASP.NET MVC themes provide support for the Fusion Theme that can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
 
 ## Reference themes in ASP.NET MVC application
 
@@ -78,7 +78,7 @@ Syncfusion ASP.NET MVC Themes are available in the CDN. Make sure that the versi
 
 In the ASP.NET MVC application, the application theme can be changed dynamically by changing its style sheet reference in code.
 
-1.Add id in the Syncfusion style sheet references in **~/Views/Shared/_Layout.cshtml** page like below.
+1.Add `id` attribute in the Syncfusion style sheet references in **~/Views/Shared/_Layout.cshtml** page like below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -92,7 +92,7 @@ In the ASP.NET MVC application, the application theme can be changed dynamically
 {% endhighlight %}
 {% endtabs %}
 
-2.Use the following code for dropdown data on the **~/Models/ThemeDetails.cs** model page.
+2.Create a **ThemeDetails.cs** model page and use the following code for dropdown data on the **~/Models/ThemeDetails.cs** page.
 
 {% tabs %}
 {% highlight c# tabtitle="~/ThemeDetails.cs" %}
@@ -127,7 +127,7 @@ namespace ThemeSwitch.Models
 {% endhighlight %}
 {% endtabs %}
 
-3.Implement a theme change dynamically using the dropdown by its id value in javascript function in the application as in the below code.
+3.Implement a theme change dynamically using the Syncfusion ASP.NET MVC dropdown control in the application as in the below code.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -145,7 +145,7 @@ namespace ThemeSwitch.Models
         document.getElementsByTagName('body')[0].style.display = 'none';
         var themeName = e.value;
         let synclink = document.getElementById('cssfile');
-        synclink.href = 'https://cdn.syncfusion.com/ej2/20.1.47/' + themeName + '.css';
+        synclink.href = 'https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/' + themeName + '.css';
         setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 500);
     }
 </script>
@@ -154,3 +154,5 @@ namespace ThemeSwitch.Models
 {% endtabs %}
 
 ![Change theme dynamically](images/dynamic-theme-switching.gif)
+
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ThemeSwitch)

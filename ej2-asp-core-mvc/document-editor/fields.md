@@ -12,8 +12,6 @@ Document Editor has preservation support for all types of fields in an existing 
 
 You can add a field to the document by using [`insertField`](../api/document-editor/editor/#insertfield) method in `Editor` module.
 
-The following example code illustrates how to insert merge field programmatically by providing the field code and field result.
-
 ```typescript
 
 var fieldCode = 'MERGEFIELD  First Name  \\* MERGEFORMAT ';
@@ -22,11 +20,11 @@ documenteditor.editor.insertField(fieldCode, fieldResult);
 
 ```
 
->Note: Document editor does not validate/process the field code/field result. it simply inserts the field with specified field information.
+>Note: Document editor does not validate or process the field code or field result. It simply inserts the field with specified field information.
 
 ## Update fields
 
-Document Editor provides support for updating bookmark cross reference field. The following example code illustrates how to update bookmark cross reference field.
+Document Editor provides support for updating bookmark cross reference field.
 
 ```typescript
 //Update all the bookmark cross reference field in the document.

@@ -248,6 +248,8 @@ You can customize the size of the legend items by using the [`ShapeHeight`](http
 
 ### Paging for Legend
 
+### Paging for Legend
+
 Paging will be enabled by default, when the legend items exceeds the legend bounds. You can view each legend items by navigating between the pages using navigation buttons.
 
 {% if page.publishingplatform == "aspnet-core" %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Table Of Contents in ##Platform_Name## Document Editor Component
-description: Learn here all about Table Of Contents in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about table of contents in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Table Of Contents
 publishingplatform: ##Platform_Name##
@@ -21,12 +21,10 @@ Document editor exposes an API to insert table of contents at cursor position pr
 * **startLevel**: Specifies the start level for constructing table of contents.
 * **endLevel**: Specifies the end level for constructing table of contents.
 * **includeHyperlink**: Specifies whether the link for headings is included.
-* **includePageNumber**: Specified whether the page number of the headings is included.
+* **includePageNumber**: Specifies whether the page number of the headings is included.
 * **rightAlign**: Specifies whether the page number is right aligned.
 * **tabLeader**: Specifies the tab leader styles such as none, dot, hyphen, and underscore.
 * **includeOutlineLevels**: Specifies whether the outline levels are included.
-
-The following code illustrates how to insert table of content in document editor.
 
 ```javascript
 var tocSettings=
@@ -59,14 +57,14 @@ documenteditor.editor.insertTableOfContents(tocSettings);
 
 ## Update or edit table of contents
 
-You can update or edit the table of contents using the built-in context menu shown up by right-clicking it. Refer to the following screenshot.
+You can update or edit the table of contents using the built-in context menu shown up by right-clicking it.
 
 ![Table of Contents](images/table-of-contents.jpeg)
 
 * **Update Field**: Updates the headings in table of contents with same settings by searching the entire document.
-* **Edit Field**: Opens the built-in table of contents dialog and allows you to modify its settings.
+* **Edit Field**: Opens the built-in table of contents dialog and allows to modify its settings.
 
-You can also do it programmatically by using the exposed API. Refer to the following sample code.
+You can also do it programmatically by using the exposed API.
 
 ```typescript
 documenteditor.open(''); /*Open any existing document*/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spell Check in ##Platform_Name## Document Editor Component
-description: Learn here all about Spell Check in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about spell check in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Spell Check
 publishingplatform: ##Platform_Name##
@@ -77,15 +77,13 @@ this.container.documentEditor.spellChecker.languageID = 1033; //LCID of "en-us";
 
 Document editor provides option to spellcheck page by page when loading the documents. The default value of this property is false, so when opening the document spellcheck web API will be called for each word in the document. To optimize the frequency of spellcheck web API calls, you can enable this property.
 
-The following code example illustrates how to enable optimized spell checking.
-
 ```typescript
 this.container.documentEditor.spellChecker.enableOptimizedSpellCheck = true;
 ```
 
 ### Spell check dictionary cache
 
-Starting from `v20.1.0.xx`, we have optimized the performance and memory usage of spell checker by adding a static method to initialize the dictionaries with specified cache count.
+Starting from `v20.1.0.xx`, the performance and memory usage of spell checker has been optimized by adding a static method to initialize the dictionaries with specified cache count.
 
 By default, the spell checker holds only one language dictionary in memory. If you want to hold multiple dictionaries in memory, you need to set the cache limit by using `InitializeDictionaries` method as in the below example.
 
@@ -97,7 +95,7 @@ By default, the spell checker holds only one language dictionary in memory. If y
  SpellChecker.InitializeDictionaries(spellDictCollection, personalDictPath, cacheCount);
 ```
 
-If dictionaries are initialized using `InitializeDictionaries` method, then we should use default constructor of the `SpellChecker`to check spelling and get suggestion as in the below example code, it will prevent reinitialization of already loaded dictionaries.
+If dictionaries are initialized using `InitializeDictionaries` method, then default constructor of the `SpellChecker` should be used to check spelling and get suggestion as in the below example code, it will prevent reinitialization of already loaded dictionaries.
 
 ```csharp
 public string SpellCheck([FromBody] SpellCheckJsonData spellChecker)
@@ -119,7 +117,7 @@ Previously on every `SpellChecker.GetSuggestion()` method call, the `.aff` and d
 
 ## Context menu
 
-Right click on error word to open the context menu with spell check options. Please see below screenshot for your reference.
+Right click on error word to open the context menu with spell check options.
 
 ![Spell check option in context menu](images/spell-check-menu.png)
 
@@ -141,7 +139,7 @@ Ignore All: ignore all occurrence of a word from error in the entire document.
 
 ### Spelling
 
-Using this option, you can open spell check dialog. Please see below screenshot for your reference.
+Using this option, you can open spell check dialog.
 
 ![Spell check dialog](images/spell-check-dialog.png)
 

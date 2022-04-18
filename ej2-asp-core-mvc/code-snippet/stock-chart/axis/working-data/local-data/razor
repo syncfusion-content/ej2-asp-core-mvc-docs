@@ -23,4 +23,4 @@
         { date: new Date('2012-05-28'), open: 81.5571, high: 83.0714, low: 80.0743, close: 80.1414, volume: 480059584 },
         { date: new Date('2012-06-04'), open: 80.2143, high: 82.9405, low: 78.3571, close: 82.9028, volume: 517577005 },
     ]
-</script>       
+</script>

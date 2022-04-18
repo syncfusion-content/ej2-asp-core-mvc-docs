@@ -13,7 +13,7 @@ documentation: ug
 
 ## Localization
 
-The [`Localization`](../common/localization/) library allows you to localize default text content of the DocumentEditor. The document editor component has static text on some features (like find & replace, context-menu, dialogs) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the locale value and translation object. Please refer the sample link [RTL](https://ej2.syncfusion.com/aspnetcore/DocumentEditor/RightToLeft#/material).
+The [`Localization`](../common/localization/) library allows to localize default text content of the DocumentEditor. The document editor component has static text on some features (like find & replace, context-menu, dialogs) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the locale value and translation object. Please refer the sample link [RTL](https://ej2.syncfusion.com/aspnetcore/DocumentEditor/RightToLeft#/material).
 
 > Please refer the [Locale](https://github.com/syncfusion/ej2-locale/tree/master/src).
 
@@ -499,7 +499,7 @@ Open the page setup dialog | Open the page setup dialog.
 Add page numbers | Add page numbers.
 Find Text | Find text in the document (Ctrl+F).
 Toggle between the internal clipboard and system clipboard | Toggle between the internal clipboard and system clipboard.</br>Access to system clipboard through script is denied due to browsers security policy. Instead, </br> 1. You can enable internal clipboard to cut, copy and paste within the component.</br> 2. You can use the keyboard shortcuts (Ctrl+X, Ctrl+C and Ctrl+V) to cut, copy and paste with system clipboard.
-Current Page Number | The current page number in the document. Click or tap to navigate specific page.
+Current Page Number | The current page number is in the document. Click or tap to navigate specific page.
 Read only | Read only
 Protections | Protections
 Error in establishing connection with web server | Error in establishing connection with web server

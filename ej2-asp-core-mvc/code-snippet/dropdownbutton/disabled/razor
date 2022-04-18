@@ -1,4 +1,13 @@
-@Html.EJS().DropDownButton("disabled").Content("Message").Items((IEnumerable<object>)ViewBag.items).IconCss("ddb-icons e-message").Disabled(true).Render()
+@Html.EJS().DropDownButton("disabled").Content("Message").Items((IEnumerable<object>)ViewBag.items).IconCss("ddb-icons e-message").Render()
+@Html.EJS().Button("onDisable").CssClass("e-primary").Content("Disable").Render()
+
+<script>
+    document.getElementById('onDisable').onclick = function () {
+        var dropdownObj = ej.base.getInstance(document.getElementById('disabled'), ej.splitbuttons.DropDownButton);
+        dropdownObj.disabled = true;
+    }
+</script>
+
 
 <style>
 /* csslint ignore:start */

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Drop Down Button Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
+description: Learn here all about accessibility in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -18,10 +18,10 @@ The web accessibility makes web content and web applications more accessible for
 | Properties | Functionality |
 | ------------ | ----------------------- |
 | menu | Specified for an DropDownButton element. |
-| menuItem | Specified for an action items. |
+| menuItem | Specified for action items. |
 | aria-haspopup | Indicates the availability and type of interactive dropdown popup element. |
 | aria-expanded | Indicates whether the current state of the dropdown popup can be expanded or collapsed. |
-| aria-owns | Identifies elements to define a visual, functional, or contextual parent or child relationship between DOM(Document Object Model) elements where the hierarchy cannot be used to represent the relationship. |
+| aria-owns | Identifies elements to define a visual, functional, or contextual parent or child relationship between DOM (Document Object Model) elements where the hierarchy cannot be used to represent the relationship. |
 
 ## Keyboard interaction
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard in ##Platform_Name## Document Editor Component
-description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about clipboard in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Clipboard
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Clipboard
 
-Document editor takes advantage of system clipboard and allows you to copy or move a portion of the document into it in HTML format, so that it can be pasted in any application that supports clipboard.
+Document editor takes advantage of system clipboard and allows to copy or move a portion of the document into it in HTML format, so that it can be pasted in any application that supports clipboard.
 
 ## Copy
 
@@ -35,12 +35,10 @@ Due to limitations, you can paste contents from system clipboard as plain text i
 
 ## Local paste
 
-Document editor expose API to enable local paste within the control. On enabling this, the following is performed:
+Document editor exposes API to enable local paste within the control. On enabling this, the following is performed:
 
 * Selected contents will be stored to an internal clipboard in addition to system clipboard.
 * Clipboard paste will be overridden, and internally stored data that has formatted text will be pasted.
-
-Refer to the following sample code.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -63,7 +61,7 @@ Refer to the following sample code.
 
 
 
-By default, **enableLocalPaste** is false. When local paste is enabled for a document editor instance, you can paste contents programmatically if the internal clipboard has stored data during last copy operation. Refer to the following sample code.
+By default, **enableLocalPaste** is false. When local paste is enabled for a document editor instance, you can paste contents programmatically if the internal clipboard has stored data during last copy operation.
 
 ```typescript
 documentEditor.editor.pasteLocal();
@@ -81,7 +79,7 @@ documentEditor.editor.pasteLocal();
 
 ## Paste with formatting
 
-Document Editor provides support to paste the system clipboard data with formatting. To enable clipboard paste with formatting options, set the `EnableLocalPaste` property in Document Editor to false and use this .NET Standard library [`Syncfusion.EJ2.WordEditor.AspNet.Core`](<https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/>) by the web API service implementation. This library helps you to paste the system clipboard data with formatting.
+Document Editor provides support to paste the system clipboard data with formatting. To enable clipboard paste with formatting options, set the `EnableLocalPaste` property in Document Editor to false and use this .NET Standard library [`Syncfusion.EJ2.WordEditor.AspNet.Core`](<https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/>) by the web API service implementation. This library helps to paste the system clipboard data with formatting.
 
 You can paste your system clipboard data in the following ways:
 
