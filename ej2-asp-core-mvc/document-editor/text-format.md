@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Format in ##Platform_Name## Document Editor Component
-description: Learn here all about Text Format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about text format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Format
 publishingplatform: ##Platform_Name##
@@ -26,7 +26,7 @@ documenteditor.selection.characterFormat.bold = true;
 
 ```
 
-You can toggle the bold formatting based on existing value at selection. Refer to the following sample code.
+You can toggle the bold formatting based on existing value at selection.
 
 ```typescript
 **documenteditor.editor.toggleBold();
@@ -40,7 +40,7 @@ The Italic formatting for selected text can be get or set by using the following
 documenteditor.selection.characterFormat.italic= true|false;
 ```
 
-You can toggle the Italic formatting based on existing value at selection. Refer to the following sample code.
+You can toggle the Italic formatting based on existing value at selection.
 
 ```typescript
 documenteditor.editor.toggleItalic();
@@ -54,7 +54,7 @@ The underline style for selected text can be get or set by using the following s
 documenteditor.selection.characterFormat.underline='Single' | 'None';
 ```
 
-You can toggle the underline style of selected text based on existing value at selection by specifying a value. Refer to the following sample code.
+You can toggle the underline style of selected text based on existing value at selection by specifying a value.
 
 ```typescript
 documenteditor.editor.toggleUnderline('Single');
@@ -68,7 +68,7 @@ The strikethrough style for selected text can be get or set by using the followi
 documenteditor.selection.characterFormat.strikethrough='Single' | 'Normal';
 ```
 
-You can toggle the strikethrough style of selected text based on existing value at selection by specifying a value. Refer to the following sample code.
+You can toggle the strikethrough style of selected text based on existing value at selection by specifying a value.
 
 ```typescript
 documenteditor.editor.toggleStrikethrough();
@@ -143,8 +143,6 @@ documenteditor.selection.characterFormat.highlightColor= '#FFC0CB';
 ```
 
 ## Toolbar with options for text formatting
-
-Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard Shortcut in ##Platform_Name## Document Editor Component
-description: Learn here all about Keyboard Shortcut in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about keyboard shortcut in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Keyboard Shortcut
 publishingplatform: ##Platform_Name##
@@ -32,7 +32,7 @@ The following table lists the default keyboard shortcuts for formatting the para
 | Key combination | Description |
 |-----------------|-------------|
 |Ctrl + E | Selected paragraphs are center aligned.|
-|Ctrl + J |Selected paragraphs are justified.|
+|Ctrl + J | Selected paragraphs are justified.|
 |Ctrl + L | Selected paragraphs are left aligned.|
 |Ctrl + R | Selected paragraphs are right aligned.|
 |Ctrl + 1 | Single line spacing is applied for selected paragraphs.|

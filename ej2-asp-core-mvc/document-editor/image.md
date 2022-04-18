@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image in ##Platform_Name## Document Editor Component
-description: Learn here all about Image in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about image in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Image
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Images
 
-Document Editor supports common raster format images like PNG, BMP, JPEG, SVG and GIF. You can insert an image file or online image in the document using the `insertImage()` method. Refer to the following sample code.
+Document Editor supports common raster format images like PNG, BMP, JPEG, SVG and GIF. You can insert an image file or online image in the document using the `insertImage()` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,20 +38,20 @@ Image files will be internally converted to base64 string. Whereas, online image
 
 ## Image resizing
 
-Document editor provides built-in image resizer that can be injected into your application based on the requirements. This allows you to resize the image by dragging the resizing points using mouse or touch interactions. This resizer appears as follows.
+Document editor provides built-in image resizer that can be injected into your application based on the requirements. This allows to resize the image by dragging the resizing points using mouse or touch interactions. This resizer appears as follows.
 
 ![Image](images/image.JPG)
 
 ## Changing size
 
-Document editor expose API to get or set the size of the selected image. Refer to the following sample code.
+Document editor exposes API to get or set the size of the selected image.
 
 ```typescript
 documenteditor.selection.imageFormat.width = 800;
 documenteditor.selection.imageFormat.height = 800;
 ```
 
-> Images are stored and processed(read/write) as base64 string in DocumentEditor. The online image URL is preserved as a URL in DocumentEditor upon saving.
+> Images are stored and processed (read/write) as base64 string in DocumentEditor. The online image URL is preserved as a URL in DocumentEditor upon saving.
 
 ## Text wrapping style
 

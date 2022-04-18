@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Find And Replace in ##Platform_Name## Document Editor Component
-description: Learn here all about Find And Replace in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about find and replace in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Find And Replace
 publishingplatform: ##Platform_Name##
@@ -15,7 +15,7 @@ The document editor component searches a portion of text in the document through
 
 ## Options pane
 
-This provides the options to search for a portion of text in the document. After search operation is completed, the search results will be displayed in a list and options to navigate between them. The current occurrence of matched text or all occurrences with another text can be replaced by switching to `Replace` tab. This pane is opened using the keyboard shortcut `CTRL+F`. You can also open it programmatically using the following sample code.
+This provides the options to search for a portion of text in the document. After search operation is completed, the search results will be displayed in a list and options to navigate between them. The current occurrence of matched text or all occurrences with another text can be replaced by switching to `Replace` tab. This pane is opened using the keyboard shortcut `CTRL+F`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -54,8 +54,6 @@ The `Search` module of Document Editor exposes the following APIs:
 
 Using [`find()`](../api/document-editor/search/#find) method, you can find the immediate occurrence of specified text from current cursor position in the document.
 
-The following example code illustrates how to use find in Document editor.
-
 ```typescript
 documenteditor.search.find('Some text', 'None');
 ```
@@ -66,17 +64,15 @@ documenteditor.search.find('Some text', 'None');
 
 Using [`findAll()`](../api/document-editor/search/#findall) method, you can find all the occurrences of specified text in the whole document and highlight it with yellow.
 
-The following example code illustrates how to find All the text in the document.
-
 ```typescript
 documenteditor.search.findAll('Some text', 'None');
 ```
 
-> Second parameter is optional parameter and it denotes find Options. Possible values of find options are `'None' |'WholeWord' |'CaseSensitive'| 'CaseSensitiveWholeWord'`.
+> Second parameter is optional parameter and it denotes to find Options. Possible values of find options are `'None' |'WholeWord' |'CaseSensitive'| 'CaseSensitiveWholeWord'`.
 
 ## Search results
 
-The `SearchResults` class provides information about the search results after a search operation is completed that can be identified using the `searchResultsChange` event. This will expose the following APIs:
+The `SearchResults` class provides information about the search results after search operation is completed that can be identified using the `searchResultsChange` event. This will expose the following APIs:
 
 |API Name|Type |Description|
 |---|---|---|
@@ -89,8 +85,6 @@ The `SearchResults` class provides information about the search results after a 
 
 Using [`replaceAll`](../api/document-editor/searchResults/#replaceall), you can replace all the occurrences with specified text.
 
-The following example code illustrates how to use replace All in Document editor.
-
 ```typescript
 documentEditor.search.findAll ('Some text');
 // Replace all the searched text with word 'Mike'
@@ -99,14 +93,12 @@ documentEditor.search.searchResults.replaceAll("Mike");
 
 ### Replace
 
-Using [`insertText`](../api/document-editor/editor/#inserttext), you can replace the current searched text with specified text and it replace single occurrence.
+Using [`insertText`](../api/document-editor/editor/#inserttext), you can replace the current searched text with specified text and it replaces single occurrence.
 
->Note: This [`insertText`](../api/document-editor/editor/#inserttext) API accepts following control characters
+>Note: This [`insertText`](../api/document-editor/editor/#inserttext) API accepts following control characters.
 >* New line characters ("\r", "\r\n", "\n") - Inserts a new paragraph and appends the remaining text to the new paragraph.
 >* Line break character ("\v") - Moves the remaining text to start in new line.
 >* Tab character ("\t") - Allocates a tab space and continue the next character.
-
-The following example code illustrates how to find a text in the document and replace each occurrence of the text one by one programmatically.
 
 ```typescript
 container.documentEditor.search.findAll('works');
@@ -131,8 +123,6 @@ container.documentEditor.search.searchResults.clear();
 * The results are replaced with some other text, since it will be cleared automatically.
 * The results are cleared explicitly.
 
-Refer to the following code example.
-
 ```typescript
 documenteditor.searchResultsChange = function() {
 
@@ -141,7 +131,7 @@ documenteditor.searchResultsChange = function() {
 
 ## Customize find and replace
 
-Using the exposed APIs, you can customize the find and replace functionality in your application. Refer to the following sample code.
+Using the exposed APIs, you can customize the find and replace functionality in your application.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

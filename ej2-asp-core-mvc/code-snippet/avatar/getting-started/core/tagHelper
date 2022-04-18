@@ -16,7 +16,7 @@
 }
 
 .e-avatar {
-    background-image: url(./pic01.png);
+    background-image: url(@Url.Content("~/css/avatar/images/pic01.png"));
     margin: 2px;
 }
 </style>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Breadcrumb Component
-description: Checkout and learn about getting started with ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Breadcrumb Control
+description: Checkout and learn about getting started with ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -11,94 +11,87 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC
 
-> Starting with v19.3.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET MVC application to use our components.
+This section briefly explains about how to include [ASP.NET MVC Breadcrumb](https://www.syncfusion.com/aspnet-mvc-ui-controls/breadcrumb) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
-To get start with ASP.NET MVC application, need to ensure the following software to be installed on the machine.
+[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-1. .Net Framework 4.5 and above.
-2. ASP.NET MVC 4 or ASP.NET MVC 5
-3. Visual Studio
+## Create ASP.NET web application with Razor pages
 
-## Create ASP.NET MVC application
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
 
-Create ASP.NET MVC Application with default template project in Visual Studio 2017.
+* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
-![Default Template](./images/default-template-mvc.png)
+## Install ASP.NET MVC package in the application
 
-## Adding Syncfusion package
+Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. To add ASP.NET MVC controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
 
-Once your project created, we need to add Syncfusion EJ2 MVC package into your application by using **NuGet Package Manager**.
+> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-Open the **NuGet** package manager.
+> **NOTE:** If you Create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
 
-![Solution Explorer](./images/solution-explorer-mvc.png)
+## Add namespace
 
-Install the **Syncfusion.EJ2.MVC4** package to the application.
+Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
-![Nuget Demo](./images/nuget-demo-mvc.png)
-
-After Installation completed the Syncfusion DLL's will be included in the project.
-
-> You need to install **NewtonSoft.JSON** as dependency since **Syncfusion.EJ2.MVC** dependent to NewtonSoft.JSON package.
-
-Add **Syncfusion.EJ2** namespace reference in **Web.config** under **Views** folder.
-
-```cs
+```
 <namespaces>
     <add namespace="Syncfusion.EJ2"/>
 </namespaces>
-
 ```
 
-## Adding Scripts and CSS reference
+## Add style sheet
 
-You can add client side resource through **NuGet** package manager or [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) in the layout page **Views/Shared/_Layout.cshtml**
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Web application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
-NuGet Package Manager:
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-Install the **Syncfusion.EJ2.Javascript** package to the application.
-
-![Nuget Demo](./images/script-nuget.jpg)
-
-After Installation completed the script and CSS will be included in the project under the **Scripts** and **Content** folder.
-
-```html
 <head>
-@* Syncfusion Essential JS 2 Styles *@
-<link href="~/Content/ej2/material.css" rel="stylesheet" />
-
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="~/Scripts/ej2/ej2.min.js"></script>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 </head>
-```
 
-> **Syncfusion.EJ2.Javascript** includes typescript declaration files. If your application is not configured to compile typescript then exception may occur. To resolve this please refer [`here`](./how-to/avoid-typescript-compilation/).
+{% endhighlight %}
+{% endtabs %}
 
-CDN Link:
+## Add script reference
 
-```html
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <head>
-@* Syncfusion Essential JS 2 Styles *@
-<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
-
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
-```
 
-## Adding ScriptManager in layout page
+{% endhighlight %}
+{% endtabs %}
 
-Add **ScriptManager** to the bottom of the **_Layout.cshtml** page. The ScriptManager used to place our control initialization script in the page.
+## Register Syncfusion Script Manager
 
-```cs
-@Html.EJS().ScriptManager()
-```
+Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows. 
 
-## Add Breadcrumb Component
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-To initialize the Breadcrumb component add the below code to your **Index.cshtml** view page which is present under **Views/Home** folder.
+<body>
+...
+    <!-- Syncfusion ASP.NET MVC Script Manager -->
+    @Html.EJS().ScriptManager()
+</body>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add ASP.NET MVC Breadcrumb control
+
+Now, add the Syncfusion ASP.NET MVC Breadcrumb control in `~/Home/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -115,15 +108,8 @@ To initialize the Breadcrumb component add the below code to your **Index.cshtm
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/getting-started/demo/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Demo.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
-
-![Breadcrumb Sample](./images/default-mvc.PNG)
 
 ## Add Items to the Breadcrumb Component
 
@@ -144,15 +130,12 @@ Use `Items` property to bind items for Breadcrumb component. The below example d
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/getting-started/items/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Breadcrumb control will be rendered in the default web browser.
 
-
-Output be like the below.
-
-![Breadcrumb Sample](./images/items.PNG)
+![ASP.NET MVC Breadcrumb Control](images/items.PNG)
 
 ## Enable or Disable Navigation
 
@@ -177,14 +160,7 @@ The following example shows a Enable or disable navigation of Breadcrumb.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/getting-started/enable-disable/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/getting-started/enable-disable/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![Breadcrumb Sample](./images/enable-disable.png)
+![Enable or Disable Navigation in ASP.NET MVC Breadcrumb](./images/enable-disable.png)

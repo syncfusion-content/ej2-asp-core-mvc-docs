@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Table in ##Platform_Name## Document Editor Component
-description: Learn here all about Table in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about table in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Table
 publishingplatform: ##Platform_Name##
@@ -16,8 +16,6 @@ Tables are an efficient way to present information. Document editor can display 
 ## Create a table
 
 You can create and insert a table at cursor position by specifying the required number of rows and columns.
-
-Refer to the following sample code.
 
 ```typescript
  documenteditor.editor.insertTable(3,3);
@@ -52,9 +50,8 @@ You can add a column (or several columns) to the left or right of the column at 
 | Parameter | Type | Description |
 |----------|------|-------------|
 | left(optional) | boolean | This is optional and if omitted, it takes the value as false and inserts to the right of column at cursor position. |
-| count(optional) | number |  This is optional and if omitted, it takes the value as 1. |
+| count(optional) | number | This is optional and if omitted, it takes the value as 1. |
 
-Refer to the following sample code.
 
 ```typescript
 //Insert a column to the right of the column at cursor position.
@@ -103,7 +100,7 @@ documenteditor.selection.selectCell();
 
 ## Delete table
 
-Document editor allows you to delete the entire table. You can use the `deleteTable()` method of editor instance, if selection is in table. Refer to the following sample code.
+Document editor allows to delete the entire table. You can use the `deleteTable()` method of editor instance, if selection is in table.
 
 ```typescript
 documenteditor.editor.deleteTable();
@@ -111,7 +108,7 @@ documenteditor.editor.deleteTable();
 
 ## Delete row
 
-Document editor allows you to delete the selected number of rows. You can use the `deleteRow()` method of editor instance to delete the selected number of rows, if selection is in table. Refer to the following sample code.
+Document editor allows to delete the selected number of rows. You can use the `deleteRow()` method of editor instance to delete the selected number of rows, if selection is in table.
 
 ```typescript
 documenteditor.editor.deleteRow();
@@ -119,7 +116,7 @@ documenteditor.editor.deleteRow();
 
 ## Delete column
 
-Document editor allows you to delete the selected number of columns. You can use the `deleteColumn ()` method of editor instance to delete the selected number of columns, if selection is in table. Refer to the following sample code.
+Document editor allows to delete the selected number of columns. You can use the `deleteColumn ()` method of editor instance to delete the selected number of columns, if selection is in table.
 
 ```typescript
 documenteditor.editor.deleteColumn();
@@ -127,7 +124,7 @@ documenteditor.editor.deleteColumn();
 
 ## Merge cells
 
-You can merge cells vertically, horizontally, or combination of both to a single cell. To vertically merge the cells, the columns within selection should be even in left and right directions. To horizontally merge the cells, the rows within selection should be even in top and bottom direction. Refer to the following sample code.
+You can merge cells vertically, horizontally, or combination of both to a single cell. To vertically merge the cells, the columns within selection should be even in left and right directions. To horizontally merge the cells, the rows within selection should be even in top and bottom direction.
 
 ```typescript
 documenteditor.editor.mergeCells()

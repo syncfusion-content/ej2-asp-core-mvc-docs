@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Comments in ##Platform_Name## Document Editor Component
-description: Learn here all about Comments in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about comments in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Comments
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Comments
 
-Document editor allows you to add comments to documents. You can add, navigate and remove comments in code and from the UI.
+Document editor allows to add comments to documents. You can add, navigate and remove comments in code and from the UI.
 
 ## Add a new comment
 
@@ -35,7 +35,7 @@ documentEditor.selection.navigatePreviousComment();
 
 ## Delete comment
 
-Current comment can be be deleted using the below code snippet.
+Current comment can be deleted using the below code snippet.
 
 ```typescript
 documentEditor.editor.deleteComment();
@@ -51,11 +51,9 @@ documentEditor.editor.deleteAllComments();
 
 ## Protect the document in comments only mode
 
-Document Editor provides support for protecting the document with `CommentsOnly` protection. In this protection, user allowed to add or edit comments alone in the document.
+Document Editor provides support for protecting the document with `CommentsOnly` protection. In this protection, user is allowed to add or edit comments alone in the document.
 
 Document editor provides an option to protect and unprotect document using [`enforceProtection`](../api/document-editor/editor/#enforceprotection) and [`stopProtection`](../api/document-editor/editor/#stopprotection) API.
-
-The following example code illustrates how to enforce and stop protection in Document editor container.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

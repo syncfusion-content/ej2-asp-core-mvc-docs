@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Table Format in ##Platform_Name## Document Editor Component
-description: Learn here all about Table Format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about table format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Table Format
 publishingplatform: ##Platform_Name##
@@ -28,7 +28,7 @@ documenteditor.selection.cellFormat.topMargin=5.4;
 documenteditor.selection.cellFormat.bottomMargin=5.4;
 ```
 
-You can also define the default cell margins for a table. If the specific cell margin value is not defined explicitly in the cell formatting, the corresponding value will be retrieved from default cells margin of the table. Refer to the following sample code.
+You can also define the default cell margins for a table. If the specific cell margin value is not defined explicitly in the cell formatting, the corresponding value will be retrieved from default cells margin of the table.
 
 ```typescript
 //To change the left margin
@@ -65,7 +65,7 @@ documenteditor.selection.tableFormat.cellSpacing = 2;
 
 ## Cell vertical alignment
 
-The content is aligned within a table cell to `Top`, `Center`, or `Bottom`. You can customize this property of selected cells. Refer to the following sample code.
+The content is aligned within a table cell to `Top`, `Center`, or `Bottom`. You can customize this property of selected cells.
 
 ```typescript
 documenteditor.selection.cellFormat.verticalAlignment= 'Bottom';
@@ -73,7 +73,7 @@ documenteditor.selection.cellFormat.verticalAlignment= 'Bottom';
 
 ## Table alignment
 
-The tables are aligned in document editor to `Left`, `Right`, or `Center`. Refer to the following sample code.
+The tables are aligned in document editor to `Left`, `Right`, or `Center`.
 
 ```typescript
 documenteditor.selection.tableFormat.tableAlignment='Center';
@@ -81,7 +81,7 @@ documenteditor.selection.tableFormat.tableAlignment='Center';
 
 ## Cell width
 
-Set the desired width of table cells that will be considered when the table is layouted. Refer to the following sample code.
+Set the desired width of table cells that will be considered when the table is layouted.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -108,7 +108,7 @@ Set the desired width of table cells that will be considered when the table is l
 
 ## Table width
 
-You can set the desired width of a table in `Point` or `Percent` type. Refer to the following sample code.
+You can set the desired width of a table in `Point` or `Percent` type.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -135,7 +135,7 @@ You can set the desired width of a table in `Point` or `Percent` type. Refer to 
 
 ## Apply borders
 
-Document editor exposes API to customize the borders for table cells by specifying the settings. Refer to the following sample code.
+Document editor exposes API to customize the borders for table cells by specifying the settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -166,7 +166,7 @@ Document editor allows various row formatting such as height and repeat header.
 
 ### Row height
 
-You can customize the height of a table row as `Auto`, `AtLeast`, or `Exactly`. Refer to the following sample code.
+You can customize the height of a table row as `Auto`, `AtLeast`, or `Exactly`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
