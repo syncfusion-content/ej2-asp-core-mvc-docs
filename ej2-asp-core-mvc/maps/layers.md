@@ -45,6 +45,8 @@ In this example, the United States map shape is used as shape data by utilizing 
 {% endtabs %}
 {% endif %}
 
+
+
 ![Maps with sublayer](./images/Layers/layer.PNG)
 
 ## Displaying different layer in the view
