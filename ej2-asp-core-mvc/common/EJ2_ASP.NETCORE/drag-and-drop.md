@@ -164,6 +164,6 @@ To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/
 ## See also
 
 * [Define handle element for Draggable](https://ej2.syncfusion.com/documentation/api/base/draggable/#handle)<br/>
-* [Restricting Draggable within conainer](https://ej2.syncfusion.com/documentation/api/base/draggable/#dragarea)<br>
+* [Restricting Draggable within container](https://ej2.syncfusion.com/documentation/api/base/draggable/#dragarea)<br>
 * [Visual feedback of draggable element](https://ej2.syncfusion.com/documentation/api/base/draggable/#clone)<br>
 * [Accepting specific drag element in droppable](https://ej2.syncfusion.com/documentation/api/base/droppable/#accept)

@@ -52,7 +52,8 @@ The following steps is used to create the **Syncfusion ASP.NET Core (Essential J
 
     | <b>Project Type</b> | <b>.NET Core Version</b> | <b>Themes</b> | <b>Assets From</b> |
     |---------------------|--------------------------|---------------|--------------------|
-    | Web Application (Model-View-Controller) | 2.0, 2.1, 2.2, 3.0, 3.1, .NET 5.0, and .NET 6.0 | Material, Fabric, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
+    | ASP.NET Core Web App | .NET Core 3.1 and .NET 6.0 | Material, Fabric, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
+    | ASP.NET Core Web App (Model-View-Controller) | 2.0, 2.1, 2.2, 3.0, 3.1, .NET 5.0, and .NET 6.0 | Material, Fabric, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
     | Angular | 2.0, 2.1, 2.2, 3.0, 3.1, .NET 5.0, and .NET 6.0 | Material, Fabric, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
     | React | 2.0, 2.1, 2.2, 3.0, 3.1, .NET 5.0, and .NET 6.0 | Material, Fabric, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
 
