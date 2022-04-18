@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in ##Platform_Name## Drop Down List Component
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+description: Learn here all about data binding in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -30,7 +30,7 @@ Local data can be represented in two ways as described below.
 
 ### 1. Array of simple data
 
-The DropDownList has support to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
+The DropDownList has support to load array of primitive data such as strings and numbers. Here, both value and text field acts the same.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -212,8 +212,6 @@ Use the `WebApiAdaptor` to bind DropDownList with Web API created using OData.
 
 `OData` is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager.
 
-The following example for remote data binding using OData service.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -242,8 +240,6 @@ The following example for remote data binding using OData service.
 ### Offline mode
 
 To avoid post back for every action, set the DropDownList to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of `DataManager`.
-
-The following example for remote data binding and enabled offline mode.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

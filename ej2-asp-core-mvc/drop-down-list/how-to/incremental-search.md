@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Incremental Search in ##Platform_Name## Drop Down List Component
-description: Learn here all about Incremental Search in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+description: Learn here all about incremental search in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Incremental Search
 publishingplatform: ##Platform_Name##

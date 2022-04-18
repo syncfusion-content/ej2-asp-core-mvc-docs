@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style in ##Platform_Name## Drop Down List Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+description: Learn here all about style in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -103,9 +103,9 @@ Use the following CSS to add the mandatory indicator * to the float label elemen
 }
 ```
 
-## Customizing the background color of focus, hover, and active item's
+## Customizing the background color of focus, hover, and active item
 
-Use the following CSS to customize the background color of focus, hover and active item's.
+Use the following CSS to customize the background color of focus, hover and active item.
 
 ```css
 .e-dropdownbase .e-list-item.e-item-focus, .e-dropdownbase .e-list-item.e-active, .e-dropdownbase .e-list-item.e-active.e-hover, .e-dropdownbase .e-list-item.e-hover {

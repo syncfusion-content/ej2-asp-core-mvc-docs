@@ -151,7 +151,7 @@ Install required Syncfusion EJ2 Component packages as mentioned in “[**Install
 
     ![Install NuGet Packages](images/install-nuGet-package.png)
      
-Open up your "**Startup.cs**" file and edit your Configure function to looks like the below code snippet.
+Open up your "**Startup.cs**" file and edit your Configure function to look like the below code snippet.
 
 ```js
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -257,13 +257,13 @@ The required script and style files could be downloaded either form npm packages
 
    ![Offline wwwroot](images/offline-wwwrootin.png)
 
-6. Refer the script and style in `<head>` sectoin of `~/Views/Shared/_Layout.cshtml` file.
+6. Refer the script and style in `<head>` section of `~/Views/Shared/_Layout.cshtml` file.
 
    ![Offline layout](images/offline-layout.png)
 
 #### From Custom Resource Generator (CRG)
 
-From [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/), we can generate scripts and styles for the required Essential JS 2 for ASP.NET Core components by selcting from the component list to improve the performance.
+From [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/), scripts and styles can be generated for the required Essential JS 2 for ASP.NET Core components by selecting from the component list to improve the performance.
 
 1. Open the [CRG](https://crg.syncfusion.com/) utility site and select required component to generate the script and style files.
 
@@ -273,6 +273,6 @@ From [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-res
 
    ![Offline layout](images/offline-wwwrootcrg.png)
 
-3. Refer the script and style in `<head>` sectoin of `~/Views/Shared/_Layout.cshtml` file.
+3. Refer the script and style in `<head>` section of `~/Views/Shared/_Layout.cshtml` file.
 
    ![Offline layout](images/offline-layoutcrg.png)

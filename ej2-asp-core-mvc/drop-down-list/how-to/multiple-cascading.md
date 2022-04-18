@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiple Cascading in ##Platform_Name## Drop Down List Component
-description: Learn here all about Multiple Cascading in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+description: Learn here all about multiple cascading in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Multiple Cascading
 publishingplatform: ##Platform_Name##
@@ -10,8 +10,6 @@ documentation: ug
 
 
 # Preselect the list items in multiple cascading DropDownList
-
-The following example demonstrate about how to preselect the list items in multiple cascading DropDownList.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
