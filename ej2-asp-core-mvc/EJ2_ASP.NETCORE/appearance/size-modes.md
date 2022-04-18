@@ -10,7 +10,7 @@ documentation: ug
 
 # Size Mode for ASP.NET Core Controls
 
-Syncfusion ASP.NET Core controls support touch (bigger theme) and normal size modes. Below topics explains how to enable the same in your application.
+Syncfusion ASP.NET Core controls support touch (bigger theme) and normal size modes. The following topics explains how to enable the same in your application.
 
 ## Size mode for application
 
@@ -68,7 +68,7 @@ You can change the size mode of an application between touch and normal (mouse) 
 
 Follow the below steps to change the size mode for an application at runtime.
 
-1.Add the `e-bigger` CSS class in the `~/wwwroot/css/site.css` file.
+1. Add the `e-bigger` CSS class in the `~/wwwroot/css/site.css` file.
 
 {% tabs %}
 {% highlight c# tabtitle="~/site.css" %}
@@ -80,7 +80,7 @@ Follow the below steps to change the size mode for an application at runtime.
 {% endhighlight %}
 {% endtabs %}
 
-2.Refer to the following code for adding control and the JavaScript click action inside the script tag of `~/Pages/Index.cshtml` file to switch between touch and mouse mode using `e-bigger` class.
+2. Refer to the following code for adding control and the JavaScript click action inside the script tag of `~/Pages/Index.cshtml` file to switch between touch and mouse mode using `e-bigger` class.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}

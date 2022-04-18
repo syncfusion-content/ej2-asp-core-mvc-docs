@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Remove Item in ##Platform_Name## Drop Down List Component
-description: Learn here all about Remove Item in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to remove item in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Remove Item
 publishingplatform: ##Platform_Name##
@@ -10,8 +10,6 @@ documentation: ug
 
 
 # Remove an item from DropDownList
-
-The following example demonstrate about how to remove an item from DropDownList.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add Item in ##Platform_Name## Drop Down List Component
-description: Learn here all about Add Item in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to add item in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Item
 publishingplatform: ##Platform_Name##
@@ -12,8 +12,6 @@ documentation: ug
 # Add item in between in DropDownList
 
 You can add item in between based on item [index](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~Index.html). If you add new item without item index, item will be added as last item in list.
-
-The following example demonstrate how to add item in between in DropDownList.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

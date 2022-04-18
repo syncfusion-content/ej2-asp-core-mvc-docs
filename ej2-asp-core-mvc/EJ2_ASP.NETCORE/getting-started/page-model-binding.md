@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Model Binding in ##Platform_Name## | Syncfusion
-description: Checkout and learn about Model Binding in Razor Pages ##Platform_Name##.
+description: Checkout and learn about model binding in Razor Pages ##Platform_Name##.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

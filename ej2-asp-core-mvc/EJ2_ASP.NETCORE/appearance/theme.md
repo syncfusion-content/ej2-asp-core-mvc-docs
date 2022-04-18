@@ -43,7 +43,7 @@ Using the below approaches the themes can be referenced in the ASP.NET Core appl
 
 ## CDN Reference
 
-Instead of using a local resource on your server, you can use a cloud CDN to reference the theme style sheets. CDN Stands for "Content Delivery Network". A CDN is a group of servers distributed in different locations. While CDN are often used to host websites, they are commonly used to provide other types of downloadable data as well. Examples include software programs, images, videos, and streaming media.
+Instead of using a local resource on your server, you can use a cloud CDN to refer the theme style sheets. CDN Stands for "Content Delivery Network". A CDN is a group of servers distributed in different locations. While CDN are often used to host websites, they are commonly used to provide other types of downloadable data as well. Examples include software programs, images, videos, and streaming media.
 
 Syncfusion ASP.NET Core Themes are available in the CDN. Make sure that the version in the URLs matches the version of the Syncfusion Essential JS 2 ASP.NET Core Package you are using.
 
@@ -78,7 +78,7 @@ Syncfusion ASP.NET Core Themes are available in the CDN. Make sure that the vers
 
 In the ASP.NET Core application, the application theme can be changed dynamically by changing its style sheet reference in code.
 
-1.Modify the **~/Pages/Shared/_Layout.cshtml** page with the below code to implement a theme change dynamically using the dropdown by its id value in javascript function in the application.
+1. Modify the **~/Pages/Shared/_Layout.cshtml** page with the below code to implement a theme change dynamically using the dropdown by its id value in javascript function in the application.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -113,7 +113,7 @@ In the ASP.NET Core application, the application theme can be changed dynamicall
 {% endhighlight %}
 {% endtabs %}
 
-2.Add the following code for dropdown data on the **~/Pages/Index.cshtml.cs** model page.
+2. Add the following code for dropdown data on the **~/Pages/Index.cshtml.cs** model page.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml.cs" %}

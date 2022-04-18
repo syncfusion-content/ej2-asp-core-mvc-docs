@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core application in Visual Studio Mac
 
-This article provides a step-by-step instructions for building ASP.NET Core application with [Syncfusion ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) control using [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/).
+This article provides step-by-step instructions for building ASP.NET Core application with [Syncfusion ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) control using [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/).
 
 ## Prerequisites
 

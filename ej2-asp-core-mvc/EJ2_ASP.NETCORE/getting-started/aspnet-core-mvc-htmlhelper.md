@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core MVC using HTML Helper
 
-This article provides a step-by-step instructions for building ASP.NET Core MVC application with Calendar control using HTML helper in Visual Studio.
+This article provides step-by-step instructions for building ASP.NET Core MVC application with Calendar control using HTML helper in Visual Studio.
 
 ## Prerequisites
 
