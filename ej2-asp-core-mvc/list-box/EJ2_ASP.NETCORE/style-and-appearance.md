@@ -27,8 +27,6 @@ CSS Class | Purpose of Class
 
 You can use [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_CssClass) property to display the Listbox horizontally.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/listbox/horizontal-listbox/tagHelper %}
@@ -37,15 +35,3 @@ You can use [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% include code-snippet/listbox/horizontal-listbox/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/listbox/horizontal-listbox/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/listbox/horizontal-listbox/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
