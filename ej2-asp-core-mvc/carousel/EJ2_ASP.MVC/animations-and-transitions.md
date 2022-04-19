@@ -63,7 +63,7 @@ The following demo depicts the example for custom animation,
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/carousel/animations/carousel-item/razor %}
+{% include code-snippet/carousel/animations/custom-animation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/carousel/animations/custom-animation/custom-animation.cs %}
