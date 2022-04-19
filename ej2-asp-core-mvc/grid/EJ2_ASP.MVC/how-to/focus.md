@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Focus in ##Platform_Name## Grid Component
-description: Learn here all about Focus in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: How to move the focus to the corresponding cell while editing a row by double-clicking on a column in ##Platform_Name## Grid Component
+description: Learn how to move the focus to the corresponding cell while editing a row by double-clicking on a column in inline edit mode of Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Focus
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Focus the double clicked column in the edit form
+# Move the Focus to a Particular Cell Instead of First Cell While Editing a Row
 
-You can focus the double clicked column edit form an through an [`RecordDoubleClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Grids.Grid~RecordDoubleClick.html) event. With the help of this event you can focus the double clicked column in inline edit mode.
+The [`RecordDoubleClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Grids.Grid~RecordDoubleClick.html) event allows you to move the focus to the corresponding cell (the cell that you doubled-clicked to edit a row) instead of the first cell in an edit form. With the help of this event, you can focus the double-clicked column in inline edit mode.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
