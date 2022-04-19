@@ -1,0 +1,26 @@
+<div id="listbox-container">
+@Html.EJS().ListBox("listbox").CssClass("e-horizontal-listbox").DataSource((IEnumerable<object>)ViewBag.data).Render()
+</div>
+
+<style>
+#listbox-container {
+    margin: 20px auto 0;
+    width: 250px;
+}
+/* Custom css for horizontal listbox */
+.e-horizontal-listbox .e-list-parent {
+  display: inline-flex;
+  align-items: center;
+}
+
+.e-horizontal-listbox {
+  overflow-y: hidden;
+  height: 100px;
+}
+
+.e-horizontal-listbox .e-list-parent .e-list-item {
+  width: max-content;
+  line-height: 100px;
+  height: 100px;
+}
+</style>
