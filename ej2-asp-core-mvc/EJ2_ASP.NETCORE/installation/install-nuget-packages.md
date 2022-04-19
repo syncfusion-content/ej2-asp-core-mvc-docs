@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install Nuget Packages in ##Platform_Name## Component
-description: Learn here all about Install Nuget Packages in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to install Nuget packages in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Install Nuget Packages
 publishingplatform: ##Platform_Name##
@@ -18,7 +18,7 @@ documentation: ug
 
 ## Installation using Package Manager UI
 
-The NuGet **Package Manager UI** allows you to search, install, uninstall, and update Syncfusion ASP.NET Core JS2 NuGet packages in your applications and solutions. You can find and install the Syncfusion ASP.NET Core JS2 NuGet packages in your Visual Studio ASP.NET Core web application and this process is easy with the steps below:
+The NuGet **Package Manager UI** allows to search, install, uninstall, and update Syncfusion ASP.NET Core JS2 NuGet packages in your applications and solutions. You can find and install the Syncfusion ASP.NET Core JS2 NuGet packages in your Visual Studio ASP.NET Core web application and this process is easy with the steps below:
 
 1. To open the Manage NuGet packages UI, follow either one of the options below:
 
@@ -68,7 +68,7 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 
     ![ASP.NET Core Package Entry ](images/packageentry.png)
 
-4. Then run  [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) command to restores all the packages listed in the application file.
+4. Then run [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) command to restore all the packages listed in the application file.
 
     > Restoring is done automatically with **dotnet build** and **dotnet run** in .NET Core 2.0 and later.
 
@@ -76,13 +76,13 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 
 ## Installation using Package Manager Console
 
-The **Package Manager Console** saves NuGet packages installation time since you don't have to search for the Syncfusion.EJ2.AspNet.Core NuGet package which you want to install, and you can just type the installation command to install the appropriate Syncfusion ASP.NET Core JS2 NuGet package. Follow the instructions below to use the Package Manager Console to reference the Syncfusion ASP.NET Core JS2 component as NuGet packages in your ASP.NET Core web application.
+The **Package Manager Console** saves NuGet packages installation time since you don't have to search for the Syncfusion.EJ2.AspNet.Core NuGet package which you want to install, and you can just type the installation command to install the appropriate Syncfusion ASP.NET Core JS2 NuGet package. Follow the instructions below to use the Package Manager Console to refer the Syncfusion ASP.NET Core JS2 component as NuGet packages in your ASP.NET Core web application.
 
 1. To show the Package Manager Console, open your ASP.NET Core web application in Visual Studio and navigate to **Tools -> NuGet Package Manager -> Package Manager Console**.
 
     ![Package Manager Console ](images/console.png)
 
-2. The **Package Manager Console** will be shown at the bottom of the screen. You can install the Syncfusion ASP.NET Core JS2 NuGet packages by enter the following NuGet installation commands.
+2. The **Package Manager Console** will be shown at the bottom of the screen. You can install the Syncfusion ASP.NET Core JS2 NuGet packages by entering the following NuGet installation commands.
 
     ***Install specified Syncfusion ASP.NET Core JS2 NuGet package.***
 
