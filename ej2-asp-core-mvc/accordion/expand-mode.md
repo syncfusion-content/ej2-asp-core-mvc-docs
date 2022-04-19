@@ -74,7 +74,7 @@ Default expand mode of the Accordion is `Multiple`. It enables you to expand mor
 {% endif %}
 
 
-![Accordion Control with expand mode of multiple type](./images/multiple.PNG)
+![](./images/multiple.PNG)
 
 ## See Also
 
