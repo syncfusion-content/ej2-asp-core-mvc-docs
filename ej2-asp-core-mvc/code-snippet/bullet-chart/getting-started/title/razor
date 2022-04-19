@@ -1,7 +1,9 @@
-@Html.EJS().BulletChart("container")
-                        .Title("Revenue")
-                        .ValueField("value")
-                        .TargetField("target")
-                        .Minimum(0).Maximum(300).Interval(50)
-                        .DataSource(ViewBag.dataSource)
-                        .Render()
+@model List<BulletChartSample.Controllers.BulletChartData>
+
+@(Html.EJS().BulletChart("container")
+	.Title("Revenue")
+	.ValueField("value")
+	.TargetField("target")
+	.Minimum(0).Maximum(300).Interval(50)
+	.DataSource(ViewBag.dataSource)
+	.Render())
