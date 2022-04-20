@@ -69,7 +69,7 @@ Syncfusion ASP.NET Core Themes are available in the CDN. Make sure that the vers
 | Tailwind CSS | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/tailwind.css |
 | Tailwind Dark CSS | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/tailwind-dark.css |
 | Fluent | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css |
-| Fluent Dark | https://cdn.syncfusion.com/blazor/{{ site.ej2version }}/fluent-dark.css |
+| Fluent Dark | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent-dark.css |
 | Microsoft Office Fabric  | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fabric.css |
 | Microsoft Office Fabric Dark | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fabric-dark.css |
 | High Contrast  | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/highcontrast.css |
