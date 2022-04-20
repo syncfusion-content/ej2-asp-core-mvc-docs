@@ -30,7 +30,7 @@ When rendering the Carousel component using items binding, you can assign templa
 
 ## Populating Items using data source
 
-When rendering the Carousel component using data binding, you can assign a common template only for all items using the `itemTemplate` property. You cannot set the interval for each item. The following example code depicts the functionality as data binding.
+When rendering the Carousel component using data binding, you can assign a common template only for all items using the [ItemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_ItemTemplate) property. You cannot set the interval for each item. The following example code depicts the functionality as data binding.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -50,7 +50,7 @@ The Carousel items will be populated from the first index of the Carousel items 
 
 ### Select an item using the property
 
-Using the `selectedIndex` property of the Carousel component, you can set the slide to be populated at the time of initial rendering else you can switch to the particular slide item.
+Using the [SelectedIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_SelectedIndex) property of the Carousel component, you can set the slide to be populated at the time of initial rendering else you can switch to the particular slide item.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

@@ -14,7 +14,7 @@ documentation: ug
 
 ### Fade animation
 
-In Carousel, two built-in animations are provided for slide transitions. You can disable animation using the `animation` property. By default, Slide animation is applied for the transition between slides.
+In Carousel, two built-in animations are provided for slide transitions. You can disable animation using the [Animation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Animation) property. By default, Slide animation is applied for the transition between slides.
 
 The following demo depicts the example for fade animation,
 
@@ -29,7 +29,7 @@ The following demo depicts the example for fade animation,
 
 ### Custom animation
 
-In Carousel, you can use customized animation effects for slide transitions using the `customEffect` option of the `animation` property.
+In Carousel, you can use customized animation effects for slide transitions using the [CustomEffect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.CarouselAnimationSettings.html#Syncfusion_EJ2_Navigations_CarouselAnimationSettings_CustomEffect) option of the [Animation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Animation) property.
 
 The following demo depicts the example for custom animation,
 
@@ -59,7 +59,7 @@ Using the items property, you can set different intervals for each item to trans
 
 ## Auto play slides
 
-In the carousel, all slides transitions are performed continuously after the specified or default intervals. You can enable or disable the auto slide transition using the `autoPlay` property. The following example depicts the code to enable or disable the auto slide transitions.
+In the carousel, all slides transitions are performed continuously after the specified or default intervals. You can enable or disable the auto slide transition using the [AutoPlay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_AutoPlay) property. The following example depicts the code to enable or disable the auto slide transitions.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -72,7 +72,7 @@ In the carousel, all slides transitions are performed continuously after the spe
 
 ## Looping slides
 
-In the carousel, slides transitions are repeated continuously when you reach the last slide by default. You can enable or disable the infinite slide transition using the `loop` property. The following example depicts the code to enable or disable the infinite slide transitions.
+In the carousel, slides transitions are repeated continuously when you reach the last slide by default. You can enable or disable the infinite slide transition using the [Loop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Loop) property. The following example depicts the code to enable or disable the infinite slide transitions.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -85,7 +85,7 @@ In the carousel, slides transitions are repeated continuously when you reach the
 
 ## Slide changing events
 
-Using the `slideChanging` or `slideChanged` events of the Carousel component, you can perform sample end customization while the carousel items are switched.
+Using the [SlideChanging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_SlideChanging) or [SlideChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_SlideChanged) events of the Carousel component, you can perform sample end customization while the carousel items are switched.
 
 The following demo depicts the example for carousel events,
 
@@ -100,7 +100,7 @@ The following demo depicts the example for carousel events,
 
 ## Disable touch swiping
 
-In the carousel, we can able to perform swipe the carousel slides using touch actions by default. We had the option to enable or disable the swipe action using the `enableTouchSwipe` property. The following example depicts the code to disable the swipe action for the slide.
+In the carousel, we can able to perform swipe the carousel slides using touch actions by default. We had the option to enable or disable the swipe action using the [EnableTouchSwipe](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_EnableTouchSwipe) property. The following example depicts the code to disable the swipe action for the slide.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
