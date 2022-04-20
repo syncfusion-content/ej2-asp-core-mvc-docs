@@ -58,7 +58,7 @@ In the carousel, you can show the previous and next buttons only on mouse hover 
 {% include code-snippet/carousel/navigators/visible-hover/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/visible-hover/select-item-method.cs %}
+{% include code-snippet/carousel/navigators/visible-hover/visible-hover.cs %}
 {% endhighlight %}
 {% endtabs %}
 
