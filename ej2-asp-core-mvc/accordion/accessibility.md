@@ -43,7 +43,7 @@ Keyboard navigation is enabled by default. Possible keys are:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/accordion/accessibility/tagHelper %}
+{% include code-snippet/accordion/accessibility/tagHeler %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
 {% include code-snippet/accordion/accessibility/accessibility.cs %}

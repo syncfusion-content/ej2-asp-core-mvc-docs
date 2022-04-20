@@ -10,7 +10,7 @@ documentation: ug
 
 # Welcome to Syncfusion ASP.NET Core Controls of Essential JS 2
 
-Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been the built from the ground up to be lightweight, responsive, modular and touch friendly. It also available in other frameworks such as JavaScript and Angular, React.
+Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkt that has been the built from the ground up to be lightweight, responsive, modular and touch friendly. It also available in other frameworks such as JavaScript and Angular, React.
 
 ## How to best read this user guide
 
