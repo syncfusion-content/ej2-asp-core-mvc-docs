@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Feature Module in ##Platform_Name## Document Editor Component
-description: Learn here all about Feature Module in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about feature module in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Feature Module
 publishingplatform: ##Platform_Name##
@@ -15,16 +15,14 @@ Document editor features are segregated into individual feature-wise modules to 
 * **Print** - Prints the document.
 * **SfdtExport** - Exports the document as Syncfusion Document Text (.SFDT) file.
 * **Selection** - Selects a portion of the document and copy it to the clipboard.
-* **Search** - Searches specific text and navigate between the results.
+* **Search** - Searches specific text and navigates between the results.
 * **WordExport** - Exports the document as Word Document (.DOCX) file.
 * **TextExport** - Exports the document as Text Document (.TXT) file.
-* **Editor** - Performs all kind of editing operations.
+* **Editor** - Performs all kinds of editing operations.
 * **EditorHistory** - Maintains the history of editing operations so that you can perform undo and redo at any time.
 * User interface options such as context menu, options pane, image resizer, and dialog are available as individual modules.
 
 >In addition to injecting the required modules in your application, enable corresponding properties to extend the functionality for a document editor instance.
-
-Refer to the following table.
 
 | Module | Property to enable the functionality for a document editor instance |
 |---|---|

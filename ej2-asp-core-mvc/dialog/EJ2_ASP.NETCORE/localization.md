@@ -11,7 +11,7 @@ documentation: ug
 
 # Localization
 
-Localization library allows to localize the default text content of Dialog. In Dialog, The close button's tooltip text alone will be localize based on culture.
+Localization library allows to localize the default text content of Dialog. In Dialog, the close button's tooltip text alone will be localized based on the culture.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -19,7 +19,7 @@ Localization library allows to localize the default text content of Dialog. In D
 
 ## Loading translations
 
-To load translation object in an application use `load` function of `L10n` class.
+To load translation object in an application, use `load` function of `L10n` class.
 
 In the below sample, `French` culture is set to Dialog and change the close button's tooltip text.
 
@@ -45,9 +45,5 @@ In the below sample, `French` culture is set to Dialog and change the close butt
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![dialog](./images/dialog-locale.png)

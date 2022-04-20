@@ -38,7 +38,7 @@ If the user sets `Fade` effect, then the Dialog will open with `FadeIn` effect a
 </td></tr>
 </table>
 
-In the below sample, `Zoom` effect is enabled. So, The Dialog will open with `ZoomIn` and close with `ZoomOut` effects.
+In the below sample, `Zoom` effect is enabled. So, the Dialog will open with `ZoomIn` and close with `ZoomOut` effects.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

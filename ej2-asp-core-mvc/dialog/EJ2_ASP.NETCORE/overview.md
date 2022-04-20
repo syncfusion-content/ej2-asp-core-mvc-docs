@@ -15,7 +15,7 @@ The Dialog is a window that displays information to the user, and used to get th
 
 There are two types of Dialog:
 * Modal - The user should be working with Dialog before interacting with the parent application.
-* Modeless - It allows to interact with parent application even the Dialog opened on the page.
+* Modeless - It allows to interact with the parent application even when the Dialog is opened on the page.
 
 ## Key Features
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Import in ##Platform_Name## Document Editor Component
-description: Learn here all about Import in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to import in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Import
 publishingplatform: ##Platform_Name##
@@ -12,8 +12,6 @@ documentation: ug
 # Import
 
 In Document Editor, the documents are stored in its own format called **Syncfusion Document Text (SFDT)**.
-
-The following example shows how to open SFDT data in Document Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +69,7 @@ The following example shows how to import document from local machine.
 
 ## Convert word documents into SFDT
 
-You can convert word documents into SFDT format using the .NET Standard library [`Syncfusion.EJ2.WordEditor.AspNet.Core`](<https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/>) by the web API service implementation. This library helps you to convert word documents (.dotx,.docx,.docm,.dot,.doc), rich text format documents (.rtf), and text documents (.txt) into SFDT format. Refer to the following example.
+You can convert word documents into SFDT format using the .NET Standard library [`Syncfusion.EJ2.WordEditor.AspNet.Core`](<https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/>) by the web API service implementation. This library helps to convert word documents (.dotx,.docx,.docm,.dot,.doc), rich text format documents (.rtf), and text documents (.txt) into SFDT format.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
