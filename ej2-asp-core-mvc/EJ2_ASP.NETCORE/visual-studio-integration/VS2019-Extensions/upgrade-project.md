@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upgrade Project in ##Platform_Name## Component
-description: Learn here all about Upgrade Project in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to upgrade project in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Upgrade Project
 publishingplatform: ##Platform_Name##
@@ -10,13 +10,13 @@ documentation: ug
 
 # Upgrading Syncfusion ASP.NET Core application to latest version
 
-The Syncfusion ASP.NET Core migration add-in for Visual Studio allows you to migrate an existing Syncfusion ASP.NET Core application from one version of Essential Studio version to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
+The Syncfusion ASP.NET Core migration add-in for Visual Studio allows to migrate an existing Syncfusion ASP.NET Core application from one version of Essential Studio version to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
 
 ## IMPORTANT
 
 The Syncfusion ASP.NET Core (Essential JS 2) Web Application Project Migration utility is available from v16.3.0.17.
 
-> Before use, the Syncfusion ASP.NET Core Project Migration, check whether the **ASP.NET Core Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation/) help topic. Also, check whether the corresponding Essential Studio version build installed or not. If the Essential Studio version is not same for both the Extension and build, then the Project Migration will not be shown.
+> Before using the Syncfusion ASP.NET Core Project Migration, check whether the **ASP.NET Core Extensions - Syncfusion** is installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation/) help topic. Also, check whether the corresponding Essential Studio version build is installed or not. If the Essential Studio version is not same for both the Extension and build, then the Project Migration will not be shown.
 
 The steps below will assist you to upgrade the Syncfusion version in the Syncfusion ASP.NET Core application via Visual Studio 2019:
 
@@ -42,7 +42,7 @@ The steps below will assist you to upgrade the Syncfusion version in the Syncfus
 
     ![project migration](../images/project-migration.png)
 
-    > The versions are loaded from the Syncfusion ASP.NET Core NuGet packages which published in [NuGet.org](https://www.nuget.org/packages?q=Tags%3A%22aspnetcore%22syncfusion) and it requires internet connectivity.
+    > The versions are loaded from the Syncfusion ASP.NET Core NuGet packages which are published in [NuGet.org](https://www.nuget.org/packages?q=Tags%3A%22aspnetcore%22syncfusion) and it requires internet connectivity.
 
     **Assets From:** Load the Syncfusion Essential JS 2 assets to ASP.NET Core Project, from either NPM, CDN or Installed Location.
 
@@ -52,7 +52,7 @@ The steps below will assist you to upgrade the Syncfusion version in the Syncfus
 
 5. The Syncfusion Reference Assemblies, Scripts, and CSS are updated to the corresponding version in the project.
 
-    If you enabled project backup before migrating, the old project was saved in the specified backup path location, as shown below once the migration process completed
+    If you enabled project backup before migrating, the old project was saved in the specified backup path location, as shown below once the migration process is completed.
 
     ![BackupLocation](../images/BackupLocation.png)
 

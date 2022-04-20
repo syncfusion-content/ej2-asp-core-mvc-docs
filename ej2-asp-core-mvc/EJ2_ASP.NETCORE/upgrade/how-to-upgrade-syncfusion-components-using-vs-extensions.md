@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Upgrade Syncfusion Components Using Vs Extensions in ##Platform_Name## Component
-description: Learn here all about How To Upgrade Syncfusion Components Using Vs Extensions in Syncfusion ##Platform_Name## component of syncfusion and more.
+description: Learn here all about how to upgrade Syncfusion components using Vs extensions in Syncfusion ##Platform_Name## component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: How To Upgrade Syncfusion Components Using Vs Extensions
 publishingplatform: ##Platform_Name##
@@ -10,15 +10,15 @@ documentation: ug
 
 # Upgrading Syncfusion ASP.NET Core JS2 components to latest version
 
-The Syncfusion ASP.NET Core JS2 migration add-in for Visual Studio allows you to migrate an existing Syncfusion ASP.NET Core web application from one version of Essential Studio version to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
+The Syncfusion ASP.NET Core JS2 migration add-in for Visual Studio allows to migrate an existing Syncfusion ASP.NET Core web application from one version of Essential Studio version to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
 
 The steps below will assist you to upgrade the Syncfusion version in the Syncfusion ASP.NET Core Web application via Visual Studio 2019:
 
-> Before use the Syncfusion ASP.NET Core Web application Migration, check whether the Syncfusion ASP.NET Core JS2  Extension installed or not in Visual Studio Extension Manager by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation) help topic.
+> Before using the Syncfusion ASP.NET Core Web application Migration, check whether the Syncfusion ASP.NET Core JS2 Extension is installed or not in Visual Studio Extension Manager by clicking on the Extensions -> Manage Extensions -> Installed. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation) help topic.
 
 1. Open the Syncfusion ASP.NET Core Web application that uses the Syncfusion component.
 
-2. Open the Migration Wizard, by right-click the **Syncfusion ASP.NET Core Application** from Solution Explorer and select **Syncfusion Web**. Choose **Migrate the Syncfusion ASP.NET Core Project to Another Version…**
+2. Open the Migration Wizard, by right-clicking the **Syncfusion ASP.NET Core Application** from Solution Explorer and select **Syncfusion Web**. Choose **Migrate the Syncfusion ASP.NET Core Project to Another Version…**
 
     ![MigrationAddin](images/MigrationAddin.png)
 

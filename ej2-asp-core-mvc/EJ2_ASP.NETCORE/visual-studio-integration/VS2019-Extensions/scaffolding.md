@@ -12,7 +12,7 @@ documentation: ug
 
 Syncfusion provides **Visual Studio Scaffolding** for Syncfusion ASP.NET Core platform to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create Views and Controller action methods for Syncfusion ASP.NET Core DataGrid, Charts, Scheduler, Diagram, Tree Grid, Rich Text Editor, Document Editor, and PDF Viewer controls.
 
-> Check that at least one Entity Framework model exists, and the application has been compiled once. If no Entity Framework model exist in your application, refer to this [documentation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-3.1) to generate the Entity Framework model. After the model file has been added, check that the required DBContext and properties have been added. Build the application before try scaffolding. If any changes have been done in the model properties, rebuild the application once before performing scaffolding.
+> Check that at least one Entity Framework model exists, and the application has been compiled once. If no Entity Framework model exist in your application, refer to this [documentation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-3.1) to generate the Entity Framework model. After the model file has been added, check that the required DBContext and properties have been added. Build the application before trying scaffolding. If any changes have been done in the model properties, rebuild the application once before performing scaffolding.
 
 <!-- markdownlint-disable MD026 -->
 
@@ -20,9 +20,9 @@ Syncfusion provides **Visual Studio Scaffolding** for Syncfusion ASP.NET Core pl
 
 ## Add a scaffolded item
 
-The following steps explain you how to add a scaffolded item to your ASP.NET Core Web application.
+The following steps explain you to add a scaffolded item to your ASP.NET Core Web application.
 
-> Before use, the Syncfusion ASP.NET Core Scaffolding, check whether the **ASP.NET Core Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation/) help topic.
+> Before using the Syncfusion ASP.NET Core Scaffolding, check whether the **ASP.NET Core Extensions - Syncfusion** is installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation/) help topic.
 
  1. Right-click the **Controllers** folder in the Solution Explorer, click **Add**, and then select **New Scaffolded Item…**
 
@@ -56,7 +56,7 @@ The following steps explain you how to add a scaffolded item to your ASP.NET Cor
 
 Syncfusion provides **Scaffolding command-line** for Syncfusion ASP.NET Core to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create view file and Controller action methods for Syncfusion ASP.NET Core DataGrid, Charts, Scheduler, Diagram, Tree Grid, Rich Text Editor, Document Editor, and PDF Viewer controls.
 
-> Check that at least one Entity Framework model exists. If no Entity Framework model exist in your application, refer to this [documentation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-3.1) to generate the Entity Framework model. After the model file has been added, check that the required DBContext and properties are added. Now, build the application, and try scaffolding. If any changes made in the model properties, rebuild the application once before perform scaffolding.
+> Check that at least one Entity Framework model exists. If no Entity Framework model exist in your application, refer to this [documentation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-3.1) to generate the Entity Framework model. After the model file has been added, check that the required DBContext and properties are added. Now, build the application, and try scaffolding. If any changes made in the model properties, rebuild the application once before performing scaffolding.
 
 ## Install Command-line Scaffolding
 
@@ -74,9 +74,9 @@ Update **syncfusion.scaffolding** tool globally by using below command.
 
 The following steps explains how to add a scaffolded item from command-line to your ASP.NET Core application.
 
-> Before adding the scaffolded item from command-line, check whether the **dotnet-aspnet-codegenerator** tool is installed or not by **dotnet tool list -g** command in command prompt. if it is not installed, then install **dotnet-aspnet-codegenerator** tool globally by using this command **dotnet tool install -g dotnet-aspnet-codegenerator**.
+> Before adding the scaffolded item from command-line, check whether the **dotnet-aspnet-codegenerator** tool is installed or not by **dotnet tool list -g** command in command prompt. If it is not installed, then install **dotnet-aspnet-codegenerator** tool globally by using this command **dotnet tool install -g dotnet-aspnet-codegenerator**.
 
-1. After installed syncfusion.scaffolding tool, we can invoke syncfusion_scaffold command it shows the available controls
+1. After installing syncfusion.scaffolding tool, syncfusion_scaffold command is invoked and it shows the available controls.
 
     **syncfusion_scaffold**
 
@@ -104,7 +104,7 @@ The following steps explains how to add a scaffolded item from command-line to y
     | --is-all-day                      | Set IsALLDay for Scheduler Event.                                             | Scheduler           |
     | -did&#124;--diagram-id            | Id of Diagram layout.                                                         | Diagram             |
 
-3. If you run the syncfusion_scaffold [control] command, the parameters of control shown like below image.
+3. If you run the syncfusion_scaffold [control] command, the parameters of control is shown like below image.
 
     ![control parameter details](../images/controlparameter.png)
 
@@ -114,7 +114,7 @@ The following steps explains how to add a scaffolded item from command-line to y
 
     ![CommandLine Scaffold](../images/commandline.png)
 
-5. As we can see controller and view files generated successfully and also added the Syncfusion NuGet packages and styles which is required to render Syncfusion control.
+5. As controller and view files are generated successfully, add the Syncfusion NuGet packages and styles which is required to render Syncfusion control.
 
     ![ASPNETCore added Files](../images/Corefiles.png)
     ![ASPNETCore Service Changes](../images/CoreScript.png)

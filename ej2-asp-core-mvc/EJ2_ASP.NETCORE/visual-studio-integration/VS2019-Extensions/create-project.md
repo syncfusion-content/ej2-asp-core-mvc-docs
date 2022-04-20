@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create Project in ##Platform_Name## Component
-description: Learn here all about Create Project in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+description: Learn here all about create project in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Project
 publishingplatform: ##Platform_Name##
@@ -18,7 +18,7 @@ Syncfusion provides the **Visual Studio Project Templates** for the Syncfusion A
 
 The following steps is used to create the **Syncfusion ASP.NET Core (Essential JS 2) Web Application** through the **Visual Studio Project Template**.
 
-> Before use the Syncfusion ASP.NET Core Project Template, check whether the **ASP.NET Core Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation/) help topic.
+> Before using the Syncfusion ASP.NET Core Project Template, check whether the **ASP.NET Core Extensions - Syncfusion** is installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. If this extension is not installed, please install the extension by following the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation/) help topic.
 
 1. To create the Syncfusion ASP.NET Core (Essential JS 2) project, follow either one of the options below:
 
@@ -82,13 +82,13 @@ The following steps is used to create the **Syncfusion ASP.NET Core (Essential J
 
     **Angular:**
 
-    **NPM**: All the Syncfusion Angular NPM packages entries will be added in   package.json, it will automatically restore while build the application or save the  package.json file before compile the project.
+    **NPM**: All the Syncfusion Angular NPM packages entries will be added in package.json, it will automatically restore while building the application or save the package.json file before compiling the project.
 
     **Styles**: CSS entries will be added in index.html based on the selected .NET Core version.
 
     **React:**
 
-    **NPM**: All the Syncfusion React NPM packages entries will be added in package.json, it will automatically restore while build the application or save the package.json file before compile the project.
+    **NPM**: All the Syncfusion React NPM packages entries will be added in package.json, it will automatically restore while building the application or save the package.json file before compiling the project.
 
     **Styles**: CSS entries will be added in or index.html based on the selected project .Net Core version.
 

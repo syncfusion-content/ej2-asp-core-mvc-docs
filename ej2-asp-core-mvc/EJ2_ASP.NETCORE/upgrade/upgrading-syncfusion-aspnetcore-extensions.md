@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upgrading Syncfusion Aspnetcore Extensions in ##Platform_Name## Component
-description: Learn here all about Upgrading Syncfusion Aspnetcore Extensions in Syncfusion ##Platform_Name## component of syncfusion and more.
+description: Learn here all about upgrading Syncfusion Aspnetcore extensions in Syncfusion ##Platform_Name## component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Upgrading Syncfusion Aspnetcore Extensions
 publishingplatform: ##Platform_Name##
@@ -24,6 +24,6 @@ You can upgrade to our latest version from any installed Syncfusion version.
 
    ![Update ASP.NET Core Extensions](images/UpdateExtensionUI.png)
 
-3. Now close the Visual Studio and click on the Modify button in VSIX installer dialog.
+3. Now, close the Visual Studio and click on the Modify button in VSIX installer dialog.
 
    ![Update ASP.NET Core Extensions](images/InstallUpdatedVersion.png)

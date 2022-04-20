@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Check For Updates in ##Platform_Name## Component
-description: Learn here all about Check For Updates in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to check for updates in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Check For Updates
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Check for Updates
 
-Syncfusion provides the check for update extensions to find latest version of essential release was available, if it was available then provide option update most recent version of the Essential Studio release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
+Syncfusion provides the check for update extensions to find if the latest version of essential release was available, if it was available then provide option update most recent version of the Essential Studio release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
 
 > The Syncfusion Check for updates is available from v17.1.0.32.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create Samples in ##Platform_Name## Component
-description: Learn here all about Create Samples in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+description: Learn here all about create samples in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Samples
 publishingplatform: ##Platform_Name##
@@ -44,7 +44,7 @@ The following steps is used to create the Syncfusion ASP.NET Core (Essential JS 
 
 ## Project Configuration
 
-1. You can configure the project with following details.
+1. You can configure the project with the following details.
 
     **VS Version**: Choose the Visual Studio version and Framework.
 

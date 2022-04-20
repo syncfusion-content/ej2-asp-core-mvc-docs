@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Download And Installation in ##Platform_Name## Component
-description: Learn here all about Download And Installation in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+description: Learn here all about download and installation in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Download And Installation
 publishingplatform: ##Platform_Name##
@@ -14,7 +14,7 @@ Syncfusion publishes the Visual Studio extension in the [Visual Studio marketpla
 
 ## Prerequisites
 
-The following software prerequisites must be installed to install the Syncfusion ASP.NET Core extension, as well as to creating, adding snippet, converting, and upgrading Syncfusion ASP.NET Core applications.
+The following software prerequisites must be installed to install the Syncfusion ASP.NET Core extension, as well as for creating, adding snippet, converting, and upgrading Syncfusion ASP.NET Core applications.
 
 * [Visual Studio 2019 or later](https://visualstudio.microsoft.com/downloads).
 
@@ -22,7 +22,7 @@ The following software prerequisites must be installed to install the Syncfusion
 
 ## Install through the Visual Studio Manage Extensions
 
-The steps below assist you to how to install the Syncfusion ASP.NET Core extensions from **Visual Studio Manage Extensions**.
+The steps below assist you to install the Syncfusion ASP.NET Core extensions from **Visual Studio Manage Extensions**.
 
 1. Open the Visual Studio 2019.
 
@@ -50,7 +50,7 @@ The steps below assist you to how to install the Syncfusion ASP.NET Core extensi
 
 ## Install from the Visual Studio Marketplace
 
-The steps below illustrate how to download and install the Syncfusion ASP.NET Core extension from the Visual Studio Marketplace.
+The steps below illustrates how to download and install the Syncfusion ASP.NET Core extension from the Visual Studio Marketplace.
 
 1. Download the [Syncfusion ASP.NET Core Extensions](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreExtensions) from the Visual Studio Marketplace.
 
