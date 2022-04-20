@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET MVC Card Control
 
 This section briefly explains about how to include [ASP.NET MVC Card](https://www.syncfusion.com/aspnet-mvc-ui-controls/card) control in your ASP.NET MVC application using Visual Studio.
 

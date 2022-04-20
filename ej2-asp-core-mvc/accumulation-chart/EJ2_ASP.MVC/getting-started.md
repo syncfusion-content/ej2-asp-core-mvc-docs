@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Getting Started
+# Getting Started with ASP.NET MVC AccumulationChart Control
 
 This section briefly explains about how to include [ASP.NET MVC AccumulationChart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html) control in your ASP.NET MVC application using Visual Studio.
 
