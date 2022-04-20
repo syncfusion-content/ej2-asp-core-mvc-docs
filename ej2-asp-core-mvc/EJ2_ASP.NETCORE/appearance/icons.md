@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Icons in ##Platform_Name## control
-description: Learn here all about Icons with its customization in Syncfusion ##Platform_Name##. Also, listed the icons by theme-wise.
+description: Learn here all about icons with its customization in Syncfusion ##Platform_Name##. Also, listed the icons by theme-wise.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -14,9 +14,9 @@ The Syncfusion Essential JS 2 provides the set of `base64` formatted font icons,
 
 ## Steps to Use Icon
 
-1.Add a class `e-icons` to the HTML element that shows the icon. This class contains the font-family and common property of the font icons.
+1. Add a class `e-icons` to the HTML element that shows the icon. This class contains the font-family and common property of the font icons.
 
-2.Add the icon class with corresponding icon content from the [available icons](#available-icons). For example, the below code snippet represents the search icon class.
+2. Add the icon class with corresponding icon content from the [available icons](#icons-list). For example, the below code snippet represents the search icon class.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}

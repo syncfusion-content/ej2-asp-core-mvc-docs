@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Theme Studio in ##Platform_Name##
-description: Learn here all about Theme Studio in Syncfusion ##Platform_Name##. Customize and generate a theme for specific controls. 
+description: Learn here all about theme studio in Syncfusion ##Platform_Name##. Customize and generate a theme for specific controls. 
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -14,7 +14,7 @@ Theme Studio for Essential JS 2 can be used to customize a new theme from an exi
 
 ## Customizing theme color from theme studio
 
-The Essential JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion ASP.NET Core controls. All the Syncfusion ASP.NET Core control styles are derived from these [theme-based common variables](theme#common-variables).This common variable list is handled inside the theme studio application for customizing theme-based colors.
+The Essential JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion ASP.NET Core controls. All the Syncfusion ASP.NET Core control styles are derived from these [theme-based common variables](#common-variables). This common variable list is handled inside the theme studio application for customizing theme-based colors.
 
 **Step 1:** Open the [Syncfusion Theme Studio](https://ej2.syncfusion.com/themestudio/) application.
 
@@ -34,7 +34,7 @@ The Essential JS 2 themes are developed under the SCSS environment. Each theme h
 
 Using the theme studio, you can apply custom themes to a list of specific controls. This option is useful when you have integrated a selective list of Syncfusion ASP.NET Core controls in your application. The theme studio will filter the selected controls and customize the final output for those controls’ styles alone, reducing the final output file size.
 
-**Step 1:** Click the Filter icon in the top right corner and select the controls whose theme you want to customize.
+**Step 1:** Click the Filter icon in the top right corner and select the controls whose theme is to be customized.
 
 ![filter-icon](images/filter-icon.png)
 
@@ -42,7 +42,7 @@ Using the theme studio, you can apply custom themes to a list of specific contro
 
 ![filter-dialog](images/filter-dialog.png)
 
-**Step 3:** Now you can customize the colors in the theme customization section for the controls you selected.
+**Step 3:** Now, you can customize the colors in the theme customization section for the controls you selected.
 
 ![filter-customized](images/filter-customized.png)
 

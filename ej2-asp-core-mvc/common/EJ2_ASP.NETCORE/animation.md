@@ -22,7 +22,7 @@ The following list demonstrates the Syncfusion ASP.NET Core control documents th
 * [Chart](../chart/legend#enable-animation)
 * [Circular Gauge](../circular-gauge/gauge-pointers#animation)
 * [Context Menu](../context-menu/how-to/change-animation-settings)
-* [Dialog](../dialog/dialog/animation)
+* [Dialog](../dialog/animation)
 * [In-place Editor](../in-place-editor/how-to/custom-animation)
 * [ProgressBar](../progress-bar/animation)
 * [SideBar](../sidebar/how-to/sidebar-with-variation-animation)
