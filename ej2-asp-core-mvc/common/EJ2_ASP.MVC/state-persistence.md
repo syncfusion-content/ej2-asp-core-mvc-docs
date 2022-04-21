@@ -27,7 +27,7 @@ The Syncfusion ASP.NET MVC library supports persisting a control's state across 
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-## State Persistance Supported controls and Properties
+## State Persistence Supported controls and Properties
 
 The following table demonstrates the list of Syncfusion ASP.NET MVC controls that are supported with state persistence and describes the list of properties stored in the `localStorage`.
 
