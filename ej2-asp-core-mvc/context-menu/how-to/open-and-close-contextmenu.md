@@ -10,7 +10,9 @@ documentation: ug
 
 # Open and close ContextMenu
 
-Open and close the ContextMenu manually whenever required by using the open and close methods. In the following sample, to open the ContextMenu at specified position the [`open`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenu~OnOpen.html) method is used with `X` and `Y` coordinates and to close ContextMenu [`close`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenu~OnClose.html) method can be used.
+ContextMenu can be opened and closed programmatically whenever required by using the open and close methods.
+
+In the following example, the ContextMenu is opened using the `open` method at the specified position using `top` and `left`. Also, ContextMenu is closed using `close` method on ContextMenu item click or document click.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
