@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting started
+# Getting started with ASP.NET Core FileManager Control
 
 This section briefly explains about how to include [ASP.NET Core FileManager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in your ASP.NET Core application using Visual Studio.
 

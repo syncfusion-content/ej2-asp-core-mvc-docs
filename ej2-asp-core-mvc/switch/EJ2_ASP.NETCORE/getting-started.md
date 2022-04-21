@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core Switch Control
 
 This section briefly explains about how to include [ASP.NET Core Switch](https://www.syncfusion.com/aspnet-core-ui-controls/toggle-switch-button) control in your ASP.NET Core application using Visual Studio.
 

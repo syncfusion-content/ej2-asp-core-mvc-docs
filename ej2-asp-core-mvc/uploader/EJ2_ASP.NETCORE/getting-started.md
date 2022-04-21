@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core Uploader Control
 
 This section briefly explains about how to include [ASP.NET Core Uploader](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) control in your ASP.NET Core application using Visual Studio.
 

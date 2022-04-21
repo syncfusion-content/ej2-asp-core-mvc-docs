@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core Sidebar Control
 
 This section briefly explains about how to include [ASP.NET Core Sidebar](https://www.syncfusion.com/aspnet-core-ui-controls/sidebar) control in your ASP.NET Core application using Visual Studio.
 

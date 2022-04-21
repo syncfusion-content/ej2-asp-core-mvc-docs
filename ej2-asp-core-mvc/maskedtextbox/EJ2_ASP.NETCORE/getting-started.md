@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core MaskedTextBox Control
 
 This section briefly explains about how to include [ASP.NET Core MaskedTextBox](https://www.syncfusion.com/aspnet-core-ui-controls/input-mask) control in your ASP.NET Core application using Visual Studio.
 

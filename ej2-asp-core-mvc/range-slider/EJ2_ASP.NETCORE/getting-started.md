@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core RangeSlider Control
 
 This section briefly explains about how to include [ASP.NET Core RangeSlider](https://www.syncfusion.com/aspnet-core-ui-controls/range-slider) control in your ASP.NET Core application using Visual Studio.
 
