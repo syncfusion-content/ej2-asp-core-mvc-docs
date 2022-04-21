@@ -40,6 +40,7 @@ Using the below approaches the themes can be referenced in the ASP.NET Core appl
 1. [CDN](#cdn-reference) - Used to reference complete css via static web assets.
 2. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/) - Used to generate resources only for the selected (used) components.
 3. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
+4. [NPM packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet's in an application.
 
 ## CDN Reference
 
@@ -73,6 +74,80 @@ Syncfusion ASP.NET Core Themes are available in the CDN. Make sure that the vers
 | Microsoft Office Fabric  | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fabric.css |
 | Microsoft Office Fabric Dark | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fabric-dark.css |
 | High Contrast  | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/highcontrast.css |
+
+## NPM packages
+
+NPM is a node package manager. It is basically used for managing dependencies of various server-side dependencies. You can manage server-side dependencies manually. It is a command-line program for dealing with said repository that aids in package installation, version management, and dependency management. It is an online repository for the publishing of open-source `Node.js` projects.
+
+You can add the theme for the ASP.NET Core applications through **npm packages** using the **SCSS** files by following the below process.
+
+* Install Web Compiler to use `SCSS` files in ASP.NET Core applications.
+
+* To install Web Compiler, open Visual Studio and click the **Manage Extensions** in the toolbar.
+
+![Themes-npm-package-extension](images/themes-npm-package-extension.png)
+ 
+![Themes-npm-package-web-compiler](images/themes-npm-package-web-compiler.png)
+ 
+* Install the Syncfusion `node_modules` in this application using this command.
+
+{% tabs %}
+{% highlight c# tabtitle=".NET CLI" %}
+
+npm install @syncfusion/ej2
+
+{% endhighlight %}
+{% endtabs %}
+
+* Create a `SCSS` file as `~/wwwroot/styles/custom.scss` and provide the variables to override as shown below.
+
+{% tabs %}
+{% highlight c# tabtitle="~/custom.scss" %}
+
+    $primary: blue !default;
+    @import 'ej2/fabric.scss';
+
+{% endhighlight %}
+{% endtabs %}
+
+* Right-click the `SCSS` file and click the Web Compiler to compile the file.
+
+![Themes-npm-packages-compile](images/themes-npm-packages-compile.png) 
+
+* The `compilerconfig.json` file is created. Then, provide the location of the compiled CSS file and include a path as shown in the following code snippet.
+
+{% tabs %}
+{% highlight c# tabtitle="compilerconfig.json" %}
+
+[
+  {
+    "outputFile": "wwwroot/css/custom.css",
+    "inputFile": "wwwroot/css/custom.scss",
+    "useNodeSass": true,
+    "options": {
+      "includePath": "node_modules/@syncfusion"
+    }
+  }
+]
+
+{% endhighlight %}
+{% endtabs %}
+
+* The SCSS file has been compiled to the CSS file. Then, add this CSS file to the `<head>` element of the **~/Pages/Shared/_Layout.cshtml** page.
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="~/css/custom.css" />
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+* Run the application and see the fabric themes from installed npm packages were applied.
 
 ## Change theme dynamically
 
