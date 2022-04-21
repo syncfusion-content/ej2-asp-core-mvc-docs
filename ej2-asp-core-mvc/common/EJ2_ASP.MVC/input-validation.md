@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Input Form Validation in ##Platform_Name## control
+title: Input Form Validation in Syncfusion ##Platform_Name## control
 description: Learn here all about Input Form Validation in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common

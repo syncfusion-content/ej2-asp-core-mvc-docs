@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deployment in ##Platform_Name## control
+title: Deployment in Syncfusion ##Platform_Name## control
 description: Learn here all about Deployment in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common
