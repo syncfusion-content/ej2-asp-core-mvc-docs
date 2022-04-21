@@ -19,8 +19,9 @@ String platform='Install';
 			 
 			// def branchCommit = '"' + 'https://api.github.com/repos/syncfusion-content/install-docs/pulls/'+env.pullRequestId+'/files'
                          def branchCommit = '"'+'https://api.github.com/repos/syncfusion-content/ej2-asp-core-mvc-docs/pulls/'+env.pullRequestId+'/changes'
+		   echo "Branch Commit: "+branchCommmit
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
-
+	    echo "Output: "+ branchCommitDetails
             def ChangeFiles= branchCommitDetails.split('"filename": ');
 
             for (int i= 1; i < ChangeFiles.size();i++)
