@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET MVC Carousel Control
 
 This section briefly explains about how to include [ASP.NET MVC Carousel](https://www.syncfusion.com/aspnet-mvc-ui-controls/carousel) control in your ASP.NET MVC application using Visual Studio.
 
