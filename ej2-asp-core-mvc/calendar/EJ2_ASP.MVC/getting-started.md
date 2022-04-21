@@ -115,7 +115,7 @@ The following example shows a basic Calendar control.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Calendar control will be rendered in the default web browser.
 
-![ASP.NET MVC Calendar Control](calendar-control.png)
+![ASP.NET MVC Calendar Control](images/calendar-control.png)
 
 ## Setting the value within min and max dates
 

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core DropDownTree Control
 
 This section briefly explains about how to include [ASP.NET Core DropDownTree](https://www.syncfusion.com/aspnet-core-ui-controls/dropdown-tree) control in your ASP.NET Core application using Visual Studio.
 

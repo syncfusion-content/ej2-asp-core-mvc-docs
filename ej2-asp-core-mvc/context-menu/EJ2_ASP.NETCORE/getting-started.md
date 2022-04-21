@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core ContextMenu Control
 
 This section briefly explains about how to include [ASP.NET Core ContextMenu](https://www.syncfusion.com/aspnet-core-ui-controls/context-menu) control in your ASP.NET Core application using Visual Studio.
 

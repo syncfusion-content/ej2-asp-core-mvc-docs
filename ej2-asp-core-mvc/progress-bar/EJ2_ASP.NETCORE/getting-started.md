@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core ProgressBar Control
 
 This section briefly explains about how to include [ASP.NET Core ProgressBar](https://www.syncfusion.com/aspnet-core-ui-controls/progressbar) control in your ASP.NET Core application using Visual Studio.
 

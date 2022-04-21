@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core LinearGauge
+# Getting Started with ASP.NET Core LinearGauge Control
 
 This section briefly explains about how to include [ASP.NET Core LinearGauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in your ASP.NET Core application using Visual Studio.
 

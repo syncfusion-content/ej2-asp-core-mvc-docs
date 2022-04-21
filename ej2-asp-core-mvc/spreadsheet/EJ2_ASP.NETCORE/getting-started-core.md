@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core Spreadsheet Control
 
 This section briefly explains about how to include [ASP.NET Core Spreadsheet](https://www.syncfusion.com/aspnet-core-ui-controls/spreadsheet) control in your ASP.NET Core application using Visual Studio.
 
