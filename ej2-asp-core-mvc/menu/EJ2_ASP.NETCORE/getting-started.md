@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core Menu Control
 
 This section briefly explains about how to include [ASP.NET Core Menu](https://www.syncfusion.com/aspnet-core-ui-controls/menu-bar) control in your ASP.NET Core application using Visual Studio.
 

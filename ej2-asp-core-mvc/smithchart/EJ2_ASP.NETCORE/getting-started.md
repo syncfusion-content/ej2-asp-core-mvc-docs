@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core SmithChart Control
 
 This section briefly explains about how to include [ASP.NET Core SmithChart](https://www.syncfusion.com/aspnet-core-ui-controls/smith-chart) control in your ASP.NET Core application using Visual Studio.
 
