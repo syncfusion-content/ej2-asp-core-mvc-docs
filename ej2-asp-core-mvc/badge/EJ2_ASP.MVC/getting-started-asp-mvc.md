@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET MVC Badge Control
 
 This section briefly explains about how to include [ASP.NET MVC Badge](https://www.syncfusion.com/aspnet-mvc-ui-controls/badge) control in your ASP.NET MVC application using Visual Studio.
 

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET MVC Accordion Control
 
 This section briefly explains about how to include [ASP.NET MVC Accordion](https://www.syncfusion.com/aspnet-mvc-ui-controls/accordion) control in your ASP.NET MVC application using Visual Studio.
 
