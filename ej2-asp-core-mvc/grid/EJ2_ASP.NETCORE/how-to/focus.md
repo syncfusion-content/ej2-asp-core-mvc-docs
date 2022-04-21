@@ -11,7 +11,7 @@ documentation: ug
 
 # Move the Focus to a Particular Cell Instead of First Cell While Editing a Row
 
-The [`recordDoubleClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Grids.Grid~recordDoubleClick.html) event allows you to move the focus to the corresponding cell (the cell that you doubled-clicked to edit a row) instead of the first cell in an edit form. With the help of this event, you can focus the double-clicked column in inline edit mode.
+The [`recordDoubleClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Grids.Grid~recordDoubleClick.html) event allows you to move the focus to the corresponding cell (the cell that you doubled-clicked to edit a row) instead of the first cell in edit form. With the help of this event, you can focus the double-clicked column in inline edit mode.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
