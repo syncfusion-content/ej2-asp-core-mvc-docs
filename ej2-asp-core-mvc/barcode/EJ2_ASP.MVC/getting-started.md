@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET MVC Barcode Control
 
 This section briefly explains about how to include [ASP.NET MVC Barcode](https://www.syncfusion.com/aspnet-mvc-ui-controls/barcode) control in your ASP.NET MVC application using Visual Studio.
 
