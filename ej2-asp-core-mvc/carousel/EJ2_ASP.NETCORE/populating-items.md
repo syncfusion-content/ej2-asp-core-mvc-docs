@@ -19,8 +19,6 @@ In the Carousel, slides can be rendered in two ways as follows,
 
 When rendering the Carousel component using items binding, you can assign templates for each item separately or assign a common template to each item. You can also customize the slide transition interval for each item separately. The following example code depicts the functionality as item property binding.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/carousel-item/tagHelper %}
@@ -30,23 +28,9 @@ When rendering the Carousel component using items binding, you can assign templa
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/carousel/populating-items/carousel-item/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/carousel-item/carousel-item.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Populating Items using data source
 
-When rendering the Carousel component using data binding, you can assign a common template only for all items using the `itemTemplate` property. You cannot set the interval for each item. The following example code depicts the functionality as data binding.
-
-{% if page.publishingplatform == "aspnet-core" %}
+When rendering the Carousel component using data binding, you can assign a common template only for all items using the [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_ItemTemplate) property. You cannot set the interval for each item. The following example code depicts the functionality as data binding.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -57,18 +41,6 @@ When rendering the Carousel component using data binding, you can assign a commo
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/carousel/populating-items/item-datasource/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/item-datasource/item-datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Selection
 
 The Carousel items will be populated from the first index of the Carousel items and can be customized using the following ways,
@@ -78,9 +50,7 @@ The Carousel items will be populated from the first index of the Carousel items 
 
 ### Select an item using the property
 
-Using the `selectedIndex` property of the Carousel component, you can set the slide to be populated at the time of initial rendering else you can switch to the particular slide item.
-
-{% if page.publishingplatform == "aspnet-core" %}
+Using the [selectedIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_SelectedIndex) property of the Carousel component, you can set the slide to be populated at the time of initial rendering else you can switch to the particular slide item.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -91,23 +61,9 @@ Using the `selectedIndex` property of the Carousel component, you can set the sl
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/carousel/populating-items/select-item/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/select-item/select-item.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Select an item using the method
 
 Using the `prev` or `next` public method of the Carousel component, you can switch the current populating slide to a previous or next slide.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -117,15 +73,3 @@ Using the `prev` or `next` public method of the Carousel component, you can swit
 {% include code-snippet/carousel/populating-items/select-item-method/select-item-method.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/carousel/populating-items/select-item-method/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/select-item-method/select-item-method.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

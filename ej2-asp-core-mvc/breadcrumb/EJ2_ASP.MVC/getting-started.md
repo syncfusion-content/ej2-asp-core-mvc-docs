@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC
+# Getting Started with ASP.NET MVC Breadcrumb Control
 
 This section briefly explains about how to include [ASP.NET MVC Breadcrumb](https://www.syncfusion.com/aspnet-mvc-ui-controls/breadcrumb) control in your ASP.NET MVC application using Visual Studio.
 

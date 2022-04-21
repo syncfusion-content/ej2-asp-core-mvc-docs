@@ -10,7 +10,7 @@ documentation: ug
 
 # Accessibility
 
-The Carousel component has been designed, keeping in mind the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications, and applying the WAI-ARIA roles, states and properties along with keyboard support for people who use assistive devices. WAI-ARIA accessibility support is achieved through attributes like `aria-multiselectable`, `aria-disabled`, `aria-expanded`, `aria-selected`, and `aria-hidden`. It provides information about elements in a document for assistive technology. The component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and has been tested in major screen readers.
+The Carousel component has been designed, keeping in mind the [WAI-ARIA](https://www.w3.org/TR/wai-aria-practices/) specifications, and applying the WAI-ARIA roles, states and properties along with keyboard support for people who use assistive devices. WAI-ARIA accessibility support is achieved through attributes like `aria-roledescription`, `aria-label`, `aria-current`, `aria-live`, `aria-role` and `aria-hidden`. It provides information about elements in a document for assistive technology. The component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and has been tested in major screen readers.
 
 ## ARIA attributes
 
@@ -31,9 +31,9 @@ By default, keyboard navigation is enabled. This component implements keyboard n
 
 | Key                | Description                                                     |
 | ------------------ | --------------------------------------------------------------- |
-| <kbd>Alt + J</kbd> | keys to focus the carousel component (done at application end). |
-| <kbd>Arrows</kbd>  | keys to navigate between slides.                                |
-| <kbd>Home</kbd>    | to navigate to the first slide.                                 |
-| <kbd>End</kbd>     | to navigate to the last slide.                                  |
-| <kbd>Space</kbd>   | to play/pause the slide transitions.                            |
-| <kbd>Enter</kbd>   | to perform the respective action on its focus.                  |
+| <kbd>Alt + J</kbd> | Keys to focus the carousel component (done at application end). |
+| <kbd>Arrows</kbd>  | Keys to navigate between slides.                                |
+| <kbd>Home</kbd>    | To navigate to the first slide.                                 |
+| <kbd>End</kbd>     | To navigate to the last slide.                                  |
+| <kbd>Space</kbd>   | To play/pause the slide transitions.                            |
+| <kbd>Enter</kbd>   | To perform the respective action on its focus.                  |
