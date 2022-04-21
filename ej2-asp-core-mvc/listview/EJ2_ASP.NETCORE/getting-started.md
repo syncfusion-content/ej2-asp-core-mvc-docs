@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core ListView Control
 
 This section briefly explains about how to include [ASP.NET Core ListView](https://ej2.syncfusion.com/aspnetcore/documentation/listview/getting-started) control in your ASP.NET Core application using Visual Studio.
 

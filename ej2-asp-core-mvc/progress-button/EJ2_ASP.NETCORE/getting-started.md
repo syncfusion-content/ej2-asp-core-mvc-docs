@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core ProgressButton Control
 
 This section briefly explains about how to include [ASP.NET Core ProgressButton](https://www.syncfusion.com/aspnet-core-ui-controls/progress-button) control in your ASP.NET Core application using Visual Studio.
 

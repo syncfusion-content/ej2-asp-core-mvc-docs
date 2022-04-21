@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core
+# Getting Started with ASP.NET Core Breadcrumb Control
 
 This section briefly explains about how to include [ASP.NET Core Breadcrumb](https://www.syncfusion.com/aspnet-core-ui-controls/breadcrumb) control in your ASP.NET Core application using Visual Studio.
 
