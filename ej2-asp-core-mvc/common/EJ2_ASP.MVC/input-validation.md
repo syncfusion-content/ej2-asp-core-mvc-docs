@@ -34,12 +34,10 @@ The Syncfusion ASP.NET MVC UI input and editor controls can be validated by usin
     <div class="form-group">
         <label for="first-name">First Name:</label>
         @Html.EJS().TextBox("firstname").Placeholder("First Name").Width("25%").HtmlAttributes(firstNameAttribute).Render()
-        @*<ejs-textbox id="firstname" name="FirstName" placeholder="First Name" width="50%"></ejs-textbox>*@
     </div>
     <div class="form-group">
         <label for="last-name">Last Name:</label>
         @Html.EJS().TextBox("lastname").Placeholder("Last Name").Width("25%").HtmlAttributes(lastNameAttribute).Render()
-        @*<ejs-textbox id="lastname" name="LastName" placeholder="Last Name" width="50%"></ejs-textbox>*@
     </div>
     @Html.EJS().Button("submit").Content("Submit").Render()
 </form>
