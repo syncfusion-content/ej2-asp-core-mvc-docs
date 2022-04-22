@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## DashboardLayout Control
+title: Getting Started with ##Platform_Name## DashboardLayout | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## DashboardLayout control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -128,7 +128,7 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC DashboardLayout control will be rendered in the default web browser.
 
-![Dashboard content template](./images/content_template.PNG)
+![Dashboard content template](images/content_template.PNG)
 
 ### Setting the panels property using helper
 
@@ -159,10 +159,6 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![Dashboard tag helper](./images/tag_helper.PNG)
+![Dashboard tag helper](images/tag_helper.PNG)
 
 > You can refer to our [ASP.NET MVC Dashboard Layout](https://www.syncfusion.com/aspnet-mvc-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Dashboard Layout example](https://ej2.syncfusion.com/aspnetmvc/DashboardLayout/DefaultFunctionalities#/material) to knows how to present and manipulate data.

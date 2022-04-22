@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## ColorPicker Control
+title: Getting Started with ##Platform_Name## ColorPicker Control |Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## ColorPicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -142,7 +142,7 @@ The following sample shows the inline type rendering of ColorPicker.
 {% endtabs %}
 {% endif %}
 
-![ASP.NET MVC ColorPicker with Inline](images/color=picker-with-inline.png)
+![ASP.NET MVC ColorPicker with Inline](images/color-picker-with-inline.png)
 
 > The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](./how-to/hide-control-buttons) sample.
 
