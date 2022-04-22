@@ -10,11 +10,11 @@ documentation: ug
 
 # Welcome to Syncfusion ASP.NET Core Controls of Essential JS 2
 
-Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been the built from the ground up to be lightweight, responsive, modular and touch friendly. It also available in other frameworks such as JavaScript and Angular, React.
+Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It is also available in other frameworks such as JavaScript and Angular, React.
 
 ## How to best read this user guide
 
-* The best way to get started would be to read the "Getting Started" section of the documentation for the control that you would like to start using first. The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that we recommend reading end-to-end before starting to write code, all other information can be referred as needed.
+* The best way to get started would be to read the "Getting Started" section of the documentation for the control that you would like to start using first. The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that is recommended to read end-to-end before starting to write code, all other information can be referred as needed.
 
 * Now that you are familiar with the basics of using the control, the next step would be to start integrating the control into your application. A good starting point would be to refer to the code snippets in the [online sample browser](http://ej2.syncfusion.com/aspnetcore/) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
 
