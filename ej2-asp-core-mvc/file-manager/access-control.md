@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Access Control in ##Platform_Name## File Manager Component
-description: Learn here all about Access Control in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about access control in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Access Control
 publishingplatform: ##Platform_Name##
@@ -11,14 +11,14 @@ documentation: ug
 
 # Access Control
 
-The FileManager allows you to define access permissions for folders and files using a set of access rules to user(s).
+The FileManager allows to define access permissions for folders and files using a set of access rules to user(s).
 
 * [Access Rules](#access-rules)
 * [Permissions](#permissions)
 
 ## Access Rules
 
-The FileAccessController allows you to define security permissions for folders and files using a set of folder or file access rules.
+The FileAccessController allows to define security permissions for folders and files using a set of folder or file access rules.
 
 To set up access rules for folders (including their files and sub-folders) and individual files, use the SetRules() method. The following table represents the AccessRule properties available for file and folder:
 
@@ -60,16 +60,16 @@ The following syntax represent the access Rules for Default user using file or f
 
 ## Permissions
 
-It helps to explain how to apply security permission to file manager file or folder using access rules. The following table represent the value that determines the permission.
+It helps to explain how to apply security permission to file manager file or folder using access rules. The following table represents the value that determines the permission.
 
 | **Value** | **Description** |
 | --- | ---|
 | Allow | Allows you to do read, write, copy, and download operations. |
 | Deny | Denies you to do read, write, copy, and download operations. |
 
-Use the `Role` property to apply created roles to the file manager. After that, the file manager displays folder or file and allow permisssion based on assigned roles.
+Use the `Role` property to apply created roles to the file manager. After that, the file manager displays folder or file and allows permisssion based on assigned roles.
 
-The following syntax represent how to apply permission based on assigned roles.
+The following syntax represents how to apply permission based on assigned roles.
 
 * Permission denied for administrator to write a file or folder.
 
@@ -102,7 +102,7 @@ The following syntax represent how to allow or deny permission based on file or 
  new AccessRule { Path = "/", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, IsFile = false },
 ```
 
-The following example demonstrate the file manager rendered with access control support.
+The following example demonstrates the file manager rendered with access control support.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -129,6 +129,5 @@ The following example demonstrate the file manager rendered with access control 
 
 
 
-Output be like the below, when write the documents folder.
 
 ![Access Control](./images/access_control.PNG)

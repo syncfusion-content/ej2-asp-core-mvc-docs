@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding Custom Item To Toolbar in ##Platform_Name## File Manager Component
-description: Learn here all about Adding Custom Item To Toolbar in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about adding custom item to toolbar in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Adding Custom Item To Toolbar
 publishingplatform: ##Platform_Name##
@@ -12,7 +12,6 @@ documentation: ug
 
 The toolbar items can be customized using the [`toolbarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarSettings.html) API and [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarClick.html) event.
 
-The following example shows adding a custom item in the toolbar.
 
 The new toolbar button is added using [`toolbarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarSettings.html). The [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarClick.html) event is used to add an event handler to the new toolbar button.
 
@@ -41,6 +40,5 @@ The new toolbar button is added using [`toolbarSettings`](https://help.syncfusio
 
 
 
-Output be like the below.
 
 ![FileManager custom toolbar item](../images/custom_toolbar.png)
