@@ -18,7 +18,7 @@ Syncfusion publishes the Visual Studio extension in the below Visual Studio mark
 
 ## Prerequisites
 
-The following software prerequisites must be installed to install the Syncfusion ASP.NET Core extension, as well as to creating, adding snippet, converting, and upgrading Syncfusion ASP.NET Core applications.
+The following software prerequisites must be installed to install the Syncfusion ASP.NET Core extension, as well as for creating, adding snippet, converting, and upgrading Syncfusion ASP.NET Core applications.
 
 * [Visual Studio 2017 or later](https://visualstudio.microsoft.com/downloads).
 
@@ -26,7 +26,7 @@ The following software prerequisites must be installed to install the Syncfusion
 
 ## Install through the Visual Studio Manage Extensions
 
-The steps below assist you to how to install the Syncfusion ASP.NET Core extensions from **Visual Studio Manage Extensions**.
+The steps below assist you to install the Syncfusion ASP.NET Core extensions from **Visual Studio Manage Extensions**.
 
 1. Open the Visual Studio.
 
@@ -46,7 +46,7 @@ The steps below assist you to how to install the Syncfusion ASP.NET Core extensi
 
 6. Click the **Modify** button.
 
-7. After the installation is complete, open Visual Studio.
+7. After the installation is completed, open Visual Studio.
 
 8. Now, under the menu **Extensions**, you can use the Syncfusion extensions from the Visual Studio.
 
