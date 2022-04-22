@@ -168,4 +168,4 @@ Now, add the Syncfusion ASP.NET MVC Carousel control in `~/Home/Index.cshtml` pa
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Carousel control will be rendered in the default web browser.
 
-![ASP.NET MVC Carousel Control](images/carousel-control.png)
+![ASP.NET MVC Carousel Control](images/carousel-control.gif)
