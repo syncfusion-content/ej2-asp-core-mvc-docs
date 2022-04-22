@@ -3,7 +3,7 @@ node('content')
 timestamps
   {
      timeout(time: 7200000, unit: 'MILLISECONDS') {
-String platform='Install';
+String platform='ej2-asp-core-mvc';
    try
 	{   
 	
