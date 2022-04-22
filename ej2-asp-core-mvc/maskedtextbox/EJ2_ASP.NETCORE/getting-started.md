@@ -51,7 +51,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
 </head>
 
 {% endhighlight %}
