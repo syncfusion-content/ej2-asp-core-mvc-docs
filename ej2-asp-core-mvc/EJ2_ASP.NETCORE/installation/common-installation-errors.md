@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Common Installation Errors in ##Platform_Name## Component
-description: Learn here all about Common Installation Errors in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+description: Learn here all about common installation errors in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common Installation Errors
 publishingplatform: ##Platform_Name##
@@ -24,7 +24,7 @@ This article describes the most common installation errors, as well as the cause
 
 ## Unlocking the license installer using the trial key
 
-**Error Message:** Sorry,the provided unlock key is a trial unlock key and cannot be used to unlock the licensed version of our Essential Studio for ASP.NET Core installer.
+**Error Message:** Sorry, the provided unlock key is a trial unlock key and cannot be used to unlock the licensed version of our Essential Studio for ASP.NET Core installer.
 
 ![Installation Unlock Error](images\Installation-error-1.png)
 
@@ -122,6 +122,6 @@ This article describes the most common installation errors, as well as the cause
 
 **Suggestion 1:** <br /> 1.	We will ship our demos in the public documents folder by default. 
 2.	You have controlled folder access enabled on your machine, so our demos cannot be installed in the documents folder. If you need to install our demos in the Documents folder, follow the steps in this [link](https://support.microsoft.com/en-us/windows/allow-an-app-to-access-controlled-folders-b5b6627a-b008-2ca2-7931-7e51e912b034) and disable the controlled folder access.
-3.	You can enable this option after the installing our Syncfusion setup.
+3.	You can enable this option after installing our Syncfusion setup.
 
 **Suggestion 2:** <br /> 1.	If you do not want to disable controlled folder access, you can install our demos in another directory.

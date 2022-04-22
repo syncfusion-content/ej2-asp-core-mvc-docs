@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upgrading in ##Platform_Name## Component
-description: Learn here all about Upgrading in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+description: Learn here all about upgrading in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Upgrading
 publishingplatform: ##Platform_Name##
@@ -30,7 +30,7 @@ It is not required to install the Volume release before installing the Service P
 
 To upgrade from trial version,
 
-* If you are using Syncfusion controls from [nuget.org](https://www.nuget.org/packages?q=syncfusion), replace the currently used trial license key with a paid license key that can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of our website. Refer to [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-registration/) topic for more information regarding registering the license in the application.
+* If you are using Syncfusion controls from [nuget.org](https://www.nuget.org/packages?q=syncfusion), replace the currently used trial license key with a paid license key that can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of the website. Refer to [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-registration/) topic for more information regarding registering the license in the application.
 
 N> Starting with 2022 Volume 1 v20.1.0.47, all Syncfusion customers (evaluators and paid customers) who use Syncfusion installers or nuget packages from [nuget.org](https://www.nuget.org/packages?q=Syncfusion) must generate and register the corresponding platform and version license key in your projects.<br>
-For more information, please see [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/overview) help topic
+For more information, please see [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/overview) help topic.
