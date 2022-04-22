@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation Using Off Line Installer in ##Platform_Name## Component
+title: Installation Using Syncfusion Off Line Installer in ##Platform_Name## Component
 description: Learn here all about Installation Using Off Line Installer in Syncfusion ##Platform_Name## component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Installation Using Off Line Installer

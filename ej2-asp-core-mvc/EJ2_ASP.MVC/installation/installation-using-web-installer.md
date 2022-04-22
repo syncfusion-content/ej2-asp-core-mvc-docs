@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation Using Web Installer in ##Platform_Name## Component
+title: Installation Using Syncfusion Web Installer in ##Platform_Name## Component
 description: Learn here all about Installation Using Web Installer in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Installation Using Web Installer
