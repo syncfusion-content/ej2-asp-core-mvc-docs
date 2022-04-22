@@ -8,114 +8,125 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET MVC Chip Control
+
+This section briefly explains about how to include [ASP.NET MVC CircularGauge](https://www.syncfusion.com/aspnet-mvc-ui-controls/circular-gauge) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
-To get start with ASP.NET MVC application, need to ensure the following software to be installed on the machine.
+[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-1. .Net Framework 4.5 and above.
-2. ASP.NET MVC 4 or ASP.NET MVC 5
-3. Visual Studio
+## Create ASP.NET MVC application with HTML helper
 
-## Preparing ASP.NET MVC application
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
 
-The following steps to create ASP.NET MVC Application.
+* [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
-**Step 1:** Create ASP.NET MVC Application with default template project in Visual Studio.
+## Install ASP.NET MVC package in the application
 
-![Default Template](./images/default-template.png)
+Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. To add ASP.NET MVC controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
 
-**Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using `NuGet Package Manager`.
+> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-Open the `NuGet` package manager.
+> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
 
-![Solution Explorer](./images/solution-Explorer.png)
+## Add namespace
 
-Install the **Syncfusion.EJ2.MVC4** package to the application.
+Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
-![Nuget Demo](./images/nuget-demo.png)
-
-After installation complete, this will be included in the project. You can refer it from the Project Assembly Reference.
-
-> We need to install **NewtonSoft.JSON** as a dependency, since **Syncfusion.EJ2** dependent to `NewtonSoft.JSON` package.
-
-**Step 3:** Add Syncfusion.EJ2 namespace reference in `Web.Config`.
-
-```javascript
-
+```
 <namespaces>
     <add namespace="Syncfusion.EJ2"/>
 </namespaces>
-
 ```
 
-```javascript
+## Add style sheet
 
-<system.web>
-    <compilation>
-      <assemblies>
-        <add assembly="Syncfusion.EJ2" Version=15.3400.0.27, Culture=neutral, PublicKeyToken=31BF3856AD364E35"  />
-      </assemblies>
-    </compilation>
-  </system.web>
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
-```
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-**Step 4:** Add client side resources through [`CDN`](http://ej2.syncfusion.com/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the layout page **_Layout.cshtml.**
+<head>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+</head>
 
-```cs
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+{% endhighlight %}
+{% endtabs %}
 
-```
+## Add script reference
 
-**Step 5:** Add Script Manager and namespace in layout page **_Layout.cshtml.**
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
-```cs
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-@using Syncfusion.EJ2;
+<head>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
 
-    . . .
-    . . .
+{% endhighlight %}
+{% endtabs %}
+
+## Register Syncfusion Script Manager
+
+Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <body>
-    . . .
-    . . .
+...
+    <!-- Syncfusion ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
 </body>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
-**Step 6:** Now, we can add Syncfusion Essential JS 2 for ASP.Net Core components in any page you want.
+## Add ASP.NET MVC Chip control
 
-We are going to render `CircularGauge` component in **Index.cshtml** page.
+Now, add the Syncfusion ASP.NET MVC Chip control in `~/Home/Index.cshtml` page.
 
-```cs
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
-<h2> Essential JS 2 for ASP.NET MVC CircularGauge </h2>
+@Html.EJS().CircularGauge("container").Render();
 
- @Html.EJS().CircularGauge("container").Render();
+{% endhighlight %}
+{% endtabs %}
 
-```
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC CircularGauge control will be rendered in the default web browser.
+
+![ASP.NET MVC CircularGauge Control](images/circulargauge-control.png)
 
 ## Add Gauge Title
 
 You can add a title using `title` attribute to the circulargauge to provide quick information to the user.
 
-```cs
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
-<h2> Essential JS 2 for ASP.NET MVC CircularGauge </h2>
+@Html.EJS().CircularGauge("container").Title("Speed").Render();
 
- @Html.EJS().CircularGauge("container").Title("Speed").Render();
-
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Axis
 
 You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer below code snippet to add the axis range to circulargauge.
 
-```cs
-@Html.EJS().CircularGauge("container").Axes(axes =>
-axes.EndAngle(120).StartAngle(240).Radius("90%").Minimum(0).Maximum(120).Add()
-).Render();
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
+@Html.EJS().CircularGauge("container").Title("Speed").Axes(axes =>
+axes.EndAngle(120).StartAngle(240).Radius("90%").Minimum(0).Maximum(120).Add()).Render();
+
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC CircularGauge with Axis](images/circulargauge-with-axis.png)

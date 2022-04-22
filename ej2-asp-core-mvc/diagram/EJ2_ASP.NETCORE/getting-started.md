@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core
+# Getting Started with ASP.NET Core Diagram Control
 
 his section briefly explains about how to include [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) control in your ASP.NET Core application using Visual Studio.
 
@@ -50,7 +50,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
 </head>
 
 {% endhighlight %}
