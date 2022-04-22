@@ -13,7 +13,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core AccumulationChart Control
 
-This section briefly explains about how to include [ASP.NET Core AccumulationChart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core AccumulationChart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
