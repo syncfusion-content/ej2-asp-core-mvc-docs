@@ -1,7 +1,7 @@
 ---
 layout: post
 title: License Key Registration in ##Platform_Name## Component
-description: Learn here all about License Key Registration in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+description: Learn here all about License key registration in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: License Key Registration
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Register Syncfusion License key in ASP.NET Core application
 
-Syncfusion license key should be registered, if your project using Syncfusion ASP.NET Core packages reference from [nuget.org](https://www.nuget.org/packages?q=syncfusion) or from syncfusion installer. The generated license key is a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
+Syncfusion license key should be registered, if your project using Syncfusion ASP.NET Core packages refer from [nuget.org](https://www.nuget.org/packages?q=syncfusion) or from syncfusion installer. The generated license key is a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
 
 {% tabs %}
 {% highlight c# tabtitle="C#" %}
@@ -20,8 +20,8 @@ Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY
 {% endhighlight %}
 {% endtabs %}
 
-> * Place the license key between double quotes.  Also, ensure that Syncfusion.Licensing.dll is referenced in your project where the license key is being registered.
-* Syncfusion license validation is done offline during application execution and does not require internet access.  Apps registered with a Syncfusion license key can be deployed on any system that does not have an internet connection.
+> * Place the license key between double quotes. Also, ensure that Syncfusion.Licensing.dll is referenced in your project where the license key is being registered.
+* Syncfusion license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion license key can be deployed on any system that does not have an internet connection.
 
 ## For ASP.NET Core application using .NET 6.0
 
