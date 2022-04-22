@@ -90,7 +90,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 ## Add ASP.NET MVC ColorPicker control
 
-Now, add the Syncfusion ASP.NET MVC ColorPicker control in `~/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC ColorPicker control in `~/Views/Home/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
