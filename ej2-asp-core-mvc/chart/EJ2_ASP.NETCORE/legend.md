@@ -301,6 +301,19 @@ When the legend text exceed the container, the text can be wrapped by using the 
 {% endtabs %}
 {% endif %}
 
+### Set the label color based on series color
+
+You can set the legend label color based on series color by using chart's [loaded](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Loaded) event.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/legend-label/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="legend-label.cs" %}
+{% include code-snippet/chart/axis/legend/legend-label/legend-label.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Series Selection on Legend
 
 By default, legend click enables to collapse the series visibility. On other hand, if you need to select a series through legend click, disable the [`toggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility).

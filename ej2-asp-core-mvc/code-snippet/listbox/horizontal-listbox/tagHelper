@@ -1,32 +1,27 @@
-@{
-    ...
-    var data = new string[] { "BadmHennessey Venominton", "Bugatti Chiron", "Bugatti Veyron Super Sport", "SSC Ultimate Aero", "Koenigsegg CCR", "McLaren F1", "Aston Martin One- 77", "Jaguar XJ220" };
-}
-
 <div id="listbox-container">
-<ejs-listbox id="listbox" dataSource="data" cssClass="e-horizontal-listbox"></ejs-listbox>
+    <ejs-listbox id="listbox" dataSource="@ViewBag.data" cssClass="e-horizontal-listbox"></ejs-listbox>
 </div>
 
 <style>
-#listbox-container {
-    margin: 20px auto 0;
-    width: 250px;
-}
-/* Custom css for horizontal listbox */
-.e-horizontal-listbox .e-list-parent {
-  display: inline-flex;
-  align-items: center;
-}
+    #listbox-container {
+        margin: 20px auto 0;
+        width: 250px;
+    }
+    /* Custom css for horizontal listbox */
+    .e-horizontal-listbox .e-list-parent {
+        display: inline-flex;
+        align-items: center;
+    }
 
-.e-horizontal-listbox {
-  overflow-y: hidden;
-  height: 100px;
-}
+    .e-horizontal-listbox {
+        overflow-y: hidden;
+        height: 100px;
+    }
 
-.e-horizontal-listbox .e-list-parent .e-list-item {
-  width: max-content;
-  line-height: 100px;
-  height: 100px;
-}
+    .e-horizontal-listbox .e-list-parent .e-list-item {
+        width: max-content;
+        line-height: 100px;
+        height: 100px;
+      }
 </style>
 
