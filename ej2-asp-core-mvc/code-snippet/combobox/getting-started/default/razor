@@ -1,1 +1,4 @@
-@Html.EJS().ComboBox("games").Placeholder("Select a game").DataSource((IEnumerable<object>)ViewBag.data).Render()
+@using Syncfusion.EJ2
+@model List<string>
+
+@Html.EJS().ComboBox("games").Placeholder("Select a game").DataSource((IEnumerable<object>)Model).Render()

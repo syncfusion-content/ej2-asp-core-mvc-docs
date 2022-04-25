@@ -1,17 +1,18 @@
+@model List<object>
+
 <div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
-@Html.EJS().ContextMenu("contextmenu").Target("#contextmenutarget").Items((IEnumerable<object>)ViewBag.menuItems).Render()
+@Html.EJS().ContextMenu("contextmenu").Target("#contextmenutarget").Items((IEnumerable<object>)Model).Render()
 
 <style>
 
-#contextmenutarget {
-    border: 1px dashed;
-    height: 250px;
-    padding: 10px;
-    position: relative;
-    text-align: center;
-    color: gray;
-    line-height: 17;
-    font-size: 14px;
-}
-
+	#contextmenutarget {
+		border: 1px dashed;
+		height: 250px;
+		padding: 10px;
+		position: relative;
+		text-align: center;
+		color: gray;
+		line-height: 17;
+		font-size: 14px;
+	}
 </style>

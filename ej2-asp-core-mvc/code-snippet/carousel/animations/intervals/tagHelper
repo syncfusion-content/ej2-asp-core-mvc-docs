@@ -4,11 +4,11 @@
     <div class="control-container">
         <ejs-carousel id="carousel">
             <e-carousel-items>
-                <e-carousel-item template='<div class="fs-5">Slide 1</div>' interval="3000"></e-carousel-item>
-                <e-carousel-item template='<div class="fs-5">Slide 2</div>' interval="1000"></e-carousel-item>
-                <e-carousel-item template='<div class="fs-5">Slide 3</div>' interval="2000"></e-carousel-item>
-                <e-carousel-item template='<div class="fs-5">Slide 4</div>' interval="5000"></e-carousel-item>
-                <e-carousel-item template='<div class="fs-5">Slide 5</div>' interval="6000"></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 1</div>' interval="3000"></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 2</div>' interval="1000"></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 3</div>' interval="2000"></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 4</div>' interval="5000"></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 5</div>' interval="6000"></e-carousel-item>
             </e-carousel-items>
         </ejs-carousel>
     </div>
@@ -21,12 +21,11 @@
         width: 500px;
     }
 
-    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-prev,
-    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-next,
-    .e-carousel .e-carousel-items.e-carousel-slide-animation .e-carousel-item.e-active {
+    .e-carousel .slide-content {
         align-items: center;
-        border: 1px solid #f5f5f5;
         display: flex;
+        font-size: 1.25rem;
+        height: 100%;
         justify-content: center;
     }
 </style>
