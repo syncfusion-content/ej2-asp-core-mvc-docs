@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render Filemanager In Internet Explorer in ##Platform_Name## File Manager Component
+title: Render Filemanager In Internet Explorer in ##Platform_Name## File Manager
 description: Learn here all about how to render Filemanager in Internet Explorer in Syncfusion ##Platform_Name## File Manager component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Render Filemanager In Internet Explorer

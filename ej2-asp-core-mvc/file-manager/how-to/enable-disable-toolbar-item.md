@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable Disable Toolbar Item in ##Platform_Name## File Manager Component
+title: Enable Disable Toolbar Item in ##Platform_Name## File Manager | Syncfusion
 description: Learn here all about how to enable or disable toolbar item in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Enable Disable Toolbar Item
