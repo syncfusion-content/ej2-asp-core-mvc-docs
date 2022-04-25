@@ -3,7 +3,7 @@ node('content')
 timestamps
   {
      timeout(time: 7200000, unit: 'MILLISECONDS') {
-String platform='Install';
+String platform='ej2-asp-core-mvc';
    try
 	{   
 	
@@ -18,7 +18,7 @@ String platform='Install';
 		     checkout scm
 			 
 			// def branchCommit = '"' + 'https://api.github.com/repos/syncfusion-content/install-docs/pulls/'+env.pullRequestId+'/files'
-                         def branchCommit = '"'+'https://api.github.com/repos/syncfusion-content/install-docs/pulls/'+env.pullRequestId+'/changes'
+                         def branchCommit = '"'+'https://api.github.com/repos/syncfusion-content/ej2-asp-core-mvc-docs/pulls/'+env.pullRequestId+'/files'
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
 
             def ChangeFiles= branchCommitDetails.split('"filename": ');
