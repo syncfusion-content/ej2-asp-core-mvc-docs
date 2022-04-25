@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## File Manager Component
+title: Customization in ##Platform_Name## File Manager | Syncfusion
 description: Learn here all about customization in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
