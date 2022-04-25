@@ -8,10 +8,10 @@
     </ejs-chart>
 
 <script type="text/javascript">
-    var colors = ['#357CD2', '#404041', '#00BDAE'];
+    var colors = ['#00BDAE', '#404041', '#357CD2'];
 
     function onChartLoaded(args) {
-        let chart = document.querySelector('.e-chart');;
+        let chart = document.querySelector('.e-chart');
         let legendTextCol = chart.querySelectorAll('[id*="chart_legend_text_"]');
         for (let i = 0; i < legendTextCol.length; i++) {
             //set the color to legend label

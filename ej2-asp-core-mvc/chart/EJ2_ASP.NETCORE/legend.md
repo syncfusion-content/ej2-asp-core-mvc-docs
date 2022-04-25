@@ -314,6 +314,8 @@ You can set the legend label color based on series color by using chart's [loade
 {% endhighlight %}
 {% endtabs %}
 
+![ASP.NET Core Chart Label Color](../images/legend-label.png)
+
 ## Series Selection on Legend
 
 By default, legend click enables to collapse the series visibility. On other hand, if you need to select a series through legend click, disable the [`toggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility).

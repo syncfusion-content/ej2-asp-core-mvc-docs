@@ -9,7 +9,7 @@
 ).Title("Olympic Medals").Loaded("onChartLoaded").Render()
   
 <script type="text/javascript">
-    var colors = ['#357CD2', '#404041', '#00BDAE'];
+    var colors = ['#00BDAE', '#404041', '#357CD2'];
     function onChartLoaded(args) {
         let chart = document.querySelector('.e-chart');;
         let legendTextCol = chart.querySelectorAll('[id*="chart_legend_text_"]');
