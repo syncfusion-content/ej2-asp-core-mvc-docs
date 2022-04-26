@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview in ##Platform_Name## File Manager Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about overview in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -26,13 +26,13 @@ The **File Manager** is a graphical user interface component for managing the fi
 
 ### View preferences
 
-The **Views** property allows you to customize, how the folders or files in the file system should be displayed in the file manager.
+The **Views** property allows to customize, how the folders or files in the file system should be displayed in the file manager.
 
 The File Manager provides the following two view options to change the layout of the File Manger window.
 
 * `Details view` - In the Details view, the files are displayed in a sorted listed order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type.
 
-* `Large Icon view` - In the Large view, the thumbnail icons will be shown in a larger size, which displays the data in a form that best suits their content.  For example, the **preview** of the image will be displayed for image and video type files and extension thumbnails will be displayed for other type files.
+* `Large Icon view` - In the Large view, the thumbnail icons will be shown in a larger size, which displays the data in a form that best suits their content. For example, the **preview** of the image will be displayed for image and video type files and extension thumbnails will be displayed for other type files.
 
 ### Navigation in File Managers
 
@@ -46,7 +46,7 @@ Types of navigation support available in File Manager are:
 
 ### Action Menus
 
-* `Context Menu` - The File Manager control provided with context-menu support to perform list of file operations with the files and folders. It appears when a file or folder is right-clicked, and it appears with varying options based on the target such as a file or a folder. The context menu items can be customized according to user preference.
+* `Context Menu` - The File Manager control provided with context-menu support to perform the list of file operations with the files and folders. It appears when a file or folder is right-clicked, and it appears with varying options based on the target such as a file or a folder. The context menu items can be customized according to the user preference.
 
 * `Toolbar` - The toolbar contains the list of tools to perform various operations like file upload or download, view switching, and more. The toolbar can also be configured to add any custom functionality to be performed with the file system.
 

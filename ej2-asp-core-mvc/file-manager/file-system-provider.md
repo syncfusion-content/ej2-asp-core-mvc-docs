@@ -301,7 +301,7 @@ After registering the File Transfer Protocol details, just build and run the pro
 
 ## SQL database file system provider
 
-In ASP.NET Core, SQL database file system provider allows the users to manage the file system being maintained in a SQL database table. Unlike the other file system providers, the SQL database file system provider works on ID basis. Here, each file and folder have a unique ID based on which all the file operations will be performed. To get started, clone the [sql-server-database-aspcore-file-provider](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider) using the following command.
+In ASP.NET Core, SQL database file system provider allows the users to manage the file system being maintained in a SQL database table. Unlike the other file system providers, the SQL database file system provider works on ID basis. Here, each file and folder has a unique ID based on which all the file operations will be performed. To get started, clone the [sql-server-database-aspcore-file-provider](https://github.com/SyncfusionExamples/sql-server-database-aspcore-file-provider) using the following command.
 
 ```typescript
 
@@ -364,7 +364,7 @@ After configuring the connection, just build and run the project. Now, the proje
 
 ## NodeJS file system provider
 
-In ASP.NET Core, NodeJS file system provider allows the users to manage the files and folders in a physical file system. It provides methods for performing all basic file operations like creating a folder, copy, move, delete, and download files and folders in the file system. We can use of the NodeJS file system provider either by installing the [ej2-filemanager-node-filesystem](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-node-filesystem) package or by cloning the [file system provider](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem) from the GitHub.
+In ASP.NET Core, NodeJS file system provider allows the users to manage the files and folders in a physical file system. It provides methods for performing all basic file operations like creating a folder, copy, move, delete, and download files and folders in the file system. The NodeJS file system provider can be used either by installing the [ej2-filemanager-node-filesystem](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-node-filesystem) package or by cloning the [file system provider](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem) from the GitHub.
 
 ### Using ej2-filemanager-node-filesystem package
 
@@ -389,7 +389,7 @@ git clone  https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem
 
 ```
 
-* After cloning, open the root folder and run the command **npm install** command.
+* After cloning, open the root folder and run the **npm install** command.
 
 After installing the packages, set the root folder directory of the physical file system in the package JSON under scripts sections as follows.
 
@@ -401,7 +401,7 @@ After installing the packages, set the root folder directory of the physical fil
 
 > By default, the root directory will be configured to set `C:/Users` as the root directory.
 
-To set the port in which the project to be hosted and the root directory of the file system. Run the following command.
+To set the port in which the project is to be hosted and the root directory of the file system, run the following command.
 
 ```typescript
 
@@ -411,7 +411,7 @@ set PORT=3000 && node filesystem-server.js -d D:/Projects
 
 > By default, the service will run `8090` port.
 
-Now, just mapping the **ajaxSettings** property of the FileManager component to the appropriate file operation methods in the filesystem-server.js file will allows to manage the physical file system with NodeJS file system provider.
+Now, just mapping the **ajaxSettings** property of the FileManager component to the appropriate file operation methods in the filesystem-server.js file will allow to manage the physical file system with NodeJS file system provider.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -438,7 +438,7 @@ Now, just mapping the **ajaxSettings** property of the FileManager component to 
 
 ## Google Drive file system provider
 
-In ASP.NET Core, Google Drive file system provider allows the users to manage the files and folders in a Google Drive account. The Google Drive file system provider works on ID basis where each file and folder have a unique ID. To get started,  clone the [google-drive-aspcore-file-provider](https://github.com/SyncfusionExamples/google-drive-aspcore-file-provider) using the following command.
+In ASP.NET Core, Google Drive file system provider allows the users to manage the files and folders in a Google Drive account. The Google Drive file system provider works on ID basis where each file and folder have a unique ID. To get started, clone the [google-drive-aspcore-file-provider](https://github.com/SyncfusionExamples/google-drive-aspcore-file-provider) using the following command.
 
 ```typescript
 
@@ -448,7 +448,7 @@ cd google-drive-aspcore-file-provider
 
 ```
 
-Google Drive file system provider use the [Google Drive APIs](https://developers.google.com/drive/api/v3/reference/) to read the file in the file system and uses the [OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) protocol for authentication and authorization. To authenticate from the client end, obtain OAuth 2.0 client credentials from the `Google API Console`. To learn more about generating the client credentials from the from Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
+Google Drive file system provider uses the [Google Drive APIs](https://developers.google.com/drive/api/v3/reference/) to read the file in the file system and uses the [OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) protocol for authentication and authorization. To authenticate from the client end, obtain OAuth 2.0 client credentials from the `Google API Console`. To learn more about generating the client credentials from the Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
 
 After generating the client secret data, copy the JSON data to the following specified JSON files in the cloned location.
 
@@ -456,7 +456,7 @@ After generating the client secret data, copy the JSON data to the following spe
 
 * GoogleOAuth2.0Base > credentials > client_secret.json
 
-After updating the credentials, just build and run the project. Now, the project will be hosted in `http://localhost:{port}`, and it will ask to log on to the Gmail account created the client secret credentials. Then, provide permission to access the Google Drive files by clicking the allow access button in the page. Now, just mapping the **ajaxSettings** property of the FileManager component to the appropriate controller methods will allows to manage the files from the Google Drive.
+After updating the credentials, just build and run the project. Now, the project will be hosted in `http://localhost:{port}`, and it will ask to log on to the Gmail account that created the client secret credentials. Then, provide permission to access the Google Drive files by clicking the allow access button in the page. Now, just mapping the **ajaxSettings** property of the FileManager component to the appropriate controller methods will allow to manage the files from the Google Drive.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -501,7 +501,7 @@ Follow the given steps to generate the secret access key:
 
 ![generate_key](images/generate_key.png)
 
-* After generating the secret key, replace secret key JSON in the access_key.json file in the Firebase Realtime Database provider project to enable authentication for performing read and write operations.
+* After generating the secret key, replace the secret key JSON in the access_key.json file in the Firebase Realtime Database provider project to enable authentication for performing read and write operations.
 
 To interpolate with the Firebase Realtime Database, create a project under Firebase Realtime Database, and then enable the **read** and **write** permissions to access the Firebase Database by specifying the rules within the authentication tab of the Firebase project as demonstrated in the following code snippet.
 
@@ -617,7 +617,7 @@ After configuring the Firebase Realtime Database service link, build and run the
 
 ## IBM Cloud Object Storage file provider
 
-The IBM Cloud Object Storage file provider module allows you work with the IBM Cloud Object Storage. It also provides the methods for performing various file actions such as creating a new folder, renaming files, and deleting files. The IBM Cloud Object Storage file provider serves the file provider support for the File Manager component with the IBM Cloud Object Storage. We can make use of IBM Cloud Object Storage file provider by installing the [ej2-filemanager-ibm-cos-node-file-provider](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-ibm-cos-node-file-provider)npm package or by cloning the [file provider](https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider) from the GitHub.
+The IBM Cloud Object Storage file provider module allows you to work with the IBM Cloud Object Storage. It also provides the methods for performing various file actions such as creating a new folder, renaming files, and deleting files. The IBM Cloud Object Storage file provider serves the file provider support for the File Manager component with the IBM Cloud Object Storage. The IBM Cloud Object Storage file provider can be used by installing the [ej2-filemanager-ibm-cos-node-file-provider](https://www.npmjs.com/package/@syncfusion/ej2-filemanager-ibm-cos-node-file-provider) npm package or by cloning the [file provider](https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider) from the GitHub.
 
 ### Using ej2-filemanager-ibm-cos-node-file-provider npm package
 
@@ -631,7 +631,7 @@ npm install @syncfusion/ej2-filemanager-ibm-cos-node-file-provider
 
 * After installing the package, navigate to the ej2-filemanager-ibm-cos-node-file-provider package folder within the node-modules.
 
-* Run the  **npm install** command to install the dependent packages for file provider.
+* Run the **npm install** command to install the dependent packages for file provider.
 
 ### Cloning the filemanager-ibm-cos-node-file-provider from GitHub
 
@@ -643,9 +643,9 @@ git clone  https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-p
 
 ```
 
-* After cloning, open the root folder and run the command **npm install** command.
+* After cloning, open the root folder and run the **npm install** command.
 
-To set the port in which the project to be hosted. Run the following command.
+To set the port in which the project is to be hosted, run the following command.
 
 ```typescript
 

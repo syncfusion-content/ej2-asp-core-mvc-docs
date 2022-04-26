@@ -21,7 +21,7 @@ The file manager UI is comprised of several sections like view, toolbar, breadcr
 
 ![File Manager Overview](./images/user-interface.png "File Manager Overview")
 
-The basic file manager is a light weight component with all the basic functions. The basic file manager have the following sections in its UI to browse files and folders and manage them with file operations.
+The basic file manager is a light weight component with all the basic functions. The basic file manager has the following sections in its UI to browse files and folders and manage them with file operations.
 
 * [Breadcrumb](#breadcrumb) (For parent folder navigations)
 * [View](#view) (Large Icons view for browsing files and folders)
@@ -73,7 +73,7 @@ In the large icons view, the thumbnail icons will be shown in a larger size, whi
 
 ### Details view
 
-FileManager can be changed from large icon to details view by using `View` property. In the details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using `detailsViewSettings` API. The details view allows you to perform sorting using column header.
+FileManager can be changed from large icon to details view by using `View` property. In the details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using `detailsViewSettings` API. The details view allows to perform sorting using column header.
 
 ![DetailsView](./images/detailsview.png "File Manager Details View")
 
