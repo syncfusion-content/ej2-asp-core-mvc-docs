@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Control and Yeoman tool
+title: Getting Started with Syncfusion ASP.NET Core control and yeoman tool
 description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Yeoman
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD024 -->
 
-# Getting Started with Essential JS 2 for ASP.NET Core and Yeoman tool in Visual Studio Code
+# Getting Started with Yeoman tool in Visual Studio Code
 
 This article provides a step-by-step introduction to configure Essential JS 2 setup and build a simple ASP.NET Core web application using the [Yeoman tool](http://yeoman.io/#) in [Visual Studio Code](https://code.visualstudio.com/) (VS Code).
 

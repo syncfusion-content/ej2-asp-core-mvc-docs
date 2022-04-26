@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes in ##Platform_Name## Controls
+title: Themes in Syncfusion ##Platform_Name## Controls
 description: Learn here all about built-in themes and how to change it dynamically in Syncfusion ##Platform_Name## controls.
 platform: ej2-asp-core-mvc
 control: Common
@@ -100,7 +100,7 @@ npm install @syncfusion/ej2
 {% endhighlight %}
 {% endtabs %}
 
-* Create a `SCSS` file as `~/wwwroot/styles/custom.scss` and provide the variables to override as shown below.
+* Create a SCSS file as `~/wwwroot/styles/custom.scss` and provide the variables to override as shown below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/custom.scss" %}
@@ -115,7 +115,7 @@ npm install @syncfusion/ej2
 
 ![Themes-npm-packages-compile](images/themes-npm-packages-compile.png) 
 
-* The `compilerconfig.json` file is created. Then, provide the location of the compiled CSS file and include a path as shown in the following code snippet.
+* The `compiler config.json` file is created. Then, provide the location of the compiled CSS file and include a path as shown in the following code snippet.
 
 {% tabs %}
 {% highlight c# tabtitle="compilerconfig.json" %}
@@ -166,7 +166,7 @@ LibMan offers the following advantages,
 
 ![Client side library dialog](images/theme-client-side.png)
 
-2.Select the **unpkg** in the provider dropdown to get the syncfusion control themes.
+2.Select the **un pkg** in the provider dropdown to get the Syncfusion control themes.
 
 ![Select unpkg provider](images/client-library-unpkg.png)
 
@@ -186,7 +186,7 @@ For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `ww
 
 ![Modified the target location](images/client-side-target-unpkg.png)
 
-6.Click the install button then `libman.json` file is added to the root application with the following content.
+6.Click the install button then `lib man.json` file is added to the root application with the following content.
 
 {% tabs %}
 {% highlight cshtml tabtitle="libman.json" %}
