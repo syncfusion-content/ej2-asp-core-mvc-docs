@@ -100,7 +100,7 @@ npm install @syncfusion/ej2
 {% endhighlight %}
 {% endtabs %}
 
-* Create a Sassy Cascading Style Sheet file as `~/wwwroot/styles/custom.scss` and provide the variables to override as shown below.
+* Create a Sassy Cascading Style Sheet file as `~/wwwroot/styles/custom` and provide the variables to override as shown below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/custom.scss" %}
