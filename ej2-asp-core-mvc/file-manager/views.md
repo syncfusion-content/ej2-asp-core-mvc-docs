@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Views
+# Views in File Manager
 
 View is the section where the files and folders are displayed for the user to browse. The [view](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~View.html) API can also be used to change the initial view of the file manager.
 
