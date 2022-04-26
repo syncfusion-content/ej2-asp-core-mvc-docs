@@ -131,7 +131,7 @@ public ActionResult Index()
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC ContextMenu control will be rendered in the default web browser.
 
-![ASP.NET MVC ContextMenu Control](images/context-menu.PNG)
+![ASP.NET MVC ContextMenu Control](images/contextmenu-control.PNG)
 
 ## Rendering items with Separator
 

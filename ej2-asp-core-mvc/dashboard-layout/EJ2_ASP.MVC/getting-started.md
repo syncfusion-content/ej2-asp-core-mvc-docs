@@ -91,7 +91,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 ## Add ASP.NET MVC DashboardLayout control
 
-Now, add the Syncfusion ASP.NET MVC ContextMenu control in `~/Views/Home/Index.cshtml` page by the following ways.
+Now, add the Syncfusion ASP.NET MVC DashboardLayout control in `~/Views/Home/Index.cshtml` page by the following ways.
 
 * Defined the panels property as the attribute in the content template.
 * Using the [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property through helper.
