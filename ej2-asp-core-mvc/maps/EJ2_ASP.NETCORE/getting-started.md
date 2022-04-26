@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core Maps Control
 
 This section briefly explains about how to include [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control in your ASP.NET Core application using Visual Studio.
 
@@ -52,7 +52,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
 </head>
 
 {% endhighlight %}
@@ -91,9 +91,9 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Grid control
+## Add ASP.NET Core Maps control
 
-Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Maps tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -245,6 +245,8 @@ public object GetData()
 
 ```
 
+![ASP.NET Core Maps with Color Mapping](images/maps-color-mapping.png)
+
 > Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
 
 ## Add title to Maps
@@ -287,6 +289,8 @@ public object GetUSMap()
 </ejs-maps>
 
 ```
+
+![ASP.NET Core Maps with Title](images/maps-title.png)
 
 ## Enable legend
 
@@ -335,6 +339,8 @@ public object GetData()
 
 ```
 
+![ASP.NET Core Maps with Legend](images/maps-legend.png)
+
 > Refer the value of the data source for **electionData.json** [here](#bind-data-source-to-map).
 
 ## Add data label
@@ -371,6 +377,8 @@ public object GetUSMap()
 
 ```
 
+![ASP.NET Core Maps with DataLabel](images/maps-datalabel.png)
+
 ## Enable tooltip
 
 When the data labels can't display the information due to space constraints, the tooltip is used. The tooltip can be enabled by setting the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html#Syncfusion_EJ2_Maps_MapsTooltipSettings_Visible) property of the [`MapsTooltipSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html) class to **true**.
@@ -406,3 +414,12 @@ public object GetUSMap()
 </ejs-maps>
 
 ```
+
+![ASP.NET Core Maps with Tooltip](images/maps-tooltip.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Maps/ASP.NET%20Core%20Tag%20Helper%20Examples).
+
+## See also
+
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
