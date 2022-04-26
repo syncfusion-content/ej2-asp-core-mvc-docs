@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes in ##Platform_Name## Controls
+title: Themes in Syncfusion ##Platform_Name## Controls
 description: Learn here all about built-in themes and how to change it dynamically in Syncfusion ##Platform_Name## controls.
 platform: ej2-asp-core-mvc
 control: Common

@@ -1,1 +1,7 @@
-@Html.EJS().DatePicker("datepicker").Min(ViewBag.minDate).Max(ViewBag.maxDate).Render()
+@{
+    .....
+    var minDate= new DateTime(DateTime.Now.Year,DateTime.Now.Month,05);
+    var maxDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 27);
+}
+
+@Html.EJS().DatePicker("datepicker").Min(minDate).Max(maxDate).Render()
