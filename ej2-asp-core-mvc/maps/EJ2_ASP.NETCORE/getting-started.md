@@ -112,16 +112,9 @@ Elements in the Maps will be rendered in the layers. So, add a layer to the Maps
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@using Newtonsoft.Json
-@using Syncfusion.EJ2.Maps
-@{
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
-}
-
 <ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer shapeData="mapUSData">
+        <e-maps-layer shapeData="ViewBag.usmap">
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
@@ -170,29 +163,38 @@ The JSON object **"electionData.json"** is used as data source in the below code
 
 ```
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+```cs
 
-@using Newtonsoft.Json
-@using Syncfusion.EJ2.Maps;
-
-@{
-    var propertyPath = new[] { "name" };
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
-    string allText1 = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/electiondata.json");
-    var electionData = JsonConvert.DeserializeObject(allText1);
+public IActionResult Default()
+{
+    ViewBag.usmap = GetUSMap();
+    ViewBag.electiondata = GetData();
+    return View();
+}
+public object GetUSMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/USA.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+public object GetData()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/electionData.json");
+    return JsonConvert.DeserializeObject(allText);
 }
 
-<ejs-maps id="maps">
+```
+
+```html
+
+@using Syncfusion.EJ2;
+ <ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country" shapePropertyPath="name">
+        <e-maps-layer dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap" shapeDataPath="State" shapePropertyPath="name">
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ## Apply color mapping
 
@@ -200,10 +202,29 @@ The color mapping feature supports customization of shape colors based on the un
 
 Specify the color and value in the [`MapsColorMapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsColorMapping.html) property. Here **"#D84444"** is specified for **Permanent** countries and **"#316DB5"** is specified for **Non-Permanent** countries.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+```cs
 
-@using Newtonsoft.Json
+public IActionResult Default()
+{
+    ViewBag.worldmap = GetWorldMap();
+    ViewBag.electiondata = GetData();
+    return View();
+}
+public object GetWorldMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/WorldMap.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+public object GetData()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/electionData.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+
+```
+
+```html
+
 @using Syncfusion.EJ2.Maps;
 
 @{
@@ -212,22 +233,17 @@ Specify the color and value in the [`MapsColorMapping`](https://help.syncfusion.
         new  MapsColorMapping{ Color = "#EDB46F", Value= "Permanent"  },
         new MapsColorMapping { Color= "#F1931B", Value = "Non-Permanent" }
     };
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
-    string allText1 = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/electiondata.json");
-    var electionData = JsonConvert.DeserializeObject(allText1);
 }
 
 <ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country" shapePropertyPath="propertyPath">
+        <e-maps-layer dataSource="ViewBag.electiondata" shapeData="ViewBag.worldmap" shapeDataPath="Country" shapePropertyPath="propertyPath">
             <e-layersettings-shapesettings colorValuePath="Membership" fill="#E5E5E5" colorMapping="colormapping"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ![ASP.NET Core Maps with Color Mapping](images/maps-color-mapping.png)
 
@@ -237,11 +253,24 @@ Specify the color and value in the [`MapsColorMapping`](https://help.syncfusion.
 
 The title can be added to the Maps using the [`MapsTitleSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTitleSettings.html) class to provide information to the user about the shapes rendered in the Maps.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+```cs
 
-@using Syncfusion.EJ2.Maps
-@using Newtonsoft.Json
+public IActionResult Default()
+{
+    ViewBag.usmap = GetUSMap();
+    return View();
+}
+public object GetUSMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/USA.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+
+```
+
+```html
+
+@using Syncfusion.EJ2.Maps;
 @{
     var titleStyle = new MapsFont
     {
@@ -249,20 +278,17 @@ The title can be added to the Maps using the [`MapsTitleSettings`](https://help.
         Color = "red",
         FontFamily = "Sans-serif"
     };
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
 }
 
 <ejs-maps id="maps">
     <e-maps-titlesettings text="Maps component" textStyle="titleStyle"></e-maps-titlesettings>
     <e-maps-layers>
-        <e-maps-layer shapeData="mapUSData">
+        <e-maps-layer shapeData="ViewBag.usmap">
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ![ASP.NET Core Maps with Title](images/maps-title.png)
 
@@ -270,8 +296,28 @@ The title can be added to the Maps using the [`MapsTitleSettings`](https://help.
 
 Legend can be added to the Maps to summarize the data bound to the map. To enable legend for the Maps, set the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html#Syncfusion_EJ2_Maps_MapsLegendSettings_Visible) property of [`MapsLegendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html) class to **true**.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+```cs
+
+public IActionResult Default()
+{
+    ViewBag.worldmap = GetWorldMap();
+    ViewBag.electiondata = GetData();
+    return View();
+}
+public object GetWorldMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/WorldMap.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+public object GetData()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/electionData.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+
+```
+
+```html
 
 @using Syncfusion.EJ2.Maps;
 @{
@@ -280,23 +326,18 @@ Legend can be added to the Maps to summarize the data bound to the map. To enabl
         new  MapsColorMapping{ Color = "#EDB46F",Value= "Permanent"  },
         new MapsColorMapping { Color= "#F1931B", Value = "Non-Permanent" }
     };
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
-    string allText1 = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/electiondata.json");
-    var electionData = JsonConvert.DeserializeObject(allText1);
 }
 
 <ejs-maps id="maps">
     <e-maps-legendsettings visible="true" position="Top"></e-maps-legendsettings>
     <e-maps-layers>
-        <e-maps-layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country" shapePropertyPath="propertyPath">
+        <e-maps-layer dataSource="ViewBag.electiondata" shapeData="ViewBag.worldmap" shapeDataPath="Country" shapePropertyPath="propertyPath">
             <e-layersettings-shapesettings colorValuePath="Membership" fill="#E5E5E5" colorMapping="colormapping"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ![ASP.NET Core Maps with Legend](images/maps-legend.png)
 
@@ -306,28 +347,35 @@ Legend can be added to the Maps to summarize the data bound to the map. To enabl
 
 The data labels can be added to the Maps to show additional information of the shapes in the Maps. This can be achieved by setting the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html#Syncfusion_EJ2_Maps_MapsDataLabelSettings_Visible) property to **true** in the [`MapsDataLabelSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsDataLabelSettings.html) class.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+```cs
 
-@using Syncfusion.EJ2.Maps
-@using Newtonsoft.Json
-
-@{
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
+public IActionResult Default()
+{
+    ViewBag.usmap = GetUSMap();
+    return View();
 }
+public object GetUSMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/USA.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+
+```
+
+```html
+
+@using Syncfusion.EJ2.Maps;
 
 <ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer shapeData="mapUSData">
+        <e-maps-layer shapeData="ViewBag.usmap">
             <e-layersettings-datalabelsettings visible="true" labelPath="name" smartLabelMode="@Syncfusion.EJ2.Maps.SmartLabelMode.Trim"></e-layersettings-datalabelsettings>
             <e-layersettings-shapesettings autofill="true"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ![ASP.NET Core Maps with DataLabel](images/maps-datalabel.png)
 
@@ -335,20 +383,28 @@ The data labels can be added to the Maps to show additional information of the s
 
 When the data labels can't display the information due to space constraints, the tooltip is used. The tooltip can be enabled by setting the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html#Syncfusion_EJ2_Maps_MapsTooltipSettings_Visible) property of the [`MapsTooltipSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsTooltipSettings.html) class to **true**.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+```cs
 
-@using Syncfusion.EJ2.Maps
-@using Newtonsoft.Json
-
-@{
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData=JsonConvert.DeserializeObject(allText);
+public IActionResult Default()
+{
+    ViewBag.usmap = GetUSMap();
+    return View();
 }
+public object GetUSMap()
+{
+    string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/USA.json");
+    return JsonConvert.DeserializeObject(allText);
+}
+
+```
+
+```html
+
+@using Syncfusion.EJ2.Maps;
 
 <ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer shapeData="mapUSData">
+        <e-maps-layer shapeData="ViewBag.usmap">
             <e-layersettings-datalabelsettings visible="true" labelPath="name" smartLabelMode="@Syncfusion.EJ2.Maps.SmartLabelMode.Trim">
             </e-layersettings-datalabelsettings>
             <e-layersettings-tooltipsettings visible="true" valuePath="name"></e-layersettings-tooltipsettings>
@@ -357,8 +413,7 @@ When the data labels can't display the information due to space constraints, the
     </e-maps-layers>
 </ejs-maps>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
 ![ASP.NET Core Maps with Tooltip](images/maps-tooltip.png)
 
