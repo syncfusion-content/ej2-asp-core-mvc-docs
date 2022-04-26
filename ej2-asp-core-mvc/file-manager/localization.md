@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization
+# Localization in File Manager
 
 The file manager can be localized to any culture by defining the texts and messages of the file manager in the corresponding culture. The default locale of the file manager is `en`(English). The following table represents the default texts and messages of the file manager in `en` culture.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: File System Provider in ##Platform_Name## File Manager Component
-description: Learn here all about File System Provider in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about file system provider in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File System Provider
 publishingplatform: ##Platform_Name##
@@ -564,7 +564,7 @@ Then, create a root node and add children to the root node. Refer to the followi
 
 Here, the `Files` denotes the `rootNode` and the subsequent object refers to the children of the root node. `rootNode` will be taken as the root folder of the file system loaded which will be loaded in File Manager component.
 
-After that, clone the [`firebase-realtime-database-apscore-file-provider`](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider) and just open the project in Visual Studio and restore the NuGet package.
+After that, clone the [`firebase-realtime-database-aspcore-file-provider`](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider) and just open the project in Visual Studio and restore the NuGet package.
 
 Register the Firebase Realtime Database by assigning *Firebase Realtime Database REST API link*, *rootNode*, and *serviceAccountKeyPath* parameters in the `RegisterFirebaseRealtimeDB` method of class `FirebaseRealtimeDBFileProvider` in controller part of the ASP.NET Core application.
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in File Manager
 
 The **File Manager** is a graphical user interface component for managing the file system that allows the users to perform most common file operation like accessing, editing, and sorting the files and folders. Also, this component has easy navigation functionality for browsing the folders to select a file or folder from the file system.
 
