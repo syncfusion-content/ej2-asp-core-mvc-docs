@@ -176,6 +176,23 @@ Refer to the following code, in which the `e-bigger` class is added for enabling
 
 > [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/SizeModes/SizeModeControl)
 
+## Change font size for all controls
+
+You can change the font-size for all the controls by overriding the CSS for `e-control` class as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<style>
+    .e-control, .e-control [class^='e-'], .e-control [class*=' e-'] {
+
+    font-size:1rem;
+
+    }
+</style>
+{% endhighlight %}
+{% endtabs %}
+
 ## See Also
 
 Refer below topics to learn about responsiveness controls based on the available size in Syncfusion ASP.NET Core Controls.
