@@ -88,9 +88,9 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC Chip control
+## Add ASP.NET MVC Circular Gauge control
 
-Now, add the Syncfusion ASP.NET MVC Chip control in `~/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC Circular Gauge control in `~/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
