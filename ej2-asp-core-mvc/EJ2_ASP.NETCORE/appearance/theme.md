@@ -100,7 +100,7 @@ npm install @syncfusion/ej2
 {% endhighlight %}
 {% endtabs %}
 
-* Create a SCSS file as `~/wwwroot/styles/custom.scss` and provide the variables to override as shown below.
+* Create a `custom.scss` file as `~/wwwroot/styles/custom.scss` and provide the variables to override as shown below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/custom.scss" %}
