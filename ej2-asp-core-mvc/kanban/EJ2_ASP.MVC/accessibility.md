@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessiblility in ##Platform_Name## Kanban Component
-description: Learn here all about Accessiblility in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Kanban Component
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessiblility
 publishingplatform: ##Platform_Name##
