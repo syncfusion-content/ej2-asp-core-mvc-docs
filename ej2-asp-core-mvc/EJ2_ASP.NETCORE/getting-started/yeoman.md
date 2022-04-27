@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD024 -->
 
-# Getting Started with Yeoman tool in Visual Studio Code
+# Getting Started with ASP.NET Core and Yeoman in Visual Studio Code
 
 This article provides a step-by-step introduction to configure Essential JS 2 setup and build a simple ASP.NET Core web application using the [Yeoman tool](http://yeoman.io/#) in [Visual Studio Code](https://code.visualstudio.com/) (VS Code).
 
@@ -153,6 +153,6 @@ For example, the calendar component is added to the `~/Views/Home/Index.cshtml` 
 
 ![asp.net core vscode select environment](images/aspnetcore-vscode-core-environment.png)
 
-The Essential JS 2 calendar component will render in the web browser.
+The ASP.NET Core calendar component will render in the web browser.
 
 ![asp.net core calendar component output](images/aspnetcore-calendar.png)
