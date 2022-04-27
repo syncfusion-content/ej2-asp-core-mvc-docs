@@ -1,4 +1,4 @@
-@Html.EJS().Menu("menu").Items(ViewBag.menuItems).CssClass('e-rounded-menu').Render()
+@Html.EJS().Menu("menu").Items(ViewBag.menuItems).CssClass('e-rounded-menu').showItemOnClick("true").Render()
 
 <style>
     body {
