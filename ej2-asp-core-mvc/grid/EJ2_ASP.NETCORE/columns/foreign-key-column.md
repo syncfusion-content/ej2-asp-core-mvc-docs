@@ -170,11 +170,11 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% endif %}
 
 
-## Bind data on Foreign Key Columns with Url Adaptor
+## Bind data on foreign key columns with UrlAdaptor
 
-You can bind the data on foreign key columns with using `UrlAdaptor`. In the following example, **EmployeeID** was designated as a [`ForeignKeyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyField), and **ShipName** was designated as a [`ForeignKeyValue`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyValue).
+You can bind the data on foreign key columns with using `UrlAdaptor`. In the following example, **EmployeeID** is designated as a [`ForeignKeyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyField), and **ShipName** is designated as a [`ForeignKeyValue`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyValue).
 
-To communicate with a specific DataSource, DataManager uses the adaptor idea. UrlAdaptor is used to interact with remote data services and used to bind data on foreign key columns.
+To communicate with a specific DataSource, DataManager uses the adaptor idea. UrlAdaptor is used to interact with remote data services and to bind data on foreign key columns.
 
 <!-- We attach data from datasource UserEditingSpeciesSiteLinksQuery to a foreign key column with using url adaptor. -->
 
