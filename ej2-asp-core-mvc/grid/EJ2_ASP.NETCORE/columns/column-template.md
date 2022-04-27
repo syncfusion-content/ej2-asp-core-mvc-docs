@@ -137,6 +137,37 @@ In the following code, checkbox is rendered based on **Discontinued** field valu
 {% endtabs %}
 {% endif %}
 
+## How to get the row object using column template
+
+You can get the row data by clicking any of the buttons in the Grid column. This can be achieved by using the column template feature and the `getRowObjectFromUID` method of the Grid.
+
+In the following sample, the button element is rendered in the Employee Data column. By clicking the button, you can get the row data in the console using the `getRowObjectFromUID` method of the Grid.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/row-object/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Row-object.cs" %}
+{% include code-snippet/grid/columns/row-object/row-object.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/row-object/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-object.cs" %}
+{% include code-snippet/grid/columns/row-object/row-object.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## See Also
 
 * [Dynamically render the icon based on the value in data source](https://www.syncfusion.com/forums/174307/change-variable-icon-based-on-the-information-obtained-from-the-datasource)

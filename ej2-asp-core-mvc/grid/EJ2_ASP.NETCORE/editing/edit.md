@@ -202,6 +202,37 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 The Editing functionalities can be performed based upon the primary key value of the selected row.
 If **primaryKey** is not defined in the grid, then edit or delete action take places the first row.
 
+## How to make a Grid column always editable
+
+You can make the Grid column always editable by using the column template feature of Grid.
+
+In the following example, the textbox is rendered in the Freight column using a column template. The keyup event for the Grid is bound using the [created](../../api/grid#created) event of the Grid, and the edited changes are saved in the data source using the [updateRow](../../api/grid#updaterow) method of the Grid.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/edit/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit.cs" %}
+{% include code-snippet/grid/edit/edit/edit.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/edit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit.cs" %}
+{% include code-snippet/grid/edit/edit/edit.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## See Also
 
 * [How to set custom format in edit state of Grid](https://www.syncfusion.com/kb/11319/how-to-set-custom-format-in-edit-state-of-grid)
