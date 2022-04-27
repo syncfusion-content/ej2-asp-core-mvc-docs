@@ -100,7 +100,7 @@ npm install @syncfusion/ej2
 {% endhighlight %}
 {% endtabs %}
 
-* Create a Sassy Cascading Style Sheet file as `~/wwwroot/styles/custom` and provide the variables to override as shown below.
+* Create a `SCSS` file as `~/wwwroot/styles/custom.scss` and provide the variables to override as shown below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/custom.scss" %}
@@ -115,7 +115,7 @@ npm install @syncfusion/ej2
 
 ![Themes-npm-packages-compile](images/themes-npm-packages-compile.png) 
 
-* The `compiler config.json` file is created. Then, provide the location of the compiled CSS file and include a path as shown in the following code snippet.
+* The `compilerconfig.json` file is created. Then, provide the location of the compiled CSS file and include a path as shown in the following code snippet.
 
 {% tabs %}
 {% highlight c# tabtitle="compilerconfig.json" %}
@@ -166,11 +166,11 @@ LibMan offers the following advantages,
 
 ![Client side library dialog](images/theme-client-side.png)
 
-2.Select the **un pkg** in the provider dropdown to get the Syncfusion control themes.
+2.Select the **unpkg** in the provider dropdown to get the Syncfusion control themes.
 
 ![Select unpkg provider](images/client-library-unpkg.png)
 
-3.you can refer the combined control styles by using `@syncfusion/ej2@20.1.50` in the library textbox.
+3.you can refer the combined control styles by using `@syncfusion/ej2@{{ site.ej2version }}` in the library textbox.
 
 ![Specify Syncfusion library](images/library-unpkg.png)
 
@@ -186,7 +186,7 @@ For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `ww
 
 ![Modified the target location](images/client-side-target-unpkg.png)
 
-6.Click the install button then `lib man.json` file is added to the root application with the following content.
+6.Click the install button then `libman.json` file is added to the root application with the following content.
 
 {% tabs %}
 {% highlight cshtml tabtitle="libman.json" %}
@@ -196,7 +196,7 @@ For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `ww
   "defaultProvider": "unpkg",
   "libraries": [
     {
-      "library": "@syncfusion/ej2@20.1.50",
+      "library": "@syncfusion/ej2@{{ site.ej2version }}",
       "destination": "wwwroot/themes/syncfusion/ej2/",
       "files": [
         "bootstrap5.css"
@@ -223,7 +223,7 @@ For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `ww
 {% endhighlight %}
 {% endtabs %}
 
-8.Run the application and see the bootstrap5 themes downloaded from libMan were applied.
+8.Run the application and see the bootstrap5 themes downloaded from LibMan were applied.
 
 ## Change theme dynamically
 
