@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State Persistence in ##Platform_Name## control
+title: State Persistence in Syncfusion ##Platform_Name## control
 description: Learn here all about State Persistence in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# State Persistence
+# State Persistence in ASP.NET MVC
 
 The Syncfusion ASP.NET MVC library supports persisting a control's state across page refreshes or navigation. To enable this feature, set `enablePersistence` property as true to the required control. This will store the control’s state in browser’s `localStorage` object on page `unload` event.
 
@@ -27,7 +27,7 @@ The Syncfusion ASP.NET MVC library supports persisting a control's state across 
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-## State Persistance Supported controls and Properties
+## State Persistence Supported controls and Properties
 
 The following table demonstrates the list of Syncfusion ASP.NET MVC controls that are supported with state persistence and describes the list of properties stored in the `localStorage`.
 
@@ -180,7 +180,7 @@ The following table demonstrates the list of Syncfusion ASP.NET MVC controls tha
 </td>
 </tr>
 <tr>
-<td>InplaceEditor</td>
+<td>In-placeEditor</td>
 <td>
 <ul>
 <li>value</li>
@@ -384,36 +384,6 @@ The following table demonstrates the list of Syncfusion ASP.NET MVC controls tha
 </td>
 </tr>
 </table>
-<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-enable MD033 --> 
 
-
-
----
-layout: post
-title: State Persistence in ##Platform_Name## Component
-description: Learn here all about State Persistence in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
-control: State Persistence
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# State Persistence
-
-Essential JS 2 has support for persisting component’s state across page refreshes or navigation. To enable this feature, set `EnablePersistence` property as true to the required component. This will store the component’s state in browser’s `localStorage` object on page `unload` event. For example, we have enabled persistence to grid component in the following code.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/common/persistence/tagHelper %}
-{% endhighlight %}{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/common/persistence/razor %}
-{% endhighlight %}{% endtabs %}
-{% endif %}
 
