@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD024 -->
 
-# Getting Started with Essential JS 2 for ASP.NET Core and Yeoman tool in Visual Studio Code
+# Getting Started with ASP.NET Core and Yeoman in Visual Studio Code
 
 This article provides a step-by-step introduction to configure Essential JS 2 setup and build a simple .NET Core web application using the [Yeoman tool](http://yeoman.io/#) in [Visual Studio Code](https://code.visualstudio.com/) (VS Code).
 
