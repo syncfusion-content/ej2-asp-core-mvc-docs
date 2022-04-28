@@ -212,10 +212,10 @@ In the following example, the textbox is rendered in the Freight column using a 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/edit/tagHelper %}
+{% include code-snippet/grid/edit/column-edit/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Edit.cs" %}
-{% include code-snippet/grid/edit/edit/edit.cs %}
+{% highlight c# tabtitle="Column-edit.cs" %}
+{% include code-snippet/grid/edit/column-edit/column-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -223,10 +223,10 @@ In the following example, the textbox is rendered in the Freight column using a 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/edit/razor %}
+{% include code-snippet/grid/edit/column-edit/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Edit.cs" %}
-{% include code-snippet/grid/edit/edit/edit.cs %}
+{% highlight c# tabtitle="Column-edit.cs" %}
+{% include code-snippet/grid/edit/column-edit/column-edit.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

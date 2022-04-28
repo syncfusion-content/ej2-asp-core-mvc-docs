@@ -1,0 +1,28 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Created("created").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+    col.Field("Freight").HeaderText("Receipt Amount").Width("120").Template("#template").Add();
+
+}).Render()
+
+
+<script id="template" type="text/x-template">
+    <input id='${OrderID}' value='${Freight}' class='custemp' type='text' style='width: 100%'>
+</script>
+
+<script>
+    function created(e) {
+        document.getElementById('Grid').ej2_instances[0].element.addEventListener('keyup', function (e) { // Bind keyup event for grid.
+            if (e.target.classList.contains('custemp')) { // Based on this condition, you can find whether the target is an input element or not.
+                var row = parentsUntil(e.target, 'e-row');
+                var rowIndex = row.rowIndex; // Get row index.
+                var uid = row.getAttribute('data-uid');
+                var rowData = document.getElementById('Grid').ej2_instances[0].getRowObjectFromUID(uid).data; // Get row data.
+                rowData.Freight = e.target.value; // Update the new value for the corresponding column.
+                document.getElementById('Grid').ej2_instances[0].updateRow(rowIndex, rowData); // Update the modified value in the row data.
+            }
+        });
+    }
+</script>
