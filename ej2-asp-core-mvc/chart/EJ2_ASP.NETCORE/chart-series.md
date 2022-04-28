@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Chart Series
+# Chart Series in ASP NET MVC Chart Component
 
 ## Multiple Series
 
