@@ -1,4 +1,4 @@
-<ejs-menu id="menu" items="ViewBag.menuItems" cssClass="e-rounded-menu"></ejs-menu>
+<ejs-menu id="menu" items="ViewBag.menuItems" cssClass="e-rounded-menu" showItemOnClick="true"></ejs-menu>
 
 <style>
     body {
