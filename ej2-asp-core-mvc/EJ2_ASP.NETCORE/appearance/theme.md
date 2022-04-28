@@ -40,7 +40,8 @@ Using the below approaches the themes can be referenced in the ASP.NET Core appl
 1. [CDN](#cdn-reference) - Used to reference complete css via static web assets.
 2. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/) - Used to generate resources only for the selected (used) components.
 3. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
-4. [NPM packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet's in an application.
+4. [NPM Packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet's in an application.
+4. [LibMan](#libman) - Used to downloads popular libraries and frameworks from a file system or a content delivery network (CDN) in an application.
 
 ## CDN Reference
 
@@ -99,7 +100,7 @@ npm install @syncfusion/ej2
 {% endhighlight %}
 {% endtabs %}
 
-* Create a Sassy Cascading Style Sheet file as `~/wwwroot/styles/custom` and provide the variables to override as shown below.
+* Create a `SCSS` file as `~/wwwroot/styles/custom.scss` and provide the variables to override as shown below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/custom.scss" %}
@@ -114,7 +115,7 @@ npm install @syncfusion/ej2
 
 ![Themes-npm-packages-compile](images/themes-npm-packages-compile.png) 
 
-* The `compiler config.json` file is created. Then, provide the location of the compiled CSS file and include a path as shown in the following code snippet.
+* The `compilerconfig.json` file is created. Then, provide the location of the compiled CSS file and include a path as shown in the following code snippet.
 
 {% tabs %}
 {% highlight c# tabtitle="compilerconfig.json" %}
@@ -148,6 +149,81 @@ npm install @syncfusion/ej2
 {% endtabs %}
 
 * Run the application and see the fabric themes from installed npm packages were applied.
+
+## LibMan
+
+Library Manager ([LibMan](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/libman-vs?view=aspnetcore-6.0)) is a client-side library acquisition tool that is simple to use. LibMan is a program that downloads popular libraries and frameworks from a file system or a content delivery network (CDN).
+
+LibMan offers the following advantages,
+
+1. Only the library files you need are downloaded.
+2. Additional tooling, such as Node.js, npm, and WebPack, isn't necessary to acquire a subset of files in a library.
+3. Files can be placed in a specific location without resorting to build tasks or manual file copying.
+
+### Client-Side Library dialog
+
+1.Right-click the project folder where the files should be added. Select **Add** -> **Client-Side Library**. Then Add Client-Side Library dialog appears like below.
+
+![Client side library dialog](images/theme-client-side.png)
+
+2.Select the **unpkg** in the provider dropdown to get the Syncfusion control themes.
+
+![Select unpkg provider](images/client-library-unpkg.png)
+
+3.you can refer the combined control styles by using `@syncfusion/ej2@{{ site.ej2version }}` in the library textbox.
+
+![Specify Syncfusion library](images/library-unpkg.png)
+
+4.you can able to choose specific files or include all library files like below.
+
+For example, Choose specific files and the bootstrap5 theme is selected in the dialog.
+
+![Choose themes](images/library-unpkg-theme.png)
+
+5.By using the target location textbox, you can specify the location of where files will be stored in the application.
+
+For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `wwwroot/themes/syncfusion/ej2/`.
+
+![Modified the target location](images/client-side-target-unpkg.png)
+
+6.Click the install button then `libman.json` file is added to the root application with the following content.
+
+{% tabs %}
+{% highlight cshtml tabtitle="libman.json" %}
+
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "@syncfusion/ej2@{{ site.ej2version }}",
+      "destination": "wwwroot/themes/syncfusion/ej2/",
+      "files": [
+        "bootstrap5.css"
+      ]
+    }
+  ]
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+> If you use individual control styles, you should install their dependent controls styles.
+
+7.you can refer to the theme sheet which was downloaded from the client-side library in the `<head>` element of the **~/Pages/Shared/_Layout.cshtml** file.
+
+{% tabs %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+
+<head>
+  ...
+  <link href="~/themes/syncfusion/ej2/bootstrap5.css" rel="stylesheet" />
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+8.Run the application and see the bootstrap5 themes downloaded from LibMan were applied.
 
 ## Change theme dynamically
 
