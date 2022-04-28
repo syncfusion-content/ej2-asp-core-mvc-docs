@@ -41,7 +41,7 @@ Using the below approaches the themes can be referenced in the ASP.NET Core appl
 2. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/) - Used to generate resources only for the selected (used) components.
 3. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
 4. [NPM Packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet's in an application.
-4. [LibMan](#libman) - Used to downloads popular libraries and frameworks from a file system or a content delivery network (CDN) in an application.
+5. [LibMan](#libman) - Used to downloads popular libraries and frameworks from a file system or a content delivery network (CDN) in an application.
 
 ## CDN Reference
 
