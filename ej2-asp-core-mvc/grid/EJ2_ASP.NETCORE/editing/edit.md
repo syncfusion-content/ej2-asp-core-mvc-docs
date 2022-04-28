@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Editing in ASP.Net Core Grid Component
+# Editing in ASP.NET Core Grid Component
 
 The Grid component has options to dynamically insert, delete and update records.
 Editing feature requires a primary key column for CRUD operations.

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column Template in ASP.Net Core Grid Component
+# Column Template in ASP.NET Core Grid Component
 
 ## Render image in a column
 
