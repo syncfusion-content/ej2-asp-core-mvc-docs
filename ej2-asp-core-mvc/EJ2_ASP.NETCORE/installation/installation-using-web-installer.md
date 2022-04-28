@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation Using Web Installer in ##Platform_Name## Component
+title: Installation Using Syncfusion Web Installer in ##Platform_Name## Component
 description: Learn here all about Installation Using Web Installer in Syncfusion ##Platform_Name## component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Installation Using Web Installer
@@ -10,10 +10,7 @@ documentation: ug
 
 # Installation using web Installer
 
-You can refer to the [Download](https://ej2.syncfusion.com/aspnetcore/documentation/installation/download/) section to learn how to get the ASP.NET Core - EJ2 installer.
-
-I> Starting with 2022 Volume 1 v20.1.0.47, all Syncfusion customers (evaluators and paid customers) who use Syncfusion installers or nuget packages from [nuget.org](https://www.nuget.org/packages?q=Syncfusion) must generate and register the corresponding platform and version license key in your projects.<br>
-For more information, please see [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/overview) help topic
+You can refer to the [Download](https://ej2.syncfusion.com/aspnetcore/documentation/installation/download/) section to learn how to get the ASP.NET Core - EJ2 trial or licensed installer.
 
 ## Overview
 
@@ -85,7 +82,9 @@ The steps below show how to install Essential Studio ASP.NET Core - EJ2 Web Inst
 
 9. The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
 
-    ![Web Installer Login Wizard](images\Webinstaller-Installation-10.png)    
+    ![Web Installer Login Wizard](images\Webinstaller-Installation-10.png)
+
+    >**IMPORTANT** <br /> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
 
 10. The download and installation/uninstallation progress will be displayed as shown below.
 
