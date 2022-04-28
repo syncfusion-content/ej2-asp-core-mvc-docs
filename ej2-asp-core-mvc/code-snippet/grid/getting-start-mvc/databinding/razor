@@ -1,1 +1,3 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Render()
+@model List<GridSample.Controllers.OrdersDetails>
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)Model).Render()
