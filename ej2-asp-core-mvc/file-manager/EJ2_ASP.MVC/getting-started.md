@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## File Manager Component
-description: Checkout and learn about getting started with ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## FileManager Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## FileManager control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,15 +9,89 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET MVC FileManager Control
 
-This section briefly explains about how to create `File Manager` component in your ASP.NET MVC application. You can refer [ASP.NET MVC Getting Started documentation](../getting-started) page for introduction part of the system requirements and configure the common specifications.
+This section briefly explains about how to include [ASP.NET MVC FileManager](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-manager) control in your ASP.NET MVC application using Visual Studio.
 
-> Starting with `v16.2.0.x`, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include the license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET MVC application to use our controls.
+## Prerequisites
 
-## Initialize the File Manager
+[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-To get started, add the File Manager component to `index.cshtml` page which is available within the `Views/Home` folder.
+## Create ASP.NET MVC application with HTML helper
+
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
+
+* [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+
+## Install ASP.NET MVC package in the application
+
+Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. To add ASP.NET MVC controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
+
+> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+
+> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
+
+## Add namespace
+
+Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
+
+```
+<namespaces>
+    <add namespace="Syncfusion.EJ2"/>
+</namespaces>
+```
+
+## Add style sheet
+
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add script reference
+
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Register Syncfusion Script Manager
+
+Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<body>
+...
+    <!-- Syncfusion ASP.NET MVC Script Manager -->
+    @Html.EJS().ScriptManager()
+</body>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add ASP.NET MVC FileManager Control
+
+Now, add the Syncfusion ASP.NET MVC FileManager control in `~/Views/Home/Index.cshtml` page.
 
 In this sample demonstrates the File Manager with default view.
 
@@ -38,17 +112,15 @@ In this sample demonstrates the File Manager with default view.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/getting-started/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% highlight c# tabtitle="HomeController.cs" %}
 {% include code-snippet/file-manager/getting-started/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC FileManager control will be rendered in the default web browser.
 
-
-Output be like the below.
-
-![FileManager getting started](./images/getting-started.PNG)
+![ASP.NET MVC FileManager Control](images/getting-started.PNG)
 
 > The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for file manager service.
 
@@ -71,8 +143,7 @@ To perform the download operation, initialize the `DownloadUrl` property in a [`
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/file-download-url/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="File-download-url.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -96,8 +167,7 @@ To perform the upload operation, initialize the `UploadUrl` property in a [`Ajax
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/file-upload-url/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="File-upload-url.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -123,15 +193,8 @@ To perform the image preview support in the File Manager component, need to init
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/image-preview/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/image-preview/HomeController_core.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-Output be like the below.
 
 ![File Manager Sample](images/getimage.png)
 
@@ -164,11 +227,7 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![FileManager overview](./images/overview.PNG)
+![FileManager overview](images/overview.PNG)
 
 > The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~CssClass.html) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
 
@@ -199,11 +258,7 @@ The initial view of the File Manager can be changed to details or largeicons vie
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![FileManager switching view ](./images/overview.PNG)
+![FileManager switching view ](images/overview.PNG)
 
 ## Maintaining component state on page reload
 
@@ -237,11 +292,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![FileManager enable persistence ](./images/enable_persistence.PNG)
+![FileManager enable persistence](images/enable_persistence.PNG)
 
 > The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
 
@@ -272,11 +323,7 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![FileManager enablertl ](./images/enable_rtl.PNG)
+![FileManager enablertl](images/enable_rtl.PNG)
 
 ## Specifying the current path of the File Manager
 
@@ -307,8 +354,4 @@ The following code snippet demonstrates specifying the current path in File Mana
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![FileManager enablertl ](./images/path.png)
+![FileManager enablertl](images/path.png)
