@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Legend
+# Legend in ##Platform_Name## Chart Component
 
 Legend provides information about the series rendered in the chart.
 
