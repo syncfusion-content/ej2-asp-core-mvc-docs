@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Chart Series in Chart Component
+# Chart Series in ASP NET MVC Chart Component
 
 ## Multiple Series
 
-You can add multiple series to the chart by using [`Series`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html) property. The series are rendered in the order as it is added to the series array.
+You can add multiple series to the chart by using [`Series`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html) property. The series are rendered in the order as it is added to the series array.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,8 +36,6 @@ You can add multiple series to the chart by using [`Series`](https://help.syncfu
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Combination Series
 
@@ -68,11 +66,9 @@ Combination of different types like Line, column etc, can be rendered in a chart
 {% endtabs %}
 {% endif %}
 
-
-
 ## Enable Complex Property in Series
 
-By setting `EnableComplexProperty` value as `true` in series you can bind complex data to the chart.
+By setting [`EnableComplexProperty`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_EnableComplexProperty) value as **true** in series you can bind complex data to the chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -96,4 +92,3 @@ By setting `EnableComplexProperty` value as `true` in series you can bind comple
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
