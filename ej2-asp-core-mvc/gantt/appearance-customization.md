@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance Customization in ##Platform_Name## Gantt Component
-description: Learn here all about Appearance Customization in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn here all about appearance customization in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appearance Customization
 publishingplatform: ##Platform_Name##
@@ -15,7 +15,7 @@ documentation: ug
 
 ### Taskbar Height
 
-Height of child taskbars and parent taskbars can be customized by using [`TaskbarHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarHeight) property. The following code example shows how to use the property.
+Height of child taskbars and parent taskbars can be customized by using [`TaskbarHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarHeight) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -141,7 +141,7 @@ The Gantt control maps any data source fields to task labels using the [`LabelSe
 
 ## Connector lines
 
-The width and background color of connector lines in Gantt can be customized using the [`ConnectorLineWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ConnectorLineWidth) and [`ConnectorLineBackground`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ConnectorLineBackground) properties. The following code example shows how to use these properties.
+The width and background color of connector lines in Gantt can be customized using the [`ConnectorLineWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ConnectorLineWidth) and [`ConnectorLineBackground`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ConnectorLineBackground) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -280,7 +280,7 @@ In the Gantt control, the Splitter separates the TreeGrid section from the Chart
 
 ### Change splitter position dynamically
 
-In Gantt, we can change the splitter position dynamically by using `setSplitterPosition` method. We can change the splitter position by passing value and type parameter to `setSplitterPosition` method. Type parameter will accept one of the following values 'position', 'columnIndex', 'viewType'. The following code example shows how to use this method.
+In Gantt, the splitter position can be changed dynamically by using `setSplitterPosition` method. The splitter position can be changed by passing value and type parameter to `setSplitterPosition` method. Type parameter will accept one of the following values 'position', 'columnIndex', 'viewType'.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

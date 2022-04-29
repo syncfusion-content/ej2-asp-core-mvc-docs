@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Markers in ##Platform_Name## Gantt Component
-description: Learn here all about Data Markers in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn here all about data markers in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Markers
 publishingplatform: ##Platform_Name##
@@ -22,7 +22,6 @@ Data markers can be defined using the following properties:
 
 > Data Marker `tooltip` will be rendered only if tooltip property has value.
 
-The following code example demonstrates how to implement data markers in the Gantt chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing Tasks in ##Platform_Name## Gantt Component
-description: Learn here all about Managing Tasks in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn here all about managing tasks in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Managing Tasks
 publishingplatform: ##Platform_Name##
@@ -52,7 +52,7 @@ A row can be added to the Gantt component from the toolbar while the [`EditSetti
 
 ### Context menu
 
-A row can also be added above, below or child of the selected row by using context menu support. For this, we need to enable the property [`enableContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableContextMenu) and inject the `ContextMenu` module into the Gantt control.
+A row can also be added above, below or child of the selected row by using context menu support. For this, enable the property [`enableContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableContextMenu) and inject the `ContextMenu` module into the Gantt control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -270,7 +270,6 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 
 
 
-The following screenshot show the output of above code example.
 
 ![Alt text](images/customfields.png)
 
@@ -305,7 +304,7 @@ Modify the task details through user interaction such as resizing and dragging t
 
 #### Prevent editing for specific tasks
 
-On taskbar edit action, the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event will be triggered. You can prevent the taskbar from editing using the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event. This can be done by setting cancel property of [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event argument to true. And we can hide the taskbar editing indicators like taskbar resizer, progress resizer and connector points by using [`QueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event. The following code example shows how to achieve this.
+On taskbar edit action, the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event will be triggered. You can prevent the taskbar from editing using the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event. This can be done by setting cancel property of [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event argument to true. And the taskbar editing indicators can be hidden like taskbar resizer, progress resizer and connector points by using [`QueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -385,7 +384,7 @@ Updating with Dialog
 
 ### Update task values using method
 
-Tasks value can be dynamically updated by using the `updateRecordById` method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
+Tasks value can be dynamically updated by using the `updateRecordById` method. You can call this method on any custom action.
 
 > Using the `updateRecordById` method, you cannot update the task ID value.
 
@@ -545,15 +544,15 @@ All the modified data in Gantt control can be maintained in the database using R
 
 All the CRUD operations in the gantt are done through DataManager. The DataManager has an option to bind all the CRUD related data in server-side.
 
-In the below section, we have explained how to get the edited data details on the server-side using the `UrlAdaptor`.
+In the below section, the explanation for how to get the edited data details on the server-side using the `UrlAdaptor` is given.
 
 ### URL Adaptor
 
-In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
+In Gantt, the data can be fetched from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data, use `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. Know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
 
 > Please refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual studio,
 
-We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Please Check the below code snippet to assign data source to Gantt.
+The data source for Gantt can be defined as instance of DataManager using `url` property of DataManager.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -580,7 +579,7 @@ We can define data source for Gantt as instance of DataManager using `url` prope
 
 
 
-We can also do CRUD operations over Gantt data and save the changes to database. By using `BatchUrl` property of DataManager, we can communicate with the controller method to update the data source on CRUD operation. In gantt CRUD actions on task are dependent with other tasks. For example on editing the child record on chart side, corresponding parent item also will get affect and predecessor dependency task as well get affected. So in Gantt all the CRUD operations are considered to be batch editing where you will get all the affected records as collection. Please check the below code snippet to assign controller method to this property.
+The CRUD operations over Gantt data can be done and the changes can be saved to database. By using `BatchUrl` property of DataManager, communicate with the controller method to update the data source on CRUD operation. In gantt CRUD actions on task are dependent with other tasks. For example, on editing the child record on chart side, corresponding parent item also will get affected and predecessor dependency task as well gets affected. So in Gantt all the CRUD operations are considered to be batch editing where you will get all the affected records as collection.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -607,11 +606,11 @@ We can also do CRUD operations over Gantt data and save the changes to database.
 
 
 
-This server method will be triggered for all the CRUD operations like adding, editing and deleting actions. We can handle those each operations separately inside this method with corresponding data received in this method argument. Also, when using the `UrlAdaptor`, you need to return the data as JSON from the controller action and the JSON object must contain a property as result with dataSource as its value and one more property count with the dataSource total records count as its value.
+This server method will be triggered for all the CRUD operations like adding, editing and deleting actions. Each operations can be handled separately inside this method with corresponding data received in this method argument. Also, when using the `UrlAdaptor`, you need to return the data as JSON from the controller action and the JSON object must contain a property as result with dataSource as its value and one more property count with the dataSource total records count as its value.
 
 ### Insert action
 
-Using the `added` argument of the `BatchUrl` method we can insert the newly added row to database and return the same to client side. please find the below code example for details.
+Using the `added` argument of the `BatchUrl` method, insert the newly added row to database and return the same to client side.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -640,7 +639,7 @@ Using the `added` argument of the `BatchUrl` method we can insert the newly adde
 
 ### Editing action
 
-Using the `changed` argument of the `BatchUrl` method we can update the modified records to database and return the same to client side. please find the below code example for details.
+Using the `changed` argument of the `BatchUrl` method, the modified records can be updated to database and return the same to client side.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -669,7 +668,7 @@ Using the `changed` argument of the `BatchUrl` method we can update the modified
 
 ### Delete action
 
-Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the data base. please find the below code example for details.
+Using the `deleted` argument of the `BatchUrl` method, remove the deleted records from database and return the same to client side. On deleting the record, remove its corresponding child records as well if it exists from the data base.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -700,7 +699,7 @@ Using the `deleted` argument of the `BatchUrl` method we can remove the deleted 
 
 ## Deleting tasks
 
-A task delete option in the Gantt control can be enabled by enabling the [`EdiSettings.AllowDeleting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowDeleting) property. Tasks can be deleted by clicking the delete toolbar item or using the `deleteRow` method. You can call this method dynamically on any custom actions like button click. The following code example shows how to enable the delete option in the Gantt control.
+A task delete option in the Gantt control can be enabled by enabling the [`EdiSettings.AllowDeleting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowDeleting) property. Tasks can be deleted by clicking the delete toolbar item or using the `deleteRow` method. You can call this method dynamically on any custom actions like button click.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -734,7 +733,6 @@ A task delete option in the Gantt control can be enabled by enabling the [`EdiSe
 
 Delete confirmation message is used to get the confirmation from users before deleting a task. This confirmation message can be enabled by setting the [`EditSettings.ShowDeleteConfirmDialog`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_ShowDeleteConfirmDialog) property to true.
 
-The following code snippet explains how to enable the delete confirmation message in Gantt.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -765,7 +763,7 @@ The following code snippet explains how to enable the delete confirmation messag
 
 ## Indent and Outdent
 
-Indent and Outdent of a task are used to update the level of the task in hierarchical order of the task. It can be performed bu enabling the [`editSettings.allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettingsBuilder.html#Syncfusion_EJ2_Gantt_GanttEditSettingsBuilder_AllowEditing_System_Boolean_) property.
+Indent and Outdent of a task are used to update the level of the task in hierarchical order of the task. It can be performed by enabling the [`editSettings.allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettingsBuilder.html#Syncfusion_EJ2_Gantt_GanttEditSettingsBuilder_AllowEditing_System_Boolean_) property.
 
 `Indent` - Selected task can be indented to the level of task to the hierarchical order. It can be performed by using in-built context menu or toolbar items. It can also be invoked by using the `indent` method dynamically on any action like external button click. The following code example shows how to enable indent option in the Gantt chart.
 
@@ -833,7 +831,7 @@ In Gantt, all create, update, delete operations can be disabled by set `readOnly
 
 ### Splitting task at load time
 
-To split task at load time, we can define segment details in both hierarchical and self-referential way. Refer below link for more details.
+To split task at load time, segment details can be defined in both hierarchical and self-referential way. Refer below link for more details.
 
 * [Split task at load time](./data-binding/#split-task)
 
@@ -841,7 +839,7 @@ To split task at load time, we can define segment details in both hierarchical a
 
 The task can be split dynamically, either by using the context menu or dialog.
 
-* `Dialog`: `Segments` tab is rendered in add/edit dialog, when the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.segmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped. Using this tab, we can split the task based on the original start and end date of a particular task.
+* `Dialog`: `Segments` tab is rendered in add/edit dialog, when the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.segmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped. Using this tab, the task can be split based on the original start and end date of a particular task.
 
 * `Context menu`: When the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped and the [`EnableContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableContextMenu) property is enabled, `Split Task` item will be included in the context menu.
 
@@ -880,7 +878,7 @@ The task can be split dynamically, either by using the context menu or dialog.
 
 ### Merge tasks
 
-The split tasks can be merged either by using the `Merge Task` item of the Context menu or by using the dialog. We can also merge the tasks, by simply dragging the segments together in the UI.
+The split tasks can be merged either by using the `Merge Task` item of the Context menu or by using the dialog. The tasks can also be merged by simply dragging the segments together in the UI.
 
 ### Limitations of Split tasks
 
@@ -890,4 +888,4 @@ The split tasks can be merged either by using the `Merge Task` item of the Conte
 
 ## Troubleshoot: Editing works only when primary key column is defined
 
-Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property, it is mandatory that any one of the columns, must be a primary column. By default, the [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column will be the primary key column.  If [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column is not defined, we need to enable [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property.
+Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property, it is mandatory that any one of the columns, must be a primary column. By default, the [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column will be the primary key column. If [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column is not defined, enable [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property.

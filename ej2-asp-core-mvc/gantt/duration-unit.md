@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Duration Unit in ##Platform_Name## Gantt Component
-description: Learn here all about Duration Unit in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn here all about duration unit in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Duration Unit
 publishingplatform: ##Platform_Name##
@@ -19,7 +19,7 @@ In Gantt, the task's duration value can be measured by the following duration un
 * Hour
 * Minute
 
-In Gantt, we can define duration unit for whole project by using [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
+In Gantt, duration unit can be defined for whole project by using [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when the value for this property is defined, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
 
 * Using [`taskFields.durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_DurationUnit_System_String_) property, to map the duration unit data source field.
 * Defining the duration unit value along with the duration field in the data source.

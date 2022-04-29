@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in ##Platform_Name## Gantt Component
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn here all about data binding in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -31,7 +31,6 @@ The following are the two types of data binding possible with the Gantt control:
 
 The [`Child`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Child) property is used to map the child records in hierarchical data.
 
-The following code example shows how to bind the hierarchical local data into the Gantt control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -123,11 +122,11 @@ To bind remote data to the Gantt component, assign service data as an instance o
 
 ### URL Adaptor
 
-In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
+In Gantt, data is fetched from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data, use `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. Know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
 
 > Please refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual studio,
 
-We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Please Check the below code snippet to assign data source to Gantt.
+Data source can be defined for Gantt as instance of DataManager using `url` property of DataManager.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -156,7 +155,7 @@ We can define data source for Gantt as instance of DataManager using `url` prope
 
 ### Sending additional parameters to the server
 
-We can pass additional parameters using [`addParams`](../api/data/query/#addparams) method of [`Query`](../api/data/query/) class. In server side we have inherited and shown the additional parameter value in Syncfusion DataManager class itself. We pass an additional parameter in load time using [`load`](../api/gantt#load) event. We can also pass additional parameter to the CRUD model. Please Check the below code snippet to send additional parameter to Gantt.
+Additional parameters can be passed using [`addParams`](../api/data/query/#addparams) method of [`Query`](../api/data/query/) class. In server side, the additional parameter value has been inherited and showed in Syncfusion DataManager class itself. An additional parameter has been passed in load time using [`load`](../api/gantt#load) event. An additional parameter can also be passed to the CRUD model.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -216,7 +215,7 @@ The argument passed to the `actionFailure` event contains the error details retu
 
 #### Binding with Ajax
 
-You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Ajax request. In the below code we have fetched the data source from the server with the help of Ajax request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax/#onsuccess) event of the Ajax.
+You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Ajax request. In the below code, the data source has been fetched from the server with the help of Ajax request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax/#onsuccess) event of the Ajax.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -247,11 +246,11 @@ You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the d
 
 ## Split task
 
-The `Split-task` feature allows you to split a task or interrupt the work during planned or unforeseen circumstances. We can split the task either in load time or dynamically, by defining the segments either in hierarchical or self-referential way.
+The `Split-task` feature allows to split a task or interrupt the work during planned or unforeseen circumstances. The task can be split either in load time or dynamically, by defining the segments either in hierarchical or self-referential way.
 
 ### Hierarchical
 
-To split a task at load time in hierarchical way, we need to define the segment details in datasource and this field should be mapped by using the [`taskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
+To split a task at load time in hierarchical way, define the segment details in datasource and this field should be mapped by using the [`taskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
 
 ```html
 
@@ -302,7 +301,7 @@ GanttDataSource Record2Child1 = new GanttDataSource()
 
 ### Self-referential
 
-We can also define segment details as a flat data and this collection can be mapped by using [`segmentData`](../api/gantt/#segmentData) property. The segment id field of this collection is mapped by using the [`taskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
+The segment details can also be defined as a flat data and this collection can be mapped by using [`segmentData`](../api/gantt/#segmentData) property. The segment id field of this collection is mapped by using the [`taskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
 
 ```html
 
@@ -346,4 +345,4 @@ We can also define segment details as a flat data and this collection can be map
 
 ## Limitations
 
-Gantt has the support for both Hierarchical and Self-Referential data binding. When rendering the Gantt control with SQL database, we suggest you to use the Self-Referential data binding to maintain the parent-child relation. Because the complex json structure is very difficult to manage it in SQL tables, we need to write a complex queries and we have to write a complex algorithm to find out the proper record details while updating/deleting the inner level task in Gantt data source. We cannot implement both data binding for Gantt control and this is not a recommended way. If  both child and parentID are mapped, the records will not render properly because, when task id of a record defined in the hierarchy structure is assigned to parent id of another record, in such case the records will not properly render. As the self-referential will search the record with particular id in flat data only, not in the inner level of records. If we map the parentID field,  it will be prioritized and Gantt will be rendered based on the parentID values.
+Gantt has the support for both Hierarchical and Self-Referential data binding. When rendering the Gantt control with SQL database, it is suggested to use the Self-Referential data binding to maintain the parent-child relation. Because the complex json structure is very difficult to manage it in SQL tables, complex queries and complex algorithm must be written to find out the proper record details while updating/deleting the inner level task in Gantt data source. Both data binding for Gantt control cannot be implemented and this is not a recommended way. If both child and parentID are mapped, the records will not render properly because, when task id of a record defined in the hierarchy structure is assigned to parent id of another record, in such case the records will not properly render. As the self-referential will search the record with particular id in flat data only, not in the inner level of records. If the parentID field is mapped, it will be prioritized and Gantt will be rendered based on the parentID values.
