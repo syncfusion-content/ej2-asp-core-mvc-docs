@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in ##Platform_Name## Gantt Component
+title: Columns in ##Platform_Name## Gantt
 description: Learn here all about columns in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Columns
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Columns
+# Columns in Gantt component
 
 The column displays information from a bound data source, and you can edit the values of column to update the task details through TreeGrid. The operations such as sorting, filtering, and searching can be performed based on column definitions. To display a Gantt column, the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Field) property should be mapped from the data source to the column.
 

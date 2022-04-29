@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in Gantt component
 
 Accessibility is achieved in the Gantt component through the WAI-ARIA standard and keyboard navigations. The Gantt features can be effectively accessed through assistive technologies such as screen readers. It is also available with a built-in keyboard navigation support; it makes accessibility easier for the people who use assistive technologies or who completely rely on the Keyboard support.
 

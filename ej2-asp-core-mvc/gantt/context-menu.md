@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Context menu
+# Context menu in Gantt component
 
 The Gantt control allows to perform quick actions by using context menu. When right-clicking the context menu, the context menu options are shown. To enable this feature, set the `enableContextMenu` to true. The default context menu options are enabled using the `editSettings` property. The context menu options can be customized using the `contextMenuItems` property.
 
