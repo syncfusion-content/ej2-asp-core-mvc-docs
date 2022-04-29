@@ -1,11 +1,13 @@
- @Html.EJS().Kanban("kanban").KeyField("Status").DataSource((IEnumerable<object>)ViewBag.data).Columns(col =>
-            {
-           col.HeaderText("To Do").KeyField("Open").Add();
-           col.HeaderText("In Progress").KeyField("InProgress").Add();
-           col.HeaderText("Testing").KeyField("Testing").Add();
-           col.HeaderText("Done").KeyField("Close").Add();
-       }).CardSettings(card =>  {
-           card.ContentField("Summary").HeaderField("Id");
-       }).SwimlaneSettings(swim => {
-           swim.KeyField("Assignee");
-       }).Render()
+@model List<KanbanSample.Controllers.KanbanDataModels>
+
+@Html.EJS().Kanban("kanban").KeyField("Status").DataSource((IEnumerable<object>)Model).Columns(col =>
+		{
+	   col.HeaderText("To Do").KeyField("Open").Add();
+	   col.HeaderText("In Progress").KeyField("InProgress").Add();
+	   col.HeaderText("Testing").KeyField("Testing").Add();
+	   col.HeaderText("Done").KeyField("Close").Add();
+   }).CardSettings(card =>  {
+	   card.ContentField("Summary").HeaderField("Id");
+   }).SwimlaneSettings(swim => {
+	   swim.KeyField("Assignee");
+   }).Render()
