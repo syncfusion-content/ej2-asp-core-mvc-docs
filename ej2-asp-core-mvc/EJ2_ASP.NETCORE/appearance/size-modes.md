@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Size Modes in ##Platform_Name## | Syncfusion
+title: Size Modes in Syncfusion ##Platform_Name## controls
 description: Learn here all about size modes in Syncfusion ##Platform_Name## and how to apply it to application or specific control.
 platform: ej2-asp-core-mvc
 control: common
@@ -175,6 +175,23 @@ Refer to the following code, in which the `e-bigger` class is added for enabling
 ![change-size-mode-for-a-control-at-runtime](images/change-size-mode-for-a-component-at-runtime.gif)
 
 > [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/SizeModes/SizeModeControl)
+
+## Change font size for all controls
+
+You can change the font-size for all the controls by overriding the CSS for `e-control` class as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<style>
+    .e-control, .e-control [class^='e-'], .e-control [class*=' e-'] {
+
+    font-size:1rem;
+
+    }
+</style>
+{% endhighlight %}
+{% endtabs %}
 
 ## See Also
 
