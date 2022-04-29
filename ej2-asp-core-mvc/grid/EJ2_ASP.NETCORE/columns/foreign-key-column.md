@@ -169,3 +169,33 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% endtabs %}
 {% endif %}
 
+
+## Bind data on foreign key columns with UrlAdaptor
+
+You can bind the data on foreign key columns using `UrlAdaptor`. In the following example, **EmployeeID** is designated as a [`ForeignKeyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyField), and **ShipName** is designated as a [`ForeignKeyValue`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyValue).
+
+To communicate with a specific DataSource, DataManager uses the adaptor idea. UrlAdaptor is used to interact with remote data services and to bind data on foreign key columns.
+
+<!-- We attach data from datasource UserEditingSpeciesSiteLinksQuery to a foreign key column with using url adaptor. -->
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/binding-data/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="binding.cs" %}
+{% include code-snippet/grid/how-to/binding-data/binding.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/binding-data/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="binding.cs" %}
+{% include code-snippet/grid/how-to/binding-data/binding.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
