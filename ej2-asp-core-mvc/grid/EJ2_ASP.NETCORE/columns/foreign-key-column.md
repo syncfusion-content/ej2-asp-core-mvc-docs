@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Foreign Key Column
+# Foreign Key Column in ASP.NET CORE Grid Component
 
 Foreign key column can be enabled by using [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_DataSource), [`foreignKeyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyField) and [`foreignKeyValue`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_ForeignKeyValue) properties of **e-grid-column** tag helper.
 
@@ -81,7 +81,7 @@ In the following example, The **Employee Name** is a foreign key column and whil
 
 ## Customize filter UI in foreignkey column
 
-You can create your own filtering UI by using [`filter`](https://helpsyncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Grids.GridColumn~Filter.html) property of [`e-grid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) tag helper. The following example demonstrates the way to create a custom filtering UI in the foreign column.
+You can create your own filtering UI by using [`filter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Filter) property of [`e-grid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) tag helper. The following example demonstrates the way to create a custom filtering UI in the foreign column.
 
 In the following example, The **Employee Name** is a foreign key column. DropDownList is rendered using Filter UI.
 
@@ -144,7 +144,7 @@ In the following example, The **Employee Name** is a foreign key column. This co
 
 Default aggregations are not supported in a foreign key column. You can achieve aggregation for the foreign key column by using the custom aggregates. The following example demonstrates the way to achieve aggregation in foreign key column.
 
-In the following example, The **Employee Name** is a foreign key column and the aggregation for the foreign column was calculated in customAggregateFn.
+In the following example, The **Employee Name** is a foreign key column and the aggregation for the foreign column was calculated in customAggregatefn.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
