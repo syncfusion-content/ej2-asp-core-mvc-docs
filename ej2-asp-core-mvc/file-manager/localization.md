@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization
+# Localization in File Manager
 
 The file manager can be localized to any culture by defining the texts and messages of the file manager in the corresponding culture. The default locale of the file manager is `en`(English). The following table represents the default texts and messages of the file manager in `en` culture.
 
@@ -80,7 +80,7 @@ The file manager can be localized to any culture by defining the texts and messa
 |Header-Folder-Delete|Delete Folder|
 |Content-Folder-Delete|Are you sure you want to delete this folder?|
 |Header-Duplicate|File exists|
-|Content-Duplicate| already exists. Are you sure you want to replace it?|
+|Content-Duplicate|Already exists. Are you sure you want to replace it?|
 |Header-Upload|Upload Files|
 |Error|Error|
 |Validation-Empty|The file or folder name cannot be empty.|
@@ -135,6 +135,5 @@ The below example shows adding the German culture locale(`de-DE`)
 
 
 
-Output be like the below.
 
 ![Localization](./images/localization.png)

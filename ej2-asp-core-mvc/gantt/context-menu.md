@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu in ##Platform_Name## Gantt Component
-description: Learn here all about Context Menu in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn here all about context menu in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Context Menu
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Context menu
+# Context menu in Gantt component
 
-The Gantt control allows you to perform quick actions by using context menu. When right-clicking the context menu, the context menu options are shown. To enable this feature, set the `enableContextMenu` to true. The default context menu options are enabled using the `editSettings` property. The context menu options can be customized using the `contextMenuItems` property.
+The Gantt control allows to perform quick actions by using context menu. When right-clicking the context menu, the context menu options are shown. To enable this feature, set the `enableContextMenu` to true. The default context menu options are enabled using the `editSettings` property. The context menu options can be customized using the `contextMenuItems` property.
 
 The default items are listed in the following table.
 
@@ -93,4 +93,4 @@ The following sample shows context menu item for parent rows to expand or collap
 
 ![Alt text](images/customContextMenu.PNG)
 
-> You can show an specific item in context menu for header/content area in the Gantt control by defining the `target` property.
+> You can show a specific item in context menu for header/content area in the Gantt control by defining the `target` property.

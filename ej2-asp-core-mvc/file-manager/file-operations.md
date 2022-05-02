@@ -1,6 +1,6 @@
 ---
 layout: post
-title: File Operations in ##Platform_Name## File Manager Component
+title: File Operations in ##Platform_Name## File Manager | Syncfusion
 description: Learn here all about File Operations in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File Operations
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# File Operations
+# File Operations in File Manager
 
-The file manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the file manager component.  Additionally, previewing of image files is also provided in the file manager component.
+The file manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All the basic file operations like creating a new folder, uploading and downloading of files in the file system, deleting and renaming of existing files and folders are available in the file manager component. Additionally, previewing of image files is also provided in the file manager component.
 
 The following table represents the basic operations available in the file manager and their corresponding functions.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maintain Zoom To Fit in ##Platform_Name## Gantt Component
-description: Learn here all about Maintain Zoom To Fit in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to maintain zoom to fit in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Maintain Zoom To Fit
 publishingplatform: ##Platform_Name##
@@ -11,11 +11,11 @@ documentation: ug
 
 # Maintain zoomToFit
 
-In the Gantt control, While performing edit actions or dynamically change dataSource, the timeline gets refreshed. When zoomToFit toolbar item is clicked and perform editing actions or dynamically change dataSource, the timeline gets refreshed. So that, the timeline will not fit to the project any more.
+The timeline in the Gantt control is refreshed when you make edit actions or change the dataSource dynamically. The timeline is refreshed when the zoomToFit toolbar item is clicked and editing operations or dynamically changing dataSource are done. As a result, the timeline will no longer be appropriate for the project.
 
 ## Maintain zoomToFit after edit actions
 
-We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar edit) by using `fitToProject` method in `actionComplete` and `taskbarEdited` event.
+The `zoomToFit` is maintained after editing actions (cell edit, dialog edit, taskbar edit) by using `fitToProject` method in `actionComplete` and `taskbarEdited` event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,7 +44,7 @@ We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar 
 
 ## Maintain zoomToFit after change dataSource dynamically
 
-We can maintain `zoomToFit` after change dataSource dynamically, by calling `fitToProject` method in dataBound event.
+The `zoomToFit` can be maintained after changing the dataSource dynamically, by calling `fitToProject` method in dataBound event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Holidays in ##Platform_Name## Gantt Component
-description: Learn here all about Holidays in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn here all about holidays in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Holidays
 publishingplatform: ##Platform_Name##
@@ -18,7 +18,6 @@ Non-working days in a project can be displayed in the Gantt control using the [`
 * [`Label`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_Label): Defines the description or label for the holiday.
 * [`CssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_CssClass): Formats the holidays label in the Gantt chart.
 
-The following code example shows how to display the non-working days in the Gantt control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -45,6 +44,5 @@ The following code example shows how to display the non-working days in the Gant
 
 
 
-The following screenshot shows the output of Holidays in Gantt control.
 
 ![Alt text](images/holidays.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Scroll Top in ##Platform_Name## Gantt Component
-description: Learn here all about Set Scroll Top in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn here all about set scroll top in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set Scroll Top
 publishingplatform: ##Platform_Name##

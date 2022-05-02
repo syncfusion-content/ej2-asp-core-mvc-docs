@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Change Schedule Date in ##Platform_Name## Gantt Component
-description: Learn here all about Change Schedule Date in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to change schedule date in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Change Schedule Date
 publishingplatform: ##Platform_Name##

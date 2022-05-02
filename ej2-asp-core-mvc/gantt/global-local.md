@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Global Local in ##Platform_Name## Gantt Component
-description: Learn here all about Global Local in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn here all about global local in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Global Local
 publishingplatform: ##Platform_Name##
@@ -13,7 +13,7 @@ documentation: ug
 
 ## Localization
 
-The [`Localization`](../../common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value and translation object.
+The [`Localization`](../../common/localization) library allows to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value and translation object.
 
 The following list of properties and its values are used in the Gantt.
 

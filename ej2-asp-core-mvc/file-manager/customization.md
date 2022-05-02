@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## File Manager Component
-description: Learn here all about Customization in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## File Manager | Syncfusion
+description: Learn here all about customization in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
@@ -51,7 +51,6 @@ The context menu settings like, items to be displayed on files, folders and layo
 
 
 
-Output be like the below.
 
 ![FileManager contextmenu ](./images/contextmenu_item.PNG)
 
@@ -84,7 +83,6 @@ The navigation pane settings like, minimum and maximum width and visibility can 
 
 
 
-Output be like the below.
 
 ![FileManager navigationpane ](./images/navigationpane.PNG)
 
@@ -92,7 +90,7 @@ Output be like the below.
 
 The file extensions are displayed in the File Manager by default. This can be hidden by disabling the [showFileExtension](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ShowFileExtension.html) property.
 
-In File Manager [fileLoad](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~FileLoad.html) and [fileOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~FileOpen.html) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
+In File Manager [fileLoad](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~FileLoad.html) and [fileOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~FileOpen.html) events are triggered before the file or folder is rendered and opened respectively. These events can be utilized to perform operations before a file or folder is rendered or opened.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -119,13 +117,12 @@ In File Manager [fileLoad](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 
 
-Output be like the below.
 
 ![FileManager show/hidden extension ](./images/fileextension.PNG)
 
 ## Show/Hide hidden items
 
-The File Manager provides support to show/hide the hidden items by enabling/disabling the [showHiddenItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ShowHiddenItems.html) property.
+The File Manager provides support to show or hide the hidden items by enabling or disabling the [showHiddenItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ShowHiddenItems.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -152,7 +149,6 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 
 
 
-Output be like the below.
 
 ![FileManager show/hidden items ](./images/hidden_items.png)
 
@@ -185,7 +181,6 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 
 
 
-Output be like the below.
 
 ![FileManager showthumbnail ](./images/thumbnail.PNG)
 
@@ -218,7 +213,6 @@ The toolbar settings like, items to be displayed in toolbar and visibility can b
 
 
 
-Output be like the below.
 
 ![FileManager toolbar customization ](./images/toolbar_item.PNG)
 
@@ -288,6 +282,5 @@ The tooltip value can be customized by adding extra content to the title of the 
 
 
 
-Output be like the below.
 
 ![FileManager tooltip customization ](./images/tooltip.png)
