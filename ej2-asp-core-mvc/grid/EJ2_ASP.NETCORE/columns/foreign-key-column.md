@@ -144,7 +144,7 @@ In the following example, The **Employee Name** is a foreign key column. This co
 
 Default aggregations are not supported in a foreign key column. You can achieve aggregation for the foreign key column by using the custom aggregates. The following example demonstrates the way to achieve aggregation in foreign key column.
 
-In the following example, The **Employee Name** is a foreign key column and the aggregation for the foreign column was calculated in customAggregatefn.
+In the following example, The **Employee Name** is a foreign key column and the aggregation for the foreign column was calculated in **customAggregateFn**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
