@@ -1,1 +1,3 @@
-@Html.EJS().ListBox("listbox").DataSource((IEnumerable<object>)ViewBag.data).Render()
+@model List<string>
+
+@Html.EJS().ListBox("listbox").DataSource((IEnumerable<object>)Model).Render()

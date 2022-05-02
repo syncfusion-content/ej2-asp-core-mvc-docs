@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Linear Gauge Component
-description: Checkout and learn about getting started with ##Platform_Name## Linear Gauge component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## LinearGauge Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## LinearGauge control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,130 +9,130 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Linear Gauge
+# Getting Started with ASP.NET MVC LinearGauge Control
+
+This section briefly explains about how to include [ASP.NET MVC LinearGauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
-To get start with ASP.NET MVC application, ensure the following software are installed on the machine.
+[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-1. .Net Framework 4.5 and above.
-2. ASP.NET MVC 4 or ASP.NET MVC 5
-3. Visual Studio
+## Create ASP.NET MVC application with HTML helper
 
-## Preparing ASP.NET MVC application
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
 
-The following steps are used to create ASP.NET MVC Application.
+* [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
-**Step 1:** Open the Visual Studio and click the **File** menu and select **New -> Project** option.
+## Install ASP.NET MVC package in the application
 
-![Default Template](images/default-template.png)
+Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. To add ASP.NET MVC controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
 
-**Step 2:** Select **ASP.NET Web Application  (.NET Framework)** templates in Visual Studio 2019 and click **Next**.
+> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-![Select the Asp.Net MVC application](images/project-selecctmvc.png)
+> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
 
-**Step 3:** Change the application name and location of the application if necessary then click **Create**.
+## Add namespace
 
-![Changing the application name](images/application-namemvc.png)
+Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
-**Step 4:** Choose **MVC** and then click **Create**. Now, the MVC web application project is created with default ASP.NET MVC template.
-
-![Selecting the MVC](images/choose-mvc.png)
-
-**Step 5:** Add the [`Syncfusion.EJ2.MVC4`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages…**.
-
-![Adding the nuget to the application](images/solution-Explorer.png)
-
-**Step 6:** Search the `Syncfusion EJ2 MVC5` keyword in the Browse tab and install **Syncfusion.EJ2.MVC5** NuGet package in the application.
-
-![Nuget Demo](images/nuget-mvc.png)
-
-After installation complete, this will be included in the project. You can refer it from the Project Assembly Reference.
-
-> We need to install **NewtonSoft.JSON** as a dependency, since **Syncfusion.EJ2** dependent to `NewtonSoft.JSON` package.
-
-**Step 7:** Open **~/Views/Web.config** file and add the **Syncfusion.EJ2** namespace reference to the `<system.web.webPages.razor>` element and Syncfusion.EJ2 assembly reference to `<system.web>` element.
-
-```javascript
-<configuration>
-...
-    <system.web.webPages.razor>
-        ...
-        <pages pageBaseType="System.Web.Mvc.WebViewPage">
-            <namespaces>
-                ...
-                ...
-                <add namespace="Syncfusion.EJ2"/>
-            </namespaces>
-        </pages>
-    </system.web.webPages.razor>
-...
-    <system.web>
-        <compilation>
-            <assemblies>
-                ...
-                ...
-                <add assembly="Syncfusion.EJ2, Culture=neutral" />
-            </assemblies>
-        </compilation>
-    </system.web>
-</configuration>
+```
+<namespaces>
+    <add namespace="Syncfusion.EJ2"/>
+</namespaces>
 ```
 
-**Step 8:** Add client side resources through [`CDN`](http://ej2.syncfusion.com/documentation/base/deployment.html?lang=typescript#cdn) or local [`package`](https://www.npmjs.com/package/@syncfusion/ej2) in the in the `<head>` element of **~/Views/Shared/_Layout.cshtml** layout page.
+## Add style sheet
 
-```cs
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <head>
-...
-
-    <!-- Syncfusion Essential JS 2 Styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
-
-    <!-- Syncfusion Essential JS 2 Scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
 </head>
-```
 
-**Step 9:** Add the Essential JS 2 Script Manager at the end of `<body>` element in the **~/Views/Shared/_Layout.cshtml** layout page.
+{% endhighlight %}
+{% endtabs %}
 
-```cs
+## Add script reference
+
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Register Syncfusion Script Manager
+
+Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <body>
 ...
-    <!-- Syncfusion Essential JS 2 ScriptManager -->
+    <!-- Syncfusion ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
 </body>
-```
 
-**Step 10:** Now, add the Syncfusion Essential JS 2 Linear Gauge component in **Index.cshtml** in the **~/Views/Home** folder.
+{% endhighlight %}
+{% endtabs %}
 
-```cs
+## Add ASP.NET MVC LinearGauge control
 
-<h2> Essential JS 2 for ASP.NET MVC LinearGauge </h2>
+Now, add the Syncfusion ASP.NET MVC LinearGauge control in `~/Views/Home/Index.cshtml` page.
 
- @Html.EJS().LinearGauge("container").Render();
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
-```
+@Html.EJS().LinearGauge("container").Render();
+
+{% endhighlight %}
+{% endtabs %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Kanban control will be rendered in the default web browser.
+
+![ASP.NET MVC LinearGauge Control](images/lineargauge-control.png)
 
 ## Add Gauge Title
 
 The title for the Linear Gauge can be set using `title` property in Linear Gauge.
 
-```cs
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
 
-<h2> Essential JS 2 for ASP.NET MVC LinearGauge </h2>
+@Html.EJS().LinearGauge("container").Title("Temperature Measure").Render();
 
- @Html.EJS().LinearGauge("container").Title("Temperature Measure").Render();
+{% endhighlight %}
+{% endtabs %}
 
-```
+![ASP.NET MVC LinearGauge with Title](images/lineargauge-with-title.png)
 
 ## Axis
 
 The start value and end value for the Linear Gauge can be set using the `minimum` and `maximum` properties in the `axis` object
 
-```cs
-  @Html.EJS().LinearGauge("container").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis> {
-   new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
-   {
-       Minimum = 0, Maximum = 200
-   }}).Render();
-```
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
+@Html.EJS().LinearGauge("container").Axes(new List<Syncfusion.EJ2.LinearGauge.LinearGaugeAxis> {
+new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
+{
+    Minimum = 0, Maximum = 200
+}}).Render();
+
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC LinearGauge with Axis](images/axis.png)
