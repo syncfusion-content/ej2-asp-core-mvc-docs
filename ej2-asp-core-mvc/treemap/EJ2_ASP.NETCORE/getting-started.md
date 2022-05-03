@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core TreeMap Control
 
 This section briefly explains about how to include [ASP.NET Core TreeMap](https://www.syncfusion.com/aspnet-core-ui-controls/treemap) control in your ASP.NET Core application using Visual Studio.
 
@@ -51,7 +51,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
 </head>
 
 {% endhighlight %}
@@ -161,7 +161,7 @@ The color mapping feature supports customization of item colors based on the und
 
 ## Enable legend
 
-You can show legend for the tree map by setting the `visible` property to true in `legendSettings` object.
+You can show legend for the tree map by setting the `visible` property to **true** in `legendSettings` object.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -187,7 +187,7 @@ You can show legend for the tree map by setting the `visible` property to true i
 
 ## Add labels
 
-The labels are added to show additional information of the items in tree map. By default, the visibility of the label is true. This can be customized using the `showLabels` property in `leafItemSettings`.
+The labels are added to show additional information of the items in tree map. By default, the visibility of the label is **true**. This can be customized using the `showLabels` property in `leafItemSettings`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -213,7 +213,7 @@ The labels are added to show additional information of the items in tree map. By
 
 ## Enable tooltip
 
-The tooltips are used when labels cannot display information due to space constraints. Tooltips can be enabled by setting the `visible` property to true in `tooltipSettings` object.
+The tooltips are used when labels cannot display information due to space constraints. Tooltips can be enabled by setting the `visible` property to **true** in `tooltipSettings` object.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
