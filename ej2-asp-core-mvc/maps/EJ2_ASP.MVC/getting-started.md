@@ -125,7 +125,7 @@ public object GetWorldMap()
 {% endhighlight %}
 {% endtabs %}
 
-> The `shapeData` in the `ViewBag` object is already assigned to the Maps component in Step 6.
+> The `shapeData` in the `ViewBag` object is already assigned to the Maps component.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Map control will be rendered in the default web browser.
 

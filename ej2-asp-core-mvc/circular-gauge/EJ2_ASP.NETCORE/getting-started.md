@@ -80,7 +80,8 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <body>
-...
+    ....
+    ....
     <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
@@ -107,7 +108,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Add Gauge Title
 
-You can add a title using `title` attribute to the circulargauge to provide quick information to the user.
+You can add a title using `title` attribute to the circular gauge to provide quick information to the user.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -120,7 +121,7 @@ You can add a title using `title` attribute to the circulargauge to provide quic
 
 ## Axis
 
-You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer the following code snippet to add the axis range to circulargauge.
+You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer the following code snippet to add the axis range to circular gauge.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

@@ -101,7 +101,7 @@ Now, add the Syncfusion ASP.NET MVC LinearGauge control in `~/Views/Home/Index.c
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Kanban control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Linear Gauge control will be rendered in the default web browser.
 
 ![ASP.NET MVC LinearGauge Control](images/lineargauge-control.png)
 
@@ -121,7 +121,7 @@ The title for the Linear Gauge can be set using `title` property in Linear Gauge
 
 ## Axis
 
-The start value and end value for the Linear Gauge can be set using the `minimum` and `maximum` properties in the `axis` object
+The start value and end value for the Linear Gauge can be set using the `minimum` and `maximum` properties in the `axis` object.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
