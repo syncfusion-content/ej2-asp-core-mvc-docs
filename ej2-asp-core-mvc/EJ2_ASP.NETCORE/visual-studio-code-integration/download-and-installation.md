@@ -18,7 +18,7 @@ To install the Syncfusion ASP.NET Core Visual Studio Code extension and the crea
 
 * [Visual Studio Code 1.29.0 or later](https://code.visualstudio.com/download)
 * [Visual Studio 2019 16.3 Preview 2](https://visualstudio.microsoft.com/vs/) or later
-* [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) or later
+* [.NET Core 3.1](https://dotnet.microsoft.com/en-us/download/dotnet/3.1) or later
 * [C# Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 * [Node.js](https://nodejs.org/en/download/)
 
