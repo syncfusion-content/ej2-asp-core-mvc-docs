@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Map Control
+# Getting Started with ASP.NET MVC Maps Control
 
-This section briefly explains about how to include [ASP.NET MVC Map](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control in your ASP.NET MVC application using Visual Studio.
 
 You can explore some useful features in the Maps component using the following video.
 
@@ -92,9 +92,9 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC Map control
+## Add ASP.NET MVC Maps control
 
-Now, add the Syncfusion ASP.NET MVC Map control in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC Maps control in `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -125,8 +125,8 @@ public object GetWorldMap()
 {% endhighlight %}
 {% endtabs %}
 
-> The `shapeData` in the `ViewBag` object is already assigned to the Maps component in Step 6.
+> The `shapeData` in the `ViewBag` object is already assigned to the Maps component.
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Map control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Maps control will be rendered in the default web browser.
 
 ![ASP.NET MVC - Essential JS2 Maps](../maps/images/aspnetmvc-maps.png)
