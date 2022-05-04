@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nuget Packages in ##Platform_Name## Controls
-description: Learn here all about NuGet Packages in Syncfusion ##Platform_Name## controls and more.
+title: Nuget Packages in Syncfusion ##Platform_Name## Controls
+description: Learn here all about NuGet Packages in Syncfusion Essential Studio ##Platform_Name## controls and more.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
