@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## LinearGauge Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## LinearGauge control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Linear Gauge Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Linear Gauge control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC LinearGauge Control
+# Getting Started with ASP.NET MVC Linear Gauge Control
 
-This section briefly explains about how to include [ASP.NET MVC LinearGauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -89,9 +89,9 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC LinearGauge control
+## Add ASP.NET MVC Linear Gauge control
 
-Now, add the Syncfusion ASP.NET MVC LinearGauge control in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC Linear Gauge control in `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -101,9 +101,9 @@ Now, add the Syncfusion ASP.NET MVC LinearGauge control in `~/Views/Home/Index.c
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC LinearGauge control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Linear Gauge control will be rendered in the default web browser.
 
-![ASP.NET MVC LinearGauge Control](images/lineargauge-control.png)
+![ASP.NET MVC Linear Gauge Control](images/lineargauge-control.png)
 
 ## Add Gauge Title
 
@@ -117,11 +117,11 @@ The title for the Linear Gauge can be set using `title` property in Linear Gauge
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC LinearGauge with Title](images/lineargauge-with-title.png)
+![ASP.NET MVC Linear Gauge with Title](images/lineargauge-with-title.png)
 
 ## Axis
 
-The start value and end value for the Linear Gauge can be set using the `minimum` and `maximum` properties in the `axis` object
+The start value and end value for the Linear Gauge can be set using the `minimum` and `maximum` properties in the `axis` object.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
