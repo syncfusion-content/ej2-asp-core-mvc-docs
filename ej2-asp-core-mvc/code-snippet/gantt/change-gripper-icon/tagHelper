@@ -1,0 +1,16 @@
+<ejs-gantt id='Gantt' dataSource="GanttDataSourceCollection">
+   <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" child="SubTasks">
+   </e-gantt-taskfields>
+  <e-gantt-editsettings allowTaskbarEditing="true"></e-gantt-editsettings>
+</ejs-gantt>
+
+<style>
+/* change gripper icon */
+.e-gantt .e-left-resize-gripper::before, .e-gantt .e-right-resize-gripper::before {
+    content: '\e934';
+}
+
+.e-gantt .e-left-resize-gripper, .e-gantt .e-right-resize-gripper {
+    transform: rotate(90deg);
+}
+</style

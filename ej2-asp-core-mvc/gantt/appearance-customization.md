@@ -108,6 +108,35 @@ You can design your own taskbars to view the tasks in Gantt by using [`TaskbarTe
 
 ![Alt text](images/taskbarTemplate1.png)
 
+### Change gripper icon in taskbar
+
+You can change the gripper icon in the taskbar by applying styles to their respective class elements.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/change-gripper-icon/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="data.cs" %}
+{% include code-snippet/gantt/change-gripper-icon/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/change-gripper-icon/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="data.cs" %}
+{% include code-snippet/gantt/change-gripper-icon/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Change Gripper Icon in Taskbar](images/change-gripper-icon.png)
+
 ## Task labels
 
 The Gantt control maps any data source fields to task labels using the [`LabelSettings.LeftLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttLabelSettings.html#Syncfusion_EJ2_Gantt_GanttLabelSettings_LeftLabel), [`LabelSettings.RightLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttLabelSettings.html#Syncfusion_EJ2_Gantt_GanttLabelSettings_RightLabel), and [`LabelSettings.TaskLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttLabelSettings.html#Syncfusion_EJ2_Gantt_GanttLabelSettings_TaskLabel) properties. You can customize the task labels with templates.
