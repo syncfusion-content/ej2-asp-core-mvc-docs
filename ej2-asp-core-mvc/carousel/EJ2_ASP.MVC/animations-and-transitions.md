@@ -100,7 +100,7 @@ The following demo depicts the example for carousel events,
 
 ## Disable touch swiping
 
-In the carousel, we can able to perform swipe the carousel slides using touch actions by default. We had the option to enable or disable the swipe action using the [EnableTouchSwipe](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_EnableTouchSwipe) property. The following example depicts the code to disable the swipe action for the slide.
+In the carousel, you can swipe the carousel slides using touch actions by default. The swipe action can be enabled or disabled using the [EnableTouchSwipe](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_EnableTouchSwipe) property. The following example depicts the code to disable the swipe action for the slide.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

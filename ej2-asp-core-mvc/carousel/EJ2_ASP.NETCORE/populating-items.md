@@ -13,7 +13,7 @@ documentation: ug
 In the Carousel, slides can be rendered in two ways as follows,
 
 * Populating items using carousel item
-* Populating Items using data source
+* Populating items using data source
 
 ## Populating items using carousel item
 
@@ -28,7 +28,7 @@ When rendering the Carousel component using items binding, you can assign templa
 {% endhighlight %}
 {% endtabs %}
 
-## Populating Items using data source
+## Populating items using data source
 
 When rendering the Carousel component using data binding, you can assign a common template only for all items using the [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_ItemTemplate) property. You cannot set the interval for each item. The following example code depicts the functionality as data binding.
 

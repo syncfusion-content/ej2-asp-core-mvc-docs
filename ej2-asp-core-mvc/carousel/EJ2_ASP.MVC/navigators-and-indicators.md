@@ -46,7 +46,7 @@ In the carousel, you can show the previous and next buttons only on mouse hover 
 {% endhighlight %}
 {% endtabs %}
 
-### Previous and next button Template
+### Previous and next button template
 
 Template options are provided to customize the previous button using [PreviousButtonTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_PreviousButtonTemplate) and the next button using [NextButtonTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_NextButtonTemplate). The following example depicts the code for applying the template to previous and next buttons in the carousel.
 
