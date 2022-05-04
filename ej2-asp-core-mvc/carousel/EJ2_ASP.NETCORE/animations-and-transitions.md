@@ -31,7 +31,7 @@ The following demo depicts the example for fade animation,
 
 In Carousel, you can use customized animation effects for slide transitions using the [customEffect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.CarouselAnimationSettings.html#Syncfusion_EJ2_Navigations_CarouselAnimationSettings_CustomEffect) option of the [animation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Animation) property.
 
-The following demo depicts the example for custom animation,
+The following demo depicts the example for `parallax` custom animation,
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
