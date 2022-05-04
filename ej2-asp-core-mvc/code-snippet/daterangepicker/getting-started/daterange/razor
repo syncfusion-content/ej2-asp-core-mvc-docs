@@ -1,1 +1,7 @@
-@Html.EJS().DateRangePicker("daterangepicker").StartDate(ViewBag.startDate).EndDate(ViewBag.endDate).Render()
+@{
+    .....
+    var startDate = new DateTime(2022, 11, 09);
+    var endDate = new DateTime(2022, 11, 21);
+}
+
+@Html.EJS().DateRangePicker("daterangepicker").StartDate(startDate).EndDate(endDate).Render()

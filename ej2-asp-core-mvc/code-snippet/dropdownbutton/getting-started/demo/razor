@@ -1,1 +1,3 @@
-@Html.EJS().DropDownButton("element").Content("Edit").Items((IEnumerable<object>)ViewBag.items).Render()
+@model List<object>
+
+@Html.EJS().DropDownButton("element").Content("Edit").Items((IEnumerable<object>)Model).Render()

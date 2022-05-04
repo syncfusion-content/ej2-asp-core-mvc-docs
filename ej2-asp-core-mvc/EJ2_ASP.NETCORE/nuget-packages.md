@@ -150,7 +150,7 @@ ejs-documenteditor
 
 ### Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
 
-The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them. The thumbnail, bookmark, hyperlink, and table of contents support provides easy navigation within and outside PDF files. The form-filling support provides a platform to fill and print with AcroForms. The PDF files can be reviewed with the available annotation tools.
+The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them. The thumbnail, bookmark, hyperlink, and the table of contents support provides easy navigation within and outside PDF files. The form-filling support provides a platform to fill and print with AcroForms. The PDF files can be reviewed with the available annotation tools.
 
 <table>
 <tr>

@@ -40,8 +40,8 @@ Using the below approaches the themes can be referenced in the ASP.NET Core appl
 1. [CDN](#cdn-reference) - Used to reference complete css via static web assets.
 2. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/) - Used to generate resources only for the selected (used) components.
 3. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
-4. [NPM packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet's in an application.
-4. [LibMan](#libman) - Used to downloads popular libraries and frameworks from a file system or a content delivery network (CDN) in an application.
+4. [NPM Packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet's in an application.
+5. [LibMan](#libman) - Used to downloads popular libraries and frameworks from a file system or a content delivery network (CDN) in an application.
 
 ## CDN Reference
 
@@ -76,7 +76,7 @@ Syncfusion ASP.NET Core Themes are available in the CDN. Make sure that the vers
 | Microsoft Office Fabric Dark | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fabric-dark.css |
 | High Contrast  | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/highcontrast.css |
 
-## NPM packages
+## NPM Packages
 
 NPM is a node package manager. It is basically used for managing dependencies of various server-side dependencies. You can manage server-side dependencies manually. It is a command-line program for dealing with said repository that aids in package installation, version management, and dependency management. It is an online repository for the publishing of open-source `Node.js` projects.
 

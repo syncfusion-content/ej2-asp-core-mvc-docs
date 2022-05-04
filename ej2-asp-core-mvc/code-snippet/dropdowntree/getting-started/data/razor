@@ -1,4 +1,11 @@
+@model List<DropDownTreeSample.Controllers.Parent>
+@{
+    .....
+    char[] value = { 'n', 'o', 'd', 'e', 'C', 'h', 'i', 'l', 'd' };
+    string child = new string(value);
+}
+
 <div id='container' style="margin:0 auto; width:250px;">
     @Html.EJS().DropDownTree("treedata").Placeholder("Select a Item").Fields(field =>
-            field.Value("nodeId").Child(ViewBag.child).Text("nodeText").DataSource(ViewBag.dataSource)).Render()
+                field.Value("nodeId").Child(child).Text("nodeText").DataSource(Model)).Render()
 </div>
