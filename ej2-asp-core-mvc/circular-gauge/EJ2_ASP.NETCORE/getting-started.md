@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core CircularGauge Control
+# Getting Started with ASP.NET Core Circular Gauge Control
 
-This section briefly explains about how to include [ASP.NET Core CircularGauge](https://www.syncfusion.com/aspnet-core-ui-controls/circular-gauge) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core Circular Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/circular-gauge) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -80,7 +80,8 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <body>
-...
+    ....
+    ....
     <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
@@ -88,9 +89,9 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core CircularGauge control
+## Add ASP.NET Core Circular Gauge control
 
-Now, add the Syncfusion ASP.NET Core CircularGauge tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Circular Gauge tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -101,13 +102,13 @@ Now, add the Syncfusion ASP.NET Core CircularGauge tag helper in `~/Pages/Index.
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core CircularGauge control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Circular Gauge control will be rendered in the default web browser.
 
-![ASP.NET Core CircularGauge Control](images/circulargauge-control.png)
+![ASP.NET Core Circular Gauge Control](images/circulargauge-control.png)
 
 ## Add Gauge Title
 
-You can add a title using `title` attribute to the circulargauge to provide quick information to the user.
+You can add a title using `title` attribute to the circular gauge to provide quick information to the user.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -120,7 +121,7 @@ You can add a title using `title` attribute to the circulargauge to provide quic
 
 ## Axis
 
-You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer the following code snippet to add the axis range to circulargauge.
+You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer the following code snippet to add the axis range to circular gauge.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -135,7 +136,7 @@ You can set the range to the axis using `minimum` and `maximum` attributes for a
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core CircularGauge with Axis](images/circulargauge-with-axis.png)
+![ASP.NET Core Circular Gauge with Axis](images/circulargauge-with-axis.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
