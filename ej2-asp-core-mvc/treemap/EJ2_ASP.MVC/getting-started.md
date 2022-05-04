@@ -14,7 +14,7 @@ documentation: ug
 
 To get start with ASP.NET MVC application, need to ensure the following software to be installed on the machine.
 
-1. .Net Framework 4.5 and above.
+1. .NET Framework 4.5 and above.
 2. ASP.NET MVC 4 or ASP.NET MVC 5
 3. Visual Studio
 
@@ -86,7 +86,7 @@ After installation complete, this will be included in the project. You can refer
 
 ```
 
-**Step 6:** Now, we can add Syncfusion Essential JS 2 for ASP.Net Core components in any page you want.
+**Step 6:** Now, we can add Syncfusion Essential JS 2 for ASP.NET Core components in any page you want.
 
 We are going to render `TreeMap` component in **Index.cshtml** page.
 
