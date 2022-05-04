@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## LinearGauge Control
-description: Checkout and learn about getting started with ##Platform_Name## LinearGauge control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Linear Gauge Control
+description: Checkout and learn about getting started with ##Platform_Name## Linear Gauge control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core LinearGauge Control
+# Getting Started with ASP.NET Core Linear Gauge Control
 
-This section briefly explains about how to include [ASP.NET Core LinearGauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -90,9 +90,9 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core LinearGauge control
+## Add ASP.NET Core Linear Gauge control
 
-Now, add the Syncfusion ASP.NET Core LinearGauge tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Linear Gauge tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -103,9 +103,9 @@ Now, add the Syncfusion ASP.NET Core LinearGauge tag helper in `~/Pages/Index.cs
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core LinearGauge control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Linear Gauge control will be rendered in the default web browser.
 
-![ASP.NET Core LinearGauge Control](images/lineargauge-control.png)
+![ASP.NET Core Linear Gauge Control](images/lineargauge-control.png)
 
 ## Add Gauge Title
 
@@ -120,7 +120,7 @@ The title for the Linear Gauge can be rendered using the `title` property in the
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core LinearGauge with Title](images/lineargauge-with-title.png)
+![ASP.NET Core Linear Gauge with Title](images/lineargauge-with-title.png)
 
 ## Axis
 
@@ -141,7 +141,7 @@ Refer below code snippet to add the axis range to Linear Gauge.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core LinearGauge with Axis](images/lineargauge-with-axis.png)
+![ASP.NET Core Linear Gauge with Axis](images/lineargauge-with-axis.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/LinearGauge/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
