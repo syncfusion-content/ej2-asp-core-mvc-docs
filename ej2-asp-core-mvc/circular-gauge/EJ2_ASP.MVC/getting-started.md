@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Circular Gauge Control
 
-This section briefly explains about how to include [ASP.NET MVC CircularGauge](https://www.syncfusion.com/aspnet-mvc-ui-controls/circular-gauge) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Circular Gauge](https://www.syncfusion.com/aspnet-mvc-ui-controls/circular-gauge) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -100,9 +100,9 @@ Now, add the Syncfusion ASP.NET MVC Circular Gauge control in `~/Home/Index.csht
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC CircularGauge control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Circular Gauge control will be rendered in the default web browser.
 
-![ASP.NET MVC CircularGauge Control](images/circulargauge-control.png)
+![ASP.NET MVC Circular Gauge Control](images/circulargauge-control.png)
 
 ## Add Gauge Title
 
@@ -129,4 +129,4 @@ axes.EndAngle(120).StartAngle(240).Radius("90%").Minimum(0).Maximum(120).Add()).
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC CircularGauge with Axis](images/circulargauge-with-axis.png)
+![ASP.NET MVC Circular Gauge with Axis](images/circulargauge-with-axis.png)
