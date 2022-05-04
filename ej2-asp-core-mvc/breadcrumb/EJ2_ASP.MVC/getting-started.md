@@ -111,9 +111,9 @@ Now, add the Syncfusion ASP.NET MVC Breadcrumb control in `~/Home/Index.cshtml` 
 {% endtabs %}
 {% endif %}
 
-## Add Items to the Breadcrumb Component
+## Add Items to the Breadcrumb Control
 
-Use `Items` property to bind items for Breadcrumb component. The below example demonstrates the basic rendering of Breadcrumb with items support.
+Use `Items` property to bind items for Breadcrumb control. The below example demonstrates the basic rendering of Breadcrumb with items support.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -164,3 +164,5 @@ The following example shows a Enable or disable navigation of Breadcrumb.
 {% endif %}
 
 ![Enable or Disable Navigation in ASP.NET MVC Breadcrumb](./images/enable-disable.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Breadcrumb/ASP.NET%20MVC%20Razor%20Examples).

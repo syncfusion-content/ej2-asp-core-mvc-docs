@@ -101,7 +101,7 @@ Now, add the Syncfusion ASP.NET MVC LinearGauge control in `~/Views/Home/Index.c
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Kanban control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC LinearGauge control will be rendered in the default web browser.
 
 ![ASP.NET MVC LinearGauge Control](images/lineargauge-control.png)
 
@@ -136,3 +136,5 @@ new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
 {% endtabs %}
 
 ![ASP.NET MVC LinearGauge with Axis](images/axis.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/LinearGauge/ASP.NET%20MVC%20Razor%20Examples).

@@ -221,7 +221,7 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/overview/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% highlight c# tabtitle="HomeController.cs" %}
 {% include code-snippet/file-manager/overview/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -252,7 +252,7 @@ The initial view of the File Manager can be changed to details or largeicons vie
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/view/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% highlight c# tabtitle="HomeController.cs" %}
 {% include code-snippet/file-manager/view/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -286,7 +286,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/persistence/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% highlight c# tabtitle="HomeController.cs" %}
 {% include code-snippet/file-manager/persistence/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -317,7 +317,7 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/rtl/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% highlight c# tabtitle="HomeController.cs" %}
 {% include code-snippet/file-manager/rtl/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -348,10 +348,12 @@ The following code snippet demonstrates specifying the current path in File Mana
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/path/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% highlight c# tabtitle="HomeController.cs" %}
 {% include code-snippet/file-manager/path/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 ![FileManager enablertl](images/path.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20MVC%20Razor%20Examples).

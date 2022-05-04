@@ -39,7 +39,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/a
 {% endhighlight %}
 {% endtabs %}
 
-## Adding a simple Card
+## Add ASP.NET MVC Card control
 
 Now, add the Syncfusion ASP.NET MVC Card control in `~/Home/Index.cshtml` page.
 
@@ -91,6 +91,8 @@ You can create Card with a header in a specific structure. For adding header you
 {% endif %}
 
 ![ASP.NET MVC Card](images/card-control.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Card/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 

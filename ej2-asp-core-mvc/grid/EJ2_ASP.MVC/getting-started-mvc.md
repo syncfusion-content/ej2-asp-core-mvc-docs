@@ -339,6 +339,8 @@ The grouping feature enables users to view the grid record in a grouped view. It
 
 ![Grouping in ASP.NET MVC Grid Control](images/grouping.png)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Grid/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [Create an MVC Grid app](https://www.syncfusion.com/blogs/post/create-an-mvc-grid-app-in-10-minutes-with-the-syncfusion-grid.aspx)

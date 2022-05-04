@@ -99,8 +99,6 @@ Now, add the Syncfusion ASP.NET MVC Map control in `~/Views/Home/Index.cshtml` p
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<h2> Essential JS2 for ASP.NET MVC Maps </h2>
-
 @Html.EJS().Maps("container").Layers(layer => { layer.ShapeData(Model).Add(); }).Render();
 
 {% endhighlight %}
@@ -130,3 +128,5 @@ public object GetWorldMap()
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Map control will be rendered in the default web browser.
 
 ![ASP.NET MVC - Essential JS2 Maps](../maps/images/aspnetmvc-maps.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Map/ASP.NET%20MVC%20Razor%20Examples).

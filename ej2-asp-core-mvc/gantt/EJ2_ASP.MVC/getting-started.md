@@ -756,4 +756,4 @@ public class GanttDataSource
 
 ![ASP.NET MVC Gantt with Resources](images/gantt-assign-resource.png)
 
-> You can refer to our [ASP.NET MVC Gantt Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Gantt Chart example](https://ej2.syncfusion.com/aspnetmvc/Gantt/DefaultFunctionalities#/material) that shows how to render the Gantt Chart in ASP.NET MVC.
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Gantt/ASP.NET%20MVC%20Razor%20Examples).
