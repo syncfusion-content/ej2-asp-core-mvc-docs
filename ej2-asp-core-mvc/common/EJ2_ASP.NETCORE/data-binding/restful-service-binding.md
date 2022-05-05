@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data from RESTful web services to Syncfusion ##Platform_Name## control and perform CRUD operations
+title: Bind data from RESTful services to ##Platform_Name## control | Syncfusion
 description: Learn here all about retrieve data from RESTful service, bind data to Syncfusion ##Platform_Name## Common control and more.
 platform: ej2-asp-core-mvc
 control: Common

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data to the Syncfusion ##Platform_Name## Control using WebApiAdaptor of DataManager and perform CRUD operations.
+title: Bind data to the ##Platform_Name## Control using WebApiAdaptor | Syncfusion
 description: Learn how to retrieve data from WebApi controller, bind it to the Syncfusion DataGrid control using WebApiAdaptor of DataManager, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: Common

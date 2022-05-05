@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data from from SQL server to Syncfusion ##Platform_Name## Control and perform CRUD operations
+title: Bind data from SQL server to Syncfusion ##Platform_Name## Control
 description: Retrieve data from SQL server, bind it to Syncfusion ASP.NET Core Grid control using Entity Framework, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: Common
@@ -334,7 +334,7 @@ The response object from the Web API should contain the properties `Items` and `
 
 ## Handling CRUD operations with ASP.NET Core Grid control
 
-The editing can be enabled in the grid control using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#normal), [Dialog](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#dialog), and [Batch](https://helpej2.syncfusion.com/aspnetcore/documentation/grid/edit#batch) editing.
+The editing can be enabled in the grid control using the [GridEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) component. Grid provides various modes of editing options such as [Inline/Normal](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/in-line-editing), [Dialog](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/dialog-editing), and [Batch](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/batch-editing) editing.
 
 Here, **Inline** edit mode and Toolbar property are used to show toolbar items for editing.
 The Grid Editing and Toolbar code are added with previous Grid model.
