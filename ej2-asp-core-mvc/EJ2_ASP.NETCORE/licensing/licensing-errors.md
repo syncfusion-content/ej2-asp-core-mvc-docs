@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Licensing Errors in ##Platform_Name## Component
-description: Learn here all about Licensing Errors in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+description: Learn here all about licensing errors in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Licensing Errors
 publishingplatform: ##Platform_Name##
@@ -110,9 +110,9 @@ License keys are version and product specific. So, if you use ASP.NET Core compo
 
 1. Ensure that respective version [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) nuget package or assembly is referred properly in the application.
 
-2. Ensure that all the Syncfusion assemblies referenced are of the same version and that the corresponding version and product's license key are registered in the application.
+2. Ensure that all the Syncfusion assemblies reference are of the same version and that the corresponding version and product's license key are registered in the application.
 
-3. The license key should be registered before initializing any Syncfusion controls in the application. Refer [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-registration/)  page for more information on registering license keys.
+3. The license key should be registered before initializing any Syncfusion controls in the application. Refer [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-registration/) page for more information on registering license keys.
 
 4. Same version Syncfusion assemblies should be present in the application output folders or published folders.
 

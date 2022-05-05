@@ -7,7 +7,7 @@
             GetImageUrl = "/Home/GetImage",
             UploadUrl = "/Home/Upload",
             DownloadUrl = "/Home/Download"
-        }).Path("/Food").Render()
+        }).Path("/Pictures/Employees").Render()
         <!-- end of filemanager element -->
     </div>
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes in ##Platform_Name## Controls
+title: Themes in Syncfusion ##Platform_Name## Controls
 description: Learn here all about built-in themes and how to change it dynamically in Syncfusion ##Platform_Name## controls.
 platform: ej2-asp-core-mvc
 control: Common
@@ -38,7 +38,7 @@ Syncfusion ASP.NET MVC themes can be used in your ASP.NET MVC application by ref
 Using the below approaches the themes can be referenced in the ASP.NET MVC application,
 
 1. [CDN](#cdn-reference) - Used to reference complete css via static web assets.
-2. CRG - Used to generate resources only for the selected (used) components.
+2. [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator/) - Used to generate resources only for the selected (used) components.
 3. [Theme Studio](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
 
 ## CDN Reference
@@ -69,7 +69,7 @@ Syncfusion ASP.NET MVC Themes are available in the CDN. Make sure that the versi
 | Tailwind CSS | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/tailwind.css |
 | Tailwind Dark CSS | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/tailwind-dark.css |
 | Fluent | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css |
-| Fluent Dark | https://cdn.syncfusion.com/blazor/{{ site.ej2version }}/fluent-dark.css |
+| Fluent Dark | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent-dark.css |
 | Microsoft Office Fabric  | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fabric.css |
 | Microsoft Office Fabric Dark | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fabric-dark.css |
 | High Contrast  | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/highcontrast.css |

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Download and Installation | ASP.NET Core (Essential JS 2) | Syncfusion
-description: How to download and install the Syncfusion ASP.NET Core (Essential JS2) Visual Studio Code Extensions from Visual Studio Code Market Place
-platform: ASP.NET Core - EJ2
+description: Learn here all about how to download and install the Syncfusion ASP.NET Core (Essential JS2) Visual Studio Code Extensions from Visual Studio Code Market Place
+platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -18,7 +18,7 @@ To install the Syncfusion ASP.NET Core Visual Studio Code extension and the crea
 
 * [Visual Studio Code 1.29.0 or later](https://code.visualstudio.com/download)
 * [Visual Studio 2019 16.3 Preview 2](https://visualstudio.microsoft.com/vs/) or later
-* [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) or later
+* [.NET Core 3.1](https://dotnet.microsoft.com/en-us/download/dotnet/3.1) or later
 * [C# Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 * [Node.js](https://nodejs.org/en/download/)
 
