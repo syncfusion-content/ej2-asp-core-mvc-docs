@@ -95,7 +95,7 @@ Template option is provided to customize the indicators by using the [Indicators
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel indicators template](../images/indiicators_template.png)
+![Carousel indicators template](../images/indicators_template.png)
 
 ### Showing preview of slide in indicator
 
