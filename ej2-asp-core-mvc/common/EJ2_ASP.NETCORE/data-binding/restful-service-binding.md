@@ -449,4 +449,4 @@ public long Delete([FromODataUri] long key)
 {% endhighlight %}
 {% endtabs %}
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DataBinding/Restful%20Service%20Binding)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-data-binding/tree/main/Restful%20Service%20Binding)
