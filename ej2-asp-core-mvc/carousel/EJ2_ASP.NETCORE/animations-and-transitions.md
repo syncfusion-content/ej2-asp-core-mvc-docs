@@ -16,7 +16,7 @@ documentation: ug
 
 In Carousel, two built-in animations are provided for slide transitions. You can disable animation using the [animation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Animation) property. By default, Slide animation is applied for the transition between slides.
 
-The following demo depicts the example for fade animation,
+The following demo depicts the example for `Fade` animation,
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -63,7 +63,7 @@ Using the items property, you can set different intervals for each item to trans
 
 ## Auto play slides
 
-In the carousel, all slides transitions are performed continuously after the specified or default intervals. You can enable or disable the auto slide transition using the [autoPlay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_AutoPlay) property. The following example depicts the code to enable or disable the auto slide transitions.
+In the carousel, all slides transitions are performed continuously after the specified or default intervals. You can enable or disable the auto slide transition using the [autoPlay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_AutoPlay) property. The following example depicts the code to disable the auto slide transitions.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -74,11 +74,9 @@ In the carousel, all slides transitions are performed continuously after the spe
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel autoplay slides](../images/auto_play.png)
-
 ## Looping slides
 
-In the carousel, slides transitions are repeated continuously when you reach the last slide by default. You can enable or disable the infinite slide transition using the [loop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Loop) property. The following example depicts the code to enable or disable the infinite slide transitions.
+In the carousel, slides transitions are repeated continuously when you reach the last slide by default. You can enable or disable the infinite slide transition using the [loop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Loop) property. The following example depicts the code to disable the infinite slide transitions.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
