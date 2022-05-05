@@ -1,1 +1,3 @@
-@Html.EJS().MultiSelect("default").Placeholder("Select games").DataSource((IEnumerable<object>)ViewBag.data).PopupHeight("220px").PopupWidth("300px").Render()
+@model List<string>
+
+@Html.EJS().MultiSelect("default").Placeholder("Select games").DataSource((IEnumerable<object>)Model).PopupHeight("220px").PopupWidth("300px").Render()

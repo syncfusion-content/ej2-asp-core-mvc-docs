@@ -93,8 +93,6 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 Now, add the Syncfusion ASP.NET MVC DateRangePicker control in `~/Views/Home/Index.cshtml` page.
 
-The following example shows a basic DateRangePicker control.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -142,6 +140,8 @@ The start and end date in a range can be defined with the help of startDate and 
 {% endif %}
 
 ![ASP.NET MVC DateRangePicker with Start and End Date Ranges](images/daterangepicker-with-specific-date.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/DateRangePicker/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 

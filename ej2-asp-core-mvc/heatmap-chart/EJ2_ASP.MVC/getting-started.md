@@ -366,3 +366,5 @@ The tooltip is used when you cannot display information by using the data labels
 {% endif %}
 
 ![ASP.NET MVC HeatMapChart with Tooltip](images/heatmap-with-tooltip.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/HeatMap/ASP.NET%20MVC%20Razor%20Examples).

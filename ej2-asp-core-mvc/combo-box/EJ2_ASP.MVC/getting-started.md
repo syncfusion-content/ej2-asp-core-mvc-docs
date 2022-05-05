@@ -192,7 +192,7 @@ public ActionResult Index()
 {% endtabs %}
 {% endif %}
 
-
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ComboBox/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
