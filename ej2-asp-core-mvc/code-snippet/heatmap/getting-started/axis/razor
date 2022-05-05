@@ -1,8 +1,10 @@
-  @Html.EJS().HeatMap("container").XAxis(
+@model int[,]
+
+@Html.EJS().HeatMap("container").XAxis(
             xAxis =>
             {
                 xAxis.Labels(ViewBag.xLabels);
             }).YAxis(yaxis =>
             {
                 yaxis.Labels(ViewBag.yLabels);
-            }).DataSource(ViewBag.dataSource).Render()
+            }).DataSource(Model).Render()

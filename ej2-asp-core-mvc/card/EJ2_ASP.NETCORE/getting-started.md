@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Card Control
+title: Getting Started with ##Platform_Name## Card Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Card control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core Card Control
 
 This section briefly explains about how to include [ASP.NET Core Card](https://www.syncfusion.com/aspnet-core-ui-controls/card) control in your ASP.NET Core application using Visual Studio.
 
@@ -51,7 +51,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
 </head>
 
 {% endhighlight %}
@@ -142,7 +142,7 @@ You can create Card with a header in a specific structure. For adding header you
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core Card Control](images/gettingstarted.PNG)
+![ASP.NET Core Card Control](images/card-control.PNG)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Card/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

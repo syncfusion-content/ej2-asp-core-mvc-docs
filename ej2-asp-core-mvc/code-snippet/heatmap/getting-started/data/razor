@@ -1,1 +1,3 @@
-@Html.EJS().HeatMap("container").DataSource(ViewBag.dataSource).Render()
+@model int[,]
+
+@Html.EJS().HeatMap("container").DataSource(Model).Render()

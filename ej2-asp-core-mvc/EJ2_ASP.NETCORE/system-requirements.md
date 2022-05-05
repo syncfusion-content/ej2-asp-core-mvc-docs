@@ -1,7 +1,7 @@
 ---
 layout: post
 title: System Requirements in ##Platform_Name## Controls
-description: Learn here all about System Requirements with supported frameworks in Syncfusion ##Platform_Name## Controls and more.
+description: Learn here all about system requirements with supported frameworks in Syncfusion ##Platform_Name## Controls and more.
 platform: ej2-asp-core-mvc
 control: System Requirements
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # System Requirements for ASP.NET Core Controls
 
-To get start with ASP.NET Core application, need to ensure the following software to be installed in the machine.
+To get started with ASP.NET Core application, ensure the following software to be installed in the machine.
 
 ## Integrated Development Environment
 
@@ -25,9 +25,9 @@ ASP.NET Core Applications can be developed using one of the following IDEs. You 
 
 One of the the following .NET SDK is required to develop and run the Syncfusion UI controls for ASP.NET Core application.
 
-* [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
-* [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
-* [.NET Core SDK 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+* [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+* [.NET 5.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
+* [.NET Core SDK 3.1](https://dotnet.microsoft.com/en-us/download/dotnet/3.1)
 * [.NET Core SDK 2.0](https://dotnet.microsoft.com/en-us/download/dotnet/2.0)
 
 If you are planning to use Visual Studio to develop ASP.NET Core Applications.

@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Chart Series
+# Chart Series in Chart Component
 
 ## Multiple Series
 
