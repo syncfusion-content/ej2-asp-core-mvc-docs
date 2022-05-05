@@ -144,7 +144,9 @@ The following sample shows the inline type rendering of ColorPicker.
 
 ![ASP.NET MVC ColorPicker with Inline](images/color-picker-with-inline.png)
 
-> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](./how-to/hide-control-buttons) sample.
+> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](./how-to/hide-control-buttons) document.
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ColorPicker/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 

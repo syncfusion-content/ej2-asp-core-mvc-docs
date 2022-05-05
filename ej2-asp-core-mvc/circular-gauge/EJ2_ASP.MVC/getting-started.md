@@ -129,4 +129,6 @@ axes.EndAngle(120).StartAngle(240).Radius("90%").Minimum(0).Maximum(120).Add()).
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Circular Gauge with Axis](images/circulargauge-with-axis.png)
+![ASP.NET MVC CircularGauge with Axis](images/circulargauge-with-axis.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20MVC%20Razor%20Examples).

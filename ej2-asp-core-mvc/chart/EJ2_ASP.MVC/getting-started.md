@@ -105,4 +105,4 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Chart Control](how-to/images/chart.png)
 
-> You can refer to our [ASP.NET MVC Charts](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Charts example](https://ej2.syncfusion.com/aspnetmvc/Chart/Line#/material) that shows various chart types and how to represent time-dependent data, showing trends in data at equal intervals.
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Chart/ASP.NET%20MVC%20Razor%20Examples).

@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC DashboardLayout Control
+# Getting Started with ASP.NET MVC Dashboard Layout Control
 
-This section briefly explains about how to include [ASP.NET MVC DashboardLayout](https://www.syncfusion.com/aspnet-mvc-ui-controls/dashboard-layout) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Dashboard Layout](https://www.syncfusion.com/aspnet-mvc-ui-controls/dashboard-layout) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -89,18 +89,18 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC DashboardLayout control
+## Add ASP.NET MVC Dashboard Layout control
 
-Now, add the Syncfusion ASP.NET MVC DashboardLayout control in `~/Views/Home/Index.cshtml` page by the following ways.
+Now, add the Syncfusion ASP.NET MVC Dashboard Layout control in `~/Views/Home/Index.cshtml` page by the following ways.
 
 * Defined the panels property as the attribute in the content template.
 * Using the [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property through helper.
 
 ### Setting the panels property using content template
 
-You can render the DashboardLayout control by adding the panels property as the attribute to the content template. Add the content template with panel definition for DashboardLayout into your `index.cshtml` page which is present under `Views/Home` folder.
+You can render the Dashboard Layout control by adding the panels property as the attribute to the content template. Add the content template with panel definition for Dashboard Layout into your `index.cshtml` page which is present under `Views/Home` folder.
 
-In the following sample, the dashboardlayout is rendered with [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property using content template.
+In the following sample, the dashboard layout is rendered with [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property using content template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -126,15 +126,15 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 {% endif %}
 
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC DashboardLayout control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Dashboard Layout control will be rendered in the default web browser.
 
-![Dashboard content template](images/content_template.PNG)
+![ASP.NET MVC Dashboard Layout using Content Template](images/content_template.PNG)
 
 ### Setting the panels property using helper
 
-You can render the DashboardLayout component by using the **panels** property through helper.
+You can render the Dashboard Layout control by using the **panels** property through helper.
 
-In the following sample, the dashboardlayout is rendered with [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property using tag helper.
+In the following sample, the dashboard layout is rendered with [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property using tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -159,6 +159,6 @@ In the following sample, the dashboardlayout is rendered with [`panels`](https:/
 {% endtabs %}
 {% endif %}
 
-![Dashboard tag helper](images/tag_helper.PNG)
+![ASP.NET MVC Dashboard Layout using Tag Helper](images/tag_helper.PNG)
 
-> You can refer to our [ASP.NET MVC Dashboard Layout](https://www.syncfusion.com/aspnet-mvc-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Dashboard Layout example](https://ej2.syncfusion.com/aspnetmvc/DashboardLayout/DefaultFunctionalities#/material) to knows how to present and manipulate data.
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/DashboardLayout/ASP.NET%20MVC%20Razor%20Examples).

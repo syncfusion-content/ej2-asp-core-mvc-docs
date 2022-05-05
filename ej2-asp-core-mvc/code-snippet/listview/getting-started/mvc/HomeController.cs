@@ -7,7 +7,6 @@ public IActionResult Index()
     data.Add(new { text= "Modern Painting", id= "03" });
     data.Add(new { text= "Ceramics", id= "04" });
     data.Add(new { text= "Animation Art", id= "05" });
-    data.Add(new { text= "Oil Painting", id= "06" });
-    ViewBag.dataSource = data;
-    return View();
+    data.Add(new { text= "Oil Painting", id= "06" });    
+    return View(data);
 }
