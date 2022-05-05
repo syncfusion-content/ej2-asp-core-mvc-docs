@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Chip Control
+# Getting Started with ASP.NET MVC Circular Gauge Control
 
-This section briefly explains about how to include [ASP.NET MVC CircularGauge](https://www.syncfusion.com/aspnet-mvc-ui-controls/circular-gauge) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Circular Gauge](https://www.syncfusion.com/aspnet-mvc-ui-controls/circular-gauge) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -88,9 +88,9 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC Chip control
+## Add ASP.NET MVC Circular Gauge control
 
-Now, add the Syncfusion ASP.NET MVC Chip control in `~/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC Circular Gauge control in `~/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -100,13 +100,13 @@ Now, add the Syncfusion ASP.NET MVC Chip control in `~/Home/Index.cshtml` page.
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC CircularGauge control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Circular Gauge control will be rendered in the default web browser.
 
-![ASP.NET MVC CircularGauge Control](images/circulargauge-control.png)
+![ASP.NET MVC Circular Gauge Control](images/circulargauge-control.png)
 
 ## Add Gauge Title
 
-You can add a title using `title` attribute to the circulargauge to provide quick information to the user.
+You can add a title using `title` attribute to the circular gauge to provide quick information to the user.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -118,7 +118,7 @@ You can add a title using `title` attribute to the circulargauge to provide quic
 
 ## Axis
 
-You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer below code snippet to add the axis range to circulargauge.
+You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer below code snippet to add the axis range to circular gauge.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -130,3 +130,5 @@ axes.EndAngle(120).StartAngle(240).Radius("90%").Minimum(0).Maximum(120).Add()).
 {% endtabs %}
 
 ![ASP.NET MVC CircularGauge with Axis](images/circulargauge-with-axis.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20MVC%20Razor%20Examples).

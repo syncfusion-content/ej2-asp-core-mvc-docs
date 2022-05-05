@@ -228,6 +228,8 @@ public class KanbanDataModels
 
 ![ASP.NET MVC Kanban with Swimlane](images/enable-swimlane.PNG)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [Real time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)

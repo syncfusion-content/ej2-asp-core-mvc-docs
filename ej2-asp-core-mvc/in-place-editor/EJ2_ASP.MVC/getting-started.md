@@ -262,6 +262,8 @@ The edited data is submitted to the server and you can see the new values gettin
 
 ![ASP.NET MVC In-place Editor with Editing Value](images/getting-started.PNG)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/InPlaceEditor/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [Real time example using In-place Editor](https://ej2.syncfusion.com/aspnetmvc/InPlaceEditor/EditPost#/bootstrap5)

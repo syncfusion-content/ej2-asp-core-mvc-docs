@@ -141,6 +141,8 @@ To change the default Button to flat Button, set the [`cssClass`](https://help.s
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Button/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [Types of Button](./types-and-styles#button-types)

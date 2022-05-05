@@ -93,8 +93,6 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 Now, add the Syncfusion ASP.NET MVC DateTimePicker control in `~/Views/Home/Index.cshtml` page.
 
-The following example shows a basic DateTimePicker control.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -142,6 +140,8 @@ The minimum and maximum date time can be defined with the help of `min` and `max
 {% endif %}
 
 ![ASP.NET MVC DateTimePicker with Specific Date Selection](images/datetimepicker-with-specific-date.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/DateTimePicker/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
