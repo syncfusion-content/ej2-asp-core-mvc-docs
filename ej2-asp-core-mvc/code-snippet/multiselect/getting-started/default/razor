@@ -1,1 +1,3 @@
-@Html.EJS().MultiSelect("default").DataSource((IEnumerable<object>)ViewBag.data).Render()
+@model List<string>
+
+@Html.EJS().MultiSelect("default").DataSource((IEnumerable<object>)Model).Render()

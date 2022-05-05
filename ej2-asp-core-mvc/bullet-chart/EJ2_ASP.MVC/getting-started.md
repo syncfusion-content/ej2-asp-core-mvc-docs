@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC BulletChart Control
+# Getting Started with ASP.NET MVC Bullet Chart Control
 
-This section briefly explains about how to include [ASP.NET MVC BulletChart](https://www.syncfusion.com/aspnet-mvc-ui-controls/bullet-chart) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Bullet Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/bullet-chart) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -89,7 +89,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC BulletChart control
+## Add ASP.NET MVC Bullet Chart control
 
 Now, add the Syncfusion ASP.NET MVC BulletChart control in `~/Home/Index.cshtml` page.
 
@@ -101,13 +101,13 @@ Now, add the Syncfusion ASP.NET MVC BulletChart control in `~/Home/Index.cshtml`
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC BulletChart control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Bullet Chart control will be rendered in the default web browser.
 
-![ASP.NET MVC BulletChart Control](images/bullet-chart-control.png)
+![ASP.NET MVC Bullet Chart Control](images/bullet-chart-control.png)
 
-## BulletChart With Data
+## Bullet Chart With Data
 
-This section explains how to plot local data to the BulletChart.
+This section explains how to plot local data to the Bullet Chart.
 
 The **value** and **target** values should be mapped with `ValueField` and `TargetField` respectively.
 
@@ -189,7 +189,7 @@ public class BulletChartData
 {% endtabs %}
 {% endif %}
 
-![ASP.NET MVC BulletChart with Title](images/bullet-chart-with-title.png)
+![ASP.NET MVC Bullet Chart with Title](images/bullet-chart-with-title.png)
 
 ## Ranges
 
@@ -273,4 +273,6 @@ public class BulletChartData
 {% endtabs %}
 {% endif %}
 
-![ASP.NET MVC BulletChart with Tooltip](images/bullet-chart-with-tooltip.png)
+![ASP.NET MVC Bullet Chart with Tooltip](images/bullet-chart-with-tooltip.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/BulletChart/ASP.NET%20MVC%20Razor%20Examples).

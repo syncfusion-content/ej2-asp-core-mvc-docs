@@ -67,6 +67,8 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Badge Control](images/badge.PNG)
 
+. [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Badge/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 [Types of Badge](./types)

@@ -1,2 +1,4 @@
-@Html.EJS().Menu("menu").Items(ViewBag.menuItems).Render()
+@model List<object>
+
+@Html.EJS().Menu("menu").Items(Model).Render()
 
