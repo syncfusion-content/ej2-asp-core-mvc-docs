@@ -27,6 +27,8 @@ The following demo depicts the example for fade animation,
 {% endhighlight %}
 {% endtabs %}
 
+![Carousel fade animation](../images/fade_animation.gif)
+
 ### Custom animation
 
 In Carousel, you can use customized animation effects for slide transitions using the [CustomEffect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.CarouselAnimationSettings.html#Syncfusion_EJ2_Navigations_CarouselAnimationSettings_CustomEffect) option of the [Animation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Animation) property.
@@ -41,6 +43,8 @@ The following demo depicts the example for `parallax` custom animation,
 {% include code-snippet/carousel/animations/custom-animation/custom-animation.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Carousel custom animation](../images/parallax_animation.gif)
 
 ## Intervals between slides
 
@@ -70,6 +74,8 @@ In the carousel, all slides transitions are performed continuously after the spe
 {% endhighlight %}
 {% endtabs %}
 
+![Carousel autoplay slides](../images/auto_play.png)
+
 ## Looping slides
 
 In the carousel, slides transitions are repeated continuously when you reach the last slide by default. You can enable or disable the infinite slide transition using the [Loop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Loop) property. The following example depicts the code to enable or disable the infinite slide transitions.
@@ -82,6 +88,8 @@ In the carousel, slides transitions are repeated continuously when you reach the
 {% include code-snippet/carousel/animations/loop/loop.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Carousel loop slides](../images/looping_slides.png)
 
 ## Slide changing events
 

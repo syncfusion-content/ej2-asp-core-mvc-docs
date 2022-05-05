@@ -61,6 +61,8 @@ Using the [selectedIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
+![Carousel selected slide](../images/selected_index.png)
+
 ### Select an item using the method
 
 Using the `prev` or `next` public method of the Carousel component, you can switch the current populating slide to a previous or next slide.

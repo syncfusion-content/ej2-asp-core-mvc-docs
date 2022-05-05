@@ -1,16 +1,18 @@
+@using Syncfusion.EJ2.Navigations;
+
 <div class="container">
     <div class="control-container">
-            @(Html.EJS().Carousel("defaultCarousel").Items(new List<CarouselItem> {
-                    new CarouselItem { Template = '<div class="slide-content" Interval=3000>Slide 1</div>'  },
-                    new CarouselItem { Template = '<div class="slide-content" Interval=1000>Slide 2</div>' },
-                    new CarouselItem { Template = '<div class="slide-content" Interval=2000>Slide 3</div>' },
-                    new CarouselItem { Template = '<div class="slide-content" Interval=5000>Slide 4</div>'  },
-                    new CarouselItem { Template = '<div class="slide-content" Interval=6000>Slide 5</div>'  }
+        @(Html.EJS().Carousel("defaultCarousel").Items(new List<CarouselItem> {
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 1</div>", Interval = 3000  },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 2</div>", Interval = 2000 },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 3</div>", Interval = 1000 },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 4</div>", Interval = 5000  },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 5</div>", Interval = 6000  }
                 })
                 .Render()
             )
-        </div>
     </div>
+</div>
 
 <style>
     .control-container {

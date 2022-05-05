@@ -1,6 +1,3 @@
-@using Syncfusion.EJ2.Navigations;
-@using Syncfusion.EJ2.Buttons;
-
 <ejs-button id="prev" cssClass="e-info" content="Prev"></ejs-button>
 <ejs-button id="next" cssClass="e-info" content="Next"></ejs-button>
 
