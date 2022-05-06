@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Label
+# Data label
 
 Data label can be added to a chart series by enabling the [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Visible) option in the dataLabel property.
 
@@ -67,7 +67,7 @@ Accumulation chart provides support for placing the data label either `inside` o
 
 
 
-## Smart Labels
+## Smart labels
 
 Datalabels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`enableSmartLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_EnableSmartLabels) property.
 
@@ -210,3 +210,34 @@ Individual text can be customized using the `textRender` event.
 {% endtabs %}
 {% endif %}
 
+## Show percentages in data labels of pie chart
+
+You can show the percentages in data labels of pie chart using `textRender` event and `template` option.
+
+### Using textRender event
+
+You can customize the data label of pie chart using [TextRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_TextRender) event as follows to show percentage.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/percentage/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Percentage.cs" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/percentage/percentage.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Using template
+
+You can display the percentage values in data label of pie chart using `template` option.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/template-percentage/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-percentage.cs" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/template-percentage/template-percentage.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Show percentage in ASP.NET Core Accumulationchart control](../images/show-percentage-in-pie-chart.png)
