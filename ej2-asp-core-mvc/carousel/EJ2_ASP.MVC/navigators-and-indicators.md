@@ -22,16 +22,18 @@ In navigators, the previous and next slide transition buttons are used to perfor
 * `Visible` – the navigator’s buttons are visible.
 * `VisibleOnHover` – the navigator’s buttons are visible only when hovering over the carousel.
 
-The following example depicts the code to show/hide the navigators in the carousel.
+The following example depicts the code to hide the navigators in the carousel.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/carousel/navigators/visible/razor %}
+{% include code-snippet/carousel/navigators/hidden/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/navigators/visible/visible.cs %}
+{% include code-snippet/carousel/navigators/hidden/hidden.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Carousel hidden navigators](../images/navigators_hidden.png)
 
 ### Show previous and next button on hover
 
@@ -46,7 +48,9 @@ In the carousel, you can show the previous and next buttons only on mouse hover 
 {% endhighlight %}
 {% endtabs %}
 
-### Previous and next button Template
+![Carousel visible on hover navigators](../images/navigators_onhover.gif)
+
+### Previous and next button template
 
 Template options are provided to customize the previous button using [PreviousButtonTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_PreviousButtonTemplate) and the next button using [NextButtonTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_NextButtonTemplate). The following example depicts the code for applying the template to previous and next buttons in the carousel.
 
@@ -59,11 +63,13 @@ Template options are provided to customize the previous button using [PreviousBu
 {% endhighlight %}
 {% endtabs %}
 
+![Carousel navigators template](../images/navigators_template.png)
+
 ## Indicators
 
 ### Show or hide indicators
 
-In indicators, the total slides and current slide state have been depicted. You can show/hide the indicators using the [ShowIndicators](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_ShowIndicators) property. The following example depicts the code to show/hide the indicators in the carousel.
+In indicators, the total slides and current slide state have been depicted. You can show/hide the indicators using the [ShowIndicators](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_ShowIndicators) property. The following example depicts the code to hide the indicators in the carousel.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -74,9 +80,11 @@ In indicators, the total slides and current slide state have been depicted. You 
 {% endhighlight %}
 {% endtabs %}
 
-### Indicators Template
+![Carousel hidden indicators](../images/hidden_indicators.png)
 
-Template option is provided to customize the indicators by using the [IndicatorTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsTemplate) property. The following example depicts the code for applying a template to indicators in the carousel.
+### Indicators template
+
+Template option is provided to customize the indicators by using the [IndicatorsTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsTemplate) property. The following example depicts the code for applying a template to indicators in the carousel.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -87,9 +95,11 @@ Template option is provided to customize the indicators by using the [IndicatorT
 {% endhighlight %}
 {% endtabs %}
 
+![Carousel indicators template](../images/indicators_template.png)
+
 ### Showing preview of slide in indicator
 
-You can customize the indicators by showing the preview image of each slide using the [IndicatorTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsTemplate) property. The following example depicts the code for showing the preview image using a template for indicators in the carousel.
+You can customize the indicators by showing the preview image of each slide using the [IndicatorsTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_IndicatorsTemplate) property. The following example depicts the code for showing the preview image using a template for indicators in the carousel.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -99,6 +109,8 @@ You can customize the indicators by showing the preview image of each slide usin
 {% include code-snippet/carousel/navigators/indicator-preview/indicator-preview.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Carousel indicators template preview](../images/indicators_preview.png)
 
 ## Play button
 
@@ -115,6 +127,8 @@ In the carousel, [AutoPlay](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 {% endhighlight %}
 {% endtabs %}
 
+![Carousel play button](../images/play_button.png)
+
 ### Play button template
 
 Template option is provided to customize the play button by using the [PlayButtonTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_PlayButtonTemplate) property. The following example depicts the code for applying a template to play Button in the carousel.
@@ -127,3 +141,5 @@ Template option is provided to customize the play button by using the [PlayButto
 {% include code-snippet/carousel/navigators/play-button-template/play-button-template.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Carousel play button template](../images/play_button_template.png)

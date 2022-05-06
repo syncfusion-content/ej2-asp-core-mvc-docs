@@ -1,25 +1,27 @@
+@using Syncfusion.EJ2.Navigations;
+
 <div class="container">
     <div class="control-container">
-            @(Html.EJS().Carousel("defaultCarousel")
+        @(Html.EJS().Carousel("defaultCarousel")
             .SlideChanging("onSlideChanging")
             .SlideChanged("onSlideChanged")
             .Items(new List<CarouselItem> {
-                    new CarouselItem { Template = '<div class="slide-content">Slide 1</div>'  },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 2</div>' },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 3</div>' },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 4</div>'  },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 5</div>'  }
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 1</div>"  },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 2</div>" },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 3</div>" },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 4</div>"  },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 5</div>"  }
                 })
                 .Render()
             )
-        </div>
     </div>
+</div>
 <script type="text/javascript">
     function onSlideChanging(args) {
-        console.log(args.currentSlide); // We can able to customize the slide before changing.
+        console.log(args.currentSlide); // You can customize the slide before changing
     }
     function onSlideChanged(args) {
-        console.log(args.currentSlide); // We can able to customize the slide after changed.
+        console.log(args.currentSlide); // You can customize the slide after changed
     }
 </script>
 <style>
