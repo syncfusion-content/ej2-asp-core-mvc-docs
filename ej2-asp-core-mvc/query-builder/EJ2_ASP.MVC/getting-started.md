@@ -283,4 +283,4 @@ public class EmployeeView
 
 ![ASP.NET MVC Query Builder with Rule](images/querybuilder-rule.png)
 
-> You can also explore our [ASP.NET MVC Query Builder example](https://ej2.syncfusion.com/aspnetmvc/QueryBuilder/DefaultFunctionalities#/material) that shows how to render and configure the Query Builder in ASP.NET MVC.
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/QueryBuilder/ASP.NET%20MVC%20Razor%20Examples).

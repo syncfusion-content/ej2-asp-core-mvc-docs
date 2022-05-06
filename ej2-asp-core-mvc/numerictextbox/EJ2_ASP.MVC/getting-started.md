@@ -203,6 +203,8 @@ Else, number of decimals will be restricted while typing in the NumericTextBox.
 
 ![Restricting Decimal Values in ASP.NET MVC NumericTextBox](images/precision.png)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/NumericTextBox/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [How to perform custom validation using FormValidator](./how-to/perform-custom-validation-using-form-validator/)
