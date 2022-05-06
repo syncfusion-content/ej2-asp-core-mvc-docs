@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Populating Items
+# Populating Items in ##Platform_Name## Carousel control
 
 In the Carousel, slides can be rendered in two ways as follows,
 
