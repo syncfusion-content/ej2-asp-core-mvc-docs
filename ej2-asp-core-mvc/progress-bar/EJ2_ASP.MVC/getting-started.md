@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## ProgressBar Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## ProgressBar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Progress Bar Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC ProgressBar Control
+# Getting Started with ASP.NET MVC Progress Bar Control
 
-This section briefly explains about how to include [ASP.NET MVC ProgressBar](https://www.syncfusion.com/aspnet-mvc-ui-controls/progressbar) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Progress Bar](https://www.syncfusion.com/aspnet-mvc-ui-controls/progressbar) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -89,9 +89,9 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC ProgressBar control
+## Add ASP.NET MVC Progress Bar control
 
-Now, add the Syncfusion ASP.NET MVC ProgressBar control in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC Progress Bar control in `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -101,11 +101,11 @@ Now, add the Syncfusion ASP.NET MVC ProgressBar control in `~/Views/Home/Index.c
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC ProgressBar control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Progress Bar control will be rendered in the default web browser.
 
 ## Progress Type
 
-You can change the type of progressbar by using `Type` property. By default `Linear` type of progressbar will render.
+You can change the type of progress bar by using `Type` property. By default `Linear` type of progress bar will render.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -125,4 +125,4 @@ You can change the type of progressbar by using `Type` property. By default `Lin
 {% endtabs %}
 {% endif %}
 
-![ASP.NET MVC ProgressBar Control](images/progressbar-control.png)
+![ASP.NET MVC Progress Bar Control](images/progressbar-control.png)

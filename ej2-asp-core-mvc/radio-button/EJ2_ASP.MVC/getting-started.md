@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## RadioButton Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## RadioButton control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Radio Button Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Radio Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC RadioButton Control
+# Getting Started with ASP.NET MVC Radio Button Control
 
-This section briefly explains about how to include [ASP.NET MVC RadioButton](https://www.syncfusion.com/aspnet-mvc-ui-controls/radio-button) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Radio Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/radio-button) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -89,9 +89,9 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC RadioButton control
+## Add ASP.NET MVC Radio Button control
 
-Now, add the Syncfusion ASP.NET MVC RadioButton control in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC Radio Button control in `~/Views/Home/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -113,49 +113,18 @@ Now, add the Syncfusion ASP.NET MVC RadioButton control in `~/Views/Home/Index.c
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC RadioButton control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Radio Button control will be rendered in the default web browser.
 
-![ASP.NET MVC RadioButton Control](images/radio-button.PNG)
+![ASP.NET MVC Radio Button Control](images/radio-button.PNG)
 
-## Run the application
+## Change the Radio Button state
 
- After successful compilation of your application, simply press `F5` to run the application.
-
- The following example shows a default rendering of RadioButton.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/radio-button/getting-started/demo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/radio-button/getting-started/demo/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/radio-button/getting-started/demo/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/radio-button/getting-started/demo/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-## Change the RadioButton state
-
-The Essential JS 2 RadioButton contains 2 states visually, they are as follows:
+The Essential JS 2 Radio Button contains 2 states visually, they are as follows:
 * Checked
 * Unchecked
 
-The RadioButton [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.RadioButton.html#Syncfusion_EJ2_Buttons_RadioButton_Checked) property is used to handle the checked and unchecked state.
-In the checked state an inner circle will be added to the visualization of RadioButton.
+The Radio Button [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.RadioButton.html#Syncfusion_EJ2_Buttons_RadioButton_Checked) property is used to handle the checked and unchecked state.
+In the checked state an inner circle will be added to the visualization of Radio Button.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -173,9 +142,6 @@ In the checked state an inner circle will be added to the visualization of Radio
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/radio-button/getting-started/state/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="State.cs" %}
-{% include code-snippet/radio-button/getting-started/state/state.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

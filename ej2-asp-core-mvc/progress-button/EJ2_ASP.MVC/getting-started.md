@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## ProgressButton Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## ProgressButton control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Progress Button Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Progress Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC ProgressButton Control
+# Getting Started with ASP.NET MVC Progress Button Control
 
-This section briefly explains about how to include [ASP.NET MVC ProgressButton](https://www.syncfusion.com/aspnet-mvc-ui-controls/progress-button) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Progress Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/progress-button) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -89,9 +89,9 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC ProgressButton control
+## Add ASP.NET MVC Progress Button control
 
-Now, add the Syncfusion ASP.NET MVC ProgressButton control in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC Progress Button control in `~/Views/Home/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -111,11 +111,11 @@ Now, add the Syncfusion ASP.NET MVC ProgressButton control in `~/Views/Home/Inde
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC ProgressButton control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Progress Button control will be rendered in the default web browser.
 
-![ASP.NET MVC ProgressButton Control](images/progressbutton-control.png)
+![ASP.NET MVC Progress Button Control](images/progressbutton-control.png)
 
-> ProgressButton supports different styles, types and sizes like [`Button`](https://ej2.syncfusion.com/aspnetmvc/documentation/button/). In addition, it also support `top` and `bottom` position of the icon.
+> Progress Button supports different styles, types and sizes like [`Button`](https://ej2.syncfusion.com/aspnetmvc/documentation/button/). In addition, it also support `top` and `bottom` position of the icon.
 
 ## Enabling progress in button
 
@@ -141,7 +141,7 @@ You can enable the background filler UI by setting the [`enableProgress`](https:
 {% endtabs %}
 {% endif %}
 
-![Displaying Progress in ASP.NET MVC ProgressButton](images/progress.png)
+![Displaying Progress in ASP.NET MVC Progress Button](images/progress.png)
 
 ## See also
 
