@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Control
+title: Globalization in Syncfusion ##Platform_Name## Control
 description: Learn here all about Globalization in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Globalization
+# Globalization in ASP.NET Core
 
  Globalization is the combination of adapting the control to various languages by parsing and formatting the date or numbers (`Internationalization (L18N)`), adding cultural-specific customizations and translating the text (`Localization (L10N)`). The `American English (en-US)` locale is set as default _culture_ and `USD` is set as default _currencyCode_ for all Syncfusion ASP.NET Core controls.
 
@@ -138,8 +138,8 @@ npm install cldr-data
 
 ![Globalization schedule control](./images/schedule-locale.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Localization/Localization-schedule-cldr)
->
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-localization/tree/main/Localization-schedule-cldr)
+
 > Refer this documentation to [localizing the static scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
 
 ## Changing Global Culture and Currency Code
