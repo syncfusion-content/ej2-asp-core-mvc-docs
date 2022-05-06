@@ -89,7 +89,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core DropDownTree control
+## Add ASP.NET Core DocumentEditor control
 
 Now, add the Syncfusion ASP.NET Core DocumentEditor tag helper in `~/Pages/Index.cshtml` page.
 

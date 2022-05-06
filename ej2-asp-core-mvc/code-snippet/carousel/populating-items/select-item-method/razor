@@ -1,24 +1,21 @@
-@(Html.EJS().Button("prev")
-    .Content("Prev")
-    .Render()
-)
-@(Html.EJS().Button("next")
-    .Content("Next")
-    .Render()
-)
+@using Syncfusion.EJ2.Buttons;
+@using Syncfusion.EJ2.Navigations;
+
+@(Html.EJS().Button("prev").Content("Prev").Render())
+@(Html.EJS().Button("next").Content("Next").Render())
 <div class="container">
     <div class="control-container">
-            @(Html.EJS().Carousel("defaultCarousel").Items(new List<CarouselItem> {
-                    new CarouselItem { Template = '<div class="slide-content">Slide 1</div>'  },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 2</div>' },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 3</div>' },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 4</div>'  },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 5</div>'  }
+        @(Html.EJS().Carousel("defaultCarousel").Items(new List<CarouselItem> {
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 1</div>"  },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 2</div>" },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 3</div>" },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 4</div>"  },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 5</div>"  }
                 })
                 .Render()
             )
-        </div>
     </div>
+</div>
 
 <script>
     document.getElementById('prev').onclick = function () {

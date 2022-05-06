@@ -1,5 +1,3 @@
-@using Syncfusion.EJ2.Navigations;
-
 <div class="container">
     <div class="control-container">
         <ejs-carousel id="defaultCarousel" dataSource="@ViewBag.dataSource" itemTemplate='<div class="slide-content">${Title}</div>'>

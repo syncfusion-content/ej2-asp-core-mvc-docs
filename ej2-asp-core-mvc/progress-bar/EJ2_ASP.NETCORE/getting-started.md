@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## ProgressBar Control
-description: Checkout and learn about getting started with ##Platform_Name## ProgressBar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Progress Bar Control
+description: Checkout and learn about getting started with ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core ProgressBar Control
+# Getting Started with ASP.NET Core Progress Bar Control
 
-This section briefly explains about how to include [ASP.NET Core ProgressBar](https://www.syncfusion.com/aspnet-core-ui-controls/progressbar) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core Progress Bar](https://www.syncfusion.com/aspnet-core-ui-controls/progressbar) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -88,9 +88,9 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core ProgressBar control
+## Add ASP.NET Core Progress Bar control
 
-Now, add the Syncfusion ASP.NET Core ProgressBar tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Progress Bar tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -100,7 +100,7 @@ Now, add the Syncfusion ASP.NET Core ProgressBar tag helper in `~/Pages/Index.cs
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core ProgressBar control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Progress Bar control will be rendered in the default web browser.
 
 ## Progress Type
 
@@ -124,7 +124,7 @@ You can change the type of progress bar by using `type` property. By default `Li
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-![ASP.NET Core ProgressBar Control](images/default.png)
+![ASP.NET Core Progress Bar Control](images/default.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ProgressBar/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

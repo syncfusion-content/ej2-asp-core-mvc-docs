@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Pdfviewer Control
-description: Checkout and learn about getting started with ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Pdf viewer Control
+description: Checkout and learn about getting started with ##Platform_Name## Pdf viewer control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started in ASP.NET Core PDFViewer control
+# Getting Started in ASP.NET Core PDF Viewer control
 
-This section briefly explains about how to include [ASP.NET Core PDFViewer](https://www.syncfusion.com/aspnet-core-ui-controls/pdf-viewer) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core PDF Viewer](https://www.syncfusion.com/aspnet-core-ui-controls/pdf-viewer) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -90,9 +90,9 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core PDFViewer control
+## Add ASP.NET Core PDF Viewer control
 
-Now, add the Syncfusion ASP.NET Core Gantt tag helper in `~/Pages/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the documentPath property as below.
+Now, add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the documentPath property as below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -358,9 +358,9 @@ In this code,
 
 *documentPath* is the property needed to load a PDF file in the PDF Viewer. The specified document must be placed inside the folder structure that matches with the path in the GetDocumentPath(string document) method inside the PdfViewerController.
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core PDFViewer control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core PDF Viewer control will be rendered in the default web browser.
 
-![ASP.NET Core PDFViewer Control](images/pdfviewer-control.png)
+![ASP.NET Core PDF Viewer Control](images/pdfviewer-control.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
