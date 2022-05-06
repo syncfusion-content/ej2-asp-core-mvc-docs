@@ -105,7 +105,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Bullet Chart Control](images/bullet-chart-control.png)
 
-## BulletChart With Data
+## Bullet Chart With Data
 
 Now, assign the data to `dataSource` property. **value** and **target** values should be mapped with `valueField` and `targetField` respectively.
 
