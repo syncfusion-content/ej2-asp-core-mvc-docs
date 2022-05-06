@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Licensing Troubleshoot in Syncfusion ##Platform_Name## Component
-description: Learn here all about Licensing Troubleshoot in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+description: Learn here all about licensing troubleshoot in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Licensing Troubleshoot
 publishingplatform: ##Platform_Name##

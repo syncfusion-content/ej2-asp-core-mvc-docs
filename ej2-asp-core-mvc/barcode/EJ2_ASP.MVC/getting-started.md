@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Barcode Control
+title: Getting Started with ##Platform_Name## Barcode Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Barcode control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -17,11 +17,11 @@ This section briefly explains about how to include [ASP.NET MVC Barcode](https:/
 
 [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-## Create ASP.NET web application with Razor pages
+## Create ASP.NET MVC application with HTML helper
 
 * [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
 
-* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
 ## Install ASP.NET MVC package in the application
 
@@ -29,7 +29,7 @@ Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.
 
 > The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-> **NOTE:** If you Create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
+> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
 
 ## Add namespace
 
@@ -43,7 +43,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add style sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Web application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -51,7 +51,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/a
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
 </head>
 
 {% endhighlight %}
@@ -168,3 +168,5 @@ You can add the datamatrix code in our barcode generator component.
 {% endif %}
 
 ![ASP.NET MVC DataMatrix Control](images/datamatrix-control.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Barcode/ASP.NET%20MVC%20Razor%20Examples)

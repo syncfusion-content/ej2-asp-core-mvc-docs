@@ -236,3 +236,31 @@ By default, a new row will be added at the top of the grid. You can change it by
 
 
 > Add newRowPostion is supported for **Normal** and **Batch** editing modes.
+
+## Move the focus to a particular cell instead of first cell while editing a row
+
+The [`recordDoubleClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Grids.Grid~recordDoubleClick.html) event allows you to move the focus to the corresponding cell (the cell that you doubled-clicked to edit a row) instead of the first cell in edit form. With the help of this event, you can focus the double-clicked column in inline edit mode.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/focus/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Focus.cs" %}
+{% include code-snippet/grid/how-to/focus/focus.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/how-to/focus/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Focus.cs" %}
+{% include code-snippet/grid/how-to/focus/focus.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Carousel Control
+title: Getting Started with ##Platform_Name## Carousel Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET MVC Carousel Control
 
 This section briefly explains about how to include [ASP.NET MVC Carousel](https://www.syncfusion.com/aspnet-mvc-ui-controls/carousel) control in your ASP.NET MVC application using Visual Studio.
 
@@ -16,11 +16,11 @@ This section briefly explains about how to include [ASP.NET MVC Carousel](https:
 
 [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-## Create ASP.NET web application with Razor pages
+## Create ASP.NET MVC application with HTML helper
 
 * [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
 
-* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
 ## Install ASP.NET MVC package in the application
 
@@ -28,7 +28,7 @@ Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.
 
 > The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-> **NOTE:** If you Create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
+> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
 
 ## Add namespace
 
@@ -42,7 +42,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add style sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Web application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -50,7 +50,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/a
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
 </head>
 
 {% endhighlight %}
@@ -169,3 +169,5 @@ Now, add the Syncfusion ASP.NET MVC Carousel control in `~/Home/Index.cshtml` pa
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Carousel control will be rendered in the default web browser.
 
 ![ASP.NET MVC Carousel Control](images/carousel-control.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Carousel/ASP.NET%20MVC%20Razor%20Examples).

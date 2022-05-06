@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Accumulation Chart Control
+title: Getting Started with ##Platform_Name## Accumulation Chart | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Accumulation Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -13,7 +13,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core AccumulationChart Control
 
-This section briefly explains about how to include [ASP.NET Core AccumulationChart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core AccumulationChart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
 </head>
 
 {% endhighlight %}

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Check for Updaes ASP.NET Core - EJ2 extension
-description: Syncfusion Check for Updates provides Extensions to update most recent version of the Essential Studio release.
-platform: ASP.NET Core - EJ2
+title: Check for Updates ASP.NET Core - EJ2 extension
+description: Syncfusion Check for updates provides Extensions to update the most recent version of the Essential Studio release.
+platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 # Check for Updates
 
-Syncfusion provides the check for update extensions to find latest version of essential release was available, if it was available then provide option update most recent version of the Essential Studio release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
+Syncfusion provides the check for update extensions to find if the latest version of the essential release is available, and if it is, the option to update the most recent version of the Essential Studio release is provided. By installing the latest version, you will always get the most up-to-date features, fixes, and improvements.
 
 > The Syncfusion Check for updates is available from v17.1.0.32.
 

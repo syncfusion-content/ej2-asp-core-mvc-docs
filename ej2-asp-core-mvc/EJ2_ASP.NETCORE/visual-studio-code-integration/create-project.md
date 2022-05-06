@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Project Templates | ASP.NET Core (Essential JS 2) | Syncfusion
-description: Syncfusion provides Project Templates for ASP.NET Core to create the Syncfusion ASP.NET Core Application using EJ2 Core components from Visual Studio Code.
-platform: ASP.NET Core - EJ2
+description: Syncfusion provides project templates for ASP.NET Core to create the Syncfusion ASP.NET Core application using EJ2 Core components from Visual Studio Code.
+platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 # Creating a Syncfusion ASP.NET Core Application
 
-Syncfusion provides **Visual Studio Code project templates** for creating Syncfusion ASP.NET Core application. Syncfusion ASP.NET Core generates application that include the necessary Syncfusion NuGet packages, namespaces, and component render code for the Calendar, Button, and DataGrid components, as well as the style for making Syncfusion component development easier.
+Syncfusion provides **Visual Studio Code project templates** for creating Syncfusion ASP.NET Core application. Syncfusion ASP.NET Core generates application that includes the necessary Syncfusion NuGet packages, namespaces, and component render code for the Calendar, Button, and DataGrid components, as well as the style for making Syncfusion component development easier.
 
 > The Syncfusion Visual Studio Code project template provides support for ASP.NET Core project templates from v20.1.0.47.
 
@@ -44,4 +44,4 @@ The following instructions assist you in creating **Syncfusion ASP.NET Core Appl
 
     ![debugging](images/debugging.png)
 
-7. If you installed the trial setup or NuGet packages from nuget.org you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx?_ga=2.11237684.1233358434.1587355730-230058891.1567654773) post for understanding the licensing changes introduced in Essential Studio. 
+7. If you installed the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key to your application since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion license key to your application. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx?_ga=2.11237684.1233358434.1587355730-230058891.1567654773) post for understanding the licensing changes introduced in Essential Studio. 

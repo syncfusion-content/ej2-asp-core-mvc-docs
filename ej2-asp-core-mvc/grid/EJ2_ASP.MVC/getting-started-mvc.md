@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Grid Component
-description: Checkout and learn about getting started with ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Grid Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Mvc
 publishingplatform: ##Platform_Name##
@@ -9,96 +9,89 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC
+# Getting Started with ASP.NET MVC Grid Control
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+This section briefly explains about how to include [ASP.NET MVC Grid](https://www.syncfusion.com/aspnet-mvc-ui-controls/grid) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
-To get start with ASP.NET MVC application, need to ensure the following software to be installed on the machine.
+[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-1. .Net Framework 4.5 and above.
-2. ASP.NET MVC 4 or ASP.NET MVC 5
-3. Visual Studio
+## Create ASP.NET MVC application with HTML helper
 
-## Create ASP.NET MVC application
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
 
-Create ASP.NET MVC Application with default template project in Visual Studio 2017.
+* [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
-![Default Template](./images/default-template-mvc.png)
+## Install ASP.NET MVC package in the application
 
-## Adding Syncfusion package
+Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. To add ASP.NET MVC controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
 
-Once your project created, we need to add Syncfusion EJ2 MVC package into your application by using **NuGet Package Manager**.
+> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-Open the **NuGet** package manager.
+> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
 
-![Solution Explorer](./images/solution-explorer-mvc.png)
+## Add namespace
 
-Install the **Syncfusion.EJ2.MVC4** package to the application.
+Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
-![Nuget Demo](./images/nuget-demo-mvc.png)
-
-After Installation completed the Syncfusion DLL's will be included in the project.
-
-> You need to install **NewtonSoft.JSON** as dependency since **Syncfusion.EJ2.MVC** dependent to NewtonSoft.JSON package.
-
-Add **Syncfusion.EJ2** namespace reference in **Web.config** under **Views** folder.
-
-```cs
+```
 <namespaces>
     <add namespace="Syncfusion.EJ2"/>
 </namespaces>
-
 ```
 
-## Adding Scripts and CSS reference
+## Add style sheet
 
-You can add client side resource through **Nuget** package manager or [`CDN`](http://ej2.syncfusion.com/15.4.23/documentation/base/deployment.html?lang=typescript#cdn) in the layout page **Views/Shared/_Layout.cshtml.**
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
-Nuget Package Manager:
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-Install the **Syncfusion.EJ2.Javascript** package to the application.
-
-![Nuget Demo](./images/script-nuget.jpg)
-
-After Installation completed the script and CSS will be included in the project under the **Scripts** and **Content** folder.
-
-```html
 <head>
-@* Syncfusion Essential JS 2 Styles *@
-<link href="~/Content/ej2/material.css" rel="stylesheet" />
-
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="~/Scripts/ej2/ej2.min.js"></script>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
 </head>
-```
 
-> **Syncfusion.EJ2.Javascript** includes typescript declaration files. If your application is not configured to compile typescript then exception may occur. To resolve this please refer [`here`](./how-to/avoid-typescript-compilation/).
+{% endhighlight %}
+{% endtabs %}
 
-CDN Link:
+## Add script reference
 
-```html
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
 <head>
-@* Syncfusion Essential JS 2 Styles *@
-<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
-
-@* Syncfusion Essential JS 2 Scripts *@
-<script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
-```
 
-## Adding ScriptManager in layout page
+{% endhighlight %}
+{% endtabs %}
 
-Add **ScriptManager** to the bottom of the **_Layout.cshtml** page. The ScriptManager used to place our control initialization script in the page.
+## Register Syncfusion Script Manager
 
-```cs
-@Html.EJS().ScriptManager()
-```
+Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows. 
 
-## Add Grid Component
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-To initialize the Grid component add the below code to your **Index.cshtml** view page which is present under **Views/Home** folder.
+<body>
+...
+    <!-- Syncfusion ASP.NET MVC Script Manager -->
+    @Html.EJS().ScriptManager()
+</body>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add ASP.NET MVC Grid control
+
+Now, add the Syncfusion ASP.NET MVC Grid control in `~/Views/Home/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -115,8 +108,7 @@ To initialize the Grid component add the below code to your **Index.cshtml** vi
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-mvc/initialize/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Initialize.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -142,13 +134,71 @@ To bind data for the Grid component, you can assign a IEnumerable object to the 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-mvc/databinding/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-mvc/databinding/orderDetails.cs %}
+{% highlight c# tabtitle="HomeController.cs" %}
+public class HomeController : Controller
+{
+    public ActionResult Index()
+    {
+        return View(OrdersDetails.GetAllRecords());
+    }
+}
+public class OrdersDetails
+{
+    public static List<OrdersDetails> order = new List<OrdersDetails>();
+    public OrdersDetails()
+    {
+
+    }
+    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.EmployeeID = EmployeeId;
+        this.Freight = Freight;
+        this.ShipCity = ShipCity;
+        this.Verified = Verified;
+        this.OrderDate = OrderDate;
+        this.ShipName = ShipName;
+        this.ShipCountry = ShipCountry;
+        this.ShippedDate = ShippedDate;
+        this.ShipAddress = ShipAddress;
+    }
+    public static List<OrdersDetails> GetAllRecords()
+    {
+        if (order.Count() == 0)
+        {
+            int code = 10000;
+            for (int i = 1; i < 5; i++)
+            {
+                order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
+                order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
+                order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
+                order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
+                order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+                code += 5;
+            }
+        }
+        return order;
+    }
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public double? Freight { get; set; }
+    public string ShipCity { get; set; }
+    public bool Verified { get; set; }
+    public DateTime OrderDate { get; set; }
+    public string ShipName { get; set; }
+    public string ShipCountry { get; set; }
+    public DateTime ShippedDate { get; set; }
+    public string ShipAddress { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Grid control will be rendered in the default web browser.
 
+![ASP.NET MVC Grid Control](images/grid-control.png)
 
 ## Defining Columns
 
@@ -180,13 +230,10 @@ Let’s check the properties used here:
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-mvc/columns/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-mvc/columns/orderDetails.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET MVC Grid with Column Values](images/column.png)
 
 ## Enable Paging
 
@@ -209,13 +256,10 @@ The paging feature enables users to view the grid record in a paged view. It can
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-mvc/page/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-mvc/page/orderDetails.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
+![Paging in ASP.NET MVC Grid Control](images/paging.png)
 
 ## Enable Sorting
 
@@ -238,13 +282,10 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-mvc/sorting/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-mvc/sorting/orderDetails.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
+![Sorting in ASP.NET MVC Grid Control](images/sorting.png)
 
 ## Enable Filtering
 
@@ -267,13 +308,10 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-mvc/filtering/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-mvc/filtering/orderDetails.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
+![Filtering in ASP.NET MVC Grid Control](images/filtering.png)
 
 ## Enable Grouping
 
@@ -296,19 +334,14 @@ The grouping feature enables users to view the grid record in a grouped view. It
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-mvc/grouping/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-{% include code-snippet/grid/getting-start-mvc/grouping/orderDetails.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+![Grouping in ASP.NET MVC Grid Control](images/grouping.png)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Grid/ASP.NET%20MVC%20Razor%20Examples).
 
-Output be like the below.
-
-![Alt text](./images/grid-sample.png)
-
-## See Also
+## See also
 
 * [Create an MVC Grid app](https://www.syncfusion.com/blogs/post/create-an-mvc-grid-app-in-10-minutes-with-the-syncfusion-grid.aspx)
 * [How to render EJ2-Grid as HTML in ASP.NET MVC Grid](https://www.syncfusion.com/forums/137153/how-to-render-ej2-grid-as-html-in-asp-net-mvc-grid)

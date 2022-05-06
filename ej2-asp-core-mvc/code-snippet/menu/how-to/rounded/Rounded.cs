@@ -16,9 +16,33 @@ public ActionResult Rounded()
         text = "Edit",
         items = new List<object>()
         {
-            new { text = "Cut" },
-            new { text = "Copy" },
-            new { text = "Paste" }
+            new
+             {
+              text= "Toolbars",
+              items = new List<object>()
+                {
+                  new { text= "Menu Bar"},
+                  new { text= "Bookmarks Toolbar"}
+                }
+             },
+             new 
+             {
+                text = "Zoom",
+                items =new List<object>() 
+                {
+                 new { text= "Zoom In"},
+                 new { text= "Zoom Out"},
+                 new { text= "Reset"}
+                }
+              },
+             new 
+             {
+               text = "Full Screen",
+               items =new List<object>() 
+               {
+                 new { text= "cancel"}
+               }
+              },
         }
     });
     menuItems.Add(new
