@@ -281,6 +281,6 @@ public class EmployeeView
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Query Builder with Rule](images/querybuilder-rule.png)
+![ASP.NET MVC Query Builder with Rule](images/querybuilder-rule.png)
 
 > You can also explore our [ASP.NET MVC Query Builder example](https://ej2.syncfusion.com/aspnetmvc/QueryBuilder/DefaultFunctionalities#/material) that shows how to render and configure the Query Builder in ASP.NET MVC.
