@@ -230,6 +230,8 @@ namespace WebApplication4.Controllers
 {% endtabs %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core FileManager control will be rendered in the default web browser.
+
 ![FileManager getting started](images/getting-started.PNG)
 
 > The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for file manager service.
