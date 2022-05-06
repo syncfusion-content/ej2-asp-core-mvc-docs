@@ -1,8 +1,10 @@
+@using Syncfusion.EJ2.Navigations;
+
 <div class="container">
     <div class="control-container">
-            @(Html.EJS().Carousel("defaultCarousel").DataSource((IEnumerable<object>)ViewBag.dataSource).Render())
-        </div>
+        @(Html.EJS().Carousel("defaultCarousel").DataSource((IEnumerable<object>)ViewBag.dataSource).ItemTemplate("<div class='slide-content'>${Title}</div>").Render())
     </div>
+</div>
 
 <style>
     .control-container {

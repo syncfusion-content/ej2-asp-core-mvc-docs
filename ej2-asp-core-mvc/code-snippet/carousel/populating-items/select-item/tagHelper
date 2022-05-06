@@ -1,8 +1,6 @@
-@using Syncfusion.EJ2.Navigations;
-
 <div class="container">
     <div class="control-container">
-        <ejs-carousel id="defaultCarousel" selectedIndex="3">
+        <ejs-carousel id="defaultCarousel" selectedIndex="2">
             <e-carousel-items>
                 <e-carousel-item template='<div class="slide-content">Slide 1</div>'></e-carousel-item>
                 <e-carousel-item template='<div class="slide-content">Slide 2</div>'></e-carousel-item>
