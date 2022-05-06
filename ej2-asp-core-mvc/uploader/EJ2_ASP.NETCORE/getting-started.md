@@ -92,7 +92,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 
 ## Add ASP.NET Core Uploader control
 
-Now, add the Syncfusion ASP.NET Core Tooltip tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Uploader tag helper in `~/Pages/Index.cshtml` page.
 
 > From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests. 
 Hence, use the third party `promise` library like blue-bird to use the uploader in Internet Explorer.

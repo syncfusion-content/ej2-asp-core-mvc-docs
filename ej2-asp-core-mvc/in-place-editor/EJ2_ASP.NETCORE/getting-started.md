@@ -89,7 +89,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core In-Place Editor control
+## Add ASP.NET Core In-place Editor control
 
 Now, add the Syncfusion ASP.NET Core In-place Editor tag helper in `~/Pages/Index.cshtml` page.
 

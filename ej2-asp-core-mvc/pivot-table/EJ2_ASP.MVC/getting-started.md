@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Pivot Table Component
-description: Checkout and learn about getting started with ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Pivot Table Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Pivot Table control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,115 +9,95 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC
+# Getting Started with ASP.NET MVC Pivot Table Control
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET MVC application to use our components.
+This section briefly explains about how to include [ASP.NET MVC Pivot Table](https://www.syncfusion.com/aspnet-mvc-ui-controls/pivot-table) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
-To get start with ASP.NET MVC application, need to ensure the following software to be installed on the machine.
+[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-1. .NET Framework 4.5 and above.
-2. ASP.NET MVC 4 or ASP.NET MVC 5
-3. Visual Studio
+## Create ASP.NET MVC application with HTML helper
 
-## Preparing ASP.NET MVC application
+* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
 
-Follow below steps to create ASP.NET MVC Application.
+* [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
-**Step 1:** Choose **File > New > Project...** in the Visual Studio menu bar.
+## Install ASP.NET MVC package in the application
 
-![new project in aspnetmvc5](images/new-mvc-project.png)
+Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. To add ASP.NET MVC controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
 
-**Step 2:** Select **Installed > Visual C# > Web** and choose the required **.NET Framework** in the drop-down.
+> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-**Step 3:** Select **ASP.NET Web Application (.NET Framework)** and change the application name, and then click **OK**.
+> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
 
-> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC application. i.e. The minimum target framework is 4.5 for Syncfusion ASP.NET MVC (Essential JS 2).
+## Add namespace
 
-![aspnetmvc5 project template](images/aspnetmvc5-template.png)
+Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
-**Step 4:** Choose **MVC** and then click **OK**. Now, the MVC web application project is created with default ASP.NET MVC template.
+```
+<namespaces>
+    <add namespace="Syncfusion.EJ2"/>
+</namespaces>
+```
 
-![aspnetmvc5 web application template](images/aspnetmvc5-config-template.png)
+## Add style sheet
 
-## Configure Essential JS 2 in the application
+Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
-**Step 1:** Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-> Refer to [this article](../../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+<head>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+</head>
 
-![aspnetmvc5 manage nuget packages](images/aspnetmvc5-manage-nuget.png)
+{% endhighlight %}
+{% endtabs %}
 
-**Step 2:** Search the `Syncfusion EJ2 MVC5` keyword in the **Browse** tab and install **Syncfusion.EJ2.MVC5** NuGet package in the application.
+## Add script reference
 
-![aspnetmvc5 install nuget package](images/aspnetmvc5-nuget.png)
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
-The Essential JS 2 MVC5 NuGet package will be included in the project, after the installation process is completed.
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
 
-> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [`Syncfusion.Licensing`](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+<head>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
 
-**Step 3:** Open `~/Views/Web.config` file and add the `Syncfusion.EJ2` namesapce reference to the `<system.web.webPages.razor>` element and `Syncfusion.EJ2` assembly reference to `<system.web>` element.
+{% endhighlight %}
+{% endtabs %}
 
-```html
-<configuration>
+## Register Syncfusion Script Manager
+
+Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows. 
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<body>
 ...
-    <system.web.webPages.razor>
-        ...
-        <pages pageBaseType="System.Web.Mvc.WebViewPage">
-            <namespaces>
-                ...
-                ...
-                <add namespace="Syncfusion.EJ2"/>
-            </namespaces>
-        </pages>
-    </system.web.webPages.razor>
-...
-    <system.web>
-        <compilation>
-            <assemblies>
-                ...
-                ...
-                <add assembly="Syncfusion.EJ2, Culture=neutral" />
-            </assemblies>
-        </compilation>
-    </system.web>
-</configuration>
-```
+    <!-- Syncfusion ASP.NET MVC Script Manager -->
+    @Html.EJS().ScriptManager()
+</body>
 
-**Step 4:** Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
-
-```html
-    <head>
-        ...
-
-        <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
-
-        <!-- Syncfusion Essential JS 2 Scripts -->
-        <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
-    </head>
-```
-
-**Step 5:** Add the Essential JS 2 Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
-
-```html
-    <body>
-        ...
-        <!-- Syncfusion Essential JS 2 ScriptManager -->
-        @Html.EJS().ScriptManager()
-    </body>
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Browser compatibility
 
 Polyfills are required to use the Pivot Table in Internet Explorer 11 browser. Refer the [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/browser/?no-cache=1#browser-support) for more details.
 
-## Adding component to the application
+## Add ASP.NET MVC Pivot Table control
 
-* Add the below code to your `Index.cshtml` view page which is present under `Views/Home` folder, to initialize the pivot table component.
+* Now, add the Syncfusion ASP.NET MVC Pivot Table control in `~/Views/Home/Index.cshtml` page.
 
-* The Pivot Table component further needs to be populated with an appropriate data source. For illustration purpose, a collection of objects mentioning the sales details of certain products over a period and region has been prepared. This sample data is assigned to the pivot table component through [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) class.
+* The Pivot Table control further needs to be populated with an appropriate data source. For illustration purpose, a collection of objects mentioning the sales details of certain products over a period and region has been prepared. This sample data is assigned to the pivot table control through [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) class.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -136,13 +116,91 @@ Polyfills are required to use the Pivot Table in Internet Explorer 11 browser. R
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/initial-pivot/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Initial.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/initial-pivot/initial.cs %}
+{% highlight c# tabtitle="HomeController.cs" %}
+public ActionResult Index()
+{
+    List<PivotData> pivotData = new List<PivotData>();
+    pivotData.Add(new PivotData { Sold = 31, Amount = 52824, Country = "France", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 51, Amount = 86904, Country = "France", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 90, Amount = 153360, Country = "France", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 25, Amount = 42600, Country = "France", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 27, Amount = 46008, Country = "France", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 49, Amount = 83496, Country = "France", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 95, Amount = 161880, Country = "France", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 67, Amount = 114168, Country = "France", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 75, Amount = 127800, Country = "France", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 67, Amount = 114168, Country = "France", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 69, Amount = 117576, Country = "France", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 90, Amount = 153360, Country = "France", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 16, Amount = 27264, Country = "France", Products = "Mountain Bikes", Year = "FY 2018", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 83, Amount = 124422, Country = "France", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 57, Amount = 85448, Country = "France", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 20, Amount = 29985, Country = "France", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 67, Amount = 70008, Country = "France", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 89, Amount = 60496, Country = "France", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 75, Amount = 801880, Country = "France", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 57, Amount = 204168, Country = "France", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 75, Amount = 737800, Country = "France", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 87, Amount = 884168, Country = "France", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 39, Amount = 729576, Country = "France", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 90, Amount = 38860, Country = "France", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 93, Amount = 139412, Country = "France", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 51, Amount = 92824, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 61, Amount = 76904, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 70, Amount = 43360, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 85, Amount = 62600, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 97, Amount = 86008, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 69, Amount = 93496, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 45, Amount = 301880, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 77, Amount = 404168, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 15, Amount = 137800, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 37, Amount = 184168, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 49, Amount = 89576, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 40, Amount = 33360, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 96, Amount = 77264, Country = "Germany", Products = "Mountain Bikes", Year = "FY 2018", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 23, Amount = 24422, Country = "Germany", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 67, Amount = 75448, Country = "Germany", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 70, Amount = 52345, Country = "Germany", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 13, Amount = 135612, Country = "Germany", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 57, Amount = 90008, Country = "Germany", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 29, Amount = 90496, Country = "Germany", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 45, Amount = 301880, Country = "Germany", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 77, Amount = 404168, Country = "Germany", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 15, Amount = 137800, Country = "Germany", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 37, Amount = 184168, Country = "Germany", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 99, Amount = 829576, Country = "Germany", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 80, Amount = 38360, Country = "Germany", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 91, Amount = 67824, Country = "United States", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 81, Amount = 99904, Country = "United States", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 70, Amount = 49360, Country = "United States", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 65, Amount = 69600, Country = "United States", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 57, Amount = 90008, Country = "United States", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 29, Amount = 90496, Country = "United States", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 85, Amount = 391880, Country = "United States", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 97, Amount = 904168, Country = "United States", Products = "Mountain Bikes", Year = "FY 2016", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 85, Amount = 237800, Country = "United States", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 77, Amount = 384168, Country = "United States", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 99, Amount = 829576, Country = "United States", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 80, Amount = 38360, Country = "United States", Products = "Mountain Bikes", Year = "FY 2017", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 76, Amount = 97264, Country = "United States", Products = "Mountain Bikes", Year = "FY 2018", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 53, Amount = 94422, Country = "United States", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 90, Amount = 45448, Country = "United States", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 29, Amount = 92345, Country = "United States", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 67, Amount = 235612, Country = "United States", Products = "Road Bikes", Year = "FY 2015", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 97, Amount = 90008, Country = "United States", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 79, Amount = 90496, Country = "United States", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 95, Amount = 501880, Country = "United States", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q3" });
+    pivotData.Add(new PivotData { Sold = 97, Amount = 104168, Country = "United States", Products = "Road Bikes", Year = "FY 2016", Quarter = "Q4" });
+    pivotData.Add(new PivotData { Sold = 95, Amount = 837800, Country = "United States", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q1" });
+    pivotData.Add(new PivotData { Sold = 87, Amount = 684168, Country = "United States", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q2" });
+    pivotData.Add(new PivotData { Sold = 109, Amount = 29576, Country = "United States", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q3" });
+    return View(pivotData);
+}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Pivot Table control will be rendered in the default web browser.
 
 ## Adding fields to row, column, value and filter axes
 
@@ -183,13 +241,10 @@ In this illustration, "Year" and "Quarter" are added in column, "Country" and "P
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/add-fields/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Fields.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/add-fields/fields.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET MVC Pivot Table with Fields](images/pivottable-fields.png)
 
 ## Applying formatting to a value field
 
@@ -214,13 +269,10 @@ Formatting defines a way in which values should be displayed. For example, forma
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/format/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Format.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/format/format.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
+![Formatting in ASP.NET MVC Pivot Table](images/pivottable-value-format.png)
 
 ## Enable Grouping Bar
 
@@ -243,13 +295,10 @@ The grouping bar feature automatically populates fields from the bound data sour
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/groupingbar/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Groupingbar.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/groupingbar/groupingbar.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
+![Grouping in ASP.NET MVC Pivot Table](images/pivottable-group.png)
 
 ## Enable Pivot Field List
 
@@ -272,13 +321,10 @@ The field list allows to add or remove fields and also rearrange the fields betw
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/fieldlist/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/fieldlist/fieldlist.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET MVC Pivot Table with Field List](images/pivottable-with-pivotfield.png)
 
 ## Calculated field
 
@@ -303,16 +349,9 @@ The calculated field feature allows user to insert or add a new calculated field
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/calculatedfield/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Calculatedfield.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/calculatedfield/calculatedfield.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![Alt text](./images/pivotgrid-sample.png)
+![ASP.NET MVC Pivot Table with Calculate Field](images/pivottable-calculatefield.png)
 
 > You can refer to our [ASP.NET MVC Pivot Table](https://www.syncfusion.com/aspnet-mvc-ui-controls/pivot-table) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Pivot Table example](https://ej2.syncfusion.com/aspnetmvc/PivotTable/Default#/material) that shows how to rendering of the pivot table with drill-up and drill-down functionality bound to a relational report.
