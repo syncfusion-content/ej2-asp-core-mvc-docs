@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## BulletChart Control |Syncfusion
+title: Getting Started with ##Platform_Name## Bullet Chart Control |Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Bullet Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core BulletChart Control
+# Getting Started with ASP.NET Core Bullet Chart Control
 
 This section briefly explains about how to include [ASP.NET Core Bullet Chart](https://www.syncfusion.com/aspnet-core-ui-controls/bullet-chart) control in your ASP.NET Core application using Visual Studio.
 
