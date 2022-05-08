@@ -101,7 +101,6 @@ Individual text can be customized using the `textRender` event.
 {% endhighlight %}
 {% endtabs %}
 
-
 ## Show percentages in data labels of pie chart
 
 You can show the percentages in data labels of pie chart using `textRender` event and `template` option.
