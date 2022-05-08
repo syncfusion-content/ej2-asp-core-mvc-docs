@@ -9,11 +9,9 @@ documentation: ug
 ---
 
 
-# Data Label
+# Data Label in ##Platform_Name## Accumulation Chart Component
 
 Data label can be added to a chart series by enabling the [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Visible) option in the dataLabel property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -24,25 +22,9 @@ Data label can be added to a chart series by enabling the [`visible`](https://h
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/default/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/default/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Positioning
 
 Accumulation chart provides support for placing the data label either `inside` or `outside` the chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -53,25 +35,9 @@ Accumulation chart provides support for placing the data label either `inside` o
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/position/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Position.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/position/position.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Smart labels
 
 Datalabels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`enableSmartLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_EnableSmartLabels) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -82,25 +48,9 @@ Datalabels will be arranged smartly without overlapping with each other. You can
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/smartlabels/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Smartlabels.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/smartlabels/smartlabels.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Data Label Template
 
 Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Template) property, you can set data label template in chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -111,25 +61,9 @@ Label content can be formatted by using the template option. Inside the template
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Template.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/template/template.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Connector Line
 
 Connector line will be visible when the data label is placed `outside` the chart. The connector line can be customized using the `type`, `color`, `width`, `length` and `dashArray` properties.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -140,25 +74,10 @@ Connector line will be visible when the data label is placed `outside` the chart
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/connector/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Connector.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/connector/connector.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Text Mapping
 
 Text from the data source can be mapped to data label using `name` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -169,25 +88,9 @@ Text from the data source can be mapped to data label using `name` property.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/map/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Map.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/map/map.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Customization
 
 Individual text can be customized using the `textRender` event.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -198,17 +101,6 @@ Individual text can be customized using the `textRender` event.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/custom/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/custom/custom.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Show percentages in data labels of pie chart
 
