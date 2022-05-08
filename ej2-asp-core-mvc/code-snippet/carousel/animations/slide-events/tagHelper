@@ -14,10 +14,10 @@
 
 <script type="text/javascript">
     function onSlideChanging(args) {
-        console.log(args.currentSlide); // We can able to customize the slide before changing.
+        console.log(args.currentSlide); // You can customize the slide before changing
     }
     function onSlideChanged(args) {
-        console.log(args.currentSlide); // We can able to customize the slide after changed.
+        console.log(args.currentSlide); // You can customize the slide after changed
     }
 </script>
 <style>

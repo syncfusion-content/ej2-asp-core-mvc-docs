@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## ProgressButton Control
-description: Checkout and learn about getting started with ##Platform_Name## ProgressButton control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Progress Button Control
+description: Checkout and learn about getting started with ##Platform_Name## Progress Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core ProgressButton Control
+# Getting Started with ASP.NET Core Progress Button Control
 
-This section briefly explains about how to include [ASP.NET Core ProgressButton](https://www.syncfusion.com/aspnet-core-ui-controls/progress-button) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core Progress Button](https://www.syncfusion.com/aspnet-core-ui-controls/progress-button) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -89,9 +89,9 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core ProgressButton control
+## Add ASP.NET Core Progress Button control
 
-Now, add the Syncfusion ASP.NET Core ProgressButton tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Progress Button tag helper in `~/Pages/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -113,11 +113,11 @@ Now, add the Syncfusion ASP.NET Core ProgressButton tag helper in `~/Pages/Index
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core ProgressButton control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Progress Button control will be rendered in the default web browser.
 
-![ASP.NET Core ProgressButton Control](images/progress-button.png)
+![ASP.NET Core Progress Button Control](images/progress-button.png)
 
-> ProgressButton supports different styles, types and sizes like [`Button`](https://ej2.syncfusion.com/aspnetcore/documentation/button/). In addition, it also support `top` and `bottom` position of the icon.
+> Progress Button supports different styles, types and sizes like [`Button`](https://ej2.syncfusion.com/aspnetcore/documentation/button/). In addition, it also support `top` and `bottom` position of the icon.
 
 ## Enabling progress in button
 

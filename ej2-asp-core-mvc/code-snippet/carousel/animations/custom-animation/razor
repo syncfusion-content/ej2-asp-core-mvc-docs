@@ -1,13 +1,15 @@
+@using Syncfusion.EJ2.Navigations;
+
 <div class="container">
     <div class="control-container">
         @(Html.EJS().Carousel("defaultCarousel").
-        Animation(animation => animation.Effect(CustomEffect.Zoom))
+        Animation(animation => animation.CustomEffect("parallax"))
         .Items(new List<CarouselItem> {
-                new CarouselItem { Template = '<div class="slide-content">Slide 1</div>'  },
-                new CarouselItem { Template = '<div class="slide-content">Slide 2</div>' },
-                new CarouselItem { Template = '<div class="slide-content">Slide 3</div>' },
-                new CarouselItem { Template = '<div class="slide-content">Slide 4</div>'  },
-                new CarouselItem { Template = '<div class="slide-content">Slide 5</div>'  }
+                new CarouselItem { Template = "<div class='slide-content'>Slide 1</div>"  },
+                new CarouselItem { Template = "<div class='slide-content'>Slide 2</div>" },
+                new CarouselItem { Template = "<div class='slide-content'>Slide 3</div>" },
+                new CarouselItem { Template = "<div class='slide-content'>Slide 4</div>"  },
+                new CarouselItem { Template = "<div class='slide-content'>Slide 5</div>"  }
             })
             .Render()
         )
@@ -30,47 +32,40 @@
         justify-content: center;
     }
 
-    .e-carousel .e-carousel-items.zoom .e-carousel-item,
-    .e-carousel .e-carousel-items.bounce .e-carousel-item,
-    .e-carousel .e-carousel-items.flip .e-carousel-item {
-        animation-duration: 0.6s;
+    /* Parallax animation */
+    .e-carousel .e-carousel-items.parallax .e-carousel-item {
+        transition: transform 1s ease-in-out;
     }
 
-        .e-carousel .e-carousel-items.flip .e-carousel-item.e-previous-slide,
-        .e-carousel .e-carousel-items.flip .e-carousel-item.e-next-slide {
-            animation-name: flip;
+        .e-carousel .e-carousel-items.parallax .e-carousel-item.e-next {
+            animation: ParallaxIn 1s ease-in-out;
+        }
+
+        .e-carousel .e-carousel-items.parallax .e-carousel-item.e-prev {
+            animation: ParallaxOut 1s ease-in-out;
+        }
+
+    @@keyframes ParallaxIn {
+        from {
+            opacity: 0;
+            transform: scale(0) translateY(100%);
+        }
+
+        to {
             opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+
+    @@keyframes ParallaxOut {
+        from {
+            opacity: 1;
+            transform: scale(1) translateY(0);
         }
 
-        .e-carousel .e-carousel-items.zoom .e-carousel-item.e-next-slide {
-            animation-name: zoomInRight;
+        to {
+            opacity: 0;
+            transform: scale(0) translateY(-100%);
         }
-
-        .e-carousel .e-carousel-items.zoom .e-carousel-item.e-previous-slide {
-            animation-name: zoomInLeft;
-        }
-
-        .e-carousel .e-carousel-items.zoom .e-carousel-item.e-carousel-right {
-            animation-name: zoomOutRight;
-        }
-
-        .e-carousel .e-carousel-items.zoom .e-carousel-item.e-carousel-left {
-            animation-name: zoomOutLeft;
-        }
-
-        .e-carousel .e-carousel-items.bounce .e-carousel-item.e-next-slide {
-            animation-name: bounceInRight;
-        }
-
-        .e-carousel .e-carousel-items.bounce .e-carousel-item.e-previous-slide {
-            animation-name: bounceInLeft;
-        }
-
-        .e-carousel .e-carousel-items.bounce .e-carousel-item.e-carousel-left {
-            animation-name: bounceOutLeft;
-        }
-
-        .e-carousel .e-carousel-items.bounce .e-carousel-item.e-carousel-right {
-            animation-name: bounceOutRight;
-        }
+    }
 </style>

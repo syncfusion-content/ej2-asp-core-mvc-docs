@@ -89,9 +89,9 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core HeatMap control
+## Add ASP.NET Core HeatmapChart control
 
-Now, add the Syncfusion ASP.NET Core HeatMap tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core HeatmapChart tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -128,7 +128,7 @@ This section explains how to populate the following two-dimensional array data t
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core HeatMapChart control will be rendered in the default web browser.
 
-![ASP.NET Core HeatMap with Data](images/heatmap-with-data.png)
+![ASP.NET Core HeatmapChart with Data](images/heatmap-with-data.png)
 
 ## Enable axis labels
 
@@ -154,7 +154,7 @@ You can add axis labels to the heat map and format those labels using the [`xAxi
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatMap with Axis Labels](images/heatmap-with-axis-labels.png)
+![ASP.NET Core HeatmapChart with Axis Labels](images/heatmap-with-axis-labels.png)
 
 ## Add heat map title
 
@@ -180,7 +180,7 @@ Add a title using the [`titleSettings`](https://help.syncfusion.com/cr/aspnetcor
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatMap with Title](images/heatmap-with-title.png)
+![ASP.NET Core HeatmapChart with Title](images/heatmap-with-title.png)
 
 ## Enable legend
 
@@ -206,7 +206,7 @@ Use a legend for the heat map in the [`legendSettings`](https://help.syncfusion.
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatMap with Legend](images/heatmap-with-legend.png)
+![ASP.NET Core HeatmapChart with Legend](images/heatmap-with-legend.png)
 
 ## Add data label
 
@@ -232,7 +232,7 @@ Add data labels to improve the readability of the heat map. This can be achieved
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatMap with DataLabel](images/heatmap-with-datalabel.png)
+![ASP.NET Core HeatmapChart with DataLabel](images/heatmap-with-datalabel.png)
 
 ## Add custom cell palette
 
@@ -258,7 +258,7 @@ The default palette settings of the heat map cells can be customized by using th
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatMap with Custom Palette](images/heatmap-with-palette.png)
+![ASP.NET Core HeatmapChart with Custom Palette](images/heatmap-with-palette.png)
 
 ## Enable tooltip
 
@@ -284,7 +284,7 @@ The tooltip is used when you cannot display information by using the data labels
 {% endtabs %}
 {% endif %}
 
-![ASP.NET Core HeatMap with Tooltip](images/heatmap-with-tooltip.png)
+![ASP.NET Core HeatmapChart with Tooltip](images/heatmap-with-tooltip.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/HeatMap/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

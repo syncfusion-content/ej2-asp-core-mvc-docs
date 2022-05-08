@@ -136,6 +136,8 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC DropDownButton Control](images/drop-down-button.PNG)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/DropDownButton/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [DropDownButton with icons](./icons#dropdownbutton-icons)

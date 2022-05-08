@@ -145,6 +145,8 @@ Here the Calendar allows you to select a date within the range from 5th to 27th 
 
 ![Specific Min and Max Date Selection in ASP.NET MVC Calendar](images/calendar-with-min-and-max-dates.png)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Calendar/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [Select multiple dates in the Calendar](./multi-select)

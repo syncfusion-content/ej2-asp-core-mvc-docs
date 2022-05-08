@@ -1,40 +1,21 @@
+@using Syncfusion.EJ2.Navigations;
+
 <div class="container">
     <div class="control-container">
-            @(Html.EJS().Carousel("defaultCarousel")
-            .SlideChanged("onSlideChanged")
-            .IndicatorsTemplate("#indicatorTemplate")
+        @(Html.EJS().Carousel("defaultCarousel")
+            .IndicatorsTemplate("<div class='indicator' indicator-index='${index}'></div>")
             .Items(new List<CarouselItem> {
-                    new CarouselItem { Template = '<div class="slide-content">Slide 1</div>'  },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 2</div>' },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 3</div>' },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 4</div>'  },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 5</div>'  }
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 1</div>"  },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 2</div>" },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 3</div>" },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 4</div>"  },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 5</div>"  }
                 })
                 .Render()
             )
-        </div>
     </div>
+</div>
 
-<script type="text/x-template" id="indicatorTemplate">
-    <div class="indicator" indicator-index="${index}">
-        <div class="preview-content">${getContent(data.index)}</div>
-    </div>
-</script>
-
-<script type="text/javascript">
-    window.getContent = function (index) {
-        var birds = ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5'];
-        return birds[index];
-    };
-
-    function onSlideChanged(args) {
-        var carouselObj = document.querySelector(".e-carousel").ej2_instances[0];
-        var indicators = carouselObj.element.querySelector('.e-carousel-indicators');
-        ej.base.removeClass(indicators.querySelectorAll('.indicator'), 'active');
-        ej.base.addClass([(indicators.querySelector('[data-index="' + args.currentIndex + '"]').children[0])], 'active');
-    }
-
-</script>
 <style>
     .control-container {
         background-color: #adb5bd;
@@ -51,56 +32,16 @@
         justify-content: center;
     }
 
-    .e-carousel .e-carousel-items,
-    .e-carousel .e-carousel-navigators {
-        height: calc(100% - 3rem);
-    }
-
-        .e-carousel .e-carousel-navigators .e-previous,
-        .e-carousel .e-carousel-navigators .e-next,
-        .e-carousel .e-carousel-navigators .nav-btn {
-            padding: 0;
-        }
-
-            .e-carousel .e-carousel-navigators .nav-btn:active,
-            .e-carousel .e-carousel-navigators .nav-btn:focus,
-            .e-carousel .e-carousel-navigators .nav-btn:hover {
-                background-color: transparent !important;
-                color: inherit;
-            }
-
-        .e-carousel .e-carousel-navigators svg {
-            fill: none;
-            stroke: currentColor;
-            stroke-linecap: square;
-            stroke-width: 8px;
-            height: 2rem;
-            vertical-align: middle;
-            width: 2rem;
-        }
-
-        .e-carousel .e-carousel-navigators .e-previous svg {
-            transform: rotate(180deg);
-        }
-
-    .e-carousel .e-carousel-indicators .e-indicator-bars .e-indicator-bar .indicator {
+    .e-carousel .e-carousel-indicators .e-indicator-bars .e-indicator-bar.e-template .indicator {
         background-color: #ececec;
-        border: 1px solid black;
         border-radius: 0.25rem;
         cursor: pointer;
-        height: 3.5rem;
+        height: 0.5rem;
         margin: 0.5rem;
-        width: 5rem;
+        width: 1.5rem;
     }
 
     .e-carousel .e-carousel-indicators .e-indicator-bars .e-indicator-bar.e-active .indicator {
-        background-color: #c1cdda;
-    }
-
-    .preview-content {
-        align-items: center;
-        display: flex;
-        height: 100%;
-        justify-content: center;
+        background-color: #3c78ef;
     }
 </style>

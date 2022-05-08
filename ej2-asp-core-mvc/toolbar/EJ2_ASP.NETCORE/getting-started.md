@@ -114,7 +114,7 @@ Now, add the Syncfusion ASP.NET Core Toolbar tag helper in `~/Pages/Index.cshtml
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core ToolBar control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Toolbar control will be rendered in the default web browser.
 
 ![ASP.NET Core Toolbar Control](images/gettingstarted.PNG)
 

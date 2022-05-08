@@ -168,3 +168,5 @@ You can add the datamatrix code in our barcode generator component.
 {% endif %}
 
 ![ASP.NET MVC DataMatrix Control](images/datamatrix-control.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Barcode/ASP.NET%20MVC%20Razor%20Examples)
