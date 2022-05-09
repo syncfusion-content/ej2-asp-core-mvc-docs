@@ -1,19 +1,21 @@
+@using Syncfusion.EJ2.Navigations;
+
 <div class="container">
     <div class="control-container">
-            @(Html.EJS().Carousel("defaultCarousel")
-            .PreviousButtonTemplate('<button id="previous"></button>')
-            .NextButtonTemplate('<button id="next"></button>')
+        @(Html.EJS().Carousel("defaultCarousel")
+            .PreviousButtonTemplate("<button id='previous'></button>")
+            .NextButtonTemplate("<button id='next'></button>")
             .Items(new List<CarouselItem> {
-                    new CarouselItem { Template = '<div class="slide-content">Slide 1</div>'  },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 2</div>' },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 3</div>' },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 4</div>'  },
-                    new CarouselItem { Template = '<div class="slide-content">Slide 5</div>'  }
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 1</div>"  },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 2</div>" },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 3</div>" },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 4</div>"  },
+                    new CarouselItem { Template = "<div class='slide-content'>Slide 5</div>"  }
                 })
                 .Render()
             )
-        </div>
     </div>
+</div>
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
         var prevBtn = new ej.buttons.Button({ cssClass: 'e-flat e-round', iconCss: 'e-icons e-chevron-left-double' });

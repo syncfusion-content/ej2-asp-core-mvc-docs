@@ -113,6 +113,8 @@ Now, add the Syncfusion ASP.NET Core Diagram tag helper in `~/Pages/Index.cshtml
 {% endtabs %}
 {% endif %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Diagram control will be rendered in the default web browser.
+
 ![ASP.NET Core Diagram Control](images/diagram-control.png)
 
 ## Connect two Nodes with a Connector
@@ -338,4 +340,4 @@ The following code examples indicates how to define the default appearance of no
 
 
 
-> You can refer to our [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Diagram example](https://ej2.syncfusion.com/aspnetcore/Diagram/FlowChart#/material) that shows how to render the Diagram in ASP.NET Core.
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Diagram/ASP.NET%20Core%20Tag%20Helper%20Examples).
