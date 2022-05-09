@@ -1,9 +1,10 @@
 @using Syncfusion.EJ2.Schedule
+@model List<ScheduleView>
 
 @(Html.EJS().Schedule("schedule")
     .Width("100%")
-    .Views(ViewBag.view)
+    .Views(Model)
     .Height("550px")
-    .SelectedDate(new DateTime(2018, 2, 15))
+    .SelectedDate(new DateTime(2022, 2, 15))
     .Render()
 )

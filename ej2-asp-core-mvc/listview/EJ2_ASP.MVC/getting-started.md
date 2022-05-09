@@ -103,7 +103,7 @@ Now, add the Syncfusion ASP.NET MVC ListView control in `~/Views/Home/Index.csht
 
 ## Bind dataSource
 
-After initialization, populate the ListView with data using the `dataSource` property. Here, the JSON values are passed to the ListView component.
+After initialization, populate the ListView with data using the `dataSource` property. Here, the JSON values are passed to the ListView control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
