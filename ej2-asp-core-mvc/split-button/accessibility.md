@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in Split Button Controls
 
 ## ARIA attributes
 
