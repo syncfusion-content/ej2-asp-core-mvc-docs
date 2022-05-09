@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance Customization in ##Platform_Name## Gantt Component
+title: Appearance Customization in Syncfusion ##Platform_Name## Gantt
 description: Learn here all about Appearance Customization in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appearance Customization
