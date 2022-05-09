@@ -41,10 +41,6 @@ Closes the opened popup.</td></tr>
 Opens the popup, or activates the highlighted item and closes the popup.</td></tr>
 <tr>
 <td>
-<kbd>Space</kbd></td><td>
-Opens the popup.</td></tr>
-<tr>
-<td>
 <kbd>Up</kbd></td><td>
 Navigates up or to the previous action item.</td></tr>
 <tr>
@@ -54,11 +50,11 @@ Navigates down or to the next action item.</td></tr>
 <tr>
 <td>
 <kbd>Alt + Up Arrow</kbd></td><td>
-Opens the popup.</td></tr>
+Closes the popup.</td></tr>
 <tr>
 <td>
 <kbd>Alt + Down Arrow</kbd></td><td>
-Closes the popup.</td></tr>
+Opens the popup.</td></tr>
 </table>
 
 {% if page.publishingplatform == "aspnet-core" %}
