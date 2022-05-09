@@ -260,6 +260,8 @@ public ActionResult Index()
 
 > The `separator` property should not be given along with the other fields in the `MenuItem`. You can also enable the separator to group **horizontal** menu items.
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Menu/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [Create menu using data source](./data-source-binding-and-custom-menu-items#data-binding)
