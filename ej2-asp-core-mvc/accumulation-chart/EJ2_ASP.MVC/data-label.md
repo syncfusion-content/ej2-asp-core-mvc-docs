@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Label in ##Platform_Name## Accumulation Chart Component of Syncfusion Essential JS 2
+title: Data Label in Syncfusion ##Platform_Name## Accumulation Chart
 description: Learn here all about Data Label in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Label
