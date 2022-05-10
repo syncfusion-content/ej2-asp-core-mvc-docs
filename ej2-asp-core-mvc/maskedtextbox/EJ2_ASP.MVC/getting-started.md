@@ -93,8 +93,6 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 Now, add the Syncfusion ASP.NET MVC MaskedTextBox control in `~/Views/Home/Index.cshtml` page.
 
-The following example shows a basic MaskedTextBox control.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -146,6 +144,8 @@ The following example demonstrates the usage of mask element `0` that allows any
 {% endif %}
 
 ![ASP.NET MVC MaskedTextBox with Mask Inputs](images/mask.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/MaskedTextBox/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
