@@ -1,0 +1,16 @@
+@model List<GanttSample.Controllers.GanttDataSource>
+
+@Html.EJS().Gantt("Editing").DataSource((IEnumerable<object>)Model).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate(
+      "StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").Child("SubTasks")).EditSettings(es =>
+       es.AllowTaskbarEditing(true)).Render()
+
+<style>
+/* change gripper icon */
+.e-gantt .e-left-resize-gripper::before, .e-gantt .e-right-resize-gripper::before {
+    content: '\e934';
+}
+
+.e-gantt .e-left-resize-gripper, .e-gantt .e-right-resize-gripper {
+    transform: rotate(90deg);
+}
+</style>

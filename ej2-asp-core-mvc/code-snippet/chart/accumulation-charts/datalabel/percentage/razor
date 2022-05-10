@@ -1,0 +1,18 @@
+Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("xValue")
+                      .YName("yValue")
+                      .Name("Browser")
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                      .DataLabel(ViewBag.dataSource).Add();
+            })
+            .EnableSmartLabels(true)
+            .TextRender("textRender")
+            .LegendSettings(ls => ls.Visible(false)).Render()
+
+<script>
+        var textRender = function (args) {
+            args.text = args.point.percentage + "%";
+        };
+</script>
