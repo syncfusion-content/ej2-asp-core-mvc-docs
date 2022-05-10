@@ -89,10 +89,6 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Browser compatibility
-
-Polyfills are required to use the Pivot Table in Internet Explorer 11 browser. Refer the [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/browser/?no-cache=1#browser-support) for more details.
-
 ## Add ASP.NET MVC Pivot Table control
 
 * Now, add the Syncfusion ASP.NET MVC Pivot Table control in `~/Views/Home/Index.cshtml` page.
