@@ -970,6 +970,312 @@ https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-
 https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js
 </td>
 </tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/treeview/getting-started">TreeView</a></td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/toolbar/getting-started">Toolbar</a></td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started">Tooltip</a></td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core">TreeGrid</a></td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/fluent.css
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/dist/global/ej2-treegrid.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/treemap/getting-started">TreeMap</a></td>
+<td>
+No Style Sheet Packages
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treemap/dist/global/ej2-treemap.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/uploader/getting-started">Uploader</a></td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/kanban/getting-started">Kanban</a></td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-kanban/styles/fluent.css
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-kanban/dist/global/ej2-kanban.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started">LinearGauge</a></td>
+<td>
+No Style Sheet Packages
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lineargauge/dist/global/ej2-lineargauge.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/list-box/getting-started-core">ListBox</a></td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/listview/getting-started">ListView</a></td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/getting-started">Maps</a></td>
+<td>
+No Style Sheet Packages
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-maps/dist/global/ej2-maps.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maskedtextbox/getting-started">Masked TextBox</a></td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/menu/getting-started">Menu</a></td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css
+</td>
+<td>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js
+<br>
+https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js
+</td>
+</tr>
+
 
 </table>
 <!-- markdownlint-enable MD033 -->
