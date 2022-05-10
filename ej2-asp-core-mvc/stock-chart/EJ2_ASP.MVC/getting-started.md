@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Stock Chart Control | Syncfusion
+title: Getting Started with ##Platform_Name## Stock Chart Control |Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Stock Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -131,5 +131,7 @@ Since the JSON contains category data, set the [valueType](https://help.syncfusi
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Stock Chart control will be rendered in the default web browser.
 
 ![ASP.NET MVC Stock Chart Control](images/stockchart-control.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/StockChart/ASP.NET%20MVC%20Razor%20Examples).
 
 > You can refer to our [ASP.NET MVC Stock Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/stock-chart) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Stock Chart example](https://ej2.syncfusion.com/aspnetmvc/StockChart/Default#/material) that shows you how to present and manipulate data.
