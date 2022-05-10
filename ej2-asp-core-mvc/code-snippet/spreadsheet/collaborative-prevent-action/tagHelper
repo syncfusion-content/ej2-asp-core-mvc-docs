@@ -17,7 +17,7 @@
     connection.on('dataReceived', (data) => {
         var spreadsheetObj = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
         var model = JSON.parse(data);
-        spreadsheetObj.updateAction({ action: model.action, eventArgs: model.eventArgs });
+        spreadsheetObj.updateAction(model);
     });
 
     connection.start().then(() => {
