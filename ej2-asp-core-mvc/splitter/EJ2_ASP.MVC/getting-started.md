@@ -119,9 +119,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Load content to the pane
 
-You can load the pane contents in either HTML element or string types using [`Content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Splitter.html#Syncfusion_EJ2_Layouts_Splitter_PaneSettings) property.
-
-For detailed information, refer to the `Pane Content` section.
+You can load the pane contents in either HTML element or string types using [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.SplitterPane.html#Syncfusion_EJ2_Layouts_SplitterPane_Content) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -147,7 +145,7 @@ For detailed information, refer to the `Pane Content` section.
 
 ## Configure pane size
 
-You can specify the size to each pane using [`Size`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Splitter.html#Syncfusion_EJ2_Layouts_Splitter_PaneSettings) property. It accepts pane values in percentage and pixel types.
+You can specify the size to each pane using [Size](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.SplitterPane.html#Syncfusion_EJ2_Layouts_SplitterPane_Size) property. It accepts pane values in percentage and pixel types.
 
 In case of pane size is not declared, panes will equally share the sizes automatically.
 
@@ -178,7 +176,7 @@ In case of pane size is not declared, panes will equally share the sizes automat
 
 ## Resizable panes
 
-Splitter allows you to change the pane dimensions by resizing the panes. By default, all the panes are resizable. You can disable the resize by using [`Resizable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Splitter.html#Syncfusion_EJ2_Layouts_Splitter_PaneSettings) property in each pane settings.
+Splitter allows you to change the pane dimensions by resizing the panes. By default, all the panes are resizable. You can disable the resize by using [Resizable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.SplitterPane.html#Syncfusion_EJ2_Layouts_SplitterPane_Resizable) property in each pane settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -230,7 +228,7 @@ Splitter allows you to set the minimum and maximum sizes for each pane. Resize w
 
 ## Orientation
 
-Splitter supports both `Horizontal` and `Vertical` orientation for the panes. By default, it will be rendered in `Horizontal` orientation. You can change it by using [`Orientation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.Orientation.html) property.
+Splitter supports both `Horizontal` and `Vertical` orientation for the panes. By default, it will be rendered in `Horizontal` orientation. You can change it by using [Orientation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.Splitter.html#Syncfusion_EJ2_Layouts_Splitter_Orientation) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

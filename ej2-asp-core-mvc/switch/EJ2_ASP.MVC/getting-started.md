@@ -145,6 +145,8 @@ This section explains how to set [onLabel](https://help.syncfusion.com/cr/aspnet
 
 > Switch does not have text support for material themes, and does not support long custom text.
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Switch/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [How to customize the switch appearance](./how-to/customize-the-appearance-of-a-switch)

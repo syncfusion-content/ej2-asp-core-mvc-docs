@@ -117,11 +117,11 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Spreadsheet Control](images/spreadsheet.PNG)
 
-> You can refer to our [ASP.NET MVC Spreadsheet](https://www.syncfusion.com/aspnet-mvc-ui-controls/spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Spreadsheet example](https://ej2.syncfusion.com/aspnetmvc/Spreadsheet/DefaultFunctionalities#/material) that shows you how present and manipulate data, including editing, formulas, formatting, importing, and exporting.
-
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Spreadsheet/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
 * [Data Binding](./data-binding)
 * [Open and Save](./open-save)
+
+> You can refer to our [ASP.NET MVC Spreadsheet](https://www.syncfusion.com/aspnet-mvc-ui-controls/spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Spreadsheet example](https://ej2.syncfusion.com/aspnetmvc/Spreadsheet/DefaultFunctionalities#/material) that shows you how present and manipulate data, including editing, formulas, formatting, importing, and exporting.
