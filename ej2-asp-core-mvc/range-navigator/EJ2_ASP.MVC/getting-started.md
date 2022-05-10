@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Range Navigator Control | Syncfusion
+title: Getting Started with ##Platform_Name## Range Navigator | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Range Navigator control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -107,7 +107,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Populate range navigator with data
 
-Now, we are going to provide data to the range navigator. Add a series object to the range navigator by using series property. Now map the field names x and y in the JSON data to the `xName` and `yName`properties of the `series`, then set the JSON data to dataSource property. Since the JSON contains Datetime data, set the `valueType` as `DateTime`. By default, the axis valueType is Numeric.
+Now, we are going to provide data to the range navigator. Add a series object to the range navigator by using series property. Now map the field names x and y in the JSON data to the [xName](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.RangeNavigator.html#Syncfusion_EJ2_Charts_RangeNavigator_XName) and [yName](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.RangeNavigator.html#Syncfusion_EJ2_Charts_RangeNavigator_YName) properties of the [series](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.RangeNavigator.html#Syncfusion_EJ2_Charts_RangeNavigator_Series), then set the JSON data to dataSource property. Since the JSON contains Datetime data, set the [valueType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.RangeNavigator.html#Syncfusion_EJ2_Charts_RangeNavigator_ValueType) as `DateTime`. By default, the axis valueType is Numeric.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -117,7 +117,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Populating appointments
 
-To populate an empty Scheduler with appointments, bind the event data to it by assigning the `DataSource` property under `EventSettings` property.
+To populate an empty Scheduler with appointments, bind the event data to it by assigning the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleResource.html#Syncfusion_EJ2_Schedule_ScheduleResource_DataSource) property under [EventSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -174,7 +174,7 @@ public class AppointmentData
 
 ## Setting date
 
-Scheduler usually displays the system date as its current date. To change the current date of scheduler with specific date, define the `selectedDate` property.
+Scheduler usually displays the system date as its current date. To change the current date of scheduler with specific date, define the [SelectedDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_SelectedDate) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -231,7 +231,7 @@ public class AppointmentData
 
 ## Setting view
 
-Scheduler displays `week` view by default. To change the current view, define the applicable view name to the `currentView` property. The applicable view names are,
+Scheduler displays `week` view by default. To change the current view, define the applicable view name to the [CurrentView](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CurrentView) property. The applicable view names are,
 
 * Day
 * Week
@@ -281,8 +281,7 @@ public ActionResult Index()
 
 ## Individual view customization
 
-Each individual scheduler views can be customized with its own options such as setting different start and end hour on Week and Work Week views, whereas hiding the weekend days on Month view alone.
-This can be achieved by defining views property to accept the array of object type, where each object depicts the individual view customization.
+Each individual scheduler views can be customized with its own options such as setting different start and end hour on Week and Work Week views, whereas hiding the weekend days on Month view alone. This can be achieved by defining views property to accept the array of object type, where each object depicts the individual view customization.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -316,5 +315,7 @@ public ActionResult Index()
 {% endif %}
 
 ![ASP.NET MVC Scheduler with Custom Views](images/schedule-with-custom-views.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Schedule/ASP.NET%20MVC%20Razor%20Examples).
 
 > You can also explore our [ASP.NET MVC Scheduler example](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) that shows how to use the toolbar buttons to play with Scheduler functionalities.

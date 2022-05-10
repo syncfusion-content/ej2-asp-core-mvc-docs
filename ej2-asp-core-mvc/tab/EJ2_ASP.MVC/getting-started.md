@@ -199,7 +199,7 @@ You need to follow the below structure of HTML elements to render the Tab,
 {% endtabs %}
 {% endif %}
 
-
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Tabs/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
