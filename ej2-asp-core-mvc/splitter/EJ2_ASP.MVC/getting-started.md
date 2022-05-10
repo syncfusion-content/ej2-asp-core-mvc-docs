@@ -113,7 +113,7 @@ Now, add the Syncfusion ASP.NET MVC Splitter control in `~/Views/Home/Index.csht
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5<kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Splitter control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Splitter control will be rendered in the default web browser.
 
 ![ASP.NET MVC Splitter Control](images/default.png)
 
@@ -281,6 +281,8 @@ Also you can render the nested splitter using direct child of the splitter pane.
 {% endif %}
 
 ![Nested ASP.NET MVC Splitter Control](images/nested-splitter.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Splitter/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
