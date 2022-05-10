@@ -1,0 +1,11 @@
+@(Html.EJS().AccumulationChart("container")
+    .LegendSettings(ls => ls.Visible(false)).EnableSmartLabels(true).
+	Series(series =>
+	{
+		series.DataLabel(dl => dl.Visible(true).Name("text").Template("<div id='dataLabelTemplate'>${point.percentage}%</div>"))
+			.XName("xValue")
+			.YName("yValue")
+			.Name("Browser")
+			.Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+			.DataSource(ViewBag.dataSource).Add();
+	}).Render())
