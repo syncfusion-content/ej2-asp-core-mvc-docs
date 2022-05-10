@@ -81,9 +81,9 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 
 ![asp.net core vscode adding syncfusion package in the project](images/dotnetnew.png)
 
-> Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package), to learn more details about `dotnet add` command line.
+> Refer to [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package), to learn more details about `dotnet add` command.
 
-2.Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
+2.Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` package.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_ViewImports.cshtml" %}
@@ -93,7 +93,7 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 {% endhighlight %}
 {% endtabs %}
 
-3.Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+3.Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -107,7 +107,7 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 {% endhighlight %}
 {% endtabs %}
 
-4.In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+4.In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -121,7 +121,7 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 {% endhighlight %}
 {% endtabs %}
 
-4.Add the Syncfusion Script Manager at the end of `<body>` element in the `~/Views/Shared/_Layout.cshtml` layout page.
+4.Add the Syncfusion Script Manager at the end of `<body>` element in the `~/Pages/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -135,9 +135,9 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 {% endhighlight %}
 {% endtabs %}
 
-5.Add the Syncfusion ASP.NET Core control in any web page (`cshtml`) in the `Views` folder.
+5.Add the Syncfusion ASP.NET Core control in any web page (`cshtml`) in the `Pages` folder.
 
-For example, the calendar component is added to the `~/Views/Home/Index.cshtml` page.
+For example, the calendar component is added to the `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
