@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Common control
+title: Animation in Syncfusion ##Platform_Name## controls
 description: Learn here all about Animation in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common
@@ -68,4 +68,4 @@ The `animate` method of `Animation` library can be used to animate the HTML elem
 
 ![animate the HTML element](images/animation.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Animation)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-animation)

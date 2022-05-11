@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in ##Platform_Name## Common control
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Common control and more.
+description: Checkout the documentation and learn about localization in Syncfusion ##Platform_Name## Common control and more.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -30,7 +30,7 @@ npm i @syncfusion/ej2-locale
 {% endhighlight %}
 {% endtabs %}
 
-Once the `ej2-locale` package has installed, create a folder `locale` inside the `wwwroot` folder. Then copy the specific culture files from `node_modules\@syncfusion\ej2-locale\src` location and paste it inside the `wwwroot` folder like below. The culture file contains all Syncfusion ASP.NET Core controls locale text.
+Once the `ej2-locale` package has installed, create a folder `locale` inside the `wwwroot` folder. Then copy the specific culture files from `node_modules\@syncfusion\ej2-locale\src` location and paste it inside the `wwwroot/locale` folder like below. The culture file contains all Syncfusion ASP.NET Core controls locale text.
 
 ![Moved locale data to ASP.NET Core app](images/moved-locale-data.png)
 
@@ -80,8 +80,7 @@ Now, you can add the Syncfusion ASP.NET Core control in `~/Pages/Index.cshtml` p
 
 ![Static culture](images/grid-locale.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Localization/Localization-with-static-culture)
-
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-localization/tree/main/Localization-with-static-culture)
 
 ## Dynamically set the culture
 
@@ -147,8 +146,7 @@ public class CultureDetails
 
 ![Change culture dynamically](images/dynamic-culture-switch.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Localization/Localization-with-dynamic-culture)
-
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-localization/tree/main/Localization-with-dynamic-culture)
 
 ## Changing current locale
 
