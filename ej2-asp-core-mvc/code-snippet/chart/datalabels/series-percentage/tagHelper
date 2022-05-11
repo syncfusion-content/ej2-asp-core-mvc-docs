@@ -1,0 +1,61 @@
+<div class="control-section">
+    <div id="container" align='center'>
+        <ejs-chart id="lineContainer" textRender="onTextRender" seriesRender="onSeriesRender" title="Olympic Medal Counts - RIO">
+            <e-chart-tooltipsettings enable="true">
+            </e-chart-tooltipsettings>
+            <e-chart-primaryxaxis valueType="Category" interval=1>
+                <e-majorgridlines width="0"></e-majorgridlines>
+            </e-chart-primaryxaxis>
+            <e-chart-primaryyaxis>
+                <e-majorgridlines width="0"></e-majorgridlines>
+                <e-majorticklines width="0"></e-majorticklines>
+                <e-linestyle width="0"></e-linestyle>
+                <e-labelstyle color="transparent"></e-labelstyle>
+            </e-chart-primaryyaxis>
+            <e-chart-chartarea>
+                <e-chartarea-border width="0"></e-chartarea-border>
+            </e-chart-chartarea>
+            <e-series-collection>
+                <e-series dataSource="ViewBag.dataSource1" xName='x' yName='y' name='Gold' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+                    <e-series-marker>
+                        <e-series-datalabel visible="true" position="Top">
+                            <e-font color="#ffffff" fontWeight="600"></e-font>
+                        </e-series-datalabel>
+                    </e-series-marker>
+                </e-series>
+                <e-series dataSource="ViewBag.dataSource2" xName='x' yName='y' name='Silver' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+                    <e-series-marker>
+                        <e-series-datalabel visible="true" position="Top">
+                            <e-font fontWeight="600" color="#ffffff"></e-font>
+                        </e-series-datalabel>
+                    </e-series-marker>
+                </e-series>
+                <e-series dataSource="ViewBag.dataSource3" xName='x' yName='y' name='Bronze' width=2 type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+                    <e-series-marker>
+                        <e-series-datalabel visible="true" position="Top">
+                            <e-font fontWeight="600" color="#ffffff"></e-font>
+                        </e-series-datalabel>
+                    </e-series-marker>
+                </e-series>
+            </e-series-collection>
+        </ejs-chart>
+    </div>
+</div>
+
+
+<script>
+    var total = [];
+
+    function onSeriesRender(args) {
+        for (var i = 0; i < args.data.length; i++) {
+            if (!total[args.data[i].x]) total[args.data[i].x] = 0;
+            total[args.data[i].x] = total[args.data[i].x] + parseInt(args.data[i].y);
+        }
+    }
+    function onTextRender(args) {
+        var percentage = (parseInt(args.text) / total[args.point.x]) * 100;
+        percentage = percentage % 1 === 0 ? percentage : percentage.toFixed(2);
+        args.text = percentage + "%";
+    }
+
+</script>

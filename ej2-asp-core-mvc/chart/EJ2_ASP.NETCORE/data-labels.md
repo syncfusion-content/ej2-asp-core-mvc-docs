@@ -214,3 +214,14 @@ You can also customize the specific marker and label using [`pointRender`](http
 {% endtabs %}
 {% endif %}
 
+## Show percentage based on each series points
+
+You can calculate the percentage value based on the sum for each series using the `seriesRender` and `textRender` events in the chart. In `seriesRender` calculate the sum of each series y values and In `textRender` calculate percentage value based on the sum value and modify the text.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/datalabels/series-percentage/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Series-percentage.cs" %}
+{% include code-snippet/chart/datalabels/series-percentage/series-percentage.cs %}
+{% endhighlight %}
