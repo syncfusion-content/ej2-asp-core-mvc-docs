@@ -23,7 +23,7 @@ The following dependent script is required to use the collaborative editing supp
 
 ## Client configuration
 
-To broadcast the data for every action is spreadsheet, you need to transfer the data to the server through `send` method in `actionComplete` event and receive the same data by using the `dataReceived` method. In the `dataReceived` method, you need to update the action to the connected clients through `updateAction` method.
+To broadcast the data for every action in the spreadsheet, you need to transfer the data to the server through `send` method in `actionComplete` event and receive the same data by using the `dataReceived` method. In the `dataReceived` method, you need to update the action to the connected clients through `updateAction` method.
 
 The following code example shows `Collaborative Editing` support in the Spreadsheet control.
 
@@ -81,7 +81,7 @@ namespace WebApplication.Hubs
     {
         public async Task BroadcastData(string data)
         {
-            await Clients.All.SendAsync("dataReceived", data);
+            await Clients.Others.SendAsync("dataReceived", data);
         }
     }
 }
@@ -90,7 +90,10 @@ namespace WebApplication.Hubs
 To configure the SignalR middleware by registering the following service in the `ConfigureServices` method of the `Startup` class.
 
 ```c#
-    services.AddSignalR();
+    services.AddSignalR(e =>
+    {
+        e.MaximumReceiveMessageSize = int.MaxValue; // Option to increase message size for inserting image feature. By default, SignalR send messages up to 32 KB.
+    });
 ```
 
 To set up the SignalR routes by calling MapHub in the `Configure` method of the `Startup` class.
@@ -102,12 +105,12 @@ To set up the SignalR routes by calling MapHub in the `Configure` method of the 
 
         endpoints.MapRazorPages();
 
-        endpoints.MapHub<SpreadsheetHub>("/spreadsheetHub");
+        endpoints.MapHub<SpreadsheetHub>("/hubs/spreadsheethub");
 
     });
 ```
 
-For hosting the service, you may use the above code snippet or download and run the [local service](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1377017438).
+For hosting the service, you may use the above code snippet or download and run the [local service](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1327152095).
 
 ## Prevent the particular action update for collaborative client
 

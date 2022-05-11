@@ -1,4 +1,6 @@
-@Html.EJS().RichTextEditor("image").ToolbarSettings(e => e.Items((object)ViewBag.tools)).ContentTemplate(@<div>
+@model List<string>
+
+@Html.EJS().RichTextEditor("image").ToolbarSettings(e => e.Items((object)Model)).ContentTemplate(@<div>
     <p>
         The Rich Text Editor control is WYSIWYG ('what you see is what you get') editor that provides the best user experience to create and update the content.
         Users can format their content using standard toolbar commands.

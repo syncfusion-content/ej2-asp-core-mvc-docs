@@ -115,11 +115,11 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Progress Button Control](images/progressbutton-control.png)
 
-> Progress Button supports different styles, types and sizes like [`Button`](https://ej2.syncfusion.com/aspnetmvc/documentation/button/). In addition, it also support `top` and `bottom` position of the icon.
+> Progress Button supports different styles, types and sizes like [Button](https://ej2.syncfusion.com/aspnetmvc/documentation/button/). In addition, it also support `top` and `bottom` position of the icon.
 
 ## Enabling progress in button
 
-You can enable the background filler UI by setting the [`enableProgress`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_EnableProgress) property to `true`.
+You can enable the background filler UI by setting the [enableProgress](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_EnableProgress) property to `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -142,6 +142,8 @@ You can enable the background filler UI by setting the [`enableProgress`](https:
 {% endif %}
 
 ![Displaying Progress in ASP.NET MVC Progress Button](images/progress.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ProgressButton/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 

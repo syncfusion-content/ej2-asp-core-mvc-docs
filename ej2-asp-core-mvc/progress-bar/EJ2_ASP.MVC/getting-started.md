@@ -126,3 +126,5 @@ You can change the type of progress bar by using `Type` property. By default `Li
 {% endif %}
 
 ![ASP.NET MVC Progress Bar Control](images/progressbar-control.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ProgressBar/ASP.NET%20MVC%20Razor%20Examples).

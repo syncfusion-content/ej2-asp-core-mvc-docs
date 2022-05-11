@@ -172,13 +172,11 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Menu Control](images/menu.png)
 
-> This example demonstrates the basic rendering of Menu with items support. For more information about data source support, refer to the [`Data Source Binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
+> This example demonstrates the basic rendering of Menu with items support. For more information about data source support, refer to the [Data Source Binding](./data-source-binding-and-custom-menu-items#data-binding) section.
 
 ## Group menu items with separator
 
-The separators are both horizontal and vertical lines used to separate the menu items.
-You cannot select the separators, but you can enable separators to group the menu items using the `separator` property.
-The `Open` and `Save` sub menu items are grouped using the `separator` property in the following sample.
+The separators are both horizontal and vertical lines used to separate the menu items. You cannot select the separators, but you can enable separators to group the menu items using the `separator` property. The `Open` and `Save` sub menu items are grouped using the `separator` property in the following sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -259,6 +257,8 @@ public ActionResult Index()
 ![ASP.NET MVC Menu with Separator](images/menu-with-separator.png)
 
 > The `separator` property should not be given along with the other fields in the `MenuItem`. You can also enable the separator to group **horizontal** menu items.
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Menu/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
