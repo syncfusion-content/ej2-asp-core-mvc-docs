@@ -9,7 +9,7 @@ namespace WebApplication1.Controllers
 {
     public class AutoCompleteController : Controller
     {
-        public IActionResult arrayofstring()
+        public IActionResult Index()
         {
             ViewBag.data = new string[] { "BadmHennessey Venominton", "Bugatti Chiron", "Bugatti Veyron Super Sport", "SSC Ultimate Aero", "Koenigsegg CCR", "McLaren F1", "Aston Martin One- 77", "Jaguar XJ220" };
             return View();
