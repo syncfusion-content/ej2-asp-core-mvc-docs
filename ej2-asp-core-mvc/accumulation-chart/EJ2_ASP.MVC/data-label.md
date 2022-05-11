@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Label in ##Platform_Name## Accumulation Chart Component
+title: Data Label in Syncfusion ##Platform_Name## Accumulation Chart
 description: Learn here all about Data Label in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Label
@@ -9,22 +9,9 @@ documentation: ug
 ---
 
 
-# Data Label
+# Data Label in ##Platform_Name## Accumulation Chart Component
 
 Data label can be added to a chart series by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Visible) option in the dataLabel property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/default/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/default/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -34,26 +21,10 @@ Data label can be added to a chart series by enabling the [`Visible`](https://he
 {% include code-snippet/chart/accumulation-charts/datalabel/default/default.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Positioning
 
 Accumulation chart provides support for placing the data label either `Inside` or `Outside` the chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/position/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Position.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/position/position.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -63,26 +34,10 @@ Accumulation chart provides support for placing the data label either `Inside` o
 {% include code-snippet/chart/accumulation-charts/datalabel/position/position.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-## Smart Labels
+## Smart labels
 
 Datalabels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`EnableSmartLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_EnableSmartLabels) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/smartlabels/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Smartlabels.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/smartlabels/smartlabels.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -92,26 +47,10 @@ Datalabels will be arranged smartly without overlapping with each other. You can
 {% include code-snippet/chart/accumulation-charts/datalabel/smartlabels/smartlabels.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Data Label Template
 
 Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Template) property, you can set data label template in chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Template.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/template/template.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -121,26 +60,10 @@ Label content can be formatted by using the template option. Inside the template
 {% include code-snippet/chart/accumulation-charts/datalabel/template/template.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Connector Line
 
 Connector line will be visible when the data label is placed `Outside` the chart. The connector line can be customized using the `Type`, `Color`, `Width`, `Length` and `DashArray` properties.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/connector/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Connector.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/connector/connector.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -150,26 +73,10 @@ Connector line will be visible when the data label is placed `Outside` the chart
 {% include code-snippet/chart/accumulation-charts/datalabel/connector/connector.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Text Mapping
 
 Text from the data source can be mapped to data label using `Name` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/map/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Map.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/map/map.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -179,26 +86,10 @@ Text from the data source can be mapped to data label using `Name` property.
 {% include code-snippet/chart/accumulation-charts/datalabel/map/map.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Customization
 
 Individual text can be customized using the `TextRender` event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/custom/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/custom/custom.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -208,5 +99,36 @@ Individual text can be customized using the `TextRender` event.
 {% include code-snippet/chart/accumulation-charts/datalabel/custom/custom.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
+
+## Show percentages in data labels of pie chart
+
+You can show the percentages in data labels of pie chart using `textRender` event and `template` option.
+
+### Using textRender event
+
+You can customize the data label of pie chart using [TextRender](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_TextRender) event as follows to show percentage.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/percentage/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Percentage.cs" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/percentage/percentage.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Using template
+
+You can display the percentage values in data label of pie chart using `template` option.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/template-percentage/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-percentage.cs" %}
+{% include code-snippet/chart/accumulation-charts/datalabel/template-percentage/template-percentage.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Show percentage in ASP.NET Core Accumulationchart control](../images/show-percentage-in-pie-chart.png)
 

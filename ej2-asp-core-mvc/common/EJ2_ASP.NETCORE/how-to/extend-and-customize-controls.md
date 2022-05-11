@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Extend and Customize ASP.NET Core Controls | Syncfusion
-description: Checkout and learn about Extend and Customize ##Platform_Name## Controls.
+description: Checkout the documentation and learn about Extend and Customize Syncfusion ##Platform_Name## Controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -104,7 +104,7 @@ namespace ASPCore.Pages
 
 ![Output of extending Syncfusion control](images/extend-sync-component.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ExtendControl)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-extend-control)
 
 ## Use Syncfusion ASP.NET Core Control within Another view component
 
@@ -209,7 +209,7 @@ namespace ASPCORE.Pages
 
 ![Render Syncfusion ASP.NET Core control inside another view component](images/todolist.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ViewComponent)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-view-component)
 
 ## See also
 

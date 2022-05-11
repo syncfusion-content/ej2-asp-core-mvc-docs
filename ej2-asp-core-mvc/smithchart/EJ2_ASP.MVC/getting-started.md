@@ -104,3 +104,5 @@ Now, add the Syncfusion ASP.NET MVC SmithChart control in `~/Views/Home/Index.cs
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC SmithChart control will be rendered in the default web browser.
 
 ![ASP.NET MVC SmithChart Control](images/smithchart-control.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/SmithChart/ASP.NET%20MVC%20Razor%20Examples).

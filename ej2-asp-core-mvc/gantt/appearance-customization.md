@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance Customization in ##Platform_Name## Gantt Component
+title: Appearance Customization in Syncfusion ##Platform_Name## Gantt
 description: Learn here all about Appearance Customization in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appearance Customization
@@ -107,6 +107,35 @@ You can design your own taskbars to view the tasks in Gantt by using [`TaskbarTe
 
 
 ![Alt text](images/taskbarTemplate1.png)
+
+### Change gripper icon in taskbar
+
+You can change the gripper icon in the taskbar by applying styles to their respective class elements.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/change-gripper-icon/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="data.cs" %}
+{% include code-snippet/gantt/change-gripper-icon/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/change-gripper-icon/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="data.cs" %}
+{% include code-snippet/gantt/change-gripper-icon/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Change Gripper Icon in Taskbar](images/change-gripper-icon.png)
 
 ## Task labels
 

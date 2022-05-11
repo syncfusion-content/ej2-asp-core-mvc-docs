@@ -89,24 +89,24 @@ You can add the theme for the ASP.NET Core applications through **npm packages**
 ![Themes-npm-package-extension](images/themes-npm-package-extension.png)
  
 ![Themes-npm-package-web-compiler](images/themes-npm-package-web-compiler.png)
- 
-* Install the Syncfusion `node_modules` in this application using this command.
+
+* Open Command Prompt from the application root directory and run the following command to install the Syncfusion `node_modules` in this application.
 
 {% tabs %}
-{% highlight c# tabtitle=".NET CLI" %}
+{% highlight c# tabtitle="CMD" %}
 
 npm install @syncfusion/ej2
 
 {% endhighlight %}
 {% endtabs %}
 
-* Create a `SCSS` file as `~/wwwroot/styles/custom.scss` and provide the variables to override as shown below.
+* Create a `custom.scss` file inside `~/wwwroot/css` location and provide the variables to override as shown below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/custom.scss" %}
 
   $primary: blue !default;
-  @import 'ej2/fabric.scss';
+@import 'ej2/fabric.scss';
 
 {% endhighlight %}
 {% endtabs %}
@@ -149,6 +149,8 @@ npm install @syncfusion/ej2
 {% endtabs %}
 
 * Run the application and see the fabric themes from installed npm packages were applied.
+
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-css-customization-using-webcompiler-)
 
 ## LibMan
 
@@ -225,6 +227,8 @@ For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `ww
 
 8.Run the application and see the bootstrap5 themes downloaded from LibMan were applied.
 
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-libman)
+
 ## Change theme dynamically
 
 In the ASP.NET Core application, the application theme can be changed dynamically by changing its style sheet reference in code.
@@ -293,4 +297,4 @@ public class ThemeDetails
 
 ![Change theme dynamically](images/dynamic-theme-switching.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ThemeSwitch)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-theme-switcher)
