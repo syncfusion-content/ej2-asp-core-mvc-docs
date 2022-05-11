@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Chart Component
+title: Legend and Customization in ##Platform_Name## Chart Component
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Legend
+# Legend and in ##Platform_Name## Chart Component
 
 Legend provides information about the series rendered in the chart.
 
@@ -302,6 +302,21 @@ When the legend text exceed the container, the text can be wrapped by using the 
 {% endtabs %}
 {% endif %}
 
+### Set the label color based on series color
+
+You can set the legend label color based on series color by using chart's [Loaded](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Loaded) event.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/legend-label/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="legend-label.cs" %}
+{% include code-snippet/chart/axis/legend/legend-label/legend-label.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Chart Label Color](../images/legend-label.png)
+
 ## Series Selection on Legend
 
 By default, legend click enables you to collapse the series visibility.  On other hand, if you need to select a series through legend click, disable the [`ToggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility).
@@ -444,4 +459,3 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
