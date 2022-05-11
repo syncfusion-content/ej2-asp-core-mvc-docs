@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Labels
+# Data Labels in ##Platform_Name## Chart
 
 Data label can be added to a chart series by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) option in the dataLabel. By default, the labels will arrange smartly without overlapping.
 
