@@ -1,0 +1,21 @@
+<ejs-chart id="charts" title="Olympic Medals" loaded="onChartLoaded">
+        <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" name="Gold" xName="country" width="2" opacity="1" yName="gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+            <e-series dataSource="ViewBag.dataSource" name="Silver" xName="country" width="2" opacity="1" yName="silver" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+            <e-series dataSource="ViewBag.dataSource" name="bronze" xName="country" width="2" opacity="1" yName="bronze" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"></e-series>
+        </e-series-collection>
+    </ejs-chart>
+
+<script type="text/javascript">
+    var colors = ['#00BDAE', '#404041', '#357CD2'];
+
+    function onChartLoaded(args) {
+        let chart = document.querySelector('.e-chart');
+        let legendTextCol = chart.querySelectorAll('[id*="chart_legend_text_"]');
+        for (let i = 0; i < legendTextCol.length; i++) {
+            //set the color to legend label
+            legendTextCol[i].setAttribute('fill', colors[i]);
+        }
+    }
+</script>

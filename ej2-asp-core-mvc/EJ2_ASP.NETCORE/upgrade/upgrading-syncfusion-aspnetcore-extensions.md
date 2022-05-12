@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion ASP.NET Core Extensions (Essential JS2)
+# Upgrading Syncfusion ASP.NET Core Extensions
 
 Syncfusion publishes the Visual Studio extension in the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreExtensions) for every Syncfusion Volume releases, with exciting new features and Service Pack release with major bug fixes in the volume releases.
 

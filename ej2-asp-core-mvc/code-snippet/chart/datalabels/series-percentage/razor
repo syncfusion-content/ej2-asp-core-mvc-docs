@@ -1,0 +1,39 @@
+<div class="control-section">
+    <div style="text-align:center">
+        @Html.EJS().Chart("container").TextRender("onTextRender").SeriesRender("onSeriesRender").Series(series =>
+   {
+
+       series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+       .Marker(mr => mr.DataLabel(dl => dl.Visible(true).Font(ff => ff.FontWeight("600").Color("#ffffff")).Position(Syncfusion.EJ2.Charts.LabelPosition.Top))).XName("x")
+       .YName("yValue").DataSource(ViewBag.dataSource1).Name("Gold").Width(2).Add();
+       series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+        .Marker(mr => mr.DataLabel(dl => dl.Visible(true).Font(ff => ff.FontWeight("600").Color("#ffffff")).Position(Syncfusion.EJ2.Charts.LabelPosition.Top))).XName("x").YName("yValue1").DataSource(ViewBag.dataSource2)
+       .Name("Silver").Width(2).Add();
+       series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+        .Marker(mr => mr.DataLabel(dl => dl.Visible(true).Font(ff => ff.FontWeight("600").Color("#ffffff")).Position(Syncfusion.EJ2.Charts.LabelPosition.Top))).XName("x")
+        .YName("yValue2").DataSource(ViewBag.dataSource3).Name("Brozen").Width(2).Add();
+
+   }).PrimaryYAxis(px => px.LabelStyle(ls => ls.Color("transparent")).LineStyle(ls => ls.Width(0)).MajorTickLines(mg => mg.Width(0))
+   .MajorGridLines(mg => mg.Width(0))
+   ).PrimaryXAxis(px => px.Interval(1)
+   .ValueType(Syncfusion.EJ2.Charts.ValueType.Category).MajorGridLines(mg => mg.Width(0))
+   ).Tooltip(tt => tt.Enable(true)).ChartArea(area => area.Border(br => br.Color("transparent"))
+   ).LegendSettings(lg => lg.Visible(false)).Title("Olympic Medal Counts - RIO").Render()
+    </div>
+</div>
+<script>
+    var total = [];
+
+    function onSeriesRender(args) {
+        for (var i = 0; i < args.data.length; i++) {
+            if (!total[args.data[i].x]) total[args.data[i].x] = 0;
+            total[args.data[i].x] = total[args.data[i].x] + parseInt(args.data[i].y);
+        }
+    }
+    function onTextRender(args) {
+        var percentage = (parseInt(args.text) / total[args.point.x]) * 100;
+        percentage = percentage % 1 === 0 ? percentage : percentage.toFixed(2);
+        args.text = percentage + "%";
+    }
+
+</script>
