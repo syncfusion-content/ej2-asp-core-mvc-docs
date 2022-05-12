@@ -225,3 +225,4 @@ You can calculate the percentage value based on the sum for each series using th
 {% highlight c# tabtitle="Series-percentage.cs" %}
 {% include code-snippet/chart/datalabels/series-percentage/series-percentage.cs %}
 {% endhighlight %}
+{% endtabs %}
