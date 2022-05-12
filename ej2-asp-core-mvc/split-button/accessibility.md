@@ -41,6 +41,10 @@ Closes the opened popup.</td></tr>
 Opens the popup, or activates the highlighted item and closes the popup.</td></tr>
 <tr>
 <td>
+<kbd>Space</kbd></td><td>
+Opens the popup.</td></tr>
+<tr>
+<td>
 <kbd>Up</kbd></td><td>
 Navigates up or to the previous action item.</td></tr>
 <tr>
