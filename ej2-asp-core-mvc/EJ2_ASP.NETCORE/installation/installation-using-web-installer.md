@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation Using Web Installer in ##Platform_Name## Component
-description: Learn here all about installation using web installer in Syncfusion ##Platform_Name## component of syncfusion and more.
+title: Installation Using Syncfusion Web Installer in ##Platform_Name## Component
+description: Learn here all about Installation Using Web Installer in Syncfusion ##Platform_Name## component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Installation Using Web Installer
 publishingplatform: ##Platform_Name##
@@ -10,10 +10,7 @@ documentation: ug
 
 # Installation using web Installer
 
-You can refer to the [Download](https://ej2.syncfusion.com/aspnetcore/documentation/installation/download/) section to learn how to get the ASP.NET Core - EJ2 installer.
-
-I> Starting with 2022 Volume 1 v20.1.0.47, all Syncfusion customers (evaluators and paid customers) who use Syncfusion installers or nuget packages from [nuget.org](https://www.nuget.org/packages?q=Syncfusion) must generate and register the corresponding platform and version license key in your projects.<br>
-For more information, please see [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/overview) help topic
+You can refer to the [Download](https://ej2.syncfusion.com/aspnetcore/documentation/installation/download/) section to learn how to get the ASP.NET Core - EJ2 trial or licensed installer.
 
 ## Overview
 
@@ -21,9 +18,9 @@ For the Essential Studio ASP.NET Core - EJ2 product, Syncfusion offers a Web Ins
 
 ## Installation
 
-The steps below shows how to install Essential Studio ASP.NET Core - EJ2 Web Installer.
+The steps below show how to install Essential Studio ASP.NET Core - EJ2 Web Installer.
 
-1. Open the Syncfusion Essential Studio ASP.NET Core - EJ2 Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+1. Open the Syncfusion Essential Studio ASP.NET Core - EJ2 Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically open and extracts the package.
 
     ![Web Installer Setup](images\Webinstaller-Installation-1.png)
 
@@ -45,7 +42,7 @@ The steps below shows how to install Essential Studio ASP.NET Core - EJ2 Web Ins
 
     ![Web Installer Installed Tab](images\Webinstaller-Installation-4.png)
 
-    >**IMPORTANT** <br /> If the required software for the selected product isn't already installed, the **Additional Software Required** alert will appear. You can, however, continue the installation and install the necessary software later.
+    >**IMPORTANT** <br /> If the required software for the selected product isn't already installed, the **Additional Software Required** alert will be appear. You can, however, continue the installation and install the necessary software later.
 
     ***Required Software***
 
@@ -65,7 +62,7 @@ The steps below shows how to install Essential Studio ASP.NET Core - EJ2 Web Ins
 
     ![Web Installer Product install/uninstall list](images\Webinstaller-Installation-8.png)
 
-    >**NOTE** <br /> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation.
+    >**NOTE** <br /> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 
 7. The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
@@ -75,7 +72,7 @@ The steps below shows how to install Essential Studio ASP.NET Core - EJ2 Web Ins
 
    * Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked, if you do not want to install Syncfusion samples.
 
-   * Select the **Configure Syncfusion Extensions controls in Visual Studio** checkbox to configure the Syncfusion Extensions in Visual Studio or clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
+   * Select the **Configure Syncfusion Extensions controls in Visual Studio** checkbox to configure the Syncfusion Extensions in Visual Studio  or clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
 
    * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel.
 
@@ -85,7 +82,9 @@ The steps below shows how to install Essential Studio ASP.NET Core - EJ2 Web Ins
 
 9. The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
 
-    ![Web Installer Login Wizard](images\Webinstaller-Installation-10.png)    
+    ![Web Installer Login Wizard](images\Webinstaller-Installation-10.png)
+
+    >**IMPORTANT** <br /> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
 
 10. The download and installation/uninstallation progress will be displayed as shown below.
 
@@ -129,7 +128,7 @@ You can uninstall all the installed products by selecting the **Syncfusion Essen
 
 ![Control Panel Uninstallation entries](images\Webinstaller-uninstallation-3.png)
 
->**NOTE** <br /> If the **Syncfusion Essential Studio for** ASP.NET Core **{version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio ASP.NET Core - EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
+>**NOTE** <br /> If the **Syncfusion Essential Studio for** ASP.NET Core  **{version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio ASP.NET Core - EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
 
 1. The Platform Selection Wizard will appear. From the **Installed** tab, select the products to be uninstalled. To select all the products, check the **Uninstall All** checkbox. Click the Next button.
 
@@ -143,7 +142,7 @@ You can uninstall all the installed products by selecting the **Syncfusion Essen
 
     ![Web Installer Uninstall Available Tab](images\Webinstaller-uninstallation-5.png)
 
-2. If any other products selected for installation, Uninstall previous version wizard will be displayed with the previous version(s) installed for the selected products. Here, you can view the list of installed previous versions for the selected products. Select **Uninstall All** checkbox to select all the versions. Click Next.
+2. If any other products selected for installation, Uninstall previous version wizard will be displayed with the previous version(s) installed for the selected products. Here you can view the list of installed previous versions for the selected products. Select **Uninstall All** checkbox to select all the versions. Click Next.
 
     ![Web Installer Uninstall Previous version Wizard](images\Webinstaller-uninstallation-6.png)
 
@@ -155,7 +154,7 @@ You can uninstall all the installed products by selecting the **Syncfusion Essen
 
     ![Web Installer Product Install/Uninstall Wizard](images\Webinstaller-uninstallation-8.png)
 
-    >**NOTE** <br /> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation.
+    >**NOTE** <br /> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 
 5. The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
@@ -167,13 +166,13 @@ You can uninstall all the installed products by selecting the **Syncfusion Essen
 
     ![Web Installer Login Wizard](images\Webinstaller-uninstallation-10.png)
 
-    >**IMPORTANT** <br /> The products you have chosen will be installed based on your syncfusion License (Trial or Licensed).
+    >**IMPORTANT** <br /> The products you have chosen will be installed based on your syncfusion License(Trial or Licensed).
 
 8. The download, installation and uninstallation progresses will be shown.
 
     ![Web Installer Uninstallation Wizard](images\Webinstaller-uninstallation-11.png)
 
-9. When the installation is finished, the **Summary** wizard will appear. Here, you can see the list of products that have been successfully and unsuccessfully installed/uninstalled. To close the Summary wizard, click Finish.
+9. When the installation is finished, the **Summary** wizard will appear. Here you can see the list of products that have been successfully and unsuccessfully installed/uninstalled. To close the Summary wizard, click Finish.
 
     ![Web Installer Uninstallation Summary](images\Webinstaller-uninstallation-12.png)
 

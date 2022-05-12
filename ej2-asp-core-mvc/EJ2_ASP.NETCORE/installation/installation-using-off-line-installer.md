@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation Using Off Line Installer in ##Platform_Name## Component
-description: Learn here all about installation using off line installer in Syncfusion ##Platform_Name## component of syncfusion and more.
+title: Installation Using Syncfusion Off Line Installer in ##Platform_Name## Component
+description: Learn here all about Installation Using Off Line Installer in Syncfusion ##Platform_Name## component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Installation Using Off Line Installer
 publishingplatform: ##Platform_Name##
@@ -10,14 +10,11 @@ documentation: ug
 
 # Installation using Offline Installer
 
-You can refer to the [Download](https://ej2.syncfusion.com/aspnetcore/documentation/installation/download/) section to learn how to get the ASP.NET Core - EJ2 installer.
-
-I> Starting with 2022 Volume 1 v20.1.0.47, all Syncfusion customers (evaluators and paid customers) who use Syncfusion installers or nuget packages from [nuget.org](https://www.nuget.org/packages?q=Syncfusion) must generate and register the corresponding platform and version license key in your projects.<br>
-For more information, please see [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/overview) help topic
+You can refer to the [Download](https://ej2.syncfusion.com/aspnetcore/documentation/installation/download/) section to learn how to get the ASP.NET Core - EJ2 trial or licensed installer.
 
 ## Installing with UI
 
-The steps below shows how to install the Essential Studio ASP.NET Core - EJ2 installer.
+The steps below show how to install the Essential Studio ASP.NET Core - EJ2 installer.
 
 1. Open the Syncfusion ASP.NET Core - EJ2 offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
