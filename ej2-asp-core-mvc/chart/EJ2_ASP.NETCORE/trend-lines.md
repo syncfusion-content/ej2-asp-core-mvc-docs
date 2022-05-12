@@ -292,7 +292,7 @@ The value set for the backwardForecast is used to determine the past trends.
 {% endif %}
 
 
-## Show or hide trendline
+## Show or hide
 
 You can show or hide the trendline by setting trendline `visible` property.
 
