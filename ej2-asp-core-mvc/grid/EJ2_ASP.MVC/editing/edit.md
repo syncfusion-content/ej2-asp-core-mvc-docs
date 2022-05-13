@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edit in ##Platform_Name## Grid Component
+title: Edit in ASP.NET MVC Grid Component
 description: Learn here all about Edit in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Edit
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Editing
+# Editing in ASP.NET MVC Grid Component
 
 The Grid component has options to dynamically insert, delete and update records. Editing feature requires a primary key column for CRUD operations. To define the primary key, set [`IsPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) to **true** in particular column.
 
