@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mac process for Syncfusion Essential Studio ASP.NET Core - EJ2
-description: this section provides the information about Essential Studio ASP.NET Core - EJ2 mac installer and steps for installation
+description: This section provides the information about Essential Studio ASP.NET Core - EJ2 mac installer and steps for installation
 platform: ej2-asp-core-mvc
 control: Installation and Deployment
 documentation: ug
@@ -33,7 +33,7 @@ documentation: ug
 
 ## Step-by-Step Installation
 
-The steps below show how to install the Essential Studio ASP.NET Core - EJ2 Mac installer. 
+The steps below shows how to install the Essential Studio ASP.NET Core - EJ2 Mac installer. 
 
 1. Double-click the Syncfusion Essential Studio ASP.NET Core - EJ2 Mac installer(.pkg) file. The installer Wizard opens. Click Continue.
 

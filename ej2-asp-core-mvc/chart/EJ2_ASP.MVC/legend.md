@@ -246,6 +246,7 @@ You can customize the size of the legend items by using the [`ShapeHeight`](http
 {% endif %}
 
 
+### Paging for Legend
 
 ### Paging for Legend
 
