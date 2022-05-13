@@ -43,7 +43,7 @@ If you have directly obtained Syncfusion assemblies from [NuGet.org](http://nuge
 * Go to the start trials [page](https://syncfusion.com/account/manage-trials/start-trials) and start a trial.
 * Finally proceed to the [Trial & Downloads section](https://www.syncfusion.com/account/manage-trials/downloads) to obtain the [license key](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-generation/).
 
-## Registering license key for Syncfusion ASP.NET Core and Essential Javascript ES5 Controls
+## Registering license key for Syncfusion JavaScript Components used in ASP.NET Core App
 
 If you are using [Syncfusion JavaScript Components](https://ej2.syncfusion.com/home/) in application, then you have to register license for ASP.NET Core in `Program.cs` and for JavaScript components register license in `_Layout.cshtml` as follows,
 
