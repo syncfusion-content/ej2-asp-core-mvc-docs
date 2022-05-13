@@ -1544,8 +1544,8 @@ gulp.task("copy-client-resource", function (done) {
     <link rel="stylesheet" href="~/syncfusion/ej2-base/styles/material.css" />
     <link rel="stylesheet" href="~/syncfusion/ej2-buttons/styles/button/material.css" />
     <!-- Syncfusion ASP.NET Core controls scripts -->
-    ~/syncfusion/ej2-base/ej2-base.min.js"></script>
-    ~/syncfusion/ej2-calendars/ej2-calendars.min.js"></script>
+    <script src="~/syncfusion/ej2-base/ej2-base.min.js"></script>
+    <script src="~/syncfusion/ej2-calendars/ej2-calendars.min.js"></script>
 </head>
 
 {% endhighlight %}
