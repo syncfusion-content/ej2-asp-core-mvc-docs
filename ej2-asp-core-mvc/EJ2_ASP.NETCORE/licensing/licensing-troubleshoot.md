@@ -42,3 +42,39 @@ If you have directly obtained Syncfusion assemblies from [NuGet.org](http://nuge
 * Register for a free Syncfusion account [here](https://www.syncfusion.com/account/register).
 * Go to the start trials [page](https://syncfusion.com/account/manage-trials/start-trials) and start a trial.
 * Finally proceed to the [Trial & Downloads section](https://www.syncfusion.com/account/manage-trials/downloads) to obtain the [license key](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-generation/).
+
+## Registering license key for Syncfusion ASP.NET Core and Essential Javascript ES5 Controls
+
+Register the license key in the `Program.cs` and `_Layout.cshtml` file, if you are using both Syncfusion ASP.NET Core and Javascript ES5 controls in an application.
+
+>  Only from 2022 Vol 1 v20.1.0.47, license key registration required for Essential Javascript ES5 controls.
+
+{% tabs %}
+{% highlight c# tabtitle="Program.cs" %}
+
+var app = builder.Build();
+//Register Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+{% endhighlight %}
+
+{% highlight c# tabtitle="~/_Layout.cshtml"  %}
+
+<head>
+    ...
+    <script>
+        // Registering Syncfusion license key
+        ej.base.registerLicense('License Key');
+    </script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
