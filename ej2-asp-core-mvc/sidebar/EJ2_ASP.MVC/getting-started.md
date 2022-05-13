@@ -197,7 +197,7 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 
 ## Close on document click
 
-Sidebar can be closed on document click by setting [CloseOnDocumentClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_CloseOnDocumentClick) to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using [`IsOpen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_IsOpen) property.
+Sidebar can be closed on document click by setting [CloseOnDocumentClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_CloseOnDocumentClick) to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using [IsOpen](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_IsOpen) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -152,6 +152,8 @@ public ActionResult Index()
 
 ![ASP.NET MVC Toolbar with Content Template](images/contenttemplate.PNG)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Toolbar/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [How to add Toggle Button](./how-to/add-toggle-button)
