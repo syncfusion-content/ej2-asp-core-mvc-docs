@@ -45,9 +45,9 @@ If you have directly obtained Syncfusion assemblies from [NuGet.org](http://nuge
 
 ## Registering license key for Syncfusion ASP.NET Core and Essential Javascript ES5 Controls
 
-Register the license key in the `Program.cs` and `_Layout.cshtml` file, if you are using both Syncfusion ASP.NET Core and Javascript ES5 controls in an application.
+If you are using [Syncfusion JavaScript Components](https://ej2.syncfusion.com/home/) in application, then you have to register license for ASP.NET Core in `Program.cs` and for JavaScript components register license in `_Layout.cshtml` as follows,
 
->  Only from 2022 Vol 1 v20.1.0.47, license key registration required for Essential Javascript ES5 controls.
+>  From 2022 Vol 1 (v20.1) only the license key registration required for Syncfusion Javascript Components.
 
 {% tabs %}
 {% highlight c# tabtitle="Program.cs" %}
