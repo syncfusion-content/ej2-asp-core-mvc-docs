@@ -1,0 +1,21 @@
+
+@Html.EJS().Charts("charts").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).Width(2).XName("xValue").YName("yValue").DataSource(ViewBag.dataSource).Name("Germany").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).Width(2).XName("xValue").YName("yValue1").DataSource(ViewBag.dataSource).Name("England").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).Width(2).XName("xValue").YName("yValue1").DataSource(ViewBag.dataSource).Name("Russia").Add();
+}).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).LabelFormat("y")
+).PrimaryYAxis(py => py.LabelFormat("{value}%").RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.Additional).Interval(20).Minimum(0).Maximum(100)
+).Title("Olympic Medals").Loaded("onChartLoaded").Render()
+  
+<script type="text/javascript">
+    var colors = ['#00BDAE', '#404041', '#357CD2'];
+    function onChartLoaded(args) {
+        let chart = document.querySelector('.e-chart');;
+        let legendTextCol = chart.querySelectorAll('[id*="chart_legend_text_"]');
+        for (let i = 0; i < legendTextCol.length; i++) {
+            //set the color to legend label
+            legendTextCol[i].setAttribute('fill', colors[i]);
+        }
+    }
+</script>

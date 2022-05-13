@@ -1,4 +1,6 @@
-@Html.EJS().TreeGrid("Pager").AllowPaging().AllowSorting().AllowFiltering().DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+@model List<TreeGridSample.Controllers.TreeGridItems>
+
+@Html.EJS().TreeGrid("Pager").AllowPaging().AllowSorting().AllowFiltering().DataSource((IEnumerable<object>)Model).Columns(col =>
 {
    col.Field("TaskId").HeaderText("Task ID").Width(70).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
    col.Field("TaskName").HeaderText("Task Name").Width(160).Add();

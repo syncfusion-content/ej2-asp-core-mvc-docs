@@ -1,5 +1,6 @@
 @using Syncfusion.EJ2.Navigations;
 @using Syncfusion.EJ2.DropDowns;
+@model List<string>
 
 @(Html.EJS().Toolbar("defaultToolbar")
     .ContentTemplate(
@@ -13,7 +14,7 @@
                 <div class='separator'> </div>
                 <div>
                     @Html.EJS().DropDownList("games").Placeholder("Select a game").PopupHeight("220px").Index(2).DataSource(
-                            (IEnumerable<object>)ViewBag.data).Fields(new DropDownListFieldSettings { Text = "Game", Value = "Id" }).Render()
+                            (IEnumerable<object>)Model).Fields(new DropDownListFieldSettings { Text = "Game", Value = "Id" }).Render()
                 </div>
             </div>
         </div>
