@@ -135,6 +135,8 @@ Refer to the following code example to create a Tooltip on multiple targets with
 
 > In the above sample, `#details` refers to the container's id, and the target `.e-info` refers to the target elements available within that container.
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Tooltip/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [Positioning Tooltip](./position)

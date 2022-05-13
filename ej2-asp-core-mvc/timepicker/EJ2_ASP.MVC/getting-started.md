@@ -93,8 +93,6 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 Now, add the Syncfusion ASP.NET MVC TimePicker control in `~/Views/Home/Index.cshtml` page.
 
-The following example shows a basic TimePicker control.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -179,6 +177,8 @@ The following example demonstrates the TimePicker control in 24 hours format wit
 {% endif %}
 
 ![ASP.NET MVC TimePicker with Time Format](images/timepicker-with-format.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/TimePicker/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
