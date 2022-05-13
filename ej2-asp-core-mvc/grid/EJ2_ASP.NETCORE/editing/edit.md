@@ -204,9 +204,9 @@ If **primaryKey** is not defined in the grid, then edit or delete action take pl
 
 ## How to make a Grid column always editable
 
-You can make the Grid column always editable by using the column template feature of Grid.
+Make the Grid column always editable using the column template feature of the Grid.
 
-In the following example, the textbox is rendered in the Freight column using a column template. The keyup event for the Grid is bound using the [created](../../api/grid#created) event of the Grid, and the edited changes are saved in the data source using the [updateRow](../../api/grid#updaterow) method of the Grid.
+In the following example, the textbox is rendered in the Freight column using a column template. The keyup event for the Grid is bound using the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event of the Grid, and the edited changes are saved in the data source using the `updateRow` method of the Grid.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

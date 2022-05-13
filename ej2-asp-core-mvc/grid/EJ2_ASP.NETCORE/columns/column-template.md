@@ -137,11 +137,11 @@ In the following code, checkbox is rendered based on **Discontinued** field valu
 {% endtabs %}
 {% endif %}
 
-## How to get the row object using column template
+## How to get the row object by clicking on the template element
 
-You can get the row data by clicking any of the buttons in the Grid column. This can be achieved by using the column template feature and the `getRowObjectFromUID` method of the Grid.
+You can get the row object without selecting the row and achieve it using the column template feature and the `getRowObjectFromUID` method of the Grid.
 
-In the following sample, the button element is rendered in the Employee Data column. By clicking the button, you can get the row data in the console using the `getRowObjectFromUID` method of the Grid.
+In the following sample, the button element is rendered in the Employee Data column. By clicking the button, you can get the row object using the `getRowObjectFromUID` method of the Grid and display it in the console.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
