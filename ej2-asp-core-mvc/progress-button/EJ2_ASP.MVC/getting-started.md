@@ -119,7 +119,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Enabling progress in button
 
-You can enable the background filler UI by setting the [enableProgress](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_EnableProgress) property to `true`.
+You can enable the background filler UI by setting the [EnableProgress](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_EnableProgress) property to `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

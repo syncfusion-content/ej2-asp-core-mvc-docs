@@ -117,6 +117,8 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Toast Control](images/toast.png)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Toast/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [Real time example using Toast](https://ej2.syncfusion.com/aspnetmvc/Toast/Template#/material)

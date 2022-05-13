@@ -105,7 +105,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Progress Type
 
-You can change the type of progress bar by using `Type` property. By default `Linear` type of progress bar will render.
+You can change the type of progress bar by using [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ProgressBar.ProgressBar.html#Syncfusion_EJ2_ProgressBar_ProgressBar_Type) property. By default `Linear` type of progress bar will render.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
