@@ -295,8 +295,6 @@ The value set for the backwardForecast is used to determine the past trends.
 
 You can show or hide the trendline by setting trendline `visible` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/trendlines/hide/tagHelper %}
@@ -305,15 +303,3 @@ You can show or hide the trendline by setting trendline `visible` property.
 {% include code-snippet/chart/trendlines/hide/hide.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/trendlines/hide/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Hide.cs" %}
-{% include code-snippet/chart/trendlines/hide/hide.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
