@@ -104,3 +104,4 @@ app.Use(async (context, next) =>
 * [Develop an ASP.NET Core web application securely](https://www.syncfusion.com/blogs/post/10-practices-secure-asp-net-core-mvc-app.aspx)
 * [Perform CRUD operation in Grid control using anti-forgery token](../grid/how-to/perform-crud-operation-using-anti-forgery-token)
 * [Prevent cross-site scripting in RichTextEditor control](../rich-text-editor/miscellaneous#prevention-of-cross-site-scripting-xss)
+* [Shield Your ASP.NET MVC Web Applications with Content Security Policy (CSP)](https://www.syncfusion.com/blogs/post/shield-your-asp-net-mvc-web-applications-with-content-security-policy-csp.aspx)
