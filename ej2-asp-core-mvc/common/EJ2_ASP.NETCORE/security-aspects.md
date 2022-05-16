@@ -43,11 +43,11 @@ The following list demonstrates the Syncfusion ASP.NET Core controls that are su
 
 ## Script Nonce in ASP.NET Core
 
-Nonce attribute is used in content security policy to find out whether given request is valid or not and it prevents the attackers injecting the javascript code in a web application.
+`Nonce` attribute is used in content security policy to find out whether given request is valid or not and it prevents the attackers injecting the javascript code in a web application.
 
 The following steps demonstrates how to create and include the nonce attribute in ASP.NET Core application.
 
-* You can generate the `nonce` attribute value by adding the below code in **Program.cs** file.
+* Generate the `nonce` attribute value by adding the below code in **Program.cs** file.
 
 {% tabs %}
 {% highlight c# tabtitle="Program.cs" %}
