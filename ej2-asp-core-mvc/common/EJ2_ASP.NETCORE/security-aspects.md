@@ -73,7 +73,7 @@ app.Use(async (context, next) =>
 {% endhighlight %}
 {% endtabs %}
 
-* Open **_Layout.cshtml** file and add `nonce` attribute in the client side resources like below.
+* Open **_Layout.cshtml** file and add `nonce` attribute in the client side resources like below,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -85,7 +85,7 @@ app.Use(async (context, next) =>
 {% endhighlight %}
 {% endtabs %}
 
-* Provided the nonce support in Syncfusion script manager and add the `add-nonce` property inside the `<body>` of **_Layout.cshtml** file as follows,
+* Set `add-nonce` for `ejs-scripts` while registering the script manager at the end of `<body>` of **_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -97,7 +97,7 @@ app.Use(async (context, next) =>
 {% endhighlight %}
 {% endtabs %}
 
-* Run the application then see the DOM, nonce attribute were added in script tag and it's value hidden for security purpose.
+* Run the application then see the DOM, nonce attribute is added in script tag and it's value hidden for security purpose.
 
 ## See also
 
