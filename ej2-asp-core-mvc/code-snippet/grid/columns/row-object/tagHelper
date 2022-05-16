@@ -1,0 +1,21 @@
+<ejs-grid id="Grid" dataSource=@ViewBag.DataSource width="auto">
+    <e-grid-columns>
+        <e-grid-column headerText="Employee Data" template="#template" width="150"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="125"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="170"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+
+<script id="template" type="text/x-template">
+    <button onclick="getData(this)">Employee Data</button>
+</script>
+
+<script>
+    function getData(e) {
+        var grid = document.getElementsByClassName('e-grid')[0].ej2_instances[0];
+        var rowObj = grid.getRowObjectFromUID(ej.base.closest(e, '.e-row').getAttribute('data-uid'));
+        console.log(rowObj);
+    }
+</script>
