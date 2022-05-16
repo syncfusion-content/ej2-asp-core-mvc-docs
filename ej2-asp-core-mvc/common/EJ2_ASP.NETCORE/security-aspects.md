@@ -41,8 +41,67 @@ The following list demonstrates the Syncfusion ASP.NET Core controls that are su
 * [Tooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Tooltip.html#Syncfusion_EJ2_Popups_Tooltip_EnableHtmlSanitizer)
 * [TreeView](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_EnableHtmlSanitizer)
 
+## Adding Nonce to Script tag in ASP.NET Core
+
+`Nonce` attribute is used in content security policy to find out whether given request is valid or not and it prevents the attackers injecting the javascript code in a web application.
+
+The following steps demonstrates how to create and include the nonce attribute in ASP.NET Core application.
+
+* Generate the `nonce` attribute value by adding the below code in **Program.cs** file.
+
+{% tabs %}
+{% highlight c# tabtitle="Program.cs" %}
+
+using System.Security.Cryptography;
+
+...
+app.Use(async (context, next) =>
+{
+    RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+    byte[] nonceBytes = new byte[32];
+    rng.GetBytes(nonceBytes);
+    string nonceValue = Convert.ToBase64String(nonceBytes);
+    context.Items.Add("ScriptNonce", nonceValue);
+    context.Response.Headers.Add("Content-Security-Policy", string.Format(
+    "script-src 'self' 'nonce-{0}' cdn.syncfusion.com;" +
+    "style-src-elem 'self' cdn.syncfusion.com fonts.googleapis.com;" +
+    "font-src 'self' data: fonts.gstatic.com;" +
+    "object-src 'none';", nonceValue));
+    await next();
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+* Open **_Layout.cshtml** file and add `nonce` attribute in the client side resources like below,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" nonce="@Context.Items["ScriptNonce"]"></script>
+</head>
+{% endhighlight %}
+{% endtabs %}
+
+* Set `add-nonce` for `ejs-scripts` while registering the script manager at the end of `<body>` of **_Layout.cshtml** file as follows,
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+<body>
+    ...
+    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <ejs-scripts add-nonce="@Context.Items["ScriptNonce"]"></ejs-scripts>
+</body>
+{% endhighlight %}
+{% endtabs %}
+
+* Run the application then see the DOM, nonce attribute is added in script tag and it's value hidden for security purpose.
+
 ## See also
 
 * [Develop an ASP.NET Core web application securely](https://www.syncfusion.com/blogs/post/10-practices-secure-asp-net-core-mvc-app.aspx)
 * [Perform CRUD operation in Grid control using anti-forgery token](../grid/how-to/perform-crud-operation-using-anti-forgery-token)
 * [Prevent cross-site scripting in RichTextEditor control](../rich-text-editor/miscellaneous#prevention-of-cross-site-scripting-xss)
+* [Shield Your ASP.NET MVC Web Applications with Content Security Policy (CSP)](https://www.syncfusion.com/blogs/post/shield-your-asp-net-mvc-web-applications-with-content-security-policy-csp.aspx)
