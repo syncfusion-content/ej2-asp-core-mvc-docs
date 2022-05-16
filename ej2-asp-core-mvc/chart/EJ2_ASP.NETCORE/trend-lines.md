@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Trendlines
+# Trend Lines in ##Platform_Name## Chart Component
 
 Trendlines are used to show the direction and speed of price. Trendlines can be generated for Cartesian type series (Line, Column, Scatter, Area, Candle, Hilo etc.) except bar type series. You can add more than one trendline to a series.
 
@@ -291,3 +291,15 @@ The value set for the backwardForecast is used to determine the past trends.
 {% endtabs %}
 {% endif %}
 
+## Show or hide a trendline
+
+You can show or hide the trendline by setting trendline `visible` property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/trendlines/hide/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Hide.cs" %}
+{% include code-snippet/chart/trendlines/hide/hide.cs %}
+{% endhighlight %}
+{% endtabs %}
