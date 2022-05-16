@@ -1558,3 +1558,4 @@ The Syncfusion ASP.NET Core provides an option to generate a control's scripts u
 ## See also
 
 * [CDN Fallback](./cdn-fallback)
+* [Script Nonce in ASP.NET Core](./security-aspects#adding-nonce-to-script-tag-in-aspnet-core)
