@@ -41,7 +41,7 @@ The following list demonstrates the Syncfusion ASP.NET Core controls that are su
 * [Tooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Tooltip.html#Syncfusion_EJ2_Popups_Tooltip_EnableHtmlSanitizer)
 * [TreeView](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_EnableHtmlSanitizer)
 
-## Script Nonce in ASP.NET Core
+## Adding Nonce to Script tag in ASP.NET Core
 
 `Nonce` attribute is used in content security policy to find out whether given request is valid or not and it prevents the attackers injecting the javascript code in a web application.
 
