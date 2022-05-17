@@ -1,0 +1,159 @@
+<div>
+    <ejs-accumulationchart id="chart" textRender="textRender" PointClick="pointClick" chartMouseClick="chartMouseClick" title="Automobile Sales by Category">
+        <e-accumulationchart-legendsettings visible="false">
+        </e-accumulationchart-legendsettings>
+        <e-accumulation-series-collection>
+            <e-accumulation-series explode="false" type="Pie" xName="x" yName="y" dataSource="ViewBag.dataSource" name="Project">
+                <e-accumulationseries-datalabel visible="true" name="text">
+                    <e-font fontWeight="600"></e-font>
+                </e-accumulationseries-datalabel>
+            </e-accumulation-series>
+        </e-accumulation-series-collection>
+    </ejs-accumulationchart>
+
+    <ejs-grid id="grid" dataSource="ViewBag.dataSource">
+        <e-grid-columns>
+            <e-grid-column field="x" headerText="Vehicle" type="string"></e-grid-column>
+            <e-grid-column field="y" headerText="Sales" type="string"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>
+<script>
+    var pointIndex = -1;
+    var data = [
+        {
+            x: 'SUV',
+            y: 25,
+            z: [
+                {
+                    title: 'Automobile Sales in the SUV Segment',
+                    x: 'Toyota',
+                    y: 8,
+                    z: [
+                        { x: '2000', y: 20 },
+                        { x: '2001', y: 30 },
+                        { x: '2002', y: 40 },
+                    ],
+                },
+                { x: 'Ford', y: 12 },
+                { x: 'GM', y: 17 },
+                { x: 'Renault', y: 6 },
+            ],
+        },
+        {
+            x: 'Car',
+            y: 37,
+            z: [
+                { title: 'Automobile Sales in the Car Segment', x: 'Toyota', y: 7 },
+                { x: 'Chrysler', y: 12 },
+                { x: 'Nissan', y: 9 },
+                { x: 'Ford', y: 15 },
+            ],
+        },
+        {
+            x: 'Pickup',
+            y: 15,
+            z: [
+                { title: 'Automobile Sales in the Pickup Segment', x: 'Nissan', y: 9 },
+                { x: 'Chrysler', y: 4 },
+                { x: 'Ford', y: 7 },
+                { x: 'Toyota', y: 20 },
+            ],
+        },
+        {
+            x: 'Minivan',
+            y: 23,
+            z: [
+                { title: 'Automobile Sales in the Minivan Segment', x: 'Hummer', y: 11 },
+                { x: 'Ford', y: 5 },
+                { x: 'GM', y: 12 },
+                { x: 'Chrysler', y: 3 },
+            ],
+        },
+    ];
+
+    var textRender = function (args) {
+        args.text = args.point.x + ' ' + args.point.y + ' %';
+    };
+
+    var chartMouseClick = function (args) {
+        var pie = document.getElementById("chart").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.target.indexOf('back') > -1) {
+            if (pie.series[0].name === 'Level 3') {
+                pie.series[0].dataSource = data[window.pointIndex].z;
+                pie.series[0].name = 'Level 2';
+                pie.title = data[window.pointIndex].z[0].title;
+                pie.series[0].innerRadius = '30%';
+                grid.dataSource = pie.series[0].dataSource;
+                grid.columns[0].headerText = data[window.pointIndex].x;
+                grid.refresh();
+                pie.refresh();
+            } else if (pie.series[0].name === 'Level 2') {
+                pie.series[0].dataSource = data;
+                pie.series[0].name = 'Level 1';
+                pie.series[0].innerRadius = '0%';
+                pie.title = 'Automobile Sales by Category';
+                pie.annotations = [{}];
+                pie.pointClick = pointClick;
+                grid.dataSource = pie.series[0].dataSource;
+                grid.columns[0].headerText = 'Vehicle';
+                grid.refresh();
+                pie.refresh();
+            }
+        }
+        grid.dataSource = pie.series[0].dataSource;
+    };
+    var pointClick = function (args) {
+        var pie = document.getElementById("chart").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (
+            ej.charts.getElement(
+                pie.element.id +
+                '_Series_' +
+                args.seriesIndex +
+                '_Point_' +
+                args.pointIndex
+            )
+        ) {
+            pie.series[0].dataSource = data[args.pointIndex].z;
+            pie.title = data[args.pointIndex].z[0].title;
+            window.pointIndex = args.pointIndex;
+
+            pie.series[0].name = 'Level 2';
+            pie.series[0].innerRadius = '30%';
+            pie.annotations = [
+                {
+                    content:
+                        '<div id="back" style="cursor:pointer;padding:3px;width:30px; height:30px;">' +
+                        '<img src="https://ej2.syncfusion.com/javascript/demos/src/chart/images/back.png" id="back" />',
+                    region: 'Series',
+                    x: '50%',
+                    y: '50%',
+                },
+            ];
+            pie.pointClick = click;
+        }
+        grid.dataSource = pie.series[0].dataSource;
+        grid.columns[0].headerText = data[args.pointIndex].x;
+        grid.refresh();
+        pie.refresh();
+    }
+    var click = function (args) {
+        var pie = document.getElementById("chart").ej2_instances[0];
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (pie.series[0].name !== 'Level 3') {
+            switch (args.pointIndex) {
+                case 0:
+                    pie.series[0].dataSource = data[0].z[0].z;
+                    pie.title = 'SUV Sales by Years';
+                    pie.series[0].name = 'Level 3';
+                    grid.columns[0].headerText = 'Year';
+                    grid.refresh();
+                    pie.refresh();
+                    break;
+            }
+            grid.dataSource = pie.series[0].dataSource;
+        }
+    };
+</script>
