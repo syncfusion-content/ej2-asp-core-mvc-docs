@@ -299,4 +299,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC TreeView Control](images/binding-self.PNG)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/TreeView/ASP.NET%20MVC%20Razor%20Examples).
+
 > You can also explore our [ASP.NET MVC TreeView example](https://ej2.syncfusion.com/aspnetmvc/TreeView/DefaultFunctionalities#/material) to knows how to present and manipulate data.
