@@ -1,36 +1,19 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Syncfusion.EJ2.PdfViewer;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
-using Syncfusion.EJ2.PdfViewer;
-using Newtonsoft.Json;
-using System.IO;
-using System.Reflection;
-using Syncfusion.Pdf.Parsing;
-using System.Net.Http;
-using System.Net;
-using System.Text.RegularExpressions;
-using Syncfusion.Pdf;
-using Syncfusion.Pdf.Graphics;
-using System.Drawing;
 
-namespace GettingStarted_MVC.Controllers
+namespace PDFViewerSample.Controllers
 {
-    public class PdfViewerController : Controller
+    public class HomeController : Controller
     {
-        public ActionResult PdfViewer()
-        {
-
-            return View();
-        }
-
-        // GET: PdfViewer
-        public PdfViewerController()
-        {
-
-        }
-
         [System.Web.Mvc.HttpPost]
         public ActionResult Load(jsonObjects jsonObject)
         {
@@ -226,8 +209,25 @@ namespace GettingStarted_MVC.Controllers
             }
             return documentPath;
         }
-    }
+        public ActionResult Index()
+        {
+            return View();
+        }
 
+        public ActionResult About()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+    }
     public class jsonObjects
     {
         public string document { get; set; }
