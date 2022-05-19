@@ -45,4 +45,4 @@ Refer to the following table.
 ## See also
 
 * [Toolbar items](./toolbar)
-* [Toolbar customization](./how-to/toolbar_customization)
+* [Toolbar customization](./how-to/toolbar-customization)

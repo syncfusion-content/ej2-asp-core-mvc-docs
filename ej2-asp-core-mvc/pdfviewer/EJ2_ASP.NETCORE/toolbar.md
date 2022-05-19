@@ -88,5 +88,5 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 
 ## See also
 
-* [Toolbar customization](./how-to/toolbar_customization)
+* [Toolbar customization](./how-to/toolbar-customization)
 * [Feature Modules](./feature-module)
