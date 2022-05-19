@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Built-in toolbar
+# Built-in toolbar in ASP.NET Core PDF Viewer control
 
 The PDF Viewer comes with a powerful built-in toolbar to execute important actions such as page navigation, text search,view mode,download,print,bookmark, and thumbnails.
 
