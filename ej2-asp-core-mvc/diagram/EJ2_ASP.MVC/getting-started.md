@@ -146,6 +146,8 @@ Add two node to the diagram as shown in the previous example. Connect these node
 
 ![ASP.NET MVC Diagram with Connector](images/diagram-connector.png)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Diagram/ASP.NET%20MVC%20Razor%20Examples).
+
 ## Adding default values
 
 Default values for all `nodes` and `connectors` can be set using the `getNodeDefaults` and `getConnectorDefaults` properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
