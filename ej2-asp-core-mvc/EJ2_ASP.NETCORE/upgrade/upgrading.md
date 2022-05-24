@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrading in ##Platform_Name## Component
+title: Upgrading in Syncfusion ##Platform_Name## Component
 description: Learn here all about upgrading in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Upgrading
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion ASP.NET Core (Essential JS2)
+# Upgrading Syncfusion ASP.NET Core
 
 Syncfusion releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 
@@ -28,7 +28,7 @@ It is not required to install the Volume release before installing the Service P
 
 ## Upgrading from trial version to license version
 
-To upgrade from trial version,
+To upgrade from trial version, there are two possible solutions.
 
 * If you are using Syncfusion controls from [nuget.org](https://www.nuget.org/packages?q=syncfusion), replace the currently used trial license key with a paid license key that can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of the website. Refer to [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-registration/) topic for more information regarding registering the license in the application.
 

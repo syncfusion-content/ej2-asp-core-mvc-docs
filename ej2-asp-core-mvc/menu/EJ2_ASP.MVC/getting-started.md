@@ -172,13 +172,11 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Menu Control](images/menu.png)
 
-> This example demonstrates the basic rendering of Menu with items support. For more information about data source support, refer to the [`Data Source Binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
+> This example demonstrates the basic rendering of Menu with items support. For more information about data source support, refer to the [Data Source Binding](./data-source-binding-and-custom-menu-items#data-binding) section.
 
 ## Group menu items with separator
 
-The separators are both horizontal and vertical lines used to separate the menu items.
-You cannot select the separators, but you can enable separators to group the menu items using the `separator` property.
-The `Open` and `Save` sub menu items are grouped using the `separator` property in the following sample.
+The separators are both horizontal and vertical lines used to separate the menu items. You cannot select the separators, but you can enable separators to group the menu items using the `separator` property. The `Open` and `Save` sub menu items are grouped using the `separator` property in the following sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

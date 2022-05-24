@@ -2,7 +2,7 @@
 layout: post
 title: Project Conversion process for ASP.NET Core - EJ2 platform
 description: Project Conversion is a add-in that converts ASP.NET Core application into a Syncfusion ASP.NET Core application by adding required Essential JS 2 components
-platform: ASP.NET Core - EJ2
+platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug

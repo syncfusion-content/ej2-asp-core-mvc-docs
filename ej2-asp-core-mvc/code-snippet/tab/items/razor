@@ -1,6 +1,7 @@
 @using Syncfusion.EJ2.Navigations;
+@model List<TabTabItem>
 
-@Html.EJS().Tab("ej2Tab").Items(ViewBag.items).Render()
+@Html.EJS().Tab("ej2Tab").Items(Model).Render()
 
 <style>
     .e-content .e-item {

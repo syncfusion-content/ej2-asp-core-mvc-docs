@@ -175,11 +175,9 @@ The below example demonstrates format the value by using currency format value `
 
 ## Precision of numbers
 
-You can restrict the number of decimals to be entered in the NumericTextBox by using the [decimals](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Decimals) and [validateDecimalOnType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_ValidateDecimalOnType) properties.
-So, you can't enter the number whose precision is greater than the mentioned decimals.
+You can restrict the number of decimals to be entered in the NumericTextBox by using the [decimals](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Decimals) and [validateDecimalOnType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_ValidateDecimalOnType) properties. So, you can't enter the number whose precision is greater than the mentioned decimals.
 
-* If `validateDecimalOnType` is false, number of decimals will not be restricted.
-Else, number of decimals will be restricted while typing in the NumericTextBox.
+* If `validateDecimalOnType` is false, number of decimals will not be restricted. Else, number of decimals will be restricted while typing in the NumericTextBox.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,5 +1,5 @@
 <div class="control-section">
-    <div class="control_wrapper accordion-control-section">
+    <div class="control_wrapper textbox-control-section">
         <div class="e-input-group">
             <input class="e-input" name='input' type="text" placeholder="Enter Date" />
             <span class="e-input-group-icon e-input-popup-date"></span>

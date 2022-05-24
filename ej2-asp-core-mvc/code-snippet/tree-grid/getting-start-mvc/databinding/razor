@@ -1,1 +1,3 @@
-@Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.DataSource).ChildMapping("Children").TreeColumnIndex(1).Render()
+@model List<TreeGridSample.Controllers.TreeGridItems>
+
+@Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)Model).ChildMapping("Children").TreeColumnIndex(1).Render()

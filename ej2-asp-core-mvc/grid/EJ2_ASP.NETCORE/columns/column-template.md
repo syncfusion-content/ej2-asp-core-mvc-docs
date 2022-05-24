@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column Template
+# Column Template in ASP.NET Core Grid Component
 
 ## Render image in a column
 
@@ -136,6 +136,37 @@ In the following code, checkbox is rendered based on **Discontinued** field valu
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## How to get the row object by clicking on the template element
+
+You can get the row object without selecting the row and achieve it using the column template feature and the `getRowObjectFromUID` method of the Grid.
+
+In the following sample, the button element is rendered in the Employee Data column. By clicking the button, you can get the row object using the `getRowObjectFromUID` method of the Grid and display it in the console.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/row-object/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Row-object.cs" %}
+{% include code-snippet/grid/columns/row-object/row-object.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/row-object/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-object.cs" %}
+{% include code-snippet/grid/columns/row-object/row-object.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
 
 ## See Also
 

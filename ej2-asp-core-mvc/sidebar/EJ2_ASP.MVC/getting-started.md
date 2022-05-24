@@ -119,9 +119,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Enable backdrop
 
-Enabling the `showBackdrop` in the Sidebar component will prevent the main content from user interactions. Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting [`width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Width.html) property.
-
-The following example shows a Sidebar component with enabled backdrop.
+Enabling the [ShowBackdrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_ShowBackdrop) in the Sidebar component will prevent the main content from user interactions. Here, the DOM elements will not get changed. It only closes the main content by covering with a black backdrop overlay and focuses the Sidebar in the screen. Sidebar can be rendered with specific width by setting [width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Width) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -147,10 +145,7 @@ The following example shows a Sidebar component with enabled backdrop.
 
 ## Position
 
-Positioning the Sidebar to the right or left of the main content can be achieved by using the `position` property.
-If the position is not set, the Sidebar will expand from the left to the body element.[`enablePersistence`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~EnablePersistence.html) will persist the component's state between page reloads. [`change`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Change.html) event will be triggered when the state(expand/collapse) of the component is changed.
-
-In the following sample, the sidebar is rendered with position property.
+Positioning the Sidebar to the right or left of the main content can be achieved by using the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Position) property. If the position is not set, the Sidebar will expand from the left to the body element. [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_EnablePersistence) will persist the component's state between page reloads. [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Change) event will be triggered when the state(expand/collapse) of the component is changed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -176,7 +171,7 @@ In the following sample, the sidebar is rendered with position property.
 
 ## Animate
 
-Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Animate.html) property. By default , [`animate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Animate.html) property is set to true. [`enableRTL`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~EnableRtl.html) will display the sidebar in the right-to-left direction.
+Animation transitions can be set while expanding or collapsing the Sidebar using the [Animate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Animate) property. By default , `Animate` property is set to true. [EnableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_EnableRtl) will display the sidebar in the right-to-left direction.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -202,7 +197,7 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 
 ## Close on document click
 
-Sidebar can be closed on document click by setting [`closeOnDocumentClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~CloseOnDocumentClick.html) to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using [`isOpen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~IsOpen.html) property.
+Sidebar can be closed on document click by setting [CloseOnDocumentClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_CloseOnDocumentClick) to true. If this property is not set, the Sidebar will not close on document click since its default value is false. Sidebar can be kept opened during rendering using [IsOpen](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_IsOpen) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -228,7 +223,7 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 ## Enable gestures
 
-Expand or collapse the Sidebar while swiping in touch devices using [`enableGestures`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~EnableGestures.html) property. By default, [`enableGestures`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~EnableGestures.html) is set to true.
+Expand or collapse the Sidebar while swiping in touch devices using [EnableGestures](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_EnableGestures) property. By default, `EnableGestures` is set to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -251,6 +246,8 @@ Expand or collapse the Sidebar while swiping in touch devices using [`enableGest
 {% endif %}
 
 ![Enabling Gestures in ASP.NET MVC Sidebar Control](images/backdrop.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Sidebar/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
