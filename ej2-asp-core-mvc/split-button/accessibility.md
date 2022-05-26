@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in Split Button Controls
 
 ## ARIA attributes
 
@@ -54,11 +54,11 @@ Navigates down or to the next action item.</td></tr>
 <tr>
 <td>
 <kbd>Alt + Up Arrow</kbd></td><td>
-Opens the popup.</td></tr>
+Closes the popup.</td></tr>
 <tr>
 <td>
 <kbd>Alt + Down Arrow</kbd></td><td>
-Closes the popup.</td></tr>
+Opens the popup.</td></tr>
 </table>
 
 {% if page.publishingplatform == "aspnet-core" %}

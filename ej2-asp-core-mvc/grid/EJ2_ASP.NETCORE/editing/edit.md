@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edit in ##Platform_Name## Grid Component
+title: Edit in ASP.NET Core Grid Component
 description: Learn here all about Edit in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Edit
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Editing
+# Editing in ASP.NET Core Grid Component
 
 The Grid component has options to dynamically insert, delete and update records.
 Editing feature requires a primary key column for CRUD operations.
@@ -201,6 +201,37 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 
 The Editing functionalities can be performed based upon the primary key value of the selected row.
 If **primaryKey** is not defined in the grid, then edit or delete action take places the first row.
+
+## How to make a Grid column always editable
+
+Make the Grid column always editable using the column template feature of the Grid.
+
+In the following example, the textbox is rendered in the Freight column using a column template. The keyup event for the Grid is bound using the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event of the Grid, and the edited changes are saved in the data source using the `updateRow` method of the Grid.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/column-edit/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Column-edit.cs" %}
+{% include code-snippet/grid/edit/column-edit/column-edit.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/column-edit/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Column-edit.cs" %}
+{% include code-snippet/grid/edit/column-edit/column-edit.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
 
 ## See Also
 
