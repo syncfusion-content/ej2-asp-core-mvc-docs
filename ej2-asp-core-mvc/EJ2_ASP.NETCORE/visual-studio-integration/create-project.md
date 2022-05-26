@@ -133,13 +133,13 @@ We need to register the created application in Azure Active Directory for **Micr
 
 ![Confirm](images/Confirm.png)
 
-3.	Submit your registered email address and password to login the application.
+3. Submit your registered email address and password to login the application.
 
 ![Login](images/Login.png)
 
 ### Microsoft Identity Platform
 
-1.	Login to your application using your Microsoft account.
-2.	Accept permission request of your application.
+1. Login to your application using your Microsoft account.
+2. Accept permission request of your application.
 
 ![Permission](images/Permission.png)
