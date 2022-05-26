@@ -1,0 +1,4 @@
+<div class="control-section">
+    <ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true showPropertiesPane=false height="590px"></ejs-documenteditorcontainer>
+</div>
+

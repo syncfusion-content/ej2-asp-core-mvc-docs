@@ -1,0 +1,16 @@
+<div class="control-section">
+    <ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated" height="590px"></ejs-documenteditorcontainer>
+</div>
+
+<script>
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+       // To insert text in cursor position
+       container.documentEditor.editor.insertText('Document editor');
+       // To get the total number of pages
+       var pageCount =container.documentEditor.pageCount;
+    }
+</script>
