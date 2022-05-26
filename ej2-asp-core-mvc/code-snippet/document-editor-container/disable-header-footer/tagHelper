@@ -1,0 +1,24 @@
+
+<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated" .selectionChange="onSelectionChanged" height="590px"></ejs-documenteditorcontainer>
+
+<script>
+    var documenteditor;
+    var container;
+function onCreated() {
+    var documenteditorElement = document.getElementById("container");
+    container = documenteditorElement.ej2_instances[0];
+}
+function onSelectionChanged() {
+    // Check whether selection is in header
+  if (container.documentEditor.selection.contextType.indexOf('Header') > -1 ||
+  // Check whether selection is in Footer
+    container.documentEditor.selection.contextType.indexOf('Footer') > -1) {
+    // Change the document to read only mode
+    container.restrictEditing = true;
+  } else {
+    // Change the document to editable mode
+    container.restrictEditing = false;
+  }
+}
+</script>
+

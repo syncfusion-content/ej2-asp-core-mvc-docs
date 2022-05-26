@@ -1,0 +1,16 @@
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+
+<script>
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+       // To insert text in cursor position
+       container.documentEditor.editor.insertText('Document editor');
+       // To move the selection to header
+       container.documentEditor.selection.goToHeader();
+       // Insert page number in the current cursor position
+       container.documentEditor.editor.insertPageNumber();
+    }
+</script>

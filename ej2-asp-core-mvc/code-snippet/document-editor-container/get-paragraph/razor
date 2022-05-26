@@ -1,0 +1,17 @@
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+
+<script>
+  var documenteditor;
+  var container;
+  function onCreated() {
+    var documenteditorElement = document.getElementById("container");
+    container = documenteditorElement.ej2_instances[0];
+    // To insert text in cursor position
+    container.documentEditor.editor.insertText('Document editor');
+    // To select the current paragraph in document
+    container.documentEditor.selection.selectParagraph();
+
+    // To get the selected content as sfdt
+    var selectedContent = container.documentEditor.selection.sfdt;
+  }
+</script>
