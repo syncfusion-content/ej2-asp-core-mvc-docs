@@ -73,7 +73,7 @@ The following steps are used to create the **Syncfusion ASP.NET Core (Essential 
 
     **Authentication Type**: Authentication will be listed out based on the selected project type and choose the required authentication from the available list.
 
-    > **Note**: For **Angular** and **React** Project **None** and **Individual Authentication** only supported.
+    > For **Angular** and **React** Project **None** and **Individual Authentication** only supported.
 
     ![authentication type](images/authentication.png)
 
