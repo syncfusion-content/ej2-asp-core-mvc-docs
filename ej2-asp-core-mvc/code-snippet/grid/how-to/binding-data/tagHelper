@@ -1,0 +1,31 @@
+@{ 
+    var datas = new Syncfusion.EJ2.DataManager
+    {
+        Url = Url.Action("ForeignKey", "Home"),
+        Adaptor = "UrlAdaptor"
+    };       
+}
+
+<ejs-grid id="HierarchyPrint" allowPaging="true"  allowFiltering="true" showColumnChooser="false"
+          toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })" actionBegin="actionBegin">
+    <e-grid-pagesettings></e-grid-pagesettings>
+    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-data-manager url="/Home/UrlDatasource" insertUrl="/Home/Insert" updateUrl="/Home/Update" removeUrl="/Home/Remove" adaptor="UrlAdaptor"></e-data-manager>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Center" width="125"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" foreignKeyField="EmployeeID" textAlign="Center" foreignKeyValue="ShipName" dataSource=datas editType="dropdownedit" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Center" width="125"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="OrderDate" textAlign="Center" width="120" format="yMd"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="CustomerID" textAlign="Center" width="125"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="ShipName" textAlign="Center" width="125"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    
+    function actionBegin(args) {
+        if (args.requestType == 'add') {
+            args.rowData[this.getForeignKeyColumns()[0].field] = '';
+        }
+    }
+</script>
