@@ -130,5 +130,5 @@ You can display the percentage values in data label of pie chart using `template
 {% endhighlight %}
 {% endtabs %}
 
-![Show percentage in ASP.NET Core Accumulationchart control](../images/show-percentage-in-pie-chart.png)
+![Show percentage in ASP.NET Core Accumulationchart control](images/show-percentage-in-pie-chart.png)
 

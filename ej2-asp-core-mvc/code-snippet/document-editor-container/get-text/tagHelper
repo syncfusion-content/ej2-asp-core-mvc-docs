@@ -22,11 +22,11 @@ function onCreated() {
       // custom Options Select Event
       container.documentEditor.customContextMenuSelect =function (args){
         // custom Options Functionality
-        let id: string = container.documentEditor.element.id;
+        let id = container.documentEditor.element.id;
         switch (args.id) {
           case id + 'search_in_google':
             // To get the selected content as plain text
-            let searchContent: string =
+            let searchContent =
               container.documentEditor.selection.text;
             if (
               !container.documentEditor.selection.isEmpty &&

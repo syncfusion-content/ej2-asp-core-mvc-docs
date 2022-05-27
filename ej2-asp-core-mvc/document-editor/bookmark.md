@@ -18,6 +18,44 @@ Document editor provides built-in dialog to add, delete, and navigate bookmarks 
 >Bookmark names need to begin with a letter. They can include both numbers and letters, but not spaces. To separate the words, use an underscore.
 >Bookmark names starting with an underscore are called hidden bookmarks. For example, bookmarks generated for table of contents.
 
+## Add bookmark
+
+Using [`insertBookmark`] method, Bookmark can be added to the selected text.
+
+```csharp
+container.documentEditor.editor.insertBookmark("Bookmark1");
+```
+
+## Select Bookmark
+
+You can select the bookmark in the document using [`selectBookmark`] method by providing Bookmark name to select as shown in the following code snippet.
+
+```csharp
+container.documentEditor.selection.selectBookmark("Bookmark1");
+```
+
+## Delete Bookmark
+
+You can delete bookmark in the document using [`deleteBookmark`] method as shown in the following code snippet.
+
+```csharp
+container.documentEditor.editor.deleteBookmark("Bookmark1");
+```
+
+## Get Bookmark
+
+You can get all the bookmarks in the document using [`getBookmarks`] method as shown in the following code snippet.
+
+```csharp
+container.documentEditor.selection.getBookmarks(false);
+```
+
+>Note: Parameter denotes is include hidden bookmarks. If false, ignore hidden bookmark.
+
+## Bookmark Dialog
+
+The following example shows how to open bookmark dialog in Document Editor.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
