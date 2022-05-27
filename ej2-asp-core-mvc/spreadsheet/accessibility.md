@@ -1,7 +1,7 @@
 ---
 title:  "Accessibility in" ##Platform_Name## Spreadsheet Component
 component: "Spreadsheet"
-description: "Documentation for accessibility in Essential JS 2 Spreadsheet, featuring WAI-ARIA standards" ##Platform_Name## Spreadsheet.
+description: "Documentation for accessibility in Essential JS 2 Spreadsheet, featuring WAI-ARIA standards" ##Platform_Name## Spreadsheet Component.
 ---
 
 # Accessibility in Spreadsheet
