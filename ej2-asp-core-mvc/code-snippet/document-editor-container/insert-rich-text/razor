@@ -1,0 +1,33 @@
+<button id='export'>Export</button>
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+
+<script>
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+    }
+    let htmltags =
+  "<?xml version='1.0' encoding='utf - 8'?><!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN''http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'><html xmlns ='http://www.w3.org/1999/xhtml' xml:lang='en' lang ='en'><body><h1>The img element</h1><img src='https://www.w3schools.com/images/lamp.jpg' alt ='Lamp Image' width='500' height='600'/></body></html>";
+document.getElementById('export').addEventListener('click', () => {
+  let http = new XMLHttpRequest();
+  http.open('POST', '/api/documenteditor/LoadString');
+  http.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+  http.responseType = 'json';
+  http.onreadystatechange = function () {
+    if (http.readyState === 4) {
+      if (http.status === 200 || http.status === 304) {
+        // Insert the sfdt content in cursor position using paste API
+        container.documentEditor.editor.paste(http.response);
+      } else {
+        alert('failed;');
+      }
+    }
+  };
+
+  let htmlContent = { content: htmltags };
+  http.send(JSON.stringify(htmlContent));
+});
+
+</script>
