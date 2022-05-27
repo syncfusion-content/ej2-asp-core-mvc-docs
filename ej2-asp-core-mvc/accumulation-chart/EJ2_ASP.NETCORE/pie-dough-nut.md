@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pie & Doughnut
+# Pie & Doughnut in ##Platform_Name## Accumulation Chart Component
 
 ## Pie Chart
 
