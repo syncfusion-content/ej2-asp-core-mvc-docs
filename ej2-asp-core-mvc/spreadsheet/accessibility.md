@@ -1,10 +1,10 @@
 ---
-title: "Accessibility"
+title:  "Accessibility in" ##Platform_Name## Spreadsheet Component
 component: "Spreadsheet"
-description: "Documentation for accessibility in Essential JS 2 Spreadsheet, featuring WAI-ARIA standards"
+description: "Documentation for accessibility in Essential JS 2 Spreadsheet, featuring WAI-ARIA standards" ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2.
 ---
 
-# Accessibility
+# Accessibility in Spreadsheet
 
 The practice of making information and activities usable for as many people as possible is accessibility. Accessibility in spreadsheet component is achieved through `WAI-ARIA`. Spreadsheet features are effectively accessed through assistive technologies such as screen readers.
 
