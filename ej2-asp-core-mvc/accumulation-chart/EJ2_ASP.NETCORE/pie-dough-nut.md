@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pie & Doughnut
+# Pie & Doughnut in ##Platform_Name## Accumulation Chart Component
 
 ## Pie Chart
 
@@ -299,7 +299,22 @@ You can customize the color of the point using the `palettes` property.
 {% endtabs %}
 {% endif %}
 
+## Multi-level pie chart
 
+You can achieve a multi-level drill down in pie and doughnut charts using [pointClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_PointClick) event. If user clicks any point in the chart, that corresponding data will be shown in the next level and so on based on point clicked.
+
+You can also achieve drill-up (back to the initial state) by using [chartMouseClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_ChartMouseClick) event. In below sample, you can drill-up by clicking back button in the center of the chart.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/drill-down/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Drill-down.cs" %}
+{% include code-snippet/chart/accumulation-charts/drill-down/drill-down.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core AccumulationChart Drill-Down and Display Data in Grid](images/pie-drill-down-and-display-data-in-grid.gif)
 
 ## See Also
 
