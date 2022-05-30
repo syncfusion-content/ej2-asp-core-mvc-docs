@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Trendlines
+# Trend Lines in ##Platform_Name## Chart Component
 
 Trendlines are used to show the direction and speed of price.
 
