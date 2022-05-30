@@ -129,7 +129,7 @@ We need to register the created application in Azure Active Directory for **Micr
 
 ![Register](images/Register.png)
 
-**Step:2** .Confirming registration by clicking **Click here to confirm your account**.
+**Step:2** Confirming registration by clicking **Click here to confirm your account**.
 
 ![Confirm](images/Confirm.png)
 
