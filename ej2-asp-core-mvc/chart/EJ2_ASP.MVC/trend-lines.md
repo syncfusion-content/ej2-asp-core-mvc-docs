@@ -303,3 +303,16 @@ The value set for the backwardForecast is used to determine the past trends.
 {% endtabs %}
 {% endif %}
 
+
+## Show or hide a trendline
+
+You can show or hide the trendline by setting trendline `visible` property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/trendlines/hide/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Hide.cs" %}
+{% include code-snippet/chart/trendlines/hide/hide.cs %}
+{% endhighlight %}
+{% endtabs %}
