@@ -130,8 +130,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 After initialization, populate the AutoComplete with data using the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property. Here, an array of string values is passed to the AutoComplete control.
 
-The following example illustrates the output in your browser.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

@@ -113,7 +113,7 @@ Now, add the Syncfusion ASP.NET MVC Breadcrumb control in `~/Home/Index.cshtml` 
 
 ## Add Items to the Breadcrumb Control
 
-Use `Items` property to bind items for Breadcrumb control. The below example demonstrates the basic rendering of Breadcrumb with items support.
+Use [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Breadcrumb.html#Syncfusion_EJ2_Navigations_Breadcrumb_Items) property to bind items for Breadcrumb control. The below example demonstrates the basic rendering of Breadcrumb with items support.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -139,7 +139,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Enable or Disable Navigation
 
-This feature enables or disables the item navigation. By default, the navigation will be enabled when setting `Url` property. To prevent breadcrumb item navigation, set `EnableNavigation` property as false in Breadcrumb. The below example shows enabling and disabling the navigation of Breadcrumb items.
+This feature enables or disables the item navigation. By default, the navigation will be enabled when setting [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Breadcrumb.html#Syncfusion_EJ2_Navigations_Breadcrumb_Url) property. To prevent breadcrumb item navigation, set [EnableNavigation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Breadcrumb.html#Syncfusion_EJ2_Navigations_Breadcrumb_EnableNavigation) property as false in Breadcrumb. The below example shows enabling and disabling the navigation of Breadcrumb items.
 
 The following example shows a Enable or disable navigation of Breadcrumb.
 

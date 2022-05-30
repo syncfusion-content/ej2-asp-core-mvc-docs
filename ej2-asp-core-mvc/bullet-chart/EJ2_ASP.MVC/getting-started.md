@@ -109,7 +109,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 This section explains how to plot local data to the Bullet Chart.
 
-The **value** and **target** values should be mapped with `ValueField` and `TargetField` respectively.
+The **value** and **target** values should be mapped with [ValueField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_ValueField) and [TargetField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_TargetField) respectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -151,7 +151,7 @@ public class BulletChartData
 
 ## Add Bullet Chart Title
 
-You can add a title using `Title` property to the Bullet Chart to provide quick information to the user about the data plotted in the Bullet Chart.
+You can add a title using [Title](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Title) property to the Bullet Chart to provide quick information to the user about the data plotted in the Bullet Chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -193,7 +193,7 @@ public class BulletChartData
 
 ## Ranges
 
-You can add a range using `Ranges` property to the Bullet Chart.
+You can add a range using [Ranges](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Ranges) property to the Bullet Chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -235,7 +235,7 @@ public class BulletChartData
 
 ## Tooltip
 
-You can use tooltip for the Bullet Chart by setting the `Enable` property to true in `Tooltip`.
+You can use tooltip for the Bullet Chart by setting the [Enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChartBulletDataLabel.html#Syncfusion_EJ2_Charts_BulletChartBulletDataLabel_Enable) property to true in `Tooltip`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
