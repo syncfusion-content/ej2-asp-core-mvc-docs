@@ -93,8 +93,8 @@ We need to register the created application in Azure Active Directory for **Micr
 
 ### Microsoft Identity Platform Authentication
 
-**Step:1** Go to below Azure Active Directory App Registration page.
-           https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps
+**Step:1** Go to Azure Active Directory App Registration page ->
+           [Click Azure Active Directory Link](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)
 
 **Step:2** Click New Registration in App Registration page.
 
@@ -125,15 +125,15 @@ We need to register the created application in Azure Active Directory for **Micr
 
 ### Individual Authentication
 
-1. For register the application, submit your email address and create a password.
+**Step:1** For register the application, submit your email address and create a password.
 
 ![Register](images/Register.png)
 
-2. Confirming registration by clicking Click here to confirm your account.
+**Step:2** Confirming registration by clicking **Click here to confirm your account**.
 
 ![Confirm](images/Confirm.png)
 
-3. Submit your registered email address and password to login the application.
+**Step:3** Submit your registered email address and password to login the application.
 
 ![Login](images/Login.png)
 
