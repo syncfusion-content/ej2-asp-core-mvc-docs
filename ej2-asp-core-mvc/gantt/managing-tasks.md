@@ -891,3 +891,32 @@ The split tasks can be merged either by using the `Merge Task` item of the Conte
 ## Troubleshoot: Editing works only when primary key column is defined
 
 Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property, it is mandatory that any one of the columns, must be a primary column. By default, the [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column will be the primary key column.  If [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column is not defined, we need to enable [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property.
+
+## Open new task dialog with default values
+
+You can open a new task dialog with default values by using `beforeOpenAddDialog` request type in [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
+{% include code-snippet/gantt/editing/task-dialog-default-value/task-dialog-default-value.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Gantt new task dialog with default values](images/task-dialog-with-default-values.png)
