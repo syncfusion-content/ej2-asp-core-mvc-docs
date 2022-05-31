@@ -105,7 +105,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Add the In-place Editor with Textbox
 
-By default, the Syncfusion ASP.NET MVC TextBox control is rendered in In-place Editor with the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property sets as Text.
+By default, the Syncfusion ASP.NET MVC TextBox control is rendered in In-place Editor with the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property sets as Text.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -134,9 +134,9 @@ By default, the Syncfusion ASP.NET MVC TextBox control is rendered in In-place E
 
 ## Configuring DropDownList
 
-You can render the Syncfusion ASP.NET MVC DropDownList by changing the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property as `DropDownList` and configure its properties and methods using the [`Model`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Model) property.
+You can render the Syncfusion ASP.NET MVC DropDownList by changing the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property as `DropDownList` and configure its properties and methods using the [Model](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Model) property.
 
-In the following sample, `Type` and `Model` values are configured to render the `DropDownList` control.
+In the following sample, `Type` and `Model` values are configured to render the `DropDownList` control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -165,9 +165,9 @@ In the following sample, `Type` and `Model` values are configured to render 
 
 ## Integrate DatePicker
 
-You can render the Essential JS2 DatePicker by changing the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property as `Date` and also configure its properties and methods using the [`Model`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Model) property.
+You can render the Essential JS2 DatePicker by changing the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property as `Date` and also configure its properties and methods using the [Model](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Model) property.
 
-In the following sample, `Type` and `Model` values are configured to render the `DatePicker` control.
+In the following sample, `Type` and `Model` values are configured to render the `DatePicker` control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -223,7 +223,7 @@ In the following sample, type and model values are configured to render the Text
 
 ## Submitting data to the server (save)
 
-You can submit editor value to the server by configuring the [`Url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Url), [`Adaptor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Adaptor) and [`PrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PrimaryKey).
+You can submit editor value to the server by configuring the [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Url), [Adaptor](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Adaptor) and [PrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PrimaryKey).
 
 | Property   | Usage                                           |
 |------------|---------------------------------------------------------|

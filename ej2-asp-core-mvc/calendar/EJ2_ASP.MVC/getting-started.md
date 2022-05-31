@@ -93,8 +93,6 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 Now, add the Syncfusion ASP.NET MVC Calendar control in `~/Home/Index.cshtml` page.
 
-The following example shows a basic Calendar control.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

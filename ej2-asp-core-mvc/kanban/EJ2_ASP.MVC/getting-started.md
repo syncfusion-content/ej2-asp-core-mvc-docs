@@ -119,7 +119,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Populating cards
 
-To populate the empty Kanban with cards, define the list or remote data using the `DataSource` property. To define `DataSource`, the mandatory fields in the list should be relevant to `KeyField`. In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
+To populate the empty Kanban with cards, define the list or remote data using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource) property. To define `DataSource`, the mandatory fields in the list should be relevant to [KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -204,7 +204,7 @@ public class KanbanDataModels
 
 ## Enable swimlane
 
-`Swimlane` can be enabled by mapping the tags `SwimlaneSettings.KeyField` to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
+`Swimlane` can be enabled by mapping the tags [SwimlaneSettings.KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanSwimlaneSettings.html#Syncfusion_EJ2_Kanban_KanbanSwimlaneSettings_KeyField) to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

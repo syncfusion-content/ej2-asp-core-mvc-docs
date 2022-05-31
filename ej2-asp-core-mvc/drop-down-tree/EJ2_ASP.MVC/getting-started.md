@@ -119,9 +119,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Binding data source
 
-The Dropdown Tree control can load data either the from local data sources or remote data services. This can be done using the `dataSource` property that is a member of the `fields` property. The dataSource property supports nested list of data and DataManager. Here, nested list of data is passed to the Dropdown Tree control.
-
-The following example illustrates the output in your browser.
+The Dropdown Tree control can load data either the from local data sources or remote data services. This can be done using the `dataSource` property that is a member of the [Fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownTree.html#Syncfusion_EJ2_DropDowns_DropDownTree_Fields) property. The dataSource property supports nested list of data and DataManager. Here, nested list of data is passed to the Dropdown Tree control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

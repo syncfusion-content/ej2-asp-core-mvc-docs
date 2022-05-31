@@ -119,7 +119,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Set the mask
 
-You can set the mask to the MaskedTextBox to validate the user input by using the [mask](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.MaskedTextBox.html#Syncfusion_EJ2_Inputs_MaskedTextBox_Mask) property. To know more about the usage of mask and configuration, refer to this [link](./mask-configuration/).
+You can set the mask to the MaskedTextBox to validate the user input by using the [Mask](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.MaskedTextBox.html#Syncfusion_EJ2_Inputs_MaskedTextBox_Mask) property. To know more about the usage of mask and configuration, refer to this [link](./mask-configuration/).
 
 The following example demonstrates the usage of mask element `0` that allows any single digit from `0` to `9`.
 
