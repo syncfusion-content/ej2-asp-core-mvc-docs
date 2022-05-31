@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2
+
+<div>
+    <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" toolbar="@(new List<string>() { "Add"})" actionBegin="onActionBegin">
+        <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                            endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+        </e-gantt-taskfields>
+        <e-gantt-editsettings allowAdding="true"></e-gantt-editsettings>
+    </ejs-gantt>
+</div>
+<script>
+    function onActionBegin(args) {
+        if (args.requestType == 'beforeOpenAddDialog') {
+            args.rowData.TaskName = 'Gantt';
+            args.rowData.Progress = 70;
+            args.rowData.ganttProperties.taskName = 'Gantt';
+            args.rowData.ganttProperties.progress = 70;
+        }
+     }
+</script>

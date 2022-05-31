@@ -1,0 +1,14 @@
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId"
+).Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditSettings(es=>
+es.AllowAdding(true)).Toolbar(new List<string>() { "Add" }).ActionBegin("onActionBegin").Render()
+
+<script>
+    function onActionBegin(args) {
+        if (args.requestType == 'beforeOpenAddDialog') {
+            args.rowData.TaskName = 'Gantt';
+            args.rowData.Progress = 70;
+            args.rowData.ganttProperties.taskName = 'Gantt';
+            args.rowData.ganttProperties.progress = 70;
+        }
+    }
+</script>
