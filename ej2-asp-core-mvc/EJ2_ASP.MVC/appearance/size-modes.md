@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Size Modes in ##Platform_Name## | Syncfusion
+title: Size Modes in ##Platform_Name## Common control | Syncfusion
 description: Learn here all about size modes in Syncfusion ##Platform_Name## and how to apply it to application or specific control.
 platform: ej2-asp-core-mvc
 control: common
@@ -117,7 +117,7 @@ Follow the below steps to change the size mode for an application at runtime.
 
 ![change-size-mode-for-application-at-runtime](images/change-size-mode-for-application-at-runtime.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/SizeModes/SizeModeApp)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-size-modes/tree/main/SizeModeApp)
 
 ## Change size mode for a control at runtime
 
@@ -173,7 +173,7 @@ Refer to the following code, in which the `e-bigger` class is added for enabling
 
 ![change-size-mode-for-a-control-at-runtime](images/change-size-mode-for-a-component-at-runtime.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/SizeModes/SizeModeControl)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-size-modes/tree/main/SizeModeControl)
 
 ## See Also
 

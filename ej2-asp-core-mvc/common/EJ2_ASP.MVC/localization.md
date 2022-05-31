@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Common control
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Common control and more.
+title: Localization in ##Platform_Name## Common control | Syncfusion
+description: Learn here all about the Localizations in Syncfusion ##Platform_Name## Common control and much more.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -82,7 +82,7 @@ Now, you can add the Syncfusion ASP.NET MVC control in `~/Views/Home/Index.cshtm
 
 ![Static culture](images/grid-locale.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Localization/Localization-with-static-culture)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization/tree/main/Localization-with-static-culture)
 
 ## Dynamically set the culture
 
@@ -164,7 +164,7 @@ namespace Localization_with_dynamic_culture.Models
 
 ![Change culture dynamically](images/dynamic-culture-switch.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Localization/Localization-with-dynamic-culture)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization/tree/main/Localization-with-dynamic-culture)
 
 
 ## Changing current locale
