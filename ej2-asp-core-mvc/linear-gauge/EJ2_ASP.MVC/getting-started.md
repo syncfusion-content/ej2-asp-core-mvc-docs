@@ -107,7 +107,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Add Gauge Title
 
-The title for the Linear Gauge can be set using `title` property in Linear Gauge.
+The title for the Linear Gauge can be set using [Title](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGauge.html#Syncfusion_EJ2_LinearGauge_LinearGauge_Title) property in Linear Gauge.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -121,7 +121,7 @@ The title for the Linear Gauge can be set using `title` property in Linear Gauge
 
 ## Axis
 
-The start value and end value for the Linear Gauge can be set using the `minimum` and `maximum` properties in the `axis` object.
+The start value and end value for the Linear Gauge can be set using the [Minimum](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_Minimum) and [Maximum](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.LinearGauge.LinearGaugeAxis.html#Syncfusion_EJ2_LinearGauge_LinearGaugeAxis_Maximum) properties in the `axis` object.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

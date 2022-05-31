@@ -119,9 +119,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Range validation
 
-You can set the minimum and maximum range of values in the NumericTextBox using the [min](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Min) and [max](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Max) properties, so the numeric value should be in the min and max range.
+You can set the minimum and maximum range of values in the NumericTextBox using the [Min](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Min) and [Max](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Max) properties, so the numeric value should be in the min and max range.
 
-The validation behavior depends on the [strictMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_StrictMode) property.
+The validation behavior depends on the [StrictMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_StrictMode) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -147,7 +147,7 @@ The validation behavior depends on the [strictMode](https://help.syncfusion.com/
 
 ## Formatting the value
 
-User can set the format of the NumericTextBox control using [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format, when the control is in focused out state. For more information about formatting the value, refer to this [link](./formats/).
+User can set the format of the NumericTextBox control using [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format, when the control is in focused out state. For more information about formatting the value, refer to this [link](./formats/).
 
 The below example demonstrates format the value by using currency format value `c2`.
 
@@ -175,7 +175,7 @@ The below example demonstrates format the value by using currency format value `
 
 ## Precision of numbers
 
-You can restrict the number of decimals to be entered in the NumericTextBox by using the [decimals](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Decimals) and [validateDecimalOnType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_ValidateDecimalOnType) properties. So, you can't enter the number whose precision is greater than the mentioned decimals.
+You can restrict the number of decimals to be entered in the NumericTextBox by using the [Decimals](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Decimals) and [ValidateDecimalOnType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_ValidateDecimalOnType) properties. So, you can't enter the number whose precision is greater than the mentioned decimals.
 
 * If `validateDecimalOnType` is false, number of decimals will not be restricted. Else, number of decimals will be restricted while typing in the NumericTextBox.
 
