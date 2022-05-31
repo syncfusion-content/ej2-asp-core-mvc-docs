@@ -121,9 +121,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Modal Dialog
 
-A [`modal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
+A [modal](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
 
-While the user clicks the overlay, the action can be handled through the [`OverlayClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_OverlayClick) event. In the below sample, the Dialog close action is performed while clicking on the overlay.
+While the user clicks the overlay, the action can be handled through the [OverlayClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_OverlayClick) event. In the below sample, the Dialog close action is performed while clicking on the overlay.
 
 > When the modal dialog is opened, the Dialog's target scrolling will be disabled. The scrolling will be enabled again once close the Dialog.
 
@@ -161,7 +161,7 @@ html, body {
 
 ## Enable header
 
-The Dialog header can be enabled by adding the header content as text or HTML content through the [`Header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property.
+The Dialog header can be enabled by adding the header content as text or HTML content through the [Header](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -189,7 +189,7 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 
 The Dialog provides built-in support to render the `buttons` on the footer (for ex: `OK` or `Cancel` buttons). Each Dialog button allows the user to perform any action while clicking on it.
 
-The primary button will be focused automatically on open the Dialog, and add the [`Click`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogDialogButton.html#Syncfusion_EJ2_Popups_DialogDialogButton_Click) event to handle the actions.
+The primary button will be focused automatically on open the Dialog, and add the [Click](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.DialogDialogButton.html#Syncfusion_EJ2_Popups_DialogDialogButton_Click) event to handle the actions.
 
 > When the Dialog initialize with more than one primary buttons, the first primary button gets focus on open the Dialog.
 
@@ -253,7 +253,7 @@ The Dialog supports to [drag](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ## Positioning
 
-The Dialog position can be set through the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Position) property by providing X and Y coordinates. The Dialog can be positioned inside the target container based on the given X and Y values.
+The Dialog position can be set through the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Position) property by providing X and Y coordinates. The Dialog can be positioned inside the target container based on the given X and Y values.
 
 For example <code>position:{ X:'center', Y:'center' }</code> the possible values.
 

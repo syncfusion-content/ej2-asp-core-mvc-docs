@@ -94,13 +94,13 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 Now, add the Syncfusion ASP.NET MVC Dashboard Layout control in `~/Views/Home/Index.cshtml` page by the following ways.
 
 * Defined the panels property as the attribute in the content template.
-* Using the [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property through helper.
+* Using the [Panels](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property through helper.
 
 ### Setting the panels property using content template
 
 You can render the Dashboard Layout control by adding the panels property as the attribute to the content template. Add the content template with panel definition for Dashboard Layout into your `index.cshtml` page which is present under `Views/Home` folder.
 
-In the following sample, the dashboard layout is rendered with [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property using content template.
+In the following sample, the dashboard layout is rendered with [Panels](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property using content template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -134,7 +134,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 You can render the Dashboard Layout control by using the **panels** property through helper.
 
-In the following sample, the dashboard layout is rendered with [`panels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Panels.html) property using tag helper.
+In the following sample, the dashboard layout is rendered with [Panels](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property using tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

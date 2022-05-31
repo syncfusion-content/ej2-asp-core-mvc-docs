@@ -93,8 +93,6 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 Now, add the Syncfusion ASP.NET MVC DatePicker control in `~/Views/Home/Index.cshtml` page.
 
-The following example shows a basic DatePicker control.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -121,7 +119,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Setting the value within min and max dates
 
-To restrict the selection of date within a specified range, use the min and max properties.
+To restrict the selection of date within a specified range, use the [Min](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Min) and [Max](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Max) properties.
 
 The below example demonstrates the DatePicker to select a date within a range from 5 to 27 in a current month.
 
