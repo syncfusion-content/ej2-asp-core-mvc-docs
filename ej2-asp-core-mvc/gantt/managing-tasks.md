@@ -894,7 +894,7 @@ Editing feature requires a primary key column for CRUD operations. While definin
 
 ## Open new task dialog with default values
 
-You can open a new task dialog with default values by using `beforeOpenAddDialog` request type in [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event.
+You can set default values when new task dialog opens using [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event when `requestType` is `beforeOpenAddDialog`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
