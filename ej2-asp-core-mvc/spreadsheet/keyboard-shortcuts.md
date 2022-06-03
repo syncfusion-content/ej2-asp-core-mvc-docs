@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Keyboard Shortcuts
+# Keyboard Shortcuts And Navigation
 
 The keyboard shortcuts supported in the spreadsheet are,
 
