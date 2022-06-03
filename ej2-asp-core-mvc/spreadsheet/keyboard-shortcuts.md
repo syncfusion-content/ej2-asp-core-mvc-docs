@@ -65,7 +65,7 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Ctrl + Shift + Caret sign | Apply the Scientific number format with two decimal places. |
 | Ctrl + Shift + Number sign |Apply the Date format with the day, month, and year. |
 | Ctrl + Shift + At sign | Apply the Time format with the hour and minute, and AM or PM. |
-| Ctrl + Shift + Exclamation point | Apply the Number format with two decimal places, thousands separator, and minus sign for negative values. |
+| Ctrl + Shift + Exclamation point | Apply the Number format with two decimal places, thousands separator, and minus sign (-) for negative values. |
 | Ctrl + Spacebar | Select an entire column in a worksheet. |
 | Shift + Spacebar | Select an entire row in a worksheet. |
 | Shift + F3 | opens `Insert Function` dialog. |
