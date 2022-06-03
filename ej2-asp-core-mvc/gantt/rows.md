@@ -275,6 +275,32 @@ In the following sample, we have prevented the drop action based on the position
 {% endif %}
 
 
+### Prevent reordering a row as child to another row
+
+You can prevent dropping rows as children to the target row and instead drop it above to target row by using gantt's `reorderRows` method. You can check the records drop position before dropping it and if the position is `middleSegment` then drop the records in the above position using the reorderRows method in the [rowDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDrop) event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/preventReorder/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="PreventReorder.cs" %}
+{% include code-snippet/gantt/rows/preventReorder/preventReorder.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/preventReorder/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="PreventReorder.cs" %}
+{% include code-snippet/gantt/rows/preventReorder/preventReorder.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Perform row drag and drop action programmatically
 
