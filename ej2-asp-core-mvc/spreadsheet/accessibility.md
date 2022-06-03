@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility
+# Accessibility in Spreadsheet
 
 The practice of making information and activities usable for as many people as possible is accessibility. Accessibility in spreadsheet component is achieved through `WAI-ARIA`. Spreadsheet features are effectively accessed through assistive technologies such as screen readers.
 
