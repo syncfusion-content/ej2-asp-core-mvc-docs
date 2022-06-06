@@ -24,16 +24,16 @@ The following example code illustrates how to header and footer edit in `Documen
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/disable-header-footer/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Disable-Header-And -Footer-Container.cs" %}
+{% highlight c# tabtitle="document-editor.cs" %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/document-editor-container/disable-header-and -footer-container/razor %}
+{% include code-snippet/document-editor-container/disable-header-footer/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Disable-Header-And -Footer-Container.cs" %}
+{% highlight c# tabtitle="document-editor.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
