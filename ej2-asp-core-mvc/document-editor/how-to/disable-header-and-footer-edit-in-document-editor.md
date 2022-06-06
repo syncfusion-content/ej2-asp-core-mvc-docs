@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to disable header and footer edit in ##Platform_Name## Document Editor Component
-description: Learn how to to disable header and footer edit in Document from the Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to to disable header and footer edit in Document from the Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS2 and more.
 platform: ej2-asp-core-mvc
 control: Disable Header And Footer
 publishingplatform: ##Platform_Name##
@@ -24,16 +24,16 @@ The following example code illustrates how to header and footer edit in `Documen
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/disable-header-footer/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Disable-Header-And -Footer-Container.cs" %}
+{% highlight c# tabtitle="document-editor.cs" %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/document-editor-container/disable-header-and -footer-container/razor %}
+{% include code-snippet/document-editor-container/disable-header-footer/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Disable-Header-And -Footer-Container.cs" %}
+{% highlight c# tabtitle="document-editor.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
