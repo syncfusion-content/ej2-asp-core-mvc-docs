@@ -40,7 +40,7 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Alt + M | Go to `Formulas` tab. |
 | Alt + A | Go to `Data` tab. |
 | Alt + W | Go to `View` tab. |
-| Alt | Selected tab get focused. |
+| Alt | Selected tab gets focused. |
 | Tab | Move the focus to first item in current tab ribbon content. |
 | Shift + Tab | Move the focus back to the item in current tab ribbon content. |
 | Right or Left arrow| move the focus to next or previous items in the tab. |
