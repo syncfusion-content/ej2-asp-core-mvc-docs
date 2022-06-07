@@ -49,7 +49,7 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Spacebar or Enter | Activate a selected button. |
 | Shift + Down | If the selected item is dropdown button, then the dropdown popup will open. |
 | Shift + Up | If the selected item is dropdown button, then the dropdown popup will close. |
-| Ctrl + F1  | Expand or collapse the ribbon content. |
+| Ctrl + F8 | Expand or collapse the ribbon content. |
 | Ctrl + Shift + U | Expand or collapse the formula bar. |
 | Ctrl + 9 | Hide the selected row. |
 | Ctrl + 0 | Hide the selected column. |
@@ -76,10 +76,11 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Ctrl + Right | Move to the last  cell of the selected column. |
 | Ctrl + Up | Move to the first  cell of the selected row. |
 | Ctrl + Down | Move to the last  cell of the selected row. |
-| Ctrl + Shift + left | Extend the selection to the last Nonblank cell in the same column as the active cell. |
-| Ctrl + Shift + Right | Extend the selection to the first Nonblank cell in the same column as the active cell. |
-| Ctrl + Shift + Up | Extend the selection to the first Nonblank cell in the same row as the active cell. |
-| Ctrl + Shift + Down | Extend the selection to the last Nonblank cell in the same row as the active cell. |
+| Ctrl + Shift + left | Extend the selection of cells to the last non-blank cell in the same column as the active cell. |
+| Ctrl + Shift + Right | Extend the selection of cells to the first non-blank cell in the same column as the active cell. |
+| Ctrl + Shift + Up | Extend the selection of cells to the first non-blank cell in the same row as the active cell. |
+| Ctrl + Shift + Down | Extend the selection of cells to the last non-blank cell in the same row as the active cell. |
+| Shift + Alt + K | opens `Sheets list`. |
 
 ## See Also
 
