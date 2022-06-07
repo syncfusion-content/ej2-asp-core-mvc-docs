@@ -1,14 +1,14 @@
 ---
 layout: post
-title: System Requirements in ##Platform_Name## Controls
-description: Learn here all about system requirements with supported frameworks in Syncfusion ##Platform_Name## Controls and more.
+title: System Requirements in ASP .NET Core EJ2 - Syncfusion
+description: Checkout and learn here all about the system requirements needed to use Syncfusion ASP .NET Core EJ2 Components.
 platform: ej2-asp-core-mvc
 control: System Requirements
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# System Requirements for ASP.NET Core Controls
+# System Requirements for ASP .NET Core EJ2 Components
 
 To get started with ASP.NET Core application, ensure the following software to be installed in the machine.
 
