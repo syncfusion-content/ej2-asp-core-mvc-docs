@@ -1,4 +1,6 @@
-@(Html.EJS().Grid<Orders>("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+@using DataAnnotation.Controllers; 
+
+@(Html.EJS().Grid<HomeController.Orders>("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("150").Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();

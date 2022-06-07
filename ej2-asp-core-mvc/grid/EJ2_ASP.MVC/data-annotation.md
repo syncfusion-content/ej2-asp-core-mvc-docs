@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Annotation
+# Data Annotation in ASP.NET MVC DataGrid Component
 
-Data Annotations helps us to define rules to the model classes or properties to perform data validation and display suitable messages to end users.
+Data Annotations help you to define rules to the model classes or properties to perform data validation and display suitable messages to end users.
 
-The Data Annotation can be enabled by referencing the System.ComponentModel.DataAnnotations namespace which maps the data annotations to the corresponding DataGrid Column property.
+The Data Annotation can be enabled by referencing the **System.ComponentModel.DataAnnotations** namespace which maps data annotations to the corresponding DataGrid Column property.
 
-> DataGrid Property has more priority than Data Annotation. For Instance, if DisplayName Attribute is set to a Field in DataGrid Model class and also HeaderText is set to the same DataGrid column property, then the value of HeaderText property will be considered and shown in the DataGrid header.
+> The DataGrid Property has more priority than the Data Annotation. For Instance, if the DisplayName Attribute is set to a Field in the DataGrid Model class and the HeaderText is set to the same DataGrid column property, the value of the HeaderText property will be considered and shown in the DataGrid header.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

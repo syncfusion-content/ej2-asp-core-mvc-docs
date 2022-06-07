@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Annotation
+# Data Annotation in ASP.NET Core DataGrid Component
 
-Data Annotations helps us to define rules to the model classes or properties to perform data validation and display suitable messages to end users.
+Data Annotations help you to define rules to the model classes or properties to perform data validation and display suitable messages to the end users.
 
-The Data Annotation can be enabled by setting the `TValue` property of Grid which maps the data annotations to the corresponding DataGrid Column property.
+The Data Annotation can be enabled by setting the `TValue` property of the Grid which maps data annotations to the corresponding DataGrid Column property.
 
-> Grid Properties has more priority than Data Annotation. For Instance, if DisplayName Attribute is set to a Field in Grid Model class and also we set different value to the respective Grid Columns property HeaderText, then the value of HeaderText property will be considered and shown in Grid header.
+> The Grid Properties has more priority than the Data Annotation. For Instance, if the DisplayName Attribute is set to a Field in the Grid Model class and set the different value to the respective Grid Columns property HeaderText, the value of the HeaderText property will be considered and shown in the Grid header.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
