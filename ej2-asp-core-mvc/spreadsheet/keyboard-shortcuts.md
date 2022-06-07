@@ -40,9 +40,9 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Alt + M | Go to `Formulas` tab. |
 | Alt + A | Go to `Data` tab. |
 | Alt + W | Go to `View` tab. |
-| Alt | Selected tab get Focused. |
+| Alt | Selected tab get focused. |
 | Tab | Move the focus to first item in current tab ribbon content. |
-| Shift + Tab | Moves the focus back to the item in current tab ribbon content. |
+| Shift + Tab | Move the focus back to the item in current tab ribbon content. |
 | Right or Left arrow| move the focus to next or previous items in the tab. |
 | Up arrow | When a menu is open, move focus to the next function. |
 | Down arrow | When a menu is open, move focus to the previous function. |
@@ -72,10 +72,10 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Ctrl + Alt + N | opens `new` workbook. |
 | Shift + Page down | Perform page down by selecting all cells between. |
 | Shift + Page Up | Perform page Up by selecting all cells between. |
-| Ctrl + left | Move to the first  cell of the selected column. |
-| Ctrl + Right | Move to the last  cell of the selected column. |
-| Ctrl + Up | Move to the first  cell of the selected row. |
-| Ctrl + Down | Move to the last  cell of the selected row. |
+| Ctrl + left | Move to the first cell of the selected column. |
+| Ctrl + Right | Move to the last cell of the selected column. |
+| Ctrl + Up | Move to the first cell of the selected row. |
+| Ctrl + Down | Move to the last cell of the selected row. |
 | Ctrl + Shift + left | Extend the selection of cells to the last non-blank cell in the same column as the active cell. |
 | Ctrl + Shift + Right | Extend the selection of cells to the first non-blank cell in the same column as the active cell. |
 | Ctrl + Shift + Up | Extend the selection of cells to the first non-blank cell in the same row as the active cell. |
