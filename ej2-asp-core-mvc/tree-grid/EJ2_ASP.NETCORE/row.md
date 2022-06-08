@@ -318,4 +318,20 @@ The following events are triggered while drag and drop the treegrid rows.
 [`RowDrag`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDrag.html) - Triggers while dragging the treegrid row. <br/>
 [`RowDrop`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDrop.html) - Triggers when a drag element is dropped on the target element. <br/>
 
+### Prevent reordering a row as child to another row
+
+You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) event argument. You can also change the drop position after cancelling using `reorderRows` method.
+
+In the below example drop action is cancelled and dropped above to target row.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/row/prevent-reorder/taghelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="reorder.cs" %}
+{% include code-snippet/tree-grid/row/prevent-reorder/reorder.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 > You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
