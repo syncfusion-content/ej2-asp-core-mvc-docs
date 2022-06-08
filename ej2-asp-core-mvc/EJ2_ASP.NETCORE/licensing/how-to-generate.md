@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion license generation - Syncfusion
-description: Learn here about how to generate Syncfusion ASP .NET Core EJ2 license key for syncfusion ASP .NET Core EJ2 application for license validation.
+description: Learn here about how to generate Syncfusion ##Platform_Name## license key for syncfusion ##Platform_Name## application for license validation.
 platform: ej2-asp-core-mvc
 control: License Key Generation
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installing Syncfusion ASP.NET MVC EJ2 web installer - Syncfusion
-description: Learn here about how to install Syncfusion ASP.NET MVC EJ2 web installer after downloading from our Syncfusion website.
+title: Installing Syncfusion ##Platform_Name## web installer - Syncfusion
+description: Learn here about how to install Syncfusion ##Platform_Name## web installer after downloading from our Syncfusion website.
 platform: ej2-asp-core-mvc
 control: Installation Using Web Installer
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Upgrading Syncfusion ASP .NET MVC EJ2 installer to a latest version - Syncfusion
-description: Learn here about the how upgrade Syncfusion ASP .NET MVC EJ2 installer to a latest version from website and control panel.
+title: Upgrading Syncfusion ##Platform_Name## installer to a latest version - Syncfusion
+description: Learn here about the how upgrade Syncfusion ##Platform_Name## installer to a latest version from website and control panel.
 platform: ej2-asp-core-mvc
 control: Upgrading
 publishingplatform: ##Platform_Name##

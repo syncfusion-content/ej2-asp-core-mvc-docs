@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Downloading Syncfusion ASP.NET MVC EJ2 offline installer - Syncfusion
-description: Learn here about how to download the Syncfusion ASP.NET MVC EJ2 offline installer from our Syncfusion website with license.
+title: Downloading Syncfusion ##Platform_Name## offline installer - Syncfusion
+description: Learn here about how to download the Syncfusion ##Platform_Name## offline installer from our Syncfusion website with license.
 platform: ej2-asp-core-mvc
 control: Download
 publishingplatform: ##Platform_Name##

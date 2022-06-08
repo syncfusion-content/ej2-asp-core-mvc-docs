@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Downloading Syncfusion ASP.NET Core EJ2 web installer - Syncfusion
-description: Learn here about the how to download Syncfusion ASP.NET Core EJ2 web installer from our syncfusion website with license.
+title: Downloading Syncfusion ##Platform_Name## web installer - Syncfusion
+description: Learn here about the how to download Syncfusion ##Platform_Name## web installer from our syncfusion website with license.
 platform: ej2-asp-core-mvc
 control: Download
 publishingplatform: ##Platform_Name##

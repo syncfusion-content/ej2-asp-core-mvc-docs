@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installing Syncfusion ASP.NET Core EJ2 installer - Syncfusion
-description: Learn here about the how to install Syncfusion ASP.NET Core EJ2 offline installer after downloading from our syncfusion website.
+title: Installing Syncfusion ##Platform_Name## installer - Syncfusion
+description: Learn here about the how to install Syncfusion ##Platform_Name## offline installer after downloading from our syncfusion website.
 platform: ej2-asp-core-mvc
 control: Installation Using Off Line Installer
 publishingplatform: ##Platform_Name##

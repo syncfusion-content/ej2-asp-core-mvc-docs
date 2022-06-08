@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion license registration - Syncfusion
-description: Learn here about how to register Syncfusion ASP .NET Core EJ2 license key for ASP .NET Core EJ2 application for license validation.
+description: Learn here about how to register Syncfusion ##Platform_Name## license key for ##Platform_Name## application for license validation.
 platform: ej2-asp-core-mvc
 control: License Key Registration
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Downloading Syncfusion ASP.NET Core EJ2 Mac installer - Syncfusion
-description: Learn here about the how to download Syncfusion ASP.NET Core EJ2 mac installer packages from syncfusion website.
+title: Downloading Syncfusion ##Platform_Name## Mac installer - Syncfusion
+description: Learn here about the how to download Syncfusion ##Platform_Name## mac installer packages from syncfusion website.
 platform: ej2-asp-core-mvc
 control: Download
 publishingplatform: ##Platform_Name##

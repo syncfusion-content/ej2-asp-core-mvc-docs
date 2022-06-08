@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion licensing errors - Syncfusion
-description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion ASP .NET MVC EJ2 applications.
+description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion ##Platform_Name## applications.
 platform: ej2-asp-core-mvc
 control: Licensing Errors
 publishingplatform: ##Platform_Name##
