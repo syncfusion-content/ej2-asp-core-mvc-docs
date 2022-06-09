@@ -40,15 +40,12 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Alt + M | Go to `Formulas` tab. |
 | Alt + A | Go to `Data` tab. |
 | Alt + W | Go to `View` tab. |
-| Alt | Selected tab gets focused. |
-| Tab | Move the focus to first item in current tab ribbon content. |
-| Shift + Tab | Move the focus back to the item in current tab ribbon content. |
-| Right or Left arrow| Move the focus to next or previous items in the tab. |
-| Up arrow | When a menu is open, move focus to the next function. |
-| Down arrow | When a menu is open, move focus to the previous function. |
+| Tab | Move the focus to first or next item in current tab ribbon content if the focus is on ribbon. |
+| Shift + Tab | Move the focus to previous item in current tab ribbon content if the focus is on ribbon.|
+| Right or Left arrow| Move the focus to next or previous item in the tab if the focus is on ribbon tab.|
+| Up arrow | When a menu is open, move focus to the next item. |
+| Down arrow | When a menu is open, move focus to the previous item. |
 | Spacebar or Enter | Activate a selected button. |
-| Shift + Down | If the selected item is dropdown button, then the dropdown popup will open. |
-| Shift + Up | If the selected item is dropdown button, then the dropdown popup will close. |
 | Ctrl + F8  | Expand or collapse the ribbon content. |
 | Ctrl + Shift + U | Expand or collapse the formula bar. |
 | Ctrl + 9 | Hide the selected row. |
@@ -57,10 +54,11 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Ctrl + Home | Move to the first cell on a worksheet, left most first row and first column cell. |
 | Ctrl + Shift + Home | Extend the selection of cells to the beginning of the worksheet |
 | Ctrl + End | Move to the last cell on a worksheet, right most last column and last row cell |
-| Ctrl + Shift + Ampersand sign | Apply an outline border to the selected cells. |
-| Ctrl + Shift + Underscore | Remove the outline border from the selected cells. |
+| Ctrl + Ampersand sign | Apply an outline border to the selected cells. |
+| Ctrl + Shift + Ampersand sign | Remove the outline border from the selected cells. |
 | Ctrl + Shift + Tilde sign | Apply the General number format. |
 | Ctrl + Shift + Dollar sign | Apply the Currency format with two decimal places (negative numbers in parentheses). |
+| Shift + f10| Add `new sheet`. |
 | Ctrl + Shift + Percent sign | Apply the Percentage format with no decimal places. |
 | Ctrl + Shift + Caret sign | Apply the Scientific number format with two decimal places. |
 | Ctrl + Shift + Number sign |Apply the Date format with the day, month, and year. |
