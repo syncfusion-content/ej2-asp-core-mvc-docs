@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Licensing Errors in ##Platform_Name## Component
-description: Learn here all about Licensing Errors in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Overview of Syncfusion licensing errors - Syncfusion
+description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion ##Platform_Name## applications.
 platform: ej2-asp-core-mvc
 control: Licensing Errors
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Licensing Errors
+# Syncfusion Licensing Errors
+
 
 Licensing error pop up is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
 
