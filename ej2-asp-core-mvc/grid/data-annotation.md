@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Annotation in ASP.NET MVC DataGrid Component
+# Data Annotation
 
 Data Annotations help you to define rules to the model classes or properties to perform data validation and display suitable messages to end users.
 
