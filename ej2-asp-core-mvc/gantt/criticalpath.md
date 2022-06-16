@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Critical Path
+# Critical Path feature
 
 The critical path in a project is indicated by a single task or a series of tasks. The critical path describes the project's calculated start date or end date. If a critical path task is delayed, the entire project will be delayed.
 
@@ -42,7 +42,7 @@ The critical path can be enabled in Gantt by using the built-in toolbar button o
 
 ![Alt text](images/criticalpath.PNG)
 
-# Customize critical path taskbar
+## Customize critical path taskbar
 
 The critical path taskbar  can be customized by using [`queryTaskbarInfo`] event.
 
