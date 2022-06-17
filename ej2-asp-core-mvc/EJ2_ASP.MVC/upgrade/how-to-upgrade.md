@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Upgrading in Syncfusion ##Platform_Name## Component
-description: Learn here all about Upgrading in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Upgrading Syncfusion ##Platform_Name## installer to a latest version - Syncfusion
+description: Learn here about the how upgrade Syncfusion ##Platform_Name## installer to a latest version from website and control panel.
 platform: ej2-asp-core-mvc
 control: Upgrading
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion ASP . NET MVC
+# Upgrading Syncfusion ASP .NET MVC EJ2 installer to a latest version
 
 Syncfusion releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 

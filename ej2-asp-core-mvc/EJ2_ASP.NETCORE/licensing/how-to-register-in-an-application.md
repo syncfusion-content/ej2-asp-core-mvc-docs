@@ -1,14 +1,14 @@
 ---
 layout: post
-title: License Key Registration in ##Platform_Name## Component
-description: Learn here all about License key registration in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Overview of Syncfusion license registration - Syncfusion
+description: Learn here about how to register Syncfusion ##Platform_Name## license key for ##Platform_Name## application for license validation.
 platform: ej2-asp-core-mvc
 control: License Key Registration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Register Syncfusion License key in ASP.NET Core application
+# Register Syncfusion License key in ASP .NET Core EJ2 application
 
 Syncfusion license key should be registered, if your project using Syncfusion ASP.NET Core packages refer from [nuget.org](https://www.nuget.org/packages?q=syncfusion) or from syncfusion installer. The generated license key is a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
 
