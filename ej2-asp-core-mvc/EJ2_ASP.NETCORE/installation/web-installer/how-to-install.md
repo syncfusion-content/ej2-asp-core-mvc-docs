@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Installation Using Syncfusion Web Installer in ##Platform_Name## Component
-description: Learn here all about installation using web installer in Syncfusion ##Platform_Name## component of syncfusion and more.
+title: Installing Syncfusion ##Platform_Name## web installer - Syncfusion
+description: Learn here about how to install Syncfusion ##Platform_Name## web installer after downloading from our Syncfusion website.
 platform: ej2-asp-core-mvc
 control: Installation Using Web Installer
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Installation using web Installer
+# Installing Syncfusion ASP.NET Core EJ2  Web Installer
 
-You can refer to the [Download](https://ej2.syncfusion.com/aspnetcore/documentation/installation/download/) section to learn how to get the ASP.NET Core - EJ2 trial or licensed installer.
 
 ## Overview
 
@@ -60,7 +59,7 @@ The steps below shows how to install Essential Studio ASP.NET Core - EJ2 Web Ins
 
 6. The Confirmation Wizard will appear with the list of products to be installed/uninstalled. You can view and modify the list of products that will be installed and uninstalled from this page.
 
-    ![Web Installer Product install/uninstall list](images\Webinstaller-Installation-8.png)
+    ![Web Installer Product Install/Uninstall Wizard](images\Webinstaller-uninstallation-8.png)
 
     >**NOTE** <br /> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation.
 
@@ -114,13 +113,8 @@ Follow either one of the option below to uninstall Syncfusion Essential Studio A
 
 Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
-Open the Syncfusion Essential Studio ASP.NET Core - EJ2 Online Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+![Web Installer Installed Products Uninstall](images\Webinstaller-uninstallation-4.png)
 
-![Web Installer Setup](images\Webinstaller-uninstallation-1.png)
-
-The Syncfusion ASP.NET Core - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
-
-![Web Installer welcome wizard](images\Webinstaller-uninstallation-2.png)
 
 ### Option 2: Uninstall the ASP.NET Core from Windows Control Panel
 
@@ -130,7 +124,11 @@ You can uninstall all the installed products by selecting the **Syncfusion Essen
 
 >**NOTE** <br /> If the **Syncfusion Essential Studio for** ASP.NET Core **{version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio ASP.NET Core - EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
 
-1. The Platform Selection Wizard will appear. From the **Installed** tab, select the products to be uninstalled. To select all the products, check the **Uninstall All** checkbox. Click the Next button.
+1. The Syncfusion ASP.NET Core - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
+
+    ![Web Installer welcome wizard](images\Webinstaller-uninstallation-2.png)
+
+2. The Platform Selection Wizard will appear. From the **Installed** tab, select the products to be uninstalled. To select all the products, check the **Uninstall All** checkbox. Click the Next button.
 
     ***Installed***
 
@@ -142,37 +140,37 @@ You can uninstall all the installed products by selecting the **Syncfusion Essen
 
     ![Web Installer Uninstall Available Tab](images\Webinstaller-uninstallation-5.png)
 
-2. If any other products selected for installation, Uninstall previous version wizard will be displayed with the previous version(s) installed for the selected products. Here, you can view the list of installed previous versions for the selected products. Select **Uninstall All** checkbox to select all the versions. Click Next.
+3. If any other products selected for installation, Uninstall previous version wizard will be displayed with the previous version(s) installed for the selected products. Here, you can view the list of installed previous versions for the selected products. Select **Uninstall All** checkbox to select all the versions. Click Next.
 
     ![Web Installer Uninstall Previous version Wizard](images\Webinstaller-uninstallation-6.png)
 
-3. Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
+4. Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
     ![Web Installer Uninstall Previous confirmation](images\Webinstaller-uninstallation-7.png)
 
-4. The Confirmation Wizard will appear with the list of products to be installed/uninstalled. Here you can view and modify the list of products that will be installed/uninstalled.
+5. The Confirmation Wizard will appear with the list of products to be installed/uninstalled. Here you can view and modify the list of products that will be installed/uninstalled.
 
     ![Web Installer Product Install/Uninstall Wizard](images\Webinstaller-uninstallation-8.png)
 
     >**NOTE** <br /> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation.
 
-5. The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
+6. The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
     ![Web Installer Uninstall Configuration Wizard](images\Webinstaller-uninstallation-9.png)
 
-6. After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click the Next button.
+7. After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click the Next button.
 
-7. The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
+8. The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
 
     ![Web Installer Login Wizard](images\Webinstaller-uninstallation-10.png)
 
     >**IMPORTANT** <br /> The products you have chosen will be installed based on your syncfusion License (Trial or Licensed).
 
-8. The download, installation and uninstallation progresses will be shown.
+9. The download, installation and uninstallation progresses will be shown.
 
     ![Web Installer Uninstallation Wizard](images\Webinstaller-uninstallation-11.png)
 
-9. When the installation is finished, the **Summary** wizard will appear. Here, you can see the list of products that have been successfully and unsuccessfully installed/uninstalled. To close the Summary wizard, click Finish.
+10. When the installation is finished, the **Summary** wizard will appear. Here, you can see the list of products that have been successfully and unsuccessfully installed/uninstalled. To close the Summary wizard, click Finish.
 
     ![Web Installer Uninstallation Summary](images\Webinstaller-uninstallation-12.png)
 

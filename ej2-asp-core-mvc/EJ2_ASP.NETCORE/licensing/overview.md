@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in Syncfusion ##Platform_Name## Component
-description: Learn here all about overview in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Overview of Syncfusion license and unlock keys - Syncfusion
+description: Learn here about the Syncfusion license and unlock keys and difference between license and unlock keys.
 platform: ej2-asp-core-mvc
 control: Overview
 publishingplatform: ##Platform_Name##
