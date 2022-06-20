@@ -1,10 +1,11 @@
-@using DataAnnotation.Controllers; 
+ @(Html.EJS().Grid<OrdersDetails>("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().AllowPaging().Columns(col =>
+            {
+                col.Field(f=>f.OrderID).Add();
 
-@(Html.EJS().Grid<HomeController.Orders>("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("150").Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
-    col.Field("Freight").HeaderText("Freight").EditType("numericedit").Width("160").Format("N2").Add();
-    col.Field("ShipCountry").EditType("dropdownedit").HeaderText("Ship Country").Width("140").Add();
-
-}).AllowPaging().PageSettings(page => page.PageCount(2)).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render())
+                col.Field(f => f.EmployeeID).Add();
+                col.Field(f=>f.CustomerID).Add();
+                col.Field(f=>f.Freight).Add();                
+                col.Field(f=>f.ShipCity).Add();
+                col.Field(f=>f.ShipName).Add();
+                col.Field(f=>f.ShipCountry).Add();
+            }).EditSettings(e => e.AllowAdding(true).AllowEditing(true).AllowDeleting(true)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).FilterSettings(f => f.Type(Syncfusion.EJ2.Grids.FilterType.Menu)).Render())
