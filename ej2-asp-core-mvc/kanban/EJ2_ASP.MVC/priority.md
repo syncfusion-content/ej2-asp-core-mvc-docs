@@ -47,6 +47,9 @@ Column B having Card D with priority value `5`. Dropped Card D between Card A an
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/priority/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/priority/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -57,6 +60,9 @@ Column B having Card D with priority value `5`. Dropped Card D between Card A an
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/priority/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/priority/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

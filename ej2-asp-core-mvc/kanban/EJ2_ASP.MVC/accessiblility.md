@@ -45,6 +45,9 @@ Disables all the functionalities in the Kanban board performed using keyboard by
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/cards/multiple-selection/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/cards/multiple-selection/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -55,6 +58,9 @@ Disables all the functionalities in the Kanban board performed using keyboard by
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/cards/multiple-selection/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/cards/multiple-selection/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

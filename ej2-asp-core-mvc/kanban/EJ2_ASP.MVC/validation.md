@@ -36,6 +36,9 @@ The `MaxCount` property is used to specify the maximum cards hold on particular 
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/validation/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/validation/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -46,6 +49,9 @@ The `MaxCount` property is used to specify the maximum cards hold on particular 
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/validation/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/validation/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
