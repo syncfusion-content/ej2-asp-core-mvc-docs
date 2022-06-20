@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Rows
+# Rows in Gantt
 
 Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.
 

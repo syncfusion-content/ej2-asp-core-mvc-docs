@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Row
+# Row in Tree Grid
 
 The row represents record details fetched from data source.
 
