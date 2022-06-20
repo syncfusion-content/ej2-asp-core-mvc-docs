@@ -31,9 +31,6 @@ The following examples shows the data filtering is done with `StartsWith` type
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/filtering/filtertype/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Filtertype.cs" %}
-{% include code-snippet/autocomplete/filtering/filtertype/filtertype.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -61,9 +58,6 @@ The following example, to restrict the suggestion list item counts as 5.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/filtering/filtercount/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtercount.cs" %}
-{% include code-snippet/autocomplete/filtering/filtercount/filtercount.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -93,9 +87,6 @@ In the following example, the remote request doesn't fetch the search data, unti
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/filtering/filterlimit/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Filterlimit.cs" %}
-{% include code-snippet/autocomplete/filtering/filterlimit/filterlimit.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -116,16 +107,11 @@ In the following example, the remote request doesn't fetch the search data, unti
 
 Data items can be filtered either with or without case sensitivity using the DataManager. This can be done by setting the [ignoreCase](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~IgnoreCase.html) property of AutoComplete.
 
-The following sample depicts how to filter the data with case-sensitive.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/filtering/casesensitive/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Casesensitive.cs" %}
-{% include code-snippet/autocomplete/filtering/casesensitive/casesensitive.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -147,8 +133,6 @@ The following sample depicts how to filter the data with case-sensitive.
 
 An AutoComplete supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~IgnoreAccent.html) is enabled.
 
-In the following sample, data with diacritics are bound as dataSource for AutoComplete.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -166,15 +150,12 @@ In the following sample, data with diacritics are bound as dataSource for AutoCo
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/filtering/diacritics/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Diacritics.cs" %}
-{% include code-snippet/autocomplete/filtering/diacritics/diacritics.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 
 
-## See Also
+## See also
 
 * [How to acheive autofill while filtering](./how-to/autofill/)
 * [How to group the data using header](./grouping/)

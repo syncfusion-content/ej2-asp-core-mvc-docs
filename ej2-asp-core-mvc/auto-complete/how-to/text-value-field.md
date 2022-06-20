@@ -19,9 +19,6 @@ The AutoComplete data can be filtered based on both text and value fields using 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/how-to/filtering/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/autocomplete/how-to/filtering/filtering.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

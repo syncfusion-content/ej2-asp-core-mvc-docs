@@ -1,6 +1,10 @@
+@using AutoCompleteCustomSample.Models;
+@{
+    var data = new Countries().CountriesList();
+}
 <div class="control-wrapper">
     <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>
-        <ejs-autocomplete id="country" datasource="@ViewBag.data" placeholder="e.g. India" autofill="true" popupheight="220px">
+        <ejs-autocomplete id="country" datasource="@data" placeholder="e.g. India" autofill="true" popupheight="220px">
             <e-autocomplete-fields value="Name"></e-autocomplete-fields>
         </ejs-autocomplete>
     </div>

@@ -21,9 +21,6 @@ In the below sample, showcase that how to work `autofill` with AutoComplete.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/how-to/autofill/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Autofill.cs" %}
-{% include code-snippet/autocomplete/how-to/autofill/autofill.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

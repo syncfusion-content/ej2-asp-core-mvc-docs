@@ -21,8 +21,13 @@ In the following sample, vegetables are grouped according on its category using 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/grouping/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/autocomplete/grouping/grouping.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+public class Vegetables
+{
+    public string Vegetable { get; set; }
+    public string Category { get; set; }
+    public string Id { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 

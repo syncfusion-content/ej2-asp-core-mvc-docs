@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load Accordion With Data Source in ##Platform_Name## Accordion Component
-description: Learn here all about Load Accordion With Data Source in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+title: Load Accordion With Data Source in ##Platform_Name## Accordion Control | Syncfusion
+description: Learn here all about Load Accordion With Data Source in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Accordion With Data Source
 publishingplatform: ##Platform_Name##
@@ -20,9 +20,6 @@ In the below demo, Data is fetched from an `OData` service using `DataManager`. 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/accordion/how-to/datasource/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/accordion/how-to/datasource/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
 

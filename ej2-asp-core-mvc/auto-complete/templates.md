@@ -23,9 +23,6 @@ The content of each list item within the AutoComplete can be customized with the
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/templates/itemtemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Itemtemplate.cs" %}
-{% include code-snippet/autocomplete/templates/itemtemplate/itemtemplate.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -51,9 +48,6 @@ The group header title under which appropriate sub-items are categorized can als
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/templates/grouptemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouptemplate.cs" %}
-{% include code-snippet/autocomplete/templates/grouptemplate/grouptemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -83,9 +77,6 @@ In the following sample, the list items and its headers are designed and display
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/templates/headertemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Headertemplate.cs" %}
-{% include code-snippet/autocomplete/templates/headertemplate/headertemplate.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -114,9 +105,6 @@ In the following sample, footer element displays the total number of list items 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/templates/footertemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Footertemplate.cs" %}
-{% include code-snippet/autocomplete/templates/footertemplate/footertemplate.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -142,9 +130,6 @@ The AutoComplete is provided with support to custom design the suggestion list c
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/templates/norecordstemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Norecordstemplate.cs" %}
-{% include code-snippet/autocomplete/templates/norecordstemplate/norecordstemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -183,15 +168,12 @@ There is also an option to custom design the suggestion list content when the da
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/templates/actionfailuretemplate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Actionfailuretemplate.cs" %}
-{% include code-snippet/autocomplete/templates/actionfailuretemplate/actionfailuretemplate.cs %}
-{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 
 
-## See Also
+## See also
 
 * [How to acheive filtering](./filtering/)
 * [How to group the data using header](./grouping#grouping)

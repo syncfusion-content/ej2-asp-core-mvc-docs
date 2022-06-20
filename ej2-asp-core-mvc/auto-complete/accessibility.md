@@ -55,9 +55,6 @@ You can use the following key shortcuts to access the AutoComplete without inter
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/accessibility/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/autocomplete/accessibility/accessibility.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

@@ -30,9 +30,6 @@ In the following sample, French culture is set to the AutoComplete and no data i
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/localization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Localization.cs" %}
-{% include code-snippet/autocomplete/localization/localization.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -49,7 +46,7 @@ In the following sample, French culture is set to the AutoComplete and no data i
 
 
 
-## See Also
+## See also
 
 * [Accessibility](./accessibility/)
 * [How to bind the data to the autocomplete](./data-binding/)

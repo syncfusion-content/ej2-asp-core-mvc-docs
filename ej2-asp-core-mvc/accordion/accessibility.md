@@ -45,9 +45,6 @@ Keyboard navigation is enabled by default. Possible keys are:
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/accordion/accessibility/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/accordion/accessibility/accessibility.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

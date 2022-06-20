@@ -37,9 +37,6 @@ The AutoComplete has support to load array of primitive data such as strings and
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/data-binding/arrayofstrings/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Arrayofstrings.cs" %}
-{% include code-snippet/autocomplete/data-binding/arrayofstrings/arrayofstrings.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

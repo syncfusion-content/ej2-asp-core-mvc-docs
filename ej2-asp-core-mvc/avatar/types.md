@@ -31,9 +31,6 @@ The Essential JS 2 Avatar has the following predefined sizes that can be used wi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/size/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -68,9 +65,6 @@ The default style of the avatar is rectangular shape with rounded corners, which
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/default/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -96,9 +90,6 @@ The circle avatar style can be applied by adding the modifier class `.e-avatar-c
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/circle/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/circle/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 

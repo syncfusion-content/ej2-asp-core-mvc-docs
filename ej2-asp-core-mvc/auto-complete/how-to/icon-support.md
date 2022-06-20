@@ -20,9 +20,6 @@ You can render **icons** to the list items by mapping the [iconCss](https://hel
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/how-to/icons/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Icons.cs" %}
-{% include code-snippet/autocomplete/how-to/icons/icons.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
