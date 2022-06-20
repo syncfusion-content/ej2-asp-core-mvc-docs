@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# BarcodeGenerator
+# ##Platform_Name## BarcodeGenerator Control
 
 ## Code39
 

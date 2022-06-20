@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Badge Customization
+# Customization in ##Platform_Name## Badge Control
 
 ## Colour customization
 
