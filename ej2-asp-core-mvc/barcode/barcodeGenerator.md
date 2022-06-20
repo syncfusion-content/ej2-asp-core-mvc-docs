@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Barcodegenerator in ##Platform_Name## Barcode Component
-description: Learn here all about Barcodegenerator in Syncfusion ##Platform_Name## Barcode component of Syncfusion Essential JS 2 and more.
+title: Barcodegenerator in ##Platform_Name## Barcode Control | Syncfusion
+description: Learn here all about Barcodegenerator in Syncfusion ##Platform_Name## Barcode control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Barcodegenerator
 publishingplatform: ##Platform_Name##
@@ -20,9 +20,6 @@ The Code 39 character set includes the digits 0-9, the letters A-Z (upper case o
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/barcodegenerator/code39/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Code39.cs" %}
-{% include code-snippet/barcode/barcodegenerator/code39/code39.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,9 +47,6 @@ Code 39 Extended is an extended version of Code 39 that supports ASCII character
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/barcodegenerator/code39Extd/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Code39Extd.cs" %}
-{% include code-snippet/barcode/barcodegenerator/code39Extd/code39Extd.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -78,9 +72,6 @@ Code 11 is used primarily for labeling the telecommunication equipment. The char
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/barcodegenerator/code11/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Code11.cs" %}
-{% include code-snippet/barcode/barcodegenerator/code11/code11.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -111,9 +102,6 @@ The characters, A, B, C and D are used as start and stop characters. Codabar is 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/barcodegenerator/codabar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Codabar.cs" %}
-{% include code-snippet/barcode/barcodegenerator/codabar/codabar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -146,9 +134,6 @@ The value to be encoded must be 8 digits Pharmacode (prefix it with ‘0’ if n
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/barcodegenerator/code32/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Code32.cs" %}
-{% include code-snippet/barcode/barcodegenerator/code32/code32.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -174,9 +159,6 @@ Code 93 is designed to complement and improve upon Code 39. It can represent the
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/barcodegenerator/code93/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Code93.cs" %}
-{% include code-snippet/barcode/barcodegenerator/code93/code93.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -218,9 +200,6 @@ The last seven characters of Code Sets A and B (character values 96 - 102) and t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/barcodegenerator/code128/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Code128.cs" %}
-{% include code-snippet/barcode/barcodegenerator/code128/code128.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -246,9 +225,6 @@ A page or printed media with barcode often appears colorful in the background an
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/barcodegenerator/code128/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Code128.cs" %}
-{% include code-snippet/barcode/barcodegenerator/code128/code128.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -276,9 +252,6 @@ The dimension of the barcode can be changed using the height and width property 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/barcodegenerator/dimension/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Dimension.cs" %}
-{% include code-snippet/barcode/barcodegenerator/dimension/dimension.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -304,9 +277,6 @@ In barcode generators, you can customize the barcode text by using display text 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/barcodegenerator/text/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Text.cs" %}
-{% include code-snippet/barcode/barcodegenerator/text/text.cs %}
 {% endhighlight %}
 {% endtabs %}
 
