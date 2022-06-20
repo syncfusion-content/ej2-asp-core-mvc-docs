@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Avatar Component
-description: Learn here all about Types in Syncfusion ##Platform_Name## Avatar component of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Avatar Control | Syncfusion
+description: Learn here all about Types in Syncfusion ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Types and Styles
+# Types and Styles in ##Platform_Name## Avatar Control
 
 This section explains different types of avatar.
 

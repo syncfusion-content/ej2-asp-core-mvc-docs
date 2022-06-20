@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Expand Mode
+# Expand Mode in ##Platform_Name## Accordion Control
 
  The Accordion supports the two listed types of expand modes while expanding or collapsing the item.
 

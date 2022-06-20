@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Auto Complete Component
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
+title: Filtering in ##Platform_Name## Auto Complete Control | Syncfusion
+description: Learn here all about Filtering in Syncfusion ##Platform_Name## Auto Complete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filtering
+# Filtering in ##Platform_Name## AutoComplete Control
 
 The AutoComplete has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the control.
 
