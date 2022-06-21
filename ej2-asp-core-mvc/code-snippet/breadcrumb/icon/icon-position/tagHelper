@@ -1,4 +1,3 @@
-<div id='loader'>LOADING...</div>
 <div id='container'>
     <div id="breadcrumb-control" class="control-section">
         <div class="header"><b>Icon Position - Left</b></div><br />
@@ -10,7 +9,7 @@
             </e-breadcrumb-items>
         </ejs-breadcrumb>
         <div class="header"><b>Icon Position - Right</b></div><br />
-        <ejs-breadcrumb id="default" enableNavigation="false" beforeItemRender="beforeItemRender">
+        <ejs-breadcrumb id="default1" enableNavigation="false" beforeItemRender="beforeItemRender">
             <e-breadcrumb-items>
                 <e-breadcrumb-item text="Program Files" iconCss="e-bicons e-folder"></e-breadcrumb-item>
                 <e-breadcrumb-item text="Services" iconCss="e-bicons e-folder"></e-breadcrumb-item>
