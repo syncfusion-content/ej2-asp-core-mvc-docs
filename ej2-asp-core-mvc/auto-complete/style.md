@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS structures
+# CSS structures in AutoComplete Control
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

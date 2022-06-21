@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Accordion Component
+title: Style in ##Platform_Name## Accordion Control | Syncfusion
 description: Learn here all about Style in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS Structure
+# CSS Structure in Accordion Control
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 
