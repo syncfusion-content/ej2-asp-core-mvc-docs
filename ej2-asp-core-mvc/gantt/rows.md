@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows concept in ##Platform_Name## Gantt Component
+title: Grid Rows in ##Platform_Name## Gantt Component
 description: Learn here all about Rows in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Rows
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Rows and its Functions
+# Rows in ##Platform_Name## Gantt Component
 
 Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row concept in ##Platform_Name## Tree Grid Component
+title: Grid Rows in ##Platform_Name## Tree Grid Component
 description: Learn here all about Row in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Rows and its Functions
+# Rows in ##Platform_Name## Tree Grid Component
 
 The row represents record details fetched from data source.
 
