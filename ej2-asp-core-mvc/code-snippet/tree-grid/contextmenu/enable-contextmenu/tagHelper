@@ -1,0 +1,24 @@
+@{
+    List<object> contextItems = new List<Object>();
+    contextItems.Add(new { text= "Edit Record", target= ".e-content", id= "Edit_record" });
+}
+
+<ejs-treegrid id="TreeGrid" dataSource="@data" contextMenuOpen="onOpen" contextMenuItems="contextItems" allowExcelExport="true" allowPdfExport="true" allowSorting="true" allowPaging="true" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-pagesettings pageSize="7"></e-treegrid-pagesettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" isPrimaryKey="true" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="180" textAlign="Left"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" type="date" width="90"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="80"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function onOpen(args) {
+        if (args.rowInfo.rowData.hasChildRecords == true && !ej.base.isNullOrUndefined(args.element.ej2_instances)) {
+            args.element.ej2_instances[0].enableItems(['Edit Record'], true); //Enable items
+        } else if (!ej.base.isNullOrUndefined(args.element.ej2_instances)) {
+            args.element.ej2_instances[0].enableItems(['Edit Record'], false); // Disable items
+        }
+    }
+</script>
