@@ -398,7 +398,11 @@ Orthogonal segments are automatically re-routed, in order to avoid overlapping w
 {% endtabs %}
 {% endif %}
 
+## Orthogonal Segment Thumbshape Customization
 
+Segment Thumbshape is rendered in the intermediate position of the orthogonal segment.It can be accessed by injecting the connector-editing module.By default, in orthogonal Segments, the [`segmentThumbShape`](../api/diagram#segmentThumbShape-SegmentThumbShapes) is set to be a rhombus. Depending upon the shapes specified in the property, the segment thumbshape will appear.
+
+![Segment Thumb Shape](./images/thumbshape.png)
 
 ## Bezier
 
