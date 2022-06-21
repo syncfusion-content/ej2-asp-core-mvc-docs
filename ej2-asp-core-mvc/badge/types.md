@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Badge Component
-description: Learn here all about types in Syncfusion ##Platform_Name## Badge component of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Badge Control | Syncfusion
+description: Learn here all about types in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Types
+# Types in ##Platform_Name## Badge Control
 
 This section explains different styles and types of the badges.
 
@@ -33,9 +33,6 @@ The Essential JS 2 Badge has the following predefined styles that can be used wi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/types/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/types/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -51,7 +48,7 @@ The Essential JS 2 Badge has the following predefined styles that can be used wi
 {% endif %}
 
 
-![Badge Sample](./images/badgestyles.PNG)
+![Badge Styles](images/badgestyles.PNG)
 
 ## Badge types
 
@@ -75,9 +72,6 @@ The circle badge style can be applied by adding the modifier class `.e-badge-cir
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/circle/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/circle/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -93,7 +87,7 @@ The circle badge style can be applied by adding the modifier class `.e-badge-cir
 {% endif %}
 
 
-![Badge Sample](./images/circle.PNG)
+![Badge Circle Type](images/circle.PNG)
 
 ### Pill
 
@@ -104,9 +98,6 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/pill/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/pill/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -123,7 +114,7 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 {% endif %}
 
 
-![Badge Sample](./images/pill.PNG)
+![Badge Pill Type](images/pill.PNG)
 
 ### Link
 
@@ -134,9 +125,6 @@ When badge modifier classes are applied to the anchor tag, the badge’s appeara
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/link/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/link/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -153,7 +141,7 @@ When badge modifier classes are applied to the anchor tag, the badge’s appeara
 {% endif %}
 
 
-![Badge Sample](./images/link.PNG)
+![Badge Link Type](images/link.PNG)
 
 ### Notification
 
@@ -164,9 +152,6 @@ The notification badge style can be applied by adding the modifier class `.e-bad
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/notification/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/notification/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -183,7 +168,7 @@ The notification badge style can be applied by adding the modifier class `.e-bad
 {% endif %}
 
 
-![Badge Sample](./images/notification.PNG)
+![Badge Notification Type](images/notification.PNG)
 
 ### Dot
 
@@ -194,9 +179,6 @@ Dot can be applied by adding the modifier class `.e-badge-dot` to the target ele
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/dot/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/dot/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -213,7 +195,7 @@ Dot can be applied by adding the modifier class `.e-badge-dot` to the target ele
 {% endif %}
 
 
-![Badge Sample](./images/dot.PNG)
+![Badge Dot Type](images/dot.PNG)
 
 ### Overlap
 
@@ -224,9 +206,6 @@ The overlap badge can be used with `notification` or `dot` badge, which overlaps
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/overlap/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/overlap/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -243,7 +222,7 @@ The overlap badge can be used with `notification` or `dot` badge, which overlaps
 {% endif %}
 
 
-![Badge Sample](./images/overlap.PNG)
+![Badge Overlap Type](images/overlap.PNG)
 
 ### Position
 
@@ -254,9 +233,6 @@ The default position of the `notification` or `dot` badge is top. But, the posit
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/position/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/position/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -272,4 +248,4 @@ The default position of the `notification` or `dot` badge is top. But, the posit
 {% endtabs %}
 {% endif %}
 
-![Badge Sample](./images/position.PNG)
+![Badge Position Type](images/position.PNG)

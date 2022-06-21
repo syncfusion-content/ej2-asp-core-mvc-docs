@@ -18,9 +18,6 @@ The badge is dependent and supportive component, and it can be used with avatar 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/badge/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/badge/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

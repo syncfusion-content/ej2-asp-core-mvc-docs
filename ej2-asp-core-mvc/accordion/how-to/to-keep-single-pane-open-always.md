@@ -1,7 +1,7 @@
 ---
 layout: post
-title: To Keep Single Pane Open Always in ##Platform_Name## Accordion Component
-description: Learn here all about how to keep single pane open always in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+title: To Keep Single Pane Open Always in ##Platform_Name## Accordion Control | Syncfusion
+description: Learn here all about how to keep single pane open always in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: To Keep Single Pane Open Always
 publishingplatform: ##Platform_Name##
@@ -18,9 +18,6 @@ By default, all Accordion panels are collapsible. You can customize the Accordio
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/accordion/how-to/openalways/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Openalways.cs" %}
-{% include code-snippet/accordion/how-to/openalways/openalways.cs %}
 {% endhighlight %}
 {% endtabs %}
 

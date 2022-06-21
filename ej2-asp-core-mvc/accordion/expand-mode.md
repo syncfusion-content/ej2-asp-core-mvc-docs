@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand Mode in ##Platform_Name## Accordion Component
-description: Learn here all about how to expand mode in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+title: Expand Mode in ##Platform_Name## Accordion Control | Syncfusion
+description: Learn here all about how to expand mode in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Expand Mode
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Expand Mode
+# Expand Mode in ##Platform_Name## Accordion Control
 
  The Accordion supports the two listed types of expand modes while expanding or collapsing the item.
 
@@ -26,9 +26,6 @@ The property enables to expand only one Accordion item at a time. If you expand 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/accordion/expandMode/single/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Single.cs" %}
-{% include code-snippet/accordion/expandMode/single/single.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -44,7 +41,7 @@ The property enables to expand only one Accordion item at a time. If you expand 
 {% endif %}
 
 
-![Accordion Control with expand mode of single type](./images/single.PNG)
+![Accordion Control with expand mode of single type](images/single.PNG)
 
 ## Multiple
 
@@ -55,9 +52,6 @@ Default expand mode of the Accordion is `Multiple`. It enables you to expand mor
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/accordion/expandMode/multiple/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multiple.cs" %}
-{% include code-snippet/accordion/expandMode/multiple/multiple.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -74,7 +68,7 @@ Default expand mode of the Accordion is `Multiple`. It enables you to expand mor
 {% endif %}
 
 
-![Accordion Control with expand mode of multiple type](./images/multiple.PNG)
+![Accordion Control with expand mode of multiple type](images/multiple.PNG)
 
 ## See Also
 
