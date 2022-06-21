@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Badge Customization
+# Customization in ##Platform_Name## Badge Control
 
 ## Colour customization
 
@@ -19,9 +19,6 @@ Even though badges come with `8 predefined colors`, you can also customize the c
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/color/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/color/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,7 +35,7 @@ Even though badges come with `8 predefined colors`, you can also customize the c
 {% endif %}
 
 
-![Badge Sample](../images/colorcustom.PNG)
+![Badge Color Customization](../images/colorcustom.PNG)
 
 ## Customize badge size
 
@@ -49,9 +46,6 @@ Badges are designed to change its size based on the content. To change the size 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/size/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/size/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,7 +62,7 @@ Badges are designed to change its size based on the content. To change the size 
 {% endif %}
 
 
-![Badge Sample](../images/badgecustom.PNG)
+![Badge Size Customization](../images/badgecustom.PNG)
 
 ## Custom position
 
@@ -79,9 +73,6 @@ Even though the badges support the conventional `top` and `bottom` positions, th
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/custom-position/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/custom-position/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -97,4 +88,4 @@ Even though the badges support the conventional `top` and `bottom` positions, th
 {% endtabs %}
 {% endif %}
 
-![Badge Sample](../images/custompos.PNG)
+![Badge Position](../images/custompos.PNG)

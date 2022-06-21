@@ -21,9 +21,6 @@ The below sample customizes the matched character in suggestion list by `e-highl
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/autocomplete/how-to/highlight/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Highlight.cs" %}
-{% include code-snippet/autocomplete/how-to/highlight/highlight.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

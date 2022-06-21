@@ -1,6 +1,20 @@
+@{
+    List<Vegetables> veg = new List<Vegetables>();
+    veg.Add(new Vegetables { Vegetable = "Cabbage", Category = "Leafy and Salad", Id = "item1" });
+    veg.Add(new Vegetables { Vegetable = "Chickpea", Category = "Beans", Id = "item2" });
+    veg.Add(new Vegetables { Vegetable = "Garlic", Category = "Bulb and Stem", Id = "item3" });
+    veg.Add(new Vegetables { Vegetable = "Green bean", Category = "Beans", Id = "item4" });
+    veg.Add(new Vegetables { Vegetable = "Horse gram", Category = "Beans", Id = "item5" });
+    veg.Add(new Vegetables { Vegetable = "Nopal", Category = "Bulb and Stem", Id = "item6" });
+    veg.Add(new Vegetables { Vegetable = "Onion", Category = "Bulb and Stem", Id = "item7" });
+    veg.Add(new Vegetables { Vegetable = "Pumpkins", Category = "Leafy and Salad", Id = "item8" });
+    veg.Add(new Vegetables { Vegetable = "Spinach", Category = "Leafy and Salad", Id = "item9" });
+    veg.Add(new Vegetables { Vegetable = "Wheat grass", Category = "Leafy and Salad", Id = "item10" });
+    veg.Add(new Vegetables { Vegetable = "Yarrow", Category = "Leafy and Salad", Id = "item11" });    
+}
 <div id='groupList' class='col-lg-6' style='padding-top:15px'>
     <div class='content'>
-        <ejs-autocomplete id="vegetables" placeholder="Select a vegetable" popupHeight="200px" dataSource="@ViewBag.data">
+        <ejs-autocomplete id="vegetables" placeholder="Select a vegetable" popupHeight="200px" dataSource="@veg">
             <e-autocomplete-fields groupBy="Category" value="Vegetable"></e-autocomplete-fields>
         </ejs-autocomplete>
     </div>

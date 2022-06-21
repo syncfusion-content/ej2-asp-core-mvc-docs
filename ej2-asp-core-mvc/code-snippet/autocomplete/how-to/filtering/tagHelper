@@ -1,8 +1,11 @@
 @using Newtonsoft.Json;
-
+@using AutoCompleteCustomSample.Models;
+@{
+    var data = new Countries().CountriesList();
+}
 <div id='List' class='col-lg-6' style='padding-top:15px'>
     <div class='content'>
-        <ejs-autocomplete dataSource="@ViewBag.data" showClearButton="false" id="project" filtering="filtering" itemTemplate="<span class='item'><span class='name'>${Name}</span>-<span class='code'>${Code}</span></span>">
+        <ejs-autocomplete dataSource="@data" showClearButton="false" id="project" filtering="filtering" itemTemplate="<span class='item'><span class='name'>${Name}</span>-<span class='code'>${Code}</span></span>">
             <e-autocomplete-fields  Text ="Name" Value ="Code"></e-autocomplete-fields>
         </ejs-autocomplete>
     </div>

@@ -1,15 +1,26 @@
-    @{ var template = "<div class='listWrapper'>" +
-        "${if(avatar!=='')}" +
-        "<span class='e-avatar e-avatar-small e-avatar-circle'>${avatar}</span>" +
-        "${else}" +
-        "<span class='${pic} e-avatar e-avatar-small e-avatar-circle'> </span>" +
-        "${/if}" +
-        "<span class='text'>" +
-        "${text} </span> </div>";}
-    <div class="col-lg-12 control-section">
-        <ejs-listview id='letterAvatarList' dataSource=@ViewBag.dataSource headerTitle='Contacts' template="@template" showHeader=true sortOrder="Ascending">
-        </ejs-listview>
-    </div>
+@{ 
+	var template = "<div class='listWrapper'>" +
+	"${if(avatar!=='')}" +
+	"<span class='e-avatar e-avatar-small e-avatar-circle'>${avatar}</span>" +
+	"${else}" +
+	"<span class='${pic} e-avatar e-avatar-small e-avatar-circle'> </span>" +
+	"${/if}" +
+	"<span class='text'>" +
+	"${text} </span> </div>";
+	
+	List<object> data = new List<object>();
+    data.Add(new { text = "Robert", id = "s_01", avatar= "", pic= "pic04" });
+    data.Add(new { text = "Nancy", id = "s_02", avatar= "N", pic= "" });
+    data.Add(new { text = "John", id = "s_03", pic= "pic01", avatar= "" });
+    data.Add(new { text = "Andrew", id = "s_04", avatar= "A", pic= "" });
+    data.Add(new { text = "Michael", id = "s_05", pic= "pic02", avatar= "" });
+    data.Add(new { text = "Steven", id = "s_06", pic= "pic03", avatar= "" });
+    data.Add(new { text = "Margaret", id = "s_07", avatar= "M", pic= "" });
+}
+<div class="col-lg-12 control-section">
+	<ejs-listview id='letterAvatarList' dataSource=@data headerTitle='Contacts' template="@template" showHeader=true sortOrder="Ascending">
+	</ejs-listview>
+</div>
 
 
 <style>
@@ -98,18 +109,18 @@
     /* Avatar images using 'background-image' property */
 
     .pic01 {
-        background-image: url('./../css/avatar/images/pic01.png');
+        background-image: url(@Url.Content("~/css/avatar/images/pic01.png"));
     }
 
     .pic02 {
-        background-image: url('./../css/avatar/images/pic02.png');
+        background-image: url(@Url.Content("~/css/avatar/images/pic02.png"));
     }
 
     .pic03 {
-        background-image: url('./../css/avatar/images/pic03.png');
+        background-image: url(@Url.Content("~/css/avatar/images/pic03.png"));
     }
 
     .pic04 {
-        background-image: url('./../css/avatar/images/pic04.png');
+        background-image: url(@Url.Content("~/css/avatar/images/pic04.png"));
     }
 </style>

@@ -20,9 +20,6 @@ The avatar comes with default background colour (grey). This can be easily custo
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/color/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/color/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -49,9 +46,6 @@ Even though the avatar comes with five predefined sizes, sometimes it's not enou
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/custom-size/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/custom-size/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
