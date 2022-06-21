@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Row
+# Rows and its Functions
 
 The row represents record details fetched from data source.
 
