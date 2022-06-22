@@ -58,7 +58,7 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Ctrl + Shift + Ampersand sign | Remove the outline border from the selected cells. |
 | Ctrl + Shift + Tilde sign | Apply the General number format. |
 | Ctrl + Shift + Dollar sign | Apply the Currency format with two decimal places (negative numbers in parentheses). |
-| Shift + F10| Add `new sheet`. |
+| Shift + F10 | Add `new sheet`. |
 | Ctrl + Shift + Percent sign | Apply the Percentage format with no decimal places. |
 | Ctrl + Shift + Caret sign | Apply the Scientific number format with two decimal places. |
 | Ctrl + Shift + Number sign |Apply the Date format with the day, month, and year. |
