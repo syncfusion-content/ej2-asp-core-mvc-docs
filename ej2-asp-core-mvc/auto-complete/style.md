@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS structures
+# CSS structures in AutoComplete Control
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
@@ -137,3 +137,5 @@ Use the following CSS to customize the appearance of popup element.
     min-height: 29px;
 }
 ```
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/AutoComplete/GroupingandFilreringSample).
