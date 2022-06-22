@@ -831,7 +831,6 @@ The connectors are used to create a link between two points, ports, or nodes to 
 {% endtabs %}
 {% endif %}
 
-
 ## See Also
 
 * [How to add annotations to the connector](./labels)
