@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Search
+# Searching in ASP.NET Core Grid Component
 
 You can search records in a Grid, by using the **Search** method with search key as a parameter. This also provides an option to integrate search text box in grid's toolbar by adding **Search** item to the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar).
 
