@@ -50,3 +50,5 @@ public class Vegetables
 The grouping header is also provided with customization option. This allows custom designing using the [groupTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoCompleteBuilder~GroupTemplate.html) property for both inline and fixed headers as referred here:
 
 [Group Template support to AutoComplete](./templates).
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/AutoComplete/GroupingandFilreringSample).

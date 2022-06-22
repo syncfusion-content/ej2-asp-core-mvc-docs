@@ -249,3 +249,5 @@ The default position of the `notification` or `dot` badge is top. But, the posit
 {% endif %}
 
 ![Badge Position Type](images/position.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Badge/BadgeTypesSample).

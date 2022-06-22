@@ -70,6 +70,8 @@ Default expand mode of the Accordion is `Multiple`. It enables you to expand mor
 
 ![Accordion Control with expand mode of multiple type](images/multiple.PNG)
 
-## See Also
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Accordion/AccordionUGSamples).
+
+## See also
 
 * [How to keep single pane open always](./how-to/to-keep-single-pane-open-always)
