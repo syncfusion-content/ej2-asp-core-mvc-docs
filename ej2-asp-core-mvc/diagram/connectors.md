@@ -805,6 +805,32 @@ The connectors [`zIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% endif %}
 
 
+## Enable Connector Splitting
+
+The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. You can split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting [`enableConnectorSplit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_EnableConnectorsplit) as true. The default value of [`enableConnectorSplit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_Enableconnectorsplit) is false.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/connectors/cnnectorsplit/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="connectorsplit.cs" %}
+{% include code-snippet/diagram/connectors/connectorsplit/connectorsplit.cs %}
+{% endhighlight %}
+![Enable Connector Split](./images/EnableSplit.gif)
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="connectorsplit.cs" %}
+{% include code-snippet/diagram/connectors/connectorsplit/connectorsplit.cs %}
+{% endhighlight %}
+![Enable Connector Split](./images/EnableSplit.gif)
+{% endtabs %}
+{% endif %}
+
 
 ## See Also
 
