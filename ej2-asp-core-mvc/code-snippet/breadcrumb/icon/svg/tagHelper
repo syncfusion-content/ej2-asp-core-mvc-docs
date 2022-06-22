@@ -9,8 +9,9 @@
 
 <style>
     .e-svg-home {
-        background-image: url(@Url.Content("~/css/home.svg"));
-        height: 20px;
-        width: 20px;
+        background-image: url(home.svg);
+        height: 30px;
+        width: 30px;
+		background-repeat:no-repeat;
     }
 </style>
