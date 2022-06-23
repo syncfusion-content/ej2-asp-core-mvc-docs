@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows in ##Platform_Name## Gantt Component
-description: Learn here all about Rows in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+title: TreeGrid View Rows in ##Platform_Name## Gantt Component | Syncfusion
+description: Learn here all about customization of treegrid view rows in Syncfusion ##Platform_Name## Gantt component and much more.
 platform: ej2-asp-core-mvc
 control: Rows
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Rows
+# Rows in ##Platform_Name## Gantt Component
 
 Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.
 
@@ -274,7 +274,34 @@ In the following sample, we have prevented the drop action based on the position
 {% endtabs %}
 {% endif %}
 
+### Prevent reordering a row as child to another row
 
+You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) event argument. You can also change the drop position after cancelling using `reorderRows` method.
+
+In the below example drop action is cancelled and dropped above to target row.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/preventReorder/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="PreventReorder.cs" %}
+{% include code-snippet/gantt/rows/preventReorder/preventReorder.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/rows/preventReorder/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="PreventReorder.cs" %}
+{% include code-snippet/gantt/rows/preventReorder/preventReorder.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Perform row drag and drop action programmatically
 
