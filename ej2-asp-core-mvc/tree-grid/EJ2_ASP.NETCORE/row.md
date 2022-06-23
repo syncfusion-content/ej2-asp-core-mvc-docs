@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rows Customization in ##Platform_Name## Tree Grid Component
-description: Learn here all about rows customization in Syncfusion ##Platform_Name## Tree Grid component and much more .
+description: Learn here all about rows customization in Syncfusion ##Platform_Name## Tree Grid component and much more.
 platform: ej2-asp-core-mvc
 control: Row
 publishingplatform: ##Platform_Name##
@@ -332,6 +332,5 @@ In the below example drop action is cancelled and dropped above to target row.
 {% include code-snippet/tree-grid/row/prevent-reorder/reorder.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 > You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
