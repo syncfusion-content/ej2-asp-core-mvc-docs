@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion Grid Rows in ##Platform_Name## Gantt Component
-description: Learn here all about Rows in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+title: TreeGrid View Rows in ##Platform_Name## Gantt Component | Syncfusion
+description: Learn here all about customization of treegrid view rows in Syncfusion ##Platform_Name## Gantt component and much more.
 platform: ej2-asp-core-mvc
 control: Rows
 publishingplatform: ##Platform_Name##
