@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row in ##Platform_Name## Tree Grid Component
-description: Learn here all about Row in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: Rows Customization in ##Platform_Name## Tree Grid Component
+description: Learn here all about rows customization in Syncfusion ##Platform_Name## Tree Grid component and much more.
 platform: ej2-asp-core-mvc
 control: Row
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Row
+# Rows in ##Platform_Name## Tree Grid Component
 
 The row represents record details fetched from data source.
 
@@ -144,7 +144,7 @@ In the below example, the row height for the row with Task ID as '3' is set as '
 
 ## Row template
 
-The **rowTemplate** has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowTemplate.html) property accepts either the **template** string or HTML element ID.
+The **rowTemplate** has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowTemplate) property accepts either the **template** string or HTML element ID.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -171,11 +171,11 @@ The **rowTemplate** has an option to customise the look and behavior of the tree
 
 
 
-The [`rowTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowTemplate.html) property accepts only the TR element.
+The [`rowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowTemplate) property accepts only the TR element.
 
 ### Row template with formatting
 
-If the [`rowTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowTemplate.html) is used, the value cannot be formatted inside the template using the [`format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
+If the [`rowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowTemplate) is used, the value cannot be formatted inside the template using the [`format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -217,7 +217,7 @@ Row template feature is not compatible with all the features which are available
 
 ## Detail template
 
-The detail template provides additional information about a particular row. By expanding the parent row the child rows are expanded along with their detail template. The [`detailTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~DetailTemplate.html) property accepts either the template string or HTML element ID.
+The detail template provides additional information about a particular row. By expanding the parent row the child rows are expanded along with their detail template. The [`detailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DetailTemplate) property accepts either the template string or HTML element ID.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -282,7 +282,7 @@ The TreeGrid row drag and drop allows you to drag and drop TreeGrid rows on the 
 
 ### Drag and drop to another TreeGrid
 
-To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowRowDragAndDrop.html) property and specify the target TreeGrid ID in [`targetID`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings~TargetID.html) property of rowDropSettings.
+To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowRowDragAndDrop.html) property and specify the target TreeGrid ID in [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property of rowDropSettings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -313,9 +313,24 @@ To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https:
 
 The following events are triggered while drag and drop the treegrid rows.
 
-[`RowDragStartHelper`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDragStartHelper.html) - Triggers when click the drag icon or treegrid row and this event is used to customize the drag element based on user criteria.<br/>
+[`RowDragStartHelper`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDragStartHelper) - Triggers when click the drag icon or treegrid row and this event is used to customize the drag element based on user criteria.<br/>
 [`RowDragStart`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDragStart.html) -Triggers when starts to drag the treegrid row. <br/>
 [`RowDrag`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDrag.html) - Triggers while dragging the treegrid row. <br/>
 [`RowDrop`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDrop.html) - Triggers when a drag element is dropped on the target element. <br/>
+
+### Prevent reordering a row as child to another row
+
+You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) event argument. You can also change the drop position after cancelling using `reorderRows` method.
+
+In the below example drop action is cancelled and dropped above to target row.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/row/prevent-reorder/taghelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="reorder.cs" %}
+{% include code-snippet/tree-grid/row/prevent-reorder/reorder.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 > You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.

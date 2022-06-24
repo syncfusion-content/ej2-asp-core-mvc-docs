@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Breadcrumb Component
-description: Learn here all about Icons in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
+title: Icons in ##Platform_Name## Breadcrumb Control | Syncfusion
+description: Learn here all about Icons in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Icons
+# Icons in ASP.NET Core Breadcrumb Control
 
 The Breadcrumb component contains an icon or image to provide a visual representation of an item.
 
@@ -27,8 +27,7 @@ To place the font icon on the breadcrumb item, set the `iconCss` property to `e-
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/getting-started/items/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -41,7 +40,7 @@ To place the font icon on the breadcrumb item, set the `iconCss` property to `e-
 {% endif %}
 
 
-![Breadcrumb Sample](./images/items.PNG)
+![ASP.NET Core Breadcrumb with Font Icon](images/items.PNG)
 
 ### Breadcrumb with Image
 
@@ -52,9 +51,6 @@ In the Breadcrumb component, images can be added for the items using the `iconCs
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/icon/image/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/icon/image/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,7 +67,7 @@ In the Breadcrumb component, images can be added for the items using the `iconCs
 {% endif %}
 
 
-![Breadcrumb Sample](./images/image.PNG)
+![ASP.NET Core Breadcrumb with Image](images/image.PNG)
 
 ### Breadcrumb with SVG Image
 
@@ -82,9 +78,6 @@ In the Breadcrumb component, SVG image can be added for the items using the `ico
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/icon/svg/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/icon/svg/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -101,7 +94,7 @@ In the Breadcrumb component, SVG image can be added for the items using the `ico
 {% endif %}
 
 
-![Breadcrumb Sample](./images/svg.PNG)
+![ASP.NET Core Breadcrumb with SVG Image](images/svg.PNG)
 
 ## Icon Position
 
@@ -112,9 +105,6 @@ By default, the icon is positioned to the left side of the item in the Breadcrum
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/icon/icon-position/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/icon/icon-position/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -131,7 +121,7 @@ By default, the icon is positioned to the left side of the item in the Breadcrum
 {% endif %}
 
 
-![Breadcrumb Sample](./images/icons-position.PNG)
+![Changing Icon Position in ASP.NET Core Breadcrumb Control](images/icons-position.PNG)
 
 ## Icon Only
 
@@ -142,9 +132,6 @@ To display only icons for the items, add icons using the `iconCss` property. In 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/icon/icon-only/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/icon/icon-only/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -160,7 +147,7 @@ To display only icons for the items, add icons using the `iconCss` property. In 
 {% endtabs %}
 {% endif %}
 
-![Breadcrumb Sample](./images/icon-only.PNG)
+![Displaying Icon in ASP.NET Core Breadcrumb Control](images/icon-only.PNG)
 
 ## Show icon only for first item
 
@@ -172,8 +159,7 @@ To show icon only for the first item in the Breadcrumb component, add icons to t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/getting-started/items/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -185,4 +171,4 @@ To show icon only for the first item in the Breadcrumb component, add icons to t
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-![Breadcrumb Sample](./images/items.PNG)
+![Displaying Icon for First Time in ASP.NET Core Breadcrumb](images/items.PNG)

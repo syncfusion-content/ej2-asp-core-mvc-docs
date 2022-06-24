@@ -9,14 +9,15 @@
 
 <style>
     .e-image-home {
-        background-image: url('home.png');
-        height: 20px;
-        width: 20px;
+        background-image: url(@Url.Content("~/css/home.png"));
+        height: 30px;
+        width: 30px;
+		background-repeat:no-repeat;
     }
 
     .e-svg-home {
-        background-image: url('home.svg');
-        height: 20px;
-        width: 20px;
+        background-image: url(home.svg);
+        height: 30px;
+        width: 30px;
     }
 </style>

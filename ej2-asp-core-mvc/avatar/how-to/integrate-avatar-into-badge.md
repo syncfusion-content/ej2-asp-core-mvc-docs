@@ -33,3 +33,5 @@ The badge is dependent and supportive component, and it can be used with avatar 
 {% endif %}
 
 ![Avatar Sample](../images/badge.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Avatar/AvatarUGSample).
