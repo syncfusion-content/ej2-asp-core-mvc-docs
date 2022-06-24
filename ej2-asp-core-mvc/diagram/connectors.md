@@ -407,24 +407,25 @@ The orthogonal connector has a number of segments in between the source and the 
 * Ellipse 
 * Arrow 
 * Diamond 
-* Open Arrow 
+* OpenArrow 
 * Circle 
 * Fletch 
 * OpenFetch 
+* IndentedArrow
 * OutdentedArrow  
-* Double Arrow.
- 
- You can customize the style of the thumbshape by overriding the class e-orthogonal-thumb.
+* DoubleArrow
 
-![Segment Thumb Shape](images/thumbshape.png)
+You can customize the style of the thumb shape by overriding the class e-orthogonal-thumb.
+
+![Segment Thumb Shape](./images/thumbshape.png)
 
 Use the following CSS to customize the segment thumb shape.
 
 ```scss
 
  .e-orthogonal-thumb {
-            stroke:#24039e;
-            fill:rgb(126, 190, 219);
+            stroke: #24039e;
+            fill: rgb(126, 190, 219);
             stroke-width: 3px;
             }
 
