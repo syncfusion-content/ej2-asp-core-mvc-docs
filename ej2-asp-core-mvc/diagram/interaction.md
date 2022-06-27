@@ -34,11 +34,10 @@ Multiple elements can be selected with the following ways:
 
 * Ctrl+Click - During single click, any existing item in the selection list will be cleared, and only the item clicked recently will be there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
 
-![Multiple Selection](images/multi-select-ctrl.gif)
 
 * Selection rectangle/rubber band selection - Clicking and dragging the diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
 
-![Multiple Rubberband Selection](images/multi-select-rubber-band.gif)
+![Multiple Rubberband Selection](images/multiselect_Highlight.gif)
 
 ## Select/Unselect elements using program
 

@@ -158,6 +158,7 @@ diagram.dataBind();
 ## Connect nodes
 
 * The [`sourceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_SourceID) and [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_TargetID) properties allow to define the nodes to be connected.
+* The [`connectorSpacing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_connectorSpacing) property allows you to define the distance between the source node and the connector. It is the minimum distance the connector will re-rout or the new segment will create.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -326,6 +327,8 @@ Set the segment [`type`](https://ej2.syncfusion.com/documentation/api/diagram/se
 
 Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to [`connector.segments`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#segments) collection.
 
+The property [`maxSegmentThumb`](https://ej2.syncfusion.com/documentation/api/diagram/connector/#maxSegmentThumb) is used to limit the segment thumb in the connector.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -398,6 +401,38 @@ Orthogonal segments are automatically re-routed, in order to avoid overlapping w
 {% endtabs %}
 {% endif %}
 
+## How to customize Orthogonal Segment Thumb Shape 
+
+The orthogonal connector has a number of segments in between the source and the target point. The segments are rendered with the default shape rhombus. Now, the option has been provided to change the segment thumb shape using the [`segmentThumbShape`](../api/diagram#segmentThumbShape-SegmentThumbShapes) property. The predefined shapes provided are as follows:
+* Rhombus
+* Square
+* Rectangle
+* Ellipse
+* Arrow
+* Diamond
+* OpenArrow
+* Circle
+* Fletch
+* OpenFetch
+* IndentedArrow
+* OutdentedArrow
+* DoubleArrow
+
+You can customize the style of the thumb shape by overriding the class e-orthogonal-thumb.
+
+![Segment Thumb Shape](./images/thumbshape.png)
+
+Use the following CSS to customize the segment thumb shape.
+
+```scss
+
+ .e-orthogonal-thumb {
+     stroke: #24039e;
+     fill: rgb(126, 190, 219);
+     stroke-width: 3px;
+    }
+
+```
 
 
 ## Bezier
@@ -452,6 +487,22 @@ The [`vector1`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegme
 {% endtabs %}
 {% endif %}
 
+## Avoid overlapping with Bezier
+By default, when there are no segments defined for a bezier connector, the bezier segments will be created automatically and routed in such a way that avoids overlapping with the source and target nodes.
+
+Also, the intermediate point of two adjacent bezier segments can be edited interactively based on the bezierSettings.segmentEditOrientation property of the connector class.
+
+### How to interact with the bezier segments efficiently
+While interacting with multiple bezier segments, maintain their control points at the same distance and angle by using the bezierSettings.smoothness property of the connector class.
+
+| BezierSmoothness value | Description |
+|-------- | -------- |
+| SymmetricDistance| Both control points of adjacent segments will be at the same distance when any one of them is editing. |
+| SymmetricAngle | Both control points of adjacent segments will be at the same angle when any one of them is editing. |
+| Default | Both control points of adjacent segments will be at the same angle and same distance when any one of them is editing. |
+| None | Segment’s control points are interacted independently from each other. |
+
+Also, the visibility of control points can be controlled using the bezierSettings.controlPointsVisibility property of the connector class.
 
 
 ## Decorator
@@ -804,6 +855,31 @@ The connectors [`zIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% endtabs %}
 {% endif %}
 
+## Enable Connector Splitting
+
+The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. Split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting the  [`enableConnectorSplit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_EnableConnectorsplit) as true. The default value of[`enableConnectorSplit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_Enableconnectorsplit) is false.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/connectors/cnnectorsplit/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="connectorsplit.cs" %}
+{% include code-snippet/diagram/connectors/connectorsplit/connectorsplit.cs %}
+{% endhighlight %}
+![Enable Connector Split](./images/EnableSplit.gif)
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="connectorsplit.cs" %}
+{% include code-snippet/diagram/connectors/connectorsplit/connectorsplit.cs %}
+{% endhighlight %}
+![Enable Connector Split](./images/EnableSplit.gif)
+{% endtabs %}
+{% endif %}
 
 
 ## See Also

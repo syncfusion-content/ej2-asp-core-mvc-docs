@@ -49,7 +49,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
             ViewBag.nodes = nodes;
 
             List<DiagramConnector> Connectors = new List<DiagramConnector>();
-            Connectors.Add(new DiagramConnector() { Id = "connector", SourceID="node1", TargetID="node2"  });
+            Connectors.Add(new DiagramConnector() { Id = "connector", SourceID="node1", TargetID="node2" ,Type = Segments.Orthogonal , ConnectorSpacing = 7 });
             ViewBag.connectors = Connectors;
 
 
