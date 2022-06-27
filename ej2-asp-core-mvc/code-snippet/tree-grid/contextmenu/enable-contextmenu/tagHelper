@@ -1,0 +1,38 @@
+@{
+    ....
+    var data = TreeGridItems.GetTreeData();
+    List<object> contextItems = new List<Object>();
+    contextItems.Add(new { text= "Edit Record", target= ".e-content", id= "Edit_record" });
+    contextItems.Add(new { text = "Delete Record", target = ".e-content", id = "Delete_record" });
+}
+
+<ejs-treegrid id="TreeGrid" dataSource="@data" contextMenuOpen="ContextMenuOpen" contextMenuClick="ContextMenuClick" contextMenuItems="contextItems" allowPaging="true" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-pagesettings pageSize="7"></e-treegrid-pagesettings>
+    <e-treegrid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"  mode="Row"></e-treegrid-editSettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" isPrimaryKey="true" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="180" textAlign="Left"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" type="date" width="90"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="80"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    function ContextMenuOpen(args) {
+        if (args.rowInfo.rowData.hasChildRecords == true) {
+            this.grid.contextMenuModule.contextMenu.enableItems(['Edit Record'], true);//Enable edit
+            this.grid.contextMenuModule.contextMenu.enableItems(['Delete Record'], false);//Disable delete
+        } else {
+            this.grid.contextMenuModule.contextMenu.enableItems(['Edit Record'], false);//Disable edit
+            this.grid.contextMenuModule.contextMenu.enableItems(['Delete Record'], true);//Enable edit
+        }
+    }
+    function ContextMenuClick(args) {
+        if (args.element.innerHTML == "Edit Record") {
+            this.startEdit(args.rowInfo.row);
+        }
+        else if (args.element.innerHTML == "Delete Record") {
+            this.deleteRecord(args.rowInfo.row);
+        }
+    }
+</script>
