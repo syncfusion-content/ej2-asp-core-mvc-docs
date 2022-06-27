@@ -417,17 +417,17 @@ The orthogonal connector has a number of segments in between the source and the 
 
 You can customize the style of the thumb shape by overriding the class e-orthogonal-thumb.
 
-![Segment Thumb Shape](./images/thumbshape.png)
+![Segment Thumb Shape](./images/SegmentThumb.gif)
 
 Use the following CSS to customize the segment thumb shape.
 
 ```scss
 
  .e-orthogonal-thumb {
-            stroke: #24039e;
-            fill: rgb(126, 190, 219);
-            stroke-width: 3px;
-            }
+     stroke: #24039e;
+     fill: rgb(126, 190, 219);
+     stroke-width: 3px;
+    }
 
 ```
 
