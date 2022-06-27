@@ -1,11 +1,24 @@
-     <div class="col-lg-12 control-section">
-        <div class="sample_container badge-list">
-            <ejs-listview id='lists' dataSource=@ViewBag.dataSource headerTitle='Inbox' template="@Html.Raw("<div class='listWrapper' style='width: inherit; height: inherit;'><span class='${icons} list_svg'>&nbsp;</span><span class='list_text'>${text}</span>${if(messages !== '')}<span class='${badge}' style='float: right; margin-top: 16px; font-size: 12px;'>${messages}</span>${/if}</div>")" showHeader=true actionComplete="onActionComplete">
-                <e-listview-fieldsettings groupBy="type">
-                </e-listview-fieldsettings>
-            </ejs-listview>
-        </div>
-    </div>
+@{
+    List<object> data = new List<object>();
+    data.Add(new { id = "p_01", text = "Primary", messages = "3 New", badge = "e-badge e-badge-primary", icons = "primary", type = "Primary" });
+    data.Add(new { id = "p_02", text = "Social", messages = "27 New", badge = "e-badge e-badge-secondary", icons = "social", type = "Primary" });
+    data.Add(new { id = "p_03", text = "Promotions", messages = "7 New", badge = "e-badge e-badge-success", icons = "promotion", type = "Primary" });
+    data.Add(new { id = "p_04", text = "Updates", messages = "13 New", badge = "e-badge e-badge-info", icons = "updates", type = "Primary" });
+    data.Add(new { id = "p_05", text = "Starred", messages = "", badge = "", icons = "starred", type = "All Labels" });
+    data.Add(new { id = "p_06", text = "Important", messages = "2 New", badge = "e-badge e-badge-danger", icons = "important", type = "All Labels" });
+    data.Add(new { id = "p_07", text = "Sent", messages = "", badge = "", icons = "sent", type = "All Labels" });
+    data.Add(new { id = "p_08", text = "Outbox", messages = "", badge = "", icons = "outbox", type = "All Labels" });
+    data.Add(new { id = "p_09", text = "Drafts", messages = "7 New", badge = "e-badge e-badge-warning", icons = "draft", type = "All Labels" });
+}
+
+<div class="col-lg-12 control-section">
+	<div class="sample_container badge-list">
+		<ejs-listview id='lists' dataSource=@data headerTitle='Inbox' template="@Html.Raw("<div class='listWrapper' style='width: inherit; height: inherit;'><span class='${icons} list_svg'>&nbsp;</span><span class='list_text'>${text}</span>${if(messages !== '')}<span class='${badge}' style='float: right; margin-top: 16px; font-size: 12px;'>${messages}</span>${/if}</div>")" showHeader=true actionComplete="onActionComplete">
+			<e-listview-fieldsettings groupBy="type">
+			</e-listview-fieldsettings>
+		</ejs-listview>
+	</div>
+</div>
 
 
 <style>

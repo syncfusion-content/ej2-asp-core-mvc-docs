@@ -18,5 +18,13 @@
         font-family: 'e-bicons' !important;
         font-size: 14px;
     }
+	
+	.e-folder:before {
+        content: "\e704";
+    }
+
+    .e-file:before {
+        content: "\e703";
+    }
 
 </style>
