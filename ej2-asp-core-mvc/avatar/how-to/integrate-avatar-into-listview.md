@@ -18,9 +18,6 @@ Avatar is integrated into the listview to create contacts applications. The `xsm
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/listview/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/listview/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -36,3 +33,5 @@ Avatar is integrated into the listview to create contacts applications. The `xsm
 {% endif %}
 
 ![Avatar ListView](../images/list.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Avatar/AvatarUGSample).

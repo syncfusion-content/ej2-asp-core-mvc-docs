@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Datamatrixgenerator in ##Platform_Name## Barcode Component
-description: Learn here all about Datamatrixgenerator in Syncfusion ##Platform_Name## Barcode component of Syncfusion Essential JS 2 and more.
+title: Datamatrixgenerator in ##Platform_Name## Barcode Control | Syncfusion
+description: Learn here all about Datamatrixgenerator in Syncfusion ##Platform_Name## Barcode control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Datamatrixgenerator
 publishingplatform: ##Platform_Name##
@@ -21,9 +21,6 @@ DataMatrix Barcode is a two dimensional barcode that consists of a grid of dark 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/datamatrixgenerator/datamatrixgenerator/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Datamatrixgenerator.cs" %}
-{% include code-snippet/barcode/datamatrixgenerator/datamatrixgenerator/datamatrixgenerator.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -40,18 +37,15 @@ DataMatrix Barcode is a two dimensional barcode that consists of a grid of dark 
 
 
 
-## Customizing the Barcode color
+## Customizing the DataMatrix color
 
-A page or printed media with barcode often appears colorful in the background and surrounding region with other contents. In such cases, the barcode can also be customized to suit the needs. You can achieve this by using the forecolor property.
+A page or printed media with DataMatrix often appears colorful in the background and surrounding region with other contents. In such cases, the DataMatrix can also be customized to suit the needs. You can achieve this by using the forecolor property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/datamatrixgenerator/color/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Color.cs" %}
-{% include code-snippet/barcode/datamatrixgenerator/color/color.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,18 +63,15 @@ A page or printed media with barcode often appears colorful in the background an
 
 
 
-## Customizing the Barcode dimension
+## Customizing the DataMatrix dimension
 
-The dimension of the barcode can be changed using the height and width property of the barcodegenerator.
+The dimension of the DataMatrix can be changed using the height and width property of the DataMatrix Generator.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/datamatrixgenerator/dimension/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dimension.cs" %}
-{% include code-snippet/barcode/datamatrixgenerator/dimension/dimension.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,16 +91,13 @@ The dimension of the barcode can be changed using the height and width property 
 
 ## Customizing the text
 
-In barcode generators, you can customize the barcode text by using the display text property.
+In DataMatrix generators, you can customize the DataMatrix text by using the display text property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/datamatrixgenerator/text/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Text.cs" %}
-{% include code-snippet/barcode/datamatrixgenerator/text/text.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,3 +113,4 @@ In barcode generators, you can customize the barcode text by using the display t
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Barcode/QRCodeandDataMatrixSample).

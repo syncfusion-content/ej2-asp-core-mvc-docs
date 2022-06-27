@@ -1,6 +1,10 @@
+@using AutoCompleteCustomSample.Models;
+@{
+    var icondata = new SocialMedia().SocialMediaList();
+}
 <div id='iconList' class='col-lg-6' style='padding-top:15px'>
     <div class='content'>
-        <ejs-autocomplete id="icons" dataSource="@ViewBag.icondata" placeholder="Select a social media">
+        <ejs-autocomplete id="icons" dataSource="@icondata" placeholder="Select a social media">
             <e-autocomplete-fields Value="SocialMediaName" iconCss="Class" value="Id"></e-autocomplete-fields>
         </ejs-autocomplete>
     </div>

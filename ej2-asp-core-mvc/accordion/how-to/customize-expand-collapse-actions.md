@@ -23,9 +23,6 @@ The following sample demonstrates, how to expand the collapsed Accordion item af
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/accordion/how-to/actions/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Actions.cs" %}
-{% include code-snippet/accordion/how-to/actions/actions.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -42,3 +39,5 @@ The following sample demonstrates, how to expand the collapsed Accordion item af
 
 
 ![Customize Accordion expand or collapse animation behavior](../images/actions.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Accordion/AccordionUGSamples).
