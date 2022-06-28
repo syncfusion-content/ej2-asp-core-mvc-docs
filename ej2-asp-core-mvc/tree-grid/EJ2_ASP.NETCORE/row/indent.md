@@ -1,21 +1,18 @@
 ---
 layout: post
-title: Adaptive in ##Platform_Name## Tree Grid Component
-description: Learn here all about Adaptive in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: Indent and Outdent Feature in ##Platform_Name## Tree Grid Component
+description: Learn here all about Indent and Outdent Feature in Syncfusion ##Platform_Name## Tree Grid component and much more.
 platform: ej2-asp-core-mvc
-control: Adaptive
+control: Indent and Outdent
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Indent and Outdent in ##Platform_Name## Tree Grid Component
 
-# Adaptive View
+The Indent and Outdent feature will help to change the hierarchy level of rows in tree grid. The indent action moves the selected row as the last child of its previous row, whereas the outdent action moves the selected row as a sibling to its parent row.
 
-The Tree Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, and edit dialogs adaptively.
-
-## Render adaptive dialogs
-
-When you enable the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableAdaptiveUI) property, the tree grid will render the filter, sort, and edit dialogs in full screen for a better user experience. The following demo demonstrates this behavior.
+To use the indent and outdent feature, inject the `RowDD` module in the Tree Grid. The tree grid toolbar has the built-in items to execute indent and outdent actions. Define this by using the toolbar property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
