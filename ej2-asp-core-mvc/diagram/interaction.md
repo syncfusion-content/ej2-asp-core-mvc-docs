@@ -37,7 +37,7 @@ Multiple elements can be selected with the following ways:
 
 * Selection rectangle/rubber band selection - Clicking and dragging the diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
 
-![Multiple Rubberband Selection](images/multiselect_Highlight.gif)
+![Multiple Rubberband Selection](images/Multiselect_Highlight.JPG)
 
 ## Select/Unselect elements using program
 
