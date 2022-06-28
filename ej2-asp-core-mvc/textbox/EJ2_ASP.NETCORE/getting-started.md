@@ -179,4 +179,4 @@ The floating label TextBox floats the label above the TextBox after focusing, or
 * [How to render TextBox programmatically](./how-to/add-textbox-programmatically)
 * [How to add floating label to TextBox programmatically](./how-to/add-floating-label-to-textbox-programmatically)
 
-N> You can refer to our [ASP.NET Core Textbox](https://www.syncfusion.com/aspnet-core-ui-controls/textbox) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Example](https://ej2.syncfusion.com/aspnetcore/TextBoxes/DefaultFunctionalities#/bootstrap5) that shows you how to render the Textbox in ASP.NET Core.
+N> You can also explore our [ASP.NET Core Textbox Example](https://ej2.syncfusion.com/aspnetcore/TextBoxes/DefaultFunctionalities#/bootstrap5) that shows you how to render the Textbox in ASP.NET Core.
