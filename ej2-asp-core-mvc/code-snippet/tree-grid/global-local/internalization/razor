@@ -51,8 +51,8 @@
                 'lastPageTooltip': 'Zur letzten Seite',
                 'nextPageTooltip': 'Zur nächsten Seite',
                 'previousPageTooltip': 'Zurück zur letzten Seit',
-                'nextPagerTooltip': 'Zum nächsten Pager',
-                'previousPagerTooltip': 'Zum vorherigen Pager'
+                'nextPagerTooltip': 'Gehen Sie zu den nächsten Pager-Elementen',
+                'previousPagerTooltip': 'Gehen Sie zu vorherigen Pager-Elementen'
             },
             "dropdowns": {
                 "noRecordsTemplate": "Keine Aufzeichnungen gefunden"
