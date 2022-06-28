@@ -487,12 +487,14 @@ The [`vector1`](https://ej2.syncfusion.com/documentation/api/diagram/bezierSegme
 {% endtabs %}
 {% endif %}
 
-## Avoid overlapping with Bezier
+## Avoid overlapping with bezier
+
 By default, when there are no segments defined for a bezier connector, the bezier segments will be created automatically and routed in such a way that avoids overlapping with the source and target nodes.
 
 Also, the intermediate point of two adjacent bezier segments can be edited interactively based on the bezierSettings.segmentEditOrientation property of the connector class.
 
 ### How to interact with the bezier segments efficiently
+
 While interacting with multiple bezier segments, maintain their control points at the same distance and angle by using the bezierSettings.smoothness property of the connector class.
 
 | BezierSmoothness value | Description |
@@ -503,7 +505,6 @@ While interacting with multiple bezier segments, maintain their control points a
 | None | Segment’s control points are interacted independently from each other. |
 
 Also, the visibility of control points can be controlled using the bezierSettings.controlPointsVisibility property of the connector class.
-
 
 ## Decorator
 
