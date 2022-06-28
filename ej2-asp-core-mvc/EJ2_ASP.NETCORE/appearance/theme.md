@@ -956,6 +956,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/fluent.css">notifications/styles/fluent.css</a></td>
 </tr>
 <tr>
+<td></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdfviewer/styles/fluent.css">pdfviewer/styles/fluent.css</a></td>
 </tr>
 </table>
