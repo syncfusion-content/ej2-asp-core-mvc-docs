@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip
+# Tooltip of Slider Control
 
 The [ASP.NET Core Slider](https://www.syncfusion.com/aspnet-core-ui-controls/range-slider) displays the tooltip to indicate the current value by clicking the Slider bar or drag the Slider handle. The Tooltip position can be customized by using the `placement` property. Also decides the tooltip display mode on a page, i.e., on hovering, focusing, or clicking on the Slider handle and it always remains/displays on the page.
 
