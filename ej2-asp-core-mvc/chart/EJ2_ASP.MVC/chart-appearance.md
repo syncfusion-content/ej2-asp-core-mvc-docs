@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appearance
+# Chart Appearance
 
 ## Chart Theme Customization
 
