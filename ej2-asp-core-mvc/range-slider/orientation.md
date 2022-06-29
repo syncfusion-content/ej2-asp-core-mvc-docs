@@ -11,7 +11,7 @@ documentation: ug
 
 # Orientation
 
-The Slider can be displayed, either in horizontal or vertical orientation. By default, the Slider renders in horizontal orientation.
+The [ASP.NET Core Slider](https://www.syncfusion.com/aspnet-core-ui-controls/range-slider) can be displayed, either in horizontal or vertical orientation. By default, the Slider renders in horizontal orientation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

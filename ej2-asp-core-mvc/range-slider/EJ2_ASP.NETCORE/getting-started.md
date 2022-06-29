@@ -128,3 +128,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 * [Orientation Slider](./orientation)
 * [Ticks in Slider](./ticks)
 * [Tooltip in Slider](./tooltip)
+
+N> You can also explore our [ASP.NET Core Range Slider Example](https://ej2.syncfusion.com/aspnetcore/RangeSlider/DefaultFunctionalities#/material) that shows you how to render and configure the range slider.
