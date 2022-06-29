@@ -96,7 +96,7 @@ In the following demo, using the `rotation` property of the style argument in th
 {% include code-snippet/grid/excel-export/header-rotate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Header-rotate.cs" %}
-{% include code-snippet/grid/excel-export/header-rotate/theme.cs %}
+{% include code-snippet/grid/excel-export/header-rotate/header-rotate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -107,7 +107,7 @@ In the following demo, using the `rotation` property of the style argument in th
 {% include code-snippet/grid/excel-export/header-rotate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Header-rotate.cs" %}
-{% include code-snippet/grid/excel-export/header-rotate/theme.cs %}
+{% include code-snippet/grid/excel-export/header-rotate/header-rotate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
