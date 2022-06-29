@@ -178,3 +178,5 @@ The floating label TextBox floats the label above the TextBox after focusing, or
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [How to render TextBox programmatically](./how-to/add-textbox-programmatically)
 * [How to add floating label to TextBox programmatically](./how-to/add-floating-label-to-textbox-programmatically)
+
+N> You can also explore our [ASP.NET Core TextBox Example](https://ej2.syncfusion.com/aspnetcore/TextBoxes/DefaultFunctionalities#/fabric) that shows you how to render and configure the textbox.
