@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Adaptive View
+# Adaptive View in ##Platform_Name## Tree Grid Component
 
 The Tree Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, and edit dialogs adaptively.
 
