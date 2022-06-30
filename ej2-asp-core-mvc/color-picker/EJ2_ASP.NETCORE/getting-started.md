@@ -151,3 +151,5 @@ By default, the ColorPicker will be rendered using SplitButton and open the pop-
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Color Picker Example](https://ej2.syncfusion.com/aspnetcore/ColorPicker/DefaultFunctionalities#/material) that shows you how to render and configure the color picker.
