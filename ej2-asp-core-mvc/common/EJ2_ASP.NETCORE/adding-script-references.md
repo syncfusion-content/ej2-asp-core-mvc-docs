@@ -93,7 +93,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">navigations.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/accumulation-chart/getting-started">AccumulationChart, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/smithchart/getting-started">Smith Chart, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started">Chart</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/accumulation-chart/getting-started">Accumulation Chart, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/smithchart/getting-started">Smith Chart, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started">Chart</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -121,7 +121,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js">charts.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started">Avatar, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/card/getting-started">Card, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started">DashboardLayout, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/splitter/getting-started">Splitter</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started">Avatar, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/card/getting-started">Card, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started">Dashboard Layout, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/splitter/getting-started">Splitter</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -149,7 +149,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-barcode-generator/dist/global/ej2-barcode-generator.min.js">barcode-generator.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/bullet-chart/getting-started">BulletChart</a>,<a href="https://ej2.syncfusion.com/aspnetcore/documentation/sparkline/getting-started">Sparkline</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/bullet-chart/getting-started">Bullet Chart,</a> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/sparkline/getting-started">Sparkline</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -165,7 +165,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js">charts.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started">Button, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/check-box/getting-started">CheckBox, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chips/getting-started">Chips, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/radio-button/getting-started">RadioButton, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started">Switch</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started">Button, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/check-box/getting-started">CheckBox, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chips/getting-started">Chips, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/radio-button/getting-started">Radio Button, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started">Switch</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -173,7 +173,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">buttons.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button-group/getting-started">Button Group</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button-group/getting-started">ButtonGroup</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">navigations.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started">CircularGauge</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started">Circular Gauge</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -249,7 +249,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">inputs.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/breadcrumb/getting-started">Breadcrumb, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/context-menu/getting-started">ContextMenu, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/menu/getting-started">Menu</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/breadcrumb/getting-started">Breadcrumb, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/context-menu/getting-started">Context Menu, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/menu/getting-started">Menu</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -265,7 +265,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">navigations.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/datepicker/getting-started">Date Picker</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/datepicker/getting-started">DatePicker</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -281,7 +281,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">calendars.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/daterangepicker/getting-started">Date Range Picker</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/daterangepicker/getting-started">DateRangePicker</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -417,7 +417,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">dropdowns.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/getting-started">FileManager</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/getting-started">File Manager</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -649,7 +649,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">navigations.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started">Tooltip</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started">ToolTip</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -777,7 +777,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-kanban/dist/global/ej2-kanban.min.js">kanban.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started">LinearGauge</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started">Linear Gauge</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -873,7 +873,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-maps/dist/global/ej2-maps.min.js">maps.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started">PivotTable</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started">Pivot Table</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -977,7 +977,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-querybuilder/dist/global/ej2-querybuilder.min.js">querybuilder.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-navigator/getting-started">RangeNavigator</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-navigator/getting-started">Range Navigator</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -1013,7 +1013,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js">charts.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-slider/getting-started">RangeSlider</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-slider/getting-started">Range Slider</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
@@ -1285,7 +1285,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-gantt/dist/global/ej2-gantt.min.js">gantt.min.js</a></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started">PDFViewer</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started">PDF Viewer</a></td>
 <td><a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">base.min.js</a></td>
 </tr>
 <tr>
