@@ -20,8 +20,8 @@ To use the indent and outdent feature, inject the `RowDD` module in the Tree Gri
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/indent/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/tree-grid/indent/default.cs %}
+{% highlight c# tabtitle="Indent.cs" %}
+{% include code-snippet/tree-grid/indent/indent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,8 +31,8 @@ To use the indent and outdent feature, inject the `RowDD` module in the Tree Gri
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/indent/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/tree-grid/indent/default.cs %}
+{% highlight c# tabtitle="Indent.cs" %}
+{% include code-snippet/tree-grid/indent/indent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
