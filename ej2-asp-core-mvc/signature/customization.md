@@ -10,7 +10,7 @@ documentation: ug
 
 # Customization of Signature Control
 
-The Signature control draws stroke/path using moveTo() and lineTo() methods to connect one or more points while drawing in canvas. The stroke width can be modified by using its color and width. And the background can be modified by using its background color and background image.
+The [ASP.NET Core Signature](https://www.syncfusion.com/aspnet-core-ui-controls/signature) control draws stroke/path using moveTo() and lineTo() methods to connect one or more points while drawing in canvas. The stroke width can be modified by using its color and width. And the background can be modified by using its background color and background image.
 
 ## Stroke Width
 
