@@ -23,7 +23,7 @@ The Essential Studio ASP.NET Core EJ2 Mac installer allows you to create the ASP
    1.	Right-click the downloaded pkg file.
    2.	Select the "Open With" option and choose "Installer (Default)". The following pop-up appears.
 
-	![pop-up Image](images/Mac_Catalina_MacOS_Alert2.png)
+	    ![pop-up Image](images/Mac_Catalina_MacOS_Alert2.png)
 
    3.	When you click "Open" the installer window will be opened.
 
