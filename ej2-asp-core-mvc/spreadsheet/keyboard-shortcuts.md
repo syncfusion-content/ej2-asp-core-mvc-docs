@@ -68,13 +68,13 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Shift + Spacebar | Select an entire row in a worksheet. |
 | Shift + F3 | Opens `Insert Function` dialog. |
 | Ctrl + Alt + N | Opens new workbook. |
-| Shift + Page Down | Perform Page Down by selecting all cells between. |
-| Shift + Page Up | Perform Page Up by selecting all cells between. |
+| Shift + Page Down | Perform page down by selecting all cells between. |
+| Shift + Page Up | Perform page up by selecting all cells between. |
 | Ctrl + Left | Navigate to the last non-blank cell in the same column as the active cell. |
 | Ctrl + Right | Navigate to the first non-blank cell in the same column as the active cell. |
 | Ctrl + Up | Navigate to the first non-blank cell in the same row as the active cell. |
 | Ctrl + Down | Navigate to the last non-blank cell in the same row as the active cell. |
-| Ctrl + Shift + left | Extend the selection of cells to the last non-blank cell in the same column as the active cell. |
+| Ctrl + Shift + Left | Extend the selection of cells to the last non-blank cell in the same column as the active cell. |
 | Ctrl + Shift + Right | Extend the selection of cells to the first non-blank cell in the same column as the active cell. |
 | Ctrl + Shift + Up | Extend the selection of cells to the first non-blank cell in the same row as the active cell. |
 | Ctrl + Shift + Down | Extend the selection of cells to the last non-blank cell in the same row as the active cell. |
