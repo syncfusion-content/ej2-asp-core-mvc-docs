@@ -82,3 +82,36 @@ In the below demo, we have invoked the above method inside the [`toolbarClick`](
 {% endtabs %}
 {% endif %}
 
+
+
+## Grid cell customization in server side Excel export
+
+The DataGrid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported Excel file. To achieve this requirement, use the `ServerExcelHeaderQueryCellInfo` event of the Grid.
+
+The `ServerExcelHeaderQueryCellInfo` will be triggered when creating a column header for the excel document to be exported in the server side. Customize the column header in this event.
+
+In the following demo, using the `HeaderCellRotate` method of the `GridExcelExport` class in the `ServerExcelHeaderQueryCellInfo` event, you can rotate the header text of the column header in the excel exported document.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/server-rotate-header/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-RotateHeader.cs" %}
+{% include code-snippet/grid/excel-export/server-rotate-header/server-rotate-header.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/server-rotate-header/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-RotateHeader.cs" %}
+{% include code-snippet/grid/excel-export/server-rotate-header/server-rotate-header.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
