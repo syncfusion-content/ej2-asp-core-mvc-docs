@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Connector
+# Connector in Diagram
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 
@@ -433,7 +433,6 @@ Use the following CSS to customize the segment thumb shape.
     }
 
 ```
-
 
 ## Bezier
 
@@ -869,8 +868,10 @@ The connectors are used to create a link between two points, ports, or nodes to 
 {% highlight c# tabtitle="connectorsplit.cs" %}
 {% include code-snippet/diagram/connectors/connectorsplit/connectorsplit.cs %}
 {% endhighlight %}
-![Enable Connector Split](./images/EnableSplit.gif)
+
 {% endtabs %}
+
+![Enable Connector Split](./images/EnableSplit.gif)
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -878,10 +879,11 @@ The connectors are used to create a link between two points, ports, or nodes to 
 {% highlight c# tabtitle="connectorsplit.cs" %}
 {% include code-snippet/diagram/connectors/connectorsplit/connectorsplit.cs %}
 {% endhighlight %}
-![Enable Connector Split](./images/EnableSplit.gif)
+
 {% endtabs %}
 {% endif %}
 
+![Enable Connector Split](./images/EnableSplit.gif)
 
 ## See Also
 

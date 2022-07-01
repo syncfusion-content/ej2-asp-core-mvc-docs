@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Interaction
+# Interaction in Diagram
 
 ## Selection
 
