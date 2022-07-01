@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Spreadsheet Component
-description: "Documentation for accessibility in Essential JS2 Spreadsheet, featuring WAI-ARIA standards."
+description: "Documentation for the accessibility in the Essential JS2 Spreadsheet, featuring WAI-ARIA standards."
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
