@@ -23,9 +23,9 @@ The steps below shows how to install the Essential Studio ASP.NET Core - EJ2 ins
 
 2. To unlock the Syncfusion offline installer, you have two options:
 
-        * *Login To Install*
+    * *Login To Install*
 
-        * *Use Unlock Key*
+    * *Use Unlock Key*
 
     ***Login To Install***
 

@@ -23,9 +23,9 @@ The steps below show how to install the Essential Studio ASP . NET MVC - EJ2 ins
 
 2. To unlock the Syncfusion offline installer, you have two options:
 
-        * *Login To Install*
+    * *Login To Install*
 
-        * *Use Unlock Key*
+    * *Use Unlock Key*
 
     ***Login To Install***
 
