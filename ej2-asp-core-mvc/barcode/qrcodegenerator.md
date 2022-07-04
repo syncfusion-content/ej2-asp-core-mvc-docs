@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Qrcodegenerator in ##Platform_Name## Barcode Component
-description: Learn here all about Qrcodegenerator in Syncfusion ##Platform_Name## Barcode component of Syncfusion Essential JS 2 and more.
+title: Qrcodegenerator in ##Platform_Name## Barcode Control | Syncfusion
+description: Learn here all about Qrcodegenerator in Syncfusion ##Platform_Name## Barcode control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Qrcodegenerator
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# QR Code generator
+# ##Platform_Name## QR Code generator Control
 
-# QR Code
+## QR Code
 
 A QR Code is a two-dimensional barcode that consists of a grid of dark and light dots or blocks that form a square. The data encoded in the barcode can be numeric, alphanumeric, or Shift Japanese Industrial Standards (JIS8) characters. The QR Code uses version from 1 to 40. Version 1 measures 21 modules x 21 modules, Version 2 measures 25 modules x 25 modules, and so on. The number of modules increases in steps of 4 modules per side up to Version 40 that measures 177 modules x 177 modules. Each version has its own capacity. By default, the barcode control automatically sets the version according to the length of the input text. The QR Barcodes are designed for industrial uses and also commonly used in consumer advertising.
 
@@ -20,9 +20,6 @@ A QR Code is a two-dimensional barcode that consists of a grid of dark and light
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/qrcode/qrcode/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Qrcode.cs" %}
-{% include code-snippet/barcode/qrcode/qrcode/qrcode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -40,18 +37,15 @@ A QR Code is a two-dimensional barcode that consists of a grid of dark and light
 
 
 
-## Customizing the Barcode color
+## Customizing the QR Code color
 
-A page or printed media with barcode often appears colorful in the background and surrounding region with other contents. In such cases, the barcode can also be customized to suit the needs. You can achieve this by using for forecolor property.
+A page or printed media with QR Code often appears colorful in the background and surrounding region with other contents. In such cases, the QR Code can also be customized to suit the needs. You can achieve this by using for forecolor property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/qrcode/color/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Color.cs" %}
-{% include code-snippet/barcode/qrcode/color/color.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,18 +63,15 @@ A page or printed media with barcode often appears colorful in the background an
 
 
 
-## Customizing the Barcode dimension
+## Customizing the QR Code dimension
 
-The dimension of the barcode can be changed using the height and width properties of the barcodegenerator.
+The dimension of the QR Code can be changed using the height and width properties of the QR Code Generator.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/qrcode/dimension/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dimension.cs" %}
-{% include code-snippet/barcode/qrcode/dimension/dimension.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,16 +91,13 @@ The dimension of the barcode can be changed using the height and width propertie
 
 ## Customizing the text
 
-In barcode generators, you can customize the barcode text by using display text property.
+In QR Code generators, you can customize the QR Code text by using display text property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/barcode/qrcode/text/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Text.cs" %}
-{% include code-snippet/barcode/qrcode/text/text.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,3 +113,4 @@ In barcode generators, you can customize the barcode text by using display text 
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Barcode/QRCodeandDataMatrixSample).

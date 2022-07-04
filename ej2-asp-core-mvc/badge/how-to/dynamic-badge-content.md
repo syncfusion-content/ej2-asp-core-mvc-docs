@@ -18,9 +18,6 @@ Badges in real-time needs to be updated dynamically based on the requirements. T
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/dynamic-badge/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/dynamic-badge/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -36,4 +33,6 @@ Badges in real-time needs to be updated dynamically based on the requirements. T
 {% endif %}
 
 
-![Badge Sample](../images/badgecount.PNG)
+![Dynamic Badge Content](../images/badgecount.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Badge/BadgeCustomSample).

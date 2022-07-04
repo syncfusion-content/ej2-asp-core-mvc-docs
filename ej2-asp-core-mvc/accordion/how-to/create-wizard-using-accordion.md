@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create Wizard Using Accordion in ##Platform_Name## Accordion Component
-description: Learn here all about Create Wizard Using Accordion in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+title: Create Wizard Using Accordion in ##Platform_Name## Accordion Control | Syncfusion
+description: Learn here all about Create Wizard Using Accordion in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Wizard Using Accordion
 publishingplatform: ##Platform_Name##
@@ -21,9 +21,6 @@ The below demo is designed for simple payment module that enable or disable Acco
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/accordion/how-to/wizard/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Wizard.cs" %}
-{% include code-snippet/accordion/how-to/wizard/wizard.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -38,3 +35,4 @@ The below demo is designed for simple payment module that enable or disable Acco
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Accordion/AccordionUGSamples).

@@ -1,3 +1,7 @@
+@using AutoCompleteCustomSample.Models;
+@{
+    var data = new Countries().CountriesList();
+}
 <div id='iconList' class='col-lg-6' style='padding-top:15px'>
     <div class='content'>
         <ejs-autocomplete id="country" dataSource="@ViewBag.data" highlight="true" placeholder="Select a social media">

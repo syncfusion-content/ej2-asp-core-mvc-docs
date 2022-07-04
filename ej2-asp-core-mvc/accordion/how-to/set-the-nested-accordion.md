@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set The Nested Accordion in ##Platform_Name## Accordion Component
-description: Learn here all about how to set the Nested Accordion in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+title: Set The Nested Accordion in ##Platform_Name## Accordion Control | Syncfusion
+description: Learn here all about how to set the Nested Accordion in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set The Nested Accordion
 publishingplatform: ##Platform_Name##
@@ -19,9 +19,6 @@ Accordion supports to render `nested` level of Accordion by using content proper
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/accordion/how-to/nested/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Nested.cs" %}
-{% include code-snippet/accordion/how-to/nested/nested.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -38,3 +35,5 @@ Accordion supports to render `nested` level of Accordion by using content proper
 
 
 ![Alt text](../images/nested.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Accordion/AccordionUGSamples).
