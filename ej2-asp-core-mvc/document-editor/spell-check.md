@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Spell Check
+# Spell Check in Document Editor Component
 
 Document editor supports performing spell checking for any input text. You can perform spell checking for the text in Document Editor and it will provide suggestions for the mis-spelled words through dialog and in context menu.
 
