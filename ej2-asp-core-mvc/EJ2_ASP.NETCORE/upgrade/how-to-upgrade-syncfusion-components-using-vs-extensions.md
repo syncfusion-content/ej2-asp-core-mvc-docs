@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Upgrading Syncfusion ##Platform_Name## components to a latest version
+title: Upgrading Syncfusion ##Platform_Name## components to a latest version
 description: Learn here about the how upgrade Syncfusion ##Platform_Name## components to a latest version from NuGet manager and migrate.
 platform: ej2-asp-core-mvc
 control: How To Upgrade Syncfusion Components Using Vs Extensions
