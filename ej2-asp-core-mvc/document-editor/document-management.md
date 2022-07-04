@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Document management
+# Document management in Document Editor Component
 
 Document Editor provides support to restrict editing. When the protected document includes range permission, then unique user or user group is only authorized to edit separate text area.
 
