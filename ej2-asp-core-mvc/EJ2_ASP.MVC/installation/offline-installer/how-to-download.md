@@ -83,4 +83,4 @@ You should initiate an evaluation if you have already obtained our components th
 
     ![Trial Download Offline Installer](images\start-trial-download-offline-installer.PNG)
 
-You can also refer to the [Offline Installer](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/web-installer/how-to-install) links for step-by-step installation guidelines.
+You can also refer to the [Offline Installer](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/offline-installer/how-to-install) links for step-by-step installation guidelines.
