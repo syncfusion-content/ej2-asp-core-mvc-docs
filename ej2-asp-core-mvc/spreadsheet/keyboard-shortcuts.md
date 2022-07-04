@@ -17,7 +17,7 @@ The keyboard shortcuts supported in the spreadsheet are,
 |-------|---------|
 | Ctrl + O | Displays dialog to open a file. |
 | Ctrl + S | Saves the workbook. |
-| F2 | Enables `edit` mode. |
+| F2 | Enables edit mode. |
 | ESC | Cancel edit mode and discard the changes. |
 | Backspace and SPACE | Clears content of the active cell and enables edit mode. |
 | Ctrl + C | Copies the selected cells. |
@@ -27,8 +27,8 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Ctrl + I | Applies or removes *italic* formatting. |
 | Ctrl + U | Applies or removes `underline`. |
 | Ctrl + 5 | Applies or removes ~~strikethrough~~. |
-| Ctrl + Z | Reverses(Undo) the last action. |
-| Ctrl + Y | Repeats(Redo) the last reversed action. |
+| Ctrl + Z | Reverses (Undo) the last action. |
+| Ctrl + Y | Repeats (Redo) the last reversed action. |
 | Ctrl + K | It opens the `Insert Hyperlink` dialog for adding new hyperlink to a cell. If the selected cell already contains hyperlink, it opens the `Edit Hyperlink` dialog. |
 | Ctrl + F | Opens `Find` dialog. |
 | Ctrl + H | Opens `Find and Replace` dialog. |
@@ -51,34 +51,34 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Ctrl + 9 | Hide the selected row. |
 | Ctrl + 0 | Hide the selected column. |
 | Home | Moves the selection to starting column in worksheet. |
-| Ctrl + Home | Move to the first cell on a worksheet, left most first row and first column cell. |
-| Ctrl + Shift + Home | Extend the selection of cells to the beginning of the worksheet |
-| Ctrl + End | Move to the last cell on a worksheet, right most last column and last row cell |
-| Ctrl + Ampersand sign | Apply an outline border to the selected cells. |
-| Ctrl + Shift + Ampersand sign | Remove the outline border from the selected cells. |
-| Ctrl + Shift + Tilde sign | Apply the General number format. |
-| Ctrl + Shift + Dollar sign | Apply the Currency format with two decimal places (negative numbers in parentheses). |
-| Shift + F10 | Add `new sheet`. |
-| Ctrl + Shift + Percent sign | Apply the Percentage format with no decimal places. |
-| Ctrl + Shift + Caret sign | Apply the Scientific number format with two decimal places. |
-| Ctrl + Shift + Number sign |Apply the Date format with the day, month, and year. |
-| Ctrl + Shift + At sign | Apply the Time format with the hour and minute, and AM or PM. |
-| Ctrl + Shift + Exclamation point | Apply the Number format with two decimal places, thousands separator, and minus sign (-) for negative values. |
+| Ctrl + Home | Move to the first cell on a worksheet, left most first row and first column cell (A1). |
+| Ctrl + Shift + Home | Extend the selection of cells to the beginning of the worksheet. |
+| Ctrl + End | Move to the last cell on a worksheet, right most last column and last row cell. |
+| Ctrl + & | Apply an outline border to the selected cells. |
+| Ctrl + Shift + & | Remove the outline border from the selected cells. |
+| Ctrl + Shift + ~ | Apply the `General` number format. |
+| Ctrl + Shift + $ | Apply the `Currency` format with two decimal places (negative numbers in parentheses). |
+| Shift + F10 | Add new sheet. |
+| Ctrl + % | Apply the `Percentage` format with no decimal places. |
+| Ctrl + ^ | Apply the `Scientific` number format with two decimal places. |
+| Ctrl + Shift + # |Apply the `Date` format with the day, month, and year. |
+| Ctrl + Shift + @ | Apply the `Time` format with the hour and minute, and AM or PM. |
+| Ctrl + Shift + ! | Apply the `Number` format with two decimal places, thousands separator, and minus sign (-) for negative values. |
 | Ctrl + Spacebar | Select an entire column in a worksheet. |
 | Shift + Spacebar | Select an entire row in a worksheet. |
 | Shift + F3 | Opens `Insert Function` dialog. |
-| Ctrl + Alt + N | Opens `new` workbook. |
-| Shift + Page down | Perform page down by selecting all cells between. |
-| Shift + Page Up | Perform page Up by selecting all cells between. |
-| Ctrl + left | Navigate to the last non-blank cell in the same column as the active cell. |
+| Ctrl + Alt + N | Opens new workbook. |
+| Shift + Page Down | Perform page down by selecting all cells between. |
+| Shift + Page Up | Perform page up by selecting all cells between. |
+| Ctrl + Left | Navigate to the last non-blank cell in the same column as the active cell. |
 | Ctrl + Right | Navigate to the first non-blank cell in the same column as the active cell. |
 | Ctrl + Up | Navigate to the first non-blank cell in the same row as the active cell. |
 | Ctrl + Down | Navigate to the last non-blank cell in the same row as the active cell. |
-| Ctrl + Shift + left | Extend the selection of cells to the last non-blank cell in the same column as the active cell. |
+| Ctrl + Shift + Left | Extend the selection of cells to the last non-blank cell in the same column as the active cell. |
 | Ctrl + Shift + Right | Extend the selection of cells to the first non-blank cell in the same column as the active cell. |
 | Ctrl + Shift + Up | Extend the selection of cells to the first non-blank cell in the same row as the active cell. |
 | Ctrl + Shift + Down | Extend the selection of cells to the last non-blank cell in the same row as the active cell. |
-| Shift + Alt + K | Opens `Sheets list`. |
+| Shift + Alt + K | Opens `List All Sheets`. |
 
 ## See Also
 
