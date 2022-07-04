@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Chart Appearance
+# Appearance in MVC Chart component
 
 ## Chart Theme Customization
 
