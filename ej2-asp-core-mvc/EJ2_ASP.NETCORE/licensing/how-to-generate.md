@@ -21,4 +21,4 @@ License keys can be generated from the [License & Downloads](https://syncfusion.
 
 ## See Also
 
-* [How to Register Syncfusion License Key in ASP .NET Core EJ2 Application?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-generation)
+* [How to Register Syncfusion License Key in ASP .NET Core EJ2 Application?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application)
