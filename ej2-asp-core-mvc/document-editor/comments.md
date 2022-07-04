@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Comments
+# Comments in Document Editor Component
 
 Document editor allows to add comments to documents. You can add, navigate and remove comments in code and from the UI.
 
