@@ -29,6 +29,9 @@ To bind local list data to the Kanban, you can simply assign a list to the `Data
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/data-binding/local-data/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/data-binding/local-data/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -39,6 +42,9 @@ To bind local list data to the Kanban, you can simply assign a list to the `Data
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/data-binding/local-data/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/data-binding/local-data/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

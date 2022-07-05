@@ -28,6 +28,9 @@ You can customize the tooltip content with any HTML or CSS element and styling u
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/tooltip/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/tooltip/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -38,6 +41,9 @@ You can customize the tooltip content with any HTML or CSS element and styling u
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/tooltip/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/tooltip/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

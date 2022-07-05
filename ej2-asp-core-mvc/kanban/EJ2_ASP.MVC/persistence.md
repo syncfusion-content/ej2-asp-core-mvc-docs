@@ -24,6 +24,9 @@ State persistence stores Kanban datasource, column or swimlane expand/collapse s
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/persistence/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/persistence/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -34,6 +37,9 @@ State persistence stores Kanban datasource, column or swimlane expand/collapse s
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/persistence/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/persistence/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
