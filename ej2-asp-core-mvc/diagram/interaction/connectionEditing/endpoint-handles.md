@@ -10,9 +10,9 @@ documentation: ug
 
 * Each segment of a selected connector is editable with some specific handles/thumbs.
 
-> For connector editing, you have to inject the [`ConnectorEditing`](https://ej2.syncfusion.com/documentation/api/diagram/connectorEditing) module.
+* For connector editing, you have to inject the [`ConnectorEditing`](https://ej2.syncfusion.com/documentation/api/diagram/connectorEditing) module.
 
-## End point handles
+# End point handles
 
 Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles helps to adjust the source and target points.
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-## Straight segment editing
+# Straight segment editing
 
 * End point of each straight segment is represented by a thumb that enables to edit the segment.
 * Any number of new segments can be inserted into a straight line by clicking, when Shift and Ctrl keys are pressed (Ctrl+Shift+Click).
