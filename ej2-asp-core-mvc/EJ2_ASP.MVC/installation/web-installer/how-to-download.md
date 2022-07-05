@@ -55,7 +55,7 @@ You should initiate an evaluation if you have already obtained our components th
 
    >**Note** <br /> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
-4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/license-key-generation) here at any time before the trial period expires. (See the screenshot below)
+4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-generate) here at any time before the trial period expires. (See the screenshot below)
 
     ![Start Trial Download](images\start-trial-download-installer.png)
 
@@ -86,4 +86,4 @@ You should initiate an evaluation if you have already obtained our components th
    N> For Syncfusion trial and licensed products, there is no separate web installer. Based on your account license, Syncfusion trial or licensed products will be installed via web installer.
    
 
-You can also refer to the [Web installer](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/installation-using-web-installer/) links for step-by-step installation guidelines.
+You can also refer to the [Web installer](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/web-installer/how-to-install) links for step-by-step installation guidelines.

@@ -28,5 +28,5 @@ Please note that this license key is different from the installer unlock key tha
 
 ## See Also
 
-* [How to Generate Syncfusion ASP.NET Core License Key?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-generation/)
-* [How to Register Syncfusion License Key in ASP.NET Core Application?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-registration/)
+* [How to Generate Syncfusion ASP.NET Core License Key?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-generate)
+* [How to Register Syncfusion License Key in ASP.NET Core Application?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application)

@@ -20,4 +20,4 @@ Syncfusion license keys are **version and platform specific**, refer to the [KB]
 
 ## See Also
 
-* [How to Register Syncfusion License Key in ASP .NET MVC EJ2 Application?](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/license-key-registration)
+* [How to Register Syncfusion License Key in ASP .NET MVC EJ2 Application?](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application)
