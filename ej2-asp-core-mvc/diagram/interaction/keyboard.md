@@ -7,7 +7,7 @@ control: Keyboard
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-# Keyboard
+# Keyboard interactions
 
 Diagram provides support to interact with the elements with key gestures. By default, some in-built commands are bound with a relevant set of key combinations.
 
