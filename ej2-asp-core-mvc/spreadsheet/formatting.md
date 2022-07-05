@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Formatting
+# Formatting in Spreadsheet Component
 
 Formatting options make your data easier to view and understand. The different types of formatting options in the Spreadsheet are,
 * Number Formatting
