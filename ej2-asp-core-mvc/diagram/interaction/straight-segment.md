@@ -13,8 +13,8 @@ documentation: ug
 * End point of each straight segment is represented by a thumb that enables to edit the segment.
 * Any number of new segments can be inserted into a straight line by clicking, when Shift and Ctrl keys are pressed (Ctrl+Shift+Click).
 
-![Straight Segment Editing Addition](../../images/straight-segment-add.gif)
+![Straight Segment Editing Addition](../images/straight-segment-add.gif)
 
 * Straight segments can be removed by clicking the segment end point, when Ctrl and Shift keys are pressed (Ctrl+Shift+Click).
 
-![Straight Segment Editing Remove](../../images/straight-segment-remove.gif)
+![Straight Segment Editing Remove](../images/straight-segment-remove.gif)

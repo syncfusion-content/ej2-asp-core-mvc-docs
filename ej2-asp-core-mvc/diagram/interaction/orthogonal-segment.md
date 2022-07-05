@@ -13,4 +13,4 @@ documentation: ug
 * Orthogonal thumbs allows to adjust the length of adjacent segments by clicking and dragging it.
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-![orthogonal Segment Edit](../../images/orthogonal-segment-edit.gif)
+![orthogonal Segment Edit](../images/orthogonal-segment-edit.gif)

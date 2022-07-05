@@ -12,4 +12,4 @@ documentation: ug
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![Bezier Segement Thumb](../../images/bezier-segement-thumb.gif)
+![Bezier Segement Thumb](../images/bezier-segement-thumb.gif)
