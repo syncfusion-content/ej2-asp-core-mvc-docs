@@ -13,19 +13,19 @@ namespace EJ2_Core_Application.Controllers
     {
         public IActionResult Index()
         {
-            ViewBag.usMap = GetUSMap();
-            ViewBag.usMapShape = GetUSMapShape();
+            ViewBag.africaMap = GetAfricaMap();
+            ViewBag.africaMapShape = GetAfricaMapShape();
             return View();
         }
-        public object GetUSMap()
+        public object GetAfricaMap()
         {
-            string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/USA.json");
+            string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/Africa.json");
             return JsonConvert.DeserializeObject(allText);
         }
 		
-        public object GetUSMapShape()
+        public object GetAfricaMapShape()
         {
-            string allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/USA.json"));
+            string allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/Africa.json"));
             return JsonConvert.DeserializeObject(allText, typeof(object));
         }
     }

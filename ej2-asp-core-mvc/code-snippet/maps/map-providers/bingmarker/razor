@@ -1,16 +1,18 @@
 @using Syncfusion.EJ2;
 @using Syncfusion.EJ2.Maps;
-@Html.EJS().Maps("maps").Load("mapsLoad")
-.Layers(layers => {
-        layers.NavigationLineSettings(ns => {
-        ns.Visible(true).Latitude(new double[] { 34.060620, 40.724546})
-        .Longitude(new double[] { -118.330491, -73.850344 }).Color("blue").Angle(90)
-        .Width(5).Add();
-    }).MarkerSettings(marker =>
+
+@Html.EJS().Maps("maps").Load("mapsLoad").Layers(l =>
+{
+    l.MarkerSettings(marker =>
        {
            marker.Visible(true).DataSource(ViewBag.markerData).Add();
-       }).Add();
-   }).Render()
+       }).NavigationLineSettings(ns =>
+    {
+        ns.Visible(true).Latitude(new double[] { 34.060620, 40.724546 })
+        .Longitude(new double[] { -118.330491, -73.850344 }).Color("black").Angle(90)
+        .Width(2).DashArray("4").Add();
+    }).Add();
+}).Render()
 
 <script type="text/javascript">
     function mapsLoad(args) {
