@@ -14,7 +14,7 @@ Apart from OpenStreetMap and Bing Maps, you can also render Maps from other onli
 
 <!-- markdownlint-disable MD034 -->
 
-Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.png
+Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.PNG
 
 * "${z}" - It represents zoom factor (level).
 * "${x}" - It indicates tile image x-position (tileX).
@@ -46,7 +46,7 @@ In this case, the key generated for those online map service providers can also 
 {% endtabs %}
 {% endif %}
 
-
+![Google Maps](../images/MapProviders/google-map.PNG)
 
 ## Enabling zooming and panning
 
@@ -75,7 +75,7 @@ Tile Maps layer can be zoomed and panned. Zooming helps to get a closer look at 
 {% endtabs %}
 {% endif %}
 
-
+![Google Maps with Zooming](../images/MapProviders/google-maps-zoom.PNG)
 
 ## Adding markers and navigation line
 
@@ -104,7 +104,7 @@ Markers can be added to the layers of tile Maps by setting the corresponding loc
 {% endtabs %}
 {% endif %}
 
-
+![Google Maps with Markers and Navigation Line](../images/MapProviders/google-maps-marker-and-line.PNG)
 
 ## Adding sublayer
 
@@ -132,6 +132,8 @@ Any GeoJSON shape can be rendered as a sublayer on top of the tile Maps layer fo
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Google Maps with Sublayer](../images/MapProviders/google-maps-sublayer.PNG)
 
 ## Enabling legend
 

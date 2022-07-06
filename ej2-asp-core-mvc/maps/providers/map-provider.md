@@ -39,7 +39,7 @@ The OSM Maps can be rendered using the `UrlTemplate` property.
 {% endtabs %}
 {% endif %}
 
-
+![OpenStreetMap](../images/MapProviders/open-sreet-map.PNG)
 
 ### Changing the tile server of the OpenStreetMap
 
@@ -72,7 +72,7 @@ The OSM Maps layer can be zoomed and panned. Zooming helps to get a closer look 
 {% endtabs %}
 {% endif %}
 
-
+![OpenStreetMap with zooming](../images/MapProviders/open-street-map-zooming.PNG)
 
 ## Adding markers and navigation line
 
@@ -101,6 +101,8 @@ Markers can be added to the layers of OSM Maps by setting the corresponding loca
 {% endtabs %}
 {% endif %}
 
+![OpenStreetMap with Markers and Navigation Line](../images/MapProviders/open-street-map-marker-and-line.PNG)
+
 ## Adding sublayer
 
 Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for highlighting a particular continent or country in OSM Maps by adding another layer and specifying the `Type` property of Maps layer to **SubLayer**.
@@ -127,6 +129,8 @@ Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![OpenStreetMap with SubLayer](../images/MapProviders/open-street-map-sublayer.PNG)
 
 ## Enabling legend
 

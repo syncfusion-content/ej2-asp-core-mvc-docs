@@ -39,6 +39,8 @@ The Bing Maps can be rendered using the `UrlTempalte`property, which is based on
 {% endtabs %}
 {% endif %}
 
+![Bing Maps](../images/MapProviders/bing-maps.PNG)
+
 ## Types of Bing Maps
 
 Bing Maps provides different types of Maps and it is supported in the Maps component.
@@ -75,6 +77,8 @@ To render the light version of the road Maps, set the `CanvasLight` value is pas
 {% endtabs %}
 {% endif %}
 
+![Bing Maps with CanvasLight](../images/MapProviders/bing-maps-with-canvas.PNG)
+
 ## Enabling zooming and panning
 
 Bing Maps layer can be zoomed and panned. Zooming helps to get a closer look at a particular area on a Maps for in-depth analysis. Panning helps to move a Maps around to focus the targeted area.
@@ -102,9 +106,7 @@ Bing Maps layer can be zoomed and panned. Zooming helps to get a closer look at 
 {% endtabs %}
 {% endif %}
 
-
-
->Specify Bing Maps key in the `key` property.
+![Bing Maps with Zooming](../images/MapProviders/bing-maps-zooming.PNG)
 
 ## Adding markers and navigation line
 
@@ -133,7 +135,7 @@ Markers can be added to the layers of Bing Maps by setting the corresponding loc
 {% endtabs %}
 {% endif %}
 
-> Specify Bing Maps key in the `Key` property.
+![Bing Maps with Markers and Navigation Line](../images/MapProviders/bing-maps-marker-and-line.PNG)
 
 ## Adding sublayer
 
@@ -162,6 +164,8 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Bing Maps layer fo
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Bing Maps with Sublayer](../images/MapProviders/bing-map-sublayer.PNG)
 
 ## Enabling legend
 
