@@ -17,7 +17,7 @@
 <div id="control-section">
     <ejs-maps id="maps" load="window.onMapLoad">
         <e-maps-layers>
-            <e-maps-layer UrlTemplate="http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level" markerSettings="marker"></e-maps-layer>
+            <e-maps-layer urlTemplate="http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level" markerSettings="marker"></e-maps-layer>
         </e-maps-layers>
     </ejs-maps>
 </div>
