@@ -508,4 +508,4 @@ To imitate or map the marker shape with its legend item shape, set the `UseMarke
 {% endtabs %}
 {% endif %}
 
-![Maps - Marker shape mapped to legend items shape](./images/Legend/marker-legend-shape.PNG)
+![Marker shape mapped to legend items shape](./images/Legend/marker-legend-shape.PNG)
