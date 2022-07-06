@@ -194,4 +194,4 @@ The legend can be added to the tile Maps by setting the `Visible` property of `M
 {% endtabs %}
 {% endif %}
 
-![Bing Map With Legend](../images/MapProviders/bing-map-legend.PNG)
+![Bing Maps with Legend](../images/MapProviders/bing-map-legend.PNG)

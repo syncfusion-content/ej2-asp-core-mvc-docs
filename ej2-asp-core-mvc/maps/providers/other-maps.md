@@ -21,6 +21,7 @@ Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.PNG
 * "${y}" - It indicates tile image y-position (tileY).
 
 In this case, the key generated for those online map service providers can also be appended to the URL. This allows to create personalized Maps with your own content and imagery. In this example, Google Maps is rendered.
+
 >Refer to [Google Maps Licensing](https://developers.google.com/maps/terms#10-license-restrictions).
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -162,4 +163,4 @@ The legend can be added to the tile Maps by setting the `Visible` property of `M
 {% endtabs %}
 {% endif %}
 
-![Other Map Providers With Legend](../images/MapProviders/google-map-legend.PNG)
+![Google Maps with Legend](../images/MapProviders/google-map-legend.PNG)
