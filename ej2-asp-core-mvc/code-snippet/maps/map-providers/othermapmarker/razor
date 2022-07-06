@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2;
 @using Syncfusion.EJ2.Maps;
-@Html.EJS().Maps("maps").Layers(l => l.LayerType('OSM').UrlTemplate("http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level").
+@Html.EJS().Maps("maps").Layers(l => l.UrlTemplate("http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level").
    {
        .NavigationLineSettings(ns => {
         ns.Visible(true).Latitude(new double[] { 34.060620, 40.724546})

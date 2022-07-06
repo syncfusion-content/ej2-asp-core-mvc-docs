@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2;
 @using Syncfusion.EJ2.Maps;
-@Html.EJS().Maps("maps").Layers(l => l.LayerType('Bing').Key("// …bingMapKey").
+@Html.EJS().Maps("maps").Layers(l => l.Add();
    {
        .NavigationLineSettings(ns => {
         ns.Visible(true).Latitude(new double[] { 34.060620, 40.724546})
@@ -11,3 +11,11 @@
            marker.Visible(true).DataSource(ViewBag.markerData).Add();
        }).Add();
    }).Render()
+
+<script type="text/javascript">
+    function mapsLoad(args) {
+        args.maps.getBingUrlTemplate("https://dev.virtualearth.net/REST/V1/Imagery/Metadata/Aerial?output=json&uriScheme=https&key=?").then(function (url) {
+            args.maps.layers[0].urlTemplate = url;
+        });
+    }
+</script>

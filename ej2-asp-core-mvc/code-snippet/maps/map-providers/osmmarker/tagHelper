@@ -17,7 +17,7 @@
 <div id="control-section">
     <ejs-maps id="maps" load="window.onMapLoad">
         <e-maps-layers>
-            <e-maps-layer LayerType="OSM" markerSettings="marker"></e-maps-layer>
+            <e-maps-layer urlTemplate="http://a.tile.openstreetmap.org/level/tileX/tileY.png" markerSettings="marker"></e-maps-layer>
         </e-maps-layers>
     </ejs-maps>
 </div>
