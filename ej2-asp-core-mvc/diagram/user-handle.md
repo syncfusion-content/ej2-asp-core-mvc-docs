@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# User Handles
+# User Handles in Diagram
 
 * User handles are used to add some frequently used commands around the selector. To create user handles, define and add them to the [`userHandles`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUserHandle.html) collection of the [`selectedItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_SelectedItems) property.
 * The name property of user handle is used to define the name of the user handle and its further used to find the user handle at runtime and do any customization.
@@ -248,11 +248,11 @@ The connector’s fixed user handle can be aligned over its segment path using t
 
 The following table shows all the possible alignments visually shows the fixed user handle positions.
 
-| Offset | Alignment | Output |
+| Output  | Alignment | Offset |
 | -------- | -------- | -------- |
-| 0 | Before |![fixed user handle for node](images/0before.png)|
-| 0.5 | Center |![fixed user handle for node](images/0.5center.png)|
-| 1 | After |![fixed user handle for node](images/1after.png)|
+| ![fixed user handle for node](images/0before.png) | Before | 0|
+| ![fixed user handle for node](images/0.5center.png)| Center |0.5|
+|![fixed user handle for node](images/1after.png)| After |1|
 
 ### Displacement
 
