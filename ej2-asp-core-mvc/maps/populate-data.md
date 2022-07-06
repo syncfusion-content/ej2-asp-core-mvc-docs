@@ -10,6 +10,20 @@ documentation: ug
 
 # Populate data
 
+## Geometry types
+
+GeoJSON data contains geometry objects with properties such as geometry types and coordinates. The geometry types are the values present in the geometry objects of the GeoJSON data that specify the type of shape to be rendered, as well as the coordinates that help to draw the shape's boundary line. The supportive geometry types are:
+
+| **Shapes** | **Supported** |
+| --- | --- |
+|Polygon| Yes |
+|MultiPolygon| Yes |
+|LineString| Yes |
+|MultiLineString| Yes |
+|Point| Yes |
+|MultiPoint| Yes |
+|GeometryCollection| Yes |
+
 ## Shape data
 
 The shape data collection describes geographical shape information that is available in GeoJSON format. The Map shapes are rendered with this data. The custom shapes such as seat selection in bus, seat selection in a cricket stadium and more useful information can be also added as ShapeData in the layer of the Maps.

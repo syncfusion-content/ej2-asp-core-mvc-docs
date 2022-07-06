@@ -14,7 +14,7 @@ The OpenStreetMap (OSM) is the online Maps provider built by a community of deve
 
 ## Adding OpenStreetMap
 
-The OSM Maps can be rendered using by setting the [`layerType`](../api/maps/layerSettingsModel/#layertype) property value as **OSM**.
+The OSM Maps can be rendered using the `UrlTemplate` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -45,7 +45,7 @@ The OSM Maps can be rendered using by setting the [`layerType`](../api/maps/laye
 
 The OSM tile server can be changed by setting the tile URL in the `UrlTemplate` property. For more details about the OSM tile server, refer [here](https://wiki.openstreetmap.org/wiki/Tiles).
 
-## Zooming and Panning
+## Enabling zooming and panning
 
 The OSM Maps layer can be zoomed and panned. Zooming helps to get a closer look at a particular area on a Maps for in-depth analysis. Panning helps to move a Maps around to focus the targeted area.
 
@@ -101,9 +101,36 @@ Markers can be added to the layers of OSM Maps by setting the corresponding loca
 {% endtabs %}
 {% endif %}
 
-## Sublayer
+## Adding sublayer
 
 Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for highlighting a particular continent or country in OSM Maps by adding another layer and specifying the `Type` property of Maps layer to **SubLayer**.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/map-providers/osmsublayer/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sublayer.cs" %}
+{% include code-snippet/maps/map-providers/osmsublayer/sublayer.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/map-providers/osmsublayer/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sublayer.cs" %}
+{% include code-snippet/maps/map-providers/osmsublayer/sublayer.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Enabling legend
+
+The legend can be added to the tile Maps by setting the `Visible` property of `MapsLegendSettings` to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

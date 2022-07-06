@@ -480,3 +480,30 @@ To enable legend for marker by setting the `Visible` property of `MapsLegendSett
 
 
 ![Enable legend for marker](./images/Legend/legend-marker.PNG)
+
+### Imitate/Map marker shape to the legend shape
+
+To imitate or map the marker shape with its legend item shape, set the `UseMarkerShape` property to **true** in the `MapsLegendSettings` property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/maps/markers/legend/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Legend.cs" %}
+{% include code-snippet/maps/markers/legend/legend.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/maps/markers/legend/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Legend.cs" %}
+{% include code-snippet/maps/markers/legend/legend.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
