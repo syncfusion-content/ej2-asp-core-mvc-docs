@@ -14,7 +14,7 @@ namespace EJ2_Core_Application.Controllers
         public IActionResult Index()
         {
             ViewBag.africeMap = GetAfricaMap();
-            ViewBag.africaMapShape = GetUSAfricaShape();
+            ViewBag.africaMapShape = GetAfricaShape();
             return View();
         }
         public object GetAfricaMap()
@@ -23,7 +23,7 @@ namespace EJ2_Core_Application.Controllers
             return JsonConvert.DeserializeObject(allText);
         }
 		
-        public object GetUSAfricaShape()
+        public object GetAfricaShape()
         {
             string allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/Africa.json"));
             return JsonConvert.DeserializeObject(allText, typeof(object));
