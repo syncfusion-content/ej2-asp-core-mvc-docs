@@ -141,10 +141,10 @@ The legend can be added to the tile Maps by setting the `Visible` property of `M
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/othersublayer/tagHelper %}
+{% include code-snippet/maps/map-providers/othermaplegend/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Othersublayer.cs" %}
-{% include code-snippet/maps/map-providers/othersublayer/othersublayer.cs %}
+{% include code-snippet/maps/map-providers/othermaplegend/othermaplegend.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -152,10 +152,12 @@ The legend can be added to the tile Maps by setting the `Visible` property of `M
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/othersublayer/razor %}
+{% include code-snippet/maps/map-providers/othermaplegend/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Othersublayer.cs" %}
-{% include code-snippet/maps/map-providers/othersublayer/othersublayer.cs %}
+{% highlight c# tabtitle="OtherLegend.cs" %}
+{% include code-snippet/maps/map-providers/othermaplegend/othermaplegend.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Other Map Providers With Legend](../images/MapProviders/google-map-legend.PNG)

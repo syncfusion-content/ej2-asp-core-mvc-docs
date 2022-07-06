@@ -136,10 +136,10 @@ The legend can be added to the tile Maps by setting the `Visible` property of `M
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/osmsublayer/tagHelper %}
+{% include code-snippet/maps/map-providers/osmlegend/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Sublayer.cs" %}
-{% include code-snippet/maps/map-providers/osmsublayer/sublayer.cs %}
+{% highlight c# tabtitle="Legend.cs" %}
+{% include code-snippet/maps/map-providers/osmlegend/osmlegend.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -147,10 +147,12 @@ The legend can be added to the tile Maps by setting the `Visible` property of `M
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/map-providers/osmsublayer/razor %}
+{% include code-snippet/maps/map-providers/osmlegend/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Sublayer.cs" %}
-{% include code-snippet/maps/map-providers/osmsublayer/sublayer.cs %}
+{% highlight c# tabtitle="Legend.cs" %}
+{% include code-snippet/maps/map-providers/osmlegend/osmlegend.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![OSM Map With Legend](../images/MapProviders/osm-legend.PNG)

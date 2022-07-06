@@ -171,10 +171,10 @@ The legend can be added to the tile Maps by setting the `Visible` property of `M
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/bing/bingsublayer/tagHelper %}
+{% include code-snippet/maps/bing/binglegend/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Bingsublayer.cs" %}
-{% include code-snippet/maps/bing/bingsublayer/bingsublayer.cs %}
+{% include code-snippet/maps/map-providers/binglegend/binglegend.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -182,10 +182,12 @@ The legend can be added to the tile Maps by setting the `Visible` property of `M
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/bing/bingsublayer/razor %}
+{% include code-snippet/maps/map-providers/binglegend/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Bingsublayer.cs" %}
-{% include code-snippet/maps/bing/bingsublayer/bingsublayer.cs %}
+{% highlight c# tabtitle="Binglegend.cs" %}
+{% include code-snippet/maps/map-providers/binglegend/binglegend.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Bing Map With Legend](../images/MapProviders/bing-map-legend.PNG)

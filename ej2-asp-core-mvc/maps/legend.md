@@ -500,10 +500,12 @@ To imitate or map the marker shape with its legend item shape, set the `UseMarke
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/markers/legend/razor %}
+{% include code-snippet/maps/markers/marker-legend/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Legend.cs" %}
-{% include code-snippet/maps/markers/legend/legend.cs %}
+{% highlight c# tabtitle="Marker-legend.cs" %}
+{% include code-snippet/maps/markers/marker-legend/marker-legend.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Enable Map marker shape to the legend shape](./images/Legend/marker-legend-shape.PNG)
