@@ -23,7 +23,7 @@ var diagram = new Diagram({
 });
 diagram.appendTo('#element');
 var options = {};
-options.mode = 'Data';
+options.mode = 'Download';
 diagram.exportDiagram(options);
 ```
 
@@ -50,7 +50,7 @@ var diagram = new Diagram({
 });
 diagram.appendTo('#element');
 var options = {};
-options.mode = 'Data';
+options.mode = 'Download';
 options.format = 'SVG';
 diagram.exportDiagram(options);
 ```
@@ -67,7 +67,7 @@ var diagram = new Diagram({
 });
 diagram.appendTo('#element');
 var options = {};
-options.mode = 'Data';
+options.mode = 'Download';
 options.margin = { left: 10, right: 10, top: 10, bottom: 10};
 options.fileName = 'format';
 options.format = 'SVG';
@@ -77,12 +77,12 @@ diagram.exportDiagram(options);
 
 ## Mode
 
-[`Mode`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#mode) specifies whether the diagram is to be exported as files or as data (ImageURL/SVG). The exporting options are as follows:
+[`Mode`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#mode) specifies whether the diagram is to be exported as files or to get base64 data (ImageURL/SVG). The exporting options are as follows:
 
-* Data: Exports and downloads the diagram as image.
-* Download: Exports the diagram as data of formats ImageURL/SVG.
+* Download: Exports and downloads the diagram as image/SVG.
+* Data: return a base64 string.
 
-For more information about the exporting modes, refer to Exporting Modes.
+The following code example illustrates how to export the diagram as raw data.
 
 ```javascript
 var diagram = new Diagram({
@@ -94,18 +94,41 @@ options.mode = 'Data';
 options.margin = { left: 10, right: 10, top: 10, bottom: 10};
 options.fileName = 'format';
 options.format = 'SVG';
-diagram.exportDiagram(options);
+var base64data = diagram.exportDiagram(options);
 
 ```
 
 ## Region
 
-You can export any particular [`region`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#region) of the diagram and the region is categorized as follows.
+You can export any particular [`region`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#region) of the diagram and is categorized into three types as follows.
 
-* Region that fits all nodes and connectors that are added to model.
-* Region that fits all pages (single or multiple pages based on page settings).
+* PageSettings
+* Content
+* CustomBounds
 
-For more information about region, refer to Regions.
+## PageSettings
+
+Diagram is exported based on the given PageSettings width and height. Properties available in page settings are as follows.
+* width
+* height
+* margin
+* orientation
+* boundaryConstraints
+* background
+* multiplePage
+* showPageBreaks
+* fitOptions
+
+`boundaryConstarints`
+
+Defines the editable region of the diagram.
+* Infinity - Allow the interactions to take place at the infinite height and width.
+* Diagram - Allow the interactions to take place around the diagram height and width.
+* Page - Allow the interactions to take place around the page height and width.
+
+`multiplePage`
+
+While setting multiple page as false, the diagram is exported as a single image. While setting multiple page as true, the diagram is exported as separate image based on width and height.
 
 ```javascript
 
@@ -114,7 +137,28 @@ var diagram = new Diagram({
 });
 diagram.appendTo('#element');
 var options = {};
-options.mode = 'Data';
+options.mode = 'Download';
+options.margin = { left: 10, right: 10, top: 10, bottom: 10};
+options.fileName = 'format';
+options.format = 'SVG';
+options.region ='PageSettings';
+diagram.exportDiagram(options);
+
+```
+
+## Content
+
+The diagram content alone will be exported as a image.
+
+The following code example illustrates how to export the region occupied by the diagram elements.
+
+```javascript
+
+var diagram = new ej.diagrams.Diagram({
+    width: 1500, height: 1500
+},'#element');
+var options = {};
+options.mode = 'Download';
 options.margin = { left: 10, right: 10, top: 10, bottom: 10};
 options.fileName = 'format';
 options.format = 'SVG';
@@ -134,7 +178,7 @@ var diagram = new Diagram({
 });
 diagram.appendTo('#element');
 var options = {};
-options.mode = 'Data';
+options.mode = 'Download';
 options.margin = { left: 10, right: 10, top: 10, bottom: 10};
 options.fileName = 'region';
 options.format = 'SVG';
@@ -157,7 +201,7 @@ var diagram = new Diagram({
 });
 diagram.appendTo('#element');
 var options = {};
-options.mode = 'Data';
+options.mode = 'Download';
 options.margin = { left: 10, right: 10, top: 10, bottom: 10};
 options.fileName = 'region';
 options.format = 'SVG';
@@ -187,10 +231,15 @@ var diagram = new Diagram({
 });
 diagram.appendTo('#element'););
 var options = {};
-options.mode = 'Data';
+options.mode = 'Download';
 options.region = 'PageSettings';
 options.multiplePage = true;
 options.pageHeight = 300;
 options.pageWidth = 300;
 diagram.print(options);
 ```
+
+## Limitations
+
+We have limitation in exporting the image with HTML and Native node.So,Syncfusion  Essential PDF library is used, which supports HTML Content to Image conversion by using the advanced Qt WebKit rendering engine.You can refer the following KB link for more details.
+[`https://www.syncfusion.com/kb/13298/how-to-print-or-export-the-html-and-native-node-into-image-format`]
