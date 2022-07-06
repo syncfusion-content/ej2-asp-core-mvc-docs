@@ -12,9 +12,9 @@
 <script>
 
     function onLoad(args) {
-        args.maps.getBingUrlTemplate("https://dev.virtualearth.net/REST/V1/Imagery/Metadata/CanvasLight?output=json&uriScheme=https&key=?").then(function(url) {
-            args.maps.layers[0].urlTemplate= url;
-        });
+          args.maps.getBingUrlTemplate("https://dev.virtualearth.net/REST/V1/Imagery/Metadata/CanvasLight?output=json&uriScheme=https&key=?").then(function(url) {
+              args.maps.layers[0].urlTemplate= url;
+          });
     }
-
+  
 </script>

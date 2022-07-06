@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using EJ2_Core_Application.Models;
 using Newtonsoft.Json;
-using Syncfusion.EJ2.Charts;
 
 namespace EJ2_Core_Application.Controllers
 {
