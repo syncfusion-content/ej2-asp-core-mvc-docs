@@ -299,3 +299,79 @@ diagram.tool = DiagramTools.DrawOnce || DiagramTools.ZoomPan;
 diagram.dataBind();
 
 ```
+
+## Event
+
+ [`drawingToolChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTools.html) event is triggered when node or connector is drawn using drawing tool.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/Tools/shapes/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Shapes.cs" %}
+{% include code-snippet/diagram/Tools/shapes/shapes.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Shapes.cs" %}
+{% include code-snippet/diagram/Tools/shapes/shapes.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+```javascript
+
+function Created() {
+    var diagram = document.getElementById("container").ej2_instances[0];
+    var drawingshape = { type: 'Basic', shape: 'Rectangle' };
+        var node = {
+            shape: drawingshape
+        };
+        diagram.drawingObject = node;
+        //To draw an object once, activate draw once
+        diagram.tool = DiagramTools.DrawOnce;
+        diagram.dataBind();
+        var connectors = {
+            id: 'connector1',
+            type: 'Straight',
+           segments: [{ type: "Straight" }]
+        };
+        diagram.drawingObject = connectors;
+        //To draw an object once, activate draw once
+        diagram.tool = DiagramTools.DrawOnce;
+        diagram.dataBind();
+    }
+    drawingToolChange:function drawingToolChange(args:IDrawingToolChange) {
+        //mousedown
+        if (args.state === 'Start') {
+            console.log(args.source);
+            console.log(args.state);
+            console.log(args.objectType);
+            console.log(args.targetId);
+            console.log(args.targetPortId);
+        }
+        //mousemove
+        if (args.state === 'Progress') {
+            console.log(args.source);
+            console.log(args.state);
+            console.log(args.objectType);
+            console.log(args.targetId);
+            console.log(args.targetPortId);
+        }
+        //mouseup
+        if (args.state === 'Completed') {
+            console.log(args.source);
+            console.log(args.state);
+            console.log(args.objectType);
+            console.log(args.targetId);
+            console.log(args.targetPortId);
+        }
+}
+```
