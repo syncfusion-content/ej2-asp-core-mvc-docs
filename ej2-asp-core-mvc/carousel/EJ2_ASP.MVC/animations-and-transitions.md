@@ -85,7 +85,7 @@ The following example depicts the code to play the slides when hovering the mous
 {% include code-snippet/carousel/animations/pause-on-hover/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/animations/pause-on-hover/auto-play.cs %}
+{% include code-snippet/carousel/animations/pause-on-hover/pause-on-hover.cs %}
 {% endhighlight %}
 {% endtabs %}
 
