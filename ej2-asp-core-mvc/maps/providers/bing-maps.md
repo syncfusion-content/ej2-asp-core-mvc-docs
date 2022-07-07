@@ -175,7 +175,7 @@ The legend can be added to the tile Maps by setting the `Visible` property of `M
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/bing/binglegend/tagHelper %}
+{% include code-snippet/maps/map-providers/binglegend/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Bingsublayer.cs" %}
 {% include code-snippet/maps/map-providers/binglegend/binglegend.cs %}
