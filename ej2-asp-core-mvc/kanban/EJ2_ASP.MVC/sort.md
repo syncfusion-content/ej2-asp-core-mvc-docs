@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sort in ##Platform_Name## Kanban Component
+title: Sort and Arrangement of Cards in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Sort in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sort
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sort
+# Sort in ASP.NET MVC Kanban control
 
 The Kanban provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone. Initially, users can change the arrangement of cards in the columns and position of the dropped card by using the [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property. The [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property contains three enumeration values as follows.
 

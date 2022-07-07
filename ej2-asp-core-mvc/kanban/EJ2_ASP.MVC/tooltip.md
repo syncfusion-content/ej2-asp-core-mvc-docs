@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Kanban Component
+title: Tooltip and its Template in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip
+# Tooltip in ASP.NET MVC Kanban control
 
 The tooltip is used to show the card information when the cursor hover over the card elements using the `EnableTooltip` property. Tooltip content is dynamically set based on hovering over the card elements.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## Kanban Component
+title: Drag And Drop in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drag And Drop
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Drag and drop
+# Drag and drop in ASP.NET MVC Kanban control
 
 All cards can be dragged and dropped across the columns or within the columns or swimlane row or kanban to an external source and vice versa.
 

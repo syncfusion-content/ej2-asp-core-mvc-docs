@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Kanban Component
+title: Data Binding in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data binding
+# Data binding in ASP.NET MVC Kanban component
 
 The Kanban uses `DataManager`, which supports both RESTful data service binding and list binding. The `DataSource`property of Kanban can be assigned either with the instance of `DataManager` or List, as it supports the following two data binding methods:
 

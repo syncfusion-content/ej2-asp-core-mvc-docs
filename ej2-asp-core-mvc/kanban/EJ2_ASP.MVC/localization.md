@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Kanban Component
+title: Localization in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Localization in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization
+# Globalization in ASP.NET MVC Kanban control
 
 The localization library allows you to localize the default text content of the Kanban to different cultures using the `Locale` property.
 

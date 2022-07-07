@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swimlane in ##Platform_Name## Kanban Component
+title: Swimlane and Grouping of Cards in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Swimlane in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Swimlane
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Swimlane
+# Swimlane in ASP.NET MVC Kanban control
 
 Swimlanes are horizontal categorizations of cards on the Kanban board.  It is used for grouping of cards, which brings transparency to the workflow process.
 

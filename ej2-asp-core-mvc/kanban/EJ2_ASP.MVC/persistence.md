@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persistence in ##Platform_Name## Kanban Component
+title: Persistence in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Persistence in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Persistence
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# State Persistence
+# State Persistence in ASP.NET MVC Kanban control
 
 State persistence refers to the Kanban state maintained in the browser's [`LocalStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 
