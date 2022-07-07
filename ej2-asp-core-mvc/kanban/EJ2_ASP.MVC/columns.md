@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in ##Platform_Name## Kanban Component
+title: Columns and their Usages in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Columns in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Columns
@@ -28,6 +28,9 @@ Kanban columns are categorized by mapping the **Key** from the datasource using 
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/single-key/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/single-key/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -38,6 +41,9 @@ Kanban columns are categorized by mapping the **Key** from the datasource using 
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/single-key/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/single-key/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -61,6 +67,9 @@ Kanban board allows to render a single column by mapping multiple keys using `Ke
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/multi-key/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/multi-key/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -71,6 +80,9 @@ Kanban board allows to render a single column by mapping multiple keys using `Ke
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/multi-key/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/multi-key/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -109,6 +121,9 @@ You can get the following columns data when using header template.
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/header-template/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/header-template/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -119,6 +134,9 @@ You can get the following columns data when using header template.
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/header-template/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/header-template/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -144,6 +162,9 @@ Kanban allows to expand or collapse its columns using `AllowToggle` inside the `
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/toggle-columns/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/toggle-columns/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -154,6 +175,9 @@ Kanban allows to expand or collapse its columns using `AllowToggle` inside the `
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/toggle-columns/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/toggle-columns/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -181,6 +205,9 @@ In the following example, the To Do column is collapsed on initialization of Kan
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/initially-collapsed/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/initially-collapsed/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -191,6 +218,9 @@ In the following example, the To Do column is collapsed on initialization of Kan
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/initially-collapsed/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/initially-collapsed/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -218,6 +248,9 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/stacked-headers/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/stacked-headers/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -228,6 +261,9 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/columns/stacked-headers/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/columns/stacked-headers/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
