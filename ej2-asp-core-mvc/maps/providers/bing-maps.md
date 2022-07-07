@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bing Maps in ##Platform_Name## Maps Component
+title: Bing Maps in ##Platform_Name## Syncfusion Maps Component
 description: Learn here all about Bing Maps in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Bing Maps
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Bing Maps
+# Bing Maps in ##Platform_Name## Maps Component
 
 Bing Maps is a online Maps provider, owned by Microsoft. As like OSM, it provide Maps tile images based on our requests and combines those images into a single one to display Maps area.
 
@@ -175,7 +175,7 @@ The legend can be added to the tile Maps by setting the `Visible` property of `M
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/bing/binglegend/tagHelper %}
+{% include code-snippet/maps/map-providers/binglegend/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Bingsublayer.cs" %}
 {% include code-snippet/maps/map-providers/binglegend/binglegend.cs %}
