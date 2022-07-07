@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appointments in ##Platform_Name## Schedule Component
+title: Appointments in ##Platform_Name## Syncfusion Schedule Component
 description: Learn here all about Appointments in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appointments
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appointments
+# Appointments in ##Platform_Name## Schedule Component
 
 Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. The Scheduler events can be categorized as,
 
@@ -248,9 +248,9 @@ There are four repeat types available namely,
 
 ### Recurrence properties
 
- The properties based on which the recurrence appointments are created with its respective time period are depicted in the following table. Also, the valid rule string can be referred from [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications.
+ The properties based on which the recurrence appointments are created with its respective time period are depicted in the following table. Also, the valid rule string can be referred from [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications.
 
- > Refer [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
+ > Refer [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
 
 | Property | Purpose | Example |
 |-------|---------| --------- |
