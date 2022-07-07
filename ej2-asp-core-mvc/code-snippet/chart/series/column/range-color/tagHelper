@@ -1,0 +1,30 @@
+<ejs-chart id="columnContainer" selectionMode="Point" title="USA CLIMATE - WEATHER BY MONTH">
+        <e-chart-primaryxaxis valueType="Category">
+            <e-majorgridlines width="0"></e-majorgridlines>
+        </e-chart-primaryxaxis>
+        <e-chart-primaryyaxis labelFormat="{value}°C">
+            <e-majorticklines width="0"></e-majorticklines>
+            <e-minorticklines width="0"></e-minorticklines>
+            <e-linestyle width="0"></e-linestyle>
+        </e-chart-primaryyaxis>
+        <e-chart-chartarea>
+            <e-chartarea-border width="0"></e-chartarea-border>
+        </e-chart-chartarea>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" name="USA" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+                <e-series-cornerradius topLeft="10" topRight="10"></e-series-cornerradius>
+                <e-series-animation enable="false"></e-series-animation>
+                <e-series-marker>
+                    <e-series-datalabel visible="true" position="Outer">
+                    </e-series-datalabel>
+                </e-series-marker>
+            </e-series>
+        </e-series-collection>
+        <e-chart-rangecolorsettings>
+            <e-chart-rangecolorsetting label="1°C to 10°C" start="1" end="10" colors="ViewBag.color1"></e-chart-rangecolorsetting>
+            <e-chart-rangecolorsetting label="11°C to 20°C" start="11" end="20" colors="ViewBag.color2"></e-chart-rangecolorsetting>
+            <e-chart-rangecolorsetting label="21°C to 30°C" start="21" end="30" colors="ViewBag.color3"></e-chart-rangecolorsetting>
+        </e-chart-rangecolorsettings>
+        <e-chart-tooltipsettings enable="false"></e-chart-tooltipsettings>
+        <e-chart-legendsettings mode="Range" visible="true" toggleVisibility="false"></e-chart-legendsettings>
+    </ejs-chart>
