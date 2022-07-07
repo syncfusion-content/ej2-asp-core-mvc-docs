@@ -31,15 +31,15 @@
     }
 
     /* Parallax animation */
-    .e-carousel .e-carousel-items.parallax .e-carousel-item {
+    .parallax .e-carousel-item {
         transition: transform 1s ease-in-out;
     }
 
-        .e-carousel .e-carousel-items.parallax .e-carousel-item.e-next {
+    .parallax .e-carousel-item.e-next {
             animation: ParallaxIn 1s ease-in-out;
         }
 
-        .e-carousel .e-carousel-items.parallax .e-carousel-item.e-prev {
+    .parallax .e-carousel-item.e-prev {
             animation: ParallaxOut 1s ease-in-out;
         }
 
