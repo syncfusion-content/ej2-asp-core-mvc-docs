@@ -483,7 +483,7 @@ We can drag and drop multiple appointments by enabling the `allowMultiDrag` prop
 
 We can also drag multiple events from one resource to another resource. In this case, if all the selected events are in the different resources, then all the events should be moved to the single resource that is related to the target event.
 
->Note: We cannot drag and drop multiple appointments in mobile mode.
+>Note: Multiple events drag and drop is not supported on mobile devices.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
