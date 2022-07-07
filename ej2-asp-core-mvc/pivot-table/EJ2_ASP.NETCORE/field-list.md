@@ -134,8 +134,6 @@ End user can search for desired field in the field list UI by typing the field n
 
 To enable search box in the static field list UI, set the [`enableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnableFieldSearching) property  to **true** in [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html).
 
-{% tab template="pivot-table/pivot-table", es5Template="static-fieldlist-search", sourceFiles="index.ts,index.html" %}
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -162,8 +160,6 @@ To enable search box in the static field list UI, set the [`enableFieldSearching
 {% endtab %}
 
 To enable search box in the pivot table's built-in popup field list UI, set the [`enableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableFieldSearching) property to **true** in [`PivotView`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html).
-
-{% tab template="pivot-table/pivot-table", es5Template="fieldlist-search", sourceFiles="index.ts,index.html" %}
 
 {% if page.publishingplatform == "aspnet-core" %}
 
