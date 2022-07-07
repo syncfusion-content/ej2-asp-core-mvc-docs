@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart Appearance in ##Platform_Name## Chart Component
-description: Learn here all about Chart Appearance in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Chart Appearance in Syncfusion Chart Component
+description: Learn here all about Chart Appearance in Syncfusion ASP MVC Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chart Appearance
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appearance
+# Appearance in MVC Chart component
 
 ## Chart Theme Customization
 
@@ -67,7 +67,63 @@ You can customize the default color of series or points by providing a custom co
 {% endtabs %}
 {% endif %}
 
+## Data Point Customization
 
+The color of individual data point or data points within a range can be customized using the options below.
+
+### Point Color Mapping
+
+You can bind the color for the points from `dataSource` for the series using [`pointColorMapping`](../api/chart/series/#pointcolormapping) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column/point-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-color.cs" %}
+{% include code-snippet/chart/series/column/point-color/point-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column/point-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-color.cs" %}
+{% include code-snippet/chart/series/column/point-color/point-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Range Color Mapping
+
+You can differentiate data points based on their y values using [`rangeColorSettings`](../api/chart/rangeColorSetting/) in the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column/range-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Range-color.cs" %}
+{% include code-snippet/chart/series/column/range-color/range-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/column/range-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Range-color.cs" %}
+{% include code-snippet/chart/series/column/range-color/range-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Point Level Customization
 
