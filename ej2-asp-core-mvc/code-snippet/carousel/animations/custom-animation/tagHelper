@@ -1,7 +1,7 @@
 <div class="container">
     <div class="control-container">
         <ejs-carousel id="carousel">
-            <e-carousel-animation customEffect="parallax"></e-carousel-animation>
+            <e-carousel-animation animationEffect="Custom" cssClass="parallax"></e-carousel-animation>
             <e-carousel-items>
                 <e-carousel-item template='<div class="slide-content">Slide 1</div>'></e-carousel-item>
                 <e-carousel-item template='<div class="slide-content">Slide 2</div>'></e-carousel-item>

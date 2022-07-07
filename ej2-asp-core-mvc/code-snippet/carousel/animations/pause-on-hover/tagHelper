@@ -1,7 +1,6 @@
 <div class="container">
     <div class="control-container">
-        <ejs-carousel id="defaultCarousel">
-            <e-carousel-animation animationEffect="Fade"></e-carousel-animation>
+        <ejs-carousel id="carousel" pauseOnHover="false">
             <e-carousel-items>
                 <e-carousel-item template='<div class="slide-content">Slide 1</div>'></e-carousel-item>
                 <e-carousel-item template='<div class="slide-content">Slide 2</div>'></e-carousel-item>

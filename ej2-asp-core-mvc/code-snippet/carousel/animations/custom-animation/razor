@@ -3,7 +3,7 @@
 <div class="container">
     <div class="control-container">
         @(Html.EJS().Carousel("defaultCarousel").
-        Animation(animation => animation.CustomEffect("parallax"))
+        Animation(animationEffect => CarouselAnimationEffect.Custom(cssClass="parallax"))
         .Items(new List<CarouselItem> {
                 new CarouselItem { Template = "<div class='slide-content'>Slide 1</div>"  },
                 new CarouselItem { Template = "<div class='slide-content'>Slide 2</div>" },
@@ -33,15 +33,15 @@
     }
 
     /* Parallax animation */
-    .e-carousel .e-carousel-items.parallax .e-carousel-item {
+    .parallax .e-carousel-item {
         transition: transform 1s ease-in-out;
     }
 
-        .e-carousel .e-carousel-items.parallax .e-carousel-item.e-next {
+    .parallax .e-carousel-item.e-next {
             animation: ParallaxIn 1s ease-in-out;
         }
 
-        .e-carousel .e-carousel-items.parallax .e-carousel-item.e-prev {
+    .parallax .e-carousel-item.e-prev {
             animation: ParallaxOut 1s ease-in-out;
         }
 
