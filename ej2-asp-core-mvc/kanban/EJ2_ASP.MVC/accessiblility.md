@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ASP.NET MVC Kanban component
 
 ## Keyboard interaction
 
