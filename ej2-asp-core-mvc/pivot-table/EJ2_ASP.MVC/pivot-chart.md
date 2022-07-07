@@ -52,13 +52,14 @@ For more information [`refer`](./data-binding) here.
 
 ## Chart Types
 
-Supports 19 different types of charts as follows,
+Supports 21 different types of charts as follows,
 
 * Line
 * Column
 * Area
 * Bar
 * StepArea
+* StackingLine
 * StackingColumn
 * StackingArea
 * StackingBar
@@ -68,6 +69,7 @@ Supports 19 different types of charts as follows,
 * Scatter
 * Spline
 * SplineArea
+* StackingLine100
 * StackingColumn100
 * StackingBar100
 * StackingArea100
