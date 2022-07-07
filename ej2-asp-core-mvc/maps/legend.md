@@ -489,10 +489,10 @@ To imitate or map the marker shape with its legend item shape, set the `UseMarke
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/markers/legend/tagHelper %}
+{% include code-snippet/maps/markers/marker-legend/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Legend.cs" %}
-{% include code-snippet/maps/markers/legend/legend.cs %}
+{% highlight c# tabtitle="MarkerLegend.cs" %}
+{% include code-snippet/maps/markers/marker-legend/marker-legend.cs %}
 {% endhighlight %}
 {% endtabs %}
 
