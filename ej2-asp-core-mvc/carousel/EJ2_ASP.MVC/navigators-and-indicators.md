@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigations and Indicators in ##Platform_Name## Carousel Control
+title: Navigations and Indicators in Syncfusion ##Platform_Name## Carousel Control
 description: Checkout and learn about Navigations and Indicators in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Navigations and Indicators

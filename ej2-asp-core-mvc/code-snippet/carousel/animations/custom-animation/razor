@@ -23,11 +23,11 @@
     }
 
     .e - carousel.slide - content {
-    align - items: center;
-    display: flex;
-    font - size: 1.25rem;
-    height: 100 %;
-    justify - content: center;
+align - items: center;
+display: flex;
+font - size: 1.25rem;
+height: 100 %;
+justify - content: center;
     }
 
     /* Parallax animation */
