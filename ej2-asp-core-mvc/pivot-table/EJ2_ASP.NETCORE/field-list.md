@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Field List in ##Platform_Name## Pivot Table Component
+title: Field List in Syncfusion ##Platform_Name## Pivot Table Component
 description: Learn here all about Field List in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Field List
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pivot Field List
+# Pivot Field List in ##Platform_Name## Pivot Table Component
 
 The pivot table provides a built-in Field List similar to Microsoft Excel. It allows to add or remove fields and also rearrange them between different axes, including column, row, value, and filter along with sort and filter options dynamically at runtime.
 
