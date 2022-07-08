@@ -608,4 +608,91 @@ The following code example shows you how to customize the `moreEventsClick` prop
 
 
 
+### How to close the editor window manually
+
+You can close the editor window by using `closeEditor()` public method. The following code example demonstrates the how to close editor window manually.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/close/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/close-editor/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/close-editor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/close-editor/data.cs %}
+{% endhighlight %}close
+{% endtabs %}
+{% endif %}
+
+
+
+### How to open the quick info popup manually
+
+You can open the quick info popup in scheduler by using the `openQuickInfoPopup()` public method. The following code example demonstrates the how to open quick info popup manually.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/open-quickinfo-popup/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/open-quickinfo-popup/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/open-quickinfo-popup/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/open-quickinfo-popup/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### How to close the quick info popup manually
+
+You can close the quick info popup in scheduler by using the `closeQuickInfoPopup()` public method. The following code example demonstrates the how to close quick info popup manually.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/close-quickinfo-popup/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/close-quickinfo-popup/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/close-quickinfo-popup/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/close-quickinfo-popup/data.cs %}
+{% endhighlight %}close
+{% endtabs %}
+{% endif %}
+
+
+
 > You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
