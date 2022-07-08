@@ -73,7 +73,7 @@ The color of individual data point or data points within a range can be customiz
 
 ### Point Color Mapping
 
-You can bind the color for the points from `dataSource` for the series using [`pointColorMapping`](../api/chart/series/#pointcolormapping) property.
+You can bind the color for the points from [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DataSource) for the series using [`PointColorMapping`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_PointColorMapping) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,7 +100,7 @@ You can bind the color for the points from `dataSource` for the series using [`p
 
 ### Range Color Mapping
 
-You can differentiate data points based on their y values using [`rangeColorSettings`](../api/chart/rangeColorSetting/) in the chart.
+You can differentiate data points based on their y values using [`RangeColorSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartRangeColorSettings.html) in the chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
