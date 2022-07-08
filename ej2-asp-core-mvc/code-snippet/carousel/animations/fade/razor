@@ -2,8 +2,7 @@
 
 <div class="container">
     <div class="control-container">
-        @(Html.EJS().Carousel("defaultCarousel")
-            .Animation(animationEffet=>CarouselAnimationEffect.Fade)
+        @(Html.EJS().Carousel("defaultCarousel").AnimationEffect(CarouselAnimationEffect.Fade)
             .Items(new List<CarouselItem> {
                     new CarouselItem { Template = "<div class='slide-content'>Slide 1</div>"  },
                     new CarouselItem { Template = "<div class='slide-content'>Slide 2</div>" },
