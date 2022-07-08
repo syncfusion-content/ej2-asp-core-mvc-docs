@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotView").Width("100%").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true)
+.Rows(rows =>
+{
+rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+columns.Name("Year").Caption("Production Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).ShowGroupingBar(true).OnHeadersSort("onHeadersSort").Render()
+
+<script>
+    function onHeadersSort(args) {
+        if (args.fieldName == 'Country') {
+            args.members = ['United Kingdom', 'Germany'];
+            args.IsOrderChanged = true;
+        }
+        if (args.fieldName == 'Year') {
+            args.members = ['FY 2017', 'FY 2015'];
+            args.IsOrderChanged = true;
+        }
+    }
+</script>
