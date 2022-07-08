@@ -1,6 +1,5 @@
 @using Syncfusion.EJ2.Navigations;
 
-<div class="container">
     <div class="control-container">
         @(Html.EJS().Carousel("defaultCarousel").AnimationEffect(CarouselAnimationEffect.Fade)
             .Items(new List<CarouselItem> {
@@ -13,7 +12,7 @@
                 .Render()
             )
     </div>
-</div>
+
 
 <style>
     .control-container {

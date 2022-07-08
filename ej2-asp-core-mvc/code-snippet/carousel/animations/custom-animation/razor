@@ -1,7 +1,6 @@
 @using Syncfusion.EJ2.Navigations;
 
-<div class="container" >
-    <div class="control-container" >
+<div class="control-container" >
         @(Html.EJS().Carousel("defaultCarousel").
     AnimationEffect(CarouselAnimationEffect.Custom).cssClass("parallax")
     .Items(new List < CarouselItem > {
@@ -12,16 +11,15 @@
         new CarouselItem { Template = "<div class='slide-content'>Slide 5</div>" }
             })
     .Render()
-)
+    )
 </div>
-    < /div>
 
-        <style>
+<style>
     .control - container {
-        background- color: #adb5bd;
-height: 300px;
-margin: 0 auto;
-width: 500px;
+    background- color: #adb5bd;
+    height: 300px;
+    margin: 0 auto;
+    width: 500px;
     }
 
     .e - carousel.slide - content {
@@ -30,19 +28,19 @@ width: 500px;
     font - size: 1.25rem;
     height: 100 %;
     justify - content: center;
-}
+    }
 
     /* Parallax animation */
     .parallax.e - carousel - item {
     transition: transform 1s ease -in -out;
-}
+    }
     .parallax.e - carousel - item.e - next {
     animation: ParallaxIn 1s ease -in -out;
-}
+    }
 
     .parallax.e - carousel - item.e - prev {
     animation: ParallaxOut 1s ease -in -out;
-}
+    }
 
 @@keyframes ParallaxIn {
         from {

@@ -27,7 +27,7 @@ The following demo depicts the example for `Fade` animation,
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel fade animation](../images/fade_animation.gif)
+![Carousel fade animation](images/fade_animation.gif)
 
 ### Custom animation
 
@@ -44,7 +44,7 @@ The following demo depicts the example for `parallax` custom animation,
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel custom animation](../images/parallax_animation.gif)
+![Carousel custom animation](images/parallax_animation.gif)
 
 ## Intervals between slides
 
@@ -102,7 +102,7 @@ In the carousel, slides transitions are repeated continuously when you reach the
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel loop slides](../images/looping_slides.png)
+![Carousel loop slides](images/looping_slides.png)
 
 ## Slide changing events
 

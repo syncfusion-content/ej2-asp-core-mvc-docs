@@ -33,7 +33,7 @@ The following example depicts the code to hide the navigators in the carousel.
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel hidden navigators](../images/navigators_hidden.png)
+![Carousel hidden navigators](images/navigators_hidden.png)
 
 ### Show previous and next button on hover
 
@@ -48,7 +48,7 @@ In the carousel, you can show the previous and next buttons only on mouse hover 
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel visible on hover navigators](../images/navigators_onhover.gif)
+![Carousel visible on hover navigators](images/navigators_onhover.gif)
 
 ### Previous and next button template
 
@@ -63,7 +63,7 @@ Template options are provided to customize the previous button using [previousBu
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel navigators template](../images/navigators_template.png)
+![Carousel navigators template](images/navigators_template.png)
 
 ## Indicators
 
@@ -80,7 +80,7 @@ In indicators, the total slides and current slide state have been depicted. You 
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel hidden indicators](../images/hidden_indicators.png)
+![Carousel hidden indicators](images/hidden_indicators.png)
 
 ### Indicators template
 
@@ -95,7 +95,7 @@ Template option is provided to customize the indicators by using the [indicators
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel indicators template](../images/indicators_template.png)
+![Carousel indicators template](images/indicators_template.png)
 
 ### Showing preview of slide in indicator
 
@@ -110,7 +110,7 @@ You can customize the indicators by showing the preview image of each slide usin
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel indicators template preview](../images/indicators_preview.png)
+![Carousel indicators template preview](images/indicators_preview.png)
 
 ## Play button
 
@@ -127,7 +127,7 @@ In the carousel, [autoPlay](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel play button](../images/play_button.png)
+![Carousel play button](images/play_button.png)
 
 ### Play button template
 
@@ -142,4 +142,4 @@ Template option is provided to customize the play button by using the [playButto
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel play button template](../images/play_button_template.png)
+![Carousel play button template](images/play_button_template.png)

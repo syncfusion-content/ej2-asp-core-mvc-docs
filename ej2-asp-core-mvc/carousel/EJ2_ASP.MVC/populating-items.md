@@ -61,7 +61,7 @@ Using the [SelectedIndex](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel selected slide](../images/selected_index.png)
+![Carousel selected slide](images/selected_index.png)
 
 ### Select an item using the method
 
