@@ -77,7 +77,7 @@ diagram.exportDiagram(options);
 
 ## Mode
 
-[`Mode`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#mode) specifies whether the diagram is to be exported as files or to get base64 data (ImageURL/SVG). The exporting options are as follows:
+[`Mode`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#mode) specifies whether the diagram will be exported as files or get base64 data (ImageURL/SVG). The export options are as follows:
 
 * Download: Exports and downloads the diagram as image/SVG.
 * Data: return a base64 string.
@@ -100,7 +100,7 @@ var base64data = diagram.exportDiagram(options);
 
 ## Region
 
-You can export any particular [`region`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#region) of the diagram and is categorized into three types as follows.
+You can export any particular [`region`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#region) of the diagram and it is categorized into three types as follows.
 
 * PageSettings
 * Content
@@ -108,7 +108,7 @@ You can export any particular [`region`](https://ej2.syncfusion.com/documentatio
 
 ## PageSettings
 
-Diagram is exported based on the given PageSettings width and height. Properties available in page settings are as follows.
+Diagram is exported based on the given PageSettings width and height. The Properties available in page settings are as follows.
 * width
 * height
 * margin
@@ -122,13 +122,13 @@ Diagram is exported based on the given PageSettings width and height. Properties
 `boundaryConstarints`
 
 Defines the editable region of the diagram.
-* Infinity - Allow the interactions to take place at the infinite height and width.
-* Diagram - Allow the interactions to take place around the diagram height and width.
-* Page - Allow the interactions to take place around the page height and width.
+* Infinity - Allow the interactions to take place at infinite height and width.
+* Diagram - Allow the interactions to take place around the diagram's height and width.
+* Page - Allow the interactions to take place around the page's height and width.
 
 `multiplePage`
 
-While setting multiple page as false, the diagram is exported as a single image. While setting multiple page as true, the diagram is exported as separate image based on width and height.
+While setting multiple pages as false, the diagram is exported as a single image and While setting multiple pages as true, the diagram is exported as a separate image based on width and height.
 
 ```javascript
 
@@ -148,7 +148,7 @@ diagram.exportDiagram(options);
 
 ## Content
 
-The diagram content alone will be exported as a image.
+The diagram content alone will be exported as an image.
 
 The following code example illustrates how to export the region occupied by the diagram elements.
 
@@ -241,5 +241,5 @@ diagram.print(options);
 
 ## Limitations
 
-We have limitation in exporting the image with HTML and Native node.So,Syncfusion  Essential PDF library is used, which supports HTML Content to Image conversion by using the advanced Qt WebKit rendering engine.You can refer the following KB link for more details.
+We have a limitation in exporting the image with HTML and Native node.So,Syncfusion  Essential PDF library is used, which supports HTML Content to Image conversion by using the advanced Qt WebKit rendering engine.You can refer to the following KB link for more details.
 [`https://www.syncfusion.com/kb/13298/how-to-print-or-export-the-html-and-native-node-into-image-format`]
