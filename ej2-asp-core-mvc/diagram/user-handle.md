@@ -248,11 +248,11 @@ The connector’s fixed user handle can be aligned over its segment path using t
 
 The following table shows all the possible alignments visually shows the fixed user handle positions.
 
-| Output  | Alignment | Offset |
+| Offset | Alignment | Output |
 | -------- | -------- | -------- |
-| ![fixed user handle for node](images/0before.png) | Before | 0|
-| ![fixed user handle for node](images/0.5center.png)| Center |0.5|
-|![fixed user handle for node](images/1after.png)| After |1|
+| 0 | Before |![fixed user handle for node](images/0before.png)|
+| 0.5 | Center |![fixed user handle for node](images/0.5center.png)|
+| 1 | After |![fixed user handle for node](images/1after.png)|
 
 ### Displacement
 
@@ -292,7 +292,7 @@ The following table shows all the possible alignments visually shows the fixed u
 ### Tooltip support for User Handle
 
 The diagram provides support to show tooltip when the mouse hovers over any user handle.
-To show tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) property of diagram model needs to be set with the tooltip [`content`](../api/diagram/diagramTooltip/#content) and [`position`](../api/diagram/diagramTooltip/#position) as shown in the following example.
+To show the tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) property of diagram model needs to be set with the tooltip [`content`](../api/diagram/diagramTooltip/#content) and [`position`](../api/diagram/diagramTooltip/#position) as shown in the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
