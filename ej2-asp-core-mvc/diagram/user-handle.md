@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Handle in ##Platform_Name## Diagram Component
+title: User Handle in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about User Handle in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: User Handle
@@ -302,7 +302,7 @@ To show the tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) prope
 {% endhighlight %}
 {% highlight c# tabtitle="Node.cs" %}
 {% include code-snippet/diagram/interaction/tooltipuserhandle/tooltipuserhandle.cs %}
-![Tooltip User Handle](./images/TooltipUserHandle.png)
+![Tooltip User Handle](./images/TooltipUser.png)
 {% endhighlight %}
 {% endtabs %}
 
@@ -311,7 +311,7 @@ To show the tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) prope
 {% tabs %}
 {% highlight c# tabtitle="Node.cs" %}
 {% include code-snippet/diagram/interaction/tooltipuserhandle/tooltipuserhandle.cs %}
-![Tooltip User Handle](./images/TooltipUserHandle.png)
+![Tooltip User Handle](./images/TooltipUser.png)
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
