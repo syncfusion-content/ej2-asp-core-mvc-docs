@@ -289,4 +289,32 @@ The following table shows all the possible alignments visually shows the fixed u
 {% endtabs %}
 {% endif %}
 
+### Tooltip support for User Handle
 
+The diagram provides support to show tooltip when the mouse hovers over any user handle.
+To show the tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) property of diagram model needs to be set with the tooltip [`content`](../api/diagram/diagramTooltip/#content) and [`position`](../api/diagram/diagramTooltip/#position) as shown in the following example.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/interaction/tooltipuserhandle/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Node.cs" %}
+{% include code-snippet/diagram/interaction/tooltipuserhandle/tooltipuserhandle.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Node.cs" %}
+{% include code-snippet/diagram/interaction/tooltipuserhandle/tooltipuserhandle.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+The Tooltip user Handle example.
+
+![Tooltip User Handle](images/TooltipUser.png)
