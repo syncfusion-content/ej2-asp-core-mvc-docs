@@ -302,7 +302,6 @@ To show the tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) prope
 {% endhighlight %}
 {% highlight c# tabtitle="Node.cs" %}
 {% include code-snippet/diagram/interaction/tooltipuserhandle/tooltipuserhandle.cs %}
-![Tooltip User Handle](./images/TooltipUser.png)
 {% endhighlight %}
 {% endtabs %}
 
@@ -311,7 +310,11 @@ To show the tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) prope
 {% tabs %}
 {% highlight c# tabtitle="Node.cs" %}
 {% include code-snippet/diagram/interaction/tooltipuserhandle/tooltipuserhandle.cs %}
-![Tooltip User Handle](./images/TooltipUser.png)
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+The Tooltip user Handle example.
+
+![Tooltip User Handle](images/TooltipUser.png)
