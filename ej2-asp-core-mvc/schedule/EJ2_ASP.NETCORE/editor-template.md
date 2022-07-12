@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editor Template in ##Platform_Name## Schedule Component
+title: Editor Template in ##Platform_Name## Syncfusion Schedule Component
 description: Learn here all about Editor Template in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Editor Template
