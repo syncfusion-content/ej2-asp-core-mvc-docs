@@ -124,7 +124,6 @@ The below sample code illustrates the field list dialog invoked on an external b
 
 ![output](images/fieldlist-custom.png "FieldList in Button")
 
-{% endtab %}
 
 ## Search desired field
 
@@ -157,7 +156,6 @@ To enable search box in the static field list UI, set the [`enableFieldSearching
 {% endtabs %}
 {% endif %}
 
-{% endtab %}
 
 To enable search box in the pivot table's built-in popup field list UI, set the [`enableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableFieldSearching) property to **true** in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html).
 
