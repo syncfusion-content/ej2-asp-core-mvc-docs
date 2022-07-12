@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export in ##Platform_Name## Diagram Component
+title: Export in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Export in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export
@@ -231,5 +231,5 @@ diagram.print(options);
 
 ## Limitations
 
-We have a limitation in exporting the image with HTML and Native node.So,Syncfusion  Essential PDF library is used, which supports HTML Content to Image conversion by using the advanced Qt WebKit rendering engine.You can refer to the following KB link for more details.
+We have a limitation in exporting the image with HTML and Native node. So,Syncfusion  Essential PDF library is used, which supports HTML Content to Image conversion by using the advanced Qt WebKit rendering engine. You can refer to the following KB link for more details.
 [`https://www.syncfusion.com/kb/13298/how-to-print-or-export-the-html-and-native-node-into-image-format`]
