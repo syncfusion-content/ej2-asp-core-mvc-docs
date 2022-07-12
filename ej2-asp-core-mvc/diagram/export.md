@@ -71,7 +71,6 @@ options.margin = { left: 10, right: 10, top: 10, bottom: 10};
 options.fileName = 'format';
 options.format = 'SVG';
 diagram.exportDiagram(options);
-
 ```
 
 ## Mode
@@ -94,7 +93,6 @@ options.margin = { left: 10, right: 10, top: 10, bottom: 10};
 options.fileName = 'format';
 options.format = 'SVG';
 var base64data = diagram.exportDiagram(options);
-
 ```
 
 ## Region
@@ -118,19 +116,18 @@ Diagram is exported based on the given PageSettings width and height. The Proper
 * showPageBreaks
 * fitOptions
 
-`boundaryConstarints`
+### boundaryConstarints
 
 Defines the editable region of the diagram.
 * Infinity - Allow the interactions to take place at infinite height and width.
 * Diagram - Allow the interactions to take place around the diagram's height and width.
 * Page - Allow the interactions to take place around the page's height and width.
 
-`multiplePage`
+### multiplePage
 
 While setting multiple pages as false, the diagram is exported as a single image and While setting multiple pages as true, the diagram is exported as a separate image based on width and height.
 
 ```javascript
-
 var diagram = new Diagram({
     width: 1500, height: 1500
 });
@@ -142,7 +139,6 @@ options.fileName = 'format';
 options.format = 'SVG';
 options.region ='PageSettings';
 diagram.exportDiagram(options);
-
 ```
 
 ## Content
@@ -152,7 +148,6 @@ The diagram content alone will be exported as an image.
 The following code example illustrates how to export the region occupied by the diagram elements.
 
 ```javascript
-
 var diagram = new ej.diagrams.Diagram({
     width: 1500, height: 1500
 },'#element');
@@ -163,7 +158,6 @@ options.fileName = 'format';
 options.format = 'SVG';
 options.region = 'Content';
 diagram.exportDiagram(options);
-
 ```
 
 ## Custom bounds
@@ -171,7 +165,6 @@ diagram.exportDiagram(options);
 Diagram provides support to export any specific region of the diagram by using [`bounds`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#region).
 
 ```javascript
-
 var diagram = new Diagram({
     width: 1500, height: 1500
 });
@@ -194,7 +187,6 @@ diagram.exportDiagram(options);
 Diagram provides support to export the diagram as image for [`stretch`](https://ej2.syncfusion.com/documentation/api/diagram/iExportOptions/#stretch) option. The exported images will be clearer but larger in file size.
 
 ```javascript
-
 var diagram = new Diagram({
     width: 1500, height: 1500
 });
@@ -224,7 +216,6 @@ The client-side method [`print`](https://ej2.syncfusion.com/documentation/api/di
 | pageOrientation | enum | Sets the orientation of the page. |
 
 ```javascript
-
 var diagram = new Diagram({
     width: 1500, height: 1500
 });
