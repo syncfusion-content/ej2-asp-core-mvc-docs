@@ -189,6 +189,23 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 
 
 
+### Custom separator in CSV
+
+By default, the Scheduler exports the event data with custom separator as `,` in CSV format. You can customize the default separator by making use of the `separator` field and `exportType` as 'csv' in the `ExportOptions`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/excel-export/csv-format/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/excel-export/csv-format/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+
+
 ## Exporting calendar events as ICS file
 
 You can export the Scheduler events to a calendar (.ics) file format, and open it on any of the other default calendars such as Google or Outlook.

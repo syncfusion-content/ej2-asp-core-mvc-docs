@@ -195,18 +195,7 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 
 By default, the Scheduler exports the event data with custom separator as `,` in CSV format. You can customize the default separator by making use of the `separator` field and `exportType` as 'csv' in the `ExportOptions`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/excel-export/csv-format/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/excel-export/csv-format/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

@@ -637,4 +637,55 @@ The following code example shows you how to customize the `moreEventsClick` prop
 
 
 
+### How to close the editor window manually
+
+You can close the editor window by using `closeEditor` public method. The following code example demonstrates the how to close editor window manually.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/close/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/close-editor/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+
+
+### How to open the quick info popup manually
+
+You can open the quick info popup in scheduler by using the `openQuickInfoPopup` public method. To open the cell quick info popup, you can pass the cell data as an argument to the method. To open the event quick info popup, you should pass the event data object as an argument to the method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/open-quickinfo-popup/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/open-quickinfo-popup/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+
+
+### How to close the quick info popup manually
+
+You can close the quick info popup in scheduler by using the `closeQuickInfoPopup` public method. The following code example demonstrates the how to close quick info popup manually.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/close-quickinfo-popup/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/close-quickinfo-popup/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+
+
 > You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
