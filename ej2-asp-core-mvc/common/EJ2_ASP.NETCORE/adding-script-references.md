@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding script references in ##Platform_Name## control
+title: Adding script references in ##Platform_Name## control | Syncfusion
 description: Learn here all about adding script references in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common
