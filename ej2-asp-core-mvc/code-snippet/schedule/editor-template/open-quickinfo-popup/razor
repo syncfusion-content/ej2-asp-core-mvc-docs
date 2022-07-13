@@ -17,7 +17,7 @@
                 EndTime: new Date(2022, 2, 5, 21, 0, 0)
             }] 
         })
-        .SelectedDate(new DateTime(2022, 2, 15))
+        .SelectedDate(new DateTime(2022, 2, 5))
         .Render()
     )
 </div>
