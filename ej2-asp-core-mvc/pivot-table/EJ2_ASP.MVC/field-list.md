@@ -158,7 +158,7 @@ To enable search box in the static field list UI, set the [`enableFieldSearching
 
 
 
-![output](images/searching_fieldlist_static.png "Searching Static FieldList")
+![output](images/Search desired field in static field list.png "Searching Static FieldList")
 
 
 To enable search box in the pivot table's built-in popup field list UI, set the [`enableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableFieldSearching) property to **true** in [`PivotView`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html).
@@ -188,7 +188,7 @@ To enable search box in the pivot table's built-in popup field list UI, set the 
 
 
 
-![output](images/searching_fieldlist.png "Searching Popup FieldList")
+![output](images/Search desired field in popup field list.png "Searching Popup FieldList")
 
 
 ## Add or remove fields
