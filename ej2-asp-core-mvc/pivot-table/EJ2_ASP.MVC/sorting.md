@@ -120,6 +120,11 @@ Allows to sort field headers (aka, members) in rows and columns based on user-de
 {% endtabs %}
 {% endif %}
 
+
+
+![output](images/custom-sorting.png)
+
+
 ## Value Sorting
 
 > This property is applicable only for relational data source.
@@ -199,6 +204,10 @@ The event [`OnHeadersSort`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+
+![output](images/custom-sorting_event.png)
 
 
 ### ActionBegin
