@@ -137,9 +137,9 @@ To enable search box in the static field list UI, set the [`enableFieldSearching
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/static/tagHelper %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-static/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Static.cs" %}
+{% highlight c# tabtitle="Search-desired-field-static.cs" %}
 {% include code-snippet/pivot-table/field-list/Search-desired-field-static/Search-desired-field-static.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -148,9 +148,9 @@ To enable search box in the static field list UI, set the [`enableFieldSearching
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/static/razor %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-static/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Static.cs" %}
+{% highlight c# tabtitle="Search-desired-field-static.cs" %}
 {% include code-snippet/pivot-table/field-list/Search-desired-field-static/Search-desired-field-static.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -167,10 +167,10 @@ To enable search box in the pivot table's built-in popup field list UI, set the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/fieldlist/tagHelper %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/fieldlist/fieldlist.cs %}
+{% highlight c# tabtitle="Search-desired-field-popup.cs" %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/Search-desired-field-popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -178,10 +178,10 @@ To enable search box in the pivot table's built-in popup field list UI, set the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/fieldlist/razor %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/fieldlist/fieldlist.cs %}
+{% highlight c# tabtitle="Search-desired-field-popup.cs" %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/Search-desired-field-popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
