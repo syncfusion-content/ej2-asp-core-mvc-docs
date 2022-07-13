@@ -122,7 +122,7 @@ Allows to sort field headers (aka, members) in rows and columns based on user-de
 
 
 
-![output](images/Custom sorting.png)
+![output](images/Custom sorting.png "Custom Sorting")
 
 
 ## Value Sorting
@@ -207,7 +207,7 @@ The event [`OnHeadersSort`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 
 
-![output](images/Custom sorting_event.png)
+![output](images/Custom sorting_event.png "Custom Sorting Event")
 
 
 ### ActionBegin
