@@ -4,16 +4,6 @@
     <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
 </ejs-schedule>
 
-<style>
-    .e-schedule .e-schedule-toolbar .e-icon-schedule-excel-export::before {
-        content: '\e242';
-    }
-
-    .e-schedule-toolbar .e-toolbar-item.e-today {
-        display: none !important;
-    }
-</style>
-
 <script type="text/javascript">
     function onActionBegin(args) {
         if (args.requestType === 'toolbarItemRendering') {
