@@ -622,7 +622,6 @@ You can close the editor window by using `closeEditor` public method. The follow
 {% include code-snippet/schedule/editor-template/close-editor/data.cs %}
 {% endhighlight %}close
 {% endtabs %}
-{% endif %}
 
 
 
@@ -640,7 +639,6 @@ You can open the quick info popup in scheduler by using the `openQuickInfoPopup`
 {% include code-snippet/schedule/editor-template/open-quickinfo-popup/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -658,7 +656,6 @@ You can close the quick info popup in scheduler by using the `closeQuickInfoPopu
 {% include code-snippet/schedule/editor-template/close-quickinfo-popup/data.cs %}
 {% endhighlight %}close
 {% endtabs %}
-{% endif %}
 
 
 

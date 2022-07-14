@@ -205,7 +205,6 @@ By default, the Scheduler exports the event data with custom separator as `,` in
 {% include code-snippet/schedule/excel-export/csv-format/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
