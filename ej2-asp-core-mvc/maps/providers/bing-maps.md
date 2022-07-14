@@ -52,7 +52,7 @@ Bing Maps provides different types of Maps and it is supported in the Maps compo
 * **CanvasLight** - Displays light version of the road Maps.
 * **CanvasGray** - Displays grayscale version of the road Maps.
 
-To render the light version of the road Maps, set the `CanvasLight` value is passed via the URL into the `GetBingUrlTemplate` method demonstrated in the following code sample.
+To render the light version of the road Maps, set the **CanvasLight** value is passed via the URL into the `GetBingUrlTemplate` method demonstrated in the following code sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
