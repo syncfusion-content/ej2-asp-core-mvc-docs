@@ -14,7 +14,7 @@ documentation: ug
 
 ### Fade animation
 
-In Carousel, two built-in animations are provided for slide transitions. You can disable animation using the [AnimationEffect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_AnimationEffect) property. By default, Slide animation is applied for the transition between slides.
+In Carousel, two built-in animations are provided for slide transitions. You can disable animation using the [AnimationEffect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_AnimationEffect) property. By default, Slide animation is applied for the transition between slides.
 
 The following demo depicts the example for `Fade` animation,
 
@@ -31,7 +31,7 @@ The following demo depicts the example for `Fade` animation,
 
 ### Custom animation
 
-In Carousel, you can use customized animation effects for slide transitions using the [Custom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.CarouselAnimationEffect.html) option of the [AnimationEffect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_AnimationEffect) property and apply custom animation css via [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_cssClass)property.
+In Carousel, you can use customized animation effects for slide transitions using the [Custom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.CarouselAnimationEffect.html) option of the [AnimationEffect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_AnimationEffect) property and apply custom animation css via [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_cssClass)property.
 
 The following demo depicts the example for `parallax` custom animation,
 
@@ -76,7 +76,7 @@ In the carousel, all slides transitions are performed continuously after the spe
 
 ## Pause on hover
 
-By default, Slide transitions are paused when hovering the mouse pointer over the Carousel element. You can enable or disable this functionality using the[pauseOnHover](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_PauseOnHover) property. 
+By default, Slide transitions are paused when hovering the mouse pointer over the Carousel element. You can enable or disable this functionality using the[pauseOnHover](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_PauseOnHover) property. 
 
 The following example depicts the code to play the slides when hovering the mouse pointer over the Carousel element.
 
