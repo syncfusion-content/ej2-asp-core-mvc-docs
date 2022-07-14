@@ -28,7 +28,7 @@
             if (!args.element.querySelector('#closeEditor')) {
                 document.getElementById('btn1').onclick = function () {
                     var scheduleObj = document.getElementById('schedule').ej2_instances[0];
-                    scheduleObj.closeQuickInfoPopup();
+                    scheduleObj.closeEditor();
                 };
             }
         }
