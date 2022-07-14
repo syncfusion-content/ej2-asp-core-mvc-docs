@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Indent and Outdent Feature in ##Platform_Name## Tree Grid Component
+title: Indent and Outdent Feature in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Indent and Outdent Feature in Syncfusion ##Platform_Name## Tree Grid component and much more.
 platform: ej2-asp-core-mvc
 control: Indent and Outdent
@@ -37,5 +37,6 @@ To use the indent and outdent feature, inject the `RowDD` module in the Tree Gri
 {% endtabs %}
 {% endif %}
 
+> To change hierarchy level of the record programmatically, `indent` and `outdent` methods can be used by passing the record as a parameter.
 
 >Refer to our [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to learn how to present and manipulate data.
