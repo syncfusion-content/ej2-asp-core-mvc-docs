@@ -1,9 +1,6 @@
 @using Syncfusion.EJ2.Schedule
 
 <div>
-    @Html.EJS().Button("btn1").Content("CloseEditor").Render()
-</div>
-<div>
     @(Html.EJS().Schedule("schedule")
         .Width("100%")
         .Height("550px")
@@ -26,8 +23,12 @@
     function onPopupOpen(args) {
         if (args.type === 'Editor') {
             if (!args.element.querySelector('#closeEditor')) {
-                document.getElementById('btn1').onclick = function () {
-                    var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+                var btnElement = ej.base.createElement("BUTTON", { id: 'closeEditor' });
+                args.element.querySelector('.e-footer-content').appendChild(btnElement);
+                var btnObj = new ej.buttons.Button();
+                btnElement.textContent = "Close Editor";
+                btnObj.appendTo('#closeEditor');
+                btnObj.element.onclick = function () {
                     scheduleObj.closeEditor();
                 };
             }
