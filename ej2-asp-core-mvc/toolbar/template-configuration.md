@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template Configuration in ##Platform_Name## Toolbar Component
+title: Template Configuration in ##Platform_Name## Toolbar Component | Syncfusion
 description: Learn here all about Template Configuration in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Template Configuration
