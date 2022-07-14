@@ -48,7 +48,7 @@ The following code example shows how to set height and width in the Gantt contro
 {% endtabs %}
 {% endif %}
 
-## Responsive with parent container
+## Responsive with the parent container
 
 Specify the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) as `100%` to make the gantt element fill its parent container.
 Setting the [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) to `100%` requires the gantt parent element to have explicit height.
