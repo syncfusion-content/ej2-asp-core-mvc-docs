@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Pivot Table Component
+title: Sorting in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Sorting in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sorting
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sorting
+# Sorting in ##Platform_Name## Pivot Table Component
 
 ## Member Sorting
 
@@ -88,6 +88,43 @@ Usually string sorting is applied to field members even if it starts with number
 
 ![output](images/alpha-numeric-header.png)
 
+
+### Custom Sorting
+
+Allows to sort field headers (aka, members) in rows and columns based on user-defined order. This can be configured mainly using the [`MembersOrder`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_MembersOrder) in the [`PivotViewSortSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html) through code behind, during initial rendering. The other settings required to sort are:
+
+* [`Name`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_Name) : It allows to set the field name.
+* [`MembersOrder`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_MembersOrder) : It holds an array of headers in the order specified by the user.
+* [`Order`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_Order) : It allows to specify whether the array of headers should be sorted ascending or descending.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/sorting/custom-sorting/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-sorting.cs" %}
+{% include code-snippet/pivot-table/sorting/custom-sorting/Custom-sorting.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/sorting/custom-sorting/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-sorting.cs" %}
+{% include code-snippet/pivot-table/sorting/custom-sorting/Custom-sorting.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![output](images/Custom sorting.png "Custom Sorting")
+
+
 ## Value Sorting
 
 > This property is applicable only for relational data source.
@@ -130,6 +167,48 @@ The value sorting can also be configured using the [`PivotViewValueSortSettings`
 ![output](images/valuesorting.png)
 
 ## Event
+
+### OnHeadersSort
+
+The event [`OnHeadersSort`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_OnHeadersSort) triggers when clicking the value sort icon or the sort icon in the field button, which is present in both grouping bar and field list UI. This allows user to identify the current action being performed at runtime. It has the following parameters:
+
+* `fieldName`: It holds the field name where the sort settings applied.
+
+* `sortOrder`: It holds the current sort order of the field.
+
+* `members`: It holds the sorted headers according to the specified sort order.
+
+* `levelName`: It holds the specific field's unique level name. **Note:** This option is applicable only for OLAP data.
+
+* `isOrderChanged`: By setting this boolean property to true, it allows to display the modified members order.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/onHeaderSort/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="OnHeaderSort.cs" %}
+{% include code-snippet/pivot-table/onHeaderSort/OnHeaderSort.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/onHeaderSort/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OnHeaderSort.cs" %}
+{% include code-snippet/pivot-table/onHeaderSort/OnHeaderSort.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![output](images/Custom sorting_event.png "Custom Sorting Event")
+
 
 ### ActionBegin
 

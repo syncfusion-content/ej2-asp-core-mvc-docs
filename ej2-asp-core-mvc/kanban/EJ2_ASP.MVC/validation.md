@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Kanban Component
+title: Validation in Syncfusion ##Platform_Name## Kanban Component
 description: Learn here all about Validation in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Validation
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Validation
+# Validation in ASP.NET MVC Kanban control
 
 Validate particular column using the `MinCount` or `MaxCount` properties. The corresponding columns gets different appearance when validation fails. In default layout, `ConstraintType` property accept only `Column` type. In swimlane layout, accept both `Column` and `Swimlane` constraint type.
 
@@ -36,6 +36,9 @@ The `MaxCount` property is used to specify the maximum cards hold on particular 
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/validation/datasource.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/validation/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -46,6 +49,9 @@ The `MaxCount` property is used to specify the maximum cards hold on particular 
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/validation/datasource.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/kanban/validation/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

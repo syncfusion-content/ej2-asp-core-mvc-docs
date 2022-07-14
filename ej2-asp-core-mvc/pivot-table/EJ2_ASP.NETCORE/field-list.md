@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Field List in ##Platform_Name## Pivot Table Component
+title: Field List in Syncfusion ##Platform_Name## Pivot Table Component
 description: Learn here all about Field List in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Field List
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pivot Field List
+# Pivot Field List in ##Platform_Name## Pivot Table Component
 
 The pivot table provides a built-in Field List similar to Microsoft Excel. It allows to add or remove fields and also rearrange them between different axes, including column, row, value, and filter along with sort and filter options dynamically at runtime.
 
@@ -123,6 +123,73 @@ The below sample code illustrates the field list dialog invoked on an external b
 
 
 ![output](images/fieldlist-custom.png "FieldList in Button")
+
+
+## Search desired field
+
+End user can search for desired field in the field list UI by typing the field name into the search box at runtime. It can be enabled by setting the [`enableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnableFieldSearching) property to **true** via code-behind.
+
+> By default, field search option is disabled in the field list UI.
+
+To enable search box in the static field list UI, set the [`enableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnableFieldSearching) property  to **true** in [`ejs-pivotfieldlist`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-static/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Search.cs" %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-static/Search-desired-field-static.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-static/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Search.cs" %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-static/Search-desired-field-static.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![output](images/Search desired field in static field list.png "Searching Static FieldList")
+
+
+To enable search box in the pivot table's built-in popup field list UI, set the [`enableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableFieldSearching) property to **true** in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Search.cs" %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/Search-desired-field-popup.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Search.cs" %}
+{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/Search-desired-field-popup.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![output](images/Search desired field in popup field list.png "Searching Popup FieldList")
+
 
 ## Add or remove fields
 
