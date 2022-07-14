@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animations and Transitions in ##Platform_Name## Carousel Control
+title: Animations and Transitions in Syncfusion ##Platform_Name## Carousel Control
 description: Checkout and learn about Animations and Transitions in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Animations and Transitions
@@ -14,7 +14,7 @@ documentation: ug
 
 ### Fade animation
 
-In Carousel, two built-in animations are provided for slide transitions. You can disable animation using the [animation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Animation) property. By default, Slide animation is applied for the transition between slides.
+In Carousel, two built-in animations are provided for slide transitions. You can disable animation using the [AnimationEffect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_AnimationEffect) property. By default, Slide animation is applied for the transition between slides.
 
 The following demo depicts the example for `Fade` animation,
 
@@ -27,11 +27,11 @@ The following demo depicts the example for `Fade` animation,
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel fade animation](../images/fade_animation.gif)
+![Carousel fade animation](images/fade_animation.gif)
 
 ### Custom animation
 
-In Carousel, you can use customized animation effects for slide transitions using the [customEffect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.CarouselAnimationSettings.html#Syncfusion_EJ2_Navigations_CarouselAnimationSettings_CustomEffect) option of the [animation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Animation) property.
+In Carousel, you can use customized animation effects for slide transitions using the [Custom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.CarouselAnimationEffect.html) option of the [AnimationEffect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_AnimationEffect) property and apply custom animation css via [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_cssClass)property.
 
 The following demo depicts the example for `parallax` custom animation,
 
@@ -44,7 +44,7 @@ The following demo depicts the example for `parallax` custom animation,
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel custom animation](../images/parallax_animation.gif)
+![Carousel custom animation](images/parallax_animation.gif)
 
 ## Intervals between slides
 
@@ -74,6 +74,21 @@ In the carousel, all slides transitions are performed continuously after the spe
 {% endhighlight %}
 {% endtabs %}
 
+## Pause on hover
+
+By default, Slide transitions are paused when hovering the mouse pointer over the Carousel element. You can enable or disable this functionality using the[pauseOnHover](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_PauseOnHover) property. 
+
+The following example depicts the code to play the slides when hovering the mouse pointer over the Carousel element.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/animations/pause-on-hover/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/animations/pause-on-hover/pause-on-hover.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Looping slides
 
 In the carousel, slides transitions are repeated continuously when you reach the last slide by default. You can enable or disable the infinite slide transition using the [loop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Carousel.html#Syncfusion_EJ2_Navigations_Carousel_Loop) property. The following example depicts the code to disable the infinite slide transitions.
@@ -87,7 +102,7 @@ In the carousel, slides transitions are repeated continuously when you reach the
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel loop slides](../images/looping_slides.png)
+![Carousel loop slides](images/looping_slides.png)
 
 ## Slide changing events
 

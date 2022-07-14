@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating items in ##Platform_Name## Carousel Control
+title: Populating items in Syncfusion ##Platform_Name## Carousel Control
 description: Checkout and learn about populating items in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Populating Items
@@ -61,7 +61,7 @@ Using the [selectedIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel selected slide](../images/selected_index.png)
+![Carousel selected slide](images/selected_index.png)
 
 ### Select an item using the method
 
