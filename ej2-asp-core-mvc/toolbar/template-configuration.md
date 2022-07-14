@@ -94,3 +94,30 @@ Class              | Description
 {% endtabs %}
 {% endif %}
 
+## Integrate menu component
+
+You can integrate menu component as toolbar item in Toolbar using content template property. Menu can be populated with items as needed.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/toolbar/template-configuration/integratemenucomponent/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Menucomponent.cs" %}
+{% include code-snippet/toolbar/template-configuration/integratemenucomponent/menucomponent.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/toolbar/template-configuration/integratemenucomponent/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Menucomponent.cs" %}
+{% include code-snippet/toolbar/template-configuration/integratemenucomponent/menucomponent.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
