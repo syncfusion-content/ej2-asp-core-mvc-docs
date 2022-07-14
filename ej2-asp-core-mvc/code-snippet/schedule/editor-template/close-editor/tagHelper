@@ -4,7 +4,7 @@
     <ejs-button id="btn1" content="CloseEditor"></ejs-button>
 </div>
 
-<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2022, 2, 5)" views="@ViewBag.view" >
+<ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2022, 2, 5)" views="@ViewBag.view" popupOpen="onPopupOpen" >
     <e-schedule-eventsettings dataSource="@ViewBag.datasource"></e-schedule-eventsettings>
 </ejs-schedule>
 
