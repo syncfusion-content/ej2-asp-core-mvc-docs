@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting Grid in Server in ##Platform_Name## Grid Component
+title: Exporting Grid in Server in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Exporting Grid in Server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Exporting Grid in Server
@@ -85,7 +85,7 @@ In the below demo, we have invoked the above method inside the [`toolbarClick`](
 {% endif %}
 
 
-## Rotate a header text to a certain degree in the server side exported grid
+## Rotate a header text to a certain degree in the exported grid on the server side
 
 The DataGrid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported Excel file. To achieve this requirement, use the `ServerExcelHeaderQueryCellInfo` event of the Grid.
 

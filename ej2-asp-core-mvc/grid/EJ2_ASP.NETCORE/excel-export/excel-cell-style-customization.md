@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Cell Style Customization in ##Platform_Name## Grid Component
+title: Excel Cell Style Customization in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Excel Cell Style Customization in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Cell Style Customization
