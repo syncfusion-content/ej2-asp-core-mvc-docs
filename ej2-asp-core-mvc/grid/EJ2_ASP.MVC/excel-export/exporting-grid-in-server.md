@@ -85,7 +85,7 @@ In the below demo, we have invoked the above method inside the [`toolbarClick`](
 {% endif %}
 
 
-## Grid cell customization in server side Excel export
+## Rotate a header text to a certain degree in the server side exported grid
 
 The DataGrid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported Excel file. To achieve this requirement, use the `ServerExcelHeaderQueryCellInfo` event of the Grid.
 

@@ -81,7 +81,7 @@ To apply theme in exported Excel, define the [`theme`](https://ej2.syncfusion.co
 
 > By default, material theme is applied to exported excel document.
 
-## Grid cell customization in Excel export
+## Rotate a header text to a certain degree in the exported grid
 
 The DataGrid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported Excel file. To achieve this requirement, use the [ExcelHeaderQueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelHeaderQueryCellInfo) event of the Grid.
 

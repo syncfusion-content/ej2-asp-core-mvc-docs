@@ -53,7 +53,7 @@ To Export the Grid in server side, You need to call the [`serverPdfExport`](http
 
 > **Note:** Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
 
-## Grid cell customization in server side PDF export
+## Rotate a header text to a certain degree in the server side exported grid
 
 The Grid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported PDF file. To achieve this requirement, define the `BeginCellLayout` event of the `PdfExportProperties` with an event handler to perform the required action.
 
