@@ -7,4 +7,4 @@
         col.Field("StartDate").HeaderText("Start Date").Format("yMd").Type("date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
         col.Field("Duration").HeaderText("Duration").Width(90).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 
-       }).Height(265).SelectedRowIndex(2).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Indent", "Outdent" }).ChildMapping("Children").TreeColumnIndex(1).Render())
+       }).Height(265).SelectedRowIndex(2).Toolbar(new List<string>() { "Indent", "Outdent" }).ChildMapping("Children").TreeColumnIndex(1).Render())
