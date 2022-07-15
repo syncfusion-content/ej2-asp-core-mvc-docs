@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editor Template in ##Platform_Name## Schedule Component
+title: Editor Template in ##Platform_Name## Syncfusion Schedule Component
 description: Learn here all about Editor Template in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Editor Template
@@ -634,6 +634,57 @@ The following code example shows you how to customize the `moreEventsClick` prop
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+
+### How to close the editor window manually
+
+You can close the editor window by using `closeEditor` public method. The following code example demonstrates the how to close editor window manually.
+
+
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/close/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/close-editor/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+
+
+### How to open the quick info popup manually
+
+You can open the quick info popup in scheduler by using the `openQuickInfoPopup` public method. To open the cell quick info popup, you can pass the cell data as an argument to the method. To open the event quick info popup, you should pass the event data object as an argument to the method.
+
+
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/open-quickinfo-popup/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/open-quickinfo-popup/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+
+
+### How to close the quick info popup manually
+
+You can close the quick info popup in scheduler by using the `closeQuickInfoPopup` public method. The following code example demonstrates the how to close quick info popup manually.
+
+
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/editor-template/close-quickinfo-popup/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/editor-template/close-quickinfo-popup/data.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 
 
