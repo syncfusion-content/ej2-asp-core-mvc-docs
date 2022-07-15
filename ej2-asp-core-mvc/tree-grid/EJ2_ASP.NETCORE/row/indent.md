@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Indent and Outdent Feature in ##Platform_Name## Tree Grid Component
+title: Indent and Outdent Feature in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Indent and Outdent Feature in Syncfusion ##Platform_Name## Tree Grid component and much more.
 platform: ej2-asp-core-mvc
 control: Indent and Outdent
