@@ -11,7 +11,7 @@ documentation: ug
 
 # Icons in ASP.NET Core Breadcrumb Control
 
-The Breadcrumb component contains an icon or image to provide a visual representation of an item.
+The [ASP.NET Core Breadcrumb](https://www.syncfusion.com/aspnet-core-ui-controls/breadcrumb) component contains an icon or image to provide a visual representation of an item.
 
 ## Loading icon in BreadcrumbItem
 
