@@ -89,7 +89,7 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td>
 {% highlight cshtml %}
 <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
