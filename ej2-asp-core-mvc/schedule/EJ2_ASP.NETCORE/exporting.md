@@ -191,7 +191,7 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 
 ### Custom separator in CSV
 
-By default, the Scheduler exports the event data with custom separator as `,` in CSV format. You can customize the default separator by making use of the `separator` field and `exportType` as 'csv' in the `ExportOptions`.
+The Scheduler exports the event data to CSV format with `,` as separator. You can change separator by setting `separator` property in `ExportOptions`.
 
 
 

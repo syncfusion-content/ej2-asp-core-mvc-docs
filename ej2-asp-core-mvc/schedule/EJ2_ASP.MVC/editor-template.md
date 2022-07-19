@@ -610,7 +610,7 @@ The following code example shows you how to customize the `moreEventsClick` prop
 
 ### How to close the editor window manually
 
-You can close the editor window by using `closeEditor` public method. The following code example demonstrates the how to close editor window manually.
+You can close the editor window by using `closeEditor` method. 
 
 
 
