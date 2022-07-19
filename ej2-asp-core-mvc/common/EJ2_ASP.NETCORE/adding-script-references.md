@@ -88,8 +88,8 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/accordion/getting-started">Accordion</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -97,13 +97,13 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/accumulation-chart/getting-started">Accumulation Chart, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/smithchart/getting-started">Smith Chart, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started">Chart</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -111,8 +111,8 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started">Avatar, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/card/getting-started">Card, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started">Dashboard Layout, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/splitter/getting-started">Splitter</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -120,8 +120,8 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/badge/getting-started-asp-core">Badge</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -129,9 +129,9 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/barcode/getting-started">Barcode</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-barcode-generator/dist/global/ej2-barcode-generator.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-barcode-generator/dist/global/ej2-barcode-generator.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-barcode-generator/dist/global/ej2-barcode-generator.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -139,10 +139,10 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/bullet-chart/getting-started">Bullet Chart,</a> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/sparkline/getting-started">Sparkline</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -150,8 +150,8 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started">Button, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/check-box/getting-started">CheckBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chips/getting-started">Chips, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/radio-button/getting-started">Radio Button, </a> <br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started">Switch</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -159,9 +159,9 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button-group/getting-started">ButtonGroup</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -169,8 +169,8 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/calendar/getting-started">Calendar</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -178,9 +178,9 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/carousel/getting-started">Carousel</a>, <a href="https://ej2.syncfusion.com/aspnetcore/documentation/sidebar/getting-started">Sidebar</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src=="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -188,12 +188,12 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started">Circular Gauge</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-circulargauge/dist/global/ej2-circulargauge.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-circulargauge/dist/global/ej2-circulargauge.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-circulargauge/dist/global/ej2-circulargauge.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -201,11 +201,11 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/color-picker/getting-started">Color Picker</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -213,10 +213,10 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/breadcrumb/getting-started">Breadcrumb, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/context-menu/getting-started">Context Menu, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/menu/getting-started">Menu</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -224,10 +224,10 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/datepicker/getting-started">DatePicker</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -235,12 +235,12 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/daterangepicker/getting-started">DateRangePicker</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -248,11 +248,11 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/datetimepicker/getting-started">DateTimePicker</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/timepicker/getting-started">TimePicker</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -260,11 +260,11 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started">Diagram</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-diagrams/dist/global/ej2-diagrams.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-diagrams/dist/global/ej2-diagrams.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-diagrams/dist/global/ej2-diagrams.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -272,9 +272,9 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/dialog/getting-started">Dialog</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -282,13 +282,13 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started">Auto Complete, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started">DropDownList, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/multi-select/getting-started">MultiSelect, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/combo-box/getting-started">ComboBox</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -296,14 +296,14 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-tree/getting-started">DropDownTree</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -311,17 +311,17 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/getting-started">File Manager</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -329,20 +329,20 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core">Grid</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -350,10 +350,10 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/heatmap/getting-started">HeatMap</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/getting-started">ProgressBar</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-heatmap/dist/global/ej2-heatmap.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-heatmap/dist/global/ej2-heatmap.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-heatmap/dist/global/ej2-heatmap.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -361,14 +361,14 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/getting-started">RichTextEditor</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -376,8 +376,8 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/signature/getting-started">Signature, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started">TextBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maskedtextbox/getting-started">Masked TextBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/getting-started">NumericTextBox</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -385,10 +385,10 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-button/getting-started">DropDownButton, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/split-button/getting-started">SplitButton, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-button/getting-started">ProgressButton</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -396,10 +396,10 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tab/getting-started">Tabs</a>, <a href="https://ej2.syncfusion.com/aspnetcore/documentation/toolbar/getting-started">Toolbar</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -407,10 +407,10 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/toast/getting-started">Toast</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -418,13 +418,13 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/treeview/getting-started">TreeView</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -432,8 +432,8 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started">ToolTip</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -441,20 +441,20 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core">TreeGrid</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/dist/global/ej2-treegrid.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/dist/global/ej2-treegrid.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/dist/global/ej2-treegrid.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -462,11 +462,11 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/treemap/getting-started">TreeMap</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treemap/dist/global/ej2-treemap.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treemap/dist/global/ej2-treemap.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treemap/dist/global/ej2-treemap.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -474,9 +474,9 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/uploader/getting-started">Uploader</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -484,14 +484,14 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/kanban/getting-started">Kanban</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-kanban/dist/global/ej2-kanban.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-kanban/dist/global/ej2-kanban.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-kanban/dist/global/ej2-kanban.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -499,12 +499,12 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started">Linear Gauge</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lineargauge/dist/global/ej2-lineargauge.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lineargauge/dist/global/ej2-lineargauge.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lineargauge/dist/global/ej2-lineargauge.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -512,13 +512,13 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/list-box/getting-started-core">ListBox</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -526,10 +526,10 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/listview/getting-started">ListView</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -537,13 +537,13 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/getting-started">Maps</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-maps/dist/global/ej2-maps.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-maps/dist/global/ej2-maps.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-maps/dist/global/ej2-maps.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -551,22 +551,22 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started">Pivot Table</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pivotview/dist/global/ej2-pivotview.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pivotview/dist/global/ej2-pivotview.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pivotview/dist/global/ej2-pivotview.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -574,16 +574,16 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/getting-started">QueryBuilder</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-querybuilder/dist/global/ej2-querybuilder.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-querybuilder/dist/global/ej2-querybuilder.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-querybuilder/dist/global/ej2-querybuilder.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -591,15 +591,15 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-navigator/getting-started">Range Navigator</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-ej2-svg-base/dist/global/ej2-ej2-svg-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-ej2-svg-base/dist/global/ej2-ej2-svg-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-ej2-svg-base/dist/global/ej2-ej2-svg-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -607,10 +607,10 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-slider/getting-started">Range Slider</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -618,15 +618,15 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/in-place-editor/getting-started">In-place Editor</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inplace-editor/dist/global/ej2-inplace-editor.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inplace-editor/dist/global/ej2-inplace-editor.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inplace-editor/dist/global/ej2-inplace-editor.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -634,16 +634,16 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/schedule/getting-started">Schedule</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-schedule/dist/global/ej2-schedule.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-schedule/dist/global/ej2-schedule.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-schedule/dist/global/ej2-schedule.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -651,19 +651,19 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/getting-started">Stock Chart</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -671,22 +671,22 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started-core">Document Editor</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-office-chart/dist/global/ej2-office-chart.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-office-chart/dist/global/ej2-office-chart.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-documenteditor/dist/global/ej2-documenteditor.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-documenteditor/dist/global/ej2-documenteditor.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-office-chart/dist/global/ej2-office-chart.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-documenteditor/dist/global/ej2-documenteditor.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -694,22 +694,22 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/gantt/getting-started">Gantt</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/dist/global/ej2-treegrid.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/dist/global/ej2-treegrid.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-gantt/dist/global/ej2-gantt.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-gantt/dist/global/ej2-gantt.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/dist/global/ej2-treegrid.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-gantt/dist/global/ej2-gantt.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
@@ -717,20 +717,20 @@ The following table demonstrates the list of individual Syncfusion ASP.NET Core 
 <td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started">PDF Viewer</a></td>
 <td>
 {% highlight cshtml %}
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js</a>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-drawings/dist/global/ej2-drawings.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-drawings/dist/global/ej2-drawings.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inplace-editor/dist/global/ej2-inplace-editor.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inplace-editor/dist/global/ej2-inplace-editor.min.js</a><br/>
-<a href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdfviewer/dist/global/ej2-pdfviewer.min.js">https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdfviewer/dist/global/ej2-pdfviewer.min.js</a>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-drawings/dist/global/ej2-drawings.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inplace-editor/dist/global/ej2-inplace-editor.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdfviewer/dist/global/ej2-pdfviewer.min.js"></script>
 {% endhighlight %}
 </td>
 </tr>
