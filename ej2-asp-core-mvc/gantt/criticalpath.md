@@ -42,9 +42,9 @@ The critical path can be enabled in Gantt by using the built-in toolbar button o
 
 ![Alt text](images/criticalpath.PNG)
 
-## Customize critical path taskbar
+## Customize taskbar in critical path
 
-The critical path taskbar  can be customized by using [`queryTaskbarInfo`] event.
+The taskbar in critical path can be customized by using `queryTaskbarInfo` event and `isCritical` property of row `data` in the event arugment.
 
 The following code example shows how to customize the critical path taskbar in the Gantt control:
 
