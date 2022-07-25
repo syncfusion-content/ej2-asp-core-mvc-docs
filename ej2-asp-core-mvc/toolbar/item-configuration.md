@@ -10,7 +10,7 @@ documentation: ug
 
 # Item Configuration in ASP.NET MVC Toolbar control
 
-The Toolbar can be rendered by defining an array of items. Items can be constructed with the following built-in command types or item template.
+The [ASP.NET Core Toolbar](https://www.syncfusion.com/aspnet-core-ui-controls/toolbar) can be rendered by defining an array of items. Items can be constructed with the following built-in command types or item template.
 
 ## Button
 
