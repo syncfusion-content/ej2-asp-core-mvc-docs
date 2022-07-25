@@ -153,3 +153,6 @@ The separators are both horizontal and vertical lines used to separate the menu 
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Menu Bar example](https://ej2.syncfusion.com/aspnetcore/Menu/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Menu Bar in ASP.NET Core.
+

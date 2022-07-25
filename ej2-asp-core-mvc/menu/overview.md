@@ -10,7 +10,7 @@ documentation: ug
 
 # Overview
 
-The Menu is a graphical user interface that serves as navigation header for your application or site.
+The [ASP.NET Core Menu](https://www.syncfusion.com/aspnet-core-ui-controls/menu-bar) is a graphical user interface that serves as navigation header for your application or site.
 It has the support to provide multi-level nested menu items.
 
 ## Key features
