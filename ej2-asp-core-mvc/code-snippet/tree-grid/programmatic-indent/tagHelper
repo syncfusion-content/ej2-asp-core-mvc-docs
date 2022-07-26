@@ -1,0 +1,21 @@
+<ejs-button id="Indent" content="Indent"></ejs-button>
+<ejs-button id="Outdent" content="Outdent"></ejs-button>
+<ejs-treegrid id="TreeGrid" dataSource="ViewBag.datasource" height="265" toolbar="@(new List<string>() {"Indent", "Outdent"})" childMapping="Children" treeColumnIndex="1">
+    <e-treegrid-columns>
+         <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+         <e-treegrid-column field="TaskName" headerText="Task Name" width="180" textAlign="Left"></e-treegrid-column>
+         <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" type="date" width="90"></e-treegrid-column>
+         <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="80"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script>
+    document.getElementById('Indent').addEventListener('click', () => {
+        var treegrid = document.getElementById('TreeGrid').ej2_instances[0];
+        treegrid.indent(treegrid.getCurrentViewRecords()[2]);
+    });
+    document.getElementById('Outdent').addEventListener('click', () => {
+        var treegrid = document.getElementById('TreeGrid').ej2_instances[0];
+        treegrid.outdent(treegrid.getCurrentViewRecords()[2]);
+    });
+</script>
