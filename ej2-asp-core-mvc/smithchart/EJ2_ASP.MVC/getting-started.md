@@ -106,3 +106,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ![ASP.NET MVC SmithChart Control](images/smithchart-control.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/SmithChart/ASP.NET%20MVC%20Razor%20Examples).
+
+> You can also explore our [ASP.NET MVC Smith Chart Example](https://ej2.syncfusion.com/aspnetmvc/Smithchart/Default#/material) that shows how to render and configure the Smith Chart.
