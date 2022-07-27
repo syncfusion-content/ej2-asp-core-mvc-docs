@@ -166,3 +166,6 @@ The following example shows a Enable or disable navigation of Breadcrumb.
 ![Enable or Disable Navigation in ASP.NET MVC Breadcrumb](./images/enable-disable.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Breadcrumb/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC Accordion example](https://ej2.syncfusion.com/aspnetmvc/Breadcrumb/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Accordion in ASP.NET MVC.
+
