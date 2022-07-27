@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Orientation
+# Orientation in ASP.NET MVC Slider
 
-The Slider can be displayed, either in horizontal or vertical orientation. By default, the Slider renders in horizontal orientation.
+The [ASP.NET MVC Slider](https://www.syncfusion.com/aspnet-mvc-ui-controls/range-slider) can be displayed, either in horizontal or vertical orientation. By default, the Slider renders in horizontal orientation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

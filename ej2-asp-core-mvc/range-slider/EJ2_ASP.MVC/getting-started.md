@@ -114,3 +114,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 * [Orientation Slider](./orientation)
 * [Ticks in Slider](./ticks)
 * [Tooltip in Slider](./tooltip)
+
+N> You can also explore our [ASP.NET MVC Range Slider Example](https://ej2.syncfusion.com/aspnetmvc/RangeSlider/Default#/material) that shows you how to render and configure the Range Slider.
