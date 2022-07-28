@@ -1,6 +1,6 @@
 ---
 layout: post
-title: how-to-do-programmatically Indent/Outdent a row in ##Platform_Name## Tree Grid Component | Syncfusion
+title: Programmatic Indent in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Programmatic Indent and Outdent using button in Syncfusion ##Platform_Name## Tree Grid component and much more.
 platform: ej2-asp-core-mvc
 control: Indent and Outdent
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# how-to-do-programmatically Indent/Outdent a row in ##Platform_Name## Tree Grid Component
+# Programmatic Indent in ##Platform_Name## Tree Grid Component
 
 To change hierarchy level of the record programmatically, `indent` and `outdent` methods can be used by passing the record as a parameter.
 
