@@ -198,4 +198,4 @@ public ActionResult Index()
 
 * [How to bind the data](./data-binding/)
 
-> You can refer to our [ASP.NET MVC AutoComplete](https://www.syncfusion.com/aspnet-mvc-ui-controls/combobox) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC AutoComplete example](https://ej2.syncfusion.com/aspnetmvc/ComboBox/DefaultFunctionalities#/fluent) to understand how to render and configure the AutoComplete in ASP.NET MVC.
+> You can refer to our [ASP.NET MVC ComboBox](https://www.syncfusion.com/aspnet-mvc-ui-controls/combobox) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC ComboBox example](https://ej2.syncfusion.com/aspnetmvc/ComboBox/DefaultFunctionalities#/fluent) to understand how to render and configure the ComboBox in ASP.NET MVC.
