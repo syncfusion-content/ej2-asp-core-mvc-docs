@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling in ##Platform_Name## Grid Component
-description: Learn here all about Scrolling in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Scrolling inSyncfusion ASP.NET Core Grid Component
+description: Learn here all about Scrolling in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scrolling
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Scrolling
+# Scrolling in ASP.NET Core Grid Component
 
  The scrollbar will be displayed in the grid when content exceeds the element [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) or [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 
