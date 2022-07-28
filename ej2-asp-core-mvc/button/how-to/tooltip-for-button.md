@@ -19,9 +19,6 @@ Tooltip can be shown on Button hover and it can be achieved by setting `title` a
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/howto/tooltip/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% include code-snippet/button/howto/tooltip/tooltip.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

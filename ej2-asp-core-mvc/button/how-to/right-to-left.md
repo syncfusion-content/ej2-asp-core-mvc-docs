@@ -11,7 +11,7 @@ documentation: ug
 
 # Right-To-Left
 
-Button component has RTL support. This can be achieved by setting [`enableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_EnableRtl) as true.
+Button component has RTL support. This can be achieved by setting [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_EnableRtl) as true.
 
 The following example illustrates how to enable right-to-left support in Button component.
 
@@ -20,9 +20,6 @@ The following example illustrates how to enable right-to-left support in Button 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/howto/rtl/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rtl.cs" %}
-{% include code-snippet/button/howto/rtl/rtl.cs %}
 {% endhighlight %}
 {% endtabs %}
 

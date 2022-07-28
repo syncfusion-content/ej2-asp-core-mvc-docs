@@ -21,9 +21,6 @@ The following example explains about how to achieve Repeat Button in mouse and t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/howto/repeat-button/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Repeatbutton.cs" %}
-{% include code-snippet/button/howto/repeat-button/repeatbutton.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

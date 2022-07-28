@@ -11,7 +11,7 @@ documentation: ug
 
 # Set the disabled state
 
-Button component can be enabled or disabled by giving [`disabled`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_Disabled) property. To disable Button component, the `disabled` property can be set as `true`.
+Button component can be enabled or disabled by giving [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_Disabled) property. To disable Button component, the `disabled` property can be set as `true`.
 
 The following example demonstrates Button in `disabled` state.
 
@@ -20,9 +20,6 @@ The following example demonstrates Button in `disabled` state.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/howto/disabled/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Disabledbutton.cs" %}
-{% include code-snippet/button/howto/disabled/disabledbutton.cs %}
 {% endhighlight %}
 {% endtabs %}
 

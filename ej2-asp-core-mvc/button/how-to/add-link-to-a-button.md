@@ -11,7 +11,7 @@ documentation: ug
 
 # Add link to a Button
 
-The appearance of the Button can be changed like a hyperlink by `e-link` class using [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property and link navigation can be handled in Button click event.
+The appearance of the Button can be changed like a hyperlink by `e-link` class using [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property and link navigation can be handled in Button click event.
 
 In the following example, link is added in Button click event by using `window.open()` method.
 
@@ -20,9 +20,6 @@ In the following example, link is added in Button click event by using `window.o
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button/howto/link/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Link.cs" %}
-{% include code-snippet/button/howto/link/link.cs %}
 {% endhighlight %}
 {% endtabs %}
 
