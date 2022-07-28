@@ -645,7 +645,7 @@ You can close the editor window by using `closeEditor` method.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/editor-template/close/tagHelper %}
+{% include code-snippet/schedule/editor-template/close-editor/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/schedule/editor-template/close-editor/data.cs %}
