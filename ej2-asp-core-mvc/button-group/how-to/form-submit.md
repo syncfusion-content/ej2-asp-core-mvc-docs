@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Form Submit in ##Platform_Name## Button Group Component
-description: Learn here all about Form Submit in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
+title: Form Submit in ##Platform_Name## Button Group Control | Syncfusion
+description: Learn here all about Form Submit in Syncfusion ##Platform_Name## Button Group control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Form Submit
 publishingplatform: ##Platform_Name##
@@ -20,9 +20,6 @@ In the following code snippet, the radio type ButtonGroup is explained with male
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/form/demo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/form/demo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 

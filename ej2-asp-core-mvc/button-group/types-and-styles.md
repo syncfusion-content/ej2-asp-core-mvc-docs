@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Types And Styles in ##Platform_Name## Button Group Component
-description: Learn here all about Types and Styles in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
+title: Types And Styles in ##Platform_Name## Button Group Control | Syncfusion
+description: Learn here all about Types and Styles in Syncfusion ##Platform_Name## Button Group control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types And Styles
 publishingplatform: ##Platform_Name##
@@ -24,9 +24,6 @@ An Outline ButtonGroup has a border with transparent background. To create Outli
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/types/demo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/types/demo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,9 +61,6 @@ The Essential JS 2 ButtonGroup has the following predefined styles. This can be 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/styles/demo/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/styles/demo/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -85,7 +79,7 @@ The Essential JS 2 ButtonGroup has the following predefined styles. This can be 
 
 > Predefined ButtonGroup styles provide only the visual indication. So, ButtonGroup content should define the ButtonGroup style for the users of assistive technologies such as screen readers.
 
-## See Also
+## See also
 
 * [ButtonGroup with icons](./how-to/create-buttongroup-with-icons)
 * [Create ButtonGroup with rounded corner](./how-to/create-buttongroup-with-rounded-corner)
