@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Repeat Button in ##Platform_Name## Button Component
-description: Learn here all about Repeat Button in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
+title: Repeat Button in ##Platform_Name## Button Control | Syncfusion
+description: Learn here all about Repeat Button in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Repeat Button
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Repeat Button
+# Repeat Button in Button Control
 
 The Repeat button is a type of Button in which the click event is triggered at regular time interval from the pressed state till the released state.
 

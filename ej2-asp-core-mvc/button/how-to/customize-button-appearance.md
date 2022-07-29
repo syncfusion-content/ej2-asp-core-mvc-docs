@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize Button Appearance in ##Platform_Name## Button Component
-description: Learn here all about how to customize Button Appearance in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
+title: Customize Button Appearance in ##Platform_Name## Button Control | Syncfusion
+description: Learn here all about how to customize Button Appearance in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Button Appearance
 publishingplatform: ##Platform_Name##

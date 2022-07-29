@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set The Disabled State in ##Platform_Name## Button Component
+title: Set The Disabled State in ##Platform_Name## Button Control | Syncfusion
 description: Learn here all about how to set the Disabled State in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set The Disabled State
