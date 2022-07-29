@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Button Group Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Button Group Control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Button Group control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in Button Group Control
 
 The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. ButtonGroup provides built-in compliance with `WAI-ARIA` specifications. It helps the people with disabilities by providing information about the widget for assistive technology in the screen readers. ButtonGroup component contains the `group` role.
 
@@ -78,9 +78,6 @@ The web accessibility makes web content and web applications more accessible for
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/accessibility/demo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/accessibility/demo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
