@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Types and Styles
+# Types and Styles in Button Group Control
 
 This section explains about different types and styles of ButtonGroup.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Initialize Buttongroup Using Util Function in ##Platform_Name## Button Group Control | Syncfusion
+title: Buttongroup Using Util Function in ##Platform_Name## Button Group | Syncfusion
 description: Learn here all about how to initialize Buttongroup using Util function in Syncfusion ##Platform_Name## Button Group control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Initialize Buttongroup Using Util Function

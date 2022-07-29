@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create Buttongroup With Rounded Corner in ##Platform_Name## Button Group Control | Syncfusion
+title: Buttongroup With Rounded Corner in ##Platform_Name## Button Group | Syncfusion
 description: Learn here all about how to create Buttongroup with Rounded Corner in Syncfusion ##Platform_Name## Button Group control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Create Buttongroup With Rounded Corner

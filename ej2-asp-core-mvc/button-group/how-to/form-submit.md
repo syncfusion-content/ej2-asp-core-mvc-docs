@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Form submit
+# Form submit in Button Group Control
 
 The name attribute of the input element is used to group the radio or checkbox type ButtonGroup. When the radio or checkbox type are grouped in the form, the checked items value attribute will be posted to the server on form submit that can be retrieved through the name. The disabled radio or checkbox type value will not be sent to the server on form submit.
 

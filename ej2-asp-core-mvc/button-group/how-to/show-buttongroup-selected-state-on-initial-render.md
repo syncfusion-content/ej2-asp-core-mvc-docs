@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Show Buttongroup Selected State On Initial Render in ##Platform_Name## Button Group Control | Syncfusion
+title: Buttongroup Selection in ##Platform_Name## Button Group | Syncfusion
 description: Learn here all about Show Buttongroup selected state on Initial Render in Syncfusion ##Platform_Name## Button Group control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Show Buttongroup Selected State On Initial Render
