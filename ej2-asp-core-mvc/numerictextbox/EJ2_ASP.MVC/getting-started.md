@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC NumericTextBox Control
 
-This section briefly explains about how to include [ASP.NET MVC NumericTextBox](https://www.syncfusion.com/aspnet-mvc-ui-controls/numeric-textbox) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC NumericTextBox](https://www.syncfusion.com/aspnet-core-ui-controls/numeric-textbox) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -211,5 +211,3 @@ You can restrict the number of decimals to be entered in the NumericTextBox by u
 * [How to customize the step value and hide spin buttons](./how-to/customize-the-step-value-and-hide-spin-buttons/)
 * [How to prevent nullable input in NumericTextBox](./how-to/prevent-nullable-input-in-numerictextbox/)
 * [How to maintain trailing zeros in NumericTextBox](./how-to/maintain-trailing-zeros-in-numerictextbox/)
-
-N> You can also explore our [ASP.NET MVC Numeric TextBox Example](https://ej2.syncfusion.com/aspnetmvc/NumericTextBox/DefaultFunctionalities#/material) that shows you how to render and configure the Numeric TextBox.
