@@ -152,5 +152,3 @@ The following sample shows the inline type rendering of ColorPicker.
 
 * [Set color value](./mode-and-value#color-value)
 * [ColorPicker customization](./how-to/customize-colorpicker)
-
-N> You can also explore our [ASP.NET MVC Color Picker Example](https://ej2.syncfusion.com/aspnetmvc/RangeSlider/Default#/material) that shows you how to render and configure the Color Picker.
