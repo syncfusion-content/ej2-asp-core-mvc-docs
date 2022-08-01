@@ -31,7 +31,7 @@ It helps disabled persons by providing information about the widget for assistiv
 
 ## Keyboard interaction
 
-You can use the following keys to interact with the Calendar. This control implements keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+You can use the following keys to interact with the Calendar. This control implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
 
 It supports the following list of shortcut keys:
 
