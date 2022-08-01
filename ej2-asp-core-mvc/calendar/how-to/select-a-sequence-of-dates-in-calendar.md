@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Select A Sequence Of Dates In Calendar in ##Platform_Name## Calendar Component
-description: Learn here all about how to select a sequence of Dates In Calendar in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
+title: Select A Sequence Of Dates In Calendar in ##Platform_Name## Calendar Control | Syncfusion
+description: Learn here all about how to select a sequence of Dates In Calendar in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Select A Sequence Of Dates In Calendar
 publishingplatform: ##Platform_Name##
@@ -18,9 +18,6 @@ The following example demonstrates how to select the week dates of chosen date i
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/calendar/multi-select/multi-moment/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multi.cs" %}
-{% include code-snippet/calendar/multi-select/multi-moment/multi.cs %}
 {% endhighlight %}
 {% endtabs %}
 

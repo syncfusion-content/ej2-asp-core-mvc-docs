@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Calendar Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Calendar Control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in Calendar Control
 
 The web accessibility makes web content and web applications more accessible for disabled people. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies.
 
@@ -60,9 +60,6 @@ It supports the following list of shortcut keys:
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/calendar/accessibility/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/calendar/accessibility/accessibility.cs %}
 {% endhighlight %}
 {% endtabs %}
 
