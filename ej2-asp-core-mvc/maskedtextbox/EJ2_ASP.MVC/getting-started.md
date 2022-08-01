@@ -153,3 +153,5 @@ The following example demonstrates the usage of mask element `0` that allows any
 * [How to customize the UI appearance of the control](./how-to/customize-the-ui-appearance-of-the-control/)
 * [How to set cursor position while focus on the input textbox](./how-to/set-cursor-position-while-focus-on-the-input-textbox/)
 * [How to display numeric keypad when focus on mobile devices](./how-to/display-numeric-keypad-when-focus-on-mobile-devices/)
+
+N> You can also explore our [ASP.NET MVC Input Mask Example](https://ej2.syncfusion.com/aspnetmvc/MaskedTextBox/DefaultFunctionalities#/material) that shows you how to render and configure the Input Mask.
