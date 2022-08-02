@@ -1,17 +1,19 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Pdfviewer Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Pdfviewer control of Syncfusion Essential JS 2 and more details.
-platform: ej2-asp-core-mvc
-control: Getting Started
-publishingplatform: ##Platform_Name##
+title: Getting Started with ##ASP.NET MVC## Pdfviewer Control | Syncfusion
+description: Checkout and learn about how to include ASP.NET MVC control in ASP.NET MVC application. ## ASP.NET MVC ## Pdfviewer control of Syncfusion Essential JS 2 and more details.
+platform: ej2-asp.net-mvc
+control: PDF Viewer
+publishingplatform: ##ASP.NET MVC##
 documentation: ug
 ---
 
 
 # Getting Started with ASP.NET MVC PDFViewer Control
 
-This section briefly explains about how to include [ASP.NET MVC PDFViewer](https://www.syncfusion.com/aspnet-mvc-ui-controls/pdf-viewer) control in your ASP.NET MVC application using Visual Studio.
+The [ASP.NET MVC PDF Viewer](https://www.syncfusion.com/aspnet-mvc-ui-controls/pdf-viewer) control is used to viewing and printing PDF files in any web application. It provides the best viewing experience available with core interactions such as zooming, scrolling, text searching, text selection, and text copying. Thumbnail, bookmark, hyperlink and table of contents support provides easy navigation within and outside the PDF files. 
+
+This section briefly explains about how to include ASP.NET MVC PDFViewer control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -19,15 +21,24 @@ This section briefly explains about how to include [ASP.NET MVC PDFViewer](https
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
-
 * [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
-## Install ASP.NET MVC package in the application
+* **Steps to create a project using Microsoft template** 
 
-Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. To add ASP.NET MVC controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5), [Syncfusion.EJ2.PdfViewer.AspNet.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Mvc5/) and then install it.
+1. Create a new ASP.NET MVC Web Applicatoin project. 
+![Generate-ASP.NET-MVC-project-using-VS2022](images/Creation1.png)
 
-> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+      ![Add a project name](images/Creation2.png)
+
+2. Select Web Application pattern (MVC) for the project. 
+![Select-web-application-pattern](images/Creation3.png)
+
+## Install the NuGet packages
+
+To include the .NET Core PDF Viewer library into your ASP.NET MVC application, please install the below NuGet packages. 
+
+* [Syncfusion.EJ2.PdfViewer.AspNet.Mvc5](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Mvc5/)
+* [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5)
 
 > If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
 
@@ -43,7 +54,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add style sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+The theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -56,6 +67,8 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/a
 
 {% endhighlight %}
 {% endtabs %}
+
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls.
 
 ## Add script reference
 

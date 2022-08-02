@@ -1,17 +1,19 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Pdf viewer Control
-description: Checkout and learn about getting started with ##Platform_Name## Pdf viewer control of Syncfusion Essential JS 2 and more details.
-platform: ej2-asp-core-mvc
-control: Getting Started
-publishingplatform: ##Platform_Name##
+title: Getting Started with ASP.NET Core platform ## Pdf viewer Control
+description: Checkout and learn about how to include ASP.NET Core PDF Viewer control in ASP.NET Core application ## ASP.NET Core ## Pdf viewer control of Syncfusion Essential JS 2 and more details.
+platform: ej2-asp.net-core
+control: PDF Viewer
+publishingplatform: ##asp.net core##
 documentation: ug
 ---
 
 
 # Getting Started in ASP.NET Core PDF Viewer control
 
-This section briefly explains about how to include [ASP.NET Core PDF Viewer](https://www.syncfusion.com/aspnet-core-ui-controls/pdf-viewer) control in your ASP.NET Core application using Visual Studio.
+The [ASP.NET Core PDF Viewer](https://www.syncfusion.com/aspnet-core-ui-controls/pdf-viewer) control is used to viewing and printing PDF files in any web application. It provides the best viewing experience available with core interactions such as zooming, scrolling, text searching, text selection, and text copying. Thumbnail, bookmark, hyperlink and table of contents support provides easy navigation within and outside the PDF files. 
+
+This section briefly explains about how to include ASP.NET Core PDF Viewer control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -23,11 +25,9 @@ This section briefly explains about how to include [ASP.NET Core PDF Viewer](htt
 
 * [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
 
-## Install ASP.NET Core package in the application
+## Install NuGet package 
 
-Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
-
-> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+To include the .NET Core PDF Viewer library into your ASP.NET Core application, please refer to the [NuGet Package Required](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) documentation. 
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
@@ -43,7 +43,7 @@ Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add style sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+The theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -56,6 +56,8 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/
 
 {% endhighlight %}
 {% endtabs %}
+
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme/) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator/)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion ASP.NET Core controls. 
 
 ## Add script reference
 
@@ -98,8 +100,20 @@ Now, add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.csh
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pdfviewer/getting-start-core/tagHelper %}
+
+@page "{handler?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/Index" documentPath="Files/Essential_Pdf.pdf">
+    </ejs-pdfviewer>
+</div>
+
 {% endhighlight %}
+
 {% highlight c# tabtitle="CSHTML.cs" %}
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
@@ -352,11 +366,11 @@ namespace PDFViewerSample.Pages
 
 In this code,
 
-*ejs-pdfviewer* refers to the PDFViewer control among the EJ components with id as "pdfviewer".
+**ejs-pdfviewer** refers to the PDFViewer control among the EJ components with id as "pdfviewer".
 
-*serviceUrl* is necessary to communicate with the server which also specifies the path of the controller. Here, PdfViewer is the name of the controller.
+**serviceUrl** is necessary to communicate with the server which also specifies the path of the controller. Here, PdfViewer is the name of the controller.
 
-*documentPath* is the property needed to load a PDF file in the PDF Viewer. The specified document must be placed inside the folder structure that matches with the path in the GetDocumentPath(string document) method inside the PdfViewerController.
+**documentPath** is the property needed to load a PDF file in the PDF Viewer. The specified document must be placed inside the folder structure that matches with the path in the GetDocumentPath(string document) method inside the PdfViewerController.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core PDF Viewer control will be rendered in the default web browser.
 
