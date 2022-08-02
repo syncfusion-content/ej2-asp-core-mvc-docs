@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animations and Transitions in Syncfusion ##Platform_Name## Carousel Control | Syncfusion
+title: Animations in Syncfusion ##Platform_Name## Carousel | Syncfusion
 description: Checkout and learn about Animations and Transitions in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Animations and Transitions

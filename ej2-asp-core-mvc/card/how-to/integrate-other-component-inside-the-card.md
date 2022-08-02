@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integrate Other Component Inside The Card in ##Platform_Name## Card Control | Syncfusion
+title: Integrate Other Control in ##Platform_Name## Card Control | Syncfusion
 description: Learn here all about how to integrate other component inside the card in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integrate Other Component Inside The Card
