@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# TreeGrid Virtualization
+# Tree Grid Virtualization
 
 TreeGrid allows you to load large amount of data without performance degradation.
 
