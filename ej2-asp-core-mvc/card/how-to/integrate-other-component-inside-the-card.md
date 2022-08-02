@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Integrate Other Component Inside The Card in ##Platform_Name## Card Component
-description: Learn here all about how to integrate other component inside the card in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
+title: Integrate Other Component Inside The Card in ##Platform_Name## Card Control | Syncfusion
+description: Learn here all about how to integrate other component inside the card in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integrate Other Component Inside The Card
 publishingplatform: ##Platform_Name##
@@ -18,9 +18,6 @@ You can integrate any component inside the card element. Here, ListView componen
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/card/card-with-list/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card-with-list/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 

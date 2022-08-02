@@ -1,3 +1,14 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Lists;
+@{
+    List<object> listdata = new List<object>();
+    listdata.Add(new { todoList = "Pay Bills" });
+    listdata.Add(new { todoList = "Call Chris" });
+    listdata.Add(new { todoList = "Meet Andrew" });
+    listdata.Add(new { todoList = "Visit Manager" });
+    listdata.Add(new { todoList = "Customer Meeting" });
+}
+
 <div tabindex="0" class="e-card" id="basic">
     <div class="e-card-title">To-Do List</div>
     <div class="e-card-separator"></div>
