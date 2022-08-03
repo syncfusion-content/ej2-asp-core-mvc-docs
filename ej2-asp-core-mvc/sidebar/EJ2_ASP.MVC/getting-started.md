@@ -254,3 +254,5 @@ Expand or collapse the Sidebar while swiping in touch devices using [EnableGestu
 * [Sidebar with Menu Component](https://ej2.syncfusion.com/aspnetmvc/Sidebar/SidebarWithMenu#/material)
 * [Sidebar Responsive Panel](https://ej2.syncfusion.com/aspnetmvc/Sidebar/PanelWithResponsive#/material)
 * [Usecase Sample](https://ej2.syncfusion.com/showcase/aspnetmvc/webmail/ )
+
+N> You can also explore our [ASP.NET MVC Sidebar example](https://ej2.syncfusion.com/aspnetmvc/Sidebar/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Sidebar in ASP.NET MVC.
