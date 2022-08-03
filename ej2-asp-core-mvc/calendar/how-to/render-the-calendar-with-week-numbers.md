@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render The Calendar With Week Numbers in ##Platform_Name## Calendar Control | Syncfusion
+title: Calendar With Week Numbers in ##Platform_Name## Calendar | Syncfusion
 description: Learn here all about how to Render the Calendar with Week Numbers in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Render The Calendar With Week Numbers
