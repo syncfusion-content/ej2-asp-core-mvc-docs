@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot Chart in ##Platform_Name## Pivot Table Component
+title: Pivot Chart in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Pivot Chart in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pivot Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pivot Chart
+# Pivot Chart in ##Platform_Name## Pivot Table Component
 
 In pivot table component, pivot chart would act as an additional visualization component with its basic and important characteristic like drill down and drill up, 15+ chart types, series customization, axis customization, legend customization, export, print and tooltip. Its main purpose is to show the pivot data in graphical format.
 
@@ -52,13 +52,14 @@ For more information [`refer`](./data-binding) here.
 
 ## Chart Types
 
-Supports 19 different types of charts as follows,
+Supports 21 different types of charts as follows,
 
 * Line
 * Column
 * Area
 * Bar
 * StepArea
+* StackingLine
 * StackingColumn
 * StackingArea
 * StackingBar
@@ -68,6 +69,7 @@ Supports 19 different types of charts as follows,
 * Scatter
 * Spline
 * SplineArea
+* StackingLine100
 * StackingColumn100
 * StackingBar100
 * StackingArea100

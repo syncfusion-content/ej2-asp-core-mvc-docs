@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Calendar Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Calendar Control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in Calendar Control
 
 The web accessibility makes web content and web applications more accessible for disabled people. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies.
 
-Calendar provides built-in compliance with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA support is achieved through attributes like `aria-label`, `aria-selected`, `aria-disabled`, and `aria-activedescendant` applied for navigation buttons, and disable and active day cells.
+Calendar provides built-in compliance with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications. WAI-ARIA support is achieved through attributes like `aria-label`, `aria-selected`, `aria-disabled`, and `aria-activedescendant` applied for navigation buttons, and disable and active day cells.
 
 It helps disabled persons by providing information about the widget for assistive technology in the screen readers. Calendar control contains grid role and grid cell for each day cell.
 
@@ -31,7 +31,7 @@ It helps disabled persons by providing information about the widget for assistiv
 
 ## Keyboard interaction
 
-You can use the following keys to interact with the Calendar. This control implements keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+You can use the following keys to interact with the Calendar. This control implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/).
 
 It supports the following list of shortcut keys:
 
@@ -60,9 +60,6 @@ It supports the following list of shortcut keys:
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/calendar/accessibility/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/calendar/accessibility/accessibility.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -34,4 +34,3 @@ The practice of making information and activities usable for as many people as p
 | `aria-colcount` (attribute) | This attribute describes the total number of columns in the table. |
 | `aria-busy` (attribute) | This attribute describes a currently updated or modified element. |
 | `aria-label` (attribute) | This attribute describes the accessible name for the interactive elements. |
-

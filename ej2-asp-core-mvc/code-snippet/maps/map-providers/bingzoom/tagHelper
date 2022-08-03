@@ -1,7 +1,15 @@
   @using Syncfusion.EJ2;
-   <ejs-maps id="maps">
+   <ejs-maps id="maps" load="onMapLoad">
         <e-maps-zoomSettings Enable="true">
         <e-maps-layers>
-            <e-maps-layer layerType="Bing" key="// …bingMapKey"></e-maps-layer>
+            <e-maps-layer></e-maps-layer>
         </e-maps-layers>
     </ejs-maps>
+
+    <script>
+        function onMapLoad(args) {
+            args.maps.getBingUrlTemplate("https://dev.virtualearth.net/REST/V1/Imagery/Metadata/CanvasLight?output=json&uriScheme=https&key=?").then(function(url) {
+                  args.maps.layers[0].urlTemplate= url;
+            });
+        }
+    </script>

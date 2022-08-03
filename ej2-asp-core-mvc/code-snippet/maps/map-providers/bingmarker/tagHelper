@@ -17,13 +17,16 @@
 <div id="control-section">
     <ejs-maps id="maps" load="window.onMapLoad">
         <e-maps-layers>
-            <e-maps-layer LayerType="OSM" markerSettings="marker"></e-maps-layer>
+            <e-maps-layer markerSettings="marker"></e-maps-layer>
         </e-maps-layers>
     </ejs-maps>
 </div>
 
 <script>
     function onMapLoad(args) {
+        args.maps.getBingUrlTemplate("https://dev.virtualearth.net/REST/V1/Imagery/Metadata/CanvasLight?output=json&uriScheme=https&key=?").then(function(url) {
+              args.maps.layers[0].urlTemplate= url;
+        });
         args.maps.layers[0].navigationLineSettings = [
             {
                 visible: true,
