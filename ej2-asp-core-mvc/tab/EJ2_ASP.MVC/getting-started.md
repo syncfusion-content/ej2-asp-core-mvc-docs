@@ -204,3 +204,5 @@ You need to follow the below structure of HTML elements to render the Tab,
 ## See also
 
 * [How to load tab with DataSource](./how-to/load-tab-with-data-source/)
+
+N> You can also explore our [ASP.NET MVC Tabs example](https://ej2.syncfusion.com/aspnetmvc/Tab/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Tabs in ASP.NET MVC.
