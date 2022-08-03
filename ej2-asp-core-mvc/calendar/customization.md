@@ -115,7 +115,7 @@ You can highlight the weekends of every month in a Calendar by using the [render
 {% endtabs %}
 {% endif %}
 
-
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarUGSample).
 
 ## See also
 
