@@ -265,3 +265,6 @@ public ActionResult Index()
 * [Create menu using data source](./data-source-binding-and-custom-menu-items#data-binding)
 * [Customize menu items using template support](./data-source-binding-and-custom-menu-items#custom-menu-items)
 * [Integrating with Toolbar component](./use-case-scenarios#menu-in-toolbar)
+
+N> You can also explore our [ASP.NET MVC Menu Bar example](https://ej2.syncfusion.com/aspnetmvc/Menu/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Menu Bar in ASP.NET MVC.
+
