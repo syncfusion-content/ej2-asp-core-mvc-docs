@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##ASP.NET MVC## Pdfviewer Control | Syncfusion
-description: Checkout and learn about how to include ASP.NET MVC control in ASP.NET MVC application. ## ASP.NET MVC ## Pdfviewer control of Syncfusion Essential JS 2 and more details.
-platform: ej2-asp.net-mvc
+title: Getting Started with Pdfviewer Control in ASP.NET Core | Syncfusion
+description: Checkout and learn about how to include ASP.NET MVC control in ASP.NET MVC application.
+platform: ej2-aspnet-mvc
 control: PDF Viewer
-publishingplatform: ##ASP.NET MVC##
+publishingplatform: ej2-aspnet-mvc
 documentation: ug
 ---
 
