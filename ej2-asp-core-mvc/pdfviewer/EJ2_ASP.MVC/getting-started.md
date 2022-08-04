@@ -26,12 +26,10 @@ This section briefly explains about how to include ASP.NET MVC PDFViewer control
 * **Steps to create a project using Microsoft template** 
 
 1. Create a new ASP.NET MVC Web Applicatoin project. 
-![Generate-ASP.NET-MVC-project-using-VS2022](images/Creation1.png)
-
-      ![Add a project name](images/Creation2.png)
-
+![Generate-ASP.NET-MVC-project-using-VS2022](AspNetMVC_Images/create-aspnet-mvc-project.png)
+       ![Set-the-project-Name](AspNetMVC_Images/set-project-name.png)
 2. Select Web Application pattern (MVC) for the project. 
-![Select-web-application-pattern](images/Creation3.png)
+![Select-web-application-pattern](AspNetMVC_Images/select-web-application-project.png)
 
 ## Install the NuGet packages
 
@@ -137,7 +135,7 @@ In this code line,
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC PDFViewer control will be rendered in the default web browser.
 
-![ASP.NET MVC PDFViewer Control](images/pdfviewer-control.png)
+![ASP.NET MVC PDFViewer Control](AspNetMVC_Images/pdfviewer-control.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20MVC%20Razor%20Examples).
 

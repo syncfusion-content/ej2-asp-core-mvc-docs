@@ -374,7 +374,7 @@ In this code,
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core PDF Viewer control will be rendered in the default web browser.
 
-![ASP.NET Core PDF Viewer Control](images/pdfviewer-control.png)
+![ASP.NET Core PDF Viewer Control](Core_Images/pdfviewer-control.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/PDFViewer/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
