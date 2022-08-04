@@ -2,9 +2,9 @@
 layout: post
 title: Getting Started with PDF Viewer control in ASP.NET Core | Syncfusion
 description: Checkout and learn about how to include ASP.NET Core PDF Viewer control in ASP.NET Core application.
-platform: ej2-aspnet-core
+platform: aspnet-core
 control: PDF Viewer
-publishingplatform: ej2-aspnet-core
+publishingplatform: aspnet-core
 documentation: ug
 ---
 
