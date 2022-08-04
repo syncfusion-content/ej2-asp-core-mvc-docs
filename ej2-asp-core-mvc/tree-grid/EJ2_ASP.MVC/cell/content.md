@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Content in ##Platform_Name## Tree Grid Component
+title: Content in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Content in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Content

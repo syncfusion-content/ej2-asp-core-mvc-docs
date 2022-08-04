@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Detail Template in ##Platform_Name## Tree Grid Component
+title: Detail Template in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Detail Template in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Detail Template
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Detail Template
+# Detail Template in ##Platform_Name## Tree Grid Component
 
 The detail template provides additional information about a particular row. By expanding the parent row the child rows are expanded along with their detail template. The [`detailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DetailTemplate) property accepts either the template string or HTML element ID.
 

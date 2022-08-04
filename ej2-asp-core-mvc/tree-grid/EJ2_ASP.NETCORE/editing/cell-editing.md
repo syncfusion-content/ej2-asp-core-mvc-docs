@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Editing in ##Platform_Name## Tree Grid Component
+title: Cell Editing in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Cell Editing in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cell Editing
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cell Editing
+# Cell Editing in ##Platform_Name## Tree Grid Component
 
 In Cell edit mode, when you double click on a cell, it is changed to edit state.
 You can change the cell value and save to the data source.

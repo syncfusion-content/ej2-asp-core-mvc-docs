@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter Menu in ##Platform_Name## Tree Grid Component
+title: Filter Menu in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Filter Menu in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filter Menu
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filter Menu
+# Filter Menu in ##Platform_Name## Tree Grid Component
 
 You can enable filter menu by setting the [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings~Type.html) as **menu**. The filter menu UI will be rendered based on its column type, which allows you to filter data.
 You can filter the records with different operators.

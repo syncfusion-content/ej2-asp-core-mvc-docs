@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row Editing in ##Platform_Name## Tree Grid Component
+title: Row Editing in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Row Editing in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row Editing
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row Editing
+# Row Editing in ##Platform_Name## Tree Grid Component
 
 In Row edit mode, when you start editing the currently selected record, the entire row is changed to edit state.
 You can change the cell values of the row and save edited data to the data source.

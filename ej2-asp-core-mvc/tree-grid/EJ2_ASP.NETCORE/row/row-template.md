@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row Template in ##Platform_Name## Tree Grid Component
+title: Row Template in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Row Template in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row Template
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row Template
+# Row Template in ##Platform_Name## Tree Grid Component
 
 The **rowTemplate** has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowTemplate) property accepts either the **template** string or HTML element ID.
 

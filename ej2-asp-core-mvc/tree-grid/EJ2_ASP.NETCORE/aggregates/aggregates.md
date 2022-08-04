@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Aggregates in ##Platform_Name## Tree Grid Component
+title: Aggregates in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Aggregates in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Aggregates
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Aggregates
+# Aggregates in ##Platform_Name## Tree Grid Component
 
 Aggregate values are displayed in the TreeGrid footer and in parent row footer for child row aggregate values. It can be configured through [`e-treegrid-aggregates`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregates.html) property.
  The [`field`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~Field.html) and [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~Type.html)

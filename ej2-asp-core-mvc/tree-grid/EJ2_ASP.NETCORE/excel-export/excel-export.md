@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Export in ##Platform_Name## Tree Grid Component
+title: Excel Export in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Excel Export in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Export
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Excel Export
+# Excel Export in ##Platform_Name## Tree Grid Component
 
 The excel export allows exporting TreeGrid data to Excel document. You need to use the **excelExport** method for exporting. To enable Excel export in the treegrid, set the [`allowExcelExport`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowExcelExport.html) as true.
 

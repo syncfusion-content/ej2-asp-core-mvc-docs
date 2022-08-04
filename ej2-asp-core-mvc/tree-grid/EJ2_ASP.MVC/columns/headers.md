@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Headers in ##Platform_Name## Tree Grid Component
+title: Headers in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Headers in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Headers
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Headers
+# Headers in ##Platform_Name## Tree Grid Component
 
 ## Header Template
 

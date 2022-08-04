@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Menu in ##Platform_Name## Tree Grid Component
+title: Column Menu in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Column Menu in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Menu
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column Menu
+# Column Menu in ##Platform_Name## Tree Grid Component
 
 The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`showColumnMenu`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ShowColumnMenu.html) property as true.
 

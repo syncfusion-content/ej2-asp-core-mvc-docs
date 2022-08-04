@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Tree Grid Component
+title: Selection in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Selection in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Selection
+# Selection in ##Platform_Name## Tree Grid Component
 
 Selection provides an option to highlight a row or a cell. It can be done through simple mouse down or arrow keys. To disable selection in the TreeGrid, set the [`allowSelection`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowSelection.html) to false.
 

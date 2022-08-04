@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Complex Data Binding in ##Platform_Name## Tree Grid Component
+title: Complex Data Binding in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Complex Data Binding in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Complex Data Binding
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Complex Data Binding
+# Complex Data Binding in ##Platform_Name## Tree Grid Component
 
 You can achieve complex data binding in the treegrid by using the dot(.) operator in the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Field.html) in [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html).
 

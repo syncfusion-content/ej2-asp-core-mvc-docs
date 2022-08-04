@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Template in ##Platform_Name## Tree Grid Component
+title: Column Template in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Column Template in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Template

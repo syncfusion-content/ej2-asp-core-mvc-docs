@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive Columns in ##Platform_Name## Tree Grid Component
+title: Responsive Columns in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Responsive Columns in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Responsive Columns
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Responsive Columns
+# Responsive Columns in ##Platform_Name## Tree Grid Component
 
 You can toggle column visibility based on media queries which are defined at the [`HideAtMedia`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~HideAtMedia.html).
 The [`HideAtMedia`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~HideAtMedia.html) accepts valid

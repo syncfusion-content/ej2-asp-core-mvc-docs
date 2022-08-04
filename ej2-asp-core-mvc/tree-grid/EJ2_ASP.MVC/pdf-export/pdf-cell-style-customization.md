@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PDF Cell Style Customization in ##Platform_Name## Tree Grid Component
+title: PDF Cell Style Customization in Syncfusion ##Platform_Name## Tree Grid Component
 description: Learn here all about PDF Cell Style Customization in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Cell Style Customization

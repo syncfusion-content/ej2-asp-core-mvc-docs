@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edit Types in ##Platform_Name## Tree Grid Component
+title: Edit Types in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Edit Types in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Edit Types
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Edit Types
+# Edit Types in ##Platform_Name## Tree Grid Component
 
 ## Cell edit type and its params
 

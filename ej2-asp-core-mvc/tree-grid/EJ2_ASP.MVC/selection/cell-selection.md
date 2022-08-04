@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Selection in ##Platform_Name## Tree Grid Component
+title: Cell Selection in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Cell Selection in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cell Selection
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Cell Selection
+# Cell Selection in ##Platform_Name## Tree Grid Component
 
 Cell selection can be done through simple mouse down or arrow keys (up, down, left, and right).
 

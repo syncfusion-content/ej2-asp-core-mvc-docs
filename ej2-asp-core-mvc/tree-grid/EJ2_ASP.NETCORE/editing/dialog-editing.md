@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dialog Editing in ##Platform_Name## Tree Grid Component
+title: Dialog Editing in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Dialog Editing in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dialog Editing
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dialog Editing
+# Dialog Editing in ##Platform_Name## Tree Grid Component
 
 In Dialog edit mode, when you start editing the currently selected row, data will be shown on a dialog.
 You can change the cell values and save edited data to the data source.

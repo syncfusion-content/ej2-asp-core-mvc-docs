@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Command Column Editing in ##Platform_Name## Tree Grid Component
+title: Command Column Editing in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Command Column Editing in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Command Column Editing
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Command Column Editing
+# Command Column Editing in ##Platform_Name## Tree Grid Component
 
 The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`commands`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Commands.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter Bar in ##Platform_Name## Tree Grid Component
+title: Filter Bar in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Filter Bar in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filter Bar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filter Bar
+# Filter Bar in ##Platform_Name## Tree Grid Component
 
 By setting the [`allowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowFiltering.html) to true, the filter bar row will render next to the header, which allows you to filter data. You can filter the records with different expressions depending upon the column type.
 

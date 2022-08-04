@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row Drag And Drop in ##Platform_Name## Tree Grid Component
+title: Row Drag And Drop in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Row Drag And Drop in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row Drag And Drop
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drag and Drop
+# Drag and Drop in ##Platform_Name## Tree Grid Component
 
 The TreeGrid rows can be reordered, dropped to another TreeGrid or custom control by enabling the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowRowDragAndDrop.html) to true.
 

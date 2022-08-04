@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Like Filter in ##Platform_Name## Tree Grid Component
+title: Excel Like Filter in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Excel Like Filter in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Like Filter
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Excel Like Filter
+# Excel Like Filter in ##Platform_Name## Tree Grid Component
 
 You can enable Excel like filter by defining.
 [`Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings~Type.html) of [`FilterSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html) as **Excel**.The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row Selection in ##Platform_Name## Tree Grid Component
+title: Row Selection in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Row Selection in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row Selection
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Row Selection
+# Row Selection in ##Platform_Name## Tree Grid Component
 
 ## Toggle selection
 

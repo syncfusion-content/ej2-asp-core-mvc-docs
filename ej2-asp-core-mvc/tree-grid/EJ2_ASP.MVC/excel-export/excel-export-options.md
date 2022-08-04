@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Export Options in ##Platform_Name## Tree Grid Component
+title: Excel Export Options in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Excel Export Options in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Export Options

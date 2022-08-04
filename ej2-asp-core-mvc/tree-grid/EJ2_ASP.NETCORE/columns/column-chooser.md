@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Chooser in ##Platform_Name## Tree Grid Component
+title: Column Chooser in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Column Chooser in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Chooser
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column Chooser
+# Column Chooser in ##Platform_Name## Tree Grid Component
 
 The column chooser has options to show or hide columns dynamically. It can be enabled by defining the [`showColumnChooser`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ShowColumnChooser.html) as true.
 

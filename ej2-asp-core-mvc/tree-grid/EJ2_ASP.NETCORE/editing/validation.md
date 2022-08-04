@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Tree Grid Component
+title: Validation in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Validation in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Validation
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Validation
+# Validation in ##Platform_Name## Tree Grid Component
 
 ## Column validation
 

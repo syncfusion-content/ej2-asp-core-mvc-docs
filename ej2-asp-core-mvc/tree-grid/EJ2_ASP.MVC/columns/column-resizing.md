@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Resizing in ##Platform_Name## Tree Grid Component
+title: Column Resizing in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Column Resizing in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Resizing
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column Resizing
+# Column Resizing in ##Platform_Name## Tree Grid Component
 
 Column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To enable column resize, set the [`AllowResizing`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowResizing.html) property to true.
 

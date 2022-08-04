@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Batch Editing in ##Platform_Name## Tree Grid Component
+title: Batch Editing in ##Platform_Name## Tree Grid Component | Syncfusion
 description: Learn here all about Batch Editing in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Batch Editing
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Batch Editing
+# Batch Editing in ##Platform_Name## Tree Grid Component
 
 In Batch edit mode, when you double-click on the treegrid cell, the target cell goes into edit state.
 You can bulk save (added, changed and deleted data in the single request) to data source by clicking on the toolbar's **Update** button or by externally invoking the [`batchSave`](https://ej2.syncfusion.com/documentation/api/treegrid/#batchsave) method.
