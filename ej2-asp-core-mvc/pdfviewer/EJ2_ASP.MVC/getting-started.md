@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Getting Started with EJ2 ASP.NET Core PdfViewer control | Syncfusion
-description: Learn about how to include PdfViewer control in EJ2 ASP.NET MVC application.
-platform: ej2mvc
+description: Learn hot to getting started with PDF Viewer control in ASP.NET MVC application. You can view and comment on PDFs in ease and also can fill form fields. 
+platform: ej2-asp-core-mvc
 control: PDF Viewer
-publishingplatform: ej2mvc
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
