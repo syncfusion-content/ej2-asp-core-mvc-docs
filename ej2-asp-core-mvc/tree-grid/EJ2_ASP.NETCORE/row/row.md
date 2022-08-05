@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows Customization in ##Platform_Name## Tree Grid Component | Syncfusion
+title: Rows Customization in Syncfusion ##Platform_Name## Tree Grid Component
 description: Learn here all about rows customization in Syncfusion ##Platform_Name## Tree Grid component and much more.
 platform: ej2-asp-core-mvc
 control: Row
