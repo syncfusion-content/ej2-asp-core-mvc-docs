@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Critical Path in ##Platform_Name## Gantt Component
+title: Critical Path in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Critical Path in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -11,7 +11,7 @@ documentation: ug
 
 # Critical Path feature
 
-The critical path in a project is indicated by a single task or a series of tasks. The critical path describes the project's calculated start date or end date. If a critical path task is delayed, the entire project will be delayed.
+The critical path in a project is indicated by a single task or a series of tasks. If a task in critical path is delayed, the entire project will be delayed. A task is considered to be critical if any delay to this task would affect the project end date.
 
 The critical path can be enabled in Gantt by using the built-in toolbar button or `enableCriticalPath` to true.
 
@@ -44,7 +44,7 @@ The critical path can be enabled in Gantt by using the built-in toolbar button o
 
 ## Customize taskbar in critical path
 
-The critical path taskbar  can be customized by using [`queryTaskbarInfo`] event.
+The taskbar in critical path can be customized by using `queryTaskbarInfo` event and `isCritical` property of row `data` in the event arugment.
 
 The following code example shows how to customize the critical path taskbar in the Gantt control:
 
