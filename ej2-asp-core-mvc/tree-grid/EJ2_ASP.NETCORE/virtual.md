@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual in ##Platform_Name## Tree Grid Component
+title: Virtual in Syncfusion ##Platform_Name## Tree Grid Component
 description: Learn here all about Virtual in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtual
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Virtualization
+# Tree Grid Virtualization
 
 TreeGrid allows you to load large amount of data without performance degradation.
 
 ## Row Virtualization
 
-Row virtualization allows you to load and render rows only in the content viewport. It is an alternative way of paging in which the rows will be appended while scrolling vertically. To setup the row virtualization, you need to define [`enableVirtualization`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~EnableVirtualization.html) as true and content height by [`height`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~height.html) property.
+Row virtualization allows you to load and render rows only in the content viewport. It is an alternative way of paging in which the rows will be appended while scrolling vertically. To setup the row virtualization, you need to define [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) as true and content height by [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Height) property.
 
 The number of records displayed in the TreeGrid is determined implicitly by height of the content area and a buffer records will be maintained in the TreeGrid content in addition to the original set of rows.
 
@@ -50,7 +50,7 @@ Expand and Collapse state of any child record will be persisted.
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the treegrid is limited by the browser capability.
 * Cell selection will not be persisted in row.
-* Virtual scrolling is not compatible with detail template, Batch editing and row drag and drop features.
+* Virtual scrolling is not compatible with detail template, clipboard functionality, Batch editing and row drag and drop features.
 * The page size provided must be two times larger than the number of visible rows in the TreeGrid. If the page size is failed to meet this condition then the size will be determined by TreeGrid.
 * The virtual height of the treegrid content is calculated using the row height and total number of records in the data source and hence features which changes row height such as text wrapping are not supported. If you want to increase the row height to accommodate the content then you can specify the row height as below to ensure all the table rows are in same height.
 
