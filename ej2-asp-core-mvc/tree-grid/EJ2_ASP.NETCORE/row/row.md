@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows Customization in ##Platform_Name## Tree Grid Component
+title: Rows Customization in Syncfusion ##Platform_Name## Tree Grid Component
 description: Learn here all about rows customization in Syncfusion ##Platform_Name## Tree Grid component and much more.
 platform: ej2-asp-core-mvc
 control: Row
@@ -204,7 +204,7 @@ If the [`rowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ### Limitations
 
-Row template feature is not compatible with all the features which are available in treegrid and it has limited features support. Here we have listed out the features which are compatible with row template feature.
+Row template feature is not compatible with all the features which are available in treegrid and it has limited features support. Here we have listed out the features which are not compatible with row template feature.
 
 * Filtering
 * Paging
