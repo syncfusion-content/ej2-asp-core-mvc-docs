@@ -37,5 +37,33 @@ To use the indent and outdent feature, inject the `RowDD` module in the Tree Gri
 {% endtabs %}
 {% endif %}
 
-> To change hierarchy level of the record programmatically, `indent` and `outdent` methods can be used by passing the record as a parameter.
+## Programmatic Indent and Outdent
+
+You can change the hierarchy level of record programmatically using `indent` and `outdent` methods.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/programmatic-indent/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Indent.cs" %}
+{% include code-snippet/tree-grid/programmatic-indent/indent.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/programmatic-indent/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Indent.cs" %}
+{% include code-snippet/tree-grid/programmatic-indent/indent.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 >Refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to learn how to present and manipulate data.
