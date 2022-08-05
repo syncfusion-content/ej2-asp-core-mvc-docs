@@ -37,7 +37,7 @@ To use the indent and outdent feature, inject the `RowDD` module in the Tree Gri
 {% endtabs %}
 {% endif %}
 
-## Programmatic Indent and Outdent
+## How-to-do-programmatically Indent/Outdent a row
 
 You can change the hierarchy level of record programmatically using `indent` and `outdent` methods.
 
