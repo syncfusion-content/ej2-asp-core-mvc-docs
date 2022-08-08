@@ -195,3 +195,5 @@ You can customize the legend text using `legendText` property in `ranges`.
 |shape| Customize the shape of the legends |
 |name| Specifies the name of the event |
 |cancel| Set to true, to cancel the event status |
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CircularGauge/AnnotationandLegendSample).

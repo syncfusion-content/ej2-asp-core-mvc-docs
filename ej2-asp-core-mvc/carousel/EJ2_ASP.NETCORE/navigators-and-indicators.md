@@ -119,3 +119,5 @@ Template option is provided to customize the play button by using the [playButto
 {% endtabs %}
 
 ![Carousel play button template](images/play_button_template.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/NavigatorandIndicatorSample).

@@ -147,3 +147,4 @@ Pointers can be dragged over the axis value. This can be achieved by clicking an
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CircularGauge/AnnotationandLegendSample).

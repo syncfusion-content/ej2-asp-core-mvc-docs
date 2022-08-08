@@ -69,3 +69,5 @@ By setting value in percentage, gauge gets its dimension with respect to its con
 
 
 > When you do not specify the size, it takes `450px` as the height and window size as its width.
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CircularGauge/CircularGaugeUGSample).

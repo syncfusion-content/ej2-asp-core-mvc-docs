@@ -119,3 +119,5 @@ To use the PDF export functionality, the [allowPdfExport](https://ej2.syncfusion
 
 
 > The exporting of the circular gauge as base64 string is not supported in the PDF export.
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CircularGauge/PrintandExportSample).

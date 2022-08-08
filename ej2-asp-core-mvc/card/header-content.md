@@ -93,3 +93,4 @@ Content in Card holds texts, images, links and all possible HTML elements. It's 
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).

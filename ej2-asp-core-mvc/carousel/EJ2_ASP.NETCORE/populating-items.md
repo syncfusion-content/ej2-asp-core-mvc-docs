@@ -70,3 +70,5 @@ Using the `prev` or `next` public method of the Carousel component, you can swit
 {% include code-snippet/carousel/populating-items/select-item-method/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselUGSample).

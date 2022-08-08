@@ -63,7 +63,7 @@ The different CheckBox sizes available are default and small. To reduce the size
 {% endtabs %}
 {% endif %}
 
-
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CheckBox/CheckBoxUGSample).
 
 ## See also
 

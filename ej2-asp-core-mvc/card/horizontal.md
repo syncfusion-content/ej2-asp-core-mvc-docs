@@ -53,3 +53,5 @@ Class   | Description
 
 
 ![CSS Card Control with horizontal structure](./images/card-horizontal.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).
