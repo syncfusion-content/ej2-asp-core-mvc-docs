@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Name And Value In Form Submit in ##Platform_Name## Check Box Component
-description: Learn here all about Name and Value in Form Submit in Syncfusion ##Platform_Name## Check Box component of Syncfusion Essential JS 2 and more.
+title: Name And Value In Form Submit in ##Platform_Name## Check Box Control | Syncfusion
+description: Learn here all about Name and Value in Form Submit in Syncfusion ##Platform_Name## Check Box control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Name And Value In Form Submit
 publishingplatform: ##Platform_Name##
@@ -20,9 +20,6 @@ In the following code snippet, Cricket and Hockey are in the checked state, Tenn
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/check-box/howto/form/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Form.cs" %}
-{% include code-snippet/check-box/howto/form/form.cs %}
 {% endhighlight %}
 {% endtabs %}
 

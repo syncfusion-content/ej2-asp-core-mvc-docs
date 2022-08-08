@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Horizontal in ##Platform_Name## Card Component
-description: Learn here all about Horizontal in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
+title: Horizontal in ##Platform_Name## Card Control | Syncfusion
+description: Learn here all about Horizontal in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Horizontal
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Horizontal Card
+# Horizontal Card in Card Control
 
 By default, all the card elements are aligned vertically one after the other as in the DOM. You can achieve the element to align horizontally as well as by adding the class `e-card-horizontal` in the root card element.
 
@@ -36,9 +36,6 @@ Class   | Description
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/card/card-horizontal/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/card/card-horizontal/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 

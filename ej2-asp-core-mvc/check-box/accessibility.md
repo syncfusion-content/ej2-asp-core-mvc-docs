@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Check Box Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Check Box component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Check Box Control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Check Box control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in CheckBox Control
 
 The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. CheckBox provides built-in compliance with `WAI-ARIA` specifications. `WAI-ARIA` support is achieved through the attributes like `aria-checked` and `aria-disabled`. It helps the people with disabilities by providing information about the widget for assistive technology in the screen readers. CheckBox component contains the `checkbox` role.
 
@@ -38,9 +38,6 @@ When the checkbox has focus, pressing the Space key changes the state of the che
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/check-box/interaction/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Interaction.cs" %}
-{% include code-snippet/check-box/interaction/interaction.cs %}
 {% endhighlight %}
 {% endtabs %}
 
