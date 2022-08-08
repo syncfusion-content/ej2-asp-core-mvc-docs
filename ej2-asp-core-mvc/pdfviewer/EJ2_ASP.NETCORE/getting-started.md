@@ -19,7 +19,7 @@ This section briefly explains about how to integrate ASP.NET Core PDF Viewer con
 
 [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-## Interate PDF Viewer into an ASP.NET Core application
+## Integrate PDF Viewer into an ASP.NET Core application
 
 1. Start Visual Studio and select **Create a new project**. 
 2. In the **Create a new project** dialog, select **ASP.NET Core Web App**.
