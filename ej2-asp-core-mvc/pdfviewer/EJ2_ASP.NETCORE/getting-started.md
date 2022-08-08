@@ -13,21 +13,29 @@ documentation: ug
 
 The [ASP.NET Core PDF Viewer](https://www.syncfusion.com/aspnet-core-ui-controls/pdf-viewer) control is used to viewing and printing PDF files in any web application. It provides the best viewing experience available with core interactions such as zooming, scrolling, text searching, text selection, and text copying. Thumbnail, bookmark, hyperlink and table of contents support provides easy navigation within and outside the PDF files. 
 
-This section briefly explains about how to include ASP.NET Core PDF Viewer control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to integrate ASP.NET Core PDF Viewer control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
 [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
 
-## Create ASP.NET Core web application with Razor pages
+## Interate PDF Viewer into an ASP.NET Core application
 
-* [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
+1. Start Visual Studio and select **Create a new project**. 
+2. In the **Create a new project** dialog, select **ASP.NET Core Web App**.
+![select-aspnet-core-web-app](Core_Images/Select-aspnet-core-project.png)
+3. In the **Configure your new project** dialog, enter *Project Name* and select Next.
+![Set-project-name](Core_Images/Set-project-name.png)
+4. In the **Additional information** dialog, select **.NET 6.0 (Long-term Support) and then select **Create**. 
+![Set-framework](Core_Images/additional-info.png) 
 
-* [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
+## ASP.NET Core PDF Viewer NuGet package installation
 
-## Install NuGet package 
+To add ASP.NET Core PDF Viewer control, the following NuGet package need to be installed in your ASP.NET Core application based on the operating system of the server you intend to host.
 
-To include the .NET Core PDF Viewer library into your ASP.NET Core application, please refer to the [NuGet Package Required](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) documentation. 
+* For **Windows**, use [Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows/)
+* For **Linux**, use [Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux/)
+* For **macOS**, use [Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX/)
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
