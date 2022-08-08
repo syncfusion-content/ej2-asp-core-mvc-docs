@@ -108,7 +108,18 @@ Now, add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.csh
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pdfviewer/getting-start-core/tagHelper %}
+
+@page "{handler?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/Index" documentPath="Files/Essential_Pdf.pdf">
+    </ejs-pdfviewer>
+</div>
+
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
 using Microsoft.AspNetCore.Mvc;
