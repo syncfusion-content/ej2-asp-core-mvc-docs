@@ -31,7 +31,7 @@ This section briefly explains about how to integrate ASP.NET MVC PDF Viewer cont
 
 ## ASP.NET MVC PDF Viewer NuGet packages installation
 
-To add ASP.NET MVC PDF Viewer control, the following NuGet packages need to be installed in your ASP.NET MVC application.
+To add .NET PDF Viewer control, the following NuGet packages need to be installed in your ASP.NET MVC application.
 
 * [Syncfusion.EJ2.PdfViewer.AspNet.Mvc5](https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Mvc5/)
 * [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5)

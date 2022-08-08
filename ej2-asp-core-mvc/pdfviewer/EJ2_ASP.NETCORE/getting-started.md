@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started in ASP.NET Core PDF Viewer control
+# Getting Started with ASP.NET Core PDF Viewer control
 
 The [ASP.NET Core PDF Viewer](https://www.syncfusion.com/aspnet-core-ui-controls/pdf-viewer) control is used to viewing and printing PDF files in any web application. It provides the best viewing experience available with core interactions such as zooming, scrolling, text searching, text selection, and text copying. Thumbnail, bookmark, hyperlink and table of contents support provides easy navigation within and outside the PDF files. 
 
