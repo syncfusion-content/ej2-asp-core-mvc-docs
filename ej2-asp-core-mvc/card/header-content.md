@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Header and Content
+# Header and Content in Card Control
 
 ## Header
 
