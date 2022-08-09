@@ -161,7 +161,7 @@ The deleted record primary key value is bound to the **key** parameter. Please r
 
 While delete parent record, the parent and child records is bound to the **deleted** parameter. Please refer to the following screenshot.
 
-## Remote Save Adaptor
+## Remote save adaptor
 
 You may need to perform all Tree Grid Actions in client-side except the CRUD operations, that should be interacted with server-side to persist data. It can be achieved in TreeGrid by using **RemoteSaveAdaptor**.
 

@@ -41,7 +41,7 @@ Filtering allows you to view specific or related records based on filter criteri
 > You can apply and clear filtering by using **filterByColumn** and **clearFiltering** methods.
 > To disable filtering for a particular column, set [`allowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowFiltering.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **false**.
 
-## Filter Hierarchy Modes
+## Filter hierarchy modes
 
 TreeGrid provides support for a set of filtering modes with [`hierarchyMode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings~HierarchyMode.html) property of [`e-treegrid-filterSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~FilterSettings.html) tag helper.
 The below are the type of filter mode available in TreeGrid.

@@ -11,7 +11,7 @@ documentation: ug
 
 # Command Column Editing in ##Platform_Name## Tree Grid Component
 
-The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`Commands`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Commands) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html).
+The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`Commands`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Commands.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) API.
 
 The available built-in command buttons are:
 
@@ -26,10 +26,10 @@ The available built-in command buttons are:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/commandcolumn/tagHelper %}
+{% include code-snippet/tree-grid/editing/command-columns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Commandcolumn.cs" %}
-{% include code-snippet/grid/edit/commandcolumn/commandcolumn.cs %}
+{% include code-snippet/tree-grid/editing/command-columns/commandcolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -37,28 +37,28 @@ The available built-in command buttons are:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/commandcolumn/razor %}
+{% include code-snippet/tree-grid/editing/command-columns/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Commandcolumn.cs" %}
-{% include code-snippet/grid/edit/commandcolumn/commandcolumn.cs %}
+{% include code-snippet/tree-grid/editing/command-columns/commandcolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 
 
-## Custom command column
+## Custom command
 
-The custom command buttons can be added in a column by using the [`Commands`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Commands) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) and the action for the custom buttons can be defined using **commandClick** event.
+ The custom command buttons can be added in a column by using the [`Commands`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Commands.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) API and the action for the custom buttons can be defined in the **ButtonOption.Click** event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/customcommand/tagHelper %}
+{% include code-snippet/tree-grid/editing/custom-command/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customcommand.cs" %}
-{% include code-snippet/grid/edit/customcommand/customcommand.cs %}
+{% include code-snippet/tree-grid/editing/custom-command/customcommand.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,10 +66,10 @@ The custom command buttons can be added in a column by using the [`Commands`](ht
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/customcommand/razor %}
+{% include code-snippet/tree-grid/editing/custom-command/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customcommand.cs" %}
-{% include code-snippet/grid/edit/customcommand/customcommand.cs %}
+{% include code-snippet/tree-grid/editing/custom-command/customcommand.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

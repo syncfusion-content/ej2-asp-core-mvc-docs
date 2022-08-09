@@ -39,7 +39,7 @@ You can enable Excel like filter by defining.
 
 
 
-## Change default Excel filter Operator
+## Change default excel filter operator
 
 You can change the default excel-filter operator by changing the column operator as `contains` from `startsWith` in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionBegin) event.
 

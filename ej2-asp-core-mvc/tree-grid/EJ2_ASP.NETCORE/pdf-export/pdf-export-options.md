@@ -15,7 +15,7 @@ documentation: ug
 
 PDF export provides an option to customize mapping of treegrid to exported PDF document.
 
-### File Name for Exported document
+### File name for exported document
 
 You can assign the file name for the exported document by defining **fileName** property in **PdfExportProperties**.
 
@@ -44,7 +44,7 @@ You can assign the file name for the exported document by defining **fileName** 
 
 
 
-### Default Fonts for PDF exporting
+### Default fonts for PDF exporting
 
 By default, treegrid uses **Helvetica** font in the exported document. You can change the default font by using **theme** property of pdfExportProperties property. The available default fonts are,
 
@@ -68,7 +68,7 @@ The code example for changing default font,
 
 ```
 
-### Add Custom Font for PDF exporting
+### Add custom font for PDF exporting
 
 You can change the default font of TreeGrid header, content and caption cells in the exported document by using **theme** property of pdfExportProperties.
 
@@ -219,7 +219,7 @@ PDF export provides an option to export hidden columns of TreeGrid by defining t
 
 
 
-### Show or Hide columns on Exported PDF
+### Show or hide columns on exported PDF
 
 You can show a hidden column or hide a visible column while exporting the treegrid using [`toolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) and [`pdfExportComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PdfExportComplete.html) events.
 

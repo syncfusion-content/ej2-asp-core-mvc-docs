@@ -11,7 +11,7 @@ documentation: ug
 
 # PDF Cell Style Customization
 
-## Conditional Cell Formatting
+## Conditional cell formatting
 
 TreeGrid cells in the exported PDF can be customized or formatted using [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PdfQueryCellInfo.html) event. In this event, we can format the treegrid cells of exported PDF document based on the column cell value.
 

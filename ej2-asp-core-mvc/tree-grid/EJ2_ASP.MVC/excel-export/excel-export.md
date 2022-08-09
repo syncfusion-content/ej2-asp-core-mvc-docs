@@ -38,7 +38,7 @@ The excel export allows exporting TreeGrid data to Excel document. You need to u
 
 
 
-## To persist collapsed state
+## Persist collapsed state
 
 You can persist the collapsed state in the exported document by defining `isCollapsedStatePersist` property as true in `TreeGridExcelExportProperties` parameter of [`excelExport`](https://ej2.syncfusion.com/documentation/api/grid/#excelexport) method.
 

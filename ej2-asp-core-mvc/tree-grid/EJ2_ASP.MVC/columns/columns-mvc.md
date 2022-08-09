@@ -99,7 +99,7 @@ Format | Formatted value
 
 
 
-## Lock Columns
+## Lock columns
 
 You can lock columns by using [`LockColumn`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~LockColumn.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html). The locked columns will be moved to the first position. Also you can’t reorder its position.
 
@@ -135,7 +135,7 @@ TreeGrid column supports the following types:
 
 
 
-## Checkbox Column
+## Checkbox column
 
 To render checkboxes in existing column, you need to set [`ShowCheckbox`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~ShowCheckbox.html) property as **true**.
 
@@ -166,7 +166,7 @@ It is also possible to select the rows hierarchically using checkboxes in TreeGr
 
 
 
-## Controlling TreeGrid actions
+## Controlling Tree Grid actions
 
 You can enable or disable treegrid action for a particular column by setting the [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowFiltering.html), and [`AllowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowSorting.html) properties in [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html).
 

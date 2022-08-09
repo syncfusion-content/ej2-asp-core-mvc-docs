@@ -11,7 +11,7 @@ documentation: ug
 
 # Template Editing in ##Platform_Name## Tree Grid Component
 
-## Cell Edit Template
+## Cell edit template
 
 The cell edit template is used to add a custom component for a particular column by invoking the following functions:
 

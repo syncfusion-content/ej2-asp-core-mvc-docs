@@ -41,7 +41,7 @@ The excel export provides an option to export hidden columns of treegrid by defi
 
 
 
-## Show or Hide columns on Exported Excel
+## Show or hide columns on exported excel
 
 You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) and [`excelExportComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ExcelExportComplete.html) events.
 
@@ -76,7 +76,7 @@ In the below example, we have **Duration** as a hidden column in the treegrid. W
 
 
 
-## File Name for Exported document
+## File name for exported document
 
 You can assign the file name for the exported document by defining fileName property in ExcelExportProperties.
 
