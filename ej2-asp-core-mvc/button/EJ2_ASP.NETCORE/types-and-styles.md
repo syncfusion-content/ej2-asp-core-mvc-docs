@@ -236,7 +236,7 @@ The two types of Button sizes are default and small. To change the size of the d
 {% endtabs %}
 {% endif %}
 
-
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonUGSample).
 
 ## See also
 

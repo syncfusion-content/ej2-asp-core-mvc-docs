@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gauge Legend in ##Platform_Name## Circular Gauge Component
-description: Learn here all about Gauge Legend in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
+title: Gauge Legend in ##Platform_Name## Circular Gauge Control | Syncfusion
+description: Learn here all about Gauge Legend in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Gauge Legend
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Legend
+# Legend in Circular Gauge Control
 
 Legend provides valuable information for interpreting what the circular gauge axis range displays, and they can be represented in various colors, shapes, and other identifiers based on the data. It gives a breakdown of what each symbol represents in the axis range of circular gauge.
 
@@ -88,9 +88,6 @@ The `font` of the legend item text can be customized using the following propert
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-legend/legend/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Legend.cs" %}
-{% include code-snippet/circulargauge/gauge-legend/legend/legend.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -117,9 +114,6 @@ The toggle option has been provided for legend. So, if you toggle the legend, th
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-legend/toggle-legend/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Toggle-legend.cs" %}
-{% include code-snippet/circulargauge/gauge-legend/toggle-legend/toggle-legend.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -148,9 +142,6 @@ By default, paging will be enabled if the legend items exceed the legend bounds.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-legend/paging-support/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Paging-support.cs" %}
-{% include code-snippet/circulargauge/gauge-legend/paging-support/paging-support.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -178,9 +169,6 @@ You can customize the legend text using `legendText` property in `ranges`.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-legend/legend-text-custom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Legend-text-custom.cs" %}
-{% include code-snippet/circulargauge/gauge-legend/legend-text-custom/legend-text-custom.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -207,3 +195,5 @@ You can customize the legend text using `legendText` property in `ranges`.
 |shape| Customize the shape of the legends |
 |name| Specifies the name of the event |
 |cancel| Set to true, to cancel the event status |
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CircularGauge/AnnotationandLegendSample).
