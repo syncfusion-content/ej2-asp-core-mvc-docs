@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating items in Syncfusion ##Platform_Name## Carousel Control
+title: Populating items in Syncfusion ##Platform_Name## Carousel Control | Syncfusion
 description: Checkout and learn about populating items in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Populating Items
@@ -23,9 +23,6 @@ When rendering the Carousel component using items binding, you can assign templa
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/carousel-item/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/carousel-item/carousel-item.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 ## Populating items using data source
@@ -37,7 +34,11 @@ When rendering the Carousel component using data binding, you can assign a commo
 {% include code-snippet/carousel/populating-items/item-datasource/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/item-datasource/item-datasource.cs %}
+public class CarouselDataBinding
+{
+    public int Id { get; set; }
+    public string Title { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,9 +57,6 @@ Using the [selectedIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/select-item/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/select-item/select-item.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 ![Carousel selected slide](images/selected_index.png)
@@ -71,7 +69,6 @@ Using the `prev` or `next` public method of the Carousel component, you can swit
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/select-item-method/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/select-item-method/select-item-method.cs %}
-{% endhighlight %}
 {% endtabs %}
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselUGSample).

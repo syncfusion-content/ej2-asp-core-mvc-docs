@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Circular Gauge Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Circular Gauge Control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in Circular Gauge Control
 
-Circular gauge provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provides information about elements in a document for assistive technology.
+Circular gauge provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provides information about elements in a document for assistive technology.
 
 **Aria-label:**  Attribute provides the text label with some default description for below elements in gauge.
 
@@ -35,4 +35,4 @@ Circular gauge provides built-in compliance with the [WAI-ARIA](http://www.w3.or
 </tr>
 </table>
 
-You can change this default description, using description property available in [`Pointers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html), [`Annotations`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAnnotation.html) and [`CircularGauge`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html) object. It helps the screen reader to read for assistive purpose.
+You can change this default description, using description property available in [Pointers](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugePointer.html), [Annotations](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeAnnotation.html) and [CircularGauge](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html) object. It helps the screen reader to read for assistive purpose.
