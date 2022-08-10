@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animations and Transitions in Syncfusion ##Platform_Name## Carousel Control
+title: Animations in Syncfusion ##Platform_Name## Carousel | Syncfusion
 description: Checkout and learn about Animations and Transitions in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Animations and Transitions
@@ -22,9 +22,6 @@ The following demo depicts the example for `Fade` animation,
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/animations/fade/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/animations/fade/fade.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 ![Carousel fade animation](images/fade_animation.gif)
@@ -39,9 +36,6 @@ The following demo depicts the example for `parallax` custom animation,
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/animations/custom-animation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/animations/custom-animation/custom-animation.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 ![Carousel custom animation](images/parallax_animation.gif)
@@ -53,9 +47,6 @@ Using the items property, you can set different intervals for each item to trans
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/animations/intervals/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/animations/intervals/intervals.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,9 +60,6 @@ In the carousel, all slides transitions are performed continuously after the spe
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/animations/auto-play/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/animations/auto-play/auto-play.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 ## Pause on hover
@@ -84,9 +72,6 @@ The following example depicts the code to play the slides when hovering the mous
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/carousel/animations/pause-on-hover/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/animations/pause-on-hover/pause-on-hover.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 ## Looping slides
@@ -96,9 +81,6 @@ In the carousel, slides transitions are repeated continuously when you reach the
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/animations/loop/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/animations/loop/loop.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -114,9 +96,6 @@ The following demo depicts the example for carousel events,
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/animations/slide-events/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/animations/slide-events/slide-events.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 ## Disable touch swiping
@@ -127,7 +106,6 @@ In the carousel, you can swipe the carousel slides using touch actions by defaul
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/animations/touch-swipe/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/animations/touch-swipe/touch-swipe.cs %}
-{% endhighlight %}
 {% endtabs %}
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselAnimationUGSample).

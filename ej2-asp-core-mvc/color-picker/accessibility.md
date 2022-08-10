@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Color Picker Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Color Picker component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Color Picker Control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility
+# Accessibility in Color Picker Control
 
 ## ARIA attributes
 
@@ -16,7 +16,7 @@ The web accessibility makes web content and web applications more accessible for
 
 ColorPicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-label`and `aria-selected` applied to the color palette tiles.
 
-To know about the accessibility of SplitButton, refer to the SplitButton [`Accessibility`](./../split-button/accessibility#accessibility) section.
+To know about the accessibility of SplitButton, refer to the SplitButton [Accessibility](./../split-button/accessibility#accessibility) section.
 
 | Properties | Functionality |
 | ------------ | ----------------------- |
@@ -26,7 +26,7 @@ To know about the accessibility of SplitButton, refer to the SplitButton [`Acces
 
 ## Keyboard interaction
 
-To know about the keyboard interaction of SplitButton, refer to the SplitButton [`Keyboard interaction`](./../split-button/accessibility#keyboard-interaction) section.
+To know about the keyboard interaction of SplitButton, refer to the SplitButton [Keyboard interaction](./../split-button/accessibility#keyboard-interaction) section.
 
 The following list of keys can be used to interact with the ColorPicker after the popup has opened.
 
@@ -44,9 +44,6 @@ The following list of keys can be used to interact with the ColorPicker after th
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/color-picker/accessibility/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/color-picker/accessibility/accessibility.cs %}
 {% endhighlight %}
 {% endtabs %}
 
