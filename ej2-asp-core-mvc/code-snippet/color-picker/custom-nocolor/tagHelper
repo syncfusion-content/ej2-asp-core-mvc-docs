@@ -1,7 +1,18 @@
+@{
+    List<object> custom = new List<object>();
+    custom.Add(new
+    {
+        Custom1 = new string[] {"#f44336", "#e91e63", "#9c27b0", "#673ab7", "#2196f3", "#03a9f4", "#00bcd4",
+        "#009688", "#8bc34a", "#cddc39", "#ffeb3b", "#ffc107"}
+    });
+
+    var customColors = custom[0];
+}
+
 <div class='wrap'>
     <ul id="target" tabindex="0">
         <li class="e-item e-palette-item">
-            <ejs-colorpicker id="element" mode="Palette" modeSwitcher="false" inline="true" showButtons="false" columns="4" presetColors="@ViewBag.customColors" beforeTileRender="tileRender" change="onChange" created="onCreated"></ejs-colorpicker>
+            <ejs-colorpicker id="element" mode="Palette" modeSwitcher="false" inline="true" showButtons="false" columns="4" presetColors="@customColors" beforeTileRender="tileRender" change="onChange" created="onCreated"></ejs-colorpicker>
         </li>
         <li class="e-item" id="no-color" tabindex="-1">
             <span class="e-menu-icon e-nocolor"></span>

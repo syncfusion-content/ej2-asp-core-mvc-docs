@@ -88,6 +88,8 @@ Divider used to separate the elements inside the card. You can add divider insid
 
 ![CSS Card Control with images and divider](./images/card-divider.PNG)
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).
+
 ## See also
 
 * [How to customize the card image title position](./how-to/customize-the-card-image-title-position)
