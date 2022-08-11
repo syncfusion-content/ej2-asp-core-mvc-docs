@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Combo Box Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Combo Box component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Combo Box Control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in Combo Box Control
 
 The ComboBox control has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 
@@ -54,9 +54,6 @@ You can use the following key shortcuts to access the ComboBox without interrupt
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/accessibility/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/combobox/accessibility/accessibility.cs %}
 {% endhighlight %}
 {% endtabs %}
 
