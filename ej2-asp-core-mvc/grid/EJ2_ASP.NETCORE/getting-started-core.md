@@ -13,6 +13,11 @@ documentation: ug
 
 This section briefly explains about how to include [ASP.NET Core Grid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control in your ASP.NET Core application using Visual Studio.
 
+To get start quickly with ASP.NET Core Grid component, you can check on this video.
+
+{% youtube
+"youtube:https://www.youtube.com/watch?v=E5w2fO-N9gE" %}
+
 ## Prerequisites
 
 [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements/)
