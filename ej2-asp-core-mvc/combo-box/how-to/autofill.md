@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Autofill in ##Platform_Name## Combo Box Component
-description: Learn here all about Autofill in Syncfusion ##Platform_Name## Combo Box component of Syncfusion Essential JS 2 and more.
+title: Autofill in ##Platform_Name## Combo Box Control | Syncfusion
+description: Learn here all about Autofill in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Autofill
 publishingplatform: ##Platform_Name##
@@ -20,7 +20,11 @@ The ComboBox supports the `autofill` behaviour with the help of [autofill](https
 {% include code-snippet/combobox/how-to/autofill/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Countries.cs" %}
-{% include code-snippet/combobox/how-to/autofill/Countries.cs %}
+public class Countries
+{
+    public string Name { get; set; }
+    public string Code { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 

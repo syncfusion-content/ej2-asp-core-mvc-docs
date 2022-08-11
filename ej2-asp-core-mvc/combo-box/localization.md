@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Combo Box Component
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Combo Box component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Combo Box Control | Syncfusion
+description: Learn here all about Localization in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization
+# Localization in Combo Box Control
 
 The Localization library allows to localize static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~NoRecordsTemplate.html) and [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~ActionFailureTemplate.html) properties according to the culture currently assigned to the ComboBox.
 
@@ -30,9 +30,6 @@ In the following sample, French culture is set to the ComboBox and no data is lo
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/localization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Localization.cs" %}
-{% include code-snippet/combobox/localization/localization.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -49,7 +46,7 @@ In the following sample, French culture is set to the ComboBox and no data is lo
 
 
 
-## See Also
+## See also
 
 * [Accessibility](./accessibility/)
 * [How to bind the data to the combobox](./data-binding/)
