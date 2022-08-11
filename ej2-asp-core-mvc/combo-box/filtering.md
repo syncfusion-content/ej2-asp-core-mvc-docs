@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Combo Box Component
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Combo Box component of Syncfusion Essential JS 2 and more.
+title: Filtering in ##Platform_Name## Combo Box Control | Syncfusion
+description: Learn here all about Filtering in Syncfusion ##Platform_Name## Combo Box Control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filtering
+# Filtering in Combo Box Control
 
 The ComboBox has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~AllowFiltering.html) is enabled. The filter operation starts as soon as you start typing characters in the control.
 
@@ -24,7 +24,11 @@ The following sample illustrates how to query the data source and pass the data 
 {% include code-snippet/combobox/filtering/filter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Countries.cs" %}
-{% include code-snippet/combobox/filtering/filter/Countries.cs %}
+public class Countries
+{
+    public string Name { get; set; }
+    public string Code { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -51,9 +55,6 @@ When filtering the list items, you can set the limit for character count to rais
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/filtering/filterlimit/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filterlimit.cs" %}
-{% include code-snippet/combobox/filtering/filterlimit/filterlimit.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -83,9 +84,6 @@ In the following examples, data filtering is done with `endsWith` type.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/filtering/filtertype/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Filtertype.cs" %}
-{% include code-snippet/combobox/filtering/filtertype/filtertype.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -112,9 +110,6 @@ Data items can be filtered either with or without case sensitivity using the Dat
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/filtering/casesensitive/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Casesensitive.cs" %}
-{% include code-snippet/combobox/filtering/casesensitive/casesensitive.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -133,16 +128,13 @@ Data items can be filtered either with or without case sensitivity using the Dat
 
 ## Diacritics filtering
 
-ComboBox supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [`ignoreAccent`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~IgnoreAccent.html) is enabled.
+ComboBox supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~IgnoreAccent.html) is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/filtering/diacritics/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Diacritics.cs" %}
-{% include code-snippet/combobox/filtering/diacritics/diacritics.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -160,7 +152,7 @@ ComboBox supports diacritics filtering which will ignore the [diacritics](https:
 
 
 
-## See Also
+## See also
 
 * [How to acheive autofill while filtering](./how-to/autofill)
 * [How to group the data using header](./grouping/)

@@ -1,17 +1,51 @@
+@{
+    List<State> state = new List<State>();
+    state.Add(new State() { StateName = "New York", CountryId = "1", StateId = "101" });
+    state.Add(new State() { StateName = "Queensland", CountryId = "2", StateId = "104" });
+    state.Add(new State() { StateName = "Tasmania ", CountryId = "2", StateId = "105" });
+    state.Add(new State() { StateName = "Victoria", CountryId = "2", StateId = "106" });
+    state.Add(new State() { StateName = "Virginia ", CountryId = "1", StateId = "102" });
+    state.Add(new State() { StateName = "Washington", CountryId = "1", StateId = "103" });
+
+    List<Country> country = new List<Country>();
+    country.Add(new Country() { CountryName = "Australia", CountryId = "2" });
+    country.Add(new Country() { CountryName = "United States", CountryId = "1" });
+
+    List<Cities> cities = new List<Cities>();
+    cities.Add(new Cities() { CityName = "Aberdeen", StateId = "103", CityId = 207 });
+    cities.Add(new Cities() { CityName = "Alexandria", StateId = "102", CityId = 204 });
+    cities.Add(new Cities() { CityName = "Albany", StateId = "101", CityId = 201 });
+    cities.Add(new Cities() { CityName = "Beacon ", StateId = "101", CityId = 202 });
+    cities.Add(new Cities() { CityName = "Brisbane ", StateId = "104", CityId = 211 });
+    cities.Add(new Cities() { CityName = "Cairns", StateId = "104", CityId = 212 });
+    cities.Add(new Cities() { CityName = "Colville ", StateId = "103", CityId = 208 });
+    cities.Add(new Cities() { CityName = "Devonport", StateId = "105", CityId = 215 });
+    cities.Add(new Cities() { CityName = "Emporia", StateId = "102", CityId = 206 });
+    cities.Add(new Cities() { CityName = "Geelong", StateId = "106", CityId = 218 });
+    cities.Add(new Cities() { CityName = "Hampton ", StateId = "102", CityId = 205 });
+    cities.Add(new Cities() { CityName = "Healesville ", StateId = "106", CityId = 217 });
+    cities.Add(new Cities() { CityName = "Hobart", StateId = "105", CityId = 213 });
+    cities.Add(new Cities() { CityName = "Launceston ", StateId = "105", CityId = 214 });
+    cities.Add(new Cities() { CityName = "Lockport", StateId = "101", CityId = 203 });
+    cities.Add(new Cities() { CityName = "Melbourne", StateId = "106", CityId = 216 });
+    cities.Add(new Cities() { CityName = "Pasco", StateId = "103", CityId = 209 });
+    cities.Add(new Cities() { CityName = "Townsville", StateId = "104", CityId = 210 });
+}
+
 <div class='control-wrapper'>
     <div class="padding-top">
-        <ejs-combobox id="country" placeholder="Select a country" popupHeight="@ViewBag.popupHeight" dataSource="@ViewBag.country" change="countrychange">
+        <ejs-combobox id="country" placeholder="Select a country" popupHeight="@ViewBag.popupHeight" dataSource="@country" change="countrychange">
             <e-combobox-fields text="CountryName" value="CountryId"></e-combobox-fields>
         </ejs-combobox>
 
     </div>
     <div class="padding-top">
-        <ejs-combobox id="state" enabled="false" placeholder="Select a state" popupHeight="@ViewBag.popupHeight" dataSource="@ViewBag.state" change="statechange">
+        <ejs-combobox id="state" enabled="false" placeholder="Select a state" popupHeight="@ViewBag.popupHeight" dataSource="@state" change="statechange">
             <e-combobox-fields text="StateName" value="StateId"></e-combobox-fields>
         </ejs-combobox>
     </div>
     <div class="padding-top">
-        <ejs-combobox id="city" placeholder="Select a city" enabled="false" popupHeight="@ViewBag.popupHeight" dataSource="@ViewBag.cities">
+        <ejs-combobox id="city" placeholder="Select a city" enabled="false" popupHeight="@ViewBag.popupHeight" dataSource="@cities">
             <e-combobox-fields text="CityName" value="CityId"></e-combobox-fields>
         </ejs-combobox>
     </div>
