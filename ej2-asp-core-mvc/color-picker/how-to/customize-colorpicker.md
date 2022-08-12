@@ -173,3 +173,4 @@ The color picker UI can be customized in all possible ways. The following sample
 {% endif %}
 
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ColorPicker/CustomColorPickerSample).
