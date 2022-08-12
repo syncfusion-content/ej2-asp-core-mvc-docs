@@ -136,7 +136,7 @@ In the following sample, displayed first 6 contacts from the `customer` table of
 {% endtabs %}
 {% endif %}
 
-
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/ComboBoxUGSample).
 
 ### Bind to URL Adaptor
 
@@ -254,7 +254,7 @@ To avoid post back for every action, set the ComboBox to load all data on initia
 
 
 
-## See Also
+## See also
 
 * [How to acheive cascading](./how-to/cascading/)
 * [How to load data using template](./templates/#item-template)
