@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual Scroll in ##Platform_Name## Gantt Component
+title: Virtual Scroll in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Virtual Scroll in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtual Scroll
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Virtual Scrolling
+# Virtual Scrolling in Gantt
 
 Virtual Scroll support in Gantt allows you to load large amount of data without performance degradation. To enable Virtual Scrolling, you need to inject `VirtualScroll` module in Gantt.
 
