@@ -106,4 +106,4 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Chip/ASP.NET%20MVC%20Razor%20Examples).
 
-N> You can refer to our [ASP.NET MVC Chips](https://www.syncfusion.com/aspnet-mvc-ui-controls/chips) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Chips Example](https://ej2.syncfusion.com/aspnetmvc/Chips/Default#/material) that shows you how to render the Chips in ASP.NET MVC.
+N> You can also explore our [ASP.NET MVC Chips Example](https://ej2.syncfusion.com/aspnetmvc/Chips/Default#/material) that shows you how to render the Chips in ASP.NET MVC.
