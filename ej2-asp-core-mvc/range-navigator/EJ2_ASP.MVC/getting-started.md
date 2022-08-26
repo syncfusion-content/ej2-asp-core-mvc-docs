@@ -157,3 +157,6 @@ public class data
 ![ASP.NET MVC Range Navigator Control](images/rn.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RangeNavigator/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC RangeNavigator example](https://ej2.syncfusion.com/aspnetmvc/RangeNavigator/Default#/material) that shows you how to render and configure the RangeNavigator in ASP.NET MVC.
+
