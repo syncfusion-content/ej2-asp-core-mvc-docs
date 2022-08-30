@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Column reordering
+# Column reordering in gantt control
 
 The column reordering can be done by dragging a column header from one index to another index within the TreeGrid. To enable reordering, set the [`AllowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowReordering) property to true.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom data source in Syncfuion ##Platform_Name## Gantt Component
+title: Custom data source in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Custom data source in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Export
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Custom data source
+# Custom data source in gantt control
 
 The excel export provides an option to define datasource dynamically before exporting. To export data dynamically, define the `dataSource` in `exportProperties`.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive Columns in Syncfuion ##Platform_Name## Gantt Component
+title: Responsive Columns in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Responsive Columns in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Columns
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Responsive columns
+# Responsive columns in gantt control
 
 You can toggle the column visibility based on media queries, which are defined in the [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia). The [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia) accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html).
 

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Column Spanning
+# Column Spanning in gantt control
 
 The gantt has option to span the adjacent cells. You need to define the `colSpan` attribute to span cells in the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) event.
 
