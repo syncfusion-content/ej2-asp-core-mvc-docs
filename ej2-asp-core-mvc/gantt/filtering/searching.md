@@ -1,6 +1,17 @@
+---
+layout: post
+title: Searching in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about Searching in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Filtering
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Search
 
-You can search records in the Gantt control by using the `search` method with search key as a parameter. The Gantt control provides an option to integrate the search text box in the toolbar by adding the search item to the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~Toolbar.html) property.
+You can search records in the Gantt control by using the `search` method with search key as a parameter. The Gantt control provides an option to integrate the search text box in the toolbar by adding the search item to the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

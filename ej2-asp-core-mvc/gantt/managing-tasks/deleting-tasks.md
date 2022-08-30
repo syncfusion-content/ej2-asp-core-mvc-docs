@@ -1,3 +1,14 @@
+---
+layout: post
+title: Deleting tasks in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about Deleting Tasks in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Managing Tasks
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Deleting tasks
 
 A task delete option in the Gantt control can be enabled by enabling the [`EdiSettings.AllowDeleting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowDeleting) property. Tasks can be deleted by clicking the delete toolbar item or using the `deleteRow` method. You can call this method dynamically on any custom actions like button click. The following code example shows how to enable the delete option in the Gantt control.

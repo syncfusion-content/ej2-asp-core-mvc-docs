@@ -1,3 +1,14 @@
+---
+layout: post
+title: Columns menu in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about Columns menu in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Columns
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Column menu
 
 The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click the Multiple icon of the column. To enable the column menu, you should set the [`ShowColumnMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ShowColumnMenu) property to true. The default items are displayed in the following table:

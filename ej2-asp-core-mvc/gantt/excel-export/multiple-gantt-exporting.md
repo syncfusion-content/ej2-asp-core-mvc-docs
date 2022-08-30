@@ -1,3 +1,14 @@
+---
+layout: post
+title: Multiple Gantt exporting in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about Multiple Gantt exporting in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Excel Export
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Multiple Gantt exporting
 
 In Gantt, the Excel export provides support to export multiple Gantt data in new sheet or same sheet.

@@ -1,3 +1,14 @@
+---
+layout: post
+title: Column resizing in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about Column resizing in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Columns
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Column resizing
 
 The column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To resize the column, set the [`AllowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowResizing) property to true. The following code example shows how to enable the column resize feature in the Gantt control.

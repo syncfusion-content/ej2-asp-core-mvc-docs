@@ -1,3 +1,14 @@
+---
+layout: post
+title: Column reordering in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about Column reordering in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Columns
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Column reordering
 
 The column reordering can be done by dragging a column header from one index to another index within the TreeGrid. To enable reordering, set the [`AllowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowReordering) property to true.

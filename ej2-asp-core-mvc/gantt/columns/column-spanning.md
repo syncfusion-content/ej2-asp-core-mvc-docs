@@ -1,3 +1,14 @@
+---
+layout: post
+title: Column spanning in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about Column spanning in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Columns
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Column Spanning
 
 The gantt has option to span the adjacent cells. You need to define the `colSpan` attribute to span cells in the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) event.

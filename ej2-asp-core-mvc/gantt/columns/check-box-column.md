@@ -1,3 +1,14 @@
+---
+layout: post
+title: Check box Columns in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about Check box Columns in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Columns
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Checkbox Column
 
 To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../api/gantt/column/#displayascheckbox) property as **true**.

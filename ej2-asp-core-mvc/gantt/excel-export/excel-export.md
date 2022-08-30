@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Export in ##Platform_Name## Gantt Component
+title: Excel Export in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Excel Export in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Export

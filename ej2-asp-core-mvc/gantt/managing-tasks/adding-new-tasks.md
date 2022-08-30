@@ -1,3 +1,14 @@
+---
+layout: post
+title: Adding new tasks in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about Adding new tasks in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Managing Tasks
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Adding new tasks
 
 Tasks can be dynamically added to the Gantt project by enabling the [`EditSettings.AllowAdding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowAdding) property.
