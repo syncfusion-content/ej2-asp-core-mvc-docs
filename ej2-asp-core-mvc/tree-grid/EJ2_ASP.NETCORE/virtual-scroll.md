@@ -56,9 +56,9 @@ To setup the column virtualization, set the [`EnableVirtualization`](https://hel
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treegrid/virtual/columnvirtual/tagHelper %}
+{% include code-snippet/tree-grid/virtual/columnvirtual/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="columnvirtual.cs" %}
+{% highlight c# tabtitle="Columnvirtual.cs" %}
 {% include code-snippet/tree-grid/virtual/columnvirtual/columnvirtual.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -67,9 +67,9 @@ To setup the column virtualization, set the [`EnableVirtualization`](https://hel
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treegrid/virtual/columnvirtual/razor %}
+{% include code-snippet/tree-grid/virtual/columnvirtual/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="columnvirtual.cs" %}
+{% highlight c# tabtitle="Columnvirtual.cs" %}
 {% include code-snippet/tree-grid/virtual/columnvirtual/columnvirtual.cs %}
 {% endhighlight %}
 {% endtabs %}
