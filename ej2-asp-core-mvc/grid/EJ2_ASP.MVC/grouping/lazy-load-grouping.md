@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lazy Load Grouping in ##Platform_Name## Grid Component
+title: Lazy Load Grouping in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Lazy Load Grouping in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Lazy Load Grouping
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Lazy Load Grouping
+# Lazy Load Grouping in ASP.NET MVC Grid Component
 
 The lazy load grouping allows you to load grouped records to the Grid through the on-demand concept. So, you can use this feature to load a huge amount of grouped data to the Grid without any performance degradation.
 
