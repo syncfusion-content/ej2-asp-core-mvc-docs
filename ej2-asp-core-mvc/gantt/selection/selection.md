@@ -48,3 +48,129 @@ The Gantt control supports three types of selection modes that can be set by usi
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+
+## Toggle selection
+
+The toggle selection allows you to select and deselect a specific row or cell. To enable toggle selection, set the `enableToggle` property of the selectionSettings to `true`. If you click the selected row or cell, then it will be deselected and vice versa. By default, the `enableToggle` property is set to `false`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/selection/toggleselection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Toggleselection.cs" %}
+{% include code-snippet/gantt/selection/toggleselection/toggleselection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/selection/toggleselection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Toggleselection.cs" %}
+{% include code-snippet/gantt/selection/toggleselection/toggleselection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Clear selection
+
+You can clear the selected cells and selected rows by using a method called `clearSelection`. The following code example demonstrates how to clear the selected rows in Gantt Chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/selection/clearselection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Clearselection.cs" %}
+{% include code-snippet/gantt/selection/clearselection/clearselection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/selection/clearselection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Clearselection.cs" %}
+{% include code-snippet/gantt/selection/clearselection/clearselection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Get selected row indexes and records
+
+You can get the selected row indexes by using the [`getSelectedRowIndexes`](../api/gantt/#getselectedrowindexes) method. And by using [`getSelectedRecords`](../api/gantt/#getSelectedRecords) method, you can get the selected record details.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/selection/getSelectedRowIndex/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="GetSelectedRowIndex.cs" %}
+{% include code-snippet/gantt/selection/getSelectedRowIndex/getSelectedRowIndex.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/selection/getSelectedRowIndex/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="GetSelectedRowIndex.cs" %}
+{% include code-snippet/gantt/selection/getSelectedRowIndex/getSelectedRowIndex.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Multiple Selection based on condition
+
+You can select multiple rows based on condition by using the [`selectRows`](../api/grid/#selectrows) method.
+
+In the following code, the rows which contains `TaskId` value as 3 and 4 are selected at initial rendering.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/selection/conditionalSelection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ConditionalSelection.cs" %}
+{% include code-snippet/gantt/selection/conditionalSelection/conditionalSelection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/selection/conditionalSelection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ConditionalSelection.cs" %}
+{% include code-snippet/gantt/selection/conditionalSelection/conditionalSelection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/conditionalSelection.png)
+
+## See Also
+
+* [Touch interaction](./touch-interaction/#selection)
