@@ -162,3 +162,6 @@ public ActionResult Index()
 ## See also
 
 * [How to bind the data](./data-binding/)
+
+N> You can also explore our [ASP.NET MVC MultiSelect Dropdown example](https://ej2.syncfusion.com/aspnetmvc/MultiSelect/DefaultFunctionalities#/fluent) that shows you how to render and configure the MultiSelect Dropdown in ASP.NET MVC.
+
