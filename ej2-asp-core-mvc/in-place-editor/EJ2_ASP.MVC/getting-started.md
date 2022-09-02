@@ -268,3 +268,6 @@ The edited data is submitted to the server and you can see the new values gettin
 
 * [Real time example using In-place Editor](https://ej2.syncfusion.com/aspnetmvc/InPlaceEditor/EditPost#/bootstrap5)
 * [Types of rendering the editor](./integration)
+
+N> You can also explore our [ASP.NET MVC In Place Editor example](https://ej2.syncfusion.com/aspnetmvc/InPlaceEditor/DefaultFunctionalities#/fluent) that shows you how to render and configure the In Place Editor in MVC.
+
