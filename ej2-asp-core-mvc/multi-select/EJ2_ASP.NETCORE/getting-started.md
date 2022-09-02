@@ -182,3 +182,6 @@ In the following sample, popup list's width and height are configured.
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [How to bind the data](./data-binding/)
+
+N> You can also explore our [ASP.NET Core MultiSelect Dropdown example](https://ej2.syncfusion.com/aspnetcore/MultiSelect/DefaultFunctionalities#/fluent) that shows you how to render and configure the MultiSelect Dropdown in Core.
+
