@@ -255,3 +255,6 @@ The edited data is submitted to the server and you can see the new values gettin
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [Types of rendering the editor](./integration)
+
+N> You can also explore our [ASP.NET Core In Place Editor example](https://ej2.syncfusion.com/aspnetcore/InPlaceEditor/DefaultFunctionalities#/fluent) that shows you how to render and configure the In Place Editor in Core.
+
