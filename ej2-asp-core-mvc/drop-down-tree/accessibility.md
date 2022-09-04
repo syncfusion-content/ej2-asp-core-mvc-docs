@@ -11,7 +11,7 @@ documentation: ug
 
 # Accessibility
 
-The Dropdown Tree control has been designed keeping in mind the `WAI-ARIA` specifications, and applies WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for users who use assistive technologies (AT) and those who completely rely on keyboard navigation.
+The [ASP.NET Core Dropdown Tree](https://www.syncfusion.com/aspnet-core-ui-controls/dropdown-tree) control has been designed keeping in mind the `WAI-ARIA` specifications, and applies WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for users who use assistive technologies (AT) and those who completely rely on keyboard navigation.
 
 ## ARIA attributes
 
