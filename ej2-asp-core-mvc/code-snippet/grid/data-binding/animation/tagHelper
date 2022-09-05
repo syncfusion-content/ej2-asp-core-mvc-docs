@@ -1,0 +1,12 @@
+<ejs-grid id="Grid"  allowPaging="true">
+    <e-grid-loadingIndicator indicatorType="Shimmer"></e-grid-loadingIndicator>
+    <e-grid-pageSettings pageCount="3"></e-grid-pageSettings>                    
+    <e-data-manager url="https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/" adaptor="ODataAdaptor"></e-data-manager>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="130"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="EmployeeID"  headerText="Employee ID" textAlign="Right" width="115"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" textAlign="Center"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>    
