@@ -106,36 +106,6 @@ return dm.RequiresCounts ? Json(new { result = groupedData == null ? DataSource 
 
 ```
 
-## Lazy load grouping with infinite scrolling
-
-Infinite scrolling loads a huge amount of data without degrading the Grid's performance. By default, infinite scrolling is enabled only for expanded grouped rows when lazy loading is enabled. Now, the Grid has an option to enable infinite scrolling for group caption rows. This is achieved by setting the [EnableInfiniteScrolling](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableInfiniteScrolling) property as true when lazy loading is enabled in the grouped records.
-
-This is demonstrated in the following sample:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Lazy-load-scroll.cs" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load-grouping-scroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Lazy-load-scroll.cs" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load-grouping-scroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Limitations for lazy load grouping
 
