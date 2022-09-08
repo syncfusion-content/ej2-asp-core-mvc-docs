@@ -10,9 +10,9 @@ documentation: ug
 
 # Loading Animation ASP.NET MVC Grid Component
 
-When performing the grid actions(like sorting, filtering, grouping, etc) loading placeholder indicator was displayed while the new data was loaded. By default, the spinner indicator was displayed while the grid was loading and refreshing. Now, Grid has an option to display the Shimmer indicator when the new data is loaded. This can be achieved by setting the `loadingIndicator.indicatorType` property to Spinner or Shimmer.
+The grid has an option to show a loading indicator in-between the time of fetching the data and binding it to the grid during initial rendering or refreshing or after performing any grid action like sorting, filtering, grouping, and more. The grid supports two indicator types, which is achieved by setting the `loadingIndicator.indicatorType` property to Spinner or Shimmer. The default value of the indicator type is "Spinner."
 
-In the following sample, the Shimmer indicator is displayed while the grid is loading and refreshing when using remote data.
+In the following sample, the Shimmer indicator is displayed while the grid is loading and refreshing when using the remote data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
