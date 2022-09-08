@@ -1,4 +1,4 @@
-@Html.EJS().Grid("Grid").DataSource(dataManger =>
+@Html.EJS().Grid("Grid").AllowFiltering(true).AllowSorting().DataSource(dataManger =>
     {
         dataManger.Url("https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/").Adaptor("ODataAdaptor");
     }).Columns(col =>

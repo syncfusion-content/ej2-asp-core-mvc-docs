@@ -1,4 +1,4 @@
-<ejs-grid id="Grid"  allowPaging="true">
+<ejs-grid id="Grid" allowPaging="true" allowSorting="true" allowFiltering="true" >
     <e-grid-loadingIndicator indicatorType="Shimmer"></e-grid-loadingIndicator>
     <e-grid-pageSettings pageCount="3"></e-grid-pageSettings>                    
     <e-data-manager url="https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/" adaptor="ODataAdaptor"></e-data-manager>
