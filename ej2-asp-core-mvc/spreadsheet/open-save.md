@@ -86,6 +86,32 @@ You can achieve to access the remote excel file by using the [`created`](../api/
 {% endtabs %}
 {% endif %}
 
+### To add custom header during open
+
+You can add your own custom header to the open action in the Spreadsheet. For processing the data, it has to be sent from server to client side and adding customer header can provide privacy to the data with the help of Authorization Token. Through the [`beforeOpen`](../api/spreadsheet/#beforeOpen) event, the custom header can be added to the request during open action.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-header/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opencontroller.cs" %}
+{% include code-snippet/spreadsheet/open-header/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/open-header/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Opencontroller.cs" %}
+{% include code-snippet/spreadsheet/open-header/opencontroller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## Save
@@ -166,7 +192,32 @@ Passing the custom parameters from client to server by using [`beforeSave`](../a
 {% endtabs %}
 {% endif %}
 
+### To add custom header during save
 
+You can add your own custom header to the save action in the Spreadsheet. For processing the data, it has to be sent from client to server side and adding customer header can provide privacy to the data with the help of Authorization Token. Through the [`fileMenuItemSelect`](../api/spreadsheet/#fileMenuItemSelect) event, the custom header can be added to the request during save action.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-header/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CustomHeaderController.cs" %}
+{% include code-snippet/spreadsheet/save-header/CustomHeaderController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/save-header/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CustomHeaderController.cs" %}
+{% include code-snippet/spreadsheet/save-header/CustomHeaderController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Methods
 
