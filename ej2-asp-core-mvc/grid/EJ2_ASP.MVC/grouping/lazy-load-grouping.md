@@ -106,7 +106,6 @@ return dm.RequiresCounts ? Json(new { result = groupedData == null ? DataSource 
 
 ```
 
-
 ## Limitations for lazy load grouping
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
