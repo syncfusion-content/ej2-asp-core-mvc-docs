@@ -30,6 +30,8 @@ The following ARIA attributes are used in the Grid:
 * aria-owns (attribute)
 * aria-label (attribute)
 
+> In **Jaws reader**, you can achieve column mode by adding the cssClass property **e-gridcell-read** to the grid.
+
 ## Keyboard navigation
 
 Grid functionalities can be interactive with keyboard shortcuts. In order to utilize all the available keyboard shortcuts, the [`EnableHeaderFocus`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableHeaderFocus) property of the Grid needs to be set as **true**.
