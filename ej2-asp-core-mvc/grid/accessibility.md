@@ -30,7 +30,7 @@ The following ARIA attributes are used in the Grid:
 * aria-owns (attribute)
 * aria-label (attribute)
 
-> In **Jaws reader**, you can achieve column mode by adding the cssClass property **e-gridcell-read** to the grid.
+> You can achieve a single table announcing on the JAWS screen reader by setting an **`e-gridcell-read`** class through cssClass property of the grid.
 
 ## Keyboard navigation
 
