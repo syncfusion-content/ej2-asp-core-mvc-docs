@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Save in ##Platform_Name## Spreadsheet Component
+title: Open Save in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Open Save in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open Save
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Open and Save
+# Open and Save in Spreadsheet
 
 To import an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. Server configuration is used for this process.
 
