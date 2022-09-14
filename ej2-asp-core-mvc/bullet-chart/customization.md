@@ -13,7 +13,7 @@ documentation: ug
 
 ## Orientation
 
-The Bullet Chart can be rendered in different orientations such as **Horizontal** or **Vertical** via the `orientation` property. By default, the Bullet Chart is rendered in the **Horizontal** orientation.
+The [ASP.NET Core Bullet Chart](https://www.syncfusion.com/aspnet-core-ui-controls/bullet-chart) can be rendered in different orientations such as **Horizontal** or **Vertical** via the `orientation` property. By default, the Bullet Chart is rendered in the **Horizontal** orientation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

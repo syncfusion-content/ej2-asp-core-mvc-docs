@@ -239,3 +239,5 @@ public class DefaultBulletData
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Bullet Chart Example](https://ej2.syncfusion.com/aspnetcore/ListBox/DefaultFunctionalities#/material) that shows you how to render and configure the bullet chart.
