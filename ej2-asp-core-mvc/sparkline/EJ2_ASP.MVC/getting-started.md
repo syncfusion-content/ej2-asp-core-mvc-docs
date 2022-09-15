@@ -137,3 +137,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ![ASP.NET MVC Sparkline Control](images/sparkline.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Sparkline/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC Sparkline Chart example](https://ej2.syncfusion.com/aspnetmvc/Sparkline/Default#/material) that shows you how to render and configure the Sparkline Chart in MVC.
+
