@@ -128,3 +128,5 @@ You can change the type of progress bar by using [Type](https://help.syncfusion.
 ![ASP.NET MVC Progress Bar Control](images/progressbar-control.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ProgressBar/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC ProgressBar Example](https://ej2.syncfusion.com/aspnetmvc/ProgressBar/Linear#/bootstrap5) that shows you how to render and configure the Button Group.
