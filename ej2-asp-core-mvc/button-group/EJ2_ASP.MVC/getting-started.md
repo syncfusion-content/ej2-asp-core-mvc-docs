@@ -117,3 +117,5 @@ The following example illustrates how to achieve vertical orientation in ButtonG
 ## See Also
 
 * [Initialize ButtonGroup using util function](./how-to/initialize-buttongroup-using-util-function)
+
+N> You can also explore our [ASP.NET MVC Button Group Example](https://ej2.syncfusion.com/aspnetmvc/Button/ButtonGroup#/bootstrap5) that shows you how to render and configure the Button Group.
