@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Bullet Chart Component
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
+title: Customization in ASP.NET CORE Bullet Chart Component | Syncfusion
+description: Learn here all about Axis Customization in Syncfusion ASP.NET CORE Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
 
-# Customization in ASP.NET Core Bullet Chart
+# Customization in ASP.NET Core Bullet Chart Component
 
 ## Orientation
 
