@@ -98,3 +98,5 @@ You can create Card with a header in a specific structure. For adding header you
 
 * [Real time example using Card](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
 * [How to add a header and content](./header-content/)
+
+N> You can also explore our [ASP.NET MVC Card Example](https://ej2.syncfusion.com/aspnetmvc/Card/BasicCard#/bootstrap5) that shows you how to render and configure the Button Group.
