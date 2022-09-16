@@ -141,3 +141,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ## See also
 
 * [SplitButton with icons](./icons#splitbutton-icons)
+
+N> You can also explore our [ASP.NET MVC Split Button Example](https://ej2.syncfusion.com/aspnetmvc/Button/SplitButton#/bootstrap5) that shows you how to render and configure the Button Group.
