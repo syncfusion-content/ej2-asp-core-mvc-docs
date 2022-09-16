@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## BulletChart Control |Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## BulletChart control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC BulletChart Control |Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Bullet Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
-
 
 # Getting Started with ASP.NET MVC Bullet Chart Control
 
@@ -276,3 +275,5 @@ public class BulletChartData
 ![ASP.NET MVC Bullet Chart with Tooltip](images/bullet-chart-with-tooltip.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/BulletChart/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC Bullet Chart Example](https://ej2.syncfusion.com/aspnetmvc/BulletChart/Default#/bootstrap5) that shows you how to render and configure the bullet chart.
