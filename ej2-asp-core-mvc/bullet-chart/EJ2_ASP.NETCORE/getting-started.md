@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ASP.NET CORE Bullet Chart Control |Syncfusion
-description: Checkout and learn about getting started with ASP.NET CORE Bullet Chart control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about getting started with ASP.NET Core Bullet Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ej2-asp-core-mvc

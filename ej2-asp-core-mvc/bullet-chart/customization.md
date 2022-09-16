@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in ASP.NET CORE Bullet Chart Component | Syncfusion
-description: Learn here all about Axis Customization in Syncfusion ASP.NET CORE Bullet Chart component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Axis Customization in Syncfusion ASP.NET Core Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ej2-asp-core-mvc
