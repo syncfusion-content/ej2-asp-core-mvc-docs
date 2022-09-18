@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Bullet Chart Control |Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Bullet Chart control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET CORE Bullet Chart Control |Syncfusion
+description: Checkout and learn about getting started with ASP.NET Core Bullet Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -239,3 +239,5 @@ public class DefaultBulletData
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Bullet Chart Example](https://ej2.syncfusion.com/aspnetcore/ListBox/DefaultFunctionalities#/material) that shows you how to render and configure the bullet chart.
