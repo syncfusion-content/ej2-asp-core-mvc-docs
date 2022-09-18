@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## DropDownButton Control
-description: Checkout and learn about getting started with ##Platform_Name## DropDownButton control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core DropDown Button Component | Syncfusion
+description: Checkout and learn about getting started with ASP.NET Core DropDown Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
-
 
 # Getting Started with ASP.NET Core DropDownButton Control
 
@@ -141,3 +140,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Dropdown Menu Example](https://ej2.syncfusion.com/aspnetcore/Button/DropdownButton#/material) that shows you how to render and configure the dropdown menu.
