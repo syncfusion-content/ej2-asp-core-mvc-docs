@@ -41,6 +41,7 @@ The following table lists the default keyboard shortcuts for formatting the para
 |Ctrl + 0 | No spacing is applied before the selected paragraphs.|
 |Ctrl + M | Increases the left indent of selected paragraphs by a factor of 36 points.|
 |Ctrl + Shift + M | Decreases the left indent of selected paragraphs by a factor of 36 points.|
+|Ctrl + * | Show/Hide the hidden characters like spaces, tab, paragraph marks, and breaks.|
 
 ## Clipboard
 
