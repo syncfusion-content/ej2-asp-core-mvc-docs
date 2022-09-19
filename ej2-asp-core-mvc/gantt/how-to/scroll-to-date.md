@@ -11,9 +11,9 @@ documentation: ug
 
 # Scroll To Date method
 
-In the Gantt control, When we use the [`scrollToDate`](https://ej2.syncfusion.com/documentation/api/gantt/#scrolltodate) method, it will scroll the timeline horizontally to the date that we specified in the method's argument.
+In the Gantt control, When We use the [`scrollToDate`](https://ej2.syncfusion.com/documentation/api/gantt/#scrolltodate) method, it will scroll the timeline horizontally to the date that we specified in the method's argument.
 
-The following code examples show how the scroll To Date method works in gantt.
+The following code examples show how the scroll To Date method works in Gantt:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
