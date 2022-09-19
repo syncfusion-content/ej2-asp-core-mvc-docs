@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard Shortcut in ##Platform_Name## Document Editor Component
+title: Keyboard Shortcut in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about keyboard shortcut in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Keyboard Shortcut
@@ -131,4 +131,4 @@ The following table lists the default keyboard shortcuts for formatting the para
 
 ## See Also
 
-* [How to override the keyboard shortcuts](../document-editor/how-to)
+* [How to override the keyboard shortcuts](../document-editor/how-to/override-the-keyboard-shortcuts)
