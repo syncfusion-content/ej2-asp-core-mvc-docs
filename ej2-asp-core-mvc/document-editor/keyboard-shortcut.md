@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Keyboard Shortcuts
+# Keyboard Shortcuts in Document Editor Component
 
 ## Text formatting
 
