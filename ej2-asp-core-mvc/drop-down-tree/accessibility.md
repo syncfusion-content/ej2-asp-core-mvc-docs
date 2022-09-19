@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Drop Down Tree Component
-description: Learn here all about accessibility in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ASP.NET MVC DropdownTree Component | Syncfusion
+description: Learn here all about Axis Accessibility in Syncfusion ASP.NET MVC DropdownTree Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
+# Accessibility in ASP.NET MVC DropdownTree Component
 
-# Accessibility
-
-The Dropdown Tree control has been designed keeping in mind the `WAI-ARIA` specifications, and applies WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for users who use assistive technologies (AT) and those who completely rely on keyboard navigation.
+The [ASP.NET MVC Dropdown Tree](https://www.syncfusion.com/aspnet-mvc-ui-controls/dropdown-tree) control has been designed keeping in mind the `WAI-ARIA` specifications, and applies WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for users who use assistive technologies (AT) and those who completely rely on keyboard navigation.
 
 ## ARIA attributes
 
