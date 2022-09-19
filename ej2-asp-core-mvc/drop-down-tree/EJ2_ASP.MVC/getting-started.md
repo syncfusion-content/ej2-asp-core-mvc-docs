@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## DropDownTree | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## DropDownTree control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC DropDownTree Component | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC DropdownTree control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -205,3 +205,5 @@ public class Child
 ![ASP.NET MVC DropDownTree with Childnode](images/getting-started.PNG)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/DropDownTree/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC Dropdown Tree Example](https://ej2.syncfusion.com/aspnetmvc/Button/DropDownButton#/material) that shows you how to render and configure the dropdown tree.
