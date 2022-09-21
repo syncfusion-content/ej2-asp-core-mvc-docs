@@ -22,7 +22,7 @@ The following code snippet explains how to extract the text from a page using Te
 
 ```cs
 
-var path = @"currentDirectory\..\..\..\..\Data\Simple.pdf";
+var path = @"currentDirectory/../../../../Data/Simple.pdf";
 var fileInfo = new FileInfo(path);
 var docStream = new FileStream(fileInfo.FullName, FileMode.Open, FileAccess.Read);
 // Load the PDF document.
