@@ -114,6 +114,8 @@ This can be demonstrated in the following sample. In the following sample, Grid 
 
 > [View GitHub Sample]
 
+> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 5L data, the Grid performs those data actions with the whole records, not just the current loaded 5L data.
+
 **Solution 2:**
 
 The next solution is that when virtual scrolling is enabled, the rowHeight of the Grid component needs to be reduced based on the number of total records. Then a large number of records (nearly 1 million or more) are shown without any performance degradation.
