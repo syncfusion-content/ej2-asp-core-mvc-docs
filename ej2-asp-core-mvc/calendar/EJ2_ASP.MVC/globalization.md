@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Calendar Component
+title: Globalization in ##Platform_Name## Calendar Control | Syncfusion
 description: Learn here all about Globalization in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Globalization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization
+# Globalization in ##Platform_Name## Calendar Control
 
 Globalization is the combination of  adapting the control to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization/) and also by adding cultural specific customizations and translating the text [localization](../common/localization/).
 
