@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resolve Pdfium Issue in ##Platform_Name## Pdfviewer Component
+title: Resolve Pdfium Issue in Syncfusion ##Platform_Name## Pdfviewer Component
 description: Learn here all about Resolve Pdfium Issue in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resolve Pdfium Issue
