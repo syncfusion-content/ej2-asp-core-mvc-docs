@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Server Actions
+# Server Actions with ASP.NET MVC PDFViewer Control
 
 Syncfusion PDF Viewer control is client-server oriented. It processes the PDF document on the server-side and sends the processed PDF data to the client to render the PDF document and for further operations in the PDF Viewer.
 
