@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching in ASP.NET MVC Grid Component
+title: Searching in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Searching in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Searching
