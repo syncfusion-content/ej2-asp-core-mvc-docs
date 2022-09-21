@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resolve Pdfium Issue in Syncfusion ##Platform_Name## Pdfviewer Component
+title: Resolve Pdfium Issue in ##Platform_Name## Pdfviewer Component
 description: Learn here all about Resolve Pdfium Issue in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resolve Pdfium Issue
@@ -36,7 +36,7 @@ The parent folder has to be provided as the path in the ReferencePath API.
 
 3. Provide this path in the Load method of the PDFViewerController.cs
 > You need to refer the ParentFolder up to the x64/x86 folder.
-*PdfRenderer.ReferencePath = _hostingEnvironment.ContentRootPath + /Pdfium/;*
+*PdfRenderer.ReferencePath = _hostingEnvironment.ContentRootPath + \\Pdfium\\;*
 
 4. Build and publish the application.
 
