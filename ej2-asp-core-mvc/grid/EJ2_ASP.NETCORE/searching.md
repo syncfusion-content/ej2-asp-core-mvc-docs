@@ -201,3 +201,6 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% endtabs %}
 {% endif %}
 
+
+> * Search operation can be performed in foreign key column based on following way.
+> * When a value is searched on a grid with the foreign key column, a filter query is sent to the foreign key data source, and the appropriate column is filtered depending on the search value. The search query will be sent to the grid data source, and the value of the associated field will be returned.
