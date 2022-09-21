@@ -112,8 +112,8 @@ namespace Ej2Viewer.Controllers
             if (!System.IO.File.Exists(document))
             {
                 var path = "";
-                if (System.IO.File.Exists(path + "\\Data\\" + document))
-                    documentPath = path + "\\Data\\" + document;
+                if (System.IO.File.Exists(path + "//Data//" + document))
+                    documentPath = path + "//Data//" + document;
             }
             else
             {

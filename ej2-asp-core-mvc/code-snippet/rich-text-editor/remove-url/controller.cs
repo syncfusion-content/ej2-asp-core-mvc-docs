@@ -22,12 +22,12 @@
                 if (UploadFiles != null)
                 {
                     string filename = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
-                    filename = hostingEnv.WebRootPath + "\\Uploads" + $@"\{filename}";
+                    filename = hostingEnv.WebRootPath + "//Uploads" + $@"/{filename}";
 
                     // Create a new directory, if it does not exists
-                    if (!Directory.Exists(hostingEnv.WebRootPath + "\\Uploads"))
+                    if (!Directory.Exists(hostingEnv.WebRootPath + "//Uploads"))
                     {
-                        Directory.CreateDirectory(hostingEnv.WebRootPath + "\\Uploads");
+                        Directory.CreateDirectory(hostingEnv.WebRootPath + "//Uploads");
                     }
 
                     if (!System.IO.File.Exists(filename))

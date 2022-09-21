@@ -67,14 +67,14 @@ Once the above packages are installed, we can scaffold DbContext and Model class
 {% tabs %}
 {% highlight c# tabtitle="CONSOLE" %}
 
-Scaffold-DbContext “Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Library;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False” Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+Scaffold-DbContext “Data Source=(localdb)/MSSQLLocalDB;Initial Catalog=Library;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False” Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
 {% endhighlight %}
 {% endtabs %}
 
 The above scaffolding command contains the following details for creating DbContext and model classes for the existing database and its tables.
 
-* **Connection string**: Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Library;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
+* **Connection string**: Data Source=(localdb)/MSSQLLocalDB;Initial Catalog=Library;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
 * **Data provider**: Microsoft.EntityFrameworkCore.SqlServer
 * **Output directory**: -OutputDir Models
 

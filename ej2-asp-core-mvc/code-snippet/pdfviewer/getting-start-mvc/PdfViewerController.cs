@@ -200,8 +200,8 @@ namespace PDFViewerSample.Controllers
             if (!System.IO.File.Exists(document))
             {
                 var path = HttpContext.Request.PhysicalApplicationPath;
-                if (System.IO.File.Exists(path + "App_Data\\" + document))
-                    documentPath = path + "App_Data\\" + document;
+                if (System.IO.File.Exists(path + "App_Data//" + document))
+                    documentPath = path + "App_Data//" + document;
             }
             else
             {

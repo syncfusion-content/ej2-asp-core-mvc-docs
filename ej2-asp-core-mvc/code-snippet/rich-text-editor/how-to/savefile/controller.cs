@@ -17,7 +17,7 @@ public class HomeController : Controller
     [HttpPost]
     public ActionResult Save([FromBody]RichTextEditorValue value)
     {
-        string RootPath = hostingEnv.WebRootPath + "\\js" + $@"\data.txt";
+        string RootPath = hostingEnv.WebRootPath + "//js" + $@"/data.txt";
         StreamWriter writeFile = new StreamWriter(RootPath, true);
         writeFile.WriteLine(value.text);
         writeFile.Close();

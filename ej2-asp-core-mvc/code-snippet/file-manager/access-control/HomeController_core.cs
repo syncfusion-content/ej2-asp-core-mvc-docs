@@ -19,14 +19,14 @@ namespace WebApplication.Controllers
         public PhysicalFileProvider operation;
         public string basePath;
         // Root Path in which files and folders are available.
-        string root = "wwwroot\\Files";
+        string root = "wwwroot//Files";
         public HomeController(IHostingEnvironment hostingEnvironment)
         {
             // Map the path of the files to be accessed with the host
             this.basePath = hostingEnvironment.ContentRootPath;
             this.operation = new PhysicalFileProvider();
             // Assign the mapped path as root folder
-            this.operation.RootFolder(this.basePath + "\\" + this.root);
+            this.operation.RootFolder(this.basePath + "//" + this.root);
             // Set Rules for folder and file Access
             this.operation.SetRules(GetRules());
         }
