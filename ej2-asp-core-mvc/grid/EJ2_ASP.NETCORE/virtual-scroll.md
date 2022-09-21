@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Virtual in ##Platform_Name## Grid Component
-description: Learn here all about Virtual in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Virtual Scroll in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Virtual Scroll in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Virtual
+control: Virtual Scroll
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Virtualization
+# Virtualization in ASP.NET Core Grid Component
 
 Grid allows you to load large amount of data without performance degradation.
 
