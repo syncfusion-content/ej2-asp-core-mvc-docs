@@ -304,7 +304,7 @@ namespace PDFViewerSample.Pages
             {
                 string basePath = _hostingEnvironment.WebRootPath;
                 string dataPath = string.Empty;
-                dataPath = basePath + "\\";
+                dataPath = basePath + "/";
                 if (System.IO.File.Exists(dataPath + (document)))
                     documentPath = dataPath + document;
             }
