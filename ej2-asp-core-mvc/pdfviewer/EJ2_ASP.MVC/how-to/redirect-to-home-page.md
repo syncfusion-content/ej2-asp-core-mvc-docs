@@ -138,7 +138,7 @@ namespace EJ2PdfViewer.Controllers
         public ActionResult Load(jsonObjects jsonObject)
         {
             PdfRenderer pdfviewer = new PdfRenderer();
-            PdfRenderer.ReferencePath = "C:/";//_hostingEnvironment.WebRootPath + "\\";
+            PdfRenderer.ReferencePath = "C:/";//_hostingEnvironment.WebRootPath + "/";
             MemoryStream stream = new MemoryStream();
             var jsonData = JsonConverter(jsonObject);
             object jsonResult = new object();
@@ -349,8 +349,8 @@ namespace EJ2PdfViewer.Controllers
             if (!System.IO.File.Exists(document))
             {
                 var path = HttpContext.Request.PhysicalApplicationPath;
-                if (System.IO.File.Exists(path + "App_Data\\" + document))
-                    documentPath = path + "App_Data\\" + document;
+                if (System.IO.File.Exists(path + "/App_Data/" + document))
+                    documentPath = path + "/App_Data/" + document;
             }
             else
             {
