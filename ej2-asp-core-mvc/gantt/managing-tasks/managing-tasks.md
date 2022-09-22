@@ -38,6 +38,39 @@ The following code example shows you how to enable the cell editing in Gantt con
 {% endtabs %}
 {% endif %}
 
+## Read-only Gantt
+
+In Gantt, all create, update, delete operations can be disabled by set `readOnly` property as `true`. The following sample demonstrates, render Gantt chart as read only.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/readOnly/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ReadOnly.cs" %}
+{% include code-snippet/gantt/editing/readOnly/readOnly.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/editing/readOnly/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ReadOnly.cs" %}
+{% include code-snippet/gantt/editing/readOnly/readOnly.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Alt text](images/readOnly.PNG)
+
+![Alt text](images/readOnlyEdit.png)
+
 ## Troubleshoot: Editing works only when primary key column is defined
 
 Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property, it is mandatory that any one of the columns, must be a primary column. By default, the [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column will be the primary key column.  If [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column is not defined, we need to enable [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property.

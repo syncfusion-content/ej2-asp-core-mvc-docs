@@ -28,38 +28,3 @@ Indent and Outdent of a task are used to update the level of the task in hierarc
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-## Read-only Gantt
-
-In Gantt, all create, update, delete operations can be disabled by set `readOnly` property as `true`. The following sample demonstrates, render Gantt chart as read only.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/editing/readOnly/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ReadOnly.cs" %}
-{% include code-snippet/gantt/editing/readOnly/readOnly.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt/editing/readOnly/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ReadOnly.cs" %}
-{% include code-snippet/gantt/editing/readOnly/readOnly.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/readOnly.PNG)
-
-![Alt text](images/readOnlyEdit.png)
