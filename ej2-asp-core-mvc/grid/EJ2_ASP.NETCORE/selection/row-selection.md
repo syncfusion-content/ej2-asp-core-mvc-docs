@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row Selection in ##Platform_Name## Grid Component
+title: Row Selection in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Row Selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row Selection
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Row Selection
+# Row Selection in ASP.NET Core Grid Component
 
 ## Select row at Initial rendering
 
