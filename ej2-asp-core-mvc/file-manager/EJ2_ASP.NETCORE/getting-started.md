@@ -119,18 +119,18 @@ namespace WebApplication4.Controllers
     {
         public PhysicalFileProvider operation;
         public string basePath;
-        string root = "wwwroot\\Files";
+        string root = "wwwroot//Files";
 
         public HomeController(IHostingEnvironment hostingEnvironment)
         {
             this.basePath = hostingEnvironment.ContentRootPath;
             this.operation = new PhysicalFileProvider();
-            this.operation.RootFolder(this.basePath + "\\" + this.root);
+            this.operation.RootFolder(this.basePath + "//" + this.root);
         }
 
         public object FileOperations([FromBody] FileManagerDirectoryContent args)
         {
-            var fullPath = (this.basePath + "\\" + this.root + args.Path).Replace("/", "\\");
+            var fullPath = (this.basePath + "//" + this.root + args.Path).Replace("/", "//");
             if (args.Action == "delete" || args.Action == "rename")
             {
                 if ((args.TargetPath == null) && (args.Path == ""))

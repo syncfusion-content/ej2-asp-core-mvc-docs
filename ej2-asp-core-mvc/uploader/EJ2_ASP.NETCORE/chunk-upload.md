@@ -191,7 +191,7 @@ public void Save(IList<IFormFile> chunkFile, IList<IFormFile> UploadFiles )
                                 .Parse(file.ContentDisposition)
                                 .FileName
                                 .Trim('"');
-            filename = hostingEnv.WebRootPath + $@"\{filename}";
+            filename = hostingEnv.WebRootPath + $@"/{filename}";
             size += file.Length;
             if (!System.IO.File.Exists(filename))
             {
@@ -236,7 +236,7 @@ public void Remove(IList<IFormFile> UploadFiles)
         {
             var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
             var filePath = Path.Combine(hostingEnv.WebRootPath);
-            var fileSavePath = filePath + "\\" + fileName;
+            var fileSavePath = filePath + "//" + fileName;
             if (System.IO.File.Exists(fileSavePath))
             {
                 System.IO.File.Delete(fileSavePath);

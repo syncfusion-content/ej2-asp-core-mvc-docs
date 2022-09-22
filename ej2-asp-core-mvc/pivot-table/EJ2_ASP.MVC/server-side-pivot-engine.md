@@ -222,7 +222,7 @@ public async Task<object> GetData(FetchData param)
             cacheEntry.AbsoluteExpiration = DateTimeOffset.UtcNow.AddMinutes(60);
 
             // Here bind JSON type data source from the sales-analysis.json file.
-            return new DataSource.PivotJSONData().ReadJSONData(_hostingEnvironment.ContentRootPath + "\\DataSource\\sales-analysis.json");
+            return new DataSource.PivotJSONData().ReadJSONData(_hostingEnvironment.ContentRootPath + "//DataSource//sales-analysis.json");
         });
 }
 
@@ -340,7 +340,7 @@ public async Task<object> GetData(FetchData param)
             cacheEntry.AbsoluteExpiration = DateTimeOffset.UtcNow.AddMinutes(60);
 
             // Here bind CSV type data source from sales.csv file.
-            return new DataSource.PivotCSVData().ReadCSVData(_hostingEnvironment.ContentRootPath + "\\DataSource\\sales.csv");
+            return new DataSource.PivotCSVData().ReadCSVData(_hostingEnvironment.ContentRootPath + "//DataSource//sales.csv");
         });
 }
 

@@ -305,7 +305,7 @@ In ASP.NET Core, SQL database file system provider allows the users to manage th
 
 ```typescript
 
-<add name="FileExplorerConnection" connectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\FileManager.mdf;Integrated Security=True;Trusted_Connection=true" />
+<add name="FileExplorerConnection" connectionString="Data Source=(LocalDB)/v11.0;AttachDbFilename=|DataDirectory|/FileManager.mdf;Integrated Security=True;Trusted_Connection=true" />
 
 ```
 
@@ -313,7 +313,7 @@ After cloning, just open the project in Visual Studio and restore the NuGet pack
 
 ```typescript
 
-<add name="FileExplorerConnection" connectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\FileManager.mdf;Integrated Security=True;Trusted_Connection=true" />
+<add name="FileExplorerConnection" connectionString="Data Source=(LocalDB)/v11.0;AttachDbFilename=|DataDirectory|/FileManager.mdf;Integrated Security=True;Trusted_Connection=true" />
 
 ```
 
@@ -322,7 +322,7 @@ Then, make an entry for the connection string in `appsettings.json` file as foll
 ```typescript
 
 "ConnectionStrings": {
-    "FileManagerConnection": "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\App_Data\\FileManager.mdf;Integrated Security=True;Connect Timeout=30"
+    "FileManagerConnection": "Data Source=(LocalDB)//MSSQLLocalDB;AttachDbFilename=|DataDirectory|//App_Data//FileManager.mdf;Integrated Security=True;Connect Timeout=30"
 }
 
 ```

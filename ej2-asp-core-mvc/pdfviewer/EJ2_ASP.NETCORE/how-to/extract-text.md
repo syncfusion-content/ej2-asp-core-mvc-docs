@@ -25,12 +25,12 @@ The following code snippet explains how to extract the text from a page.
 
 //Uses the Syncfusion.EJ2.PdfViewer assembly
 PdfRenderer pdfExtractText = new PdfRenderer();
-pdfExtractText.Load(@"currentDirectory\..\..\..\..\Data\HTTP Succinctly.pdf");
+pdfExtractText.Load(@"currentDirectory/../../../../Data/HTTP Succinctly.pdf");
 //Returns the bounds of the text
 List<Syncfusion.EJ2.PdfViewer.TextData> textCollection = new List<Syncfusion.EJ2.PdfViewer.TextData>();
 //Extracts the text from the first page of the PDF document along with its bounds
 string text = pdfExtractText.ExtractText(0, out textCollection);
-System.IO.File.WriteAllText(@"currentDirectory\..\..\..\..\Data\data.txt", text);
+System.IO.File.WriteAllText(@"currentDirectory/../../../../Data/data.txt", text);
 
 ```
 

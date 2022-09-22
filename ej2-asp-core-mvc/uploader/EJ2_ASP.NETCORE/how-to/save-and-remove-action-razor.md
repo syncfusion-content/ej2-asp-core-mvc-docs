@@ -74,7 +74,7 @@ public IActionResult OnPostSave(IList<IFormFile> UploadFiles)
             if (UploadFiles != null)  
             {  
                 var filename = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');  
-                filename = hostingEnv.WebRootPath + $@"\{filename}";  
+                filename = hostingEnv.WebRootPath + $@"/{filename}";  
                 if (!System.IO.File.Exists(filename))  
                 {  
                     using (FileStream fs = System.IO.File.Create(filename))  
@@ -126,7 +126,7 @@ public IActionResult OnPostRemove(IList<IFormFile> UploadFiles)
         {  
             var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');  
             var filePath = Path.Combine(hostingEnv.WebRootPath);  
-            var fileSavePath = filePath + "\\" + fileName;  
+            var fileSavePath = filePath + "//" + fileName;  
             if (!System.IO.File.Exists(fileSavePath))  
             {  
                 System.IO.File.Delete(fileSavePath);  

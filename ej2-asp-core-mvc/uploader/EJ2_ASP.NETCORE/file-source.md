@@ -63,7 +63,7 @@ public void Save(IList<IFormFile> UploadFiles)
                                     .Parse(file.ContentDisposition)
                                     .FileName
                                     .Trim('"');
-                filename =  hostingEnv.WebRootPath + $@"\{filename}";
+                filename =  hostingEnv.WebRootPath + $@"/{filename}";
                 long size = 0;
                 size += file.Length;
                 if (!System.IO.File.Exists(filename))
@@ -149,13 +149,13 @@ public DefaultController(IHostingEnvironment env)
                 {
                     for (var i = 0; i < folders.Length - 1; i++)
                     {
-                        var newFolder = uploaderFilePath + $@"\{folders[i]}";
+                        var newFolder = uploaderFilePath + $@"/{folders[i]}";
                         Directory.CreateDirectory(newFolder);
                         uploaderFilePath = newFolder;
                         filename = folders[i + 1];
                     }
                 }
-                filename = uploaderFilePath + $@"\{filename}";
+                filename = uploaderFilePath + $@"/{filename}";
                 size += file.Length;
                 if (!System.IO.File.Exists(filename))
                 {
