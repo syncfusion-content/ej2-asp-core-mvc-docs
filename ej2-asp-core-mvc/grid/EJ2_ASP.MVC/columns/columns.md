@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in ##Platform_Name## Grid Component
+title: Columns in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Columns in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Columns
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Columns
+# Columns in ASP.NET MVC Grid Component
 
 The column definitions are used as the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) schema in the Grid. This plays a vital role in rendering column values in the required format.
 
