@@ -168,3 +168,31 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% endtabs %}
 {% endif %}
 
+## Enable multiple foreign key columns
+
+Multiple foreign key columns with editing options are enabled for the ASP.NET MVC Grid component.
+
+In the following example, **Customer Name** and **Ship City** are foreign key columns that display the **ContactName** and **City** columns from foreign data.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/foreignkeycol-multiple/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Foreignkeycol-multiple.cs" %}
+{% include code-snippet/grid/columns/foreignkeycol-multiple/foreignkeycol-multiple.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/foreignkeycol-multiple/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Foreignkeycol-multiple.cs" %}
+{% include code-snippet/grid/columns/foreignkeycol-multiple/foreignkeycol-multiple.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
