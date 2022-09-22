@@ -127,3 +127,64 @@ The Toggle selection allows to perform selection and unselection of the particul
 
 
 > If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
+
+## Clear selection programmatically
+
+You can clear the Grid selection programmatically by using the `clearSelection` method.
+
+In the demo below, we initially selected the third row using [selectedRowIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SelectedRowIndex). You can clear this selection by calling the `clearSelection` method in the button click event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/programmatic-selection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Programmatic-Selection.cs" %}
+{% include code-snippet/grid/selection/programmatic-selection/programmatic-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/programmatic-selection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Programmatic-Selection.cs" %}
+{% include code-snippet/grid/selection/programmatic-selection/programmatic-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+## Get selected records on various pages
+
+Enabling the [selectionSettings.persistSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property will persist the selection in all Grid operations.
+
+So the selection will be maintained on every page even after navigating to another page.
+
+You can get the selected records using the `getSelectedRecords` method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/selected-records/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="GetSelectedRecords.cs" %}
+{% include code-snippet/grid/selection/selected-records/selected-records.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/selected-records/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="GetSelectedRecords.cs" %}
+{% include code-snippet/grid/selection/selected-records/selected-records.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
