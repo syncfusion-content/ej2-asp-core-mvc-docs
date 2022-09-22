@@ -132,7 +132,7 @@ The Toggle selection allows to perform selection and unselection of the particul
 
 You can clear the Grid selection programmatically by using the `clearSelection` method.
 
-In the demo below, we initially selected the third row using [selectedRowIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SelectedRowIndex). You can clear this selection by calling the `clearSelection` method in the button click event.
+In the demo below, we initially selected the third row using [SelectedRowIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SelectedRowIndex). You can clear this selection by calling the `clearSelection` method in the button click event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -160,7 +160,7 @@ In the demo below, we initially selected the third row using [selectedRowIndex](
 
 ## Get selected records on various pages
 
-Enabling the [selectionSettings.persistSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property will persist the selection in all Grid operations.
+Enabling the [SelectionSettings.PersistSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property will persist the selection in all Grid operations.
 
 So the selection will be maintained on every page even after navigating to another page.
 
