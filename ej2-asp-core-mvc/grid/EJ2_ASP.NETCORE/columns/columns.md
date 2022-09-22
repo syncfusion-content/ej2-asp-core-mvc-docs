@@ -392,6 +392,41 @@ function beforeRender(args) {
 {% endif %}
 
 
+## Align the text of Grid content and header
+
+For aligning the text of Grid content and header part, kindly use [textAlign](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_TextAlign) and [headerTextAlign](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderTextAlign) properties.
+
+Grid column supports the following alignments:
+
+* Left
+* Right
+* Center
+* Justify
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/alignment/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Alignment.cs" %}
+{% include code-snippet/grid/columns/alignment/alignment.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/alignment/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Alignment.cs" %}
+{% include code-snippet/grid/columns/alignment/alignment.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
 
 ## See Also
 
