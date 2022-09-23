@@ -87,7 +87,6 @@ Both the row and column virtualization can be used along with grouping. At initi
 ## Limitations for virtual scrolling
 
 * While using column virtual scrolling, column width should be in the pixel. Percentage values are not accepted.
-* Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited by the browser capability.
 * Cell selection will not be persisted in both row and column virtual scrolling.
 * Virtual scrolling is not compatible with batch editing, detail template and hierarchy features.
 * Group expand and collapse state will not be persisted.
@@ -102,3 +101,25 @@ Both the row and column virtualization can be used along with grouping. At initi
 ```
 
 * Programmatic selection using the **selectRows** method is not supported in virtual scrolling.
+
+### Prevent endless virtual scrolling due to browser height limitation
+
+When a large number of records are bound to the Grid, it can only displays the records until the height of the browser is reached. Once the browser's height is reached, the remaining records will be hidden. This is the default behavior of the browser. Grid have an option to overcome this behaviour by following the below solutions.
+
+**Solution 1:**
+
+You can prevent the height limitation when scrolling through the millions of records by loading the segment of data through the external buttons.
+
+This can be demonstrated in the following sample. In the following sample, Grid is rendered with a large number of records(nearly 2 million). Here, you can scroll 5L records at a time in Grid. If you reach the last page of 5L records, the `Load Next Set` button will be shown at the bottom of the Grid. By clicking that button, you can view the next set of 5L records in Grid.This button will be shown only if the next set of records is available. Also, `Load Previous Set` button (when the grid is on the first page) will be shown at the top of the Grid to load the previous set of 5L records. This button will be shown only if the previous set of records is available.
+
+> [View GitHub Sample]
+
+> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 5L data, the Grid performs those data actions with the whole records, not just the current loaded 5L data.
+
+**Solution 2:**
+
+The next solution is that when virtual scrolling is enabled, the rowHeight of the Grid component needs to be reduced based on the number of total records. Then a large number of records (nearly 1 million or more) are shown without any performance degradation.
+
+**Solution 3:**
+
+Another solution is to use the paging feature instead of virtual scrolling to view large numbers of records(nearly 1 million or more) in the Grid component.
