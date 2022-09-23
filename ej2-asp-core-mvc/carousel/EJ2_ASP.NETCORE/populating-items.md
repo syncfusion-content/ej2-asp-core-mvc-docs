@@ -14,6 +14,7 @@ In the Carousel, slides can be rendered in two ways as follows,
 
 * Populating items using carousel item
 * Populating items using data source
+* Populating items using partialVisible property
 
 ## Populating items using carousel item
 
@@ -22,6 +23,16 @@ When rendering the Carousel component using items binding, you can assign templa
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/carousel-item/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+## Populating items using partialVisible property
+
+When rendering the Carousel component using partialVisible, you can assign templates for each item separately or assign a common template to each item using `partialVisible` property. You can also customize the slide transition interval for each item separately. The following example code depicts the functionality as partialVisible property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/populating-items/partial-visible/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
