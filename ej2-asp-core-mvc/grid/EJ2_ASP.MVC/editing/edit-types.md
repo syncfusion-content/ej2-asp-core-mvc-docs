@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edit Types in ##Platform_Name## Grid Component
+title: Edit Types in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Edit Types in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Edit Types
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Edit Types
+# Edit Types in ASP.NET MVC Grid Component
 
 ## Customize editors using params
 

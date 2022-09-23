@@ -2,12 +2,13 @@
     var valueAccessor = "valueAccessorFn";
 }
 
+
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.Datasource).Created("created").AllowTextWrap(true).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("150").Type("string").Add();
     col.Field("Freight").HeaderText("Freight").Type("number").Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ShipCity").HeaderText("Ship Address").Type("string").Width("150").ValueAccessor("valueAccessor").Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Add();
+    col.Field("ShipCity").HeaderText("Ship Address").Type("string").Width("150").DisableHtmlEncode(false).ValueAccessor("valueAccessor").Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Add();
 
 }).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
@@ -42,7 +43,6 @@
     }
 
     function created() {
-        this.keyConfigs.enter = "";
+        this.keyConfigs.enter = '';
     }
-
 </script>
