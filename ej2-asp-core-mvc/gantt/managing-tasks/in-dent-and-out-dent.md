@@ -1,4 +1,15 @@
-# Indent and Outdent in Gantt
+---
+layout: post
+title: Indent and Outdent in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about Indent and Outdent in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Managing Tasks
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
+# Indent and Outdent
 
 Indent and Outdent of a task are used to update the level of the task in hierarchical order of the task. It can be performed bu enabling the [`editSettings.allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettingsBuilder.html#Syncfusion_EJ2_Gantt_GanttEditSettingsBuilder_AllowEditing_System_Boolean_) property.
 
