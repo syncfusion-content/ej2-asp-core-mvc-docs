@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching in ASP.NET MVC Grid Component
+title: Searching in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Searching in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Searching
@@ -202,6 +202,9 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% endif %}
 
 
+
+> * Search operation can be performed in foreign key column based on following way.
+> * When a value is searched on a grid with the foreign key column, a filter query is sent to the foreign key data source, and the appropriate column is filtered depending on the search value. The search query will be sent to the grid data source, and the value of the associated field will be returned.
 
 ## See Also
 
