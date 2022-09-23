@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching in ASP.NET Core Grid Component
+title: Searching in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Searching in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Searching
@@ -201,3 +201,35 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% endtabs %}
 {% endif %}
 
+
+
+## Perform search operation in Grid using multiple keywords
+
+You can perform a searching operation in the Grid using multiple keywords. This can be achieved by the [ActionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of the Grid.
+In the following sample, we have performed the searching with multiple keywords by using the query property of grid when the requestType is searching in the [ActionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/search-multiple-keywords/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Search-multiple-keywords.cs" %}
+{% include code-snippet/grid/search/search-multiple-keywords/search-multiple-keywords.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+ {% include code-snippet/grid/search/search-multiple-keywords/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Search-multiple-keywords.cs" %}
+{% include code-snippet/grid/search/search-multiple-keywords/search-multiple-keywords.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+> * Define multiple keywords by using a comma separator in search bar to search.
