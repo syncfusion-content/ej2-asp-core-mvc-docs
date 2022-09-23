@@ -179,6 +179,116 @@ The cell edit template is used to add a custom component for a particular column
 {% endif %}
 
 
+### Render TimePicker component while editing
+
+Use the cell edit template feature of the Grid to render the TimePicker component in the Grid edit form. In the below sample, we have rendered TimePicker component in the **OrderDate** column.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/timepicker/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TimePicker.cs" %}
+{% include code-snippet/grid/edit/timepicker/timepicker.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/timepicker/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TimePicker.cs" %}
+{% include code-snippet/grid/edit/timepicker/timepicker.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+### Render AutoComplete component while editing
+
+Use the cell edit template feature of the Grid to render the AutoComplete component in the Grid edit form. In the below sample, we have rendered AutoComplete component in the **CustomerID** column.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/autocomplete/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AutoComplete.cs" %}
+{% include code-snippet/grid/edit/autocomplete/autocomplete.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/autoComplete/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Autocomplete.cs" %}
+{% include code-snippet/grid/edit/autocomplete/autocomplete.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+### Render MultiSelect DropDown component while editing
+
+Use the cell edit template feature of the Grid to render the MultiSelect DropDown component in the Grid edit form. In the below sample, we have rendered MultiSelect DropDown component in the **ShipCity** column.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/multiselect/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="MultiSelect.cs" %}
+{% include code-snippet/grid/edit/multiselect/multiselect.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/multiselect/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="MultiSelect.cs" %}
+{% include code-snippet/grid/edit/multiselect/multiselect.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Render RichTextEditor component while editing
+
+Use the cell edit template feature of the Grid to render the RichTextEditor component in the Grid edit form. In the below sample, we have rendered RichTextEditor component in the **ShipAddress** column, so we use [AllowTextWrap](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowTextWrap) property to true.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/rte/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="RTE.cs" %}
+{% include code-snippet/grid/edit/rte/rte.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/rte/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RTE.cs" %}
+{% include code-snippet/grid/edit/rte/rte.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 
 ## Access editor components
 

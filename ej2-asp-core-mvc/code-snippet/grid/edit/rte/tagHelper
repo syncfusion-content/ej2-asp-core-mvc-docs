@@ -1,0 +1,49 @@
+@{
+    var valueAccessor = "valueAccessorFn";
+}
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowTextWrap="true" created="created" allowPaging="true" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
+    <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editsettings>
+    <e-grid-pageSettings pageSize="15"></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" type="number" headerText="Order ID" validationRules="@(new { required= true })" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" type="string" headerText="Customer Name" type="string" width="150"></e-grid-column>
+        <e-grid-column field="Freight" type="number" headerText="Freight" editType="numericedit" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship Address" disableHtmlEncode="false" valueAccessor="valueAccessor" edit="@(new {create = "create", read = "read", destroy = "destroy", write = "write"})" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var textEditor;
+    var element
+    function create(args) {
+        element = document.createElement('textarea');
+        return element;
+    }
+    function read(e) {
+        return textEditor.value;
+    }
+    function destroy() {
+        textEditor.destroy();
+    }
+    function write(args) {
+        textEditor = new ej.inputs.TextBox({
+            multiline: true,
+            value: args.rowData[args.column.field],
+            floatLabelType: 'Auto',
+        });
+        textEditor.appendTo(element);
+    }
+    function valueAccessorFn(field, data, column) {
+        var value = data[field];
+        if (value != undefined) {
+            return value.split('\n').join('<br>');
+        } else {
+            return '';
+        }
+    }
+
+    function created() {
+        this.keyConfigs.enter ="";
+    }
+</script>

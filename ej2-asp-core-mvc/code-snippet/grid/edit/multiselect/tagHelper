@@ -1,0 +1,45 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
+    <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editsettings>
+    <e-grid-pageSettings pageSize="15"></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" type="number" headerText="Order ID" validationRules="@(new { required= true })" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" type="string" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="Freight" type="number" headerText="Freight" editType="numericedit" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150" edit="@(new {create = "create", read = "read", destroy = "destroy", write = "write"})"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var multiselectDatasource = [
+        { ShipCity: 'Berlin', Id: '1' },
+        { ShipCity: 'Madrid', Id: '2' },
+        { ShipCity: 'Cholchester', Id: '3' },
+        { ShipCity: 'Marseille', Id: '4' },
+        { ShipCity: 'Tsawassen', Id: '5' },
+    ];
+    var multiSelectObj;
+    var element
+    function create(args) {
+        element = document.createElement('input');
+        return element;
+    }
+    function read(e) {
+        return multiSelectObj.value.join(',');
+    }
+    function destroy() {
+        multiSelectObj.destroy();
+    }
+    function write(args) {
+        let multiSelectVal = args.rowData[args.column.field]
+            ? args.rowData[args.column.field].split(',')
+            : [];
+        multiSelectObj = new ej.dropdowns.MultiSelect({
+            value: multiSelectVal,
+            dataSource: multiselectDatasource,
+            fields: { value: 'ShipCity', text: 'ShipCity' },
+            floatLabelType: 'Never',
+            mode: 'Box',
+        });
+        multiSelectObj.appendTo(element);
+    }
+</script>
