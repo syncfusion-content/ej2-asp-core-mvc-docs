@@ -14,7 +14,6 @@ In the Carousel, slides can be rendered in two ways as follows,
 
 * Populating items using carousel item
 * Populating items using data source
-* Populating items using partialVisible property
 
 ## Populating items using carousel item
 
@@ -23,16 +22,6 @@ When rendering the Carousel component using items binding, you can assign templa
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/carousel-item/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-## Populating items using partialVisible property
-
-When rendering the Carousel component using partialVisible, you can assign templates for each item separately or assign a common template to each item using `partialVisible` property. You can also customize the slide transition interval for each item separately. The following example code depicts the functionality as partialVisible property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/carousel/populating-items/partial-visible/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,6 +48,7 @@ The Carousel items will be populated from the first index of the Carousel items 
 
 * Select an item using the property.
 * Select an item using the method.
+* Partial visible slides
 
 ### Select an item using the property
 
@@ -79,6 +69,16 @@ Using the `prev` or `next` public method of the Carousel component, you can swit
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/select-item-method/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+## Partial visible slides
+
+Using the [`partialVisible`](../api/carousel/#partialVisible) property, you can set the next and previous slides to be partially displayed.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/populating-items/partial-visible/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 

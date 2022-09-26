@@ -14,7 +14,6 @@ In the Carousel, slides can be rendered in two ways as follows,
 
 * Populating items using carousel item
 * Populating items using data source
-* Populating items using partialVisible property
 
 ## Populating items using carousel item
 
@@ -26,19 +25,6 @@ When rendering the Carousel component using items binding, you can assign templa
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/carousel/populating-items/carousel-item/carousel-item.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-## Populating items using partialVisible property
-
-When rendering the Carousel component using partialVisible, you can assign templates for each item separately or assign a common template to each item using `partialVisible` property. You can also customize the slide transition interval for each item separately. The following example code depicts the functionality as partialVisible property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/carousel/populating-items/partial-visible/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/carousel/populating-items/partial-visible/partial-visible.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,6 +47,7 @@ The Carousel items will be populated from the first index of the Carousel items 
 
 * Select an item using the property.
 * Select an item using the method.
+* Partial visible slides
 
 ### Select an item using the property
 
@@ -89,3 +76,17 @@ Using the `prev` or `next` public method of the Carousel component, you can swit
 {% include code-snippet/carousel/populating-items/select-item-method/select-item-method.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## Partial visible slides
+
+Using the [`partialVisible`](../api/carousel/#partialVisible) property, you can set the next and previous slides to be partially displayed.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/populating-items/partial-visible/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/populating-items/partial-visible/partial-visible.cs %}
+{% endhighlight %}
+{% endtabs %}
+
