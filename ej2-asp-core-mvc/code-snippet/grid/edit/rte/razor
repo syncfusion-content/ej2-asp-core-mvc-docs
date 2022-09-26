@@ -2,47 +2,50 @@
     var valueAccessor = "valueAccessorFn";
 }
 
-
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.Datasource).Created("created").AllowTextWrap(true).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.datasource).AllowTextWrap(true).Created("created").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Type("string").Add();
-    col.Field("Freight").HeaderText("Freight").Type("number").Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ShipCity").HeaderText("Ship Address").Type("string").Width("150").DisableHtmlEncode(false).ValueAccessor("valueAccessor").Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Add();
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width(30).Add();
+    col.Field("Freight").HeaderText("Freight").Width(120).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width(150).DisableHtmlEncode(false).ValueAccessor(valueAccessor).Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Add();
 
-}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+}).EditSettings(edit => edit.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Render()
+
 
 <script>
     var textEditor;
-    var element
+    var elemContent;
     function create(args) {
-        element = document.createElement('textarea');
-        return element;
+        elemContent = document.createElement('textarea');
+        return elemContent;
     }
-    function read(e) {
-        return textEditor.value;
-    }
-    function destroy() {
-        textEditor.destroy();
-    }
+
     function write(args) {
         textEditor = new ej.inputs.TextBox({
             multiline: true,
             value: args.rowData[args.column.field],
-            floatLabelType: 'Auto',
+            floatLabelType: 'Auto'
         });
-        textEditor.appendTo(element);
-    }
-    function valueAccessorFn(field, data, column) {
-        var value = data[field];
-        if (value != undefined) {
-            return value.split('\n').join('<br>');
-        } else {
-            return '';
-        }
+        textEditor.appendTo(elemContent);
     }
 
-    function created() {
-        this.keyConfigs.enter = '';
+    function destroy() {
+        textEditor.destroy();
+    }
+
+    function read(args) {
+        return textEditor.value;
+    }
+
+    function created(args) {
+        document.getElementById('Grid').ej2_instances[0].keyConfigs.enter = '';
+    }
+    
+    function valueAccessorFn(field, data, column) {
+        var value = data[field];
+        if (value !== undefined) {
+            return value.split("\n").join("<br>");
+        } else {
+            return "";
+        }
     }
 </script>
