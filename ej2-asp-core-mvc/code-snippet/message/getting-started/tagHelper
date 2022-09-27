@@ -1,1 +1,1 @@
-<ejs-message id="msg_info" content="Please read the comments carefully"></ejs-message>
+<ejs-message id="msg_default" content="Please read the comments carefully"></ejs-message>

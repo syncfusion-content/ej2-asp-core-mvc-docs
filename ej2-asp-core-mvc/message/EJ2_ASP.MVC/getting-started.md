@@ -115,4 +115,4 @@ Now, add the Syncfusion ASP.NET MVC Message control in `~/Views/Home/Index.cshtm
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Message control will be rendered in the default web browser.
 
-![ASP.NET MVC Toast Control](images/message-default.PNG)
+![ASP.NET MVC Message Control](images/message-default.PNG)
