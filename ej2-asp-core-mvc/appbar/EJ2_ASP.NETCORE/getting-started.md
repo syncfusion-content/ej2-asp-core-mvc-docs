@@ -98,18 +98,12 @@ Now, add the Syncfusion ASP.NET Core AppBar tag helper in `~/Pages/Index.cshtml`
     <ejs-appbar id="defaultAppBar" colorMode="Primary">
         <e-content-template>
             <ejs-button aria-label="menu" id="defaultButtonMenu" cssClass="e-inherit menu" iconCss="e-icons e-menu"></ejs-button>
-            <span class="regular">EJ2 AppBar</span>
+            <span class="regular" style="margin:0 5px">EJ2 AppBar</span>
             <div class="e-appbar-spacer"></div>
             <ejs-button id="defaultButtonLogin" cssClass="e-inherit login" content="FREE TRIAL"></ejs-button>
         </e-content-template>
     </ejs-appbar>
 </div>
-
-<style>
-    .default-appbar-section .regular {
-        margin: 0 5px;
-    }
-</style>
 {% endhighlight %}
 {% endtabs %}
 
