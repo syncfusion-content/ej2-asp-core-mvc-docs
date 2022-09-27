@@ -1,5 +1,5 @@
 <div style="height:400px;">
-    <ejs-button id="ConfirmBtn" content="Confirm" isPrimary="true"></ejs-button>
+    <ejs-button id="confirmBtn" content="Confirm" cssClass="e-success"></ejs-button>
 </div>
 
 <script>
