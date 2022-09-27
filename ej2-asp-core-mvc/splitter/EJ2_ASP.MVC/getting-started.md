@@ -287,4 +287,4 @@ Also you can render the nested splitter using direct child of the splitter pane.
 * [Real time example using Splitter](https://ej2.syncfusion.com/aspnetmvc/Splitter/OutlookStyleLayout#/bootstrap5).
 * [Construct different layouts using Splitter](./different-layouts).
 
-N> You can also explore our [ASP.NET MVC Splitter Example](https://ej2.syncfusion.com/aspnetmvc/Splitter/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Button Group.
+N> You can also explore our [ASP.NET MVC Splitter Example](https://ej2.syncfusion.com/aspnetmvc/Splitter/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Splitter.
