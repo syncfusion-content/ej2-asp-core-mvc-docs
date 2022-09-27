@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Predefined Dialogs Control
+title: Getting Started with ##Platform_Name## Predefined Dialogs Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Predefined Dialogs control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -89,15 +89,15 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## open ASP.NET Core Predefined Dialogs control
+## Open ASP.NET Core Predefined Dialogs control
 
 Now, add the Syncfusion ASP.NET Core Pregefined Dialogs tag helper in `~/Pages/Index.cshtml` page.
 
-Once you completed the setup, you can open predefined dialogs from any where in application using `Alert`,`Confirm` or `PromptAsync` methods in `DialogServices`.
+Once you completed the setup, you can open predefined dialogs from any where in application using `Alert`,`Confirm` or `Prompt` methods in `DialogUtility`.
 
 ### Show alert dialog
 
-An alert dialog box used to display an errors, warnings, and information alerts that needs user awareness. This can be achieved by using the `DialogUtility.Alert`method. The alert dialog is displayed along with the `OK` button. When user clicks on `OK` button, alert dialog will get closed.
+An alert dialog box used to display an errors, warnings, and information alerts that needs user awareness. This can be achieved by using the `DialogUtility.Alert` method. The alert dialog is displayed along with the `OK` button. When user clicks on `OK` button, alert dialog will get closed.
 
 In the below code example, alert dialog displayed on button click action.
 
@@ -124,10 +124,6 @@ In the below code example, alert dialog displayed on button click action.
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Dialog control will be rendered in the default web browser.
 
 ![ASP.NET Core Predfined Dialogs Control](../images/alert-default.png)
-
-
-
-
 ### Show confirm dialog
 
 A confirm dialog box used to displays a specified message along with the `OK` and `Cancel` buttons, which returns a boolean value according to the user's click action. When the user clicks the `OK` button, the `true` value is returned otherwise it will returns the `false` value. This can be achieved by using the DialogUtility.`Confirm` method. It is used to get approval from the user, and it appears before any critical action. After get approval from the user the dialog will disappear automatically.

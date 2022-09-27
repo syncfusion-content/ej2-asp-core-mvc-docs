@@ -21,15 +21,15 @@ Use the following code snippet for **alert.cshtml**, **confirm.cshtml** and **pr
 
 {% tabs %}
 
-{% highlight cshtml tabtitle="alert.cshtml" %}
+{% highlight cshtml tabtitle="Alert.cshtml" %}
 {% include_relative code-snippet/predefined-dialogs/position/alert/tagHelper %}
 {% endhighlight %}
 
-{% highlight cshtml tabtitle="confirm.cshtml" %}
+{% highlight cshtml tabtitle="Confirm.cshtml" %}
 {% include_relative code-snippet/predefined-dialogs/position/confirm/tagHelper %}
 {% endhighlight %}
 
-{% highlight cshtml tabtitle="prompt.cshtml" %}
+{% highlight cshtml tabtitle="Prompt.cshtml" %}
 {% include_relative code-snippet/predefined-dialogs/position/prompt/tagHelper %}
 {% endhighlight %}
 
@@ -37,26 +37,49 @@ Use the following code snippet for **alert.cshtml**, **confirm.cshtml** and **pr
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+**Alert**
+
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/predefined-dialogs/draggable/alert/razor %}
+{% highlight razor tabtitle="Alert.cshtml" %}
+{% include code-snippet/predefined-dialogs/position/alert/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/getting-started/confirm-dialog/controller.cs %}
+{% include code-snippet/predefined-dialogs/position/alert/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
+**Confirm**
+
+{% tabs %}
+{% highlight razor tabtitle="Confirm.cshtml" %}
+{% include code-snippet/predefined-dialogs/position/confirm/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/position/confirm/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+**Prompt**
+
+{% tabs %}
+{% highlight razor tabtitle="Prompt.cshtml" %}
+{% include code-snippet/predefined-dialogs/position/prompt/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/position/prompt/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 **Results from the code snippet**
 
 **Alert**
 
-![Alert position Dialog](./images/alert-position.png)
+![Alert position Dialog](../images/alert-position.png)
 
 **Confirm**
 
-![Confirm position Dialog](./images/confirm-position.png)
+![Confirm position Dialog](../images/confirm-position.png)
 
 **Prompt**
 
-![Prompt position Dialog](./images/prompt-position.png)
+![Prompt position Dialog](../images/prompt-position.png)

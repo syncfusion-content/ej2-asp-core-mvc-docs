@@ -7,7 +7,7 @@
         ej.popups.DialogUtility.alert({
             title: ' Delete Multiple Items',
             content: "Are you sure you want to permanently delete these items?",
-            animationSettings: { effect: 'Zoom',duration: 400},
+            animationSettings: { effect: 'Zoom',duration: 400}
         });
     };
 </script>

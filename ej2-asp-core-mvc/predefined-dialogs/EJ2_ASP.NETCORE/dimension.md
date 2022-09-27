@@ -28,7 +28,7 @@ Use the following code snippet for **alert.cshtml**, **confirm.cshtml** and **pr
 {% include_relative code-snippet/predefined-dialogs/dimension/confirm/tagHelper %}
 {% endhighlight %}
 
-{% highlight cshtml tabtitle="Confirm.cshtml" %}
+{% highlight cshtml tabtitle="Prompt.cshtml" %}
 {% include_relative code-snippet/predefined-dialogs/dimension/prompt/tagHelper %}
 {% endhighlight %}
 
@@ -36,12 +36,36 @@ Use the following code snippet for **alert.cshtml**, **confirm.cshtml** and **pr
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+**Alert**
+
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/predefined-dialogs/draggable/alert/razor %}
+{% highlight razor tabtitle="Alert.cshtml" %}
+{% include code-snippet/predefined-dialogs/dimension/alert/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/getting-started/confirm-dialog/controller.cs %}
+{% include code-snippet/predefined-dialogs/dimension/alert/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+**Confirm**
+
+{% tabs %}
+{% highlight razor tabtitle="Confirm.cshtml" %}
+{% include code-snippet/predefined-dialogs/dimension/confirm/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/dimension/confirm/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+**Prompt**
+
+{% tabs %}
+{% highlight razor tabtitle="Prompt.cshtml" %}
+{% include code-snippet/predefined-dialogs/dimension/prompt/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/dimension/prompt/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,16 +105,16 @@ Use the following code to customize the max-width and max-height for alert dialo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/predefined-dialogs/draggable/alert/razor %}
+{% include code-snippet/predefined-dialogs/dimension/alert-max-height-width/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/getting-started/confirm-dialog/controller.cs %}
+{% include code-snippet/predefined-dialogs/dimension/alert-max-height-width/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% endif %}
 
-![Max width and height](./images/alert-dimension-max-height-width.png)
+![Max width and height](../images/alert-dimension-max-height-width.png)
 
 ## Min-width and min-height
 
@@ -103,7 +127,7 @@ Use the following code to customize the min-width and min-height for alert dialo
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/dimension/alert-min-height-width/tagHelper %}
+{% include code-snippet/predefined-dialogs/dimension/alert-min-height-width/tagHelper %}
 {% endhighlight %}
 
 {% endtabs %}
@@ -121,4 +145,4 @@ Use the following code to customize the min-width and min-height for alert dialo
 
 {% endif %}
 
-![Min width and height](./images/alert-dimension-min-height-width.png)
+![Min width and height](../images/alert-dimension-min-height-width.png)

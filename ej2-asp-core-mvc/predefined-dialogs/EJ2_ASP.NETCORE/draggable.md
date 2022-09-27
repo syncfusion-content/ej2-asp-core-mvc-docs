@@ -24,16 +24,39 @@ The predefined dialogs supports dragging within its target container by grabbing
 {% include code-snippet/predefined-dialogs/draggable/confirm/tagHelper %}
 {% endhighlight %}
 
+{% highlight cshtml tabtitle="Prompt.cshtml" %}
+{% include code-snippet/predefined-dialogs/draggable/prompt/tagHelper %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+**Alert**
+
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
+{% highlight razor tabtitle="Alert.cshtml" %}
 {% include code-snippet/predefined-dialogs/draggable/alert/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/getting-started/confirm-dialog/controller.cs %}
+{% include code-snippet/predefined-dialogs/draggable/alert/controller.cs %}
+{% endhighlight %}
+
+**Confirm**
+
+{% highlight razor tabtitle="Confirm.cshtml" %}
+{% include code-snippet/predefined-dialogs/draggable/confirm/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/draggable/confirm/controller.cs %}
+{% endhighlight %}
+
+**Prompt**
+
+{% highlight razor tabtitle="Prompt.cshtml" %}
+{% include code-snippet/predefined-dialogs/draggable/prompt/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/draggable/prompt/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 

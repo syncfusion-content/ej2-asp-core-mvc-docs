@@ -7,7 +7,7 @@
         ej.popups.DialogUtility.alert({
             title: 'Low Battery',
             content: '10% of battery remaining',
-            animationSettings: { effect: 'Zoom',duration: 400},
+            animationSettings: { effect: 'Zoom',duration: 400}
         });
     };
 </script>

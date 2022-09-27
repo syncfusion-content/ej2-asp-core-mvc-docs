@@ -24,84 +24,145 @@ For confirm dialog, customized the default dialog buttons content as `Yes` and `
 
 For prompt dialog , customized the default dialog buttons content as `Connect` and `Close` by using `okButton.text` and `cancelButton.text` property.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 
-{% highlight razor tabtitle="alert.razor" %}
-{% include_relative code-snippet/alert-action-button.razor %}
+{% highlight cshtml tabtitle="Alert.cshtml" %}
+{% include_relative code-snippet/predefined-dialogs/customization/action-btn/alert/tagHelper %}
 {% endhighlight %}
 
-{% highlight razor tabtitle="confirm.razor" %}
-{% include_relative code-snippet/confirm-action-button.razor %}
+{% highlight cshtml tabtitle="Confirm.cshtml" %}
+{% include_relative code-snippet/predefined-dialogs/customization/action-btn/confirm/tagHelper %}
 {% endhighlight %}
 
-{% highlight razor tabtitle="prompt.razor" %}
-{% include_relative code-snippet/prompt-action-button.razor %}
+{% highlight cshtml tabtitle="Prompt.cshtml" %}
+{% include_relative code-snippet/predefined-dialogs/customization/action-btn/prompt/tagHelper %}
 {% endhighlight %}
 
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+**Alert**
+
+{% tabs %}
+{% highlight razor tabtitle="Alert.cshtml" %}
+{% include code-snippet/predefined-dialogs/customization/action-btn/alert/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/customization/action-btn/alert/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+**Confirm**
+
+{% tabs %}
+{% highlight razor tabtitle="Confirm.cshtml" %}
+{% include code-snippet/predefined-dialogs/customization/action-btn/confirm/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/customization/action-btn/confirm/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+**Prompt**
+
+{% tabs %}
+{% highlight razor tabtitle="Prompt.cshtml" %}
+{% include code-snippet/predefined-dialogs/customization/action-btn/prompt/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/customization/action-btn/prompt/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 **Results from the code snippet**
 
 **Alert**
 
-![Alert action buttons Dialog](./images/blazor-alert-action-button.png)
+![Alert action buttons Dialog](../images/alert-custom-action-btn.png)
 
 **Confirm**
 
-![Confirm action buttons Dialog](./images/blazor-confirm-action-button.png)
+![Confirm action buttons Dialog](../images/confirm-custom-action-btn.png)
 
 **Prompt**
 
-![Prompt action buttons Dialog](./images/blazor-prompt-action-button.png)
+![Prompt action buttons Dialog](../images/Prompt-custom-action-btn.png)
 
 ## Show or hide dialog close button 
 
 You can show or hide close button in dialog using the `showCloseIcon` property.The default value is `false`.
 
-Use the following code snippet for **alert.cshtml**, **confirm.cshtml** and **prompt.cshtml** to customize the show or hide dialog close button.
+Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Prompt.cshtml** to customize the show or hide dialog close button.
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 
-{% highlight razor tabtitle="alert.razor" %}
-{% include_relative code-snippet/alert-close-button.razor %}
+{% highlight cshtml tabtitle="Alert.cshtml" %}
+{% include_relative code-snippet/predefined-dialogs/customization/show-hide-btn/alert/tagHelper %}
 {% endhighlight %}
 
-{% highlight razor tabtitle="confirm.razor" %}
-{% include_relative code-snippet/confirm-close-button.razor %}
+{% highlight cshtml tabtitle="Confirm.cshtml" %}
+{% include_relative code-snippet/predefined-dialogs/customization/show-hide-btn/confirm/tagHelper %}
 {% endhighlight %}
 
-{% highlight razor tabtitle="prompt.razor" %}
-{% include_relative code-snippet/prompt-close-button.razor %}
+{% highlight cshtml tabtitle="Prompt.cshtml" %}
+{% include_relative code-snippet/predefined-dialogs/customization/show-hide-btn/prompt/tagHelper %}
 {% endhighlight %}
 
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+**Alert**
+
+{% tabs %}
+{% highlight razor tabtitle="Alert.cshtml" %}
+{% include code-snippet/predefined-dialogs/customization/show-hide-btn/alert/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/customization/show-hide-btn/alert/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+**Confirm**
+
+{% tabs %}
+{% highlight razor tabtitle="Confirm.cshtml" %}
+{% include code-snippet/predefined-dialogs/customization/show-hide-btn/confirm/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/customization/show-hide-btn/confirm/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+**Prompt**
+
+{% tabs %}
+{% highlight razor tabtitle="Prompt.cshtml" %}
+{% include code-snippet/predefined-dialogs/customization/show-hide-btn/prompt/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/customization/show-hide-btn/prompt/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 **Results from the code snippet**
 
 **Alert**
 
-![Alert close icon Dialog](./images/blazor-alert-close-button.png)
+![Alert close icon Dialog](../images/alert-show-hide-btn.png)
 
 **Confirm**
 
-![Confirm close icon Dialog](./images/blazor-confirm-close-button.png)
+![Confirm close icon Dialog](../images/alert-show-hide-btn.png)
 
 **Prompt**
 
-![Prompt close icon Dialog](./images/blazor-prompt-close-button.png)
+![Prompt close icon Dialog](../images/alert-show-hide-btn.png)
 
-### Customize dialog content
-
-You can load custom content in predefined dialogs using the `content` property. 
-
-Use the following code to customize the dialog content to render the custom TextBox component inside the prompt dialog to get the username from the user.
-
-{% tabs %}
-{% highlight razor %}
-
-{% include_relative code-snippet/customize-dialog.razor %}
-
-{% endhighlight %}
-{% endtabs %}
-
-![Customize Prompt Dialog](./images/blazor-customize-dialog.png)
