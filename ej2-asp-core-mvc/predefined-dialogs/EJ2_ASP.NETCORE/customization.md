@@ -90,7 +90,7 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 
 **Prompt**
 
-![Prompt action buttons Dialog](../images/Prompt-custom-action-btn.png)
+![Prompt action buttons Dialog](../images/prompt-custom-action-btn.png)
 
 ## Show or hide dialog close button 
 
@@ -160,9 +160,9 @@ Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Pr
 
 **Confirm**
 
-![Confirm close icon Dialog](../images/alert-show-hide-btn.png)
+![Confirm close icon Dialog](../images/confirm-show-hide-btn.png)
 
 **Prompt**
 
-![Prompt close icon Dialog](../images/alert-show-hide-btn.png)
+![Prompt close icon Dialog](../images/prompt-show-hide-btn.png)
 
