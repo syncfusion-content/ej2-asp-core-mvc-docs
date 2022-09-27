@@ -124,11 +124,11 @@ The Essential JS 2 CheckBox contains 3 different states visually, they are:
 * Unchecked
 * Indeterminate
 
-The CheckBox [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In checked state a tick mark will be added to the visualization of CheckBox.
+The CheckBox [Checked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In checked state a tick mark will be added to the visualization of CheckBox.
 
 ### Indeterminate
 
-The CheckBox indeterminate state can be set through [`indeterminate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Indeterminate) property. CheckBox indeterminate state masks the real value of CheckBox visually. The Checkbox cannot be changed to indeterminate state through the user interface, this state can be achieved only through the property.
+The CheckBox indeterminate state can be set through [Indeterminate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Indeterminate) property. CheckBox indeterminate state masks the real value of CheckBox visually. The Checkbox cannot be changed to indeterminate state through the user interface, this state can be achieved only through the property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -153,3 +153,6 @@ The CheckBox indeterminate state can be set through [`indeterminate`](https://he
 ![ASP.NET MVC CheckBox with Different States](images/checkbox-state.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/CheckBox/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC Checkbox example](https://ej2.syncfusion.com/aspnetmvc/Button/CheckBox#/material) that shows you how to render and configure the Checkbox in ASP.NET MVC.
+
