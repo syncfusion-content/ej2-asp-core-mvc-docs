@@ -1,0 +1,8 @@
+@{
+    ...
+}
+
+<label>UserName:</label>
+<input id="defaultMention" placeholder="Type @@ and tag user" />
+
+<ejs-mention id="default" target="#defaultMention"></ejs-mention>

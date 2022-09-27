@@ -1,0 +1,5 @@
+
+<label>UserName:</label>
+<input id="defaultMention" placeholder="Type @Html.Raw("@") and tag user" />
+
+@Html.EJS().Mention("default").Target("#defaultMention").Render()

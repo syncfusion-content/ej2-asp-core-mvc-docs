@@ -1,0 +1,6 @@
+@model List<string>
+
+<label>UserName:</label>
+<input id="defaultMention" placeholder="Type @Html.Raw("@") and tag user" />
+
+@Html.EJS().Mention("default_data").Target("#defaultMention").DataSource((IEnumerable<object>)ViewBag.data).Render()

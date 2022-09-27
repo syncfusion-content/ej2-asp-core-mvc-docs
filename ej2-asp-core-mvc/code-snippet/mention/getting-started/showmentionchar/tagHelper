@@ -1,0 +1,10 @@
+@{
+    ...
+    var data = new string[] { "Selma Rose", "Garth", "Robert", "William", "Joseph" };
+    char nameMentionChar = '#';
+}
+
+<label>UserName:</label>
+<input id="defaultMention" placeholder="Type # and tag user" />
+
+<ejs-mention id="showMention" dataSource="@data" mentionChar="@nameMentionChar" showMentionChar="true" target="#defaultMention"></ejs-mention>

@@ -1,0 +1,10 @@
+@model List<string>
+
+@{ 
+    char nameMentionChar = '#';
+}
+
+<label>UserName:</label>
+<input id="defaultMention" placeholder="Type @Html.Raw("#") and tag user" />
+
+@Html.EJS().Mention("showMention").Target("#defaultMention").MentionChar(nameMentionChar).ShowMentionChar(true).DataSource((IEnumerable<object>)ViewBag.data).Render()

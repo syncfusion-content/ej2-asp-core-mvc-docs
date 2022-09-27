@@ -1,0 +1,9 @@
+@{
+    ...
+    var data = new string[] { "Selma Rose", "Garth", "Robert", "William", "Joseph" };
+}
+
+<label>UserName:</label>
+<input id="defaultMention" placeholder = "Type @@ and tag user" />
+
+<ejs-mention id="default_data" dataSource="@data" target="#defaultMention"></ejs-mention>
