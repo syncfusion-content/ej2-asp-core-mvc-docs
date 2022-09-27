@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Predefined Dialogs Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Predefined Dialogs control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Predefined Dialogs of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Predefined Dialogs Control
+# Getting Started with ASP.NET Core Predefined Dialogs 
 
-This section briefly explains about how to include ASP.NET Core Predefined Dialogs control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include ASP.NET Core Predefined Dialogs in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -89,15 +89,37 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Open ASP.NET Core Predefined Dialogs control
+# Render a Dialog using utility functions
+
+The Dialog control provides built-in utility functions to render the alert and confirm dialogs with the minimal code. The following options are used as an argument on calling the utility functions:
+
+| Options   | Description |
+|-----------|-------------|
+| title | Specifies the title of dialog like the [`header`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Header) property.|
+| content | Specifies the value that can be displayed in dialog's content area like the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Content) property. |
+| isModal | Specifies the Boolean value whether the dialog can be displayed as modal or non-modal. For more details, refer to the [`isModal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) property.|
+| position | Specifies the value where the alert or confirm dialog is positioned within the document. For more details, refer to the [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Position) property { X: ‘center’, Y: ‘center’}|
+| okButton | Configures the `OK button` that contains button properties with the click events. `okButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for OK button click', text: 'Yes' // <-- Default value is 'OK' }`|
+| cancelButton | Configures the `Cancel button` that contains button properties with the click events. `cancelButton:{ icon:'prefix icon to the button', cssClass:'custom class to the button', click: 'action for ‘Cancel’ button click', text: 'No' // <-- Default value is 'Cancel'}`|
+|isDraggable|Specifies the value whether the alert or confirm dialog can be dragged by the user.|
+| showCloseIcon | When set to true, the close icon is shown in the Dialog control. |
+| closeOnEscape|When set to true, you can close the dialog by pressing ESC key.|
+| cssClass | Specifies the CSS class name that can be appended to the dialog.|
+| zIndex | Specifies the order of the dialog, that is displayed in front or behind of another component.|
+| open | Event which is triggered after the dialog is opened.|
+| Close | Event which is triggered after the dialog is closed.|
+| animationSettings | Specifies the animation settings of the dialog component. |
+## Add ASP.NET Core Predefined Dialogs
 
 Now, add the Syncfusion ASP.NET Core Pregefined Dialogs tag helper in `~/Pages/Index.cshtml` page.
 
 Once you completed the setup, you can open predefined dialogs from any where in application using `Alert`,`Confirm` or `Prompt` methods in `DialogUtility`.
+The dialog component provides built-in utility functions to render the alert and confirm dialogs with the minimal code.
+The following options are used as an argument on calling the utility functions:
 
 ### Show alert dialog
 
-An alert dialog box used to display an errors, warnings, and information alerts that needs user awareness. This can be achieved by using the `DialogUtility.Alert` method. The alert dialog is displayed along with the `OK` button. When user clicks on `OK` button, alert dialog will get closed.
+An alert dialog box used to display an errors, warnings, and information alerts that needs user awareness. This can be achieved by using the `DialogUtility.alert` method. The alert dialog is displayed along with the `OK` button. When user clicks on `OK` button, alert dialog will get closed.
 
 In the below code example, alert dialog displayed on button click action.
 
@@ -121,12 +143,12 @@ In the below code example, alert dialog displayed on button click action.
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Dialog control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Predefined Dialog will be rendered in the default web browser.
 
-![ASP.NET Core Predfined Dialogs Control](../images/alert-default.png)
+![ASP.NET Core Predfined Dialog](../images/alert-default.png)
 ### Show confirm dialog
 
-A confirm dialog box used to displays a specified message along with the `OK` and `Cancel` buttons, which returns a boolean value according to the user's click action. When the user clicks the `OK` button, the `true` value is returned otherwise it will returns the `false` value. This can be achieved by using the DialogUtility.`Confirm` method. It is used to get approval from the user, and it appears before any critical action. After get approval from the user the dialog will disappear automatically.
+A confirm dialog box used to displays a specified message along with the `OK` and `Cancel` buttons.This can be achieved by using the `DialogUtility.confirm` method. It is used to get approval from the user, and it appears before any critical action. After get approval from the user the dialog will disappear automatically.
 
 In the below code example, the confirm dialog displayed on `OK` and `Cancel` button click action.
  
@@ -152,7 +174,33 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 
 ![Confirm Dialog](../images/confirm-default.png)
 
+### Show Prompt dialog
 
+A prompt dialog is used to get the input from the user. When the user clicks the `OK` button the input value from the dialog is returned. If the user clicks the `Cancel` button the null value is returned. After getting the input from the user the dialog will disappear automatically.
+
+In the below code example, the confirm dialog displayed on `OK` and `Cancel` button click action.
+ 
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/predefined-dialogs/getting-started/prompt-dialog/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/predefined-dialogs/getting-started/prompt-dialog/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/getting-started/prompt-dialog/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Prompt Dialog](../images/prompt-default.png)
 ## See also
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)

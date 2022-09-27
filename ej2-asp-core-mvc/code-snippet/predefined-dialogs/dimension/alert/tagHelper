@@ -5,10 +5,10 @@
 <script>
     document.getElementById('alertBtn').onclick = function () {
         ej.popups.DialogUtility.confirm({
-            title: 'Not enough space',
+            title: "Not enough space",
             content: "Delete certain files to free up space to store more items.",
-            width = "300px",
-            height = "200px"
+            width : "300px",
+            height : "200px"
         });
     };
 </script>

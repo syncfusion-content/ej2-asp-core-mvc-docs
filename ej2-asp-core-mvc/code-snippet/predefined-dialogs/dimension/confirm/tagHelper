@@ -5,10 +5,10 @@
 <script>
     document.getElementById('confirmBtn').onclick = function () {
         ej.popups.DialogUtility.confirm({
-            title: ' Delete Multiple Items',
+            title: "Delete Multiple Items",
             content: "Are you sure you want to permanently delete these items?",
-            width = "400px",
-            height = "200px"
+            width : "400px",
+            height : "200px"
         });
     };
 </script>

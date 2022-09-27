@@ -136,10 +136,10 @@ Use the following code to customize the min-width and min-height for alert dialo
 
 {% tabs %}
 {% highlight razor tabtitle="Alert.cshtml" %}
-{% include code-snippet/predefined-dialogs/dimension/alert-min-height-width/razor %}
+{% include code-snippet/predefined-dialogs/draggable/alert/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/dimension/alert-min-height-width/controller.cs %}
+{% include code-snippet/predefined-dialogs/getting-started/confirm-dialog/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 

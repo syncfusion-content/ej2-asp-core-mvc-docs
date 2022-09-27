@@ -15,7 +15,7 @@ Customize the dialog position by using the `position` property. The position can
 * The `Position.X` can be configured with a left, center, right or offset value. By default, the value is set as `center`.
 * The `Position.Y` can be configured with a top, center, bottom or offset value. By default, the value is set as `center`.
 
-Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Prompt.cshtml** to customize the position. Here, customized the dialog position as X= "top" and Y= "center".
+Use the following code snippet for **alert.cshtml**, **confirm.cshtml** and **prompt.cshtml** to customize the position. Here, customized the dialog position as X= "top" and Y= "center".
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -5,10 +5,10 @@
 <script>
     document.getElementById('promptBtn').onclick = function () {
         ej.popups.DialogUtility.confirm({
-            title: 'Join Chat Group',
-            content: '<p>Enter your name: </p> <input id= "inputEle" type="text" name="Required" class="e-input" placeholder="Type here.." />',
-            width = "350px",
-            height = "210px"
+            title: "Join Chat Group",
+            content: "<p>Enter your name: </p> <input id= "inputEle" type="text" name="Required" class="e-input" placeholder="Type here.." />",
+            width : "350px",
+            height : "210px"
         });
     };
 </script>
