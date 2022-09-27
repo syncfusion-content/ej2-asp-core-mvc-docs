@@ -114,7 +114,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Binding data source
 
-After initialization, populate the Mention with data using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.Mention~DataSource.html) property. Here, an array of string values is passed to the Mention component.
+After initialization, populate the Mention with data using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.Mention~DataSource.html) property. Here, an array of string values is passed to the Mention control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -138,7 +138,7 @@ After initialization, populate the Mention with data using the [dataSource](http
 
 ## Display mention character
 
-By using the [showMentionChar](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.Mention~ShowMentionChar.html) property, the text content can be displayed along with the mention character. You can customize the mention character by using the [mentionChar](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.Mention~MentionChar.html) property in the Mention component.
+By using the [showMentionChar](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.Mention~ShowMentionChar.html) property, the text content can be displayed along with the mention character. You can customize the mention character by using the [mentionChar](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.Mention~MentionChar.html) property in the Mention control.
 
 > By default, the [mentionChar](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.Mention~MentionChar.html) is `@` and the [showMentionChar](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.Mention~ShowMentionChar.html) property is disabled.
 
