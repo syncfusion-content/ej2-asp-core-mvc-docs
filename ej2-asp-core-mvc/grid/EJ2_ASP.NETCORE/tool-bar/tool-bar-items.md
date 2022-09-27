@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar Items in ##Platform_Name## Grid Component
+title: Toolbar Items in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Toolbar Items in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Toolbar Items
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Toolbar Items
+# Toolbar Items in ASP.NET CORE Grid Component
 
 ## Built-in toolbar items
 

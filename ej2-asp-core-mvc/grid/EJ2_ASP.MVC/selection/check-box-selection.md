@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Checkbox Selection in ##Platform_Name## Grid Component
+title: Checkbox Selection in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Checkbox Selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Checkbox Selection
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Checkbox Selection
+# Checkbox Selection in ASP.NET MVC Grid Component
 
 Checkbox selection provides an option to select multiple grid records with help of checkbox in each row.
 
