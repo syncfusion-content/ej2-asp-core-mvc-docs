@@ -74,3 +74,31 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 {% endtabs %}
 {% endif %}
 
+## Prevent specific rows from being selected in checkbox selection
+
+You can prevent specific rows from being selected in the checkbox selection mode by hiding the checkboxes using the [rowDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event. You achieve this by setting the `isSelectable` argument as false in the `rowDataBound` event based on certain conditions as per the needs of the application.
+
+In the following sample, the selection of specific rows has been prevented based on the `isSelectable` argument in the `rowDataBound` event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/prevent-checkbox-selection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Prevent-checkbox-selection.cs" %}
+{% include code-snippet/grid/selection/prevent-checkbox-selection/prevent-checkbox-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/prevent-checkbox-selection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Prevent-checkbox-selection.cs" %}
+{% include code-snippet/grid/selection/prevent-checkbox-selection/prevent-checkbox-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

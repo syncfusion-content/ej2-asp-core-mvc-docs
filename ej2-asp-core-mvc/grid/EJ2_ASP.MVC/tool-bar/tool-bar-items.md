@@ -121,3 +121,29 @@ In the below example, **Add**, **Edit**, **Delete**, **Update**, **Cancel** are 
 {% endtabs %}
 {% endif %}
 
+## Custom toolbar component in a specific position
+
+By default, Custom toolbar items are in the Left position. You can change the position by using the [Align](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html#Syncfusion_EJ2_Navigations_ToolbarItem_Align) property. In the following sample, we have applied the Right position for the Collapse All toolbar item, Left for the Expand All toolbar item, and Center for the Search toolbar item.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/toolbar/custom-toolbar-position/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-toolbar-position.cs" %}
+{% include code-snippet/grid/toolbar/custom-toolbar-position/custom-toolbar-position.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/toolbar/custom-toolbar-position/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-toolbar-position.cs" %}
+{% include code-snippet/grid/toolbar/custom-toolbar-position/custom-toolbar-position.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

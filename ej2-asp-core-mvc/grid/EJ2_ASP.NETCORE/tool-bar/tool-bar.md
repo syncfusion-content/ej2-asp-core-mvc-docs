@@ -40,3 +40,29 @@ You can enable/disable toolbar items by using the **enableItems** method.
 {% endtabs %}
 {% endif %}
 
+## Add toolbar at the bottom of Grid
+
+You can add the Grid toolbar component at the bottom of Grid using the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/toolbar/toolbar-bottom/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Toolbar-bottom.cs" %}
+{% include code-snippet/grid/toolbar/toolbar-bottom/toolbar-bottom.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/toolbar/toolbar-bottom/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Toolbar-bottom.cs" %}
+{% include code-snippet/grid/toolbar/toolbar-bottom/toolbar-bottom.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
