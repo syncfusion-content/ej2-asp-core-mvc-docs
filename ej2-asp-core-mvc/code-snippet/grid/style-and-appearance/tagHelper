@@ -9,6 +9,7 @@
     </e-grid-columns>
 </ejs-grid>
 <style>
+
     .e-grid {
         font-family: cursive;
     }
@@ -28,4 +29,5 @@
     .e-grid .e-row {
         background-color: rgb(180, 180, 180);
     }
+    
 </style>
