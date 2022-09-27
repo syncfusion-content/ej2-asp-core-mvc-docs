@@ -47,7 +47,6 @@ The Carousel items will be populated from the first index of the Carousel items 
 
 * Select an item using the property.
 * Select an item using the method.
-* Partial visible slides
 
 ### Select an item using the property
 
