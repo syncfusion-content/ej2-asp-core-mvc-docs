@@ -1,0 +1,33 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true">
+    <e-grid-selectionSettings type="Multiple"></e-grid-selectionSettings>
+    <e-grid-pagesettings pageSize="8"></e-grid-pagesettings>
+    <e-grid-columns>    
+        <e-grid-column field="OrderID" headerText="Order ID" type="number" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" type="number" format="C2" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" type="string" width="180"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<style>
+
+    .e-grid {
+        font-family: cursive;
+    }
+
+    .e-grid .e-row:hover .e-rowcell {
+        background-color: rgb(204, 229, 255) !important;
+    }
+
+    .e-grid .e-rowcell.e-selectionbackground {
+        background-color: rgb(230, 230, 250);
+     }
+
+    .e-grid .e-row.e-altrow {
+        background-color: rgb(150, 212, 212);
+     }
+
+    .e-grid .e-row {
+        background-color: rgb(180, 180, 180);
+    }
+    
+</style>
