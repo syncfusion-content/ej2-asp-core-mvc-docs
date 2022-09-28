@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ASP.NET MVC Tab control
 
 The [ASP.NET Core Tab](https://www.syncfusion.com/aspnet-core-ui-controls/tabs) is a content panel to show multiple contents in a specific space, one at a time.
 
