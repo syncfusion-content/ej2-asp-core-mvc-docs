@@ -1,0 +1,8 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).HeaderTextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).HeaderTextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
+   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).HeaderTextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Format("yMd").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Justify).HeaderTextAlign(Syncfusion.EJ2.Grids.TextAlign.Justify).Add();
+
+}).Render()
