@@ -171,3 +171,35 @@ Use the following code for **alert**, **confirm** and **prompt** to demonstrates
 
 ![Prompt close icon Dialog](../images/prompt-show-hide-btn.png)
 
+## Customize dialog content
+
+You can load custom content in predefined dialogs using the `content` property.
+
+Use the following code to customize the dialog content to render the custom TextBox component inside the prompt dialog to get the username from the user.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+
+{% highlight cshtml tabtitle="Alert.cshtml" %}
+{% include_relative code-snippet/predefined-dialogs/customization/custom-content/tagHelper %}
+{% endhighlight %}
+
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="Alert.cshtml" %}
+{% include code-snippet/predefined-dialogs/customization/custom-content/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/predefined-dialogs/customization/custom-content/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+**Results from the code snippet**
+
+![Alert close icon Dialog](../images/confirm-custom-content.png)
