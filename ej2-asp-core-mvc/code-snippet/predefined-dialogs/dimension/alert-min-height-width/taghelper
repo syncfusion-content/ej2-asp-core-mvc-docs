@@ -1,5 +1,5 @@
 <div style="height:400px;">
-    <ejs-button id="alertBtn" content="Alert" cssClass="e-warning"></ejs-button>
+    <ejs-button id="alertBtn" content="Alert" cssClass="e-danger"></ejs-button>
 </div>
 <style>
     .e-dialog.customClass {

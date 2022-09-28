@@ -1,5 +1,5 @@
 <div id="predefinedDialogDefault" class="col-lg-12 control-section">
-    @Html.EJS().Button("alertBtn").Content("Alert").CssClass("e-warning").Render()
+    @Html.EJS().Button("alertBtn").Content("Alert").CssClass("e-danger").Render()
     <span id="statusText"></span>
 </div>
 <script>
