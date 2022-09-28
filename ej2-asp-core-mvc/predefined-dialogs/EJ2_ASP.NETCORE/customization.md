@@ -18,7 +18,7 @@ You can customize the predefined dialogs buttons by using below properties.
 
 Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Prompt.cshtml** to customize the predefined dialog action buttons.
 
-For alert dialog , customized the default dialog button content as `Okay` by using the `okButton.text` property.
+For alert dialog , customized the default dialog button content as `Done` by using the `okButton.text` property.
 
 For confirm dialog, customized the default dialog buttons content as `Yes` and `No` by using the `okButton.text`and `cancelButton.text` property and also customized the dialog button icons by using `okButton.icon` property.
 

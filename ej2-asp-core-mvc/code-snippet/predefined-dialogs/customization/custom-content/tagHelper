@@ -1,0 +1,12 @@
+<div style="height:400px;">
+    <ejs-button id="confirmBtn" content="Confirm" cssClass="e-success"></ejs-button>
+</div>
+<script>
+    document.getElementById('confirmBtn').onclick = function () {
+        ej.popups.DialogUtility.confirm({
+            title: 'Join Chat Group',
+            content: '<p>Enter your name: </p><input class="e-input" />',
+            width: '350px'
+        });
+    };
+</script>
