@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Tab Component | Syncfusion
+title: Overview in ##Platform_Name## Tab Component
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ASP.NET MVC Tab control
+# Overview
 
-The [ASP.NET Core Tab](https://www.syncfusion.com/aspnet-core-ui-controls/tabs) is a content panel to show multiple contents in a specific space, one at a time.
+The Tab is a content panel to show multiple contents in a specific space, one at a time.
 
 ## Key features
 
