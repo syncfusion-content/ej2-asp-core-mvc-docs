@@ -159,3 +159,5 @@ Refer to the following code example to create a Tooltip on multiple targets with
 * [Positioning Tooltip](./position)
 * [Tooltip Open Mode](./open-mode)
 * [Customize the Tooltip](./customization)
+
+N> You can refer to our [ASP.NET Core Tooltip](https://www.syncfusion.com/aspnet-core-ui-controls/tooltip) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Tooltip example](https://ej2.syncfusion.com/aspnetcore/Tooltip/DefaultFunctionalities#/material) that shows you how to render the Tooltip in ASP.NET Core.
