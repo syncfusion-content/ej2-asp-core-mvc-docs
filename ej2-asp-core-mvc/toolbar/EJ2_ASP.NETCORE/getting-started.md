@@ -156,3 +156,5 @@ In the below demo, the Toolbar items are given as [Button](../button), [MaskedTe
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [How to add Toggle Button](./how-to/add-toggle-button)
+
+N> You can also explore our [ASP.NET Core Toolbar Example](https://ej2.syncfusion.com/aspnetcore/Toolbar/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Toolbar.

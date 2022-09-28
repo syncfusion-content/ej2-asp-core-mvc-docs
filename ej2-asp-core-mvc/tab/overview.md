@@ -10,7 +10,7 @@ documentation: ug
 
 # Overview
 
-The Tab is a content panel to show multiple contents in a specific space, one at a time.
+The [ASP.NET Core Tab](https://www.syncfusion.com/aspnet-core-ui-controls/tabs) is a content panel to show multiple contents in a specific space, one at a time.
 
 ## Key features
 

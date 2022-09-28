@@ -171,3 +171,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ![ASP.NET MVC Carousel Control](images/carousel-control.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Carousel/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC Carousel example](https://ej2.syncfusion.com/aspnetmvc/Carousel/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Carousel in ASP.NET MVC.
