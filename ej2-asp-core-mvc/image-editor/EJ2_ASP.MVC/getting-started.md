@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Signature Control
+# Getting Started with ASP.NET MVC Image Editor Control
 
-This section briefly explains about how to include [ASP.NET MVC Signature](https://www.syncfusion.com/aspnet-mvc-ui-controls/image-editor) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Image Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/image-editor) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -91,7 +91,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 ## Add ASP.NET MVC Image Editor control
 
-Now, add the Syncfusion ASP.NET MVC Signature control in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC Image Editor control in `~/Views/Home/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -116,4 +116,4 @@ Now, add the Syncfusion ASP.NET MVC Signature control in `~/Views/Home/Index.csh
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Image Editor control will be rendered in the default web browser.
 
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Signature/ASP.NET%20MVC%20Razor%20Examples).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ImageEditor/ASP.NET%20MVC%20Razor%20Examples).
