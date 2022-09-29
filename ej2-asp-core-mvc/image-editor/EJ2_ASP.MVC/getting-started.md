@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Accordion Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## ImageEditor Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Image Editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Accordion Control
+# Getting Started with ASP.NET MVC Image Editor Control
 
-This section briefly explains about how to include [ASP.NET MVC Accordion](https://www.syncfusion.com/aspnet-mvc-ui-controls/accordion) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Image Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/image-editor) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -89,18 +89,18 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC Accordion control
+## Add ASP.NET MVC Image Editor control
 
-Now, add the Syncfusion ASP.NET MVC Accordion control in `~/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC Image Editor control in `~/Views/Home/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/accordion/getting-started/data/tagHelper %}
+{% include code-snippet/image-editor/getting-started/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/accordion/getting-started/data/data.cs %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/getting-started/default/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,70 +108,11 @@ Now, add the Syncfusion ASP.NET MVC Accordion control in `~/Home/Index.cshtml` p
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/accordion/getting-started/data/razor %}
+{% include code-snippet/image-editor/getting-started/default/razor %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Accordion control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Image Editor control will be rendered in the default web browser.
 
-![ASP.NET MVC Accordion Control](images/accordion-control.PNG)
-
-## Render the Accordion using content template
-
-You can bind any data in Accordion items, by simply using the content template property in ASP.NET Accordion. Accordion is already provided with the content template support and hence this support can be utilized to load the other HTML elements or as per your requirement.
-
-In the below demo, the Accordion items are given with [chart](../chart/getting-started), [grid](../grid/getting-started-mvc), [calender](../calendar/getting-started) as their content using the content template.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/accordion/getting-started/contenttemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Contenttemplate.cs" %}
-{% include code-snippet/accordion/getting-started/contenttemplate/contenttemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/accordion/getting-started/contenttemplate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-
-public ActionResult Index()
-{
-    List<LineChartData> chartData = new List<LineChartData>
-    {
-        new LineChartData { xValue = new DateTime(2005, 01, 01), yValue = 21, yValue1 = 28 },
-        new LineChartData { xValue = new DateTime(2006, 01, 01), yValue = 24, yValue1 = 44 },
-        new LineChartData { xValue = new DateTime(2007, 01, 01), yValue = 36, yValue1 = 48 },
-        new LineChartData { xValue = new DateTime(2008, 01, 01), yValue = 38, yValue1 = 50 },
-        new LineChartData { xValue = new DateTime(2009, 01, 01), yValue = 54, yValue1 = 66 },
-        new LineChartData { xValue = new DateTime(2010, 01, 01), yValue = 57, yValue1 = 78 },
-        new LineChartData { xValue = new DateTime(2011, 01, 01), yValue = 70, yValue1 = 84 },
-    };
-    return View(chartData);
-}
-....
-....
-public class LineChartData
-{
-    public DateTime xValue;
-    public double yValue;
-    public double yValue1;
-}
-
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-![ASP.NET MVC Accordion with Content Template](images/accordion-template.PNG)
-
-You can also render accordion without using `ContentTemplate` which can be referred [here](../../accordion/how-to/set-the-nested-accordion).
-
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Accordion/ASP.NET%20MVC%20Razor%20Examples).
+![ASP.NET MVC ImageEditor Control](images/image-editor.jpg)
