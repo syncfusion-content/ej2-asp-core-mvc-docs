@@ -108,10 +108,7 @@ The following code examples show how the scroll To Date method works in Gantt:
 {% endif %}
 
 
-
-![Alt text](../images/setScrollTop.png)
-
-# Set the vertical scroll position
+## Set the vertical scroll position
 
 In the Gantt control, you can set the vertical scroller position dynamically by clicking the custom button using the `setScrollTop` method.
 
@@ -138,6 +135,3 @@ In the Gantt control, you can set the vertical scroller position dynamically by 
 {% endtabs %}
 {% endif %}
 
-
-
-![Alt text](../images/setScrollTop.png)
