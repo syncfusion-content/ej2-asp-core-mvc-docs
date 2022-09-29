@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layers in ##Platform_Name## Maps Component
+title: Layers in Syncfusion ##Platform_Name## Maps Component
 description: Learn here all about Layers in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Layers

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Other Maps in ##Platform_Name## Maps Component
+title: Other Maps in Syncfusion ##Platform_Name## Maps Component
 description: Learn here all about other Maps in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Other Maps
