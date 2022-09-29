@@ -114,5 +114,3 @@ Now, add the Syncfusion ASP.NET MVC Image Editor control in `~/Views/Home/Index.
 {% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Image Editor control will be rendered in the default web browser.
-
-![ASP.NET Core ImageEditor Control](images/image-editor.png)
