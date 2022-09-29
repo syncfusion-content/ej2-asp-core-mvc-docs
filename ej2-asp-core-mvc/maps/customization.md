@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customization
+# Customization in ##Platform_Name## Maps Component
 
 ## Setting the size for Maps
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Color Mapping
+# Color Mapping in ##Platform_Name## Maps Component
 
 Color mapping is used to customize the shape colors based on the given values. It has three types.
 

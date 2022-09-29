@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Annotations
+# Annotations in ##Platform_Name## Maps Component
 
 <!-- markdownlint-disable MD013 -->
 

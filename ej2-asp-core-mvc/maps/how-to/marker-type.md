@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Marker types
+# Marker types in ##Platform_Name## Maps Component
 
 ## Add different types of markers
 
