@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotation in ##Platform_Name## Maps Component
+title: Annotation in Syncfusion ##Platform_Name## Maps Component
 description: Learn here all about Annotation in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Annotation
