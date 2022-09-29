@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style And Appearance in ##Platform_Name## Carousel Component
+title: Style And Appearance in ##Platform_Name## Carousel Component | Syncfusion
 description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Carousel component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# CSS Structure
+# CSS Structure in Blazor Carousel Component
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
 
@@ -24,4 +24,4 @@ You can customise the partial slides area size by overriding the `e-carousel-ite
 
 ```
 
-![Carousel](./images/partial-slide.png)
+![Carousel](./images/partial-slide.jpg)
