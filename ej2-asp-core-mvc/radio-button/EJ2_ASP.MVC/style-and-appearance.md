@@ -19,3 +19,5 @@ CSS Class | Purpose of Class
 |.e-radio + label:hover::before|To customize the radiobutton on hover
 |.e-radio:checked + label::after, e-radio:checked + label::before |To customize the checked radiobutton
 |.e-radio:checked:focus + label::before, .e-radio:checked + label:hover::before |To customize the checked radiobutton on hover
+
+![ASP.NET MVC Radio Button Control](images/radio-button-style-and-appearance.PNG)
