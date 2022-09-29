@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Image Editor Control | Syncfusion
+title: Getting Started with ##Platform_Name## ImageEditor Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Image Editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -114,6 +114,3 @@ Now, add the Syncfusion ASP.NET MVC Image Editor control in `~/Views/Home/Index.
 {% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Image Editor control will be rendered in the default web browser.
-
-
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ImageEditor/ASP.NET%20MVC%20Razor%20Examples).

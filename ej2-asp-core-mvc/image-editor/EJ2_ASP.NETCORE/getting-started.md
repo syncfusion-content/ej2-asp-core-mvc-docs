@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Image Editor Control
+title: Getting Started with ##Platform_Name## ImageEditor Control
 description: Checkout and learn about getting started with ##Platform_Name## Image Editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -114,8 +114,6 @@ Now, add the Syncfusion ASP.NET Core Image Editor tag helper in `~/Pages/Index.c
 {% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Image Editor control will be rendered in the default web browser.
-
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ImageEditor/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
