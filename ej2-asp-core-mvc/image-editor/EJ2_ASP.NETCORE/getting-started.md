@@ -115,7 +115,7 @@ Now, add the Syncfusion ASP.NET Core Image Editor tag helper in `~/Pages/Index.c
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Image Editor control will be rendered in the default web browser.
 
-![ASP.NET MVC ImageEditor Control](images/image-editor.jpg)
+![ASP.NET Core ImageEditor Control](images/image-editor.jpg)
 
 ## See also
 
