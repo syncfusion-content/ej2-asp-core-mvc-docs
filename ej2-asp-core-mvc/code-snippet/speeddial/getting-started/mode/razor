@@ -1,0 +1,4 @@
+<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
+    @Html.EJS().SpeedDial("element").Target("#target").Position(FabPosition.BottomLeft).content("Edit").Mode(SpeedDialMode.Radial).OpenIconCss="e-icons e-edit".Items(ViewBag.datasource).Render()
+    @Html.EJS().SpeedDial("element1").Target("#target").Position(FabPosition.BottomRight).content("Edit").Mode(SpeedDialMode.Linear).OpenIconCss="e-icons e-edit".Items(ViewBag.datasourceLabel).Render()
+</div>
