@@ -11,8 +11,7 @@ documentation: ug
 
 # Excel Like Filter in Gantt control
 
-You can enable Excel like filter by defining.
-[`filterSettings.type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_FilterSettings) as `Excel`.The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
+You can enable Excel like filter by defining [`filterSettings.type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_FilterSettings) as `Excel`. The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
