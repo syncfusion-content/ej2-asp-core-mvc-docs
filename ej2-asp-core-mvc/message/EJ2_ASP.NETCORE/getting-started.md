@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Message Control
+title: Getting Started with Syncfusion ##Platform_Name## Message Control | Syncfusion
 description: Checkout and learn about getting started with Syncfusion ##Platform_Name## Message control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Getting Started
