@@ -78,8 +78,7 @@ Using the `prev` or `next` public method of the Carousel component, you can swit
 
 ## Partial visible slides
 
-Using the [`partialVisible`](../api/carousel/#partialVisible) property, you can set the next and previous slides to be partially displayed.
-
+The Carousel component supports to show one complete slide and a partial view of adjacent (previous and next) slides at the same time. You can enable or disable the partial slides using the [`partialVisible`](../api/carousel/#partialVisible) property.
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/carousel/populating-items/partial-visible/razor %}
@@ -88,4 +87,25 @@ Using the [`partialVisible`](../api/carousel/#partialVisible) property, you can 
 {% include code-snippet/carousel/populating-items/partial-visible/partial-visible.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+> Slide animation only applicable if the partialVisible is enabled.
+
+The last slide will be displayed as a partial slide at the initial rendering when the [`loop`](../api/carousel/#loop) and `partialVisible` properties are enabled.
+
+The previous slide is not displayed at the initial rendering when the `loop` is disabled.
+
+The following example code depicts the functionality of `partialVisible` and without `loop` functionalities.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/populating-items/partial-visible/without-loop/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/populating-items/partial-visible/without-loop/without-loop.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## See also
+
+* [Customizing partial slides area size](../carousel/styles-and-appearance.md)
 
