@@ -24,4 +24,4 @@ You can customise the partial slides area size by overriding the `e-carousel-ite
 
 ```
 
-![Carousel](./images/partial-slide.png)
+![Carousel](./images/partial-slide.jpg)
