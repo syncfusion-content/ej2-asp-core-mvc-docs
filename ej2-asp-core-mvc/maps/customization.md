@@ -80,7 +80,7 @@ The title for the Maps can be set using the `MapsTitleSettings`. It can be custo
 
 ## Setting theme
 
-The Maps control supports following themes.
+The Maps component supports following themes.
 
 * Material
 * Fabric
@@ -282,7 +282,7 @@ The border of each shape in the Maps can be customized using the `BorderColorVal
 
 ## Projection type
 
-The Maps control supports the following projection types:
+The Maps component supports the following projection types:
 
 * Mercator
 * Equirectangular

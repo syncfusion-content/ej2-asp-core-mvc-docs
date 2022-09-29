@@ -10,7 +10,7 @@ documentation: ug
 
 # Other Maps providers
 
-Apart from OpenStreetMap and Bing Maps, you can also render Maps from other online map service providers by specifying the URL provided by those providers in the `UrlTemplate` property. The URL template concept has been implemented in such a way that any online map service providers using the following template can benefit from previewing their Map in the Syncfusion ##Platform_Name## Maps control.
+Apart from OpenStreetMap and Bing Maps, you can also render Maps from other online map service providers by specifying the URL provided by those providers in the `UrlTemplate` property. The URL template concept has been implemented in such a way that any online map service providers using the following template can benefit from previewing their Map in the Syncfusion ##Platform_Name## Maps component.
 
 <!-- markdownlint-disable MD034 -->
 

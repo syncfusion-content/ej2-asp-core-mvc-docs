@@ -10,7 +10,7 @@ documentation: ug
 
 # Overview
 
-The Maps control is used to visualize the geographical data. It is used to represent the statistical data of a particular geographical area on Earth, with user interactivity and provides various customizing options. All the Maps elements are rendered using Scalable Vector Graphics (SVG).
+The Maps component is used to visualize the geographical data. It is used to represent the statistical data of a particular geographical area on Earth, with user interactivity and provides various customizing options. All the Maps elements are rendered using Scalable Vector Graphics (SVG).
 
 ## Key Features
 

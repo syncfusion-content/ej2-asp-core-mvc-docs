@@ -10,7 +10,7 @@ documentation: ug
 
 # Custom path map
 
-Maps control can be customized as the desired layout using the custom path map feature. Here, the Maps control has been showcased with normal geometry type shapes to represent the bus seat selection layout.
+Maps component can be customized as the desired layout using the custom path map feature. Here, the Maps component has been showcased with normal geometry type shapes to represent the bus seat selection layout.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

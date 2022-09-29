@@ -10,7 +10,7 @@ documentation: ug
 
 # Layers
 
-The Maps control is rendered through [`Layers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_Layers) and any number of layers can be added to the Maps.
+The Maps component is rendered through [`Layers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_Layers) and any number of layers can be added to the Maps.
 
 ## Multilayer
 
