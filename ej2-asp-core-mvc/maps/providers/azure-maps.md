@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure Maps in Syncfusion ##Platform_Name## Syncfusion Maps Component
-description: Learn here all about Azure Maps in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Azure Maps in the Syncfusion ##Platform_Name## Maps component and much more details.
 platform: ej2-asp-core-mvc
 control: Azure Maps
 publishingplatform: ##Platform_Name##
