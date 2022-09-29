@@ -14,7 +14,7 @@ The following content provides the exact CSS structure that can be used to modif
 
 ## Customizing partial slides size
 
-You can customise the partial slide size by overriding the `e-carousel-item` class.
+You can customise the partial slide size by overriding the `e-carousel-item` CSS class.
 
 ```CSS
 
