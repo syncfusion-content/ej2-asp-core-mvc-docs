@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ASP.NET Core Message Control
 
 This section briefly explains about how to include ASP.NET Core Message control in your ASP.NET Core application using Visual Studio.
