@@ -202,6 +202,36 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% endif %}
 
 
+## Perform search operation in Grid using multiple keywords
+
+You can perform a searching operation in the Grid using multiple keywords. This can be achieved by the [ActionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of the Grid.
+In the following sample, we have performed the searching with multiple keywords by using the query property of grid when the requestType is searching in the [ActionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/search-multiple-keywords/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Search-multiple-keywords.cs" %}
+{% include code-snippet/grid/search/search-multiple-keywords/search-multiple-keywords.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+ {% include code-snippet/grid/search/search-multiple-keywords/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Search-multiple-keywords.cs" %}
+{% include code-snippet/grid/search/search-multiple-keywords/search-multiple-keywords.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+> * Define multiple keywords by using a comma separator in search bar to search.
 
 > * Search operation can be performed in foreign key column based on following way.
 > * When a value is searched on a grid with the foreign key column, a filter query is sent to the foreign key data source, and the appropriate column is filtered depending on the search value. The search query will be sent to the grid data source, and the value of the associated field will be returned.
