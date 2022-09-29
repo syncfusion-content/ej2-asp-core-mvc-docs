@@ -164,5 +164,3 @@ The following example, displays the text content along with the mention characte
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Mention/ASP.NET%20MVC%20Razor%20Examples).
