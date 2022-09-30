@@ -153,3 +153,31 @@ You can enable or disable the toolbar items by using the `enableItems` method.
 {% endtabs %}
 {% endif %}
 
+
+
+## Add input elements to toolbar
+
+In the Gantt toolbar, you can add EJ2 editor elements like numeric text box, drop-down list, and date picker controls. The following code snippets demonstrates how to add EJ2 editors to the Gantt toolbar.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/toolbar/input-elements/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="input-elements.cs" %}
+{% include code-snippet/gantt/toolbar/input-elements/input-elements.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/toolbar/input-elements/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="input-elements.cs" %}
+{% include code-snippet/gantt/toolbar/input-elements/input-elements.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
