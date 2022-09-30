@@ -158,7 +158,7 @@ We can define data source for Gantt as instance of DataManager using `url` prope
 
 You may need to perform all Gantt Actions on the client-side except the CRUD operations, that should be interacted with the server-side to persist data. It can be achieved in Gantt by using **RemoteSaveAdaptor**.
 
-Datasource must be set to the **json** property and set **RemoteSaveAdaptor** to the **adaptor** property. CRUD operations can be mapped to the server-side by using the **batchUrl** properties.
+Datasource must be set to the **json** property and set **RemoteSaveAdaptor** to the **adaptor** property of DataManager. CRUD operations can be mapped to the server-side by using the **batchUrl** properties.
 
 You can use the following code example to use **RemoteSaveAdaptor** in Gantt.
 
