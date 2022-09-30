@@ -40,7 +40,7 @@ The following code example shows you how to enable the cell editing in Gantt con
 
 ## Read-only Gantt
 
-In Gantt, all create, update, delete operations can be disabled by set `readOnly` property as `true`. The following sample demonstrates, render Gantt chart as read only.
+In Gantt, all create, update, delete operations can be disabled by setting `readOnly` property as `true`. The following sample demonstrates, render Gantt chart as read only.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
