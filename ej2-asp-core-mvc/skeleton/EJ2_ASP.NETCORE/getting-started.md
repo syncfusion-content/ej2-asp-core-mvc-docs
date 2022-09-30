@@ -108,4 +108,57 @@ Now, add the Syncfusion ASP.NET Core Skeleton tag helper in `~/Pages/Index.cshtm
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Skeleton control will be rendered in the default web browser.
 
-![ASP.NET Core Skeleton Control](images/skeletoncontrol.png)
+![ASP.NET Core Skeleton Control](images/skeleton-control.png)
+
+## Skeleton Types
+
+The Skeleton control has the following different type of shapes.
+
+* Circle
+* Square
+* Text
+* Rectangle
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
+<div class="row skeleton-default">
+    <div class="col-sm-6">
+        <h5>Circle</h5>
+        <ejs-skeleton id="skeletonCircleSmall" shape="Circle" width="3rem"></ejs-skeleton>
+        <ejs-skeleton id="skeletonCircleMedium" shape="Circle" width="48px"></ejs-skeleton>
+        <ejs-skeleton id="skeletonCircleLarge" shape="Circle" width="64px"></ejs-skeleton>
+        <ejs-skeleton id="skeletonCircleLarger" shape="Circle" width="80px"></ejs-skeleton>
+    </div>
+    <div class="col-sm-6">
+        <h5>Square</h5>
+        <ejs-skeleton id="skeletonSquareSmall" shape="Square" width="3rem"></ejs-skeleton>
+        <ejs-skeleton id="skeletonSquareMedium" shape="Square" width="48px"></ejs-skeleton>
+        <ejs-skeleton id="skeletonSquareLarge" shape="Square" width="64px"></ejs-skeleton>
+        <ejs-skeleton id="skeletonSquareLarger" shape="Square" width="80px"></ejs-skeleton>
+    </div>
+</div>
+<div class="row skeleton-default">
+    <div class="col-sm-6">
+        <h5>Text</h5>
+        <ejs-skeleton id="skeletonText" shape="Text" width="100%" height="15px"></ejs-skeleton>
+        <ejs-skeleton id="skeletonTextMedium" width="30%" height="15px"></ejs-skeleton>
+        <br />
+        <ejs-skeleton id="skeletonTextSmall" width="15%" height="15px"></ejs-skeleton>
+        <br />
+        <ejs-skeleton id="skeletonTextMedium1" width="60%" height="15px"></ejs-skeleton>
+        <br />
+        <ejs-skeleton id="skeletonTextSmall1" width="15%" height="15px"></ejs-skeleton>
+    </div>
+    <div class="col-sm-6">
+        <h5>Rectangle</h5>
+        <ejs-skeleton id="skeletonRectangle" shape="Rectangle" width="100%" height="100px"></ejs-skeleton>
+        <ejs-skeleton id="skeletonRectangleMedium" shape="Rectangle" width="20%" height="35px"></ejs-skeleton>
+        <ejs-skeleton style="float:right" id="skeletonRectangleMediumRight" shape="Rectangle" width="20%" height="35px"></ejs-skeleton>
+    </div>
+</div>
+
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Skelton Shapes](images/skeleton-skimmer-effects.png)
