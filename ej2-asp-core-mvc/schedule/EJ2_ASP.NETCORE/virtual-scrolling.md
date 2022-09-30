@@ -11,7 +11,7 @@ documentation: ug
 
 # Virtual scrolling
 
-To achieve better performance in the Scheduler when loading a large number of resources and events, we have added virtual scrolling support in the timeline views to load a large set of resources and events instantly as you scroll. You can dynamically load large number of resources and events in timeline view of the Scheduler by setting `true` to the `allowVirtualScrolling` property within the timeline view-specific settings. The virtual loading of events is possible in Agenda view, by setting `allowVirtualScrolling` property to `true` within the agenda view specific settings.
+To achieve better performance in the Scheduler when loading a large number of resources and events, we have added virtual scrolling support to load a large set of resources and events instantly as you scroll. You can dynamically load large number of resources and events in the Scheduler by setting `true` to the [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property within the view specific settings. The virtual loading of events is possible in Agenda view, by setting [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` within the agenda view specific settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,6 +38,6 @@ To achieve better performance in the Scheduler when loading a large number of re
 
 
 
-> For now, the virtual loading of resources and events is available only for `TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, `TimelineMonth` and `TimelineYear` (Vertical Orientation alone) views. In the future, we plan to port the same virtual loading on all other applicable Scheduler views.
+> For now, the virtual loading of resources and events is not supported in `MonthAgenda`, `Year` and `TimelineYear` (Horizontal Orientation) views.
 
 > You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
