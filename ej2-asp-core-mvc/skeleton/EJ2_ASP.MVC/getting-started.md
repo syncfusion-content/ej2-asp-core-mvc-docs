@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Toolbar Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Skeleton Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Skeleton control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Toolbar Control
+# Getting Started with ASP.NET MVC Skeleton Control
 
-This section briefly explains about how to include [ASP.NET MVC Toolbar](https://www.syncfusion.com/aspnet-mvc-ui-controls/toolbar) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include `ASP.NET MVC Skeleton` control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -89,71 +89,24 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC Toolbar control
+## Add ASP.NET MVC Skeleton control
 
-Now, add the Syncfusion ASP.NET MVC Toolbar control in `~/Views/Home/Index.cshtml` page.
-
-{% if page.publishingplatform == "aspnet-core" %}
+Now, add the Syncfusion ASP.NET MVC Skeleton control in `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/toolbar/getting-started/data/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/toolbar/getting-started/data/data.cs %}
-{% endhighlight %}
-{% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+<div class="col-sm-6">
+    <h5>Circle</h5>
+    <ejs-skeleton id="skeletonCircleSmall" shape="Circle" width="3rem"></ejs-skeleton>
+    <ejs-skeleton id="skeletonCircleMedium" shape="Circle" width="48px"></ejs-skeleton>
+    <ejs-skeleton id="skeletonCircleLarge" shape="Circle" width="64px"></ejs-skeleton>
+    <ejs-skeleton id="skeletonCircleLarger" shape="Circle" width="80px"></ejs-skeleton>
+</div>
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/toolbar/getting-started/data/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Toolbar control will be rendered in the default web browser.
-
-![ASP.NET MVC Toolbar Control](images/gettingstarted.PNG)
-
-## Render the Toolbar items using content template
-
-You can bind any HTML elements or other controls in Toolbar items, by simply using the content template property in ASP.NET Toolbar.
-
-In the below demo, the Toolbar items are given as [Button](../button), [MaskedTextBox](../maskedtextbox), [RadioButton](../radio-button), [DropDownList](../drop-down-list) using the content template. In the content template property of Toolbar, you can directly render these controls like below in the code.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/toolbar/how-to/contenttemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Contenttemplate.cs" %}
-{% include code-snippet/toolbar/how-to/contenttemplate/contenttemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Skeleton control will be rendered in the default web browser.
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/toolbar/how-to/contenttemplate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-public ActionResult Index()
-{
-    List<string> data = new List<string>() { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };
-    return View(data);
-}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-![ASP.NET MVC Toolbar with Content Template](images/contenttemplate.PNG)
-
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Toolbar/ASP.NET%20MVC%20Razor%20Examples).
-
-## See also
-
-* [How to add Toggle Button](./how-to/add-toggle-button)
+![ASP.NET MVC Skeleton Control](images/skeletoncontrol.png)

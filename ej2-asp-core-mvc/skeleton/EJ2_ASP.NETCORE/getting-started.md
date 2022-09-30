@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Toolbar Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Toolbar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Skeleton Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Skeleton control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Getting Started with ASP.NET Core Skeleton Control
 
-# Getting Started with ASP.NET Core Toolbar Control
-
-This section briefly explains about how to include [ASP.NET Core Toolbar](https://www.syncfusion.com/aspnet-core-ui-controls/toolbar) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include `ASP.NET Core Skeleton` control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -81,8 +80,7 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <body>
-    ....
-    ....
+...
     <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
@@ -90,69 +88,24 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Toolbar control
+## Add ASP.NET Core Skeleton Control
 
-Now, add the Syncfusion ASP.NET Core Toolbar tag helper in `~/Pages/Index.cshtml` page.
-
-{% if page.publishingplatform == "aspnet-core" %}
+Now, add the Syncfusion ASP.NET Core Skeleton tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/toolbar/getting-started/data/tagHelper %}
+
+<div class="col-sm-6">
+    <h5>Circle</h5>
+    <ejs-skeleton id="skeletonCircleSmall" shape="Circle" width="3rem"></ejs-skeleton>
+    <ejs-skeleton id="skeletonCircleMedium" shape="Circle" width="48px"></ejs-skeleton>
+    <ejs-skeleton id="skeletonCircleLarge" shape="Circle" width="64px"></ejs-skeleton>
+    <ejs-skeleton id="skeletonCircleLarger" shape="Circle" width="80px"></ejs-skeleton>
+</div>
+
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Skeleton control will be rendered in the default web browser.
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/toolbar/getting-started/data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/toolbar/getting-started/data/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Toolbar control will be rendered in the default web browser.
-
-![ASP.NET Core Toolbar Control](images/gettingstarted.PNG)
-
-## Render the Toolbar items using content template
-
-You can bind any HTML elements or other components in Toolbar items, by simply using the content template property in ASP.NET Toolbar.
-
-In the below demo, the Toolbar items are given as [Button](../button), [MaskedTextBox](../maskedtextbox), [RadioButton](../radio-button), [DropDownList](../drop-down-list) using the content template. In the content template property of Toolbar, you can directly render these controls like below in the code.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/toolbar/how-to/contenttemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Contenttemplate.cs" %}
-{% include code-snippet/toolbar/how-to/contenttemplate/contenttemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/toolbar/how-to/contenttemplate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Contenttemplate.cs" %}
-{% include code-snippet/toolbar/how-to/contenttemplate/contenttemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-![content template](images/contenttemplate.PNG)
-
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ToolBar/ASP.NET%20Core%20Tag%20Helper%20Examples).
-
-## See also
-
-* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
-* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-* [How to add Toggle Button](./how-to/add-toggle-button)
+![ASP.NET Core Skeleton Control](images/skeletoncontrol.png)
