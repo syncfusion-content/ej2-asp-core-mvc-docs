@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Carousel Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Syncfusion ##Platform_Name## Mention Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Carousel Control
+# Getting Started with ASP.NET Core Mention Control
 
-This section briefly explains about how to include [ASP.NET Core Carousel](https://www.syncfusion.com/aspnet-core-ui-controls/carousel) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include [ASP.NET Core Mention](https://www.syncfusion.com/aspnet-core-ui-controls/mention) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -88,91 +88,81 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Carousel Control
+## Add ASP.NET Core Mention Control
 
-Now, add the Syncfusion ASP.NET Core Carousel tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Mention tag helper in `~/Pages/Index.cshtml` page.
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-<div class="col-lg-12 control-section default-carousel-section">
-    <div class="e-sample-resize-container carousel-sample">
-        <ejs-carousel id="defaultCarousel" cssClass="default-carousel">
-            <e-carousel-items>
-                <e-carousel-item template="#templateItem1"></e-carousel-item>
-                <e-carousel-item template="#templateItem2"></e-carousel-item>
-                <e-carousel-item template="#templateItem3"></e-carousel-item>
-                <e-carousel-item template="#templateItem4"></e-carousel-item>
-                <e-carousel-item template="#templateItem5"></e-carousel-item>
-            </e-carousel-items>
-        </ejs-carousel>
-    </div>
-</div>
-
-<style>
-.default-carousel-section .carousel-sample {
-    margin: 0 auto 2em;
-    max-width: 500px;
-    height: 300px;
-}
-
-.default-carousel .e-carousel-items .e-carousel-item .img-container {
-    height: 100%;
-}
-
-.default-carousel .e-carousel-items .e-carousel-item .img-caption {
-    bottom: 4em;
-    color: #fff;
-    font-size: 12pt;
-    height: 2em;
-    position: relative;
-    padding: 0.3em 1em;
-    text-align: center;
-    width: 100%;
-}
-</style>
-
-<script id="templateItem1" type="text/x-template">
-    <figure class="img-container">
-        <img src="css/carousel/images/bridge.jpg" alt="bridge" style="height:100%; width: 100%" />
-        <figcaption class="img-caption">Golden Gate Bridge, San Francisco</figcaption>
-    </figure>
-</script>
-
-<script id="templateItem2" type="text/x-template">
-    <figure class="img-container">
-        <img src="css/carousel/images/trees.jpg" alt="spring_trees" style="height:100%; width: 100%" />
-        <figcaption class="img-caption">Spring Flower Trees</figcaption>
-    </figure>
-</script>
-
-<script id="templateItem3" type="text/x-template">
-    <figure class="img-container">
-        <img src="css/carousel/images/waterfall.jpg" alt="waterfall" style="height:100%; width: 100%" />
-        <figcaption class="img-caption">Oddadalen Waterfalls, Norway</figcaption>
-    </figure>
-</script>
-
-<script id="templateItem4" type="text/x-template">
-    <figure class="img-container">
-        <img src="css/carousel/images/sea.jpg" alt="sea" style="height:100%; width: 100%" />
-        <figcaption class="img-caption">Anse Source d'Argent, Seychelles</figcaption>
-    </figure>
-</script>
-
-<script id="templateItem5" type="text/x-template">
-    <figure class="img-container">
-        <img src="css/carousel/images/rocks.jpeg" alt="rocks" style="height:100%; width: 100%" />
-        <figcaption class="img-caption">Stonehenge, England</figcaption>
-    </figure>
-</script>
+{% include code-snippet/mention/getting-started/default/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Carousel control will be rendered in the default web browser.
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-![ASP.NET Core Carousel Control](images/carousel-control.png)
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/mention/getting-started/default/razor %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Carousel/ASP.NET%20Core%20Tag%20Helper%20Examples).
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Mention control will be rendered in the default web browser.
+
+![ASP.NET Core Mention Control](images/mention-control.png)
+
+## Binding data source
+
+After initialization, populate the Mention with data using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_DataSource) property. Here, an array of string values is passed to the Mention control.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/mention/getting-started/data/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/mention/getting-started/data/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/mention/getting-started/data/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Display mention character
+
+By using the [showMentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ShowMentionChar) property, the text content can be displayed along with the mention character. You can customize the mention character by using the [mentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) property in the Mention control.
+
+> By default, the [mentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) is `@` and the [showMentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ShowMentionChar) property is disabled.
+
+The following example, displays the text content along with the mention character configured as `#`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/mention/getting-started/showmentionchar/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/mention/getting-started/showmentionchar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/mention/getting-started/showmentionchar/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See also
 
