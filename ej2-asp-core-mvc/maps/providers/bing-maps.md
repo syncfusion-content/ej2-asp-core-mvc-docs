@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bing Maps in ##Platform_Name## Syncfusion Maps Component
+title: Bing Maps in Syncfusion ##Platform_Name## Syncfusion Maps Component
 description: Learn here all about Bing Maps in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Bing Maps
