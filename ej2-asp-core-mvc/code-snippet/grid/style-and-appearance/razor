@@ -1,0 +1,26 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+    col.Field("Freight").HeaderText("Freight").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("180").Add();
+}).AllowPaging().PageSettings(page => { page.PageSize(8); }).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
+
+<style>
+    .e-grid {
+        font-family: cursive;
+    }
+
+    .e-grid .e-row:hover .e-rowcell {
+        background-color: rgb(204, 229, 255) !important;
+    }
+    .e-grid .e-rowcell.e-selectionbackground {
+        background-color: rgb(230, 230, 250);
+    }
+    .e-grid .e-row.e-altrow {
+        background-color: rgb(150, 212, 212);
+    }
+    .e-grid .e-row {
+        background-color: rgb(180, 180, 180);
+    }
+</style>
