@@ -17,5 +17,6 @@ public ActionResult ItemClick()
         Text="Paste"
     });
     ViewBag.datasource = items;
+    
     return View();
 }

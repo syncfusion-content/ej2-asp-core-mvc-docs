@@ -1,0 +1,8 @@
+<label>Circle</label><br/>
+<ejs-skeleton id="element1" shape="Circle" width="48px"></ejs-skeleton><br/>
+<label>Rectangle</label><br/>
+<ejs-skeleton id="element2" shape="Rectangle" width="80px" height="48px"></ejs-skeleton><br/>
+<label>Square</label><br/>
+<ejs-skeleton id="element3" shape="Square" width="48px"></ejs-skeleton><br/>
+<label>Text</label><br/>
+<ejs-skeleton id="element4" shape="Text" width="100px" height="15px"></ejs-skeleton><br/>

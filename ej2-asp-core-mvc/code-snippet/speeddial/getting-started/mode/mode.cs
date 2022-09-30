@@ -31,5 +31,6 @@ public ActionResult Mode()
     });
     ViewBag.datasource = items;
     ViewBag.datasourceLabel = items1;
+    
     return View();
 }

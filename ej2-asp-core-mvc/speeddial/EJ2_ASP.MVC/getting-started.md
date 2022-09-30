@@ -118,6 +118,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ![ASP.NET MVC SpeedDial Control](images/speeddial-component.png)
 
 ## Positioning
+
 The speed dial can be positioned using the [`position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Position) property. The speed dial is positioned based on the [`target`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Target), if target is defined else positioned based on the browser viewport. The position values are TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -142,6 +143,7 @@ The speed dial can be positioned using the [`position`](https://help.syncfusion.
 ![ASP.NET MVC SpeedDial Control](images/speeddial-position-sample.png)
 
 ## Display Modes
+
 You can use the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property to either display the menu in linear order like a list or like a radial menu in radial (circular) direction.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -169,7 +171,8 @@ You can use the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 ![ASP.NET MVC SpeedDial Control](images/speeddial-mode-radial-sample.png)
 
 ## Action Item click
-The speed dial control triggers the [`clicked`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Clicked) event with [`SpeedDialItemEventArgs`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Buttons.SpeedDialItemEventArgs.html) argument when an action item is clicked.
+
+The speed dial control triggers the [`clicked`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Clicked) event when an action item is clicked.
 You can use this event to perform the required action.
 
 {% if page.publishingplatform == "aspnet-core" %}

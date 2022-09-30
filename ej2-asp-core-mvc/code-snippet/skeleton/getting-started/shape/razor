@@ -1,0 +1,8 @@
+<label>Circle</label><br/>
+@Html.EJS().Skeleton("element1").Shape(SkeletonType.Circle).Width("48px").Render()<br/>
+<label>Rectangle</label><br/>
+@Html.EJS().Skeleton("element2").Shape(SkeletonType.Rectangle).Width("80px").Height("48px").Render()<br/>
+<label>Square</label><br/>
+@Html.EJS().Skeleton("element3").Shape(SkeletonType.Square).Width("48px").Render()<br/>
+<label>Text</label><br/>
+@Html.EJS().Skeleton("element4").Shape(SkeletonType.Text).Width("100px").Height("15px").Render()<br/>

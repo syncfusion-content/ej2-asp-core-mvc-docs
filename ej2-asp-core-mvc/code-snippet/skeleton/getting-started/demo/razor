@@ -1,0 +1,1 @@
+@Html.EJS().Skeleton("element").Width("100px").Height("20px").Render()

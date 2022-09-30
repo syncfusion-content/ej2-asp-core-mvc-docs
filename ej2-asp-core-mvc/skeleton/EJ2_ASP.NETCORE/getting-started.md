@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Floating Action Button Control
-description: Checkout and learn about getting started with ##Platform_Name## Floating Action Button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Skeleton Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Skeleton control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Getting Started with ASP.NET Core Skeleton Control
 
-# Getting Started with ASP.NET Core Floating Action Button Control
-
-This section briefly explains about how to include [ASP.NET Core Floating Action Button] control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include `ASP.NET Core Skeleton` control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -28,7 +27,6 @@ This section briefly explains about how to include [ASP.NET Core Floating Action
 Syncfusion ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.
 
 > The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
-
 ## Add Syncfusion ASP.NET Core Tag Helper
 
 Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
@@ -89,15 +87,15 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Floating Action Button control
+## Add ASP.NET Core Skeleton Control
 
-Now, add the Syncfusion ASP.NET Core Floating Action Button tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Skeleton tag helper in `~/Pages/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/getting-started/demo/tagHelper %}
+{% include code-snippet/skeleton/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -105,24 +103,24 @@ Now, add the Syncfusion ASP.NET Core Floating Action Button tag helper in `~/Pag
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/getting-started/demo/razor %}
+{% include code-snippet/skeleton/getting-started/demo/razor %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Floating Action Button control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Skeleton control will be rendered in the default web browser.
 
-![ASP.NET Core Floating Action Button Control](images/default.png)
+![ASP.NET Core Skeleton Control](images/skeleton-component.png)
 
-## Positioning
+## Shapes
 
-The floating action button can be positioned using the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. The fab is positioned based on the [`Target`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target), if target is defined else positioned based on the browser viewport. The position values are TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
+The [`shape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Skeleton.html#Syncfusion_EJ2_Notifications_Skeleton_Shape) property can be used to display skeleton in different shapes like circle, square, rectangle and text.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/getting-started/position/tagHelper %}
+{% include code-snippet/skeleton/getting-started/shape/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -130,10 +128,8 @@ The floating action button can be positioned using the [`Position`](https://help
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/getting-started/position/razor %}
+{% include code-snippet/skeleton/getting-started/shape/razor %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-![ASP.NET Core Floating Action Button Control](images/position.png)
-
+![ASP.NET Core Skeleton Control](images/skeleton-shape-sample.png)
