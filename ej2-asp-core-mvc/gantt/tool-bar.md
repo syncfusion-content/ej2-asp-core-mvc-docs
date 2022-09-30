@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tool Bar in ##Platform_Name## Gantt Component
+title: Toolbar in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Tool Bar in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tool Bar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Toolbar
+# Toolbar in Gantt control
 
 The Gantt control provides the toolbar support to handle Gantt actions. The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) property accepts the collection of built-in toolbar items and [`ItemModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html) objects for custom toolbar items.
 
