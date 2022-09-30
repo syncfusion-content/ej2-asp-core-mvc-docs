@@ -113,7 +113,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Skeleton Control](images/skeleton-control.png)
 
-## Shapes
+## Skeleton Types
 
 The Skeleton control has the following different type of shapes.
 
@@ -166,4 +166,4 @@ The Skeleton control has the following different type of shapes.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Skelton Shapes](images/skeleton-skimmer-effects.png)
+![ASP.NET MVC Skelton Skimmer Effects](images/skeleton-skimmer-effects.png)

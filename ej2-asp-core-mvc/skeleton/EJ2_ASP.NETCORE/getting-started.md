@@ -110,7 +110,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Skeleton Control](images/skeleton-control.png)
 
-## Shapes
+## Skeleton Types
 
 The Skeleton control has the following different type of shapes.
 
