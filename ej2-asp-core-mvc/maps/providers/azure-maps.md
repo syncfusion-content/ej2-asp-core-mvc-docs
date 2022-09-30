@@ -110,10 +110,10 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Azure Maps layer f
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/azure/azuresublayer/tagHelper %}
+{% include code-snippet/maps/map-providers/azuresublayer/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Azuresublayer.cs" %}
-{% include code-snippet/maps/azure/azuresublayer/azuresublayer.cs %}
+{% include code-snippet/maps/map-providers/azuresublayer/azuresublayer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -121,10 +121,10 @@ Any GeoJSON shape can be rendered as a sublayer on top of the Azure Maps layer f
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/azure/azuresublayer/razor %}
+{% include code-snippet/maps/map-providers/azuresublayer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Azuresublayer.cs" %}
-{% include code-snippet/maps/azure/azuresublayer/azuresublayer.cs %}
+{% include code-snippet/maps/map-providers/azuresublayer/azuresublayer.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
