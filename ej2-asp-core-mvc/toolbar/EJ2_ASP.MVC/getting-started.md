@@ -157,5 +157,3 @@ public ActionResult Index()
 ## See also
 
 * [How to add Toggle Button](./how-to/add-toggle-button)
-
-N> You can also explore our [ASP.NET MVC Toolbar Example](https://ej2.syncfusion.com/aspnetmvc/Toolbar/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Toolbar.
