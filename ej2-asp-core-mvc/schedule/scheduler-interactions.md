@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scheduler Interactions in ##Platform_Name## Schedule Component
+title: Scheduler Interactions in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Scheduler Interactions in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scheduler Interactions

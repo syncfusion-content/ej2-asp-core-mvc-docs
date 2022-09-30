@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual Scrolling in ##Platform_Name## Schedule Component
+title: Virtual Scrolling in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Virtual Scrolling in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtual Scrolling
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Virtual scrolling
+# Virtual scrolling in ASP.NET MVC Schedule control 
 
 To achieve better performance in the Scheduler when loading a large number of resources and events, we have added virtual scrolling support to load a large set of resources and events instantly as you scroll. You can dynamically load large number of resources and events in the Scheduler by setting `true` to the [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property within the view specific settings. The virtual loading of events is possible in Agenda view, by setting [`allowVirtualScrolling`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_AllowVirtualScrolling) property to `true` within the agenda view specific settings.
 
