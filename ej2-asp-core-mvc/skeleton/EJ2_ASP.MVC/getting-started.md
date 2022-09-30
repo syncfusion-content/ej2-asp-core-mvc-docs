@@ -96,12 +96,14 @@ Now, add the Syncfusion ASP.NET MVC Skeleton control in `~/Views/Home/Index.csht
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
+@using Syncfusion.EJ2.Notifications;
+
 <div class="col-sm-6">
     <h5>Circle</h5>
-    <ejs-skeleton id="skeletonCircleSmall" shape="Circle" width="3rem"></ejs-skeleton>
-    <ejs-skeleton id="skeletonCircleMedium" shape="Circle" width="48px"></ejs-skeleton>
-    <ejs-skeleton id="skeletonCircleLarge" shape="Circle" width="64px"></ejs-skeleton>
-    <ejs-skeleton id="skeletonCircleLarger" shape="Circle" width="80px"></ejs-skeleton>
+    @Html.EJS().Skeleton("skeletonCircleSmall").Shape(SkeletonType.Circle).Width("3rem").Render()
+    @Html.EJS().Skeleton("skeletonCircleMedium").Shape(SkeletonType.Circle).Width("48px").Render()
+    @Html.EJS().Skeleton("skeletonCircleLarge").Shape(SkeletonType.Circle).Width("64px").Render()
+    @Html.EJS().Skeleton("skeletonCircleLarger").Shape(SkeletonType.Circle).Width("80px").Render()
 </div>
 
 {% endhighlight %}
@@ -109,4 +111,59 @@ Now, add the Syncfusion ASP.NET MVC Skeleton control in `~/Views/Home/Index.csht
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Skeleton control will be rendered in the default web browser.
 
-![ASP.NET MVC Skeleton Control](images/skeletoncontrol.png)
+![ASP.NET MVC Skeleton Control](images/skeleton-control.png)
+
+## Skeleton Types
+
+The Skeleton control has the following different type of shapes.
+
+* Circle
+* Square
+* Text
+* Rectangle
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
+@using Syncfusion.EJ2.Notifications;
+
+<div class="row skeleton-default">
+    <div class="col-sm-6">
+        <h5>Circle</h5>
+        @Html.EJS().Skeleton("skeletonCircleSmall").Shape(SkeletonType.Circle).Width("3rem").Render()
+        @Html.EJS().Skeleton("skeletonCircleMedium").Shape(SkeletonType.Circle).Width("48px").Render()
+        @Html.EJS().Skeleton("skeletonCircleLarge").Shape(SkeletonType.Circle).Width("64px").Render()
+        @Html.EJS().Skeleton("skeletonCircleLarger").Shape(SkeletonType.Circle).Width("80px").Render()
+    </div>
+    <div class="col-sm-6">
+        <h5>Square</h5>
+        @Html.EJS().Skeleton("skeletonSquareSmall").Shape(SkeletonType.Square).Width("3rem").Render()
+        @Html.EJS().Skeleton("skeletonSquareMedium").Shape(SkeletonType.Square).Width("48px").Render()
+        @Html.EJS().Skeleton("skeletonSquareLarge").Shape(SkeletonType.Square).Width("64px").Render()
+        @Html.EJS().Skeleton("skeletonSquareLarger").Shape(SkeletonType.Square).Width("80px").Render()
+    </div>
+</div>
+<div class="row skeleton-default">
+    <div class="col-sm-6">
+        <h5>Text</h5>
+        @Html.EJS().Skeleton("skeletonText").Shape(SkeletonType.Text).Width("100%").Height("15px").Render()
+        @Html.EJS().Skeleton("skeletonTextMedium").Width("30%").Height("15px").Render()
+        <br />
+        @Html.EJS().Skeleton("skeletonTextSmall").Width("15%").Height("15px").Render()
+        <br />
+        @Html.EJS().Skeleton("skeletonTextMedium1").Width("60%").Height("15px").Render()
+        <br />
+        @Html.EJS().Skeleton("skeletonTextSmall1").Width("15%").Height("15px").Render()
+    </div>
+    <div class="col-sm-6">
+        <h5>Rectangle</h5>
+        @Html.EJS().Skeleton("skeletonRectangle").Shape(SkeletonType.Rectangle).Width("100%").Height("100px").Render()
+        @Html.EJS().Skeleton("skeletonRectangleMedium").Shape(SkeletonType.Rectangle).Width("20%").Height("35px").Render()
+        @Html.EJS().Skeleton("skeletonRectangleMediumRight").Shape(SkeletonType.Rectangle).Width("20%").Height("35px").Render()
+    </div>
+</div>
+
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Skelton Skimmer Effects](images/skeleton-skimmer-effects.png)
