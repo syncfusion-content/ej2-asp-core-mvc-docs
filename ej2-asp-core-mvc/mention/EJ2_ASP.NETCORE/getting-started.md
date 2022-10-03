@@ -158,8 +158,8 @@ The following example, displays the text content along with the mention characte
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/getting-started/showmentionchar/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/getting-started/showmentionchar/data.cs %}
+{% highlight c# tabtitle="Suggestionlist.cs" %}
+{% include code-snippet/mention/getting-started/showmentionchar/suggestionlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
