@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Mention Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## SpeedDial Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Mention Control
 
-This section briefly explains about how to include [ASP.NET Core Mention](https://www.syncfusion.com/aspnet-core-ui-controls/mention) control in your ASP.NET Core application using Visual Studio.
+# Getting Started with ASP.NET Core SpeedDial Control
+
+This section briefly explains about how to include [ASP.NET Core SpeedDial] control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -88,14 +89,15 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Mention Control
+## Add ASP.NET Core SpeedDial control
 
-Now, add the Syncfusion ASP.NET Core Mention tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Fab tag helper in `~/Pages/Index.cshtml` page.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/default/tagHelper %}
+{% include code-snippet/speeddial/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -103,24 +105,26 @@ Now, add the Syncfusion ASP.NET Core Mention tag helper in `~/Pages/Index.cshtml
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/default/razor %}
+{% include code-snippet/speeddial/getting-started/demo/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/speeddial/getting-started/demo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Mention control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core SpeedDial control will be rendered in the default web browser.
 
-![ASP.NET Core Mention Control](images/mention-control.png)
+![ASP.NET Core SpeedDial Control](images/speeddial-component.png)
 
-## Binding data source
+## Positioning
 
-After initialization, populate the Mention with data using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_DataSource) property. Here, an array of string values is passed to the Mention control.
-
+The speed dial can be positioned using the [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Position) property. The speed dial is positioned based on the [`target`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Target), if target is defined else positioned based on the browser viewport. The position values are TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/data/tagHelper %}
+{% include code-snippet/speeddial/getting-started/position/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -128,27 +132,25 @@ After initialization, populate the Mention with data using the [dataSource](http
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/data/razor %}
+{% include code-snippet/speeddial/getting-started/position/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/getting-started/data/data.cs %}
+{% highlight c# tabtitle="Position.cs" %}
+{% include code-snippet/speeddial/getting-started/position/position.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-## Display mention character
+![ASP.NET Core SpeedDial Control](images/speeddial-position-sample.png)
 
-By using the [showMentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ShowMentionChar) property, the text content can be displayed along with the mention character. You can customize the mention character by using the [mentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) property in the Mention control.
+## Display Modes
 
-> By default, the [mentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) is `@` and the [showMentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ShowMentionChar) property is disabled.
-
-The following example, displays the text content along with the mention character configured as `#`.
+You can use the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property to either display the menu in linear order like a list or like a radial menu in radial (circular) direction.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/showmentionchar/tagHelper %}
+{% include code-snippet/speeddial/getting-started/mode/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -156,15 +158,41 @@ The following example, displays the text content along with the mention characte
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/showmentionchar/razor %}
+{% include code-snippet/speeddial/getting-started/mode/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Suggestionlist.cs" %}
-{% include code-snippet/mention/getting-started/showmentionchar/suggestionlist.cs %}
+{% highlight c# tabtitle="Mode.cs" %}
+{% include code-snippet/speeddial/getting-started/mode/mode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-## See also
+![ASP.NET Core SpeedDial Control](images/speeddial-mode-linear-sample.png)
 
-* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
-* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+![ASP.NET Core SpeedDial Control](images/speeddial-mode-radial-sample.png)
+
+## Action Item click
+
+The speed dial control triggers the [`clicked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Clicked) event when an action item is clicked.
+You can use this event to perform the required action.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/speeddial/getting-started/click/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/speeddial/getting-started/click/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ItemClick.cs" %}
+{% include code-snippet/speeddial/getting-started/click/click.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![ASP.NET Core SpeedDial Control](images/speeddial-event-sample.png)

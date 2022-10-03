@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Mention Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Floating Action Button Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Floating Action Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Mention Control
 
-This section briefly explains about how to include [ASP.NET Core Mention](https://www.syncfusion.com/aspnet-core-ui-controls/mention) control in your ASP.NET Core application using Visual Studio.
+# Getting Started with ASP.NET Core Floating Action Button Control
+
+This section briefly explains about how to include [ASP.NET Core Floating Action Button] control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -88,14 +89,15 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Mention Control
+## Add ASP.NET Core Floating Action Button control
 
-Now, add the Syncfusion ASP.NET Core Mention tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Floating Action Button tag helper in `~/Pages/Index.cshtml` page.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/default/tagHelper %}
+{% include code-snippet/floating-action-button/getting-started/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -103,24 +105,24 @@ Now, add the Syncfusion ASP.NET Core Mention tag helper in `~/Pages/Index.cshtml
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/default/razor %}
+{% include code-snippet/floating-action-button/getting-started/demo/razor %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Mention control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Floating Action Button control will be rendered in the default web browser.
 
-![ASP.NET Core Mention Control](images/mention-control.png)
+![ASP.NET Core Floating Action Button Control](images/default.png)
 
-## Binding data source
+## Positioning
 
-After initialization, populate the Mention with data using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_DataSource) property. Here, an array of string values is passed to the Mention control.
+The floating action button can be positioned using the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. The fab is positioned based on the [`Target`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target), if target is defined else positioned based on the browser viewport. The position values are TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/data/tagHelper %}
+{% include code-snippet/floating-action-button/getting-started/position/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -128,43 +130,10 @@ After initialization, populate the Mention with data using the [dataSource](http
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/getting-started/data/data.cs %}
+{% include code-snippet/floating-action-button/getting-started/position/razor %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-## Display mention character
+![ASP.NET Core Floating Action Button Control](images/position.png)
 
-By using the [showMentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ShowMentionChar) property, the text content can be displayed along with the mention character. You can customize the mention character by using the [mentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) property in the Mention control.
-
-> By default, the [mentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) is `@` and the [showMentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ShowMentionChar) property is disabled.
-
-The following example, displays the text content along with the mention character configured as `#`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/showmentionchar/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/showmentionchar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Suggestionlist.cs" %}
-{% include code-snippet/mention/getting-started/showmentionchar/suggestionlist.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## See also
-
-* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
-* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
