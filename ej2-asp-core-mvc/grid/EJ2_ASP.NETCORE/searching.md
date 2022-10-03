@@ -230,6 +230,4 @@ In the following sample, we have performed the searching with multiple keywords 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 > * Define multiple keywords by using a comma separator in search bar to search.
