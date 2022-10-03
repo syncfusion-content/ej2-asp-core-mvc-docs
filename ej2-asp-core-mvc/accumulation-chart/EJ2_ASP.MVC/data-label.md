@@ -37,7 +37,7 @@ Accumulation chart provides support for placing the data label either `Inside` o
 
 ## Smart labels
 
-Data labels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`EnableSmartLabels`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_EnableSmartLabels) property.
+Data labels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`EnableSmartLabels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_EnableSmartLabels) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
