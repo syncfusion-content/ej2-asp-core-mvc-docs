@@ -1,0 +1,13 @@
+<div style="height:400px;">
+    <ejs-button id="alertBtn" content="Alert" cssClass="e-danger"></ejs-button>
+</div>
+<script>
+    document.getElementById('alertBtn').onclick = function () {
+        ej.popups.DialogUtility.alert({
+            title: 'Low Battery',
+            content: '10% of battery remaining',
+            showCloseIcon: true,
+            closeOnEscape : true
+        });
+    };
+</script>
