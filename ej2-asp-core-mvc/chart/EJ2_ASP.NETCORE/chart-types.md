@@ -487,9 +487,9 @@ To render a multicolored area series, use the series type as `MultiColoredArea`.
 
 
 
-**Customization of Area Charts**
+**Customization of the series**
 
-The fill, width and dashArray properties can be customized by [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill), [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Width) and [`dashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
+`fill` and `dashArray` of all area type series can be customized using [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Fill) and [`dashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -514,7 +514,32 @@ The fill, width and dashArray properties can be customized by [`fill`](https://h
 {% endtabs %}
 {% endif %}
 
+### Customization of the border
 
+The `width` and `fill` properties in the [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Border) can be used to customize the border of all area type series.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/area-charts/border/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Border.cs" %}
+{% include code-snippet/chart/series/area-charts/border/border.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/area-charts/border/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Border.cs" %}
+{% include code-snippet/chart/series/area-charts/border/border.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Column Charts
 
@@ -545,8 +570,6 @@ To render a column series, use series [`type`](https://help.syncfusion.com/cr/as
 {% endtabs %}
 {% endif %}
 
-
-
 **Range Column**
 
 To render a range column series, use series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) as `RangeColumn`.
@@ -573,8 +596,6 @@ To render a range column series, use series [`type`](https://help.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 **Stacked Column**
 
