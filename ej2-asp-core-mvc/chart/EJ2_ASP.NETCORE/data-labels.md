@@ -69,7 +69,7 @@ Using [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 > The position `Outer` is applicable for column and bar type series.
 
-## Datalabel template
+## Data Label Template
 
 Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html#Syncfusion_EJ2_Charts_ChartDataLabelSettings_Template) property, you can set data label template in chart.
 
@@ -125,7 +125,89 @@ Text from the data source can be mapped using `name` property.
 {% endtabs %}
 {% endif %}
 
+## Format
 
+Data label for the chart can be formatted using [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html#Syncfusion_EJ2_Charts_ChartDataLabelSettings_Format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/datalabels/format/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Format.cs" %}
+{% include code-snippet/chart/datalabels/format/format.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/datalabels/format/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Format.cs" %}
+{% include code-snippet/chart/datalabels/format/format.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+<table>
+  <tr>
+    <th>Value</th>
+    <th>Format</th>
+    <th>Resultant Value</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>n1</td>
+    <td>1000.0</td>
+    <td>The number is rounded to 1 decimal place.</td>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>n2</td>
+    <td>1000.00</td>
+    <td>The number is rounded to 2 decimal places.</td>
+  </tr>
+   <tr>
+    <td>1000</td>
+    <td>n3</td>
+    <td>1000.000</td>
+    <td>The number is rounded to 3 decimal place.</td>
+  </tr>
+  <tr>
+    <td>0.01</td>
+    <td>p1</td>
+    <td>1.0%</td>
+    <td>The number is converted to percentage with 1 decimal place.</td>
+  </tr>
+  <tr>
+    <td>0.01</td>
+    <td>p2</td>
+    <td>1.00%</td>
+    <td>The number is converted to percentage with 2 decimal place.</td>
+  </tr>
+   <tr>
+    <td>0.01</td>
+    <td>p3</td>
+    <td>1.000%</td>
+    <td>The number is converted to percentage with 3 decimal place.</td>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>c1</td>
+    <td>$1000.0</td>
+    <td>The currency symbol is appended to number and number is rounded to 1 decimal place.</td>
+  </tr>
+   <tr>
+    <td>1000</td>
+    <td>c2</td>
+    <td>$1000.00</td>
+    <td>The currency symbol is appended to number and number is rounded to 2 decimal place.</td>
+  </tr>
+</table>
 
 ## Margin
 

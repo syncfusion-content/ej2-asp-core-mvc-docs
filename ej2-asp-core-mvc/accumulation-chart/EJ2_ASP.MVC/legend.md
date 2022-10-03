@@ -322,3 +322,30 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% endtabs %}
 {% endif %}
 
+## Legend Item Padding
+
+The [`itemPadding`](../api/accumulation-chart/legendSettings/#itempadding) property can be used to adjust the space between the legend items.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/legend/itempadding/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ItemPadding.cs" %}
+{% include code-snippet/chart/accumulation-charts/legend/itempadding/itempadding.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/legend/itempadding/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ItemPadding.cs" %}
+{% include code-snippet/chart/accumulation-charts/legend/itempadding/itempadding.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+

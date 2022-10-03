@@ -459,3 +459,30 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## Legend Item Padding
+
+The [`itemPadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ItemPadding) property can be used to adjust the space between the legend items.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/itempadding/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ItemPadding.cs" %}
+{% include code-snippet/chart/axis/legend/itempadding/itempadding.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/itempadding/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ItemPadding.cs" %}
+{% include code-snippet/chart/axis/legend/itempadding/itempadding.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
