@@ -7,7 +7,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    public class AutoCompleteController : Controller
+    public class MentionController : Controller
     {
         public ActionResult Index()
         {
