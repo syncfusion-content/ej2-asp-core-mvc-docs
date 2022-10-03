@@ -324,7 +324,7 @@ By default, the page number will be enabled while legend paging. Now, you can di
 
 ## Legend Item Padding
 
-The [`ItemPadding`](../api/accumulation-chart/legendSettings/#itempadding) property can be used to adjust the space between the legend items.
+The [`ItemPadding`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartLegendSettings.html#Syncfusion_EJ2_Charts_AccumulationChartLegendSettings_ItemPadding) property can be used to adjust the space between the legend items.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

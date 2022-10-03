@@ -489,7 +489,7 @@ To render a multicolored area series, use the series type as `MultiColoredArea`.
 
 **Customization of the series**
 
-`Fill` and `DashArray` of all area type series can be customized using [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type_Fill) and [`DashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
+`Fill` and `DashArray` of all area type series can be customized using [`Fill`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type_Fill) and [`DashArray`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -516,7 +516,7 @@ To render a multicolored area series, use the series type as `MultiColoredArea`.
 
 ### Customization of the border
 
-The `Width` and `Fill` properties in the [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Border) can be used to customize the border of all area type series.
+The `Width` and `Fill` properties in the [`Border`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Border) can be used to customize the border of all area type series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

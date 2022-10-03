@@ -137,7 +137,7 @@ Marker's color and border can be customized using `Fill` and `Border` properties
 
 ## Customizing specific point
 
-You can also customize the specific marker and label using [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) event. The `PointRender` event allows you to change the shape, color and border for a point.
+You can also customize the specific marker and label using [`PointRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) event. The `PointRender` event allows you to change the shape, color and border for a point.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -164,7 +164,7 @@ You can also customize the specific marker and label using [`PointRender`](https
 
 ## Fill marker with series color
 
-Marker can be filled with the series color by setting the [`IsFilled`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartMarkerSettings.html#Syncfusion_EJ2_Charts_ChartMarkerSettings_IsFilled) property to <b>true</b>.
+Marker can be filled with the series color by setting the [`IsFilled`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartMarkerSettings.html#Syncfusion_EJ2_Charts_ChartMarkerSettings_IsFilled) property to <b>true</b>.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

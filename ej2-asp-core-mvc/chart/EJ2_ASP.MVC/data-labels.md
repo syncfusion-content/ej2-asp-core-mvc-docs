@@ -127,7 +127,7 @@ Text from the data source can be mapped using `Name` property.
 
 ## Format
 
-Data label for the chart can be formatted using [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html#Syncfusion_EJ2_Charts_ChartDataLabelSettings_Format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
+Data label for the chart can be formatted using [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html#Syncfusion_EJ2_Charts_ChartDataLabelSettings_Format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

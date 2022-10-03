@@ -50,7 +50,7 @@ Data labels will be arranged smartly without overlapping with each other. You ca
 
 ## Data Label Template
 
-Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Template) property, you can set data label template in chart.
+Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Template) property, you can set data label template in chart.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -89,7 +89,7 @@ Text from the data source can be mapped to data label using `Name` property.
 
 ## Format
 
-Data label for the accumulation chart can be formatted using [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
+Data label for the accumulation chart can be formatted using [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
