@@ -211,7 +211,7 @@ You can select a point or series programmatically on a chart using [`selectedDat
 
 ## Selection through on legend
 
-You can select a point or series through on legend using [`toggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility) property.
+You can able to select a point or series through on legend using [`toggleVisibility`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ToggleVisibility) property. Also, use [`enableHighlight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_EnableHighlight) property for highlighting the series through legend.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
