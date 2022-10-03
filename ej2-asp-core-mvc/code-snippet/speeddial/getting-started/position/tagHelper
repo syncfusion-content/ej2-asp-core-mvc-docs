@@ -18,5 +18,5 @@
 }
 
 <div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    <ejs-speeddial id="element" target="#target" position="BottomCenter" content="Edit" items="items"></ejs-speeddial>
+    <ejs-speeddial id="speeddial" target="#target" position="BottomCenter" content="Edit" items="items"></ejs-speeddial>
 </div>

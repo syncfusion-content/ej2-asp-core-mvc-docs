@@ -31,6 +31,6 @@
 }
 
 <div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    <ejs-speeddial target="#target" position="BottomLeft" content="Edit" items="items" mode="Radial" openIconCss="e-icons e-edit"></ejs-speeddial>
-    <ejs-speeddial target="#target" position="BottomRight" content="Edit" items="items1" mode="Linear" openIconCss="e-icons e-edit"></ejs-speeddial>
+    <ejs-speeddial id="speeddial" target="#target" position="BottomLeft" content="Edit" items="items" mode="Radial" openIconCss="e-icons e-edit"></ejs-speeddial>
+    <ejs-speeddial id="speeddial1" target="#target" position="BottomRight" content="Edit" items="items1" mode="Linear" openIconCss="e-icons e-edit"></ejs-speeddial>
 </div>
