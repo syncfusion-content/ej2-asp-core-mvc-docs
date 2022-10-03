@@ -18,7 +18,7 @@
        MajorTickLines(ViewBag.majorTickLines).
        RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.None)).
        ZoomSettings(z => z.EnableMouseWheelZooming(true).
-       ToolbarItems(ViewBag.toolbarItems). 
+       ShowToolbar(true).
        Mode(Syncfusion.EJ2.Charts.ZoomMode.X)).
        Title("Sales History of Product X").Render()
 
