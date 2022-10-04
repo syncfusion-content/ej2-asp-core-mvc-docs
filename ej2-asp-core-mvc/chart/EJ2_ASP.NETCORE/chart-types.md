@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Types in ##Platform_Name## Chart Component
+title: Chart Types in ##Platform_Name## Syncfusion Chart Component
 description: Learn here all about Chart Types in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chart Types
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Chart Types
+# Chart Types in ##Platform_Name## Chart Component
 
 Essential JS 2 Chart supports 32 types of series.
 

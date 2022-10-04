@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Labels in ##Platform_Name## Chart Component
+title: Data Labels in ##Platform_Name## Syncfusion Chart Component
 description: Learn here all about Data Labels in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Labels

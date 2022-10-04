@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Chart Component
+title: Selection in ##Platform_Name## Syncfusion Chart Component
 description: Learn here all about Selection in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Selection
+# Selection in ##Platform_Name## Chart Component
 
 Chart provides selection support for the series and its data points on mouse click.
 
