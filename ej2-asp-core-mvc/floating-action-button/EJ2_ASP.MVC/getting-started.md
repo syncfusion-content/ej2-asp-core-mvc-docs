@@ -93,7 +93,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 Now, add the Syncfusion ASP.NET MVC Floating Action Button control in `~/Views/Home/Index.cshtml` page.
 
-% if page.publishingplatform == "aspnet-core" %}
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -118,7 +118,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 The floating action button can be positioned using the [`position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. The fab is positioned based on the [`target`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target), if target is defined else positioned based on the browser viewport. The position values are TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
 
-% if page.publishingplatform == "aspnet-core" %}
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
