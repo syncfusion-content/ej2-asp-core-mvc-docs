@@ -13,7 +13,7 @@ documentation: ug
 
 ## Collapsible panes
 
-The Splitter panes can be configured with built-in expand and collapse functionalities. By default, the `Collapsible` behavior is disabled. Enable the `Collapsible` behavior in the [`PaneSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Splitter.html#Syncfusion_EJ2_Layouts_Splitter_PaneSettings) property to show or hide the expand or collapse icons in the panes. You can dynamically expand and collapse the panes by the corresponding icons.
+The [ASP.NET MVC Splitter](https://www.syncfusion.com/aspnet-mvc-ui-controls/splitter) panes can be configured with built-in expand and collapse functionalities. By default, the `Collapsible` behavior is disabled. Enable the `Collapsible` behavior in the [`PaneSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Splitter.html#Syncfusion_EJ2_Layouts_Splitter_PaneSettings) property to show or hide the expand or collapse icons in the panes. You can dynamically expand and collapse the panes by the corresponding icons.
 
 The following code shows how to enable collapsible behavior.
 
