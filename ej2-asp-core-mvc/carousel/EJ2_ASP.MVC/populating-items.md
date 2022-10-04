@@ -107,4 +107,4 @@ The following example code depicts the functionality of `partialVisible` and wit
 
 ## See also
 
-* [Customizing partial slides area size](../carousel/styles-and-appearance.md)
+* [Customizing partial slides area size](./styles-and-appearance/#customizing-partial-slides-size)
