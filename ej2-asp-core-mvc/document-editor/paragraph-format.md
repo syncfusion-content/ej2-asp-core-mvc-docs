@@ -132,6 +132,16 @@ documenteditor.selection.paragraphFormat.borders.bottom.color = "#000000";
 
 Note: At present, the Document editor component displays all the border styles as single line. But you can apply any border style and get the proper display in Microsoft Word app when opening the exported Word document.
 
+## Show or Hide Paragraph marks
+
+You can show or hide the hidden formatting symbols like spaces, tab, paragraph marks, and breaks in Document editor component. These marks help identify the start and end of a paragraph and all the hidden formatting symbols in a Word document.
+
+The following example code illustrates how to show or hide paragraph marks.
+
+```typescript
+documenteditor.documentEditorSettings.showHiddenMarks = true;
+```
+
 ## Toolbar with paragraph formatting options
 
 {% if page.publishingplatform == "aspnet-core" %}
