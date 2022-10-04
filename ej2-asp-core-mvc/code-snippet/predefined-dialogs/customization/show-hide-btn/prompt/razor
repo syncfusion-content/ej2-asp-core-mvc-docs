@@ -1,0 +1,15 @@
+<div style="height:400px;">
+    @Html.EJS().Button("promptBtn").Content("Prompt").IsPrimary(true).Render()
+</div>
+<script>
+    var promptBtn = new ej.buttons.Button({});
+    promptBtn.appendTo('#promptBtn');
+    document.getElementById('promptBtn').onclick = function () {
+        ej.popups.DialogUtility.alert({
+            title: 'Join Wi-Fi network',
+            content: '<table class="Table"><tbody><tr><td>SSID: <b>AndroidAP</b></td></tr><tr> <td>Password:</td> </tr> <tr> <td> <span class="e - input - group"> <input type="password" id="password" name="Required" class="e - input"> </span> </td> </tr> </tbody> </table>',
+            showCloseIcon: true,
+            closeOnEscape : true
+        });
+    };
+</script>
