@@ -1,9 +1,5 @@
-@{var amount = "\"" + "Sum(Amount)" + "\"";}
-@{var sold = "\"" + "Sum(Sold)" + "\"";}
-@{ var totalPrice = amount + "+" + sold;}
-
-<ejs-pivotview id="PivotView" height="300" allowCalculatedField="true" showFieldList="true" actionBegin="actionBegin">
-    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
+<ejs-pivotview id="PivotView" height="300" showFieldList="true" width="650">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
         </e-formatsettings>
@@ -18,18 +14,16 @@
         <e-values>
             <e-field name="Sold" caption="Units Sold"></e-field>
             <e-field name="Amount" caption="Sold Amount"></e-field>
-            <e-field name="Total" type="CalculatedField"></e-field>
         </e-values>
-        <e-calculatedfieldsettings>
-            <e-field name="Total" formula="@totalPrice"></e-field>
-        </e-calculatedfieldsettings>
     </e-datasourcesettings>
+    <e-gridSettings columnRender="columnRender"></e-gridSettings>
 </ejs-pivotview>
 
- <script>
-    function actionBegin(args) {
-       if (args.actionName == 'Open calculated field dialog') {
-            args.cancel = true;
+<script>
+    function columnRender(args) {
+        for (var i = 0; i < args.columns.length; i++) {
+            args.columns[i].autoFit = true;
+            args.columns[i].textAlign="Right";
         }
     }
 </script>
