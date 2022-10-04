@@ -99,7 +99,7 @@ Now, add the Syncfusion ASP.NET MVC Floating Action Button control in `~/Views/H
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/floating-action-button/getting-started/demo/tagHelper %}
 {% endhighlight %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
