@@ -76,7 +76,7 @@ Meanwhile, user can also view calculated field dialog in UI by invoking `CreateC
 
 ![output](images/calc-field-btn.png)
 
-![output](images/calc-field-btn2.png)
+![output](images/calculatdfield-btn-dropdown.png)
 
 ## Editing through the field list and the grouping bar
 
