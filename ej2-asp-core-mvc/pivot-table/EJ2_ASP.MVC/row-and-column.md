@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row And Column in ##Platform_Name## Pivot Table Component
+title: Row And Column in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Row And Column in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row And Column
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and Column
+# Row and Column in ##Platform_Name## Pivot Table Component
 
 ## Width and Height
 
