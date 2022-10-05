@@ -194,7 +194,7 @@ To enable search box in the pivot table's built-in popup field list UI, set the 
 
 In the field list UI, you can display fields by grouping them under the desired folder name. It can only be configured via code-behind by setting the [`groupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_GroupName_System_String_) property in [`fieldMapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_FieldMapping).
 
-> You can only group fields to one level using the [`groupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_GroupName_System_String_) property. 
+> You can only group fields to one level using the [`groupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_GroupName_System_String_) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
