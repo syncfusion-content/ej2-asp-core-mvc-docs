@@ -1,0 +1,37 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotView").Height("300").Width(650).DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(true)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+}).Rows(rows =>
+{
+    rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).GridSettings(gridSettings => gridSettings.ColumnRender("columnRender")).Render()
+
+<script>
+    function columnRender(args) {
+       if(args.stackedColumns[0]){
+            // Content for the row headers is right-aligned here.
+            args.stackedColumns[0].textAlign="Right";
+        } else if(args.stackedColumns[1]){
+            // Content for the column header "FY 2015" is center-aligned here.
+            args.stackedColumns[1].textAlign = 'Center';
+        } else if(args.stackedColumns[1] && args.stackedColumns[1].columns[0]){
+            // Content for the column header "Q1" is right-aligned here.
+            args.stackedColumns[1].columns[0].textAlign = 'Right';
+        } else if(args.stackedColumns[1] && args.stackedColumns[1].columns[0] && args.stackedColumns[1].columns[0].columns[0]){
+            // Content for the value header "Units Sold" is right-aligned here.
+            args.stackedColumns[1].columns[0].columns[0].headerTextAlign = 'Right';    
+        } else if(args.stackedColumns[1] && args.stackedColumns[1].columns[0] && args.stackedColumns[1].columns[0].columns[0]){
+            // Content for the values are left-aligned here.
+            args.stackedColumns[1].columns[0].columns[0].textAlign = 'Left';     
+        }
+    }
+</script>
