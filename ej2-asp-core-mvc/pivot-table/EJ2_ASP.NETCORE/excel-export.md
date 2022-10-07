@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Export in ##Platform_Name## Pivot Table Component
+title: Excel Export in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Excel Export in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Export
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Excel Export
+# Excel Export in ##Platform_Name## Pivot Table Component
 
 The Excel export allows Pivot Table data to be exported as Excel document. To enable Excel export in the pivot table, set the [`allowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**. Once the API is set, user needs to call the `excelExport` method for exporting on external button click.
 
