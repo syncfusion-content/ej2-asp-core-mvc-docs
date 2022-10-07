@@ -522,6 +522,35 @@ The event `pdfHeaderQueryCellInfo` triggers on framing each column header cell d
 {% endtabs %}
 {% endif %}
 
+### ExportComplete
+
+The event [`exportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportComplete) is triggered after the pivot table data has been exported to an PDF document. You can use this event to acquire blob stream data for further customization and processing at your end by passing the `isBlob` parameter as **true** when using the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/#pdfexport) method. It has the following parameters:
+
+* `type` - It holds the current export type such as PDF, Excel, and CSV.
+* `promise` - It holds the promise object for blob data.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Blob-export.cs" %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/blob-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Blob-export.cs" %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/blob-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## See Also
