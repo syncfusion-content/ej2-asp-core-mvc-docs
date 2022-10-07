@@ -1,0 +1,15 @@
+<div style="height:400px;">
+    @Html.EJS().Button("alertBtn").Content("Alert").CssClass("e-danger").Render()
+</div>
+<script>
+    var alertBtn = new ej.buttons.Button({});
+    alertBtn.appendTo('#alertBtn');
+    document.getElementById('alertBtn').onclick = function () {
+        ej.popups.DialogUtility.alert({
+            title: "Not enough space",
+            content: "Delete certain files to free up space to store more items.",
+            width : "300px",
+            height : "200px"
+        });
+    };
+</script>

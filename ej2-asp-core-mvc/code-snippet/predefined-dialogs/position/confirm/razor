@@ -1,0 +1,14 @@
+<div style="height:400px;">
+    @Html.EJS().Button("confirmBtn").Content("Confirm").CssClass("e-success").Render()
+</div>
+<script>
+    var confirmBtn = new ej.buttons.Button({});
+    confirmBtn.appendTo('#confirmBtn');
+    document.getElementById('confirmBtn').onclick = function () {
+        ej.popups.DialogUtility.alert({
+            title: ' Delete Multiple Items',
+            content: "Are you sure you want to permanently delete these items?",
+            position: { X: 'top', Y: 'center' }
+        });
+    };
+</script>
