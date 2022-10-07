@@ -25,7 +25,7 @@ namespace FileUpload.Controllers
                     Directory.CreateDirectory(path);
                 }
 
-                // Save a image file in directory
+                // Save a file in directory
                 UploadFiles.SaveAs(path + Path.GetFileName(UploadFiles.FileName));
             }
         }

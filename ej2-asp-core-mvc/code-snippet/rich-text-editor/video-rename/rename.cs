@@ -12,7 +12,7 @@ namespace RenameFile.Controllers
 
         public ActionResult Index()
         {
-            ViewBag.items = new[] { "Audio" };
+            ViewBag.items = new[] { "Video" };
             return View();
         }
 
@@ -41,7 +41,7 @@ namespace RenameFile.Controllers
                         // Rename a uploaded file name
                         while (System.IO.File.Exists(fileSavePath))
                         {
-                            filename = "rteAudio" + x + "-" + fileName;
+                            filename = "rteVideo" + x + "-" + fileName;
                             fileSavePath = Path.Combine(fileSave, filename);
                             x++;
                         }

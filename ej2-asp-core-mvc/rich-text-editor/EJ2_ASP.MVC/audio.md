@@ -14,7 +14,7 @@ The Rich Text Editor allows inserting audio files from online sources and the lo
 
 | Options | Description |
 |----------------|---------|
-| allowedTypes | Specifies the extensions of the audio types allowed to insert on bowering and passing the extensions with comma separators. For example, pass allowedTypes as `.mp3`, `.wav`, `.m4a` and `.wma` |
+| AllowedTypes | Specifies the extensions of the audio types allowed to insert on bowering and passing the extensions with comma separators. For example, pass allowedTypes as `.mp3`, `.wav`, `.m4a` and `.wma` |
 | LayoutOption | Sets the default display for audio when it is inserted into the Rich Text Editor. Possible options are: `Inline` and `Break`.|
 | SaveFormat | Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.|
 | SaveUrl | Provides URL to map the action result method to save the audio.|
@@ -23,7 +23,7 @@ The Rich Text Editor allows inserting audio files from online sources and the lo
 
 ## Configure audio tool in the toolbar
 
-To include the audio tool in the Rich Text Editor, you can add the toolbar item `Audio` to the `toolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
+To include the audio tool in the Rich Text Editor, you can add the toolbar item `Audio` to the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 To configure `Audio` toolbar item, refer to the below code.
 
@@ -101,7 +101,7 @@ The selected audio can be uploaded to the required destination using the control
 
 > If you want to insert lower-sized audio files in the editor and don't want a specific physical location for saving audio, you can opt to save the format as `Base64`.
 
-In the following code blocks, the audio module has been injected and can insert the audio files saved in the specified path.
+In the following code blocks, you can insert the audio files which are saved in the specified path.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

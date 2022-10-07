@@ -1,7 +1,4 @@
-<ejs-richtexteditor id="editor" fileUploadSuccess="onFileUploadSuccess">
-    <e-richtexteditor-insertaudiosettings saveUrl="/Home/Rename" path="./Uploads/"></e-richtexteditor-insertaudiosettings>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>
+@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertVideoSettings(obj => obj.SaveUrl("/Home/Rename").Path("../Uploads/")).FileUploadSuccess("onFileUploadSuccess").Render()
 
 <script>
     function onFileUploadSuccess(args) {

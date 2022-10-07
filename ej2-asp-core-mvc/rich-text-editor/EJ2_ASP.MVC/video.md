@@ -31,7 +31,7 @@ The Rich Text Editor allows you to insert videos from online sources and local c
 
 ## Configure video tool in the toolbar
 
-To include the video tool in the Rich Text Editor, you can add the toolbar item `Video` to the `toolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
+To include the video tool in the Rich Text Editor, you can add the toolbar item `Video` to the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 To configure `Video` toolbar item, refer to the below code.
 
@@ -115,7 +115,7 @@ The selected video can be uploaded to the required destination using the control
 
 > If you want to insert lower-sized video files in the editor and don't want a specific physical location for saving the video, you can save the format as `Base64`.
 
-In the following code blocks, the video module has been injected and can insert the video files saved in the specified path.
+In the following code blocks, you can insert the video files which are saved in the specified path.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

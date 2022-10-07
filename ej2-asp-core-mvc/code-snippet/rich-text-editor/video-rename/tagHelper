@@ -1,5 +1,5 @@
 <ejs-richtexteditor id="editor" fileUploadSuccess="onFileUploadSuccess">
-    <e-richtexteditor-insertaudiosettings saveUrl="/Home/Rename" path="./Uploads/"></e-richtexteditor-insertaudiosettings>
+    <e-richtexteditor-insertvideosettings saveUrl="/Home/Rename" path="./Uploads/"></e-richtexteditor-insertvideosettings>
     <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
 </ejs-richtexteditor>
 

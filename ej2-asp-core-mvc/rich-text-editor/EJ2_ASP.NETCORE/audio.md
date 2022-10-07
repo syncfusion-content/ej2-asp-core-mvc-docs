@@ -101,7 +101,7 @@ The selected audio can be uploaded to the required destination using the control
 
 > If you want to insert lower-sized audio files in the editor and don't want a specific physical location for saving audio, you can opt to save the format as `Base64`.
 
-In the following code blocks, the audio module has been injected and can insert the audio files saved in the specified path.
+In the following code blocks, you can insert the audio files which are saved in the specified path.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
