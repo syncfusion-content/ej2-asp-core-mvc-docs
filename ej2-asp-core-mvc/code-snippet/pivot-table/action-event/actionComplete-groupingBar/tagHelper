@@ -17,7 +17,7 @@
 
 <script>
     function actionComplete(args) {
-        if (args.actionName == 'Field sorted' && args.actionName == 'Field filtered') {
+        if (args.actionName == 'Field sorted' || args.actionName == 'Field filtered') {
             // Triggers when the grouping bar UI actions such as sorting and filtering are completed.
         }
     }

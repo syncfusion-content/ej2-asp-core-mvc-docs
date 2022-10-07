@@ -17,19 +17,23 @@
 
 <script>
     function columnRender(args) {
-       if(args.stackedColumns[0]){
+        if(args.stackedColumns[0]){
             // Content for the row headers is right-aligned here.
             args.stackedColumns[0].textAlign="Right";
-        } else if(args.stackedColumns[1]){
+        }
+        if(args.stackedColumns[1]){
             // Content for the column header "FY 2015" is center-aligned here.
             args.stackedColumns[1].textAlign = 'Center';
-        } else if(args.stackedColumns[1] && args.stackedColumns[1].columns[0]){
+        }
+        if(args.stackedColumns[1] && args.stackedColumns[1].columns[0]){
             // Content for the column header "Q1" is right-aligned here.
             args.stackedColumns[1].columns[0].textAlign = 'Right';
-        } else if(args.stackedColumns[1] && args.stackedColumns[1].columns[0] && args.stackedColumns[1].columns[0].columns[0]){
+        }
+        if(args.stackedColumns[1] && args.stackedColumns[1].columns[0] && args.stackedColumns[1].columns[0].columns[0]){
             // Content for the value header "Units Sold" is right-aligned here.
             args.stackedColumns[1].columns[0].columns[0].headerTextAlign = 'Right';    
-        } else if(args.stackedColumns[1] && args.stackedColumns[1].columns[0] && args.stackedColumns[1].columns[0].columns[0]){
+        }
+        if(args.stackedColumns[1] && args.stackedColumns[1].columns[0] && args.stackedColumns[1].columns[0].columns[0]){
             // Content for the values are left-aligned here.
             args.stackedColumns[1].columns[0].columns[0].textAlign = 'Left';     
         }
