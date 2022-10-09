@@ -1,0 +1,11 @@
+<div id="target" style="height:250px; position:relative; width:300px; border:1px solid;">
+    @Html.EJS("fab1").Target("#target").Position("FabPosition.TopLeft").IconCss("e-icons e-edit").Render()
+    @Html.EJS("fab2").Target("#target").Position("FabPosition.TopCenter").IconCss("e-icons e-edit").Render()
+    @Html.EJS("fab3").Target("#target").Position("FabPosition.TopRight").IconCss("e-icons e-edit").Render()
+    @Html.EJS("fab4").Target("#target").Position("FabPosition.MiddleLeft").IconCss("e-icons e-edit").Render()
+    @Html.EJS("fab5").Target("#target").Position("FabPosition.MiddleCenter").IconCss("e-icons e-edit").Render()
+    @Html.EJS("fab6").Target("#target").Position("FabPosition.MiddleRight").IconCss("e-icons e-edit").Render()
+    @Html.EJS("fab7").Target("#target").Position("FabPosition.BottomLeft").IconCss("e-icons e-edit").Render()
+    @Html.EJS("fab8").Target("#target").Position("FabPosition.BottomCenter").IconCss("e-icons e-edit").Render()
+    @Html.EJS("fab9").Target("#target").Position("FabPosition.BottomRight").IconCss("e-icons e-edit").Render()
+</div>

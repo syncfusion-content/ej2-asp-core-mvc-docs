@@ -1,0 +1,11 @@
+<div id="target" style="height:250px; position:relative; width:300px; border:1px solid;">
+    <ejs-fab target="#target" position="FabPosition.TopLeft" iconCss="e-icons e-edit"></ejs-fab>
+    <ejs-fab target="#target" position="FabPosition.TopCenter" iconCss="e-icons e-edit"></ejs-fab>
+    <ejs-fab target="#target" position="FabPosition.TopRight" iconCss="e-icons e-edit"></ejs-fab>
+    <ejs-fab target="#target" position="FabPosition.MiddleLeft" iconCss="e-icons e-edit"></ejs-fab>
+    <ejs-fab target="#target" position="FabPosition.MiddleCenter" iconCss="e-icons e-edit"></ejs-fab>
+    <ejs-fab target="#target" position="FabPosition.MiddleRight" iconCss="e-icons e-edit"></ejs-fab>
+    <ejs-fab target="#target" position="FabPosition.BottomLeft" iconCss="e-icons e-edit"></ejs-fab>
+    <ejs-fab target="#target" position="FabPosition.BottomCenter" iconCss="e-icons e-edit"></ejs-fab>
+    <ejs-fab target="#target" position="FabPosition.BottomRight" iconCss="e-icons e-edit"></ejs-fab>
+</div>
