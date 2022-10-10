@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Message Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Message control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## Message control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Message Control
 
-This section briefly explains about how to include ASP.NET MVC Message control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include ASP.NET MVC Message control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -24,15 +24,15 @@ This section briefly explains about how to include ASP.NET MVC Message control i
 
 ## Install ASP.NET MVC package in the application
 
-Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. To add ASP.NET MVC controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
+Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. To add ASP.NET MVC controls to the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution) and search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5), then install it.
 
 > The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
+> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4), then install it.  
 
 ## Add namespace
 
-Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
+Add the **Syncfusion.EJ2** namespace reference in `Web.config` under the `Views` folder.
 
 ```
 <namespaces>
@@ -42,7 +42,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add style sheet
 
-Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Check out the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in the ASP.NET MVC application, and to have the expected appearance for the Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -58,7 +58,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/a
 
 ## Add script reference
 
-In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -74,7 +74,7 @@ In this getting started walk-through, the required scripts are referred using CD
 
 ## Register Syncfusion Script Manager
 
-Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows. 
+Open the `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of the `<body>` in the ASP.NET MVC application as follows.  
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -90,7 +90,7 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 ## Add ASP.NET MVC Message control
 
-Now, add the Syncfusion ASP.NET MVC Message control in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC Message control in the `~/Views/Home/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
