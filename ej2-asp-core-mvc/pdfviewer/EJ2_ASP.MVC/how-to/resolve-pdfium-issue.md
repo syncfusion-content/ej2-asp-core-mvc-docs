@@ -18,7 +18,7 @@ Pdfium dll: [pdfium.dll](https://www.syncfusion.com/downloads/support/directtrac
 > Kindly use both the client and server-side of the same version in your project.
 > Ensure whether the pdfium.dll file is created in your project during runtime. Else, place the pdfium assemblies in any of the production environment locations and refer to the path by using the ReferencePath API.
 
-For example, if the Pdfium assembly is available in this path C:\Pdfium\x64 or D:\Pdfium\x86, the reference path should be PdfRenderer.ReferencePath = "C:/";
+For example, if the Pdfium assembly is available in this path C:/Pdfium/x64 or D:/Pdfium/x86, the reference path should be PdfRenderer.ReferencePath = "C:/";
 
 The parent folder has to be provided as the path in the ReferencePath API.
 
