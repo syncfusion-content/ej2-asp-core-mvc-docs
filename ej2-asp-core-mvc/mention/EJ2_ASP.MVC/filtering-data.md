@@ -14,7 +14,7 @@ The Mention control has built-in support to filter data items. The filter operat
 
 ## Limit the minimum filter character
 
-When filtering the list items, you can set the limit for character count to raise remote request and fetch filtered data on the mention control. This can be done, by configuring the [minLength](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MinLength) property.
+When filtering the list items, you can set the limit for character count to raise remote request and fetch filtered data on the mention control. This can be done, by configuring the [MinLength](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MinLength) property.
 
 In the following example, the remote request does not fetch the search data until the search key contains three characters.
 
@@ -39,7 +39,7 @@ In the following example, the remote request does not fetch the search data unti
 
 ## Change the filter type
 
-While filtering, you can change the filter type to `Contains`, `StartsWith`, or `EndsWith` for string type within the [filterType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_FilterType) property.
+While filtering, you can change the filter type to `Contains`, `StartsWith`, or `EndsWith` for string type within the [FilterType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_FilterType) property.
 
 In the following examples, data filtering is done with `EndsWith` type.
 
@@ -64,7 +64,7 @@ In the following examples, data filtering is done with `EndsWith` type.
 
 ## Allow spacing between search
 
-While filtering, you can allow the space in the middle of mention while searching the data in the dataSource by using the [allowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the datasource data doesn't matches, with the mention element data the popup will be hidden.
+While filtering, you can allow the space in the middle of mention while searching the data in the dataSource by using the [AllowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the datasource data doesn't matches, with the mention element data the popup will be hidden.
 
 > By default, the `allowSpaces` property is disabled, and the space ends the mention control search.
 
@@ -91,7 +91,7 @@ In the following example, `allowSpaces` property is enabled and the filtering wa
 
 ## Customize the suggestion item count
 
-With the large amount of datasource data bound for the Mention control, you can customize the number of list items to be displayed in the popup by using the [suggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
+With the large amount of datasource data bound for the Mention control, you can customize the number of list items to be displayed in the popup by using the [SuggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
 
 In the following example, the suggestion list for the popup is limited to eight data's.
 

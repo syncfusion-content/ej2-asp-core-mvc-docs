@@ -10,7 +10,7 @@ documentation: ug
 
 # Sort order type
 
-The Mention provides an option to sort the datasource in specific order. It has the possible types as `Ascending`, `Descending` and `None` in the [sortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SortOrder) property.
+The Mention provides an option to sort the datasource in specific order. It has the possible types as `Ascending`, `Descending` and `None` in the [SortOrder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SortOrder) property.
 
 In the following sample, the popup list data is rendered in the `Descending` order.
 
