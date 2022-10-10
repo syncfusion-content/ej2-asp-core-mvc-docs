@@ -1,0 +1,12 @@
+<ejs-richtexteditor id="editor" fileUploading="onFileUploading">
+    <e-richtexteditor-insertaudiosettings saveUrl="/Home/SaveFiles" path="./Files/"></e-richtexteditor-insertaudiosettings>
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>
+
+<script>
+    function onFileUploading(args) {
+        var accessToken = "Authorization_token";
+        // adding custom Form Data
+        args.customFormData = [{ 'Authorization': accessToken }];
+    }
+</script>
