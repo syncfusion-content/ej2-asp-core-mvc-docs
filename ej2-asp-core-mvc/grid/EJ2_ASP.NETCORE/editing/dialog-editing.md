@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dialog Editing in ##Platform_Name## Grid Component
+title: Dialog Editing in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Dialog Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dialog Editing
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dialog Editing
+# Dialog Editing in ##Platform_Name## Grid Component
 
 In dialog edit mode, when you start editing the currently selected row data will be shown on a dialog.
 You can change the cell values and save edited data to the data source.
@@ -83,13 +83,11 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 
 ## Show or hide columns in dialog editing
 
-You can show hidden columns or hide visible column's editor in the dialog while editing the grid record using [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) and [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) events.
+Show hidden columns or hide visible column’s editor in the dialog while editing the grid record using the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of the Grid.
 
-In the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event, based on **requestType** as **beginEdit** or  **add**. We can show or hide the editor by using [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Visible) property of [`e-grid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) tag helper.
+In the `actionBegin` event, when the `requestType` is `beginEdit` or `add`, the column will be shown or hidden using the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Visible) property of [e-grid-column](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) tag helper, and when the `requestType` is `save`, the properties will be reset to their original state.
 
-In the [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event, based on **requestType** as **save**. We can reset the properties back to the column state.
-
-In the below example, we have rendered the grid columns **CustomerID** as hidden column and **ShipCountry** as visible column. In the edit mode, we have changed the **CustomerID** column to visible state and **ShipCountry** column to hidden state.
+In the below example,  CustomerID column is rendered as a hidden column, and the ShipCountry column is rendered as a visible column. In the edit mode, the CustomerID column will be changed to a visible state and the ShipCountry column will be changed to a hidden state.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
