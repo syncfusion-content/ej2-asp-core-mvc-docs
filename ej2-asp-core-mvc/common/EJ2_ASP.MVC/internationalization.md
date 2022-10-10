@@ -159,7 +159,7 @@ public class AppointmentData
 
 ![Globalization schedule control](./images/schedule-locale.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Localization/Localization-schedule-cldr). Refer this documentation to [localizing the static scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization). Refer this documentation to [localizing the static scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
 
 ## Changing Global Culture and Currency Code
 
