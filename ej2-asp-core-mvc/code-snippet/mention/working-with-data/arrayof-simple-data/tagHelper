@@ -1,8 +1,10 @@
+@{
+    ...
+    var data = new string[] { "Selma Rose", "Garth", "Robert", "William", "Joseph" };
+}
 
 <div id="mentionElement" placeholder = "Type @@ and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
-<ejs-mention id="comments" dataSource="@ViewBag.data" target="#mentionElement" suggestionCount="8">
-    <e-mention-fields text="Name"></e-mention-fields>
-</ejs-mention>
+<ejs-mention id="comments" dataSource="@data" target="#mentionElement"></ejs-mention>
 
 
 <style>
