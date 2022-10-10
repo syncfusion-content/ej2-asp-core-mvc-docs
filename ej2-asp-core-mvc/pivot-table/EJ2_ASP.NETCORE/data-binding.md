@@ -354,6 +354,35 @@ User can use `WebApiAdaptor` to bind pivot table with Web API created using ODat
 
 
 
+### Querying in Data Manager
+
+By default, the data manager retrieves all the data from the provider which is mapped in it. The data from the provider can be filtered, sorted, paged, etc. by setting the own query in `defaultQuery` property in the data manager instance.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Web-api.cs" %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/web-api.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Web-api.cs" %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/web-api.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Mapping
 
 One can define field information like alias name (caption), data type, aggregation type, show and hide subtotals etc. using the [`FieldMapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_FieldMapping) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) tag. The available options are,
