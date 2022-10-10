@@ -15,7 +15,7 @@
      values.Name("Sold").Caption("Units Sold").Add();
  })).FieldMapping(fields=>
  {
-     fields.Name("Quarter").GroupName("Product catagory").Add();
-     fields.Name("Products").GroupName("Product catagory").Add();
-     fields.Name("Amount").GroupName("Product catagory").Caption("Sold Amount").Add();
+     fields.Name("Quarter").GroupName("Product category").Add();
+     fields.Name("Products").GroupName("Product category").Add();
+     fields.Name("Amount").GroupName("Product category").Caption("Sold Amount").Add();
  }).ShowGroupingBar(true).ShowFieldList(true).Render()
