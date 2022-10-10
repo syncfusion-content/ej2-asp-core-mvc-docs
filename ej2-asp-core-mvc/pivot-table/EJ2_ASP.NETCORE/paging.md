@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging in ##Platform_Name## Pivot Table Component
+title: Paging in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Paging in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Paging
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Paging
+# Paging in ##Platform_Name## Pivot Table Component
 
 Paging allows you to load large amounts of data that can be divided and displayed page by page in the pivot table. It can be enabled by setting the [`EnablePaging`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnablePaging) property to **true**. It can be configured at code-behind by using the [`PageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PageSettings) property, during initial rendering of the component. The properties required are:
 
