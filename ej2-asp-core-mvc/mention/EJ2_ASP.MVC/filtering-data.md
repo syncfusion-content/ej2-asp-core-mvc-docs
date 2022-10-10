@@ -68,7 +68,7 @@ While filtering, you can allow the space in the middle of mention while searchin
 
 > By default, the `AllowSpaces` property is disabled, and the space ends the mention control search.
 
-In the following example, `allowSpaces` property is enabled and the filtering waits after the space action
+In the following example, `AllowSpaces` property is enabled and the filtering waits after the space action
 
 {% if page.publishingplatform == "aspnet-core" %}
 
