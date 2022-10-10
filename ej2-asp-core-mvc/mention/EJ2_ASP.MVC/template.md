@@ -113,12 +113,9 @@ In the following sample, customized spinner is shown while fetching the data fro
 {% endtabs %}
 {% endif %}
 
-
-
-
 ## Value template
 
-The currently selected value that is displayed by default on the DropDownList input element can be customized using the [valueTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~ValueTemplate.html) property.
+The currently selected value that is displayed by default on the DropDownList input element can be customized using the [ValueTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~ValueTemplate.html) property.
 
 In the following sample, the selected value is displayed as a combined text of both `FirstName` and `City` in the DropDownList input, which is separated by a hyphen.
 
@@ -145,11 +142,9 @@ In the following sample, the selected value is displayed as a combined text of b
 {% endtabs %}
 {% endif %}
 
-
-
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be customized with the help of [groupTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~GroupTemplate.html) property. This template is common for both inline and floating group header template.
+The group header title under which appropriate sub-items are categorized can also be customized with the help of [GroupTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~GroupTemplate.html) property. This template is common for both inline and floating group header template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -174,11 +169,9 @@ The group header title under which appropriate sub-items are categorized can als
 {% endtabs %}
 {% endif %}
 
-
-
 ## Header template
 
-The header element is shown statically at the top of the popup list items within the DropDownList, and any custom element can be placed as a header element using the [headerTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~HeaderTemplate.html) property.
+The header element is shown statically at the top of the popup list items within the DropDownList, and any custom element can be placed as a header element using the [HeaderTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~HeaderTemplate.html) property.
 
 In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
 
@@ -205,11 +198,9 @@ In the following sample, the list items and its headers are designed and display
 {% endtabs %}
 {% endif %}
 
-
-
 ## Footer template
 
-The DropDownList has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using the [footerTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~FooterTemplate.html) property.
+The DropDownList has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using the [FooterTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~FooterTemplate.html) property.
 
 In the following sample, footer element displays the total number of list items present in the DropDownList.
 
@@ -236,11 +227,9 @@ In the following sample, footer element displays the total number of list items 
 {% endtabs %}
 {% endif %}
 
-
-
 ## No records template
 
-The DropDownList is provided with support to custom design the popup list content when no data is found and no matches are found on search with the help of [noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~NoRecordsTemplate.html) property.
+The DropDownList is provided with support to custom design the popup list content when no data is found and no matches are found on search with the help of [NoRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~NoRecordsTemplate.html) property.
 
 In the following sample, popup list content displays the notification of no data available.
 
@@ -267,11 +256,9 @@ In the following sample, popup list content displays the notification of no data
 {% endtabs %}
 {% endif %}
 
-
-
 ## Action failure template
 
-There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~ActionFailureTemplate.html) property.
+There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [ActionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownListBuilder~ActionFailureTemplate.html) property.
 
 In the following sample, when the data fetch request fails, the DropDownList displays the notification.
 
@@ -298,11 +285,6 @@ In the following sample, when the data fetch request fails, the DropDownList dis
 {% endtabs %}
 {% endif %}
 
-
-
 ## See Also
 
-* [How to acheive filtering](./filtering/)
-* [How to group the data using header](./grouping/)
-* [How to show the list items with icon](./how-to/icons-support/)
-* [How to render tooltip for the options](./how-to/tooltip/)
+* [How to acheive filtering](./filtering-data)
