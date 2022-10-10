@@ -66,7 +66,7 @@ In the following examples, data filtering is done with `EndsWith` type.
 
 While filtering, you can allow the space in the middle of mention while searching the data in the dataSource by using the [AllowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the datasource data doesn't matches, with the mention element data the popup will be hidden.
 
-> By default, the `allowSpaces` property is disabled, and the space ends the mention control search.
+> By default, the `AllowSpaces` property is disabled, and the space ends the mention control search.
 
 In the following example, `allowSpaces` property is enabled and the filtering waits after the space action
 
