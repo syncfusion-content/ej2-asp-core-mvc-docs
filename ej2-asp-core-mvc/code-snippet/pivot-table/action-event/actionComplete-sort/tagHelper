@@ -17,7 +17,7 @@
 
 <script>
     function actionComplete(args) {
-        if (args.actionName == 'Field sorted' && args.actionName == 'Value sorted') {
+        if (args.actionName == 'Field sorted' || args.actionName == 'Value sorted') {
             // Triggers when the sort action is completed.
         }
     }
