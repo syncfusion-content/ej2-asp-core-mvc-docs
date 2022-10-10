@@ -1,0 +1,86 @@
+@Html.EJS().PivotView("PivotView").Height("350").EnablePaging(true).DataSourceSettings(dataSource => dataSource.DataSource(dataManger =>
+{
+    dataManger.Url("https://bi.syncfusion.com/northwindservice/api/orders").CrossDomain(true).Adaptor("WebApiAdaptor");
+
+}).ExpandAll(true).ShowAggregationOnValueField(false).EnableSorting(true)
+    .FormatSettings(formatsettings =>
+    {
+        formatsettings.Name("UnitPrice").Format("C0").UseGrouping(true).Add();
+    }).Rows(rows =>
+    {
+        rows.Name("ShipCountry").Add(); rows.Name("ShipCity").Add();
+    }).Columns(columns =>
+    {
+        columns.Name("ProductName").Caption("Product Name").Add();
+    }).Values(values =>
+    {
+        values.Name("Quantity").Caption("Quantity").Add(); values.Name("UnitPrice").Caption("Unit Price").Add();
+    })
+    ).PageSettings(pageSettings => pageSettings.ColumnPageSize(5).RowPageSize(10).CurrentColumnPage(1).CurrentRowPage(1)
+    ).PagerSettings(pagerSettings => pagerSettings.Template("#template")
+    ).GridSettings(gridSettings => gridSettings.ColumnWidth(120)).DataBound("onDataBound").Render()
+
+<script id="template" type="text/x-template">
+    <div class="pager-label">Row Pager: </div>
+    <div id="row-pager" class="e-pagertemplate"></div>
+    <div class="pager-label">Column Pager: </div>
+    <div id="column-pager" class="e-pagertemplate"></div>
+</script>
+<script>
+    function onDataBound() {
+        updateTemplate();
+    }
+    function updateTemplate() {
+        var pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        if (!ej.base.isNullOrUndefined(rowPager)) {
+            rowPager.destroy();
+            rowPager = null;
+        }
+        rowPager = new ej.grids.Pager({
+            pageSize: pivotObj.pageSettings.rowPageSize,
+            totalRecordsCount: pivotObj.engineModule.rowCount,
+            currentPage: pivotObj.pageSettings.currentRowPage,
+            pageCount: 5,
+            click: rowPageClick
+        });
+        rowPager.appendTo('#row-pager');
+        if (!ej.base.isNullOrUndefined(columnPager)) {
+            columnPager.destroy();
+            columnPager = null;
+        }
+        columnPager = new ej.grids.Pager({
+            pageSize: pivotObj.pageSettings.columnPageSize,
+            totalRecordsCount: pivotObj.engineModule.columnCount,
+            currentPage: pivotObj.pageSettings.currentColumnPage,
+            pageCount: 5,
+            click: columnPageClick
+        });
+        columnPager.appendTo('#column-pager');
+    }
+
+    function rowPageClick(args) {
+        var pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.pageSettings.currentRowPage = args.currentPage;
+        pivotObj.refreshData();
+    }
+
+    function columnPageClick(args) {
+        var pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.pageSettings.currentColumnPage = args.currentPage;
+        pivotObj.refreshData();
+    }
+</script>
+<style>
+    .e-pivot-pager {
+        display: flex;
+    }
+
+    .pager-label {
+        color: #9e9e9e;
+        margin-right: 10px;
+    }
+
+    #row-pager {
+        margin-right: 10px;
+    }
+</style>
