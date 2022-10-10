@@ -1,0 +1,23 @@
+@model List<string>
+
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
+
+@Html.EJS().Mention("employee").PopupWidth("250px").PopupHeight("215px").SuggestionCount(15).Target("#mentionElement").ItemTemplate("<span><span class=\"name\"> ${FirstName}</span><span class=\"city\">${Country}</span></span>").DataSource(obj =>
+obj.Url("https://ej2services.syncfusion.com/production/web-services/api/Employees").CrossDomain(true).Adaptor("WebApiAdaptor")).Fields(new MentionFieldSettings
+{
+   Text = "FirstName",
+   Value = "EmployeeID"
+}).Query((string)ViewBag.query).Render()
+
+<style>
+
+    div#mentionElement[placeholder]:empty:before {
+        content: attr(placeholder);
+        color: #555;
+    }
+    .city {
+        padding-right: 15px;
+        position: absolute;
+    }
+
+</style>
