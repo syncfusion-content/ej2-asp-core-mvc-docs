@@ -375,6 +375,48 @@ The diagram provides support to add symbol description below each symbol of a pa
 
 ```
 
+## Appearance of symbol description
+
+The appearance of a symbol description in the palette can be customized by changing its `color,` `fontSize,` `fontFamily,` `bold,` `italic,` `textDecoration,`  and `margin.`
+
+The following code is an example to change the color of a symbol description for symbols in the palette.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/symbol-palette/description/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Description.cs" %}
+{% include code-snippet/diagram/symbol-palette/description/description.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Description.cs" %}
+{% include code-snippet/diagram/symbol-palette/description/description.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+```javascript
+
+ function getSymbolInfo(symbol) {
+    return {
+        width: 75,
+        height: 40,
+        description: {
+            text: symbol.shape['shape'], color : 'red', bold: true, fontSize: 15, fontFamily : 'Arial', italic : true, textDecoration : 'Underline', margin : {top : 30, left : 0, right : 0, bottom :30}
+        }
+    };
+}
+
+```
+
 ## Palette interaction
 
 Palette interaction notifies the element enter, leave, and dragging of the symbols into the diagram.
