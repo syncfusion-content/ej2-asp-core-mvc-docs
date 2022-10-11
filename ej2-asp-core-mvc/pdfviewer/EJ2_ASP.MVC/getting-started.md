@@ -125,6 +125,18 @@ Now, add the Syncfusion ASP.NET MVC PDFViewer control in `~/Views/Home/Index.csh
 
 In this code line,
 
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<div>
+    <div style="height:500px;width:100%;">
+      @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("PDF_Succinctly.pdf").Render()
+    </div>
+</div>
+    
+{% endhighlight %}
+{% endtabs %}
+
 *PdfViewer("pdfviewer")* refers to the PdfViewer component among the EJ components with id as "pdfviewer".
 
 [ServiceUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PdfViewer.PdfViewer.html#Syncfusion_EJ2_PdfViewer_PdfViewer_ServiceUrl) is necessary to communicate with the server which also specifies the path of the controller. Here, PdfViewer is the name of the controller.
