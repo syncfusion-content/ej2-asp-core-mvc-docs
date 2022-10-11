@@ -1,0 +1,20 @@
+<div style="height:400px;">
+    @Html.EJS().Button("alertBtn").Content("Alert").CssClass("e-danger").Render()
+</div>
+<style>
+    .e-dialog.customClass {
+        min-width: 300px;
+        min-height: 200px;
+    }
+</style>
+<script>
+    var alertBtn = new ej.buttons.Button({});
+    alertBtn.appendTo('#alertBtn');
+    document.getElementById('alertBtn').onclick = function () {
+        ej.popups.DialogUtility.alert({
+            title: 'About SYNCFUSION Succinctly Serires',
+            content: 'The Succinctly series was born in 2012.',
+            cssClass: "customClass"
+        });
+    };
+</script>
