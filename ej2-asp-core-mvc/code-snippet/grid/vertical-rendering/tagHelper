@@ -1,3 +1,4 @@
+<div class="e-bigger">
 <ejs-grid id="adaptivebrowser" dataSource="ViewBag.DataSource" enableAdaptiveUI="true" rowRenderingMode="Vertical" allowPaging="true" allowFiltering="true" allowSorting="true" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" })">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-grid-editSettings>
     <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
@@ -15,3 +16,4 @@
         <e-grid-column field="ShipCity" headerText="Ship City" width="180"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+</div>

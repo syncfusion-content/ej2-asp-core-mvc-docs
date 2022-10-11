@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Navigations;
+
+@(Html.EJS().AppBar("defaultAppBar").ColorMode(AppBarColor.Primary).ContentTemplate(@<div>
+    @Html.EJS().Button("defaultButtonCut").CssClass("e-inherit").IconCss("e-icons e-cut").Render()
+    @Html.EJS().Button("defaultButtonCopy").CssClass("e-inherit").IconCss("e-icons e-copy").Render()
+    @Html.EJS().Button("defaultButtonPaste").CssClass("e-inherit").IconCss("e-icons e-paste").Render()
+    <div class="e-appbar-separator"></div>
+    @Html.EJS().Button("defaultButtonBold").CssClass("e-inherit").IconCss("e-icons e-bold").Render()
+    @Html.EJS().Button("defaultButtonUnderline").CssClass("e-inherit").IconCss("e-icons e-underline").Render()
+    @Html.EJS().Button("defaultButtonItalic").CssClass("e-inherit").IconCss("e-icons e-italic").Render()
+    <div class="e-appbar-separator"></div>
+    @Html.EJS().Button("defaultButtonAlignLeft").CssClass("e-inherit").IconCss("e-icons e-align-left").Render()
+    @Html.EJS().Button("defaultButtonAlignRight").CssClass("e-inherit").IconCss("e-icons e-align-right").Render()
+    @Html.EJS().Button("defaultButtonAlignCenter").CssClass("e-inherit").IconCss("e-icons e-align-center").Render()
+    @Html.EJS().Button("defaultButtonJustify").CssClass("e-inherit").IconCss("e-icons e-justify").Render()
+</div>).Render())
+
+<style>
+    #defaultAppBar .e-btn.e-inherit {
+        margin: 0 3px;
+    }
+</style>

@@ -97,10 +97,10 @@ Now, add the Syncfusion ASP.NET MVC AppBar control in `~/Home/Index.cshtml` page
 
 <div class="col-lg-12 control-section default-appbar-section">
     @(Html.EJS().AppBar("defaultAppBar").ColorMode(AppBarColor.Primary).ContentTemplate(@<div>
-        @Html.EJS().Button("defaultButtonMenu").CssClass("e-inherit menu").IconCss("e-icons e-menu").Render()
+        @Html.EJS().Button("defaultButtonMenu").CssClass("e-inherit").IconCss("e-icons e-menu").Render()
         <span class="regular" style="margin:0 5px">EJ2 AppBar</span>
         <div class="e-appbar-spacer"></div>
-        @Html.EJS().Button("defaultButtonLogin").CssClass("e-inherit login").Content("FREE TRIAL").Render()
+        @Html.EJS().Button("defaultButtonLogin").CssClass("e-inherit").Content("FREE TRIAL").Render()
     </div>).Render())
 </div>
 
