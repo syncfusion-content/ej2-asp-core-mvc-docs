@@ -56,7 +56,7 @@ Use the following CSS to customize the indicators appearance by overriding the `
 
 ```
 
-![Carousel](./images/indicators-size.jpg)
+![Carousel](./images/indicator-size.jpg)
 
 Use the following CSS to render the indicators outside the carousel items by overriding the `.e-carousel-indicators` CSS class.
 
