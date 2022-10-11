@@ -1,4 +1,4 @@
-<ejs-pivotview id="PivotView" height="300">
+<ejs-pivotview id="PivotView" height="300" load="load">
     <e-datasourcesettings>
         <e-data-manager url="https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders" adaptor="ODataAdaptor" crossdomain="true"></e-data-manager>
         <e-rows>
@@ -13,3 +13,10 @@
         </e-values>
     </e-datasourcesettings>
 </ejs-pivotview>
+
+<script>
+    function load(args) {
+        var pivotTableObj = document.getElementById('PivotView').ej2_instances[0].dataSourceSettings.dataSource;
+        pivotTableObj.defaultQuery = new ej.data.Query().take(2);
+    }
+</script>

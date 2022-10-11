@@ -13,4 +13,11 @@
     {
         values.Name("Freight").Caption("Freight").Add(); 
     })
-    ).Render()
+    ).Load("load").Render()
+
+<script>
+    function load(args) {
+        var pivotTableObj = document.getElementById('PivotView').ej2_instances[0].dataSourceSettings.dataSource;
+        pivotTableObj.defaultQuery = new ej.data.Query().take(2);
+    }
+</script>
