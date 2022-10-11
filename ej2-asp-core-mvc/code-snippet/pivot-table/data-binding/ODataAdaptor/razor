@@ -17,7 +17,7 @@
 
 <script>
     function load(args) {
-        var pivotTableObj = document.getElementById('PivotView').ej2_instances[0].dataSourceSettings.dataSource;
-        pivotTableObj.defaultQuery = new ej.data.Query().take(2);
+        var dataSource = args.dataSourceSettings.dataSource;
+        dataSource.defaultQuery = new ej.data.Query().take(2);
     }
 </script>
