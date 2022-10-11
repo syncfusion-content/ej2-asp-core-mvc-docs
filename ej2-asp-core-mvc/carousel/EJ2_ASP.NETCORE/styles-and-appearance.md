@@ -116,7 +116,7 @@ Use the following CSS to render the previous and next icon to outside the carous
 
 ## Customizing partial slides size
 
-You can customize the partial slide size by overriding the `e-carousel-item` CSS class.
+You can customize the partial slide size by overriding the `.e-carousel-slide-container` CSS class.
 
 ```CSS
 
