@@ -88,6 +88,9 @@ In the following example, `Code.Id` column and `Country.Name` column from comple
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/working-with-data/complexdata/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Complex.cs" %}
+{% include code-snippet/mention/working-with-data/complexdata/Complex.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -96,8 +99,8 @@ In the following example, `Code.Id` column and `Country.Name` column from comple
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/working-with-data/complexdata/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Complexdata.cs" %}
-{% include code-snippet/mention/working-with-data/complexdata/complexdata.cs %}
+{% highlight c# tabtitle="Complex.cs" %}
+{% include code-snippet/mention/working-with-data/complexdata/Complex.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

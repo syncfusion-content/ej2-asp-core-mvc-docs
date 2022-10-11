@@ -7,7 +7,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    public class AutoCompleteController : Controller
+    public class MultiSelectController : Controller
     {
         public ActionResult complexdata()
         {
