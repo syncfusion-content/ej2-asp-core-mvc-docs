@@ -19,16 +19,15 @@ The following content provides the exact CSS structure that can be used to modif
 CSS Class | Purpose of Class
 -----|-----
 |.e-carousel .e-carousel-item|To customize the carousel item
-|.e-carousel-item e-active| To customize the active carousel items
+|.e-carousel-item.e-active| To customize the active carousel item
 |.e-carousel .e-carousel-indicators|To customize the indicators
 |.e-carousel .e-carousel-indicators .e-indicator-bars .e-indicator-bar|To customize the indicator bars
-|.e-carousel .e-carousel-indicators .e-indicator-bars .e-indicator-bar .e-indicator|To customize the indicators appearance
+|.e-carousel .e-carousel-indicators .e-indicator-bars .e-indicator-bar .e-indicator|To customize the individual indicator appearance
 |.e-carousel .e-carousel-navigators|To customize the navigators
-|.e-carousel .e-carousel-navigators .e-next .e-btn:not(:disabled) .e-btn-icon|To customize the next icon
-|.e-carousel .e-carousel-navigators .e-previous .e-btn:not(:disabled) .e-btn-icon|To customize the previous icon
 |.e-carousel .e-carousel-navigators .e-previous|To customize the previous button
 |.e-carousel .e-carousel-navigators .e-next|To customize the next button
-|.e-carousel.e-partial .e-carousel-item|To customize the partial visible slides
+|.e-carousel .e-carousel-navigators .e-play-pause|To customize the play and pause button
+|.e-carousel.e-partial .e-carousel-slide-container|To customize the partial visible slides
 
 ![Carousel](./images/carousel.jpg)
 
@@ -51,26 +50,13 @@ Use the following CSS to customize the indicators appearance by overriding the `
 ```CSS
 
 .e-carousel .e-carousel-indicators .e-indicator-bars .e-indicator-bar .e-indicator {
-    height:8px;
     width: 20px;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 ```
 
-![Carousel](./images/indicators-style.jpg)
-
-Use the following CSS to customize the indicators position by overriding the `.e-carousel-indicators` CSS class.
-
-```CSS
-
-.e-carousel .e-carousel-indicators {
-    margin: 15px;
-}
-
-```
-
-![Carousel](./images/indicators-position.jpg)
+![Carousel](./images/indicators-size.jpg)
 
 Use the following CSS to render the indicators outside the carousel items by overriding the `.e-carousel-indicators` CSS class.
 
@@ -134,10 +120,10 @@ You can customise the partial slide size by overriding the `e-carousel-item` CSS
 
 ```CSS
 
-.e-carousel.e-partial .e-carousel-item {
-    margin: 0 20px;
+.e-carousel.e-partial .e-carousel-slide-container{
+    padding: 0 150px;
 }
 
 ```
 
-![Carousel](./images/partial-slide.jpg)
+![Carousel](./images/partial-slide-size.png)
