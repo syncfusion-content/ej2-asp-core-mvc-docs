@@ -284,7 +284,7 @@ Allows end user to align the content of the pivot table's row and column headers
 
 ![output](images/textalign.png)
 
-### Autofit columns
+## AutoFit
 
 Allows the user to fit the Pivot Table columns as wide as the content of the cell without wrapping. It auto fits all of the Pivot Table columns by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance.
 
