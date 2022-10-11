@@ -41,7 +41,7 @@ This reduces the manual addition of label for RadioButton. You can customize the
 {% endtabs %}
 {% endif %}
 
-
+![Radio Button Label and Size](images/radiobutton-label.png)
 
 ## Size
 
@@ -70,7 +70,7 @@ The different RadioButton sizes available are default and small. To reduce the s
 {% endtabs %}
 {% endif %}
 
-
+![Radio Button Size](images/radiobutton-size.png)
 
 ## See Also
 
