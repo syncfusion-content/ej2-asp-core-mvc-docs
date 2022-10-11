@@ -13,7 +13,6 @@ namespace EJ2_Core_Application.Controllers
     {
         public IActionResult Index()
         {
-            ViewBag.worldmap = GetWorldMap();
             List<MarkerData> data = new List<MarkerData>
             {
                  new MarkerData {latitude= 34.060620, longitude= -118.330491, city= "California" },

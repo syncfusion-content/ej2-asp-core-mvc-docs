@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Pivot Table Component
+title: Grouping in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Grouping in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grouping
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Grouping
+# Grouping in ##Platform_Name## Pivot Table Component
 
 > This feature is applicable only for relational data source.
 
@@ -224,7 +224,9 @@ Date grouping can also be configured using the [`e-groupsettings`](https://help.
 
 
 
-![Applied grouping settings updated in pivot table for date grouping](../pivot-table/images/date-group-updated.png)
+Furthermore, in the field list UI, these date group fields **Years (Date)**, **Quarters (Date)**, **Months (Date)**, etc... will be automatically grouped and displayed under the **Date** folder name.
+
+![output](./images/treeview.png "Group fields under a separate folder displayed in the field list UI")
 
 ### Ungrouping the existing date groups
 

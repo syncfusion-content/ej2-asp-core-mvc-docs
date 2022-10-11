@@ -1,0 +1,39 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Navigations;
+
+@(Html.EJS().AppBar("defaultAppBar").ColorMode(AppBarColor.Primary).Mode(AppBarMode.Prominent).CssClass("prominent-appbar").ContentTemplate(@<div>
+    @Html.EJS().Button("defaultButtonMenu").CssClass("e-inherit").IconCss("e-icons e-menu").Render()
+    <span class="prominent">AppBar Component with Prominent mode</span>
+    <div class="e-appbar-spacer"></div>
+    @Html.EJS().Button("defaultButtonLogin").CssClass("e-inherit").Content("FREE TRIAL").Render()
+</div>).Render())
+
+<style>
+    .prominent-appbar .prominent {
+        align-self: center;
+        white-space: break-spaces;
+        text-align: inherit;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .prominent-appbar.e-appbar {
+        background-image: url("https://blazor.syncfusion.com/demos/_content/BlazorServerCommon_NET6/images/appbar/prominent.png");
+        background-size: 100% 400px;
+        color: #ffffff;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+    .prominent-appbar .e-inherit.e-btn {
+        background: transparent;
+    }
+    .prominent-appbar .e-inherit.e-btn:hover,
+    .prominent-appbar .e-inherit.e-btn:focus,
+    .prominent-appbar .e-inherit.e-btn:active,
+    .prominent-appbar .e-inherit.e-btn.e-active,
+    .prominent-appbar .e-inherit.e-css.e-btn:hover,
+    .prominent-appbar .e-inherit.e-css.e-btn:focus
+    .prominent-appbar .e-inherit.e-css.e-btn:active
+    .prominent-appbar .e-inherit.e-css.e-btn.e-active {
+        background: rgba(255, 255, 255, .08);
+    }
+</style>

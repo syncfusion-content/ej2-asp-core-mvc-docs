@@ -1,0 +1,88 @@
+<ejs-pivotview id="PivotView" height="350" enablePaging="true" dataBound="onDataBound">
+    <e-datasourcesettings>
+        <e-data-manager url="https://bi.syncfusion.com/northwindservice/api/orders" adaptor="WebApiAdaptor"
+            crossdomain="true"></e-data-manager>
+        <e-rows>
+            <e-field name="ShipCountry" caption="Ship Country"></e-field>
+            <e-field name="ShipCity" caption="Ship City"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="ProductName" caption="Product Name"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="UnitPrice" caption="Unit Price"></e-field>
+            <e-field name="Quantity" caption="Quantity"></e-field>
+        </e-values>
+        <e-formatsettings>
+            <e-field name="UnitPrice" format="C0" useGrouping="true"></e-field>
+        </e-formatsettings>
+    </e-datasourcesettings>
+    <e-pageSettings rowPageSize="10" columnPageSize="5" currentRowPage="1" currentColumnPage="1"></e-pageSettings>
+    <e-pagerSettings template="#template"></e-pagerSettings>
+    <e-gridSettings columnWidth="120"></e-gridSettings>
+</ejs-pivotview>
+<script id="template" type="text/x-template">
+    <div class="pager-label">Row Pager: </div>
+    <div id="row-pager" class="e-pagertemplate"></div>
+    <div class="pager-label">Column Pager: </div>
+    <div id="column-pager" class="e-pagertemplate"></div>
+</script>
+<script>
+    function onDataBound() {
+        updateTemplate();
+    }
+
+    function updateTemplate() {
+        var pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        if (!ej.base.isNullOrUndefined(rowPager)) {
+            rowPager.destroy();
+            rowPager = null;
+        }
+        rowPager = new ej.grids.Pager({
+            pageSize: pivotObj.pageSettings.rowPageSize,
+            totalRecordsCount: pivotObj.engineModule.rowCount,
+            currentPage: pivotObj.pageSettings.currentRowPage,
+            pageCount: 5,
+            click: rowPageClick
+        });
+        rowPager.appendTo('#row-pager');
+        if (!ej.base.isNullOrUndefined(columnPager)) {
+            columnPager.destroy();
+            columnPager = null;
+        }
+        columnPager = new ej.grids.Pager({
+            pageSize: pivotObj.pageSettings.columnPageSize,
+            totalRecordsCount: pivotObj.engineModule.columnCount,
+            currentPage: pivotObj.pageSettings.currentColumnPage,
+            pageCount: 5,
+            click: columnPageClick
+        });
+        columnPager.appendTo('#column-pager');
+    }
+
+    function rowPageClick(args) {
+        var pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.pageSettings.currentRowPage = args.currentPage;
+        pivotObj.refreshData();
+    }
+
+    function columnPageClick(args) {
+        var pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.pageSettings.currentColumnPage = args.currentPage;
+        pivotObj.refreshData();
+    }
+</script>
+<style>
+    .e-pivot-pager {
+        display: flex;
+    }
+
+    .pager-label {
+        color: #9e9e9e;
+        margin-right: 10px;
+    }
+
+    #row-pager {
+        margin-right: 10px;
+    }
+</style>
