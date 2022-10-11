@@ -126,4 +126,4 @@ You can customise the partial slide size by overriding the `e-carousel-item` CSS
 
 ```
 
-![Carousel](./images/partial-slide-size.png)
+![Carousel](./images/partial-slide-size.jpg)
