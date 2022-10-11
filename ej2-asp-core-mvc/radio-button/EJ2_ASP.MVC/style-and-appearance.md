@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style And Appearance in ##Platform_Name## Radio Button Component
+title: Style And Appearance in ##Platform_Name## Radio Button Component | Syncfusion
 description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
@@ -19,3 +19,5 @@ CSS Class | Purpose of Class
 |.e-radio + label:hover::before|To customize the radiobutton on hover
 |.e-radio:checked + label::after, e-radio:checked + label::before |To customize the checked radiobutton
 |.e-radio:checked:focus + label::before, .e-radio:checked + label:hover::before |To customize the checked radiobutton on hover
+
+![ASP.NET MVC Radio Button Styles and Appearances](images/radiobutton-style-and-appearance.PNG)
