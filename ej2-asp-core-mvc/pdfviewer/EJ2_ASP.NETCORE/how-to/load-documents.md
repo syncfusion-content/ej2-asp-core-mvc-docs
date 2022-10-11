@@ -43,3 +43,5 @@ function load2() {
 ```
 
 Download the sample, [how to load PDF documents dynamically](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EJ2CoreSample1651615851.zip)
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/aspnet-core-pdf-viewer-examples/tree/master/Document%20Path/Loading%20PDF%20as%20base64%20string).
