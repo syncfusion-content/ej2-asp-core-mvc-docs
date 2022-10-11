@@ -1,0 +1,23 @@
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource(dataManger =>
+{
+    dataManger.Url("https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders").CrossDomain(true).Adaptor("ODataAdaptor");
+
+}).ExpandAll(false).ShowAggregationOnValueField(false).EnableSorting(true)
+    .Rows(rows =>
+    {
+        rows.Name("ShipCountry").Add(); rows.Name("ShipCity").Add();
+    }).Columns(columns =>
+    {
+        columns.Name("CustomerID").Caption("Customer ID").Add();
+    }).Values(values =>
+    {
+        values.Name("Freight").Caption("Freight").Add(); 
+    })
+    ).Load("load").Render()
+
+<script>
+    function load(args) {
+        var pivotTableObj = document.getElementById('PivotView').ej2_instances[0].dataSourceSettings.dataSource;
+        pivotTableObj.defaultQuery = new ej.data.Query().take(2);
+    }
+</script>
