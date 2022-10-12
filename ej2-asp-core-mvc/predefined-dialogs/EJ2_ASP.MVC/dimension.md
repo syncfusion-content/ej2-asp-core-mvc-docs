@@ -16,26 +16,6 @@ By default, the predefined dialogs `width` and `height` property value is set as
 
 Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Prompt.cshtml** to customize the dialog dimensions.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-
-{% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/dimension/alert/tagHelper %}
-{% endhighlight %}
-
-{% highlight cshtml tabtitle="Confirm.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/dimension/confirm/tagHelper %}
-{% endhighlight %}
-
-{% highlight cshtml tabtitle="Prompt.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/dimension/prompt/tagHelper %}
-{% endhighlight %}
-
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 **Alert**
 
 {% tabs %}
@@ -69,8 +49,6 @@ Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Pr
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 **Results from the code snippet**
 
 **Alert**
@@ -91,18 +69,6 @@ To have a restricted max-width and max-height dialog dimension, you need to spec
 
 Use the following code to customize the max-width and max-height for alert dialog:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-
-{% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/dimension/alert-max-height-width/tagHelper %}
-{% endhighlight %}
-
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="Alert.cshtml" %}
 {% include code-snippet/predefined-dialogs/dimension/alert-max-height-width/razor %}
@@ -112,8 +78,6 @@ Use the following code to customize the max-width and max-height for alert dialo
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ![Max width and height](../images/alert-dimension-max-height-width.png)
 
 ## Min-width and min-height
@@ -121,18 +85,6 @@ Use the following code to customize the max-width and max-height for alert dialo
 To have a restricted min-width and min-height dialog dimension, you need to specify the min-width, min-height CSS properties for the component’s container element by using the cssClass property.
 
 Use the following code to customize the min-width and min-height for alert dialog:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-
-{% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include code-snippet/predefined-dialogs/dimension/alert-min-height-width/tagHelper %}
-{% endhighlight %}
-
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="Alert.cshtml" %}
@@ -142,7 +94,5 @@ Use the following code to customize the min-width and min-height for alert dialo
 {% include code-snippet/predefined-dialogs/getting-started/confirm-dialog/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 ![Min width and height](../images/alert-dimension-min-height-width.png)
