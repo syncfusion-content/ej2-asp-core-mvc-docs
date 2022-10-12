@@ -291,6 +291,37 @@ Use the cell edit template feature of the Grid to render the RichTextEditor comp
 {% endif %}
 
 
+### Render multicolumn dropdownlist component while editing
+
+The Multicolumn dropdown component is rendered in the grid edit form using the cell edit template feature.
+
+By default, the DropDownList component shows a single column value. Multiple columns can be rendered in this dropdown component using the [headerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_HeaderTemplate) and [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ItemTemplate) properties of the DropDownList component.
+
+This can be demonstrated in the following sample.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/multicolumn-dropdown/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Multicolumn-Dropdown.cs" %}
+{% include code-snippet/grid/edit/multicolumn-dropdown/multicolumn-dropdown.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/multicolumn-dropdown/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Multicolumn-Dropdown.cs" %}
+{% include code-snippet/grid/edit/multicolumn-dropdown/multicolumn-dropdown.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 
 ## Access editor components
 
