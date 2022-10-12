@@ -162,7 +162,7 @@ The video files can be saved as `Blob` or `Base64` url by using the [insertVideo
 
 Once a video file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `videoReplace` option. You can replace the video file either by using the embedded URL or the web URL and the browse option in the video dialog.
 
-![Rich Text Editor Embed Video replace](../images/video-replace-embed.png)
+![Rich Text Editor Embed Video replace](./images/video-replace-embed.png)
 
 ![Rich Text Editor Web Video replace](./images/video-replace-web.png)
 
@@ -172,7 +172,7 @@ To remove a video from the Rich Text Editor content, select the video and click 
 
 Once you select the video from the local machine, the URL for the video will be generated. You can remove the video from the service location by clicking the cross icon.
 
-![Rich Text Editor Video delete](../images/video-del.png)
+![Rich Text Editor Video delete](./images/video-del.png)
 
 The following example explains how to configure `insertVideoSettings.removeUrl` to remove a saved video from the remote service location when the following video remove actions are performed:
 
@@ -210,7 +210,7 @@ Set the default Width, MinWidth, Height and MinHeight of the video element, when
 
 Through the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video),  also you can change the width and height using `Change Size` option. Once you click on the option, the video size dialog will open as below. In that, specify the width and height of the video in pixels.
 
-![Rich Text Editor Video dimension](../images/video-size.png)
+![Rich Text Editor Video dimension](./images/video-size.png)
 
 ## Display Position
 
@@ -247,7 +247,7 @@ You can disable the resize action by configuring `false` for the [insertVideoSet
 
 > If the [MinWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MinWidth) and [MinHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MinHeight) properties are configured the video resizing does not shrink below the specified values.
 
-![Rich Text Editor video resize](../images/video-resize.png)
+![Rich Text Editor video resize](./images/video-resize.png)
 
 ## Rename video before inserting
 
