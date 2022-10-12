@@ -19,3 +19,5 @@ In the following sample, the popup list data is rendered in the `Descending` ord
 {% include code-snippet/mention/sorting/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![Sorting](../images/sorting.png)

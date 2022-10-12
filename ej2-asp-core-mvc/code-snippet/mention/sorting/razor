@@ -1,8 +1,10 @@
 @model List<string>
-
+@{
+    char nameMentionChar = '@';
+}
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
 
-@Html.EJS().Mention("Popup-Litst-Customize").Target("#mentionElement").DataSource((IEnumerable<object>)ViewBag.data).SortOrder((string)ViewBag.sort).Render()
+@Html.EJS().Mention("Sorting").MentionChar(nameMentionChar).Target("#mentionElement").DataSource((IEnumerable<object>)ViewBag.data).SortOrder(Syncfusion.EJ2.DropDowns.SortOrder.Descending).Render()
 
 <style>
 

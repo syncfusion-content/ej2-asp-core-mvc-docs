@@ -1,10 +1,11 @@
 @{
     ...
-    var query = "new ej.data.Query().from('Employees').select('EmployeeID,FirstName,Title').take(8)";
+    var query = "new ej.data.Query().from('Employees').select('EmployeeID,FirstName,Title').take(6)";
+    char nameMentionChar = '@';
 }
 
 <div id="mentionElement" placeholder = "Type @@ and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
-<ejs-mention id="data" target="#mentionElement" query="@query">
+<ejs-mention id="data" mentionChar="@nameMentionChar" target="#mentionElement" query="@query">
     <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc" adaptor="ODataV4Adaptor" crossDomain="true"></e-data-manager>
     <e-mention-fields text="FirstName" value = "EmployeeID" ></e-mention-fields>
 </ejs-mention>

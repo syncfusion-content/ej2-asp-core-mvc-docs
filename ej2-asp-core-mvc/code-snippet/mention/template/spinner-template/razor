@@ -1,9 +1,11 @@
 @model List<string>
-
+@{
+    char nameMentionChar = '@';
+}
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
 
-@Html.EJS().Mention("employee").PopupWidth("250px").PopupHeight("215px").SuggestionCount(15).Target("#mentionElement").SpinnerTemplate("<div class="spinner_loader"></div>").DataSource(obj =>
-obj.Url("https://ej2services.syncfusion.com/production/web-services/api/Employees").CrossDomain(true).Adaptor("WebApiAdaptor")).Fields(new MentionFieldSettings
+@Html.EJS().Mention("employee").MentionChar(nameMentionChar).Target("#mentionElement").SpinnerTemplate("<div class='spinner_loader'></div>").DataSource(obj =>
+obj.Url("https://ej2services.syncfusion.com/production/web-services/api/Employees").CrossDomain(true).Adaptor("WebApiAdaptor")).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings
 {
    Text = "FirstName",
    Value = "EmployeeID"
@@ -29,12 +31,12 @@ obj.Url("https://ej2services.syncfusion.com/production/web-services/api/Employee
     }
 
     /* Safari */
-    @-webkit-keyframes spin {
+    @@-webkit-keyframes spin {
         0% { -webkit-transform: rotate(0deg); }
         100% { -webkit-transform: rotate(360deg); }
     }
 
-    @keyframes spin {
+    @@keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }

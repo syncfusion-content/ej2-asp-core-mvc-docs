@@ -1,8 +1,11 @@
 @model List<string>
+@{
+    char nameMentionChar = '@';
+}
 
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
 
-@Html.EJS().Mention("Mention-Char-Customize").Target("#mentionElement").DataSource((IEnumerable<object>)ViewBag.data).ShowMentionChar(true).Render()
+@Html.EJS().Mention("Mention-Char-Customize").Target("#mentionElement").MentionChar(nameMentionChar).DataSource((IEnumerable<object>)ViewBag.data).ShowMentionChar(true).Render()
 
 <style>
 

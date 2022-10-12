@@ -24,13 +24,16 @@ In the following example, the remote request does not fetch the search data unti
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/filtering-data/minimum-filter-char/minimum-filter-char.cs %}
+{% endhighlight %}
 {% endtabs %}
+
+![Minimum filter character](../images/minimum-filter-char.gif)
 
 ## Change the filter type
 
 While filtering, you can change the filter type to `Contains`, `StartsWith`, or `EndsWith` for string type within the [FilterType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_FilterType) property.
 
-In the following examples, data filtering is done with `EndsWith` type.
+In the following examples, data filtering is done with `StartsWith` type.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -39,6 +42,8 @@ In the following examples, data filtering is done with `EndsWith` type.
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/filtering-data/filter-type/filter-type.cs %}
 {% endtabs %}
+
+![Change filter type](../images/filter-type.png)
 
 ## Allow spacing between search
 
@@ -56,6 +61,8 @@ In the following example, `AllowSpaces` property is enabled and the filtering wa
 {% include code-snippet/mention/filtering-data/allow-space/allow-space.cs %}
 {% endtabs %}
 
+![Allow spacing between search](../images/allow-spacing.png)
+
 ## Customize the suggestion item count
 
 With the large amount of datasource data bound for the Mention control, you can customize the number of list items to be displayed in the popup by using the [SuggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
@@ -69,6 +76,8 @@ In the following example, the suggestion list for the popup is limited to eight 
 {% highlight c# tabtitle="Email.cs" %}
 {% include code-snippet/mention/filtering-data/suggestion-count/EmailData.cs %}
 {% endtabs %}
+
+![suggestion item count](../images/suggestion-count.png)
 
 ## See Also
 

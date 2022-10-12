@@ -11,7 +11,7 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.query = "new ej.data.Query().select(['FirstName','Country', 'EmployeeID']).take(8).requiresCount()";
+            ViewBag.query = "new ej.data.Query().select(['FirstName','Country', 'EmployeeID']).take(6).requiresCount()";
             return View();
         }
     }

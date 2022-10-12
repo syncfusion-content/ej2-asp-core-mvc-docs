@@ -26,6 +26,7 @@ The following example, displays the text content along with the default mention 
 {% include code-snippet/mention/customization/mention-char-customization/mentionChar-customization.cs %}
 {% endtabs %}
 
+![Show or hide mention character](../images/show-mention-char.gif)
 
 ## Adding the suffix character after selection
 
@@ -41,6 +42,8 @@ The following example, displays the white space next to the text selected since 
 {% include code-snippet/mention/customization/suffix-char-customization/suffixChar-customization.cs %}
 {% endtabs %}
 
+![suffix character](../images/suffix-char.gif)
+
 ## Configure the popup list
 
 By default, the width of the popup list adjusts automatically according to the mention suggestion list data's width, and the height of the popup list is `300px`. They can also be customized using the [PopupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupHeight) and [PopupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupWidth) properties respectively.
@@ -55,5 +58,4 @@ In the following sample, popup list's width and height are configured.
 {% include code-snippet/mention/customization/popup-list-customization/popup-list-customization.cs %}
 {% endtabs %}
 
-
-
+![Configure popup list](../images/popup-list.png)

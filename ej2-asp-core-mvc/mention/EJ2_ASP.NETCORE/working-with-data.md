@@ -37,6 +37,8 @@ The Mention has support to load array of primitive data such as strings and numb
 {% endhighlight %}
 {% endtabs %}
 
+![Array of simple data](../images/simple-data.png)
+
 ### 2. Array of JSON data
 
 The Mention can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
@@ -48,6 +50,8 @@ In the following example, `Id` column and `Game` column from complex data have b
 {% include code-snippet/mention/working-with-data/arrayof-json-data/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![Array of JSON data](../images/json-data.png)
 
 ### 3. Array of Complex data
 
@@ -63,6 +67,8 @@ In the following example, `Code.Id` column and `Country.CountryId` column from c
 {% include code-snippet/mention/working-with-data/complexdata/Complex.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Array of Complex data](../images/complex-data.png)
 
 ## Binding remote data
 
@@ -80,6 +86,7 @@ The following sample displays the first 6 contacts from `Customers` table of the
 {% endhighlight %}
 {% endtabs %}
 
+![OData v4 adaptor](../images/OData-adaptor.png)
 
 ### Web API adaptor
 
@@ -91,6 +98,7 @@ You can use `WebApiAdaptor` to bind mention with Web API created using OData end
 {% endhighlight %}
 {% endtabs %}
 
+![Web API adaptor](../images/web-adaptor.png)
 
 ## See Also
 

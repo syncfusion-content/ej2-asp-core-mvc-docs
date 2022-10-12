@@ -26,6 +26,8 @@ In the following sample, each list item is split into two columns to display rel
 {% endhighlight %}
 {% endtabs %}
 
+![Item template](../images/item-template.png)
+
 ## Display template
 
 The currently selected value that is to be displayed on the mention element can be customized using the [displayTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_DisplayTemplate) property.
@@ -37,6 +39,8 @@ In the following sample, the selected value is displayed as a combined text of b
 {% include code-snippet/mention/template/display-template/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![display template](../images/display-template.png)
 
 ## No records template
 
@@ -50,6 +54,8 @@ In the following sample, popup list content displays the notification of no data
 {% endhighlight %}
 {% endtabs %}
 
+![display template](../images/noRecord-template.png)
+
 ## Spinner template
 
 The Mention supports to customize the waiting spinner, when data fetching takes time to load respective data in the popup by using the [spinnerTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SpinnerTemplate) property.
@@ -61,6 +67,8 @@ In the following sample, customized spinner is shown while fetching the data fro
 {% include code-snippet/mention/template/spinner-template/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![display template](../images/spinner-template.png)
 
 ## See Also
 

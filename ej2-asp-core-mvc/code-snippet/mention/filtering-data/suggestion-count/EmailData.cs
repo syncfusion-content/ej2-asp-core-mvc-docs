@@ -25,7 +25,7 @@ namespace WebApplication1.Models
         email.Add(new EmailData { Name = "Laura Grace", EmailId= "laura@gmail.com"});
         email.Add(new EmailData { Name = "Albert", EmailId = "albert@gmail.com" });
         email.Add(new EmailData { Name = "William", EmailId = "william@gmail.com" });
-         return email;
+        return email;
         }
     }
 }
