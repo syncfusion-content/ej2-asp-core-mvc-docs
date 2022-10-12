@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Gantt Component
+title: Data Binding in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding
+# Data Binding in Gantt
 
 The Gantt control uses `DataManager` for binding the data source, which supports both RESTful JSON data services and local JavaScript object array. The [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property can be assigned either with the instance of DataManager or JavaScript object array collection. The Gantt control supports binding two types of data:
 
@@ -151,6 +151,102 @@ We can define data source for Gantt as instance of DataManager using `url` prope
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+
+### Remote Save Adaptor
+
+You may need to perform all Gantt Actions on the client-side except the CRUD operations, which should be interacted with the server-side to persist data. It can be achieved in Gantt by using **RemoteSaveAdaptor**.
+
+Datasource must be set to the **json** property and set **RemoteSaveAdaptor** to the **adaptor** property of DataManager. CRUD operations can be mapped to the server-side using the **batchUrl** properties.
+
+You can use the following code example to use **RemoteSaveAdaptor** in Gantt.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/data-binding/remoteSaveAdaptor/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="remoteSaveAdaptor.cs" %}
+{% include code-snippet/gantt/data-binding/remoteSaveAdaptor/remoteSaveAdaptor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/data-binding/remoteSaveAdaptor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="remoteSaveAdaptor.cs" %}
+{% include code-snippet/gantt/data-binding/remoteSaveAdaptor/remoteSaveAdaptor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+The following code example describes the CRUD operations handled at server-side.
+
+```json
+    public IActionResult BatchUpdate([FromBody] CRUDModel batchmodel)
+    {
+        public class CRUDModel
+        {
+            public List<GanttDataSource> added { get; set; }
+            public List<GanttDataSource> changed { get; set; }
+            public List<GanttDataSource> deleted { get; set; }
+            public object key { get; set; }
+            public string action { get; set; }
+            public string table { get; set; }
+        }
+
+        public IActionResult BatchUpdate([FromBody] CRUDModel batchmodel)
+        {
+            if (batchmodel.changed != null)
+            {
+                for (var i = 0; i < batchmodel.changed.Count(); i++)
+                {
+                    var value = batchmodel.changed[i];
+                    GanttDataSource result = DataList.Where(or => or.taskId == value.taskId).FirstOrDefault();
+                    result.taskId = value.taskId;
+                    result.taskName = value.taskName;
+                    result.startDate = value.startDate;
+                    result.endDate = value.endDate;
+                    result.duration = value.duration;
+                    result.progress = value.progress;
+                    result.parentID = value.parentID;
+                }
+            }
+            if (batchmodel.deleted != null)
+            {
+                for (var i = 0; i < batchmodel.deleted.Count(); i++)
+                {
+                    DataList.Remove(DataList.Where(or => or.taskId.Equals(batchmodel.deleted[i].taskId)).FirstOrDefault());
+                    RemoveChildRecords(batchmodel.deleted[i].taskId);
+                }
+            }
+            if (batchmodel.added != null)
+            {
+                for (var i = 0; i < batchmodel.added.Count(); i++)
+                {
+                    DataList.Add(batchmodel.added[i]);
+                }
+            }
+            return Json(new { addedRecords = batchmodel.added, changedRecords = batchmodel.changed, deletedRecords = batchmodel.deleted });
+        }
+
+       public void RemoveChildRecords(int key)
+        {
+            var childList = DataList.Where(x => x.parentID == key).ToList();
+            foreach (var item in childList)
+            {
+                DataList.Remove(item);
+                RemoveChildRecords(item.taskId);
+            }
+        }
+        return Json(new { addedRecords = batchmodel.added, changedRecords = batchmodel.changed, deletedRecords = batchmodel.deleted });
+    }
+```
 
 
 
@@ -346,4 +442,4 @@ We can also define segment details as a flat data and this collection can be map
 
 ## Limitations
 
-Gantt has the support for both Hierarchical and Self-Referential data binding. When rendering the Gantt control with SQL database, we suggest you to use the Self-Referential data binding to maintain the parent-child relation. Because the complex json structure is very difficult to manage it in SQL tables, we need to write a complex queries and we have to write a complex algorithm to find out the proper record details while updating/deleting the inner level task in Gantt data source. We cannot implement both data binding for Gantt control and this is not a recommended way. If  both child and parentID are mapped, the records will not render properly because, when task id of a record defined in the hierarchy structure is assigned to parent id of another record, in such case the records will not properly render. As the self-referential will search the record with particular id in flat data only, not in the inner level of records. If we map the parentID field,  it will be prioritized and Gantt will be rendered based on the parentID values.
+Gantt has the support for both Hierarchical and Self-Referential data binding. When rendering the Gantt control with SQL database, we suggest you use the Self-Referential data binding to maintain the parent-child relation. Because the complex json structure is very difficult to manage in SQL tables, we need to write complex queries, and we have to write a complex algorithm to find out the proper record details while updating/deleting the inner level task in the Gantt data source. We cannot implement both data binding for Gantt control, and this is not a recommended way. If both child and parentID are mapped, the records will not render properly because when the task id of a record defined in the hierarchy structure is assigned to the parent id of another record, in such case, the records will not properly render. As the self-referential will search the record with a particular id in flat data only, not in the inner level of records. If we map the parentID field, it will be prioritized and Gantt will be rendered based on the parentID values.

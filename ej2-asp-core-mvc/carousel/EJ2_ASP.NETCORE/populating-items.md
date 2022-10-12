@@ -71,4 +71,36 @@ Using the `prev` or `next` public method of the Carousel component, you can swit
 {% endhighlight %}
 {% endtabs %}
 
+## Partial visible slides
+
+The Carousel component supports to show one complete slide and a partial view of adjacent (previous and next) slides at the same time. You can enable or disable the partial slides using the [`partialVisible`](../api/carousel/#partialVisible) property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/populating-items/partial-visible/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel](./images/partial-visible.jpg)
+
+> Slide animation only applicable if the `partialVisible` is enabled.
+
+The last slide will be displayed as a partial slide at the initial rendering when the [`loop`](../api/carousel/#loop) and `partialVisible` properties are enabled.
+
+The previous slide is not displayed at the initial rendering when the `loop` is disabled.
+
+The following example code depicts the functionality of `partialVisible` and without `loop` functionalities.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/carousel/populating-items/partial-visible/without-loop/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Carousel](./images/without-loop.jpg)
+
+## See also
+
+* [Customizing partial slides size](./styles-and-appearance/#customizing-partial-slides-size)
+
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselUGSample).

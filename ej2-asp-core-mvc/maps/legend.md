@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Syncfusion Maps Component
+title: Legend in Syncfusion ##Platform_Name## Syncfusion Maps Component
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
