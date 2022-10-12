@@ -1,19 +1,11 @@
 @using Syncfusion.EJ2;
 @using Syncfusion.EJ2.Maps;
 
-@{ 
-   var data = new[]
-   {
-            new {latitude= 37.0000, longitude= -120.0000, city= "California" },
-            new {latitude= 40.7127, longitude= -74.0059, city= "New York" }
-    };
-}
-
 @Html.EJS().Maps("maps").Layers(l =>
 {
     l.UrlTemplate("http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level").MarkerSettings(marker =>
        {
-           marker.Visible(true).DataSource(data).Add();
+           marker.Visible(true).DataSource(ViewBag.markerData).Add();
        }).NavigationLineSettings(ns =>
     {
         ns.Visible(true).Latitude(new double[] { 34.060620, 40.724546 })
