@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Pivot Table Component
+title: Data Binding in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in ##Platform_Name## Pivot Table Component
 
 ## JSON
 
@@ -376,6 +376,7 @@ One can define field information like alias name (caption), data type, aggregati
 * `showEditIcon` - It is to show or hide the edit icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This edit icon is used to modify caption, formula, and format of a specified calculated field at runtime. The default value is **true**.
 * `allowDragAndDrop` - It is to restrict specific field's button from being dragged on runtime in the grouping bar and field list UI. This will prevent from altering the current report. The default value is **true**.
 * `dataType` - It is to specify the type of the field like 'string', 'number', 'datetime', 'date', and 'boolean'.
+* `groupName` - It is to display fields in the field list UI by grouping them under the desired folder name.
 
 The main purpose of these mapping options is to configure each field that is not part of the initial pivot report. Even if any field that is part of this mapping is defined here, the value set in the initial report will have the highest preceding.
 
