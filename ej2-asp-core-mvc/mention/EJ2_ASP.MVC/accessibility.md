@@ -35,16 +35,6 @@ You can use the following key shortcuts to access the Mention without interrupti
 | <kbd>Enter</kbd> | Selects the focused item, and when it is in an open state the popup list closes. |
 | <kbd>Tab</kbd> | Focuses on the next TabIndex element on the page when the popup is closed. Otherwise, inserts the selected popup list item and closes the popup list. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/accessibility/keyboard-intraction/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/accessibility/keyboard-intraction/razor %}
@@ -52,4 +42,3 @@ You can use the following key shortcuts to access the Mention without interrupti
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/accessibility/keyboard-intraction/keyboard.cs %}
 {% endtabs %}
-{% endif %}

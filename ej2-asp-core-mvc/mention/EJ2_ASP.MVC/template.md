@@ -18,24 +18,14 @@ The content of each list item within the Mention can be customized with the help
 
 In the following sample, each list item is split into two columns to display relevant data's.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/template/item-template/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/template/item-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/template/item-template/item-template.cs %}
+{% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Display template
 
@@ -43,24 +33,14 @@ The currently selected value that is to be displayed on the mention element can 
 
 In the following sample, the selected value is displayed as a combined text of both `FirstName` and `City` in the mention element, which is separated by a hyphen.
 
-% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/template/display-template/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/template/display-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/template/display-template.cs %}
+{% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## No records template
 
@@ -68,25 +48,14 @@ The Mention is provided with support to custom design the popup list content whe
 
 In the following sample, popup list content displays the notification of no data available.
 
-
-% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/template/noRecord-template/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/template/noRecord-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/template/noRecord-template.cs %}
+{% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Spinner template
 
@@ -94,25 +63,14 @@ The Mention supports to customize the waiting spinner, when data fetching takes 
 
 In the following sample, customized spinner is shown while fetching the data from the service.
 
-% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/template/spinner-template/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/template/spinner-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/template/spinner-template.cs %}
+{% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 ## See Also
 

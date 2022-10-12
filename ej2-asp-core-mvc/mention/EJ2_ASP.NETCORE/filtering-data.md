@@ -18,24 +18,11 @@ When filtering the list items, you can set the limit for character count to rais
 
 In the following example, the remote request does not fetch the search data until the search key contains three characters.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/filtering-data/minimum-filter-char/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/filtering-data/minimum-filter-char/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/filtering-data/minimum-filter-char/minimum-filter-char.cs %}
-{% endtabs %}
-{% endif %}
 
 ## Change the filter type
 
@@ -43,24 +30,11 @@ While filtering, you can change the filter type to `Contains`, `StartsWith`, or 
 
 In the following examples, data filtering is done with `EndsWith` type.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/filtering-data/filter-type/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/filtering-data/filter-type/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/filtering-data/filter-type/filter-type.cs %}
-{% endtabs %}
-{% endif %}
 
 ## Allow spacing between search
 
@@ -70,32 +44,17 @@ While filtering, you can allow the space in the middle of mention while searchin
 
 In the following example, `allowSpaces` property is enabled and the filtering waits after the space action
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/filtering-data/allow-space/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/filtering-data/allow-space/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/filtering-data/allow-space/allow-space.cs %}
-{% endtabs %}
-{% endif %}
-
 ## Customize the suggestion item count
 
 With the large amount of datasource data bound for the Mention control, you can customize the number of list items to be displayed in the popup by using the [suggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
 
 In the following example, the suggestion list for the popup is limited to eight data's.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -104,17 +63,6 @@ In the following example, the suggestion list for the popup is limited to eight 
 {% highlight c# tabtitle="Email.cs" %}
 {% include code-snippet/dropdownlist/data-binding/suggestion-count/EmailData.cs %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/filtering-data/suggestion-count/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Email.cs" %}
-{% include code-snippet/mention/filtering-data/suggestion-count/EmailData.cs %}
-{% endtabs %}
-{% endif %}
 
 ## See Also
 

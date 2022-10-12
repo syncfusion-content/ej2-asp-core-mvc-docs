@@ -14,21 +14,8 @@ The Mention provides an option to sort the datasource in specific order. It has 
 
 In the following sample, the popup list data is rendered in the `Descending` order.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/sorting/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/sorting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/sorting/sorting.cs %}
-{% endtabs %}
-{% endif %}

@@ -18,16 +18,6 @@ By default, the `ShowMentionChar` is disabled which does not display the text co
 
 The following example, displays the text content along with the default mention character.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/customization/mention-char-customization/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/customization/mention-char-customization/razor %}
@@ -35,7 +25,6 @@ The following example, displays the text content along with the default mention 
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/customization/mention-char-customization/mentionChar-customization.cs %}
 {% endtabs %}
-{% endif %}
 
 
 ## Adding the suffix character after selection
@@ -44,16 +33,6 @@ The Mention has support to specify the custom suffix to append, along with the m
 
 The following example, displays the white space next to the text selected since the suffixText is configured as `&npsp;`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/customization/suffix-char-customization/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/customization/suffix-char-customization/razor %}
@@ -61,23 +40,12 @@ The following example, displays the white space next to the text selected since 
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/customization/suffix-char-customization/suffixChar-customization.cs %}
 {% endtabs %}
-{% endif %}
 
 ## Configure the popup list
 
 By default, the width of the popup list adjusts automatically according to the mention suggestion list data's width, and the height of the popup list is `300px`. They can also be customized using the [PopupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupHeight) and [PopupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupWidth) properties respectively.
 
 In the following sample, popup list's width and height are configured.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/customization/popup-list-customization/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -86,7 +54,6 @@ In the following sample, popup list's width and height are configured.
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/customization/popup-list-customization/popup-list-customization.cs %}
 {% endtabs %}
-{% endif %}
 
 
 

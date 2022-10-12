@@ -31,25 +31,14 @@ Local data can be represented in three ways as described below.
 
 The Mention has support to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/working-with-data/arrayof-simple-data/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/working-with-data/arrayof-simple-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/working-with-data/arrayof-simple-data/simpleData.cs %}
+{% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 ### 2. Array of JSON data
 
@@ -57,43 +46,20 @@ The Mention can generate its list items through an array of complex data. For th
 
 In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/working-with-data/arrayof-json-data/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/working-with-data/arrayof-json-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/working-with-data/arrayof-json-data/jsonData.cs %}
+{% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### 3. Array of Complex data
 
 The Mention can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
 
-In the following example, `Code.Id` column and `Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/working-with-data/complexdata/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Complex.cs" %}
-{% include code-snippet/mention/working-with-data/complexdata/Complex.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+In the following example, `Code.Id` column and `Country.CountryId` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -103,8 +69,6 @@ In the following example, `Code.Id` column and `Country.Name` column from comple
 {% include code-snippet/mention/working-with-data/complexdata/Complex.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 ## Binding remote data
 
@@ -116,17 +80,6 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 
 The following sample displays the first 6 contacts from `Customers` table of the `Northwind` Data Service.
 
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/working-with-data/odata-v4-adaptor/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/working-with-data/odata-v4-adaptor/razor %}
@@ -135,22 +88,10 @@ The following sample displays the first 6 contacts from `Customers` table of the
 {% include code-snippet/mention/working-with-data/odata-v4-adaptor/v4-adaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 ### Web API adaptor
 
 You can use `WebApiAdaptor` to bind mention with Web API created using OData endpoint.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/working-with-data/web-api/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -160,8 +101,6 @@ You can use `WebApiAdaptor` to bind mention with Web API created using OData end
 {% include code-snippet/mention/working-with-data/web-api/web-api.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 ## See Also
 
