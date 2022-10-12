@@ -1,0 +1,19 @@
+@{
+    List<SpeedDialItem> items = new List<SpeedDialItem>();
+    items.Add(new SpeedDialItem
+    {
+        IconCss="e-icons e-cut"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss="e-icons e-copy"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss="e-icons e-paste"
+    });
+}
+
+<div id="target" style="height:200px; position:relative; width:300px; border:1px solid;">
+    <ejs-speeddial target="#target" items="items" position="FabPosition.BottomLeft" opensOnHover=true openIconCss="e-icons e-edit" closeIconCss="e-icons e-close"></ejs-speeddial>
+</div>

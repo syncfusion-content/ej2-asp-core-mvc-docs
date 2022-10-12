@@ -1,4 +1,5 @@
-@{
+public ActionResult TextIcon()
+{
     List<SpeedDialItem> items = new List<SpeedDialItem>();
     items.Add(new SpeedDialItem
     {
@@ -15,8 +16,5 @@
         IconCss="e-icons e-paste",
         Text="Paste"
     });
+    ViewBag.datasource = items;
 }
-
-<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    <ejs-speeddial id="speeddial" target="#target" position="BottomLeft" content="Edit" items="items"></ejs-speeddial>
-</div>

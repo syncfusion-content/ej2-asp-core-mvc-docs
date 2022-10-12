@@ -1,0 +1,16 @@
+<div id="target" style="height:200px; position:relative; width:300px; border:1px solid;">
+    @Html.EJS().Button("refresh").Content("Refresh").Click("Refresh()").Render()
+    @Html.EJS().SpeedDial("speeddial").Target("#target").Items(ViewBag.datasource).Position(FabPosition.BottomLeft).OpenIconCss("e-icons e-edit").CloseIconCss("e-icons e-close").Render()
+</div>
+<style>
+    #refresh {
+        float: right;
+    }
+</style>
+<script>
+    var speeddial;
+    function Refresh() {
+        speeddial = document.getElementById('speeddial').ej2_instances[0];
+        speeddial.refreshPosition();
+    }
+</script>

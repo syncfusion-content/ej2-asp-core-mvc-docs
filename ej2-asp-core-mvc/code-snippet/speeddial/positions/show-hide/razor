@@ -1,0 +1,22 @@
+<div id="target" style="height:200px; position:relative; width:300px; border:1px solid;">
+    @Html.EJS().Button("showbtn").Content("Show").Click("ShowItems()").Render()
+    @Html.EJS().Button("hidebtn").Content("Hide").Click("HideItems()").Render()
+    @Html.EJS().SpeedDial("speeddial").Target("#target").Items(ViewBag.datasource).Position(FabPosition.BottomCenter).OpenIconCss("e-icons e-edit").CloseIconCss("e-icons e-close").Render()
+</div>
+<style>
+    #hidebtn{
+        float:right;
+    }
+</style>
+<script>
+    var speeddial;
+    function ShowItems()
+    {
+        speeddial = document.getElementById('speeddial').ej2_instances[0];
+        speeddial.show();
+    }
+    function HideItems() {
+        speeddial = document.getElementById('speeddial').ej2_instances[0];
+        speeddial.hide();
+    }
+</script>

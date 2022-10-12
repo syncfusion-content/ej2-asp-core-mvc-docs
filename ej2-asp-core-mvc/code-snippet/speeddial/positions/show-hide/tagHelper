@@ -1,0 +1,36 @@
+@{
+    List<SpeedDialItem> items = new List<SpeedDialItem>();
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-cut"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-copy"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-paste"
+    });
+}
+
+<div id="target" style="height:200px; position:relative; width:300px; border:1px solid;">
+    <ejs-button id="showbtn" content="Show" onclick="showItems()"></ejs-button>
+    <ejs-button style="float:right" id="hidebtn" content="Hide" onclick="hideItems()"></ejs-button>
+    <ejs-speeddial id="speeddial" target="#target" position="BottomCenter" items="items" openIconCss="e-icons e-edit" closeIconCss="e-icons e-close"></ejs-speeddial>
+</div>
+
+<script>
+    var speeddial;
+    function showItems()
+    {
+        speeddial=document.getElementById('speeddial').ej2_instances[0];
+        speeddial.show();
+    }
+    function hideItems()
+    {
+        speeddial=document.getElementById('speeddial').ej2_instances[0];
+        speeddial.hide();
+    }
+    
+</script>

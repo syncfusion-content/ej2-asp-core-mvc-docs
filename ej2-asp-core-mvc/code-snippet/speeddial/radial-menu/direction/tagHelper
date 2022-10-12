@@ -1,0 +1,29 @@
+@{
+    var radialSetting = new SpeedDialRadialSettings { Direction=RadialDirection.AntiClockwise };
+    List<SpeedDialItem> items = new List<SpeedDialItem>();
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-cut"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-copy"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-paste"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-edit"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-save"
+    });
+}
+
+<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
+    <ejs-speeddial id="speeddial" target="#target" mode=Radial radialSettings=radialSetting position="BottomLeft" items="items" openIconCss="e-icons e-edit" closeIconCss="e-icons e-close">
+    </ejs-speeddial>
+</div>
