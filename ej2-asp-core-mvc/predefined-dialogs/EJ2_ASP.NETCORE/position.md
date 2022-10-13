@@ -17,8 +17,6 @@ Customize the dialog position by using the `position` property. The position can
 
 Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Prompt.cshtml** to customize the position. Here, customized the dialog position as X= "top" and Y= "center".
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
@@ -34,42 +32,6 @@ Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Pr
 {% endhighlight %}
 
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-**Alert**
-
-{% tabs %}
-{% highlight razor tabtitle="Alert.cshtml" %}
-{% include code-snippet/predefined-dialogs/position/alert/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/position/alert/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-**Confirm**
-
-{% tabs %}
-{% highlight razor tabtitle="Confirm.cshtml" %}
-{% include code-snippet/predefined-dialogs/position/confirm/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/position/confirm/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-**Prompt**
-
-{% tabs %}
-{% highlight razor tabtitle="Prompt.cshtml" %}
-{% include code-snippet/predefined-dialogs/position/prompt/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/position/prompt/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 **Results from the code snippet**
 
