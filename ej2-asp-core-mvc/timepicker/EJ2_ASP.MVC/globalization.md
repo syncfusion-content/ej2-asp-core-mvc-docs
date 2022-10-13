@@ -26,9 +26,9 @@ To go with the different culture other than `English`, follow the below steps.
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
+Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
-In ASP.NET MVC refer the culture files directly from `\node_modules\cldr-data` location.
+In ASP.NET MVC refer the culture files directly from `/node_modules/cldr-data` location.
 
 ```typescript
 

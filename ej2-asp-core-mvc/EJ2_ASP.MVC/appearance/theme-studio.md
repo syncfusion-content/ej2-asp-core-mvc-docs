@@ -66,7 +66,7 @@ You can download the custom styles after customizing the theme colors.
 
 You can directly use the customized CSS file in the web application.
 
-**Step 1:** Copy/paste the customized CSS file from the download folder into your application at any folder. Example: `styles\{file-name}.css`.
+**Step 1:** Copy/paste the customized CSS file from the download folder into your application at any folder. Example: `styles/{file-name}.css`.
 
 **Step 2:** Refer the customized CSS file reference in the `index.html` or `shared/_layout.cshtml` main page head section.
 
