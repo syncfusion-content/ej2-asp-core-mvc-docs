@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Remote Data in ##Platform_Name## Grid Component
+title: Remote Data in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Remote Data in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Remote Data
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Remote Data
+# Remote Data in ASP.Net Core Grid Component
 
 To bind remote data to grid component, assign service data as an instance of `DataManager` to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. To interact with remote data source,  provide the endpoint `url`.
 
