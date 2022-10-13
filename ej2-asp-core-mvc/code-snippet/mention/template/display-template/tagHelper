@@ -17,7 +17,7 @@ div#mentionElement[placeholder]:empty:before {
     color: #555;
 }
 .city{
-    padding-right: 15px;
+    right: 15px;
     position: absolute;
 }
     

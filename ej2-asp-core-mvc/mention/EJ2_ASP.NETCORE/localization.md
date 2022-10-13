@@ -28,8 +28,6 @@ In the following sample, French culture is set to the mention control and no dat
 {% endhighlight %}
 {% endtabs %}
 
-![Localitation](../images/localization.png)
-
 ## See Also
 
 * [Accessibility](./accessibility)
