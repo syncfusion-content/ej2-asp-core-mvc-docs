@@ -42,8 +42,6 @@ The following example displays the white space next to the text selected since t
 {% endhighlight %}
 {% endtabs %}
 
-![suffix character](../images/suffix-char.gif)
-
 ## Configure the popup list
 
 By default, the width of the popup list adjusts automatically according to the mentioned suggestion list data's width, and the height of the popup list is `300px`. They can also be customized using the [PopupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupHeight) and [PopupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupWidth) properties respectively.
