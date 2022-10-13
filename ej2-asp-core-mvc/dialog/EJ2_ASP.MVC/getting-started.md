@@ -292,3 +292,5 @@ The below sample demonstrates the different Dialog positions.
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
 * [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
 * [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
+
+You can refer to our [ASP.NET MVC Dialog](https://www.syncfusion.com/aspnet-mvc-ui-controls/modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Dialog example](https://ej2.syncfusion.com/aspnetmvc/Dialog/DefaultFunctionalities#/fabric) that shows you how to render the MultiSelect Dropdown in Angular.
