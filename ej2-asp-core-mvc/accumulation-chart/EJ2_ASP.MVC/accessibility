@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in Core accumulation chart component
+# Accessibility in MVC accumulation chart component
 
 Accessibility is achieved in the accumulation chart control through WAI-ARIA standard and keyboard navigation. The accumulation chart features can be effectively accessed through assistive technologies such as screen readers.
 
