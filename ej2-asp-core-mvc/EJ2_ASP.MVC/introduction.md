@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction in ##Platform_Name## Component
+title: Introduction in ##Platform_Name## Controls | Syncfusion
 description: Learn here all about Introduction in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Introduction
@@ -16,7 +16,7 @@ The Syncfusion ASP.NET MVC UI (Essential JS 2) is a modern enterprise UI toolkit
 
 * The best way to get started would be to read the "Getting Started" section of the documentation for the component that you would like to start using first. The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that we recommend reading end-to-end before starting to write code, all other information can be referred as needed.
 
-* Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code snippets in the [online sample browser](https://ej2.syncfusion.com/aspnetmvc/) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
+* Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code snippets in the [online sample browser](https://ej2.syncfusion.com/aspnetmvc/Grid/GridOverview#/fluent) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
 
 * Another valuable resource is the API reference which provides detailed information on the object hierarchy as well as the settings available on every object.
 
