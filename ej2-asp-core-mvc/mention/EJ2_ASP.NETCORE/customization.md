@@ -24,8 +24,6 @@ The following example displays the text content along with the default mentioned
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide mention character](../images/show-mention-char.gif)
-
 ## Adding the suffix character after selection
 
 The Mention has support to specify the custom suffix to append alongside with the mentioned selected item while inserting. You can append space or new line character as [suffixText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuffixText).
@@ -37,8 +35,6 @@ The following example displays the white space next to the text selected since t
 {% include code-snippet/mention/customization/suffix-char-customization/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-![suffix character](../images/suffix-char.gif)
 
 ## Configure the popup list
 
