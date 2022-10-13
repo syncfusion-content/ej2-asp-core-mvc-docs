@@ -16,7 +16,7 @@ The Mention has been provided with several options to customize each list item, 
 
 The content of each list item within the Mention can be customized with the help of [itemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ItemTemplate) property.
 
-In the following sample, each list item is split into two columns to display relevant data's.
+In the following sample, each list item is split into two columns to display relevant data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -58,7 +58,7 @@ In the following sample, popup list content displays the notification of no data
 
 ## Spinner template
 
-The Mention supports to customize the waiting spinner, when data fetching takes time to load respective data in the popup by using the [spinnerTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SpinnerTemplate) property.
+The Mention provides support to customize the waiting spinner, when data fetching takes time to load respective data in the popup by using the [spinnerTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SpinnerTemplate) property.
 
 In the following sample, customized spinner is shown while fetching the data from the service.
 

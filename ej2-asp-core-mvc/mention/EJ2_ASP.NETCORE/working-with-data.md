@@ -10,7 +10,7 @@ documentation: ug
 
 # Working with Data
 
-The Mention loads the data either from local datasource or remote data services using the [dataSource](../api/mention/#datasource) property. It supports the data type of `array` or `DataManager`.
+The Mention loads the data either from local data source or remote data services using the [dataSource](../api/mention/#datasource) property. It supports the data type of either `array` or `DataManager`.
 
 The Mention also supports different kinds of data services such as OData V4 and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
@@ -25,11 +25,11 @@ The Mention also supports different kinds of data services such as OData V4 and 
 
 ## Binding local data
 
-Local data can be represented in three ways as described below.
+Local data can be represented in three ways as described in the following.
 
 ### 1. Array of simple data
 
-The Mention has support to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
+The Mention has provided support to load an array of primitive data such as strings and numbers. Here, both the value and text fields act the same.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -41,7 +41,7 @@ The Mention has support to load array of primitive data such as strings and numb
 
 ### 2. Array of JSON data
 
-The Mention can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
+The Mention can generate its list items through an array of complex data. Therefore, the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
 
 In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 

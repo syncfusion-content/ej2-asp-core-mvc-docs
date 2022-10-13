@@ -18,7 +18,7 @@ The Localization library allows you to localize static text content of the [NoRe
 
 ## Loading translations
 
-To load translation object to your application, use load function of the **L10n** class.
+To load the translation object to your application, use the load function of the **L10n** class.
 
 In the following sample, French culture is set to the mention control and no data is loaded. Hence, the [NoRecordsTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_NoRecordsTemplate) property displays its text in French culture initially.
 
