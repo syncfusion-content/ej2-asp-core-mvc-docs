@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Symbol Palette in ##Platform_Name## Diagram Component
+title: Symbol Palette in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Symbol Palette in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Symbol Palette
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Symbol Palette
+# Symbol Palette in Diagram
 
 The **SymbolPalette** displays a collection of palettes. The palette shows a set of nodes and connectors. It allows to drag and drop the nodes and connectors into the diagram.
 
@@ -81,7 +81,7 @@ The [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diag
 
 The [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalettePalette.html#Syncfusion_EJ2_Diagrams_SymbolPalettePalette_IconCss) property sets the content of the symbol group.
 
-The [`description`](https://ej2.syncfusion.com/documentation/api/diagram/symbolDescription) defines the text to be displayed and how that is to be handled in `getSymbolInfo`.
+The [`description`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalettePalette.html#Syncfusion_EJ2_Diagrams_SymbolPalettePalette_symbolDescription) defines the text to be displayed and how that is to be handled in `getSymbolInfo`.
 
 Also, any HTML element into a palette header can be embedded by defining the `getSymbolInfo` property.
 
@@ -176,7 +176,7 @@ The symbol palette panel can be restricted from getting expanded. The `cancel` a
 
 ## Stretch the symbols into the palette
 
-The [`fit`](https://ej2.syncfusion.com/documentation/api/diagram/symbolInfo#fit) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape.
+The [`fit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_fit) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

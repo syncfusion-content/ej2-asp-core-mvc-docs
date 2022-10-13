@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction in ##Platform_Name## Diagram Component
+title: Interaction in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Interaction in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Interaction
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Interaction
+# Interaction in Diagram
 
 ## Selection
 
@@ -91,8 +91,6 @@ You can change the size of the node resize thumb and the connector end point han
 {% endtabs %}
 {% endif %}
 
-![handleSize](images/handleSize.gif)
-
 ## Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
@@ -105,7 +103,7 @@ You can change the size of the node resize thumb and the connector end point han
 
 * Each segment of a selected connector is editable with some specific handles/thumbs.
 
-> For connector editing, you have to inject the [`ConnectorEditing`](https://ej2.syncfusion.com/documentation/api/diagram/connectorEditing) module.
+> For connector editing, you have to inject the [`ConnectorEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_connectorEditing) module.
 
 ## End point handles
 

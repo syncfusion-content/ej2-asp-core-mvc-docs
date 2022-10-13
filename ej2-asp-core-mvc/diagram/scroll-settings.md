@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scroll Settings in ##Platform_Name## Diagram Component
+title: Scroll Settings in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Scroll Settings in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scroll Settings
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Scroll Settings
+# Scroll Settings in Diagram
 
 The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, mousewheel can be used to scroll the diagram. Diagram’s [`scrollSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramScrollSettings.html) enables to read the current scroll status, view port size, current zoom, and zoom factor. It also allows to scroll the diagram programmatically.
 
