@@ -185,39 +185,3 @@ You can clear all the filtering condition done in the Gantt control by using the
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-## Custom component in filter menu
-
-The [`column.filter.ui`](../api/gantt/column/#filter) is used to add custom filter components to a particular column.
-To implement custom filter ui, define the following functions:
-
-* `create`:  Creates custom component.
-* `write`: Wire events for custom component.
-* `read`: Read the filter value from custom component.
-
-In the following sample, dropdown is used  as custom component in the TaskName column.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/filtering/enablefilter/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Enablefilter.cs" %}
-{% include code-snippet/gantt/filtering/enablefilter/enablefilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt/filtering/enablefilter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Enablefilter.cs" %}
-{% include code-snippet/gantt/filtering/enablefilter/enablefilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
