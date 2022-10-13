@@ -297,4 +297,4 @@ The parameters of DataManager bound to `DataManagerRequest` in the server. You c
 
 
 
-> If the grid rendered rows with empty/blank values then it can be resolved with the procedure explained [here](#troubleshoot-grid-render-rows-without-data).
+> If the grid rendered rows with empty/blank values then it can be resolved with the procedure explained [here](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/data-binding/data-binding#troubleshoot-grid-render-rows-without-data).
