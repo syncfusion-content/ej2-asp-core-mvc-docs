@@ -21,3 +21,5 @@ To modify the CheckBox appearance, you need to override the default CSS of Check
 | .e-checkbox-wrapper:hover .e-label | To customize the checkbox label on hover. |
 | .e-checkbox-wrapper .e-frame.e-check | To customize the checked checkbox. |
 | .e-checkbox-wrapper:hover .e-frame.e-check | To customize the checked checkbox when hover |
+
+![ASP.NET MVC CheckBox Styles and Appearances](images/checkbox-style-and-appearance.png)
