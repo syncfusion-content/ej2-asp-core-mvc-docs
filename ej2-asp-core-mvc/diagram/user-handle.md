@@ -250,9 +250,9 @@ The following table shows all the possible alignments visually shows the fixed u
 
 | Alignment | Offset | Output |
 | -------- | -------- | -------- |
-| Before | 0 |![fixed user handle for node](images/0before.png)|
-| Center | 0.5 |![fixed user handle for node](images/0.5center.png)|
-| After| 1 |![fixed user handle for node](images/1after.png)|
+| 0 |  Before  |![fixed user handle for node](images/before.png)|
+| 0.5 | Center |![fixed user handle for node](images/center.png)|
+| 1| After |![fixed user handle for node](images/after.png)|
 
 ### Displacement
 

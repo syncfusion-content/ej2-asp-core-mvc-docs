@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tools in Diagram
+# Tools in Diagram Component
 
 ## Drawing tools
 
