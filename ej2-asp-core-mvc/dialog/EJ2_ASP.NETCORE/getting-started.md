@@ -318,3 +318,5 @@ for Y is: top, center, bottom (or) any offset value.
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
 * [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
 * [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
+
+You can refer to our [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dialog example](https://ej2.syncfusion.com/aspnetcore/Dialog/DefaultFunctionalities#/fabric) that shows you how to render the MultiSelect Dropdown in Angular.
