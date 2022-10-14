@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar in Syncfusion ##Platform_Name## Gantt Component
-description: Learn here all about Tool Bar in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+description: Learn all about Tool Bar in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tool Bar
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Toolbar in Gantt control
 
-The Gantt control provides the toolbar support to handle Gantt actions. The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) property accepts the collection of built-in toolbar items and [`ItemModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html) objects for custom toolbar items.
+The Gantt control provides toolbar support to handle Gantt actions. The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) property accepts the collection of built-in toolbar items and [`ItemModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html) objects for custom toolbar items.
 
 ## Built-in toolbar items
 
@@ -157,7 +157,7 @@ You can enable or disable the toolbar items by using the `enableItems` method.
 
 ## Add input elements to toolbar
 
-In the Gantt toolbar, you can add EJ2 editor elements like numeric text box, drop-down list, and date picker controls. The following code snippets demonstrates how to add EJ2 editors to the Gantt toolbar.
+In the Gantt toolbar, you can add EJ2 editor elements like a numeric text box, a drop-down list, and date picker controls. The following code snippets demonstrate how to add EJ2 editors to the Gantt toolbar:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
