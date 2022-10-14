@@ -44,13 +44,13 @@ The Gantt control provides the menu filtering support for each column. You can e
 ## Custom component in filter menu
 
 The [`column.filter.ui`](../api/gantt/column/#filter) is used to add custom filter components to a particular column.
-To implement custom filter ui, define the following functions:
+To implement a custom filter UI, define the following functions:
 
-* `create`:  Creates custom component.
-* `write`: Wire events for custom component.
-* `read`: Read the filter value from custom component.
+* `create`:  Creates a custom component.
+* `write`: Wire events for a custom component.
+* `read`: Read the filter value from the custom component.
 
-In the following sample, dropdown is used  as custom component in the TaskName column.
+In the following sample, the dropdown is used  as a custom component in the TaskName column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
