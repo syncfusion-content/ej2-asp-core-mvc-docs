@@ -524,7 +524,7 @@ The event `pdfHeaderQueryCellInfo` triggers on framing each column header cell d
 
 ### ExportComplete
 
-The event [`ExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportComplete) is triggered after the pivot table data has been exported to an PDF document. You can use this event to acquire blob stream data for further customization and processing at your end by passing the `isBlob` parameter as **true** when using the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/#pdfexport) method. It has the following parameters:
+The event [`ExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportComplete) is triggered after the pivot table data has been exported to an PDF document. You can use this event to acquire blob stream data for further customization and processing at your end by passing the `isBlob` parameter as **true** when using the `pdfExport` method. It has the following parameters:
 
 * `type` - It holds the current export type such as PDF, Excel, and CSV.
 * `promise` - It holds the promise object for blob data.
