@@ -20,7 +20,7 @@ Syncfusion controls can be localized using the culture based JSON files. You can
 
 ### Adding culture based JSON files
 
-Syncfusion [locale data](https://www.npmjs.com/package/@syncfusion/ej2-locale) is also available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules\@syncfusion\ej2-locale\src`.
+Syncfusion [locale data](https://www.npmjs.com/package/@syncfusion/ej2-locale) is also available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules/@syncfusion/ej2-locale/src`.
 
 {% tabs %}
 {% highlight c# tabtitle="CMD" %}
@@ -30,7 +30,7 @@ npm i @syncfusion/ej2-locale
 {% endhighlight %}
 {% endtabs %}
 
-Once the `ej2-locale` package has installed, create a folder `locale` inside the `Content` folder. Then copy the specific culture files from `node_modules\@syncfusion\ej2-locale\src` location and paste it inside the `~/Content/locale` folder like below. The culture file contains all Syncfusion ASP.NET MVC controls locale text.
+Once the `ej2-locale` package has installed, create a folder `locale` inside the `Content` folder. Then copy the specific culture files from `node_modules/@syncfusion/ej2-locale/src` location and paste it inside the `~/Content/locale` folder like below. The culture file contains all Syncfusion ASP.NET MVC controls locale text.
 
 ![Moved locale data to ASP.NET MVC app](images/moved-locale-data.png)
 
