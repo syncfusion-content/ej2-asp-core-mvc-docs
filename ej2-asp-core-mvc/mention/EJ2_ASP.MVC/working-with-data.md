@@ -67,10 +67,10 @@ In the following example, `Code.Id` column and `Country.CountryId` column from c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/working-with-data/complexdata/razor %}
+{% include code-snippet/mention/working-with-data/complex-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Complex.cs" %}
-{% include code-snippet/mention/working-with-data/complexdata/Complex.cs %}
+{% include code-snippet/mention/working-with-data/complex-data/Complexdata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
