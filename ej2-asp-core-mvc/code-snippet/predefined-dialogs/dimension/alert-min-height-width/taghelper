@@ -11,7 +11,7 @@
     document.getElementById('alertBtn').onclick = function () {
         ej.popups.DialogUtility.alert({
             title: "About syncfusion succinctly series",
-            content: "The Succinctly series was born in 2012.",
+            content: "The succinctly series was born in 2012.",
             cssClass: "customClass"
         });
     };
