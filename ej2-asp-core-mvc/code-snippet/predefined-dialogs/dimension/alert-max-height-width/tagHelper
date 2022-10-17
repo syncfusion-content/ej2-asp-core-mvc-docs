@@ -10,7 +10,7 @@
 <script>
     document.getElementById('alertBtn').onclick = function () {
         ej.popups.DialogUtility.alert({
-            title: "About syncfusion succinctly serires",
+            title: "About syncfusion succinctly series",
             content: "In the Succinctly series, Syncfusion created a robust, free library of more than 130 technical e-books formatted for PDF, Kindle, and EPUB.",
             cssClass: "customClass"
         });
