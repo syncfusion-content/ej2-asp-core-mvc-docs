@@ -1,0 +1,39 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Navigations;
+
+<div class="default-appbar-section">
+    <ejs-appbar id="defaultAppBar" colorMode="Primary">
+        <e-content-template>
+            <ejs-button id="defaultButtonMenu" cssClass="e-inherit" iconCss="e-icons e-menu"></ejs-button>
+            <ejs-button id="defaultButtonHome" cssClass="e-inherit" content="Home"></ejs-button>
+            <ejs-button id="defaultButtonAbout" cssClass="e-inherit" content="About"></ejs-button>
+            <ejs-button id="defaultButtonProducts" cssClass="e-inherit" content="Products"></ejs-button>
+            <ejs-button id="defaultButtonContacts" cssClass="e-inherit" content="Contacts"></ejs-button>
+            <div class="e-appbar-spacer"></div>
+            <div class="e-appbar-separator"></div>
+            <ejs-button id="defaultButtonLogin" cssClass="e-inherit" content="Login"></ejs-button>
+        </e-content-template>
+    </ejs-appbar>
+</div>
+
+<style>
+    .default-appbar-section .e-btn.e-inherit {
+        margin: 0 3px;
+    }
+    @@media screen and (max-width: 1024px) {
+        .default-appbar-section .e-appbar {
+           flex-flow: row wrap;
+           height: auto;
+           gap: 8px;
+        }
+        .default-appbar-section {
+           width: 350px;
+        }
+    }
+    @@media screen and (max-width: 480px) {
+        .default-appbar-section {
+           width: 200px;
+           margin: 0 2px;
+        }
+    }
+</style>

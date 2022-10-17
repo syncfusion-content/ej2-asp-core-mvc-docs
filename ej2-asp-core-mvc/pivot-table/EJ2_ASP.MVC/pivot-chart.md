@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot Chart in ##Platform_Name## Pivot Table Component
+title: Pivot Chart in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Pivot Chart in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pivot Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pivot Chart
+# Pivot Chart in ##Platform_Name## Pivot Table Component
 
 In pivot table component, pivot chart would act as an additional visualization component with its basic and important characteristic like drill down and drill up, 15+ chart types, series customization, axis customization, legend customization, export, print and tooltip. Its main purpose is to show the pivot data in graphical format.
 
@@ -52,13 +52,14 @@ For more information [`refer`](./data-binding) here.
 
 ## Chart Types
 
-Supports 19 different types of charts as follows,
+Supports 21 different types of charts as follows,
 
 * Line
 * Column
 * Area
 * Bar
 * StepArea
+* StackingLine
 * StackingColumn
 * StackingArea
 * StackingBar
@@ -68,6 +69,7 @@ Supports 19 different types of charts as follows,
 * Scatter
 * Spline
 * SplineArea
+* StackingLine100
 * StackingColumn100
 * StackingBar100
 * StackingArea100
@@ -588,6 +590,39 @@ In the following code sample, the pivot chart can be seen as a single chart with
 {% endif %}
 
 
+
+### Show member based chart series
+
+When multiple axes are enabled, the user can create each chart series with a unique color palette based on members by setting the [`showMemberSeries`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowMemberSeries) property in [`chartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) to **true**. As a result, user can easily identify each member enclosed chart series consistently across different measures in the entire chart area.
+
+Furthermore, with a single click over the legend item, you can show or hide specific chart series visibility based on members across different measures in the entire chart area.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ShowMemberSeries.cs" %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/ShowMemberSeries.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ShowMemberSeries.cs" %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/ShowMemberSeries.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![output](images/showMemberSeries.png)
 
 ## Series Customization
 

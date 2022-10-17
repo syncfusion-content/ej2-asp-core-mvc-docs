@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multi Select in ##Platform_Name## Calendar Component
-description: Learn here all about Multi Select in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
+title: Multi Select in ##Platform_Name## Calendar Control | Syncfusion
+description: Learn here all about Multi Select in Syncfusion ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Multi Select
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Multi Selection
+# Multi Selection in Calendar Control
 
 Calendar provides an option to select **single** or **multiple dates** by using `isMultiSelection` and `values` properties. By default, `isMultiSelection` property will be in disabled state.
 
@@ -26,9 +26,6 @@ The following example demonstrates the functionality of `isMultiSelection` prope
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/calendar/multi-select/multi/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Multi.cs" %}
-{% include code-snippet/calendar/multi-select/multi/multi.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -43,3 +40,4 @@ The following example demonstrates the functionality of `isMultiSelection` prope
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarUGSample).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Grid Component
+title: Accessibility in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -29,6 +29,8 @@ The following ARIA attributes are used in the Grid:
 * aria-grabbed (attribute)
 * aria-owns (attribute)
 * aria-label (attribute)
+
+> You can achieve a single table announcing on the JAWS screen reader by setting an **`e-gridcell-read`** class through [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property of the grid.
 
 ## Keyboard navigation
 

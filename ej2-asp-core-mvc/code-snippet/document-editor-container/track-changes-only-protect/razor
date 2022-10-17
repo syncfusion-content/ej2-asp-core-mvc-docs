@@ -1,0 +1,14 @@
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+
+<script>
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById('container');
+        container = documenteditorElement.ej2_instances[0];
+        documenteditor = container.documentEditor;
+        container.documentEditor.editor.enforceProtection('123', 'RevisionsOnly');
+        //stop the document protection
+        container.documentEditor.editor.stopProtection('123');
+    }
+</script>
