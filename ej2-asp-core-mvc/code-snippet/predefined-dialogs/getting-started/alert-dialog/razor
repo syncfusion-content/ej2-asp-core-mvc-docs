@@ -4,8 +4,6 @@
 </div>
 <script>
     var dialogObj;
-    var alertBtn = new ej.buttons.Button({});
-    alertBtn.appendTo('#alertBtn');
     document.getElementById('alertBtn').onclick = function () {
         document.getElementById("statusText").style.display = "none";
         dialogObj = ej.popups.DialogUtility.alert({

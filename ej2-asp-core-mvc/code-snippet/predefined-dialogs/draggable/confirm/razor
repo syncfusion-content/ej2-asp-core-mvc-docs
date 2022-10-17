@@ -2,8 +2,6 @@
     @Html.EJS().Button("confirmBtn").Content("Confirm").CssClass("e-success").Render()
 </div>
 <script>
-    var confirmBtn = new ej.buttons.Button({});
-    confirmBtn.appendTo('#confirmBtn');
     document.getElementById('confirmBtn').onclick = function () {
         ej.popups.DialogUtility.confirm({
             title: ' Delete Multiple Items',

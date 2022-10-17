@@ -4,8 +4,6 @@
 </div>
 <script>
     var dialogObj;
-    var promptBtn = new ej.buttons.Button({});
-    promptBtn.appendTo('#promptBtn');
     document.getElementById('promptBtn').onclick = function () {
         document.getElementById("statusText").style.display = "none";
         dialogObj = ej.popups.DialogUtility.confirm({

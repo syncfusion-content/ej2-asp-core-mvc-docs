@@ -2,8 +2,6 @@
     @Html.EJS().Button("confirmBtn").Content("confirm").CssClass("e-success").Render()
 </div>
 <script>
-    var confirmBtn = new ej.buttons.Button({});
-    confirmBtn.appendTo('#confirmBtn');
     document.getElementById('confirmBtn').onclick = function () {
         ej.popups.DialogUtility.alert({
             title: 'Join Chat Group',

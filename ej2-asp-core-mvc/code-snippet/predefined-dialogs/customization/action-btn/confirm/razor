@@ -11,8 +11,6 @@
     }
 </style>
 <script>
-    var confirmBtn = new ej.buttons.Button({});
-    confirmBtn.appendTo('#confirmBtn');
     document.getElementById('confirmBtn').onclick = function () {
         ej.popups.DialogUtility.confirm({
             title: 'Delete File',
