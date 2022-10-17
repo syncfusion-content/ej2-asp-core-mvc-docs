@@ -1,16 +1,18 @@
-<div id="predefinedDialogDefault" class="col-lg-12 control-section">
-    @Html.EJS().Button("alertBtn").Content("Alert").CssClass("e-danger").Render()
-    <span id="statusText"></span>
+<div style="height:400px;">
+    <div id="predefinedDialogDefault" class="col-lg-12 control-section">
+        @Html.EJS().Button("alertBtn").Content("Alert").CssClass("e-danger").Render()
+        <span id="statusText"></span>
+    </div>
 </div>
 <script>
     var dialogObj;
     document.getElementById('alertBtn').onclick = function () {
         document.getElementById("statusText").style.display = "none";
         dialogObj = ej.popups.DialogUtility.alert({
-            title: 'Low Battery',
-            content: '10% of battery remaining',
+            title: "Low battery",
+            content: "10% of battery remaining",
             okButton: { click: alertBtnClick.bind(this) },
-            position: { X: 'center', Y: 'center' }
+            position: { X: "center", Y: "center" }
         });
     };
     function alertBtnClick() {

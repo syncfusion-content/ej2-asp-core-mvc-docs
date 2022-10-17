@@ -5,9 +5,9 @@
 <script>
     document.getElementById('alertBtn').onclick = function () {
         ej.popups.DialogUtility.alert({
-            title: 'Low Battery',
-            content: '10% of battery remaining',
-            position: { X: 'top', Y: 'center' }
+            title: "Low Battery",
+            content: "10% of battery remaining",
+            position: { X: "top", Y: "center" }
         });
     };
 </script>

@@ -4,7 +4,7 @@
 <script>
     document.getElementById('alertBtn').onclick = function () {
         ej.popups.DialogUtility.alert({
-            title: 'Good job!',
+            title: "Good job!",
             content: "You clicked the alert button!",
             okButton: { text: 'Done' }    
         });

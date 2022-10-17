@@ -7,11 +7,11 @@
     document.getElementById('promptBtn').onclick = function () {
         document.getElementById("statusText").style.display = "none";
         ej.popups.DialogUtility.confirm({
-            title: 'Join Chat Group',
-            content: '<p>Enter your name: </p> <input id= "inputEle" type="text" name="Required" class="e-input" placeholder="Type here.." />',
+            title: "Join chat group",
+            content: "<p>Enter your name: </p> <input id= inputEle type=text name=Required class=e-input placeholder=Type here.. />",
             okButton: { click: promptOkAction },
             cancelButton: { click: promptCancelAction },
-            position: { X: 'center', Y: 'center' }
+            position: { X: "center", Y: "center" }
         });
     }
     function promptOkAction() {
@@ -19,18 +19,18 @@
         value = document.getElementById("inputEle").value;
         if (value == "") {
             this.hide();
-            document.getElementById('statusText').innerHTML = "The user's input is returned as \" \" ";
+            document.getElementById("statusText").innerHTML = "The user's input is returned as \" \" ";
             document.getElementById("statusText").style.display = "block";
         }
         else {
             this.hide();
-            document.getElementById('statusText').innerHTML = "The user's input is returned as" + " " + value;
+            document.getElementById("statusText").innerHTML = "The user's input is returned as" + " " + value;
             document.getElementById("statusText").style.display = "block";
         }
     }
     function promptCancelAction() {
         this.hide();
-        document.getElementById('statusText').innerHTML = "The user canceled the prompt dialog";
+        document.getElementById("statusText").innerHTML = "The user canceled the prompt dialog";
         document.getElementById("statusText").style.display = "block";
     }
 </script>
