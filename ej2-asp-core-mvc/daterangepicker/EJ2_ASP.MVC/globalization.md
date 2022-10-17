@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Daterangepicker Component
+title: Globalization in ##Platform_Name## Daterangepicker Control | Syncfusion
 description: Learn here all about Globalization in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Globalization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization
+# Globalization in ASP.NET MVC DateRangePicker Control
 
 Globalization is the combination of  adapting the control to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization/) and also by adding cultural specific customizations and translating the text [`localization`](../common/localization/).
 
@@ -25,9 +25,9 @@ To go with the different culture other than `English`, follow the below steps.
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
+Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
-In ASP.NET MVC refer the culture files directly from `\node_modules\cldr-data` location.
+In ASP.NET MVC refer the culture files directly from `/node_modules/cldr-data` location.
 
 ```typescript
 

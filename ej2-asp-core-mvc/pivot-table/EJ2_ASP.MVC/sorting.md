@@ -220,8 +220,8 @@ The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting/#Member-Sorting)| Sort field |
-| [`Value sort icon`](./sorting/#Value-Sorting)| Sort value|
+| [`Sort field`](./sorting/#member-sorting)| Sort field |
+| [`Value sort icon`](./sorting/#value-sorting)| Sort value|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -266,8 +266,8 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting/#Member-Sorting)| Field sorted|
-| [`Value sort icon`](./sorting/#Value-Sorting)| Value sorted|
+| [`Sort field`](./sorting/#member-sorting)| Field sorted|
+| [`Value sort icon`](./sorting/#value-sorting)| Value sorted|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -308,8 +308,8 @@ The event [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting/#Member-Sorting)| Sort field |
-| [`Value sort icon`](./sorting/#Value-Sorting)| Sort value|
+| [`Sort field`](./sorting/#member-sorting)| Sort field |
+| [`Value sort icon`](./sorting/#value-sorting)| Sort value|
 
 * `errorInfo`: It holds the error information of the current UI action.
 

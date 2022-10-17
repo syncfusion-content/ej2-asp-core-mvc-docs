@@ -70,7 +70,7 @@ The steps below shows how to install the Essential Studio ASP.NET Core - EJ2 Mac
    
    By default, Mac installer will install the files in following location.
 
-   **Location:** {Documents}\Syncfusion\ {version}\ {platform}
+   **Location:** {Documents}/Syncfusion/ {version}/ {platform}
    
    ![Installed Location](images/Mac_Installer9.png)
 
