@@ -10,8 +10,8 @@
 <script>
     document.getElementById('alertBtn').onclick = function () {
         ej.popups.DialogUtility.alert({
-            title: 'About SYNCFUSION Succinctly Serires',
-            content: 'In the Succinctly series, Syncfusion created a robust, free library of more than 130 technical e-books formatted for PDF, Kindle, and EPUB.',
+            title: "About syncfusion succinctly series",
+            content: "In the succinctly series, syncfusion created a robust, free library of more than 130 technical e-books formatted for PDF, Kindle, and EPUB.",
             cssClass: "customClass"
         });
     };
