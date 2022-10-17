@@ -1,0 +1,22 @@
+<div style="height:400px;">
+    @Html.EJS().Button("confirmBtn").Content("Confirm").CssClass("e-success").Render()
+</div>
+<style>
+    .e-btn-icon.e-icons.e-check icon.e-icon-left:before {
+        content: '\e7ff';
+    }
+
+    .e-btn-icon.e-icons.e-close icon.e-icon-left:before {
+        content: '\e7fc';
+    }
+</style>
+<script>
+    document.getElementById('confirmBtn').onclick = function () {
+        ej.popups.DialogUtility.confirm({
+            title: "Delete file",
+            content: "Are you sure you want to permanently delete these file?",
+            okButton: { text: "Yes", icon: "e-icons e-check" },
+            cancelButton: { text: "No", icon: "e-icons e-close" }   
+        });
+    };
+</script>

@@ -17,7 +17,7 @@ The steps below shows how to install the Essential Studio ASP.NET Core - EJ2 ins
 
 1. Open the Syncfusion ASP.NET Core - EJ2 offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
-    ![Web Offline Installer Setup wizard](images\offline-1.png)
+    ![Web Offline Installer Setup wizard](images/offline-1.png)
 
     >**NOTE** <br /> The Installer wizard extracts the syncfusionessentialaspnetcore-js2_(version).exe dialog, which displays the package's unzip operation.
 
@@ -31,7 +31,7 @@ The steps below shows how to install the Essential Studio ASP.NET Core - EJ2 ins
 
     You must enter your Syncfusion email address and password. If you don't already have a Syncfusion account, you can sign up for one by clicking **"Create an account"**. If you have forgotten your password, click on **"Forgot Password"** to create a new one. Once you've entered your Syncfusion email and password, click Next.
 
-    ![Web Offline Installer LoginToInstall Wizard](images\offline-2.png)
+    ![Web Offline Installer LoginToInstall Wizard](images/offline-2.png)
 
     ***Use Unlock Key***
 
@@ -41,13 +41,13 @@ The steps below shows how to install the Essential Studio ASP.NET Core - EJ2 ins
 
     To learn how to generate an unlock key for both trial and licensed products, see [this](https://www.syncfusion.com/kb/2326) Knowledge Base article.
 
-    ![Web Offline Installer UseUnlockKey Wizard](images\offline-3.png)
+    ![Web Offline Installer UseUnlockKey Wizard](images/offline-3.png)
 
 3. After reading the License Terms and Privacy Policy, check the **"I agree to the License Terms and Privacy Policy"** check box. Click the Next button.
 
 4. Change the install and sample locations here. You can also change the Additional settings. Click Next/Install to install with the default settings.
 
-   ![Web Offline Installer Settings Wizard](images\offline-4.png)
+   ![Web Offline Installer Settings Wizard](images/offline-4.png)
 
    ***Additional Settings***
 
@@ -60,25 +60,25 @@ The steps below shows how to install the Essential Studio ASP.NET Core - EJ2 ins
    * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for Syncfusion Control Panel.
 5. If any previous versions of the current product is installed, the Uninstall Previous Version(s) wizard will be opened. Select **Uninstall** checkbox to uninstall the previous versions and then click the Proceed button.
 
-    ![Web Offline Installer Uninstall Previous Wizard](images\offline-5.png)
+    ![Web Offline Installer Uninstall Previous Wizard](images/offline-5.png)
 
     >**NOTE** <br /> From the 2021 Volume 1 release, Syncfusion has added the option to uninstall previous versions from 18.1 while installing the new version.<br /><br /> **NOTE** <br/><br /> If any version is selected to uninstall, a confirmation screen will appear; if continue is selected, the Progress screen will display the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress will be displayed.
 
     **Confirmation Alert**
 
-    ![Web Offline Installer Confirmation Alert](images\offline-6.png)
+    ![Web Offline Installer Confirmation Alert](images/offline-6.png)
 
     **Uninstall Progress**
 
-    ![Web Offline Installer Uninstall Progress Wizard](images\offline-7.png)
+    ![Web Offline Installer Uninstall Progress Wizard](images/offline-7.png)
 
     **Install Progress**
 
-    ![Web Offline Installer Install Progress](images\offline-8.png)
+    ![Web Offline Installer Install Progress](images/offline-8.png)
 
     >**NOTE** <br /> The Completed screen is displayed once the ASP. NET Core - EJ2 product is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
 
-    ![Web Offline Installer Summary Wizard](images\offline-9.png)
+    ![Web Offline Installer Summary Wizard](images/offline-9.png)
 
 6. After installing, click the **Launch Control Panel** link to open the Syncfusion Control Panel.
 

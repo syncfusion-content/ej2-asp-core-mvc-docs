@@ -20,7 +20,7 @@ See our **"[Upgrade Guide](https://help.syncfusion.com/upgrade-guide/aspnet-core
 
 The most recent version of Syncfusion ASP.NET Core - EJ2 can be downloaded and installed by clicking on the "Latest Version: {Version}" link at the top of the Syncfusion ASP.NET Core - EJ2 Control Panel.
 
-![Web Installer Upgrade](images\upgrade1.png)
+![Web Installer Upgrade](images/upgrade1.png)
 
 You can also upgrade to the latest version just by downloading and installing the products you require from [this](https://www.syncfusion.com/account/downloads/latest-version) link. The existing installed versions are not required to be uninstalled.
 
