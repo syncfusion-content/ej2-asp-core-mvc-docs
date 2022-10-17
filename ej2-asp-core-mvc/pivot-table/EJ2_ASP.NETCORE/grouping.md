@@ -226,7 +226,7 @@ Date grouping can also be configured using the [`e-groupsettings`](https://help.
 
 Furthermore, in the field list UI, these date group fields **Years (Date)**, **Quarters (Date)**, **Months (Date)**, etc... will be automatically grouped and displayed under the **Date** folder name.
 
-![output](./images/treeview.png "Group fields under a separate folder displayed in the field list UI")
+![Date fields grouped and displayed under the "Date" folder](./images/treeview.png "Group fields under a separate folder displayed in the field list UI")
 
 ### Ungrouping the existing date groups
 
