@@ -76,7 +76,7 @@ Meanwhile, user can also view calculated field dialog in UI by invoking `CreateC
 
 ![Pivot Table - calculated field](images/calc-field-btn.png)
 
-![calculated field popup](images/calculatdfield-btn-dropdown.png)
+![Calculated field popup](images/calculatdfield-btn-dropdown.png)
 
 ## Editing through the field list and the grouping bar
 
@@ -116,7 +116,7 @@ While creating a new calculated field, if user wants to the add the formula of a
 ![Drag field to formula](images/calculatdfield-reusing2.png "Drag field to formula")
 <br/>
 <br/>
-![ouReusing the existing calculated field formulatput](images/calculatdfield-reusing3.png "Reusing the existing calculated field formula")
+![Reusing the existing calculated field formulat](images/calculatdfield-reusing3.png "Reusing the existing calculated field formula")
 
 ## Apply the format to the calculated field values
 

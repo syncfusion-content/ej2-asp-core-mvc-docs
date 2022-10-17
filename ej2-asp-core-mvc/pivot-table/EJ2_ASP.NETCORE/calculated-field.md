@@ -76,7 +76,7 @@ Meanwhile, user can also view calculated field dialog in UI by invoking `createC
 
 ![Pivot Table - calculated field](images/calc-field-btn.png)
 
-![calculated field popup](images/calculatdfield-btn-dropdown.png)
+![Calculated field popup](images/calculatdfield-btn-dropdown.png)
 
 ## Editing through the field list and the grouping bar
 
