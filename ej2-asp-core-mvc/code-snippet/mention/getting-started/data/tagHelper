@@ -1,6 +1,5 @@
 @{
-    ...
-    var data = new string[] { "Selma Rose", "Garth", "Robert", "William", "Joseph" };
+    string[] data = new string[] { "Selma Rose", "Garth", "Robert", "William", "Joseph" };
     char nameMentionChar = '@';
 }
 

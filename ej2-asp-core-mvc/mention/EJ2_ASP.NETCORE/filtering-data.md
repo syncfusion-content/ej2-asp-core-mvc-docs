@@ -24,6 +24,8 @@ The remote request does not fetch the search data until the search key contains 
 {% endhighlight %}
 {% endtabs %}
 
+![Minimum filter character](../images/minimum-filter-character.png)
+
 ## Change the filter type
 
 While filtering, you can change the filter type to `Contains`, `StartsWith`, or `EndsWith` for string type within the [filterType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_FilterType) property.

@@ -1,5 +1,5 @@
 @{
-    ...
+    
     char nameMentionChar = '@';
     var data = new Complex().GetData();
 }

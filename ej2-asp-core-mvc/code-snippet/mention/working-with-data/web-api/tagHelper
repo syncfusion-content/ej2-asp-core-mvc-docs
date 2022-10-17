@@ -1,5 +1,5 @@
 @{
-    ...
+    
     char nameMentionChar = '@';
     var query = "new ej.data.Query().select(['FirstName','Country','EmployeeID']).requiresCount().take(6)";
 }

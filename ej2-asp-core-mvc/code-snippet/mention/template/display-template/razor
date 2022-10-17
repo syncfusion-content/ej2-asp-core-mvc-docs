@@ -4,7 +4,7 @@
 }
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
 
-@Html.EJS().Mention("employee").PopupWidth("250px").SuggestionCount(6).MentionChar(nameMentionChar).Target("#mentionElement").ItemTemplate("<span><span class=\"name\"> ${FirstName}</span><span class=\"city\">${Country}</span></span>").DisplayTemplate("<span>${FirstName} - ${City}</span>").DataSource(obj =>
+@Html.EJS().Mention("employee").PopupWidth("250px").MentionChar(nameMentionChar).Target("#mentionElement").ItemTemplate("<span><span class=\"name\"> ${FirstName}</span><span class=\"city\">${Country}</span></span>").DisplayTemplate("<span>${FirstName} - ${City}</span>").DataSource(obj =>
 obj.Url("https://ej2services.syncfusion.com/production/web-services/api/Employees").CrossDomain(true).Adaptor("WebApiAdaptor")).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings
 {
    Text = "FirstName",
@@ -18,7 +18,7 @@ obj.Url("https://ej2services.syncfusion.com/production/web-services/api/Employee
         color: #555;
     }
     .city {
-        padding-right: 15px;
+        right: 15px;
         position: absolute;
     }
 

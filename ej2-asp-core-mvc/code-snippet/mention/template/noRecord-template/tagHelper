@@ -1,7 +1,6 @@
 @{
-    ...
     char nameMentionChar = '@';
-    var data = new string[] { };
+    string[] data = new string[] { };
 }
 
 <div id="mentionElement" placeholder = "Type @@ and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>

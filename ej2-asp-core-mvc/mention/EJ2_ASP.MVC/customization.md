@@ -16,7 +16,7 @@ The Mention control allows the user to control the mentioned character and custo
 
 By default, the `ShowMentionChar` which does not display the text content with the mentioned character is disabled. If the property [ShowMentionChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ShowMentionChar) is enabled, it allows the respective [MentionChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) configured along with the text content opted from the suggested list to display.
 
-The following example displays the text content along with the default mentioned character.
+The following example displays the text content along with the customized mentioned character as **#**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -26,6 +26,8 @@ The following example displays the text content along with the default mentioned
 {% include code-snippet/mention/customization/mention-char-customization/mentionChar-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Show or hide mention character](../images/show-mention-char.png)
 
 ## Adding the suffix character after selection
 
