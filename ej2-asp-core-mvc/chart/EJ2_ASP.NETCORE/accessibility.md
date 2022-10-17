@@ -25,21 +25,12 @@ The following ARIA attributes are used in the chart:
 <td><b>Element</b></td>
 <td><b>Default description</b></td>
 </tr>
-<tr>
-<td>Datalabel</td>
-<td>Reads the Point y value</td>
+<td>Title</td>
+<td>Reads the accumulation chart's title</td>
 </tr>
 <tr>
 <td>Legend</td>
-<td>Click to show or hide the series</td>
-</tr>
-<tr>
-<td>Axis Title</td>
-<td>Reads the axis tile</td>
-</tr>
-<tr>
-<td>Chart Title</td>
-<td>Reads the chart title</td>
+<td>Reads the series point name</td>
 </tr>
 <tr>
 <td>Series Points</td>

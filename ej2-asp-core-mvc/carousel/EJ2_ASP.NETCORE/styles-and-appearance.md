@@ -16,8 +16,8 @@ To modify the Carousel appearance, you need to override the default CSS of Carou
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
 
-CSS Class | Purpose of Class
------|-----
+| Css class | Purpose |
+|-------|---------|
 |.e-carousel .e-carousel-item|To customize the carousel item
 |.e-carousel-item.e-active| To customize the active carousel item
 |.e-carousel .e-carousel-indicators|To customize the indicators
