@@ -2,14 +2,12 @@
     @Html.EJS().Button("promptBtn").Content("Prompt").IsPrimary(true).Render()
 </div>
 <script>
-    var promptBtn = new ej.buttons.Button({});
-    promptBtn.appendTo('#promptBtn');
     document.getElementById('promptBtn').onclick = function () {
         ej.popups.DialogUtility.confirm({
-            title: 'Delete File',
-            content: "Are you sure you want to permanently delete these file?",
-            okButton: { text: 'Yes', icon: "e-icons e-check" },
-            cancelButton: { text: 'No', icon: "e-icons e-close" }   
+            title: "Join Wi-Fi network",
+            content: "<table class=Table><tbody><tr><td>SSID: <b>AndroidAP</b></td></tr><tr> <td>Password:</td> </tr> <tr> <td> <span class=e - input - group> <input type=password id=password name=Required class=e - input> </span> </td> </tr> </tbody> </table>",
+            okButton: { text: "Connect" },
+            cancelButton: { text: "Close" }   
         });
     };
 </script>
