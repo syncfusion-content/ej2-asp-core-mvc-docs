@@ -61,10 +61,10 @@ In the following example, `Code.Id` column and `Country.CountryId` column from c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/working-with-data/complexdata/tagHelper %}
+{% include code-snippet/mention/working-with-data/complex-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Complex.cs" %}
-{% include code-snippet/mention/working-with-data/complexdata/Complex.cs %}
+{% include code-snippet/mention/working-with-data/complex-data/Complexdata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
