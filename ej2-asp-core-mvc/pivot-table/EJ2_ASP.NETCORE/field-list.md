@@ -221,7 +221,7 @@ In the field list UI, you can display fields by grouping them under the desired 
 
 
 
-![output](images/groupNameTreeview.png)
+![Fields displayed in folder structure](images/groupNameTreeview.png)
 
 ## Add or remove fields
 

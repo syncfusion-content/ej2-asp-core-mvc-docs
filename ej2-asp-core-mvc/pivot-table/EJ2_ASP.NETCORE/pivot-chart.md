@@ -626,7 +626,7 @@ Furthermore, with a single click over the legend item, you can show or hide spec
 
 
 
-![output](images/showMemberSeries.png)
+![Chart series displayed with same colors for same points/members](images/showMemberSeries.png)
 
 ## Series Customization
 
