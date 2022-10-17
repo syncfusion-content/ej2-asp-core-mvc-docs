@@ -60,3 +60,4 @@ The [`preventDefaults`](https://ej2.syncfusion.com/documentation/api/diagram/ser
 var diagram: Diagram = new Diagram({
  serializationSettings: { preventDefaults: true },
 });
+```

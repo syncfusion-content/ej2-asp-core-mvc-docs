@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shapes in ##Platform_Name## Diagram Component
+title: Shapes in ##Platform_Name## Diagram Control | Syncfusion
 description: Learn here all about shapes in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Shapes
@@ -101,9 +101,9 @@ Diagram allows to add images as [`image`](https://help.syncfusion.com/cr/aspnetc
 
 > Deploy your HTML file in the web application and export the diagram (image node) or else the image node will not be exported in the Chrome and Firefox due to security issues.
 
-Link 1: `http://asked.online/draw-images-on-canvas-locally-using-chrome/2546077/`
+**Link 1**: http://asked.online/draw-images-on-canvas-locally-using-chrome/2546077/
 
-Link 2: `http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrome`
+**Link 2**: http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrome
 
 ## Image alignment
 
