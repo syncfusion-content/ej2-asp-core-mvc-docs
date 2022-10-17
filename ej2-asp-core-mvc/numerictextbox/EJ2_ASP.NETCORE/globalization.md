@@ -24,9 +24,9 @@ If you want to go with the different culture other than `English`, follow the be
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
+Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
-In ASP.NET Core, the static file contents are should present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `\wwwroot\scripts\cldr-data` location as like the below code examples
+In ASP.NET Core, the static file contents are should present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `/wwwroot/scripts/cldr-data` location as like the below code examples
 
 ```typescript
 
