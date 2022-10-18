@@ -66,7 +66,7 @@ Use the below CSS to customize the command column buttons such as edit, delete, 
 
 ```css
 
-.e-icons.e-edit::before {
+.e-grid .e-edit::before {
     color: #deecf9;
 }
 
