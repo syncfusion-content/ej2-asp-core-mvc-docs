@@ -12,25 +12,6 @@ documentation: ug
 
 The predefined dialogs supports dragging within its target container by grabbing the dialog header, which allows the user to reposition the dialog dynamically by using the `isDraggable` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-
-{% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include code-snippet/predefined-dialogs/draggable/alert/tagHelper %}
-{% endhighlight %}
-
-{% highlight cshtml tabtitle="Confirm.cshtml" %}
-{% include code-snippet/predefined-dialogs/draggable/confirm/tagHelper %}
-{% endhighlight %}
-
-{% highlight cshtml tabtitle="Prompt.cshtml" %}
-{% include code-snippet/predefined-dialogs/draggable/prompt/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 **Alert**
 
 {% tabs %}
@@ -59,5 +40,3 @@ The predefined dialogs supports dragging within its target container by grabbing
 {% include code-snippet/predefined-dialogs/draggable/prompt/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}

@@ -15,7 +15,6 @@ The predefined dialogs can be animated during the open and close actions. You ca
 In the following sample, the zoom effect is enabled. So, the dialog will open with the zoom in and close with the zoom out effect.
 
 
-
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
