@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Radio Button Component | Syncfusion
-description: Checkout and learn about getting started with ASP.NET Core Radio Button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## RadioButton Control
+description: Checkout and learn about getting started with ##Platform_Name## RadioButton control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -152,5 +152,3 @@ In the checked state an inner circle will be added to the visualization of Radio
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-
-N> You can also explore our [ASP.NET Core Radio Button Example](https://ej2.syncfusion.com/aspnetcore/Button/RadioButton#/bootstrap5) that shows you how to render the Radio Button in ASP.NET Core.
