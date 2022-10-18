@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Button Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Radio Button Component | Syncfusion
+description: Checkout and learn about getting started with ASP.NET Core Radio Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -147,3 +147,5 @@ To change the default Button to flat Button, set the [`cssClass`](https://help.s
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Radio Button Example](https://ej2.syncfusion.com/aspnetcore/Button/RadioButton#/bootstrap5) that shows you how to render the Radio Button in ASP.NET Core.
