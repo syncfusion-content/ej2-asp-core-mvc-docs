@@ -1,1 +1,0 @@
-@Html.EJS().Message("msg-default").Content("Please read the comments carefully").Render()

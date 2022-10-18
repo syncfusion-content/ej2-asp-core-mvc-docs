@@ -1,3 +1,0 @@
-<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    <ejs-fab id="fab" target="#target" position="FabPosition.BottomLeft" content="Add"></ejs-fab>
-</div>

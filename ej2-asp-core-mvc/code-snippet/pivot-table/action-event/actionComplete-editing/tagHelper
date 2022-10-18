@@ -1,4 +1,4 @@
-<ejs-pivotview id="PivotView" height="300" actionComplete="actionComplete">
+<ejs-pivotview id="PivotView" height="300" actionComplete:"actionComplete">
 <e-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-editSettings>
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
         <e-formatsettings>
@@ -21,7 +21,7 @@
 
 <script>
     function actionComplete(args) {
-        if (args.actionName == 'New record added' || args.actionName == 'Edited records saved') {
+        if (args.actionName == 'New record added' && args.actionName == 'Edited records saved') {
             // Triggers when the editing UI actions such as add and edit are completed.
         }
     }

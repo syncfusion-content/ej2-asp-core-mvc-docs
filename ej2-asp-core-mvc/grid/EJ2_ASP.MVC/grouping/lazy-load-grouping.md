@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lazy Load Grouping in Syncfusion ASP.NET MVC Grid Component
+title: Lazy Load Grouping in ##Platform_Name## Grid Component
 description: Learn here all about Lazy Load Grouping in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Lazy Load Grouping
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Lazy Load Grouping in ASP.NET MVC Grid Component
+# Lazy Load Grouping
 
 The lazy load grouping allows you to load grouped records to the Grid through the on-demand concept. So, you can use this feature to load a huge amount of grouped data to the Grid without any performance degradation.
 
@@ -105,37 +105,6 @@ return dm.RequiresCounts ? Json(new { result = groupedData == null ? DataSource 
 }
 
 ```
-
-## Lazy load grouping with infinite scrolling
-
-Infinite scrolling loads a huge amount of data without degrading the Grid's performance. By default, infinite scrolling is enabled only for the expanded grouped rows when lazy loading is enabled. Now, the Grid has an option to allow infinite scrolling for group caption rows. This is achieved by setting the [enableInfiniteScrolling](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableInfiniteScrolling) property as true when lazy loading is enabled in the grouped records.
-
-This is demonstrated in the following sample:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Lazy-load-scroll.cs" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load-grouping-scroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Lazy-load-scroll.cs" %}
-{% include code-snippet/grid/grouping/lazy-load-grouping-scroll/lazy-load-grouping-scroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Limitations for lazy load grouping
 

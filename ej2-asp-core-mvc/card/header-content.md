@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header Content in ##Platform_Name## Card Control | Syncfusion
-description: Learn here all about Header Content in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
+title: Header Content in ##Platform_Name## Card Component
+description: Learn here all about Header Content in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Header Content
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Header and Content in Card Control
+# Header and Content
 
 ## Header
 
@@ -50,6 +50,9 @@ Card header has an option for adding images in the header. It is aligned with ei
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/card/card-header/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/card/card-header/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -79,6 +82,9 @@ Content in Card holds texts, images, links and all possible HTML elements. It's 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/card/card-header-content/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/card/card-header-content/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -93,4 +99,3 @@ Content in Card holds texts, images, links and all possible HTML elements. It's 
 {% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swimlane and Grouping of Cards in Syncfusion ##Platform_Name## Kanban Component
+title: Swimlane in ##Platform_Name## Kanban Component
 description: Learn here all about Swimlane in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Swimlane
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Swimlane in ASP.NET MVC Kanban control
+# Swimlane
 
 Swimlanes are horizontal categorizations of cards on the Kanban board.  It is used for grouping of cards, which brings transparency to the workflow process.
 
@@ -26,9 +26,6 @@ Cards can be grouped based on `KeyField` and displayed in rows, which are separa
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/swimlane-row/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/swimlane-row/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -39,9 +36,6 @@ Cards can be grouped based on `KeyField` and displayed in rows, which are separa
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/swimlane-row/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/swimlane-row/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -68,9 +62,6 @@ Customize the swimlane row header text by using the `TextField` property mapped 
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/custom-row/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/custom-row/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -81,9 +72,6 @@ Customize the swimlane row header text by using the `TextField` property mapped 
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/custom-row/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/custom-row/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -103,9 +91,6 @@ You can customize the Kanban swimlane row by using the `Template` property, whic
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/template/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/template/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -116,9 +101,6 @@ You can customize the Kanban swimlane row by using the `Template` property, whic
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/template/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/template/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -142,9 +124,6 @@ Swimlane rows are rendered on descending order when using the `SortBy` property 
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/sorting/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/sorting/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -155,9 +134,6 @@ Swimlane rows are rendered on descending order when using the `SortBy` property 
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/sorting/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/sorting/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -181,9 +157,6 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/drag-and-drop/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/drag-and-drop/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -194,9 +167,6 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/drag-and-drop/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/drag-and-drop/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -216,9 +186,6 @@ You can render the empty swimlane row by enabling the `ShowEmptyRow` property. I
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/empty-row/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/empty-row/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -229,9 +196,6 @@ You can render the empty swimlane row by enabling the `ShowEmptyRow` property. I
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/empty-row/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/empty-row/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -259,9 +223,6 @@ In below demo, disabled on `ShowItemCount` property on rendering swimlane row wi
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/cards-count/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/cards-count/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -272,9 +233,6 @@ In below demo, disabled on `ShowItemCount` property on rendering swimlane row wi
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/cards-count/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/cards-count/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -302,9 +260,6 @@ By default, the `EnableFrozenRows` property is set as `false`. If you wish to sh
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/frozen-rows/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/frozen-rows/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -315,9 +270,6 @@ By default, the `EnableFrozenRows` property is set as `false`. If you wish to sh
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/swimlane/frozen-rows/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/swimlane/frozen-rows/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

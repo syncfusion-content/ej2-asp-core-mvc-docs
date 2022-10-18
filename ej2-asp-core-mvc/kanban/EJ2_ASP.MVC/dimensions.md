@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dimensions in Syncfusion ##Platform_Name## Kanban Component
+title: Dimensions in ##Platform_Name## Kanban Component
 description: Learn here all about Dimensions in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dimensions
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Kanban dimensions in ASP.NET MVC Kanban control
+# Kanban dimensions
 
 The Kanban dimensions refers to both height and width of the entire layout and it accepts three types of values.
 
@@ -30,9 +30,6 @@ When height and width of the Kanban are set to `auto`, it will try as hard as po
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dimensions/auto/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/dimensions/auto/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -43,9 +40,6 @@ When height and width of the Kanban are set to `auto`, it will try as hard as po
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dimensions/auto/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/dimensions/auto/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -69,9 +63,6 @@ The Kanban height and width will be rendered exactly as per the given pixel valu
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dimensions/pixel/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/dimensions/pixel/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -82,9 +73,6 @@ The Kanban height and width will be rendered exactly as per the given pixel valu
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dimensions/pixel/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/dimensions/pixel/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -108,9 +96,6 @@ When height and width of the Kanban are given in percentage, it will make the Ka
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dimensions/percentage/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/dimensions/percentage/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -121,9 +106,6 @@ When height and width of the Kanban are given in percentage, it will make the Ka
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/dimensions/percentage/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/dimensions/percentage/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

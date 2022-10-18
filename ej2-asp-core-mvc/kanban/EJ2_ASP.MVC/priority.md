@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Priority and Card Order in Syncfusion ##Platform_Name## Kanban Component
+title: Priority in ##Platform_Name## Kanban Component
 description: Learn here all about Priority in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Priority
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Card Order in ASP.NET MVC Kanban control
+# Card Order
 
 By default, the Kanban cards are initially placed and drop the card inside the columns based on JSON data orders.
 
@@ -47,9 +47,6 @@ Column B having Card D with priority value `5`. Dropped Card D between Card A an
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/priority/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/priority/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -60,9 +57,6 @@ Column B having Card D with priority value `5`. Dropped Card D between Card A an
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/priority/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/priority/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

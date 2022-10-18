@@ -107,8 +107,8 @@ firstPageTooltip | Go to first page
 lastPageTooltip | Go to last page
 nextPageTooltip | Go to next page
 previousPageTooltip | Go to previous page
-nextPagerTooltip | Go to next pager items
-previousPagerTooltip | Go to previous pager items
+nextPagerTooltip | Go to next pager
+previousPagerTooltip | Go to previous pager
 pagerDropDown | Items per page
 pagerAllDropDown | Items
 All | All

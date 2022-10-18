@@ -50,7 +50,7 @@ msbuild <ProjectName> /p:Configuration=Release /p:outdir="<output directory>"
 {% endhighlight %}
 {% endtabs %}
 
-you can find the published folder in this `<output directory>/_PublishedWebsites/<ProjectName>` location.
+you can find the published folder in this `<output directory>\_PublishedWebsites\<ProjectName>` location.
 
 Refer to the MSBuild [optional arguments](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-command-line-reference?view=vs-2022).
 

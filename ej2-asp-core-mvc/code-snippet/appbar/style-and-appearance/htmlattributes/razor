@@ -1,6 +1,0 @@
-@using Syncfusion.EJ2;
-@using Syncfusion.EJ2.Navigations;
-
-@(Html.EJS().AppBar("defaultAppBar").ColorMode(AppBarColor.Primary).ContentTemplate(@<div>
-    @Html.EJS().Button("defaultButtonMenu").CssClass("e-inherit").IconCss("e-icons e-home").Render()
-</div>).HtmlAttributes(ViewBag.HtmlAttribute).Render())

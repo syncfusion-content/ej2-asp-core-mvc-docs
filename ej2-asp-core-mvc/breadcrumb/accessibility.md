@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Breadcrumb Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Breadcrumb Component
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ##Platform_Name## Breadcrumb control
+# Accessibility
 
 The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. Breadcrumb provides built-in compliance with `WAI-ARIA` specifications. The `WAI-ARIA` support is achieved using the attributes such as `aria-label`and `aria-disabled`. It helps the people with disabilities by providing information about the widget for assistive technology in the screen readers. Breadcrumb component contains the `breadcrumb` role.
 
@@ -64,4 +64,4 @@ Navigate to the previous item also previous item in the popup of menu type overf
 {% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Breadcrumb/BreadcrumbSamples).
+

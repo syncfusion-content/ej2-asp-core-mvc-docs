@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Install Syncfusion ##Platform_Name## NuGet packages - Syncfusion
-description: Learn here about how to install Syncfusion ##Platform_Name## NuGet packages from Package manager and NuGet manager.
+title: Install Through Nuget Packages in ##Platform_Name## Component
+description: Learn here all about Install Through Nuget Packages in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Install Through Nuget Packages
 publishingplatform: ##Platform_Name##

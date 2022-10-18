@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Syncfusion ##Platform_Name## Carousel Control
+title: Accessibility in ##Platform_Name## Carousel Control
 description: Checkout and learn about accessibility in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Accessibility

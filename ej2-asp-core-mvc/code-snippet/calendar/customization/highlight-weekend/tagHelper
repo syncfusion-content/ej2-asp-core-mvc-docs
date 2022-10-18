@@ -1,7 +1,3 @@
-@{
-    var value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 15);
-}
-
 <ejs-calendar id="calendar" renderDayCell="highlightDate" value="@ViewBag.value"></ejs-calendar>
 
 <script>

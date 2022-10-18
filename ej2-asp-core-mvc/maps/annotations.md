@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotations in Syncfusion ##Platform_Name## Maps Component
+title: Annotations in ##Platform_Name## Maps Component
 description: Learn here all about Annotations in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Annotations
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Annotations in ##Platform_Name## Maps Component
+# Annotations
 
 <!-- markdownlint-disable MD013 -->
 

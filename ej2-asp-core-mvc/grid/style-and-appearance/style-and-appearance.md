@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style And Appearance in Syncfusion ##Platform_Name## Grid Component
+title: Style And Appearance in ##Platform_Name## Grid Component
 description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
@@ -24,30 +24,3 @@ Use the below CSS to customize the Grid root element.
 }
 
 ```
-
-You can modify the grid styling appearance by overriding the default CSS style of the Grid.
-
-In the following sample, the font family of grid content is changed to **cursive**, and the background color of rows, selected rows, alternate rows, and row hovering color is modified using the below CSS styles.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/style-and-appearance/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Style-and-appearance.cs" %}
-{% include code-snippet/grid/style-and-appearance/style-and-appearance.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/style-and-appearance/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Style-and-appearance.cs" %}
-{% include code-snippet/grid/style-and-appearance/style-and-appearance.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

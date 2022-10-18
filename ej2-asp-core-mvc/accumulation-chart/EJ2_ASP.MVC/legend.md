@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Syncfusion Accumulation Chart Component
+title: Legend in ##Platform_Name## Accumulation Chart Component
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Legend in ##Platform_Name## Accumulation Chart Component
+# Legend
 
 As like a chart, the legend is also available for accumulation charts, which gives information about the points. By default, the legend will be placed on the right, if the width of the chart is high or will be placed on the bottom, if the height of the chart is high. Other customization features regarding the legend element are same as the [`chart legend`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html). Here, the legend for a point can be collapsed by giving the empty string to the x value of the point.
 
@@ -318,33 +318,6 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% endhighlight %}
 {% highlight c# tabtitle="Arrow-page.cs" %}
 {% include code-snippet/chart/accumulation-charts/legend/arrow-page/arrow-page.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## Legend Item Padding
-
-The [`ItemPadding`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartLegendSettings.html#Syncfusion_EJ2_Charts_AccumulationChartLegendSettings_ItemPadding) property can be used to adjust the space between the legend items.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/legend/itempadding/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ItemPadding.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/itempadding/itempadding.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/legend/itempadding/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ItemPadding.cs" %}
-{% include code-snippet/chart/accumulation-charts/legend/itempadding/itempadding.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

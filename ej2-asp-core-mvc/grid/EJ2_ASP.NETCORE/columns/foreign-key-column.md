@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Foreign Key Column in Syncfusion ##Platform_Name## Grid Component
+title: Foreign Key Column in ##Platform_Name## Grid Component
 description: Learn here all about Foreign Key Column in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Foreign Key Column
@@ -194,36 +194,6 @@ We use UrlAdaptor concept to communicate with particular data source. UrlAdaptor
 {% endhighlight %}
 {% highlight c# tabtitle="binding.cs" %}
 {% include code-snippet/grid/how-to/binding-data/binding.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-## Enable multiple foreign key columns
-
-Multiple foreign key columns with editing options are enabled for the ASP.NET Core Grid component.
-
-In the following example, **Customer Name** and **Ship City** are foreign key columns that display the **ContactName** and **City** columns from foreign data.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/foreignkeycol-multiple/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Foreignkeycol-multiple.cs" %}
-{% include code-snippet/grid/columns/foreignkeycol-multiple/foreignkeycol-multiple.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/foreignkeycol-multiple/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Foreignkeycol-multiple.cs" %}
-{% include code-snippet/grid/columns/foreignkeycol-multiple/foreignkeycol-multiple.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

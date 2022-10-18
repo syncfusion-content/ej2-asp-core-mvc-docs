@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Chips Control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Chips Component
+description: Learn here all about Customization in Syncfusion ##Platform_Name## Chips component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Chip Customization in Chip Control
+# Chip Customization
 
 This section explains the customization of styles, leading icons, avatar, and trailing icons in Chip control.
 
@@ -29,6 +29,9 @@ The Chip control has the following predefined styles that can be defined using t
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/styles/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/chips/styles/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,6 +59,9 @@ You can add and customize the leading icon of chip using the `leadingIconCss` pr
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/leadingIcon/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/chips/leadingIcon/default.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -81,6 +87,9 @@ You can add and customize the avatar of chip using the `avatarIconCss` property.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/avatar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/chips/avatar/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,6 +117,9 @@ You can add and customize the avatar content of chip using the `avatarText` prop
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/avatarText/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/chips/avatarText/default.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -133,6 +145,9 @@ You can add and customize the trailing icon of chip using the `trailingIconCss` 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/trailing/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/chips/trailing/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -160,6 +175,9 @@ Outline chip has the border with the background transparent. It can be set using
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/outline/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/chips/outline/default.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -174,4 +192,4 @@ Outline chip has the border with the background transparent. It can be set using
 {% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Chips/ChipsSample).
+

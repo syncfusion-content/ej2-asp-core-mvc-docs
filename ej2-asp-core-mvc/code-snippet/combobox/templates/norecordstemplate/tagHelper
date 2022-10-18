@@ -1,10 +1,6 @@
-@{
-    var data = new string[] { };
-}
-
 <div class='control-wrapper'>
     <div style='padding-top:75px;'>
-        <ejs-combobox id="employees" dataSource="@data" placeholder="Select an employee" popupHeight="270px"
+        <ejs-combobox id="employees" dataSource="@ViewBag.data" placeholder="Select an employee" popupHeight="270px"
                           noRecordsTemplate="@Html.Raw("<span class='norecord'> NO DATA AVAILABLE</span>")">
             <e-combobox-fields value="Name"></e-combobox-fields>
         </ejs-combobox>

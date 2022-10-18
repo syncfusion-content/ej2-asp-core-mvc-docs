@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Marker Type in Syncfusion ##Platform_Name## Maps Component
+title: Marker Type in ##Platform_Name## Maps Component
 description: Learn here all about Marker Type in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Marker Type
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Marker types in ##Platform_Name## Maps Component
+# Marker types
 
 ## Add different types of markers
 
@@ -16,7 +16,7 @@ Different marker objects can be added to the Maps component using the marker set
 
 **Step 1**:
 
-Initialize the Maps component with marker settings. Here, a marker has been added with specified latitude and longitude of California by using the `DataSource` property. To customize the shape of the marker using the `Shape` property and change the border color and width of the marker using the `Border` property as mentioned in the following example.
+Initialize the Maps control with marker settings. Here, a marker has been added with specified latitude and longitude of California by using the `DataSource` property. To customize the shape of the marker using the `Shape` property and change the border color and width of the marker using the `Border` property as mentioned in the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

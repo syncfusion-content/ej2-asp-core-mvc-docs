@@ -1,21 +1,5 @@
-@{
-    List<object> items = new List<object>();
-    items.Add(new
-    {
-        text = "Paste"
-    });
-    items.Add(new
-    {
-        text = "Paste Text"
-    });
-    items.Add(new
-    {
-        text = "Paste Special"
-    });
-}
-
 <div class='e-btn-group'>
     <ejs-button id="cut" content="Cut"></ejs-button>
     <ejs-button id="copy" content="Copy"></ejs-button>
-   <ejs-splitbutton id="element" content="Paste" items="@items"></ejs-splitbutton>
+   <ejs-splitbutton id="element" content="Paste" items="@ViewBag.items"></ejs-splitbutton>
 </div>

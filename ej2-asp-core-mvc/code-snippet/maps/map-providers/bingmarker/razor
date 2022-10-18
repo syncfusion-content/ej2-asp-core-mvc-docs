@@ -1,23 +1,13 @@
 @using Syncfusion.EJ2;
 @using Syncfusion.EJ2.Maps;
-
-@Html.EJS().Maps("maps").Load("mapsLoad").Layers(l =>
-{
-    l.MarkerSettings(marker =>
+@Html.EJS().Maps("maps").Layers(l => l.LayerType('Bing').Key("// …bingMapKey").
+   {
+       .NavigationLineSettings(ns => {
+        ns.Visible(true).Latitude(new double[] { 34.060620, 40.724546})
+        .Longitude(new double[] { -118.330491, -73.850344 }).Color("blue").Angle(90)
+        .Width(5).Add();
+    }).MarkerSettings(marker =>
        {
            marker.Visible(true).DataSource(ViewBag.markerData).Add();
-       }).NavigationLineSettings(ns =>
-    {
-        ns.Visible(true).Latitude(new double[] { 34.060620, 40.724546 })
-        .Longitude(new double[] { -118.330491, -73.850344 }).Color("black").Angle(90)
-        .Width(2).DashArray("4").Add();
-    }).Add();
-}).Render()
-
-<script type="text/javascript">
-    function mapsLoad(args) {
-        args.maps.getBingUrlTemplate("https://dev.virtualearth.net/REST/V1/Imagery/Metadata/CanvasLight?output=json&uriScheme=https&key=?").then(function (url) {
-            args.maps.layers[0].urlTemplate = url;
-        });
-    }
-</script>
+       }).Add();
+   }).Render()

@@ -1,7 +1,7 @@
    <ejs-chart id="container" load="window.load" width="60%">
         <e-chart-primaryxaxis valueType="DateTime"></e-chart-primaryxaxis>
         <e-chart-legendsettings visible="false"></e-chart-legendsettings>
-        <e-chart-zoomsettings enableSelectionZooming="true" showToolbar= "true" toolbarItems="ViewBag.toolBarItems"></e-chart-zoomsettings>
+        <e-chart-zoomsettings enableSelectionZooming="true" toolbarItems="ViewBag.toolBarItems"></e-chart-zoomsettings>
         <e-series-collection>
             <e-series xName="x" width=2 yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Area"></e-series>
         </e-series-collection>

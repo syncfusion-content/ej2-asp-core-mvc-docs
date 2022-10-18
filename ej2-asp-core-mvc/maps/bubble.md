@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bubble in Syncfusion ##Platform_Name## Maps Component
+title: Bubble in ##Platform_Name## Maps Component
 description: Learn here all about Bubble in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Bubble
@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Bubbles in ##Platform_Name## Maps Component
+# Bubbles
 
-Bubbles in the Maps component represent the underlying data values of the Maps. It can be scattered throughout the Maps shapes that contain values in the data source. Bubbles are enabled by setting the `Visible` property of `MapsBubble` to **true**. To add bubbles to the Maps, bind the data source to the `DataSource` property of `MapsBubble` and set the field name, that contains the numerical data, in the data source to the `ValuePath` property.
+Bubbles in the Maps control represent the underlying data values of the Maps. It can be scattered throughout the Maps shapes that contain values in the data source. Bubbles are enabled by setting the `Visible` property of `MapsBubble` to **true**. To add bubbles to the Maps, bind the data source to the `DataSource` property of `MapsBubble` and set the field name, that contains the numerical data, in the data source to the `ValuePath` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

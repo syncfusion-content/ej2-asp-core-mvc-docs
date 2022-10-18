@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State Persistence in Syncfusion ##Platform_Name## Maps Component
+title: State Persistence in ##Platform_Name## Maps Component
 description: Learn here all about State Persistence in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: State Persistence

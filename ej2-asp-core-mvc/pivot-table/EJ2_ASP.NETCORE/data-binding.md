@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Syncfusion Pivot Table Component
+title: Data Binding in ##Platform_Name## Pivot Table Component
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Binding in ##Platform_Name## Pivot Table Component
+# Data Binding
 
 ## JSON
 
@@ -354,35 +354,6 @@ User can use `WebApiAdaptor` to bind pivot table with Web API created using ODat
 
 
 
-### Querying in Data Manager
-
-By default, the data manager retrieves all the data from the provider which is mapped in it. The data from the provider can be filtered, sorted, paged, etc. by setting the own query in `defaultQuery` property in the data manager instance.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/data-binding/ODataAdaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Web-api.cs" %}
-{% include code-snippet/pivot-table/data-binding/ODataAdaptor/web-api.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/data-binding/ODataAdaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Web-api.cs" %}
-{% include code-snippet/pivot-table/data-binding/ODataAdaptor/web-api.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Mapping
 
 One can define field information like alias name (caption), data type, aggregation type, show and hide subtotals etc. using the [`FieldMapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_FieldMapping) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) tag. The available options are,
@@ -405,7 +376,6 @@ One can define field information like alias name (caption), data type, aggregati
 * `showEditIcon` - It is to show or hide the edit icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This edit icon is used to modify caption, formula, and format of a specified calculated field at runtime. The default value is **true**.
 * `allowDragAndDrop` - It is to restrict specific field's button from being dragged on runtime in the grouping bar and field list UI. This will prevent from altering the current report. The default value is **true**.
 * `dataType` - It is to specify the type of the field like 'string', 'number', 'datetime', 'date', and 'boolean'.
-* `groupName` - It is to display fields in the field list UI by grouping them under the desired folder name.
 
 The main purpose of these mapping options is to configure each field that is not part of the initial pivot report. Even if any field that is part of this mapping is defined here, the value set in the initial report will have the highest preceding.
 

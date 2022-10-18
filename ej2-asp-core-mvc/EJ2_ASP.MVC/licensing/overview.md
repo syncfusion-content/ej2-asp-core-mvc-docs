@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion license and unlock keys - Syncfusion
-description: Learn here about the Syncfusion license and unlock keys and difference between license and unlock keys.
+title: Overview in Syncfusion ##Platform_Name## Component
+description: Learn here all about Overview in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Overview
 publishingplatform: ##Platform_Name##
@@ -18,10 +18,9 @@ Please note that this license key is different from the installer unlock key tha
 
 Following licensing error will be shown if the license key is not registered in your projects, while using assemblies from evaluation installer or from the [nuget.org](https://www.nuget.org/packages?q=syncfusion)
 
-> This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/overview) for more information.
-
+> This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
 
 ## See Also
 
-* [How to Generate Syncfusion ASP .NET MVC EJ2 License Key?](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-generate)
-* [How to Register Syncfusion License Key in ASP .NET MVC EJ2 Application?](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application)
+* [How to Generate Syncfusion ASP.NET MVC License Key?](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/license-key-generation)
+* [How to Register Syncfusion License Key in the Application?](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/license-key-registration)

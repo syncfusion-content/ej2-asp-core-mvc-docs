@@ -1,4 +1,4 @@
 @using Syncfusion.EJ2;
 @Html.EJS().Maps("maps").Layers(l=> {
-    l.UrlTemplate("http://a.tile.openstreetmap.org/level/tileX/tileY.png").Add();
+    l.LayerType(Syncfusion.EJ2.Maps.ShapeLayerType.OSM).UrlTemplate("http://a.tile.openstreetmap.org/level/tileX/tileY.png").Add();
 }).Render()

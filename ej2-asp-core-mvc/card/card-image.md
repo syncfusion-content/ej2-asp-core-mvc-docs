@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Card Image in ##Platform_Name## Card Control | Syncfusion
-description: Learn here all about Card Image in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
+title: Card Image in ##Platform_Name## Card Component
+description: Learn here all about Card Image in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Card Image
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Images and Divider in Card Control
+# Images and Divider
 
 ## Images
 
@@ -42,6 +42,9 @@ Card image is supported to include a title or caption for the image. By default,
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/card/card-img/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/card/card-img/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -71,6 +74,9 @@ Divider used to separate the elements inside the card. You can add divider insid
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/card/card-sep/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/card/card-sep/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -88,8 +94,6 @@ Divider used to separate the elements inside the card. You can add divider insid
 
 ![CSS Card Control with images and divider](./images/card-divider.PNG)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Card/CardUGSample).
-
-## See also
+## See Also
 
 * [How to customize the card image title position](./how-to/customize-the-card-image-title-position)

@@ -1,7 +1,3 @@
-@{
-    var dataSource = new string[] { "bottom-left", "top-left", "top-right", "bottom-right" };
-}
-
 <div id="container">
     <!--element which is going to render the Card-->
     <div class="e-card">
@@ -16,7 +12,7 @@
 </div>
     
 <div style="Margin: 5px 0;width:300px">
-    <ejs-dropdownlist id="title_position" dataSource="@dataSource" placeholder="Select Position" change="changed"></ejs-dropdownlist>
+    <ejs-dropdownlist id="title_position" dataSource="@ViewBag.dataSource" placeholder="Select Position" change="changed"></ejs-dropdownlist>
 </div>
 
 <style>

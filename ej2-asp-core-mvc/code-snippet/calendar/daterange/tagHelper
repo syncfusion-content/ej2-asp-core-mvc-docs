@@ -1,7 +1,1 @@
-@{
-    var minDate= new DateTime(DateTime.Now.Year,DateTime.Now.Month,07);
-    var maxDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 27);
-    var value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 14);
-}
-
-<ejs-calendar id="calendar" value="value" min="minDate" max="maxDate"></ejs-calendar>
+<ejs-calendar id="calendar" value="ViewBag.value" min="ViewBag.minDate" max="ViewBag.maxDate"></ejs-calendar>

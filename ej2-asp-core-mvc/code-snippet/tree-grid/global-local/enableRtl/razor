@@ -46,8 +46,8 @@
                 'lastPageTooltip': 'انتقل إلى الصفحة الأخيرة',
                 'nextPageTooltip': 'انتقل إلى الصفحة التالية',
                 'previousPageTooltip': 'انتقل إلى الصفحة السابقة',
-                'nextPagerTooltip': 'انتقل إلى عناصر بيجر التالية',
-                'previousPagerTooltip': 'للذهاب إلى عناصر بيجر السابقة'
+                'nextPagerTooltip': 'الذهاب إلى بيجر المقبل',
+                'previousPagerTooltip': 'الذهاب إلى بيجر السابقة'
             },
             "dropdowns": {
                 "noRecordsTemplate": "لا توجد سجلات"

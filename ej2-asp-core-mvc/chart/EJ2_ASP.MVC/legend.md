@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend and Customization in ##Platform_Name## Syncfusion Chart Component
+title: Legend and Customization in ##Platform_Name## Chart Component
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
@@ -456,33 +456,6 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% endhighlight %}
 {% highlight c# tabtitle="Arrow-page.cs" %}
 {% include code-snippet/chart/axis/legend/arrow-page/arrow-page.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## Legend Item Padding
-
-The [`ItemPadding`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartLegendSettings.html#Syncfusion_EJ2_Charts_ChartLegendSettings_ItemPadding) property can be used to adjust the space between the legend items.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/axis/legend/itempadding/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ItemPadding.cs" %}
-{% include code-snippet/chart/axis/legend/itempadding/itempadding.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/axis/legend/itempadding/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ItemPadding.cs" %}
-{% include code-snippet/chart/axis/legend/itempadding/itempadding.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

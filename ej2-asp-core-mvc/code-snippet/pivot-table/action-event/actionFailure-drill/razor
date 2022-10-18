@@ -15,7 +15,7 @@ values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("
 
 <script>
     function actionFailure(args) {
-        if (args.actionName == 'Drill down' || args.actionName == 'Drill up') {
+        if (args.actionName == 'Drill down' && args.actionName == 'Drill up') {
             // Triggers when the current UI action fails to achieve the desired result.
         }
     }

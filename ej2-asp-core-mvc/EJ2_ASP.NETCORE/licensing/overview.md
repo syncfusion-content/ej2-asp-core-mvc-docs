@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion license and unlock keys - Syncfusion
-description: Learn here about the Syncfusion license and unlock keys and difference between license and unlock keys.
+title: Overview in Syncfusion ##Platform_Name## Component
+description: Learn here all about overview in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Overview
 publishingplatform: ##Platform_Name##
@@ -28,5 +28,5 @@ Please note that this license key is different from the installer unlock key tha
 
 ## See Also
 
-* [How to Generate Syncfusion ASP.NET Core License Key?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-generate)
-* [How to Register Syncfusion License Key in ASP.NET Core Application?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application)
+* [How to Generate Syncfusion ASP.NET Core License Key?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-generation/)
+* [How to Register Syncfusion License Key in ASP.NET Core Application?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-registration/)

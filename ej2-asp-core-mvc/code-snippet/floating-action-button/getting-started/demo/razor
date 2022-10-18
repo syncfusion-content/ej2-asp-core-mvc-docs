@@ -1,3 +1,0 @@
-<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    @Html.EJS().Fab("fab").Target("#target").Content("Add").Render()
-</div>

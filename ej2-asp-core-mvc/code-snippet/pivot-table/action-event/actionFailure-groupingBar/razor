@@ -15,7 +15,7 @@ values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("
 
 <script>
     function actionFailure(args) {
-        if (args.actionName == 'Sort field' || args.actionName == 'Filter field') {
+        if (args.actionName == 'Sort field' && args.actionName == 'Filter field') {
             // Triggers when the current UI action fails to achieve the desired result.
         }
     }

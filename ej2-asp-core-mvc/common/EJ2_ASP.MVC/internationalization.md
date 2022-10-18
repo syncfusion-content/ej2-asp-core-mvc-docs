@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Control | Syncfusion
+title: Globalization in ##Platform_Name## Control
 description: Learn here all about Globalization in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Globalization in ##Platform_Name## Control
+# Globalization
 
  Globalization is the combination of adapting the control to various languages by parsing and formatting the date or numbers (`Internationalization (L18N)`), adding cultural-specific customizations and translating the text (`Localization (L10N)`). The `American English (en-US)` locale is set as default _culture_ and `USD` is set as default _currencyCode_ for all Syncfusion ASP.NET MVC controls.
 
@@ -28,7 +28,7 @@ It requires the following [CLDR](http://cldr.unicode.org/) data to be loaded usi
 
 ### Installing CLDR Data and enable localization in schedule control
 
-1.CLDR data is available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules/cldr-data`.
+1.CLDR data is available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules\cldr-data`.
 
 {% tabs %}
 {% highlight c# tabtitle="CMD" %}
@@ -40,8 +40,8 @@ npm install cldr-data
 
 2.Once the `CLDR-Data` installed create a folder `cldr-data` inside the `Content` folder. Then create the folder directory like shown below in the structure inside the `Content` folder.
 
-* `Content/cldr-data/supplemental`
-* `Content/cldr-data/main`
+* `Content\cldr-data\supplemental`
+* `Content\cldr-data\main`
 
 3.The files named as below are required to setup the specific culture to the Schedule control.
 
@@ -51,9 +51,9 @@ npm install cldr-data
 * timeZoneNames.json
 * ca-islamic.json
 
-4.The file named `numberingSystems.json` is available in the location `node_modules/cldr-data/supplemental` which is common for all the cultures. Now, you can move this file to the location `Content/cldr-data/supplemental`.
+4.The file named `numberingSystems.json` is available in the location `node_modules\cldr-data\supplemental` which is common for all the cultures. Now, you can move this file to the location `Content\cldr-data\supplemental`.
 
-5.The other required files mentioned above are available in the location `node_modules/cldr-data/main/culture_code`. In this location every culture has the culture files inside the folder named as its language culture code. For example if the German culture is loaded, then the German culture files could be found inside the location `node_modules/cldr-data/main/fr-CH`. Now, create a folder named `fr-CH` inside the location `Content/cldr-data/main` and move the files inside it.
+5.The other required files mentioned above are available in the location `node_modules\cldr-data\main\culture_code`. In this location every culture has the culture files inside the folder named as its language culture code. For example if the German culture is loaded, then the German culture files could be found inside the location `node_modules\cldr-data\main\fr-CH`. Now, create a folder named `fr-CH` inside the location `Content\cldr-data\main` and move the files inside it.
 
 ![Moved cldr data to application](./images/cldr-structure.png)
 
@@ -159,7 +159,7 @@ public class AppointmentData
 
 ![Globalization schedule control](./images/schedule-locale.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization). Refer this documentation to [localizing the static scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Localization/Localization-schedule-cldr). Refer this documentation to [localizing the static scheduler text](../schedule/localization#localizing-the-static-scheduler-text)
 
 ## Changing Global Culture and Currency Code
 

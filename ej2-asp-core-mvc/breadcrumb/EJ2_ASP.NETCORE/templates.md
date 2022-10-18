@@ -91,5 +91,3 @@ The specific breadcrumb item can be customizable using itemTemplate with conditi
 {% endif %}
 
 ![Customizing Specific Template in ASP.NET Core Breadcrumb](images/breadcrumb-specific-item-template.png)
-
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Breadcrumb/OverflowandTemplateSample).

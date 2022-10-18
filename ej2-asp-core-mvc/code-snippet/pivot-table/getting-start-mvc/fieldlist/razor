@@ -1,6 +1,6 @@
 @model List<PivotTableSample.Controllers.PivotData>
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true).AllowLabelFilter(true).AllowValueFilter(true)
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)Model).ExpandAll(false).EnableSorting(true).AllowLabelFilter(true).AllowValueFilter(true)
 .FormatSettings(formatsettings => 
 { 
 	formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add(); 

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using EJ2_Core_Application.Models;
 using Newtonsoft.Json;
+using Syncfusion.EJ2.Charts;
 
 namespace EJ2_Core_Application.Controllers
 {
@@ -13,19 +14,19 @@ namespace EJ2_Core_Application.Controllers
     {
         public IActionResult Index()
         {
-            ViewBag.africeMap = GetAfricaMap();
-            ViewBag.africaMapShape = GetAfricaShape();
+            ViewBag.usMap = GetUSMap();
+            ViewBag.usMapShape = GetUSMapShape();
             return View();
         }
-        public object GetAfricaMap()
+        public object GetUSMap()
         {
-            string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/Africa.json");
+            string allText = System.IO.File.ReadAllText("./wwwroot/scripts/MapsData/USA.json");
             return JsonConvert.DeserializeObject(allText);
         }
 		
-        public object GetAfricaShape()
+        public object GetUSMapShape()
         {
-            string allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/Africa.json"));
+            string allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/USA.json"));
             return JsonConvert.DeserializeObject(allText, typeof(object));
         }
     }

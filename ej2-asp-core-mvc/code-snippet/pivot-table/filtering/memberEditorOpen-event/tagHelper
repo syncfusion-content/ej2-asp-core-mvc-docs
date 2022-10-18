@@ -19,7 +19,7 @@
     function memberEditorOpen(args) {
          if (args.fieldName == 'Country') {
             args.fieldMembers = args.fieldMembers.filter((key) => {
-                return (key.actualText == 'France' || key.actualText == 'Germany')
+                return (key.id == 'France' || key.id == 'Germany')
             });
        }
     }

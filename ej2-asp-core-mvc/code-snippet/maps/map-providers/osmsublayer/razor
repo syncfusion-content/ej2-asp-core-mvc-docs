@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2;
 @Html.EJS().Maps("maps").Layers(l =>
    {
-       l.UrlTemplate("http://a.tile.openstreetmap.org/level/tileX/tileY.png").Add();
-       l.ShapeSettings(s => s.Fill("blue")).ShapeData(ViewBag.africaMapShape).Type(Syncfusion.EJ2.Maps.Type.SubLayer).Add();
+       l.LayerType("OSM").Add();
+       l.ShapeSettings(s => s.Fill("blue")).ShapeData(ViewBag.usMapShape).Type(Syncfusion.EJ2.Maps.Type.SubLayer).Add();
    }).Render()

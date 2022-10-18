@@ -1,4 +1,4 @@
-<ejs-pivotview id="PivotView" height="300" actionFailure="actionFailure">
+<ejs-pivotview id="PivotView" height="300" actionFailure:"actionFailure">
 <e-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog"></e-editSettings>
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
         <e-formatsettings>
@@ -21,7 +21,7 @@
 
 <script>
     function actionFailure(args) {
-        if (args.actionName == 'Add new record' || args.actionName == 'Edit record') {
+        if (args.actionName == 'Add new record' && args.actionName == 'Edit record') {
             // Triggers when the current UI action fails to achieve the desired result.
         }
     }

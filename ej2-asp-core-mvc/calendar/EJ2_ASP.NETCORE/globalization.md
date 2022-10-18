@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Calendar Control | Syncfusion
+title: Globalization in ##Platform_Name## Calendar Component
 description: Learn here all about Globalization in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Globalization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization in ##Platform_Name## Calendar Control
+# Globalization
 
 Globalization is the combination of adapting the component to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization/) and also by adding cultural specific customizations and translating the text [localization](../common/localization/).
 
@@ -25,9 +25,9 @@ To go with the different culture other than `English`, follow the below steps.
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data/`.
+Once the package installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data\`.
 
-In ASP.NET Core, the static file contents should be present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `/wwwroot/scripts/cldr-data` location like the following code examples.
+In ASP.NET Core, the static file contents should be present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `\wwwroot\scripts\cldr-data` location like the following code examples.
 
 ```typescript
 

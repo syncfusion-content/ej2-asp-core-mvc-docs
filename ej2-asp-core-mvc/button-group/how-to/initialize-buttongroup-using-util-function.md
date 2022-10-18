@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Buttongroup Using Util Function in ##Platform_Name## Button Group | Syncfusion
-description: Learn here all about how to initialize Buttongroup using Util function in Syncfusion ##Platform_Name## Button Group control of syncfusion and more.
+title: Initialize Buttongroup Using Util Function in ##Platform_Name## Button Group Component
+description: Learn here all about how to initialize Buttongroup using Util function in Syncfusion ##Platform_Name## Button Group component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Initialize Buttongroup Using Util Function
 publishingplatform: ##Platform_Name##
@@ -35,6 +35,9 @@ The following example illustrates how to create ButtonGroup using `createButtonG
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/basic-util/demo/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/button-group/basic-util/demo/default.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -49,6 +52,6 @@ The following example illustrates how to create ButtonGroup using `createButtonG
 {% endtabs %}
 {% endif %}
 
-> If null value is passed in button options, then that particular button will be skipped from processing in `createButtonGroup` util function.
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupHowToSample).
+
+> If null value is passed in button options, then that particular button will be skipped from processing in `createButtonGroup` util function.

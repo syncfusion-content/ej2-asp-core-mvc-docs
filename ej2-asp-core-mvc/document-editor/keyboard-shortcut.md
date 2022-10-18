@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard Shortcut in ##Platform_Name## Document Editor Component | Syncfusion
+title: Keyboard Shortcut in ##Platform_Name## Document Editor Component
 description: Learn here all about keyboard shortcut in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Keyboard Shortcut
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Keyboard Shortcuts in Document Editor Component
+# Keyboard Shortcuts
 
 ## Text formatting
 
@@ -41,7 +41,6 @@ The following table lists the default keyboard shortcuts for formatting the para
 |Ctrl + 0 | No spacing is applied before the selected paragraphs.|
 |Ctrl + M | Increases the left indent of selected paragraphs by a factor of 36 points.|
 |Ctrl + Shift + M | Decreases the left indent of selected paragraphs by a factor of 36 points.|
-|Ctrl + * | Show/Hide the hidden characters like spaces, tab, paragraph marks, and breaks.|
 
 ## Clipboard
 
@@ -131,4 +130,4 @@ The following table lists the default keyboard shortcuts for formatting the para
 
 ## See Also
 
-* [How to override the keyboard shortcuts](../document-editor/how-to/override-the-keyboard-shortcuts).
+* [How to override the keyboard shortcuts](../document-editor/how-to)

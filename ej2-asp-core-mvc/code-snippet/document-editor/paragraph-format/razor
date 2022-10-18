@@ -40,10 +40,6 @@
                 case 'ClearFormat':
                     documenteditor.editor.clearFormatting();
                     break;
-                case 'ShowParagraphMark':
-                    //Show or hide the hidden characters like spaces, tab, paragraph marks, and breaks.
-                    documenteditor.documentEditorSettings.showHiddenMarks = !documenteditor.documentEditorSettings.showHiddenMarks;
-                    break;
             }
         }
         //Change the line spacing of selected or current paragraph
@@ -76,7 +72,7 @@
         function onSelectionChange() {
             if (documenteditor.selection) {
                 var paragraphFormat = documenteditor.selection.paragraphFormat;
-                var toggleBtnId = ['AlignLeft', 'AlignCenter', 'AlignRight', 'Justify', 'ShowParagraphMark'];
+                var toggleBtnId = ['AlignLeft', 'AlignCenter', 'AlignRight', 'Justify'];
                 for (var i = 0; i < toggleBtnId.length; i++) {
                     var toggleBtn = document.getElementById(
                         toggleBtnId[i]
@@ -93,9 +89,6 @@
                         .classList.add('e-btn-toggle');
                 } else {
                     document.getElementById('Justify').classList.add('e-btn-toggle');
-                }
-                if(documenteditor.documentEditorSettings.showHiddenMarks) {
-                    document.getElementById('ShowParagraphMark').classList.add('e-btn-toggle');
                 }
                 // #endregion
             }
@@ -141,12 +134,6 @@
                     prefixIcon: 'e-de-icon-ClearAll',
                     tooltipText: 'ClearFormatting',
                     id: 'ClearFormat',
-                },
-                { type: 'Seperator' },
-                {
-                    prefixIcon: 'e-de-e-paragraph-mark e-icons',
-                    tooltipText: 'Show the hidden characters like spaces, tab, paragraph marks, and breaks.(Ctrl + *)',
-                    id: 'ShowParagraphMark',
                 }
             ],
         });

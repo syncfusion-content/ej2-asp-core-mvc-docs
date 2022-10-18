@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in Syncfusion ##Platform_Name## Kanban Component
+title: Data Binding in ##Platform_Name## Kanban Component
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data binding in ASP.NET MVC Kanban component
+# Data binding
 
 The Kanban uses `DataManager`, which supports both RESTful data service binding and list binding. The `DataSource`property of Kanban can be assigned either with the instance of `DataManager` or List, as it supports the following two data binding methods:
 
@@ -29,9 +29,6 @@ To bind local list data to the Kanban, you can simply assign a list to the `Data
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/data-binding/local-data/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/data-binding/local-data/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -42,9 +39,6 @@ To bind local list data to the Kanban, you can simply assign a list to the `Data
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/data-binding/local-data/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/data-binding/local-data/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

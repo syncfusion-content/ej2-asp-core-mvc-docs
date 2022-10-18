@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable Ripple in ##Platform_Name## Button Group Control | Syncfusion
-description: Learn here all about how to enable Ripple in Syncfusion ##Platform_Name## Button Group control of Syncfusion Essential JS 2 and more.
+title: Enable Ripple in ##Platform_Name## Button Group Component
+description: Learn here all about how to enable Ripple in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Enable Ripple
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Enable ripple in Button Group Control
+# Enable ripple
 
 Ripple can be enabled by importing `rippleEffect` method from `ej2-base` and initialize rippleEffect with `.e-btn-group` element, and selector as `e-btn`.
 
@@ -18,6 +18,9 @@ Ripple can be enabled by importing `rippleEffect` method from `ej2-base` and ini
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/ripple/demo/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/button-group/ripple/demo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,4 +36,3 @@ Ripple can be enabled by importing `rippleEffect` method from `ej2-base` and ini
 {% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupHowToSample).

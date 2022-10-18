@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Color Mapping in Syncfusion ##Platform_Name## Maps Component
+title: Color Mapping in ##Platform_Name## Maps Component
 description: Learn here all about Color Mapping in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Color Mapping
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Color Mapping in ##Platform_Name## Maps Component
+# Color Mapping
 
 Color mapping is used to customize the shape colors based on the given values. It has three types.
 

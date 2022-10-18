@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Syncfusion ##Platform_Name## Syncfusion Maps Component
+title: Legend in ##Platform_Name## Maps Component
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Legend in ##Platform_Name## Maps Component
+# Legend
 
 A Legend is a visual representation of the symbols used on the Maps. It can be represented in various colors, shapes or other identifiers based on the data and provides valuable information for interpreting what the Maps are displaying. It explains what each symbol in the Maps represents. Legends are enabled by setting the `Visible` property of `MapsLegendSettings` to **true**.
 
@@ -480,32 +480,3 @@ To enable legend for marker by setting the `Visible` property of `MapsLegendSett
 
 
 ![Enable legend for marker](./images/Legend/legend-marker.PNG)
-
-### Imitate/Map marker shape to the legend shape
-
-To imitate or map the marker shape with its legend item shape, set the `UseMarkerShape` property to **true** in the `MapsLegendSettings` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/maps/markers/marker-legend/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="MarkerLegend.cs" %}
-{% include code-snippet/maps/markers/marker-legend/marker-legend.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/maps/markers/marker-legend/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Marker-legend.cs" %}
-{% include code-snippet/maps/markers/marker-legend/marker-legend.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-![Marker shape mapped to legend items shape](./images/Legend/marker-legend-shape.PNG)

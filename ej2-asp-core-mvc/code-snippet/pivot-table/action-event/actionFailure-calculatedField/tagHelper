@@ -2,7 +2,7 @@
 @{var sold = "\"" + "Sum(Sold)" + "\"";}
 @{ var totalPrice = amount + "+" + sold;}
 
-<ejs-pivotview id="PivotView" height="300" allowCalculatedField="true" showFieldList="true" actionFailure="actionFailure">
+<ejs-pivotview id="PivotView" height="300" allowCalculatedField="true" showFieldList="true" actionFailure:"actionFailure">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
         <e-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>

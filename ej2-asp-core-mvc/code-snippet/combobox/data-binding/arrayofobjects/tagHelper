@@ -1,10 +1,6 @@
-@{
-    var data = new Vegetables().VegetablesList();
-}
-
 <div class="control-wrapper">
     <div id="default" style='padding-top:75px;'>
-        <ejs-combobox id="vegetable" dataSource="@data" placeholder="Select a vegetable" popupHeight="220px">
+        <ejs-combobox id="vegetable" dataSource="@ViewBag.data" placeholder="Select a vegetable" popupHeight="220px">
             <e-combobox-fields value="Vegetable"></e-combobox-fields>
         </ejs-combobox>
     </div>

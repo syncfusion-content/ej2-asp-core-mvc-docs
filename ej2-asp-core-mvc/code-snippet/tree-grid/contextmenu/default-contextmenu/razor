@@ -8,7 +8,7 @@
           new List<object>() { "SortAscending",
               "SortDescending", "Edit", "Delete",
               "Save", "Cancel", "PdfExport", "ExcelExport", "CsvExport",
-              "FirstPage", "PrevPage", "LastPage", "NextPage", "Indent", "Outdent"
+              "FirstPage", "PrevPage", "LastPage", "NextPage"
           })
       .Columns(col =>
        {
@@ -19,4 +19,4 @@
          col.Field("Duration").HeaderText("Duration").Width(80).EditType("numericedit")
                   .TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 
-       }).ChildMapping("Children").SelectedRowIndex(2).TreeColumnIndex(1).Render())
+       }).ChildMapping("Children").TreeColumnIndex(1).Render())

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessiblility in Syncfusion ##Platform_Name## Kanban Component
+title: Accessiblility in ##Platform_Name## Kanban Component
 description: Learn here all about Accessiblility in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessiblility
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ASP.NET MVC Kanban component
+# Accessibility
 
 ## Keyboard interaction
 
@@ -45,9 +45,6 @@ Disables all the functionalities in the Kanban board performed using keyboard by
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/cards/multiple-selection/datasource.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/cards/multiple-selection/controller.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -58,9 +55,6 @@ Disables all the functionalities in the Kanban board performed using keyboard by
 {% endhighlight %}
 {% highlight c# tabtitle="Datasource.cs" %}
 {% include code-snippet/kanban/cards/multiple-selection/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/kanban/cards/multiple-selection/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Label And Size in ##Platform_Name## Radio Button Component | Syncfusion
+title: Label And Size in ##Platform_Name## Radio Button Component
 description: Learn here all about Label And Size in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Label And Size
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Label and Size in Radio Button Component
+# Label and Size
 
 This section explains the different sizes and labels.
 
@@ -41,7 +41,7 @@ This reduces the manual addition of label for RadioButton. You can customize the
 {% endtabs %}
 {% endif %}
 
-![Radio Button Label and Size](images/radiobutton-label.png)
+
 
 ## Size
 
@@ -70,7 +70,7 @@ The different RadioButton sizes available are default and small. To reduce the s
 {% endtabs %}
 {% endif %}
 
-![Radio Button Size](images/radiobutton-size.png)
+
 
 ## See Also
 

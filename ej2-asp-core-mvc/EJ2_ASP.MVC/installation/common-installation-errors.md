@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation Errors in ##Platform_Name## - Syncfusion
-description: Learn here about the common installation errors and solution to those errors in Syncfusion ##Platform_Name## Components installation.
+title: Common Installation Errors in ##Platform_Name## Component
+description: Learn here all about Common Installation Errors in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common Installation Errors
 publishingplatform: ##Platform_Name##
@@ -26,7 +26,7 @@ This article describes the most common installation errors, as well as the cause
 
 **Error Message:** Sorry,the provided unlock key is a trial unlock key and cannot be used to unlock the licensed version of our Essential Studio for ASP . NET MVC installer.
 
-![Installation Unlock Error](images/installation-error-1.png)
+![Installation Unlock Error](images\installation-error-1.png)
 
 **Reason** <br /> You are attempting to use a Trial unlock key to unlock the licensed installer.
 
@@ -38,7 +38,7 @@ This article describes the most common installation errors, as well as the cause
 
 ***Online Installer***
 
-![Installation License Expired Error](images/installation-error-2.png)
+![Installation License Expired Error](images\installation-error-2.png)
 
 **Reason** <br /> This error message will appear if your license has expired.
 
@@ -58,11 +58,11 @@ This article describes the most common installation errors, as well as the cause
 
 ***Offline installer***
 
-![Installation Offline Installer Error](images/installation-error-3.png)
+![Installation Offline Installer Error](images\installation-error-3.png)
 
 ***Online installer***
 
-![Installation Online Installer Error](images/installation-error-4.png)
+![Installation Online Installer Error](images\installation-error-4.png)
 
 **Reason** <br /> The following are possible causes of this error:
 
@@ -88,7 +88,7 @@ This article describes the most common installation errors, as well as the cause
 
 **Error Message:** Another installation is in progress. You cannot start this installation without completing all other currently active installations. Click cancel to end this installer or retry to attempt after currently active installation completed to install again.
 
-![Installation Error Another MSI Running](images/installation-error-5.png)
+![Installation Error Another MSI Running](images\installation-error-5.png)
 
 **Reason** <br /> You are trying to install when another installation is already running in your machine.
 
@@ -100,7 +100,7 @@ This article describes the most common installation errors, as well as the cause
 
 3. Select the msiexec.exe and click **End Task**.
 
-![Installation Error MSIEXEC Kill](images/installation-error-6.png)
+![Installation Error MSIEXEC Kill](images\installation-error-6.png)
 
 ## Unable to install due to controlled folder access
 
@@ -108,13 +108,13 @@ This article describes the most common installation errors, as well as the cause
 
 **Error Message:** Controlled folder access seems to be enabled in your machine. The provided install or samples location (e.g., Public Documents) is protected by the controlled folder access settings.
 
-![Installation Offline Installer Error Controlled Folder Access](images/installation-error-7.png)
+![Installation Offline Installer Error Controlled Folder Access](images\installation-error-7.png)
 
 ***Online:***
 
 **Error Message:** Controlled folder access seems to be enabled in your machine. The provided install, samples, or download location (e.g., Public Documents) is protected by the controlled folder access settings.
 
-![Installation Online Installer Error Controlled Folder Access](images/installation-error-8.png)
+![Installation Online Installer Error Controlled Folder Access](images\installation-error-8.png)
 
 **Reason** <br /> You have enabled controlled folder access settings on your computer.
 

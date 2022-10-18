@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row And Column in ##Platform_Name## Syncfusion Pivot Table Component
+title: Row And Column in ##Platform_Name## Pivot Table Component
 description: Learn here all about Row And Column in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row And Column
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and Column in ##Platform_Name## Pivot Table Component
+# Row and Column
 
 ## Width and Height
 
@@ -249,42 +249,7 @@ Allows end user to wrap the cell content to the next line when it exceeds the bo
 
 ![output](images/textwrap.png)
 
-## Text Align
-
-Allows end user to align the content of the pivot table's row and column headers and value cells by using the [`textAlign`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_TextAlign) and [`headerTextAlign`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderTextAlign) properties in the [`ColumnRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnRender) event under [`GridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html). The following alignments are:
-
-* `Left` - It allows the content to be positioned on the left.
-* `Right` - It allows the content to be positioned on the right.
-* `Center` - It allows the content to be positioned in the middle.
-* `Justify` - It allows the content to be as flexible as possible, when the cell does not occupy the entire available area.
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/text-align/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="TextWrap.cs" %}
-{% include code-snippet/pivot-table/grid-customization/text-align/TextAlign.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/text-align/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="TextWrap.cs" %}
-{% include code-snippet/pivot-table/grid-customization/text-align/TextAlign.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![output](images/textalign.png)
-
-## AutoFit
+### Autofit columns
 
 Allows the user to fit the Pivot Table columns as wide as the content of the cell without wrapping. It auto fits all of the Pivot Table columns by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance.
 
@@ -752,40 +717,6 @@ The event `headerCellInfo` triggers while rendering each column header cell in t
 {% endhighlight %}
 {% highlight c# tabtitle="HeaderCell.cs" %}
 {% include code-snippet/pivot-table/grid-customization/headercell/HeaderCell.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-### ColumnRender
-
-The event [`ColumnRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnRender) triggers while framing each columns for rendering in the pivot table. It allows the user to customize the text alignment, column visibility, autofit, re-ordering, minimum and maximum width for a specific column. It has the following parameters:
-
-* `columns` - It holds the leaf level columns (i.e., value headers) information.
-* `dataSourceSettings` - It holds the current data source settings such as input data source, rows, columns, values, filters, format settings and so on.
-* `name` - It holds the name of the event.
-* `stackedColumns` - It holds the drilled columns (i.e., including column and value headers) information.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/columnRender/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="TextWrap.cs" %}
-{% include code-snippet/pivot-table/grid-customization/columnRender/ColumnRender.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/columnRender/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="TextWrap.cs" %}
-{% include code-snippet/pivot-table/grid-customization/columnRender/ColumnRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

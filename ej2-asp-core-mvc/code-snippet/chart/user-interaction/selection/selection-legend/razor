@@ -13,6 +13,6 @@
        Interval(20)).
        Title("Age Distribution by Country").
        LegendSettings(leg => leg.Visible(true)
-                        .ToggleVisibility(false).EnabelHighlight(true)).
+                        .ToggleVisibility(false)).
        SelectionMode(Syncfusion.EJ2.Charts.SelectionMode.Series).Render()     
     )

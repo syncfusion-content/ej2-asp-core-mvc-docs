@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populate Data in Syncfusion ##Platform_Name## Maps Component
+title: Populate Data in ##Platform_Name## Maps Component
 description: Learn here all about Populate Data in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Populate Data
@@ -9,20 +9,6 @@ documentation: ug
 ---
 
 # Populate data
-
-## Geometry types
-
-GeoJSON data contains geometry objects with properties such as geometry types and coordinates. The geometry types are the values present in the geometry objects of the GeoJSON data that specify the type of shape to be rendered, as well as the coordinates that help to draw the shape's boundary line. The supportive geometry types are:
-
-| **Shapes** | **Supported** |
-| --- | --- |
-|Polygon| Yes |
-|MultiPolygon| Yes |
-|LineString| Yes |
-|MultiLineString| Yes |
-|Point| Yes |
-|MultiPoint| Yes |
-|GeometryCollection| Yes |
 
 ## Shape data
 

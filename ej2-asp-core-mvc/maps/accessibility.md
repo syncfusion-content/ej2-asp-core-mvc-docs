@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Syncfusion ##Platform_Name## Maps Component
+title: Accessibility in ##Platform_Name## Maps Component
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ##Platform_Name## Maps Component
+# Accessibility
 
-Maps provides built-in compliance with the [`WAI-ARIA`](https://www.w3.org/WAI/ARIA/apg/) specifications. The WAI-ARIA accessibility support is achieved through the attribute like `aria-label` in the SVG element. It helps to provide information about elements in a document for assistive technology. This attribute sets the text label with some default description for the following elements in Maps.
+Maps provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. The WAI-ARIA accessibility support is achieved through the attribute like `aria-label` in the SVG element. It helps to provide information about elements in a document for assistive technology. This attribute sets the text label with some default description for the following elements in Maps.
 
 <!-- markdownlint-disable MD033 -->
 <table>

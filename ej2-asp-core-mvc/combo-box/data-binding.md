@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Combo Box Control | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## Combo Box Component
+description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Combo Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding in Combo Box Control
+# Data Binding
 
 The ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~DataSource.html) property. It supports the data type of `array` or [DataManager](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DataManager_members.html).
 
@@ -37,6 +37,9 @@ The ComboBox has supported to load array of primitive data such as strings and n
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/data-binding/arrayofstrings/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Arrayofstrings.cs" %}
+{% include code-snippet/combobox/data-binding/arrayofstrings/arrayofstrings.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,6 +69,9 @@ In the following example, `Vegetable` column from complex data has been mapped t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/data-binding/arrayofobjects/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Arrayofobjects.cs" %}
+{% include code-snippet/combobox/data-binding/arrayofobjects/arrayofobjects.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -93,6 +99,9 @@ In the following example, `Code.Id` column and `Country.CountryId` column from c
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/data-binding/complexdata/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Complexdata.cs" %}
+{% include code-snippet/combobox/data-binding/complexdata/complexdata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -122,6 +131,9 @@ In the following sample, displayed first 6 contacts from the `customer` table of
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/data-binding/remotedata/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Remotedata.cs" %}
+{% include code-snippet/combobox/data-binding/remotedata/remotedata.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -136,7 +148,7 @@ In the following sample, displayed first 6 contacts from the `customer` table of
 {% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/ComboBoxUGSample).
+
 
 ### Bind to URL Adaptor
 
@@ -254,7 +266,7 @@ To avoid post back for every action, set the ComboBox to load all data on initia
 
 
 
-## See also
+## See Also
 
 * [How to acheive cascading](./how-to/cascading/)
 * [How to load data using template](./templates/#item-template)

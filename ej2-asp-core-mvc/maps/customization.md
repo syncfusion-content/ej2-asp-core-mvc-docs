@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in Syncfusion ##Platform_Name## Maps Component
+title: Customization in ##Platform_Name## Maps Component
 description: Learn here all about Customization in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customization in ##Platform_Name## Maps Component
+# Customization
 
 ## Setting the size for Maps
 
@@ -80,7 +80,7 @@ The title for the Maps can be set using the `MapsTitleSettings`. It can be custo
 
 ## Setting theme
 
-The Maps component supports following themes.
+The Maps control supports following themes.
 
 * Material
 * Fabric
@@ -282,7 +282,7 @@ The border of each shape in the Maps can be customized using the `BorderColorVal
 
 ## Projection type
 
-The Maps component supports the following projection types:
+The Maps control supports the following projection types:
 
 * Mercator
 * Equirectangular

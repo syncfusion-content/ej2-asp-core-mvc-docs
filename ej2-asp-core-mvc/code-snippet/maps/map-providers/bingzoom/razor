@@ -1,13 +1,4 @@
 @using Syncfusion.EJ2;
-@Html.EJS().Maps("maps").Load("mapsLoad").ZoomSettings(zoom=>zoom.Enable(true)).Layers(l=> {
-    l.Add();
+@Html.EJS().Maps("maps").ZoomSettings(zoom=>zoom.Enable(true)).Layers(l=> {
+    l.LayerType(Syncfusion.EJ2.Maps.ShapeLayerType.Bing).BingMapType(Syncfusion.EJ2.Maps.ShapeLayerType.BingMapType.CanvasLight).Key("// …bingMapKey")Add();
 }).Render()
-
-<script type="text/javascript">
-    function mapsLoad(args) {
-        args.maps.getBingUrlTemplate("https://dev.virtualearth.net/REST/V1/Imagery/Metadata/CanvasLight?output=json&uriScheme=https&key=?").then(function (url) {
-            args.maps.layers[0].urlTemplate = url;
-        });
-    }
-</script>
-

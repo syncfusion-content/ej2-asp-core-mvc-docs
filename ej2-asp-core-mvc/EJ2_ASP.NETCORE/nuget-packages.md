@@ -73,10 +73,10 @@ ejs-spreadsheet
 <td>
 <ul>
 <li><a href="https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc/" target="_blank">Microsoft.AspNetCore.Mvc</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.Compression.Base" target="_blank">Syncfusion.Compression.Base</a></li>
+<li><a href="nuget.org/packages/Syncfusion.Compression.Base/" target="_blank">Syncfusion.Compression.Base</a></li>
 <li><a href="https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/" target="_blank">Syncfusion.EJ2.AspNet.Core</a></li>
 <li><a href="https://www.nuget.org/packages/Syncfusion.XlsIO.AspNet/" target="_blank">Syncfusion.XlsIO.AspNet</a></li>
-<li><a href="https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc" target="_blank">Microsoft.AspNetCore.Mvc</a></li>
+<li><a href="https://www.nuget.org/packages/Newtonsoft.Json/" target="_blank">Microsoft.AspNetCore.Mvc</a></li>
 <li><a href="https://www.nuget.org/packages/System.Net.Http/" target="_blank">System.Net.Http</a></li>
 </ul>
 </td>
@@ -109,7 +109,7 @@ ejs-documenteditor
 <td>
 <ul>
 <li><a href="https://www.nuget.org/packages/Newtonsoft.Json/" target="_blank">Newtonsoft.Json</a></li>
-<li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
+<li><a href="nuget.org/packages/Syncfusion.Compression.Net.Core/" target="_blank">Syncfusion.Compression.Net.Core</a></li>
 <li><a href="https://www.nuget.org/packages/Syncfusion.DocIO.Net.Core/" target="_blank">Syncfusion.DocIO.Net.Core</a></li>
 <li><a href="https://www.nuget.org/packages/Syncfusion.OfficeChart.Net.Core/" target="_blank">Syncfusion.OfficeChart.Net.Core</a></li>
 </ul>
@@ -135,7 +135,7 @@ The ASP.NET Core Word Processor provides all the common Word processing features
 </tr>
 <tr>
 <td>
-<a href="https://www.nuget.org/packages/syncfusion.EJ2.SpellChecker.AspNet.Core">Syncfusion.EJ2.SpellChecker.AspNet.Core</a>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/">Syncfusion.EJ2.SpellChecker.AspNet.Core</a>
 </td>
 <td>
 ejs-documenteditor
@@ -173,7 +173,7 @@ ejs-pdfviewer
 </td>
 <td>
 <ul><li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
-<li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
+<li><a href="nuget.org/packages/Syncfusion.Compression.Net.Core/" target="_blank">Syncfusion.Compression.Net.Core</a></li>
 <li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
 <li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
 <li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
@@ -208,7 +208,7 @@ ejs-pdfviewer
 <td>
 <ul>
 <li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
-<li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
+<li><a href="nuget.org/packages/Syncfusion.Compression.Net.Core/" target="_blank">Syncfusion.Compression.Net.Core</a></li>
 <li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
 <li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
 <li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
@@ -244,7 +244,7 @@ ejs-pdfviewer
 <ul>
 <li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
 <li><a href="https://www.nuget.org/packages/runtime.osx.10.10-x64.CoreCompat.System.Drawing/" target="_blank">runtime.osx.10.10-x64.CoreCompat.System.Drawing</a></li>
-<li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
+<li><a href="nuget.org/packages/Syncfusion.Compression.Net.Core/" target="_blank">Syncfusion.Compression.Net.Core</a></li>
 <li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
 <li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
 <li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
@@ -303,7 +303,7 @@ The FileManager package contains the Amazon S3 bucket file system provider in AS
 </tr>
 <tr>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.EJ2.FileManager.AmazonFileProvider.AspNet.Core">Syncfusion.EJ2.FileManager.AmazonFileProvider.AspNet.Core</a>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/">Syncfusion.EJ2.FileManager.AmazonFileProvider.AspNet.Core</a>
 </td>
 <td>
 ejs-filemanager
@@ -317,29 +317,3 @@ ejs-filemanager
 </tr>
 </table>
 <!-- markdownlint-enable MD033 -->
-
-### Syncfusion.EJ2.GridExport.Core
-
-The ASP.NET Core Grid Export is an ideal library for visualizing the Grid data in a Excel, Pdf and CSV formats whcih also handles the data actions like filtering, sorting, Groupin etc.
-
-<table>
-<tr>
-<th>NuGet Package Name</th>
-<th>Controls</th>
-<th>Dependencies</th>
-</tr>
-<tr>
-<td><a href="https://www.nuget.org/packages/Syncfusion.EJ2.GridExport.Core">Syncfusion.EJ2.GridExport.Core</a></td>
-<td>ejs-grid</td>
-<td>
-<ul>
-<li><a href="https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc/">Microsoft.AspNetCore.Mvc</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.Compression.Base/">Syncfusion.Compression.Base</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/">Syncfusion.EJ2.AspNet.Core</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/">Syncfusion.Pdf.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.XlsIO.AspNet/">Syncfusion.XlsIO.AspNet</a></li>
-<li><a href="https://www.nuget.org/packages/System.Net.Http/">System.Net.Http</a></li>
-</ul>
-</td>
-</tr>
-</table>

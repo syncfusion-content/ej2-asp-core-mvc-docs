@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Path in Syncfusion ##Platform_Name## Maps Component
+title: Custom Path in ##Platform_Name## Maps Component
 description: Learn here all about Custom Path in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Custom Path
@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Custom path map in ##Platform_Name## Maps Component
+# Custom path map
 
-Maps component can be customized as the desired layout using the custom path map feature. Here, the Maps component has been showcased with normal geometry type shapes to represent the bus seat selection layout.
+Maps control can be customized as the desired layout using the custom path map feature. Here, the Maps control has been showcased with normal geometry type shapes to represent the bus seat selection layout.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

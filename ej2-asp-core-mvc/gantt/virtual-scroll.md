@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual Scroll in Syncfusion ##Platform_Name## Gantt Component
+title: Virtual Scroll in ##Platform_Name## Gantt Component
 description: Learn here all about Virtual Scroll in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtual Scroll
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Virtual Scrolling in Gantt
+# Virtual Scrolling
 
 Virtual Scroll support in Gantt allows you to load large amount of data without performance degradation. To enable Virtual Scrolling, you need to inject `VirtualScroll` module in Gantt.
 
@@ -54,4 +54,5 @@ This mode can be enable by setting the `EnableVirtualization` property to `true`
 * Cell selection will not be persisted.
 * The number of records rendered will be determined by the `Height` property.
 * It is necessary to mention the height of the Gantt in pixels when enabling Virtual Scrolling.
+* Currently, we do not have support for Row Drag and Drop when virtualization is enabled.
 * Virtual Scroll does not support Multi Taskbar support in Resource View.
