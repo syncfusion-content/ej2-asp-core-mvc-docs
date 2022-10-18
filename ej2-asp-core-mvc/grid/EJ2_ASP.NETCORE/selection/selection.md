@@ -15,8 +15,7 @@ Selection provides an option to highlight a row or a cell. It can be done throug
 The grid supports two types of selection that can be set by using the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property of **e-grid-selectionsettings** tag helper. They are:
 
 * **Single**: The **Single** value is set by default, and it only allows selection of a single row or a cell or a column.
-* **Multiple**: Allows you to select multiple rows or cells or columns.
-To perform the multi-selection, press and hold CTRL key and click the desired rows or cells or columns. To select range of rows or cells or columns, press and hold the SHIFT key and click the rows or cells or columns.
+* **Multiple**: Allows you to select multiple rows or cells or columns. To perform the multi-selection, press and hold CTRL key and click the desired rows or cells or columns. To select range of rows or cells or columns, press and hold the SHIFT key and click the rows or cells or columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

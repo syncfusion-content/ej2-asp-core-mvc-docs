@@ -10,8 +10,7 @@ documentation: ug
 
 # Auto Generated Columns
 
-The [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) are automatically generated when
-[`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) declaration is empty or undefined while initializing the grid. All the columns in the **DataSource** are bound as grid columns.
+The [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) are automatically generated when [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) declaration is empty or undefined while initializing the grid. All the columns in the **DataSource** are bound as grid columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

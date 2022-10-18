@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## in Visual Studio Code
+title: Getting Started with ##Platform_Name## in Visual Studio Code | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Calendar control using Tag helpers in Visual Studio Code.
 platform: ej2-asp-core-mvc
 control: Vscode
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core in Visual Studio Code using Razor pages
+# Getting Started with ASP.NET Core in VS Code using Razor pages
 
 This article provides a step-by-step instruction for building ASP.NET Core web application using the [Visual Studio Code](https://code.visualstudio.com/) and ASP.NET Core tag helper.
 

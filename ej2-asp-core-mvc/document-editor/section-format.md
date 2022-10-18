@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Section Format in ##Platform_Name## Document Editor Component
+title: Section Format in ##Platform_Name## Document Editor Control | Syncfusion
 description: Learn here all about section format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Section Format
