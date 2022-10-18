@@ -25,8 +25,6 @@ When paging is enabled, a built-in pager UI appears at the bottom of the pivot t
 
 You can also change the position, visibility, compact view, and template of the row and column pagers by using the [`PagerSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PagerSettings).
 
-> In order to see and use the pager UI, insert the `Pager` module into the pivot table.
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -50,7 +48,7 @@ You can also change the position, visibility, compact view, and template of the 
 {% endtabs %}
 {% endif %}
 
-![output](images/Paging_UI.png)
+![Normal mode of Pager UI](images/Paging_UI.png)
 
 ### Show pager UI at top or bottom
 
@@ -81,7 +79,7 @@ You can display the pager UI at top or bottom of the pivot table by using the [`
 {% endtabs %}
 {% endif %}
 
-![output](images/PagerPosition.png)
+![Pager UI at Top position](images/PagerPosition.png)
 
 ### Inverse pager
 
@@ -112,7 +110,7 @@ Toggles and displays row and column pager. To show the column pager on the left 
 {% endtabs %}
 {% endif %}
 
-![output](images/PagerInverse.png)
+![Inverse pager UI](images/PagerInverse.png)
 
 ### Compact view
 
@@ -141,7 +139,7 @@ By hiding all except the previous and next navigation buttons, the pager UI can 
 {% endtabs %}
 {% endif %}
 
-![output](images/PagerCompactView.png)
+![Compact view of pager UI](images/PagerCompactView.png)
 
 ### Show or hide paging option
 
@@ -172,7 +170,7 @@ In the following example, row pager has been disabled by setting the [`ShowRowPa
 {% endtabs %}
 {% endif %}
 
-![output](images/PagerHide.png)
+![Hided Row paging option](images/PagerHide.png)
 
 ### Show or hide page size
 
@@ -201,7 +199,7 @@ By using the [`ShowRowPageSize`](https://help.syncfusion.com/cr/aspnetmvc-js2/Sy
 {% endtabs %}
 {% endif %}
 
-![output](images/PagerSizeHide.png)
+![Hided Row and Column Page sizes](images/PagerSizeHide.png)
 
 ### Customize page size
 
@@ -234,7 +232,7 @@ In the following example, the "Rows per page" dropdown is set with user-defined 
 {% endtabs %}
 {% endif %}
 
-![output](images/PagerSize.png)
+![Customizing page size](images/PagerSize.png)
 
 ### Template
 
@@ -263,4 +261,4 @@ The [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Piv
 {% endtabs %}
 {% endif %}
 
-![output](images/PagerTemplate.png)
+![Pager UI customized by Template property](images/PagerTemplate.png)
