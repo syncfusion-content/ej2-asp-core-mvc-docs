@@ -15,7 +15,7 @@ Maps provide support for internationalization for the below elements.
 * Data label
 * Tooltip
 
-For more information about number and date formatter, refer to the [`internationalization`](http://ej2.syncfusion.com/documentation/base/intl.html) section.
+For more information about number and date formatter, refer to the [internationalization](http://ej2.syncfusion.com/documentation/base/intl.html) section.
 
 <!-- markdownlint-disable MD036 -->
 
