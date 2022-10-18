@@ -17,7 +17,7 @@
 
 <script>
     function actionBegin(args) {
-        if (args.actionName == 'Sort field' && args.actionName == 'Sort value') {
+        if (args.actionName == 'Sort field' || args.actionName == 'Sort value') {
             args.cancel = true;
         }
     }

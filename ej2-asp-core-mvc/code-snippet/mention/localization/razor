@@ -1,0 +1,27 @@
+@model List<string>
+@{
+    char nameMentionChar = '@';
+}
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
+@Html.EJS().Mention("noRecord-template").MentionChar(nameMentionChar).Target("#mentionElement").DataSource((IEnumerable<object>)ViewBag.data).Render()
+    
+    <script>
+    
+        ej.base.L10n.load({
+            'fr-BE': {
+                'mention': {
+                   'noRecordsTemplate': "Aucun enregistrement trouvé",
+                }
+            }
+        });
+    
+    </script>
+
+    <style>
+    
+        div#mentionElement[placeholder]:empty:before {
+            content: attr(placeholder);
+            color: #555;
+        }
+    
+    </style>

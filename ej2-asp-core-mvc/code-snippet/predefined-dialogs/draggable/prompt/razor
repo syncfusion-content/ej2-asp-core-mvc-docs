@@ -2,12 +2,10 @@
     @Html.EJS().Button("promptBtn").Content("Prompt").IsPrimary(true).Render()
 </div>
 <script>
-    var confirmBtn = new ej.buttons.Button({});
-    confirmBtn.appendTo('#promptBtn');
     document.getElementById('promptBtn').onclick = function () {
         ej.popups.DialogUtility.confirm({
-            title: 'Join Chat Group',
-            content: '<p>Enter your name: </p> <input id= "inputEle" type="text" name="Required" class="e-input" placeholder="Type here.." />',
+            title: "Join chat group",
+            content: "<p>Enter your name: </p> <input id= inputEle type=text name=Required class=e-input placeholder=Type here.. />",
             isDraggable: true
         });
     };

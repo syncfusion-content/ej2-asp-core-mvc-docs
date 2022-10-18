@@ -123,25 +123,11 @@ An alert dialog box used to display an errors, warnings, and information alerts 
 
 In the below code example, alert dialog displayed on button click action.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/predefined-dialogs/getting-started/alert-dialog/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/predefined-dialogs/getting-started/alert-dialog/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/getting-started/alert-dialog/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Predefined Dialog will be rendered in the default web browser.
 
@@ -152,25 +138,12 @@ A confirm dialog box used to displays a specified message along with the `OK` an
 
 In the below code example, the confirm dialog displayed on `OK` and `Cancel` button click action.
  
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/predefined-dialogs/getting-started/confirm-dialog/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/predefined-dialogs/getting-started/confirm-dialog/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/getting-started/confirm-dialog/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Confirm Dialog](../images/confirm-default.png)
 
@@ -180,25 +153,11 @@ A prompt dialog is used to get the input from the user. When the user clicks the
 
 In the below code example, the confirm dialog displayed on `OK` and `Cancel` button click action.
  
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/predefined-dialogs/getting-started/prompt-dialog/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/predefined-dialogs/getting-started/prompt-dialog/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/getting-started/prompt-dialog/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Prompt Dialog](../images/prompt-default.png)
 ## See also

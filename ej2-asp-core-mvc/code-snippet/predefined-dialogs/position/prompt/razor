@@ -2,13 +2,11 @@
     @Html.EJS().Button("promptBtn").Content("Prompt").IsPrimary(true).Render()
 </div>
 <script>
-    var promptBtn = new ej.buttons.Button({});
-    promptBtn.appendTo('#promptBtn');
     document.getElementById('promptBtn').onclick = function () {
         ej.popups.DialogUtility.alert({
-            title: 'Join Chat Group',
-            content: '<p>Enter your name: </p> <input id= "inputEle" type="text" name="Required" class="e-input" placeholder="Type here.." />',
-            position: { X: 'top', Y: 'center' }
+            title: "Join chat group",
+            content: "<p>Enter your name: </p> <input id=inputEle type=text name=Required class=e-input placeholder=Type here.. />",
+            position: { X: "top", Y: "center" }
         });
     };
 </script>
