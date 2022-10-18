@@ -91,6 +91,8 @@ You can change the size of the node resize thumb and the connector end point han
 {% endtabs %}
 {% endif %}
 
+![handleSize](images/handleSize.gif)
+
 ## Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
