@@ -13,10 +13,10 @@
 <script>
     document.getElementById('confirmBtn').onclick = function () {
         ej.popups.DialogUtility.confirm({
-            title: 'Delete File',
+            title: 'Delete file',
             content: "Are you sure you want to permanently delete these file?",
-            okButton: { text: 'Yes', icon: "e-icons e-check" },
-            cancelButton: { text: 'No', icon: "e-icons e-close" }
+            okButton: { text: "Yes", icon: "e-icons e-check" },
+            cancelButton: { text: "No", icon: "e-icons e-close" }
         });
     };
 </script>
