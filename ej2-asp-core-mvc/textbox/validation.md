@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validation in in ASP.NET Core TextBox Component | Syncfusion
+title: Validation in ASP.NET Core TextBox Component | Syncfusion
 description: Learn here all about Validation in Syncfusion ASP.NET Core TextBox Component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Validation
