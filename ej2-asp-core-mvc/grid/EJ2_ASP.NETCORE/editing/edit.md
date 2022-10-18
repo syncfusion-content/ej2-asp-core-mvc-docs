@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edit in ASP.NET Core Grid Component
+title: Edit in ASP.NET Core Grid Control | Syncfusion
 description: Learn here all about Edit in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Edit
@@ -231,4 +231,4 @@ In the following example, the textbox is rendered in the Freight column using a 
 
 ## See Also
 
-* [How to set custom format in edit state of Grid](https://www.syncfusion.com/kb/11319/how-to-set-custom-format-in-edit-state-of-grid)
+* [How to set custom format in edit state of Grid](https://www.syncfusion.com/kb/13424/how-to-set-custom-format-in-edit-state-of-grid)

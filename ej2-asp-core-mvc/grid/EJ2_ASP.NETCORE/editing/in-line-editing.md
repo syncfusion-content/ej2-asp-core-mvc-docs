@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inline Editing in ##Platform_Name## Grid Component
+title: Inline Editing in ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Inline Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Inline Editing
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Inline Editing
+# Inline Editing in Grid Control
 
 In Normal edit mode, when you start editing the currently selected record is changed to edit state. You can change the cell values and save edited data to the data source. To enable Normal edit, set [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property of [`e-grid-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) tag helper as **Normal**.
 
@@ -236,7 +236,7 @@ By default, a new row will be added at the top of the grid. You can change it by
 
 ## Move the focus to a particular cell instead of first cell while editing a row
 
-The [`recordDoubleClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Grids.Grid~recordDoubleClick.html) event allows you to move the focus to the corresponding cell (the cell that you doubled-clicked to edit a row) instead of the first cell in edit form. With the help of this event, you can focus the double-clicked column in inline edit mode.
+The [`recordDoubleClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RecordDoubleClick) event allows you to move the focus to the corresponding cell (the cell that you doubled-clicked to edit a row) instead of the first cell in edit form. With the help of this event, you can focus the double-clicked column in inline edit mode.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

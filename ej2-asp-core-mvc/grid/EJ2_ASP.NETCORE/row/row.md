@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row in ##Platform_Name## Grid Component
+title: Row in ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Row in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row
+# Row in ASP.NET Core Grid Control
 
 The row represents record details fetched from data source.
 

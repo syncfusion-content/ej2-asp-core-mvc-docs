@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto Wrap in ##Platform_Name## Grid Component
+title: Auto Wrap in ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Auto Wrap in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Auto Wrap
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Auto Wrap
+# Auto Wrap in Grid Control
 
 The auto wrap allows the cell content of the grid to wrap to the next line when it exceeds the boundary of the cell width. The Cell Content wrapping works based on the position of white space between words. To enable auto wrap, set the [`allowTextWrap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowTextWrap) property to `true`. You can configure the auto wrap mode by setting the [`wrapMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridTextWrapSettings.html#Syncfusion_EJ2_Grids_GridTextWrapSettings_WrapMode) property of **e-grid-textwrapsettings** tag helper.
 
