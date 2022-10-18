@@ -1,0 +1,42 @@
+<div class="col-lg-12 control-section e-img-editor-sample">
+    <ejs-imageeditor id="image-editor" created="created"></ejs-imageeditor>
+</div>
+<ejs-button id="btnClick" onclick="clickHandler()" cssClass="e-primary" content="Click"></ejs-button>
+
+<script>
+    function created() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        if (ej.base.Browser.isDevice) {
+            imageEditorObj.open('../images/flower.png');
+        } else {
+            imageEditorObj.open('../images/bridge.png');
+        }
+    }
+
+    function clickHandler() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.select("16:9");
+    }
+</script>
+
+<style>
+    .image-editor {
+        margin: 0 auto;
+    }
+
+    .e-img-editor-sample {
+        height: 80vh;
+        width: 100%;
+    }
+
+    @@media only screen and (max-width: 700px) {
+        .e-img-editor-sample {
+            height: 75vh;
+            width: 100%;
+        }
+    }
+
+    .control-wrapper {
+        height: 100%;
+    }
+</style>
