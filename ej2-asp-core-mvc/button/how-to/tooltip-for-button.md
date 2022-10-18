@@ -33,6 +33,6 @@ Tooltip can be shown on Button hover and it can be achieved by setting `title` a
 {% endtabs %}
 {% endif %}
 
-![Tooltip Button](images/button-tooltip.png)
+![Button with Tooltip](images/button-tooltip.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonHowToSample).
