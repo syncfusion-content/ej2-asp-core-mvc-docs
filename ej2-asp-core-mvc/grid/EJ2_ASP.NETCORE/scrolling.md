@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling in ##Platform_Name## Grid Component
-description: Learn here all about Scrolling in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Scrolling in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Scrolling in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scrolling
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Scrolling
+# Scrolling in ASP.NET Core Grid Component
 
  The scrollbar will be displayed in the grid when content exceeds the element [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Width) or [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 
@@ -78,6 +78,37 @@ Setting the [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 
 
+## Sticky Header
+
+You can make the Grid column headers remain fixed while scrolling by using the [`enableStickyHeader`](https://ej2.syncfusion.com/javascript/documentation/api/grid/#enablestickyheader) property.
+
+In the below demo, the Grid headers will be sticky while scrolling the Grid's parent div element.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/scrolling/sticky-header/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sticky-header.cs" %}
+{% include code-snippet/grid/scrolling/sticky-header/sticky-header.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/scrolling/sticky-header/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sticky-header.cs" %}
+{% include code-snippet/grid/scrolling/sticky-header/sticky-header.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Scroll to selected row
 
 You can scroll the grid content to the selected row position by using the [`rowSelected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowSelected) event.
@@ -132,37 +163,6 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 {% endhighlight %}
 {% highlight c# tabtitle="Hide-scroll.cs" %}
 {% include code-snippet/grid/scrolling/hide-scroll/hide-scroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-## Sticky Header
-
-You can make the Grid column headers remain fixed while scrolling by using the [`enableStickyHeader`](https://ej2.syncfusion.com/javascript/documentation/api/grid/#enablestickyheader) property.
-
-In the below demo, the Grid headers will be sticky while scrolling the Grid's parent div element.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/scrolling/sticky-header/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Sticky-header.cs" %}
-{% include code-snippet/grid/scrolling/sticky-header/sticky-header.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/scrolling/sticky-header/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Sticky-header.cs" %}
-{% include code-snippet/grid/scrolling/sticky-header/sticky-header.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

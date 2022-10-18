@@ -1,3 +1,4 @@
+<div class="e-bigger">
 @Html.EJS().Grid("adaptivebrowser").DataSource((IEnumerable<object>)ViewBag.DataSource).EnableAdaptiveUI(true).RowRenderingMode(Syncfusion.EJ2.Grids.RowRenderingDirection.Vertical).AllowPaging(true).AllowFiltering(true).AllowSorting(true).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("180").IsPrimaryKey(true).ValidationRules(new { required = true, number = true }).Add();
@@ -8,3 +9,4 @@
 {
     agg.Columns(new List<Syncfusion.EJ2.Grids.GridAggregateColumn>() { new Syncfusion.EJ2.Grids.GridAggregateColumn() { Field = "Freight", Format = "C2", Type = "Sum", FooterTemplate = "Sum: ${Sum}" } }).Add();
 }).Render()
+</div>

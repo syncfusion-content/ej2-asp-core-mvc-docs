@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting in ##Platform_Name## Schedule Component
+title: Exporting in ##Platform_Name## Syncfusion Schedule Component
 description: Learn here all about Exporting in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Exporting
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Exporting
+# Exporting in ##Platform_Name## Schedule Component
 
 The Scheduler supports exporting all its appointments both to an Excel or ICS extension file at client-side. It offers different client-side methods to export its appointments in an Excel or ICal format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
 
@@ -188,6 +188,23 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+
+### Custom separator in CSV
+
+The Scheduler exports the event data to CSV format with `,` as separator. You can change separator by setting `separator` property in `ExportOptions`.
+
+
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/excel-export/csv-format/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/excel-export/csv-format/data.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 
 

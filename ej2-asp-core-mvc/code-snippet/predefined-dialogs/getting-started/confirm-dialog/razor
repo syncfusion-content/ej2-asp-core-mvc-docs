@@ -1,0 +1,29 @@
+<div style="height:400px;">
+    <div id="predefinedDialogDefault" class="col-lg-12 control-section">
+        @Html.EJS().Button("confirmBtn").Content("Confirm").CssClass("e-success").Render()
+        <span id="statusText"></span>
+    </div>
+</div>
+    <script>
+        var dialogObj;
+        document.getElementById('confirmBtn').onclick = function () {
+            document.getElementById("statusText").style.display = "none";
+            dialogObj = ej.popups.DialogUtility.confirm({
+                title: "Delete multiple items",
+                content: "Are you sure you want to permanently delete these items?",
+                okButton: { click: confirmOkAction.bind(this) },
+                cancelButton: { click: confirmCancelAction.bind(this) },
+                position: { X: "center", Y: "center" }
+            });
+        };
+        var confirmOkAction = function () {
+            dialogObj.hide();
+            document.getElementById("statusText").innerHTML = " The user confirmed the dialog box";
+            document.getElementById("statusText").style.display = "block";
+        };
+        var confirmCancelAction = function () {
+            dialogObj.hide();
+            document.getElementById("statusText").innerHTML = "The user canceled the dialog box.";
+            document.getElementById("statusText").style.display = "block";
+        };
+    </script>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customized Checkbox in ##Platform_Name## Check Box Component
-description: Learn here all about Customized Checkbox in Syncfusion ##Platform_Name## Check Box component of Syncfusion Essential JS 2 and more.
+title: Customized Checkbox in ##Platform_Name## Check Box Control | Syncfusion
+description: Learn here all about Customized Checkbox in Syncfusion ##Platform_Name## Check Box control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customized Checkbox
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Customized CheckBox
+# Customized CheckBox Control
 
 ## Customize CheckBox Appearance
 
-You can customize the appearance of the CheckBox component using the CSS rules. Define own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_CssClass) property.
+You can customize the appearance of the CheckBox component using the CSS rules. Define own CSS rules according to your requirement and assign the class name to the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_CssClass) property.
 
 The background and border color of the CheckBox is customized through the custom classes to create primary, success, warning, and danger info type of checkbox.
 
@@ -22,9 +22,6 @@ The background and border color of the CheckBox is customized through the custom
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/check-box/howto/custom/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Custom.cs" %}
-{% include code-snippet/check-box/howto/custom/custom.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -51,9 +48,6 @@ The height and width of the CheckBox component can be customized by setting `hei
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/check-box/howto/custom-height/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customheight.cs" %}
-{% include code-snippet/check-box/howto/custom-height/customheight.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -83,9 +77,6 @@ In the following example, to-do list is displayed with round checkbox by changin
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/check-box/howto/custom-size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Customsize.cs" %}
-{% include code-snippet/check-box/howto/custom-size/customsize.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -114,9 +105,6 @@ In the following example, the check icon can be customized by changing check ico
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/check-box/howto/custom-icon/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Customicon.cs" %}
-{% include code-snippet/check-box/howto/custom-icon/customicon.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -131,3 +119,4 @@ In the following example, the check icon can be customized by changing check ico
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CheckBox/CheckBoxUGSample).

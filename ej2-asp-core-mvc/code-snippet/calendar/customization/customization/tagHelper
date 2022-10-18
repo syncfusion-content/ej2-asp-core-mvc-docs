@@ -1,4 +1,8 @@
-<ejs-calendar id="calendar" renderDayCell="disableDate" value="@ViewBag.value"></ejs-calendar>
+@{
+    var value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 15);
+}
+
+<ejs-calendar id="calendar" renderDayCell="disableDate" value="@value"></ejs-calendar>
 
 <script>
     function disableDate(args) {

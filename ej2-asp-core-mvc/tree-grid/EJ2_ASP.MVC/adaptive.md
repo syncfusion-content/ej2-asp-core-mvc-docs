@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Adaptive View
+# Adaptive View in ##Platform_Name## Tree Grid Component
 
 The Tree Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, and edit dialogs adaptively.
 
@@ -21,10 +21,10 @@ When you enable the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetco
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/adaptive/tagHelper %}
+{% include code-snippet/tree-grid/adaptive/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/grid/adaptive/default.cs %}
+{% include code-snippet/tree-grid/adaptive/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,10 +32,10 @@ When you enable the [`enableAdaptiveUI`](https://help.syncfusion.com/cr/aspnetco
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/adaptive/razor %}
+{% include code-snippet/tree-grid/adaptive/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/grid/adaptive/default.cs %}
+{% include code-snippet/tree-grid/adaptive/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

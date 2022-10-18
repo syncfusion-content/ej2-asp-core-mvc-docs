@@ -1,0 +1,1 @@
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).EnableTrackChanges(true).Render()

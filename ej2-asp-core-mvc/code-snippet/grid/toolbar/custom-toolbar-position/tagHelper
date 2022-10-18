@@ -1,0 +1,38 @@
+@{
+    List<object> toolbarItems = new List<object>();
+    toolbarItems.Add(new { text = "Expand All", tooltipText = "Expand All", prefixIcon = "e-expand", id = "expandall", align = "Left" });
+    toolbarItems.Add(new { text = "Collapse All", tooltipText = "Collapse All", prefixIcon = "e-collapse", id = "collapseall", align = "Right" });
+    toolbarItems.Add(new { text = "Search", align = "Center" });
+}
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbarClick="toolbarClick" toolbar=toolbarItems height="270" allowGrouping="true">
+    <e-grid-groupsettings columns="@(new string[] {"FirstName"})"></e-grid-groupsettings>
+    <e-grid-columns>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" isPrimaryKey="true" textAlign="Right" type="number" width="120"></e-grid-column>
+        <e-grid-column field="FirstName" headerText="First Name" type="string" width="140"></e-grid-column>
+        <e-grid-column field="Country" headerText="Country" textAlign="Right" type="string" width="120"></e-grid-column>
+        <e-grid-column field="PostalCode" headerText="Postal Code" textAlign="Right" type="string" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function toolbarClick(args) {
+
+        if (args.item.id === 'expandall') {
+            this.groupModule.expandAll();
+        }
+        if (args.item.id === "collapseall") {
+            this.groupModule.collapseAll();
+        }
+
+    }
+</script>
+<style>
+    .e-btn-icon.e-expand.e-icons.e-icon-left::before {
+        content: '\e82e';
+    }
+
+    .e-collapse::before {
+        content: '\e834';
+    }
+</style>

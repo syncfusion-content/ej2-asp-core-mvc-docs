@@ -1,0 +1,30 @@
+@using Syncfusion.EJ2.Schedule
+
+<div>
+    @Html.EJS().Button("btn1").Content("Close Quick Info Popup").Render()
+</div>
+<div>
+    @(Html.EJS().Schedule("schedule")
+        .Width("100%")
+        .Height("550px")
+        .Views(ViewBag.view)
+        .EventSettings(new ScheduleEventSettings { 
+            dataSource: [{
+                Id: 2,
+                Subject: 'Milky Way as Melting pot',
+                StartTime: new Date(2022, 2, 5, 20, 0, 0),
+                EndTime: new Date(2022, 2, 5, 21, 0, 0)
+            }] 
+        })        
+        .SelectedDate(new DateTime(2022, 2, 5))
+        .Render()
+    )
+</div>
+
+<script type="text/javascript">
+    document.getElementById('btn1').onclick = function () {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        scheduleObj.closeQuickInfoPopup();
+    };
+    
+</script>

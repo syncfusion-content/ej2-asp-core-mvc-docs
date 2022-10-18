@@ -681,7 +681,7 @@ In the below sample, the aggregate types of the field "Amount" has been customiz
 
 ### ActionBegin
 
-The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) triggers when the UI action such as sorting, filtering, aggregation or edit calculated field, that are present in the grouping bar begin. This allows user to identify the current action being performed at runtime. It has the following parameters:
+The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) triggers when the UI action such as sorting, filtering, aggregation or edit calculated field, that are present in the grouping bar UI begin. This allows user to identify the current action being performed at runtime. It has the following parameters:
 
 * `dataSourceSettings`: It holds the current data source settings such as input data source, rows, columns, values, filters, format settings and so on.
 
