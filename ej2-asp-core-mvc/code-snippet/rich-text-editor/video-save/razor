@@ -1,1 +1,0 @@
-@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertVideoSettings(obj => obj.SaveUrl("/Home/SaveFiles").Path("../Files/")).Render()

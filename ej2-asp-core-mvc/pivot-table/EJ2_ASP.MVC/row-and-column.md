@@ -311,7 +311,7 @@ Allows the user to fit the Pivot Table columns as wide as the content of the cel
 
 ### Autofit specific columns
 
-During initial rendering, the parameter `autoFit` in the [`ColumnRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnRender) event under [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) can be set to **true** to auto fit specific columns.
+During initial rendering, the parameter `autoFit` in the [`columnRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnRender) event under [`PivotViewGridSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) can be set to **true** to auto fit specific columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

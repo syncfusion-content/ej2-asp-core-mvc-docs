@@ -1,9 +1,0 @@
-@Html.EJS().RichTextEditor("defaultRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertAudioSettings(obj => obj.SaveUrl("/Home/SaveFiles").FileUploading("onFileUploading").Path("../Files/")).Render()
-
-<script>
-    function onFileUploading(args) {
-        var accessToken = "Authorization_token";
-        // adding custom Form Data
-        args.customFormData = [{ 'Authorization': accessToken }];
-    }
-</script>
