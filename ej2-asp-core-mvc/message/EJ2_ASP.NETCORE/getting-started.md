@@ -23,7 +23,7 @@ This section briefly explains how to include ASP.NET Core Message control in you
 
 * [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template/)
 
-## Install ASP.NET Core package in the application
+## Install the ASP.NET Core package in the application
 
 Syncfusion ASP.NET Core controls are in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages/) to learn more about installing NuGet packages in various OS environments. To add ASP.NET Core controls to the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution) and search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/), then install it.
 
@@ -31,7 +31,7 @@ Syncfusion ASP.NET Core controls are in [nuget.org.](https://www.nuget.org/packa
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
-Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+Open the `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_ViewImports.cshtml" %}
@@ -75,7 +75,7 @@ In this getting started walk-through, the required scripts are referred using CD
 
 ## Register Syncfusion Script Manager
 
-Open the `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of the `<body>` in the ASP.NET Core application as follows.  
+Open the `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of the `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
