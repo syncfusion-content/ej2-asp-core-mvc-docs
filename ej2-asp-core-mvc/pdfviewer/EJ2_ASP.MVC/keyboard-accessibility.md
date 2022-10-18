@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard accessibility support in ##Platform_Name## Pdfviewer Component
+title: Keyboard accessibility support in ##Platform_Name## Syncfusion|Pdfviewer Component
 description: Learn here all about Keyboard accessibility in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Keyboard Accessibility
