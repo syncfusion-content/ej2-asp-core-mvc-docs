@@ -16,8 +16,6 @@ By default, the predefined dialogs `width` and `height` property value is set as
 
 Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Prompt.cshtml** to customize the dialog dimensions.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
@@ -33,43 +31,6 @@ Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Pr
 {% endhighlight %}
 
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-**Alert**
-
-{% tabs %}
-{% highlight razor tabtitle="Alert.cshtml" %}
-{% include code-snippet/predefined-dialogs/dimension/alert/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/dimension/alert/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-**Confirm**
-
-{% tabs %}
-{% highlight razor tabtitle="Confirm.cshtml" %}
-{% include code-snippet/predefined-dialogs/dimension/confirm/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/dimension/confirm/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-**Prompt**
-
-{% tabs %}
-{% highlight razor tabtitle="Prompt.cshtml" %}
-{% include code-snippet/predefined-dialogs/dimension/prompt/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/dimension/prompt/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 **Results from the code snippet**
 
@@ -91,7 +52,6 @@ To have a restricted max-width and max-height dialog dimension, you need to spec
 
 Use the following code to customize the max-width and max-height for alert dialog:
 
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 
@@ -101,19 +61,6 @@ Use the following code to customize the max-width and max-height for alert dialo
 
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="Alert.cshtml" %}
-{% include code-snippet/predefined-dialogs/dimension/alert-max-height-width/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/dimension/alert-max-height-width/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
-
 ![Max width and height](../images/alert-dimension-max-height-width.png)
 
 ## Min-width and min-height
@@ -122,8 +69,6 @@ To have a restricted min-width and min-height dialog dimension, you need to spec
 
 Use the following code to customize the min-width and min-height for alert dialog:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
@@ -131,18 +76,5 @@ Use the following code to customize the min-width and min-height for alert dialo
 {% endhighlight %}
 
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="Alert.cshtml" %}
-{% include code-snippet/predefined-dialogs/dimension/alert-min-height-width/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/dimension/alert-min-height-width/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 ![Min width and height](../images/alert-dimension-min-height-width.png)

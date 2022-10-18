@@ -24,7 +24,6 @@ For confirm dialog, customized the default dialog buttons content as `Yes` and `
 
 For prompt dialog , customized the default dialog buttons content as `Connect` and `Close` by using `okButton.text` and `cancelButton.text` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 
@@ -41,42 +40,6 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 {% endhighlight %}
 
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-**Alert**
-
-{% tabs %}
-{% highlight razor tabtitle="Alert.cshtml" %}
-{% include code-snippet/predefined-dialogs/customization/action-btn/alert/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/customization/action-btn/alert/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-**Confirm**
-
-{% tabs %}
-{% highlight razor tabtitle="Confirm.cshtml" %}
-{% include code-snippet/predefined-dialogs/customization/action-btn/confirm/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/customization/action-btn/confirm/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-**Prompt**
-
-{% tabs %}
-{% highlight razor tabtitle="Prompt.cshtml" %}
-{% include code-snippet/predefined-dialogs/customization/action-btn/prompt/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/customization/action-btn/prompt/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 **Results from the code snippet**
 
@@ -103,7 +66,6 @@ You can also manually close the Dialogs by creating an instance to the dialog an
 
 Use the following code for **alert**, **confirm** and **prompt** to demonstrates the different ways of hiding the utility dialog.
 
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 
@@ -120,42 +82,6 @@ Use the following code for **alert**, **confirm** and **prompt** to demonstrates
 {% endhighlight %}
 
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-**Alert**
-
-{% tabs %}
-{% highlight razor tabtitle="Alert.cshtml" %}
-{% include code-snippet/predefined-dialogs/customization/show-hide-btn/alert/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/customization/show-hide-btn/alert/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-**Confirm**
-
-{% tabs %}
-{% highlight razor tabtitle="Confirm.cshtml" %}
-{% include code-snippet/predefined-dialogs/customization/show-hide-btn/confirm/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/customization/show-hide-btn/confirm/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-**Prompt**
-
-{% tabs %}
-{% highlight razor tabtitle="Prompt.cshtml" %}
-{% include code-snippet/predefined-dialogs/customization/show-hide-btn/prompt/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/customization/show-hide-btn/prompt/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 **Results from the code snippet**
 
@@ -177,7 +103,6 @@ You can load custom content in predefined dialogs using the `content` property.
 
 Use the following code to customize the dialog content to render the custom TextBox component inside the prompt dialog to get the username from the user.
 
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 
@@ -186,19 +111,6 @@ Use the following code to customize the dialog content to render the custom Text
 {% endhighlight %}
 
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="Alert.cshtml" %}
-{% include code-snippet/predefined-dialogs/customization/custom-content/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/predefined-dialogs/customization/custom-content/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 **Results from the code snippet**
 
