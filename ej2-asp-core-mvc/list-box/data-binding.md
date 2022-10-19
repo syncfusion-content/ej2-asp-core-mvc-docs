@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## List Box Component
+title: Data Binding in ##Platform_Name## List Box Control | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding
+# Data Binding in ##Platform_Name## List Box Control
 
 The ListBox loads the data either from local data sources or remote data services using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~DataSource.html) property. It supports the data type of `array` or `DataManager`.
 
@@ -120,8 +120,7 @@ In the following example, `Sports.Name` column from complex data have been mappe
 
 ## Remote Data
 
-The ListBox supports retrieval of data from remote data services with the help of [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started/) component. The [`query`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~Query.html) property is used to fetch
-data from the database and bind it to the ListBox.
+The ListBox supports retrieval of data from remote data services with the help of [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started/) component. The [`query`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~Query.html) property is used to fetch data from the database and bind it to the ListBox.
 
 The following sample displays the employee names from Employee table.
 
