@@ -12,7 +12,7 @@ documentation: ug
 
 ## Size
 
-This section briefly explains the different types of AppBar. The available types of the AppBar are as follows:
+The size of the AppBar can be set using the mode property. The available types of the AppBar are as follows:
 
 * Regular AppBar
 * Prominent AppBar
@@ -107,7 +107,7 @@ This height mode can be set to the AppBar by setting `Dense` to the mode propert
 
 ## Color
 
-This section briefly explains the different types of background colors used for the AppBar. The background and font colors can be set using the color mode property. The available types of background color for the AppBar are as follows:
+The background and font colors can be set using the color mode property. The available types of background color for the AppBar are as follows:
 
 * Light AppBar
 * Dark AppBar
