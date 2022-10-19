@@ -15,7 +15,7 @@
 
     function clickHandler() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imageEditorObj.drawEllipse(50, 50, 150, 100, 6, "#fff", 'red');
+        imageEditorObj.drawEllipse(100, 100, 300, 200, 15, 'red', 'green');
     }
 </script>
 
