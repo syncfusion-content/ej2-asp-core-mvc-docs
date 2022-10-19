@@ -19,15 +19,15 @@ Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Pr
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/dimension/alert/tagHelper %}
+{% include code-snippet/predefined-dialogs/dimension/alert/tagHelper %}
 {% endhighlight %}
 
 {% highlight cshtml tabtitle="Confirm.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/dimension/confirm/tagHelper %}
+{% include code-snippet/predefined-dialogs/dimension/confirm/tagHelper %}
 {% endhighlight %}
 
 {% highlight cshtml tabtitle="Prompt.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/dimension/prompt/tagHelper %}
+{% include code-snippet/predefined-dialogs/dimension/prompt/tagHelper %}
 {% endhighlight %}
 
 {% endtabs %}
@@ -56,7 +56,7 @@ Use the following code to customize the max-width and max-height for alert dialo
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/dimension/alert-max-height-width/tagHelper %}
+{% include code-snippet/predefined-dialogs/dimension/alert-max-height-width/tagHelper %}
 {% endhighlight %}
 
 {% endtabs %}
