@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expand And Collapse in ASP.NET MVC Splitter Component
+title: Expand And Collapse in ASP.NET MVC Splitter Component | Syncfusion
 description: Learn here all about Expand And Collapse in Syncfusion ASP.NET MVC Splitter component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Expand And Collapse
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Expand and Collapse
+# Expand and Collapse in ASP.NET MVC Splitter
 
 ## Collapsible panes
 
