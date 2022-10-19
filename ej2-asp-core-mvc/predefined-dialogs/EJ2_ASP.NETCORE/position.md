@@ -20,15 +20,15 @@ Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Pr
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/position/alert/tagHelper %}
+{% include code-snippet/predefined-dialogs/position/alert/tagHelper %}
 {% endhighlight %}
 
 {% highlight cshtml tabtitle="Confirm.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/position/confirm/tagHelper %}
+{% include code-snippet/predefined-dialogs/position/confirm/tagHelper %}
 {% endhighlight %}
 
 {% highlight cshtml tabtitle="Prompt.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/position/prompt/tagHelper %}
+{% include code-snippet/predefined-dialogs/position/prompt/tagHelper %}
 {% endhighlight %}
 
 {% endtabs %}
