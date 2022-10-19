@@ -22,9 +22,12 @@ The following example displays the text content along with the customized mentio
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/customization/mention-char-customization/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/mention/filtering-data/mention-char-customization/EmailData.cs %}
+{% endhighlight %}
 {% endtabs %}
 
-![Show or hide mention character](../images/show-mention-char.png)
+![Show or hide mention character](../images/asp-core-mvc-mention-show-mention-char.png)
 
 ## Adding the suffix character after selection
 
@@ -35,6 +38,9 @@ The following example displays the white space next to the text selected since t
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/customization/suffix-char-customization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/mention/customization/suffix-char-customization/SportsData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -48,8 +54,11 @@ In the following sample, popup list's width and height are configured.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/customization/popup-list-customization/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/mention/filtering-data/popup-list-customization/Countries.cs %}
+{% endhighlight %}
 {% endtabs %}
 
-![Configure popup list](../images/popup-list.png)
+![Configure popup list](../images/asp-core-mvc-mention-popup-list.png)
 
 

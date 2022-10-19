@@ -40,6 +40,6 @@ You can use the following key shortcuts to access the Mention without interrupti
 {% include code-snippet/mention/accessibility/keyboard-intraction/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/accessibility/keyboard-intraction/keyboard.cs %}
+{% include code-snippet/mention/accessibility/keyboard-intraction/SportsData.cs %}
 {% endhighlight %}
 {% endtabs %}

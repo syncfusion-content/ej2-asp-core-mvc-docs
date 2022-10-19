@@ -14,7 +14,7 @@ The Mention control allows the user to control the mentioned character and custo
 
 ## Show or hide mention character
 
-By default, the `ShowMentionChar` which does not display the text content with the mentioned character is disabled. If the property [ShowMentionChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ShowMentionChar) is enabled, it allows the respective [MentionChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) configured along with the text content opted from the suggested list to display.
+You can show mention character as prefix of selected item in mention component using [showMentionChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ShowMentionChar) property. The default value of `showMentionChar` is `false`.
 
 The following example displays the text content along with the customized mentioned character as **#**.
 
@@ -23,15 +23,15 @@ The following example displays the text content along with the customized mentio
 {% include code-snippet/mention/customization/mention-char-customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/customization/mention-char-customization/mentionChar-customization.cs %}
+{% include code-snippet/mention/customization/mention-char-customization/EmailData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide mention character](../images/show-mention-char.png)
+![Show or hide mention character](../images/asp-core-mvc-mention-show-mention-char.png)
 
 ## Adding the suffix character after selection
 
-The Mention has provided support to specify the custom suffix to append alongside with the mentioned selected item while inserting. You can append space or new line character as [SuffixText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuffixText).
+You can add suffix character while selecting an item in Mention component using [SuffixText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuffixText) property. You can add space or new line as suffix to the selected item. The default values is empty string.
 
 The following example displays the white space next to the text selected since the suffixText is configured as `&nbsp;`.
 
@@ -40,7 +40,7 @@ The following example displays the white space next to the text selected since t
 {% include code-snippet/mention/customization/suffix-char-customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/customization/suffix-char-customization/suffixChar-customization.cs %}
+{% include code-snippet/mention/customization/suffix-char-customization/SportsData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,8 +55,8 @@ In the following sample, popup list's width and height are configured.
 {% include code-snippet/mention/customization/popup-list-customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/customization/popup-list-customization/popup-list-customization.cs %}
+{% include code-snippet/mention/customization/popup-list-customization/Countries.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Configure popup list](../images/popup-list.png)
+![Configure popup list](../images/asp-core-mvc-mention-popup-list-customization.png)

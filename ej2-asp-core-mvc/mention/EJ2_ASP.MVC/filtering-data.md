@@ -27,7 +27,7 @@ The remote request does not fetch the search data until the search key contains 
 {% endhighlight %}
 {% endtabs %}
 
-![Minimum filter character](../images/minimum-filter-character.png)
+![Minimum filter character](../images/asp-core-mvc-mention-minimum-filter-character.png)
 
 ## Change the filter type
 
@@ -44,7 +44,7 @@ In the following examples, data filtering is done with `StartsWith` type.
 {% endhighlight %}
 {% endtabs %}
 
-![Change filter type](../images/filter-type.png)
+![Change filter type](../images/asp-core-mvc-mention-filter-type.png)
 
 ## Allow spacing between search
 
@@ -58,12 +58,12 @@ In the following example, `AllowSpaces` property is enabled and the filtering wa
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/filtering-data/allow-space/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/filtering-data/allow-space/allow-space.cs %}
+{% highlight c# tabtitle="Email.cs" %}
+{% include code-snippet/mention/filtering-data/allow-space/Countries.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Allow spacing between search](../images/allow-spacing.png)
+![Allow spacing between search](../images/asp-core-mvc-mention-allow-spacing.png)
 
 ## Customize the suggestion item count
 
@@ -80,7 +80,7 @@ In the following example, the suggestion list for the popup is limited to eight 
 {% endhighlight %}
 {% endtabs %}
 
-![suggestion item count](../images/suggestion-count.png)
+![suggestion item count](../images/asp-core-mvc-mention-suggestion-count.png)
 
 ## See Also
 

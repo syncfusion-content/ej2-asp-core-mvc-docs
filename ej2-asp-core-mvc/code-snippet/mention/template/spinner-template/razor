@@ -1,6 +1,7 @@
 @model List<string>
 @{
     char nameMentionChar = '@';
+    var query = "new ej.data.Query().select(['FirstName','Country', 'EmployeeID']).take(6).requiresCount()";
 }
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
 
@@ -9,14 +10,23 @@ obj.Url("https://ej2services.syncfusion.com/production/web-services/api/Employee
 {
    Text = "FirstName",
    Value = "EmployeeID"
-}).Query((string)ViewBag.query).Render()
+}).Query((string)query).Render()
 
 <style>
 
     div#mentionElement[placeholder]:empty:before {
         content: attr(placeholder);
-        color: #555;
     }
+
+    #mentionElement {
+        min-height: 100px;
+        border: 1px solid #D7D7D7;
+        border-radius: 4px;
+        padding: 8px;
+        font-size: 14px;
+        width: 600px;
+    }
+
     .spinner_loader {
         border: 10px solid #f3f3f3;
         border-radius: 50%;
@@ -32,13 +42,22 @@ obj.Url("https://ej2services.syncfusion.com/production/web-services/api/Employee
 
     /* Safari */
     @@-webkit-keyframes spin {
-        0% { -webkit-transform: rotate(0deg); }
-        100% { -webkit-transform: rotate(360deg); }
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
     }
 
     @@keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
+        0% {
+            transform: rotate(0deg);
+        }
 
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 </style>

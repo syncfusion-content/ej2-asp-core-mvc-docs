@@ -14,7 +14,7 @@ The Mention has been provided with several options to customize each list item, 
 
 ## Item template
 
-The content of each list item within the Mention can be customized with the help of [ItemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ItemTemplate) property.
+The content of each list item in Mention can be customized using [ItemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ItemTemplate) property.
 
 In the following sample, each list item is split into two columns to display relevant data.
 
@@ -27,7 +27,7 @@ In the following sample, each list item is split into two columns to display rel
 {% endhighlight %}
 {% endtabs %}
 
-![Item template](../images/item-template.png)
+![Item template](../images/asp-core-mvc-mention-item-template.png)
 
 ## Display template
 
@@ -44,7 +44,7 @@ In the following sample, the selected value is displayed as a combined text of b
 {% endhighlight %}
 {% endtabs %}
 
-![display template](../images/display-template.png)
+![display template](../images/asp-core-mvc-mention-display-template.png)
 
 ## No records template
 
@@ -61,7 +61,7 @@ In the following sample, popup list content displays the notification of no data
 {% endhighlight %}
 {% endtabs %}
 
-![display template](../images/noRecord-template.png)
+![display template](../images/asp-core-mvc-mention-noRecord-template.png)
 
 ## Spinner template
 
@@ -78,7 +78,7 @@ In the following sample, customized spinner is shown while fetching the data fro
 {% endhighlight %}
 {% endtabs %}
 
-![display template](../images/spinner-template.png)
+![display template](../images/asp-core-mvc-mention-spinner-template.png)
 
 ## See Also
 

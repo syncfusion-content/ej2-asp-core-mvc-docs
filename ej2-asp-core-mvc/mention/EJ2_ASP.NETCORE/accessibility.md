@@ -39,4 +39,7 @@ You can use the following key shortcuts to access the Mention without interrupti
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/accessibility/keyboard-intraction/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/mention/accessibility/keyboard-intraction/SportsData.cs %}
+{% endhighlight %}
 {% endtabs %}

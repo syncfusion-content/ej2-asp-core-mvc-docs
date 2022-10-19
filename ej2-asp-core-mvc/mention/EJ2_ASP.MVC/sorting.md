@@ -19,8 +19,8 @@ In the following sample, the popup list data is rendered in `Descending` order.
 {% include code-snippet/mention/sorting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/sorting/sorting.cs %}
+{% include code-snippet/mention/sorting/EmailData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting](../images/sorting.png)
+![Sorting](../images/asp-core-mvc-mention-sorting.png)
