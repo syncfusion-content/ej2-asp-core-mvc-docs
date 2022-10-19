@@ -19,7 +19,7 @@
 
     function clickHandler() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imageEditorObj.select("Square");
+        imageEditorObj.rotate(90);
     }
 </script>
 

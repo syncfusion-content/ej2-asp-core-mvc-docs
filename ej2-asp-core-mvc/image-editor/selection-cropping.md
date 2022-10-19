@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection and Cropping in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Customiation in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Selection and Cropping in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection and Cropping
 publishingplatform: ##Platform_Name##

@@ -41,7 +41,7 @@ The Image Editor control opens an image by using base64, Image Data, or a hosted
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor.jpg)
+![ImageEditor Sample](images/image-editor-open.png)
 
 ## Save
 

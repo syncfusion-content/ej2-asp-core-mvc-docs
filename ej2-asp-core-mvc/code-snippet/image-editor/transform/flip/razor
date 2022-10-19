@@ -1,11 +1,7 @@
-@{
-    var imageTool = new string[] { };
-}
-
 <div class="col-lg-12 control-section e-img-editor-sample">
-    <ejs-imageeditor id="image-editor" created="created" toolbar="@imageTool"></ejs-imageeditor>
+    @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { }).Render()
 </div>
-<ejs-button id="btnClick" onclick="clickHandler()" cssClass="e-primary" content="Click"></ejs-button>
+@Html.EJS().Button("btnClick").CssClass("e-primary").Content("Click").Click("clickHandler").Render()
 
 <script>
     function created() {
@@ -19,7 +15,7 @@
 
     function clickHandler() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imageEditorObj.select("Square");
+        imageEditorObj.flip("Horizontal"); // Horizontal flip
     }
 </script>
 
