@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create Buttongroup With Rounded Corner in ##Platform_Name## Button Group Component
-description: Learn here all about how to create Buttongroup with Rounded Corner in Syncfusion ##Platform_Name## Button Group component of syncfusion and more.
+title: Buttongroup With Rounded Corner in ##Platform_Name## Button Group | Syncfusion
+description: Learn here all about how to create Buttongroup with Rounded Corner in Syncfusion ##Platform_Name## Button Group control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Create Buttongroup With Rounded Corner
 publishingplatform: ##Platform_Name##
@@ -19,9 +19,6 @@ The ButtonGroup with rounded corner has round edges on both sided. To ButtonGrou
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/round/demo/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/round/demo/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -36,3 +33,4 @@ The ButtonGroup with rounded corner has round edges on both sided. To ButtonGrou
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupHowToSample).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Export in ##Platform_Name## Pivot Table Component
+title: Excel Export in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Excel Export in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Export
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Excel Export
+# Excel Export in ##Platform_Name## Pivot Table Component
 
 The Excel export allows Pivot Table data to be exported as Excel document. To enable Excel export in the pivot table, set the [`allowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**. Once the API is set, user needs to call the `excelExport` method for exporting on external button click.
 
@@ -379,6 +379,36 @@ The event `excelHeaderQueryCellInfo` triggers on framing each header cell during
 {% endtabs %}
 {% endif %}
 
+
+### ExportComplete
+
+The event [`ExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportComplete) is triggered after the pivot table data has been exported to an Excel/CSV document. You can use this event to acquire blob stream data for further customization and processing at your end by passing the `isBlob` parameter as **true** when using the `excelExport` method. It has the following parameters:
+
+* `type` - It holds the current export type such as PDF, Excel, and CSV.
+* `promise` - It holds the promise object for blob data.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/excel-export/blob-export/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Blob-export.cs" %}
+{% include code-snippet/pivot-table/excel-export/blob-export/blob-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/excel-export/blob-export/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Blob-export.cs" %}
+{% include code-snippet/pivot-table/excel-export/blob-export/blob-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## See Also

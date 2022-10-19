@@ -1,5 +1,4 @@
 using Newtonsoft.Json;
-using Syncfusion.EJ2.Charts;
 
 namespace EJ2_Core_Application.Controllers
 {

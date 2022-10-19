@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Customize Colorpicker in ##Platform_Name## Color Picker Component
-description: Learn here all about how to customize Colorpicker in Syncfusion ##Platform_Name## Color Picker component of Syncfusion Essential JS 2 and more.
+title: Customize Colorpicker in ##Platform_Name## Color Picker Control | Syncfusion
+description: Learn here all about how to customize Colorpicker in Syncfusion ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Colorpicker
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize ColorPicker
+# Customize ColorPicker Control
 
 ## Custom palette
 
-By default, the Palette will be rendered with default colors. To load custom colors in the palette, specify the colors in the [`presetColors`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_PresetColors) property. To customize the color palette, add a custom class to palette tiles using [`beforeTileRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_BeforeTileRender) event.
+By default, the Palette will be rendered with default colors. To load custom colors in the palette, specify the colors in the [presetColors](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_PresetColors) property. To customize the color palette, add a custom class to palette tiles using [beforeTileRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_BeforeTileRender) event.
 
 The following sample demonstrates the above functionalities.
 
@@ -21,9 +21,6 @@ The following sample demonstrates the above functionalities.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/color-picker/custom-palette/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Custom-palette.cs" %}
-{% include code-snippet/color-picker/custom-palette/custom-palette.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -43,7 +40,7 @@ The following sample demonstrates the above functionalities.
 
 ## Hide input area from picker
 
-By default, the input area will be rendered in ColorPicker. To hide the input area from it, add `e-hide-value` class to ColorPicker using the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_CssClass) property.
+By default, the input area will be rendered in ColorPicker. To hide the input area from it, add `e-hide-value` class to ColorPicker using the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_CssClass) property.
 
 In the following sample, the ColorPicker is rendered without input area.
 
@@ -52,9 +49,6 @@ In the following sample, the ColorPicker is rendered without input area.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/color-picker/hide-input/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Hide-input.cs" %}
-{% include code-snippet/color-picker/hide-input/hide-input.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,9 +76,6 @@ Color picker handle shape and UI can be customized. Here, the handle has been cu
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/color-picker/custom-handle/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom-handle.cs" %}
-{% include code-snippet/color-picker/custom-handle/custom-handle.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -105,16 +96,13 @@ Color picker handle shape and UI can be customized. Here, the handle has been cu
 
 By default, the applied color will be updated in primary button of the color picker. You can customize that as `icon`.
 
-In the following sample, the `picker` icon is added to primary button and using [`change`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Change) event, the selected color will be updated in bottom portion of the icon.
+In the following sample, the `picker` icon is added to primary button and using [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Change) event, the selected color will be updated in bottom portion of the icon.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/color-picker/icon/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Icon.cs" %}
-{% include code-snippet/color-picker/icon/icon.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -144,9 +132,6 @@ The color picker input element can be showcased in the place of primary button. 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/color-picker/input/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Input.cs" %}
-{% include code-snippet/color-picker/input/input.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -173,9 +158,6 @@ The color picker UI can be customized in all possible ways. The following sample
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/color-picker/excel-ui/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Excel-ui.cs" %}
-{% include code-snippet/color-picker/excel-ui/excel-ui.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -191,3 +173,4 @@ The color picker UI can be customized in all possible ways. The following sample
 {% endif %}
 
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ColorPicker/CustomColorPickerSample).

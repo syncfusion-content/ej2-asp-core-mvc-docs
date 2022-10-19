@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Pivot Table Component
+title: Data Binding in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in ##Platform_Name## Pivot Table Component
 
 ## JSON
 
@@ -354,28 +354,59 @@ User can use `WebApiAdaptor` to bind pivot table with Web API created using ODat
 
 
 
+### Querying in Data Manager
+
+By default, the data manager retrieves all the data from the provider which is mapped in it. The data from the provider can be filtered, sorted, paged, etc. by setting the own query in `defaultQuery` property in the data manager instance.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ODataAdaptor.cs" %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/ODataAdaptor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ODataAdaptor.cs" %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/ODataAdaptor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Mapping
 
-One can define field information like alias name (caption), data type, aggregation type, show and hide subtotals etc. using the [`FieldMapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_FieldMapping) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) tag. The available options are,
-* `name` - It is to specify the appropriate field name.
-* `caption` - It is to set the alias name (caption) to the specific field. Instead of actual field name, the alias name (caption) will be set in the UI of the pivot table.
-* `type` - It is to display values in the pivot table with appropriate aggregation such as sum, product, count, average, minimum, maximum, etc. Its default value is **sum**. This option is applicable only for relational data source.
-* `axis` - It will help to display the field in specified axis such as row/column/value/filter axis of the pivot table.
-* `showNoDataItems` - It is to show all the members of a specific field to the pivot table, even if there are no data in the intersection of the row and column. The default value is **false**. This option is applicable only for relational data source.
-* `baseField` - For the aggregate types like "DifferenceFrom" or "PercentageOfDifferenceFrom" or "PercentageOfParentTotal", selective field is assigned for comparison via this property.
-* `baseItem` For the aggregate types like "DifferenceFrom" or "PercentageOfDifferenceFrom" or "PercentageOfParentTotal", selective member in a field is assigned for comparison via this property.
-* `expandAll` - It is to expand or collapse all headers of a specific field in row and column axes of the pivot table. The default value is **false**.
-* `showSubTotals` - It is to show or hide sub-totals of a specific field in row and column axis of the pivot table. The default value is **true**.
-* `isNamedSet` - It is to set whether the specified field is named set or not. In general, the named set is a set of dimension members or a set expression (MDX query) to be created as a dimension in the SSAS OLAP cube itself. The default value is **false** and this option is applicable only for OLAP data source.
-* `isCalculatedField` - It is to set whether the specified field is a calculated field or not. In general, a calculated field is created from the bound data source or using simple formula with basic arithmetic operators in the pivot table. The default value is **false** and this option is applicable only for OLAP data source.
+One can define field information like alias name (caption), data type, aggregation type, show and hide subtotals etc. using the [`fieldMapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_FieldMapping) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) tag. The available options are,
 
-* `showFilterIcon` - It is to show or hide the filter icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This filter icon is used to filter the members of a specified field at runtime in the pivot table. The default value is **true**.
-* `showSortIcon` - It is to show or hide the sort icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This sort icon is used to order members of a specified field either in ascending or descending at runtime. The default value is **true**.
-* `showRemoveIcon` - It is to show or hide the remove icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This remove icon is used to remove the specified field during runtime. The default value is **true**.
-* `showValueTypeIcon` - It is to show or hide the value type icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This value type icon helps to select the appropriate aggregation type to specified value field at runtime. The default value is **true**.
-* `showEditIcon` - It is to show or hide the edit icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This edit icon is used to modify caption, formula, and format of a specified calculated field at runtime. The default value is **true**.
-* `allowDragAndDrop` - It is to restrict specific field's button from being dragged on runtime in the grouping bar and field list UI. This will prevent from altering the current report. The default value is **true**.
-* `dataType` - It is to specify the type of the field like 'string', 'number', 'datetime', 'date', and 'boolean'.
+* [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_Name_System_String_) - It is to specify the appropriate field name.
+* [`caption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_Caption_System_String_) - It is to set the alias name (caption) to the specific field. Instead of actual field name, the alias name (caption) will be set in the UI of the pivot table.
+* [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_Type_Syncfusion_EJ2_PivotView_SummaryTypes_) - It is to display values in the pivot table with appropriate aggregation such as sum, product, count, average, minimum, maximum, etc. Its default value is **sum**. This option is applicable only for relational data source.
+* [`axis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_Axis_System_String_) - It will help to display the field in specified axis such as row/column/value/filter axis of the pivot table.
+* [`showNoDataItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_ShowNoDataItems_System_Boolean_) - It is to show all the members of a specific field to the pivot table, even if there are no data in the intersection of the row and column. The default value is **false**. This option is applicable only for relational data source.
+* [`baseField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_BaseField_System_String_) - For the aggregate types like "DifferenceFrom" or "PercentageOfDifferenceFrom" or "PercentageOfParentTotal", selective field is assigned for comparison via this property.
+* [`baseItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_BaseItem_System_String_) For the aggregate types like "DifferenceFrom" or "PercentageOfDifferenceFrom" or "PercentageOfParentTotal", selective member in a field is assigned for comparison via this property.
+* [`expandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_ExpandAll_System_Boolean_) - It is to expand or collapse all headers of a specific field in row and column axes of the pivot table. The default value is **false**.
+* [`showSubTotals`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_ShowSubTotals_System_Boolean_) - It is to show or hide sub-totals of a specific field in row and column axis of the pivot table. The default value is **true**.
+* [`isNamedSet`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_IsNamedSet_System_Boolean_) - It is to set whether the specified field is named set or not. In general, the named set is a set of dimension members or a set expression (MDX query) to be created as a dimension in the SSAS OLAP cube itself. The default value is **false** and this option is applicable only for OLAP data source.
+* [`isCalculatedField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_IsCalculatedField_System_Boolean_) - It is to set whether the specified field is a calculated field or not. In general, a calculated field is created from the bound data source or using simple formula with basic arithmetic operators in the pivot table. The default value is **false** and this option is applicable only for OLAP data source.
+
+* [`showFilterIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_ShowFilterIcon_System_Boolean_) - It is to show or hide the filter icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This filter icon is used to filter the members of a specified field at runtime in the pivot table. The default value is **true**.
+* [`showSortIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_ShowSortIcon_System_Boolean_) - It is to show or hide the sort icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This sort icon is used to order members of a specified field either in ascending or descending at runtime. The default value is **true**.
+* [`showRemoveIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_ShowRemoveIcon_System_Boolean_) - It is to show or hide the remove icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This remove icon is used to remove the specified field during runtime. The default value is **true**.
+* [`showValueTypeIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_ShowValueTypeIcon_System_Boolean_) - It is to show or hide the value type icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This value type icon helps to select the appropriate aggregation type to specified value field at runtime. The default value is **true**.
+* [`showEditIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_ShowEditIcon_System_Boolean_) - It is to show or hide the edit icon of a specific field which will be displayed on the button of the grouping bar and field list UI. This edit icon is used to modify caption, formula, and format of a specified calculated field at runtime. The default value is **true**.
+* [`allowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_AllowDragAndDrop_System_Boolean_) - It is to restrict specific field's button from being dragged on runtime in the grouping bar and field list UI. This will prevent from altering the current report. The default value is **true**.
+* [`dataType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_DataType_System_String_) - It is to specify the type of the field like 'string', 'number', 'datetime', 'date', and 'boolean'.
+* [`groupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_GroupName_System_String_) - It is to display fields in the field list UI by grouping them under the desired folder name.
 
 The main purpose of these mapping options is to configure each field that is not part of the initial pivot report. Even if any field that is part of this mapping is defined here, the value set in the initial report will have the highest preceding.
 
