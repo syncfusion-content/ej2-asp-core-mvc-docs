@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Grid Component
+title: Data Binding in ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,9 +9,10 @@ documentation: ug
 ---
 
 
-# Data Binding
+# Data Binding in Grid Control
 
 The Grid uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection.
+
 It supports the following kinds of data binding method:
 * List binding
 * DataTable binding
@@ -50,8 +51,7 @@ To add a custom parameter to the data request, use the `addParams` method of `Qu
 
 ## Handling HTTP error
 
-During server interaction from the grid, some server-side exceptions may occur, and you can acquire those error messages or exception details
-in client-side using the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event.
+During server interaction from the grid, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event.
 
 The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event contains the error details returned from the server.
 

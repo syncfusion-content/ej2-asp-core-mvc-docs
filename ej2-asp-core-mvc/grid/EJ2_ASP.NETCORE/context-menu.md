@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu in Syncfusion ##Platform_Name## Grid Component
+title: Context Menu in Syncfusion ##Platform_Name## Grid Control
 description: Learn here all about Context Menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Context Menu
@@ -63,8 +63,7 @@ Items| Description
 
 ## Custom context menu items
 
-The custom context menu items can be added by defining the [`contextMenuItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuItems) as a collection of **ContextMenuItemModel**.
-Actions for this customized items can be defined in the [`contextMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event.
+The custom context menu items can be added by defining the [`contextMenuItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuItems) as a collection of **ContextMenuItemModel**. Actions for this customized items can be defined in the [`contextMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

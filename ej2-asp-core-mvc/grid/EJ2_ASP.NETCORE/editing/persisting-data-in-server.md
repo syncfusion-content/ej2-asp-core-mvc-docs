@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persisting Data in Server in ##Platform_Name## Grid Component
+title: Persisting Data in Server in ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Persisting Data in Server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Persisting Data in Server
@@ -21,9 +21,9 @@ In the below section, we have explained how to get the edited data details on th
 
 ## Using URL adaptor
 
-You can use the **UrlAdaptor** of **DataManager** when binding data source from remote data.
-In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of **DataManager**.
-You can map The CRUD operation in grid can be mapped to server-side Controller actions using the properties **InsertUrl**, **RemoveUrl**, **UpdateUrl**, **CrudUrl** and **BatchUrl**.
+* You can use the **UrlAdaptor** of **DataManager** when binding data source from remote data.
+* In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of **DataManager**.
+* You can map The CRUD operation in grid can be mapped to server-side Controller actions using the properties **InsertUrl**, **RemoveUrl**, **UpdateUrl**, **CrudUrl** and **BatchUrl**.
 
 The following code example describes the above behavior.
 
@@ -234,8 +234,7 @@ Please refer to the following screenshot to know about the action parameter.
 
 ### Batch URL
 
-The **BatchUrl** property supports only for batch editing mode.
-You can specify the controller action mapping URL to perform batch operation on the server-side.
+The **BatchUrl** property supports only for batch editing mode. You can specify the controller action mapping URL to perform batch operation on the server-side.
 
 The following code example describes the above behavior.
 

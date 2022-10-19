@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change Orientation in ##Platform_Name## Menu Component
+title: Change Orientation in ##Platform_Name## Menu Control | Syncfusion
 description: Learn here all about Change Orientation in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Change Orientation
@@ -8,10 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Change orientation
+# Change orientation in Menu Control
 
-Orientation in menu items can be changed horizontally or vertically using the [`orientation`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~Orientation.html) property.
-By default, it is horizontally aligned.
+Orientation in menu items can be changed horizontally or vertically using the [`orientation`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~Orientation.html) property. By default, it is horizontally aligned.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
