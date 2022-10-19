@@ -364,8 +364,8 @@ By default, the data manager retrieves all the data from the provider which is m
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/data-binding/ODataAdaptor/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Web-api.cs" %}
-{% include code-snippet/pivot-table/data-binding/ODataAdaptor/web-api.cs %}
+{% highlight c# tabtitle="ODataAdaptor.cs" %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/ODataAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -375,8 +375,8 @@ By default, the data manager retrieves all the data from the provider which is m
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/data-binding/ODataAdaptor/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Web-api.cs" %}
-{% include code-snippet/pivot-table/data-binding/ODataAdaptor/web-api.cs %}
+{% highlight c# tabtitle="ODataAdaptor.cs" %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/ODataAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
