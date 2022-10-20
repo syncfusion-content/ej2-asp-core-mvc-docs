@@ -10,7 +10,7 @@ documentation: ug
 
 # Localization
 
-Mention component can be localized. Refer to [Localization](../../common/EJ2_ASP.MVC/localization.md) topic to localize Syncfusion ASP.NET MVC components.
+ASP.NET MVC Mention component can be localized. Refer to ASP.NET Core [Localization](../../common/EJ2_ASP.MVC/localization.md) topic to localize Syncfusion ASP.NET MVC components.
 
 ## See Also
 

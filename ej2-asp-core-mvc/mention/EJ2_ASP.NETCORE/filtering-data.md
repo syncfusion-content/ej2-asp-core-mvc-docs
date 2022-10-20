@@ -42,18 +42,18 @@ In the following examples, data filtering is done with `StartsWith` type.
 
 ## Allow spacing between search
 
-While filtering, you can allow the space in the middle of the mention while searching the data in the data source by using the [allowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the data source does not match with the mentioned element data, the popup will be hidden.
+While filtering the data in the data source, you can allow the space in the middle of the mention by using the [allowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the data source does not match with the mentioned element data, the popup will be hidden.
 
 > By default, the `allowSpaces` property is disabled, and the space ends the mention control search.
 
-In the following example, `allowSpaces` property is enabled and the filtering waits after the space action
+In the following example, `allowSpaces` property is enabled and the filtering waits after the space action.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/filtering-data/allow-space/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Email.cs" %}
-{% include code-snippet/mention/filtering-data/allow-space/Countries.cs %}
+{% include code-snippet/mention/filtering-data/allow-space/Employees.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,7 +61,7 @@ In the following example, `allowSpaces` property is enabled and the filtering wa
 
 ## Customize the suggestion item count
 
-With the large amount of data source data bound for the Mention control, you can customize the number of list items to be displayed in the popup by using the [suggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
+You can customize the number of list items to be displayed in the popup by using the [suggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
 
 In the following example, the suggestion list for the popup is limited to eight data.
 

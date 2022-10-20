@@ -1,11 +1,11 @@
 @model List<string>
 @{
     char nameMentionChar = '@';
-    var data = new EmailData().EmailList();
+    var data = new SportsData().SportsList();
 }
-<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user"></div>
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag sport"></div>
 
-@Html.EJS().Mention("Sorting").MentionChar(nameMentionChar).Target("#mentionElement").Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Name" }).DataSource((IEnumerable<object>)data).SortOrder(Syncfusion.EJ2.DropDowns.SortOrder.Descending).Render()
+@Html.EJS().Mention("Sorting").MentionChar(nameMentionChar).Target("#mentionElement").Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Game" , Value = "ID" }).DataSource((IEnumerable<object>)data).SortOrder(Syncfusion.EJ2.DropDowns.SortOrder.Descending).Render()
 
 <style>
 

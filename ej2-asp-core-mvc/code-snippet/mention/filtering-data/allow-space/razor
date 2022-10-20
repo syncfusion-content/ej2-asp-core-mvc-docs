@@ -1,11 +1,11 @@
 @model List<string>
 @{
     char nameMentionChar = '@';
-    var data = new Countries().GetData();
+    var data = new Employees().GetData();
 }
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag country"></div>
 
-@Html.EJS().Mention("Allow-Space").Target("#mentionElement").MentionChar(nameMentionChar).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Country" }).DataSource((IEnumerable<object>)data).AllowSpaces(true).Highlight(true).Render()
+@Html.EJS().Mention("Allow-Space").Target("#mentionElement").MentionChar(nameMentionChar).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Name" }).DataSource((IEnumerable<object>)data).AllowSpaces(true).Render()
 
 <style>
 

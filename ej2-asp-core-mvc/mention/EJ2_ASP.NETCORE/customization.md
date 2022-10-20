@@ -46,9 +46,11 @@ The following example displays the white space next to the text selected since t
 
 ## Configure the popup list
 
-By default, the width of the popup list adjusts automatically according to the mentioned suggestion list data width, and the height of the popup list is `300px`. They can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupHeight) and [popupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupWidth) properties respectively.
+You can customize the popup list width and height using the [popupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupHeight) and [popupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupWidth) properties.
 
-In the following sample, popup list's width and height are configured.
+By default, the popup list width value is set as `auto`. Depends on the mentioned suggestion list data, the width value is automatically adjust. The popup list height value is set as `300px`.
+
+In the following sample, popup list's width and height values are configured.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -59,6 +61,6 @@ In the following sample, popup list's width and height are configured.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core popup list customization](../images/asp-core-mvc-mention-popup-list.png)
+![ASP.NET Core popup list customization](../images/asp-core-mvc-mention-popup-list-customization.png)
 
 

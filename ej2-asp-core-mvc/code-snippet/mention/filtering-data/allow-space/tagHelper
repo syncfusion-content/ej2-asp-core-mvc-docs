@@ -1,11 +1,11 @@
 @{
-    var data = new Countries().GetData();
+    var data = new Employees().GetData();
     char nameMentionChar = '@';
 }
 
 <div id="mentionElement" placeholder = "Type @@ and tag country"></div>
-<ejs-mention id="comments" dataSource="@data" mentionChar="@nameMentionChar" target="#mentionElement" allowSpaces=true highlight=true>
-    <e-mention-fields text="Country"></e-mention-fields>
+<ejs-mention id="comments" dataSource="@data" mentionChar="@nameMentionChar" target="#mentionElement" allowSpaces=true>
+    <e-mention-fields text="Name"></e-mention-fields>
 </ejs-mention>
 
 
