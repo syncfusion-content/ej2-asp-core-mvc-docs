@@ -28,15 +28,15 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/customization/action-btn/alert/tagHelper %}
+{% include code-snippet/predefined-dialogs/customization/action-btn/alert/tagHelper %}
 {% endhighlight %}
 
 {% highlight cshtml tabtitle="Confirm.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/customization/action-btn/confirm/tagHelper %}
+{% include code-snippet/predefined-dialogs/customization/action-btn/confirm/tagHelper %}
 {% endhighlight %}
 
 {% highlight cshtml tabtitle="Prompt.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/customization/action-btn/prompt/tagHelper %}
+{% include code-snippet/predefined-dialogs/customization/action-btn/prompt/tagHelper %}
 {% endhighlight %}
 
 {% endtabs %}
@@ -70,15 +70,15 @@ Use the following code for **alert**, **confirm** and **prompt** to demonstrates
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/customization/show-hide-btn/alert/tagHelper %}
+{% include code-snippet/predefined-dialogs/customization/show-hide-btn/alert/tagHelper %}
 {% endhighlight %}
 
 {% highlight cshtml tabtitle="Confirm.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/customization/show-hide-btn/confirm/tagHelper %}
+{% include code-snippet/predefined-dialogs/customization/show-hide-btn/confirm/tagHelper %}
 {% endhighlight %}
 
 {% highlight cshtml tabtitle="Prompt.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/customization/show-hide-btn/prompt/tagHelper %}
+{% include code-snippet/predefined-dialogs/customization/show-hide-btn/prompt/tagHelper %}
 {% endhighlight %}
 
 {% endtabs %}
@@ -107,7 +107,7 @@ Use the following code to customize the dialog content to render the custom Text
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/customization/custom-content/tagHelper %}
+{% include code-snippet/predefined-dialogs/customization/custom-content/tagHelper %}
 {% endhighlight %}
 
 {% endtabs %}

@@ -282,7 +282,7 @@ Allows end user to align the content of the pivot table's row and column headers
 
 
 
-![output](images/textalign.png)
+![TextAlign](images/textalign.png)
 
 ## AutoFit
 
