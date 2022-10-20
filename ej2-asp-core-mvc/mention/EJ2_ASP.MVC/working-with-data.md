@@ -69,7 +69,7 @@ In the following example, `Code.Id` column and `Country.CountryId` column from c
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/working-with-data/complex-data/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Complex.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/working-with-data/complex-data/Complex.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -90,7 +90,7 @@ The following sample displays the first 6 contacts from `Customers` table of the
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/working-with-data/odata-v4-adaptor/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Complexdata.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/working-with-data/odata-v4-adaptor/v4-adaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -105,7 +105,7 @@ You can use `WebApiAdaptor` to bind mention with Web API created using OData end
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/working-with-data/web-api/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Complexdata.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/working-with-data/web-api/web-api.cs %}
 {% endhighlight %}
 {% endtabs %}

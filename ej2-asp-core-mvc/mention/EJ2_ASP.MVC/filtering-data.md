@@ -58,7 +58,7 @@ In the following example, `AllowSpaces` property is enabled and the filtering wa
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/filtering-data/allow-space/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Email.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/filtering-data/allow-space/Employees.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -75,7 +75,7 @@ In the following example, the suggestion list for the popup is limited to eight 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/filtering-data/suggestion-count/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Email.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/filtering-data/suggestion-count/EmailData.cs %}
 {% endhighlight %}
 {% endtabs %}

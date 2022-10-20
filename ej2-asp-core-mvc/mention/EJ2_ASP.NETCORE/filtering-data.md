@@ -52,7 +52,7 @@ In the following example, `allowSpaces` property is enabled and the filtering wa
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/filtering-data/allow-space/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Email.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/filtering-data/allow-space/Employees.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -69,7 +69,7 @@ In the following example, the suggestion list for the popup is limited to eight 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/filtering-data/suggestion-count/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Email.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/filtering-data/suggestion-count/EmailData.cs %}
 {% endhighlight %}
 {% endtabs %}
