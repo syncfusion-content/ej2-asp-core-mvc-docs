@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smithchart Axis in ##Platform_Name## Smithchart Component
+title: Smithchart Axis in ##Platform_Name## Smithchart Control | Syncfusion
 description: Learn here all about Smithchart Axis in Syncfusion ##Platform_Name## Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Smithchart Axis
@@ -51,6 +51,7 @@ Axis labels are used to denote what kind of data is bound for smithchart. Using 
 ## Gridlines
 
 To make the data in a chart that displays axes easier to read, you can display horizontal and radial axis gridlines. Gridlines extend from any horizontal and radial axes across the plot area of the smithchart.
+
 Both horizontal and radial axis are having support for major as well as minor gridlines. Major gridlines are drawn from the position in which labels are rendered. Minor gridlines are drawn between two major gridlines as per the count we set in settings.
 
 We can customize following things, in major as well as minor gridlines.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Convert Image Into Binary Format After Uploading in ##Platform_Name## Uploader Component
+title: Convert Image Into Binary in ##Platform_Name## Uploader | Syncfusion
 description: Learn here all about Convert Image Into Binary Format After Uploading in Syncfusion ##Platform_Name## Uploader component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Convert Image Into Binary Format After Uploading
@@ -11,7 +11,8 @@ documentation: ug
 
 # Convert image into binary format after uploading
 
-By default, the file upload control saves the uploaded image files in physical directories. Also, you can convert the images into binary format at server-side before saving the uploaded images. 
+By default, the file upload control saves the uploaded image files in physical directories. Also, you can convert the images into binary format at server-side before saving the uploaded images.
+
 To retrieve binary format of image files, convert the posted file’s input stream into binary reader and read as bytes using ReadBytes method.
 
 Refer to the below server-side code snippet

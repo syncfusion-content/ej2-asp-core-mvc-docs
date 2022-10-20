@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Spreadsheet Component
+title: Data Binding in ##Platform_Name## Spreadsheet Control | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -141,8 +141,7 @@ You can use WebApiAdaptor to bind spreadsheet with Web API created using OData e
 
 ## Cell data binding
 
-The Spreadsheet control can bind the data to individual cell in a sheet . To achive this you can use the
-`value` property.
+The Spreadsheet control can bind the data to individual cell in a sheet . To achive this you can use the `value` property.
 
 Refer to the following code example for cell data binding.
 

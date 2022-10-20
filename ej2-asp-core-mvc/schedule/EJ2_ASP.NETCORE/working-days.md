@@ -154,7 +154,7 @@ For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/ap
 
 
 
- **Note**: Enable the `showWeekNumber` property to configure the `weekRule` property. Also, the weekRule property depends on the value of the `firstDayOfWeek` property.
+> Enable the `showWeekNumber` property to configure the `weekRule` property. Also, the weekRule property depends on the value of the `firstDayOfWeek` property.
 
 ## Set working hours
 

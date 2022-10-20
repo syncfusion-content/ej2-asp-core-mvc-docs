@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markdown in ##Platform_Name## Rich Text Editor Component
+title: Markdown in ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn here all about Markdown in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Markdown
@@ -9,11 +9,12 @@ documentation: ug
 ---
 
 
-# Markdown
+# Markdown in RichTextEditor Control
 
 In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately.
 
 Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other.
+
 Rich Text Editor supports markdown editing when the [`editorMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_EditorMode_Syncfusion_EJ2_RichTextEditor_EditorMode_) set as `Markdown` and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text.
 
 ## Supported Commands
@@ -84,13 +85,11 @@ This sample demonstrates how to preview markdown changes in Rich Text Editor. Ty
 
 ## Table
 
-Rich Text Editor allows to insert Markdown table in edit panel with 2 X 2 rows and columns along with the heading.
-To use table tool, add the `CreateTable` item in toolbar items.
+Rich Text Editor allows to insert Markdown table in edit panel with 2 X 2 rows and columns along with the heading. To use table tool, add the `CreateTable` item in toolbar items.
 
 ### Insert Table
 
-To insert the table in Rich Text Editor, click the `table` toolbar option to insert the table into Rich Text Editor content and this is the default way in all the devices.
-Please refer the below sample and code snippets to add the table in Markdown editor
+To insert the table in Rich Text Editor, click the `table` toolbar option to insert the table into Rich Text Editor content and this is the default way in all the devices. Please refer the below sample and code snippets to add the table in Markdown editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

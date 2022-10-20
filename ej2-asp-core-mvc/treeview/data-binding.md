@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Treeview Component
+title: Data Binding in ##Platform_Name## Treeview Control | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -21,7 +21,8 @@ You can use the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ## Local data
 
-To bind local data to the TreeView, you can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeViewFieldsSettings~DataSource.html) property. 
+To bind local data to the TreeView, you can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeViewFieldsSettings~DataSource.html) property.
+
 The TreeView control requires three  fields (ID, text, and parentID) to render local data source. When mapper fields are not specified, it takes the default values as the mapping fields. Local data source can also be provided as an instance of the `DataManager`. It supports two kinds of local data binding methods.
 
 * Hierarchical data
