@@ -8,7 +8,7 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# Keyboard interaction in PDF Viewer
+# Keyboard interaction
 
 The ASP.NET MVC PDF Viewer supports the following keyboard interactions.
 
