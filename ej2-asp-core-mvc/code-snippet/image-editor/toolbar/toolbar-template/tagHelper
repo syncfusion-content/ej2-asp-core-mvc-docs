@@ -4,7 +4,7 @@
 
 
 <script id="toolTemplate" type="text/x-template">
-    <button id='dltbtn' content: 'Custom'></button>
+    <button id='custombtn' onclick="clickHandler()">Custom</button>
 </script>
 
 <script>
@@ -17,6 +17,10 @@
         }  
     }
 
+    function clickHandler() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.freeHandDraw(true);
+    }
 </script>
 
 <style>

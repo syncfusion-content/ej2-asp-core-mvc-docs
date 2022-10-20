@@ -57,7 +57,7 @@ The built-in toolbar can be customized using the `toolbar` property, so the spec
 
 Output be like the below.
 
-![ImageEditor Sample](/images/image-editor-custom.png)
+![ImageEditor Sample](/images/image-editor-custom-toolbar.png)
 
 ## Toolbar template
 
@@ -90,7 +90,7 @@ The toolbar of the Image Editor can be replaced with the user specific UI using 
 
 Output be like the below.
 
-![ImageEditor Sample](/images/image-editor-square.png)
+![ImageEditor Sample](/images/image-editor-template-toolbar.png)
 
 ## Customize Contextual Toolbar
 

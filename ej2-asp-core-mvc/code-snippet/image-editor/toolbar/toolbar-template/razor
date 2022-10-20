@@ -3,7 +3,7 @@
 </div>
 
 <script id="toolTemplate" type="text/x-template">
-    <button id='dltbtn' content: 'Custom'></button>
+    <button id='custombtn' onclick="clickHandler()">Custom</button>
 </script>
 
 <script>
@@ -14,6 +14,11 @@
         } else {
             imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
         }
+    }
+
+    function clickHandler() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.freeHandDraw(true);
     }
 </script>
 
