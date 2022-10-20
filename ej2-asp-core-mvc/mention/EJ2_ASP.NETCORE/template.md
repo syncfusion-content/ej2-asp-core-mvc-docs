@@ -68,7 +68,7 @@ In the following sample, customized spinner is shown while fetching the data fro
 {% endhighlight %}
 {% endtabs %}
 
-![display template](../images/spinner-template.png)
+![display template](../images/asp-core-mvc-mention-spinner-template.png)
 
 ## See Also
 

@@ -3,7 +3,7 @@
     char nameMentionChar = '@';
 }
 
-<div id="mentionElement" placeholder = "Type @@ and tag user"></div>
+<div id="mentionElement" placeholder = "Type @@ and tag country"></div>
 <ejs-mention id="comments" dataSource="@data" mentionChar="@nameMentionChar" target="#mentionElement" allowSpaces=true highlight=true>
     <e-mention-fields text="Country"></e-mention-fields>
 </ejs-mention>

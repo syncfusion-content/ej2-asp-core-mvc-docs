@@ -3,7 +3,7 @@
     var data = new Countries().GetData();
     char nameMentionChar = '@';
 }
-<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user"></div>
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag country"></div>
 
 @Html.EJS().Mention("Popup-Litst-Customize").Target("#mentionElement").MentionChar(nameMentionChar).DataSource((IEnumerable<object>)data).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Country" }).PopupWidth("250px").PopupHeight("200px").Render()
 
