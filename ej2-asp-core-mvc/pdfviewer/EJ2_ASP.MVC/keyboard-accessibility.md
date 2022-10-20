@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard accessibility support with EJ2 ASP.NET MVC PDF Viewer Control | Syncfusion
+title: Keyboard accessibility with EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 description: Learn here all about Keyboard accessibility in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Keyboard Accessibility
