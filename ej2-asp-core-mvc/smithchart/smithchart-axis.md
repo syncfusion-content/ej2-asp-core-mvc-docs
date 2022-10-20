@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Axis
+# Axis in SmithChart Control
 
 Like chart, Smithchart is having support for two types of axis.
 * Horizontal axis - axis drawn as straight line in the horizontal direction of the chart.

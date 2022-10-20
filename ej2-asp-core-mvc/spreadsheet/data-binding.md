@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding
+# Data Binding in Spreadsheet Control
 
 The Spreadsheet uses [`DataManager`](../data), which supports both RESTful JSON data services and local JavaScript object array binding to a range. The `dataSource` property can be assigned either with the instance of [`DataManager`](../data) or JavaScript object array collection.
 
