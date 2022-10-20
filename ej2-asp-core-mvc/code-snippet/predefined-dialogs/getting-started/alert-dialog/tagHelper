@@ -7,15 +7,15 @@
     document.getElementById('alertBtn').onclick = function () {
         document.getElementById("statusText").style.display = "none";
         ej.popups.DialogUtility.alert({
-            title: 'Low Battery',
-            content: '10% of battery remaining',
+            title: "Low battery",
+            content: "10% of battery remaining",
             okButton: { click: alertokClick },
-            position: { X: 'center', Y: 'center' }
+            position: { X: "center", Y: "center" }
         });
     };
     function alertokClick() {
         this.hide();
-        document.getElementById('statusText').innerHTML = "The user closed the Alert dialog.";
+        document.getElementById("statusText").innerHTML = "The user closed the Alert dialog.";
         document.getElementById("statusText").style.display = "block";
     }
 </script>

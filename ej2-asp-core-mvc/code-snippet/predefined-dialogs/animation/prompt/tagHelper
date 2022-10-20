@@ -4,8 +4,8 @@
 <script>
     document.getElementById('promptBtn').onclick = function () {
         ej.popups.DialogUtility.confirm({
-            title: 'Join Wi-Fi network',
-            content: '<p>Enter your name: </p><input id= "inputEle" type="text" name="Required" class="e-input" placeholder="Type here.." />',
+            title: "Join Wi-Fi network",
+            content: "<p>Enter your name: </p><input id= inputEle type=text name=Required class=e-input placeholder=Type here.. />",
             animationSettings: { effect: 'Zoom', duration: 400 }
         });
     };

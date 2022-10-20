@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stamp Annotation in ##Platform_Name## Pdfviewer Component
+title: Stamp Annotation in ##Platform_Name## Pdfviewer Control | Syncfusion
 description: Learn here all about Stamp Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Stamp Annotation
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Stamp Annotation in the ASP.NET Core PDF Viewer component
+# Stamp Annotation in the ASP.NET Core PDF Viewer Control
 
 The PDF Viewer control provides options to add, edit, delete, and rotate the following stamp annotation in the PDF documents:
 
@@ -54,6 +54,7 @@ In the pan mode, if the stamp annotation mode is entered, the PDF Viewer control
 The properties of the stamp annotation can be set before creating the control using the StampSettings.
 
 After editing the default opacity using the Edit Opacity tool, they will be changed to the selected values.
+
 Refer to the following code sample to set the default sticky note annotation settings.
 
 ```html
