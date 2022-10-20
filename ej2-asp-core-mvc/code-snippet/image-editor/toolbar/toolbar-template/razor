@@ -3,7 +3,7 @@
 </div>
 
 <script id="toolTemplate" type="text/x-template">
-    <button id='custombtn' onclick="clickHandler()">Custom</button>
+    <button id='custombtn' class="e-btn" onclick="clickHandler()">Custom</button>
 </script>
 
 <script>
