@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard accessibility in ##Platform_Name## Syncfusion|Pdfviewer Component
-description: Learn here all about Keyboard accessibility in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Keyboard accessibility with EJ2 ASP.NET Core PDF Viewer Control | Syncfusion
+description: Learn here all about Keyboard accessibility in ASP.NET Core Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Keyboard accessibility
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# Keyboard support in PDF Viewer
+# Keyboard interaction in PDF Viewer
 
 The ASP.NET Core PDF Viewer supports the following keyboard interactions.
 
