@@ -27,7 +27,7 @@ The following example displays the text content along with the customized mentio
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide mention character](../images/asp-core-mvc-mention-show-mention-char.png)
+![ASP.NET Core show or hide mention character](../images/asp-core-mvc-mention-show-mention-char.png)
 
 ## Adding the suffix character after selection
 
@@ -59,6 +59,6 @@ In the following sample, popup list's width and height are configured.
 {% endhighlight %}
 {% endtabs %}
 
-![Configure popup list](../images/asp-core-mvc-mention-popup-list.png)
+![ASP.NET Core popup list customization](../images/asp-core-mvc-mention-popup-list.png)
 
 

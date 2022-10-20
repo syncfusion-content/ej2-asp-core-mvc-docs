@@ -27,7 +27,7 @@ In the following sample, each list item is split into two columns to display rel
 {% endhighlight %}
 {% endtabs %}
 
-![Item template](../images/asp-core-mvc-mention-item-template.png)
+![ASP.NET MVC item template](../images/asp-core-mvc-mention-item-template.png)
 
 ## Display template
 
@@ -44,7 +44,7 @@ In the following sample, the selected value is displayed as a combined text of b
 {% endhighlight %}
 {% endtabs %}
 
-![display template](../images/asp-core-mvc-mention-display-template.png)
+![ASP.NET MVC display template](../images/asp-core-mvc-mention-display-template.png)
 
 ## No records template
 
@@ -61,7 +61,7 @@ In the following sample, popup list content displays the notification of no data
 {% endhighlight %}
 {% endtabs %}
 
-![display template](../images/asp-core-mvc-mention-noRecord-template.png)
+![ASP.NET MVC no record template](../images/asp-core-mvc-mention-noRecord-template.png)
 
 ## Spinner template
 
@@ -78,7 +78,7 @@ In the following sample, customized spinner is shown while fetching the data fro
 {% endhighlight %}
 {% endtabs %}
 
-![display template](../images/asp-core-mvc-mention-spinner-template.png)
+![ASP.NET MVC spinner template](../images/asp-core-mvc-mention-spinner-template.png)
 
 ## See Also
 

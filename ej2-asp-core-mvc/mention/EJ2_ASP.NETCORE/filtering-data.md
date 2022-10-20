@@ -24,7 +24,7 @@ The remote request does not fetch the search data until the search key contains 
 {% endhighlight %}
 {% endtabs %}
 
-![Minimum filter character](../images/asp-core-mvc-mention-minimum-filter-character.png)
+![ASP.NET Core minimum filter character](../images/asp-core-mvc-mention-minimum-filter-character.png)
 
 ## Change the filter type
 
@@ -38,7 +38,7 @@ In the following examples, data filtering is done with `StartsWith` type.
 {% endhighlight %}
 {% endtabs %}
 
-![Change filter type](../images/asp-core-mvc-mention-filter-type.png)
+![ASP.NET Core change filter type](../images/asp-core-mvc-mention-filter-type.png)
 
 ## Allow spacing between search
 
@@ -57,7 +57,7 @@ In the following example, `allowSpaces` property is enabled and the filtering wa
 {% endhighlight %}
 {% endtabs %}
 
-![Allow spacing between search](../images/asp-core-mvc-mention-allow-spacing.png)
+![ASP.NET Core allow spacing between search](../images/asp-core-mvc-mention-allow-spacing.png)
 
 ## Customize the suggestion item count
 
@@ -74,7 +74,7 @@ In the following example, the suggestion list for the popup is limited to eight 
 {% endhighlight %}
 {% endtabs %}
 
-![suggestion item count](../images/asp-core-mvc-mention-suggestion-count.png)
+![ASP.NET Core suggestion item count](../images/asp-core-mvc-mention-suggestion-count.png)
 
 ## See Also
 

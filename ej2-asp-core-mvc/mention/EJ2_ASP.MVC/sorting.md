@@ -23,4 +23,4 @@ In the following sample, the popup list data is rendered in `Descending` order.
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting](../images/asp-core-mvc-mention-sorting.png)
+![ASP.NET MVC sorting](../images/asp-core-mvc-mention-sorting.png)
