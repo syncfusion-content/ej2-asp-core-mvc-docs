@@ -20,9 +20,9 @@ The following ARIA attributes are used in the Message:
 
 ## Keyboard interaction
 
-The Message functionalities can be interactive when keyboard shortcuts are used.
+The Message functionalities can be interactive with keyboard shortcuts. The following keyboard shortcuts are supported by the Message.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Tab / Shift + Tab</kbd>  | To focus the close icon in the message.  |
-| <kbd>Enter / Space</kbd>  | Closes the focused close icon message. |
+| <kbd>Tab / Shift + Tab</kbd> | To focus the close icon in the message. |
+| <kbd>Enter / Space</kbd> | Closes the focused close icon's message. |

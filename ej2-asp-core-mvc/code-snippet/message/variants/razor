@@ -29,11 +29,11 @@
   .msg-variant-section .content-section {
     margin: 0 auto;
     max-width: 520px;
-    padding-top: 10px;
+    padding: 10px;
   }
   
   .msg-variant-section .e-message {
-    margin: 10px;
+    margin: 10px 0;
   }
   
   .msg-variant-section {

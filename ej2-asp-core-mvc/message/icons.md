@@ -10,13 +10,15 @@ documentation: ug
 
 # Icons
 
-The Message has an option to customize the appearance with icons. This section explains about the custom and close icon of the message.
+This section explains how to show or hide the close icon and add the custom severity icon to the message.
 
 ## Close icon
 
-The Message can be rendered with and without the close icon. The close icon is used to hide the message. If the user want to hide the messages after reading it, it can be achieved through these close icon.
+The message can be rendered with or without the close icon. The close icon is used to hide the message, either by manually clicking the close icon or through keyboard interaction.
 
-To show the close icon in the message, set the `showCloseIcon` property to `true` to make it visible.
+By default, the close icon is not rendered in the message. To show the close icon, set the `showCloseIcon` property to `true`.
+
+In the following example, the messages are rendered with the close icon.
 
 The following example demonstrates the message with close icon.
 
@@ -44,9 +46,9 @@ The following example demonstrates the message with close icon.
 
 ## Custom icon
 
-By default, the severity icons can be displayed according to the severity type to make the user more understandable by visual information better than text. If the user wants to customize these icons, then it can be achieved through `cssClass` property.
+By default, the severity icons can be displayed according to the severity type to make the user more understandable by visual information rather than text. If the user wants to customize these icons, then it can be achieved through `cssClass` property.
 
-The following example demonstrates the default message is rendered with a custom severity icon and custom appearance.
+The following example demonstrates how the default message is rendered with a custom severity icon and custom appearance.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

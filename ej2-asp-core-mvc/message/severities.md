@@ -10,9 +10,11 @@ documentation: ug
 
 # Severities
 
-This section explains the message with different severity types. The user can displays messages with different severity levels to denote the importance and context of the message based on the `severity` property.
+The severity denotes the importance and context of the message to the user. The message contains different severity types. Use the `severity` property, to display the messages with different severity levels.
 
-The available severity types are **Normal**, **Success**, **Info**, **Warning** and **Error**. The default severity type for message is **Normal**.
+The available severity types are **Normal**, **Success**, **Info**, **Warning** and **Error**. The default severity type for messages is **Normal**.
+
+The following example demonstrates the messages with different severity types.
 
 The following example demonstrates the messages with different severity types.
 
@@ -38,7 +40,7 @@ The following example demonstrates the messages with different severity types.
 
 ![Message Control Severity Icon](images/message-severity-icon.png)
 
-By default, severity icons can be displayed according to the severity type to make the user more understandable by visual information better than text. If the user does not wants to show the severity icons, it can be removed by setting `false` to `showIcon` property.
+By default, severity icons can be displayed according to the severity types to make the user more understandable by visual information rather than text. To hide the severity icons, set the `showIcon` property to `false`.
 
 The following example demonstrates the different severity messages without the severity icons.
 

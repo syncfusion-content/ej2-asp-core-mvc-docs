@@ -1,6 +1,5 @@
 <div class="col-lg-12 control-section msg-custom-section">
   <div class="content-section">
-    <h4>Custom Message with Icon</h4>
     <ejs-message id="msg_icon" cssClass="custom">
       <e-content-template>
         <div>
