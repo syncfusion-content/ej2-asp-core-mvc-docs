@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Annotation
+# Annotation  in Image Editor control
 
 The Image Editor has multiple annotations support including text, freehand drawings, and shapes such as rectangles, ellipses, and lines.
 
