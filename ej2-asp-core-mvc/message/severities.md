@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Severities
+# Severities in Message control
 
 The severity denotes the importance and context of the message to the user. The message contains different severity types. Use the `severity` property, to display the messages with different severity levels.
 

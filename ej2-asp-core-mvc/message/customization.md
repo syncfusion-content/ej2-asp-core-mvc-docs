@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customization
+# Customization in Message control
 
 The Message control allows you to customize the content display positions and its appearance. This section explains the details about changing the content alignments and border styles for messages.
 

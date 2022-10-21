@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Variants
+# Variants in Message control
 
 The Message has predefined appearance variants for different visual representations. The message can be displayed with different appearance variants based on the `variant` property.
 

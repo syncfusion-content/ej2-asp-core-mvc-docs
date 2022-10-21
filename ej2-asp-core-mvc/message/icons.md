@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons
+# Icons in Message control
 
 This section explains how to show or hide the close icon and add the custom severity icon to the message.
 
