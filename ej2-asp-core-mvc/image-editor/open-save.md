@@ -41,7 +41,7 @@ The Image Editor control opens an image by using base64, Image Data, or a hosted
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-open.png)
+![ImageEditor Sample](images/image-editor-open.jpg)
 
 ## Save
 
@@ -80,4 +80,4 @@ The `export` method is used to save the modified image as an image, and it accep
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-save.png)
+![ImageEditor Sample](images/image-editor-save.jpg)

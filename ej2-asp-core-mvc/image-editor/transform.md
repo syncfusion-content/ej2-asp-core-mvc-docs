@@ -49,7 +49,7 @@ In the following example, the `rotate` method is used to rotate the image.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-rotate.png)
+![ImageEditor Sample](images/image-editor-rotate.jpg)
 
 ## Flip
 
@@ -88,7 +88,7 @@ In the following example, the `flip` method is used to flip the image.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-flip.png)
+![ImageEditor Sample](images/image-editor-flip.jpg)
 
 ## Zoom
 
@@ -137,4 +137,4 @@ In the following example, you can using the `zoom` method and `pan` method in th
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-panning.png)
+![ImageEditor Sample](images/image-editor-panning.jpg)

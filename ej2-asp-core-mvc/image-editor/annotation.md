@@ -63,7 +63,7 @@ In the following example, you can using the drawText method in the button click 
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-text.png)
+![ImageEditor Sample](images/image-editor-text.jpg)
 
 ## Freehand Draw
 
@@ -100,7 +100,7 @@ In the following example, the `freeHandDraw` method is used to toggle the freeha
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-freehand-draw.png)
+![ImageEditor Sample](images/image-editor-freehand-draw.jpg)
 
 ## Shapes
 
@@ -155,7 +155,7 @@ In the following example, the `drawRectangle` method is used to draw the rectang
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-rectangle.png)
+![ImageEditor Sample](images/image-editor-rectangle.jpg)
 
 ### Ellipse
 
@@ -206,7 +206,7 @@ In the following example, the `drawEllipse` method is used to draw the ellipse.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-ellipse.png)
+![ImageEditor Sample](images/image-editor-ellipse.jpg)
 
 ### Line
 
@@ -255,4 +255,4 @@ In the following example, the `drawLine` method is used to draw the line.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-line.png)
+![ImageEditor Sample](images/image-editor-line.jpg)
