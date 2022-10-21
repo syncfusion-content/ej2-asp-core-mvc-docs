@@ -1,0 +1,77 @@
+<div class="col-lg-12 control-section e-img-editor-sample">
+    <ejs-imageeditor id="image-editor" created="created" locale="de-DE"></ejs-imageeditor>
+</div>
+
+<script>
+ej.base.L10n.load({
+        'de-DE': {
+        'image-editor': {
+            'Browse': 'Durchsuche',
+            'Crop': 'Ernte',
+            'ZoomIn': 'Hineinzoomen',
+            'ZoomOut': 'Rauszoomen',
+            'Transform': 'Verwandeln',
+            'Annotation': 'Anmerkung',
+            'Text': 'Text hinzufügen',
+            'Pen': 'Stift',
+            'Reset': 'Zurücksetzen',
+            'Save': 'Speichern',
+            'Select': 'Auswählen',
+            'RotateLeft': 'Nach links drehen',
+            'RotateRight': 'Drehe nach rechts',
+            'HorizontalFlip': 'Horizontaler Flip',
+            'VerticalFlip': 'Vertikaler Flip',
+            'OK': 'OK',
+            'Cancel': 'Absagen',
+            'FillColor': 'Füllfarbe',
+            'StrokeColor': 'Strichfarbe',
+            'StrokeWidth': 'Strichbreite',
+            'FontFamily': 'Schriftfamilie',
+            'FontStyle': 'Schriftstil',
+            'FontSize': 'Schriftgröße',
+            'FontColor': 'Schriftfarbe',
+            'Pan': 'Pfanne',
+            'Move': 'Bewegen',
+            'Custom': 'Brauch',
+            'Square': 'Quadrat',
+            'Circle': 'Kreis',
+            'Rectangle': 'Rechteck',
+            'Line': 'Linie',
+            'Default': 'Standard',
+            'Bold': 'Fett gedruckt',
+            'Italic': 'Kursiv',
+            'BoldItalic': 'Fett Kursiv',
+        }
+    }
+    });
+    function created() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        if (ej.base.Browser.isDevice) {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+        } else {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+        }
+    }
+</script>
+
+<style>
+    .image-editor {
+        margin: 0 auto;
+    }
+
+    .e-img-editor-sample {
+        height: 80vh;
+        width: 100%;
+    }
+
+    @@media only screen and (max-width: 700px) {
+        .e-img-editor-sample {
+            height: 75vh;
+            width: 100%;
+        }
+    }
+
+    .control-wrapper {
+        height: 100%;
+    }
+</style>
