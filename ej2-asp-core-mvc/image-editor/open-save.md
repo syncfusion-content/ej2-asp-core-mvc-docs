@@ -80,4 +80,4 @@ The `export` method is used to save the modified image as an image, and it accep
 
 Output be like the below.
 
-![ImageEditor Sample](/images/image-editor-save.png)
+![ImageEditor Sample](images/image-editor-save.png)

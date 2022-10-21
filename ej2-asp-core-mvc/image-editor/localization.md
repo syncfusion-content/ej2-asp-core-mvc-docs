@@ -81,4 +81,3 @@ The following list of properties and its values are used in the Image  Editor.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
