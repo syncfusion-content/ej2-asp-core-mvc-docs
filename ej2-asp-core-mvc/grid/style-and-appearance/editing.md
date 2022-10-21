@@ -66,20 +66,14 @@ Use the below CSS to customize the command column buttons such as edit, delete, 
 
 ```css
 
-.e-grid .e-edit::before {
-    color: #deecf9;
+.e-grid .e-edit::before, .e-grid .e-delete::before {
+    color: #FF8787;
 }
 
-.e-grid .e-delete::before {
-    color: #deecf9;
-}
-
-.e-grid .e-update::before {
-    color: #0078d7;
-}
-
-.e-grid .e-cancel-icon::before {
+.e-grid .e-update::before, .e-grid .e-cancel-icon::before {
     color: #0078d7;
 }
 
 ```
+
+![Customize command column button](../images/commandbutton.jpg)
