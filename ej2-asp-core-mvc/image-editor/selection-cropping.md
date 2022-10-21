@@ -49,7 +49,7 @@ In the following example, the `select` method is used in the button click to the
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-custom.png)
+![ImageEditor Sample](images/image-editor-custom.jpg)
 
 ## Square
 
@@ -82,7 +82,7 @@ In the following example, the `select` method is used in the button click to the
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-square.png)
+![ImageEditor Sample](images/image-editor-square.jpg)
 
 ## Circle
 
@@ -115,7 +115,7 @@ In the following example, the `select` method is used in the button click to the
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-circle.png)
+![ImageEditor Sample](images/image-editor-circle.jpg)
 
 ## Ratio
 
@@ -148,7 +148,7 @@ In the following example, the `select` method is used in the button click to the
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-ratio.png)
+![ImageEditor Sample](images/image-editor-ratio.jpg)
 
 ## Cropping
 
@@ -183,4 +183,4 @@ In the following example, the `select` and `crop` method is used in the button c
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-cropping.png)
+![ImageEditor Sample](images/image-editor-cropping.jpg)
