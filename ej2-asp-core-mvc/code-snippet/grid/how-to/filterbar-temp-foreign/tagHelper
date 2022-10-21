@@ -34,7 +34,7 @@ function write (args) {
                 grid.filterByColumn('EmployeeID', 'equal', args.value);
             }
             else {
-                grid.clearFiltering("EmployeeID");
+                grid.clearFiltering(['EmployeeID']);
             }
         }
     });
