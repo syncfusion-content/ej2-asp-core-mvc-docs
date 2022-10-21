@@ -57,7 +57,7 @@ The built-in toolbar can be customized using the `toolbar` property, so the spec
 
 Output be like the below.
 
-![ImageEditor Sample](/images/image-editor-custom-toolbar.png)
+![ImageEditor Sample](images/image-editor-custom-toolbar.jpg)
 
 ## Toolbar template
 
@@ -90,7 +90,7 @@ The toolbar of the Image Editor can be replaced with the user specific UI using 
 
 Output be like the below.
 
-![ImageEditor Sample](/images/image-editor-template-toolbar.png)
+![ImageEditor Sample](images/image-editor-template-toolbar.jpg)
 
 ## Customize Contextual Toolbar
 
@@ -123,4 +123,4 @@ In the following example, the contextual toolbar for rectangle will be rendered 
 
 Output be like the below.
 
-![ImageEditor Sample](/images/image-editor-contextual-toolbar.png)
+![ImageEditor Sample](images/image-editor-contextual-toolbar.jpg)

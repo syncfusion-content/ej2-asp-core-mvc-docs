@@ -43,4 +43,4 @@ The following operations are supported in the Image Editor:
 
 Output be like the below.
 
-![ImageEditor Sample](/images/image-editor-text.png)
+![ImageEditor Sample](../images/image-editor.jpg)
