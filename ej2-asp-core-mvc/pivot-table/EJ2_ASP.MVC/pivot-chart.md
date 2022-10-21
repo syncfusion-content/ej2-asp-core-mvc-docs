@@ -593,7 +593,7 @@ In the following code sample, the pivot chart can be seen as a single chart with
 
 ### Show member based chart series
 
-When multiple axes are enabled, the user can create each chart series with a unique color palette based on members by setting the [`showMemberSeries`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowMemberSeries) property in [`chartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) to **true**. As a result, user can easily identify each member enclosed chart series consistently across different measures in the entire chart area.
+When multiple axes are enabled, the user can create each chart series with a unique color palette based on members by setting the [`ShowMemberSeries`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowMemberSeries) property in [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) to **true**. As a result, user can easily identify each member enclosed chart series consistently across different measures in the entire chart area.
 
 Furthermore, with a single click over the legend item, you can show or hide specific chart series visibility based on members across different measures in the entire chart area.
 
@@ -622,7 +622,7 @@ Furthermore, with a single click over the legend item, you can show or hide spec
 
 
 
-![output](images/showMemberSeries.png)
+![Chart series displayed with same colors for same points/members](images/showMemberSeries.png)
 
 ## Series Customization
 

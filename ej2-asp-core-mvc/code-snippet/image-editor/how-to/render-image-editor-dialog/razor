@@ -1,0 +1,101 @@
+<div class="col-lg-12 control-section e-img-editor-sample">
+    <div class="e-profile">
+        <div class="e-custom-wrapper">
+            <canvas id="img-canvas" style="max-width: 200px; max-height: 200px;"></canvas>
+            <img alt="img" id="custom-img" crossorigin="anonymous" src="https://ej2.syncfusion.com/demos/src/image-editor/images/profile.png"
+                 style="display: none;" />
+            <input type="file" id="img-upload" style="display:none" />
+            <span id="custom-edit" class="e-custom-edit">
+                <span class="e-custom-icon sb-icons"></span>
+            </span>
+        </div>
+    </div>
+</div>
+<div id="profile-dialog">
+    @Html.EJS().Dialog("dialog").Header("Edit Profile Image").Open("dialogOpen").Visible(false).CloseOnEscape(true).ShowCloseIcon(true).Width("340px").Height("420").Position(obj => obj.X("center").Y("100")).Target(".control-section").ContentTemplate(@<div class='dlg-content'>@Html.EJS().ImageEditor("image-editor").Created("created").FileOpened("imageEditorOpen").Toolbar(ViewBag.imageTool).Render()</div>).Buttons(ViewBag.ImageButton).Render()
+</div>
+
+<script>
+    var img = document.querySelector('#custom-img');
+    img.onload = function () {
+        var canvas = document.querySelector('#img-canvas');
+        var ctx = canvas.getContext('2d');
+        canvas.width = img.width < img.height ? img.width : img.height;
+        canvas.height = canvas.width;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    };
+
+    function imageEditorOpen() {
+        var imageEditor = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditor.select('circle');
+    }
+
+    function openBtn() {
+        document.getElementById('img-upload').click();
+    }
+
+    function resetBtn() {
+        var imageEditor = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditor.reset();
+    }
+
+    function rotateBtn() {
+        var imageEditor = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditor.rotate(-90);
+    }
+
+    function doneBtn() {
+        var imageEditor = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditor.crop();
+        var croppedData = imageEditor.getImageData();
+        var canvas = document.querySelector('#img-canvas');
+        var ctx = canvas.getContext('2d');
+        var parentDiv = document.querySelector('.e-profile');
+        var tempCanvas = parentDiv.appendChild(ej.base.createElement('canvas'));
+        var tempContext = tempCanvas.getContext('2d');
+        tempCanvas.width = croppedData.width;
+        tempCanvas.height = croppedData.height;
+        tempContext.putImageData(croppedData, 0, 0);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(tempCanvas, 0, 0, canvas.width, canvas.height);
+        tempCanvas.remove();
+        parentDiv.style.borderRadius = '100%';
+        canvas.style.backgroundColor = '#fff';
+        var dialogObj = ej.base.getComponent(document.getElementById('dialog'), 'dialog');
+        dialogObj.hide();
+    }
+
+    function created() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.theme = window.location.href.split('#/')[1];
+    }
+
+    function dialogOpen() {
+        var canvas = document.querySelector('#img-canvas');
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.update();
+        imageEditorObj.open(canvas.toDataURL());
+    }
+
+    document.getElementById('custom-edit').onclick = function () {
+        var imgEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        var dialogObj = ej.base.getComponent(document.getElementById('dialog'), 'dialog');
+        imgEditorObj.update();
+        dialogObj.show();
+    };
+
+    document.getElementById('img-upload').onchange = function (args) {
+        var URL = window.URL;
+        var url = URL.createObjectURL(args.target.files[0]);
+        var imageEditor = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditor.open(url.toString());
+        document.getElementById('img-upload').value = null;
+    };
+
+    document.getElementsByClassName('control-section')[0].onclick = function (args) {
+        var dialogObj = ej.base.getComponent(document.getElementById('dialog'), 'dialog');
+        if (args.target && (args.target.className.indexOf('e-img-editor-sample') > -1 || args.target.className.indexOf('sb-content') > -1)) {
+            dialogObj.hide();
+        }
+    };
+</script>
