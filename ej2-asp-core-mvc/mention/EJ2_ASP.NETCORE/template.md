@@ -10,11 +10,13 @@ documentation: ug
 
 # Templates
 
-The Mention has been provided with several options to customize each list item, display item and waiting popup. It uses the Essential JS 2 [Template engine](../../common/template-engine) to compile and render the elements properly.
+The Mention has been provided with several options to customize each suggestion list item, display item, and data loading indication.
 
 ## Item template
 
 The content of each list item in Mention can be customized using [itemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ItemTemplate) property.
+
+In the following sample, each list item is split into two columns to display relevant data using `itemTemplate`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

@@ -12,8 +12,6 @@ documentation: ug
 
 By default, the `showMentionChar` which does not display the text content with the mentioned character is disabled. If the property [showMentionChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ShowMentionChar) is enabled, it allows to display the respective [mentionChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) configured along with the text content opted from the suggested list to display.
 
-The following example displays the text content along with the customized mentioned character as **#**.
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/customization/mention-char-customization/tagHelper %}
@@ -28,8 +26,6 @@ The following example displays the text content along with the customized mentio
 ## Adding the suffix character after selection
 
 The Mention has support to specify the custom suffix to append alongside with the mentioned selected item while inserting. You can append space or new line character as [suffixText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuffixText).
-
-The following example displays the white space next to the text selected since the suffixText is configured as `&nbsp;`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -57,4 +53,8 @@ By default, the popup list width value is set as `auto`. Depends on the mentione
 
 ![ASP.NET Core popup list customization](../images/asp-core-mvc-mention-popup-list-customization.png)
 
+## Trigger character
 
+You can customize the trigger character by using the [mentionChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) property in the Mention control. The trigger character triggers the suggestion list to display in the target area.
+
+By default, the [mentionChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) is `@`.

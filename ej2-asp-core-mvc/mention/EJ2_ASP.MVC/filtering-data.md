@@ -67,8 +67,7 @@ While filtering the data in the data source, you can allow the space in the midd
 
 ## Customize the suggestion item count
 
-You can customize the number of list items to be displayed in the popup by using the [SuggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
-
+While filtering, you can customize the number of list items to be displayed in the suggestion list by using the [SuggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
