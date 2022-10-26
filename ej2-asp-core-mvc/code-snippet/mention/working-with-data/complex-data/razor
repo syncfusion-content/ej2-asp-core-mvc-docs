@@ -5,7 +5,7 @@
 }
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag country"></div>
 
-@Html.EJS().Mention("Complex-data-biding").MentionChar(nameMentionChar).Target("#mentionElement").DataSource((IEnumerable<object>)data).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Country.CountryId", Value = "Code.Id" }).Render()
+@Html.EJS().Mention("Complex-data-biding").MentionChar(nameMentionChar).Target("#mentionElement").DataSource((IEnumerable<object>)data).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Country.Name", Value = "Code.Id" }).Render()
 
 <style>
 

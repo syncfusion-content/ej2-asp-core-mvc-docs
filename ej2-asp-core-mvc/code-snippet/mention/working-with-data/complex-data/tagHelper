@@ -5,7 +5,7 @@
 }
 <div id="mentionElement" placeholder = "Type @@ and tag country"></div>
 <ejs-mention id="comments" mentionChar="@nameMentionChar" dataSource="@data" target="#mentionElement" >
-    <e-mention-fields value="Code.Id" text="Country.CountryId"></e-mention-fields>
+    <e-mention-fields value="Code.Id" text="Country.Name"></e-mention-fields>
 </ejs-mention>
 
 

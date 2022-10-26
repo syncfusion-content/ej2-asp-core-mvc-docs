@@ -44,7 +44,7 @@ The Mention has provided support to load an array of primitive data such as stri
 
 ### 2. Array of JSON data
 
-The Mention can generate its list items through an array of complex data. Therefore the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
+The Mention can generate its list of items through an array of JSON data. Therefore the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
 
 In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -63,7 +63,7 @@ In the following example, `Id` column and `Game` column from complex data have b
 
 The Mention can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
 
-In the following example, `Code.Id` column and `Country.CountryId` column from complex data have been mapped to the `value` field and `text` field, respectively.
+In the following example, `Code.Id` column and `Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
