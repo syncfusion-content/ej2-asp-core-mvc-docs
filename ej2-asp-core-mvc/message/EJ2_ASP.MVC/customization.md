@@ -42,9 +42,9 @@ The following example demonstrates the message with different content alignments
 
 ## Rounded and Square
 
-To customize the Message control's appearance, add the custom class to the message through `cssClass` property. This custom class will be added to the root element. Based on this custom class, the user can override the styles of the message at the application level.
+To customize the Message control's appearance, add the custom class to the message through `CssClass` property. This custom class will be added to the root element. Based on this custom class, the user can override the styles of the message at the application level.
 
-The following example shows the rounded and squared appearance of the message, which can be achieved through adding the `cssClass` property.
+The following example shows the rounded and squared appearance of the message, which can be achieved through adding the `CssClass` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -70,7 +70,34 @@ The following example shows the rounded and squared appearance of the message, w
 
 ## CSS Message
 
-The Essential JS 2 Message has the following predefined classes that can be defined in the HTML elements, which renders the message without any script reference.
+The Essential JS 2 Message has predefined CSS classes that can be defined in the HTML elements, which renders the message without any script reference. This can be used to display the simple message with content and makes the code lighter.
+
+The below DOM structure is required to display the simple message with content.
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<div class="e-message">
+    <div class="e-msg-content">..content..</div>
+</div>
+
+{% endhighlight %}
+{% endtabs %}
+
+The below DOM structure is required to display the simple message with content and severity icon.
+
+{% tabs %}
+{% highlight c# tabtitle="CSHTML" %}
+
+<div class="e-message">
+    <span class="e-msg-icon"></span>
+    <div class="e-msg-content">..content..</div>
+</div>
+
+{% endhighlight %}
+{% endtabs %
+
+The following is the available list of predefined CSS classes to make the appearance of a message.
 
 | Class | Description |
 | -------- | -------- |
