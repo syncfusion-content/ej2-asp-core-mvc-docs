@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging in ##Platform_Name## Grid Component
+title: Paging in ##Platform_Name## Grid Control
 description: Learn here all about Paging in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Paging
@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# Paging
+# Paging in Grid Control
 
-Paging provides an option to display Grid data in page segments. To enable paging, set the [`allowPaging`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowPaging) to true. When paging is enabled, pager component renders at the bottom of the grid.
-Paging options can be configured through the [`e-page-settings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PageSettings) tag helper.
+Paging provides an option to display Grid data in page segments. To enable paging, set the [`allowPaging`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowPaging) to true. When paging is enabled, pager component renders at the bottom of the grid. Paging options can be configured through the [`e-page-settings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PageSettings) tag helper.
 
 In the below sample, `pageSize` is calculated based on the grid height by using the [`load`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) event.
 
@@ -45,9 +44,7 @@ In the below sample, `pageSize` is calculated based on the grid height by using 
 
 ## Template
 
-You can use custom elements inside the pager instead of default elements.
-The custom elements can be defined by using the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_Template) property of **e-page-settings** tag helper.
-Inside this template, you can access the **CurrentPage**, **PageSize**, **TotalPage** and **TotalRecordCount** values.
+You can use custom elements inside the pager instead of default elements. The custom elements can be defined by using the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_Template) property of **e-page-settings** tag helper. Inside this template, you can access the **CurrentPage**, **PageSize**, **TotalPage** and **TotalRecordCount** values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State Persistence in ##Platform_Name## Gantt Component
+title: State Persistence in ##Platform_Name## Gantt Control | Syncfusion
 description: Learn here all about State Persistence in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: State Persistence
@@ -12,7 +12,7 @@ documentation: ug
 # State Persistence Feature
 
 State persistence refers to the Gantt's state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
-State persistence stores gantt’s model object in the local storage when the [`enablePersistence`]([https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~EnablePersistence.html](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html) is defined as true.
+State persistence stores gantt’s model object in the local storage when the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnablePersistence) is defined as true.
 
 ## Get or set localStorage value
 
