@@ -11,7 +11,6 @@ namespace WebApplication1.Controllers
     {
         public ActionResult complexdata()
         {
-            ViewBag.data = new Complex().GetData();
             return View();
         }
     }

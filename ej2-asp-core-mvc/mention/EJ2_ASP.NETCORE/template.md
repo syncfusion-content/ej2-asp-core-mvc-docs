@@ -10,15 +10,13 @@ documentation: ug
 
 # Templates
 
-The Mention has been provided with several options to customize each list item, display item and waiting popup. It uses the Essential JS 2 [Template engine](../../common/template-engine) to compile and render the elements properly.
+The Mention has been provided with several options to customize each suggestion list item, display item, and data loading indication.
 
 ## Item template
 
-The content of each list item within the Mention can be customized with the help of [itemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ItemTemplate) property.
+The content of each list item in the Mention can be customized using the [itemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_ItemTemplate) property.
 
-In the following sample, each list item is split into two columns to display relevant data.
-
-{% if page.publishingplatform == "aspnet-core" %}
+In the following sample, each list item is split into two columns to display relevant data using `itemTemplate`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -26,13 +24,13 @@ In the following sample, each list item is split into two columns to display rel
 {% endhighlight %}
 {% endtabs %}
 
-![Item template](../images/item-template.png)
+![ASP.NET Core item template](../images/asp-core-mvc-mention-item-template.png)
 
 ## Display template
 
-The currently selected value that is to be displayed on the mention element can be customized using the [displayTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_DisplayTemplate) property.
+You can customize the mentioned value's display appearance using the [displayTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_DisplayTemplate) property.
 
-In the following sample, the selected value is displayed as a combined text of both `FirstName` and `City` in the mention element, which is separated by a hyphen.
+In the following sample, the selected value is displayed as a combined text of both FirstName and City in the mention element, which is separated by a hyphen.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -40,13 +38,11 @@ In the following sample, the selected value is displayed as a combined text of b
 {% endhighlight %}
 {% endtabs %}
 
-![display template](../images/display-template.png)
+![ASP.NET Core display template](../images/asp-core-mvc-mention-display-template.png)
 
 ## No records template
 
-The Mention is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_NoRecordsTemplate) property.
-
-In the following sample, popup list content displays the notification of no data available.
+You can show the custom design of the popup list content when no data and matches are found on the search with the help of [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_NoRecordsTemplate) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -54,13 +50,11 @@ In the following sample, popup list content displays the notification of no data
 {% endhighlight %}
 {% endtabs %}
 
-![display template](../images/noRecord-template.png)
+![ASP.NET Core no record template](../images/asp-core-mvc-mention-noRecord-template.png)
 
 ## Spinner template
 
-The Mention provides support to customize the waiting spinner, when data fetching takes time to load respective data in the popup by using the [spinnerTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SpinnerTemplate) property.
-
-In the following sample, customized spinner is shown while fetching the data from the service.
+Display the customized waiting spinner, when data fetching takes time to load in the suggestion list by using the [spinnerTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SpinnerTemplate) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -68,7 +62,7 @@ In the following sample, customized spinner is shown while fetching the data fro
 {% endhighlight %}
 {% endtabs %}
 
-![display template](../images/spinner-template.png)
+![ASP.NET Core spinner template](../images/asp-core-mvc-mention-spinner-template.png)
 
 ## See Also
 

@@ -1,21 +1,30 @@
 @model List<string>
 @{
     char nameMentionChar = '@';
+    var query = "new ej.data.Query().from('Employees').select('EmployeeID,FirstName,Title').take(6)";
 }
-<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user"></div>
 
 @Html.EJS().Mention("employee").Target("#mentionElement").MentionChar(nameMentionChar).DataSource(obj =>
 obj.Url("https://ej2services.syncfusion.com/production/web-services/api/Employees").CrossDomain(true).Adaptor("WebApiAdaptor")).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings
 {
    Text = "FirstName",
    Value = "EmployeeID"
-}).Query((string)ViewBag.query).Render()
+}).Query((string)query).Render()
 
 <style>
 
     div#mentionElement[placeholder]:empty:before {
         content: attr(placeholder);
-        color: #555;
     }
 
+    #mentionElement {
+        min-height: 100px;
+        border: 1px solid #D7D7D7;
+        border-radius: 4px;
+        padding: 8px;
+        font-size: 14px;
+        width: 600px;
+    }
+    
 </style>

@@ -10,8 +10,7 @@ documentation: ug
 
 # Accessibility
 
-The Mention control has been designed to keep in mind the `WAI-ARIA` specifications which apply the WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who
-use assistive technologies (AT) or those who completely rely on keyboard navigation.
+Web accessibility makes web contents and applications more accessible to people with disabilities. The Mention control provides built-in compliance with `WAI-ARIA` specifications. The `WAI-ARIA` support is achieved using attributes such as `aria-selected` and `aria-activedescendent`.
 
 ## ARIA attributes
 
@@ -38,5 +37,8 @@ You can use the following key shortcuts to access the Mention without interrupti
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/mention/accessibility/keyboard-intraction/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/mention/accessibility/keyboard-intraction/Employees.cs %}
 {% endhighlight %}
 {% endtabs %}
