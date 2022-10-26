@@ -12,7 +12,7 @@ documentation: ug
 
 The Message control allows you to customize the content display positions and its appearance. This section explains the details about changing the content alignments and border styles for messages.
 
-## Content alignment
+## Content Alignment
 
 Normally, the message content is aligned to the **left**. The Message control allows to align the message content in **center** or **right** through the built-in classes `e-content-center` and `e-content-right`.
 

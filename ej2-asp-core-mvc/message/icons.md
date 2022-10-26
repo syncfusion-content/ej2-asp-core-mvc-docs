@@ -12,7 +12,7 @@ documentation: ug
 
 This section explains how to show or hide the close icon and add the custom severity icon to the message.
 
-## Close icon
+## Close Icon
 
 The message can be rendered with or without the close icon. The close icon is used to hide the message, either by manually clicking the close icon or through keyboard interaction.
 
@@ -44,7 +44,7 @@ The following example demonstrates the message with close icon.
 
 ![ASP.NET MVC Message Control Close Icon](images/message-close-icon.png)
 
-## Custom icon
+## Custom Icon
 
 By default, the severity icons can be displayed according to the severity type to make the user more understandable by visual information rather than text. If the user wants to customize these icons, then it can be achieved through `cssClass` property.
 
