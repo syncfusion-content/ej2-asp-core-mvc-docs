@@ -180,3 +180,5 @@ The following example demonstrates the TimePicker control in 24 hours format wit
 * [How to achieve validation with TimePicker](./how-to/client-side-validation-using-form-validator)
 * [Render TimePicker with specific culture](./globalization)
 * [How to get and set value in TimePickerFor](./how-to/timepicker-for-core)
+
+N> You can also explore our [ASP.NET Core TimePicker Example](https://ej2.syncfusion.com/aspnetcore/TimePicker/DefaultFunctionalities#/bootstrap5) that shows you how to render the Radio Button in ASP.NET Core.
