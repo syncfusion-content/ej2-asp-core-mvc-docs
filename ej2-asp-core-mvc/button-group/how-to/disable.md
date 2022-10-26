@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable in ##Platform_Name## Button Group Component
-description: Learn here all about Disable in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
+title: Disable in ##Platform_Name## Button Group Control | Syncfusion
+description: Learn here all about Disable in Syncfusion ##Platform_Name## Button Group control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Disable
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Disable
+# Disable in Button Group Control
 
 ## Particular button
 
@@ -25,9 +25,6 @@ To disable whole ButtonGroup, `disabled` attribute should be added to all the bu
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/disable/demo/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/disable/demo/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -42,6 +39,6 @@ To disable whole ButtonGroup, `disabled` attribute should be added to all the bu
 {% endtabs %}
 {% endif %}
 
-
-
 > To disable radio/checkbox type ButtonGroup, the `disabled` attribute should be added to the particular input element.
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupHowToSample).

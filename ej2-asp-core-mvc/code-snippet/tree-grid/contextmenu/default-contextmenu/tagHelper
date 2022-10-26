@@ -2,10 +2,10 @@
     var contextItems = new string[]{
         "SortAscending", "SortDescending","Edit", "Delete", "Save", "Cancel",
         "PdfExport", "ExcelExport", "CsvExport", "FirstPage", "PrevPage",
-        "LastPage", "NextPage" };
+        "LastPage", "NextPage", "Indent", "Outdent" };
 }
 
-<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" contextMenuItems="contextItems" allowExcelExport="true" allowPdfExport="true" allowSorting="true" allowPaging="true" allowResizing="true" childMapping="Children" treeColumnIndex="1">
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" selectedRowIndex="2" contextMenuItems="contextItems" allowExcelExport="true" allowPdfExport="true" allowSorting="true" allowPaging="true" allowResizing="true" childMapping="Children" treeColumnIndex="1">
     <e-treegrid-pagesettings pageSize="7"></e-treegrid-pagesettings>
     <e-treegrid-editsettings allowAdding="true" allowEditing="true" allowDeleting="true" mode="Row"></e-treegrid-editsettings>
     <e-treegrid-columns>

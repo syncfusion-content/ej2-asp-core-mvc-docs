@@ -76,6 +76,544 @@ Syncfusion ASP.NET Core Themes are available in the CDN. Make sure that the vers
 | Microsoft Office Fabric Dark | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fabric-dark.css |
 | High Contrast  | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/highcontrast.css |
 
+### Individual control CDN Reference
+
+The primary goal of individual control CDN is to optimize the loading time and memory of the website/app in the production stage. The order of individual control package loading should be in line with its dependency graph. The CDN of the Dependency Packages should be included manually before the intended individual control package CDN.
+
+| controls | CDN Reference |
+| --- | --- |
+| Styles reference for individual control | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/{PACKAGE-NAME}/styles/{THEME-NAME}.css |
+
+The following table demonstrates the list of individual Syncfusion ASP.NET Core control CDN reference and its dependency packages.
+
+<table>
+<tr>
+<th>Controls</th>
+<th>Styles</th>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/accordion/getting-started">Accordion</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/accumulation-chart/getting-started">Accumulation Chart, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/smithchart/getting-started">Smith Chart, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started">Chart</a></td>
+<td>No Style Sheet Packages</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started">Avatar, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/card/getting-started">Card, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started">Dashboard Layout, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/splitter/getting-started">Splitter</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/badge/getting-started-asp-core">Badge</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/barcode/getting-started">Barcode</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-barcode-generator/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/bullet-chart/getting-started">Bullet Chart</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/sparkline/getting-started">Sparkline</a></td>
+<td>No Style Sheet Packages</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started">Button, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/check-box/getting-started">CheckBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chips/getting-started">Chips, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/radio-button/getting-started">Radio Button, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started">Switch</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button-group/getting-started">ButtonGroup</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/calendar/getting-started">Calendar</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/material.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/carousel/getting-started">Carousel,</a> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/sidebar/getting-started">Sidebar</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started">Circular Gauge</a></td>
+<td>No Style Sheet Packages</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/color-picker/getting-started">Color Picker</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/breadcrumb/getting-started">Breadcrumb, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/context-menu/getting-started">Context Menu, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/menu/getting-started">Menu</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a hre="https://ej2.syncfusion.com/aspnetcore/documentation/datepicker/getting-started">DatePicker</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/daterangepicker/getting-started">DateRangePicker</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/datetimepicker/getting-started">DateTimePicker</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/timepicker/getting-started">TimePicker</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started">Diagram</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-diagrams/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/dialog/getting-started">Dialog</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started">Auto Complete, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started">DropDownList, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/multi-select/getting-started">MultiSelect, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/combo-box/getting-started">ComboBox</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-tree/getting-started">DropDownTree</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/getting-started">File Manager</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core">Grid</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/heatmap/getting-started">HeatMap</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/getting-started">ProgressBar</a></td>
+<td>No Style Sheet Packages</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/getting-started">RichTextEditor</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/signature/getting-started">Signature, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started">TextBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maskedtextbox/getting-started">Masked TextBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/getting-started">NumericTextBox</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-button/getting-started">DropDownButton, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/split-button/getting-started">SplitButton, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-button/getting-started">ProgressButton</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tab/getting-started">Tabs</a>, <a href="https://ej2.syncfusion.com/aspnetcore/documentation/toolbar/getting-started">Toolbar</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/toast/getting-started">Toast</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/treeview/getting-started">TreeView</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started">ToolTip</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core">TreeGrid</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/treemap/getting-started">TreeMap</a></td>
+<td>No Style Sheet Packages</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/uploader/getting-started">Uploader</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/kanban/getting-started">Kanban</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-kanban/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started">Linear Gauge</a></td>
+<td>No Style Sheet Packages</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/list-box/getting-started-core">ListBox</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/listview/getting-started">ListView</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/getting-started">Maps</a></td>
+<td>No Style Sheet Packages</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started">Pivot Table</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pivotview/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/getting-started">QueryBuilder</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-querybuilder/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-navigator/getting-started">Range Navigator</a></td>
+<td>No Style Sheet Packages</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-slider/getting-started">Range Slider</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://helpej2.syncfusion.com/aspnetcore/documentation/in-place-editor/getting-started">In-place Editor</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inplace-editor/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/schedule/getting-started">Schedule</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-schedule/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/getting-started">Stock Chart</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started-core">Document Editor</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-documenteditor/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/gantt/getting-started">Gantt</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-gantt/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started">PDF Viewer</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdfviewer/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+</table>
+
 ## NPM Packages
 
 NPM is a node package manager. It is basically used for managing dependencies of various server-side dependencies. You can manage server-side dependencies manually. It is a command-line program for dealing with said repository that aids in package installation, version management, and dependency management. It is an online repository for the publishing of open-source `Node.js` projects.

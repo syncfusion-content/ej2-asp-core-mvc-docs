@@ -1,0 +1,15 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() {"Print","Search"})" created="created" height="270">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" type="number" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" format='yMd' width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function created() {
+        let toolbar = this.element.querySelector('.e-toolbar');
+        this.element.appendChild(toolbar);
+    }
+</script>

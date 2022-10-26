@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Licensing Errors in ##Platform_Name## Component
-description: Learn here all about Licensing Errors in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Overview of Syncfusion licensing errors - Syncfusion
+description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion ##Platform_Name## applications.
 platform: ej2-asp-core-mvc
 control: Licensing Errors
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Licensing Errors
+# Syncfusion Licensing Errors
+
 
 Licensing error pop up is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
 
@@ -22,7 +23,7 @@ The following error message will be shown if a Syncfusion license key has not be
 
 * Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/license-key-registration) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application) for information on registering the license key.
 
 ## Invalid key
 
@@ -34,7 +35,7 @@ If the application is registered with an invalid key, another version of license
 
 * Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/license-key-registration) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application) for information on registering the license key.
 
 ## Trial Expired
 
@@ -54,7 +55,7 @@ If the application is registered with another platform's license key, the follow
 
 * Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/license-key-registration) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application) for information on registering the license key.
 
 ## Version Mismatch
 
@@ -66,7 +67,7 @@ If the application is registered with another version's license key, the followi
 
 * Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform. Kindly follow the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-essential-studio-products) to generate license key.
 
-* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/license-key-registration) for information on registering the license key.
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application) for information on registering the license key.
 
 ## Could not load Syncfusion.Licensing.dll assembly version
 
