@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row in Grid Control
+# Row in ASP.NET CORE Grid Control
 
 The row represents record details fetched from data source.
 
