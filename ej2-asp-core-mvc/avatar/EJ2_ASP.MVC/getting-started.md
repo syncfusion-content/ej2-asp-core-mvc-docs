@@ -73,4 +73,4 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 [Types of Avatar](./types)
 
-N> You can also explore our [ASP.NET MVC Avatar Example](https://ej2.syncfusion.com/aspnetmvc/Avatar/Default#/bootstrap5) that shows you how to render and configure the Avatar.
+N> You can also explore our [ASP.NET MVC Avatar Example](https://ej2.syncfusion.com/aspnetmvc/Avatar/Default#/bootstrap5) that shows you how to render and configure the Avatar in ASP.NET MVC.
