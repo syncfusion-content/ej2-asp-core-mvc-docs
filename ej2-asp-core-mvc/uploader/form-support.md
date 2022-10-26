@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Form Support in ##Platform_Name## Uploader Control 
- Syncfusion
+title: Form Support in ##Platform_Name## Uploader Control | Syncfusion
 description: Learn here all about Form Support in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Form Support
