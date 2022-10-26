@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Datetimepicker Control
-description: Checkout and learn about getting started with ##Platform_Name## Datetimepicker control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Datetimepicker Control
+description: Checkout and learn about getting started with ASP.NET Core Datetimepicker control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -149,3 +149,5 @@ The minimum and maximum date time can be defined with the help of `min` and `max
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [Render DateTimePicker with specific culture](./globalization)
 * [How to get and set value in DateTimePickerFor](./how-to/datetimepicker-for-core)
+
+N>You can also explore our [ASP.NET Core DateTime Picker example](https://ej2.syncfusion.com/aspnetcore/DateTimePicker/DefaultFunctionalities#/material) that shows you how to render the DateTime Picker in ASP.NET Core.
