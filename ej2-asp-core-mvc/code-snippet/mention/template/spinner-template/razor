@@ -1,7 +1,7 @@
 @model List<string>
 @{
     char nameMentionChar = '@';
-    var query = "new ej.data.Query().select(['FirstName','Country', 'EmployeeID']).take(6).requiresCount()";
+    var query = "new ej.data.Query().select(['FirstName','Country','EmployeeID']).take(6).requiresCount();"
 }
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
 

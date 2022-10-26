@@ -10,7 +10,7 @@ documentation: ug
 
 # Accessibility
 
-Web accessibility makes web content and web applications more accessible for people with disabilities. Mention control provides built-in compliance with `WAI-ARIA` specifications. The `WAI-ARIA` support is achieved using the attributes such as `aria-selected` and `aria-activedescendent`.
+Web accessibility makes web contents and applications more accessible to people with disabilities. The Mention control provides built-in compliance with `WAI-ARIA` specifications. The `WAI-ARIA` support is achieved using attributes such as `aria-selected` and `aria-activedescendent`.
 
 ## ARIA attributes
 

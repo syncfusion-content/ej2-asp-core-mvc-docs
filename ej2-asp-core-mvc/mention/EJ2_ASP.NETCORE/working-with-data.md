@@ -57,7 +57,7 @@ In the following example, `Id` column and `Game` column from complex data have b
 
 The Mention can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
 
-In the following example, `Code.Id` column and `Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
+In the following example, `Code.Id` and `Country.Name` columns from the complex data have been mapped to the `value` and `text` fields respectively.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

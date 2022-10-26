@@ -14,7 +14,7 @@ The Mention control has built-in support to filter data items. The filter operat
 
 ## Limit the minimum filter character
 
-You can control the minimum length of user input to initiate the search action using [MinLength](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MinLength) property. This can be useful if you have a very large list of data. The default value is `zero`, where suggestion the list opened as soon as the user inputs the mention character.
+You can control the minimum length of user input to initiate the search action using the [MinLength](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MinLength) property. This can be useful if you have a very large list of data. The default value is `zero`, where the suggestion list opens as soon as the user inputs the mention character.
 
 The remote request does not fetch the search data until the search key contains three characters as shown in the following example.
 
@@ -50,7 +50,7 @@ While filtering, you can change the filter type to `Contains`, `StartsWith`, or 
 
 ## Allow spacing between search
 
-While filtering the data in the data source, you can allow the space in the middle of the mention by using the [AllowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the data source does not match with the mentioned element data, the popup will be hidden on the space key press. The default value of `AllowSpaces` is `false`.
+While filtering the data in the data source, you can allow the space in the middle of the mention using the [AllowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the data source does not match with the mentioned element data, the popup will be hidden on the space key press. The default value of the `AllowSpaces` is `false`.
 
 > By default, the `AllowSpaces` property is disabled, and the space ends the mention control search.
 
@@ -67,7 +67,7 @@ While filtering the data in the data source, you can allow the space in the midd
 
 ## Customize the suggestion item count
 
-While filtering, you can customize the number of list items to be displayed in the suggestion list by using the [SuggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
+While filtering, you can customize the number of list items to be displayed in the suggestion list using the [SuggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
