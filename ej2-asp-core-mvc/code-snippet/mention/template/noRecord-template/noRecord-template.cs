@@ -11,7 +11,6 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.data = new string[] { };
             return View();
         }
     }

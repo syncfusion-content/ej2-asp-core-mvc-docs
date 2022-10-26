@@ -11,7 +11,6 @@ namespace WebApplication1.Controllers
     {
         public ActionResult suggestion()
         {
-            ViewBag.data = new EmailData().EmailList();
             return View();
         }
     }
