@@ -1,24 +1,18 @@
 ---
 layout: post
 title: Positions in ##Platform_Name## FloatingActionButton Control | Syncfusion
-description: Learn here all about Positions in Syncfusion ##Platform_Name## FloatingActionButton component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Positions in Syncfusion ##Platform_Name## FloatingActionButton control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Positions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Positions in Asp.Net MVC Floating Action Button Component
+# Floating Action Button Positions
 
-This section explains the different positions of Floating Action Button.
+The floating action button can be positioned anywhere on the [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target) using the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. If the `target` is not defined, then FAB is positioned based on the browser viewport.
 
-## Positioning
-
-The floating action button can be positioned using the [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. The fab is positioned based on the [`Target`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target), if target is defined else positioned based on the browser viewport.
-
-## Types of Positions
-
-The types of Floating Action Button Positions are as follows:
+The position values of Floating Action Button are as follows:
 
 * TopLeft
 * TopCenter
@@ -30,9 +24,7 @@ The types of Floating Action Button Positions are as follows:
 * BottomCenter
 * BottomRight
 
-## Bottom Left position
-
-In this example, Floating Action Button is demonstrated with BottomLeft position using Position property.
+Below example demonstrates Bottom Left position of FAB.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -54,17 +46,15 @@ In this example, Floating Action Button is demonstrated with BottomLeft position
 {% endtabs %}
 {% endif %}
 
-![Asp.Net MVC Floating Action Button Component](images/bottom-left-position.png)
+![Asp.Net MVC Floating Action Button Control](images/BottomLeftPosition.png)
 
-## All available positions
-
-In this example, Floating Action Button is demonstrated with All position using Position property.
+Below example demonstrates different supported positions of FAB.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/positions/all-position/tagHelper %}
+{% include code-snippet/floating-action-button/positions/all-positions/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,12 +62,38 @@ In this example, Floating Action Button is demonstrated with All position using 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/positions/all-position/razor %}
+{% include code-snippet/floating-action-button/positions/all-positions/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/floating-action-button/positions/all-position/allposition.cs %}
+{% include code-snippet/floating-action-button/positions/all-positions/allposition.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![Asp.Net MVC Floating Action Button Component](images/bottom-left-position.png)
+![Asp.Net MVC Floating Action Button Positions](images/FabPositions.png)
+
+## Custom position
+
+You can define the custom position of the Floating Action Button by override the `top`, `left`, `right`, and `bottom` CSS properities using `cssClass`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/floating-action-button/positions/custom-position/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/floating-action-button/positions/custom-position/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CustomPosition.cs" %}
+{% include code-snippet/floating-action-button/positions/custom-position/customposition.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Asp.Net MVC Floating Action Button Custom position](images/CustomPosition.png)

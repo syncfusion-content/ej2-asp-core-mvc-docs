@@ -1,31 +1,26 @@
 ---
 layout: post
 title: Events in ##Platform_Name## FloatingActionButton Control | Syncfusion
-description: Learn here all about Events in Syncfusion ##Platform_Name## FloatingActionButton component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Events in Syncfusion ##Platform_Name## FloatingActionButton control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Events
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in Floating Action Button Component
+# Events in Floating Action Button Control
 
-The primary way to respond to mouse input is to handle mouse events.The following table shows the mouse events
+This section explains the available events in Floating Action Button Control.
 
-| Mouse Events | Description |
-| -------- | -------- |
-| click | This event occurs when the mouse button is released, typically before the MouseUp     event. The handler for this event receives an argument of type EventArgs. Handle this event when you only need to determine when a click occurs. |
-| mouseclick |  This event occurs when the user clicks the control with the mouse. The handler for this event receives an argument of type MouseEventArgs. Handle this event when you need to get information about the mouse when a click occurs. |
+## Created
 
-## How to bind click event to Floating Action Button
-
-The `onclick` attribute is used to bind the click event for button. Here, we have explained about the sample code snippets of toggle button.
+Event triggers after the creation of Floating Action Button.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/events/tagHelper %}
+{% include code-snippet/floating-action-button/events/created-event/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,13 +28,37 @@ The `onclick` attribute is used to bind the click event for button. Here, we hav
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/events/razor %}
+{% include code-snippet/floating-action-button/events/created-event/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabEvent.cs" %}
-{% include code-snippet/floating-action-button/events/fabevent.cs %}
+{% highlight c# tabtitle="CreatedEvent.cs" %}
+{% include code-snippet/floating-action-button/events/created-event/createdevent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![Befor calling Event](images/play-button.png)
-![After calling Event](images/pause-button.png)
+## OnClick
+
+Event triggers when the Floating Action Button is clicked. Below example shows the Click event of the Floating Action Button.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/floating-action-button/events/onclick-event/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/floating-action-button/events/onclick-event/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OnClickEvent.cs" %}
+{% include code-snippet/floating-action-button/events/onclick-event/onclickevent.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Asp.Net MVC FAB Control with OnClick Event](images/CoreOnClickEvent.png)
+![Asp.Net MVC FAB Control with OnClick Event](images/CoreOnClickEvent1.png)

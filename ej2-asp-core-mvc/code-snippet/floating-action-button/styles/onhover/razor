@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2.Buttons
+
+<div id="target" style="height:250px; position:relative; width:300px; border:1px solid;">
+    @Html.EJS("fab4").Target("#target").IconCss("e-icons e-edit").CssClass("fab-hover").Content("<span class='text-container'><span class='textEle'>Edit</span></span>").Render()    
+</div>
+
+<style>
+
+    .e-fab.e-btn.fab-hover {
+        padding: 6px 0px 10px 10px;
+    }
+
+    .fab-hover .text-container {
+        overflow: hidden;
+        width: 0;
+        margin: 0;
+        transition: width .5s linear 0s, margin .2s linear .5s;
+    }
+
+    .fab-hover:hover .text-container {
+        width: 35px;
+        margin: 0 5px;
+        transition: width .5s linear .2s, margin .2s linear 0s;
+    }
+
+</style>

@@ -1,8 +1,0 @@
-<div id="target" style="height:200px; position:relative; width:450px; border:1px solid;">
-    @Html.EJS("fab1").Target("#target").IsPrimary(true).Content("Primary").Render()
-    @Html.EJS("fab2").Target("#target").CssClass("e-success").Content("Success").Render()
-    @Html.EJS("fab3").Target("#target").CssClass("e-info").Content("Info").Render()
-    @Html.EJS("fab4").Target("#target").CssClass("e-warning").Content("Warning").Render()
-    @Html.EJS("fab5").Target("#target").CssClass("e-danger").Content("Danger").Render()
-    @Html.EJS("fab6").Target("#target").CssClass("e-link").Content("Link").Render()
-</div>

@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Buttons
+
+<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
+    <ejs-fab id="fab" target="#target" iconCss="e-icons e-edit" content="Edit" onclick="EventClick()"></ejs-fab>
+</div>
+
+<script>
+    function EventClick(){
+        alert("Edit is clicked!");
+    }
+</script>

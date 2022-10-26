@@ -8,21 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons in Asp.Net Core Floating Action Button Component
+# Icons in Asp.Net Core Floating Action Button Control
 
-## Icon types
+You can customize the icon and text of Asp.Net Core Floating Action Button(FAB) using [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_IconCss) and [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Content) properties.
 
-The types of Floating Action Button Icons are as follows:
+## FAB with Icon
 
-* Icon Only
-* Icon with Text
-* Text Only
-
-## Floating Action Button with Icon Only
-
-Use iconCss property to display icon. Floating Action Button can have an icon to provide the visual representation of the action. To place the icon on a Floating Action Button, set the [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_IconCss) property to `e-icons` with the required icon CSS.
-
-In the following example, Floating Action Button is demonstrated with only icons by providing the IconCss property.
+You can show icon only in Floating Action Button by setting [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_IconCss) property. You can show tooltip on hover to show additional details to end-user by setting `title` attribute.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,11 +36,11 @@ In the following example, Floating Action Button is demonstrated with only icons
 {% endtabs %}
 {% endif %}
 
-![Asp.Net Core Floating Action Button with Text only](images/text-only.png)
+![Asp.Net Core Floating Action Button with Icon](images/FabWithIcon.png)
 
-## Floating Action Button with Icon and Text
+## FAB with Icon and Text
 
-Use [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Content) property and [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_IconCss) property to display the icon and text.
+You can show icon along with text in Floating Action Button by setting [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_IconCss) and [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Content) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -70,17 +62,17 @@ Use [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Butto
 {% endtabs %}
 {% endif %}
 
-![Asp.Net Core Floating Action Button with Text only](images/text-only.png)
+![Asp.Net Core Floating Action Button with Text and Icon](images/IconandText.png)
 
-## Floating Action Button with Text Only
+### Icon position
 
-Use [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Content) property to display the text.
+You can change the position of icon when showing along with content by setting [iconPosition](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_IconPosition ) property. By default, the icon is positioned on the left side together with text.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/textonly/tagHelper %}
+{% include code-snippet/floating-action-button/icons/icon-position/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,12 +80,12 @@ Use [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Butto
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/textonly/razor %}
+{% include code-snippet/floating-action-button/icons/icon-position/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="FabText.cs" %}
-{% include code-snippet/floating-action-button/icons/textonly/fabtext.cs %}
+{% highlight c# tabtitle="IconPosition.cs" %}
+{% include code-snippet/floating-action-button/icons/icon-position/iconposition.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![Asp.Net Core Floating Action Button with Text only](images/text-only.png)
+![Asp.Net Core Floating Action Button with Icon Position](images/IconPosition.png)

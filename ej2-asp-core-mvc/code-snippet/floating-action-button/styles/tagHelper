@@ -1,8 +1,0 @@
-<div id="target" style="height:200px; position:relative; width:450px; border:1px solid;">
-    <ejs-fab target="#target" isPrimary=true content="Primary"></ejs-fab>
-    <ejs-fab target="#target" cssClass="e-success" content="Success"></ejs-fab>
-    <ejs-fab target="#target" cssClass="e-info" content="Info"></ejs-fab>
-    <ejs-fab target="#target" cssClass="e-warning" content="Warning"></ejs-fab>
-    <ejs-fab target="#target" cssClass="e-danger" content="Danger"></ejs-fab>
-    <ejs-fab target="#target" cssClass="e-link" content="Link"></ejs-fab>
-</div>
