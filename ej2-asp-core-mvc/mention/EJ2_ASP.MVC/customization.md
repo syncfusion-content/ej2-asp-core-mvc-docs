@@ -40,7 +40,7 @@ You can add the suffix character while selecting an item in the Mention componen
 
 You can customize the suggestion list as width and height using the [PopupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupHeight) and [PopupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_PopupWidth) properties.
 
-By default, the popup list width value is set as `auto`, depending on the mentioned suggestion list data. The width value is automatically adjusted when the popup list height value is set as `300px`.
+By default, the popup list width value is set as `auto`. Depending on the mentioned suggestion data list, the width value is automatically adjusted. The popup list height value is set as `300px`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
