@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## MultiSelect Control
+title: Getting Started with ##Platform_Name## MultiSelect Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## MultiSelect control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -150,8 +150,7 @@ The following example illustrates the output in your browser.
 
 By default, the width of the popup list automatically adjusts according to the MultiSelect input element's width, and the height auto adjust's according to the height of the popup list items.
 
-The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~PopupHeight.html) and [popupWidth](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~PopupWidth.html) properties
-respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~PopupHeight.html) and [popupWidth](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~PopupWidth.html) properties respectively.
 
 In the following sample, popup list's width and height are configured.
 
