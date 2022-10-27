@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating items in ##Platform_Name## Carousel Control
+title: Populating items in Syncfusion ##Platform_Name## Carousel Control
 description: Checkout and learn about populating items in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Populating Items
@@ -61,7 +61,7 @@ Using the [SelectedIndex](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-![Carousel selected slide](../images/selected_index.png)
+![Carousel selected slide](images/selected_index.png)
 
 ### Select an item using the method
 
@@ -75,3 +75,36 @@ Using the `prev` or `next` public method of the Carousel component, you can swit
 {% include code-snippet/carousel/populating-items/select-item-method/select-item-method.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## Partial visible slides
+
+The Carousel component supports to show one complete slide and a partial view of adjacent (previous and next) slides at the same time. You can enable or disable the partial slides using the [`partialVisible`](../api/carousel/#partialVisible) property.
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/populating-items/partial-visible/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/populating-items/partial-visible/partial-visible.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+> Slide animation only applicable if the `partialVisible` is enabled.
+
+The last slide will be displayed as a partial slide at the initial rendering when the [`loop`](../api/carousel/#loop) and `partialVisible` properties are enabled.
+
+The previous slide is not displayed at the initial rendering when the `loop` is disabled.
+
+The following example code depicts the functionality of `partialVisible` and without `loop` functionalities.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/carousel/populating-items/partial-visible/without-loop/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/carousel/populating-items/partial-visible/without-loop/without-loop.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## See also
+
+* [Customizing partial slides area size](./styles-and-appearance/#customizing-partial-slides-size)

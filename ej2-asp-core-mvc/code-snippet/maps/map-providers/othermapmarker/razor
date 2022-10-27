@@ -1,13 +1,15 @@
 @using Syncfusion.EJ2;
 @using Syncfusion.EJ2.Maps;
-@Html.EJS().Maps("maps").Layers(l => l.LayerType('OSM').UrlTemplate("http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level").
-   {
-       .NavigationLineSettings(ns => {
-        ns.Visible(true).Latitude(new double[] { 34.060620, 40.724546})
-        .Longitude(new double[] { -118.330491, -73.850344 }).Color("blue").Angle(90)
-        .Width(5).Add();
-    }).MarkerSettings(marker =>
+
+@Html.EJS().Maps("maps").Layers(l =>
+{
+    l.UrlTemplate("http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level").MarkerSettings(marker =>
        {
            marker.Visible(true).DataSource(ViewBag.markerData).Add();
-       }).Add();
-   }).Render()
+       }).NavigationLineSettings(ns =>
+    {
+        ns.Visible(true).Latitude(new double[] { 34.060620, 40.724546 })
+        .Longitude(new double[] { -118.330491, -73.850344 }).Color("black").Angle(90)
+        .Width(2).DashArray("4").Add();
+    }).Add();
+}).Render()
