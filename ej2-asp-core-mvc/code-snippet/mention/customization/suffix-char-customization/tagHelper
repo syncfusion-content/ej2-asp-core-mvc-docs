@@ -3,7 +3,7 @@
     var data = new SportsData().SportsList();
 }
 
-<div id="mentionElement" placeholder = "Type @@ and tag sport"></div>
+<div id="mentionElement" placeholder = "Type @@ and tag sports"></div>
 <ejs-mention id="comments" dataSource="@data" mentionChar="@nameMentionChar" target="#mentionElement" suffixText="&nbsp;">
     <e-mention-fields text="Game" value="ID"></e-mention-fields>
 </ejs-mention>

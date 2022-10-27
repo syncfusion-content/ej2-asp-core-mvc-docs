@@ -3,7 +3,7 @@
     char nameMentionChar = '@';
     var data = new SportsData().SportsList();
 }
-<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag sport"></div>
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag sports"></div>
 
 @Html.EJS().Mention("Sorting").MentionChar(nameMentionChar).Target("#mentionElement").Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Game" , Value = "ID" }).DataSource((IEnumerable<object>)data).SortOrder(Syncfusion.EJ2.DropDowns.SortOrder.Descending).Render()
 

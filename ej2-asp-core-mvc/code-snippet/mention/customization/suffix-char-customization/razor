@@ -3,7 +3,7 @@
     char nameMentionChar = '@';
     var data = new SportsData().SportsList();
 }
-<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag sport"></div>
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag sports"></div>
 
 @Html.EJS().Mention("Suffix").Target("#mentionElement").MentionChar(nameMentionChar).DataSource((IEnumerable<object>)data).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Game" , Value = "ID" }).SuffixText("&nbsp;").Render()
 
