@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## Uploader Component
+title: Drag And Drop in ##Platform_Name## Uploader Control | Syncfusion
 description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drag And Drop
@@ -8,10 +8,10 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drag and drop
+# Drag and drop in Uploader Control
 
-The uploader component allows you to drag and drop the files to upload. 
-You can drag the files from file explorer and drop into the drop area. 
+The uploader component allows you to drag and drop the files to upload. You can drag the files from file explorer and drop into the drop area.
+
 By default, the uploader component act as drop area element. The drop area gets highlighted when you drag the files over drop area.
 
 ## Custom drop area
@@ -45,8 +45,7 @@ The uploader component allows you to set external target element as drop area us
 
 ## Customize drop area
 
-You can customize the appearance of drop area by overriding the default drop area styles. 
-The class “” and “” is available to handle this customization.
+You can customize the appearance of drop area by overriding the default drop area styles. The class “” and “” is available to handle this customization.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

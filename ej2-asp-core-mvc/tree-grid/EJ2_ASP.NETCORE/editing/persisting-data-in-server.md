@@ -21,8 +21,8 @@ In the following section, we have explained how to perform CRUD operation in ser
 
 ## URL adaptor
 
-You can use the **UrlAdaptor** of **DataManager** when binding data source from remote data.
-In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of **DataManager**.
+You can use the **UrlAdaptor** of **DataManager** when binding data source from remote data. In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of **DataManager**.
+
 You can map The CRUD operation in grid can be mapped to server-side Controller actions using the properties **InsertUrl**, **RemoveUrl**, **UpdateUrl** and **BatchUrl**.
 
 The following code example describes the above behavior.
