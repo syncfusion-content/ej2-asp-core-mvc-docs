@@ -11,12 +11,14 @@ namespace WebApplication1.Models
         public string Code { get; set; }
         public List<Countries> GetData()
         {
-            List<Countries> data = new List<Countries>();
-            data.Add(new Countries() { Country = "Australia", Code = "AU" });
-            data.Add(new Countries() { Country = "Bermuda" , Code = "BM" } );
-            data.Add(new Countries() { Country = "Canada" , Code =  "CA" } );
-            data.Add(new Countries() { Country = "Cameroon" , Code = "CM" });
-            data.Add(new Countries() { Country = "Denmark" , Code = "DK" });
+            List<Countries> data = new List<Countries>()
+            {
+                new Countries() { Country = "Australia", Code = "AU" },
+                new Countries() { Country = "Bermuda" , Code = "BM" },
+                new Countries() { Country = "Canada" , Code =  "CA" },
+                new Countries() { Country = "Cameroon" , Code = "CM" },
+                new Countries() { Country = "Denmark" , Code = "DK" }
+            };
             return data;
         }
     }
