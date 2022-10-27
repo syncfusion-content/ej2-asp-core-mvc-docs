@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Time Range in ASP.NET MVC Timepicker Component
+title: Time Range in ASP.NET MVC Timepicker Control | syncfusion
 description: Learn here all about Time Range in Syncfusion ASP.NET MVC Timepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Time Range
