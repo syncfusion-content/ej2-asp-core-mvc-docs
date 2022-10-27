@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template Configuration in ##Platform_Name## Toolbar Component
+title: Template Configuration in ##Platform_Name## Toolbar Component | Syncfusion
 description: Learn here all about Template Configuration in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Template Configuration
@@ -90,6 +90,33 @@ Class              | Description
 {% endhighlight %}
 {% highlight c# tabtitle="Buttontext.cs" %}
 {% include code-snippet/toolbar/template-configuration/buttontext/buttontext.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Integrate menu component
+
+You can integrate menu component as toolbar item in Toolbar using content template property. Menu can be populated with items as needed.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/toolbar/template-configuration/integratemenucomponent/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Menucomponent.cs" %}
+{% include code-snippet/toolbar/template-configuration/integratemenucomponent/menucomponent.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/toolbar/template-configuration/integratemenucomponent/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Menucomponent.cs" %}
+{% include code-snippet/toolbar/template-configuration/integratemenucomponent/menucomponent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

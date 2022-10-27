@@ -1,0 +1,143 @@
+@{
+    var open = new
+    {
+        content = "Open",
+        isPrimary = false,
+        cssClass = "e-custom-img-btn e-img-custom-open"
+    };
+    var reset = new
+    {
+        content = "Reset",
+        isPrimary = false,
+        cssClass = "e-custom-img-btn e-img-custom-reset"
+    };
+    var rotate = new
+    {
+        content = "Rotate",
+        isPrimary = false,
+        cssClass = "e-custom-img-btn e-img-custom-rotate"
+    };
+    var done = new
+    {
+        content = "Apply",
+        isPrimary = true,
+        cssClass = "e-custom-img-btn e-img-custom-apply"
+    };
+    var imageTool = new string[] { };
+}
+
+<div class="col-lg-12 control-section e-img-editor-sample">
+    <div class="e-profile">
+        <div class="e-custom-wrapper">
+            <canvas id="img-canvas" style="max-width: 200px; max-height: 200px;"></canvas>
+            <img alt="img" id="custom-img" crossorigin="anonymous" src="https://ej2.syncfusion.com/demos/src/image-editor/images/profile.png"
+                    style="display: none;" />
+            <input type="file" id="img-upload" style="display:none" />
+            <span id="custom-edit" class="e-custom-edit">
+                <span class="e-custom-icon sb-icons"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div id="profile-dialog">
+    <ejs-dialog id="dialog" height="420px" width="340px" target=".control-section" position="ViewBag.popupPosition" header="Edit Profile Image"
+                showCloseIcon="true" visible="false" closeOnEscape="true" open="dialogOpen">
+        <e-content-template>
+            <div class='dlg-content'>
+                <ejs-imageeditor id="image-editor" created="created" fileOpened="imageEditorOpen" toolbar="imageTool"></ejs-imageeditor>
+            </div>
+        </e-content-template>
+        <e-dialog-buttons>
+            <e-dialog-dialogbutton buttonModel="open" click="openBtn"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="reset" click="resetBtn"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="rotate" click="rotateBtn"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="done" click="doneBtn"></e-dialog-dialogbutton>
+        </e-dialog-buttons>
+    </ejs-dialog>
+</div>
+
+<script>
+    var img = document.querySelector('#custom-img');
+    img.onload = function () {
+        var canvas = document.querySelector('#img-canvas');
+        var ctx = canvas.getContext('2d');
+        canvas.width = img.width < img.height ? img.width : img.height;
+        canvas.height = canvas.width;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    };
+
+    function openBtn() {
+        document.getElementById('img-upload').click();
+    }
+
+    function imageEditorOpen() {
+        var imageEditor = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditor.select('circle');
+    }
+
+    function resetBtn() {
+        var imageEditor = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditor.reset();
+    }
+
+    function rotateBtn() {
+        var imageEditor = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditor.rotate(-90);
+    }
+
+    function doneBtn() {
+        var imageEditor = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditor.crop();
+        var croppedData = imageEditor.getImageData();
+        var canvas = document.querySelector('#img-canvas');
+        var ctx = canvas.getContext('2d');
+        var parentDiv = document.querySelector('.e-profile');
+        var tempCanvas = parentDiv.appendChild(ej.base.createElement('canvas'));
+        var tempContext = tempCanvas.getContext('2d');
+        tempCanvas.width = croppedData.width;
+        tempCanvas.height = croppedData.height;
+        tempContext.putImageData(croppedData, 0, 0);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(tempCanvas, 0, 0, canvas.width, canvas.height);
+        tempCanvas.remove();
+        parentDiv.style.borderRadius = '100%';
+        canvas.style.backgroundColor = '#fff';
+        var dialogObj = ej.base.getComponent(document.getElementById('dialog'), 'dialog');
+        dialogObj.hide();
+    }
+
+    function created() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.theme = window.location.href.split('#/')[1];
+        imageEditorObj.update();
+    }
+
+    function dialogOpen() {
+        var imageEditor = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        var canvas = document.querySelector('#img-canvas');
+        imageEditor.open(canvas.toDataURL());
+    }
+
+    document.getElementById('custom-edit').onclick = function () {
+        var dialogObj = ej.base.getComponent(document.getElementById('dialog'), 'dialog');
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.update();
+        dialogObj.show();
+    };
+
+    document.getElementById('img-upload').onchange = function (args) {
+        var URL = window.URL;
+        var url = URL.createObjectURL(args.target.files[0]);
+        var imageEditor = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditor.open(url.toString());
+        document.getElementById('img-upload').value = null;
+    };
+
+    document.getElementsByClassName('.control-section')[1].onclick = function (args) {
+        var dialogObj = ej.base.getComponent(document.getElementById('dialog'), 'dialog');
+        if (args.target && (args.target.className.indexOf('e-img-editor-sample') > -1 || args.target.className.indexOf('sb-content') > -1)) {
+            dialogObj.hide();
+        }
+    };
+</script>

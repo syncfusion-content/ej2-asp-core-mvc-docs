@@ -1,6 +1,9 @@
+@{
+	var data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };
+}
 <div class="control-wrapper">
     <div id="default" style='padding-top:75px;margin:0 auto;width:250px;'>
-        <ejs-autocomplete id="games" dataSource="@ViewBag.data" placeholder="Select a game" popupHeight="220px">
+        <ejs-autocomplete id="games" dataSource="@data" placeholder="Select a game" popupHeight="220px">
         </ejs-autocomplete>
     </div>
 </div>

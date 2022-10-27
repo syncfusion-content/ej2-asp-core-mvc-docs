@@ -20,9 +20,6 @@ In the following sample, `default` badges are used and there is no need to custo
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/badge/listview/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/badge/listview/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -39,3 +36,5 @@ In the following sample, `default` badges are used and there is no need to custo
 
 
 ![Badge Sample](../images/listview.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Badge/BadgeCustomSample).

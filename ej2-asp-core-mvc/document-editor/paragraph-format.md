@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paragraph Format in ##Platform_Name## Document Editor Component
+title: Paragraph Format in ##Platform_Name## Document Editor Control | Syncfusion
 description: Learn here all about paragraph format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Paragraph Format
@@ -85,7 +85,7 @@ documenteditor.selection.paragraphFormat.spaceBeforeAuto = true;
 documenteditor.selection.paragraphFormat.spaceAfterAuto = true;
 ```
 
->Note: If auto spacing property is enabled, then value defined in the `beforeSpacing` and `afterSpacing` property will not be considered.
+> If auto spacing property is enabled, then value defined in the `beforeSpacing` and `afterSpacing` property will not be considered.
 
 ## Pagination properties
 
@@ -99,6 +99,47 @@ You can enable or disable the following pagination properties for the paragraphs
 documenteditor.selection.paragraphFormat.widowControl = false;
 documenteditor.selection.paragraphFormat.keepWithNext = true;
 documenteditor.selection.paragraphFormat.keepLinesTogether = true;
+```
+
+## Paragraph Border
+
+You can apply borders to the paragraphs in a Word document. Using borders, decorate the paragraphs to set them apart from other paragraphs in the document.
+
+The following example code illustrates how to apply box border for the selected paragraphs.
+
+```typescript
+// left
+documenteditor.selection.paragraphFormat.borders.left.lineStyle = 'Single';
+documenteditor.selection.paragraphFormat.borders.left.lineWidth = 3;
+documenteditor.selection.paragraphFormat.borders.left.color = "#000000";
+
+//right
+documenteditor.selection.paragraphFormat.borders.right.lineStyle = 'Single';
+documenteditor.selection.paragraphFormat.borders.right.lineWidth = 3;
+documenteditor.selection.paragraphFormat.borders.right.color = "#000000";
+
+//top
+documenteditor.selection.paragraphFormat.borders.top.lineStyle = 'Single';
+documenteditor.selection.paragraphFormat.borders.top.lineWidth = 3;
+documenteditor.selection.paragraphFormat.borders.top.color = "#000000";
+
+//bottom
+documenteditor.selection.paragraphFormat.borders.bottom.lineStyle = 'Single';
+documenteditor.selection.paragraphFormat.borders.bottom.lineWidth = 3;
+documenteditor.selection.paragraphFormat.borders.bottom.color = "#000000";
+
+```
+
+> At present, the Document editor component displays all the border styles as single line. But you can apply any border style and get the proper display in Microsoft Word app when opening the exported Word document.
+
+## Show or Hide Paragraph marks
+
+You can show or hide the hidden formatting symbols like spaces, tab, paragraph marks, and breaks in Document editor component. These marks help identify the start and end of a paragraph and all the hidden formatting symbols in a Word document.
+
+The following example code illustrates how to show or hide paragraph marks.
+
+```typescript
+documenteditor.documentEditorSettings.showHiddenMarks = true;
 ```
 
 ## Toolbar with paragraph formatting options

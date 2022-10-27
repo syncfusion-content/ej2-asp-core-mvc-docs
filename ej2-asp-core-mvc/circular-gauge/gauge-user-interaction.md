@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Gauge User Interaction in ##Platform_Name## Circular Gauge Component
-description: Learn here all about Gauge User Interaction in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
+title: Gauge User Interaction in ##Platform_Name## Circular Gauge Control | Syncfusion
+description: Learn here all about Gauge User Interaction in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Gauge User Interaction
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# User Interaction
+# User Interaction in Circular Gauge Control
 
 ## Tooltip for pointers
 
@@ -18,16 +18,13 @@ Circular gauge will display the pointer details through [tooltip](https://help.s
 
 **Enable Tooltip**
 
-By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTooltipSettings.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTooltipSettings_Enable) property to true.
+By default, tooltip is not visible. Enable the tooltip by setting [enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTooltipSettings.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTooltipSettings_Enable) property to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-user-interaction/tooltip/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% include code-snippet/circulargauge/gauge-user-interaction/tooltip/tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -47,16 +44,13 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](htt
 
 **Template**
 
-Any HTML elements can be displayed in the tooltip by using the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTooltipSettings.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTooltipSettings_Template) property of the tooltip.
+Any HTML elements can be displayed in the tooltip by using the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeTooltipSettings.html#Syncfusion_EJ2_CircularGauge_CircularGaugeTooltipSettings_Template) property of the tooltip.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-user-interaction/template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Template.cs" %}
-{% include code-snippet/circulargauge/gauge-user-interaction/template/template.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -113,9 +107,6 @@ The following code example shows the tooltip for the pointers, ranges and annota
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-user-interaction/range-annotation-tooltip/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Range-annotation-tooltip.cs" %}
-{% include code-snippet/circulargauge/gauge-user-interaction/range-annotation-tooltip/range-annotation-tooltip.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -134,16 +125,13 @@ The following code example shows the tooltip for the pointers, ranges and annota
 
 ## Pointer Drag
 
-Pointers can be dragged over the axis value. This can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, you can use [`enablePointerDrag`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_EnablePointerDrag) property.
+Pointers can be dragged over the axis value. This can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, you can use [enablePointerDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGauge.html#Syncfusion_EJ2_CircularGauge_CircularGauge_EnablePointerDrag) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-user-interaction/pointer-drag/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Pointer-drag.cs" %}
-{% include code-snippet/circulargauge/gauge-user-interaction/pointer-drag/pointer-drag.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -159,3 +147,4 @@ Pointers can be dragged over the axis value. This can be achieved by clicking an
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/CircularGauge/AnnotationandLegendSample).

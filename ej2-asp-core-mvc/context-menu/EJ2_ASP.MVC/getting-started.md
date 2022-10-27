@@ -135,7 +135,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Rendering items with Separator
 
-The Separators are the horizontal lines that are used to separate the menu items. You cannot select the separators. You can enable separators to group the menu items using the [`separator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~Separator.html) property. Cut, Copy, and Paste menu items are grouped using the `separator` property in the following sample.
+The Separators are the horizontal lines that are used to separate the menu items. You cannot select the separators. You can enable separators to group the menu items using the [Separator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_Separator) property. Cut, Copy, and Paste menu items are grouped using the `separator` property in the following sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -189,7 +189,7 @@ public ActionResult Index()
 {% endtabs %}
 {% endif %}
 
-> The [`separator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~Separator.html) property should not be given along with the other fields in the [`MenuItem`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem.html).
+> The [Separator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_Separator) property should not be given along with the other fields in the [MenuItem](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html).
 
 ![ASP.NET MVC ContextMenu with Separator](images/context-menu-with-seperator.png)
 

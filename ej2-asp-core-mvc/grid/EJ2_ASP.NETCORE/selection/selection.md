@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Grid Component
+title: Selection in ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -8,15 +8,14 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Selection
+# Selection in Grid Control
 
 Selection provides an option to highlight a row or a cell. It can be done through simple mouse down or arrow keys. To disable selection in the Grid, set the [`allowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSelection) property to false.
 
 The grid supports two types of selection that can be set by using the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Type) property of **e-grid-selectionsettings** tag helper. They are:
 
 * **Single**: The **Single** value is set by default, and it only allows selection of a single row or a cell or a column.
-* **Multiple**: Allows you to select multiple rows or cells or columns.
-To perform the multi-selection, press and hold CTRL key and click the desired rows or cells or columns. To select range of rows or cells or columns, press and hold the SHIFT key and click the rows or cells or columns.
+* **Multiple**: Allows you to select multiple rows or cells or columns. To perform the multi-selection, press and hold CTRL key and click the desired rows or cells or columns. To select range of rows or cells or columns, press and hold the SHIFT key and click the rows or cells or columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

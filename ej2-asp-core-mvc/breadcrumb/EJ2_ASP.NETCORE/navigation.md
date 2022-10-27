@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Navigation in ##Platform_Name## Breadcrumb Component
-description: Learn here all about Navigation in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
+title: Navigation in ##Platform_Name## Breadcrumb Control | Syncfusion
+description: Learn here all about Navigation in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Navigation
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,7 @@ documentation: ug
 ---
 
 
-# Icons in Breadcrumb
-
-## Navigation
+# Navigation in Breadcrumb
 
 The Breadcrumb item navigates to the path while clicking the item. To enable navigation, `url`property was bound to the items.
 
@@ -29,9 +27,6 @@ The Breadcrumb items with relative URL contain only the path but do not locate t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/url/relative-url/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/url/relative-url/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -47,7 +42,7 @@ The Breadcrumb items with relative URL contain only the path but do not locate t
 {% endif %}
 
 
-![Breadcrumb Sample](./images/relative-url.PNG)
+![ASP.NET Core Breadcrumb with Relative URL](images/relative-url.PNG)
 
 ### Absolute URL
 
@@ -58,9 +53,6 @@ The Breadcrumb items with absolute URL contain the path and locate to the resour
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/url/absolute-url/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/url/absolute-url/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,7 +69,7 @@ The Breadcrumb items with absolute URL contain the path and locate to the resour
 {% endif %}
 
 
-![Breadcrumb Sample](./images/relative-url.PNG)
+![ASP.NET Core Breadcrumb with Relative URL](images/relative-url.PNG)
 
 ## Enable navigation for last Breadcrumb item
 
@@ -88,9 +80,6 @@ The feature enables the last item of the Breadcrumb component by setting the `en
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/url/enable-navigation/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/url/enable-navigation/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,7 +97,7 @@ The feature enables the last item of the Breadcrumb component by setting the `en
 
 
 
-![Breadcrumb Sample](./images/navigation.PNG)
+![ASP.NET Core Breadcrumb with Navigation Items](images/navigation.PNG)
 
 ## Open URL in new page or tab
 
@@ -119,9 +108,6 @@ To open the Breadcrumb item in a new page or tab, set the target property of the
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/url/open-url/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/url/open-url/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -138,4 +124,6 @@ To open the Breadcrumb item in a new page or tab, set the target property of the
 {% endif %}
 
 
-![Breadcrumb Sample](./images/navigation.PNG)
+![ASP.NET Core Breadcrumb with New URL](images/navigation.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Breadcrumb/IconsandNavigationSample).

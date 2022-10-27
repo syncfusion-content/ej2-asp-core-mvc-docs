@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Licensing Errors in ##Platform_Name## Component
-description: Learn here all about licensing errors in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Overview of Syncfusion licensing errors - Syncfusion
+description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion ##Platform_Name## applications.
 platform: ej2-asp-core-mvc
 control: Licensing Errors
 publishingplatform: ##Platform_Name##
@@ -22,7 +22,7 @@ The following error message will be shown if a Syncfusion license key has not be
 
 **Solution:**
 
-If you use ASP.NET Core components through trial installer or obtained our components via [NuGet.org](https://www.nuget.org/packages?q=syncfusion), you can choose from the options listed below
+* If you use ASP.NET Core components through trial installer or obtained our components via [NuGet.org](https://www.nuget.org/packages?q=syncfusion), you can choose from the options listed below
 
 1. If you **have a valid Syncfusion license**, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -34,6 +34,8 @@ If you use ASP.NET Core components through trial installer or obtained our compo
 
 4. If you **do not already have a Syncfusion account**, you can create one [here](https://www.syncfusion.com/account/register) and [purchase a license](https://www.syncfusion.com/sales/products) or start your 30-day free trial. Then you can **generate the trial license key for a specific version and platform** from [this page](https://www.syncfusion.com/account/manage-trials/start-trials).
 
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application) for information on registering the license key.
+
 ## Invalid key
 
 If the application is registered with an invalid key, another version of license key, or another platform’s license key, the following error message will pop up when launching the application.
@@ -44,7 +46,7 @@ If the application is registered with an invalid key, another version of license
 
 **Solution:**
 
-If you use ASP.NET Core components through trial installer or obtained our components via [NuGet.org](https://www.nuget.org/packages?q=syncfusion), you can choose from the options listed below
+* If you use ASP.NET Core components through trial installer or obtained our components via [NuGet.org](https://www.nuget.org/packages?q=syncfusion), you can choose from the options listed below
 
 1. If you have a valid Syncfusion license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -55,6 +57,8 @@ If you use ASP.NET Core components through trial installer or obtained our compo
 3. If you **have a Syncfusion account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
 4. If you **do not already have a Syncfusion account**, you can create one here and [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/manage-trials/downloads).
+
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application) for information on registering the license key.
 
 ## Trial expired
 
@@ -76,7 +80,7 @@ If the application is registered with another platform’s license key, the foll
 
 **Solution:**
 
-License keys are version and product specific. So, if you use ASP.NET Core components through trial installer or obtained our components via [NuGet.org](https://www.nuget.org/packages?q=syncfusion), you can choose from the options listed below
+* License keys are version and product specific. So, if you use ASP.NET Core components through trial installer or obtained our components via [NuGet.org](https://www.nuget.org/packages?q=syncfusion), you can choose from the options listed below
 
 1. If you have a valid Syncfusion license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -85,6 +89,8 @@ License keys are version and product specific. So, if you use ASP.NET Core compo
 2. If you have a Syncfusion account and an active trial, you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/manage-trials/downloads).
 
 3. If you **have a Syncfusion account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
+
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application) for information on registering the license key.
 
 ## Version Mismatch
 
@@ -96,7 +102,7 @@ If the application is registered with another version’s license key, the follo
 
 **Solution:**
 
-License keys are version and product specific. So, if you use ASP.NET Core components through trial installer or obtained our components via [NuGet.org](https://www.nuget.org/packages?q=syncfusion), you can choose from the options listed below
+* License keys are version and product specific. So, if you use ASP.NET Core components through trial installer or obtained our components via [NuGet.org](https://www.nuget.org/packages?q=syncfusion), you can choose from the options listed below
 
 1. If you have a valid Syncfusion license, you can **generate a license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
@@ -106,13 +112,15 @@ License keys are version and product specific. So, if you use ASP.NET Core compo
 
 3. If you **have a Syncfusion account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/products) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then you can **generate the trial license key for a specific version and product** from [this page](https://www.syncfusion.com/account/downloads).
 
+* In your application, register the generated license key. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application) for information on registering the license key.
+
 ## Facing licensing error message even after registering proper license keys
 
 1. Ensure that respective version [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) nuget package or assembly is referred properly in the application.
 
 2. Ensure that all the Syncfusion assemblies reference are of the same version and that the corresponding version and product's license key are registered in the application.
 
-3. The license key should be registered before initializing any Syncfusion controls in the application. Refer [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/license-key-registration/) page for more information on registering license keys.
+3. The license key should be registered before initializing any Syncfusion controls in the application. Refer [this](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application) page for more information on registering license keys.
 
 4. Same version Syncfusion assemblies should be present in the application output folders or published folders.
 

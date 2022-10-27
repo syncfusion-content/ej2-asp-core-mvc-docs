@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Common control
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Common control and more.
+title: Localization in ##Platform_Name## Common control | Syncfusion
+description: Learn here all about the Localizations in Syncfusion ##Platform_Name## Common control and much more.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -20,7 +20,7 @@ Syncfusion controls can be localized using the culture based JSON files. You can
 
 ### Adding culture based JSON files
 
-Syncfusion [locale data](https://www.npmjs.com/package/@syncfusion/ej2-locale) is also available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules\@syncfusion\ej2-locale\src`.
+Syncfusion [locale data](https://www.npmjs.com/package/@syncfusion/ej2-locale) is also available as npm package. So, you can install it through the below command in the application root directory. Once the package is installed, you can find the culture specific JSON data under the location `node_modules/@syncfusion/ej2-locale/src`.
 
 {% tabs %}
 {% highlight c# tabtitle="CMD" %}
@@ -30,7 +30,7 @@ npm i @syncfusion/ej2-locale
 {% endhighlight %}
 {% endtabs %}
 
-Once the `ej2-locale` package has installed, create a folder `locale` inside the `Content` folder. Then copy the specific culture files from `node_modules\@syncfusion\ej2-locale\src` location and paste it inside the `~/Content/locale` folder like below. The culture file contains all Syncfusion ASP.NET MVC controls locale text.
+Once the `ej2-locale` package has installed, create a folder `locale` inside the `Content` folder. Then copy the specific culture files from `node_modules/@syncfusion/ej2-locale/src` location and paste it inside the `~/Content/locale` folder like below. The culture file contains all Syncfusion ASP.NET MVC controls locale text.
 
 ![Moved locale data to ASP.NET MVC app](images/moved-locale-data.png)
 
@@ -82,7 +82,7 @@ Now, you can add the Syncfusion ASP.NET MVC control in `~/Views/Home/Index.cshtm
 
 ![Static culture](images/grid-locale.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Localization/Localization-with-static-culture)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization/tree/main/Localization-with-static-culture)
 
 ## Dynamically set the culture
 
@@ -164,7 +164,7 @@ namespace Localization_with_dynamic_culture.Models
 
 ![Change culture dynamically](images/dynamic-culture-switch.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Localization/Localization-with-dynamic-culture)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization/tree/main/Localization-with-dynamic-culture)
 
 
 ## Changing current locale
@@ -207,8 +207,8 @@ The following example demonstrates the Grid in Deutsch culture.
                 'lastPageTooltip': 'Zur letzten Seite',
                 'nextPageTooltip': 'Zur nächsten Seite',
                 'previousPageTooltip': 'Zurück zur letzten Seit',
-                'nextPagerTooltip': 'Zum nächsten Pager',
-                'previousPagerTooltip': 'Zum vorherigen Pager'
+                'nextPagerTooltip': 'Gehen Sie zu den nächsten Pager-Elementen',
+                'previousPagerTooltip': 'Gehen Sie zu vorherigen Pager-Elementen'
             }
         }
     });

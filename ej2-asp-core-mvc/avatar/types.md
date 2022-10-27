@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Avatar Component
-description: Learn here all about Types in Syncfusion ##Platform_Name## Avatar component of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Avatar Control | Syncfusion
+description: Learn here all about Types in Syncfusion ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Types and Styles
+# Types and Styles in ##Platform_Name## Avatar Control
 
 This section explains different types of avatar.
 
@@ -30,9 +30,6 @@ The Essential JS 2 Avatar has the following predefined sizes that can be used wi
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/size/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/size/HomeController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,9 +65,6 @@ The default style of the avatar is rectangular shape with rounded corners, which
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/default/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -97,9 +91,6 @@ The circle avatar style can be applied by adding the modifier class `.e-avatar-c
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/circle/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/avatar/circle/HomeController.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -115,3 +106,5 @@ The circle avatar style can be applied by adding the modifier class `.e-avatar-c
 {% endif %}
 
 ![Avatar Circle](./images/circle.PNG)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Avatar/AvatarUGSample).

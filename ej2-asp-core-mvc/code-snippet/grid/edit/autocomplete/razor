@@ -1,0 +1,39 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.Datasource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Type("string").Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Add();
+    col.Field("Freight").HeaderText("Freight").Type("number").Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Ship Name").Type("date").Format("yMd").Width("150").EditType("datepickeredit").Add();
+
+}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+    var autoCompleteData = [
+        { CustomerID: 'ALFKI', Id: '1' },
+        { CustomerID: 'ANATR', Id: '2' },
+        { CustomerID: 'ANTON', Id: '3' },
+        { CustomerID: 'BLONP', Id: '4' },
+        { CustomerID: 'BOLID', Id: '5' }
+    ];
+    var autoCompleteEle;
+    var element
+    function create(args) {
+        element = document.createElement('input');
+        return element;
+    }
+    function read(e) {
+        return autoCompleteEle.value;
+    }
+    function destroy() {
+        autoCompleteEle.destroy();
+    }
+    function write(args) {
+        autoCompleteEle = new ej.dropdowns.AutoComplete({
+            allowCustom: true,
+            value: args.rowData[args.column.field],
+            dataSource: autoCompleteData,
+            fields: { value: 'CustomerID', text: 'CustomerID' }
+        });
+        autoCompleteEle.appendTo(element);
+    }
+</script>

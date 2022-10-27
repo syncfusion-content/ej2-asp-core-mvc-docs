@@ -1,0 +1,3 @@
+<div class="control-section">
+    <ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=false height="590px"></ejs-documenteditorcontainer>
+</div>

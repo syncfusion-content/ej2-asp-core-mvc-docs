@@ -1,6 +1,9 @@
-<<div class="control-wrapper">
+@{
+    var data = new string[] { "Aeróbics", "Aeróbics en Agua", "Aerografía", "Aeromodelaje", "Águilas", "Ajedrez", "Ala Delta", "Álbumes de Música","Alusivos", "Análisis de Escritura a Mano"  };
+}
+<div class="control-wrapper">
     <div id="default" style='padding-top:75px;'>
-        <ejs-autocomplete id="list" dataSource="@ViewBag.data" ignoreAccent="true" placeholder="e.g: aero">
+        <ejs-autocomplete id="list" dataSource="@data" ignoreAccent="true" placeholder="e.g: aero">
         </ejs-autocomplete>
     </div>
 </div>

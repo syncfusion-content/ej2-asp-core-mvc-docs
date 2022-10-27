@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overflow in ##Platform_Name## Breadcrumb Component
-description: Learn here all about Overflow in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
+title: Overflow in ##Platform_Name## Breadcrumb Control | Syncfusion
+description: Learn here all about Overflow in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Overflow
 publishingplatform: ##Platform_Name##
@@ -36,9 +36,6 @@ Collapsed mode shows the first and last Breadcrumb items and hides the remaining
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/overflow/collapsed/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/collapsed/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -53,11 +50,7 @@ Collapsed mode shows the first and last Breadcrumb items and hides the remaining
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![Breadcrumb Sample](./images/breadcrumb-collapsed.png)
+![ASP.NET Core Breadcrumb with Collapsed Mode](images/breadcrumb-collapsed.png)
 
 ## Menu
 
@@ -68,9 +61,6 @@ Menu mode shows the number of Breadcrumb items that can be accommodated within t
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/overflow/menu/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/menu/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -86,11 +76,7 @@ Menu mode shows the number of Breadcrumb items that can be accommodated within t
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![Breadcrumb Sample](./images/breadcrumb-menu.png)
+![ASP.NET Core Breadcrumb with Menu Mode](images/breadcrumb-menu.png)
 
 ## Wrap
 
@@ -101,9 +87,6 @@ Wrap mode wraps the items to multiple lines when the Breadcrumb’s width exceed
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/overflow/wrap/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/wrap/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -119,11 +102,7 @@ Wrap mode wraps the items to multiple lines when the Breadcrumb’s width exceed
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![Breadcrumb Sample](./images/breadcrumb-wrap.png)
+![ASP.NET Core Breadcrumb with Wrap Mode](images/breadcrumb-wrap.png)
 
 ## Scroll
 
@@ -134,9 +113,6 @@ Scroll mode shows an HTML scroll bar when the Breadcrumb’s width exceeds the c
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/overflow/scroll/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/scroll/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -152,11 +128,7 @@ Scroll mode shows an HTML scroll bar when the Breadcrumb’s width exceeds the c
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![Breadcrumb Sample](./images/breadcrumb-scroll.png)
+![ASP.NET Core Breadcrumb with Scroll Mode](images/breadcrumb-scroll.png)
 
 ## Hidden
 
@@ -167,9 +139,6 @@ Hidden mode shows the maximum number of items possible in the container space an
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/breadcrumb/overflow/hidden/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/breadcrumb/overflow/hidden/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -185,12 +154,8 @@ Hidden mode shows the maximum number of items possible in the container space an
 {% endtabs %}
 {% endif %}
 
-
-
-Output be like the below.
-
-![Breadcrumb Sample](./images/bread-overflow-hidden.png)
-
 ## None
 
 None mode shows all the items on a single line.
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Breadcrumb/OverflowandTemplateSample).

@@ -1,0 +1,25 @@
+@model List<TreeGridSample.Controllers.TreeGridItems>
+
+@(Html.EJS().TreeGrid("TreeGrid")
+        .AllowRowDragAndDrop(true)
+        .Height(275)
+        .RowDrop("rowDrop")
+        .DataSource((IEnumerable<object>)Model)
+        .Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(TextAlign.Right).Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+            col.Field("StartDate").HeaderText("Start Date").TextAlign(TextAlign.Right).Format("yMd").Width(210).Add();
+            col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(190).Add();
+        })
+        .ChildMapping("Children").TreeColumnIndex(1).Render())
+
+<script>
+    function rowDrop(args) {
+        if (args.dropPosition == 'middleSegment') {
+          var treeGridObj = document.getElementById('TreeGrid').ej2_instances[0];    
+          args.cancel = true;
+          treeGridObj.reorderRows([args.fromIndex], args.dropIndex, 'above');
+        }
+    }
+</script>

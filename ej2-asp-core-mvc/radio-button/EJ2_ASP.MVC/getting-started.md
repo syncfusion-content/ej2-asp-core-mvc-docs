@@ -123,7 +123,7 @@ The Radio Button contains 2 states visually, they are as follows:
 * Checked
 * Unchecked
 
-The Radio Button [checked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.RadioButton.html#Syncfusion_EJ2_Buttons_RadioButton_Checked) property is used to handle the checked and unchecked state. In the checked state an inner circle will be added to the visualization of Radio Button.
+The Radio Button [Checked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.RadioButton.html#Syncfusion_EJ2_Buttons_RadioButton_Checked) property is used to handle the checked and unchecked state. In the checked state an inner circle will be added to the visualization of Radio Button.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

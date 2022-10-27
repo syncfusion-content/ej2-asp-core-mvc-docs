@@ -195,10 +195,12 @@ You can handle the success and failure actions using the [Success](https://help.
 
 ![ASP.NET MVC Uploader Actions](images/uploader-auto-01.png)
 
-> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) that shows how to render the file upload and browse the files which you want to upload to the server.
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Uploader/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
 * [How to add additional data on upload](./how-to/add-additional-data-on-upload)
 * [Achieve file upload programmatically](./how-to/achieve-file-upload-programmatically)
 * [Achieve invisible upload](./how-to/achieve-invisible-upload)
+
+> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) that shows how to render the file upload and browse the files which you want to upload to the server.
