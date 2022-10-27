@@ -4,7 +4,7 @@
     var data = new Employees().GetData();
 }
 
-<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user"></div>
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag employee"></div>
 
 @Html.EJS().Mention("Accessibility").Target("#mentionElement").MentionChar(nameMentionChar).DataSource((IEnumerable<object>)data).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings {  Text = "Name" }).Render()
 
