@@ -3,7 +3,7 @@
     char nameMentionChar = '@';
     var data = new Employees().GetData();
 }
-<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag country"></div>
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag employee"></div>
 
 @Html.EJS().Mention("Allow-Space").Target("#mentionElement").MentionChar(nameMentionChar).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Name" }).DataSource((IEnumerable<object>)data).AllowSpaces(true).Render()
 
