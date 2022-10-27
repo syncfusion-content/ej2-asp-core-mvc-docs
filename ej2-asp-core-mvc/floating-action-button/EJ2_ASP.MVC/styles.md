@@ -24,15 +24,7 @@ The Asp.Net MVC Floating Action Button supports the following predefined styles 
 | e-warning | Used to represent an action with caution. |
 | e-danger | Used to represent a negative action. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/styles/fab-styles/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -42,6 +34,7 @@ The Asp.Net MVC Floating Action Button supports the following predefined styles 
 {% include code-snippet/floating-action-button/styles/fab-styles/fabstyles.cs %}
 {% endhighlight %}
 {% endtabs %}
+
 {% endif %}
 
 ![Asp.Net MVC Floating Action Button Control with different Styles](images/Style.png)
@@ -64,16 +57,7 @@ To modify the Floating Action Button appearance, you need to override the defaul
 
 By using `cssClass`, you can customize the Floating Action Button to show text on hover with applied transition effect.
 
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/styles/onhover/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -83,6 +67,7 @@ By using `cssClass`, you can customize the Floating Action Button to show text o
 {% include code-snippet/floating-action-button/styles/onhover/hover.cs %}
 {% endhighlight %}
 {% endtabs %}
+
 {% endif %}
 
 ![Asp.Net MVC Floating Action Button control with Hover](images/onhover.png)

@@ -60,5 +60,5 @@ Event triggers when the Floating Action Button is clicked. Below example shows t
 {% endtabs %}
 {% endif %}
 
-![Asp.Net MVC FAB Control with OnClick Event](images/CoreOnClickEvent.png)
-![Asp.Net MVC FAB Control with OnClick Event](images/CoreOnClickEvent1.png)
+![FAB Control with OnClick Event](images/CoreOnClickEvent.png)
+![FAB Control with OnClick Event](images/CoreOnClickEvent1.png)

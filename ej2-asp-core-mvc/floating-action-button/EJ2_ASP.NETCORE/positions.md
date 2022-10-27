@@ -34,16 +34,6 @@ Below example demonstrates Bottom Left position of FAB.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/positions/bottom-left-position/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/floating-action-button/positions/bottom-left-position/position.cs %}
-{% endhighlight %}
-{% endtabs %}
 {% endif %}
 
 ![Asp.Net Core Floating Action Button Control](images/BottomLeftPosition.png)
@@ -58,16 +48,6 @@ Below example demonstrates different supported positions of FAB.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/positions/all-positions/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FabPosition.cs" %}
-{% include code-snippet/floating-action-button/positions/all-positions/allposition.cs %}
-{% endhighlight %}
-{% endtabs %}
 {% endif %}
 
 ![Asp.Net Core Floating Action Button Positions](images/FabPositions.png)
@@ -84,16 +64,6 @@ You can define the custom position of the Floating Action Button by override the
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/positions/custom-position/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomPosition.cs" %}
-{% include code-snippet/floating-action-button/positions/custom-position/customposition.cs %}
-{% endhighlight %}
-{% endtabs %}
 {% endif %}
 
 ![Asp.Net Core Floating Action Button Custom position](images/CustomPosition.png)

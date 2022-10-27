@@ -24,16 +24,6 @@ You can show icon only in Floating Action Button by setting [iconCss](https://he
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/iconsonly/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FabIcon.cs" %}
-{% include code-snippet/floating-action-button/icons/iconsonly/fabicon.cs %}
-{% endhighlight %}
-{% endtabs %}
 {% endif %}
 
 ![Asp.Net Core Floating Action Button with Icon](images/FabWithIcon.png)
@@ -50,16 +40,6 @@ You can show icon along with text in Floating Action Button by setting [iconCss]
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/iconswithtext/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FabTextIcon.cs" %}
-{% include code-snippet/floating-action-button/icons/iconswithtext/fabtexticon.cs %}
-{% endhighlight %}
-{% endtabs %}
 {% endif %}
 
 ![Asp.Net Core Floating Action Button with Text and Icon](images/IconandText.png)
@@ -76,16 +56,6 @@ You can change the position of icon when showing along with content by setting [
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/icons/icon-position/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="IconPosition.cs" %}
-{% include code-snippet/floating-action-button/icons/icon-position/iconposition.cs %}
-{% endhighlight %}
-{% endtabs %}
 {% endif %}
 
 ![Asp.Net Core Floating Action Button with Icon Position](images/IconPosition.png)

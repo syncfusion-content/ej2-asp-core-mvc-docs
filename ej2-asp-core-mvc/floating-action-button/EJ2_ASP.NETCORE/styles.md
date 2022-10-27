@@ -32,16 +32,6 @@ The Asp.Net Core Floating Action Button supports the following predefined styles
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/styles/fab-styles/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FabStyles.cs" %}
-{% include code-snippet/floating-action-button/styles/fab-styles/fabstyles.cs %}
-{% endhighlight %}
-{% endtabs %}
 {% endif %}
 
 ![Asp.Net Core Floating Action Button Control with different Styles](images/Style.png)
@@ -73,16 +63,6 @@ By using `cssClass`, you can customize the Floating Action Button to show text o
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/styles/onhover/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FabHover.cs" %}
-{% include code-snippet/floating-action-button/styles/onhover/hover.cs %}
-{% endhighlight %}
-{% endtabs %}
 {% endif %}
 
 ![Asp.Net Core Floating Action Button control with Hover](images/onhover.png)
