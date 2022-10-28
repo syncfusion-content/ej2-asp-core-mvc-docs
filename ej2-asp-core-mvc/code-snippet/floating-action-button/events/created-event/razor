@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Buttons
 
 <div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    @Html.EJS().Fab("fab").Target("#target").Created("CreatedEvent()").IconCss("e-icons e-edit").Content("Edit").Render()
+    @Html.EJS().Fab("fab").Created("CreatedEvent()").IconCss("e-icons e-edit").Content("Edit").Render()
 </div>
 
 <script>

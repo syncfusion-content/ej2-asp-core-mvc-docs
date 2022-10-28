@@ -1,15 +1,15 @@
 @using Syncfusion.EJ2.Buttons
 
 <div id="target" style="height:250px; position:relative; width:300px; border:1px solid;">
-    <ejs-fab target="#target" position=TopLeft iconCss="fab-icons fab-icon-people"></ejs-fab>
-    <ejs-fab target="#target" position=TopCenter iconCss="fab-icons fab-icon-people"></ejs-fab>
-    <ejs-fab target="#target" position=TopRight iconCss="fab-icons fab-icon-people"></ejs-fab>
-    <ejs-fab target="#target" position=MiddleLeft iconCss="fab-icons fab-icon-people"></ejs-fab>
-    <ejs-fab target="#target" position=MiddleCenter iconCss="fab-icons fab-icon-people"></ejs-fab>
-    <ejs-fab target="#target" position=MiddleRight iconCss="fab-icons fab-icon-people"></ejs-fab>
-    <ejs-fab target="#target" position=BottomLeft iconCss="fab-icons fab-icon-people"></ejs-fab>
-    <ejs-fab target="#target" position=BottomCenter iconCss="fab-icons fab-icon-people"></ejs-fab>
-    <ejs-fab target="#target" position=BottomRight iconCss="fab-icons fab-icon-people"></ejs-fab>
+    <ejs-fab position=TopLeft iconCss="fab-icons fab-icon-people"></ejs-fab>
+    <ejs-fab position=TopCenter iconCss="fab-icons fab-icon-people"></ejs-fab>
+    <ejs-fab position=TopRight iconCss="fab-icons fab-icon-people"></ejs-fab>
+    <ejs-fab position=MiddleLeft iconCss="fab-icons fab-icon-people"></ejs-fab>
+    <ejs-fab position=MiddleCenter iconCss="fab-icons fab-icon-people"></ejs-fab>
+    <ejs-fab position=MiddleRight iconCss="fab-icons fab-icon-people"></ejs-fab>
+    <ejs-fab position=BottomLeft iconCss="fab-icons fab-icon-people"></ejs-fab>
+    <ejs-fab position=BottomCenter iconCss="fab-icons fab-icon-people"></ejs-fab>
+    <ejs-fab position=BottomRight iconCss="fab-icons fab-icon-people"></ejs-fab>
 </div>
 
 <style>

@@ -1,13 +1,13 @@
 @using Syncfusion.EJ2.Buttons
 
 <div id="target" style="height:250px; position:relative; width:300px; border:1px solid;">
-    @Html.EJS("fab4").Target("#target").IconCss("e-icons e-edit").CssClass("fab-hover").Content("<span class='text-container'><span class='textEle'>Edit</span></span>").Render()    
+    @Html.EJS("fab4").IconCss("e-icons e-edit").CssClass("fab-hover").Content("<span class='text-container'><span class='textEle'>Edit</span></span>").Render()    
 </div>
 
 <style>
 
     .e-fab.e-btn.fab-hover {
-        padding: 6px 0px 10px 10px;
+        padding: 6px 2px 10px 10px;
     }
 
     .fab-hover .text-container {
@@ -18,7 +18,7 @@
     }
 
     .fab-hover:hover .text-container {
-        width: 35px;
+        width: 25px;
         margin: 0 5px;
         transition: width .5s linear .2s, margin .2s linear 0s;
     }

@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Buttons
 
 <div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    <ejs-fab id="fab" target="#target" iconCss="fab-icons fab-icon-people" content="Contacts" iconPosition=Right></ejs-fab>
+    <ejs-fab id="fab" iconCss="fab-icons fab-icon-people" content="Contacts" iconPosition=Right></ejs-fab>
 </div>
 
 <style>

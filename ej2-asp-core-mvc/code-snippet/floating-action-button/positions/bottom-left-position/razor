@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Buttons
 
 <div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    @Html.EJS("fab").Target("#target").IconCss("fab-icons fab-icon-people").Position(FabPosition.BottomLeft).Render()
+    @Html.EJS("fab").IconCss("fab-icons fab-icon-people").Position(FabPosition.BottomLeft).Render()
 </div>
 
 <style>

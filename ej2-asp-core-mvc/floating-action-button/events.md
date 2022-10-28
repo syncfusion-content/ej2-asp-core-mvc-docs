@@ -59,6 +59,3 @@ Event triggers when the Floating Action Button is clicked. Below example shows t
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-![FAB Control with OnClick Event](images/CoreOnClickEvent.png)
-![FAB Control with OnClick Event](images/CoreOnClickEvent1.png)

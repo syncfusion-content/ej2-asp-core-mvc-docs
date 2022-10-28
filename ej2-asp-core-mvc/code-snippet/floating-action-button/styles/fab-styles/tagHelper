@@ -1,5 +1,5 @@
 @using Syncfusion.EJ2.Buttons
 
 <div id="target" style="height:250px; position:relative; width:300px; border:1px solid;">
-    <ejs-fab target="#target" cssClass="e-warning" iconCss="e-icons e-edit"></ejs-fab>
+    <ejs-fab cssClass="e-warning" iconCss="e-icons e-edit"></ejs-fab>
 </div>
