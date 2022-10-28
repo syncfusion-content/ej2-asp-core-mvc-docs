@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot Chart in ##Platform_Name## Syncfusion Pivot Table Component
+title: Pivot Chart in ##Platform_Name## Syncfusion Pivot Table Control | Syncfusion
 description: Learn here all about Pivot Chart in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pivot Chart
@@ -47,8 +47,7 @@ The below sample displays the pivot chart component based on the pivot report bo
 
 ## Data Binding
 
-End user can bind both local and remote data binding options available in the component to feed the data. The [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property can be assigned either with an instance of `DataManager` or list of object.
-For more information [`refer`](./data-binding) here.
+End user can bind both local and remote data binding options available in the component to feed the data. The [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property can be assigned either with an instance of `DataManager` or list of object. For more information [`refer`](./data-binding) here.
 
 ## Chart Types
 
@@ -377,8 +376,7 @@ Exploding can be enabled by setting the `explode` property in  [`e-chartSeries`]
 
 ## Field List
 
-User can enable the field list by setting the property [`showFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag as **true**.
-By using this, user can customize the report dynamically and view the result in pivot chart. For more information regarding the field list, refer the [field list](./field-list) topic.
+User can enable the field list by setting the property [`showFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag as **true**. By using this, user can customize the report dynamically and view the result in pivot chart. For more information regarding the field list, refer the [field list](./field-list) topic.
 
 In the following sample, the `Popup` mode of field list is enabled in the pivot chart integration.
 
@@ -626,7 +624,7 @@ Furthermore, with a single click over the legend item, you can show or hide spec
 
 
 
-![output](images/showMemberSeries.png)
+![Chart series displayed with same colors for same points/members](images/showMemberSeries.png)
 
 ## Series Customization
 
