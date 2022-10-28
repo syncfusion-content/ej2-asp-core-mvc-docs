@@ -87,7 +87,7 @@ Both the row and column virtualization can be used along with grouping. At initi
 
 * While using column virtual scrolling, column width should be in the pixel. Percentage values are not accepted.
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited by the browser capability.
-* Cell selection will not be persisted in both row and column virtual scrolling.
+* Cell selection is not supported for both row and column virtual scrolling.
 * Virtual scrolling is not compatible with batch editing, detail template, rowspan, colspan and hierarchy features.
 * Group expand and collapse state will not be persisted.
 * Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [`Group with Page`](./grouping##Group-with-paging) topic.
