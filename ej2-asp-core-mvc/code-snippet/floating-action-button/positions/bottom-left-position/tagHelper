@@ -1,8 +1,6 @@
 @using Syncfusion.EJ2.Buttons
 
-<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    <ejs-fab id="fab" position=BottomLeft iconCss="fab-icons fab-icon-people"></ejs-fab>
-</div>
+<ejs-fab id="fab" position=BottomLeft iconCss="fab-icons fab-icon-people"></ejs-fab>
 
 <style>
 

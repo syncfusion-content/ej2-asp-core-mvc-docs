@@ -1,16 +1,14 @@
 @using Syncfusion.EJ2.Buttons
 
-<div id="target" style="height:250px; position:relative; width:300px; border:1px solid;">
-    @Html.EJS("fab1").Position(FabPosition.TopLeft).IconCss("fab-icons fab-icon-people").Render()
-    @Html.EJS("fab2").Position(FabPosition.TopCenter).IconCss("fab-icons fab-icon-people").Render()
-    @Html.EJS("fab3").Position(FabPosition.TopRight).IconCss("fab-icons fab-icon-people").Render()
-    @Html.EJS("fab4").Position(FabPosition.MiddleLeft).IconCss("fab-icons fab-icon-people").Render()
-    @Html.EJS("fab5").Position(FabPosition.MiddleCenter).IconCss("fab-icons fab-icon-people").Render()
-    @Html.EJS("fab6").Position(FabPosition.MiddleRight).IconCss("fab-icons fab-icon-people").Render()
-    @Html.EJS("fab7").Position(FabPosition.BottomLeft).IconCss("fab-icons fab-icon-people").Render()
-    @Html.EJS("fab8").Position(FabPosition.BottomCenter).IconCss("fab-icons fab-icon-people").Render()
-    @Html.EJS("fab9").Position(FabPosition.BottomRight).IconCss("fab-icons fab-icon-people").Render()
-</div>
+@Html.EJS("fab1").Position(FabPosition.TopLeft).IconCss("fab-icons fab-icon-people").Render()
+@Html.EJS("fab2").Position(FabPosition.TopCenter).IconCss("fab-icons fab-icon-people").Render()
+@Html.EJS("fab3").Position(FabPosition.TopRight).IconCss("fab-icons fab-icon-people").Render()
+@Html.EJS("fab4").Position(FabPosition.MiddleLeft).IconCss("fab-icons fab-icon-people").Render()
+@Html.EJS("fab5").Position(FabPosition.MiddleCenter).IconCss("fab-icons fab-icon-people").Render()
+@Html.EJS("fab6").Position(FabPosition.MiddleRight).IconCss("fab-icons fab-icon-people").Render()
+@Html.EJS("fab7").Position(FabPosition.BottomLeft).IconCss("fab-icons fab-icon-people").Render()
+@Html.EJS("fab8").Position(FabPosition.BottomCenter).IconCss("fab-icons fab-icon-people").Render()
+@Html.EJS("fab9").Position(FabPosition.BottomRight).IconCss("fab-icons fab-icon-people").Render()
 
 <style>
 

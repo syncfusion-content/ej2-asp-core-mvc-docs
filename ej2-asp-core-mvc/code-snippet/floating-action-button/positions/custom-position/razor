@@ -1,8 +1,6 @@
 @using Syncfusion.EJ2.Buttons
 
-<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    @Html.EJS("fab").IconCss("e-icons e-edit").CssClass("custom-position").Render()
-</div>
+@Html.EJS("fab").IconCss("e-icons e-edit").CssClass("custom-position").Render()
 
 <style>
 
