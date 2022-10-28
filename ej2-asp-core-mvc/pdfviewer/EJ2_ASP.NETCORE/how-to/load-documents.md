@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Load Documents in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Load Documents in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Load Documents in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Load Documents in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Documents
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
