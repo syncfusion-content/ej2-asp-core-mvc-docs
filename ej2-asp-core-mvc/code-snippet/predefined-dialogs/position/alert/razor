@@ -2,13 +2,11 @@
     @Html.EJS().Button("alertBtn").Content("Alert").CssClass("e-danger").Render()
 </div>
 <script>
-    var alertBtn = new ej.buttons.Button({});
-    alertBtn.appendTo('#alertBtn');
     document.getElementById('alertBtn').onclick = function () {
         ej.popups.DialogUtility.alert({
-            title: 'Low Battery',
-            content: '10% of battery remaining',
-            position: { X: 'top', Y: 'center' }
+            title: "Low battery",
+            content: "10% of battery remaining",
+            position: { X: "top", Y: "center" }
         });
     };
 </script>

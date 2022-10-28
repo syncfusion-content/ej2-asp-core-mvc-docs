@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resolve Pdfium Issue in ##Platform_Name## Pdfviewer Component
+title: Resolve Pdfium Issue in ##Platform_Name## Pdfviewer Control | Syncfusion
 description: Learn here all about Resolve Pdfium Issue in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resolve Pdfium Issue
@@ -42,8 +42,8 @@ The parent folder has to be provided as the path in the ReferencePath API.
 
 Also, install only the package related to that OS, then build and run the project on that platform. For Windows, Linux, and OSX operating systems, use the following corresponding libraries:
 
-•   Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
-•   Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
-•   Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX
+* Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
+* *Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
+* *Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX
 
 Following these steps should resolve the issue.

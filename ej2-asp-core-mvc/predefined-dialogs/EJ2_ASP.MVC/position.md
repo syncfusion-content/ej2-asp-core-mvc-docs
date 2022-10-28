@@ -17,26 +17,6 @@ Customize the dialog position by using the `position` property. The position can
 
 Use the following code snippet for **alert.cshtml**, **confirm.cshtml** and **prompt.cshtml** to customize the position. Here, customized the dialog position as X= "top" and Y= "center".
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-
-{% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/position/alert/tagHelper %}
-{% endhighlight %}
-
-{% highlight cshtml tabtitle="Confirm.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/position/confirm/tagHelper %}
-{% endhighlight %}
-
-{% highlight cshtml tabtitle="Prompt.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/position/prompt/tagHelper %}
-{% endhighlight %}
-
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 **Alert**
 
 {% tabs %}
@@ -69,7 +49,6 @@ Use the following code snippet for **alert.cshtml**, **confirm.cshtml** and **pr
 {% include code-snippet/predefined-dialogs/position/prompt/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 **Results from the code snippet**
 

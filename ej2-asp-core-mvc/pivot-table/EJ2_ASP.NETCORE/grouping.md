@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Pivot Table Component
+title: Grouping in ##Platform_Name## Syncfusion Pivot Table Control
 description: Learn here all about Grouping in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grouping
@@ -9,14 +9,13 @@ documentation: ug
 ---
 
 
-# Grouping
+# Grouping in ##Platform_Name## Pivot Table Control
 
 > This feature is applicable only for relational data source.
 
 Grouping is the most-useful feature in pivot table and the component automatically groups date, time, number and string. For example, the date type can be formatted and displayed based on year, quarter, month, and more. Likewise, the number type can be grouped range-wise, such as 1-5, 6-10, etc. These group fields will act as individual fields and allows users to drag them between different axes such as columns, rows, values, and filters and create pivot table at runtime.
 
-The grouping can be enabled by setting the [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowGrouping) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**.
-To perform the grouping action via UI, right click on the pivot table's row or column header, select "**Group**", a dialog will appear in which fill the appropriate options to group the data. To ungroup,right click on the pivot table's row or column header, select "**Ungroup**".
+The grouping can be enabled by setting the [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowGrouping) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**. To perform the grouping action via UI, right click on the pivot table's row or column header, select "**Group**", a dialog will appear in which fill the appropriate options to group the data. To ungroup,right click on the pivot table's row or column header, select "**Ungroup**".
 
 The following are the three different types of grouping:
 
@@ -91,6 +90,7 @@ The "**Starting at**" and "**Ending at**" options are used to set the number ran
 ### Range interval
 
 The "**Interval by**" option is used to separate the selected number data type field into range-wise such as 1-5, 6-10, etc.
+
 For example, if the user wants to display the "Product_ID" data field with a group interval of "**2**" by setting the "**Interval by**" option on their own. The "Product_ID" field will then be grouped by the specified range of intervals, such as "**1004-1005**", "**1006-1007**",etc.
 
 ![Grouping settings options applied for number grouping](../pivot-table/images/number-group-settings-applied.png)
@@ -224,7 +224,9 @@ Date grouping can also be configured using the [`e-groupsettings`](https://help.
 
 
 
-![Applied grouping settings updated in pivot table for date grouping](../pivot-table/images/date-group-updated.png)
+Furthermore, in the field list UI, these date group fields **Years (Date)**, **Quarters (Date)**, **Months (Date)**, etc... will be automatically grouped and displayed under the **Date** folder name.
+
+![Date fields grouped and displayed under the Date folder](./images/treeview.png "Group fields under a separate folder displayed in the field list UI")
 
 ### Ungrouping the existing date groups
 

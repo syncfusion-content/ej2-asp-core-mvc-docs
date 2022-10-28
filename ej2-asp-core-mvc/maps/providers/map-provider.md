@@ -8,15 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# OpenStreetMaps
+# OpenStreetMaps in ##Platform_Name## Maps Component
 
 The OpenStreetMap (OSM) is the online Maps provider built by a community of developers; it is free to use under an open license. It allows to view geographical data in a collaborative way from anywhere on the earth. The OSM Maps provides small tile images based on our requests and combines those images into a single image to display the Maps area in the Maps component.
 
 ## Adding OpenStreetMap
 
-The OSM Maps can be rendered using the `UrlTemplate` property.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+The OSM Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -28,6 +28,8 @@ The OSM Maps can be rendered using the `UrlTemplate` property.
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The OSM Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -55,7 +57,7 @@ The OSM Maps layer can be zoomed and panned. Zooming helps to get a closer look 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/maps/map-providers/osmzoom/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Osmzoom.cs" %}
+{% highlight c# tabtitle="OsmZoom.cs" %}
 {% include code-snippet/maps/map-providers/osmzoom/osmzoom.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -66,7 +68,7 @@ The OSM Maps layer can be zoomed and panned. Zooming helps to get a closer look 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/maps/map-providers/osmzoom/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Osmzoom.cs" %}
+{% highlight c# tabtitle="OsmZoom.cs" %}
 {% include code-snippet/maps/map-providers/osmzoom/osmzoom.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -76,26 +78,28 @@ The OSM Maps layer can be zoomed and panned. Zooming helps to get a closer look 
 
 ## Adding markers and navigation line
 
-Markers can be added to the layers of OSM Maps by setting the corresponding location's coordinates of latitude and longitude using `MarkerSettings`. Navigation lines can be added on top of an OSM Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the `NavigationLineSettings`.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+Markers can be added to the layers of OSM Maps by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of an OSM Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/maps/map-providers/osmmarker/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Osmmarker.cs" %}
+{% highlight c# tabtitle="OsmMarker.cs" %}
 {% include code-snippet/maps/map-providers/osmmarker/osmmarker.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+Markers can be added to the layers of OSM Maps by setting the corresponding location's coordinates of latitude and longitude using [MarkerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_MarkerSettings). Navigation lines can be added on top of an OSM Maps layer for highlighting a path among various places by setting the corresponding location's coordinates of latitude and longitude in the [NavigationLineSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_NavigationLineSettings).
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/maps/map-providers/osmmarker/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Osmmarker.cs" %}
+{% highlight c# tabtitle="OsmMarker.cs" %}
 {% include code-snippet/maps/map-providers/osmmarker/osmmarker.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -105,26 +109,28 @@ Markers can be added to the layers of OSM Maps by setting the corresponding loca
 
 ## Adding sublayer
 
-Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for highlighting a particular continent or country in OSM Maps by adding another layer and specifying the `Type` property of Maps layer to **SubLayer**.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for highlighting a particular continent or country in OSM Maps by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/maps/map-providers/osmsublayer/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Sublayer.cs" %}
+{% highlight c# tabtitle="SubLayer.cs" %}
 {% include code-snippet/maps/map-providers/osmsublayer/sublayer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
+Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for highlighting a particular continent or country in OSM Maps by adding another layer and specifying the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_Type) property of Maps layer to **SubLayer**.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/maps/map-providers/osmsublayer/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Sublayer.cs" %}
+{% highlight c# tabtitle="SubLayer.cs" %}
 {% include code-snippet/maps/map-providers/osmsublayer/sublayer.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -134,9 +140,9 @@ Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for
 
 ## Enabling legend
 
-The legend can be added to the tile Maps by setting the `Visible` property of `MapsLegendSettings` to **true**.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+The legend can be added to the tile Maps by setting the [Visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html#Syncfusion_EJ2_Maps_MapsLegendSettings_Visible) property of [LegendSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_LegendSettings) to **true**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -148,6 +154,8 @@ The legend can be added to the tile Maps by setting the `Visible` property of `M
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The legend can be added to the tile Maps by setting the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLegendSettings.html#Syncfusion_EJ2_Maps_MapsLegendSettings_Visible) property of [LegendSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_LegendSettings) to **true**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

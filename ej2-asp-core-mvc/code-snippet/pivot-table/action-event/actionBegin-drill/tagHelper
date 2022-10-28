@@ -17,7 +17,7 @@
 
 <script>
     function actionBegin(args) {
-        if (args.actionName == 'Drill down' && args.actionName == 'Drill up') {
+        if (args.actionName == 'Drill down' || args.actionName == 'Drill up') {
             args.cancel = true;
         }
     }
