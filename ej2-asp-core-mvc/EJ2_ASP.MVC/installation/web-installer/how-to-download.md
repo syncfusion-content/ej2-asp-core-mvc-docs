@@ -28,7 +28,7 @@ Our 30-day trial can be downloaded in two ways.
 
 2. After completing the required form or logging in with your registered Syncfusion account, you can download the ASP . NET MVC EJ2 trial installer from the confirmation page. (See the screenshot below)
 
-    ![Trial Confirmation](images\trial-confirmation.PNG)
+    ![Trial Confirmation](images/trial-confirmation.PNG)
 
 3. With a trial license, only the latest version's trial installer can be downloaded.
 
@@ -38,7 +38,7 @@ Our 30-day trial can be downloaded in two ways.
 
 6. Click the Download (element 1 in the screenshot below) button to get the Syncfusion Essential Studio ASP . NET MVC - EJ2 web installer.
 
-    ![Start Trial download](images\start-trial-download-installer.png)
+    ![Start Trial download](images/start-trial-download-installer.png)
 
 
 ### Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
@@ -47,7 +47,7 @@ You should initiate an evaluation if you have already obtained our components th
 
 1. You can start your 30-day free trial for ASP . NET MVC - EJ2 from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page from your account.
 
-    ![Trial Download](images\start-trial-download.PNG)
+    ![Trial Download](images/start-trial-download.PNG)
 
 2. To access this page, you must sign up/ log in with your Syncfusion account.
 
@@ -57,7 +57,7 @@ You should initiate an evaluation if you have already obtained our components th
 
 4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-generate) here at any time before the trial period expires. (See the screenshot below)
 
-    ![Start Trial Download](images\start-trial-download-installer.png)
+    ![Start Trial Download](images/start-trial-download-installer.png)
 
 5. You can find your current active trial products on the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page.
 
@@ -75,7 +75,7 @@ You should initiate an evaluation if you have already obtained our components th
 
 6. You can download other platform / add-on installers by going to More Downloads Options (element 3 in the screenshot below).
 
-    ![License Download Installer](images\license-download.png)
+    ![License Download Installer](images/license-download.png)
 
 7. Before the license expires, you can download the installer at any time from your registered account’s [License & Downloads](https://www.syncfusion.com/account/downloads) page (See the screenshot below.)
    

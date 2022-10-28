@@ -23,7 +23,7 @@
 
 <script>
     function actionBegin(args) {
-        if (args.actionName == 'Add new report' && args.actionName == 'Save current report') {
+        if (args.actionName == 'Add new report' || args.actionName == 'Save current report') {
             args.cancel = true;
         }
     }

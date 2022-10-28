@@ -1,12 +1,7 @@
 @{
-    var data = new[]
-    {
-            new {latitude= 34.060620, longitude= -118.330491, city= "California" },
-            new {latitude= 40.724546, longitude= -73.850344, city= "New York" }
-       };
     var marker = new List<MapsMarker>
     {
-        new MapsMarker{Visible=true, DataSource=data, Height=25, Width=15}
+        new MapsMarker{Visible=true, DataSource=ViewBag.markerData, Height=25, Width=15}
     };
 }
 

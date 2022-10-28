@@ -1,0 +1,28 @@
+<div class="msg-custom-section">
+    <div class="msg-content-section">
+      <h4>Rounded</h4>
+      @Html.EJS().Message("rounded").Severity(Severity.Warning).Content("The license will expire today").CssClass("rounded").Render()
+      <h4>Rounded</h4>
+      @Html.EJS().Message("square").Severity(Severity.Error).Content("The license key is invalid").CssClass("square").Render()
+    </div>
+</div>
+
+<style>
+  .msg-custom-section .content-section {
+    margin: 0 auto;
+    max-width: 400px;
+    padding-top: 10px;
+  }
+
+  .msg-custom-section .e-message {
+    margin: 10px 0;
+  }
+
+  .msg-custom-section .e-message.rounded {
+    border-radius: 5px;
+  }
+
+  .msg-custom-section .e-message.square {
+    border-radius: 1px;
+  }
+</style>

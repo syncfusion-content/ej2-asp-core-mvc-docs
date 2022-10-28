@@ -4,8 +4,8 @@
 <script>
     document.getElementById('promptBtn').onclick = function () {
         ej.popups.DialogUtility.confirm({
-            title: 'Join Chat Group',
-            content: '<p>Enter your name: </p> <input id= "inputEle" type="text" name="Required" class="e-input" placeholder="Type here.." />',
+            title: "Join chat group",
+            content: "<p>Enter your name: </p> <input id= inputEle type=text name=Required class=e-input placeholder=Type here.. />",
             isDraggable: true
         });
     };

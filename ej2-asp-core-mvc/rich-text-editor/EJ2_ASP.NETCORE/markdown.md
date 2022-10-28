@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markdown in ##Platform_Name## Rich Text Editor Component
+title: Markdown in ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn here all about Markdown in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Markdown
@@ -9,11 +9,12 @@ documentation: ug
 ---
 
 
-# Markdown
+# Markdown in RichTextEditor Control
 
 In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately.
 
 Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other.
+
 Rich Text Editor supports markdown editing when the [`editorMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_EditorMode_Syncfusion_EJ2_RichTextEditor_EditorMode_) set as `Markdown` and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text.
 
 ## Supported Commands
@@ -43,8 +44,8 @@ The ASP Core Markdown editor supports the following commands to format the markd
 | Links | **Link text without title text**<br>`[` Link text `](`URL`)`<br> **Link text with title text**<br>`[` Link text `](`URL , “title text”`)` | Create an inline link by wrapping link text in brackets `[ ]`, and then wrapping the URL as first parameter and title as second parameter in the parentheses `()`.<br>**Note:** The title text is optional, if needed it can be given manually.|
 | Table | `|` Heading 1 `|` Heading 2 `|`<br>`|---------|---------|`<br>`|` Col A1 `|` Col A2 `|`<br>`|` Col B1 `|` Col B2 `|` | Create a table using the pipes and underscores as given in the syntax to create 2 x 2 table. |
 | Horizontal Line | `***` (three asterix in new line)<br>(or)<br>`___` (three underscores in new line) | For horizontal line, add `***` or `___` to the start of the new line. |
-| Image | `![](`URL path`)` | Create an image by wrapping the image source in parentheses `()`. |
-| Image with alternate text | `![` alternate text `](`URL path`)` | Create an image with alternate text by wrapping an alternative text in brackets `[]`, and then link of the image source in parentheses `()`.<br>**Note:** When inserting the image using toolbar, the alternate text cannot be provided that needs to be given manually. |
+| Image | `[`alternate text`](`URL path`)` | Create an image by wrapping the image source in parentheses `()`. |
+| Image with alternate text | `[` alternate text `](`URL path`)` | Create an image with alternate text by wrapping an alternative text in brackets `[]`, and then link of the image source in parentheses `()`.<br>**Note:** When inserting the image using toolbar, the alternate text cannot be provided that needs to be given manually. |
 | Escape tick marks supported | Sample text content with `**`bold and `**`not bold`**` text can be in the same line.`**` | In the syntax, the whole content is made as bold where the content `not bold` can be made as normal text by adding the bold syntax to the start and end of the respective text. Likewise you can do the same for various inline commands. |
 | Escape Character | `\(`any syntax`)` | Escape any markdown syntax by prefix `\` to the syntax.<br>Example:<br>`\**`Bold text`**`|
 | HTML Entities | Copyright: &copy; - `&copy;` <br>Trade mark: &trade; - `&trade;`<br>Registered: &reg; - `&reg;`<br>Ampersand: &amp; - `&amp;`<br>Less than: &lt; - `&lt;`<br>Greater than: &gt; - `&gt;` | For HTML entities, add & and ; to the front and back of the respective entities. |
@@ -84,13 +85,11 @@ This sample demonstrates how to preview markdown changes in Rich Text Editor. Ty
 
 ## Table
 
-Rich Text Editor allows to insert Markdown table in edit panel with 2 X 2 rows and columns along with the heading.
-To use table tool, add the `CreateTable` item in toolbar items.
+Rich Text Editor allows to insert Markdown table in edit panel with 2 X 2 rows and columns along with the heading. To use table tool, add the `CreateTable` item in toolbar items.
 
 ### Insert Table
 
-To insert the table in Rich Text Editor, click the `table` toolbar option to insert the table into Rich Text Editor content and this is the default way in all the devices.
-Please refer the below sample and code snippets to add the table in Markdown editor
+To insert the table in Rich Text Editor, click the `table` toolbar option to insert the table into Rich Text Editor content and this is the default way in all the devices. Please refer the below sample and code snippets to add the table in Markdown editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

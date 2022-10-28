@@ -2,11 +2,9 @@
     @Html.EJS().Button("alertBtn").Content("Alert").CssClass("e-danger").Render()
 </div>
 <script>
-    var alertBtn = new ej.buttons.Button({});
-    alertBtn.appendTo('#alertBtn');
     document.getElementById('alertBtn').onclick = function () {
         ej.popups.DialogUtility.alert({
-            title: 'Good job!',
+            title: "Good job!",
             content: "You clicked the alert button!",
             okButton: { text: 'Done' }    
         });
