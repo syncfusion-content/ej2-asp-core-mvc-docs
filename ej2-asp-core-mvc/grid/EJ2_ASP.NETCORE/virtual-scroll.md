@@ -111,7 +111,7 @@ When a large number of records are bound to the Grid, it can only display the re
 
 Usually, the height of the grid can be calculated by using the total record count * height of the row. For example, with a 30px row height, 1 million records will be 30 000 000 pixels. If the browser's maximum height is about 22369600(this can vary by browser to browser), then the records above the maximum height of the browser cannot be scrolled. It will be hidden.
 
-Grid have bound with the 1M records. Due to the height limitation of the browser, approximately 6L records can be scrolled. This is demonstrated in the following gif.
+Grid have bound with the 1M records. Due to the height limitation of the browser, approximately 6L records can be scrolled. This is illustrated in the following gif.
 
 >> gif image
 
@@ -128,10 +128,12 @@ This can be demonstrated in the following sample. In the following sample, Grid 
 
 **Solution 2: Using RowHeight property**
 
-By reducing the row height using the RowHeight property of the Grid, you can be able to scroll more records. For example, if a Grid has 1M records and RowHeight is set as '20px', you will be able to scroll the records up to 1M. This is illustrated in the following gif.
+By reducing the [row height](https://ej2.syncfusion.com/aspnetcore/documentation/grid/row/row-height) using the [RowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property of the Grid, you can be able to scroll more records. For example, if a Grid has 1M records and RowHeight is set as '20px', you will be able to scroll the records up to 1M. This is illustrated in the following gif.
 
 >> gif image
 
 **Solution 3:**
 
-Another solution is to use the paging feature instead of virtual scrolling to view large numbers of records(nearly 1 million or more) in the Grid component.
+Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging) feature also loads the data in on demand. Pagination is also compatible with all the other features(Grouping, Editing, etc.,) in Grid. So use the paging feature instead of virtual scrolling to view the large number of records in the Grid.
+
+> Since paging and virtual scrolling are unique features, it is not recommendable to use both features at the same time.
