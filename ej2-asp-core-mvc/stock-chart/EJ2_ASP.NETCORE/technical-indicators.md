@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Technical Indicators in ##Platform_Name## Stock Chart Component
+title: Technical Indicators in ##Platform_Name## Stock Chart Control | Syncfusion
 description: Learn here all about Technical Indicators in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Technical Indicators
@@ -20,7 +20,9 @@ Stock Chart supports 10 types of technical indicators namely `Accumulation Distr
 ## Accumulation Distribution
 
 Accumulation Distribution combines price and volume to show how money may be flowing into or out of stock.
+
 To render a Accumulation Distribution Indicator, use indicator [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartIndicator.html#Syncfusion_EJ2_Charts_StockChartStockChartIndicator_Type) as `AccumulationDistribution`.
+
 To calculate the signal line [`volume`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartIndicator.html#Syncfusion_EJ2_Charts_StockChartStockChartIndicator_Volume) field is additionally added with `dataSource`.
 
 ## Average True Range (ATR)
@@ -51,8 +53,8 @@ Moving average Indicators are used to define the direction of the trend. To rend
 ## Stochastic
 
 It shows how a stock is, when compared to previous state. To render a Stochastic indicator, use indicator [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartIndicator.html#Syncfusion_EJ2_Charts_StockChartStockChartIndicator_Type) as `Stochastic`.
-Stochastic indicator will be represented by four lines (upperLine, lowerLine, periodLine, signalLine).
-In stochastic indicator the upperBand value and lowerBand value is customized by [`overBought`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartIndicator.html#Syncfusion_EJ2_Charts_StockChartStockChartIndicator_OverBought) and [`overSold`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartIndicator.html#Syncfusion_EJ2_Charts_StockChartStockChartIndicator_OverSold) properties of indicators and the periodLine and signalLine is render based on stochastic formula.
+
+Stochastic indicator will be represented by four lines (upperLine, lowerLine, periodLine, signalLine). In stochastic indicator the upperBand value and lowerBand value is customized by [`overBought`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartIndicator.html#Syncfusion_EJ2_Charts_StockChartStockChartIndicator_OverBought) and [`overSold`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartIndicator.html#Syncfusion_EJ2_Charts_StockChartStockChartIndicator_OverSold) properties of indicators and the periodLine and signalLine is render based on stochastic formula.
 
 ## Triangular Moving Average (TMA)
 
@@ -63,6 +65,7 @@ Moving average Indicators are used to define the direction of the trend. To rend
 <!-- markdownlint-disable MD034 -->
 
 A Stock Chart overlay that shows the upper and lower limits of normal price movements based on the standard deviation of prices.
+
 To render a Bollinger Band, use indicator [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartIndicator.html#Syncfusion_EJ2_Charts_StockChartStockChartIndicator_Type) as `BollingerBand`. Bollinger band will be represented by three lines (upperLine, lowerLine, signalLine).(https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartIndicator.html#Syncfusion_EJ2_Charts_StockChartStockChartIndicator_Type) and [`standardDeviations`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartIndicator.html#Syncfusion_EJ2_Charts_StockChartStockChartIndicator_StandardDeviation) is 2.
 
 {% if page.publishingplatform == "aspnet-core" %}

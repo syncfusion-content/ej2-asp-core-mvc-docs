@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.Buttons
+
+@Html.EJS("fab4").IconCss("e-icons e-edit").CssClass("e-warning").Render()    
