@@ -21,4 +21,4 @@ You can display the suggestion list items in a specific order. It has possible t
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core sorting](../images/asp-core-mvc-mention-sorting.png)
+![ASP.NET Core sorting](./images/asp-core-mvc-mention-sorting.png)

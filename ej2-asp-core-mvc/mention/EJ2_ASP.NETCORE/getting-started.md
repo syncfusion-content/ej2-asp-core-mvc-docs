@@ -101,7 +101,7 @@ Now, add the Syncfusion ASP.NET Core Mention tag helper in `~/Pages/Index.cshtml
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Mention control will be rendered in the default web browser.
 
-![ASP.NET Core Mention Control](../images/asp-core-mvc-mention-mention-control.png)
+![ASP.NET Core Mention Control](./images/asp-core-mvc-mention-mention-control.png)
 
 ## Binding data source
 

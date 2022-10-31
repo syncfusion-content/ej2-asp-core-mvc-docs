@@ -27,7 +27,7 @@ The Mention also supports different kinds of data services such as OData V4 and 
 
 Local data can be represented in three ways as described in the following.
 
-### 1. Array of simple data
+### Array of simple data
 
 The Mention has provided support to load an array of primitive data such as strings and numbers. Here, both the value and text fields act the same.
 
@@ -37,9 +37,9 @@ The Mention has provided support to load an array of primitive data such as stri
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core array of simple data](../images/asp-core-mvc-mention-simple-data.png)
+![ASP.NET Core array of simple data](./images/asp-core-mvc-mention-simple-data.png)
 
-### 2. Array of JSON data
+### Array of JSON data
 
 The Mention can generate its list of items through an array of JSON data. Therefore the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
 
@@ -51,9 +51,9 @@ In the following example, `Id` column and `Game` column from complex data have b
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core array of json data](../images/asp-core-mvc-mention-json-data.png)
+![ASP.NET Core array of json data](./images/asp-core-mvc-mention-json-data.png)
 
-### 3. Array of Complex data
+### Array of Complex data
 
 The Mention can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
 
@@ -68,7 +68,7 @@ In the following example, `Code.Id` and `Country.Name` columns from the complex 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core array of complex data](../images/asp-core-mvc-mention-complex-data.png)
+![ASP.NET Core array of complex data](./images/asp-core-mvc-mention-complex-data.png)
 
 ## Binding remote data
 
@@ -86,7 +86,7 @@ The following sample displays the first 6 contacts from `Customers` table of the
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core odata v4 adaptor](../images/asp-core-mvc-mention-odata-adaptor.png)
+![ASP.NET Core odata v4 adaptor](./images/asp-core-mvc-mention-odata-adaptor.png)
 
 ### Web API adaptor
 
@@ -98,7 +98,7 @@ You can use `WebApiAdaptor` to bind mention with Web API created using OData end
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core web api adaptor](../images/asp-core-mvc-mention-web-adaptor.png)
+![ASP.NET Core web api adaptor](./images/asp-core-mvc-mention-web-adaptor.png)
 
 ## See Also
 

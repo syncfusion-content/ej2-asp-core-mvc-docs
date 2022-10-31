@@ -24,7 +24,7 @@ In the following sample, each list item is split into two columns to display rel
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core item template](../images/asp-core-mvc-mention-item-template.png)
+![ASP.NET Core item template](./images/asp-core-mvc-mention-item-template.png)
 
 ## Display template
 
@@ -38,7 +38,7 @@ In the following sample, the selected value is displayed as a combined text of b
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core display template](../images/asp-core-mvc-mention-display-template.png)
+![ASP.NET Core display template](./images/asp-core-mvc-mention-display-template.png)
 
 ## No records template
 
@@ -50,7 +50,7 @@ You can show the custom design of the popup list content when no data and matche
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core no record template](../images/asp-core-mvc-mention-noRecord-template.png)
+![ASP.NET Core no record template](./images/asp-core-mvc-mention-noRecord-template.png)
 
 ## Spinner template
 
@@ -62,7 +62,7 @@ Display the customized waiting spinner, when data fetching takes time to load in
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core spinner template](../images/asp-core-mvc-mention-spinner-template.png)
+![ASP.NET Core spinner template](./images/asp-core-mvc-mention-spinner-template.png)
 
 ## See Also
 

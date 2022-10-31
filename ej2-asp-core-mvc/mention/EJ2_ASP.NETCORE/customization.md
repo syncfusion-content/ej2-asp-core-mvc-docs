@@ -21,7 +21,7 @@ You can show the mention character as the prefix of the selected item in mention
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core show or hide mention character](../images/asp-core-mvc-mention-show-mention-char.png)
+![ASP.NET Core show or hide mention character](./images/asp-core-mvc-mention-show-mention-char.png)
 
 ## Adding the suffix character after selection
 
@@ -51,7 +51,7 @@ By default, the popup list width value is set as `auto`. Depending on the mentio
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core popup list customization](../images/asp-core-mvc-mention-popup-list-customization.png)
+![ASP.NET Core popup list customization](./images/asp-core-mvc-mention-popup-list-customization.png)
 
 ## Trigger character
 
