@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.Buttons
+
+<ejs-fab cssClass="e-warning" iconCss="e-icons e-edit"></ejs-fab>
