@@ -291,13 +291,13 @@ Use the cell edit template feature of the Grid to render the RichTextEditor comp
 {% endif %}
 
 
-### Render multicolumn dropdownlist component while editing
+### Render multiple columns in DropDownList component while editing
 
-The Multicolumn dropdown component is rendered in the grid edit form using the cell edit template feature.
+Use the cell edit template feature of the Grid to render the DropDownList component in the Grid edit form.
 
-By default, the DropDownList component shows a single column value. Multiple columns can be rendered in this dropdown component using the [headerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_HeaderTemplate) and [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ItemTemplate) properties of the DropDownList component.
+The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer element. By default, list items can be rendered as a single column in the DropDownList component. Instead of this, multiple columns can be rendered. This can be achieved by using the [headerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_HeaderTemplate) and [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ItemTemplate) properties of the DropDownList component.
 
-This can be demonstrated in the following sample.
+This is demonstrated in the following sample.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
