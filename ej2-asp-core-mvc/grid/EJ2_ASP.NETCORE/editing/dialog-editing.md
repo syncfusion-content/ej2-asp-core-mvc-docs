@@ -83,11 +83,11 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 
 ## Show or hide columns in dialog editing
 
-Show hidden columns or hide visible column’s editor in the dialog while editing the grid record using the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of the Grid.
+The Grid has the option to show hidden columns or hide visible columns while editing in the dialog edit mode by using the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event of the Grid.
 
-In the `actionBegin` event, when the `requestType` is `beginEdit` or `add`, the column will be shown or hidden using the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Visible) property of [e-grid-column](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) tag helper, and when the `requestType` is `save`, the properties will be reset to their original state.
+In the `actionBegin` event, when the `requestType` is `beginEdit` or `add`, the column will be shown or hidden using the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Visible) property of [e-grid-column](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) tag helper. When the `requestType` is `save`, the properties will be reset to their original state.
 
-In the below example,  CustomerID column is rendered as a hidden column, and the ShipCountry column is rendered as a visible column. In the edit mode, the CustomerID column will be changed to a visible state and the ShipCountry column will be changed to a hidden state.
+In the following example, the CustomerID column is rendered as a hidden column, and the ShipCountry column is rendered as a visible column. In the edit mode, the CustomerID column will be changed to a visible state and the ShipCountry column will be changed to a hidden state.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
