@@ -262,6 +262,33 @@ Use the cell edit template feature of the Grid to render the MultiSelect DropDow
 {% endtabs %}
 {% endif %}
 
+### Render MaskedTextBox component while editing
+
+Use the cell edit template feature of the Grid to render the MaskedTextBox component in the Grid edit form. In the following sample, the MaskedTextBox component is rendered in the Mask column.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/masktextbox/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Masktextbox.cs" %}
+{% include code-snippet/grid/edit/masktextbox/masktextbox.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/masktextbox/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Masktextbox.cs" %}
+{% include code-snippet/grid/edit/masktextbox/Masktextbox.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Render RichTextEditor component while editing
 
 Use the cell edit template feature of the Grid to render the RichTextEditor component in the Grid edit form. In the below sample, we have rendered RichTextEditor component in the **ShipAddress** column, so we use [AllowTextWrap](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowTextWrap) property to true.
