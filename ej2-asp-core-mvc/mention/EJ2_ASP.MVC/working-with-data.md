@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data binding in ##Platform_Name## Mention Component | Syncfusion
-description: Learn here all about how to bind with local datasource and how to fetch data from remote data using the service in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data binding
 publishingplatform: ##Platform_Name##
