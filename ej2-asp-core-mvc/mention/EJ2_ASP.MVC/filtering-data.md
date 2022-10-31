@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mention Filtering in ##Platform_Name## Mention Component
+title: Mention Filtering in ##Platform_Name## Mention Component | Syncfusion
 description: Learn here all about mention filtering in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Mention Filtering
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Filtering
+# Filtering data in Mention control
 
 The Mention control has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the mention element.
 

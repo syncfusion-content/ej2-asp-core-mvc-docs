@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Mention Component
+title: Sorting in ##Platform_Name## Mention Component | Syncfusion
 description: Learn here all about sorting the datasource in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sorting
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
+
+# Sorting datasource in Mention control 
 
 # Sort order type
 

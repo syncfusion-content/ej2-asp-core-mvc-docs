@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Mention Component
+title: Templates in ##Platform_Name## Mention Component | Syncfusion
 description: Learn here all about templates in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Templates
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Templates
+# Templates in Mention control
 
 The Mention has been provided with several options to customize each suggestion list item, display item, and data loading indication.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Mention Component
+title: Data binding in ##Platform_Name## Mention Component | Syncfusion
 description: Learn here all about how to bind with local datasource and how to fetch data from remote data using the service in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data binding
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Working with Data
+# Working with Data in Mention control
 
 The Mention loads the data either from local data source or remote data services using the [dataSource](../api/mention/#datasource) property. It supports the data type of  either `array` or `DataManager`.
 
