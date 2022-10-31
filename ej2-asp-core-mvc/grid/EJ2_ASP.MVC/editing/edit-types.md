@@ -264,7 +264,7 @@ Use the cell edit template feature of the Grid to render the MultiSelect DropDow
 
 ### Render MaskedTextBox component while editing
 
-Use the cell edit template feature of the Grid to render the MaskedTextBox component in the Grid edit form. In the below sample, the MaskedTextBox component is rendered in the Mask column.
+Use the cell edit template feature of the Grid to render the MaskedTextBox component in the Grid edit form. In the following sample, the MaskedTextBox component is rendered in the Mask column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
