@@ -54,12 +54,12 @@ Use the following code snippet for **alert.cshtml**, **confirm.cshtml** and **pr
 
 **Alert**
 
-![Alert position Dialog](../images/alert-position.png)
+![ASP.NET MVC Predefinded Dialogs Alert position Dialog](./images/asp-core-mvc-predefinded-dialogs-alert-position.png)
 
 **Confirm**
 
-![Confirm position Dialog](../images/confirm-position.png)
+![ASP.NET MVC Predefinded Dialogs Confirm position Dialog](./images/asp-core-mvc-predefinded-dialogs-confirm-position.png)
 
 **Prompt**
 
-![Prompt position Dialog](../images/prompt-position.png)
+![ASP.NET MVC Predefinded Dialogs Prompt position Dialog](./images/asp-core-mvc-predefinded-dialogs-prompt-position.png)

@@ -61,15 +61,15 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 
 **Alert**
 
-![Alert action buttons Dialog](../images/alert-custom-action-btn.png)
+![ASP.NET MVC Predefinded Dialogs Alert action buttons Dialog](./images/asp-core-mvc-predefinded-dialogs-alert-custom-action-btn.png)
 
 **Confirm**
 
-![Confirm action buttons Dialog](../images/confirm-custom-action-btn.png)
+![ASP.NET MVC Predefinded Dialogs Confirm action buttons Dialog](./images/asp-core-mvc-predefinded-dialogs-confirm-custom-action-btn.png)
 
 **Prompt**
 
-![Prompt action buttons Dialog](../images/prompt-custom-action-btn.png)
+![ASP.NET MVC Predefinded Dialogs Prompt action buttons Dialog](./images/asp-core-mvc-predefinded-dialogs-prompt-custom-action-btn.png)
 
 ## Show or hide dialog close button 
 
@@ -119,15 +119,15 @@ Use the following code for **alert**, **confirm** and **prompt** to demonstrates
 
 **Alert**
 
-![Alert close icon Dialog](../images/alert-show-hide-btn.png)
+![ASP.NET MVC Predefinded Dialogs Alert close icon Dialog](./images/asp-core-mvc-predefinded-dialogs-alert-show-hide-btn.png)
 
 **Confirm**
 
-![Confirm close icon Dialog](../images/confirm-show-hide-btn.png)
+![ASP.NET MVC Predefinded Dialogs Confirm close icon Dialog](./images/asp-core-mvc-predefinded-dialogs-confirm-show-hide-btn.png)
 
 **Prompt**
 
-![Prompt close icon Dialog](../images/prompt-show-hide-btn.png)
+![ASP.NET MVC Predefinded Dialogs Prompt close icon Dialog](./images/asp-core-mvc-predefinded-dialogs-prompt-show-hide-btn.png)
 
 ## Customize dialog content
 
@@ -146,4 +146,4 @@ Use the following code to customize the dialog content to render the custom Text
 
 **Results from the code snippet**
 
-![Alert close icon Dialog](../images/confirm-custom-content.png)
+![ASP.NET MVC Predefinded Dialogs Alert close icon Dialog](./images/asp-core-mvc-predefinded-dialogs-confirm-custom-content.png)

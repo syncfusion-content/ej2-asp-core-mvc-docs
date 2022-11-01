@@ -131,7 +131,7 @@ In the below code example, alert dialog displayed on button click action.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Predefined Dialog will be rendered in the default web browser.
 
-![ASP.NET Core Predfined Dialog](../images/alert-default.png)
+![ASP.NET Core Predfined Dialogs Alert Dialog](./images/asp-core-mvc-predefinded-dialogs-alert-default.png)
 ### Show confirm dialog
 
 A confirm dialog box used to displays a specified message along with the `OK` and `Cancel` buttons.This can be achieved by using the `DialogUtility.confirm` method. It is used to get approval from the user, and it appears before any critical action. After get approval from the user the dialog will disappear automatically.
@@ -145,7 +145,7 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 {% endtabs %}
 
 
-![Confirm Dialog](../images/confirm-default.png)
+![ASP.NET Core Predfined Dialogs Confirm Dialog](./images/asp-core-mvc-predefinded-dialogs-confirm-default.png)
 
 ### Show Prompt dialog
 
@@ -159,7 +159,7 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 {% endhighlight %}
 {% endtabs %}
 
-![Prompt Dialog](../images/prompt-default.png)
+![ASP.NET Core Predfined Dialogs Prompt Dialog](./images/asp-core-mvc-predefinded-dialogs-prompt-default.png)
 ## See also
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
