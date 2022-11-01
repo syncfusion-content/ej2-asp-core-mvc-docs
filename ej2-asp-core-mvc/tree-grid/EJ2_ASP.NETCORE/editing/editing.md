@@ -11,8 +11,8 @@ documentation: ug
 
 # Editing in ##Platform_Name## Tree Grid Component
 
-The TreeGrid component has options to dynamically insert, delete and update records.
-Editing feature is enabled by using [`e-treegrid-editSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings.html) tag helper and it requires a primary key column for CRUD operations.
+The TreeGrid component has options to dynamically insert, delete and update records. Editing feature is enabled by using [`e-treegrid-editSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings.html) tag helper and it requires a primary key column for CRUD operations.
+
 To define the primary key, set [`isPrimaryKey`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~IsPrimaryKey.html) of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **true** in particular column.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -44,8 +44,7 @@ To define the primary key, set [`isPrimaryKey`](https://help.syncfusion.com/cr/c
 
 ## Toolbar with edit option
 
-The treegrid toolbar has the built-in items to execute Editing actions.
-You can define this by using the [`toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) property.
+The treegrid toolbar has the built-in items to execute Editing actions. You can define this by using the [`toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -140,8 +139,7 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 
 ## Default column values on add new
 
-The treegrid provides an option to set the default value for the columns when adding a new record in it.
-To set a default value for the particular column by defining the [`defaultValue`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~DefaultValue.html) in [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper.
+The treegrid provides an option to set the default value for the columns when adding a new record in it. To set a default value for the particular column by defining the [`defaultValue`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~DefaultValue.html) in [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -201,8 +199,7 @@ In the following demo, editing is disabled for the **Start Date** column.
 
 ## Troubleshoot: Editing works only for first row
 
-The Editing functionalities can be performed based upon the primary key value of the selected row.
-If [`isPrimaryKey`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~IsPrimaryKey.html) is not defined in the treegrid, then edit or delete action take places the first row.
+The Editing functionalities can be performed based upon the primary key value of the selected row. If [`isPrimaryKey`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~IsPrimaryKey.html) is not defined in the treegrid, then edit or delete action take places the first row.
 
 
 

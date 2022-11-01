@@ -1,0 +1,27 @@
+@{
+    var data = new Countries().GetData();
+    char nameMentionChar = '@';
+}
+
+<div id="mentionElement" placeholder="Type @@ and tag country"></div>
+<ejs-mention id="comments" mentionChar="@nameMentionChar" dataSource="@data" target="#mentionElement" popupWidth="250px" popupHeight="200px">
+    <e-mention-fields text="Country"></e-mention-fields>
+</ejs-mention>
+
+
+<style>
+
+    div#mentionElement[placeholder]:empty:before {
+        content: attr(placeholder);
+    }
+
+    #mentionElement {
+        min-height: 100px;
+        border: 1px solid #D7D7D7;
+        border-radius: 4px;
+        padding: 8px;
+        font-size: 14px;
+        width: 600px;
+    }
+</style>
+
