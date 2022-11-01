@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Transform
+# Transform in Image Editor control
 
 The Image Editor has the rotate, flip, and zoom transformation options and it transforms the image editor with annotations.
 
