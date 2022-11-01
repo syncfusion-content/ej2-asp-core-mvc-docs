@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mention Filtering in ##Platform_Name## Mention Component
-description: Learn here all about mention filtering in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
+title: Mention Filtering in ##Platform_Name## Mention control | Syncfusion
+description: Learn here all about mention filtering in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Mention Filtering
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Filtering
+# Filtering data in Mention
 
 The Mention control has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the mention element.
 
@@ -27,7 +27,7 @@ The remote request does not fetch the search data until the search key contains 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC minimum filter character](../images/asp-core-mvc-mention-minimum-filter-character.png)
+![ASP.NET MVC Mention minimum filter character](./images/asp-core-mvc-mention-minimum-filter-character.png)
 
 ## Change the filter type
 
@@ -46,7 +46,7 @@ While filtering, you can change the filter type to `Contains`, `StartsWith`, or 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC change filter type](../images/asp-core-mvc-mention-filter-type.png)
+![ASP.NET MVC Mention change filter type](./images/asp-core-mvc-mention-filter-type.png)
 
 ## Allow spacing between search
 
@@ -63,7 +63,7 @@ While filtering the data in the data source, you can allow the space in the midd
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC allow spacing between search](../images/asp-core-mvc-mention-allow-spacing.png)
+![ASP.NET MVC Mention allow spacing between search](./images/asp-core-mvc-mention-allow-spacing.png)
 
 ## Customize the suggestion item count
 
@@ -78,9 +78,9 @@ While filtering, you can customize the number of list items to be displayed in t
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC suggestion item count](../images/asp-core-mvc-mention-suggestion-count.png)
+![ASP.NET MVC Mention suggestion item count](./images/asp-core-mvc-mention-suggestion-count.png)
 
-## See Also
+## See also
 
 * [Templates](./template)
 

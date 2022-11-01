@@ -1,4 +1,5 @@
 @{
+    ...
     string[] data = new string[] { "Selma Rose", "Garth", "Robert", "William", "Joseph" };
     char nameMentionChar = '@';
 }

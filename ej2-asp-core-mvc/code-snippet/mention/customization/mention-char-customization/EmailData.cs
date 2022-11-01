@@ -9,6 +9,7 @@ namespace WebApplication1.Models
     {
         public string Name { get; set; }
         public string EmailId { get; set; }
+
         public List<EmailData> EmailList()
         {
             List<EmailData> email = new List<EmailData>()

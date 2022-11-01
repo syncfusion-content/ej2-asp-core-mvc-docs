@@ -1,7 +1,7 @@
 @model List<string>
 @{
     char nameMentionChar = '@';
-    var data = new SportsData().SportsList();
+    List<SportsData> data = new SportsData().SportsList();
 }
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag sport"></div>
 
