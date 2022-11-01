@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Mention Component | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
+title: Data binding in ##Platform_Name## Mention control | Syncfusion
+description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data binding
 publishingplatform: ##Platform_Name##

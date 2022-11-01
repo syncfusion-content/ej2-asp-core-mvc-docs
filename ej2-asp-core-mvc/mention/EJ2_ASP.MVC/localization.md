@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Mention Component | Syncfusion
-description: Learn here all about localization in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Mention control | Syncfusion
+description: Learn here all about localization in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
