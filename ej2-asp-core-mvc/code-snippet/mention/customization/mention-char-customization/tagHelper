@@ -1,5 +1,5 @@
 @{
-    var data = new EmailData().EmailList();
+    List<EmailData> data = new EmailData().EmailList();
     char nameMentionChar = '#';
 }
 
