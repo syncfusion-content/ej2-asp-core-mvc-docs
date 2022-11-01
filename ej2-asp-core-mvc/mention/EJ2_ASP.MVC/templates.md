@@ -78,4 +78,4 @@ Display the customized waiting spinner, when data fetching takes time to load in
 
 ## See also
 
-* [How to acheive filtering](./filtering-data)
+* [How to achieve filtering](./filtering-data)
