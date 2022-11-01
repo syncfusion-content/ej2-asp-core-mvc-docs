@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Working with Data in Mention
+# Working with data in Mention
 
 The Mention loads the data either from local data source or remote data services using the [dataSource](../api/mention/#datasource) property. It supports the data type of  either `array` or `DataManager`.
 
@@ -40,7 +40,7 @@ The Mention has provided support to load an array of primitive data such as stri
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC array of simple data](./images/asp-core-mvc-mention-simple-data.png)
+![ASP.NET MVC Mention array of simple data](./images/asp-core-mvc-mention-simple-data.png)
 
 ### Array of JSON data
 
@@ -57,7 +57,7 @@ In the following example, `Id` column and `Game` column from complex data have b
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC array of JSON data](./images/asp-core-mvc-mention-json-data.png)
+![ASP.NET MVC Mention array of JSON data](./images/asp-core-mvc-mention-json-data.png)
 
 ### Array of Complex data
 
@@ -74,7 +74,7 @@ In the following example, `Code.Id` and `Country.Name` columns from the complex 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC array of Complex data](./images/asp-core-mvc-mention-complex-data.png)
+![ASP.NET MVC Mention array of complex data](./images/asp-core-mvc-mention-complex-data.png)
 
 ## Binding remote data
 
@@ -95,7 +95,7 @@ The following sample displays the first 6 contacts from `Customers` table of the
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC odata v4 adaptor](./images/asp-core-mvc-mention-OData-adaptor.png)
+![ASP.NET MVC Mention odata v4 adaptor](./images/asp-core-mvc-mention-OData-adaptor.png)
 
 ### Web API adaptor
 
@@ -110,9 +110,9 @@ You can use `WebApiAdaptor` to bind mention with Web API created using OData end
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC web api adaptor](./images/asp-core-mvc-mention-web-adaptor.png)
+![ASP.NET MVC Mention web api adaptor](./images/asp-core-mvc-mention-web-adaptor.png)
 
-## See Also
+## See also
 
 * [Customization](./customization)
 * [How to perform filtering](./filtering-data)

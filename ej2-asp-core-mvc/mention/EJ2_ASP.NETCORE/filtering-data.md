@@ -24,7 +24,7 @@ The remote request does not fetch the search data until the search key contains 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core minimum filter character](./images/asp-core-mvc-mention-minimum-filter-character.png)
+![ASP.NET Core Mention minimum filter character](./images/asp-core-mvc-mention-minimum-filter-character.png)
 
 ## Change the filter type
 
@@ -40,7 +40,7 @@ While filtering, you can change the filter type to `Contains`, `StartsWith`, or 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core change filter type](./images/asp-core-mvc-mention-filter-type.png)
+![ASP.NET Core Mention change filter type](./images/asp-core-mvc-mention-filter-type.png)
 
 ## Allow spacing between search
 
@@ -57,7 +57,7 @@ While filtering the data in the data source, you can allow the space in the midd
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core allow spacing between search](./images/asp-core-mvc-mention-allow-spacing.png)
+![ASP.NET Core Mention allow spacing between search](./images/asp-core-mvc-mention-allow-spacing.png)
 
 ## Customize the suggestion item count
 
@@ -72,9 +72,9 @@ While filtering, you can customize the number of list items to be displayed in t
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core suggestion item count](./images/asp-core-mvc-mention-suggestion-count.png)
+![ASP.NET Core Mention suggestion item count](./images/asp-core-mvc-mention-suggestion-count.png)
 
-## See Also
+## See also
 
 * [Templates](./template)
 
