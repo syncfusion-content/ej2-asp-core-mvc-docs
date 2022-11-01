@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Mode in ##Platform_Name## Tooltip Component
+title: Open Mode in ##Platform_Name## Tooltip Control | Syncfusion
 description: Learn here all about Open Mode in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open Mode
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Open Mode
+# Open Mode in Tooltip Control
 
 You can decide the mode on which the Tooltip is to be opened on a page, i.e., on hovering, focusing, or clicking on the target elements.
 
@@ -17,9 +17,7 @@ You can decide the mode on which the Tooltip is to be opened on a page, i.e., on
 > Tooltips are also displayed as long as you continue to tap and hold the element. On lift, it  disappears in the next 1.5 seconds.
 > If there is another action before that time ends, then the Tooltip disappears.
 
-The `opensOn` property can take either a single or a combination of multiple values, separated by space from the following options.
-The table  below explains how the Tooltip opens on both desktop and mobile based on the value(s) assigned to the `opensOn` property.
-By default, it takes `Auto` value.
+The `opensOn` property can take either a single or a combination of multiple values, separated by space from the following options. The table  below explains how the Tooltip opens on both desktop and mobile based on the value(s) assigned to the `opensOn` property. By default, it takes `Auto` value.
 
 | Values | Desktop | Mobile |
 | ------------- | ------------- | ------------- |

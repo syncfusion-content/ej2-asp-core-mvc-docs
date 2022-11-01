@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Additional Data On Upload in ##Platform_Name## Uploader Component
+title: Additional Data On Upload in ##Platform_Name## Uploader | Syncfusion
 description: Learn here all about Add Additional Data On Upload in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Additional Data On Upload
@@ -11,8 +11,7 @@ documentation: ug
 
 # Add additional data on upload
 
-The uploader control allows you to add additional data on file upload, which is used to get in the server-side. 
-By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event and its customFormData argument, you can achieve this behavior. Refer to the following example.
+The uploader control allows you to add additional data on file upload, which is used to get in the server-side. By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event and its customFormData argument, you can achieve this behavior. Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

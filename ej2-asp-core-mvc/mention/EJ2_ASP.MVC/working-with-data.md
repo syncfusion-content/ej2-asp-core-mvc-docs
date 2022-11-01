@@ -40,11 +40,11 @@ The Mention has provided support to load an array of primitive data such as stri
 {% endhighlight %}
 {% endtabs %}
 
-![Array of simple data](../images/simple-data.png)
+![ASP.NET MVC array of simple data](../images/asp-core-mvc-mention-simple-data.png)
 
 ### 2. Array of JSON data
 
-The Mention can generate its list items through an array of complex data. Therefore the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
+The Mention can generate its list of items through an array of JSON data. Therefore the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
 
 In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -53,28 +53,28 @@ In the following example, `Id` column and `Game` column from complex data have b
 {% include code-snippet/mention/working-with-data/arrayof-json-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/working-with-data/arrayof-json-data/jsonData.cs %}
+{% include code-snippet/mention/working-with-data/arrayof-json-data/SportsData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Array of JSON data](../images/json-data.png)
+![ASP.NET MVC array of JSON data](../images/asp-core-mvc-mention-json-data.png)
 
 ### 3. Array of Complex data
 
 The Mention can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
 
-In the following example, `Code.Id` column and `Country.CountryId` column from complex data have been mapped to the `value` field and `text` field, respectively.
+In the following example, `Code.Id` and `Country.Name` columns from the complex data have been mapped to the `value` and `text` fields respectively.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/working-with-data/complex-data/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Complex.cs" %}
-{% include code-snippet/mention/working-with-data/complex-data/Complexdata.cs %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/mention/working-with-data/complex-data/Complex.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Array of Complex data](../images/complex-data.png)
+![ASP.NET MVC array of Complex data](../images/asp-core-mvc-mention-complex-data.png)
 
 ## Binding remote data
 
@@ -90,12 +90,12 @@ The following sample displays the first 6 contacts from `Customers` table of the
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/working-with-data/odata-v4-adaptor/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Complexdata.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/working-with-data/odata-v4-adaptor/v4-adaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![OData v4 adaptor](../images/OData-adaptor.png)
+![ASP.NET MVC odata v4 adaptor](../images/asp-core-mvc-mention-OData-adaptor.png)
 
 ### Web API adaptor
 
@@ -105,12 +105,12 @@ You can use `WebApiAdaptor` to bind mention with Web API created using OData end
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/working-with-data/web-api/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Complexdata.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/working-with-data/web-api/web-api.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Web API adaptor](../images/web-adaptor.png)
+![ASP.NET MVC web api adaptor](../images/asp-core-mvc-mention-web-adaptor.png)
 
 ## See Also
 

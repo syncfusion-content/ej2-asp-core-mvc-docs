@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Markup Annotation in ##Platform_Name## Pdfviewer Component
+title: Text Markup Annotation in ##Platform_Name## Pdfviewer Control | Syncfusion
 description: Learn here all about Text Markup Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Markup Annotation
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Text Markup Annotation in the ASP.NET Core PDF Viewer component
+# Text Markup Annotation in the ASP.NET Core PDF Viewer Control
 
 The PDF Viewer control provides the options to add, edit, and delete text markup annotations such as highlight, underline, and strikethrough annotations in the PDF document.
 
@@ -19,18 +19,20 @@ The PDF Viewer control provides the options to add, edit, and delete text markup
 
 There are two ways to highlight a text in the PDF document:
 
-1. Using the context menu
-    * Select a text in the PDF document and right-click it.
-    * Select **Highlight** option in the context menu that appears.
+1.Using the context menu
+
+* Select a text in the PDF document and right-click it.
+* Select **Highlight** option in the context menu that appears.
 
 ![Alt text](../../pdfviewer/images/highlight_context.png)
 
 <!-- markdownlint-disable MD029 -->
-2. Using the annotation toolbar
-    * Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
-    * Select the **Highlight** button in the annotation toolbar. It enables the highlight mode.
-    * Select the text and the highlight annotation will be added.
-    * You can also select the text and apply the highlight annotation using the **Highlight** button.
+2.Using the annotation toolbar
+
+* Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
+* Select the **Highlight** button in the annotation toolbar. It enables the highlight mode.
+* Select the text and the highlight annotation will be added.
+* You can also select the text and apply the highlight annotation using the **Highlight** button.
 
 ![Alt text](../../pdfviewer/images/highlight_button.PNG)
 
@@ -81,18 +83,20 @@ Refer to the following code sample to switch back to normal mode from the highli
 
 There are two ways to underline a text in the PDF document:
 
-1. Using the context menu
-    * Select a text in the PDF document and right-click it.
-    * Select the **Underline** option in the context menu that appears.
+1.Using the context menu
+    
+* Select a text in the PDF document and right-click it.
+* Select the **Underline** option in the context menu that appears.
 
 ![Alt text](../../pdfviewer/images/underline_context.png)
 
 <!-- markdownlint-disable MD029 -->
-2. Using the annotation toolbar
-    * Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
-    * Select the **Underline** button in the annotation toolbar. It enables the underline mode.
-    * Select the text and the underline annotation will be added.
-    * You can also select the text and apply the underline annotation using the **Underline** button.
+2.Using the annotation toolbar
+    
+* Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
+* Select the **Underline** button in the annotation toolbar. It enables the underline mode.
+* Select the text and the underline annotation will be added.
+* You can also select the text and apply the underline annotation using the **Underline** button.
 
 ![Alt text](../../pdfviewer/images/underline_button.png)
 
@@ -143,18 +147,20 @@ Refer to the following code sample to switch back to normal mode from the underl
 
 There are two ways to strikethrough a text in the PDF document:
 
-1. Using the context menu
-    * Select a text in the PDF document and right-click it.
-    * Select the **Strikethrough** option in the context menu that appears.
+1.Using the context menu
+
+* Select a text in the PDF document and right-click it.
+* Select the **Strikethrough** option in the context menu that appears.
 
 ![Alt text](../../pdfviewer/images/strikethrough_context.png)
 
 <!-- markdownlint-disable MD029 -->
-2. Using the annotation toolbar
-    * Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
-    * Select the **Strikethrough** button in the annotation toolbar. It enables the strikethrough mode.
-    * Select the text and the strikethrough annotation will be added.
-    * You can also select the text and apply the strikethrough annotation using the **Strikethrough** button.
+2.Using the annotation toolbar
+
+* Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
+* Select the **Strikethrough** button in the annotation toolbar. It enables the strikethrough mode.
+* Select the text and the strikethrough annotation will be added.
+* You can also select the text and apply the strikethrough annotation using the **Strikethrough** button.
 
 ![Alt text](../../pdfviewer/images/strikethrough_button.png)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Batch Editing in ##Platform_Name## Grid Component
+title: Batch Editing in ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Batch Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Batch Editing
@@ -9,11 +9,9 @@ documentation: ug
 ---
 
 
-# Batch Editing
+# Batch Editing in Grid Control
 
-In batch edit mode, when you double-click on the grid cell, then the target cell changed to edit state.
-You can bulk save (added, changed and deleted data in the single request) to data source by click on the toolbar's **Update** button or by externally calling the **batchSave** method.
-To enable Batch edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property of [`e-grid-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) tag helper as **Batch**.
+In batch edit mode, when you double-click on the grid cell, then the target cell changed to edit state. You can bulk save (added, changed and deleted data in the single request) to data source by click on the toolbar's **Update** button or by externally calling the **batchSave** method. To enable Batch edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property of [`e-grid-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) tag helper as **Batch**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
