@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Templates in Mention control
+# Templates in Mention
 
 The Mention has been provided with several options to customize each suggestion list item, display item, and data loading indication.
 

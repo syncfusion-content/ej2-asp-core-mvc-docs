@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in Mention control
+# Accessibility in Mention
 
 Web accessibility makes web contents and applications more accessible to people with disabilities. The Mention control provides built-in compliance with `WAI-ARIA` specifications. The `WAI-ARIA` support is achieved using attributes such as `aria-selected` and `aria-activedescendent`.
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization in ASP.NET MVC Mention control
+# Localization in ASP.NET MVC Mention
 
 ASP.NET MVC Mention component can be localized. Refer to ASP.NET Core [Localization](../../common/EJ2_ASP.MVC/localization.md) topic to localize Syncfusion ASP.NET MVC components.
 

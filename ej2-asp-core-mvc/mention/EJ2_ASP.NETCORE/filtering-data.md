@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Filtering data in Mention control
+# Filtering data in Mention
 
 The Mention control has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the mention element.
 

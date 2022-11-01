@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization in ASP.NET Core Mention control
+# Localization in ASP.NET Core Mention
 
 ASP.NET Core Mention component can be localized. Refer to ASP.NET Core [Localization](../../common/EJ2_ASP.NETCORE/localization.md) topic to localize Syncfusion ASP.NET Core components.
 

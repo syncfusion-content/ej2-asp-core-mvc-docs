@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customization in Mention control
+# Customization in Mention
 
 ## Show or hide mention character
 

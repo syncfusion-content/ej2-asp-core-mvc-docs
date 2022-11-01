@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Sorting datasource in Mention control 
+# Sorting datasource in Mention 
 
 ## Sort order type
 
