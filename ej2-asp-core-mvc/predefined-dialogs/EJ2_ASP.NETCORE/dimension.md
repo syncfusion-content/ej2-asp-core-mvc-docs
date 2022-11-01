@@ -36,15 +36,15 @@ Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Pr
 
 **Alert**
 
-![Alert dimension Dialog](../images/alert-dimension.png)
+![ASP.NET Core Predefinded Dialogs Alert dimension Dialog](./images/asp-core-mvc-predefinded-dialogs-alert-dimension.png)
 
 **Confirm**
 
-![Confirm dimension Dialog](../images/confirm-dimension.png)
+![ASP.NET Core Predefinded Dialogs Confirm dimension Dialog](./images/asp-core-mvc-predefinded-dialogs-confirm-dimension.png)
 
 **Prompt**
 
-![prompt dimension Dialog](../images/prompt-dimension.png)
+![ASP.NET Core Predefinded Dialogs prompt dimension Dialog](./images/asp-core-mvc-predefinded-dialogs-prompt-dimension.png)
 
 ## Max-width and max-height
 
@@ -61,7 +61,7 @@ Use the following code to customize the max-width and max-height for alert dialo
 
 {% endtabs %}
 
-![Max width and height](../images/alert-dimension-max-height-width.png)
+![ASP.NET Core Predefinded Dialogs Max width and height](./images/asp-core-mvc-predefinded-dialogs-alert-dimension-max-height-width.png)
 
 ## Min-width and min-height
 
@@ -77,4 +77,4 @@ Use the following code to customize the min-width and min-height for alert dialo
 
 {% endtabs %}
 
-![Min width and height](../images/alert-dimension-min-height-width.png)
+![ASP.NET Core Predefinded Dialogs Min width and height](./images/asp-core-mvc-predefinded-dialogs-alert-dimension-min-height-width.png)
