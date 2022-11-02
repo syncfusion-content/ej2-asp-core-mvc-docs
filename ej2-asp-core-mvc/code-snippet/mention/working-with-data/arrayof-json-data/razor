@@ -4,7 +4,7 @@
     List<SportsData> data = new SportsData().SportsList();
 }
     
-<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user"></div>
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag sport"></div>
 
 @Html.EJS().Mention("Array-Of-Json-Data").MentionChar(nameMentionChar).Target("#mentionElement").DataSource((IEnumerable<object>)data).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Game" , Value = "ID" }).Render()
 

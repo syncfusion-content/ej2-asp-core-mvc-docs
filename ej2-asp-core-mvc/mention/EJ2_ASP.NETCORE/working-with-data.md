@@ -72,7 +72,7 @@ In the following example, `Code.ID` and `Country.Name` columns from the complex 
 
 ## Binding remote data
 
-The Mention supports retrieval of data from remote data services with the help of `DataManager` control. The [Query](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_Query) property is used to fetch the data from the database and bind it to the Mention control.
+The Mention supports retrieval of data from remote data services with the help of `DataManager` control. The [query](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_Query) property is used to fetch the data from the database and bind it to the Mention control.
 
 ### OData v4 adaptor - Binding OData v4 service
 
