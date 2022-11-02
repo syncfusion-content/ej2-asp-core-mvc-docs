@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Predefined Dialogs | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Predefined Dialogs | Syncfusion
+description: Checkout and learn about getting started with ASP.NET Core Predefined Dialogs of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
@@ -131,7 +131,7 @@ In the below code example, alert dialog displayed on button click action.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Predefined Dialog will be rendered in the default web browser.
 
-![ASP.NET Core Predfined Dialog](../images/alert-default.png)
+![ASP.NET Core Predfined Dialogs alert](./images/alert-default.png)
 ### Show confirm dialog
 
 A confirm dialog box used to displays a specified message along with the `OK` and `Cancel` buttons.This can be achieved by using the `DialogUtility.confirm` method. It is used to get approval from the user, and it appears before any critical action. After get approval from the user the dialog will disappear automatically.
@@ -145,7 +145,7 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 {% endtabs %}
 
 
-![Confirm Dialog](../images/confirm-default.png)
+![ASP.NET Core Predefined Dialogs confirm](./images/confirm-default.png)
 
 ### Show Prompt dialog
 
@@ -159,7 +159,7 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 {% endhighlight %}
 {% endtabs %}
 
-![Prompt Dialog](../images/prompt-default.png)
+![ASP.NET Core Predefined Dialogs prompt](./images/prompt-default.png)
 ## See also
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
