@@ -14,7 +14,7 @@ The Message has predefined appearance variants for different visual representati
 
 The available variants are **Text**, **Outlined** and **Filled**. The default variant type for messages is **Text**.
 * **Text** - The severity is differentiated using a text color and a light background color.
-* **Outlined** - The severity is differentiated using a text color and a border without background.
+* **Outlined** - The severity is differentiated using a text color and a border without a background.
 * **Filled** - The severity is differentiated using a text color and a dark background color.
 
 The following example demonstrates the default message with different variant types.

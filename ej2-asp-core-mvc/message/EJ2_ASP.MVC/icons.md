@@ -14,7 +14,7 @@ This section explains the message with no icons, how to show or hide the close i
 
 ## No Icon
 
-By default, severity icons can be displayed according to the severity types to make the user more understandable by visual information rather than text. To hide the severity icons, set the `ShowIcon` property to `false`.
+By default, severity icons can be displayed according to the severity types to make it more understandable to the user by visual information rather than text. To hide the severity icons, set the `ShowIcon` property to `false`.
 
 The following example demonstrates the different severity messages without the severity icons.
 
@@ -42,9 +42,9 @@ The following example demonstrates the different severity messages without the s
 
 ## Custom Icon
 
-By default, the severity icons can be displayed according to the severity type to make the user more understandable by visual information rather than text. If the user wants to customize these icons, then it can be achieved through `CssClass` property.
+By default, the severity icons can be displayed according to the severity type to make it more understandable to the user by visual information rather than text. If the user wants to customize these icons, it can be achieved through the `CssClass` property.
 
-The following example demonstrates how the default message is rendered with a custom severity icon and custom appearance.
+The following example demonstrates how the default message is rendered with a custom severity icon.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -75,8 +75,6 @@ The message can be rendered with or without the close icon. The close icon is us
 By default, the close icon is not rendered in the message. To show the close icon, set the `ShowCloseIcon` property to `true`.
 
 In the following example, the messages are rendered with the close icon.
-
-The following example demonstrates the message with close icon.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
