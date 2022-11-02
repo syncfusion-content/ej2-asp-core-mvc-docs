@@ -53,15 +53,15 @@ Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Pr
 
 **Alert**
 
-![ASP.NET MVC Predefinded Dialogs alert dimension Dialog](./images/alert-dimension.png)
+![ASP.NET MVC Predefinded Dialogs alert dimension](./images/alert-dimension.png)
 
 **Confirm**
 
-![ASP.NET MVC Predefinded Dialogs confirm dimension Dialog](./images/confirm-dimension.png)
+![ASP.NET MVC Predefinded Dialogs confirm dimension](./images/confirm-dimension.png)
 
 **Prompt**
 
-![ASP.NET MVC Predefinded Dialogs prompt dimension Dialog](./images/prompt-dimension.png)
+![ASP.NET MVC Predefinded Dialogs prompt dimension](./images/prompt-dimension.png)
 
 ## Max-width and max-height
 

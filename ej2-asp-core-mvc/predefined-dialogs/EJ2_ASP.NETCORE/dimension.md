@@ -1,10 +1,10 @@
 ---
 layout: post
-title: dimension in ASP.NET CORE Predefined Dialogs | Syncfusion
-description: Checkout and learn about Dimension in ASP.NET CORE Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: dimension in ASP.NET Core Predefined Dialogs | Syncfusion
+description: Checkout and learn about Dimension in ASP.NET Core Predefined Dialogs of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Dimension
-publishingplatform: ASP.NET CORE
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
@@ -36,15 +36,15 @@ Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Pr
 
 **Alert**
 
-![ASP.NET CORE Predefined Dialogs alert dimension Dialog](./images/alert-dimension.png)
+![ASP.NET Core Predefined Dialogs alert dimension](./images/alert-dimension.png)
 
 **Confirm**
 
-![ASP.NET CORE Predefined Dialogs confirm dimension Dialog](./images/confirm-dimension.png)
+![ASP.NET Core Predefined Dialogs confirm dimension](./images/confirm-dimension.png)
 
 **Prompt**
 
-![ASP.NET CORE Predefined Dialogs prompt dimension Dialog](./images/prompt-dimension.png)
+![ASP.NET Core Predefined Dialogs prompt dimension](./images/prompt-dimension.png)
 
 ## Max-width and max-height
 
@@ -61,7 +61,7 @@ Use the following code to customize the max-width and max-height for alert dialo
 
 {% endtabs %}
 
-![ASP.NET CORE Predefined Dialogs max width and height](./images/alert-dimension-max-height-width.png)
+![ASP.NET Core Predefined Dialogs max width and height](./images/alert-dimension-max-height-width.png)
 
 ## Min-width and min-height
 
@@ -77,4 +77,4 @@ Use the following code to customize the min-width and min-height for alert dialo
 
 {% endtabs %}
 
-![ASP.NET CORE Predefined Dialogs min width and height](./images/alert-dimension-min-height-width.png)
+![ASP.NET Core Predefined Dialogs min width and height](./images/alert-dimension-min-height-width.png)

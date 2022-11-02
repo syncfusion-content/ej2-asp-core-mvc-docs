@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Positioning in ASP.NET CORE Predefined Dialogs | Syncfusion
-description: Checkout and learn about Positioning in ASP.NET CORE Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: Positioning in ASP.NET Core Predefined Dialogs | Syncfusion
+description: Checkout and learn about Positioning in ASP.NET Core Predefined Dialogs of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Positioning
-publishingplatform: ASP.NET CORE
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
@@ -37,12 +37,12 @@ Use the following code snippet for **Alert.cshtml**, **Confirm.cshtml** and **Pr
 
 **Alert**
 
-![ASP.NET CORE Predefined Dialogs alert position Dialog](./images/alert-position.png)
+![ASP.NET Core Predefined Dialogs alert position Dialog](./images/alert-position.png)
 
 **Confirm**
 
-![ASP.NET CORE Predefined Dialogs confirm position Dialog](./images/confirm-position.png)
+![ASP.NET Core Predefined Dialogs confirm position Dialog](./images/confirm-position.png)
 
 **Prompt**
 
-![ASP.NET CORE Predefined Dialogs prompt position Dialog](./images/prompt-position.png)
+![ASP.NET Core Predefined Dialogs prompt position Dialog](./images/prompt-position.png)

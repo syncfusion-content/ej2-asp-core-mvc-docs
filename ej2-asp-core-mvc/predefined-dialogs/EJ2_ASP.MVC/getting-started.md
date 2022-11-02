@@ -108,7 +108,7 @@ In the below code example, alert dialog displayed on button click action.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC predefined dialogs will be rendered in the default web browser.
 
-![ASP.NET MVC Predefinded Dialogs alert Dialog](./images/alert-default.png)
+![ASP.NET MVC Predefinded Dialogs alert](./images/alert-default.png)
 
 ### Show confirm dialog
 
@@ -122,7 +122,7 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Predefinded Dialogs confirm Dialog](./images/confirm-default.png)
+![ASP.NET MVC Predefinded Dialogs confirm](./images/confirm-default.png)
 
 ### Show Prompt dialog
 
@@ -139,7 +139,7 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Predefinded Dialogs prompt Dialog](./images/prompt-default.png)
+![ASP.NET MVC Predefinded Dialogs prompt](./images/prompt-default.png)
 
 ## See also
 
