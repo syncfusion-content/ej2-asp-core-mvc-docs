@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Mention Filtering in ##Platform_Name## Mention control | Syncfusion
-description: Learn here all about mention filtering in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
+title: Mention Filtering in ASP.NET MVC Mention control | Syncfusion
+description: Learn here all about mention filtering in Syncfusion ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Mention Filtering
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
@@ -14,7 +14,7 @@ The Mention control has built-in support to filter data items. The filter operat
 
 ## Limit the minimum filter character
 
-You can control the minimum length of user input to initiate the search action using the [MinLength](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MinLength) property. This can be useful if you have a very large list of data. The default value is `zero`, where the suggestion list opens as soon as the user inputs the mention character.
+You can control the minimum length of user input to initiate the search action using the [MinLength](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MinLength) property. This can be useful if you have a very large list of data. The default value is `0`, where the suggestion list opens as soon as the user inputs the mention character.
 
 The remote request does not fetch the search data until the search key contains three characters as shown in the following example.
 
@@ -27,7 +27,7 @@ The remote request does not fetch the search data until the search key contains 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Mention minimum filter character](./images/asp-core-mvc-mention-minimum-filter-character.png)
+![ASP.NET MVC Mention minimum filter character](./images/mention-minimum-filter-character.png)
 
 ## Change the filter type
 
@@ -46,7 +46,7 @@ While filtering, you can change the filter type to `Contains`, `StartsWith`, or 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Mention change filter type](./images/asp-core-mvc-mention-filter-type.png)
+![ASP.NET MVC Mention change filter type](./images/mention-filter-type.png)
 
 ## Allow spacing between search
 
@@ -63,7 +63,7 @@ While filtering the data in the data source, you can allow the space in the midd
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Mention allow spacing between search](./images/asp-core-mvc-mention-allow-spacing.png)
+![ASP.NET MVC Mention allow spacing between search](./images/mention-allow-spacing.png)
 
 ## Customize the suggestion item count
 
@@ -78,7 +78,7 @@ While filtering, you can customize the number of list items to be displayed in t
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Mention suggestion item count](./images/asp-core-mvc-mention-suggestion-count.png)
+![ASP.NET MVC Mention suggestion item count](./images/mention-suggestion-count.png)
 
 ## See also
 

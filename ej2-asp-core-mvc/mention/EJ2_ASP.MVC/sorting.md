@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Mention control | Syncfusion
-description: Learn here all about sorting the datasource in Syncfusion ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more.
+title: Sorting in ASP.NET MVC Mention control | Syncfusion
+description: Learn here all about sorting the datasource in Syncfusion ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sorting
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
@@ -27,4 +27,4 @@ You can display the suggestion list items in a specific order. It has possible t
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Mention sorting](./images/asp-core-mvc-mention-sorting.png)
+![ASP.NET MVC Mention sorting](./images/mention-sorting.png)

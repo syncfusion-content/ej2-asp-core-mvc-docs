@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Mention Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Syncfusion ASP.NET MVC Mention Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
@@ -100,7 +100,7 @@ Now, add the Syncfusion ASP.NET MVC Mention control in `~/Home/Index.cshtml` pag
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Mention control will be rendered in the default web browser.
 
-![ASP.NET MVC Mention Control](./images/asp-core-mvc-mention-mention-control.png)
+![ASP.NET MVC Mention Control](./images/mention-mention-control.png)
 
 ## Binding data source
 
