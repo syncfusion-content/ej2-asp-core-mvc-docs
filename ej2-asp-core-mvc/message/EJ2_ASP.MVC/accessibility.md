@@ -10,7 +10,7 @@ documentation: ug
 
 # Accessibility in Message control
 
-The Message component has been designed keeping in mind the `WAI-ARIA` specifications, and applies [WAI-ARIA roles](https://www.w3.org/WAI/ARIA/apg/patterns/alert/), states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation.
+The Message control has been designed keeping in mind the `WAI-ARIA` specifications and applies  [WAI-ARIA roles](https://www.w3.org/WAI/ARIA/apg/patterns/alert/), states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation.
 
 ## ARIA attributes
 
