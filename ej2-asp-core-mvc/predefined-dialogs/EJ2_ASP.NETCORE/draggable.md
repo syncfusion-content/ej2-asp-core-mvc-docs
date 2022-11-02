@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Draggable in ##Platform_Name## Predefined Dialogs | Syncfusion
-description: Learn here all about Draggable in Syncfusion ##Platform_Name## Predefined Dialogs of Syncfusion Essential JS 2 and more.
+title: Draggable in ASP.NET CORE Predefined Dialogs | Syncfusion
+description: Learn here all about Draggable in Syncfusion ASP.NET CORE Predefined Dialogs of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Draggable
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET CORE
 documentation: ug
 ---
 

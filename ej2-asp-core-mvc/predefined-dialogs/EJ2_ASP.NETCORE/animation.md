@@ -1,10 +1,10 @@
 ---
 layout: post
-title: animation in ##Platform_Name## Predefined Dialogs | Syncfusion
-description: Checkout and learn about animation in ##Platform_Name## Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: animation in ASP.NET CORE Predefined Dialogs | Syncfusion
+description: Checkout and learn about animation in ASP.NET CORE Predefined Dialogs of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Animation
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET CORE
 documentation: ug
 ---
 
