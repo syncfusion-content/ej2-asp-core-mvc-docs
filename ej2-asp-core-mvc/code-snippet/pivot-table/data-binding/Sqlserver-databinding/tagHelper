@@ -1,0 +1,14 @@
+<ejs-pivotview id="pivotview" width="860" height="300"showTooltip="false" showFieldList="true">
+    <e-datasourcesettings dataSource="@ViewBag.Data" expandall="true" enablesorting="false">
+        <e-rows>
+            <e-field name="Country"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="State"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Amount" caption="Unit Price"></e-field>
+            <e-field name="Quantity"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>

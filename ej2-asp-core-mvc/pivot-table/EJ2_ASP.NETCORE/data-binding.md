@@ -354,6 +354,35 @@ User can use `WebApiAdaptor` to bind pivot table with Web API created using ODat
 
 
 
+### SQL Server Data Binding
+
+User can use the sql data from database to DataTable. You can bind DataTable to the pivot table by using `dataSource` property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) tag.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/data-binding/webapi/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sqlserver-databinding.cs" %}
+{% include code-snippet/pivot-table/data-binding/webapi/Sqlserver-databinding.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/data-binding/sqlserver-databinding/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Web-api.cs" %}
+{% include code-snippet/pivot-table/data-binding/sqlserver-databinding/sqlserver-databinding.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ### Querying in Data Manager
 
 By default, the data manager retrieves all the data from the provider which is mapped in it. The data from the provider can be filtered, sorted, paged, etc. by setting the own query in `defaultQuery` property in the data manager instance.
