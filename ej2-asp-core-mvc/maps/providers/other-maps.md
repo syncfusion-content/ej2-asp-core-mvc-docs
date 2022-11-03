@@ -22,9 +22,9 @@ Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.PNG
 * "${x}" - It indicates tile image x-position (tileX).
 * "${y}" - It indicates tile image y-position (tileY).
 
-In this case, the key generated for those online map service providers can also be appended to the URL. This allows to create personalized Maps with your own content and imagery. In this example, Google Maps is rendered.
+In this case, the key generated for those online map service providers can also be appended to the URL. This allows to create personalized Maps with your own content and imagery.
 
->Refer to [Google Maps Licensing](https://developers.google.com/maps/terms#10-license-restrictions).
+Below is the example of adding TomTom map. You can follow the steps in this [link](https://developer.tomtom.com/map-display-api/documentation/product-information/introduction) to generate an API key, and then added the key to the URL.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -47,9 +47,9 @@ Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.PNG
 * "${x}" - It indicates tile image x-position (tileX).
 * "${y}" - It indicates tile image y-position (tileY).
 
-In this case, the key generated for those online map service providers can also be appended to the URL. This allows to create personalized Maps with your own content and imagery. In this example, Google Maps is rendered.
+In this case, the key generated for those online map service providers can also be appended to the URL. This allows to create personalized Maps with your own content and imagery.
 
->Refer to [Google Maps Licensing](https://developers.google.com/maps/terms#10-license-restrictions).
+Below is the example of adding TomTom map. You can follow the steps in this [link](https://developer.tomtom.com/map-display-api/documentation/product-information/introduction) to generate an API key, and then added the key to the URL.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -61,7 +61,7 @@ In this case, the key generated for those online map service providers can also 
 {% endtabs %}
 {% endif %}
 
-![Google Maps](../images/MapProviders/google-map.PNG)
+![TomTom Maps](../images/MapProviders/tomtom-maps.PNG)
 
 ## Enabling zooming and panning
 
@@ -90,7 +90,7 @@ Tile Maps layer can be zoomed and panned. Zooming helps to get a closer look at 
 {% endtabs %}
 {% endif %}
 
-![Google Maps with Zooming](../images/MapProviders/google-maps-zoom.PNG)
+![TomTom Maps with Zooming](../images/MapProviders/tomtom-maps-zooming.PNG)
 
 ## Adding markers and navigation line
 
@@ -121,7 +121,7 @@ Markers can be added to the layers of tile Maps by setting the corresponding loc
 {% endtabs %}
 {% endif %}
 
-![Google Maps with Markers and Navigation Line](../images/MapProviders/google-maps-marker-and-line.PNG)
+![TomTom Maps with Markers and Navigation Line](../images/MapProviders/tomtom-maps-marker-and-line.PNG)
 
 ## Adding sublayer
 
@@ -152,7 +152,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the tile Maps layer fo
 {% endtabs %}
 {% endif %}
 
-![Google Maps with Sublayer](../images/MapProviders/google-maps-sublayer.PNG)
+![TomTom Maps with Sublayer](../images/MapProviders/tomtom-map-sublayer.PNG)
 
 ## Enabling legend
 
@@ -183,4 +183,4 @@ The legend can be added to the tile Maps by setting the [Visible](https://help.s
 {% endtabs %}
 {% endif %}
 
-![Google Maps with Legend](../images/MapProviders/google-map-legend.PNG)
+![TomTom Maps with Legend](../images/MapProviders/tomtom-map-legend.PNG)
