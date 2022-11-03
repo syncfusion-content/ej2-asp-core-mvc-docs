@@ -26,14 +26,4 @@
     font-family: 'Message_icons';
     content: '\e894';
   }
-
-  .custom.e-message {
-    background-color: #ffe3fb;
-    border-color: #e0c7dd;
-    color: #b42d79;
-  }
-
-  .custom.e-message .e-msg-icon {
-    color: #b42d79;
-  }
 </style>
