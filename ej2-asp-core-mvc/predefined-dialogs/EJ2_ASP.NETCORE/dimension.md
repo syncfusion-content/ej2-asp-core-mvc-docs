@@ -4,7 +4,7 @@ title: dimension in ASP.NET Core Predefined Dialogs | Syncfusion
 description: Checkout and learn about Dimension in ASP.NET Core Predefined Dialogs of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Dimension
-publishingplatform: ASP.NET Core
+publishingplatform: aspnet-core
 documentation: ug
 ---
 
