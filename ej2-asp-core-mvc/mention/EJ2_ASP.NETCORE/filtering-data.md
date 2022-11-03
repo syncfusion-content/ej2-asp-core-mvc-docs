@@ -4,7 +4,7 @@ title: Mention Filtering in ASP.NET Core Mention control | Syncfusion
 description: Learn here all about mention filtering in Syncfusion ASP.NET Core Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Mention Filtering
-publishingplatform: ASP.NET Core
+publishingplatform: aspnet-core
 documentation: ug
 ---
 

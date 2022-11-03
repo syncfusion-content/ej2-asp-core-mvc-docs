@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ASP.NET MVC Mention Control | Syncfusion
+title: Getting Started with ASP.NET MVC Mention Control | Syncfusion
 description: Checkout and learn about getting started with ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ASP.NET MVC
+publishingplatform: ejmvc
 documentation: ug
 ---
 

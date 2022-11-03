@@ -4,7 +4,7 @@ title: Accessibility in ASP.NET MVC Mention control | Syncfusion
 description: Learn here all about accessibility in Syncfusion ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ASP.NET MVC
+publishingplatform: ejmvc
 documentation: ug
 ---
 

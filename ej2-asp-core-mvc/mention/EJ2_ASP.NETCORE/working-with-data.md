@@ -4,7 +4,7 @@ title: Data binding in ASP.NET Core Mention control | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ASP.NET Core Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data binding
-publishingplatform: ASP.NET Core
+publishingplatform: aspnet-core
 documentation: ug
 ---
 
