@@ -74,49 +74,49 @@ Meanwhile, user can also view calculated field dialog in UI by invoking `CreateC
 
 
 
-![output](images/calc-field-btn.png)
+![Pivot Table - calculated field](images/calc-field-btn.png)
 
-![output](images/calculatdfield-btn-dropdown.png)
+![Calculated field popup](images/calculatdfield-btn-dropdown.png)
 
 ## Editing through the field list and the grouping bar
 
 User can also modify the existing calculated field using the built-in edit option available directly in the field list (or) grouping bar. To do so, click the "Edit" icon available in the calculated field button. Now the calculated field dialog is opened and the current calculated field name, formula and format can be changed at runtime.
 
-![output](images/calculatdfield-grouping-edit1.png "Editing the calculated field")
+![Editing the calculated field](images/calculatdfield-grouping-edit1.png "Editing the calculated field")
 <br/>
 <br/>
-![output](images/calculatdfield-grouping-edit2.png "Editing the calculated field formula")
+![Editing the calculated field formula](images/calculatdfield-grouping-edit2.png "Editing the calculated field formula")
 
 ## Renaming the existing calculated field
 
 Existing calculated field can be renamed only through the UI at runtime. To do so, open the calculated field dialog, select the target field and click "Edit" icon. User can now see the existing name getting displayed in the text box at the top of the dialog. Now, change the name based on user requirement and click "OK".
 
 <!-- markdownlint-disable MD012 -->
-![output](images/calculatdfield-renaming1.png "Editing the calculated field")
+![Editing the calculated field](images/calculatdfield-renaming1.png "Editing the calculated field")
 <br/>
 <br/>
-![output](images/calculatdfield-renaming2.png "Renaming the calculated field")
+![Renaming the calculated field](images/calculatdfield-renaming2.png "Renaming the calculated field")
 
 ## Editing the existing calculated field formula
 
 Existing calculated field formula can be edited only through the UI at runtime. To do so, open the calculated field dialog, select the target field and click "Edit" icon. User can now see the existing formula getting displayed in a multiline text box at the bottom of the dialog. Now, change the formula based on user requirement and click "OK".
 
-![output](images/calculatdfield-field-edit1.png "Editing the calculated field")
+![Editing the calculated field](images/calculatdfield-field-edit1.png "Editing the calculated field")
 <br/>
 <br/>
-![output](images/calculatdfield-field-edit2.png "Editing the calculated field formula")
+![Editing the calculated field formula](images/calculatdfield-field-edit2.png "Editing the calculated field formula")
 
 ## Reusing the existing formula in a new calculate field
 
 While creating a new calculated field, if user wants to the add the formula of an existing calculated field, it can be done easily. To do so, simply drag-and-drop the existing calculated field to the "Formula" section.
 
-![output](images/calculatdfield-reusing1.png "Dragging the existing calculated field")
+![Dragging the existing calculated field](images/calculatdfield-reusing1.png "Dragging the existing calculated field")
 <br/>
 <br/>
-![output](images/calculatdfield-reusing2.png "Drag field to formula")
+![Drag field to formula](images/calculatdfield-reusing2.png "Drag field to formula")
 <br/>
 <br/>
-![output](images/calculatdfield-reusing3.png "Reusing the existing calculated field formula")
+![Reusing the existing calculated field formulat](images/calculatdfield-reusing3.png "Reusing the existing calculated field formula")
 
 ## Apply the format to the calculated field values
 
@@ -132,11 +132,11 @@ To apply format to calculated field values at runtime via UI, a built-in dropdow
 
 > By default, **None** will be selected from the dropdown.
 
-![output](images/calculatdfield-formatstring.png "Applying format through calculated field dialog UI")
+![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.png "Applying format through calculated field dialog UI")
 
 In addition, you can specify the desired custom formats by selecting the **Custom** option from the "Format" dropdown.
 
-![output](images/calculatdfield-applyFormate.png "Applying custom format through calculated field dialog UI")
+![Applying custom format through calculated field dialog UI](images/calculatdfield-applyFormate.png "Applying custom format through calculated field dialog UI")
 
 ## Supported operators and functions for the calculated field formula
 

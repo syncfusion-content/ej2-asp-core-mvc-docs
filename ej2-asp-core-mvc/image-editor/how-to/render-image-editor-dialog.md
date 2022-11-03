@@ -25,7 +25,7 @@ The following operations are supported in the Image Editor:
 {% include code-snippet/image-editor/how-to/render-image-editor-dialog/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/how-to/render-image-editor-dialog/HomeController_core.cs.cs %}
+{% include code-snippet/image-editor/how-to/render-image-editor-dialog/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,7 +36,7 @@ The following operations are supported in the Image Editor:
 {% include code-snippet/image-editor/how-to/render-image-editor-dialog/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/how-to/render-image-editor-dialog/HomeController_mvc.cs.cs %}
+{% include code-snippet/image-editor/how-to/render-image-editor-dialog/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

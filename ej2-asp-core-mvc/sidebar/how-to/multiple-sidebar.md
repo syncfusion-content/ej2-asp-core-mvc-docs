@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Multiple Sidebar in SideBar Control 
+# Multiple Sidebar in SideBar Control
 
 Two Sidebars can be initialized in a web page with same main content. Sidebars can be initialized on right side or left side of the main content using [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Position.html) property.
 

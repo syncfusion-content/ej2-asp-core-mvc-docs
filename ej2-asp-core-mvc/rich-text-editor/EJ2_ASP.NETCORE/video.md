@@ -310,4 +310,5 @@ The Rich Text Editor control allows you to add additional data with the File Upl
 ## See Also
 
 * [How to edit the quick toolbar settings](./toolbar/#quick-inline-toolbar)
+
 * [How to use link editing option in the toolbar items](./link/)
