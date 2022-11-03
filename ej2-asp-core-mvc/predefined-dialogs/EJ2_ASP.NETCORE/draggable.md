@@ -4,7 +4,7 @@ title: Draggable in ASP.NET Core Predefined Dialogs | Syncfusion
 description: Learn here all about Draggable in Syncfusion ASP.NET Core Predefined Dialogs of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Draggable
-publishingplatform: ASP.NET Core
+publishingplatform: aspnet-core
 documentation: ug
 ---
 

@@ -4,7 +4,7 @@ title: customization in ASP.NET MVC Predefined Dialogs | Syncfusion
 description: Checkout and learn about customization in ASP.NET MVC Predefined Dialogs of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Customization
-publishingplatform: ASP.NET MVC
+publishingplatform: ejmvc
 documentation: ug
 ---
 
