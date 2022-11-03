@@ -89,11 +89,7 @@ Rich Text Editor allows to insert Markdown table in edit panel with 2 X 2 rows a
 
 ### Insert Table
 
-<<<<<<< HEAD
 To insert the table in Rich Text Editor, click the `table` toolbar option to insert the table into Rich Text Editor content and this is the default way in all the devices. Please refer the below sample and code snippets to add the table in Markdown editor.
-=======
-To insert the table in Rich Text Editor, click the `table` toolbar option to insert the table into Rich Text Editor content and this is the default way in all the devices. Please refer the below sample and code snippets to add the table in Markdown editor
->>>>>>> remotes/origin/hotfix/hotfix-v20.3.0.47
 
 {% if page.publishingplatform == "aspnet-core" %}
 
