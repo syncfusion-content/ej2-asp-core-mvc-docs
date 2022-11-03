@@ -17,7 +17,7 @@ You can show the mention character as the prefix of the selected item in mention
 {% include code-snippet/mention/customization/mention-char-customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/filtering-data/mention-char-customization/EmailData.cs %}
+{% include code-snippet/mention/customization/mention-char-customization/EmailData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -47,7 +47,7 @@ By default, the popup list width value is set as `auto`. Depending on the mentio
 {% include code-snippet/mention/customization/popup-list-customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/filtering-data/popup-list-customization/Countries.cs %}
+{% include code-snippet/mention/customization/popup-list-customization/Countries.cs %}
 {% endhighlight %}
 {% endtabs %}
 
