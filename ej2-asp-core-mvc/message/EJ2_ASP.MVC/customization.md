@@ -50,10 +50,10 @@ The following example shows the rounded and squared appearance of the message, w
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/message/custom-apearance/tagHelper %}
+{% include code-snippet/message/custom-appearance/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/message/custom-apearance/controller.cs %}
+{% include code-snippet/message/custom-appearance/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,7 +61,7 @@ The following example shows the rounded and squared appearance of the message, w
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/message/custom-aapearance/razor %}
+{% include code-snippet/message/custom-appearance/razor %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
