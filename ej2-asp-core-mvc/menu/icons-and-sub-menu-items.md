@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons And Sub Menu Items in ##Platform_Name## Menu Component
+title: Icons And Sub Menu Items in ##Platform_Name## Menu Control | Syncfusion
 description: Learn here all about Icons And Sub Menu Items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons And Sub Menu Items
@@ -13,8 +13,7 @@ documentation: ug
 
 ## Icons
 
-The menu item contains an icon/image in it to provide a visual representation of an action.
-To place the icon on a menu item, set the `iconCss` property with the required icon CSS. By default, the icon is positioned at the left of the menu item. In the following sample, the icons of `File` and `Edit` menu items and `Open`, `Save`, `Cut`, `Copy`,and `Paste` sub menu items are added using the `iconCss` property.
+The menu item contains an icon/image in it to provide a visual representation of an action. To place the icon on a menu item, set the `iconCss` property with the required icon CSS. By default, the icon is positioned at the left of the menu item. In the following sample, the icons of `File` and `Edit` menu items and `Open`, `Save`, `Cut`, `Copy`,and `Paste` sub menu items are added using the `iconCss` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -43,8 +42,7 @@ To place the icon on a menu item, set the `iconCss` property with the required i
 
 ## Navigation
 
-Navigation in Menu is used to navigate to the other web page when a menu item is clicked.
-It can be achieved by providing a link to the menu item using the url property. In the following sample, the Navigation URL is added to sub menu items using the url property.
+Navigation in Menu is used to navigate to the other web page when a menu item is clicked. It can be achieved by providing a link to the menu item using the url property. In the following sample, the Navigation URL is added to sub menu items using the url property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -74,6 +72,7 @@ It can be achieved by providing a link to the menu item using the url property. 
 ## Multilevel nesting
 
 The Menu supports multiple level nesting, and it can be achieved by mapping the `items` property inside the parent `menuItems`.
+
 In the following sample, three-level nesting of menu has been provided.
 
 {% if page.publishingplatform == "aspnet-core" %}

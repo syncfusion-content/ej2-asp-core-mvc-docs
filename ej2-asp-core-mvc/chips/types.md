@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Chips Component
-description: Learn here all about Types in Syncfusion ##Platform_Name## Chips component of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Chips Control | Syncfusion
+description: Learn here all about Types in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Types
+# Types in Chips Control
 
 The ChipList control has the following types.
 
@@ -26,9 +26,6 @@ Input Chip holds information in compact form. It converts user input into chips.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/input/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chips/input/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,9 +53,6 @@ Choice Chip allows to select a single chip from the set of ChipList/ChipCollecti
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/choice/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chips/choice/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -84,9 +78,6 @@ Filter Chip allows to select a multiple chip from the set of ChipList/ChipCollec
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/filter/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chips/filter/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -114,9 +105,6 @@ The Action Chip triggers the event like click or delete, which helps doing actio
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/action/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chips/action/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -143,9 +131,6 @@ Deletable Chip allows to delete a chip from ChipList/ChipCollection. It can be e
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chips/delete/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chips/delete/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -160,3 +145,4 @@ Deletable Chip allows to delete a chip from ChipList/ChipCollection. It can be e
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Chips/ChipsSample).

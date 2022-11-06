@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in ##Platform_Name## Grid Component
+title: Columns in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Columns in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Columns
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Columns
+# Columns in ASP.NET Core Grid Component
 
 The column definitions are used as the **DataSource** schema in the Grid. This plays a vital role in rendering column values in the required format.
 The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The [`field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) property of **e-grid-column** is necessary to map the datasource values in Grid columns.
@@ -63,8 +63,7 @@ The **valueAccessor** is used to access/manipulate the value of display data. Yo
 
 ## Format
 
-To format cell values based on specific culture, use the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property of **e-grid-column** tag helper . The grid uses **Internalization** library to format **number** and **date**.
-values.
+To format cell values based on specific culture, use the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property of **e-grid-column** tag helper . The grid uses **Internalization** library to format **number** and **date** values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -387,6 +386,41 @@ function beforeRender(args) {
 {% endhighlight %}
 {% highlight c# tabtitle="Custom-tooltip.cs" %}
 {% include code-snippet/grid/how-to/custom-tooltip/custom-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+## Align the text of Grid content and header
+
+For aligning the text of Grid content and header part, kindly use [TextAlign](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_TextAlign) and [HeaderTextAlign](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderTextAlign) properties.
+
+Grid column supports the following alignments:
+
+* Left
+* Right
+* Center
+* Justify
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/alignment/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Alignment.cs" %}
+{% include code-snippet/grid/columns/alignment/alignment.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/alignment/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Alignment.cs" %}
+{% include code-snippet/grid/columns/alignment/alignment.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotView").Height("350").EnablePaging(true).DataSourceSettings(dataSource => dataSource.DataSource(dataManger =>
+{
+    dataManger.Url("https://bi.syncfusion.com/northwindservice/api/orders").CrossDomain(true).Adaptor("WebApiAdaptor");
+
+}).ExpandAll(true).ShowAggregationOnValueField(false).EnableSorting(true)
+    .FormatSettings(formatsettings =>
+    {
+        formatsettings.Name("UnitPrice").Format("C0").UseGrouping(true).Add();
+    }).Rows(rows =>
+    {
+        rows.Name("ShipCountry").Add(); rows.Name("ShipCity").Add();
+    }).Columns(columns =>
+    {
+        columns.Name("ProductName").Caption("Product Name").Add();
+    }).Values(values =>
+    {
+        values.Name("Quantity").Caption("Quantity").Add(); values.Name("UnitPrice").Caption("Unit Price").Add();
+    })
+    ).PageSettings(pageSettings => pageSettings.ColumnPageSize(5).RowPageSize(10).CurrentColumnPage(1).CurrentRowPage(1)
+    ).PagerSettings(pagerSettings => pagerSettings.IsInversed(true)
+    ).GridSettings(gridSettings => gridSettings.ColumnWidth(120)).Render()

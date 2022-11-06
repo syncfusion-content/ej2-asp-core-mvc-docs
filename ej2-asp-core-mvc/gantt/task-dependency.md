@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task Dependency in ##Platform_Name## Gantt Component
+title: Task Dependency in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Task Dependency in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Task Dependency
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Task Dependencies
+# Task Dependencies in Gantt
 
-Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on.
+Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
 
 ## Task relationship types
 

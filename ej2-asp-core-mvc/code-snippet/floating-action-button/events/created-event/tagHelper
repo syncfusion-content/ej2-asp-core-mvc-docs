@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Buttons
+
+<ejs-fab id="fab" iconCss="e-icons e-edit" content="Edit" created="createdEvent()"></ejs-fab>
+
+<script>
+
+    function createdEvent(){
+        // Your required action here
+    }
+
+</script>

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Formatting
+# Formatting in Spreadsheet Component
 
 Formatting options make your data easier to view and understand. The different types of formatting options in the Spreadsheet are,
 * Number Formatting
@@ -36,7 +36,7 @@ Number formatting provides a type for your data in the Spreadsheet. Use the [`al
 
 Number formatting can be applied in following ways,
 * Using the `format` property in `cell`, you can set the desired format to each cell at initial load.
-* Using the [`numberFormat`](../api/spreadsheet/#numberformat) method, you can set the number format to a cell or range of cells.
+* Using the `numberFormat` method, you can set the number format to a cell or range of cells.
 * Selecting the number format option from ribbon toolbar.
 
 ### Custom Number Formatting
@@ -85,7 +85,7 @@ The different types of custom number formatting supported in Spreadsheet are,
 | Accounting | `_(* #,##0.00_);_(* (#,##0.00);_(* "-"??_);_(@_)` |
 
 Custom Number formatting can be applied in following ways,
-* Using the [`numberFormat`](../api/spreadsheet/#numberformat) method, you can set your own custom number format to a cell or range of cells.
+* Using the `numberFormat` method, you can set your own custom number format to a cell or range of cells.
 * Selecting the custom number format option from custom number formats dialog or type your own format in dialog input and then click apply button. It will apply the custom format for selected cells.
 
 The following code example shows the number formatting in cell data.
@@ -119,7 +119,7 @@ The following code example shows the number formatting in cell data.
 
 Text and cell formatting enhances the look and feel of your cell. It helps to highlight a particular cell or range of cells from a whole workbook. You can apply formats like font size, font family, font color, text alignment, border etc. to a cell or range of cells. Use the [`allowCellFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowCellFormatting) property to enable or disable the text and cell formatting option in Spreadsheet. You can set the formats in following ways,
 * Using the `style` property, you can set formats to each cell at initial load.
-* Using the [`cellFormat`](../api/spreadsheet/#cellformat) method, you can set formats to a cell or range of cells.
+* Using the `cellFormat` method, you can set formats to a cell or range of cells.
 * You can also apply by clicking the desired format option from the ribbon toolbar.
 
 ### Fonts
@@ -208,7 +208,7 @@ The following features are not supported in Formatting:
 
 ## Conditional Formatting
 
-Conditional formatting helps you to format a cell or range of cells based on the conditions applied. You can enable or disable conditional formats by using the [`allowConditionalFormat`](../api/spreadsheet/#allowConditionalFormat) property.
+Conditional formatting helps you to format a cell or range of cells based on the conditions applied. You can enable or disable conditional formats by using the `allowConditionalFormat` property.
 
 > * The default value for the `allowConditionalFormat` property is `true`.
 
@@ -217,7 +217,7 @@ Conditional formatting helps you to format a cell or range of cells based on the
 You can apply conditional formatting by using one of the following ways,
 
 * Select the conditional formatting icon in the Ribbon toolbar under the Home Tab.
-* Using the [`conditionalFormat()`](../api/spreadsheet/#conditionalFormat) method to define the condition.
+* Using the `conditionalFormat` method to define the condition.
 * Using the `conditionalFormats` in sheets model.
 
 Conditional formatting has the following types in the spreadsheet,
@@ -283,7 +283,7 @@ In the MAY and JUN columns, we have applied conditional formatting custom format
 You can clear the defined rules by using one of the following ways,
 
 * Using the “Clear Rules” option in the Conditional Formatting button of HOME Tab in the ribbon to clear the rule from selected cells.
-* Using the [`clearConditionalFormat()`](../api/spreadsheet/#clearConditionalFormat) method to clear the defined rules.
+* Using the `clearConditionalFormat` method to clear the defined rules.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
