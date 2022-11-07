@@ -41,7 +41,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 </namespaces>
 ```
 
-## Add style sheet
+## Add Style Sheet
 
 Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
@@ -57,7 +57,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/a
 {% endhighlight %}
 {% endtabs %}
 
-## Add script reference
+## Add Script Reference
 
 In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
@@ -114,26 +114,26 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Floating Action Button Control](images/default.png)
 
-## Positioning
+## Event Click In Floating Action Button
 
-The floating action button can be positioned using the [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. The fab is positioned based on the [`Target`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target), if target is defined else positioned based on the browser viewport. The position values are TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
+The floating action button control triggers the `onclick` event when you click on the floating action button. You can use this event to perform the required action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/getting-started/position/tagHelper %}
+{% include code-snippet/floating-action-button/events/onclick-event/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Demo.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/getting-started/position/razor %}
+{% include code-snippet/floating-action-button/events/onclick-event/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OnClickEvent.cs" %}
+{% include code-snippet/floating-action-button/events/onclick-event/onclickevent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-![ASP.NET MVC Floating Action Button Control](images/position.png)

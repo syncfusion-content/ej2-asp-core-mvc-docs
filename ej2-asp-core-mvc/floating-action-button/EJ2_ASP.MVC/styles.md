@@ -12,7 +12,7 @@ documentation: ug
 
 This section explains the different styles of Floating Action Button.
 
-## FAB styles
+## FAB Styles
 
 The Asp.Net MVC Floating Action Button supports the following predefined styles that can be defined using the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_CssClass) property. You can customize by replacing the `CssClass` property with the below defined class.
 
@@ -53,9 +53,9 @@ To modify the Floating Action Button appearance, you need to override the defaul
 |.e-fab.e-btn:active|To customize the FAB on active.|
 |.e-fab.e-btn-icon|To customize the style of FAB icon.|
 
-## Show text on hover
+## Show Text on Hover
 
-By using `cssClass`, you can customize the Floating Action Button to show text on hover with applied transition effect.
+By using [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_CssClass), you can customize the Floating Action Button to show text on hover with applied transition effect.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 

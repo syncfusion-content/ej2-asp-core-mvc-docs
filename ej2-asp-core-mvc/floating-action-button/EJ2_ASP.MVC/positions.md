@@ -10,7 +10,7 @@ documentation: ug
 
 # Floating Action Button Positions
 
-The floating action button can be positioned anywhere on the [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target) using the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. If the `target` is not defined, then FAB is positioned based on the browser viewport.
+The floating action button can be positioned anywhere on the [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target) using the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. If the `Target` is not defined, then FAB is positioned based on the browser viewport.
 
 The position values of Floating Action Button are as follows:
 
@@ -58,9 +58,9 @@ Below example demonstrates different supported positions of FAB.
 
 ![Asp.Net MVC Floating Action Button Positions](images/FabPositions.png)
 
-## Custom position
+## Custom Position
 
-You can define the custom position of the Floating Action Button by override the `top`, `left`, `right`, and `bottom` CSS properities using `cssClass`.
+You can define the custom position of the Floating Action Button by override the `top`, `left`, `right`, and `bottom` CSS properities using [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_CssClass)`.
 
 {% if page.publishingplatform == "aspnet-mvc" %}
 
