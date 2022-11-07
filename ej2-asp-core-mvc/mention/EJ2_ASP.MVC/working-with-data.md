@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Data binding in ##Platform_Name## Mention Component
-description: Learn here all about how to bind with local datasource and how to fetch data from remote data using the service in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
+title: Data binding in ASP.NET MVC Mention control | Syncfusion
+description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data binding
-publishingplatform: ##Platform_Name##
+publishingplatform: ejmvc
 documentation: ug
 ---
 
-# Working with Data
+# Working with Data in Mention
 
-The Mention loads the data either from local data source or remote data services using the [dataSource](../api/mention/#datasource) property. It supports the data type of  either `array` or `DataManager`.
+The Mention loads the data either from local data source or remote data services using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_DataSource) property. It supports the data type of  either `array` or `DataManager`.
 
 The Mention also supports different kinds of data services such as OData V4 and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
@@ -27,7 +27,7 @@ The Mention also supports different kinds of data services such as OData V4 and 
 
 Local data can be represented in three ways as described in the following.
 
-### 1. Array of simple data
+### Array of simple data
 
 The Mention has provided support to load an array of primitive data such as strings and numbers. Here, both the value and text fields act the same.
 
@@ -40,13 +40,13 @@ The Mention has provided support to load an array of primitive data such as stri
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC array of simple data](../images/asp-core-mvc-mention-simple-data.png)
+![ASP.NET MVC Mention array of simple data](./images/mention-simple-data.png)
 
-### 2. Array of JSON data
+### Array of JSON data
 
-The Mention can generate its list of items through an array of JSON data. Therefore the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
+The Mention can generate its list of items through an array of JSON data. Therefore the appropriate columns should be mapped to the [Fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_Fields) property.
 
-In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
+In the following example, `ID` column and `Game` column from complex data have been mapped to the `Value` field and `Text` field, respectively.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -57,13 +57,13 @@ In the following example, `Id` column and `Game` column from complex data have b
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC array of JSON data](../images/asp-core-mvc-mention-json-data.png)
+![ASP.NET MVC Mention array of JSON data](./images/mention-json-data.png)
 
-### 3. Array of Complex data
+### Array of complex data
 
-The Mention can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](../api/mention/#fields) property.
+The Mention can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [Fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_Fields) property.
 
-In the following example, `Code.Id` and `Country.Name` columns from the complex data have been mapped to the `value` and `text` fields respectively.
+In the following example, `Code.ID` and `Country.Name` columns from the complex data have been mapped to the `Value` and `Text` fields respectively.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -74,11 +74,11 @@ In the following example, `Code.Id` and `Country.Name` columns from the complex 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC array of Complex data](../images/asp-core-mvc-mention-complex-data.png)
+![ASP.NET MVC Mention array of complex data](./images/mention-complex-data.png)
 
 ## Binding remote data
 
-The Mention supports retrieval of data from remote data services with the help of `DataManager` control. The [Query](../api/mention/#query) property is used to fetch the data from the database and bind it to the Mention control.
+The Mention supports retrieval of data from remote data services with the help of `DataManager` control. The [Query](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_Query) property is used to fetch the data from the database and bind it to the Mention control.
 
 ### OData v4 adaptor - Binding OData v4 service
 
@@ -95,7 +95,7 @@ The following sample displays the first 6 contacts from `Customers` table of the
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC odata v4 adaptor](../images/asp-core-mvc-mention-OData-adaptor.png)
+![ASP.NET MVC Mention odata v4 adaptor](./images/mention-OData-adaptor.png)
 
 ### Web API adaptor
 
@@ -110,9 +110,9 @@ You can use `WebApiAdaptor` to bind mention with Web API created using OData end
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC web api adaptor](../images/asp-core-mvc-mention-web-adaptor.png)
+![ASP.NET MVC Mention web api adaptor](./images/mention-web-adaptor.png)
 
-## See Also
+## See also
 
 * [Customization](./customization)
 * [How to perform filtering](./filtering-data)
