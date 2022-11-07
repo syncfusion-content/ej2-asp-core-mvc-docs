@@ -1,0 +1,37 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
+    <e-grid-editsettings allowEditing="true" allowAdding="true" allowDeleting="true"></e-grid-editsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="100" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"
+                      ></e-grid-column>
+        <e-grid-column field="Mask" headerText="Mask" width="140"
+                       edit="@(new {create = "create", read = "read", destroy = "destroy", write = "write"})"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var maskObj;
+    var element;
+
+    function create(args) {
+        element = document.createElement('input');
+        return element;
+    }
+
+    function write(args) {
+        maskObj = new ej.inputs.MaskedTextBox({
+            mask: "0-0-0-0",
+            value: args.rowData.Mask
+        });
+        maskObj.appendTo(args.element);
+    }
+
+    function destroy() {
+        maskObj.destroy();
+    }
+
+    function read(args) {
+        return maskObj.value;
+    }
+</script>

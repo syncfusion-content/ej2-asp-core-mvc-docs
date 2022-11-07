@@ -263,6 +263,33 @@ Use the cell edit template feature of the Grid to render the MultiSelect DropDow
 {% endtabs %}
 {% endif %}
 
+### Render MaskedTextBox component while editing
+
+Use the cell edit template feature of the Grid to render the MaskedTextBox component in the Grid edit form. In the following sample, the MaskedTextBox component is rendered in the Mask column.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/masktextbox/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Masktextbox.cs" %}
+{% include code-snippet/grid/edit/masktextbox/masktextbox.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/masktextbox/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Masktextbox.cs" %}
+{% include code-snippet/grid/edit/masktextbox/Masktextbox.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ### Render RichTextEditor component while editing
 
 Use the cell edit template feature of the Grid to render the RichTextEditor component in the Grid edit form. In the below sample, we have rendered RichTextEditor component in the **ShipAddress** column, so we use [allowTextWrap](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowTextWrap) property to true.
@@ -290,6 +317,37 @@ Use the cell edit template feature of the Grid to render the RichTextEditor comp
 {% endtabs %}
 {% endif %}
 
+
+### Render multiple columns in DropDownList component while editing
+
+Use the cell edit template feature of the Grid to render the DropDownList component in the Grid edit form.
+
+The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer element. By default, list items can be rendered as a single column in the DropDownList component. Instead of this, multiple columns can be rendered. This can be achieved by using the [headerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_HeaderTemplate) and [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ItemTemplate) properties of the DropDownList component.
+
+This is demonstrated in the following sample.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/multicolumn-dropdown/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Multicolumn-Dropdown.cs" %}
+{% include code-snippet/grid/edit/multicolumn-dropdown/multicolumn-dropdown.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/multicolumn-dropdown/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Multicolumn-Dropdown.cs" %}
+{% include code-snippet/grid/edit/multicolumn-dropdown/multicolumn-dropdown.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## Access editor components

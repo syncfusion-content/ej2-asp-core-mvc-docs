@@ -10,7 +10,7 @@ documentation: ug
 
 # Positioning in ##Platform_Name## AppBar Control
 
-This section briefly explains how to configure the position of the AppBar. The AppBar provides the following options for setting its position:
+The position of the AppBar can be set using the position and sticky property. The AppBar provides the following options for setting its position:
 
 * Top AppBar
 * Bottom AppBar

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# File source
+# File source in Uploader Control
 
 ## Paste to upload
 

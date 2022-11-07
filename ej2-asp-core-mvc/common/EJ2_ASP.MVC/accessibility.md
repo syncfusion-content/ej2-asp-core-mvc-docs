@@ -47,6 +47,7 @@ Keyboard navigation support enables users to interact with controls using keyboa
 * [Menu](../menu/accessibility)
 * [MultiSelect](../multi-select/accessibility)
 * [NumericTextBox](../numerictextbox/accessibility)
+* [PDFViewer](../pdfviewer/keyboard-accessibility)
 * [Pivot Table](../pivot-table/accessibility)
 * [ProgressButton](../progress-button/accessibility)
 * [Range Slider](../range-slider/accessibility)

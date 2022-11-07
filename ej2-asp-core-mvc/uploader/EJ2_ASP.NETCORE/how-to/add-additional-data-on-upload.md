@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Additional Data On Upload in ##Platform_Name## Uploader | Syncfusion
+title: Additional Data On Upload in ##Platform_Name## Uploader Control | Syncfusion
 description: Learn here all about Add Additional Data On Upload in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Additional Data On Upload

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Convert Image Into Binary Format in ##Platform_Name## Uploader | Syncfusion
+title: Convert Image Into Binary Format in ##Platform_Name## Uploader Control | Syncfusion
 description: Learn here all about Convert Image Into Binary Format After Uploading in Syncfusion ##Platform_Name## Uploader component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Convert Image Into Binary Format After Uploading

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customization
+# Customization in Tooltip Control
 
 The Tooltip can be customized by using the `cssClass` property, which accepts custom CSS class names that define specific user-defined styles and themes to be applied on the Tooltip element.
 

@@ -43,7 +43,7 @@ The parent folder has to be provided as the path in the ReferencePath API.
 Also, install only the package related to that OS, then build and run the project on that platform. For Windows, Linux, and OSX operating systems, use the following corresponding libraries:
 
 * Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
-* *Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
-* *Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX
+* Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
+* Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX
 
 Following these steps should resolve the issue.
