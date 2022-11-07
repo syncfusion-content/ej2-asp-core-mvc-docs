@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in Grid Control
+# Accessibility in Menu Control
 
 ## ARIA attributes
 
