@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Mention Component
+title: Customization in Syncfusion ##Platform_Name## Mention Component
 description: Learn here all about customization in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
+
+# Customization in Mention
 
 ## Show or hide mention character
 
@@ -17,7 +19,7 @@ You can show the mention character as the prefix of the selected item in mention
 {% include code-snippet/mention/customization/mention-char-customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/filtering-data/mention-char-customization/EmailData.cs %}
+{% include code-snippet/mention/customization/mention-char-customization/EmailData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -47,7 +49,7 @@ By default, the popup list width value is set as `auto`. Depending on the mentio
 {% include code-snippet/mention/customization/popup-list-customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/filtering-data/popup-list-customization/Countries.cs %}
+{% include code-snippet/mention/customization/popup-list-customization/Countries.cs %}
 {% endhighlight %}
 {% endtabs %}
 

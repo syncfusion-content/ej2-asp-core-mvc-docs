@@ -8,7 +8,6 @@
     <e-mention-fields text="Game" value="ID"></e-mention-fields>
 </ejs-mention>
 
-
 <style>
 
     div#mentionElement[placeholder]:empty:before {
