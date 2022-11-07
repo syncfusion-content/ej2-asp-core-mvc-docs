@@ -28,7 +28,7 @@ There are two ways to highlight a text in the PDF document:
 
 <!-- markdownlint-disable MD029 -->
 2.Using the annotation toolbar
-
+    
 * Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
 * Select the **Highlight** button in the annotation toolbar. It enables the highlight mode.
 * Select the text and the highlight annotation will be added.
@@ -148,7 +148,7 @@ Refer to the following code sample to switch back to normal mode from the underl
 There are two ways to strikethrough a text in the PDF document:
 
 1.Using the context menu
-
+    
 * Select a text in the PDF document and right-click it.
 * Select the **Strikethrough** option in the context menu that appears.
 
@@ -156,7 +156,7 @@ There are two ways to strikethrough a text in the PDF document:
 
 <!-- markdownlint-disable MD029 -->
 2.Using the annotation toolbar
-
+    
 * Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
 * Select the **Strikethrough** button in the annotation toolbar. It enables the strikethrough mode.
 * Select the text and the strikethrough annotation will be added.
