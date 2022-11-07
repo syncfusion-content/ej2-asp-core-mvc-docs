@@ -1,5 +1,5 @@
 @{
-    var data = new Countries().GetData();
+    List<Countries> data = new Countries().GetData();
     char nameMentionChar = '@';
 }
 
