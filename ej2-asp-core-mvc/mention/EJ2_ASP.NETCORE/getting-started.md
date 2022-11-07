@@ -127,7 +127,6 @@ The following example, displays the text content along with the mention characte
 {% endhighlight %}
 {% endtabs %}
 
-
 ## See also
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
