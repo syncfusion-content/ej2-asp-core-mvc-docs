@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Switch Control
-description: Checkout and learn about getting started with ##Platform_Name## Switch control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Switch Control
+description: Checkout and learn about getting started with ASP.NET Core Switch control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
