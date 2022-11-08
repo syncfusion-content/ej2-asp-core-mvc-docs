@@ -95,7 +95,7 @@ The following DOM structure is required to display the simple message with the c
 </div>
 
 {% endhighlight %}
-{% endtabs %
+{% endtabs %}
 
 The following is the available list of predefined CSS classes to make the appearance of a message.
 
