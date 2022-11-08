@@ -9,9 +9,8 @@ namespace WebApplication1.Controllers
 {
     public class MultiSelectController : Controller
     {
-        public ActionResult complexdata()
+        public ActionResult Index()
         {
-            ViewBag.data = new Complex().GetData();
             return View();
         }
     }

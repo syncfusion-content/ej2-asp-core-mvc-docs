@@ -8,7 +8,6 @@
             content: "Are you sure you want to permanently delete these items?",
             showCloseIcon: true,
             closeOnEscape : true
-
         });
     };
 </script>

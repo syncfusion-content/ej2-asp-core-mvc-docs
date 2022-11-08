@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Mention Component
-description: Learn here all about accessibility in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ASP.NET MVC Mention control | Syncfusion
+description: Learn here all about accessibility in Syncfusion ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ##Platform_Name##
+publishingplatform: ejmvc
 documentation: ug
 ---
 
-# Accessibility
+# Accessibility in Mention
 
-The Mention control has been designed to keep in mind the `WAI-ARIA` specifications which apply the WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who
-use assistive technologies (AT) or completely rely on keyboard navigation.
+Web accessibility makes web contents and applications more accessible to people with disabilities. The Mention control provides built-in compliance with `WAI-ARIA` specifications. The `WAI-ARIA` support is achieved using attributes such as `aria-selected` and `aria-activedescendent`.
 
 ## ARIA attributes
 
@@ -40,6 +39,6 @@ You can use the following key shortcuts to access the Mention without interrupti
 {% include code-snippet/mention/accessibility/keyboard-intraction/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/accessibility/keyboard-intraction/keyboard.cs %}
+{% include code-snippet/mention/accessibility/keyboard-intraction/Employees.cs %}
 {% endhighlight %}
 {% endtabs %}

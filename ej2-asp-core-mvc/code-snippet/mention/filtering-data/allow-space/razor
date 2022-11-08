@@ -1,16 +1,25 @@
 @model List<string>
 @{
     char nameMentionChar = '@';
+    List<Employees> data = new Employees().GetData();
 }
-<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag employee"></div>
 
-@Html.EJS().Mention("Allow-Space").Target("#mentionElement").MentionChar(nameMentionChar).DataSource((IEnumerable<object>)ViewBag.data).AllowSpaces(true).Highlight(true).Render()
+@Html.EJS().Mention("Allow-Space").Target("#mentionElement").MentionChar(nameMentionChar).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Name" }).DataSource((IEnumerable<object>)data).AllowSpaces(true).Render()
 
 <style>
 
     div#mentionElement[placeholder]:empty:before {
         content: attr(placeholder);
-        color: #555;
+    }
+
+    #mentionElement{
+        min-height: 100px; 
+        border: 1px solid #D7D7D7;
+        border-radius: 4px; 
+        padding: 8px; 
+        font-size: 14px; 
+        width: 600px;
     }
 
 </style>

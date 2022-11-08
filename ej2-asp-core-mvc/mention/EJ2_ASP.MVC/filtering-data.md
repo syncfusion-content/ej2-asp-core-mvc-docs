@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Mention Filtering in ##Platform_Name## Mention Component
-description: Learn here all about mention filtering in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
+title: Mention Filtering in ASP.NET MVC Mention control | Syncfusion
+description: Learn here all about mention filtering in Syncfusion ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Mention Filtering
-publishingplatform: ##Platform_Name##
+publishingplatform: ejmvc
 documentation: ug
 ---
 
-# Filtering
+# Filtering data in Mention
 
 The Mention control has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the mention element.
 
 ## Limit the minimum filter character
 
-When filtering the list items, you can set the limit for character count to raise a remote request and fetch filtered data on the mention control. This can be done by configuring the [MinLength](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MinLength) property.
+You can control the minimum length of user input to initiate the search action using the [MinLength](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MinLength) property. This can be useful if you have a very large list of data. The default value is `0`, where the suggestion list opens as soon as the user inputs the mention character.
 
 The remote request does not fetch the search data until the search key contains three characters as shown in the following example.
 
@@ -27,13 +27,15 @@ The remote request does not fetch the search data until the search key contains 
 {% endhighlight %}
 {% endtabs %}
 
-![Minimum filter character](../images/minimum-filter-character.png)
+![ASP.NET MVC Mention minimum filter character](./images/mention-minimum-filter-character.png)
 
 ## Change the filter type
 
-While filtering, you can change the filter type to `Contains`, `StartsWith`, or `EndsWith` for string type within the [FilterType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_FilterType) property.
+While filtering, you can change the filter type to `Contains`, `StartsWith`, or `EndsWith` in the [FilterType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_FilterType) property. The default filter operator is `Contains`.
 
-In the following examples, data filtering is done with `StartsWith` type.
+* StartsWith - Filter the items that begin with the specified text value.
+* Contains - Filter the items that contain the specified text value.
+* EndsWith - Filter the items that end with the specified text value.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -44,45 +46,41 @@ In the following examples, data filtering is done with `StartsWith` type.
 {% endhighlight %}
 {% endtabs %}
 
-![Change filter type](../images/filter-type.png)
+![ASP.NET MVC Mention change filter type](./images/mention-filter-type.png)
 
 ## Allow spacing between search
 
-While filtering, you can allow the space in the middle of the mention while searching the data in the data source by using the [AllowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the data source does not match with the mentioned element data, the popup will be hidden.
+While filtering the data in the data source, you can allow the space in the middle of the mention using the [AllowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the data source does not match with the mentioned element data, the popup will be hidden on the space key press. The default value of the `AllowSpaces` is `false`.
 
 > By default, the `AllowSpaces` property is disabled, and the space ends the mention control search.
-
-In the following example, `AllowSpaces` property is enabled and the filtering waits after the space action
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/filtering-data/allow-space/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/filtering-data/allow-space/allow-space.cs %}
+{% include code-snippet/mention/filtering-data/allow-space/Employees.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Allow spacing between search](../images/allow-spacing.png)
+![ASP.NET MVC Mention allow spacing between search](./images/mention-allow-spacing.png)
 
 ## Customize the suggestion item count
 
-With the large amount of data source data bound for the Mention control, you can customize the number of list items to be displayed in the popup by using the [SuggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
-
-In the following example, the suggestion list for the popup is limited to eight data.
+While filtering, you can customize the number of list items to be displayed in the suggestion list using the [SuggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/filtering-data/suggestion-count/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Email.cs" %}
+{% highlight c# tabtitle="Data.cs" %}
 {% include code-snippet/mention/filtering-data/suggestion-count/EmailData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![suggestion item count](../images/suggestion-count.png)
+![ASP.NET MVC Mention suggestion item count](./images/mention-suggestion-count.png)
 
-## See Also
+## See also
 
 * [Templates](./template)
 

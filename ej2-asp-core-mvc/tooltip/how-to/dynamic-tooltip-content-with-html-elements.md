@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamic Tooltip Content With Html Elements in ##Platform_Name## Tooltip Component
+title: Dynamic Tooltip Content in ##Platform_Name## Tooltip Control | Syncfusion
 description: Learn here all about Dynamic Tooltip Content With Html Elements in Syncfusion ##Platform_Name## Tooltip component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Dynamic Tooltip Content With Html Elements
@@ -16,9 +16,7 @@ The HTML tags such as `<div>`, `<span>`, `bold`, `italic`, `underline`, etc., ca
 
 Here, Bold, Italic, Underline, and Anchor tags are used.
 
-When using HTML elements as content to `Tooltip` make the content element `display: none`, then from the
-[`beforeRender`](https://ej2.syncfusion.com/documentation/tooltip/api-tooltip.html?lang=typescript#beforerender)
-event we can make the element visible again using below code.
+When using HTML elements as content to `Tooltip` make the content element `display: none`, then from the [`beforeRender`](https://ej2.syncfusion.com/documentation/tooltip/api-tooltip.html?lang=typescript#beforerender) event we can make the element visible again using below code.
 
 ```typescript
     document.getElementById('content').style.display = 'block';

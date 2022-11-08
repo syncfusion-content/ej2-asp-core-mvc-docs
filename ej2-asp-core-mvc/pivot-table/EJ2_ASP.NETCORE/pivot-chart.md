@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot Chart in ##Platform_Name## Syncfusion Pivot Table Control | Syncfusion
+title: Pivot Chart in ##Platform_Name## Syncfusion Pivot Table Control
 description: Learn here all about Pivot Chart in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pivot Chart

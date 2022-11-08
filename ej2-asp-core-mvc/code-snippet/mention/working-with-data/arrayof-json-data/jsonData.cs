@@ -11,7 +11,6 @@ namespace WebApplication1.Controllers
     {
         public ActionResult jsonData()
         {
-            ViewBag.data = new SportsData().SportsList();
             return View();
         }
     }

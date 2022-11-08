@@ -1,38 +1,17 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Mention Component
-description: Learn here all about localization in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
+title: Localization in ASP.NET MVC Mention control | Syncfusion
+description: Learn here all about localization in Syncfusion ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
-publishingplatform: ##Platform_Name##
+publishingplatform: ejmvc
 documentation: ug
 ---
 
-# Localization
+# Localization in ASP.NET MVC Mention
 
-The Localization library allows you to localize static text content of the [NoRecordsTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_NoRecordsTemplate) &nbsp;properties according to the culture currently assigned to the Mention.
+ASP.NET MVC Mention control can be localized. Refer to ASP.NET Core [Localization](../../common/EJ2_ASP.MVC/localization.md) topic to localize Syncfusion ASP.NET MVC controls.
 
-| Locale key | en-US (default)  |
-|------|------|
-| noRecordsTemplate |  No records found |
-
-## Loading translations
-
-To load the translation object to your application, use the load function of the **L10n** class.
-
-In the following sample, French culture is set to the mention control and no data is loaded. Hence, the [NoRecordsTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_NoRecordsTemplate) property displays its text in French culture initially.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/mention/localization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/mention/localization/localization.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Localization](../images/localization.png)
-
-## See Also
+## See also
 
 * [Accessibility](./accessibility)

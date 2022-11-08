@@ -1,16 +1,25 @@
 @model List<string>
 @{
     char nameMentionChar = '@';
+    List<SportsData> data = new SportsData().SportsList();
 }
-<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag user" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
+<div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag sport"></div>
 
-@Html.EJS().Mention("Sorting").MentionChar(nameMentionChar).Target("#mentionElement").DataSource((IEnumerable<object>)ViewBag.data).SortOrder(Syncfusion.EJ2.DropDowns.SortOrder.Descending).Render()
+@Html.EJS().Mention("Sorting").MentionChar(nameMentionChar).Target("#mentionElement").Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Game" , Value = "ID" }).DataSource((IEnumerable<object>)data).SortOrder(Syncfusion.EJ2.DropDowns.SortOrder.Descending).Render()
 
 <style>
 
     div#mentionElement[placeholder]:empty:before {
         content: attr(placeholder);
-        color: #555;
     }
 
+    #mentionElement{
+        min-height: 100px; 
+        border: 1px solid #D7D7D7;
+        border-radius: 4px; 
+        padding: 8px; 
+        font-size: 14px; 
+        width: 600px;
+    }
+    
 </style>

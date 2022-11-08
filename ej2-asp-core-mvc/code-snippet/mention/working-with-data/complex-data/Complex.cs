@@ -7,26 +7,29 @@ namespace WebApplication1.Models
 {
     public class Code
     {
-        public string Id { get; set; }
+        public string ID { get; set; }
     }
 
     public class Country
     {
-        public string CountryId { get; set; }
+        public string Name { get; set; }
     }
-    public class Complex
+
+    public class CountryGroup
     {
         public Country Country { get; set; }
         public Code Code { get; set; }
-        public List<Complex> GetData()
+        public List<CountryGroup> GetData()
         {
-            List<Complex> data = new List<Complex>();
-            data.Add(new Complex() { Country = new Country() { CountryId = "Australia" }, Code = new Code() { Id = "AU" } });
-            data.Add(new Complex() { Country = new Country() { CountryId = "Bermuda" }, Code = new Code() { Id = "BM" } });
-            data.Add(new Complex() { Country = new Country() { CountryId = "Canada" }, Code = new Code() { Id = "CA" } });
-            data.Add(new Complex() { Country = new Country() { CountryId = "Cameroon" }, Code = new Code() { Id = "CM" } });
-            data.Add(new Complex() { Country = new Country() { CountryId = "Denmark" }, Code = new Code() { Id = "DK" } });
-            data.Add(new Complex() { Country = new Country() { CountryId = "France" }, Code = new Code() { Id = "FR" } });
+            List<CountryGroup> data = new List<CountryGroup>
+            {
+                new CountryGroup() { Country = new Country() { Name = "Australia" }, Code = new Code() { ID = "AU" } },
+                new CountryGroup() { Country = new Country() { Name = "Bermuda" }, Code = new Code() { ID = "BM" } },
+                new CountryGroup() { Country = new Country() { Name = "Canada" }, Code = new Code() { ID = "CA" } },
+                new CountryGroup() { Country = new Country() { Name = "Cameroon" }, Code = new Code() { ID = "CM" } },
+                new CountryGroup() { Country = new Country() { Name = "Denmark" }, Code = new Code() { ID = "DK" } },
+                new CountryGroup() { Country = new Country() { Name = "France" }, Code = new Code() { ID = "FR" } }
+            };
             return data;
         }
     }
