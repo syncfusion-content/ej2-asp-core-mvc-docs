@@ -8,25 +8,25 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Mode in Asp.Net Core Speed Dial Control
+# Display Modes in ASP.NET Core Speed Dial
 
-## Types of Mode
-* Linear
-* Radial
+The ASP.NET Core Speed Dial, the action items can be displayed in `Linear` and `Radial` display modes by setting [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property.
 
-## Linear Mode
+## Linear Display Mode
 
-SpeedDial items are displayed in linear order like list. Use [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property to display the Items in linear order direction. In Linear Mode below directions are available
+In `Linear` display mode, Speed Dial action items are displayed in a list-like format either horizontally or vertically. By default, Speed Dial items are displayed in `Linear` mode.
 
-| List of Directions | 
-|--|
-| Right | 
-| Left | 
-| Up | 
-| Down | 
-| Auto |
+### Direction
 
-In `Auto` direction Speed dial action items are displayed vertically above or below the button of Speed Dial based on the Speed Dial button position. In the following example, Speed Dial Items are demonstrated with [direction](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Direction) property.
+You can open the action items on the top, left, up, and down side of the Speed Dial button by setting [direction](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Direction) property. The default value is `Auto` where the action items are displayed based on the [position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Position)of the Speed Dial.
+
+The `Linear` directions of Speed Dial are as follows:
+
+* Left - Action items are displayed on the left side of the button.
+* Right - Action items are displayed on the right side of the button.
+* Up - Action items are displayed on the top of the button.
+* Down - Action items are displayed on the bottom of the button.
+* Auto - Action items display direction auto calculated based on `Position` of the Speed Dial. If Speed Dial is position at bottom right, then action items displayed at top.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -50,17 +50,7 @@ In `Auto` direction Speed dial action items are displayed vertically above or be
 
 ![ASP.NET Core Speed Dial Linear Mode](images/LinearDirection.png)
 
-## Radial Mode
+## Radial Display Mode (Radial Menu)
 
-SpeedDial items are displayed like radial menu in radial direction (circular direction). Use [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property to display the Items in Radial menu order direction. In Radial Mode below directions are available
-
-| List of Directions | 
-|--|
-| Clockwise | 
-| AntiClockwise |  
-| Auto |
-
-In `Auto` direction Speed dial action items are displayed clockwise or anti-clockwise based on the Speed Dial button position.
-
-> [To learn more about Radial Mode](https://ej2.syncfusion.com/aspnetcore/documentation/speeddial/radial-menu).
+In `Radial` mode, Speed Dial action items are displayed in a circular pattern like a radial menu. For more details about radial mode, check out the link [here](https://ej2.syncfusion.com/aspnetcore/documentation/speeddial/radial-menu).
 

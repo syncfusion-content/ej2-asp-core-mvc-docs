@@ -8,11 +8,46 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Positions in ASP.NET Core Speed Dial Control
+# Positions in ASP.NET Core Speed Dial
+
+The Speed dial Component can be positioned anywhere on the [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Target) using the [position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Position) property. If the `target` is not defined, then Speed Dial is positioned based on the browser viewport.
+
+The position values of Speed Dial are as follows:
+* TopLeft
+* TopCenter
+* TopRight
+* MiddleLeft
+* MiddleCenter
+* MiddleRight
+* BottomLeft
+* BottomCenter
+* BottomRight
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/speeddial/positions/opens-on-hover/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/speeddial/positions/opens-on-hover/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Hover.cs" %}
+{% include code-snippet/speeddial/positions/opens-on-hover/hover.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Asp.Net Core Speed Dial OpensOnHover](images/Hover.png)
 
 ## OpensOnHover
 
-[opensOnHover](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_OpensOnHover) property indicates whether to open the popup when the button of SpeedDial is hovered. By default, SpeedDial opens popup on click action. By default the OpensOnHover is false. Opens popup on mouse hover action is achieved by [opensOnHover](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_OpensOnHover) property when the value is true.
+You can open the Speed Dial action items on mouse hover by setting the [opensOnHover](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_OpensOnHover) property as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,7 +73,10 @@ documentation: ug
 
 ## Programmatically Show/Hide
 
-Speed Dial component can show and hide the items programmatically by using `show` and `hide` methods.
+You can open/close the Speed Dial action items programmatially using `show` and 
+`hide` methods.
+
+Below example demonstrates open/close action items on button click.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -65,7 +103,7 @@ Speed Dial component can show and hide the items programmatically by using `show
 
 ## Programmatically Refresh the Position
 
-Refreshes the speed dial button position. Use `refreshPosition` method to re-position button when the `target` is resized.
+You can refresh the position of the Speed Dial using `refreshPosition` method when the `Target`position is changed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
