@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Detail Template in ##Platform_Name## Grid Component
+title: Detail Template in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Detail Template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Detail Template
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Detail Template
+# Detail Template in ASP.Net Core Grid Component
 
 The detail template provides additional information about a particular row by expanding or collapsing detail content. The [`detailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property accepts either the **template** string or HTML element ID.
 
@@ -99,3 +99,14 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 
 > * You can expand all the rows by using **expandAll** method.
 > * If you want to expand all the rows at initial Grid rendering, then use **expandAll** method in [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid.
+
+## Limitations for detail template
+
+Detail template is not supported with the following features:
+
+* Frozen rows and columns
+* Immutable mode
+* Infinite scrolling
+* Virtual scrolling
+* Pdf export
+* Excel export
