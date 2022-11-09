@@ -13,14 +13,6 @@ public ActionResult Offset()
     {
         IconCss = "e-icons e-paste"
     });
-    items.Add(new SpeedDialItem
-    {
-        IconCss = "e-icons e-edit"
-    });
-    items.Add(new SpeedDialItem
-    {
-        IconCss = "e-icons e-save"
-    });
 
     ViewBag.datasource = items;
     return View();

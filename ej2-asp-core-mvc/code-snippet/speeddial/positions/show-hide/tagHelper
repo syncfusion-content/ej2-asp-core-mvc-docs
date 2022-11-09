@@ -1,3 +1,5 @@
+@using Syncfusion.EJ2.Buttons
+
 @{
     List<SpeedDialItem> items = new List<SpeedDialItem>();
     items.Add(new SpeedDialItem
@@ -21,16 +23,14 @@
 </div>
 
 <script>
-    var speeddial;
     function showItems()
     {
-        speeddial=document.getElementById('speeddial').ej2_instances[0];
+        var speeddial=document.getElementById('speeddial').ej2_instances[0];
         speeddial.show();
     }
     function hideItems()
     {
-        speeddial=document.getElementById('speeddial').ej2_instances[0];
+        var speeddial=document.getElementById('speeddial').ej2_instances[0];
         speeddial.hide();
-    }
-    
+    }    
 </script>

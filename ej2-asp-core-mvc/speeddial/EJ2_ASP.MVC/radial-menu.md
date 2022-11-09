@@ -8,26 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Radial Menu in ASP.NET MVC Speed Dial Control
+# Radial Menu in ASP.NET MVC Speed Dial
 
-## Direction
+The ASP.NET MVC Speed Dial action items can be displayed in a circular patter like a radial menu by setting [Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property. You can customize the `Direction`, `StartAngle`, `EndAngle` and `Offset` by setting [SpeedDialRadialSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html).
 
-Types of Radial Menu directions
-*Clockwise
-*AntiClockwise
-*Auto
+## Radial Menu Direction
 
-In SpeedDialRadialSettings use [Direction](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialAnimationSettings.html#Syncfusion_EJ2_Buttons_SpeedDialAnimationSettings_Duration) property to display the Items in any one of the above direction.
+You can open the action items in either clockwise or anticlockwise by setting [Direction](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html#Syncfusion_EJ2_Buttons_SpeedDialRadialSettings_Direction) property. The default value is `Auto` where the action items are displayed based on the `Position` property of the Speed Dial.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/radial-menu/direction/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -37,28 +26,16 @@ In SpeedDialRadialSettings use [Direction](https://help.syncfusion.com/cr/aspnet
 {% include code-snippet/speeddial/radial-menu/direction/direction.cs %}
 {% endhighlight %}
 {% endtabs %}
+
 {% endif %}
 
-![ASP.NET MVC Speed Dial Radial Mode](images/Radial.png)
+![ASP.NET MVC Speed Dial Radial Mode](images/SDRadial.png)
 
 ## Start and End Angle
 
-Use SpeedDialRadialSettings to modify the Start and End Angles. It is available only when the [Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property is `Radial`. Use [StartAngle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html#Syncfusion_EJ2_Buttons_SpeedDialRadialSettings_StartAngle) property and [EndAngle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html#Syncfusion_EJ2_Buttons_SpeedDialRadialSettings_EndAngle) property to change the angles.
+You can modify the start and end angle of action items by setting [StartAngle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html#Syncfusion_EJ2_Buttons_SpeedDialRadialSettings_StartAngle) and [EndAngle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html#Syncfusion_EJ2_Buttons_SpeedDialRadialSettings_EndAngle) properties. If the angle is not defined, the action items are displayed based on the `Position` property of the Speed Dial.
 
-| Angles | Definition | Range  | Default value|
-| --- | --- | --- | ---|
-| Start Angle | The Start angle indicates the Start angle of speed dial item placement | 0 to 360 | -1 | 
-| End Angle | The End angle indicates the End angle of speed dial items placement | 0 to 360 | -1 |
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/radial-menu/angles/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -68,23 +45,16 @@ Use SpeedDialRadialSettings to modify the Start and End Angles. It is available 
 {% include code-snippet/speeddial/radial-menu/angles/angles.cs %}
 {% endhighlight %}
 {% endtabs %}
+
 {% endif %}
 
-![ASP.NET MVC Speed Dial Angles](images/Angle.png)
+![ASP.NET MVC Speed Dial Angles](images/SDAngle.png)
 
 ## Offset
 
-Use [Offset](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html#Syncfusion_EJ2_Buttons_SpeedDialRadialSettings_Offset) property to set the offset distance of speed dial items placement from the button of Speed Dial. It accepts the string values. The default value is 100px. It is available only when the [Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property is `Radial`.
+You can modify the offset distance between action items and Speed Dial button using [Offset](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html#Syncfusion_EJ2_Buttons_SpeedDialRadialSettings_Offset) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/radial-menu/offset/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -94,6 +64,7 @@ Use [Offset](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons
 {% include code-snippet/speeddial/radial-menu/offset/offset.cs %}
 {% endhighlight %}
 {% endtabs %}
+
 {% endif %}
 
-![ASP.NET MVC Speed Dial Offset](images/Offset.png)
+![ASP.NET MVC Speed Dial Offset](images/SDOffset.png)

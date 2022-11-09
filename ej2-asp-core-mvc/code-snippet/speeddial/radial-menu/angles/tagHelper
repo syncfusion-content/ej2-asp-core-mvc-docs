@@ -1,3 +1,5 @@
+@using Syncfusion.EJ2.Buttons
+
 @{
     var radialSetting = new SpeedDialRadialSettings { StartAngle=180, EndAngle=360, Direction=RadialDirection.AntiClockwise };
     List<SpeedDialItem> items = new List<SpeedDialItem>();
@@ -13,16 +15,6 @@
     {
         IconCss = "e-icons e-paste"
     });
-    items.Add(new SpeedDialItem
-    {
-        IconCss = "e-icons e-edit"
-    });
-    items.Add(new SpeedDialItem
-    {
-        IconCss = "e-icons e-save"
-    });
 }
 
-<div id="target" style="height:250px; position:relative; width:300px; border:1px solid;">
-    <ejs-speeddial id="speeddial" target="#target" mode=Radial radialSettings=radialSetting position="MiddleCenter" items="items" openIconCss="e-icons e-edit" closeIconCss="e-icons e-close"></ejs-speeddial>
-</div>
+<ejs-speeddial id="speeddial" mode=Radial radialSettings=radialSetting position="MiddleCenter" items="items" openIconCss="e-icons e-edit"></ejs-speeddial>

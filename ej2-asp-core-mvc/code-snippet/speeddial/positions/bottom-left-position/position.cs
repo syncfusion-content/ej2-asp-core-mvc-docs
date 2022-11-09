@@ -1,20 +1,17 @@
-public ActionResult Animation()
+public ActionResult Position()
 {
     List<SpeedDialItem> items = new List<SpeedDialItem>();
     items.Add(new SpeedDialItem
     {
-        Text = "Cut",
-        IconCss="e-icons e-cut"
+        Text="Cut"
     });
     items.Add(new SpeedDialItem
     {
-        Text = "Copy",
-        IconCss="e-icons e-copy"
+        Text="Copy"
     });
     items.Add(new SpeedDialItem
     {
-        Text = "Paste",
-        IconCss="e-icons e-paste"
+        Text="Paste"   
     });
 
     ViewBag.datasource = items;

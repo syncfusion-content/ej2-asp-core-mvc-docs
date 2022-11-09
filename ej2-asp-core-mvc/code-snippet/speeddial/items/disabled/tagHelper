@@ -1,19 +1,20 @@
-public ActionResult Icon()
-{
+@using Syncfusion.EJ2.Buttons
+
+@{
     List<SpeedDialItem> items = new List<SpeedDialItem>();
     items.Add(new SpeedDialItem
     {
-        IconCss="e-icons e-cut"
+        Text="Cut",
+        Disabled=true
     });
     items.Add(new SpeedDialItem
     {
-        IconCss="e-icons e-copy"
+        Text="Copy"
     });
     items.Add(new SpeedDialItem
     {
-        IconCss="e-icons e-paste"   
+        Text="Paste"
     });
-
-    ViewBag.datasource = items;
-    return View();
 }
+
+<ejs-speeddial id="speeddial" items="items" content="Edit"></ejs-speeddial>

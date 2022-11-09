@@ -1,5 +1,7 @@
+@using Syncfusion.EJ2.Buttons
+
 @{
-    var radialSetting = new SpeedDialRadialSettings { Offset="110px" };
+    var radialSetting = new SpeedDialRadialSettings { Offset="80px" };
     List<SpeedDialItem> items = new List<SpeedDialItem>();
     items.Add(new SpeedDialItem
     {
@@ -13,17 +15,7 @@
     {
         IconCss = "e-icons e-paste"
     });
-    items.Add(new SpeedDialItem
-    {
-        IconCss = "e-icons e-edit"
-    });
-    items.Add(new SpeedDialItem
-    {
-        IconCss = "e-icons e-save"
-    });
 }
 
-<div id="target" style="height:200px; position:relative; width:300px; border:1px solid;">
-    <ejs-speeddial id="speeddial" target="#target" mode=Radial radialSettings=radialSetting position="TopRight" items="items" openIconCss="e-icons e-edit" closeIconCss="e-icons e-close">
-    </ejs-speeddial>
-</div>
+<ejs-speeddial id="speeddial" mode=Radial radialSettings=radialSetting items="items" openIconCss="e-icons e-edit">
+</ejs-speeddial>

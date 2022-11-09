@@ -1,3 +1,5 @@
+@using Syncfusion.EJ2.Buttons
+
 @{
     List<SpeedDialItem> items = new List<SpeedDialItem>();
     items.Add(new SpeedDialItem
@@ -14,6 +16,4 @@
     });
 }
 
-<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    <ejs-speeddial id="speeddial" target="#target" items="items" position="BottomRight" openIconCss="e-icons e-edit" closeIconCss="e-icons e-close"></ejs-speeddial>
-</div>
+<ejs-speeddial id="speeddial" items="items" content="Edit"></ejs-speeddial>

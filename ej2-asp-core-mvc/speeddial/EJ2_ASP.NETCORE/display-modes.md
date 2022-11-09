@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Mode with ##Platform_Name## SpeedDial Control | Syncfusion
+title: Display Mode with ##Platform_Name## SpeedDial Control | Syncfusion
 description: Checkout and learn about Mode with ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Mode
+control: Display Mode
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -36,19 +36,9 @@ The `Linear` directions of Speed Dial are as follows:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/speeddial/mode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="LinearMode.cs" %}
-{% include code-snippet/speeddial/mode/linear.cs %}
-{% endhighlight %}
-{% endtabs %}
 {% endif %}
 
-![ASP.NET Core Speed Dial Linear Mode](images/LinearDirection.png)
+![ASP.NET Core Speed Dial Linear Mode](images/SDLinear.png)
 
 ## Radial Display Mode (Radial Menu)
 

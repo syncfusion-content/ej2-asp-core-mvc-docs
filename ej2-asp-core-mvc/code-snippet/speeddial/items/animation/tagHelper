@@ -1,20 +1,24 @@
+@using Syncfusion.EJ2.Buttons
+
 @{
     var animations = new SpeedDialAnimationSettings { Effect = SpeedDialAnimationEffect.Zoom };
     List<SpeedDialItem> items = new List<SpeedDialItem>();
     items.Add(new SpeedDialItem
     {
-        Text="Cut"
+        Text="Cut",
+        IconCss="e-icons e-cut"
     });
     items.Add(new SpeedDialItem
     {
-        Text="Copy"
+        Text="Copy",
+        IconCss="e-icons e-copy"
     });
     items.Add(new SpeedDialItem
     {
-        Text="Paste"
+        Text="Paste",
+        IconCss="e-icons e-paste"
     });
 }
 
-<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
-    <ejs-speeddial id="speeddial" animation=animations target="#target" position="BottomRight" items="items" openIconCss="e-icons e-edit" closeIconCss="e-icons e-close"></ejs-speeddial>
-</div>
+<ejs-speeddial id="speeddial" animation=animations items="items" openIconCss="e-icons e-edit" closeIconCss="e-icons e-close" content="Edit">
+</ejs-speeddial>
