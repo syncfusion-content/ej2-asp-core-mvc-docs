@@ -3,11 +3,11 @@
 </div>
 
 <script>
-document.getElementById('ConfirmBtn').onclick = function () {
-    ej.popups.DialogUtility.confirm({
-        title: ' Delete Multiple Items',
-        content: "Are you sure you want to permanently delete these items?",
-        position: { X: 'top', Y: 'center' }
-    });
-};
+    document.getElementById('ConfirmBtn').onclick = function () {
+        ej.popups.DialogUtility.confirm({
+            title: "Delete multiple items",
+            content: "Are you sure you want to permanently delete these items?",
+            position: { X: "top", Y: "center" }
+        });
+    };
 </script>

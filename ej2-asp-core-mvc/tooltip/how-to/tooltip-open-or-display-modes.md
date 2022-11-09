@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip Open Or Display Modes in ##Platform_Name## Tooltip Component
+title: Tooltip Open Or Display Modes in ##Platform_Name## Tooltip Control | Syncfusion
 description: Learn here all about Tooltip Open Or Display Modes in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip Open Or Display Modes
@@ -11,6 +11,7 @@ documentation: ug
 # Tooltip open or display modes
 
 The open mode property of tooltip can be defined on a target that is hovering, focusing, or clicking.
+
 Tooltip component have the following types of open mode:
 
 * Auto

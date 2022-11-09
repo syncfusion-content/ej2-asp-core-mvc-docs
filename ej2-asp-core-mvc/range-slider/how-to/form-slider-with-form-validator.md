@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Form Slider With Form Validator in ##Platform_Name## Range Slider Component
+title: Form Slider With Form Validator in ##Platform_Name## Range Slider Control | Syncfusion
 description: Learn here all about Form Slider With Form Validator in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Form Slider With Form Validator
@@ -10,8 +10,7 @@ documentation: ug
 
 # Form Slider with FormValidator
 
-The Slider control can be validated using our [FormValidator](https://ej2.syncfusion.com/documentation/form-validator/?lang=typescript). The following steps walk-through
-slider validation.
+The Slider control can be validated using our [FormValidator](https://ej2.syncfusion.com/documentation/form-validator/?lang=typescript). The following steps walk-through slider validation.
 
 * Render slider control inside a form.
 * Bind [changed](https://ej2.syncfusion.com/documentation/slider/api-slider.html?lang=typescript#changed) event in the slider control to validate the slider value when the value changes.

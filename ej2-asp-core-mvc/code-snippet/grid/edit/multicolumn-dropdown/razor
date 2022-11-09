@@ -1,0 +1,75 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width(100).Add();
+        col.Field("CustomerID").HeaderText("Customer Name").Width(120).Add();
+        col.Field("ShipCountry").HeaderText("Ship Country").Width(300).Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Add();  
+}).EditSettings(edit => edit.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Render()
+    
+<script>
+    var dropdownobj;
+    var element;
+
+    function create(args) {
+        element = document.createElement('input');
+        return element;
+    }
+    
+    function write(args) {
+        var data = @Html.Raw(Json.Encode(ViewBag.DataSource));
+        dropdownobj = new ej.dropdowns.DropDownList({
+            dataSource: new ej.data.DataManager(data),
+            value: args.rowData[args.column.field],
+            query: new ej.data.Query().select(['EmployeeID', 'ShipCountry']).take(10),
+            fields: { text: 'ShipCountry', value: 'ShipCountry' },
+            placeholder: 'Select a Country',
+            headerTemplate: '<table><tr><th>EmployeeID</th><th>ShipCountry</th></tr></table>',
+            itemTemplate: '<div class="e-grid"><table class="e-table"><tbody><tr><td class="e-rowcell">${EmployeeID}</td><td class="e-rowcell">${ShipCountry}</td></tr> </tbody></table></div>'
+        });
+        dropdownobj.appendTo(element);
+    }
+    
+    function destroy() {
+        dropdownobj.destroy();
+    }
+    
+    function read(args) {
+        return dropdownobj.value;
+    }
+</script>
+    
+<style>
+    .content {
+        margin: 0 auto;
+        width: 550px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: separate;
+        table-layout: fixed;
+    }
+
+    th, td {
+        border-width: 1px 0 0 1px;
+        border-color: #e0e0e0;
+        text-align: left;
+        border-style: solid;
+        display: table-cell;
+    }
+
+    th {
+        line-height: 36px;
+        text-indent: 16px;
+    }
+
+    .e-ddl-header {
+        padding-right: 17px;
+        border-width: 1px 0px 1px 0px;
+        border-color: #e0e0e0;
+        border-style: solid;
+    }
+
+    .e-dropdownbase .e-list-item {
+        padding-right: 0px;
+    }
+</style>
