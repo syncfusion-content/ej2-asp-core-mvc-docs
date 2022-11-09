@@ -22,10 +22,10 @@ The following example demonstrates the different severity messages without the s
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/message/severity/tagHelper %}
+{% include code-snippet/message/no-icon/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/message/severity/controller.cs %}
+{% include code-snippet/message/no-icon/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,7 +33,7 @@ The following example demonstrates the different severity messages without the s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/message/severity/razor %}
+{% include code-snippet/message/no-icon/razor %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
