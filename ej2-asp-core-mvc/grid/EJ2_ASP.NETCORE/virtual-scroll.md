@@ -111,6 +111,10 @@ Even though Grid has optimized design for high-performance, the browser has some
 
 Usually, the height of the grid element can be calculated by using the Total Records Count * Row Height. For example, if the row height is set as 30px and the total record count will be 1000000(1 million), then the height of the grid element will be 30 000 000 pixels. In this case, the browser's maximum height is about 22369600(The maximum pixel height limitation differs for different browsers). The records above the maximum height of the browser cannot be scrolled. It will be hidden.
 
+This height limitation is not related to Grid component. Its fully depend on the default behaviour of the browser. We have reproduced the same issue in the normal html table too. Please find the below image.
+
+Grid component aslo faced the same issue as mentioned in the below image.
+
 >> gif image
 
 The Grid has an option to overcome this default behavior of the browser by following the below alternative solutions.
@@ -126,12 +130,18 @@ This can be demonstrated in the following sample. In the following sample, Grid 
 
 **Solution 2: Using RowHeight property**
 
-By reducing the [row height](https://ej2.syncfusion.com/aspnetcore/documentation/grid/row/row-height) using the [RowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property of the Grid, you can be able to scroll more records. For example, if a Grid has 1M records and RowHeight is set as '20px', you will be able to scroll the records up to 1M. This is illustrated in the following gif.
+By reducing the [row height](https://ej2.syncfusion.com/aspnetcore/documentation/grid/row/row-height) using the [RowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property of the Grid, you can be able to scroll more records. This is demonstrated in the following gif images.
 
->> gif image
+Before setting rowHeight property to the grid.
+
+![Grid Without Row Height](../images/ReactGrid.gif)
+
+After setting rowHeight property as "30px" to the grid.
+
+![Grid With Row Height](../images/RowHeight.gif)
 
 **Solution 3: Using Paging feature**
 
 Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging) feature also loads the data in on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.,) in Grid. So use the paging feature instead of virtual scrolling to view the large number of records in the Grid without any kind of performance degradation and browser height limitation.
 
-> Since paging and virtual scrolling are unique features, it is not recommendable to use both features at the same time.
+> Since paging and virtual scrolling are unique features, it is not recommendable to use both features at the same time. But customization can be applied as mentioned in solution1
