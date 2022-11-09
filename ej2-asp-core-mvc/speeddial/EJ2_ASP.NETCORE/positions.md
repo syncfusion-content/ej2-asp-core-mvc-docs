@@ -49,7 +49,7 @@ You can open the Speed Dial action items on mouse hover by setting the [opensOnH
 
 {% endif %}
 
-![Asp.Net Core Speed Dial OpensOnHover](images/SDItemOnly.png)
+![Asp.Net Core Speed Dial OpensOnHover](images/SDIcon.png)
 
 ## Programmatically Show/Hide
 
