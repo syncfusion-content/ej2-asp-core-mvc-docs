@@ -35,4 +35,6 @@ The following example illustrates how to enable right-to-left support in Button 
 {% endtabs %}
 {% endif %}
 
+![Button with Right to Left view](../images/button-in-right-to-left.png)
+
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Button/ButtonHowToSample).

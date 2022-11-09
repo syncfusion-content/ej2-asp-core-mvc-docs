@@ -7,21 +7,21 @@
     document.getElementById('confirmBtn').onclick = function () {
         document.getElementById("statusText").style.display = "none";
         ej.popups.DialogUtility.confirm({
-            title: ' Delete Multiple Items',
+            title: "Delete multiple items",
             content: "Are you sure you want to permanently delete these items?",
             okButton: { click: confirmOkAction },
             cancelButton: { click: confirmCancelAction },
-            position: { X: 'center', Y: 'center' }
+            position: { X: "center", Y: "center" }
         });
     };
     function confirmOkAction() {
         this.hide();
-        document.getElementById('statusText').innerHTML = "The user confirmed the dialog box";
+        document.getElementById("statusText").innerHTML = "The user confirmed the dialog box";
         document.getElementById("statusText").style.display = "block";
     }
     function confirmCancelAction() {
         this.hide();
-        document.getElementById('statusText').innerHTML = "The user canceled the dialog box.";
+        document.getElementById("statusText").innerHTML = "The user canceled the dialog box.";
         document.getElementById("statusText").style.display = "block";
     }
 </script>
