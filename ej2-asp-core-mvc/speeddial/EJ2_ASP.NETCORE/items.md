@@ -38,7 +38,7 @@ You can show icon only in SpeedDial items by setting [IconCss](https://help.sync
 
 {% endif %}
 
-![ASP.NET Core Speed Dial with Icon](images/SDIcon.png)
+![ASP.NET Core Speed Dial with Icon only](images/SDIcon.png)
 
 ### Text Only
 
