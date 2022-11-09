@@ -24,7 +24,7 @@ Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.PNG
 
 In this case, the key generated for those online map service providers can also be appended to the URL. This allows to create personalized Maps with your own content and imagery.
 
-Below is the example of adding TomTom map. You can follow the steps in this [link](https://developer.tomtom.com/map-display-api/documentation/product-information/introduction) to generate an API key, and then added the key to the URL.
+Following is an example of how to add a TomTom map. You can generate an API key by following the steps in this [link](https://developer.tomtom.com/map-display-api/documentation/product-information/introduction) and then adding the key to the URL.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -90,7 +90,7 @@ Tile Maps layer can be zoomed and panned. Zooming helps to get a closer look at 
 {% endtabs %}
 {% endif %}
 
-![TomTom Maps with Zooming](../images/MapProviders/tomtom-maps-zooming.PNG)
+![TomTom Maps with Zooming and Panning](../images/MapProviders/tomtom-maps-zooming.PNG)
 
 ## Adding markers and navigation line
 
