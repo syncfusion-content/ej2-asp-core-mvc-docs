@@ -20,10 +20,10 @@ The following example demonstrates the severity of the messages.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/message/severity-icon/tagHelper %}
+{% include code-snippet/message/severity/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/message/severity-icon/controller.cs %}
+{% include code-snippet/message/severity/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,7 +31,7 @@ The following example demonstrates the severity of the messages.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/message/severity-icon/razor %}
+{% include code-snippet/message/severity/razor %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
