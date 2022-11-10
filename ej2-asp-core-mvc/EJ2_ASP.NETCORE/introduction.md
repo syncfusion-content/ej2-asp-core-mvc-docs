@@ -24,52 +24,20 @@ Essential JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been 
 
 ## Control List
 
-<style>
-#table
-{
-border:0!important;
-line-height: 2!important;
-}
-
-tr
-{
-border:0 !important;
-}
-
-td
-{
-border:0!important;
-vertical-align: top;
-}
-
-.control-anchor-link
-{
-text-decoration: none!important;
-font-size: 14px!important;
-text-align: left!important;
-}
-.control-category
-{
-font-size: 14px!important;
-text-align: left!important;
-font-weight: bold!important;
-border:0 !important;
-}
-
 </style>
 
 <table id="table">
 <tbody>
 <colgroup>
 <col style="width: 220px">
-<col style="width: 260px">
+<col style="width: 220px">
 <col style="width: 220px">
 <col style="width: 220px">
 </colgroup>
 </tbody>
 <tr>
     <td>
-        <div><p class="control-category">GRIDS</p></div>
+        <div><p class="control-category-topics">GRIDS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core">DataGrid</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started">Pivot Table</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core">TreeGrid</a></div>
@@ -94,7 +62,7 @@ border:0 !important;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started-asp-core">Avatar</a></div>
     </td>
     <td>
-        <div><p class="control-category">DATA VISUALIZATION</p></div>
+        <div><p class="control-category-topics">DATA VISUALIZATION</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started">Charts</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/getting-started">Stock Chart</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started">Circular Gauge</a></div>
@@ -119,7 +87,7 @@ border:0 !important;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/speeddial/getting-started">Speed Dial</a></div>
     </td>
     <td>
-        <div><p class="control-category">CALENDARS</p></div>
+        <div><p class="control-category-topics">CALENDARS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/schedule/getting-started">Scheduler</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/gantt/getting-started">Gantt Chart</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/calendar/getting-started">Calendar</a></div>
@@ -143,7 +111,7 @@ border:0 !important;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/getting-started">Query Builder</a></div>
     </td>
     <td>
-        <div><p class="control-category">DROPDOWNS</p></div>
+        <div><p class="control-category-topics">DROPDOWNS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/getting-started">AutoComplete</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/list-box/getting-started-core">ListBox</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/combo-box/getting-started">ComboBox</a></div>
