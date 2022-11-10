@@ -20,7 +20,7 @@ The action items in ASP.NET Core Speed Dial can be added by using [items](https:
 | [Id](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_Id) | `string` | Defines a unique value for the SpeedDialItem which can be used to identify the item in event args. |
 | [Title](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_Title) | `string` | Defines the title of SpeedDialItem to display tooltip. |
 
-## Icons in Speed Dial items
+## Icons in speeddial items
 
 You can customize the icon and text of Speed Dial action items using [IconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_IconCss) and [Text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_Text) properties.
 

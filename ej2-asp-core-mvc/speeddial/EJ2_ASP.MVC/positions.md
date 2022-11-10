@@ -34,7 +34,7 @@ The position values of Speed Dial are as follows:
 
 ![ASP.NET MVC Speed Dial Position](./images/SpeedDial-Position.png)
 
-## OpensOnHover
+## Opens on hover
 
 You can open the Speed Dial action items on mouse hover by setting the [OpensOnHover](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_OpensOnHover) property as true.
 
