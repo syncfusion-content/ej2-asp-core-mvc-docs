@@ -151,4 +151,4 @@ This section explains how to set [`onLabel`](https://help.syncfusion.com/cr/aspn
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 
-N> You can refer to our [ASP.NET Core Toggle Switch Button](https://www.syncfusion.com/aspnet-core-ui-controls/toggle-switch-button) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Toggle Switch Button example](https://ej2.syncfusion.com/aspnetcore/Button/Switch#/material)
+N> You can refer to our [ASP.NET Core Toggle Switch Button](https://www.syncfusion.com/aspnet-core-ui-controls/toggle-switch-button) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Toggle Switch Button example](https://ej2.syncfusion.com/aspnetcore/Button/Switch#/material) that shows you how to render the Switch in ASP.NET Core.
