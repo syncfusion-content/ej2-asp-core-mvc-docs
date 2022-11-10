@@ -63,8 +63,7 @@ The **valueAccessor** is used to access/manipulate the value of display data. Yo
 
 ## Format
 
-To format cell values based on specific culture, use the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property of **e-grid-column** tag helper . The grid uses **Internalization** library to format **number** and **date**.
-values.
+To format cell values based on specific culture, use the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property of **e-grid-column** tag helper . The grid uses **Internalization** library to format **number** and **date** values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

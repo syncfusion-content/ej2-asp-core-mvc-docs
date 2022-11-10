@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization And Localization in ##Platform_Name## Pivot Table Component
+title: Globalization And Localization in ##Platform_Name## Pivot Table Control | Syncfusion
 description: Learn here all about Globalization And Localization in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Globalization And Localization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization
+# Globalization in Pivot Table Control
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/intl.html)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/localization.html)).
 
@@ -54,8 +54,7 @@ In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` locati
 
 ```
 
-* Before changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through `load` method of
-  `L10n` class.
+* Before changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through `load` method of `L10n` class.
 
 ```sh
       var L10n = ej.base.L10n;

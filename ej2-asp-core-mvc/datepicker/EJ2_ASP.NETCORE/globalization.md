@@ -29,6 +29,7 @@ Once the package is installed, you can find the culture specific JSON data under
 
 In ASP.NET Core, the static file contents should be present under `wwwroot` folder. For this, manually copy the `CLDR-Data` from the `node_modules` folder and place inside the `wwwroot` folder and refer from the `/wwwroot/scripts/cldr-data` location.
 
+```typescript
 function loadCultureFiles(name) {
         var files = ['ca-gregorian.json', 'numbers.json', 'timeZoneNames.json'];
         var loader = ej.base.loadCldr;

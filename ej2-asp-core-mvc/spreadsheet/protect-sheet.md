@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Protect Sheet in ##Platform_Name## Spreadsheet Component
+title: Protect Sheet in ##Platform_Name## Spreadsheet Control | Syncfusion
 description: Learn here all about Protect Sheet in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Protect Sheet
@@ -9,19 +9,17 @@ documentation: ug
 ---
 
 
-# Protection
+# Protection in Spreadsheet Control
 
 Sheet protection helps you to prevent the users from modifying the data in the spreadsheet.
 
 ## Protect Sheet
 
-Protect sheet feature helps you to prevent the unknown users from accidentally changing, editing, moving, or deleting data in a spreadsheet. And you can also protect the sheet with password.
-You can use the [`isProtected`](../api/spreadsheet/#isProtected) property to enable or disable the Protecting functionality.
+Protect sheet feature helps you to prevent the unknown users from accidentally changing, editing, moving, or deleting data in a spreadsheet. And you can also protect the sheet with password. You can use the [`isProtected`](../api/spreadsheet/#isProtected) property to enable or disable the Protecting functionality.
 
-> * The default value for `isProtected` property is `false`.
+> The default value for `isProtected` property is `false`.
 
-By default in protected sheet, selecting, formatting, inserting, deleting functionalities are disabled. To enable some of the above said functionalities
-the `protectSettings` options are used in a protected spreadsheet.
+By default in protected sheet, selecting, formatting, inserting, deleting functionalities are disabled. To enable some of the above said functionalities the `protectSettings` options are used in a protected spreadsheet.
 
 The available `protectSettings` options in spreadsheet are,
 
@@ -120,7 +118,9 @@ In protected spreadsheet, to make some particular cell or range of cells are edi
 ## Protect Workbook
 
 Protect workbook feature helps you to protect the workbook so that users cannot insert, delete, rename, hide the sheets in the spreadsheet.
+
 You can use the [`password`](../api/spreadsheet/#password) property to protect workbook with password.
+
 You can use the [`isProtected`](../api/spreadsheet/#isProtected) property to protect or unprotect the workbook without the password.
 
 > The default value for `isProtected` property is `false`.
