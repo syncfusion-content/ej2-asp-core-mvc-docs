@@ -1,18 +1,20 @@
 ---
 layout: post
-title: Accessibility with ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn about accessibility with ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Accessibility in ##Platform_Name## SpeedDial Control | Syncfusion
+description: Checkout and learn here all about accessibility and keyboard in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ASP.NET Core SpeedDial
+# Accessibility in ASP.NET Core SpeedDial Control
+
+Accessibility is achieved in the Speed Dial control through WAI-ARIA standard and keyboard navigations. The Speed Dial control can be effectively accessed through assistive technologies such as screen readers.
 
 ## Keyboard interaction
 
-The following key shortcuts are used to access the Speed Dial Control without any interruption.
+The Speed Dial control is interactive with below keyboard shortcuts. 
 
 | Keyboard shortcuts | Actions |
 |------------|-------------------|

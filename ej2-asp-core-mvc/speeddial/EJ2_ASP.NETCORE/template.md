@@ -1,22 +1,20 @@
 ---
 layout: post
-title: Template with ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn about template with ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Template in ##Platform_Name## SpeedDial Control | Syncfusion
+description: Checkout and learn here all about templates and how to use them in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template in ASP.NET Core SpeedDial
+# Template in ASP.NET Core SpeedDial Control
 
-This section has a detailed explanation on the available templates in Speed Dial Control.
+This section explains available templates in Speed Dial Control and its usage.
 
-## Item Template
+## Item template
 
-You can use the [`itemTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Buttons.SfSpeedDial.html#Syncfusion_Blazor_Buttons_SfSpeedDial_ItemTemplate) property which defines the template value that can be used to customize each item in the SpeedDial.
-
-{% if page.publishingplatform == "aspnet-core" %}
+You can use the [itemTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_ItemTemplate) property to set a template content for the `SpeedDialItem`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -24,13 +22,11 @@ You can use the [`itemTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
+![ASP.NET Core SpeedDial with ItemTemplate](images/SpeedDial-ItemTemplate.png)
 
-## Popup Template
+## Popup template
 
-You can use the [`popupTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Buttons.SfSpeedDial.html#Syncfusion_Blazor_Buttons_SfSpeedDial_PopupTemplate) property which defines the template value that can be displayed in the popup when the Speed Dial is clicked.
-
-{% if page.publishingplatform == "aspnet-core" %}
+You can use the [popupTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_PopupTemplate) property to set a template content for popup of  SpeedDial control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -38,4 +34,4 @@ You can use the [`popupTemplate`](https://help.syncfusion.com/cr/blazor/Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
+![ASP.NET Core SpeedDial with PopupTemplate](images/SpeedDial-PopupTemplate.png)

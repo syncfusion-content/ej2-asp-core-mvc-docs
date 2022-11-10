@@ -142,7 +142,7 @@ The speed dial can be positioned using the [`position`](https://help.syncfusion.
 
 ![ASP.NET MVC SpeedDial Control](images/speeddial-position-sample.png)
 
-## Display Modes
+## Linear and radial display modes
 
 You can use the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property to either display the menu in linear order like a list or like a radial menu in radial (circular) direction.
 
@@ -170,9 +170,9 @@ You can use the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 
 ![ASP.NET MVC SpeedDial Control](images/speeddial-mode-radial-sample.png)
 
-## Action Item click
+## Clicked event
 
-The speed dial control triggers the [`clicked`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Clicked) event when an action item is clicked.
+The speed dial control triggers the [`Clicked`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Clicked) event when an action item is clicked.
 You can use this event to perform the required action.
 
 {% if page.publishingplatform == "aspnet-core" %}

@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Modal with ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn about modal with ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Modal in ##Platform_Name## SpeedDial Control | Syncfusion
+description: Checkout and learn about how to use modal in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Modal
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Modal in ASP.NET Core SpeedDial
+# Modal in ASP.NET Core SpeedDial Control
 
-You can use the [`modal`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Buttons.SfSpeedDial.html#Syncfusion_Blazor_Buttons_SfSpeedDial_IsModal) property to set the Speed Dial as modal which adds an overlay to prevent the background interaction.
-
-{% if page.publishingplatform == "aspnet-core" %}
+You can use the [modal](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Modal) property to set the Speed Dial as modal which adds an overlay to prevent the background interaction.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -20,6 +18,4 @@ You can use the [`modal`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazo
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
-![ASP.NET Core SpeedDial with modal](images/speeddial-mode-linear-sample.png)
+![ASP.NET Core SpeedDial with Modal](images/SpeedDial-ModalProperty.png)

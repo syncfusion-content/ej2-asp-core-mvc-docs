@@ -28,15 +28,11 @@ The `Linear` directions of Speed Dial are as follows:
 * Down - Action items are displayed on the bottom of the button.
 * Auto - Action items display direction auto calculated based on `Position` of the Speed Dial. If Speed Dial is position at bottom right, then action items displayed at top.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/speeddial/mode/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 ![ASP.NET Core Speed Dial Linear Mode](images/SpeedDial-LinearMode.png)
 

@@ -23,8 +23,6 @@ The position values of Speed Dial are as follows:
 * BottomCenter
 * BottomRight
 
-{% if page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/speeddial/positions/bottom-left-position/razor %}
@@ -34,15 +32,11 @@ The position values of Speed Dial are as follows:
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ![ASP.NET MVC Speed Dial Position](./images/SpeedDial-Position.png)
 
 ## OpensOnHover
 
 You can open the Speed Dial action items on mouse hover by setting the [OpensOnHover](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_OpensOnHover) property as true.
-
-{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -53,16 +47,12 @@ You can open the Speed Dial action items on mouse hover by setting the [OpensOnH
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ![Asp.Net MVC Speed Dial OpensOnHover](images/SpeedDial-Icon.png)
 
 ## Programmatically show/hide
 
 You can open/close the Speed Dial action items programmatially using `show` and 
 `hide` methods.
-
-{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -73,16 +63,12 @@ You can open/close the Speed Dial action items programmatially using `show` and
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ![Asp.Net MVC Speed Dial Show Items](images/SpeedDial-ShowItem.png)
 ![Asp.Net MVC Speed Dial Hide Items](images/SpeedDial-HideItem.png)
 
 ## Programmatically refresh the position
 
 You can refresh the position of the Speed Dial using `refreshPosition` method when the `Target`position is changed.
-
-{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -92,5 +78,3 @@ You can refresh the position of the Speed Dial using `refreshPosition` method wh
 {% include code-snippet/speeddial/positions/refresh/refresh.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}

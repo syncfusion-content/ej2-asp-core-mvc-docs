@@ -23,31 +23,23 @@ The position values of Speed Dial are as follows:
 * BottomCenter
 * BottomRight
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/speeddial/positions/bottom-left-position/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ![ASP.NET Core Speed Dial Position](./images/SpeedDial-Position.png)
 
-## OpensOnHover
+## Opens on hover
 
 You can open the Speed Dial action items on mouse hover by setting the [opensOnHover](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_OpensOnHover) property as true.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/speeddial/positions/opens-on-hover/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 ![Asp.Net Core Speed Dial OpensOnHover](images/SpeedDial-Icon.png)
 
@@ -58,15 +50,11 @@ You can open/close the Speed Dial action items programmatially using `show` and
 
 Below example demonstrates open/close action items on button click.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/speeddial/positions/show-hide/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 ![Asp.Net Core Speed Dial Show Items](images/SpeedDial-ShowItem.png)
 ![Asp.Net Core Speed Dial Hide Items](images/SpeedDial-HideItem.png)
@@ -75,12 +63,8 @@ Below example demonstrates open/close action items on button click.
 
 You can refresh the position of the Speed Dial using `refreshPosition` method when the `target`position is changed.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/speeddial/positions/refresh/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
