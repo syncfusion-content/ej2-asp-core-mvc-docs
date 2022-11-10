@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Mention Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Syncfusion ASP.NET Core Mention Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET Core Mention control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: aspnet-core
 documentation: ug
 ---
 
@@ -101,7 +101,7 @@ Now, add the Syncfusion ASP.NET Core Mention tag helper in `~/Pages/Index.cshtml
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Mention control will be rendered in the default web browser.
 
-![ASP.NET Core Mention Control](../images/asp-core-mvc-mention-mention-control.png)
+![ASP.NET Core Mention Control](./images/mention-control.png)
 
 ## Binding data source
 
@@ -126,7 +126,6 @@ The following example, displays the text content along with the mention characte
 {% include code-snippet/mention/getting-started/showmentionchar/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
 
 ## See also
 

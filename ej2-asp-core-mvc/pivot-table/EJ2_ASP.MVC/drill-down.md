@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drill Down in ##Platform_Name## Pivot Table Component
+title: Drill Down in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Drill Down in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drill Down
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Drill Down
+# Drill Down in ##Platform_Name## Pivot Table Control
 
 ## Drill down and drill up
 
