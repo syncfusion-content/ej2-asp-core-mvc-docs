@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working Days in ##Platform_Name## Schedule Component
+title: Working Days in ##Platform_Name## Schedule Control | Syncfusion
 description: Learn here all about Working Days in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Working Days
@@ -154,7 +154,7 @@ For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/ap
 
 
 
- **Note**: Enable the `showWeekNumber` property to configure the `weekRule` property. Also, the weekRule property depends on the value of the `firstDayOfWeek` property.
+> Enable the `showWeekNumber` property to configure the `weekRule` property. Also, the weekRule property depends on the value of the `firstDayOfWeek` property.
 
 ## Set working hours
 

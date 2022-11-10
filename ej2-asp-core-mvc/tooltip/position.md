@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Position in ##Platform_Name## Tooltip Component
+title: Position in ##Platform_Name## Tooltip Control | Syncfusion
 description: Learn here all about Position in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Position
@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# Tooltip Positioning
+# Tooltip Positioning in Tooltip Control
 
-Tooltips can be attached to 12 static locations around the target.
-On initializing the Tooltip, you can set the position property with any one of the following values:
+Tooltips can be attached to 12 static locations around the target. On initializing the Tooltip, you can set the position property with any one of the following values:
 
 * `TopLeft`
 * `TopCenter`
@@ -60,8 +59,7 @@ Output be like the below.
 
 ## Tip pointer positioning
 
-The Tooltip pointer can be attached or detached from the Tooltip by using the `showTipPointer` property.
-Pointer positions can be adjusted using the `tipPointerPosition` property that can be assigned to one of the following values:
+The Tooltip pointer can be attached or detached from the Tooltip by using the `showTipPointer` property. Pointer positions can be adjusted using the `tipPointerPosition` property that can be assigned to one of the following values:
 
 * `auto`
 * `start`
@@ -130,8 +128,7 @@ The Tooltip and its tip pointer can be positioned dynamically based on the targe
 
 
 
-> When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and
-> other position values like start, end, and middle are not applied (to prevent the pointer from moving out of target).
+> When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and other position values like start, end, and middle are not applied (to prevent the pointer from moving out of target).
 
 Output be like the below.
 

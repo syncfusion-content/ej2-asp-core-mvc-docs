@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tool Bar in ##Platform_Name## Pivot Table Component
+title: Tool Bar in ##Platform_Name## Pivot Table Control | Syncfusion
 description: Learn here all about Tool Bar in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tool Bar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Toolbar
+# Toolbar in ##Platform_Name## Syncfusion Pivot Table Control
 
 Toolbar option allows to access the frequently used features like switching between pivot table and pivot chart, changing chart types, conditional formatting, exporting, etc... with ease at runtime. This option can be enabled by setting the [`showToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**. The [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag accepts the collection of built-in toolbar options.
 
@@ -152,6 +152,7 @@ In the above topic, we have seen how to add an icon as one of the toolbar item i
 ### Toolbar Template
 
 It allows to customize the toolbar panel by using template option. It allows any custom control to be used as one of the toolbar item inside the toolbar panel. It can be achieved by two ways.
+
 Here, the entire toolbar panel can be framed in HTML elements that are appended at the top of the pivot table. The **id** of the HTML element needs to be set in the [`toolbarTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarTemplate) property in-order to map it to the pivot table.
 
 {% if page.publishingplatform == "aspnet-core" %}

@@ -14,7 +14,7 @@
            var exportProperties = {
                 theme: {
                     header: {
-                        fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true, borders: { color: '#64FA50', lineStyle: 'Thin' }
+                        fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true, border: { color: '#64FA50', lineStyle: 'Thin' }
                     },
                     record: {
                         fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true
