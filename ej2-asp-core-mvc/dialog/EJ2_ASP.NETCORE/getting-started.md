@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Dialog Control
-description: Checkout and learn about getting started with ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Dialog Control
+description: Checkout and learn about getting started with ASP.NET CoreDialog control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
@@ -320,3 +320,5 @@ for Y is: top, center, bottom (or) any offset value.
 * [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
 
 You can refer to our [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dialog example](https://ej2.syncfusion.com/aspnetcore/Dialog/DefaultFunctionalities#/fabric) that shows you how to render the MultiSelect Dropdown in Angular.
+
+N> You can refer to our [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dialog example](https://ej2.syncfusion.com/aspnetcore/Dialog/DefaultFunctionalities#/fabric) that shows you how to render the Dialog in ASP.NET Core.
