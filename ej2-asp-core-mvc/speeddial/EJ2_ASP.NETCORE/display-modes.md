@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Display Mode with ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn about Mode with ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Display Modes in ##Platform_Name## SpeedDial Control | Syncfusion
+description: Checkout and learn about linear and radial display modes in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Display Mode
+control: Display Modes
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Display Modes in ASP.NET Core Speed Dial
+# Display Modes in ASP.NET Core Speed Dial Control
 
-The ASP.NET Core Speed Dial, the action items can be displayed in `Linear` and `Radial` display modes by setting [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property.
+The action items in ASP.NET Core Speed Dial can be displayed in `Linear` and `Radial` display modes by setting [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property.
 
-## Linear Display Mode
+## Linear display mode
 
 In `Linear` display mode, Speed Dial action items are displayed in a list-like format either horizontally or vertically. By default, Speed Dial items are displayed in `Linear` mode.
 
@@ -38,9 +38,9 @@ The `Linear` directions of Speed Dial are as follows:
 
 {% endif %}
 
-![ASP.NET Core Speed Dial Linear Mode](images/SDLinear.png)
+![ASP.NET Core Speed Dial Linear Mode](images/SpeedDial-LinearMode.png)
 
-## Radial Display Mode (Radial Menu)
+## Radial display mode (Radial Menu)
 
 In `Radial` mode, Speed Dial action items are displayed in a circular pattern like a radial menu. For more details about radial mode, check out the link [here](https://ej2.syncfusion.com/aspnetcore/documentation/speeddial/radial-menu).
 

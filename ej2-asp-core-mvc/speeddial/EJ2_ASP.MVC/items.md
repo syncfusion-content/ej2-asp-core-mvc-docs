@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Items with ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn about Items with ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Items in ##Platform_Name## SpeedDial Control | Syncfusion
+description: Checkout and learn about action items and its customization in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Items
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Items in ASP.NET MVC Speed Dial
+# Items in ASP.NET MVC Speed Dial Control
 
-The ASP.NET MVC Speed Dial action items can be added by using [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Items) property.
+The action items in ASP.NET MVC Speed Dial can be added by using [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Items) property.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -41,7 +41,7 @@ You can show icon only in SpeedDial items by setting [IconCss](https://help.sync
 
 {% endif %}
 
-![ASP.NET MVC Speed Dial with Icon only](images/SDIcon.png)
+![ASP.NET MVC Speed Dial with Icon](images/SpeedDial-Icon.png)
 
 ### Text Only
 
@@ -60,7 +60,7 @@ You can show only text in Speed Dial items by setting [Text](https://help.syncfu
 
 {% endif %}
 
-![ASP.NET MVC Speed Dial with Text only](images/SDText.png)
+![ASP.NET MVC Speed Dial with Text](images/SpeedDial-Text.png)
 
 ### Icon with Text
 
@@ -79,7 +79,7 @@ You can show icon along with text in Speed Dial items by setting [IconCss](https
 
 {% endif %}
 
-![ASP.NET MVC Speed Dial with Icon and Text](images/SDItemwithtext.png)
+![ASP.NET MVC Speed Dial with Icon and Text](images/SpeedDial-Itemwithtext.png)
 
 ### Disabled
 
@@ -98,7 +98,7 @@ You can disable Speed Dial items by setting [Disabled](https://help.syncfusion.c
 
 {% endif %}
 
-![ASP.NET MVC Speed Dial with Disabled](./images/SDDisabled.png)
+![ASP.NET MVC Speed Dial with Disabled](./images/SpeedDial-DisabledItem.png)
 
 ## Animation
 
@@ -119,7 +119,7 @@ Below example demonstrates the Speed Dial items with applied Zoom effect.
 
 {% endif %}
 
-![ASP.NET MVC Speed Dial Animation](images/SDAnimation.png)
+![ASP.NET MVC Speed Dial Animation](images/SpeedDial-Animation.png)
 
 ## Template
 
