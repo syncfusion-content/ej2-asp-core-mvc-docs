@@ -10,9 +10,9 @@ documentation: ug
 
 # Template in Message control
 
-The message supports templates that allow you to customize the content with a custom structure. The content can be a string, paragraph, or any other HTML element. The template can be rendered through the `Content` property or added directly to the HTML element.
+The message supports templates that allow you to customize the content with a custom structure. The content can be a string, paragraph, or any other HTML element. The template can be rendered through the `Content` property or to the `ContentTemplate` property.
 
-In the following sample, the Message control content is customized with HTML elements and Syncfusion Button controls, which are directly added to the `Content` property.
+In the following sample, the Message control content is customized with HTML elements and Syncfusion Button controls, which are directly added to the `ContentTemplate` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
