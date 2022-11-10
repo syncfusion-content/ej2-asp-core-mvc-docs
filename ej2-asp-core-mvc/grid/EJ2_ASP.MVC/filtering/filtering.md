@@ -93,6 +93,7 @@ The available operators and its supported data types are:
 |greaterthanorequal|Checks whether a value is greater than or equal to the specified value. |Number &#124; Date|
 |lessthan |Checks whether the value is less than the specified value. |Number &#124; Date|
 |lessthanorequal |Checks whether the value is less than or equal to the specified value. |Number &#124; Date|
+between|Filter the values based on the range between the start and end specified values. |Number &#124; Date|
 
 > By default, the [`Operators`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Operators) value is **equal**.
 
