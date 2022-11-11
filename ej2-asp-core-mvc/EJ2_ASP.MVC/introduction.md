@@ -25,8 +25,8 @@ The Syncfusion ASP.NET MVC UI (Essential JS 2) is a modern enterprise UI toolkit
 <style>
 #table
 {
-border:0!important;
-line-height: 2!important;
+border:0 !important;
+line-height: 160% !important;
 }
 
 tr
@@ -36,38 +36,47 @@ border:0 !important;
 
 td
 {
-border:0!important;
+border:0 !important;
 vertical-align: top;
 }
 
 .controlanchorlink
 {
+font-size: 14px !important;
 text-decoration: none!important;
-font-size: 14px!important;
 text-align: left!important;
+padding: 2px 0px;
+}
+.controlcategory-topics
+{
+font-size: 14px !important;
+font-weight: bold!important;
+border:0 !important;
+line-height: 20px;
 }
 .controlcategory
 {
-font-size: 14px!important;
-text-align: left!important;
+font-size: 14px !important;
 font-weight: bold!important;
 border:0 !important;
+text-align: left!important;
+line-height: 20px;
+padding-top: 50px;
 }
 
 </style>
-
 <table id="table">
 <tbody>
 <colgroup>
 <col style="width: 220px">
-<col style="width: 260px">
+<col style="width: 220px">
 <col style="width: 220px">
 <col style="width: 220px">
 </colgroup>
 </tbody>
 <tr>
     <td>
-        <div><p class="controlcategory">GRIDS</p></div>
+        <div><p class="controlcategory-topics">GRIDS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc">DataGrid</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/getting-started">Pivot Table</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc">TreeGrid</a></div>
@@ -92,7 +101,7 @@ border:0 !important;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/avatar/getting-started-asp-mvc">Avatar</a></div>
     </td>
     <td>
-        <div><p class="controlcategory">DATA VISUALIZATION</p></div>
+        <div><p class="controlcategory-topics">DATA VISUALIZATION</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/chart/getting-started">Charts</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/stock-chart/getting-started">Stock Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/circular-gauge/getting-started">Circular Gauge</a></div>
@@ -117,7 +126,7 @@ border:0 !important;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/speeddial/getting-started">Speed Dial</a></div>
     </td>
     <td>
-        <div><p class="controlcategory">CALENDARS</p></div>
+        <div><p class="controlcategory-topics">CALENDARS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/getting-started">Scheduler</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/getting-started">Gantt Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/calendar/getting-started">Calendar</a></div>
@@ -141,7 +150,7 @@ border:0 !important;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/query-builder/getting-started">Query Builder</a></div>
     </td>
     <td>
-        <div><p class="controlcategory">DROPDOWNS</p></div>
+        <div><p class="controlcategory-topics">DROPDOWNS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/auto-complete/getting-started">AutoComplete</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/list-box/getting-started-mvc">ListBox</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/combo-box/getting-started">ComboBox</a></div>
