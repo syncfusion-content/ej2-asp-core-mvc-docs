@@ -47,7 +47,7 @@ vertical-align: top;
 font-size: 14px !important;
 text-decoration: none!important;
 text-align: left!important;
-padding: 5px 0px;
+padding: 2px 0px;
 }
 .control-category-topics
 {
