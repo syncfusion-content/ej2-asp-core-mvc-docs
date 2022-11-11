@@ -20,15 +20,13 @@ The action items in ASP.NET MVC Speed Dial can be added by using [Items](https:/
 | [Id](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_Id) | `string` | Defines a unique value for the SpeedDialItem which can be used to identify the item in event args. |
 | [Title](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_Title) | `string` | Defines the title of SpeedDialItem to display tooltip. |
 
-## Icons in Speed Dial items
+## Icons in speeddial items
 
 You can customize the icon and text of Speed Dial action items using [IconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_IconCss) and [Text](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_Text) properties.
 
 ### Icon only
 
 You can show icon only in SpeedDial items by setting [IconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_IconCss) property. You can show tooltip on hover to show additional details to end-user by setting [Title](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_Title) property.
-
-{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -39,15 +37,11 @@ You can show icon only in SpeedDial items by setting [IconCss](https://help.sync
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ![ASP.NET MVC Speed Dial with Icon](images/SpeedDial-Icon.png)
 
 ### Text Only
 
 You can show only text in Speed Dial items by setting [Text](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_Text) property.
-
-{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -58,15 +52,11 @@ You can show only text in Speed Dial items by setting [Text](https://help.syncfu
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ![ASP.NET MVC Speed Dial with Text](images/SpeedDial-Text.png)
 
 ### Icon with Text
 
 You can show icon along with text in Speed Dial items by setting [IconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_IconCss) and [Text](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_Text) properties.
-
-{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -77,15 +67,11 @@ You can show icon along with text in Speed Dial items by setting [IconCss](https
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ![ASP.NET MVC Speed Dial with Icon and Text](images/SpeedDial-Itemwithtext.png)
 
 ### Disabled
 
 You can disable Speed Dial items by setting [Disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialItem.html#Syncfusion_EJ2_Buttons_SpeedDialItem_Disabled) property as `true`.
-
-{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -96,8 +82,6 @@ You can disable Speed Dial items by setting [Disabled](https://help.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ![ASP.NET MVC Speed Dial with Disabled](./images/SpeedDial-DisabledItem.png)
 
 ## Animation
@@ -105,8 +89,6 @@ You can disable Speed Dial items by setting [Disabled](https://help.syncfusion.c
 The Speed Dial items can be animated during the opening and closing of the popup action items. You can customize the animation's `Effect`, `Delay`, and `Duration` by setting [Animation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Animation) property. By default, Speed Dial animates with a `Fade` effect and supports all [SpeedDialAnimationEffect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialAnimationEffect.html) effects.
 
 Below example demonstrates the Speed Dial items with applied Zoom effect.
-
-{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -116,8 +98,6 @@ Below example demonstrates the Speed Dial items with applied Zoom effect.
 {% include code-snippet/speeddial/items/animation/animation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 ![ASP.NET MVC Speed Dial Animation](images/SpeedDial-Animation.png)
 

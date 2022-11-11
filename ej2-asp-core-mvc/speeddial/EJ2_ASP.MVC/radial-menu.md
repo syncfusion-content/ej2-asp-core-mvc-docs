@@ -16,8 +16,6 @@ The action items in ASP.NET MVC Speed Dial can be displayed in a circular patter
 
 You can open the action items in either clockwise or anticlockwise by setting [Direction](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html#Syncfusion_EJ2_Buttons_SpeedDialRadialSettings_Direction) property. The default value is `Auto` where the action items are displayed based on the `Position` property of the Speed Dial.
 
-{% if page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/speeddial/radial-menu/direction/razor %}
@@ -27,15 +25,11 @@ You can open the action items in either clockwise or anticlockwise by setting [D
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ![ASP.NET MVC Speed Dial Radial Mode](images/SpeedDial-RadialMenu.png)
 
 ## Start and end angle
 
 You can modify the start and end angle of action items by setting [StartAngle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html#Syncfusion_EJ2_Buttons_SpeedDialRadialSettings_StartAngle) and [EndAngle](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html#Syncfusion_EJ2_Buttons_SpeedDialRadialSettings_EndAngle) properties. If the angle is not defined, the action items are displayed based on the `Position` property of the Speed Dial.
-
-{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -46,15 +40,11 @@ You can modify the start and end angle of action items by setting [StartAngle](h
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ![ASP.NET MVC Speed Dial Angles](images/SpeedDial-Angle.png)
 
 ## Offset
 
 You can modify the offset distance between action items and Speed Dial button using [Offset](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html#Syncfusion_EJ2_Buttons_SpeedDialRadialSettings_Offset) property.
-
-{% if page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -64,7 +54,5 @@ You can modify the offset distance between action items and Speed Dial button us
 {% include code-snippet/speeddial/radial-menu/offset/offset.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 ![ASP.NET MVC Speed Dial Offset](images/SpeedDial-Offset.png)
