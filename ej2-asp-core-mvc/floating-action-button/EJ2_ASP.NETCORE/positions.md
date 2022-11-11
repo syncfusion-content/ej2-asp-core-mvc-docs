@@ -52,7 +52,7 @@ Below example demonstrates different supported positions of FAB.
 
 ![Asp.Net Core Floating Action Button Positions](images/FabPositions.png)
 
-## Custom Position
+## Custom position
 
 You can define the custom position of the Floating Action Button by override the `top`, `left`, `right`, and `bottom` CSS properities using [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_CssClass).
 

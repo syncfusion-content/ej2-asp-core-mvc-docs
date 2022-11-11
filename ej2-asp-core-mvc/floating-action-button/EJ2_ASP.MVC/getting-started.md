@@ -41,7 +41,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 </namespaces>
 ```
 
-## Add Style Sheet
+## Add style sheet
 
 Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion ASP.NET MVC controls. Here, the theme is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
@@ -57,7 +57,7 @@ Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/a
 {% endhighlight %}
 {% endtabs %}
 
-## Add Script Reference
+## Add script reference
 
 In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
@@ -73,7 +73,7 @@ In this getting started walk-through, the required scripts are referred using CD
 {% endhighlight %}
 {% endtabs %}
 
-## Register Syncfusion Script Manager
+## Register Syncfusion script manager
 
 Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS().ScriptManager()` at the end of `<body>` in the ASP.NET MVC application as follows. 
 
