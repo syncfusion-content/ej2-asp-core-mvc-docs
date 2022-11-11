@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ASP.NET Core Mention Control | Syncfusion
+title: Getting Started with ASP.NET Core Mention Control | Syncfusion
 description: Checkout and learn about getting started with ASP.NET Core Mention control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -91,7 +91,6 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 ## Add ASP.NET Core Mention Control
 
 Now, add the Syncfusion ASP.NET Core Mention tag helper in `~/Pages/Index.cshtml` page.
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -101,7 +100,7 @@ Now, add the Syncfusion ASP.NET Core Mention tag helper in `~/Pages/Index.cshtml
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Mention control will be rendered in the default web browser.
 
-![ASP.NET Core Mention Control](./images/mention-control.png)
+![ASP.NET Core Mention control](./images/mention-control.png)
 
 ## Binding data source
 
