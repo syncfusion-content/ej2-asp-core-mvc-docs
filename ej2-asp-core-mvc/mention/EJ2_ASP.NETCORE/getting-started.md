@@ -91,7 +91,6 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 ## Add ASP.NET Core Mention Control
 
 Now, add the Syncfusion ASP.NET Core Mention tag helper in `~/Pages/Index.cshtml` page.
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
