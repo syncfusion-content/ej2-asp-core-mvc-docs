@@ -100,7 +100,7 @@ Now, add the Syncfusion ASP.NET MVC Mention control in `~/Home/Index.cshtml` pag
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Mention control will be rendered in the default web browser.
 
-![ASP.NET MVC Mention Control](./images/mention-mention-control.png)
+![ASP.NET MVC Mention Control](./images/mention-control.png)
 
 ## Binding data source
 
