@@ -18,25 +18,11 @@ Normally, the message content is aligned to the **left**. The Message control al
 
 The following example demonstrates the message with different content alignments.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/message/content-alignment/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/message/content-alignment/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/message/content-alignment/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![ASP.NET MVC Message Content Alignment](images/message-content-alignment.png)
 
@@ -46,25 +32,11 @@ To customize the Message control's appearance, add the custom class to the messa
 
 The following example shows the rounded and squared appearance of the message, which can be achieved by adding the `CssClass` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/message/custom-appearance/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/message/custom-appearance/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/message/custom-appearance/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Message Custom Appearance](images/message-rounded-square.png)
 
@@ -114,24 +86,10 @@ The following is the available list of predefined CSS classes to make the appear
 
 The following example shows the message which renders without any script reference.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/message/css-message/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/message/css-message/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/message/css-message/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Message Control](images/message-default.png)
