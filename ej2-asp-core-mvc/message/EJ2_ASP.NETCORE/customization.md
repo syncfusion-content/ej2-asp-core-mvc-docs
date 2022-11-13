@@ -18,8 +18,6 @@ Normally, the message content is aligned to the **left**. The Message control al
 
 The following example demonstrates the message with different content alignments.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/message/content-alignment/tagHelper %}
@@ -29,15 +27,6 @@ The following example demonstrates the message with different content alignments
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/message/content-alignment/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![ASP.NET MVC Message Content Alignment](images/message-content-alignment.png)
 
 ## Rounded and Square
@@ -45,8 +34,6 @@ The following example demonstrates the message with different content alignments
 To customize the Message control's appearance, add the custom class to the message through the `cssClass` property. This custom class will be added to the root element. Based on this custom class, the user can override the message styles at the application level.
 
 The following example shows the rounded and squared appearance of the message, which can be achieved by adding the `cssClass` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -56,15 +43,6 @@ The following example shows the rounded and squared appearance of the message, w
 {% include code-snippet/message/custom-appearance/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/message/custom-appearance/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Message Custom Appearance](images/message-rounded-square.png)
 
@@ -114,8 +92,6 @@ The following is the available list of predefined CSS classes to make the appear
 
 The following example shows the message which renders without any script reference.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/message/css-message/tagHelper %}
@@ -124,14 +100,5 @@ The following example shows the message which renders without any script referen
 {% include code-snippet/message/css-message/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/message/css-message/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Message Control](images/message-default.png)
