@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dialog Editing in ##Platform_Name## Grid Component
+title: Dialog Editing in ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Dialog Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dialog Editing
@@ -9,11 +9,9 @@ documentation: ug
 ---
 
 
-# Dialog Editing
+# Dialog Editing in Grid Control
 
-In dialog edit mode, when you start editing the currently selected row data will be shown on a dialog.
-You can change the cell values and save edited data to the data source.
-To enable Dialog edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property of [`e-grid-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) tag helper as **Dialog**.
+In dialog edit mode, when you start editing the currently selected row data will be shown on a dialog. You can change the cell values and save edited data to the data source. To enable Dialog edit, set the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_Mode) property of [`e-grid-editSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EditSettings) tag helper as **Dialog**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

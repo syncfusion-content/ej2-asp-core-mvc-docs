@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization in ##Platform_Name## Diagram Component
+title: Serialization in ##Platform_Name## Diagram Control | Syncfusion
 description: Learn here all about Serialization in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Serialization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Serialization
+# Serialization in Diagram Control
 
 **Serialization** is the process of saving and loading for state persistence of the diagram.
 
@@ -54,9 +54,10 @@ diagram.loadDiagram(saveData);
 
 ## Prevent Default Values
 
-The [`preventDefaults`](https://ej2.syncfusion.com/documentation/api/diagram/serializationSettingsModel) property of serializationSettings is used to simplifying the saved JSON object without adding the default properties that are presented in the diagram.
+The [`preventDefaults`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSerializationSettings.html#Syncfusion_EJ2_Diagrams_DiagramSerializationSettings_PreventDefaults) property of serializationSettings is used to simplifying the saved JSON object without adding the default properties that are presented in the diagram.
 
 ```typescript
 var diagram: Diagram = new Diagram({
  serializationSettings: { preventDefaults: true },
 });
+```
