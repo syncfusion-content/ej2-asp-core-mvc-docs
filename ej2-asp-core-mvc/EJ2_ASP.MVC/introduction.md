@@ -181,8 +181,10 @@ border:0 !important;
 
 ## See also
 
-* [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
+* Product Development
+    
+    * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
 
-   Syncfusion Project Template
+* Syncfusion Project Template
 
-* [Getting started with Syncfusion ASP.NET MVC Controls](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+    * [Getting started with Syncfusion ASP.NET MVC Controls](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
