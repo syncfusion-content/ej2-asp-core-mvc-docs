@@ -122,3 +122,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [Different Types of Badge](./types)
+
+N> You can refer to our [ASP.NET Core Badge](https://www.syncfusion.com/aspnet-core-ui-controls/badge) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Badge Example](https://ej2.syncfusion.com/aspnetcore/Grid/GridOverview#/fluent) that shows you how to render and confugure the Badge in ASP.NET Core.
