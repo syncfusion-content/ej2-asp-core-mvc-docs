@@ -307,8 +307,6 @@ for Y is: top, center, bottom (or) any offset value.
 {% endtabs %}
 {% endif %}
 
-
-
 ## See also
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
