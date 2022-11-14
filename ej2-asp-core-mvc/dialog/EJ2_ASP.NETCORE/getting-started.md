@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core Dialog Control | Syncfusion 
-description: Checkout and learn about getting started with ASP.NET CoreDialog control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about getting started with ASP.NET Core Dialog control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ASP.NET Core
+publishingplatform: ASP.NET Core Dialog
 documentation: ug
 ---
 
