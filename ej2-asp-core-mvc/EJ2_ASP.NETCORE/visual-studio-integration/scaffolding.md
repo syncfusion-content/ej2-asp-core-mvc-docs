@@ -22,7 +22,7 @@ Syncfusion provides **Visual Studio Scaffolding** for Syncfusion ASP.NET Core pl
 
 The following steps explain how to add a scaffolded item to your ASP.NET Core Web application.
 
-> Before using the Syncfusion ASP.NET Core Scaffolding, check whether the **ASP.NET Core Extensions - Syncfusion** is installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, please install the extension by following the steps from the [download and installation](download-and-installation) help topic.
+> Before using the Syncfusion ASP.NET Core Scaffolding, check whether the **ASP.NET Core Extensions - Syncfusion** is installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, install the extension by following the steps from the [download and installation](download-and-installation) help topic.
 
  1. Right-click the **Controllers** folder in the Solution Explorer, click **Add**, and then select **New Scaffolded Item…**
 

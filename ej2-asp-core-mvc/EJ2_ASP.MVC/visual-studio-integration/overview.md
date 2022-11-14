@@ -14,7 +14,7 @@ documentation: ug
 
 The Syncfusion ASP.NET MVC (Essential JS 2) Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio.
 
-> Syncfusion Extension is published in the Visual Studio Marketplace. We provided Separate ASP.NET Core (Essential JS 2) Extension support for Visual Studio 2022 and Visual Studio 2019 or lower. Please refer below Visual Marketplace link.
+> Syncfusion Extension is published in the Visual Studio Marketplace. We provided Separate ASP.NET Core (Essential JS 2) Extension support for Visual Studio 2022 and Visual Studio 2019 or lower. Refer below Visual Marketplace link.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETMVCVSExtensions)
 

@@ -73,7 +73,7 @@ You can make use of the CSS customization to prevent the display of all-day row 
     }
 ```
 
-> You can also enable scroller for all-day row, please [refer](./how-to/enable-scroll-option-on-all-day-section/) here to know more.
+> You can also enable scroller for all-day row, [refer](./how-to/enable-scroll-option-on-all-day-section/) here to know more.
 
 ## Customize the rendering of the spanned events
 

@@ -17,7 +17,7 @@ Context Menu is used to improve user interaction with Spreadsheet using the popu
 
 ## Context Menu Items in Row Cell
 
-Please find the table below for default context menu items and their actions.
+Find the table below for default context menu items and their actions.
 
 | Context Menu items | Action |
 |-------|---------|
@@ -31,7 +31,7 @@ Please find the table below for default context menu items and their actions.
 
 ## Context Menu Items in Row Header / Column Header
 
-Please find the table below for default context menu items and their actions.
+Find the table below for default context menu items and their actions.
 
 | Context Menu items | Action |
 |-------|---------|
@@ -46,7 +46,7 @@ Please find the table below for default context menu items and their actions.
 
 ## Context Menu Items in Pager
 
-Please find the table below for default context menu items and their actions.
+Find the table below for default context menu items and their actions.
 
 | Context Menu items | Action |
 |-------|---------|
