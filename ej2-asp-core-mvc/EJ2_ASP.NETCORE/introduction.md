@@ -194,16 +194,18 @@ padding-top: 50px;
 
 ## See also
 
-* [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
+* Product Development
 
-   Syncfusion Project Template
+    * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
 
-* [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
+* Syncfusion Project Template
 
-   Visual Studio Code
+    * [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
 
-* [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/vscode)
+* Visual Studio Code
 
-   Visual Studio for Mac
+    * [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/vscode)
 
-* [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
+* Visual Studio for Mac
+
+    * [Getting started with Syncfusion ASP.NET Core Controls](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
