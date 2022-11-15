@@ -161,4 +161,37 @@ The following image explains the table split action.
 {% endtabs %}
 {% endif %}
 
+## Table Events
 
+By default, resizing will be enabled for tables. A resizing gripper element will be added to the table to make the resizing easier. The events will trigger when the column and row resizing occur in the RichTextEditor table.
+
+* ResizeStart
+
+* Resizing
+
+* ResizeStop
+
+The following is an example demonstrating when the event is triggered:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/table-event/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/table-event/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/table-event/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/table-event/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
