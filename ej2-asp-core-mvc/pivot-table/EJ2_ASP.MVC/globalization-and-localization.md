@@ -194,7 +194,7 @@ addToColumn | Add to Column
 addToValue | Add to Value
 addToFilter | Add to Filter
 emptyData | No records to display
-fieldExist | A field already exists in this name. Please enter a different name.
+fieldExist | A field already exists in this name. Enter a different name.
 confirmText | A calculation field already exists in this name. Do you want to replace it?
 noMatches | No matches
 format | Summaries values by
@@ -248,7 +248,7 @@ min | Min
 max | Max
 allFields | All Fields
 formula | Formula
-fieldExist | A field already exists in this name. Please enter a different name.
+fieldExist | A field already exists in this name. Enter a different name.
 confirmText | A calculation field already exists in this name. Do you want to replace it?
 noMatches | No matches
 format | Summaries values by

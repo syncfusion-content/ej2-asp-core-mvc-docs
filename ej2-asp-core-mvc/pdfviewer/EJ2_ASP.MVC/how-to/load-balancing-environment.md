@@ -143,7 +143,7 @@ public void DeleteCache(string key)
         return (JsonConvert.SerializeObject(jsonResult));
     }
 
-{{'**Note: Please add the bold lines in all the controller methods.**'| markdownify }}
+{{'**Note: Add the bold lines in all the controller methods.**'| markdownify }}
 
 ```
 

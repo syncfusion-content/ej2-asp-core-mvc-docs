@@ -89,11 +89,11 @@ Scientific | Scientific
 Text | Text
 NumberFormat | Number Format
 MobileFormulaBarPlaceHolder | Enter value or Formula
-PasteAlert | You can't paste it here because the copy area and paste area aren't in the same size. Please try pasting in a different range.
+PasteAlert | You can't paste it here because the copy area and paste area aren't in the same size. Try pasting in a different range.
 DestroyAlert | Are you sure you want to destroy the current workbook without saving and create a new workbook?
 SheetRenameInvalidAlert | Sheet name contains invalid character.
 SheetRenameEmptyAlert | Sheet name cannot be empty.
-SheetRenameAlreadyExistsAlert | Sheet name already exists. Please enter another name.
+SheetRenameAlreadyExistsAlert | Sheet name already exists. Enter another name.
 DeleteSheetAlert | Are you sure you want to delete this sheet?
 DeleteSingleLastSheetAlert | A Workbook must contain at least one visible worksheet.
 PickACategory | Pick a category
@@ -371,8 +371,8 @@ PasswordAlert | Confirmation password is not identical
 UnProtectWorkbook | Unprotect Workbook
 UnProtectPasswordAlert | The password you supplied is not correct.
 InCorrectPassword | Unable to open the file or worksheet with the given password.
-PasswordAlertMsg | Please enter the password
-ConfirmPasswordAlertMsg | Please enter the confirm password
+PasswordAlertMsg | Enter the password
+ConfirmPasswordAlertMsg | Enter the confirm password
 IsProtected | is protected
 
 ### Loading translations
