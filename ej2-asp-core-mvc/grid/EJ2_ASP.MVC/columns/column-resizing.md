@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Resizing in ##Platform_Name## Grid Component
+title: Column Resizing in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Column Resizing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Resizing
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column Resizing
+# Column Resizing in ASP.Net MVC Grid component
 
 Column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To enable column resize, set the [`AllowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowResizing) property to true.
 
@@ -86,6 +86,7 @@ In the following sample, minimum and maximum width are defined for **OrderID**, 
 {% endif %}
 
 
+> The `maxWidth` and `minWidth` properties will be considered only when the user resizes the column. When resizing the window, these properties will not be considered. This is because columns cannot be re-rendered when resizing the window.
 
 ## Resize stacked column
 
