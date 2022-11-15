@@ -46,7 +46,7 @@ To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](
 
 ## Handling the lazy load grouping at server-side
 
-You can use the `UrlAdaptor` of `DataManager` when binding the remote data. Along with the default server request, this feature will additionally send the below details to handle the lazy load grouping. In the server end, these details are bound with the `IsLazyLoad` and `OnDemandGroupInfo` parameters in the `DataManagerRequest` model. Please refer to the below table and screenshots.
+You can use the `UrlAdaptor` of `DataManager` when binding the remote data. Along with the default server request, this feature will additionally send the below details to handle the lazy load grouping. In the server end, these details are bound with the `IsLazyLoad` and `OnDemandGroupInfo` parameters in the `DataManagerRequest` model. Refer to the below table and screenshots.
 
 |Property Name |Description|
 |-----|-----|

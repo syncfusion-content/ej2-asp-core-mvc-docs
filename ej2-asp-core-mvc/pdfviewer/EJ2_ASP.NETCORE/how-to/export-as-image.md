@@ -162,4 +162,4 @@ bitmapimage[i].Save(@"currentDirectory\..\..\..\..\Images\" + "bitmapImage" + i.
 
 ```
 
->Kindly ensure the provided document path and output image saved locations in your application level.
+> Ensure the provided document path and output image saved locations in your application level.
