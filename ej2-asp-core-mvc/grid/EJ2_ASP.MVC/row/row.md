@@ -53,7 +53,7 @@ You can change the grid's alternative rows' background color by overriding the *
 }
 ```
 
-Please refer to the following example.
+Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -529,7 +529,7 @@ The pivot table supports two types of cell selection mode that can be set using 
 
 ### Changing background color of the selected cell
 
-The background-color of the selected cell can be changed using built-in CSS names. To do so, please refer to the code sample below, which shows that the selected cells are changed to a **green yellow** color.
+The background-color of the selected cell can be changed using built-in CSS names. To do so, refer to the code sample below, which shows that the selected cells are changed to a **green yellow** color.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

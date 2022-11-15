@@ -191,7 +191,7 @@ Sets the default display for an image when it is inserted in the Rich Text Edito
 
 ## Image with Link
 
-The hyperlink itself can be an image in Rich Text Editor. If the image given as hyperlink, the remove, edit and open link will be added to the quick toolbar of image as below. For further details about link, please see the [`link documentation`](./link).
+The hyperlink itself can be an image in Rich Text Editor. If the image given as hyperlink, the remove, edit and open link will be added to the quick toolbar of image as below. For further details about link, see the [`link documentation`](./link).
 
 ![Rich Text Editor image with link](./images/image-link.png)
 

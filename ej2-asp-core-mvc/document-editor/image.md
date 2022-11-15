@@ -55,7 +55,7 @@ documenteditor.selection.imageFormat.height = 800;
 
 ## Text wrapping style
 
-Text wrapping refers to how images fit with surrounding text in a document. Please [refer to this page](../document-editor/text-wrapping-style) for more information about text wrapping styles available in Word documents.
+Text wrapping refers to how images fit with surrounding text in a document. [Refer to this page](../document-editor/text-wrapping-style) for more information about text wrapping styles available in Word documents.
 
 ## Positioning the image
 

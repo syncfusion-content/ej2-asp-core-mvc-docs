@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Create Syncfusion ASP.NET MVC - EJ2 project
+title: Create Syncfusion ASP.NET MVC project
 description: Syncfusion provides Visual Studio Project Templates for ASP.NET MVC platform to create the Syncfusion ASP.NET MVC Application using Essential JS 2 components
-platform: ASP.NET MVC - EJ2
+platform: ej2-asp-core-mvc
 control: Syncfusion VS Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -18,7 +18,7 @@ Syncfusion provides the **Visual Studio Project Templates** for the Syncfusion A
 
 Use the following steps to create the **Syncfusion ASP.NET MVC (Essential JS 2) Web Application** through the **Visual Studio Project Template.**
 
-> Before use the Syncfusion ASP.NET MVC Project Template, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, please install the extension by follow the steps from the [download and installation](download-and-installation) help topic.
+> Before use the Syncfusion ASP.NET MVC Project Template, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic.
 
 1. To create the Syncfusion ASP.NET MVC (Essential JS 2) project, follow either one of the options below:
 

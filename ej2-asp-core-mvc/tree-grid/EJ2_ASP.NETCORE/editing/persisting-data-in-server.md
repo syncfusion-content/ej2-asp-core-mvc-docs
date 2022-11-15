@@ -85,7 +85,7 @@ The following code example describes the above behavior.
 
 
 
-The newly added record details are bound to the **value** parameter and **relationalKey** contains primaryKey value of an selected record helps to find out the position of newly added record. Please refer to the following screenshot.
+The newly added record details are bound to the **value** parameter and **relationalKey** contains primaryKey value of an selected record helps to find out the position of newly added record. Refer to the following screenshot.
 
 ![Insert](images/insertcore.PNG)
 
@@ -120,7 +120,7 @@ The following code example describes the previous behavior.
 
 
 
-The updated record details are bound to the **value** parameter. Please refer to the following screenshot.
+The updated record details are bound to the **value** parameter. Refer to the following screenshot.
 
 ![Update](images/updatecore.PNG)
 
@@ -155,11 +155,11 @@ The following code example describes the previous behavior.
 
 
 
-The deleted record primary key value is bound to the **key** parameter. Please refer to the following screenshot.
+The deleted record primary key value is bound to the **key** parameter. Refer to the following screenshot.
 
 ![Delete](images/deletecore.PNG)
 
-While delete parent record, the parent and child records is bound to the **deleted** parameter. Please refer to the following screenshot.
+While delete parent record, the parent and child records is bound to the **deleted** parameter. Refer to the following screenshot.
 
 ## Remote save adaptor
 

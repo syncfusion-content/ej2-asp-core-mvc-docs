@@ -64,7 +64,7 @@ The following example illustrates how to insert the HTML content at current curs
 {% endif %}
 
 
-* Please refer the following code example for server-side web implementation for HTML conversion using DocumentEditor.
+* Refer the following code example for server-side web implementation for HTML conversion using DocumentEditor.
 
 ```c#
 //API controller for the conversion.

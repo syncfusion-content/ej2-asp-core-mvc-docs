@@ -11,7 +11,7 @@ documentation: ug
 
 # Styling
 
-To modify the TreeGrid appearance, you need to override the default CSS of treegrid. Please find the list of CSS classes and its corresponding section in treegrid. Also, you have an option to create your own custom theme for all the ASP.NET MVC controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+To modify the TreeGrid appearance, you need to override the default CSS of treegrid. Find the list of CSS classes and its corresponding section in treegrid. Also, you have an option to create your own custom theme for all the ASP.NET MVC controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
 Section|CSS class|Purpose of CSS class
 -----|-----|-----
