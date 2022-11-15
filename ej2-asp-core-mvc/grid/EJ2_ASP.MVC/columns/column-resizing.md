@@ -42,7 +42,7 @@ Column width can be resized by clicking and dragging the right edge of the colum
 
 ## Column resizing using method
 
-To resize a column, set width to that particular column and then refresh the grid header by using the **refreshHeader** method. Please refer the below code
+To resize a column, set width to that particular column and then refresh the grid header by using the **refreshHeader** method. Refer the below code,
 
 ```typescript
 

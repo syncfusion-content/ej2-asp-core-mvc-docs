@@ -50,7 +50,7 @@ The following code example displays an appointment from 9.00 AM to 10.00 AM when
 
 ## Scheduler set to specific timezone
 
-When a timezone is set to Scheduler through `timezone` property, the appointments will be displayed exactly based on the Scheduler timezone regardless of its client timezone. In core application, client timezone will be added by default. In order to render the appointments in the timezone which has been set to the scheduler, please add the following code snippet in your `Startup.cs` file like below.
+When a timezone is set to Scheduler through `timezone` property, the appointments will be displayed exactly based on the Scheduler timezone regardless of its client timezone. In core application, client timezone will be added by default. In order to render the appointments in the timezone which has been set to the scheduler, add the following code snippet in your `Startup.cs` file like below.
 
 ```sh
 public void ConfigureServices(IServiceCollection services) {

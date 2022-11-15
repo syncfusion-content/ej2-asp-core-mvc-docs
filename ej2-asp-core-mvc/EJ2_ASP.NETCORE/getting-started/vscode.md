@@ -33,7 +33,7 @@ dotnet new webapp -o AspNetCoreWebApp
 {% endhighlight %}
 {% endtabs %}
 
-The `dotnet new` command creates new Razor Pages project in the AspNetCoreWebApp folder. Please refer to this [topic](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=net60) for more information about .NET CLI commands.
+The `dotnet new` command creates new Razor Pages project in the AspNetCoreWebApp folder. Refer to this [topic](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=net60) for more information about .NET CLI commands.
 
 4.Run the following command in the terminal to open the project in current instance of the VS Code. 
 {% tabs %}
