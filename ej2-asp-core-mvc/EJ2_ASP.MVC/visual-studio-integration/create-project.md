@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Create Syncfusion ASP.NET MVC - EJ2 project
+title: Create Syncfusion ASP.NET MVC project
 description: Syncfusion provides Visual Studio Project Templates for ASP.NET MVC platform to create the Syncfusion ASP.NET MVC Application using Essential JS 2 components
-platform: ASP.NET MVC - EJ2
+platform: ej2-asp-core-mvc
 control: Syncfusion VS Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug

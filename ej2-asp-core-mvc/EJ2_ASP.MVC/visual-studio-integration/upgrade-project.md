@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Project migration process for ASP.NET MVC - EJ2 platform
+title: Project migration process for ASP.NET MVC platform | Syncfusion
 description: Project Migration is a add-in that allows you to migrate the existing Syncfusion ASP.NET MVC Application from one Essential Studio version to another version.
-platform: ASP.NET Core - MVC
+platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug

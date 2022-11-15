@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Project Conversion process for ASP.NET MVC- EJ2 platform
+title: Project Conversion process for ASP.NET MVC Application | Syncfusion
 description: Project Conversion is a add-in that converts ASP.NET MVC application into a Syncfusion ASP.NET MVC application by adding required Essential JS 2 components
-platform: ASP.NET MVC - EJ2
+platform: ej2-asp-core-mvc
 control: Syncfusion VS Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Converting ASP.NET MVC application to Syncfusion ASP.NET MVC application
+# Converting ASP.NET MVC application to ASP.NET MVC application
 
 Syncfusion ASP.NET MVC conversion is a Visual Studio add-in that converts an existing ASP.NET MVC application into a Syncfusion ASP.NET MVC (Essential JS 2) Web application by adding the required assemblies and resource files.
 
