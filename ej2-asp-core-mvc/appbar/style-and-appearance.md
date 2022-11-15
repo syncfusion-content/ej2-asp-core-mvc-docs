@@ -10,7 +10,7 @@ documentation: ug
 
 # Styles and Appearances in ##Platform_Name## AppBar Control
 
-To modify the AppBar appearance, you need to override the default CSS of the AppBar component. Please find the list of CSS classes and their corresponding sections in the AppBar component. Also, you have an option to create your own custom theme for the controls using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
+To modify the AppBar appearance, you need to override the default CSS of the AppBar component. Find the list of CSS classes and their corresponding sections in the AppBar component. Also, you have an option to create your own custom theme for the controls using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 
 |CSS Class | Purpose of Class |
 |-----|----- |

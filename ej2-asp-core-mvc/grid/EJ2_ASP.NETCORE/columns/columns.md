@@ -393,7 +393,7 @@ function beforeRender(args) {
 
 ## Align the text of Grid content and header
 
-For aligning the text of Grid content and header part, kindly use [TextAlign](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_TextAlign) and [HeaderTextAlign](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderTextAlign) properties.
+For aligning the text of Grid content and header part, use [TextAlign](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_TextAlign) and [HeaderTextAlign](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderTextAlign) properties.
 
 Grid column supports the following alignments:
 

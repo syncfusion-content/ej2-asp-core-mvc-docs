@@ -14,11 +14,11 @@ Syncfusion license key registration is applicable for all evaluators and only to
 
 Following licensing error will be shown if the license key is not registered in your projects while using assemblies from evaluation installer or from the [nuget.org](https://www.nuget.org/packages?q=syncfusion).
 
-> This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this [help topic](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/licensing-errors/#license-key-not-registered) for more information.
+> This application was built using a trial version of Syncfusion Essential Studio. Include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Refer to this [help topic](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/licensing-errors/#license-key-not-registered) for more information.
 
 ## Difference between unlock key and license key
 
-Please note that this license key is different from the installer unlock key that you might have used in the past and needs to be separately generated from Syncfusion website.
+Note that this license key is different from the installer unlock key that you might have used in the past and needs to be separately generated from Syncfusion website.
 
 * **Unlock Key** - Syncfusion Unlock Key is used to unlock the Syncfusion installers alone.
 
