@@ -89,8 +89,7 @@ To use table tool, add the `CreateTable` item in toolbar items.
 
 ### Insert Table
 
-To insert the table in Rich Text Editor, click the `table` toolbar option to insert the table into Rich Text Editor content and this is the default way in all the devices.
-Please refer the below sample and code snippets to add the table in Markdown editor
+To insert the table in Rich Text Editor, click the `table` toolbar option to insert the table into Rich Text Editor content and this is the default way in all the devices. Refer the below sample and code snippets to add the table in Markdown editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
