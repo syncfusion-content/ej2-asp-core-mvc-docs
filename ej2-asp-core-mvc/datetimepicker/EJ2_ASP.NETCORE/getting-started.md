@@ -150,4 +150,4 @@ The minimum and maximum date time can be defined with the help of `min` and `max
 * [Render DateTimePicker with specific culture](./globalization)
 * [How to get and set value in DateTimePickerFor](./how-to/datetimepicker-for-core)
 
-N>You can also explore our [ASP.NET Core DateTime Picker example](https://ej2.syncfusion.com/aspnetcore/DateTimePicker/DefaultFunctionalities#/material) that shows you how to render the DateTime Picker in ASP.NET Core.
+N> You can also explore our [ASP.NET Core DateTime Picker example](https://ej2.syncfusion.com/aspnetcore/DateTimePicker/DefaultFunctionalities#/material) that shows you how to render the DateTime Picker in ASP.NET Core.
