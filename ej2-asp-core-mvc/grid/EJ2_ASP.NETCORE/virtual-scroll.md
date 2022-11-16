@@ -125,7 +125,7 @@ The Grid has an option to overcome this limitation of the browser in the followi
 
 You can prevent the height limitation problem in browser when scrolling through the millions of records by loading the segment of data through different strategy.
 
-In the following sample, Grid is rendered with a large number of records(nearly 2 million). Here, you can scroll 0.5 million records at a time in Grid. Once you reach the last page of 0.5 million records, the **Load Next Set** button will be shown at the bottom of the Grid. By clicking that button, you can view the next set of 0.5 million records in Grid.This button will be shown only if the next set of records is available. Also, **Load Previous Set** button will be shown at the top of the Grid to load the previous set of 0.5 million records. This button will be shown only if the previous set of records is available.
+In the following sample, Grid is rendered with a large number of records(nearly 2 million). Here, you can scroll 0.5 million records at a time in Grid. Once you reach the last page of 0.5 million records, the **Load Next Set** button will be shown at the bottom of the Grid. By clicking that button, you can view the next set of 0.5 million records in Grid. Also, **Load Previous Set** button will be shown at the top of the Grid to load the previous set of 0.5 million records.
 
 Lets see the step by step procedure for how we can overcome the limitation in Syncfusion Grid component.
 
@@ -137,12 +137,12 @@ export class CustomUrlAdaptor extends UrlAdaptor {
         if (arguments[1].queries) {
             for (var i = 0; i < arguments[1].queries.length; i++) {
                 if (arguments[1].queries[i].fn === 'onPage') {
-                    // pageSet - defines the number of segments that we are going to split the 2million records. In this example we have considered 5L records for each set so the pageSet is 1, 2, 3 and 4.
-                    // maxRecordsPerPageSet – In this example we define the value as 5L.
+                    // pageSet - defines the number of segments that we are going to split the 2million records. In this example we have considered 0.5 million records for each set so the pageSet is 1, 2, 3 and 4.
+                    // maxRecordsPerPageSet – In this example we define the value as 0.5 million.
 
                     // gridPageSize – the pageSize that we have defined in the Grid pageSettings->pageSize property
 
-                    // customize the pageIndex based on the current pageSet (It send the skip query including the previous pageSet ) so that the other operations performed for total 2millions records instead of 5L alone.
+                    // customize the pageIndex based on the current pageSet (It send the skip query including the previous pageSet ) so that the other operations performed for total 2millions records instead of 0.5 million alone.
                     arguments[1].queries[i].e.pageIndex = (((pageSet - 1) * maxRecordsPerPageSet) / gridPageSize) + arguments[1].queries[i].e.pageIndex;
                 }
             }
