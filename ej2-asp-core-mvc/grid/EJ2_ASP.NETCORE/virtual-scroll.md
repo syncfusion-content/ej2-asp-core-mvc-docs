@@ -123,9 +123,85 @@ The Grid has an option to overcome this default behavior of the browser by follo
 
 **Solution 1: Using external buttons**
 
-You can prevent the height limitation when scrolling through the millions of records by loading the segment of data through the external buttons.
+You can prevent the height limitation when scrolling through the millions of records by loading the segment of data through different strategy.
 
 This can be demonstrated in the following sample. In the following sample, Grid is rendered with a large number of records(nearly 2 million). Here, you can scroll 5L records at a time in Grid. If you reach the last page of 5L records, the `Load Next Set` button will be shown at the bottom of the Grid. By clicking that button, you can view the next set of 5L records in Grid.This button will be shown only if the next set of records is available. Also, `Load Previous Set` button (when the grid is on the first page) will be shown at the top of the Grid to load the previous set of 5L records. This button will be shown only if the previous set of records is available.
+
+Lets see the step by step procedure for how we can overcome the limitation in Syncfusion Grid component.
+1.	Create custom adaptor by extending UrlAdaptor and bind to the grid dataSource property. In the processQuery method of custom adaptor, we handled the Skip query based on the current page set to perform the data operation with whole records on the server.
+
+
+export class CustomUrlAdaptor extends UrlAdaptor {
+    processQuery(args) {
+        if (arguments[1].queries) {
+            for (var i = 0; i < arguments[1].queries.length; i++) {
+                if (arguments[1].queries[i].fn === 'onPage') {
+
+                     // pageSet - defines the number of segments that we are going to split the 2million records. In this example we have considered 5L records for each set so the pageSet is 1, 2, 3 and 4.
+                     // maxRecordsPerPageSet – In this example we define the value as 5L.
+
+                    // gridPageSize – the pageSize that we have defined in the Grid pageSettings->pageSize property
+
+                    // customize the pageIndex based on the current pageSet (It send the skip query including the previous pageSet ) so that the other operations performed for total 2millions records instead of 5L alone.
+
+
+                    arguments[1].queries[i].e.pageIndex = (((pageSet - 1) * maxRecordsPerPageSet) / gridPageSize) + arguments[1].queries[i].e.pageIndex;
+                }
+            }
+        }
+        var original = super.processQuery.apply(this, arguments);
+        return original;
+    }
+}
+
+this.dataManager = new DataManager({
+            adaptor: new CustomUrlAdaptor(),
+            url: "Home/UrlDatasource"
+        });
+2.	Render the grid by define the following features
+<GridComponent id='grid' ref={g => this.grid = g} dataSource={this.dataManager} enableVirtualization={true} pageSettings={this.pageSettings} height={360} beforeDataBound={this.beforeDataBound} >
+                    <ColumnsDirective>
+                                         …………..
+                                         …………..
+                    </ColumnsDirective>
+                </GridComponent>
+
+3.	In the beforeDataBound event, we set the args.count as 5L to perform scrolling with 5L records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 5L means it will directly assigned the original segmented count instead of 5L.
+
+    beforeDataBound(args) {
+        // storing the total records count which means 2 million records count
+        totalRecords = args.count; 
+
+        // change the count with respect to maxRecordsPerPageSet (maxRecordsPerPageSet = 500000)
+        args.count = args.count - ((pageSet - 1) * maxRecordsPerPageSet) > maxRecordsPerPageSet ? maxRecordsPerPageSet : args.count - ((pageSet - 1) * maxRecordsPerPageSet);
+        
+    }
+
+
+4.	Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the grid component.
+<div className="pagearea1">
+                    <ButtonComponent cssClass='e-info prevbtn' onClick={this.prevBtnClick} style={{ width: '100%' }}>Load Previous Set...</ButtonComponent>
+</div>
+<GridComponent id='grid' ref={g => this.grid = g} dataSource={this.dataManager} enableVirtualization={true} pageSettings={this.pageSettings} height={360} beforeDataBound={this.beforeDataBound} >
+                    <ColumnsDirective>
+                                         …………..
+                                         …………..
+                    </ColumnsDirective>
+                </GridComponent>
+<div className="pagearea2">
+                    <ButtonComponent cssClass='e-info nxtbtn' onClick={this.nxtBtnClick} style={{ width: '100%' }}>Load Next Set...</ButtonComponent>
+                </div>
+5.	While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2millions records after doing some simple calculation.
+
+    // triggered when clicking the Previous/ Next button
+    prevNxtBtnClick(args) {
+        if (this.grid.element.querySelector('.e-content') && this.grid.element.querySelector('.e-content').getAttribute('aria-busy') === 'false') {
+            // increase/decrease the pageSet based on the target element
+            pageSet = args.target.classList.contains('prevbtn') ? --pageSet : ++pageSet;
+            this.rerenderGrid(); // re-render the Grid component
+        }
+    }
+
 
 > [View GitHub Sample]
 > If you perform grid actions such as filtering, sorting, etc., after scrolling through the 5L data, the Grid performs those data actions with the whole records, not just the current loaded 5L data.
