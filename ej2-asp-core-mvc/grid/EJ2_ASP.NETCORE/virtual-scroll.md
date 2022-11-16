@@ -125,7 +125,7 @@ The Grid has an option to overcome this limitation of the browser in the followi
 
 You can prevent the height limitation problem in browser when scrolling through the millions of records by loading the segment of data through different strategy.
 
-In the following sample, Grid is rendered with a large number of records(nearly 2 million). Here, you can scroll 0.5 million records at a time in Grid. Once you reach the last page of 0.5 million records, the button will be shown at the bottom of the Grid. By clicking that button, you can view the next set of 0.5 million records in Grid.This button will be shown only if the next set of records is available. Also, **Load Previous Set** button will be shown at the top of the Grid to load the previous set of 0.5 million records.
+In the following sample, Grid is rendered with a large number of records(nearly 2 million). Here, you can scroll 0.5 million records at a time in Grid. Once you reach the last page of 0.5 million records, the **Load Next Set** button will be shown at the bottom of the Grid. By clicking that button, you can view the next set of 0.5 million records in Grid.This button will be shown only if the next set of records is available. Also, **Load Previous Set** button will be shown at the top of the Grid to load the previous set of 0.5 million records. This button will be shown only if the previous set of records is available.
 
 Lets see the step by step procedure for how we can overcome the limitation in Syncfusion Grid component.
 
@@ -169,7 +169,7 @@ this.dataManager = new DataManager({
 </GridComponent>
 ```                
 
-3.	In the beforeDataBound event, we set the args.count as 5L to perform scrolling with 5L records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 5L means it will directly assigned the original segmented count instead of 5L.
+3.	In the beforeDataBound event, we set the args.count as 0.5 million to perform scrolling with 0.5 million records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 0.5 million means it will directly assigned the original segmented count instead of 0.5 million.
 
 ```csharp
     beforeDataBound(args) {
@@ -199,7 +199,7 @@ this.dataManager = new DataManager({
 </div>
 ```
 
-5.	While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2millions records after doing some simple calculation.
+5.	While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2 millions records after doing some simple calculation.
 
 ```typescript
     // Triggered when clicking the Previous/ Next button.
@@ -210,21 +210,25 @@ this.dataManager = new DataManager({
             this.rerenderGrid(); // Re-render the Grid component.
         }
     }
- ```   
+ ``` 
+
+ You can find the full code sample from the below GitHub location.
 
 > [View GitHub Sample]
 
-> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 5L data, the Grid performs those data actions with the whole records, not just the current loaded 5L data.
+Also, you can view the hosted link for this sample [here](https://ej2.syncfusion.com/aspnetcore/Load_millions_of_records).
+
+> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
 
 ### Solution 2: Using RowHeight property
 
 You can reduce the [row height](https://ej2.syncfusion.com/aspnetcore/documentation/grid/row/row-height) using the [RowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property of the Grid. It will reduce overall height to accomodate more rows. But this approach optimizes the limitation, but if height limit reached after reducing row height also, you have to opt previous solution or use paging. 
 
-Before setting rowHeight property to the grid.
+When rowHeight property is set as "36px" to the grid, you can view nearly 0.6 million records as shown in the below image.
 
 ![Grid Without Row Height](../images/ReactGrid.gif)
 
-After setting rowHeight property as "30px" to the grid.
+After setting rowHeight property as "30px" to the grid, you can view upto 0.7 million records as shown in the below image.
 
 ![Grid With Row Height](../images/RowHeight.gif)
 
