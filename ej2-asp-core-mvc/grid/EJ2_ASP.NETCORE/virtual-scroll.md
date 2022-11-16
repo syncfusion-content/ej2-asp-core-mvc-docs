@@ -103,15 +103,17 @@ Both the row and column virtualization can be used along with grouping. At initi
 
 * Programmatic selection using the **selectRows** method is not supported in virtual scrolling.
 
-## Prevent endless virtual scrolling due to browser height limitation
+## Overcome browser height limitation in virtual scrolling
 
-The Grid has an option to load huge amounts of data (like millions of records) without any performance degradation in the Grid using the virtual scrolling feature, which means the data can be fetched using the on-demand concept.
+Load millions of records in the Grid by using virtual scrolling feature, which means it allows to load and render rows in on demand basis while scrolling vertically. As a result, we lighten the browser’s load by minimizing the DOM elements and rendering elements only when it needs. Usually, the height of the grid element can be calculated by using the Total Records Count * Row Height([rowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html?_ga=2.207589139.1866492899.1668399004-1964677263.1614851411#Syncfusion_EJ2_Grids_Grid_RowHeight) property of grid).
 
-Even though Grid has optimized design for high-performance, the browser has some maximum pixel height limitation for scroll bar element. The content placed above the maximum height cannot be scrolled if the element height is greater than the browser's maximum height. This is the behavior of the browser. This browser height limitation affects the virtual scrolling enabled grid, which means when a large number of records are bound to the Grid, it can only display the records until the maximum height of the browser is reached. Once the browser's height is reached, the remaining records will be hidden.
+Even though Grid has optimized design for high-performance, the browser has some maximum pixel height limitation for scroll bar element. The content placed above the maximum height cannot be scrolled if the element height is greater than the browser's maximum height. This browser height limitation affects the virtual scrolling enabled grid, which means when a large number of records are bound to the Grid, it can only display the records until the maximum height of the browser is reached. Once the browser's height is reached, the remaining records will be hidden.
 
-Usually, the height of the grid element can be calculated by using the Total Records Count * Row Height. For example, if the row height is set as 30px and the total record count will be 1000000(1 million), then the height of the grid element will be 30 000 000 pixels. In this case, the browser's maximum height is about 22369600(The maximum pixel height limitation differs for different browsers). The records above the maximum height of the browser cannot be scrolled. It will be hidden.
+For example, if the row height is set as 30px and the total record count will be 1000000(1 million), then the height of the grid element will be 30 000 000 pixels. In this case, the browser's maximum height is about 22369600(The maximum pixel height limitation differs for different browsers). The records above the maximum height of the browser cannot be scrolled. It will be hidden.
 
-This height limitation is not related to Grid component. Its fully depend on the default behaviour of the browser. We have reproduced the same issue in the normal html table too. Please find the below image.
+This height limitation is not related to Grid component. Its fully depend on the default behaviour of the browser. The same issue reproduced in the normal html table too.
+
+>> gif image
 
 Grid component aslo faced the same issue as mentioned in the below image.
 
@@ -143,5 +145,3 @@ After setting rowHeight property as "30px" to the grid.
 **Solution 3: Using Paging feature**
 
 Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging) feature also loads the data in on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.,) in Grid. So use the paging feature instead of virtual scrolling to view the large number of records in the Grid without any kind of performance degradation and browser height limitation.
-
-> Since paging and virtual scrolling are unique features, it is not recommendable to use both features at the same time. But customization can be applied as mentioned in solution1
