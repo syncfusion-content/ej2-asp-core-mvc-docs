@@ -459,3 +459,5 @@ The following code snippet demonstrates specifying the current path in File Mana
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core File Manager example](https://ej2.syncfusion.com/aspnetcore/FileManager/Overview#/material) that shows you how to render the File Manager in ASP.NET Core.
