@@ -114,15 +114,15 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Floating Action Button Control](images/default.png)
 
-## Positioning
+## Event Click In Floating Action Button
 
-The floating action button can be positioned using the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. The fab is positioned based on the [`Target`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target), if target is defined else positioned based on the browser viewport. The position values are TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
+The floating action button control triggers the `onclick` event when you click on the floating action button. You can use this event to perform the required action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/getting-started/position/tagHelper %}
+{% include code-snippet/floating-action-button/events/onclick-event/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -130,10 +130,10 @@ The floating action button can be positioned using the [`Position`](https://help
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/floating-action-button/getting-started/position/razor %}
+{% include code-snippet/floating-action-button/events/onclick-event/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="OnClickEvent.cs" %}
+{% include code-snippet/floating-action-button/events/onclick-event/onclickevent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-![ASP.NET Core Floating Action Button Control](images/position.png)
-

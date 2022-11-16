@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Split Button Component
+title: Icons in ##Platform_Name## Split Button Control | Syncfusion
 description: Learn here all about Icons in Syncfusion ##Platform_Name## Split Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Icons
+# Icons in SplitButton Control
 
 ## SplitButton Icons
 
-SplitButton can have an icon to provide the visual representation of the action. To place the icon on a SplitButton, set the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.SplitButton.html#Syncfusion_EJ2_SplitButtons_SplitButton_IconCss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the SplitButton. You can customize the icon's position by using the [`iconPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.SplitButton.html#Syncfusion_EJ2_SplitButtons_SplitButton_IconPosition) property
+SplitButton can have an icon to provide the visual representation of the action. To place the icon on a SplitButton, set the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.SplitButton.html#Syncfusion_EJ2_SplitButtons_SplitButton_IconCss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the SplitButton. You can customize the icon's position by using the [`iconPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.SplitButton.html#Syncfusion_EJ2_SplitButtons_SplitButton_IconPosition) property.
 
 The following example illustrates how to place icon in SplitButton component.
 
@@ -43,6 +43,7 @@ The following example illustrates how to place icon in SplitButton component.
 
 
 > The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
+
 You can also use third party icons on the SplitButton using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.SplitButton.html#Syncfusion_EJ2_SplitButtons_SplitButton_IconCss) property.
 
 ## Vertical Button

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Annotation  in Image Editor control
+# Annotation in Image Editor control
 
 The Image Editor has multiple annotations support including text, freehand drawings, and shapes such as rectangles, ellipses, and lines.
 
@@ -112,19 +112,19 @@ The Rectangle shape can be inserted and customized by changing its border color,
 
 In the `drawRectangle` method, the rectangle shape can be inserted by specifying fillcolor, stroke color and stroke width. The `drawRectangle` method has the following parameters.
 
-     *  x - Specifies the x-coordinate of the rectangle.
+*  x - Specifies the x-coordinate of the rectangle.
 
-     *  y - Specifies the y-coordinate of the rectangle.
+*  y - Specifies the y-coordinate of the rectangle.
 
-     *  width - Specifies the width of the rectangle.
+*  width - Specifies the width of the rectangle.
 
-     *  height - Specifies the height of the rectangle.
+*  height - Specifies the height of the rectangle.
 
-     *  strokeWidth - Specifies the stroke width of the rectangle.
+*  strokeWidth - Specifies the stroke width of the rectangle.
 
-     *  strokeColor - Specifies the stroke color of the rectangle.
+*  strokeColor - Specifies the stroke color of the rectangle.
 
-     *  fillColor - the fill color of the rectangle.
+*  fillColor - the fill color of the rectangle.
 
 In the toolbar, the Rectangle shape can be inserted by clicking the Annotation dropdown button and picking the Rectangle option from that popup. Once the shape is inserted, the contextual toolbar will be enabled for customizing its fill color, stroke color, and stroke width.
 
@@ -163,19 +163,19 @@ The Ellipse shape can be inserted and customized by changing its border color, f
 
 In the `drawEllipse` method, the ellipse shape can be inserted by specifying fillcolor, stroke color and stroke width. The `drawEllipse` method has the following parameters.
 
-     * x - Specifies the x-coordinate of the ellipse.
+* x - Specifies the x-coordinate of the ellipse.
 
-     * y - Specifies the y-coordinate of the ellipse.
+* y - Specifies the y-coordinate of the ellipse.
 
-     * radiusX - the radius x point for the ellipse.
+* radiusX - the radius x point for the ellipse.
 
-     * radiusY - the radius y point for the ellipse.
+* radiusY - the radius y point for the ellipse.
 
-     * strokeWidth - the stroke width of the ellipse.
+* strokeWidth - the stroke width of the ellipse.
 
-     * strokeColor - the stroke color of the ellipse.
+* strokeColor - the stroke color of the ellipse.
 
-     * fillColor - the fill color of the ellipse.
+* fillColor - the fill color of the ellipse.
 
 In the toolbar, the Ellipse shape can be inserted by clicking the Annotation dropdown button and picking the Ellipse option from that popup. Once the shape is inserted, the contextual toolbar will be enabled for customizing its fill color, stroke color, and stroke width.
 
@@ -214,17 +214,17 @@ The line shape can be inserted and customized by changing its border color, and 
 
 In the `drawLine` method, the line shape can be inserted by specifying, stroke color and stroke width. The `drawLine` method has the following parameters:
 
-     *  startX – Specifies start point x-coordinate of line.
+*  startX – Specifies start point x-coordinate of line.
 
-     *  startY – Specifies start point y-coordinate of line.
+*  startY – Specifies start point y-coordinate of line.
 
-     *  endX - Specifies endpoint x-coordinates of line.
+*  endX - Specifies endpoint x-coordinates of line.
 
-     *  endY - Specifies end point y-coordinates of the line.
+*  endY - Specifies end point y-coordinates of the line.
 
-     *  strokeWidth - Specifies the stroke width of the line.
+*  strokeWidth - Specifies the stroke width of the line.
 
-     *  strokeColor - Specifies the stroke color of the line.
+*  strokeColor - Specifies the stroke color of the line.
 
 In the toolbar, the Line shape can be inserted by clicking the Annotation dropdown button and picking the Line option from that popup. Once the line shape is inserted, the contextual toolbar will be enabled for customizing its stroke color, and stroke width.
 

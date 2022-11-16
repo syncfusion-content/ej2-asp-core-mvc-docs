@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.Buttons
+
+@Html.EJS().Fab("fab").IconCss("e-icons e-edit").Content("Edit").Render()
+
+<script>
+
+    document.getElementById("fab").addEventListener('click', function () {
+        alert("Edit is clicked!");
+    });
+
+</script>

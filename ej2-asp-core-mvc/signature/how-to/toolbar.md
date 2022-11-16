@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration with Toolbar in ##Platform_Name## Signature Component
+title: Integration with Toolbar in ##Platform_Name## Signature Control | Syncfusion
 description: Learn here all about Integration with Toolbar in Syncfusion ##Platform_Name## Signature component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integration with Toolbar
@@ -10,8 +10,7 @@ documentation: ug
 
 # Integration with Toolbar
 
-The Signature control integrates with the toolbar and the interaction performed using the `change` event of the toolbar. 
-In that, `canUndo`, `canRedo` and `isEmpty` methods were used to enable/disable undo, redo, and clear buttons.
+The Signature control integrates with the toolbar and the interaction performed using the `change` event of the toolbar. In that, `canUndo`, `canRedo` and `isEmpty` methods were used to enable/disable undo, redo, and clear buttons.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

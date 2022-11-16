@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu in ##Platform_Name## Tree Grid Component
+title: Context Menu in ##Platform_Name## Tree Grid Control | Syncfusion
 description: Learn here all about Context Menu in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Context Menu
@@ -61,8 +61,7 @@ Items| Description
 
 ## Custom context menu items
 
-The custom context menu items can be added by defining the [`contextMenuItems`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ContextMenuItems.html) as a collection of **contextMenuItemModel**.
-Actions for this customized items can be defined in the [`contextMenuClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ContextMenuClick.html) event.
+The custom context menu items can be added by defining the [`contextMenuItems`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ContextMenuItems.html) as a collection of **contextMenuItemModel**. Actions for this customized items can be defined in the [`contextMenuClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ContextMenuClick.html) event.
 
 In the below sample, we have shown context menu item for parent rows to expand or collapse child rows.
 
