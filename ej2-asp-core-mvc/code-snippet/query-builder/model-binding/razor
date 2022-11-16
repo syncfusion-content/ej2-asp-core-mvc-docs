@@ -1,4 +1,4 @@
-@Html.EJS().QueryBuilder("querybuilder").FieldModel(ViewBag.fieldModel).OperatorModel(ViewBag.operatorModel).Width("72%").Columns(col =>
+@Html.EJS().QueryBuilder("querybuilder").Width("72%").Columns(col =>
    {
        col.Field("EmployeeID").Label("Employee ID").Type("number").Add();
        col.Field("FirstName").Label("First Name").Type("string").Add();
@@ -7,4 +7,4 @@
        col.Field("HireDate").Label("Hire Date").Type("date").Format("dd/MM/yyyy").Add();
        col.Field("Country").Label("Country").Type("string").Add();
        col.Field("City").Label("City").Type("string").Add();
-   }).Render()
+   }).FieldModel(ViewBag.fieldModel).OperatorModel(ViewBag.operatorModel).ValueModel(ViewBag.valueModel).Render()
