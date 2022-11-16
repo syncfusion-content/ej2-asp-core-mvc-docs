@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview for ASP.NET Core - EJ2 extension
+title: Overview for ASP.NET Core platform | Syncfusion
 description: The Syncfusion ASP.NET Core Extensions provide quick access to create or configure the Syncfusion ASP.NET projects along with Essential JS 2 components.
-platform: ASP.NET Core - EJ2
+platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -14,7 +14,7 @@ documentation: ug
 
 The Syncfusion ASP.NET Core (Essential JS 2) Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio.
 
-> Syncfusion Extension is published in Visual Studio Marketplace. Separate ASP.NET Core (Essential JS 2) Extension support is provided for Visual Studio 2022 and Visual Studio 2019 or lower. Please refer to following Visual Marketplace link.
+> Syncfusion Extension is published in Visual Studio Marketplace. Separate ASP.NET Core (Essential JS 2) Extension support is provided for Visual Studio 2022 and Visual Studio 2019 or lower. Refer to following Visual Marketplace link.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreVSExtensions)
 

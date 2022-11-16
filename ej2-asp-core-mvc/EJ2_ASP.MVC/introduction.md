@@ -223,9 +223,9 @@ padding-top: 50px;
 
 ## Getting Help
 
-* If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please contact us by creating a support ticket in [our support site](https://www.syncfusion.com/support/product-lifecycle/) or ask your query in Stack Overflow with the tag `syncfusion-ej2`.
+* If you are still not able to find the information that you are looking for in the self-help resources mentioned above then contact us by creating a support ticket in [our support site](https://www.syncfusion.com/support/product-lifecycle/) or ask your query in Stack Overflow with the tag `syncfusion-ej2`.
 
-* Don't see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/aspnet-mvc).
+* Don't see what you need? request it in our [feedback portal](https://www.syncfusion.com/feedback/aspnet-mvc).
 
 > Syncfusion does not collect any kind of information when our components are used in customer applications.
 

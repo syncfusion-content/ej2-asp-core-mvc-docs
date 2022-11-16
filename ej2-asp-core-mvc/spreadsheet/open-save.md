@@ -48,7 +48,7 @@ The following sample shows the `Open` option by using the [`openUrl`](../api/spr
 
 
 
-Please find the below table for the beforeOpen event arguments.
+Find the below table for the beforeOpen event arguments.
 
  | **Parameter** | **Type** | **Description** |
 | ----- | ----- | ----- |
@@ -149,7 +149,7 @@ The following sample shows the `Save` option by using the [`saveUrl`](../api/spr
 
 
 
-Please find the below table for the beforeSave event arguments.
+Find the below table for the beforeSave event arguments.
 
 | **Parameter** | **Type** | **Description** |
 | ----- | ----- | ----- |

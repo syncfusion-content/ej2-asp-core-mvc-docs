@@ -15,7 +15,7 @@ The issue, “The type initializer for 'Syncfusion.EJ2.PdfViewer.PdfiumNative' t
 
 Pdfium dll: [pdfium.dll](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Pdfium1515619754.zip)
 
-> Kindly use both the client and server-side of the same version in your project.
+> Use both the client and server-side of the same version in your project.
 > Ensure whether the pdfium.dll file is created in your project during runtime. Else, place the pdfium assemblies in any of the production environment locations and refer to the path by using the ReferencePath API.
 
 For example, if the Pdfium assembly is available in this path C:\Pdfium\x64 or D:\Pdfium\x86, the reference path should be PdfRenderer.ReferencePath = "C:/";

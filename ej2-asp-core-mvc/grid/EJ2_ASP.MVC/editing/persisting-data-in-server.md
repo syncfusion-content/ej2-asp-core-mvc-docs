@@ -109,7 +109,7 @@ The following code example describes the above behavior.
 {% endif %}
 
 
-The newly added record details are bound to the **Object** parameter. Please refer to the following screenshot.
+The newly added record details are bound to the **Object** parameter. Refer to the following screenshot.
 
 ![insert](../../images/insertURL.jpg)
 
@@ -144,7 +144,7 @@ The following code example describes the previous behavior.
 
 
 
-The updated record details are bound to the **Object** parameter. Please refer to the following screenshot.
+The updated record details are bound to the **Object** parameter. Refer to the following screenshot.
 
 ![update](../../images/updateURL.jpg)
 
@@ -179,7 +179,7 @@ The following code example describes the previous behavior.
 
 
 
-The deleted record primary key value is bound to the **key** parameter. Please refer to the following screenshot.
+The deleted record primary key value is bound to the **key** parameter. Refer to the following screenshot.
 
 ![delete](../../images/deleteURL.jpg)
 
@@ -216,7 +216,7 @@ The following code example describes the above behavior.
 
 
 
-Please refer to the following screenshot to know about the action parameter.
+Refer to the following screenshot to know about the action parameter.
 
 ![crudupdate](../../images/crudURL.jpg)
 
