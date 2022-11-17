@@ -72,3 +72,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ## See also
 
 [Types of Badge](./types)
+
+N> You can refer to our [ASP.NET MVC Badge](https://www.syncfusion.com/aspnet-mvc-ui-controls/badge) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Badge Example](https://ej2.syncfusion.com/aspnetmvc/Badge/Default#/fluent) that shows you how to render and confugure the Badge in ASP.NET MVC.
