@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clear Icon in ##Platform_Name## Multi Select Component
+title: Clear Icon in ##Platform_Name## Syncfusion Multi Select Component
 description: This section demonstrates how to remove the close icon from the ##Platform_Name## MultiSelect component.
 platform: ej2-asp-core-mvc
 control: Clear Icon
