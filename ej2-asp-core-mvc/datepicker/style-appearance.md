@@ -36,6 +36,27 @@ Use the following CSS to customize the DatePicker icon element.
 }
 ```
 
+## Customizing the placeholder color in the datepicker
+
+Use the following CSS to customize the placeholder font color of the datepicker
+
+```css
+/* To specify the color of the placeholder */
+::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: red !important;
+        opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: red !important;
+}
+::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: red !important;
+}
+```
+
 ## Customizing the Calendar popup of the DatePicker
 
 Please check the below section, to customize the style and appearance of the Calendar component
