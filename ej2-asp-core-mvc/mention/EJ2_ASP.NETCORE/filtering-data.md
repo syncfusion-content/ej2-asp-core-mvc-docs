@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Mention Filtering in ##Platform_Name## Mention Component
-description: Learn here all about mention filtering in Syncfusion ##Platform_Name## Mention component of Syncfusion Essential JS 2 and more.
+title: Mention Filtering in ASP.NET Core Mention control | Syncfusion
+description: Learn here all about mention filtering in Syncfusion ASP.NET Core Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Mention Filtering
-publishingplatform: ##Platform_Name##
+publishingplatform: aspnet-core
 documentation: ug
 ---
 
-# Filtering
+# Filtering data in Mention
 
 The Mention control has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the mention element.
 
 ## Limit the minimum filter character
 
-You can control the minimum length of user input to initiate the search action using the [minLength](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MinLength) property. This can be useful if you have a very large list of data. The default value is `zero`, where the suggestion list opens as soon as the user inputs the mention character.
+You can control the minimum length of user input to initiate the search action using the [minLength](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MinLength) property. This can be useful if you have a very large list of data. The default value is `0`, where the suggestion list opens as soon as the user inputs the mention character.
 
 The remote request does not fetch the search data until the search key contains three characters as shown in the following example.
 
@@ -24,11 +24,11 @@ The remote request does not fetch the search data until the search key contains 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core minimum filter character](../images/asp-core-mvc-mention-minimum-filter-character.png)
+![ASP.NET Core Mention minimum filter character](./images/mention-minimum-filter-character.png)
 
 ## Change the filter type
 
-While filtering, you can change the filter type to `Contains`, `StartsWith`, or `EndsWith` in the [filterType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_FilterType) property. The default filter operator is `Contains`.
+While filtering, you can change the filter type to `Contains`, `StartsWith`, or `EndsWith` in the [filterType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_FilterType) property. The default filter operator is `Contains`.
 
 * StartsWith - Filter the items that begin with the specified text value.
 * Contains - Filter the items that contain the specified text value.
@@ -40,11 +40,11 @@ While filtering, you can change the filter type to `Contains`, `StartsWith`, or 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core change filter type](../images/asp-core-mvc-mention-filter-type.png)
+![ASP.NET Core Mention change filter type](./images/mention-filter-type.png)
 
 ## Allow spacing between search
 
-While filtering the data in the data source, you can allow the space in the middle of the mention using the [allowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the data source does not match with the mentioned element data, the popup will be hidden on the space key press. The default value of the `allowSpaces` is `false`.
+While filtering the data in the data source, you can allow the space in the middle of the mention using the [allowSpaces](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) property. If the data source does not match with the mentioned element data, the popup will be hidden on the space key press. The default value of the `allowSpaces` is `false`.
 
 > By default, the `allowSpaces` property is disabled, and the space ends the mention control search.
 
@@ -57,11 +57,11 @@ While filtering the data in the data source, you can allow the space in the midd
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core allow spacing between search](../images/asp-core-mvc-mention-allow-spacing.png)
+![ASP.NET Core Mention allow spacing between search](./images/mention-allow-spacing.png)
 
 ## Customize the suggestion item count
 
-While filtering, you can customize the number of list items to be displayed in the suggestion list using the [suggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
+While filtering, you can customize the number of list items to be displayed in the suggestion list using the [suggestionCount](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -72,9 +72,9 @@ While filtering, you can customize the number of list items to be displayed in t
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core suggestion item count](../images/asp-core-mvc-mention-suggestion-count.png)
+![ASP.NET Core Mention suggestion item count](./images/mention-suggestion-count.png)
 
-## See Also
+## See also
 
 * [Templates](./template)
 

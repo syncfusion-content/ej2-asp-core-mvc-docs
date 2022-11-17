@@ -1,7 +1,7 @@
 @model List<string>
 @{
     char nameMentionChar = '@';
-    var data = new Employees().GetData();
+    List<Employees> data = new Employees().GetData();
 }
 <div id="mentionElement" placeholder="Type @Html.Raw("mention") and tag employee"></div>
 
