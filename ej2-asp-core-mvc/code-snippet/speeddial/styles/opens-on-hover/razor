@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.Buttons
+
+@Html.EJS().SpeedDial("speeddial").Items(ViewBag.datasource).OpensOnHover(true).Content("Edit").Render()
