@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## DatePicker Component
+title: Style and appearance in ##Platform_Name## Syncfusion DatePicker Component
 description: Learn here all about style and appearance in Syncfusion ##Platform_Name## DatePicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: datepicker
