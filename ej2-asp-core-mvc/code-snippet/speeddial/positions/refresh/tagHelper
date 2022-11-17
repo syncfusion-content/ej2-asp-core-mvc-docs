@@ -1,0 +1,30 @@
+@using Syncfusion.EJ2.Buttons
+
+@{
+    List<SpeedDialItem> items = new List<SpeedDialItem>();
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-cut"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-copy"
+    });
+    items.Add(new SpeedDialItem
+    {
+        IconCss = "e-icons e-paste"
+    });
+}
+
+<div id="target" style="min-height:350px; position:relative; border:1px solid;">
+    <ejs-button id="refresh" content="Refresh" onclick="refresh()"></ejs-button>
+    <ejs-speeddial id="speeddial" target="#target" position="MiddleRight" items="items" openIconCss="e-icons e-edit" closeIconCss="e-icons e-close"></ejs-speeddial>
+</div>
+
+<script>
+    function refresh()
+    {
+        var speeddial=document.getElementById('speeddial').ej2_instances[0];
+        speeddial.refreshPosition();
+    }
+</script>

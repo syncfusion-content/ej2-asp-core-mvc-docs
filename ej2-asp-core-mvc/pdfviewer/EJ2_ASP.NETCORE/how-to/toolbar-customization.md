@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar_customization in ##Platform_Name## Pdfviewer Component
+title: Toolbar_customization in ##Platform_Name## Pdfviewer Control | Syncfusion
 description: Learn here all about Toolbar_customization in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Toolbar_customization
@@ -38,7 +38,7 @@ The PDF Viewer provides API for user interactions options provided in its built-
 <input type ="file" id="fileUpload" accept=".pdf" style="display:block;visibility:hidden;width:0;height:0;">
 ```
 
-**Step 3:** Add EJ2 toolbar for performing magnification actions in PDF Viewer using the following code snippet.,
+**Step 4:** Add EJ2 toolbar for performing magnification actions in PDF Viewer using the following code snippet.,
 
 ```html
 
@@ -54,7 +54,7 @@ The PDF Viewer provides API for user interactions options provided in its built-
 
 ```
 
-**Step 4:** Add the following style to achieve the custom toolbar styling.,
+**Step 5:** Add the following style to achieve the custom toolbar styling.,
 
 ```html
 <style>
@@ -163,7 +163,7 @@ The PDF Viewer provides API for user interactions options provided in its built-
 
 >The icons are embedded in the font file used in the previous code snippet.
 
-**Step 5:** Add the following scripts for performing user interaction in PDF Viewer in code behind.
+**Step 6:** Add the following scripts for performing user interaction in PDF Viewer in code behind.
 
 ```html
 <script>

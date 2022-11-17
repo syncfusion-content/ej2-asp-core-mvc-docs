@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Spreadsheet Component
+title: Selection in ##Platform_Name## Spreadsheet Control | Syncfusion
 description: Learn here all about Selection in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Selection
+# Selection in Spreadsheet Control
 
-Selection provides interactive support to highlight the cell, row, or column that you select. Selection can be done through Mouse, Touch, or Keyboard interaction. To enable selection, set `mode` as `Single` | `Multiple` in [`selectionSettings`](../api/spreadsheet/#selectionsettings). If you set `mode` to `None`, it disables the UI selection.
+Selection provides interactive support to highlight the cell, row, or column that you select. Selection can be done through Mouse, Touch, or Keyboard interaction. To enable selection, set `mode` as `Single` or `Multiple` in [`selectionSettings`](../api/spreadsheet/#selectionsettings). If you set `mode` to `None`, it disables the UI selection.
 
-> * The default value for `mode` in  `selectionSettings` is `Multiple`.
+> The default value for `mode` in  `selectionSettings` is `Multiple`.
 
 You have the following options in Selection,
 

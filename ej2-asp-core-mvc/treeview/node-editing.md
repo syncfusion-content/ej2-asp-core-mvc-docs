@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Node Editing in ##Platform_Name## Treeview Component
+title: Node Editing in ##Platform_Name## Treeview Control | Syncfusion
 description: Learn here all about Node Editing in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Node Editing
@@ -9,10 +9,10 @@ documentation: ug
 ---
 
 
-# Node Editing
+# Node Editing in Treeview Control
 
-The TreeView allows you to edit nodes by setting the [allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowEditing.html) property to **true**. 
-To directly edit the nodes in place, **double click** the TreeView node or **select** the node and press **F2** key.
+The TreeView allows you to edit nodes by setting the [allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowEditing.html) property to **true**. To directly edit the nodes in place, **double click** the TreeView node or **select** the node and press **F2** key.
+
 When editing is completed by focus out or by pressing the **Enter** key, the modified node’s text saves automatically. If you do not want to save the modified node’s text in TreeView node, press **Escape** key. It does not save the edited text to the TreeView node.
 
 * Node editing can also be performed programmatically by using the `beginEdit` method. On passing the node ID or element through this method, the edit textbox will be created for the particular node thus allowing us to edit it.

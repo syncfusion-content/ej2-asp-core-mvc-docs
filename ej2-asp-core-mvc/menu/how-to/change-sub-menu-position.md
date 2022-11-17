@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change Sub Menu Position in ##Platform_Name## Menu Component
+title: Change Sub Menu Position in ##Platform_Name## Menu Control | Syncfusion
 description: Learn here all about Change Sub Menu Position in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Change Sub Menu Position
@@ -39,4 +39,4 @@ In the below sample, the sub menu opens above the parent menu item.
 
 
 
->> For custom positioning, set both `top` and `left` position in the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event.
+> For custom positioning, set both `top` and `left` position in the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event.
