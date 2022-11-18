@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Selection in ##Platform_Name## Gantt Component
+title: Cell Selection in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Cell Selection in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cell selection
+# Cell selection      
 
 You can select a cell in the Gantt control by setting the [`selectionSettings.mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings) property to cell. You can get the selected cell information using the `getSelectedRowCellIndexes` method. This method returns the result as an object collection, which has `cellIndexes` and `rowIndex` information of the selected cells.
 

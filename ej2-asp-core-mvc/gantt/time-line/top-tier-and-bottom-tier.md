@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Top tier and Bottom tier in ##Platform_Name## Gantt Component
+title: Top tier and Bottom tier in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Top tier and Bottom tier in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Time Line
