@@ -1,3 +1,14 @@
+---
+layout: post
+title: Taskbar editing in Syncfusion ##Platform_Name## Gantt Component
+description: Learn here all about taskbar editing in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Managing Tasks
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Taskbar editing
 
 Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [`AllowTaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowTaskbarEditing) property.

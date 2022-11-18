@@ -1,3 +1,14 @@
+---
+layout: post
+title: Multiple gantt exporting in ##Platform_Name## Gantt Component
+description: Learn here all about Multiple gantt exporting in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Pdf Export
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Multiple exporting
 
 PDF export provides an option for exporting multiple Gantt to same file. In this exported document, each Gantt will be exported to a new page of the document in same file.

@@ -1,3 +1,14 @@
+---
+layout: post
+title: Row Selection in ##Platform_Name## Gantt Component
+description: Learn here all about Row Selection in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Selection
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
 # Row selection
 
 The row selection in the Gantt control can be enabled or disabled using the [`AllowSelection`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowSelection.html) property. You can get the selected row object using the `getSelectedRecords` method. The following code example shows how to disable the row selection in Gantt.
