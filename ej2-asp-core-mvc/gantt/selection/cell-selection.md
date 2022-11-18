@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cell selection      
+# Cell selection action in gantt control
 
 You can select a cell in the Gantt control by setting the [`selectionSettings.mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings) property to cell. You can get the selected cell information using the `getSelectedRowCellIndexes` method. This method returns the result as an object collection, which has `cellIndexes` and `rowIndex` information of the selected cells.
 

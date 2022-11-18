@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Multiple exporting    
+# Multiple exporting action in gantt control
 
 PDF export provides an option for exporting multiple Gantt to same file. In this exported document, each Gantt will be exported to a new page of the document in same file.
 
