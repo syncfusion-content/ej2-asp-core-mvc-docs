@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Redirect To Home Page in Syncfusion ##Platform_Name## Pdfviewer Component
-description: Learn here all about Redirect To Home Page in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Redirect To Home Page in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Redirect To Home Page in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Redirect To Home Page
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -420,3 +420,5 @@ public static void RegisterRoutes(RouteCollection routes)
 Now, run the sample, fill in the form fields, and click the Submit Form option. You will be redirected to the home page.
 
 Download the sample, [how to redirect to a home page programmatically after submitting PDF forms](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MVC_SAMPLE-1729180476.zip).
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to/Redirect%20to%20new%20page%20after%20exporting%20the%20form%20field)

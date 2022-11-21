@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Server Actions in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Server Actions in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Server Actions in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Server Actions in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Server Actions
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
-
 
 # Server Actions
 
@@ -285,6 +284,8 @@ public IActionResult Download([FromBody] Dictionary<string, string> jsonObject)
     return Content(documentBase);
 }
 ```
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/aspnet-core-pdf-viewer-examples/tree/master/Download/Getting%20byte%20array%20while%20downloading%20the%20document)
 
 ## PrintImages
 

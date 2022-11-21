@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Programmatically Work With Form Field in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Programmatically Work With Form Field in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Form Field in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about work with Form Field in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Programmatically Work With Form Field
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -57,6 +57,8 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
        }
     </script>
 ```
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to/Update%20navigation%2C%20annotation%20and%20form%20fields)
 
 ## Delete form field programmatically
 

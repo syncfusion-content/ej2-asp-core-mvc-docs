@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Load Documents in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Load Documents in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Load Documents in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Load Documents in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Documents
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
-
 
 # Load PDF documents dynamically
 
@@ -43,3 +42,5 @@ function load2() {
 ```
 
 Download the sample, [how to load PDF documents dynamically](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EJ2CoreSample1651615851.zip)
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/aspnet-core-pdf-viewer-examples/tree/master/Document%20Path/Loading%20PDF%20as%20base64%20string)

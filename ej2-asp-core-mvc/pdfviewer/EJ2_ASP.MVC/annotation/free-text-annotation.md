@@ -41,6 +41,8 @@ Refer to the following code sample to switch to the Free Text annotation mode.
     </script>
 ```
 
+[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to/Update%20navigation%2C%20annotation%20and%20form%20fields)
+
 ## Editing the properties of free text annotation
 
 The font family, font size, font styles, font color, text alignment, fill color, the border stroke color, border thickness, and opacity of the free text annotation can be edited using the Font Family tool, Font Size tool, Font Color tool, Text Align tool, Font Style tool  Edit Color tool, Edit Stroke Color tool, Edit Thickness tool, and Edit Opacity tool in the annotation toolbar.
