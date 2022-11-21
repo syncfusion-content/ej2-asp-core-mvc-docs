@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Switch Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Switch control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Switch Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Switch control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -151,4 +151,4 @@ This section explains how to set [OnLabel](https://help.syncfusion.com/cr/aspnet
 
 * [How to customize the switch appearance](./how-to/customize-the-appearance-of-a-switch)
 
-N> You can refer to our [ASP.NET MCVC Toggle Switch Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/toggle-switch-button) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Toggle Switch Button example](https://ej2.syncfusion.com/aspnetmvc/Button/Switch#/material) that shows you how to render the Switch in ASP.NET MVC.
+N> You can refer to our [ASP.NET MVC Toggle Switch Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/toggle-switch-button) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Toggle Switch Button example](https://ej2.syncfusion.com/aspnetmvc/Button/Switch#/material) that shows you how to render the Toggle Switch Button in ASP.NET MVC.
