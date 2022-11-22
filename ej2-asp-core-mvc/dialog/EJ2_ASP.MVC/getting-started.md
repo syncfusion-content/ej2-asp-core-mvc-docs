@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Dialog Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Dialog Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Dialog control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
