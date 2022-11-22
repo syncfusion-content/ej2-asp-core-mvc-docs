@@ -8,6 +8,7 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
+
 # Getting Started with ASP.NET MVC Bullet Chart Control
 
 This section briefly explains about how to include [ASP.NET MVC Bullet Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/bullet-chart) control in your ASP.NET MVC application using Visual Studio.
@@ -276,4 +277,4 @@ public class BulletChartData
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/BulletChart/ASP.NET%20MVC%20Razor%20Examples).
 
-N> You can also explore our [ASP.NET MVC Bullet Chart Example](https://ej2.syncfusion.com/aspnetmvc/BulletChart/Default#/bootstrap5) that shows you how to render and configure the bullet chart.
+N> You can also explore our [ASP.NET MVC Bullet Chart Example](https://ej2.syncfusion.com/aspnetmvc/BulletChart/Default#/bootstrap5) that shows you how to render the Bullet Chart in ASP.NET MVC.
