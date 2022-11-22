@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Grid Control
+title: Getting Started with Syncfusion ASP.NET Core Grid Control
 description: Checkout and learn about getting started with ##Platform_Name## Grid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
@@ -12,6 +12,11 @@ documentation: ug
 # Getting Started with ASP.NET Core Grid Control
 
 This section briefly explains about how to include [ASP.NET Core Grid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control in your ASP.NET Core application using Visual Studio.
+
+To get start quickly with ASP.NET Core Grid component, you can check on this video.
+
+{% youtube
+"youtube:https://www.youtube.com/watch?v=E5w2fO-N9gE" %}
 
 ## Prerequisites
 
@@ -410,8 +415,7 @@ public class OrdersDetails
 
 ## Enable Grouping
 
-The grouping feature enables users to view the grid record in a grouped view. It can be enabled by setting the [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to true.
-Grouping feature can be customized using the [`e-grid-groupsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings) tag helper.
+The grouping feature enables users to view the grid record in a grouped view. It can be enabled by setting the [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to true. Grouping feature can be customized using the [`e-grid-groupsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

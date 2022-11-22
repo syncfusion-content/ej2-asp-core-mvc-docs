@@ -1,4 +1,4 @@
-<ejs-pivotview id="PivotView" height="300" showGroupingBar="true" actionBegin:"actionBegin">
+<ejs-pivotview id="PivotView" height="300" showGroupingBar="true" actionBegin="actionBegin">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
         <e-rows>
             <e-field name="Country"></e-field>
@@ -17,7 +17,7 @@
 
 <script>
     function actionBegin(args) {
-        if (args.actionName == 'Sort field' && args.actionName == 'Sort value') {
+        if (args.actionName == 'Sort field' || args.actionName == 'Sort value') {
             args.cancel = true;
         }
     }

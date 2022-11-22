@@ -1,0 +1,12 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l =>
+   {
+       l.UrlTemplate("https://atlas.microsoft.com/map/imagery/png?subscription-key=Your-Key &api-version=1.0&style=satellite&zoom=level&x=tileX&y=tileY").Add();
+       l.ShapeSettings(s => s.Fill("blue")).ShapeData(ViewBag.africaMapShape).Type(Syncfusion.EJ2.Maps.Type.SubLayer).Add();
+   }).Render()
+
+<style>
+    #maps {
+        display: block;
+    }
+</style>

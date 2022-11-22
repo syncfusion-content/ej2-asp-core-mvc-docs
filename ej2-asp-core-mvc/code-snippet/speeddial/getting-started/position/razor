@@ -1,0 +1,3 @@
+<div id="target" style="min-height:200px; position:relative; width:300px; border:1px solid;">
+    @Html.EJS().SpeedDial("element").Target("#target").content("Edit").Position(FabPosition.BottomLeft).Items(ViewBag.datasource).Render() 
+</div>

@@ -1,0 +1,7 @@
+@(Html.EJS().Chart("container").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).XName("x").YName("y").CornerRadius(cr => cr.TopLeft(10).TopRight(10)).
+    DataSource(ViewBag.dataSource).PointColorMapping("color").Add();
+}).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).MajorGridLines(mg => mg.Width(0))).PrimaryYAxis(py => py.LineStyle(mg => mg.Width(0)).MajorTickLines(mg => mg.Width(0)).MinorTickLines(mg => mg.Width(0)).LabelFormat("{value}°C"))
+.Title("USA CLIMATE - WEATHER BY MONTH").ChartArea(area => area.Border(br => br.Width(0))).Render()
+)
