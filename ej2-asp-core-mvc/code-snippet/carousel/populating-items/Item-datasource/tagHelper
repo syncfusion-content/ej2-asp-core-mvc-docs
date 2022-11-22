@@ -1,6 +1,35 @@
+@{
+    List<CarouselDataBinding> datasrc = new List<CarouselDataBinding>();
+    datasrc.Add(new CarouselDataBinding
+    {
+        Id = 1,
+        Title = "Slide 1",
+    });
+    datasrc.Add(new CarouselDataBinding
+    {
+        Id = 2,
+        Title = "Slide 2",
+    });
+    datasrc.Add(new CarouselDataBinding
+    {
+        Id = 3,
+        Title = "Slide 3",
+    });
+    datasrc.Add(new CarouselDataBinding
+    {
+        Id = 4,
+        Title = "Slide 4",
+    });
+    datasrc.Add(new CarouselDataBinding
+    {
+        Id = 5,
+        Title = "Slide 5",
+    });
+}
+
 <div class="container">
     <div class="control-container">
-        <ejs-carousel id="defaultCarousel" dataSource="@ViewBag.dataSource" itemTemplate='<div class="slide-content">${Title}</div>'>
+        <ejs-carousel id="defaultCarousel" dataSource="@datasrc" itemTemplate='<div class="slide-content">${Title}</div>'>
         </ejs-carousel>
     </div>
 </div>

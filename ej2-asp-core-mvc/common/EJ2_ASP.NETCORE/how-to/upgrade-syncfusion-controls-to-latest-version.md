@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upgrade Syncfusion Controls to Latest Version in ##Platform_Name## | Syncfusion
-description: Checkout and learn about Upgrade Syncfusion Controls to Latest Version in ##Platform_Name##.
+description: Checkout and learn here about the Upgrade Syncfusion Controls to Latest Version in ##Platform_Name##.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -48,7 +48,7 @@ Before restoring the NuGet packages, clean the older versions of Syncfusion ASP.
 
 The following steps explain how to clean the cache:
 
-1. Delete the Syncfusion ASP.NET Core NuGet packages from the installed location `{System-driver}\Users\{user-name}\.nuget\packages\`. In Windows, the installed location of Syncfusion ASP.NET Core NuGet packages can be found using `%userprofile%\.nuget\packages\`.
+1. Delete the Syncfusion ASP.NET Core NuGet packages from the installed location `{System-driver}/Users/{user-name}/.nuget/packages/`. In Windows, the installed location of Syncfusion ASP.NET Core NuGet packages can be found using `%userprofile%/.nuget/packages/`.
 
 2. Update the latest version of Syncfusion ASP.NET Core NuGet packages.
 

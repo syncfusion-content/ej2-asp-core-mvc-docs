@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Combo Box Component
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Combo Box component of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Combo Box Control | Syncfusion
+description: Learn here all about Templates in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Templates
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Templates
+# Templates in Combo Box Control
 
 The ComboBox has been provided with several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential JS 2 Template engine to compile and render the elements properly.
 
@@ -24,9 +24,6 @@ In the following sample, each list item is split into two columns to display rel
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/templates/itemtemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Itemtemplate.cs" %}
-{% include code-snippet/combobox/templates/itemtemplate/itemtemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,9 +51,6 @@ The group header title under which appropriate sub-items are categorized can als
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/templates/grouptemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Grouptemplate.cs" %}
-{% include code-snippet/combobox/templates/grouptemplate/grouptemplate.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -82,9 +76,6 @@ The header element is shown statically at the top of the popup list items within
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/templates/headertemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Headertemplate.cs" %}
-{% include code-snippet/combobox/templates/headertemplate/headertemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -112,9 +103,6 @@ The ComboBox has options to show a footer element at the bottom of the list item
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/templates/footertemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Footertemplate.cs" %}
-{% include code-snippet/combobox/templates/footertemplate/footertemplate.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -140,9 +128,6 @@ The ComboBox is provided with support to custom design the popup list content wh
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/templates/norecordstemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Norecordstemplate.cs" %}
-{% include code-snippet/combobox/templates/norecordstemplate/norecordstemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -170,9 +155,6 @@ There is also an option to custom design the popup list content when the data fe
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/combobox/templates/actionfailuretemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Actionfailuretemplate.cs" %}
-{% include code-snippet/combobox/templates/actionfailuretemplate/actionfailuretemplate.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -187,9 +169,9 @@ There is also an option to custom design the popup list content when the data fe
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ComboBox/TemplateUGSample).
 
-
-## See Also
+## See also
 
 * [How to acheive filtering](./filtering/)
 * [How to group the data using header](./grouping/)

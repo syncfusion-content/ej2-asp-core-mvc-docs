@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection And Nesting in ##Platform_Name## Button Group Component
-description: Learn here all about Selection and Nesting in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
+title: Selection And Nesting in ##Platform_Name## Button Group Control | Syncfusion
+description: Learn here all about Selection and Nesting in Syncfusion ##Platform_Name## Button Group control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection And Nesting
 publishingplatform: ##Platform_Name##
@@ -22,9 +22,6 @@ ButtonGroup supports radio type selection in which only one button can be select
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/radio/demo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/radio/demo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -51,9 +48,6 @@ ButtonGroup supports checkbox type selection in which multiple button can be sel
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/checkbox/demo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/checkbox/demo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -87,9 +81,6 @@ To initialize DropDownButton component refer [DropDownButton Getting Started doc
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/drop-down-button/demo/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/drop-down-button/demo/default.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -108,16 +99,13 @@ To initialize DropDownButton component refer [DropDownButton Getting Started doc
 
 ### SplitButton
 
-To initialize SplitButton component refer [`SplitButton Getting Started documentation`](./../../split-button/getting-started).
+To initialize SplitButton component refer [SplitButton Getting Started documentation](https://ej2.syncfusion.com/aspnetcore/documentation/split-button/getting-started).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/button-group/split-button/demo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/button-group/split-button/demo/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -133,8 +121,8 @@ To initialize SplitButton component refer [`SplitButton Getting Started document
 {% endtabs %}
 {% endif %}
 
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/ButtonGroup/ButtonGroupUGSample).
 
-
-## See Also
+## See also
 
 * [Show ButtonGroup selected state on initial render](./how-to/show-buttongroup-selected-state-on-initial-render)

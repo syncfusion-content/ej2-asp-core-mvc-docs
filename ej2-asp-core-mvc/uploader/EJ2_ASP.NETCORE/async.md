@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Async in ##Platform_Name## Uploader Component
+title: Async in ##Platform_Name## Uploader Control | Syncfusion
 description: Learn here all about Async in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Async
@@ -9,21 +9,18 @@ documentation: ug
 ---
 
 
-# Asynchronous upload
+# Asynchronous Upload Control
 
-The uploader control allows you to upload the files asynchronously. 
-The upload process requires save and remove action URL to manage the upload process in the server.
+The uploader control allows you to upload the files asynchronously. The upload process requires save and remove action URL to manage the upload process in the server.
 
-    *   The save action is necessary to handle the upload operation.
-    *   The remove action is optional, one can handle the removed files from server.
+* The save action is necessary to handle the upload operation.
+* The remove action is optional, one can handle the removed files from server.
 
 The File can be uploaded automatically or manually. For more information, you can refer to the [Auto Upload](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AutoUpload) section from the documentation.
 
 ## Multiple file upload
 
-By Default, the uploader control allows you to select and upload multiple files simultaneously. 
-The selected files are organized in a list for every file selection until you clear it by clicking clear button that is shown in footer. You can add the multiple attributes to original input element of file by enabling the multiple file selection. 
-The following example explains about [multiple](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Multiple) file upload settings.
+By Default, the uploader control allows you to select and upload multiple files simultaneously. The selected files are organized in a list for every file selection until you clear it by clicking clear button that is shown in footer. You can add the multiple attributes to original input element of file by enabling the multiple file selection. The following example explains about [multiple](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Multiple) file upload settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -52,9 +49,9 @@ The following example explains about [multiple](https://help.syncfusion.com/cr/a
 
 ## Single file upload
 
-You can select and upload a single file by disabling the [multiple](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Multiple) file selection property. 
-The file list item is removed for every selection and it always maintain a single file to upload.
-You can remove the multiple attributes form the original input element of file by enabling the single file upload property. 
+You can select and upload a single file by disabling the [multiple](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Multiple) file selection property.
+
+The file list item is removed for every selection and it always maintain a single file to upload. You can remove the multiple attributes form the original input element of file by enabling the single file upload property.
 
 The following example explains about single file upload settings.
 

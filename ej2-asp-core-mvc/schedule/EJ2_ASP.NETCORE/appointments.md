@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appointments in ##Platform_Name## Schedule Component
+title: Appointments in ##Platform_Name## Syncfusion Schedule Component
 description: Learn here all about Appointments in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appointments
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appointments
+# Appointments in ##Platform_Name## Schedule Component
 
 Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. The Scheduler events can be categorized as,
 
@@ -248,9 +248,9 @@ There are four repeat types available namely,
 
 ### Recurrence properties
 
- The properties based on which the recurrence appointments are created with its respective time period are depicted in the following table. Also, the valid rule string can be referred from [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications.
+ The properties based on which the recurrence appointments are created with its respective time period are depicted in the following table. Also, the valid rule string can be referred from [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications.
 
- > Refer [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
+ > Refer [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications for valid recurrence rule string.
 
 | Property | Purpose | Example |
 |-------|---------| --------- |
@@ -482,6 +482,8 @@ Appointments can be rescheduled to any time by dragging and dropping them onto t
 We can drag and drop multiple appointments by enabling the `allowMultiDrag` property. We can select multiple appointments by holding the CTRL key. Once the events are selected, we can leave the CTRL key and start dragging the event.
 
 We can also drag multiple events from one resource to another resource. In this case, if all the selected events are in the different resources, then all the events should be moved to the single resource that is related to the target event.
+
+>Note: Multiple events drag and drop is not supported on mobile devices.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -755,6 +757,7 @@ To enable the inline edit mode, single click on any of the existing appointmentâ
 The inline option can be enabled/disabled on the Scheduler by using the allowInline API, whereas its default value is set to false.
 
 While using the `allowInline` the `showQuickInfo` will be turned off. The `quickPopup` will not show on clicking the work cell or clicking the appointment when the `allowInline` property is set to true.
+
 In work cells, select multiple cells using keyboard, and then press enter key. The appointment wrapper will be created, and focus will be on the subject field. Also, consider the overlapping scenarios when creating an inline event.
 
 ### Normal Event

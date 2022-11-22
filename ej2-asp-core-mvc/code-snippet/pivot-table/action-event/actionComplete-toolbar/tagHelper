@@ -1,5 +1,5 @@
 <ejs-pivotview id="pivotview" allowExcelExport="true" allowNumberFormatting="true" allowConditionalFormatting="true" allowPdfExport="true" showToolbar="true" allowCalculatedField="true" showFieldList="true" width="100%" height="300" toolbar="@(new List<string>() {"New", "Save", "SaveAs", "Rename", "Remove", "Load",
-"Grid", "Chart", "Export", "SubTotal", "GrandTotal", "ConditionalFormatting", "NumberFormatting", "FieldList" })" actionComplete:"actionComplete">
+"Grid", "Chart", "Export", "SubTotal", "GrandTotal", "ConditionalFormatting", "NumberFormatting", "FieldList" })" actionComplete="actionComplete">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
         <e-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
@@ -23,7 +23,7 @@
 
 <script>
     function actionComplete(args) {
-        if (args.actionName == 'New report added' && args.actionName == 'Report saved') {
+        if (args.actionName == 'New report added' || args.actionName == 'Report saved') {
             // Triggers when the toolbar UI actions such as add new report and save current report icon are completed.
         }
     }

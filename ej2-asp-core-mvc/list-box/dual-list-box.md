@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dual List Box in ##Platform_Name## List Box Component
+title: Dual List Box in ##Platform_Name## List Box Control | Syncfusion
 description: Learn here all about Dual List Box in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dual List Box
@@ -9,10 +9,9 @@ documentation: ug
 ---
 
 
-# Dual list box
+# Dual list box in ##Platform_Name## ListBox Control
 
-The dual list box allows the user to move items between two list boxes by clicking the toolbar buttons. Dual list box can be created by listing items in the
-[`toolbarSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~ToolbarSettings.html) along with the `scope` property.
+The dual list box allows the user to move items between two list boxes by clicking the toolbar buttons. Dual list box can be created by listing items in the [`toolbarSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~ToolbarSettings.html) along with the `scope` property.
 
 The following operations can be performed in dual list box,
 
