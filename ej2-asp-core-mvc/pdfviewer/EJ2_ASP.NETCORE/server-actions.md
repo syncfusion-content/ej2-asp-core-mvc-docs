@@ -8,7 +8,7 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# Server Actions
+# Server Actions in EJ2 ASP.NET CORE PDF Viewer
 
 Syncfusion PDF Viewer control is client-server oriented. It processes the PDF document on the server-side and sends the processed PDF data to the client to render the PDF document and for further operations in the PDF Viewer.
 

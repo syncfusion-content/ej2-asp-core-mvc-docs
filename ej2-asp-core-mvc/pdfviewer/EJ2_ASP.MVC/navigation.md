@@ -8,7 +8,6 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-
 # Navigation in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 
 The ASP.NET Core PDF Viewer supports different internal and external navigations.
