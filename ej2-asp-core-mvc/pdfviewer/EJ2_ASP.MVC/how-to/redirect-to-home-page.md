@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Redirect To Home Page in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
-description: Learn here all about Redirect To Home Page in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+description: Learn how to redirect to Home Page in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Redirect To Home Page
 publishingplatform: ej2-asp-core-mvc

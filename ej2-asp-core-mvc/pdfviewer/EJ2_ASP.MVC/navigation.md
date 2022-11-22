@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Navigation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Navigation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Navigation in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Navigation in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Navigation
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
 
-# Navigation
+# Navigation in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 
 The ASP.NET Core PDF Viewer supports different internal and external navigations.
 
@@ -89,9 +89,9 @@ You can change the open state of the hyperlink in the PDF Viewer by using the fo
 
 ## Update page navigation programmatically
 
-You can update the page navigation options such as previous page, next page programmatically by using the `goToPreviousPage()` and `goToNextPage()` API's.
+Update the page navigation options such as the previous page and next page programmatically by using the `goToPreviousPage()` and `goToNextPage()` APIs.
 
-The following code sample illustrates how to perform page navigation options using button click.
+The following code sample illustrates how to perform page navigation options using a button click.
 
 ```html
 @using Syncfusion.EJ2
