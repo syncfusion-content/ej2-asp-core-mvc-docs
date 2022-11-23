@@ -220,7 +220,7 @@ this.dataManager = new DataManager({
 
  You can find the full code sample from the below GitHub location.
 
-> [View GitHub Sample]
+> [View GitHub Sample](https://github.com/SyncfusionExamples/react-grid-load-millions-of-records/)
 
 Also, you can view the hosted link for this sample [here](https://ej2.syncfusion.com/aspnetcore/Load_millions_of_records).
 
