@@ -102,16 +102,6 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 Now, add the Syncfusion ASP.NET MVC PDFViewer control in `~/Views/Home/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the DocumentPath property as below.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="PdfViewerController.cs" %}
-{% include code-snippet/pdfviewer/getting-start-mvc/PdfViewerController.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pdfviewer/getting-start-mvc/razor %}
@@ -120,8 +110,6 @@ Now, add the Syncfusion ASP.NET MVC PDFViewer control in `~/Views/Home/Index.csh
 {% include code-snippet/pdfviewer/getting-start-mvc/PdfViewerController.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 In this code line,
 

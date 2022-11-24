@@ -104,8 +104,6 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 
 Now, add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the documentPath property as below.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
@@ -361,15 +359,6 @@ namespace PDFViewerSample.Pages
 }
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="PdfViewerController.cs" %}
-{% include code-snippet/pdfviewer/getting-start-core/PdfViewerController.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 In this code,
 
