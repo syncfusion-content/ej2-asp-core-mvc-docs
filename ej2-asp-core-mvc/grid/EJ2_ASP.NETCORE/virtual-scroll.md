@@ -113,13 +113,9 @@ For example, if the row height is set as 30px and the total record count is 1000
 
 This height limitation is not related to the Grid component. It fully depends on the default behavior of the browser. The same issue is reproduced in the normal HTML table too.
 
-In the below image, html table is rendered in the chrome browser and describe the height limitation issue.
+The following image illustrates the height limitation issue of a normal HTML table in different browsers (Chrome and Firefox).
 
-![Html table with chrome](../images/chrome.gif)
-
-In the below image, html table is rendered in the firefox browser and describe the height limitation issue.
-
-![Html table with firefox](../images/firebox.gif)
+![Browser height limitation in HTML table](../images/html-table.gif)
 
 Grid component also faced the same issue as mentioned in the below image.
 
@@ -224,19 +220,17 @@ this.dataManager = new DataManager({
 
 Also, you can view the hosted link for this sample [here](https://ej2.syncfusion.com/aspnetcore/Load_millions_of_records).
 
+![Prevent browser height limitation](../images/external-button.png)
+
 > If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
 
 ### Solution 2: Using RowHeight property
 
 You can reduce the [row height](https://ej2.syncfusion.com/aspnetcore/documentation/grid/row/row-height) using the [RowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property of the Grid. It will reduce the overall height to accommodate more rows. But this approach optimizes the limitation, but if the height limit is reached after reducing row height also, you have to opt for the previous solution or use paging.
 
-When rowHeight property is set as "36px" to the grid, you can view nearly 0.6 million records as shown in the below image.
+In the following image, you can see how many records will be scrollable when setting rowHeight to "36px" and "30px".
 
-![Grid Without Row Height](../images/ReactGrid.gif)
-
-After setting rowHeight property as "30px" to the grid, you can view upto 0.7 million records as shown in the below image.
-
-![Grid With Row Height](../images/RowHeight.gif)
+![Row Height](../images/row-height.gif)
 
 ### Solution 3: Using paging instead of virtual scrolling
 
