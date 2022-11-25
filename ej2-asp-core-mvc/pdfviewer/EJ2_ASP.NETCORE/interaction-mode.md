@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Interaction_mode in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Interaction_mode in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Interaction_mode in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Interaction_mode in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Interaction_mode
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -19,7 +19,8 @@ In this mode, the text selection can be performed in the PDF document loaded in 
 
 ```html
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
+        <ejs-pdfviewer 
+                id="pdfviewer"
                 style="height:600px"
                 serviceUrl="/api/PdfViewer"
                 documentPath=@ViewBag.DocumentPath
@@ -40,7 +41,8 @@ You can switch the interaction mode of PDF Viewer by using the following code sn
 
 ```html
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
+        <ejs-pdfviewer 
+                id="pdfviewer"
                 style="height:600px"
                 serviceUrl="/api/PdfViewer"
                 documentPath=@ViewBag.DocumentPath

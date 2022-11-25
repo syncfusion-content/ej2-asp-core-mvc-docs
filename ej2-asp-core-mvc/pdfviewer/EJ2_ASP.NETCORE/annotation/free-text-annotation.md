@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Free Text Annotation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Free Text Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Free Text Annotation in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Free Text Annotation in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Free Text Annotation
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -31,14 +31,18 @@ Refer to the following code sample to switch to the Free Text annotation mode.
     <!--Element to set free text annotation mode-->
     <button id="set" onclick="addAnnot()">FreeText</button>
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath>
+        <ejs-pdfviewer id="pdfviewer" 
+            style="height:600px" 
+            serviceUrl="/api/PdfViewer" 
+            documentPath=@ViewBag.DocumentPath>
         </ejs-pdfviewer>
     </div>
     <script>
-            function addAnnot() {
-                var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-                pdfViewer.annotation.setAnnotationMode('FreeText');
-            }
+        function addAnnot() 
+        {
+            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+            pdfViewer.annotation.setAnnotationMode('FreeText');
+        }
     </script>
 ```
 
@@ -109,8 +113,12 @@ Refer to the following code sample to set the default free text annotation setti
 
 ```html
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath
-                       freeTextSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerFreeTextSettings {FillColor="green", BorderColor="blue", FontColor="yellow"})">
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath
+            freeTextSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerFreeTextSettings
+            {FillColor="green", BorderColor="blue", FontColor="yellow"})">
         </ejs-pdfviewer>
     </div>
 ```
@@ -119,6 +127,11 @@ You can also enable the autofit support for free text annotation by using the En
 
 ```html
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath="PDF_Succinctly.pdf" freeTextSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerFreeTextSettings {EnableAutoFit = true})"></ejs-pdfviewer>
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath="PDF_Succinctly.pdf"
+            freeTextSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerFreeTextSettings {EnableAutoFit = true})">
+        </ejs-pdfviewer>
     </div>
 ```

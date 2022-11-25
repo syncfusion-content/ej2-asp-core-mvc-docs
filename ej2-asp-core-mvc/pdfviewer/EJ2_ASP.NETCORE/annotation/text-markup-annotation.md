@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Text Markup Annotation in ##Platform_Name## Pdfviewer Control | Syncfusion
-description: Learn here all about Text Markup Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Text Markup Annotation in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Text Markup Annotation in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Markup Annotation
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -44,7 +44,10 @@ Refer to the following code sample to switch to the highlight mode.
     <!--Element to set text markup annotation mode-->
     <button id="set" onclick="addAnnot()">Highlight</button>
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath>
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath>
         </ejs-pdfviewer>
     </div>
     <script>
@@ -63,7 +66,10 @@ Refer to the following code sample to switch back to normal mode from the highli
     <!--Element to set normal mode-->
     <button id="setNone" onclick="setNone()">Normal Mode</button>
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath>
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath>
         </ejs-pdfviewer>
     </div>
     <script>
@@ -108,7 +114,10 @@ Refer to the following code sample to switch to the underline mode.
     <!--Element to set text markup annotation mode-->
     <button id="set" onclick="addAnnot()">Underline</button>
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath>
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath>
         </ejs-pdfviewer>
     </div>
     <script>
@@ -127,7 +136,10 @@ Refer to the following code sample to switch back to normal mode from the underl
     <!--Element to set normal mode-->
     <button id="setNone" onclick="setNone()">Normal Mode</button>
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath>
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath>
         </ejs-pdfviewer>
     </div>
     <script>
@@ -172,7 +184,10 @@ Refer to the following code sample to switch to the strikethrough mode.
     <!--Element to set text markup annotation mode-->
     <button id="set" onclick="addAnnot()">Strikethrough</button>
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath>
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath>
         </ejs-pdfviewer>
     </div>
     <script>
@@ -191,7 +206,10 @@ Refer to the following code sample to switch back to normal mode from the strike
     <!--Element to set normal mode-->
     <button id="setNone" onclick="setNone()">Normal Mode</button>
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath>
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath>
         </ejs-pdfviewer>
     </div>
     <script>
@@ -247,10 +265,16 @@ Refer to the following code sample to set the default annotation settings.
 
 ```html
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath
-            highlightSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHighlightSettings {Author="Guest User", Color="#ffff00", Opacity=0.9})"
-            underlineSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerUnderlineSettings {Author="Guest User", Color="#00ffff", Opacity=0.9})"
-            strikethroughSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStrikethroughSettings {Author="Guest User", Color="#ff00ff", Opacity=0.9})" >
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath
+            highlightSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHighlightSettings
+            {Author="Guest User", Color="#ffff00", Opacity=0.9})"
+            underlineSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerUnderlineSettings
+            {Author="Guest User", Color="#00ffff", Opacity=0.9})"
+            strikethroughSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStrikethroughSettings
+            {Author="Guest User", Color="#ff00ff", Opacity=0.9})" >
         </ejs-pdfviewer>
     </div>
 ```
@@ -278,7 +302,10 @@ Refer to the following code sample for calling undo and redo actions from the cl
     <!--Element to call redo-->
     <button id="redo" onclick="Redo()">Redo</button>
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath>
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath>
         </ejs-pdfviewer>
     </div>
     <script>
@@ -308,7 +335,11 @@ The PDF Viewer control provides an option to disable the text markup annotation 
 
 ```html
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" enableTextMarkupAnnotation=false serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath>
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            enableTextMarkupAnnotation=false
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath>
         </ejs-pdfviewer>
     </div>
 ```

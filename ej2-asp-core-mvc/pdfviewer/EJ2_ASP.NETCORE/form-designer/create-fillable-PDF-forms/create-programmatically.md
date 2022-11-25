@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Create Programmatically in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Create Programmatically in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Create Programmatically in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Create Programmatically in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Programmatically
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -38,7 +38,11 @@ Using addFormField method, the form fields can be added to the PDF document prog
 <script>
      function documentLoaded() {
         var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
-        pdfviewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
+        pdfviewer.formDesignerModule.addFormField("Textbox", 
+        { 
+            name: "Textbox", 
+            bounds: { X: 146, Y: 229, Width: 150, Height: 24 } 
+        });
      }
 </script>
 
@@ -60,9 +64,12 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 <script>
      function documentLoaded() {
         var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
-        pdfviewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
-        pdfviewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
-        pdfviewer.formDesignerModule.updateFormField(pdfviewer.formFieldCollections[0], { backgroundColor: 'red' } );
+        pdfviewer.formDesignerModule.addFormField("Textbox", 
+        { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } });
+        pdfviewer.formDesignerModule.addFormField("Textbox", 
+        { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } });
+        pdfviewer.formDesignerModule.updateFormField(pdfviewer.formFieldCollections[0], 
+        { backgroundColor: 'red' } );
      }
 </script>
 
@@ -84,8 +91,10 @@ Using deleteFormField method, the form field can be deleted programmatically. We
 <script>
      function documentLoaded() {
         var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
-        pdfviewer.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } } );
-        pdfviewer.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } } );
+        pdfviewer.formDesignerModule.addFormField("Textbox", 
+        { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } } );
+        pdfviewer.formDesignerModule.addFormField("Textbox", 
+        { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } } );
         pdfviewer.formDesignerModule.deleteFormField(pdfviewer.formFieldCollections[0] });
      }
 </script>
@@ -167,9 +176,10 @@ Add the following code snippet to validate the form fields,
         </ejs-pdfviewer>
     </div>
 <script>
-function validateFormFields(args) {
-var nonfilledFormFields = args.nonFillableFields;
-}
+    function validateFormFields(args) 
+    {
+        var nonfilledFormFields = args.nonFillableFields;
+    }
 </script>
 
 ```
