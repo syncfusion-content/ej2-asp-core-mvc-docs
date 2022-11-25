@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Server Actions in Syncfusion ##Platform_Name## Pdfviewer Component
-description: Learn here all about Server Actions in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Server Actions in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Server Actions in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Server Actions
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 

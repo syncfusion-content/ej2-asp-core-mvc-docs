@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Navigation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Navigation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Navigation in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Navigation in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Navigation
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 

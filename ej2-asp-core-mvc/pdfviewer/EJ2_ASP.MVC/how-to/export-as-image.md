@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Export As Image in Syncfusion ##Platform_Name## Pdfviewer Component
-description: Learn here all about Export As Image in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Export As Image in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn how to export as image in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export As Image
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
