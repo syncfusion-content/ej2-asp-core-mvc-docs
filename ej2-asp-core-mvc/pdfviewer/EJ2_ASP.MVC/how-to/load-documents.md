@@ -48,7 +48,7 @@ function load1() {
 **Step 3:** Add the following code snippet in `PdfViewerController.cs` file to get the base64 string of the given document.
 
 ```cs
- public ActionResult GetDocument()
+public ActionResult GetDocument()
 {
     var docBytes = System.IO.File.ReadAllBytes(GetDocumentPath("PDF_Succinctly.pdf"));
     string docBase64 = "data:application/pdf;base64," + Convert.ToBase64String(docBytes);

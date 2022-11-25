@@ -95,8 +95,8 @@ pdfExportImage.Load(@"currentDirectory/../../../../Data/HTTP Succinctly.pdf");
 Bitmap[] bitmapimage = pdfExportImage.ExportAsImage(0, pdfExportImage.PageCount-1);
 for (int i =0; i < pdfExportImage.PageCount; i++)
 {
-// Save the exported image in disk
-bitmapimage[i].Save(@"currentDirectory/../../../../Images/" + "bitmapImage.png");
+    // Save the exported image in disk
+    bitmapimage[i].Save(@"currentDirectory/../../../../Images/" + "bitmapImage.png");
 }
 
 ```
@@ -115,8 +115,8 @@ pdfExportImage.Load(@"currentDirectory/../../../../Data/HTTP Succinctly.pdf");
 Bitmap[] bitmapimage = pdfExportImage.ExportAsImage(0, pdfExportImage.PageCount-1, 200, 200);
 for (int i =0; i < pdfExportImage.PageCount; i++)
 {
-//Save the exported image in disk
-bitmapimage[i].Save(@"currentDirectory/../../../../Images/" + "bitmapImage.png");
+    //Save the exported image in disk
+    bitmapimage[i].Save(@"currentDirectory/../../../../Images/" + "bitmapImage.png");
 }
 
 ```
@@ -135,8 +135,8 @@ pdfExportImage.Load(@"currentDirectory/../../../../Data/HTTP Succinctly.pdf");
 Bitmap[] bitmapimage = pdfExportImage.ExportAsImage(0, pdfExportImage.PageCount-1, new SizeF(200, 300), false);
 for (int i =0; i < pdfExportImage.PageCount; i++)
 {
-//Save the exported image in disk
-bitmapimage[i].Save(@"currentDirectory/../../../../Images/" + "bitmapImage.png");
+    //Save the exported image in disk
+    bitmapimage[i].Save(@"currentDirectory/../../../../Images/" + "bitmapImage.png");
 }
 
 ```
@@ -155,8 +155,8 @@ pdfExportImage.Load(@"currentDirectory/../../../../Data/HTTP Succinctly.pdf");
 Bitmap[] bitmapimage = pdfExportImage.ExportAsImage(0, pdfExportImage.PageCount-1, new SizeF(200, 300),200,200,false);
 for (int i =0; i < pdfExportImage.PageCount; i++)
 {
-//Save the exported image in disk
-bitmapimage[i].Save(@"currentDirectory/../../../../Images/" + "bitmapImage.png");
+    //Save the exported image in disk
+    bitmapimage[i].Save(@"currentDirectory/../../../../Images/" + "bitmapImage.png");
 }
 
 ```

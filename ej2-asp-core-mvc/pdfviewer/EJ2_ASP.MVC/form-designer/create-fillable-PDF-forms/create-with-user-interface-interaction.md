@@ -82,8 +82,8 @@ We provided support to undo/redo the Form Field actions that are performed at ru
             var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
             pdfviewer.undo();
         });
-         document.getElementById('redo').addEventListener('click', function() {
-             var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+        document.getElementById('redo').addEventListener('click', function() {
+            var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
             pdfviewer.redo();
         });
     </script>

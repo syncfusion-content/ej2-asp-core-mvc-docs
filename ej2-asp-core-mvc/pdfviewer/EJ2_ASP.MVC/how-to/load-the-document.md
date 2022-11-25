@@ -21,7 +21,9 @@ The following steps are used to load a PDF document.
 
 ```cs
 
-public class jsonObjects { public string document { get; set; }
+public class jsonObjects 
+{ 
+    public string document { get; set; }
     public string password { get; set; }
     public string zoomFactor { get; set; }
     public string isFileName { get; set; }

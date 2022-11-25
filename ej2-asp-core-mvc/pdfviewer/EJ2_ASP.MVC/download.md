@@ -24,7 +24,8 @@ You can invoke download action using following code snippet.,
 
 ```html
 <script>
-    window.onload = function () {
+    window.onload = function () 
+    {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         pdfViewer.download();
     }

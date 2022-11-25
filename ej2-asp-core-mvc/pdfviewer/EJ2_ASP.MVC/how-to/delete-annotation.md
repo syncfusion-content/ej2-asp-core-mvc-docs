@@ -22,11 +22,12 @@ The following steps are used to delete a specific annotation from PDF Document.
 <button type="button" onclick="deleteAnnotationbyId()">Delete Annotation by Id</button>
 
 <script>
-// Delete Annotation by ID.
-function deleteAnnotationbyId() {
-    var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-    viewer.annotationModule.deleteAnnotationById(viewer.annotationCollection[0].annotationId);
-}
+    // Delete Annotation by ID.
+    function deleteAnnotationbyId() 
+    {
+        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+        viewer.annotationModule.deleteAnnotationById(viewer.annotationCollection[0].annotationId);
+    }
 </script>
 
 ```

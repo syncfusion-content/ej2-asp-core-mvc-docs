@@ -343,8 +343,7 @@ The JsonConverter method will be called by other server action methods to conver
 public Dictionary<string, string> JsonConverter(jsonObjects results)
 {
     Dictionary<string, object> resultObjects = new Dictionary<string, object>();
-    resultObjects = results.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public)
-        .ToDictionary(prop => prop.Name, prop => prop.GetValue(results, null));
+    resultObjects = results.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public).ToDictionary(prop => prop.Name, prop => prop.GetValue(results, null));
     var emptyObjects = (from kv in resultObjects
                         where kv.Value != null
                         select kv).ToDictionary(kv => kv.Key, kv => kv.Value);

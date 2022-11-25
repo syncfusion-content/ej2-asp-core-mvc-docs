@@ -90,7 +90,7 @@ public void DeleteCache(string key)
 
 ```cs
 
- pdfviewer.CacheManager = new CacheManager(redisconnectonstring, slidingexpiration);
+pdfviewer.CacheManager = new CacheManager(redisconnectonstring, slidingexpiration);
 
 {{'**Note: The sliding expiration is the time in which the data has to be stored in the cache for a specific minutes. If 0 then it will store for 24 hours.**'| markdownify }}
 
@@ -109,7 +109,7 @@ public void DeleteCache(string key)
 
 ```cs
 
-  public string {{'**redisconnectonstring**' | markdownify }} = "xxxx, {{'**ssl=True,abortConnect=False,syncTimeout=100000**'| markdownify }}";
+    public string {{'**redisconnectonstring**' | markdownify }} = "xxxx, {{'**ssl=True,abortConnect=False,syncTimeout=100000**'| markdownify }}";
 
     [System.Web.Mvc.HttpPost]
     public object Load(Dictionary&lt;string, string&gt; jsonObject)

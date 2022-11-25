@@ -23,11 +23,12 @@ The following steps are used to unload the PDF document programmatically.
 <button type="button" onclick="unLoad()">Unload Document</button>
 
 <script>
-// Unload the PDF document.
-function unLoad() {
-    var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-    viewer.unload();
-}
+    // Unload the PDF document.
+    function unLoad() 
+    {
+        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+        viewer.unload();
+    }
 </script>
 ```
 

@@ -133,11 +133,11 @@ Add the following code snippet to validate the form fields,
 
 ```html
 <div style="width:100%;height:600px">
-@Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).ValidateFormFields("validateFormFields").EnableFormFieldsValidation(true).DocumentPath("FormFilling_Signature.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).ValidateFormFields("validateFormFields").EnableFormFieldsValidation(true).DocumentPath("FormFilling_Signature.pdf").Render()
 </div>
 <script>
-function validateFormFields(args) {
-    var nonfilledFormFields = args.nonFillableFields;
+    function validateFormFields(args) {
+        var nonfilledFormFields = args.nonFillableFields;
 }
 </script>
 
