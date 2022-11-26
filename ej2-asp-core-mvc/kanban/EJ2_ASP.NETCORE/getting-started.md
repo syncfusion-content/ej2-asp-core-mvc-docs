@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Kanban Control
-description: Checkout and learn about getting started with ##Platform_Name## Kanban control of Syncfusion Essential JS 2 and more details.
-platform: ej2-asp-core-mvc
+title: Getting Started with ASP.NET Core Kanban Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET Core Kanban control of Syncfusion Essential JS 2 and more details.
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -207,3 +206,5 @@ public class KanbanDataModels
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Kanban Example](https://ej2.syncfusion.com/aspnetcore/Kanban/Overview#/bootstrap5) that shows you how to render the Kanban in ASP.NET Core.
