@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Kanban Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Kanban control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Kanban Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Kanban control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -233,3 +233,5 @@ public class KanbanDataModels
 ## See also
 
 * [Real time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
+
+N> You can also explore our [ASP.NET MVC Kanban Example](https://ej2.syncfusion.com/aspnetmvc/Kanban/Overview#/bootstrap5) that shows you how to render the Kanban in ASP.NET MVC.
