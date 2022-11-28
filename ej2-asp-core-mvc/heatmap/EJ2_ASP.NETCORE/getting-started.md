@@ -90,7 +90,6 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-s
 {% endtabs %}
 
 ## Add ASP.NET Core HeatMap control
-
 Now, add the Syncfusion ASP.NET Core HeatMap tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
