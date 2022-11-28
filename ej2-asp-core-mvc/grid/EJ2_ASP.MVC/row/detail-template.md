@@ -110,3 +110,10 @@ Detail template is not supported with the following features:
 * Virtual scrolling
 * Pdf export
 * Excel export
+* Print
+* Row template
+* Row spanning
+* Column spanning
+* Lazy load grouping
+* State persistence
+* Hierarchy Grid
