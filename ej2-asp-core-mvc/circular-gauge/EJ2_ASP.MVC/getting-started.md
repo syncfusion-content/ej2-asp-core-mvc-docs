@@ -132,3 +132,5 @@ axes.EndAngle(120).StartAngle(240).Radius("90%").Minimum(0).Maximum(120).Add()).
 ![ASP.NET MVC CircularGauge with Axis](images/circulargauge-with-axis.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC Circular Gauge example](https://ej2.syncfusion.com/aspnetmvc/CircularGauge/DefaultFunctionalities#/material) that shows you how to render the Circular Gauge in ASP.NET MVC.
