@@ -142,7 +142,6 @@ Displaying the content using `ContentTemplate`.
 > In the dialog control, max-height is calculated based on the dialog target element height. If the target property is not configured, the document body is considered as a target. Therefore, to show a dialog in proper height, you need to add min-height to the target element.
 
 ## Modal Dialog
-
 A [`modal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
 
 While the user clicks the overlay, the action can be handled through the [`overlayClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_OverlayClick) event.
