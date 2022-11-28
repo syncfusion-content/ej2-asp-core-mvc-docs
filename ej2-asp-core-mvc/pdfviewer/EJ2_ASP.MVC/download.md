@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Download in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Download in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Download in in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Download in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Download
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -24,7 +24,8 @@ You can invoke download action using following code snippet.,
 
 ```html
 <script>
-    window.onload = function () {
+    window.onload = function () 
+    {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
         pdfViewer.download();
     }

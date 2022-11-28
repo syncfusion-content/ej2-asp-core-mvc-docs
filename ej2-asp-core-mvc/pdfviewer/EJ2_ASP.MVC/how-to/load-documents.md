@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Load Documents in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Load Documents in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Load Documents in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Load Documents in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Documents
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -48,7 +48,7 @@ function load1() {
 **Step 3:** Add the following code snippet in `PdfViewerController.cs` file to get the base64 string of the given document.
 
 ```cs
- public ActionResult GetDocument()
+public ActionResult GetDocument()
 {
     var docBytes = System.IO.File.ReadAllBytes(GetDocumentPath("PDF_Succinctly.pdf"));
     string docBase64 = "data:application/pdf;base64," + Convert.ToBase64String(docBytes);

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Interaction_mode in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Interaction_mode in Syncfusion ##Platform_Name## Pdfviewer component and more.
+title: Interaction_mode in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Interaction_mode in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Interaction_mode
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -35,7 +35,7 @@ You can switch the interaction mode of PDF Viewer by using the following code sn
 
 ```html
     <div style="width:100%;height:600px">
-     @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).InteractionMode(Syncfusion.EJ2.PdfViewer.InteractionMode.Pan).DocumentPath("Hive_Succinctly.pdf").Render()
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).InteractionMode(Syncfusion.EJ2.PdfViewer.InteractionMode.Pan).DocumentPath("Hive_Succinctly.pdf").Render()
     </div>
 ```
 

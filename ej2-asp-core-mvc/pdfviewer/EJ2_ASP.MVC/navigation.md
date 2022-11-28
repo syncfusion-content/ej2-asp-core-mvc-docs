@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Navigation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Navigation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Navigation in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Navigation in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Navigation
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -81,7 +81,7 @@ You can change the open state of the hyperlink in the PDF Viewer by using the fo
 
 ```html
     <div style="width:100%;height:600px">
-     @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).hyperlinkOpenState(Syncfusion.EJ2.PdfViewer.LinkTarget.NewTab).DocumentPath("Hive_Succinctly.pdf").Render()
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).hyperlinkOpenState(Syncfusion.EJ2.PdfViewer.LinkTarget.NewTab).DocumentPath("Hive_Succinctly.pdf").Render()
     </div>
 ```
 
