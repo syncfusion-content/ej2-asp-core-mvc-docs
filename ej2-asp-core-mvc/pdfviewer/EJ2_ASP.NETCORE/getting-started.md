@@ -365,7 +365,7 @@ namespace PDFViewerSample.Pages
 {% endhighlight %}
 {% endtabs %}
 
-In this code,
+In the above code,
 
 **ejs-pdfviewer** refers to the PDFViewer control among the EJ components with id as "pdfviewer".
 
