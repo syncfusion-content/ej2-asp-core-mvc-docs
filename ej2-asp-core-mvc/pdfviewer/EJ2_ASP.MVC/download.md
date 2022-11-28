@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Download in in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+title: Download in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 description: Learn here all about Download in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Download
@@ -8,7 +8,7 @@ publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# Download
+# Download a PDF document in PDF Viewer component
 
 The PDF Viewer supports downloading the loaded PDF file. You can enable/disable the download using the following code snippet.
 

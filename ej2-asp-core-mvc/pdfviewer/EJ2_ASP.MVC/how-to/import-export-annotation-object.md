@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import Export Annotation Object in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+title: Import Export Annotation in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
 description: Learn how to Import Export Annotation Object in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Import Export Annotation Object
