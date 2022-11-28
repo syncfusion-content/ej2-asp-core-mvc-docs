@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Dialog Control
-description: Checkout and learn about getting started with ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Dialog Control | Syncfusion 
+description: Checkout and learn about getting started with ASP.NET Core Dialog control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -142,7 +142,6 @@ Displaying the content using `ContentTemplate`.
 > In the dialog control, max-height is calculated based on the dialog target element height. If the target property is not configured, the document body is considered as a target. Therefore, to show a dialog in proper height, you need to add min-height to the target element.
 
 ## Modal Dialog
-
 A [`modal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
 
 While the user clicks the overlay, the action can be handled through the [`overlayClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_OverlayClick) event.
@@ -307,8 +306,6 @@ for Y is: top, center, bottom (or) any offset value.
 {% endtabs %}
 {% endif %}
 
-
-
 ## See also
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
@@ -318,3 +315,6 @@ for Y is: top, center, bottom (or) any offset value.
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
 * [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
 * [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
+
+
+N> You can refer to our [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dialog example](https://ej2.syncfusion.com/aspnetcore/Dialog/DefaultFunctionalities#/fabric) that shows you how to render the Dialog in ASP.NET Core.
