@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in ##Platform_Name## Query Builder Component
+title: Columns in ##Platform_Name## Query Builder Component | Syncfusion
 description: Learn here all about Columns in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Columns
@@ -11,13 +11,13 @@ documentation: ug
 
 # Column Binding
 
-The column definitions are used as the `DataSource` schema in the Query Builder. This plays a vital role in rendering column values. The query builder operations such as create or delete conditions and create or delete groups are performed based on the column definitions. The `Field` property of the `Columns` is necessary to map the data source values in the query builder columns.
+The column definitions are used as the [`dataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_DataSource) schema in the Query Builder. This plays a vital role in rendering column values. The query builder operations such as create or delete conditions and create or delete groups are performed based on the column definitions. The [`field`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilderColumn.html#Syncfusion_EJ2_QueryBuilder_QueryBuilderColumn_Field) property of the [`columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Columns) is necessary to map the data source values in the query builder columns.
 
 > If the column field is not specified in the data source, the column values will be empty.
 
 ## Auto generation
 
-The `Columns` are automatically generated when the `Columns` declaration is empty or undefined while initializing the query builder. All the columns in the `DataSource` are bound as the query builder columns.
+The [`columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Columns) are automatically generated when the [`columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Columns) declaration is empty or undefined while initializing the query builder. All the columns in the [`dataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_DataSource) are bound as the query builder columns.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +48,7 @@ The `Columns` are automatically generated when the `Columns` declaration is empt
 
 ## Labels
 
-By default, the column label is displayed from the column `Field` value. To override the default label, you have to define the `Label` value.
+By default, the column label is displayed from the column [`field`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilderColumn.html#Syncfusion_EJ2_QueryBuilder_QueryBuilderColumn_Field) value. To override the default label, you have to define the [`label`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilderColumn.html#Syncfusion_EJ2_QueryBuilder_QueryBuilderColumn_Label) value.
 
 > If both the field and headerText are not defined in the column, the column renders with “empty” header text.
 
@@ -75,11 +75,11 @@ The available operators and its supported data types are:
 
 ## Step
 
-The Query Builder allows you to set the step values to the number fields. So that, you can easily access the numeric textbox. Use the `Step` property, to set the step value for number values.
+The Query Builder allows you to set the step values to the number fields. So that, you can easily access the numeric textbox. Use the [`step`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilderColumn.html#Syncfusion_EJ2_QueryBuilder_QueryBuilderColumn_Step) property, to set the step value for number values.
 
 ## Format
 
-The Query Builder formats date and number values. Use the `Format` property, to format date and number values.
+The Query Builder formats date and number values. Use the [`format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilderColumn.html#Syncfusion_EJ2_QueryBuilder_QueryBuilderColumn_Format) property, to format date and number values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -108,7 +108,7 @@ The Query Builder formats date and number values. Use the `Format` property, to 
 
 ## Validations
 
-Validation allows you to validate the conditions and it display errors for invalid fields while using the `validateFields` method. To enable validation in the query builder, set `AllowValidation` to true. Column fields are validated after setting `AllowValidation` to true. So, you should manually configure the validation for Operator and Value fields through `Validation`.
+Validation allows you to validate the conditions and it display errors for invalid fields while using the `validateFields` method. To enable validation in the query builder, set [`allowValidation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_AllowValidation) to true. Column fields are validated after setting [`allowValidation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_AllowValidation) to true. So, you should manually configure the validation for Operator and Value fields through `Validation`.
 
 > Set `isRequired` validation for Operator and Value fields.
 > Set `min`, `max` values for number values.
