@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Model binding in ##Platform_Name## Syncfusion Query Builder Component
+title: Model binding in ##Platform_Name## Syncfusion Query Builder Component | Syncfusion
 description: Learn here all about Model binding in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Model Binding

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## List Box Component
+title: Drag And Drop in ##Platform_Name## List Box Component | Syncfusion
 description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drag And Drop
