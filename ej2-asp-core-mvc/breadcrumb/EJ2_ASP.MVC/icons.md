@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Icons
+# Icons in ASP.NET MVC Breadcrumb Control
 
 The Breadcrumb contains an icon/image to provide a visual representation of an item.
 

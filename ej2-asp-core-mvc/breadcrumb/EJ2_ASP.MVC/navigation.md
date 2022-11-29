@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Icons in Breadcrumb
+# Icons in ASP.NET MVC Breadcrumb Control
 
 ## Navigation
 
