@@ -15,7 +15,7 @@ Importing allows you to view or edit the predefined conditions. You can import t
 
 ## Initial Rendering
 
-To apply conditions initially, you can define the `Rule`. Here, you can import structured JSON object by defining the `Rule` property.
+To apply conditions initially, you can define the [`Rule`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Rule). Here, you can import structured JSON object by defining the [`Rule`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Rule) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
