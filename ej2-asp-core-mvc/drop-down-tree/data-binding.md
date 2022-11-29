@@ -146,3 +146,32 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 
 
 ![Remote datasource Sample](./images/remote-data.PNG)
+
+## Prevent Node selection
+
+You can prevent the selection of individual tree node by using the `Selectable` property. The tree node selection is not allowed while disable this property.
+
+The `Selectable` property is disabled and the selection is prevented for parent nodes in below sample.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/dropdowntree/data-binding/prevent-node/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="PreventNode.cs" %}
+{% include code-snippet/dropdowntree/data-binding/prevent-node/preventnode.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/dropdowntree/data-binding/prevent-node/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Preventnode.cs" %}
+{% include code-snippet/dropdowntree/data-binding/prevent-node/preventnode.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
