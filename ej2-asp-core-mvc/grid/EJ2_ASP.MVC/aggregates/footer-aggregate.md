@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Footer Aggregate in ##Platform_Name## Grid Component
+title: Footer Aggregate in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Footer Aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Footer Aggregate
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Footer Aggregate
+# Footer Aggregate in ASP.Net MVC Grid Component
 
 Footer aggregate value is calculated for all the rows, and it is displayed in the footer cells. Use the [`FooterTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_FooterTemplate) property to render the aggregate value in footer cells.
 
