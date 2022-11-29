@@ -1,0 +1,8 @@
+
+<ejs-grid id="Grid" dataSource="ViewBag.dataSource" allowPaging="true" TValue='ViewBag.type' toolbar="@(new List<string>() {"Add", "Edit", "Update", "Delete", "Cancel"})">
+    
+    
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal" ></e-grid-editSettings>
+    
+    
+</ejs-grid>

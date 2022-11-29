@@ -39,3 +39,33 @@ The Data Annotation can be enabled by referencing the **System.ComponentModel.Da
 {% endtabs %}
 {% endif %}
 
+## Data Annotation with Auto Generated columns
+
+Columns are automatically generated when columns declaration is empty or undefined while rendering the Grid. All the columns in the datasource are bound as grid columns.
+
+Data Annotation can be enabled by referencing the **System.ComponentModel.DataAnnotations** namespace which maps data annotation to the dataGrid.
+
+The following sample demonstrates to perform Data annotation with auto generated columns.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-annotation-auto/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Annotation.cs" %}
+{% include code-snippet/grid/data-annotation-auto/annotation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-annotation-auto/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Annotation.cs" %}
+{% include code-snippet/grid/data-annotation-auto/annotation.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
