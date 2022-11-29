@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons And Navigation in ##Platform_Name## Context Menu Component
+title: Icons And Navigation in ##Platform_Name## Context Menu Component |Syncfusion
 description: Learn here all about Icons and Navigation in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons And Navigation
@@ -12,7 +12,7 @@ documentation: ug
 
 ## Icons
 
-The ContextMenu item has an icon or image in it to provide visual representation of the action. To place the icon on a menu item, set the [`iconCss`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~IconCss.html) property to e-icons with the required icon CSS. By default, the icon is positioned to the left side of the menu item. In the following sample, the icons for Cut, Copy and Paste menu items are added using the `iconCss` property.
+The ContextMenu item has an icon or image in it to provide visual representation of the action. To place the icon on a menu item, set the [`iconCss`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~IconCss.html) property to e-icons with the required icon CSS. By default, the icon is positioned to the left side of the menu item. In the following sample, the icons for Cut, Copy and Paste menu items are added using the [`iconCss`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~IconCss.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,7 +39,7 @@ The ContextMenu item has an icon or image in it to provide visual representation
 
 
 
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the contextmenu menuItems using the `iconCss`property.
+> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the contextmenu menuItems using the [`iconCss`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~IconCss.html) property.
 
 ## Navigation
 

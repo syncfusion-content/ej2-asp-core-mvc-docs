@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigation in ##Platform_Name## Breadcrumb Component
+title: Navigation in ##Platform_Name## Breadcrumb Component | Syncfusion
 description: Learn here all about Navigation in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Navigation
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Icons in Breadcrumb
+# Icons in ASP.NET MVC Breadcrumb Control
 
 ## Navigation
 
-The Breadcrumb item navigates to the path while clicking the item. To enable navigation, `url`property was bound to the items.
+The Breadcrumb item navigates to the path while clicking the item. To enable navigation, [`Url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Breadcrumb.html#Syncfusion_EJ2_Navigations_Breadcrumb_Url) property was bound to the items.
 
 ## URL
 
@@ -87,7 +87,7 @@ Output be like the below.
 
 ## Enable navigation for last Breadcrumb item
 
-The feature enables the last item of the Breadcrumb component by setting the `enableActiveItemNavigation` property to true. In the following example, the last item of the `Breadcrumb` was enabled.
+The feature enables the last item of the Breadcrumb component by setting the [`EnableActiveItemNavigation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Breadcrumb.html#Syncfusion_EJ2_Navigations_Breadcrumb_EnableNavigation) property to true. In the following example, the last item of the `Breadcrumb` was enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -120,7 +120,7 @@ Output be like the below.
 
 ## Open URL in new page or tab
 
-To open the Breadcrumb item in a new page or tab, set the target property of the required item url to blank in the Breadcrumb component. In the following example, the target property of `All Component` item url was set to blank by using the `beforeItemRender` event which locates to the path in the new tab.
+To open the Breadcrumb item in a new page or tab, set the target property of the required item url to blank in the Breadcrumb component. In the following example, the target property of `All Component` item url was set to blank by using the `BeforeItemRender` event which locates to the path in the new tab.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
