@@ -175,3 +175,6 @@ The `Selectable` property is disabled and the selection is prevented for parent 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+![Prevent Node Selection Sample](./images/prevent-node.gif)

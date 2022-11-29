@@ -65,7 +65,7 @@ You can make any element draggable by passing the element to Draggable construct
 {% endhighlight %}
 {% endtabs %}
 
-![draggable element](./images/draggable.gif)
+![draggable element](./images/draggable)
 
 ## Creating Droppable zone
 
