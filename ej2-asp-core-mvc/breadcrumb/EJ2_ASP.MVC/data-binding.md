@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Breadcrumb Component
+title: Data Binding in ##Platform_Name## Breadcrumb Component | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding

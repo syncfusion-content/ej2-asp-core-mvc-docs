@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Drag and drop
+# Drag and drop in ASP.NET MVC ListBox Control
 
 The ListBox has support to drag an item or a group of selected items and drop it within the same list box or into another list box.
 
