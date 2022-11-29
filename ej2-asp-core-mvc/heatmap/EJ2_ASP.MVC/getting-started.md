@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Heatmap Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Heatmap control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Heatmap Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Heatmap control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -368,3 +368,5 @@ The tooltip is used when you cannot display information by using the data labels
 ![ASP.NET MVC HeatMap with Tooltip](images/heatmap-with-tooltip.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/HeatMap/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can refer to our [ASP.NET MVC HeatMap Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/heatmap-chart) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC HeatMap Chart example](https://ej2.syncfusion.com/aspnetmvc/HeatMapChart/Default#/material) that shows you how to render the HeatMap Chart in ASP.NET MVC.
