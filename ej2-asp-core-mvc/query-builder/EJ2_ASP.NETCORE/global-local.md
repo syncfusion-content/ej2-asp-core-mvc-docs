@@ -11,7 +11,7 @@ documentation: ug
 
 # Localization
 
-The `Localization` library allows you to localize the default text content of the Query Builder. The Query Builder has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `Locale` value and translation object.
+The `Localization` library allows you to localize the default text content of the Query Builder. The Query Builder has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Locale) value and translation object.
 
 The following list of properties and its values are used in the Query Builder.
 

@@ -13,7 +13,7 @@ documentation: ug
 
 ## Icons
 
-The menu item contains an icon/image in it to provide a visual representation of an action. To place the icon on a menu item, set the `iconCss` property with the required icon CSS. By default, the icon is positioned at the left of the menu item. In the following sample, the icons of `File` and `Edit` menu items and `Open`, `Save`, `Cut`, `Copy`,and `Paste` sub menu items are added using the `iconCss` property.
+The menu item contains an icon/image in it to provide a visual representation of an action. To place the icon on a menu item, set the [`IconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.MenuItem.html#Syncfusion_EJ2_Navigations_MenuItem_IconCss) property with the required icon CSS. By default, the icon is positioned at the left of the menu item. In the following sample, the icons of `File` and `Edit` menu items and `Open`, `Save`, `Cut`, `Copy`,and `Paste` sub menu items are added using the `iconCss` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +71,7 @@ Navigation in Menu is used to navigate to the other web page when a menu item is
 
 ## Multilevel nesting
 
-The Menu supports multiple level nesting, and it can be achieved by mapping the `items` property inside the parent `menuItems`.
+The Menu supports multiple level nesting, and it can be achieved by mapping the [`Items`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_Items) property inside the parent `menuItems`.
 
 In the following sample, three-level nesting of menu has been provided.
 

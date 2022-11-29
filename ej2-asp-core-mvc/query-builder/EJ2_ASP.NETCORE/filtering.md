@@ -11,8 +11,7 @@ documentation: ug
 
 # Filtering
 
-Query Builder allows you to create or delete conditions and groups. You can use `ShowButtons` to enable/disable these buttons.
-
+Query Builder allows you to create or delete conditions and groups. You can use [`showButtons`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_ShowButtons) to enable/disable these buttons.
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
