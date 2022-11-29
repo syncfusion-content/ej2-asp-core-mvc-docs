@@ -67,3 +67,32 @@ You can format the aggregate value result by using the [`Format`](https://help.s
 {% endtabs %}
 {% endif %}
 
+
+## How to place aggregates on top of the Grid
+
+By default, the aggregated values are placed at the bottom of the footer section. It is possible to place the aggregated values at the top of the header. This is achieved by using the [DataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event, `getHeaderContent`, and `getFooterContent` methods of the Grid.
+
+In the following sample, the footer element is appended to the header element using the `getHeaderContent` and `getFooterContent` methods in the `DataBound` event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/aggregate/top-aggregate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Aggregate.cs" %}
+{% include code-snippet/grid/aggregate/top-aggregate/top-aggregate.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/aggregate/top-aggregate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Aggregate.cs" %}
+{% include code-snippet/grid/aggregate/top-aggregate/top-aggregate.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
