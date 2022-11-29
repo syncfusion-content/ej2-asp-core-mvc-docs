@@ -12,7 +12,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
         public ActionResult Nodes() {
 
             List<DiagramConnector> Connectors = new List<DiagramConnector>();
-            Connectors.Add(new DiagramConnector() { Id = "connector", SourcePoint = new DiagramPoint() { X = 100, Y = 100 }, TargetPoint = new DiagramPoint() { X = 300, Y = 300 }, Type = Segments.Orthogonal  });
+            Connectors.Add(new DiagramConnector() { Id = "connector", SourcePoint = new DiagramPoint() { X = 100, Y = 100 }, TargetPoint = new DiagramPoint() { X = 300, Y = 300 }, Type = Segments.Orthogonal , MaxSegmentThumb = 3 ,  Constraints = ConnectorConstraints.Default & ~ConnectorConstraints.DragSegmentThumb });
             ViewBag.connectors = Connectors;
 
 
