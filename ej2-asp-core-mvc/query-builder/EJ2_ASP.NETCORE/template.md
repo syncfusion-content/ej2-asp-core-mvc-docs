@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Query Builder Component
+title: Template in ##Platform_Name## Query Builder Component | Syncfusion
 description: Learn here all about Template in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Template

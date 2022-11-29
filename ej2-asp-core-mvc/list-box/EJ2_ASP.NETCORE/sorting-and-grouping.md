@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting And Grouping in ##Platform_Name## List Box Component
+title: Sorting And Grouping in ##Platform_Name## List Box Component | Syncfusion
 description: Learn here all about Sorting And Grouping in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sorting And Grouping

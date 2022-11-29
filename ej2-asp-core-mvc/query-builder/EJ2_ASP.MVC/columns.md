@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in ##Platform_Name## Query Builder Component
+title: Columns in ##Platform_Name## Query Builder Component | Syncfusion
 description: Learn here all about Columns in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Columns

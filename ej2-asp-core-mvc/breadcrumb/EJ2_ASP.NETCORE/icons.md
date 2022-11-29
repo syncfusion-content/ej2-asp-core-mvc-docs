@@ -15,11 +15,11 @@ The Breadcrumb component contains an icon or image to provide a visual represent
 
 ## Loading icon in BreadcrumbItem
 
-To load the icon on the breadcrumb item, set the `iconCss` property.
+To load the icon on the breadcrumb item, set the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.BreadcrumbItem.html#Syncfusion_EJ2_Navigations_BreadcrumbItem_IconCss) property.
 
 ### Breadcrumb with Font Icon
 
-To place the font icon on the breadcrumb item, set the `iconCss` property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the item.
+To place the font icon on the breadcrumb item, set the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.BreadcrumbItem.html#Syncfusion_EJ2_Navigations_BreadcrumbItem_IconCss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,7 +44,7 @@ To place the font icon on the breadcrumb item, set the `iconCss` property to `e-
 
 ### Breadcrumb with Image
 
-In the Breadcrumb component, images can be added for the items using the `iconCss` property. In the following example, an image was added to the breadcrumb item by using the iconCss class `e-image`, specifying height and width.
+In the Breadcrumb component, images can be added for the items using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.BreadcrumbItem.html#Syncfusion_EJ2_Navigations_BreadcrumbItem_IconCss) property. In the following example, an image was added to the breadcrumb item by using the iconCss class `e-image`, specifying height and width.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +71,7 @@ In the Breadcrumb component, images can be added for the items using the `iconCs
 
 ### Breadcrumb with SVG Image
 
-In the Breadcrumb component, SVG image can be added for the items using the `iconCss` property. In the following example, SVG image was added to the breadcrumb item by using the iconCss class `e-image`, specifying height and width.
+In the Breadcrumb component, SVG image can be added for the items using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.BreadcrumbItem.html#Syncfusion_EJ2_Navigations_BreadcrumbItem_IconCss) property. In the following example, SVG image was added to the breadcrumb item by using the iconCss class `e-image`, specifying height and width.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -151,7 +151,7 @@ To display only icons for the items, add icons using the `iconCss` property. In 
 
 ## Show icon only for first item
 
-To show icon only for the first item in the Breadcrumb component, add icons to the first item using the `iconCss` property. In the following example, the icon was provided only for the first item by setting the `iconCss` property.
+To show icon only for the first item in the Breadcrumb component, add icons to the first item using the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.BreadcrumbItem.html#Syncfusion_EJ2_Navigations_BreadcrumbItem_IconCss) property. In the following example, the icon was provided only for the first item by setting the `iconCss` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

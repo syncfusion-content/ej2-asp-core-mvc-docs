@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## List Box Component
+title: Selection in ##Platform_Name## List Box Component | Syncfusion
 description: Learn here all about Selection in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Selection
+# Selection in ASP.NET MVC ListBox Control
 
 The ListBox provides support to select an item or a group of item by mouse or keyboard action. There are two selection modes available in list box,
 

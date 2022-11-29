@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## List Box Component
+title: Drag And Drop in ##Platform_Name## List Box Component | Syncfusion
 description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drag And Drop
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Drag and drop
+# Drag and drop in ASP.NET MVC ListBox Control
 
 The ListBox has support to drag an item or a group of selected items and drop it within the same list box or into another list box.
 

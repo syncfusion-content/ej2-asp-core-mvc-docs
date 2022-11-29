@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Popup Items in ##Platform_Name## Drop Down Button Component
+title: Popup Items in ##Platform_Name## Drop Down Button Component | Syncfusion
 description: Learn here all about popup items in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Popup Items
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Popup items
+# Popup items in ASP.NET Core DropDownButton Control
 
 ## Icons
 
