@@ -12,7 +12,7 @@ documentation: ug
 
 ## Add different types of markers
 
-Different marker objects can be added to the Maps component using the marker settings. To update different marker settings in Maps, follow the given steps.
+Different marker objects can be added to the Maps component using the marker settings. To update different marker settings in Maps, please follow the given steps.
 
 **Step 1**:
 
