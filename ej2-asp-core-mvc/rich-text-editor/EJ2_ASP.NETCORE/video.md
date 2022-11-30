@@ -182,7 +182,7 @@ Set the default Width, MinWidth, Height and MinHeight of the video element, when
 
 Through the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video),  also you can change the width and height using `Change Size` option. Once you click on the option, the video size dialog will open as below. In that, specify the width and height of the video in pixels.
 
-![ASP.NET Core Rich Text Editor Video dimension](./images/ej2-richtexteditor-.png)
+![ASP.NET Core Rich Text Editor Video dimension](./images/ej2-richtexteditor-video-size.png)
 ## Display Position
 
 Sets the default display property for the video when it is inserted in the Rich Text Editor using the `insertVideoSettings.layoutOption`.It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video elements’ layout position.
