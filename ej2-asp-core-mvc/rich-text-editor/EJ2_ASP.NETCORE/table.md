@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Table in ##Platform_Name## Rich Text Editor Component
+title: Table in ##Platform_Name## Syncfusion Rich Text Editor Component
 description: Learn here all about Table in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Table
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Table
+# Table in ASP.NET Core RichTextEditor component
 
 Rich Text Editor allows to insert table of content in edit panel and provide options to add, edit, and remove the table as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [`tableSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_TableSettings)
 
