@@ -1,6 +1,6 @@
 ---
 layout: post
-title: File Operations in ##Platform_Name## File Manager Component
+title: File Operations in ##Platform_Name## Syncfusion File Manager Component
 description: Learn here all about File Operations in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File Operations
@@ -123,7 +123,7 @@ Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-file-pro
 
 For Azure file service provider, no customizations are needed for directory upload with server side and this will work with the below default upload method code.
 
-Refer to the [GitHub](https://github.com/essential-studio/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs#L89) for more details.
+Refer to the [GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20MVC%20Razor%20Examples) for more details.
 
 ### NodeJS file service provider
 
