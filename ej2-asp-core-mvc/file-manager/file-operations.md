@@ -64,7 +64,6 @@ In the following example, directory upload is enabled/disabled on DropDownButton
 {% endif %}
 
 
-
 Output be like the below.
 
 ![Directory upload](./images/directory-upload.png)
@@ -123,7 +122,7 @@ Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-file-pro
 
 For Azure file service provider, no customizations are needed for directory upload with server side and this will work with the below default upload method code.
 
-Refer to the [GitHub](https://github.com/essential-studio/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs#L89) for more details.
+Refer to the [GitHub](https://github.com/essential-studio/azure-aspcore-file-provider) for more details.
 
 ### NodeJS file service provider
 
