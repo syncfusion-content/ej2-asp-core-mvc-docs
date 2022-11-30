@@ -64,7 +64,6 @@ In the following example, directory upload is enabled/disabled on DropDownButton
 {% endif %}
 
 
-
 Output be like the below.
 
 ![Directory upload](./images/directory-upload.png)
