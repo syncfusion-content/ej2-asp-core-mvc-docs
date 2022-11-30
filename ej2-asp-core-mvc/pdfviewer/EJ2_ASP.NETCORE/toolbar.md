@@ -69,7 +69,7 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
                 serviceUrl="/api/PdfViewer"
                 documentPath=@ViewBag.DocumentPath
                 enableToolbar="true"
-                toolbarSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings { ShowTooltip = true, ToolbarItem = "OpenOption"  })"
+                toolbarSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerToolbarSettings { ShowTooltip = true, ToolbarItems = "OpenOption"  })"
                 >
         </ejs-pdfviewer>
     </div>
