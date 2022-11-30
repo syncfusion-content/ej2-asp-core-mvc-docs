@@ -182,7 +182,7 @@ Set the default width, minWidth, height and minHeight of the video element, when
 
 Through the [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video), also you can change the width and height using `Change Size` option. Once you click on the option, the video size dialog will open as below. In that, specify the width and height of the video in pixels
 
-![Rich Text Editor Video dimension](./images/video-size.png)
+![ASP.NET MVC Rich Text Editor Video dimension](./images/ej2-richtexteditor-.png)
 
 ## Display Position
 
