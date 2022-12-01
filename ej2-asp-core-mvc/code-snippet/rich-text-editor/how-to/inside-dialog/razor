@@ -1,0 +1,42 @@
+@using Syncfusion.EJ2.Popups
+@using Syncfusion.EJ2
+
+
+    <div id="target" class="control-section">
+        @Html.EJS().Button("normalbtn").Content("Open").Render()
+        @Html.EJS().Dialog("defaultDialog").Header("Dialog Header").Open("dialogOpen").Close("dialogClose").ContentTemplate(@<div>
+            @(Html.EJS().RichTextEditor("defaultRTE").Render())
+        </div>).CloseOnEscape(true).Width("500px").Created("created").Target("#target").Buttons(ViewBag.DefaultButtons).Render()
+    </div>
+
+
+    
+    <script>
+        var dialogObj;
+        function dialogClose() {
+            dialogObj.hide();
+        }
+        function dialogOpen() {
+            debugger
+            var RTE = document.getElementById("defaultRTE").ej2_instances[0];
+            RTE.refreshUI();
+        }
+        document.getElementById('normalbtn').onclick = function () {
+            dialogObj.show();
+        };
+        function dlgButtonClick() {
+            dialogObj.hide();
+        }
+        function created() {
+            dialogObj = this;
+        }
+    </script>
+
+<style>
+
+    #target {
+        height: 400px
+    }
+   
+</style>
+
