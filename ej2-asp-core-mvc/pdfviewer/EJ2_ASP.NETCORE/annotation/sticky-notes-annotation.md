@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Sticky Notes Annotation in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Sticky Notes Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Sticky Notes Annotation in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Sticky Notes Annotation in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sticky Notes Annotation
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -62,8 +62,12 @@ After editing the default opacity using the Edit Opacity tool, they will be chan
 
 ```html
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath
-                       stickyNotesSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStickyNotesSettings {Author="Syncfusion"})">
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath
+            stickyNotesSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStickyNotesSettings
+            {Author="Syncfusion"})">
         </ejs-pdfviewer>
     </div>
 ```
@@ -74,7 +78,11 @@ The PDF Viewer control provides an option to disable the sticky note annotations
 
 ```html
     <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" enableStickyNotesAnnotation=false serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath>
+        <ejs-pdfviewer id="pdfviewer"
+            style="height:600px"
+            enableStickyNotesAnnotation=false
+            serviceUrl="/api/PdfViewer"
+            documentPath=@ViewBag.DocumentPath>
         </ejs-pdfviewer>
     </div>
 ```
