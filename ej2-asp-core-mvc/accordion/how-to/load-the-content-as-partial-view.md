@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load The Content As Partial View in ##Platform_Name## Accordion Component
+title: Load The Content As Partial View in ##Platform_Name## Accordion Control | Syncfusion
 description: Learn here all about how to load the content as partial view in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load The Content As Partial View
