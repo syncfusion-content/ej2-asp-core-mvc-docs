@@ -1,0 +1,14 @@
+@using Syncfusion.EJ2.Notifications
+
+<ejs-skeleton id="skeleton" shape="Circle" width="60px" cssClass="e-customize"></ejs-skeleton>
+
+<style>
+    .e-customize.e-skeleton.e-shimmer-wave::after{
+        background-image: linear-gradient(90deg, transparent calc(50% - 100px), 
+        rgb(30 128 234 / 50%) 50%, 
+        transparent calc(50% + 100px));
+    }
+    .e-customize.e-skeleton.e-skeleton-circle{
+        background-color: #a8c1f2;
+    }
+</style>
