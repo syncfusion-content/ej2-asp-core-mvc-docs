@@ -122,10 +122,7 @@ Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-file-pro
 
 For Azure file service provider, no customizations are needed for directory upload with server side and this will work with the below default upload method code.
 
-Refer to the [GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20MVC%20Razor%20Examples) for more details.
-
-Refer [link](https://github.com/essential-studio/)
-Refer [link](https://github.com/SyncfusionExamples)
+Refer to the [GitHub](https://github.com/essential-studio/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs#L89) for more details.
 
 ### NodeJS file service provider
 
