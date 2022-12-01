@@ -40,5 +40,3 @@ The below demo explains how to create the Accordion items dynamically and then t
 
 
 ![Alt text](../images/mvc.PNG)
-
-![Alt text](../images/core.PNG)
