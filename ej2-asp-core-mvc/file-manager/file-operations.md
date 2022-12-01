@@ -124,6 +124,9 @@ For Azure file service provider, no customizations are needed for directory uplo
 
 Refer to the [GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20MVC%20Razor%20Examples) for more details.
 
+Refer [link](https://github.com/essential-studio/)
+Refer [link](https://github.com/SyncfusionExamples)
+
 ### NodeJS file service provider
 
 To perform the directory upload in the NodeJS file service provider, use the below code snippet in `app.post` method in the `filesystem-server.js` file.
