@@ -61,15 +61,15 @@ The properties of the sticky note annotation can be set before creating the cont
 After editing the default opacity using the Edit Opacity tool, they will be changed to the selected values. Refer to the following code sample to set the default sticky note annotation settings.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath
-            stickyNotesSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStickyNotesSettings
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   stickyNotesSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStickyNotesSettings
             {Author="Syncfusion"})">
-        </ejs-pdfviewer>
-    </div>
+    </ejs-pdfviewer>
+</div>
 ```
 
 ## Disabling sticky note annotations
@@ -77,12 +77,12 @@ After editing the default opacity using the Edit Opacity tool, they will be chan
 The PDF Viewer control provides an option to disable the sticky note annotations feature. The code sample for disabling the feature is as follows.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            enableStickyNotesAnnotation=false
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath>
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   enableStickyNotesAnnotation=false
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
 ```

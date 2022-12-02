@@ -153,7 +153,7 @@ PdfRenderer pdfExportImage = new PdfRenderer();
 pdfExportImage.Load(@"currentDirectory/../../../../Data/HTTP Succinctly.pdf");
 //Exports the PDF document pages into images
 Bitmap[] bitmapimage = pdfExportImage.ExportAsImage(0, pdfExportImage.PageCount-1, new SizeF(200, 300),200,200,false);
-for (int i =0; i < pdfExportImage.PageCount; i++)
+for (int i = 0; i < pdfExportImage.PageCount; i++)
 {
     //Save the exported image in disk
     bitmapimage[i].Save(@"currentDirectory/../../../../Images/" + "bitmapImage.png");

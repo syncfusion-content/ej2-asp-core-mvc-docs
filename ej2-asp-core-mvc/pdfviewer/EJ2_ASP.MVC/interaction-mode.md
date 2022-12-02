@@ -18,9 +18,9 @@ The PDF Viewer provides interaction mode for easy interaction with the loaded PD
 In this mode, the text selection can be performed in the PDF document loaded in PDF Viewer. The panning and scrolling of the pages by touch cannot be performed in this mode. It allows users to select and copy text from the PDF files. This is helpful for copying and sharing text content. You can enable/disable the text selection using the following code snippet.
 
 ```html
-    <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableTextSelection(true).DocumentPath("Hive_Succinctly.pdf").Render()
-    </div>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).EnableTextSelection(true).DocumentPath("Hive_Succinctly.pdf").Render()
+</div>
 ```
 
 ![Alt text](./images/selection.png)
@@ -34,9 +34,9 @@ In this mode, the panning and scrolling of the pages by touch can be performed i
 You can switch the interaction mode of PDF Viewer by using the following code snippet.,
 
 ```html
-    <div style="width:100%;height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).InteractionMode(Syncfusion.EJ2.PdfViewer.InteractionMode.Pan).DocumentPath("Hive_Succinctly.pdf").Render()
-    </div>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).InteractionMode(Syncfusion.EJ2.PdfViewer.InteractionMode.Pan).DocumentPath("Hive_Succinctly.pdf").Render()
+</div>
 ```
 
 ## See also

@@ -41,48 +41,48 @@ In the pan mode, if the highlight mode is entered, the PDF Viewer control will s
 Refer to the following code sample to switch to the highlight mode.
 
 ```html
-    <!--Element to set text markup annotation mode-->
-    <button id="set" onclick="addAnnot()">Highlight</button>
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath>
-        </ejs-pdfviewer>
-    </div>
-    <script>
-        function addAnnot() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('Highlight');
-        }
-    </script>
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Highlight</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Highlight');
+    }
+</script>
 ```
 
 Refer to the following code sample to switch back to normal mode from the highlight mode.
 
 ```html
-    <!--Element to set text markup annotation mode-->
-    <button id="set" onclick="addAnnot()">Highlight</button>
-    <!--Element to set normal mode-->
-    <button id="setNone" onclick="setNone()">Normal Mode</button>
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath>
-        </ejs-pdfviewer>
-    </div>
-    <script>
-        function addAnnot() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('Highlight');
-        }
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Highlight</button>
+<!--Element to set normal mode-->
+<button id="setNone" onclick="setNone()">Normal Mode</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Highlight');
+    }
 
-        function setNone() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('None');
-        }
-    </script>
+    function setNone() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('None');
+    }
+</script>
 ```
 
 ## Underline a text
@@ -111,48 +111,48 @@ In the pan mode, if the underline mode is entered, the PDF Viewer control will s
 Refer to the following code sample to switch to the underline mode.
 
 ```html
-    <!--Element to set text markup annotation mode-->
-    <button id="set" onclick="addAnnot()">Underline</button>
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath>
-        </ejs-pdfviewer>
-    </div>
-    <script>
-        function addAnnot() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('Underline');
-        }
-    </script>
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Underline</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Underline');
+    }
+</script>
 ```
 
 Refer to the following code sample to switch back to normal mode from the underline mode.
 
 ```html
-    <!--Element to set text markup annotation mode-->
-    <button id="set" onclick="addAnnot()">Underline</button>
-    <!--Element to set normal mode-->
-    <button id="setNone" onclick="setNone()">Normal Mode</button>
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath>
-        </ejs-pdfviewer>
-    </div>
-    <script>
-        function addAnnot() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('Underline');
-        }
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Underline</button>
+<!--Element to set normal mode-->
+<button id="setNone" onclick="setNone()">Normal Mode</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Underline');
+    }
 
-        function setNone() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('None');
-        }
-    </script>
+    function setNone() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('None');
+    }
+</script>
 ```
 
 ## Strikethrough a text
@@ -181,48 +181,48 @@ In the pan mode, if the strikethrough mode is entered, the PDF Viewer control wi
 Refer to the following code sample to switch to the strikethrough mode.
 
 ```html
-    <!--Element to set text markup annotation mode-->
-    <button id="set" onclick="addAnnot()">Strikethrough</button>
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath>
-        </ejs-pdfviewer>
-    </div>
-    <script>
-        function addAnnot() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('Strikethrough');
-        }
-    </script>
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Strikethrough</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Strikethrough');
+    }
+</script>
 ```
 
 Refer to the following code sample to switch back to normal mode from the strikethrough mode.
 
 ```html
-    <!--Element to set text markup annotation mode-->
-    <button id="set" onclick="addAnnot()">Strikethrough</button>
-    <!--Element to set normal mode-->
-    <button id="setNone" onclick="setNone()">Normal Mode</button>
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath>
-        </ejs-pdfviewer>
-    </div>
-    <script>
-        function addAnnot() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('Strikethrough');
-        }
+<!--Element to set text markup annotation mode-->
+<button id="set" onclick="addAnnot()">Strikethrough</button>
+<!--Element to set normal mode-->
+<button id="setNone" onclick="setNone()">Normal Mode</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Strikethrough');
+    }
 
-        function setNone() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('None');
-        }
-    </script>
+    function setNone() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('None');
+    }
+</script>
 ```
 
 ## Deleting a text markup annotation
@@ -264,19 +264,19 @@ The properties of the text markup annotation can be set before creating the cont
 Refer to the following code sample to set the default annotation settings.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath
-            highlightSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHighlightSettings
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   highlightSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHighlightSettings
             {Author="Guest User", Color="#ffff00", Opacity=0.9})"
-            underlineSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerUnderlineSettings
+                   underlineSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerUnderlineSettings
             {Author="Guest User", Color="#00ffff", Opacity=0.9})"
-            strikethroughSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStrikethroughSettings
-            {Author="Guest User", Color="#ff00ff", Opacity=0.9})" >
-        </ejs-pdfviewer>
-    </div>
+                   strikethroughSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStrikethroughSettings
+            {Author="Guest User", Color="#ff00ff", Opacity=0.9})">
+    </ejs-pdfviewer>
+</div>
 ```
 
 ## Performing undo and redo
@@ -297,28 +297,28 @@ The undo and redo actions can be done by the following ways:
 Refer to the following code sample for calling undo and redo actions from the client-side.
 
 ```html
-    <!--Element to call undo-->
-    <button id="undo" onclick="Undo()">Undo</button>
-    <!--Element to call redo-->
-    <button id="redo" onclick="Redo()">Redo</button>
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath>
-        </ejs-pdfviewer>
-    </div>
-    <script>
-        function Undo() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.undo();
-        }
+<!--Element to call undo-->
+<button id="undo" onclick="Undo()">Undo</button>
+<!--Element to call redo-->
+<button id="redo" onclick="Redo()">Redo</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
+<script>
+    function Undo() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.undo();
+    }
 
-        function Redo() {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.redo();
-        }
-    </script>
+    function Redo() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.redo();
+    }
+</script>
 ```
 
 ## Saving the text markup annotation
@@ -334,12 +334,12 @@ When the print tool is selected in the toolbar, the PDF document will be printed
 The PDF Viewer control provides an option to disable the text markup annotation feature. The code sample for disabling the feature is as follows.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            enableTextMarkupAnnotation=false
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath>
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   enableTextMarkupAnnotation=false
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
 ```

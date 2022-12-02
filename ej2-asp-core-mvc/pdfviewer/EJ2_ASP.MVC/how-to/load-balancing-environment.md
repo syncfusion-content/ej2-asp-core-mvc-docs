@@ -100,8 +100,8 @@ pdfviewer.CacheManager = new CacheManager(redisconnectonstring, slidingexpiratio
 
 ```cs
 
-    PdfRenderer pdfviewer = new PdfRenderer();
-    pdfviewer.CacheManager = new CacheManager(redisconnectonstring, 0);
+PdfRenderer pdfviewer = new PdfRenderer();
+pdfviewer.CacheManager = new CacheManager(redisconnectonstring, 0);
 
 ```
 
@@ -109,39 +109,39 @@ pdfviewer.CacheManager = new CacheManager(redisconnectonstring, slidingexpiratio
 
 ```cs
 
-    public string {{'**redisconnectonstring**' | markdownify }} = "xxxx, {{'**ssl=True,abortConnect=False,syncTimeout=100000**'| markdownify }}";
+public string {{'**redisconnectonstring**' | markdownify }} = "xxxx, {{'**ssl=True,abortConnect=False,syncTimeout=100000**'| markdownify }}";
 
-    [System.Web.Mvc.HttpPost]
-    public object Load(Dictionary&lt;string, string&gt; jsonObject)
+[System.Web.Mvc.HttpPost]
+public object Load(Dictionary&lt;string, string&gt; jsonObject)
+{
+    PdfRenderer pdfviewer = new PdfRenderer();
+    MemoryStream stream = new MemoryStream();
+    object jsonResult = new object();
+    if (jsonObject != null && jsonObject.ContainsKey("document"))
     {
-        PdfRenderer pdfviewer = new PdfRenderer();
-        MemoryStream stream = new MemoryStream();
-        object jsonResult = new object();
-        if (jsonObject != null && jsonObject.ContainsKey("document"))
+        if (bool.Parse(jsonObject["isFileName"]))
         {
-            if (bool.Parse(jsonObject["isFileName"]))
+            string documentPath = GetDocumentPath(jsonObject["document"]);
+            if (!string.IsNullOrEmpty(documentPath))
             {
-                string documentPath = GetDocumentPath(jsonObject["document"]);
-                if (!string.IsNullOrEmpty(documentPath))
-                {
-                    byte[] bytes = System.IO.File.ReadAllBytes(documentPath);
-                    stream = new MemoryStream(bytes);
-                }
-                else
-                {
-                    return (jsonObject["document"] + " is not found");
-                }
+                byte[] bytes = System.IO.File.ReadAllBytes(documentPath);
+                stream = new MemoryStream(bytes);
             }
             else
             {
-                byte[] bytes = Convert.FromBase64String(jsonObject["document"]);
-                stream = new MemoryStream(bytes);
+                return (jsonObject["document"] + " is not found");
             }
         }
-        {{'**pdfviewer.CacheManager = new CacheManager(redisconnectonstring, 0);**'| markdownify }}
-        jsonResult = pdfviewer.Load(stream, jsonObject);
-        return (JsonConvert.SerializeObject(jsonResult));
+        else
+        {
+            byte[] bytes = Convert.FromBase64String(jsonObject["document"]);
+            stream = new MemoryStream(bytes);
+        }
     }
+    {{'**pdfviewer.CacheManager = new CacheManager(redisconnectonstring, 0);**'| markdownify }}
+    jsonResult = pdfviewer.Load(stream, jsonObject);
+    return (JsonConvert.SerializeObject(jsonResult));
+}
 
 {{'**Note: Add the bold lines in all the controller methods.**'| markdownify }}
 

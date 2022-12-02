@@ -23,13 +23,11 @@ The following steps are used to capture the current page number.
 <button onclick="currentPage()">currentpage</button>
 
 <script>
-
     function currentPage() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         var pageNumber = viewer.currentPageNumber;
         alert("current page number is" + pageNumber);
     }
-
 </script>
 ```
 

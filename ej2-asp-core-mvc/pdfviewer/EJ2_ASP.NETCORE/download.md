@@ -13,14 +13,14 @@ documentation: ug
 The PDF Viewer supports downloading the loaded PDF file. You can enable/disable the download using the following code snippet.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-                style="height:600px"
-                serviceUrl="/api/PdfViewer"
-                documentPath=@ViewBag.DocumentPath
-                enableDownload="true">
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   enableDownload="true">
+    </ejs-pdfviewer>
+</div>
 ```
 
 ![Alt text](./images/download.png)

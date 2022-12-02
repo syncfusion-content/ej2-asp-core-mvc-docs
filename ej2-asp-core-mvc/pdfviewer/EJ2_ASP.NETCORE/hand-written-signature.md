@@ -17,8 +17,8 @@ The following code snippet describes how to enable the handwritten signature in 
 
 ```html
 <ejs-pdfviewer id="pdfviewer1"
-               serviceUrl="/api/PdfViewer"             
-               documentPath="HTTP Succinctly.pdf" 
+               serviceUrl="/api/PdfViewer"
+               documentPath="HTTP Succinctly.pdf"
                enableHandwrittenSignature="true">
 </ejs-pdfviewer>
 
@@ -50,9 +50,9 @@ The stroke color, border thickness, and opacity of the handwritten signature can
 Refer to the following code snippet to set the default handwritten signature settings.
 
 ```html
-<ejs-pdfviewer id="pdfviewer1" 
-               serviceUrl="/api/PdfViewer" 
-               documentPath="HTTP Succinctly.pdf"  
+<ejs-pdfviewer id="pdfviewer1"
+               serviceUrl="/api/PdfViewer"
+               documentPath="HTTP Succinctly.pdf"
                handWrittenSignatureSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerHandWrittenSignatureSettings {Opacity=0.5,StrokeColor="red",Thickness=3})">
 </ejs-pdfviewer>
 

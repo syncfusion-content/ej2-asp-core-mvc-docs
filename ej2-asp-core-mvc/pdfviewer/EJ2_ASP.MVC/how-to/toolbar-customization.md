@@ -169,13 +169,11 @@ new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-zoom-out-icon", Too
         currentPageBox.addEventListener('keypress', () => {
             var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
             var currentPage = document.getElementById('currentPage');
-            if ((event.which < 48 || event.which > 57) && event.which !== 8 && event.which !== 13) 
-            {
+            if ((event.which < 48 || event.which > 57) && event.which !== 8 && event.which !== 13) {
                 event.preventDefault();
                 return false;
-            } 
-            else 
-            {
+            }
+            else {
                 var currentPageNumber = parseInt((currentPage).value);
                 if (event.which === 13) {
                     if (currentPageNumber > 0 && currentPageNumber <= pdfViewer.pageCount) {
@@ -197,8 +195,7 @@ new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-zoom-out-icon", Too
         filename = upoadedFiles[0].name;
         var reader = new FileReader();
         reader.readAsDataURL(uploadedFile);
-        reader.onload = function () 
-        {
+        reader.onload = function () {
             var obj = document.getElementById('pdfviewer').ej2_instances[0];
             var uploadedFileUrl = this.result;
             obj.load(uploadedFileUrl, null);
@@ -246,13 +243,11 @@ new ToolbarItem { Type = ItemType.Button, PrefixIcon = "e-pv-zoom-out-icon", Too
     function onCurrentPageBoxKeypress(event) {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         var currentPageBox = document.getElementById('currentPage');
-        if ((event.which < 48 || event.which > 57) && event.which !== 8 && event.which !== 13) 
-        {
+        if ((event.which < 48 || event.which > 57) && event.which !== 8 && event.which !== 13) {
             event.preventDefault();
             return false;
         }
-        else 
-        {
+        else {
             var currentPageNumber = parseInt(currentPageBox.value);
             if (event.which === 13) {
                 if (currentPageNumber > 0 && currentPageNumber <= viewer.pageCount) {

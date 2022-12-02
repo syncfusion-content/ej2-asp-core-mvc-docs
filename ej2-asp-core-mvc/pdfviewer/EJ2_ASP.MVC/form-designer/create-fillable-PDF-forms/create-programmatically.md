@@ -138,7 +138,7 @@ Add the following code snippet to validate the form fields,
 <script>
     function validateFormFields(args) {
         var nonfilledFormFields = args.nonFillableFields;
-}
+    }
 </script>
 
 ```
