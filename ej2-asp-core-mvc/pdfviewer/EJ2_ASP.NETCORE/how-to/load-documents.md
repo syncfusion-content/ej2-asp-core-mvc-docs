@@ -22,10 +22,10 @@ The following steps are used to load the PDF document dynamically.
 ```html
 <button type="button" onclick="load1()">LoadDocumentFromBase64</button>
 <script>
-function load1() {
-    var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-    viewer.load("data:application/pdf;base64," + addBase64String, null);
-}
+    function load1() {
+        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+        viewer.load("data:application/pdf;base64," + addBase64String, null);
+    }
 </script>
 ```
 
@@ -34,11 +34,11 @@ function load1() {
 ```html
 <button type="button" onclick="load2()">LoadDocument</button>
 <script>
-// load document using document name.
-function load2() {
-    var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-    viewer.load("HTTP Succinctly.pdf",null)
-}
+    // load document using document name.
+    function load2() {
+        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+        viewer.load("HTTP Succinctly.pdf", null)
+    }
 </script>
 ```
 

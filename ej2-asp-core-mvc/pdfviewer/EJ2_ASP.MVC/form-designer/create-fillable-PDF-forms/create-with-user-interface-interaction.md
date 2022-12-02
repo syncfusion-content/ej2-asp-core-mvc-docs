@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Create With User Interface Interaction in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Create With User Interface Interaction in Syncfusion ##Platform_Name## Pdfviewer component of syncfusion and more.
+title: User Interface Interaction in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn how User Interface Interaction in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create With User Interface Interaction
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -72,19 +72,19 @@ The PDF Viewer control supports the clipboard operations such as cut, copy and p
 We provided support to undo/redo the Form Field actions that are performed at runtime. Use the following code example to perform undo/redo actions.
 
 ```html
-    <button id="undo">Undo</button>
-    <button id="redo">Redo</button>
-    <div style="width:100%;height:600px">
-         @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("Hive_Succinctly.pdf").Render()
-    </div>
-    <script>
-        document.getElementById('undo').addEventListener('click', function() {
-            var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
-            pdfviewer.undo();
-        });
-         document.getElementById('redo').addEventListener('click', function() {
-             var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
-            pdfviewer.redo();
-        });
-    </script>
+<button id="undo">Undo</button>
+<button id="redo">Redo</button>
+<div style="width:100%;height:600px">
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).DocumentPath("Hive_Succinctly.pdf").Render()
+</div>
+<script>
+    document.getElementById('undo').addEventListener('click', function () {
+        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+        pdfviewer.undo();
+    });
+    document.getElementById('redo').addEventListener('click', function () {
+        var pdfviewer = document.getElementById("pdfviewer").ej2_instances[0];
+        pdfviewer.redo();
+    });
+</script>
 ```

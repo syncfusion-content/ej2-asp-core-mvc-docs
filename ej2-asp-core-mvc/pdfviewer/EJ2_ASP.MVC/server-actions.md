@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Server Actions in Syncfusion ##Platform_Name## Pdfviewer Component
-description: Learn here all about Server Actions in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Server Actions in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Server Actions in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Server Actions
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -343,8 +343,7 @@ The JsonConverter method will be called by other server action methods to conver
 public Dictionary<string, string> JsonConverter(jsonObjects results)
 {
     Dictionary<string, object> resultObjects = new Dictionary<string, object>();
-    resultObjects = results.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public)
-        .ToDictionary(prop => prop.Name, prop => prop.GetValue(results, null));
+    resultObjects = results.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public).ToDictionary(prop => prop.Name, prop => prop.GetValue(results, null));
     var emptyObjects = (from kv in resultObjects
                         where kv.Value != null
                         select kv).ToDictionary(kv => kv.Key, kv => kv.Value);
