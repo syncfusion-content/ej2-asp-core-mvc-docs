@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Show Notification Dialog in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Show Notification Dialog in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Show Notification Dialog in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Show Notification Dialog in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Show Notification Dialog
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -28,12 +28,13 @@ The following steps are used to show the notification dialog in UI.
 @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("FormFillingDocument.pdf").ValidateFormFields("validateFormFields").EnableFormFieldsValidation(true).ShowNotificationDialog(false).Render()
 
 <script>
-function validateFormFields(args) {
-    var nonfilledFormFields = args.nonFillableFields;
-    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-    var errorMessage = "Kindly fill all the form fieds";
-    viewer.showNotificationPopup(errorMessage);
-}
+    function validateFormFields(args) 
+    {
+        var nonfilledFormFields = args.nonFillableFields;
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var errorMessage = "Kindly fill all the form fieds";
+        viewer.showNotificationPopup(errorMessage);
+    }
 </script>
 
 ```
