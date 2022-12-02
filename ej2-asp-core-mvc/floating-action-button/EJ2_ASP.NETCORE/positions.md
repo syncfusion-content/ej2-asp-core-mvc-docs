@@ -10,7 +10,7 @@ documentation: ug
 
 # Positions in Asp.Net Core Floating Action Button Control
 
-The floating action button can be positioned anywhere on the [Target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target) using the [Position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position   ) property. If the `Target` is not defined, then FAB is positioned based on the browser viewport.
+The floating action button can be positioned anywhere on the [Target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target) using the [Position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. If the `Target` is not defined, then FAB is positioned based on the browser viewport.
 
 The position values of Floating Action Button are as follows:
 
