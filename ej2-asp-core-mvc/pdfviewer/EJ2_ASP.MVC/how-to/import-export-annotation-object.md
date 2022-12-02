@@ -25,7 +25,7 @@ The following steps are used to import and export annotation as object.
 
 <script>
     var exportObject;
-     //Export annotation as object.
+    //Export annotation as object.
     function exportAnnotation() {
         var viewer = document.getElementById('pdfViewer').ej2_instances[0];
         viewer.exportAnnotationsAsObject().then(function (value) {

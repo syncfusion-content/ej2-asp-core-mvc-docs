@@ -37,22 +37,21 @@ In the pan mode, if the measurement annotation mode is entered, the PDF Viewer c
 Refer to the following code sample to switch to the distance annotation mode.
 
 ```html
-    <!--Element to set measurement annotation mode-->
-    <button id="set" onclick="addAnnot()">Distance</button>
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath>
-        </ejs-pdfviewer>
-    </div>
-    <script>
-        function addAnnot()
-        {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.annotation.setAnnotationMode('Distance');
-        }
-    </script>
+<!--Element to set measurement annotation mode-->
+<button id="set" onclick="addAnnot()">Distance</button>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
+<script>
+    function addAnnot() {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.annotation.setAnnotationMode('Distance');
+    }
+</script>
 ```
 
 ## Editing the properties of measurement annotation
@@ -95,23 +94,23 @@ The properties of the shape annotations can be set before creating the control u
 Refer to the following code sample to set the default annotation settings.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath
-            distanceSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerDistanceSettings
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   distanceSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerDistanceSettings
             {FillColor="blue", Opacity=0.6, StrokeColor="green"})"
-            perimeterSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerPerimeterSettings
+                   perimeterSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerPerimeterSettings
             {FillColor="green", Opacity=0.6, StrokeColor="blue"})"
-            areaSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerAreaSettings
+                   areaSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerAreaSettings
             {FillColor="yellow", Opacity=0.6, StrokeColor="orange"})"
-            radiusSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerRadiusSettings
+                   radiusSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerRadiusSettings
             {FillColor="orange", Opacity=0.6, StrokeColor="pink"})"
-            volumeSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerVolumeSettings
+                   volumeSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerVolumeSettings
             {FillColor="pink", Opacity=0.6, StrokeColor="yellow"})">
-        </ejs-pdfviewer>
-    </div>
+    </ejs-pdfviewer>
+</div>
 ```
 
 ## Editing scale ratio and unit of the measurement annotation
@@ -136,13 +135,13 @@ The Units of measurements supported for the measurement annotations in the PDF V
 The properties of scale ratio for measurement annotation can be set before creating the control using the ScaleRatioSettings as shown in the following code sample.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer"
-            style="height:600px"
-            serviceUrl="/api/PdfViewer"
-            documentPath=@ViewBag.DocumentPath
-            measurementSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerMeasurementSettings
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   measurementSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerMeasurementSettings
             {ScaleRatio=2, ConversionUnit=Syncfusion.EJ2.PdfViewer.CalibrationUnit.Cm})">
-        </ejs-pdfviewer>
-    </div>
+    </ejs-pdfviewer>
+</div>
 ```

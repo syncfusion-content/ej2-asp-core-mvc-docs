@@ -28,8 +28,7 @@ The following steps are used to show the notification dialog in UI.
 @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("FormFillingDocument.pdf").ValidateFormFields("validateFormFields").EnableFormFieldsValidation(true).ShowNotificationDialog(false).Render()
 
 <script>
-    function validateFormFields(args) 
-    {
+    function validateFormFields(args) {
         var nonfilledFormFields = args.nonFillableFields;
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         var errorMessage = "Kindly fill all the form fieds";

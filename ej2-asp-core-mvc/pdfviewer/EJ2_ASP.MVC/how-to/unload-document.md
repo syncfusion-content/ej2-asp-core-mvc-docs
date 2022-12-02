@@ -24,8 +24,7 @@ The following steps are used to unload the PDF document programmatically.
 
 <script>
     // Unload the PDF document.
-    function unLoad() 
-    {
+    function unLoad() {
         var viewer = document.getElementById('pdfViewer').ej2_instances[0];
         viewer.unload();
     }

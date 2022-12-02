@@ -24,12 +24,10 @@ The following steps are used to close the comment panel programmatically in PDF 
 <button type="button" onclick="closeCommentPanel()">CloseCommentPanel</button>
 
 <script>
-    function closeCommentPanel() 
-    {
+    function closeCommentPanel() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         viewer.viewerBase.navigationPane.closeCommentPanelContainer();
     }
-
 </script>
 
 ```

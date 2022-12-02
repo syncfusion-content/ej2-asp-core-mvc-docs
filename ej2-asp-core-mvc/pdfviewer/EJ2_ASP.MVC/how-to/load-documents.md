@@ -23,25 +23,25 @@ The following steps are used to load the PDF document dynamically.
 <button type="button" onclick="load1()">LoadDocumentFromBase64</button>
 <script>
     // Load a Base64 String
-function load1() {
-    // Sending Ajax request to the controller to get base 64 string
-    $.ajax({
-        url: '/PdfViewer/GetDocument',
-        type: 'POST',
-        cache: false,
-        processData: false,
-        contentType: false,
-        success: function (data) {
-            debugger;
-            var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-            viewer.load(data, null);
-        },
-        error: function (msg, textStatus, errorThrown) {
-            debugger;
-            alert('Exception' + msg.responseText);
-        }
-    });
-}
+    function load1() {
+        // Sending Ajax request to the controller to get base 64 string
+        $.ajax({
+            url: '/PdfViewer/GetDocument',
+            type: 'POST',
+            cache: false,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                debugger;
+                var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+                viewer.load(data, null);
+            },
+            error: function (msg, textStatus, errorThrown) {
+                debugger;
+                alert('Exception' + msg.responseText);
+            }
+        });
+    }
 </script>
 ```
 
@@ -61,11 +61,11 @@ public ActionResult GetDocument()
 ```html
 <button type="button" onclick="load2()">LoadDocumentFromBase64</button>
 <script>
-// load document using document name.
-function load2() {
-    var viewer = document.getElementById('pdfViewer').ej2_instances[0];
-    viewer.load("HTTP Succinctly.pdf", null)
-}
+    // load document using document name.
+    function load2() {
+        var viewer = document.getElementById('pdfViewer').ej2_instances[0];
+        viewer.load("HTTP Succinctly.pdf", null)
+    }
 </script>
 ```
 
