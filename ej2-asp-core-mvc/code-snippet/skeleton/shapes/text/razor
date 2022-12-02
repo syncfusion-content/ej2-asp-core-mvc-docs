@@ -1,0 +1,3 @@
+@using Syncfusion.EJ2.Notifications
+
+@Html.EJS().Skeleton("skeleton").Shape(SkeletonType.Text).Height("15px").Render()

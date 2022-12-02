@@ -108,7 +108,7 @@ Now, add the Syncfusion ASP.NET Core Accordion tag helper in `~/Pages/Index.csht
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Accordion control will be rendered in the default web browser.
 
-![ASP.NET Core Accordion control - Getting Started](images/accordion.PNG)
+![ASP.NET Core Accordion control - Getting Started](images/accordion-control.PNG)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Accordion/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
