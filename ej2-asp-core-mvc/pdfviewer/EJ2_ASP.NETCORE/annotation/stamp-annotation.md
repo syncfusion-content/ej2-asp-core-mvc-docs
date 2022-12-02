@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Stamp Annotation in ##Platform_Name## Pdfviewer Control | Syncfusion
-description: Learn here all about Stamp Annotation in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Stamp Annotation in EJ2 ASP.NET CORE PDF Viewer | Syncfusion
+description: Learn here all about Stamp Annotation in ASP.NET CORE PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Stamp Annotation
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -58,9 +58,13 @@ After editing the default opacity using the Edit Opacity tool, they will be chan
 Refer to the following code sample to set the default sticky note annotation settings.
 
 ```html
-    <div style="width:100%;height:600px">
-        <ejs-pdfviewer id="pdfviewer" style="height:600px" serviceUrl="/api/PdfViewer" documentPath=@ViewBag.DocumentPath
-                       stampSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStampSettings {Opacity=0.3, Author="Guest User"})">
-        </ejs-pdfviewer>
-    </div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath
+                   stampSettings="@(new Syncfusion.EJ2.PdfViewer.PdfViewerStampSettings
+            {Opacity=0.3, Author="Guest User"})">
+    </ejs-pdfviewer>
+</div>
 ```

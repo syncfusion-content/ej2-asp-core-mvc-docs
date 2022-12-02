@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Create Programmatically in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Create Programmatically in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Create Programmatically in EJ2 ASP.NET MVC PDF Viewer | Syncfusion
+description: Learn here all about Create Programmatically in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Programmatically
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -133,12 +133,12 @@ Add the following code snippet to validate the form fields,
 
 ```html
 <div style="width:100%;height:600px">
-@Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).ValidateFormFields("validateFormFields").EnableFormFieldsValidation(true).DocumentPath("FormFilling_Signature.pdf").Render()
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).ValidateFormFields("validateFormFields").EnableFormFieldsValidation(true).DocumentPath("FormFilling_Signature.pdf").Render()
 </div>
 <script>
-function validateFormFields(args) {
-    var nonfilledFormFields = args.nonFillableFields;
-}
+    function validateFormFields(args) {
+        var nonfilledFormFields = args.nonFillableFields;
+    }
 </script>
 
 ```
