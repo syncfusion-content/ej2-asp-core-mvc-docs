@@ -25,7 +25,7 @@ You can customize the style of a Skeleton control by using [CssClass](https://he
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Skeleton CssClass](images/skeleton-control.png)
+![ASP.NET MVC Skeleton CssClass](images/skeleton-customize.png)
 
 ## Visible
 
