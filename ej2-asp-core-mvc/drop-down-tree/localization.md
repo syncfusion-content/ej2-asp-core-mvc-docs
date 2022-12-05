@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization in Drop Down Tree Component
+# Localization in Dropdown Tree Component
 
 The Dropdown Tree component can be localized to any culture by defining the texts and messages of the Dropdown Tree in the corresponding culture. The default locale of the Dropdown Tree is `en` (English). The following table represents the default texts and messages of the Dropdown Tree in `en` culture.
 

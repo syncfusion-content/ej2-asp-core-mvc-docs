@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# File Operations in FileManager
+# File Operations in FileManager Component
 
 The file manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the file manager component.  Additionally, previewing of image files is also provided in the file manager component.
 
