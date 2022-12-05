@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding
+# Data Binding in Drop Down Tree
 
 The Dropdown Tree control provides an option to load the data either from local data sources or from remote data services. This can be done through `dataSource` property that is a member of the `fields` property. The `dataSource` property supports list of data and `DataManager`. It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
