@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toast Services in ASP.NET MVC Toast Control | syncfusion
-description: Learn here all about Toast Services in Syncfusion ASP.NET MVC Toast component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Toast Services in Syncfusion ASP.NET MVC Toast control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Toast Services
 publishingplatform: ej2-asp-core-mvc
