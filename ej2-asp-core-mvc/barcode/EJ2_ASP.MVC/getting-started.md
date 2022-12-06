@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Barcode Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Barcode control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Barcode Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Barcode control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -170,3 +170,5 @@ You can add the datamatrix code in our barcode generator component.
 ![ASP.NET MVC DataMatrix Control](images/datamatrix-control.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Barcode/ASP.NET%20MVC%20Razor%20Examples)
+
+You can also explore our [ASP.NET MVC Barcode Generator Example](https://ej2.syncfusion.com/aspnetmvc/Barcode/Ean8#/bootstrap5) that shows you how to render and confugure the Barcode in ASP.NET MVC.
