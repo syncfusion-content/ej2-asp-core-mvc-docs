@@ -129,4 +129,4 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 * [How to show different types of toast](./how-to/show-different-types-of-toast/)
 
-N> You can also explore our [ASP.NET MVC Toast Example](https://ej2.syncfusion.com/aspnetmvc/Toast/DefaultFunctionalities#/fabric) that shows you how to render the Toast in ASP.NET MVC.
+N> You can also explore our [ASP.NET MVC Toast Example](https://ej2.syncfusion.com/aspnetmvc/Toast/DefaultFunctionalities#/fabric) that shows you how to render and confugure the Toast in ASP.NET MVC.
