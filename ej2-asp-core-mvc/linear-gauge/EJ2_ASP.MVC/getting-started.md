@@ -138,3 +138,5 @@ new Syncfusion.EJ2.LinearGauge.LinearGaugeAxis
 ![ASP.NET MVC LinearGauge with Axis](images/axis.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/LinearGauge/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC Linear Gauge example](https://ej2.syncfusion.com/aspnetmvc/LinearGauge/DefaultFunctionalities#/material) that shows you how to render the Linear Gauge in ASP.NET MVC.
