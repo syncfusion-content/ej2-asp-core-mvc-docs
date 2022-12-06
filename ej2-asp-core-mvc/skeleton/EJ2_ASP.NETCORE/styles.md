@@ -22,7 +22,7 @@ You can customize the style of a Skeleton control by using [cssClass](https://he
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Skeleton CssClass](images/skeleton-customize.png)
+![ASP.NET Core Skeleton CssClass](images/skeleton-css-customize.png)
 
 ## Visible
 
