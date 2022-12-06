@@ -128,4 +128,4 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 * [How to prevent duplicate toast display](./how-to/prevent-duplicate-toast-display/)
 * [How to show different types of toast](./how-to/show-different-types-of-toast/)
 
-N> You can also explore our [ASP.NET Core Toast Example](https://ej2.syncfusion.com/aspnetcore/Toast/DefaultFunctionalities#/fabric) that shows you how to render the Toast in ASP.NET Core.
+N> You can also explore our [ASP.NET Core Toast Example](https://ej2.syncfusion.com/aspnetcore/Toast/DefaultFunctionalities#/fabric) that shows you how to render and confugure the Toast in ASP.NET Core.
