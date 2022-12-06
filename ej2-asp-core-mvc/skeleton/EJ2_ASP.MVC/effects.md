@@ -21,7 +21,7 @@ You can use the [ShimmerEffect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Skeleton Pulse Effect](images/skeleton-control.png)
+![ASP.NET MVC Skeleton Pulse Effect](images/skeleton-pulse-effect.png)
 
 Below example demonstrates a list with pulse effect skeleton.
 
@@ -34,6 +34,6 @@ Below example demonstrates a list with pulse effect skeleton.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Skeleton Pulse Effect](images/skeleton-control.png)
+![ASP.NET MVC Skeleton Pulse Effect](images/skeleton-Effect.png)
 
 
