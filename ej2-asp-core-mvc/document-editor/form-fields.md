@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Form Fields
+# Form Fields in Document Editor Component
 
 DocumentEditorContainer component provides support for inserting Text, CheckBox, DropDown form fields through in-built toolbar.
 

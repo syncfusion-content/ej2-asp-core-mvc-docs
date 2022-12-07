@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Print
+# Print in Document Editor Component
 
 To print the document, use the `print` method from document editor instance.
 

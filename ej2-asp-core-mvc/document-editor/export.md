@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Export
+# Export in Document Editor Component
 
 Document editor exports the document into various known file formats in client-side such as Microsoft Word document (.docx), text document (.txt), and its own format called **Syncfusion Document Text (.sfdt)**.
 

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Find and Replace
+# Find and Replace in Document Editor Component
 
 The document editor component searches a portion of text in the document through a built-in interface called `OptionsPane` or rich APIs. When used in combination with selection performs various operations on the search results like replacing it with some other text, highlighting it, making it bolder, and more.
 

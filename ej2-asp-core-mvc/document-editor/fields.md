@@ -9,7 +9,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Fields
+# Fields in Document Editor Component
 
 Document Editor has preservation support for all types of fields in an existing word document without any data loss.
 

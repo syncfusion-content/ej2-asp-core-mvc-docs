@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Hyperlink
+# Hyperlink in Document Editor Component
 
 Document editor supports hyperlink field. You can link a part of the document content to Internet or file location, mail address, or any text within the document.
 
