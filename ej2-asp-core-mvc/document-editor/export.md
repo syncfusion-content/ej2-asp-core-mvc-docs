@@ -42,7 +42,7 @@ The following example shows how to export documents in document editor as Syncfu
 
 
 
->To enable Sfdt export for a document editor instance, set `enableSfdtExport` to true.
+>To enable Sfdt export for a document editor instance, set [`enableSfdtExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_EnableSfdtExport) to true.
 
 ## Word export
 
@@ -73,7 +73,7 @@ The following example shows how to export the document as Word document (.docx).
 
 
 
->To enable word export for a document editor instance, set `enableWordExport` to true.
+>To enable word export for a document editor instance, set [`enableWordExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_EnableWordExport) to true.
 
 ## Text export
 
@@ -104,7 +104,7 @@ The following example shows how to export document as text document (.txt).
 
 
 
->To enable text export for a document editor instance, set `enableTextExport` to true.
+>To enable text export for a document editor instance, set [`enableTextExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_EnableTextExport) to true.
 
 ## Export as blob
 

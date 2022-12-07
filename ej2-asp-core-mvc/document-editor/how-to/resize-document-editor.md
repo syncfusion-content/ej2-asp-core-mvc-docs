@@ -15,7 +15,7 @@ This article explains how to change height and width of Document editor.
 
 ## Change height of Document Editor
 
-DocumentEditorContainer initially renders with default height. You can change the height of document editor using `height` property, the value which is in pixel.
+DocumentEditorContainer initially renders with default height. You can change the height of document editor using [`height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_Height) property, the value which is in pixel.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,11 +38,11 @@ DocumentEditorContainer initially renders with default height. You can change th
 
 
 
-Similarly, you can use `height` property for DocumentEditor also.
+Similarly, you can use [`height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_Height) property for DocumentEditor also.
 
 ## Change width of Document Editor
 
-DocumentEditorContainer initially renders with default width. You can change the width of document editor using `width` property, the value which is in percent.
+DocumentEditorContainer initially renders with default width. You can change the width of document editor using [`width`][`width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_Width) property, the value which is in percent.
 
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -66,7 +66,7 @@ DocumentEditorContainer initially renders with default width. You can change the
 
 
 
-Similarly, you can use `width` property for DocumentEditor also.
+Similarly, you can use [`width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_Width) property for DocumentEditor also.
 
 ## Resize Document Editor
 

@@ -97,7 +97,7 @@ You can customize the screen tip text for the hyperlink by using below sample co
 documenteditor.insertHyperlink('https://www.google.com', 'Google', '<<Screen tip text>>');
 ```
 
-Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog/)
+Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog)
 
 ![Add or modify the screen tip text for hyperlinks in a Word document.](images/screentip.png)
 
