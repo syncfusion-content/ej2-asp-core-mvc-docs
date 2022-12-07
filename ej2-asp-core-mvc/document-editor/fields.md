@@ -1,7 +1,12 @@
 ---
-title: "Fields"
-component: "DocumentEditor"
-description: "Learn how to use fields in JavaScript document editor"
+layout: post
+title: Fields in ##Platform_Name## Document Editor Component
+component: DocumentEditor
+description: Learn how to use fields in JavaScript document editor ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Fields
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
 # Fields
