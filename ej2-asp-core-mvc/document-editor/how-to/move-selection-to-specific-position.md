@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Move the selection to specific position in ##Platform_Name## Document Editor Component
+title: Move the selection to specific position in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn how to move the selection to specific position in Document from the ##Platform_Name## Document Editor Component
 platform: ej2-asp-core-mvc
 control: Move The Selection To Specific Position

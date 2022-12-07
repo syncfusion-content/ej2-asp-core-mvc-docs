@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Form Fields in ##Platform_Name## Document Editor Component
+title: Form Fields in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about Form Fields in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Form Fields

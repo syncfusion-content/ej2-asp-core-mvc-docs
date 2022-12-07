@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Read By Default in ##Platform_Name## Document Editor Component
+title: Read By Default in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about read by default in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Read By Default
