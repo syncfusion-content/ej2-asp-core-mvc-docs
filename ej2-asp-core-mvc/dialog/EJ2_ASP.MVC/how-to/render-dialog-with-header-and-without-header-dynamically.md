@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamically render dialog with and without headers
+title: Dynamically render dialog with and without headers in Syncfusion ASP.NET MVC
 description: The dialog header can be dynamically shown or hidden using header properties, beforeOpen, and close events.
 platform: ej2-asp-core-mvc
 control: Dynamically render the dialog header
