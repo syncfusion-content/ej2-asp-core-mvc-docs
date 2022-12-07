@@ -17,7 +17,7 @@ If you want the Document editor component to retain the document pagination (dis
 
 ## Disable optimized text measuring in `DocumentEditorContainer` instance
 
-The following example code illustrates how to disable optimized text measuring improvement in `DocumentEditorContainer` instance.
+The following example code illustrates how to disable optimized text measuring improvement in [`DocumentEditorContainer`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditorContainer.html) instance.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ The following example code illustrates how to disable optimized text measuring i
 
 ## Disable optimized text measuring in `DocumentEditor` instance
 
-The following example code illustrates how to disable optimized text measuring improvement in `DocumentEditor` instance.
+The following example code illustrates how to disable optimized text measuring improvement in [`DocumentEditor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html) instance.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

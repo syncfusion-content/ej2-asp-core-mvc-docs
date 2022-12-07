@@ -10,7 +10,7 @@ Document Editor has preservation support for all types of fields in an existing 
 
 ## Adding Fields
 
-You can add a field to the document by using [`insertField`](../api/document-editor/editor/#insertfield) method in `Editor` module.
+You can add a field to the document by using `insertField`method in `Editor` module.
 
 ```typescript
 
@@ -43,7 +43,7 @@ The following type of fields are automatically updated in Document Editor.
 
 ## Get field info
 
-You can get field code and field result of the current selected field by using [`getFieldInfo`](../api/document-editor/selection/#getfieldinfo) method in the `Selection` module.
+You can get field code and field result of the current selected field by using `getFieldInfo` method in the `Selection` module.
 
 ```typescript
 //Gets the field information of the selected field.
@@ -54,7 +54,7 @@ var fieldInfo = documenteditor.selection.getFieldInfo();
 
 ## Set field info
 
-You can modify the field code and field result of the current selected field by using [`setFieldInfo`](../api/document-editor/editor/#setfieldinfo) method in the `Editor` module.
+You can modify the field code and field result of the current selected field by using `setFieldInfo` method in the `Editor` module.
 
 ```typescript
 //Gets the field information for the selected field.
