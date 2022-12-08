@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter Menu in ##Platform_Name## Grid Control | Syncfusion
+title: Filter Menu in Syncfusion ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Filter Menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filter Menu

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Batch Editing in ##Platform_Name## Grid Control | Syncfusion
+title: Batch Editing in Syncfusion ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Batch Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Batch Editing
