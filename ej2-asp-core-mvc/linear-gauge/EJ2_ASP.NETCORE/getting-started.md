@@ -149,3 +149,5 @@ Refer below code snippet to add the axis range to Linear Gauge.
 
 * [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Linear Gauge example](https://ej2.syncfusion.com/aspnetcore/LinearGauge/Default#/material) that shows you how to render the Linear Gauge in ASP.NET Core.
