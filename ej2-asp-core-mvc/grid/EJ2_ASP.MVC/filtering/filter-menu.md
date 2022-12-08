@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter Menu in ##Platform_Name## Grid Component
+title: Filter Menu in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Filter Menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filter Menu
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filter Menu
+# Filter Menu in ASP.Net MVC Grid Component
 
 You can enable filter menu by setting the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) of [`FilterSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html) as **Menu**. The filter menu UI will be rendered based on its column type, which allows you to filter data. You can filter the records with different operators.
 
@@ -107,3 +107,11 @@ In the following sample menu filter is enabled by default and checkbox filter is
 {% endtabs %}
 {% endif %}
 
+
+## Add current selection to filter checkbox
+
+By default, the CheckBox filter can only filter the selected items. If filtering is done multiple times on the same column, the previously filtered values in the column will be cleared. Now, it is possible to retain those previous values by using the `Add current selection to filter` checkbox. This checkbox is displayed when data is searched in the search bar of the CheckBox filter.
+
+The following image describes the above mentioned behavior.
+
+![Checkbox filter](images/checkboxfilter.png)
