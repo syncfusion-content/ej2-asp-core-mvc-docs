@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to disable header and footer edit in ##Platform_Name## Document Editor Component
+title: Header/footer edit in ##Platform_Name## DocumentEditor | Syncfusion
 description: Learn how to to disable header and footer edit in Document from the Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS2 and more.
 platform: ej2-asp-core-mvc
 control: Disable Header And Footer
@@ -12,7 +12,7 @@ documentation: ug
 
 ## Disable header and footer edit in DocumentEditorContainer instance
 
-You can use [`restrictEditing`] property to disable header and footer editing based on selection context type.
+You can use [`restrictEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditorContainer.html#Syncfusion_EJ2_DocumentEditor_DocumentEditorContainer_RestrictEditing) property to disable header and footer editing based on selection context type
 
 RestrictEditing allows you to restrict the document modification and makes the Document read only mode. So, by using this property, and if selection inside header or footer, you can set this property as true.
 
@@ -62,7 +62,7 @@ The following example code illustrates how to close header and footer when selec
 
 ## Disable header and footer edit in DocumentEditor instance
 
-Like restrictEditing, you can use [`isReadOnly`] property in Document editor to disable header and footer edit.
+Like restrictEditing, you can use [`isReadOnly`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_IsReadOnly) property in Document editor to disable header and footer edit.
 
 The following example code illustrates how to header and footer edit in `DocumentEditor` instance.
 
