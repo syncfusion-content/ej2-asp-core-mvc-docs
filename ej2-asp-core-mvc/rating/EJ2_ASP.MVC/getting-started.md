@@ -114,9 +114,9 @@ You can set the rating value by using the `Value` property.
 {% endhighlight %}
 {% endtabs %}
 
-## Item Count
+## ItemsCount
 
-You can specify the rating suggestion item count using the `ItemsCount` property.
+You can specify the number of stars using the `ItemsCount` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
