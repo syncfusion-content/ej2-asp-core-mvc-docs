@@ -36,3 +36,32 @@ In the HeatMap, the cell selection is used to select the single or multiple heat
 {% endtabs %}
 {% endif %}
 
+## Enable single cell selection
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+In the HeatMap, the [`enableMultiSelect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_EnableMultiSelect) property is used to allow single cell selection. When you set the [`enableMultiSelect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_EnableMultiSelect) property to false, only one cell is selected. By default, [`enableMultiSelect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_EnableMultiSelect) property is set to true.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/selection/singleCellSelection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SingleCellSelection.cs" %}
+{% include code-snippet/heatmap/selection/singleCellSelection/singleCellSelection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+In the HeatMap, the [`enableMultiSelect`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_EnableMultiSelect) property is used to allow single cell selection. When you set the [`enableMultiSelect`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_EnableMultiSelect) property to false, only one cell is selected. By default, [`enableMultiSelect`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_EnableMultiSelect) property is set to true.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/selection/singleCellSelection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SingleCellSelection.cs" %}
+{% include code-snippet/heatmap/selection/singleCellSelection/singleCellSelection.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+

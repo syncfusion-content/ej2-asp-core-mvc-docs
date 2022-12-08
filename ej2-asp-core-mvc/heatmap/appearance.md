@@ -11,7 +11,7 @@ documentation: ug
 
 # Appearance
 
-## Cell/customizations
+## Cell customization
 
 You can customize the cell by using the [`cellSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellSettings.html) property.
 
@@ -73,7 +73,62 @@ Enable or disable the cell highlighting while hover over the heat map cells by u
 {% endtabs %}
 {% endif %}
 
+## Customize the cell value
 
+In the HeatMap, you can customize the cell value using the [`cellRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellRender.html) client-side event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/cellRender/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CellRender.cs" %}
+{% include code-snippet/heatmap/appearance/cellRender/cellRender.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/cellRender/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CellRender.cs" %}
+{% include code-snippet/heatmap/appearance/cellRender/cellRender.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+## Background color
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+In the HeatMap, you can customize the background color using the [`backgroundColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Background) property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/background-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="BackgroundColor.cs" %}
+{% include code-snippet/heatmap/appearance/background-color/background-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+In the HeatMap, you can customize the background color using the [`backgroundColor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Background) property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/background-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="BackgroundColor.cs" %}
+{% include code-snippet/heatmap/appearance/background-color/background-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Margin
 
@@ -214,35 +269,6 @@ You can change the format of the data label, such as currency, decimal, percent 
 {% endhighlight %}
 {% highlight c# tabtitle="Format.cs" %}
 {% include code-snippet/heatmap/appearance/format/format.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-## Customize the cell value
-
-In the HeatMap, you can customize the cell value using the [`cellRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellRender.html) client-side event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/appearance/cellRender/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CellRender.cs" %}
-{% include code-snippet/heatmap/appearance/cellRender/cellRender.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/appearance/cellRender/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CellRender.cs" %}
-{% include code-snippet/heatmap/appearance/cellRender/cellRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
