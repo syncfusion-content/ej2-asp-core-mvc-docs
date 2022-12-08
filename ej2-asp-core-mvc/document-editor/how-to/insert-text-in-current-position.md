@@ -22,6 +22,27 @@ The following example code illustrates how to add the text in current selection.
 // It will insert the provided text in current selection
 this.container.documentEditor.editor.insertText('Syncfusion');
 ```
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/insert-text/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Insert-text.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/insert-text/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Insert-text.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
+Please check below gif which illustrates how to insert text in current cursor position on button click:
+![Insert text in current cursor position in Javascript document editor](../images/insert_text.gif)
 
 ## Insert paragraph in current cursor position
 
