@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Move the selection to specific position in ##Platform_Name## Document Editor Component | Syncfusion
+title: Move selection to specific position in ##Platform_Name## | Syncfusion
 description: Learn how to move the selection to specific position in Document from the ##Platform_Name## Document Editor Component
 platform: ej2-asp-core-mvc
 control: Move The Selection To Specific Position
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to move the selection to specific position in Document Editor component
+# How to move the selection to specific position in Document Editor
 
 Using `select` API in selection module, You can set cursor position to anywhere in the document.
 

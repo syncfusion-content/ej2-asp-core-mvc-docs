@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview in DocumentEditor Component
 
 The Document Editor component is used to create, edit, view, and print Word documents in web applications. All the user interactions and editing operations that run purely in the client-side provides much faster editing experience to the users.
 
