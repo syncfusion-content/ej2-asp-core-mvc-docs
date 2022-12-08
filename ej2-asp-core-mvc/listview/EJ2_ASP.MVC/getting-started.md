@@ -139,3 +139,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 * [Data Binding Types](./data-binding)
 * [ListView customization](./customizing-templates)
 * [Virtualization](./virtualization)
+
+N> You can refer to our [ASP.NET MVC ListView](https://www.syncfusion.com/aspnet-mvc-ui-controls/listview) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC ListView Example](https://ej2.syncfusion.com/aspnetmvc/ListView/DefaultFunctionalities#/fluent) that shows you how to render and configure the ListView in ASP.NET MVC.
