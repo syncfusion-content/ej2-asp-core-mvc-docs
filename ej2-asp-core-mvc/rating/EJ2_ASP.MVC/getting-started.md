@@ -114,7 +114,7 @@ You can set the rating value by using the `Value` property.
 {% endhighlight %}
 {% endtabs %}
 
-## ItemsCount
+## Items count
 
 You can specify the number of stars using the `ItemsCount` property.
 
