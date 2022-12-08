@@ -121,7 +121,7 @@ You can specify the number of stars using the `ItemsCount` property.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<ejs-rating id="rating5" value=3 itemsCount=8></ejs-rating>
+<ejs-rating id="rating1" value=3 itemsCount=8></ejs-rating>
 
 {% endhighlight %}
 {% endtabs %}

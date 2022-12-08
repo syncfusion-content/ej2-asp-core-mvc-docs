@@ -121,7 +121,7 @@ You can specify the number of stars using the `ItemsCount` property.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@Html.EJS().Rating("rating5").Value(3).ItemsCount(8).Render()
+@Html.EJS().Rating("rating1").Value(3).ItemsCount(8).Render()
 
 {% endhighlight %}
 {% endtabs %}
