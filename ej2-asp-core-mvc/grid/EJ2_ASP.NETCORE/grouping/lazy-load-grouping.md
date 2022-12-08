@@ -136,10 +136,11 @@ This is demonstrated in the following sample:
 {% endif %}
 
 
+> The Grid also supports the lazy load grouping with [virtualization](https://ej2.syncfusion.com/aspnetcore/documentation/grid/virtual-scroll/)(virtual scrolling).
 
 ## Limitations for lazy load grouping
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
 * DataManager's `UrlAdaptor` and `JsonAdaptor` only have the built-in lazy load grouping support.
-* Lazy load grouping is not compatible with virtual scroll, infinite scroll and batch editing, row template etc.
+* Lazy load grouping is not compatible batch editing, row template etc.
 * Programmatic selection is not supported.
