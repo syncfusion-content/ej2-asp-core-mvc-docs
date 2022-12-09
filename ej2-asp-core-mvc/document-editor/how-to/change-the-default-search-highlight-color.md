@@ -1,6 +1,6 @@
 ---
 layout: post
-title: how to change the default search highlight color ##Platform_Name## Document Editor Component
+title: Search highlight color ##Platform_Name## Document Editor | Syncfusion
 description: Learn how to change the default search highlight color in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Change The Default Search Highlight Color
@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to change the default search highlight color in Document Editor component
+# How to change the default search highlight color in Document Editor
 
 Document editor provides an options to change the default search highlight color using [`searchHighlightColor`] in Document editor settings. The highlight color which is given in [`documentEditorSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditorContainer.html#Syncfusion_EJ2_DocumentEditor_DocumentEditorContainer_DocumentEditorSettings) will be highlighted on the searched text. By default, search highlight color is `yellow`.
 
-Similarly, you can use [`documentEditorSettings`] property for DocumentEditor also.
+Similarly, you can use [`documentEditorSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_DocumentEditorSettings) property for DocumentEditor also.
 
 The following example code illustrates how to change the default search highlight color.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change Document View in ##Platform_Name## Document Editor Component
+title: Change Document View in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about how to change document view in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Change Document View
@@ -36,7 +36,7 @@ DocumentEditor allows to change the view to web layout and print using the [`lay
 
 
 
-> Default value of `layoutType` in DocumentEditor component is `Pages`.
+> Default value of [`layoutType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditorContainer.html#Syncfusion_EJ2_DocumentEditor_DocumentEditorContainer_LayoutType) in DocumentEditor component is [`Pages`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.LayoutType.html).
 
 ## How to change the document view in DocumentEditorContainer component
 
@@ -63,4 +63,4 @@ DocumentEditorContainer component allows to change the view to web layout and pr
 
 
 
-> Default value of `layoutType` in DocumentEditorContainer component is `Pages`.
+> Default value of [`layoutType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditorContainer.html#Syncfusion_EJ2_DocumentEditor_DocumentEditorContainer_LayoutType) in DocumentEditorContainer component is [`Pages`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.LayoutType.html).
