@@ -1,0 +1,55 @@
+
+<div id="container">
+    <div id="target" class="dialog-target">
+        @Html.EJS().Button("dialogWithHeader").Content("Open with header").Render()
+        @Html.EJS().Button("dialogWithoutHeader").Content("Open without header").Render()
+        @Html.EJS().Dialog("defaultDialog").Header("Software Update").Open("dialogOpen").Visible(false).Close("dialogClose").ContentTemplate(@<div><p>Your current software version is up to date.</p></div>).Width("500px").Created("modalCreated").Target("#target").FooterTemplate("<button id='okayButton' class='e-control e-btn e-primary'>Okay</button>").Render()
+    </div>
+</div>
+
+<script>
+    var DlgHeader;
+    var dialogObj;
+    function modalCreated() {
+        dialogObj = this;
+        document.getElementById('okayButton').onclick = function (e) {
+            dlgButtonClick();
+        }
+    }
+    function modalBtnClick(withHeader) {
+        document.querySelector(".e-dlg-header-content .e-dlg-header").textContent = withHeader ? 'Software Update' : '';
+        DlgHeader = withHeader;
+        dialogObj.show();
+    }
+    var btnElementHeader = document.getElementById("dialogWithHeader");
+    btnElementHeader.addEventListener('click', function () { modalBtnClick(true) });
+
+    var btnElementWithoutHeader = document.getElementById("dialogWithoutHeader");
+    btnElementWithoutHeader.addEventListener('click', function () { modalBtnClick(false) });
+
+    function dialogClose() {
+        var headerElement = document.getElementsByClassName('e-dlg-header-content')[0];
+        if (headerElement) {
+            headerElement.style.display = '';
+        }
+        dialogObj.hide();
+    }
+    function dialogOpen() {
+        var headerElement = document.getElementsByClassName('e-dlg-header-content')[0];
+        if (!DlgHeader && headerElement) {
+            headerElement.style.display = 'none';
+        }
+    }
+    function dlgButtonClick() {
+        dialogObj.hide();
+    }
+</script>
+
+<style>
+    .e-dialog.e-lib.e-popup {
+        max-height: 400px !important;
+    }
+    .dialog-target {
+        min-height: 350px;
+    }
+</style>
