@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appearance
+# Appearance in ##Platform_Name## HeatMap Component
 
 ## Cell customization
 
