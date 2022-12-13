@@ -50,14 +50,14 @@ padding: 2px 0px;
 .controlcategory-topics
 {
 font-size: 14px !important;
-font-weight: bold!important;
+font-weight: 500!important;
 border:0 !important;
 line-height: 20px;
 }
 .controlcategory
 {
 font-size: 14px !important;
-font-weight: bold!important;
+font-weight: 500!important;
 border:0 !important;
 text-align: left!important;
 line-height: 20px;
@@ -91,14 +91,14 @@ padding: 2px 0px;
 .controlcategory-topics
 {
 font-size: 14px !important;
-font-weight: bold!important;
+font-weight: 500!important;
 border:0 !important;
 line-height: 20px;
 }
 .controlcategory
 {
 font-size: 14px !important;
-font-weight: bold!important;
+font-weight: 500!important;
 border:0 !important;
 text-align: left!important;
 line-height: 20px;
