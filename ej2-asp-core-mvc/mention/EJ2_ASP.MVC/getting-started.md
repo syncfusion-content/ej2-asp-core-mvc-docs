@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Mention Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Mention control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Mention Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ejmvc
 documentation: ug
 ---
 
@@ -92,40 +92,19 @@ Open `~/Views/Shared/_Layout.cshtml` page and register the script manager `EJS()
 
 Now, add the Syncfusion ASP.NET MVC Mention control in `~/Home/Index.cshtml` page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/default/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/getting-started/default/razor %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Mention control will be rendered in the default web browser.
 
-![ASP.NET MVC Mention Control](images/mention-control.png)
+![ASP.NET MVC Mention Control](./images/mention-mention-control.png)
 
 ## Binding data source
 
 After initialization, populate the Mention with data using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_DataSource) property. Here, an array of string values is passed to the Mention control.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/data/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -135,7 +114,6 @@ After initialization, populate the Mention with data using the [DataSource](http
 {% include code-snippet/mention/getting-started/data/data.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Display mention character
 
@@ -145,16 +123,6 @@ By using the [ShowMentionChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Sync
 
 The following example, displays the text content along with the mention character configured as `#`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/mention/getting-started/showmentionchar/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/mention/getting-started/showmentionchar/razor %}
@@ -163,4 +131,3 @@ The following example, displays the text content along with the mention characte
 {% include code-snippet/mention/getting-started/showmentionchar/suggestionlist.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
