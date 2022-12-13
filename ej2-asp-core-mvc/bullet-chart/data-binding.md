@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Working with Data
+# Working with Data in ASP.NET MVC Bullet Chart
 
 [ASP.NET MVC Bullet Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/bullet-chart) can visualise data bound from local or remote data.
 
