@@ -1,10 +1,10 @@
 ---
 layout: post
-title: animation in ##Platform_Name## Predefined Dialogs | Syncfusion
-description: Checkout and learn about animation in ##Platform_Name## Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: animation in ASP.NET Core Predefined Dialogs | Syncfusion
+description: Checkout and learn about animation in ASP.NET Core Predefined Dialogs of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Animation
-publishingplatform: ##Platform_Name##
+publishingplatform: aspnet-core
 documentation: ug
 ---
 
@@ -18,15 +18,15 @@ In the following sample, the zoom effect is enabled. So, the dialog will open wi
 {% tabs %}
 
 {% highlight cshtml tabtitle="Alert.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/animation/alert/tagHelper %}
+{% include code-snippet/predefined-dialogs/animation/alert/tagHelper %}
 {% endhighlight %}
 
 {% highlight cshtml tabtitle="Confirm.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/animation/confirm/tagHelper %}
+{% include code-snippet/predefined-dialogs/animation/confirm/tagHelper %}
 {% endhighlight %}
 
 {% highlight cshtml tabtitle="Prompt.cshtml" %}
-{% include_relative code-snippet/predefined-dialogs/animation/prompt/tagHelper %}
+{% include code-snippet/predefined-dialogs/animation/prompt/tagHelper %}
 {% endhighlight %}
 
 {% endtabs %}

@@ -771,7 +771,7 @@ For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `ww
 
 In the ASP.NET Core application, the application theme can be changed dynamically by changing its style sheet reference in code.
 
-1. Modify the **~/Pages/Shared/_Layout.cshtml** page with the below code to implement a theme change dynamically using the dropdown by its id value in javascript function in the application.
+1.Modify the **~/Pages/Shared/_Layout.cshtml** page with the below code to implement a theme change dynamically using the dropdown by its id value in javascript function in the application.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -806,7 +806,7 @@ In the ASP.NET Core application, the application theme can be changed dynamicall
 {% endhighlight %}
 {% endtabs %}
 
-2. Add the following code for dropdown data on the **~/Pages/Index.cshtml.cs** model page.
+2.Add the following code for dropdown data on the **~/Pages/Index.cshtml.cs** model page.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml.cs" %}
