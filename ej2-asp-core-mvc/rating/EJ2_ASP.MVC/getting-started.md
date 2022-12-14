@@ -102,6 +102,8 @@ Now, add the Syncfusion ASP.NET MVC Rating control in `~/Home/Index.cshtml` page
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Rating control will be rendered in the default web browser.
 
+![ASP.NET MVC Rating Control](images/rating-control.png)
+
 ## Value
 
 You can set the rating value by using the `Value` property.
@@ -114,6 +116,8 @@ You can set the rating value by using the `Value` property.
 {% endhighlight %}
 {% endtabs %}
 
+![Displaying Rating Value in ASP.NET MVC Rating Control](images/rating-value.png)
+
 ## Items count
 
 You can specify the number of stars using the `ItemsCount` property.
@@ -125,3 +129,5 @@ You can specify the number of stars using the `ItemsCount` property.
 
 {% endhighlight %}
 {% endtabs %}
+
+![Displaying ASP.NET MVC Rating Control items based on Count](images/rating-itemscount.png)
