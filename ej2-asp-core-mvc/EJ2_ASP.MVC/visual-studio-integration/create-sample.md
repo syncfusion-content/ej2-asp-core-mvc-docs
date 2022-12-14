@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sample Creator for ASP.NET MVC - EJ2
+title: Sample Creator for ASP.NET MVC - EJ2 | Syncfusion
 description: Sample Creator is a utility that allows you to create the Syncfusion ASP.NET MVC (Essential JS 2) Projects with required Syncfusion controls
 platform: ej2-asp-core-mvc
 control: Syncfusion VS Extensions
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Create Sample
+# Create Sample in ASP.NET MVC Application
 
 The Syncfusion Sample Creator is a tool that lets you make Syncfusion ASP.NET MVC (Essential JS 2) projects with sample code for required Syncfusion component features and Syncfusion control configuration.
 

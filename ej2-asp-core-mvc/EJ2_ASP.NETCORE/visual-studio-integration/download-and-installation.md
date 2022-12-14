@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation process for ASP.NET Core - EJ2 Extension
+title: Installation process for ASP.NET Core - EJ2 Extension | Syncfusion
 description: Learn here more about how to download and install in the Syncfusion ASP.NET Core Extension for Visual Studio and much more.
 platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
