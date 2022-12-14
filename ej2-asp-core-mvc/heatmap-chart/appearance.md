@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## Heatmap Chart Component
+title: Appearance in Syncfusion ##Platform_Name## Heatmap Chart Component
 description: Learn here all about Appearance in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appearance
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Appearance
+# Appearance in ##Platform_Name## HeatMap Chart Component
 
-## Cell/customizations
+## Cell customization
 
 You can customize the cell by using the [`cellSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellSettings.html) property.
 
@@ -73,26 +73,18 @@ Enable or disable the cell highlighting while hover over the heat map cells by u
 {% endtabs %}
 {% endif %}
 
+## Customize the cell value
 
-
-### Color gradient mode
-
-You can set the minimum and maximum value colors based on row and column using the `ColorGradientMode` property. The types of ColorGradientMode,
-
-* **Table**: The minimum and maximum value colors calculated for overall data.
-* **Row**: The minimum and maximum value colors calculated for each row of data.
-* **Column**: The minimum and maximum value colors calculated for each column of data.
-
-> The default value of `ColorGradientMode` is Table.
+In the HeatMap, you can customize the cell value using the [`cellRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellRender.html) client-side event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/appearance/colormode/tagHelper %}
+{% include code-snippet/heatmap/appearance/cellRender/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Colormode.cs" %}
-{% include code-snippet/heatmap/appearance/colormode/colormode.cs %}
+{% highlight c# tabtitle="CellRender.cs" %}
+{% include code-snippet/heatmap/appearance/cellRender/cellRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,15 +92,43 @@ You can set the minimum and maximum value colors based on row and column using t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/appearance/colormode/razor %}
+{% include code-snippet/heatmap/appearance/cellRender/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Colormode.cs" %}
-{% include code-snippet/heatmap/appearance/colormode/colormode.cs %}
+{% highlight c# tabtitle="CellRender.cs" %}
+{% include code-snippet/heatmap/appearance/cellRender/cellRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 
+## Background color
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+In the HeatMap, you can customize the background color using the [`backgroundColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Background) property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/background-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="BackgroundColor.cs" %}
+{% include code-snippet/heatmap/appearance/background-color/background-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+In the HeatMap, you can customize the background color using the [`backgroundColor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Background) property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/appearance/background-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="BackgroundColor.cs" %}
+{% include code-snippet/heatmap/appearance/background-color/background-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Margin
 
@@ -228,7 +248,7 @@ You can customize the font family, font size, and color of the data label by usi
 
 ## Format
 
-You can change the format of the data label, such as currency, decimal, percent etc. by using [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~Format.html) property.
+You can change the format of the data label, such as currency, decimal, percent etc. By using [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~Format.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -253,37 +273,3 @@ You can change the format of the data label, such as currency, decimal, percent 
 {% endtabs %}
 {% endif %}
 
-
-
-## Customize the cell value
-
-In the HeatMap, you can customize the cell value using the [`cellRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellRender.html) client-side event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/appearance/cellRender/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CellRender.cs" %}
-{% include code-snippet/heatmap/appearance/cellRender/cellRender.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/heatmap/appearance/cellRender/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CellRender.cs" %}
-{% include code-snippet/heatmap/appearance/cellRender/cellRender.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-## See Also
-
-* [To customize the appearance of tool tip](./tooltip/#customize-the-appearance-of-tooltip)
