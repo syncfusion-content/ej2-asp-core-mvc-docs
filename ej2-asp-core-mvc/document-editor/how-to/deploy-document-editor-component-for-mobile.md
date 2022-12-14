@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deploy Document Editor Component For Mobile in ##Platform_Name## Document Editor Component
+title: Deploy Document Editor For Mobile in ##Platform_Name## | Syncfusion
 description: Learn here all about deploy document editor component for mobile in Syncfusion ##Platform_Name## Document Editor component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Deploy Document Editor Component For Mobile
@@ -38,4 +38,4 @@ Hence, it is recommended to switch the Document editor component as read-only in
 
 
 
-> You can use the `restrictEditing` in DocumentEditorContainer and `isReadOnly` in DocumentEditor based on your requirement to change component to read only mode.
+> You can use the [`restrictEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditorContainer.html#Syncfusion_EJ2_DocumentEditor_DocumentEditorContainer_RestrictEditing) in DocumentEditorContainer and [`isReadOnly`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditor.html#Syncfusion_EJ2_DocumentEditor_DocumentEditor_IsReadOnly) in DocumentEditor based on your requirement to change component to read only mode.

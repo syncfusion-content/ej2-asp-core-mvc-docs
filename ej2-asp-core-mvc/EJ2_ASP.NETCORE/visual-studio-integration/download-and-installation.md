@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Installation process for ASP.NET Core - EJ2 Extension
+title: Installation process for ASP.NET Core - EJ2 Extension | Syncfusion
 description: Learn here more about how to download and install in the Syncfusion ASP.NET Core Extension for Visual Studio and much more.
-platform: ASP.NET Core - EJ2
+platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -22,7 +22,7 @@ The following software prerequisites must be installed to install the Syncfusion
 
 * [Visual Studio 2017 or later](https://visualstudio.microsoft.com/downloads).
 
-* [.NET Core 3.0 or later](https://dotnet.microsoft.com/download/dotnet-core).
+* [.NET Core 3.0 or later](https://dotnet.microsoft.com/en-us/download/dotnet).
 
 ## Install through the Visual Studio Manage Extensions
 
