@@ -102,6 +102,8 @@ Now, add the Syncfusion ASP.NET Core Rating tag helper in `~/Pages/Index.cshtml`
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Rating control will be rendered in the default web browser.
 
+![ASP.NET CORE Rating Control](images/rating-control.png)
+
 ## value
 
 You can set the rating value by using the `value` property.
@@ -114,6 +116,8 @@ You can set the rating value by using the `value` property.
 {% endhighlight %}
 {% endtabs %}
 
+![Displaying Rating Value in ASP.NET CORE Rating Control](images/rating-value.png)
+
 ## Items count
 
 You can specify the number of stars using the `ItemsCount` property.
@@ -125,3 +129,5 @@ You can specify the number of stars using the `ItemsCount` property.
 
 {% endhighlight %}
 {% endtabs %}
+
+![Displaying ASP.NET CORE Rating Control items based on Count](images/rating-itemscount.png)
