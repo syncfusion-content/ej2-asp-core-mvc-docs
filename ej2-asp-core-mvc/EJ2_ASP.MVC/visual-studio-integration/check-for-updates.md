@@ -2,7 +2,7 @@
 layout: post
 title: Check for Updaes ASP.NET MVC - EJ2 extension
 description: Syncfusion Check for Updates provides Extensions to update most recent version of the Essential Studio release.
-platform: ASP.NET MVC - EJ2
+platform: ej2-asp-core-mvc
 control: Syncfusion VS Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
