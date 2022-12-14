@@ -52,14 +52,14 @@ padding: 2px 0px;
 .control-category-topics
 {
 font-size: 14px !important;
-font-weight: bold!important;
+font-weight: 500!important;
 border:0 !important;
 line-height: 20px;
 }
 .control-category
 {
 font-size: 14px !important;
-font-weight: bold!important;
+font-weight: 500!important;
 border:0 !important;
 text-align: left!important;
 line-height: 20px;
