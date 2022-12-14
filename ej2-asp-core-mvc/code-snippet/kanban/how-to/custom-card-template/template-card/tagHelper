@@ -1,0 +1,34 @@
+<ejs-kanban id="Kanban" keyField="Status" dataSource="@ViewBag.data" cardRendered="cardRendered">
+    <e-kanban-columns>
+        <e-kanban-column headerText="To Do" keyField="Open"></e-kanban-column>
+        <e-kanban-column headerText="In Progress" keyField="InProgress"></e-kanban-column>
+        <e-kanban-column headerText="Testing" keyField="Testing"></e-kanban-column>
+        <e-kanban-column headerText="Done" keyField="Close"></e-kanban-column>
+    </e-kanban-columns>
+    <e-kanban-cardsettings headerField="Id" contentField="Summary"></e-kanban-cardsettings>
+</ejs-kanban>
+
+<script>
+
+      function cardRendered(args) {   // Triggered when before each card append to DOM element
+
+         var val = args.data.Priority;    // Get the priority data
+
+         ej.base.addClass([args.element], val);   // Append the class name to card root element
+
+      }
+
+    </script>
+
+
+<style type="text/css">
+
+    .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.Low.e-selection:hover,
+
+    .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.Low,
+
+    .e-kanban.e-rtl .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.Low {
+
+        border-left: 3px solid #ffd600;    // Here, you can change the color
+    }
+</style>
