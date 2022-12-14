@@ -56,7 +56,6 @@ var diagram = document.getElementById("container").ej2_instances[0];
 diagram.selectAll();
 // Adding the third node into the existing group
 diagram.group();
-
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -82,12 +81,10 @@ diagram.group();
 
 
 ```javascript
-
 var diagram = document.getElementById("container").ej2_instances[0];
 diagram.selectAll();
 // Ungroup the selected group into nodes
 diagram.unGroup();
-
 ```
 
 ## Add group at runtime
@@ -117,7 +114,6 @@ A group node can be added at runtime by using the client-side method `diagram.ad
 
 
 ```javascript
-
 var diagram = document.getElementById("container").ej2_instances[0];
 var group= {
     id: 'group2',
@@ -125,7 +121,6 @@ var group= {
 };
 // Add the group into the diagram
 diagram.add(group);
-
 ```
 
 ## Container
@@ -175,7 +170,6 @@ Containers are used to automatically measure and arrange the size and position o
 
 
 ```javascript
-
 function getTextElement(text)  {
     let textElement: TextElement = new TextElement();
     textElement.width = 50;
@@ -183,14 +177,12 @@ function getTextElement(text)  {
     textElement.content = text;
     return textElement;
 }
-
 function addRows (column) {
     column.children.push(getTextElement('Row1'));
     column.children.push(getTextElement('Row2'));
     column.children.push(getTextElement('Row3'));
     column.children.push(getTextElement('Row4'));
 }
-
   function getNodeDefaults (node) {
         node.height = 100;
         node.width = 100;
@@ -204,12 +196,10 @@ function addRows (column) {
             var table = new StackPanel();
             table.orientation = 'Horizontal';
             table.padding.left
-
             var column1 = new StackPanel();
             column1.children = [];
             column1.children.push(getTextElement('Column1'));
             addRows(column1);
-
             var column2 = new StackPanel();
             column2.children = [];
             column2.children.push(getTextElement('Column2'));

@@ -308,8 +308,6 @@ A subprocess is defined as an event subprocess, when it is triggered by an event
 {% endtabs %}
 {% endif %}
 
-
-
 ## Process
 
 Processes is an array collection that defines the children values for BPMN subprocess.

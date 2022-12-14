@@ -23,5 +23,4 @@ var diagram = diagramElement.ej2_instances[0];
 //Enable virtualization in diagram
 diagram.constraints = DiagramConstraints.Default | DiagramConstraints.Virtualization,
 diagram.dataBind();
-
 ```

@@ -35,7 +35,6 @@ An organizational chart is a diagram that displays the structure of an organizat
 
 
 ```javascript
-
         function getLayoutInfo(node, tree) {
             if (!tree.hasSubTree) {
                 tree.orientation = 'Vertical';

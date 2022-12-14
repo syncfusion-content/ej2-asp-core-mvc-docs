@@ -37,8 +37,6 @@ The [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagr
 {% endtabs %}
 {% endif %}
 
-
-
 ## Add palettes to SymbolPalette
 
 A palette allows to display a group of related symbols and it textually annotates the group with its header. A [`Palettes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_Palettes) can be added as a collection of symbol groups.
@@ -312,7 +310,6 @@ While adding more number of symbols such as nodes and connectors to the palette,
         strokeWidth: 2
     };
 }
-
 function getSymbolInfo(symbol) {
     return {
         fit: true
