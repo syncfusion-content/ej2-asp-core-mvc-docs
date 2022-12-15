@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Installation process for ASP.NET MVC - EJ2 Extension
+title: Installation process for ASP.NET MVC - EJ2 Extension | Syncfusion
 description: Learn here more about how to download and install in the Syncfusion ASP.NET MVC Extension for Visual Studio and much more.
-platform: ASP.NET MVC - EJ2
+platform: ej2-asp-core-mvc
 control: Syncfusion VS Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
