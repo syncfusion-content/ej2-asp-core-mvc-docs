@@ -41,9 +41,6 @@ this.container.documentEditor.editor.insertText('Syncfusion');
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-Please check below gif which illustrates how to insert text in current cursor position on button click:
-![Insert text in current cursor position in Javascript document editor](../images/insert_text.gif)
-
 ## Insert paragraph in current cursor position
 
 To insert new paragraph at current selection, you can can use [`insertText`] API with parameter as `\r\n` or `\n`.
