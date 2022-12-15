@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Document Management in ##Platform_Name## Document Editor Component | Syncfusion
-description: Learn here all about Document Management in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+title: Restrict Editing in ##Platform_Name## Document Editor Component | Syncfusion
+description: Learn here all about Restrict Editing in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Document Management
+control: Restrict Editing
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Document management in Document Editor Component
+# Restrict Editing in Document Editor Component
 
 Document Editor provides support to restrict editing. When the protected document includes range permission, then unique user or user group is only authorized to edit separate text area.
 
