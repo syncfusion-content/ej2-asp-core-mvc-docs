@@ -41,8 +41,6 @@ The [`sourcePoint`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% endtabs %}
 {% endif %}
 
-
-
 ## Add connector at runtime
 
 Connectors can be added at runtime by using public method, `diagram.add` and can be removed at runtime by using public method, `diagram.remove`.

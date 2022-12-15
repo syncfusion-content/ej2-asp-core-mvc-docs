@@ -65,7 +65,6 @@ function diagramCreated() {
             diagram.tool = ej.diagrams.DiagramTools.ZoomPan;
             diagram.dataBind();
         }
-
  function getNodeDefaults(obj, data, diagram) {
      //Initialize shape
      obj.annotations = [{
@@ -85,7 +84,6 @@ function diagramCreated() {
 
             ; obj.width = 95; obj.height = 30; return obj;
         }
-
         function getConnectorDefaults(connector, diagram) {
             connector.type = 'Orthogonal';
             connector.style.strokeColor = '#4d4d4d';
@@ -234,7 +232,6 @@ var diagramElement = document.getElementById('element');
 var diagram = diagramElement.ej2_instances[0];
 //Sends the deleted nodes/connectors from client side to the server side through the URL which is specified in server side.
 diagram.removeData();
-
 ```
 
 ## See Also

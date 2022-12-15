@@ -183,14 +183,12 @@ function getTextElement(text)  {
     textElement.content = text;
     return textElement;
 }
-
 function addRows (column) {
     column.children.push(getTextElement('Row1'));
     column.children.push(getTextElement('Row2'));
     column.children.push(getTextElement('Row3'));
     column.children.push(getTextElement('Row4'));
 }
-
   function getNodeDefaults (node) {
         node.height = 100;
         node.width = 100;
@@ -204,12 +202,10 @@ function addRows (column) {
             var table = new StackPanel();
             table.orientation = 'Horizontal';
             table.padding.left
-
             var column1 = new StackPanel();
             column1.children = [];
             column1.children.push(getTextElement('Column1'));
             addRows(column1);
-
             var column2 = new StackPanel();
             column2.children = [];
             column2.children.push(getTextElement('Column2'));
