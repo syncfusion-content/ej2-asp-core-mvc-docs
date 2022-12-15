@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Link in ##Platform_Name## Document Editor Component
+title: Link in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about Link in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Link
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Hyperlink
+# Hyperlink in Document Editor Component
 
 Document editor supports hyperlink field. You can link a part of the document content to Internet or file location, mail address, or any text within the document.
 

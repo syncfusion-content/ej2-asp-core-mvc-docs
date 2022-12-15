@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export in ##Platform_Name## Document Editor Component
+title: Export in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about Export in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Export
+# Export in Document Editor Component
 
 Document editor exports the document into various known file formats in client-side such as Microsoft Word document (.docx), text document (.txt), and its own format called **Syncfusion Document Text (.sfdt)**.
 

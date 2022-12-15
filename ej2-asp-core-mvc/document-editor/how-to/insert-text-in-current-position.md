@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Insert text, paragraph and rich-text content in ##Platform_Name## Document Editor Component
+title: Insert text, and rich-text content in ##Platform_Name## | Syncfusion
 description: Learn how to insert text, paragraph and rich-text content in ##Platform_Name## Document Editor Component
 platform: ej2-asp-core-mvc
 control: Insert Text, Paragraph And Rich-Text Content
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to insert text, paragraph and rich-text content in Document Editor component
+# How to insert text, paragraph and rich-text content in Document Editor
 
 You can insert the text, paragraph and rich-text content in Document Editor component.
 
