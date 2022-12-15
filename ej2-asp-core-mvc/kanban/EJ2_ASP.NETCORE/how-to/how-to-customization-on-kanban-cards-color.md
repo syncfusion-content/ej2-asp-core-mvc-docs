@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set the cards' left colour ##Platform_Name## Kanban Component
+title: Set the cards' left colour in Syncfusion ##Platform_Name## Kanban Component
 description: This section explains how to set the card's left border colour in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set the card colour
