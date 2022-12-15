@@ -23,7 +23,6 @@ var diagram = diagramElement.ej2_instances[0];
 var saveData;
 //returns serialized string of the Diagram
 saveData = diagram.saveDiagram();
-
 ```
 
 This string can be converted to JSON data and stored for future use.
@@ -32,7 +31,6 @@ This string can be converted to JSON data and stored for future use.
 //Saves the string in to local storage
 localStorage.setItem('fileName', saveData);
 saveData = localStorage.getItem('fileName');
-
 ```
 
 Diagram can also be saved as raster or vector image files. For more information about saving the diagram as images, refer to `Print and Export`.
@@ -44,10 +42,8 @@ Diagram is loaded from the serialized string data by client-side method, [`loadD
 ```javascript
 var diagramElement = document.getElementById('element');
 var diagram = diagramElement.ej2_instances[0];
-
 //Loads the Diagram from saved json data
 diagram.loadDiagram(saveData);
-
 ```
 
 > Before loading a new diagram, existing diagram is cleared.

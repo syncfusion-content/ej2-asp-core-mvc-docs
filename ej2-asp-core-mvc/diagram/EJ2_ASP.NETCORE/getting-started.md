@@ -213,7 +213,6 @@ In the 'Flow Diagram' section, how to create a diagram manually was discussed. T
 Define Employee Information as JSON data. The following code example shows an employee array whose, `Name` is used as an unique identifier and `ReportingPerson` is used to identify the person to whom an employee report to, in the organization.
 
 ```cs
-
     public data: Object[] = [
         {
             Name: "Elizabeth",
@@ -250,7 +249,6 @@ Define Employee Information as JSON data. The following code example shows an em
             Role: "Lead"
         }
     ];
-
 ```
 
 ## Map data source
@@ -308,7 +306,6 @@ You can configure the above "Employee Information" with diagram, so that the nod
 
         }
     }
-
 ```
 
 ## Visualize employee

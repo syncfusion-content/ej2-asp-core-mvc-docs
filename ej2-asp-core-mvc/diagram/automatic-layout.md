@@ -49,7 +49,6 @@ The hierarchical tree layout arranges nodes in a tree-like structure, where the 
 
 
 ```javascript
-
         function getNodeDefaults(obj, diagram) {
             var collapseicon = obj.collapseIcon;
             obj.shape = { type: 'Text', content: obj.data.Name };
@@ -70,7 +69,6 @@ The hierarchical tree layout arranges nodes in a tree-like structure, where the 
             collapseicon.fill = 'lightgray';
             return obj;
         }
-
         function connectorDefaults(connector, diagram) {
             connector.targetDecorator.shape = 'None';
             connector.type = 'Orthogonal';
@@ -179,7 +177,6 @@ Set chart orientations, chart types, and offset to be left between parent and ch
 
 
 ```javascript
-
         function getLayoutInfo(node, options, orientation, type) {
         if (!options.hasSubTree) {
                 options.type = 'Center';
@@ -372,14 +369,12 @@ Line distribution is used to arrange the connectors without overlapping in autom
 
 
 ```cs
-
     public ActionResult LineDistribution()
         {
             DiagramLayout connectionPointOriginValue = new DiagramLayout() { ConnectionPointOrigin = ConnectionPointOrigin.DifferentPoint };
             ViewBag.connectionPointOrigin = connectionPointOriginValue;
             return View();
         }
-
 ```
 
 ### Linear Arrangement
@@ -389,14 +384,12 @@ Linear arrangement is used to linearly arrange the child nodes in layout, which 
 > Linear arrangement is applicable only for complex hierarchical tree layout.
 
 ```cs
-
     public ActionResult LinearArrangement()
         {
             DiagramLayout arrangementValue = new DiagramLayout() { Arrangement = ChildArrangement.Linear};
             ViewBag.arrangement = arrangementValue;
             return View();
         }
-
 ```
 
 ### Prevent connectors overlay
@@ -404,9 +397,7 @@ Linear arrangement is used to linearly arrange the child nodes in layout, which 
 The below constraints prevents the connector segments overlapping nodes with a complex hierarchical layout.
 
 ```cs
-
     DiagramLayout arrangementValue = new DiagramLayout() { Arrangement = ChildArrangement.Linear};
-
 ```
 
 ## Customize layout
@@ -627,9 +618,7 @@ The setNodeTemplate function is provided for the purpose of customizing nodes. I
 
 
 ```javascript
-
     function setNodeTemplate(obj, diagram) {
         obj.style.borderColor = obj.data.color;
     }
-
 ```

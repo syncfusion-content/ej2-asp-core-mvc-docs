@@ -116,7 +116,6 @@ var port= [{
         visibility: PortVisibility.Visible
     }
 ];
-
 // Method to add ports through run time
 diagram.addPorts(diagram.nodes[0], port);
 
