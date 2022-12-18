@@ -20,7 +20,6 @@ This section briefly explains about how to include [ASP.NET MVC DocumentEditor](
 ## Create ASP.NET MVC application with HTML helper
 
 * [Create a Project using Microsoft Templates](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio)
-
 * [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
 ## Install ASP.NET MVC package in the application

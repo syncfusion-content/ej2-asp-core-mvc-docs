@@ -100,7 +100,7 @@ If dictionaries are initialized using `InitializeDictionaries` method, then defa
 ```csharp
 public string SpellCheck([FromBody] SpellCheckJsonData spellChecker)
 {
-            try
+      try
       {
             SpellChecker spellCheck = new SpellChecker();
             spellCheck.GetSuggestions(spellChecker.LanguageID, spellChecker.TexttoCheck, spellChecker.CheckSpelling, spellChecker.CheckSuggestion, spellChecker.AddWord);

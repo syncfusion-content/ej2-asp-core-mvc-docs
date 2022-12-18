@@ -155,7 +155,6 @@ public HttpResponseMessage ExportAsRtf()
     stream.Position = 0;
     return new HttpResponseMessage() { Content = new StreamContent(stream) };
 }
-
 ```
 
 In client-side, you can consume this web service and save the document as Rich Text Format (.rtf) file.
