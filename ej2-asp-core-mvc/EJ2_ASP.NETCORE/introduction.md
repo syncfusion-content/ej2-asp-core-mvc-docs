@@ -148,6 +148,7 @@ padding-top: 50px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/range-slider/getting-started">Range Slider</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started">Toggle Switch Button</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/signature/getting-started">Signature</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/rating/getting-started">Rating (Preview)</a></div>
         <div><p class="control-category">FORMS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/in-place-editor/getting-started">In-place Editor</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/getting-started">Query Builder</a></div>
