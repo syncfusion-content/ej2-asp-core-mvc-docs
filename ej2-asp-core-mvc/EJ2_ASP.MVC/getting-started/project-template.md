@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Component
+title: Getting Started with ##Platform_Name## Component | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Project Template
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD024 -->
 
-# Getting Started with Essential JS 2 for ASP.NET MVC and Syncfusion Project Template
+# Getting Started with ASP.NET MVC and Syncfusion Project Template
 
 Syncfusion provides the **Visual Studio Project Templates** for the Syncfusion ASP.NET MVC platform to create the Syncfusion ASP.NET MVC web application using Essential JS 2 controls.
 
