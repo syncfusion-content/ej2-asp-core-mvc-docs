@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Global Local in ##Platform_Name## Gantt Component
+title: Global Local in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Global Local in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Global Local
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization
+# Globalization in Gantt control
 
 ## Localization
 
