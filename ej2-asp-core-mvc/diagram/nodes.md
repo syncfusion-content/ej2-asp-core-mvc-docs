@@ -172,7 +172,7 @@ The flip types are as follows:
 
 
 
-> The flip is also applicable for group and BPMN shapes.
+N> The flip is also applicable for group and BPMN shapes.
 
 ## Appearance
 
@@ -328,7 +328,7 @@ The angle, distance, and opacity of the shadow can be customized with the shadow
 
 Diagram provides support to describe the state of the node. i.e., the node is expanded or collapsed state.
 
-> Icon can be created only when the node has outEdges.
+N> Icon can be created only when the node has outEdges.
 
 * To explore the properties of expand and collapse icon, refer to [`expandIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_ExpandIcon) and [`collapseIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_CollapseIcon).
 

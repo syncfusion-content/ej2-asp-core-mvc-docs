@@ -372,7 +372,7 @@ The [`length`](https://ej2.syncfusion.com/documentation/api/diagram/orthogonalSe
 
 
 
-> You need to mention the segment type as same as what you mentioned in connector type. There should be no contradiction between connector type and segment type.
+N> You need to mention the segment type as same as what you mentioned in connector type. There should be no contradiction between connector type and segment type.
 
 ## Avoid overlapping
 
@@ -549,7 +549,7 @@ The flip types are as follows:
 
 
 
- > The flip is not applicable when the connectors connect in nodes.
+ N> The flip is not applicable when the connectors connect in nodes.
 
 ## Bridging
 
@@ -577,7 +577,7 @@ Line bridging creates a bridge for lines to smartly cross over the other lines, 
 
 
 
-> You need to inject connector bridging module into the diagram.
+N> You need to inject connector bridging module into the diagram.
 
 The [`bridgeSpace`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_BridgeSpace) property of connectors can be used to define the width for line bridging.
 

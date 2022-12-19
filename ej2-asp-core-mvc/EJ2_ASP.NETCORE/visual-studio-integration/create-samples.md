@@ -12,7 +12,7 @@ documentation: ug
 
 The Syncfusion Sample Creator is a tool that lets you to make Syncfusion ASP.NET Core (Essential JS 2) projects with sample code for required Syncfusion component features and Syncfusion control configuration.
 
-> The Syncfusion ASP.NET Core Sample Creator utility is available from v16.3.0.17.
+N> The Syncfusion ASP.NET Core Sample Creator utility is available from v16.3.0.17.
 
 The following steps is used to create the Syncfusion ASP.NET Core Application by using the Sample Creator utility:
 
@@ -24,7 +24,7 @@ The following steps is used to create the Syncfusion ASP.NET Core Application by
 
     ![sample creator](images/sample-creator_latest.png)
 
-    > In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core > Launch Sample Creator…
+    N> In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core > Launch Sample Creator…
 
     ![sample creator](images/sample-creator.png)
 
@@ -58,11 +58,11 @@ The following steps is used to create the Syncfusion ASP.NET Core Application by
 
     ![aspnet core version](images/Aspnet-core-version.png)
 
-    > .NET 6.0 is available from v19.4.0.38 and support from Visual Studio 2022.
+    N> .NET 6.0 is available from v19.4.0.38 and support from Visual Studio 2022.
 
     **Assets From**: Choose the Syncfusion Essential JS 2 assets to ASP.NET Core Project, either NPM, CDN, or Installed Location.
 
-    > Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
+    N> Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
 
     **Name**: Name your Syncfusion ASP.NET Core Application.
 

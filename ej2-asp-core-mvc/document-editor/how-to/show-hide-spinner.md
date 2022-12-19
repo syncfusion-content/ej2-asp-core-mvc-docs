@@ -42,4 +42,4 @@ hideSpinner(document.getElementById('container'));
 
 
 
-> In above example, we have used setInterval to hide spinner, just for demo purpose.
+N> In above example, we have used setInterval to hide spinner, just for demo purpose.

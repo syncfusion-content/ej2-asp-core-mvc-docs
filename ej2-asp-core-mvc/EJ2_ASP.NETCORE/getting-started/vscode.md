@@ -20,9 +20,9 @@ This article provides a step-by-step instruction for building ASP.NET Core web a
 
 1.Create a new folder and open it in the VS Code by **File > Open Folder...**.
 
-> Visual Studio Code displays a dialog box that asks `Do you trust the authors of the files in this folder`. Select:
-> * The checkbox trust the authors of all files in the parent folder.
-> * Yes, I trust the authors.
+N> Visual Studio Code displays a dialog box that asks `Do you trust the authors of the files in this folder`. Select:
+<br/> * The checkbox trust the authors of all files in the parent folder.
+<br/> * Yes, I trust the authors.
 
 2.Open the [Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) by selecting a menu using **View > Terminal** in VS Code.
 3.Run the following command in the terminal to create a new ASP.NET Core web application. 

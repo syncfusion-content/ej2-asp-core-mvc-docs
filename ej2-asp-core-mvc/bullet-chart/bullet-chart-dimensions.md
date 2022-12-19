@@ -102,4 +102,4 @@ By setting a value in percentage, the Bullet Chart gets its dimension with respe
 
 
 
->If the size is not specified, the Bullet Chart will be rendered with a height of **126px** and a width of the window.
+N>If the size is not specified, the Bullet Chart will be rendered with a height of **126px** and a width of the window.
