@@ -145,7 +145,7 @@ To create the fixed user handles, define and add them to the collection of nodes
 
 * The corner radius allows to create fixed user handles with rounded corners. The radius of the rounded corner is set with the `cornerRadius` property.
 
-> The PathData needs to be provided to render fixed user handle.
+N> The PathData needs to be provided to render fixed user handle.
 
 ### Size
 
@@ -183,7 +183,7 @@ Diagram allows to set size for the fixed user handles by using the `width` and `
 
 
 
-> The fixed user handle id need to be unique.
+N> The fixed user handle id need to be unique.
 
 ## Customizing the node fixed user handle
 
@@ -267,7 +267,7 @@ The following table shows all the possible alignments visually shows the fixed u
 | y=10 | Before |![fixed user handle for node](images/ybefore.png)|
 | y=10 | After |![fixed user handle for node](images/yafter.png)|
 
-> Displacement will not be done if the alignment is set to be center.
+N> Displacement will not be done if the alignment is set to be center.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

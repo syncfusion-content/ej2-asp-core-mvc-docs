@@ -19,7 +19,7 @@ The DocumentEditor has preservation support for Text box, Rectangle, Rounded Rec
 
 ![List of supported shapes in DocumentEditor](images/Shapes_images/supported_shapes.png)
 
-> When using ASP.NET MVC service, the unsupported shapes will be converted as image and preserved as image.
+N> When using ASP.NET MVC service, the unsupported shapes will be converted as image and preserved as image.
 
 ## Text box Shape
 

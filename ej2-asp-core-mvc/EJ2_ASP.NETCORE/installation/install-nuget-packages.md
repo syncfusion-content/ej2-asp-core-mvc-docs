@@ -14,7 +14,7 @@ documentation: ug
 
 **NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET Core JS2  NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Core%20EJ2%22+syncfusion). The Syncfusion ASP.NET Core JS2 NuGet packages can be used without installing the Syncfusion installation. You can simply exploit the Syncfusion ASP.NET Core JS2 NuGet packages in ASP.NET Core application to develop with the Syncfusion ASP.NET Core JS2 components.
 
-> The Syncfusion.EJ2.AspNet.Core NuGet package, which contains all Syncfusion ASP.NET Core JS2 components in a single package, is available beginning with v16.3.0.21 (Essential Studio 2018 Volume 3).
+N> The Syncfusion.EJ2.AspNet.Core NuGet package, which contains all Syncfusion ASP.NET Core JS2 components in a single package, is available beginning with v16.3.0.21 (Essential Studio 2018 Volume 3).
 
 ## Installation using Package Manager UI
 
@@ -36,7 +36,7 @@ The NuGet **Package Manager UI** allows to search, install, uninstall, and updat
 
 2. The Manage NuGet Packages window will open. Navigate to the **Browse** tab, then search for the Syncfusion ASP.NET Core JS2 NuGet packages using a term like **"Syncfusion.EJ2.AspNet.Core"** and select the appropriate Syncfusion ASP.NET Core NuGet package for your development.
 
-    > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
+    N> The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
 
     ![ASP.NET Core NuGet Packages Search](images/NuGetsearch.png)
 
@@ -62,7 +62,7 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
     **For Example:**
     dotnet add package Syncfusion.EJ2.AspNet.Core
 
-    > If you don’t provide a version flag, this command will be upgrading to the latest version by default. To specify a version, add the -v parameter: dotnet add package Syncfusion.EJ2.AspNet.Core -v 19.2.0.57
+    N> If you don’t provide a version flag, this command will be upgrading to the latest version by default. To specify a version, add the -v parameter: dotnet add package Syncfusion.EJ2.AspNet.Core -v 19.2.0.57
 
 3. Examine the ASP.NET Core project file after the command has completed to ensure that the Syncfusion ASP.NET Core JS2 package was installed. To see the added reference, open the .csproj file.
 
@@ -70,7 +70,7 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 
 4. Then run [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) command to restore all the packages listed in the application file.
 
-    > Restoring is done automatically with **dotnet build** and **dotnet run** in .NET Core 2.0 and later.
+    N> Restoring is done automatically with **dotnet build** and **dotnet run** in .NET Core 2.0 and later.
 
 5. At this point, your application has all the required Syncfusion assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion ASP.NET Core JS2 components](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [ASP.NET Core JS2 help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction/) for development.
 
@@ -92,7 +92,7 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
     **For example:** Install-Package Syncfusion.EJ2.AspNet.Core
 
-    > You can find the list of Syncfusion ASP.NET Core NuGet packages which are published in nuget.org from [here](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Core%20EJ2%22+syncfusion)
+    N> You can find the list of Syncfusion ASP.NET Core NuGet packages which are published in nuget.org from [here](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Core%20EJ2%22+syncfusion)
 
     ***Install specified Syncfusion ASP.NET Core JS2 NuGet package in specified ASP.NET Core application***
 

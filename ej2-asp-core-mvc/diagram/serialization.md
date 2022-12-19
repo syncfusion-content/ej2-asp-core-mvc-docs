@@ -50,7 +50,7 @@ diagram.loadDiagram(saveData);
 
 ```
 
-> Before loading a new diagram, existing diagram is cleared.
+N> Before loading a new diagram, existing diagram is cleared.
 
 ## Prevent Default Values
 

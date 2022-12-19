@@ -17,7 +17,7 @@ Documenteditor provides dialog support to major operations such as insert or edi
 
 Font dialog allows to modify all text properties for selected contents at once such as bold, italic, underline, font size, font color, strikethrough, subscript and superscript.
 
->To enable font dialog for a document editor instance, set ‘enableFontDialog’ to true.
+N>To enable font dialog for a document editor instance, set ‘enableFontDialog’ to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
