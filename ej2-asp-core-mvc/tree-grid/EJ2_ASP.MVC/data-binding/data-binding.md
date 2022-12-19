@@ -49,7 +49,9 @@ You can use TreeGrid [`DataSource`](https://help.syncfusion.com/cr/cref_files/as
 
 ## Handling expandStateMapping
 
-The [`ExpandStateMapping`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.treegrid.treegrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ExpandStateMapping) property maps the field name in data source, that denotes whether parent record is in expanded or collapsed state and this is useful to maintain the parent record state in server end.
+To denotes the expand status of parent row, define the [`ExpandStateMapping`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.treegrid.treegrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ExpandStateMapping) property of tree grid.
+
+The `ExpandStateMapping` property maps the field name in data source, that denotes whether parent record is in expanded or collapsed state and this is useful to renders parent row in expanded or collapsed state based on this mapping property value in data source.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
