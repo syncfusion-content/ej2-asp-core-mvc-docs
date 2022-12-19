@@ -177,7 +177,7 @@ The [`Internationalization`](../../common/internationalization) library is used 
 
 ## Right to left (RTL)
 
-RTL provides an option to switch the text direction and layout of the Gantt component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Gantt, set the [`EnableRtl`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~EnableRtl.html) to true.
+RTL provides an option to switch the text direction and layout of the Gantt component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Urdu, etc.). To enable RTL Gantt, set the [`EnableRtl`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~EnableRtl.html) to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
