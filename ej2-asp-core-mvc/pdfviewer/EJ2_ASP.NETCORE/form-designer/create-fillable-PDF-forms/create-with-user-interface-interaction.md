@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Create with UI Interaction
+# Create form fields with UI interaction
 
 The PDF viewer control provides the option for interaction with Form Fields such as Drag and resize. you can draw a Form Field dynamically by clicking the Form Field icon on the toolbar and draw it in the PDF document. The Form Fields type supported by the PDF Viewer Control are:
 
