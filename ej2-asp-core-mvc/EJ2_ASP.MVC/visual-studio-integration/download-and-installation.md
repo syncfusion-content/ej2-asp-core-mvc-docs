@@ -30,7 +30,7 @@ The steps below assist you to how to install the Syncfusion ASP.NET MVC extensio
 
 2. Navigate to **Extension ->Manage Extensions** and open the Manage Extensions.
 
-    > In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates.
+    N> In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates.
 
 3. On the left, click the **Online** tab and type **"Syncfusion EJ2 MVC"** in the **search box**.
 
@@ -50,7 +50,7 @@ The steps below assist you to how to install the Syncfusion ASP.NET MVC extensio
 
     ![SyncfusionMenu](images/SyncfusionMenu.png)
 
-    > In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.
+    N> In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.
 
 ## Install from the Visual Studio Marketplace
 
@@ -74,4 +74,4 @@ The steps below illustrate how to download and install the Syncfusion ASP.NET MV
 
      ![SyncfusionMenu](images/SyncfusionMenu.png)
 
-     > In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.
+     N> In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.

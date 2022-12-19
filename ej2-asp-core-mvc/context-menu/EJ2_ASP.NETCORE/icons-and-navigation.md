@@ -39,7 +39,7 @@ The ContextMenu item has an icon or image in it to provide visual representation
 
 
 
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the contextmenu menuItems using the [`iconCss`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~IconCss.html) property.
+N> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the contextmenu menuItems using the [`iconCss`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenuItem~IconCss.html) property.
 
 ## Navigation
 

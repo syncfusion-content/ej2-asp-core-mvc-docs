@@ -65,7 +65,7 @@ The client-side method [`selectAll`](https://help.syncfusion.com/cr/aspnetcore-j
 
 ![Resize](images/resize.gif)
 
-> While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
+N> While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
 
 ## Rotate
 
@@ -79,7 +79,7 @@ The client-side method [`selectAll`](https://help.syncfusion.com/cr/aspnetcore-j
 
 * Each segment of a selected connector is editable with some specific handles/thumbs.
 
-> For connector editing, you have to inject the [`ConnectorEditing`](https://ej2.syncfusion.com/documentation/api/diagram/connectorEditing) module.
+N> For connector editing, you have to inject the [`ConnectorEditing`](https://ej2.syncfusion.com/documentation/api/diagram/connectorEditing) module.
 
 ## End point handles
 

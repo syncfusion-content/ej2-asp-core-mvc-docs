@@ -25,7 +25,7 @@ A Style in document editor should have the following properties:
 * **paragraphFormat**: Specifies the properties of paragraph style.
 * **basedOn**: Specifies that the current style inherits the style set to this property. This is how hierarchical styles are defined. It can be optional.
 
-> The style type should match the inherited style type. For example, it is not possible to have a character style inherit a paragraph style.
+N> The style type should match the inherited style type. For example, it is not possible to have a character style inherit a paragraph style.
 
 ## Default style
 
