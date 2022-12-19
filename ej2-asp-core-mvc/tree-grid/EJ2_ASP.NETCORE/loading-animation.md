@@ -9,8 +9,7 @@ documentation: ug
 ---
 
 
-
-# Loading Animation
+# Loading Animation in ASP.NET Core Tree Grid Component
 
 The Tree Grid displays a loading indicator while the data is being fetched and bound to the tree grid during initial rendering, refreshing, and after performing any tree grid actions like sorting, filtering, and more.
 
