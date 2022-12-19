@@ -50,7 +50,7 @@ In ASP.NET MVC refer the culture files directly from `/node_modules/cldr-data` l
 
 ```
 
-> The `Localization` library allows you to localize default text content of the DateRangePicker. The DateRangePicker control has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_Locale) value and translation object.
+N> The `Localization` library allows you to localize default text content of the DateRangePicker. The DateRangePicker control has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_Locale) value and translation object.
 
 | Locale keywords | Text |
 | ----- | ----- |
