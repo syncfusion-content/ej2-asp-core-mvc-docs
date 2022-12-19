@@ -200,11 +200,14 @@ The argument passed to the [`ActionFailure`](https://help.syncfusion.com/cr/cref
 
 
 
-## Lazy loading with virtualization
+## Load on demand with virtualization
 
 While binding remote data to Tree Grid component, by default Tree Grid renders parent rows in collapsed state. When expanding the root node, the child nodes will be loaded from the remote server.
 
-When using virtualization with remote data binding, it helps you to improve the tree grid performance while loading a large set of remote data by setting [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) as true. The Tree Grid UI virtualization allows it to render only rows and columns visible within the view-port without buffering the entire datasource.
+When using virtualization with remote data binding, it helps you to improve the tree grid performance while loading a large set of data by setting [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) as true. The Tree Grid UI virtualization allows it to render only rows and columns visible within the view-port without buffering the entire datasource.
+
+The [`HasChildMapping`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_HasChildMapping) property maps the field name in data source, that denotes whether current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
+
 
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -233,7 +236,7 @@ When using virtualization with remote data binding, it helps you to improve the 
 
 
 
-## LoadChildOnDemand with virtualization
+### Load parent rows in expanded state with virtualization
 
 Tree Grid provides an option to load the child records in the initial rendering itself for remote data binding by setting the [`LoadChildOnDemand`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_LoadChildOnDemand) as true. When the [`LoadChildOnDemand`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_LoadChildOnDemand) is enabled, parent records are rendered in expanded state.
 
@@ -261,5 +264,3 @@ When using virtualization with [`LoadChildOnDemand`](https://help.syncfusion.com
 {% endif %}
 
 
-
-> The [`ExpandStateMapping`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.treegrid.treegrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ExpandStateMapping) property maps the field name in data source, that denotes whether parent record is in expanded or collapsed state and this is useful to maintain the parent record state in server end.
