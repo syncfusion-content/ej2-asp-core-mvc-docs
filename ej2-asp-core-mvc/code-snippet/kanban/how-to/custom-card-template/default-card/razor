@@ -1,0 +1,10 @@
+@Html.EJS().Kanban("Kanban").KeyField("Status").DataSource((IEnumerable<object>)ViewBag.data).Columns(col =>
+    {
+        col.HeaderText("To Do").KeyField("Open").Add();
+        col.HeaderText("In Progress").KeyField("InProgress").Add();
+        col.HeaderText("Testing").KeyField("Testing").Add();
+        col.HeaderText("Done").KeyField("Close").Add();
+    }).CardSettings(card =>
+    {
+        card.ContentField("Summary").GrabberField("Color").HeaderField("Id");
+    }).Render()
