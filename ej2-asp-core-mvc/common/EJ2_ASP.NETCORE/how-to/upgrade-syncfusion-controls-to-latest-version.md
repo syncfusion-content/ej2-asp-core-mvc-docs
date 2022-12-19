@@ -36,7 +36,7 @@ Ensure your Script and CSS files have been properly configured in your applicati
 
 * Make sure that the version in the URLs matches the version of the `Syncfusion.EJ2.AspNet.Core` NuGet package in your application.
     
-> For production purpose and minimal requirement, Syncfusion provides an option to generate custom styles of selective controls by using the ThemeStudio web application. Refer to this [link](http://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
+N> For production purpose and minimal requirement, Syncfusion provides an option to generate custom styles of selective controls by using the ThemeStudio web application. Refer to this [link](http://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
 
 ## Breaking changes
 
