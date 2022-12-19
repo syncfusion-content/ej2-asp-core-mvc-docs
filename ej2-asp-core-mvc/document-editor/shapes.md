@@ -25,7 +25,7 @@ The DocumentEditor has preservation support for Text box, Rectangle, Rounded Rec
 
 A text box is a rectangular area on the document where you can enter text. When you click in a text box, a flashing cursor will display indicating that you can begin typing. It allows you to enter multiple lines of text with all text formatting.
 
-![Text box shape view in DocumentEditor](images/Shapes_images/textbox_shape.png)
+<img src="images/Shapes_images/textbox_shape.png" alt="Text box shape view in DocumentEditor" style="width:550px">
 
 ## Shape Resizer
 
