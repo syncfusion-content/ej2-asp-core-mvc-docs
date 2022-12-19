@@ -32,7 +32,7 @@ The steps below assist you to install the Syncfusion ASP.NET Core extensions fro
 
 2. Navigate to **Extension ->Manage Extensions** and open the Manage Extensions.
 
-    >  In Visual Studio 2017, go to Tools -> Extensions and Updates.
+    N>  In Visual Studio 2017, go to Tools -> Extensions and Updates.
 
 3. On the left, click the **Online** tab and type **"Syncfusion EJ2"** in the **search box**.
 
@@ -52,7 +52,7 @@ The steps below assist you to install the Syncfusion ASP.NET Core extensions fro
 
     ![SyncfusionMenu](images/SyncfusionMenu.png)
 
-    > In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu
+    N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu
 
 ## Install from the Visual Studio Marketplace
 
@@ -76,4 +76,4 @@ The steps below illustrate how to download and install the Syncfusion ASP.NET Co
 
      ![SyncfusionMenu](images/SyncfusionMenu.png)
 
-     > In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu
+     N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu

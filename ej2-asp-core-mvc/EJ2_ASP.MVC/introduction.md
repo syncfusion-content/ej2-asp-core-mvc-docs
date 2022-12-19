@@ -227,7 +227,7 @@ padding-top: 50px;
 
 * Don't see what you need? request it in our [feedback portal](https://www.syncfusion.com/feedback/aspnet-mvc).
 
-> Syncfusion does not collect any kind of information when our components are used in customer applications.
+N> Syncfusion does not collect any kind of information when our components are used in customer applications.
 
 ## See also
 
