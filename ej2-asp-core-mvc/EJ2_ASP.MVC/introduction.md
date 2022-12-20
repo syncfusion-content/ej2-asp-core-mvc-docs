@@ -50,14 +50,55 @@ padding: 2px 0px;
 .controlcategory-topics
 {
 font-size: 14px !important;
-font-weight: bold!important;
+font-weight: 500!important;
 border:0 !important;
 line-height: 20px;
 }
 .controlcategory
 {
 font-size: 14px !important;
-font-weight: bold!important;
+font-weight: 500!important;
+border:0 !important;
+text-align: left!important;
+line-height: 20px;
+padding-top: 50px;
+}
+<style>
+#table
+{
+border:0 !important;
+line-height: 160% !important;
+}
+
+tr
+{
+border:0 !important;
+}
+
+td
+{
+border:0 !important;
+vertical-align: top;
+}
+
+.controlanchorlink
+{
+font-size: 14px !important;
+text-decoration: none!important;
+text-align: left!important;
+padding: 2px 0px;
+}
+.controlcategory-topics
+{
+font-size: 14px !important;
+font-weight: 500!important;
+border:0 !important;
+line-height: 20px;
+}
+.controlcategory
+{
+font-size: 14px !important;
+font-weight: 500!important;
 border:0 !important;
 text-align: left!important;
 line-height: 20px;

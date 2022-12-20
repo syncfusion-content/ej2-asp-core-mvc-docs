@@ -169,4 +169,4 @@ documenteditor.documentEditorSettings.showHiddenMarks = true;
 
 * [Feature modules](../document-editor/feature-module/)
 * [Paragraph dialog](../document-editor/dialog/#paragraph-dialog)
-* [Keyboard shortcuts](../document-editor/keyboard-shortcut#paragraph-formatting)
+* [Keyboard shortcuts](../document-editor/keyboard-shortcut/)
