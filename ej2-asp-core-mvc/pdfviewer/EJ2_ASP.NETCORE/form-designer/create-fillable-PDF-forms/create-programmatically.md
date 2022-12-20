@@ -200,24 +200,34 @@ Using the `exportFormFields` method, the form field data can be exported in the 
 
 The following code explains how to export the form field data as FDF.
 
-```javascript
+```html
 
-<button id="exportFdf">Export FDF</button>
-<button id="importFdf"> Import FDF</button>
-<!--Add the PDF Viewer-->
-<div id="pdfViewer" style="height: 640px; width: 100%"></div>
+<button id="exportFdf" onclick="exportFdf()">Export FDF</button>
+<button id="importFdf" onclick="importFdf()">Import FDF</button>
 
-// Event triggers on Export FDF button click.
-document.getElementById('exportFdf').addEventListener('click', ()=> {
-    // Data must be the desired path for the exported document.
-    viewer.exportFormFields('Data', FormFieldDataFormat.Fdf);
-});
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
 
-// Event triggers on Import FDF button click.
-document.getElementById('importFdf').addEventListener('click', ()=> {
-    // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly.
-    viewer.importFormFields('File', FormFieldDataFormat.Fdf);
-});
+<script>
+    // Event triggers on Export FDF button click.
+    function exportFdf() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        // Data must be the desired path for the exported document.
+        viewer.exportFormFields('Data', FormFieldDataFormat.Fdf);
+    }
+
+    // Event triggers on Import FDF button click.
+    function importFdf() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly.
+        viewer.importFormFields('File', FormFieldDataFormat.Fdf);
+    }
+</script>
 
 ```
 
@@ -225,47 +235,67 @@ document.getElementById('importFdf').addEventListener('click', ()=> {
 
 The following code explains how to export the form field data as XFDF.
 
-```javascript
-<button id="exportXfdf">Export XFDF</button>
-<button id="importXfdf"> Import XFDF</button>
-<!--Add the PDF Viewer-->
-<div id="pdfViewer" style="height: 640px; width: 100%"></div>
+```html
+<button id="exportXfdf" onclick="exportXfdf()">Export XFDF</button>
+<button id="importXfdf" onclick="importXfdf()">Import XFDF</button>
 
-// Event triggers on Export XFDF button click.
-document.getElementById('exportXfdf').addEventListener('click', ()=> {
-    // Data must be the desired path for the exported document.
-    viewer.exportFormFields('Data', FormFieldDataFormat.Xfdf);
-});
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
 
-// Event triggers on Import XFDF button click.
-document.getElementById('importXfdf').addEventListener('click', ()=> {
-    // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly.
-    viewer.importFormFields('File', FormFieldDataFormat.Xfdf);
-});
+<script>
+    // Event triggers on Export XFDF button click.
+    function exportXfdf() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        // Data must be the desired path for the exported document.
+        viewer.exportFormFields('Data', FormFieldDataFormat.Xfdf);
+    }
+
+    // Event triggers on Import XFDF button click.
+    function importXfdf() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly.
+        viewer.importFormFields('File', FormFieldDataFormat.Xfdf);
+    }
+</script>
 ```
 
 ### Export and import as JSON
 
 The following code explains how to export the form field data as JSON.
 
-```javascript
+```html
 
-<button id="exportJson">Export JSON</button>
-<button id="importJson"> Import JSON</button>
-<!--Add the PDF Viewer-->
-<div id="pdfViewer" style="height: 640px; width: 100%"></div>
+<button id="exportJson" onclick="exportJson()">Export JSON</button>
+<button id="importJson" onclick="importJson()">Import JSON</button>
 
-// Event triggers on Export JSON button click.
-document.getElementById('exportJson').addEventListener('click', ()=> {
-    // Data must be the desired path for the exported document.
-    viewer.exportFormFields('Data', FormFieldDataFormat.Json);
-});
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
 
-// Event triggers on Import JSON button click.
-document.getElementById('importJson').addEventListener('click', ()=> {
-    // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly
-    viewer.importFormFields('File', FormFieldDataFormat.Json);
-});
+<script>
+    // Event triggers on Export JSON button click.
+    function exportJson() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        // Data must be the desired path for the exported document.
+        viewer.exportFormFields('Data', FormFieldDataFormat.Json);
+    }
+
+    // Event triggers on Import JSON button click.
+    function importJson() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        // The file for importing the form fields should be placed in the desired location, and the path should be provided correctly.
+        viewer.importFormFields('File', FormFieldDataFormat.Json);
+    }
+</script>
 ```
 
 ### Export and import as Object
@@ -274,44 +304,55 @@ The PDF Viewer control supports exporting the form field data as an object, and 
 
 The following code shows how to export the form field data as an object and import the form field data from that object into the current PDF document via a button click.
 
-```javascript
+```html
+<button id="exportDataAsObject" onclick="exportDataAsObject()">Export Object</button>
+<button id="importData" onclick="importData()">Import Data</button>
 
-<button id="exportDataAsObject">Export Object</button>
-<button id="importData"> Import Data</button>
-<!--Add the PDF Viewer-->
-<div id="pdfViewer" style="height: 640px; width: 100%"></div>
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
 
-var exportedData;
+<script>
+    var exportedData;
 
-// Event triggers on Export Object button click.
-document.getElementById('exportDataAsObject').addEventListener('click', ()=> {
-    // Export the form field data to an FDF object.
-    viewer.exportFormFieldsAsObject(FormFieldDataFormat.Fdf).then(value => {
-        exportedData = value;
-    });
+    // Event triggers on Export Object button click.
+    function exportDataAsObject() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
 
-    // // Export the form field data to an XFDF object.
-    // viewer.exportFormFieldsAsObject(FormFieldDataFormat.Xfdf).then(value =>{
-    //      exportedData = value;
-    // })
+        // Export the form field data to an FDF object.
+        viewer.exportFormFieldsAsObject(FormFieldDataFormat.Fdf).then(value => {
+            exportedData = value;
+        })
 
-    // // Export the form field data to an JSON object.
-    // viewer.exportFormFieldsAsObject(FormFieldDataFormat.Json).then(value =>{
-    //      exportedData = value;
-    // })
-});
+        //// Export the form field data to an XFDF object.
+        //viewer.exportFormFieldsAsObject(FormFieldDataFormat.Xfdf).then(value => {
+        //    exportedData = value;
+        //})
 
-// Event triggers on Import Data button click.
-document.getElementById('importData').addEventListener('click', ()=> {
-    // Import the form field data from the FDF object into the current PDF document.
-    viewer.importFormFields(exportedData, FormFieldDataFormat.Fdf);
+        //// Export the form field data to an JSON object.
+        //viewer.exportFormFieldsAsObject(FormFieldDataFormat.Json).then(value => {
+        //    exportedData = value;
+        //})
+    }
 
-    //// Import the form field data from the XFDF object into the current PDF document.
-    //viewer.importFormFields (exportedData, FormFieldDataFormat.Xfdf);
+    // Event triggers on Import Data button click.
+    function importData() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
 
-    //// Import the form field data from the FDF object into the current PDF document.
-    //viewer.importFormFields (exportedData, FormFieldDataFormat.Json);
-});
+        // Import the form field data from the FDF object into the current PDF document.
+        viewer.importFormFields(exportedData, FormFieldDataFormat.Fdf);
+
+        //// Import the form field data from the XFDF object into the current PDF document.
+        //viewer.importFormFields (exportedData, FormFieldDataFormat.Xfdf);
+
+        //// Import the form field data from the FDF object into the current PDF document.
+        //viewer.importFormFields (exportedData, FormFieldDataFormat.Json);
+    }
+</script>
 ```
 
 ## Signature and initial fields settings
@@ -320,19 +361,34 @@ Using the `updateFormField` method, the form fields can be updated programmatica
 
 The following code example explains how to update the signature field properties on a button click.
 
-```javascript
+```html
 
-document.getElementById('updateProperties').addEventListener('click',function() {
-    var formField = viewer.retrieveFormFields();
-    viewer.formDesignerModule.updateFormField(formField[0], {
-        name: 'Initial',
-        isReadOnly: true,
-        visibility: 'visible',
-        isRequired: false,
-        isPrint: true,
-        tooltip: 'Initial',
-        thickness: 4
-    });
-});
+<button id="updateProperties" onclick="updateProperties()">Update Properties</button>
+
+<div style="width:100%;height:600px">
+    <ejs-pdfviewer id="pdfviewer"
+                   style="height:600px"
+                   serviceUrl="/api/PdfViewer"
+                   documentPath=@ViewBag.DocumentPath>
+    </ejs-pdfviewer>
+</div>
+
+<script>
+
+    // Event triggers on Update Properties button click.
+    function updateProperties() {
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        var formField = viewer.retrieveFormFields();
+        viewer.formDesignerModule.updateFormField(formField[0], {
+            name: 'Initial',
+            isReadOnly: true,
+            visibility: 'visible',
+            isRequired: false,
+            isPrint: true,
+            tooltip: 'Initial',
+            thickness: 4
+        });
+    }
+</script>
 
 ```
