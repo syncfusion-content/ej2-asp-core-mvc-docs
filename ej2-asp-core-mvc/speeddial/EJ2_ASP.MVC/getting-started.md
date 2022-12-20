@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC SpeedDial Control | Syncfusion
+description: Checkout and learn about getting started with ASP.NET MVC SpeedDial control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
@@ -196,3 +196,5 @@ You can use this event to perform the required action.
 {% endif %}
 
 ![ASP.NET MVC SpeedDial Control](images/speeddial-event-sample.png)
+
+N> You can refer to our [ASP.NET MVC Speed Dial](https://www.syncfusion.com/aspnet-mvc-ui-controls/speed-dial) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Speed Dial example](https://ej2.syncfusion.com/aspnetmvc/SpeedDial/DefaultFunctionalities#/bootstrap5) that shows you how to render the Speed Dial in ASP.NET MVC.
