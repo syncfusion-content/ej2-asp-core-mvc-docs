@@ -128,13 +128,11 @@ Any text or image can be added to the tooltip, by default. To customize the tool
 
 
 ```javascript
-
 function getContent() {
     var tooltipContent = document.createElement('div');
     tooltipContent.innerHTML = '<div style="background-color: #f4f4f4; color: black; border-width:1px;border-style: solid;border-color: #d3d3d3; border-radius: 8px;white-space: nowrap;"> <span style="margin: 10px;"> Tooltip !!! </span> </div>';
     return tooltipContent;
 }
-
 ```
 
 ## Tooltip alignments

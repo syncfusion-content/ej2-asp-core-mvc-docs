@@ -86,7 +86,6 @@ var annotation = [{
 //Method to add labels at run time
 diagram.addLabels(diagram.nodes[0], annotation);
 diagram.dataBind();
-
 ```
 
 ## Remove annotation
@@ -119,7 +118,6 @@ A collection of annotations can be removed from the node by using client-side me
 
 
 ```javascript
-
 var diagramElement = document.getElementById('element');
 var diagram = diagramElement.ej2_instances[0];
 var annotation = [{
@@ -128,7 +126,6 @@ var annotation = [{
 }]
 //Method to remove labels at runtime
 diagram.removeLabels(diagram.nodes[0], annotation);
-
 ```
 
 ## Update annotation at runtime
@@ -167,7 +164,6 @@ var diagram = diagramElement.ej2_instances[0];
 diagram.nodes[0].annotations[0].content = 'Updated Annotation';
 //Method to update the annotation at run time
 diagram.dataBind();
-
 ```
 
 ## Alignment

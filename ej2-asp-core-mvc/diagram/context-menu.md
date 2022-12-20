@@ -145,15 +145,13 @@ function contextMenuOpen() {
                 }
             }
     }
-
 function contextMenuClick() {
     if (args.item.id === 'delete') {
-                var diagram = document.getElementById("container").ej2_instances[0];
-                if ((diagram.selectedItems.nodes.length + diagram.selectedItems.connectors.length) > 0) {
-                    diagram.cut();
-                }
-            }
-
+        var diagram = document.getElementById("container").ej2_instances[0];
+        if ((diagram.selectedItems.nodes.length + diagram.selectedItems.connectors.length) > 0) {
+            diagram.cut();
+        }
+    }
 }
 
 ```

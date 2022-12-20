@@ -61,7 +61,6 @@ The appearance of the user handle can be customized by using the [`size`](https:
 
 
 ```javascript
-
 function getTool(action) {
         var tool;
         if (action === 'clone') {
@@ -102,7 +101,6 @@ var CloneTool = (function (_super) {
     };
     return CloneTool;
 }(ej.diagrams.MoveTool));
-
 ```
 
 ## Fixed user handles
