@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layers in ##Platform_Name## Diagram Component
+title: Layers in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Layers in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Layers
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Layers
+## Layers
 
 **Layer** is used to organize related shapes on a diagram control. A layer is a named category of shapes. By assigning shapes to different layers, you can selectively view, remove, and lock different categories of shapes.
 

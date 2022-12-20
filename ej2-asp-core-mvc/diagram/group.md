@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Group in ##Platform_Name## Diagram Component
+title: Group in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Group in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Group
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Group
+## Group
 
 Group is used to cluster multiple nodes and connectors into a single element. It acts like a container for its children (nodes, groups, and connectors). Every change made to the group also affects the children. Child elements can be edited individually.
 

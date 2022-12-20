@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connectors in ##Platform_Name## Diagram Component
+title: Connectors in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Connectors in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Connectors
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Connector
+## Connector
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 

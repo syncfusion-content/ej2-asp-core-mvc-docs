@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Undo Redo in ##Platform_Name## Diagram Component
+title: Undo Redo in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Undo Redo in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Undo Redo
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# History List
+## History List
 
 Diagram tracks the history of actions that are performed after initializing the diagram and provides support to reverse and restore those changes.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Diagram Component
+title: Data Binding in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding
+## Data Binding
 
 * Diagram can be populated with the `nodes` and `connectors` based on the information provided from an external data source.
 

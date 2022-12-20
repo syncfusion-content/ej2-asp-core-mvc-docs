@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export in ##Platform_Name## Diagram Component
+title: Export in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Export in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Exporting
+## Exporting
 
 Diagram provides support to export its content as image or svg files. The client-side method [`exportDiagram`](https://ej2.syncfusion.com/documentation/api/diagram/#exportDiagram) helps to export the diagram.
 
