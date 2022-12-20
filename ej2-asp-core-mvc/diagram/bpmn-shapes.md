@@ -13,7 +13,7 @@ documentation: ug
 
 BPMN shapes are used to represent the internal business procedure in a graphical notation and enable you to communicate the procedures in a standard manner. To create a BPMN shape, in the node property shape, type should be set as “bpmn” and its shape should be set as any one of the built-in shapes.
 
-> If you want to use BPMN shapes in diagram, you need to inject BpmnDiagrams in the diagram.
+N> If you want to use BPMN shapes in diagram, you need to inject BpmnDiagrams in the diagram.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,7 +37,7 @@ BPMN shapes are used to represent the internal business procedure in a graphical
 
 
 
->Note : The default value for the property `shape` is “event”.
+N> The default value for the property `shape` is “event”.
 
 The list of BPMN shapes are as follows:
 
@@ -131,7 +131,7 @@ Gateway is used to control the flow of a process and it is represented as a diam
 
 
 
-> By default, the `gateway` will be set as **none**.
+N> By default, the `gateway` will be set as **none**.
 
 There are several types of gateways as tabulated:
 
@@ -637,7 +637,7 @@ The following table demonstrates the visual representation of association flows.
 | Directional | ![Directional BPMN FlowShapes](images/Directional1.png) |
 | BiDirectional | ![BiDirectional BPMN FlowShapes](images/BiDirectional.png) |
 
->Note : The default value for the property `association` is **default**.
+N> The default value for the property `association` is **default**.
 
 ## Sequence
 
@@ -679,7 +679,7 @@ The following table contains various representation of sequence flows.
 | Conditional | ![Conditional Sequence BPMN Shpae](images/Conditional.png) |
 | Normal | ![Normal Sequence BPMN Shpae](images/Normal.png) |
 
-> The default value for the property `sequence` is **normal**.
+N> The default value for the property `sequence` is **normal**.
 
 ## Message
 
@@ -721,4 +721,4 @@ The following table contains various representation of message flows.
 | InitiatingMessage | ![InitiatingMessage Message BPMN Shape](images/IMessage.png) |
 | NonInitiatingMessage | ![NonInitiatingMessage Message BPMN Shape](images/NIMessage.png) |
 
->The default value for the property `message` is **default**.
+N>The default value for the property `message` is **default**.
