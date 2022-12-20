@@ -1,7 +1,11 @@
 ---
-title: "Digital Signature"
-component: "PDF Viewer"
-description: "Learn about digital signature appearance in PDF Viewer."
+layout: post
+title: "Digital Signature in EJ2 ASP.NET MVC PDF Viewer | Syncfusion"
+description: Learn here all about digital signature appearance in ASP.NET MVC PDF Viewer component of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Digital Signature
+publishingplatform: ej2-asp-core-mvc
+documentation: ug
 ---
 
 # Render digital signature appearance
