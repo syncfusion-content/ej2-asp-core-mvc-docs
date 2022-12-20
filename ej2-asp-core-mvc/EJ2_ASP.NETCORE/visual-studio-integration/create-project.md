@@ -14,11 +14,11 @@ documentation: ug
 
 Syncfusion provides the **Visual Studio Project Templates** for the Syncfusion ASP.NET Core platform to create the Syncfusion ASP.NET Core Web Application using Essential JS 2 components.
 
-N> The Syncfusion ASP.NET Core (Essential JS 2) project templates are available from v16.2.0.41.
+> The Syncfusion ASP.NET Core (Essential JS 2) project templates are available from v16.2.0.41.
 
 The following steps are used to create the **Syncfusion ASP.NET Core (Essential JS 2) Web Application** through the **Visual Studio Project Template**.
 
-N> Before using the Syncfusion ASP.NET Core Project Template, check whether the **ASP.NET Core Extensions - Syncfusion** is installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, install the extension by following the steps from the [download and installation](download-and-installation) help topic.
+> Before using the Syncfusion ASP.NET Core Project Template, check whether the **ASP.NET Core Extensions - Syncfusion** is installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, install the extension by following the steps from the [download and installation](download-and-installation) help topic.
 
 1. To create the Syncfusion ASP.NET Core (Essential JS 2) project, follow either one of the options below:
 
@@ -28,7 +28,7 @@ N> Before using the Syncfusion ASP.NET Core Project Template, check whether the 
 
     ![new project](images/new-project.png)
 
-    N> In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core (EJ2) > Create New Syncfusion Project… in Visual Studio.
+    > In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core (EJ2) > Create New Syncfusion Project… in Visual Studio.
 
     ![new project](images/SyncfusionMenu.png)
 
@@ -46,18 +46,20 @@ N> Before using the Syncfusion ASP.NET Core Project Template, check whether the 
 
     ![project configuration](images/project-configuration.png)
 
-    N> .NET 6.0 is available from v19.4.0.38 and support from Visual Studio 2022.
+    > .NET 6.0 is available from v19.4.0.38 and support from Visual Studio 2022.
+    
+    > .NET 7.0 is available from v20.4.0.38 and support from Visual Studio 2022.
 
     **Project configurations**
 
     | <b>Project Type</b> | <b>.NET Core Version</b> | <b>Themes</b> | <b>Assets From</b> |
     |---------------------|--------------------------|---------------|--------------------|
-    | ASP.NET Core Web App | .NET Core 3.1 and .NET 6.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
-    | ASP.NET Core Web App (Model-View-Controller) | 2.0, 2.1, 2.2, 3.0, 3.1, .NET 5.0, and .NET 6.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
-    | Angular | 2.0, 2.1, 2.2, 3.0, 3.1, .NET 5.0, and .NET 6.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
-    | React | 2.0, 2.1, 2.2, 3.0, 3.1, .NET 5.0, and .NET 6.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
+    | ASP.NET Core Web App | .NET Core 6.0 and .NET 7.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
+    | ASP.NET Core Web App (Model-View-Controller) | .NET 5.0, .NET 6.0 and .NET 7.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
+    | Angular | .NET 5.0, .NET 6.0 and .NET 7.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
+    | React | .NET 5.0, .NET6.0 and .NET 7.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
 
-    N> The Syncfusion ASP.NET Core (Essential JS 2) Project Template provides ASP.NET Core, Angular, and React project templates support from v17.1.0.47.
+    > The Syncfusion ASP.NET Core (Essential JS 2) Project Template provides ASP.NET Core, Angular, and React project templates support from v17.1.0.47.
 
     **.NET Core Version**: Select the version of ASP.NET Core Project.
 
@@ -65,7 +67,7 @@ N> Before using the Syncfusion ASP.NET Core Project Template, check whether the 
 
     **Assets From**: Load the Syncfusion Essential JS 2 assets to ASP.NET Core Project, either NPM, CDN, or Installed Location.
 
-    N> Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
+    > Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
 
     **Theme Selection**: Themes will be listed out based on the selected project type and choose the required theme from the available list.
 
@@ -73,7 +75,7 @@ N> Before using the Syncfusion ASP.NET Core Project Template, check whether the 
 
     **Authentication Type**: Authentication will be listed out based on the selected project type and choose the required authentication from the available list.
 
-    N> For **Angular** and **React** Project **None** and **Individual Authentication** only supported.
+    > For **Angular** and **React** Project **None** and **Individual Authentication** only supported.
 
     ![authentication type](images/authentication.png)
 
