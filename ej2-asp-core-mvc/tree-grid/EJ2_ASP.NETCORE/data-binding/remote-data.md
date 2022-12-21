@@ -193,7 +193,7 @@ The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/cref
 
 
 
-> The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionFailure) event will be triggered not only for the server errors, but also when there is an exception while processing the treegrid actions.
+> The [`actionFailure`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ActionFailure.html) event will be triggered not only for the server errors, but also when there is an exception while processing the treegrid actions.
 
 
 
