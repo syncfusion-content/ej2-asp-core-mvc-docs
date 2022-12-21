@@ -485,3 +485,30 @@ The [`itemPadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## Legend Dasharray
+
+You can create a dashed legend by using the [`dashArray`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DashArray) property, for this you must make marker visibility to `false`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/dashlegend/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="DashLegend.cs" %}
+{% include code-snippet/chart/axis/legend/dashlegend/dashlegend.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/legend/dashlegend/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="DasshLegend.cs" %}
+{% include code-snippet/chart/axis/legend/dashlegend/dashlegend.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

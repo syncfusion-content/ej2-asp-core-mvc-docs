@@ -67,6 +67,32 @@ You can add a title to the axis using [`title`](https://help.syncfusion.com/cr/a
 {% endtabs %}
 {% endif %}
 
+## Title Rotation
+
+You can rotate the title using [`titleRotation`]()property in the axis.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/category/titlerotation/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TitleRotation.cs" %}
+{% include code-snippet/chart/axis/category/titlerotation/titlerotation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/category/titlerotation/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TitleRotation.cs" %}
+{% include code-snippet/chart/axis/category/titlerotation/titlerotation.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## Tick Lines Customization
