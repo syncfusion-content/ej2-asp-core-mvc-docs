@@ -13,7 +13,7 @@ documentation: ug
 
 Scrolling helps you to move quickly to different areas of the worksheet. It moves faster if we use horizontal and vertical scroll bars. Scrolling can be enabled by setting the [`allowScrolling`](../api/spreadsheet/#allowscrolling) as true.
 
-> By default, the `allowScrolling` property is true.
+N> By default, the `allowScrolling` property is true.
 
 You have the following options in Scrolling by using [`scrollSettings`](../api/spreadsheet/scrollSettings).
 
@@ -28,7 +28,7 @@ Finite scrolling supports two type of modes in scrolling. You can use the [`isFi
 
 * Infinite - This mode creates a new row/column when the scrollbar reaches the end. This can be achieved by setting the [`isFinite`](../api/spreadsheet/scrollSettings/#isfinite) property as `false`.
 
-> By Default, the `isFinite` property is `false`.
+N> By Default, the `isFinite` property is `false`.
 
 ## Virtual Scrolling
 
@@ -36,7 +36,7 @@ Finite scrolling supports two type of modes in scrolling. You can use the [`isFi
 
 In virtual scrolling `enableVirtualization` is set to true means, it allows you to load the spreadsheet data while scrolling.
 
-> By Default, the `enableVirtualization` property is `true`.
+N> By Default, the `enableVirtualization` property is `true`.
 
 **User Interface**:
 

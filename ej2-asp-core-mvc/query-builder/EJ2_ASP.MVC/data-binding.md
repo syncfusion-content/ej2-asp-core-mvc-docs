@@ -45,7 +45,7 @@ To bind local data to the query builder, you can assign the [`DataSource`](https
 
 
 
-> By default, DataManager uses JsonAdaptor for local data-binding.
+N> By default, DataManager uses JsonAdaptor for local data-binding.
 
 ## Remote data
 
@@ -76,7 +76,7 @@ To bind remote  data to the query builder, assign service data as an instance of
 
 
 
-> By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
+N> By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
 
 ### Binding with OData services
 

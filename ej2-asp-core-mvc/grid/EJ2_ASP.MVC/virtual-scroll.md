@@ -75,13 +75,13 @@ To setup the column virtualization, set the [`EnableVirtualization`](https://hel
 
 
 
-> Column's [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Width) is required for column virtualization. If column's width is not defined then Grid will consider its value as `200px`.
+N> Column's [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Width) is required for column virtualization. If column's width is not defined then Grid will consider its value as `200px`.
 
 ## Virtualization with Grouping
 
 Both the row and column virtualization can be used along with grouping. At initial rendering, the virtual height of scrollbar will be set based on the total number of records and after grouping, it will be refreshed based on the grouped state(expand/collapse). While collapse the group caption row in current viewport then the next view page grouped records are shown.
 
-> The collapsed/expanded state will persist only for local dataSource while scrolling.
+N> The collapsed/expanded state will persist only for local dataSource while scrolling.
 
 ## Limitations for virtual scrolling
 
@@ -215,13 +215,13 @@ this.dataManager = new DataManager({
 
  You can find the full code sample from the below GitHub location.
 
-> [View GitHub Sample](https://github.com/SyncfusionExamples/react-grid-load-millions-of-records/)
+N> [View GitHub Sample](https://github.com/SyncfusionExamples/react-grid-load-millions-of-records/)
 
 Also, you can view the hosted link for this sample [here](https://ej2.syncfusion.com/aspnetcore/Load_millions_of_records).
 
 ![Prevent browser height limitation](images/external-button.png)
 
-> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
+N> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
 
 ### Solution 2: Using RowHeight property
 

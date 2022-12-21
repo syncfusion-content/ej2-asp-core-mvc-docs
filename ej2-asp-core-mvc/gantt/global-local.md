@@ -171,8 +171,8 @@ The [`Internationalization`](../../common/internationalization) library is used 
 
 
 
-> * In the above sample, `Timeline` is formatted by `NumberFormatOptions` and `DateFormatOptions`.
-> * By default, [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value is `en-US`. If you want to change `en-US` culture, then set the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale).
+N> * In the above sample, `Timeline` is formatted by `NumberFormatOptions` and `DateFormatOptions`.
+<br/> * By default, [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value is `en-US`. If you want to change `en-US` culture, then set the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale).
 
 ## See Also
 

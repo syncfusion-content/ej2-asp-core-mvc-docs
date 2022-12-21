@@ -36,7 +36,7 @@ The Asp.Net Core Floating Action Button supports the following predefined styles
 
 ![Asp.Net Core Floating Action Button Control with different Styles](images/Style.png)
 
-> Predefined Floating Action Button styles provide only the visual indication. So, Floating Action Button [Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Content) property should define the Floating Action Button style for the users of assistive technologies such as screen readers.
+N> Predefined Floating Action Button styles provide only the visual indication. So, Floating Action Button [Content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Content) property should define the Floating Action Button style for the users of assistive technologies such as screen readers.
 
 ## Styles customization
 

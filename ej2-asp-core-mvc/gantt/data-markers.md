@@ -20,7 +20,7 @@ Data markers can be defined using the following properties:
 * `name`: Defines the name of indicator.
 * `tooltip`: Defines the tooltip of indicator.
 
-> Data Marker `tooltip` will be rendered only if tooltip property has value.
+N> Data Marker `tooltip` will be rendered only if tooltip property has value.
 
 The following code example demonstrates how to implement data markers in the Gantt chart.
 

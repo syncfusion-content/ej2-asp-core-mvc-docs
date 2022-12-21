@@ -38,4 +38,4 @@ Gantt add and edit dialogs can be opened dynamically by using `openAddDialog` an
 
 
 
-> We should select any one of the row in Gantt to open the edit dialog.
+N> We should select any one of the row in Gantt to open the edit dialog.
