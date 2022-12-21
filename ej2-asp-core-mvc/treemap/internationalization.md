@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Internationalization in ##Platform_Name## Treemap Component
-description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: Internationalization in ASP.NET Core Treemap Control | Syncfusion
+description: Learn here all about Internationalization in Syncfusion ASP.NET Core Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Internationalization
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
 # Internationalization
 
-The TreeMap control supports internationalization for the following elements:
+The [ASP.NET Core TreeMap](https://www.syncfusion.com/aspnet-core-ui-controls/treemap) control supports internationalization for the following elements:
 
 * Data label
 * Tooltip
