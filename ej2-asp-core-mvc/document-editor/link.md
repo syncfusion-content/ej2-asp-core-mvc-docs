@@ -90,11 +90,11 @@ documenteditor .selection.copyHyperlink();
 
 To create a basic hyperlink in the document, press `ENTER` / `SPACEBAR` / `SHIFT + ENTER` / `TAB` key after typing the address, for instance `http://www.google.com`. Document editor automatically converts this address to a hyperlink field. The text can be considered as a valid URL if it starts with any of the following.
 
-> `<http://>`<br>
-> `<https://>`<br>
-> `file:///`<br>
-> `www.`<br>
-> `mailto:`<br>
+N> `<http://>`<br>
+<br/> `<https://>`<br>
+<br/> `file:///`<br>
+<br/> `www.`<br>
+<br/> `mailto:`<br>
 
 {% if page.publishingplatform == "aspnet-core" %}
 
