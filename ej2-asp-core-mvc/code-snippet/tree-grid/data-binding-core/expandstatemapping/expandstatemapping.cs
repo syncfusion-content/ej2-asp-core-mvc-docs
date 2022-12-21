@@ -1,4 +1,4 @@
-public ActionResult ExpandStateMapping()
+public IActionResult ExpandStateMapping()
 {
   return View();
 }
