@@ -195,5 +195,73 @@ The argument passed to the [`ActionFailure`](https://help.syncfusion.com/cr/cref
 
 
 
+
 N> The [`ActionFailure`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ActionFailure.html) event will be triggered not only for the server errors, but also when there is an exception while processing the treegrid actions.
 <br/> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+
+> The [`ActionFailure`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ActionFailure.html) event will be triggered not only for the server errors, but also when there is an exception while processing the treegrid actions.
+> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+
+
+
+## Load on demand with virtualization
+
+While binding remote data to Tree Grid component, by default Tree Grid renders parent rows in collapsed state. When expanding the root node, the child nodes will be loaded from the remote server.
+
+When using virtualization with remote data binding, it helps you to improve the tree grid performance while loading a large set of data by setting [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) as true. The Tree Grid UI virtualization allows it to render only rows and columns visible within the view-port without buffering the entire datasource.
+
+The [`HasChildMapping`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_HasChildMapping) property maps the field name in data source, that denotes whether current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
+
+
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight c# tabtitle="LazyLoading.cs" %}
+{% include code-snippet/tree-grid/data-binding-mvc/lazy-loading/lazyLoading.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/data-binding-mvc/lazy-loading/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="LazyLoading.cs" %}
+{% include code-snippet/tree-grid/data-binding-mvc/lazy-loading/lazyLoading.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Load parent rows in expanded state with virtualization
+
+Tree Grid provides an option to load the child records in the initial rendering itself for remote data binding by setting the [`LoadChildOnDemand`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_LoadChildOnDemand) as true. When the `LoadChildOnDemand` is enabled, parent records are rendered in expanded state.
+
+When using virtualization with `LoadChildOnDemand` , it helps you to improve the tree grid performance while loading the child records during the initial rendering for remote data binding by setting [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) as true and `LoadChildOnDemand` as true.
+
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight c# tabtitle="LoadChildOnDemand.cs" %}
+{% include code-snippet/tree-grid/data-binding-mvc/load-child-ondemand-virtualization/loadChildOnDemand.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/data-binding-mvc/load-child-ondemand-virtualization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="LoadChildOnDemand.cs" %}
+{% include code-snippet/tree-grid/data-binding-mvc/load-child-ondemand-virtualization/loadChildOnDemand.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
