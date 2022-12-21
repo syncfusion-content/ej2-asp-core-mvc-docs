@@ -114,7 +114,7 @@ The following features have some limitations in Merge:
 
 Data Validation is used to restrict the user from entering the invalid data. You can use the [`allowDataValidation`](../api/spreadsheet/#allowDataValidation) property to enable or disable data validation.
 
-> * The default value for `allowDataValidation` property is `true`.
+N> * The default value for `allowDataValidation` property is `true`.
 
 ### Apply Validation
 
@@ -211,7 +211,7 @@ In Auto Fill we have following options,
 * Fill Formatting Only
 * Fill Without Formatting
 
->* The default auto fill option is “FillSeries” which can be referred from `fillType` property.
+N>* The default auto fill option is “FillSeries” which can be referred from `fillType` property.
 
 ### Copy Cells
 

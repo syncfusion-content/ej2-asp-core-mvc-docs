@@ -22,7 +22,7 @@ The following drag and drop types are available in the Kanban board.
     * Kanban to Kanban
     * Kanban to External source and vice versa.
 
-> Dropped card position varies based on the `e-kanban-sortsettings` property.
+N> Dropped card position varies based on the `e-kanban-sortsettings` property.
 
 ## Internal drag and drop
 
@@ -35,8 +35,8 @@ Allows the user to drag and drop the cards within the kanban board. Based on thi
 
 By default, all cards can be dragged and dropped across the columns and within the columns. You cannot drag and drop the cards when disabling the `allowDragAndDrop` property.
 
-> You can prevent the drag or drop behavior of the particular column by disabling the `allowDrag` or `allowDrop` property.
-> You can also control the flow of transition cards between the columns by using the `transitionColumns` property.
+N> You can prevent the drag or drop behavior of the particular column by disabling the `allowDrag` or `allowDrop` property.
+<br/> You can also control the flow of transition cards between the columns by using the `transitionColumns` property.
 
 In the following example, disable the drag and drop behavior on the Kanban board.
 
@@ -104,7 +104,7 @@ Allows the user to drag and drop the cards from one kanban to another kanban or 
 
 Drag and drop the card from one kanban to another kanban and vice versa. This can be achieved by specifying the `externalDropId` property which is used to specify the id of the dropped kanban element and the `dragStop` event which is used to delete the card on dragged Kanban and add the card on dropped Kanban using the `deleteCard` and `addCard` public methods.
 
-> Before adding a card to dropped kanban, you can manually change the card data `headerField` when the same card data `headerField` is dropped to another Kanban.
+N> Before adding a card to dropped kanban, you can manually change the card data `headerField` when the same card data `headerField` is dropped to another Kanban.
 
 In the following example, Drag the card from one Kanban and drop it into another kanban using the `dragStop` event. In this event, remove the card from the dragged Kanban by using the `deleteCard` public method and add the card to the dropped Kanban by using the `addCard` public method.
 

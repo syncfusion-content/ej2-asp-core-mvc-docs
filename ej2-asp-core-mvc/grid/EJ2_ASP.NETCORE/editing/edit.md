@@ -42,8 +42,8 @@ Deletion of the record is possible by selecting the required row and click on **
 
 
 
-> * If [`isIdentity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of **e-grid-column** is enabled, then it will be considered as a read-only column when editing and adding a record.
-> * You can disable editing for a particular column, by specifying [`allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing) property of **e-grid-column** to **false**.
+N> * If [`isIdentity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of **e-grid-column** is enabled, then it will be considered as a read-only column when editing and adding a record.
+<br/> * You can disable editing for a particular column, by specifying [`allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing) property of **e-grid-column** to **false**.
 
 ## Toolbar with edit option
 

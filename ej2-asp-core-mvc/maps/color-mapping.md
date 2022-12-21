@@ -81,7 +81,7 @@ Bind the **ViewBag.populationData** data to the `DataSource` property of `MapsLa
 
 ![Range color mapping](./images/Colormapping/range-colormapping.PNG)
 
-> Refer the data values of [Population-density.json](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Population-density-1298888173) here.
+N> Refer the data values of [Population-density.json](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Population-density-1298888173) here.
 
 ### Equal color mapping
 
@@ -140,7 +140,7 @@ Bind the **ViewBag.unitedCountries** data to the `DataSource` property of `MapsL
 
 Desaturation color mapping applies the color to the shapes of the Maps, similar to the range color mapping. The opacity will be applied in this color mapping based on the `MinOpacity` and `MaxOpacity` properties in the `MapsColorMapping`.
 
->The following example shows how to apply desaturation color mapping to the shapes with the data source  **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
+N>The following example shows how to apply desaturation color mapping to the shapes with the data source  **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
 
 Bind the **Population_Density** data to the `DataSource` property of `MapsLayer` class and set the `ColorValuePath` property of `MapsShapeSettings` as **density**. The range values can be set using the `From` and `To` properties in the `MapsColorMapping`.
 
@@ -177,7 +177,7 @@ Bind the **Population_Density** data to the `DataSource` property of `MapsLayer`
 
 Multiple colors can be added to the color mapping which can be used as gradient effect to a specific shape based on the ranges in the data source. By using the `Color` property of `MapsColorMapping`, any number of colors can be set to the shapes as a gradient.
 
->The following example demonstrates how to use multiple colors in color mapping with the data source  **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
+N>The following example demonstrates how to use multiple colors in color mapping with the data source  **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
 
 Bind the **Population_Density** data to the `DataSource` property of `MapsLayer` class and set the `ColorValuePath` property of `MapsShapeSettings` as **density**. The range values can be set using the `From` and `To` properties of `MapsColorMapping`.
 
@@ -208,13 +208,13 @@ Bind the **Population_Density** data to the `DataSource` property of `MapsLayer`
 
 ![Desaturation with multiple colors](./images/Colormapping/desaturation-multiple-color.PNG)
 
->Refer the data values of [Population-density.json](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Population-density-1298888173) here.
+N>Refer the data values of [Population-density.json](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Population-density-1298888173) here.
 
 ## Color for items excluded from color mapping
 
 Color mapping can be applied to the shapes in the Maps which does not match color mapping criteria such as range or equal values using the `Color` property of `MapsColorMapping`.
 
->The following example shows how to set the color for items excluded from the color mapping with the data source **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
+N>The following example shows how to set the color for items excluded from the color mapping with the data source **Population_Density** that is available in the [Range color mapping](#range-color-mapping) section.
 
 In the following example, color mapping is added for the ranges from 0 to 200. If there are any records in the data source that are outside of this range, the color mapping will not be applied. To apply the color for these excluded items, set the `Color` property alone in the `MapsColorMapping`.
 
@@ -245,7 +245,7 @@ In the following example, color mapping is added for the ranges from 0 to 200. I
 
 ![Color for items excluded from color mapping](./images/Colormapping/excluded-colormapping.PNG)
 
-> Refer the data values of [Population-density.json](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Population-density-1298888173) here.
+N> Refer the data values of [Population-density.json](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Population-density-1298888173) here.
 
 ## Color mapping for bubbles
 

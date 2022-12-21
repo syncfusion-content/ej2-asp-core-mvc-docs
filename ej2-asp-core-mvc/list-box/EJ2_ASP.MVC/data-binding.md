@@ -21,7 +21,7 @@ The ListBox loads the data either from local data sources or remote data service
 | [`iconCss`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBoxFieldSettings~IconCss.html) |  `string` | Specifies the iconCss class that needs to be mapped. |
 | [`htmlAttributes`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBoxFieldSettings~HtmlAttributes.html) |  `string` | Allows additional attributes to configure the elements in various ways to meet the criteria. |
 
-> When binding complex data to the ListBox, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+N> When binding complex data to the ListBox, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Local Data
 

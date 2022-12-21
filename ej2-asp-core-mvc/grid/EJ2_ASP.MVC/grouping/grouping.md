@@ -40,8 +40,8 @@ To enable grouping in the grid, set the [`AllowGrouping`](https://help.syncfusio
 
 
 
-> You can group and ungroup columns by using the [`groupColumn`](https://ej2.syncfusion.com/documentation/api/grid/#groupcolumn) and [`ungroupColumn`](https://ej2.syncfusion.com/documentation/api/grid/#ungroupcolumn) methods.
-> To disable grouping for a particular column, set [`AllowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowGrouping) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) to false.
+N> You can group and ungroup columns by using the [`groupColumn`](https://ej2.syncfusion.com/documentation/api/grid/#groupcolumn) and [`ungroupColumn`](https://ej2.syncfusion.com/documentation/api/grid/#ungroupcolumn) methods.
+<br/> To disable grouping for a particular column, set [`AllowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowGrouping) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) to false.
 
 ## Initial group
 
@@ -105,7 +105,7 @@ To avoid ungrouping or further grouping of a column after initial column groupin
 
 On grouping columns with paging feature, the aggregated information and total items are displayed based on the current page. The grid does not consider aggregated information and total items from other pages. To get additional details (aggregated information and total items) from other pages, set the [`DisablePageWiseAggregates`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_DisablePageWiseAggregates) of [`GroupSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html) to false.
 
-> If remote data is bound to grid dataSource, two requests will be sent when performing grouping action; one for getting the grouped data and another for getting aggregate details and total items count.
+N> If remote data is bound to grid dataSource, two requests will be sent when performing grouping action; one for getting the grouped data and another for getting aggregate details and total items count.
 
 ## Group by format
 
@@ -165,7 +165,7 @@ During the group action, the grid component triggers two events. The [`ActionBeg
 
 
 
-> The **args.requestType** is based on the current action name. For example, when grouping, the **args.requestType** value will be grouping.
+N> The **args.requestType** is based on the current action name. For example, when grouping, the **args.requestType** value will be grouping.
 
 ## Collapse by external button
 

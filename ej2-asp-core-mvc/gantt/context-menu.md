@@ -93,4 +93,4 @@ The following sample shows context menu item for parent rows to expand or collap
 
 ![Alt text](images/customContextMenu.PNG)
 
-> You can show an specific item in context menu for header/content area in the Gantt control by defining the `target` property.
+N> You can show an specific item in context menu for header/content area in the Gantt control by defining the `target` property.

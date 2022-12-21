@@ -48,7 +48,7 @@ Change the width, color, and radius of the heat map cells by using the [`border`
 
 Enable or disable the cell highlighting while hover over the heat map cells by using the  [`enableCellHighlighting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~EnableCellHighlighting.html) property.
 
-> The cell highlighting only works in a SVG rendering mode.
+N> The cell highlighting only works in a SVG rendering mode.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -83,7 +83,7 @@ You can set the minimum and maximum value colors based on row and column using t
 * **Row**: The minimum and maximum value colors calculated for each row of data.
 * **Column**: The minimum and maximum value colors calculated for each column of data.
 
-> The default value of `ColorGradientMode` is Table.
+N> The default value of `ColorGradientMode` is Table.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

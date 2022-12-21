@@ -70,7 +70,7 @@ If the path field is not specified in the [InsertAudioSettings](https://help.syn
 
 You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [FileUploading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event.
 
-> The file size in the argument will be returned in `bytes`.
+N> The file size in the argument will be returned in `bytes`.
 
 In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
 
@@ -101,7 +101,7 @@ In the following illustration, the audio size has been validated before uploadin
 
 The selected audio can be uploaded to the required destination using the controller action below. Map this method name in [InsertAudioSettings.SaveUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorAudioSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorAudioSettings_SaveUrl) and provide the required destination path through [InsertAudioSettings.Path](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorAudioSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorAudioSettings_Path) properties.
 
-> If you want to insert lower-sized audio files in the editor and don't want a specific physical location for saving audio, you can opt to save the format as `Base64`.
+N> If you want to insert lower-sized audio files in the editor and don't want a specific physical location for saving audio, you can opt to save the format as `Base64`.
 
 In the following code blocks, you can insert the audio files which are saved in the specified path.
 
@@ -132,7 +132,7 @@ In the following code blocks, you can insert the audio files which are saved in 
 
 The audio files can be saved as `Blob` or `Base64` URL by using the[InsertAudioSettings.SaveFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorAudioSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorAudioSettings_SaveFormat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
-> The default `SaveFormat` property is set to `Blob` format.
+N> The default `SaveFormat` property is set to `Blob` format.
 
 ```html
 
@@ -164,7 +164,7 @@ Once you select the audio from the local machine, the URL for the audio will be 
 
 Sets the default display property for audio when it is inserted in the Rich Text Editor using the `InsertAudioSettings.LayoutOption`.It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the audio elements’ layout position.
 
-> The default `LayoutOption` property is set to `Inline`.
+N> The default `LayoutOption` property is set to `Inline`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -222,7 +222,7 @@ Refer `rename.cs` controller file for configure the server-side.
 
 You can add additional data with the audio uploaded from the Rich Text Editor on the client side, which can even be received on the server side by using the [FileUploading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event and its `CustomFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
-> By default, it doesn't support the `UseDefaultCredentials` property; we need to manually append the default credentials with the upload request.
+N> By default, it doesn't support the `UseDefaultCredentials` property; we need to manually append the default credentials with the upload request.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

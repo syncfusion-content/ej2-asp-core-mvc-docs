@@ -146,7 +146,7 @@ By default, the grid will be print the master and expanded child grids alone. yo
 
 
 
-> By default, the hierarchy grid prints the expanded child grids from the visible page only. Refer [To Print the expanded state grid from all pages](./how-to/#print-the-expanded-state-from-other-pages).
+N> By default, the hierarchy grid prints the expanded child grids from the visible page only. Refer [To Print the expanded state grid from all pages](./how-to/#print-the-expanded-state-from-other-pages).
 
 ## Print large number of columns
 

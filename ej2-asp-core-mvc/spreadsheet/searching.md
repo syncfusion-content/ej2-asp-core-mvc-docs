@@ -13,7 +13,7 @@ documentation: ug
 
 Find and Replace helps you to search for the target text and replace the found text with alternative text within the sheet or workbook. You can use the [`allowFindAndReplace`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowFindAndReplace) property to enable or disable the Find and Replace functionality.
 
-> * The default value for `allowFindAndReplace` property is `true`.
+N> * The default value for `allowFindAndReplace` property is `true`.
 
 ## Find
 
@@ -27,10 +27,10 @@ Find can be done by any of the following ways:
 * Use find Next and find Previous buttons to search the given value in the workbook.
 * Select the option button in Find dialog to open the Find and Replace dialog. Then, select the below properties for enhanced searching.
 
-> * `Search within`: To search the target in a sheet (default) or in an entire workbook.
-> * `Search by`: It enhance the search, either By Rows (default), or By Columns.
-> * `Match case`: To find the matched value with case sensitive.
-> * `Match exact cell contents`: To find the exact matched cell value with entire match cases.
+N> * `Search within`: To search the target in a sheet (default) or in an entire workbook.
+<br/> * `Search by`: It enhance the search, either By Rows (default), or By Columns.
+<br/> * `Match case`: To find the matched value with case sensitive.
+<br/> * `Match exact cell contents`: To find the exact matched cell value with entire match cases.
 
 * Using [`find()`](../api/spreadsheet/#find) method to perform find operation.
 
