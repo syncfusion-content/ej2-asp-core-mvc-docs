@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Loading Animation
+# Loading Animation in gantt
 
 The gantt has an option to show a loading indicator in-between the time of fetching the data and binding it to the gantt during initial rendering, refreshing or after performing any gantt action like sorting, filtering, virtual scroll and more. The gantt support two indicator types, which is achieved by setting the [`loadingIndicator.indicatorType`] property to Shimmer or Spinner. The default value of the indicator type is "Spinner."
 
