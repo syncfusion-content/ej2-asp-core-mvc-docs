@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Global Local in ##Platform_Name## Gantt Component
+title: Global Local in Syncfusion ##Platform_Name## Gantt Component
 description: Learn here all about Global Local in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Global Local
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization
+# Globalization in Gantt control
 
 ## Localization
 
@@ -173,6 +173,34 @@ The [`Internationalization`](../../common/internationalization) library is used 
 
 > * In the above sample, `Timeline` is formatted by `NumberFormatOptions` and `DateFormatOptions`.
 > * By default, [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value is `en-US`. If you want to change `en-US` culture, then set the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale).
+
+
+## Right to left (RTL)
+
+RTL provides an option to switch the text direction and layout of the Gantt component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Urdu, etc.). To enable RTL Gantt, set the [`EnableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableRtl) to true.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/global/enableRtl/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="EnableRtl.cs" %}
+{% include code-snippet/gantt/global/enableRtl/enableRtl.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/global/enableRtl/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="EnableRtl.cs" %}
+{% include code-snippet/gantt/global/enableRtl/enableRtl.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See Also
 
