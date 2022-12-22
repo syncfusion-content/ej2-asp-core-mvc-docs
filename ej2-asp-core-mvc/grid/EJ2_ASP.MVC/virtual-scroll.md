@@ -216,13 +216,21 @@ this.dataManager = new DataManager({
 
  You can find the full code sample from the below GitHub location.
 
+
 N> [View GitHub Sample](https://github.com/SyncfusionExamples/react-grid-load-millions-of-records/)
+
+> [View GitHub Sample](https://github.com/SyncfusionExamples/react-grid-load-millions-of-records/)
+
 
 Also, you can view the hosted link for this sample [here](https://ej2.syncfusion.com/aspnetcore/Load_millions_of_records).
 
 ![Prevent browser height limitation](images/external-button.png)
 
+
 N> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
+
+> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
+
 
 ### Solution 2: Using RowHeight property
 
@@ -234,7 +242,11 @@ In the following image, you can see how many records will be scrollable when set
 
 ### Solution 3: Using paging instead of virtual scrolling
 
+
 Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
 
 * Programmatic selection using the `selectRows` method is not supported in virtual scrolling.
+
+
+Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
 
