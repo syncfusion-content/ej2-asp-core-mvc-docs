@@ -13,11 +13,11 @@ documentation: ug
 
 ## Cell customization
 
-You can customize the cell by using the [`cellSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellSettings.html) property.
+You can customize the cell by using the [cellSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellSettings.html) property.
 
 ## Border
 
-Change the width, color, and radius of the heat map cells by using the [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~Border.html) property.
+Change the width, color, and radius of the heat map cells by using the [border](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~Border.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -46,7 +46,7 @@ Change the width, color, and radius of the heat map cells by using the [`border`
 
 ## Cell highlighting
 
-Enable or disable the cell highlighting while hover over the heat map cells by using the  [`enableCellHighlighting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~EnableCellHighlighting.html) property.
+Enable or disable the cell highlighting while hover over the heat map cells by using the  [enableCellHighlighting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~EnableCellHighlighting.html) property.
 
 > The cell highlighting only works in a SVG rendering mode.
 
@@ -75,7 +75,7 @@ Enable or disable the cell highlighting while hover over the heat map cells by u
 
 ## Customize the cell value
 
-In the HeatMap, you can customize the cell value using the [`cellRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellRender.html) client-side event.
+In the HeatMap, you can customize the cell value using the [cellRender](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellRender.html) client-side event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -105,7 +105,7 @@ In the HeatMap, you can customize the cell value using the [`cellRender`](https:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-In the HeatMap, you can customize the background color using the [`backgroundColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Background) property.
+In the HeatMap, you can customize the background color using the [backgroundColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Background) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -118,7 +118,7 @@ In the HeatMap, you can customize the background color using the [`backgroundCol
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-In the HeatMap, you can customize the background color using the [`backgroundColor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Background) property.
+In the HeatMap, you can customize the background color using the [backgroundColor](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Background) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -132,7 +132,7 @@ In the HeatMap, you can customize the background color using the [`backgroundCol
 
 ## Margin
 
-Set the margin for the heat map from its container by using the [`margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Margin.html) property.
+Set the margin for the heat map from its container by using the [margin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Margin.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -161,7 +161,7 @@ Set the margin for the heat map from its container by using the [`margin`](https
 
 ## Title
 
-The title is used to provide a quick information about the data plotted in heat map. The [`text`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapTitle~Text.html) property is used to set the title for heat map. You can also customize text style of a title by using the [`textStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapTitle~TextStyle.html) property.
+The title is used to provide a quick information about the data plotted in heat map. The [text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapTitle~Text.html) property is used to set the title for heat map. You can also customize text style of a title by using the [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapTitle~TextStyle.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -190,7 +190,7 @@ The title is used to provide a quick information about the data plotted in heat 
 
 ## Data label
 
-You can toggle the visibility of data labels by using the [`showLabel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~ShowLabel.html) property. By default, the data label will be visible.
+You can toggle the visibility of data labels by using the [showLabel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~ShowLabel.html) property. By default, the data label will be visible.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -219,7 +219,7 @@ You can toggle the visibility of data labels by using the [`showLabel`](https://
 
 ## Text style
 
-You can customize the font family, font size, and color of the data label by using the [`textStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~TextStyle.html) in the [`cellSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellSettings.html) property.
+You can customize the font family, font size, and color of the data label by using the [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~TextStyle.html) in the [cellSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~CellSettings.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -248,7 +248,7 @@ You can customize the font family, font size, and color of the data label by usi
 
 ## Format
 
-You can change the format of the data label, such as currency, decimal, percent etc. By using [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~Format.html) property.
+You can change the format of the data label, such as currency, decimal, percent etc. By using [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~Format.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
