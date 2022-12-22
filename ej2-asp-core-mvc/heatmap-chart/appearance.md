@@ -248,7 +248,7 @@ You can customize the font family, font size, and color of the data label by usi
 
 ## Format
 
-You can change the format of the data label, such as currency, decimal, percent etc. By using [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~Format.html) property.
+You can change the format of the data label, such as currency, decimal, percent etc. by using [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~Format.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
