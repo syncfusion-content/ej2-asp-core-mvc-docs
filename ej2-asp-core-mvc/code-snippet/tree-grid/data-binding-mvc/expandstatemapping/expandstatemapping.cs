@@ -5,7 +5,7 @@ public ActionResult ExpandStateMapping()
 
 public class TreeData
 {
-    public static List<TreeData> tree = new List<TreeData>();
+     public static List<TreeData> tree = new List<TreeData>();
     [System.ComponentModel.DataAnnotations.Key]
     public int TaskID { get; set; }
     public string TaskName { get; set; }
