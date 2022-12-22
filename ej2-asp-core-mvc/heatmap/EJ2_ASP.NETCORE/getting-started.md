@@ -294,4 +294,4 @@ The tooltip is used when you cannot display information by using the data labels
 * [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 
 
-N> You can refer to our [ASP.NET Core HeatMap Chart](https://www.syncfusion.com/aspnet-core-ui-controls/heatmap-chart) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core HeatMap Chart example](https://ej2.syncfusion.com/aspnetcore/HeatMapChart/Default#/material) that shows you how to render the HeatMap Chart in ASP.NET Core.
+N> You can also explore our [ASP.NET Core HeatMap Chart Example](https://ej2.syncfusion.com/aspnetcore/HeatMapChart/Default#/bootstrap5) that shows you how to render the HeatMap Chart in ASP.NET Core.
