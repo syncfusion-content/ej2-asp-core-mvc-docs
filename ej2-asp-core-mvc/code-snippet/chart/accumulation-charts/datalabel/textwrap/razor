@@ -1,17 +1,14 @@
- 
 @Html.EJS().AccumulationChart("container").Series(series =>
             {
                 series.DataSource(ViewBag.dataSource)
                       .XName("xValue")
                       .YName("yValue")
-                      .Name("Browser")
+                      .StartAngle(270)
+                      .endAngle(90)
+                      .TooltipMappingName('tooltipMappingName')
                       .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
-                      .ExplodeIndex(0).Add();
+                      .DataLabel(dl=>dl.Visible(true).Position('Inside').MaxWidth(100).TextWrap('Width').Name('text').EnableRotation(true)).Add();
             })
-            .HighlightColor("red")
             .EnableSmartLabels(true)
             .Title("Mobile Browser Statistics")
-            .Tooltip(tp => tp.Enable(true).Format(format: "${series.name} ${point.x} : ${point.y}")
-            .Fill('#7bb4eb')
-        })
             .LegendSettings(ls => ls.Visible(false)).Render()
