@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Batch Editing in ##Platform_Name## Grid Control | Syncfusion
+title: Batch Editing in Syncfusion ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Batch Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Batch Editing
@@ -36,7 +36,7 @@ In batch edit mode, when you double-click on the grid cell, then the target cell
 {% endtabs %}
 {% endif %}
 
-
+> If a column's [AllowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_AllowEditing) property is set to false, then the focus can be skipped in that non-editable column by clicking the tab or shift-tab key while in batch edit mode.
 
 ## Cancel edit based on condition in batch mode
 

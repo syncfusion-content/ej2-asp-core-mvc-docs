@@ -13,7 +13,7 @@ documentation: ug
 
 Grid allows you to load large amount of data without performance degradation.
 
-## Row virtualization
+## Row Virtualization
 
 Row virtualization allows you to load and render rows only in the content viewport. It is an alternative way of paging in which the data will be loaded while scrolling vertically. To setup the row virtualization, you need to define [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableVirtualization) as true and content height by [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property.
 
@@ -45,7 +45,7 @@ the [`pageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gr
 
 
 
-## Column virtualization
+## Column Virtualization
 
 Column virtualization allows you to virtualize columns. It will render columns which are in the viewport. You can scroll horizontally to view more columns.
 
@@ -78,7 +78,7 @@ To setup the column virtualization, set the [`enableVirtualization`](https://hel
 
 N> Column's [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
 
-## Virtualization with grouping
+## Virtualization with Grouping
 
 Both the row and column virtualization can be used along with grouping. At initial rendering, the virtual height of scrollbar will be set based on the total number of records and after grouping, it will be refreshed based on the grouped state(expand/collapse). While collapse the group caption row in current viewport then the next view page grouped records are shown.
 
@@ -100,6 +100,7 @@ N> The collapsed/expanded state will persist only for local dataSource while scr
     height: 2em;
 }
 ```
+
 
 * Programmatic selection using the **selectRows** method is not supported in virtual scrolling.
 
@@ -235,3 +236,6 @@ In the following image, you can see how many records will be scrollable when set
 ### Solution 3: Using paging instead of virtual scrolling
 
 Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
+
+* Programmatic selection using the **selectRows** method is not supported in virtual scrolling.
+

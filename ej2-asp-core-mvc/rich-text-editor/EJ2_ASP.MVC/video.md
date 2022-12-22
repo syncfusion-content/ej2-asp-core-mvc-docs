@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Video in ##Platform_Name## Rich Text Editor Control | Syncfusion
-description: Learn here all about Insert the Video feature of Syncfusion ASP.NET MVC RichTextEditor Control and more.
+title: Video in ##Platform_Name## Rich Text Editor Component
+description: Learn here all about Video in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Video
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Video in ASP.NET MVC RichTextEditor Control
+# Insert Video
 
-The Rich Text Editor allows you to insert videos from online sources and local computers and then insert them into your content. You can insert the video with the following list of options in the [InsertVideoSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings) property.
+The Rich Text Editor allows you to insert videos from online sources and local computers where you want to insert the video in your content. For inserting the video to the Rich Text Editor, the following list of options have been provided in the [InsertVideoSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings).
 
 | Options | Description |
 |----------------|---------|
@@ -31,7 +31,7 @@ The Rich Text Editor allows you to insert videos from online sources and local c
 
 ## Configure video tool in the toolbar
 
-You can add the `Video` tool in the Rich Text Editor toolbar using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
+To include the video tool in the Rich Text Editor, you can add the toolbar item `Video` to the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 To configure `Video` toolbar item, refer to the below code.
 
@@ -39,10 +39,10 @@ To configure `Video` toolbar item, refer to the below code.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/remove-url/tagHelper %}
+{% include code-snippet/rich-text-editor/video-import/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Home-controller.cs" %}
-{% include code-snippet/rich-text-editor/remove-url/home-controller.cs %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/video-import/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,43 +50,47 @@ To configure `Video` toolbar item, refer to the below code.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/remove-url/razor %}
+{% include code-snippet/rich-text-editor/video-import/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Home-controller.cs" %}
-{% include code-snippet/rich-text-editor/remove-url/home-controller.cs %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/video-import/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-## Insert a video from the web
+## Insert video from web
 
-You can insert a video from either the hosted link or the local machine by clicking the video button in the editor's toolbar. On Clicking the Video button, a dialog opens which allows you to insert video from the Embedded URL or web URL.
+To insert a video from the hosted link or local machine, you should enable the video tool on the editor’s toolbar. By default, the video tool opens the dialog, allowing you to insert a video as an embedded URL. You can switch to a web URL to insert the video file from the online source.
 
-### Insert from embed URL
+## Insert from web URL
 
-The insert video dialog opens with the `Embed URL` option as default which allows you to insert an embedded URL.
+The video tool default opens the video dialog, allowing you to insert an embedded URL.
 
-![ASP.NET MVC Rich Text Editor Embed URL Video insert](./images/ej2-richtexteditor-video-embed.png)
+![Rich Text Editor Embed URL Video insert](./images/video-embed.png)
 
 ### Insert from web URL
 
-You can switch to `Web URL` by selecting the web URL check box. Inserting with the web URL option will add the video URL as the `src` attribute of the `<source>` tag.
+Switching the option to the web URL in the video dialog allows you to insert a video from the online source. Inserting the URL will be added to the `src` attribute of the `<source>` tag.
 
-![ASP.NET MVC Rich Text Editor Video insert](./images/ej2-richtexteditor-video-web.png)
+![Rich Text Editor Video insert](./images/video-web.png)
 
-## Insert video from local machine
+## Upload and insert video
 
-You can use the `browse` option on the video dialog, to select the video from the local machine and insert it into the Rich Text Editor content.
+In the video dialog, by using the `browse` option, select the video from the local machine and insert it into the Rich Text Editor content.
 
-If the path field is not specified in the [InsertVideoSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings), the video will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
+If the path field is not specified in the [InsertVideoSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings), the video will be converted into `Blob` url or `Base64` and inserted inside the Rich Text Editor.
 
 ### Restrict video upload based on size
 
-You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [FileUploading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event.
+Using the Rich Text Editor `FileUploading` event, you can restrict the video to upload when the given video size is greater than the allowed fileSize. Also, the video size in the argument will be returned in `bytes`.
+
 
 N> The file size in the argument will be returned in `bytes`.
 
 In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not
+
+In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
+
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -144,11 +148,15 @@ In the following code blocks, you can insert the video files which are saved in 
 
 ### Video save format
 
-The video files can be saved as `Blob` or `Base64` URL by using the [InsertVideoSettings.SaveFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_SaveFormat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
+The video files can be saved as `Blob` or `Base64` url by using the [InsertVideoSettings.SaveFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_SaveFormat) property, which is of enum type and the generated url will be set to the `src` attribute of the `<source>` tag.
+
 
 N> The default `SaveFormat` property is set to `Blob` format.
 
-```html
+> By default, the files are saved in the `Blob` format.
+
+
+```typescript
 
 <video>
     <source src="blob:http://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="video/mp4" >
@@ -162,19 +170,49 @@ N> The default `SaveFormat` property is set to `Blob` format.
 
 ## Replacing video
 
-Once a video file has been inserted, you can replace it using the Rich Text Editor [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `VideoReplace`  option. You can replace the video file either by using the embedded URL or the web URL and the browse option in the video dialog.
+Once a video file has been inserted, you can replace it using the Rich Text Editor [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `videoReplace` option. You can replace the video file either by using the embedded URL or the web URL and the browse option in the video dialog.
 
-![ASP.NET MVC Rich Text Editor Embed Video replace](./images/ej2-richtexteditor-video-replace-embed.png)
+![Rich Text Editor Embed Video replace](./images/video-replace-embed.png)
 
-![ASP.NET MVC Rich Text Editor Web Video replace](./images/ej2-richtexteditor-video-replace-web.png)
+![Rich Text Editor Web Video replace](./images/video-replace-web.png)
 
 ## Delete video
 
-To remove a video from the Rich Text Editor content, select the video and click the `VideoRemove` button from the quick toolbar. It will delete the video from the Rich Text Editor content as well as from the service location if the [InsertVideoSettings.RemoveUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_RemoveUrl) is given.
+To remove a video from the Rich Text Editor content, select the video and click the `videoRemove` tool from the quick toolbar. It will delete the video from the Rich Text Editor content as well as from the service location if the [InsertVideoSettings.RemoveUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_RemoveUrl) is given.
 
 Once you select the video from the local machine, the URL for the video will be generated. You can remove the video from the service location by clicking the cross icon.
 
-![ASP.NET MVC Rich Text Editor Video delete](./images/ej2-richtexteditor-video-del.png)
+![Rich Text Editor Video delete](./images/video-del.png)
+
+The following example explains how to configure `InsertVideoSettings.removeUrl` to remove a saved video from the remote service location when the following video remove actions are performed:
+
+* `delete` key action.
+* `backspace` key action.
+* Removing uploaded video file from the insert video dialog.
+* Deleting video using the quick toolbar `videoRemove` option.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/remove-url/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Home-controller.cs" %}
+{% include code-snippet/rich-text-editor/remove-url/home-controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/remove-url/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Home-controller.cs" %}
+{% include code-snippet/rich-text-editor/remove-url/home-controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Dimension
 
@@ -182,13 +220,17 @@ Set the default width, minWidth, height and minHeight of the video element, when
 
 Through the [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video), also you can change the width and height using `Change Size` option. Once you click on the option, the video size dialog will open as below. In that, specify the width and height of the video in pixels
 
-![ASP.NET MVC Rich Text Editor Video dimension](./images/ej2-richtexteditor-video-size.png)
+![Rich Text Editor Video dimension](./images/video-size.png)
 
 ## Display Position
+
 
 Sets the default display property for the video when it is inserted in the Rich Text Editor using the `InsertVideoSettings.LayoutOption`. It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video elements’ layout position.
 
 N> The default `LayoutOption` property is set to `Inline`.
+
+Sets the default display for an video when it is inserted in the Rich Text Editor using the `InsertVideoSettings.LayoutOption`. It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video elements’ layout position.
+
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -221,11 +263,11 @@ You can disable the resize action by configuring `false` for the [InsertVideoSet
 
 N> If the [MinWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MinWidth) and [MinHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MinHeight) properties are configured the video resizing does not shrink below the specified values.
 
-![ASP.NET MVC Rich Text Editor video resize](./images/ej2-richtexteditor-video-resize.png)
+![Rich Text Editor video resize](./images/video-resize.png)
 
 ## Rename video before inserting
 
-You can use the [InsertVideoSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings)  property, to specify the server handler to upload the selected video. Then by binding the [FileUploadSuccess](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploadSuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
+By using the [InsertVideoSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings) property, you can specify the server handler to upload the selected video. Then by binding the `FileUploadSuccess` event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
 
 Refer `rename.cs` controller file for configure the server-side.
 
@@ -254,9 +296,13 @@ Refer `rename.cs` controller file for configure the server-side.
 
 ## Upload video with authentication
 
-You can add additional data with the video uploaded from the Rich Text Editor on the client side, which can even be received on the server side by using the [FileUploading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+The Rich Text Editor control allows you to add additional data with the File Upload, which can be received on the server side. By using the `FileUploading` event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+
 
 N> By default, it doesn't support the `UseDefaultCredentials` property, you can manually append the default credentials with the upload request.
+
+> By default it doesn't support `UseDefaultCredentials` property, we need to manually append the default credentials with the upload request.
+
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -284,4 +330,4 @@ N> By default, it doesn't support the `UseDefaultCredentials` property, you can 
 ## See Also
 
 * [How to edit the quick toolbar settings](./toolbar/#quick-inline-toolbar)
-* [How to use the link editing option in the toolbar items](./link/)
+* [How to use link editing option in the toolbar items](./link/)
