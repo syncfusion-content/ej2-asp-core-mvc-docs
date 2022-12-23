@@ -26,7 +26,7 @@ This section briefly explains about how to integrate ASP.NET Core PDF Viewer con
 ![select-aspnet-core-web-app](Core_Images/Select-aspnet-core-project.png)
 3. In the **Configure your new project** dialog, enter *Project Name* and select Next.
 ![Set-project-name](Core_Images/Set-project-name.png)
-4. In the **Additional information** dialog, select **.NET 6.0 (Long-term Support) and then select Create**. 
+4. In the **Additional information** dialog, select **.NET 6.0 (Long-term Support) and then select **Create**. 
 ![Set-framework](Core_Images/additional-info.png) 
 
 ## ASP.NET Core PDF Viewer NuGet package installation
@@ -39,7 +39,7 @@ To add ASP.NET Core PDF Viewer control, the following NuGet package need to be i
 
 ## Add Syncfusion ASP.NET Core Tag Helper
 
-Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+Open `~/Views/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_ViewImports.cshtml" %}
@@ -69,7 +69,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentati
 
 ## Add script reference
 
-Add the required scripts using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+In this getting started walk-through, the required scripts are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -85,7 +85,7 @@ Add the required scripts using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 
 ## Register Syncfusion Script Manager
 
-Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager in the ASP.NET Core application as follows. 
+Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager <ejs-script> at the end of `<body>` in the ASP.NET Core application as follows. 
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -100,11 +100,9 @@ Open `~/Pages/Shared/_Layout.cshtml` page and register the script manager in the
 {% endhighlight %}
 {% endtabs %}
 
-N> Add the script manager `<ejs-script>` at the **end of `<body>`**.
-
 ## Add ASP.NET Core PDF Viewer control
 
-Add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the documentPath property as below.
+Now, add the Syncfusion ASP.NET Core PDF Viewer tag helper in `~/Pages/Index.cshtml` page. You can load a PDF file in the PDF Viewer by specifying the document name in the documentPath property as below.
 
 {% tabs %}
 {% highlight c# tabtitle="~/Index.cshtml" %}
@@ -179,7 +177,6 @@ namespace PDFViewerSample.Pages
             jsonResult = pdfviewer.Load(stream, jsonObject);
             return Content(JsonConvert.SerializeObject(jsonResult));
         }
-
         public Dictionary<string, string> JsonConverterstring(jsonObjects results)
         {
             Dictionary<string, object> resultObjects = new Dictionary<string, object>();
@@ -191,7 +188,6 @@ namespace PDFViewerSample.Pages
             Dictionary<string, string> jsonResult = emptyObjects.ToDictionary(k => k.Key, k => k.Value.ToString());
             return jsonResult;
         }
-
         //Post action for processing the PDF documents.
         public IActionResult OnPostRenderPdfPages([FromBody] jsonObjects responseData)
         {
@@ -200,7 +196,6 @@ namespace PDFViewerSample.Pages
             object jsonResult = pdfviewer.GetPage(jsonObject);
             return Content(JsonConvert.SerializeObject(jsonResult));
         }
-
         //Post action for unloading and disposing the PDF document resources
         public IActionResult OnPostUnload([FromBody] jsonObjects responseData)
         {
@@ -209,7 +204,6 @@ namespace PDFViewerSample.Pages
             pdfviewer.ClearCache(jsonObject);
             return this.Content("Document cache is cleared");
         }
-
         //Post action for rendering the ThumbnailImages
         public IActionResult OnPostRenderThumbnailImages([FromBody] jsonObjects responseData)
         {
@@ -218,7 +212,6 @@ namespace PDFViewerSample.Pages
             object result = pdfviewer.GetThumbnailImages(jsonObject);
             return Content(JsonConvert.SerializeObject(result));
         }
-
         //Post action for processing the bookmarks from the PDF documents
         public IActionResult OnPostBookmarks([FromBody] jsonObjects responseData)
         {
@@ -227,7 +220,6 @@ namespace PDFViewerSample.Pages
             object jsonResult = pdfviewer.GetBookmarks(jsonObject);
             return Content(JsonConvert.SerializeObject(jsonResult));
         }
-
         //Post action for rendering the annotation comments
         public IActionResult OnPostRenderAnnotationComments([FromBody] jsonObjects responseData)
         {
@@ -236,8 +228,8 @@ namespace PDFViewerSample.Pages
             object jsonResult = pdfviewer.GetAnnotationComments(jsonObject);
             return Content(JsonConvert.SerializeObject(jsonResult));
         }
-
         //Post action for exporting the annotations
+
         public IActionResult OnPostExportAnnotations([FromBody] jsonObjects responseData)
         {
             PdfRenderer pdfviewer = new PdfRenderer(_cache);
@@ -245,7 +237,6 @@ namespace PDFViewerSample.Pages
             string jsonResult = pdfviewer.ExportAnnotation(jsonObject);
             return Content(jsonResult);
         }
-
         //Post action for importing the annotations
         public IActionResult OnPostImportAnnotations([FromBody] jsonObjects responseData)
         {
@@ -289,9 +280,9 @@ namespace PDFViewerSample.Pages
                     }
                 }
             }
+
             return Content(jsonResult);
         }
-
         //Post action for downloading the PDF documents
         public IActionResult OnPostDownload([FromBody] jsonObjects responseData)
         {
@@ -300,7 +291,6 @@ namespace PDFViewerSample.Pages
             string documentBase = pdfviewer.GetDocumentAsBase64(jsonObject);
             return Content(documentBase);
         }
-
         //Post action for printing the PDF documents
         public IActionResult OnPostPrintImages([FromBody] jsonObjects responseData)
         {
@@ -309,7 +299,6 @@ namespace PDFViewerSample.Pages
             object pageImage = pdfviewer.GetPrintImage(jsonObject);
             return Content(JsonConvert.SerializeObject(pageImage));
         }
-
         //Gets the path of the PDF document
         private string GetDocumentPath(string document)
         {
@@ -329,7 +318,6 @@ namespace PDFViewerSample.Pages
             return documentPath;
         }
     }
-
     public class jsonObjects
     {
         public string document { get; set; }
@@ -393,8 +381,6 @@ In the above code,
 **serviceUrl** is necessary to communicate with the server which also specifies the path of the controller. Here, PdfViewer is the name of the controller.
 
 **documentPath** is the property needed to load a PDF file in the PDF Viewer. The specified document must be placed inside the folder structure that matches with the path in the GetDocumentPath(string document) method inside the PdfViewerController.
-
-N> Add the PDF document to the `wwwroot` directory in the ASP.NET Core application.
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core PDF Viewer control will be rendered in the default web browser.
 
