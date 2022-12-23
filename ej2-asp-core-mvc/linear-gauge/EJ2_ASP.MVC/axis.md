@@ -11,7 +11,7 @@ documentation: ug
 
 # Axis in ASP.NET MVC Linear Gauge
 
-Axis is used to indicate the numeric values in the linear scale. The Linear Gauge component can have any number of axes. The sub-elements of an axis are line, ticks, labels, ranges, and pointers.
+Axis is used to indicate the numeric values in the linear scale. The  [ASP.NET MVC Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) component can have any number of axes. The sub-elements of an axis are line, ticks, labels, ranges, and pointers.
 
 ## Setting the start value and end value of the axis
 

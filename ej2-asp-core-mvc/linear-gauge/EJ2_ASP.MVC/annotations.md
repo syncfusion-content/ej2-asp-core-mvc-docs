@@ -13,7 +13,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD013 -->
 
-Annotations are used to mark the specific area of interest in the Linear Gauge with text, HTML elements, or images. Any number of annotations can be added to the Linear Gauge component.
+Annotations are used to mark the specific area of interest in the  [ASP.NET MVC Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) with text, HTML elements, or images. Any number of annotations can be added to the Linear Gauge component.
 
 ## Adding annotation
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # Methods in ASP.NET MVC Linear Gauge
 
-The following methods are available in the Linear Gauge component.
+The following methods are available in the  [ASP.NET MVC Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) component.
 
 ## setPointerValue
 
