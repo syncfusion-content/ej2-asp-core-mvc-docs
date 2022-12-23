@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Palette in ##Platform_Name## Heatmap Chart Component
+title: Palette in Syncfusion ##Platform_Name## Heatmap Chart Component
 description: Learn here all about Palette in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Palette
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Palette
+# Palette in ##Platform_Name## HeatMap Chart Component
 
 In heat map, each data point is displayed as a cell with applied color based on the data value. The palette in the heat map is used to define the color range for cells and gradient type for colors. You can define the colors either in RGB or hex codes using the [color](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPalette~Color.html) property in the `palette`. The defined colors are applied to the cell background based on the palette type and cell value.
 

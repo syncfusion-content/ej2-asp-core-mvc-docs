@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis in ##Platform_Name## Heatmap Chart Component
+title: Axis in Syncfusion ##Platform_Name## Heatmap Chart Component
 description: Learn here all about Axis in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Axis
+# Axis in ##Platform_Name## HeatMap Chart Component
 
 Heat map consists of two axes namely, X-axis and Y-axis that displays the row headers and column headers to plot the data points respectively. You can define the type, format, and other customizing options for both axes in the heat map.
 

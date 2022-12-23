@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working With Data in ##Platform_Name## Heatmap Chart Component
+title: Working With Data in Syncfusion ##Platform_Name## Heatmap Chart Component
 description: Learn here all about Working With Data in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Working With Data
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Working with data
+# Working with data in ##Platform_Name## HeatMap Chart Component
 
 Heat map visualizes the JSON data and two-dimensional array data. Using the data adaptor support, data can be bound to the heat map.
 

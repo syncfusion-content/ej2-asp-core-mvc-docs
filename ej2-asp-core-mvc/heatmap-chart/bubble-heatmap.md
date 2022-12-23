@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bubble Heatmap in ##Platform_Name## Heatmap Chart Component
+title: Bubble Heatmap in Syncfusion ##Platform_Name## Heatmap Chart Component
 description: Learn here all about Bubble Heatmap in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Bubble Heatmap
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Bubble heat map
+# Bubble heat map in ##Platform_Name## HeatMap Chart Component
 
 Data points represent the data source values with `gradient` or `fixed` colors in the heat map. You can customize the appearance of these data points by changing the `color` and `shape` attributes.
 
