@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tool Tip in ##Platform_Name## Accumulation Chart Component
+title: Tool Tip in ##Platform_Name## Syncfusion Accumulation Chart Component
 description: Learn here all about Tool Tip in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tool Tip
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip
+# Tooltip in ##Platform_Name## Accumulation Chart Component
 
 Tooltip for the accumulation chart can be enabled by using the `enable` property.
 
@@ -127,7 +127,7 @@ Any HTML element can be displayed in the tooltip by using the `template` propert
 
 ## Customization
 
-The [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Fill) and [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_TextStyle) property in the tooltip is used to customize the font of the tooltip text.
+The [`fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Fill) and [`border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_TextStyle) property in the tooltip is used to customize the font of the tooltip text. The tooltip point color can be changed, when the point is hovering using the [`highlightColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_HighlightColor) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
