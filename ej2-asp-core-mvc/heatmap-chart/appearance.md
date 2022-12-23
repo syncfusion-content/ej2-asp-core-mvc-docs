@@ -71,7 +71,7 @@ Enable or disable the cell highlighting while hovering over the heatmap cells by
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Enable or disable the cell highlighting while hover over the heat map cells by using the [EnableCellHighlighting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_EnableCellHighlighting) property.
+Enable or disable the cell highlighting while hovering over the heat map cells by using the [EnableCellHighlighting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_EnableCellHighlighting) property.
 
 > The cell highlighting only works in a SVG rendering mode.
 
