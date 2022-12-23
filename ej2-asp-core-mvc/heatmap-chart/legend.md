@@ -11,7 +11,7 @@ documentation: ug
 
 # Legend in ##Platform_Name## HeatMap Chart Component
 
-The legend is used to provide the information about the heat map cell. You can enable the legend by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Visible.html) property to true.
+The legend is used to provide the information about the heat map cell. You can enable the legend by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Visible.html) property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
