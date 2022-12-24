@@ -228,7 +228,7 @@ In heat map, you can define an interval between the axis labels using the [inter
 
 ## Axis label increment
 
-Axis label increment in the heat map is used to display the axis labels with regular interval values in numeric and date-time axes. The labels will be displayed with tick gaps when you set the label interval. But, to achieve the same behavior without tick gaps, use the label increment. You can set the axis label increment using the [increment](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~Increment.html) property and the default value of this property is 1.
+Axis label increment in the heat map is used to display the axis labels with regular interval values in numeric and date-time axes. The labels will be displayed with tick gaps when you set the label interval. But, to achieve the same behavior without tick gaps, use the label increment. You can set the axis label increment using the [increment](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapAxis~Increment.html) property and the default value of this property is **1**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -420,7 +420,7 @@ The [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syn
 
 ### Border Customization
 
-Using the [border](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel~Border.html) property, you can customize the width, color, and type. The types of border are `Rectangle`, `WithoutTopBorder`, `WithoutBottomBorder`, `WithoutTopAndBottomBorder`, `Brace`, `WithoutBorder`.
+Using the [border](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel~Border.html) property, you can customize the width, color, and type. The types of border are **Rectangle**, **WithoutTopBorder**, **WithoutBottomBorder**, **WithoutTopAndBottomBorder**, **Brace**, **WithoutBorder**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

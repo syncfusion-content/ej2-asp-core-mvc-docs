@@ -19,7 +19,7 @@ The cell customizations and color mapping for `rect` tile type is defined in [ap
 
 ## Bubble attributes
 
-The data points can be represented in the bubble along with its attributes by setting the [tileType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~TileType.html) property to `bubble`.
+The data points can be represented in the bubble along with its attributes by setting the [tileType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~TileType.html) property to **Bubble**.
 
 In bubble heat map, you can display the data points with bubble size, bubble colors, and sector attributes of the bubble.
 
@@ -27,9 +27,9 @@ In bubble heat map, you can display the data points with bubble size, bubble col
 
 In this bubble heat map type, the size factor of the bubble is used to denote the data variations. The radius of the bubble varies according to data values.
 
-By default, the bubble with small size denotes the data value with small magnitude and the larger bubble size denotes the data value with larger magnitude. This behavior can be inversed by using the [isinversedbubblesize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~IsInversedBubbleSize.html) property.
+By default, the bubble with small size denotes the data value with small magnitude and the larger bubble size denotes the data value with larger magnitude. This behavior can be inversed by using the [isInversedbubblesize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~IsInversedBubbleSize.html) property.
 
-To render a bubble heat map with size series, set the [bubbleType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~BubbleType.html) property to `Size`.
+To render a bubble heat map with size series, set the [bubbleType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~BubbleType.html) property to **Size**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -60,7 +60,7 @@ To render a bubble heat map with size series, set the [bubbleType](https://help.
 
 In heat map, defined with this tile type, the data points will be represented with same sized bubbles and the data value variations are represented with the bubble colors.
 
-To represent the data points with variations in bubble colors, set the [bubbleType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~BubbleType.html) property to `Color`.
+To represent the data points with variations in bubble colors, set the [bubbleType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~BubbleType.html) property to **Color**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -122,7 +122,7 @@ To render the data points with bubble sector, set the [bubbleType](https://help.
 
 In this bubble heat map type, you can bind the two data source fields to a single data point. Thereby, each data point represents the two data values with bubble size and bubble color attributes, where the bubble size denotes the magnitude of one data source field and the bubble color denotes the magnitude of another data source field.
 
-To render a bubble heat map with size and color series, set the [bubbleType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~BubbleType.html) property to `SizeAndColor`.
+To render a bubble heat map with size and color series, set the [bubbleType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapCellSettings~BubbleType.html) property to **SizeAndColor**.
 
 #### Binding data for bubble heat map with size and color attributes
 
