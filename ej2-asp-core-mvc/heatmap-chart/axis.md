@@ -420,7 +420,7 @@ The [textStyle](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syn
 
 ### Border Customization
 
-Using the [border](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel~Border.html) property, you can customize the width, color, and type. The types of border are **Rectangle**, **WithoutTopBorder**, **WithoutBottomBorder**, **WithoutTopAndBottomBorder**, **Brace**, **WithoutBorder**.
+Using the [border](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapMultiLevelLabel~Border.html) property, you can customize the width, color, and type. The types of border are **Rectangle**, **WithoutTopBorder**, **WithoutBottomBorder**, **WithoutTopAndBottomBorder**, **Brace**, and **WithoutBorder**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
