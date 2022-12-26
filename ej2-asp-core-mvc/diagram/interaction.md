@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction in ##Platform_Name## Diagram Component
+title: Interaction in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Interaction in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Interaction
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Interaction
+## Interaction
 
 ## Selection
 
@@ -178,12 +178,10 @@ The diagram component notifies the mouse button clicked. For example, whenever t
 
 
 ```javascript
-
 function click(arg) {
     //Obtains the clicked mouse button
     var button = arg.button
 }
-
 ```
 
 ## Appearance
@@ -213,7 +211,6 @@ The appearance of the user handle can be customized by using the [`size`](https:
 
 
 ```javascript
-
 function getTool(action) {
         var tool;
         if (action === 'clone') {
@@ -254,7 +251,6 @@ var CloneTool = (function (_super) {
     };
     return CloneTool;
 }(ej.diagrams.MoveTool));
-
 ```
 
 ## Zoom pan
@@ -298,7 +294,6 @@ Diagram provides the support to notify the pan status of the zoom pan tool. When
 
 
 ```javascript
-
 function Created() {
     var diagram = document.getElementById("container").ej2_instances[0];
     diagram.tool = DiagramTools.ZoomPan;
@@ -307,7 +302,6 @@ function Created() {
 function scrollChange(args) {
     var panStatus = args.panState
 }
-
 ```
 
 ## Keyboard

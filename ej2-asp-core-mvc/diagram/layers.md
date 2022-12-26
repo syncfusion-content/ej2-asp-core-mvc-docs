@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layers in ##Platform_Name## Diagram Component
+title: Layers in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Layers in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Layers
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Layers
+## Layers
 
 **Layer** is used to organize related shapes on a diagram control. A layer is a named category of shapes. By assigning shapes to different layers, you can selectively view, remove, and lock different categories of shapes.
 
@@ -32,9 +32,7 @@ import {
     NodeModel,
     LayerModel
 } from '@syncfusion/ej2-diagrams';
-
 // A node is created and stored in nodes array.
-
 let nodes: NodeModel[] = [{
         id: 'node1',
         width: 100,
@@ -61,7 +59,6 @@ let nodes: NodeModel[] = [{
         }]
     }
 ];
-
 let connectors: ConnectorModel[] = [{
     id: 'connector1',
     type: 'Straight',
@@ -74,9 +71,7 @@ let connectors: ConnectorModel[] = [{
         y: 400
     },
 }];
-
 // initialize diagram component
-
 let diagram: Diagram = new Diagram({
     width: '100%',
     height: '600px',
@@ -106,9 +101,7 @@ import {
     NodeModel,
     LayerModel
 } from '@syncfusion/ej2-diagrams';
-
 // A node is created and stored in nodes array.
-
 let nodes: NodeModel[] = [{
         id: 'node1',
         width: 100,
@@ -135,7 +128,6 @@ let nodes: NodeModel[] = [{
         }]
     }
 ];
-
 let connectors: ConnectorModel[] = [{
     id: 'connector1',
     type: 'Straight',
@@ -148,9 +140,7 @@ let connectors: ConnectorModel[] = [{
         y: 400
     },
 }];
-
 // initialize diagram component
-
 let diagram: Diagram = new Diagram({
     width: '100%',
     height: '600px',
@@ -187,9 +177,7 @@ import {
     NodeModel,
     LayerModel
 } from '@syncfusion/ej2-diagrams';
-
 // A node is created and stored in nodes array.
-
 let nodes: NodeModel[] = [{
         id: 'node1',
         width: 100,
@@ -216,7 +204,6 @@ let nodes: NodeModel[] = [{
         }]
     }
 ];
-
 let connectors: ConnectorModel[] = [{
     id: 'connector1',
     type: 'Straight',
@@ -229,9 +216,7 @@ let connectors: ConnectorModel[] = [{
         y: 400
     },
 }];
-
 // initialize diagram component
-
 let diagram: Diagram = new Diagram({
     width: '100%',
     height: '600px',
@@ -249,7 +234,6 @@ let diagram: Diagram = new Diagram({
         }
     ]
 });
-
 // render initialized diagram
 diagram.appendTo('#element');
 
@@ -267,9 +251,7 @@ import {
     NodeModel,
     LayerModel
 } from '@syncfusion/ej2-diagrams';
-
 // A node is created and stored in nodes array.
-
 let nodes: NodeModel[] = [{
         id: 'node1',
         width: 100,
@@ -296,7 +278,6 @@ let nodes: NodeModel[] = [{
         }]
     }
 ];
-
 let connectors: ConnectorModel[] = [{
     id: 'connector1',
     type: 'Straight',
@@ -309,11 +290,8 @@ let connectors: ConnectorModel[] = [{
         y: 400
     },
 }];
-
 let addInfo: Object = { Description: 'Layer1' };
-
 // initialize Diagram component
-
 let diagram: Diagram = new Diagram({
     width: '100%',
     height: '600px',

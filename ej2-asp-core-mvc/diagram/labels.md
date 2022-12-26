@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Labels in ##Platform_Name## Diagram Component
+title: Labels in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Labels in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Labels
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Annotation
+## Annotation
 
 [`Annotation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html) is a block of text that can be displayed over a node or connector. Annotation is used to textually represent an object with a string that can be edited at runtime. Multiple annotations can be added to a node/connector.
 
@@ -86,7 +86,6 @@ var annotation = [{
 //Method to add labels at run time
 diagram.addLabels(diagram.nodes[0], annotation);
 diagram.dataBind();
-
 ```
 
 ## Remove annotation
@@ -119,7 +118,6 @@ A collection of annotations can be removed from the node by using client-side me
 
 
 ```javascript
-
 var diagramElement = document.getElementById('element');
 var diagram = diagramElement.ej2_instances[0];
 var annotation = [{
@@ -128,7 +126,6 @@ var annotation = [{
 }]
 //Method to remove labels at runtime
 diagram.removeLabels(diagram.nodes[0], annotation);
-
 ```
 
 ## Update annotation at runtime
@@ -167,7 +164,6 @@ var diagram = diagramElement.ej2_instances[0];
 diagram.nodes[0].annotations[0].content = 'Updated Annotation';
 //Method to update the annotation at run time
 diagram.dataBind();
-
 ```
 
 ## Alignment

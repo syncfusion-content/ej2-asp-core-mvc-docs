@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Symbol Palette in ##Platform_Name## Diagram Component
+title: Symbol Palette in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Symbol Palette in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Symbol Palette
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Symbol Palette
+## Symbol Palette
 
 The **SymbolPalette** displays a collection of palettes. The palette shows a set of nodes and connectors. It allows to drag and drop the nodes and connectors into the diagram.
 
@@ -36,8 +36,6 @@ The [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagr
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Add palettes to SymbolPalette
 
@@ -312,7 +310,6 @@ While adding more number of symbols such as nodes and connectors to the palette,
         strokeWidth: 2
     };
 }
-
 function getSymbolInfo(symbol) {
     return {
         fit: true
