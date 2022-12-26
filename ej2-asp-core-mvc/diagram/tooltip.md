@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip in Diagram
+# Tooltip in Diagram Control
 
 <!-- markdownlint-disable MD010 -->
 
