@@ -67,6 +67,32 @@ The client-side method [`selectAll`](https://help.syncfusion.com/cr/aspnetcore-j
 
 N> While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
 
+## Customize the resize-thumb
+
+You can change the size of the node resize thumb and the connector end point handle by using the `handleSize` property. The appearance such as fill, stroke, and stroke width of the node resize thumb and connector end point handle can be customized by overriding the e-diagram-resize-handle and e-diagram-endpoint-handle classes respectively.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/node/node/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Node.cs" %}
+{% include code-snippet/diagram/node/node/node.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Node.cs" %}
+{% include code-snippet/diagram/node/node/node.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![handleSize](images/handlesize.png)
+
 ## Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
@@ -79,7 +105,7 @@ N> While dragging and resizing, the objects are snapped towards the nearest obje
 
 * Each segment of a selected connector is editable with some specific handles/thumbs.
 
-N> For connector editing, you have to inject the [`ConnectorEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html) module.
+N> For connector editing, you have to inject the [`ConnectorEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_connectorEditing) module.
 
 ## End point handles
 

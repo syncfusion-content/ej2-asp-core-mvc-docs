@@ -280,10 +280,101 @@ As all the three behaviors are completely different, you can achieve only one be
 Set the desired [`tool`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTools.html) to the tool property of the diagram model.
 
 ```javascript
-// To Enable Single Tool
-diagram.tool = DiagramTools.DrawOnce;
-diagram.dataBind();
-// Enables multiple tools
-diagram.tool = DiagramTools.DrawOnce || DiagramTools.ZoomPan;
-diagram.dataBind();
+function Created() {
+    var diagram = document.getElementById("container").ej2_instances[0];
+    var connectors = {
+            id: 'connector1',
+            type: 'Straight',
+           segments: [{ type: "Straight" }]
+        }
+        diagram.drawingObject = connectors;
+        //To draw an object once, activate draw once
+        diagram.tool = DiagramTools.DrawOnce | DiagramTools.ZoomPan;
+        diagram.dataBind();
+}
+```
+
+## Events
+
+[`elementDraw`](../api/diagram)  event is triggered when node or connector is drawn using drawing tool.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/Tools/shapes/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Shapes.cs" %}
+{% include code-snippet/diagram/Tools/shapes/shapes.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Shapes.cs" %}
+{% include code-snippet/diagram/Tools/shapes/shapes.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+```javascript
+function Created() {
+    var diagram = document.getElementById("container").ej2_instances[0];
+    var connectors = {
+            id: 'connector1',
+            type: 'Straight',
+           segments: [{ type: "Straight" }]
+        }
+        diagram.drawingObject = connectors;
+        //To draw an object once, activate draw once
+        diagram.tool = DiagramTools.DrawOnce;
+        diagram.dataBind();
+    
+}
+```
+
+## Freehand Drawing
+
+Diagram has support for free-hand drawing to draw anything on the diagram page independently. Free-hand drawing will be enabled by using the drawingObject property and setting its value to Freehand.
+
+The following code illustrates how to draw a freehand drawing.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/Tools/shapes/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Shapes.cs" %}
+{% include code-snippet/diagram/Tools/shapes/shapes.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Shapes.cs" %}
+{% include code-snippet/diagram/Tools/shapes/shapes.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+```javascript
+function Created() {
+    var diagram = document.getElementById("container").ej2_instances[0];
+    var connectors = {
+            id: 'connector1',
+            type: 'Freehand',
+        }
+        diagram.drawingObject = connectors;
+        //To draw an object once, activate draw once
+        diagram.tool = DiagramTools.DrawOnce;
+        diagram.dataBind();
+    
+}
 ```
