@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bpmn Shapes in ##Platform_Name## Diagram Component
+title: Bpmn Shapes in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Bpmn Shapes in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Bpmn Shapes
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Shapes
+# Shapes in Diagram
 
 BPMN shapes are used to represent the internal business procedure in a graphical notation and enable you to communicate the procedures in a standard manner. To create a BPMN shape, in the node property shape, type should be set as “bpmn” and its shape should be set as any one of the built-in shapes.
 
@@ -307,8 +307,6 @@ A subprocess is defined as an event subprocess, when it is triggered by an event
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Process
 
