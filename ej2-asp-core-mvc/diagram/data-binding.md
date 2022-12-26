@@ -102,7 +102,7 @@ This feature allows to read the data source and perform add or edit or delete th
 
 * You can set the data collection in the model’s dataSourceSettings [`dataManager`](https://ej2.syncfusion.com/documentation/api/diagram/connectionDataSourceModel/#datamanager) property. The nodes will be generated based on the data specified in the data source.
 
-* You can set the connector collection in the model’s dataSourceSettings [`connectionDataSource`](https://ej2.syncfusion.com/documentation/api/diagram/connectionDataSourceModel) property.
+* You can set the connector collection in the model’s dataSourceSettings [`connectionDataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnectionDataSource.html) property.
 
 * The dataSourceSettings connectionDataSource [`dataManager`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDataSource.html#Syncfusion_EJ2_Diagrams_DiagramDataSource_DataManager) property is used to set the data source for the connection data source items.
 
