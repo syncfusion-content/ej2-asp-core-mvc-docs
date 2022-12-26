@@ -104,17 +104,17 @@ This feature allows to read the data source and perform add or edit or delete th
 
 * You can set the connector collection in the model’s dataSourceSettings [`connectionDataSource`](https://ej2.syncfusion.com/documentation/api/diagram/connectionDataSourceModel) property.
 
-* The dataSourceSettings connectionDataSource [`dataManager`](https://ej2.syncfusion.com/documentation/api/diagram/connectionDataSourceModel/#datamanager) property is used to set the data source for the connection data source items.
+* The dataSourceSettings connectionDataSource [`dataManager`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDataSource.html#Syncfusion_EJ2_Diagrams_DiagramDataSource_DataManager) property is used to set the data source for the connection data source items.
 
 * If you have a data (data will be set in the dataSource property) with parent relationship in the database and also defined the connector in the connectionDataSource simultaneously, then the connectors set in the connectionDataSource will be considered as a priority to render the connector.
 
-* The dataSourceSettings [`crudAction’s`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/#crudaction) [`read`](https://ej2.syncfusion.com/documentation/api/diagram/crudActionModel#read) property specifies the method, which is used to read the data source and it populates the nodes in the diagram.
+* The dataSourceSettings [`crudAction’s`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDataSource.html#Syncfusion_EJ2_Diagrams_DiagramDataSource_CrudAction) [`read`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnectionDataSource.html) property specifies the method, which is used to read the data source and it populates the nodes in the diagram.
 
 * The connectionDataSource crudAction’s [`read`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/#read) specifies the method, which is used to read the data source and it populates the connectors in the diagram.
 
-* The dataSourceSettings’s [`id`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/) and connectionDataSource’s [`id`](https://ej2.syncfusion.com/documentation/api/diagram/connectionDataSourceModel#id) properties are used to define the unique field of each JSON data.
+* The dataSourceSettings’s [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramDataSource.html#Syncfusion_EJ2_Diagrams_DiagramDataSource_Id) and connectionDataSource’s [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnectionDataSource.html#Syncfusion_EJ2_Diagrams_DiagramConnectionDataSource_Id) properties are used to define the unique field of each JSON data.
 
-* The connectionDataSource’s [`sourceID`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/) and [`targetID`](https://ej2.syncfusion.com/documentation/api/diagram/connectionDataSourceModel#targetid) properties are used to set the sourceID and targetID for connection data source item.
+* The connectionDataSource’s [`sourceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnectionDataSource.html#Syncfusion_EJ2_Diagrams_DiagramConnectionDataSource_SourceID) and [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnectionDataSource.html#Syncfusion_EJ2_Diagrams_DiagramConnectionDataSource_TargetID) properties are used to set the sourceID and targetID for connection data source item.
 
 * The connectionDataSource’s [`sourcePointX`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/), [`sourcePointY`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/), [`targetPointX`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/), and [`targetPointY`](https://ej2.syncfusion.com/documentation/api/diagram/dataSourceModel/) properties are used to define the sourcePoint and targetPoint values for connector from data source.
 

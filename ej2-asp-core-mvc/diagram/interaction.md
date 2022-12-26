@@ -79,7 +79,7 @@ N> While dragging and resizing, the objects are snapped towards the nearest obje
 
 * Each segment of a selected connector is editable with some specific handles/thumbs.
 
-N> For connector editing, you have to inject the [`ConnectorEditing`](https://ej2.syncfusion.com/documentation/api/diagram/connectorEditing) module.
+N> For connector editing, you have to inject the [`ConnectorEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html) module.
 
 ## End point handles
 

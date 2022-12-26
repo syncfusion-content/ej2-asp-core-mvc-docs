@@ -365,7 +365,7 @@ A user can open the hyperlink in the new window, the same tab and the new tab by
 
 ## Template Support for Annotation
 
-Diagram provides template support for annotation. You should define a SVG/HTML content as string in the annotation's [`template`](https://ej2.syncfusion.com/documentation/api/diagram/annotationModel#template) property.
+Diagram provides template support for annotation. You should define a SVG/HTML content as string in the annotation's [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Template) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -588,9 +588,9 @@ Diagram allows to create read-only annotations. You have to set the read-only pr
 
 ## Drag Limit
 
-* The diagram control now supports defining the [`dragLimit`](https://ej2.syncfusion.com/documentation/api/diagram/annotationModel#draglimit) to the label while dragging from the connector and also update the position to the nearest segment offset.
+* The diagram control now supports defining the [`dragLimit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotationBuilder.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotationBuilder_DragLimit_Syncfusion_EJ2_Diagrams_DiagramMargin_) to the label while dragging from the connector and also update the position to the nearest segment offset.
 
-* You can set the value to dragLimit [`left`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#left), [`right`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#right), [`top`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#top), and [`bottom`](https://ej2.syncfusion.com/documentation/api/diagram/marginModel#bottom) properties which allows the dragging of connector labels to a certain limit based on the user defined values.
+* You can set the value to dragLimit [`left`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramMargin.html#Syncfusion_EJ2_Diagrams_DiagramMargin_Left), [`right`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramMargin.html#Syncfusion_EJ2_Diagrams_DiagramMargin_Right), [`top`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramMargin.html#Syncfusion_EJ2_Diagrams_DiagramMargin_Top), and [`bottom`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramMargin.html#Syncfusion_EJ2_Diagrams_DiagramMargin_Bottom) properties which allows the dragging of connector labels to a certain limit based on the user defined values.
 
 * By default, drag limit will be disabled for the connector. It can be enabled by setting connector constraints as drag.
 
