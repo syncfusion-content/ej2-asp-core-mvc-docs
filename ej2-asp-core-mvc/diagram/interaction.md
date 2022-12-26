@@ -19,7 +19,7 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 An element can be selected by clicking that element. During single click, all previously selected items are cleared.
 
-![Single Selection](images/single-select.gif)
+![Single Selection](images/single-select.png)
 
 * While selecting the diagram elements, the following events can be used to do your customization.
 * When selecting or unselecting the diagram elements, the [`selectionChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_SelectionChange) event gets triggered.
@@ -34,11 +34,11 @@ Multiple elements can be selected with the following ways:
 
 * Ctrl+Click - During single click, any existing item in the selection list will be cleared, and only the item clicked recently will be there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
 
-![Multiple Selection](images/multi-select-ctrl.gif)
+![Multiple Selection](images/multi-select.png)
 
 * Selection rectangle/rubber band selection - Clicking and dragging the diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
 
-![Multiple Rubberband Selection](images/multi-select-rubber-band.gif)
+![Multiple Rubberband Selection](images/rubber-band.png)
 
 ## Select/Unselect elements using program
 
@@ -63,7 +63,7 @@ The client-side method [`selectAll`](https://help.syncfusion.com/cr/aspnetcore-j
 * When one corner of the selector is dragged, opposite corner is in a static position.
 * When a node is resized, the [`sizeChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_SizeChange) event gets triggered.
 
-![Resize](images/resize.gif)
+![Resize](images/resize.png)
 
 N> While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
 
@@ -73,7 +73,7 @@ N> While dragging and resizing, the objects are snapped towards the nearest obje
 * The node is rotated with reference to the static pivot point.
 * Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
 
-![Rotate](images/rotate.gif)
+![Rotate](images/rotate.png)
 
 ## Connection editing
 
@@ -85,7 +85,7 @@ N> For connector editing, you have to inject the [`ConnectorEditing`](https://he
 
 Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles helps to adjust the source and target points.
 
-![Drag End Point Handles](images/connector-end-point.gif)
+![Drag End Point Handles](images/connector-end-handle.png)
 
 * If you drag the connector end points, then the following events can be used to do your customization.
 * When the connector source point is changed, the [`sourcePointChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_SourcePointChange) event gets triggered.
@@ -97,24 +97,24 @@ Source and target points of the selected connectors are represented with two han
 * End point of each straight segment is represented by a thumb that enables to edit the segment.
 * Any number of new segments can be inserted into a straight line by clicking, when Shift and Ctrl keys are pressed (Ctrl+Shift+Click).
 
-![Straight Segment Editing Addition](images/straight-segment-add.gif)
+![Straight Segment Editing Addition](images/straightsegment-add.png)
 
 * Straight segments can be removed by clicking the segment end point, when Ctrl and Shift keys are pressed (Ctrl+Shift+Click).
 
-![Straight Segment Editing Remove](images/straight-segment-remove.gif)
+![Straight Segment Editing Remove](images/straightsegment-remove.png)
 
 ## Orthogonal thumbs
 
 * Orthogonal thumbs allows to adjust the length of adjacent segments by clicking and dragging it.
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-![orthogonal Segment Edit](images/orthogonal-segment-edit.gif)
+![orthogonal Segment Edit](images/orthogonalsegment-thumb.png)
 
 ## Bezier thumbs
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![Bezier Segement Thumb](images/bezier-segement-thumb.gif)
+![Bezier Segement Thumb](images/beziersegment-thumb.png)
 
 ## Drag and drop nodes over other elements
 
