@@ -17,10 +17,10 @@ Heatmap visualizes the JSON data and two-dimensional array data. Using the data 
 
 Heatmap supports the following types of data binding with the adaptor support.
 
-* Array
+**Array**
     * Table Binding
     * Cell Binding
-* JSON data
+**JSON data**
     * Table Binding
     * Cell Binding
 
