@@ -108,7 +108,10 @@ You can use **WebApiAdaptor** to bind grid with Web API created using OData endp
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/data-binding/webapi/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Webapi.cs" %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/grid/data-binding/webapi/controller.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="WebAPI.cs" %}
 {% include code-snippet/grid/data-binding/webapi/webapi.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -119,7 +122,10 @@ You can use **WebApiAdaptor** to bind grid with Web API created using OData endp
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/data-binding/webapi/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Webapi.cs" %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/grid/data-binding/webapi/controller.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="WebAPI.cs" %}
 {% include code-snippet/grid/data-binding/webapi/webapi.cs %}
 {% endhighlight %}
 {% endtabs %}
