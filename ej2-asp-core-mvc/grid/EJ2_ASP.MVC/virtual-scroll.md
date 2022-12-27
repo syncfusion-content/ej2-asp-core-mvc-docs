@@ -219,18 +219,12 @@ this.dataManager = new DataManager({
 
 N> [View GitHub Sample](https://github.com/SyncfusionExamples/react-grid-load-millions-of-records/)
 
-> [View GitHub Sample](https://github.com/SyncfusionExamples/react-grid-load-millions-of-records/)
-
-
 Also, you can view the hosted link for this sample [here](https://ej2.syncfusion.com/aspnetcore/Load_millions_of_records).
 
 ![Prevent browser height limitation](images/external-button.png)
 
 
 N> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
-
-> If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
-
 
 ### Solution 2: Using RowHeight property
 
