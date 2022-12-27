@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Endpoint handles in ##Platform_Name## Diagram Component
+title: Endpoint handles in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Endpoint handles in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Endpoint handles

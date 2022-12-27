@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag resize and rotate in ##Platform_Name## Diagram Component
+title: Drag resize and rotate in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Drag resize and rotate in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drag resize rotate
@@ -51,7 +51,7 @@ You can change the size of the node resize thumb and the connector end point han
 {% endtabs %}
 {% endif %}
 
-![handleSize](../images/handleSize.gif)
+![handleSize](../images/handlesize.png)
 
 ## Rotate
 
