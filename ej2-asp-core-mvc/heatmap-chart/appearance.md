@@ -95,7 +95,7 @@ The [colorGradientMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 * **Row**: The minimum and maximum value colors calculated for each row of data.
 * **Column**: The minimum and maximum value colors calculated for each column of data.
 
-> The default value of `colorGradientMode` is Table.
+> The default value of `colorGradientMode` is **Table**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
