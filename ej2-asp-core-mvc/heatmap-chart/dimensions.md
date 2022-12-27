@@ -13,7 +13,7 @@ documentation: ug
 
 ## Size for container
 
-Heat map can be rendered to its container size. You can set the size through inline or CSS.
+Heatmap can be rendered to its container size. You can set the size through inline or CSS.
 
 ```javascript
     <div id='container'>
@@ -21,13 +21,13 @@ Heat map can be rendered to its container size. You can set the size through inl
     </div>
 ```
 
-## Size for heat map
+## Size for heatmap
 
-You can  set the size of heat map directly by using the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Width.html) and [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Height.html) properties.
+You can  set the size of heatmap directly by using the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Width.html) and [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~Height.html) properties.
 
 ## In pixel
 
-You can set the size for heat map in a pixel.
+You can set the size for heatmap in a pixel.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -56,7 +56,7 @@ You can set the size for heat map in a pixel.
 
 ## In percentage
 
-By setting value in percentage, heat map gets its dimension with respect to its container. For example, when the height is ‘50%’, heat map rendered to half of the container height.
+By setting value in percentage, heatmap gets its dimension with respect to its container. For example, when the height is ‘50%’, heatmap rendered to half of the container height.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
