@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Show or hide totals
+# Show or hide totals in ##Platform_Name## Syncfusion Pivot Table Control
 
 ## Show or hide grand totals
 
@@ -105,7 +105,7 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 ![output](images/subtotal2.png)
 
-## Show subtotals at top or bottom
+## Show sub-totals at top or bottom
 
 Allows to show sub-totals either at top or bottom of the header group in rows and columns by using the [`subTotalsPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SubTotalsPosition.html) property. By default, [`subTotalsPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SubTotalsPosition.html) property is set to **Auto**, which means that column sub-totals are displayed at the bottom and row sub-totals are displayed at the top of the header group in the pivot table.
 
@@ -192,6 +192,6 @@ The grand totals and sub-totals can be dynamically displayed at the top or botto
 {% endtabs %}
 {% endif %}
 
-![Grandtotals position](images/grandtotals-position.png)
+![Grand Totals](images/toolbar-grandtotals.png)
 
-![Subtotals position](images/subtotals-position.png)
+![Sub Totals](images/toolbar-subtotals.png)
