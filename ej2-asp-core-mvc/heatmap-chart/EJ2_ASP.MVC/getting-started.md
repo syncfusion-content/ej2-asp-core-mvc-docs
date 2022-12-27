@@ -265,7 +265,7 @@ public ActionResult Index()
 
 ## Enable legend
 
-Use a legend for the heat map in the [LegendSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_LegendSettings) object by setting the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_Visible) property to true.
+Use a legend for the heat map in the [LegendSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_LegendSettings) object by setting the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_Visible) property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -291,7 +291,7 @@ Use a legend for the heat map in the [LegendSettings](https://help.syncfusion.co
 
 ## Add data label
 
-Add data labels to improve the readability of the heat map. This can be achieved by setting the [ShowLabel](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_ShowLabel) property to true in the [CellSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_CellSettings) object.
+Add data labels to improve the readability of the heat map. This can be achieved by setting the [ShowLabel](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_ShowLabel) property to **true** in the [CellSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_CellSettings) object.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -343,7 +343,7 @@ The default palette settings of the heat map cells can be customized by using th
 
 ## Enable tooltip
 
-The tooltip is used when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_ShowTooltip) property to `true`.
+The tooltip is used when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_ShowTooltip) property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
