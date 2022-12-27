@@ -70,7 +70,7 @@ You can add a title to the axis using [`Title`](https://help.syncfusion.com/cr/a
 
 ## Title Rotation
 
-By using the [`titleRotation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_TitleRotation) property, you can rotate the axis title from 0 to 360 degree.
+By using the [titleRotation](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_TitleRotation) property, you can rotate the axis title from 0 to 360 degree.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

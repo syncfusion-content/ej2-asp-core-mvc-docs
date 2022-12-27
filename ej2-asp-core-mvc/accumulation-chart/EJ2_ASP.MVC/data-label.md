@@ -171,7 +171,7 @@ Individual text can be customized using the `TextRender` event.
 
 ## Text wrap
 
-When the data label text exceeds the container, the text can be wrapped by using [`textWrap`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_TextWrap) Property. End user can also wrap the data label text based on the [`maxWidth`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_MaxWidth) property.
+When the data label text exceeds the container, the text can be wrapped by using [textWrap](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_TextWrap) property. End user can also wrap the data label text based on [maxWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_MaxWidth) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
