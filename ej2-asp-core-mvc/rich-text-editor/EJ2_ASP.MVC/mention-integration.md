@@ -32,3 +32,9 @@ In the following sample, configured the following properties with popup dimensio
 {% endtabs %}
 
 ![ASP.NET MVC mention integration ](./images/mention-integration.png)
+
+> [View Sample](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/MentionIntegration#/fluent)
+
+## See Also
+
+* [Mention](https://ej2.syncfusion.com/aspnetmvc/documentation/mention/getting-started)

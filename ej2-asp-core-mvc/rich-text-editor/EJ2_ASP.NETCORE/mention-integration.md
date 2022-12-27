@@ -32,3 +32,9 @@ In the following sample, configured the following properties with popup dimensio
 {% endtabs %}
 
 ![ASP.NET Core mention integration ](./images/mention-integration.png)
+
+> [View Sample](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/MentionIntegration#/bootstrap5)
+
+## See Also
+
+* [Mention](https://ej2.syncfusion.com/aspnetcore/documentation/mention/getting-started)
