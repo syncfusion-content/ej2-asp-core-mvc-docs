@@ -16,7 +16,6 @@ namespace WebApplication1.Models
             List<SportsData> mention = new List<SportsData>()
             {
                 new SportsData { Name = "Selma Rose", EmployeeImage = "3.png", EmailId = "selma@gmail.com" },
-                new SportsData { Name = "Selma Rose", EmployeeImage = "3.png", EmailId = "selma@gmail.com" },
                 new SportsData { Name = "Russo Kay", EmployeeImage = "8.png", EmailId = "russo@gmail.com" },
                 new SportsData { Name = "Camden Kate", EmployeeImage = "9.png", EmailId = "camden@gmail.com" },
                 new SportsData { Name = "Mary Kate", EmployeeImage = "4.png", EmailId = "mary@gmail.com" },
