@@ -17,18 +17,19 @@ Heatmap visualizes the JSON data and two-dimensional array data. Using the data 
 
 Heatmap supports the following types of data binding with the adaptor support.
 
-**Array**
+* Array
     * Table Binding
     * Cell Binding
-**JSON data**
+* JSON data
     * Table Binding
     * Cell Binding
 
-### Array - table binding
-
-This data type is a collection of one dimensional array objects, at which each inner array contains data points for an X-axis data label. This is the default data binding type for heatmap. You can also directly bind the array object to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~DataSource.html) property.
+### Array - Table binding
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+Each inner array of an array table binding data contains data points for an X-axis data label, which is a collection of one dimensional array objects.
+This is the default data binding type for heatmap. You can also directly bind the array object to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~DataSource.html) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -40,6 +41,9 @@ This data type is a collection of one dimensional array objects, at which each i
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Each inner array of an array table binding data contains data points for an X-axis data label, which is a collection of one dimensional array objects.
+This is the default data binding type for heatmap. You can also directly bind the array object to the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.heatmap.heatmap.html#Syncfusion_EJ2_HeatMap_HeatMap_DataSource) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -53,11 +57,11 @@ This data type is a collection of one dimensional array objects, at which each i
 
 
 
-### Array - cell binding
-
-This data type is a collection of array objects that contain information about the row index, column index, and data value for each cell. You can bind the data to heatmap by using the `data` property in the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~DataSource.html) and setting the `adaptorType` property to **Cell**.
+### Array - Cell binding
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+Each cell in an array cell binding data contain information about the row index, column index, and data value, which is a collection of array object. To bind the data to the heatmap, you can use the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~DataSource.html) property and set the [adaptorType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_AdaptorType) property to **Cell** in the [dataSourceSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_DataSourceSettings).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -69,6 +73,8 @@ This data type is a collection of array objects that contain information about t
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Each cell in an array cell binding data contain information about the row index, column index, and data value, which is a collection of array object. To bind the data to the heatmap, you can use the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.heatmap.heatmap.html#Syncfusion_EJ2_HeatMap_HeatMap_DataSource) property and set the [adaptorType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_AdaptorType) property to **Cell** in the [dataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.heatmap.heatmap.html#Syncfusion_EJ2_HeatMap_HeatMap_DataSourceSettings).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -82,11 +88,11 @@ This data type is a collection of array objects that contain information about t
 
 
 
-### JSON data - table binding
-
-In JSON table data binding, each JSON object contains an X-axis data point as row header and all the corresponding Y-axis data values. You can bind the JSON table data to the heatmap using the `data` property in [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~DataSource.html). To achieve this, you should enable the `isJsonData` property and  define the `adaptorType` property as **Table**. The `xDataMapping` property is used to map the row header in JSON data.
+### JSON data - Table binding
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+In JSON table data binding, each JSON object contains an X-axis data point as row header and all the corresponding Y-axis data values. You can bind the JSON table data to the heatmap using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~DataSource.html) property. To achieve this, you should enable the [isJsonData](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_IsJsonData) property and  define the [adaptorType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_AdaptorType) property as **Table** in the [dataSourceSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_DataSourceSettings). The `xDataMapping` property is used to map the row header in JSON data.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -98,6 +104,8 @@ In JSON table data binding, each JSON object contains an X-axis data point as ro
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+In JSON table data binding, each JSON object contains an X-axis data point as row header and all the corresponding Y-axis data values. You can bind the JSON table data to the heatmap using the [dataSource]((https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~DataSource.html) property. To achieve this, you should enable the [isJsonData](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_IsJsonData) property and  define the [adaptorType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_AdaptorType) property as **Table** in the [dataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.heatmap.heatmap.html#Syncfusion_EJ2_HeatMap_HeatMap_DataSourceSettings). The `xDataMapping` property is used to map the row header in JSON data.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -113,9 +121,9 @@ In JSON table data binding, each JSON object contains an X-axis data point as ro
 
 ### JSON data - Cell binding
 
-In JSON cell data binding, each JSON object consists a value for each cell along with a mapping value for row and column. You can bind the JSON cell data having information for each cell to the heatmap using the `data` property in [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~DataSource.html). To achieve this, you should define the `adaptorType` property as **Cell**, and enable the `isJsonData` property. Now, map the fields of data by using the `valueMapping`, `xDataMapping` and `yDataMapping` properties.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+In JSON cell data binding, each JSON object consists a value for each cell along with a mapping value for row and column. You can bind the JSON cell data having information for each cell to the heatmap using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMap~DataSource.html) property. To achieve this, you should define the [adaptorType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_AdaptorType) property as **Cell**, and enable the [isJsonData](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_IsJsonData) property in the [dataSourceSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_DataSourceSettings). Now, map the fields of data by using the [valueMapping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_ValueMapping), [xDataMapping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_XDataMapping) and [yDataMapping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_YDataMapping) properties.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -127,6 +135,8 @@ In JSON cell data binding, each JSON object consists a value for each cell along
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+In JSON cell data binding, each JSON object consists a value for each cell along with a mapping value for row and column. You can bind the JSON cell data having information for each cell to the heatmap using the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.heatmap.heatmap.html#Syncfusion_EJ2_HeatMap_HeatMap_DataSource). To achieve this, you should define the [adaptorType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_AdaptorType) property as **Cell**, and enable the [isJsonData](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_IsJsonData) property in the [dataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.heatmap.heatmap.html#Syncfusion_EJ2_HeatMap_HeatMap_DataSourceSettings). Now, map the fields of data by using the [valueMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_ValueMapping), [xDataMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_XDataMapping) and [yDataMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_YDataMapping) properties.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -142,9 +152,9 @@ In JSON cell data binding, each JSON object consists a value for each cell along
 
 ## Empty points
 
-The data points that use the **null** or **undefined** or empty string as value are considered as empty points. Empty data points are ignored and not displayed in the heatmap, and these points are rendered with default palette. You can customize the empty data point color value using the [emptyPointColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings~EmptyPointColor.html) property.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+The data points that use the **null** or **undefined** or empty string as value are considered as empty points. Empty data points are ignored and not displayed in the heatmap, and these points are rendered with default palette. You can customize the empty data point color value using the [emptyPointColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings~EmptyPointColor.html) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -156,6 +166,8 @@ The data points that use the **null** or **undefined** or empty string as value 
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The data points that use the **null** or **undefined** or empty string as value are considered as empty points. Empty data points are ignored and not displayed in the heatmap, and these points are rendered with default palette. You can customize the empty data point color value using the [emptyPointColor](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html#Syncfusion_EJ2_HeatMap_HeatMapPaletteSettings_EmptyPointColor) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -171,9 +183,9 @@ The data points that use the **null** or **undefined** or empty string as value 
 
 ## Binding nested JSON data
 
-In complex data binding, you can bind the nested JSON data to the data points in the heatmap. The nested data can be mapped using the `xDataMapping`, `yDataMapping`, `valueMapping` and `bubbleDataMapping` properties as string value concatenated by a dot.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+In complex data binding, you can bind the nested JSON data to the data points in the heatmap. The nested data can be mapped using the [xDataMapping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_XDataMapping), [yDataMapping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_YDataMapping), [valueMapping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_ValueMapping) and [bubbleDataMapping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_BubbleDataMapping) properties as string value concatenated by a dot.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -185,6 +197,8 @@ In complex data binding, you can bind the nested JSON data to the data points in
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+In complex data binding, you can bind the nested JSON data to the data points in the heatmap. The nested data can be mapped using the [xDataMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_XDataMapping), [yDataMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_YDataMapping), [valueMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_ValueMapping) and [bubbleDataMapping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapData.html#Syncfusion_EJ2_HeatMap_HeatMapData_BubbleDataMapping) properties as string value concatenated by a dot.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
