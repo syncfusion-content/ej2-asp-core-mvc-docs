@@ -27,7 +27,7 @@ In the following sample, configured the following properties with popup dimensio
 {% include code-snippet/rich-text-editor/mention-integration/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/mention-integration/SportsData.cs %}
+{% include code-snippet/rich-text-editor/mention-integration/EmployeeData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
