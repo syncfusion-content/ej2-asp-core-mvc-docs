@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Kanban dimensions
+# Kanban dimensions in ASP.NET Core Kanban
 
 The [ASP.NET Core Kanban](https://www.syncfusion.com/aspnet-core-ui-controls/kanban-board) dimensions refers to both height and width of the entire layout and it accepts three types of values.
 
