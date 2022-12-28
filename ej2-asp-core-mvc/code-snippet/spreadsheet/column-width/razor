@@ -1,0 +1,19 @@
+@Html.EJS().Spreadsheet("spreadsheet").Created("created").Sheets(sheet =>
+{
+    sheet.Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).Add();
+  
+    }).Add();
+}).Render()
+
+<script>
+
+    function created() {
+       // To change width of single column
+       this.setColumnsWidth(100, ['F']);
+       // To change width of multiple columns
+       this.setColumnsWidth(120, ['A:C', 'G:I', 'K:M']);
+    }
+
+</script>
