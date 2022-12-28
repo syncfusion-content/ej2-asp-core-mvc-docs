@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formulas in ##Platform_Name## Spreadsheet Component
+title: Formulas in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Formulas in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Formulas
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Formulas
+# Formulas in Spreadsheet control
 
 Formulas are used for calculating the data in a worksheet. You can refer the cell reference from same sheet or from different sheets.
 

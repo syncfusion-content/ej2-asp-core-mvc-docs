@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Range in ##Platform_Name## Spreadsheet Component
+title: Cell Range in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Cell Range in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cell Range
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cell Range
+# Cell Range in Spreadsheet control
 
 A group of cells in a sheet is known as cell range.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scrolling in ##Platform_Name## Spreadsheet Component
+title: Scrolling in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Scrolling in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scrolling
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Scrolling
+# Scrolling in Spreadsheet control
 
 Scrolling helps you to move quickly to different areas of the worksheet. It moves faster if we use horizontal and vertical scroll bars. Scrolling can be enabled by setting the [`allowScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowScrolling) as true.
 

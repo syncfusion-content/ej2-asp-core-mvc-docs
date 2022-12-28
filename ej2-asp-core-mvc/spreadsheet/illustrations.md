@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Illustrations in ##Platform_Name## Spreadsheet Component
+title: Illustrations in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Illustrations in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Illustrations
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Illustrations
+# Illustrations in Spreadsheet control
 
 Illustrations helps you to insert a image, shapes and graphic objects in the Essential JS 2 spreadsheet.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing in ##Platform_Name## Spreadsheet Component
+title: Editing in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Editing in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Editing
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Editing
+# Editing in Spreadsheet control
 
 You can edit the contents of a cell directly in the cell or by typing in the formula bar. By default, the editing feature is enabled in the spreadsheet. Use the [`allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowEditing) property to enable or disable the editing feature.
 

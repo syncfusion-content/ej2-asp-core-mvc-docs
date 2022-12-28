@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Worksheet in ##Platform_Name## Spreadsheet Component
+title: Worksheet in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Worksheet in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Worksheet
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Worksheet
+# Worksheet in Spreadsheet control
 
 Worksheet is a collection of cells organized in the form of rows and columns that allows you to store, format, and manipulate the data.
 

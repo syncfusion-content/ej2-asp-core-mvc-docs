@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Spreadsheet Component
+title: Overview in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index

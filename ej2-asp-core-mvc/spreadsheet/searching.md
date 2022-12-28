@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching in ##Platform_Name## Spreadsheet Component
+title: Searching in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Searching in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Searching
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Find and Replace
+# Find and Replace in Spreadsheet control
 
 Find and Replace helps you to search for the target text and replace the found text with alternative text within the sheet or workbook. You can use the [`allowFindAndReplace`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowFindAndReplace) property to enable or disable the Find and Replace functionality.
 

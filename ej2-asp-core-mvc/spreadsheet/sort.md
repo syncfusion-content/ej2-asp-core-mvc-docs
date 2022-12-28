@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sort in ##Platform_Name## Spreadsheet Component
+title: Sort in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Sort in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sort
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sorting
+# Sorting in Spreadsheet control
 
 Sorting helps arranging the data to a specific order in a selected range of cells. You can use the [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowSorting) property to enable or disable sorting functionality.
 
