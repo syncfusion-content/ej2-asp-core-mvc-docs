@@ -140,6 +140,16 @@ You can open excel file into a read-only mode by using the [`openComplete`](../a
 {% endtabs %}
 {% endif %}
 
+## Supported file formats
+
+The following list of Excel file formats are supported in Spreadsheet:
+
+* MS Excel (.xlsx)
+* MS Excel 97-2003 (.xls)
+* Comma Separated Values (.csv)
+* Excel Macro-Enabled Workbook (.xlsm)
+* Excel Binary Workbook(.xlsb)
+
 ## Save
 
 The Spreadsheet component saves its data, style, format, and more as Excel file document. To enable this feature, set [`allowSave`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowSave) as `true` and assign service url to the [`saveUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SaveUrl) property.
@@ -245,6 +255,15 @@ You can add your own custom header to the save action in the Spreadsheet. For pr
 {% endtabs %}
 {% endif %}
 
+### Supported file formats
+
+The following list of Excel file formats are supported in Spreadsheet:
+
+* MS Excel (.xlsx)
+* MS Excel 97-2003 (.xls)
+* Comma Separated Values (.csv)
+* Portable Document Format (.pdf)
+
 ### Methods
 
 To save the Spreadsheet document as an `xlsx, xls, csv, or pdf` file, by using [save](../api/spreadsheet/#save) method should be called with the `url`, `fileName` and `saveType` as parameters. The following code example shows to save the spreadsheet file as an `xlsx, xls, csv, or pdf` in the button click event.
@@ -293,14 +312,6 @@ Open and save helper functions are shipped in the Syncfusion.EJ2.Spreadsheet pac
 | ASP.NET Core (Targeting .NET Core) | Syncfusion.EJ2.AspNet.Core <br/> Syncfusion.EJ2.Spreadsheet.AspNet.Core <br/> Syncfusion.Compression.Net.Core <br/> Syncfusion.XlsIO.Net.Core <br/> Syncfusion.XlsIORenderer.Net.Core <br/> | [Syncfusion.EJ2.Spreadsheet.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.Spreadsheet.AspNet.Core) <br/> [Syncfusion.XlsIORenderer.Net.Core](https://www.nuget.org/packages/Syncfusion.XlsIORenderer.Net.Core) |
 | ASP.NET MVC4 | Syncfusion.EJ2.MVC4 <br/>Syncfusion.EJ2.Spreadsheet.AspNet.MVC4 <br/> Syncfusion.Compression.Base <br/> Syncfusion.XlsIO.AspNet.Mvc4 <br/> Syncfusion.ExcelToPdfConverter.AspNet.Mvc4 <br/> | [Syncfusion.EJ2.Spreadsheet.AspNet.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.Spreadsheet.AspNet.MVC4) <br/> [Syncfusion.ExcelToPdfConverter.AspNet.Mvc4](https://www.nuget.org/packages/Syncfusion.ExcelToPdfConverter.AspNet.Mvc4) |
 | ASP.NET MVC5 | Syncfusion.EJ2.MVC5 <br/>Syncfusion.EJ2.Spreadsheet.AspNet.MVC5 <br/> Syncfusion.Compression.Base <br/> Syncfusion.XlsIO.AspNet.Mvc5 <br/> Syncfusion.ExcelToPdfConverter.AspNet.Mvc5 <br/> | [Syncfusion.EJ2.Spreadsheet.AspNet.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.Spreadsheet.AspNet.MVC5) <br/> [Syncfusion.ExcelToPdfConverter.AspNet.Mvc5](https://www.nuget.org/packages/Syncfusion.ExcelToPdfConverter.AspNet.Mvc5) |
-
-## Supported File Formats
-
-The following list of Excel file formats are supported in Spreadsheet:
-
-* MS Excel (.xlsx)
-* MS Excel 97-2003 (.xls)
-* Comma Separated Values (.csv)
 
 ## See Also
 
