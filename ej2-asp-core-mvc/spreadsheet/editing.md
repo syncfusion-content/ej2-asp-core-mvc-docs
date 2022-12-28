@@ -21,7 +21,7 @@ You can start editing by one of the following ways,
 * Press `F2` key to edit the active cell.
 * Use formula bar to perform editing.
 * Use `BACKSPACE` or `SPACE` key to clear the cell content and start the edit mode.
-* Using the [`startEdit`](../api/spreadsheet/#startedit) method.
+* Using the `startEdit` method.
 
 ## Save cell
 
@@ -29,16 +29,16 @@ If the cell is in editable state, you can save the edited cell by one of the fol
 
 * Perform mouse click on any other cell rather than the current editing cell.
 * Press `Enter` or `Tab` keys to save the edited cell content.
-* Using the [`endEdit`](../api/spreadsheet/#endedit) method.
+* Using the `endEdit` method.
 
 ## Cancel editing
 
 To cancel the editing without saving the changes, you can use one of the following ways,
 
 * Press `ESCAPE` key, this will remove the editable state and update the unchanged cell content.
-* Using the [`closeEdit`](../api/spreadsheet/#closeedit) method.
+* Using the `closeEdit` method.
 
-The following sample shows how to prevent the editing and cell save. Here `E` column prevent the editing by using cancel argument as true in [`cellEdit`](../api/spreadsheet/#celledit) event. In `D` column, prevent saving the edited changes by using cancel argument as true in [`beforeCellSave`](../api/spreadsheet/#beforecellsave) and use [`closeEdit`](../api/spreadsheet/#closeedit) method in spreadsheet.
+The following sample shows how to prevent the editing and cell save. Here `E` column prevent the editing by using cancel argument as true in [`cellEdit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_CellEdit) event. In `D` column, prevent saving the edited changes by using cancel argument as true in [`beforeCellSave`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_BeforeCellSave) and use `closeEdit` method in spreadsheet.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

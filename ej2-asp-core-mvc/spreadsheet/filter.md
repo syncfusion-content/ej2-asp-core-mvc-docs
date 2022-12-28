@@ -30,7 +30,7 @@ In the active Spreadsheet, select a range of cells to filter by value of the cel
 
 ## Filter by criteria
 
-The [`applyFilter()`](../api/spreadsheet/#applyfilter) method will apply the filter UI, based on the predicate and range given in the arguments.
+The `applyFilter()` method will apply the filter UI, based on the predicate and range given in the arguments.
 
 > * The `beforeFilter` event will be triggered before filtering the specified range.
 > * The `filterComplete` event will be triggered after the filter action is completed successfully.

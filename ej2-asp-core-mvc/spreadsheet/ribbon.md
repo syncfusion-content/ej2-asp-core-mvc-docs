@@ -19,20 +19,20 @@ You can customize the ribbon using the following methods,
 
 | Method | Action |
 |-------|---------|
-| [`hideRibbonTabs`](../api/spreadsheet/#hideribbontabs) | Used to show or hide the existing ribbon tabs. |
-| [`enableRibbonTabs`](../api/spreadsheet/#enableribbontabs) | Used to enable or disable the existing
+| `hideRibbonTabs` | Used to show or hide the existing ribbon tabs. |
+| `enableRibbonTabs` | Used to enable or disable the existing
 ribbon tabs. |
-| [`addRibbonTabs`](../api/spreadsheet/#addribbontabs) | Used to add custom ribbon tabs. |
-| [`hideToolbarItems`](../api/spreadsheet/#hidetoolbaritems) | Used to show or hide the existing ribbon
+| `addRibbonTabs` | Used to add custom ribbon tabs. |
+| `hideToolbarItems`| Used to show or hide the existing ribbon
 toolbar items. |
-| [`enableToolbarItems`](../api/spreadsheet/#enabletoolbaritems) | Used to enable or disable the specified
+| `enableToolbarItems` | Used to enable or disable the specified
 toolbar items. |
-| [`addToolbarItems`](../api/spreadsheet/#addtoolbaritems) | Used to add the custom items in ribbon
+| `addToolbarItems` | Used to add the custom items in ribbon
 toolbar. |
-| [`hideFileMenuItems`](../api/spreadsheet/#hidefilemenuitems) | Used to show or hide the ribbon file menu
+| `hideFileMenuItems` | Used to show or hide the ribbon file menu
 items. |
-| [`enableFileMenuItems`](../api/spreadsheet/#enablefilemenuitems) | Used to enable or disable file menu items. |
-| [`addFileMenuItems`](../api/spreadsheet/#addfilemenuitems) | Used to add custom file menu items. |
+| `enableFileMenuItems`| Used to enable or disable file menu items. |
+| `addFileMenuItems`| Used to add custom file menu items. |
 
 The following code example shows the usage of ribbon customization.
 

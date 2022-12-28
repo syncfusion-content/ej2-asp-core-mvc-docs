@@ -17,7 +17,7 @@ Illustrations helps you to insert a image, shapes and graphic objects in the Ess
 
 Adding images to a spreadsheet can enhance the visual appeal and help convey information more clearly.
 
-> * The default value for `allowImage` property is `true`.
+> * The default value for [`allowImage`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowImage) property is `true`.
 
 ### Insert Image
 
@@ -104,9 +104,9 @@ The following features have some limitations in Image:
 
 ## Chart
 
-A chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of `x`-axis and `y`-axis. You can use the [`allowChart`](../api/spreadsheet/#allowChart) property to enable or disable the chart functionality.
+A chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of `x`-axis and `y`-axis. You can use the [`allowChart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowChart) property to enable or disable the chart functionality.
 
->* The default value for the [`allowChart`](../api/spreadsheet/#allowChart) property is `true`.
+>* The default value for the [`allowChart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowChart) property is `true`.
 
 ### Types of chart
 
@@ -124,9 +124,9 @@ The following types of charts are available in the Spreadsheet.
 You can insert the chart by using one of the following ways,
 
 * Select the chart icon in the Ribbon toolbar under the Insert Tab.
-* Use the [`insertChart()`](../api/spreadsheet/#insertChart) method programmatically.
+* Use the `insertChart()`method programmatically.
 
-The available parameter in the [`insertChart()`](../api/spreadsheet/#insertChart) method is,
+The available parameter in the `insertChart()` method is,
 
 | Parameter | Type | Description |
 |-----|------|----|
@@ -143,9 +143,9 @@ The available arguments in the `ChartModel` are:
 ### Delete Chart
 
 * If you want to delete the chart, just select the chart, and then press the Delete key.
-* Use the [`deleteChart()`](../api/spreadsheet/#deleteChart) method programmatically.
+* Use the `deleteChart()`method programmatically.
 
-The available parameter in the [`deleteChart()`](../api/spreadsheet/#deleteChart) method is,
+The available parameter in the `deleteChart()` method is,
 
 | Parameter | Type | Description |
 |-----|------|----|
