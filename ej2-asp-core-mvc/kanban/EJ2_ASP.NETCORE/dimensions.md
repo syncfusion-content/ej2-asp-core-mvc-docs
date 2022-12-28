@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dimensions in ASP.NET MVC Kanban Control | Syncfusion
-description: Learn here all about Dimensions in Syncfusion ASP.NET MVC Kanban control of Syncfusion Essential JS 2 and more.
+title: Dimensions in ASP.NET Core Kanban Control | Syncfusion
+description: Learn here all about Dimensions in Syncfusion ASP.NET Core Kanban control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dimensions
 publishingplatform: ej2-asp-core-mvc
@@ -11,7 +11,7 @@ documentation: ug
 
 # Kanban dimensions
 
-The [ASP.NET MVC Kanban](https://www.syncfusion.com/aspnet-core-ui-controls/kanban-board) dimensions refers to both height and width of the entire layout and it accepts three types of values.
+The [ASP.NET Core Kanban](https://www.syncfusion.com/aspnet-core-ui-controls/kanban-board) dimensions refers to both height and width of the entire layout and it accepts three types of values.
 
 * Auto
 * Pixel
