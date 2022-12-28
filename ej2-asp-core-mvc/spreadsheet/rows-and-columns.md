@@ -124,6 +124,14 @@ The following code example shows the delete operation of rows and columns in the
 {% endif %}
 
 
+## Limitations of insert and delete
+
+The following features have some limitations in Insert/Delete:
+
+* Insert row/column between the formatting applied cells.
+* Insert row/column between the data validation.
+* Insert row/column between the conditional formatting applied cells.
+* Insert/delete row/column between the filter applied cells.
 
 ## Hide and show
 
@@ -247,17 +255,6 @@ The following code example shows how to change the width for single/multiple col
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-## Limitations of insert and delete
-
-The following features have some limitations in Insert/Delete:
-
-* Insert row/column between the formatting applied cells.
-* Insert row/column between the data validation.
-* Insert row/column between the conditional formatting applied cells.
-* Insert/delete row/column between the filter applied cells.
 
 ## See Also
 
