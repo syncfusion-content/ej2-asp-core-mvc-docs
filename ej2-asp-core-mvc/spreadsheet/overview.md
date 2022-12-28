@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in Spreadsheet Control
 
 The Spreadsheet is an user interactive control to organize and analyze data in tabular format. It will load data by importing an Excel file or from a data source, such as RESTful JSON data services and local JavaScript object array binding. The populated data can be exported as Excel with xlsx, xls, and csv formats.
 
