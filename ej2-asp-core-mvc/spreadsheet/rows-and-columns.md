@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows And Columns in ##Platform_Name## Spreadsheet Component
+title: Rows And Columns in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Rows And Columns in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Rows And Columns
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Rows and columns
+# Rows and columns in Spreadsheet control
 
 Spreadsheet is a tabular format consisting of rows and columns. The intersection point of rows and columns are called as cells. The list of operations that you can perform in rows and columns are,
 
