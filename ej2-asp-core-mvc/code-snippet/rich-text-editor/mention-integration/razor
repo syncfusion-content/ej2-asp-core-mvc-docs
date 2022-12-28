@@ -1,6 +1,6 @@
 @{
     char nameMentionChar = '@';
-    List<SportsData> data = new SportsData().SportsList();
+    List<EmployeeData> data = new EmployeeData().EmployeeList();
 }
 
 @Html.EJS().RichTextEditor("mentionIntegration").ContentTemplate(@<div>
@@ -8,7 +8,7 @@
     <p>Welcome to the mention integration with rich text editor demo. Type <code>@@</code> character and tag user from the suggestion list. </p>
 </div>).Render()
 
-@Html.EJS().Mention("mentionRTE").MentionChar(nameMentionChar).Target("#mentionIntegration_rte-edit-view").DataSource((IEnumerable<SportsData>)data).AllowSpaces(true).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Name", Value="EmailId" }).SuggestionCount(8).Highlight(true).DisplayTemplate("<a title =${ EmailId}>@${ Name}</a>").ItemTemplate("<table><tr><td><div id=\"mention-TemplateList\"><img class=\"mentionEmpImage\" src=\"./images/${EmployeeImage}\" alt=\"employee\" /><span class=\"e-badge e-badge-success e-badge-overlap e-badge-dot e-badge-bottom ${Status}\"></span></div></td><td><span class=\"person\">${Name}</span><span class=\"email\">${EmailId}</span></td</tr></table>").PopupWidth("250px").PopupHeight("200px").Render()
+@Html.EJS().Mention("mentionRTE").MentionChar(nameMentionChar).Target("#mentionIntegration_rte-edit-view").DataSource((IEnumerable<EmployeeData>)data).AllowSpaces(true).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Name", Value="EmailId" }).SuggestionCount(8).Highlight(true).DisplayTemplate("<a title =${ EmailId}>@${ Name}</a>").ItemTemplate("<table><tr><td><div id=\"mention-TemplateList\"><img class=\"mentionEmpImage\" src=\"./images/${EmployeeImage}\" alt=\"employee\" /><span class=\"e-badge e-badge-success e-badge-overlap e-badge-dot e-badge-bottom ${Status}\"></span></div></td><td><span class=\"person\">${Name}</span><span class=\"email\">${EmailId}</span></td</tr></table>").PopupWidth("250px").PopupHeight("200px").Render()
 
 <style>
     #mention-TemplateList {
