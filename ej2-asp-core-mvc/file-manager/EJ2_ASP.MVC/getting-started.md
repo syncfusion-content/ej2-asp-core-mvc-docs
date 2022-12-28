@@ -353,3 +353,5 @@ The current path of the File Manager can be specified initially or dynamically u
 ![FileManager enablertl](images/path.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC File Manager example](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/getting-started/) that shows you how to render the File Manager in ASP.NET MVC.
