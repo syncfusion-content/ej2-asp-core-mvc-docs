@@ -8,6 +8,7 @@
                       .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
                       .ExplodeIndex(0).Add();
             })
+            .HighlightColor("red")
             .EnableSmartLabels(true)
             .Title("Mobile Browser Statistics")
             .Tooltip(tp => tp.Enable(true).Format(format: "${series.name} ${point.x} : ${point.y}")
