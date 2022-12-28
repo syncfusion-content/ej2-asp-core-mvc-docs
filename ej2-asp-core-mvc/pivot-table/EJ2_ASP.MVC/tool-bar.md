@@ -101,9 +101,10 @@ In the chart, the user can switch from single axis to multiple axes with the hel
 
 ![output](images/chart-option.png)
 
+<!-- markdownlint-disable MD028 -->
 <!-- markdownlint-disable MD009 -->
 
-There are two modes available in **Multiple Axis** option: `Stacked` and `Single`. The modes can be changed using “Multiple Axis Mode” drop-down list which appears while clicking the **More...** option.
+There are three modes available in **Multiple Axis** option: `Stacked`, `Single` and `Combined`. The modes can be changed using “Multiple Axis Mode” drop-down list which appears while clicking the **More...** option.
 
 ![output](images/multiple-axis-mode.png)
 
