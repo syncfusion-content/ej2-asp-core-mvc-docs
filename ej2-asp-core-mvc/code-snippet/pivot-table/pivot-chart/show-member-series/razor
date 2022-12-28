@@ -1,9 +1,9 @@
 @using Syncfusion.EJ2.PivotView
 
-@Html.EJS().PivotView("PivotView").Height("350").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+@Html.EJS().PivotView("PivotView").Height("350").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true)
 .FormatSettings(formatsettings =>
 {
-    formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
+    formatsettings.Name("Amount").Format("C0").Add();
 }).Rows(rows =>
 {
     rows.Name("Country").Add(); rows.Name("Products").Add();
@@ -13,4 +13,4 @@
 }).Values(values =>
 {
     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
-})).DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ChartSettings(chartSettings => chartSettings.Value("Amount").EnableMultipleAxis(true).ShowMemberSeries(true).ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column))).Render()
+})).DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ChartSettings(chartSettings => chartSettings.Value("Amount").EnableMultipleAxis(true).MultipleAxisMode("Stacked").ShowPointColorByMembers(true).ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column)).primaryYAxis(py => py.Border(Width("0")))).Render()
