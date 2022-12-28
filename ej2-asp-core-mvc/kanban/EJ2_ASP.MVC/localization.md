@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Localization in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Localization in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Localization in Syncfusion ##Platform_Name## Kanban Component
+description: Learn here all about Localization in Syncfusion ##Platform_Name## Kanban component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -77,7 +77,7 @@ Output be like the below.
 
 ## Right to left (RTL)
 
-The [ASP.NET MVC Kanban](https://www.syncfusion.com/aspnet-mvc-ui-controls/kanban-board) provides an option to switch its text direction and layout from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable right-to-left mode in Kanban, set the `EnableRtl` to true.
+The Kanban provides an option to switch its text direction and layout from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable right-to-left mode in Kanban, set the `EnableRtl` to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
