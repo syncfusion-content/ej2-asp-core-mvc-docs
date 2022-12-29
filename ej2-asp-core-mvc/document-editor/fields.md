@@ -1,21 +1,16 @@
 ---
-layout: post
-title: Fields in ##Platform_Name## Document Editor Component | Syncfusion
-component: DocumentEditor
-description: Learn how to use fields in JavaScript document editor ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
-control: Fields
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Fields"
+component: "DocumentEditor"
+description: "Learn how to use fields in JavaScript document editor"
 ---
 
-# Fields in Document Editor Component
+# Fields
 
 Document Editor has preservation support for all types of fields in an existing word document without any data loss.
 
 ## Adding Fields
 
-You can add a field to the document by using `insertField`method in `Editor` module.
+You can add a field to the document by using [`insertField`](../api/document-editor/editor/#insertfield) method in `Editor` module.
 
 ```typescript
 
@@ -25,7 +20,7 @@ documenteditor.editor.insertField(fieldCode, fieldResult);
 
 ```
 
->Note: Document editor does not validate or process the field code or field result. It simply inserts the field with specified field information.
+N> Document editor does not validate or process the field code or field result. It simply inserts the field with specified field information.
 
 ## Update fields
 
@@ -48,18 +43,18 @@ The following type of fields are automatically updated in Document Editor.
 
 ## Get field info
 
-You can get field code and field result of the current selected field by using `getFieldInfo` method in the `Selection` module.
+You can get field code and field result of the current selected field by using [`getFieldInfo`](../api/document-editor/selection/#getfieldinfo) method in the `Selection` module.
 
 ```typescript
 //Gets the field information of the selected field.
 var fieldInfo = documenteditor.selection.getFieldInfo();
 ```
 
->Note: For nested fields, this method returns combined field code and result.
+N> For nested fields, this method returns combined field code and result.
 
 ## Set field info
 
-You can modify the field code and field result of the current selected field by using `setFieldInfo` method in the `Editor` module.
+You can modify the field code and field result of the current selected field by using [`setFieldInfo`](../api/document-editor/editor/#setfieldinfo) method in the `Editor` module.
 
 ```typescript
 //Gets the field information for the selected field.
@@ -76,7 +71,7 @@ documenteditor.editor.setFieldInfo(fieldInfo);
 
 ```
 
->Note: For nested field, entire field gets replaced completely with the specified field information.
+N> For nested field, entire field gets replaced completely with the specified field information.
 
 ## See Also
 

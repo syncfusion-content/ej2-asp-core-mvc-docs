@@ -58,7 +58,7 @@ Using `find()` method, you can find the immediate occurrence of specified text f
 documenteditor.search.find('Some text', 'None');
 ```
 
-> Second parameter is optional parameter and it denotes find Options. Possible values of find options are `'None' |'WholeWord' |'CaseSensitive'| 'CaseSensitiveWholeWord'`.
+N> Second parameter is optional parameter and it denotes find Options. Possible values of find options are `'None' |'WholeWord' |'CaseSensitive'| 'CaseSensitiveWholeWord'`.
 
 ### Find all the occurrences in the document
 
@@ -68,7 +68,7 @@ Using `findAll()` method, you can find all the occurrences of specified text in 
 documenteditor.search.findAll('Some text', 'None');
 ```
 
-> Second parameter is optional parameter and it denotes to find Options. Possible values of find options are `'None' |'WholeWord' |'CaseSensitive'| 'CaseSensitiveWholeWord'`.
+N> Second parameter is optional parameter and it denotes to find Options. Possible values of find options are `'None' |'WholeWord' |'CaseSensitive'| 'CaseSensitiveWholeWord'`.
 
 ## Search results
 
@@ -95,10 +95,10 @@ documentEditor.search.searchResults.replaceAll("Mike");
 
 Using `insertText`, you can replace the current searched text with specified text and it replaces single occurrence.
 
->Note: This `insertText` API accepts following control characters.
->* New line characters ("\r", "\r\n", "\n") - Inserts a new paragraph and appends the remaining text to the new paragraph.
->* Line break character ("\v") - Moves the remaining text to start in new line.
->* Tab character ("\t") - Allocates a tab space and continue the next character.
+N>Note: This `insertText` API accepts following control characters.
+<br/>* New line characters ("\r", "\r\n", "\n") - Inserts a new paragraph and appends the remaining text to the new paragraph.
+<br/>* Line break character ("\v") - Moves the remaining text to start in new line.
+<br/>* Tab character ("\t") - Allocates a tab space and continue the next character.
 
 ```typescript
 container.documentEditor.search.findAll('works');

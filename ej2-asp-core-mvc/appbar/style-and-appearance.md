@@ -22,7 +22,7 @@ To modify the AppBar appearance, you need to override the default CSS of the App
 |.e-appbar.e-primary|To customize the dark appbar.|
 |.e-appbar.e-inherit|To customize the inherit appbar.|
 
->Note: You can change the prominent AppBar height if larger titles, images, or texts are used.
+N> You can change the prominent AppBar height if larger titles, images, or texts are used.
 
 ## CssClass
 
