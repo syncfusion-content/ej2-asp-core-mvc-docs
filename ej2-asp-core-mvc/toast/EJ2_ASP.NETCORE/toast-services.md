@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Toast Services in ##Platform_Name## Toast Component
-description: Learn here all about Toast Services in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
+title: Toast Services in ASP.NET Core Toast Control | Syncfusion
+description: Learn here all about Toast Services in Syncfusion ASP.NET Core Toast control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Toast Services
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
 
 # Toast Utility Services
 
-The Toast component provides a built-in utility function to render the toast with minimal code. The utility function will render the toast without the need of rendering the container element in the DOM where the toast is appended. So that, the toast can now be rendered on the go. The following are the option to render the toast using the utility function.
+The [ASP.NET Core Toast](https://www.syncfusion.com/aspnet-core-ui-controls/toast) component provides a built-in utility function to render the toast with minimal code. The utility function will render the toast without the need of rendering the container element in the DOM where the toast is appended. So that, the toast can now be rendered on the go. The following are the option to render the toast using the utility function.
 
 ## Show Toast with predefined types
 
