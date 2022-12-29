@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Mention Integration in ##Platform_Name## Rich Text Editor | Syncfusion
-description: Learn here all about Mention Integration in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Mention Integration in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn here all about Mention Integration in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Mention Integration
-publishingplatform: ##Platform_Name##
+publishingplatform: aspnet-core
 documentation: ug
 ---
 
