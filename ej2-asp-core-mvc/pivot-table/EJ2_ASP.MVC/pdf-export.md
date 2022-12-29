@@ -67,6 +67,35 @@ PDF export provides an option for exporting multiple pivot tables to same file. 
 
 
 
+## Export table and chart into the same document
+
+When the [`displayOption`](https://ej2.syncfusion.com/documentation/api/pivotview/#displayoption) is set to **Both**, you can export both the table and the chart into the same PDF document. To achieve this, use the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/#pdfexport) method and set the `exportBothTableAndChart` parameter to **true**.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="exportTableAndChart.cs" %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/exportTableAndChart.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="exportTableAndChart.cs" %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/exportTableAndChart.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Customization during PDF export
 
 PDF export provides option to customize mapping of pivot table to the exported PDF document.
@@ -269,6 +298,68 @@ The PDF export provides an option to change page size of the document before exp
 {% endhighlight %}
 {% highlight c# tabtitle="PageSize.cs" %}
 {% include code-snippet/pivot-table/pdf-export/page-size/PageSize.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Changing document width and height while exporting
+
+Before exporting, you can change the height and width of the PDF document. To achieve this, use the `height` and `width` properties in the [`beforeExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event.
+
+> This option is only available if [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) is set to **true**. In addition, the `VirtualScroll` and `PDFExport` modules must be injected into the pivot table.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-customization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/exporting-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-customization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/exporting-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Customize the table column count while exporting
+
+Before exporting, you can split and export the pivot table columns on each page of the PDF document by using the `columnSize` property in the [`beforeExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event.
+
+> This option is only available if [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) is set to **true**. In addition, the `VirtualScroll` and `PDFExport` modules must be injected into the pivot table.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-columnCustomization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/exporting-columnCustomization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="exporting-columnCustomization.cs" %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/exporting-columnCustomization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
