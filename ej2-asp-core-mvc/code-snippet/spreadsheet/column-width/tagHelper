@@ -1,0 +1,22 @@
+<ejs-spreadsheet id="spreadsheet" created="created">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet>
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+
+ 
+
+    <script>
+
+         function created() {
+            // To change width of single column
+            this.setColumnsWidth(100, ['F']);
+            // To change width of multiple columns
+            this.setColumnsWidth(120, ['A:C', 'G:I', 'K:M']);
+        }
+
+    </script>

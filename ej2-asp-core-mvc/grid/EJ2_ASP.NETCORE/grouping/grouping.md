@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Grid Component
+title: Grouping in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Grouping in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grouping
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Grouping
+# Grouping in ASP.Net Core Grid Component
 
 The Grid has options to group records by dragging and dropping the column header to the group drop area. When grouping is applied, grid records are organized into a hierarchical structure to facilitate easier expansion and collapse of records.
 
@@ -194,6 +194,34 @@ You can collapse the selected group from an external button by invoking the **ex
 {% endif %}
 
 
+## Sort grouped columns in descending order during initial grouping
+
+By default, grouped columns are sorted in ascending order. To sort grouped columns in descending order during initial grouping, you can set the `field` and `direction` in the [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html#Syncfusion_EJ2_Grids_GridSortSettings_Columns) property of `e-grid-sortsettings` tag helper.
+
+The `CustomerID` column will be sorted in descending order when the grid is initially grouped, as shown in the following example.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/grouping/sort/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sort.cs" %}
+{% include code-snippet/grid/grouping/sort/sort.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/grouping/sort/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sort.cs" %}
+{% include code-snippet/grid/grouping/sort/sort.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See Also
 
