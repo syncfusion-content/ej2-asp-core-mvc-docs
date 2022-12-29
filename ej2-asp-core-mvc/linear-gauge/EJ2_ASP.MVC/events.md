@@ -11,7 +11,7 @@ documentation: ug
 
 # Events in ASP.NET MVC Linear Gauge
 
-This section describes the  [ASP.NET MVC Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) component's event that gets triggered when corresponding operations are performed.
+This section describes the Linear Gauge component's event that gets triggered when corresponding operations are performed.
 
 ## AnimationComplete
 
