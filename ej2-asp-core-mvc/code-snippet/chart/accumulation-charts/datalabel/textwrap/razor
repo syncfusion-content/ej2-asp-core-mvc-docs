@@ -7,7 +7,7 @@
                       .endAngle(90)
                       .TooltipMappingName('tooltipMappingName')
                       .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
-                      .DataLabel(dl=>dl.Visible(true).Position('Inside').MaxWidth(100).TextWrap('Width').Name('text').EnableRotation(true)).Add();
+                      .DataLabel(dl=>dl.Visible(true).Position('Inside').TextWrap('Wrap').Name('text').EnableRotation(true)).Add();
             })
             .EnableSmartLabels(true)
             .Title("Mobile Browser Statistics")
