@@ -236,11 +236,6 @@ In the following image, you can see how many records will be scrollable when set
 
 ### Solution 3: Using paging instead of virtual scrolling
 
-
 Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
 
 * Programmatic selection using the `selectRows` method is not supported in virtual scrolling.
-
-
-Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
-
