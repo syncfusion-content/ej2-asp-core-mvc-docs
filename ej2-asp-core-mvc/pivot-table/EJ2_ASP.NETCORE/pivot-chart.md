@@ -624,7 +624,7 @@ The pivot chart in the following code sample can be seen as a single chart with 
 
 
 
-![output](images/single-combined-y-axis.png)
+![Pivot Chart for multiple values in a single y-axis](images/single-combined-y-axis.png)
 
 ### Show point color based on members
 
@@ -657,7 +657,7 @@ Furthermore, end user can see or hide specific members across different measur
 
 
 
-![PivotChart with Show member based chart series](images/showMemberSeries.png)
+![Show point color based on members in Pivot Chart](images/showMemberSeries.png)
 
 ## Series Customization
 

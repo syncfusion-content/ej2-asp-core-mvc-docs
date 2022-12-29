@@ -622,11 +622,11 @@ The pivot chart in the following code sample can be seen as a single chart with 
 
 
 
-![output](images/single-combined-y-axis.png)
+![Pivot Chart for multiple values in a single y-axis](images/single-combined-y-axis.png)
 
 ### Show point color based on members
 
-When multiple axes are enabled, you can display the same color for each member in the column axis by setting the [`showPointColorByMembers`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowPointColorByMembers) property to **true** in the [`chartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). As a result, the end user can easily identify each member across different measures in the entire chart.
+When multiple axes are enabled, you can display the same color for each member in the column axis by setting the [`ShowPointColorByMembers`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowPointColorByMembers) property to **true** in the [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). As a result, the end user can easily identify each member across different measures in the entire chart.
 
 Furthermore, end user can see or hide specific members across different measures in the entire chart with a single click on the legend item.
 
@@ -655,7 +655,7 @@ Furthermore, end user can see or hide specific members across different measur
 
 
 
-![PivotChart with Show member based chart series](images/showMemberSeries.png)
+![Show point color based on members in Pivot Chart](images/showMemberSeries.png)
 
 ## Series Customization
 
