@@ -591,11 +591,44 @@ In the following code sample, the pivot chart can be seen as a single chart with
 
 
 
-### Show member based chart series
+Additionally, to display chart series for multiple values within a single y-axis, set the properties [`EnableMultipleAxis`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableMultipleAxis) to **true** and the [`MultipleAxisMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_MultipleAxisMode) to **Combined**, in the [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html).
 
-When multiple axes are enabled, the user can create each chart series with a unique color palette based on members by setting the [`ShowMemberSeries`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowMemberSeries) property in [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) to **true**. As a result, user can easily identify each member enclosed chart series consistently across different measures in the entire chart area.
+> The y-axis range values will be formatted using the first value field on the value axis. For example, if the first value field is in currency format and the remaining value fields are in different number formats or no format, the y-axis range values will be displayed in the currency format of the first value field.
 
-Furthermore, with a single click over the legend item, you can show or hide specific chart series visibility based on members across different measures in the entire chart area.
+The pivot chart in the following code sample can be seen as a single chart with multiple value fields such as **Sold** and **Amount** drawn as a single y-axis.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="combinedYAxis.cs" %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/combinedYAxis.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="combinedYAxis.cs" %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/combinedYAxis.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Pivot Chart for multiple values in a single y-axis](images/single-combined-y-axis.png)
+
+### Show point color based on members
+
+When multiple axes are enabled, you can display the same color for each member in the column axis by setting the [`ShowPointColorByMembers`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowPointColorByMembers) property to **true** in the [`ChartSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). As a result, the end user can easily identify each member across different measures in the entire chart.
+
+Furthermore, end user can see or hide specific members across different measures in the entire chart with a single click on the legend item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -622,7 +655,7 @@ Furthermore, with a single click over the legend item, you can show or hide spec
 
 
 
-![Chart series displayed with same colors for same points/members](images/showMemberSeries.png)
+![Show point color based on members in Pivot Chart](images/showMemberSeries.png)
 
 ## Series Customization
 

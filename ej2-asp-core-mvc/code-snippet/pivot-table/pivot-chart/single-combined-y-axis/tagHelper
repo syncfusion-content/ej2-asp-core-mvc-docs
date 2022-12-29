@@ -1,5 +1,5 @@
 <ejs-pivotview id="PivotView" height="450">
-    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-formatsettings>
             <e-field name="Amount" format="C0"></e-field>
         </e-formatsettings>
@@ -16,9 +16,8 @@
             <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
     </e-datasourcesettings>
-    <e-chartSettings enableMultipleAxis="true" value="Amount" showPointColorByMembers="true" multipleAxisMode="Stacked" title="Sales Analysis">
+    <e-chartSettings enableMultipleAxis="true" multipleAxisMode="Combined">
         <e-chartSeries type="Column"></e-chartSeries>
-        <e-primaryyaxis><e-border width="0"></e-border></e-primaryyaxis>
     </e-chartSettings>
     <e-displayOption view="Chart"></e-displayOption>
 </ejs-pivotview>
