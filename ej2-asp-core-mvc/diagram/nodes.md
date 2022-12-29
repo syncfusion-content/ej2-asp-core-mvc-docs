@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Node in Diagram Contro
+# Node in Diagram Control
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
