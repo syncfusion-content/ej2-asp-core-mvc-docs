@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Grid Component
+title: Grouping in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Grouping in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grouping
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Grouping
+# Grouping in ASP.Net MVC Grid Component
 
 The Grid has options to group records by dragging and dropping the column header to the group drop area. When grouping is applied, grid records are organized into a hierarchical structure to facilitate easier expansion and collapse of records.
 
