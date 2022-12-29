@@ -5,7 +5,7 @@
                     <e-accumulation-series-collection>
                         <e-accumulation-series dataSource="ViewBag.dataSource" xName="x" yName="y" startAngle="270" endAngle="90" tooltipMappingName="tooltipMappingName">
                             <e-accumulationseries-datalabel name="text" visible="true" position="Inside" 
-                                                  maxWidth="100" textWrap="Wrap" enableRotation="true" >
+                                                   textWrap="Wrap" enableRotation="true" >
                             </e-accumulationseries-datalabel>
                         </e-accumulation-series>
                     </e-accumulation-series-collection>
