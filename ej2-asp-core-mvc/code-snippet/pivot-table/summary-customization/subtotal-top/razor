@@ -14,4 +14,4 @@ columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
 }).Values(values =>
 {
 values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
-}).SubTotalsPosition("Top")).Render()
+}).SubTotalsPosition(SubTotalsPosition.Top).Render()
