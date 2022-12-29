@@ -69,7 +69,7 @@ PDF export provides an option for exporting multiple pivot tables to same file. 
 
 ## Export table and chart into the same document
 
-When the [`displayOption`](https://ej2.syncfusion.com/documentation/api/pivotview/#displayoption) is set to **Both**, you can export both the table and the chart into the same PDF document. To achieve this, use the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/#pdfexport) method and set the `exportBothTableAndChart` parameter to **true**.
+When the [`e-displayOption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html) is set to **Both**, you can export both the table and the chart into the same PDF document. To achieve this, use the `pdfExport` method and set the `exportBothTableAndChart` parameter to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
