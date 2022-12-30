@@ -113,7 +113,7 @@ public string Import(IFormCollection data)
     WordDocument document = WordDocument.Load(stream, GetFormatType(type.ToLower()));
     string sfdt = Newtonsoft.Json.JsonConvert.SerializeObject(document);
     document.Dispose();
-    return sdft;
+    return sfdt;
 }
 
 internal static FormatType GetFormatType(string format)
