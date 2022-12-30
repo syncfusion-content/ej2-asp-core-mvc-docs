@@ -16,7 +16,7 @@ Localization (L10N) is the process of adapting application controls and content 
 
 Syncfusion controls can be localized using the culture based JSON files. You can find the default and culture based localization files in the following GitHub repository.
 
-> You can get default and culture based JSON files from [GitHub](https://github.com/syncfusion/ej2-locale).
+N> You can get default and culture based JSON files from [GitHub](https://github.com/syncfusion/ej2-locale).
 
 ### Adding culture based JSON files
 
@@ -82,7 +82,7 @@ Now, you can add the Syncfusion ASP.NET MVC control in `~/Views/Home/Index.cshtm
 
 ![Static culture](images/grid-locale.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization/tree/main/Localization-with-static-culture)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization/tree/main/Localization-with-static-culture)
 
 ## Dynamically set the culture
 
@@ -164,7 +164,7 @@ namespace Localization_with_dynamic_culture.Models
 
 ![Change culture dynamically](images/dynamic-culture-switch.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization/tree/main/Localization-with-dynamic-culture)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-localization/tree/main/Localization-with-dynamic-culture)
 
 
 ## Changing current locale
@@ -218,7 +218,7 @@ The following example demonstrates the Grid in Deutsch culture.
 {% endhighlight %}
 {% endtabs %}
 
-> Before changing a culture globally, ensure that locale text for the concerned culture is loaded through `L10n.load` function. 
+N> Before changing a culture globally, ensure that locale text for the concerned culture is loaded through `L10n.load` function. 
 
 ## See also
 

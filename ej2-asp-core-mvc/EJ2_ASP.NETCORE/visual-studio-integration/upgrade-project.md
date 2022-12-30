@@ -16,7 +16,7 @@ The Syncfusion ASP.NET Core migration add-in for Visual Studio allows to migrate
 
 The Syncfusion ASP.NET Core (Essential JS 2) Web Application Project Migration utility is available from v16.3.0.17.
 
-> Before use, the Syncfusion ASP.NET Core Project Migration, check whether the **ASP.NET Core Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed**  for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio version build installed or not. If the Essential Studio version is not same for both the Extension and build, then the Project Migration will not be shown.
+N> Before use, the Syncfusion ASP.NET Core Project Migration, check whether the **ASP.NET Core Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed**  for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio version build installed or not. If the Essential Studio version is not same for both the Extension and build, then the Project Migration will not be shown.
 
 The steps below will assist you to upgrade the Syncfusion version in the Syncfusion ASP.NET Core application via Visual Studio:
 
@@ -30,7 +30,7 @@ The steps below will assist you to upgrade the Syncfusion version in the Syncfus
 
     ![migrate project](images/migrate-project-latest.png)
 
-    >In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core > Migrate Project… in Visual Studio Menu.
+    N>In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio for ASP.NET Core > Migrate Project… in Visual Studio Menu.
 
     ![migrate project](images/migrate-project.png)
 
@@ -44,11 +44,11 @@ The steps below will assist you to upgrade the Syncfusion version in the Syncfus
 
     ![project migration](images/project-migration.png)
 
-    > The versions are loaded from the Syncfusion ASP.NET Core NuGet packages which published in [NuGet.org](https://www.nuget.org/packages?q=Tags%3A%22aspnetcore%22syncfusion) and it requires internet connectivity.
+    N> The versions are loaded from the Syncfusion ASP.NET Core NuGet packages which published in [NuGet.org](https://www.nuget.org/packages?q=Tags%3A%22aspnetcore%22syncfusion) and it requires internet connectivity.
 
     **Assets From:** Load the Syncfusion Essential JS 2 assets to ASP.NET Core Project, from either NPM, CDN or Installed Location.
 
-    > Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
+    N> Installed location option will be available only when the Syncfusion Essential JavaScript 2 setup has been installed.
 
 4. Check the **“Enable a backup before migrating”** checkbox, if you want to take the project backup and choose location.
 
