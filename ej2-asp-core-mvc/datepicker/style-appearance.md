@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## DatePicker Component
+title: Style and appearance in ##Platform_Name## Syncfusion DatePicker Component
 description: Learn here all about style and appearance in Syncfusion ##Platform_Name## DatePicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: datepicker
@@ -33,6 +33,27 @@ Use the following CSS to customize the DatePicker icon element.
 .e-input-group .e-input-group-icon:last-child, .e-input-group.e-control-wrapper .e-input-group-icon:last-child {
         font-size: 12px;
         background-color: darkgray;
+}
+```
+
+## Customizing the placeholder color in the datepicker
+
+Use the following CSS to customize the placeholder font color of the datepicker
+
+```css
+/* To specify the color of the placeholder */
+::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: red !important;
+        opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: red !important;
+}
+::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: red !important;
 }
 ```
 
