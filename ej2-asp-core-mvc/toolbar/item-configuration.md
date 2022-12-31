@@ -107,9 +107,9 @@ Output be like the below.
 
 ### Enabling tab key navigation in Toolbar
 
-The [`tabIndex`](../api/toolbar/item/#tabindex) property of a Toolbar item is used to enable tab key navigation for the item. By default, the user can switch between items using the arrow keys, but the [`tabIndex`](../api/toolbar/item/#tabindex) property allows you to switch between items using the Tab and Shift+Tab keys as well.
+The `tabIndex` property of a Toolbar item is used to enable tab key navigation for the item. By default, the user can switch between items using the arrow keys, but the `tabIndex` property allows you to switch between items using the Tab and Shift+Tab keys as well.
 
-To use the [`tabIndex`](../api/toolbar/item/#tabindex) property, you need to set it for each Toolbar item that you want to enable tab key navigation. The [`tabIndex`](../api/toolbar/item/#tabindex) property should be set to a positive integer value. A value of 0 or a negative value will disable tab key navigation for the item.
+To use the `tabIndex` property, you need to set it for each Toolbar item that you want to enable tab key navigation. The `tabIndex` property should be set to a positive integer value. A value of 0 or a negative value will disable tab key navigation for the item.
 
 For example, to enable tab key navigation for two Toolbar items, you can use the following code:
 
@@ -124,9 +124,9 @@ For example, to enable tab key navigation for two Toolbar items, you can use the
 </ejs-toolbar>
 ```
 
-With the above code, the user can switch between the two Toolbar items using the Tab and Shift+Tab keys, in addition to using the arrow keys. The items will be navigated in the order specified by the [`tabIndex`](../api/toolbar/item/#tabindex) values.
+With the above code, the user can switch between the two Toolbar items using the Tab and Shift+Tab keys, in addition to using the arrow keys. The items will be navigated in the order specified by the `tabIndex` values.
 
-If you set the [`tabIndex`](../api/toolbar/item/#tabindex) value to 0 for all Toolbar items, tab key navigation will be based on the element order rather than the [`tabIndex`](../api/toolbar/item/#tabindex) values. For example:
+If you set the `tabIndex` value to 0 for all Toolbar items, tab key navigation will be based on the element order rather than the `tabIndex` values. For example:
 
 ```javascript
 @using Syncfusion.EJ2.Navigations;
@@ -143,7 +143,7 @@ In this case, the user can switch between the two Toolbar items using the Tab an
 
 Example:
 
-Here is an example of how you can use the [`tabIndex`](../api/toolbar/item/#tabindex) property to enable tab key navigation for a Toolbar component:
+Here is an example of how you can use the `tabIndex` property to enable tab key navigation for a Toolbar component:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -162,6 +162,33 @@ In month view, the date header template is not applicable and therefore the same
 {% endtabs %}
 {% endif %}
 
+## Customizing the date range text
 
+The `dateRangeTemplate` option allows you to customize the text content of the date range displayed in the scheduler. By default, the date range text is determined by the scheduler view being used. However, you can use the `dateRangeTemplate` option to override the default text and specify your own custom text to be displayed.
+
+The `dateRangeTemplate` property includes `startDate`, `endDate` and `currentView` options, you can customize the date range text using these available options.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/header-bar/custom-date-range/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 > You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
