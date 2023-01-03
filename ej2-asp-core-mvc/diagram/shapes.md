@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Shapes in Diagram Control
+# Shapes in Diagram 
 
 Diagram provides support to add different kind of nodes. They are as follows:
 
