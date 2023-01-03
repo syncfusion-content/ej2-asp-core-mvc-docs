@@ -223,3 +223,32 @@ You can assign the file name for the exported document by defining **fileName** 
 {% endtabs %}
 {% endif %}
 
+
+## Export the master detail grid
+
+It is possible to export the master-detail grid on the same Excel sheet using the `ExcelExportProperties` class in the grid.
+
+To export the master-detail grid on the same sheet in the following sample, you need to set the `multipleExport.type` to `AppendToSheet` in the exportProperties. A promise object is created by exporting the master grid first, and then the detail grid is exported after the master grid has been successfully exported.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/masterdetailgrid/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Master-Detail.cs" %}
+{% include code-snippet/grid/excel-export/masterdetailgrid/masterdetailgrid.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/masterdetailgrid/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Master-Detail.cs" %}
+{% include code-snippet/grid/excel-export/masterdetailgrid/masterdetailgrid.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
