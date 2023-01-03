@@ -103,7 +103,7 @@ The autoscroll behavior in your diagram can be enabled or disabled by using the 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/diagram/scrollsettings/autoscroll/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
+{% highlight c# tabtitle="Autoscroll.cs" %}
 {% include code-snippet/diagram/scrollsettings/autoscroll/autoscroll.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -114,7 +114,7 @@ The autoscroll behavior in your diagram can be enabled or disabled by using the 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/diagram/scrollsettings/autoscroll/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
+{% highlight c# tabtitle="Autoscroll.cs" %}
 {% include code-snippet/diagram/scrollsettings/autoscroll/autoscroll.cs %}
 {% endhighlight %}
 {% endtabs %}
