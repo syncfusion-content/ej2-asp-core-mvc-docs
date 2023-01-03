@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tab key navigation using tabIndex property in ##Platform_Name## Tab Component | Syncfusion
+title: Tab key navigation in ##Platform_Name## Tab Component | Syncfusion
 description: Learn here all about Tab key navigation in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tab key navigation
