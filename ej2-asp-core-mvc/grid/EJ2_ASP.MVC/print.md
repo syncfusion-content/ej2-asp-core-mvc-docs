@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Print in ASP.Net MVC Grid Component
+# Print in ASP.NET MVC Grid Component
 
 To print the Grid, use the [`print`](https://ej2.syncfusion.com/documentation/api/grid/#print) method from grid instance. The print option can be displayed on the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) by adding the **Print** toolbar item.
 
