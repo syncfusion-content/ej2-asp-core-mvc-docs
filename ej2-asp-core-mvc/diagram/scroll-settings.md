@@ -115,7 +115,7 @@ The autoscroll behavior in your diagram can be enabled or disabled by using the 
 {% include code-snippet/diagram/scrollsettings/autoscroll/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/diagram/scrollsettings/autoscroll/default.cs %}
+{% include code-snippet/diagram/scrollsettings/autoscroll/autoscroll.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
