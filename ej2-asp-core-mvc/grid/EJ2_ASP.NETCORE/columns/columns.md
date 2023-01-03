@@ -426,6 +426,34 @@ Grid column supports the following alignments:
 {% endif %}
 
 
+## How to prevent checkbox in the blank row
+
+By default, cells in the grid will be blank if the corresponding column values in the data source are null or undefined. The grid also has the option to prevent the rendering of checkboxes in such cases, even if the [displayAsCheckBox](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_DisplayAsCheckBox) property is set to true for that column, by using the [rowDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event of the Grid.
+
+In the following sample, the `rowDataBound` event of the Grid is used to set the innerHTML of the checkbox element to empty.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/blank-row/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Blank-row.cs" %}
+{% include code-snippet/grid/columns/blank-row/blank-row.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/blank-row/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Blank-row.cs" %}
+{% include code-snippet/grid/columns/blank-row/blank-row.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See Also
 
