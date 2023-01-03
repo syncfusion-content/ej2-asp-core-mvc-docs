@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Grid Component
+title: Filtering in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Filtering in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filtering
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filtering
+# Filtering in ASP.Net MVC Grid Component
 
 Filtering allows you to view particular records based on filter criteria. To enable filtering in the Grid, set the [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) to true. Filtering options can be configured through [`FilterSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html) property.
 
@@ -93,6 +93,7 @@ The available operators and its supported data types are:
 |greaterthanorequal|Checks whether a value is greater than or equal to the specified value. |Number &#124; Date|
 |lessthan |Checks whether the value is less than the specified value. |Number &#124; Date|
 |lessthanorequal |Checks whether the value is less than or equal to the specified value. |Number &#124; Date|
+between|Filter the values based on the range between the start and end specified values. |Number &#124; Date|
 
 > By default, the [`Operators`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Operators) value is **equal**.
 

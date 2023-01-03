@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tools in ##Platform_Name## Diagram Component
+title: Tools in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Tools in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tools
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tools
+# Tools in Diagram
 
 ## Drawing tools
 
@@ -42,7 +42,6 @@ To draw a shape, set the JSON of that shape to the drawType property of the diag
 
 
 ```javascript
-
 function Created() {
     var diagram = document.getElementById("container").ej2_instances[0];
     var drawingshape = { type: 'Basic', shape: 'Rectangle' };
@@ -79,7 +78,6 @@ function Created() {
 
 
 ```javascript
-
 function Created() {
     var diagram = document.getElementById("container").ej2_instances[0];
     var node = {
@@ -98,7 +96,6 @@ function Created() {
         diagram.tool = DiagramTools.DrawOnce;
         diagram.dataBind();
     }
-
 ```
 
 ## Connectors
@@ -140,7 +137,6 @@ function Created() {
         diagram.tool = DiagramTools.DrawOnce;
         diagram.dataBind();
 }
-
 ```
 
 ## Text
@@ -170,7 +166,6 @@ Diagram allows to create a textNode, when you click on the diagram page.
 
 
 ```javascript
-
 function Created() {
     var diagram = document.getElementById("container").ej2_instances[0];
     var node = {
@@ -183,7 +178,6 @@ function Created() {
     diagram.tool = DiagramTools.DrawOnce;
     diagram.dataBind();
 }
-
 ```
 
 Once you activate the TextTool, perform label editing of a node/connector.
@@ -215,7 +209,6 @@ Diagram allows to create the polygon shape by clicking and moving the mouse at r
 
 
 ```javascript
-
 function Created() {
         var drawingshape = { type: 'Basic', shape: 'Polygon' };
         //JSON to create a polygon
@@ -227,7 +220,6 @@ function Created() {
         diagram.tool = DiagramTools.DrawOnce;
         diagram.dataBind();
 }
-
 ```
 
 ## Polyline Connector
@@ -257,7 +249,6 @@ Diagram allows to create the polyline segments with straight lines and angled ve
 
 
 ```javascript
-
 function Created() {
     var connector =  { id: 'connector1', type: 'Polyline'};
     diagram.drawingObject = connector;
@@ -265,7 +256,6 @@ function Created() {
     diagram.tool = DiagramTools.DrawOnce;
     diagram.dataBind();
 }
-
 ```
 
 ## Tool selection
@@ -290,12 +280,101 @@ As all the three behaviors are completely different, you can achieve only one be
 Set the desired [`tool`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramTools.html) to the tool property of the diagram model.
 
 ```javascript
-// To Enable Single Tool
-diagram.tool = DiagramTools.DrawOnce;
-diagram.dataBind();
+function Created() {
+    var diagram = document.getElementById("container").ej2_instances[0];
+    var connectors = {
+            id: 'connector1',
+            type: 'Straight',
+           segments: [{ type: "Straight" }]
+        }
+        diagram.drawingObject = connectors;
+        //To draw an object once, activate draw once
+        diagram.tool = DiagramTools.DrawOnce | DiagramTools.ZoomPan;
+        diagram.dataBind();
+}
+```
 
-// Enables multiple tools
-diagram.tool = DiagramTools.DrawOnce || DiagramTools.ZoomPan;
-diagram.dataBind();
+## Events
 
+[`elementDraw`](../api/diagram)  event is triggered when node or connector is drawn using drawing tool.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/Tools/shapes/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Shapes.cs" %}
+{% include code-snippet/diagram/Tools/shapes/shapes.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Shapes.cs" %}
+{% include code-snippet/diagram/Tools/shapes/shapes.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+```javascript
+function Created() {
+    var diagram = document.getElementById("container").ej2_instances[0];
+    var connectors = {
+            id: 'connector1',
+            type: 'Straight',
+           segments: [{ type: "Straight" }]
+        }
+        diagram.drawingObject = connectors;
+        //To draw an object once, activate draw once
+        diagram.tool = DiagramTools.DrawOnce;
+        diagram.dataBind();
+    
+}
+```
+
+## Freehand Drawing
+
+Diagram has support for free-hand drawing to draw anything on the diagram page independently. Free-hand drawing will be enabled by using the drawingObject property and setting its value to Freehand.
+
+The following code illustrates how to draw a freehand drawing.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/Tools/shapes/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Shapes.cs" %}
+{% include code-snippet/diagram/Tools/shapes/shapes.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Shapes.cs" %}
+{% include code-snippet/diagram/Tools/shapes/shapes.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+```javascript
+function Created() {
+    var diagram = document.getElementById("container").ej2_instances[0];
+    var connectors = {
+            id: 'connector1',
+            type: 'Freehand',
+        }
+        diagram.drawingObject = connectors;
+        //To draw an object once, activate draw once
+        diagram.tool = DiagramTools.DrawOnce;
+        diagram.dataBind();
+    
+}
 ```

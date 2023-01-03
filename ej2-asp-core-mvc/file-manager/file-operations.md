@@ -1,6 +1,6 @@
 ---
 layout: post
-title: File Operations in ##Platform_Name## File Manager Component
+title: File Operations in ##Platform_Name## Syncfusion File Manager Component
 description: Learn here all about File Operations in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File Operations
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# File Operations
+# File Operations in FileManager Component
 
 The file manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the file manager component.  Additionally, previewing of image files is also provided in the file manager component.
 
@@ -29,6 +29,172 @@ The following table represents the basic operations available in the file manage
 |download|Downloads the file from the server and the multiple files can be downloaded as ZIP files.|
 
 >The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the file manager only after the successful response from the server.
+
+## Folder Upload support
+
+To perform the directory(folder) upload in File Manager, set `directoryUpload` property as true within the uploadSettings property. The directory upload feature is supported for the following file service providers:
+* Physical file service provider.
+* Azure file service provider.
+* NodeJS file service provider.
+* Amazon file service provider.
+
+In the following example, directory upload is enabled/disabled on DropDownButton selection.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/directory-upload/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% include code-snippet/file-manager/directory-upload/HomeController_core.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/directory-upload/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% include code-snippet/file-manager/directory-upload/HomeController_mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+Output be like the below.
+
+![Directory upload](./images/directory-upload.png)
+
+### Physical file service provider
+
+To achieve the directory upload in the physical file service provider, use the below code snippet in `IActionResult Upload` method in the `Controllers/FileManagerController.cs` file.
+
+```typescript
+[Route("Upload")]
+        public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action)
+        {
+            FileManagerResponse uploadResponse;
+            foreach (var file in uploadFiles)
+            {
+                var folders = (file.FileName).Split('/');
+                // checking the folder upload
+                if (folders.Length > 1)
+                {
+                    for (var i = 0; i < folders.Length - 1; i++)
+                    {
+                        string newDirectoryPath = Path.Combine(this.basePath + path, folders[i]);
+                        if (!Directory.Exists(newDirectoryPath))
+                        {
+                            this.operation.ToCamelCase(this.operation.Create(path, folders[i]));
+                        }
+                        path += folders[i] + "/";
+                    }
+                }
+            }
+            uploadResponse = operation.Upload(path, uploadFiles, action, null);
+            if (uploadResponse.Error != null)
+            {
+               Response.Clear();
+               Response.ContentType = "application/json; charset=utf-8";
+               Response.StatusCode = Convert.ToInt32(uploadResponse.Error.Code);
+               Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = uploadResponse.Error.Message;
+            }
+            return Content("");
+        }
+```
+
+Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider/blob/master/Controllers/FileManagerController.cs#L76) for more details
+
+And also add the below code snippet in `FileManagerResponse Upload` method in `Models/PhysicalFileProvider.cs` file.
+
+```typescript
+string[] folders = name.Split('/');
+string fileName = folders[folders.Length - 1];
+var fullName = Path.Combine((this.contentRootPath + path), fileName);
+```
+
+Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider/blob/master/Models/PhysicalFileProvider.cs#L1185) for more details.
+
+### Azure file service provider
+
+For Azure file service provider, no customizations are needed for directory upload with server side and this will work with the below default upload method code.
+
+Refer to the [GitHub](https://github.com/SyncfusionExamples/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs#L94) for more details.
+
+### NodeJS file service provider
+
+To perform the directory upload in the NodeJS file service provider, use the below code snippet in `app.post` method in the `filesystem-server.js` file.
+
+```typescript
+var folders = (req.body.filename).split('/');
+var filepath = req.body.path;
+var uploadedFileName = folders[folders.length - 1];
+// checking the folder upload
+if (folders.length > 1)
+   {
+     for (var i = 0; i < folders.length - 1; i++)
+       {
+          var newDirectoryPath = path.join(contentRootPath + filepath, folders[i]);
+          if (!fs.existsSync(newDirectoryPath)) {
+                fs.mkdirSync(newDirectoryPath);
+                (async () => {
+                           await FileManagerDirectoryContent(req, res, newDirectoryPath).then(data => {
+                                response = { files: data };
+                                response = JSON.stringify(response);
+                           });
+                        })();
+                    }
+                    filepath += folders[i] + "/";
+                }
+                fs.rename('./' + uploadedFileName, path.join(contentRootPath, filepath + uploadedFileName), function (err) {
+                    if (err) {
+                        if (err.code != 'EBUSY') {
+                            errorValue.message = err.message;
+                            errorValue.code = err.code;
+                        }
+                    }
+                });
+            }
+```
+
+Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem/blob/master/filesystem-server.js#L788) for more details.
+
+### Amazon file service provider
+
+To perform the directory upload in the Amazon file service provider, use the below code snippet in `IActionResult AmazonS3Upload` method in the `Controllers/AmazonS3ProviderController.cs` file.
+
+```typescript
+foreach (var file in uploadFiles)
+            {
+                var folders = (file.FileName).Split('/');
+                // checking the folder upload
+                if (folders.Length > 1)
+                {
+                    for (var i = 0; i < folders.Length - 1; i++)
+                    {
+                        if (!this.operation.checkFileExist(path, folders[i]))
+                        {
+                            this.operation.ToCamelCase(this.operation.Create(path, folders[i], dataObject));
+                        }
+                        path += folders[i] + "/";
+                    }
+                }
+            }
+```
+
+Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Controllers/AmazonS3ProviderController.cs#L83) for more details.
+
+And also add the below code snippet in `AsyncUpload` method in `Models/AmazonS3FileProvider.cs` file.
+
+```typescript
+string[] folders = file.FileName.Split('/');
+string name = folders[folders.Length - 1];
+```
+
+Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Models/AmazonS3FileProvider.cs#L585) for more details.
 
 ## File operation request and response Parameters
 

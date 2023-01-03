@@ -108,4 +108,4 @@ In the carousel, you can swipe the carousel slides using touch actions by defaul
 {% endhighlight %}
 {% endtabs %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselAnimationUGSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselAnimationUGSample).

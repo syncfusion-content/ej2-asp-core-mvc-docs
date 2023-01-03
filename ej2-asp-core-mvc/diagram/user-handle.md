@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Handle in ##Platform_Name## Diagram Component
+title: User Handle in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about User Handle in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: User Handle
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# User Handles
+# User Handles in Diagram
 
 * User handles are used to add some frequently used commands around the selector. To create user handles, define and add them to the [`userHandles`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUserHandle.html) collection of the [`selectedItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_SelectedItems) property.
 * The name property of user handle is used to define the name of the user handle and its further used to find the user handle at runtime and do any customization.
@@ -61,7 +61,6 @@ The appearance of the user handle can be customized by using the [`size`](https:
 
 
 ```javascript
-
 function getTool(action) {
         var tool;
         if (action === 'clone') {
@@ -102,7 +101,6 @@ var CloneTool = (function (_super) {
     };
     return CloneTool;
 }(ej.diagrams.MoveTool));
-
 ```
 
 ## Fixed user handles
@@ -145,7 +143,7 @@ To create the fixed user handles, define and add them to the collection of nodes
 
 * The corner radius allows to create fixed user handles with rounded corners. The radius of the rounded corner is set with the `cornerRadius` property.
 
-> The PathData needs to be provided to render fixed user handle.
+N> The PathData needs to be provided to render fixed user handle.
 
 ### Size
 
@@ -183,7 +181,7 @@ Diagram allows to set size for the fixed user handles by using the `width` and `
 
 
 
-> The fixed user handle id need to be unique.
+N> The fixed user handle id need to be unique.
 
 ## Customizing the node fixed user handle
 
@@ -250,9 +248,9 @@ The following table shows all the possible alignments visually shows the fixed u
 
 | Offset | Alignment | Output |
 | -------- | -------- | -------- |
-| 0 | Before |![fixed user handle for node](images/0before.png)|
-| 0.5 | Center |![fixed user handle for node](images/0.5center.png)|
-| 1 | After |![fixed user handle for node](images/1after.png)|
+| 0 | Before |![fixed user handle for node](images/before-min.png)|
+| 0.5 | Center |![fixed user handle for node](images/center-min.png)|
+| 1 | After |![fixed user handle for node](images/after-min.png)|
 
 ### Displacement
 
@@ -267,7 +265,7 @@ The following table shows all the possible alignments visually shows the fixed u
 | y=10 | Before |![fixed user handle for node](images/ybefore.png)|
 | y=10 | After |![fixed user handle for node](images/yafter.png)|
 
-> Displacement will not be done if the alignment is set to be center.
+N> Displacement will not be done if the alignment is set to be center.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -289,4 +287,27 @@ The following table shows all the possible alignments visually shows the fixed u
 {% endtabs %}
 {% endif %}
 
+### Tooltip support for User Handle
 
+The diagram provides support to show tooltip when the mouse hovers over any user handle.
+To show tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) property of diagram model needs to be set with the tooltip [`content`](../api/diagram/diagramTooltip/#content) and [`position`](../api/diagram/diagramTooltip/#position) as shown in the following example.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/interaction/node/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Node.cs" %}
+{% include code-snippet/diagram/interaction/node/node.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Node.cs" %}
+{% include code-snippet/diagram/interaction/node/node.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

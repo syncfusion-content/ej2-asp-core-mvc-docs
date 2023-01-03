@@ -22,7 +22,11 @@ The following steps are used to show the bookmark.
 **Step 2:** Use the following code snippet to Show the Bookmark.
 
 ```html
-<ejs-pdfviewer id="pdfviewer" serviceUrl="/api/PdfViewer" documentPath="PDF Succinctly.pdf" enableBookmark="true"></ejs-pdfviewer>
+<ejs-pdfviewer id="pdfviewer"
+               serviceUrl="/api/PdfViewer"
+               documentPath="PDF Succinctly.pdf"
+               enableBookmark="true">
+</ejs-pdfviewer>
 ```
 
 Download the sample [how to show bookmark](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Coresample-473210677.zip)

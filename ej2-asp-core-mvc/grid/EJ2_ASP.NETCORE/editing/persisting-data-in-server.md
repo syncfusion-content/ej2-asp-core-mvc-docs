@@ -114,7 +114,7 @@ The following code example describes the above behavior.
 
 > If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
 
-The newly added record details are bound to the **value** parameter. Please refer to the following screenshot.
+The newly added record details are bound to the **value** parameter. Refer to the following screenshot.
 
 ![insert](../../images/insert.jpg)
 
@@ -151,7 +151,7 @@ The following code example describes the previous behavior.
 
 > If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
 
-The updated record details are bound to the **value** parameter. Please refer to the following screenshot.
+The updated record details are bound to the **value** parameter. Refer to the following screenshot.
 
 ![update](../../images/update.jpg)
 
@@ -188,7 +188,7 @@ The following code example describes the previous behavior.
 
 > If you get posted data as **null** at the server side, then it might be due to the model state failure. You can check this using **ModelState.IsValid** and get the failure error details using **ModelState.Values** property.
 
-The deleted record primary key value is bound to the **key** parameter. Please refer to the following screenshot.
+The deleted record primary key value is bound to the **key** parameter. Refer to the following screenshot.
 
 ![delete](../../images/delete.jpg)
 
@@ -225,7 +225,7 @@ The following code example describes the above behavior.
 
 
 
-Please refer to the following screenshot to know about the action parameter.
+Refer to the following screenshot to know about the action parameter.
 
 ![crudupdate](../../images/crudupdate.jpg)
 

@@ -94,10 +94,10 @@ PdfRenderer pdfExportImage = new PdfRenderer();
 pdfExportImage.Load(@"currentDirectory\..\..\..\..\Data\HTTP Succinctly.pdf");
 //Exports the PDF document pages into images
 Bitmap[] bitmapimage = pdfExportImage.ExportAsImage(0, pdfExportImage.PageCount-1);
-for (int i =0; i < pdfExportImage.PageCount; i++)
+for (int i = 0; i < pdfExportImage.PageCount; i++)
 {
-// Save the exported image in disk
-bitmapimage[i].Save(@"currentDirectory\..\..\..\..\Images\" + "bitmapImage" + i.ToString() + ".png");
+    // Save the exported image in disk
+    bitmapimage[i].Save(@"currentDirectory\..\..\..\..\Images\" + "bitmapImage" + i.ToString() + ".png");
 }
 
 ```
@@ -114,10 +114,10 @@ PdfRenderer pdfExportImage = new PdfRenderer();
 pdfExportImage.Load(@"currentDirectory\..\..\..\..\Data\HTTP Succinctly.pdf");
 //Exports the PDF document pages into images
 Bitmap[] bitmapimage = pdfExportImage.ExportAsImage(0, pdfExportImage.PageCount-1, 200, 200);
-for (int i =0; i < pdfExportImage.PageCount; i++)
+for (int i = 0; i < pdfExportImage.PageCount; i++)
 {
-//Save the exported image in disk
-bitmapimage[i].Save(@"currentDirectory\..\..\..\..\Images\" + "bitmapImage" + i.ToString() + ".png");
+    //Save the exported image in disk
+    bitmapimage[i].Save(@"currentDirectory\..\..\..\..\Images\" + "bitmapImage" + i.ToString() + ".png");
 }
 
 ```
@@ -134,10 +134,10 @@ PdfRenderer pdfExportImage = new PdfRenderer();
 pdfExportImage.Load(@"currentDirectory\..\..\..\..\Data\HTTP Succinctly.pdf");
 //Exports the PDF document pages into images
 Bitmap[] bitmapimage = pdfExportImage.ExportAsImage(0, pdfExportImage.PageCount-1, new SizeF(200, 300), false);
-for (int i =0; i < pdfExportImage.PageCount; i++)
+for (int i = 0; i < pdfExportImage.PageCount; i++)
 {
-//Save the exported image in disk
-bitmapimage[i].Save(@"currentDirectory\..\..\..\..\Images\" + "bitmapImage" + i.ToString() + ".png");
+    //Save the exported image in disk
+    bitmapimage[i].Save(@"currentDirectory\..\..\..\..\Images\" + "bitmapImage" + i.ToString() + ".png");
 }
 
 ```
@@ -154,12 +154,12 @@ PdfRenderer pdfExportImage = new PdfRenderer();
 pdfExportImage.Load(@"currentDirectory\..\..\..\..\Data\HTTP Succinctly.pdf");
 //Exports the PDF document pages into images
 Bitmap[] bitmapimage = pdfExportImage.ExportAsImage(0, pdfExportImage.PageCount-1, new SizeF(200, 300),200,200,false);
-for (int i =0; i < pdfExportImage.PageCount; i++)
+for (int i = 0; i < pdfExportImage.PageCount; i++)
 {
-//Save the exported image in disk
-bitmapimage[i].Save(@"currentDirectory\..\..\..\..\Images\" + "bitmapImage" + i.ToString() + ".png");
+    //Save the exported image in disk
+    bitmapimage[i].Save(@"currentDirectory\..\..\..\..\Images\" + "bitmapImage" + i.ToString() + ".png");
 }
 
 ```
 
->Kindly ensure the provided document path and output image saved locations in your application level.
+> Ensure the provided document path and output image saved locations in your application level.
