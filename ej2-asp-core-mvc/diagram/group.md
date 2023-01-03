@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Group in Diagram 
+# Group in Diagram Control
 
 Group is used to cluster multiple nodes and connectors into a single element. It acts like a container for its children (nodes, groups, and connectors). Every change made to the group also affects the children. Child elements can be edited individually.
 
