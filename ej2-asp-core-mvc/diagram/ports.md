@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ports in ##Platform_Name## Diagram Component
+title: Ports in Syncfusion ##Platform_Name## Diagram Component
 description: Learn here all about Ports in Syncfusion ##Platform_Name## Diagram component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ports
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Ports
+# Ports in Diagram
 
 Diagram provides support to define custom ports for making connections.
 
@@ -116,7 +116,6 @@ var port= [{
         visibility: PortVisibility.Visible
     }
 ];
-
 // Method to add ports through run time
 diagram.addPorts(diagram.nodes[0], port);
 
