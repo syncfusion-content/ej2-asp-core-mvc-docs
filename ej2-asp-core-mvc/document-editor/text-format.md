@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Format in ##Platform_Name## Document Editor Component | Syncfusion
+title: Text Format in ##Platform_Name## Document Editor Component
 description: Learn here all about text format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Format
@@ -167,4 +167,4 @@ documenteditor.selection.characterFormat.highlightColor= '#FFC0CB';
 
 * [Feature modules](../document-editor/feature-module/)
 * [Font dialog](../document-editor/dialog/#font-dialog)
-* [Keyboard shortcuts](../document-editor/keyboard-shortcut#text-formatting)
+* [Keyboard shortcuts](../document-editor/keyboard-shortcut/)

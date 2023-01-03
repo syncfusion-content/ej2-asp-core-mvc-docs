@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Link in ##Platform_Name## Document Editor Component | Syncfusion
+title: Link in ##Platform_Name## Document Editor Component
 description: Learn here all about Link in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Link
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Hyperlink in Document Editor Component
+# Hyperlink
 
 Document editor supports hyperlink field. You can link a part of the document content to Internet or file location, mail address, or any text within the document.
 
@@ -127,7 +127,7 @@ You can customize the screen tip text for the hyperlink by using below sample co
 documenteditor.insertHyperlink('https://www.google.com', 'Google', '<<Screen tip text>>');
 ```
 
-Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog)
+Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog/)
 
 ![Add or modify the screen tip text for hyperlinks in a Word document.](images/screentip.png)
 

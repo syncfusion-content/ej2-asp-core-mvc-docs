@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import in ##Platform_Name## Document Editor Component
+title: Import in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about import in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Import
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Import
+# Import in Document Editor Component
 
 In Document Editor, the documents are stored in its own format called **Syncfusion Document Text (SFDT)**.
 
@@ -113,7 +113,7 @@ public string Import(IFormCollection data)
     WordDocument document = WordDocument.Load(stream, GetFormatType(type.ToLower()));
     string sfdt = Newtonsoft.Json.JsonConvert.SerializeObject(document);
     document.Dispose();
-    return sdft;
+    return sfdt;
 }
 
 internal static FormatType GetFormatType(string format)

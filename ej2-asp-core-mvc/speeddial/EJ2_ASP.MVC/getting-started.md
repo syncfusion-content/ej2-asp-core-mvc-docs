@@ -172,7 +172,7 @@ You can use the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 
 ## Clicked event
 
-The speed dial control triggers the [`clicked`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Clicked) event when an action item is clicked.
+The speed dial control triggers the [`Clicked`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Clicked) event when an action item is clicked.
 You can use this event to perform the required action.
 
 {% if page.publishingplatform == "aspnet-core" %}

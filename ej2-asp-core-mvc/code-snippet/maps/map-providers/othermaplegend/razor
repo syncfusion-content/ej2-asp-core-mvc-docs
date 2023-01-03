@@ -3,7 +3,7 @@
 
 
 @{ 
-    var urlTemplate = "http://api.tomtom.com/map/1/tile/basic/main/level/tileX/tileY.png?key=subscription_key";
+    var urlTemplate = "http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level";
 }
 <div class="control-section">
     <div id="outer" style="width:100%">
