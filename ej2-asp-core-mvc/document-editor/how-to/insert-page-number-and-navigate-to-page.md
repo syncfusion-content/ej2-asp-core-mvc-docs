@@ -38,14 +38,12 @@ The following example code illustrates how to insert page number in header.
 {% highlight c# tabtitle="Insert-page-number.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
-```
 
 Also, you use [`insertField`] API in Editor module to insert the Page number in current position
 
 ```typescript
 //Current page number
 container.documentEditor.editor.insertField('PAGE \* MERGEFORMAT', '1');
-
 ```
 
 ## Get page count

@@ -1,5 +1,5 @@
 <div id="documenteditor" style="width:100%;height:100%">
-<ejs-documenteditor isReadOnly=false id="container"></ejs-documenteditor>      
+    <ejs-documenteditor isReadOnly=false id="container"></ejs-documenteditor>      
 </div>
 <script>
     var documenteditor;
@@ -64,5 +64,4 @@
         documenteditor.open(JSON.stringify(defaultDocument));
         documenteditor.focusIn();
     }
-
 </script>

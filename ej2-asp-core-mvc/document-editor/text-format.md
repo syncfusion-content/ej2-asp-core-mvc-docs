@@ -18,18 +18,16 @@ Document editor supports several formatting options for text like bold, italic, 
 The bold formatting for selected text can be get or set by using the following sample code.
 
 ```typescript
-
 //Gets the value for bold formatting of selected text.
 let bold : boolean = documenteditor.selection.characterFormat.bold;
 //Sets bold formatting for selected text.
 documenteditor.selection.characterFormat.bold = true;
-
 ```
 
 You can toggle the bold formatting based on existing value at selection.
 
 ```typescript
-**documenteditor.editor.toggleBold();
+documenteditor.editor.toggleBold();
 ```
 
 ## Italic

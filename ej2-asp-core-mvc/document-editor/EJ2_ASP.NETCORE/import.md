@@ -139,7 +139,6 @@ internal static FormatType GetFormatType(string format)
             throw new NotSupportedException("EJ2 DocumentEditor does not support this file format.");
     }
 }
-
 ```
 
 ## See Also
