@@ -1,4 +1,5 @@
-<ejs-documenteditor id="container"><ejs-documenteditorcontainerevent (created)="onCreate()"></ejs-documenteditorcontainerevent>
+<ejs-documenteditor id="container">
+    <ejs-documenteditorcontainerevent (created)="onCreate()"></ejs-documenteditorcontainerevent>
 </ejs-documenteditor>
 
 <script>

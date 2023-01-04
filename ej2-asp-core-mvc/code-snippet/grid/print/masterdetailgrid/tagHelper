@@ -1,0 +1,40 @@
+@using System.Text.Json;
+
+<div>
+    <ejs-grid id="masterGrid" dataSource="@ViewBag.dataSource" selectedRowIndex="0" toolbar="@(new List<string>() {"Print"})" rowSelected="selected" beforePrint="beforePrint">
+        <e-grid-columns>
+            <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="First Name" width="150"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>
+<p><div class='e-statustext'> Showing orders of Customer:  <b id=key></b></div></p>
+<div>
+    <ejs-grid id="childGrid" dataSource="@ViewBag.dataSource">
+        <e-grid-columns>
+            <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="ShipCountry" headerText="Ship Country"></e-grid-column>
+            <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+    </div>
+
+<script>
+    function selected(args) {
+        var selectedRecord = args.data;
+        var data = @Html.Raw(JsonSerializer.Serialize(ViewBag.datasource));
+        var employeeID = args.data.EmployeeID;
+        var detaildata = new ej.data.DataManager(data).executeLocal(new ej.data.Query().where("EmployeeID", "equal", employeeID, false).take(10));
+        var grid = document.getElementById("childGrid").ej2_instances[0];
+        document.getElementById('key').innerHTML = selectedRecord.EmployeeID;
+        grid.dataSource = new ej.data.DataManager(detaildata.slice(0, 5)).dataSource.json;
+    }
+    function beforePrint(args) {
+        var customEle = document.createElement('div');
+        var grid = document.getElementById("childGrid").ej2_instances[0];
+        customEle.innerHTML = document.getElementsByClassName('e-statustext')[0].innerHTML + grid.element.innerHTML;
+        customEle.appendChild(document.createElement('br'));
+        args.element.append(customEle);
+    }
+</script>
