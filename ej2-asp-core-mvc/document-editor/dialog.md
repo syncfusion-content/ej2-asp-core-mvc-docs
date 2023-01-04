@@ -256,12 +256,16 @@ This dialog allows customizing the border style, border width, and background co
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Borders-and-shading-dialog.cs" %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/Borders-and-shading-dialog/tagHelper %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/Borders-and-shading-dialog/razor %}
+{% endhighlight %}
 {% highlight c# tabtitle="Borders-and-shading-dialog.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}

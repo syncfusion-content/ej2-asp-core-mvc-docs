@@ -1,7 +1,6 @@
 @Html.EJS().Button("dialog").Content("Dialog").Render()
 @Html.EJS().DocumentEditor("container").IsReadOnly(false).EnableEditor(true).EnablePageSetupDialog(true).EnableSelection(true).EnableSfdtExport(true).Render()
 
-
 <script>
     var documenteditor;
     document.addEventListener('DOMContentLoaded', function () {
