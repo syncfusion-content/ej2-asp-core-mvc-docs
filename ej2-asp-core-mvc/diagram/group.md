@@ -183,7 +183,7 @@ function addRows (column) {
     column.children.push(getTextElement('Row3'));
     column.children.push(getTextElement('Row4'));
 }
-  function getNodeDefaults (node) {
+function getNodeDefaults (node) {
         node.height = 100;
         node.width = 100;
         node.style.fill = '#6BA5D7';
