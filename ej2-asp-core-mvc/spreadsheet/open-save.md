@@ -144,8 +144,8 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 
 The following list of Excel file formats are supported in Spreadsheet:
 
-* MS Excel (.xlsx)
-* MS Excel 97-2003 (.xls)
+* Microsoft  Excel (.xlsx)
+* Microsoft  Excel 97-2003 (.xls)
 * Comma Separated Values (.csv)
 * Excel Macro-Enabled Workbook (.xlsm)
 * Excel Binary Workbook(.xlsb)
@@ -259,8 +259,8 @@ You can add your own custom header to the save action in the Spreadsheet. For pr
 
 The following list of Excel file formats are supported in Spreadsheet:
 
-* MS Excel (.xlsx)
-* MS Excel 97-2003 (.xls)
+* Microsoft  Excel (.xlsx)
+* Microsoft  Excel 97-2003 (.xls)
 * Comma Separated Values (.csv)
 * Portable Document Format (.pdf)
 
