@@ -172,19 +172,6 @@ Individual text can be customized using the `textRender` event.
 {% endhighlight %}
 {% endtabs %}
 
-## Text wrap
-
-When the data label text exceeds the container, the text can be wrapped by using [textWrap](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_TextWrap) property. End user can also wrap the data label text based on [maxWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_MaxWidth) property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/textwrap/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Textwrap.cs" %}
-{% include code-snippet/chart/accumulation-charts/datalabel/textwrap/textwrap.cs %}
-{% endhighlight %}
-{% endtabs %}
-
 ## Show percentages in data labels of pie chart
 
 You can show the percentages in data labels of pie chart using `textRender` event and `template` option.
