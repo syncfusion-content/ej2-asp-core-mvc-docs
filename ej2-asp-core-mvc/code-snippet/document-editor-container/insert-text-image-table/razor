@@ -22,8 +22,8 @@
     moveCursorToNextCell();
     // To insert text in cursor position
     container.documentEditor.editor.insertText('Text');
-    }
-    function moveCursorToNextCell() {
+  }
+  function moveCursorToNextCell() {
       // To get current selection start offset
       var startOffset = container.documentEditor.selection.startOffset;
       // Increasing cell index to consider next cell
@@ -32,9 +32,9 @@
       startOffset = startOffset.substring(0, 6) + cellIndex.toString() + startOffset.substring(7, startOffset.length);
       // Navigating selection using select method
       container.documentEditor.selection.select(startOffset, startOffset);
-    }
+  }
 
-    function moveCursorToNextRow() {
+  function moveCursorToNextRow() {
       // To get current selection start offset
       var startOffset = container.documentEditor.selection.startOffset;
       // Increasing row index to consider next row
@@ -44,5 +44,5 @@
       startOffset = startOffset.substring(0, 4) + rowIndex.toString() + startOffset.substring(5, 6) + cellIndex + startOffset.substring(7, startOffset.length);
       // Navigating selection using select method
       container.documentEditor.selection.select(startOffset, startOffset);
-    }
+  }
 </script>
