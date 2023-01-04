@@ -5,5 +5,5 @@
     IntervalType(Syncfusion.EJ2.HeatMap.IntervalType.Years).
     LabelFormat("yyyy");
 }).YAxis(yaxis =>
-yaxis.ValueType(Syncfusion.EJ2.HeatMap.ValueType.Numeric)).LegendSettings(ls =>
+yaxis.ValueType(Syncfusion.EJ2.HeatMap.ValueType.Numeric)).PaletteSettings(ps => ps.EmptyPointColor("Black")).LegendSettings(ls =>
 ls.Visible(false)).DataSource(ViewBag.dataSource).Render()

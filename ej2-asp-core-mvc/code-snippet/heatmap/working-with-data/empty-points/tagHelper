@@ -7,5 +7,7 @@
  </e-heatmap-xaxis>
   <e-heatmap-yaxis valueType="Numeric">
   </e-heatmap-yaxis>
+  <e-heatmap-palettesettings emptyPointColor="black">
+  </e-heatmap-palettesettings>
     <e-heatmap-legendsettings visible="false"></e-heatmap-legendsettings>
 </ejs-heatmap>

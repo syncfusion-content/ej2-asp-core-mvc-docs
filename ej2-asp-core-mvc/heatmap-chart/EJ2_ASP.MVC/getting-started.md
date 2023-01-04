@@ -101,9 +101,9 @@ Now, add the Syncfusion ASP.NET MVC HeatMapChart control in `~/Views/Home/Index.
 {% endhighlight %}
 {% endtabs %}
 
-## Populate heat map with data
+## Populate heatmap with data
 
-This section explains how to populate the following two-dimensional array data to the heat map.
+This section explains how to populate the following two-dimensional array data to the heatmap.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -156,7 +156,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Enable axis labels
 
-You can add axis labels to the heat map and format those labels using the [xAxis](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_XAxis) and [yAxis](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_YAxis) properties. Axis labels provide additional information about the data points populated in the heat map.
+You can add axis labels to the heatmap and format those labels using the [xAxis](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_XAxis) and [yAxis](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_YAxis) properties. Axis labels provide additional information about the data points populated in the heatmap.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -205,9 +205,9 @@ public ActionResult Index()
 
 ![ASP.NET MVC HeatMapChart with Axis](images/heatmap-with-axis-labels.png)
 
-## Add heat map title
+## Add heatmap title
 
-Add a title using the [TitleSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_TitleSettings) property to the heat map to provide quick information to the user about the data populated in the heat map.
+Add a title using the [TitleSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_TitleSettings) property to the heatmap to provide quick information to the user about the data populated in the heatmap.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -265,7 +265,7 @@ public ActionResult Index()
 
 ## Enable legend
 
-Use a legend for the heat map in the [LegendSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_LegendSettings) object by setting the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_Visible) property to **true**.
+Use a legend for the heatmap in the [LegendSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_LegendSettings) object by setting the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapLegendSettings.html#Syncfusion_EJ2_HeatMap_HeatMapLegendSettings_Visible) property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -291,7 +291,7 @@ Use a legend for the heat map in the [LegendSettings](https://help.syncfusion.co
 
 ## Add data label
 
-Add data labels to improve the readability of the heat map. This can be achieved by setting the [ShowLabel](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_ShowLabel) property to **true** in the [CellSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_CellSettings) object.
+Add data labels to improve the readability of the heatmap. This can be achieved by setting the [ShowLabel](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_ShowLabel) property to **true** in the [CellSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_CellSettings) object.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -317,7 +317,7 @@ Add data labels to improve the readability of the heat map. This can be achieved
 
 ## Add custom cell palette
 
-The default palette settings of the heat map cells can be customized by using the [PaletteSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_PaletteSettings) property. Using the [Palette](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapPalette.html) property in `paletteSettings` object, you can change the color set for the cells. You can change the color mode of the cells to fixed or gradient mode using the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html#Syncfusion_EJ2_HeatMap_HeatMapPaletteSettings_Type) property.
+The default palette settings of the heatmap cells can be customized by using the [PaletteSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_PaletteSettings) property. Using the [Palette](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapPalette.html) property in `paletteSettings` object, you can change the color set for the cells. You can change the color mode of the cells to fixed or gradient mode using the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapPaletteSettings.html#Syncfusion_EJ2_HeatMap_HeatMapPaletteSettings_Type) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

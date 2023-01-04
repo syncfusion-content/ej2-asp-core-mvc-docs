@@ -11,7 +11,7 @@ documentation: ug
 
 # Legend in ##Platform_Name## HeatMap Chart Component
 
-The legend is used to provide the information about the heat map cell. You can enable the legend by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Visible.html) property to **true**.
+The legend is used to provide the information about the heatmap cell. You can enable the legend by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Visible.html) property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,7 +40,7 @@ The legend is used to provide the information about the heat map cell. You can e
 
 ## Legend types
 
-Heat map supports two legend types: Gradient and list type.
+Heatmap supports two legend types: Gradient and list type.
 
 * **Gradient** - This is a continuous color legend with smooth color transition between palette color values.
 * **List** - List is a fixed color legend. Each palette color information is shown separately in the list item.
@@ -74,7 +74,7 @@ You can change the legend type by using the [type](https://help.syncfusion.com/c
 
 ## Placement
 
-You can place the legend at left, right, top, or bottom to the heat map layout by using the [position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Position.html) property. The legend is positioned at the right to the heat map by default.
+You can place the legend at left, right, top, or bottom to the heatmap layout by using the [position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Position.html) property. The legend is positioned at the right to the heatmap by default.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -103,7 +103,7 @@ You can place the legend at left, right, top, or bottom to the heat map layout b
 
 ## Alignment
 
-You can align the legend as center, far, or near to the heat map using the [alignment](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Alignment.html) property.
+You can align the legend as center, far, or near to the heatmap using the [alignment](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.HeatMap.HeatMapLegendSettings~Alignment.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -161,7 +161,7 @@ You can change the legend dimensions with values in pixels or percentage by usin
 
 ## Paging for legend
 
-Paging is available only for the list type legend in the heat map, and it can be enabled by default,when the legend items exceed the legend bounds. You can view each legend items by navigating between the pages using navigation buttons.
+Paging is available only for the list type legend in the heatmap, and it can be enabled by default,when the legend items exceed the legend bounds. You can view each legend items by navigating between the pages using navigation buttons.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

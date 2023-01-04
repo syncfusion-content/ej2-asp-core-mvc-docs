@@ -27,7 +27,7 @@ You can customize the cell by using the [CellSettings](https://help.syncfusion.c
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Change the width, color, and radius of the heat map cells by using the [border](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_Border) property.
+Change the width, color, and radius of the heatmap cells by using the [border](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_Border) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -40,7 +40,7 @@ Change the width, color, and radius of the heat map cells by using the [border](
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Change the width, color, and radius of the heat map cells by using the [Border](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_Border) property.
+Change the width, color, and radius of the heatmap cells by using the [Border](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_Border) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -71,7 +71,7 @@ Enable or disable the cell highlighting while hovering over the heatmap cells by
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Enable or disable the cell highlighting while hovering over the heat map cells by using the [EnableCellHighlighting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_EnableCellHighlighting) property.
+Enable or disable the cell highlighting while hovering over the heatmap cells by using the [EnableCellHighlighting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMapCellSettings.html#Syncfusion_EJ2_HeatMap_HeatMapCellSettings_EnableCellHighlighting) property.
 
 > The cell highlighting only works in a SVG rendering mode.
 
@@ -172,7 +172,7 @@ Set the margin for the heatmap from its container by using the [margin](https://
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Set the margin for the heat map from its container by using the [Margin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Margin) property.
+Set the margin for the heatmap from its container by using the [Margin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.HeatMap.HeatMap.html#Syncfusion_EJ2_HeatMap_HeatMap_Margin) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
