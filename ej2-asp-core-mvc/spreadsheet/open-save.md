@@ -191,7 +191,7 @@ Find the below table for the beforeSave event arguments.
 | ----- | ----- | ----- |
 | url | string |  Specifies the save url.  |
 | fileName | string | Specifies the file name. |
-| saveType | SaveType | Specifies the saveType like Xlsx, Xls, Csv and Pdf. |
+| saveType | SaveType | Specifies the saveType like `Xlsx`, `Xls`, `Csv` and `Pdf`. |
 | customParams | object | Passing the custom parameters from client to server while performing save operation. |
 | isFullPost | boolean | It sends the form data from client to server, when set to true. It fetches the data from client to server and returns the data from server to client, when set to false. |
 | needBlobData | boolean | You can get the blob data if set to true. |
