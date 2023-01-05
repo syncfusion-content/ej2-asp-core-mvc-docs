@@ -14,7 +14,7 @@ To upgrade Syncfusion ASP.NET Core Controls to the latest version, you need to e
 
 ## Compatible .NET version
 
-Syncfusion ASP.NET Core Controls in the latest version `'{:nuget-version:}'` are compatible with the latest version of .NET 6.0 and .NET 6.0. Also, refer to [version compatibility](../version-compatibility) documentation for more information about version compatibility of Syncfusion ASP.NET Core Controls and .NET Core SDK.
+Syncfusion ASP.NET Core Controls in the latest version `'{:nuget-version:}'` are compatible with the latest version of .NET 7.0, .NET 6.0 and .NET Core 3.1. Also, refer to [version compatibility](../version-compatibility) documentation for more information about version compatibility of Syncfusion ASP.NET Core Controls and .NET Core SDK.
 
 ## Client resource file references
 
@@ -48,7 +48,7 @@ Before restoring the NuGet packages, clean the older versions of Syncfusion ASP.
 
 The following steps explain how to clean the cache:
 
-1. Delete the Syncfusion ASP.NET Core NuGet packages from the installed location `{System-driver}/Users/{user-name}/.nuget/packages/`. In Windows, the installed location of Syncfusion ASP.NET Core NuGet packages can be found using `%userprofile%/.nuget/packages/`.
+1. Delete the Syncfusion ASP.NET Core NuGet packages from the installed location `{System-driver}/Users/{user-name}/.nuget/packages/`. In Windows, the installed location of Syncfusion ASP.NET Core NuGet packages can be found using `%user profile%/.nuget/packages/`.
 
 2. Update the latest version of Syncfusion ASP.NET Core NuGet packages.
 
