@@ -14,7 +14,7 @@ To upgrade Syncfusion ASP.NET Core Controls to the latest version, you need to e
 
 ## Compatible .NET version
 
-Syncfusion ASP.NET Core Controls in the latest version `'{:nuget-version:}'` are compatible with the latest version of .NET 7.0, .NET 6.0 and .NET Core 3.1. Also, refer to [version compatibility](../version-compatibility) documentation for more information about version compatibility of Syncfusion ASP.NET Core Controls and .NET Core SDK.
+Syncfusion ASP.NET Core Controls in the latest version `'{:nuget-version:}'` are compatible with the latest version of `.NET 7.0`, `.NET 6.0` and `.NET Core 3.1`. Also, refer to [version compatibility](../version-compatibility) documentation for more information about version compatibility of Syncfusion ASP.NET Core Controls and .NET Core SDK.
 
 ## Client resource file references
 
