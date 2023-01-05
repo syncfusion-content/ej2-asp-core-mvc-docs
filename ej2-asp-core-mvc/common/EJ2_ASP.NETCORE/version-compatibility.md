@@ -22,6 +22,11 @@ The following table represents the supported .NET and .NET Core versions by diff
 | [.NET Core 3.1.1](https://devblogs.microsoft.com/dotnet/net-core-january-2020/) | 17.4.0.46  and 20.3.0.61 |
 | [.NET Core 3.1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-net-core-3-1/) | 17.4.0.39 and 20.3.0.61 |
 | [.NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) | 17.3.0.14 and 20.3.0.61 |
+| [.NET Core 2.2](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-2/) | 16.4.0.42 and above |
+| [.NET Core 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-1/) | 16.2.0.41 and above |
+| [.NET Core 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) | 15.3.0.26 and above |
+| [.NET Core 1.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-1-1/) | 14.4.0.15 and above |
+| [.NET Core 1.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-1-0/) | 14.2.0.26 and above |
 
 ## Syncfusion Version Information
 
