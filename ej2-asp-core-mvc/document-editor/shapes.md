@@ -19,13 +19,13 @@ The DocumentEditor has preservation support for Text box, Rectangle, Rounded Rec
 
 ![List of supported shapes in DocumentEditor](images/Shapes_images/supported_shapes.png)
 
-> When using ASP.NET MVC service, the unsupported shapes will be converted as image and preserved as image.
+N> When using ASP.NET MVC service, the unsupported shapes will be converted as image and preserved as image.
 
 ## Text box Shape
 
 A text box is a rectangular area on the document where you can enter text. When you click in a text box, a flashing cursor will display indicating that you can begin typing. It allows you to enter multiple lines of text with all text formatting.
 
-![Text box shape view in DocumentEditor](images/Shapes_images/textbox_shape.png)
+<img src="images/Shapes_images/textbox_shape.png" alt="Text box shape view in DocumentEditor" style="width:550px">
 
 ## Shape Resizer
 

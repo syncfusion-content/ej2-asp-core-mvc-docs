@@ -1,7 +1,7 @@
 <input type="file" id="insertImageButton" style="position:fixed; left:-110em" accept=".jpg,.jpeg,.png,.bmp" />
 <ejs-button id="insert_picture">Image</ejs-button>
 <div id="documenteditor" style="width:100%;height:100%" >
-<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableImageResizer=true enableEditorHistory=true id="container"></ejs-documenteditor>
+    <ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableImageResizer=true enableEditorHistory=true id="container"></ejs-documenteditor>
 </div>
 
 <script>

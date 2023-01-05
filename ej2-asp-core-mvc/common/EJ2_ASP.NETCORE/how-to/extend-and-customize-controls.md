@@ -104,7 +104,7 @@ namespace ASPCore.Pages
 
 ![Output of extending Syncfusion control](images/extend-sync-component.png)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-extend-control)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-extend-control)
 
 ## Use Syncfusion ASP.NET Core Control within Another view component
 
@@ -209,7 +209,7 @@ namespace ASPCORE.Pages
 
 ![Render Syncfusion ASP.NET Core control inside another view component](images/todolist.gif)
 
-> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-view-component)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-view-component)
 
 ## See also
 

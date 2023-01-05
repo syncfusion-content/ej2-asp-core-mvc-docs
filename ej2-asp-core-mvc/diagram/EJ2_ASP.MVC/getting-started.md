@@ -27,9 +27,9 @@ This section briefly explains about how to include [ASP.NET MVC Diagram](https:/
 
 Syncfusion ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. To add ASP.NET MVC controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
 
-> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
+N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion license key.
 
-> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
+N> If you create ASP.NET MVC application with MVC4 package, search for [Syncfusion.EJ2.MVC4](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4) and then install it. 
 
 ## Add namespace
 
@@ -146,7 +146,7 @@ Add two node to the diagram as shown in the previous example. Connect these node
 
 ![ASP.NET MVC Diagram with Connector](images/diagram-connector.png)
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Diagram/ASP.NET%20MVC%20Razor%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Diagram/ASP.NET%20MVC%20Razor%20Examples).
 
 ## Adding default values
 
@@ -216,7 +216,6 @@ In the 'Flow Diagram' section, how to create a diagram manually was discussed. T
 Define Employee Information as JSON data. The following code example shows an employee array whose, `Name` is used as an unique identifier and `ReportingPerson` is used to identify the person to whom an employee report to, in the organization.
 
 ```cs
-
     public data: Object[] = [
         {
             Name: "Elizabeth",
@@ -253,7 +252,6 @@ Define Employee Information as JSON data. The following code example shows an em
             Role: "Lead"
         }
     ];
-
 ```
 
 ## Map data source
@@ -341,4 +339,4 @@ The following code examples indicate how to define the default appearance of nod
 
 
 
-> You can refer to our [ASP.NET MVC Diagram](https://www.syncfusion.com/aspnet-mvc-ui-controls/diagram) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Diagram example](https://ej2.syncfusion.com/aspnetmvc/Diagram/DefaultFunctionalities#/material) that shows how to render the Diagram in ASP.NET MVC.
+N> You can refer to our [ASP.NET MVC Diagram](https://www.syncfusion.com/aspnet-mvc-ui-controls/diagram) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Diagram example](https://ej2.syncfusion.com/aspnetmvc/Diagram/DefaultFunctionalities#/material) that shows how to render the Diagram in ASP.NET MVC.

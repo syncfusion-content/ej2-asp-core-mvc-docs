@@ -59,7 +59,7 @@ Use the following list of keys to navigate the currently focused Calendar after 
 | <kbd>Alt + Right</kbd>  | Focuses through out the pop-up container in forward direction. |
 | <kbd>Alt + Left</kbd>  | Focuses through out the pop-up container in backward direction. |
 
-> To focus the DateRangePicker control use the `alt+t` keys.
+N> To focus the DateRangePicker control use the `alt+t` keys.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

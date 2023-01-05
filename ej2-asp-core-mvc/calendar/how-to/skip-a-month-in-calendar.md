@@ -32,4 +32,4 @@ The following example demonstrates how to skip a month in the Calendar while cli
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Calendar/CalendarHowToSample).

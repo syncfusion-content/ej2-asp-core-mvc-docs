@@ -44,4 +44,35 @@ You can use TreeGrid [`DataSource`](https://help.syncfusion.com/cr/cref_files/as
 
 
 > If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
+
+
+
+## Handling expandStateMapping
+
+To denotes the expand status of parent row, define the [`ExpandStateMapping`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.treegrid.treegrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ExpandStateMapping) property of tree grid.
+
+The `ExpandStateMapping` property maps the field name in data source, that denotes whether parent record is in expanded or collapsed state and this is useful to renders parent row in expanded or collapsed state based on this mapping property value in data source.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight c# tabtitle="ExpandStateMapping.cs" %}
+{% include code-snippet/tree-grid/data-binding-mvc/expandstatemapping/expandstatemapping.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/data-binding-mvc/expandstatemapping/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ExpandStateMapping.cs" %}
+{% include code-snippet/tree-grid/data-binding-mvc/expandstatemapping/expandstatemapping.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 > You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
