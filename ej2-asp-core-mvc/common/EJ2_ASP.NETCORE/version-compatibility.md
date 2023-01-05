@@ -16,12 +16,12 @@ The following table represents the supported .NET and .NET Core versions by diff
 | ------------- | ------------- |
 | [.NET 7.0](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-dotnet-7/) | 20.4.0.38 and above |
 | [.NET 6.0](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-net-6/) | 19.3.0.43 and above |
-| [.NET 5.0](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-net-5/) | 18.4.0.30 to 20.3.0.61  |
-| [.NET Core 3.1.3](https://devblogs.microsoft.com/dotnet/net-core-march-2020/) | 18.1.0.52 and 20.3.0.61 |
-| [.NET Core 3.1.2](https://devblogs.microsoft.com/dotnet/net-core-february-2020/) | 18.1.0.42 and 20.3.0.61 |
-| [.NET Core 3.1.1](https://devblogs.microsoft.com/dotnet/net-core-january-2020/) | 17.4.0.46  and 20.3.0.61 |
-| [.NET Core 3.1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-net-core-3-1/) | 17.4.0.39 and 20.3.0.61 |
-| [.NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) | 17.3.0.14 and 20.3.0.61 |
+| [.NET 5.0](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-net-5/) | 18.4.0.30 and above  |
+| [.NET Core 3.1.3](https://devblogs.microsoft.com/dotnet/net-core-march-2020/) | 18.1.0.52 and above |
+| [.NET Core 3.1.2](https://devblogs.microsoft.com/dotnet/net-core-february-2020/) | 18.1.0.42 and above |
+| [.NET Core 3.1.1](https://devblogs.microsoft.com/dotnet/net-core-january-2020/) | 17.4.0.46  and above |
+| [.NET Core 3.1](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-net-core-3-1/) | 17.4.0.39 and above |
+| [.NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) | 17.3.0.14 and above |
 | [.NET Core 2.2](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-2/) | 16.4.0.42 and above |
 | [.NET Core 2.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-1/) | 16.2.0.41 and above |
 | [.NET Core 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-0/) | 15.3.0.26 and above |
