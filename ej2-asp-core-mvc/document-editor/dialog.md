@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dialog in ##Platform_Name## Document Editor Component
+title: Dialog in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about dialog in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dialog
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dialog
+# Dialog in Document Editor Component
 
 Documenteditor provides dialog support to major operations such as insert or edit hyperlink, formatting text, paragraph, style, list and table properties.
 
@@ -257,14 +257,14 @@ This dialog allows customizing the border style, border width, and background co
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/document-editor/borders-shading-dialog/tagHelper %}
+{% include code-snippet/document-editor/Borders-and-shading-dialog/tagHelper %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/document-editor/borders-shading-dialog/razor %}
+{% include code-snippet/document-editor/Borders-and-shading-dialog/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Borders-and-shading-dialog.cs" %}
 {% endhighlight %}{% endtabs %}
