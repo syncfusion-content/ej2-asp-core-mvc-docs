@@ -143,4 +143,4 @@ Refer to the following code example to create a Tooltip on multiple targets with
 * [Tooltip Open Mode](./open-mode)
 * [Customize the Tooltip](./customization)
 
-N> You can also explore our [ASP.NET MVC Tooltip example](https://ej2.syncfusion.com/aspnetmvc/Tooltip/DefaultFunctionalities#/material) that shows you how to render the Tooltip in ASP.NET MVC.
+N> You can also explore our [ASP.NET MVC Tooltip example](https://ej2.syncfusion.com/aspnetmvc/Tooltip/DefaultFunctionalities#/bootstrap5) that shows you how to render the Tooltip in ASP.NET MVC.
