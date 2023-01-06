@@ -118,8 +118,8 @@ For example, to enable tab key navigation for two Toolbar items, you can use the
 
 <ejs-toolbar id="defaultToolbar">
     <e-toolbar-items>
-        <e-toolbar-item text="Item 1" tabindex = "1"></e-toolbar-item>
-        <e-toolbar-item text="Item 2" tabindex = "2"></e-toolbar-item>       
+        <e-toolbar-item text="Item 1" tabIndex = "1"></e-toolbar-item>
+        <e-toolbar-item text="Item 2" tabIndex = "2"></e-toolbar-item>       
     </e-toolbar-items>
 </ejs-toolbar>
 ```
@@ -133,8 +133,8 @@ If you set the `tabIndex` value to 0 for all Toolbar items, tab key navigation w
 
 <ejs-toolbar id="defaultToolbar">
     <e-toolbar-items>
-        <e-toolbar-item text="Item 1" tabindex = "0"></e-toolbar-item>
-        <e-toolbar-item text="Item 2" tabindex = "0"></e-toolbar-item>       
+        <e-toolbar-item text="Item 1" tabIndex = "0"></e-toolbar-item>
+        <e-toolbar-item text="Item 2" tabIndex = "0"></e-toolbar-item>       
     </e-toolbar-items>
 </ejs-toolbar>
 ```

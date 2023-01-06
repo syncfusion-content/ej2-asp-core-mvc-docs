@@ -617,9 +617,9 @@ In this example, a resource named `Will Smith` is depicted with working hours ra
 
 ## Hide non-working days when grouped by date
 
-In Scheduler, you can set custom work days for each resource and group the Scheduler by date to display these work days. By default, the Scheduler will show all days when it is grouped by date, even if they are not included in the custom work days for the resources. However, you can use the `hideNonWorkingDays` property to only display the custom work days in the Scheduler.
+In Scheduler, you can set custom work days for each resource and group the Scheduler by date to display these work days. By default, the Scheduler will show all days when it is grouped by date, even if they are not included in the custom work days for the resources. However, you can use the `HideNonWorkingDays` property to only display the custom work days in the Scheduler.
 
-To use the `hideNonWorkingDays` property, you need to include it in the configuration options for your Scheduler component. Set the value of `hideNonWorkingDays` to `true` to enable this feature.
+To use the `HideNonWorkingDays` property, you need to include it in the configuration options for your Scheduler component. Set the value of `HideNonWorkingDays` to `true` to enable this feature.
 
 **Example:** To display the Scheduler with resources grouped by date for custom working days,
 
@@ -649,7 +649,7 @@ To use the `hideNonWorkingDays` property, you need to include it in the configur
 
 {% endtab %}
 
-> The `hideNonWorkingDays` property only applies when the Scheduler is grouped `byDate`.
+> The `HideNonWorkingDays` property only applies when the Scheduler is grouped `byDate`.
 
 ## Compact view in mobile
 

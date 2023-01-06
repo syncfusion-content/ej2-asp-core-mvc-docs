@@ -46,14 +46,14 @@
 
 <ejs-tab id="ej2Tab" width="500px" heightAdjustMode="Auto" overflowMode="Scrollable">
     <e-tab-tabitems>
-        <e-tab-tabitem header="ViewBag.headerText0" content="@content0" tabindex= 0></e-tab-tabitem>
-        <e-tab-tabitem header="ViewBag.headerText1" content="@content1" tabindex = 0></e-tab-tabitem>
-        <e-tab-tabitem header="ViewBag.headerText2" content="@content2" tabindex = 0></e-tab-tabitem>
-        <e-tab-tabitem header="ViewBag.headerText3" content="@content3" tabindex = 0></e-tab-tabitem>
-        <e-tab-tabitem header="ViewBag.headerText4" content="@content4" tabindex = 0></e-tab-tabitem>
-        <e-tab-tabitem header="ViewBag.headerText5" content="@content5" tabindex = 0></e-tab-tabitem>
-        <e-tab-tabitem header="ViewBag.headerText6" content="@content6" tabindex = 0></e-tab-tabitem>
-        <e-tab-tabitem header="ViewBag.headerText7" content="@content7" tabindex = 0></e-tab-tabitem>
+        <e-tab-tabitem header="ViewBag.headerText0" content="@content0" tabIndex= 0></e-tab-tabitem>
+        <e-tab-tabitem header="ViewBag.headerText1" content="@content1" tabIndex = 0></e-tab-tabitem>
+        <e-tab-tabitem header="ViewBag.headerText2" content="@content2" tabIndex = 0></e-tab-tabitem>
+        <e-tab-tabitem header="ViewBag.headerText3" content="@content3" tabIndex = 0></e-tab-tabitem>
+        <e-tab-tabitem header="ViewBag.headerText4" content="@content4" tabIndex = 0></e-tab-tabitem>
+        <e-tab-tabitem header="ViewBag.headerText5" content="@content5" tabIndex = 0></e-tab-tabitem>
+        <e-tab-tabitem header="ViewBag.headerText6" content="@content6" tabIndex = 0></e-tab-tabitem>
+        <e-tab-tabitem header="ViewBag.headerText7" content="@content7" tabIndex = 0></e-tab-tabitem>
     </e-tab-tabitems>
 </ejs-tab>
 

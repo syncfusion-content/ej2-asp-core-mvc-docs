@@ -2,12 +2,12 @@
 
 <ejs-toolbar id="defaultToolbar">
     <e-toolbar-items>
-        <e-toolbar-item text="Cut" tabindex = 0></e-toolbar-item>
-        <e-toolbar-item text="Copy" tabindex = 0></e-toolbar-item>
-        <e-toolbar-item type="Separator" tabindex = 0></e-toolbar-item>
-        <e-toolbar-item text="Paste" tabindex = 0></e-toolbar-item>
-        <e-toolbar-item type="Separator" tabindex = 0></e-toolbar-item>
-        <e-toolbar-item text="Undo" tabindex = 0></e-toolbar-item>
-        <e-toolbar-item text="Redo" tabindex = 0></e-toolbar-item>
+        <e-toolbar-item text="Cut" tabIndex = 0></e-toolbar-item>
+        <e-toolbar-item text="Copy" tabIndex = 0></e-toolbar-item>
+        <e-toolbar-item type="Separator" tabIndex = 0></e-toolbar-item>
+        <e-toolbar-item text="Paste" tabIndex = 0></e-toolbar-item>
+        <e-toolbar-item type="Separator" tabIndex = 0></e-toolbar-item>
+        <e-toolbar-item text="Undo" tabIndex = 0></e-toolbar-item>
+        <e-toolbar-item text="Redo" tabIndex = 0></e-toolbar-item>
     </e-toolbar-items>
 </ejs-toolbar>

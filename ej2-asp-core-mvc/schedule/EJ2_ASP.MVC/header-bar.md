@@ -164,9 +164,9 @@ In month view, the date header template is not applicable and therefore the same
 
 ## Customizing the date range text
 
-The `dateRangeTemplate` option allows you to customize the text content of the date range displayed in the scheduler. By default, the date range text is determined by the scheduler view being used. However, you can use the `dateRangeTemplate` option to override the default text and specify your own custom text to be displayed.
+The `DateRangeTemplate` option allows you to customize the text content of the date range displayed in the scheduler. By default, the date range text is determined by the scheduler view being used. However, you can use the `DateRangeTemplate` option to override the default text and specify your own custom text to be displayed.
 
-The `dateRangeTemplate` property includes `startDate`, `endDate` and `currentView` options, you can customize the date range text using these available options.
+The `DateRangeTemplate` property includes `startDate`, `endDate` and `currentView` options, you can customize the date range text using these available options.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
