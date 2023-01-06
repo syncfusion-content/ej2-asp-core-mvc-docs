@@ -68,7 +68,6 @@ fieldInfo.result = '«First Name»';
 
 //Modify field code and result of the current selected field.
 documenteditor.editor.setFieldInfo(fieldInfo);
-
 ```
 
 N> For nested field, entire field gets replaced completely with the specified field information.
