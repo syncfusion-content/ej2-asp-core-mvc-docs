@@ -11,7 +11,7 @@ documentation: ug
 
 # Access Control in ASP.NET Core File Manager
 
-The [ASP.NET Core FileManager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) allows you to define access permissions for folders and files using a set of access rules to user(s).
+The [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) allows you to define access permissions for folders and files using a set of access rules to user(s).
 
 * [Access Rules](#access-rules)
 * [Permissions](#permissions)
