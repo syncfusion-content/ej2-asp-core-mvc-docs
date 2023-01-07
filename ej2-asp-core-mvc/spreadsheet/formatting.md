@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formatting in ##Platform_Name## Spreadsheet Component
+title: Formatting in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Formatting in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Formatting

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Freeze Pane in ##Platform_Name## Spreadsheet Component
+title: Freeze Pane in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Freeze Pane in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Freeze Pane
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# FreezePanes
+# FreezePanes in Spreadsheet control
 
-Freeze Panes helps you to keep particular rows or columns visible when scrolling the sheet content in the spreadsheet. You can specify the number of frozen rows and columns using the [`frozenRows`](../api/spreadsheet/#frozenRows) and [`frozenColumns`](../api/spreadsheet/#frozenColumns) properties inside the [`Sheet`](../api/spreadsheet#sheets) property.
+Freeze Panes helps you to keep particular rows or columns visible when scrolling the sheet content in the spreadsheet. You can specify the number of frozen rows and columns using the `frozenRows` and `frozenColumns` properties inside the [`Sheet`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_Sheets) property.
 
 ## Apply freezepanes on UI
 
@@ -20,7 +20,7 @@ Freeze Panes helps you to keep particular rows or columns visible when scrolling
 In the active spreadsheet, click the cell where you want to create freeze panes. Freeze panes can be done in any of the following ways:
 
 * Select the View tab in the Ribbon toolbar and choose the `Freeze Panes` item.
-* Use the [`freezePanes`](../api/spreadsheet/#freezePanes) method programmatically.
+* Use the `freezePanes` method programmatically.
 
 ## FrozenRows
 

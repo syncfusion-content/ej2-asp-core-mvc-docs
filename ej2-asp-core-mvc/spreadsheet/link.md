@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Link in ##Platform_Name## Spreadsheet Component
+title: Link in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Link in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Link
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Hyperlink
+# Hyperlink in Spreadsheet control
 
 Hyperlink is used to navigate to web links or cell reference within the sheet or to other sheets in Spreadsheet. You can use the [`allowHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowHyperlink) property to enable or disable hyperlink functionality.
 
