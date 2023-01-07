@@ -1,6 +1,6 @@
 ---
 layout: post
-title: File System Provider in ##Platform_Name## File Manager Component
+title: File System Provider in ##Platform_Name## File Manager Component | Syncfusion
 description: Learn here all about File System Provider in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File System Provider
@@ -221,7 +221,7 @@ git clone https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider.
 
 ```
 
-N> To learn more about creating and configuring an Amazon S3 bucket, refer to this [link](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-configure-bucket.html).
+N> To learn more about creating and configuring an Amazon S3 bucket, refer to this [link](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-buckets-s3.html).
 
 After cloning, open the project in Visual Studio and restore the NuGet packages. Now, register Amazon S3 client account details like *awsAccessKeyId*, *awsSecretKeyId* and *awsRegion* details in **RegisterAmazonS3** method in the FileManager controller to perform the file operations.
 
