@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scrolling in ##Platform_Name## Spreadsheet Component
+title: Scrolling in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Scrolling in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scrolling
@@ -9,24 +9,24 @@ documentation: ug
 ---
 
 
-# Scrolling
+# Scrolling in Spreadsheet control
 
-Scrolling helps you to move quickly to different areas of the worksheet. It moves faster if we use horizontal and vertical scroll bars. Scrolling can be enabled by setting the [`allowScrolling`](../api/spreadsheet/#allowscrolling) as true.
+Scrolling helps you to move quickly to different areas of the worksheet. It moves faster if we use horizontal and vertical scroll bars. Scrolling can be enabled by setting the [`allowScrolling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowScrolling) as true.
 
 N> By default, the `allowScrolling` property is true.
 
-You have the following options in Scrolling by using [`scrollSettings`](../api/spreadsheet/scrollSettings).
+You have the following options in Scrolling by using [`scrollSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_ScrollSettings).
 
 * Finite scrolling.
 * Virtual scrolling.
 
 ## Finite Scrolling
 
-Finite scrolling supports two type of modes in scrolling. You can use the [`isFinite`](../api/spreadsheet/scrollSettings/#isfinite) property in [`scrollSettings`](../api/spreadsheet/scrollSettings) to specify the mode of scrolling.
+Finite scrolling supports two type of modes in scrolling. You can use the `isFinite` property in [`scrollSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_ScrollSettings) to specify the mode of scrolling.
 
-* Finite - This mode does not create a new row/column when the scrollbar reaches the end. This can be achieved by setting the [`isFinite`](../api/spreadsheet/scrollSettings/#isfinite) property as `true`.
+* Finite - This mode does not create a new row/column when the scrollbar reaches the end. This can be achieved by setting the `isFinite` property as `true`.
 
-* Infinite - This mode creates a new row/column when the scrollbar reaches the end. This can be achieved by setting the [`isFinite`](../api/spreadsheet/scrollSettings/#isfinite) property as `false`.
+* Infinite - This mode creates a new row/column when the scrollbar reaches the end. This can be achieved by setting the `isFinite`property as `false`.
 
 N> By Default, the `isFinite` property is `false`.
 
@@ -48,7 +48,7 @@ You can scroll through the worksheet using one of the following ways,
 
 ## Finite scrolling with defined rows and columns
 
-If you want to perform scrolling with defined rows and columns, you must define `rowCount` and `colCount` in the [`sheets`](../api/spreadsheet/#sheets) property and set `isFinite` as true and `enableVirtualization` as false in `scrollSettings`.
+If you want to perform scrolling with defined rows and columns, you must define `rowCount` and `colCount` in the [`sheets`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_Sheets) property and set `isFinite` as true and `enableVirtualization` as false in `scrollSettings`.
 
 The following code example shows the finite scrolling with defined rows and columns in the spreadsheet. Here, we used rowCount as 20 and colCount as 20, after reaching the 20th row or 20th column you can't able to scroll.
 
