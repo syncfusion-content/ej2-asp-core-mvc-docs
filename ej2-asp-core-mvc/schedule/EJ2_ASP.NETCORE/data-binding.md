@@ -45,7 +45,7 @@ To bind local JSON data to the Scheduler, you can simply assign a JavaScript obj
 
 
 
-> By default, `dataManager` uses `JsonAdaptor` for local data-binding.
+N> By default, `dataManager` uses `JsonAdaptor` for local data-binding.
 
 You can also bind different field names to the default event fields as well as include additional custom fields to the event object collection which can be referred [here](./appointments/#binding-different-field-names).
 
@@ -140,7 +140,7 @@ You can bind the event data through external ajax request and assign it to the `
 
 
 
-> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
+N> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
 
 ## Passing additional parameters to the server
 
@@ -171,7 +171,7 @@ To send an additional custom parameter to the server-side post, you need to make
 
 
 
-> The parameters added using the `query` property will be sent along with the data request sent to the server on every scheduler actions.
+N> The parameters added using the `query` property will be sent along with the data request sent to the server on every scheduler actions.
 
 ## Handling failure actions
 
@@ -361,4 +361,4 @@ We have assigned our custom created Google Calendar url to the DataManager and a
 
 
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

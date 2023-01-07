@@ -13,7 +13,7 @@ documentation: ug
 
 Selection provides interactive support to highlight the cell, row, or column that you select. Selection can be done through Mouse, Touch, or Keyboard interaction. To enable selection, set `mode` as `Single` or `Multiple` in [`selectionSettings`](../api/spreadsheet/#selectionsettings). If you set `mode` to `None`, it disables the UI selection.
 
-> The default value for `mode` in  `selectionSettings` is `Multiple`.
+N> The default value for `mode` in  `selectionSettings` is `Multiple`.
 
 You have the following options in Selection,
 

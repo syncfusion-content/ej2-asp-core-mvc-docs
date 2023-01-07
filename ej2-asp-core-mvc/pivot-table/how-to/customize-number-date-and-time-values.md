@@ -19,7 +19,7 @@ For numbers, the formatting settings required to apply through code behind are:
 * `name`: It allows to set the field name.
 * `format`: It allows to set the format of the respective field.
 
-> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in `formatSettings` itself.
+N> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in `formatSettings` itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +48,7 @@ For numbers, the formatting settings required to apply through code behind are:
 
 ## Date and time formatting
 
-> This property is applicable only for relational data source.
+N> This property is applicable only for relational data source.
 
 For date and time, the formatting settings required to apply through code behind are:
 
@@ -56,7 +56,7 @@ For date and time, the formatting settings required to apply through code behind
 * `format`: It allows to set the format of the respective field.
 * `type`: It allows to set the type of format to be used for the respective field.
 
-> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime) options in `formatSettings` itself.
+N> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime) options in `formatSettings` itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

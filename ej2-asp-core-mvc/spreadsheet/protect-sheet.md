@@ -17,7 +17,7 @@ Sheet protection helps you to prevent the users from modifying the data in the s
 
 Protect sheet feature helps you to prevent the unknown users from accidentally changing, editing, moving, or deleting data in a spreadsheet. And you can also protect the sheet with password. You can use the [`isProtected`](../api/spreadsheet/#isProtected) property to enable or disable the Protecting functionality.
 
-> The default value for `isProtected` property is `false`.
+N> The default value for `isProtected` property is `false`.
 
 By default in protected sheet, selecting, formatting, inserting, deleting functionalities are disabled. To enable some of the above said functionalities the `protectSettings` options are used in a protected spreadsheet.
 
@@ -31,7 +31,7 @@ The available `protectSettings` options in spreadsheet are,
 | `Format Columns` | Used to perform Column formatting. |
 | `Insert Link` | Used to perform Hyperlink Insertions. |
 
-> * The default value for all `protectSettings` options are `false`.
+N> * The default value for all `protectSettings` options are `false`.
 
 By default, the `Protect Sheet` module is injected internally into the Spreadsheet to perform sheet protection function.
 
@@ -123,7 +123,7 @@ You can use the [`password`](../api/spreadsheet/#password) property to protect w
 
 You can use the [`isProtected`](../api/spreadsheet/#isProtected) property to protect or unprotect the workbook without the password.
 
-> The default value for `isProtected` property is `false`.
+N> The default value for `isProtected` property is `false`.
 
 **User Interface**:
 

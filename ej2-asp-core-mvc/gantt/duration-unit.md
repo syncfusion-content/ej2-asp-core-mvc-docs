@@ -55,7 +55,7 @@ The below code snippet explains the mapping of duration unit data source field t
 
 ![Alt text](images/durationUnits.png)
 
-> The default value of the [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_DurationUnit_System_String_) property is `day`.
+N> The default value of the [`durationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_DurationUnit_System_String_) property is `day`.
 
 ### Defining duration unit along with duration field
 
@@ -88,4 +88,4 @@ Duration units for the tasks can also be defined along with the duration values,
 
 ![Alt text](images/durationUnitswithDuration.png)
 
-> The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.
+N> The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.

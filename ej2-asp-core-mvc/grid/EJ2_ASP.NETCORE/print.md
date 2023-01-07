@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print in Syncfusion ##Platform_Name## Grid Component
+title: Print in ##Platform_Name## Grid Component
 description: Learn here all about Print in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Print in ASP.NET Core Grid Component
+# Print
 
 To print the Grid, use the **print** method from grid instance. The print option can be displayed on the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) by adding the **Print** toolbar item.
 
@@ -140,36 +140,7 @@ By default, the grid will be print the master and expanded child grids alone. yo
 
 
 
-> By default, the hierarchy grid prints the expanded child grids from the visible page only. Refer [To Print the expanded state grid from all pages](./how-to/print-the-expanded-state-from-other-pages)
-
-## Print the master detail grid
-
-The Grid has the option to visualize details of a record in another Grid in a master and detailed manner. By default, Grid will print the master grid alone. Instead of this, it is possible to print both the master and detail grids by using the [beforePrint](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_BeforePrint) event of the Grid.
-
-In the following sample, the detail grid is added to the `element` argument of the `beforePrint` event, resulting in both the master and detail grids being printed on the page.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/masterdetailgrid/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Master-Detail.cs" %}
-{% include code-snippet/grid/print/masterdetailgrid/masterdetailgrid.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/print/masterdetailgrid/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Master-Detail.cs" %}
-{% include code-snippet/grid/print/masterdetailgrid/masterdetailgrid.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+N> By default, the hierarchy grid prints the expanded child grids from the visible page only. Refer [To Print the expanded state grid from all pages](./how-to/print-the-expanded-state-from-other-pages)
 
 ## Print large number of columns
 

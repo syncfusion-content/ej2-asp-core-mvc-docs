@@ -40,7 +40,7 @@ To bind list binding to the grid, you can assign a IEnumerable object to the [`d
 
 
 
-> By default, `DataManager` uses `JsonAdaptor` for list data-binding.
+N> By default, `DataManager` uses `JsonAdaptor` for list data-binding.
 
 ## Refresh the data source
 

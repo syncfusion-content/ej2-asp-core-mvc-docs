@@ -259,7 +259,7 @@ The opacity of the annotation can be edited using the range slider provided in t
 
 The properties of the text markup annotation can be set before creating the control using the highlightSettings, underlineSettings, and strikethroughSettings.
 
->After editing the default color and opacity using the Edit Color tool and Edit Opacity tool, they will be changed to the selected values.
+N>After editing the default color and opacity using the Edit Color tool and Edit Opacity tool, they will be changed to the selected values.
 
 Refer to the following code sample to set the default annotation settings.
 

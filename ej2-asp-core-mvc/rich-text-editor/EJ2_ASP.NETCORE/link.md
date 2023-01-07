@@ -49,7 +49,7 @@ Point the cursor anywhere within the editor where you would like to insert the l
 
 
 
-> The Rich Text Editor link tool validates URLs, as you type them in Web Address. URLs considered invalid will be highlighted with red color by clicking the insert button in the `Insert Link` dialog.
+N> The Rich Text Editor link tool validates URLs, as you type them in Web Address. URLs considered invalid will be highlighted with red color by clicking the insert button in the `Insert Link` dialog.
 
 ## Remove Link
 
