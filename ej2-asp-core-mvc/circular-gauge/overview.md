@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Circular Gauge Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
+title: Overview in ASP.NET Core Circular Gauge Component
+description: Learn here all about Overview in Syncfusion ASP.NET CoreCircular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
-publishingplatform: ##Platform_Name##
+publishingplatform: ej2-asp-core-mvc
 documentation: ug
 ---
 
