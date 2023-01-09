@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Internationalization in ASP.NET Core Circular Gauge Control | Syncfusion
-description: Learn here all about Internationalization in Syncfusion ASP.NET Core Circular Gauge control of Syncfusion Essential JS 2 and more.
+title: Internationalization in ##Platform_Name## Circular Gauge Control | Syncfusion
+description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Internationalization
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Internationalization in Circular Gauge Control
 
-[ASP.NET Core Circular Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/circular-gauge) provides support for internationalization for the following gauge elements.
+Circular gauge provides support for internationalization for the following gauge elements.
 
 * Axis label.
 * Tooltip.
