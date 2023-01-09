@@ -106,7 +106,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## value
 
-You can set the rating value by using the `value` property.
+You can set the rating value by using the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Value) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -116,18 +116,4 @@ You can set the rating value by using the `value` property.
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Rating Value in ASP.NET CORE Rating Control](images/rating-value.png)
-
-## Items count
-
-You can specify the number of stars using the `ItemsCount` property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-<ejs-rating id="rating1" value=3 itemsCount=8></ejs-rating>
-
-{% endhighlight %}
-{% endtabs %}
-
-![Displaying ASP.NET CORE Rating Control items based on Count](images/rating-itemscount.png)
+![Displaying Rating Value in ASP.NET CORE Rating Control](images/rating-value.png

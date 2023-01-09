@@ -106,7 +106,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Value
 
-You can set the rating value by using the `Value` property.
+You can set the rating value by using the [Value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_Value) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -117,17 +117,3 @@ You can set the rating value by using the `Value` property.
 {% endtabs %}
 
 ![Displaying Rating Value in ASP.NET MVC Rating Control](images/rating-value.png)
-
-## Items count
-
-You can specify the number of stars using the `ItemsCount` property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-@Html.EJS().Rating("rating1").Value(3).ItemsCount(8).Render()
-
-{% endhighlight %}
-{% endtabs %}
-
-![Displaying ASP.NET MVC Rating Control items based on Count](images/rating-itemscount.png)
