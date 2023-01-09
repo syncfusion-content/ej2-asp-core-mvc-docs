@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Internationalization in ASP.NET MVC Circular Gauge Control | Syncfusion
+title: Internationalization | ASP.NET MVC Circular Gauge Control | Syncfusion
 description: Learn here all about Internationalization in Syncfusion ASP.NET MVC Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Internationalization
