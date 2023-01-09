@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Toolbar Component
+title: Ej1 Api Migration in ##Platform_Name## Toolbar Component | Syncfusion
 description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
@@ -94,12 +94,12 @@ This article describes the API migration process of Toolbar component from Essen
 | Responsive | **Property:** *is-responsive* <br /><br /> `<ej-toolbar is-responsive="true" />` <br /> | **Not Applicable** |
 | ShowRounderCorner | **Property:** *show-rounded-corner* <br /><br /> `<ej-toolbar show-rounded-corner="false" />` <br /> | **Not Applicable** |
 | Width | **Property:** *width* <br /><br /> `<ej-toolbar width="600" />` <br /> | **Property:** *width* <br /><br /> `<ejs-toolbar width="500" />` <br /> |
-| Enable | **Method:** *enable()* <br /><br /> var tbObj = $("#toolbar").data("ejToolbar"); <br /> tbObj.enable(); <br /> | **Method:** *disable(false)* <br /><br /> var toolbar = document.getElementById('ej2Toolbar').ej2_instances[0];<br /> toolbar.disable(false); <br /> |
-| Disable | **Method:** *disable()* <br /><br /> var tbObj = $("#toolbar").data("ejToolbar"); <br /> tbObj.disable(); <br /> | **Method:** *disable(true)* <br /><br /> var toolbar = document.getElementById('ej2Toolbar').ej2_instances[0];<br /> toolbar.disable(true); <br /> |
-| Show | **Method:** *show()* <br /><br /> var tbObj = $("#toolbar").data("ejToolbar"); <br /> tbObj.show(); <br /> | **Not Applicable** |
-| Hide | **Method:** *hide()* <br /><br /> var tbObj = $("#toolbar").data("ejToolbar"); <br /> tbObj.hide(); <br /> | **Not Applicable** |
+| Enable | **Method:** *enable()* <br /><br /> var toolbar = $("#toolbar").data("ejToolbar"); <br /> toolbar.enable(); <br /> | **Method:** *disable(false)* <br /><br /> var toolbar = document.getElementById('ej2Toolbar').ej2_instances[0];<br /> toolbar.disable(false); <br /> |
+| Disable | **Method:** *disable()* <br /><br /> var toolbar = $("#toolbar").data("ejToolbar"); <br /> toolbar.disable(); <br /> | **Method:** *disable(true)* <br /><br /> var toolbar = document.getElementById('ej2Toolbar').ej2_instances[0];<br /> toolbar.disable(true); <br /> |
+| Show | **Method:** *show()* <br /><br /> var toolbar = $("#toolbar").data("ejToolbar"); <br /> toolbar.show(); <br /> | **Not Applicable** |
+| Hide | **Method:** *hide()* <br /><br /> var toolbar = $("#toolbar").data("ejToolbar"); <br /> toolbar.hide(); <br /> | **Not Applicable** |
 | Refresh | **Not Applicable** | **Method:** *refresh()* <br /><br /> var toolbar = document.getElementById('ej2Toolbar').ej2_instances[0];<br /> toolbar.refresh(); <br /> |
-| Destroy | **Method:** *destroy()* <br /><br /> var tbObj = $("#toolbar").data("ejToolbar"); <br /> tbObj.destroy(); <br /> | **Method:** *destroy()* <br /><br /> var toolbar = document.getElementById('ej2Toolbar').ej2_instances[0];<br /> toolbar.destroy(); <br /> |
+| Destroy | **Method:** *destroy()* <br /><br /> var toolbar = $("#toolbar").data("ejToolbar"); <br /> toolbar.destroy(); <br /> | **Method:** *destroy()* <br /><br /> var toolbar = document.getElementById('ej2Toolbar').ej2_instances[0];<br /> toolbar.destroy(); <br /> |
 | Click | **Event:** *click* <br /><br /> `<ej-toolbar click="onClick" />` <br /> | **Not Applicable** |
 | BeforeCreate | **Not Applicable** | **Event:** *beforeCreate* <br /><br /> `<ejs-toolbar beforeCreate="onBeforeCreate" />` <br /> |
 | Created | **Event:** *create* <br /><br /> `<ej-toolbar create="onCreate" />` <br /> | **Event:** *created* <br /><br /> `<ejs-toolbar created="onCreated" />` <br /> |
