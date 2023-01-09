@@ -11,7 +11,7 @@ documentation: ug
 
 # Overview
 
-The Circular Gauge control is ideal to visualize numeric values over a circular scale. All circular gauge elements are rendered using Scalable Vector Graphics (SVG).
+The [ASP.NET Core Circular Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/circular-gauge) control is ideal to visualize numeric values over a circular scale. All circular gauge elements are rendered using Scalable Vector Graphics (SVG).
 
 ## Key Features
 
