@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Customize Toolbar Scroll Step in ##Platform_Name## Toolbar Component | Syncfusion
+title: To Customize Toolbar Scroll Step in ##Platform_Name## Toolbar Component | Syncfusion
 description: Learn here all about How To Customize Toolbar Scroll Step in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: How To Customize Toolbar Scroll Step
