@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Overview in ASP.NET MVC Circular Gauge Component
-description: Learn here all about Overview in Syncfusion ASP.NET MVC Circular Gauge component of Syncfusion Essential JS 2 and more.
+title: Overview in ##Platform_Name## Circular Gauge Component
+description: Learn here all about Overview in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
 # Overview
 
-The [ASP.NET MVC Circular Gauge](https://www.syncfusion.com/aspnet-mvc-ui-controls/circular-gauge) control is ideal to visualize numeric values over a circular scale. All circular gauge elements are rendered using Scalable Vector Graphics (SVG).
+The Circular Gauge control is ideal to visualize numeric values over a circular scale. All circular gauge elements are rendered using Scalable Vector Graphics (SVG).
 
 ## Key Features
 

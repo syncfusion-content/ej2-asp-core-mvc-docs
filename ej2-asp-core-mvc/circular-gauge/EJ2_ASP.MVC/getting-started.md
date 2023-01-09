@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Circular Gauge Component
-description: Checkout and learn about getting started with ASP.NET MVC  Circular Gauge component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Circular Gauge Component
+description: Checkout and learn about getting started with ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -133,4 +133,4 @@ axes.EndAngle(120).StartAngle(240).Radius("90%").Minimum(0).Maximum(120).Add()).
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20MVC%20Razor%20Examples).
 
-N> You can also explore our [ASP.NET MVC Circular Gauge example](https://ej2.syncfusion.com/aspnetmvc/CircularGauge/DefaultFunctionalities#/bootstrap5) that shows you how to render the Circular Gauge in ASP.NET MVC.
+N> You can also explore our [ASP.NET MVC Circular Gauge example](https://ej2.syncfusion.com/aspnetmvc/CircularGauge/DefaultFunctionalities#/material) that shows you how to render the Circular Gauge in ASP.NET MVC.
