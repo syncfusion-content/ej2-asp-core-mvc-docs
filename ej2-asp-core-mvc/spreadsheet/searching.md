@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching in ##Platform_Name## Spreadsheet Component
+title: Searching in ##Platform_Name## Syncfusion Spreadsheet Component
 description: Learn here all about Searching in Syncfusion ##Platform_Name## Spreadsheet component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Searching
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Find and Replace
+# Find and Replace in Spreadsheet control
 
 Find and Replace helps you to search for the target text and replace the found text with alternative text within the sheet or workbook. You can use the [`allowFindAndReplace`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_AllowFindAndReplace) property to enable or disable the Find and Replace functionality.
 
@@ -32,7 +32,7 @@ Find can be done by any of the following ways:
 > * `Match case`: To find the matched value with case sensitive.
 > * `Match exact cell contents`: To find the exact matched cell value with entire match cases.
 
-* Using [`find()`](../api/spreadsheet/#find) method to perform find operation.
+* Using `find()` method to perform find operation.
 
 ## Replace
 
@@ -45,8 +45,8 @@ Replace can be done by any of the following ways:
 * Use `Ctrl + H` key to open the Find and Replace dialog.
 * Use Replace button to change the found value in sheet or workbook.
 * Using Replace All button, all the matched criteria can be replaced with find value based on sheet or workbook.
-* Using [`replace()`](../api/spreadsheet/#replace) method to perform replace operation by passing the argument `args.replaceby` as `replace`.
-* Using [`replace()`](../api/spreadsheet/#replace) method to perform replace all operation by passing the argument `args.replaceby` as `replaceall`.
+* Using `replace()` method to perform replace operation by passing the argument `args.replaceby` as `replace`.
+* Using `replace()` method to perform replace all operation by passing the argument `args.replaceby` as `replaceall`.
 
 ## Go to
 
@@ -55,7 +55,7 @@ Go to feature is used to navigate to a specific cell address in the sheet or wor
 **User Interface**:
 
 * Use `Ctrl + G` key to open the Go To dialog.
-* Use [`goTo()`](../api/spreadsheet/#goto) method to perform Go To operation.
+* Use `goTo()` method to perform Go To operation.
 
 In the following sample, searching can be done by following ways:
 
