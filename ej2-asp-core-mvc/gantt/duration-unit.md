@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Scheduling Tasks
+# Scheduling Tasks in ##Platform_Name## Gantt component
 
 ## Duration units
 
