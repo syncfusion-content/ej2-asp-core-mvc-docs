@@ -52,7 +52,7 @@ You can customize the appearance of a row by using the [`rowDataBound`](https://
 }
 ```
 
-Please refer to the following example.
+Refer to the following example.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,4 +79,4 @@ Please refer to the following example.
 
 
 
-> Refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to learn how to present and manipulate data.
+N> Refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to learn how to present and manipulate data.

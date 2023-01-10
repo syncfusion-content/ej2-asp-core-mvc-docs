@@ -21,7 +21,7 @@ Allows end user to set the pivot table's height and width by using [`height`](ht
 * Percentage: For example - "100%", "200%".
 * Auto: It is applicable for [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Height) property alone in-order to render the pivot table beyond its parent container height without vertical scrollbar. The parent container here would show its vertical scrollbar as soon as the component reaches beyond its dimension.
 
-> The pivot table will not be displayed less than **400px**, since it's the minimum width of the component.
+N> The pivot table will not be displayed less than **400px**, since it's the minimum width of the component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -54,8 +54,8 @@ Allows end user to set the pivot table's height and width by using [`height`](ht
 
 Allows end user to set the height of each pivot table rows commonly using the [`rowHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_RowHeight) property in [`e-gridSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) tag.
 
-> By default, the [`rowHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_RowHeight) property is set as **36** pixels for desktop layout and **48** pixels for mobile layout.
-> The height of the column headers alone may vary when grouping bar feature is enabled.
+N> By default, the [`rowHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_RowHeight) property is set as **36** pixels for desktop layout and **48** pixels for mobile layout.
+<br/> The height of the column headers alone may vary when grouping bar feature is enabled.
 
 In the below code sample, the [`rowHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_RowHeight) property is set as **60** pixels.
 
@@ -91,7 +91,7 @@ In the below code sample, the [`rowHeight`](https://help.syncfusion.com/cr/aspne
 
 Allows end user to set the width of each pivot table columns commonly using the [`columnWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnWidth) property in [`e-gridSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) tag.
 
-> By default, the [`columnWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnWidth) property is set as **110** pixels to each columns except the first column. For first column, **250** pixels and **200** pixels are set respectively with and without grouping bar.
+N> By default, the [`columnWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnWidth) property is set as **110** pixels to each columns except the first column. For first column, **250** pixels and **200** pixels are set respectively with and without grouping bar.
 
 In the below example, the [`columnWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnWidth) property is set as **200** pixels.
 
@@ -188,8 +188,8 @@ Allows end user to reorder a particular column header from one index to another 
 
 Allows end user to resize the columns by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. To enable column resizing option, set the [`allowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_AllowResizing) property in [`e-gridSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) tag to **true**.
 
-> By default, the column resizing option is enabled.
-> In RTL mode, user can click and drag the left edge of the header cell to resize the column.
+N> By default, the column resizing option is enabled.
+<br/> In RTL mode, user can click and drag the left edge of the header cell to resize the column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -315,7 +315,7 @@ Allows the user to fit the Pivot Table columns as wide as the content of the cel
 
 ![output](images/autofit-method.png)
 
-> The minimum width of 250 pixels is set by default with the grouping bar UI for the first column and cannot be reduced further. So, when the grouping bar is enabled, one can auto fit the Pivot Table columns by calling the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance with the parameter contained pivot table columns field name excluding first column.
+N> The minimum width of 250 pixels is set by default with the grouping bar UI for the first column and cannot be reduced further. So, when the grouping bar is enabled, one can auto fit the Pivot Table columns by calling the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance with the parameter contained pivot table columns field name excluding first column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -389,7 +389,7 @@ Available mode of grid lines are:
 | Vertical | Displays the vertical grid lines only.|
 | Default | Displays grid lines based on the theme.|
 
-> By default, pivot table renders grid lines in **Both** mode.
+N> By default, pivot table renders grid lines in **Both** mode.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -523,13 +523,13 @@ The pivot table supports two types of cell selection mode that can be set using 
 
 
 
-> Cell selection requires [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotSelectionSettings_Mode) property in [`PivotViewSelectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html) tag to be [**Cell**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SelectionMode.html) or [**Both**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SelectionMode.html), and [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotSelectionSettings_Type) property should be `Multiple`.
+N> Cell selection requires [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotSelectionSettings_Mode) property in [`PivotViewSelectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html) tag to be [**Cell**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SelectionMode.html) or [**Both**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SelectionMode.html), and [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotSelectionSettings_Type) property should be `Multiple`.
 
 ![output](images/cell-selection.png)
 
 ### Changing background color of the selected cell
 
-The background-color of the selected cell can be changed using built-in CSS names. To do so, please refer to the code sample below, which shows that the selected cells are changed to a **green yellow** color.
+The background-color of the selected cell can be changed using built-in CSS names. To do so, refer to the code sample below, which shows that the selected cells are changed to a **green yellow** color.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -628,7 +628,7 @@ The clip mode provides options to display its overflow cell content in the pivot
 * `Ellipsis`: Displays ellipsis when the cell content overflows its area.
 * `EllipsisWithTooltip`: Displays ellipsis when the cell content overflows its area, also it will display the tooltip while hover on ellipsis is applied.
 
->By default, [`ClipMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ClipMode) value is set to `Ellipsis`.
+N>By default, [`ClipMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ClipMode) value is set to `Ellipsis`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

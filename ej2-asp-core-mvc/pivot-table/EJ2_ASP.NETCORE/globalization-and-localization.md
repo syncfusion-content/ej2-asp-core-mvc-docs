@@ -101,7 +101,7 @@ In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` locati
 
 
 
-> * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
+N> * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
 
 <!-- markdownlint-disable MD009 -->
 
@@ -194,7 +194,7 @@ addToColumn | Add to Column
 addToValue | Add to Value
 addToFilter | Add to Filter
 emptyData | No records to display
-fieldExist | A field already exists in this name. Please enter a different name.
+fieldExist | A field already exists in this name. Enter a different name.
 confirmText | A calculation field already exists in this name. Do you want to replace it?
 noMatches | No matches
 format | Summaries values by
@@ -248,7 +248,7 @@ min | Min
 max | Max
 allFields | All Fields
 formula | Formula
-fieldExist | A field already exists in this name. Please enter a different name.
+fieldExist | A field already exists in this name. Enter a different name.
 confirmText | A calculation field already exists in this name. Do you want to replace it?
 noMatches | No matches
 format | Summaries values by

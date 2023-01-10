@@ -48,7 +48,7 @@ Add scripts for Essential JS 1 and Essential JS 2 as shown in the following code
 <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
 ```
 
-> If you do not add ej1 script before ej2 script, it will throw script error.
+N> If you do not add ej1 script before ej2 script, it will throw script error.
 
 ## Adding compatibility
 
@@ -147,4 +147,4 @@ col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
     }).AllowPaging().PageSettings(page => page.PageSize(4).PageSizes(true)).Render()
 
 ```
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ej2-aspmvc-ej1compatibility).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ej2-aspmvc-ej1compatibility).

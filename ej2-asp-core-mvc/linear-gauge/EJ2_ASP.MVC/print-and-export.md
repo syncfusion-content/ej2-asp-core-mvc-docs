@@ -141,4 +141,4 @@ The Linear Gauge can be exported as base64 string for the JPEG, PNG and PDF form
 
 ![Linear Gauge with base64 string](../linear-gauge/images/export.png)
 
->The exporting of the Linear Gauge as base64 string is not applicable for the SVG format.
+N>The exporting of the Linear Gauge as base64 string is not applicable for the SVG format.

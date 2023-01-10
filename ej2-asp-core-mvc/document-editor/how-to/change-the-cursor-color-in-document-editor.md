@@ -12,7 +12,7 @@ documentation: ug
 
 Document Editor default cursor color is black. The user can change the color by overriding the css property using class name. The Document editor cursor css have a class named `e-de-blink-cursor`.
 
-Please refer the below code snippet to change the cursor color to red.
+Refer the below code snippet to change the cursor color to red.
 
 ```css
 .e-de-blink-cursor {
