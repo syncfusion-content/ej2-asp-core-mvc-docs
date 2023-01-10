@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resources in ##Platform_Name## Schedule Component
+title: Resources in ##Platform_Name## Schedule Component | Syncfusion
 description: Learn here all about Resources in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resources
@@ -614,6 +614,42 @@ Working hours indicates the work hour duration of a day, which is highlighted vi
 
 
 In this example, a resource named `Will Smith` is depicted with working hours ranging from 8.00 AM to 3.00 PM and is visually illustrated with active colors, whereas the other two resources have different working hours set.
+
+## Hide non-working days when grouped by date
+
+In Scheduler, you can set custom work days for each resource and group the Scheduler by date to display these work days. By default, the Scheduler will show all days when it is grouped by date, even if they are not included in the custom work days for the resources. However, you can use the `HideNonWorkingDays` property to only display the custom work days in the Scheduler.
+
+To use the `HideNonWorkingDays` property, you need to include it in the configuration options for your Scheduler component. Set the value of `HideNonWorkingDays` to `true` to enable this feature.
+
+**Example:** To display the Scheduler with resources grouped by date for custom working days,
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/resources/hide-non-working-days/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+{% endtab %}
+
+N> The `HideNonWorkingDays` property only applies when the Scheduler is grouped `byDate`.
 
 ## Compact view in mobile
 
