@@ -73,4 +73,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 [Types of Badge](./types)
 
-N> You can refer to our [ASP.NET MVC Badge](https://www.syncfusion.com/aspnet-mvc-ui-controls/badge) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Badge Example](https://ej2.syncfusion.com/aspnetmvc/Badge/Default#/fluent) that shows you how to render and configure the Badge in ASP.NET MVC.
+N> You can also explore our [ASP.NET MVC Badge Example](https://ej2.syncfusion.com/aspnetmvc/Badge/Default#/bootstrap5) that shows you how to render and configure the Badge in ASP.NET MVC.
